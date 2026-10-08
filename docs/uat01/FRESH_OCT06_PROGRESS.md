@@ -1,0 +1,21 @@
+# Fresh source playthrough — 2026-10-06
+
+Completed Studio (Play stopped): `bef75c02-6869-4b10-a53d-b89be490d4a9`, freshly opened TowerPreview. Memory mode; stopping Play discards progress. No source hotpatch or gameplay profile grants in this run. Ordinary movement speed, keyboard, mouse, and read-only state observations.
+
+- Chapter 00 complete; evidence `validation-fresh-oct06-chapter00-live.json`.
+- Chapter 01 complete; evidence `validation-fresh-oct06-chapter01-live.json`.
+- Chapter 02 complete at revision 105, campaign claims 12/24, Mage 35, Hall 4. Evidence `validation-fresh-oct06-chapter02-live.json`. Mine scales, signal puzzle, miner escort, support inspection/repair, two three-shutter protection encounters, joint review choice (workers), Quarry Guardian with living companions, key return, mentor, borrowed Elementalist trial and evidence submission completed.
+- Protection retries were necessary in first encounter. Successful runs blocked all three hazards, worker health 3/3. Input-loop pauses affected initial attempts; no source change was needed.
+- Party navigation issue observed: unowned recruitment cards precede owned companions, requiring excessive scrolling to select Priest. Fix after untouched-source playthrough.
+- Chapter 03 opening complete: supply traces, gatekeeper escort, charter, claim 13/24; Hall 5 upgraded using earned 320 Gold and materials. Learned Vitality through Skills UI.
+- Class advancement currently also requires the separate Trail Watch → Timber Escort → Quarry Patrol expedition chain despite finishing the mine chapter/trial. UI states the requirement, but campaign guidance does not lead players there. Record as onboarding integration work; testing existing chain before changing source.
+- Class advancement completed through normal expedition chain and two-click Elementalist confirmation. Advancement reset learned skills; learned Vitality → Focus → Path Art again and equipped Elementalist art. Live HUD uses Q for starter and Z for path art.
+- Chapter 03 complete at revision 171: Elementalist 50, Hall 7, 414 Gold, 2515 XP; campaign claims 18/24. Evidence `validation-fresh-oct06-chapter03-live.json`. Direct bridge route and guard witness choice; all memory/bell puzzles, escorts, survivor wards and Arcane Warden completed.
+- Bell-wave acceptance anomaly: several Rune Caster victories granted combat rewards without advancing the story while player/companions were near. After normal City return and Ashen re-entry, fighting closer (z1410 versus z1418) with F/Z and companion Focus advanced at revision 159. No source mutation. Cause remains unproven; investigate participation/position evidence and improve feedback. Do not label this resolved.
+- Repeated earned Hall upgrades at 3–7 focused the J destination correctly. City walking between regional and island portals takes substantial time; record travel UX follow-up.
+- Chapter 04 complete at revision 217: Elementalist 70, Hall 11, 414 Gold, 3515 XP; all 24 campaign plus 6 novice claims. Evidence `validation-fresh-oct06-chapter04-live.json`. Ten orientation stations, Guard/Mend/Combined lessons, archive puzzle, actual saved-choice memory text, physical echo escort, compassion oath, moon bypass, 2800-HP Records Guardian (skill + two dodges + victory), ledger and three seals all passed with ordinary controls. Final court cleanup returned to Ashen; actual earned Hall 11 upgrade succeeded.
+- Full fresh built-source Chapter00–04 journey is now complete without gameplay grants or source hotpatches. This is one desktop Memory-mode route; bell-wave anomaly remains a follow-up, and persistence, multiplayer, devices, imports and human acceptance remain pending.
+
+Latest quota observed: 57% used / 43% remaining. User-authorized stop: 75% used / 25% remaining, save checkpoint and shut down normally. Threshold not reached.
+
+Post-run presentation: owned companion sorting/names, class-art keys, advancement refund guidance and prerequisite quest navigation passed separate native UI checks. Ashen now reports missing/lost/distant companion participation after a relevant rewarded victory; six EN/TH notice views fit. This diagnostic does not establish or fix the original RuneCaster root cause. Evidence: `validation-party-polish-native.json`, `validation-victory-notice-native.json`.

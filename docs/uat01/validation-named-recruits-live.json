@@ -1,0 +1,57 @@
+{
+  "offer": {
+    "enabled": true,
+    "revision": 8,
+    "template": {
+      "Id": "knight_03",
+      "Class": "Knight",
+      "Name": "Vera",
+      "VisualId": "knight_03"
+    },
+    "gold": 50,
+    "offer": {
+      "id": "offer:1",
+      "classId": "Knight",
+      "templateId": "knight_03",
+      "rank": "E"
+    }
+  },
+  "afterHireAndParty": {
+    "hero": {
+      "equipmentSlots": {
+        "weapon": "hire:1:1"
+      },
+      "stats": {
+        "Attack": 7,
+        "Defense": 7,
+        "Health": 42,
+        "WeaponBonus": 2
+      },
+      "id": "h:1",
+      "classId": "Knight",
+      "xp": 0,
+      "templateId": "knight_03",
+      "name": "Vera",
+      "level": 1,
+      "baseStats": {
+        "Defense": 7,
+        "Health": 40,
+        "Attack": 4
+      },
+      "rank": "E"
+    },
+    "revision": 10,
+    "gold": 10,
+    "profileWritesByTool": 0,
+    "party": {
+      "adventurerIds": {
+        "1": "a:Warrior",
+        "2": "h:1"
+      }
+    },
+    "worldLabel": "Vera [E] · Knight · Lv1\nเวรา · อัศวิน\nFollowing / เดินตามหัวหน้า",
+    "visualTemplate": "knight_03"
+  },
+  "memoryOnly": true,
+  "actualInput": true
+}

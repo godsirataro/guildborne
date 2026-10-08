@@ -1,0 +1,11 @@
+{"kind":"workbook","id":"wb/i3wgwn","sheets":4,"tables":4}
+{"kind":"sheet","id":"ws/aaf6fh","name":"Summary","index":0,"range":"A1:E57","address":"A1:E57","tables":1}
+{"kind":"table","sheet":"Summary","address":"A1:E57","rows":57,"cols":5,"values":[[null,null,null],["GUILDBORNE / Production checkpoint",null,null]],"valuesTruncated":true,"valuesPreviewRows":2,"valuesPreviewCols":3,"valuesPreviewAddress":"A1:C2"}
+{"kind":"sheet","id":"ws/lgvkqx","name":"Worklist","index":1,"range":"A1:D38","address":"A1:D38","tables":1}
+{"kind":"table","sheet":"Worklist","address":"A1:D38","rows":38,"cols":4,"values":[[null,null,null],["GUILDBORNE / Delivery worklist",null,null]],"valuesTruncated":true,"valuesPreviewRows":2,"valuesPreviewCols":3,"valuesPreviewAddress":"A1:C2"}
+{"kind":"sheet","id":"ws/tnxq3l","name":"Assets","index":2,"range":"A1:H422","address":"A1:H422","tables":1}
+{"kind":"table","sheet":"Assets","address":"A1:H422","rows":422,"cols":8,"values":[[null,null,null],["GUILDBORNE / Asset registry",null,null]],"valuesTruncated":true,"valuesPreviewRows":2,"valuesPreviewCols":3,"valuesPreviewAddress":"A1:C2"}
+{"kind":"sheet","id":"ws/5qcgf5","name":"Screens","index":3,"range":"A1:H78","address":"A1:H78","tables":1}
+{"kind":"table","sheet":"Screens","address":"A1:H78","rows":78,"cols":8,"values":[[null,null,null],["GUILDBORNE / Screen acceptance",null,null]],"valuesTruncated":true,"valuesPreviewRows":2,"valuesPreviewCols":3,"valuesPreviewAddress":"A1:C2"}
+Inspect result written to file: C:\Work\MySelf\Guildborne\outputs\01a0f39c-43bd-7a81-917f-8a8cd02c0ddf\Guildborne_Production_Registry.xlsx.inspect.ndjson
+{"assets":421,"screens":73,"workAreas":33,"formulaTotal":421,"inputResponsePassed":true,"output":"C:\\Work\\MySelf\\Guildborne\\outputs\\01a0f39c-43bd-7a81-917f-8a8cd02c0ddf\\Guildborne_Production_Registry.xlsx"}

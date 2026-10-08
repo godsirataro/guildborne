@@ -1,0 +1,198 @@
+C:\Work\MySelf\Guildborne\tools\blender_enemy_kit.py:15: DeprecationWarning: 'World.use_nodes' is expected to be removed in Blender 6.0
+  scene.world=bpy.data.worlds.new('EnemyStudio');scene.world.use_nodes=True;scene.world.node_tree.nodes['Background'].inputs[0].default_value=(.5,.5,.5,1);scene.world.node_tree.nodes['Background'].inputs[1].default_value=.8
+C:\Work\MySelf\Guildborne\tools\blender_enemy_kit.py:25: DeprecationWarning: 'Material.use_nodes' is expected to be removed in Blender 6.0
+  m=bpy.data.materials.new(name);m.use_nodes=True;m.diffuse_color=(*map(linear,rgb),1);shader=m.node_tree.nodes['Principled BSDF'];shader.inputs['Base Color'].default_value=m.diffuse_color;shader.inputs['Roughness'].default_value=.7;materials[name]=m
+
+FBX export starting... 'C:\\Work\\MySelf\\Guildborne\\assets\\uat01\\city-cast\\marshal_elian_Rest.fbx'
+(bpy.data.armatures['Armature'], 'POSE')
+export finished in 0.0230 sec.
+INFO Draco is available, use library at C:\Program Files\Blender Foundation\Blender 5.2\5.2\scripts\addons_core\io_scene_gltf2\bf_intern_draco_bridge.dll
+INFO MeshOptimizer is available, use library at C:\Program Files\Blender Foundation\Blender 5.2\5.2\scripts\addons_core\io_scene_gltf2\bf_intern_meshopt_bridge.dll
+01:54:00 | INFO: Starting glTF 2.0 export
+01:54:00 | INFO: Extracting primitive: Cube
+01:54:00 | INFO: Primitives created: 10
+01:54:00 | INFO: Finished glTF 2.0 export in 0.075592041015625 s
+00:05.531  render           | Saved: 'C:\Work\MySelf\Guildborne\assets\uat01\city-cast\marshal_elian.png'
+C:\Work\MySelf\Guildborne\tools\blender_enemy_kit.py:15: DeprecationWarning: 'World.use_nodes' is expected to be removed in Blender 6.0
+  scene.world=bpy.data.worlds.new('EnemyStudio');scene.world.use_nodes=True;scene.world.node_tree.nodes['Background'].inputs[0].default_value=(.5,.5,.5,1);scene.world.node_tree.nodes['Background'].inputs[1].default_value=.8
+C:\Work\MySelf\Guildborne\tools\blender_enemy_kit.py:25: DeprecationWarning: 'Material.use_nodes' is expected to be removed in Blender 6.0
+  m=bpy.data.materials.new(name);m.use_nodes=True;m.diffuse_color=(*map(linear,rgb),1);shader=m.node_tree.nodes['Principled BSDF'];shader.inputs['Base Color'].default_value=m.diffuse_color;shader.inputs['Roughness'].default_value=.7;materials[name]=m
+
+
+FBX export starting... 'C:\\Work\\MySelf\\Guildborne\\assets\\uat01\\city-cast\\marshal_elian_Idle.fbx'
+(bpy.data.armatures['Armature'], 'POSE')
+export finished in 0.0798 sec.
+
+FBX export starting... 'C:\\Work\\MySelf\\Guildborne\\assets\\uat01\\city-cast\\marshal_elian_Walk.fbx'
+(bpy.data.armatures['Armature'], 'POSE')
+export finished in 0.0629 sec.
+
+FBX export starting... 'C:\\Work\\MySelf\\Guildborne\\assets\\uat01\\city-cast\\marshal_elian_Greet.fbx'
+(bpy.data.armatures['Armature'], 'POSE')
+export finished in 0.0756 sec.
+
+FBX export starting... 'C:\\Work\\MySelf\\Guildborne\\assets\\uat01\\city-cast\\marshal_elian_Work.fbx'
+(bpy.data.armatures['Armature'], 'POSE')
+export finished in 0.0733 sec.
+Info: Saved as "marshal_elian.blend"
+
+FBX export starting... 'C:\\Work\\MySelf\\Guildborne\\assets\\uat01\\city-cast\\arborist_vaela_Rest.fbx'
+(bpy.data.armatures['Armature'], 'POSE')
+export finished in 0.0127 sec.
+01:54:02 | INFO: Starting glTF 2.0 export
+01:54:02 | INFO: Extracting primitive: Cube
+01:54:02 | INFO: Primitives created: 9
+01:54:02 | INFO: Finished glTF 2.0 export in 0.03534674644470215 s
+00:07.594  render           | Saved: 'C:\Work\MySelf\Guildborne\assets\uat01\city-cast\arborist_vaela.png'
+
+
+FBX export starting... 'C:\\Work\\MySelf\\Guildborne\\assets\\uat01\\city-cast\\arborist_vaela_Idle.fbx'
+(bpy.data.armatures['Armature'], 'POSE')
+export finished in 0.0791 sec.
+
+FBX export starting... 'C:\\Work\\MySelf\\Guildborne\\assets\\uat01\\city-cast\\arborist_vaela_Walk.fbx'
+(bpy.data.armatures['Armature'], 'POSE')
+export finished in 0.0516 sec.
+
+FBX export starting... 'C:\\Work\\MySelf\\Guildborne\\assets\\uat01\\city-cast\\arborist_vaela_Greet.fbx'
+(bpy.data.armatures['Armature'], 'POSE')
+export finished in 0.0724 sec.
+
+FBX export starting... 'C:\\Work\\MySelf\\Guildborne\\assets\\uat01\\city-cast\\arborist_vaela_Work.fbx'
+(bpy.data.armatures['Armature'], 'POSE')
+export finished in 0.0784 sec.
+Info: Saved as "arborist_vaela.blend"
+
+FBX export starting... 'C:\\Work\\MySelf\\Guildborne\\assets\\uat01\\city-cast\\smith_borin_Rest.fbx'
+(bpy.data.armatures['Armature'], 'POSE')
+export finished in 0.0149 sec.
+01:54:04 | INFO: Starting glTF 2.0 export
+01:54:04 | INFO: Extracting primitive: Cube
+01:54:04 | INFO: Primitives created: 7
+01:54:04 | INFO: Finished glTF 2.0 export in 0.024285078048706055 s
+00:09.766  render           | Saved: 'C:\Work\MySelf\Guildborne\assets\uat01\city-cast\smith_borin.png'
+
+
+FBX export starting... 'C:\\Work\\MySelf\\Guildborne\\assets\\uat01\\city-cast\\smith_borin_Idle.fbx'
+(bpy.data.armatures['Armature'], 'POSE')
+export finished in 0.0799 sec.
+
+FBX export starting... 'C:\\Work\\MySelf\\Guildborne\\assets\\uat01\\city-cast\\smith_borin_Walk.fbx'
+(bpy.data.armatures['Armature'], 'POSE')
+export finished in 0.0477 sec.
+
+FBX export starting... 'C:\\Work\\MySelf\\Guildborne\\assets\\uat01\\city-cast\\smith_borin_Greet.fbx'
+(bpy.data.armatures['Armature'], 'POSE')
+export finished in 0.0662 sec.
+
+FBX export starting... 'C:\\Work\\MySelf\\Guildborne\\assets\\uat01\\city-cast\\smith_borin_Work.fbx'
+(bpy.data.armatures['Armature'], 'POSE')
+export finished in 0.1132 sec.
+Info: Saved as "smith_borin.blend"
+
+FBX export starting... 'C:\\Work\\MySelf\\Guildborne\\assets\\uat01\\city-cast\\cartographer_nyra_Rest.fbx'
+(bpy.data.armatures['Armature'], 'POSE')
+export finished in 0.0148 sec.
+01:54:06 | INFO: Starting glTF 2.0 export
+01:54:06 | INFO: Extracting primitive: Cube
+01:54:06 | INFO: Primitives created: 12
+01:54:06 | INFO: Finished glTF 2.0 export in 0.05226588249206543 s
+00:12.000  render           | Saved: 'C:\Work\MySelf\Guildborne\assets\uat01\city-cast\cartographer_nyra.png'
+
+
+FBX export starting... 'C:\\Work\\MySelf\\Guildborne\\assets\\uat01\\city-cast\\cartographer_nyra_Idle.fbx'
+(bpy.data.armatures['Armature'], 'POSE')
+export finished in 0.1166 sec.
+
+FBX export starting... 'C:\\Work\\MySelf\\Guildborne\\assets\\uat01\\city-cast\\cartographer_nyra_Walk.fbx'
+(bpy.data.armatures['Armature'], 'POSE')
+export finished in 0.0516 sec.
+
+FBX export starting... 'C:\\Work\\MySelf\\Guildborne\\assets\\uat01\\city-cast\\cartographer_nyra_Greet.fbx'
+(bpy.data.armatures['Armature'], 'POSE')
+export finished in 0.0814 sec.
+
+FBX export starting... 'C:\\Work\\MySelf\\Guildborne\\assets\\uat01\\city-cast\\cartographer_nyra_Work.fbx'
+(bpy.data.armatures['Armature'], 'POSE')
+export finished in 0.0669 sec.
+Info: Saved as "cartographer_nyra.blend"
+
+FBX export starting... 'C:\\Work\\MySelf\\Guildborne\\assets\\uat01\\city-cast\\harbormaster_sela_Rest.fbx'
+(bpy.data.armatures['Armature'], 'POSE')
+export finished in 0.0136 sec.
+01:54:09 | INFO: Starting glTF 2.0 export
+01:54:09 | INFO: Extracting primitive: Cube
+01:54:09 | INFO: Primitives created: 10
+01:54:09 | INFO: Finished glTF 2.0 export in 0.03261375427246094 s
+00:14.062  render           | Saved: 'C:\Work\MySelf\Guildborne\assets\uat01\city-cast\harbormaster_sela.png'
+
+
+FBX export starting... 'C:\\Work\\MySelf\\Guildborne\\assets\\uat01\\city-cast\\harbormaster_sela_Idle.fbx'
+(bpy.data.armatures['Armature'], 'POSE')
+export finished in 0.0722 sec.
+
+FBX export starting... 'C:\\Work\\MySelf\\Guildborne\\assets\\uat01\\city-cast\\harbormaster_sela_Walk.fbx'
+(bpy.data.armatures['Armature'], 'POSE')
+export finished in 0.0491 sec.
+
+FBX export starting... 'C:\\Work\\MySelf\\Guildborne\\assets\\uat01\\city-cast\\harbormaster_sela_Greet.fbx'
+(bpy.data.armatures['Armature'], 'POSE')
+export finished in 0.0681 sec.
+
+FBX export starting... 'C:\\Work\\MySelf\\Guildborne\\assets\\uat01\\city-cast\\harbormaster_sela_Work.fbx'
+(bpy.data.armatures['Armature'], 'POSE')
+export finished in 0.0707 sec.
+Info: Saved as "harbormaster_sela.blend"
+
+FBX export starting... 'C:\\Work\\MySelf\\Guildborne\\assets\\uat01\\city-cast\\steward_roka_Rest.fbx'
+(bpy.data.armatures['Armature'], 'POSE')
+export finished in 0.0150 sec.
+01:54:11 | INFO: Starting glTF 2.0 export
+01:54:11 | INFO: Extracting primitive: Cube
+01:54:11 | INFO: Primitives created: 12
+01:54:11 | INFO: Finished glTF 2.0 export in 0.03491663932800293 s
+00:16.344  render           | Saved: 'C:\Work\MySelf\Guildborne\assets\uat01\city-cast\steward_roka.png'
+
+
+FBX export starting... 'C:\\Work\\MySelf\\Guildborne\\assets\\uat01\\city-cast\\steward_roka_Idle.fbx'
+(bpy.data.armatures['Armature'], 'POSE')
+export finished in 0.0731 sec.
+
+FBX export starting... 'C:\\Work\\MySelf\\Guildborne\\assets\\uat01\\city-cast\\steward_roka_Walk.fbx'
+(bpy.data.armatures['Armature'], 'POSE')
+export finished in 0.0480 sec.
+
+FBX export starting... 'C:\\Work\\MySelf\\Guildborne\\assets\\uat01\\city-cast\\steward_roka_Greet.fbx'
+(bpy.data.armatures['Armature'], 'POSE')
+export finished in 0.0685 sec.
+
+FBX export starting... 'C:\\Work\\MySelf\\Guildborne\\assets\\uat01\\city-cast\\steward_roka_Work.fbx'
+(bpy.data.armatures['Armature'], 'POSE')
+export finished in 0.0728 sec.
+Info: Saved as "steward_roka.blend"
+01:54:13 | INFO: Data are loaded, start creating Blender stuff
+01:54:13 | INFO: Blender create Mesh node Cube
+01:54:13 | INFO: glTF import finished in 0.03s
+C:\Work\MySelf\Guildborne\tools\blender_enemy_kit.py:99: DeprecationWarning: 'Material.use_nodes' is expected to be removed in Blender 6.0
+  m=bpy.data.materials.new('Label');m.use_nodes=True;m.node_tree.nodes['Principled BSDF'].inputs['Base Color'].default_value=(.9,.8,.6,1);label.data.materials.append(m)
+01:54:13 | INFO: Data are loaded, start creating Blender stuff
+01:54:13 | INFO: Blender create Mesh node Cube
+01:54:13 | INFO: glTF import finished in 0.02s
+01:54:13 | INFO: Data are loaded, start creating Blender stuff
+01:54:13 | INFO: Blender create Mesh node Cube
+01:54:13 | INFO: glTF import finished in 0.02s
+01:54:13 | INFO: Data are loaded, start creating Blender stuff
+01:54:13 | INFO: Blender create Mesh node Cube
+01:54:13 | INFO: glTF import finished in 0.02s
+01:54:13 | INFO: Data are loaded, start creating Blender stuff
+01:54:13 | INFO: Blender create Mesh node Cube
+01:54:13 | INFO: glTF import finished in 0.02s
+01:54:13 | INFO: Data are loaded, start creating Blender stuff
+01:54:13 | INFO: Blender create Mesh node Cube
+01:54:13 | INFO: glTF import finished in 0.03s
+00:28.531  render           | Saved: 'C:\Work\MySelf\Guildborne\assets\uat01\city-cast\preview.png'
+Info: Saved as "Guildborne_City_Cast.blend"
+ENEMY_RIG_KIT_COMPLETE 6 rigs 2712 triangles 24 clips
+Blender 5.2.1 LTS (hash 9e2066aef7ef built 2026-08-25 02:38:20)
+
+Blender quit

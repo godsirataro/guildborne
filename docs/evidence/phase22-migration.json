@@ -1,0 +1,210 @@
+{
+  "result": "PASS exact v1 data preserved, only character added",
+  "revision": 33,
+  "character": {
+    "definitionVersion": 1,
+    "tier": 1,
+    "level": 1,
+    "xp": 0,
+    "raceId": "Human"
+  },
+  "legacy": {
+    "progression": {
+      "tutorialStep": "complete",
+      "everEquipped": true,
+      "welcomeSeen": true,
+      "tutorialCompleted": true,
+      "recruitedClasses": {
+        "Warrior": true,
+        "Archer": true,
+        "Knight": true,
+        "Priest": true,
+        "Mage": true
+      }
+    },
+    "party": {
+      "adventurerIds": {
+        "1": "a:Knight",
+        "2": "a:Warrior",
+        "3": "a:Archer",
+        "4": "a:Mage",
+        "5": "a:Priest"
+      }
+    },
+    "adventurers": {
+      "a:Priest": {
+        "equipmentSlots": {
+          "weapon": "recruit:Priest:1"
+        },
+        "stats": {
+          "Attack": 6,
+          "Defense": 3,
+          "Health": 24,
+          "WeaponBonus": 2
+        },
+        "name": "Sage",
+        "level": 1,
+        "id": "a:Priest",
+        "baseStats": {
+          "Defense": 3,
+          "Health": 24,
+          "Attack": 4
+        },
+        "xp": 5,
+        "classId": "Priest"
+      },
+      "a:Archer": {
+        "equipmentSlots": {
+          "weapon": "recruit:Archer:1"
+        },
+        "stats": {
+          "Attack": 10,
+          "Defense": 2,
+          "Health": 22,
+          "WeaponBonus": 2
+        },
+        "name": "Ash",
+        "level": 1,
+        "id": "a:Archer",
+        "baseStats": {
+          "Defense": 2,
+          "Health": 22,
+          "Attack": 8
+        },
+        "xp": 5,
+        "classId": "Archer"
+      },
+      "a:Warrior": {
+        "equipmentSlots": {
+          "weapon": "q:3:1"
+        },
+        "stats": {
+          "Attack": 12,
+          "Defense": 4,
+          "Health": 36,
+          "WeaponBonus": 4
+        },
+        "name": "Rowan",
+        "level": 3,
+        "id": "a:Warrior",
+        "baseStats": {
+          "Defense": 4,
+          "Health": 30,
+          "Attack": 6
+        },
+        "xp": 110,
+        "classId": "Warrior"
+      },
+      "a:Mage": {
+        "equipmentSlots": {
+          "weapon": "recruit:Mage:1"
+        },
+        "stats": {
+          "Attack": 12,
+          "Defense": 1,
+          "Health": 20,
+          "WeaponBonus": 2
+        },
+        "name": "Lyra",
+        "level": 1,
+        "id": "a:Mage",
+        "baseStats": {
+          "Defense": 1,
+          "Health": 20,
+          "Attack": 10
+        },
+        "xp": 5,
+        "classId": "Mage"
+      },
+      "a:Knight": {
+        "equipmentSlots": {
+          "weapon": "recruit:Knight:1"
+        },
+        "stats": {
+          "Attack": 6,
+          "Defense": 7,
+          "Health": 40,
+          "WeaponBonus": 2
+        },
+        "name": "Bram",
+        "level": 1,
+        "id": "a:Knight",
+        "baseStats": {
+          "Defense": 7,
+          "Health": 40,
+          "Attack": 4
+        },
+        "xp": 5,
+        "classId": "Knight"
+      }
+    },
+    "gold": 10,
+    "quests": {
+      "nextRunSequence": 8,
+      "lastResult": {
+        "questName": "Trail Watch",
+        "runId": "q:7",
+        "reward": {
+          "Items": {
+            "1": {
+              "Id": "timber",
+              "Quantity": 1
+            },
+            "2": {
+              "Id": "herb",
+              "Quantity": 1
+            }
+          },
+          "XP": 5,
+          "Gold": 10
+        }
+      },
+      "claimedThrough": 7,
+      "firstClears": {
+        "timber_escort": true,
+        "quarry_patrol": true,
+        "trail_watch": true
+      }
+    },
+    "inventory": {
+      "equipment": {
+        "recruit:Knight:1": {
+          "binding": "Account",
+          "upgradeLevel": 0,
+          "definitionId": "knight_sword"
+        },
+        "recruit:Priest:1": {
+          "binding": "Account",
+          "upgradeLevel": 0,
+          "definitionId": "apprentice_staff"
+        },
+        "recruit:Mage:1": {
+          "binding": "Account",
+          "upgradeLevel": 0,
+          "definitionId": "mage_staff"
+        },
+        "q:3:1": {
+          "binding": "Account",
+          "upgradeLevel": 0,
+          "definitionId": "iron_sword"
+        },
+        "recruit:Archer:1": {
+          "binding": "Account",
+          "upgradeLevel": 0,
+          "definitionId": "short_bow"
+        },
+        "q:1:1": {
+          "binding": "Account",
+          "upgradeLevel": 0,
+          "definitionId": "training_sword"
+        }
+      },
+      "stacks": {
+        "herb": 4,
+        "timber": 4
+      }
+    },
+    "language": "th",
+    "hallLevel": 2
+  }
+}

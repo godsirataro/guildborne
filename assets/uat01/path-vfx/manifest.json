@@ -1,0 +1,175 @@
+{
+  "schemaVersion": 1,
+  "kind": "native_procedural_vfx",
+  "status": "NATIVE_FIXTURE_VERIFIED_ART_REVIEW_PENDING",
+  "assets": [
+    {
+      "id": "arcane_slash",
+      "pattern": "Rune",
+      "tier": 2,
+      "source": "src/client/Controllers/PathSkillEffects.luau",
+      "catalog": "src/shared/Config/PathVFX.luau"
+    },
+    {
+      "id": "arcane_slash_master",
+      "pattern": "Rune",
+      "tier": 3,
+      "source": "src/client/Controllers/PathSkillEffects.luau",
+      "catalog": "src/shared/Config/PathVFX.luau"
+    },
+    {
+      "id": "bard_art",
+      "pattern": "Harmony",
+      "tier": 3,
+      "source": "src/client/Controllers/PathSkillEffects.luau",
+      "catalog": "src/shared/Config/PathVFX.luau"
+    },
+    {
+      "id": "bulwark",
+      "pattern": "Bastion",
+      "tier": 2,
+      "source": "src/client/Controllers/PathSkillEffects.luau",
+      "catalog": "src/shared/Config/PathVFX.luau"
+    },
+    {
+      "id": "bulwark_master",
+      "pattern": "Bastion",
+      "tier": 3,
+      "source": "src/client/Controllers/PathSkillEffects.luau",
+      "catalog": "src/shared/Config/PathVFX.luau"
+    },
+    {
+      "id": "cleave",
+      "pattern": "Whirl",
+      "tier": 2,
+      "source": "src/client/Controllers/PathSkillEffects.luau",
+      "catalog": "src/shared/Config/PathVFX.luau"
+    },
+    {
+      "id": "cleave_master",
+      "pattern": "Whirl",
+      "tier": 3,
+      "source": "src/client/Controllers/PathSkillEffects.luau",
+      "catalog": "src/shared/Config/PathVFX.luau"
+    },
+    {
+      "id": "commander_art",
+      "pattern": "Banner",
+      "tier": 3,
+      "source": "src/client/Controllers/PathSkillEffects.luau",
+      "catalog": "src/shared/Config/PathVFX.luau"
+    },
+    {
+      "id": "judgment",
+      "pattern": "Fate",
+      "tier": 2,
+      "source": "src/client/Controllers/PathSkillEffects.luau",
+      "catalog": "src/shared/Config/PathVFX.luau"
+    },
+    {
+      "id": "judgment_master",
+      "pattern": "Fate",
+      "tier": 3,
+      "source": "src/client/Controllers/PathSkillEffects.luau",
+      "catalog": "src/shared/Config/PathVFX.luau"
+    },
+    {
+      "id": "lunge",
+      "pattern": "Thrust",
+      "tier": 2,
+      "source": "src/client/Controllers/PathSkillEffects.luau",
+      "catalog": "src/shared/Config/PathVFX.luau"
+    },
+    {
+      "id": "lunge_master",
+      "pattern": "Thrust",
+      "tier": 3,
+      "source": "src/client/Controllers/PathSkillEffects.luau",
+      "catalog": "src/shared/Config/PathVFX.luau"
+    },
+    {
+      "id": "nova",
+      "pattern": "Orbit",
+      "tier": 2,
+      "source": "src/client/Controllers/PathSkillEffects.luau",
+      "catalog": "src/shared/Config/PathVFX.luau"
+    },
+    {
+      "id": "nova_master",
+      "pattern": "Orbit",
+      "tier": 3,
+      "source": "src/client/Controllers/PathSkillEffects.luau",
+      "catalog": "src/shared/Config/PathVFX.luau"
+    },
+    {
+      "id": "radiance",
+      "pattern": "Dawn",
+      "tier": 2,
+      "source": "src/client/Controllers/PathSkillEffects.luau",
+      "catalog": "src/shared/Config/PathVFX.luau"
+    },
+    {
+      "id": "radiance_master",
+      "pattern": "Dawn",
+      "tier": 3,
+      "source": "src/client/Controllers/PathSkillEffects.luau",
+      "catalog": "src/shared/Config/PathVFX.luau"
+    },
+    {
+      "id": "renewal",
+      "pattern": "Sanctuary",
+      "tier": 2,
+      "source": "src/client/Controllers/PathSkillEffects.luau",
+      "catalog": "src/shared/Config/PathVFX.luau"
+    },
+    {
+      "id": "renewal_master",
+      "pattern": "Sanctuary",
+      "tier": 3,
+      "source": "src/client/Controllers/PathSkillEffects.luau",
+      "catalog": "src/shared/Config/PathVFX.luau"
+    },
+    {
+      "id": "rune_knight_art",
+      "pattern": "Rune",
+      "tier": 3,
+      "source": "src/client/Controllers/PathSkillEffects.luau",
+      "catalog": "src/shared/Config/PathVFX.luau"
+    },
+    {
+      "id": "shadow_dancer_art",
+      "pattern": "Eclipse",
+      "tier": 3,
+      "source": "src/client/Controllers/PathSkillEffects.luau",
+      "catalog": "src/shared/Config/PathVFX.luau"
+    },
+    {
+      "id": "snipe",
+      "pattern": "Sight",
+      "tier": 2,
+      "source": "src/client/Controllers/PathSkillEffects.luau",
+      "catalog": "src/shared/Config/PathVFX.luau"
+    },
+    {
+      "id": "snipe_master",
+      "pattern": "Sight",
+      "tier": 3,
+      "source": "src/client/Controllers/PathSkillEffects.luau",
+      "catalog": "src/shared/Config/PathVFX.luau"
+    },
+    {
+      "id": "volley",
+      "pattern": "Rain",
+      "tier": 2,
+      "source": "src/client/Controllers/PathSkillEffects.luau",
+      "catalog": "src/shared/Config/PathVFX.luau"
+    },
+    {
+      "id": "volley_master",
+      "pattern": "Rain",
+      "tier": 3,
+      "source": "src/client/Controllers/PathSkillEffects.luau",
+      "catalog": "src/shared/Config/PathVFX.luau"
+    }
+  ]
+}

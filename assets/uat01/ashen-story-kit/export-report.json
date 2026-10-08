@@ -1,0 +1,80 @@
+[
+  {
+    "id": "caravan_checkpoint",
+    "triangles": 288,
+    "bounds": [
+      48.0,
+      36.0,
+      20.0
+    ],
+    "sourceParts": 24,
+    "icon": "caravan_checkpoint.png",
+    "robloxMeshAssetId": null,
+    "robloxImageAssetId": null
+  },
+  {
+    "id": "memory_hearth",
+    "triangles": 336,
+    "bounds": [
+      44.0,
+      36.0,
+      12.100000381469727
+    ],
+    "sourceParts": 28,
+    "icon": "memory_hearth.png",
+    "robloxMeshAssetId": null,
+    "robloxImageAssetId": null
+  },
+  {
+    "id": "ash_bridge",
+    "triangles": 336,
+    "bounds": [
+      60.0,
+      44.0,
+      8.5
+    ],
+    "sourceParts": 28,
+    "icon": "ash_bridge.png",
+    "robloxMeshAssetId": null,
+    "robloxImageAssetId": null
+  },
+  {
+    "id": "witness_court",
+    "triangles": 396,
+    "bounds": [
+      44.0,
+      38.0,
+      14.999999046325684
+    ],
+    "sourceParts": 33,
+    "icon": "witness_court.png",
+    "robloxMeshAssetId": null,
+    "robloxImageAssetId": null
+  },
+  {
+    "id": "bell_tower",
+    "triangles": 468,
+    "bounds": [
+      48.0,
+      44.0,
+      27.0
+    ],
+    "sourceParts": 39,
+    "icon": "bell_tower.png",
+    "robloxMeshAssetId": null,
+    "robloxImageAssetId": null
+  },
+  {
+    "id": "warden_seals",
+    "triangles": 312,
+    "bounds": [
+      64.0,
+      64.0,
+      10.79001522064209
+    ],
+    "sourceParts": 26,
+    "icon": "warden_seals.png",
+    "robloxMeshAssetId": null,
+    "robloxImageAssetId": null
+  }
+]

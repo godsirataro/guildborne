@@ -1,0 +1,165 @@
+{
+  "schema": 1,
+  "fps": 30,
+  "assets": [
+    {
+      "id": "miner",
+      "rigType": "Humanoid",
+      "region": "Dwarf",
+      "role": "Story",
+      "bones": 16,
+      "triangles": 420,
+      "vertices": 280,
+      "restFiles": [
+        "miner_Rest.fbx",
+        "miner_Rest.glb"
+      ],
+      "clips": [
+        {
+          "name": "Idle",
+          "file": "miner_Idle.fbx",
+          "frames": 61,
+          "seconds": 2,
+          "loop": true,
+          "rootMotion": false,
+          "robloxAnimationId": null
+        },
+        {
+          "name": "Walk",
+          "file": "miner_Walk.fbx",
+          "frames": 31,
+          "seconds": 1,
+          "loop": true,
+          "rootMotion": false,
+          "robloxAnimationId": null
+        },
+        {
+          "name": "Greet",
+          "file": "miner_Greet.fbx",
+          "frames": 55,
+          "seconds": 1.8,
+          "loop": false,
+          "rootMotion": false,
+          "robloxAnimationId": null
+        },
+        {
+          "name": "Work",
+          "file": "miner_Work.fbx",
+          "frames": 61,
+          "seconds": 2,
+          "loop": true,
+          "rootMotion": false,
+          "robloxAnimationId": null
+        }
+      ],
+      "studioImported": false,
+      "liveEncounterBound": false
+    },
+    {
+      "id": "engineer",
+      "rigType": "Humanoid",
+      "region": "Dwarf",
+      "role": "Story",
+      "bones": 16,
+      "triangles": 468,
+      "vertices": 312,
+      "restFiles": [
+        "engineer_Rest.fbx",
+        "engineer_Rest.glb"
+      ],
+      "clips": [
+        {
+          "name": "Idle",
+          "file": "engineer_Idle.fbx",
+          "frames": 61,
+          "seconds": 2,
+          "loop": true,
+          "rootMotion": false,
+          "robloxAnimationId": null
+        },
+        {
+          "name": "Walk",
+          "file": "engineer_Walk.fbx",
+          "frames": 31,
+          "seconds": 1,
+          "loop": true,
+          "rootMotion": false,
+          "robloxAnimationId": null
+        },
+        {
+          "name": "Greet",
+          "file": "engineer_Greet.fbx",
+          "frames": 55,
+          "seconds": 1.8,
+          "loop": false,
+          "rootMotion": false,
+          "robloxAnimationId": null
+        },
+        {
+          "name": "Work",
+          "file": "engineer_Work.fbx",
+          "frames": 61,
+          "seconds": 2,
+          "loop": true,
+          "rootMotion": false,
+          "robloxAnimationId": null
+        }
+      ],
+      "studioImported": false,
+      "liveEncounterBound": false
+    },
+    {
+      "id": "carrier",
+      "rigType": "Humanoid",
+      "region": "Orc",
+      "role": "Story",
+      "bones": 16,
+      "triangles": 480,
+      "vertices": 320,
+      "restFiles": [
+        "carrier_Rest.fbx",
+        "carrier_Rest.glb"
+      ],
+      "clips": [
+        {
+          "name": "Idle",
+          "file": "carrier_Idle.fbx",
+          "frames": 61,
+          "seconds": 2,
+          "loop": true,
+          "rootMotion": false,
+          "robloxAnimationId": null
+        },
+        {
+          "name": "Walk",
+          "file": "carrier_Walk.fbx",
+          "frames": 31,
+          "seconds": 1,
+          "loop": true,
+          "rootMotion": false,
+          "robloxAnimationId": null
+        },
+        {
+          "name": "Greet",
+          "file": "carrier_Greet.fbx",
+          "frames": 55,
+          "seconds": 1.8,
+          "loop": false,
+          "rootMotion": false,
+          "robloxAnimationId": null
+        },
+        {
+          "name": "Work",
+          "file": "carrier_Work.fbx",
+          "frames": 61,
+          "seconds": 2,
+          "loop": true,
+          "rootMotion": false,
+          "robloxAnimationId": null
+        }
+      ],
+      "studioImported": false,
+      "liveEncounterBound": false
+    }
+  ]
+}

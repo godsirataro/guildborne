@@ -1,0 +1,77 @@
+--!strict
+local Rules=require("../src/shared/Data/Expansion")
+local Place=require("../src/shared/Data/LandBuildingPlacement")(Rules,require("../src/shared/Data/IslandPlacement"),require("../src/shared/Config/GuildIslandLayout"))
+return function(test:any,eq:any,harness:any,util:any,schema:any)
+    local function setup():any
+        local h=harness();h.setup()
+        for _,id in ipairs({"timber","stone","herb","iron_ore","iron_ingot"}) do h.data().inventory.stacks[id]=50 end
+        return h
+    end
+    test("Hall uses a reserved upgrade-sized footprint and blocks utility overlaps",function()
+        local h=setup();local inventory=util.copy(h.data().inventory)
+        eq(h.send("MoveGuildHall",{x=6.25,z=-3.5,rotation=0}),"OK")
+        eq(h.send("PlaceBuilding",{kind="warehouse",x=6.25,z=-3.5,rotation=0}),"InvalidPlacement")
+        eq(h.send("PlaceBuilding",{kind="guildHall",x=6,z=1,rotation=0}),"InvalidBuilding")
+        eq(h.send("MoveGuildHall",{x=6,z=.25,rotation=0}),"InvalidPlacement")
+        eq(h.send("MoveGuildHall",{x=6,z=-4,rotation=1}),"OK")
+        eq(h.data().inventory,inventory);eq(h.data().personalGuild.buildings.guildHall,1)
+        eq(h.data().expansion.nextBuilding,1)
+        eq(h.send("MoveGuildHall",{x=-2,z=-4.5,rotation=0}),"OK");eq(h.data().expansion.hallPosition,nil)
+    end)
+    test("Hall west land respects purchase gates other footprints and entrance routes",function()
+        local h=setup();eq(h.send("MoveGuildHall",{x=-12,z=-4,rotation=0}),"PlotLocked")
+        h.data().guildLand.plots.grove={questUnlocked=true,entitlement={productId=123,reference="hall-fixture"},delivered={timber=24,herb=8},opened=true}
+        eq(h.send("MoveGuildHall",{x=-12,z=-4,rotation=0}),"OK")
+        eq(h.send("PlaceBuilding",{kind="forge",x=-11,z=-3,rotation=0}),"BuildingOverlap")
+        eq(h.send("MoveGuildHall",{x=-13,z=-4,rotation=3}),"EntranceBlocked")
+        eq(schema.validate(h.service.Sessions[1].record,1),true)
+    end)
+    test("Hall move and upgrade preserve level position identity and rejoin",function()
+        local h=setup();eq(h.send("MoveGuildHall",{x=6,z=1,rotation=0}),"OK")
+        h.data().currencies.gold+=1000;h.data().statistics.goldCreated+=1000;h.data().quests.firstClears.quarry_patrol=true
+        eq(h.send("UpgradeGuildHall"),"OK");eq(h.data().personalGuild.buildings.guildHall,2)
+        eq(h.data().expansion.hallPosition,{x=6,z=1,rotation=0})
+        local command=h.command("MoveGuildHall",{x=6.25,z=-3.75,rotation=0})
+        eq(h.service.Execute(1,command),"OK");eq(h.service.Execute(1,command),"AlreadyCommitted")
+        eq(h.service.Close(1),"OK");h.service=h.make();eq(h.service.Load(1,"hall-rejoin"),"OK")
+        eq(h.data().expansion.hallPosition,{x=6.25,z=-3.75,rotation=0});eq(h.data().personalGuild.buildings.guildHall,2)
+    end)
+    test("Hall movement waits through uncertain persistence before changing its saved location",function()
+        for _,mode in ipairs({"before","after"}) do
+            local h=setup();h.mode=mode;local command=h.command("MoveGuildHall",{x=6,z=-4,rotation=0})
+            eq(h.service.Execute(1,command),"SavePending");eq(h.data().expansion.hallPosition,nil)
+            h.mode="ok";eq(h.service.Refresh(1),"OK");eq(h.service.Execute(1,command),"AlreadyCommitted")
+            eq(h.data().expansion.hallPosition,{x=6,z=-4,rotation=0})
+        end
+    end)
+    test("layouts capture Hall location atomically with utilities and preserve older slots",function()
+        local h=setup();eq(h.send("SaveBuildLayout",{slot=1}),"OK")
+        eq(h.data().expansion.layoutHalls["1"],false)
+        eq(h.send("MoveGuildHall",{x=6,z=-4,rotation=0}),"OK")
+        eq(h.send("SaveBuildLayout",{slot=2}),"OK")
+        eq(h.send("ApplyBuildLayout",{slot=1}),"OK");eq(h.data().expansion.hallPosition,nil)
+        eq(h.send("ApplyBuildLayout",{slot=2}),"OK");eq(h.data().expansion.hallPosition,{x=6,z=-4,rotation=0})
+        h.data().expansion.layoutHalls=nil -- older layouts did not capture the Hall
+        eq(h.send("ApplyBuildLayout",{slot=1}),"OK");eq(h.data().expansion.hallPosition,{x=6,z=-4,rotation=0})
+    end)
+    test("Hall schema and preview reject overlap invalid grid and malformed layout metadata",function()
+        local h=setup();eq(h.send("PlaceBuilding",{kind="warehouse",x=6,z=-4,rotation=0}),"OK")
+        eq(Place(h.data(),"guildHall",6,-4,0),false)
+        local record=util.copy(h.service.Sessions[1].record);record.data.expansion.hallPosition={x=6,z=-4,rotation=0}
+        eq(schema.validate(record,1),false)
+        record.data.expansion.hallPosition={x=6.1,z=1,rotation=0};eq(schema.validate(record,1),false)
+        record.data.expansion.hallPosition=nil;record.data.expansion.layoutHalls={["1"]=false};eq(schema.validate(record,1),false)
+    end)
+    test("new starter edits cannot close a Hall entrance while old save geometry remains loadable",function()
+        local h=setup();eq(h.send("MoveGuildHall",{x=6,z=-4,rotation=1}),"OK")
+        local before=util.copy(h.data())
+        local code=h.send("PlaceBuilding",{kind="warehouse",x=9,z=-4,rotation=0})
+        eq(code,"AccessBlocked");eq(h.data(),before)
+        -- Legacy record fixture is retained, not deleted or silently relocated on load.
+        local old=util.copy(h.service.Sessions[1].record)
+        old.data.expansion.buildings["b:1"]={kind="warehouse",x=9,z=-4,rotation=0};old.data.expansion.nextBuilding=2
+        eq(schema.validate(old,1),true)
+        eq(Place(old.data,"warehouse",9,-4,0,"b:1"),false)
+        eq(Place(old.data,"warehouse",9,2,0,"b:1"),true)
+    end)
+end

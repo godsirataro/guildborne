@@ -1,0 +1,2640 @@
+{
+  "method": "Fresh Chapter00–05 ordinary keyboard/mouse and navigation speed1; read-only State observer; no profile grants/gameplay injections/source hotpatch",
+  "snapshot": {
+    "mode": "Studio memory · not saved after Stop",
+    "data": {
+      "adventurers": {
+        "a:Knight": {
+          "equipmentSlots": {
+            "weapon": "novice:founder:1"
+          },
+          "stats": {
+            "WeaponBonus": 2,
+            "Defense": 7,
+            "Health": 292,
+            "Attack": 90
+          },
+          "id": "a:Knight",
+          "classId": "Knight",
+          "xp": 4285,
+          "name": "Bram",
+          "level": 85,
+          "baseStats": {
+            "Defense": 7,
+            "Health": 40,
+            "Attack": 4
+          },
+          "rank": "F"
+        },
+        "h:1": {
+          "equipmentSlots": {
+            "weapon": "campaign:recruit:1:1"
+          },
+          "stats": {
+            "WeaponBonus": 2,
+            "Defense": 3,
+            "Health": 267,
+            "Attack": 87
+          },
+          "id": "h:1",
+          "classId": "Priest",
+          "xp": 4085,
+          "name": "Sage",
+          "level": 82,
+          "baseStats": {
+            "Defense": 3,
+            "Health": 24,
+            "Attack": 4
+          },
+          "rank": "F"
+        }
+      },
+      "expansion": {
+        "actors": {
+          "player": {
+            "skills": {
+              "vitality": true,
+              "focus": true
+            },
+            "tier": 1
+          }
+        },
+        "nextBuilding": 1,
+        "buildings": [],
+        "themeRights": [],
+        "gatherReady": [],
+        "raceChosen": false,
+        "gathered": [],
+        "tower": {
+          "nextRun": 1,
+          "highest": 0,
+          "checkpoint": 0
+        }
+      },
+      "levelCap": 85,
+      "nextHallLevelCap": 90,
+      "settlement": {
+        "nextOffer": 1,
+        "elixirs": 0,
+        "tavernLevel": 1,
+        "nextHero": 2,
+        "journal": [],
+        "nextJob": 1,
+        "jobs": []
+      },
+      "language": "en",
+      "guildLand": {
+        "accessMode": "Private",
+        "plots": {
+          "grove": {
+            "purchased": false,
+            "questEligible": false,
+            "materials": {
+              "herb": 8,
+              "timber": 24
+            },
+            "delivered": [],
+            "purchaseAvailable": false,
+            "status": "QuestLocked",
+            "quests": {
+              "trail_watch": false
+            },
+            "name": "Grove Terrace"
+          },
+          "quarry": {
+            "purchased": false,
+            "questEligible": false,
+            "materials": {
+              "stone": 32,
+              "iron_ore": 16
+            },
+            "delivered": [],
+            "purchaseAvailable": false,
+            "status": "QuestLocked",
+            "quests": {
+              "quarry_patrol": false,
+              "timber_escort": false
+            },
+            "name": "Quarry Terrace"
+          },
+          "summit": {
+            "purchased": false,
+            "questEligible": false,
+            "materials": {
+              "stone": 40,
+              "timber": 40,
+              "iron_ingot": 4
+            },
+            "delivered": [],
+            "purchaseAvailable": false,
+            "status": "QuestLocked",
+            "quests": {
+              "quarry_patrol": false
+            },
+            "name": "Summit Terrace"
+          }
+        }
+      },
+      "inventory": {
+        "equipment": {
+          "novice:class:1": {
+            "binding": "Account",
+            "upgradeLevel": 0,
+            "definitionId": "mage_staff"
+          },
+          "campaign:recruit:1:1": {
+            "binding": "Account",
+            "definitionId": "apprentice_staff",
+            "upgradeLevel": 0
+          },
+          "novice:founder:1": {
+            "binding": "Account",
+            "upgradeLevel": 0,
+            "definitionId": "knight_sword"
+          }
+        },
+        "stacks": {
+          "timber": 4,
+          "iron_ore": 2,
+          "herb": 3
+        },
+        "nextEquipmentSequence": 1
+      },
+      "character": {
+        "classPathId": "mage:1",
+        "stats": {
+          "WeaponBonus": 2,
+          "Defense": 1,
+          "Health": 278,
+          "Attack": 98
+        },
+        "definitionVersion": 1,
+        "classId": "Mage",
+        "xp": 4265,
+        "raceId": "Human",
+        "tier": 1,
+        "level": 85,
+        "equipmentSlots": {
+          "weapon": "novice:class:1"
+        },
+        "skillId": "fireball"
+      },
+      "hallLevel": 14,
+      "gold": 368,
+      "party": {
+        "adventurerIds": [
+          "a:Knight",
+          "h:1"
+        ]
+      },
+      "rosterCapacity": 5,
+      "quests": {
+        "nextRunSequence": 1,
+        "claimedThrough": 0,
+        "firstClears": []
+      },
+      "progression": {
+        "tutorialStep": "complete",
+        "novice": {
+          "trialClass": "Mage",
+          "founderHero": "a:Knight",
+          "claimed": 6,
+          "version": 1,
+          "objectives": [],
+          "branch": "rescue"
+        },
+        "recruitedClasses": {
+          "Knight": true,
+          "Priest": true
+        },
+        "welcomeSeen": true,
+        "ruleset": "guildborne.progression.2",
+        "campaign": {
+          "version": 1,
+          "hallPermit": 14,
+          "choices": {
+            "choose_tower_door": "sun",
+            "choose_forger_fate": "testify",
+            "choose_offer_response": "investigate",
+            "choose_motto": "together",
+            "choose_crest": "compass",
+            "renew_tower_oath": "courage",
+            "allocate_timber": "workers",
+            "choose_reconciliation": "joint_work",
+            "choose_bridge_route": "sheltered",
+            "choose_joint_review": "workers",
+            "choose_witness_route": "trust"
+          },
+          "claimed": 30,
+          "recruitHero": "h:1",
+          "objectives": []
+        },
+        "tutorialCompleted": true,
+        "everEquipped": false
+      }
+    },
+    "revision": 233
+  },
+  "borrowedMastery": [
+    {
+      "target": [
+        2600,
+        135.39999389648438,
+        1400
+      ],
+      "warning": {
+        "visible": false,
+        "x": 2600,
+        "z": 1400
+      },
+      "attributes": {
+        "TrialStatus": "Active",
+        "OwnerUserId": 11732987790,
+        "ReturnLabel": "Leave trial",
+        "PlayerHealth": 227,
+        "AbilityLabel": "Astral Storm",
+        "DisplayHealth": "HP 227/227 · Mastery construct 3200/3200",
+        "BasicLabel": "Basic Attack",
+        "NextBasicAt": 0,
+        "EnemyHealth": 3200,
+        "NextAbilityAt": 0,
+        "NoviceTrialArena": true,
+        "DisplayTitle": "Mage · Ready",
+        "DisplayGoals": "Defeat the opponent 0/1 · Skills used 0/1 · Warnings dodged 0/2",
+        "ClassId": "Mage",
+        "DisplayHint": "Use F/Q or the buttons. Dodge orange warnings."
+      },
+      "position": [
+        2600,
+        134.99801635742188,
+        1412
+      ]
+    },
+    {
+      "target": [
+        2600,
+        135.39999389648438,
+        1400
+      ],
+      "warning": {
+        "visible": false,
+        "x": 2600,
+        "z": 1400
+      },
+      "attributes": {
+        "PlayerHealth": 227,
+        "AbilityLabel": "Astral Storm",
+        "DisplayHealth": "HP 227/227 · Mastery construct 2908/3200",
+        "ActionAt": 1791244485.676847,
+        "DisplayHint": "Use F/Q or the buttons. Dodge orange warnings.",
+        "OwnerUserId": 11732987790,
+        "ReturnLabel": "Leave trial",
+        "ActionEffect": "Basic",
+        "DisplayGoals": "Defeat the opponent 0/1 · Skills used 1/1 · Warnings dodged 0/2",
+        "NextBasicAt": 1791244487.476743,
+        "ActionTargetPosition": null,
+        "EnemyHealth": 2908,
+        "TrialStatus": "Active",
+        "NextAbilityAt": 1791244495.5783362,
+        "NoviceTrialArena": true,
+        "DisplayTitle": "Mage · Training",
+        "ActionOriginPosition": null,
+        "ClassId": "Mage",
+        "BasicLabel": "Basic Attack"
+      },
+      "position": [
+        2600,
+        134.99801635742188,
+        1412
+      ]
+    },
+    {
+      "target": [
+        2600,
+        135.39999389648438,
+        1400
+      ],
+      "warning": {
+        "visible": false,
+        "x": 2600,
+        "z": 1400
+      },
+      "attributes": {
+        "PlayerHealth": 227,
+        "AbilityLabel": "Astral Storm",
+        "DisplayHealth": "HP 227/227 · Mastery construct 2908/3200",
+        "ActionAt": 1791244485.676847,
+        "DisplayHint": "Your skill is recharging.",
+        "OwnerUserId": 11732987790,
+        "ReturnLabel": "Leave trial",
+        "ActionEffect": "Basic",
+        "DisplayGoals": "Defeat the opponent 0/1 · Skills used 1/1 · Warnings dodged 0/2",
+        "NextBasicAt": 1791244487.4767435,
+        "ActionTargetPosition": null,
+        "EnemyHealth": 2908,
+        "TrialStatus": "Active",
+        "NextAbilityAt": 1791244495.5783362,
+        "NoviceTrialArena": true,
+        "DisplayTitle": "Mage · Training",
+        "ActionOriginPosition": null,
+        "ClassId": "Mage",
+        "BasicLabel": "Basic Attack"
+      },
+      "position": [
+        2600,
+        134.99801635742188,
+        1412
+      ]
+    },
+    {
+      "target": [
+        2600,
+        135.39999389648438,
+        1400
+      ],
+      "warning": {
+        "visible": true,
+        "x": 2600,
+        "z": 1412
+      },
+      "attributes": {
+        "PlayerHealth": 227,
+        "AbilityLabel": "Astral Storm",
+        "DisplayHealth": "HP 227/227 · Mastery construct 2908/3200",
+        "ActionAt": 1791244485.676847,
+        "DisplayHint": "Your skill is recharging.",
+        "ActionTargetPosition": null,
+        "OwnerUserId": 11732987790,
+        "ReturnLabel": "Leave trial",
+        "ActionEffect": "Basic",
+        "DisplayGoals": "Defeat the opponent 0/1 · Skills used 1/1 · Warnings dodged 0/2",
+        "NextBasicAt": 0,
+        "EnemyHealth": 2908,
+        "WarningToken": 4419.12540070001,
+        "TrialStatus": "Active",
+        "NextAbilityAt": 1791244495.5783365,
+        "NoviceTrialArena": true,
+        "DisplayTitle": "Mage · Training",
+        "ActionOriginPosition": null,
+        "ClassId": "Mage",
+        "BasicLabel": "Basic Attack"
+      },
+      "position": [
+        2600,
+        134.99801635742188,
+        1412
+      ]
+    },
+    {
+      "target": [
+        2600,
+        135.39999389648438,
+        1400
+      ],
+      "warning": {
+        "visible": false,
+        "x": 2600,
+        "z": 1412
+      },
+      "attributes": {
+        "PlayerHealth": 227,
+        "AbilityLabel": "Astral Storm",
+        "DisplayHealth": "HP 227/227 · Mastery construct 2827/3200",
+        "ActionAt": 1791244488.793656,
+        "DisplayHint": "Use F/Q or the buttons. Dodge orange warnings.",
+        "OwnerUserId": 11732987790,
+        "ReturnLabel": "Leave trial",
+        "ActionEffect": "Basic",
+        "DisplayGoals": "Defeat the opponent 0/1 · Skills used 1/1 · Warnings dodged 1/2",
+        "NextBasicAt": 1791244490.5935848,
+        "ActionTargetPosition": null,
+        "EnemyHealth": 2827,
+        "TrialStatus": "Active",
+        "NextAbilityAt": 1791244495.578336,
+        "NoviceTrialArena": true,
+        "DisplayTitle": "Mage · Training",
+        "ActionOriginPosition": null,
+        "ClassId": "Mage",
+        "BasicLabel": "Basic Attack"
+      },
+      "position": [
+        2590.884765625,
+        134.99801635742188,
+        1411.9998779296875
+      ]
+    },
+    {
+      "target": [
+        2600,
+        135.39999389648438,
+        1400
+      ],
+      "warning": {
+        "visible": false,
+        "x": 2600,
+        "z": 1412
+      },
+      "attributes": {
+        "PlayerHealth": 227,
+        "AbilityLabel": "Astral Storm",
+        "DisplayHealth": "HP 227/227 · Mastery construct 2827/3200",
+        "ActionAt": 1791244488.793656,
+        "DisplayHint": "Your skill is recharging.",
+        "OwnerUserId": 11732987790,
+        "ReturnLabel": "Leave trial",
+        "ActionEffect": "Basic",
+        "DisplayGoals": "Defeat the opponent 0/1 · Skills used 1/1 · Warnings dodged 1/2",
+        "NextBasicAt": 0,
+        "ActionTargetPosition": null,
+        "EnemyHealth": 2827,
+        "TrialStatus": "Active",
+        "NextAbilityAt": 1791244495.5783362,
+        "NoviceTrialArena": true,
+        "DisplayTitle": "Mage · Training",
+        "ActionOriginPosition": null,
+        "ClassId": "Mage",
+        "BasicLabel": "Basic Attack"
+      },
+      "position": [
+        2599.177001953125,
+        134.9980010986328,
+        1412.0001220703125
+      ]
+    },
+    {
+      "target": [
+        2600,
+        135.39999389648438,
+        1400
+      ],
+      "warning": {
+        "visible": false,
+        "x": 2600,
+        "z": 1412
+      },
+      "attributes": {
+        "PlayerHealth": 227,
+        "AbilityLabel": "Astral Storm",
+        "DisplayHealth": "HP 227/227 · Mastery construct 2746/3200",
+        "ActionAt": 1791244491.110329,
+        "DisplayHint": "Use F/Q or the buttons. Dodge orange warnings.",
+        "OwnerUserId": 11732987790,
+        "ReturnLabel": "Leave trial",
+        "ActionEffect": "Basic",
+        "DisplayGoals": "Defeat the opponent 0/1 · Skills used 1/1 · Warnings dodged 1/2",
+        "NextBasicAt": 1791244492.91021,
+        "ActionTargetPosition": null,
+        "EnemyHealth": 2746,
+        "TrialStatus": "Active",
+        "NextAbilityAt": 1791244495.5783367,
+        "NoviceTrialArena": true,
+        "DisplayTitle": "Mage · Training",
+        "ActionOriginPosition": null,
+        "ClassId": "Mage",
+        "BasicLabel": "Basic Attack"
+      },
+      "position": [
+        2599.177001953125,
+        134.9980010986328,
+        1412.0001220703125
+      ]
+    },
+    {
+      "target": [
+        2600,
+        135.39999389648438,
+        1400
+      ],
+      "warning": {
+        "visible": false,
+        "x": 2600,
+        "z": 1412
+      },
+      "attributes": {
+        "PlayerHealth": 227,
+        "AbilityLabel": "Astral Storm",
+        "DisplayHealth": "HP 227/227 · Mastery construct 2746/3200",
+        "ActionAt": 1791244491.110329,
+        "DisplayHint": "Your skill is recharging.",
+        "OwnerUserId": 11732987790,
+        "ReturnLabel": "Leave trial",
+        "ActionEffect": "Basic",
+        "DisplayGoals": "Defeat the opponent 0/1 · Skills used 1/1 · Warnings dodged 1/2",
+        "NextBasicAt": 1791244492.9102094,
+        "ActionTargetPosition": null,
+        "EnemyHealth": 2746,
+        "TrialStatus": "Active",
+        "NextAbilityAt": 1791244495.578336,
+        "NoviceTrialArena": true,
+        "DisplayTitle": "Mage · Training",
+        "ActionOriginPosition": null,
+        "ClassId": "Mage",
+        "BasicLabel": "Basic Attack"
+      },
+      "position": [
+        2599.177001953125,
+        134.9980010986328,
+        1412.0001220703125
+      ]
+    },
+    {
+      "target": [
+        2600,
+        135.39999389648438,
+        1400
+      ],
+      "warning": {
+        "visible": true,
+        "x": 2599.1796875,
+        "z": 1412
+      },
+      "attributes": {
+        "PlayerHealth": 227,
+        "AbilityLabel": "Astral Storm",
+        "DisplayHealth": "HP 227/227 · Mastery construct 2665/3200",
+        "ActionAt": 1791244492.910488,
+        "DisplayHint": "Use F/Q or the buttons. Dodge orange warnings.",
+        "ActionTargetPosition": null,
+        "OwnerUserId": 11732987790,
+        "ReturnLabel": "Leave trial",
+        "ActionEffect": "Basic",
+        "DisplayGoals": "Defeat the opponent 0/1 · Skills used 1/1 · Warnings dodged 1/2",
+        "NextBasicAt": 1791244494.7104187,
+        "EnemyHealth": 2665,
+        "WarningToken": 4424.3079312000045,
+        "TrialStatus": "Active",
+        "NextAbilityAt": 1791244495.5783362,
+        "NoviceTrialArena": true,
+        "DisplayTitle": "Mage · Training",
+        "ActionOriginPosition": null,
+        "ClassId": "Mage",
+        "BasicLabel": "Basic Attack"
+      },
+      "position": [
+        2599.177001953125,
+        134.9980010986328,
+        1412.0001220703125
+      ]
+    },
+    {
+      "target": [
+        2600,
+        135.39999389648438,
+        1400
+      ],
+      "warning": {
+        "visible": false,
+        "x": 2599.1796875,
+        "z": 1412
+      },
+      "attributes": {
+        "PlayerHealth": 216,
+        "AbilityLabel": "Astral Storm",
+        "DisplayHealth": "HP 216/227 · Mastery construct 2665/3200",
+        "ActionAt": 1791244492.910488,
+        "DisplayHint": "Your skill is recharging.",
+        "OwnerUserId": 11732987790,
+        "ReturnLabel": "Leave trial",
+        "ActionEffect": "Basic",
+        "DisplayGoals": "Defeat the opponent 0/1 · Skills used 1/1 · Warnings dodged 1/2",
+        "NextBasicAt": 0,
+        "ActionTargetPosition": null,
+        "EnemyHealth": 2665,
+        "TrialStatus": "Active",
+        "NextAbilityAt": 1791244495.5783365,
+        "NoviceTrialArena": true,
+        "DisplayTitle": "Mage · Training",
+        "ActionOriginPosition": null,
+        "ClassId": "Mage",
+        "BasicLabel": "Basic Attack"
+      },
+      "position": [
+        2609.36083984375,
+        134.9980010986328,
+        1411.9996337890625
+      ]
+    },
+    {
+      "target": [
+        2600,
+        135.39999389648438,
+        1400
+      ],
+      "warning": {
+        "visible": false,
+        "x": 2599.1796875,
+        "z": 1412
+      },
+      "attributes": {
+        "PlayerHealth": 216,
+        "AbilityLabel": "Astral Storm",
+        "DisplayHealth": "HP 216/227 · Mastery construct 2373/3200",
+        "ActionAt": 1791244495.893729,
+        "DisplayHint": "Use F/Q or the buttons. Dodge orange warnings.",
+        "OwnerUserId": 11732987790,
+        "ReturnLabel": "Leave trial",
+        "ActionEffect": "Basic",
+        "DisplayGoals": "Defeat the opponent 0/1 · Skills used 1/1 · Warnings dodged 1/2",
+        "NextBasicAt": 1791244497.6936235,
+        "ActionTargetPosition": null,
+        "EnemyHealth": 2373,
+        "TrialStatus": "Active",
+        "NextAbilityAt": 1791244505.7765987,
+        "NoviceTrialArena": true,
+        "DisplayTitle": "Mage · Training",
+        "ActionOriginPosition": null,
+        "ClassId": "Mage",
+        "BasicLabel": "Basic Attack"
+      },
+      "position": [
+        2600.689697265625,
+        134.9980010986328,
+        1412
+      ]
+    },
+    {
+      "target": [
+        2600,
+        135.39999389648438,
+        1400
+      ],
+      "warning": {
+        "visible": false,
+        "x": 2599.1796875,
+        "z": 1412
+      },
+      "attributes": {
+        "PlayerHealth": 216,
+        "AbilityLabel": "Astral Storm",
+        "DisplayHealth": "HP 216/227 · Mastery construct 2373/3200",
+        "ActionAt": 1791244495.893729,
+        "DisplayHint": "Your skill is recharging.",
+        "OwnerUserId": 11732987790,
+        "ReturnLabel": "Leave trial",
+        "ActionEffect": "Basic",
+        "DisplayGoals": "Defeat the opponent 0/1 · Skills used 1/1 · Warnings dodged 1/2",
+        "NextBasicAt": 1791244497.6936233,
+        "ActionTargetPosition": null,
+        "EnemyHealth": 2373,
+        "TrialStatus": "Active",
+        "NextAbilityAt": 1791244505.7765992,
+        "NoviceTrialArena": true,
+        "DisplayTitle": "Mage · Training",
+        "ActionOriginPosition": null,
+        "ClassId": "Mage",
+        "BasicLabel": "Basic Attack"
+      },
+      "position": [
+        2600.689697265625,
+        134.9980010986328,
+        1412
+      ]
+    },
+    {
+      "target": [
+        2600,
+        135.39999389648438,
+        1400
+      ],
+      "warning": {
+        "visible": true,
+        "x": 2600.6875,
+        "z": 1412
+      },
+      "attributes": {
+        "PlayerHealth": 216,
+        "AbilityLabel": "Astral Storm",
+        "DisplayHealth": "HP 216/227 · Mastery construct 2373/3200",
+        "ActionAt": 1791244495.893729,
+        "DisplayHint": "Your skill is recharging.",
+        "ActionTargetPosition": null,
+        "OwnerUserId": 11732987790,
+        "ReturnLabel": "Leave trial",
+        "ActionEffect": "Basic",
+        "DisplayGoals": "Defeat the opponent 0/1 · Skills used 1/1 · Warnings dodged 1/2",
+        "NextBasicAt": 0,
+        "EnemyHealth": 2373,
+        "WarningToken": 4429.374309900013,
+        "TrialStatus": "Active",
+        "NextAbilityAt": 1791244505.7765992,
+        "NoviceTrialArena": true,
+        "DisplayTitle": "Mage · Training",
+        "ActionOriginPosition": null,
+        "ClassId": "Mage",
+        "BasicLabel": "Basic Attack"
+      },
+      "position": [
+        2600.689697265625,
+        134.9980010986328,
+        1412
+      ]
+    },
+    {
+      "target": [
+        2600,
+        135.39999389648438,
+        1400
+      ],
+      "warning": {
+        "visible": false,
+        "x": 2600.6875,
+        "z": 1412
+      },
+      "attributes": {
+        "PlayerHealth": 216,
+        "AbilityLabel": "Astral Storm",
+        "DisplayHealth": "HP 216/227 · Mastery construct 2292/3200",
+        "ActionAt": 1791244499.244376,
+        "DisplayHint": "Use F/Q or the buttons. Dodge orange warnings.",
+        "OwnerUserId": 11732987790,
+        "ReturnLabel": "Leave trial",
+        "ActionEffect": "Basic",
+        "DisplayGoals": "Defeat the opponent 0/1 · Skills used 1/1 · Warnings dodged 2/2",
+        "NextBasicAt": 1791244501.0442777,
+        "ActionTargetPosition": null,
+        "EnemyHealth": 2292,
+        "TrialStatus": "Active",
+        "NextAbilityAt": 1791244505.7765994,
+        "NoviceTrialArena": true,
+        "DisplayTitle": "Mage · Training",
+        "ActionOriginPosition": null,
+        "ClassId": "Mage",
+        "BasicLabel": "Basic Attack"
+      },
+      "position": [
+        2590.7724609375,
+        134.9980010986328,
+        1412.00048828125
+      ]
+    },
+    {
+      "target": [
+        2600,
+        135.39999389648438,
+        1400
+      ],
+      "warning": {
+        "visible": false,
+        "x": 2600.6875,
+        "z": 1412
+      },
+      "attributes": {
+        "PlayerHealth": 216,
+        "AbilityLabel": "Astral Storm",
+        "DisplayHealth": "HP 216/227 · Mastery construct 2292/3200",
+        "ActionAt": 1791244499.244376,
+        "DisplayHint": "Your skill is recharging.",
+        "OwnerUserId": 11732987790,
+        "ReturnLabel": "Leave trial",
+        "ActionEffect": "Basic",
+        "DisplayGoals": "Defeat the opponent 0/1 · Skills used 1/1 · Warnings dodged 2/2",
+        "NextBasicAt": 0,
+        "ActionTargetPosition": null,
+        "EnemyHealth": 2292,
+        "TrialStatus": "Active",
+        "NextAbilityAt": 1791244505.7765992,
+        "NoviceTrialArena": true,
+        "DisplayTitle": "Mage · Training",
+        "ActionOriginPosition": null,
+        "ClassId": "Mage",
+        "BasicLabel": "Basic Attack"
+      },
+      "position": [
+        2599.331298828125,
+        134.9980010986328,
+        1412
+      ]
+    },
+    {
+      "target": [
+        2600,
+        135.39999389648438,
+        1400
+      ],
+      "warning": {
+        "visible": false,
+        "x": 2600.6875,
+        "z": 1412
+      },
+      "attributes": {
+        "PlayerHealth": 216,
+        "AbilityLabel": "Astral Storm",
+        "DisplayHealth": "HP 216/227 · Mastery construct 2211/3200",
+        "ActionAt": 1791244501.510574,
+        "DisplayHint": "Use F/Q or the buttons. Dodge orange warnings.",
+        "OwnerUserId": 11732987790,
+        "ReturnLabel": "Leave trial",
+        "ActionEffect": "Basic",
+        "DisplayGoals": "Defeat the opponent 0/1 · Skills used 1/1 · Warnings dodged 2/2",
+        "NextBasicAt": 1791244503.3104544,
+        "ActionTargetPosition": null,
+        "EnemyHealth": 2211,
+        "TrialStatus": "Active",
+        "NextAbilityAt": 1791244505.7765987,
+        "NoviceTrialArena": true,
+        "DisplayTitle": "Mage · Training",
+        "ActionOriginPosition": null,
+        "ClassId": "Mage",
+        "BasicLabel": "Basic Attack"
+      },
+      "position": [
+        2599.331298828125,
+        134.9980010986328,
+        1412
+      ]
+    },
+    {
+      "target": [
+        2600,
+        135.39999389648438,
+        1400
+      ],
+      "warning": {
+        "visible": true,
+        "x": 2599.328125,
+        "z": 1412
+      },
+      "attributes": {
+        "PlayerHealth": 216,
+        "AbilityLabel": "Astral Storm",
+        "DisplayHealth": "HP 216/227 · Mastery construct 2211/3200",
+        "ActionAt": 1791244501.510574,
+        "DisplayHint": "Your skill is recharging.",
+        "ActionTargetPosition": null,
+        "OwnerUserId": 11732987790,
+        "ReturnLabel": "Leave trial",
+        "ActionEffect": "Basic",
+        "DisplayGoals": "Defeat the opponent 0/1 · Skills used 1/1 · Warnings dodged 2/2",
+        "NextBasicAt": 1791244503.3104548,
+        "EnemyHealth": 2211,
+        "WarningToken": 4434.423820100012,
+        "TrialStatus": "Active",
+        "NextAbilityAt": 1791244505.7765996,
+        "NoviceTrialArena": true,
+        "DisplayTitle": "Mage · Training",
+        "ActionOriginPosition": null,
+        "ClassId": "Mage",
+        "BasicLabel": "Basic Attack"
+      },
+      "position": [
+        2599.331298828125,
+        134.9980010986328,
+        1412
+      ]
+    },
+    {
+      "target": [
+        2600,
+        135.39999389648438,
+        1400
+      ],
+      "warning": {
+        "visible": false,
+        "x": 2599.328125,
+        "z": 1412
+      },
+      "attributes": {
+        "PlayerHealth": 216,
+        "AbilityLabel": "Astral Storm",
+        "DisplayHealth": "HP 216/227 · Mastery construct 2130/3200",
+        "ActionAt": 1791244503.926516,
+        "DisplayHint": "Use F/Q or the buttons. Dodge orange warnings.",
+        "OwnerUserId": 11732987790,
+        "ReturnLabel": "Leave trial",
+        "ActionEffect": "Basic",
+        "DisplayGoals": "Defeat the opponent 0/1 · Skills used 1/1 · Warnings dodged 2/2",
+        "NextBasicAt": 1791244505.726425,
+        "ActionTargetPosition": null,
+        "EnemyHealth": 2130,
+        "TrialStatus": "Active",
+        "NextAbilityAt": 1791244505.7765987,
+        "NoviceTrialArena": true,
+        "DisplayTitle": "Mage · Training",
+        "ActionOriginPosition": null,
+        "ClassId": "Mage",
+        "BasicLabel": "Basic Attack"
+      },
+      "position": [
+        2609.115234375,
+        134.9980010986328,
+        1411.99951171875
+      ]
+    },
+    {
+      "target": [
+        2600,
+        135.39999389648438,
+        1400
+      ],
+      "warning": {
+        "visible": false,
+        "x": 2599.328125,
+        "z": 1412
+      },
+      "attributes": {
+        "PlayerHealth": 216,
+        "AbilityLabel": "Astral Storm",
+        "DisplayHealth": "HP 216/227 · Mastery construct 2130/3200",
+        "ActionAt": 1791244503.926516,
+        "DisplayHint": "Your skill is recharging.",
+        "OwnerUserId": 11732987790,
+        "ReturnLabel": "Leave trial",
+        "ActionEffect": "Basic",
+        "DisplayGoals": "Defeat the opponent 0/1 · Skills used 1/1 · Warnings dodged 2/2",
+        "NextBasicAt": 0,
+        "ActionTargetPosition": null,
+        "EnemyHealth": 2130,
+        "TrialStatus": "Active",
+        "NextAbilityAt": 0,
+        "NoviceTrialArena": true,
+        "DisplayTitle": "Mage · Training",
+        "ActionOriginPosition": null,
+        "ClassId": "Mage",
+        "BasicLabel": "Basic Attack"
+      },
+      "position": [
+        2600.822998046875,
+        134.9980010986328,
+        1411.9998779296875
+      ]
+    },
+    {
+      "target": [
+        2600,
+        135.39999389648438,
+        1400
+      ],
+      "warning": {
+        "visible": false,
+        "x": 2599.328125,
+        "z": 1412
+      },
+      "attributes": {
+        "PlayerHealth": 216,
+        "AbilityLabel": "Astral Storm",
+        "DisplayHealth": "HP 216/227 · Mastery construct 1838/3200",
+        "ActionAt": 1791244506.193815,
+        "DisplayHint": "Use F/Q or the buttons. Dodge orange warnings.",
+        "OwnerUserId": 11732987790,
+        "ReturnLabel": "Leave trial",
+        "ActionEffect": "Basic",
+        "DisplayGoals": "Defeat the opponent 0/1 · Skills used 1/1 · Warnings dodged 2/2",
+        "NextBasicAt": 1791244507.9937096,
+        "ActionTargetPosition": null,
+        "EnemyHealth": 1838,
+        "TrialStatus": "Active",
+        "NextAbilityAt": 1791244516.0924318,
+        "NoviceTrialArena": true,
+        "DisplayTitle": "Mage · Training",
+        "ActionOriginPosition": null,
+        "ClassId": "Mage",
+        "BasicLabel": "Basic Attack"
+      },
+      "position": [
+        2600.822998046875,
+        134.9980010986328,
+        1411.9998779296875
+      ]
+    },
+    {
+      "target": [
+        2600,
+        135.39999389648438,
+        1400
+      ],
+      "warning": {
+        "visible": false,
+        "x": 2599.328125,
+        "z": 1412
+      },
+      "attributes": {
+        "PlayerHealth": 216,
+        "AbilityLabel": "Astral Storm",
+        "DisplayHealth": "HP 216/227 · Mastery construct 1838/3200",
+        "ActionAt": 1791244506.193815,
+        "DisplayHint": "Your skill is recharging.",
+        "OwnerUserId": 11732987790,
+        "ReturnLabel": "Leave trial",
+        "ActionEffect": "Basic",
+        "DisplayGoals": "Defeat the opponent 0/1 · Skills used 1/1 · Warnings dodged 2/2",
+        "NextBasicAt": 1791244507.9937093,
+        "ActionTargetPosition": null,
+        "EnemyHealth": 1838,
+        "TrialStatus": "Active",
+        "NextAbilityAt": 1791244516.0924327,
+        "NoviceTrialArena": true,
+        "DisplayTitle": "Mage · Training",
+        "ActionOriginPosition": null,
+        "ClassId": "Mage",
+        "BasicLabel": "Basic Attack"
+      },
+      "position": [
+        2600.822998046875,
+        134.9980010986328,
+        1411.9998779296875
+      ]
+    },
+    {
+      "target": [
+        2600,
+        135.39999389648438,
+        1400
+      ],
+      "warning": {
+        "visible": true,
+        "x": 2600.8203125,
+        "z": 1412
+      },
+      "attributes": {
+        "PlayerHealth": 216,
+        "AbilityLabel": "Astral Storm",
+        "DisplayHealth": "HP 216/227 · Mastery construct 1838/3200",
+        "ActionAt": 1791244506.193815,
+        "DisplayHint": "Your skill is recharging.",
+        "ActionTargetPosition": null,
+        "OwnerUserId": 11732987790,
+        "ReturnLabel": "Leave trial",
+        "ActionEffect": "Basic",
+        "DisplayGoals": "Defeat the opponent 0/1 · Skills used 1/1 · Warnings dodged 2/2",
+        "NextBasicAt": 0,
+        "EnemyHealth": 1838,
+        "WarningToken": 4439.560662200005,
+        "TrialStatus": "Active",
+        "NextAbilityAt": 1791244516.092432,
+        "NoviceTrialArena": true,
+        "DisplayTitle": "Mage · Training",
+        "ActionOriginPosition": null,
+        "ClassId": "Mage",
+        "BasicLabel": "Basic Attack"
+      },
+      "position": [
+        2600.822998046875,
+        134.9980010986328,
+        1411.9998779296875
+      ]
+    },
+    {
+      "target": [
+        2600,
+        135.39999389648438,
+        1400
+      ],
+      "warning": {
+        "visible": false,
+        "x": 2600.8203125,
+        "z": 1412
+      },
+      "attributes": {
+        "PlayerHealth": 216,
+        "AbilityLabel": "Astral Storm",
+        "DisplayHealth": "HP 216/227 · Mastery construct 1757/3200",
+        "ActionAt": 1791244509.477031,
+        "DisplayHint": "Use F/Q or the buttons. Dodge orange warnings.",
+        "OwnerUserId": 11732987790,
+        "ReturnLabel": "Leave trial",
+        "ActionEffect": "Basic",
+        "DisplayGoals": "Defeat the opponent 0/1 · Skills used 1/1 · Warnings dodged 2/2",
+        "NextBasicAt": 1791244511.2768934,
+        "ActionTargetPosition": null,
+        "EnemyHealth": 1757,
+        "TrialStatus": "Active",
+        "NextAbilityAt": 1791244516.0924323,
+        "NoviceTrialArena": true,
+        "DisplayTitle": "Mage · Training",
+        "ActionOriginPosition": null,
+        "ClassId": "Mage",
+        "BasicLabel": "Basic Attack"
+      },
+      "position": [
+        2590.63916015625,
+        134.9980010986328,
+        1412.0003662109375
+      ]
+    },
+    {
+      "target": [
+        2600,
+        135.39999389648438,
+        1400
+      ],
+      "warning": {
+        "visible": false,
+        "x": 2600.8203125,
+        "z": 1412
+      },
+      "attributes": {
+        "PlayerHealth": 216,
+        "AbilityLabel": "Astral Storm",
+        "DisplayHealth": "HP 216/227 · Mastery construct 1757/3200",
+        "ActionAt": 1791244509.477031,
+        "DisplayHint": "Your skill is recharging.",
+        "OwnerUserId": 11732987790,
+        "ReturnLabel": "Leave trial",
+        "ActionEffect": "Basic",
+        "DisplayGoals": "Defeat the opponent 0/1 · Skills used 1/1 · Warnings dodged 2/2",
+        "NextBasicAt": 0,
+        "ActionTargetPosition": null,
+        "EnemyHealth": 1757,
+        "TrialStatus": "Active",
+        "NextAbilityAt": 1791244516.0924315,
+        "NoviceTrialArena": true,
+        "DisplayTitle": "Mage · Training",
+        "ActionOriginPosition": null,
+        "ClassId": "Mage",
+        "BasicLabel": "Basic Attack"
+      },
+      "position": [
+        2599.26513671875,
+        134.9980010986328,
+        1412
+      ]
+    },
+    {
+      "target": [
+        2600,
+        135.39999389648438,
+        1400
+      ],
+      "warning": {
+        "visible": false,
+        "x": 2600.8203125,
+        "z": 1412
+      },
+      "attributes": {
+        "PlayerHealth": 216,
+        "AbilityLabel": "Astral Storm",
+        "DisplayHealth": "HP 216/227 · Mastery construct 1676/3200",
+        "ActionAt": 1791244511.809376,
+        "DisplayHint": "Use F/Q or the buttons. Dodge orange warnings.",
+        "OwnerUserId": 11732987790,
+        "ReturnLabel": "Leave trial",
+        "ActionEffect": "Basic",
+        "DisplayGoals": "Defeat the opponent 0/1 · Skills used 1/1 · Warnings dodged 2/2",
+        "NextBasicAt": 1791244513.6092744,
+        "ActionTargetPosition": null,
+        "EnemyHealth": 1676,
+        "TrialStatus": "Active",
+        "NextAbilityAt": 1791244516.092432,
+        "NoviceTrialArena": true,
+        "DisplayTitle": "Mage · Training",
+        "ActionOriginPosition": null,
+        "ClassId": "Mage",
+        "BasicLabel": "Basic Attack"
+      },
+      "position": [
+        2599.26513671875,
+        134.9980010986328,
+        1412
+      ]
+    },
+    {
+      "target": [
+        2600,
+        135.39999389648438,
+        1400
+      ],
+      "warning": {
+        "visible": true,
+        "x": 2599.265625,
+        "z": 1412
+      },
+      "attributes": {
+        "PlayerHealth": 216,
+        "AbilityLabel": "Astral Storm",
+        "DisplayHealth": "HP 216/227 · Mastery construct 1676/3200",
+        "ActionAt": 1791244511.809376,
+        "DisplayHint": "Your skill is recharging.",
+        "ActionTargetPosition": null,
+        "OwnerUserId": 11732987790,
+        "ReturnLabel": "Leave trial",
+        "ActionEffect": "Basic",
+        "DisplayGoals": "Defeat the opponent 0/1 · Skills used 1/1 · Warnings dodged 2/2",
+        "NextBasicAt": 1791244513.6092741,
+        "EnemyHealth": 1676,
+        "WarningToken": 4444.6578916,
+        "TrialStatus": "Active",
+        "NextAbilityAt": 1791244516.092432,
+        "NoviceTrialArena": true,
+        "DisplayTitle": "Mage · Training",
+        "ActionOriginPosition": null,
+        "ClassId": "Mage",
+        "BasicLabel": "Basic Attack"
+      },
+      "position": [
+        2599.26513671875,
+        134.9980010986328,
+        1412
+      ]
+    },
+    {
+      "target": [
+        2600,
+        135.39999389648438,
+        1400
+      ],
+      "warning": {
+        "visible": false,
+        "x": 2599.265625,
+        "z": 1412
+      },
+      "attributes": {
+        "PlayerHealth": 216,
+        "AbilityLabel": "Astral Storm",
+        "DisplayHealth": "HP 216/227 · Mastery construct 1595/3200",
+        "ActionAt": 1791244514.258951,
+        "DisplayHint": "Use F/Q or the buttons. Dodge orange warnings.",
+        "OwnerUserId": 11732987790,
+        "ReturnLabel": "Leave trial",
+        "ActionEffect": "Basic",
+        "DisplayGoals": "Defeat the opponent 0/1 · Skills used 1/1 · Warnings dodged 2/2",
+        "NextBasicAt": 1791244516.0588512,
+        "ActionTargetPosition": null,
+        "EnemyHealth": 1595,
+        "TrialStatus": "Active",
+        "NextAbilityAt": 1791244516.0924318,
+        "NoviceTrialArena": true,
+        "DisplayTitle": "Mage · Training",
+        "ActionOriginPosition": null,
+        "ClassId": "Mage",
+        "BasicLabel": "Basic Attack"
+      },
+      "position": [
+        2609.182373046875,
+        134.9980010986328,
+        1411.99951171875
+      ]
+    },
+    {
+      "target": [
+        2600,
+        135.39999389648438,
+        1400
+      ],
+      "warning": {
+        "visible": false,
+        "x": 2599.265625,
+        "z": 1412
+      },
+      "attributes": {
+        "PlayerHealth": 216,
+        "AbilityLabel": "Astral Storm",
+        "DisplayHealth": "HP 216/227 · Mastery construct 1595/3200",
+        "ActionAt": 1791244514.258951,
+        "DisplayHint": "Your skill is recharging.",
+        "OwnerUserId": 11732987790,
+        "ReturnLabel": "Leave trial",
+        "ActionEffect": "Basic",
+        "DisplayGoals": "Defeat the opponent 0/1 · Skills used 1/1 · Warnings dodged 2/2",
+        "NextBasicAt": 0,
+        "ActionTargetPosition": null,
+        "EnemyHealth": 1595,
+        "TrialStatus": "Active",
+        "NextAbilityAt": 0,
+        "NoviceTrialArena": true,
+        "DisplayTitle": "Mage · Training",
+        "ActionOriginPosition": null,
+        "ClassId": "Mage",
+        "BasicLabel": "Basic Attack"
+      },
+      "position": [
+        2600.89013671875,
+        134.9980010986328,
+        1411.9998779296875
+      ]
+    },
+    {
+      "target": [
+        2600,
+        135.39999389648438,
+        1400
+      ],
+      "warning": {
+        "visible": false,
+        "x": 2599.265625,
+        "z": 1412
+      },
+      "attributes": {
+        "PlayerHealth": 216,
+        "AbilityLabel": "Astral Storm",
+        "DisplayHealth": "HP 216/227 · Mastery construct 1303/3200",
+        "ActionAt": 1791244516.593425,
+        "DisplayHint": "Use F/Q or the buttons. Dodge orange warnings.",
+        "OwnerUserId": 11732987790,
+        "ReturnLabel": "Leave trial",
+        "ActionEffect": "Basic",
+        "DisplayGoals": "Defeat the opponent 0/1 · Skills used 1/1 · Warnings dodged 2/2",
+        "NextBasicAt": 1791244518.393342,
+        "ActionTargetPosition": null,
+        "EnemyHealth": 1303,
+        "TrialStatus": "Active",
+        "NextAbilityAt": 1791244526.492197,
+        "NoviceTrialArena": true,
+        "DisplayTitle": "Mage · Training",
+        "ActionOriginPosition": null,
+        "ClassId": "Mage",
+        "BasicLabel": "Basic Attack"
+      },
+      "position": [
+        2600.89013671875,
+        134.9980010986328,
+        1411.9998779296875
+      ]
+    },
+    {
+      "target": [
+        2600,
+        135.39999389648438,
+        1400
+      ],
+      "warning": {
+        "visible": false,
+        "x": 2599.265625,
+        "z": 1412
+      },
+      "attributes": {
+        "PlayerHealth": 216,
+        "AbilityLabel": "Astral Storm",
+        "DisplayHealth": "HP 216/227 · Mastery construct 1303/3200",
+        "ActionAt": 1791244516.593425,
+        "DisplayHint": "Your skill is recharging.",
+        "OwnerUserId": 11732987790,
+        "ReturnLabel": "Leave trial",
+        "ActionEffect": "Basic",
+        "DisplayGoals": "Defeat the opponent 0/1 · Skills used 1/1 · Warnings dodged 2/2",
+        "NextBasicAt": 1791244518.3933427,
+        "ActionTargetPosition": null,
+        "EnemyHealth": 1303,
+        "TrialStatus": "Active",
+        "NextAbilityAt": 1791244526.4921966,
+        "NoviceTrialArena": true,
+        "DisplayTitle": "Mage · Training",
+        "ActionOriginPosition": null,
+        "ClassId": "Mage",
+        "BasicLabel": "Basic Attack"
+      },
+      "position": [
+        2600.89013671875,
+        134.9980010986328,
+        1411.9998779296875
+      ]
+    },
+    {
+      "target": [
+        2600,
+        135.39999389648438,
+        1400
+      ],
+      "warning": {
+        "visible": true,
+        "x": 2600.890625,
+        "z": 1412
+      },
+      "attributes": {
+        "PlayerHealth": 216,
+        "AbilityLabel": "Astral Storm",
+        "DisplayHealth": "HP 216/227 · Mastery construct 1303/3200",
+        "ActionAt": 1791244516.593425,
+        "DisplayHint": "Your skill is recharging.",
+        "ActionTargetPosition": null,
+        "OwnerUserId": 11732987790,
+        "ReturnLabel": "Leave trial",
+        "ActionEffect": "Basic",
+        "DisplayGoals": "Defeat the opponent 0/1 · Skills used 1/1 · Warnings dodged 2/2",
+        "NextBasicAt": 0,
+        "EnemyHealth": 1303,
+        "WarningToken": 4449.706610600013,
+        "TrialStatus": "Active",
+        "NextAbilityAt": 1791244526.4921966,
+        "NoviceTrialArena": true,
+        "DisplayTitle": "Mage · Training",
+        "ActionOriginPosition": null,
+        "ClassId": "Mage",
+        "BasicLabel": "Basic Attack"
+      },
+      "position": [
+        2600.89013671875,
+        134.9980010986328,
+        1411.9998779296875
+      ]
+    },
+    {
+      "target": [
+        2600,
+        135.39999389648438,
+        1400
+      ],
+      "warning": {
+        "visible": false,
+        "x": 2600.890625,
+        "z": 1412
+      },
+      "attributes": {
+        "PlayerHealth": 205,
+        "AbilityLabel": "Astral Storm",
+        "DisplayHealth": "HP 205/227 · Mastery construct 1222/3200",
+        "ActionAt": 1791244519.842578,
+        "DisplayHint": "Use F/Q or the buttons. Dodge orange warnings.",
+        "OwnerUserId": 11732987790,
+        "ReturnLabel": "Leave trial",
+        "ActionEffect": "Basic",
+        "DisplayGoals": "Defeat the opponent 0/1 · Skills used 1/1 · Warnings dodged 2/2",
+        "NextBasicAt": 1791244521.6424816,
+        "ActionTargetPosition": null,
+        "EnemyHealth": 1222,
+        "TrialStatus": "Active",
+        "NextAbilityAt": 1791244526.4921966,
+        "NoviceTrialArena": true,
+        "DisplayTitle": "Mage · Training",
+        "ActionOriginPosition": null,
+        "ClassId": "Mage",
+        "BasicLabel": "Basic Attack"
+      },
+      "position": [
+        2590.706298828125,
+        134.9980010986328,
+        1412.0003662109375
+      ]
+    },
+    {
+      "target": [
+        2600,
+        135.39999389648438,
+        1400
+      ],
+      "warning": {
+        "visible": false,
+        "x": 2600.890625,
+        "z": 1412
+      },
+      "attributes": {
+        "PlayerHealth": 205,
+        "AbilityLabel": "Astral Storm",
+        "DisplayHealth": "HP 205/227 · Mastery construct 1222/3200",
+        "ActionAt": 1791244519.842578,
+        "DisplayHint": "Your skill is recharging.",
+        "OwnerUserId": 11732987790,
+        "ReturnLabel": "Leave trial",
+        "ActionEffect": "Basic",
+        "DisplayGoals": "Defeat the opponent 0/1 · Skills used 1/1 · Warnings dodged 2/2",
+        "NextBasicAt": 0,
+        "ActionTargetPosition": null,
+        "EnemyHealth": 1222,
+        "TrialStatus": "Active",
+        "NextAbilityAt": 1791244526.492197,
+        "NoviceTrialArena": true,
+        "DisplayTitle": "Mage · Training",
+        "ActionOriginPosition": null,
+        "ClassId": "Mage",
+        "BasicLabel": "Basic Attack"
+      },
+      "position": [
+        2599.26513671875,
+        134.9980010986328,
+        1412
+      ]
+    },
+    {
+      "target": [
+        2600,
+        135.39999389648438,
+        1400
+      ],
+      "warning": {
+        "visible": false,
+        "x": 2600.890625,
+        "z": 1412
+      },
+      "attributes": {
+        "PlayerHealth": 205,
+        "AbilityLabel": "Astral Storm",
+        "DisplayHealth": "HP 205/227 · Mastery construct 1141/3200",
+        "ActionAt": 1791244522.092725,
+        "DisplayHint": "Use F/Q or the buttons. Dodge orange warnings.",
+        "OwnerUserId": 11732987790,
+        "ReturnLabel": "Leave trial",
+        "ActionEffect": "Basic",
+        "DisplayGoals": "Defeat the opponent 0/1 · Skills used 1/1 · Warnings dodged 2/2",
+        "NextBasicAt": 1791244523.8926423,
+        "ActionTargetPosition": null,
+        "EnemyHealth": 1141,
+        "TrialStatus": "Active",
+        "NextAbilityAt": 1791244526.4921963,
+        "NoviceTrialArena": true,
+        "DisplayTitle": "Mage · Training",
+        "ActionOriginPosition": null,
+        "ClassId": "Mage",
+        "BasicLabel": "Basic Attack"
+      },
+      "position": [
+        2599.26513671875,
+        134.9980010986328,
+        1412
+      ]
+    },
+    {
+      "target": [
+        2600,
+        135.39999389648438,
+        1400
+      ],
+      "warning": {
+        "visible": true,
+        "x": 2599.265625,
+        "z": 1412
+      },
+      "attributes": {
+        "PlayerHealth": 205,
+        "AbilityLabel": "Astral Storm",
+        "DisplayHealth": "HP 205/227 · Mastery construct 1141/3200",
+        "ActionAt": 1791244522.092725,
+        "DisplayHint": "Your skill is recharging.",
+        "ActionTargetPosition": null,
+        "OwnerUserId": 11732987790,
+        "ReturnLabel": "Leave trial",
+        "ActionEffect": "Basic",
+        "DisplayGoals": "Defeat the opponent 0/1 · Skills used 1/1 · Warnings dodged 2/2",
+        "NextBasicAt": 1791244523.8926418,
+        "EnemyHealth": 1141,
+        "WarningToken": 4454.790408300003,
+        "TrialStatus": "Active",
+        "NextAbilityAt": 1791244526.4921963,
+        "NoviceTrialArena": true,
+        "DisplayTitle": "Mage · Training",
+        "ActionOriginPosition": null,
+        "ClassId": "Mage",
+        "BasicLabel": "Basic Attack"
+      },
+      "position": [
+        2599.26513671875,
+        134.9980010986328,
+        1412
+      ]
+    },
+    {
+      "target": [
+        2600,
+        135.39999389648438,
+        1400
+      ],
+      "warning": {
+        "visible": false,
+        "x": 2599.265625,
+        "z": 1412
+      },
+      "attributes": {
+        "PlayerHealth": 205,
+        "AbilityLabel": "Astral Storm",
+        "DisplayHealth": "HP 205/227 · Mastery construct 1060/3200",
+        "ActionAt": 1791244524.542783,
+        "DisplayHint": "Use F/Q or the buttons. Dodge orange warnings.",
+        "OwnerUserId": 11732987790,
+        "ReturnLabel": "Leave trial",
+        "ActionEffect": "Basic",
+        "DisplayGoals": "Defeat the opponent 0/1 · Skills used 1/1 · Warnings dodged 2/2",
+        "NextBasicAt": 1791244526.3426704,
+        "ActionTargetPosition": null,
+        "EnemyHealth": 1060,
+        "TrialStatus": "Active",
+        "NextAbilityAt": 1791244526.4921973,
+        "NoviceTrialArena": true,
+        "DisplayTitle": "Mage · Training",
+        "ActionOriginPosition": null,
+        "ClassId": "Mage",
+        "BasicLabel": "Basic Attack"
+      },
+      "position": [
+        2609.182373046875,
+        134.9980010986328,
+        1411.99951171875
+      ]
+    },
+    {
+      "target": [
+        2600,
+        135.39999389648438,
+        1400
+      ],
+      "warning": {
+        "visible": false,
+        "x": 2599.265625,
+        "z": 1412
+      },
+      "attributes": {
+        "PlayerHealth": 205,
+        "AbilityLabel": "Astral Storm",
+        "DisplayHealth": "HP 205/227 · Mastery construct 1060/3200",
+        "ActionAt": 1791244524.542783,
+        "DisplayHint": "Your skill is recharging.",
+        "OwnerUserId": 11732987790,
+        "ReturnLabel": "Leave trial",
+        "ActionEffect": "Basic",
+        "DisplayGoals": "Defeat the opponent 0/1 · Skills used 1/1 · Warnings dodged 2/2",
+        "NextBasicAt": 0,
+        "ActionTargetPosition": null,
+        "EnemyHealth": 1060,
+        "TrialStatus": "Active",
+        "NextAbilityAt": 1791244526.4921966,
+        "NoviceTrialArena": true,
+        "DisplayTitle": "Mage · Training",
+        "ActionOriginPosition": null,
+        "ClassId": "Mage",
+        "BasicLabel": "Basic Attack"
+      },
+      "position": [
+        2600.89013671875,
+        134.9980010986328,
+        1411.9998779296875
+      ]
+    },
+    {
+      "target": [
+        2600,
+        135.39999389648438,
+        1400
+      ],
+      "warning": {
+        "visible": false,
+        "x": 2599.265625,
+        "z": 1412
+      },
+      "attributes": {
+        "PlayerHealth": 205,
+        "AbilityLabel": "Astral Storm",
+        "DisplayHealth": "HP 205/227 · Mastery construct 768/3200",
+        "ActionAt": 1791244526.776103,
+        "DisplayHint": "Use F/Q or the buttons. Dodge orange warnings.",
+        "OwnerUserId": 11732987790,
+        "ReturnLabel": "Leave trial",
+        "ActionEffect": "Basic",
+        "DisplayGoals": "Defeat the opponent 0/1 · Skills used 1/1 · Warnings dodged 2/2",
+        "NextBasicAt": 1791244528.5759974,
+        "ActionTargetPosition": null,
+        "EnemyHealth": 768,
+        "TrialStatus": "Active",
+        "NextAbilityAt": 1791244536.6754832,
+        "NoviceTrialArena": true,
+        "DisplayTitle": "Mage · Training",
+        "ActionOriginPosition": null,
+        "ClassId": "Mage",
+        "BasicLabel": "Basic Attack"
+      },
+      "position": [
+        2600.89013671875,
+        134.9980010986328,
+        1411.9998779296875
+      ]
+    },
+    {
+      "target": [
+        2600,
+        135.39999389648438,
+        1400
+      ],
+      "warning": {
+        "visible": false,
+        "x": 2599.265625,
+        "z": 1412
+      },
+      "attributes": {
+        "PlayerHealth": 205,
+        "AbilityLabel": "Astral Storm",
+        "DisplayHealth": "HP 205/227 · Mastery construct 768/3200",
+        "ActionAt": 1791244526.776103,
+        "DisplayHint": "Your skill is recharging.",
+        "OwnerUserId": 11732987790,
+        "ReturnLabel": "Leave trial",
+        "ActionEffect": "Basic",
+        "DisplayGoals": "Defeat the opponent 0/1 · Skills used 1/1 · Warnings dodged 2/2",
+        "NextBasicAt": 1791244528.5759969,
+        "ActionTargetPosition": null,
+        "EnemyHealth": 768,
+        "TrialStatus": "Active",
+        "NextAbilityAt": 1791244536.6754832,
+        "NoviceTrialArena": true,
+        "DisplayTitle": "Mage · Training",
+        "ActionOriginPosition": null,
+        "ClassId": "Mage",
+        "BasicLabel": "Basic Attack"
+      },
+      "position": [
+        2600.89013671875,
+        134.9980010986328,
+        1411.9998779296875
+      ]
+    },
+    {
+      "target": [
+        2600,
+        135.39999389648438,
+        1400
+      ],
+      "warning": {
+        "visible": true,
+        "x": 2600.890625,
+        "z": 1412
+      },
+      "attributes": {
+        "PlayerHealth": 205,
+        "AbilityLabel": "Astral Storm",
+        "DisplayHealth": "HP 205/227 · Mastery construct 768/3200",
+        "ActionAt": 1791244526.776103,
+        "DisplayHint": "Your skill is recharging.",
+        "ActionTargetPosition": null,
+        "OwnerUserId": 11732987790,
+        "ReturnLabel": "Leave trial",
+        "ActionEffect": "Basic",
+        "DisplayGoals": "Defeat the opponent 0/1 · Skills used 1/1 · Warnings dodged 2/2",
+        "NextBasicAt": 0,
+        "EnemyHealth": 768,
+        "WarningToken": 4459.872295000008,
+        "TrialStatus": "Active",
+        "NextAbilityAt": 1791244536.6754837,
+        "NoviceTrialArena": true,
+        "DisplayTitle": "Mage · Training",
+        "ActionOriginPosition": null,
+        "ClassId": "Mage",
+        "BasicLabel": "Basic Attack"
+      },
+      "position": [
+        2600.89013671875,
+        134.9980010986328,
+        1411.9998779296875
+      ]
+    },
+    {
+      "target": [
+        2600,
+        135.39999389648438,
+        1400
+      ],
+      "warning": {
+        "visible": false,
+        "x": 2600.890625,
+        "z": 1412
+      },
+      "attributes": {
+        "PlayerHealth": 194,
+        "AbilityLabel": "Astral Storm",
+        "DisplayHealth": "HP 194/227 · Mastery construct 687/3200",
+        "ActionAt": 1791244529.95897,
+        "DisplayHint": "Use F/Q or the buttons. Dodge orange warnings.",
+        "OwnerUserId": 11732987790,
+        "ReturnLabel": "Leave trial",
+        "ActionEffect": "Basic",
+        "DisplayGoals": "Defeat the opponent 0/1 · Skills used 1/1 · Warnings dodged 2/2",
+        "NextBasicAt": 1791244531.7588909,
+        "ActionTargetPosition": null,
+        "EnemyHealth": 687,
+        "TrialStatus": "Active",
+        "NextAbilityAt": 1791244536.6754837,
+        "NoviceTrialArena": true,
+        "DisplayTitle": "Mage · Training",
+        "ActionOriginPosition": null,
+        "ClassId": "Mage",
+        "BasicLabel": "Basic Attack"
+      },
+      "position": [
+        2590.706298828125,
+        134.9980010986328,
+        1412.0003662109375
+      ]
+    },
+    {
+      "target": [
+        2600,
+        135.39999389648438,
+        1400
+      ],
+      "warning": {
+        "visible": false,
+        "x": 2600.890625,
+        "z": 1412
+      },
+      "attributes": {
+        "PlayerHealth": 194,
+        "AbilityLabel": "Astral Storm",
+        "DisplayHealth": "HP 194/227 · Mastery construct 687/3200",
+        "ActionAt": 1791244529.95897,
+        "DisplayHint": "Your skill is recharging.",
+        "OwnerUserId": 11732987790,
+        "ReturnLabel": "Leave trial",
+        "ActionEffect": "Basic",
+        "DisplayGoals": "Defeat the opponent 0/1 · Skills used 1/1 · Warnings dodged 2/2",
+        "NextBasicAt": 0,
+        "ActionTargetPosition": null,
+        "EnemyHealth": 687,
+        "TrialStatus": "Active",
+        "NextAbilityAt": 1791244536.6754835,
+        "NoviceTrialArena": true,
+        "DisplayTitle": "Mage · Training",
+        "ActionOriginPosition": null,
+        "ClassId": "Mage",
+        "BasicLabel": "Basic Attack"
+      },
+      "position": [
+        2599.26513671875,
+        134.9980010986328,
+        1412
+      ]
+    },
+    {
+      "target": [
+        2600,
+        135.39999389648438,
+        1400
+      ],
+      "warning": {
+        "visible": false,
+        "x": 2600.890625,
+        "z": 1412
+      },
+      "attributes": {
+        "PlayerHealth": 194,
+        "AbilityLabel": "Astral Storm",
+        "DisplayHealth": "HP 194/227 · Mastery construct 606/3200",
+        "ActionAt": 1791244532.291714,
+        "DisplayHint": "Use F/Q or the buttons. Dodge orange warnings.",
+        "OwnerUserId": 11732987790,
+        "ReturnLabel": "Leave trial",
+        "ActionEffect": "Basic",
+        "DisplayGoals": "Defeat the opponent 0/1 · Skills used 1/1 · Warnings dodged 2/2",
+        "NextBasicAt": 1791244534.091628,
+        "ActionTargetPosition": null,
+        "EnemyHealth": 606,
+        "TrialStatus": "Active",
+        "NextAbilityAt": 1791244536.675484,
+        "NoviceTrialArena": true,
+        "DisplayTitle": "Mage · Training",
+        "ActionOriginPosition": null,
+        "ClassId": "Mage",
+        "BasicLabel": "Basic Attack"
+      },
+      "position": [
+        2599.26513671875,
+        134.9980010986328,
+        1412
+      ]
+    },
+    {
+      "target": [
+        2600,
+        135.39999389648438,
+        1400
+      ],
+      "warning": {
+        "visible": true,
+        "x": 2599.265625,
+        "z": 1412
+      },
+      "attributes": {
+        "PlayerHealth": 194,
+        "AbilityLabel": "Astral Storm",
+        "DisplayHealth": "HP 194/227 · Mastery construct 606/3200",
+        "ActionAt": 1791244532.291714,
+        "DisplayHint": "Your skill is recharging.",
+        "ActionTargetPosition": null,
+        "OwnerUserId": 11732987790,
+        "ReturnLabel": "Leave trial",
+        "ActionEffect": "Basic",
+        "DisplayGoals": "Defeat the opponent 0/1 · Skills used 1/1 · Warnings dodged 2/2",
+        "NextBasicAt": 1791244534.0916278,
+        "EnemyHealth": 606,
+        "WarningToken": 4464.973566200002,
+        "TrialStatus": "Active",
+        "NextAbilityAt": 1791244536.6754837,
+        "NoviceTrialArena": true,
+        "DisplayTitle": "Mage · Training",
+        "ActionOriginPosition": null,
+        "ClassId": "Mage",
+        "BasicLabel": "Basic Attack"
+      },
+      "position": [
+        2599.26513671875,
+        134.9980010986328,
+        1412
+      ]
+    },
+    {
+      "target": [
+        2600,
+        135.39999389648438,
+        1400
+      ],
+      "warning": {
+        "visible": false,
+        "x": 2599.265625,
+        "z": 1412
+      },
+      "attributes": {
+        "PlayerHealth": 194,
+        "AbilityLabel": "Astral Storm",
+        "DisplayHealth": "HP 194/227 · Mastery construct 525/3200",
+        "ActionAt": 1791244534.659473,
+        "DisplayHint": "Use F/Q or the buttons. Dodge orange warnings.",
+        "OwnerUserId": 11732987790,
+        "ReturnLabel": "Leave trial",
+        "ActionEffect": "Basic",
+        "DisplayGoals": "Defeat the opponent 0/1 · Skills used 1/1 · Warnings dodged 2/2",
+        "NextBasicAt": 1791244536.4593797,
+        "ActionTargetPosition": null,
+        "EnemyHealth": 525,
+        "TrialStatus": "Active",
+        "NextAbilityAt": 1791244536.6754837,
+        "NoviceTrialArena": true,
+        "DisplayTitle": "Mage · Training",
+        "ActionOriginPosition": null,
+        "ClassId": "Mage",
+        "BasicLabel": "Basic Attack"
+      },
+      "position": [
+        2609.182373046875,
+        134.9980010986328,
+        1411.99951171875
+      ]
+    },
+    {
+      "target": [
+        2600,
+        135.39999389648438,
+        1400
+      ],
+      "warning": {
+        "visible": false,
+        "x": 2599.265625,
+        "z": 1412
+      },
+      "attributes": {
+        "PlayerHealth": 194,
+        "AbilityLabel": "Astral Storm",
+        "DisplayHealth": "HP 194/227 · Mastery construct 525/3200",
+        "ActionAt": 1791244534.659473,
+        "DisplayHint": "Your skill is recharging.",
+        "OwnerUserId": 11732987790,
+        "ReturnLabel": "Leave trial",
+        "ActionEffect": "Basic",
+        "DisplayGoals": "Defeat the opponent 0/1 · Skills used 1/1 · Warnings dodged 2/2",
+        "NextBasicAt": 0,
+        "ActionTargetPosition": null,
+        "EnemyHealth": 525,
+        "TrialStatus": "Active",
+        "NextAbilityAt": 1791244536.6754832,
+        "NoviceTrialArena": true,
+        "DisplayTitle": "Mage · Training",
+        "ActionOriginPosition": null,
+        "ClassId": "Mage",
+        "BasicLabel": "Basic Attack"
+      },
+      "position": [
+        2600.89013671875,
+        134.9980010986328,
+        1411.9998779296875
+      ]
+    },
+    {
+      "target": [
+        2600,
+        135.39999389648438,
+        1400
+      ],
+      "warning": {
+        "visible": false,
+        "x": 2599.265625,
+        "z": 1412
+      },
+      "attributes": {
+        "PlayerHealth": 194,
+        "AbilityLabel": "Astral Storm",
+        "DisplayHealth": "HP 194/227 · Mastery construct 233/3200",
+        "ActionAt": 1791244536.875909,
+        "DisplayHint": "Use F/Q or the buttons. Dodge orange warnings.",
+        "OwnerUserId": 11732987790,
+        "ReturnLabel": "Leave trial",
+        "ActionEffect": "Basic",
+        "DisplayGoals": "Defeat the opponent 0/1 · Skills used 1/1 · Warnings dodged 2/2",
+        "NextBasicAt": 1791244538.6757996,
+        "ActionTargetPosition": null,
+        "EnemyHealth": 233,
+        "TrialStatus": "Active",
+        "NextAbilityAt": 1791244546.775287,
+        "NoviceTrialArena": true,
+        "DisplayTitle": "Mage · Training",
+        "ActionOriginPosition": null,
+        "ClassId": "Mage",
+        "BasicLabel": "Basic Attack"
+      },
+      "position": [
+        2600.89013671875,
+        134.9980010986328,
+        1411.9998779296875
+      ]
+    },
+    {
+      "target": [
+        2600,
+        135.39999389648438,
+        1400
+      ],
+      "warning": {
+        "visible": false,
+        "x": 2599.265625,
+        "z": 1412
+      },
+      "attributes": {
+        "PlayerHealth": 194,
+        "AbilityLabel": "Astral Storm",
+        "DisplayHealth": "HP 194/227 · Mastery construct 233/3200",
+        "ActionAt": 1791244536.875909,
+        "DisplayHint": "Your skill is recharging.",
+        "OwnerUserId": 11732987790,
+        "ReturnLabel": "Leave trial",
+        "ActionEffect": "Basic",
+        "DisplayGoals": "Defeat the opponent 0/1 · Skills used 1/1 · Warnings dodged 2/2",
+        "NextBasicAt": 1791244538.6757996,
+        "ActionTargetPosition": null,
+        "EnemyHealth": 233,
+        "TrialStatus": "Active",
+        "NextAbilityAt": 1791244546.775286,
+        "NoviceTrialArena": true,
+        "DisplayTitle": "Mage · Training",
+        "ActionOriginPosition": null,
+        "ClassId": "Mage",
+        "BasicLabel": "Basic Attack"
+      },
+      "position": [
+        2600.89013671875,
+        134.9980010986328,
+        1411.9998779296875
+      ]
+    },
+    {
+      "target": [
+        2600,
+        135.39999389648438,
+        1400
+      ],
+      "warning": {
+        "visible": true,
+        "x": 2600.890625,
+        "z": 1412
+      },
+      "attributes": {
+        "PlayerHealth": 194,
+        "AbilityLabel": "Astral Storm",
+        "DisplayHealth": "HP 194/227 · Mastery construct 152/3200",
+        "ActionAt": 1791244538.707838,
+        "DisplayHint": "Use F/Q or the buttons. Dodge orange warnings.",
+        "ActionTargetPosition": null,
+        "OwnerUserId": 11732987790,
+        "ReturnLabel": "Leave trial",
+        "ActionEffect": "Basic",
+        "DisplayGoals": "Defeat the opponent 0/1 · Skills used 1/1 · Warnings dodged 2/2",
+        "NextBasicAt": 1791244540.507777,
+        "EnemyHealth": 152,
+        "WarningToken": 4470.0888028000045,
+        "TrialStatus": "Active",
+        "NextAbilityAt": 1791244546.7752872,
+        "NoviceTrialArena": true,
+        "DisplayTitle": "Mage · Training",
+        "ActionOriginPosition": null,
+        "ClassId": "Mage",
+        "BasicLabel": "Basic Attack"
+      },
+      "position": [
+        2600.89013671875,
+        134.9980010986328,
+        1411.9998779296875
+      ]
+    },
+    {
+      "target": [
+        2600,
+        135.39999389648438,
+        1400
+      ],
+      "warning": {
+        "visible": false,
+        "x": 2600.890625,
+        "z": 1412
+      },
+      "attributes": {
+        "PlayerHealth": 183,
+        "AbilityLabel": "Astral Storm",
+        "DisplayHealth": "HP 183/227 · Mastery construct 152/3200",
+        "ActionAt": 1791244538.707838,
+        "DisplayHint": "Your skill is recharging.",
+        "OwnerUserId": 11732987790,
+        "ReturnLabel": "Leave trial",
+        "ActionEffect": "Basic",
+        "DisplayGoals": "Defeat the opponent 0/1 · Skills used 1/1 · Warnings dodged 2/2",
+        "NextBasicAt": 0,
+        "ActionTargetPosition": null,
+        "EnemyHealth": 152,
+        "TrialStatus": "Active",
+        "NextAbilityAt": 1791244546.7752864,
+        "NoviceTrialArena": true,
+        "DisplayTitle": "Mage · Training",
+        "ActionOriginPosition": null,
+        "ClassId": "Mage",
+        "BasicLabel": "Basic Attack"
+      },
+      "position": [
+        2590.706298828125,
+        134.9980010986328,
+        1412.0003662109375
+      ]
+    },
+    {
+      "target": [
+        2600,
+        135.39999389648438,
+        1400
+      ],
+      "warning": {
+        "visible": false,
+        "x": 2600.890625,
+        "z": 1412
+      },
+      "attributes": {
+        "PlayerHealth": 183,
+        "AbilityLabel": "Astral Storm",
+        "DisplayHealth": "HP 183/227 · Mastery construct 71/3200",
+        "ActionAt": 1791244541.641987,
+        "DisplayHint": "Use F/Q or the buttons. Dodge orange warnings.",
+        "OwnerUserId": 11732987790,
+        "ReturnLabel": "Leave trial",
+        "ActionEffect": "Basic",
+        "DisplayGoals": "Defeat the opponent 0/1 · Skills used 1/1 · Warnings dodged 2/2",
+        "NextBasicAt": 1791244543.4418778,
+        "ActionTargetPosition": null,
+        "EnemyHealth": 71,
+        "TrialStatus": "Active",
+        "NextAbilityAt": 1791244546.7752862,
+        "NoviceTrialArena": true,
+        "DisplayTitle": "Mage · Training",
+        "ActionOriginPosition": null,
+        "ClassId": "Mage",
+        "BasicLabel": "Basic Attack"
+      },
+      "position": [
+        2599.364990234375,
+        134.9980010986328,
+        1412
+      ]
+    },
+    {
+      "target": [
+        2600,
+        135.39999389648438,
+        1400
+      ],
+      "warning": {
+        "visible": false,
+        "x": 2600.890625,
+        "z": 1412
+      },
+      "attributes": {
+        "PlayerHealth": 183,
+        "AbilityLabel": "Astral Storm",
+        "DisplayHealth": "HP 183/227 · Mastery construct 71/3200",
+        "ActionAt": 1791244541.641987,
+        "DisplayHint": "Your skill is recharging.",
+        "OwnerUserId": 11732987790,
+        "ReturnLabel": "Leave trial",
+        "ActionEffect": "Basic",
+        "DisplayGoals": "Defeat the opponent 0/1 · Skills used 1/1 · Warnings dodged 2/2",
+        "NextBasicAt": 1791244543.4418774,
+        "ActionTargetPosition": null,
+        "EnemyHealth": 71,
+        "TrialStatus": "Active",
+        "NextAbilityAt": 1791244546.7752857,
+        "NoviceTrialArena": true,
+        "DisplayTitle": "Mage · Training",
+        "ActionOriginPosition": null,
+        "ClassId": "Mage",
+        "BasicLabel": "Basic Attack"
+      },
+      "position": [
+        2599.364990234375,
+        134.9980010986328,
+        1412
+      ]
+    },
+    {
+      "target": [
+        2600,
+        135.39999389648438,
+        1400
+      ],
+      "warning": {
+        "visible": true,
+        "x": 2599.3671875,
+        "z": 1412
+      },
+      "attributes": {
+        "PlayerHealth": 183,
+        "AbilityLabel": "Astral Storm",
+        "DisplayHealth": "HP 183/227 · Mastery construct 71/3200",
+        "ActionAt": 1791244541.641987,
+        "DisplayHint": "Your skill is recharging.",
+        "ActionTargetPosition": null,
+        "OwnerUserId": 11732987790,
+        "ReturnLabel": "Leave trial",
+        "ActionEffect": "Basic",
+        "DisplayGoals": "Defeat the opponent 0/1 · Skills used 1/1 · Warnings dodged 2/2",
+        "NextBasicAt": 0,
+        "EnemyHealth": 71,
+        "WarningToken": 4475.305979700002,
+        "TrialStatus": "Active",
+        "NextAbilityAt": 1791244546.7752867,
+        "NoviceTrialArena": true,
+        "DisplayTitle": "Mage · Training",
+        "ActionOriginPosition": null,
+        "ClassId": "Mage",
+        "BasicLabel": "Basic Attack"
+      },
+      "position": [
+        2599.364990234375,
+        134.9980010986328,
+        1412
+      ]
+    },
+    {}
+  ],
+  "campWards": [
+    {
+      "a": {
+        "LessonRole": "Combined",
+        "OwnerUserId": 11732987790,
+        "LessonPhase": "Ready",
+        "TrainingOnly": true,
+        "LessonStatus": "Active",
+        "CueActed": false,
+        "Successes": 0
+      }
+    },
+    {
+      "a": {
+        "LessonRole": "Combined",
+        "OwnerUserId": 11732987790,
+        "LessonPhase": "Ready",
+        "TrainingOnly": true,
+        "LessonStatus": "Active",
+        "CueActed": false,
+        "Successes": 0
+      }
+    },
+    {
+      "a": {
+        "LessonRole": "Combined",
+        "OwnerUserId": 11732987790,
+        "CueEndsAt": 1791244777.301051,
+        "LessonStatus": "Active",
+        "Successes": 0,
+        "CueTarget": "left",
+        "LessonPhase": "Warning",
+        "CuePosition": null,
+        "CueRole": "Guard",
+        "CueActed": false,
+        "TrainingOnly": true
+      },
+      "pos": [
+        2508,
+        103,
+        1395
+      ]
+    },
+    {
+      "a": {
+        "LessonRole": "Combined",
+        "OwnerUserId": 11732987790,
+        "LessonStatus": "Active",
+        "Successes": 1,
+        "LastActionAccepted": true,
+        "LessonPhase": "Ready",
+        "LastAction": "ShieldReady",
+        "CueActed": false,
+        "TrainingOnly": true
+      }
+    },
+    {
+      "a": {
+        "LessonRole": "Combined",
+        "OwnerUserId": 11732987790,
+        "LessonStatus": "Active",
+        "Successes": 1,
+        "LastActionAccepted": true,
+        "LessonPhase": "Ready",
+        "LastAction": "ShieldReady",
+        "CueActed": false,
+        "TrainingOnly": true
+      }
+    },
+    {
+      "a": {
+        "LessonRole": "Combined",
+        "OwnerUserId": 11732987790,
+        "CueEndsAt": 1791244781.3324468,
+        "LessonStatus": "Active",
+        "LastActionAccepted": true,
+        "Successes": 1,
+        "CueTarget": "centre",
+        "LastAction": "ShieldReady",
+        "LessonPhase": "Warning",
+        "CuePosition": null,
+        "CueRole": "Mend",
+        "CueActed": false,
+        "TrainingOnly": true
+      },
+      "pos": [
+        2520,
+        103,
+        1395
+      ]
+    },
+    {
+      "a": {
+        "LessonRole": "Combined",
+        "OwnerUserId": 11732987790,
+        "CueEndsAt": 1791244781.3324516,
+        "LessonStatus": "Active",
+        "LastActionAccepted": true,
+        "Successes": 1,
+        "CueTarget": "centre",
+        "LastAction": "ShieldReady",
+        "LessonPhase": "Warning",
+        "CuePosition": null,
+        "CueRole": "Mend",
+        "CueActed": false,
+        "TrainingOnly": true
+      },
+      "pos": [
+        2520,
+        103,
+        1395
+      ]
+    },
+    {
+      "a": {
+        "LessonRole": "Combined",
+        "OwnerUserId": 11732987790,
+        "CueEndsAt": 1791244781.3324485,
+        "LessonStatus": "Active",
+        "LastActionAccepted": true,
+        "Successes": 1,
+        "CueTarget": "centre",
+        "LastAction": "ShieldReady",
+        "LessonPhase": "Warning",
+        "CuePosition": null,
+        "CueRole": "Mend",
+        "CueActed": false,
+        "TrainingOnly": true
+      },
+      "pos": [
+        2520,
+        103,
+        1395
+      ]
+    },
+    {
+      "a": {
+        "LessonRole": "Combined",
+        "OwnerUserId": 11732987790,
+        "CueEndsAt": 1791244781.3324454,
+        "LessonStatus": "Active",
+        "LastActionAccepted": true,
+        "Successes": 1,
+        "CueTarget": "centre",
+        "LastAction": "ShieldReady",
+        "LessonPhase": "Warning",
+        "CuePosition": null,
+        "CueRole": "Mend",
+        "CueActed": false,
+        "TrainingOnly": true
+      },
+      "pos": [
+        2520,
+        103,
+        1395
+      ]
+    },
+    {
+      "a": {
+        "LessonRole": "Combined",
+        "OwnerUserId": 11732987790,
+        "CueEndsAt": 1791244781.3324409,
+        "LessonStatus": "Active",
+        "LastActionAccepted": true,
+        "Successes": 1,
+        "CueTarget": "centre",
+        "LastAction": "ShieldReady",
+        "LessonPhase": "Warning",
+        "CuePosition": null,
+        "CueRole": "Mend",
+        "CueActed": false,
+        "TrainingOnly": true
+      },
+      "pos": [
+        2520,
+        103,
+        1395
+      ]
+    },
+    {
+      "a": {
+        "LessonRole": "Combined",
+        "OwnerUserId": 11732987790,
+        "CueEndsAt": 1791244781.3324463,
+        "LessonStatus": "Active",
+        "LastActionAccepted": true,
+        "Successes": 1,
+        "CueTarget": "centre",
+        "LastAction": "ShieldReady",
+        "LessonPhase": "Warning",
+        "CuePosition": null,
+        "CueRole": "Mend",
+        "CueActed": false,
+        "TrainingOnly": true
+      },
+      "pos": [
+        2520,
+        103,
+        1395
+      ]
+    },
+    {
+      "a": {
+        "LessonRole": "Combined",
+        "OwnerUserId": 11732987790,
+        "CueEndsAt": 1791244785.3324459,
+        "LessonStatus": "Active",
+        "LastActionAccepted": true,
+        "Successes": 1,
+        "CueTarget": "centre",
+        "LastAction": "ShieldReady",
+        "LessonPhase": "Recovery",
+        "CuePosition": null,
+        "CueRole": "Mend",
+        "CueActed": false,
+        "TrainingOnly": true
+      },
+      "pos": [
+        2520,
+        103,
+        1395
+      ]
+    },
+    {
+      "a": {
+        "LessonRole": "Combined",
+        "OwnerUserId": 11732987790,
+        "LessonStatus": "Active",
+        "Successes": 2,
+        "LastActionAccepted": true,
+        "LessonPhase": "Ready",
+        "LastAction": "Recovered",
+        "CueActed": false,
+        "TrainingOnly": true
+      }
+    },
+    {
+      "a": {
+        "LessonRole": "Combined",
+        "OwnerUserId": 11732987790,
+        "LessonStatus": "Active",
+        "Successes": 2,
+        "LastActionAccepted": true,
+        "LessonPhase": "Ready",
+        "LastAction": "Recovered",
+        "CueActed": false,
+        "TrainingOnly": true
+      }
+    },
+    {
+      "a": {
+        "LessonRole": "Combined",
+        "OwnerUserId": 11732987790,
+        "CueEndsAt": 1791244786.6318872,
+        "LessonStatus": "Active",
+        "LastActionAccepted": true,
+        "Successes": 2,
+        "CueTarget": "right",
+        "LastAction": "Recovered",
+        "LessonPhase": "Warning",
+        "CuePosition": null,
+        "CueRole": "Guard",
+        "CueActed": false,
+        "TrainingOnly": true
+      },
+      "pos": [
+        2532,
+        103,
+        1395
+      ]
+    },
+    {
+      "a": {
+        "LessonRole": "Combined",
+        "OwnerUserId": 11732987790,
+        "CueEndsAt": 1791244786.6318874,
+        "LessonStatus": "Active",
+        "LastActionAccepted": true,
+        "Successes": 2,
+        "CueTarget": "right",
+        "LastAction": "ShieldReady",
+        "LessonPhase": "Warning",
+        "CuePosition": null,
+        "CueRole": "Guard",
+        "CueActed": true,
+        "TrainingOnly": true
+      },
+      "pos": [
+        2532,
+        103,
+        1395
+      ]
+    },
+    {
+      "a": {
+        "LessonRole": "Combined",
+        "OwnerUserId": 11732987790,
+        "CueEndsAt": 1791244786.6318874,
+        "LessonStatus": "Active",
+        "LastActionAccepted": true,
+        "Successes": 2,
+        "CueTarget": "right",
+        "LastAction": "ShieldReady",
+        "LessonPhase": "Warning",
+        "CuePosition": null,
+        "CueRole": "Guard",
+        "CueActed": true,
+        "TrainingOnly": true
+      },
+      "pos": [
+        2532,
+        103,
+        1395
+      ]
+    },
+    {
+      "a": {
+        "LessonRole": "Combined",
+        "OwnerUserId": 11732987790,
+        "CueEndsAt": 1791244786.6318874,
+        "LessonStatus": "Active",
+        "LastActionAccepted": true,
+        "Successes": 2,
+        "CueTarget": "right",
+        "LastAction": "ShieldReady",
+        "LessonPhase": "Warning",
+        "CuePosition": null,
+        "CueRole": "Guard",
+        "CueActed": true,
+        "TrainingOnly": true
+      },
+      "pos": [
+        2532,
+        103,
+        1395
+      ]
+    },
+    {
+      "a": {
+        "LessonRole": "Combined",
+        "OwnerUserId": 11732987790,
+        "CueEndsAt": 1791244786.6318865,
+        "LessonStatus": "Active",
+        "LastActionAccepted": true,
+        "Successes": 2,
+        "CueTarget": "right",
+        "LastAction": "ShieldReady",
+        "LessonPhase": "Warning",
+        "CuePosition": null,
+        "CueRole": "Guard",
+        "CueActed": true,
+        "TrainingOnly": true
+      },
+      "pos": [
+        2532,
+        103,
+        1395
+      ]
+    },
+    {}
+  ],
+  "accepted": [
+    "Temporary Archmage skill/dodge/victory on root Mage, returned without permanent promotion",
+    "Physical rival rescue and longer inspection escort",
+    "Six human/Orc records and both hearings",
+    "Joint work reconciliation",
+    "Three refuge spaces and fixed supplies; camp Guard/Mend/Guard",
+    "Witness, all clues, 2-1-3 sequence, hidden turn/exit, testify fate",
+    "2-1-3 name sorter and backup evidence",
+    "Three offer records, investigate response and three preparation stations",
+    "Hall12–14 paid with guaranteed campaign earnings"
+  ],
+  "limitations": [
+    "One desktop Memory route; no persistent reconnect or multiplayer/device/human approval",
+    "Prompt activation sometimes needed brief pause after arrival; retry through normal input succeeded",
+    "Raw NotReady HUD status observed briefly at trial return"
+  ]
+}

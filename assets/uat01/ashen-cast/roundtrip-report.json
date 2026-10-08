@@ -1,0 +1,258 @@
+[
+  {
+    "file": "gatekeeper_Rest.fbx",
+    "asset": "gatekeeper",
+    "triangles": 432,
+    "bones": 16,
+    "weightsNormalized": true,
+    "sha256": "2546cff4e29fbdeac0a5cd447651513a5aed619c6c717816ddea379959291f7e"
+  },
+  {
+    "file": "gatekeeper_Rest.glb",
+    "asset": "gatekeeper",
+    "triangles": 432,
+    "bones": 16,
+    "weightsNormalized": true,
+    "sha256": "75f3d709573a6ed460dd22d84d08214f1bdd604bc059cee23e5639ca82f25041"
+  },
+  {
+    "file": "gatekeeper_Idle.fbx",
+    "asset": "gatekeeper",
+    "triangles": 432,
+    "bones": 16,
+    "weightsNormalized": true,
+    "sha256": "da6573b07c1929b07f56f31cafc97b5d79dc020d8952ba425b5fb06d11f2c11c",
+    "frames": 61,
+    "sampledMotion": 0.03499286621809006,
+    "rootStationary": true,
+    "loopSeamVerified": true
+  },
+  {
+    "file": "gatekeeper_Walk.fbx",
+    "asset": "gatekeeper",
+    "triangles": 432,
+    "bones": 16,
+    "weightsNormalized": true,
+    "sha256": "3c9eb86528f10230ae6d3cebea398d7499e986f9270962416007f4af0b84b25f",
+    "frames": 31,
+    "sampledMotion": 0.7465113590118619,
+    "rootStationary": true,
+    "loopSeamVerified": true
+  },
+  {
+    "file": "gatekeeper_Greet.fbx",
+    "asset": "gatekeeper",
+    "triangles": 432,
+    "bones": 16,
+    "weightsNormalized": true,
+    "sha256": "2d5e20fd0975341c0e9558e63cc36d1a4fbd38cf44d078fffc8153e80d7f9576",
+    "frames": 55,
+    "sampledMotion": 1.1529563665390015,
+    "rootStationary": true,
+    "loopSeamVerified": false
+  },
+  {
+    "file": "gatekeeper_Work.fbx",
+    "asset": "gatekeeper",
+    "triangles": 432,
+    "bones": 16,
+    "weightsNormalized": true,
+    "sha256": "b3cfb6048ec5317e0f76c8c084829c0380a92e57e7ffec3415c31a911c109df0",
+    "frames": 61,
+    "sampledMotion": 0.4054645895957947,
+    "rootStationary": true,
+    "loopSeamVerified": true
+  },
+  {
+    "file": "survivor_Rest.fbx",
+    "asset": "survivor",
+    "triangles": 372,
+    "bones": 16,
+    "weightsNormalized": true,
+    "sha256": "2c40d692a41688658694eeea09d586f8cee90e696cf8cdc0792fe6ef788bd58d"
+  },
+  {
+    "file": "survivor_Rest.glb",
+    "asset": "survivor",
+    "triangles": 372,
+    "bones": 16,
+    "weightsNormalized": true,
+    "sha256": "185707d8ea12d851cb2a8917ffadfa1d59c5dd0926aba506ea2ad66617577071"
+  },
+  {
+    "file": "survivor_Idle.fbx",
+    "asset": "survivor",
+    "triangles": 372,
+    "bones": 16,
+    "weightsNormalized": true,
+    "sha256": "5e4beb42e416d1ffec0713292fff53af2171a62e8547e77f07035783e3f3c829",
+    "frames": 61,
+    "sampledMotion": 0.03499286621809006,
+    "rootStationary": true,
+    "loopSeamVerified": true
+  },
+  {
+    "file": "survivor_Walk.fbx",
+    "asset": "survivor",
+    "triangles": 372,
+    "bones": 16,
+    "weightsNormalized": true,
+    "sha256": "abfd816f25ee5a3ff819240c9e5f9d784005228a1d3d20c8b5c43db5664498ca",
+    "frames": 31,
+    "sampledMotion": 0.8062324199263031,
+    "rootStationary": true,
+    "loopSeamVerified": true
+  },
+  {
+    "file": "survivor_Greet.fbx",
+    "asset": "survivor",
+    "triangles": 372,
+    "bones": 16,
+    "weightsNormalized": true,
+    "sha256": "051fafee3ce8f6830be016ab4d49ff458059a534eed8e2f0b91d0be0e3c5aa5e",
+    "frames": 55,
+    "sampledMotion": 1.2564096450805664,
+    "rootStationary": true,
+    "loopSeamVerified": false
+  },
+  {
+    "file": "survivor_Work.fbx",
+    "asset": "survivor",
+    "triangles": 372,
+    "bones": 16,
+    "weightsNormalized": true,
+    "sha256": "a66c446c5d10c04ef4bb0289f98204d93227a86231e4ccf260a67d8b287f2082",
+    "frames": 61,
+    "sampledMotion": 0.4383128881454468,
+    "rootStationary": true,
+    "loopSeamVerified": true
+  },
+  {
+    "file": "bridgewright_Rest.fbx",
+    "asset": "bridgewright",
+    "triangles": 396,
+    "bones": 16,
+    "weightsNormalized": true,
+    "sha256": "1a83e2cdbec149bf06ee0b0a5081e1bcc3852ad92b77e1f1cbb04b022ae8fcac"
+  },
+  {
+    "file": "bridgewright_Rest.glb",
+    "asset": "bridgewright",
+    "triangles": 396,
+    "bones": 16,
+    "weightsNormalized": true,
+    "sha256": "5803152442ac22211efccd88352b04020c0c92de165d55a563f2a0e8f3fc05c3"
+  },
+  {
+    "file": "bridgewright_Idle.fbx",
+    "asset": "bridgewright",
+    "triangles": 396,
+    "bones": 16,
+    "weightsNormalized": true,
+    "sha256": "805df7aac8c297e36450b00507cb4a515a8675d607789590b7b04cc8c362b104",
+    "frames": 61,
+    "sampledMotion": 0.03499286621809006,
+    "rootStationary": true,
+    "loopSeamVerified": true
+  },
+  {
+    "file": "bridgewright_Walk.fbx",
+    "asset": "bridgewright",
+    "triangles": 396,
+    "bones": 16,
+    "weightsNormalized": true,
+    "sha256": "57fcb4d84248c3d7701d4ded926231c6c56fb6aa48bfcaa964d7e5f611ed9860",
+    "frames": 31,
+    "sampledMotion": 0.5822788143625033,
+    "rootStationary": true,
+    "loopSeamVerified": true
+  },
+  {
+    "file": "bridgewright_Greet.fbx",
+    "asset": "bridgewright",
+    "triangles": 396,
+    "bones": 16,
+    "weightsNormalized": true,
+    "sha256": "96afbf04f9d41b5bc4edc147df5ae3539f016f6527f8702879186bea07f18df5",
+    "frames": 55,
+    "sampledMotion": 0.8648277521133423,
+    "rootStationary": true,
+    "loopSeamVerified": false
+  },
+  {
+    "file": "bridgewright_Work.fbx",
+    "asset": "bridgewright",
+    "triangles": 396,
+    "bones": 16,
+    "weightsNormalized": true,
+    "sha256": "3532127cfa77f8dcea829b6e312c3b9806edefcd4dc438147ae2f8075671b092",
+    "frames": 61,
+    "sampledMotion": 0.35211971402168274,
+    "rootStationary": true,
+    "loopSeamVerified": true
+  },
+  {
+    "file": "witness_Rest.fbx",
+    "asset": "witness",
+    "triangles": 480,
+    "bones": 16,
+    "weightsNormalized": true,
+    "sha256": "de24a6c675633f711e622c98576b19c0d99e561e072a5e413c66cdb51a389e65"
+  },
+  {
+    "file": "witness_Rest.glb",
+    "asset": "witness",
+    "triangles": 480,
+    "bones": 16,
+    "weightsNormalized": true,
+    "sha256": "17ff6ae17bde677fb2042bd090bfa6bbb6be4230b965ca58c4c4135dd347904c"
+  },
+  {
+    "file": "witness_Idle.fbx",
+    "asset": "witness",
+    "triangles": 480,
+    "bones": 16,
+    "weightsNormalized": true,
+    "sha256": "fd38e7d42a0db21bc5146e472d31ab24cf7244b7c83317c9d364a01e13d876af",
+    "frames": 61,
+    "sampledMotion": 0.03499286621809006,
+    "rootStationary": true,
+    "loopSeamVerified": true
+  },
+  {
+    "file": "witness_Walk.fbx",
+    "asset": "witness",
+    "triangles": 480,
+    "bones": 16,
+    "weightsNormalized": true,
+    "sha256": "26005e3474d68fa5cb227266b77dc6df084637f1bdc699b4c7a13aea27783f6a",
+    "frames": 31,
+    "sampledMotion": 0.7465113590118619,
+    "rootStationary": true,
+    "loopSeamVerified": true
+  },
+  {
+    "file": "witness_Greet.fbx",
+    "asset": "witness",
+    "triangles": 480,
+    "bones": 16,
+    "weightsNormalized": true,
+    "sha256": "04b5ab494cea3ffcf493c3d6d541fe7d95b2c23bece1bd46e94f7a8729ef63ca",
+    "frames": 55,
+    "sampledMotion": 1.1529563665390015,
+    "rootStationary": true,
+    "loopSeamVerified": false
+  },
+  {
+    "file": "witness_Work.fbx",
+    "asset": "witness",
+    "triangles": 480,
+    "bones": 16,
+    "weightsNormalized": true,
+    "sha256": "c12ec134675ef63918863fd7d8779167c0bda0478995bb5655d4115042cd65ff",
+    "frames": 61,
+    "sampledMotion": 0.4054645895957947,
+    "rootStationary": true,
+    "loopSeamVerified": true
+  }
+]

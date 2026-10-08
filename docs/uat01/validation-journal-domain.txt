@@ -1,0 +1,338 @@
+PASS companion intent accepts only bounded actor IDs and server-derived actions
+PASS v2 preview Hall and point boundaries preserve maximums
+PASS v2 status allocation rejects invalid keys overspend and nonfinite points
+PASS v2 gates require sequential solo trials and earned Hall
+PASS v2 respec preview conserves budgets repeatedly and rejects unsafe contexts
+PASS v2 migration report never mutates saves or demotes legacy promotions
+PASS v2 migration preserves high Halls and quarantines unknown builds
+PASS enemy field guide preserves existing camp and all ten floor combat values
+PASS exact catalogs and references
+PASS Thai translation coverage and interpolation preserve every placeholder
+PASS language preference persists without changing progression and rejects unsupported input
+PASS v1 profile without optional language remains valid and projects English
+PASS duplicate item, quest, and adventurer IDs rejected
+PASS dangling reward and equipment references rejected
+PASS default profile is valid and independently allocated
+PASS malformed payloads and forged reward fields rejected
+PASS sparse oversized and duplicate party validation
+PASS invalid quest and never-started completion rejected
+PASS early completion and wrong run rejected without mutation
+PASS duplicate completion and exact request replay cannot duplicate rewards
+PASS request ID payload conflict and stale revision rejected
+PASS unowned nonexistent and incompatible equipment rejected
+PASS Gold never negative and invalid Hall upgrade has no effects
+PASS complete onboarding, eight obtainable items, Hall and rejoin
+PASS active quest and reward snapshot survive rejoin
+PASS full inventory blocks all reward components atomically
+PASS failed load never writes defaults
+PASS unknown acquisition retries same token without changing epoch
+PASS failed save exposes no candidate and blocks further spending
+PASS write committed with lost response recovers without duplicate reward
+PASS server crash after uncertain commit restores committed value
+PASS two servers, lease takeover and stale writer after release
+PASS closing during save preserves committed progression
+PASS archive failure retains evidence and successful retry drains once
+PASS corrupt and future-version data preserved without reset
+PASS explicit migration is additive and repeatable
+PASS semantic replay survives recent-result eviction
+PASS rerun UpdateAsync callback produces one reward and one committed event batch
+PASS analytics failure cannot strand a committed save
+PASS partial-fill item capacity rejection does not consume Gold or XP
+PASS repeated completed runs use repeat rewards and never duplicate first-clear weapon
+PASS audit capacity pauses admission without destroying history
+PASS lease safety margin blocks mutation before expiry and heartbeat restores admission
+PASS owned weapon shortens only the next expedition and snapshots party
+PASS deterministic adversarial command sequence preserves profile invariants
+PASS five-member roster and active snapshot survive commit and rejoin
+PASS hero presentation follows only committed owned members and equipped weapons
+PASS legacy content snapshots remain valid with additive class expansion
+PASS boss slam locks footprint and allows escape before impact
+PASS boss recovery and pending cast cannot be bypassed
+PASS half-health phase alternates pulse and slam with fixed boss origin
+PASS boss circle boundary and height are bounded
+PASS leash or death cancellation cannot release a stale attack
+PASS stalled boss attack expires once and preserves recovery
+PASS boss impact tolerates bounded scheduler jitter
+PASS dead boss cannot release even without explicit cancellation
+PASS regional patterns lock target and release once after windup
+PASS regional phases alternate only at half health and have distinct shapes
+PASS regional footprints enforce facing side range height and ring safe center
+PASS regional death cancellation and stalled server never release stale damage
+PASS regional patterns reject invalid geometry time and unsupported templates
+PASS regional brain excludes other owners hidden dead and high targets
+PASS regional approach is bounded and leash cancels committed patterns
+PASS regional ranged spacing and basic cooldown stay deterministic
+PASS regional support heals valid wounded ally once without mutating health
+PASS regional boss windup cancels without target and releases only at due time
+PASS hero appearance choice is stable class bound and covers three variants
+PASS keyboard and gamepad map to the same bounded combat intents
+PASS companion orders accept only action and owned actor selector fields
+PASS combat hints follow current input and touch remains uncluttered
+PASS AI and damage cannot cross camp safe boundary in either direction
+PASS camp geometry rejects all edges and foreign session or absent authority
+PASS friendly recovery targeting remains available outside combat
+PASS old UI timer cannot unlock a newer pending request
+PASS late and duplicate UI responses cannot overwrite the latest selection
+PASS current late response recovers timeout without resubmitting a mutation
+PASS market invalid-request errors preserve only a safe correlation ID
+PASS quest tracker respects prerequisite receipts before suggesting content
+PASS quest tracker item progress follows current inventory, not stale event count
+PASS quest tracker pin falls back after completion or an unknown selection
+PASS quest tracker guides existing onboarding but explicit active pin wins
+PASS quest tracker empty or completed states do not invent rewards
+PASS journal item progress reflects stock but claimed quests stay complete
+PASS journal available filter excludes locked and accepted tasks
+PASS journal ready filter is an active subset and event progress is bounded
+PASS NPC quest suggestions respect location and prerequisite receipts
+PASS NPC marker prioritizes ready then available then active deterministically
+PASS NPC turn-in availability follows current inventory and isolates players
+PASS NPC marker clears completed content and missing snapshots
+PASS city waypoint uses planar arrival threshold and rounded distance
+PASS city waypoint arrow matches camera-local cardinal directions
+PASS city quest navigation names resolve to current NPC stations
+PASS combat stats derive class level and compatible equipped weapon
+PASS physical damage predictable and attack monotonic
+PASS defense mitigates with positive minimum
+PASS invalid negative nonfinite stats and levels rejected
+PASS healing cap and separate healing telemetry
+PASS ability cooldown authoritative and invalid cast does not consume
+PASS target validates owner allegiance active state and nil
+PASS attack range and attack interval checked on server
+PASS Knight threat and temporary taunt override expire
+PASS Priest picks meaningful largest deficit skips full downed foreign distant
+PASS enemy death latched once only and duplicate reward rejected
+PASS invalid ability and another class ability rejected
+PASS downed hero cannot attack cast or receive combat healing
+PASS dead enemy cannot attack or receive additional damage
+PASS combat references resolve and bad configs fail startup
+PASS forged combat damage heal health stats and reward intents rejected
+PASS combat reward commits Gold XP audit once and survives rejoin
+PASS uncertain combat save reconciles without double Gold XP
+PASS reward capacity and foreign membership reject atomically
+PASS v1 migration preserves populated heroes inventory active quest receipts and audit
+PASS actual load migrates v1 atomically and preserves legacy active snapshot
+PASS corrupt v1 and unexpected character data never get replaced
+PASS all five starter choices have matching class path skill and kit references
+PASS class selection idempotent replay and second-choice rejection survive rejoin
+PASS failed class save exposes no choice and uncertain commit reconciles exactly
+PASS forged character definition tier race XP and skill references fail schema
+PASS solo player combat reward levels only player and commits once
+PASS hero-only reward does not give passive player XP
+PASS player plus five heroes eligible without consuming a party slot
+PASS invalid unselected duplicate and overflowing player rewards are atomic
+PASS selected player can rest every hero without unlocking empty expeditions
+PASS player participation requires actual damage or combat healing and matching owner
+PASS expired taunt cannot grant a new player participation credit
+PASS companion effects never grant player participation
+PASS combat intent rejects client authority fields and bounds spam
+PASS v2 migration preserves selected class all ownership and active expedition
+PASS unexpected legacy equipment cannot be silently overwritten
+PASS three slots contribute identical projected and combat stats
+PASS player kit is a fallback and never becomes a sellable inventory instance
+PASS transfer removes old assignment replaces destination and retains every item
+PASS unowned actor item incompatible class and invalid slot leave data unchanged
+PASS all classes have compatible armor and accessory choices
+PASS schema rejects duplicate cross-actor ownership and wrong slot
+PASS full inventory purchase fails atomically without spending or sequence advance
+PASS purchase price authority no-negative Gold and duplicate purchase receipt
+PASS sale requires unequip and cannot duplicate Gold after retries
+PASS expedition snapshot remains immutable through away-hero equipment transfer
+PASS transfer uncertain save never exposes partial assignment and exact rejoin persists
+PASS uncertain purchase and sale preserve exact Gold and instance conservation
+PASS skill preview agrees with authoritative prerequisite and point gates
+PASS skill preview preserves branch conflict order and never spends
+PASS three skill slots follow server unlocks including prestige holes
+PASS slot casting rejects locked arts and preserves global cooldown across slots
+PASS v3 migration adds expansion without changing prior data and rejects collisions
+PASS gathering cooldown capacity and replay persist without duplicated resources
+PASS building boundary overlap reserved path and foreign IDs reject without cost
+PASS move rotate dismantle refunds half once and preserves main access
+PASS construction missing materials and uncertain saves never expose partial base
+PASS UAT catalog has thirty useful items and ten valid recipes with unchanged trade allowlist
+PASS all seven new recipes enforce gates exact costs bound output and replay safety
+PASS new gear purchase gates and uncertain crafting recovery preserve ownership
+PASS warehouse raises gathering cap and forge consumes exact recipe atomically
+PASS full equipment crafting rolls back recipe and instance sequence
+PASS promotion boundaries 29 30 69 70 and global Hall cap
+PASS all five classes have two gated Class 2 branches and matching Class 3 arts
+PASS skill prerequisites points branch exclusion and reset conserve builds
+PASS hero build is independent and bonuses match projected combat stats
+PASS race choice persists exactly once with bounded tradeoffs
+PASS tower only accepts server completion and never skips uncleared floors
+PASS ten tower floors unlock checkpoint and first-clear repeat rewards differ
+PASS tower failure retry and active rejoin retain clear history without rewards
+PASS uncertain tower completion reconciles first-clear exactly once
+PASS special Epic Legendary and Secret paths require their actual milestones
+PASS schema rejects forged points path race overlap and tower progress
+PASS group prestige support excludes distant foreign and downed actors
+PASS all expanded arts enforce targets cooldowns and meaningful effects
+PASS eighteen quests preserve originals and validate all journal prerequisites
+PASS new event quests track committed actions only and rewards cannot replay
+PASS craft objectives and existing state goals are save-atomic without rebuilding
+PASS roster skill and Tower guidance responds to successful owned actions
+PASS legacy active expedition snapshots survive the UAT content version
+PASS v4 migration preserves levels and safely raises legacy Hall floor
+PASS Hall cap banks XP then unlocks exactly five levels per upgrade
+PASS housing capacity is bounded by both Hall and Quarters with occupied dismantle rejected
+PASS tavern odds total 100 percent and top rank weight improves
+PASS duplicate-class hires keep distinct IDs equipment skills and party assignments
+PASS uncertain scouting commits one charged candidate and never rerolls on retry
+PASS main side NPC journal is one-time and tracks only accepted server events
+PASS dispatch excludes field party duplicate IDs and already assigned heroes
+PASS dispatch survives offline rejoin with hidden outcome and immutable reward
+PASS dispatch rewards reject capacity atomically and recover uncertain writes
+PASS death requires one Elixir and revival retains hero identity gear XP and rank
+PASS injured hero heals only after server recovery deadline
+PASS dispatch roster gear cannot move while away and returns after resolution
+PASS private purchase receipt survives uncertain save and rejoin without duplicate Elixir
+PASS city destination allowlist accepts city and personal guild
+PASS unknown and future travel destinations reject
+PASS travel protocol rejects arbitrary transforms and foreign identity
+PASS guild to city preserves selected companions and all progression
+PASS city to guild preserves companions and progression
+PASS city bounds suppress combat acquisition even with foreign origins
+PASS travel prohibits downed dead combat and tower states
+PASS travel fallback resolves separate supported spawn candidate
+PASS city district IDs unique and bilingual navigation resolves
+PASS warp throttle rejects burst and isolates players
+PASS distant and nonfinite portal claims reject
+PASS travel never adds foreign companions
+PASS city delivery retains actor and Hall caps
+PASS market valid sell reserves owned material immediately
+PASS market valid buy reserves spendable Gold
+PASS market unowned quantities reject before ticket
+PASS market insufficient Gold rejects before ticket
+PASS market rejects invalid price 0
+PASS market rejects invalid price -1
+PASS market rejects invalid price 0.5
+PASS market rejects invalid price inf
+PASS market rejects invalid price -inf
+PASS market rejects invalid price nan
+PASS market rejects invalid price 100001
+PASS market rejects invalid quantity 0
+PASS market rejects invalid quantity -1
+PASS market rejects invalid quantity 0.5
+PASS market rejects invalid quantity inf
+PASS market rejects invalid quantity nan
+PASS market rejects invalid quantity 1001
+PASS market value ceiling before multiplication exceeds configured limit
+PASS market unknown item and all existing bound gear rejected
+PASS market rejects equipped item identity and forged owner result
+PASS market duplicate create is durable beyond response cache
+PASS market reused create identity rejects changed payload
+PASS market crossing maker price seller fee and buyer price improvement
+PASS market noncrossing orders remain active
+PASS market lowest ask first regardless of time
+PASS market highest bid first regardless of time
+PASS market equal price uses durable acceptance sequence
+PASS market multiple partial fills conserve original remaining and filled
+PASS market complete fill removes remaining escrow
+PASS market fee is cumulative ceil not ceil per fill
+PASS market 10000 Gold costs 500 fee
+PASS market fee configuration zero and snapshot
+PASS market cancellation returns once and never charges unfilled fee
+PASS market partial cancellation returns only remaining items
+PASS market Gold cancellation returns exact reserve
+PASS market foreign cancellation rejected
+PASS market self trade never creates volume or fees
+PASS market immediate buy unit guard prevents catastrophic fill
+PASS market immediate sell minimum guard and empty remainder refund
+PASS market immediate partial fill cancels unmatched remainder
+PASS market open-order limit spans item reservations
+PASS market cancelled order releases slot
+PASS market missing stale duplicated cache and messages do not authorize fills
+PASS market three workers interleave CAS callback without overfill
+PASS market callback rerun burns fee exactly once
+PASS market cancel racing fill preserves ownership
+PASS market crash after admission before reserve never debits
+PASS market uncertain profile reservation recovers without double debit
+PASS market durable reservation survives market store outage
+PASS market crash after fill before settlement replay recovers
+PASS market crash after claim profile commit before ack does not duplicate
+PASS market offline seller mailbox then online owner collection
+PASS market duplicate claim after newer claim watermark harmless
+PASS market full wallet leaves claim pending
+PASS market expiry without lease or notifications returns remaining reserve
+PASS market tombstone excludes late deposit after abort
+PASS market source refund cannot reverse accepted outcome
+PASS market invalid state transition rejected
+PASS market retention capacity closes BEFORE reservation
+PASS market thin and empty book has absent prices and explicit guide
+PASS market reference rejects single extreme trade
+PASS market robust reference ignores isolated extreme in diverse sample
+PASS market split wash pair cannot meet diversity reference threshold
+PASS market OHLC volume and five required periods
+PASS market 24h high low volume ignore older trades
+PASS market order book projection hides identities and foreign history
+PASS market v5 migration preserves every existing field and unlock
+PASS market migration rejects conflicting field instead of reset
+PASS market transfers are not Gold faucets or sinks
+PASS market deterministic 90-operation adversarial sequence conserves assets
+PASS market remote rate bucket is bounded and refills
+PASS market remote rejects forged identities and result fields
+PASS market offline reservation recovered by foreign worker without profile write
+PASS market Thai localization covers primary navigation and confirmations
+PASS hardening numeric epoch starts at one and server controls identity
+PASS hardening v1 market migration preserves escrow and claims
+PASS hardening old v1 worker cannot overwrite migrated book
+PASS hardening closing rejects admission before profile debit
+PASS hardening close cancels all remaining orders preserving quantity
+PASS hardening closing returns item escrow exactly once
+PASS hardening closing returns Gold escrow exactly once
+PASS hardening offline claim blocks reconciliation without loss
+PASS hardening archive prohibited before reconciliation
+PASS hardening rollover archives and new generation accepts orders
+PASS hardening stale order replay after archive rejected
+PASS hardening late old deposit fenced even after receipt pruning
+PASS hardening profile compaction keeps fixed claim watermark
+PASS hardening duplicate old claim after compaction creates no value
+PASS hardening old reservation after profile compaction fenced
+PASS hardening unconfirmed accepted source prevents archival
+PASS hardening stale rollover command cannot close new generation
+PASS hardening replay safety window before archival
+PASS hardening 30 day candles cross epoch boundary without raw replay
+PASS hardening all five candle windows rebuild after pruning
+PASS hardening archive does not double-count before StartEpoch
+PASS hardening thin reference fallback after boundary is explicit
+PASS hardening archive old candles expire without deleting pending claims
+PASS hardening per player order cap
+PASS hardening per item and partitioned global cap includes admission tickets
+PASS hardening hot item capacity does not block another item
+PASS hardening concurrent callback replays allocate unique sequence
+PASS hardening two workers race same remaining fill
+PASS hardening cancellation races fill under epoch fence
+PASS hardening durable before fault recovers without duplicates
+PASS hardening durable after fault recovers without duplicates
+PASS hardening MemoryStore total loss and dropped duplicated messages harmless
+PASS hardening recovery worker crash restart and duplicate run
+PASS hardening pending claim age and backlog metrics
+PASS hardening audit Gold corruption fails loudly
+PASS hardening audit item escrow corruption fails loudly
+PASS hardening audit claim corruption fails loudly
+PASS hardening audit conservation and fees succeed
+PASS hardening READ_ONLY rejects creates but allows cancellation settlement
+PASS hardening PAUSED rejects mutation retains readable data
+PASS hardening market pause does not lock normal profile service
+PASS hardening circuit breaker threshold bounded cooldown
+PASS hardening profile save budgets protected before market maintenance
+PASS hardening namespace public disable staging prod separation
+PASS hardening operator commands absent from client protocol
+PASS hardening operator unknown commands fail
+PASS hardening index rebuild read-only operator preserves balances
+PASS hardening recovery assist has no mint capability
+PASS hardening invariant mismatch latches circuit PAUSED without auto restart
+PASS hardening 24 hour aggregates survive epoch rollover
+PASS hardening archived reference snapshot expires to explicit guide
+PASS hardening schema v6 stays v6 with bounded floor extension
+PASS hardening crash after SELL profile reserve resumes through session refresh
+PASS hardening crash after BUY profile reserve resumes through session refresh
+PASS hardening claim credit committed before acknowledgment resumes once
+PASS hardening session departure forbids claim on foreign owner
+PASS hardening close during uncertain prepared reserve compensates exactly once
+PASS hardening automatic recovery advances closed epoch without leases
+PASS hardening private acceptance names isolate both profile and market roots
+PASS hardening throttled response unblocks UI without reflecting oversized identity
+PHASE45_LOAD orders=5000 cycles=2500 epochs=63 seconds=61.578 ordersPerSecond=81.20 pairP50Ms=23.551 pairP95Ms=40.144 pairMaxMs=75.396 invariantViolations=0 fixedKeys=1
+PASS hardening 5000 order sustained deterministic multi-epoch load conserves every step
+
+335 tests passed.

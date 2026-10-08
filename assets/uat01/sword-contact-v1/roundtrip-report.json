@@ -1,0 +1,19 @@
+{
+  "status": "PASS",
+  "format": "GLB",
+  "samples": 181,
+  "bones": 16,
+  "meshObjects": 31,
+  "triangles": 2344,
+  "maxGripError": 1.0392424925662694e-06,
+  "minimumHeadCenterDistance": 1.4286107610286143,
+  "fixedRootFeet": true,
+  "loopSeams": true,
+  "cutDirection": [
+    -6.340916911540262e-07,
+    -1.0,
+    -3.9021026054797403e-07
+  ],
+  "gameplayBound": false,
+  "scope": "Geometric contact study; segment clearance does not prove all body/cloth collision, combat timing or animation quality."
+}

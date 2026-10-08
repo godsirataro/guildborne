@@ -1,0 +1,55 @@
+{
+  "arrival": {
+    "health": 100,
+    "position": "1.0913936421275139e-11, 2.9980251789093018, -986"
+  },
+  "walks": [
+    {
+      "destination": "CourierCamp",
+      "health": 100,
+      "position": "-64.42333221435547, 2.9980251789093018, -1046.651123046875"
+    },
+    {
+      "destination": "TrainingYard",
+      "health": 100,
+      "position": "64.32859802246094, 2.99802565574646, -1109.671142578125"
+    },
+    {
+      "destination": "CaravanRescue",
+      "health": 100,
+      "position": "-83.36656188964844, 2.99802565574646, -1174.7208251953125"
+    },
+    {
+      "destination": "CaravanRejoin",
+      "health": 100,
+      "position": "-67.02063751220703, 10.641644477844238, -1195.126220703125"
+    },
+    {
+      "destination": "CaravanSupplies",
+      "health": 100,
+      "position": "-46.34104919433594, 2.9980251789093018, -1175.5872802734375"
+    },
+    {
+      "destination": "CrossroadsKeeper",
+      "health": 100,
+      "position": "64.25833892822266, 2.9980251789093018, -1239.571044921875"
+    },
+    {
+      "destination": "FiveDisciplines",
+      "health": 100,
+      "position": "-64.24088287353516, 2.998025894165039, -1297.8197021484375"
+    },
+    {
+      "destination": "HallForecourt",
+      "health": 100,
+      "position": "-0.5711095929145813, 2.9980251789093018, -1356.473876953125"
+    },
+    {
+      "destination": "HallInterior",
+      "health": 100,
+      "position": "-0.011239436455070972, 3.3980252742767334, -1391.300537109375"
+    }
+  ],
+  "method": "Actual E entry and character_navigation at speed 1; no profile or combat changes. Tool navigation may auto-jump around props; no-jump acceptance is the separate native pathfinding fixture.",
+  "gameplayBound": false
+}

@@ -1,0 +1,9 @@
+{
+  "content": [
+    {
+      "type": "text",
+      "text": "{\"stacks\":{\"stone\":1,\"timber\":3,\"herb\":17,\"iron_ore\":7,\"iron_ingot\":1},\"move\":\"OK\",\"blocked\":\"InvalidPlacement\",\"craft\":\"OK\",\"quarters\":\"OK\",\"data\":{\"actors\":[],\"nextBuilding\":4,\"gatherReady\":{\"stone\":1790598209,\"ore\":1790598213,\"wood\":1790598296,\"herbs\":1790598207},\"raceChosen\":false,\"buildings\":{\"b:1\":{\"rotation\":1,\"x\":6,\"kind\":\"warehouse\",\"z\":-4},\"b:2\":{\"rotation\":2,\"x\":10,\"kind\":\"quarters\",\"z\":-4},\"b:3\":{\"rotation\":0,\"x\":6,\"kind\":\"forge\",\"z\":2}},\"gathered\":{\"stone\":true,\"ore\":true,\"wood\":true,\"herbs\":true},\"tower\":{\"nextRun\":1,\"highest\":0,\"checkpoint\":0}},\"forge\":\"OK\"}"
+    }
+  ],
+  "isError": false
+}

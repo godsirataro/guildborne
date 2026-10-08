@@ -1,0 +1,74 @@
+[
+  {
+    "pack": "GuildbornePrefabLibrary",
+    "models": 88,
+    "geometryPartsChecked": 1576,
+    "originPivotsPreserved": true,
+    "scriptFree": true,
+    "binarySha256": "c10d407cf2f79a8f4aaefb499c9b9b7bf27f831cc6a14eaccc0d4e53e80c60ba"
+  },
+  {
+    "pack": "adventure-kit",
+    "models": 10,
+    "geometryPartsChecked": 87,
+    "originPivotsPreserved": true,
+    "scriptFree": true,
+    "binarySha256": "7cf0d046cab602b6314239ca4c5d3ad1e28df839872d48d291803474012042aa"
+  },
+  {
+    "pack": "weapon-kit",
+    "models": 5,
+    "geometryPartsChecked": 54,
+    "originPivotsPreserved": true,
+    "scriptFree": true,
+    "binarySha256": "3a8775f0aebf6fa8ad30641cab8af9e9cb077a9683d39d6f9be5c915904b35cf"
+  },
+  {
+    "pack": "item-kit",
+    "models": 30,
+    "geometryPartsChecked": 246,
+    "originPivotsPreserved": true,
+    "scriptFree": true,
+    "binarySha256": "2a2d0efe711f3f5f085dcf73828244d32c9c05805d9a472e6a3724b9b9d57a52"
+  },
+  {
+    "pack": "hero-kit",
+    "models": 15,
+    "geometryPartsChecked": 439,
+    "originPivotsPreserved": true,
+    "scriptFree": true,
+    "binarySha256": "912b37f0cfe4c5c1500a70ab033d87b258423638c5fbdf02750cda3534ae0737"
+  },
+  {
+    "pack": "enemy-kit",
+    "models": 12,
+    "geometryPartsChecked": 334,
+    "originPivotsPreserved": true,
+    "scriptFree": true,
+    "binarySha256": "3ec600c03f80f7a045d64cad63decdc9bfc884a5d8fb7b99d1cf74faf5a14520"
+  },
+  {
+    "pack": "region-kit",
+    "models": 3,
+    "geometryPartsChecked": 141,
+    "originPivotsPreserved": true,
+    "scriptFree": true,
+    "binarySha256": "16eb2bc321682bb04c55a013f1624f30feb5900b30b8639e53ed5b488108df2d"
+  },
+  {
+    "pack": "cosmetic-kit",
+    "models": 8,
+    "geometryPartsChecked": 106,
+    "originPivotsPreserved": true,
+    "scriptFree": true,
+    "binarySha256": "fca8eddc6ef142ec5c24aa6f047b4428b5ff0b79de273aabfd730e9dba67bebf"
+  },
+  {
+    "pack": "city-interior-kit",
+    "models": 5,
+    "geometryPartsChecked": 169,
+    "originPivotsPreserved": true,
+    "scriptFree": true,
+    "binarySha256": "e0799e5e875debc905930be4efa7bdacf7ac3e2d0ab77e26082fddfefae2afe4"
+  }
+]

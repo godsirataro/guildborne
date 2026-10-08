@@ -1,0 +1,32 @@
+[
+  {
+    "id": "preserve",
+    "meshes": 87,
+    "animatedMeshes": 13,
+    "animations": 1,
+    "seconds": 8,
+    "endpointMaxError": 0.0,
+    "channels": 25,
+    "reimportVerified": true
+  },
+  {
+    "id": "transform",
+    "meshes": 50,
+    "animatedMeshes": 18,
+    "animations": 1,
+    "seconds": 8,
+    "endpointMaxError": 0.0,
+    "channels": 30,
+    "reimportVerified": true
+  },
+  {
+    "id": "dismantle",
+    "meshes": 86,
+    "animatedMeshes": 15,
+    "animations": 1,
+    "seconds": 8,
+    "endpointMaxError": 0.0,
+    "channels": 15,
+    "reimportVerified": true
+  }
+]

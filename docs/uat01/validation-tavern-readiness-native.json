@@ -1,0 +1,16 @@
+{
+  "noProfileWrites": true,
+  "noClipping": true,
+  "classes": 5,
+  "confirmationCases": 4,
+  "languages": {
+    "1": "en",
+    "2": "th"
+  },
+  "widths": {
+    "1": 240,
+    "2": 640
+  },
+  "viewChecks": 56,
+  "synthetic": true
+}

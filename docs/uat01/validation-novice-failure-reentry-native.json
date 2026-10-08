@@ -1,0 +1,26 @@
+{
+  "date": "2026-10-04",
+  "eligibility": "temporary fixture; real keyboard attack then actual warning damage",
+  "failure": {
+    "content": [
+      {
+        "type": "text",
+        "text": "{\"TrialProblem\":\"TrialDefeated\",\"PlayerHealth\":0,\"AbilityLabel\":\"ฟันหนัก\",\"EnemyHealth\":226,\"ActionAt\":1791055554.245325,\"DisplayHint\":\"ลองใหม่เมื่อพร้อม\",\"ActionTargetPosition\":\"0, 28, 2500\",\"OwnerUserId\":11732987790,\"ReturnLabel\":\"ออกจากสนามฝึก\",\"ActionEffect\":\"Basic\",\"DisplayGoals\":\"เอาชนะคู่ต่อสู้ 0/1\",\"NextBasicAt\":0,\"BasicLabel\":\"โจมตีปกติ\",\"FixtureOnly\":true,\"ClassId\":\"Warrior\",\"NextAbilityAt\":0,\"NoviceTrialArena\":true,\"DisplayTitle\":\"นักรบ · Try again\",\"ActionOriginPosition\":\"0, 28, 2504\",\"TrialStatus\":\"Failed\",\"DisplayHealth\":\"HP 0/48 · ผู้คุมทางแยก 226/240\"}"
+      }
+    ],
+    "isError": false
+  },
+  "restart": {
+    "status": "Active",
+    "hp": 48,
+    "enemy": 240
+  },
+  "profileAfter": {
+    "revision": 0,
+    "xp": 0,
+    "gold": 0,
+    "level": 1,
+    "hall": 0
+  },
+  "limitations": "No persistence or human UAT claim"
+}

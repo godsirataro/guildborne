@@ -1,0 +1,22 @@
+{
+  "views": 54,
+  "textBoundsChecks": 324,
+  "capturedActions": 18,
+  "widths": [
+    240,
+    640,
+    704
+  ],
+  "languages": [
+    "en",
+    "th"
+  ],
+  "profileWrites": 0,
+  "checks": [
+    "Every choice remains within grid bounds",
+    "No overlapping choices",
+    "Integer pixel cell widths",
+    "Two-step selection callbacks"
+  ],
+  "sourceOverride": true
+}

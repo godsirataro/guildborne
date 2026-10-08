@@ -1,0 +1,11 @@
+{
+  "date": "2026-10-04",
+  "prompts": 44,
+  "privateReceipts": 15,
+  "notifications": 15,
+  "syntheticCheckpointRebuilds": 1,
+  "profileWrites": 0,
+  "worldMovementCalls": 0,
+  "actualPlayerJourney": false,
+  "scope": "Fake session, prompt callback capture and local prompt relocation. Support, escort and guardian completion were explicitly skipped using fake fixture objectives; no real player progression changed. Separate actual-input tests cover support and guardian mechanics."
+}

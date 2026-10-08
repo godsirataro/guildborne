@@ -1,0 +1,25 @@
+{
+  "status": "LOCAL_ELF_GARDEN_ART_REVIEW_IMPORT_PENDING",
+  "bones": 16,
+  "meshObjects": 82,
+  "fps": 30,
+  "seconds": 6,
+  "pourFrames": [
+    60,
+    120
+  ],
+  "maxSpoutStreamError": 0.0,
+  "spoutBindPosition": [
+    0.15000000596046448,
+    -1.4500000476837158,
+    4.25
+  ],
+  "soilTarget": [
+    0.15000000596046448,
+    -1.4500000476837158,
+    3.299999952316284
+  ],
+  "reference": "assets/uat01/civic-community/concept-v1.png",
+  "robloxAssetId": null,
+  "notes": "Original standing elf interpretation. Stream follows posed spout to soil; drop-chain cosmetic study, not fluid simulation. Contact/skin roundtrip and visual review required."
+}

@@ -1,0 +1,2538 @@
+{
+  "method": "Complete fresh Chapter00–06 ordinary keyboard/mouse, navigation speed1, read-only State observer; no profile grants or gameplay Remote injection/hotpatch",
+  "snapshot": {
+    "mode": "Studio memory · not saved after Stop",
+    "data": {
+      "adventurers": {
+        "h:1": {
+          "equipmentSlots": {
+            "weapon": "campaign:recruit:1:1"
+          },
+          "stats": {
+            "WeaponBonus": 2,
+            "Defense": 3,
+            "Health": 312,
+            "Attack": 102
+          },
+          "id": "h:1",
+          "classId": "Priest",
+          "xp": 4835,
+          "name": "Sage",
+          "level": 97,
+          "baseStats": {
+            "Defense": 3,
+            "Health": 24,
+            "Attack": 4
+          },
+          "rank": "F"
+        },
+        "a:Knight": {
+          "equipmentSlots": {
+            "weapon": "novice:founder:1"
+          },
+          "stats": {
+            "WeaponBonus": 2,
+            "Defense": 7,
+            "Health": 337,
+            "Attack": 105
+          },
+          "id": "a:Knight",
+          "classId": "Knight",
+          "xp": 5035,
+          "name": "Bram",
+          "level": 100,
+          "baseStats": {
+            "Defense": 7,
+            "Health": 40,
+            "Attack": 4
+          },
+          "rank": "F"
+        }
+      },
+      "expansion": {
+        "actors": {
+          "player": {
+            "tier": 1,
+            "skills": {
+              "vitality": true,
+              "focus": true
+            }
+          }
+        },
+        "nextBuilding": 1,
+        "buildings": [],
+        "themeRights": [],
+        "gatherReady": [],
+        "tower": {
+          "nextRun": 1,
+          "highest": 0,
+          "checkpoint": 0
+        },
+        "gathered": [],
+        "raceChosen": false
+      },
+      "levelCap": 100,
+      "nextHallLevelCap": 100,
+      "settlement": {
+        "nextOffer": 1,
+        "elixirs": 0,
+        "tavernLevel": 1,
+        "nextHero": 2,
+        "journal": [],
+        "nextJob": 1,
+        "jobs": []
+      },
+      "language": "en",
+      "guildLand": {
+        "accessMode": "Private",
+        "plots": {
+          "grove": {
+            "purchased": false,
+            "questEligible": false,
+            "materials": {
+              "herb": 8,
+              "timber": 24
+            },
+            "delivered": [],
+            "purchaseAvailable": false,
+            "status": "QuestLocked",
+            "quests": {
+              "trail_watch": false
+            },
+            "name": "Grove Terrace"
+          },
+          "quarry": {
+            "purchased": false,
+            "questEligible": false,
+            "materials": {
+              "stone": 32,
+              "iron_ore": 16
+            },
+            "delivered": [],
+            "purchaseAvailable": false,
+            "status": "QuestLocked",
+            "quests": {
+              "quarry_patrol": false,
+              "timber_escort": false
+            },
+            "name": "Quarry Terrace"
+          },
+          "summit": {
+            "purchased": false,
+            "questEligible": false,
+            "materials": {
+              "stone": 40,
+              "timber": 40,
+              "iron_ingot": 4
+            },
+            "delivered": [],
+            "purchaseAvailable": false,
+            "status": "QuestLocked",
+            "quests": {
+              "quarry_patrol": false
+            },
+            "name": "Summit Terrace"
+          }
+        }
+      },
+      "inventory": {
+        "equipment": {
+          "novice:class:1": {
+            "binding": "Account",
+            "definitionId": "mage_staff",
+            "upgradeLevel": 0
+          },
+          "campaign:recruit:1:1": {
+            "binding": "Account",
+            "upgradeLevel": 0,
+            "definitionId": "apprentice_staff"
+          },
+          "novice:founder:1": {
+            "binding": "Account",
+            "definitionId": "knight_sword",
+            "upgradeLevel": 0
+          }
+        },
+        "stacks": {
+          "timber": 4,
+          "iron_ore": 2,
+          "herb": 3
+        },
+        "nextEquipmentSequence": 1
+      },
+      "character": {
+        "equipmentSlots": {
+          "weapon": "novice:class:1"
+        },
+        "stats": {
+          "WeaponBonus": 2,
+          "Defense": 1,
+          "Health": 323,
+          "Attack": 113
+        },
+        "definitionVersion": 1,
+        "classId": "Mage",
+        "xp": 5015,
+        "raceId": "Human",
+        "tier": 1,
+        "level": 100,
+        "classPathId": "mage:1",
+        "skillId": "fireball"
+      },
+      "hallLevel": 17,
+      "gold": 568,
+      "party": {
+        "adventurerIds": [
+          "a:Knight",
+          "h:1"
+        ]
+      },
+      "rosterCapacity": 5,
+      "quests": {
+        "nextRunSequence": 1,
+        "claimedThrough": 0,
+        "firstClears": []
+      },
+      "progression": {
+        "tutorialStep": "complete",
+        "novice": {
+          "trialClass": "Mage",
+          "founderHero": "a:Knight",
+          "version": 1,
+          "claimed": 6,
+          "objectives": [],
+          "branch": "rescue"
+        },
+        "recruitedClasses": {
+          "Knight": true,
+          "Priest": true
+        },
+        "welcomeSeen": true,
+        "ruleset": "guildborne.progression.2",
+        "campaign": {
+          "version": 1,
+          "hallPermit": 17,
+          "choices": {
+            "choose_warden_release": "release",
+            "choose_joint_review": "workers",
+            "choose_witness_route": "trust",
+            "choose_tower_future": "transform",
+            "choose_forger_fate": "testify",
+            "allocate_timber": "workers",
+            "choose_crest": "compass",
+            "choose_offer_response": "investigate",
+            "renew_tower_oath": "courage",
+            "choose_reconciliation": "joint_work",
+            "choose_tower_door": "sun",
+            "choose_bridge_route": "sheltered",
+            "choose_motto": "together",
+            "choose_citadel_approach": "puzzle"
+          },
+          "claimed": 36,
+          "recruitHero": "h:1",
+          "objectives": []
+        },
+        "tutorialCompleted": true,
+        "everEquipped": false
+      }
+    },
+    "revision": 266
+  },
+  "warden": [
+    {
+      "a": {
+        "ArchiveHeartArena": true,
+        "AbilityLabel": "Class skill",
+        "DisplayHealth": "Seals 0/3 · Mistakes 0/3",
+        "EncounterPhase": "Ready",
+        "LastAction": "CoreShielded",
+        "EncounterCueUntil": 1791245436.3892372,
+        "DisplayHint": "Dodge → release · no attack needed",
+        "TrialStatus": "Active",
+        "EncounterStage": 1,
+        "OwnerUserId": 11732987790,
+        "ReturnLabel": "Leave encounter",
+        "Seals": 0,
+        "CombatHits": 0,
+        "NextBasicAt": 1791245435.472722,
+        "DisplayGoals": "Prepare",
+        "Mistakes": 0,
+        "LastActionAccepted": false,
+        "NextAbilityAt": 1791245435.472726,
+        "CoreHealth": 180,
+        "DisplayTitle": "Last Warden",
+        "ClassId": "Mage",
+        "BasicLabel": "Basic Attack",
+        "CampaignOwner": 11732987790
+      },
+      "position": [
+        3400,
+        136.99801635742188,
+        1422
+      ],
+      "origin": [
+        3400,
+        134,
+        1400
+      ]
+    },
+    {
+      "a": {
+        "ArchiveHeartArena": true,
+        "AbilityLabel": "Class skill",
+        "DisplayHealth": "Seals 0/3 · Mistakes 0/3",
+        "EncounterPhase": "Ready",
+        "LastAction": "CoreShielded",
+        "EncounterCueUntil": 1791245436.389237,
+        "DisplayHint": "Dodge → release · no attack needed",
+        "TrialStatus": "Active",
+        "EncounterStage": 1,
+        "OwnerUserId": 11732987790,
+        "ReturnLabel": "Leave encounter",
+        "Seals": 0,
+        "CombatHits": 0,
+        "NextBasicAt": 1791245435.889777,
+        "DisplayGoals": "Prepare",
+        "Mistakes": 0,
+        "LastActionAccepted": false,
+        "NextAbilityAt": 1791245435.889782,
+        "CoreHealth": 180,
+        "DisplayTitle": "Last Warden",
+        "ClassId": "Mage",
+        "BasicLabel": "Basic Attack",
+        "CampaignOwner": 11732987790
+      },
+      "position": [
+        3400,
+        136.99801635742188,
+        1422
+      ],
+      "origin": [
+        3400,
+        134,
+        1400
+      ]
+    },
+    {
+      "a": {
+        "ArchiveHeartArena": true,
+        "AbilityLabel": "Class skill",
+        "DisplayHealth": "Seals 0/3 · Mistakes 0/3",
+        "EncounterPhase": "Ready",
+        "LastAction": "CoreShielded",
+        "EncounterCueUntil": 1791245436.389237,
+        "DisplayHint": "Dodge → release · no attack needed",
+        "TrialStatus": "Active",
+        "EncounterStage": 1,
+        "OwnerUserId": 11732987790,
+        "ReturnLabel": "Leave encounter",
+        "Seals": 0,
+        "CombatHits": 0,
+        "NextBasicAt": 1791245436.373483,
+        "DisplayGoals": "Prepare",
+        "Mistakes": 0,
+        "LastActionAccepted": false,
+        "NextAbilityAt": 1791245436.373496,
+        "CoreHealth": 180,
+        "DisplayTitle": "Last Warden",
+        "ClassId": "Mage",
+        "BasicLabel": "Basic Attack",
+        "CampaignOwner": 11732987790
+      },
+      "position": [
+        3400,
+        136.99801635742188,
+        1422
+      ],
+      "origin": [
+        3400,
+        134,
+        1400
+      ]
+    },
+    {
+      "a": {
+        "ArchiveHeartArena": true,
+        "AbilityLabel": "Class skill",
+        "DisplayHealth": "Seals 0/3 · Mistakes 0/3",
+        "WarningToken": 5370.437855900003,
+        "EncounterPhase": "Warning",
+        "LastAction": "CoreShielded",
+        "EncounterCueUntil": 1791245438.940448,
+        "DisplayHint": "Step sideways out of the line",
+        "TrialStatus": "Active",
+        "EncounterStage": 1,
+        "OwnerUserId": 11732987790,
+        "ReturnLabel": "Leave encounter",
+        "Seals": 0,
+        "CombatHits": 0,
+        "NextBasicAt": 1791245436.822702,
+        "DisplayGoals": "Dodge orange warning",
+        "Mistakes": 0,
+        "LastActionAccepted": false,
+        "NextAbilityAt": 1791245436.822704,
+        "CoreHealth": 180,
+        "DisplayTitle": "Last Warden",
+        "ClassId": "Mage",
+        "BasicLabel": "Basic Attack",
+        "CampaignOwner": 11732987790
+      },
+      "position": [
+        3400,
+        136.99801635742188,
+        1422
+      ],
+      "origin": [
+        3400,
+        134,
+        1400
+      ]
+    },
+    {
+      "a": {
+        "ArchiveHeartArena": true,
+        "AbilityLabel": "Class skill",
+        "DisplayHealth": "Seals 0/3 · Mistakes 0/3",
+        "TargetPosition": null,
+        "EncounterPhase": "Mechanism",
+        "LastAction": "CoreShielded",
+        "EncounterCueUntil": 1791245450.9732325,
+        "DisplayHint": "Dodge → release · no attack needed",
+        "TrialStatus": "Active",
+        "EncounterStage": 1,
+        "OwnerUserId": 11732987790,
+        "ReturnLabel": "Leave encounter",
+        "Seals": 0,
+        "CombatHits": 0,
+        "NextBasicAt": 1791245438.973403,
+        "DisplayGoals": "Release violet seal · E",
+        "Mistakes": 0,
+        "LastActionAccepted": false,
+        "NextAbilityAt": 1791245438.973406,
+        "CoreHealth": 180,
+        "DisplayTitle": "Last Warden",
+        "ClassId": "Mage",
+        "BasicLabel": "Basic Attack",
+        "CampaignOwner": 11732987790
+      },
+      "position": [
+        3411.56884765625,
+        136.99801635742188,
+        1400.7904052734375
+      ],
+      "target": [
+        3412,
+        137,
+        1392
+      ],
+      "origin": [
+        3400,
+        134,
+        1400
+      ]
+    },
+    {
+      "a": {
+        "ArchiveHeartArena": true,
+        "AbilityLabel": "Class skill",
+        "DisplayHealth": "Seals 1/3 · Mistakes 0/3",
+        "EncounterPhase": "Ready",
+        "LastAction": "OK",
+        "EncounterCueUntil": 1791245440.7226493,
+        "DisplayHint": "Dodge → release · no attack needed",
+        "TrialStatus": "Active",
+        "EncounterStage": 2,
+        "OwnerUserId": 11732987790,
+        "ReturnLabel": "Leave encounter",
+        "Seals": 1,
+        "CombatHits": 0,
+        "NextBasicAt": 1791245440.223543,
+        "DisplayGoals": "Prepare",
+        "Mistakes": 0,
+        "LastActionAccepted": true,
+        "NextAbilityAt": 1791245440.223547,
+        "CoreHealth": 180,
+        "DisplayTitle": "Last Warden",
+        "ClassId": "Mage",
+        "BasicLabel": "Basic Attack",
+        "CampaignOwner": 11732987790
+      },
+      "position": [
+        3411.96337890625,
+        136.99801635742188,
+        1392.7476806640625
+      ],
+      "origin": [
+        3400,
+        134,
+        1400
+      ]
+    },
+    {
+      "a": {
+        "ArchiveHeartArena": true,
+        "AbilityLabel": "Class skill",
+        "DisplayHealth": "Seals 1/3 · Mistakes 0/3",
+        "EncounterPhase": "Ready",
+        "LastAction": "OK",
+        "EncounterCueUntil": 1791245440.72265,
+        "DisplayHint": "Dodge → release · no attack needed",
+        "TrialStatus": "Active",
+        "EncounterStage": 2,
+        "OwnerUserId": 11732987790,
+        "ReturnLabel": "Leave encounter",
+        "Seals": 1,
+        "CombatHits": 0,
+        "NextBasicAt": 1791245440.605588,
+        "DisplayGoals": "Prepare",
+        "Mistakes": 0,
+        "LastActionAccepted": true,
+        "NextAbilityAt": 1791245440.605591,
+        "CoreHealth": 180,
+        "DisplayTitle": "Last Warden",
+        "ClassId": "Mage",
+        "BasicLabel": "Basic Attack",
+        "CampaignOwner": 11732987790
+      },
+      "position": [
+        3411.96337890625,
+        136.99801635742188,
+        1392.7476806640625
+      ],
+      "origin": [
+        3400,
+        134,
+        1400
+      ]
+    },
+    {
+      "a": {
+        "ArchiveHeartArena": true,
+        "AbilityLabel": "Class skill",
+        "DisplayHealth": "Seals 1/3 · Mistakes 0/3",
+        "WarningToken": 5374.737314500002,
+        "EncounterPhase": "Warning",
+        "LastAction": "OK",
+        "EncounterCueUntil": 1791245443.2399068,
+        "DisplayHint": "Move into the center or outside the ring",
+        "TrialStatus": "Active",
+        "EncounterStage": 2,
+        "OwnerUserId": 11732987790,
+        "ReturnLabel": "Leave encounter",
+        "Seals": 1,
+        "CombatHits": 0,
+        "NextBasicAt": 1791245441.073061,
+        "DisplayGoals": "Dodge orange warning",
+        "Mistakes": 0,
+        "LastActionAccepted": true,
+        "NextAbilityAt": 1791245441.073064,
+        "CoreHealth": 180,
+        "DisplayTitle": "Last Warden",
+        "ClassId": "Mage",
+        "BasicLabel": "Basic Attack",
+        "CampaignOwner": 11732987790
+      },
+      "position": [
+        3411.96337890625,
+        136.99801635742188,
+        1392.7476806640625
+      ],
+      "origin": [
+        3400,
+        134,
+        1400
+      ]
+    },
+    {
+      "a": {
+        "ArchiveHeartArena": true,
+        "AbilityLabel": "Class skill",
+        "DisplayHealth": "Seals 1/3 · Mistakes 0/3",
+        "WarningToken": 5374.737314500002,
+        "EncounterPhase": "Warning",
+        "LastAction": "OK",
+        "EncounterCueUntil": 1791245443.2399065,
+        "DisplayHint": "Move into the center or outside the ring",
+        "TrialStatus": "Active",
+        "EncounterStage": 2,
+        "OwnerUserId": 11732987790,
+        "ReturnLabel": "Leave encounter",
+        "Seals": 1,
+        "CombatHits": 0,
+        "NextBasicAt": 1791245442.506307,
+        "DisplayGoals": "Dodge orange warning",
+        "Mistakes": 0,
+        "LastActionAccepted": true,
+        "NextAbilityAt": 1791245442.50631,
+        "CoreHealth": 180,
+        "DisplayTitle": "Last Warden",
+        "ClassId": "Mage",
+        "BasicLabel": "Basic Attack",
+        "CampaignOwner": 11732987790
+      },
+      "position": [
+        3400.689453125,
+        136.99801635742188,
+        1399.581787109375
+      ],
+      "origin": [
+        3400,
+        134,
+        1400
+      ]
+    },
+    {
+      "a": {
+        "ArchiveHeartArena": true,
+        "AbilityLabel": "Class skill",
+        "DisplayHealth": "Seals 1/3 · Mistakes 0/3",
+        "WarningToken": 5374.737314500002,
+        "EncounterPhase": "Warning",
+        "LastAction": "OK",
+        "EncounterCueUntil": 1791245443.239907,
+        "DisplayHint": "Move into the center or outside the ring",
+        "TrialStatus": "Active",
+        "EncounterStage": 2,
+        "OwnerUserId": 11732987790,
+        "ReturnLabel": "Leave encounter",
+        "Seals": 1,
+        "CombatHits": 0,
+        "NextBasicAt": 1791245443.055762,
+        "DisplayGoals": "Dodge orange warning",
+        "Mistakes": 0,
+        "LastActionAccepted": true,
+        "NextAbilityAt": 1791245443.055765,
+        "CoreHealth": 180,
+        "DisplayTitle": "Last Warden",
+        "ClassId": "Mage",
+        "BasicLabel": "Basic Attack",
+        "CampaignOwner": 11732987790
+      },
+      "position": [
+        3400.689453125,
+        136.99801635742188,
+        1399.581787109375
+      ],
+      "origin": [
+        3400,
+        134,
+        1400
+      ]
+    },
+    {
+      "a": {
+        "ArchiveHeartArena": true,
+        "AbilityLabel": "Class skill",
+        "DisplayHealth": "Seals 1/3 · Mistakes 0/3",
+        "TargetPosition": null,
+        "EncounterPhase": "Mechanism",
+        "LastAction": "OK",
+        "EncounterCueUntil": 1791245455.2730124,
+        "DisplayHint": "Dodge → release · no attack needed",
+        "TrialStatus": "Active",
+        "EncounterStage": 2,
+        "OwnerUserId": 11732987790,
+        "ReturnLabel": "Leave encounter",
+        "Seals": 1,
+        "CombatHits": 0,
+        "NextBasicAt": 1791245443.673212,
+        "DisplayGoals": "Release violet seal · E",
+        "Mistakes": 0,
+        "LastActionAccepted": true,
+        "NextAbilityAt": 1791245443.673216,
+        "CoreHealth": 180,
+        "DisplayTitle": "Last Warden",
+        "ClassId": "Mage",
+        "BasicLabel": "Basic Attack",
+        "CampaignOwner": 11732987790
+      },
+      "position": [
+        3400.689453125,
+        136.99801635742188,
+        1399.581787109375
+      ],
+      "target": [
+        3388,
+        137,
+        1392
+      ],
+      "origin": [
+        3400,
+        134,
+        1400
+      ]
+    },
+    {
+      "a": {
+        "ArchiveHeartArena": true,
+        "AbilityLabel": "Class skill",
+        "DisplayHealth": "Seals 2/3 · Mistakes 0/3",
+        "EncounterPhase": "Ready",
+        "LastAction": "OK",
+        "EncounterCueUntil": 1791245445.788643,
+        "DisplayHint": "Dodge → release · no attack needed",
+        "TrialStatus": "Active",
+        "EncounterStage": 3,
+        "OwnerUserId": 11732987790,
+        "ReturnLabel": "Leave encounter",
+        "Seals": 2,
+        "CombatHits": 0,
+        "NextBasicAt": 1791245445.289196,
+        "DisplayGoals": "Prepare",
+        "Mistakes": 0,
+        "LastActionAccepted": true,
+        "NextAbilityAt": 1791245445.289201,
+        "CoreHealth": 180,
+        "DisplayTitle": "Last Warden",
+        "ClassId": "Mage",
+        "BasicLabel": "Basic Attack",
+        "CampaignOwner": 11732987790
+      },
+      "position": [
+        3388.717041015625,
+        136.99803161621094,
+        1392.428955078125
+      ],
+      "origin": [
+        3400,
+        134,
+        1400
+      ]
+    },
+    {
+      "a": {
+        "ArchiveHeartArena": true,
+        "AbilityLabel": "Class skill",
+        "DisplayHealth": "Seals 2/3 · Mistakes 0/3",
+        "EncounterPhase": "Ready",
+        "LastAction": "OK",
+        "EncounterCueUntil": 1791245445.7886426,
+        "DisplayHint": "Dodge → release · no attack needed",
+        "TrialStatus": "Active",
+        "EncounterStage": 3,
+        "OwnerUserId": 11732987790,
+        "ReturnLabel": "Leave encounter",
+        "Seals": 2,
+        "CombatHits": 0,
+        "NextBasicAt": 1791245445.689645,
+        "DisplayGoals": "Prepare",
+        "Mistakes": 0,
+        "LastActionAccepted": true,
+        "NextAbilityAt": 1791245445.689648,
+        "CoreHealth": 180,
+        "DisplayTitle": "Last Warden",
+        "ClassId": "Mage",
+        "BasicLabel": "Basic Attack",
+        "CampaignOwner": 11732987790
+      },
+      "position": [
+        3388.717041015625,
+        136.99803161621094,
+        1392.428955078125
+      ],
+      "origin": [
+        3400,
+        134,
+        1400
+      ]
+    },
+    {
+      "a": {
+        "ArchiveHeartArena": true,
+        "AbilityLabel": "Class skill",
+        "DisplayHealth": "Seals 2/3 · Mistakes 0/3",
+        "WarningToken": 5379.803311200012,
+        "EncounterPhase": "Warning",
+        "LastAction": "OK",
+        "EncounterCueUntil": 1791245448.305903,
+        "DisplayHint": "Leave the circle marking your last position",
+        "TrialStatus": "Active",
+        "EncounterStage": 3,
+        "OwnerUserId": 11732987790,
+        "ReturnLabel": "Leave encounter",
+        "Seals": 2,
+        "CombatHits": 0,
+        "NextBasicAt": 1791245446.122556,
+        "DisplayGoals": "Dodge orange warning",
+        "Mistakes": 0,
+        "LastActionAccepted": true,
+        "NextAbilityAt": 1791245446.122559,
+        "CoreHealth": 180,
+        "DisplayTitle": "Last Warden",
+        "ClassId": "Mage",
+        "BasicLabel": "Basic Attack",
+        "CampaignOwner": 11732987790
+      },
+      "position": [
+        3388.717041015625,
+        136.99803161621094,
+        1392.428955078125
+      ],
+      "origin": [
+        3400,
+        134,
+        1400
+      ]
+    },
+    {
+      "a": {
+        "ArchiveHeartArena": true,
+        "AbilityLabel": "Class skill",
+        "DisplayHealth": "Seals 2/3 · Mistakes 0/3",
+        "TargetPosition": null,
+        "EncounterPhase": "Mechanism",
+        "LastAction": "OK",
+        "EncounterCueUntil": 1791245460.3224626,
+        "DisplayHint": "Dodge → release · no attack needed",
+        "TrialStatus": "Active",
+        "EncounterStage": 3,
+        "OwnerUserId": 11732987790,
+        "ReturnLabel": "Leave encounter",
+        "Seals": 2,
+        "CombatHits": 0,
+        "NextBasicAt": 1791245448.722818,
+        "DisplayGoals": "Release violet seal · E",
+        "Mistakes": 0,
+        "LastActionAccepted": true,
+        "NextAbilityAt": 1791245448.722822,
+        "CoreHealth": 180,
+        "DisplayTitle": "Last Warden",
+        "ClassId": "Mage",
+        "BasicLabel": "Basic Attack",
+        "CampaignOwner": 11732987790
+      },
+      "position": [
+        3419.27783203125,
+        136.99801635742188,
+        1399.8250732421875
+      ],
+      "target": [
+        3400,
+        137,
+        1412
+      ],
+      "origin": [
+        3400,
+        134,
+        1400
+      ]
+    },
+    {}
+  ],
+  "keeper": [
+    {
+      "a": {
+        "ArchiveHeartArena": true,
+        "AbilityLabel": "Class skill",
+        "DisplayHealth": "Seals 0/3 · Mistakes 0/3",
+        "EncounterPhase": "Ready",
+        "LastAction": "CoreShielded",
+        "EncounterCueUntil": 1791245790.8417456,
+        "DisplayHint": "Dodge → rescue → release → strike",
+        "TrialStatus": "Active",
+        "EncounterStage": 1,
+        "OwnerUserId": 11732987790,
+        "ReturnLabel": "Leave encounter",
+        "Seals": 0,
+        "CombatHits": 0,
+        "NextBasicAt": 1791245789.959157,
+        "DisplayGoals": "Prepare",
+        "Mistakes": 0,
+        "LastActionAccepted": false,
+        "NextAbilityAt": 1791245789.959162,
+        "CoreHealth": 180,
+        "DisplayTitle": "Keeper of Names",
+        "ClassId": "Mage",
+        "BasicLabel": "Basic Attack",
+        "CampaignOwner": 11732987790
+      },
+      "position": [
+        3400,
+        136.99801635742188,
+        1422
+      ],
+      "origin": [
+        3400,
+        134,
+        1400
+      ]
+    },
+    {
+      "a": {
+        "ArchiveHeartArena": true,
+        "AbilityLabel": "Class skill",
+        "DisplayHealth": "Seals 0/3 · Mistakes 0/3",
+        "EncounterPhase": "Ready",
+        "LastAction": "CoreShielded",
+        "EncounterCueUntil": 1791245790.841746,
+        "DisplayHint": "Dodge → rescue → release → strike",
+        "TrialStatus": "Active",
+        "EncounterStage": 1,
+        "OwnerUserId": 11732987790,
+        "ReturnLabel": "Leave encounter",
+        "Seals": 0,
+        "CombatHits": 0,
+        "NextBasicAt": 1791245790.442623,
+        "DisplayGoals": "Prepare",
+        "Mistakes": 0,
+        "LastActionAccepted": false,
+        "NextAbilityAt": 1791245790.442627,
+        "CoreHealth": 180,
+        "DisplayTitle": "Keeper of Names",
+        "ClassId": "Mage",
+        "BasicLabel": "Basic Attack",
+        "CampaignOwner": 11732987790
+      },
+      "position": [
+        3400,
+        136.99801635742188,
+        1422
+      ],
+      "origin": [
+        3400,
+        134,
+        1400
+      ]
+    },
+    {
+      "a": {
+        "ArchiveHeartArena": true,
+        "AbilityLabel": "Class skill",
+        "DisplayHealth": "Seals 0/3 · Mistakes 0/3",
+        "WarningToken": 5724.856179900002,
+        "EncounterPhase": "Warning",
+        "LastAction": "CoreShielded",
+        "EncounterCueUntil": 1791245793.3587718,
+        "DisplayHint": "Step sideways out of the line",
+        "TrialStatus": "Active",
+        "EncounterStage": 1,
+        "OwnerUserId": 11732987790,
+        "ReturnLabel": "Leave encounter",
+        "Seals": 0,
+        "CombatHits": 0,
+        "NextBasicAt": 1791245790.859023,
+        "DisplayGoals": "Dodge orange warning",
+        "Mistakes": 0,
+        "LastActionAccepted": false,
+        "NextAbilityAt": 1791245790.859027,
+        "CoreHealth": 180,
+        "DisplayTitle": "Keeper of Names",
+        "ClassId": "Mage",
+        "BasicLabel": "Basic Attack",
+        "CampaignOwner": 11732987790
+      },
+      "position": [
+        3400,
+        136.99801635742188,
+        1422
+      ],
+      "origin": [
+        3400,
+        134,
+        1400
+      ]
+    },
+    {
+      "a": {
+        "ArchiveHeartArena": true,
+        "AbilityLabel": "Class skill",
+        "DisplayHealth": "Seals 0/3 · Mistakes 0/3",
+        "WarningToken": 5724.856179900002,
+        "EncounterPhase": "Warning",
+        "LastAction": "CoreShielded",
+        "EncounterCueUntil": 1791245793.358772,
+        "DisplayHint": "Step sideways out of the line",
+        "TrialStatus": "Active",
+        "EncounterStage": 1,
+        "OwnerUserId": 11732987790,
+        "ReturnLabel": "Leave encounter",
+        "Seals": 0,
+        "CombatHits": 0,
+        "NextBasicAt": 1791245793.108462,
+        "DisplayGoals": "Dodge orange warning",
+        "Mistakes": 0,
+        "LastActionAccepted": false,
+        "NextAbilityAt": 1791245793.108466,
+        "CoreHealth": 180,
+        "DisplayTitle": "Keeper of Names",
+        "ClassId": "Mage",
+        "BasicLabel": "Basic Attack",
+        "CampaignOwner": 11732987790
+      },
+      "position": [
+        3411.56884765625,
+        136.99801635742188,
+        1400.7904052734375
+      ],
+      "origin": [
+        3400,
+        134,
+        1400
+      ]
+    },
+    {
+      "a": {
+        "ArchiveHeartArena": true,
+        "AbilityLabel": "Class skill",
+        "DisplayHealth": "Seals 0/3 · Mistakes 0/3",
+        "TargetPosition": null,
+        "EncounterPhase": "Rescue",
+        "LastAction": "CoreShielded",
+        "EncounterCueUntil": 1791245805.3587725,
+        "DisplayHint": "Dodge → rescue → release → strike",
+        "TrialStatus": "Active",
+        "EncounterStage": 1,
+        "OwnerUserId": 11732987790,
+        "ReturnLabel": "Leave encounter",
+        "Seals": 0,
+        "CombatHits": 0,
+        "NextBasicAt": 1791245793.675966,
+        "DisplayGoals": "Free the teal captive · E",
+        "Mistakes": 0,
+        "LastActionAccepted": false,
+        "NextAbilityAt": 1791245793.675969,
+        "CoreHealth": 180,
+        "DisplayTitle": "Keeper of Names",
+        "ClassId": "Mage",
+        "BasicLabel": "Basic Attack",
+        "CampaignOwner": 11732987790
+      },
+      "position": [
+        3411.56884765625,
+        136.99801635742188,
+        1400.7904052734375
+      ],
+      "target": [
+        3388,
+        137,
+        1410
+      ],
+      "origin": [
+        3400,
+        134,
+        1400
+      ]
+    },
+    {
+      "a": {
+        "ArchiveHeartArena": true,
+        "AbilityLabel": "Class skill",
+        "DisplayHealth": "Seals 0/3 · Mistakes 0/3",
+        "TargetPosition": null,
+        "EncounterPhase": "Mechanism",
+        "LastAction": "OK",
+        "EncounterCueUntil": 1791245807.5916326,
+        "DisplayHint": "Dodge → rescue → release → strike",
+        "TrialStatus": "Active",
+        "EncounterStage": 1,
+        "OwnerUserId": 11732987790,
+        "ReturnLabel": "Leave encounter",
+        "Seals": 0,
+        "CombatHits": 0,
+        "NextBasicAt": 1791245796.091743,
+        "DisplayGoals": "Release violet seal · E",
+        "Mistakes": 0,
+        "LastActionAccepted": true,
+        "NextAbilityAt": 1791245796.091746,
+        "CoreHealth": 180,
+        "DisplayTitle": "Keeper of Names",
+        "ClassId": "Mage",
+        "BasicLabel": "Basic Attack",
+        "CampaignOwner": 11732987790
+      },
+      "position": [
+        3388.838134765625,
+        136.99803161621094,
+        1409.672607421875
+      ],
+      "target": [
+        3412,
+        137,
+        1392
+      ],
+      "origin": [
+        3400,
+        134,
+        1400
+      ]
+    },
+    {
+      "a": {
+        "ArchiveHeartArena": true,
+        "AbilityLabel": "Class skill",
+        "DisplayHealth": "Seals 0/3 · Mistakes 0/3",
+        "TargetPosition": null,
+        "EncounterPhase": "Attack",
+        "LastAction": "OK",
+        "EncounterCueUntil": 1791245810.3578947,
+        "DisplayHint": "Core HP 180/180 · all classes can use F",
+        "TrialStatus": "Active",
+        "EncounterStage": 1,
+        "OwnerUserId": 11732987790,
+        "ReturnLabel": "Leave encounter",
+        "Seals": 0,
+        "CombatHits": 0,
+        "NextBasicAt": 1791245798.907811,
+        "DisplayGoals": "Core exposed · move close and F",
+        "Mistakes": 0,
+        "LastActionAccepted": true,
+        "NextAbilityAt": 1791245798.90782,
+        "CoreHealth": 180,
+        "DisplayTitle": "Keeper of Names",
+        "ClassId": "Mage",
+        "BasicLabel": "Basic Attack",
+        "CampaignOwner": 11732987790
+      },
+      "position": [
+        3411.456298828125,
+        136.99801635742188,
+        1392.5284423828125
+      ],
+      "target": [
+        3400,
+        137,
+        1400
+      ],
+      "origin": [
+        3400,
+        134,
+        1400
+      ]
+    },
+    {
+      "a": {
+        "ArchiveHeartArena": true,
+        "AbilityLabel": "Class skill",
+        "DisplayHealth": "Seals 1/3 · Mistakes 0/3",
+        "LastAction": "CoreShielded",
+        "ActionTargetPosition": null,
+        "ClassId": "Mage",
+        "ActionAbilityId": "fireball",
+        "Seals": 1,
+        "EncounterPhase": "Ready",
+        "ActionAt": 1791245800.508107,
+        "EncounterCueUntil": 1791245801.5079966,
+        "DisplayHint": "Dodge → rescue → release → strike",
+        "TrialStatus": "Active",
+        "EncounterStage": 2,
+        "OwnerUserId": 11732987790,
+        "ReturnLabel": "Leave encounter",
+        "ActionEffect": "Magic",
+        "CombatHits": 1,
+        "NextBasicAt": 1791245801.158245,
+        "DisplayGoals": "Prepare",
+        "Mistakes": 0,
+        "LastActionAccepted": false,
+        "NextAbilityAt": 1791245808.5079968,
+        "CoreHealth": 180,
+        "DisplayTitle": "Keeper of Names",
+        "ActionOriginPosition": null,
+        "BasicLabel": "Basic Attack",
+        "CampaignOwner": 11732987790
+      },
+      "position": [
+        3400.4345703125,
+        136.9980010986328,
+        1409.3372802734375
+      ],
+      "origin": [
+        3400,
+        134,
+        1400
+      ]
+    },
+    {
+      "a": {
+        "LastAction": "CoreShielded",
+        "ArchiveHeartArena": true,
+        "AbilityLabel": "Class skill",
+        "DisplayHealth": "Seals 1/3 · Mistakes 0/3",
+        "ActionTargetPosition": null,
+        "ClassId": "Mage",
+        "ActionAbilityId": "fireball",
+        "WarningToken": 5735.539081900002,
+        "Seals": 1,
+        "EncounterPhase": "Warning",
+        "ActionAt": 1791245800.508107,
+        "EncounterCueUntil": 1791245804.0416744,
+        "DisplayHint": "Move into the center or outside the ring",
+        "TrialStatus": "Active",
+        "EncounterStage": 2,
+        "OwnerUserId": 11732987790,
+        "ReturnLabel": "Leave encounter",
+        "ActionEffect": "Magic",
+        "CombatHits": 1,
+        "NextBasicAt": 1791245801.607811,
+        "DisplayGoals": "Dodge orange warning",
+        "Mistakes": 0,
+        "LastActionAccepted": false,
+        "NextAbilityAt": 1791245808.507997,
+        "CoreHealth": 180,
+        "DisplayTitle": "Keeper of Names",
+        "ActionOriginPosition": null,
+        "BasicLabel": "Basic Attack",
+        "CampaignOwner": 11732987790
+      },
+      "position": [
+        3400.4345703125,
+        136.9980010986328,
+        1409.3372802734375
+      ],
+      "origin": [
+        3400,
+        134,
+        1400
+      ]
+    },
+    {
+      "a": {
+        "LastAction": "CoreShielded",
+        "ArchiveHeartArena": true,
+        "AbilityLabel": "Class skill",
+        "DisplayHealth": "Seals 1/3 · Mistakes 0/3",
+        "ActionTargetPosition": null,
+        "ClassId": "Mage",
+        "ActionAbilityId": "fireball",
+        "WarningToken": 5735.539081900002,
+        "Seals": 1,
+        "EncounterPhase": "Warning",
+        "ActionAt": 1791245800.508107,
+        "EncounterCueUntil": 1791245804.0416741,
+        "DisplayHint": "Move into the center or outside the ring",
+        "TrialStatus": "Active",
+        "EncounterStage": 2,
+        "OwnerUserId": 11732987790,
+        "ReturnLabel": "Leave encounter",
+        "ActionEffect": "Magic",
+        "CombatHits": 1,
+        "NextBasicAt": 1791245802.792305,
+        "DisplayGoals": "Dodge orange warning",
+        "Mistakes": 0,
+        "LastActionAccepted": false,
+        "NextAbilityAt": 1791245808.5079963,
+        "CoreHealth": 180,
+        "DisplayTitle": "Keeper of Names",
+        "ActionOriginPosition": null,
+        "BasicLabel": "Basic Attack",
+        "CampaignOwner": 11732987790
+      },
+      "position": [
+        3400.032470703125,
+        136.99801635742188,
+        1400.6905517578125
+      ],
+      "origin": [
+        3400,
+        134,
+        1400
+      ]
+    },
+    {
+      "a": {
+        "LastAction": "CoreShielded",
+        "ArchiveHeartArena": true,
+        "AbilityLabel": "Class skill",
+        "DisplayHealth": "Seals 1/3 · Mistakes 0/3",
+        "ActionTargetPosition": null,
+        "ClassId": "Mage",
+        "ActionAbilityId": "fireball",
+        "WarningToken": 5735.539081900002,
+        "Seals": 1,
+        "EncounterPhase": "Warning",
+        "ActionAt": 1791245800.508107,
+        "EncounterCueUntil": 1791245804.041674,
+        "DisplayHint": "Move into the center or outside the ring",
+        "TrialStatus": "Active",
+        "EncounterStage": 2,
+        "OwnerUserId": 11732987790,
+        "ReturnLabel": "Leave encounter",
+        "ActionEffect": "Magic",
+        "CombatHits": 1,
+        "NextBasicAt": 1791245803.425782,
+        "DisplayGoals": "Dodge orange warning",
+        "Mistakes": 0,
+        "LastActionAccepted": false,
+        "NextAbilityAt": 1791245808.507997,
+        "CoreHealth": 180,
+        "DisplayTitle": "Keeper of Names",
+        "ActionOriginPosition": null,
+        "BasicLabel": "Basic Attack",
+        "CampaignOwner": 11732987790
+      },
+      "position": [
+        3400.032470703125,
+        136.99801635742188,
+        1400.6905517578125
+      ],
+      "origin": [
+        3400,
+        134,
+        1400
+      ]
+    },
+    {
+      "a": {
+        "LastAction": "CoreShielded",
+        "ArchiveHeartArena": true,
+        "AbilityLabel": "Class skill",
+        "DisplayHealth": "Seals 1/3 · Mistakes 0/3",
+        "ActionTargetPosition": null,
+        "ClassId": "Mage",
+        "ActionAbilityId": "fireball",
+        "WarningToken": 5735.539081900002,
+        "Seals": 1,
+        "EncounterPhase": "Warning",
+        "ActionAt": 1791245800.508107,
+        "EncounterCueUntil": 1791245804.0416746,
+        "DisplayHint": "Move into the center or outside the ring",
+        "TrialStatus": "Active",
+        "EncounterStage": 2,
+        "OwnerUserId": 11732987790,
+        "ReturnLabel": "Leave encounter",
+        "ActionEffect": "Magic",
+        "CombatHits": 1,
+        "NextBasicAt": 1791245804.008345,
+        "DisplayGoals": "Dodge orange warning",
+        "Mistakes": 0,
+        "LastActionAccepted": false,
+        "NextAbilityAt": 1791245808.507997,
+        "CoreHealth": 180,
+        "DisplayTitle": "Keeper of Names",
+        "ActionOriginPosition": null,
+        "BasicLabel": "Basic Attack",
+        "CampaignOwner": 11732987790
+      },
+      "position": [
+        3400.032470703125,
+        136.99801635742188,
+        1400.6905517578125
+      ],
+      "origin": [
+        3400,
+        134,
+        1400
+      ]
+    },
+    {
+      "a": {
+        "ClassId": "Mage",
+        "ArchiveHeartArena": true,
+        "AbilityLabel": "Class skill",
+        "DisplayHealth": "Seals 1/3 · Mistakes 0/3",
+        "LastAction": "CoreShielded",
+        "ActionTargetPosition": null,
+        "TargetPosition": null,
+        "ActionAbilityId": "fireball",
+        "Seals": 1,
+        "EncounterPhase": "Rescue",
+        "ActionAt": 1791245800.508107,
+        "EncounterCueUntil": 1791245816.0578268,
+        "DisplayHint": "Dodge → rescue → release → strike",
+        "TrialStatus": "Active",
+        "EncounterStage": 2,
+        "OwnerUserId": 11732987790,
+        "ReturnLabel": "Leave encounter",
+        "ActionEffect": "Magic",
+        "CombatHits": 1,
+        "NextBasicAt": 1791245804.607614,
+        "DisplayGoals": "Free the teal captive · E",
+        "Mistakes": 0,
+        "LastActionAccepted": false,
+        "NextAbilityAt": 1791245808.507997,
+        "CoreHealth": 180,
+        "DisplayTitle": "Keeper of Names",
+        "ActionOriginPosition": null,
+        "BasicLabel": "Basic Attack",
+        "CampaignOwner": 11732987790
+      },
+      "position": [
+        3400.032470703125,
+        136.99801635742188,
+        1400.6905517578125
+      ],
+      "target": [
+        3412,
+        137,
+        1410
+      ],
+      "origin": [
+        3400,
+        134,
+        1400
+      ]
+    },
+    {
+      "a": {
+        "ClassId": "Mage",
+        "ArchiveHeartArena": true,
+        "AbilityLabel": "Class skill",
+        "DisplayHealth": "Seals 1/3 · Mistakes 0/3",
+        "LastAction": "OK",
+        "ActionTargetPosition": null,
+        "TargetPosition": null,
+        "ActionAbilityId": "fireball",
+        "Seals": 1,
+        "EncounterPhase": "Mechanism",
+        "ActionAt": 1791245800.508107,
+        "EncounterCueUntil": 1791245817.8406818,
+        "DisplayHint": "Dodge → rescue → release → strike",
+        "TrialStatus": "Active",
+        "EncounterStage": 2,
+        "OwnerUserId": 11732987790,
+        "ReturnLabel": "Leave encounter",
+        "ActionEffect": "Magic",
+        "CombatHits": 1,
+        "NextBasicAt": 1791245806.391826,
+        "DisplayGoals": "Release violet seal · E",
+        "Mistakes": 0,
+        "LastActionAccepted": true,
+        "NextAbilityAt": 1791245808.5079973,
+        "CoreHealth": 180,
+        "DisplayTitle": "Keeper of Names",
+        "ActionOriginPosition": null,
+        "BasicLabel": "Basic Attack",
+        "CampaignOwner": 11732987790
+      },
+      "position": [
+        3411.370849609375,
+        136.99803161621094,
+        1409.5107421875
+      ],
+      "target": [
+        3388,
+        137,
+        1392
+      ],
+      "origin": [
+        3400,
+        134,
+        1400
+      ]
+    },
+    {
+      "a": {
+        "ClassId": "Mage",
+        "ArchiveHeartArena": true,
+        "AbilityLabel": "Class skill",
+        "DisplayHealth": "Seals 1/3 · Mistakes 0/3",
+        "LastAction": "OK",
+        "ActionTargetPosition": null,
+        "TargetPosition": null,
+        "ActionAbilityId": "fireball",
+        "Seals": 1,
+        "EncounterPhase": "Attack",
+        "ActionAt": 1791245800.508107,
+        "EncounterCueUntil": 1791245820.4753988,
+        "DisplayHint": "Core HP 180/180 · all classes can use F",
+        "TrialStatus": "Active",
+        "EncounterStage": 2,
+        "OwnerUserId": 11732987790,
+        "ReturnLabel": "Leave encounter",
+        "ActionEffect": "Magic",
+        "CombatHits": 1,
+        "NextBasicAt": 1791245808.991773,
+        "DisplayGoals": "Core exposed · move close and F",
+        "Mistakes": 0,
+        "LastActionAccepted": true,
+        "NextAbilityAt": 1791245808.991783,
+        "CoreHealth": 180,
+        "DisplayTitle": "Keeper of Names",
+        "ActionOriginPosition": null,
+        "BasicLabel": "Basic Attack",
+        "CampaignOwner": 11732987790
+      },
+      "position": [
+        3388.545166015625,
+        136.9980010986328,
+        1392.4078369140625
+      ],
+      "target": [
+        3400,
+        137,
+        1400
+      ],
+      "origin": [
+        3400,
+        134,
+        1400
+      ]
+    },
+    {
+      "a": {
+        "ArchiveHeartArena": true,
+        "AbilityLabel": "Class skill",
+        "DisplayHealth": "Seals 2/3 · Mistakes 0/3",
+        "LastAction": "CoreShielded",
+        "ActionTargetPosition": null,
+        "ClassId": "Mage",
+        "ActionAbilityId": "fireball",
+        "Seals": 2,
+        "EncounterPhase": "Ready",
+        "ActionAt": 1791245811.024335,
+        "EncounterCueUntil": 1791245812.0242324,
+        "DisplayHint": "Dodge → rescue → release → strike",
+        "TrialStatus": "Active",
+        "EncounterStage": 3,
+        "OwnerUserId": 11732987790,
+        "ReturnLabel": "Leave encounter",
+        "ActionEffect": "Magic",
+        "CombatHits": 2,
+        "NextBasicAt": 1791245811.591239,
+        "DisplayGoals": "Prepare",
+        "Mistakes": 0,
+        "LastActionAccepted": false,
+        "NextAbilityAt": 1791245819.0242321,
+        "CoreHealth": 180,
+        "DisplayTitle": "Keeper of Names",
+        "ActionOriginPosition": null,
+        "BasicLabel": "Basic Attack",
+        "CampaignOwner": 11732987790
+      },
+      "position": [
+        3399.185546875,
+        136.99803161621094,
+        1409.9730224609375
+      ],
+      "origin": [
+        3400,
+        134,
+        1400
+      ]
+    },
+    {
+      "a": {
+        "LastAction": "CoreShielded",
+        "ArchiveHeartArena": true,
+        "AbilityLabel": "Class skill",
+        "DisplayHealth": "Seals 2/3 · Mistakes 0/3",
+        "ActionTargetPosition": null,
+        "ClassId": "Mage",
+        "ActionAbilityId": "fireball",
+        "WarningToken": 5746.071844300008,
+        "Seals": 2,
+        "EncounterPhase": "Warning",
+        "ActionAt": 1791245811.024335,
+        "EncounterCueUntil": 1791245814.574437,
+        "DisplayHint": "Leave the circle marking your last position",
+        "TrialStatus": "Active",
+        "EncounterStage": 3,
+        "OwnerUserId": 11732987790,
+        "ReturnLabel": "Leave encounter",
+        "ActionEffect": "Magic",
+        "CombatHits": 2,
+        "NextBasicAt": 1791245812.12441,
+        "DisplayGoals": "Dodge orange warning",
+        "Mistakes": 0,
+        "LastActionAccepted": false,
+        "NextAbilityAt": 1791245819.024232,
+        "CoreHealth": 180,
+        "DisplayTitle": "Keeper of Names",
+        "ActionOriginPosition": null,
+        "BasicLabel": "Basic Attack",
+        "CampaignOwner": 11732987790
+      },
+      "position": [
+        3399.185546875,
+        136.99803161621094,
+        1409.9730224609375
+      ],
+      "origin": [
+        3400,
+        134,
+        1400
+      ]
+    },
+    {
+      "a": {
+        "LastAction": "CoreShielded",
+        "ArchiveHeartArena": true,
+        "AbilityLabel": "Class skill",
+        "DisplayHealth": "Seals 2/3 · Mistakes 0/3",
+        "ActionTargetPosition": null,
+        "ClassId": "Mage",
+        "ActionAbilityId": "fireball",
+        "WarningToken": 5746.071844300008,
+        "Seals": 2,
+        "EncounterPhase": "Warning",
+        "ActionAt": 1791245811.024335,
+        "EncounterCueUntil": 1791245814.5744362,
+        "DisplayHint": "Leave the circle marking your last position",
+        "TrialStatus": "Active",
+        "EncounterStage": 3,
+        "OwnerUserId": 11732987790,
+        "ReturnLabel": "Leave encounter",
+        "ActionEffect": "Magic",
+        "CombatHits": 2,
+        "NextBasicAt": 1791245814.190946,
+        "DisplayGoals": "Dodge orange warning",
+        "Mistakes": 0,
+        "LastActionAccepted": false,
+        "NextAbilityAt": 1791245819.0242321,
+        "CoreHealth": 180,
+        "DisplayTitle": "Keeper of Names",
+        "ActionOriginPosition": null,
+        "BasicLabel": "Basic Attack",
+        "CampaignOwner": 11732987790
+      },
+      "position": [
+        3419.26318359375,
+        136.99803161621094,
+        1400.35302734375
+      ],
+      "origin": [
+        3400,
+        134,
+        1400
+      ]
+    },
+    {
+      "a": {
+        "ClassId": "Mage",
+        "ArchiveHeartArena": true,
+        "AbilityLabel": "Class skill",
+        "DisplayHealth": "Seals 2/3 · Mistakes 0/3",
+        "LastAction": "CoreShielded",
+        "ActionTargetPosition": null,
+        "TargetPosition": null,
+        "ActionAbilityId": "fireball",
+        "Seals": 2,
+        "EncounterPhase": "Rescue",
+        "ActionAt": 1791245811.024335,
+        "EncounterCueUntil": 1791245826.6244254,
+        "DisplayHint": "Dodge → rescue → release → strike",
+        "TrialStatus": "Active",
+        "EncounterStage": 3,
+        "OwnerUserId": 11732987790,
+        "ReturnLabel": "Leave encounter",
+        "ActionEffect": "Magic",
+        "CombatHits": 2,
+        "NextBasicAt": 1791245814.823919,
+        "DisplayGoals": "Free the teal captive · E",
+        "Mistakes": 0,
+        "LastActionAccepted": false,
+        "NextAbilityAt": 1791245819.0242326,
+        "CoreHealth": 180,
+        "DisplayTitle": "Keeper of Names",
+        "ActionOriginPosition": null,
+        "BasicLabel": "Basic Attack",
+        "CampaignOwner": 11732987790
+      },
+      "position": [
+        3419.26318359375,
+        136.99803161621094,
+        1400.35302734375
+      ],
+      "target": [
+        3400,
+        137,
+        1388
+      ],
+      "origin": [
+        3400,
+        134,
+        1400
+      ]
+    },
+    {
+      "a": {
+        "ClassId": "Mage",
+        "ArchiveHeartArena": true,
+        "AbilityLabel": "Class skill",
+        "DisplayHealth": "Seals 2/3 · Mistakes 0/3",
+        "LastAction": "OK",
+        "ActionTargetPosition": null,
+        "TargetPosition": null,
+        "ActionAbilityId": "fireball",
+        "Seals": 2,
+        "EncounterPhase": "Mechanism",
+        "ActionAt": 1791245811.024335,
+        "EncounterCueUntil": 1791245828.524575,
+        "DisplayHint": "Dodge → rescue → release → strike",
+        "TrialStatus": "Active",
+        "EncounterStage": 3,
+        "OwnerUserId": 11732987790,
+        "ReturnLabel": "Leave encounter",
+        "ActionEffect": "Magic",
+        "CombatHits": 2,
+        "NextBasicAt": 1791245817.007732,
+        "DisplayGoals": "Release violet seal · E",
+        "Mistakes": 0,
+        "LastActionAccepted": true,
+        "NextAbilityAt": 1791245819.0242326,
+        "CoreHealth": 180,
+        "DisplayTitle": "Keeper of Names",
+        "ActionOriginPosition": null,
+        "BasicLabel": "Basic Attack",
+        "CampaignOwner": 11732987790
+      },
+      "position": [
+        3400.597900390625,
+        136.99801635742188,
+        1388.3831787109375
+      ],
+      "target": [
+        3400,
+        137,
+        1412
+      ],
+      "origin": [
+        3400,
+        134,
+        1400
+      ]
+    },
+    {
+      "a": {
+        "ClassId": "Mage",
+        "ArchiveHeartArena": true,
+        "AbilityLabel": "Class skill",
+        "DisplayHealth": "Seals 2/3 · Mistakes 0/3",
+        "LastAction": "OK",
+        "ActionTargetPosition": null,
+        "TargetPosition": null,
+        "ActionAbilityId": "fireball",
+        "Seals": 2,
+        "EncounterPhase": "Attack",
+        "ActionAt": 1791245811.024335,
+        "EncounterCueUntil": 1791245830.7736616,
+        "DisplayHint": "Core HP 180/180 · all classes can use F",
+        "TrialStatus": "Active",
+        "EncounterStage": 3,
+        "OwnerUserId": 11732987790,
+        "ReturnLabel": "Leave encounter",
+        "ActionEffect": "Magic",
+        "CombatHits": 2,
+        "NextBasicAt": 1791245819.307125,
+        "DisplayGoals": "Core exposed · move close and F",
+        "Mistakes": 0,
+        "LastActionAccepted": true,
+        "NextAbilityAt": 1791245819.307141,
+        "CoreHealth": 180,
+        "DisplayTitle": "Keeper of Names",
+        "ActionOriginPosition": null,
+        "BasicLabel": "Basic Attack",
+        "CampaignOwner": 11732987790
+      },
+      "position": [
+        3400.020263671875,
+        136.99801635742188,
+        1411.17236328125
+      ],
+      "target": [
+        3400,
+        137,
+        1400
+      ],
+      "origin": [
+        3400,
+        134,
+        1400
+      ]
+    },
+    {}
+  ],
+  "supplyWards": [
+    {
+      "a": {
+        "LessonRole": "Combined",
+        "OwnerUserId": 11732987790,
+        "LessonPhase": "Ready",
+        "TrainingOnly": true,
+        "LessonStatus": "Active",
+        "CueActed": false,
+        "Successes": 0
+      }
+    },
+    {
+      "a": {
+        "LessonRole": "Combined",
+        "OwnerUserId": 11732987790,
+        "LessonPhase": "Ready",
+        "TrainingOnly": true,
+        "LessonStatus": "Active",
+        "CueActed": false,
+        "Successes": 0
+      }
+    },
+    {
+      "a": {
+        "LessonRole": "Combined",
+        "OwnerUserId": 11732987790,
+        "CueEndsAt": 1791245340.726909,
+        "LessonStatus": "Active",
+        "Successes": 0,
+        "CueTarget": "left",
+        "LessonPhase": "Warning",
+        "CuePosition": null,
+        "CueRole": "Guard",
+        "CueActed": false,
+        "TrainingOnly": true
+      },
+      "pos": [
+        3474,
+        103,
+        1525
+      ]
+    },
+    {
+      "a": {
+        "LessonRole": "Combined",
+        "OwnerUserId": 11732987790,
+        "CueEndsAt": 1791245340.7268999,
+        "LessonStatus": "Active",
+        "LastActionAccepted": true,
+        "Successes": 0,
+        "CueTarget": "left",
+        "LastAction": "ShieldReady",
+        "LessonPhase": "Warning",
+        "CuePosition": null,
+        "CueRole": "Guard",
+        "CueActed": true,
+        "TrainingOnly": true
+      },
+      "pos": [
+        3474,
+        103,
+        1525
+      ]
+    },
+    {
+      "a": {
+        "LessonRole": "Combined",
+        "OwnerUserId": 11732987790,
+        "LessonStatus": "Active",
+        "Successes": 1,
+        "LastActionAccepted": true,
+        "LessonPhase": "Ready",
+        "LastAction": "ShieldReady",
+        "CueActed": false,
+        "TrainingOnly": true
+      }
+    },
+    {
+      "a": {
+        "LessonRole": "Combined",
+        "OwnerUserId": 11732987790,
+        "LessonStatus": "Active",
+        "Successes": 1,
+        "LastActionAccepted": true,
+        "LessonPhase": "Ready",
+        "LastAction": "ShieldReady",
+        "CueActed": false,
+        "TrainingOnly": true
+      }
+    },
+    {
+      "a": {
+        "LessonRole": "Combined",
+        "OwnerUserId": 11732987790,
+        "CueEndsAt": 1791245344.742753,
+        "LessonStatus": "Active",
+        "LastActionAccepted": true,
+        "Successes": 1,
+        "CueTarget": "centre",
+        "LastAction": "ShieldReady",
+        "LessonPhase": "Warning",
+        "CuePosition": null,
+        "CueRole": "Mend",
+        "CueActed": false,
+        "TrainingOnly": true
+      },
+      "pos": [
+        3486,
+        103,
+        1525
+      ]
+    },
+    {
+      "a": {
+        "LessonRole": "Combined",
+        "OwnerUserId": 11732987790,
+        "CueEndsAt": 1791245344.7427578,
+        "LessonStatus": "Active",
+        "LastActionAccepted": true,
+        "Successes": 1,
+        "CueTarget": "centre",
+        "LastAction": "ShieldReady",
+        "LessonPhase": "Warning",
+        "CuePosition": null,
+        "CueRole": "Mend",
+        "CueActed": false,
+        "TrainingOnly": true
+      },
+      "pos": [
+        3486,
+        103,
+        1525
+      ]
+    },
+    {
+      "a": {
+        "LessonRole": "Combined",
+        "OwnerUserId": 11732987790,
+        "CueEndsAt": 1791245344.7427604,
+        "LessonStatus": "Active",
+        "LastActionAccepted": true,
+        "Successes": 1,
+        "CueTarget": "centre",
+        "LastAction": "ShieldReady",
+        "LessonPhase": "Warning",
+        "CuePosition": null,
+        "CueRole": "Mend",
+        "CueActed": false,
+        "TrainingOnly": true
+      },
+      "pos": [
+        3486,
+        103,
+        1525
+      ]
+    },
+    {
+      "a": {
+        "LessonRole": "Combined",
+        "OwnerUserId": 11732987790,
+        "CueEndsAt": 1791245344.7427535,
+        "LessonStatus": "Active",
+        "LastActionAccepted": true,
+        "Successes": 1,
+        "CueTarget": "centre",
+        "LastAction": "ShieldReady",
+        "LessonPhase": "Warning",
+        "CuePosition": null,
+        "CueRole": "Mend",
+        "CueActed": false,
+        "TrainingOnly": true
+      },
+      "pos": [
+        3486,
+        103,
+        1525
+      ]
+    },
+    {
+      "a": {
+        "LessonRole": "Combined",
+        "OwnerUserId": 11732987790,
+        "CueEndsAt": 1791245344.7427585,
+        "LessonStatus": "Active",
+        "LastActionAccepted": true,
+        "Successes": 1,
+        "CueTarget": "centre",
+        "LastAction": "ShieldReady",
+        "LessonPhase": "Warning",
+        "CuePosition": null,
+        "CueRole": "Mend",
+        "CueActed": false,
+        "TrainingOnly": true
+      },
+      "pos": [
+        3486,
+        103,
+        1525
+      ]
+    },
+    {
+      "a": {
+        "LessonRole": "Combined",
+        "OwnerUserId": 11732987790,
+        "CueEndsAt": 1791245344.7427585,
+        "LessonStatus": "Active",
+        "LastActionAccepted": true,
+        "Successes": 1,
+        "CueTarget": "centre",
+        "LastAction": "ShieldReady",
+        "LessonPhase": "Warning",
+        "CuePosition": null,
+        "CueRole": "Mend",
+        "CueActed": false,
+        "TrainingOnly": true
+      },
+      "pos": [
+        3486,
+        103,
+        1525
+      ]
+    },
+    {
+      "a": {
+        "LessonRole": "Combined",
+        "OwnerUserId": 11732987790,
+        "CueEndsAt": 1791245348.7427654,
+        "LessonStatus": "Active",
+        "LastActionAccepted": true,
+        "Successes": 1,
+        "CueTarget": "centre",
+        "LastAction": "ShieldReady",
+        "LessonPhase": "Recovery",
+        "CuePosition": null,
+        "CueRole": "Mend",
+        "CueActed": false,
+        "TrainingOnly": true
+      },
+      "pos": [
+        3486,
+        103,
+        1525
+      ]
+    },
+    {
+      "a": {
+        "LessonRole": "Combined",
+        "OwnerUserId": 11732987790,
+        "LessonStatus": "Active",
+        "Successes": 2,
+        "LastActionAccepted": true,
+        "LessonPhase": "Ready",
+        "LastAction": "Recovered",
+        "CueActed": false,
+        "TrainingOnly": true
+      }
+    },
+    {
+      "a": {
+        "LessonRole": "Combined",
+        "OwnerUserId": 11732987790,
+        "LessonStatus": "Active",
+        "Successes": 2,
+        "LastActionAccepted": true,
+        "LessonPhase": "Ready",
+        "LastAction": "Recovered",
+        "CueActed": false,
+        "TrainingOnly": true
+      }
+    },
+    {
+      "a": {
+        "LessonRole": "Combined",
+        "OwnerUserId": 11732987790,
+        "CueEndsAt": 1791245350.159823,
+        "LessonStatus": "Active",
+        "LastActionAccepted": true,
+        "Successes": 2,
+        "CueTarget": "right",
+        "LastAction": "Recovered",
+        "LessonPhase": "Warning",
+        "CuePosition": null,
+        "CueRole": "Guard",
+        "CueActed": false,
+        "TrainingOnly": true
+      },
+      "pos": [
+        3498,
+        103,
+        1525
+      ]
+    },
+    {
+      "a": {
+        "LessonRole": "Combined",
+        "OwnerUserId": 11732987790,
+        "CueEndsAt": 1791245350.1598208,
+        "LessonStatus": "Active",
+        "LastActionAccepted": true,
+        "Successes": 2,
+        "CueTarget": "right",
+        "LastAction": "ShieldReady",
+        "LessonPhase": "Warning",
+        "CuePosition": null,
+        "CueRole": "Guard",
+        "CueActed": true,
+        "TrainingOnly": true
+      },
+      "pos": [
+        3498,
+        103,
+        1525
+      ]
+    },
+    {
+      "a": {
+        "LessonRole": "Combined",
+        "OwnerUserId": 11732987790,
+        "CueEndsAt": 1791245350.1598191,
+        "LessonStatus": "Active",
+        "LastActionAccepted": true,
+        "Successes": 2,
+        "CueTarget": "right",
+        "LastAction": "ShieldReady",
+        "LessonPhase": "Warning",
+        "CuePosition": null,
+        "CueRole": "Guard",
+        "CueActed": true,
+        "TrainingOnly": true
+      },
+      "pos": [
+        3498,
+        103,
+        1525
+      ]
+    },
+    {
+      "a": {
+        "LessonRole": "Combined",
+        "OwnerUserId": 11732987790,
+        "CueEndsAt": 1791245350.1598582,
+        "LessonStatus": "Active",
+        "LastActionAccepted": true,
+        "Successes": 2,
+        "CueTarget": "right",
+        "LastAction": "ShieldReady",
+        "LessonPhase": "Warning",
+        "CuePosition": null,
+        "CueRole": "Guard",
+        "CueActed": true,
+        "TrainingOnly": true
+      },
+      "pos": [
+        3498,
+        103,
+        1525
+      ]
+    },
+    {}
+  ],
+  "evacuationWards": [
+    {
+      "a": {
+        "LessonRole": "Combined",
+        "OwnerUserId": 11732987790,
+        "LessonPhase": "Ready",
+        "TrainingOnly": true,
+        "LessonStatus": "Active",
+        "CueActed": false,
+        "Successes": 0
+      }
+    },
+    {
+      "a": {
+        "LessonRole": "Combined",
+        "OwnerUserId": 11732987790,
+        "LessonPhase": "Ready",
+        "TrainingOnly": true,
+        "LessonStatus": "Active",
+        "CueActed": false,
+        "Successes": 0
+      }
+    },
+    {
+      "a": {
+        "LessonRole": "Combined",
+        "OwnerUserId": 11732987790,
+        "CueEndsAt": 1791245655.4635694,
+        "LessonStatus": "Active",
+        "Successes": 0,
+        "CueTarget": "left",
+        "LessonPhase": "Warning",
+        "CuePosition": null,
+        "CueRole": "Guard",
+        "CueActed": false,
+        "TrainingOnly": true
+      },
+      "pos": [
+        3302,
+        103,
+        1265
+      ]
+    },
+    {
+      "a": {
+        "LessonRole": "Combined",
+        "OwnerUserId": 11732987790,
+        "CueEndsAt": 1791245655.4635708,
+        "LessonStatus": "Active",
+        "LastActionAccepted": true,
+        "Successes": 0,
+        "CueTarget": "left",
+        "LastAction": "ShieldReady",
+        "LessonPhase": "Warning",
+        "CuePosition": null,
+        "CueRole": "Guard",
+        "CueActed": true,
+        "TrainingOnly": true
+      },
+      "pos": [
+        3302,
+        103,
+        1265
+      ]
+    },
+    {
+      "a": {
+        "LessonRole": "Combined",
+        "OwnerUserId": 11732987790,
+        "CueEndsAt": 1791245655.4635713,
+        "LessonStatus": "Active",
+        "LastActionAccepted": true,
+        "Successes": 0,
+        "CueTarget": "left",
+        "LastAction": "ShieldReady",
+        "LessonPhase": "Warning",
+        "CuePosition": null,
+        "CueRole": "Guard",
+        "CueActed": true,
+        "TrainingOnly": true
+      },
+      "pos": [
+        3302,
+        103,
+        1265
+      ]
+    },
+    {
+      "a": {
+        "LessonRole": "Combined",
+        "OwnerUserId": 11732987790,
+        "CueEndsAt": 1791245655.4635797,
+        "LessonStatus": "Active",
+        "LastActionAccepted": true,
+        "Successes": 0,
+        "CueTarget": "left",
+        "LastAction": "ShieldReady",
+        "LessonPhase": "Warning",
+        "CuePosition": null,
+        "CueRole": "Guard",
+        "CueActed": true,
+        "TrainingOnly": true
+      },
+      "pos": [
+        3302,
+        103,
+        1265
+      ]
+    },
+    {
+      "a": {
+        "LessonRole": "Combined",
+        "OwnerUserId": 11732987790,
+        "LessonStatus": "Active",
+        "Successes": 1,
+        "LastActionAccepted": true,
+        "LessonPhase": "Ready",
+        "LastAction": "ShieldReady",
+        "CueActed": false,
+        "TrainingOnly": true
+      }
+    },
+    {
+      "a": {
+        "LessonRole": "Combined",
+        "OwnerUserId": 11732987790,
+        "LessonStatus": "Active",
+        "Successes": 1,
+        "LastActionAccepted": true,
+        "LessonPhase": "Ready",
+        "LastAction": "ShieldReady",
+        "CueActed": false,
+        "TrainingOnly": true
+      }
+    },
+    {
+      "a": {
+        "LessonRole": "Combined",
+        "OwnerUserId": 11732987790,
+        "CueEndsAt": 1791245659.480674,
+        "LessonStatus": "Active",
+        "LastActionAccepted": true,
+        "Successes": 1,
+        "CueTarget": "centre",
+        "LastAction": "ShieldReady",
+        "LessonPhase": "Warning",
+        "CuePosition": null,
+        "CueRole": "Mend",
+        "CueActed": false,
+        "TrainingOnly": true
+      },
+      "pos": [
+        3314,
+        103,
+        1265
+      ]
+    },
+    {
+      "a": {
+        "LessonRole": "Combined",
+        "OwnerUserId": 11732987790,
+        "CueEndsAt": 1791245659.4806798,
+        "LessonStatus": "Active",
+        "LastActionAccepted": true,
+        "Successes": 1,
+        "CueTarget": "centre",
+        "LastAction": "ShieldReady",
+        "LessonPhase": "Warning",
+        "CuePosition": null,
+        "CueRole": "Mend",
+        "CueActed": false,
+        "TrainingOnly": true
+      },
+      "pos": [
+        3314,
+        103,
+        1265
+      ]
+    },
+    {
+      "a": {
+        "LessonRole": "Combined",
+        "OwnerUserId": 11732987790,
+        "CueEndsAt": 1791245659.480675,
+        "LessonStatus": "Active",
+        "LastActionAccepted": true,
+        "Successes": 1,
+        "CueTarget": "centre",
+        "LastAction": "ShieldReady",
+        "LessonPhase": "Warning",
+        "CuePosition": null,
+        "CueRole": "Mend",
+        "CueActed": false,
+        "TrainingOnly": true
+      },
+      "pos": [
+        3314,
+        103,
+        1265
+      ]
+    },
+    {
+      "a": {
+        "LessonRole": "Combined",
+        "OwnerUserId": 11732987790,
+        "CueEndsAt": 1791245659.4806821,
+        "LessonStatus": "Active",
+        "LastActionAccepted": true,
+        "Successes": 1,
+        "CueTarget": "centre",
+        "LastAction": "ShieldReady",
+        "LessonPhase": "Warning",
+        "CuePosition": null,
+        "CueRole": "Mend",
+        "CueActed": false,
+        "TrainingOnly": true
+      },
+      "pos": [
+        3314,
+        103,
+        1265
+      ]
+    },
+    {
+      "a": {
+        "LessonRole": "Combined",
+        "OwnerUserId": 11732987790,
+        "CueEndsAt": 1791245659.4806821,
+        "LessonStatus": "Active",
+        "LastActionAccepted": true,
+        "Successes": 1,
+        "CueTarget": "centre",
+        "LastAction": "ShieldReady",
+        "LessonPhase": "Warning",
+        "CuePosition": null,
+        "CueRole": "Mend",
+        "CueActed": false,
+        "TrainingOnly": true
+      },
+      "pos": [
+        3314,
+        103,
+        1265
+      ]
+    },
+    {
+      "a": {
+        "LessonRole": "Combined",
+        "OwnerUserId": 11732987790,
+        "CueEndsAt": 1791245659.4806783,
+        "LessonStatus": "Active",
+        "LastActionAccepted": true,
+        "Successes": 1,
+        "CueTarget": "centre",
+        "LastAction": "ShieldReady",
+        "LessonPhase": "Warning",
+        "CuePosition": null,
+        "CueRole": "Mend",
+        "CueActed": false,
+        "TrainingOnly": true
+      },
+      "pos": [
+        3314,
+        103,
+        1265
+      ]
+    },
+    {
+      "a": {
+        "LessonRole": "Combined",
+        "OwnerUserId": 11732987790,
+        "CueEndsAt": 1791245663.4806826,
+        "LessonStatus": "Active",
+        "LastActionAccepted": true,
+        "Successes": 1,
+        "CueTarget": "centre",
+        "LastAction": "ShieldReady",
+        "LessonPhase": "Recovery",
+        "CuePosition": null,
+        "CueRole": "Mend",
+        "CueActed": false,
+        "TrainingOnly": true
+      },
+      "pos": [
+        3314,
+        103,
+        1265
+      ]
+    },
+    {
+      "a": {
+        "LessonRole": "Combined",
+        "OwnerUserId": 11732987790,
+        "LessonStatus": "Active",
+        "Successes": 2,
+        "LastActionAccepted": true,
+        "LessonPhase": "Ready",
+        "LastAction": "Recovered",
+        "CueActed": false,
+        "TrainingOnly": true
+      }
+    },
+    {
+      "a": {
+        "LessonRole": "Combined",
+        "OwnerUserId": 11732987790,
+        "LessonStatus": "Active",
+        "Successes": 2,
+        "LastActionAccepted": true,
+        "LessonPhase": "Ready",
+        "LastAction": "Recovered",
+        "CueActed": false,
+        "TrainingOnly": true
+      }
+    },
+    {
+      "a": {
+        "LessonRole": "Combined",
+        "OwnerUserId": 11732987790,
+        "CueEndsAt": 1791245664.8969522,
+        "LessonStatus": "Active",
+        "LastActionAccepted": true,
+        "Successes": 2,
+        "CueTarget": "right",
+        "LastAction": "Recovered",
+        "LessonPhase": "Warning",
+        "CuePosition": null,
+        "CueRole": "Guard",
+        "CueActed": false,
+        "TrainingOnly": true
+      },
+      "pos": [
+        3326,
+        103,
+        1265
+      ]
+    },
+    {
+      "a": {
+        "LessonRole": "Combined",
+        "OwnerUserId": 11732987790,
+        "CueEndsAt": 1791245664.8969421,
+        "LessonStatus": "Active",
+        "LastActionAccepted": true,
+        "Successes": 2,
+        "CueTarget": "right",
+        "LastAction": "ShieldReady",
+        "LessonPhase": "Warning",
+        "CuePosition": null,
+        "CueRole": "Guard",
+        "CueActed": true,
+        "TrainingOnly": true
+      },
+      "pos": [
+        3326,
+        103,
+        1265
+      ]
+    },
+    {
+      "a": {
+        "LessonRole": "Combined",
+        "OwnerUserId": 11732987790,
+        "CueEndsAt": 1791245664.8969445,
+        "LessonStatus": "Active",
+        "LastActionAccepted": true,
+        "Successes": 2,
+        "CueTarget": "right",
+        "LastAction": "ShieldReady",
+        "LessonPhase": "Warning",
+        "CuePosition": null,
+        "CueRole": "Guard",
+        "CueActed": true,
+        "TrainingOnly": true
+      },
+      "pos": [
+        3326,
+        103,
+        1265
+      ]
+    },
+    {
+      "a": {
+        "LessonRole": "Combined",
+        "OwnerUserId": 11732987790,
+        "CueEndsAt": 1791245664.89695,
+        "LessonStatus": "Active",
+        "LastActionAccepted": true,
+        "Successes": 2,
+        "CueTarget": "right",
+        "LastAction": "ShieldReady",
+        "LessonPhase": "Warning",
+        "CuePosition": null,
+        "CueRole": "Guard",
+        "CueActed": true,
+        "TrainingOnly": true
+      },
+      "pos": [
+        3326,
+        103,
+        1265
+      ]
+    },
+    {
+      "a": {
+        "LessonRole": "Combined",
+        "OwnerUserId": 11732987790,
+        "CueEndsAt": 1791245664.896947,
+        "LessonStatus": "Active",
+        "LastActionAccepted": true,
+        "Successes": 2,
+        "CueTarget": "right",
+        "LastAction": "ShieldReady",
+        "LessonPhase": "Warning",
+        "CuePosition": null,
+        "CueRole": "Guard",
+        "CueActed": true,
+        "TrainingOnly": true
+      },
+      "pos": [
+        3326,
+        103,
+        1265
+      ]
+    },
+    {}
+  ],
+  "accepted": [
+    "Puzzle approach 2-1-3 and command post",
+    "Physical Sela supply escort and combined wards",
+    "Three pattern records; Warden avoidance and three release seals with observed zero mistakes; release oath",
+    "90-second ledger recovery, three mandatory backups and 2-1-3 disconnection",
+    "Five voluntary pledges including Orc and combined evacuation wards",
+    "Hall15–17 funded by earned campaign rewards",
+    "Keeper dodge/rescue/release/core phases; zero observed mistakes; objective committed and arena cleaned automatically",
+    "Transform ending and alliance epilogue, final reward claimed"
+  ],
+  "limitations": [
+    "One desktop Memory route; progress is not resumable after Stop",
+    "Bosses are private mechanical lessons with mistake budget, not avatar damage encounters",
+    "Temporary skills use isolated class combat stats; final art/camera/balance/dialogue need polish",
+    "Other approaches/endings, multiplayer, persistence, devices, imports and human approval still pending"
+  ]
+}

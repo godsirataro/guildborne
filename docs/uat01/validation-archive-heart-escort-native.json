@@ -1,0 +1,18 @@
+{
+  "routes": [
+    {
+      "completionCallbacks": 1,
+      "length": 22,
+      "scene": "three_gates"
+    },
+    {
+      "completionCallbacks": 1,
+      "length": 65,
+      "scene": "supply_court"
+    }
+  ],
+  "actualPlayerEscort": false,
+  "syntheticOwnerEvidence": true,
+  "profileWrites": 0,
+  "date": "2026-10-06"
+}

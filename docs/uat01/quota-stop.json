@@ -1,0 +1,10 @@
+{
+  "date": "2026-10-02",
+  "usedPercent": 85,
+  "remainingPercent": 15,
+  "userStopBoundaryPercent": 15,
+  "state": "RESUMED_BY_USER",
+  "resume": "User explicitly requested continuing without the prior15%stop threshold",
+  "newDevelopmentStopped": false,
+  "resumeDate": "2026-10-03"
+}

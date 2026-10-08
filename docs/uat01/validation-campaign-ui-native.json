@@ -1,0 +1,11 @@
+{
+  "scope": "Synthetic Chapter 01 GUI states; no gameplay or profile writes",
+  "views": 40,
+  "languages": ["en", "th"],
+  "widths": [240, 640],
+  "capturedActions": 8,
+  "textBoundsChecks": 392,
+  "profileWrites": 0,
+  "runtimeBinding": false,
+  "checks": ["Two-step guaranteed recruit confirmation", "Changing class clears confirmation", "Busy, level, roster, equipment and expedition claim gates", "Minimum 44px buttons and matching keyboard selectability"]
+}

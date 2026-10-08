@@ -1,0 +1,113 @@
+{
+  "name": "Guildborne_ArtReview",
+  "serveAddress": "127.0.0.1",
+  "tree": {
+    "$className": "DataModel",
+    "ReplicatedStorage": {
+      "$className": "ReplicatedStorage",
+      "Shared": {
+        "$className": "Folder",
+        "Data": {
+          "$className": "Folder",
+          "AdventureTelegraph": {
+            "$path": "src/shared/Data/AdventureTelegraph.luau"
+          },
+          "ItemVisuals": {
+            "$path": "src/shared/Data/ItemVisuals.luau"
+          },
+          "CosmeticVisuals": {
+            "$path": "src/shared/Data/CosmeticVisuals.luau"
+          }
+        }
+      }
+    },
+    "ServerScriptService": {
+      "$className": "ServerScriptService",
+      "Server": {
+        "$className": "Folder",
+        "Services": {
+          "$className": "Folder",
+          "AdventureMapKit": {
+            "$path": "src/server/Services/AdventureMapKit.luau"
+          },
+          "AdventureEnemyKit": {
+            "$path": "src/server/Services/AdventureEnemyKit.luau"
+          },
+          "AdventureScene": {
+            "$path": "src/server/Services/AdventureScene.luau"
+          },
+          "AdventureEncounterPreview": {
+            "$path": "src/server/Services/AdventureEncounterPreview.luau"
+          },
+          "AdventureNavigation": {
+            "$path": "src/server/Services/AdventureNavigation.luau"
+          },
+          "AdventureLocomotion": {
+            "$path": "src/server/Services/AdventureLocomotion.luau"
+          },
+          "HeroVisualKit": {
+            "$path": "src/server/Services/HeroVisualKit.luau"
+          },
+          "CosmeticVisualKit": {
+            "$path": "src/server/Services/CosmeticVisualKit.luau"
+          },
+          "CityInteriorKit": {
+            "$path": "src/server/Services/CityInteriorKit.luau"
+          },
+          "CityCharacterKit": {
+            "$path": "src/server/Services/CityCharacterKit.luau"
+          }
+        },
+        "Systems": {
+          "$className": "Folder",
+          "AdventurePatterns": {
+            "$path": "src/server/Systems/AdventurePatterns.luau"
+          },
+          "AdventureEnemyBrain": {
+            "$path": "src/server/Systems/AdventureEnemyBrain.luau"
+          }
+        },
+        "Config": {
+          "$className": "Folder",
+          "AdventureEncounters": {
+            "$path": "src/server/Config/AdventureEncounters.luau"
+          },
+          "AdventureEnemyProfiles": {
+            "$path": "src/server/Config/AdventureEnemyProfiles.luau"
+          }
+        }
+      },
+      "Review": {
+        "$className": "Folder",
+        "Bootstrap": {
+          "$path": "review/Bootstrap.server.luau"
+        },
+        "ReviewWorld": {
+          "$path": "review/ReviewWorld.luau"
+        },
+        "CityLandmarkKit": {
+          "$path": "review/CityLandmarkKit.luau"
+        },
+        "CityDistrictKit": {
+          "$path": "review/CityDistrictKit.luau"
+        },
+        "NoviceRoadKit": {
+          "$path": "review/NoviceRoadKit.luau"
+        }
+      }
+    },
+    "Workspace": {
+      "$className": "Workspace",
+      "$properties": {
+        "Gravity": 196.2
+      }
+    },
+    "Lighting": {
+      "$className": "Lighting",
+      "$properties": {
+        "ClockTime": 14,
+        "Brightness": 2
+      }
+    }
+  }
+}

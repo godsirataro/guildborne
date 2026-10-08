@@ -1,0 +1,30 @@
+{
+  "cancelDidNotWrite": true,
+  "callbackInvocations": 2,
+  "cacheBypassed": true,
+  "scope": "Injected fake DataStore only; no cloud calls",
+  "metadataPreserved": true,
+  "latestValue": 9,
+  "hashVectors": {
+    "1": {
+      "physicalKey": "g1:dixl6r8r-UPMngVaaat__MP9iYdSf6IpjyjSB5CZ0Kg",
+      "kind": "Slot",
+      "logicalKey": "2"
+    },
+    "2": {
+      "physicalKey": "g1:DML0bMldQv6O6M_D7V4ZOXiD4n3OXLH1oQhlWmkcy_M",
+      "kind": "Guild",
+      "logicalKey": "guild"
+    },
+    "3": {
+      "physicalKey": "g1:C0OUVeKJRLonpiJvoeBBL_7B7pLmO_g-Ms0fSN5QVn4",
+      "kind": "Operation",
+      "logicalKey": "remove:3:a:b:c"
+    },
+    "4": {
+      "physicalKey": "g1:hUSX5L8cTIUWzV-z9caHxaM0JaSAGyHCMLAN1nqZ_uk",
+      "kind": "Operation",
+      "logicalKey": "aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa"
+    }
+  }
+}

@@ -1,0 +1,3 @@
+GBMOVE TELEPORT FIVE PASS [{"distance":7.499893665313721,"class":"Warrior"},{"distance":10.999893188476563,"class":"Archer"},{"distance":17.999893188476564,"class":"Priest"},{"distance":3.9998936653137209,"class":"Knight"},{"distance":14.499893188476563,"class":"Mage"}]
+GBMOVE RESPAWN FIVE PASS
+GBART PASS {"prompts":4,"lights":0,"solidParts":28,"templates":25,"clearRouteSweeps":9,"heroPrompts":5,"particles":0,"parts":424}

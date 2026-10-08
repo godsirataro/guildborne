@@ -1,0 +1,19 @@
+{
+  "status": "PASS",
+  "format": "FBX",
+  "samples": 181,
+  "bones": 16,
+  "meshObjects": 31,
+  "triangles": 2344,
+  "maxGripError": 9.902267292640298e-07,
+  "minimumHeadCenterDistance": 1.4286109905001603,
+  "fixedRootFeet": true,
+  "loopSeams": true,
+  "cutDirection": [
+    -3.4143391758334474e-07,
+    -1.0,
+    0.0
+  ],
+  "gameplayBound": false,
+  "scope": "Geometric contact study; segment clearance does not prove all body/cloth collision, combat timing or animation quality."
+}

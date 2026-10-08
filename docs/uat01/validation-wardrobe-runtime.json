@@ -1,0 +1,19 @@
+{
+  "placeId": 86788611613035,
+  "syntheticProbe": "tests/studio_wardrobe_probe.luau",
+  "outfitCases": 28,
+  "weldedParts": 218,
+  "shouldersFollowArms": true,
+  "ringsFollowHands": true,
+  "reusesUnchanged": true,
+  "repairsMissingVisual": true,
+  "unequipCleanup": true,
+  "standardAvatarProbe": "tests/studio_avatar_outfit_probe.luau",
+  "standardR15ArmorCases": 8,
+  "blankDescription": true,
+  "noPlayerAvatarMutation": true,
+  "noProfileWrites": true,
+  "fixturesRemoved": true,
+  "ownedPlayStopped": true,
+  "arbitraryAvatarClippingAcceptance": "pending"
+}

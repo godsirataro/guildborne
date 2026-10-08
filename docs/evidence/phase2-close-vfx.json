@@ -1,0 +1,20 @@
+{
+  "desktop": {
+    "content": [
+      {
+        "type": "text",
+        "text": "{\"cleaned\":true,\"groups\":{\"Low\":{\"Telegraph\":0,\"trails\":0,\"Primary\":12,\"emitters\":0,\"Detail\":0},\"High\":{\"Telegraph\":0,\"trails\":0,\"Primary\":10,\"emitters\":1,\"Detail\":40}},\"far\":{\"Telegraph\":0,\"trails\":0,\"Primary\":2,\"emitters\":0,\"Detail\":0},\"device\":\"Desktop\",\"culled\":{\"Telegraph\":0,\"trails\":0,\"Primary\":0,\"emitters\":0,\"Detail\":0},\"saturation\":{\"Telegraph\":8,\"trails\":2,\"Primary\":16,\"emitters\":4,\"Detail\":27},\"solo\":{\"Priest.Heal\":{\"Telegraph\":0,\"trails\":0,\"Primary\":0,\"emitters\":0,\"Detail\":30},\"Knight.Taunt\":{\"Telegraph\":0,\"trails\":0,\"Primary\":0,\"emitters\":0,\"Detail\":18},\"Archer.PiercingShot\":{\"Telegraph\":0,\"trails\":1,\"Primary\":0,\"emitters\":0,\"Detail\":15},\"Mage.Fireball\":{\"Telegraph\":0,\"trails\":2,\"Primary\":0,\"emitters\":4,\"Detail\":27},\"Warrior.PowerStrike\":{\"Telegraph\":0,\"trails\":0,\"Primary\":0,\"emitters\":1,\"Detail\":40}}}"
+      }
+    ],
+    "isError": false
+  },
+  "mobile": {
+    "content": [
+      {
+        "type": "text",
+        "text": "{\"cleaned\":true,\"groups\":{\"Low\":{\"Telegraph\":0,\"trails\":0,\"Primary\":12,\"emitters\":0,\"Detail\":0},\"High\":{\"Telegraph\":0,\"trails\":0,\"Primary\":10,\"emitters\":1,\"Detail\":30}},\"far\":{\"Telegraph\":0,\"trails\":0,\"Primary\":2,\"emitters\":0,\"Detail\":0},\"device\":\"Touch\",\"culled\":{\"Telegraph\":0,\"trails\":0,\"Primary\":0,\"emitters\":0,\"Detail\":0},\"saturation\":{\"Telegraph\":8,\"trails\":2,\"Primary\":16,\"emitters\":4,\"Detail\":23},\"solo\":{\"Priest.Heal\":{\"Telegraph\":0,\"trails\":0,\"Primary\":0,\"emitters\":0,\"Detail\":22},\"Knight.Taunt\":{\"Telegraph\":0,\"trails\":0,\"Primary\":0,\"emitters\":0,\"Detail\":16},\"Archer.PiercingShot\":{\"Telegraph\":0,\"trails\":1,\"Primary\":0,\"emitters\":0,\"Detail\":11},\"Mage.Fireball\":{\"Telegraph\":0,\"trails\":2,\"Primary\":0,\"emitters\":4,\"Detail\":23},\"Warrior.PowerStrike\":{\"Telegraph\":0,\"trails\":0,\"Primary\":0,\"emitters\":1,\"Detail\":30}}}"
+      }
+    ],
+    "isError": false
+  }
+}

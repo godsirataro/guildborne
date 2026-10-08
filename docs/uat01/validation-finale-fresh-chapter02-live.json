@@ -1,0 +1,2880 @@
+{
+  "method": "Ordinary keyboard/mouse, navigation speed1, read-only observer; no profile grants or gameplay Remote injection",
+  "snapshot": {
+    "mode": "Studio memory · not saved after Stop",
+    "data": {
+      "adventurers": {
+        "h:1": {
+          "equipmentSlots": {
+            "weapon": "campaign:recruit:1:1"
+          },
+          "stats": {
+            "WeaponBonus": 2,
+            "Defense": 3,
+            "Health": 114,
+            "Attack": 36
+          },
+          "id": "h:1",
+          "classId": "Priest",
+          "xp": 1544,
+          "name": "Sage",
+          "level": 31,
+          "baseStats": {
+            "Defense": 3,
+            "Health": 24,
+            "Attack": 4
+          },
+          "rank": "F"
+        },
+        "a:Knight": {
+          "equipmentSlots": {
+            "weapon": "novice:founder:1"
+          },
+          "stats": {
+            "WeaponBonus": 2,
+            "Defense": 7,
+            "Health": 142,
+            "Attack": 40
+          },
+          "id": "a:Knight",
+          "classId": "Knight",
+          "xp": 1744,
+          "name": "Bram",
+          "level": 35,
+          "baseStats": {
+            "Defense": 7,
+            "Health": 40,
+            "Attack": 4
+          },
+          "rank": "F"
+        }
+      },
+      "expansion": {
+        "actors": [],
+        "nextBuilding": 1,
+        "buildings": [],
+        "themeRights": [],
+        "gatherReady": [],
+        "tower": {
+          "nextRun": 1,
+          "highest": 0,
+          "checkpoint": 0
+        },
+        "gathered": [],
+        "raceChosen": false
+      },
+      "levelCap": 35,
+      "nextHallLevelCap": 40,
+      "settlement": {
+        "nextOffer": 1,
+        "elixirs": 0,
+        "tavernLevel": 1,
+        "nextHero": 2,
+        "journal": [],
+        "nextJob": 1,
+        "jobs": []
+      },
+      "language": "en",
+      "guildLand": {
+        "accessMode": "Private",
+        "plots": {
+          "grove": {
+            "purchased": false,
+            "questEligible": false,
+            "materials": {
+              "herb": 8,
+              "timber": 24
+            },
+            "delivered": [],
+            "purchaseAvailable": false,
+            "status": "QuestLocked",
+            "quests": {
+              "trail_watch": false
+            },
+            "name": "Grove Terrace"
+          },
+          "quarry": {
+            "purchased": false,
+            "questEligible": false,
+            "materials": {
+              "stone": 32,
+              "iron_ore": 16
+            },
+            "delivered": [],
+            "purchaseAvailable": false,
+            "status": "QuestLocked",
+            "quests": {
+              "quarry_patrol": false,
+              "timber_escort": false
+            },
+            "name": "Quarry Terrace"
+          },
+          "summit": {
+            "purchased": false,
+            "questEligible": false,
+            "materials": {
+              "stone": 40,
+              "timber": 40,
+              "iron_ingot": 4
+            },
+            "delivered": [],
+            "purchaseAvailable": false,
+            "status": "QuestLocked",
+            "quests": {
+              "quarry_patrol": false
+            },
+            "name": "Summit Terrace"
+          }
+        }
+      },
+      "inventory": {
+        "equipment": {
+          "novice:class:1": {
+            "binding": "Account",
+            "definitionId": "mage_staff",
+            "upgradeLevel": 0
+          },
+          "campaign:recruit:1:1": {
+            "binding": "Account",
+            "upgradeLevel": 0,
+            "definitionId": "apprentice_staff"
+          },
+          "novice:founder:1": {
+            "binding": "Account",
+            "definitionId": "knight_sword",
+            "upgradeLevel": 0
+          }
+        },
+        "stacks": {
+          "timber": 4,
+          "iron_ore": 2
+        },
+        "nextEquipmentSequence": 1
+      },
+      "character": {
+        "equipmentSlots": {
+          "weapon": "novice:class:1"
+        },
+        "stats": {
+          "WeaponBonus": 2,
+          "Defense": 1,
+          "Health": 122,
+          "Attack": 46
+        },
+        "definitionVersion": 1,
+        "classId": "Mage",
+        "xp": 1731,
+        "raceId": "Human",
+        "tier": 1,
+        "level": 35,
+        "classPathId": "mage:1",
+        "skillId": "fireball"
+      },
+      "hallLevel": 4,
+      "gold": 92,
+      "party": {
+        "adventurerIds": [
+          "a:Knight",
+          "h:1"
+        ]
+      },
+      "rosterCapacity": 5,
+      "quests": {
+        "nextRunSequence": 1,
+        "claimedThrough": 0,
+        "firstClears": []
+      },
+      "progression": {
+        "tutorialStep": "complete",
+        "novice": {
+          "trialClass": "Mage",
+          "founderHero": "a:Knight",
+          "version": 1,
+          "claimed": 6,
+          "objectives": [],
+          "branch": "rescue"
+        },
+        "recruitedClasses": {
+          "Knight": true,
+          "Priest": true
+        },
+        "welcomeSeen": true,
+        "ruleset": "guildborne.progression.2",
+        "campaign": {
+          "version": 1,
+          "hallPermit": 4,
+          "choices": {
+            "choose_joint_review": "workers",
+            "allocate_timber": "workers",
+            "choose_motto": "together",
+            "choose_crest": "compass"
+          },
+          "claimed": 12,
+          "recruitHero": "h:1",
+          "objectives": []
+        },
+        "tutorialCompleted": true,
+        "everEquipped": false
+      }
+    },
+    "revision": 106
+  },
+  "engineerProtection": [
+    {
+      "status": "Active",
+      "health": 3,
+      "blocked": false
+    },
+    {
+      "status": "Active",
+      "health": 3,
+      "blocked": false
+    },
+    {
+      "status": "Active",
+      "pos": [
+        431,
+        100.1500015258789,
+        1398
+      ],
+      "health": 3,
+      "blocked": false
+    },
+    {
+      "status": "Active",
+      "pos": [
+        431,
+        100.1500015258789,
+        1398
+      ],
+      "health": 3,
+      "blocked": false
+    },
+    {
+      "status": "Active",
+      "pos": [
+        431,
+        100.1500015258789,
+        1398
+      ],
+      "health": 3,
+      "blocked": true
+    },
+    {
+      "status": "Active",
+      "pos": [
+        431,
+        100.1500015258789,
+        1398
+      ],
+      "health": 3,
+      "blocked": true
+    },
+    {
+      "status": "Active",
+      "health": 3,
+      "blocked": false
+    },
+    {
+      "status": "Active",
+      "health": 3,
+      "blocked": false
+    },
+    {
+      "status": "Active",
+      "health": 3,
+      "blocked": false
+    },
+    {
+      "status": "Active",
+      "health": 3,
+      "blocked": false
+    },
+    {
+      "status": "Active",
+      "health": 3,
+      "blocked": false
+    },
+    {
+      "status": "Active",
+      "pos": [
+        445,
+        100.1500015258789,
+        1398
+      ],
+      "health": 3,
+      "blocked": false
+    },
+    {
+      "status": "Active",
+      "pos": [
+        445,
+        100.1500015258789,
+        1398
+      ],
+      "health": 3,
+      "blocked": false
+    },
+    {
+      "status": "Active",
+      "pos": [
+        445,
+        100.1500015258789,
+        1398
+      ],
+      "health": 3,
+      "blocked": true
+    },
+    {
+      "status": "Active",
+      "pos": [
+        445,
+        100.1500015258789,
+        1398
+      ],
+      "health": 3,
+      "blocked": true
+    },
+    {
+      "status": "Active",
+      "health": 3,
+      "blocked": false
+    },
+    {
+      "status": "Active",
+      "health": 3,
+      "blocked": false
+    },
+    {
+      "status": "Active",
+      "health": 3,
+      "blocked": false
+    },
+    {
+      "status": "Active",
+      "health": 3,
+      "blocked": false
+    },
+    {
+      "status": "Active",
+      "health": 3,
+      "blocked": false
+    },
+    {
+      "status": "Active",
+      "pos": [
+        459,
+        100.1500015258789,
+        1398
+      ],
+      "health": 3,
+      "blocked": false
+    },
+    {
+      "status": "Active",
+      "pos": [
+        459,
+        100.1500015258789,
+        1398
+      ],
+      "health": 3,
+      "blocked": true
+    },
+    {
+      "status": "Active",
+      "pos": [
+        459,
+        100.1500015258789,
+        1398
+      ],
+      "health": 3,
+      "blocked": true
+    },
+    {
+      "status": "Completed",
+      "health": 3,
+      "blocked": false
+    }
+  ],
+  "workerProtectionInitial": [
+    {
+      "status": "Active",
+      "health": 2,
+      "blocked": false
+    },
+    {
+      "status": "Active",
+      "health": 2,
+      "blocked": false
+    },
+    {
+      "status": "Active",
+      "health": 2,
+      "blocked": false
+    },
+    {
+      "status": "Active",
+      "health": 2,
+      "blocked": false
+    },
+    {
+      "status": "Active",
+      "health": 2,
+      "blocked": false
+    },
+    {
+      "status": "Active",
+      "health": 2,
+      "blocked": false
+    },
+    {
+      "status": "Active",
+      "health": 2,
+      "blocked": false
+    },
+    {
+      "status": "Active",
+      "pos": [
+        445,
+        100.1500015258789,
+        1321
+      ],
+      "health": 2,
+      "blocked": false
+    },
+    {
+      "status": "Active",
+      "pos": [
+        445,
+        100.1500015258789,
+        1321
+      ],
+      "health": 2,
+      "blocked": true
+    },
+    {
+      "status": "Active",
+      "health": 2,
+      "blocked": false
+    },
+    {
+      "status": "Active",
+      "health": 2,
+      "blocked": false
+    },
+    {
+      "status": "Active",
+      "health": 2,
+      "blocked": false
+    },
+    {
+      "status": "Active",
+      "health": 2,
+      "blocked": false
+    },
+    {
+      "status": "Active",
+      "health": 2,
+      "blocked": false
+    },
+    {
+      "status": "Active",
+      "health": 2,
+      "blocked": false
+    },
+    {
+      "status": "Active",
+      "health": 2,
+      "blocked": false
+    },
+    {
+      "status": "Active",
+      "pos": [
+        465,
+        100.1500015258789,
+        1321
+      ],
+      "health": 2,
+      "blocked": false
+    },
+    {
+      "status": "Active",
+      "pos": [
+        465,
+        100.1500015258789,
+        1321
+      ],
+      "health": 2,
+      "blocked": false
+    },
+    {
+      "status": "Active",
+      "pos": [
+        465,
+        100.1500015258789,
+        1321
+      ],
+      "health": 2,
+      "blocked": true
+    },
+    {
+      "status": "Active",
+      "health": 2,
+      "blocked": false
+    },
+    {
+      "status": "Failed",
+      "health": 2,
+      "blocked": false
+    }
+  ],
+  "workerProtectionRetry": [
+    {
+      "status": "Active",
+      "pos": [
+        425,
+        100.1500015258789,
+        1321
+      ],
+      "health": 3,
+      "blocked": true
+    },
+    {
+      "status": "Active",
+      "health": 3,
+      "blocked": false
+    },
+    {
+      "status": "Active",
+      "health": 3,
+      "blocked": false
+    },
+    {
+      "status": "Active",
+      "health": 3,
+      "blocked": false
+    },
+    {
+      "status": "Active",
+      "health": 3,
+      "blocked": false
+    },
+    {
+      "status": "Active",
+      "health": 3,
+      "blocked": false
+    },
+    {
+      "status": "Active",
+      "health": 3,
+      "blocked": false
+    },
+    {
+      "status": "Active",
+      "health": 3,
+      "blocked": false
+    },
+    {
+      "status": "Active",
+      "pos": [
+        445,
+        100.1500015258789,
+        1321
+      ],
+      "health": 3,
+      "blocked": false
+    },
+    {
+      "status": "Active",
+      "pos": [
+        445,
+        100.1500015258789,
+        1321
+      ],
+      "health": 3,
+      "blocked": false
+    },
+    {
+      "status": "Active",
+      "pos": [
+        445,
+        100.1500015258789,
+        1321
+      ],
+      "health": 3,
+      "blocked": true
+    },
+    {
+      "status": "Active",
+      "health": 3,
+      "blocked": false
+    },
+    {
+      "status": "Active",
+      "health": 3,
+      "blocked": false
+    },
+    {
+      "status": "Active",
+      "health": 3,
+      "blocked": false
+    },
+    {
+      "status": "Active",
+      "health": 3,
+      "blocked": false
+    },
+    {
+      "status": "Active",
+      "health": 3,
+      "blocked": false
+    },
+    {
+      "status": "Active",
+      "health": 3,
+      "blocked": false
+    },
+    {
+      "status": "Active",
+      "pos": [
+        465,
+        100.1500015258789,
+        1321
+      ],
+      "health": 3,
+      "blocked": false
+    },
+    {
+      "status": "Active",
+      "pos": [
+        465,
+        100.1500015258789,
+        1321
+      ],
+      "health": 3,
+      "blocked": true
+    },
+    {
+      "status": "Active",
+      "pos": [
+        465,
+        100.1500015258789,
+        1321
+      ],
+      "health": 3,
+      "blocked": true
+    },
+    {
+      "health": 3
+    }
+  ],
+  "borrowedTrial": [
+    {
+      "target": [
+        500,
+        128.39999389648438,
+        1400
+      ],
+      "warning": {
+        "visible": false,
+        "x": 500,
+        "z": 1400
+      },
+      "attributes": {
+        "TrialStatus": "Active",
+        "OwnerUserId": 11732987790,
+        "ReturnLabel": "Leave trial",
+        "PlayerHealth": 122,
+        "AbilityLabel": "Elementalist Art",
+        "DisplayHealth": "HP 122/122 · Training dummy 1600/1600",
+        "BasicLabel": "Basic Attack",
+        "NextBasicAt": 0,
+        "EnemyHealth": 1600,
+        "NextAbilityAt": 0,
+        "NoviceTrialArena": true,
+        "DisplayTitle": "Mage · Ready",
+        "DisplayGoals": "Defeat the opponent 0/1 · Skills used 0/1 · Warnings dodged 0/1",
+        "ClassId": "Mage",
+        "DisplayHint": "Use F/Q or the buttons. Dodge orange warnings."
+      },
+      "position": [
+        500,
+        127.99801635742188,
+        1412
+      ]
+    },
+    {
+      "target": [
+        500,
+        128.39999389648438,
+        1400
+      ],
+      "warning": {
+        "visible": false,
+        "x": 500,
+        "z": 1400
+      },
+      "attributes": {
+        "PlayerHealth": 122,
+        "AbilityLabel": "Elementalist Art",
+        "DisplayHealth": "HP 122/122 · Training dummy 1457/1600",
+        "ActionAt": 1791242572.720903,
+        "DisplayHint": "Use F/Q or the buttons. Dodge orange warnings.",
+        "OwnerUserId": 11732987790,
+        "ReturnLabel": "Leave trial",
+        "ActionEffect": "Basic",
+        "DisplayGoals": "Defeat the opponent 0/1 · Skills used 1/1 · Warnings dodged 0/1",
+        "NextBasicAt": 1791242574.5207944,
+        "ActionTargetPosition": null,
+        "EnemyHealth": 1457,
+        "TrialStatus": "Active",
+        "NextAbilityAt": 1791242582.6206715,
+        "NoviceTrialArena": true,
+        "DisplayTitle": "Mage · Training",
+        "ActionOriginPosition": null,
+        "ClassId": "Mage",
+        "BasicLabel": "Basic Attack"
+      },
+      "position": [
+        500,
+        127.99801635742188,
+        1412
+      ]
+    },
+    {
+      "target": [
+        500,
+        128.39999389648438,
+        1400
+      ],
+      "warning": {
+        "visible": false,
+        "x": 500,
+        "z": 1400
+      },
+      "attributes": {
+        "PlayerHealth": 122,
+        "AbilityLabel": "Elementalist Art",
+        "DisplayHealth": "HP 122/122 · Training dummy 1457/1600",
+        "ActionAt": 1791242572.720903,
+        "DisplayHint": "Your skill is recharging.",
+        "OwnerUserId": 11732987790,
+        "ReturnLabel": "Leave trial",
+        "ActionEffect": "Basic",
+        "DisplayGoals": "Defeat the opponent 0/1 · Skills used 1/1 · Warnings dodged 0/1",
+        "NextBasicAt": 1791242574.520794,
+        "ActionTargetPosition": null,
+        "EnemyHealth": 1457,
+        "TrialStatus": "Active",
+        "NextAbilityAt": 1791242582.6206717,
+        "NoviceTrialArena": true,
+        "DisplayTitle": "Mage · Training",
+        "ActionOriginPosition": null,
+        "ClassId": "Mage",
+        "BasicLabel": "Basic Attack"
+      },
+      "position": [
+        500,
+        127.99801635742188,
+        1412
+      ]
+    },
+    {
+      "target": [
+        500,
+        128.39999389648438,
+        1400
+      ],
+      "warning": {
+        "visible": true,
+        "x": 500,
+        "z": 1412
+      },
+      "attributes": {
+        "PlayerHealth": 122,
+        "AbilityLabel": "Elementalist Art",
+        "DisplayHealth": "HP 122/122 · Training dummy 1457/1600",
+        "ActionAt": 1791242572.720903,
+        "DisplayHint": "Your skill is recharging.",
+        "ActionTargetPosition": null,
+        "OwnerUserId": 11732987790,
+        "ReturnLabel": "Leave trial",
+        "ActionEffect": "Basic",
+        "DisplayGoals": "Defeat the opponent 0/1 · Skills used 1/1 · Warnings dodged 0/1",
+        "NextBasicAt": 0,
+        "EnemyHealth": 1457,
+        "WarningToken": 2506.201040900007,
+        "TrialStatus": "Active",
+        "NextAbilityAt": 1791242582.6206717,
+        "NoviceTrialArena": true,
+        "DisplayTitle": "Mage · Training",
+        "ActionOriginPosition": null,
+        "ClassId": "Mage",
+        "BasicLabel": "Basic Attack"
+      },
+      "position": [
+        500,
+        127.99801635742188,
+        1412
+      ]
+    },
+    {
+      "target": [
+        500,
+        128.39999389648438,
+        1400
+      ],
+      "warning": {
+        "visible": false,
+        "x": 500,
+        "z": 1412
+      },
+      "attributes": {
+        "PlayerHealth": 122,
+        "AbilityLabel": "Elementalist Art",
+        "DisplayHealth": "HP 122/122 · Training dummy 1411/1600",
+        "ActionAt": 1791242575.986829,
+        "DisplayHint": "Use F/Q or the buttons. Dodge orange warnings.",
+        "OwnerUserId": 11732987790,
+        "ReturnLabel": "Leave trial",
+        "ActionEffect": "Basic",
+        "DisplayGoals": "Defeat the opponent 0/1 · Skills used 1/1 · Warnings dodged 1/1",
+        "NextBasicAt": 1791242577.7867365,
+        "ActionTargetPosition": null,
+        "EnemyHealth": 1411,
+        "TrialStatus": "Active",
+        "NextAbilityAt": 1791242582.620671,
+        "NoviceTrialArena": true,
+        "DisplayTitle": "Mage · Training",
+        "ActionOriginPosition": null,
+        "ClassId": "Mage",
+        "BasicLabel": "Basic Attack"
+      },
+      "position": [
+        490.7120361328125,
+        127.99801635742188,
+        1411.9996337890625
+      ]
+    },
+    {
+      "target": [
+        500,
+        128.39999389648438,
+        1400
+      ],
+      "warning": {
+        "visible": false,
+        "x": 500,
+        "z": 1412
+      },
+      "attributes": {
+        "PlayerHealth": 122,
+        "AbilityLabel": "Elementalist Art",
+        "DisplayHealth": "HP 122/122 · Training dummy 1411/1600",
+        "ActionAt": 1791242575.986829,
+        "DisplayHint": "Your skill is recharging.",
+        "OwnerUserId": 11732987790,
+        "ReturnLabel": "Leave trial",
+        "ActionEffect": "Basic",
+        "DisplayGoals": "Defeat the opponent 0/1 · Skills used 1/1 · Warnings dodged 1/1",
+        "NextBasicAt": 0,
+        "ActionTargetPosition": null,
+        "EnemyHealth": 1411,
+        "TrialStatus": "Active",
+        "NextAbilityAt": 1791242582.6206717,
+        "NoviceTrialArena": true,
+        "DisplayTitle": "Mage · Training",
+        "ActionOriginPosition": null,
+        "ClassId": "Mage",
+        "BasicLabel": "Basic Attack"
+      },
+      "position": [
+        499.24298095703125,
+        127.99801635742188,
+        1412
+      ]
+    },
+    {
+      "target": [
+        500,
+        128.39999389648438,
+        1400
+      ],
+      "warning": {
+        "visible": false,
+        "x": 500,
+        "z": 1412
+      },
+      "attributes": {
+        "PlayerHealth": 122,
+        "AbilityLabel": "Elementalist Art",
+        "DisplayHealth": "HP 122/122 · Training dummy 1365/1600",
+        "ActionAt": 1791242578.319752,
+        "DisplayHint": "Use F/Q or the buttons. Dodge orange warnings.",
+        "OwnerUserId": 11732987790,
+        "ReturnLabel": "Leave trial",
+        "ActionEffect": "Basic",
+        "DisplayGoals": "Defeat the opponent 0/1 · Skills used 1/1 · Warnings dodged 1/1",
+        "NextBasicAt": 1791242580.1196496,
+        "ActionTargetPosition": null,
+        "EnemyHealth": 1365,
+        "TrialStatus": "Active",
+        "NextAbilityAt": 1791242582.6206713,
+        "NoviceTrialArena": true,
+        "DisplayTitle": "Mage · Training",
+        "ActionOriginPosition": null,
+        "ClassId": "Mage",
+        "BasicLabel": "Basic Attack"
+      },
+      "position": [
+        499.24298095703125,
+        127.99801635742188,
+        1412
+      ]
+    },
+    {
+      "target": [
+        500,
+        128.39999389648438,
+        1400
+      ],
+      "warning": {
+        "visible": false,
+        "x": 500,
+        "z": 1412
+      },
+      "attributes": {
+        "PlayerHealth": 122,
+        "AbilityLabel": "Elementalist Art",
+        "DisplayHealth": "HP 122/122 · Training dummy 1365/1600",
+        "ActionAt": 1791242578.319752,
+        "DisplayHint": "Your skill is recharging.",
+        "OwnerUserId": 11732987790,
+        "ReturnLabel": "Leave trial",
+        "ActionEffect": "Basic",
+        "DisplayGoals": "Defeat the opponent 0/1 · Skills used 1/1 · Warnings dodged 1/1",
+        "NextBasicAt": 1791242580.1196504,
+        "ActionTargetPosition": null,
+        "EnemyHealth": 1365,
+        "TrialStatus": "Active",
+        "NextAbilityAt": 1791242582.6206717,
+        "NoviceTrialArena": true,
+        "DisplayTitle": "Mage · Training",
+        "ActionOriginPosition": null,
+        "ClassId": "Mage",
+        "BasicLabel": "Basic Attack"
+      },
+      "position": [
+        499.24298095703125,
+        127.99801635742188,
+        1412
+      ]
+    },
+    {
+      "target": [
+        500,
+        128.39999389648438,
+        1400
+      ],
+      "warning": {
+        "visible": true,
+        "x": 499.2421875,
+        "z": 1412
+      },
+      "attributes": {
+        "PlayerHealth": 122,
+        "AbilityLabel": "Elementalist Art",
+        "DisplayHealth": "HP 122/122 · Training dummy 1365/1600",
+        "ActionAt": 1791242578.319752,
+        "DisplayHint": "Your skill is recharging.",
+        "ActionTargetPosition": null,
+        "OwnerUserId": 11732987790,
+        "ReturnLabel": "Leave trial",
+        "ActionEffect": "Basic",
+        "DisplayGoals": "Defeat the opponent 0/1 · Skills used 1/1 · Warnings dodged 1/1",
+        "NextBasicAt": 0,
+        "EnemyHealth": 1365,
+        "WarningToken": 2511.33457810001,
+        "TrialStatus": "Active",
+        "NextAbilityAt": 1791242582.6206715,
+        "NoviceTrialArena": true,
+        "DisplayTitle": "Mage · Training",
+        "ActionOriginPosition": null,
+        "ClassId": "Mage",
+        "BasicLabel": "Basic Attack"
+      },
+      "position": [
+        499.24298095703125,
+        127.99801635742188,
+        1412
+      ]
+    },
+    {
+      "target": [
+        500,
+        128.39999389648438,
+        1400
+      ],
+      "warning": {
+        "visible": false,
+        "x": 499.2421875,
+        "z": 1412
+      },
+      "attributes": {
+        "PlayerHealth": 111,
+        "AbilityLabel": "Elementalist Art",
+        "DisplayHealth": "HP 111/122 · Training dummy 1319/1600",
+        "ActionAt": 1791242581.570587,
+        "DisplayHint": "Use F/Q or the buttons. Dodge orange warnings.",
+        "OwnerUserId": 11732987790,
+        "ReturnLabel": "Leave trial",
+        "ActionEffect": "Basic",
+        "DisplayGoals": "Defeat the opponent 0/1 · Skills used 1/1 · Warnings dodged 1/1",
+        "NextBasicAt": 1791242583.3704963,
+        "ActionTargetPosition": null,
+        "EnemyHealth": 1319,
+        "TrialStatus": "Active",
+        "NextAbilityAt": 1791242582.6206713,
+        "NoviceTrialArena": true,
+        "DisplayTitle": "Mage · Training",
+        "ActionOriginPosition": null,
+        "ClassId": "Mage",
+        "BasicLabel": "Basic Attack"
+      },
+      "position": [
+        509.3118896484375,
+        127.99801635742188,
+        1411.9996337890625
+      ]
+    },
+    {
+      "target": [
+        500,
+        128.39999389648438,
+        1400
+      ],
+      "warning": {
+        "visible": false,
+        "x": 499.2421875,
+        "z": 1412
+      },
+      "attributes": {
+        "PlayerHealth": 111,
+        "AbilityLabel": "Elementalist Art",
+        "DisplayHealth": "HP 111/122 · Training dummy 1222/1600",
+        "ActionAt": 1791242582.836701,
+        "DisplayHint": "Your skill is recharging.",
+        "ActionTargetPosition": null,
+        "OwnerUserId": 11732987790,
+        "ReturnLabel": "Leave trial",
+        "ActionEffect": "Area",
+        "DisplayGoals": "Defeat the opponent 0/1 · Skills used 1/1 · Warnings dodged 1/1",
+        "NextBasicAt": 0,
+        "EnemyHealth": 1222,
+        "ActionAbilityId": "nova",
+        "TrialStatus": "Active",
+        "NextAbilityAt": 1791242592.8366055,
+        "NoviceTrialArena": true,
+        "DisplayTitle": "Mage · Training",
+        "ActionOriginPosition": null,
+        "ClassId": "Mage",
+        "BasicLabel": "Basic Attack"
+      },
+      "position": [
+        500.8184509277344,
+        127.99801635742188,
+        1411.9998779296875
+      ]
+    },
+    {
+      "target": [
+        500,
+        128.39999389648438,
+        1400
+      ],
+      "warning": {
+        "visible": false,
+        "x": 499.2421875,
+        "z": 1412
+      },
+      "attributes": {
+        "PlayerHealth": 111,
+        "AbilityLabel": "Elementalist Art",
+        "DisplayHealth": "HP 111/122 · Training dummy 1176/1600",
+        "ActionAt": 1791242583.802789,
+        "DisplayHint": "Use F/Q or the buttons. Dodge orange warnings.",
+        "OwnerUserId": 11732987790,
+        "ReturnLabel": "Leave trial",
+        "ActionEffect": "Basic",
+        "DisplayGoals": "Defeat the opponent 0/1 · Skills used 1/1 · Warnings dodged 1/1",
+        "NextBasicAt": 1791242585.6026824,
+        "ActionTargetPosition": null,
+        "EnemyHealth": 1176,
+        "TrialStatus": "Active",
+        "NextAbilityAt": 1791242592.8366058,
+        "NoviceTrialArena": true,
+        "DisplayTitle": "Mage · Training",
+        "ActionOriginPosition": null,
+        "ClassId": "Mage",
+        "BasicLabel": "Basic Attack"
+      },
+      "position": [
+        500.8184509277344,
+        127.99801635742188,
+        1411.9998779296875
+      ]
+    },
+    {
+      "target": [
+        500,
+        128.39999389648438,
+        1400
+      ],
+      "warning": {
+        "visible": true,
+        "x": 500.8203125,
+        "z": 1412
+      },
+      "attributes": {
+        "PlayerHealth": 111,
+        "AbilityLabel": "Elementalist Art",
+        "DisplayHealth": "HP 111/122 · Training dummy 1176/1600",
+        "ActionAt": 1791242583.802789,
+        "DisplayHint": "Your skill is recharging.",
+        "ActionTargetPosition": null,
+        "OwnerUserId": 11732987790,
+        "ReturnLabel": "Leave trial",
+        "ActionEffect": "Basic",
+        "DisplayGoals": "Defeat the opponent 0/1 · Skills used 1/1 · Warnings dodged 1/1",
+        "NextBasicAt": 1791242585.6026824,
+        "EnemyHealth": 1176,
+        "WarningToken": 2516.5349981000036,
+        "TrialStatus": "Active",
+        "NextAbilityAt": 1791242592.8366053,
+        "NoviceTrialArena": true,
+        "DisplayTitle": "Mage · Training",
+        "ActionOriginPosition": null,
+        "ClassId": "Mage",
+        "BasicLabel": "Basic Attack"
+      },
+      "position": [
+        500.8184509277344,
+        127.99801635742188,
+        1411.9998779296875
+      ]
+    },
+    {
+      "target": [
+        500,
+        128.39999389648438,
+        1400
+      ],
+      "warning": {
+        "visible": false,
+        "x": 500.8203125,
+        "z": 1412
+      },
+      "attributes": {
+        "PlayerHealth": 111,
+        "AbilityLabel": "Elementalist Art",
+        "DisplayHealth": "HP 111/122 · Training dummy 1130/1600",
+        "ActionAt": 1791242586.252687,
+        "DisplayHint": "Use F/Q or the buttons. Dodge orange warnings.",
+        "OwnerUserId": 11732987790,
+        "ReturnLabel": "Leave trial",
+        "ActionEffect": "Basic",
+        "DisplayGoals": "Defeat the opponent 0/1 · Skills used 1/1 · Warnings dodged 1/1",
+        "NextBasicAt": 1791242588.0526042,
+        "ActionTargetPosition": null,
+        "EnemyHealth": 1130,
+        "TrialStatus": "Active",
+        "NextAbilityAt": 1791242592.8366053,
+        "NoviceTrialArena": true,
+        "DisplayTitle": "Mage · Training",
+        "ActionOriginPosition": null,
+        "ClassId": "Mage",
+        "BasicLabel": "Basic Attack"
+      },
+      "position": [
+        490.65380859375,
+        127.99801635742188,
+        1412.0003662109375
+      ]
+    },
+    {
+      "target": [
+        500,
+        128.39999389648438,
+        1400
+      ],
+      "warning": {
+        "visible": false,
+        "x": 500.8203125,
+        "z": 1412
+      },
+      "attributes": {
+        "PlayerHealth": 111,
+        "AbilityLabel": "Elementalist Art",
+        "DisplayHealth": "HP 111/122 · Training dummy 1130/1600",
+        "ActionAt": 1791242586.252687,
+        "DisplayHint": "Your skill is recharging.",
+        "OwnerUserId": 11732987790,
+        "ReturnLabel": "Leave trial",
+        "ActionEffect": "Basic",
+        "DisplayGoals": "Defeat the opponent 0/1 · Skills used 1/1 · Warnings dodged 1/1",
+        "NextBasicAt": 0,
+        "ActionTargetPosition": null,
+        "EnemyHealth": 1130,
+        "TrialStatus": "Active",
+        "NextAbilityAt": 1791242592.8366055,
+        "NoviceTrialArena": true,
+        "DisplayTitle": "Mage · Training",
+        "ActionOriginPosition": null,
+        "ClassId": "Mage",
+        "BasicLabel": "Basic Attack"
+      },
+      "position": [
+        499.32586669921875,
+        127.99801635742188,
+        1411.9998779296875
+      ]
+    },
+    {
+      "target": [
+        500,
+        128.39999389648438,
+        1400
+      ],
+      "warning": {
+        "visible": false,
+        "x": 500.8203125,
+        "z": 1412
+      },
+      "attributes": {
+        "PlayerHealth": 111,
+        "AbilityLabel": "Elementalist Art",
+        "DisplayHealth": "HP 111/122 · Training dummy 1084/1600",
+        "ActionAt": 1791242588.60253,
+        "DisplayHint": "Use F/Q or the buttons. Dodge orange warnings.",
+        "OwnerUserId": 11732987790,
+        "ReturnLabel": "Leave trial",
+        "ActionEffect": "Basic",
+        "DisplayGoals": "Defeat the opponent 0/1 · Skills used 1/1 · Warnings dodged 1/1",
+        "NextBasicAt": 1791242590.4024587,
+        "ActionTargetPosition": null,
+        "EnemyHealth": 1084,
+        "TrialStatus": "Active",
+        "NextAbilityAt": 1791242592.836605,
+        "NoviceTrialArena": true,
+        "DisplayTitle": "Mage · Training",
+        "ActionOriginPosition": null,
+        "ClassId": "Mage",
+        "BasicLabel": "Basic Attack"
+      },
+      "position": [
+        499.32586669921875,
+        127.99801635742188,
+        1411.9998779296875
+      ]
+    },
+    {
+      "target": [
+        500,
+        128.39999389648438,
+        1400
+      ],
+      "warning": {
+        "visible": false,
+        "x": 500.8203125,
+        "z": 1412
+      },
+      "attributes": {
+        "PlayerHealth": 111,
+        "AbilityLabel": "Elementalist Art",
+        "DisplayHealth": "HP 111/122 · Training dummy 1084/1600",
+        "ActionAt": 1791242588.60253,
+        "DisplayHint": "Your skill is recharging.",
+        "OwnerUserId": 11732987790,
+        "ReturnLabel": "Leave trial",
+        "ActionEffect": "Basic",
+        "DisplayGoals": "Defeat the opponent 0/1 · Skills used 1/1 · Warnings dodged 1/1",
+        "NextBasicAt": 1791242590.4024587,
+        "ActionTargetPosition": null,
+        "EnemyHealth": 1084,
+        "TrialStatus": "Active",
+        "NextAbilityAt": 1791242592.8366055,
+        "NoviceTrialArena": true,
+        "DisplayTitle": "Mage · Training",
+        "ActionOriginPosition": null,
+        "ClassId": "Mage",
+        "BasicLabel": "Basic Attack"
+      },
+      "position": [
+        499.32586669921875,
+        127.99801635742188,
+        1411.9998779296875
+      ]
+    },
+    {
+      "target": [
+        500,
+        128.39999389648438,
+        1400
+      ],
+      "warning": {
+        "visible": true,
+        "x": 499.32421875,
+        "z": 1412
+      },
+      "attributes": {
+        "PlayerHealth": 111,
+        "AbilityLabel": "Elementalist Art",
+        "DisplayHealth": "HP 111/122 · Training dummy 1038/1600",
+        "ActionAt": 1791242590.403399,
+        "DisplayHint": "Use F/Q or the buttons. Dodge orange warnings.",
+        "ActionTargetPosition": null,
+        "OwnerUserId": 11732987790,
+        "ReturnLabel": "Leave trial",
+        "ActionEffect": "Basic",
+        "DisplayGoals": "Defeat the opponent 0/1 · Skills used 1/1 · Warnings dodged 1/1",
+        "NextBasicAt": 1791242592.2033281,
+        "EnemyHealth": 1038,
+        "WarningToken": 2521.634487800009,
+        "TrialStatus": "Active",
+        "NextAbilityAt": 1791242592.8366048,
+        "NoviceTrialArena": true,
+        "DisplayTitle": "Mage · Training",
+        "ActionOriginPosition": null,
+        "ClassId": "Mage",
+        "BasicLabel": "Basic Attack"
+      },
+      "position": [
+        499.32586669921875,
+        127.99801635742188,
+        1411.9998779296875
+      ]
+    },
+    {
+      "target": [
+        500,
+        128.39999389648438,
+        1400
+      ],
+      "warning": {
+        "visible": false,
+        "x": 499.32421875,
+        "z": 1412
+      },
+      "attributes": {
+        "PlayerHealth": 100,
+        "AbilityLabel": "Elementalist Art",
+        "DisplayHealth": "HP 100/122 · Training dummy 1038/1600",
+        "ActionAt": 1791242590.403399,
+        "DisplayHint": "Your skill is recharging.",
+        "OwnerUserId": 11732987790,
+        "ReturnLabel": "Leave trial",
+        "ActionEffect": "Basic",
+        "DisplayGoals": "Defeat the opponent 0/1 · Skills used 1/1 · Warnings dodged 1/1",
+        "NextBasicAt": 0,
+        "ActionTargetPosition": null,
+        "EnemyHealth": 1038,
+        "TrialStatus": "Active",
+        "NextAbilityAt": 1791242592.8366053,
+        "NoviceTrialArena": true,
+        "DisplayTitle": "Mage · Training",
+        "ActionOriginPosition": null,
+        "ClassId": "Mage",
+        "BasicLabel": "Basic Attack"
+      },
+      "position": [
+        509.12811279296875,
+        127.99801635742188,
+        1411.9998779296875
+      ]
+    },
+    {
+      "target": [
+        500,
+        128.39999389648438,
+        1400
+      ],
+      "warning": {
+        "visible": false,
+        "x": 499.32421875,
+        "z": 1412
+      },
+      "attributes": {
+        "PlayerHealth": 100,
+        "AbilityLabel": "Elementalist Art",
+        "DisplayHealth": "HP 100/122 · Training dummy 895/1600",
+        "ActionAt": 1791242593.369553,
+        "DisplayHint": "Use F/Q or the buttons. Dodge orange warnings.",
+        "OwnerUserId": 11732987790,
+        "ReturnLabel": "Leave trial",
+        "ActionEffect": "Basic",
+        "DisplayGoals": "Defeat the opponent 0/1 · Skills used 1/1 · Warnings dodged 1/1",
+        "NextBasicAt": 1791242595.1694593,
+        "ActionTargetPosition": null,
+        "EnemyHealth": 895,
+        "TrialStatus": "Active",
+        "NextAbilityAt": 1791242603.2523367,
+        "NoviceTrialArena": true,
+        "DisplayTitle": "Mage · Training",
+        "ActionOriginPosition": null,
+        "ClassId": "Mage",
+        "BasicLabel": "Basic Attack"
+      },
+      "position": [
+        500.83477783203125,
+        127.99801635742188,
+        1412.0001220703125
+      ]
+    },
+    {
+      "target": [
+        500,
+        128.39999389648438,
+        1400
+      ],
+      "warning": {
+        "visible": false,
+        "x": 499.32421875,
+        "z": 1412
+      },
+      "attributes": {
+        "PlayerHealth": 100,
+        "AbilityLabel": "Elementalist Art",
+        "DisplayHealth": "HP 100/122 · Training dummy 895/1600",
+        "ActionAt": 1791242593.369553,
+        "DisplayHint": "Your skill is recharging.",
+        "OwnerUserId": 11732987790,
+        "ReturnLabel": "Leave trial",
+        "ActionEffect": "Basic",
+        "DisplayGoals": "Defeat the opponent 0/1 · Skills used 1/1 · Warnings dodged 1/1",
+        "NextBasicAt": 1791242595.1694593,
+        "ActionTargetPosition": null,
+        "EnemyHealth": 895,
+        "TrialStatus": "Active",
+        "NextAbilityAt": 1791242603.252337,
+        "NoviceTrialArena": true,
+        "DisplayTitle": "Mage · Training",
+        "ActionOriginPosition": null,
+        "ClassId": "Mage",
+        "BasicLabel": "Basic Attack"
+      },
+      "position": [
+        500.83477783203125,
+        127.99801635742188,
+        1412.0001220703125
+      ]
+    },
+    {
+      "target": [
+        500,
+        128.39999389648438,
+        1400
+      ],
+      "warning": {
+        "visible": true,
+        "x": 500.8359375,
+        "z": 1412
+      },
+      "attributes": {
+        "PlayerHealth": 100,
+        "AbilityLabel": "Elementalist Art",
+        "DisplayHealth": "HP 100/122 · Training dummy 895/1600",
+        "ActionAt": 1791242593.369553,
+        "DisplayHint": "Your skill is recharging.",
+        "ActionTargetPosition": null,
+        "OwnerUserId": 11732987790,
+        "ReturnLabel": "Leave trial",
+        "ActionEffect": "Basic",
+        "DisplayGoals": "Defeat the opponent 0/1 · Skills used 1/1 · Warnings dodged 1/1",
+        "NextBasicAt": 0,
+        "EnemyHealth": 895,
+        "WarningToken": 2526.6671241000004,
+        "TrialStatus": "Active",
+        "NextAbilityAt": 1791242603.252337,
+        "NoviceTrialArena": true,
+        "DisplayTitle": "Mage · Training",
+        "ActionOriginPosition": null,
+        "ClassId": "Mage",
+        "BasicLabel": "Basic Attack"
+      },
+      "position": [
+        500.83477783203125,
+        127.99801635742188,
+        1412.0001220703125
+      ]
+    },
+    {
+      "target": [
+        500,
+        128.39999389648438,
+        1400
+      ],
+      "warning": {
+        "visible": false,
+        "x": 500.8359375,
+        "z": 1412
+      },
+      "attributes": {
+        "PlayerHealth": 100,
+        "AbilityLabel": "Elementalist Art",
+        "DisplayHealth": "HP 100/122 · Training dummy 849/1600",
+        "ActionAt": 1791242596.670402,
+        "DisplayHint": "Use F/Q or the buttons. Dodge orange warnings.",
+        "OwnerUserId": 11732987790,
+        "ReturnLabel": "Leave trial",
+        "ActionEffect": "Basic",
+        "DisplayGoals": "Defeat the opponent 0/1 · Skills used 1/1 · Warnings dodged 1/1",
+        "NextBasicAt": 1791242598.470301,
+        "ActionTargetPosition": null,
+        "EnemyHealth": 849,
+        "TrialStatus": "Active",
+        "NextAbilityAt": 1791242603.252337,
+        "NoviceTrialArena": true,
+        "DisplayTitle": "Mage · Training",
+        "ActionOriginPosition": null,
+        "ClassId": "Mage",
+        "BasicLabel": "Basic Attack"
+      },
+      "position": [
+        490.803466796875,
+        127.99801635742188,
+        1411.9996337890625
+      ]
+    },
+    {
+      "target": [
+        500,
+        128.39999389648438,
+        1400
+      ],
+      "warning": {
+        "visible": false,
+        "x": 500.8359375,
+        "z": 1412
+      },
+      "attributes": {
+        "PlayerHealth": 100,
+        "AbilityLabel": "Elementalist Art",
+        "DisplayHealth": "HP 100/122 · Training dummy 849/1600",
+        "ActionAt": 1791242596.670402,
+        "DisplayHint": "Your skill is recharging.",
+        "OwnerUserId": 11732987790,
+        "ReturnLabel": "Leave trial",
+        "ActionEffect": "Basic",
+        "DisplayGoals": "Defeat the opponent 0/1 · Skills used 1/1 · Warnings dodged 1/1",
+        "NextBasicAt": 0,
+        "ActionTargetPosition": null,
+        "EnemyHealth": 849,
+        "TrialStatus": "Active",
+        "NextAbilityAt": 1791242603.252337,
+        "NoviceTrialArena": true,
+        "DisplayTitle": "Mage · Training",
+        "ActionOriginPosition": null,
+        "ClassId": "Mage",
+        "BasicLabel": "Basic Attack"
+      },
+      "position": [
+        499.36346435546875,
+        127.99801635742188,
+        1411.9998779296875
+      ]
+    },
+    {
+      "target": [
+        500,
+        128.39999389648438,
+        1400
+      ],
+      "warning": {
+        "visible": false,
+        "x": 500.8359375,
+        "z": 1412
+      },
+      "attributes": {
+        "PlayerHealth": 100,
+        "AbilityLabel": "Elementalist Art",
+        "DisplayHealth": "HP 100/122 · Training dummy 803/1600",
+        "ActionAt": 1791242598.886405,
+        "DisplayHint": "Use F/Q or the buttons. Dodge orange warnings.",
+        "OwnerUserId": 11732987790,
+        "ReturnLabel": "Leave trial",
+        "ActionEffect": "Basic",
+        "DisplayGoals": "Defeat the opponent 0/1 · Skills used 1/1 · Warnings dodged 1/1",
+        "NextBasicAt": 1791242600.6863055,
+        "ActionTargetPosition": null,
+        "EnemyHealth": 803,
+        "TrialStatus": "Active",
+        "NextAbilityAt": 1791242603.252337,
+        "NoviceTrialArena": true,
+        "DisplayTitle": "Mage · Training",
+        "ActionOriginPosition": null,
+        "ClassId": "Mage",
+        "BasicLabel": "Basic Attack"
+      },
+      "position": [
+        499.36346435546875,
+        127.99801635742188,
+        1411.9998779296875
+      ]
+    },
+    {
+      "target": [
+        500,
+        128.39999389648438,
+        1400
+      ],
+      "warning": {
+        "visible": false,
+        "x": 500.8359375,
+        "z": 1412
+      },
+      "attributes": {
+        "PlayerHealth": 100,
+        "AbilityLabel": "Elementalist Art",
+        "DisplayHealth": "HP 100/122 · Training dummy 803/1600",
+        "ActionAt": 1791242598.886405,
+        "DisplayHint": "Your skill is recharging.",
+        "OwnerUserId": 11732987790,
+        "ReturnLabel": "Leave trial",
+        "ActionEffect": "Basic",
+        "DisplayGoals": "Defeat the opponent 0/1 · Skills used 1/1 · Warnings dodged 1/1",
+        "NextBasicAt": 1791242600.6863062,
+        "ActionTargetPosition": null,
+        "EnemyHealth": 803,
+        "TrialStatus": "Active",
+        "NextAbilityAt": 1791242603.2523375,
+        "NoviceTrialArena": true,
+        "DisplayTitle": "Mage · Training",
+        "ActionOriginPosition": null,
+        "ClassId": "Mage",
+        "BasicLabel": "Basic Attack"
+      },
+      "position": [
+        499.36346435546875,
+        127.99801635742188,
+        1411.9998779296875
+      ]
+    },
+    {
+      "target": [
+        500,
+        128.39999389648438,
+        1400
+      ],
+      "warning": {
+        "visible": true,
+        "x": 499.36328125,
+        "z": 1412
+      },
+      "attributes": {
+        "PlayerHealth": 100,
+        "AbilityLabel": "Elementalist Art",
+        "DisplayHealth": "HP 100/122 · Training dummy 803/1600",
+        "ActionAt": 1791242598.886405,
+        "DisplayHint": "Your skill is recharging.",
+        "ActionTargetPosition": null,
+        "OwnerUserId": 11732987790,
+        "ReturnLabel": "Leave trial",
+        "ActionEffect": "Basic",
+        "DisplayGoals": "Defeat the opponent 0/1 · Skills used 1/1 · Warnings dodged 1/1",
+        "NextBasicAt": 0,
+        "EnemyHealth": 803,
+        "WarningToken": 2531.850321100006,
+        "TrialStatus": "Active",
+        "NextAbilityAt": 1791242603.252337,
+        "NoviceTrialArena": true,
+        "DisplayTitle": "Mage · Training",
+        "ActionOriginPosition": null,
+        "ClassId": "Mage",
+        "BasicLabel": "Basic Attack"
+      },
+      "position": [
+        499.36346435546875,
+        127.99801635742188,
+        1411.9998779296875
+      ]
+    },
+    {
+      "target": [
+        500,
+        128.39999389648438,
+        1400
+      ],
+      "warning": {
+        "visible": false,
+        "x": 499.36328125,
+        "z": 1412
+      },
+      "attributes": {
+        "PlayerHealth": 89,
+        "AbilityLabel": "Elementalist Art",
+        "DisplayHealth": "HP 89/122 · Training dummy 757/1600",
+        "ActionAt": 1791242602.152316,
+        "DisplayHint": "Use F/Q or the buttons. Dodge orange warnings.",
+        "OwnerUserId": 11732987790,
+        "ReturnLabel": "Leave trial",
+        "ActionEffect": "Basic",
+        "DisplayGoals": "Defeat the opponent 0/1 · Skills used 1/1 · Warnings dodged 1/1",
+        "NextBasicAt": 1791242603.952232,
+        "ActionTargetPosition": null,
+        "EnemyHealth": 757,
+        "TrialStatus": "Active",
+        "NextAbilityAt": 1791242603.252337,
+        "NoviceTrialArena": true,
+        "DisplayTitle": "Mage · Training",
+        "ActionOriginPosition": null,
+        "ClassId": "Mage",
+        "BasicLabel": "Basic Attack"
+      },
+      "position": [
+        509.28265380859375,
+        127.99801635742188,
+        1412.0003662109375
+      ]
+    },
+    {
+      "target": [
+        500,
+        128.39999389648438,
+        1400
+      ],
+      "warning": {
+        "visible": false,
+        "x": 499.36328125,
+        "z": 1412
+      },
+      "attributes": {
+        "PlayerHealth": 89,
+        "AbilityLabel": "Elementalist Art",
+        "DisplayHealth": "HP 89/122 · Training dummy 660/1600",
+        "ActionAt": 1791242603.453486,
+        "DisplayHint": "Your skill is recharging.",
+        "ActionTargetPosition": null,
+        "OwnerUserId": 11732987790,
+        "ReturnLabel": "Leave trial",
+        "ActionEffect": "Area",
+        "DisplayGoals": "Defeat the opponent 0/1 · Skills used 1/1 · Warnings dodged 1/1",
+        "NextBasicAt": 0,
+        "EnemyHealth": 660,
+        "ActionAbilityId": "nova",
+        "TrialStatus": "Active",
+        "NextAbilityAt": 1791242613.453376,
+        "NoviceTrialArena": true,
+        "DisplayTitle": "Mage · Training",
+        "ActionOriginPosition": null,
+        "ClassId": "Mage",
+        "BasicLabel": "Basic Attack"
+      },
+      "position": [
+        500.6369934082031,
+        127.99801635742188,
+        1412
+      ]
+    },
+    {
+      "target": [
+        500,
+        128.39999389648438,
+        1400
+      ],
+      "warning": {
+        "visible": false,
+        "x": 499.36328125,
+        "z": 1412
+      },
+      "attributes": {
+        "PlayerHealth": 89,
+        "AbilityLabel": "Elementalist Art",
+        "DisplayHealth": "HP 89/122 · Training dummy 614/1600",
+        "ActionAt": 1791242604.41937,
+        "DisplayHint": "Use F/Q or the buttons. Dodge orange warnings.",
+        "OwnerUserId": 11732987790,
+        "ReturnLabel": "Leave trial",
+        "ActionEffect": "Basic",
+        "DisplayGoals": "Defeat the opponent 0/1 · Skills used 1/1 · Warnings dodged 1/1",
+        "NextBasicAt": 1791242606.219284,
+        "ActionTargetPosition": null,
+        "EnemyHealth": 614,
+        "TrialStatus": "Active",
+        "NextAbilityAt": 1791242613.4533772,
+        "NoviceTrialArena": true,
+        "DisplayTitle": "Mage · Training",
+        "ActionOriginPosition": null,
+        "ClassId": "Mage",
+        "BasicLabel": "Basic Attack"
+      },
+      "position": [
+        500.6369934082031,
+        127.99801635742188,
+        1412
+      ]
+    },
+    {
+      "target": [
+        500,
+        128.39999389648438,
+        1400
+      ],
+      "warning": {
+        "visible": true,
+        "x": 500.63671875,
+        "z": 1412
+      },
+      "attributes": {
+        "PlayerHealth": 89,
+        "AbilityLabel": "Elementalist Art",
+        "DisplayHealth": "HP 89/122 · Training dummy 614/1600",
+        "ActionAt": 1791242604.41937,
+        "DisplayHint": "Your skill is recharging.",
+        "ActionTargetPosition": null,
+        "OwnerUserId": 11732987790,
+        "ReturnLabel": "Leave trial",
+        "ActionEffect": "Basic",
+        "DisplayGoals": "Defeat the opponent 0/1 · Skills used 1/1 · Warnings dodged 1/1",
+        "NextBasicAt": 1791242606.219284,
+        "EnemyHealth": 614,
+        "WarningToken": 2536.9665482000128,
+        "TrialStatus": "Active",
+        "NextAbilityAt": 1791242613.4533763,
+        "NoviceTrialArena": true,
+        "DisplayTitle": "Mage · Training",
+        "ActionOriginPosition": null,
+        "ClassId": "Mage",
+        "BasicLabel": "Basic Attack"
+      },
+      "position": [
+        500.6369934082031,
+        127.99801635742188,
+        1412
+      ]
+    },
+    {
+      "target": [
+        500,
+        128.39999389648438,
+        1400
+      ],
+      "warning": {
+        "visible": false,
+        "x": 500.63671875,
+        "z": 1412
+      },
+      "attributes": {
+        "PlayerHealth": 89,
+        "AbilityLabel": "Elementalist Art",
+        "DisplayHealth": "HP 89/122 · Training dummy 568/1600",
+        "ActionAt": 1791242606.836125,
+        "DisplayHint": "Use F/Q or the buttons. Dodge orange warnings.",
+        "OwnerUserId": 11732987790,
+        "ReturnLabel": "Leave trial",
+        "ActionEffect": "Basic",
+        "DisplayGoals": "Defeat the opponent 0/1 · Skills used 1/1 · Warnings dodged 1/1",
+        "NextBasicAt": 1791242608.6360393,
+        "ActionTargetPosition": null,
+        "EnemyHealth": 568,
+        "TrialStatus": "Active",
+        "NextAbilityAt": 1791242613.453377,
+        "NoviceTrialArena": true,
+        "DisplayTitle": "Mage · Training",
+        "ActionOriginPosition": null,
+        "ClassId": "Mage",
+        "BasicLabel": "Basic Attack"
+      },
+      "position": [
+        490.6802062988281,
+        127.99801635742188,
+        1411.9998779296875
+      ]
+    },
+    {
+      "target": [
+        500,
+        128.39999389648438,
+        1400
+      ],
+      "warning": {
+        "visible": false,
+        "x": 500.63671875,
+        "z": 1412
+      },
+      "attributes": {
+        "PlayerHealth": 89,
+        "AbilityLabel": "Elementalist Art",
+        "DisplayHealth": "HP 89/122 · Training dummy 568/1600",
+        "ActionAt": 1791242606.836125,
+        "DisplayHint": "Your skill is recharging.",
+        "OwnerUserId": 11732987790,
+        "ReturnLabel": "Leave trial",
+        "ActionEffect": "Basic",
+        "DisplayGoals": "Defeat the opponent 0/1 · Skills used 1/1 · Warnings dodged 1/1",
+        "NextBasicAt": 0,
+        "ActionTargetPosition": null,
+        "EnemyHealth": 568,
+        "TrialStatus": "Active",
+        "NextAbilityAt": 1791242613.4533763,
+        "NoviceTrialArena": true,
+        "DisplayTitle": "Mage · Training",
+        "ActionOriginPosition": null,
+        "ClassId": "Mage",
+        "BasicLabel": "Basic Attack"
+      },
+      "position": [
+        499.2402038574219,
+        127.99801635742188,
+        1412
+      ]
+    },
+    {
+      "target": [
+        500,
+        128.39999389648438,
+        1400
+      ],
+      "warning": {
+        "visible": false,
+        "x": 500.63671875,
+        "z": 1412
+      },
+      "attributes": {
+        "PlayerHealth": 89,
+        "AbilityLabel": "Elementalist Art",
+        "DisplayHealth": "HP 89/122 · Training dummy 522/1600",
+        "ActionAt": 1791242609.118684,
+        "DisplayHint": "Use F/Q or the buttons. Dodge orange warnings.",
+        "OwnerUserId": 11732987790,
+        "ReturnLabel": "Leave trial",
+        "ActionEffect": "Basic",
+        "DisplayGoals": "Defeat the opponent 0/1 · Skills used 1/1 · Warnings dodged 1/1",
+        "NextBasicAt": 1791242610.9185998,
+        "ActionTargetPosition": null,
+        "EnemyHealth": 522,
+        "TrialStatus": "Active",
+        "NextAbilityAt": 1791242613.4533763,
+        "NoviceTrialArena": true,
+        "DisplayTitle": "Mage · Training",
+        "ActionOriginPosition": null,
+        "ClassId": "Mage",
+        "BasicLabel": "Basic Attack"
+      },
+      "position": [
+        499.2402038574219,
+        127.99801635742188,
+        1412
+      ]
+    },
+    {
+      "target": [
+        500,
+        128.39999389648438,
+        1400
+      ],
+      "warning": {
+        "visible": false,
+        "x": 500.63671875,
+        "z": 1412
+      },
+      "attributes": {
+        "PlayerHealth": 89,
+        "AbilityLabel": "Elementalist Art",
+        "DisplayHealth": "HP 89/122 · Training dummy 522/1600",
+        "ActionAt": 1791242609.118684,
+        "DisplayHint": "Your skill is recharging.",
+        "OwnerUserId": 11732987790,
+        "ReturnLabel": "Leave trial",
+        "ActionEffect": "Basic",
+        "DisplayGoals": "Defeat the opponent 0/1 · Skills used 1/1 · Warnings dodged 1/1",
+        "NextBasicAt": 1791242610.9186,
+        "ActionTargetPosition": null,
+        "EnemyHealth": 522,
+        "TrialStatus": "Active",
+        "NextAbilityAt": 1791242613.4533763,
+        "NoviceTrialArena": true,
+        "DisplayTitle": "Mage · Training",
+        "ActionOriginPosition": null,
+        "ClassId": "Mage",
+        "BasicLabel": "Basic Attack"
+      },
+      "position": [
+        499.2402038574219,
+        127.99801635742188,
+        1412
+      ]
+    },
+    {
+      "target": [
+        500,
+        128.39999389648438,
+        1400
+      ],
+      "warning": {
+        "visible": true,
+        "x": 499.23828125,
+        "z": 1412
+      },
+      "attributes": {
+        "PlayerHealth": 89,
+        "AbilityLabel": "Elementalist Art",
+        "DisplayHealth": "HP 89/122 · Training dummy 522/1600",
+        "ActionAt": 1791242609.118684,
+        "DisplayHint": "Your skill is recharging.",
+        "ActionTargetPosition": null,
+        "OwnerUserId": 11732987790,
+        "ReturnLabel": "Leave trial",
+        "ActionEffect": "Basic",
+        "DisplayGoals": "Defeat the opponent 0/1 · Skills used 1/1 · Warnings dodged 1/1",
+        "NextBasicAt": 0,
+        "EnemyHealth": 522,
+        "WarningToken": 2542.0993302999996,
+        "TrialStatus": "Active",
+        "NextAbilityAt": 1791242613.4533765,
+        "NoviceTrialArena": true,
+        "DisplayTitle": "Mage · Training",
+        "ActionOriginPosition": null,
+        "ClassId": "Mage",
+        "BasicLabel": "Basic Attack"
+      },
+      "position": [
+        499.2402038574219,
+        127.99801635742188,
+        1412
+      ]
+    },
+    {
+      "target": [
+        500,
+        128.39999389648438,
+        1400
+      ],
+      "warning": {
+        "visible": false,
+        "x": 499.23828125,
+        "z": 1412
+      },
+      "attributes": {
+        "PlayerHealth": 78,
+        "AbilityLabel": "Elementalist Art",
+        "DisplayHealth": "HP 78/122 · Training dummy 476/1600",
+        "ActionAt": 1791242612.368755,
+        "DisplayHint": "Use F/Q or the buttons. Dodge orange warnings.",
+        "OwnerUserId": 11732987790,
+        "ReturnLabel": "Leave trial",
+        "ActionEffect": "Basic",
+        "DisplayGoals": "Defeat the opponent 0/1 · Skills used 1/1 · Warnings dodged 1/1",
+        "NextBasicAt": 1791242614.1686573,
+        "ActionTargetPosition": null,
+        "EnemyHealth": 476,
+        "TrialStatus": "Active",
+        "NextAbilityAt": 1791242613.4533763,
+        "NoviceTrialArena": true,
+        "DisplayTitle": "Mage · Training",
+        "ActionOriginPosition": null,
+        "ClassId": "Mage",
+        "BasicLabel": "Basic Attack"
+      },
+      "position": [
+        509.1593933105469,
+        127.99801635742188,
+        1412.00048828125
+      ]
+    },
+    {
+      "target": [
+        500,
+        128.39999389648438,
+        1400
+      ],
+      "warning": {
+        "visible": false,
+        "x": 499.23828125,
+        "z": 1412
+      },
+      "attributes": {
+        "PlayerHealth": 78,
+        "AbilityLabel": "Elementalist Art",
+        "DisplayHealth": "HP 78/122 · Training dummy 379/1600",
+        "ActionAt": 1791242613.636151,
+        "DisplayHint": "Your skill is recharging.",
+        "ActionTargetPosition": null,
+        "OwnerUserId": 11732987790,
+        "ReturnLabel": "Leave trial",
+        "ActionEffect": "Area",
+        "DisplayGoals": "Defeat the opponent 0/1 · Skills used 1/1 · Warnings dodged 1/1",
+        "NextBasicAt": 0,
+        "EnemyHealth": 379,
+        "ActionAbilityId": "nova",
+        "TrialStatus": "Active",
+        "NextAbilityAt": 1791242623.6360424,
+        "NoviceTrialArena": true,
+        "DisplayTitle": "Mage · Training",
+        "ActionOriginPosition": null,
+        "ClassId": "Mage",
+        "BasicLabel": "Basic Attack"
+      },
+      "position": [
+        500.8660583496094,
+        127.99801635742188,
+        1412.0001220703125
+      ]
+    },
+    {
+      "target": [
+        500,
+        128.39999389648438,
+        1400
+      ],
+      "warning": {
+        "visible": false,
+        "x": 499.23828125,
+        "z": 1412
+      },
+      "attributes": {
+        "PlayerHealth": 78,
+        "AbilityLabel": "Elementalist Art",
+        "DisplayHealth": "HP 78/122 · Training dummy 333/1600",
+        "ActionAt": 1791242614.619099,
+        "DisplayHint": "Use F/Q or the buttons. Dodge orange warnings.",
+        "OwnerUserId": 11732987790,
+        "ReturnLabel": "Leave trial",
+        "ActionEffect": "Basic",
+        "DisplayGoals": "Defeat the opponent 0/1 · Skills used 1/1 · Warnings dodged 1/1",
+        "NextBasicAt": 1791242616.418984,
+        "ActionTargetPosition": null,
+        "EnemyHealth": 333,
+        "TrialStatus": "Active",
+        "NextAbilityAt": 1791242623.6360416,
+        "NoviceTrialArena": true,
+        "DisplayTitle": "Mage · Training",
+        "ActionOriginPosition": null,
+        "ClassId": "Mage",
+        "BasicLabel": "Basic Attack"
+      },
+      "position": [
+        500.8660583496094,
+        127.99801635742188,
+        1412.0001220703125
+      ]
+    },
+    {
+      "target": [
+        500,
+        128.39999389648438,
+        1400
+      ],
+      "warning": {
+        "visible": true,
+        "x": 500.8671875,
+        "z": 1412
+      },
+      "attributes": {
+        "PlayerHealth": 78,
+        "AbilityLabel": "Elementalist Art",
+        "DisplayHealth": "HP 78/122 · Training dummy 333/1600",
+        "ActionAt": 1791242614.619099,
+        "DisplayHint": "Your skill is recharging.",
+        "ActionTargetPosition": null,
+        "OwnerUserId": 11732987790,
+        "ReturnLabel": "Leave trial",
+        "ActionEffect": "Basic",
+        "DisplayGoals": "Defeat the opponent 0/1 · Skills used 1/1 · Warnings dodged 1/1",
+        "NextBasicAt": 1791242616.4189832,
+        "EnemyHealth": 333,
+        "WarningToken": 2547.116532900007,
+        "TrialStatus": "Active",
+        "NextAbilityAt": 1791242623.6360424,
+        "NoviceTrialArena": true,
+        "DisplayTitle": "Mage · Training",
+        "ActionOriginPosition": null,
+        "ClassId": "Mage",
+        "BasicLabel": "Basic Attack"
+      },
+      "position": [
+        500.8660583496094,
+        127.99801635742188,
+        1412.0001220703125
+      ]
+    },
+    {
+      "target": [
+        500,
+        128.39999389648438,
+        1400
+      ],
+      "warning": {
+        "visible": false,
+        "x": 500.8671875,
+        "z": 1412
+      },
+      "attributes": {
+        "PlayerHealth": 67,
+        "AbilityLabel": "Elementalist Art",
+        "DisplayHealth": "HP 67/122 · Training dummy 287/1600",
+        "ActionAt": 1791242617.069019,
+        "DisplayHint": "Use F/Q or the buttons. Dodge orange warnings.",
+        "OwnerUserId": 11732987790,
+        "ReturnLabel": "Leave trial",
+        "ActionEffect": "Basic",
+        "DisplayGoals": "Defeat the opponent 0/1 · Skills used 1/1 · Warnings dodged 1/1",
+        "NextBasicAt": 1791242618.8689234,
+        "ActionTargetPosition": null,
+        "EnemyHealth": 287,
+        "TrialStatus": "Active",
+        "NextAbilityAt": 1791242623.636042,
+        "NoviceTrialArena": true,
+        "DisplayTitle": "Mage · Training",
+        "ActionOriginPosition": null,
+        "ClassId": "Mage",
+        "BasicLabel": "Basic Attack"
+      },
+      "position": [
+        490.81353759765625,
+        127.99801635742188,
+        1411.9996337890625
+      ]
+    },
+    {
+      "target": [
+        500,
+        128.39999389648438,
+        1400
+      ],
+      "warning": {
+        "visible": false,
+        "x": 500.8671875,
+        "z": 1412
+      },
+      "attributes": {
+        "PlayerHealth": 67,
+        "AbilityLabel": "Elementalist Art",
+        "DisplayHealth": "HP 67/122 · Training dummy 287/1600",
+        "ActionAt": 1791242617.069019,
+        "DisplayHint": "Your skill is recharging.",
+        "OwnerUserId": 11732987790,
+        "ReturnLabel": "Leave trial",
+        "ActionEffect": "Basic",
+        "DisplayGoals": "Defeat the opponent 0/1 · Skills used 1/1 · Warnings dodged 1/1",
+        "NextBasicAt": 0,
+        "ActionTargetPosition": null,
+        "EnemyHealth": 287,
+        "TrialStatus": "Active",
+        "NextAbilityAt": 1791242623.636042,
+        "NoviceTrialArena": true,
+        "DisplayTitle": "Mage · Training",
+        "ActionOriginPosition": null,
+        "ClassId": "Mage",
+        "BasicLabel": "Basic Attack"
+      },
+      "position": [
+        499.10687255859375,
+        127.99801635742188,
+        1411.9998779296875
+      ]
+    },
+    {
+      "target": [
+        500,
+        128.39999389648438,
+        1400
+      ],
+      "warning": {
+        "visible": false,
+        "x": 500.8671875,
+        "z": 1412
+      },
+      "attributes": {
+        "PlayerHealth": 67,
+        "AbilityLabel": "Elementalist Art",
+        "DisplayHealth": "HP 67/122 · Training dummy 241/1600",
+        "ActionAt": 1791242619.301497,
+        "DisplayHint": "Use F/Q or the buttons. Dodge orange warnings.",
+        "OwnerUserId": 11732987790,
+        "ReturnLabel": "Leave trial",
+        "ActionEffect": "Basic",
+        "DisplayGoals": "Defeat the opponent 0/1 · Skills used 1/1 · Warnings dodged 1/1",
+        "NextBasicAt": 1791242621.1014178,
+        "ActionTargetPosition": null,
+        "EnemyHealth": 241,
+        "TrialStatus": "Active",
+        "NextAbilityAt": 1791242623.6360416,
+        "NoviceTrialArena": true,
+        "DisplayTitle": "Mage · Training",
+        "ActionOriginPosition": null,
+        "ClassId": "Mage",
+        "BasicLabel": "Basic Attack"
+      },
+      "position": [
+        499.10687255859375,
+        127.99801635742188,
+        1411.9998779296875
+      ]
+    },
+    {
+      "target": [
+        500,
+        128.39999389648438,
+        1400
+      ],
+      "warning": {
+        "visible": true,
+        "x": 499.10546875,
+        "z": 1412
+      },
+      "attributes": {
+        "PlayerHealth": 67,
+        "AbilityLabel": "Elementalist Art",
+        "DisplayHealth": "HP 67/122 · Training dummy 241/1600",
+        "ActionAt": 1791242619.301497,
+        "DisplayHint": "Your skill is recharging.",
+        "ActionTargetPosition": null,
+        "OwnerUserId": 11732987790,
+        "ReturnLabel": "Leave trial",
+        "ActionEffect": "Basic",
+        "DisplayGoals": "Defeat the opponent 0/1 · Skills used 1/1 · Warnings dodged 1/1",
+        "NextBasicAt": 1791242621.1014175,
+        "EnemyHealth": 241,
+        "WarningToken": 2552.182168600004,
+        "TrialStatus": "Active",
+        "NextAbilityAt": 1791242623.6360419,
+        "NoviceTrialArena": true,
+        "DisplayTitle": "Mage · Training",
+        "ActionOriginPosition": null,
+        "ClassId": "Mage",
+        "BasicLabel": "Basic Attack"
+      },
+      "position": [
+        499.10687255859375,
+        127.99801635742188,
+        1411.9998779296875
+      ]
+    },
+    {
+      "target": [
+        500,
+        128.39999389648438,
+        1400
+      ],
+      "warning": {
+        "visible": false,
+        "x": 499.10546875,
+        "z": 1412
+      },
+      "attributes": {
+        "PlayerHealth": 67,
+        "AbilityLabel": "Elementalist Art",
+        "DisplayHealth": "HP 67/122 · Training dummy 195/1600",
+        "ActionAt": 1791242621.769621,
+        "DisplayHint": "Use F/Q or the buttons. Dodge orange warnings.",
+        "OwnerUserId": 11732987790,
+        "ReturnLabel": "Leave trial",
+        "ActionEffect": "Basic",
+        "DisplayGoals": "Defeat the opponent 0/1 · Skills used 1/1 · Warnings dodged 1/1",
+        "NextBasicAt": 1791242623.5695221,
+        "ActionTargetPosition": null,
+        "EnemyHealth": 195,
+        "TrialStatus": "Active",
+        "NextAbilityAt": 1791242623.6360419,
+        "NoviceTrialArena": true,
+        "DisplayTitle": "Mage · Training",
+        "ActionOriginPosition": null,
+        "ClassId": "Mage",
+        "BasicLabel": "Basic Attack"
+      },
+      "position": [
+        509.4260559082031,
+        127.99801635742188,
+        1412.0003662109375
+      ]
+    },
+    {
+      "target": [
+        500,
+        128.39999389648438,
+        1400
+      ],
+      "warning": {
+        "visible": false,
+        "x": 499.10546875,
+        "z": 1412
+      },
+      "attributes": {
+        "PlayerHealth": 67,
+        "AbilityLabel": "Elementalist Art",
+        "DisplayHealth": "HP 67/122 · Training dummy 195/1600",
+        "ActionAt": 1791242621.769621,
+        "DisplayHint": "Your skill is recharging.",
+        "OwnerUserId": 11732987790,
+        "ReturnLabel": "Leave trial",
+        "ActionEffect": "Basic",
+        "DisplayGoals": "Defeat the opponent 0/1 · Skills used 1/1 · Warnings dodged 1/1",
+        "NextBasicAt": 0,
+        "ActionTargetPosition": null,
+        "EnemyHealth": 195,
+        "TrialStatus": "Active",
+        "NextAbilityAt": 0,
+        "NoviceTrialArena": true,
+        "DisplayTitle": "Mage · Training",
+        "ActionOriginPosition": null,
+        "ClassId": "Mage",
+        "BasicLabel": "Basic Attack"
+      },
+      "position": [
+        500.8660583496094,
+        127.99801635742188,
+        1412
+      ]
+    },
+    {
+      "target": [
+        500,
+        128.39999389648438,
+        1400
+      ],
+      "warning": {
+        "visible": false,
+        "x": 499.10546875,
+        "z": 1412
+      },
+      "attributes": {
+        "PlayerHealth": 67,
+        "AbilityLabel": "Elementalist Art",
+        "DisplayHealth": "HP 67/122 · Training dummy 52/1600",
+        "ActionAt": 1791242624.101547,
+        "DisplayHint": "Use F/Q or the buttons. Dodge orange warnings.",
+        "OwnerUserId": 11732987790,
+        "ReturnLabel": "Leave trial",
+        "ActionEffect": "Basic",
+        "DisplayGoals": "Defeat the opponent 0/1 · Skills used 1/1 · Warnings dodged 1/1",
+        "NextBasicAt": 1791242625.9014695,
+        "ActionTargetPosition": null,
+        "EnemyHealth": 52,
+        "TrialStatus": "Active",
+        "NextAbilityAt": 1791242634.0015714,
+        "NoviceTrialArena": true,
+        "DisplayTitle": "Mage · Training",
+        "ActionOriginPosition": null,
+        "ClassId": "Mage",
+        "BasicLabel": "Basic Attack"
+      },
+      "position": [
+        500.8660583496094,
+        127.99801635742188,
+        1412
+      ]
+    },
+    {
+      "target": [
+        500,
+        128.39999389648438,
+        1400
+      ],
+      "warning": {
+        "visible": false,
+        "x": 499.10546875,
+        "z": 1412
+      },
+      "attributes": {
+        "PlayerHealth": 67,
+        "AbilityLabel": "Elementalist Art",
+        "DisplayHealth": "HP 67/122 · Training dummy 52/1600",
+        "ActionAt": 1791242624.101547,
+        "DisplayHint": "Your skill is recharging.",
+        "OwnerUserId": 11732987790,
+        "ReturnLabel": "Leave trial",
+        "ActionEffect": "Basic",
+        "DisplayGoals": "Defeat the opponent 0/1 · Skills used 1/1 · Warnings dodged 1/1",
+        "NextBasicAt": 1791242625.9014685,
+        "ActionTargetPosition": null,
+        "EnemyHealth": 52,
+        "TrialStatus": "Active",
+        "NextAbilityAt": 1791242634.0015712,
+        "NoviceTrialArena": true,
+        "DisplayTitle": "Mage · Training",
+        "ActionOriginPosition": null,
+        "ClassId": "Mage",
+        "BasicLabel": "Basic Attack"
+      },
+      "position": [
+        500.8660583496094,
+        127.99801635742188,
+        1412
+      ]
+    },
+    {
+      "target": [
+        500,
+        128.39999389648438,
+        1400
+      ],
+      "warning": {
+        "visible": true,
+        "x": 500.8671875,
+        "z": 1412
+      },
+      "attributes": {
+        "PlayerHealth": 67,
+        "AbilityLabel": "Elementalist Art",
+        "DisplayHealth": "HP 67/122 · Training dummy 52/1600",
+        "ActionAt": 1791242624.101547,
+        "DisplayHint": "Your skill is recharging.",
+        "ActionTargetPosition": null,
+        "OwnerUserId": 11732987790,
+        "ReturnLabel": "Leave trial",
+        "ActionEffect": "Basic",
+        "DisplayGoals": "Defeat the opponent 0/1 · Skills used 1/1 · Warnings dodged 1/1",
+        "NextBasicAt": 0,
+        "EnemyHealth": 52,
+        "WarningToken": 2557.1998002000037,
+        "TrialStatus": "Active",
+        "NextAbilityAt": 1791242634.0015712,
+        "NoviceTrialArena": true,
+        "DisplayTitle": "Mage · Training",
+        "ActionOriginPosition": null,
+        "ClassId": "Mage",
+        "BasicLabel": "Basic Attack"
+      },
+      "position": [
+        500.8660583496094,
+        127.99801635742188,
+        1412
+      ]
+    },
+    {
+      "target": [
+        500,
+        128.39999389648438,
+        1400
+      ],
+      "warning": {
+        "visible": false,
+        "x": 500.8671875,
+        "z": 1412
+      },
+      "attributes": {
+        "PlayerHealth": 56,
+        "AbilityLabel": "Elementalist Art",
+        "DisplayHealth": "HP 56/122 · Training dummy 6/1600",
+        "ActionAt": 1791242627.367897,
+        "DisplayHint": "Use F/Q or the buttons. Dodge orange warnings.",
+        "OwnerUserId": 11732987790,
+        "ReturnLabel": "Leave trial",
+        "ActionEffect": "Basic",
+        "DisplayGoals": "Defeat the opponent 0/1 · Skills used 1/1 · Warnings dodged 1/1",
+        "NextBasicAt": 1791242629.1678188,
+        "ActionTargetPosition": null,
+        "EnemyHealth": 6,
+        "TrialStatus": "Active",
+        "NextAbilityAt": 1791242634.0015707,
+        "NoviceTrialArena": true,
+        "DisplayTitle": "Mage · Training",
+        "ActionOriginPosition": null,
+        "ClassId": "Mage",
+        "BasicLabel": "Basic Attack"
+      },
+      "position": [
+        490.6802062988281,
+        127.99801635742188,
+        1411.9996337890625
+      ]
+    },
+    {
+      "target": [
+        500,
+        128.39999389648438,
+        1400
+      ],
+      "warning": {
+        "visible": false,
+        "x": 500.8671875,
+        "z": 1412
+      },
+      "attributes": {
+        "PlayerHealth": 56,
+        "AbilityLabel": "Elementalist Art",
+        "DisplayHealth": "HP 56/122 · Training dummy 6/1600",
+        "ActionAt": 1791242627.367897,
+        "DisplayHint": "Your skill is recharging.",
+        "OwnerUserId": 11732987790,
+        "ReturnLabel": "Leave trial",
+        "ActionEffect": "Basic",
+        "DisplayGoals": "Defeat the opponent 0/1 · Skills used 1/1 · Warnings dodged 1/1",
+        "NextBasicAt": 0,
+        "ActionTargetPosition": null,
+        "EnemyHealth": 6,
+        "TrialStatus": "Active",
+        "NextAbilityAt": 1791242634.0015712,
+        "NoviceTrialArena": true,
+        "DisplayTitle": "Mage · Training",
+        "ActionOriginPosition": null,
+        "ClassId": "Mage",
+        "BasicLabel": "Basic Attack"
+      },
+      "position": [
+        499.2402038574219,
+        127.99801635742188,
+        1412
+      ]
+    },
+    {}
+  ],
+  "quarryVictory": {
+    "actors": [
+      {
+        "attributes": {
+          "Action": "Taunt",
+          "NoParentArt": false,
+          "ClassId": "Knight",
+          "CombatState": "Follow",
+          "RecoveryCount": 23,
+          "Skill1Cooldown": 9,
+          "OwnerUserId": 11732987790,
+          "FeedbackAt": 1791241800.202666,
+          "Cooldown": 9,
+          "Rank": "F",
+          "AbilityCount": 4,
+          "CombatHealth": 127,
+          "AbilityName": "Taunt",
+          "GuildborneHero": true,
+          "CombatMaxHealth": 127,
+          "Skill3Cooldown": 0,
+          "Level": 30,
+          "VisualTemplateId": "knight_02",
+          "ActionTargetPosition": null,
+          "ActionEffect": "Taunt",
+          "DamageCueAt": 1791241796.268691,
+          "WeaponId": "knight_sword",
+          "PartySlot": 1,
+          "DamageDealt": 239,
+          "ActionAt": 1791242400.827583,
+          "DamageCue": "melee_hit",
+          "Feedback": "+27",
+          "ActionRange": 14,
+          "AdventurerId": "a:Knight",
+          "ActionAbilityId": "taunt",
+          "BasicAttackCount": 9,
+          "Skill2Cooldown": 0,
+          "Skill1Name": "Taunt",
+          "HeroState": "Following"
+        },
+        "name": "Knight",
+        "pos": [
+          500.0527038574219,
+          13,
+          1341.493896484375
+        ]
+      },
+      {
+        "attributes": {
+          "Action": "Basic Attack",
+          "NoParentArt": false,
+          "ClassId": "Priest",
+          "CombatState": "Follow",
+          "RecoveryCount": 20,
+          "Skill1Cooldown": 0,
+          "OwnerUserId": 11732987790,
+          "FeedbackAt": 1791241576.211106,
+          "Cooldown": 0,
+          "Rank": "F",
+          "AbilityCount": 15,
+          "CombatHealth": 99,
+          "AbilityName": "Heal",
+          "GuildborneHero": true,
+          "CombatMaxHealth": 99,
+          "Skill3Cooldown": 0,
+          "Level": 26,
+          "VisualTemplateId": "priest_01",
+          "ActionEffect": "Basic",
+          "DamageCueAt": 1791241575.377884,
+          "ActionAt": 1791242399.59518,
+          "WeaponId": "apprentice_staff",
+          "PartySlot": 2,
+          "DamageDealt": 1843,
+          "HealingDone": 370,
+          "DamageCue": "melee_hit",
+          "Feedback": "+16",
+          "ActionRange": 17,
+          "AdventurerId": "h:1",
+          "ActionTargetPosition": null,
+          "BasicAttackCount": 113,
+          "Skill2Cooldown": 0,
+          "Skill1Name": "Heal",
+          "HeroState": "Following"
+        },
+        "name": "Priest",
+        "pos": [
+          500.3873596191406,
+          13,
+          1350.92724609375
+        ]
+      },
+      {
+        "attributes": {
+          "CombatHealth": 210,
+          "PreviewHealth": 210,
+          "CombatMaxHealth": 210,
+          "EncounterMarker": "RaiderCamp",
+          "CombatState": "Idle",
+          "EnemyAnimationClass": "Knight",
+          "RigType": "Humanoid",
+          "GuildborneEnemy": true,
+          "Region": "Ironveil",
+          "VisualRole": "Melee",
+          "EnemyTitle": "Quarry Raider",
+          "PreviewPhase": 1,
+          "EncounterId": "quarry_raider",
+          "TemplateOnly": false,
+          "Taunted": false,
+          "PreviewState": "Idle",
+          "OwnerUserId": 11732987790,
+          "PreviewOnly": false,
+          "EnemyArticulated": true
+        },
+        "name": "quarry_raider",
+        "pos": [
+          448,
+          9,
+          1425
+        ]
+      },
+      {
+        "attributes": {
+          "CombatHealth": 320,
+          "PreviewHealth": 320,
+          "CombatMaxHealth": 320,
+          "EncounterMarker": "StoneGuard",
+          "CombatState": "Idle",
+          "EnemyAnimationClass": "Knight",
+          "RigType": "Humanoid",
+          "GuildborneEnemy": true,
+          "Region": "Ironveil",
+          "VisualRole": "Guard",
+          "EnemyTitle": "Stone Guard",
+          "PreviewPhase": 1,
+          "EncounterId": "stone_guard",
+          "TemplateOnly": false,
+          "Taunted": false,
+          "PreviewState": "Idle",
+          "OwnerUserId": 11732987790,
+          "PreviewOnly": false,
+          "EnemyArticulated": true
+        },
+        "name": "stone_guard",
+        "pos": [
+          545,
+          13,
+          1375
+        ]
+      },
+      {
+        "attributes": {
+          "CombatHealth": 165,
+          "PreviewHealth": 165,
+          "CombatMaxHealth": 165,
+          "EncounterMarker": "ShamanCamp",
+          "CombatState": "Idle",
+          "EnemyAnimationClass": "Priest",
+          "RigType": "Humanoid",
+          "GuildborneEnemy": true,
+          "Region": "Ironveil",
+          "VisualRole": "Support",
+          "EnemyTitle": "Crystal Shaman",
+          "PreviewPhase": 1,
+          "EncounterId": "crystal_shaman",
+          "TemplateOnly": false,
+          "Taunted": false,
+          "PreviewState": "Idle",
+          "OwnerUserId": 11732987790,
+          "PreviewOnly": false,
+          "EnemyArticulated": true
+        },
+        "name": "crystal_shaman",
+        "pos": [
+          455,
+          13,
+          1350
+        ]
+      },
+      {
+        "attributes": {
+          "CombatHealth": 0,
+          "RegionalImpactAt": 1791242399.162615,
+          "CombatTarget": "a:Knight",
+          "EnemyActionAt": 1791242399.162597,
+          "PreviewHealth": 0,
+          "CombatMaxHealth": 950,
+          "FeedbackAt": 1791242400.87779,
+          "EncounterMarker": "QuarryGuardian",
+          "Feedback": "-1",
+          "DamageCueAt": 1791242400.877773,
+          "CombatState": "Dead",
+          "TemplateOnly": false,
+          "RewardState": "Rewarded",
+          "EnemyAnimationClass": "Warrior",
+          "RegionalTelegraphAt": 1791242397.294889,
+          "RigType": "Humanoid",
+          "GuildborneEnemy": true,
+          "Region": "Ironveil",
+          "VisualRole": "Boss",
+          "DamageDealt": 30,
+          "EnemyTitle": "Quarry Guardian",
+          "DamageCue": "melee_hit",
+          "PreviewPhase": 2,
+          "BossPhase": 2,
+          "Taunted": true,
+          "PreviewState": "Dead",
+          "EncounterId": "quarry_guardian",
+          "OwnerUserId": 11732987790,
+          "PreviewOnly": false,
+          "EnemyArticulated": true
+        },
+        "name": "quarry_guardian",
+        "pos": [
+          497,
+          11,
+          1333.2001953125
+        ]
+      }
+    ],
+    "player": {
+      "AbilityCount": 9,
+      "CombatHealth": 107,
+      "AbilityName": "Fireball",
+      "NoParentArt": false,
+      "ClassId": "Mage",
+      "FeedbackAt": 1791242387.84544,
+      "CombatMaxHealth": 107,
+      "Skill3Cooldown": 0,
+      "ActionTargetPosition": null,
+      "DamageCueAt": 1791242387.845292,
+      "GuildbornePlayer": true,
+      "CombatState": "Idle",
+      "Level": 30,
+      "XP": 1481,
+      "ClassPath": "Mage",
+      "DamageCue": "melee_hit",
+      "Skill1Cooldown": 4,
+      "OwnerUserId": 11732987790,
+      "WeaponId": "mage_staff",
+      "ActionEffect": "Basic",
+      "DamageDealt": 1113,
+      "Skill2Cooldown": 0,
+      "RaceId": "Human",
+      "Feedback": "+30",
+      "ActionRange": 19,
+      "Action": "Basic Attack",
+      "ActionAt": 1791242400.877803,
+      "BasicAttackCount": 24,
+      "Skill1Name": "Fireball",
+      "Cooldown": 4,
+      "RenderedRace": "Human"
+    },
+    "position": [
+      500,
+      12.998024940490723,
+      1343.6724853515625
+    ]
+  },
+  "finding": "Worker protection start-to-first shutter is too tight from marker centre; first run missed first warning and timed out with two blocks. Retried from normal prompt edge, moving into first shutter range, passed all three with full worker health. Fix after untouched run."
+}

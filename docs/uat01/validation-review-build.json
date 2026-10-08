@@ -1,0 +1,99 @@
+{
+  "file": "build/Guildborne_ArtReview.rbxlx",
+  "bytes": 437008,
+  "sha256": "72bdd3b7b51547d3929d53a73bc551085bb1ca7b35e29cb2bb817fed353efe7e",
+  "scripts": [
+    {
+      "name": "AdventureTelegraph",
+      "kind": "ModuleScript"
+    },
+    {
+      "name": "CosmeticVisuals",
+      "kind": "ModuleScript"
+    },
+    {
+      "name": "ItemVisuals",
+      "kind": "ModuleScript"
+    },
+    {
+      "name": "Bootstrap",
+      "kind": "Script"
+    },
+    {
+      "name": "CityDistrictKit",
+      "kind": "ModuleScript"
+    },
+    {
+      "name": "CityLandmarkKit",
+      "kind": "ModuleScript"
+    },
+    {
+      "name": "NoviceRoadKit",
+      "kind": "ModuleScript"
+    },
+    {
+      "name": "ReviewWorld",
+      "kind": "ModuleScript"
+    },
+    {
+      "name": "AdventureEncounters",
+      "kind": "ModuleScript"
+    },
+    {
+      "name": "AdventureEnemyProfiles",
+      "kind": "ModuleScript"
+    },
+    {
+      "name": "AdventureEncounterPreview",
+      "kind": "ModuleScript"
+    },
+    {
+      "name": "AdventureEnemyKit",
+      "kind": "ModuleScript"
+    },
+    {
+      "name": "AdventureLocomotion",
+      "kind": "ModuleScript"
+    },
+    {
+      "name": "AdventureMapKit",
+      "kind": "ModuleScript"
+    },
+    {
+      "name": "AdventureNavigation",
+      "kind": "ModuleScript"
+    },
+    {
+      "name": "AdventureScene",
+      "kind": "ModuleScript"
+    },
+    {
+      "name": "CityCharacterKit",
+      "kind": "ModuleScript"
+    },
+    {
+      "name": "CityInteriorKit",
+      "kind": "ModuleScript"
+    },
+    {
+      "name": "CosmeticVisualKit",
+      "kind": "ModuleScript"
+    },
+    {
+      "name": "HeroVisualKit",
+      "kind": "ModuleScript"
+    },
+    {
+      "name": "AdventureEnemyBrain",
+      "kind": "ModuleScript"
+    },
+    {
+      "name": "AdventurePatterns",
+      "kind": "ModuleScript"
+    }
+  ],
+  "persistenceApis": false,
+  "commerceApis": false,
+  "remoteEndpoints": false,
+  "fullStandalonePlayAcceptance": false
+}

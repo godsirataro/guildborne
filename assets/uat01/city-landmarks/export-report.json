@@ -1,0 +1,80 @@
+[
+  {
+    "id": "crownford_clock_gate",
+    "triangles": 408,
+    "bounds": [
+      32.0,
+      22.0,
+      34.0
+    ],
+    "sourceParts": 34,
+    "icon": "crownford_clock_gate.png",
+    "robloxMeshAssetId": null,
+    "robloxImageAssetId": null
+  },
+  {
+    "id": "sylvaris_council_tree",
+    "triangles": 348,
+    "bounds": [
+      38.0,
+      34.0,
+      34.0
+    ],
+    "sourceParts": 29,
+    "icon": "sylvaris_council_tree.png",
+    "robloxMeshAssetId": null,
+    "robloxImageAssetId": null
+  },
+  {
+    "id": "deepforge_grand_forge",
+    "triangles": 312,
+    "bounds": [
+      40.0,
+      34.0,
+      33.25
+    ],
+    "sourceParts": 26,
+    "icon": "deepforge_grand_forge.png",
+    "robloxMeshAssetId": null,
+    "robloxImageAssetId": null
+  },
+  {
+    "id": "astralis_observatory",
+    "triangles": 540,
+    "bounds": [
+      38.0,
+      34.0,
+      37.275001525878906
+    ],
+    "sourceParts": 45,
+    "icon": "astralis_observatory.png",
+    "robloxMeshAssetId": null,
+    "robloxImageAssetId": null
+  },
+  {
+    "id": "crosshaven_charter_pavilion",
+    "triangles": 348,
+    "bounds": [
+      38.0,
+      34.0,
+      35.0
+    ],
+    "sourceParts": 29,
+    "icon": "crosshaven_charter_pavilion.png",
+    "robloxMeshAssetId": null,
+    "robloxImageAssetId": null
+  },
+  {
+    "id": "ironroot_feast_hall",
+    "triangles": 348,
+    "bounds": [
+      42.0,
+      36.0,
+      28.317996978759766
+    ],
+    "sourceParts": 29,
+    "icon": "ironroot_feast_hall.png",
+    "robloxMeshAssetId": null,
+    "robloxImageAssetId": null
+  }
+]

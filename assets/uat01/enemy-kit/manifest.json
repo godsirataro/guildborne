@@ -1,0 +1,642 @@
+{
+  "schema": 1,
+  "fps": 30,
+  "assets": [
+    {
+      "id": "greenwood_scout",
+      "rigType": "Humanoid",
+      "region": "Greenwood",
+      "role": "Melee",
+      "bones": 16,
+      "triangles": 324,
+      "vertices": 216,
+      "restFiles": [
+        "greenwood_scout_Rest.fbx",
+        "greenwood_scout_Rest.glb"
+      ],
+      "clips": [
+        {
+          "name": "Idle",
+          "file": "greenwood_scout_Idle.fbx",
+          "frames": 61,
+          "seconds": 2,
+          "loop": true,
+          "rootMotion": false,
+          "robloxAnimationId": null
+        },
+        {
+          "name": "Walk",
+          "file": "greenwood_scout_Walk.fbx",
+          "frames": 31,
+          "seconds": 1,
+          "loop": true,
+          "rootMotion": false,
+          "robloxAnimationId": null
+        },
+        {
+          "name": "Attack",
+          "file": "greenwood_scout_Attack.fbx",
+          "frames": 37,
+          "seconds": 1.2,
+          "loop": false,
+          "rootMotion": false,
+          "robloxAnimationId": null
+        },
+        {
+          "name": "Hit",
+          "file": "greenwood_scout_Hit.fbx",
+          "frames": 16,
+          "seconds": 0.5,
+          "loop": false,
+          "rootMotion": false,
+          "robloxAnimationId": null
+        }
+      ],
+      "studioImported": false,
+      "liveEncounterBound": false
+    },
+    {
+      "id": "greenwood_archer",
+      "rigType": "Humanoid",
+      "region": "Greenwood",
+      "role": "Ranged",
+      "bones": 16,
+      "triangles": 372,
+      "vertices": 248,
+      "restFiles": [
+        "greenwood_archer_Rest.fbx",
+        "greenwood_archer_Rest.glb"
+      ],
+      "clips": [
+        {
+          "name": "Idle",
+          "file": "greenwood_archer_Idle.fbx",
+          "frames": 61,
+          "seconds": 2,
+          "loop": true,
+          "rootMotion": false,
+          "robloxAnimationId": null
+        },
+        {
+          "name": "Walk",
+          "file": "greenwood_archer_Walk.fbx",
+          "frames": 31,
+          "seconds": 1,
+          "loop": true,
+          "rootMotion": false,
+          "robloxAnimationId": null
+        },
+        {
+          "name": "Attack",
+          "file": "greenwood_archer_Attack.fbx",
+          "frames": 37,
+          "seconds": 1.2,
+          "loop": false,
+          "rootMotion": false,
+          "robloxAnimationId": null
+        },
+        {
+          "name": "Hit",
+          "file": "greenwood_archer_Hit.fbx",
+          "frames": 16,
+          "seconds": 0.5,
+          "loop": false,
+          "rootMotion": false,
+          "robloxAnimationId": null
+        }
+      ],
+      "studioImported": false,
+      "liveEncounterBound": false
+    },
+    {
+      "id": "greenwood_boar",
+      "rigType": "Quadruped",
+      "region": "Greenwood",
+      "role": "Charge",
+      "bones": 16,
+      "triangles": 300,
+      "vertices": 200,
+      "restFiles": [
+        "greenwood_boar_Rest.fbx",
+        "greenwood_boar_Rest.glb"
+      ],
+      "clips": [
+        {
+          "name": "Idle",
+          "file": "greenwood_boar_Idle.fbx",
+          "frames": 61,
+          "seconds": 2,
+          "loop": true,
+          "rootMotion": false,
+          "robloxAnimationId": null
+        },
+        {
+          "name": "Walk",
+          "file": "greenwood_boar_Walk.fbx",
+          "frames": 31,
+          "seconds": 1,
+          "loop": true,
+          "rootMotion": false,
+          "robloxAnimationId": null
+        },
+        {
+          "name": "Attack",
+          "file": "greenwood_boar_Attack.fbx",
+          "frames": 37,
+          "seconds": 1.2,
+          "loop": false,
+          "rootMotion": false,
+          "robloxAnimationId": null
+        },
+        {
+          "name": "Hit",
+          "file": "greenwood_boar_Hit.fbx",
+          "frames": 16,
+          "seconds": 0.5,
+          "loop": false,
+          "rootMotion": false,
+          "robloxAnimationId": null
+        }
+      ],
+      "studioImported": false,
+      "liveEncounterBound": false
+    },
+    {
+      "id": "forest_captain",
+      "rigType": "Humanoid",
+      "region": "Greenwood",
+      "role": "Boss",
+      "bones": 16,
+      "triangles": 420,
+      "vertices": 280,
+      "restFiles": [
+        "forest_captain_Rest.fbx",
+        "forest_captain_Rest.glb"
+      ],
+      "clips": [
+        {
+          "name": "Idle",
+          "file": "forest_captain_Idle.fbx",
+          "frames": 61,
+          "seconds": 2,
+          "loop": true,
+          "rootMotion": false,
+          "robloxAnimationId": null
+        },
+        {
+          "name": "Walk",
+          "file": "forest_captain_Walk.fbx",
+          "frames": 31,
+          "seconds": 1,
+          "loop": true,
+          "rootMotion": false,
+          "robloxAnimationId": null
+        },
+        {
+          "name": "Attack",
+          "file": "forest_captain_Attack.fbx",
+          "frames": 37,
+          "seconds": 1.2,
+          "loop": false,
+          "rootMotion": false,
+          "robloxAnimationId": null
+        },
+        {
+          "name": "Hit",
+          "file": "forest_captain_Hit.fbx",
+          "frames": 16,
+          "seconds": 0.5,
+          "loop": false,
+          "rootMotion": false,
+          "robloxAnimationId": null
+        }
+      ],
+      "studioImported": false,
+      "liveEncounterBound": false
+    },
+    {
+      "id": "quarry_raider",
+      "rigType": "Humanoid",
+      "region": "Ironveil",
+      "role": "Melee",
+      "bones": 16,
+      "triangles": 324,
+      "vertices": 216,
+      "restFiles": [
+        "quarry_raider_Rest.fbx",
+        "quarry_raider_Rest.glb"
+      ],
+      "clips": [
+        {
+          "name": "Idle",
+          "file": "quarry_raider_Idle.fbx",
+          "frames": 61,
+          "seconds": 2,
+          "loop": true,
+          "rootMotion": false,
+          "robloxAnimationId": null
+        },
+        {
+          "name": "Walk",
+          "file": "quarry_raider_Walk.fbx",
+          "frames": 31,
+          "seconds": 1,
+          "loop": true,
+          "rootMotion": false,
+          "robloxAnimationId": null
+        },
+        {
+          "name": "Attack",
+          "file": "quarry_raider_Attack.fbx",
+          "frames": 37,
+          "seconds": 1.2,
+          "loop": false,
+          "rootMotion": false,
+          "robloxAnimationId": null
+        },
+        {
+          "name": "Hit",
+          "file": "quarry_raider_Hit.fbx",
+          "frames": 16,
+          "seconds": 0.5,
+          "loop": false,
+          "rootMotion": false,
+          "robloxAnimationId": null
+        }
+      ],
+      "studioImported": false,
+      "liveEncounterBound": false
+    },
+    {
+      "id": "stone_guard",
+      "rigType": "Humanoid",
+      "region": "Ironveil",
+      "role": "Guard",
+      "bones": 16,
+      "triangles": 288,
+      "vertices": 192,
+      "restFiles": [
+        "stone_guard_Rest.fbx",
+        "stone_guard_Rest.glb"
+      ],
+      "clips": [
+        {
+          "name": "Idle",
+          "file": "stone_guard_Idle.fbx",
+          "frames": 61,
+          "seconds": 2,
+          "loop": true,
+          "rootMotion": false,
+          "robloxAnimationId": null
+        },
+        {
+          "name": "Walk",
+          "file": "stone_guard_Walk.fbx",
+          "frames": 31,
+          "seconds": 1,
+          "loop": true,
+          "rootMotion": false,
+          "robloxAnimationId": null
+        },
+        {
+          "name": "Attack",
+          "file": "stone_guard_Attack.fbx",
+          "frames": 37,
+          "seconds": 1.2,
+          "loop": false,
+          "rootMotion": false,
+          "robloxAnimationId": null
+        },
+        {
+          "name": "Hit",
+          "file": "stone_guard_Hit.fbx",
+          "frames": 16,
+          "seconds": 0.5,
+          "loop": false,
+          "rootMotion": false,
+          "robloxAnimationId": null
+        }
+      ],
+      "studioImported": false,
+      "liveEncounterBound": false
+    },
+    {
+      "id": "crystal_shaman",
+      "rigType": "Humanoid",
+      "region": "Ironveil",
+      "role": "Support",
+      "bones": 16,
+      "triangles": 336,
+      "vertices": 224,
+      "restFiles": [
+        "crystal_shaman_Rest.fbx",
+        "crystal_shaman_Rest.glb"
+      ],
+      "clips": [
+        {
+          "name": "Idle",
+          "file": "crystal_shaman_Idle.fbx",
+          "frames": 61,
+          "seconds": 2,
+          "loop": true,
+          "rootMotion": false,
+          "robloxAnimationId": null
+        },
+        {
+          "name": "Walk",
+          "file": "crystal_shaman_Walk.fbx",
+          "frames": 31,
+          "seconds": 1,
+          "loop": true,
+          "rootMotion": false,
+          "robloxAnimationId": null
+        },
+        {
+          "name": "Attack",
+          "file": "crystal_shaman_Attack.fbx",
+          "frames": 37,
+          "seconds": 1.2,
+          "loop": false,
+          "rootMotion": false,
+          "robloxAnimationId": null
+        },
+        {
+          "name": "Hit",
+          "file": "crystal_shaman_Hit.fbx",
+          "frames": 16,
+          "seconds": 0.5,
+          "loop": false,
+          "rootMotion": false,
+          "robloxAnimationId": null
+        }
+      ],
+      "studioImported": false,
+      "liveEncounterBound": false
+    },
+    {
+      "id": "quarry_guardian",
+      "rigType": "Humanoid",
+      "region": "Ironveil",
+      "role": "Boss",
+      "bones": 16,
+      "triangles": 300,
+      "vertices": 200,
+      "restFiles": [
+        "quarry_guardian_Rest.fbx",
+        "quarry_guardian_Rest.glb"
+      ],
+      "clips": [
+        {
+          "name": "Idle",
+          "file": "quarry_guardian_Idle.fbx",
+          "frames": 61,
+          "seconds": 2,
+          "loop": true,
+          "rootMotion": false,
+          "robloxAnimationId": null
+        },
+        {
+          "name": "Walk",
+          "file": "quarry_guardian_Walk.fbx",
+          "frames": 31,
+          "seconds": 1,
+          "loop": true,
+          "rootMotion": false,
+          "robloxAnimationId": null
+        },
+        {
+          "name": "Attack",
+          "file": "quarry_guardian_Attack.fbx",
+          "frames": 37,
+          "seconds": 1.2,
+          "loop": false,
+          "rootMotion": false,
+          "robloxAnimationId": null
+        },
+        {
+          "name": "Hit",
+          "file": "quarry_guardian_Hit.fbx",
+          "frames": 16,
+          "seconds": 0.5,
+          "loop": false,
+          "rootMotion": false,
+          "robloxAnimationId": null
+        }
+      ],
+      "studioImported": false,
+      "liveEncounterBound": false
+    },
+    {
+      "id": "arcane_sentinel",
+      "rigType": "Humanoid",
+      "region": "Ashen",
+      "role": "Melee",
+      "bones": 16,
+      "triangles": 288,
+      "vertices": 192,
+      "restFiles": [
+        "arcane_sentinel_Rest.fbx",
+        "arcane_sentinel_Rest.glb"
+      ],
+      "clips": [
+        {
+          "name": "Idle",
+          "file": "arcane_sentinel_Idle.fbx",
+          "frames": 61,
+          "seconds": 2,
+          "loop": true,
+          "rootMotion": false,
+          "robloxAnimationId": null
+        },
+        {
+          "name": "Walk",
+          "file": "arcane_sentinel_Walk.fbx",
+          "frames": 31,
+          "seconds": 1,
+          "loop": true,
+          "rootMotion": false,
+          "robloxAnimationId": null
+        },
+        {
+          "name": "Attack",
+          "file": "arcane_sentinel_Attack.fbx",
+          "frames": 37,
+          "seconds": 1.2,
+          "loop": false,
+          "rootMotion": false,
+          "robloxAnimationId": null
+        },
+        {
+          "name": "Hit",
+          "file": "arcane_sentinel_Hit.fbx",
+          "frames": 16,
+          "seconds": 0.5,
+          "loop": false,
+          "rootMotion": false,
+          "robloxAnimationId": null
+        }
+      ],
+      "studioImported": false,
+      "liveEncounterBound": false
+    },
+    {
+      "id": "rune_caster",
+      "rigType": "Humanoid",
+      "region": "Ashen",
+      "role": "Spell",
+      "bones": 16,
+      "triangles": 336,
+      "vertices": 224,
+      "restFiles": [
+        "rune_caster_Rest.fbx",
+        "rune_caster_Rest.glb"
+      ],
+      "clips": [
+        {
+          "name": "Idle",
+          "file": "rune_caster_Idle.fbx",
+          "frames": 61,
+          "seconds": 2,
+          "loop": true,
+          "rootMotion": false,
+          "robloxAnimationId": null
+        },
+        {
+          "name": "Walk",
+          "file": "rune_caster_Walk.fbx",
+          "frames": 31,
+          "seconds": 1,
+          "loop": true,
+          "rootMotion": false,
+          "robloxAnimationId": null
+        },
+        {
+          "name": "Attack",
+          "file": "rune_caster_Attack.fbx",
+          "frames": 37,
+          "seconds": 1.2,
+          "loop": false,
+          "rootMotion": false,
+          "robloxAnimationId": null
+        },
+        {
+          "name": "Hit",
+          "file": "rune_caster_Hit.fbx",
+          "frames": 16,
+          "seconds": 0.5,
+          "loop": false,
+          "rootMotion": false,
+          "robloxAnimationId": null
+        }
+      ],
+      "studioImported": false,
+      "liveEncounterBound": false
+    },
+    {
+      "id": "rune_hound",
+      "rigType": "Quadruped",
+      "region": "Ashen",
+      "role": "Charge",
+      "bones": 16,
+      "triangles": 300,
+      "vertices": 200,
+      "restFiles": [
+        "rune_hound_Rest.fbx",
+        "rune_hound_Rest.glb"
+      ],
+      "clips": [
+        {
+          "name": "Idle",
+          "file": "rune_hound_Idle.fbx",
+          "frames": 61,
+          "seconds": 2,
+          "loop": true,
+          "rootMotion": false,
+          "robloxAnimationId": null
+        },
+        {
+          "name": "Walk",
+          "file": "rune_hound_Walk.fbx",
+          "frames": 31,
+          "seconds": 1,
+          "loop": true,
+          "rootMotion": false,
+          "robloxAnimationId": null
+        },
+        {
+          "name": "Attack",
+          "file": "rune_hound_Attack.fbx",
+          "frames": 37,
+          "seconds": 1.2,
+          "loop": false,
+          "rootMotion": false,
+          "robloxAnimationId": null
+        },
+        {
+          "name": "Hit",
+          "file": "rune_hound_Hit.fbx",
+          "frames": 16,
+          "seconds": 0.5,
+          "loop": false,
+          "rootMotion": false,
+          "robloxAnimationId": null
+        }
+      ],
+      "studioImported": false,
+      "liveEncounterBound": false
+    },
+    {
+      "id": "arcane_warden",
+      "rigType": "Humanoid",
+      "region": "Ashen",
+      "role": "Boss",
+      "bones": 16,
+      "triangles": 420,
+      "vertices": 280,
+      "restFiles": [
+        "arcane_warden_Rest.fbx",
+        "arcane_warden_Rest.glb"
+      ],
+      "clips": [
+        {
+          "name": "Idle",
+          "file": "arcane_warden_Idle.fbx",
+          "frames": 61,
+          "seconds": 2,
+          "loop": true,
+          "rootMotion": false,
+          "robloxAnimationId": null
+        },
+        {
+          "name": "Walk",
+          "file": "arcane_warden_Walk.fbx",
+          "frames": 31,
+          "seconds": 1,
+          "loop": true,
+          "rootMotion": false,
+          "robloxAnimationId": null
+        },
+        {
+          "name": "Attack",
+          "file": "arcane_warden_Attack.fbx",
+          "frames": 37,
+          "seconds": 1.2,
+          "loop": false,
+          "rootMotion": false,
+          "robloxAnimationId": null
+        },
+        {
+          "name": "Hit",
+          "file": "arcane_warden_Hit.fbx",
+          "frames": 16,
+          "seconds": 0.5,
+          "loop": false,
+          "rootMotion": false,
+          "robloxAnimationId": null
+        }
+      ],
+      "studioImported": false,
+      "liveEncounterBound": false
+    }
+  ]
+}

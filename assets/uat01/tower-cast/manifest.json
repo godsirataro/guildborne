@@ -1,0 +1,218 @@
+{
+  "schema": 1,
+  "fps": 30,
+  "assets": [
+    {
+      "id": "charter_warden",
+      "rigType": "Humanoid",
+      "region": "Human",
+      "role": "Story",
+      "bones": 16,
+      "triangles": 444,
+      "vertices": 296,
+      "restFiles": [
+        "charter_warden_Rest.fbx",
+        "charter_warden_Rest.glb"
+      ],
+      "clips": [
+        {
+          "name": "Idle",
+          "file": "charter_warden_Idle.fbx",
+          "frames": 61,
+          "seconds": 2,
+          "loop": true,
+          "rootMotion": false,
+          "robloxAnimationId": null
+        },
+        {
+          "name": "Walk",
+          "file": "charter_warden_Walk.fbx",
+          "frames": 31,
+          "seconds": 1,
+          "loop": true,
+          "rootMotion": false,
+          "robloxAnimationId": null
+        },
+        {
+          "name": "Greet",
+          "file": "charter_warden_Greet.fbx",
+          "frames": 55,
+          "seconds": 1.8,
+          "loop": false,
+          "rootMotion": false,
+          "robloxAnimationId": null
+        },
+        {
+          "name": "Work",
+          "file": "charter_warden_Work.fbx",
+          "frames": 61,
+          "seconds": 2,
+          "loop": true,
+          "rootMotion": false,
+          "robloxAnimationId": null
+        }
+      ],
+      "studioImported": false,
+      "liveEncounterBound": false
+    },
+    {
+      "id": "archivist",
+      "rigType": "Humanoid",
+      "region": "Elf",
+      "role": "Story",
+      "bones": 16,
+      "triangles": 396,
+      "vertices": 264,
+      "restFiles": [
+        "archivist_Rest.fbx",
+        "archivist_Rest.glb"
+      ],
+      "clips": [
+        {
+          "name": "Idle",
+          "file": "archivist_Idle.fbx",
+          "frames": 61,
+          "seconds": 2,
+          "loop": true,
+          "rootMotion": false,
+          "robloxAnimationId": null
+        },
+        {
+          "name": "Walk",
+          "file": "archivist_Walk.fbx",
+          "frames": 31,
+          "seconds": 1,
+          "loop": true,
+          "rootMotion": false,
+          "robloxAnimationId": null
+        },
+        {
+          "name": "Greet",
+          "file": "archivist_Greet.fbx",
+          "frames": 55,
+          "seconds": 1.8,
+          "loop": false,
+          "rootMotion": false,
+          "robloxAnimationId": null
+        },
+        {
+          "name": "Work",
+          "file": "archivist_Work.fbx",
+          "frames": 61,
+          "seconds": 2,
+          "loop": true,
+          "rootMotion": false,
+          "robloxAnimationId": null
+        }
+      ],
+      "studioImported": false,
+      "liveEncounterBound": false
+    },
+    {
+      "id": "council_clerk",
+      "rigType": "Humanoid",
+      "region": "Dwarf",
+      "role": "Story",
+      "bones": 16,
+      "triangles": 396,
+      "vertices": 264,
+      "restFiles": [
+        "council_clerk_Rest.fbx",
+        "council_clerk_Rest.glb"
+      ],
+      "clips": [
+        {
+          "name": "Idle",
+          "file": "council_clerk_Idle.fbx",
+          "frames": 61,
+          "seconds": 2,
+          "loop": true,
+          "rootMotion": false,
+          "robloxAnimationId": null
+        },
+        {
+          "name": "Walk",
+          "file": "council_clerk_Walk.fbx",
+          "frames": 31,
+          "seconds": 1,
+          "loop": true,
+          "rootMotion": false,
+          "robloxAnimationId": null
+        },
+        {
+          "name": "Greet",
+          "file": "council_clerk_Greet.fbx",
+          "frames": 55,
+          "seconds": 1.8,
+          "loop": false,
+          "rootMotion": false,
+          "robloxAnimationId": null
+        },
+        {
+          "name": "Work",
+          "file": "council_clerk_Work.fbx",
+          "frames": 61,
+          "seconds": 2,
+          "loop": true,
+          "rootMotion": false,
+          "robloxAnimationId": null
+        }
+      ],
+      "studioImported": false,
+      "liveEncounterBound": false
+    },
+    {
+      "id": "bookbinder",
+      "rigType": "Humanoid",
+      "region": "Orc",
+      "role": "Story",
+      "bones": 16,
+      "triangles": 516,
+      "vertices": 344,
+      "restFiles": [
+        "bookbinder_Rest.fbx",
+        "bookbinder_Rest.glb"
+      ],
+      "clips": [
+        {
+          "name": "Idle",
+          "file": "bookbinder_Idle.fbx",
+          "frames": 61,
+          "seconds": 2,
+          "loop": true,
+          "rootMotion": false,
+          "robloxAnimationId": null
+        },
+        {
+          "name": "Walk",
+          "file": "bookbinder_Walk.fbx",
+          "frames": 31,
+          "seconds": 1,
+          "loop": true,
+          "rootMotion": false,
+          "robloxAnimationId": null
+        },
+        {
+          "name": "Greet",
+          "file": "bookbinder_Greet.fbx",
+          "frames": 55,
+          "seconds": 1.8,
+          "loop": false,
+          "rootMotion": false,
+          "robloxAnimationId": null
+        },
+        {
+          "name": "Work",
+          "file": "bookbinder_Work.fbx",
+          "frames": 61,
+          "seconds": 2,
+          "loop": true,
+          "rootMotion": false,
+          "robloxAnimationId": null
+        }
+      ],
+      "studioImported": false,
+      "liveEncounterBound": false
+    }
+  ]
+}

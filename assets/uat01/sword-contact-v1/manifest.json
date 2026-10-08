@@ -1,0 +1,15 @@
+{
+  "status": "LOCAL_WEAPON_CONTACT_STUDY",
+  "weapon": "watchblade",
+  "bones": 16,
+  "fps": 30,
+  "duration": 6,
+  "cycle": 2,
+  "anticipationEnd": 0.2,
+  "cutSample": 0.3,
+  "followThroughEnd": 0.6,
+  "recoveryEnd": 0.95,
+  "platformImported": false,
+  "gameplayBound": false,
+  "notes": "Guard, torso anticipation, right-hand grip, diagonal cut and recovery. No target damage, server timing or locomotion retarget claimed."
+}

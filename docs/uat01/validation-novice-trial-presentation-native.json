@@ -1,0 +1,61 @@
+{
+  "scope": "Actual Q inputs, temporary eligible profiles, final native art; animation motor-only probe observed no Motor6D transforms and is not pose acceptance",
+  "results": [
+    {
+      "proxy": true,
+      "hud": true,
+      "collision": 0,
+      "effect": "Physical",
+      "age": 0.20170211791992188,
+      "class": "Warrior",
+      "nonidentityMotors": 0,
+      "visualParts": 4
+    },
+    {
+      "proxy": true,
+      "hud": true,
+      "collision": 0,
+      "effect": "Taunt",
+      "age": 0.21898698806762695,
+      "class": "Knight",
+      "nonidentityMotors": 0,
+      "visualParts": 3
+    },
+    {
+      "proxy": true,
+      "hud": true,
+      "collision": 0,
+      "effect": "Physical",
+      "age": 0.23691511154174805,
+      "class": "Archer",
+      "nonidentityMotors": 0,
+      "visualParts": 9
+    },
+    {
+      "proxy": true,
+      "hud": true,
+      "collision": 0,
+      "effect": "Magic",
+      "age": 0.2028489112854004,
+      "class": "Mage",
+      "nonidentityMotors": 0,
+      "visualParts": 1
+    },
+    {
+      "proxy": true,
+      "hud": true,
+      "collision": 0,
+      "effect": "Heal",
+      "age": 0.20289111137390137,
+      "class": "Priest",
+      "nonidentityMotors": 0,
+      "visualParts": 8
+    }
+  ],
+  "cleanup": {
+    "overlay": false,
+    "hud": false,
+    "proxy": false,
+    "effects": 0
+  }
+}

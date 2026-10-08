@@ -1,0 +1,1314 @@
+{
+  "exactRejoin": true,
+  "cityBeforeRejoin": {
+    "tavern": "OK",
+    "housingBlocked": "HallRequired",
+    "side": "OK",
+    "dismantle": "HousingOccupied",
+    "gather": "OK",
+    "data": {
+      "progression": {
+        "tutorialStep": "complete",
+        "everEquipped": true,
+        "welcomeSeen": true,
+        "tutorialCompleted": true,
+        "recruitedClasses": {
+          "Warrior": true,
+          "Archer": true,
+          "Knight": true,
+          "Priest": true,
+          "Mage": true
+        }
+      },
+      "expansion": {
+        "actors": {
+          "a:Priest": {
+            "path": "bard",
+            "skills": {
+              "master_art": true,
+              "vitality": true,
+              "path_art": true
+            },
+            "equipped": "bard_art",
+            "tier": 3
+          },
+          "player": {
+            "path": "warlord",
+            "skills": {
+              "path_art": true,
+              "master_art": true,
+              "vitality": true,
+              "ward": true
+            },
+            "equipped": "cleave_master",
+            "tier": 3
+          },
+          "a:Archer": {
+            "path": "shadow_dancer",
+            "skills": {
+              "master_art": true,
+              "vitality": true,
+              "path_art": true
+            },
+            "equipped": "shadow_dancer_art",
+            "tier": 3
+          },
+          "a:Mage": {
+            "path": "archmage",
+            "skills": {
+              "master_art": true,
+              "vitality": true,
+              "path_art": true
+            },
+            "equipped": "nova_master",
+            "tier": 3
+          },
+          "a:Warrior": {
+            "path": "sword_saint",
+            "skills": {
+              "master_art": true,
+              "vitality": true,
+              "path_art": true
+            },
+            "equipped": "lunge_master",
+            "tier": 3
+          },
+          "a:Knight": {
+            "path": "rune_knight",
+            "skills": {
+              "master_art": true,
+              "vitality": true,
+              "path_art": true
+            },
+            "equipped": "taunt",
+            "tier": 3
+          }
+        },
+        "nextBuilding": 4,
+        "gatherReady": {
+          "stone": 1790598209,
+          "ore": 1790598213,
+          "wood": 1790604131,
+          "herbs": 1790598207
+        },
+        "raceChosen": true,
+        "buildings": {
+          "b:1": {
+            "rotation": 1,
+            "x": 6,
+            "kind": "warehouse",
+            "z": -4
+          },
+          "b:2": {
+            "rotation": 2,
+            "x": 10,
+            "kind": "quarters",
+            "z": -4
+          },
+          "b:3": {
+            "rotation": 0,
+            "x": 6,
+            "kind": "forge",
+            "z": 2
+          }
+        },
+        "gathered": {
+          "stone": true,
+          "ore": true,
+          "wood": true,
+          "herbs": true
+        },
+        "tower": {
+          "nextRun": 4,
+          "highest": 10,
+          "checkpoint": 5
+        }
+      },
+      "levelCap": 10,
+      "settlement": {
+        "nextOffer": 2,
+        "elixirs": 0,
+        "tavernLevel": 2,
+        "nextHero": 2,
+        "nextJob": 2,
+        "journal": {
+          "timber_help": {
+            "state": "Active",
+            "progress": 1
+          },
+          "city_gate": {
+            "progress": 1,
+            "state": "Claimed"
+          }
+        },
+        "jobs": {
+          "job:1": {
+            "chance": 91,
+            "id": "job:1",
+            "missionId": "woodland",
+            "startAt": 1790603972,
+            "completeAt": 1790604152,
+            "members": {
+              "1": "h:1"
+            },
+            "reward": {
+              "Items": {
+                "1": {
+                  "Id": "timber",
+                  "Quantity": 6
+                }
+              },
+              "XP": 10,
+              "Gold": 8
+            }
+          }
+        }
+      },
+      "language": "en",
+      "inventory": {
+        "equipment": {
+          "recruit:Priest:1": {
+            "binding": "Account",
+            "definitionId": "apprentice_staff",
+            "upgradeLevel": 0
+          },
+          "shop:1:1": {
+            "binding": "Account",
+            "definitionId": "leather_vest",
+            "upgradeLevel": 0
+          },
+          "q:3:1": {
+            "binding": "Account",
+            "definitionId": "iron_sword",
+            "upgradeLevel": 0
+          },
+          "hire:1:1": {
+            "binding": "Account",
+            "definitionId": "training_sword",
+            "upgradeLevel": 0
+          },
+          "recruit:Archer:1": {
+            "binding": "Account",
+            "definitionId": "short_bow",
+            "upgradeLevel": 0
+          },
+          "recruit:Knight:1": {
+            "binding": "Account",
+            "definitionId": "knight_sword",
+            "upgradeLevel": 0
+          },
+          "recruit:Mage:1": {
+            "binding": "Account",
+            "definitionId": "mage_staff",
+            "upgradeLevel": 0
+          },
+          "shop:4:1": {
+            "binding": "Account",
+            "definitionId": "guardian_plate",
+            "upgradeLevel": 0
+          },
+          "shop:2:1": {
+            "binding": "Account",
+            "definitionId": "bronze_ring",
+            "upgradeLevel": 0
+          }
+        },
+        "stacks": {
+          "stone": 39,
+          "herb": 17,
+          "iron_ingot": 1,
+          "iron_ore": 29
+        },
+        "nextEquipmentSequence": 5
+      },
+      "party": {
+        "adventurerIds": {
+          "1": "a:Knight",
+          "2": "a:Warrior",
+          "3": "a:Archer",
+          "4": "a:Mage",
+          "5": "a:Priest"
+        }
+      },
+      "adventurers": {
+        "a:Priest": {
+          "equipmentSlots": {
+            "weapon": "recruit:Priest:1"
+          },
+          "stats": {
+            "Attack": 14,
+            "Defense": 5,
+            "Health": 57,
+            "WeaponBonus": 2
+          },
+          "id": "a:Priest",
+          "classId": "Priest",
+          "xp": 1160,
+          "name": "Sage",
+          "level": 10,
+          "baseStats": {
+            "Defense": 3,
+            "Health": 24,
+            "Attack": 4
+          },
+          "rank": "F"
+        },
+        "a:Archer": {
+          "equipmentSlots": {
+            "weapon": "recruit:Archer:1"
+          },
+          "stats": {
+            "Attack": 21,
+            "Defense": 2,
+            "Health": 49,
+            "WeaponBonus": 2
+          },
+          "id": "a:Archer",
+          "classId": "Archer",
+          "xp": 1160,
+          "name": "Ash",
+          "level": 10,
+          "baseStats": {
+            "Defense": 2,
+            "Health": 22,
+            "Attack": 8
+          },
+          "rank": "F"
+        },
+        "a:Knight": {
+          "equipmentSlots": {
+            "weapon": "recruit:Knight:1"
+          },
+          "stats": {
+            "Attack": 15,
+            "Defense": 7,
+            "Health": 73,
+            "WeaponBonus": 2
+          },
+          "id": "a:Knight",
+          "classId": "Knight",
+          "xp": 1160,
+          "name": "Bram",
+          "level": 10,
+          "baseStats": {
+            "Defense": 7,
+            "Health": 40,
+            "Attack": 4
+          },
+          "rank": "F"
+        },
+        "a:Mage": {
+          "equipmentSlots": {
+            "weapon": "recruit:Mage:1"
+          },
+          "stats": {
+            "Attack": 21,
+            "Defense": 1,
+            "Health": 53,
+            "WeaponBonus": 2
+          },
+          "id": "a:Mage",
+          "classId": "Mage",
+          "xp": 1160,
+          "name": "Lyra",
+          "level": 10,
+          "baseStats": {
+            "Defense": 1,
+            "Health": 20,
+            "Attack": 10
+          },
+          "rank": "F"
+        },
+        "a:Warrior": {
+          "equipmentSlots": [],
+          "stats": {
+            "Attack": 15,
+            "Defense": 4,
+            "Health": 63,
+            "WeaponBonus": 0
+          },
+          "id": "a:Warrior",
+          "classId": "Warrior",
+          "xp": 1265,
+          "name": "Rowan",
+          "level": 10,
+          "baseStats": {
+            "Defense": 4,
+            "Health": 30,
+            "Attack": 6
+          },
+          "rank": "F"
+        },
+        "h:1": {
+          "equipmentSlots": {
+            "weapon": "hire:1:1"
+          },
+          "stats": {
+            "Attack": 8,
+            "Defense": 4,
+            "Health": 30,
+            "WeaponBonus": 2
+          },
+          "id": "h:1",
+          "classId": "Warrior",
+          "xp": 0,
+          "name": "Rowan",
+          "level": 1,
+          "baseStats": {
+            "Defense": 4,
+            "Health": 30,
+            "Attack": 6
+          },
+          "rank": "F"
+        }
+      },
+      "hallLevel": 2,
+      "gold": 413,
+      "rosterCapacity": 10,
+      "quests": {
+        "nextRunSequence": 11,
+        "lastResult": {
+          "questName": "Trail Watch",
+          "runId": "q:10",
+          "reward": {
+            "Items": {
+              "1": {
+                "Id": "timber",
+                "Quantity": 1
+              },
+              "2": {
+                "Id": "herb",
+                "Quantity": 1
+              }
+            },
+            "XP": 5,
+            "Gold": 10
+          }
+        },
+        "claimedThrough": 10,
+        "firstClears": {
+          "timber_escort": true,
+          "quarry_patrol": true,
+          "trail_watch": true
+        }
+      },
+      "character": {
+        "classPathId": "warlord",
+        "stats": {
+          "Attack": 21,
+          "Defense": 11,
+          "Health": 66,
+          "WeaponBonus": 4
+        },
+        "definitionVersion": 1,
+        "classId": "Warrior",
+        "xp": 1004,
+        "raceId": "Elf",
+        "tier": 3,
+        "level": 10,
+        "equipmentSlots": {
+          "armor": "shop:4:1",
+          "accessory": "shop:2:1",
+          "weapon": "q:3:1"
+        },
+        "skillId": "power_strike"
+      }
+    }
+  },
+  "cityAfterRejoin": {
+    "status": "Active",
+    "data": {
+      "progression": {
+        "tutorialStep": "complete",
+        "everEquipped": true,
+        "welcomeSeen": true,
+        "tutorialCompleted": true,
+        "recruitedClasses": {
+          "Warrior": true,
+          "Archer": true,
+          "Knight": true,
+          "Priest": true,
+          "Mage": true
+        }
+      },
+      "expansion": {
+        "actors": {
+          "a:Priest": {
+            "skills": {
+              "master_art": true,
+              "vitality": true,
+              "path_art": true
+            },
+            "path": "bard",
+            "equipped": "bard_art",
+            "tier": 3
+          },
+          "player": {
+            "skills": {
+              "path_art": true,
+              "master_art": true,
+              "vitality": true,
+              "ward": true
+            },
+            "path": "warlord",
+            "equipped": "cleave_master",
+            "tier": 3
+          },
+          "a:Archer": {
+            "skills": {
+              "master_art": true,
+              "vitality": true,
+              "path_art": true
+            },
+            "path": "shadow_dancer",
+            "equipped": "shadow_dancer_art",
+            "tier": 3
+          },
+          "a:Warrior": {
+            "skills": {
+              "master_art": true,
+              "vitality": true,
+              "path_art": true
+            },
+            "path": "sword_saint",
+            "equipped": "lunge_master",
+            "tier": 3
+          },
+          "a:Mage": {
+            "skills": {
+              "master_art": true,
+              "vitality": true,
+              "path_art": true
+            },
+            "path": "archmage",
+            "equipped": "nova_master",
+            "tier": 3
+          },
+          "a:Knight": {
+            "skills": {
+              "master_art": true,
+              "vitality": true,
+              "path_art": true
+            },
+            "path": "rune_knight",
+            "equipped": "taunt",
+            "tier": 3
+          }
+        },
+        "nextBuilding": 4,
+        "gatherReady": {
+          "stone": 1790598209,
+          "ore": 1790598213,
+          "wood": 1790604131,
+          "herbs": 1790598207
+        },
+        "raceChosen": true,
+        "buildings": {
+          "b:1": {
+            "rotation": 1,
+            "x": 6,
+            "kind": "warehouse",
+            "z": -4
+          },
+          "b:2": {
+            "rotation": 2,
+            "x": 10,
+            "kind": "quarters",
+            "z": -4
+          },
+          "b:3": {
+            "rotation": 0,
+            "x": 6,
+            "kind": "forge",
+            "z": 2
+          }
+        },
+        "gathered": {
+          "stone": true,
+          "ore": true,
+          "wood": true,
+          "herbs": true
+        },
+        "tower": {
+          "nextRun": 4,
+          "highest": 10,
+          "checkpoint": 5
+        }
+      },
+      "levelCap": 10,
+      "settlement": {
+        "nextOffer": 2,
+        "elixirs": 0,
+        "tavernLevel": 2,
+        "nextHero": 2,
+        "nextJob": 2,
+        "journal": {
+          "timber_help": {
+            "state": "Active",
+            "progress": 1
+          },
+          "city_gate": {
+            "state": "Claimed",
+            "progress": 1
+          }
+        },
+        "jobs": {
+          "job:1": {
+            "chance": 91,
+            "id": "job:1",
+            "missionId": "woodland",
+            "startAt": 1790603972,
+            "completeAt": 1790604152,
+            "members": {
+              "1": "h:1"
+            },
+            "reward": {
+              "Items": {
+                "1": {
+                  "Id": "timber",
+                  "Quantity": 6
+                }
+              },
+              "XP": 10,
+              "Gold": 8
+            }
+          }
+        }
+      },
+      "language": "en",
+      "inventory": {
+        "equipment": {
+          "recruit:Priest:1": {
+            "binding": "Account",
+            "upgradeLevel": 0,
+            "definitionId": "apprentice_staff"
+          },
+          "shop:1:1": {
+            "binding": "Account",
+            "upgradeLevel": 0,
+            "definitionId": "leather_vest"
+          },
+          "q:3:1": {
+            "binding": "Account",
+            "upgradeLevel": 0,
+            "definitionId": "iron_sword"
+          },
+          "hire:1:1": {
+            "binding": "Account",
+            "upgradeLevel": 0,
+            "definitionId": "training_sword"
+          },
+          "recruit:Archer:1": {
+            "binding": "Account",
+            "upgradeLevel": 0,
+            "definitionId": "short_bow"
+          },
+          "recruit:Knight:1": {
+            "binding": "Account",
+            "upgradeLevel": 0,
+            "definitionId": "knight_sword"
+          },
+          "shop:4:1": {
+            "binding": "Account",
+            "upgradeLevel": 0,
+            "definitionId": "guardian_plate"
+          },
+          "recruit:Mage:1": {
+            "binding": "Account",
+            "upgradeLevel": 0,
+            "definitionId": "mage_staff"
+          },
+          "shop:2:1": {
+            "binding": "Account",
+            "upgradeLevel": 0,
+            "definitionId": "bronze_ring"
+          }
+        },
+        "stacks": {
+          "stone": 39,
+          "herb": 17,
+          "iron_ore": 29,
+          "iron_ingot": 1
+        },
+        "nextEquipmentSequence": 5
+      },
+      "party": {
+        "adventurerIds": {
+          "1": "a:Knight",
+          "2": "a:Warrior",
+          "3": "a:Archer",
+          "4": "a:Mage",
+          "5": "a:Priest"
+        }
+      },
+      "adventurers": {
+        "a:Priest": {
+          "equipmentSlots": {
+            "weapon": "recruit:Priest:1"
+          },
+          "stats": {
+            "Attack": 14,
+            "Defense": 5,
+            "Health": 57,
+            "WeaponBonus": 2
+          },
+          "id": "a:Priest",
+          "classId": "Priest",
+          "xp": 1160,
+          "name": "Sage",
+          "level": 10,
+          "baseStats": {
+            "Defense": 3,
+            "Health": 24,
+            "Attack": 4
+          },
+          "rank": "F"
+        },
+        "a:Archer": {
+          "equipmentSlots": {
+            "weapon": "recruit:Archer:1"
+          },
+          "stats": {
+            "Attack": 21,
+            "Defense": 2,
+            "Health": 49,
+            "WeaponBonus": 2
+          },
+          "id": "a:Archer",
+          "classId": "Archer",
+          "xp": 1160,
+          "name": "Ash",
+          "level": 10,
+          "baseStats": {
+            "Defense": 2,
+            "Health": 22,
+            "Attack": 8
+          },
+          "rank": "F"
+        },
+        "h:1": {
+          "equipmentSlots": {
+            "weapon": "hire:1:1"
+          },
+          "stats": {
+            "Attack": 8,
+            "Defense": 4,
+            "Health": 30,
+            "WeaponBonus": 2
+          },
+          "id": "h:1",
+          "classId": "Warrior",
+          "xp": 0,
+          "name": "Rowan",
+          "level": 1,
+          "baseStats": {
+            "Defense": 4,
+            "Health": 30,
+            "Attack": 6
+          },
+          "rank": "F"
+        },
+        "a:Warrior": {
+          "equipmentSlots": [],
+          "stats": {
+            "Attack": 15,
+            "Defense": 4,
+            "Health": 63,
+            "WeaponBonus": 0
+          },
+          "id": "a:Warrior",
+          "classId": "Warrior",
+          "xp": 1265,
+          "name": "Rowan",
+          "level": 10,
+          "baseStats": {
+            "Defense": 4,
+            "Health": 30,
+            "Attack": 6
+          },
+          "rank": "F"
+        },
+        "a:Mage": {
+          "equipmentSlots": {
+            "weapon": "recruit:Mage:1"
+          },
+          "stats": {
+            "Attack": 21,
+            "Defense": 1,
+            "Health": 53,
+            "WeaponBonus": 2
+          },
+          "id": "a:Mage",
+          "classId": "Mage",
+          "xp": 1160,
+          "name": "Lyra",
+          "level": 10,
+          "baseStats": {
+            "Defense": 1,
+            "Health": 20,
+            "Attack": 10
+          },
+          "rank": "F"
+        },
+        "a:Knight": {
+          "equipmentSlots": {
+            "weapon": "recruit:Knight:1"
+          },
+          "stats": {
+            "Attack": 15,
+            "Defense": 7,
+            "Health": 73,
+            "WeaponBonus": 2
+          },
+          "id": "a:Knight",
+          "classId": "Knight",
+          "xp": 1160,
+          "name": "Bram",
+          "level": 10,
+          "baseStats": {
+            "Defense": 7,
+            "Health": 40,
+            "Attack": 4
+          },
+          "rank": "F"
+        }
+      },
+      "hallLevel": 2,
+      "gold": 413,
+      "rosterCapacity": 10,
+      "quests": {
+        "nextRunSequence": 11,
+        "lastResult": {
+          "questName": "Trail Watch",
+          "runId": "q:10",
+          "reward": {
+            "Items": {
+              "1": {
+                "Id": "timber",
+                "Quantity": 1
+              },
+              "2": {
+                "Id": "herb",
+                "Quantity": 1
+              }
+            },
+            "XP": 5,
+            "Gold": 10
+          }
+        },
+        "claimedThrough": 10,
+        "firstClears": {
+          "timber_escort": true,
+          "quarry_patrol": true,
+          "trail_watch": true
+        }
+      },
+      "character": {
+        "classPathId": "warlord",
+        "stats": {
+          "Attack": 21,
+          "Defense": 11,
+          "Health": 66,
+          "WeaponBonus": 4
+        },
+        "definitionVersion": 1,
+        "classId": "Warrior",
+        "xp": 1004,
+        "raceId": "Elf",
+        "tier": 3,
+        "level": 10,
+        "equipmentSlots": {
+          "armor": "shop:4:1",
+          "accessory": "shop:2:1",
+          "weapon": "q:3:1"
+        },
+        "skillId": "power_strike"
+      }
+    },
+    "zone": "City"
+  },
+  "cityDispatchResult": {
+    "hero": {
+      "equipmentSlots": {
+        "weapon": "hire:1:1"
+      },
+      "stats": {
+        "Attack": 8,
+        "Defense": 4,
+        "Health": 30,
+        "WeaponBonus": 2
+      },
+      "id": "h:1",
+      "classId": "Warrior",
+      "xp": 10,
+      "name": "Rowan",
+      "level": 1,
+      "baseStats": {
+        "Defense": 4,
+        "Health": 30,
+        "Attack": 6
+      },
+      "rank": "F"
+    },
+    "stacks": {
+      "stone": 39,
+      "timber": 6,
+      "herb": 17,
+      "iron_ingot": 1,
+      "iron_ore": 29
+    },
+    "duplicate": "QuestNotActive",
+    "settlement": {
+      "nextOffer": 2,
+      "elixirs": 0,
+      "tavernLevel": 2,
+      "lastDispatch": {
+        "casualties": [],
+        "missionId": "woodland",
+        "success": true
+      },
+      "nextHero": 2,
+      "nextJob": 2,
+      "journal": {
+        "timber_help": {
+          "state": "Active",
+          "progress": 1
+        },
+        "city_gate": {
+          "state": "Claimed",
+          "progress": 1
+        }
+      },
+      "jobs": []
+    },
+    "claim": "OK",
+    "gold": 421
+  },
+  "cityHallHousing": {
+    "housing": "OK",
+    "gathers": {
+      "1": "OK",
+      "2": "OK",
+      "3": "OK",
+      "4": "OK",
+      "5": "OK",
+      "6": "OK",
+      "7": "OK"
+    },
+    "hall": "OK",
+    "capacity": 15,
+    "housingLevel": 2,
+    "stacks": {
+      "stone": 17,
+      "herb": 11,
+      "iron_ingot": 1,
+      "iron_ore": 21
+    },
+    "sideClaim": "OK",
+    "gold": 246,
+    "veteranLevel": 15,
+    "hallLevel": 3,
+    "playerLevel": 15,
+    "levelCap": 15
+  },
+  "cityFinal": {
+    "data": {
+      "progression": {
+        "tutorialStep": "complete",
+        "everEquipped": true,
+        "welcomeSeen": true,
+        "tutorialCompleted": true,
+        "recruitedClasses": {
+          "Warrior": true,
+          "Archer": true,
+          "Knight": true,
+          "Priest": true,
+          "Mage": true
+        }
+      },
+      "expansion": {
+        "actors": {
+          "a:Priest": {
+            "path": "bard",
+            "skills": {
+              "master_art": true,
+              "vitality": true,
+              "path_art": true
+            },
+            "equipped": "bard_art",
+            "tier": 3
+          },
+          "a:Archer": {
+            "path": "shadow_dancer",
+            "skills": {
+              "master_art": true,
+              "vitality": true,
+              "path_art": true
+            },
+            "equipped": "shadow_dancer_art",
+            "tier": 3
+          },
+          "player": {
+            "path": "warlord",
+            "skills": {
+              "master_art": true,
+              "path_art": true,
+              "vitality": true,
+              "ward": true
+            },
+            "equipped": "cleave_master",
+            "tier": 3
+          },
+          "a:Warrior": {
+            "path": "sword_saint",
+            "skills": {
+              "master_art": true,
+              "vitality": true,
+              "path_art": true
+            },
+            "equipped": "lunge_master",
+            "tier": 3
+          },
+          "a:Mage": {
+            "path": "archmage",
+            "skills": {
+              "master_art": true,
+              "vitality": true,
+              "path_art": true
+            },
+            "equipped": "nova_master",
+            "tier": 3
+          },
+          "a:Knight": {
+            "path": "rune_knight",
+            "skills": {
+              "master_art": true,
+              "vitality": true,
+              "path_art": true
+            },
+            "equipped": "taunt",
+            "tier": 3
+          }
+        },
+        "nextBuilding": 4,
+        "gatherReady": {
+          "stone": 1790598209,
+          "ore": 1790598213,
+          "wood": 1790604415,
+          "herbs": 1790598207
+        },
+        "tower": {
+          "nextRun": 4,
+          "highest": 10,
+          "checkpoint": 5
+        },
+        "buildings": {
+          "b:1": {
+            "rotation": 1,
+            "x": 6,
+            "kind": "warehouse",
+            "z": -4
+          },
+          "b:2": {
+            "rotation": 2,
+            "x": 10,
+            "z": -4,
+            "level": 2,
+            "kind": "quarters"
+          },
+          "b:3": {
+            "rotation": 0,
+            "x": 6,
+            "kind": "forge",
+            "z": 2
+          }
+        },
+        "gathered": {
+          "stone": true,
+          "ore": true,
+          "wood": true,
+          "herbs": true
+        },
+        "raceChosen": true
+      },
+      "levelCap": 15,
+      "settlement": {
+        "nextOffer": 2,
+        "elixirs": 0,
+        "tavernLevel": 2,
+        "lastDispatch": {
+          "casualties": [],
+          "missionId": "woodland",
+          "success": true
+        },
+        "nextHero": 2,
+        "nextJob": 2,
+        "journal": {
+          "city_gate": {
+            "state": "Claimed",
+            "progress": 1
+          },
+          "timber_help": {
+            "state": "Claimed",
+            "progress": 4
+          },
+          "herbalist": {
+            "state": "Claimed",
+            "progress": 6
+          }
+        },
+        "jobs": []
+      },
+      "language": "th",
+      "inventory": {
+        "equipment": {
+          "recruit:Priest:1": {
+            "binding": "Account",
+            "definitionId": "apprentice_staff",
+            "upgradeLevel": 0
+          },
+          "shop:1:1": {
+            "binding": "Account",
+            "definitionId": "leather_vest",
+            "upgradeLevel": 0
+          },
+          "q:3:1": {
+            "binding": "Account",
+            "definitionId": "iron_sword",
+            "upgradeLevel": 0
+          },
+          "hire:1:1": {
+            "binding": "Account",
+            "definitionId": "training_sword",
+            "upgradeLevel": 0
+          },
+          "recruit:Archer:1": {
+            "binding": "Account",
+            "definitionId": "short_bow",
+            "upgradeLevel": 0
+          },
+          "recruit:Knight:1": {
+            "binding": "Account",
+            "definitionId": "knight_sword",
+            "upgradeLevel": 0
+          },
+          "recruit:Mage:1": {
+            "binding": "Account",
+            "definitionId": "mage_staff",
+            "upgradeLevel": 0
+          },
+          "shop:4:1": {
+            "binding": "Account",
+            "definitionId": "guardian_plate",
+            "upgradeLevel": 0
+          },
+          "shop:2:1": {
+            "binding": "Account",
+            "definitionId": "bronze_ring",
+            "upgradeLevel": 0
+          }
+        },
+        "stacks": {
+          "stone": 17,
+          "herb": 11,
+          "iron_ingot": 1,
+          "iron_ore": 21
+        },
+        "nextEquipmentSequence": 5
+      },
+      "party": {
+        "adventurerIds": {
+          "1": "a:Knight",
+          "2": "a:Warrior",
+          "3": "a:Archer",
+          "4": "a:Mage",
+          "5": "a:Priest"
+        }
+      },
+      "adventurers": {
+        "a:Priest": {
+          "equipmentSlots": {
+            "weapon": "recruit:Priest:1"
+          },
+          "stats": {
+            "Attack": 19,
+            "Defense": 5,
+            "Health": 72,
+            "WeaponBonus": 2
+          },
+          "id": "a:Priest",
+          "classId": "Priest",
+          "xp": 1195,
+          "name": "Sage",
+          "level": 15,
+          "baseStats": {
+            "Defense": 3,
+            "Health": 24,
+            "Attack": 4
+          },
+          "rank": "F"
+        },
+        "a:Archer": {
+          "equipmentSlots": {
+            "weapon": "recruit:Archer:1"
+          },
+          "stats": {
+            "Attack": 26,
+            "Defense": 2,
+            "Health": 64,
+            "WeaponBonus": 2
+          },
+          "id": "a:Archer",
+          "classId": "Archer",
+          "xp": 1195,
+          "name": "Ash",
+          "level": 15,
+          "baseStats": {
+            "Defense": 2,
+            "Health": 22,
+            "Attack": 8
+          },
+          "rank": "F"
+        },
+        "a:Knight": {
+          "equipmentSlots": {
+            "weapon": "recruit:Knight:1"
+          },
+          "stats": {
+            "Attack": 20,
+            "Defense": 7,
+            "Health": 88,
+            "WeaponBonus": 2
+          },
+          "id": "a:Knight",
+          "classId": "Knight",
+          "xp": 1195,
+          "name": "Bram",
+          "level": 15,
+          "baseStats": {
+            "Defense": 7,
+            "Health": 40,
+            "Attack": 4
+          },
+          "rank": "F"
+        },
+        "a:Warrior": {
+          "equipmentSlots": [],
+          "stats": {
+            "Attack": 20,
+            "Defense": 4,
+            "Health": 78,
+            "WeaponBonus": 0
+          },
+          "id": "a:Warrior",
+          "classId": "Warrior",
+          "xp": 1300,
+          "name": "Rowan",
+          "level": 15,
+          "baseStats": {
+            "Defense": 4,
+            "Health": 30,
+            "Attack": 6
+          },
+          "rank": "F"
+        },
+        "a:Mage": {
+          "equipmentSlots": {
+            "weapon": "recruit:Mage:1"
+          },
+          "stats": {
+            "Attack": 26,
+            "Defense": 1,
+            "Health": 68,
+            "WeaponBonus": 2
+          },
+          "id": "a:Mage",
+          "classId": "Mage",
+          "xp": 1195,
+          "name": "Lyra",
+          "level": 15,
+          "baseStats": {
+            "Defense": 1,
+            "Health": 20,
+            "Attack": 10
+          },
+          "rank": "F"
+        },
+        "h:1": {
+          "equipmentSlots": {
+            "weapon": "hire:1:1"
+          },
+          "stats": {
+            "Attack": 8,
+            "Defense": 4,
+            "Health": 30,
+            "WeaponBonus": 2
+          },
+          "id": "h:1",
+          "classId": "Warrior",
+          "xp": 10,
+          "name": "Rowan",
+          "level": 1,
+          "baseStats": {
+            "Defense": 4,
+            "Health": 30,
+            "Attack": 6
+          },
+          "rank": "F"
+        }
+      },
+      "hallLevel": 3,
+      "gold": 246,
+      "rosterCapacity": 15,
+      "quests": {
+        "nextRunSequence": 11,
+        "lastResult": {
+          "questName": "Trail Watch",
+          "runId": "q:10",
+          "reward": {
+            "Items": {
+              "1": {
+                "Id": "timber",
+                "Quantity": 1
+              },
+              "2": {
+                "Id": "herb",
+                "Quantity": 1
+              }
+            },
+            "XP": 5,
+            "Gold": 10
+          }
+        },
+        "claimedThrough": 10,
+        "firstClears": {
+          "timber_escort": true,
+          "quarry_patrol": true,
+          "trail_watch": true
+        }
+      },
+      "character": {
+        "equipmentSlots": {
+          "armor": "shop:4:1",
+          "accessory": "shop:2:1",
+          "weapon": "q:3:1"
+        },
+        "stats": {
+          "Attack": 26,
+          "Defense": 11,
+          "Health": 81,
+          "WeaponBonus": 4
+        },
+        "definitionVersion": 1,
+        "classId": "Warrior",
+        "xp": 1039,
+        "raceId": "Elf",
+        "tier": 3,
+        "level": 15,
+        "classPathId": "warlord",
+        "skillId": "power_strike"
+      }
+    },
+    "revision": 275
+  }
+}

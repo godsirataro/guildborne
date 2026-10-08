@@ -1,0 +1,80 @@
+[
+  {
+    "id": "three_gates",
+    "triangles": 576,
+    "bounds": [
+      112.0,
+      88.0,
+      21.0
+    ],
+    "sourceParts": 48,
+    "icon": "three_gates.png",
+    "robloxMeshAssetId": null,
+    "robloxImageAssetId": null
+  },
+  {
+    "id": "supply_court",
+    "triangles": 204,
+    "bounds": [
+      112.0,
+      88.0,
+      15.0
+    ],
+    "sourceParts": 17,
+    "icon": "supply_court.png",
+    "robloxMeshAssetId": null,
+    "robloxImageAssetId": null
+  },
+  {
+    "id": "warden_approach",
+    "triangles": 456,
+    "bounds": [
+      112.0,
+      96.0,
+      23.0
+    ],
+    "sourceParts": 38,
+    "icon": "warden_approach.png",
+    "robloxMeshAssetId": null,
+    "robloxImageAssetId": null
+  },
+  {
+    "id": "living_ledger",
+    "triangles": 804,
+    "bounds": [
+      112.0,
+      96.0,
+      11.0
+    ],
+    "sourceParts": 67,
+    "icon": "living_ledger.png",
+    "robloxMeshAssetId": null,
+    "robloxImageAssetId": null
+  },
+  {
+    "id": "alliance_gate",
+    "triangles": 216,
+    "bounds": [
+      112.0,
+      96.0,
+      21.0
+    ],
+    "sourceParts": 18,
+    "icon": "alliance_gate.png",
+    "robloxMeshAssetId": null,
+    "robloxImageAssetId": null
+  },
+  {
+    "id": "heart_chamber",
+    "triangles": 576,
+    "bounds": [
+      112.0,
+      112.0,
+      26.0
+    ],
+    "sourceParts": 48,
+    "icon": "heart_chamber.png",
+    "robloxMeshAssetId": null,
+    "robloxImageAssetId": null
+  }
+]

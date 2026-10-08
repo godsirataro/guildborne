@@ -1,0 +1,344 @@
+{
+  "samples": [
+    {
+      "boss": 658,
+      "action": 1791019101.92546,
+      "z": 1344,
+      "phase": 1,
+      "evaders": 0,
+      "hp": 33,
+      "x": 500
+    },
+    {
+      "warning": "Hammer Fall",
+      "boss": 658,
+      "action": 1791019101.92546,
+      "z": 1344,
+      "phase": 1,
+      "evaders": 1,
+      "hp": 33,
+      "x": 500
+    },
+    {
+      "warning": "Hammer Fall",
+      "boss": 624,
+      "action": 1791019101.92546,
+      "z": 1344,
+      "phase": 1,
+      "evaders": 1,
+      "hp": 33,
+      "x": 507.2852783203125
+    },
+    {
+      "boss": 612,
+      "action": 1791019105.258237,
+      "z": 1344,
+      "phase": 1,
+      "evaders": 0,
+      "hp": 33,
+      "x": 508.78125
+    },
+    {
+      "boss": 573,
+      "action": 1791019105.258237,
+      "z": 1344,
+      "phase": 1,
+      "evaders": 0,
+      "hp": 33,
+      "x": 508.78125
+    },
+    {
+      "warning": "Hammer Fall",
+      "boss": 561,
+      "action": 1791019105.258237,
+      "z": 1344,
+      "phase": 1,
+      "evaders": 1,
+      "hp": 33,
+      "x": 508.78125
+    },
+    {
+      "warning": "Hammer Fall",
+      "boss": 551,
+      "action": 1791019105.258237,
+      "z": 1344.00390625,
+      "phase": 1,
+      "evaders": 1,
+      "hp": 33,
+      "x": 501.2542724609375
+    },
+    {
+      "boss": 525,
+      "action": 1791019108.625962,
+      "z": 1344.00390625,
+      "phase": 1,
+      "evaders": 0,
+      "hp": 33,
+      "x": 500.2421875
+    },
+    {
+      "boss": 519,
+      "action": 1791019108.625962,
+      "z": 1344.00390625,
+      "phase": 1,
+      "evaders": 0,
+      "hp": 33,
+      "x": 500.2421875
+    },
+    {
+      "warning": "Hammer Fall",
+      "boss": 519,
+      "action": 1791019108.625962,
+      "z": 1344.00390625,
+      "phase": 1,
+      "evaders": 2,
+      "hp": 33,
+      "x": 500.2421875
+    },
+    {
+      "warning": "Hammer Fall",
+      "boss": 509,
+      "action": 1791019108.625962,
+      "z": 1344.00390625,
+      "phase": 1,
+      "evaders": 2,
+      "hp": 33,
+      "x": 492.931640625
+    },
+    {
+      "boss": 487,
+      "action": 1791019111.975329,
+      "z": 1344.00390625,
+      "phase": 1,
+      "evaders": 0,
+      "hp": 33,
+      "x": 491.45703125
+    },
+    {
+      "boss": 434,
+      "action": 1791019111.975329,
+      "z": 1344.00390625,
+      "phase": 2,
+      "evaders": 0,
+      "hp": 33,
+      "x": 491.45703125
+    },
+    {
+      "warning": "Hammer Fall",
+      "boss": 424,
+      "action": 1791019111.975329,
+      "z": 1344.00390625,
+      "phase": 2,
+      "evaders": 2,
+      "hp": 33,
+      "x": 491.45703125
+    },
+    {
+      "warning": "Hammer Fall",
+      "boss": 408,
+      "action": 1791019111.975329,
+      "z": 1344.0078125,
+      "phase": 2,
+      "evaders": 2,
+      "hp": 33,
+      "x": 499.0555419921875
+    },
+    {
+      "boss": 392,
+      "action": 1791019115.340949,
+      "z": 1344.0078125,
+      "phase": 2,
+      "evaders": 0,
+      "hp": 33,
+      "x": 500.28125
+    },
+    {
+      "boss": 382,
+      "action": 1791019115.340949,
+      "z": 1344.0078125,
+      "phase": 2,
+      "evaders": 0,
+      "hp": 33,
+      "x": 500.28125
+    },
+    {
+      "warning": "Fault Line",
+      "boss": 366,
+      "action": 1791019115.340949,
+      "z": 1344.0078125,
+      "phase": 2,
+      "evaders": 3,
+      "hp": 33,
+      "x": 500.28125
+    },
+    {
+      "warning": "Fault Line",
+      "boss": 366,
+      "action": 1791019115.340949,
+      "z": 1344.01171875,
+      "phase": 2,
+      "evaders": 3,
+      "hp": 33,
+      "x": 492.7612609863281
+    },
+    {
+      "boss": 325,
+      "action": 1791019118.957596,
+      "z": 1344.01171875,
+      "phase": 2,
+      "evaders": 0,
+      "hp": 33,
+      "x": 491.45703125
+    },
+    {
+      "boss": 315,
+      "action": 1791019118.957596,
+      "z": 1344.01171875,
+      "phase": 2,
+      "evaders": 0,
+      "hp": 33,
+      "x": 491.45703125
+    },
+    {
+      "boss": 305,
+      "action": 1791019118.957596,
+      "z": 1344.01171875,
+      "phase": 2,
+      "evaders": 0,
+      "hp": 33,
+      "x": 491.45703125
+    },
+    {
+      "warning": "Hammer Fall",
+      "boss": 259,
+      "action": 1791019118.957596,
+      "z": 1344.01171875,
+      "phase": 2,
+      "evaders": 2,
+      "hp": 33,
+      "x": 491.45703125
+    },
+    {
+      "warning": "Hammer Fall",
+      "boss": 259,
+      "action": 1791019118.957596,
+      "z": 1344.015625,
+      "phase": 2,
+      "evaders": 2,
+      "hp": 33,
+      "x": 499.25726318359375
+    },
+    {
+      "boss": 233,
+      "action": 1791019122.707547,
+      "z": 1344.015625,
+      "phase": 2,
+      "evaders": 0,
+      "hp": 33,
+      "x": 500.28125
+    },
+    {
+      "boss": 227,
+      "action": 1791019122.707547,
+      "z": 1344.015625,
+      "phase": 2,
+      "evaders": 0,
+      "hp": 33,
+      "x": 500.28125
+    },
+    {
+      "warning": "Fault Line",
+      "boss": 217,
+      "action": 1791019122.707547,
+      "z": 1344.015625,
+      "phase": 2,
+      "evaders": 3,
+      "hp": 33,
+      "x": 500.28125
+    },
+    {
+      "warning": "Fault Line",
+      "boss": 217,
+      "action": 1791019122.707547,
+      "z": 1344.01953125,
+      "phase": 2,
+      "evaders": 3,
+      "hp": 33,
+      "x": 492.796630859375
+    },
+    {
+      "boss": 186,
+      "action": 1791019126.440243,
+      "z": 1344.01953125,
+      "phase": 2,
+      "evaders": 0,
+      "hp": 33,
+      "x": 491.45703125
+    },
+    {
+      "boss": 166,
+      "action": 1791019126.440243,
+      "z": 1344.01953125,
+      "phase": 2,
+      "evaders": 0,
+      "hp": 33,
+      "x": 491.45703125
+    },
+    {
+      "boss": 150,
+      "action": 1791019126.440243,
+      "z": 1344.01953125,
+      "phase": 2,
+      "evaders": 0,
+      "hp": 33,
+      "x": 491.45703125
+    },
+    {
+      "warning": "Hammer Fall",
+      "boss": 134,
+      "action": 1791019126.440243,
+      "z": 1344.01953125,
+      "phase": 2,
+      "evaders": 1,
+      "hp": 33,
+      "x": 491.45703125
+    },
+    {
+      "warning": "Hammer Fall",
+      "boss": 118,
+      "action": 1791019126.440243,
+      "z": 1344.0234375,
+      "phase": 2,
+      "evaders": 1,
+      "hp": 33,
+      "x": 499.37298583984375
+    },
+    {
+      "boss": 68,
+      "action": 1791019130.17437,
+      "z": 1344.0234375,
+      "phase": 2,
+      "evaders": 0,
+      "hp": 33,
+      "x": 500.28125
+    },
+    {
+      "boss": 68,
+      "action": 1791019130.17437,
+      "z": 1344.0234375,
+      "phase": 2,
+      "evaders": 0,
+      "hp": 33,
+      "x": 500.28125
+    }
+  ],
+  "console": {
+    "content": [
+      {
+        "type": "text",
+        "text": "[Guildborne] Phase 1 ready · Studio memory · not saved after Stop\n[Guildborne] profile_loaded {\"revision\":0}\n[Guildborne] session_started []\n[Guildborne] Phase 1 client ready\n[Roblox][sabuiltin_Assistant.rbxm.Assistant.Packages._Index.AssistantUI.AssistantUI.Util.TestAutomationUtils] VirtualInput::SendMousePosition: position (95.1, 70.7) hits CoreGUI.\nStack Begin\nScript 'sabuiltin_Assistant.rbxm.Assistant.Packages._Index.AssistantUI.AssistantUI.Util.TestAutomationUtils', Line 286\nScript 'sabuiltin_Assistant.rbxm.Assistant.Packages._Index.AssistantUI.AssistantUI.Util.TestAutomationUtils', Line 164\nStack End\n[Guildborne] profile_saved {\"action\":\"SelectPlayerClass\",\"revision\":1}\n[Guildborne] player_class_selected {\"classId\":\"Warrior\"}\n[Guildborne] profile_saved {\"action\":\"Recruit\",\"revision\":2}\n[Guildborne] adventurer_recruited {\"classId\":\"Warrior\"}\n[Guildborne] profile_saved {\"action\":\"UpdateParty\",\"revision\":3}\n[Guildborne] party_created []\n[Guildborne] profile_saved {\"action\":\"StartQuest\",\"revision\":4}\n[Guildborne] quest_started {\"questId\":\"trail_watch\"}\n[Guildborne] profile_saved {\"action\":\"AcceptTask\",\"revision\":5}\n[Guildborne] profile_saved {\"action\":\"TravelZone\",\"revision\":6}\n[Guildborne] profile_saved {\"action\":\"ClaimTask\",\"revision\":7}\n[Guildborne] gold_created {\"amount\":15,\"reason\":\"JournalReward\"}\n[Guildborne] journal_completed {\"questId\":\"city_gate\"}\n[Guildborne] profile_saved {\"action\":\"CompleteQuest\",\"revision\":8}\n[Guildborne] gold_created {\"amount\":30,\"reason\":\"QuestReward\"}\n[Guildborne] item_acquired {\"quantity\":1,\"itemId\":\"training_sword\"}\n[Guildborne] item_acquired {\"quantity\":2,\"itemId\":\"herb\"}\n[Guildborne] quest_completed {\"questId\":\"trail_watch\"}\n[Guildborne] profile_saved {\"action\":\"Recruit\",\"revision\":9}\n[Guildborne] gold_destroyed {\"amount\":20,\"reason\":\"Recruitment\"}\n[Guildborne] item_acquired {\"quantity\":1,\"itemId\":\"apprentice_staff\"}\n[Guildborne] adventurer_recruited {\"classId\":\"Priest\"}\n[Guildborne] profile_saved {\"action\":\"UpdateParty\",\"revision\":10}\n[Guildborne] party_updated []\n[Guildborne] profile_saved {\"action\":\"AcceptTask\",\"revision\":11}\n[Guildborne] profile_saved {\"action\":\"ClaimTask\",\"revision\":12}\n[Guildborne] gold_created {\"amount\":10,\"reason\":\"JournalReward\"}\n[Guildborne] journal_completed {\"questId\":\"company_reinforcement\"}\n[Guildborne] profile_saved {\"action\":\"TravelZone\",\"revision\":13}\n[Guildborne] profile_saved {\"action\":\"AcceptTask\",\"revision\":14}\n[Guildborne] profile_saved {\"action\":\"TravelZone\",\"revision\":15}\n[Guildborne] profile_saved {\"action\":\"CombatReward\",\"revision\":16}\n[Guildborne] gold_created {\"amount\":3,\"reason\":\"encounter:greenwood_scout\"}\n[Guildborne] combat_reward []\n[Guildborne] profile_saved {\"action\":\"CombatReward\",\"revision\":17}\n[Guildborne] gold_created {\"amount\":3,\"reason\":\"encounter:greenwood_scout\"}\n[Guildborne] combat_reward []\nAssistantCommand:1: assertion failed!\nStack Begin\nScript 'AssistantCommand', Line 1\nStack End\n[Guildborne] profile_saved {\"action\":\"TravelZone\",\"revision\":18}\nAssistantCommand:1: assertion failed!\nStack Begin\nScript 'AssistantCommand', Line 1\nStack End\n[Guildborne] profile_saved {\"action\":\"ClaimTask\",\"revision\":19}\n[Guildborne] gold_created {\"amount\":20,\"reason\":\"JournalReward\"}\n[Guildborne] journal_completed {\"questId\":\"greenwood_watch\"}\n[Guildborne] profile_saved {\"action\":\"AcceptTask\",\"revision\":20}\n[Guildborne] profile_saved {\"action\":\"Recruit\",\"revision\":21}\n[Guildborne] gold_destroyed {\"amount\":20,\"reason\":\"Recruitment\"}\n[Guildborne] item_acquired {\"quantity\":1,\"itemId\":\"knight_sword\"}\n[Guildborne] adventurer_recruited {\"classId\":\"Knight\"}\n[Guildborne] profile_saved {\"action\":\"Recruit\",\"revision\":22}\n[Guildborne] gold_destroyed {\"amount\":20,\"reason\":\"Recruitment\"}\n[Guildborne] item_acquired {\"quantity\":1,\"itemId\":\"mage_staff\"}\n[Guildborne] adventurer_recruited {\"classId\":\"Mage\"}\n[Guildborne] profile_saved {\"action\":\"UpdateParty\",\"revision\":23}\n[Guildborne] party_updated []\n[Guildborne] profile_saved {\"action\":\"AssignEquipment\",\"revision\":24}\n[Guildborne] equipment_assigned {\"itemId\":\"knight_sword\"}\n[Guildborne] profile_saved {\"action\":\"AssignEquipment\",\"revision\":25}\n[Guildborne] equipment_assigned {\"itemId\":\"mage_staff\"}\n[Guildborne] profile_saved {\"action\":\"AssignEquipment\",\"revision\":26}\n[Guildborne] equipment_assigned {\"itemId\":\"apprentice_staff\"}\n[Guildborne] profile_saved {\"action\":\"AssignEquipment\",\"revision\":27}\n[Guildborne] equipment_assigned {\"itemId\":\"training_sword\"}\n[Guildborne] profile_saved {\"action\":\"TravelZone\",\"revision\":28}\n[Guildborne] profile_saved {\"action\":\"CombatReward\",\"revision\":29}\n[Guildborne] gold_created {\"amount\":12,\"reason\":\"encounter:forest_captain\"}\n[Guildborne] item_acquired {\"quantity\":2,\"itemId\":\"timber\"}\n[Guildborne] combat_reward []\n[Guildborne] profile_saved {\"action\":\"TravelZone\",\"revision\":30}\nAssistantCommand:1: assertion failed!\nStack Begin\nScript 'AssistantCommand', Line 1\nStack End\n[Guildborne] profile_saved {\"action\":\"ClaimTask\",\"revision\":31}\n[Guildborne] gold_created {\"amount\":35,\"reason\":\"JournalReward\"}\n[Guildborne] journal_completed {\"questId\":\"greenwood_captain\"}\n[Guildborne] profile_saved {\"action\":\"AcceptTask\",\"revision\":32}\n[Guildborne] profile_saved {\"action\":\"TravelZone\",\"revision\":33}\n[Guildborne] profile_saved {\"action\":\"CombatReward\",\"revision\":34}\n[Guildborne] gold_created {\"amount\":5,\"reason\":\"encounter:quarry_raider\"}\n[Guildborne] combat_reward []\n[Guildborne] profile_saved {\"action\":\"BuyEquipment\",\"revision\":35}\n[Guildborne] gold_destroyed {\"amount\":30,\"reason\":\"EquipmentPurchase\"}\n[Guildborne] item_acquired {\"quantity\":1,\"itemId\":\"guardian_plate\"}\n[Guildborne] profile_saved {\"action\":\"AssignEquipment\",\"revision\":36}\n[Guildborne] equipment_assigned {\"itemId\":\"guardian_plate\"}\n[Guildborne] profile_saved {\"action\":\"BuyEquipment\",\"revision\":37}\n[Guildborne] gold_destroyed {\"amount\":24,\"reason\":\"EquipmentPurchase\"}\n[Guildborne] item_acquired {\"quantity\":1,\"itemId\":\"woven_robes\"}\n[Guildborne] profile_saved {\"action\":\"AssignEquipment\",\"revision\":38}\n[Guildborne] equipment_assigned {\"itemId\":\"woven_robes\"}\n[Guildborne] profile_saved {\"action\":\"CombatReward\",\"revision\":39}\n[Guildborne] gold_created {\"amount\":5,\"reason\":\"encounter:quarry_raider\"}\n[Guildborne] combat_reward []\n[Guildborne] profile_saved {\"action\":\"TravelZone\",\"revision\":40}\n[Guildborne] profile_saved {\"action\":\"ClaimTask\",\"revision\":41}\n[Guildborne] gold_created {\"amount\":30,\"reason\":\"JournalReward\"}\n[Guildborne] journal_completed {\"questId\":\"ironveil_watch\"}\n[Guildborne] profile_saved {\"action\":\"AcceptTask\",\"revision\":42}\n[Guildborne] profile_saved {\"action\":\"BuyEquipment\",\"revision\":43}\n[Guildborne] gold_destroyed {\"amount\":20,\"reason\":\"EquipmentPurchase\"}\n[Guildborne] item_acquired {\"quantity\":1,\"itemId\":\"vitality_charm\"}\n[Guildborne] profile_saved {\"action\":\"AssignEquipment\",\"revision\":44}\n[Guildborne] equipment_assigned {\"itemId\":\"vitality_charm\"}\n[Guildborne] profile_saved {\"action\":\"BuyEquipment\",\"revision\":45}\n[Guildborne] gold_destroyed {\"amount\":28,\"reason\":\"EquipmentPurchase\"}\n[Guildborne] item_acquired {\"quantity\":1,\"itemId\":\"iron_sword\"}\n[Guildborne] profile_saved {\"action\":\"AssignEquipment\",\"revision\":46}\n[Guildborne] equipment_assigned {\"itemId\":\"iron_sword\"}\n[Guildborne] profile_saved {\"action\":\"TravelZone\",\"revision\":47}\n[Guildborne] profile_saved {\"action\":\"CombatReward\",\"revision\":48}\n[Guildborne] gold_created {\"amount\":18,\"reason\":\"encounter:quarry_guardian\"}\n[Guildborne] item_acquired {\"quantity\":2,\"itemId\":\"iron_ore\"}\n[Guildborne] combat_reward []\nAssistantCommand:1: assertion failed!\nStack Begin\nScript 'AssistantCommand', Line 1\nStack End\nAssistantCommand:1: assertion failed!\nStack Begin\nScript 'AssistantCommand', Line 1\nStack End"
+      }
+    ],
+    "isError": false
+  }
+}

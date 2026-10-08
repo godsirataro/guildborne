@@ -1,0 +1,12 @@
+{
+  "navigationFix": "Exact saved City.luau reloaded by a native server Script; no profile writes or tool movement. Full fresh startup still pending.",
+  "result": {
+    "content": [
+      {
+        "type": "text",
+        "text": "{\"revision\":150,\"campaign\":{\"claimed\":18,\"hallPermit\":7,\"choices\":{\"allocate_timber\":\"workers\",\"choose_bridge_route\":\"direct\",\"choose_motto\":\"together\",\"choose_crest\":\"compass\",\"choose_joint_review\":\"workers\",\"choose_witness_route\":\"guard\"},\"objectives\":{\"reach_tower_checkpoint_five\":true},\"version\":1,\"recruitHero\":\"h:1\"},\"position\":\"2000, 102.99801635742188, 1553\",\"firstHalfPrompt\":false,\"secondHalfPrompt\":true}"
+      }
+    ],
+    "isError": false
+  }
+}

@@ -1,0 +1,3474 @@
+{
+  "schema": 1,
+  "units": "stud",
+  "upAxis": "Y",
+  "palette": {
+    "wood": [
+      107,
+      73,
+      49
+    ],
+    "dark": [
+      57,
+      48,
+      42
+    ],
+    "ivory": [
+      227,
+      216,
+      185
+    ],
+    "gold": [
+      200,
+      160,
+      78
+    ],
+    "stone": [
+      115,
+      125,
+      135
+    ],
+    "navy": [
+      61,
+      91,
+      128
+    ],
+    "red": [
+      143,
+      68,
+      60
+    ],
+    "green": [
+      77,
+      136,
+      110
+    ],
+    "glass": [
+      114,
+      185,
+      181
+    ],
+    "steel": [
+      159,
+      174,
+      185
+    ]
+  },
+  "assets": [
+    {
+      "id": "guild_office",
+      "kind": "CityFurnishing",
+      "building": "Guild Administration",
+      "parts": [
+        {
+          "name": "TableTop",
+          "size": [
+            13,
+            0.5,
+            6
+          ],
+          "position": [
+            -16,
+            3,
+            -8
+          ],
+          "color": "wood",
+          "rotation": [
+            0,
+            0,
+            0
+          ],
+          "solid": true
+        },
+        {
+          "name": "TableLeg",
+          "size": [
+            0.45,
+            3,
+            0.45
+          ],
+          "position": [
+            -21.95,
+            1.5,
+            -10.45
+          ],
+          "color": "dark",
+          "rotation": [
+            0,
+            0,
+            0
+          ],
+          "solid": true
+        },
+        {
+          "name": "TableLeg",
+          "size": [
+            0.45,
+            3,
+            0.45
+          ],
+          "position": [
+            -21.95,
+            1.5,
+            -5.55
+          ],
+          "color": "dark",
+          "rotation": [
+            0,
+            0,
+            0
+          ],
+          "solid": true
+        },
+        {
+          "name": "TableLeg",
+          "size": [
+            0.45,
+            3,
+            0.45
+          ],
+          "position": [
+            -10.05,
+            1.5,
+            -10.45
+          ],
+          "color": "dark",
+          "rotation": [
+            0,
+            0,
+            0
+          ],
+          "solid": true
+        },
+        {
+          "name": "TableLeg",
+          "size": [
+            0.45,
+            3,
+            0.45
+          ],
+          "position": [
+            -10.05,
+            1.5,
+            -5.55
+          ],
+          "color": "dark",
+          "rotation": [
+            0,
+            0,
+            0
+          ],
+          "solid": true
+        },
+        {
+          "name": "Stool",
+          "size": [
+            2.3,
+            0.4,
+            2.3
+          ],
+          "position": [
+            -16,
+            2.2,
+            -14
+          ],
+          "color": "wood",
+          "rotation": [
+            0,
+            0,
+            0
+          ],
+          "solid": true
+        },
+        {
+          "name": "StoolFoot",
+          "size": [
+            0.35,
+            2,
+            0.35
+          ],
+          "position": [
+            -16.75,
+            1,
+            -14
+          ],
+          "color": "dark",
+          "rotation": [
+            0,
+            0,
+            0
+          ],
+          "solid": true
+        },
+        {
+          "name": "StoolFoot",
+          "size": [
+            0.35,
+            2,
+            0.35
+          ],
+          "position": [
+            -15.25,
+            1,
+            -14
+          ],
+          "color": "dark",
+          "rotation": [
+            0,
+            0,
+            0
+          ],
+          "solid": true
+        },
+        {
+          "name": "OpenLedger",
+          "size": [
+            2,
+            0.12,
+            1.5
+          ],
+          "position": [
+            -20,
+            3.32,
+            -8
+          ],
+          "color": "ivory",
+          "rotation": [
+            0,
+            0,
+            0
+          ],
+          "solid": false
+        },
+        {
+          "name": "OpenLedger",
+          "size": [
+            2,
+            0.12,
+            1.5
+          ],
+          "position": [
+            -16,
+            3.32,
+            -8
+          ],
+          "color": "ivory",
+          "rotation": [
+            0,
+            0,
+            0
+          ],
+          "solid": false
+        },
+        {
+          "name": "OpenLedger",
+          "size": [
+            2,
+            0.12,
+            1.5
+          ],
+          "position": [
+            -12,
+            3.32,
+            -8
+          ],
+          "color": "ivory",
+          "rotation": [
+            0,
+            0,
+            0
+          ],
+          "solid": false
+        },
+        {
+          "name": "ShelfSide",
+          "size": [
+            0.5,
+            9,
+            2.8
+          ],
+          "position": [
+            11,
+            4.5,
+            -15
+          ],
+          "color": "wood",
+          "rotation": [
+            0,
+            0,
+            0
+          ],
+          "solid": true
+        },
+        {
+          "name": "ShelfSide",
+          "size": [
+            0.5,
+            9,
+            2.8
+          ],
+          "position": [
+            21,
+            4.5,
+            -15
+          ],
+          "color": "wood",
+          "rotation": [
+            0,
+            0,
+            0
+          ],
+          "solid": true
+        },
+        {
+          "name": "ShelfBoard",
+          "size": [
+            10,
+            0.35,
+            2.8
+          ],
+          "position": [
+            16,
+            1,
+            -15
+          ],
+          "color": "wood",
+          "rotation": [
+            0,
+            0,
+            0
+          ],
+          "solid": true
+        },
+        {
+          "name": "ShelfBoard",
+          "size": [
+            10,
+            0.35,
+            2.8
+          ],
+          "position": [
+            16,
+            4,
+            -15
+          ],
+          "color": "wood",
+          "rotation": [
+            0,
+            0,
+            0
+          ],
+          "solid": true
+        },
+        {
+          "name": "ShelfBoard",
+          "size": [
+            10,
+            0.35,
+            2.8
+          ],
+          "position": [
+            16,
+            7,
+            -15
+          ],
+          "color": "wood",
+          "rotation": [
+            0,
+            0,
+            0
+          ],
+          "solid": true
+        },
+        {
+          "name": "Ledger",
+          "size": [
+            0.8,
+            1.6,
+            1.5
+          ],
+          "position": [
+            13.0,
+            2.0,
+            -15
+          ],
+          "color": "navy",
+          "rotation": [
+            0,
+            0,
+            0
+          ],
+          "solid": true
+        },
+        {
+          "name": "Ledger",
+          "size": [
+            0.8,
+            2.0,
+            1.5
+          ],
+          "position": [
+            14.3,
+            2.2,
+            -15
+          ],
+          "color": "red",
+          "rotation": [
+            0,
+            0,
+            0
+          ],
+          "solid": true
+        },
+        {
+          "name": "Ledger",
+          "size": [
+            0.8,
+            1.6,
+            1.5
+          ],
+          "position": [
+            15.6,
+            2.0,
+            -15
+          ],
+          "color": "green",
+          "rotation": [
+            0,
+            0,
+            0
+          ],
+          "solid": true
+        },
+        {
+          "name": "Ledger",
+          "size": [
+            0.8,
+            2.0,
+            1.5
+          ],
+          "position": [
+            16.9,
+            2.2,
+            -15
+          ],
+          "color": "navy",
+          "rotation": [
+            0,
+            0,
+            0
+          ],
+          "solid": true
+        },
+        {
+          "name": "Ledger",
+          "size": [
+            0.8,
+            1.6,
+            1.5
+          ],
+          "position": [
+            18.2,
+            2.0,
+            -15
+          ],
+          "color": "red",
+          "rotation": [
+            0,
+            0,
+            0
+          ],
+          "solid": true
+        },
+        {
+          "name": "TableTop",
+          "size": [
+            10,
+            0.5,
+            7
+          ],
+          "position": [
+            16,
+            3,
+            4
+          ],
+          "color": "wood",
+          "rotation": [
+            0,
+            0,
+            0
+          ],
+          "solid": true
+        },
+        {
+          "name": "TableLeg",
+          "size": [
+            0.45,
+            3,
+            0.45
+          ],
+          "position": [
+            11.55,
+            1.5,
+            1.0499999999999998
+          ],
+          "color": "dark",
+          "rotation": [
+            0,
+            0,
+            0
+          ],
+          "solid": true
+        },
+        {
+          "name": "TableLeg",
+          "size": [
+            0.45,
+            3,
+            0.45
+          ],
+          "position": [
+            11.55,
+            1.5,
+            6.95
+          ],
+          "color": "dark",
+          "rotation": [
+            0,
+            0,
+            0
+          ],
+          "solid": true
+        },
+        {
+          "name": "TableLeg",
+          "size": [
+            0.45,
+            3,
+            0.45
+          ],
+          "position": [
+            20.45,
+            1.5,
+            1.0499999999999998
+          ],
+          "color": "dark",
+          "rotation": [
+            0,
+            0,
+            0
+          ],
+          "solid": true
+        },
+        {
+          "name": "TableLeg",
+          "size": [
+            0.45,
+            3,
+            0.45
+          ],
+          "position": [
+            20.45,
+            1.5,
+            6.95
+          ],
+          "color": "dark",
+          "rotation": [
+            0,
+            0,
+            0
+          ],
+          "solid": true
+        },
+        {
+          "name": "MapParchment",
+          "size": [
+            8,
+            0.1,
+            5
+          ],
+          "position": [
+            16,
+            3.32,
+            4
+          ],
+          "color": "ivory",
+          "rotation": [
+            0,
+            0,
+            0
+          ],
+          "solid": false
+        },
+        {
+          "name": "MapPin",
+          "size": [
+            0.3,
+            0.8,
+            0.3
+          ],
+          "position": [
+            14,
+            3.8,
+            3
+          ],
+          "color": "gold",
+          "rotation": [
+            0,
+            0,
+            0
+          ],
+          "solid": false
+        },
+        {
+          "name": "MapPin",
+          "size": [
+            0.3,
+            0.8,
+            0.3
+          ],
+          "position": [
+            18,
+            3.8,
+            5
+          ],
+          "color": "gold",
+          "rotation": [
+            0,
+            0,
+            0
+          ],
+          "solid": false
+        },
+        {
+          "name": "MapPin",
+          "size": [
+            0.3,
+            0.8,
+            0.3
+          ],
+          "position": [
+            15,
+            3.8,
+            5
+          ],
+          "color": "gold",
+          "rotation": [
+            0,
+            0,
+            0
+          ],
+          "solid": false
+        },
+        {
+          "name": "GuildCrest",
+          "size": [
+            3,
+            3,
+            0.4
+          ],
+          "position": [
+            0,
+            9,
+            -18
+          ],
+          "color": "gold",
+          "rotation": [
+            0,
+            0,
+            45
+          ],
+          "solid": false
+        }
+      ]
+    },
+    {
+      "id": "hearth_tavern",
+      "kind": "CityFurnishing",
+      "building": "The Hearth and Banner",
+      "parts": [
+        {
+          "name": "TableTop",
+          "size": [
+            13,
+            0.5,
+            5
+          ],
+          "position": [
+            -16,
+            4,
+            -5
+          ],
+          "color": "wood",
+          "rotation": [
+            0,
+            0,
+            0
+          ],
+          "solid": true
+        },
+        {
+          "name": "TableLeg",
+          "size": [
+            0.45,
+            4,
+            0.45
+          ],
+          "position": [
+            -21.95,
+            2.0,
+            -6.95
+          ],
+          "color": "dark",
+          "rotation": [
+            0,
+            0,
+            0
+          ],
+          "solid": true
+        },
+        {
+          "name": "TableLeg",
+          "size": [
+            0.45,
+            4,
+            0.45
+          ],
+          "position": [
+            -21.95,
+            2.0,
+            -3.05
+          ],
+          "color": "dark",
+          "rotation": [
+            0,
+            0,
+            0
+          ],
+          "solid": true
+        },
+        {
+          "name": "TableLeg",
+          "size": [
+            0.45,
+            4,
+            0.45
+          ],
+          "position": [
+            -10.05,
+            2.0,
+            -6.95
+          ],
+          "color": "dark",
+          "rotation": [
+            0,
+            0,
+            0
+          ],
+          "solid": true
+        },
+        {
+          "name": "TableLeg",
+          "size": [
+            0.45,
+            4,
+            0.45
+          ],
+          "position": [
+            -10.05,
+            2.0,
+            -3.05
+          ],
+          "color": "dark",
+          "rotation": [
+            0,
+            0,
+            0
+          ],
+          "solid": true
+        },
+        {
+          "name": "Stool",
+          "size": [
+            2.3,
+            0.4,
+            2.3
+          ],
+          "position": [
+            -20,
+            2.2,
+            0
+          ],
+          "color": "wood",
+          "rotation": [
+            0,
+            0,
+            0
+          ],
+          "solid": true
+        },
+        {
+          "name": "StoolFoot",
+          "size": [
+            0.35,
+            2,
+            0.35
+          ],
+          "position": [
+            -20.75,
+            1,
+            0
+          ],
+          "color": "dark",
+          "rotation": [
+            0,
+            0,
+            0
+          ],
+          "solid": true
+        },
+        {
+          "name": "StoolFoot",
+          "size": [
+            0.35,
+            2,
+            0.35
+          ],
+          "position": [
+            -19.25,
+            1,
+            0
+          ],
+          "color": "dark",
+          "rotation": [
+            0,
+            0,
+            0
+          ],
+          "solid": true
+        },
+        {
+          "name": "Tankard",
+          "size": [
+            0.7,
+            0.9,
+            0.7
+          ],
+          "position": [
+            -20,
+            4.7,
+            -5
+          ],
+          "color": "gold",
+          "rotation": [
+            0,
+            0,
+            0
+          ],
+          "solid": false
+        },
+        {
+          "name": "Stool",
+          "size": [
+            2.3,
+            0.4,
+            2.3
+          ],
+          "position": [
+            -15,
+            2.2,
+            0
+          ],
+          "color": "wood",
+          "rotation": [
+            0,
+            0,
+            0
+          ],
+          "solid": true
+        },
+        {
+          "name": "StoolFoot",
+          "size": [
+            0.35,
+            2,
+            0.35
+          ],
+          "position": [
+            -15.75,
+            1,
+            0
+          ],
+          "color": "dark",
+          "rotation": [
+            0,
+            0,
+            0
+          ],
+          "solid": true
+        },
+        {
+          "name": "StoolFoot",
+          "size": [
+            0.35,
+            2,
+            0.35
+          ],
+          "position": [
+            -14.25,
+            1,
+            0
+          ],
+          "color": "dark",
+          "rotation": [
+            0,
+            0,
+            0
+          ],
+          "solid": true
+        },
+        {
+          "name": "Tankard",
+          "size": [
+            0.7,
+            0.9,
+            0.7
+          ],
+          "position": [
+            -15,
+            4.7,
+            -5
+          ],
+          "color": "gold",
+          "rotation": [
+            0,
+            0,
+            0
+          ],
+          "solid": false
+        },
+        {
+          "name": "Stool",
+          "size": [
+            2.3,
+            0.4,
+            2.3
+          ],
+          "position": [
+            -10,
+            2.2,
+            0
+          ],
+          "color": "wood",
+          "rotation": [
+            0,
+            0,
+            0
+          ],
+          "solid": true
+        },
+        {
+          "name": "StoolFoot",
+          "size": [
+            0.35,
+            2,
+            0.35
+          ],
+          "position": [
+            -10.75,
+            1,
+            0
+          ],
+          "color": "dark",
+          "rotation": [
+            0,
+            0,
+            0
+          ],
+          "solid": true
+        },
+        {
+          "name": "StoolFoot",
+          "size": [
+            0.35,
+            2,
+            0.35
+          ],
+          "position": [
+            -9.25,
+            1,
+            0
+          ],
+          "color": "dark",
+          "rotation": [
+            0,
+            0,
+            0
+          ],
+          "solid": true
+        },
+        {
+          "name": "Tankard",
+          "size": [
+            0.7,
+            0.9,
+            0.7
+          ],
+          "position": [
+            -10,
+            4.7,
+            -5
+          ],
+          "color": "gold",
+          "rotation": [
+            0,
+            0,
+            0
+          ],
+          "solid": false
+        },
+        {
+          "name": "TableTop",
+          "size": [
+            10,
+            0.5,
+            6
+          ],
+          "position": [
+            16,
+            3,
+            6
+          ],
+          "color": "wood",
+          "rotation": [
+            0,
+            0,
+            0
+          ],
+          "solid": true
+        },
+        {
+          "name": "TableLeg",
+          "size": [
+            0.45,
+            3,
+            0.45
+          ],
+          "position": [
+            11.55,
+            1.5,
+            3.55
+          ],
+          "color": "dark",
+          "rotation": [
+            0,
+            0,
+            0
+          ],
+          "solid": true
+        },
+        {
+          "name": "TableLeg",
+          "size": [
+            0.45,
+            3,
+            0.45
+          ],
+          "position": [
+            11.55,
+            1.5,
+            8.45
+          ],
+          "color": "dark",
+          "rotation": [
+            0,
+            0,
+            0
+          ],
+          "solid": true
+        },
+        {
+          "name": "TableLeg",
+          "size": [
+            0.45,
+            3,
+            0.45
+          ],
+          "position": [
+            20.45,
+            1.5,
+            3.55
+          ],
+          "color": "dark",
+          "rotation": [
+            0,
+            0,
+            0
+          ],
+          "solid": true
+        },
+        {
+          "name": "TableLeg",
+          "size": [
+            0.45,
+            3,
+            0.45
+          ],
+          "position": [
+            20.45,
+            1.5,
+            8.45
+          ],
+          "color": "dark",
+          "rotation": [
+            0,
+            0,
+            0
+          ],
+          "solid": true
+        },
+        {
+          "name": "Stool",
+          "size": [
+            2.3,
+            0.4,
+            2.3
+          ],
+          "position": [
+            12,
+            2.2,
+            11
+          ],
+          "color": "wood",
+          "rotation": [
+            0,
+            0,
+            0
+          ],
+          "solid": true
+        },
+        {
+          "name": "StoolFoot",
+          "size": [
+            0.35,
+            2,
+            0.35
+          ],
+          "position": [
+            11.25,
+            1,
+            11
+          ],
+          "color": "dark",
+          "rotation": [
+            0,
+            0,
+            0
+          ],
+          "solid": true
+        },
+        {
+          "name": "StoolFoot",
+          "size": [
+            0.35,
+            2,
+            0.35
+          ],
+          "position": [
+            12.75,
+            1,
+            11
+          ],
+          "color": "dark",
+          "rotation": [
+            0,
+            0,
+            0
+          ],
+          "solid": true
+        },
+        {
+          "name": "Stool",
+          "size": [
+            2.3,
+            0.4,
+            2.3
+          ],
+          "position": [
+            20,
+            2.2,
+            11
+          ],
+          "color": "wood",
+          "rotation": [
+            0,
+            0,
+            0
+          ],
+          "solid": true
+        },
+        {
+          "name": "StoolFoot",
+          "size": [
+            0.35,
+            2,
+            0.35
+          ],
+          "position": [
+            19.25,
+            1,
+            11
+          ],
+          "color": "dark",
+          "rotation": [
+            0,
+            0,
+            0
+          ],
+          "solid": true
+        },
+        {
+          "name": "StoolFoot",
+          "size": [
+            0.35,
+            2,
+            0.35
+          ],
+          "position": [
+            20.75,
+            1,
+            11
+          ],
+          "color": "dark",
+          "rotation": [
+            0,
+            0,
+            0
+          ],
+          "solid": true
+        },
+        {
+          "name": "HearthPier",
+          "size": [
+            2,
+            7,
+            3
+          ],
+          "position": [
+            11,
+            3.5,
+            -15
+          ],
+          "color": "stone",
+          "rotation": [
+            0,
+            0,
+            0
+          ],
+          "solid": true
+        },
+        {
+          "name": "HearthPier",
+          "size": [
+            2,
+            7,
+            3
+          ],
+          "position": [
+            21,
+            3.5,
+            -15
+          ],
+          "color": "stone",
+          "rotation": [
+            0,
+            0,
+            0
+          ],
+          "solid": true
+        },
+        {
+          "name": "HearthLintel",
+          "size": [
+            12,
+            2,
+            3
+          ],
+          "position": [
+            16,
+            7,
+            -15
+          ],
+          "color": "stone",
+          "rotation": [
+            0,
+            0,
+            0
+          ],
+          "solid": true
+        },
+        {
+          "name": "HearthBack",
+          "size": [
+            10,
+            6,
+            0.5
+          ],
+          "position": [
+            16,
+            3,
+            -17
+          ],
+          "color": "dark",
+          "rotation": [
+            0,
+            0,
+            0
+          ],
+          "solid": true
+        },
+        {
+          "name": "Coals",
+          "size": [
+            7,
+            0.6,
+            2
+          ],
+          "position": [
+            16,
+            0.5,
+            -15
+          ],
+          "color": "red",
+          "rotation": [
+            0,
+            0,
+            0
+          ],
+          "solid": false
+        },
+        {
+          "name": "FireShape",
+          "size": [
+            0.7,
+            2.5,
+            0.7
+          ],
+          "position": [
+            14,
+            1.5,
+            -15
+          ],
+          "color": "gold",
+          "rotation": [
+            0,
+            0,
+            20
+          ],
+          "solid": false
+        },
+        {
+          "name": "FireShape",
+          "size": [
+            0.7,
+            2.5,
+            0.7
+          ],
+          "position": [
+            16,
+            1.5,
+            -15
+          ],
+          "color": "gold",
+          "rotation": [
+            0,
+            0,
+            20
+          ],
+          "solid": false
+        },
+        {
+          "name": "FireShape",
+          "size": [
+            0.7,
+            2.5,
+            0.7
+          ],
+          "position": [
+            18,
+            1.5,
+            -15
+          ],
+          "color": "gold",
+          "rotation": [
+            0,
+            0,
+            20
+          ],
+          "solid": false
+        }
+      ]
+    },
+    {
+      "id": "exchange_office",
+      "kind": "CityFurnishing",
+      "building": "Guildborne Exchange",
+      "parts": [
+        {
+          "name": "TableTop",
+          "size": [
+            13,
+            0.5,
+            6
+          ],
+          "position": [
+            -16,
+            4,
+            -6
+          ],
+          "color": "wood",
+          "rotation": [
+            0,
+            0,
+            0
+          ],
+          "solid": true
+        },
+        {
+          "name": "TableLeg",
+          "size": [
+            0.45,
+            4,
+            0.45
+          ],
+          "position": [
+            -21.95,
+            2.0,
+            -8.45
+          ],
+          "color": "dark",
+          "rotation": [
+            0,
+            0,
+            0
+          ],
+          "solid": true
+        },
+        {
+          "name": "TableLeg",
+          "size": [
+            0.45,
+            4,
+            0.45
+          ],
+          "position": [
+            -21.95,
+            2.0,
+            -3.55
+          ],
+          "color": "dark",
+          "rotation": [
+            0,
+            0,
+            0
+          ],
+          "solid": true
+        },
+        {
+          "name": "TableLeg",
+          "size": [
+            0.45,
+            4,
+            0.45
+          ],
+          "position": [
+            -10.05,
+            2.0,
+            -8.45
+          ],
+          "color": "dark",
+          "rotation": [
+            0,
+            0,
+            0
+          ],
+          "solid": true
+        },
+        {
+          "name": "TableLeg",
+          "size": [
+            0.45,
+            4,
+            0.45
+          ],
+          "position": [
+            -10.05,
+            2.0,
+            -3.55
+          ],
+          "color": "dark",
+          "rotation": [
+            0,
+            0,
+            0
+          ],
+          "solid": true
+        },
+        {
+          "name": "ShelfSide",
+          "size": [
+            0.5,
+            9,
+            2.8
+          ],
+          "position": [
+            11,
+            4.5,
+            -15
+          ],
+          "color": "wood",
+          "rotation": [
+            0,
+            0,
+            0
+          ],
+          "solid": true
+        },
+        {
+          "name": "ShelfSide",
+          "size": [
+            0.5,
+            9,
+            2.8
+          ],
+          "position": [
+            21,
+            4.5,
+            -15
+          ],
+          "color": "wood",
+          "rotation": [
+            0,
+            0,
+            0
+          ],
+          "solid": true
+        },
+        {
+          "name": "ShelfBoard",
+          "size": [
+            10,
+            0.35,
+            2.8
+          ],
+          "position": [
+            16,
+            1,
+            -15
+          ],
+          "color": "wood",
+          "rotation": [
+            0,
+            0,
+            0
+          ],
+          "solid": true
+        },
+        {
+          "name": "ShelfBoard",
+          "size": [
+            10,
+            0.35,
+            2.8
+          ],
+          "position": [
+            16,
+            4,
+            -15
+          ],
+          "color": "wood",
+          "rotation": [
+            0,
+            0,
+            0
+          ],
+          "solid": true
+        },
+        {
+          "name": "ShelfBoard",
+          "size": [
+            10,
+            0.35,
+            2.8
+          ],
+          "position": [
+            16,
+            7,
+            -15
+          ],
+          "color": "wood",
+          "rotation": [
+            0,
+            0,
+            0
+          ],
+          "solid": true
+        },
+        {
+          "name": "Ledger",
+          "size": [
+            0.8,
+            1.6,
+            1.5
+          ],
+          "position": [
+            13.0,
+            2.0,
+            -15
+          ],
+          "color": "navy",
+          "rotation": [
+            0,
+            0,
+            0
+          ],
+          "solid": true
+        },
+        {
+          "name": "Ledger",
+          "size": [
+            0.8,
+            2.0,
+            1.5
+          ],
+          "position": [
+            14.3,
+            2.2,
+            -15
+          ],
+          "color": "red",
+          "rotation": [
+            0,
+            0,
+            0
+          ],
+          "solid": true
+        },
+        {
+          "name": "Ledger",
+          "size": [
+            0.8,
+            1.6,
+            1.5
+          ],
+          "position": [
+            15.6,
+            2.0,
+            -15
+          ],
+          "color": "green",
+          "rotation": [
+            0,
+            0,
+            0
+          ],
+          "solid": true
+        },
+        {
+          "name": "Ledger",
+          "size": [
+            0.8,
+            2.0,
+            1.5
+          ],
+          "position": [
+            16.9,
+            2.2,
+            -15
+          ],
+          "color": "navy",
+          "rotation": [
+            0,
+            0,
+            0
+          ],
+          "solid": true
+        },
+        {
+          "name": "Ledger",
+          "size": [
+            0.8,
+            1.6,
+            1.5
+          ],
+          "position": [
+            18.2,
+            2.0,
+            -15
+          ],
+          "color": "red",
+          "rotation": [
+            0,
+            0,
+            0
+          ],
+          "solid": true
+        },
+        {
+          "name": "BalancePost",
+          "size": [
+            0.35,
+            3,
+            0.35
+          ],
+          "position": [
+            -16,
+            5.75,
+            -6
+          ],
+          "color": "gold",
+          "rotation": [
+            0,
+            0,
+            0
+          ],
+          "solid": true
+        },
+        {
+          "name": "BalanceBeam",
+          "size": [
+            5,
+            0.25,
+            0.3
+          ],
+          "position": [
+            -16,
+            7.2,
+            -6
+          ],
+          "color": "gold",
+          "rotation": [
+            0,
+            0,
+            0
+          ],
+          "solid": true
+        },
+        {
+          "name": "ScaleChain",
+          "size": [
+            0.1,
+            1.4,
+            0.1
+          ],
+          "position": [
+            -18,
+            6.45,
+            -6
+          ],
+          "color": "gold",
+          "rotation": [
+            0,
+            0,
+            0
+          ],
+          "solid": false
+        },
+        {
+          "name": "ScalePan",
+          "size": [
+            1.8,
+            0.15,
+            1.8
+          ],
+          "position": [
+            -18,
+            5.8,
+            -6
+          ],
+          "color": "gold",
+          "rotation": [
+            0,
+            0,
+            0
+          ],
+          "solid": true
+        },
+        {
+          "name": "ScaleChain",
+          "size": [
+            0.1,
+            1.4,
+            0.1
+          ],
+          "position": [
+            -14,
+            6.45,
+            -6
+          ],
+          "color": "gold",
+          "rotation": [
+            0,
+            0,
+            0
+          ],
+          "solid": false
+        },
+        {
+          "name": "ScalePan",
+          "size": [
+            1.8,
+            0.15,
+            1.8
+          ],
+          "position": [
+            -14,
+            5.8,
+            -6
+          ],
+          "color": "gold",
+          "rotation": [
+            0,
+            0,
+            0
+          ],
+          "solid": true
+        },
+        {
+          "name": "CargoCrate",
+          "size": [
+            4,
+            3,
+            4
+          ],
+          "position": [
+            12,
+            1.5,
+            5
+          ],
+          "color": "wood",
+          "rotation": [
+            0,
+            0,
+            0
+          ],
+          "solid": true
+        },
+        {
+          "name": "CrateBand",
+          "size": [
+            0.3,
+            3.1,
+            4.1
+          ],
+          "position": [
+            10.5,
+            1.5,
+            5
+          ],
+          "color": "dark",
+          "rotation": [
+            0,
+            0,
+            0
+          ],
+          "solid": false
+        },
+        {
+          "name": "CrateBand",
+          "size": [
+            0.3,
+            3.1,
+            4.1
+          ],
+          "position": [
+            13.5,
+            1.5,
+            5
+          ],
+          "color": "dark",
+          "rotation": [
+            0,
+            0,
+            0
+          ],
+          "solid": false
+        },
+        {
+          "name": "CargoCrate",
+          "size": [
+            4,
+            3,
+            4
+          ],
+          "position": [
+            18,
+            1.5,
+            5
+          ],
+          "color": "wood",
+          "rotation": [
+            0,
+            0,
+            0
+          ],
+          "solid": true
+        },
+        {
+          "name": "CrateBand",
+          "size": [
+            0.3,
+            3.1,
+            4.1
+          ],
+          "position": [
+            16.5,
+            1.5,
+            5
+          ],
+          "color": "dark",
+          "rotation": [
+            0,
+            0,
+            0
+          ],
+          "solid": false
+        },
+        {
+          "name": "CrateBand",
+          "size": [
+            0.3,
+            3.1,
+            4.1
+          ],
+          "position": [
+            19.5,
+            1.5,
+            5
+          ],
+          "color": "dark",
+          "rotation": [
+            0,
+            0,
+            0
+          ],
+          "solid": false
+        },
+        {
+          "name": "CargoCrate",
+          "size": [
+            4,
+            3,
+            4
+          ],
+          "position": [
+            18,
+            1.5,
+            11
+          ],
+          "color": "wood",
+          "rotation": [
+            0,
+            0,
+            0
+          ],
+          "solid": true
+        },
+        {
+          "name": "CrateBand",
+          "size": [
+            0.3,
+            3.1,
+            4.1
+          ],
+          "position": [
+            16.5,
+            1.5,
+            11
+          ],
+          "color": "dark",
+          "rotation": [
+            0,
+            0,
+            0
+          ],
+          "solid": false
+        },
+        {
+          "name": "CrateBand",
+          "size": [
+            0.3,
+            3.1,
+            4.1
+          ],
+          "position": [
+            19.5,
+            1.5,
+            11
+          ],
+          "color": "dark",
+          "rotation": [
+            0,
+            0,
+            0
+          ],
+          "solid": false
+        }
+      ]
+    },
+    {
+      "id": "forge_workshop",
+      "kind": "CityFurnishing",
+      "building": "Blacksmith",
+      "parts": [
+        {
+          "name": "TableTop",
+          "size": [
+            12,
+            0.5,
+            5
+          ],
+          "position": [
+            -16,
+            3,
+            -8
+          ],
+          "color": "wood",
+          "rotation": [
+            0,
+            0,
+            0
+          ],
+          "solid": true
+        },
+        {
+          "name": "TableLeg",
+          "size": [
+            0.45,
+            3,
+            0.45
+          ],
+          "position": [
+            -21.45,
+            1.5,
+            -9.95
+          ],
+          "color": "dark",
+          "rotation": [
+            0,
+            0,
+            0
+          ],
+          "solid": true
+        },
+        {
+          "name": "TableLeg",
+          "size": [
+            0.45,
+            3,
+            0.45
+          ],
+          "position": [
+            -21.45,
+            1.5,
+            -6.05
+          ],
+          "color": "dark",
+          "rotation": [
+            0,
+            0,
+            0
+          ],
+          "solid": true
+        },
+        {
+          "name": "TableLeg",
+          "size": [
+            0.45,
+            3,
+            0.45
+          ],
+          "position": [
+            -10.55,
+            1.5,
+            -9.95
+          ],
+          "color": "dark",
+          "rotation": [
+            0,
+            0,
+            0
+          ],
+          "solid": true
+        },
+        {
+          "name": "TableLeg",
+          "size": [
+            0.45,
+            3,
+            0.45
+          ],
+          "position": [
+            -10.55,
+            1.5,
+            -6.05
+          ],
+          "color": "dark",
+          "rotation": [
+            0,
+            0,
+            0
+          ],
+          "solid": true
+        },
+        {
+          "name": "AnvilPlinth",
+          "size": [
+            4,
+            3,
+            4
+          ],
+          "position": [
+            15,
+            1.5,
+            1
+          ],
+          "color": "wood",
+          "rotation": [
+            0,
+            0,
+            0
+          ],
+          "solid": true
+        },
+        {
+          "name": "AnvilWaist",
+          "size": [
+            2,
+            1.7,
+            2
+          ],
+          "position": [
+            15,
+            3.8,
+            1
+          ],
+          "color": "steel",
+          "rotation": [
+            0,
+            0,
+            0
+          ],
+          "solid": true
+        },
+        {
+          "name": "AnvilFace",
+          "size": [
+            6,
+            0.8,
+            3
+          ],
+          "position": [
+            15,
+            5,
+            1
+          ],
+          "color": "steel",
+          "rotation": [
+            0,
+            0,
+            0
+          ],
+          "solid": true
+        },
+        {
+          "name": "AnvilHorn",
+          "size": [
+            2.6,
+            0.65,
+            1.3
+          ],
+          "position": [
+            18.8,
+            4.9,
+            1
+          ],
+          "color": "steel",
+          "rotation": [
+            0,
+            0,
+            0
+          ],
+          "solid": true
+        },
+        {
+          "name": "ToolHandle",
+          "size": [
+            0.4,
+            3,
+            0.4
+          ],
+          "position": [
+            -20,
+            4,
+            -8
+          ],
+          "color": "wood",
+          "rotation": [
+            0,
+            0,
+            -65
+          ],
+          "solid": false
+        },
+        {
+          "name": "HammerHead",
+          "size": [
+            1.5,
+            0.8,
+            0.8
+          ],
+          "position": [
+            -21.35,
+            4.6,
+            -8
+          ],
+          "color": "steel",
+          "rotation": [
+            0,
+            0,
+            0
+          ],
+          "solid": false
+        },
+        {
+          "name": "ToolHandle",
+          "size": [
+            0.4,
+            3,
+            0.4
+          ],
+          "position": [
+            -16,
+            4,
+            -8
+          ],
+          "color": "wood",
+          "rotation": [
+            0,
+            0,
+            -65
+          ],
+          "solid": false
+        },
+        {
+          "name": "HammerHead",
+          "size": [
+            1.5,
+            0.8,
+            0.8
+          ],
+          "position": [
+            -17.35,
+            4.6,
+            -8
+          ],
+          "color": "steel",
+          "rotation": [
+            0,
+            0,
+            0
+          ],
+          "solid": false
+        },
+        {
+          "name": "ToolHandle",
+          "size": [
+            0.4,
+            3,
+            0.4
+          ],
+          "position": [
+            -12,
+            4,
+            -8
+          ],
+          "color": "wood",
+          "rotation": [
+            0,
+            0,
+            -65
+          ],
+          "solid": false
+        },
+        {
+          "name": "HammerHead",
+          "size": [
+            1.5,
+            0.8,
+            0.8
+          ],
+          "position": [
+            -13.35,
+            4.6,
+            -8
+          ],
+          "color": "steel",
+          "rotation": [
+            0,
+            0,
+            0
+          ],
+          "solid": false
+        },
+        {
+          "name": "ForgeWall",
+          "size": [
+            2,
+            7,
+            6
+          ],
+          "position": [
+            10,
+            3.5,
+            -13
+          ],
+          "color": "stone",
+          "rotation": [
+            0,
+            0,
+            0
+          ],
+          "solid": true
+        },
+        {
+          "name": "ForgeWall",
+          "size": [
+            2,
+            7,
+            6
+          ],
+          "position": [
+            22,
+            3.5,
+            -13
+          ],
+          "color": "stone",
+          "rotation": [
+            0,
+            0,
+            0
+          ],
+          "solid": true
+        },
+        {
+          "name": "ForgeRoof",
+          "size": [
+            14,
+            2,
+            6
+          ],
+          "position": [
+            16,
+            8,
+            -13
+          ],
+          "color": "stone",
+          "rotation": [
+            0,
+            0,
+            0
+          ],
+          "solid": true
+        },
+        {
+          "name": "ForgeCoal",
+          "size": [
+            10,
+            1,
+            5
+          ],
+          "position": [
+            16,
+            1,
+            -13
+          ],
+          "color": "red",
+          "rotation": [
+            0,
+            0,
+            0
+          ],
+          "solid": true
+        },
+        {
+          "name": "ForgeBack",
+          "size": [
+            14,
+            6,
+            1
+          ],
+          "position": [
+            16,
+            3,
+            -16
+          ],
+          "color": "dark",
+          "rotation": [
+            0,
+            0,
+            0
+          ],
+          "solid": true
+        },
+        {
+          "name": "Ingot",
+          "size": [
+            2,
+            0.6,
+            1
+          ],
+          "position": [
+            -20,
+            3.6,
+            -8
+          ],
+          "color": "steel",
+          "rotation": [
+            0,
+            0,
+            0
+          ],
+          "solid": false
+        },
+        {
+          "name": "Ingot",
+          "size": [
+            2,
+            0.6,
+            1
+          ],
+          "position": [
+            -14,
+            3.6,
+            -8
+          ],
+          "color": "steel",
+          "rotation": [
+            0,
+            0,
+            0
+          ],
+          "solid": false
+        },
+        {
+          "name": "Ingot",
+          "size": [
+            2,
+            0.6,
+            1
+          ],
+          "position": [
+            -8,
+            3.6,
+            -8
+          ],
+          "color": "steel",
+          "rotation": [
+            0,
+            0,
+            0
+          ],
+          "solid": false
+        }
+      ]
+    },
+    {
+      "id": "alchemy_study",
+      "kind": "CityFurnishing",
+      "building": "Alchemy Shop",
+      "parts": [
+        {
+          "name": "TableTop",
+          "size": [
+            13,
+            0.5,
+            6
+          ],
+          "position": [
+            -16,
+            3,
+            -3
+          ],
+          "color": "wood",
+          "rotation": [
+            0,
+            0,
+            0
+          ],
+          "solid": true
+        },
+        {
+          "name": "TableLeg",
+          "size": [
+            0.45,
+            3,
+            0.45
+          ],
+          "position": [
+            -21.95,
+            1.5,
+            -5.45
+          ],
+          "color": "dark",
+          "rotation": [
+            0,
+            0,
+            0
+          ],
+          "solid": true
+        },
+        {
+          "name": "TableLeg",
+          "size": [
+            0.45,
+            3,
+            0.45
+          ],
+          "position": [
+            -21.95,
+            1.5,
+            -0.5499999999999998
+          ],
+          "color": "dark",
+          "rotation": [
+            0,
+            0,
+            0
+          ],
+          "solid": true
+        },
+        {
+          "name": "TableLeg",
+          "size": [
+            0.45,
+            3,
+            0.45
+          ],
+          "position": [
+            -10.05,
+            1.5,
+            -5.45
+          ],
+          "color": "dark",
+          "rotation": [
+            0,
+            0,
+            0
+          ],
+          "solid": true
+        },
+        {
+          "name": "TableLeg",
+          "size": [
+            0.45,
+            3,
+            0.45
+          ],
+          "position": [
+            -10.05,
+            1.5,
+            -0.5499999999999998
+          ],
+          "color": "dark",
+          "rotation": [
+            0,
+            0,
+            0
+          ],
+          "solid": true
+        },
+        {
+          "name": "ShelfSide",
+          "size": [
+            0.5,
+            9,
+            2.8
+          ],
+          "position": [
+            11,
+            4.5,
+            -15
+          ],
+          "color": "wood",
+          "rotation": [
+            0,
+            0,
+            0
+          ],
+          "solid": true
+        },
+        {
+          "name": "ShelfSide",
+          "size": [
+            0.5,
+            9,
+            2.8
+          ],
+          "position": [
+            21,
+            4.5,
+            -15
+          ],
+          "color": "wood",
+          "rotation": [
+            0,
+            0,
+            0
+          ],
+          "solid": true
+        },
+        {
+          "name": "ShelfBoard",
+          "size": [
+            10,
+            0.35,
+            2.8
+          ],
+          "position": [
+            16,
+            1,
+            -15
+          ],
+          "color": "wood",
+          "rotation": [
+            0,
+            0,
+            0
+          ],
+          "solid": true
+        },
+        {
+          "name": "ShelfBoard",
+          "size": [
+            10,
+            0.35,
+            2.8
+          ],
+          "position": [
+            16,
+            4,
+            -15
+          ],
+          "color": "wood",
+          "rotation": [
+            0,
+            0,
+            0
+          ],
+          "solid": true
+        },
+        {
+          "name": "ShelfBoard",
+          "size": [
+            10,
+            0.35,
+            2.8
+          ],
+          "position": [
+            16,
+            7,
+            -15
+          ],
+          "color": "wood",
+          "rotation": [
+            0,
+            0,
+            0
+          ],
+          "solid": true
+        },
+        {
+          "name": "PotionBody",
+          "size": [
+            0.9,
+            1.1,
+            0.9
+          ],
+          "position": [
+            12,
+            1.8,
+            -15
+          ],
+          "color": "green",
+          "rotation": [
+            0,
+            0,
+            0
+          ],
+          "solid": false
+        },
+        {
+          "name": "PotionStopper",
+          "size": [
+            0.5,
+            0.25,
+            0.5
+          ],
+          "position": [
+            12,
+            2.5,
+            -15
+          ],
+          "color": "gold",
+          "rotation": [
+            0,
+            0,
+            0
+          ],
+          "solid": false
+        },
+        {
+          "name": "PotionBody",
+          "size": [
+            0.9,
+            1.1,
+            0.9
+          ],
+          "position": [
+            14,
+            1.8,
+            -15
+          ],
+          "color": "navy",
+          "rotation": [
+            0,
+            0,
+            0
+          ],
+          "solid": false
+        },
+        {
+          "name": "PotionStopper",
+          "size": [
+            0.5,
+            0.25,
+            0.5
+          ],
+          "position": [
+            14,
+            2.5,
+            -15
+          ],
+          "color": "gold",
+          "rotation": [
+            0,
+            0,
+            0
+          ],
+          "solid": false
+        },
+        {
+          "name": "PotionBody",
+          "size": [
+            0.9,
+            1.1,
+            0.9
+          ],
+          "position": [
+            16,
+            1.8,
+            -15
+          ],
+          "color": "red",
+          "rotation": [
+            0,
+            0,
+            0
+          ],
+          "solid": false
+        },
+        {
+          "name": "PotionStopper",
+          "size": [
+            0.5,
+            0.25,
+            0.5
+          ],
+          "position": [
+            16,
+            2.5,
+            -15
+          ],
+          "color": "gold",
+          "rotation": [
+            0,
+            0,
+            0
+          ],
+          "solid": false
+        },
+        {
+          "name": "PotionBody",
+          "size": [
+            0.9,
+            1.1,
+            0.9
+          ],
+          "position": [
+            18,
+            1.8,
+            -15
+          ],
+          "color": "green",
+          "rotation": [
+            0,
+            0,
+            0
+          ],
+          "solid": false
+        },
+        {
+          "name": "PotionStopper",
+          "size": [
+            0.5,
+            0.25,
+            0.5
+          ],
+          "position": [
+            18,
+            2.5,
+            -15
+          ],
+          "color": "gold",
+          "rotation": [
+            0,
+            0,
+            0
+          ],
+          "solid": false
+        },
+        {
+          "name": "PotionBody",
+          "size": [
+            0.9,
+            1.1,
+            0.9
+          ],
+          "position": [
+            20,
+            1.8,
+            -15
+          ],
+          "color": "navy",
+          "rotation": [
+            0,
+            0,
+            0
+          ],
+          "solid": false
+        },
+        {
+          "name": "PotionStopper",
+          "size": [
+            0.5,
+            0.25,
+            0.5
+          ],
+          "position": [
+            20,
+            2.5,
+            -15
+          ],
+          "color": "gold",
+          "rotation": [
+            0,
+            0,
+            0
+          ],
+          "solid": false
+        },
+        {
+          "name": "PotionBody",
+          "size": [
+            0.9,
+            1.1,
+            0.9
+          ],
+          "position": [
+            12,
+            4.8,
+            -15
+          ],
+          "color": "green",
+          "rotation": [
+            0,
+            0,
+            0
+          ],
+          "solid": false
+        },
+        {
+          "name": "PotionStopper",
+          "size": [
+            0.5,
+            0.25,
+            0.5
+          ],
+          "position": [
+            12,
+            5.5,
+            -15
+          ],
+          "color": "gold",
+          "rotation": [
+            0,
+            0,
+            0
+          ],
+          "solid": false
+        },
+        {
+          "name": "PotionBody",
+          "size": [
+            0.9,
+            1.1,
+            0.9
+          ],
+          "position": [
+            14,
+            4.8,
+            -15
+          ],
+          "color": "navy",
+          "rotation": [
+            0,
+            0,
+            0
+          ],
+          "solid": false
+        },
+        {
+          "name": "PotionStopper",
+          "size": [
+            0.5,
+            0.25,
+            0.5
+          ],
+          "position": [
+            14,
+            5.5,
+            -15
+          ],
+          "color": "gold",
+          "rotation": [
+            0,
+            0,
+            0
+          ],
+          "solid": false
+        },
+        {
+          "name": "PotionBody",
+          "size": [
+            0.9,
+            1.1,
+            0.9
+          ],
+          "position": [
+            16,
+            4.8,
+            -15
+          ],
+          "color": "red",
+          "rotation": [
+            0,
+            0,
+            0
+          ],
+          "solid": false
+        },
+        {
+          "name": "PotionStopper",
+          "size": [
+            0.5,
+            0.25,
+            0.5
+          ],
+          "position": [
+            16,
+            5.5,
+            -15
+          ],
+          "color": "gold",
+          "rotation": [
+            0,
+            0,
+            0
+          ],
+          "solid": false
+        },
+        {
+          "name": "PotionBody",
+          "size": [
+            0.9,
+            1.1,
+            0.9
+          ],
+          "position": [
+            18,
+            4.8,
+            -15
+          ],
+          "color": "green",
+          "rotation": [
+            0,
+            0,
+            0
+          ],
+          "solid": false
+        },
+        {
+          "name": "PotionStopper",
+          "size": [
+            0.5,
+            0.25,
+            0.5
+          ],
+          "position": [
+            18,
+            5.5,
+            -15
+          ],
+          "color": "gold",
+          "rotation": [
+            0,
+            0,
+            0
+          ],
+          "solid": false
+        },
+        {
+          "name": "PotionBody",
+          "size": [
+            0.9,
+            1.1,
+            0.9
+          ],
+          "position": [
+            20,
+            4.8,
+            -15
+          ],
+          "color": "navy",
+          "rotation": [
+            0,
+            0,
+            0
+          ],
+          "solid": false
+        },
+        {
+          "name": "PotionStopper",
+          "size": [
+            0.5,
+            0.25,
+            0.5
+          ],
+          "position": [
+            20,
+            5.5,
+            -15
+          ],
+          "color": "gold",
+          "rotation": [
+            0,
+            0,
+            0
+          ],
+          "solid": false
+        },
+        {
+          "name": "PotionBody",
+          "size": [
+            0.9,
+            1.1,
+            0.9
+          ],
+          "position": [
+            12,
+            7.8,
+            -15
+          ],
+          "color": "green",
+          "rotation": [
+            0,
+            0,
+            0
+          ],
+          "solid": false
+        },
+        {
+          "name": "PotionStopper",
+          "size": [
+            0.5,
+            0.25,
+            0.5
+          ],
+          "position": [
+            12,
+            8.5,
+            -15
+          ],
+          "color": "gold",
+          "rotation": [
+            0,
+            0,
+            0
+          ],
+          "solid": false
+        },
+        {
+          "name": "PotionBody",
+          "size": [
+            0.9,
+            1.1,
+            0.9
+          ],
+          "position": [
+            14,
+            7.8,
+            -15
+          ],
+          "color": "navy",
+          "rotation": [
+            0,
+            0,
+            0
+          ],
+          "solid": false
+        },
+        {
+          "name": "PotionStopper",
+          "size": [
+            0.5,
+            0.25,
+            0.5
+          ],
+          "position": [
+            14,
+            8.5,
+            -15
+          ],
+          "color": "gold",
+          "rotation": [
+            0,
+            0,
+            0
+          ],
+          "solid": false
+        },
+        {
+          "name": "PotionBody",
+          "size": [
+            0.9,
+            1.1,
+            0.9
+          ],
+          "position": [
+            16,
+            7.8,
+            -15
+          ],
+          "color": "red",
+          "rotation": [
+            0,
+            0,
+            0
+          ],
+          "solid": false
+        },
+        {
+          "name": "PotionStopper",
+          "size": [
+            0.5,
+            0.25,
+            0.5
+          ],
+          "position": [
+            16,
+            8.5,
+            -15
+          ],
+          "color": "gold",
+          "rotation": [
+            0,
+            0,
+            0
+          ],
+          "solid": false
+        },
+        {
+          "name": "PotionBody",
+          "size": [
+            0.9,
+            1.1,
+            0.9
+          ],
+          "position": [
+            18,
+            7.8,
+            -15
+          ],
+          "color": "green",
+          "rotation": [
+            0,
+            0,
+            0
+          ],
+          "solid": false
+        },
+        {
+          "name": "PotionStopper",
+          "size": [
+            0.5,
+            0.25,
+            0.5
+          ],
+          "position": [
+            18,
+            8.5,
+            -15
+          ],
+          "color": "gold",
+          "rotation": [
+            0,
+            0,
+            0
+          ],
+          "solid": false
+        },
+        {
+          "name": "PotionBody",
+          "size": [
+            0.9,
+            1.1,
+            0.9
+          ],
+          "position": [
+            20,
+            7.8,
+            -15
+          ],
+          "color": "navy",
+          "rotation": [
+            0,
+            0,
+            0
+          ],
+          "solid": false
+        },
+        {
+          "name": "PotionStopper",
+          "size": [
+            0.5,
+            0.25,
+            0.5
+          ],
+          "position": [
+            20,
+            8.5,
+            -15
+          ],
+          "color": "gold",
+          "rotation": [
+            0,
+            0,
+            0
+          ],
+          "solid": false
+        },
+        {
+          "name": "Flask",
+          "size": [
+            1.2,
+            1.5,
+            1.2
+          ],
+          "position": [
+            -20,
+            4,
+            -3
+          ],
+          "color": "glass",
+          "rotation": [
+            0,
+            0,
+            0
+          ],
+          "solid": false
+        },
+        {
+          "name": "Flask",
+          "size": [
+            1.2,
+            1.5,
+            1.2
+          ],
+          "position": [
+            -16,
+            4,
+            -3
+          ],
+          "color": "glass",
+          "rotation": [
+            0,
+            0,
+            0
+          ],
+          "solid": false
+        },
+        {
+          "name": "Flask",
+          "size": [
+            1.2,
+            1.5,
+            1.2
+          ],
+          "position": [
+            -12,
+            4,
+            -3
+          ],
+          "color": "glass",
+          "rotation": [
+            0,
+            0,
+            0
+          ],
+          "solid": false
+        },
+        {
+          "name": "CauldronBase",
+          "size": [
+            6,
+            2.5,
+            6
+          ],
+          "position": [
+            15,
+            2,
+            4
+          ],
+          "color": "dark",
+          "rotation": [
+            0,
+            0,
+            0
+          ],
+          "solid": true
+        },
+        {
+          "name": "CauldronRim",
+          "size": [
+            0.4,
+            0.6,
+            5.7
+          ],
+          "position": [
+            12,
+            3.5,
+            4
+          ],
+          "color": "steel",
+          "rotation": [
+            0,
+            0,
+            0
+          ],
+          "solid": true
+        },
+        {
+          "name": "CauldronRim",
+          "size": [
+            0.4,
+            0.6,
+            5.7
+          ],
+          "position": [
+            18,
+            3.5,
+            4
+          ],
+          "color": "steel",
+          "rotation": [
+            0,
+            0,
+            0
+          ],
+          "solid": true
+        },
+        {
+          "name": "CauldronRim",
+          "size": [
+            5.7,
+            0.6,
+            0.4
+          ],
+          "position": [
+            15,
+            3.5,
+            1
+          ],
+          "color": "steel",
+          "rotation": [
+            0,
+            0,
+            0
+          ],
+          "solid": true
+        },
+        {
+          "name": "CauldronRim",
+          "size": [
+            5.7,
+            0.6,
+            0.4
+          ],
+          "position": [
+            15,
+            3.5,
+            7
+          ],
+          "color": "steel",
+          "rotation": [
+            0,
+            0,
+            0
+          ],
+          "solid": true
+        },
+        {
+          "name": "PotionSurface",
+          "size": [
+            5.5,
+            0.15,
+            5.5
+          ],
+          "position": [
+            15,
+            3.3,
+            4
+          ],
+          "color": "green",
+          "rotation": [
+            0,
+            0,
+            0
+          ],
+          "solid": false
+        }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,80 @@
+[
+  {
+    "id": "theme_human",
+    "triangles": 180,
+    "bounds": [
+      15.0,
+      15.0,
+      13.0
+    ],
+    "sourceParts": 15,
+    "icon": "theme_human.png",
+    "robloxMeshAssetId": null,
+    "robloxImageAssetId": null
+  },
+  {
+    "id": "theme_elf",
+    "triangles": 252,
+    "bounds": [
+      15.0,
+      15.0,
+      10.350000381469727
+    ],
+    "sourceParts": 21,
+    "icon": "theme_elf.png",
+    "robloxMeshAssetId": null,
+    "robloxImageAssetId": null
+  },
+  {
+    "id": "theme_dwarf",
+    "triangles": 252,
+    "bounds": [
+      15.0,
+      15.0,
+      12.850000381469727
+    ],
+    "sourceParts": 21,
+    "icon": "theme_dwarf.png",
+    "robloxMeshAssetId": null,
+    "robloxImageAssetId": null
+  },
+  {
+    "id": "theme_orc",
+    "triangles": 264,
+    "bounds": [
+      15.0,
+      15.0,
+      9.961240768432617
+    ],
+    "sourceParts": 22,
+    "icon": "theme_orc.png",
+    "robloxMeshAssetId": null,
+    "robloxImageAssetId": null
+  },
+  {
+    "id": "theme_mage",
+    "triangles": 252,
+    "bounds": [
+      15.0,
+      15.0,
+      11.48856258392334
+    ],
+    "sourceParts": 21,
+    "icon": "theme_mage.png",
+    "robloxMeshAssetId": null,
+    "robloxImageAssetId": null
+  },
+  {
+    "id": "theme_crosshaven",
+    "triangles": 228,
+    "bounds": [
+      15.0,
+      15.0,
+      12.75
+    ],
+    "sourceParts": 19,
+    "icon": "theme_crosshaven.png",
+    "robloxMeshAssetId": null,
+    "robloxImageAssetId": null
+  }
+]

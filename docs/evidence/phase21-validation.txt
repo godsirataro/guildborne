@@ -1,0 +1,70 @@
+PASS exact catalogs and references
+PASS Thai translation coverage and interpolation preserve every placeholder
+PASS language preference persists without changing progression and rejects unsupported input
+PASS v1 profile without optional language remains valid and projects English
+PASS duplicate item, quest, and adventurer IDs rejected
+PASS dangling reward and equipment references rejected
+PASS default profile is valid and independently allocated
+PASS malformed payloads and forged reward fields rejected
+PASS sparse oversized and duplicate party validation
+PASS invalid quest and never-started completion rejected
+PASS early completion and wrong run rejected without mutation
+PASS duplicate completion and exact request replay cannot duplicate rewards
+PASS request ID payload conflict and stale revision rejected
+PASS unowned nonexistent and incompatible equipment rejected
+PASS Gold never negative and invalid Hall upgrade has no effects
+PASS complete onboarding, eight obtainable items, Hall and rejoin
+PASS active quest and reward snapshot survive rejoin
+PASS full inventory blocks all reward components atomically
+PASS failed load never writes defaults
+PASS unknown acquisition retries same token without changing epoch
+PASS failed save exposes no candidate and blocks further spending
+PASS write committed with lost response recovers without duplicate reward
+PASS server crash after uncertain commit restores committed value
+PASS two servers, lease takeover and stale writer after release
+PASS closing during save preserves committed progression
+PASS archive failure retains evidence and successful retry drains once
+PASS corrupt and future-version data preserved without reset
+PASS explicit migration is additive and repeatable
+PASS semantic replay survives recent-result eviction
+PASS rerun UpdateAsync callback produces one reward and one committed event batch
+PASS analytics failure cannot strand a committed save
+PASS partial-fill item capacity rejection does not consume Gold or XP
+PASS repeated completed runs use repeat rewards and never duplicate first-clear weapon
+PASS audit capacity pauses admission without destroying history
+PASS lease safety margin blocks mutation before expiry and heartbeat restores admission
+PASS owned weapon shortens only the next expedition and snapshots party
+PASS deterministic adversarial command sequence preserves profile invariants
+PASS five-member roster and active snapshot survive commit and rejoin
+PASS hero presentation follows only committed owned members and equipped weapons
+PASS legacy content snapshots remain valid with additive class expansion
+PASS combat stats derive class level and compatible equipped weapon
+PASS physical damage predictable and attack monotonic
+PASS defense mitigates with positive minimum
+PASS invalid negative nonfinite stats and levels rejected
+PASS healing cap and separate healing telemetry
+PASS ability cooldown authoritative and invalid cast does not consume
+PASS target validates owner allegiance active state and nil
+PASS attack range and attack interval checked on server
+PASS Knight threat and temporary taunt override expire
+PASS Priest picks meaningful largest deficit skips full downed foreign distant
+PASS enemy death latched once only and duplicate reward rejected
+PASS invalid ability and another class ability rejected
+PASS downed hero cannot attack cast or receive combat healing
+PASS dead enemy cannot attack or receive additional damage
+PASS combat references resolve and bad configs fail startup
+PASS forged combat damage heal health stats and reward intents rejected
+PASS combat reward commits Gold XP audit once and survives rejoin
+PASS uncertain combat save reconciles without double Gold XP
+PASS reward capacity and foreign membership reject atomically
+
+59 tests passed.
+Building project 'Guildborne'
+Built project to Guildborne.rbxlx
+Created sourcemap at build/sourcemap.json
+Compiled 3 KLOC into 258 KB bytecode (read 0.00s, parse 0.00s, compile 0.01s)
+PASS: 20 design/evidence documents, JSON/TOML, Rojo paths,
+      152 local links, 1 JSON fixture(s), 43 strict Luau files.
+PASS: built-place boundaries and exact runtime sourcemap coverage.
+Roblox runtime behavior and external link availability are not checked here.
+PASS: all automated checks. Studio/staging acceptance is separate.

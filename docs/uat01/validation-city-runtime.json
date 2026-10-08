@@ -1,0 +1,17 @@
+{
+  "placeId": 86788611613035,
+  "probe": "tests/studio_city_roads_probe.luau",
+  "roads": 12,
+  "samples": 837,
+  "blockedSamples": 0,
+  "corridorWidthStuds": 4,
+  "corridorHeightStuds": 5,
+  "guideButtonHeightPixels": 44,
+  "realQuestGuideClick": true,
+  "heraldDistanceAtCitySpawn": 363,
+  "arrowHiddenOnArrival": true,
+  "combatButtonsVisibleInGuild": true,
+  "combatButtonsHiddenInCity": true,
+  "noProfileWrites": true,
+  "physicalWalkingAndDeviceAcceptance": "pending"
+}

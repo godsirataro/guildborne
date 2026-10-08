@@ -1,0 +1,57 @@
+{
+  "conclusionUI": {
+    "views": 144,
+    "textBoundsChecks": 882,
+    "serverRequests": 0,
+    "profileWrites": 0
+  },
+  "shutter": {
+    "date": "2026-10-06",
+    "scope": "Isolated native timing and actual-key/walking fixture; production protection state machine; no real profile rewards. Geometry reproduces first-lane displacement, not full mine scenery.",
+    "preparation": 4,
+    "duration": 22,
+    "firstShutterDistance": 54.20332093147061,
+    "speedMultiplier": 1,
+    "observations": [
+      {
+        "Blocks": 0,
+        "Health": 3,
+        "Blocked": true,
+        "Status": "Active",
+        "Warning": "left",
+        "LastBlockSeconds": 4.8329349999985425,
+        "Seconds": 5.000507600008859
+      },
+      {
+        "Blocks": 1,
+        "Health": 3,
+        "Blocked": true,
+        "Status": "Active",
+        "Warning": "centre",
+        "LastBlockSeconds": 10.982794800002011,
+        "Seconds": 11.133774400004768
+      },
+      {
+        "Blocks": 2,
+        "Health": 3,
+        "Blocked": true,
+        "Status": "Active",
+        "Warning": "right",
+        "LastBlockSeconds": 17.88326820000657,
+        "Seconds": 18.03279250000196
+      }
+    ],
+    "final": {
+      "Blocks": 3,
+      "Health": 3,
+      "Status": "Completed",
+      "LastBlockSeconds": 17.88326820000657,
+      "Seconds": 25.433062099997187
+    },
+    "profileWrites": 0,
+    "limitations": [
+      "First attempt input preceded warning; second attempt stopped too close to prompt boundary and missed first lane. Exact-target third attempt completed with full health.",
+      "Full fresh campaign evidence predates this timing/UI polish."
+    ]
+  }
+}

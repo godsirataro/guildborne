@@ -1,0 +1,5 @@
+FBX version: 7400
+VAELA_ROUNDTRIP {"status": "PASS", "bones": 16, "meshObjects": 82, "triangles": 9728, "pourChecks": [{"frame": 60, "spoutStreamError": 7.054090725508108e-07, "soilContactError": 0.0}, {"frame": 70, "spoutStreamError": 5.734527529744463e-07, "soilContactError": 0.0}, {"frame": 80, "spoutStreamError": 9.019819468511079e-07, "soilContactError": 0.0}, {"frame": 90, "spoutStreamError": 1.101577852861656e-06, "soilContactError": 0.0}, {"frame": 100, "spoutStreamError": 9.019819468511079e-07, "soilContactError": 0.0}, {"frame": 110, "spoutStreamError": 5.734527529744463e-07, "soilContactError": 0.0}, {"frame": 120, "spoutStreamError": 7.054090725508108e-07, "soilContactError": 0.0}], "inactiveWaterChecks": 4, "stationaryFootRootSupportHand": true, "symmetricArmLengths": true, "loopSeam": true, "platformImported": false, "format": "FBX"}
+Blender 5.2.1 LTS (hash 9e2066aef7ef built 2026-08-25 02:38:20)
+
+Blender quit

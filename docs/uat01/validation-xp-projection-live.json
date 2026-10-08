@@ -1,0 +1,21 @@
+{
+  "trail": {
+    "content": [
+      {
+        "type": "text",
+        "text": "{\"firstClear\":true,\"revision\":6,\"playerXP\":0,\"gold\":30,\"heroXP\":20,\"cap\":5,\"heroLevel\":1}"
+      }
+    ],
+    "isError": false
+  },
+  "timber": {
+    "content": [
+      {
+        "type": "text",
+        "text": "{\"revision\":8,\"playerXP\":0,\"gold\":70,\"heroXP\":50,\"cap\":5,\"heroLevel\":2,\"firstClears\":{\"timber_escort\":true,\"trail_watch\":true}}"
+      }
+    ],
+    "isError": false
+  },
+  "method": "Actual fresh-profile UI recruitment, party selection, real expedition timers and claims; no direct state grants."
+}

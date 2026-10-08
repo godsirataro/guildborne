@@ -1,0 +1,30 @@
+{
+  "native": {
+    "content": [
+      {
+        "type": "text",
+        "text": "{\"physicalDevicesTested\":false,\"profileWrites\":0,\"spatialChecks\":8,\"cooldownsPreserved\":true,\"derivedStatsUpdated\":true,\"healthPreserved\":true}"
+      }
+    ],
+    "isError": false
+  },
+  "allocated": {
+    "content": [
+      {
+        "type": "text",
+        "text": "{\"remaining\":0,\"revision\":12,\"overspendButtonDisabled\":true,\"gold\":70,\"maxHP\":39,\"actor\":\"a:Warrior\",\"allocation\":{\"VIT\":3}}"
+      }
+    ],
+    "isError": false
+  },
+  "reset": {
+    "content": [
+      {
+        "type": "text",
+        "text": "{\"remainingAP\":3,\"revision\":14,\"gold\":70,\"level\":2,\"skills\":[],\"xp\":50,\"maxHP\":33}"
+      }
+    ],
+    "isError": false
+  },
+  "method": "Owned memory-only offline UI; actual expedition rewards, ordinary clicks; movement-only debug approach to Guild portal/Hall; no profile grants."
+}

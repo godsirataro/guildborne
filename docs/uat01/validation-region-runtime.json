@@ -1,0 +1,9 @@
+{
+  "content": [
+    {
+      "type": "text",
+      "text": "{\"regions\":{\"1\":{\"routes\":3,\"region\":\"Greenwood\",\"samples\":870,\"markers\":5,\"maxSlope\":9.090271924173635},\"3\":{\"routes\":3,\"region\":\"Ashen\",\"samples\":567,\"markers\":5,\"maxSlope\":8.530761059041028},\"2\":{\"routes\":3,\"region\":\"Ironveil\",\"samples\":753,\"markers\":5,\"maxSlope\":9.090271924173635}},\"totalSamples\":2190,\"liveBindings\":false}"
+    }
+  ],
+  "isError": false
+}

@@ -1,0 +1,136 @@
+{
+  "name": "Guildborne_TowerPreview",
+  "serveAddress": "127.0.0.1",
+  "globIgnorePaths": [
+    "**/.gitkeep"
+  ],
+  "tree": {
+    "$className": "DataModel",
+    "ReplicatedStorage": {
+      "$className": "ReplicatedStorage",
+      "Shared": {
+        "$path": "src/shared"
+      }
+    },
+    "ServerScriptService": {
+      "$className": "ServerScriptService",
+      "Server": {
+        "$className": "Folder",
+        "Config": {
+          "$className": "Folder",
+          "AdventureEncounters": {
+            "$path": "src/server/Config/AdventureEncounters.luau"
+          },
+          "AdventureEnemyProfiles": {
+            "$path": "src/server/Config/AdventureEnemyProfiles.luau"
+          },
+          "AdventureRewards": {
+            "$path": "src/server/Config/AdventureRewards.luau"
+          },
+          "ArchiveHeartCourtLayout": {
+            "$path": "src/server/Config/ArchiveHeartCourtLayout.luau"
+          },
+          "ArchiveHeartEncounters": {
+            "$path": "src/server/Config/ArchiveHeartEncounters.luau"
+          },
+          "AshenCourtLayout": {
+            "$path": "src/server/Config/AshenCourtLayout.luau"
+          },
+          "CampaignSequence": {
+            "$path": "src/server/Config/CampaignSequence.luau"
+          },
+          "ChapterFive": {
+            "$path": "src/server/Config/ChapterFive.luau"
+          },
+          "ChapterFour": {
+            "$path": "src/server/Config/ChapterFour.luau"
+          },
+          "ChapterOne": {
+            "$path": "src/server/Config/ChapterOne.luau"
+          },
+          "ChapterSix": {
+            "$path": "src/server/Config/ChapterSix.luau"
+          },
+          "ChapterThree": {
+            "$path": "src/server/Config/ChapterThree.luau"
+          },
+          "ChapterTwo": {
+            "$path": "src/server/Config/ChapterTwo.luau"
+          },
+          "Combat": {
+            "$path": "src/server/Config/Combat.luau"
+          },
+          "Content": {
+            "$path": "src/server/Config/Content.luau"
+          },
+          "CrosshavenCourtLayout": {
+            "$path": "src/server/Config/CrosshavenCourtLayout.luau"
+          },
+          "CrosshavenWards": {
+            "$path": "src/server/Config/CrosshavenWards.luau"
+          },
+          "GuildLand": {
+            "$path": "src/server/Config/GuildLand.luau"
+          },
+          "IronveilMineLayout": {
+            "$path": "src/server/Config/IronveilMineLayout.luau"
+          },
+          "IronveilTasks": {
+            "$path": "src/server/Config/IronveilTasks.luau"
+          },
+          "Market": {
+            "$path": "src/server/Config/Market.luau"
+          },
+          "NoviceChapter": {
+            "$path": "src/server/Config/NoviceChapter.luau"
+          },
+          "NoviceLessons": {
+            "$path": "src/server/Config/NoviceLessons.luau"
+          },
+          "NoviceTrials": {
+            "$path": "src/server/Config/NoviceTrials.luau"
+          },
+          "Runtime": {
+            "$path": "offline/TowerRuntime.luau"
+          },
+          "TowerCourtLayout": {
+            "$path": "src/server/Config/TowerCourtLayout.luau"
+          },
+          "TowerGuardian": {
+            "$path": "src/server/Config/TowerGuardian.luau"
+          },
+          "TowerLessons": {
+            "$path": "src/server/Config/TowerLessons.luau"
+          }
+        },
+        "Persistence": {
+          "$path": "src/server/Persistence"
+        },
+        "ServerBootstrap": {
+          "$path": "src/server/ServerBootstrap.server.luau"
+        },
+        "Services": {
+          "$path": "src/server/Services"
+        },
+        "Systems": {
+          "$path": "src/server/Systems"
+        }
+      }
+    },
+    "StarterGui": {
+      "$className": "StarterGui",
+      "$properties": {
+        "ScreenOrientation": "Sensor"
+      }
+    },
+    "StarterPlayer": {
+      "$className": "StarterPlayer",
+      "StarterPlayerScripts": {
+        "$className": "StarterPlayerScripts",
+        "Client": {
+          "$path": "src/client"
+        }
+      }
+    }
+  }
+}

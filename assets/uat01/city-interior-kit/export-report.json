@@ -1,0 +1,67 @@
+[
+  {
+    "id": "guild_office",
+    "triangles": 372,
+    "bounds": [
+      43.75,
+      25.700000762939453,
+      11.121320724487305
+    ],
+    "sourceParts": 31,
+    "icon": "guild_office.png",
+    "robloxMeshAssetId": null,
+    "robloxImageAssetId": null
+  },
+  {
+    "id": "hearth_tavern",
+    "triangles": 432,
+    "bounds": [
+      44.5,
+      29.400001525878906,
+      8.0
+    ],
+    "sourceParts": 36,
+    "icon": "hearth_tavern.png",
+    "robloxMeshAssetId": null,
+    "robloxImageAssetId": null
+  },
+  {
+    "id": "exchange_office",
+    "triangles": 360,
+    "bounds": [
+      43.75,
+      29.450000762939453,
+      9.050000190734863
+    ],
+    "sourceParts": 30,
+    "icon": "exchange_office.png",
+    "robloxMeshAssetId": null,
+    "robloxImageAssetId": null
+  },
+  {
+    "id": "forge_workshop",
+    "triangles": 276,
+    "bounds": [
+      45.099998474121094,
+      19.5,
+      9.0
+    ],
+    "sourceParts": 23,
+    "icon": "forge_workshop.png",
+    "robloxMeshAssetId": null,
+    "robloxImageAssetId": null
+  },
+  {
+    "id": "alchemy_study",
+    "triangles": 588,
+    "bounds": [
+      43.75,
+      23.600000381469727,
+      9.0
+    ],
+    "sourceParts": 49,
+    "icon": "alchemy_study.png",
+    "robloxMeshAssetId": null,
+    "robloxImageAssetId": null
+  }
+]

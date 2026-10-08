@@ -1,0 +1,20 @@
+{
+  "rowan": {
+    "content": [
+      {
+        "type": "text",
+        "text": "{\"trailWatchClaimed\":true,\"revision\":6,\"gold\":30,\"rowanWeapon\":\"q:1:1\",\"actor\":\"Viewing: Rowan · Warrior [F] · a:Warrior\",\"warningCleared\":true}"
+      }
+    ],
+    "isError": false
+  },
+  "sage": {
+    "content": [
+      {
+        "type": "text",
+        "text": "{\"readOnlyHintCases\":4,\"revision\":8,\"sageWeapon\":\"recruit:Priest:1\",\"gold\":10}"
+      }
+    ],
+    "isError": false
+  }
+}

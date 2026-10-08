@@ -1,0 +1,30 @@
+{
+  "date": "2026-10-06",
+  "views": 84,
+  "textBounds": 654,
+  "capturedActions": 18,
+  "scope": "Synthetic roster EN/TH; no network or profile writes",
+  "widths": [
+    240,
+    640,
+    704
+  ],
+  "languages": [
+    "en",
+    "th"
+  ],
+  "states": [
+    "roster",
+    "transfer review",
+    "leave review",
+    "busy",
+    "master",
+    "unavailable",
+    "Creating",
+    "Joining",
+    "Cancelling",
+    "Removing",
+    "recovery",
+    "empty"
+  ]
+}

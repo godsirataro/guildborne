@@ -1,0 +1,11 @@
+{
+  "fixedRootGripFeet": true,
+  "scope": "Isolated local EditableMesh contact fixture; no gameplay combat acceptance",
+  "nativeBones": 23,
+  "arrowVisibility": true,
+  "poseSamples": 36,
+  "status": "PASS",
+  "profileWrites": 0,
+  "maximumContactError": 0.00007404724601656199,
+  "triangles": 3218
+}

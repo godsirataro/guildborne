@@ -1,0 +1,11 @@
+# Regional resource guidance
+
+The existing map control now works in Greenwood, Ironveil and Ashen. Each regional diagram shows its two resource sites, the return portal and the player's position. Selecting a site closes the map and displays a camera-relative direction and distance. At 10 studs, manual guidance reports arrival and clears. Navigation never teleports, gathers, accepts or claims a quest.
+
+The quest-guide button follows the tracked quest. For active regional gathering it directs a city player to the correct gate, then to the exact resource node. From another region it first directs the player to that region's return portal. When the quest is ready, it directs the player through the return portal and then to the correct NPC. The selected quest route persists at portal arrival and recomputes from the next server snapshot/location. Use Track quest in the journal to override tutorial guidance. Non-regional quest guidance retains its NPC destination.
+
+Resource markers keep their public coordinates. The smaller 260px regional diagram starts centered on its useful markers; the city diagram remains 480px. Each button is at least44px high, with bounded12–15px text. At the current151.84px compact map viewport, all three choices are initially visible in all three regions. The arrows provide direction, not pathfinding; players still follow traversable paths.
+
+454 domain tests pass, including all six exact-node routes, wrong-region portals, completion returns, available-quest NPCs and no mutation. Native clones pass36button cases over all3regions,240/640px widths andEN/TH: bounds, no overlap, text fit, minimum touch size and compact initial visibility. Actual keyboard travel opened the Greenwood map; clicking Herb showed61studs and a direction arrow, and movement-only debug approach produced Destination reached without gathering. [Current map screenshot](region-map.png) was visually reviewed. This is not physical-mobile, full quest-route journey or human acceptance.
+
+Evidence: validation-region-navigation-domain.txt and validation-region-navigation-native.json. The latest current session is memory-only; earlier Mogra quest evidence remains in validation-regional-supplies-live.json.

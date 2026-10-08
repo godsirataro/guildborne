@@ -1,0 +1,4928 @@
+{
+  "schema": 1,
+  "units": "stud",
+  "palette": {
+    "wood": [
+      99,
+      65,
+      43
+    ],
+    "leather": [
+      74,
+      43,
+      35
+    ],
+    "steel": [
+      181,
+      199,
+      205
+    ],
+    "gold": [
+      209,
+      171,
+      84
+    ],
+    "copper": [
+      177,
+      119,
+      63
+    ],
+    "blue": [
+      92,
+      158,
+      195
+    ],
+    "cyan": [
+      82,
+      191,
+      209
+    ],
+    "ivory": [
+      239,
+      223,
+      179
+    ],
+    "leaf": [
+      121,
+      159,
+      79
+    ],
+    "stone": [
+      119,
+      133,
+      143
+    ],
+    "violet": [
+      129,
+      114,
+      198
+    ],
+    "red": [
+      154,
+      68,
+      61
+    ],
+    "green": [
+      94,
+      175,
+      163
+    ],
+    "cloth": [
+      174,
+      156,
+      123
+    ],
+    "dark": [
+      54,
+      67,
+      84
+    ]
+  },
+  "assets": [
+    {
+      "id": "watchblade",
+      "pivot": "grip",
+      "parts": [
+        {
+          "name": "Grip",
+          "size": [
+            0.28,
+            0.82,
+            0.28
+          ],
+          "position": [
+            0,
+            0,
+            0
+          ],
+          "rotation": [
+            0,
+            0,
+            0
+          ],
+          "color": "leather"
+        },
+        {
+          "name": "Pommel",
+          "size": [
+            0.44,
+            0.28,
+            0.38
+          ],
+          "position": [
+            0,
+            -0.54,
+            0
+          ],
+          "rotation": [
+            0,
+            0,
+            45
+          ],
+          "color": "copper"
+        },
+        {
+          "name": "Guard",
+          "size": [
+            1.35,
+            0.18,
+            0.35
+          ],
+          "position": [
+            0,
+            0.51,
+            0
+          ],
+          "rotation": [
+            0,
+            0,
+            0
+          ],
+          "color": "copper"
+        },
+        {
+          "name": "Blade",
+          "size": [
+            0.48,
+            2.5,
+            0.15
+          ],
+          "position": [
+            0,
+            1.88,
+            0
+          ],
+          "rotation": [
+            0,
+            0,
+            0
+          ],
+          "color": "steel"
+        },
+        {
+          "name": "Fuller",
+          "size": [
+            0.11,
+            1.85,
+            0.17
+          ],
+          "position": [
+            0,
+            1.8,
+            0
+          ],
+          "rotation": [
+            0,
+            0,
+            0
+          ],
+          "color": "copper"
+        },
+        {
+          "name": "Point",
+          "size": [
+            0.15,
+            0.55,
+            0.24
+          ],
+          "position": [
+            -0.12,
+            3.405,
+            0
+          ],
+          "rotation": [
+            0,
+            90,
+            0
+          ],
+          "color": "steel",
+          "shape": "Wedge"
+        },
+        {
+          "name": "Point",
+          "size": [
+            0.15,
+            0.55,
+            0.24
+          ],
+          "position": [
+            0.12,
+            3.405,
+            0
+          ],
+          "rotation": [
+            0,
+            -90,
+            0
+          ],
+          "color": "steel",
+          "shape": "Wedge"
+        },
+        {
+          "name": "GuardGem",
+          "size": [
+            0.26,
+            0.26,
+            0.13
+          ],
+          "position": [
+            0,
+            0.52,
+            -0.24
+          ],
+          "rotation": [
+            0,
+            0,
+            45
+          ],
+          "color": "copper"
+        },
+        {
+          "name": "GuardWing",
+          "size": [
+            0.38,
+            0.16,
+            0.32
+          ],
+          "position": [
+            -0.72,
+            0.57,
+            0
+          ],
+          "rotation": [
+            0,
+            0,
+            -22
+          ],
+          "color": "copper"
+        },
+        {
+          "name": "GuardWing",
+          "size": [
+            0.38,
+            0.16,
+            0.32
+          ],
+          "position": [
+            0.72,
+            0.57,
+            0
+          ],
+          "rotation": [
+            0,
+            0,
+            22
+          ],
+          "color": "copper"
+        }
+      ]
+    },
+    {
+      "id": "oathblade",
+      "pivot": "grip",
+      "parts": [
+        {
+          "name": "Grip",
+          "size": [
+            0.28,
+            0.82,
+            0.28
+          ],
+          "position": [
+            0,
+            0,
+            0
+          ],
+          "rotation": [
+            0,
+            0,
+            0
+          ],
+          "color": "leather"
+        },
+        {
+          "name": "Pommel",
+          "size": [
+            0.44,
+            0.28,
+            0.38
+          ],
+          "position": [
+            0,
+            -0.54,
+            0
+          ],
+          "rotation": [
+            0,
+            0,
+            45
+          ],
+          "color": "blue"
+        },
+        {
+          "name": "Guard",
+          "size": [
+            1.35,
+            0.18,
+            0.35
+          ],
+          "position": [
+            0,
+            0.51,
+            0
+          ],
+          "rotation": [
+            0,
+            0,
+            0
+          ],
+          "color": "blue"
+        },
+        {
+          "name": "Blade",
+          "size": [
+            0.62,
+            2.5,
+            0.15
+          ],
+          "position": [
+            0,
+            1.88,
+            0
+          ],
+          "rotation": [
+            0,
+            0,
+            0
+          ],
+          "color": "steel"
+        },
+        {
+          "name": "Fuller",
+          "size": [
+            0.11,
+            1.85,
+            0.17
+          ],
+          "position": [
+            0,
+            1.8,
+            0
+          ],
+          "rotation": [
+            0,
+            0,
+            0
+          ],
+          "color": "blue"
+        },
+        {
+          "name": "Point",
+          "size": [
+            0.15,
+            0.55,
+            0.31
+          ],
+          "position": [
+            -0.155,
+            3.405,
+            0
+          ],
+          "rotation": [
+            0,
+            90,
+            0
+          ],
+          "color": "steel",
+          "shape": "Wedge"
+        },
+        {
+          "name": "Point",
+          "size": [
+            0.15,
+            0.55,
+            0.31
+          ],
+          "position": [
+            0.155,
+            3.405,
+            0
+          ],
+          "rotation": [
+            0,
+            -90,
+            0
+          ],
+          "color": "steel",
+          "shape": "Wedge"
+        },
+        {
+          "name": "GuardGem",
+          "size": [
+            0.26,
+            0.26,
+            0.13
+          ],
+          "position": [
+            0,
+            0.52,
+            -0.24
+          ],
+          "rotation": [
+            0,
+            0,
+            45
+          ],
+          "color": "blue"
+        },
+        {
+          "name": "GuardWing",
+          "size": [
+            0.38,
+            0.16,
+            0.32
+          ],
+          "position": [
+            -0.72,
+            0.57,
+            0
+          ],
+          "rotation": [
+            0,
+            0,
+            -22
+          ],
+          "color": "blue"
+        },
+        {
+          "name": "GuardWing",
+          "size": [
+            0.38,
+            0.16,
+            0.32
+          ],
+          "position": [
+            0.72,
+            0.57,
+            0
+          ],
+          "rotation": [
+            0,
+            0,
+            22
+          ],
+          "color": "blue"
+        },
+        {
+          "name": "BladeShoulder",
+          "size": [
+            0.2,
+            0.58,
+            0.16
+          ],
+          "position": [
+            -0.39,
+            0.86,
+            0
+          ],
+          "rotation": [
+            0,
+            0,
+            12
+          ],
+          "color": "steel"
+        },
+        {
+          "name": "BladeShoulder",
+          "size": [
+            0.2,
+            0.58,
+            0.16
+          ],
+          "position": [
+            0.39,
+            0.86,
+            0
+          ],
+          "rotation": [
+            0,
+            0,
+            -12
+          ],
+          "color": "steel"
+        }
+      ]
+    },
+    {
+      "id": "yew_longbow",
+      "pivot": "grip",
+      "parts": [
+        {
+          "name": "YewLimb",
+          "size": [
+            0.21,
+            1.1715374513859982,
+            0.21
+          ],
+          "position": [
+            -0.675,
+            -1.8499999999999999,
+            0
+          ],
+          "rotation": [
+            0,
+            0,
+            -39.8055710922652
+          ],
+          "color": "wood"
+        },
+        {
+          "name": "YewLimb",
+          "size": [
+            0.21,
+            1.4317821063276353,
+            0.21
+          ],
+          "position": [
+            -0.15,
+            -0.7,
+            0
+          ],
+          "rotation": [
+            0,
+            0,
+            -12.094757077012103
+          ],
+          "color": "wood"
+        },
+        {
+          "name": "YewLimb",
+          "size": [
+            0.21,
+            1.4317821063276353,
+            0.21
+          ],
+          "position": [
+            -0.15,
+            0.7,
+            0
+          ],
+          "rotation": [
+            0,
+            0,
+            12.094757077012103
+          ],
+          "color": "wood"
+        },
+        {
+          "name": "YewLimb",
+          "size": [
+            0.21,
+            1.1715374513859982,
+            0.21
+          ],
+          "position": [
+            -0.675,
+            1.8499999999999999,
+            0
+          ],
+          "rotation": [
+            0,
+            0,
+            39.8055710922652
+          ],
+          "color": "wood"
+        },
+        {
+          "name": "String",
+          "size": [
+            0.035,
+            4.6,
+            0.035
+          ],
+          "position": [
+            -1.05,
+            0.0,
+            0
+          ],
+          "rotation": [
+            0,
+            0,
+            -0.0
+          ],
+          "color": "ivory"
+        },
+        {
+          "name": "Grip",
+          "size": [
+            0.3,
+            0.65,
+            0.34
+          ],
+          "position": [
+            0,
+            0,
+            0
+          ],
+          "rotation": [
+            0,
+            0,
+            0
+          ],
+          "color": "leather"
+        },
+        {
+          "name": "TipCap",
+          "size": [
+            0.25,
+            0.22,
+            0.27
+          ],
+          "position": [
+            -1.05,
+            -2.3,
+            0
+          ],
+          "rotation": [
+            0,
+            0,
+            -30
+          ],
+          "color": "gold"
+        },
+        {
+          "name": "LeafInlay",
+          "size": [
+            0.26,
+            0.48,
+            0.1
+          ],
+          "position": [
+            -0.2,
+            -0.85,
+            -0.16
+          ],
+          "rotation": [
+            0,
+            0,
+            -18
+          ],
+          "color": "leaf"
+        },
+        {
+          "name": "TipCap",
+          "size": [
+            0.25,
+            0.22,
+            0.27
+          ],
+          "position": [
+            -1.05,
+            2.3,
+            0
+          ],
+          "rotation": [
+            0,
+            0,
+            30
+          ],
+          "color": "gold"
+        },
+        {
+          "name": "LeafInlay",
+          "size": [
+            0.26,
+            0.48,
+            0.1
+          ],
+          "position": [
+            -0.2,
+            0.85,
+            -0.16
+          ],
+          "rotation": [
+            0,
+            0,
+            18
+          ],
+          "color": "leaf"
+        }
+      ]
+    },
+    {
+      "id": "tide_staff",
+      "pivot": "grip",
+      "parts": [
+        {
+          "name": "Shaft",
+          "size": [
+            0.2,
+            4.3,
+            0.2
+          ],
+          "position": [
+            0,
+            0.45,
+            0
+          ],
+          "rotation": [
+            0,
+            0,
+            0
+          ],
+          "color": "wood"
+        },
+        {
+          "name": "Grip",
+          "size": [
+            0.29,
+            0.75,
+            0.29
+          ],
+          "position": [
+            0,
+            0,
+            0
+          ],
+          "rotation": [
+            0,
+            0,
+            0
+          ],
+          "color": "leather"
+        },
+        {
+          "name": "Butt",
+          "size": [
+            0.35,
+            0.22,
+            0.35
+          ],
+          "position": [
+            0,
+            -1.79,
+            0
+          ],
+          "rotation": [
+            0,
+            0,
+            0
+          ],
+          "color": "steel"
+        },
+        {
+          "name": "Collar",
+          "size": [
+            0.6,
+            0.25,
+            0.5
+          ],
+          "position": [
+            0,
+            2.55,
+            0
+          ],
+          "rotation": [
+            0,
+            0,
+            0
+          ],
+          "color": "steel"
+        },
+        {
+          "name": "Focus",
+          "size": [
+            0.6,
+            0.8,
+            0.55
+          ],
+          "position": [
+            0,
+            3.13,
+            0
+          ],
+          "rotation": [
+            0,
+            0,
+            45
+          ],
+          "color": "cyan"
+        },
+        {
+          "name": "WaveArm",
+          "size": [
+            0.18,
+            1,
+            0.24
+          ],
+          "position": [
+            -0.5,
+            2.99,
+            0
+          ],
+          "rotation": [
+            0,
+            0,
+            22
+          ],
+          "color": "steel"
+        },
+        {
+          "name": "WaveTip",
+          "size": [
+            0.38,
+            0.17,
+            0.24
+          ],
+          "position": [
+            -0.58,
+            3.47,
+            0
+          ],
+          "rotation": [
+            0,
+            0,
+            -25
+          ],
+          "color": "cyan"
+        },
+        {
+          "name": "WaveArm",
+          "size": [
+            0.18,
+            1,
+            0.24
+          ],
+          "position": [
+            0.5,
+            2.99,
+            0
+          ],
+          "rotation": [
+            0,
+            0,
+            -22
+          ],
+          "color": "steel"
+        },
+        {
+          "name": "WaveTip",
+          "size": [
+            0.38,
+            0.17,
+            0.24
+          ],
+          "position": [
+            0.58,
+            3.47,
+            0
+          ],
+          "rotation": [
+            0,
+            0,
+            25
+          ],
+          "color": "cyan"
+        },
+        {
+          "name": "LowerRune",
+          "size": [
+            0.13,
+            0.65,
+            0.1
+          ],
+          "position": [
+            0,
+            1.55,
+            -0.17
+          ],
+          "rotation": [
+            0,
+            0,
+            0
+          ],
+          "color": "cyan"
+        }
+      ]
+    },
+    {
+      "id": "dawn_crozier",
+      "pivot": "grip",
+      "parts": [
+        {
+          "name": "Shaft",
+          "size": [
+            0.2,
+            4.1,
+            0.2
+          ],
+          "position": [
+            0,
+            0.4,
+            0
+          ],
+          "rotation": [
+            0,
+            0,
+            0
+          ],
+          "color": "wood"
+        },
+        {
+          "name": "Grip",
+          "size": [
+            0.29,
+            0.75,
+            0.29
+          ],
+          "position": [
+            0,
+            0,
+            0
+          ],
+          "rotation": [
+            0,
+            0,
+            0
+          ],
+          "color": "leather"
+        },
+        {
+          "name": "Butt",
+          "size": [
+            0.32,
+            0.23,
+            0.32
+          ],
+          "position": [
+            0,
+            -1.76,
+            0
+          ],
+          "rotation": [
+            0,
+            0,
+            0
+          ],
+          "color": "gold"
+        },
+        {
+          "name": "Collar",
+          "size": [
+            0.55,
+            0.22,
+            0.45
+          ],
+          "position": [
+            0,
+            2.44,
+            0
+          ],
+          "rotation": [
+            0,
+            0,
+            0
+          ],
+          "color": "gold"
+        },
+        {
+          "name": "CrozierArc",
+          "size": [
+            0.16,
+            0.4592201188381077,
+            0.16
+          ],
+          "position": [
+            0.21213203435596428,
+            2.547867965644036,
+            0
+          ],
+          "rotation": [
+            0,
+            0,
+            -67.5
+          ],
+          "color": "gold"
+        },
+        {
+          "name": "CrozierArc",
+          "size": [
+            0.16,
+            0.45922011883810776,
+            0.16
+          ],
+          "position": [
+            0.5121320343559642,
+            2.8478679656440358,
+            0
+          ],
+          "rotation": [
+            0,
+            0,
+            -22.499999999999996
+          ],
+          "color": "gold"
+        },
+        {
+          "name": "CrozierArc",
+          "size": [
+            0.16,
+            0.45922011883810776,
+            0.16
+          ],
+          "position": [
+            0.5121320343559642,
+            3.2721320343559643,
+            0
+          ],
+          "rotation": [
+            0,
+            0,
+            22.499999999999996
+          ],
+          "color": "gold"
+        },
+        {
+          "name": "CrozierArc",
+          "size": [
+            0.16,
+            0.4592201188381077,
+            0.16
+          ],
+          "position": [
+            0.21213203435596428,
+            3.572132034355964,
+            0
+          ],
+          "rotation": [
+            0,
+            0,
+            67.5
+          ],
+          "color": "gold"
+        },
+        {
+          "name": "CrozierArc",
+          "size": [
+            0.16,
+            0.45922011883810776,
+            0.16
+          ],
+          "position": [
+            -0.2121320343559642,
+            3.572132034355964,
+            0
+          ],
+          "rotation": [
+            0,
+            0,
+            112.50000000000001
+          ],
+          "color": "gold"
+        },
+        {
+          "name": "CrozierArc",
+          "size": [
+            0.16,
+            0.45922011883810776,
+            0.16
+          ],
+          "position": [
+            -0.5121320343559642,
+            3.2721320343559643,
+            0
+          ],
+          "rotation": [
+            0,
+            0,
+            157.5
+          ],
+          "color": "gold"
+        },
+        {
+          "name": "Focus",
+          "size": [
+            0.36,
+            0.5,
+            0.34
+          ],
+          "position": [
+            0,
+            3.06,
+            0
+          ],
+          "rotation": [
+            0,
+            0,
+            45
+          ],
+          "color": "ivory"
+        },
+        {
+          "name": "SunRay",
+          "size": [
+            1.2,
+            0.12,
+            0.14
+          ],
+          "position": [
+            0,
+            3.06,
+            0
+          ],
+          "rotation": [
+            0,
+            0,
+            0
+          ],
+          "color": "gold"
+        }
+      ]
+    },
+    {
+      "id": "training_sword",
+      "pivot": "grip",
+      "parts": [
+        {
+          "name": "Grip",
+          "size": [
+            0.28,
+            0.82,
+            0.28
+          ],
+          "position": [
+            0,
+            0,
+            0
+          ],
+          "rotation": [
+            0,
+            0,
+            0
+          ],
+          "color": "leather"
+        },
+        {
+          "name": "Pommel",
+          "size": [
+            0.44,
+            0.28,
+            0.38
+          ],
+          "position": [
+            0,
+            -0.54,
+            0
+          ],
+          "rotation": [
+            0,
+            0,
+            45
+          ],
+          "color": "leather"
+        },
+        {
+          "name": "Guard",
+          "size": [
+            1.35,
+            0.18,
+            0.35
+          ],
+          "position": [
+            0,
+            0.51,
+            0
+          ],
+          "rotation": [
+            0,
+            0,
+            0
+          ],
+          "color": "leather"
+        },
+        {
+          "name": "Blade",
+          "size": [
+            0.48,
+            2.5,
+            0.15
+          ],
+          "position": [
+            0,
+            1.88,
+            0
+          ],
+          "rotation": [
+            0,
+            0,
+            0
+          ],
+          "color": "wood"
+        },
+        {
+          "name": "Fuller",
+          "size": [
+            0.11,
+            1.85,
+            0.17
+          ],
+          "position": [
+            0,
+            1.8,
+            0
+          ],
+          "rotation": [
+            0,
+            0,
+            0
+          ],
+          "color": "leather"
+        },
+        {
+          "name": "Point",
+          "size": [
+            0.15,
+            0.55,
+            0.24
+          ],
+          "position": [
+            -0.12,
+            3.405,
+            0
+          ],
+          "rotation": [
+            0,
+            90,
+            0
+          ],
+          "color": "wood",
+          "shape": "Wedge"
+        },
+        {
+          "name": "Point",
+          "size": [
+            0.15,
+            0.55,
+            0.24
+          ],
+          "position": [
+            0.12,
+            3.405,
+            0
+          ],
+          "rotation": [
+            0,
+            -90,
+            0
+          ],
+          "color": "wood",
+          "shape": "Wedge"
+        },
+        {
+          "name": "GuardGem",
+          "size": [
+            0.26,
+            0.26,
+            0.13
+          ],
+          "position": [
+            0,
+            0.52,
+            -0.24
+          ],
+          "rotation": [
+            0,
+            0,
+            45
+          ],
+          "color": "leather"
+        },
+        {
+          "name": "GuardWing",
+          "size": [
+            0.38,
+            0.16,
+            0.32
+          ],
+          "position": [
+            -0.72,
+            0.57,
+            0
+          ],
+          "rotation": [
+            0,
+            0,
+            -22
+          ],
+          "color": "leather"
+        },
+        {
+          "name": "GuardWing",
+          "size": [
+            0.38,
+            0.16,
+            0.32
+          ],
+          "position": [
+            0.72,
+            0.57,
+            0
+          ],
+          "rotation": [
+            0,
+            0,
+            22
+          ],
+          "color": "leather"
+        }
+      ]
+    },
+    {
+      "id": "iron_sword",
+      "pivot": "grip",
+      "parts": [
+        {
+          "name": "Grip",
+          "size": [
+            0.28,
+            0.82,
+            0.28
+          ],
+          "position": [
+            0,
+            0,
+            0
+          ],
+          "rotation": [
+            0,
+            0,
+            0
+          ],
+          "color": "leather"
+        },
+        {
+          "name": "Pommel",
+          "size": [
+            0.44,
+            0.28,
+            0.38
+          ],
+          "position": [
+            0,
+            -0.54,
+            0
+          ],
+          "rotation": [
+            0,
+            0,
+            45
+          ],
+          "color": "gold"
+        },
+        {
+          "name": "Guard",
+          "size": [
+            1.35,
+            0.18,
+            0.35
+          ],
+          "position": [
+            0,
+            0.51,
+            0
+          ],
+          "rotation": [
+            0,
+            0,
+            0
+          ],
+          "color": "gold"
+        },
+        {
+          "name": "Blade",
+          "size": [
+            0.48,
+            2.5,
+            0.15
+          ],
+          "position": [
+            0,
+            1.88,
+            0
+          ],
+          "rotation": [
+            0,
+            0,
+            0
+          ],
+          "color": "steel"
+        },
+        {
+          "name": "Fuller",
+          "size": [
+            0.11,
+            1.85,
+            0.17
+          ],
+          "position": [
+            0,
+            1.8,
+            0
+          ],
+          "rotation": [
+            0,
+            0,
+            0
+          ],
+          "color": "gold"
+        },
+        {
+          "name": "Point",
+          "size": [
+            0.15,
+            0.55,
+            0.24
+          ],
+          "position": [
+            -0.12,
+            3.405,
+            0
+          ],
+          "rotation": [
+            0,
+            90,
+            0
+          ],
+          "color": "steel",
+          "shape": "Wedge"
+        },
+        {
+          "name": "Point",
+          "size": [
+            0.15,
+            0.55,
+            0.24
+          ],
+          "position": [
+            0.12,
+            3.405,
+            0
+          ],
+          "rotation": [
+            0,
+            -90,
+            0
+          ],
+          "color": "steel",
+          "shape": "Wedge"
+        },
+        {
+          "name": "GuardGem",
+          "size": [
+            0.26,
+            0.26,
+            0.13
+          ],
+          "position": [
+            0,
+            0.52,
+            -0.24
+          ],
+          "rotation": [
+            0,
+            0,
+            45
+          ],
+          "color": "gold"
+        },
+        {
+          "name": "GuardWing",
+          "size": [
+            0.38,
+            0.16,
+            0.32
+          ],
+          "position": [
+            -0.72,
+            0.57,
+            0
+          ],
+          "rotation": [
+            0,
+            0,
+            -22
+          ],
+          "color": "gold"
+        },
+        {
+          "name": "GuardWing",
+          "size": [
+            0.38,
+            0.16,
+            0.32
+          ],
+          "position": [
+            0.72,
+            0.57,
+            0
+          ],
+          "rotation": [
+            0,
+            0,
+            22
+          ],
+          "color": "gold"
+        }
+      ]
+    },
+    {
+      "id": "knight_sword",
+      "pivot": "grip",
+      "parts": [
+        {
+          "name": "Grip",
+          "size": [
+            0.28,
+            0.82,
+            0.28
+          ],
+          "position": [
+            0,
+            0,
+            0
+          ],
+          "rotation": [
+            0,
+            0,
+            0
+          ],
+          "color": "leather"
+        },
+        {
+          "name": "Pommel",
+          "size": [
+            0.44,
+            0.28,
+            0.38
+          ],
+          "position": [
+            0,
+            -0.54,
+            0
+          ],
+          "rotation": [
+            0,
+            0,
+            45
+          ],
+          "color": "gold"
+        },
+        {
+          "name": "Guard",
+          "size": [
+            1.35,
+            0.18,
+            0.35
+          ],
+          "position": [
+            0,
+            0.51,
+            0
+          ],
+          "rotation": [
+            0,
+            0,
+            0
+          ],
+          "color": "gold"
+        },
+        {
+          "name": "Blade",
+          "size": [
+            0.62,
+            2.5,
+            0.15
+          ],
+          "position": [
+            0,
+            1.88,
+            0
+          ],
+          "rotation": [
+            0,
+            0,
+            0
+          ],
+          "color": "steel"
+        },
+        {
+          "name": "Fuller",
+          "size": [
+            0.11,
+            1.85,
+            0.17
+          ],
+          "position": [
+            0,
+            1.8,
+            0
+          ],
+          "rotation": [
+            0,
+            0,
+            0
+          ],
+          "color": "gold"
+        },
+        {
+          "name": "Point",
+          "size": [
+            0.15,
+            0.55,
+            0.31
+          ],
+          "position": [
+            -0.155,
+            3.405,
+            0
+          ],
+          "rotation": [
+            0,
+            90,
+            0
+          ],
+          "color": "steel",
+          "shape": "Wedge"
+        },
+        {
+          "name": "Point",
+          "size": [
+            0.15,
+            0.55,
+            0.31
+          ],
+          "position": [
+            0.155,
+            3.405,
+            0
+          ],
+          "rotation": [
+            0,
+            -90,
+            0
+          ],
+          "color": "steel",
+          "shape": "Wedge"
+        },
+        {
+          "name": "GuardGem",
+          "size": [
+            0.26,
+            0.26,
+            0.13
+          ],
+          "position": [
+            0,
+            0.52,
+            -0.24
+          ],
+          "rotation": [
+            0,
+            0,
+            45
+          ],
+          "color": "gold"
+        },
+        {
+          "name": "GuardWing",
+          "size": [
+            0.38,
+            0.16,
+            0.32
+          ],
+          "position": [
+            -0.72,
+            0.57,
+            0
+          ],
+          "rotation": [
+            0,
+            0,
+            -22
+          ],
+          "color": "gold"
+        },
+        {
+          "name": "GuardWing",
+          "size": [
+            0.38,
+            0.16,
+            0.32
+          ],
+          "position": [
+            0.72,
+            0.57,
+            0
+          ],
+          "rotation": [
+            0,
+            0,
+            22
+          ],
+          "color": "gold"
+        }
+      ]
+    },
+    {
+      "id": "short_bow",
+      "pivot": "grip",
+      "parts": [
+        {
+          "name": "YewLimb",
+          "size": [
+            0.168,
+            0.9372299611087986,
+            0.168
+          ],
+          "position": [
+            -0.54,
+            -1.48,
+            0.0
+          ],
+          "rotation": [
+            0,
+            0,
+            -39.8055710922652
+          ],
+          "color": "wood"
+        },
+        {
+          "name": "YewLimb",
+          "size": [
+            0.168,
+            1.1454256850621083,
+            0.168
+          ],
+          "position": [
+            -0.12,
+            -0.5599999999999999,
+            0.0
+          ],
+          "rotation": [
+            0,
+            0,
+            -12.094757077012103
+          ],
+          "color": "wood"
+        },
+        {
+          "name": "YewLimb",
+          "size": [
+            0.168,
+            1.1454256850621083,
+            0.168
+          ],
+          "position": [
+            -0.12,
+            0.5599999999999999,
+            0.0
+          ],
+          "rotation": [
+            0,
+            0,
+            12.094757077012103
+          ],
+          "color": "wood"
+        },
+        {
+          "name": "YewLimb",
+          "size": [
+            0.168,
+            0.9372299611087986,
+            0.168
+          ],
+          "position": [
+            -0.54,
+            1.48,
+            0.0
+          ],
+          "rotation": [
+            0,
+            0,
+            39.8055710922652
+          ],
+          "color": "wood"
+        },
+        {
+          "name": "String",
+          "size": [
+            0.028000000000000004,
+            3.6799999999999997,
+            0.028000000000000004
+          ],
+          "position": [
+            -0.8400000000000001,
+            0.0,
+            0.0
+          ],
+          "rotation": [
+            0,
+            0,
+            -0.0
+          ],
+          "color": "ivory"
+        },
+        {
+          "name": "Grip",
+          "size": [
+            0.24,
+            0.52,
+            0.272
+          ],
+          "position": [
+            0.0,
+            0.0,
+            0.0
+          ],
+          "rotation": [
+            0,
+            0,
+            0
+          ],
+          "color": "leather"
+        },
+        {
+          "name": "TipCap",
+          "size": [
+            0.2,
+            0.17600000000000002,
+            0.21600000000000003
+          ],
+          "position": [
+            -0.8400000000000001,
+            -1.8399999999999999,
+            0.0
+          ],
+          "rotation": [
+            0,
+            0,
+            -30
+          ],
+          "color": "leather"
+        },
+        {
+          "name": "LeafInlay",
+          "size": [
+            0.20800000000000002,
+            0.384,
+            0.08000000000000002
+          ],
+          "position": [
+            -0.16000000000000003,
+            -0.68,
+            -0.128
+          ],
+          "rotation": [
+            0,
+            0,
+            -18
+          ],
+          "color": "wood"
+        },
+        {
+          "name": "TipCap",
+          "size": [
+            0.2,
+            0.17600000000000002,
+            0.21600000000000003
+          ],
+          "position": [
+            -0.8400000000000001,
+            1.8399999999999999,
+            0.0
+          ],
+          "rotation": [
+            0,
+            0,
+            30
+          ],
+          "color": "leather"
+        },
+        {
+          "name": "LeafInlay",
+          "size": [
+            0.20800000000000002,
+            0.384,
+            0.08000000000000002
+          ],
+          "position": [
+            -0.16000000000000003,
+            0.68,
+            -0.128
+          ],
+          "rotation": [
+            0,
+            0,
+            18
+          ],
+          "color": "wood"
+        }
+      ]
+    },
+    {
+      "id": "apprentice_staff",
+      "pivot": "grip",
+      "parts": [
+        {
+          "name": "Shaft",
+          "size": [
+            0.2,
+            4.3,
+            0.2
+          ],
+          "position": [
+            0,
+            0.45,
+            0
+          ],
+          "rotation": [
+            0,
+            0,
+            0
+          ],
+          "color": "wood"
+        },
+        {
+          "name": "Grip",
+          "size": [
+            0.29,
+            0.75,
+            0.29
+          ],
+          "position": [
+            0,
+            0,
+            0
+          ],
+          "rotation": [
+            0,
+            0,
+            0
+          ],
+          "color": "leather"
+        },
+        {
+          "name": "Butt",
+          "size": [
+            0.35,
+            0.22,
+            0.35
+          ],
+          "position": [
+            0,
+            -1.79,
+            0
+          ],
+          "rotation": [
+            0,
+            0,
+            0
+          ],
+          "color": "gold"
+        },
+        {
+          "name": "Collar",
+          "size": [
+            0.6,
+            0.25,
+            0.5
+          ],
+          "position": [
+            0,
+            2.55,
+            0
+          ],
+          "rotation": [
+            0,
+            0,
+            0
+          ],
+          "color": "gold"
+        },
+        {
+          "name": "Focus",
+          "size": [
+            0.6,
+            0.8,
+            0.55
+          ],
+          "position": [
+            0,
+            3.13,
+            0
+          ],
+          "rotation": [
+            0,
+            0,
+            45
+          ],
+          "color": "green"
+        },
+        {
+          "name": "WaveArm",
+          "size": [
+            0.18,
+            1,
+            0.24
+          ],
+          "position": [
+            -0.5,
+            2.99,
+            0
+          ],
+          "rotation": [
+            0,
+            0,
+            22
+          ],
+          "color": "gold"
+        },
+        {
+          "name": "WaveTip",
+          "size": [
+            0.38,
+            0.17,
+            0.24
+          ],
+          "position": [
+            -0.58,
+            3.47,
+            0
+          ],
+          "rotation": [
+            0,
+            0,
+            -25
+          ],
+          "color": "green"
+        },
+        {
+          "name": "WaveArm",
+          "size": [
+            0.18,
+            1,
+            0.24
+          ],
+          "position": [
+            0.5,
+            2.99,
+            0
+          ],
+          "rotation": [
+            0,
+            0,
+            -22
+          ],
+          "color": "gold"
+        },
+        {
+          "name": "WaveTip",
+          "size": [
+            0.38,
+            0.17,
+            0.24
+          ],
+          "position": [
+            0.58,
+            3.47,
+            0
+          ],
+          "rotation": [
+            0,
+            0,
+            25
+          ],
+          "color": "green"
+        },
+        {
+          "name": "LowerRune",
+          "size": [
+            0.13,
+            0.65,
+            0.1
+          ],
+          "position": [
+            0,
+            1.55,
+            -0.17
+          ],
+          "rotation": [
+            0,
+            0,
+            0
+          ],
+          "color": "green"
+        }
+      ]
+    },
+    {
+      "id": "mage_staff",
+      "pivot": "grip",
+      "parts": [
+        {
+          "name": "Shaft",
+          "size": [
+            0.2,
+            4.3,
+            0.2
+          ],
+          "position": [
+            0,
+            0.45,
+            0
+          ],
+          "rotation": [
+            0,
+            0,
+            0
+          ],
+          "color": "wood"
+        },
+        {
+          "name": "Grip",
+          "size": [
+            0.29,
+            0.75,
+            0.29
+          ],
+          "position": [
+            0,
+            0,
+            0
+          ],
+          "rotation": [
+            0,
+            0,
+            0
+          ],
+          "color": "leather"
+        },
+        {
+          "name": "Butt",
+          "size": [
+            0.35,
+            0.22,
+            0.35
+          ],
+          "position": [
+            0,
+            -1.79,
+            0
+          ],
+          "rotation": [
+            0,
+            0,
+            0
+          ],
+          "color": "gold"
+        },
+        {
+          "name": "Collar",
+          "size": [
+            0.6,
+            0.25,
+            0.5
+          ],
+          "position": [
+            0,
+            2.55,
+            0
+          ],
+          "rotation": [
+            0,
+            0,
+            0
+          ],
+          "color": "gold"
+        },
+        {
+          "name": "Focus",
+          "size": [
+            0.6,
+            0.8,
+            0.55
+          ],
+          "position": [
+            0,
+            3.13,
+            0
+          ],
+          "rotation": [
+            0,
+            0,
+            45
+          ],
+          "color": "violet"
+        },
+        {
+          "name": "WaveArm",
+          "size": [
+            0.18,
+            1,
+            0.24
+          ],
+          "position": [
+            -0.5,
+            2.99,
+            0
+          ],
+          "rotation": [
+            0,
+            0,
+            22
+          ],
+          "color": "gold"
+        },
+        {
+          "name": "WaveTip",
+          "size": [
+            0.38,
+            0.17,
+            0.24
+          ],
+          "position": [
+            -0.58,
+            3.47,
+            0
+          ],
+          "rotation": [
+            0,
+            0,
+            -25
+          ],
+          "color": "violet"
+        },
+        {
+          "name": "WaveArm",
+          "size": [
+            0.18,
+            1,
+            0.24
+          ],
+          "position": [
+            0.5,
+            2.99,
+            0
+          ],
+          "rotation": [
+            0,
+            0,
+            -22
+          ],
+          "color": "gold"
+        },
+        {
+          "name": "WaveTip",
+          "size": [
+            0.38,
+            0.17,
+            0.24
+          ],
+          "position": [
+            0.58,
+            3.47,
+            0
+          ],
+          "rotation": [
+            0,
+            0,
+            25
+          ],
+          "color": "violet"
+        },
+        {
+          "name": "LowerRune",
+          "size": [
+            0.13,
+            0.65,
+            0.1
+          ],
+          "position": [
+            0,
+            1.55,
+            -0.17
+          ],
+          "rotation": [
+            0,
+            0,
+            0
+          ],
+          "color": "violet"
+        }
+      ]
+    },
+    {
+      "id": "leather_vest",
+      "parts": [
+        {
+          "name": "Body",
+          "size": [
+            1.7,
+            1.65,
+            0.55
+          ],
+          "position": [
+            0,
+            0,
+            0
+          ],
+          "rotation": [
+            0,
+            0,
+            0
+          ],
+          "color": "leather"
+        },
+        {
+          "name": "Shoulder",
+          "size": [
+            0.63,
+            0.6,
+            0.65
+          ],
+          "position": [
+            -1.04,
+            0.63,
+            0
+          ],
+          "rotation": [
+            0,
+            0,
+            12
+          ],
+          "color": "leather"
+        },
+        {
+          "name": "Shoulder",
+          "size": [
+            0.63,
+            0.6,
+            0.65
+          ],
+          "position": [
+            1.04,
+            0.63,
+            0
+          ],
+          "rotation": [
+            0,
+            0,
+            -12
+          ],
+          "color": "leather"
+        },
+        {
+          "name": "Collar",
+          "size": [
+            0.9,
+            0.2,
+            0.64
+          ],
+          "position": [
+            0,
+            0.87,
+            0
+          ],
+          "rotation": [
+            0,
+            0,
+            0
+          ],
+          "color": "ivory"
+        },
+        {
+          "name": "Belt",
+          "size": [
+            1.8,
+            0.2,
+            0.66
+          ],
+          "position": [
+            0,
+            -0.65,
+            0
+          ],
+          "rotation": [
+            0,
+            0,
+            0
+          ],
+          "color": "leather"
+        },
+        {
+          "name": "Buckle",
+          "size": [
+            0.28,
+            0.28,
+            0.1
+          ],
+          "position": [
+            0,
+            -0.65,
+            -0.4
+          ],
+          "rotation": [
+            0,
+            0,
+            0
+          ],
+          "color": "gold"
+        },
+        {
+          "name": "Fastener",
+          "size": [
+            0.14,
+            0.14,
+            0.09
+          ],
+          "position": [
+            0.15,
+            -0.3,
+            -0.34
+          ],
+          "rotation": [
+            0,
+            0,
+            0
+          ],
+          "color": "gold"
+        },
+        {
+          "name": "Fastener",
+          "size": [
+            0.14,
+            0.14,
+            0.09
+          ],
+          "position": [
+            0.15,
+            0.1,
+            -0.34
+          ],
+          "rotation": [
+            0,
+            0,
+            0
+          ],
+          "color": "gold"
+        },
+        {
+          "name": "Fastener",
+          "size": [
+            0.14,
+            0.14,
+            0.09
+          ],
+          "position": [
+            0.15,
+            0.5,
+            -0.34
+          ],
+          "rotation": [
+            0,
+            0,
+            0
+          ],
+          "color": "gold"
+        }
+      ]
+    },
+    {
+      "id": "guardian_plate",
+      "parts": [
+        {
+          "name": "Body",
+          "size": [
+            1.7,
+            1.65,
+            0.55
+          ],
+          "position": [
+            0,
+            0,
+            0
+          ],
+          "rotation": [
+            0,
+            0,
+            0
+          ],
+          "color": "steel"
+        },
+        {
+          "name": "Shoulder",
+          "size": [
+            0.63,
+            0.6,
+            0.65
+          ],
+          "position": [
+            -1.04,
+            0.63,
+            0
+          ],
+          "rotation": [
+            0,
+            0,
+            12
+          ],
+          "color": "steel"
+        },
+        {
+          "name": "Shoulder",
+          "size": [
+            0.63,
+            0.6,
+            0.65
+          ],
+          "position": [
+            1.04,
+            0.63,
+            0
+          ],
+          "rotation": [
+            0,
+            0,
+            -12
+          ],
+          "color": "steel"
+        },
+        {
+          "name": "Collar",
+          "size": [
+            0.9,
+            0.2,
+            0.64
+          ],
+          "position": [
+            0,
+            0.87,
+            0
+          ],
+          "rotation": [
+            0,
+            0,
+            0
+          ],
+          "color": "ivory"
+        },
+        {
+          "name": "Belt",
+          "size": [
+            1.8,
+            0.2,
+            0.66
+          ],
+          "position": [
+            0,
+            -0.65,
+            0
+          ],
+          "rotation": [
+            0,
+            0,
+            0
+          ],
+          "color": "leather"
+        },
+        {
+          "name": "Buckle",
+          "size": [
+            0.28,
+            0.28,
+            0.1
+          ],
+          "position": [
+            0,
+            -0.65,
+            -0.4
+          ],
+          "rotation": [
+            0,
+            0,
+            0
+          ],
+          "color": "gold"
+        },
+        {
+          "name": "Breastplate",
+          "size": [
+            1.25,
+            1.1,
+            0.16
+          ],
+          "position": [
+            0,
+            0.1,
+            -0.37
+          ],
+          "rotation": [
+            0,
+            0,
+            0
+          ],
+          "color": "steel"
+        },
+        {
+          "name": "Crest",
+          "size": [
+            0.22,
+            0.6,
+            0.12
+          ],
+          "position": [
+            0,
+            0.1,
+            -0.52
+          ],
+          "rotation": [
+            0,
+            0,
+            0
+          ],
+          "color": "gold"
+        }
+      ]
+    },
+    {
+      "id": "woven_robes",
+      "parts": [
+        {
+          "name": "Body",
+          "size": [
+            1.7,
+            1.65,
+            0.55
+          ],
+          "position": [
+            0,
+            0,
+            0
+          ],
+          "rotation": [
+            0,
+            0,
+            0
+          ],
+          "color": "violet"
+        },
+        {
+          "name": "Shoulder",
+          "size": [
+            0.63,
+            0.6,
+            0.65
+          ],
+          "position": [
+            -1.04,
+            0.63,
+            0
+          ],
+          "rotation": [
+            0,
+            0,
+            12
+          ],
+          "color": "violet"
+        },
+        {
+          "name": "Shoulder",
+          "size": [
+            0.63,
+            0.6,
+            0.65
+          ],
+          "position": [
+            1.04,
+            0.63,
+            0
+          ],
+          "rotation": [
+            0,
+            0,
+            -12
+          ],
+          "color": "violet"
+        },
+        {
+          "name": "Collar",
+          "size": [
+            0.9,
+            0.2,
+            0.64
+          ],
+          "position": [
+            0,
+            0.87,
+            0
+          ],
+          "rotation": [
+            0,
+            0,
+            0
+          ],
+          "color": "ivory"
+        },
+        {
+          "name": "Belt",
+          "size": [
+            1.8,
+            0.2,
+            0.66
+          ],
+          "position": [
+            0,
+            -0.65,
+            0
+          ],
+          "rotation": [
+            0,
+            0,
+            0
+          ],
+          "color": "leather"
+        },
+        {
+          "name": "Buckle",
+          "size": [
+            0.28,
+            0.28,
+            0.1
+          ],
+          "position": [
+            0,
+            -0.65,
+            -0.4
+          ],
+          "rotation": [
+            0,
+            0,
+            0
+          ],
+          "color": "gold"
+        },
+        {
+          "name": "Skirt",
+          "size": [
+            0.91,
+            0.9,
+            0.58
+          ],
+          "position": [
+            -0.43,
+            -1.05,
+            0
+          ],
+          "rotation": [
+            0,
+            0,
+            -7
+          ],
+          "color": "violet"
+        },
+        {
+          "name": "Skirt",
+          "size": [
+            0.91,
+            0.9,
+            0.58
+          ],
+          "position": [
+            0.43,
+            -1.05,
+            0
+          ],
+          "rotation": [
+            0,
+            0,
+            7
+          ],
+          "color": "violet"
+        },
+        {
+          "name": "Stole",
+          "size": [
+            0.22,
+            1.7,
+            0.12
+          ],
+          "position": [
+            -0.55,
+            -0.05,
+            -0.35
+          ],
+          "rotation": [
+            0,
+            0,
+            0
+          ],
+          "color": "gold"
+        },
+        {
+          "name": "Stole",
+          "size": [
+            0.22,
+            1.7,
+            0.12
+          ],
+          "position": [
+            0.55,
+            -0.05,
+            -0.35
+          ],
+          "rotation": [
+            0,
+            0,
+            0
+          ],
+          "color": "gold"
+        },
+        {
+          "name": "Brooch",
+          "size": [
+            0.24,
+            0.3,
+            0.12
+          ],
+          "position": [
+            0,
+            0.55,
+            -0.38
+          ],
+          "rotation": [
+            0,
+            0,
+            45
+          ],
+          "color": "cyan"
+        }
+      ]
+    },
+    {
+      "id": "scout_coat",
+      "parts": [
+        {
+          "name": "Body",
+          "size": [
+            1.7,
+            1.65,
+            0.55
+          ],
+          "position": [
+            0,
+            0,
+            0
+          ],
+          "rotation": [
+            0,
+            0,
+            0
+          ],
+          "color": "leaf"
+        },
+        {
+          "name": "Shoulder",
+          "size": [
+            0.63,
+            0.6,
+            0.65
+          ],
+          "position": [
+            -1.04,
+            0.63,
+            0
+          ],
+          "rotation": [
+            0,
+            0,
+            12
+          ],
+          "color": "leaf"
+        },
+        {
+          "name": "Shoulder",
+          "size": [
+            0.63,
+            0.6,
+            0.65
+          ],
+          "position": [
+            1.04,
+            0.63,
+            0
+          ],
+          "rotation": [
+            0,
+            0,
+            -12
+          ],
+          "color": "leaf"
+        },
+        {
+          "name": "Collar",
+          "size": [
+            0.9,
+            0.2,
+            0.64
+          ],
+          "position": [
+            0,
+            0.87,
+            0
+          ],
+          "rotation": [
+            0,
+            0,
+            0
+          ],
+          "color": "ivory"
+        },
+        {
+          "name": "Belt",
+          "size": [
+            1.8,
+            0.2,
+            0.66
+          ],
+          "position": [
+            0,
+            -0.65,
+            0
+          ],
+          "rotation": [
+            0,
+            0,
+            0
+          ],
+          "color": "leather"
+        },
+        {
+          "name": "Buckle",
+          "size": [
+            0.28,
+            0.28,
+            0.1
+          ],
+          "position": [
+            0,
+            -0.65,
+            -0.4
+          ],
+          "rotation": [
+            0,
+            0,
+            0
+          ],
+          "color": "gold"
+        },
+        {
+          "name": "Skirt",
+          "size": [
+            0.91,
+            0.9,
+            0.58
+          ],
+          "position": [
+            -0.43,
+            -1.05,
+            0
+          ],
+          "rotation": [
+            0,
+            0,
+            -7
+          ],
+          "color": "leaf"
+        },
+        {
+          "name": "Skirt",
+          "size": [
+            0.91,
+            0.9,
+            0.58
+          ],
+          "position": [
+            0.43,
+            -1.05,
+            0
+          ],
+          "rotation": [
+            0,
+            0,
+            7
+          ],
+          "color": "leaf"
+        },
+        {
+          "name": "Fastener",
+          "size": [
+            0.14,
+            0.14,
+            0.09
+          ],
+          "position": [
+            0.15,
+            -0.3,
+            -0.34
+          ],
+          "rotation": [
+            0,
+            0,
+            0
+          ],
+          "color": "gold"
+        },
+        {
+          "name": "Fastener",
+          "size": [
+            0.14,
+            0.14,
+            0.09
+          ],
+          "position": [
+            0.15,
+            0.1,
+            -0.34
+          ],
+          "rotation": [
+            0,
+            0,
+            0
+          ],
+          "color": "gold"
+        },
+        {
+          "name": "Fastener",
+          "size": [
+            0.14,
+            0.14,
+            0.09
+          ],
+          "position": [
+            0.15,
+            0.5,
+            -0.34
+          ],
+          "rotation": [
+            0,
+            0,
+            0
+          ],
+          "color": "gold"
+        }
+      ]
+    },
+    {
+      "id": "runewoven_mantle",
+      "parts": [
+        {
+          "name": "Body",
+          "size": [
+            1.7,
+            1.65,
+            0.55
+          ],
+          "position": [
+            0,
+            0,
+            0
+          ],
+          "rotation": [
+            0,
+            0,
+            0
+          ],
+          "color": "blue"
+        },
+        {
+          "name": "Shoulder",
+          "size": [
+            0.63,
+            0.6,
+            0.65
+          ],
+          "position": [
+            -1.04,
+            0.63,
+            0
+          ],
+          "rotation": [
+            0,
+            0,
+            12
+          ],
+          "color": "blue"
+        },
+        {
+          "name": "Shoulder",
+          "size": [
+            0.63,
+            0.6,
+            0.65
+          ],
+          "position": [
+            1.04,
+            0.63,
+            0
+          ],
+          "rotation": [
+            0,
+            0,
+            -12
+          ],
+          "color": "blue"
+        },
+        {
+          "name": "Collar",
+          "size": [
+            0.9,
+            0.2,
+            0.64
+          ],
+          "position": [
+            0,
+            0.87,
+            0
+          ],
+          "rotation": [
+            0,
+            0,
+            0
+          ],
+          "color": "ivory"
+        },
+        {
+          "name": "Belt",
+          "size": [
+            1.8,
+            0.2,
+            0.66
+          ],
+          "position": [
+            0,
+            -0.65,
+            0
+          ],
+          "rotation": [
+            0,
+            0,
+            0
+          ],
+          "color": "leather"
+        },
+        {
+          "name": "Buckle",
+          "size": [
+            0.28,
+            0.28,
+            0.1
+          ],
+          "position": [
+            0,
+            -0.65,
+            -0.4
+          ],
+          "rotation": [
+            0,
+            0,
+            0
+          ],
+          "color": "gold"
+        },
+        {
+          "name": "Skirt",
+          "size": [
+            0.91,
+            0.9,
+            0.58
+          ],
+          "position": [
+            -0.43,
+            -1.05,
+            0
+          ],
+          "rotation": [
+            0,
+            0,
+            -7
+          ],
+          "color": "blue"
+        },
+        {
+          "name": "Skirt",
+          "size": [
+            0.91,
+            0.9,
+            0.58
+          ],
+          "position": [
+            0.43,
+            -1.05,
+            0
+          ],
+          "rotation": [
+            0,
+            0,
+            7
+          ],
+          "color": "blue"
+        },
+        {
+          "name": "Stole",
+          "size": [
+            0.22,
+            1.7,
+            0.12
+          ],
+          "position": [
+            -0.55,
+            -0.05,
+            -0.35
+          ],
+          "rotation": [
+            0,
+            0,
+            0
+          ],
+          "color": "gold"
+        },
+        {
+          "name": "Stole",
+          "size": [
+            0.22,
+            1.7,
+            0.12
+          ],
+          "position": [
+            0.55,
+            -0.05,
+            -0.35
+          ],
+          "rotation": [
+            0,
+            0,
+            0
+          ],
+          "color": "gold"
+        },
+        {
+          "name": "Brooch",
+          "size": [
+            0.24,
+            0.3,
+            0.12
+          ],
+          "position": [
+            0,
+            0.55,
+            -0.38
+          ],
+          "rotation": [
+            0,
+            0,
+            45
+          ],
+          "color": "cyan"
+        }
+      ]
+    },
+    {
+      "id": "harbor_mail",
+      "parts": [
+        {
+          "name": "Body",
+          "size": [
+            1.7,
+            1.65,
+            0.55
+          ],
+          "position": [
+            0,
+            0,
+            0
+          ],
+          "rotation": [
+            0,
+            0,
+            0
+          ],
+          "color": "blue"
+        },
+        {
+          "name": "Shoulder",
+          "size": [
+            0.63,
+            0.6,
+            0.65
+          ],
+          "position": [
+            -1.04,
+            0.63,
+            0
+          ],
+          "rotation": [
+            0,
+            0,
+            12
+          ],
+          "color": "blue"
+        },
+        {
+          "name": "Shoulder",
+          "size": [
+            0.63,
+            0.6,
+            0.65
+          ],
+          "position": [
+            1.04,
+            0.63,
+            0
+          ],
+          "rotation": [
+            0,
+            0,
+            -12
+          ],
+          "color": "blue"
+        },
+        {
+          "name": "Collar",
+          "size": [
+            0.9,
+            0.2,
+            0.64
+          ],
+          "position": [
+            0,
+            0.87,
+            0
+          ],
+          "rotation": [
+            0,
+            0,
+            0
+          ],
+          "color": "ivory"
+        },
+        {
+          "name": "Belt",
+          "size": [
+            1.8,
+            0.2,
+            0.66
+          ],
+          "position": [
+            0,
+            -0.65,
+            0
+          ],
+          "rotation": [
+            0,
+            0,
+            0
+          ],
+          "color": "leather"
+        },
+        {
+          "name": "Buckle",
+          "size": [
+            0.28,
+            0.28,
+            0.1
+          ],
+          "position": [
+            0,
+            -0.65,
+            -0.4
+          ],
+          "rotation": [
+            0,
+            0,
+            0
+          ],
+          "color": "gold"
+        },
+        {
+          "name": "Breastplate",
+          "size": [
+            1.25,
+            1.1,
+            0.16
+          ],
+          "position": [
+            0,
+            0.1,
+            -0.37
+          ],
+          "rotation": [
+            0,
+            0,
+            0
+          ],
+          "color": "steel"
+        },
+        {
+          "name": "Crest",
+          "size": [
+            0.22,
+            0.6,
+            0.12
+          ],
+          "position": [
+            0,
+            0.1,
+            -0.52
+          ],
+          "rotation": [
+            0,
+            0,
+            0
+          ],
+          "color": "gold"
+        }
+      ]
+    },
+    {
+      "id": "vanguard_harness",
+      "parts": [
+        {
+          "name": "Body",
+          "size": [
+            1.7,
+            1.65,
+            0.55
+          ],
+          "position": [
+            0,
+            0,
+            0
+          ],
+          "rotation": [
+            0,
+            0,
+            0
+          ],
+          "color": "copper"
+        },
+        {
+          "name": "Shoulder",
+          "size": [
+            0.63,
+            0.6,
+            0.65
+          ],
+          "position": [
+            -1.04,
+            0.63,
+            0
+          ],
+          "rotation": [
+            0,
+            0,
+            12
+          ],
+          "color": "copper"
+        },
+        {
+          "name": "Shoulder",
+          "size": [
+            0.63,
+            0.6,
+            0.65
+          ],
+          "position": [
+            1.04,
+            0.63,
+            0
+          ],
+          "rotation": [
+            0,
+            0,
+            -12
+          ],
+          "color": "copper"
+        },
+        {
+          "name": "Collar",
+          "size": [
+            0.9,
+            0.2,
+            0.64
+          ],
+          "position": [
+            0,
+            0.87,
+            0
+          ],
+          "rotation": [
+            0,
+            0,
+            0
+          ],
+          "color": "ivory"
+        },
+        {
+          "name": "Belt",
+          "size": [
+            1.8,
+            0.2,
+            0.66
+          ],
+          "position": [
+            0,
+            -0.65,
+            0
+          ],
+          "rotation": [
+            0,
+            0,
+            0
+          ],
+          "color": "leather"
+        },
+        {
+          "name": "Buckle",
+          "size": [
+            0.28,
+            0.28,
+            0.1
+          ],
+          "position": [
+            0,
+            -0.65,
+            -0.4
+          ],
+          "rotation": [
+            0,
+            0,
+            0
+          ],
+          "color": "gold"
+        },
+        {
+          "name": "Strap",
+          "size": [
+            0.23,
+            1.6,
+            0.1
+          ],
+          "position": [
+            -0.47,
+            0.1,
+            -0.35
+          ],
+          "rotation": [
+            0,
+            0,
+            -25
+          ],
+          "color": "leather"
+        },
+        {
+          "name": "Strap",
+          "size": [
+            0.23,
+            1.6,
+            0.1
+          ],
+          "position": [
+            0.47,
+            0.1,
+            -0.35
+          ],
+          "rotation": [
+            0,
+            0,
+            25
+          ],
+          "color": "leather"
+        }
+      ]
+    },
+    {
+      "id": "pilgrim_robes",
+      "parts": [
+        {
+          "name": "Body",
+          "size": [
+            1.7,
+            1.65,
+            0.55
+          ],
+          "position": [
+            0,
+            0,
+            0
+          ],
+          "rotation": [
+            0,
+            0,
+            0
+          ],
+          "color": "cloth"
+        },
+        {
+          "name": "Shoulder",
+          "size": [
+            0.63,
+            0.6,
+            0.65
+          ],
+          "position": [
+            -1.04,
+            0.63,
+            0
+          ],
+          "rotation": [
+            0,
+            0,
+            12
+          ],
+          "color": "cloth"
+        },
+        {
+          "name": "Shoulder",
+          "size": [
+            0.63,
+            0.6,
+            0.65
+          ],
+          "position": [
+            1.04,
+            0.63,
+            0
+          ],
+          "rotation": [
+            0,
+            0,
+            -12
+          ],
+          "color": "cloth"
+        },
+        {
+          "name": "Collar",
+          "size": [
+            0.9,
+            0.2,
+            0.64
+          ],
+          "position": [
+            0,
+            0.87,
+            0
+          ],
+          "rotation": [
+            0,
+            0,
+            0
+          ],
+          "color": "ivory"
+        },
+        {
+          "name": "Belt",
+          "size": [
+            1.8,
+            0.2,
+            0.66
+          ],
+          "position": [
+            0,
+            -0.65,
+            0
+          ],
+          "rotation": [
+            0,
+            0,
+            0
+          ],
+          "color": "leather"
+        },
+        {
+          "name": "Buckle",
+          "size": [
+            0.28,
+            0.28,
+            0.1
+          ],
+          "position": [
+            0,
+            -0.65,
+            -0.4
+          ],
+          "rotation": [
+            0,
+            0,
+            0
+          ],
+          "color": "gold"
+        },
+        {
+          "name": "Skirt",
+          "size": [
+            0.91,
+            0.9,
+            0.58
+          ],
+          "position": [
+            -0.43,
+            -1.05,
+            0
+          ],
+          "rotation": [
+            0,
+            0,
+            -7
+          ],
+          "color": "cloth"
+        },
+        {
+          "name": "Skirt",
+          "size": [
+            0.91,
+            0.9,
+            0.58
+          ],
+          "position": [
+            0.43,
+            -1.05,
+            0
+          ],
+          "rotation": [
+            0,
+            0,
+            7
+          ],
+          "color": "cloth"
+        },
+        {
+          "name": "Stole",
+          "size": [
+            0.22,
+            1.7,
+            0.12
+          ],
+          "position": [
+            -0.55,
+            -0.05,
+            -0.35
+          ],
+          "rotation": [
+            0,
+            0,
+            0
+          ],
+          "color": "gold"
+        },
+        {
+          "name": "Stole",
+          "size": [
+            0.22,
+            1.7,
+            0.12
+          ],
+          "position": [
+            0.55,
+            -0.05,
+            -0.35
+          ],
+          "rotation": [
+            0,
+            0,
+            0
+          ],
+          "color": "gold"
+        },
+        {
+          "name": "Brooch",
+          "size": [
+            0.24,
+            0.3,
+            0.12
+          ],
+          "position": [
+            0,
+            0.55,
+            -0.38
+          ],
+          "rotation": [
+            0,
+            0,
+            45
+          ],
+          "color": "cyan"
+        }
+      ]
+    },
+    {
+      "id": "bronze_ring",
+      "parts": [
+        {
+          "name": "Band",
+          "size": [
+            0.49,
+            0.18,
+            0.18
+          ],
+          "position": [
+            0.0,
+            0.6,
+            0
+          ],
+          "rotation": [
+            0,
+            0,
+            0
+          ],
+          "color": "copper"
+        },
+        {
+          "name": "Band",
+          "size": [
+            0.49,
+            0.18,
+            0.18
+          ],
+          "position": [
+            0.4242640687119285,
+            0.4242640687119285,
+            0
+          ],
+          "rotation": [
+            0,
+            0,
+            -45
+          ],
+          "color": "copper"
+        },
+        {
+          "name": "Band",
+          "size": [
+            0.49,
+            0.18,
+            0.18
+          ],
+          "position": [
+            0.6,
+            3.6739403974420595e-17,
+            0
+          ],
+          "rotation": [
+            0,
+            0,
+            -90
+          ],
+          "color": "copper"
+        },
+        {
+          "name": "Band",
+          "size": [
+            0.49,
+            0.18,
+            0.18
+          ],
+          "position": [
+            0.4242640687119285,
+            -0.42426406871192845,
+            0
+          ],
+          "rotation": [
+            0,
+            0,
+            -135
+          ],
+          "color": "copper"
+        },
+        {
+          "name": "Band",
+          "size": [
+            0.49,
+            0.18,
+            0.18
+          ],
+          "position": [
+            7.347880794884119e-17,
+            -0.6,
+            0
+          ],
+          "rotation": [
+            0,
+            0,
+            -180
+          ],
+          "color": "copper"
+        },
+        {
+          "name": "Band",
+          "size": [
+            0.49,
+            0.18,
+            0.18
+          ],
+          "position": [
+            -0.42426406871192845,
+            -0.4242640687119286,
+            0
+          ],
+          "rotation": [
+            0,
+            0,
+            -225
+          ],
+          "color": "copper"
+        },
+        {
+          "name": "Band",
+          "size": [
+            0.49,
+            0.18,
+            0.18
+          ],
+          "position": [
+            -0.6,
+            -1.1021821192326178e-16,
+            0
+          ],
+          "rotation": [
+            0,
+            0,
+            -270
+          ],
+          "color": "copper"
+        },
+        {
+          "name": "Band",
+          "size": [
+            0.49,
+            0.18,
+            0.18
+          ],
+          "position": [
+            -0.4242640687119286,
+            0.4242640687119284,
+            0
+          ],
+          "rotation": [
+            0,
+            0,
+            -315
+          ],
+          "color": "copper"
+        },
+        {
+          "name": "Signet",
+          "size": [
+            0.36,
+            0.25,
+            0.28
+          ],
+          "position": [
+            0,
+            0.7,
+            0
+          ],
+          "rotation": [
+            0,
+            0,
+            0
+          ],
+          "color": "gold"
+        }
+      ]
+    },
+    {
+      "id": "vitality_charm",
+      "parts": [
+        {
+          "name": "Bail",
+          "size": [
+            0.22,
+            0.33,
+            0.18
+          ],
+          "position": [
+            0,
+            0.88,
+            0
+          ],
+          "rotation": [
+            0,
+            0,
+            0
+          ],
+          "color": "gold"
+        },
+        {
+          "name": "Mount",
+          "size": [
+            0.95,
+            1.05,
+            0.22
+          ],
+          "position": [
+            0,
+            0.15,
+            0
+          ],
+          "rotation": [
+            0,
+            0,
+            45
+          ],
+          "color": "gold"
+        },
+        {
+          "name": "Stone",
+          "size": [
+            0.69,
+            0.8,
+            0.3
+          ],
+          "position": [
+            0,
+            0.15,
+            -0.2
+          ],
+          "rotation": [
+            0,
+            0,
+            45
+          ],
+          "color": "green"
+        },
+        {
+          "name": "Highlight",
+          "size": [
+            0.13,
+            0.4,
+            0.05
+          ],
+          "position": [
+            -0.12,
+            0.25,
+            -0.43
+          ],
+          "rotation": [
+            0,
+            0,
+            20
+          ],
+          "color": "ivory"
+        }
+      ]
+    },
+    {
+      "id": "sentinel_seal",
+      "parts": [
+        {
+          "name": "Bail",
+          "size": [
+            0.22,
+            0.33,
+            0.18
+          ],
+          "position": [
+            0,
+            0.88,
+            0
+          ],
+          "rotation": [
+            0,
+            0,
+            0
+          ],
+          "color": "gold"
+        },
+        {
+          "name": "Mount",
+          "size": [
+            0.95,
+            1.05,
+            0.22
+          ],
+          "position": [
+            0,
+            0.15,
+            0
+          ],
+          "rotation": [
+            0,
+            0,
+            0
+          ],
+          "color": "gold"
+        },
+        {
+          "name": "Stone",
+          "size": [
+            0.69,
+            0.8,
+            0.3
+          ],
+          "position": [
+            0,
+            0.15,
+            -0.2
+          ],
+          "rotation": [
+            0,
+            0,
+            0
+          ],
+          "color": "blue"
+        },
+        {
+          "name": "Cross",
+          "size": [
+            0.5,
+            0.1,
+            0.08
+          ],
+          "position": [
+            0,
+            0.2,
+            -0.4
+          ],
+          "rotation": [
+            0,
+            0,
+            0
+          ],
+          "color": "ivory"
+        },
+        {
+          "name": "CrossUpright",
+          "size": [
+            0.1,
+            0.7,
+            0.08
+          ],
+          "position": [
+            0,
+            0.2,
+            -0.4
+          ],
+          "rotation": [
+            0,
+            0,
+            0
+          ],
+          "color": "ivory"
+        }
+      ]
+    },
+    {
+      "id": "hunters_token",
+      "parts": [
+        {
+          "name": "Bail",
+          "size": [
+            0.22,
+            0.33,
+            0.18
+          ],
+          "position": [
+            0,
+            0.88,
+            0
+          ],
+          "rotation": [
+            0,
+            0,
+            0
+          ],
+          "color": "gold"
+        },
+        {
+          "name": "Mount",
+          "size": [
+            0.95,
+            1.05,
+            0.22
+          ],
+          "position": [
+            0,
+            0.15,
+            0
+          ],
+          "rotation": [
+            0,
+            0,
+            0
+          ],
+          "color": "gold"
+        },
+        {
+          "name": "Stone",
+          "size": [
+            0.69,
+            0.8,
+            0.3
+          ],
+          "position": [
+            0,
+            0.15,
+            -0.2
+          ],
+          "rotation": [
+            0,
+            0,
+            0
+          ],
+          "color": "leaf"
+        },
+        {
+          "name": "ArrowShaft",
+          "size": [
+            0.08,
+            0.75,
+            0.07
+          ],
+          "position": [
+            0,
+            0.12,
+            -0.4
+          ],
+          "rotation": [
+            0,
+            0,
+            0
+          ],
+          "color": "ivory"
+        },
+        {
+          "name": "ArrowHead",
+          "size": [
+            0.3,
+            0.3,
+            0.07
+          ],
+          "position": [
+            0,
+            0.46,
+            -0.4
+          ],
+          "rotation": [
+            0,
+            0,
+            45
+          ],
+          "color": "ivory"
+        }
+      ]
+    },
+    {
+      "id": "focus_prism",
+      "parts": [
+        {
+          "name": "Bail",
+          "size": [
+            0.22,
+            0.33,
+            0.18
+          ],
+          "position": [
+            0,
+            0.88,
+            0
+          ],
+          "rotation": [
+            0,
+            0,
+            0
+          ],
+          "color": "gold"
+        },
+        {
+          "name": "Mount",
+          "size": [
+            0.95,
+            1.05,
+            0.22
+          ],
+          "position": [
+            0,
+            0.15,
+            0
+          ],
+          "rotation": [
+            0,
+            0,
+            45
+          ],
+          "color": "gold"
+        },
+        {
+          "name": "Stone",
+          "size": [
+            0.69,
+            0.8,
+            0.3
+          ],
+          "position": [
+            0,
+            0.15,
+            -0.2
+          ],
+          "rotation": [
+            0,
+            0,
+            45
+          ],
+          "color": "violet"
+        },
+        {
+          "name": "Highlight",
+          "size": [
+            0.13,
+            0.4,
+            0.05
+          ],
+          "position": [
+            -0.12,
+            0.25,
+            -0.43
+          ],
+          "rotation": [
+            0,
+            0,
+            20
+          ],
+          "color": "ivory"
+        }
+      ]
+    },
+    {
+      "id": "wardstone",
+      "parts": [
+        {
+          "name": "Bail",
+          "size": [
+            0.22,
+            0.33,
+            0.18
+          ],
+          "position": [
+            0,
+            0.88,
+            0
+          ],
+          "rotation": [
+            0,
+            0,
+            0
+          ],
+          "color": "gold"
+        },
+        {
+          "name": "Mount",
+          "size": [
+            0.95,
+            1.05,
+            0.22
+          ],
+          "position": [
+            0,
+            0.15,
+            0
+          ],
+          "rotation": [
+            0,
+            0,
+            0
+          ],
+          "color": "gold"
+        },
+        {
+          "name": "Stone",
+          "size": [
+            0.69,
+            0.8,
+            0.3
+          ],
+          "position": [
+            0,
+            0.15,
+            -0.2
+          ],
+          "rotation": [
+            0,
+            0,
+            0
+          ],
+          "color": "green"
+        },
+        {
+          "name": "WardRune",
+          "size": [
+            0.11,
+            0.6,
+            0.08
+          ],
+          "position": [
+            -0.15,
+            0.15,
+            -0.4
+          ],
+          "rotation": [
+            0,
+            0,
+            -20
+          ],
+          "color": "ivory"
+        },
+        {
+          "name": "WardRune",
+          "size": [
+            0.11,
+            0.6,
+            0.08
+          ],
+          "position": [
+            0.15,
+            0.15,
+            -0.4
+          ],
+          "rotation": [
+            0,
+            0,
+            20
+          ],
+          "color": "ivory"
+        }
+      ]
+    },
+    {
+      "id": "stone",
+      "parts": [
+        {
+          "name": "Rock",
+          "size": [
+            1.3,
+            1,
+            0.95
+          ],
+          "position": [
+            0,
+            0,
+            0
+          ],
+          "rotation": [
+            0,
+            0,
+            15
+          ],
+          "color": "stone"
+        },
+        {
+          "name": "Rock",
+          "size": [
+            0.8,
+            0.7,
+            0.8
+          ],
+          "position": [
+            0.65,
+            -0.2,
+            0.1
+          ],
+          "rotation": [
+            0,
+            0,
+            -12
+          ],
+          "color": "stone"
+        },
+        {
+          "name": "Rock",
+          "size": [
+            0.7,
+            0.65,
+            0.65
+          ],
+          "position": [
+            -0.7,
+            -0.3,
+            0.2
+          ],
+          "rotation": [
+            0,
+            0,
+            30
+          ],
+          "color": "stone"
+        }
+      ]
+    },
+    {
+      "id": "iron_ore",
+      "parts": [
+        {
+          "name": "Rock",
+          "size": [
+            1.5,
+            1.1,
+            1.05
+          ],
+          "position": [
+            0,
+            0,
+            0
+          ],
+          "rotation": [
+            0,
+            0,
+            14
+          ],
+          "color": "dark"
+        },
+        {
+          "name": "OreSeam",
+          "size": [
+            0.35,
+            0.58,
+            0.4
+          ],
+          "position": [
+            -0.5,
+            0.2,
+            -0.4
+          ],
+          "rotation": [
+            0,
+            0,
+            -20.0
+          ],
+          "color": "copper"
+        },
+        {
+          "name": "OreSeam",
+          "size": [
+            0.35,
+            0.58,
+            0.4
+          ],
+          "position": [
+            0,
+            0.48,
+            -0.4
+          ],
+          "rotation": [
+            0,
+            0,
+            0
+          ],
+          "color": "copper"
+        },
+        {
+          "name": "OreSeam",
+          "size": [
+            0.35,
+            0.58,
+            0.4
+          ],
+          "position": [
+            0.48,
+            -0.1,
+            -0.4
+          ],
+          "rotation": [
+            0,
+            0,
+            19.2
+          ],
+          "color": "copper"
+        }
+      ]
+    },
+    {
+      "id": "iron_ingot",
+      "parts": [
+        {
+          "name": "Ingot",
+          "size": [
+            1.8,
+            0.55,
+            0.8
+          ],
+          "position": [
+            0,
+            0,
+            0
+          ],
+          "rotation": [
+            0,
+            0,
+            0
+          ],
+          "color": "steel"
+        },
+        {
+          "name": "TopBevel",
+          "size": [
+            1.55,
+            0.15,
+            0.65
+          ],
+          "position": [
+            0,
+            0.35,
+            0
+          ],
+          "rotation": [
+            0,
+            0,
+            0
+          ],
+          "color": "steel"
+        }
+      ]
+    },
+    {
+      "id": "timber",
+      "parts": [
+        {
+          "name": "Log",
+          "size": [
+            0.63,
+            0.63,
+            1.7
+          ],
+          "position": [
+            -0.35,
+            -0.2,
+            0
+          ],
+          "rotation": [
+            0,
+            0,
+            10
+          ],
+          "color": "wood"
+        },
+        {
+          "name": "CutEnd",
+          "size": [
+            0.48,
+            0.48,
+            0.03
+          ],
+          "position": [
+            -0.35,
+            -0.2,
+            -0.87
+          ],
+          "rotation": [
+            0,
+            0,
+            10
+          ],
+          "color": "ivory"
+        },
+        {
+          "name": "Log",
+          "size": [
+            0.63,
+            0.63,
+            1.7
+          ],
+          "position": [
+            0.35,
+            -0.2,
+            0
+          ],
+          "rotation": [
+            0,
+            0,
+            10
+          ],
+          "color": "wood"
+        },
+        {
+          "name": "CutEnd",
+          "size": [
+            0.48,
+            0.48,
+            0.03
+          ],
+          "position": [
+            0.35,
+            -0.2,
+            -0.87
+          ],
+          "rotation": [
+            0,
+            0,
+            10
+          ],
+          "color": "ivory"
+        },
+        {
+          "name": "Log",
+          "size": [
+            0.63,
+            0.63,
+            1.7
+          ],
+          "position": [
+            0,
+            0.4,
+            0
+          ],
+          "rotation": [
+            0,
+            0,
+            10
+          ],
+          "color": "wood"
+        },
+        {
+          "name": "CutEnd",
+          "size": [
+            0.48,
+            0.48,
+            0.03
+          ],
+          "position": [
+            0,
+            0.4,
+            -0.87
+          ],
+          "rotation": [
+            0,
+            0,
+            10
+          ],
+          "color": "ivory"
+        },
+        {
+          "name": "Binding",
+          "size": [
+            1.35,
+            0.13,
+            1.85
+          ],
+          "position": [
+            0,
+            0,
+            0
+          ],
+          "rotation": [
+            0,
+            0,
+            0
+          ],
+          "color": "leather"
+        }
+      ]
+    },
+    {
+      "id": "herb",
+      "parts": [
+        {
+          "name": "Stem",
+          "size": [
+            0.12,
+            1.65,
+            0.12
+          ],
+          "position": [
+            0,
+            0,
+            0
+          ],
+          "rotation": [
+            0,
+            0,
+            -10
+          ],
+          "color": "leaf"
+        },
+        {
+          "name": "Leaf",
+          "size": [
+            0.65,
+            0.27,
+            0.2
+          ],
+          "position": [
+            -0.28,
+            -0.4,
+            -0.05
+          ],
+          "rotation": [
+            0,
+            0,
+            -35
+          ],
+          "color": "leaf"
+        },
+        {
+          "name": "Leaf",
+          "size": [
+            0.65,
+            0.27,
+            0.2
+          ],
+          "position": [
+            0.28,
+            -0.11000000000000004,
+            -0.05
+          ],
+          "rotation": [
+            0,
+            0,
+            35
+          ],
+          "color": "leaf"
+        },
+        {
+          "name": "Leaf",
+          "size": [
+            0.65,
+            0.27,
+            0.2
+          ],
+          "position": [
+            -0.28,
+            0.17999999999999994,
+            -0.05
+          ],
+          "rotation": [
+            0,
+            0,
+            -35
+          ],
+          "color": "leaf"
+        },
+        {
+          "name": "Leaf",
+          "size": [
+            0.65,
+            0.27,
+            0.2
+          ],
+          "position": [
+            0.28,
+            0.46999999999999986,
+            -0.05
+          ],
+          "rotation": [
+            0,
+            0,
+            35
+          ],
+          "color": "leaf"
+        },
+        {
+          "name": "Leaf",
+          "size": [
+            0.65,
+            0.27,
+            0.2
+          ],
+          "position": [
+            -0.28,
+            0.7599999999999999,
+            -0.05
+          ],
+          "rotation": [
+            0,
+            0,
+            -35
+          ],
+          "color": "leaf"
+        },
+        {
+          "name": "Flower",
+          "size": [
+            0.35,
+            0.35,
+            0.27
+          ],
+          "position": [
+            0.13,
+            0.88,
+            0
+          ],
+          "rotation": [
+            0,
+            0,
+            45
+          ],
+          "color": "ivory"
+        }
+      ]
+    }
+  ]
+}

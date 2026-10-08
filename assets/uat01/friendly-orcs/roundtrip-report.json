@@ -1,0 +1,258 @@
+[
+  {
+    "file": "borga_Rest.fbx",
+    "asset": "borga",
+    "triangles": 456,
+    "bones": 16,
+    "weightsNormalized": true,
+    "sha256": "890f6ea1cb9e9f5eff805705a0341b392ac81a1510b34cd17d4bfb0b4ae916a4"
+  },
+  {
+    "file": "borga_Rest.glb",
+    "asset": "borga",
+    "triangles": 456,
+    "bones": 16,
+    "weightsNormalized": true,
+    "sha256": "787159f35789970bf8937b0502df2e3f4ee8bbca3cdb8e5530261b5fa085f7cf"
+  },
+  {
+    "file": "borga_Idle.fbx",
+    "asset": "borga",
+    "triangles": 456,
+    "bones": 16,
+    "weightsNormalized": true,
+    "sha256": "8c1540ec6a054baa5c58eb15da1f69bc9fa196c6e53b5782d07846afaa3dc657",
+    "frames": 61,
+    "sampledMotion": 0.03499286621809006,
+    "rootStationary": true,
+    "loopSeamVerified": true
+  },
+  {
+    "file": "borga_Walk.fbx",
+    "asset": "borga",
+    "triangles": 456,
+    "bones": 16,
+    "weightsNormalized": true,
+    "sha256": "fc20266f1a95df28ccf24affc4873a27b296f3b025bfa72ca1b33bc47eaaedad",
+    "frames": 31,
+    "sampledMotion": 0.7465113590118619,
+    "rootStationary": true,
+    "loopSeamVerified": true
+  },
+  {
+    "file": "borga_Greet.fbx",
+    "asset": "borga",
+    "triangles": 456,
+    "bones": 16,
+    "weightsNormalized": true,
+    "sha256": "c0383fa6aef85032143147564a4df997e99a0a11d4cc3e5d3785f8abc0a3898d",
+    "frames": 55,
+    "sampledMotion": 1.1529563665390015,
+    "rootStationary": true,
+    "loopSeamVerified": false
+  },
+  {
+    "file": "borga_Work.fbx",
+    "asset": "borga",
+    "triangles": 456,
+    "bones": 16,
+    "weightsNormalized": true,
+    "sha256": "0e5b570a3df28a453152743fa627157cb8bfefea664cfeab1480cc5ce043f81a",
+    "frames": 61,
+    "sampledMotion": 0.4054645895957947,
+    "rootStationary": true,
+    "loopSeamVerified": true
+  },
+  {
+    "file": "mogra_Rest.fbx",
+    "asset": "mogra",
+    "triangles": 516,
+    "bones": 16,
+    "weightsNormalized": true,
+    "sha256": "062cf7e36ac9e78aea9e5db076088e4496daca3a50acb1ed24797df6591cec3e"
+  },
+  {
+    "file": "mogra_Rest.glb",
+    "asset": "mogra",
+    "triangles": 516,
+    "bones": 16,
+    "weightsNormalized": true,
+    "sha256": "3f6d6919353705d9d8dac0b0333f9f209fdf334716ca8463bb4f9b8696708811"
+  },
+  {
+    "file": "mogra_Idle.fbx",
+    "asset": "mogra",
+    "triangles": 516,
+    "bones": 16,
+    "weightsNormalized": true,
+    "sha256": "50e439889dc35fa56779ef53d29a053d93314a2e23621059bfdec0f2a0e37d35",
+    "frames": 61,
+    "sampledMotion": 0.03499286621809006,
+    "rootStationary": true,
+    "loopSeamVerified": true
+  },
+  {
+    "file": "mogra_Walk.fbx",
+    "asset": "mogra",
+    "triangles": 516,
+    "bones": 16,
+    "weightsNormalized": true,
+    "sha256": "93cb8f969d61b3a73e8b00d439250c4fe180481b7c0596daf8fd17105b2b6340",
+    "frames": 31,
+    "sampledMotion": 0.7465113590118619,
+    "rootStationary": true,
+    "loopSeamVerified": true
+  },
+  {
+    "file": "mogra_Greet.fbx",
+    "asset": "mogra",
+    "triangles": 516,
+    "bones": 16,
+    "weightsNormalized": true,
+    "sha256": "29da6c16c20a78de9e9818408816cdc186d00eca7d81df116d0e9aa563dd5489",
+    "frames": 55,
+    "sampledMotion": 1.1529563665390015,
+    "rootStationary": true,
+    "loopSeamVerified": false
+  },
+  {
+    "file": "mogra_Work.fbx",
+    "asset": "mogra",
+    "triangles": 516,
+    "bones": 16,
+    "weightsNormalized": true,
+    "sha256": "10e7596d0e04d203cfb31183306948b76c558bd9fc0fa9d201c065ed2346f7c1",
+    "frames": 61,
+    "sampledMotion": 0.4054645895957947,
+    "rootStationary": true,
+    "loopSeamVerified": true
+  },
+  {
+    "file": "rukk_Rest.fbx",
+    "asset": "rukk",
+    "triangles": 492,
+    "bones": 16,
+    "weightsNormalized": true,
+    "sha256": "bc1d77c9e460c1bca4aa438b298f8a7ff9638db503eee886d78498cf0c3290e9"
+  },
+  {
+    "file": "rukk_Rest.glb",
+    "asset": "rukk",
+    "triangles": 492,
+    "bones": 16,
+    "weightsNormalized": true,
+    "sha256": "2ea0fe6146adb89e227a0ee1752f1719ec9b4b43aca83328fc74d38888b2c2d8"
+  },
+  {
+    "file": "rukk_Idle.fbx",
+    "asset": "rukk",
+    "triangles": 492,
+    "bones": 16,
+    "weightsNormalized": true,
+    "sha256": "036dd819f9276a1a81f2b8f256aae7131b57f86dc18d67eb3b0420ef4a511116",
+    "frames": 61,
+    "sampledMotion": 0.03499286621809006,
+    "rootStationary": true,
+    "loopSeamVerified": true
+  },
+  {
+    "file": "rukk_Walk.fbx",
+    "asset": "rukk",
+    "triangles": 492,
+    "bones": 16,
+    "weightsNormalized": true,
+    "sha256": "be12d6404410b22b6477ecaf080fc5112fae9f80b3a1aa8f4279fed4f379e6d1",
+    "frames": 31,
+    "sampledMotion": 0.7465113590118619,
+    "rootStationary": true,
+    "loopSeamVerified": true
+  },
+  {
+    "file": "rukk_Greet.fbx",
+    "asset": "rukk",
+    "triangles": 492,
+    "bones": 16,
+    "weightsNormalized": true,
+    "sha256": "5f0d8571b904b62cdff1759c805144774a4aed0f94d185917035887cac663b05",
+    "frames": 55,
+    "sampledMotion": 1.1529563665390015,
+    "rootStationary": true,
+    "loopSeamVerified": false
+  },
+  {
+    "file": "rukk_Work.fbx",
+    "asset": "rukk",
+    "triangles": 492,
+    "bones": 16,
+    "weightsNormalized": true,
+    "sha256": "1fa4dd987ab1765acecd259c6968b15256504718500fec606648fad895fcf47a",
+    "frames": 61,
+    "sampledMotion": 0.4054645895957947,
+    "rootStationary": true,
+    "loopSeamVerified": true
+  },
+  {
+    "file": "ghar_Rest.fbx",
+    "asset": "ghar",
+    "triangles": 432,
+    "bones": 16,
+    "weightsNormalized": true,
+    "sha256": "b3370f0f5b85d6a331e45d15d2ba38d0b29267efbe8129c73858b354408efc50"
+  },
+  {
+    "file": "ghar_Rest.glb",
+    "asset": "ghar",
+    "triangles": 432,
+    "bones": 16,
+    "weightsNormalized": true,
+    "sha256": "aae9b139e8be9e9b92e4f60320d559f91f9fb9b9a3b39258230c8ff580d19a1a"
+  },
+  {
+    "file": "ghar_Idle.fbx",
+    "asset": "ghar",
+    "triangles": 432,
+    "bones": 16,
+    "weightsNormalized": true,
+    "sha256": "33381601a569d904e9c46afb5baab82db8963f90016718614edc4dc9f720facd",
+    "frames": 61,
+    "sampledMotion": 0.03499286621809006,
+    "rootStationary": true,
+    "loopSeamVerified": true
+  },
+  {
+    "file": "ghar_Walk.fbx",
+    "asset": "ghar",
+    "triangles": 432,
+    "bones": 16,
+    "weightsNormalized": true,
+    "sha256": "86eaf9f7d09ded4e6669447794b6f905b175381459c2f379da92579324a10488",
+    "frames": 31,
+    "sampledMotion": 0.7465113590118619,
+    "rootStationary": true,
+    "loopSeamVerified": true
+  },
+  {
+    "file": "ghar_Greet.fbx",
+    "asset": "ghar",
+    "triangles": 432,
+    "bones": 16,
+    "weightsNormalized": true,
+    "sha256": "5d987b6da51787c32e57d18ebbb1b19db5ab92e624dca8601f62f6ff86c8ab8a",
+    "frames": 55,
+    "sampledMotion": 1.1529563665390015,
+    "rootStationary": true,
+    "loopSeamVerified": false
+  },
+  {
+    "file": "ghar_Work.fbx",
+    "asset": "ghar",
+    "triangles": 432,
+    "bones": 16,
+    "weightsNormalized": true,
+    "sha256": "b6367d870beb0ada2b10cad206d24807b89323888736b7de4f4cac278d7d5d6a",
+    "frames": 61,
+    "sampledMotion": 0.4054645895957947,
+    "rootStationary": true,
+    "loopSeamVerified": true
+  }
+]

@@ -1,0 +1,132 @@
+[
+  {
+    "id": "hearth_table",
+    "triangles": 96,
+    "bounds": [
+      7.499999523162842,
+      5.499999523162842,
+      3.2749998569488525
+    ],
+    "sourceParts": 8,
+    "icon": "hearth_table.png",
+    "robloxMeshAssetId": null,
+    "robloxImageAssetId": null
+  },
+  {
+    "id": "hearth_chair",
+    "triangles": 108,
+    "bounds": [
+      2.999999523162842,
+      2.999999523162842,
+      3.799999952316284
+    ],
+    "sourceParts": 9,
+    "icon": "hearth_chair.png",
+    "robloxMeshAssetId": null,
+    "robloxImageAssetId": null
+  },
+  {
+    "id": "welcome_bench",
+    "triangles": 132,
+    "bounds": [
+      7.5,
+      3.1999998092651367,
+      3.799999952316284
+    ],
+    "sourceParts": 11,
+    "icon": "welcome_bench.png",
+    "robloxMeshAssetId": null,
+    "robloxImageAssetId": null
+  },
+  {
+    "id": "guild_bookcase",
+    "triangles": 228,
+    "bounds": [
+      5.600000381469727,
+      2.799999952316284,
+      7.0
+    ],
+    "sourceParts": 19,
+    "icon": "guild_bookcase.png",
+    "robloxMeshAssetId": null,
+    "robloxImageAssetId": null
+  },
+  {
+    "id": "woven_rug",
+    "triangles": 84,
+    "bounds": [
+      7.599999904632568,
+      7.599999904632568,
+      0.1300000101327896
+    ],
+    "sourceParts": 7,
+    "icon": "woven_rug.png",
+    "robloxMeshAssetId": null,
+    "robloxImageAssetId": null
+  },
+  {
+    "id": "guild_banner",
+    "triangles": 60,
+    "bounds": [
+      3.6000001430511475,
+      3.0,
+      7.0
+    ],
+    "sourceParts": 5,
+    "icon": "guild_banner.png",
+    "robloxMeshAssetId": null,
+    "robloxImageAssetId": null
+  },
+  {
+    "id": "garden_planter",
+    "triangles": 216,
+    "bounds": [
+      5.40000057220459,
+      3.40000057220459,
+      3.049999952316284
+    ],
+    "sourceParts": 18,
+    "icon": "garden_planter.png",
+    "robloxMeshAssetId": null,
+    "robloxImageAssetId": null
+  },
+  {
+    "id": "crystal_lantern",
+    "triangles": 108,
+    "bounds": [
+      2.0,
+      2.0,
+      5.849999904632568
+    ],
+    "sourceParts": 9,
+    "icon": "crystal_lantern.png",
+    "robloxMeshAssetId": null,
+    "robloxImageAssetId": null
+  },
+  {
+    "id": "display_plinth",
+    "triangles": 48,
+    "bounds": [
+      3.5999999046325684,
+      3.5999999046325684,
+      3.1000001430511475
+    ],
+    "sourceParts": 4,
+    "icon": "display_plinth.png",
+    "robloxMeshAssetId": null,
+    "robloxImageAssetId": null
+  },
+  {
+    "id": "hearth_bed",
+    "triangles": 108,
+    "bounds": [
+      5.5,
+      7.524999618530273,
+      2.799999952316284
+    ],
+    "sourceParts": 9,
+    "icon": "hearth_bed.png",
+    "robloxMeshAssetId": null,
+    "robloxImageAssetId": null
+  }
+]

@@ -1,0 +1,172 @@
+{
+  "scope": "Actual fresh memory-only Chapter 00 → Chapter 01 → Hall 2 via native keyboard, mouse and normal-speed navigation; no profile grants or gameplay remotes invoked by tools",
+  "changesDuringRun": [
+    "Campaign prompt presentation key changed E to R/ButtonY to avoid station overlap; no profile writes"
+  ],
+  "chapters": [
+    {
+      "id": "MAIN_01_01",
+      "revision": 33,
+      "xp": 550,
+      "gold": 15
+    },
+    {
+      "id": "MAIN_01_02",
+      "revision": 39,
+      "xp": 650,
+      "gold": 30,
+      "recruit": "h:1",
+      "class": "Priest",
+      "recruitLevel": 10
+    },
+    {
+      "id": "MAIN_01_03",
+      "revision": 50,
+      "xp": 753,
+      "gold": 59
+    },
+    {
+      "id": "MAIN_01_04",
+      "revision": 54
+    },
+    {
+      "id": "MAIN_01_05",
+      "revision": 61,
+      "xp": 966,
+      "gold": 129
+    },
+    {
+      "id": "MAIN_01_06",
+      "revision": 68,
+      "hall": 1,
+      "gold": 129,
+      "permit": 2
+    }
+  ],
+  "final": {
+    "inventory": {
+      "equipment": {
+        "novice:class:1": {
+          "binding": "Account",
+          "upgradeLevel": 0,
+          "definitionId": "mage_staff"
+        },
+        "campaign:recruit:1:1": {
+          "binding": "Account",
+          "upgradeLevel": 0,
+          "definitionId": "apprentice_staff"
+        },
+        "novice:founder:1": {
+          "binding": "Account",
+          "definitionId": "knight_sword",
+          "upgradeLevel": 0
+        }
+      },
+      "stacks": {
+        "timber": 2
+      },
+      "nextEquipmentSequence": 1
+    },
+    "revision": 69,
+    "hall": 2,
+    "novice": {
+      "trialClass": "Mage",
+      "founderHero": "a:Knight",
+      "claimed": 6,
+      "version": 1,
+      "objectives": [],
+      "branch": "rescue"
+    },
+    "character": {
+      "classPathId": "mage:1",
+      "stats": {
+        "WeaponBonus": 2,
+        "Defense": 1,
+        "Health": 77,
+        "Attack": 31
+      },
+      "definitionVersion": 1,
+      "classId": "Mage",
+      "xp": 966,
+      "raceId": "Human",
+      "tier": 1,
+      "level": 20,
+      "equipmentSlots": {
+        "weapon": "novice:class:1"
+      },
+      "skillId": "fireball"
+    },
+    "campaign": {
+      "claimed": 6,
+      "hallPermit": 2,
+      "choices": {
+        "choose_crest": "compass",
+        "choose_motto": "together",
+        "allocate_timber": "workers"
+      },
+      "recruitHero": "h:1",
+      "version": 1,
+      "objectives": []
+    },
+    "gold": 49,
+    "code": "OK",
+    "cap": 25,
+    "party": {
+      "adventurerIds": [
+        "a:Knight",
+        "h:1"
+      ]
+    },
+    "heroes": {
+      "h:1": {
+        "equipmentSlots": {
+          "weapon": "campaign:recruit:1:1"
+        },
+        "stats": {
+          "WeaponBonus": 2,
+          "Defense": 3,
+          "Health": 69,
+          "Attack": 21
+        },
+        "id": "h:1",
+        "classId": "Priest",
+        "xp": 775,
+        "name": "Sage",
+        "level": 16,
+        "baseStats": {
+          "Defense": 3,
+          "Health": 24,
+          "Attack": 4
+        },
+        "rank": "F"
+      },
+      "a:Knight": {
+        "equipmentSlots": {
+          "weapon": "novice:founder:1"
+        },
+        "stats": {
+          "WeaponBonus": 2,
+          "Defense": 7,
+          "Health": 97,
+          "Attack": 25
+        },
+        "id": "a:Knight",
+        "classId": "Knight",
+        "xp": 975,
+        "name": "Bram",
+        "level": 20,
+        "baseStats": {
+          "Defense": 7,
+          "Health": 40,
+          "Attack": 4
+        },
+        "rank": "F"
+      }
+    }
+  },
+  "limitations": [
+    "Memory only; persistence and human/device/multiplayer acceptance pending",
+    "Grid rounding and scroll retention fixes were authored after discovering the issues; final source grid checked synthetically, not yet a new actual profile journey",
+    "City crate/timber carry animations and separate NPC escort remain pending"
+  ]
+}

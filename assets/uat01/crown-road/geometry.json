@@ -1,0 +1,2082 @@
+[
+  {
+    "name": "Island",
+    "position": [
+      0,
+      -3,
+      0
+    ],
+    "color": [
+      0.32549020648002625,
+      0.46666666865348816,
+      0.30980393290519714
+    ],
+    "collision": true,
+    "stage": "Landscape",
+    "size": [
+      300,
+      6,
+      450
+    ]
+  },
+  {
+    "name": "MainRoad",
+    "position": [
+      0,
+      0.02500000037252903,
+      10
+    ],
+    "color": [
+      0.7450980544090271,
+      0.6784313917160034,
+      0.5215686559677124
+    ],
+    "collision": false,
+    "stage": "Landscape",
+    "size": [
+      20,
+      0.05000000074505806,
+      408
+    ]
+  },
+  {
+    "name": "CrossPath",
+    "position": [
+      0,
+      0.029999999329447746,
+      150
+    ],
+    "color": [
+      0.7450980544090271,
+      0.6784313917160034,
+      0.5215686559677124
+    ],
+    "collision": false,
+    "stage": "Landscape",
+    "size": [
+      160,
+      0.05999999865889549,
+      14
+    ]
+  },
+  {
+    "name": "CrossPath",
+    "position": [
+      0,
+      0.029999999329447746,
+      90
+    ],
+    "color": [
+      0.7450980544090271,
+      0.6784313917160034,
+      0.5215686559677124
+    ],
+    "collision": false,
+    "stage": "Landscape",
+    "size": [
+      160,
+      0.05999999865889549,
+      14
+    ]
+  },
+  {
+    "name": "CrossPath",
+    "position": [
+      0,
+      0.029999999329447746,
+      25
+    ],
+    "color": [
+      0.7450980544090271,
+      0.6784313917160034,
+      0.5215686559677124
+    ],
+    "collision": false,
+    "stage": "Landscape",
+    "size": [
+      160,
+      0.05999999865889549,
+      14
+    ]
+  },
+  {
+    "name": "CrossPath",
+    "position": [
+      0,
+      0.029999999329447746,
+      -40
+    ],
+    "color": [
+      0.7450980544090271,
+      0.6784313917160034,
+      0.5215686559677124
+    ],
+    "collision": false,
+    "stage": "Landscape",
+    "size": [
+      160,
+      0.05999999865889549,
+      14
+    ]
+  },
+  {
+    "name": "CrossPath",
+    "position": [
+      0,
+      0.029999999329447746,
+      -105
+    ],
+    "color": [
+      0.7450980544090271,
+      0.6784313917160034,
+      0.5215686559677124
+    ],
+    "collision": false,
+    "stage": "Landscape",
+    "size": [
+      160,
+      0.05999999865889549,
+      14
+    ]
+  },
+  {
+    "name": "CoastEdge",
+    "position": [
+      -145,
+      -1,
+      0
+    ],
+    "color": [
+      0.8392156958580017,
+      0.7960784435272217,
+      0.6823529601097107
+    ],
+    "collision": true,
+    "stage": "Landscape",
+    "size": [
+      10,
+      4,
+      450
+    ]
+  },
+  {
+    "name": "CoastEdge",
+    "position": [
+      145,
+      -1,
+      0
+    ],
+    "color": [
+      0.8392156958580017,
+      0.7960784435272217,
+      0.6823529601097107
+    ],
+    "collision": true,
+    "stage": "Landscape",
+    "size": [
+      10,
+      4,
+      450
+    ]
+  },
+  {
+    "name": "TreeTrunk",
+    "position": [
+      -120,
+      5,
+      180
+    ],
+    "color": [
+      0.4117647111415863,
+      0.27450981736183167,
+      0.18039216101169586
+    ],
+    "collision": true,
+    "stage": "Landscape",
+    "size": [
+      3,
+      10,
+      3
+    ]
+  },
+  {
+    "name": "TreeCanopy",
+    "position": [
+      -120,
+      12,
+      180
+    ],
+    "color": [
+      0.18431372940540314,
+      0.4117647111415863,
+      0.2823529541492462
+    ],
+    "collision": false,
+    "stage": "Landscape",
+    "size": [
+      16,
+      12,
+      16
+    ]
+  },
+  {
+    "name": "TreeCrown",
+    "position": [
+      -120,
+      20,
+      180
+    ],
+    "color": [
+      0.2549019753932953,
+      0.5254902243614197,
+      0.32156863808631897
+    ],
+    "collision": false,
+    "stage": "Landscape",
+    "size": [
+      11,
+      8,
+      11
+    ]
+  },
+  {
+    "name": "TreeTrunk",
+    "position": [
+      120,
+      5,
+      170
+    ],
+    "color": [
+      0.4117647111415863,
+      0.27450981736183167,
+      0.18039216101169586
+    ],
+    "collision": true,
+    "stage": "Landscape",
+    "size": [
+      3,
+      10,
+      3
+    ]
+  },
+  {
+    "name": "TreeCanopy",
+    "position": [
+      120,
+      12,
+      170
+    ],
+    "color": [
+      0.18431372940540314,
+      0.4117647111415863,
+      0.2823529541492462
+    ],
+    "collision": false,
+    "stage": "Landscape",
+    "size": [
+      16,
+      12,
+      16
+    ]
+  },
+  {
+    "name": "TreeCrown",
+    "position": [
+      120,
+      20,
+      170
+    ],
+    "color": [
+      0.2549019753932953,
+      0.5254902243614197,
+      0.32156863808631897
+    ],
+    "collision": false,
+    "stage": "Landscape",
+    "size": [
+      11,
+      8,
+      11
+    ]
+  },
+  {
+    "name": "TreeTrunk",
+    "position": [
+      -115,
+      5,
+      100
+    ],
+    "color": [
+      0.4117647111415863,
+      0.27450981736183167,
+      0.18039216101169586
+    ],
+    "collision": true,
+    "stage": "Landscape",
+    "size": [
+      3,
+      10,
+      3
+    ]
+  },
+  {
+    "name": "TreeCanopy",
+    "position": [
+      -115,
+      12,
+      100
+    ],
+    "color": [
+      0.18431372940540314,
+      0.4117647111415863,
+      0.2823529541492462
+    ],
+    "collision": false,
+    "stage": "Landscape",
+    "size": [
+      16,
+      12,
+      16
+    ]
+  },
+  {
+    "name": "TreeCrown",
+    "position": [
+      -115,
+      20,
+      100
+    ],
+    "color": [
+      0.2549019753932953,
+      0.5254902243614197,
+      0.32156863808631897
+    ],
+    "collision": false,
+    "stage": "Landscape",
+    "size": [
+      11,
+      8,
+      11
+    ]
+  },
+  {
+    "name": "TreeTrunk",
+    "position": [
+      120,
+      5,
+      35
+    ],
+    "color": [
+      0.4117647111415863,
+      0.27450981736183167,
+      0.18039216101169586
+    ],
+    "collision": true,
+    "stage": "Landscape",
+    "size": [
+      3,
+      10,
+      3
+    ]
+  },
+  {
+    "name": "TreeCanopy",
+    "position": [
+      120,
+      12,
+      35
+    ],
+    "color": [
+      0.18431372940540314,
+      0.4117647111415863,
+      0.2823529541492462
+    ],
+    "collision": false,
+    "stage": "Landscape",
+    "size": [
+      16,
+      12,
+      16
+    ]
+  },
+  {
+    "name": "TreeCrown",
+    "position": [
+      120,
+      20,
+      35
+    ],
+    "color": [
+      0.2549019753932953,
+      0.5254902243614197,
+      0.32156863808631897
+    ],
+    "collision": false,
+    "stage": "Landscape",
+    "size": [
+      11,
+      8,
+      11
+    ]
+  },
+  {
+    "name": "TreeTrunk",
+    "position": [
+      -120,
+      5,
+      -35
+    ],
+    "color": [
+      0.4117647111415863,
+      0.27450981736183167,
+      0.18039216101169586
+    ],
+    "collision": true,
+    "stage": "Landscape",
+    "size": [
+      3,
+      10,
+      3
+    ]
+  },
+  {
+    "name": "TreeCanopy",
+    "position": [
+      -120,
+      12,
+      -35
+    ],
+    "color": [
+      0.18431372940540314,
+      0.4117647111415863,
+      0.2823529541492462
+    ],
+    "collision": false,
+    "stage": "Landscape",
+    "size": [
+      16,
+      12,
+      16
+    ]
+  },
+  {
+    "name": "TreeCrown",
+    "position": [
+      -120,
+      20,
+      -35
+    ],
+    "color": [
+      0.2549019753932953,
+      0.5254902243614197,
+      0.32156863808631897
+    ],
+    "collision": false,
+    "stage": "Landscape",
+    "size": [
+      11,
+      8,
+      11
+    ]
+  },
+  {
+    "name": "TreeTrunk",
+    "position": [
+      120,
+      5,
+      -115
+    ],
+    "color": [
+      0.4117647111415863,
+      0.27450981736183167,
+      0.18039216101169586
+    ],
+    "collision": true,
+    "stage": "Landscape",
+    "size": [
+      3,
+      10,
+      3
+    ]
+  },
+  {
+    "name": "TreeCanopy",
+    "position": [
+      120,
+      12,
+      -115
+    ],
+    "color": [
+      0.18431372940540314,
+      0.4117647111415863,
+      0.2823529541492462
+    ],
+    "collision": false,
+    "stage": "Landscape",
+    "size": [
+      16,
+      12,
+      16
+    ]
+  },
+  {
+    "name": "TreeCrown",
+    "position": [
+      120,
+      20,
+      -115
+    ],
+    "color": [
+      0.2549019753932953,
+      0.5254902243614197,
+      0.32156863808631897
+    ],
+    "collision": false,
+    "stage": "Landscape",
+    "size": [
+      11,
+      8,
+      11
+    ]
+  },
+  {
+    "name": "TreeTrunk",
+    "position": [
+      -100,
+      5,
+      -190
+    ],
+    "color": [
+      0.4117647111415863,
+      0.27450981736183167,
+      0.18039216101169586
+    ],
+    "collision": true,
+    "stage": "Landscape",
+    "size": [
+      3,
+      10,
+      3
+    ]
+  },
+  {
+    "name": "TreeCanopy",
+    "position": [
+      -100,
+      12,
+      -190
+    ],
+    "color": [
+      0.18431372940540314,
+      0.4117647111415863,
+      0.2823529541492462
+    ],
+    "collision": false,
+    "stage": "Landscape",
+    "size": [
+      16,
+      12,
+      16
+    ]
+  },
+  {
+    "name": "TreeCrown",
+    "position": [
+      -100,
+      20,
+      -190
+    ],
+    "color": [
+      0.2549019753932953,
+      0.5254902243614197,
+      0.32156863808631897
+    ],
+    "collision": false,
+    "stage": "Landscape",
+    "size": [
+      11,
+      8,
+      11
+    ]
+  },
+  {
+    "name": "TreeTrunk",
+    "position": [
+      100,
+      5,
+      -190
+    ],
+    "color": [
+      0.4117647111415863,
+      0.27450981736183167,
+      0.18039216101169586
+    ],
+    "collision": true,
+    "stage": "Landscape",
+    "size": [
+      3,
+      10,
+      3
+    ]
+  },
+  {
+    "name": "TreeCanopy",
+    "position": [
+      100,
+      12,
+      -190
+    ],
+    "color": [
+      0.18431372940540314,
+      0.4117647111415863,
+      0.2823529541492462
+    ],
+    "collision": false,
+    "stage": "Landscape",
+    "size": [
+      16,
+      12,
+      16
+    ]
+  },
+  {
+    "name": "TreeCrown",
+    "position": [
+      100,
+      20,
+      -190
+    ],
+    "color": [
+      0.2549019753932953,
+      0.5254902243614197,
+      0.32156863808631897
+    ],
+    "collision": false,
+    "stage": "Landscape",
+    "size": [
+      11,
+      8,
+      11
+    ]
+  },
+  {
+    "name": "CityGateTower",
+    "position": [
+      -15,
+      12,
+      195
+    ],
+    "color": [
+      0.8392156958580017,
+      0.7960784435272217,
+      0.6823529601097107
+    ],
+    "collision": true,
+    "stage": "CourierCamp",
+    "size": [
+      10,
+      24,
+      12
+    ]
+  },
+  {
+    "name": "GateBanner",
+    "position": [
+      -15,
+      12,
+      201.0999755859375
+    ],
+    "color": [
+      0.125490203499794,
+      0.2235294133424759,
+      0.32549020648002625
+    ],
+    "collision": false,
+    "stage": "CourierCamp",
+    "size": [
+      4,
+      9,
+      0.20000000298023224
+    ]
+  },
+  {
+    "name": "BannerCrest",
+    "position": [
+      -15,
+      14,
+      201.29998779296875
+    ],
+    "color": [
+      0.8313725590705872,
+      0.6470588445663452,
+      0.2549019753932953
+    ],
+    "collision": false,
+    "stage": "CourierCamp",
+    "size": [
+      2,
+      2,
+      0.20000000298023224
+    ]
+  },
+  {
+    "name": "CityGateTower",
+    "position": [
+      15,
+      12,
+      195
+    ],
+    "color": [
+      0.8392156958580017,
+      0.7960784435272217,
+      0.6823529601097107
+    ],
+    "collision": true,
+    "stage": "CourierCamp",
+    "size": [
+      10,
+      24,
+      12
+    ]
+  },
+  {
+    "name": "GateBanner",
+    "position": [
+      15,
+      12,
+      201.0999755859375
+    ],
+    "color": [
+      0.125490203499794,
+      0.2235294133424759,
+      0.32549020648002625
+    ],
+    "collision": false,
+    "stage": "CourierCamp",
+    "size": [
+      4,
+      9,
+      0.20000000298023224
+    ]
+  },
+  {
+    "name": "BannerCrest",
+    "position": [
+      15,
+      14,
+      201.29998779296875
+    ],
+    "color": [
+      0.8313725590705872,
+      0.6470588445663452,
+      0.2549019753932953
+    ],
+    "collision": false,
+    "stage": "CourierCamp",
+    "size": [
+      2,
+      2,
+      0.20000000298023224
+    ]
+  },
+  {
+    "name": "GateLintel",
+    "position": [
+      0,
+      22,
+      195
+    ],
+    "color": [
+      0.8392156958580017,
+      0.7960784435272217,
+      0.6823529601097107
+    ],
+    "collision": true,
+    "stage": "CourierCamp",
+    "size": [
+      22,
+      4,
+      12
+    ]
+  },
+  {
+    "name": "CourierPlaza",
+    "position": [
+      -65,
+      0.03999999910593033,
+      150
+    ],
+    "color": [
+      0.7450980544090271,
+      0.6784313917160034,
+      0.5215686559677124
+    ],
+    "collision": false,
+    "stage": "CourierCamp",
+    "size": [
+      48,
+      0.07999999821186066,
+      36
+    ]
+  },
+  {
+    "name": "CanopyPost",
+    "position": [
+      -79,
+      5,
+      140
+    ],
+    "color": [
+      0.4117647111415863,
+      0.27450981736183167,
+      0.18039216101169586
+    ],
+    "collision": true,
+    "stage": "CourierCamp",
+    "size": [
+      1,
+      10,
+      1
+    ]
+  },
+  {
+    "name": "CanopyPost",
+    "position": [
+      -79,
+      5,
+      160
+    ],
+    "color": [
+      0.4117647111415863,
+      0.27450981736183167,
+      0.18039216101169586
+    ],
+    "collision": true,
+    "stage": "CourierCamp",
+    "size": [
+      1,
+      10,
+      1
+    ]
+  },
+  {
+    "name": "CanopyPost",
+    "position": [
+      -51,
+      5,
+      140
+    ],
+    "color": [
+      0.4117647111415863,
+      0.27450981736183167,
+      0.18039216101169586
+    ],
+    "collision": true,
+    "stage": "CourierCamp",
+    "size": [
+      1,
+      10,
+      1
+    ]
+  },
+  {
+    "name": "CanopyPost",
+    "position": [
+      -51,
+      5,
+      160
+    ],
+    "color": [
+      0.4117647111415863,
+      0.27450981736183167,
+      0.18039216101169586
+    ],
+    "collision": true,
+    "stage": "CourierCamp",
+    "size": [
+      1,
+      10,
+      1
+    ]
+  },
+  {
+    "name": "CourierCanopy",
+    "position": [
+      -65,
+      10.5,
+      150
+    ],
+    "color": [
+      0.125490203499794,
+      0.2235294133424759,
+      0.32549020648002625
+    ],
+    "collision": true,
+    "stage": "CourierCamp",
+    "size": [
+      32,
+      1,
+      24
+    ]
+  },
+  {
+    "name": "CourierTable",
+    "position": [
+      -65,
+      2,
+      142
+    ],
+    "color": [
+      0.4117647111415863,
+      0.27450981736183167,
+      0.18039216101169586
+    ],
+    "collision": true,
+    "stage": "CourierCamp",
+    "size": [
+      14,
+      4,
+      3
+    ]
+  },
+  {
+    "name": "SupplyCrate",
+    "position": [
+      -83,
+      2,
+      147
+    ],
+    "color": [
+      0.4117647111415863,
+      0.27450981736183167,
+      0.18039216101169586
+    ],
+    "collision": true,
+    "stage": "CourierCamp",
+    "size": [
+      4,
+      4,
+      4
+    ]
+  },
+  {
+    "name": "SupplyCrate",
+    "position": [
+      -83,
+      2,
+      153
+    ],
+    "color": [
+      0.4117647111415863,
+      0.27450981736183167,
+      0.18039216101169586
+    ],
+    "collision": true,
+    "stage": "CourierCamp",
+    "size": [
+      4,
+      4,
+      4
+    ]
+  },
+  {
+    "name": "SupplyCrate",
+    "position": [
+      -83,
+      2,
+      159
+    ],
+    "color": [
+      0.4117647111415863,
+      0.27450981736183167,
+      0.18039216101169586
+    ],
+    "collision": true,
+    "stage": "CourierCamp",
+    "size": [
+      4,
+      4,
+      4
+    ]
+  },
+  {
+    "name": "TrainingCourt",
+    "position": [
+      65,
+      0.03999999910593033,
+      90
+    ],
+    "color": [
+      0.7450980544090271,
+      0.6784313917160034,
+      0.5215686559677124
+    ],
+    "collision": false,
+    "stage": "TrainingYard",
+    "size": [
+      56,
+      0.07999999821186066,
+      42
+    ]
+  },
+  {
+    "name": "DummyPost",
+    "position": [
+      50,
+      3,
+      80
+    ],
+    "color": [
+      0.4117647111415863,
+      0.27450981736183167,
+      0.18039216101169586
+    ],
+    "collision": true,
+    "stage": "TrainingYard",
+    "size": [
+      1,
+      6,
+      1
+    ]
+  },
+  {
+    "name": "DummyArms",
+    "position": [
+      50,
+      4,
+      80
+    ],
+    "color": [
+      0.4117647111415863,
+      0.27450981736183167,
+      0.18039216101169586
+    ],
+    "collision": true,
+    "stage": "TrainingYard",
+    "size": [
+      6,
+      1,
+      1
+    ]
+  },
+  {
+    "name": "DummyHead",
+    "position": [
+      50,
+      7,
+      80
+    ],
+    "color": [
+      0.8313725590705872,
+      0.6470588445663452,
+      0.2549019753932953
+    ],
+    "collision": true,
+    "stage": "TrainingYard",
+    "size": [
+      2,
+      2,
+      2
+    ]
+  },
+  {
+    "name": "DummyPost",
+    "position": [
+      65,
+      3,
+      80
+    ],
+    "color": [
+      0.4117647111415863,
+      0.27450981736183167,
+      0.18039216101169586
+    ],
+    "collision": true,
+    "stage": "TrainingYard",
+    "size": [
+      1,
+      6,
+      1
+    ]
+  },
+  {
+    "name": "DummyArms",
+    "position": [
+      65,
+      4,
+      80
+    ],
+    "color": [
+      0.4117647111415863,
+      0.27450981736183167,
+      0.18039216101169586
+    ],
+    "collision": true,
+    "stage": "TrainingYard",
+    "size": [
+      6,
+      1,
+      1
+    ]
+  },
+  {
+    "name": "DummyHead",
+    "position": [
+      65,
+      7,
+      80
+    ],
+    "color": [
+      0.8313725590705872,
+      0.6470588445663452,
+      0.2549019753932953
+    ],
+    "collision": true,
+    "stage": "TrainingYard",
+    "size": [
+      2,
+      2,
+      2
+    ]
+  },
+  {
+    "name": "DummyPost",
+    "position": [
+      80,
+      3,
+      80
+    ],
+    "color": [
+      0.4117647111415863,
+      0.27450981736183167,
+      0.18039216101169586
+    ],
+    "collision": true,
+    "stage": "TrainingYard",
+    "size": [
+      1,
+      6,
+      1
+    ]
+  },
+  {
+    "name": "DummyArms",
+    "position": [
+      80,
+      4,
+      80
+    ],
+    "color": [
+      0.4117647111415863,
+      0.27450981736183167,
+      0.18039216101169586
+    ],
+    "collision": true,
+    "stage": "TrainingYard",
+    "size": [
+      6,
+      1,
+      1
+    ]
+  },
+  {
+    "name": "DummyHead",
+    "position": [
+      80,
+      7,
+      80
+    ],
+    "color": [
+      0.8313725590705872,
+      0.6470588445663452,
+      0.2549019753932953
+    ],
+    "collision": true,
+    "stage": "TrainingYard",
+    "size": [
+      2,
+      2,
+      2
+    ]
+  },
+  {
+    "name": "DodgeWarning",
+    "position": [
+      65,
+      0.10000000149011612,
+      99
+    ],
+    "color": [
+      0.8117647171020508,
+      0.37254902720451355,
+      0.21568627655506134
+    ],
+    "collision": false,
+    "stage": "TrainingYard",
+    "size": [
+      12,
+      0.10000000149011612,
+      12
+    ]
+  },
+  {
+    "name": "CaravanCourt",
+    "position": [
+      -65,
+      0.03999999910593033,
+      25
+    ],
+    "color": [
+      0.7450980544090271,
+      0.6784313917160034,
+      0.5215686559677124
+    ],
+    "collision": false,
+    "stage": "CaravanBend",
+    "size": [
+      60,
+      0.07999999821186066,
+      48
+    ]
+  },
+  {
+    "name": "CartBed",
+    "position": [
+      -65,
+      2,
+      16
+    ],
+    "color": [
+      0.4117647111415863,
+      0.27450981736183167,
+      0.18039216101169586
+    ],
+    "collision": true,
+    "stage": "CaravanBend",
+    "size": [
+      9,
+      1,
+      14
+    ]
+  },
+  {
+    "name": "CartWheel",
+    "position": [
+      -71,
+      2,
+      11
+    ],
+    "color": [
+      0.22745098173618317,
+      0.22745098173618317,
+      0.21960784494876862
+    ],
+    "collision": true,
+    "stage": "CaravanBend",
+    "size": [
+      1,
+      4,
+      4
+    ]
+  },
+  {
+    "name": "CartWheel",
+    "position": [
+      -71,
+      2,
+      21
+    ],
+    "color": [
+      0.22745098173618317,
+      0.22745098173618317,
+      0.21960784494876862
+    ],
+    "collision": true,
+    "stage": "CaravanBend",
+    "size": [
+      1,
+      4,
+      4
+    ]
+  },
+  {
+    "name": "CartWheel",
+    "position": [
+      -59,
+      2,
+      11
+    ],
+    "color": [
+      0.22745098173618317,
+      0.22745098173618317,
+      0.21960784494876862
+    ],
+    "collision": true,
+    "stage": "CaravanBend",
+    "size": [
+      1,
+      4,
+      4
+    ]
+  },
+  {
+    "name": "CartWheel",
+    "position": [
+      -59,
+      2,
+      21
+    ],
+    "color": [
+      0.22745098173618317,
+      0.22745098173618317,
+      0.21960784494876862
+    ],
+    "collision": true,
+    "stage": "CaravanBend",
+    "size": [
+      1,
+      4,
+      4
+    ]
+  },
+  {
+    "name": "CartCrates",
+    "position": [
+      -65,
+      4,
+      16
+    ],
+    "color": [
+      0.8313725590705872,
+      0.6470588445663452,
+      0.2549019753932953
+    ],
+    "collision": true,
+    "stage": "CaravanBend",
+    "size": [
+      6,
+      3,
+      10
+    ]
+  },
+  {
+    "name": "RescuePath",
+    "position": [
+      -84,
+      0.07999999821186066,
+      25
+    ],
+    "color": [
+      0.8078431487083435,
+      0.7490196228027344,
+      0.5764706134796143
+    ],
+    "collision": false,
+    "stage": "CaravanBend",
+    "size": [
+      10,
+      0.07999999821186066,
+      40
+    ]
+  },
+  {
+    "name": "RescuePath",
+    "position": [
+      -46,
+      0.07999999821186066,
+      25
+    ],
+    "color": [
+      0.8078431487083435,
+      0.7490196228027344,
+      0.5764706134796143
+    ],
+    "collision": false,
+    "stage": "CaravanBend",
+    "size": [
+      10,
+      0.07999999821186066,
+      40
+    ]
+  },
+  {
+    "name": "RescueRejoin",
+    "position": [
+      -65,
+      0.12,
+      4
+    ],
+    "color": [
+      0.7450980544090271,
+      0.6784313917160034,
+      0.5215686559677124
+    ],
+    "collision": false,
+    "stage": "CaravanBend",
+    "size": [
+      48,
+      0.07999999821186066,
+      10
+    ]
+  },
+  {
+    "name": "KeeperCourt",
+    "position": [
+      65,
+      0.05000000074505806,
+      -40
+    ],
+    "color": [
+      0.7450980544090271,
+      0.6784313917160034,
+      0.5215686559677124
+    ],
+    "collision": false,
+    "stage": "CrossroadsKeeper",
+    "size": [
+      56,
+      0.10000000149011612,
+      50
+    ]
+  },
+  {
+    "name": "BrokenPillar",
+    "position": [
+      43,
+      6,
+      -56
+    ],
+    "color": [
+      0.8392156958580017,
+      0.7960784435272217,
+      0.6823529601097107
+    ],
+    "collision": true,
+    "stage": "CrossroadsKeeper",
+    "size": [
+      4,
+      12,
+      4
+    ]
+  },
+  {
+    "name": "BrokenArch",
+    "position": [
+      47,
+      12,
+      -56
+    ],
+    "color": [
+      0.8392156958580017,
+      0.7960784435272217,
+      0.6823529601097107
+    ],
+    "collision": true,
+    "stage": "CrossroadsKeeper",
+    "size": [
+      12,
+      2,
+      4
+    ]
+  },
+  {
+    "name": "BrokenPillar",
+    "position": [
+      87,
+      6,
+      -56
+    ],
+    "color": [
+      0.8392156958580017,
+      0.7960784435272217,
+      0.6823529601097107
+    ],
+    "collision": true,
+    "stage": "CrossroadsKeeper",
+    "size": [
+      4,
+      12,
+      4
+    ]
+  },
+  {
+    "name": "BrokenArch",
+    "position": [
+      83,
+      12,
+      -56
+    ],
+    "color": [
+      0.8392156958580017,
+      0.7960784435272217,
+      0.6823529601097107
+    ],
+    "collision": true,
+    "stage": "CrossroadsKeeper",
+    "size": [
+      12,
+      2,
+      4
+    ]
+  },
+  {
+    "name": "KeeperWarning",
+    "position": [
+      65,
+      0.12999999523162842,
+      -40
+    ],
+    "color": [
+      0.8078431487083435,
+      0.4000000059604645,
+      0.250980406999588
+    ],
+    "collision": false,
+    "stage": "CrossroadsKeeper",
+    "size": [
+      18,
+      0.05999999865889549,
+      9
+    ]
+  },
+  {
+    "name": "CrestPlinth",
+    "position": [
+      86,
+      1.5,
+      -30
+    ],
+    "color": [
+      0.8392156958580017,
+      0.7960784435272217,
+      0.6823529601097107
+    ],
+    "collision": true,
+    "stage": "CrossroadsKeeper",
+    "size": [
+      6,
+      3,
+      6
+    ]
+  },
+  {
+    "name": "DisciplineCourt",
+    "position": [
+      -65,
+      0.05000000074505806,
+      -105
+    ],
+    "color": [
+      0.7450980544090271,
+      0.6784313917160034,
+      0.5215686559677124
+    ],
+    "collision": false,
+    "stage": "FiveDisciplines",
+    "size": [
+      80,
+      0.10000000149011612,
+      40
+    ]
+  },
+  {
+    "name": "WarriorTrainingPad",
+    "position": [
+      -97,
+      0.20000000298023224,
+      -113
+    ],
+    "color": [
+      0.7607843279838562,
+      0.25882354378700256,
+      0.239215686917305
+    ],
+    "collision": true,
+    "stage": "FiveDisciplines",
+    "size": [
+      12,
+      0.4000000059604645,
+      12
+    ]
+  },
+  {
+    "name": "WarriorStandard",
+    "position": [
+      -97,
+      5,
+      -122
+    ],
+    "color": [
+      0.4117647111415863,
+      0.27450981736183167,
+      0.18039216101169586
+    ],
+    "collision": true,
+    "stage": "FiveDisciplines",
+    "size": [
+      1,
+      10,
+      1
+    ]
+  },
+  {
+    "name": "WarriorPennant",
+    "position": [
+      -95,
+      8,
+      -122
+    ],
+    "color": [
+      0.7607843279838562,
+      0.25882354378700256,
+      0.239215686917305
+    ],
+    "collision": false,
+    "stage": "FiveDisciplines",
+    "size": [
+      4,
+      4,
+      0.20000000298023224
+    ]
+  },
+  {
+    "name": "KnightTrainingPad",
+    "position": [
+      -81,
+      0.20000000298023224,
+      -113
+    ],
+    "color": [
+      0.8313725590705872,
+      0.6470588445663452,
+      0.2549019753932953
+    ],
+    "collision": true,
+    "stage": "FiveDisciplines",
+    "size": [
+      12,
+      0.4000000059604645,
+      12
+    ]
+  },
+  {
+    "name": "KnightStandard",
+    "position": [
+      -81,
+      5,
+      -122
+    ],
+    "color": [
+      0.4117647111415863,
+      0.27450981736183167,
+      0.18039216101169586
+    ],
+    "collision": true,
+    "stage": "FiveDisciplines",
+    "size": [
+      1,
+      10,
+      1
+    ]
+  },
+  {
+    "name": "KnightPennant",
+    "position": [
+      -79,
+      8,
+      -122
+    ],
+    "color": [
+      0.8313725590705872,
+      0.6470588445663452,
+      0.2549019753932953
+    ],
+    "collision": false,
+    "stage": "FiveDisciplines",
+    "size": [
+      4,
+      4,
+      0.20000000298023224
+    ]
+  },
+  {
+    "name": "ArcherTrainingPad",
+    "position": [
+      -65,
+      0.20000000298023224,
+      -113
+    ],
+    "color": [
+      0.21176470816135406,
+      0.572549045085907,
+      0.35686275362968445
+    ],
+    "collision": true,
+    "stage": "FiveDisciplines",
+    "size": [
+      12,
+      0.4000000059604645,
+      12
+    ]
+  },
+  {
+    "name": "ArcherStandard",
+    "position": [
+      -65,
+      5,
+      -122
+    ],
+    "color": [
+      0.4117647111415863,
+      0.27450981736183167,
+      0.18039216101169586
+    ],
+    "collision": true,
+    "stage": "FiveDisciplines",
+    "size": [
+      1,
+      10,
+      1
+    ]
+  },
+  {
+    "name": "ArcherPennant",
+    "position": [
+      -63,
+      8,
+      -122
+    ],
+    "color": [
+      0.21176470816135406,
+      0.572549045085907,
+      0.35686275362968445
+    ],
+    "collision": false,
+    "stage": "FiveDisciplines",
+    "size": [
+      4,
+      4,
+      0.20000000298023224
+    ]
+  },
+  {
+    "name": "MageTrainingPad",
+    "position": [
+      -49,
+      0.20000000298023224,
+      -113
+    ],
+    "color": [
+      0.5686274766921997,
+      0.35686275362968445,
+      0.7450980544090271
+    ],
+    "collision": true,
+    "stage": "FiveDisciplines",
+    "size": [
+      12,
+      0.4000000059604645,
+      12
+    ]
+  },
+  {
+    "name": "MageStandard",
+    "position": [
+      -49,
+      5,
+      -122
+    ],
+    "color": [
+      0.4117647111415863,
+      0.27450981736183167,
+      0.18039216101169586
+    ],
+    "collision": true,
+    "stage": "FiveDisciplines",
+    "size": [
+      1,
+      10,
+      1
+    ]
+  },
+  {
+    "name": "MagePennant",
+    "position": [
+      -47,
+      8,
+      -122
+    ],
+    "color": [
+      0.5686274766921997,
+      0.35686275362968445,
+      0.7450980544090271
+    ],
+    "collision": false,
+    "stage": "FiveDisciplines",
+    "size": [
+      4,
+      4,
+      0.20000000298023224
+    ]
+  },
+  {
+    "name": "PriestTrainingPad",
+    "position": [
+      -33,
+      0.20000000298023224,
+      -113
+    ],
+    "color": [
+      0.9098039269447327,
+      0.8901960849761963,
+      0.8196078538894653
+    ],
+    "collision": true,
+    "stage": "FiveDisciplines",
+    "size": [
+      12,
+      0.4000000059604645,
+      12
+    ]
+  },
+  {
+    "name": "PriestStandard",
+    "position": [
+      -33,
+      5,
+      -122
+    ],
+    "color": [
+      0.4117647111415863,
+      0.27450981736183167,
+      0.18039216101169586
+    ],
+    "collision": true,
+    "stage": "FiveDisciplines",
+    "size": [
+      1,
+      10,
+      1
+    ]
+  },
+  {
+    "name": "PriestPennant",
+    "position": [
+      -31,
+      8,
+      -122
+    ],
+    "color": [
+      0.9098039269447327,
+      0.8901960849761963,
+      0.8196078538894653
+    ],
+    "collision": false,
+    "stage": "FiveDisciplines",
+    "size": [
+      4,
+      4,
+      0.20000000298023224
+    ]
+  },
+  {
+    "name": "HallForecourt",
+    "position": [
+      0,
+      0.03999999910593033,
+      -168
+    ],
+    "color": [
+      0.7450980544090271,
+      0.6784313917160034,
+      0.5215686559677124
+    ],
+    "collision": false,
+    "stage": "AbandonedHall",
+    "size": [
+      74,
+      0.07999999821186066,
+      74
+    ]
+  },
+  {
+    "name": "HallFloor",
+    "position": [
+      0,
+      0.20000000298023224,
+      -191
+    ],
+    "color": [
+      0.8392156958580017,
+      0.7960784435272217,
+      0.6823529601097107
+    ],
+    "collision": true,
+    "stage": "AbandonedHall",
+    "size": [
+      44,
+      0.4000000059604645,
+      34
+    ]
+  },
+  {
+    "name": "HallRear",
+    "position": [
+      0,
+      8,
+      -207
+    ],
+    "color": [
+      0.8392156958580017,
+      0.7960784435272217,
+      0.6823529601097107
+    ],
+    "collision": true,
+    "stage": "AbandonedHall",
+    "size": [
+      44,
+      16,
+      2
+    ]
+  },
+  {
+    "name": "HallSide",
+    "position": [
+      -21,
+      8,
+      -191
+    ],
+    "color": [
+      0.8392156958580017,
+      0.7960784435272217,
+      0.6823529601097107
+    ],
+    "collision": true,
+    "stage": "AbandonedHall",
+    "size": [
+      2,
+      16,
+      34
+    ]
+  },
+  {
+    "name": "HallSide",
+    "position": [
+      21,
+      8,
+      -191
+    ],
+    "color": [
+      0.8392156958580017,
+      0.7960784435272217,
+      0.6823529601097107
+    ],
+    "collision": true,
+    "stage": "AbandonedHall",
+    "size": [
+      2,
+      16,
+      34
+    ]
+  },
+  {
+    "name": "HallFront",
+    "position": [
+      -14,
+      8,
+      -175
+    ],
+    "color": [
+      0.8392156958580017,
+      0.7960784435272217,
+      0.6823529601097107
+    ],
+    "collision": true,
+    "stage": "AbandonedHall",
+    "size": [
+      16,
+      16,
+      2
+    ]
+  },
+  {
+    "name": "HallFront",
+    "position": [
+      14,
+      8,
+      -175
+    ],
+    "color": [
+      0.8392156958580017,
+      0.7960784435272217,
+      0.6823529601097107
+    ],
+    "collision": true,
+    "stage": "AbandonedHall",
+    "size": [
+      16,
+      16,
+      2
+    ]
+  },
+  {
+    "name": "HallDoorLintel",
+    "position": [
+      0,
+      14,
+      -175
+    ],
+    "color": [
+      0.8392156958580017,
+      0.7960784435272217,
+      0.6823529601097107
+    ],
+    "collision": true,
+    "stage": "AbandonedHall",
+    "size": [
+      12,
+      4,
+      2
+    ]
+  },
+  {
+    "name": "HallRoof",
+    "position": [
+      0,
+      17,
+      -191
+    ],
+    "color": [
+      0.125490203499794,
+      0.2235294133424759,
+      0.32549020648002625
+    ],
+    "collision": true,
+    "stage": "AbandonedHall",
+    "size": [
+      48,
+      2,
+      38
+    ]
+  },
+  {
+    "name": "HallBanner",
+    "position": [
+      0,
+      12,
+      -173.800048828125
+    ],
+    "color": [
+      0.8313725590705872,
+      0.6470588445663452,
+      0.2549019753932953
+    ],
+    "collision": false,
+    "stage": "AbandonedHall",
+    "size": [
+      4,
+      3,
+      0.20000000298023224
+    ]
+  }
+]

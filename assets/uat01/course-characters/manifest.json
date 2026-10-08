@@ -1,0 +1,218 @@
+{
+  "schema": 1,
+  "fps": 30,
+  "assets": [
+    {
+      "id": "courier",
+      "rigType": "Humanoid",
+      "region": "Human",
+      "role": "Story",
+      "bones": 16,
+      "triangles": 372,
+      "vertices": 248,
+      "restFiles": [
+        "courier_Rest.fbx",
+        "courier_Rest.glb"
+      ],
+      "clips": [
+        {
+          "name": "Idle",
+          "file": "courier_Idle.fbx",
+          "frames": 61,
+          "seconds": 2,
+          "loop": true,
+          "rootMotion": false,
+          "robloxAnimationId": null
+        },
+        {
+          "name": "Walk",
+          "file": "courier_Walk.fbx",
+          "frames": 31,
+          "seconds": 1,
+          "loop": true,
+          "rootMotion": false,
+          "robloxAnimationId": null
+        },
+        {
+          "name": "Greet",
+          "file": "courier_Greet.fbx",
+          "frames": 55,
+          "seconds": 1.8,
+          "loop": false,
+          "rootMotion": false,
+          "robloxAnimationId": null
+        },
+        {
+          "name": "Work",
+          "file": "courier_Work.fbx",
+          "frames": 61,
+          "seconds": 2,
+          "loop": true,
+          "rootMotion": false,
+          "robloxAnimationId": null
+        }
+      ],
+      "studioImported": false,
+      "liveEncounterBound": false
+    },
+    {
+      "id": "dwarf_traveler",
+      "rigType": "Humanoid",
+      "region": "Dwarf",
+      "role": "Story",
+      "bones": 16,
+      "triangles": 348,
+      "vertices": 232,
+      "restFiles": [
+        "dwarf_traveler_Rest.fbx",
+        "dwarf_traveler_Rest.glb"
+      ],
+      "clips": [
+        {
+          "name": "Idle",
+          "file": "dwarf_traveler_Idle.fbx",
+          "frames": 61,
+          "seconds": 2,
+          "loop": true,
+          "rootMotion": false,
+          "robloxAnimationId": null
+        },
+        {
+          "name": "Walk",
+          "file": "dwarf_traveler_Walk.fbx",
+          "frames": 31,
+          "seconds": 1,
+          "loop": true,
+          "rootMotion": false,
+          "robloxAnimationId": null
+        },
+        {
+          "name": "Greet",
+          "file": "dwarf_traveler_Greet.fbx",
+          "frames": 55,
+          "seconds": 1.8,
+          "loop": false,
+          "rootMotion": false,
+          "robloxAnimationId": null
+        },
+        {
+          "name": "Work",
+          "file": "dwarf_traveler_Work.fbx",
+          "frames": 61,
+          "seconds": 2,
+          "loop": true,
+          "rootMotion": false,
+          "robloxAnimationId": null
+        }
+      ],
+      "studioImported": false,
+      "liveEncounterBound": false
+    },
+    {
+      "id": "elf_traveler",
+      "rigType": "Humanoid",
+      "region": "Elf",
+      "role": "Story",
+      "bones": 16,
+      "triangles": 336,
+      "vertices": 224,
+      "restFiles": [
+        "elf_traveler_Rest.fbx",
+        "elf_traveler_Rest.glb"
+      ],
+      "clips": [
+        {
+          "name": "Idle",
+          "file": "elf_traveler_Idle.fbx",
+          "frames": 61,
+          "seconds": 2,
+          "loop": true,
+          "rootMotion": false,
+          "robloxAnimationId": null
+        },
+        {
+          "name": "Walk",
+          "file": "elf_traveler_Walk.fbx",
+          "frames": 31,
+          "seconds": 1,
+          "loop": true,
+          "rootMotion": false,
+          "robloxAnimationId": null
+        },
+        {
+          "name": "Greet",
+          "file": "elf_traveler_Greet.fbx",
+          "frames": 55,
+          "seconds": 1.8,
+          "loop": false,
+          "rootMotion": false,
+          "robloxAnimationId": null
+        },
+        {
+          "name": "Work",
+          "file": "elf_traveler_Work.fbx",
+          "frames": 61,
+          "seconds": 2,
+          "loop": true,
+          "rootMotion": false,
+          "robloxAnimationId": null
+        }
+      ],
+      "studioImported": false,
+      "liveEncounterBound": false
+    },
+    {
+      "id": "crossroads_keeper",
+      "rigType": "Humanoid",
+      "region": "Human",
+      "role": "Melee",
+      "bones": 16,
+      "triangles": 432,
+      "vertices": 288,
+      "restFiles": [
+        "crossroads_keeper_Rest.fbx",
+        "crossroads_keeper_Rest.glb"
+      ],
+      "clips": [
+        {
+          "name": "Idle",
+          "file": "crossroads_keeper_Idle.fbx",
+          "frames": 61,
+          "seconds": 2,
+          "loop": true,
+          "rootMotion": false,
+          "robloxAnimationId": null
+        },
+        {
+          "name": "Walk",
+          "file": "crossroads_keeper_Walk.fbx",
+          "frames": 31,
+          "seconds": 1,
+          "loop": true,
+          "rootMotion": false,
+          "robloxAnimationId": null
+        },
+        {
+          "name": "Attack",
+          "file": "crossroads_keeper_Attack.fbx",
+          "frames": 37,
+          "seconds": 1.2,
+          "loop": false,
+          "rootMotion": false,
+          "robloxAnimationId": null
+        },
+        {
+          "name": "Hit",
+          "file": "crossroads_keeper_Hit.fbx",
+          "frames": 16,
+          "seconds": 0.5,
+          "loop": false,
+          "rootMotion": false,
+          "robloxAnimationId": null
+        }
+      ],
+      "studioImported": false,
+      "liveEncounterBound": false
+    }
+  ]
+}

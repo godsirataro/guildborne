@@ -1,0 +1,16 @@
+{
+  "initialBeginButtonFullyVisible": true,
+  "partyNavigation": true,
+  "rowanInventoryFocus": true,
+  "upgradeButtonFullyVisible": true,
+  "completion": {
+    "content": [
+      {
+        "type": "text",
+        "text": "{\"revision\":13,\"tutorial\":\"complete\",\"hall\":2,\"firstClears\":{\"timber_escort\":true,\"quarry_patrol\":true,\"trail_watch\":true},\"gold\":10,\"weapon\":\"q:1:1\"}"
+      }
+    ],
+    "isError": false
+  },
+  "method": "Fresh memory-only offline profile; actual visible clicks and ordinary expedition timers; no grants or remote bypass."
+}

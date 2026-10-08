@@ -1,0 +1,18 @@
+# Local tool downloads and generated Roblox places/models
+.tools/
+build/
+*.rbxl
+*.rbxlx
+*.rbxm
+*.rbxmx
+*.rbxl.lock
+
+# Local credentials and editor/OS files
+.env
+.env.*
+!.env.example
+.DS_Store
+Thumbs.db
+__pycache__/
+*.pyc
+node_modules/

@@ -1,0 +1,19 @@
+{
+  "actors": 20,
+  "baselineHeartbeatP50Ms": 16.870323568582535,
+  "kinematicWalk": true,
+  "stressHeartbeatP50Ms": 16.937457025051117,
+  "stressHeartbeatP95Ms": 18.049446865916252,
+  "downedPose": true,
+  "noProfileWrites": true,
+  "multiplayerCertified": false,
+  "lateJointRecovery": true,
+  "cullReset": true,
+  "reparentRecovery": true,
+  "rootUntouched": true,
+  "mobilePerformanceCertified": false,
+  "observedMemoryDeltaMb": 0,
+  "parts": 1000,
+  "motors": 120,
+  "observationLimits": "Single Studio client, 90 stress frames; heartbeat diagnostics are not device FPS certification. Reported memory delta 0 does not establish zero allocation."
+}

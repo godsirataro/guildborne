@@ -1,0 +1,226 @@
+{
+  "generator": "original Blender procedural geometry",
+  "layout": "Grid4x4",
+  "frames": [
+    {
+      "frame": 0,
+      "row": 0,
+      "column": 0,
+      "rectXYXY": [
+        0,
+        0,
+        512,
+        512
+      ],
+      "radiusAuthoringUnits": 0.18,
+      "ringOpacity": 0.75
+    },
+    {
+      "frame": 1,
+      "row": 0,
+      "column": 1,
+      "rectXYXY": [
+        512,
+        0,
+        1024,
+        512
+      ],
+      "radiusAuthoringUnits": 0.3717129547956814,
+      "ringOpacity": 0.6904073327613205
+    },
+    {
+      "frame": 2,
+      "row": 0,
+      "column": 2,
+      "rectXYXY": [
+        1024,
+        0,
+        1536,
+        512
+      ],
+      "radiusAuthoringUnits": 0.556695621735366,
+      "ringOpacity": 0.6316605807854456
+    },
+    {
+      "frame": 3,
+      "row": 0,
+      "column": 3,
+      "rectXYXY": [
+        1536,
+        0,
+        2048,
+        512
+      ],
+      "radiusAuthoringUnits": 0.734693582040131,
+      "ringOpacity": 0.5738114998740222
+    },
+    {
+      "frame": 4,
+      "row": 1,
+      "column": 0,
+      "rectXYXY": [
+        0,
+        512,
+        512,
+        1024
+      ],
+      "radiusAuthoringUnits": 0.9054211608339242,
+      "ringOpacity": 0.5169195703924938
+    },
+    {
+      "frame": 5,
+      "row": 1,
+      "column": 1,
+      "rectXYXY": [
+        512,
+        512,
+        1024,
+        1024
+      ],
+      "radiusAuthoringUnits": 1.068554444793956,
+      "ringOpacity": 0.46105395574086394
+    },
+    {
+      "frame": 6,
+      "row": 1,
+      "column": 2,
+      "rectXYXY": [
+        1024,
+        512,
+        1536,
+        1024
+      ],
+      "radiusAuthoringUnits": 1.2237218969874644,
+      "ringOpacity": 0.4062962031513454
+    },
+    {
+      "frame": 7,
+      "row": 1,
+      "column": 3,
+      "rectXYXY": [
+        1536,
+        512,
+        2048,
+        1024
+      ],
+      "radiusAuthoringUnits": 1.3704913869261697,
+      "ringOpacity": 0.3527440824886882
+    },
+    {
+      "frame": 8,
+      "row": 2,
+      "column": 0,
+      "rectXYXY": [
+        0,
+        1024,
+        512,
+        1536
+      ],
+      "radiusAuthoringUnits": 1.5083516535317845,
+      "ringOpacity": 0.30051724621957115
+    },
+    {
+      "frame": 9,
+      "row": 2,
+      "column": 1,
+      "rectXYXY": [
+        512,
+        1024,
+        1024,
+        1536
+      ],
+      "radiusAuthoringUnits": 1.6366846850137327,
+      "ringOpacity": 0.24976596222056197
+    },
+    {
+      "frame": 10,
+      "row": 2,
+      "column": 2,
+      "rectXYXY": [
+        1024,
+        1024,
+        1536,
+        1536
+      ],
+      "radiusAuthoringUnits": 1.754722325026743,
+      "ringOpacity": 0.20068539044005768
+    },
+    {
+      "frame": 11,
+      "row": 2,
+      "column": 3,
+      "rectXYXY": [
+        1536,
+        1024,
+        2048,
+        1536
+      ],
+      "radiusAuthoringUnits": 1.8614731546629524,
+      "ringOpacity": 0.15354077985495104
+    },
+    {
+      "frame": 12,
+      "row": 3,
+      "column": 0,
+      "rectXYXY": [
+        0,
+        1536,
+        512,
+        2048
+      ],
+      "radiusAuthoringUnits": 1.9555866977550163,
+      "ringOpacity": 0.10871694955165431
+    },
+    {
+      "frame": 13,
+      "row": 3,
+      "column": 1,
+      "rectXYXY": [
+        512,
+        1536,
+        1024,
+        2048
+      ],
+      "radiusAuthoringUnits": 2.035061423365771,
+      "ringOpacity": 0.06683250619582688
+    },
+    {
+      "frame": 14,
+      "row": 3,
+      "column": 2,
+      "rectXYXY": [
+        1024,
+        1536,
+        1536,
+        2048
+      ],
+      "radiusAuthoringUnits": 2.096434144332869,
+      "ringOpacity": 0.029090537957634402
+    },
+    {
+      "frame": 15,
+      "row": 3,
+      "column": 3,
+      "rectXYXY": [
+        1536,
+        1536,
+        2048,
+        2048
+      ],
+      "radiusAuthoringUnits": 2.13,
+      "ringOpacity": 0.0075
+    }
+  ],
+  "size": [
+    2048,
+    2048
+  ],
+  "tileSize": [
+    512,
+    512
+  ],
+  "suggestedMode": "OneShot",
+  "suggestedLifetimeSeconds": 0.45,
+  "robloxAssetId": null,
+  "studioImportVerified": false
+}

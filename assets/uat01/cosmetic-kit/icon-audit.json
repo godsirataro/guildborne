@@ -1,0 +1,114 @@
+[
+  {
+    "id": "founder_cloak",
+    "file": "founder_cloak.png",
+    "size": [
+      512,
+      512
+    ],
+    "transparentMarginPx": 85,
+    "alphaRange": [
+      0,
+      255
+    ],
+    "sha256": "1f99599388fa45c26e0f657fb56309564f58b610956078c5d65cf5f48c89d139"
+  },
+  {
+    "id": "compass_blade",
+    "file": "compass_blade.png",
+    "size": [
+      512,
+      512
+    ],
+    "transparentMarginPx": 55,
+    "alphaRange": [
+      0,
+      255
+    ],
+    "sha256": "7acb0258675ec5544b9e47568c748e7dd95e002038e047b5f213ce5cc9e885a2"
+  },
+  {
+    "id": "company_banner",
+    "file": "company_banner.png",
+    "size": [
+      512,
+      512
+    ],
+    "transparentMarginPx": 65,
+    "alphaRange": [
+      0,
+      255
+    ],
+    "sha256": "5290d10598461bc3bd24fd1e73942546cd7cd9bcf806edf6a934e336add0264a"
+  },
+  {
+    "id": "hearth_decor",
+    "file": "hearth_decor.png",
+    "size": [
+      512,
+      512
+    ],
+    "transparentMarginPx": 71,
+    "alphaRange": [
+      0,
+      255
+    ],
+    "sha256": "8b4719df1fdec38ef14dad6a96b8e9936e0e94fb67f6a746ed7c59273d096552"
+  },
+  {
+    "id": "ivory_portrait_frame",
+    "file": "ivory_portrait_frame.png",
+    "size": [
+      512,
+      512
+    ],
+    "transparentMarginPx": 84,
+    "alphaRange": [
+      0,
+      255
+    ],
+    "sha256": "e537e6b3e01a51e49f37989e85dad847af41af33418fcf2966de3caee049c919"
+  },
+  {
+    "id": "friendly_greeting",
+    "file": "friendly_greeting.png",
+    "size": [
+      512,
+      512
+    ],
+    "transparentMarginPx": 92,
+    "alphaRange": [
+      0,
+      255
+    ],
+    "sha256": "eb2478e879741de173199b3ca885d351743e5c6aa39c7d7329413018fc07cff5"
+  },
+  {
+    "id": "rune_portal",
+    "file": "rune_portal.png",
+    "size": [
+      512,
+      512
+    ],
+    "transparentMarginPx": 99,
+    "alphaRange": [
+      0,
+      255
+    ],
+    "sha256": "0417b482ef7bf992d1d8b266f7fb39e223737ecec10c267aafd76c910de14773"
+  },
+  {
+    "id": "pale_spell_trail",
+    "file": "pale_spell_trail.png",
+    "size": [
+      512,
+      512
+    ],
+    "transparentMarginPx": 95,
+    "alphaRange": [
+      0,
+      255
+    ],
+    "sha256": "17ba2ca3b1aa872e7420888dccd5bb5242f9928b3244c6aec292eba4b4e6548b"
+  }
+]

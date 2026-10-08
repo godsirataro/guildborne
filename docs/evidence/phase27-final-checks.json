@@ -1,0 +1,155 @@
+{
+  "phase27rejoinComparison": {
+    "equal": true,
+    "beforeRevision": 204,
+    "afterRevision": 204,
+    "schemaVersion": 4
+  },
+  "phase27rejoinBefore": {
+    "content": [
+      {
+        "type": "text",
+        "text": "{\"revision\":204,\"schemaVersion\":4,\"data\":{\"progression\":{\"tutorialStep\":\"complete\",\"everEquipped\":true,\"welcomeSeen\":true,\"tutorialCompleted\":true,\"recruitedClasses\":{\"Warrior\":true,\"Archer\":true,\"Knight\":true,\"Priest\":true,\"Mage\":true}},\"expansion\":{\"actors\":{\"a:Priest\":{\"skills\":{\"master_art\":true,\"vitality\":true,\"path_art\":true},\"path\":\"bard\",\"equipped\":\"bard_art\",\"tier\":3},\"player\":{\"skills\":{\"path_art\":true,\"master_art\":true,\"vitality\":true,\"ward\":true},\"path\":\"warlord\",\"equipped\":\"cleave_master\",\"tier\":3},\"a:Archer\":{\"skills\":{\"master_art\":true,\"vitality\":true,\"path_art\":true},\"path\":\"shadow_dancer\",\"equipped\":\"shadow_dancer_art\",\"tier\":3},\"a:Mage\":{\"skills\":{\"master_art\":true,\"vitality\":true,\"path_art\":true},\"path\":\"archmage\",\"equipped\":\"nova_master\",\"tier\":3},\"a:Warrior\":{\"skills\":{\"master_art\":true,\"vitality\":true,\"path_art\":true},\"path\":\"sword_saint\",\"equipped\":\"lunge_master\",\"tier\":3},\"a:Knight\":{\"skills\":{\"master_art\":true,\"vitality\":true,\"path_art\":true},\"path\":\"rune_knight\",\"equipped\":\"taunt\",\"tier\":3}},\"nextBuilding\":4,\"gatherReady\":{\"stone\":1790598209,\"ore\":1790598213,\"wood\":1790598296,\"herbs\":1790598207},\"tower\":{\"nextRun\":4,\"highest\":10,\"checkpoint\":5},\"buildings\":{\"b:1\":{\"rotation\":1,\"x\":6,\"kind\":\"warehouse\",\"z\":-4},\"b:2\":{\"rotation\":2,\"x\":10,\"kind\":\"quarters\",\"z\":-4},\"b:3\":{\"rotation\":0,\"x\":6,\"kind\":\"forge\",\"z\":2}},\"gathered\":{\"stone\":true,\"ore\":true,\"wood\":true,\"herbs\":true},\"raceChosen\":true},\"currencies\":{\"gold\":413},\"inventory\":{\"equipment\":{\"recruit:Knight:1\":{\"binding\":\"Account\",\"upgradeLevel\":0,\"definitionId\":\"knight_sword\"},\"recruit:Priest:1\":{\"binding\":\"Account\",\"upgradeLevel\":0,\"definitionId\":\"apprentice_staff\"},\"shop:1:1\":{\"binding\":\"Account\",\"upgradeLevel\":0,\"definitionId\":\"leather_vest\"},\"recruit:Mage:1\":{\"binding\":\"Account\",\"upgradeLevel\":0,\"definitionId\":\"mage_staff\"},\"q:3:1\":{\"binding\":\"Account\",\"upgradeLevel\":0,\"definitionId\":\"iron_sword\"},\"recruit:Archer:1\":{\"binding\":\"Account\",\"upgradeLevel\":0,\"definitionId\":\"short_bow\"},\"shop:4:1\":{\"binding\":\"Account\",\"upgradeLevel\":0,\"definitionId\":\"guardian_plate\"},\"shop:2:1\":{\"binding\":\"Account\",\"upgradeLevel\":0,\"definitionId\":\"bronze_ring\"}},\"stacks\":{\"stone\":42,\"timber\":3,\"herb\":17,\"iron_ore\":29,\"iron_ingot\":1},\"nextEquipmentSequence\":5},\"profile\":{\"userId\":11732987790},\"character\":{\"equipmentSlots\":{\"armor\":\"shop:4:1\",\"accessory\":\"shop:2:1\",\"weapon\":\"q:3:1\"},\"definitionVersion\":1,\"classId\":\"Warrior\",\"xp\":994,\"raceId\":\"Elf\",\"tier\":3,\"level\":10,\"classPathId\":\"warlord\",\"skillId\":\"power_strike\"},\"settings\":{\"language\":\"en\",\"reducedMotion\":false,\"musicEnabled\":true},\"adventurers\":{\"a:Priest\":{\"equipmentSlots\":{\"weapon\":\"recruit:Priest:1\"},\"name\":\"Sage\",\"baseStats\":{\"Defense\":3,\"Health\":24,\"Attack\":4},\"id\":\"a:Priest\",\"classId\":\"Priest\",\"xp\":1060,\"level\":10},\"a:Archer\":{\"equipmentSlots\":{\"weapon\":\"recruit:Archer:1\"},\"name\":\"Ash\",\"baseStats\":{\"Defense\":2,\"Health\":22,\"Attack\":8},\"id\":\"a:Archer\",\"classId\":\"Archer\",\"xp\":1060,\"level\":10},\"a:Mage\":{\"equipmentSlots\":{\"weapon\":\"recruit:Mage:1\"},\"name\":\"Lyra\",\"baseStats\":{\"Defense\":1,\"Health\":20,\"Attack\":10},\"id\":\"a:Mage\",\"classId\":\"Mage\",\"xp\":1060,\"level\":10},\"a:Warrior\":{\"equipmentSlots\":[],\"name\":\"Rowan\",\"baseStats\":{\"Defense\":4,\"Health\":30,\"Attack\":6},\"id\":\"a:Warrior\",\"classId\":\"Warrior\",\"xp\":1165,\"level\":10},\"a:Knight\":{\"equipmentSlots\":{\"weapon\":\"recruit:Knight:1\"},\"name\":\"Bram\",\"baseStats\":{\"Defense\":7,\"Health\":40,\"Attack\":4},\"id\":\"a:Knight\",\"classId\":\"Knight\",\"xp\":1060,\"level\":10}},\"party\":{\"adventurerIds\":{\"1\":\"a:Knight\",\"3\":\"a:Archer\",\"2\":\"a:Warrior\",\"5\":\"a:Priest\",\"4\":\"a:Mage\"}},\"statistics\":{\"questsCompleted\":10,\"goldDestroyed\":223,\"goldCreated\":636},\"quests\":{\"nextRunSequence\":11,\"lastResult\":{\"questName\":\"Trail Watch\",\"runId\":\"q:10\",\"reward\":{\"Items\":{\"1\":{\"Id\":\"timber\",\"Quantity\":1},\"2\":{\"Id\":\"herb\",\"Quantity\":1}},\"XP\":5,\"Gold\":10}},\"claimedThrough\":10,\"firstClears\":{\"timber_escort\":true,\"quarry_patrol\":true,\"trail_watch\":true}},\"personalGuild\":{\"buildings\":{\"guildHall\":2}}}}"
+      }
+    ],
+    "isError": false
+  },
+  "phase27rejoinAfter": {
+    "content": [
+      {
+        "type": "text",
+        "text": "{\"revision\":204,\"schemaVersion\":4,\"data\":{\"progression\":{\"tutorialStep\":\"complete\",\"everEquipped\":true,\"welcomeSeen\":true,\"tutorialCompleted\":true,\"recruitedClasses\":{\"Warrior\":true,\"Archer\":true,\"Knight\":true,\"Priest\":true,\"Mage\":true}},\"expansion\":{\"actors\":{\"a:Priest\":{\"skills\":{\"master_art\":true,\"vitality\":true,\"path_art\":true},\"path\":\"bard\",\"equipped\":\"bard_art\",\"tier\":3},\"player\":{\"skills\":{\"path_art\":true,\"master_art\":true,\"vitality\":true,\"ward\":true},\"path\":\"warlord\",\"equipped\":\"cleave_master\",\"tier\":3},\"a:Archer\":{\"skills\":{\"master_art\":true,\"vitality\":true,\"path_art\":true},\"path\":\"shadow_dancer\",\"equipped\":\"shadow_dancer_art\",\"tier\":3},\"a:Mage\":{\"skills\":{\"master_art\":true,\"vitality\":true,\"path_art\":true},\"path\":\"archmage\",\"equipped\":\"nova_master\",\"tier\":3},\"a:Warrior\":{\"skills\":{\"master_art\":true,\"vitality\":true,\"path_art\":true},\"path\":\"sword_saint\",\"equipped\":\"lunge_master\",\"tier\":3},\"a:Knight\":{\"skills\":{\"master_art\":true,\"vitality\":true,\"path_art\":true},\"path\":\"rune_knight\",\"equipped\":\"taunt\",\"tier\":3}},\"nextBuilding\":4,\"gatherReady\":{\"stone\":1790598209,\"ore\":1790598213,\"wood\":1790598296,\"herbs\":1790598207},\"tower\":{\"nextRun\":4,\"highest\":10,\"checkpoint\":5},\"buildings\":{\"b:1\":{\"rotation\":1,\"x\":6,\"kind\":\"warehouse\",\"z\":-4},\"b:2\":{\"rotation\":2,\"x\":10,\"kind\":\"quarters\",\"z\":-4},\"b:3\":{\"rotation\":0,\"x\":6,\"kind\":\"forge\",\"z\":2}},\"gathered\":{\"stone\":true,\"ore\":true,\"wood\":true,\"herbs\":true},\"raceChosen\":true},\"currencies\":{\"gold\":413},\"inventory\":{\"equipment\":{\"recruit:Knight:1\":{\"binding\":\"Account\",\"upgradeLevel\":0,\"definitionId\":\"knight_sword\"},\"recruit:Priest:1\":{\"binding\":\"Account\",\"upgradeLevel\":0,\"definitionId\":\"apprentice_staff\"},\"shop:1:1\":{\"binding\":\"Account\",\"upgradeLevel\":0,\"definitionId\":\"leather_vest\"},\"recruit:Mage:1\":{\"binding\":\"Account\",\"upgradeLevel\":0,\"definitionId\":\"mage_staff\"},\"q:3:1\":{\"binding\":\"Account\",\"upgradeLevel\":0,\"definitionId\":\"iron_sword\"},\"recruit:Archer:1\":{\"binding\":\"Account\",\"upgradeLevel\":0,\"definitionId\":\"short_bow\"},\"shop:4:1\":{\"binding\":\"Account\",\"upgradeLevel\":0,\"definitionId\":\"guardian_plate\"},\"shop:2:1\":{\"binding\":\"Account\",\"upgradeLevel\":0,\"definitionId\":\"bronze_ring\"}},\"stacks\":{\"stone\":42,\"timber\":3,\"herb\":17,\"iron_ore\":29,\"iron_ingot\":1},\"nextEquipmentSequence\":5},\"profile\":{\"userId\":11732987790},\"character\":{\"equipmentSlots\":{\"armor\":\"shop:4:1\",\"accessory\":\"shop:2:1\",\"weapon\":\"q:3:1\"},\"definitionVersion\":1,\"classId\":\"Warrior\",\"xp\":994,\"raceId\":\"Elf\",\"tier\":3,\"level\":10,\"classPathId\":\"warlord\",\"skillId\":\"power_strike\"},\"settings\":{\"language\":\"en\",\"reducedMotion\":false,\"musicEnabled\":true},\"adventurers\":{\"a:Priest\":{\"equipmentSlots\":{\"weapon\":\"recruit:Priest:1\"},\"name\":\"Sage\",\"baseStats\":{\"Defense\":3,\"Health\":24,\"Attack\":4},\"id\":\"a:Priest\",\"classId\":\"Priest\",\"xp\":1060,\"level\":10},\"a:Archer\":{\"equipmentSlots\":{\"weapon\":\"recruit:Archer:1\"},\"name\":\"Ash\",\"baseStats\":{\"Defense\":2,\"Health\":22,\"Attack\":8},\"id\":\"a:Archer\",\"classId\":\"Archer\",\"xp\":1060,\"level\":10},\"a:Mage\":{\"equipmentSlots\":{\"weapon\":\"recruit:Mage:1\"},\"name\":\"Lyra\",\"baseStats\":{\"Defense\":1,\"Health\":20,\"Attack\":10},\"id\":\"a:Mage\",\"classId\":\"Mage\",\"xp\":1060,\"level\":10},\"a:Warrior\":{\"equipmentSlots\":[],\"name\":\"Rowan\",\"baseStats\":{\"Defense\":4,\"Health\":30,\"Attack\":6},\"id\":\"a:Warrior\",\"classId\":\"Warrior\",\"xp\":1165,\"level\":10},\"a:Knight\":{\"equipmentSlots\":{\"weapon\":\"recruit:Knight:1\"},\"name\":\"Bram\",\"baseStats\":{\"Defense\":7,\"Health\":40,\"Attack\":4},\"id\":\"a:Knight\",\"classId\":\"Knight\",\"xp\":1060,\"level\":10}},\"party\":{\"adventurerIds\":{\"1\":\"a:Knight\",\"3\":\"a:Archer\",\"2\":\"a:Warrior\",\"5\":\"a:Priest\",\"4\":\"a:Mage\"}},\"statistics\":{\"questsCompleted\":10,\"goldDestroyed\":223,\"goldCreated\":636},\"quests\":{\"nextRunSequence\":11,\"lastResult\":{\"questName\":\"Trail Watch\",\"runId\":\"q:10\",\"reward\":{\"Items\":{\"1\":{\"Id\":\"timber\",\"Quantity\":1},\"2\":{\"Id\":\"herb\",\"Quantity\":1}},\"XP\":5,\"Gold\":10}},\"claimedThrough\":10,\"firstClears\":{\"timber_escort\":true,\"quarry_patrol\":true,\"trail_watch\":true}},\"personalGuild\":{\"buildings\":{\"guildHall\":2}}}}"
+      }
+    ],
+    "isError": false
+  },
+  "phase27mobileBounds": {
+    "content": [
+      {
+        "type": "text",
+        "text": "{\"viewport\":\"359, 718\",\"touch\":true,\"buttons\":{\"1\":{\"height\":52,\"text\":\"กลับเมนูกิลด์\",\"width\":291},\"3\":{\"height\":52,\"text\":\"เรียนแล้ว\",\"width\":291},\"2\":{\"height\":52,\"text\":\"ตัวละครของคุณ\",\"width\":291},\"5\":{\"height\":52,\"text\":\"เรียนแล้ว\",\"width\":291},\"4\":{\"height\":52,\"text\":\"เรียนสกิล\",\"width\":291},\"7\":{\"height\":52,\"text\":\"เรียนแล้ว\",\"width\":291},\"6\":{\"height\":52,\"text\":\"เรียนแล้ว\",\"width\":291},\"9\":{\"height\":52,\"text\":\"ศาสตร์เบอร์เซิร์กเกอร์\",\"width\":291},\"8\":{\"height\":52,\"text\":\"สกิลเริ่มต้น\",\"width\":291},\"14\":{\"height\":52,\"text\":\"คนแคระ\",\"width\":291},\"13\":{\"height\":52,\"text\":\"เอลฟ์ ✓\",\"width\":291},\"12\":{\"height\":52,\"text\":\"มนุษย์\",\"width\":291},\"11\":{\"height\":52,\"text\":\"รีเซ็ตสกิล · 10 ทอง\",\"width\":291},\"10\":{\"height\":52,\"text\":\"พายุหมุน ✓\",\"width\":291}}}"
+      }
+    ],
+    "isError": false
+  },
+  "phase27rigSmoke": {
+    "content": [
+      {
+        "type": "text",
+        "text": "{\"1\":{\"race\":\"Human\",\"ornaments\":0,\"rig\":\"R6\"},\"3\":{\"race\":\"Dwarf\",\"ornaments\":2,\"rig\":\"R6\"},\"2\":{\"race\":\"Elf\",\"ornaments\":2,\"rig\":\"R6\"},\"5\":{\"race\":\"Elf\",\"ornaments\":2,\"rig\":\"R15\"},\"4\":{\"race\":\"Human\",\"ornaments\":0,\"rig\":\"R15\"},\"6\":{\"race\":\"Dwarf\",\"ornaments\":2,\"rig\":\"R15\"}}"
+      }
+    ],
+    "isError": false
+  },
+  "phase27effectsSmoke": {
+    "content": [
+      {
+        "type": "text",
+        "text": "{\"remaining\":0,\"counts\":{\"Drain\":1,\"Heal\":2,\"Physical\":1,\"Slow\":1,\"Guard\":1,\"Area\":2},\"isolatedPresentationSmoke\":true}"
+      }
+    ],
+    "isError": false
+  },
+  "phase27console": {
+    "content": [
+      {
+        "type": "text",
+        "text": "[Guildborne] Phase 1 ready · Persistent · staging\n[Guildborne] profile_loaded {\"revision\":204}\n[Guildborne] session_started []\n[Guildborne] Phase 1 client ready\n[Phase22 QA] Client probe ready, revision 204"
+      }
+    ],
+    "isError": false
+  },
+  "motion": {
+    "content": [
+      {
+        "type": "text",
+        "text": "{\"cosmeticComponentSmoke\":true,\"motionChanged\":{\"Drain\":true,\"Heal\":true,\"Guard\":true,\"Area\":true}}"
+      }
+    ],
+    "isError": false
+  },
+  "cleanup": {
+    "content": [
+      {
+        "type": "text",
+        "text": "{\"effectEqual\":true,\"runtimeSources\":57,\"playing\":false}"
+      }
+    ],
+    "isError": false
+  },
+  "parity": [
+    {
+      "content": [
+        {
+          "type": "text",
+          "text": "{\"1\":\"src/client/Controllers/SkillEffects.luau\"}"
+        }
+      ],
+      "isError": false
+    },
+    {
+      "content": [
+        {
+          "type": "text",
+          "text": "[]"
+        }
+      ],
+      "isError": false
+    },
+    {
+      "content": [
+        {
+          "type": "text",
+          "text": "[]"
+        }
+      ],
+      "isError": false
+    },
+    {
+      "content": [
+        {
+          "type": "text",
+          "text": "[]"
+        }
+      ],
+      "isError": false
+    },
+    {
+      "content": [
+        {
+          "type": "text",
+          "text": "[]"
+        }
+      ],
+      "isError": false
+    },
+    {
+      "content": [
+        {
+          "type": "text",
+          "text": "[]"
+        }
+      ],
+      "isError": false
+    },
+    {
+      "content": [
+        {
+          "type": "text",
+          "text": "[]"
+        }
+      ],
+      "isError": false
+    },
+    {
+      "content": [
+        {
+          "type": "text",
+          "text": "[]"
+        }
+      ],
+      "isError": false
+    }
+  ],
+  "parityNote": "56 sources matched immediately; SkillEffects differed only by shell-output trailing newline and was resynced exactly, with equality verified. All 57 now match."
+}

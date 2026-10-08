@@ -1,0 +1,589 @@
+Info: Saved as "Guildborne_Elian_Desk.blend"
+INFO Draco is available, use library at C:\Program Files\Blender Foundation\Blender 5.2\5.2\scripts\addons_core\io_scene_gltf2\bf_intern_draco_bridge.dll
+INFO MeshOptimizer is available, use library at C:\Program Files\Blender Foundation\Blender 5.2\5.2\scripts\addons_core\io_scene_gltf2\bf_intern_meshopt_bridge.dll
+19:33:27 | INFO: Starting glTF 2.0 export
+19:33:27 | INFO: Extracting primitive: Cylinder.012
+19:33:27 | INFO: Primitives created: 1
+19:33:27 | INFO: Extracting primitive: Cylinder.013
+19:33:27 | INFO: Primitives created: 1
+19:33:27 | INFO: Extracting primitive: Cylinder.014
+19:33:27 | INFO: Primitives created: 1
+19:33:27 | INFO: Extracting primitive: Cylinder.015
+19:33:27 | INFO: Primitives created: 1
+19:33:27 | INFO: Extracting primitive: Cylinder.016
+19:33:27 | INFO: Primitives created: 1
+19:33:27 | INFO: Extracting primitive: Cube.010
+19:33:27 | INFO: Primitives created: 1
+19:33:27 | INFO: Extracting primitive: Cube.011
+19:33:27 | INFO: Primitives created: 1
+19:33:27 | INFO: Extracting primitive: Cube.012
+19:33:27 | INFO: Primitives created: 1
+19:33:27 | INFO: Extracting primitive: Cube.013
+19:33:27 | INFO: Primitives created: 1
+19:33:27 | INFO: Extracting primitive: Cube.014
+19:33:27 | INFO: Primitives created: 1
+19:33:27 | INFO: Extracting primitive: Cube.015
+19:33:27 | INFO: Primitives created: 1
+19:33:27 | INFO: Extracting primitive: Cube.016
+19:33:27 | INFO: Primitives created: 1
+19:33:27 | INFO: Extracting primitive: Cube.003
+19:33:27 | INFO: Primitives created: 1
+19:33:27 | INFO: Extracting primitive: Cube.007
+19:33:27 | INFO: Primitives created: 1
+19:33:27 | INFO: Extracting primitive: Cube.008
+19:33:27 | INFO: Primitives created: 1
+19:33:27 | INFO: Extracting primitive: Cube.004
+19:33:27 | INFO: Primitives created: 1
+19:33:27 | INFO: Extracting primitive: Sphere.021
+19:33:27 | INFO: Primitives created: 1
+19:33:27 | INFO: Extracting primitive: Cube.002
+19:33:27 | INFO: Primitives created: 1
+19:33:27 | INFO: Extracting primitive: Cube
+19:33:27 | INFO: Primitives created: 1
+19:33:27 | INFO: Extracting primitive: Cube.001
+19:33:27 | INFO: Primitives created: 1
+19:33:27 | INFO: Extracting primitive: Sphere.011
+19:33:27 | INFO: Primitives created: 1
+19:33:27 | INFO: Extracting primitive: Sphere.014
+19:33:27 | INFO: Primitives created: 1
+19:33:27 | INFO: Extracting primitive: Sphere.009
+19:33:27 | INFO: Primitives created: 1
+19:33:27 | INFO: Extracting primitive: Sphere.012
+19:33:27 | INFO: Primitives created: 1
+19:33:27 | INFO: Extracting primitive: Sphere.007
+19:33:27 | INFO: Primitives created: 1
+19:33:27 | INFO: Extracting primitive: Sphere.015
+19:33:27 | INFO: Primitives created: 1
+19:33:27 | INFO: Extracting primitive: Sphere.016
+19:33:27 | INFO: Primitives created: 1
+19:33:27 | INFO: Extracting primitive: Sphere.017
+19:33:27 | INFO: Primitives created: 1
+19:33:27 | INFO: Extracting primitive: Sphere.018
+19:33:27 | INFO: Primitives created: 1
+19:33:27 | INFO: Extracting primitive: Sphere.019
+19:33:27 | INFO: Primitives created: 1
+19:33:27 | INFO: Extracting primitive: Sphere.020
+19:33:27 | INFO: Primitives created: 1
+19:33:27 | INFO: Extracting primitive: Cube.009
+19:33:27 | INFO: Primitives created: 1
+19:33:27 | INFO: Extracting primitive: Cube.006
+19:33:27 | INFO: Primitives created: 1
+19:33:27 | INFO: Extracting primitive: Sphere.005
+19:33:27 | INFO: Primitives created: 1
+19:33:27 | INFO: Extracting primitive: Sphere.006
+19:33:27 | INFO: Primitives created: 1
+19:33:27 | INFO: Extracting primitive: Cylinder.005
+19:33:27 | INFO: Primitives created: 1
+19:33:27 | INFO: Extracting primitive: Cylinder.007
+19:33:27 | INFO: Primitives created: 1
+19:33:27 | INFO: Extracting primitive: Sphere.004
+19:33:27 | INFO: Primitives created: 1
+19:33:27 | INFO: Extracting primitive: Cylinder.004
+19:33:27 | INFO: Primitives created: 1
+19:33:27 | INFO: Extracting primitive: Cylinder.006
+19:33:27 | INFO: Primitives created: 1
+19:33:27 | INFO: Extracting primitive: Cylinder.008
+19:33:27 | INFO: Primitives created: 1
+19:33:27 | INFO: Extracting primitive: Cylinder.009
+19:33:27 | INFO: Primitives created: 1
+19:33:27 | INFO: Extracting primitive: Sphere.008
+19:33:27 | INFO: Primitives created: 1
+19:33:27 | INFO: Extracting primitive: Sphere.010
+19:33:27 | INFO: Primitives created: 1
+19:33:27 | INFO: Extracting primitive: Sphere.013
+19:33:27 | INFO: Primitives created: 1
+19:33:27 | INFO: Extracting primitive: Cube.005
+19:33:27 | INFO: Primitives created: 1
+19:33:27 | INFO: Extracting primitive: Sphere.002
+19:33:27 | INFO: Primitives created: 1
+19:33:27 | INFO: Extracting primitive: Sphere.003
+19:33:27 | INFO: Primitives created: 1
+19:33:27 | INFO: Extracting primitive: Cylinder.001
+19:33:27 | INFO: Primitives created: 1
+19:33:27 | INFO: Extracting primitive: Cylinder.003
+19:33:27 | INFO: Primitives created: 1
+19:33:27 | INFO: Extracting primitive: Sphere.001
+19:33:27 | INFO: Primitives created: 1
+19:33:27 | INFO: Extracting primitive: Cylinder
+19:33:27 | INFO: Primitives created: 1
+19:33:27 | INFO: Extracting primitive: Cylinder.002
+19:33:27 | INFO: Primitives created: 1
+19:33:27 | INFO: Extracting primitive: Sphere
+19:33:27 | INFO: Primitives created: 1
+19:33:27 | INFO: Extracting primitive: Cylinder.011
+19:33:27 | INFO: Primitives created: 1
+19:33:27 | INFO: Extracting primitive: Cylinder.010
+19:33:27 | INFO: Primitives created: 1
+19:33:27 | INFO: Extracting primitive: Cylinder.017
+19:33:27 | INFO: Primitives created: 1
+19:33:28 | INFO: Finished glTF 2.0 export in 0.9745609760284424 s
+00:22.297  render           | Saved: 'C:\Work\MySelf\Guildborne\assets\uat01\elian-desk-v1\preview.png'
+
+
+FBX export starting... 'C:\\Work\\MySelf\\Guildborne\\assets\\uat01\\elian-desk-v1\\Elian_Desk.fbx'
+(bpy.data.armatures['ElianSkeleton'], 'POSE')
+(bpy.data.armatures['ElianSkeleton'], 'POSE')
+(bpy.data.armatures['ElianSkeleton'], 'POSE')
+(bpy.data.armatures['ElianSkeleton'], 'POSE')
+(bpy.data.armatures['ElianSkeleton'], 'POSE')
+(bpy.data.armatures['ElianSkeleton'], 'POSE')
+(bpy.data.armatures['ElianSkeleton'], 'POSE')
+(bpy.data.armatures['ElianSkeleton'], 'POSE')
+(bpy.data.armatures['ElianSkeleton'], 'POSE')
+(bpy.data.armatures['ElianSkeleton'], 'POSE')
+(bpy.data.armatures['ElianSkeleton'], 'POSE')
+(bpy.data.armatures['ElianSkeleton'], 'POSE')
+(bpy.data.armatures['ElianSkeleton'], 'POSE')
+(bpy.data.armatures['ElianSkeleton'], 'POSE')
+(bpy.data.armatures['ElianSkeleton'], 'POSE')
+(bpy.data.armatures['ElianSkeleton'], 'POSE')
+(bpy.data.armatures['ElianSkeleton'], 'POSE')
+(bpy.data.armatures['ElianSkeleton'], 'POSE')
+(bpy.data.armatures['ElianSkeleton'], 'POSE')
+(bpy.data.armatures['ElianSkeleton'], 'POSE')
+(bpy.data.armatures['ElianSkeleton'], 'POSE')
+(bpy.data.armatures['ElianSkeleton'], 'POSE')
+(bpy.data.armatures['ElianSkeleton'], 'POSE')
+(bpy.data.armatures['ElianSkeleton'], 'POSE')
+(bpy.data.armatures['ElianSkeleton'], 'POSE')
+(bpy.data.armatures['ElianSkeleton'], 'POSE')
+(bpy.data.armatures['ElianSkeleton'], 'POSE')
+(bpy.data.armatures['ElianSkeleton'], 'POSE')
+(bpy.data.armatures['ElianSkeleton'], 'POSE')
+(bpy.data.armatures['ElianSkeleton'], 'POSE')
+(bpy.data.armatures['ElianSkeleton'], 'POSE')
+(bpy.data.armatures['ElianSkeleton'], 'POSE')
+(bpy.data.armatures['ElianSkeleton'], 'POSE')
+(bpy.data.armatures['ElianSkeleton'], 'POSE')
+(bpy.data.armatures['ElianSkeleton'], 'POSE')
+(bpy.data.armatures['ElianSkeleton'], 'POSE')
+(bpy.data.armatures['ElianSkeleton'], 'POSE')
+(bpy.data.armatures['ElianSkeleton'], 'POSE')
+(bpy.data.armatures['ElianSkeleton'], 'POSE')
+(bpy.data.armatures['ElianSkeleton'], 'POSE')
+(bpy.data.armatures['ElianSkeleton'], 'POSE')
+(bpy.data.armatures['ElianSkeleton'], 'POSE')
+(bpy.data.armatures['ElianSkeleton'], 'POSE')
+(bpy.data.armatures['ElianSkeleton'], 'POSE')
+export finished in 0.4966 sec.
+DESK_CAST {"status": "LOCAL_CONTACT_ART_PLATFORM_IMPORT_PENDING", "id": "marshal_elian", "city": "Crownford", "bones": 16, "seconds": 6, "fps": 30, "toolBindTip": [0.2199999988079071, -1.100000023841858, 3.7699999809265137], "paperSurfaceZ": 3.22, "maxAuthoredTipError": 1.1921860241275794e-06, "activity": "charter stamp", "robloxAssetId": null, "notes": "Original costume/reference interpretation; exported contact and human visual review required. Not yet replacing gameplay NPC."}
+Info: Saved as "Guildborne_Nyra_Desk.blend"
+19:33:45 | INFO: Starting glTF 2.0 export
+19:33:45 | INFO: Extracting primitive: Sphere.025
+19:33:45 | INFO: Primitives created: 1
+19:33:45 | INFO: Extracting primitive: Sphere.026
+19:33:45 | INFO: Primitives created: 1
+19:33:45 | INFO: Extracting primitive: Sphere.027
+19:33:45 | INFO: Primitives created: 1
+19:33:45 | INFO: Extracting primitive: Sphere.028
+19:33:45 | INFO: Primitives created: 1
+19:33:45 | INFO: Extracting primitive: Sphere.029
+19:33:45 | INFO: Primitives created: 1
+19:33:45 | INFO: Extracting primitive: Cube.012
+19:33:45 | INFO: Primitives created: 1
+19:33:45 | INFO: Extracting primitive: Cube.013
+19:33:45 | INFO: Primitives created: 1
+19:33:45 | INFO: Extracting primitive: Cube.014
+19:33:45 | INFO: Primitives created: 1
+19:33:45 | INFO: Extracting primitive: Cube.015
+19:33:45 | INFO: Primitives created: 1
+19:33:45 | INFO: Extracting primitive: Cube.016
+19:33:45 | INFO: Primitives created: 1
+19:33:45 | INFO: Extracting primitive: Cube.017
+19:33:45 | INFO: Primitives created: 1
+19:33:45 | INFO: Extracting primitive: Cube.018
+19:33:45 | INFO: Primitives created: 1
+19:33:45 | INFO: Extracting primitive: Sphere.022
+19:33:45 | INFO: Primitives created: 1
+19:33:45 | INFO: Extracting primitive: Sphere.023
+19:33:45 | INFO: Primitives created: 1
+19:33:45 | INFO: Extracting primitive: Cube.003
+19:33:45 | INFO: Primitives created: 1
+19:33:45 | INFO: Extracting primitive: Cube.007
+19:33:45 | INFO: Primitives created: 1
+19:33:45 | INFO: Extracting primitive: Cube.008
+19:33:45 | INFO: Primitives created: 1
+19:33:45 | INFO: Extracting primitive: Cube.004
+19:33:45 | INFO: Primitives created: 1
+19:33:45 | INFO: Extracting primitive: Torus
+19:33:45 | INFO: Primitives created: 1
+19:33:45 | INFO: Extracting primitive: Cube.002
+19:33:45 | INFO: Primitives created: 1
+19:33:45 | INFO: Extracting primitive: Cube
+19:33:45 | INFO: Primitives created: 1
+19:33:45 | INFO: Extracting primitive: Cube.001
+19:33:45 | INFO: Primitives created: 1
+19:33:45 | INFO: Extracting primitive: Sphere.011
+19:33:45 | INFO: Primitives created: 1
+19:33:45 | INFO: Extracting primitive: Sphere.014
+19:33:45 | INFO: Primitives created: 1
+19:33:45 | INFO: Extracting primitive: Sphere.009
+19:33:45 | INFO: Primitives created: 1
+19:33:45 | INFO: Extracting primitive: Sphere.012
+19:33:45 | INFO: Primitives created: 1
+19:33:45 | INFO: Extracting primitive: Sphere.007
+19:33:45 | INFO: Primitives created: 1
+19:33:45 | INFO: Extracting primitive: Sphere.021
+19:33:45 | INFO: Primitives created: 1
+19:33:45 | INFO: Extracting primitive: Sphere.015
+19:33:45 | INFO: Primitives created: 1
+19:33:45 | INFO: Extracting primitive: Sphere.016
+19:33:45 | INFO: Primitives created: 1
+19:33:45 | INFO: Extracting primitive: Sphere.017
+19:33:45 | INFO: Primitives created: 1
+19:33:45 | INFO: Extracting primitive: Sphere.018
+19:33:45 | INFO: Primitives created: 1
+19:33:45 | INFO: Extracting primitive: Sphere.019
+19:33:45 | INFO: Primitives created: 1
+19:33:45 | INFO: Extracting primitive: Sphere.020
+19:33:45 | INFO: Primitives created: 1
+19:33:45 | INFO: Extracting primitive: Cube.006
+19:33:45 | INFO: Primitives created: 1
+19:33:45 | INFO: Extracting primitive: Sphere.005
+19:33:45 | INFO: Primitives created: 1
+19:33:45 | INFO: Extracting primitive: Sphere.006
+19:33:45 | INFO: Primitives created: 1
+19:33:45 | INFO: Extracting primitive: Cylinder.005
+19:33:45 | INFO: Primitives created: 1
+19:33:45 | INFO: Extracting primitive: Cylinder.007
+19:33:45 | INFO: Primitives created: 1
+19:33:45 | INFO: Extracting primitive: Sphere.004
+19:33:45 | INFO: Primitives created: 1
+19:33:45 | INFO: Extracting primitive: Cylinder.004
+19:33:45 | INFO: Primitives created: 1
+19:33:45 | INFO: Extracting primitive: Cylinder.006
+19:33:45 | INFO: Primitives created: 1
+19:33:45 | INFO: Extracting primitive: Cylinder.010
+19:33:45 | INFO: Primitives created: 1
+19:33:45 | INFO: Extracting primitive: Cylinder.011
+19:33:45 | INFO: Primitives created: 1
+19:33:45 | INFO: Extracting primitive: Cylinder.008
+19:33:45 | INFO: Primitives created: 1
+19:33:45 | INFO: Extracting primitive: Cylinder.009
+19:33:45 | INFO: Primitives created: 1
+19:33:45 | INFO: Extracting primitive: Sphere.008
+19:33:45 | INFO: Primitives created: 1
+19:33:45 | INFO: Extracting primitive: Sphere.010
+19:33:45 | INFO: Primitives created: 1
+19:33:45 | INFO: Extracting primitive: Sphere.013
+19:33:45 | INFO: Primitives created: 1
+19:33:45 | INFO: Extracting primitive: Cube.005
+19:33:45 | INFO: Primitives created: 1
+19:33:45 | INFO: Extracting primitive: Sphere.002
+19:33:45 | INFO: Primitives created: 1
+19:33:45 | INFO: Extracting primitive: Sphere.003
+19:33:45 | INFO: Primitives created: 1
+19:33:45 | INFO: Extracting primitive: Cylinder.001
+19:33:45 | INFO: Primitives created: 1
+19:33:45 | INFO: Extracting primitive: Cylinder.003
+19:33:45 | INFO: Primitives created: 1
+19:33:45 | INFO: Extracting primitive: Sphere.001
+19:33:45 | INFO: Primitives created: 1
+19:33:45 | INFO: Extracting primitive: Cylinder
+19:33:45 | INFO: Primitives created: 1
+19:33:45 | INFO: Extracting primitive: Cylinder.002
+19:33:45 | INFO: Primitives created: 1
+19:33:45 | INFO: Extracting primitive: Cylinder.012
+19:33:45 | INFO: Primitives created: 1
+19:33:45 | INFO: Extracting primitive: Cylinder.013
+19:33:45 | INFO: Primitives created: 1
+19:33:45 | INFO: Extracting primitive: Cube.009
+19:33:45 | INFO: Primitives created: 1
+19:33:45 | INFO: Extracting primitive: Cube.010
+19:33:45 | INFO: Primitives created: 1
+19:33:45 | INFO: Extracting primitive: Cube.011
+19:33:45 | INFO: Primitives created: 1
+19:33:45 | INFO: Extracting primitive: Sphere
+19:33:45 | INFO: Primitives created: 1
+19:33:45 | INFO: Extracting primitive: Sphere.024
+19:33:45 | INFO: Primitives created: 1
+19:33:45 | INFO: Extracting primitive: Cylinder.014
+19:33:45 | INFO: Primitives created: 1
+19:33:45 | INFO: Extracting primitive: Cylinder.020
+19:33:45 | INFO: Primitives created: 1
+19:33:45 | INFO: Extracting primitive: Cylinder.015
+19:33:45 | INFO: Primitives created: 1
+19:33:45 | INFO: Extracting primitive: Cylinder.016
+19:33:45 | INFO: Primitives created: 1
+19:33:45 | INFO: Extracting primitive: Cylinder.017
+19:33:45 | INFO: Primitives created: 1
+19:33:45 | INFO: Extracting primitive: Cylinder.018
+19:33:45 | INFO: Primitives created: 1
+19:33:45 | INFO: Extracting primitive: Cylinder.019
+19:33:45 | INFO: Primitives created: 1
+19:33:45 | INFO: Extracting primitive: Sphere.030
+19:33:45 | INFO: Primitives created: 1
+19:33:46 | INFO: Finished glTF 2.0 export in 0.9303133487701416 s
+00:38.219  render           | Saved: 'C:\Work\MySelf\Guildborne\assets\uat01\nyra-desk-v1\preview.png'
+
+
+FBX export starting... 'C:\\Work\\MySelf\\Guildborne\\assets\\uat01\\nyra-desk-v1\\Nyra_Desk.fbx'
+(bpy.data.armatures['NyraSkeleton'], 'POSE')
+(bpy.data.armatures['NyraSkeleton'], 'POSE')
+(bpy.data.armatures['NyraSkeleton'], 'POSE')
+(bpy.data.armatures['NyraSkeleton'], 'POSE')
+(bpy.data.armatures['NyraSkeleton'], 'POSE')
+(bpy.data.armatures['NyraSkeleton'], 'POSE')
+(bpy.data.armatures['NyraSkeleton'], 'POSE')
+(bpy.data.armatures['NyraSkeleton'], 'POSE')
+(bpy.data.armatures['NyraSkeleton'], 'POSE')
+(bpy.data.armatures['NyraSkeleton'], 'POSE')
+(bpy.data.armatures['NyraSkeleton'], 'POSE')
+(bpy.data.armatures['NyraSkeleton'], 'POSE')
+(bpy.data.armatures['NyraSkeleton'], 'POSE')
+(bpy.data.armatures['NyraSkeleton'], 'POSE')
+(bpy.data.armatures['NyraSkeleton'], 'POSE')
+(bpy.data.armatures['NyraSkeleton'], 'POSE')
+(bpy.data.armatures['NyraSkeleton'], 'POSE')
+(bpy.data.armatures['NyraSkeleton'], 'POSE')
+(bpy.data.armatures['NyraSkeleton'], 'POSE')
+(bpy.data.armatures['NyraSkeleton'], 'POSE')
+(bpy.data.armatures['NyraSkeleton'], 'POSE')
+(bpy.data.armatures['NyraSkeleton'], 'POSE')
+(bpy.data.armatures['NyraSkeleton'], 'POSE')
+(bpy.data.armatures['NyraSkeleton'], 'POSE')
+(bpy.data.armatures['NyraSkeleton'], 'POSE')
+(bpy.data.armatures['NyraSkeleton'], 'POSE')
+(bpy.data.armatures['NyraSkeleton'], 'POSE')
+(bpy.data.armatures['NyraSkeleton'], 'POSE')
+(bpy.data.armatures['NyraSkeleton'], 'POSE')
+(bpy.data.armatures['NyraSkeleton'], 'POSE')
+(bpy.data.armatures['NyraSkeleton'], 'POSE')
+(bpy.data.armatures['NyraSkeleton'], 'POSE')
+(bpy.data.armatures['NyraSkeleton'], 'POSE')
+(bpy.data.armatures['NyraSkeleton'], 'POSE')
+(bpy.data.armatures['NyraSkeleton'], 'POSE')
+(bpy.data.armatures['NyraSkeleton'], 'POSE')
+(bpy.data.armatures['NyraSkeleton'], 'POSE')
+(bpy.data.armatures['NyraSkeleton'], 'POSE')
+(bpy.data.armatures['NyraSkeleton'], 'POSE')
+(bpy.data.armatures['NyraSkeleton'], 'POSE')
+(bpy.data.armatures['NyraSkeleton'], 'POSE')
+(bpy.data.armatures['NyraSkeleton'], 'POSE')
+(bpy.data.armatures['NyraSkeleton'], 'POSE')
+(bpy.data.armatures['NyraSkeleton'], 'POSE')
+(bpy.data.armatures['NyraSkeleton'], 'POSE')
+(bpy.data.armatures['NyraSkeleton'], 'POSE')
+(bpy.data.armatures['NyraSkeleton'], 'POSE')
+(bpy.data.armatures['NyraSkeleton'], 'POSE')
+(bpy.data.armatures['NyraSkeleton'], 'POSE')
+(bpy.data.armatures['NyraSkeleton'], 'POSE')
+(bpy.data.armatures['NyraSkeleton'], 'POSE')
+(bpy.data.armatures['NyraSkeleton'], 'POSE')
+(bpy.data.armatures['NyraSkeleton'], 'POSE')
+export finished in 0.8606 sec.
+DESK_CAST {"status": "LOCAL_CONTACT_ART_PLATFORM_IMPORT_PENDING", "id": "cartographer_nyra", "city": "Astralis", "bones": 16, "seconds": 6, "fps": 30, "toolBindTip": [0.27000001072883606, -1.2200000286102295, 3.2200000286102295], "paperSurfaceZ": 3.22, "maxAuthoredTipError": 9.834272492354388e-07, "activity": "trace five-point star chart", "robloxAssetId": null, "notes": "Original costume/reference interpretation; exported contact and human visual review required. Not yet replacing gameplay NPC."}
+Info: Saved as "Guildborne_Sela_Desk.blend"
+19:34:01 | INFO: Starting glTF 2.0 export
+19:34:01 | INFO: Extracting primitive: Cube.009
+19:34:01 | INFO: Primitives created: 1
+19:34:01 | INFO: Extracting primitive: Cube.010
+19:34:01 | INFO: Primitives created: 1
+19:34:01 | INFO: Extracting primitive: Cube.011
+19:34:01 | INFO: Primitives created: 1
+19:34:01 | INFO: Extracting primitive: Cube.012
+19:34:01 | INFO: Primitives created: 1
+19:34:01 | INFO: Extracting primitive: Cube.013
+19:34:01 | INFO: Primitives created: 1
+19:34:01 | INFO: Extracting primitive: Cube.014
+19:34:01 | INFO: Primitives created: 1
+19:34:01 | INFO: Extracting primitive: Cube.015
+19:34:01 | INFO: Primitives created: 1
+19:34:01 | INFO: Extracting primitive: Cylinder.013
+19:34:01 | INFO: Primitives created: 1
+19:34:01 | INFO: Extracting primitive: Cylinder.014
+19:34:01 | INFO: Primitives created: 1
+19:34:01 | INFO: Extracting primitive: Cylinder.015
+19:34:01 | INFO: Primitives created: 1
+19:34:01 | INFO: Extracting primitive: Cube.016
+19:34:01 | INFO: Primitives created: 1
+19:34:01 | INFO: Extracting primitive: Cube.003
+19:34:01 | INFO: Primitives created: 1
+19:34:01 | INFO: Extracting primitive: Cube.007
+19:34:01 | INFO: Primitives created: 1
+19:34:01 | INFO: Extracting primitive: Cube.008
+19:34:01 | INFO: Primitives created: 1
+19:34:01 | INFO: Extracting primitive: Cube.004
+19:34:01 | INFO: Primitives created: 1
+19:34:01 | INFO: Extracting primitive: Cube.002
+19:34:01 | INFO: Primitives created: 1
+19:34:01 | INFO: Extracting primitive: Sphere.030
+19:34:01 | INFO: Primitives created: 1
+19:34:01 | INFO: Extracting primitive: Sphere.031
+19:34:01 | INFO: Primitives created: 1
+19:34:01 | INFO: Extracting primitive: Sphere.032
+19:34:01 | INFO: Primitives created: 1
+19:34:01 | INFO: Extracting primitive: Sphere.033
+19:34:01 | INFO: Primitives created: 1
+19:34:01 | INFO: Extracting primitive: Sphere.034
+19:34:01 | INFO: Primitives created: 1
+19:34:01 | INFO: Extracting primitive: Sphere.035
+19:34:01 | INFO: Primitives created: 1
+19:34:01 | INFO: Extracting primitive: Cube
+19:34:01 | INFO: Primitives created: 1
+19:34:01 | INFO: Extracting primitive: Cube.001
+19:34:01 | INFO: Primitives created: 1
+19:34:01 | INFO: Extracting primitive: Sphere.011
+19:34:01 | INFO: Primitives created: 1
+19:34:01 | INFO: Extracting primitive: Sphere.014
+19:34:01 | INFO: Primitives created: 1
+19:34:01 | INFO: Extracting primitive: Sphere.009
+19:34:01 | INFO: Primitives created: 1
+19:34:01 | INFO: Extracting primitive: Sphere.012
+19:34:01 | INFO: Primitives created: 1
+19:34:01 | INFO: Extracting primitive: Sphere.007
+19:34:01 | INFO: Primitives created: 1
+19:34:01 | INFO: Extracting primitive: Sphere.015
+19:34:01 | INFO: Primitives created: 1
+19:34:01 | INFO: Extracting primitive: Sphere.016
+19:34:01 | INFO: Primitives created: 1
+19:34:01 | INFO: Extracting primitive: Sphere.017
+19:34:01 | INFO: Primitives created: 1
+19:34:01 | INFO: Extracting primitive: Sphere.018
+19:34:01 | INFO: Primitives created: 1
+19:34:01 | INFO: Extracting primitive: Sphere.019
+19:34:01 | INFO: Primitives created: 1
+19:34:01 | INFO: Extracting primitive: Sphere.020
+19:34:01 | INFO: Primitives created: 1
+19:34:01 | INFO: Extracting primitive: Sphere.021
+19:34:01 | INFO: Primitives created: 1
+19:34:01 | INFO: Extracting primitive: Sphere.022
+19:34:01 | INFO: Primitives created: 1
+19:34:01 | INFO: Extracting primitive: Sphere.023
+19:34:01 | INFO: Primitives created: 1
+19:34:01 | INFO: Extracting primitive: Sphere.024
+19:34:01 | INFO: Primitives created: 1
+19:34:01 | INFO: Extracting primitive: Sphere.025
+19:34:01 | INFO: Primitives created: 1
+19:34:01 | INFO: Extracting primitive: Sphere.026
+19:34:01 | INFO: Primitives created: 1
+19:34:01 | INFO: Extracting primitive: Sphere.027
+19:34:01 | INFO: Primitives created: 1
+19:34:01 | INFO: Extracting primitive: Sphere.028
+19:34:01 | INFO: Primitives created: 1
+19:34:01 | INFO: Extracting primitive: HarborBrim
+19:34:01 | INFO: Primitives created: 1
+19:34:01 | INFO: Extracting primitive: Sphere.029
+19:34:01 | INFO: Primitives created: 1
+19:34:01 | INFO: Extracting primitive: Cylinder.011
+19:34:01 | INFO: Primitives created: 1
+19:34:01 | INFO: Extracting primitive: Cylinder.010
+19:34:01 | INFO: Primitives created: 1
+19:34:01 | INFO: Extracting primitive: Cube.006
+19:34:01 | INFO: Primitives created: 1
+19:34:01 | INFO: Extracting primitive: Sphere.005
+19:34:01 | INFO: Primitives created: 1
+19:34:01 | INFO: Extracting primitive: Sphere.006
+19:34:01 | INFO: Primitives created: 1
+19:34:01 | INFO: Extracting primitive: Cylinder.005
+19:34:01 | INFO: Primitives created: 1
+19:34:01 | INFO: Extracting primitive: Cylinder.007
+19:34:01 | INFO: Primitives created: 1
+19:34:01 | INFO: Extracting primitive: Sphere.004
+19:34:01 | INFO: Primitives created: 1
+19:34:01 | INFO: Extracting primitive: Cylinder.004
+19:34:01 | INFO: Primitives created: 1
+19:34:01 | INFO: Extracting primitive: Cylinder.006
+19:34:01 | INFO: Primitives created: 1
+19:34:01 | INFO: Extracting primitive: Cylinder.008
+19:34:01 | INFO: Primitives created: 1
+19:34:01 | INFO: Extracting primitive: Cylinder.009
+19:34:01 | INFO: Primitives created: 1
+19:34:01 | INFO: Extracting primitive: Sphere.008
+19:34:01 | INFO: Primitives created: 1
+19:34:01 | INFO: Extracting primitive: Sphere.010
+19:34:01 | INFO: Primitives created: 1
+19:34:01 | INFO: Extracting primitive: Sphere.013
+19:34:01 | INFO: Primitives created: 1
+19:34:01 | INFO: Extracting primitive: Cube.005
+19:34:01 | INFO: Primitives created: 1
+19:34:01 | INFO: Extracting primitive: Sphere.002
+19:34:01 | INFO: Primitives created: 1
+19:34:01 | INFO: Extracting primitive: Sphere.003
+19:34:01 | INFO: Primitives created: 1
+19:34:01 | INFO: Extracting primitive: Cylinder.001
+19:34:01 | INFO: Primitives created: 1
+19:34:01 | INFO: Extracting primitive: Cylinder.003
+19:34:01 | INFO: Primitives created: 1
+19:34:01 | INFO: Extracting primitive: Sphere.001
+19:34:01 | INFO: Primitives created: 1
+19:34:01 | INFO: Extracting primitive: Cylinder
+19:34:01 | INFO: Primitives created: 1
+19:34:01 | INFO: Extracting primitive: Cylinder.002
+19:34:01 | INFO: Primitives created: 1
+19:34:01 | INFO: Extracting primitive: Sphere
+19:34:01 | INFO: Primitives created: 1
+19:34:01 | INFO: Extracting primitive: Sphere.036
+19:34:01 | INFO: Primitives created: 1
+19:34:01 | INFO: Extracting primitive: Cylinder.012
+19:34:01 | INFO: Primitives created: 1
+19:34:02 | INFO: Finished glTF 2.0 export in 1.3714685440063477 s
+00:57.797  render           | Saved: 'C:\Work\MySelf\Guildborne\assets\uat01\sela-desk-v1\preview.png'
+
+
+FBX export starting... 'C:\\Work\\MySelf\\Guildborne\\assets\\uat01\\sela-desk-v1\\Sela_Desk.fbx'
+(bpy.data.armatures['SelaSkeleton'], 'POSE')
+(bpy.data.armatures['SelaSkeleton'], 'POSE')
+(bpy.data.armatures['SelaSkeleton'], 'POSE')
+(bpy.data.armatures['SelaSkeleton'], 'POSE')
+(bpy.data.armatures['SelaSkeleton'], 'POSE')
+(bpy.data.armatures['SelaSkeleton'], 'POSE')
+(bpy.data.armatures['SelaSkeleton'], 'POSE')
+(bpy.data.armatures['SelaSkeleton'], 'POSE')
+(bpy.data.armatures['SelaSkeleton'], 'POSE')
+(bpy.data.armatures['SelaSkeleton'], 'POSE')
+(bpy.data.armatures['SelaSkeleton'], 'POSE')
+(bpy.data.armatures['SelaSkeleton'], 'POSE')
+(bpy.data.armatures['SelaSkeleton'], 'POSE')
+(bpy.data.armatures['SelaSkeleton'], 'POSE')
+(bpy.data.armatures['SelaSkeleton'], 'POSE')
+(bpy.data.armatures['SelaSkeleton'], 'POSE')
+(bpy.data.armatures['SelaSkeleton'], 'POSE')
+(bpy.data.armatures['SelaSkeleton'], 'POSE')
+(bpy.data.armatures['SelaSkeleton'], 'POSE')
+(bpy.data.armatures['SelaSkeleton'], 'POSE')
+(bpy.data.armatures['SelaSkeleton'], 'POSE')
+(bpy.data.armatures['SelaSkeleton'], 'POSE')
+(bpy.data.armatures['SelaSkeleton'], 'POSE')
+(bpy.data.armatures['SelaSkeleton'], 'POSE')
+(bpy.data.armatures['SelaSkeleton'], 'POSE')
+(bpy.data.armatures['SelaSkeleton'], 'POSE')
+(bpy.data.armatures['SelaSkeleton'], 'POSE')
+(bpy.data.armatures['SelaSkeleton'], 'POSE')
+(bpy.data.armatures['SelaSkeleton'], 'POSE')
+(bpy.data.armatures['SelaSkeleton'], 'POSE')
+(bpy.data.armatures['SelaSkeleton'], 'POSE')
+(bpy.data.armatures['SelaSkeleton'], 'POSE')
+(bpy.data.armatures['SelaSkeleton'], 'POSE')
+(bpy.data.armatures['SelaSkeleton'], 'POSE')
+(bpy.data.armatures['SelaSkeleton'], 'POSE')
+(bpy.data.armatures['SelaSkeleton'], 'POSE')
+(bpy.data.armatures['SelaSkeleton'], 'POSE')
+(bpy.data.armatures['SelaSkeleton'], 'POSE')
+(bpy.data.armatures['SelaSkeleton'], 'POSE')
+(bpy.data.armatures['SelaSkeleton'], 'POSE')
+(bpy.data.armatures['SelaSkeleton'], 'POSE')
+(bpy.data.armatures['SelaSkeleton'], 'POSE')
+(bpy.data.armatures['SelaSkeleton'], 'POSE')
+(bpy.data.armatures['SelaSkeleton'], 'POSE')
+(bpy.data.armatures['SelaSkeleton'], 'POSE')
+(bpy.data.armatures['SelaSkeleton'], 'POSE')
+(bpy.data.armatures['SelaSkeleton'], 'POSE')
+(bpy.data.armatures['SelaSkeleton'], 'POSE')
+(bpy.data.armatures['SelaSkeleton'], 'POSE')
+(bpy.data.armatures['SelaSkeleton'], 'POSE')
+(bpy.data.armatures['SelaSkeleton'], 'POSE')
+(bpy.data.armatures['SelaSkeleton'], 'POSE')
+(bpy.data.armatures['SelaSkeleton'], 'POSE')
+(bpy.data.armatures['SelaSkeleton'], 'POSE')
+(bpy.data.armatures['SelaSkeleton'], 'POSE')
+(bpy.data.armatures['SelaSkeleton'], 'POSE')
+(bpy.data.armatures['SelaSkeleton'], 'POSE')
+(bpy.data.armatures['SelaSkeleton'], 'POSE')
+(bpy.data.armatures['SelaSkeleton'], 'POSE')
+(bpy.data.armatures['SelaSkeleton'], 'POSE')
+export finished in 1.3016 sec.
+DESK_CAST {"status": "LOCAL_CONTACT_ART_PLATFORM_IMPORT_PENDING", "id": "harbormaster_sela", "city": "Crosshaven", "bones": 16, "seconds": 6, "fps": 30, "toolBindTip": [-0.25, -1.0399999618530273, 3.2200000286102295], "paperSurfaceZ": 3.22, "maxAuthoredTipError": 5.840038639982171e-07, "activity": "write three ledger lines with lifted return", "robloxAssetId": null, "notes": "Original costume/reference interpretation; exported contact and human visual review required. Not yet replacing gameplay NPC."}
+Blender 5.2.1 LTS (hash 9e2066aef7ef built 2026-08-25 02:38:20)
+
+Blender quit

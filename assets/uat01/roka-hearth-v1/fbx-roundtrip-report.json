@@ -1,0 +1,77 @@
+{
+  "status": "PASS",
+  "format": "FBX",
+  "bones": 16,
+  "meshObjects": 79,
+  "triangles": 9484,
+  "contactSamples": [
+    {
+      "frame": 0,
+      "radius": 0.2500010058409145,
+      "ladleAboveStew": 0.03000044822692871
+    },
+    {
+      "frame": 15,
+      "radius": 0.2499980203545313,
+      "ladleAboveStew": 0.029999732971191406
+    },
+    {
+      "frame": 30,
+      "radius": 0.24999684743783326,
+      "ladleAboveStew": 0.029999494552612305
+    },
+    {
+      "frame": 45,
+      "radius": 0.24999898673880247,
+      "ladleAboveStew": 0.0299990177154541
+    },
+    {
+      "frame": 60,
+      "radius": 0.25000104827702035,
+      "ladleAboveStew": 0.0299985408782959
+    },
+    {
+      "frame": 75,
+      "radius": 0.2500025202708144,
+      "ladleAboveStew": 0.029999971389770508
+    },
+    {
+      "frame": 90,
+      "radius": 0.2500010058409145,
+      "ladleAboveStew": 0.03000044822692871
+    },
+    {
+      "frame": 105,
+      "radius": 0.2499980203545313,
+      "ladleAboveStew": 0.029999732971191406
+    },
+    {
+      "frame": 120,
+      "radius": 0.24999684743783326,
+      "ladleAboveStew": 0.029999494552612305
+    },
+    {
+      "frame": 135,
+      "radius": 0.24999898673880247,
+      "ladleAboveStew": 0.0299990177154541
+    },
+    {
+      "frame": 150,
+      "radius": 0.25000104827702035,
+      "ladleAboveStew": 0.0299985408782959
+    },
+    {
+      "frame": 165,
+      "radius": 0.2500025202708144,
+      "ladleAboveStew": 0.029999971389770508
+    },
+    {
+      "frame": 180,
+      "radius": 0.2500010058409145,
+      "ladleAboveStew": 0.03000044822692871
+    }
+  ],
+  "fixedSupportAndFeet": true,
+  "loopSeam": true,
+  "platformImported": false
+}

@@ -1,0 +1,159 @@
+{
+  "date": "2026-10-04",
+  "geometry": {
+    "actors": 4,
+    "visibleParts": 124,
+    "triangles": 1488,
+    "bonesPerRig": 16,
+    "clips": 16,
+    "exportsRoundtrip": 24
+  },
+  "courier": {
+    "actualE": true,
+    "objective": "walk_route",
+    "animatedJoints": 4
+  },
+  "friendlyStreaming": {
+    "lateJoint": true,
+    "removeRestores": true,
+    "reAdd": true,
+    "streamOutRestores": true
+  },
+  "keeperHint": {
+    "content": [
+      {
+        "type": "text",
+        "text": "{\"enemy\":240,\"hint\":\"ขยับเข้าใกล้เป้าหมายอีกนิด\"}"
+      }
+    ],
+    "isError": false
+  },
+  "keeperCombat": [
+    {
+      "content": [
+        {
+          "type": "text",
+          "text": "{\"moving\":0,\"status\":\"Active\",\"hp\":48,\"enemy\":198}"
+        }
+      ],
+      "isError": false
+    },
+    {
+      "content": [
+        {
+          "type": "text",
+          "text": "{\"moving\":0,\"status\":\"Active\",\"hp\":48,\"enemy\":184}"
+        }
+      ],
+      "isError": false
+    },
+    {
+      "content": [
+        {
+          "type": "text",
+          "text": "{\"moving\":0,\"status\":\"Active\",\"hp\":48,\"enemy\":170}"
+        }
+      ],
+      "isError": false
+    },
+    {
+      "content": [
+        {
+          "type": "text",
+          "text": "{\"moving\":0,\"status\":\"Active\",\"hp\":48,\"enemy\":156}"
+        }
+      ],
+      "isError": false
+    },
+    {
+      "content": [
+        {
+          "type": "text",
+          "text": "{\"moving\":0,\"status\":\"Active\",\"hp\":48,\"enemy\":114}"
+        }
+      ],
+      "isError": false
+    },
+    {
+      "content": [
+        {
+          "type": "text",
+          "text": "{\"moving\":0,\"status\":\"Active\",\"hp\":48,\"enemy\":100}"
+        }
+      ],
+      "isError": false
+    },
+    {
+      "content": [
+        {
+          "type": "text",
+          "text": "{\"moving\":0,\"status\":\"Active\",\"hp\":48,\"enemy\":86}"
+        }
+      ],
+      "isError": false
+    },
+    {
+      "content": [
+        {
+          "type": "text",
+          "text": "{\"moving\":0,\"status\":\"Active\",\"hp\":48,\"enemy\":72}"
+        }
+      ],
+      "isError": false
+    },
+    {
+      "content": [
+        {
+          "type": "text",
+          "text": "{\"moving\":0,\"status\":\"Active\",\"hp\":48,\"enemy\":30}"
+        }
+      ],
+      "isError": false
+    },
+    {
+      "content": [
+        {
+          "type": "text",
+          "text": "{\"moving\":0,\"status\":\"Active\",\"hp\":48,\"enemy\":16}"
+        }
+      ],
+      "isError": false
+    },
+    {
+      "content": [
+        {
+          "type": "text",
+          "text": "{\"moving\":0,\"status\":\"Active\",\"hp\":48,\"enemy\":2}"
+        }
+      ],
+      "isError": false
+    },
+    {
+      "content": [
+        {
+          "type": "text",
+          "text": "{\"moving\":0,\"status\":\"Won\",\"enemy\":0,\"hp\":48,\"receipt\":true}"
+        }
+      ],
+      "isError": false
+    }
+  ],
+  "keeperMotion": {
+    "content": [
+      {
+        "type": "text",
+        "text": "{\"maxMoving\":9,\"health\":226,\"telegraph\":true}"
+      }
+    ],
+    "isError": false
+  },
+  "keeperExit": {
+    "arena": false,
+    "hud": false
+  },
+  "limitations": [
+    "Keeper eligibility synthetic; no saved-profile rewards",
+    "Full six-chapter actual journey evidence predates these presentation changes",
+    "Cloud import, physical devices and human UAT pending"
+  ]
+}

@@ -1,0 +1,62 @@
+[
+  {
+    "id": "marshal_elian",
+    "meshes": 35,
+    "animatedMeshes": 19,
+    "animations": 1,
+    "seconds": 8,
+    "endpointMaxError": 0.0,
+    "channels": 5,
+    "reimportVerified": true
+  },
+  {
+    "id": "arborist_vaela",
+    "meshes": 36,
+    "animatedMeshes": 28,
+    "animations": 1,
+    "seconds": 8,
+    "endpointMaxError": 0.0,
+    "channels": 6,
+    "reimportVerified": true
+  },
+  {
+    "id": "smith_borin",
+    "meshes": 32,
+    "animatedMeshes": 24,
+    "animations": 1,
+    "seconds": 8,
+    "endpointMaxError": 0.0,
+    "channels": 5,
+    "reimportVerified": true
+  },
+  {
+    "id": "cartographer_nyra",
+    "meshes": 39,
+    "animatedMeshes": 24,
+    "animations": 1,
+    "seconds": 8,
+    "endpointMaxError": 0.0,
+    "channels": 5,
+    "reimportVerified": true
+  },
+  {
+    "id": "harbormaster_sela",
+    "meshes": 41,
+    "animatedMeshes": 32,
+    "animations": 1,
+    "seconds": 8,
+    "endpointMaxError": 0.0,
+    "channels": 5,
+    "reimportVerified": true
+  },
+  {
+    "id": "steward_roka",
+    "meshes": 43,
+    "animatedMeshes": 35,
+    "animations": 1,
+    "seconds": 8,
+    "endpointMaxError": 0.0,
+    "channels": 6,
+    "reimportVerified": true
+  }
+]

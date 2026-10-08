@@ -1,0 +1,9 @@
+{
+  "content": [
+    {
+      "type": "text",
+      "text": "{\"cases\":{\"1\":{\"id\":\"knight_01\",\"motors\":6,\"visualParts\":26},\"3\":{\"id\":\"knight_03\",\"motors\":6,\"visualParts\":27},\"2\":{\"id\":\"knight_02\",\"motors\":6,\"visualParts\":27},\"5\":{\"id\":\"warrior_02\",\"motors\":6,\"visualParts\":25},\"4\":{\"id\":\"warrior_01\",\"motors\":6,\"visualParts\":24},\"7\":{\"id\":\"archer_01\",\"motors\":6,\"visualParts\":27},\"6\":{\"id\":\"warrior_03\",\"motors\":6,\"visualParts\":26},\"9\":{\"id\":\"archer_03\",\"motors\":6,\"visualParts\":31},\"8\":{\"id\":\"archer_02\",\"motors\":6,\"visualParts\":29},\"15\":{\"id\":\"priest_03\",\"motors\":6,\"visualParts\":28},\"14\":{\"id\":\"priest_02\",\"motors\":6,\"visualParts\":27},\"13\":{\"id\":\"priest_01\",\"motors\":6,\"visualParts\":26},\"12\":{\"id\":\"mage_03\",\"motors\":6,\"visualParts\":26},\"11\":{\"id\":\"mage_02\",\"motors\":6,\"visualParts\":25},\"10\":{\"id\":\"mage_01\",\"motors\":6,\"visualParts\":26}},\"profileMutation\":false}"
+    }
+  ],
+  "isError": false
+}

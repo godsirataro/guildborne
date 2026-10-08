@@ -1,0 +1,30 @@
+{
+  "date": "2026-10-06",
+  "billboards": {
+    "histories": 16,
+    "languages": 2,
+    "bounds": 96,
+    "profileWrites": 0
+  },
+  "completionUI": {
+    "views": 144,
+    "textBoundsChecks": 996,
+    "serverRequests": 0,
+    "profileWrites": 0
+  },
+  "world": {
+    "prompts": 42,
+    "historyBindingChecks": 5,
+    "syntheticCheckpointRebuilds": 1,
+    "recoveryExpiryResets": true,
+    "privateReceipts": 13,
+    "actualPlayerJourney": false,
+    "worldMovementCalls": 0,
+    "endingDisplays": 3,
+    "notifications": 13,
+    "mandatoryBackups": true,
+    "uncommittedEndingHidden": true,
+    "profileWrites": 0
+  },
+  "scope": "Saved-choice presentation only. Synthetic state fixtures and native layouts, not a repeat of the full player journey."
+}

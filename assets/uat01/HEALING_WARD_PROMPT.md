@@ -1,0 +1,7 @@
+# Healing ward texture candidate
+
+Generated 2026-10-06 with built-in imagegen, transparent background enabled. Original pixels copied unchanged to `generated/guildborne-vfx-healing-ward-v1.png`.
+
+Prompt: Create one original Guildborne game VFX texture: a top-down flat orthographic healing ward circle for a stylized Roblox fantasy adventure. Transparent RGBA background. Centered single circular sigil, teal and warm ivory luminous energy, delicate hand-painted magical wisps around a strong readable broken double ring, five subtle leaf-shaped light petals around the circle, soft glow with alpha falloff. Empty transparent center so character remains visible. Entire effect fits within central 70 percent of square canvas with generous transparent safety margin on all sides. Symmetric readable silhouette at small size, tasteful painterly fantasy magic, no text no letters no runes resembling writing, no scenery no character no ground plane no perspective no shadow no checkerboard. This is a single isolated particle/decal art candidate, not a storyboard or UI icon. Original design.
+
+Visual review: centered readable ring with open center; generated glow extends beyond the requested central 70 percent region. Keep as a candidate. It is not an animation or an uploaded Roblox asset. Check alpha margin, compression, tint, light/dark terrain and mobile overdraw before binding. The prompt's requested petal count is not a gameplay rule.

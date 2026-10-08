@@ -1,0 +1,112 @@
+{
+  "schema": 1,
+  "fps": 30,
+  "assets": [
+    {
+      "id": "last_warden",
+      "rigType": "Humanoid",
+      "region": "ArchiveHeart",
+      "role": "Boss",
+      "bones": 16,
+      "triangles": 468,
+      "vertices": 312,
+      "restFiles": [
+        "last_warden_Rest.fbx",
+        "last_warden_Rest.glb"
+      ],
+      "clips": [
+        {
+          "name": "Idle",
+          "file": "last_warden_Idle.fbx",
+          "frames": 61,
+          "seconds": 2,
+          "loop": true,
+          "rootMotion": false,
+          "robloxAnimationId": null
+        },
+        {
+          "name": "Walk",
+          "file": "last_warden_Walk.fbx",
+          "frames": 31,
+          "seconds": 1,
+          "loop": true,
+          "rootMotion": false,
+          "robloxAnimationId": null
+        },
+        {
+          "name": "Attack",
+          "file": "last_warden_Attack.fbx",
+          "frames": 37,
+          "seconds": 1.2,
+          "loop": false,
+          "rootMotion": false,
+          "robloxAnimationId": null
+        },
+        {
+          "name": "Hit",
+          "file": "last_warden_Hit.fbx",
+          "frames": 16,
+          "seconds": 0.5,
+          "loop": false,
+          "rootMotion": false,
+          "robloxAnimationId": null
+        }
+      ],
+      "studioImported": false,
+      "liveEncounterBound": false
+    },
+    {
+      "id": "keeper_of_names",
+      "rigType": "Humanoid",
+      "region": "ArchiveHeart",
+      "role": "Boss",
+      "bones": 16,
+      "triangles": 804,
+      "vertices": 536,
+      "restFiles": [
+        "keeper_of_names_Rest.fbx",
+        "keeper_of_names_Rest.glb"
+      ],
+      "clips": [
+        {
+          "name": "Idle",
+          "file": "keeper_of_names_Idle.fbx",
+          "frames": 61,
+          "seconds": 2,
+          "loop": true,
+          "rootMotion": false,
+          "robloxAnimationId": null
+        },
+        {
+          "name": "Walk",
+          "file": "keeper_of_names_Walk.fbx",
+          "frames": 31,
+          "seconds": 1,
+          "loop": true,
+          "rootMotion": false,
+          "robloxAnimationId": null
+        },
+        {
+          "name": "Attack",
+          "file": "keeper_of_names_Attack.fbx",
+          "frames": 37,
+          "seconds": 1.2,
+          "loop": false,
+          "rootMotion": false,
+          "robloxAnimationId": null
+        },
+        {
+          "name": "Hit",
+          "file": "keeper_of_names_Hit.fbx",
+          "frames": 16,
+          "seconds": 0.5,
+          "loop": false,
+          "rootMotion": false,
+          "robloxAnimationId": null
+        }
+      ],
+      "studioImported": false,
+      "liveEncounterBound": false
+    }
+  ]
+}

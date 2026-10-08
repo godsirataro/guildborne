@@ -1,0 +1,57 @@
+[
+  {
+    "id": "trial_arena_court",
+    "triangles": 228,
+    "bounds": [
+      96.0,
+      96.0,
+      1.0220000743865967
+    ],
+    "sourceParts": 19,
+    "robloxMeshAssetId": null
+  },
+  {
+    "id": "trial_arena_pillars",
+    "triangles": 432,
+    "bounds": [
+      92.99999237060547,
+      92.99999237060547,
+      12.40000057220459
+    ],
+    "sourceParts": 36,
+    "robloxMeshAssetId": null
+  },
+  {
+    "id": "trial_arena_sentinel",
+    "triangles": 228,
+    "bounds": [
+      6.600000858306885,
+      4.0,
+      6.65000057220459
+    ],
+    "sourceParts": 19,
+    "robloxMeshAssetId": null
+  },
+  {
+    "id": "trial_arena_patient",
+    "triangles": 84,
+    "bounds": [
+      4.0,
+      3.0,
+      5.099999904632568
+    ],
+    "sourceParts": 7,
+    "robloxMeshAssetId": null
+  },
+  {
+    "id": "trial_arena_complete",
+    "triangles": 972,
+    "bounds": [
+      96.0,
+      96.0,
+      13.40000057220459
+    ],
+    "sourceParts": 81,
+    "robloxMeshAssetId": null
+  }
+]

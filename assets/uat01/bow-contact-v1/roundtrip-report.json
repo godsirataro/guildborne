@@ -1,0 +1,215 @@
+{
+  "status": "PASS",
+  "format": "GLB",
+  "bones": 18,
+  "meshObjects": 40,
+  "triangles": 3218,
+  "sampleCount": 40,
+  "samples": [
+    {
+      "frame": 0,
+      "handToGrip": 3.5762786865234375e-07,
+      "handToReadyNock": 1.6734475065906593e-06
+    },
+    {
+      "frame": 1,
+      "handToGrip": 3.5762786865234375e-07,
+      "handToReadyNock": 0.3376719864422379
+    },
+    {
+      "frame": 3,
+      "handToGrip": 3.5762786865234375e-07,
+      "handToReadyNock": 1.3024445172689805
+    },
+    {
+      "frame": 5,
+      "handToGrip": 3.5762786865234375e-07,
+      "handToReadyNock": 1.3024445172689805
+    },
+    {
+      "frame": 6,
+      "handToGrip": 3.5762786865234375e-07,
+      "handToReadyNock": 1.3024445172689805
+    },
+    {
+      "frame": 7,
+      "handToGrip": 3.5762786865234375e-07,
+      "handToReadyNock": 1.3024445172689805
+    },
+    {
+      "frame": 8,
+      "handToGrip": 3.5762786865234375e-07,
+      "handToReadyNock": 1.3470334147965757
+    },
+    {
+      "frame": 9,
+      "handToGrip": 3.5762786865234375e-07,
+      "handToReadyNock": 1.35950813518521
+    },
+    {
+      "frame": 10,
+      "handToGrip": 3.5762786865234375e-07,
+      "handToReadyNock": 1.3149191269834657
+    },
+    {
+      "frame": 12,
+      "handToGrip": 3.5762786865234375e-07,
+      "handToReadyNock": 1.1486575376481851
+    },
+    {
+      "frame": 15,
+      "handToGrip": 3.5762786865234375e-07,
+      "handToReadyNock": 0.5126250954639189
+    },
+    {
+      "frame": 18,
+      "handToGrip": 3.5762786865234375e-07,
+      "handToReadyNock": 0.01898762412789497
+    },
+    {
+      "frame": 19,
+      "handToGrip": 3.5762786865234375e-07,
+      "handToReadyNock": 0.015324586269693807
+    },
+    {
+      "frame": 24,
+      "handToGrip": 3.5762786865234375e-07,
+      "handToReadyNock": 1.3892936682609134
+    },
+    {
+      "frame": 27,
+      "handToGrip": 3.5762786865234375e-07,
+      "handToReadyNock": 1.6250081933255147
+    },
+    {
+      "frame": 30,
+      "handToGrip": 3.5762786865234375e-07,
+      "handToReadyNock": 1.9347973535786924
+    },
+    {
+      "frame": 33,
+      "handToGrip": 3.5762786865234375e-07,
+      "handToReadyNock": 2.1869281293766325
+    },
+    {
+      "frame": 36,
+      "handToGrip": 3.5762786865234375e-07,
+      "handToReadyNock": 2.2495836081257066
+    },
+    {
+      "frame": 39,
+      "handToGrip": 3.5762786865234375e-07,
+      "handToReadyNock": 2.72596340647742
+    },
+    {
+      "frame": 42,
+      "handToGrip": 3.5762786865234375e-07,
+      "handToReadyNock": 3.1153630627686333
+    },
+    {
+      "frame": 45,
+      "handToGrip": 3.5762786865234375e-07,
+      "handToReadyNock": 2.3683621604886693
+    },
+    {
+      "frame": 48,
+      "handToGrip": 3.5762786865234375e-07,
+      "handToReadyNock": 1.7347132794836868
+    },
+    {
+      "frame": 51,
+      "handToGrip": 3.5762786865234375e-07,
+      "handToReadyNock": 1.1240944274454923
+    },
+    {
+      "frame": 54,
+      "handToGrip": 3.5762786865234375e-07,
+      "handToReadyNock": 0.18041078842167857
+    },
+    {
+      "frame": 56,
+      "handToGrip": 3.5762786865234375e-07,
+      "handToReadyNock": 1.6734475065906593e-06
+    },
+    {
+      "frame": 59,
+      "handToGrip": 3.5762786865234375e-07,
+      "handToReadyNock": 1.6734475065906593e-06
+    },
+    {
+      "frame": 60,
+      "handToGrip": 3.5762786865234375e-07,
+      "handToReadyNock": 1.6734475065906593e-06
+    },
+    {
+      "frame": 66,
+      "handToGrip": 3.5762786865234375e-07,
+      "handToReadyNock": 1.3024445172689805
+    },
+    {
+      "frame": 67,
+      "handToGrip": 3.5762786865234375e-07,
+      "handToReadyNock": 1.3024445172689805
+    },
+    {
+      "frame": 68,
+      "handToGrip": 3.5762786865234375e-07,
+      "handToReadyNock": 1.3470334147965757
+    },
+    {
+      "frame": 78,
+      "handToGrip": 3.5762786865234375e-07,
+      "handToReadyNock": 0.01898762412789497
+    },
+    {
+      "frame": 120,
+      "handToGrip": 3.5762786865234375e-07,
+      "handToReadyNock": 1.6734475065906593e-06
+    },
+    {
+      "frame": 126,
+      "handToGrip": 3.5762786865234375e-07,
+      "handToReadyNock": 1.3024445172689805
+    },
+    {
+      "frame": 127,
+      "handToGrip": 3.5762786865234375e-07,
+      "handToReadyNock": 1.3024445172689805
+    },
+    {
+      "frame": 128,
+      "handToGrip": 3.5762786865234375e-07,
+      "handToReadyNock": 1.3470334147965757
+    },
+    {
+      "frame": 138,
+      "handToGrip": 3.5762786865234375e-07,
+      "handToReadyNock": 0.01898762412789497
+    },
+    {
+      "frame": 153,
+      "handToGrip": 3.5762786865234375e-07,
+      "handToReadyNock": 2.1869281293766325
+    },
+    {
+      "frame": 162,
+      "handToGrip": 3.5762786865234375e-07,
+      "handToReadyNock": 3.1153630627686333
+    },
+    {
+      "frame": 179,
+      "handToGrip": 3.5762786865234375e-07,
+      "handToReadyNock": 1.6734475065906593e-06
+    },
+    {
+      "frame": 180,
+      "handToGrip": 3.5762786865234375e-07,
+      "handToReadyNock": 1.6734475065906593e-06
+    }
+  ],
+  "maxContactError": 3.883718317276943e-06,
+  "fixedGripRootFeet": true,
+  "loopSeams": true,
+  "platformImported": false,
+  "note": "Checks sampled contact and free flight, not final acting or server damage synchronization."
+}

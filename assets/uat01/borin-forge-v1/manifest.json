@@ -1,0 +1,46 @@
+{
+  "reference": "assets/uat01/civic-community/concept-v1.png",
+  "status": "SKELETAL_ART_CONTACT_REVIEW_PLATFORM_IMPORT_PENDING",
+  "frames": 181,
+  "fps": 30,
+  "durationSeconds": 6,
+  "bones": 16,
+  "meshObjects": 108,
+  "stationMeshes": 27,
+  "contact": [
+    {
+      "frame": 30,
+      "hammerBottom": [
+        0.3500003218650818,
+        -1.4500001668930054,
+        2.700000047683716
+      ],
+      "surfaceZ": 2.7,
+      "verticalError": 4.7683715642676816e-08
+    },
+    {
+      "frame": 90,
+      "hammerBottom": [
+        0.3500003218650818,
+        -1.4500001668930054,
+        2.700000047683716
+      ],
+      "surfaceZ": 2.7,
+      "verticalError": 4.7683715642676816e-08
+    },
+    {
+      "frame": 150,
+      "hammerBottom": [
+        0.3500003218650818,
+        -1.4500001668930054,
+        2.700000047683716
+      ],
+      "surfaceZ": 2.7,
+      "verticalError": 4.7683715642676816e-08
+    }
+  ],
+  "maxArmLengthError": 1.8281672953257555e-07,
+  "robloxMeshId": null,
+  "robloxAnimationId": null,
+  "notes": "Rigid skin weights; analytic two-bone reach; stable feet. Hammer hand orientation fixed for first vertical strike study; detailed wrist arc, cloth deformation and human review pending."
+}

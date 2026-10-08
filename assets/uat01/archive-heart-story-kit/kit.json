@@ -1,0 +1,5273 @@
+{
+  "schema": 1,
+  "units": "stud",
+  "upAxis": "Y",
+  "palette": {
+    "ivory": [
+      224,
+      212,
+      181
+    ],
+    "navy": [
+      58,
+      70,
+      83
+    ],
+    "dark": [
+      34,
+      44,
+      55
+    ],
+    "brass": [
+      193,
+      153,
+      78
+    ],
+    "wood": [
+      130,
+      88,
+      61
+    ],
+    "teal": [
+      59,
+      169,
+      154
+    ],
+    "amber": [
+      236,
+      168,
+      76
+    ],
+    "blue": [
+      99,
+      150,
+      205
+    ],
+    "cloth": [
+      192,
+      103,
+      81
+    ],
+    "violet": [
+      145,
+      110,
+      194
+    ]
+  },
+  "assets": [
+    {
+      "id": "three_gates",
+      "kind": "Chapter06Scene",
+      "parts": [
+        {
+          "name": "WalkableFloor",
+          "size": [
+            112,
+            1,
+            88
+          ],
+          "position": [
+            0,
+            -0.5,
+            0
+          ],
+          "color": "navy",
+          "rotation": [
+            0,
+            0,
+            0
+          ],
+          "solid": true
+        },
+        {
+          "name": "ColumnFoot",
+          "size": [
+            3,
+            1,
+            3
+          ],
+          "position": [
+            -44.0,
+            0.5,
+            -25
+          ],
+          "color": "brass",
+          "rotation": [
+            0,
+            0,
+            0
+          ],
+          "solid": true
+        },
+        {
+          "name": "Column",
+          "size": [
+            2,
+            16,
+            2
+          ],
+          "position": [
+            -44.0,
+            9.0,
+            -25
+          ],
+          "color": "ivory",
+          "rotation": [
+            0,
+            0,
+            0
+          ],
+          "solid": true
+        },
+        {
+          "name": "Capital",
+          "size": [
+            4,
+            1,
+            4
+          ],
+          "position": [
+            -44.0,
+            17.5,
+            -25
+          ],
+          "color": "brass",
+          "rotation": [
+            0,
+            0,
+            0
+          ],
+          "solid": true
+        },
+        {
+          "name": "ColumnFoot",
+          "size": [
+            3,
+            1,
+            3
+          ],
+          "position": [
+            -26.0,
+            0.5,
+            -25
+          ],
+          "color": "brass",
+          "rotation": [
+            0,
+            0,
+            0
+          ],
+          "solid": true
+        },
+        {
+          "name": "Column",
+          "size": [
+            2,
+            16,
+            2
+          ],
+          "position": [
+            -26.0,
+            9.0,
+            -25
+          ],
+          "color": "ivory",
+          "rotation": [
+            0,
+            0,
+            0
+          ],
+          "solid": true
+        },
+        {
+          "name": "Capital",
+          "size": [
+            4,
+            1,
+            4
+          ],
+          "position": [
+            -26.0,
+            17.5,
+            -25
+          ],
+          "color": "brass",
+          "rotation": [
+            0,
+            0,
+            0
+          ],
+          "solid": true
+        },
+        {
+          "name": "OpenLintel",
+          "size": [
+            22,
+            2,
+            3
+          ],
+          "position": [
+            -35,
+            19,
+            -25
+          ],
+          "color": "ivory",
+          "rotation": [
+            0,
+            0,
+            0
+          ],
+          "solid": true
+        },
+        {
+          "name": "RecordPlinth",
+          "size": [
+            4,
+            2,
+            3
+          ],
+          "position": [
+            -35,
+            1,
+            -32
+          ],
+          "color": "dark",
+          "rotation": [
+            0,
+            0,
+            0
+          ],
+          "solid": true
+        },
+        {
+          "name": "SymbolPanel",
+          "size": [
+            4,
+            4,
+            0.5
+          ],
+          "position": [
+            -35,
+            4,
+            -32
+          ],
+          "color": "ivory",
+          "rotation": [
+            0,
+            0,
+            0
+          ],
+          "solid": true
+        },
+        {
+          "name": "CountMark",
+          "size": [
+            0.4,
+            1.6,
+            0.15
+          ],
+          "position": [
+            -35.0,
+            4,
+            -31.65
+          ],
+          "color": "amber",
+          "rotation": [
+            0,
+            0,
+            0
+          ],
+          "solid": false
+        },
+        {
+          "name": "RouteInlay",
+          "size": [
+            4,
+            0.08,
+            4
+          ],
+          "position": [
+            -35,
+            0.05,
+            5
+          ],
+          "color": "amber",
+          "rotation": [
+            0,
+            0,
+            0
+          ],
+          "solid": false
+        },
+        {
+          "name": "RouteInlay",
+          "size": [
+            4,
+            0.08,
+            4
+          ],
+          "position": [
+            -35,
+            0.05,
+            16
+          ],
+          "color": "amber",
+          "rotation": [
+            0,
+            0,
+            0
+          ],
+          "solid": false
+        },
+        {
+          "name": "RouteInlay",
+          "size": [
+            4,
+            0.08,
+            4
+          ],
+          "position": [
+            -35,
+            0.05,
+            27
+          ],
+          "color": "amber",
+          "rotation": [
+            0,
+            0,
+            0
+          ],
+          "solid": false
+        },
+        {
+          "name": "ColumnFoot",
+          "size": [
+            3,
+            1,
+            3
+          ],
+          "position": [
+            -9.0,
+            0.5,
+            -25
+          ],
+          "color": "brass",
+          "rotation": [
+            0,
+            0,
+            0
+          ],
+          "solid": true
+        },
+        {
+          "name": "Column",
+          "size": [
+            2,
+            16,
+            2
+          ],
+          "position": [
+            -9.0,
+            9.0,
+            -25
+          ],
+          "color": "ivory",
+          "rotation": [
+            0,
+            0,
+            0
+          ],
+          "solid": true
+        },
+        {
+          "name": "Capital",
+          "size": [
+            4,
+            1,
+            4
+          ],
+          "position": [
+            -9.0,
+            17.5,
+            -25
+          ],
+          "color": "brass",
+          "rotation": [
+            0,
+            0,
+            0
+          ],
+          "solid": true
+        },
+        {
+          "name": "ColumnFoot",
+          "size": [
+            3,
+            1,
+            3
+          ],
+          "position": [
+            9.0,
+            0.5,
+            -25
+          ],
+          "color": "brass",
+          "rotation": [
+            0,
+            0,
+            0
+          ],
+          "solid": true
+        },
+        {
+          "name": "Column",
+          "size": [
+            2,
+            16,
+            2
+          ],
+          "position": [
+            9.0,
+            9.0,
+            -25
+          ],
+          "color": "ivory",
+          "rotation": [
+            0,
+            0,
+            0
+          ],
+          "solid": true
+        },
+        {
+          "name": "Capital",
+          "size": [
+            4,
+            1,
+            4
+          ],
+          "position": [
+            9.0,
+            17.5,
+            -25
+          ],
+          "color": "brass",
+          "rotation": [
+            0,
+            0,
+            0
+          ],
+          "solid": true
+        },
+        {
+          "name": "OpenLintel",
+          "size": [
+            22,
+            2,
+            3
+          ],
+          "position": [
+            0,
+            19,
+            -25
+          ],
+          "color": "ivory",
+          "rotation": [
+            0,
+            0,
+            0
+          ],
+          "solid": true
+        },
+        {
+          "name": "RecordPlinth",
+          "size": [
+            4,
+            2,
+            3
+          ],
+          "position": [
+            0,
+            1,
+            -32
+          ],
+          "color": "dark",
+          "rotation": [
+            0,
+            0,
+            0
+          ],
+          "solid": true
+        },
+        {
+          "name": "SymbolPanel",
+          "size": [
+            4,
+            4,
+            0.5
+          ],
+          "position": [
+            0,
+            4,
+            -32
+          ],
+          "color": "ivory",
+          "rotation": [
+            0,
+            0,
+            0
+          ],
+          "solid": true
+        },
+        {
+          "name": "CountMark",
+          "size": [
+            0.4,
+            1.6,
+            0.15
+          ],
+          "position": [
+            -0.4,
+            4,
+            -31.65
+          ],
+          "color": "teal",
+          "rotation": [
+            0,
+            0,
+            0
+          ],
+          "solid": false
+        },
+        {
+          "name": "CountMark",
+          "size": [
+            0.4,
+            1.6,
+            0.15
+          ],
+          "position": [
+            0.4,
+            4,
+            -31.65
+          ],
+          "color": "teal",
+          "rotation": [
+            0,
+            0,
+            0
+          ],
+          "solid": false
+        },
+        {
+          "name": "RouteInlay",
+          "size": [
+            4,
+            0.08,
+            4
+          ],
+          "position": [
+            0,
+            0.05,
+            5
+          ],
+          "color": "teal",
+          "rotation": [
+            0,
+            0,
+            0
+          ],
+          "solid": false
+        },
+        {
+          "name": "RouteInlay",
+          "size": [
+            4,
+            0.08,
+            4
+          ],
+          "position": [
+            0,
+            0.05,
+            16
+          ],
+          "color": "teal",
+          "rotation": [
+            0,
+            0,
+            0
+          ],
+          "solid": false
+        },
+        {
+          "name": "RouteInlay",
+          "size": [
+            4,
+            0.08,
+            4
+          ],
+          "position": [
+            0,
+            0.05,
+            27
+          ],
+          "color": "teal",
+          "rotation": [
+            0,
+            0,
+            0
+          ],
+          "solid": false
+        },
+        {
+          "name": "ColumnFoot",
+          "size": [
+            3,
+            1,
+            3
+          ],
+          "position": [
+            26.0,
+            0.5,
+            -25
+          ],
+          "color": "brass",
+          "rotation": [
+            0,
+            0,
+            0
+          ],
+          "solid": true
+        },
+        {
+          "name": "Column",
+          "size": [
+            2,
+            16,
+            2
+          ],
+          "position": [
+            26.0,
+            9.0,
+            -25
+          ],
+          "color": "ivory",
+          "rotation": [
+            0,
+            0,
+            0
+          ],
+          "solid": true
+        },
+        {
+          "name": "Capital",
+          "size": [
+            4,
+            1,
+            4
+          ],
+          "position": [
+            26.0,
+            17.5,
+            -25
+          ],
+          "color": "brass",
+          "rotation": [
+            0,
+            0,
+            0
+          ],
+          "solid": true
+        },
+        {
+          "name": "ColumnFoot",
+          "size": [
+            3,
+            1,
+            3
+          ],
+          "position": [
+            44.0,
+            0.5,
+            -25
+          ],
+          "color": "brass",
+          "rotation": [
+            0,
+            0,
+            0
+          ],
+          "solid": true
+        },
+        {
+          "name": "Column",
+          "size": [
+            2,
+            16,
+            2
+          ],
+          "position": [
+            44.0,
+            9.0,
+            -25
+          ],
+          "color": "ivory",
+          "rotation": [
+            0,
+            0,
+            0
+          ],
+          "solid": true
+        },
+        {
+          "name": "Capital",
+          "size": [
+            4,
+            1,
+            4
+          ],
+          "position": [
+            44.0,
+            17.5,
+            -25
+          ],
+          "color": "brass",
+          "rotation": [
+            0,
+            0,
+            0
+          ],
+          "solid": true
+        },
+        {
+          "name": "OpenLintel",
+          "size": [
+            22,
+            2,
+            3
+          ],
+          "position": [
+            35,
+            19,
+            -25
+          ],
+          "color": "ivory",
+          "rotation": [
+            0,
+            0,
+            0
+          ],
+          "solid": true
+        },
+        {
+          "name": "RecordPlinth",
+          "size": [
+            4,
+            2,
+            3
+          ],
+          "position": [
+            35,
+            1,
+            -32
+          ],
+          "color": "dark",
+          "rotation": [
+            0,
+            0,
+            0
+          ],
+          "solid": true
+        },
+        {
+          "name": "SymbolPanel",
+          "size": [
+            4,
+            4,
+            0.5
+          ],
+          "position": [
+            35,
+            4,
+            -32
+          ],
+          "color": "ivory",
+          "rotation": [
+            0,
+            0,
+            0
+          ],
+          "solid": true
+        },
+        {
+          "name": "CountMark",
+          "size": [
+            0.4,
+            1.6,
+            0.15
+          ],
+          "position": [
+            34.2,
+            4,
+            -31.65
+          ],
+          "color": "violet",
+          "rotation": [
+            0,
+            0,
+            0
+          ],
+          "solid": false
+        },
+        {
+          "name": "CountMark",
+          "size": [
+            0.4,
+            1.6,
+            0.15
+          ],
+          "position": [
+            35.0,
+            4,
+            -31.65
+          ],
+          "color": "violet",
+          "rotation": [
+            0,
+            0,
+            0
+          ],
+          "solid": false
+        },
+        {
+          "name": "CountMark",
+          "size": [
+            0.4,
+            1.6,
+            0.15
+          ],
+          "position": [
+            35.8,
+            4,
+            -31.65
+          ],
+          "color": "violet",
+          "rotation": [
+            0,
+            0,
+            0
+          ],
+          "solid": false
+        },
+        {
+          "name": "RouteInlay",
+          "size": [
+            4,
+            0.08,
+            4
+          ],
+          "position": [
+            35,
+            0.05,
+            5
+          ],
+          "color": "violet",
+          "rotation": [
+            0,
+            0,
+            0
+          ],
+          "solid": false
+        },
+        {
+          "name": "RouteInlay",
+          "size": [
+            4,
+            0.08,
+            4
+          ],
+          "position": [
+            35,
+            0.05,
+            16
+          ],
+          "color": "violet",
+          "rotation": [
+            0,
+            0,
+            0
+          ],
+          "solid": false
+        },
+        {
+          "name": "RouteInlay",
+          "size": [
+            4,
+            0.08,
+            4
+          ],
+          "position": [
+            35,
+            0.05,
+            27
+          ],
+          "color": "violet",
+          "rotation": [
+            0,
+            0,
+            0
+          ],
+          "solid": false
+        },
+        {
+          "name": "Desk",
+          "size": [
+            18,
+            0.8,
+            4
+          ],
+          "position": [
+            0,
+            3,
+            35
+          ],
+          "color": "wood",
+          "rotation": [
+            0,
+            0,
+            0
+          ],
+          "solid": true
+        },
+        {
+          "name": "DeskLeg",
+          "size": [
+            0.7,
+            3,
+            0.7
+          ],
+          "position": [
+            -8.0,
+            1.5,
+            33.6
+          ],
+          "color": "brass",
+          "rotation": [
+            0,
+            0,
+            0
+          ],
+          "solid": true
+        },
+        {
+          "name": "DeskLeg",
+          "size": [
+            0.7,
+            3,
+            0.7
+          ],
+          "position": [
+            -8.0,
+            1.5,
+            36.4
+          ],
+          "color": "brass",
+          "rotation": [
+            0,
+            0,
+            0
+          ],
+          "solid": true
+        },
+        {
+          "name": "DeskLeg",
+          "size": [
+            0.7,
+            3,
+            0.7
+          ],
+          "position": [
+            8.0,
+            1.5,
+            33.6
+          ],
+          "color": "brass",
+          "rotation": [
+            0,
+            0,
+            0
+          ],
+          "solid": true
+        },
+        {
+          "name": "DeskLeg",
+          "size": [
+            0.7,
+            3,
+            0.7
+          ],
+          "position": [
+            8.0,
+            1.5,
+            36.4
+          ],
+          "color": "brass",
+          "rotation": [
+            0,
+            0,
+            0
+          ],
+          "solid": true
+        }
+      ],
+      "markers": [
+        {
+          "id": "choose_guard",
+          "position": [
+            -35,
+            0.15,
+            -13
+          ]
+        },
+        {
+          "id": "guard_step_1",
+          "position": [
+            -35,
+            0.15,
+            5
+          ]
+        },
+        {
+          "id": "guard_step_2",
+          "position": [
+            -35,
+            0.15,
+            16
+          ]
+        },
+        {
+          "id": "guard_step_3",
+          "position": [
+            -35,
+            0.15,
+            27
+          ]
+        },
+        {
+          "id": "choose_stealth",
+          "position": [
+            0,
+            0.15,
+            -13
+          ]
+        },
+        {
+          "id": "stealth_step_1",
+          "position": [
+            0,
+            0.15,
+            5
+          ]
+        },
+        {
+          "id": "stealth_step_2",
+          "position": [
+            0,
+            0.15,
+            16
+          ]
+        },
+        {
+          "id": "stealth_step_3",
+          "position": [
+            0,
+            0.15,
+            27
+          ]
+        },
+        {
+          "id": "choose_puzzle",
+          "position": [
+            35,
+            0.15,
+            -13
+          ]
+        },
+        {
+          "id": "puzzle_step_1",
+          "position": [
+            35,
+            0.15,
+            5
+          ]
+        },
+        {
+          "id": "puzzle_step_2",
+          "position": [
+            35,
+            0.15,
+            16
+          ]
+        },
+        {
+          "id": "puzzle_step_3",
+          "position": [
+            35,
+            0.15,
+            27
+          ]
+        },
+        {
+          "id": "command_post",
+          "position": [
+            0,
+            0.15,
+            29
+          ]
+        }
+      ],
+      "footprint": [
+        112,
+        88
+      ],
+      "aisleWidth": 10
+    },
+    {
+      "id": "supply_court",
+      "kind": "Chapter06Scene",
+      "parts": [
+        {
+          "name": "WalkableFloor",
+          "size": [
+            112,
+            1,
+            88
+          ],
+          "position": [
+            0,
+            -0.5,
+            0
+          ],
+          "color": "navy",
+          "rotation": [
+            0,
+            0,
+            0
+          ],
+          "solid": true
+        },
+        {
+          "name": "SupplyCrate",
+          "size": [
+            7,
+            5,
+            7
+          ],
+          "position": [
+            -40,
+            2.5,
+            -26
+          ],
+          "color": "wood",
+          "rotation": [
+            0,
+            0,
+            0
+          ],
+          "solid": true
+        },
+        {
+          "name": "CrateBrace",
+          "size": [
+            7.2,
+            0.6,
+            7.2
+          ],
+          "position": [
+            -40,
+            2.5,
+            -26
+          ],
+          "color": "brass",
+          "rotation": [
+            0,
+            0,
+            0
+          ],
+          "solid": true
+        },
+        {
+          "name": "SupplyCrate",
+          "size": [
+            7,
+            5,
+            7
+          ],
+          "position": [
+            -40,
+            2.5,
+            0
+          ],
+          "color": "wood",
+          "rotation": [
+            0,
+            0,
+            0
+          ],
+          "solid": true
+        },
+        {
+          "name": "CrateBrace",
+          "size": [
+            7.2,
+            0.6,
+            7.2
+          ],
+          "position": [
+            -40,
+            2.5,
+            0
+          ],
+          "color": "brass",
+          "rotation": [
+            0,
+            0,
+            0
+          ],
+          "solid": true
+        },
+        {
+          "name": "SupplyCrate",
+          "size": [
+            7,
+            5,
+            7
+          ],
+          "position": [
+            -40,
+            2.5,
+            26
+          ],
+          "color": "wood",
+          "rotation": [
+            0,
+            0,
+            0
+          ],
+          "solid": true
+        },
+        {
+          "name": "CrateBrace",
+          "size": [
+            7.2,
+            0.6,
+            7.2
+          ],
+          "position": [
+            -40,
+            2.5,
+            26
+          ],
+          "color": "brass",
+          "rotation": [
+            0,
+            0,
+            0
+          ],
+          "solid": true
+        },
+        {
+          "name": "SupplyCrate",
+          "size": [
+            7,
+            5,
+            7
+          ],
+          "position": [
+            40,
+            2.5,
+            -26
+          ],
+          "color": "wood",
+          "rotation": [
+            0,
+            0,
+            0
+          ],
+          "solid": true
+        },
+        {
+          "name": "CrateBrace",
+          "size": [
+            7.2,
+            0.6,
+            7.2
+          ],
+          "position": [
+            40,
+            2.5,
+            -26
+          ],
+          "color": "brass",
+          "rotation": [
+            0,
+            0,
+            0
+          ],
+          "solid": true
+        },
+        {
+          "name": "SupplyCrate",
+          "size": [
+            7,
+            5,
+            7
+          ],
+          "position": [
+            40,
+            2.5,
+            0
+          ],
+          "color": "wood",
+          "rotation": [
+            0,
+            0,
+            0
+          ],
+          "solid": true
+        },
+        {
+          "name": "CrateBrace",
+          "size": [
+            7.2,
+            0.6,
+            7.2
+          ],
+          "position": [
+            40,
+            2.5,
+            0
+          ],
+          "color": "brass",
+          "rotation": [
+            0,
+            0,
+            0
+          ],
+          "solid": true
+        },
+        {
+          "name": "SupplyCrate",
+          "size": [
+            7,
+            5,
+            7
+          ],
+          "position": [
+            40,
+            2.5,
+            26
+          ],
+          "color": "wood",
+          "rotation": [
+            0,
+            0,
+            0
+          ],
+          "solid": true
+        },
+        {
+          "name": "CrateBrace",
+          "size": [
+            7.2,
+            0.6,
+            7.2
+          ],
+          "position": [
+            40,
+            2.5,
+            26
+          ],
+          "color": "brass",
+          "rotation": [
+            0,
+            0,
+            0
+          ],
+          "solid": true
+        },
+        {
+          "name": "BannerPole",
+          "size": [
+            0.6,
+            14,
+            0.6
+          ],
+          "position": [
+            -24,
+            7,
+            -30
+          ],
+          "color": "brass",
+          "rotation": [
+            0,
+            0,
+            0
+          ],
+          "solid": true
+        },
+        {
+          "name": "Banner",
+          "size": [
+            4,
+            7,
+            0.3
+          ],
+          "position": [
+            -21.8,
+            10,
+            -30
+          ],
+          "color": "teal",
+          "rotation": [
+            0,
+            0,
+            0
+          ],
+          "solid": false
+        },
+        {
+          "name": "BannerPole",
+          "size": [
+            0.6,
+            14,
+            0.6
+          ],
+          "position": [
+            24,
+            7,
+            -30
+          ],
+          "color": "brass",
+          "rotation": [
+            0,
+            0,
+            0
+          ],
+          "solid": true
+        },
+        {
+          "name": "Banner",
+          "size": [
+            4,
+            7,
+            0.3
+          ],
+          "position": [
+            26.2,
+            10,
+            -30
+          ],
+          "color": "teal",
+          "rotation": [
+            0,
+            0,
+            0
+          ],
+          "solid": false
+        }
+      ],
+      "markers": [
+        {
+          "id": "caravan_greeting",
+          "position": [
+            -20,
+            0.15,
+            27
+          ]
+        },
+        {
+          "id": "escort_start",
+          "position": [
+            -20,
+            0.15,
+            17
+          ]
+        },
+        {
+          "id": "escort_turn",
+          "position": [
+            -20,
+            0.15,
+            -8
+          ]
+        },
+        {
+          "id": "escort_exit",
+          "position": [
+            20,
+            0.15,
+            -8
+          ]
+        },
+        {
+          "id": "supply_anchor",
+          "position": [
+            20,
+            0.15,
+            10
+          ]
+        },
+        {
+          "id": "ward_1",
+          "position": [
+            -12,
+            0.15,
+            0
+          ]
+        },
+        {
+          "id": "ward_2",
+          "position": [
+            0,
+            0.15,
+            0
+          ]
+        },
+        {
+          "id": "ward_3",
+          "position": [
+            12,
+            0.15,
+            0
+          ]
+        }
+      ],
+      "footprint": [
+        112,
+        88
+      ],
+      "aisleWidth": 10
+    },
+    {
+      "id": "warden_approach",
+      "kind": "Chapter06Scene",
+      "parts": [
+        {
+          "name": "WalkableFloor",
+          "size": [
+            112,
+            1,
+            96
+          ],
+          "position": [
+            0,
+            -0.5,
+            0
+          ],
+          "color": "navy",
+          "rotation": [
+            0,
+            0,
+            0
+          ],
+          "solid": true
+        },
+        {
+          "name": "ColumnFoot",
+          "size": [
+            3,
+            1,
+            3
+          ],
+          "position": [
+            -16.0,
+            0.5,
+            -34
+          ],
+          "color": "brass",
+          "rotation": [
+            0,
+            0,
+            0
+          ],
+          "solid": true
+        },
+        {
+          "name": "Column",
+          "size": [
+            2,
+            16,
+            2
+          ],
+          "position": [
+            -16.0,
+            9.0,
+            -34
+          ],
+          "color": "ivory",
+          "rotation": [
+            0,
+            0,
+            0
+          ],
+          "solid": true
+        },
+        {
+          "name": "Capital",
+          "size": [
+            4,
+            1,
+            4
+          ],
+          "position": [
+            -16.0,
+            17.5,
+            -34
+          ],
+          "color": "brass",
+          "rotation": [
+            0,
+            0,
+            0
+          ],
+          "solid": true
+        },
+        {
+          "name": "ColumnFoot",
+          "size": [
+            3,
+            1,
+            3
+          ],
+          "position": [
+            16.0,
+            0.5,
+            -34
+          ],
+          "color": "brass",
+          "rotation": [
+            0,
+            0,
+            0
+          ],
+          "solid": true
+        },
+        {
+          "name": "Column",
+          "size": [
+            2,
+            16,
+            2
+          ],
+          "position": [
+            16.0,
+            9.0,
+            -34
+          ],
+          "color": "ivory",
+          "rotation": [
+            0,
+            0,
+            0
+          ],
+          "solid": true
+        },
+        {
+          "name": "Capital",
+          "size": [
+            4,
+            1,
+            4
+          ],
+          "position": [
+            16.0,
+            17.5,
+            -34
+          ],
+          "color": "brass",
+          "rotation": [
+            0,
+            0,
+            0
+          ],
+          "solid": true
+        },
+        {
+          "name": "OpenLintel",
+          "size": [
+            36,
+            2,
+            3
+          ],
+          "position": [
+            0,
+            19,
+            -34
+          ],
+          "color": "ivory",
+          "rotation": [
+            0,
+            0,
+            0
+          ],
+          "solid": true
+        },
+        {
+          "name": "RecordPlinth",
+          "size": [
+            4,
+            2,
+            3
+          ],
+          "position": [
+            -30,
+            1,
+            30
+          ],
+          "color": "dark",
+          "rotation": [
+            0,
+            0,
+            0
+          ],
+          "solid": true
+        },
+        {
+          "name": "SymbolPanel",
+          "size": [
+            4,
+            4,
+            0.5
+          ],
+          "position": [
+            -30,
+            4,
+            30
+          ],
+          "color": "ivory",
+          "rotation": [
+            0,
+            0,
+            0
+          ],
+          "solid": true
+        },
+        {
+          "name": "CountMark",
+          "size": [
+            0.4,
+            1.6,
+            0.15
+          ],
+          "position": [
+            -30.0,
+            4,
+            30.35
+          ],
+          "color": "amber",
+          "rotation": [
+            0,
+            0,
+            0
+          ],
+          "solid": false
+        },
+        {
+          "name": "RecordPlinth",
+          "size": [
+            4,
+            2,
+            3
+          ],
+          "position": [
+            0,
+            1,
+            30
+          ],
+          "color": "dark",
+          "rotation": [
+            0,
+            0,
+            0
+          ],
+          "solid": true
+        },
+        {
+          "name": "SymbolPanel",
+          "size": [
+            4,
+            4,
+            0.5
+          ],
+          "position": [
+            0,
+            4,
+            30
+          ],
+          "color": "ivory",
+          "rotation": [
+            0,
+            0,
+            0
+          ],
+          "solid": true
+        },
+        {
+          "name": "CountMark",
+          "size": [
+            0.4,
+            1.6,
+            0.15
+          ],
+          "position": [
+            -0.4,
+            4,
+            30.35
+          ],
+          "color": "violet",
+          "rotation": [
+            0,
+            0,
+            0
+          ],
+          "solid": false
+        },
+        {
+          "name": "CountMark",
+          "size": [
+            0.4,
+            1.6,
+            0.15
+          ],
+          "position": [
+            0.4,
+            4,
+            30.35
+          ],
+          "color": "violet",
+          "rotation": [
+            0,
+            0,
+            0
+          ],
+          "solid": false
+        },
+        {
+          "name": "RecordPlinth",
+          "size": [
+            4,
+            2,
+            3
+          ],
+          "position": [
+            30,
+            1,
+            30
+          ],
+          "color": "dark",
+          "rotation": [
+            0,
+            0,
+            0
+          ],
+          "solid": true
+        },
+        {
+          "name": "SymbolPanel",
+          "size": [
+            4,
+            4,
+            0.5
+          ],
+          "position": [
+            30,
+            4,
+            30
+          ],
+          "color": "ivory",
+          "rotation": [
+            0,
+            0,
+            0
+          ],
+          "solid": true
+        },
+        {
+          "name": "CountMark",
+          "size": [
+            0.4,
+            1.6,
+            0.15
+          ],
+          "position": [
+            29.2,
+            4,
+            30.35
+          ],
+          "color": "teal",
+          "rotation": [
+            0,
+            0,
+            0
+          ],
+          "solid": false
+        },
+        {
+          "name": "CountMark",
+          "size": [
+            0.4,
+            1.6,
+            0.15
+          ],
+          "position": [
+            30.0,
+            4,
+            30.35
+          ],
+          "color": "teal",
+          "rotation": [
+            0,
+            0,
+            0
+          ],
+          "solid": false
+        },
+        {
+          "name": "CountMark",
+          "size": [
+            0.4,
+            1.6,
+            0.15
+          ],
+          "position": [
+            30.8,
+            4,
+            30.35
+          ],
+          "color": "teal",
+          "rotation": [
+            0,
+            0,
+            0
+          ],
+          "solid": false
+        },
+        {
+          "name": "ColumnFoot",
+          "size": [
+            3,
+            1,
+            3
+          ],
+          "position": [
+            -46,
+            0.5,
+            -30
+          ],
+          "color": "brass",
+          "rotation": [
+            0,
+            0,
+            0
+          ],
+          "solid": true
+        },
+        {
+          "name": "Column",
+          "size": [
+            2,
+            20,
+            2
+          ],
+          "position": [
+            -46,
+            11.0,
+            -30
+          ],
+          "color": "ivory",
+          "rotation": [
+            0,
+            0,
+            0
+          ],
+          "solid": true
+        },
+        {
+          "name": "Capital",
+          "size": [
+            4,
+            1,
+            4
+          ],
+          "position": [
+            -46,
+            21.5,
+            -30
+          ],
+          "color": "brass",
+          "rotation": [
+            0,
+            0,
+            0
+          ],
+          "solid": true
+        },
+        {
+          "name": "ColumnFoot",
+          "size": [
+            3,
+            1,
+            3
+          ],
+          "position": [
+            -46,
+            0.5,
+            0
+          ],
+          "color": "brass",
+          "rotation": [
+            0,
+            0,
+            0
+          ],
+          "solid": true
+        },
+        {
+          "name": "Column",
+          "size": [
+            2,
+            20,
+            2
+          ],
+          "position": [
+            -46,
+            11.0,
+            0
+          ],
+          "color": "ivory",
+          "rotation": [
+            0,
+            0,
+            0
+          ],
+          "solid": true
+        },
+        {
+          "name": "Capital",
+          "size": [
+            4,
+            1,
+            4
+          ],
+          "position": [
+            -46,
+            21.5,
+            0
+          ],
+          "color": "brass",
+          "rotation": [
+            0,
+            0,
+            0
+          ],
+          "solid": true
+        },
+        {
+          "name": "ColumnFoot",
+          "size": [
+            3,
+            1,
+            3
+          ],
+          "position": [
+            -46,
+            0.5,
+            30
+          ],
+          "color": "brass",
+          "rotation": [
+            0,
+            0,
+            0
+          ],
+          "solid": true
+        },
+        {
+          "name": "Column",
+          "size": [
+            2,
+            20,
+            2
+          ],
+          "position": [
+            -46,
+            11.0,
+            30
+          ],
+          "color": "ivory",
+          "rotation": [
+            0,
+            0,
+            0
+          ],
+          "solid": true
+        },
+        {
+          "name": "Capital",
+          "size": [
+            4,
+            1,
+            4
+          ],
+          "position": [
+            -46,
+            21.5,
+            30
+          ],
+          "color": "brass",
+          "rotation": [
+            0,
+            0,
+            0
+          ],
+          "solid": true
+        },
+        {
+          "name": "ColumnFoot",
+          "size": [
+            3,
+            1,
+            3
+          ],
+          "position": [
+            46,
+            0.5,
+            -30
+          ],
+          "color": "brass",
+          "rotation": [
+            0,
+            0,
+            0
+          ],
+          "solid": true
+        },
+        {
+          "name": "Column",
+          "size": [
+            2,
+            20,
+            2
+          ],
+          "position": [
+            46,
+            11.0,
+            -30
+          ],
+          "color": "ivory",
+          "rotation": [
+            0,
+            0,
+            0
+          ],
+          "solid": true
+        },
+        {
+          "name": "Capital",
+          "size": [
+            4,
+            1,
+            4
+          ],
+          "position": [
+            46,
+            21.5,
+            -30
+          ],
+          "color": "brass",
+          "rotation": [
+            0,
+            0,
+            0
+          ],
+          "solid": true
+        },
+        {
+          "name": "ColumnFoot",
+          "size": [
+            3,
+            1,
+            3
+          ],
+          "position": [
+            46,
+            0.5,
+            0
+          ],
+          "color": "brass",
+          "rotation": [
+            0,
+            0,
+            0
+          ],
+          "solid": true
+        },
+        {
+          "name": "Column",
+          "size": [
+            2,
+            20,
+            2
+          ],
+          "position": [
+            46,
+            11.0,
+            0
+          ],
+          "color": "ivory",
+          "rotation": [
+            0,
+            0,
+            0
+          ],
+          "solid": true
+        },
+        {
+          "name": "Capital",
+          "size": [
+            4,
+            1,
+            4
+          ],
+          "position": [
+            46,
+            21.5,
+            0
+          ],
+          "color": "brass",
+          "rotation": [
+            0,
+            0,
+            0
+          ],
+          "solid": true
+        },
+        {
+          "name": "ColumnFoot",
+          "size": [
+            3,
+            1,
+            3
+          ],
+          "position": [
+            46,
+            0.5,
+            30
+          ],
+          "color": "brass",
+          "rotation": [
+            0,
+            0,
+            0
+          ],
+          "solid": true
+        },
+        {
+          "name": "Column",
+          "size": [
+            2,
+            20,
+            2
+          ],
+          "position": [
+            46,
+            11.0,
+            30
+          ],
+          "color": "ivory",
+          "rotation": [
+            0,
+            0,
+            0
+          ],
+          "solid": true
+        },
+        {
+          "name": "Capital",
+          "size": [
+            4,
+            1,
+            4
+          ],
+          "position": [
+            46,
+            21.5,
+            30
+          ],
+          "color": "brass",
+          "rotation": [
+            0,
+            0,
+            0
+          ],
+          "solid": true
+        }
+      ],
+      "markers": [
+        {
+          "id": "warning_1",
+          "position": [
+            -30,
+            0.15,
+            23
+          ]
+        },
+        {
+          "id": "warning_2",
+          "position": [
+            0,
+            0.15,
+            23
+          ]
+        },
+        {
+          "id": "warning_3",
+          "position": [
+            30,
+            0.15,
+            23
+          ]
+        },
+        {
+          "id": "warden_trial",
+          "position": [
+            0,
+            0.15,
+            8
+          ]
+        },
+        {
+          "id": "release_oath",
+          "position": [
+            -16,
+            0.15,
+            -20
+          ]
+        },
+        {
+          "id": "renew_oath",
+          "position": [
+            16,
+            0.15,
+            -20
+          ]
+        }
+      ],
+      "footprint": [
+        112,
+        96
+      ],
+      "aisleWidth": 10
+    },
+    {
+      "id": "living_ledger",
+      "kind": "Chapter06Scene",
+      "parts": [
+        {
+          "name": "WalkableFloor",
+          "size": [
+            112,
+            1,
+            96
+          ],
+          "position": [
+            0,
+            -0.5,
+            0
+          ],
+          "color": "navy",
+          "rotation": [
+            0,
+            0,
+            0
+          ],
+          "solid": true
+        },
+        {
+          "name": "LedgerShelf",
+          "size": [
+            8,
+            10,
+            14
+          ],
+          "position": [
+            -44,
+            5,
+            -29
+          ],
+          "color": "dark",
+          "rotation": [
+            0,
+            0,
+            0
+          ],
+          "solid": true
+        },
+        {
+          "name": "NamedVolumes",
+          "size": [
+            6,
+            1.8,
+            12
+          ],
+          "position": [
+            -44,
+            2,
+            -29
+          ],
+          "color": "ivory",
+          "rotation": [
+            0,
+            0,
+            0
+          ],
+          "solid": true
+        },
+        {
+          "name": "NamedVolumes",
+          "size": [
+            6,
+            1.8,
+            12
+          ],
+          "position": [
+            -44,
+            5,
+            -29
+          ],
+          "color": "ivory",
+          "rotation": [
+            0,
+            0,
+            0
+          ],
+          "solid": true
+        },
+        {
+          "name": "NamedVolumes",
+          "size": [
+            6,
+            1.8,
+            12
+          ],
+          "position": [
+            -44,
+            8,
+            -29
+          ],
+          "color": "ivory",
+          "rotation": [
+            0,
+            0,
+            0
+          ],
+          "solid": true
+        },
+        {
+          "name": "LedgerShelf",
+          "size": [
+            8,
+            10,
+            14
+          ],
+          "position": [
+            -44,
+            5,
+            0
+          ],
+          "color": "dark",
+          "rotation": [
+            0,
+            0,
+            0
+          ],
+          "solid": true
+        },
+        {
+          "name": "NamedVolumes",
+          "size": [
+            6,
+            1.8,
+            12
+          ],
+          "position": [
+            -44,
+            2,
+            0
+          ],
+          "color": "ivory",
+          "rotation": [
+            0,
+            0,
+            0
+          ],
+          "solid": true
+        },
+        {
+          "name": "NamedVolumes",
+          "size": [
+            6,
+            1.8,
+            12
+          ],
+          "position": [
+            -44,
+            5,
+            0
+          ],
+          "color": "ivory",
+          "rotation": [
+            0,
+            0,
+            0
+          ],
+          "solid": true
+        },
+        {
+          "name": "NamedVolumes",
+          "size": [
+            6,
+            1.8,
+            12
+          ],
+          "position": [
+            -44,
+            8,
+            0
+          ],
+          "color": "ivory",
+          "rotation": [
+            0,
+            0,
+            0
+          ],
+          "solid": true
+        },
+        {
+          "name": "LedgerShelf",
+          "size": [
+            8,
+            10,
+            14
+          ],
+          "position": [
+            -44,
+            5,
+            29
+          ],
+          "color": "dark",
+          "rotation": [
+            0,
+            0,
+            0
+          ],
+          "solid": true
+        },
+        {
+          "name": "NamedVolumes",
+          "size": [
+            6,
+            1.8,
+            12
+          ],
+          "position": [
+            -44,
+            2,
+            29
+          ],
+          "color": "ivory",
+          "rotation": [
+            0,
+            0,
+            0
+          ],
+          "solid": true
+        },
+        {
+          "name": "NamedVolumes",
+          "size": [
+            6,
+            1.8,
+            12
+          ],
+          "position": [
+            -44,
+            5,
+            29
+          ],
+          "color": "ivory",
+          "rotation": [
+            0,
+            0,
+            0
+          ],
+          "solid": true
+        },
+        {
+          "name": "NamedVolumes",
+          "size": [
+            6,
+            1.8,
+            12
+          ],
+          "position": [
+            -44,
+            8,
+            29
+          ],
+          "color": "ivory",
+          "rotation": [
+            0,
+            0,
+            0
+          ],
+          "solid": true
+        },
+        {
+          "name": "LedgerShelf",
+          "size": [
+            8,
+            10,
+            14
+          ],
+          "position": [
+            44,
+            5,
+            -29
+          ],
+          "color": "dark",
+          "rotation": [
+            0,
+            0,
+            0
+          ],
+          "solid": true
+        },
+        {
+          "name": "NamedVolumes",
+          "size": [
+            6,
+            1.8,
+            12
+          ],
+          "position": [
+            44,
+            2,
+            -29
+          ],
+          "color": "ivory",
+          "rotation": [
+            0,
+            0,
+            0
+          ],
+          "solid": true
+        },
+        {
+          "name": "NamedVolumes",
+          "size": [
+            6,
+            1.8,
+            12
+          ],
+          "position": [
+            44,
+            5,
+            -29
+          ],
+          "color": "ivory",
+          "rotation": [
+            0,
+            0,
+            0
+          ],
+          "solid": true
+        },
+        {
+          "name": "NamedVolumes",
+          "size": [
+            6,
+            1.8,
+            12
+          ],
+          "position": [
+            44,
+            8,
+            -29
+          ],
+          "color": "ivory",
+          "rotation": [
+            0,
+            0,
+            0
+          ],
+          "solid": true
+        },
+        {
+          "name": "LedgerShelf",
+          "size": [
+            8,
+            10,
+            14
+          ],
+          "position": [
+            44,
+            5,
+            0
+          ],
+          "color": "dark",
+          "rotation": [
+            0,
+            0,
+            0
+          ],
+          "solid": true
+        },
+        {
+          "name": "NamedVolumes",
+          "size": [
+            6,
+            1.8,
+            12
+          ],
+          "position": [
+            44,
+            2,
+            0
+          ],
+          "color": "ivory",
+          "rotation": [
+            0,
+            0,
+            0
+          ],
+          "solid": true
+        },
+        {
+          "name": "NamedVolumes",
+          "size": [
+            6,
+            1.8,
+            12
+          ],
+          "position": [
+            44,
+            5,
+            0
+          ],
+          "color": "ivory",
+          "rotation": [
+            0,
+            0,
+            0
+          ],
+          "solid": true
+        },
+        {
+          "name": "NamedVolumes",
+          "size": [
+            6,
+            1.8,
+            12
+          ],
+          "position": [
+            44,
+            8,
+            0
+          ],
+          "color": "ivory",
+          "rotation": [
+            0,
+            0,
+            0
+          ],
+          "solid": true
+        },
+        {
+          "name": "LedgerShelf",
+          "size": [
+            8,
+            10,
+            14
+          ],
+          "position": [
+            44,
+            5,
+            29
+          ],
+          "color": "dark",
+          "rotation": [
+            0,
+            0,
+            0
+          ],
+          "solid": true
+        },
+        {
+          "name": "NamedVolumes",
+          "size": [
+            6,
+            1.8,
+            12
+          ],
+          "position": [
+            44,
+            2,
+            29
+          ],
+          "color": "ivory",
+          "rotation": [
+            0,
+            0,
+            0
+          ],
+          "solid": true
+        },
+        {
+          "name": "NamedVolumes",
+          "size": [
+            6,
+            1.8,
+            12
+          ],
+          "position": [
+            44,
+            5,
+            29
+          ],
+          "color": "ivory",
+          "rotation": [
+            0,
+            0,
+            0
+          ],
+          "solid": true
+        },
+        {
+          "name": "NamedVolumes",
+          "size": [
+            6,
+            1.8,
+            12
+          ],
+          "position": [
+            44,
+            8,
+            29
+          ],
+          "color": "ivory",
+          "rotation": [
+            0,
+            0,
+            0
+          ],
+          "solid": true
+        },
+        {
+          "name": "Desk",
+          "size": [
+            12,
+            0.8,
+            4
+          ],
+          "position": [
+            -28,
+            3,
+            -29
+          ],
+          "color": "wood",
+          "rotation": [
+            0,
+            0,
+            0
+          ],
+          "solid": true
+        },
+        {
+          "name": "DeskLeg",
+          "size": [
+            0.7,
+            3,
+            0.7
+          ],
+          "position": [
+            -33.0,
+            1.5,
+            -30.4
+          ],
+          "color": "brass",
+          "rotation": [
+            0,
+            0,
+            0
+          ],
+          "solid": true
+        },
+        {
+          "name": "DeskLeg",
+          "size": [
+            0.7,
+            3,
+            0.7
+          ],
+          "position": [
+            -33.0,
+            1.5,
+            -27.6
+          ],
+          "color": "brass",
+          "rotation": [
+            0,
+            0,
+            0
+          ],
+          "solid": true
+        },
+        {
+          "name": "DeskLeg",
+          "size": [
+            0.7,
+            3,
+            0.7
+          ],
+          "position": [
+            -23.0,
+            1.5,
+            -30.4
+          ],
+          "color": "brass",
+          "rotation": [
+            0,
+            0,
+            0
+          ],
+          "solid": true
+        },
+        {
+          "name": "DeskLeg",
+          "size": [
+            0.7,
+            3,
+            0.7
+          ],
+          "position": [
+            -23.0,
+            1.5,
+            -27.6
+          ],
+          "color": "brass",
+          "rotation": [
+            0,
+            0,
+            0
+          ],
+          "solid": true
+        },
+        {
+          "name": "Desk",
+          "size": [
+            12,
+            0.8,
+            4
+          ],
+          "position": [
+            -28,
+            3,
+            28
+          ],
+          "color": "wood",
+          "rotation": [
+            0,
+            0,
+            0
+          ],
+          "solid": true
+        },
+        {
+          "name": "DeskLeg",
+          "size": [
+            0.7,
+            3,
+            0.7
+          ],
+          "position": [
+            -33.0,
+            1.5,
+            26.6
+          ],
+          "color": "brass",
+          "rotation": [
+            0,
+            0,
+            0
+          ],
+          "solid": true
+        },
+        {
+          "name": "DeskLeg",
+          "size": [
+            0.7,
+            3,
+            0.7
+          ],
+          "position": [
+            -33.0,
+            1.5,
+            29.4
+          ],
+          "color": "brass",
+          "rotation": [
+            0,
+            0,
+            0
+          ],
+          "solid": true
+        },
+        {
+          "name": "DeskLeg",
+          "size": [
+            0.7,
+            3,
+            0.7
+          ],
+          "position": [
+            -23.0,
+            1.5,
+            26.6
+          ],
+          "color": "brass",
+          "rotation": [
+            0,
+            0,
+            0
+          ],
+          "solid": true
+        },
+        {
+          "name": "DeskLeg",
+          "size": [
+            0.7,
+            3,
+            0.7
+          ],
+          "position": [
+            -23.0,
+            1.5,
+            29.4
+          ],
+          "color": "brass",
+          "rotation": [
+            0,
+            0,
+            0
+          ],
+          "solid": true
+        },
+        {
+          "name": "RecordPlinth",
+          "size": [
+            4,
+            2,
+            3
+          ],
+          "position": [
+            -28,
+            1,
+            0
+          ],
+          "color": "dark",
+          "rotation": [
+            0,
+            0,
+            0
+          ],
+          "solid": true
+        },
+        {
+          "name": "SymbolPanel",
+          "size": [
+            4,
+            4,
+            0.5
+          ],
+          "position": [
+            -28,
+            4,
+            0
+          ],
+          "color": "ivory",
+          "rotation": [
+            0,
+            0,
+            0
+          ],
+          "solid": true
+        },
+        {
+          "name": "CountMark",
+          "size": [
+            0.4,
+            1.6,
+            0.15
+          ],
+          "position": [
+            -28.0,
+            4,
+            0.35
+          ],
+          "color": "violet",
+          "rotation": [
+            0,
+            0,
+            0
+          ],
+          "solid": false
+        },
+        {
+          "name": "Desk",
+          "size": [
+            12,
+            0.8,
+            4
+          ],
+          "position": [
+            0,
+            3,
+            -29
+          ],
+          "color": "wood",
+          "rotation": [
+            0,
+            0,
+            0
+          ],
+          "solid": true
+        },
+        {
+          "name": "DeskLeg",
+          "size": [
+            0.7,
+            3,
+            0.7
+          ],
+          "position": [
+            -5.0,
+            1.5,
+            -30.4
+          ],
+          "color": "brass",
+          "rotation": [
+            0,
+            0,
+            0
+          ],
+          "solid": true
+        },
+        {
+          "name": "DeskLeg",
+          "size": [
+            0.7,
+            3,
+            0.7
+          ],
+          "position": [
+            -5.0,
+            1.5,
+            -27.6
+          ],
+          "color": "brass",
+          "rotation": [
+            0,
+            0,
+            0
+          ],
+          "solid": true
+        },
+        {
+          "name": "DeskLeg",
+          "size": [
+            0.7,
+            3,
+            0.7
+          ],
+          "position": [
+            5.0,
+            1.5,
+            -30.4
+          ],
+          "color": "brass",
+          "rotation": [
+            0,
+            0,
+            0
+          ],
+          "solid": true
+        },
+        {
+          "name": "DeskLeg",
+          "size": [
+            0.7,
+            3,
+            0.7
+          ],
+          "position": [
+            5.0,
+            1.5,
+            -27.6
+          ],
+          "color": "brass",
+          "rotation": [
+            0,
+            0,
+            0
+          ],
+          "solid": true
+        },
+        {
+          "name": "Desk",
+          "size": [
+            12,
+            0.8,
+            4
+          ],
+          "position": [
+            0,
+            3,
+            28
+          ],
+          "color": "wood",
+          "rotation": [
+            0,
+            0,
+            0
+          ],
+          "solid": true
+        },
+        {
+          "name": "DeskLeg",
+          "size": [
+            0.7,
+            3,
+            0.7
+          ],
+          "position": [
+            -5.0,
+            1.5,
+            26.6
+          ],
+          "color": "brass",
+          "rotation": [
+            0,
+            0,
+            0
+          ],
+          "solid": true
+        },
+        {
+          "name": "DeskLeg",
+          "size": [
+            0.7,
+            3,
+            0.7
+          ],
+          "position": [
+            -5.0,
+            1.5,
+            29.4
+          ],
+          "color": "brass",
+          "rotation": [
+            0,
+            0,
+            0
+          ],
+          "solid": true
+        },
+        {
+          "name": "DeskLeg",
+          "size": [
+            0.7,
+            3,
+            0.7
+          ],
+          "position": [
+            5.0,
+            1.5,
+            26.6
+          ],
+          "color": "brass",
+          "rotation": [
+            0,
+            0,
+            0
+          ],
+          "solid": true
+        },
+        {
+          "name": "DeskLeg",
+          "size": [
+            0.7,
+            3,
+            0.7
+          ],
+          "position": [
+            5.0,
+            1.5,
+            29.4
+          ],
+          "color": "brass",
+          "rotation": [
+            0,
+            0,
+            0
+          ],
+          "solid": true
+        },
+        {
+          "name": "RecordPlinth",
+          "size": [
+            4,
+            2,
+            3
+          ],
+          "position": [
+            0,
+            1,
+            0
+          ],
+          "color": "dark",
+          "rotation": [
+            0,
+            0,
+            0
+          ],
+          "solid": true
+        },
+        {
+          "name": "SymbolPanel",
+          "size": [
+            4,
+            4,
+            0.5
+          ],
+          "position": [
+            0,
+            4,
+            0
+          ],
+          "color": "ivory",
+          "rotation": [
+            0,
+            0,
+            0
+          ],
+          "solid": true
+        },
+        {
+          "name": "CountMark",
+          "size": [
+            0.4,
+            1.6,
+            0.15
+          ],
+          "position": [
+            -0.4,
+            4,
+            0.35
+          ],
+          "color": "violet",
+          "rotation": [
+            0,
+            0,
+            0
+          ],
+          "solid": false
+        },
+        {
+          "name": "CountMark",
+          "size": [
+            0.4,
+            1.6,
+            0.15
+          ],
+          "position": [
+            0.4,
+            4,
+            0.35
+          ],
+          "color": "violet",
+          "rotation": [
+            0,
+            0,
+            0
+          ],
+          "solid": false
+        },
+        {
+          "name": "Desk",
+          "size": [
+            12,
+            0.8,
+            4
+          ],
+          "position": [
+            28,
+            3,
+            -29
+          ],
+          "color": "wood",
+          "rotation": [
+            0,
+            0,
+            0
+          ],
+          "solid": true
+        },
+        {
+          "name": "DeskLeg",
+          "size": [
+            0.7,
+            3,
+            0.7
+          ],
+          "position": [
+            23.0,
+            1.5,
+            -30.4
+          ],
+          "color": "brass",
+          "rotation": [
+            0,
+            0,
+            0
+          ],
+          "solid": true
+        },
+        {
+          "name": "DeskLeg",
+          "size": [
+            0.7,
+            3,
+            0.7
+          ],
+          "position": [
+            23.0,
+            1.5,
+            -27.6
+          ],
+          "color": "brass",
+          "rotation": [
+            0,
+            0,
+            0
+          ],
+          "solid": true
+        },
+        {
+          "name": "DeskLeg",
+          "size": [
+            0.7,
+            3,
+            0.7
+          ],
+          "position": [
+            33.0,
+            1.5,
+            -30.4
+          ],
+          "color": "brass",
+          "rotation": [
+            0,
+            0,
+            0
+          ],
+          "solid": true
+        },
+        {
+          "name": "DeskLeg",
+          "size": [
+            0.7,
+            3,
+            0.7
+          ],
+          "position": [
+            33.0,
+            1.5,
+            -27.6
+          ],
+          "color": "brass",
+          "rotation": [
+            0,
+            0,
+            0
+          ],
+          "solid": true
+        },
+        {
+          "name": "Desk",
+          "size": [
+            12,
+            0.8,
+            4
+          ],
+          "position": [
+            28,
+            3,
+            28
+          ],
+          "color": "wood",
+          "rotation": [
+            0,
+            0,
+            0
+          ],
+          "solid": true
+        },
+        {
+          "name": "DeskLeg",
+          "size": [
+            0.7,
+            3,
+            0.7
+          ],
+          "position": [
+            23.0,
+            1.5,
+            26.6
+          ],
+          "color": "brass",
+          "rotation": [
+            0,
+            0,
+            0
+          ],
+          "solid": true
+        },
+        {
+          "name": "DeskLeg",
+          "size": [
+            0.7,
+            3,
+            0.7
+          ],
+          "position": [
+            23.0,
+            1.5,
+            29.4
+          ],
+          "color": "brass",
+          "rotation": [
+            0,
+            0,
+            0
+          ],
+          "solid": true
+        },
+        {
+          "name": "DeskLeg",
+          "size": [
+            0.7,
+            3,
+            0.7
+          ],
+          "position": [
+            33.0,
+            1.5,
+            26.6
+          ],
+          "color": "brass",
+          "rotation": [
+            0,
+            0,
+            0
+          ],
+          "solid": true
+        },
+        {
+          "name": "DeskLeg",
+          "size": [
+            0.7,
+            3,
+            0.7
+          ],
+          "position": [
+            33.0,
+            1.5,
+            29.4
+          ],
+          "color": "brass",
+          "rotation": [
+            0,
+            0,
+            0
+          ],
+          "solid": true
+        },
+        {
+          "name": "RecordPlinth",
+          "size": [
+            4,
+            2,
+            3
+          ],
+          "position": [
+            28,
+            1,
+            0
+          ],
+          "color": "dark",
+          "rotation": [
+            0,
+            0,
+            0
+          ],
+          "solid": true
+        },
+        {
+          "name": "SymbolPanel",
+          "size": [
+            4,
+            4,
+            0.5
+          ],
+          "position": [
+            28,
+            4,
+            0
+          ],
+          "color": "ivory",
+          "rotation": [
+            0,
+            0,
+            0
+          ],
+          "solid": true
+        },
+        {
+          "name": "CountMark",
+          "size": [
+            0.4,
+            1.6,
+            0.15
+          ],
+          "position": [
+            27.2,
+            4,
+            0.35
+          ],
+          "color": "violet",
+          "rotation": [
+            0,
+            0,
+            0
+          ],
+          "solid": false
+        },
+        {
+          "name": "CountMark",
+          "size": [
+            0.4,
+            1.6,
+            0.15
+          ],
+          "position": [
+            28.0,
+            4,
+            0.35
+          ],
+          "color": "violet",
+          "rotation": [
+            0,
+            0,
+            0
+          ],
+          "solid": false
+        },
+        {
+          "name": "CountMark",
+          "size": [
+            0.4,
+            1.6,
+            0.15
+          ],
+          "position": [
+            28.8,
+            4,
+            0.35
+          ],
+          "color": "violet",
+          "rotation": [
+            0,
+            0,
+            0
+          ],
+          "solid": false
+        }
+      ],
+      "markers": [
+        {
+          "id": "recover_1",
+          "position": [
+            -28,
+            0.15,
+            -21
+          ]
+        },
+        {
+          "id": "backup_1",
+          "position": [
+            -28,
+            0.15,
+            21
+          ]
+        },
+        {
+          "id": "interlock_1",
+          "position": [
+            -28,
+            0.15,
+            7
+          ]
+        },
+        {
+          "id": "recover_2",
+          "position": [
+            0,
+            0.15,
+            -21
+          ]
+        },
+        {
+          "id": "backup_2",
+          "position": [
+            0,
+            0.15,
+            21
+          ]
+        },
+        {
+          "id": "interlock_2",
+          "position": [
+            0,
+            0.15,
+            7
+          ]
+        },
+        {
+          "id": "recover_3",
+          "position": [
+            28,
+            0.15,
+            -21
+          ]
+        },
+        {
+          "id": "backup_3",
+          "position": [
+            28,
+            0.15,
+            21
+          ]
+        },
+        {
+          "id": "interlock_3",
+          "position": [
+            28,
+            0.15,
+            7
+          ]
+        },
+        {
+          "id": "recovery_start",
+          "position": [
+            0,
+            0.15,
+            37
+          ]
+        }
+      ],
+      "footprint": [
+        112,
+        96
+      ],
+      "aisleWidth": 10
+    },
+    {
+      "id": "alliance_gate",
+      "kind": "Chapter06Scene",
+      "parts": [
+        {
+          "name": "WalkableFloor",
+          "size": [
+            112,
+            1,
+            96
+          ],
+          "position": [
+            0,
+            -0.5,
+            0
+          ],
+          "color": "navy",
+          "rotation": [
+            0,
+            0,
+            0
+          ],
+          "solid": true
+        },
+        {
+          "name": "BannerPole",
+          "size": [
+            0.6,
+            14,
+            0.6
+          ],
+          "position": [
+            -40,
+            7,
+            -32
+          ],
+          "color": "brass",
+          "rotation": [
+            0,
+            0,
+            0
+          ],
+          "solid": true
+        },
+        {
+          "name": "Banner",
+          "size": [
+            4,
+            7,
+            0.3
+          ],
+          "position": [
+            -37.8,
+            10,
+            -32
+          ],
+          "color": "amber",
+          "rotation": [
+            0,
+            0,
+            0
+          ],
+          "solid": false
+        },
+        {
+          "name": "BannerPole",
+          "size": [
+            0.6,
+            14,
+            0.6
+          ],
+          "position": [
+            -20,
+            7,
+            -32
+          ],
+          "color": "brass",
+          "rotation": [
+            0,
+            0,
+            0
+          ],
+          "solid": true
+        },
+        {
+          "name": "Banner",
+          "size": [
+            4,
+            7,
+            0.3
+          ],
+          "position": [
+            -17.8,
+            10,
+            -32
+          ],
+          "color": "teal",
+          "rotation": [
+            0,
+            0,
+            0
+          ],
+          "solid": false
+        },
+        {
+          "name": "BannerPole",
+          "size": [
+            0.6,
+            14,
+            0.6
+          ],
+          "position": [
+            0,
+            7,
+            -32
+          ],
+          "color": "brass",
+          "rotation": [
+            0,
+            0,
+            0
+          ],
+          "solid": true
+        },
+        {
+          "name": "Banner",
+          "size": [
+            4,
+            7,
+            0.3
+          ],
+          "position": [
+            2.2,
+            10,
+            -32
+          ],
+          "color": "brass",
+          "rotation": [
+            0,
+            0,
+            0
+          ],
+          "solid": false
+        },
+        {
+          "name": "BannerPole",
+          "size": [
+            0.6,
+            14,
+            0.6
+          ],
+          "position": [
+            20,
+            7,
+            -32
+          ],
+          "color": "brass",
+          "rotation": [
+            0,
+            0,
+            0
+          ],
+          "solid": true
+        },
+        {
+          "name": "Banner",
+          "size": [
+            4,
+            7,
+            0.3
+          ],
+          "position": [
+            22.2,
+            10,
+            -32
+          ],
+          "color": "violet",
+          "rotation": [
+            0,
+            0,
+            0
+          ],
+          "solid": false
+        },
+        {
+          "name": "BannerPole",
+          "size": [
+            0.6,
+            14,
+            0.6
+          ],
+          "position": [
+            40,
+            7,
+            -32
+          ],
+          "color": "brass",
+          "rotation": [
+            0,
+            0,
+            0
+          ],
+          "solid": true
+        },
+        {
+          "name": "Banner",
+          "size": [
+            4,
+            7,
+            0.3
+          ],
+          "position": [
+            42.2,
+            10,
+            -32
+          ],
+          "color": "cloth",
+          "rotation": [
+            0,
+            0,
+            0
+          ],
+          "solid": false
+        },
+        {
+          "name": "ColumnFoot",
+          "size": [
+            3,
+            1,
+            3
+          ],
+          "position": [
+            -14.0,
+            0.5,
+            28
+          ],
+          "color": "brass",
+          "rotation": [
+            0,
+            0,
+            0
+          ],
+          "solid": true
+        },
+        {
+          "name": "Column",
+          "size": [
+            2,
+            16,
+            2
+          ],
+          "position": [
+            -14.0,
+            9.0,
+            28
+          ],
+          "color": "ivory",
+          "rotation": [
+            0,
+            0,
+            0
+          ],
+          "solid": true
+        },
+        {
+          "name": "Capital",
+          "size": [
+            4,
+            1,
+            4
+          ],
+          "position": [
+            -14.0,
+            17.5,
+            28
+          ],
+          "color": "brass",
+          "rotation": [
+            0,
+            0,
+            0
+          ],
+          "solid": true
+        },
+        {
+          "name": "ColumnFoot",
+          "size": [
+            3,
+            1,
+            3
+          ],
+          "position": [
+            14.0,
+            0.5,
+            28
+          ],
+          "color": "brass",
+          "rotation": [
+            0,
+            0,
+            0
+          ],
+          "solid": true
+        },
+        {
+          "name": "Column",
+          "size": [
+            2,
+            16,
+            2
+          ],
+          "position": [
+            14.0,
+            9.0,
+            28
+          ],
+          "color": "ivory",
+          "rotation": [
+            0,
+            0,
+            0
+          ],
+          "solid": true
+        },
+        {
+          "name": "Capital",
+          "size": [
+            4,
+            1,
+            4
+          ],
+          "position": [
+            14.0,
+            17.5,
+            28
+          ],
+          "color": "brass",
+          "rotation": [
+            0,
+            0,
+            0
+          ],
+          "solid": true
+        },
+        {
+          "name": "OpenLintel",
+          "size": [
+            32,
+            2,
+            3
+          ],
+          "position": [
+            0,
+            19,
+            28
+          ],
+          "color": "ivory",
+          "rotation": [
+            0,
+            0,
+            0
+          ],
+          "solid": true
+        }
+      ],
+      "markers": [
+        {
+          "id": "pledge_1",
+          "position": [
+            -40,
+            0.15,
+            -22
+          ]
+        },
+        {
+          "id": "pledge_2",
+          "position": [
+            -20,
+            0.15,
+            -22
+          ]
+        },
+        {
+          "id": "pledge_3",
+          "position": [
+            0,
+            0.15,
+            -22
+          ]
+        },
+        {
+          "id": "pledge_4",
+          "position": [
+            20,
+            0.15,
+            -22
+          ]
+        },
+        {
+          "id": "pledge_5",
+          "position": [
+            40,
+            0.15,
+            -22
+          ]
+        },
+        {
+          "id": "ward_1",
+          "position": [
+            -12,
+            0.15,
+            0
+          ]
+        },
+        {
+          "id": "ward_2",
+          "position": [
+            0,
+            0.15,
+            0
+          ]
+        },
+        {
+          "id": "ward_3",
+          "position": [
+            12,
+            0.15,
+            0
+          ]
+        },
+        {
+          "id": "evacuation_station",
+          "position": [
+            0,
+            0.15,
+            12
+          ]
+        },
+        {
+          "id": "heart_gate",
+          "position": [
+            0,
+            0.15,
+            21
+          ]
+        }
+      ],
+      "footprint": [
+        112,
+        96
+      ],
+      "aisleWidth": 10
+    },
+    {
+      "id": "heart_chamber",
+      "kind": "Chapter06Scene",
+      "parts": [
+        {
+          "name": "WalkableFloor",
+          "size": [
+            112,
+            1,
+            112
+          ],
+          "position": [
+            0,
+            -0.5,
+            0
+          ],
+          "color": "navy",
+          "rotation": [
+            0,
+            0,
+            0
+          ],
+          "solid": true
+        },
+        {
+          "name": "ColumnFoot",
+          "size": [
+            3,
+            1,
+            3
+          ],
+          "position": [
+            -46,
+            0.5,
+            -42
+          ],
+          "color": "brass",
+          "rotation": [
+            0,
+            0,
+            0
+          ],
+          "solid": true
+        },
+        {
+          "name": "Column",
+          "size": [
+            2,
+            23,
+            2
+          ],
+          "position": [
+            -46,
+            12.5,
+            -42
+          ],
+          "color": "ivory",
+          "rotation": [
+            0,
+            0,
+            0
+          ],
+          "solid": true
+        },
+        {
+          "name": "Capital",
+          "size": [
+            4,
+            1,
+            4
+          ],
+          "position": [
+            -46,
+            24.5,
+            -42
+          ],
+          "color": "brass",
+          "rotation": [
+            0,
+            0,
+            0
+          ],
+          "solid": true
+        },
+        {
+          "name": "ColumnFoot",
+          "size": [
+            3,
+            1,
+            3
+          ],
+          "position": [
+            -46,
+            0.5,
+            0
+          ],
+          "color": "brass",
+          "rotation": [
+            0,
+            0,
+            0
+          ],
+          "solid": true
+        },
+        {
+          "name": "Column",
+          "size": [
+            2,
+            23,
+            2
+          ],
+          "position": [
+            -46,
+            12.5,
+            0
+          ],
+          "color": "ivory",
+          "rotation": [
+            0,
+            0,
+            0
+          ],
+          "solid": true
+        },
+        {
+          "name": "Capital",
+          "size": [
+            4,
+            1,
+            4
+          ],
+          "position": [
+            -46,
+            24.5,
+            0
+          ],
+          "color": "brass",
+          "rotation": [
+            0,
+            0,
+            0
+          ],
+          "solid": true
+        },
+        {
+          "name": "ColumnFoot",
+          "size": [
+            3,
+            1,
+            3
+          ],
+          "position": [
+            -46,
+            0.5,
+            42
+          ],
+          "color": "brass",
+          "rotation": [
+            0,
+            0,
+            0
+          ],
+          "solid": true
+        },
+        {
+          "name": "Column",
+          "size": [
+            2,
+            23,
+            2
+          ],
+          "position": [
+            -46,
+            12.5,
+            42
+          ],
+          "color": "ivory",
+          "rotation": [
+            0,
+            0,
+            0
+          ],
+          "solid": true
+        },
+        {
+          "name": "Capital",
+          "size": [
+            4,
+            1,
+            4
+          ],
+          "position": [
+            -46,
+            24.5,
+            42
+          ],
+          "color": "brass",
+          "rotation": [
+            0,
+            0,
+            0
+          ],
+          "solid": true
+        },
+        {
+          "name": "ColumnFoot",
+          "size": [
+            3,
+            1,
+            3
+          ],
+          "position": [
+            46,
+            0.5,
+            -42
+          ],
+          "color": "brass",
+          "rotation": [
+            0,
+            0,
+            0
+          ],
+          "solid": true
+        },
+        {
+          "name": "Column",
+          "size": [
+            2,
+            23,
+            2
+          ],
+          "position": [
+            46,
+            12.5,
+            -42
+          ],
+          "color": "ivory",
+          "rotation": [
+            0,
+            0,
+            0
+          ],
+          "solid": true
+        },
+        {
+          "name": "Capital",
+          "size": [
+            4,
+            1,
+            4
+          ],
+          "position": [
+            46,
+            24.5,
+            -42
+          ],
+          "color": "brass",
+          "rotation": [
+            0,
+            0,
+            0
+          ],
+          "solid": true
+        },
+        {
+          "name": "ColumnFoot",
+          "size": [
+            3,
+            1,
+            3
+          ],
+          "position": [
+            46,
+            0.5,
+            0
+          ],
+          "color": "brass",
+          "rotation": [
+            0,
+            0,
+            0
+          ],
+          "solid": true
+        },
+        {
+          "name": "Column",
+          "size": [
+            2,
+            23,
+            2
+          ],
+          "position": [
+            46,
+            12.5,
+            0
+          ],
+          "color": "ivory",
+          "rotation": [
+            0,
+            0,
+            0
+          ],
+          "solid": true
+        },
+        {
+          "name": "Capital",
+          "size": [
+            4,
+            1,
+            4
+          ],
+          "position": [
+            46,
+            24.5,
+            0
+          ],
+          "color": "brass",
+          "rotation": [
+            0,
+            0,
+            0
+          ],
+          "solid": true
+        },
+        {
+          "name": "ColumnFoot",
+          "size": [
+            3,
+            1,
+            3
+          ],
+          "position": [
+            46,
+            0.5,
+            42
+          ],
+          "color": "brass",
+          "rotation": [
+            0,
+            0,
+            0
+          ],
+          "solid": true
+        },
+        {
+          "name": "Column",
+          "size": [
+            2,
+            23,
+            2
+          ],
+          "position": [
+            46,
+            12.5,
+            42
+          ],
+          "color": "ivory",
+          "rotation": [
+            0,
+            0,
+            0
+          ],
+          "solid": true
+        },
+        {
+          "name": "Capital",
+          "size": [
+            4,
+            1,
+            4
+          ],
+          "position": [
+            46,
+            24.5,
+            42
+          ],
+          "color": "brass",
+          "rotation": [
+            0,
+            0,
+            0
+          ],
+          "solid": true
+        },
+        {
+          "name": "HeartCircuit",
+          "size": [
+            3,
+            0.08,
+            8
+          ],
+          "position": [
+            0.0,
+            0.06,
+            35.0
+          ],
+          "color": "teal",
+          "rotation": [
+            0,
+            0,
+            0
+          ],
+          "solid": false
+        },
+        {
+          "name": "HeartCircuit",
+          "size": [
+            3,
+            0.08,
+            8
+          ],
+          "position": [
+            17.499999999999996,
+            0.06,
+            30.310889132455355
+          ],
+          "color": "teal",
+          "rotation": [
+            0,
+            30,
+            0
+          ],
+          "solid": false
+        },
+        {
+          "name": "HeartCircuit",
+          "size": [
+            3,
+            0.08,
+            8
+          ],
+          "position": [
+            30.31088913245535,
+            0.06,
+            17.500000000000004
+          ],
+          "color": "teal",
+          "rotation": [
+            0,
+            60,
+            0
+          ],
+          "solid": false
+        },
+        {
+          "name": "HeartCircuit",
+          "size": [
+            3,
+            0.08,
+            8
+          ],
+          "position": [
+            35.0,
+            0.06,
+            2.1431318985078682e-15
+          ],
+          "color": "teal",
+          "rotation": [
+            0,
+            90,
+            0
+          ],
+          "solid": false
+        },
+        {
+          "name": "HeartCircuit",
+          "size": [
+            3,
+            0.08,
+            8
+          ],
+          "position": [
+            30.310889132455355,
+            0.06,
+            -17.499999999999993
+          ],
+          "color": "teal",
+          "rotation": [
+            0,
+            120,
+            0
+          ],
+          "solid": false
+        },
+        {
+          "name": "HeartCircuit",
+          "size": [
+            3,
+            0.08,
+            8
+          ],
+          "position": [
+            17.499999999999996,
+            0.06,
+            -30.310889132455355
+          ],
+          "color": "teal",
+          "rotation": [
+            0,
+            150,
+            0
+          ],
+          "solid": false
+        },
+        {
+          "name": "HeartCircuit",
+          "size": [
+            3,
+            0.08,
+            8
+          ],
+          "position": [
+            4.2862637970157365e-15,
+            0.06,
+            -35.0
+          ],
+          "color": "teal",
+          "rotation": [
+            0,
+            180,
+            0
+          ],
+          "solid": false
+        },
+        {
+          "name": "HeartCircuit",
+          "size": [
+            3,
+            0.08,
+            8
+          ],
+          "position": [
+            -17.49999999999999,
+            0.06,
+            -30.310889132455358
+          ],
+          "color": "teal",
+          "rotation": [
+            0,
+            210,
+            0
+          ],
+          "solid": false
+        },
+        {
+          "name": "HeartCircuit",
+          "size": [
+            3,
+            0.08,
+            8
+          ],
+          "position": [
+            -30.310889132455348,
+            0.06,
+            -17.500000000000014
+          ],
+          "color": "teal",
+          "rotation": [
+            0,
+            240,
+            0
+          ],
+          "solid": false
+        },
+        {
+          "name": "HeartCircuit",
+          "size": [
+            3,
+            0.08,
+            8
+          ],
+          "position": [
+            -35.0,
+            0.06,
+            -6.429395695523604e-15
+          ],
+          "color": "teal",
+          "rotation": [
+            0,
+            270,
+            0
+          ],
+          "solid": false
+        },
+        {
+          "name": "HeartCircuit",
+          "size": [
+            3,
+            0.08,
+            8
+          ],
+          "position": [
+            -30.31088913245535,
+            0.06,
+            17.500000000000004
+          ],
+          "color": "teal",
+          "rotation": [
+            0,
+            300,
+            0
+          ],
+          "solid": false
+        },
+        {
+          "name": "HeartCircuit",
+          "size": [
+            3,
+            0.08,
+            8
+          ],
+          "position": [
+            -17.500000000000014,
+            0.06,
+            30.310889132455344
+          ],
+          "color": "teal",
+          "rotation": [
+            0,
+            330,
+            0
+          ],
+          "solid": false
+        },
+        {
+          "name": "RecordPlinth",
+          "size": [
+            4,
+            2,
+            3
+          ],
+          "position": [
+            -30,
+            1,
+            -40
+          ],
+          "color": "dark",
+          "rotation": [
+            0,
+            0,
+            0
+          ],
+          "solid": true
+        },
+        {
+          "name": "SymbolPanel",
+          "size": [
+            4,
+            4,
+            0.5
+          ],
+          "position": [
+            -30,
+            4,
+            -40
+          ],
+          "color": "ivory",
+          "rotation": [
+            0,
+            0,
+            0
+          ],
+          "solid": true
+        },
+        {
+          "name": "CountMark",
+          "size": [
+            0.4,
+            1.6,
+            0.15
+          ],
+          "position": [
+            -30.0,
+            4,
+            -39.65
+          ],
+          "color": "amber",
+          "rotation": [
+            0,
+            0,
+            0
+          ],
+          "solid": false
+        },
+        {
+          "name": "RecordPlinth",
+          "size": [
+            4,
+            2,
+            3
+          ],
+          "position": [
+            0,
+            1,
+            -40
+          ],
+          "color": "dark",
+          "rotation": [
+            0,
+            0,
+            0
+          ],
+          "solid": true
+        },
+        {
+          "name": "SymbolPanel",
+          "size": [
+            4,
+            4,
+            0.5
+          ],
+          "position": [
+            0,
+            4,
+            -40
+          ],
+          "color": "ivory",
+          "rotation": [
+            0,
+            0,
+            0
+          ],
+          "solid": true
+        },
+        {
+          "name": "CountMark",
+          "size": [
+            0.4,
+            1.6,
+            0.15
+          ],
+          "position": [
+            -0.4,
+            4,
+            -39.65
+          ],
+          "color": "teal",
+          "rotation": [
+            0,
+            0,
+            0
+          ],
+          "solid": false
+        },
+        {
+          "name": "CountMark",
+          "size": [
+            0.4,
+            1.6,
+            0.15
+          ],
+          "position": [
+            0.4,
+            4,
+            -39.65
+          ],
+          "color": "teal",
+          "rotation": [
+            0,
+            0,
+            0
+          ],
+          "solid": false
+        },
+        {
+          "name": "RecordPlinth",
+          "size": [
+            4,
+            2,
+            3
+          ],
+          "position": [
+            30,
+            1,
+            -40
+          ],
+          "color": "dark",
+          "rotation": [
+            0,
+            0,
+            0
+          ],
+          "solid": true
+        },
+        {
+          "name": "SymbolPanel",
+          "size": [
+            4,
+            4,
+            0.5
+          ],
+          "position": [
+            30,
+            4,
+            -40
+          ],
+          "color": "ivory",
+          "rotation": [
+            0,
+            0,
+            0
+          ],
+          "solid": true
+        },
+        {
+          "name": "CountMark",
+          "size": [
+            0.4,
+            1.6,
+            0.15
+          ],
+          "position": [
+            29.2,
+            4,
+            -39.65
+          ],
+          "color": "violet",
+          "rotation": [
+            0,
+            0,
+            0
+          ],
+          "solid": false
+        },
+        {
+          "name": "CountMark",
+          "size": [
+            0.4,
+            1.6,
+            0.15
+          ],
+          "position": [
+            30.0,
+            4,
+            -39.65
+          ],
+          "color": "violet",
+          "rotation": [
+            0,
+            0,
+            0
+          ],
+          "solid": false
+        },
+        {
+          "name": "CountMark",
+          "size": [
+            0.4,
+            1.6,
+            0.15
+          ],
+          "position": [
+            30.8,
+            4,
+            -39.65
+          ],
+          "color": "violet",
+          "rotation": [
+            0,
+            0,
+            0
+          ],
+          "solid": false
+        },
+        {
+          "name": "Desk",
+          "size": [
+            18,
+            0.8,
+            4
+          ],
+          "position": [
+            0,
+            3,
+            44
+          ],
+          "color": "wood",
+          "rotation": [
+            0,
+            0,
+            0
+          ],
+          "solid": true
+        },
+        {
+          "name": "DeskLeg",
+          "size": [
+            0.7,
+            3,
+            0.7
+          ],
+          "position": [
+            -8.0,
+            1.5,
+            42.6
+          ],
+          "color": "brass",
+          "rotation": [
+            0,
+            0,
+            0
+          ],
+          "solid": true
+        },
+        {
+          "name": "DeskLeg",
+          "size": [
+            0.7,
+            3,
+            0.7
+          ],
+          "position": [
+            -8.0,
+            1.5,
+            45.4
+          ],
+          "color": "brass",
+          "rotation": [
+            0,
+            0,
+            0
+          ],
+          "solid": true
+        },
+        {
+          "name": "DeskLeg",
+          "size": [
+            0.7,
+            3,
+            0.7
+          ],
+          "position": [
+            8.0,
+            1.5,
+            42.6
+          ],
+          "color": "brass",
+          "rotation": [
+            0,
+            0,
+            0
+          ],
+          "solid": true
+        },
+        {
+          "name": "DeskLeg",
+          "size": [
+            0.7,
+            3,
+            0.7
+          ],
+          "position": [
+            8.0,
+            1.5,
+            45.4
+          ],
+          "color": "brass",
+          "rotation": [
+            0,
+            0,
+            0
+          ],
+          "solid": true
+        }
+      ],
+      "markers": [
+        {
+          "id": "ending_preserve",
+          "position": [
+            -30,
+            0.15,
+            -32
+          ]
+        },
+        {
+          "id": "ending_transform",
+          "position": [
+            0,
+            0.15,
+            -32
+          ]
+        },
+        {
+          "id": "ending_dismantle",
+          "position": [
+            30,
+            0.15,
+            -32
+          ]
+        },
+        {
+          "id": "keeper_trial",
+          "position": [
+            0,
+            0.15,
+            19
+          ]
+        },
+        {
+          "id": "epilogue_record",
+          "position": [
+            0,
+            0.15,
+            36
+          ]
+        }
+      ],
+      "footprint": [
+        112,
+        112
+      ],
+      "aisleWidth": 10
+    }
+  ]
+}

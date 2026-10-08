@@ -1,0 +1,110 @@
+{
+  "rig": "Guildborne_Sentinel_Rig",
+  "bones": 16,
+  "triangles": 288,
+  "vertices": 192,
+  "weightsPerVertex": 1,
+  "clips": [
+    {
+      "name": "Idle",
+      "file": "GB_Idle.fbx",
+      "frames": 61,
+      "fps": 30,
+      "seconds": 2,
+      "loop": true,
+      "rootMotion": false,
+      "robloxAnimationId": null,
+      "status": "LOCAL_CANDIDATE"
+    },
+    {
+      "name": "Walk",
+      "file": "GB_Walk.fbx",
+      "frames": 31,
+      "fps": 30,
+      "seconds": 1,
+      "loop": true,
+      "rootMotion": false,
+      "robloxAnimationId": null,
+      "status": "LOCAL_CANDIDATE"
+    },
+    {
+      "name": "Run",
+      "file": "GB_Run.fbx",
+      "frames": 25,
+      "fps": 30,
+      "seconds": 0.8,
+      "loop": true,
+      "rootMotion": false,
+      "robloxAnimationId": null,
+      "status": "LOCAL_CANDIDATE"
+    },
+    {
+      "name": "Slash",
+      "file": "GB_Slash.fbx",
+      "frames": 31,
+      "fps": 30,
+      "seconds": 1,
+      "loop": false,
+      "rootMotion": false,
+      "robloxAnimationId": null,
+      "status": "LOCAL_CANDIDATE"
+    },
+    {
+      "name": "Cast",
+      "file": "GB_Cast.fbx",
+      "frames": 46,
+      "fps": 30,
+      "seconds": 1.5,
+      "loop": false,
+      "rootMotion": false,
+      "robloxAnimationId": null,
+      "status": "LOCAL_CANDIDATE"
+    },
+    {
+      "name": "Dodge",
+      "file": "GB_Dodge.fbx",
+      "frames": 25,
+      "fps": 30,
+      "seconds": 0.8,
+      "loop": false,
+      "rootMotion": false,
+      "robloxAnimationId": null,
+      "status": "LOCAL_CANDIDATE"
+    },
+    {
+      "name": "Hit",
+      "file": "GB_Hit.fbx",
+      "frames": 16,
+      "fps": 30,
+      "seconds": 0.5,
+      "loop": false,
+      "rootMotion": false,
+      "robloxAnimationId": null,
+      "status": "LOCAL_CANDIDATE"
+    },
+    {
+      "name": "Down",
+      "file": "GB_Down.fbx",
+      "frames": 31,
+      "fps": 30,
+      "seconds": 1,
+      "loop": false,
+      "rootMotion": false,
+      "robloxAnimationId": null,
+      "status": "LOCAL_CANDIDATE"
+    },
+    {
+      "name": "Recover",
+      "file": "GB_Recover.fbx",
+      "frames": 37,
+      "fps": 30,
+      "seconds": 1.2,
+      "loop": false,
+      "rootMotion": false,
+      "robloxAnimationId": null,
+      "status": "LOCAL_CANDIDATE"
+    }
+  ],
+  "studioImportVerified": false,
+  "avatarCertified": false
+}

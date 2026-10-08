@@ -1,0 +1,52 @@
+C:\Work\MySelf\Guildborne\tools\blender_weapon_kit.py:12: DeprecationWarning: 'Material.use_nodes' is expected to be removed in Blender 6.0
+  m=bpy.data.materials.new(name);m.use_nodes=True;m.diffuse_color=(*map(linear,rgb),1)
+
+FBX export starting... 'C:\\Work\\MySelf\\Guildborne\\assets\\uat01\\weapon-kit\\watchblade.fbx'
+export finished in 0.0053 sec.
+INFO Draco is available, use library at C:\Program Files\Blender Foundation\Blender 5.2\5.2\scripts\addons_core\io_scene_gltf2\bf_intern_draco_bridge.dll
+INFO MeshOptimizer is available, use library at C:\Program Files\Blender Foundation\Blender 5.2\5.2\scripts\addons_core\io_scene_gltf2\bf_intern_meshopt_bridge.dll
+00:27:12 | INFO: Starting glTF 2.0 export
+00:27:12 | INFO: Extracting primitive: Cube
+00:27:12 | INFO: Primitives created: 3
+00:27:12 | INFO: Finished glTF 2.0 export in 0.06001877784729004 s
+
+
+FBX export starting... 'C:\\Work\\MySelf\\Guildborne\\assets\\uat01\\weapon-kit\\oathblade.fbx'
+export finished in 0.0044 sec.
+00:27:12 | INFO: Starting glTF 2.0 export
+00:27:12 | INFO: Extracting primitive: Cube.008
+00:27:12 | INFO: Primitives created: 3
+00:27:12 | INFO: Finished glTF 2.0 export in 0.0077362060546875 s
+
+
+FBX export starting... 'C:\\Work\\MySelf\\Guildborne\\assets\\uat01\\weapon-kit\\yew_longbow.fbx'
+export finished in 0.0058 sec.
+00:27:12 | INFO: Starting glTF 2.0 export
+00:27:12 | INFO: Extracting primitive: Cube.018
+00:27:12 | INFO: Primitives created: 5
+00:27:12 | INFO: Finished glTF 2.0 export in 0.011711359024047852 s
+
+
+FBX export starting... 'C:\\Work\\MySelf\\Guildborne\\assets\\uat01\\weapon-kit\\tide_staff.fbx'
+export finished in 0.0053 sec.
+00:27:12 | INFO: Starting glTF 2.0 export
+00:27:12 | INFO: Extracting primitive: Cube.028
+00:27:12 | INFO: Primitives created: 4
+00:27:12 | INFO: Finished glTF 2.0 export in 0.008476972579956055 s
+
+
+FBX export starting... 'C:\\Work\\MySelf\\Guildborne\\assets\\uat01\\weapon-kit\\dawn_crozier.fbx'
+export finished in 0.0047 sec.
+00:27:12 | INFO: Starting glTF 2.0 export
+00:27:12 | INFO: Extracting primitive: Cube.038
+00:27:12 | INFO: Primitives created: 4
+00:27:12 | INFO: Finished glTF 2.0 export in 0.008929252624511719 s
+C:\Work\MySelf\Guildborne\tools\blender_weapon_kit.py:40: DeprecationWarning: 'Material.use_nodes' is expected to be removed in Blender 6.0
+  mat=bpy.data.materials.new('Stage');mat.diffuse_color=(.06,.08,.13,1);mat.use_nodes=True;mat.node_tree.nodes['Principled BSDF'].inputs['Base Color'].default_value=mat.diffuse_color;stage.data.materials.append(mat)
+00:16.843  render           | Saved: 'C:\Work\MySelf\Guildborne\assets\uat01\weapon-kit\preview.png'
+
+Info: Saved as "Guildborne_Weapon_Kit.blend"
+WEAPON_EXPORT_COMPLETE 5 632 triangles
+Blender 5.2.1 LTS (hash 9e2066aef7ef built 2026-08-25 02:38:20)
+
+Blender quit

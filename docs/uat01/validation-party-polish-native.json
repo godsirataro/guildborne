@@ -1,0 +1,886 @@
+{
+  "date": "2026-10-06",
+  "kind": "isolated captured-view presentation fixture",
+  "networkCalls": 0,
+  "views": [
+    {
+      "tab": "Party",
+      "lang": "en",
+      "cards": [
+        {
+          "y": 355,
+          "name": "PartyMember_a:Knight",
+          "labels": [
+            "Bram · Knight",
+            "Tank",
+            "Rank: F · a:Knight · Healthy",
+            "Following",
+            "Level 70 · 3661 total XP",
+            "HP 247 / Attack 75 / Defense 7",
+            "weapon: Knight Sword"
+          ]
+        },
+        {
+          "y": 730,
+          "name": "PartyMember_h:1",
+          "labels": [
+            "Sage · Priest",
+            "Healer",
+            "Rank: F · h:1 · Healthy",
+            "Following",
+            "Level 70 · 3461 total XP",
+            "HP 231 / Attack 75 / Defense 3",
+            "weapon: Apprentice Staff"
+          ]
+        },
+        {
+          "y": 1105,
+          "name": "PartyMember_a:Warrior",
+          "labels": [
+            "Rowan · Warrior",
+            "Damage",
+            "Recruitment: 0 Gold"
+          ]
+        },
+        {
+          "y": 1314,
+          "name": "PartyMember_a:Archer",
+          "labels": [
+            "Ash · Archer",
+            "Ranged",
+            "Recruitment: 20 Gold",
+            "Includes a training weapon. Equip it after recruitment."
+          ]
+        },
+        {
+          "y": 1547,
+          "name": "PartyMember_a:Mage",
+          "labels": [
+            "Lyra · Mage",
+            "Magic",
+            "Recruitment: 20 Gold",
+            "Includes a training weapon. Equip it after recruitment."
+          ]
+        }
+      ],
+      "calls": [],
+      "overflow": [],
+      "buttons": [
+        {
+          "y": 52,
+          "text": "Explore",
+          "name": "TextButton",
+          "x": 752
+        },
+        {
+          "y": 52,
+          "text": "Next quest\nA Guild of Your Own",
+          "name": "QuestTracker",
+          "x": 455.02000427246094
+        },
+        {
+          "y": 116,
+          "text": "Guild",
+          "name": "GuildTab",
+          "x": 173
+        },
+        {
+          "y": 116,
+          "text": "Party",
+          "name": "PartyTab",
+          "x": 349
+        },
+        {
+          "y": 116,
+          "text": "Quests",
+          "name": "QuestsTab",
+          "x": 525
+        },
+        {
+          "y": 116,
+          "text": "Inventory",
+          "name": "InventoryTab",
+          "x": 701
+        },
+        {
+          "y": 325,
+          "text": "Save selected party",
+          "name": "TextButton",
+          "x": 435
+        },
+        {
+          "y": 638,
+          "text": "Manage equipment",
+          "name": "PartyEquipment_a:Knight",
+          "x": 435
+        },
+        {
+          "y": 700,
+          "text": "Selected · tap to remove",
+          "name": "TextButton",
+          "x": 435
+        },
+        {
+          "y": 1013,
+          "text": "Manage equipment",
+          "name": "PartyEquipment_h:1",
+          "x": 435
+        },
+        {
+          "y": 1075,
+          "text": "Selected · tap to remove",
+          "name": "TextButton",
+          "x": 435
+        },
+        {
+          "y": 1284,
+          "text": "Recruit Warrior",
+          "name": "TextButton",
+          "x": 435
+        },
+        {
+          "y": 1517,
+          "text": "Recruit Archer",
+          "name": "TextButton",
+          "x": 435
+        },
+        {
+          "y": 1750,
+          "text": "Recruit Mage",
+          "name": "TextButton",
+          "x": 435
+        },
+        {
+          "y": 200,
+          "text": "Continue to your guild",
+          "name": "Continue",
+          "x": 433
+        },
+        {
+          "y": 348,
+          "text": "Language: English → ไทย",
+          "name": "Language",
+          "x": 433
+        },
+        {
+          "y": 416,
+          "text": "Settings",
+          "name": "Settings",
+          "x": 433
+        },
+        {
+          "y": 58,
+          "text": "VFX quality: Auto",
+          "name": "VFXQuality",
+          "x": 433
+        },
+        {
+          "y": 120,
+          "text": "Idle motion: Full",
+          "name": "IdleMotion",
+          "x": 433
+        },
+        {
+          "y": 182,
+          "text": "Audio: On",
+          "name": "AudioMute",
+          "x": 433
+        },
+        {
+          "y": 244,
+          "text": "Audio volume: 75%",
+          "name": "AudioMaster",
+          "x": 433
+        },
+        {
+          "y": 306,
+          "text": "UI sounds: 70%",
+          "name": "AudioUI",
+          "x": 433
+        },
+        {
+          "y": 368,
+          "text": "Combat sounds: 80%",
+          "name": "AudioCombat",
+          "x": 433
+        },
+        {
+          "y": 484,
+          "text": "Credits",
+          "name": "Credits",
+          "x": 433
+        }
+      ]
+    },
+    {
+      "tab": "Party",
+      "lang": "th",
+      "cards": [
+        {
+          "y": 355,
+          "name": "PartyMember_a:Knight",
+          "labels": [
+            "แบรม · อัศวิน",
+            "แทงค์",
+            "แรงก์: F · a:Knight · พร้อมทำงาน",
+            "เดินตามหัวหน้า",
+            "ระดับ 70 · XP รวม 3661",
+            "พลังชีวิต 247 / โจมตี 75 / ป้องกัน 7",
+            "อาวุธ: ดาบอัศวิน"
+          ]
+        },
+        {
+          "y": 730,
+          "name": "PartyMember_h:1",
+          "labels": [
+            "เซจ · นักบวช",
+            "ฮีล",
+            "แรงก์: F · h:1 · พร้อมทำงาน",
+            "เดินตามหัวหน้า",
+            "ระดับ 70 · XP รวม 3461",
+            "พลังชีวิต 231 / โจมตี 75 / ป้องกัน 3",
+            "อาวุธ: คทาฝึกหัด"
+          ]
+        },
+        {
+          "y": 1105,
+          "name": "PartyMember_a:Warrior",
+          "labels": [
+            "โรแวน · นักรบ",
+            "ดาเมจ",
+            "ค่ารับเข้าร่วม: 0 ทอง"
+          ]
+        },
+        {
+          "y": 1314,
+          "name": "PartyMember_a:Archer",
+          "labels": [
+            "แอช · นักธนู",
+            "โจมตีระยะไกล",
+            "ค่ารับเข้าร่วม: 20 ทอง",
+            "ได้รับอาวุธฝึกด้วย อย่าลืมใส่หลังรับเข้ากิลด์"
+          ]
+        },
+        {
+          "y": 1547,
+          "name": "PartyMember_a:Mage",
+          "labels": [
+            "ไลรา · จอมเวท",
+            "เวท",
+            "ค่ารับเข้าร่วม: 20 ทอง",
+            "ได้รับอาวุธฝึกด้วย อย่าลืมใส่หลังรับเข้ากิลด์"
+          ]
+        }
+      ],
+      "calls": [],
+      "overflow": [],
+      "buttons": [
+        {
+          "y": 52,
+          "text": "สำรวจ",
+          "name": "TextButton",
+          "x": 752
+        },
+        {
+          "y": 52,
+          "text": "เควสต์ถัดไป\nกิลด์ของคุณ",
+          "name": "QuestTracker",
+          "x": 455.02000427246094
+        },
+        {
+          "y": 116,
+          "text": "กิลด์",
+          "name": "GuildTab",
+          "x": 173
+        },
+        {
+          "y": 116,
+          "text": "ทีม",
+          "name": "PartyTab",
+          "x": 349
+        },
+        {
+          "y": 116,
+          "text": "ภารกิจ",
+          "name": "QuestsTab",
+          "x": 525
+        },
+        {
+          "y": 116,
+          "text": "คลัง",
+          "name": "InventoryTab",
+          "x": 701
+        },
+        {
+          "y": 325,
+          "text": "บันทึกทีมที่เลือก",
+          "name": "TextButton",
+          "x": 435
+        },
+        {
+          "y": 638,
+          "text": "จัดการอุปกรณ์",
+          "name": "PartyEquipment_a:Knight",
+          "x": 435
+        },
+        {
+          "y": 700,
+          "text": "เลือกแล้ว · แตะเพื่อนำออก",
+          "name": "TextButton",
+          "x": 435
+        },
+        {
+          "y": 1013,
+          "text": "จัดการอุปกรณ์",
+          "name": "PartyEquipment_h:1",
+          "x": 435
+        },
+        {
+          "y": 1075,
+          "text": "เลือกแล้ว · แตะเพื่อนำออก",
+          "name": "TextButton",
+          "x": 435
+        },
+        {
+          "y": 1284,
+          "text": "รับนักรบเข้าร่วม",
+          "name": "TextButton",
+          "x": 435
+        },
+        {
+          "y": 1517,
+          "text": "รับนักธนูเข้าร่วม",
+          "name": "TextButton",
+          "x": 435
+        },
+        {
+          "y": 1750,
+          "text": "รับจอมเวทเข้าร่วม",
+          "name": "TextButton",
+          "x": 435
+        },
+        {
+          "y": 200,
+          "text": "เข้าสู่กิลด์",
+          "name": "Continue",
+          "x": 433
+        },
+        {
+          "y": 348,
+          "text": "ภาษา: ไทย → English",
+          "name": "Language",
+          "x": 433
+        },
+        {
+          "y": 416,
+          "text": "ตั้งค่า",
+          "name": "Settings",
+          "x": 433
+        },
+        {
+          "y": 58,
+          "text": "คุณภาพเอฟเฟกต์: อัตโนมัติ",
+          "name": "VFXQuality",
+          "x": 433
+        },
+        {
+          "y": 120,
+          "text": "การขยับตอนยืนพัก: ปกติ",
+          "name": "IdleMotion",
+          "x": 433
+        },
+        {
+          "y": 182,
+          "text": "เสียง: เปิด",
+          "name": "AudioMute",
+          "x": 433
+        },
+        {
+          "y": 244,
+          "text": "ระดับเสียงรวม: 75%",
+          "name": "AudioMaster",
+          "x": 433
+        },
+        {
+          "y": 306,
+          "text": "เสียงเมนู: 70%",
+          "name": "AudioUI",
+          "x": 433
+        },
+        {
+          "y": 368,
+          "text": "เสียงต่อสู้: 80%",
+          "name": "AudioCombat",
+          "x": 433
+        },
+        {
+          "y": 484,
+          "text": "ผู้สร้าง",
+          "name": "Credits",
+          "x": 433
+        }
+      ]
+    },
+    {
+      "tab": "Skills",
+      "lang": "en",
+      "cards": [],
+      "calls": [],
+      "overflow": [],
+      "buttons": [
+        {
+          "y": 52,
+          "text": "Explore",
+          "name": "TextButton",
+          "x": 752
+        },
+        {
+          "y": 52,
+          "text": "Next quest\nA Guild of Your Own",
+          "name": "QuestTracker",
+          "x": 455.02000427246094
+        },
+        {
+          "y": 116,
+          "text": "Guild",
+          "name": "GuildTab",
+          "x": 173
+        },
+        {
+          "y": 116,
+          "text": "Party",
+          "name": "PartyTab",
+          "x": 349
+        },
+        {
+          "y": 116,
+          "text": "Quests",
+          "name": "QuestsTab",
+          "x": 525
+        },
+        {
+          "y": 116,
+          "text": "Inventory",
+          "name": "InventoryTab",
+          "x": 701
+        },
+        {
+          "y": 246,
+          "text": "Back to Guild",
+          "name": "TextButton",
+          "x": 435
+        },
+        {
+          "y": 308,
+          "text": "Your character",
+          "name": "SkillActor",
+          "x": 435
+        },
+        {
+          "y": 408,
+          "text": "Status points",
+          "name": "OpenStatus",
+          "x": 435
+        },
+        {
+          "y": 609.2000122070312,
+          "text": "vitality · 1\nLearn skill",
+          "name": "Node_vitality",
+          "x": 435
+        },
+        {
+          "y": 702.7999877929688,
+          "text": "focus · 1\nRequires previous skill",
+          "name": "Node_focus",
+          "x": 254.63999938964844
+        },
+        {
+          "y": 702.7999877929688,
+          "text": "ward · 1\nRequires previous skill",
+          "name": "Node_ward",
+          "x": 615.3599853515625
+        },
+        {
+          "y": 796.4000244140625,
+          "text": "path_art · 2\nClass tier locked",
+          "name": "Node_path_art",
+          "x": 435
+        },
+        {
+          "y": 890,
+          "text": "master_art · 2\nClass tier locked",
+          "name": "Node_master_art",
+          "x": 435
+        },
+        {
+          "y": 1068,
+          "text": "Learn skill",
+          "name": "Learn_vitality",
+          "x": 435
+        },
+        {
+          "y": 1236,
+          "text": "Requires previous skill",
+          "name": "Learn_focus",
+          "x": 435
+        },
+        {
+          "y": 1404,
+          "text": "Requires previous skill",
+          "name": "Learn_ward",
+          "x": 435
+        },
+        {
+          "y": 1572,
+          "text": "Class tier locked",
+          "name": "Learn_path_art",
+          "x": 435
+        },
+        {
+          "y": 1740,
+          "text": "Class tier locked",
+          "name": "Learn_master_art",
+          "x": 435
+        },
+        {
+          "y": 1858,
+          "text": "Starter skill",
+          "name": "TextButton",
+          "x": 435
+        },
+        {
+          "y": 2067,
+          "text": "Open required expeditions",
+          "name": "OpenAdvancementQuests",
+          "x": 435
+        },
+        {
+          "y": 2229,
+          "text": "Complete the listed level, quest and Tower requirements.",
+          "name": "Advance_elementalist",
+          "x": 435
+        },
+        {
+          "y": 2391,
+          "text": "Complete the listed level, quest and Tower requirements.",
+          "name": "Advance_spellblade",
+          "x": 435
+        },
+        {
+          "y": 2551,
+          "text": "Human ✓",
+          "name": "TextButton",
+          "x": 435
+        },
+        {
+          "y": 2613,
+          "text": "Elf",
+          "name": "TextButton",
+          "x": 435
+        },
+        {
+          "y": 2675,
+          "text": "Dwarf",
+          "name": "TextButton",
+          "x": 435
+        },
+        {
+          "y": 200,
+          "text": "Continue to your guild",
+          "name": "Continue",
+          "x": 433
+        },
+        {
+          "y": 348,
+          "text": "Language: English → ไทย",
+          "name": "Language",
+          "x": 433
+        },
+        {
+          "y": 416,
+          "text": "Settings",
+          "name": "Settings",
+          "x": 433
+        },
+        {
+          "y": 58,
+          "text": "VFX quality: Auto",
+          "name": "VFXQuality",
+          "x": 433
+        },
+        {
+          "y": 120,
+          "text": "Idle motion: Full",
+          "name": "IdleMotion",
+          "x": 433
+        },
+        {
+          "y": 182,
+          "text": "Audio: On",
+          "name": "AudioMute",
+          "x": 433
+        },
+        {
+          "y": 244,
+          "text": "Audio volume: 75%",
+          "name": "AudioMaster",
+          "x": 433
+        },
+        {
+          "y": 306,
+          "text": "UI sounds: 70%",
+          "name": "AudioUI",
+          "x": 433
+        },
+        {
+          "y": 368,
+          "text": "Combat sounds: 80%",
+          "name": "AudioCombat",
+          "x": 433
+        },
+        {
+          "y": 484,
+          "text": "Credits",
+          "name": "Credits",
+          "x": 433
+        }
+      ]
+    },
+    {
+      "tab": "Skills",
+      "lang": "th",
+      "cards": [],
+      "calls": [],
+      "overflow": [],
+      "buttons": [
+        {
+          "y": 52,
+          "text": "สำรวจ",
+          "name": "TextButton",
+          "x": 752
+        },
+        {
+          "y": 52,
+          "text": "เควสต์ถัดไป\nกิลด์ของคุณ",
+          "name": "QuestTracker",
+          "x": 455.02000427246094
+        },
+        {
+          "y": 116,
+          "text": "กิลด์",
+          "name": "GuildTab",
+          "x": 173
+        },
+        {
+          "y": 116,
+          "text": "ทีม",
+          "name": "PartyTab",
+          "x": 349
+        },
+        {
+          "y": 116,
+          "text": "ภารกิจ",
+          "name": "QuestsTab",
+          "x": 525
+        },
+        {
+          "y": 116,
+          "text": "คลัง",
+          "name": "InventoryTab",
+          "x": 701
+        },
+        {
+          "y": 246,
+          "text": "กลับเมนูกิลด์",
+          "name": "TextButton",
+          "x": 435
+        },
+        {
+          "y": 308,
+          "text": "ตัวละครของคุณ",
+          "name": "SkillActor",
+          "x": 435
+        },
+        {
+          "y": 408,
+          "text": "แต้มสถานะ",
+          "name": "OpenStatus",
+          "x": 435
+        },
+        {
+          "y": 593.2000122070312,
+          "text": "พลังชีวิต · 1\nเรียนสกิล",
+          "name": "Node_vitality",
+          "x": 435
+        },
+        {
+          "y": 686.7999877929688,
+          "text": "มุ่งโจมตี · 1\nต้องเรียนสกิลก่อนหน้า",
+          "name": "Node_focus",
+          "x": 254.63999938964844
+        },
+        {
+          "y": 686.7999877929688,
+          "text": "คุ้มกัน · 1\nต้องเรียนสกิลก่อนหน้า",
+          "name": "Node_ward",
+          "x": 615.3599853515625
+        },
+        {
+          "y": 780.4000244140625,
+          "text": "ศาสตร์อาชีพขั้น 2 · 2\nยังไม่ปลดขั้นคลาส",
+          "name": "Node_path_art",
+          "x": 435
+        },
+        {
+          "y": 874,
+          "text": "ศาสตร์อาชีพขั้น 3 · 2\nยังไม่ปลดขั้นคลาส",
+          "name": "Node_master_art",
+          "x": 435
+        },
+        {
+          "y": 1052,
+          "text": "เรียนสกิล",
+          "name": "Learn_vitality",
+          "x": 435
+        },
+        {
+          "y": 1220,
+          "text": "ต้องเรียนสกิลก่อนหน้า",
+          "name": "Learn_focus",
+          "x": 435
+        },
+        {
+          "y": 1388,
+          "text": "ต้องเรียนสกิลก่อนหน้า",
+          "name": "Learn_ward",
+          "x": 435
+        },
+        {
+          "y": 1556,
+          "text": "ยังไม่ปลดขั้นคลาส",
+          "name": "Learn_path_art",
+          "x": 435
+        },
+        {
+          "y": 1724,
+          "text": "ยังไม่ปลดขั้นคลาส",
+          "name": "Learn_master_art",
+          "x": 435
+        },
+        {
+          "y": 1842,
+          "text": "สกิลเริ่มต้น",
+          "name": "TextButton",
+          "x": 435
+        },
+        {
+          "y": 2051,
+          "text": "เปิดภารกิจสำรวจที่ต้องผ่าน",
+          "name": "OpenAdvancementQuests",
+          "x": 435
+        },
+        {
+          "y": 2213,
+          "text": "ทำเงื่อนไขเลเวล ภารกิจ และหอคอยที่แสดงให้ครบ",
+          "name": "Advance_elementalist",
+          "x": 435
+        },
+        {
+          "y": 2375,
+          "text": "ทำเงื่อนไขเลเวล ภารกิจ และหอคอยที่แสดงให้ครบ",
+          "name": "Advance_spellblade",
+          "x": 435
+        },
+        {
+          "y": 2519,
+          "text": "มนุษย์ ✓",
+          "name": "TextButton",
+          "x": 435
+        },
+        {
+          "y": 2581,
+          "text": "เอลฟ์",
+          "name": "TextButton",
+          "x": 435
+        },
+        {
+          "y": 2643,
+          "text": "คนแคระ",
+          "name": "TextButton",
+          "x": 435
+        },
+        {
+          "y": 200,
+          "text": "เข้าสู่กิลด์",
+          "name": "Continue",
+          "x": 433
+        },
+        {
+          "y": 348,
+          "text": "ภาษา: ไทย → English",
+          "name": "Language",
+          "x": 433
+        },
+        {
+          "y": 416,
+          "text": "ตั้งค่า",
+          "name": "Settings",
+          "x": 433
+        },
+        {
+          "y": 58,
+          "text": "คุณภาพเอฟเฟกต์: อัตโนมัติ",
+          "name": "VFXQuality",
+          "x": 433
+        },
+        {
+          "y": 120,
+          "text": "การขยับตอนยืนพัก: ปกติ",
+          "name": "IdleMotion",
+          "x": 433
+        },
+        {
+          "y": 182,
+          "text": "เสียง: เปิด",
+          "name": "AudioMute",
+          "x": 433
+        },
+        {
+          "y": 244,
+          "text": "ระดับเสียงรวม: 75%",
+          "name": "AudioMaster",
+          "x": 433
+        },
+        {
+          "y": 306,
+          "text": "เสียงเมนู: 70%",
+          "name": "AudioUI",
+          "x": 433
+        },
+        {
+          "y": 368,
+          "text": "เสียงต่อสู้: 80%",
+          "name": "AudioCombat",
+          "x": 433
+        },
+        {
+          "y": 484,
+          "text": "ผู้สร้าง",
+          "name": "Credits",
+          "x": 433
+        }
+      ]
+    }
+  ],
+  "navigation": true,
+  "actualMouseResult": [
+    {
+      "action": "UpdateParty",
+      "payload": {
+        "adventurerIds": [
+          "a:Knight"
+        ]
+      }
+    }
+  ]
+}

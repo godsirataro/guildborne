@@ -1,0 +1,61 @@
+{
+  "date": "2026-10-06",
+  "scope": "District guild portals and session-only fixed return stops",
+  "actualInput": {
+    "studio": "4ab95e05-4207-4e20-a0f6-856526922e40",
+    "build": "Memory legacy offline, all story flags false; source synchronized before Play",
+    "movement": "character_navigation speed_multiplier=1, actual E key portal activations; no profile grants",
+    "market": {
+      "position": [
+        300,
+        3.6648306846618652,
+        -1068
+      ],
+      "zone": "City"
+    },
+    "guild": {
+      "position": [
+        -300,
+        3.6795971393585205,
+        -1068
+      ],
+      "zone": "City"
+    },
+    "tower": {
+      "position": [
+        -1.4453689800575376e-8,
+        3.624159336090088,
+        -1502
+      ],
+      "zone": "City"
+    },
+    "limitation": "The attempted actual-input obstruction run failed to establish its starting state because reentry was inside travel cooldown; it is not counted as safety acceptance."
+  },
+  "geometry": {
+    "paths": 8,
+    "landings": 8,
+    "stops": 4,
+    "readOnly": true,
+    "profileWrites": 0
+  },
+  "roads": {
+    "checkHeight": 5,
+    "roads": 12,
+    "readOnly": true,
+    "samples": 837,
+    "corridorWidth": 4,
+    "blocked": 0
+  },
+  "syntheticSafety": {
+    "allLandingsBlockedRejected": true,
+    "removeClearsStop": true,
+    "actualPlayerMovement": false,
+    "blockedRememberedStopUsesDefault": true,
+    "simulatedArrivals": 5,
+    "newStopReplacesOld": true,
+    "profileWrites": 0
+  },
+  "domainTests": 631,
+  "profileGrants": 0,
+  "realMultiplayer": false
+}

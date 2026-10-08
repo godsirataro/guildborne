@@ -1,0 +1,26 @@
+{
+  "players": 4,
+  "heroes": 20,
+  "cityParts": 1728,
+  "worldParts": 3658,
+  "ambienceNPCs": 8,
+  "cityLights": 0,
+  "streamingEnabled": false,
+  "serverHeartbeat": {
+    "samples": 120,
+    "meanMs": 16.67136329536637,
+    "p95Ms": 18.078915774822235,
+    "maxMs": 19.272802397608757
+  },
+  "scope": "Short Studio desktop sample; not a mobile hardware or production benchmark",
+  "checks": {
+    "obstructedPrimary": "OK at Z=-750",
+    "bothObstructed": "TravelUnavailable",
+    "respawn": "City at Z=-720",
+    "fallRecovery": "City at Z=-720",
+    "disconnect": "Player4 removed; remaining 3 players and 15 heroes",
+    "doorway": "Player1 and five followers navigated tavern doorway occupied by Player2 and Player3",
+    "futureRegistry": "E prompt opened CityFuture localized placeholder",
+    "towerRoundTrip": "Walked plaza to tower then returned to plaza without teleport"
+  }
+}

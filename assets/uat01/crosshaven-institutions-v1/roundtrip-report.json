@@ -1,0 +1,38 @@
+[
+  {
+    "building": "Forge",
+    "format": "glb",
+    "meshObjects": 239,
+    "triangles": 6096,
+    "maxBoundsError": 1.9073486328125e-06,
+    "collisionMetadataPreserved": true,
+    "status": "PASS"
+  },
+  {
+    "building": "Forge",
+    "format": "fbx",
+    "meshObjects": 239,
+    "triangles": 6096,
+    "maxBoundsError": 3.814697265625e-06,
+    "collisionMetadataPreserved": true,
+    "status": "PASS"
+  },
+  {
+    "building": "QuestHall",
+    "format": "glb",
+    "meshObjects": 259,
+    "triangles": 5480,
+    "maxBoundsError": 1.9073486328125e-06,
+    "collisionMetadataPreserved": true,
+    "status": "PASS"
+  },
+  {
+    "building": "QuestHall",
+    "format": "fbx",
+    "meshObjects": 259,
+    "triangles": 5480,
+    "maxBoundsError": 3.814697265625e-06,
+    "collisionMetadataPreserved": true,
+    "status": "PASS"
+  }
+]

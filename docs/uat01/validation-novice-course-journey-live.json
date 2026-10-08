@@ -1,0 +1,227 @@
+{
+  "date": "2026-10-04",
+  "mode": "Studio memory-only actual keyboard/mouse/navigation; no profile grants",
+  "status": "six chapters completed; production persistence and human/device/multiplayer UAT pending",
+  "checkpoints": [
+    {
+      "adventurers": [],
+      "character": {
+        "equipmentSlots": [],
+        "definitionVersion": 1,
+        "tier": 1,
+        "level": 3,
+        "xp": 100,
+        "raceId": "Human"
+      },
+      "cap": 10,
+      "gold": 0,
+      "revision": 5,
+      "story": {
+        "version": 1,
+        "claimed": 1,
+        "objectives": []
+      },
+      "hall": 0
+    },
+    {
+      "adventurers": [],
+      "character": {
+        "equipmentSlots": [],
+        "definitionVersion": 1,
+        "tier": 1,
+        "level": 5,
+        "xp": 200,
+        "raceId": "Human"
+      },
+      "cap": 10,
+      "gold": 0,
+      "revision": 9,
+      "story": {
+        "version": 1,
+        "claimed": 2,
+        "objectives": []
+      },
+      "hall": 0
+    },
+    {
+      "adventurers": [],
+      "character": {
+        "equipmentSlots": [],
+        "definitionVersion": 1,
+        "tier": 1,
+        "level": 7,
+        "xp": 300,
+        "raceId": "Human"
+      },
+      "cap": 10,
+      "gold": 0,
+      "revision": 13,
+      "story": {
+        "objectives": [],
+        "version": 1,
+        "claimed": 3,
+        "branch": "rescue"
+      },
+      "hall": 0
+    },
+    {
+      "adventurers": [],
+      "character": {
+        "equipmentSlots": [],
+        "definitionVersion": 1,
+        "tier": 1,
+        "level": 9,
+        "xp": 400,
+        "raceId": "Human"
+      },
+      "cap": 10,
+      "gold": 0,
+      "revision": 17,
+      "story": {
+        "objectives": [],
+        "version": 1,
+        "claimed": 4,
+        "branch": "rescue"
+      },
+      "hall": 0
+    },
+    {
+      "adventurers": [],
+      "character": {
+        "equipmentSlots": [],
+        "definitionVersion": 1,
+        "tier": 1,
+        "level": 10,
+        "xp": 450,
+        "raceId": "Human"
+      },
+      "cap": 10,
+      "gold": 0,
+      "revision": 23,
+      "story": {
+        "branch": "rescue",
+        "claimed": 5,
+        "version": 1,
+        "objectives": []
+      },
+      "hall": 0
+    },
+    {
+      "adventurers": {
+        "a:Knight": {
+          "equipmentSlots": {
+            "weapon": "novice:founder:1"
+          },
+          "stats": {
+            "WeaponBonus": 2,
+            "Defense": 7,
+            "Health": 67,
+            "Attack": 15
+          },
+          "id": "a:Knight",
+          "classId": "Knight",
+          "xp": 450,
+          "name": "Bram",
+          "level": 10,
+          "baseStats": {
+            "Defense": 7,
+            "Health": 40,
+            "Attack": 4
+          },
+          "rank": "F"
+        }
+      },
+      "character": {
+        "equipmentSlots": {
+          "weapon": "novice:class:1"
+        },
+        "stats": {
+          "WeaponBonus": 2,
+          "Defense": 1,
+          "Health": 47,
+          "Attack": 21
+        },
+        "definitionVersion": 1,
+        "classId": "Mage",
+        "xp": 450,
+        "raceId": "Human",
+        "tier": 1,
+        "level": 10,
+        "classPathId": "mage:1",
+        "skillId": "fireball"
+      },
+      "cap": 20,
+      "gold": 0,
+      "revision": 28,
+      "story": {
+        "trialClass": "Mage",
+        "founderHero": "a:Knight",
+        "version": 1,
+        "branch": "rescue",
+        "claimed": 6,
+        "objectives": []
+      },
+      "hall": 1
+    }
+  ],
+  "keeper": {
+    "content": [
+      {
+        "type": "text",
+        "text": "{\"ActionTargetPosition\":\"-4500, 28, 650\",\"AbilityLabel\":\"Power Strike\",\"EnemyHealth\":0,\"ActionAt\":1791054000.574067,\"DisplayHint\":\"Leave training to continue your journey.\",\"BasicLabel\":\"Basic Attack\",\"ReceiptDelivered\":true,\"OwnerUserId\":11732987790,\"ReturnLabel\":\"Leave trial\",\"ActionEffect\":\"Physical\",\"DisplayGoals\":\"Sentinel defeated 1/1\",\"NextBasicAt\":0,\"PlayerHealth\":21,\"DisplayHealth\":\"HP 21/48 · Sentinel 0/240\",\"ActionAbilityId\":\"power_strike\",\"NextAbilityAt\":1791054006.574015,\"NoviceTrialArena\":true,\"DisplayTitle\":\"Warrior · Trial complete\",\"ActionOriginPosition\":\"-4496.962890625, 27.998046875, 652.1300048828125\",\"ClassId\":\"Warrior\",\"TrialStatus\":\"Won\"}"
+      }
+    ],
+    "isError": false
+  },
+  "classTrial": {
+    "content": [
+      {
+        "type": "text",
+        "text": "{\"ActionTargetPosition\":\"-4500, 28, 850\",\"AbilityLabel\":\"Fireball\",\"EnemyHealth\":0,\"ActionAt\":1791054197.132917,\"DisplayHint\":\"Leave the trial to confirm your class.\",\"BasicLabel\":\"Basic Attack\",\"ReceiptDelivered\":true,\"OwnerUserId\":11732987790,\"ReturnLabel\":\"Leave trial\",\"ActionEffect\":\"Magic\",\"DisplayGoals\":\"Sentinel defeated 1/1 · Skill hits 3/3 · Warnings dodged 1/1\",\"NextBasicAt\":0,\"PlayerHealth\":25,\"DisplayHealth\":\"HP 25/47 · Sentinel 0/700\",\"ActionAbilityId\":\"fireball\",\"NextAbilityAt\":1791054205.1328827,\"NoviceTrialArena\":true,\"DisplayTitle\":\"Mage · Trial complete\",\"ActionOriginPosition\":\"-4499.95263671875, 27.998046875, 863.2474975585938\",\"ClassId\":\"Mage\",\"TrialStatus\":\"Won\"}"
+      }
+    ],
+    "isError": false
+  },
+  "classSelection": {
+    "adventurers": [],
+    "character": {
+      "equipmentSlots": {
+        "weapon": "novice:class:1"
+      },
+      "stats": {
+        "WeaponBonus": 2,
+        "Defense": 1,
+        "Health": 47,
+        "Attack": 21
+      },
+      "definitionVersion": 1,
+      "classId": "Mage",
+      "xp": 450,
+      "raceId": "Human",
+      "tier": 1,
+      "level": 10,
+      "classPathId": "mage:1",
+      "skillId": "fireball"
+    },
+    "cap": 10,
+    "gold": 0,
+    "revision": 25,
+    "story": {
+      "trialClass": "Mage",
+      "version": 1,
+      "branch": "rescue",
+      "claimed": 5,
+      "objectives": []
+    },
+    "hall": 0
+  },
+  "hallBattle": {
+    "content": [
+      {
+        "type": "text",
+        "text": "{\"goals\":\"Sentinel defeated 1/1\",\"delivered\":true,\"status\":\"Won\",\"hp\":47,\"enemy\":0}"
+      }
+    ],
+    "isError": false
+  }
+}

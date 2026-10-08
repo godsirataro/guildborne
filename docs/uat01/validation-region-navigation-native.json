@@ -1,0 +1,29 @@
+{
+  "native": {
+    "content": [
+      {
+        "type": "text",
+        "text": "{\"minimumTouchSize\":44,\"noClipping\":true,\"widths\":{\"1\":240,\"2\":640},\"regions\":3,\"noOverlap\":true,\"languages\":{\"1\":\"en\",\"2\":\"th\"},\"synthetic\":true,\"buttonChecks\":36,\"profileWrites\":0}"
+      }
+    ],
+    "isError": false
+  },
+  "manualSelection": {
+    "content": [
+      {
+        "type": "text",
+        "text": "{\"text\":\"Herb\\n61 studs\",\"directionVisible\":true,\"panelClosed\":true}"
+      }
+    ],
+    "isError": false
+  },
+  "manualArrival": {
+    "content": [
+      {
+        "type": "text",
+        "text": "{\"arrivalText\":\"Destination reached\",\"directionHidden\":true}"
+      }
+    ],
+    "isError": false
+  }
+}

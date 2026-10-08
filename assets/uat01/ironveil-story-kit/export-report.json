@@ -1,0 +1,80 @@
+[
+  {
+    "id": "scale_yard",
+    "triangles": 588,
+    "bounds": [
+      46.0,
+      32.0,
+      9.169282913208008
+    ],
+    "sourceParts": 49,
+    "icon": "scale_yard.png",
+    "robloxMeshAssetId": null,
+    "robloxImageAssetId": null
+  },
+  {
+    "id": "signal_shaft",
+    "triangles": 444,
+    "bounds": [
+      40.0,
+      36.0,
+      15.0
+    ],
+    "sourceParts": 37,
+    "icon": "signal_shaft.png",
+    "robloxMeshAssetId": null,
+    "robloxImageAssetId": null
+  },
+  {
+    "id": "shoring_gallery",
+    "triangles": 420,
+    "bounds": [
+      44.0,
+      34.0,
+      14.0
+    ],
+    "sourceParts": 35,
+    "icon": "shoring_gallery.png",
+    "robloxMeshAssetId": null,
+    "robloxImageAssetId": null
+  },
+  {
+    "id": "ink_office",
+    "triangles": 324,
+    "bounds": [
+      36.0,
+      30.0,
+      12.0
+    ],
+    "sourceParts": 27,
+    "icon": "ink_office.png",
+    "robloxMeshAssetId": null,
+    "robloxImageAssetId": null
+  },
+  {
+    "id": "warden_mechanism",
+    "triangles": 396,
+    "bounds": [
+      64.0,
+      64.0,
+      8.0
+    ],
+    "sourceParts": 33,
+    "icon": "warden_mechanism.png",
+    "robloxMeshAssetId": null,
+    "robloxImageAssetId": null
+  },
+  {
+    "id": "training_camp",
+    "triangles": 348,
+    "bounds": [
+      48.0,
+      40.000003814697266,
+      10.75
+    ],
+    "sourceParts": 29,
+    "icon": "training_camp.png",
+    "robloxMeshAssetId": null,
+    "robloxImageAssetId": null
+  }
+]

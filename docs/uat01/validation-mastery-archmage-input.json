@@ -1,0 +1,2158 @@
+{
+  "scope": "Standalone native Archmage mastery fixture; ordinary Q/F and speed1 navigation; no profile grants or remote injection",
+  "profileWrites": 0,
+  "samples": [
+    {
+      "s": {
+        "expiresAt": 13217.141212199997,
+        "playerMaxHealth": 227,
+        "progress": {
+          "skill_used": 1
+        },
+        "classId": "Mage",
+        "enemyHealth": 2989,
+        "status": "Active",
+        "enemyMaxHealth": 3200,
+        "nextAbility": 13047.141212199997,
+        "id": "8946cf3f-aebe-43b1-951b-963a9550461d",
+        "position": {
+          "y": 0,
+          "x": 0,
+          "z": 12
+        },
+        "patientHealth": 30,
+        "patientMaxHealth": 100,
+        "playerHealth": 194,
+        "nextAttack": 0
+      },
+      "pos": {
+        "y": 28,
+        "x": 0,
+        "z": 2512
+      }
+    },
+    {
+      "s": {
+        "expiresAt": 13217.141212199997,
+        "playerMaxHealth": 227,
+        "progress": {
+          "skill_used": 1
+        },
+        "classId": "Mage",
+        "enemyHealth": 2778,
+        "status": "Active",
+        "enemyMaxHealth": 3200,
+        "nextAbility": 13061.823344900004,
+        "id": "8946cf3f-aebe-43b1-951b-963a9550461d",
+        "position": {
+          "y": 0,
+          "x": 0,
+          "z": 12
+        },
+        "patientHealth": 30,
+        "patientMaxHealth": 100,
+        "playerHealth": 194,
+        "nextAttack": 0
+      },
+      "pos": {
+        "y": 28,
+        "x": 0,
+        "z": 2512
+      }
+    },
+    {
+      "s": {
+        "expiresAt": 13217.141212199997,
+        "playerMaxHealth": 227,
+        "progress": {
+          "skill_used": 1
+        },
+        "classId": "Mage",
+        "enemyHealth": 2778,
+        "status": "Active",
+        "enemyMaxHealth": 3200,
+        "nextAbility": 13061.823344900004,
+        "id": "8946cf3f-aebe-43b1-951b-963a9550461d",
+        "position": {
+          "y": 0,
+          "x": 0,
+          "z": 12
+        },
+        "patientHealth": 30,
+        "patientMaxHealth": 100,
+        "playerHealth": 194,
+        "nextAttack": 0
+      },
+      "pos": {
+        "y": 28,
+        "x": 0,
+        "z": 2512
+      }
+    },
+    {
+      "s": {
+        "expiresAt": 13217.141212199997,
+        "playerMaxHealth": 227,
+        "progress": {
+          "skill_used": 1
+        },
+        "classId": "Mage",
+        "enemyHealth": 2778,
+        "status": "Active",
+        "enemyMaxHealth": 3200,
+        "nextAbility": 13061.823344900004,
+        "id": "8946cf3f-aebe-43b1-951b-963a9550461d",
+        "position": {
+          "y": 0,
+          "x": 0,
+          "z": 12
+        },
+        "patientHealth": 30,
+        "patientMaxHealth": 100,
+        "playerHealth": 194,
+        "nextAttack": 0
+      },
+      "pos": {
+        "y": 28,
+        "x": 0,
+        "z": 2512
+      }
+    },
+    {
+      "s": {
+        "expiresAt": 13217.141212199997,
+        "playerMaxHealth": 227,
+        "progress": {
+          "skill_used": 1
+        },
+        "classId": "Mage",
+        "enemyHealth": 2778,
+        "status": "Active",
+        "enemyMaxHealth": 3200,
+        "nextAbility": 13061.823344900004,
+        "id": "8946cf3f-aebe-43b1-951b-963a9550461d",
+        "position": {
+          "y": 0,
+          "x": 0,
+          "z": 12
+        },
+        "patientHealth": 30,
+        "patientMaxHealth": 100,
+        "playerHealth": 194,
+        "nextAttack": 0
+      },
+      "pos": {
+        "y": 28,
+        "x": 0,
+        "z": 2512
+      }
+    },
+    {
+      "s": {
+        "warning": {
+          "impactAt": 13055.491133,
+          "x": 0,
+          "startsAt": 13054.291132999999,
+          "z": 12,
+          "radius": 6
+        },
+        "expiresAt": 13217.141212199997,
+        "playerMaxHealth": 227,
+        "progress": {
+          "skill_used": 1
+        },
+        "classId": "Mage",
+        "enemyHealth": 2778,
+        "status": "Active",
+        "enemyMaxHealth": 3200,
+        "nextAbility": 13061.823344900004,
+        "id": "8946cf3f-aebe-43b1-951b-963a9550461d",
+        "position": {
+          "y": 0,
+          "x": 0,
+          "z": 12
+        },
+        "patientHealth": 30,
+        "patientMaxHealth": 100,
+        "playerHealth": 194,
+        "nextAttack": 0
+      },
+      "pos": {
+        "y": 28,
+        "x": 0,
+        "z": 2512
+      }
+    },
+    {
+      "s": {
+        "expiresAt": 13217.141212199997,
+        "playerMaxHealth": 227,
+        "progress": {
+          "skill_used": 1
+        },
+        "classId": "Mage",
+        "enemyHealth": 2778,
+        "status": "Active",
+        "enemyMaxHealth": 3200,
+        "nextAbility": 13061.823344900004,
+        "id": "8946cf3f-aebe-43b1-951b-963a9550461d",
+        "position": {
+          "y": 0,
+          "x": 8.3203125,
+          "z": 12
+        },
+        "patientHealth": 30,
+        "patientMaxHealth": 100,
+        "playerHealth": 183,
+        "nextAttack": 0
+      },
+      "pos": {
+        "y": 28,
+        "x": 8.3203125,
+        "z": 2512
+      }
+    },
+    {
+      "s": {
+        "expiresAt": 13217.141212199997,
+        "playerMaxHealth": 227,
+        "progress": {
+          "skill_used": 1
+        },
+        "classId": "Mage",
+        "enemyHealth": 2778,
+        "status": "Active",
+        "enemyMaxHealth": 3200,
+        "nextAbility": 13061.823344900004,
+        "id": "8946cf3f-aebe-43b1-951b-963a9550461d",
+        "position": {
+          "y": 0,
+          "x": 0.8359375,
+          "z": 12
+        },
+        "patientHealth": 30,
+        "patientMaxHealth": 100,
+        "playerHealth": 183,
+        "nextAttack": 0
+      },
+      "pos": {
+        "y": 28,
+        "x": 0.8359375,
+        "z": 2512
+      }
+    },
+    {
+      "s": {
+        "expiresAt": 13217.141212199997,
+        "playerMaxHealth": 227,
+        "progress": {
+          "skill_used": 1
+        },
+        "classId": "Mage",
+        "enemyHealth": 2778,
+        "status": "Active",
+        "enemyMaxHealth": 3200,
+        "nextAbility": 13061.823344900004,
+        "id": "8946cf3f-aebe-43b1-951b-963a9550461d",
+        "position": {
+          "y": 0,
+          "x": 0.8359375,
+          "z": 12
+        },
+        "patientHealth": 30,
+        "patientMaxHealth": 100,
+        "playerHealth": 183,
+        "nextAttack": 0
+      },
+      "pos": {
+        "y": 28,
+        "x": 0.8359375,
+        "z": 2512
+      }
+    },
+    {
+      "s": {
+        "expiresAt": 13217.141212199997,
+        "playerMaxHealth": 227,
+        "progress": {
+          "skill_used": 1
+        },
+        "classId": "Mage",
+        "enemyHealth": 2778,
+        "status": "Active",
+        "enemyMaxHealth": 3200,
+        "nextAbility": 13061.823344900004,
+        "id": "8946cf3f-aebe-43b1-951b-963a9550461d",
+        "position": {
+          "y": 0,
+          "x": 0.8359375,
+          "z": 12
+        },
+        "patientHealth": 30,
+        "patientMaxHealth": 100,
+        "playerHealth": 183,
+        "nextAttack": 0
+      },
+      "pos": {
+        "y": 28,
+        "x": 0.8359375,
+        "z": 2512
+      }
+    },
+    {
+      "s": {
+        "warning": {
+          "impactAt": 13060.524042600005,
+          "x": 0.8359375,
+          "startsAt": 13059.324042600005,
+          "z": 12,
+          "radius": 6
+        },
+        "expiresAt": 13217.141212199997,
+        "playerMaxHealth": 227,
+        "progress": {
+          "skill_used": 1
+        },
+        "classId": "Mage",
+        "enemyHealth": 2778,
+        "status": "Active",
+        "enemyMaxHealth": 3200,
+        "nextAbility": 13061.823344900004,
+        "id": "8946cf3f-aebe-43b1-951b-963a9550461d",
+        "position": {
+          "y": 0,
+          "x": 0.8359375,
+          "z": 12
+        },
+        "patientHealth": 30,
+        "patientMaxHealth": 100,
+        "playerHealth": 183,
+        "nextAttack": 0
+      },
+      "pos": {
+        "y": 28,
+        "x": 0.8359375,
+        "z": 2512
+      }
+    },
+    {
+      "s": {
+        "expiresAt": 13217.141212199997,
+        "playerMaxHealth": 227,
+        "progress": {
+          "dodge": 1,
+          "skill_used": 1
+        },
+        "classId": "Mage",
+        "enemyHealth": 2778,
+        "status": "Active",
+        "enemyMaxHealth": 3200,
+        "nextAbility": 13061.823344900004,
+        "id": "8946cf3f-aebe-43b1-951b-963a9550461d",
+        "position": {
+          "y": 0,
+          "x": -7.4765625,
+          "z": 12
+        },
+        "patientHealth": 30,
+        "patientMaxHealth": 100,
+        "playerHealth": 183,
+        "nextAttack": 0
+      },
+      "pos": {
+        "y": 28,
+        "x": -7.4765625,
+        "z": 2512
+      }
+    },
+    {
+      "s": {
+        "expiresAt": 13217.141212199997,
+        "playerMaxHealth": 227,
+        "progress": {
+          "dodge": 1,
+          "skill_used": 1
+        },
+        "classId": "Mage",
+        "enemyHealth": 2778,
+        "status": "Active",
+        "enemyMaxHealth": 3200,
+        "nextAbility": 13061.823344900004,
+        "id": "8946cf3f-aebe-43b1-951b-963a9550461d",
+        "position": {
+          "y": 0,
+          "x": -0.8125,
+          "z": 12
+        },
+        "patientHealth": 30,
+        "patientMaxHealth": 100,
+        "playerHealth": 183,
+        "nextAttack": 0
+      },
+      "pos": {
+        "y": 28,
+        "x": -0.8125,
+        "z": 2512
+      }
+    },
+    {
+      "s": {
+        "expiresAt": 13217.141212199997,
+        "playerMaxHealth": 227,
+        "progress": {
+          "dodge": 1,
+          "skill_used": 1
+        },
+        "classId": "Mage",
+        "enemyHealth": 2567,
+        "status": "Active",
+        "enemyMaxHealth": 3200,
+        "nextAbility": 13072.041254799995,
+        "id": "8946cf3f-aebe-43b1-951b-963a9550461d",
+        "position": {
+          "y": 0,
+          "x": -0.8125,
+          "z": 12
+        },
+        "patientHealth": 30,
+        "patientMaxHealth": 100,
+        "playerHealth": 183,
+        "nextAttack": 0
+      },
+      "pos": {
+        "y": 28,
+        "x": -0.8125,
+        "z": 2512
+      }
+    },
+    {
+      "s": {
+        "expiresAt": 13217.141212199997,
+        "playerMaxHealth": 227,
+        "progress": {
+          "dodge": 1,
+          "skill_used": 1
+        },
+        "classId": "Mage",
+        "enemyHealth": 2567,
+        "status": "Active",
+        "enemyMaxHealth": 3200,
+        "nextAbility": 13072.041254799995,
+        "id": "8946cf3f-aebe-43b1-951b-963a9550461d",
+        "position": {
+          "y": 0,
+          "x": -0.8125,
+          "z": 12
+        },
+        "patientHealth": 30,
+        "patientMaxHealth": 100,
+        "playerHealth": 183,
+        "nextAttack": 0
+      },
+      "pos": {
+        "y": 28,
+        "x": -0.8125,
+        "z": 2512
+      }
+    },
+    {
+      "s": {
+        "expiresAt": 13217.141212199997,
+        "playerMaxHealth": 227,
+        "progress": {
+          "dodge": 1,
+          "skill_used": 1
+        },
+        "classId": "Mage",
+        "enemyHealth": 2567,
+        "status": "Active",
+        "enemyMaxHealth": 3200,
+        "nextAbility": 13072.041254799995,
+        "id": "8946cf3f-aebe-43b1-951b-963a9550461d",
+        "position": {
+          "y": 0,
+          "x": -0.8125,
+          "z": 12
+        },
+        "patientHealth": 30,
+        "patientMaxHealth": 100,
+        "playerHealth": 183,
+        "nextAttack": 0
+      },
+      "pos": {
+        "y": 28,
+        "x": -0.8125,
+        "z": 2512
+      }
+    },
+    {
+      "s": {
+        "expiresAt": 13217.141212199997,
+        "playerMaxHealth": 227,
+        "progress": {
+          "dodge": 1,
+          "skill_used": 1
+        },
+        "classId": "Mage",
+        "enemyHealth": 2567,
+        "status": "Active",
+        "enemyMaxHealth": 3200,
+        "nextAbility": 13072.041254799995,
+        "id": "8946cf3f-aebe-43b1-951b-963a9550461d",
+        "position": {
+          "y": 0,
+          "x": -0.8125,
+          "z": 12
+        },
+        "patientHealth": 30,
+        "patientMaxHealth": 100,
+        "playerHealth": 183,
+        "nextAttack": 0
+      },
+      "pos": {
+        "y": 28,
+        "x": -0.8125,
+        "z": 2512
+      }
+    },
+    {
+      "s": {
+        "warning": {
+          "impactAt": 13065.594493199995,
+          "x": -0.8125,
+          "startsAt": 13064.394493199994,
+          "z": 12,
+          "radius": 6
+        },
+        "expiresAt": 13217.141212199997,
+        "playerMaxHealth": 227,
+        "progress": {
+          "dodge": 1,
+          "skill_used": 1
+        },
+        "classId": "Mage",
+        "enemyHealth": 2567,
+        "status": "Active",
+        "enemyMaxHealth": 3200,
+        "nextAbility": 13072.041254799995,
+        "id": "8946cf3f-aebe-43b1-951b-963a9550461d",
+        "position": {
+          "y": 0,
+          "x": -0.8125,
+          "z": 12
+        },
+        "patientHealth": 30,
+        "patientMaxHealth": 100,
+        "playerHealth": 183,
+        "nextAttack": 0
+      },
+      "pos": {
+        "y": 28,
+        "x": -0.8125,
+        "z": 2512
+      }
+    },
+    {
+      "s": {
+        "expiresAt": 13217.141212199997,
+        "playerMaxHealth": 227,
+        "progress": {
+          "dodge": 1,
+          "skill_used": 1
+        },
+        "classId": "Mage",
+        "enemyHealth": 2567,
+        "status": "Active",
+        "enemyMaxHealth": 3200,
+        "nextAbility": 13072.041254799995,
+        "id": "8946cf3f-aebe-43b1-951b-963a9550461d",
+        "position": {
+          "y": 0,
+          "x": 7.5078125,
+          "z": 12
+        },
+        "patientHealth": 30,
+        "patientMaxHealth": 100,
+        "playerHealth": 172,
+        "nextAttack": 0
+      },
+      "pos": {
+        "y": 28,
+        "x": 7.5078125,
+        "z": 2512
+      }
+    },
+    {
+      "s": {
+        "expiresAt": 13217.141212199997,
+        "playerMaxHealth": 227,
+        "progress": {
+          "dodge": 1,
+          "skill_used": 1
+        },
+        "classId": "Mage",
+        "enemyHealth": 2567,
+        "status": "Active",
+        "enemyMaxHealth": 3200,
+        "nextAbility": 13072.041254799995,
+        "id": "8946cf3f-aebe-43b1-951b-963a9550461d",
+        "position": {
+          "y": 0,
+          "x": 0.8359375,
+          "z": 12
+        },
+        "patientHealth": 30,
+        "patientMaxHealth": 100,
+        "playerHealth": 172,
+        "nextAttack": 0
+      },
+      "pos": {
+        "y": 28,
+        "x": 0.8359375,
+        "z": 2512
+      }
+    },
+    {
+      "s": {
+        "expiresAt": 13217.141212199997,
+        "playerMaxHealth": 227,
+        "progress": {
+          "dodge": 1,
+          "skill_used": 1
+        },
+        "classId": "Mage",
+        "enemyHealth": 2567,
+        "status": "Active",
+        "enemyMaxHealth": 3200,
+        "nextAbility": 13072.041254799995,
+        "id": "8946cf3f-aebe-43b1-951b-963a9550461d",
+        "position": {
+          "y": 0,
+          "x": 0.8359375,
+          "z": 12
+        },
+        "patientHealth": 30,
+        "patientMaxHealth": 100,
+        "playerHealth": 172,
+        "nextAttack": 0
+      },
+      "pos": {
+        "y": 28,
+        "x": 0.8359375,
+        "z": 2512
+      }
+    },
+    {
+      "s": {
+        "expiresAt": 13217.141212199997,
+        "playerMaxHealth": 227,
+        "progress": {
+          "dodge": 1,
+          "skill_used": 1
+        },
+        "classId": "Mage",
+        "enemyHealth": 2567,
+        "status": "Active",
+        "enemyMaxHealth": 3200,
+        "nextAbility": 13072.041254799995,
+        "id": "8946cf3f-aebe-43b1-951b-963a9550461d",
+        "position": {
+          "y": 0,
+          "x": 0.8359375,
+          "z": 12
+        },
+        "patientHealth": 30,
+        "patientMaxHealth": 100,
+        "playerHealth": 172,
+        "nextAttack": 0
+      },
+      "pos": {
+        "y": 28,
+        "x": 0.8359375,
+        "z": 2512
+      }
+    },
+    {
+      "s": {
+        "expiresAt": 13217.141212199997,
+        "playerMaxHealth": 227,
+        "progress": {
+          "dodge": 1,
+          "skill_used": 1
+        },
+        "classId": "Mage",
+        "enemyHealth": 2567,
+        "status": "Active",
+        "enemyMaxHealth": 3200,
+        "nextAbility": 13072.041254799995,
+        "id": "8946cf3f-aebe-43b1-951b-963a9550461d",
+        "position": {
+          "y": 0,
+          "x": 0.8359375,
+          "z": 12
+        },
+        "patientHealth": 30,
+        "patientMaxHealth": 100,
+        "playerHealth": 172,
+        "nextAttack": 0
+      },
+      "pos": {
+        "y": 28,
+        "x": 0.8359375,
+        "z": 2512
+      }
+    },
+    {
+      "s": {
+        "warning": {
+          "impactAt": 13070.672979699997,
+          "x": 0.8359375,
+          "startsAt": 13069.472979699996,
+          "z": 12,
+          "radius": 6
+        },
+        "expiresAt": 13217.141212199997,
+        "playerMaxHealth": 227,
+        "progress": {
+          "dodge": 1,
+          "skill_used": 1
+        },
+        "classId": "Mage",
+        "enemyHealth": 2567,
+        "status": "Active",
+        "enemyMaxHealth": 3200,
+        "nextAbility": 13072.041254799995,
+        "id": "8946cf3f-aebe-43b1-951b-963a9550461d",
+        "position": {
+          "y": 0,
+          "x": 0.8359375,
+          "z": 12
+        },
+        "patientHealth": 30,
+        "patientMaxHealth": 100,
+        "playerHealth": 172,
+        "nextAttack": 0
+      },
+      "pos": {
+        "y": 28,
+        "x": 0.8359375,
+        "z": 2512
+      }
+    },
+    {
+      "s": {
+        "expiresAt": 13217.141212199997,
+        "playerMaxHealth": 227,
+        "progress": {
+          "dodge": 2,
+          "skill_used": 1
+        },
+        "classId": "Mage",
+        "enemyHealth": 2567,
+        "status": "Active",
+        "enemyMaxHealth": 3200,
+        "nextAbility": 13072.041254799995,
+        "id": "8946cf3f-aebe-43b1-951b-963a9550461d",
+        "position": {
+          "y": 0,
+          "x": -7.3828125,
+          "z": 12
+        },
+        "patientHealth": 30,
+        "patientMaxHealth": 100,
+        "playerHealth": 172,
+        "nextAttack": 0
+      },
+      "pos": {
+        "y": 28,
+        "x": -7.3828125,
+        "z": 2512
+      }
+    },
+    {
+      "s": {
+        "expiresAt": 13217.141212199997,
+        "playerMaxHealth": 227,
+        "progress": {
+          "dodge": 2,
+          "skill_used": 1
+        },
+        "classId": "Mage",
+        "enemyHealth": 2486,
+        "status": "Active",
+        "enemyMaxHealth": 3200,
+        "nextAbility": 13072.041254799995,
+        "id": "8946cf3f-aebe-43b1-951b-963a9550461d",
+        "position": {
+          "y": 0,
+          "x": -0.71875,
+          "z": 12
+        },
+        "patientHealth": 30,
+        "patientMaxHealth": 100,
+        "playerHealth": 172,
+        "nextAttack": 13073.739646499995
+      },
+      "pos": {
+        "y": 28,
+        "x": -0.71875,
+        "z": 2512
+      }
+    },
+    {
+      "s": {
+        "expiresAt": 13217.141212199997,
+        "playerMaxHealth": 227,
+        "progress": {
+          "dodge": 2,
+          "skill_used": 1
+        },
+        "classId": "Mage",
+        "enemyHealth": 2275,
+        "status": "Active",
+        "enemyMaxHealth": 3200,
+        "nextAbility": 13082.572594799996,
+        "id": "8946cf3f-aebe-43b1-951b-963a9550461d",
+        "position": {
+          "y": 0,
+          "x": -0.71875,
+          "z": 12
+        },
+        "patientHealth": 30,
+        "patientMaxHealth": 100,
+        "playerHealth": 172,
+        "nextAttack": 13073.739646499995
+      },
+      "pos": {
+        "y": 28,
+        "x": -0.71875,
+        "z": 2512
+      }
+    },
+    {
+      "s": {
+        "expiresAt": 13217.141212199997,
+        "playerMaxHealth": 227,
+        "progress": {
+          "dodge": 2,
+          "skill_used": 1
+        },
+        "classId": "Mage",
+        "enemyHealth": 2275,
+        "status": "Active",
+        "enemyMaxHealth": 3200,
+        "nextAbility": 13082.572594799996,
+        "id": "8946cf3f-aebe-43b1-951b-963a9550461d",
+        "position": {
+          "y": 0,
+          "x": -0.71875,
+          "z": 12
+        },
+        "patientHealth": 30,
+        "patientMaxHealth": 100,
+        "playerHealth": 172,
+        "nextAttack": 13073.739646499995
+      },
+      "pos": {
+        "y": 28,
+        "x": -0.71875,
+        "z": 2512
+      }
+    },
+    {
+      "s": {
+        "warning": {
+          "impactAt": 13075.756717299995,
+          "x": -0.71875,
+          "startsAt": 13074.556717299994,
+          "z": 12,
+          "radius": 6
+        },
+        "expiresAt": 13217.141212199997,
+        "playerMaxHealth": 227,
+        "progress": {
+          "dodge": 2,
+          "skill_used": 1
+        },
+        "classId": "Mage",
+        "enemyHealth": 2194,
+        "status": "Active",
+        "enemyMaxHealth": 3200,
+        "nextAbility": 13082.572594799996,
+        "id": "8946cf3f-aebe-43b1-951b-963a9550461d",
+        "position": {
+          "y": 0,
+          "x": -0.71875,
+          "z": 12
+        },
+        "patientHealth": 30,
+        "patientMaxHealth": 100,
+        "playerHealth": 172,
+        "nextAttack": 13075.923554700003
+      },
+      "pos": {
+        "y": 28,
+        "x": -0.71875,
+        "z": 2512
+      }
+    },
+    {
+      "s": {
+        "expiresAt": 13217.141212199997,
+        "playerMaxHealth": 227,
+        "progress": {
+          "dodge": 2,
+          "skill_used": 1
+        },
+        "classId": "Mage",
+        "enemyHealth": 2194,
+        "status": "Active",
+        "enemyMaxHealth": 3200,
+        "nextAbility": 13082.572594799996,
+        "id": "8946cf3f-aebe-43b1-951b-963a9550461d",
+        "position": {
+          "y": 0,
+          "x": 7.46875,
+          "z": 12
+        },
+        "patientHealth": 30,
+        "patientMaxHealth": 100,
+        "playerHealth": 172,
+        "nextAttack": 13075.923554700003
+      },
+      "pos": {
+        "y": 28,
+        "x": 7.46875,
+        "z": 2512
+      }
+    },
+    {
+      "s": {
+        "expiresAt": 13217.141212199997,
+        "playerMaxHealth": 227,
+        "progress": {
+          "dodge": 2,
+          "skill_used": 1
+        },
+        "classId": "Mage",
+        "enemyHealth": 2113,
+        "status": "Active",
+        "enemyMaxHealth": 3200,
+        "nextAbility": 13082.572594799996,
+        "id": "8946cf3f-aebe-43b1-951b-963a9550461d",
+        "position": {
+          "y": 0,
+          "x": 0.8046875,
+          "z": 12
+        },
+        "patientHealth": 30,
+        "patientMaxHealth": 100,
+        "playerHealth": 139,
+        "nextAttack": 13078.622635700001
+      },
+      "pos": {
+        "y": 28,
+        "x": 0.8046875,
+        "z": 2512
+      }
+    },
+    {
+      "s": {
+        "expiresAt": 13217.141212199997,
+        "playerMaxHealth": 227,
+        "progress": {
+          "dodge": 2,
+          "skill_used": 1
+        },
+        "classId": "Mage",
+        "enemyHealth": 1821,
+        "status": "Active",
+        "enemyMaxHealth": 3200,
+        "nextAbility": 13103.288540500005,
+        "id": "8946cf3f-aebe-43b1-951b-963a9550461d",
+        "position": {
+          "y": 0,
+          "x": 0.8046875,
+          "z": 12
+        },
+        "patientHealth": 30,
+        "patientMaxHealth": 100,
+        "playerHealth": 139,
+        "nextAttack": 13095.172031800004
+      },
+      "pos": {
+        "y": 28,
+        "x": 0.8046875,
+        "z": 2512
+      }
+    },
+    {
+      "s": {
+        "expiresAt": 13217.141212199997,
+        "playerMaxHealth": 227,
+        "progress": {
+          "dodge": 2,
+          "skill_used": 1
+        },
+        "classId": "Mage",
+        "enemyHealth": 1821,
+        "status": "Active",
+        "enemyMaxHealth": 3200,
+        "nextAbility": 13103.288540500005,
+        "id": "8946cf3f-aebe-43b1-951b-963a9550461d",
+        "position": {
+          "y": 0,
+          "x": 0.8046875,
+          "z": 12
+        },
+        "patientHealth": 30,
+        "patientMaxHealth": 100,
+        "playerHealth": 139,
+        "nextAttack": 13095.172031800004
+      },
+      "pos": {
+        "y": 28,
+        "x": 0.8046875,
+        "z": 2512
+      }
+    },
+    {
+      "s": {
+        "warning": {
+          "impactAt": 13096.106113400001,
+          "x": 0.8046875,
+          "startsAt": 13094.9061134,
+          "z": 12,
+          "radius": 6
+        },
+        "expiresAt": 13217.141212199997,
+        "playerMaxHealth": 227,
+        "progress": {
+          "dodge": 2,
+          "skill_used": 1
+        },
+        "classId": "Mage",
+        "enemyHealth": 1821,
+        "status": "Active",
+        "enemyMaxHealth": 3200,
+        "nextAbility": 13103.288540500005,
+        "id": "8946cf3f-aebe-43b1-951b-963a9550461d",
+        "position": {
+          "y": 0,
+          "x": 0.8046875,
+          "z": 12
+        },
+        "patientHealth": 30,
+        "patientMaxHealth": 100,
+        "playerHealth": 139,
+        "nextAttack": 13095.172031800004
+      },
+      "pos": {
+        "y": 28,
+        "x": 0.8046875,
+        "z": 2512
+      }
+    },
+    {
+      "s": {
+        "expiresAt": 13217.141212199997,
+        "playerMaxHealth": 227,
+        "progress": {
+          "dodge": 2,
+          "skill_used": 1
+        },
+        "classId": "Mage",
+        "enemyHealth": 1740,
+        "status": "Active",
+        "enemyMaxHealth": 3200,
+        "nextAbility": 13103.288540500005,
+        "id": "8946cf3f-aebe-43b1-951b-963a9550461d",
+        "position": {
+          "y": 0,
+          "x": -7.515625,
+          "z": 12
+        },
+        "patientHealth": 30,
+        "patientMaxHealth": 100,
+        "playerHealth": 128,
+        "nextAttack": 13098.421394299996
+      },
+      "pos": {
+        "y": 28,
+        "x": -7.515625,
+        "z": 2512
+      }
+    },
+    {
+      "s": {
+        "expiresAt": 13217.141212199997,
+        "playerMaxHealth": 227,
+        "progress": {
+          "dodge": 2,
+          "skill_used": 1
+        },
+        "classId": "Mage",
+        "enemyHealth": 1740,
+        "status": "Active",
+        "enemyMaxHealth": 3200,
+        "nextAbility": 13103.288540500005,
+        "id": "8946cf3f-aebe-43b1-951b-963a9550461d",
+        "position": {
+          "y": 0,
+          "x": -0.8828125,
+          "z": 12
+        },
+        "patientHealth": 30,
+        "patientMaxHealth": 100,
+        "playerHealth": 128,
+        "nextAttack": 13098.421394299996
+      },
+      "pos": {
+        "y": 28,
+        "x": -0.8828125,
+        "z": 2512
+      }
+    },
+    {
+      "s": {
+        "expiresAt": 13217.141212199997,
+        "playerMaxHealth": 227,
+        "progress": {
+          "dodge": 2,
+          "skill_used": 1
+        },
+        "classId": "Mage",
+        "enemyHealth": 1659,
+        "status": "Active",
+        "enemyMaxHealth": 3200,
+        "nextAbility": 13103.288540500005,
+        "id": "8946cf3f-aebe-43b1-951b-963a9550461d",
+        "position": {
+          "y": 0,
+          "x": -0.8828125,
+          "z": 12
+        },
+        "patientHealth": 30,
+        "patientMaxHealth": 100,
+        "playerHealth": 128,
+        "nextAttack": 13100.621603299998
+      },
+      "pos": {
+        "y": 28,
+        "x": -0.8828125,
+        "z": 2512
+      }
+    },
+    {
+      "s": {
+        "warning": {
+          "impactAt": 13101.155324799995,
+          "x": -0.8828125,
+          "startsAt": 13099.955324799994,
+          "z": 12,
+          "radius": 6
+        },
+        "expiresAt": 13217.141212199997,
+        "playerMaxHealth": 227,
+        "progress": {
+          "dodge": 2,
+          "skill_used": 1
+        },
+        "classId": "Mage",
+        "enemyHealth": 1659,
+        "status": "Active",
+        "enemyMaxHealth": 3200,
+        "nextAbility": 13103.288540500005,
+        "id": "8946cf3f-aebe-43b1-951b-963a9550461d",
+        "position": {
+          "y": 0,
+          "x": -0.8828125,
+          "z": 12
+        },
+        "patientHealth": 30,
+        "patientMaxHealth": 100,
+        "playerHealth": 128,
+        "nextAttack": 13100.621603299998
+      },
+      "pos": {
+        "y": 28,
+        "x": -0.8828125,
+        "z": 2512
+      }
+    },
+    {
+      "s": {
+        "expiresAt": 13217.141212199997,
+        "playerMaxHealth": 227,
+        "progress": {
+          "dodge": 2,
+          "skill_used": 1
+        },
+        "classId": "Mage",
+        "enemyHealth": 1578,
+        "status": "Active",
+        "enemyMaxHealth": 3200,
+        "nextAbility": 13103.288540500005,
+        "id": "8946cf3f-aebe-43b1-951b-963a9550461d",
+        "position": {
+          "y": 0,
+          "x": 7.34375,
+          "z": 12
+        },
+        "patientHealth": 30,
+        "patientMaxHealth": 100,
+        "playerHealth": 128,
+        "nextAttack": 13102.838621499995
+      },
+      "pos": {
+        "y": 28,
+        "x": 7.34375,
+        "z": 2512
+      }
+    },
+    {
+      "s": {
+        "expiresAt": 13217.141212199997,
+        "playerMaxHealth": 227,
+        "progress": {
+          "dodge": 2,
+          "skill_used": 1
+        },
+        "classId": "Mage",
+        "enemyHealth": 1578,
+        "status": "Active",
+        "enemyMaxHealth": 3200,
+        "nextAbility": 13103.288540500005,
+        "id": "8946cf3f-aebe-43b1-951b-963a9550461d",
+        "position": {
+          "y": 0,
+          "x": 0.5390625,
+          "z": 12
+        },
+        "patientHealth": 30,
+        "patientMaxHealth": 100,
+        "playerHealth": 128,
+        "nextAttack": 13102.838621499995
+      },
+      "pos": {
+        "y": 28,
+        "x": 0.5390625,
+        "z": 2512
+      }
+    },
+    {
+      "s": {
+        "expiresAt": 13217.141212199997,
+        "playerMaxHealth": 227,
+        "progress": {
+          "dodge": 2,
+          "skill_used": 1
+        },
+        "classId": "Mage",
+        "enemyHealth": 1497,
+        "status": "Active",
+        "enemyMaxHealth": 3200,
+        "nextAbility": 13103.288540500005,
+        "id": "8946cf3f-aebe-43b1-951b-963a9550461d",
+        "position": {
+          "y": 0,
+          "x": 0.5390625,
+          "z": 12
+        },
+        "patientHealth": 30,
+        "patientMaxHealth": 100,
+        "playerHealth": 128,
+        "nextAttack": 13104.854555500006
+      },
+      "pos": {
+        "y": 28,
+        "x": 0.5390625,
+        "z": 2512
+      }
+    },
+    {
+      "s": {
+        "expiresAt": 13217.141212199997,
+        "playerMaxHealth": 227,
+        "progress": {
+          "dodge": 2,
+          "skill_used": 1
+        },
+        "classId": "Mage",
+        "enemyHealth": 1286,
+        "status": "Active",
+        "enemyMaxHealth": 3200,
+        "nextAbility": 13113.6553297,
+        "id": "8946cf3f-aebe-43b1-951b-963a9550461d",
+        "position": {
+          "y": 0,
+          "x": 0.5390625,
+          "z": 12
+        },
+        "patientHealth": 30,
+        "patientMaxHealth": 100,
+        "playerHealth": 128,
+        "nextAttack": 13104.854555500006
+      },
+      "pos": {
+        "y": 28,
+        "x": 0.5390625,
+        "z": 2512
+      }
+    },
+    {
+      "s": {
+        "expiresAt": 13217.141212199997,
+        "playerMaxHealth": 227,
+        "progress": {
+          "dodge": 2,
+          "skill_used": 1
+        },
+        "classId": "Mage",
+        "enemyHealth": 1286,
+        "status": "Active",
+        "enemyMaxHealth": 3200,
+        "nextAbility": 13113.6553297,
+        "id": "8946cf3f-aebe-43b1-951b-963a9550461d",
+        "position": {
+          "y": 0,
+          "x": 0.5390625,
+          "z": 12
+        },
+        "patientHealth": 30,
+        "patientMaxHealth": 100,
+        "playerHealth": 128,
+        "nextAttack": 13104.854555500006
+      },
+      "pos": {
+        "y": 28,
+        "x": 0.5390625,
+        "z": 2512
+      }
+    },
+    {
+      "s": {
+        "warning": {
+          "impactAt": 13106.205162099996,
+          "x": 0.5390625,
+          "startsAt": 13105.005162099995,
+          "z": 12,
+          "radius": 6
+        },
+        "expiresAt": 13217.141212199997,
+        "playerMaxHealth": 227,
+        "progress": {
+          "dodge": 2,
+          "skill_used": 1
+        },
+        "classId": "Mage",
+        "enemyHealth": 1205,
+        "status": "Active",
+        "enemyMaxHealth": 3200,
+        "nextAbility": 13113.6553297,
+        "id": "8946cf3f-aebe-43b1-951b-963a9550461d",
+        "position": {
+          "y": 0,
+          "x": 0.5390625,
+          "z": 12
+        },
+        "patientHealth": 30,
+        "patientMaxHealth": 100,
+        "playerHealth": 128,
+        "nextAttack": 13107.021575399998
+      },
+      "pos": {
+        "y": 28,
+        "x": 0.5390625,
+        "z": 2512
+      }
+    },
+    {
+      "s": {
+        "expiresAt": 13217.141212199997,
+        "playerMaxHealth": 227,
+        "progress": {
+          "dodge": 2,
+          "skill_used": 1
+        },
+        "classId": "Mage",
+        "enemyHealth": 1205,
+        "status": "Active",
+        "enemyMaxHealth": 3200,
+        "nextAbility": 13113.6553297,
+        "id": "8946cf3f-aebe-43b1-951b-963a9550461d",
+        "position": {
+          "y": 0,
+          "x": -7.625,
+          "z": 12
+        },
+        "patientHealth": 30,
+        "patientMaxHealth": 100,
+        "playerHealth": 117,
+        "nextAttack": 13107.021575399998
+      },
+      "pos": {
+        "y": 28,
+        "x": -7.625,
+        "z": 2512
+      }
+    },
+    {
+      "s": {
+        "expiresAt": 13217.141212199997,
+        "playerMaxHealth": 227,
+        "progress": {
+          "dodge": 2,
+          "skill_used": 1
+        },
+        "classId": "Mage",
+        "enemyHealth": 1124,
+        "status": "Active",
+        "enemyMaxHealth": 3200,
+        "nextAbility": 13113.6553297,
+        "id": "8946cf3f-aebe-43b1-951b-963a9550461d",
+        "position": {
+          "y": 0,
+          "x": -0.5546875,
+          "z": 12
+        },
+        "patientHealth": 30,
+        "patientMaxHealth": 100,
+        "playerHealth": 117,
+        "nextAttack": 13109.7545689
+      },
+      "pos": {
+        "y": 28,
+        "x": -0.5546875,
+        "z": 2512
+      }
+    },
+    {
+      "s": {
+        "expiresAt": 13217.141212199997,
+        "playerMaxHealth": 227,
+        "progress": {
+          "dodge": 2,
+          "skill_used": 1
+        },
+        "classId": "Mage",
+        "enemyHealth": 1124,
+        "status": "Active",
+        "enemyMaxHealth": 3200,
+        "nextAbility": 13113.6553297,
+        "id": "8946cf3f-aebe-43b1-951b-963a9550461d",
+        "position": {
+          "y": 0,
+          "x": -0.5546875,
+          "z": 12
+        },
+        "patientHealth": 30,
+        "patientMaxHealth": 100,
+        "playerHealth": 117,
+        "nextAttack": 13109.7545689
+      },
+      "pos": {
+        "y": 28,
+        "x": -0.5546875,
+        "z": 2512
+      }
+    },
+    {
+      "s": {
+        "expiresAt": 13217.141212199997,
+        "playerMaxHealth": 227,
+        "progress": {
+          "dodge": 2,
+          "skill_used": 1
+        },
+        "classId": "Mage",
+        "enemyHealth": 1124,
+        "status": "Active",
+        "enemyMaxHealth": 3200,
+        "nextAbility": 13113.6553297,
+        "id": "8946cf3f-aebe-43b1-951b-963a9550461d",
+        "position": {
+          "y": 0,
+          "x": -0.5546875,
+          "z": 12
+        },
+        "patientHealth": 30,
+        "patientMaxHealth": 100,
+        "playerHealth": 117,
+        "nextAttack": 13109.7545689
+      },
+      "pos": {
+        "y": 28,
+        "x": -0.5546875,
+        "z": 2512
+      }
+    },
+    {
+      "s": {
+        "warning": {
+          "impactAt": 13111.297620399997,
+          "x": -0.5546875,
+          "startsAt": 13110.097620399996,
+          "z": 12,
+          "radius": 6
+        },
+        "expiresAt": 13217.141212199997,
+        "playerMaxHealth": 227,
+        "progress": {
+          "dodge": 2,
+          "skill_used": 1
+        },
+        "classId": "Mage",
+        "enemyHealth": 1043,
+        "status": "Active",
+        "enemyMaxHealth": 3200,
+        "nextAbility": 13113.6553297,
+        "id": "8946cf3f-aebe-43b1-951b-963a9550461d",
+        "position": {
+          "y": 0,
+          "x": -0.5546875,
+          "z": 12
+        },
+        "patientHealth": 30,
+        "patientMaxHealth": 100,
+        "playerHealth": 117,
+        "nextAttack": 13112.0883373
+      },
+      "pos": {
+        "y": 28,
+        "x": -0.5546875,
+        "z": 2512
+      }
+    },
+    {
+      "s": {
+        "expiresAt": 13217.141212199997,
+        "playerMaxHealth": 227,
+        "progress": {
+          "dodge": 2,
+          "skill_used": 1
+        },
+        "classId": "Mage",
+        "enemyHealth": 1043,
+        "status": "Active",
+        "enemyMaxHealth": 3200,
+        "nextAbility": 13113.6553297,
+        "id": "8946cf3f-aebe-43b1-951b-963a9550461d",
+        "position": {
+          "y": 0,
+          "x": 7.7578125,
+          "z": 12
+        },
+        "patientHealth": 30,
+        "patientMaxHealth": 100,
+        "playerHealth": 106,
+        "nextAttack": 13112.0883373
+      },
+      "pos": {
+        "y": 28,
+        "x": 7.7578125,
+        "z": 2512
+      }
+    },
+    {
+      "s": {
+        "expiresAt": 13217.141212199997,
+        "playerMaxHealth": 227,
+        "progress": {
+          "dodge": 2,
+          "skill_used": 1
+        },
+        "classId": "Mage",
+        "enemyHealth": 962,
+        "status": "Active",
+        "enemyMaxHealth": 3200,
+        "nextAbility": 13113.6553297,
+        "id": "8946cf3f-aebe-43b1-951b-963a9550461d",
+        "position": {
+          "y": 0,
+          "x": 0.828125,
+          "z": 12
+        },
+        "patientHealth": 30,
+        "patientMaxHealth": 100,
+        "playerHealth": 106,
+        "nextAttack": 13114.854351000005
+      },
+      "pos": {
+        "y": 28,
+        "x": 0.828125,
+        "z": 2512
+      }
+    },
+    {
+      "s": {
+        "expiresAt": 13217.141212199997,
+        "playerMaxHealth": 227,
+        "progress": {
+          "dodge": 2,
+          "skill_used": 1
+        },
+        "classId": "Mage",
+        "enemyHealth": 751,
+        "status": "Active",
+        "enemyMaxHealth": 3200,
+        "nextAbility": 13123.670784299997,
+        "id": "8946cf3f-aebe-43b1-951b-963a9550461d",
+        "position": {
+          "y": 0,
+          "x": 0.828125,
+          "z": 12
+        },
+        "patientHealth": 30,
+        "patientMaxHealth": 100,
+        "playerHealth": 106,
+        "nextAttack": 13114.854351000005
+      },
+      "pos": {
+        "y": 28,
+        "x": 0.828125,
+        "z": 2512
+      }
+    },
+    {
+      "s": {
+        "expiresAt": 13217.141212199997,
+        "playerMaxHealth": 227,
+        "progress": {
+          "dodge": 2,
+          "skill_used": 1
+        },
+        "classId": "Mage",
+        "enemyHealth": 751,
+        "status": "Active",
+        "enemyMaxHealth": 3200,
+        "nextAbility": 13123.670784299997,
+        "id": "8946cf3f-aebe-43b1-951b-963a9550461d",
+        "position": {
+          "y": 0,
+          "x": 0.828125,
+          "z": 12
+        },
+        "patientHealth": 30,
+        "patientMaxHealth": 100,
+        "playerHealth": 106,
+        "nextAttack": 13114.854351000005
+      },
+      "pos": {
+        "y": 28,
+        "x": 0.828125,
+        "z": 2512
+      }
+    },
+    {
+      "s": {
+        "warning": {
+          "impactAt": 13116.338500599999,
+          "x": 0.828125,
+          "startsAt": 13115.138500599998,
+          "z": 12,
+          "radius": 6
+        },
+        "expiresAt": 13217.141212199997,
+        "playerMaxHealth": 227,
+        "progress": {
+          "dodge": 2,
+          "skill_used": 1
+        },
+        "classId": "Mage",
+        "enemyHealth": 670,
+        "status": "Active",
+        "enemyMaxHealth": 3200,
+        "nextAbility": 13123.670784299997,
+        "id": "8946cf3f-aebe-43b1-951b-963a9550461d",
+        "position": {
+          "y": 0,
+          "x": 0.828125,
+          "z": 12
+        },
+        "patientHealth": 30,
+        "patientMaxHealth": 100,
+        "playerHealth": 106,
+        "nextAttack": 13117.121336500004
+      },
+      "pos": {
+        "y": 28,
+        "x": 0.828125,
+        "z": 2512
+      }
+    },
+    {
+      "s": {
+        "expiresAt": 13217.141212199997,
+        "playerMaxHealth": 227,
+        "progress": {
+          "dodge": 2,
+          "skill_used": 1
+        },
+        "classId": "Mage",
+        "enemyHealth": 670,
+        "status": "Active",
+        "enemyMaxHealth": 3200,
+        "nextAbility": 13123.670784299997,
+        "id": "8946cf3f-aebe-43b1-951b-963a9550461d",
+        "position": {
+          "y": 0,
+          "x": -7.4921875,
+          "z": 12
+        },
+        "patientHealth": 30,
+        "patientMaxHealth": 100,
+        "playerHealth": 95,
+        "nextAttack": 13117.121336500004
+      },
+      "pos": {
+        "y": 28,
+        "x": -7.4921875,
+        "z": 2512
+      }
+    },
+    {
+      "s": {
+        "expiresAt": 13217.141212199997,
+        "playerMaxHealth": 227,
+        "progress": {
+          "dodge": 2,
+          "skill_used": 1
+        },
+        "classId": "Mage",
+        "enemyHealth": 589,
+        "status": "Active",
+        "enemyMaxHealth": 3200,
+        "nextAbility": 13123.670784299997,
+        "id": "8946cf3f-aebe-43b1-951b-963a9550461d",
+        "position": {
+          "y": 0,
+          "x": -0.828125,
+          "z": 12
+        },
+        "patientHealth": 30,
+        "patientMaxHealth": 100,
+        "playerHealth": 95,
+        "nextAttack": 13119.821176699992
+      },
+      "pos": {
+        "y": 28,
+        "x": -0.828125,
+        "z": 2512
+      }
+    },
+    {
+      "s": {
+        "expiresAt": 13217.141212199997,
+        "playerMaxHealth": 227,
+        "progress": {
+          "dodge": 2,
+          "skill_used": 1
+        },
+        "classId": "Mage",
+        "enemyHealth": 589,
+        "status": "Active",
+        "enemyMaxHealth": 3200,
+        "nextAbility": 13123.670784299997,
+        "id": "8946cf3f-aebe-43b1-951b-963a9550461d",
+        "position": {
+          "y": 0,
+          "x": -0.828125,
+          "z": 12
+        },
+        "patientHealth": 30,
+        "patientMaxHealth": 100,
+        "playerHealth": 95,
+        "nextAttack": 13119.821176699992
+      },
+      "pos": {
+        "y": 28,
+        "x": -0.828125,
+        "z": 2512
+      }
+    },
+    {
+      "s": {
+        "expiresAt": 13217.141212199997,
+        "playerMaxHealth": 227,
+        "progress": {
+          "dodge": 2,
+          "skill_used": 1
+        },
+        "classId": "Mage",
+        "enemyHealth": 589,
+        "status": "Active",
+        "enemyMaxHealth": 3200,
+        "nextAbility": 13123.670784299997,
+        "id": "8946cf3f-aebe-43b1-951b-963a9550461d",
+        "position": {
+          "y": 0,
+          "x": -0.828125,
+          "z": 12
+        },
+        "patientHealth": 30,
+        "patientMaxHealth": 100,
+        "playerHealth": 95,
+        "nextAttack": 13119.821176699992
+      },
+      "pos": {
+        "y": 28,
+        "x": -0.828125,
+        "z": 2512
+      }
+    },
+    {
+      "s": {
+        "warning": {
+          "impactAt": 13121.387869199996,
+          "x": -0.828125,
+          "startsAt": 13120.187869199995,
+          "z": 12,
+          "radius": 6
+        },
+        "expiresAt": 13217.141212199997,
+        "playerMaxHealth": 227,
+        "progress": {
+          "dodge": 2,
+          "skill_used": 1
+        },
+        "classId": "Mage",
+        "enemyHealth": 508,
+        "status": "Active",
+        "enemyMaxHealth": 3200,
+        "nextAbility": 13123.670784299997,
+        "id": "8946cf3f-aebe-43b1-951b-963a9550461d",
+        "position": {
+          "y": 0,
+          "x": -0.828125,
+          "z": 12
+        },
+        "patientHealth": 30,
+        "patientMaxHealth": 100,
+        "playerHealth": 95,
+        "nextAttack": 13121.987869199995
+      },
+      "pos": {
+        "y": 28,
+        "x": -0.828125,
+        "z": 2512
+      }
+    },
+    {
+      "s": {
+        "expiresAt": 13217.141212199997,
+        "playerMaxHealth": 227,
+        "progress": {
+          "dodge": 2,
+          "skill_used": 1
+        },
+        "classId": "Mage",
+        "enemyHealth": 508,
+        "status": "Active",
+        "enemyMaxHealth": 3200,
+        "nextAbility": 13123.670784299997,
+        "id": "8946cf3f-aebe-43b1-951b-963a9550461d",
+        "position": {
+          "y": 0,
+          "x": 7.4921875,
+          "z": 12
+        },
+        "patientHealth": 30,
+        "patientMaxHealth": 100,
+        "playerHealth": 84,
+        "nextAttack": 13121.987869199995
+      },
+      "pos": {
+        "y": 28,
+        "x": 7.4921875,
+        "z": 2512
+      }
+    },
+    {
+      "s": {
+        "expiresAt": 13217.141212199997,
+        "playerMaxHealth": 227,
+        "progress": {
+          "dodge": 2,
+          "skill_used": 1
+        },
+        "classId": "Mage",
+        "enemyHealth": 427,
+        "status": "Active",
+        "enemyMaxHealth": 3200,
+        "nextAbility": 13123.670784299997,
+        "id": "8946cf3f-aebe-43b1-951b-963a9550461d",
+        "position": {
+          "y": 0,
+          "x": 0.828125,
+          "z": 12
+        },
+        "patientHealth": 30,
+        "patientMaxHealth": 100,
+        "playerHealth": 84,
+        "nextAttack": 13124.804591099997
+      },
+      "pos": {
+        "y": 28,
+        "x": 0.828125,
+        "z": 2512
+      }
+    },
+    {
+      "s": {
+        "expiresAt": 13217.141212199997,
+        "playerMaxHealth": 227,
+        "progress": {
+          "dodge": 2,
+          "skill_used": 1
+        },
+        "classId": "Mage",
+        "enemyHealth": 427,
+        "status": "Active",
+        "enemyMaxHealth": 3200,
+        "nextAbility": 13123.670784299997,
+        "id": "8946cf3f-aebe-43b1-951b-963a9550461d",
+        "position": {
+          "y": 0,
+          "x": 0.828125,
+          "z": 12
+        },
+        "patientHealth": 30,
+        "patientMaxHealth": 100,
+        "playerHealth": 84,
+        "nextAttack": 13124.804591099997
+      },
+      "pos": {
+        "y": 28,
+        "x": 0.828125,
+        "z": 2512
+      }
+    },
+    {
+      "s": {
+        "expiresAt": 13217.141212199997,
+        "playerMaxHealth": 227,
+        "progress": {
+          "dodge": 2,
+          "skill_used": 1
+        },
+        "classId": "Mage",
+        "enemyHealth": 216,
+        "status": "Active",
+        "enemyMaxHealth": 3200,
+        "nextAbility": 13134.570329899994,
+        "id": "8946cf3f-aebe-43b1-951b-963a9550461d",
+        "position": {
+          "y": 0,
+          "x": 0.828125,
+          "z": 12
+        },
+        "patientHealth": 30,
+        "patientMaxHealth": 100,
+        "playerHealth": 84,
+        "nextAttack": 13124.804591099997
+      },
+      "pos": {
+        "y": 28,
+        "x": 0.828125,
+        "z": 2512
+      }
+    },
+    {
+      "s": {
+        "warning": {
+          "impactAt": 13126.404361100005,
+          "x": 0.828125,
+          "startsAt": 13125.204361100004,
+          "z": 12,
+          "radius": 6
+        },
+        "expiresAt": 13217.141212199997,
+        "playerMaxHealth": 227,
+        "progress": {
+          "dodge": 2,
+          "skill_used": 1
+        },
+        "classId": "Mage",
+        "enemyHealth": 135,
+        "status": "Active",
+        "enemyMaxHealth": 3200,
+        "nextAbility": 13134.570329899994,
+        "id": "8946cf3f-aebe-43b1-951b-963a9550461d",
+        "position": {
+          "y": 0,
+          "x": 0.828125,
+          "z": 12
+        },
+        "patientHealth": 30,
+        "patientMaxHealth": 100,
+        "playerHealth": 84,
+        "nextAttack": 13127.188714699998
+      },
+      "pos": {
+        "y": 28,
+        "x": 0.828125,
+        "z": 2512
+      }
+    },
+    {
+      "s": {
+        "expiresAt": 13217.141212199997,
+        "playerMaxHealth": 227,
+        "progress": {
+          "dodge": 2,
+          "skill_used": 1
+        },
+        "classId": "Mage",
+        "enemyHealth": 135,
+        "status": "Active",
+        "enemyMaxHealth": 3200,
+        "nextAbility": 13134.570329899994,
+        "id": "8946cf3f-aebe-43b1-951b-963a9550461d",
+        "position": {
+          "y": 0,
+          "x": -7.6015625,
+          "z": 12
+        },
+        "patientHealth": 30,
+        "patientMaxHealth": 100,
+        "playerHealth": 73,
+        "nextAttack": 13127.188714699998
+      },
+      "pos": {
+        "y": 28,
+        "x": -7.6015625,
+        "z": 2512
+      }
+    },
+    {
+      "s": {
+        "expiresAt": 13217.141212199997,
+        "playerMaxHealth": 227,
+        "progress": {
+          "dodge": 2,
+          "skill_used": 1
+        },
+        "classId": "Mage",
+        "enemyHealth": 54,
+        "status": "Active",
+        "enemyMaxHealth": 3200,
+        "nextAbility": 13134.570329899994,
+        "id": "8946cf3f-aebe-43b1-951b-963a9550461d",
+        "position": {
+          "y": 0,
+          "x": -0.796875,
+          "z": 12
+        },
+        "patientHealth": 30,
+        "patientMaxHealth": 100,
+        "playerHealth": 73,
+        "nextAttack": 13130.0872481
+      },
+      "pos": {
+        "y": 28,
+        "x": -0.796875,
+        "z": 2512
+      }
+    },
+    {
+      "s": {
+        "expiresAt": 13217.141212199997,
+        "playerMaxHealth": 227,
+        "progress": {
+          "dodge": 2,
+          "skill_used": 1
+        },
+        "classId": "Mage",
+        "enemyHealth": 54,
+        "status": "Active",
+        "enemyMaxHealth": 3200,
+        "nextAbility": 13134.570329899994,
+        "id": "8946cf3f-aebe-43b1-951b-963a9550461d",
+        "position": {
+          "y": 0,
+          "x": -0.796875,
+          "z": 12
+        },
+        "patientHealth": 30,
+        "patientMaxHealth": 100,
+        "playerHealth": 73,
+        "nextAttack": 13130.0872481
+      },
+      "pos": {
+        "y": 28,
+        "x": -0.796875,
+        "z": 2512
+      }
+    },
+    {
+      "s": {
+        "expiresAt": 13217.141212199997,
+        "playerMaxHealth": 227,
+        "progress": {
+          "dodge": 2,
+          "skill_used": 1
+        },
+        "classId": "Mage",
+        "enemyHealth": 54,
+        "status": "Active",
+        "enemyMaxHealth": 3200,
+        "nextAbility": 13134.570329899994,
+        "id": "8946cf3f-aebe-43b1-951b-963a9550461d",
+        "position": {
+          "y": 0,
+          "x": -0.796875,
+          "z": 12
+        },
+        "patientHealth": 30,
+        "patientMaxHealth": 100,
+        "playerHealth": 73,
+        "nextAttack": 13130.0872481
+      },
+      "pos": {
+        "y": 28,
+        "x": -0.796875,
+        "z": 2512
+      }
+    },
+    {
+      "receipts": 1,
+      "s": {
+        "warning": {
+          "impactAt": 13131.538760599997,
+          "x": -0.796875,
+          "startsAt": 13130.338760599996,
+          "z": 12,
+          "radius": 6
+        },
+        "expiresAt": 13217.141212199997,
+        "playerMaxHealth": 227,
+        "progress": {
+          "skill_used": 1,
+          "victory": 1,
+          "dodge": 2
+        },
+        "classId": "Mage",
+        "enemyHealth": 0,
+        "status": "Won",
+        "enemyMaxHealth": 3200,
+        "nextAbility": 13134.570329899994,
+        "id": "8946cf3f-aebe-43b1-951b-963a9550461d",
+        "position": {
+          "y": 0,
+          "x": -0.796875,
+          "z": 12
+        },
+        "patientHealth": 30,
+        "patientMaxHealth": 100,
+        "playerHealth": 73,
+        "nextAttack": 13132.337397300002
+      },
+      "pos": {
+        "y": 28,
+        "x": -0.796875,
+        "z": 2512
+      }
+    }
+  ]
+}

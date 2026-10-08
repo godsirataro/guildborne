@@ -1,0 +1,80 @@
+{
+  "scope": "Isolated architecture fixture, ordinary UI destination selectors then WASD; no gameplay profiles",
+  "cities": 6,
+  "buildings": 12,
+  "syntheticPaths": {
+    "count": 48,
+    "parts": 4274,
+    "radius": 2,
+    "height": 5,
+    "jumping": false,
+    "profileWrites": 0
+  },
+  "marketWalks": [
+    {
+      "health": 100,
+      "distance": 0.3408545255661011,
+      "city": "Deepforge",
+      "position": "738, 3.298025369644165, 33.8345832824707"
+    },
+    {
+      "health": 100,
+      "distance": 0.5247350335121155,
+      "city": "Astralis",
+      "position": "1140, 3.298025369644165, 41.568111419677734"
+    },
+    {
+      "health": 100,
+      "distance": 0.7595810890197754,
+      "city": "Crosshaven",
+      "position": "1544, 3.298025369644165, 37.301326751708984"
+    },
+    {
+      "health": 100,
+      "distance": 0.5248904824256897,
+      "city": "Ironroot",
+      "position": "1936, 3.298025369644165, 31.567922592163086"
+    }
+  ],
+  "tavernWalks": [
+    {
+      "city": "Sylvaris",
+      "position": "340.1422119140625, 3.298025369644165, -22.533233642578125",
+      "distance": 0.6272013187408447,
+      "health": 100,
+      "inside": true
+    },
+    {
+      "city": "Deepforge",
+      "position": "737.7423095703125, 3.298025369644165, -24.39994239807129",
+      "distance": 0.5614066123962402,
+      "health": 100,
+      "inside": true
+    },
+    {
+      "city": "Astralis",
+      "position": "1140.27587890625, 3.298025369644165, -20.333314895629883",
+      "distance": 0.5253828167915344,
+      "health": 100,
+      "inside": true
+    },
+    {
+      "city": "Crosshaven",
+      "position": "1529.8792724609375, 3.298025369644165, -22.73338508605957",
+      "distance": 0.8007795810699463,
+      "health": 100,
+      "inside": true
+    },
+    {
+      "city": "Ironroot",
+      "position": "1936.0089111328125, 3.298025369644165, -28.199954986572266",
+      "distance": 0.3589993417263031,
+      "health": 100,
+      "inside": true
+    }
+  ],
+  "additionalEvidence": "Crownford market/tavern ordinary walk documented in CROWNFORD_ARCHITECTURE.md. Sylvaris market final position (340,3.298025,37.701332), health100.",
+  "console": "empty",
+  "fullGameServiceTransactionsRetested": false,
+  "playStopped": true
+}

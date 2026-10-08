@@ -1,0 +1,12 @@
+{
+  "placeId": 86788611613035,
+  "probe": "tests/studio_item_viewports_probe.luau",
+  "passed": true,
+  "items": 30,
+  "parts": 246,
+  "cameraContainsAllCorners": true,
+  "noninteractive": true,
+  "noImportedIdsRequired": true,
+  "unknownReturnsNil": true,
+  "fixtureRemoved": true
+}

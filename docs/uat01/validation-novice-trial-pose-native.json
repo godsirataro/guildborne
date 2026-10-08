@@ -1,0 +1,148 @@
+{
+  "scope": "Actual on-screen skill clicks for all five classes; AnimationConstraint/Motor6D transforms observed during casting. Counts include normal locomotion, not isolated pose accuracy.",
+  "actualButtonClicks": [
+    {
+      "class": "Warrior",
+      "state": {
+        "now": 12375.825829999998,
+        "snapshot": {
+          "expiresAt": 12675.124331799998,
+          "progress": [],
+          "playerHealth": 57,
+          "classId": "Warrior",
+          "enemyHealth": 666,
+          "playerMaxHealth": 57,
+          "status": "Active",
+          "enemyMaxHealth": 700,
+          "id": "b073a066-e4bf-4425-945d-dc632647f723",
+          "position": {
+            "y": 0,
+            "x": 0,
+            "z": 4
+          },
+          "patientHealth": 30,
+          "patientMaxHealth": 100,
+          "nextAbility": 12381.124331799998,
+          "nextAttack": 0
+        }
+      }
+    },
+    {
+      "class": "Knight",
+      "state": {
+        "now": 12377.191527299998,
+        "snapshot": {
+          "expiresAt": 12676.4745143,
+          "progress": {
+            "taunt": 1
+          },
+          "playerHealth": 67,
+          "classId": "Knight",
+          "enemyHealth": 700,
+          "playerMaxHealth": 67,
+          "status": "Active",
+          "enemyMaxHealth": 700,
+          "id": "592e8370-8bfa-481a-b6b9-586e4bdf659c",
+          "position": {
+            "y": 0,
+            "x": 0,
+            "z": 4
+          },
+          "patientHealth": 30,
+          "patientMaxHealth": 100,
+          "nextAbility": 12385.4745143,
+          "nextAttack": 0
+        }
+      }
+    },
+    {
+      "class": "Archer",
+      "state": {
+        "now": 12378.5920936,
+        "snapshot": {
+          "expiresAt": 12677.8574282,
+          "progress": [],
+          "playerHealth": 49,
+          "classId": "Archer",
+          "enemyHealth": 666,
+          "playerMaxHealth": 49,
+          "status": "Active",
+          "enemyMaxHealth": 700,
+          "id": "6dd63ef8-a7e5-4952-a85c-f3b7fbe840c8",
+          "position": {
+            "y": 0,
+            "x": 0,
+            "z": 16
+          },
+          "patientHealth": 30,
+          "patientMaxHealth": 100,
+          "nextAbility": 12384.8574282,
+          "nextAttack": 0
+        }
+      }
+    },
+    {
+      "class": "Mage",
+      "state": {
+        "now": 12379.958383999998,
+        "snapshot": {
+          "expiresAt": 12679.2583114,
+          "progress": {
+            "ability_hit": 1
+          },
+          "playerHealth": 47,
+          "classId": "Mage",
+          "enemyHealth": 652,
+          "playerMaxHealth": 47,
+          "status": "Active",
+          "enemyMaxHealth": 700,
+          "id": "b9b289c1-be28-4e21-abed-57f57d68d8c3",
+          "position": {
+            "y": 0,
+            "x": 0,
+            "z": 12
+          },
+          "patientHealth": 30,
+          "patientMaxHealth": 100,
+          "nextAbility": 12387.2583114,
+          "nextAttack": 0
+        }
+      }
+    },
+    {
+      "class": "Priest",
+      "state": {
+        "now": 12381.3414777,
+        "snapshot": {
+          "expiresAt": 12680.6241233,
+          "progress": {
+            "heal": 38
+          },
+          "playerHealth": 51,
+          "classId": "Priest",
+          "enemyHealth": 700,
+          "playerMaxHealth": 51,
+          "status": "Active",
+          "enemyMaxHealth": 700,
+          "id": "d11aa442-a524-40ce-9b75-40e07aea358c",
+          "position": {
+            "y": 0,
+            "x": 0,
+            "z": 12
+          },
+          "patientHealth": 68,
+          "patientMaxHealth": 100,
+          "nextAbility": 12385.6241233,
+          "nextAttack": 0
+        }
+      }
+    }
+  ],
+  "jointMaximums": {
+    "Warrior": 15,
+    "Archer": 15,
+    "Knight": 15,
+    "Priest": 15,
+    "Mage": 15
+  }
+}

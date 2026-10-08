@@ -1,0 +1,115 @@
+๑๕:๒๒:๒๒.๓๖๑  [Guildborne] Phase 1 ready · Persistent · staging  -  เซิร์ฟเวอร์ - ServerBootstrap:131
+  ๑๕:๒๒:๒๒.๘๓๖  [Guildborne] Phase 1 client ready  -  ไคลเอนต์ - SliceController:55
+  ๑๕:๒๒:๒๔.๕๐๐  [Guildborne] profile_loaded {"revision":0}  -  เซิร์ฟเวอร์ - ServerBootstrap:22
+  ๑๕:๒๒:๒๔.๕๐๐  [Guildborne] session_started []  -  เซิร์ฟเวอร์ - ServerBootstrap:22
+  ๑๕:๒๔:๒๖.๖๒๘  GBPERSIST PASS GetState revision 0 gold 0  -  ไคลเอนต์
+  ๑๕:๒๔:๒๖.๖๒๘  GBPERSIST LOADED {"data":{"adventurers":[],"party":{"adventurerIds":[]},"quests":{"nextRunSequence":1,"claimedThrough":0,"firstClears":[]},"hallLevel":1,"gold":0,"inventory":{"equipment":[],"stacks":[]},"language":"en","progression":{"tutorialStep":"welcome","everEquipped":false,"welcomeSeen":false,"tutorialCompleted":false,"recruitedClasses":[]}},"revision":0}  -  ไคลเอนต์
+  ๑๕:๒๔:๒๘.๕๑๒  [Guildborne] profile_saved {"action":"SetLanguage","revision":1}  -  เซิร์ฟเวอร์ - ServerBootstrap:22
+  ๑๕:๒๔:๒๘.๕๗๗  GBPERSIST PASS SetLanguage revision 1 gold 0  -  ไคลเอนต์
+  ๑๕:๒๔:๒๙.๘๗๗  [Guildborne] profile_saved {"action":"BeginTutorial","revision":2}  -  เซิร์ฟเวอร์ - ServerBootstrap:22
+  ๑๕:๒๔:๒๙.๘๗๗  [Guildborne] tutorial_started []  -  เซิร์ฟเวอร์ - ServerBootstrap:22
+  ๑๕:๒๔:๒๙.๙๑๓  GBPERSIST PASS BeginTutorial revision 2 gold 0  -  ไคลเอนต์
+  ๑๕:๒๔:๓๐.๗๘๑  GBPERSIST FAILED CommandBar:34: Recruit: expected OK, got Busy  -  ไคลเอนต์
+  ๑๕:๒๕:๔๔.๔๗๕  GBPERSIST PASS GetState revision 2 gold 0  -  ไคลเอนต์
+  ๑๕:๒๕:๔๔.๔๗๕  GBPERSIST LOADED {"data":{"adventurers":[],"party":{"adventurerIds":[]},"quests":{"nextRunSequence":1,"claimedThrough":0,"firstClears":[]},"hallLevel":1,"gold":0,"inventory":{"equipment":[],"stacks":[]},"language":"th","progression":{"tutorialStep":"recruit","everEquipped":false,"welcomeSeen":true,"tutorialCompleted":false,"recruitedClasses":[]}},"revision":2}  -  ไคลเอนต์
+  ๑๕:๒๕:๔๕.๓๔๔  GBPERSIST BUSY RETRY SetLanguage 1  -  ไคลเอนต์
+  ๑๕:๒๕:๔๗.๘๗๔  [Guildborne] profile_saved {"action":"SetLanguage","revision":3}  -  เซิร์ฟเวอร์ - ServerBootstrap:22
+  ๑๕:๒๕:๔๗.๙๔๑  GBPERSIST PASS SetLanguage revision 3 gold 0  -  ไคลเอนต์
+  ๑๕:๒๕:๔๙.๒๕๘  [Guildborne] profile_saved {"action":"BeginTutorial","revision":4}  -  เซิร์ฟเวอร์ - ServerBootstrap:22
+  ๑๕:๒๕:๔๙.๒๙๕  GBPERSIST PASS BeginTutorial revision 4 gold 0  -  ไคลเอนต์
+  ๑๕:๒๕:๕๐.๙๒๔  [Guildborne] profile_saved {"action":"Recruit","revision":5}  -  เซิร์ฟเวอร์ - ServerBootstrap:22
+  ๑๕:๒๕:๕๐.๙๒๔  [Guildborne] adventurer_recruited {"classId":"Warrior"}  -  เซิร์ฟเวอร์ - ServerBootstrap:22
+  ๑๕:๒๕:๕๐.๙๙๑  GBPERSIST PASS Recruit revision 5 gold 0  -  ไคลเอนต์
+  ๑๕:๒๕:๕๑.๘๔๔  GBPERSIST BUSY RETRY UpdateParty 1  -  ไคลเอนต์
+  ๑๕:๒๕:๕๔.๓๕๗  [Guildborne] profile_saved {"action":"UpdateParty","revision":6}  -  เซิร์ฟเวอร์ - ServerBootstrap:22
+  ๑๕:๒๕:๕๔.๓๕๗  [Guildborne] party_created []  -  เซิร์ฟเวอร์ - ServerBootstrap:22
+  ๑๕:๒๕:๕๔.๔๔๐  GBPERSIST PASS UpdateParty revision 6 gold 0  -  ไคลเอนต์
+  ๑๕:๒๕:๕๕.๒๙๔  GBPERSIST BUSY RETRY StartQuest 1  -  ไคลเอนต์
+  ๑๕:๒๕:๕๘.๐๕๘  [Guildborne] profile_saved {"action":"StartQuest","revision":7}  -  เซิร์ฟเวอร์ - ServerBootstrap:22
+  ๑๕:๒๕:๕๘.๐๕๘  [Guildborne] quest_started {"questId":"trail_watch"}  -  เซิร์ฟเวอร์ - ServerBootstrap:22
+  ๑๕:๒๕:๕๘.๐๙๔  GBPERSIST PASS StartQuest revision 7 gold 0  -  ไคลเอนต์
+  ๑๕:๒๕:๕๘.๐๙๔  GBPERSIST CHECKPOINT {"data":{"adventurers":{"a:Warrior":{"equipmentSlots":[],"stats":{"Attack":6,"Defense":4,"Health":30,"WeaponBonus":0},"name":"Rowan","classId":"Warrior","id":"a:Warrior","level":1,"xp":0,"baseStats":{"Defense":4,"Health":30,"Attack":6}}},"party":{"adventurerIds":["a:Warrior"]},"quests":{"nextRunSequence":2,"firstClears":[],"claimedThrough":0,"active":{"sequence":1,"completeAt":1790583972,"questId":"trail_watch","partySnapshot":[{"id":"a:Warrior","stats":{"WeaponBonus":0,"Defense":4,"Health":30,"Attack":6}}],"contentVersion":"slice-1.0","rewardSnapshot":{"Items":[{"Id":"training_sword","Quantity":1},{"Id":"herb","Quantity":2}],"XP":20,"Gold":30},"startAt":1790583957,"state":"Running","runId":"q:1","firstClear":true}},"hallLevel":1,"gold":0,"inventory":{"equipment":[],"stacks":[]},"language":"th","progression":{"tutorialStep":"claim","everEquipped":false,"welcomeSeen":true,"tutorialCompleted":false,"recruitedClasses":{"Warrior":true}}},"revision":7}  -  ไคลเอนต์
+  ๑๕:๒๕:๕๘.๐๙๔  GBPERSIST STAGE PASSED prepare  -  ไคลเอนต์
+
+SESSION 2
+๑๕:๒๖:๔๒.๖๓๖  [Guildborne] Phase 1 ready · Persistent · staging  -  เซิร์ฟเวอร์ - ServerBootstrap:131
+  ๑๕:๒๖:๔๓.๑๑๗  [Guildborne] Phase 1 client ready  -  ไคลเอนต์ - SliceController:55
+  ๑๕:๒๖:๔๔.๕๔๑  [Guildborne] profile_loaded {"revision":7}  -  เซิร์ฟเวอร์ - ServerBootstrap:22
+  ๑๕:๒๖:๔๔.๕๔๑  [Guildborne] session_started []  -  เซิร์ฟเวอร์ - ServerBootstrap:22
+  ๑๕:๒๗:๓๖.๓๓๙  GBPERSIST PASS GetState revision 7 gold 0  -  ไคลเอนต์
+  ๑๕:๒๗:๓๖.๓๓๙  GBPERSIST LOADED {"data":{"adventurers":{"a:Warrior":{"equipmentSlots":[],"stats":{"Attack":6,"Defense":4,"Health":30,"WeaponBonus":0},"name":"Rowan","classId":"Warrior","id":"a:Warrior","level":1,"xp":0,"baseStats":{"Defense":4,"Health":30,"Attack":6}}},"party":{"adventurerIds":["a:Warrior"]},"quests":{"nextRunSequence":2,"firstClears":[],"claimedThrough":0,"active":{"contentVersion":"slice-1.0","completeAt":1790583972,"questId":"trail_watch","state":"Running","partySnapshot":[{"id":"a:Warrior","stats":{"WeaponBonus":0,"Defense":4,"Health":30,"Attack":6}}],"rewardSnapshot":{"Items":[{"Id":"training_sword","Quantity":1},{"Id":"herb","Quantity":2}],"XP":20,"Gold":30},"startAt":1790583957,"sequence":1,"runId":"q:1","firstClear":true}},"hallLevel":1,"gold":0,"inventory":{"equipment":[],"stacks":[]},"language":"th","progression":{"tutorialStep":"claim","everEquipped":false,"welcomeSeen":true,"tutorialCompleted":false,"recruitedClasses":{"Warrior":true}}},"revision":7}  -  ไคลเอนต์
+  ๑๕:๒๗:๓๖.๓๓๙  GBPERSIST EXACT REJOIN MATCH 7 th  -  ไคลเอนต์
+  ๑๕:๒๗:๓๘.๖๓๖  [Guildborne] profile_saved {"action":"CompleteQuest","revision":8}  -  เซิร์ฟเวอร์ - ServerBootstrap:22
+  ๑๕:๒๗:๓๘.๖๓๗  [Guildborne] gold_created {"amount":30,"reason":"QuestReward"}  -  เซิร์ฟเวอร์ - ServerBootstrap:22
+  ๑๕:๒๗:๓๘.๖๓๗  [Guildborne] item_acquired {"quantity":1,"itemId":"training_sword"}  -  เซิร์ฟเวอร์ - ServerBootstrap:22
+  ๑๕:๒๗:๓๘.๖๓๗  [Guildborne] item_acquired {"quantity":2,"itemId":"herb"}  -  เซิร์ฟเวอร์ - ServerBootstrap:22
+  ๑๕:๒๗:๓๘.๖๓๗  [Guildborne] quest_completed {"questId":"trail_watch"}  -  เซิร์ฟเวอร์ - ServerBootstrap:22
+  ๑๕:๒๗:๓๘.๖๘๗  GBPERSIST PASS CompleteQuest revision 8 gold 30  -  ไคลเอนต์
+  ๑๕:๒๗:๓๙.๕๓๙  GBPERSIST BUSY RETRY CompleteQuest 1  -  ไคลเอนต์
+  ๑๕:๒๗:๔๑.๖๐๖  GBPERSIST PASS CompleteQuest revision 8 gold 30  -  ไคลเอนต์
+  ๑๕:๒๗:๔๒.๘๕๒  [Guildborne] profile_saved {"action":"EquipItem","revision":9}  -  เซิร์ฟเวอร์ - ServerBootstrap:22
+  ๑๕:๒๗:๔๒.๘๕๓  [Guildborne] weapon_equipped {"itemId":"training_sword","classId":"Warrior"}  -  เซิร์ฟเวอร์ - ServerBootstrap:22
+  ๑๕:๒๗:๔๒.๘๘๙  GBPERSIST PASS EquipItem revision 9 gold 30  -  ไคลเอนต์
+  ๑๕:๒๗:๔๓.๗๕๕  GBPERSIST BUSY RETRY Recruit 1  -  ไคลเอนต์
+  ๑๕:๒๗:๔๖.๕๒๐  [Guildborne] profile_saved {"action":"Recruit","revision":10}  -  เซิร์ฟเวอร์ - ServerBootstrap:22
+  ๑๕:๒๗:๔๖.๕๒๐  [Guildborne] gold_destroyed {"amount":20,"reason":"Recruitment"}  -  เซิร์ฟเวอร์ - ServerBootstrap:22
+  ๑๕:๒๗:๔๖.๕๒๐  [Guildborne] item_acquired {"quantity":1,"itemId":"short_bow"}  -  เซิร์ฟเวอร์ - ServerBootstrap:22
+  ๑๕:๒๗:๔๖.๕๒๐  [Guildborne] adventurer_recruited {"classId":"Archer"}  -  เซิร์ฟเวอร์ - ServerBootstrap:22
+  ๑๕:๒๗:๔๖.๕๕๗  GBPERSIST PASS Recruit revision 10 gold 10  -  ไคลเอนต์
+  ๑๕:๒๗:๔๗.๔๒๓  GBPERSIST BUSY RETRY StartQuest 1  -  ไคลเอนต์
+  ๑๕:๒๗:๔๙.๘๘๖  [Guildborne] profile_saved {"action":"StartQuest","revision":11}  -  เซิร์ฟเวอร์ - ServerBootstrap:22
+  ๑๕:๒๗:๔๙.๘๘๖  [Guildborne] quest_started {"questId":"timber_escort"}  -  เซิร์ฟเวอร์ - ServerBootstrap:22
+  ๑๕:๒๗:๔๙.๙๗๑  GBPERSIST PASS StartQuest revision 11 gold 10  -  ไคลเอนต์
+  ๑๕:๒๘:๑๖.๘๕๓  [Guildborne] profile_saved {"action":"CompleteQuest","revision":12}  -  เซิร์ฟเวอร์ - ServerBootstrap:22
+  ๑๕:๒๘:๑๖.๘๕๓  [Guildborne] gold_created {"amount":40,"reason":"QuestReward"}  -  เซิร์ฟเวอร์ - ServerBootstrap:22
+  ๑๕:๒๘:๑๖.๘๕๓  [Guildborne] item_acquired {"quantity":6,"itemId":"timber"}  -  เซิร์ฟเวอร์ - ServerBootstrap:22
+  ๑๕:๒๘:๑๖.๘๕๓  [Guildborne] item_acquired {"quantity":1,"itemId":"iron_ingot"}  -  เซิร์ฟเวอร์ - ServerBootstrap:22
+  ๑๕:๒๘:๑๖.๘๕๔  [Guildborne] quest_completed {"questId":"timber_escort"}  -  เซิร์ฟเวอร์ - ServerBootstrap:22
+  ๑๕:๒๘:๑๖.๙๑๙  GBPERSIST PASS CompleteQuest revision 12 gold 50  -  ไคลเอนต์
+  ๑๕:๒๘:๑๗.๗๘๘  GBPERSIST BUSY RETRY CompleteQuest 1  -  ไคลเอนต์
+  ๑๕:๒๘:๑๙.๘๕๔  GBPERSIST PASS CompleteQuest revision 12 gold 50  -  ไคลเอนต์
+  ๑๕:๒๘:๒๑.๑๕๑  [Guildborne] profile_saved {"action":"Recruit","revision":13}  -  เซิร์ฟเวอร์ - ServerBootstrap:22
+  ๑๕:๒๘:๒๑.๑๕๑  [Guildborne] gold_destroyed {"amount":20,"reason":"Recruitment"}  -  เซิร์ฟเวอร์ - ServerBootstrap:22
+  ๑๕:๒๘:๒๑.๑๕๑  [Guildborne] item_acquired {"quantity":1,"itemId":"apprentice_staff"}  -  เซิร์ฟเวอร์ - ServerBootstrap:22
+  ๑๕:๒๘:๒๑.๑๕๑  [Guildborne] adventurer_recruited {"classId":"Priest"}  -  เซิร์ฟเวอร์ - ServerBootstrap:22
+  ๑๕:๒๘:๒๑.๑๘๘  GBPERSIST PASS Recruit revision 13 gold 30  -  ไคลเอนต์
+  ๑๕:๒๘:๒๒.๐๕๕  GBPERSIST BUSY RETRY StartQuest 1  -  ไคลเอนต์
+  ๑๕:๒๘:๒๔.๑๑๙  GBPERSIST BUSY RETRY StartQuest 2  -  ไคลเอนต์
+  ๑๕:๒๘:๒๖.๖๖๘  [Guildborne] profile_saved {"action":"StartQuest","revision":14}  -  เซิร์ฟเวอร์ - ServerBootstrap:22
+  ๑๕:๒๘:๒๖.๖๖๙  [Guildborne] quest_started {"questId":"quarry_patrol"}  -  เซิร์ฟเวอร์ - ServerBootstrap:22
+  ๑๕:๒๘:๒๖.๗๕๒  GBPERSIST PASS StartQuest revision 14 gold 30  -  ไคลเอนต์
+  ๑๕:๒๙:๐๓.๗๓๓  [Guildborne] profile_saved {"action":"CompleteQuest","revision":15}  -  เซิร์ฟเวอร์ - ServerBootstrap:22
+  ๑๕:๒๙:๐๓.๗๓๔  [Guildborne] gold_created {"amount":60,"reason":"QuestReward"}  -  เซิร์ฟเวอร์ - ServerBootstrap:22
+  ๑๕:๒๙:๐๓.๗๓๔  [Guildborne] item_acquired {"quantity":6,"itemId":"iron_ore"}  -  เซิร์ฟเวอร์ - ServerBootstrap:22
+  ๑๕:๒๙:๐๓.๗๓๔  [Guildborne] item_acquired {"quantity":1,"itemId":"iron_sword"}  -  เซิร์ฟเวอร์ - ServerBootstrap:22
+  ๑๕:๒๙:๐๓.๗๓๔  [Guildborne] quest_completed {"questId":"quarry_patrol"}  -  เซิร์ฟเวอร์ - ServerBootstrap:22
+  ๑๕:๒๙:๐๓.๗๗๑  GBPERSIST PASS CompleteQuest revision 15 gold 90  -  ไคลเอนต์
+  ๑๕:๒๙:๐๔.๖๓๕  GBPERSIST BUSY RETRY CompleteQuest 1  -  ไคลเอนต์
+  ๑๕:๒๙:๐๖.๗๐๓  GBPERSIST PASS CompleteQuest revision 15 gold 90  -  ไคลเอนต์
+  ๑๕:๒๙:๐๗.๙๙๙  [Guildborne] profile_saved {"action":"UpgradeGuildHall","revision":16}  -  เซิร์ฟเวอร์ - ServerBootstrap:22
+  ๑๕:๒๙:๐๗.๙๙๙  [Guildborne] item_destroyed {"quantity":2,"itemId":"herb","reason":"GuildUpgrade"}  -  เซิร์ฟเวอร์ - ServerBootstrap:22
+  ๑๕:๒๙:๐๗.๙๙๙  [Guildborne] item_destroyed {"quantity":6,"itemId":"timber","reason":"GuildUpgrade"}  -  เซิร์ฟเวอร์ - ServerBootstrap:22
+  ๑๕:๒๙:๐๗.๙๙๙  [Guildborne] item_destroyed {"quantity":1,"itemId":"iron_ingot","reason":"GuildUpgrade"}  -  เซิร์ฟเวอร์ - ServerBootstrap:22
+  ๑๕:๒๙:๐๗.๙๙๙  [Guildborne] item_destroyed {"quantity":6,"itemId":"iron_ore","reason":"GuildUpgrade"}  -  เซิร์ฟเวอร์ - ServerBootstrap:22
+  ๑๕:๒๙:๐๗.๙๙๙  [Guildborne] gold_destroyed {"amount":80,"reason":"GuildUpgrade"}  -  เซิร์ฟเวอร์ - ServerBootstrap:22
+  ๑๕:๒๙:๐๗.๙๙๙  [Guildborne] guild_upgraded {"level":2}  -  เซิร์ฟเวอร์ - ServerBootstrap:22
+  ๑๕:๒๙:๐๘.๐๐๐  [Guildborne] tutorial_completed []  -  เซิร์ฟเวอร์ - ServerBootstrap:22
+  ๑๕:๒๙:๐๘.๐๓๕  GBPERSIST PASS UpgradeGuildHall revision 16 gold 10  -  ไคลเอนต์
+  ๑๕:๒๙:๐๘.๙๐๓  GBPERSIST BUSY RETRY SetLanguage 1  -  ไคลเอนต์
+  ๑๕:๒๙:๑๑.๔๔๙  [Guildborne] profile_saved {"action":"SetLanguage","revision":17}  -  เซิร์ฟเวอร์ - ServerBootstrap:22
+  ๑๕:๒๙:๑๑.๔๘๖  GBPERSIST PASS SetLanguage revision 17 gold 10  -  ไคลเอนต์
+  ๑๕:๒๙:๑๑.๔๘๖  GBPERSIST CHECKPOINT {"data":{"adventurers":{"a:Priest":{"equipmentSlots":[],"stats":{"Attack":4,"Defense":3,"Health":24,"WeaponBonus":0},"name":"Sage","classId":"Priest","id":"a:Priest","level":1,"xp":0,"baseStats":{"Defense":3,"Health":24,"Attack":4}},"a:Archer":{"equipmentSlots":[],"stats":{"Attack":8,"Defense":2,"Health":22,"WeaponBonus":0},"name":"Ash","classId":"Archer","id":"a:Archer","level":1,"xp":0,"baseStats":{"Defense":2,"Health":22,"Attack":8}},"a:Warrior":{"equipmentSlots":{"weapon":"q:1:1"},"stats":{"Attack":9,"Defense":4,"Health":33,"WeaponBonus":2},"name":"Rowan","level":2,"id":"a:Warrior","baseStats":{"Defense":4,"Health":30,"Attack":6},"xp":90,"classId":"Warrior"}},"party":{"adventurerIds":["a:Warrior"]},"quests":{"nextRunSequence":4,"lastResult":{"questName":"Quarry Patrol","runId":"q:3","reward":{"Items":[{"Id":"iron_ore","Quantity":6},{"Id":"iron_sword","Quantity":1}],"XP":40,"Gold":60}},"claimedThrough":3,"firstClears":{"timber_escort":true,"quarry_patrol":true,"trail_watch":true}},"hallLevel":2,"gold":10,"inventory":{"equipment":{"q:3:1":{"binding":"Account","upgradeLevel":0,"definitionId":"iron_sword"},"recruit:Priest:1":{"binding":"Account","upgradeLevel":0,"definitionId":"apprentice_staff"},"q:1:1":{"binding":"Account","definitionId":"training_sword","upgradeLevel":0},"recruit:Archer:1":{"binding":"Account","definitionId":"short_bow","upgradeLevel":0}},"stacks":[]},"language":"en","progression":{"tutorialStep":"complete","everEquipped":true,"welcomeSeen":true,"tutorialCompleted":true,"recruitedClasses":{"Warrior":true,"Archer":true,"Priest":true}}},"revision":17}  -  ไคลเอนต์
+  ๑๕:๒๙:๑๑.๔๘๖  GBPERSIST STAGE PASSED finish  -  ไคลเอนต์
+
+SESSION 3
+๑๕:๒๙:๓๙.๐๔๖  [Guildborne] Phase 1 ready · Persistent · staging  -  เซิร์ฟเวอร์ - ServerBootstrap:131
+  ๑๕:๒๙:๓๙.๕๔๔  [Guildborne] Phase 1 client ready  -  ไคลเอนต์ - SliceController:55
+  ๑๕:๒๙:๔๑.๑๐๓  [Guildborne] profile_loaded {"revision":17}  -  เซิร์ฟเวอร์ - ServerBootstrap:22
+  ๑๕:๒๙:๔๑.๑๐๓  [Guildborne] session_started []  -  เซิร์ฟเวอร์ - ServerBootstrap:22
+  ๑๕:๓๐:๑๑.๒๖๕  GBPERSIST PASS GetState revision 17 gold 10  -  ไคลเอนต์
+  ๑๕:๓๐:๑๑.๒๖๖  GBPERSIST LOADED {"data":{"adventurers":{"a:Priest":{"equipmentSlots":[],"stats":{"Attack":4,"Defense":3,"Health":24,"WeaponBonus":0},"name":"Sage","classId":"Priest","id":"a:Priest","level":1,"xp":0,"baseStats":{"Defense":3,"Health":24,"Attack":4}},"a:Archer":{"equipmentSlots":[],"stats":{"Attack":8,"Defense":2,"Health":22,"WeaponBonus":0},"name":"Ash","classId":"Archer","id":"a:Archer","level":1,"xp":0,"baseStats":{"Defense":2,"Health":22,"Attack":8}},"a:Warrior":{"equipmentSlots":{"weapon":"q:1:1"},"stats":{"Attack":9,"Defense":4,"Health":33,"WeaponBonus":2},"name":"Rowan","classId":"Warrior","id":"a:Warrior","level":2,"xp":90,"baseStats":{"Defense":4,"Health":30,"Attack":6}}},"party":{"adventurerIds":["a:Warrior"]},"quests":{"nextRunSequence":4,"lastResult":{"questName":"Quarry Patrol","runId":"q:3","reward":{"Items":[{"Id":"iron_ore","Quantity":6},{"Id":"iron_sword","Quantity":1}],"XP":40,"Gold":60}},"claimedThrough":3,"firstClears":{"timber_escort":true,"quarry_patrol":true,"trail_watch":true}},"hallLevel":2,"gold":10,"inventory":{"equipment":{"q:3:1":{"binding":"Account","upgradeLevel":0,"definitionId":"iron_sword"},"recruit:Priest:1":{"binding":"Account","upgradeLevel":0,"definitionId":"apprentice_staff"},"q:1:1":{"binding":"Account","upgradeLevel":0,"definitionId":"training_sword"},"recruit:Archer:1":{"binding":"Account","upgradeLevel":0,"definitionId":"short_bow"}},"stacks":[]},"language":"en","progression":{"tutorialStep":"complete","everEquipped":true,"welcomeSeen":true,"tutorialCompleted":true,"recruitedClasses":{"Priest":true,"Archer":true,"Warrior":true}}},"revision":17}  -  ไคลเอนต์
+  ๑๕:๓๐:๑๑.๒๖๖  GBPERSIST EXACT REJOIN MATCH 17 en  -  ไคลเอนต์
+  ๑๕:๓๐:๑๓.๐๖๔  [Guildborne] profile_saved {"action":"SetLanguage","revision":18}  -  เซิร์ฟเวอร์ - ServerBootstrap:22
+  ๑๕:๓๐:๑๓.๑๐๑  GBPERSIST PASS SetLanguage revision 18 gold 10  -  ไคลเอนต์
+  ๑๕:๓๐:๑๓.๑๐๑  GBPERSIST CHECKPOINT {"data":{"adventurers":{"a:Priest":{"equipmentSlots":[],"stats":{"Attack":4,"Defense":3,"Health":24,"WeaponBonus":0},"name":"Sage","classId":"Priest","id":"a:Priest","level":1,"xp":0,"baseStats":{"Defense":3,"Health":24,"Attack":4}},"a:Archer":{"equipmentSlots":[],"stats":{"Attack":8,"Defense":2,"Health":22,"WeaponBonus":0},"name":"Ash","classId":"Archer","id":"a:Archer","level":1,"xp":0,"baseStats":{"Defense":2,"Health":22,"Attack":8}},"a:Warrior":{"equipmentSlots":{"weapon":"q:1:1"},"stats":{"Attack":9,"Defense":4,"Health":33,"WeaponBonus":2},"name":"Rowan","classId":"Warrior","id":"a:Warrior","level":2,"xp":90,"baseStats":{"Defense":4,"Health":30,"Attack":6}}},"party":{"adventurerIds":["a:Warrior"]},"quests":{"nextRunSequence":4,"lastResult":{"questName":"Quarry Patrol","runId":"q:3","reward":{"Items":[{"Id":"iron_ore","Quantity":6},{"Id":"iron_sword","Quantity":1}],"XP":40,"Gold":60}},"claimedThrough":3,"firstClears":{"timber_escort":true,"quarry_patrol":true,"trail_watch":true}},"hallLevel":2,"gold":10,"inventory":{"equipment":{"q:3:1":{"binding":"Account","definitionId":"iron_sword","upgradeLevel":0},"recruit:Priest:1":{"binding":"Account","definitionId":"apprentice_staff","upgradeLevel":0},"q:1:1":{"binding":"Account","definitionId":"training_sword","upgradeLevel":0},"recruit:Archer:1":{"binding":"Account","definitionId":"short_bow","upgradeLevel":0}},"stacks":[]},"language":"th","progression":{"tutorialStep":"complete","everEquipped":true,"welcomeSeen":true,"tutorialCompleted":true,"recruitedClasses":{"Priest":true,"Archer":true,"Warrior":true}}},"revision":18}  -  ไคลเอนต์
+  ๑๕:๓๐:๑๓.๑๐๑  GBPERSIST STAGE PASSED thai  -  ไคลเอนต์

@@ -1,0 +1,40 @@
+{
+  "date": "2026-10-03",
+  "environment": "Owned offline memory Studio; PlaceId 0, GameId 0",
+  "npcs": [
+    "Borga",
+    "Mogra",
+    "Rukk",
+    "Ghar"
+  ],
+  "englishDialogueOpenedByE": 4,
+  "thaiBorgaTitleAndSpeechTextFits": true,
+  "nativeRigMotorsPerActor": 15,
+  "borgaQuest": {
+    "acceptedViaDialogueAndJournal": true,
+    "gatheredTimberWithProximityPrompt": 4,
+    "claimWhileAwayRejected": "Visit the relevant portal or NPC first.",
+    "claimAtBorga": "Claimed · 4/4",
+    "goldAfterClaim": 8,
+    "auditTimberDestroyed": 4,
+    "claimButtonRemoved": true,
+    "profileRevisionAfterClaim": 4
+  },
+  "domainTests": 365,
+  "cloudSave": false,
+  "realPurchases": false,
+  "humanAcceptance": false,
+  "limitations": [
+    "Only Borga's full quest journey was driven through runtime UI",
+    "Server debug positioning was used between stations; this was not a navigation playtest"
+  ],
+  "nativePortraitCompactViewport": {
+    "visible": true,
+    "sizePixels": [
+      64,
+      64
+    ],
+    "parts": 36,
+    "clippingRegressionFixed": true
+  }
+}

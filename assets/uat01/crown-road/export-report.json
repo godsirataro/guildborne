@@ -1,0 +1,90 @@
+[
+  {
+    "id": "crown_road_landscape",
+    "triangles": 396,
+    "bounds": [
+      300.0,
+      450.0,
+      30.0
+    ],
+    "sourceParts": 33,
+    "robloxMeshAssetId": null
+  },
+  {
+    "id": "crown_road_couriercamp",
+    "triangles": 204,
+    "bounds": [
+      109.0,
+      69.39999389648438,
+      24.0
+    ],
+    "sourceParts": 17,
+    "robloxMeshAssetId": null
+  },
+  {
+    "id": "crown_road_trainingyard",
+    "triangles": 132,
+    "bounds": [
+      56.0,
+      42.0,
+      8.0
+    ],
+    "sourceParts": 11,
+    "robloxMeshAssetId": null
+  },
+  {
+    "id": "crown_road_caravanbend",
+    "triangles": 120,
+    "bounds": [
+      59.999996185302734,
+      50.0,
+      5.500000476837158
+    ],
+    "sourceParts": 10,
+    "robloxMeshAssetId": null
+  },
+  {
+    "id": "crown_road_crossroadskeeper",
+    "triangles": 84,
+    "bounds": [
+      56.0,
+      50.0,
+      13.0
+    ],
+    "sourceParts": 7,
+    "robloxMeshAssetId": null
+  },
+  {
+    "id": "crown_road_fivedisciplines",
+    "triangles": 192,
+    "bounds": [
+      80.0,
+      40.0,
+      10.0
+    ],
+    "sourceParts": 16,
+    "robloxMeshAssetId": null
+  },
+  {
+    "id": "crown_road_abandonedhall",
+    "triangles": 120,
+    "bounds": [
+      74.0,
+      79.0,
+      18.0
+    ],
+    "sourceParts": 10,
+    "robloxMeshAssetId": null
+  },
+  {
+    "id": "crown_road_complete",
+    "triangles": 1248,
+    "bounds": [
+      300.0,
+      450.0,
+      30.0
+    ],
+    "sourceParts": 104,
+    "robloxMeshAssetId": null
+  }
+]

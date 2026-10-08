@@ -1,0 +1,257 @@
+{
+  "ruleset": "GUILD-PROGRESSION-DESIGN-2.0",
+  "status": "PROPOSAL_NOT_RUNTIME_CONFIG",
+  "player_start_level": 1,
+  "hero_new_recruit_level": 10,
+  "max_entity_level": 100,
+  "max_personal_hall_level": 20,
+  "max_owned_companions_in_party": 5,
+  "class_tier_unlocks": {
+    "1": 10,
+    "2": 35,
+    "3": 70
+  },
+  "class4_enabled": false,
+  "pre_hall_level_cap": 10,
+  "hall_cap_formula": "min(100, 20 + 5 * (hallLevel - 1)) for hallLevel >= 1",
+  "hall_schedule": [
+    {
+      "hall_level": 1,
+      "level_cap": 20,
+      "permit_quest_design_id": "MAIN_00_06",
+      "minimum_player_level": 10,
+      "benefit": "เปิดฐาน/รับสมัคร/เพดาน20",
+      "cost": "FREE_STORY_GRANT"
+    },
+    {
+      "hall_level": 2,
+      "level_cap": 25,
+      "permit_quest_design_id": "MAIN_01_06",
+      "minimum_player_level": 20,
+      "benefit": "เพิ่มเพดานเลเวลครั้งละ5",
+      "cost": "BALANCE_REQUIRED: deterministic Gold + accessible ordinary materials; no market or guild-war requirement"
+    },
+    {
+      "hall_level": 3,
+      "level_cap": 30,
+      "permit_quest_design_id": "MAIN_02_03",
+      "minimum_player_level": 25,
+      "benefit": "เพิ่มเพดานเลเวลครั้งละ5",
+      "cost": "BALANCE_REQUIRED: deterministic Gold + accessible ordinary materials; no market or guild-war requirement"
+    },
+    {
+      "hall_level": 4,
+      "level_cap": 35,
+      "permit_quest_design_id": "MAIN_02_05",
+      "minimum_player_level": 30,
+      "benefit": "เพิ่มเพดานเลเวลครั้งละ5",
+      "cost": "BALANCE_REQUIRED: deterministic Gold + accessible ordinary materials; no market or guild-war requirement"
+    },
+    {
+      "hall_level": 5,
+      "level_cap": 40,
+      "permit_quest_design_id": "MAIN_03_01",
+      "minimum_player_level": 35,
+      "benefit": "เพิ่มเพดานเลเวลครั้งละ5",
+      "cost": "BALANCE_REQUIRED: deterministic Gold + accessible ordinary materials; no market or guild-war requirement"
+    },
+    {
+      "hall_level": 6,
+      "level_cap": 45,
+      "permit_quest_design_id": "MAIN_03_03",
+      "minimum_player_level": 40,
+      "benefit": "เพิ่มเพดานเลเวลครั้งละ5",
+      "cost": "BALANCE_REQUIRED: deterministic Gold + accessible ordinary materials; no market or guild-war requirement"
+    },
+    {
+      "hall_level": 7,
+      "level_cap": 50,
+      "permit_quest_design_id": "MAIN_03_05",
+      "minimum_player_level": 45,
+      "benefit": "เพิ่มเพดานเลเวลครั้งละ5",
+      "cost": "BALANCE_REQUIRED: deterministic Gold + accessible ordinary materials; no market or guild-war requirement"
+    },
+    {
+      "hall_level": 8,
+      "level_cap": 55,
+      "permit_quest_design_id": "MAIN_04_01",
+      "minimum_player_level": 50,
+      "benefit": "เพิ่มเพดานเลเวลครั้งละ5",
+      "cost": "BALANCE_REQUIRED: deterministic Gold + accessible ordinary materials; no market or guild-war requirement"
+    },
+    {
+      "hall_level": 9,
+      "level_cap": 60,
+      "permit_quest_design_id": "MAIN_04_03",
+      "minimum_player_level": 55,
+      "benefit": "เพิ่มเพดานเลเวลครั้งละ5",
+      "cost": "BALANCE_REQUIRED: deterministic Gold + accessible ordinary materials; no market or guild-war requirement"
+    },
+    {
+      "hall_level": 10,
+      "level_cap": 65,
+      "permit_quest_design_id": "MAIN_04_04",
+      "minimum_player_level": 60,
+      "benefit": "เพิ่มเพดานเลเวลครั้งละ5",
+      "cost": "BALANCE_REQUIRED: deterministic Gold + accessible ordinary materials; no market or guild-war requirement"
+    },
+    {
+      "hall_level": 11,
+      "level_cap": 70,
+      "permit_quest_design_id": "MAIN_04_06",
+      "minimum_player_level": 65,
+      "benefit": "เพิ่มเพดานเลเวลครั้งละ5",
+      "cost": "BALANCE_REQUIRED: deterministic Gold + accessible ordinary materials; no market or guild-war requirement"
+    },
+    {
+      "hall_level": 12,
+      "level_cap": 75,
+      "permit_quest_design_id": "MAIN_05_01",
+      "minimum_player_level": 70,
+      "benefit": "เพิ่มเพดานเลเวลครั้งละ5",
+      "cost": "BALANCE_REQUIRED: deterministic Gold + accessible ordinary materials; no market or guild-war requirement"
+    },
+    {
+      "hall_level": 13,
+      "level_cap": 80,
+      "permit_quest_design_id": "MAIN_05_03",
+      "minimum_player_level": 75,
+      "benefit": "เพิ่มเพดานเลเวลครั้งละ5",
+      "cost": "BALANCE_REQUIRED: deterministic Gold + accessible ordinary materials; no market or guild-war requirement"
+    },
+    {
+      "hall_level": 14,
+      "level_cap": 85,
+      "permit_quest_design_id": "MAIN_05_05",
+      "minimum_player_level": 80,
+      "benefit": "เพิ่มเพดานเลเวลครั้งละ5",
+      "cost": "BALANCE_REQUIRED: deterministic Gold + accessible ordinary materials; no market or guild-war requirement"
+    },
+    {
+      "hall_level": 15,
+      "level_cap": 90,
+      "permit_quest_design_id": "MAIN_06_01",
+      "minimum_player_level": 85,
+      "benefit": "เพิ่มเพดานเลเวลครั้งละ5",
+      "cost": "BALANCE_REQUIRED: deterministic Gold + accessible ordinary materials; no market or guild-war requirement"
+    },
+    {
+      "hall_level": 16,
+      "level_cap": 95,
+      "permit_quest_design_id": "MAIN_06_03",
+      "minimum_player_level": 90,
+      "benefit": "เพิ่มเพดานเลเวลครั้งละ5",
+      "cost": "BALANCE_REQUIRED: deterministic Gold + accessible ordinary materials; no market or guild-war requirement"
+    },
+    {
+      "hall_level": 17,
+      "level_cap": 100,
+      "permit_quest_design_id": "MAIN_06_05",
+      "minimum_player_level": 95,
+      "benefit": "เพิ่มเพดานเลเวลครั้งละ5",
+      "cost": "BALANCE_REQUIRED: deterministic Gold + accessible ordinary materials; no market or guild-war requirement"
+    },
+    {
+      "hall_level": 18,
+      "level_cap": 100,
+      "permit_quest_design_id": "MAIN_07_02",
+      "minimum_player_level": 100,
+      "benefit": "ห้องแสดงของและพื้นที่สังคม",
+      "cost": "BALANCE_REQUIRED: deterministic Gold + accessible ordinary materials; no market or guild-war requirement"
+    },
+    {
+      "hall_level": 19,
+      "level_cap": 100,
+      "permit_quest_design_id": "MAIN_07_04",
+      "minimum_player_level": 100,
+      "benefit": "ห้องสมุด/โหลด build สะดวกขึ้น",
+      "cost": "BALANCE_REQUIRED: deterministic Gold + accessible ordinary materials; no market or guild-war requirement"
+    },
+    {
+      "hall_level": 20,
+      "level_cap": 100,
+      "permit_quest_design_id": "MAIN_07_06",
+      "minimum_player_level": 100,
+      "benefit": "รูปลักษณ์ฐานระดับสูง/พิพิธภัณฑ์",
+      "cost": "BALANCE_REQUIRED: deterministic Gold + accessible ordinary materials; no market or guild-war requirement"
+    }
+  ],
+  "recruitment_gate": "player.classTier >= 1 AND completed MAIN_00_06 AND personalHallLevel >= 1",
+  "first_recruit": "guaranteed selectable base class, starts level 10, not RNG",
+  "skill_points": {
+    "formula": "max(0, level - 1)",
+    "level10": 9,
+    "level35": 34,
+    "level70": 69,
+    "level100": 99,
+    "awarded_from_level2": 1
+  },
+  "status_points": {
+    "formula": "3 * max(0, level - 1)",
+    "level10": 27,
+    "level35": 102,
+    "level70": 207,
+    "level100": 297,
+    "awarded_from_level2": 3,
+    "stats": [
+      "STR",
+      "DEX",
+      "INT",
+      "VIT",
+      "WIS"
+    ],
+    "hard_cap_allocated_per_stat": 150,
+    "effective_allocated_formula": "min(x,40) + 0.6*min(max(x-40,0),40) + 0.3*max(x-80,0)",
+    "coefficients_status": "INITIAL DESIGN TARGETS, NOT BALANCE-VERIFIED"
+  },
+  "point_reward_policy": "No permanent SP/AP from RNG, paid products, daily streaks, world events, PvP or missed-time content",
+  "per_entity_points": true,
+  "advancement_respec": {
+    "free_on_first_success_per_entity_per_tier": true,
+    "reset_both_skill_and_status": true,
+    "recompute_budget_not_add_again": true,
+    "preserve_level_xp_equipment_owned_heroes": true,
+    "not_base_class_change": true
+  },
+  "optional_respec": {
+    "uat": "FREE in safe zone outside combat/expedition; cancel pending cast; preserve cooldown integrity",
+    "later": "earnable deterministic fee/ticket only after balance review; not paid-only"
+  },
+  "skill_tree": {
+    "per_tier": {
+      "active_skills": 3,
+      "active_max_rank": 3,
+      "active_point_cost": 9,
+      "passives": 4,
+      "passive_max_rank": 5,
+      "passive_point_cost": 20,
+      "rune_groups": 2,
+      "choices_per_group": 3,
+      "max_choices_per_group": 1,
+      "rune_cost_per_choice": 2,
+      "rune_point_cost": 4,
+      "capstone_count": 1,
+      "capstone_cost": 6,
+      "total_full_tier_cost": 39
+    },
+    "selected_path_max_cost": 117,
+    "level100_budget": 99,
+    "active_equipped_slots": 3,
+    "basic_attack_free": true,
+    "class_gate_levels": [
+      10,
+      35,
+      70
+    ],
+    "capstone_gate_levels": [
+      25,
+      55,
+      85
+    ],
+    "capstone_min_points_previously_spent_in_same_tier": 18,
+    "tier3_capstone_additional_quest": true,
+    "multiple_sibling_branches_active": false
+  },
+  "old_save_policy": "Additive migration with per-entity grandfathered unlocks and level entitlement; never clamp/de-level old characters; no market schema change",
+  "bindings_required": true
+}

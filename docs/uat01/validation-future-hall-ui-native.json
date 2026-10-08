@@ -1,0 +1,22 @@
+{
+  "date": "2026-10-06",
+  "scope": "Copied view only; synthetic Gold/materials never applied to a player profile; actual mouse clicks captured no actions",
+  "en": {
+    "content": [
+      {
+        "type": "text",
+        "text": "{\"y\":244,\"x\":435,\"messages\":{\"1\":{\"height\":16,\"text\":\"The next Hall needs a permit from a story chapter not available in this build.\",\"boundsY\":16}},\"active\":false,\"autoColor\":false,\"text\":\"Upgrade Hall Lv12 · 880 Gold\",\"calls\":[]}"
+      }
+    ],
+    "isError": false
+  },
+  "th": {
+    "content": [
+      {
+        "type": "text",
+        "text": "{\"y\":244,\"x\":435,\"messages\":{\"1\":{\"height\":16,\"text\":\"Hall ถัดไปต้องมีสิทธิ์จากบทเนื้อเรื่องที่ยังไม่เปิดในรุ่นนี้\",\"boundsY\":16}},\"active\":false,\"autoColor\":false,\"text\":\"อัปเกรดหอกิลด์ Lv12 · 880 Gold\",\"calls\":[]}"
+      }
+    ],
+    "isError": false
+  }
+}

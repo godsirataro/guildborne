@@ -1,0 +1,39 @@
+{
+  "geometry": {
+    "content": [
+      {
+        "type": "text",
+        "text": "{\"readOnly\":true,\"cities\":[{\"paths\":8,\"id\":\"Crownford\",\"hostInRange\":true,\"prompts\":6,\"clearLandings\":2},{\"paths\":8,\"id\":\"Sylvaris\",\"hostInRange\":true,\"prompts\":6,\"clearLandings\":2},{\"paths\":8,\"id\":\"Deepforge\",\"hostInRange\":true,\"prompts\":6,\"clearLandings\":2},{\"paths\":8,\"id\":\"Astralis\",\"hostInRange\":true,\"prompts\":6,\"clearLandings\":2},{\"paths\":8,\"id\":\"Crosshaven\",\"hostInRange\":true,\"prompts\":6,\"clearLandings\":2},{\"paths\":8,\"id\":\"Ironroot\",\"hostInRange\":true,\"prompts\":6,\"clearLandings\":2}],\"profileWrites\":0}"
+      }
+    ],
+    "isError": false
+  },
+  "ui": {
+    "content": [
+      {
+        "type": "text",
+        "text": "{\"map\":\"{\\\"ok\\\":true,\\\"result\\\":{\\\"synthetic\\\":true,\\\"textBounds\\\":216,\\\"profileWrites\\\":0,\\\"overlap\\\":false,\\\"languages\\\":[\\\"en\\\",\\\"th\\\"],\\\"widths\\\":[240,640,704],\\\"cases\\\":36,\\\"cityCount\\\":6}}\",\"tavern\":\"{\\\"ok\\\":true,\\\"result\\\":{\\\"classes\\\":5,\\\"noClipping\\\":true,\\\"languages\\\":[\\\"en\\\",\\\"th\\\"],\\\"confirmationCases\\\":4,\\\"viewChecks\\\":120,\\\"widths\\\":[240,640],\\\"noProfileWrites\\\":true,\\\"synthetic\\\":true}}\"}"
+      }
+    ],
+    "isError": false
+  },
+  "ordinaryInput": {
+    "content": [
+      {
+        "type": "text",
+        "text": "{\"revision\":11,\"code\":\"OK\",\"settlement\":{\"nextOffer\":2,\"elixirs\":0,\"tavernLevel\":1,\"offer\":{\"id\":\"offer:1\",\"classId\":\"Archer\",\"templateId\":\"archer_01\",\"rank\":\"F\"},\"nextHero\":1,\"nextJob\":1,\"journal\":{\"city_gate\":{\"state\":\"Claimed\",\"progress\":1},\"elian_charter\":{\"state\":\"Claimed\",\"progress\":1}},\"jobs\":[]},\"buttons\":[{\"text\":\"Upgrade tavern\",\"name\":\"UpgradeTavern\",\"active\":false},{\"text\":\"Replace candidate · 20 Gold\",\"name\":\"ScoutCandidate\",\"active\":false},{\"text\":\"Hire candidate\",\"name\":\"HireCandidate\",\"active\":false}],\"zone\":\"Crownford\",\"gold\":5}"
+      }
+    ],
+    "isError": false
+  },
+  "console": {
+    "content": [
+      {
+        "type": "text",
+        "text": "[Guildborne] Phase 1 ready · Studio memory · not saved after Stop\n[Guildborne] profile_loaded {\"revision\":0}\n[Guildborne] session_started []\n[Guildborne] Phase 1 client ready\n[Guildborne] profile_saved {\"action\":\"TravelZone\",\"revision\":1}\n[Guildborne] profile_saved {\"action\":\"AcceptTask\",\"revision\":2}\n[Guildborne] profile_saved {\"action\":\"TravelZone\",\"revision\":3}\n[Guildborne] profile_saved {\"action\":\"TravelZone\",\"revision\":4}\n[Guildborne] profile_saved {\"action\":\"ClaimTask\",\"revision\":5}\n[Guildborne] gold_created {\"amount\":15,\"reason\":\"JournalReward\"}\n[Guildborne] journal_completed {\"questId\":\"city_gate\"}\n[Guildborne] profile_saved {\"action\":\"AcceptTask\",\"revision\":6}\n[Guildborne] profile_saved {\"action\":\"TravelZone\",\"revision\":7}\n[Guildborne] profile_saved {\"action\":\"TravelZone\",\"revision\":8}\n[Guildborne] profile_saved {\"action\":\"ClaimTask\",\"revision\":9}\n[Guildborne] gold_created {\"amount\":10,\"reason\":\"JournalReward\"}\n[Guildborne] journal_completed {\"questId\":\"elian_charter\"}\n[Guildborne] profile_saved {\"action\":\"TravelZone\",\"revision\":10}\n[Guildborne] profile_saved {\"action\":\"ScoutHero\",\"revision\":11}\n[Guildborne] gold_destroyed {\"amount\":20,\"reason\":\"Scouting\"}\n[Guildborne] hero_scouted []"
+      }
+    ],
+    "isError": false
+  },
+  "notes": "Fresh Memory profile; ordinary input and navigation speed 1. Earned city_gate + elian_charter; Market showed25Gold; Tavern Scout20Gold -> revision11/5Gold/Archer offer. Hire/replace disabled insufficient gold; upgrade disabled outside Guild. No profile grants or gameplay remote injection."
+}

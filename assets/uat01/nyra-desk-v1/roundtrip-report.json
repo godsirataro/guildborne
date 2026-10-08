@@ -1,0 +1,41 @@
+{
+  "status": "PASS",
+  "format": "GLB",
+  "bones": 16,
+  "meshObjects": 72,
+  "triangles": 8208,
+  "contactSamples": [
+    {
+      "frame": 0,
+      "toolClearance": -4.76837158203125e-07
+    },
+    {
+      "frame": 30,
+      "toolClearance": -1.1920928955078125e-06
+    },
+    {
+      "frame": 60,
+      "toolClearance": -1.430511474609375e-06
+    },
+    {
+      "frame": 90,
+      "toolClearance": -1.430511474609375e-06
+    },
+    {
+      "frame": 120,
+      "toolClearance": -9.5367431640625e-07
+    },
+    {
+      "frame": 150,
+      "toolClearance": -7.152557373046875e-07
+    },
+    {
+      "frame": 180,
+      "toolClearance": -4.76837158203125e-07
+    }
+  ],
+  "fixedSupportAndFeet": true,
+  "loopSeam": true,
+  "platformImported": false,
+  "notes": "Stamp tests bottom surface; pen/stylus tests authored tip centre against document surface and bounds."
+}

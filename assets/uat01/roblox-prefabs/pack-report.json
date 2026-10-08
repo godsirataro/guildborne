@@ -1,0 +1,76 @@
+{
+  "schema": 1,
+  "kits": 8,
+  "models": 88,
+  "visibleParts": 1576,
+  "invisibleMarkers": 15,
+  "reviewRoutes": 9,
+  "packs": [
+    {
+      "id": "GuildbornePrefabLibrary",
+      "models": 88,
+      "parts": 1591,
+      "rbxmBytes": 43941,
+      "sha256": "c10d407cf2f79a8f4aaefb499c9b9b7bf27f831cc6a14eaccc0d4e53e80c60ba"
+    },
+    {
+      "id": "adventure-kit",
+      "models": 10,
+      "parts": 87,
+      "rbxmBytes": 5334,
+      "sha256": "7cf0d046cab602b6314239ca4c5d3ad1e28df839872d48d291803474012042aa"
+    },
+    {
+      "id": "weapon-kit",
+      "models": 5,
+      "parts": 54,
+      "rbxmBytes": 4308,
+      "sha256": "3a8775f0aebf6fa8ad30641cab8af9e9cb077a9683d39d6f9be5c915904b35cf"
+    },
+    {
+      "id": "item-kit",
+      "models": 30,
+      "parts": 246,
+      "rbxmBytes": 10297,
+      "sha256": "2a2d0efe711f3f5f085dcf73828244d32c9c05805d9a472e6a3724b9b9d57a52"
+    },
+    {
+      "id": "hero-kit",
+      "models": 15,
+      "parts": 439,
+      "rbxmBytes": 7792,
+      "sha256": "912b37f0cfe4c5c1500a70ab033d87b258423638c5fbdf02750cda3534ae0737"
+    },
+    {
+      "id": "enemy-kit",
+      "models": 12,
+      "parts": 334,
+      "rbxmBytes": 10996,
+      "sha256": "3ec600c03f80f7a045d64cad63decdc9bfc884a5d8fb7b99d1cf74faf5a14520"
+    },
+    {
+      "id": "region-kit",
+      "models": 3,
+      "parts": 156,
+      "rbxmBytes": 6069,
+      "sha256": "16eb2bc321682bb04c55a013f1624f30feb5900b30b8639e53ed5b488108df2d"
+    },
+    {
+      "id": "cosmetic-kit",
+      "models": 8,
+      "parts": 106,
+      "rbxmBytes": 5413,
+      "sha256": "fca8eddc6ef142ec5c24aa6f047b4428b5ff0b79de273aabfd730e9dba67bebf"
+    },
+    {
+      "id": "city-interior-kit",
+      "models": 5,
+      "parts": 169,
+      "rbxmBytes": 5984,
+      "sha256": "e0799e5e875debc905930be4efa7bdacf7ac3e2d0ab77e26082fddfefae2afe4"
+    }
+  ],
+  "scriptFree": true,
+  "cloudImported": false,
+  "staticArtOnly": true
+}

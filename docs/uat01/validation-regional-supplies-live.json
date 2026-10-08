@@ -1,0 +1,12 @@
+{
+  "evidence": {
+    "content": [
+      {
+        "type": "text",
+        "text": "{\"character\":{\"classPathId\":\"warrior:1\",\"stats\":{\"Attack\":8,\"Defense\":4,\"Health\":30,\"WeaponBonus\":2},\"definitionVersion\":1,\"classId\":\"Warrior\",\"xp\":20,\"raceId\":\"Human\",\"tier\":1,\"level\":1,\"equipmentSlots\":[],\"skillId\":\"power_strike\"},\"gold\":24,\"questCount\":31,\"revision\":22,\"journal\":{\"mogra_greenwood_herbs\":{\"progress\":2,\"state\":\"Claimed\"},\"mogra_ashen_herbs\":{\"progress\":2,\"state\":\"Claimed\"},\"mogra_gathering\":{\"progress\":2,\"state\":\"Claimed\"}},\"herbs\":12}"
+      }
+    ],
+    "isError": false
+  },
+  "method": "Owned PlaceId0/GameId0 memory-only Studio. Actual UI accept/claim and keyboard E gathering/travel. Debug PivotTo shortened approach walking only; no profile, XP, item, currency or health grants. Mogra original prerequisite and both regional follow-ups completed. Four other regional supply quests have domain coverage, not this live journey."
+}

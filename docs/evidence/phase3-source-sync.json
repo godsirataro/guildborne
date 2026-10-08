@@ -1,0 +1,182 @@
+[
+  {
+    "file": "shared/Config/City.luau",
+    "result": {
+      "content": [
+        {
+          "type": "text",
+          "text": "true"
+        }
+      ],
+      "isError": false
+    }
+  },
+  {
+    "file": "shared/Config/Localization.luau",
+    "result": {
+      "content": [
+        {
+          "type": "text",
+          "text": "true"
+        }
+      ],
+      "isError": false
+    }
+  },
+  {
+    "file": "server/Systems/TravelRules.luau",
+    "result": {
+      "content": [
+        {
+          "type": "text",
+          "text": "true"
+        }
+      ],
+      "isError": false
+    }
+  },
+  {
+    "file": "server/Services/TravelService.luau",
+    "result": {
+      "content": [
+        {
+          "type": "text",
+          "text": "true"
+        }
+      ],
+      "isError": false
+    }
+  },
+  {
+    "file": "server/Services/CityKit.luau",
+    "result": {
+      "content": [
+        {
+          "type": "text",
+          "text": "true"
+        }
+      ],
+      "isError": false
+    }
+  },
+  {
+    "file": "server/Services/CentralCityWorld.luau",
+    "result": {
+      "content": [
+        {
+          "type": "text",
+          "text": "true"
+        }
+      ],
+      "isError": false
+    }
+  },
+  {
+    "file": "server/Services/CityWorld.luau",
+    "result": {
+      "content": [
+        {
+          "type": "text",
+          "text": "true"
+        }
+      ],
+      "isError": false
+    }
+  },
+  {
+    "file": "server/Services/WorldService.luau",
+    "result": {
+      "content": [
+        {
+          "type": "text",
+          "text": "true"
+        }
+      ],
+      "isError": false
+    }
+  },
+  {
+    "file": "server/Services/HeroService.luau",
+    "result": {
+      "content": [
+        {
+          "type": "text",
+          "text": "true"
+        }
+      ],
+      "isError": false
+    }
+  },
+  {
+    "file": "server/Services/CombatService.luau",
+    "result": {
+      "content": [
+        {
+          "type": "text",
+          "text": "true"
+        }
+      ],
+      "isError": false
+    }
+  },
+  {
+    "file": "client/Controllers/CityNavigation.luau",
+    "result": {
+      "content": [
+        {
+          "type": "text",
+          "text": "true"
+        }
+      ],
+      "isError": false
+    }
+  },
+  {
+    "file": "client/Controllers/SliceController.luau",
+    "result": {
+      "content": [
+        {
+          "type": "text",
+          "text": "true"
+        }
+      ],
+      "isError": false
+    }
+  },
+  {
+    "file": "client/ClientBootstrap.client.luau",
+    "result": {
+      "content": [
+        {
+          "type": "text",
+          "text": "true"
+        }
+      ],
+      "isError": false
+    }
+  },
+  {
+    "file": "server/Config/Runtime.luau",
+    "result": {
+      "content": [
+        {
+          "type": "text",
+          "text": "true"
+        }
+      ],
+      "isError": false
+    }
+  },
+  {
+    "file": "server/ServerBootstrap.server.luau",
+    "result": {
+      "content": [
+        {
+          "type": "text",
+          "text": "true"
+        }
+      ],
+      "isError": false
+    }
+  }
+]

@@ -1,0 +1,9 @@
+{
+  "content": [
+    {
+      "type": "text",
+      "text": "{\"onPlayer\":{\"hero\":{\"RecoveryCount\":5,\"CombatHealth\":36,\"AbilityName\":\"Power Strike\",\"PartySlot\":2,\"HeroState\":\"Following\",\"CombatMaxHealth\":36,\"GuildborneHero\":true,\"AdventurerId\":\"a:Warrior\",\"OwnerUserId\":11732987790,\"CombatState\":\"Follow\",\"Level\":3,\"Cooldown\":0,\"ClassId\":\"Warrior\"},\"player\":{\"CombatHealth\":34,\"AbilityName\":\"Power Strike\",\"WeaponId\":\"iron_sword\",\"ClassId\":\"Warrior\",\"CombatMaxHealth\":34,\"ArmorId\":\"leather_vest\",\"Cooldown\":0,\"AccessoryId\":\"bronze_ring\",\"GuildbornePlayer\":true,\"CombatState\":\"Idle\",\"Level\":1,\"XP\":0,\"OwnerUserId\":11732987790},\"playerStats\":{\"Attack\":11,\"Defense\":6,\"Health\":34,\"WeaponBonus\":4},\"heroStats\":{\"Attack\":8,\"Defense\":4,\"Health\":36,\"WeaponBonus\":0}},\"onHero\":{\"hero\":{\"RecoveryCount\":4,\"CombatHealth\":40,\"AbilityName\":\"Power Strike\",\"WeaponId\":\"iron_sword\",\"GuildborneHero\":true,\"HeroState\":\"Following\",\"ArmorId\":\"leather_vest\",\"CombatMaxHealth\":40,\"PartySlot\":2,\"AccessoryId\":\"bronze_ring\",\"AdventurerId\":\"a:Warrior\",\"OwnerUserId\":11732987790,\"CombatState\":\"Follow\",\"Level\":3,\"Cooldown\":0,\"ClassId\":\"Warrior\"},\"player\":{\"CombatHealth\":30,\"AbilityName\":\"Power Strike\",\"WeaponId\":\"training_sword\",\"ClassId\":\"Warrior\",\"CombatMaxHealth\":30,\"XP\":0,\"GuildbornePlayer\":true,\"CombatState\":\"Idle\",\"Level\":1,\"Cooldown\":0,\"OwnerUserId\":11732987790},\"playerStats\":{\"Attack\":8,\"Defense\":4,\"Health\":30,\"WeaponBonus\":2},\"heroStats\":{\"Attack\":13,\"Defense\":6,\"Health\":40,\"WeaponBonus\":4}}}"
+    }
+  ],
+  "isError": false
+}

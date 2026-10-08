@@ -1,0 +1,17 @@
+{
+  "seconds": 6,
+  "sampleRate": 48000,
+  "channels": 1,
+  "bits": 16,
+  "peak": 0.1,
+  "events": [
+    {
+      "from": 0,
+      "to": 6,
+      "event": "chart tracing"
+    }
+  ],
+  "source": "Original deterministic synthesis",
+  "status": "TECHNICAL_TIMING_PASS_LISTENING_IMPORT_PENDING",
+  "robloxSoundId": null
+}

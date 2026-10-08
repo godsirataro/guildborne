@@ -1,0 +1,392 @@
+[
+  {
+    "id": "watchblade",
+    "triangles": 112,
+    "bounds": [
+      1.8522670269012451,
+      0.4950000047683716,
+      4.474558353424072
+    ],
+    "sourceParts": 10,
+    "icon": "watchblade.png",
+    "robloxMeshAssetId": null,
+    "robloxImageAssetId": null
+  },
+  {
+    "id": "oathblade",
+    "triangles": 136,
+    "bounds": [
+      1.8522670269012451,
+      0.4950000047683716,
+      4.474558353424072
+    ],
+    "sourceParts": 12,
+    "icon": "oathblade.png",
+    "robloxMeshAssetId": null,
+    "robloxImageAssetId": null
+  },
+  {
+    "id": "yew_longbow",
+    "triangles": 120,
+    "bounds": [
+      1.3632529973983765,
+      0.3799999952316284,
+      4.915525436401367
+    ],
+    "sourceParts": 10,
+    "icon": "yew_longbow.png",
+    "robloxMeshAssetId": null,
+    "robloxImageAssetId": null
+  },
+  {
+    "id": "tide_staff",
+    "triangles": 120,
+    "bounds": [
+      1.5762420892715454,
+      0.550000011920929,
+      5.527333736419678
+    ],
+    "sourceParts": 10,
+    "icon": "tide_staff.png",
+    "robloxMeshAssetId": null,
+    "robloxImageAssetId": null
+  },
+  {
+    "id": "dawn_crozier",
+    "triangles": 144,
+    "bounds": [
+      1.34782075881958,
+      0.45000001788139343,
+      5.608911037445068
+    ],
+    "sourceParts": 12,
+    "icon": "dawn_crozier.png",
+    "robloxMeshAssetId": null,
+    "robloxImageAssetId": null
+  },
+  {
+    "id": "training_sword",
+    "triangles": 112,
+    "bounds": [
+      1.8522670269012451,
+      0.4950000047683716,
+      4.474558353424072
+    ],
+    "sourceParts": 10,
+    "icon": "training_sword.png",
+    "robloxMeshAssetId": null,
+    "robloxImageAssetId": null
+  },
+  {
+    "id": "iron_sword",
+    "triangles": 112,
+    "bounds": [
+      1.8522670269012451,
+      0.4950000047683716,
+      4.474558353424072
+    ],
+    "sourceParts": 10,
+    "icon": "iron_sword.png",
+    "robloxMeshAssetId": null,
+    "robloxImageAssetId": null
+  },
+  {
+    "id": "knight_sword",
+    "triangles": 112,
+    "bounds": [
+      1.8522670269012451,
+      0.4950000047683716,
+      4.474558353424072
+    ],
+    "sourceParts": 10,
+    "icon": "knight_sword.png",
+    "robloxMeshAssetId": null,
+    "robloxImageAssetId": null
+  },
+  {
+    "id": "short_bow",
+    "triangles": 120,
+    "bounds": [
+      1.0906026363372803,
+      0.30400002002716064,
+      3.9324207305908203
+    ],
+    "sourceParts": 10,
+    "icon": "short_bow.png",
+    "robloxMeshAssetId": null,
+    "robloxImageAssetId": null
+  },
+  {
+    "id": "apprentice_staff",
+    "triangles": 120,
+    "bounds": [
+      1.5762420892715454,
+      0.550000011920929,
+      5.527333736419678
+    ],
+    "sourceParts": 10,
+    "icon": "apprentice_staff.png",
+    "robloxMeshAssetId": null,
+    "robloxImageAssetId": null
+  },
+  {
+    "id": "mage_staff",
+    "triangles": 120,
+    "bounds": [
+      1.5762420892715454,
+      0.550000011920929,
+      5.527333736419678
+    ],
+    "sourceParts": 10,
+    "icon": "mage_staff.png",
+    "robloxMeshAssetId": null,
+    "robloxImageAssetId": null
+  },
+  {
+    "id": "leather_vest",
+    "triangles": 108,
+    "bounds": [
+      2.8209798336029053,
+      0.7799999713897705,
+      1.813936471939087
+    ],
+    "sourceParts": 9,
+    "icon": "leather_vest.png",
+    "robloxMeshAssetId": null,
+    "robloxImageAssetId": null
+  },
+  {
+    "id": "guardian_plate",
+    "triangles": 96,
+    "bounds": [
+      2.8209798336029053,
+      0.9099999666213989,
+      1.813936471939087
+    ],
+    "sourceParts": 8,
+    "icon": "guardian_plate.png",
+    "robloxMeshAssetId": null,
+    "robloxImageAssetId": null
+  },
+  {
+    "id": "woven_robes",
+    "triangles": 132,
+    "bounds": [
+      2.8209798336029053,
+      0.7799999713897705,
+      2.5410327911376953
+    ],
+    "sourceParts": 11,
+    "icon": "woven_robes.png",
+    "robloxMeshAssetId": null,
+    "robloxImageAssetId": null
+  },
+  {
+    "id": "scout_coat",
+    "triangles": 132,
+    "bounds": [
+      2.8209798336029053,
+      0.7799999713897705,
+      2.5410327911376953
+    ],
+    "sourceParts": 11,
+    "icon": "scout_coat.png",
+    "robloxMeshAssetId": null,
+    "robloxImageAssetId": null
+  },
+  {
+    "id": "runewoven_mantle",
+    "triangles": 132,
+    "bounds": [
+      2.8209798336029053,
+      0.7799999713897705,
+      2.5410327911376953
+    ],
+    "sourceParts": 11,
+    "icon": "runewoven_mantle.png",
+    "robloxMeshAssetId": null,
+    "robloxImageAssetId": null
+  },
+  {
+    "id": "harbor_mail",
+    "triangles": 96,
+    "bounds": [
+      2.8209798336029053,
+      0.9099999666213989,
+      1.813936471939087
+    ],
+    "sourceParts": 8,
+    "icon": "harbor_mail.png",
+    "robloxMeshAssetId": null,
+    "robloxImageAssetId": null
+  },
+  {
+    "id": "vanguard_harness",
+    "triangles": 96,
+    "bounds": [
+      2.8209798336029053,
+      0.7799999713897705,
+      1.813936471939087
+    ],
+    "sourceParts": 8,
+    "icon": "vanguard_harness.png",
+    "robloxMeshAssetId": null,
+    "robloxImageAssetId": null
+  },
+  {
+    "id": "pilgrim_robes",
+    "triangles": 132,
+    "bounds": [
+      2.8209798336029053,
+      0.7799999713897705,
+      2.5410327911376953
+    ],
+    "sourceParts": 11,
+    "icon": "pilgrim_robes.png",
+    "robloxMeshAssetId": null,
+    "robloxImageAssetId": null
+  },
+  {
+    "id": "bronze_ring",
+    "triangles": 108,
+    "bounds": [
+      1.380000114440918,
+      0.2800000011920929,
+      1.5149999856948853
+    ],
+    "sourceParts": 9,
+    "icon": "bronze_ring.png",
+    "robloxMeshAssetId": null,
+    "robloxImageAssetId": null
+  },
+  {
+    "id": "vitality_charm",
+    "triangles": 48,
+    "bounds": [
+      1.4142135381698608,
+      0.5649999380111694,
+      1.6021068096160889
+    ],
+    "sourceParts": 4,
+    "icon": "vitality_charm.png",
+    "robloxMeshAssetId": null,
+    "robloxImageAssetId": null
+  },
+  {
+    "id": "sentinel_seal",
+    "triangles": 60,
+    "bounds": [
+      0.9499999284744263,
+      0.5499999523162842,
+      1.4199999570846558
+    ],
+    "sourceParts": 5,
+    "icon": "sentinel_seal.png",
+    "robloxMeshAssetId": null,
+    "robloxImageAssetId": null
+  },
+  {
+    "id": "hunters_token",
+    "triangles": 60,
+    "bounds": [
+      0.9499999284744263,
+      0.5450000166893005,
+      1.4199999570846558
+    ],
+    "sourceParts": 5,
+    "icon": "hunters_token.png",
+    "robloxMeshAssetId": null,
+    "robloxImageAssetId": null
+  },
+  {
+    "id": "focus_prism",
+    "triangles": 48,
+    "bounds": [
+      1.4142135381698608,
+      0.5649999380111694,
+      1.6021068096160889
+    ],
+    "sourceParts": 4,
+    "icon": "focus_prism.png",
+    "robloxMeshAssetId": null,
+    "robloxImageAssetId": null
+  },
+  {
+    "id": "wardstone",
+    "triangles": 60,
+    "bounds": [
+      0.9499999284744263,
+      0.5499999523162842,
+      1.4199999570846558
+    ],
+    "sourceParts": 5,
+    "icon": "wardstone.png",
+    "robloxMeshAssetId": null,
+    "robloxImageAssetId": null
+  },
+  {
+    "id": "stone",
+    "triangles": 36,
+    "bounds": [
+      2.279637098312378,
+      1.0,
+      1.407653570175171
+    ],
+    "sourceParts": 3,
+    "icon": "stone.png",
+    "robloxMeshAssetId": null,
+    "robloxImageAssetId": null
+  },
+  {
+    "id": "iron_ore",
+    "triangles": 48,
+    "bounds": [
+      1.7215577363967896,
+      1.125,
+      1.4851040840148926
+    ],
+    "sourceParts": 4,
+    "icon": "iron_ore.png",
+    "robloxMeshAssetId": null,
+    "robloxImageAssetId": null
+  },
+  {
+    "id": "iron_ingot",
+    "triangles": 24,
+    "bounds": [
+      1.7999999523162842,
+      0.800000011920929,
+      0.7000000476837158
+    ],
+    "sourceParts": 2,
+    "icon": "iron_ingot.png",
+    "robloxMeshAssetId": null,
+    "robloxImageAssetId": null
+  },
+  {
+    "id": "timber",
+    "triangles": 84,
+    "bounds": [
+      1.429827094078064,
+      1.850000023841858,
+      1.3298273086547852
+    ],
+    "sourceParts": 7,
+    "icon": "timber.png",
+    "robloxMeshAssetId": null,
+    "robloxImageAssetId": null
+  },
+  {
+    "id": "herb",
+    "triangles": 84,
+    "bounds": [
+      1.247314453125,
+      0.2850000262260437,
+      1.950372576713562
+    ],
+    "sourceParts": 7,
+    "icon": "herb.png",
+    "robloxMeshAssetId": null,
+    "robloxImageAssetId": null
+  }
+]

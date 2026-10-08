@@ -1,0 +1,46 @@
+{
+  "reference": "assets/uat01/civic-community/concept-v1.png",
+  "status": "SKELETAL_ART_CONTACT_REVIEW_PLATFORM_IMPORT_PENDING",
+  "frames": 181,
+  "fps": 30,
+  "durationSeconds": 6,
+  "bones": 16,
+  "meshObjects": 114,
+  "stationMeshes": 27,
+  "contact": [
+    {
+      "frame": 30,
+      "hammerBottom": [
+        0.3500003218650818,
+        -1.450000286102295,
+        2.700000286102295
+      ],
+      "surfaceZ": 2.7,
+      "verticalError": 2.861022947442393e-07
+    },
+    {
+      "frame": 90,
+      "hammerBottom": [
+        0.3500003218650818,
+        -1.450000286102295,
+        2.700000286102295
+      ],
+      "surfaceZ": 2.7,
+      "verticalError": 2.861022947442393e-07
+    },
+    {
+      "frame": 150,
+      "hammerBottom": [
+        0.3500003218650818,
+        -1.450000286102295,
+        2.700000286102295
+      ],
+      "surfaceZ": 2.7,
+      "verticalError": 2.861022947442393e-07
+    }
+  ],
+  "maxArmLengthError": 2.3326268772105863e-07,
+  "robloxMeshId": null,
+  "robloxAnimationId": null,
+  "notes": "v2: corrected sRGB material conversion, swept hair locks, smaller nose; anticipation, accelerating strike, rebound and20degree wrist arc. Body weight shift/cloth deformation, platform import and human review pending."
+}

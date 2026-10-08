@@ -1,0 +1,382 @@
+{
+  "agentHeight": 5,
+  "cities": 6,
+  "routes": {
+    "1": {
+      "waypoints": 27,
+      "destination": "Market",
+      "city": "Crownford",
+      "studs": 101
+    },
+    "2": {
+      "waypoints": 27,
+      "destination": "Forge",
+      "city": "Crownford",
+      "studs": 101
+    },
+    "3": {
+      "waypoints": 39,
+      "destination": "Tavern",
+      "city": "Crownford",
+      "studs": 149
+    },
+    "4": {
+      "waypoints": 39,
+      "destination": "QuestHall",
+      "city": "Crownford",
+      "studs": 149
+    },
+    "5": {
+      "waypoints": 46,
+      "destination": "Landmark",
+      "city": "Crownford",
+      "studs": 178
+    },
+    "6": {
+      "waypoints": 17,
+      "destination": "GuildIslandPortal",
+      "city": "Crownford",
+      "studs": 61
+    },
+    "7": {
+      "waypoints": 17,
+      "destination": "RegionalGate",
+      "city": "Crownford",
+      "studs": 61
+    },
+    "8": {
+      "waypoints": 25,
+      "destination": "Plaza",
+      "city": "Crownford",
+      "studs": 96
+    },
+    "9": {
+      "waypoints": 29,
+      "destination": "Market",
+      "city": "Sylvaris",
+      "studs": 108
+    },
+    "10": {
+      "waypoints": 31,
+      "destination": "Forge",
+      "city": "Sylvaris",
+      "studs": 115
+    },
+    "11": {
+      "waypoints": 38,
+      "destination": "Tavern",
+      "city": "Sylvaris",
+      "studs": 144
+    },
+    "12": {
+      "waypoints": 44,
+      "destination": "QuestHall",
+      "city": "Sylvaris",
+      "studs": 168
+    },
+    "13": {
+      "waypoints": 46,
+      "destination": "Landmark",
+      "city": "Sylvaris",
+      "studs": 178
+    },
+    "14": {
+      "waypoints": 17,
+      "destination": "GuildIslandPortal",
+      "city": "Sylvaris",
+      "studs": 61
+    },
+    "15": {
+      "waypoints": 17,
+      "destination": "RegionalGate",
+      "city": "Sylvaris",
+      "studs": 61
+    },
+    "16": {
+      "waypoints": 25,
+      "destination": "Plaza",
+      "city": "Sylvaris",
+      "studs": 96
+    },
+    "17": {
+      "waypoints": 27,
+      "destination": "Market",
+      "city": "Deepforge",
+      "studs": 100
+    },
+    "18": {
+      "waypoints": 27,
+      "destination": "Forge",
+      "city": "Deepforge",
+      "studs": 101
+    },
+    "19": {
+      "waypoints": 39,
+      "destination": "Tavern",
+      "city": "Deepforge",
+      "studs": 149
+    },
+    "20": {
+      "waypoints": 41,
+      "destination": "QuestHall",
+      "city": "Deepforge",
+      "studs": 155
+    },
+    "21": {
+      "waypoints": 46,
+      "destination": "Landmark",
+      "city": "Deepforge",
+      "studs": 178
+    },
+    "22": {
+      "waypoints": 17,
+      "destination": "GuildIslandPortal",
+      "city": "Deepforge",
+      "studs": 61
+    },
+    "23": {
+      "waypoints": 17,
+      "destination": "RegionalGate",
+      "city": "Deepforge",
+      "studs": 61
+    },
+    "24": {
+      "waypoints": 25,
+      "destination": "Plaza",
+      "city": "Deepforge",
+      "studs": 96
+    },
+    "25": {
+      "waypoints": 26,
+      "destination": "Market",
+      "city": "Astralis",
+      "studs": 95
+    },
+    "26": {
+      "waypoints": 29,
+      "destination": "Forge",
+      "city": "Astralis",
+      "studs": 110
+    },
+    "27": {
+      "waypoints": 38,
+      "destination": "Tavern",
+      "city": "Astralis",
+      "studs": 143
+    },
+    "28": {
+      "waypoints": 43,
+      "destination": "QuestHall",
+      "city": "Astralis",
+      "studs": 164
+    },
+    "29": {
+      "waypoints": 46,
+      "destination": "Landmark",
+      "city": "Astralis",
+      "studs": 178
+    },
+    "30": {
+      "waypoints": 17,
+      "destination": "GuildIslandPortal",
+      "city": "Astralis",
+      "studs": 61
+    },
+    "31": {
+      "waypoints": 17,
+      "destination": "RegionalGate",
+      "city": "Astralis",
+      "studs": 61
+    },
+    "32": {
+      "waypoints": 25,
+      "destination": "Plaza",
+      "city": "Astralis",
+      "studs": 96
+    },
+    "33": {
+      "waypoints": 25,
+      "destination": "Market",
+      "city": "Crosshaven",
+      "studs": 93
+    },
+    "34": {
+      "waypoints": 25,
+      "destination": "Forge",
+      "city": "Crosshaven",
+      "studs": 92
+    },
+    "35": {
+      "waypoints": 46,
+      "destination": "Tavern",
+      "city": "Crosshaven",
+      "studs": 167
+    },
+    "36": {
+      "waypoints": 39,
+      "destination": "QuestHall",
+      "city": "Crosshaven",
+      "studs": 150
+    },
+    "37": {
+      "waypoints": 46,
+      "destination": "Landmark",
+      "city": "Crosshaven",
+      "studs": 178
+    },
+    "38": {
+      "waypoints": 17,
+      "destination": "GuildIslandPortal",
+      "city": "Crosshaven",
+      "studs": 61
+    },
+    "39": {
+      "waypoints": 17,
+      "destination": "RegionalGate",
+      "city": "Crosshaven",
+      "studs": 61
+    },
+    "40": {
+      "waypoints": 25,
+      "destination": "Plaza",
+      "city": "Crosshaven",
+      "studs": 96
+    },
+    "41": {
+      "waypoints": 28,
+      "destination": "Market",
+      "city": "Ironroot",
+      "studs": 102
+    },
+    "42": {
+      "waypoints": 27,
+      "destination": "Forge",
+      "city": "Ironroot",
+      "studs": 102
+    },
+    "43": {
+      "waypoints": 41,
+      "destination": "Tavern",
+      "city": "Ironroot",
+      "studs": 152
+    },
+    "44": {
+      "waypoints": 40,
+      "destination": "QuestHall",
+      "city": "Ironroot",
+      "studs": 151
+    },
+    "45": {
+      "waypoints": 46,
+      "destination": "Landmark",
+      "city": "Ironroot",
+      "studs": 178
+    },
+    "46": {
+      "waypoints": 17,
+      "destination": "GuildIslandPortal",
+      "city": "Ironroot",
+      "studs": 61
+    },
+    "47": {
+      "waypoints": 17,
+      "destination": "RegionalGate",
+      "city": "Ironroot",
+      "studs": 61
+    },
+    "48": {
+      "waypoints": 25,
+      "destination": "Plaza",
+      "city": "Ironroot",
+      "studs": 96
+    }
+  },
+  "profileWrites": 0,
+  "agentRadius": 2,
+  "jumping": false,
+  "actualPlayerTraversal": true,
+  "synthetic": true,
+  "routeCount": 48,
+  "parts": 7282,
+  "ordinaryWalk": [
+    {
+      "city": "Crownford",
+      "service": "Forge",
+      "distance": 0.314775,
+      "health": 100
+    },
+    {
+      "distance": 0.5834044218063354,
+      "service": "Forge",
+      "city": "Sylvaris",
+      "health": 100
+    },
+    {
+      "distance": 0.7010909914970398,
+      "service": "Forge",
+      "city": "Deepforge",
+      "health": 100
+    },
+    {
+      "distance": 1.7273578643798828,
+      "service": "Forge",
+      "city": "Astralis",
+      "health": 100
+    },
+    {
+      "distance": 0.31478309631347656,
+      "service": "Forge",
+      "city": "Crosshaven",
+      "health": 100
+    },
+    {
+      "distance": 0.3147560954093933,
+      "service": "Forge",
+      "city": "Ironroot",
+      "health": 100
+    },
+    {
+      "city": "Crownford",
+      "z": -0.03167915344238281,
+      "distance": 0.29970434308052063,
+      "service": "QuestHall",
+      "health": 100
+    },
+    {
+      "city": "Sylvaris",
+      "z": -0.5652313232421875,
+      "distance": 0.6389878988265991,
+      "service": "QuestHall",
+      "health": 100
+    },
+    {
+      "city": "Deepforge",
+      "z": 0.10165023803710938,
+      "distance": 0.3148839473724365,
+      "service": "QuestHall",
+      "health": 100
+    },
+    {
+      "city": "Astralis",
+      "z": 0.36817169189453125,
+      "distance": 0.4736765921115875,
+      "service": "QuestHall",
+      "health": 100
+    },
+    {
+      "city": "Crosshaven",
+      "z": -0.16501808166503906,
+      "distance": 0.34066125750541687,
+      "service": "QuestHall",
+      "health": 100
+    },
+    {
+      "city": "Ironroot",
+      "z": 1.568319320678711,
+      "distance": 1.596384882926941,
+      "service": "QuestHall",
+      "health": 100
+    }
+  ],
+  "scope": "48 synthetic routes plus ordinary UI-selected fixture approaches and WASD entry into 12 new buildings; no earned gameplay travel or service transactions."
+}

@@ -1,0 +1,151 @@
+PASS exact catalogs and references
+PASS Thai translation coverage and interpolation preserve every placeholder
+PASS language preference persists without changing progression and rejects unsupported input
+PASS v1 profile without optional language remains valid and projects English
+PASS duplicate item, quest, and adventurer IDs rejected
+PASS dangling reward and equipment references rejected
+PASS default profile is valid and independently allocated
+PASS malformed payloads and forged reward fields rejected
+PASS sparse oversized and duplicate party validation
+PASS invalid quest and never-started completion rejected
+PASS early completion and wrong run rejected without mutation
+PASS duplicate completion and exact request replay cannot duplicate rewards
+PASS request ID payload conflict and stale revision rejected
+PASS unowned nonexistent and incompatible equipment rejected
+PASS Gold never negative and invalid Hall upgrade has no effects
+PASS complete onboarding, eight obtainable items, Hall and rejoin
+PASS active quest and reward snapshot survive rejoin
+PASS full inventory blocks all reward components atomically
+PASS failed load never writes defaults
+PASS unknown acquisition retries same token without changing epoch
+PASS failed save exposes no candidate and blocks further spending
+PASS write committed with lost response recovers without duplicate reward
+PASS server crash after uncertain commit restores committed value
+PASS two servers, lease takeover and stale writer after release
+PASS closing during save preserves committed progression
+PASS archive failure retains evidence and successful retry drains once
+PASS corrupt and future-version data preserved without reset
+PASS explicit migration is additive and repeatable
+PASS semantic replay survives recent-result eviction
+PASS rerun UpdateAsync callback produces one reward and one committed event batch
+PASS analytics failure cannot strand a committed save
+PASS partial-fill item capacity rejection does not consume Gold or XP
+PASS repeated completed runs use repeat rewards and never duplicate first-clear weapon
+PASS audit capacity pauses admission without destroying history
+PASS lease safety margin blocks mutation before expiry and heartbeat restores admission
+PASS owned weapon shortens only the next expedition and snapshots party
+PASS deterministic adversarial command sequence preserves profile invariants
+PASS five-member roster and active snapshot survive commit and rejoin
+PASS hero presentation follows only committed owned members and equipped weapons
+PASS legacy content snapshots remain valid with additive class expansion
+PASS combat stats derive class level and compatible equipped weapon
+PASS physical damage predictable and attack monotonic
+PASS defense mitigates with positive minimum
+PASS invalid negative nonfinite stats and levels rejected
+PASS healing cap and separate healing telemetry
+PASS ability cooldown authoritative and invalid cast does not consume
+PASS target validates owner allegiance active state and nil
+PASS attack range and attack interval checked on server
+PASS Knight threat and temporary taunt override expire
+PASS Priest picks meaningful largest deficit skips full downed foreign distant
+PASS enemy death latched once only and duplicate reward rejected
+PASS invalid ability and another class ability rejected
+PASS downed hero cannot attack cast or receive combat healing
+PASS dead enemy cannot attack or receive additional damage
+PASS combat references resolve and bad configs fail startup
+PASS forged combat damage heal health stats and reward intents rejected
+PASS combat reward commits Gold XP audit once and survives rejoin
+PASS uncertain combat save reconciles without double Gold XP
+PASS reward capacity and foreign membership reject atomically
+PASS v1 migration preserves populated heroes inventory active quest receipts and audit
+PASS actual load migrates v1 atomically and preserves legacy active snapshot
+PASS corrupt v1 and unexpected character data never get replaced
+PASS all five starter choices have matching class path skill and kit references
+PASS class selection idempotent replay and second-choice rejection survive rejoin
+PASS failed class save exposes no choice and uncertain commit reconciles exactly
+PASS forged character definition tier race XP and skill references fail schema
+PASS solo player combat reward levels only player and commits once
+PASS hero-only reward does not give passive player XP
+PASS player plus five heroes eligible without consuming a party slot
+PASS invalid unselected duplicate and overflowing player rewards are atomic
+PASS selected player can rest every hero without unlocking empty expeditions
+PASS player participation requires actual damage or combat healing and matching owner
+PASS expired taunt cannot grant a new player participation credit
+PASS companion effects never grant player participation
+PASS combat intent rejects client authority fields and bounds spam
+PASS v2 migration preserves selected class all ownership and active expedition
+PASS unexpected legacy equipment cannot be silently overwritten
+PASS three slots contribute identical projected and combat stats
+PASS player kit is a fallback and never becomes a sellable inventory instance
+PASS transfer removes old assignment replaces destination and retains every item
+PASS unowned actor item incompatible class and invalid slot leave data unchanged
+PASS all classes have compatible armor and accessory choices
+PASS schema rejects duplicate cross-actor ownership and wrong slot
+PASS full inventory purchase fails atomically without spending or sequence advance
+PASS purchase price authority no-negative Gold and duplicate purchase receipt
+PASS sale requires unequip and cannot duplicate Gold after retries
+PASS expedition snapshot remains immutable through away-hero equipment transfer
+PASS transfer uncertain save never exposes partial assignment and exact rejoin persists
+PASS uncertain purchase and sale preserve exact Gold and instance conservation
+PASS v3 migration adds expansion without changing prior data and rejects collisions
+PASS gathering cooldown capacity and replay persist without duplicated resources
+PASS building boundary overlap reserved path and foreign IDs reject without cost
+PASS move rotate dismantle refunds half once and preserves main access
+PASS construction missing materials and uncertain saves never expose partial base
+PASS warehouse raises gathering cap and forge consumes exact recipe atomically
+PASS full equipment crafting rolls back recipe and instance sequence
+PASS all five classes have two gated Class 2 branches and matching Class 3 arts
+PASS skill prerequisites points branch exclusion and reset conserve builds
+PASS hero build is independent and bonuses match projected combat stats
+PASS race choice persists exactly once with bounded tradeoffs
+PASS tower only accepts server completion and never skips uncleared floors
+PASS ten tower floors unlock checkpoint and first-clear repeat rewards differ
+PASS tower failure retry and active rejoin retain clear history without rewards
+PASS uncertain tower completion reconciles first-clear exactly once
+PASS special Epic Legendary and Secret paths require their actual milestones
+PASS schema rejects forged points path race overlap and tower progress
+PASS group prestige support excludes distant foreign and downed actors
+PASS all expanded arts enforce targets cooldowns and meaningful effects
+
+108 tests passed.
+Building project 'Guildborne'
+Built project to Guildborne.rbxlx
+Created sourcemap at build/sourcemap.json
+[INFO] Loading definitions file: @roblox - C:\Work\MySelf\Guildborne\.tools\luau-lsp\globalTypes.d.luau
+[WARN] client does not allow didChangeWatchedFiles registration - automatic updating on sourcemap changes disabled
+Compiled 5 KLOC into 437 KB bytecode (read 0.01s, parse 0.01s, compile 0.02s)
+PASS: 32 design/evidence documents, JSON/TOML, Rojo paths,
+      254 local links, 1 JSON fixture(s), 58 strict Luau files.
+PASS: built-place boundaries and exact runtime sourcemap coverage.
+Roblox runtime behavior and external link availability are not checked here.
+warning: in the working copy of 'README.md', CRLF will be replaced by LF the next time Git touches it
+warning: in the working copy of 'docs/ARCHITECTURE.md', CRLF will be replaced by LF the next time Git touches it
+warning: in the working copy of 'docs/DATA_MODEL.md', CRLF will be replaced by LF the next time Git touches it
+warning: in the working copy of 'docs/ECONOMY.md', CRLF will be replaced by LF the next time Git touches it
+warning: in the working copy of 'docs/GAME_DESIGN.md', CRLF will be replaced by LF the next time Git touches it
+warning: in the working copy of 'docs/PHASE1_IMPLEMENTATION.md', CRLF will be replaced by LF the next time Git touches it
+warning: in the working copy of 'docs/PHASE1_STUDIO_TEST.md', CRLF will be replaced by LF the next time Git touches it
+warning: in the working copy of 'docs/ROADMAP.md', CRLF will be replaced by LF the next time Git touches it
+warning: in the working copy of 'docs/SECURITY.md', CRLF will be replaced by LF the next time Git touches it
+warning: in the working copy of 'src/client/ClientBootstrap.client.luau', CRLF will be replaced by LF the next time Git touches it
+warning: in the working copy of 'src/client/Controllers/SliceController.luau', CRLF will be replaced by LF the next time Git touches it
+warning: in the working copy of 'src/client/UI/SliceUI.luau', CRLF will be replaced by LF the next time Git touches it
+warning: in the working copy of 'src/server/Config/Content.luau', CRLF will be replaced by LF the next time Git touches it
+warning: in the working copy of 'src/server/ServerBootstrap.server.luau', CRLF will be replaced by LF the next time Git touches it
+warning: in the working copy of 'src/server/Services/AdventurerService.luau', CRLF will be replaced by LF the next time Git touches it
+warning: in the working copy of 'src/server/Services/NetworkService.luau', CRLF will be replaced by LF the next time Git touches it
+warning: in the working copy of 'src/server/Services/PartyService.luau', CRLF will be replaced by LF the next time Git touches it
+warning: in the working copy of 'src/server/Services/PlayerDataService.luau', CRLF will be replaced by LF the next time Git touches it
+warning: in the working copy of 'src/server/Services/WorldService.luau', CRLF will be replaced by LF the next time Git touches it
+warning: in the working copy of 'src/server/Systems/Commands.luau', CRLF will be replaced by LF the next time Git touches it
+warning: in the working copy of 'src/server/Systems/ContentValidator.luau', CRLF will be replaced by LF the next time Git touches it
+warning: in the working copy of 'src/server/Systems/ProfileSchema.luau', CRLF will be replaced by LF the next time Git touches it
+warning: in the working copy of 'src/server/Systems/Progression.luau', CRLF will be replaced by LF the next time Git touches it
+warning: in the working copy of 'src/server/Systems/ViewProjection.luau', CRLF will be replaced by LF the next time Git touches it
+warning: in the working copy of 'src/shared/Config/Localization.luau', CRLF will be replaced by LF the next time Git touches it
+warning: in the working copy of 'src/shared/Network/Protocol.luau', CRLF will be replaced by LF the next time Git touches it
+warning: in the working copy of 'src/shared/Types/Domain.luau', CRLF will be replaced by LF the next time Git touches it
+warning: in the working copy of 'tests/README.md', CRLF will be replaced by LF the next time Git touches it
+warning: in the working copy of 'tests/run.luau', CRLF will be replaced by LF the next time Git touches it
+warning: in the working copy of 'tools/validate_repository.py', CRLF will be replaced by LF the next time Git touches it
+PASS: all automated checks. Studio/staging acceptance is separate.

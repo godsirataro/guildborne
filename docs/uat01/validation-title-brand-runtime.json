@@ -1,0 +1,13 @@
+{
+  "noProfileWrites": true,
+  "readyGate": true,
+  "recoveryRoute": true,
+  "ctaAboveFold": true,
+  "height": 340,
+  "widths": {
+    "1": 260,
+    "2": 640
+  },
+  "languageCases": 4,
+  "loadingGate": true
+}

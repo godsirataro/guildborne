@@ -1,0 +1,4 @@
+[INFO] Loading definitions file: @roblox - .tools/luau-lsp/globalTypes.d.luau
+[WARN] client does not allow didChangeWatchedFiles registration - automatic updating on sourcemap changes disabled
+src/client/UI/ExpansionView.luau(76,10): LocalShadow: Variable 'ids' shadows previous declaration at line 52
+src/client/UI/SettlementView.luau(47,12): MultiLineStatement: Statement spans multiple lines; use indentation to silence

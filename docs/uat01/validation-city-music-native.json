@@ -1,0 +1,15 @@
+{
+  "date": "2026-10-06",
+  "native": {
+    "content": [
+      {
+        "type": "text",
+        "text": "{\"caption\":\"Music volume: 75%\",\"music\":0.75,\"fixture\":\"{\\\"ok\\\":true,\\\"result\\\":{\\\"mixPassed\\\":true,\\\"actualAudioPlaybackTested\\\":false,\\\"invalidPreferenceFallback\\\":true,\\\"musicLevelPassed\\\":true,\\\"nativeTextChecks\\\":32,\\\"unboundMusic\\\":7,\\\"noProfileWrites\\\":true,\\\"clampPassed\\\":true,\\\"mutePassed\\\":true,\\\"unboundCues\\\":22,\\\"unboundSoundsCreated\\\":0}}\",\"musicFolder\":false}"
+      }
+    ],
+    "isError": false
+  },
+  "actualInput": "Title Continue, Guild Settings and scrolling/clicking Music volume through ordinary mouse input; changed session-only preference to0.75",
+  "scope": "No approved uploaded sound IDs. Native mixing/settings and unbound silence verified; actual music playback/listening and configured asset streaming not accepted.",
+  "playStopped": true
+}

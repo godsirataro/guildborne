@@ -1,0 +1,80 @@
+[
+  {
+    "id": "rift_refuge",
+    "triangles": 396,
+    "bounds": [
+      72.0,
+      64.0,
+      22.0
+    ],
+    "sourceParts": 33,
+    "icon": "rift_refuge.png",
+    "robloxMeshAssetId": null,
+    "robloxImageAssetId": null
+  },
+  {
+    "id": "hearing_square",
+    "triangles": 528,
+    "bounds": [
+      88.0,
+      72.0,
+      14.0
+    ],
+    "sourceParts": 44,
+    "icon": "hearing_square.png",
+    "robloxMeshAssetId": null,
+    "robloxImageAssetId": null
+  },
+  {
+    "id": "refuge_camp",
+    "triangles": 732,
+    "bounds": [
+      88.0,
+      72.0,
+      12.551085472106934
+    ],
+    "sourceParts": 61,
+    "icon": "refuge_camp.png",
+    "robloxMeshAssetId": null,
+    "robloxImageAssetId": null
+  },
+  {
+    "id": "forger_passage",
+    "triangles": 240,
+    "bounds": [
+      80.0,
+      64.0,
+      14.0
+    ],
+    "sourceParts": 20,
+    "icon": "forger_passage.png",
+    "robloxMeshAssetId": null,
+    "robloxImageAssetId": null
+  },
+  {
+    "id": "name_registry",
+    "triangles": 480,
+    "bounds": [
+      88.0,
+      72.0,
+      15.0
+    ],
+    "sourceParts": 40,
+    "icon": "name_registry.png",
+    "robloxMeshAssetId": null,
+    "robloxImageAssetId": null
+  },
+  {
+    "id": "invitation_gallery",
+    "triangles": 516,
+    "bounds": [
+      76.0,
+      64.0,
+      16.0
+    ],
+    "sourceParts": 43,
+    "icon": "invitation_gallery.png",
+    "robloxMeshAssetId": null,
+    "robloxImageAssetId": null
+  }
+]

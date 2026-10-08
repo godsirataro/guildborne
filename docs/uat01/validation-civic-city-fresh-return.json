@@ -1,0 +1,23 @@
+{
+  "date": "2026-10-06",
+  "studio": "aac5e826-8894-42b8-938f-607baa57a9e1",
+  "method": "Fresh built offline file. Ordinary input completed city_gate and elian_charter again, no profile grants or hotpatch.",
+  "arrival": {
+    "content": [
+      {
+        "type": "text",
+        "text": "{\"labels\":[{\"visible\":true,\"text\":\"Crownford · Safe zone\",\"name\":\"DistrictName\"}],\"revision\":10,\"zone\":\"Crownford\",\"gold\":25}"
+      }
+    ],
+    "isError": false
+  },
+  "return": {
+    "content": [
+      {
+        "type": "text",
+        "text": "{\"revision\":11,\"zone\":\"City\",\"gold\":25,\"journal\":{\"elian_charter\":{\"state\":\"Claimed\",\"progress\":1},\"city_gate\":{\"state\":\"Claimed\",\"progress\":1}},\"position\":\"-1.8189894035458565e-12, 3.6980249881744385, -720\"}"
+      }
+    ],
+    "isError": false
+  }
+}

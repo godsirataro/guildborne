@@ -1,0 +1,21 @@
+{
+  "placeId": 86788611613035,
+  "probe": "tests/studio_quest_marker_probe.luau",
+  "passed": true,
+  "lateAnchor": true,
+  "availableReadyProgress": true,
+  "inventoryRefresh": true,
+  "thaiLabel": true,
+  "completedHidden": true,
+  "tagRemovalCleanup": true,
+  "controllerCleanup": true,
+  "noProfileWrites": true,
+  "cityActors": 8,
+  "roleParts": 28,
+  "rolePartsNoninteractiveAndWelded": true,
+  "followingPromptsDisabledOnFreshPlay": 5,
+  "realEOpenedMiraJournal": true,
+  "miraCardTopOffsetPixels": 8,
+  "temporaryPlayerPositionRestored": true,
+  "ownedPlayStopped": true
+}

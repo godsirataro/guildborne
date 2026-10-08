@@ -1,0 +1,10 @@
+{
+  "status": "PASS",
+  "inactiveSamples": 87,
+  "scope": "Read-only observation of local weapon-review trail; no gameplay VFX acceptance",
+  "samples": 100,
+  "maxEndpointError": 0.00012209372653160244,
+  "activeSamples": 13,
+  "ordinaryMouseDisableFullCycle": true,
+  "pausedCutSuppressesTrail": true
+}

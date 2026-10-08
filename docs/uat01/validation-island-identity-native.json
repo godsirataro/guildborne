@@ -1,0 +1,27 @@
+{
+  "date": "2026-10-06",
+  "ui": {
+    "status": "fulfilled",
+    "value": {
+      "content": [
+        {
+          "type": "text",
+          "text": "{\"views\":36,\"textBounds\":834,\"scope\":\"Synthetic EN/TH callback capture only; no server travel\",\"filterTransitions\":18}"
+        }
+      ],
+      "isError": false
+    }
+  },
+  "server": {
+    "status": "fulfilled",
+    "value": {
+      "content": [
+        {
+          "type": "text",
+          "text": "{\"syntheticOwners\":2,\"friendApiCalls\":0,\"checks\":8,\"avatarMoves\":0,\"profileWrites\":0}"
+        }
+      ],
+      "isError": false
+    }
+  }
+}

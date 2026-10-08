@@ -1,0 +1,124 @@
+[
+  {
+    "file": "Guildborne_Sentinel_Rest.fbx",
+    "triangles": 288,
+    "bones": 16,
+    "normalizedWeights": true,
+    "sha256": "9082f4a36c7574c4f3c838ffbbd2c0d29be1b019c23f7f2f4f66fa79340033a5"
+  },
+  {
+    "file": "Guildborne_Sentinel_Rest.glb",
+    "triangles": 288,
+    "bones": 16,
+    "normalizedWeights": true,
+    "sha256": "bf7b6ca2085a054a1768a5240c8c8c919035520e653757a5e3be10f5004fe152"
+  },
+  {
+    "file": "GB_Idle.fbx",
+    "triangles": 288,
+    "bones": 16,
+    "normalizedWeights": true,
+    "sha256": "ed649863778ef86b9d07e495a86b0ab5408e661fe66b2db55d6017e0be566497",
+    "animationPresent": true,
+    "frames": 61,
+    "sampledMotion": 0.02529737825062739,
+    "loopSeamVerified": true,
+    "rootStationary": true
+  },
+  {
+    "file": "GB_Walk.fbx",
+    "triangles": 288,
+    "bones": 16,
+    "normalizedWeights": true,
+    "sha256": "f1c17e9eff6e07b602dfb4a86194ffc277e43ccf6b25280668a54f0932dc7275",
+    "animationPresent": true,
+    "frames": 31,
+    "sampledMotion": 0.7465113590118619,
+    "loopSeamVerified": true,
+    "rootStationary": true
+  },
+  {
+    "file": "GB_Run.fbx",
+    "triangles": 288,
+    "bones": 16,
+    "normalizedWeights": true,
+    "sha256": "4f8e61e223bf60b81c6ce1e60157d29b99913ebc338e9af8f1716c46a3b4c785",
+    "animationPresent": true,
+    "frames": 25,
+    "sampledMotion": 1.1868922899124357,
+    "loopSeamVerified": true,
+    "rootStationary": true
+  },
+  {
+    "file": "GB_Slash.fbx",
+    "triangles": 288,
+    "bones": 16,
+    "normalizedWeights": true,
+    "sha256": "1fdc764a3b93c96f6135efca477894a80a13fbad983817c2c35e62d4f79e2cf9",
+    "animationPresent": true,
+    "frames": 31,
+    "sampledMotion": 1.3596656239267304,
+    "loopSeamVerified": false,
+    "rootStationary": true
+  },
+  {
+    "file": "GB_Cast.fbx",
+    "triangles": 288,
+    "bones": 16,
+    "normalizedWeights": true,
+    "sha256": "38cca5ee0f25c35749aaae08a25164864787169c9ced84b52f2168eadcf2dd6b",
+    "animationPresent": true,
+    "frames": 46,
+    "sampledMotion": 1.238395801806064,
+    "loopSeamVerified": false,
+    "rootStationary": true
+  },
+  {
+    "file": "GB_Dodge.fbx",
+    "triangles": 288,
+    "bones": 16,
+    "normalizedWeights": true,
+    "sha256": "13a103c964af02c97e60a5ac136362ef8c942f218e9abb1ca3606a4cadb2f5ec",
+    "animationPresent": true,
+    "frames": 25,
+    "sampledMotion": 0.5389418601989746,
+    "loopSeamVerified": false,
+    "rootStationary": true
+  },
+  {
+    "file": "GB_Hit.fbx",
+    "triangles": 288,
+    "bones": 16,
+    "normalizedWeights": true,
+    "sha256": "0c7c8690634d63f8d156817ab867a2ce9d0d6e66c30fdb99977417c202692946",
+    "animationPresent": true,
+    "frames": 16,
+    "sampledMotion": 0.3282168050620271,
+    "loopSeamVerified": false,
+    "rootStationary": true
+  },
+  {
+    "file": "GB_Down.fbx",
+    "triangles": 288,
+    "bones": 16,
+    "normalizedWeights": true,
+    "sha256": "d93488e13e0eeead0e44f78e9e6eed9646e3fc8f356c070826da696dca0b268f",
+    "animationPresent": true,
+    "frames": 31,
+    "sampledMotion": 0.21750666300323473,
+    "loopSeamVerified": false,
+    "rootStationary": true
+  },
+  {
+    "file": "GB_Recover.fbx",
+    "triangles": 288,
+    "bones": 16,
+    "normalizedWeights": true,
+    "sha256": "8e10a4f48534a9735aa513b9005de57845cc4bebeb27d8456e383688d7d0bd12",
+    "animationPresent": true,
+    "frames": 37,
+    "sampledMotion": 0.1781775951385498,
+    "loopSeamVerified": false,
+    "rootStationary": true
+  }
+]

@@ -1,0 +1,19 @@
+# Regional combat foundation — 2026-10-03
+
+Latest: these foundation modules are now bound to actual player combat only in the memory-only offline build. See [offline combat evidence](REGIONAL_COMBAT_OFFLINE.md), including the actual Greenwood Scout victory and reward. The paragraphs below record earlier implementation checkpoints, not the current activation state.
+
+Regional encounters are not yet active. A server-only reward catalog now covers all12 authored enemy IDs, with provisional Gold/XP and existing material drops. The trusted combat commit accepts an optional enemy ID; clients cannot submit this action or reward values. Existing camp rewards remain3Gold/2XP and retain Goblin quest progress. Region rewards use distinct quest events and cannot advance Goblin tasks.
+
+Gold, actor XP, material drops and quest progress are built in one disposable candidate and committed atomically. Unknown encounters, foreign/duplicate members, wallet/XP/inventory caps reject without partial reward. Before/after-write uncertainty and replay/rejoin tests verify no duplication. No region rewards were granted in a player session.
+
+Combat targeting now checks server collision geometry before hostile damage and healing. Noncolliding effects do not block; physical obstacles do, including when CanQuery is false. Short-circuit owner/range/state gates precede raycasts. Studio line-of-sight fixture10checks passed and the owned companion-command regression fixture passed. An actual offline Warrior F attack still damaged Goblin1 from135to129.
+
+Validation:420domain tests (validation-combat-sight-domain.txt),5000-order synthetic market load with0invariant violations; build, strict analysis, compile, repository and offline-place checks at174runtime modules. Native fixtures wrote no profiles. Real player action smoke used only the memory-only offline place.
+
+Outstanding: live regional enemy scheduling, shared encounter participation policy, patrol/pathfinding, attacks/telegraphs, reward capture/recovery linked to death, quests/bestiary/balance, multiplayer/device and human acceptance. The reward catalog is provisional tuning and not evidence of playable regional combat.
+
+Grounded encounter locomotion now replaces the preview's unchecked direct pivot. It samples support under a two-stud footprint, rejects cliffs and steep steps, and sweeps a body volume against collidable geometry, including thin CanQuery=false walls. Noncolliding art does not obstruct it. Native verification passed 2,428 checks over all nine authored routes in both directions, plus wall/edge/nonfinite-input cases. The isolated 12-enemy combat regression passed after integration: all three bosses exercised both patterns and the shaman healed four times. Fixtures were removed; no player profiles or rewards were touched.
+
+Asynchronous no-jump path detours now feed the same collision-checked movement, with four tracked actors per scene and a 1.5-second replan interval. A native wall detour reached its target in24ticks, stayed on the floor and passed the9.6stud outer edge without teleporting. Removal, replacement, fifth-actor rejection and shutdown checks passed. The12enemy regression remained unchanged. Live scheduling remains outstanding.
+
+`AdventureLifecycle` supplies a bounded12encounter per-session state machine. Confirmed death snapshots freeze members and retain one death ID through uncertain retries. Pending/in-flight outcomes cannot respawn; explicit committed/rejected results can respawn only after cooldown. Old generation/attempt callbacks are rejected. Region switching does not reconstruct this ledger. Four new domain tests cover these cases, owner/party validation, shutdown and all12slots; full429test suite passed. This state machine is not yet wired to live kills. Its eventual persistence adapter must preserve the exact immutable CombatReward command, including revision, across retries and must not silently rebase an uncertain write.

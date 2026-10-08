@@ -1,0 +1,38 @@
+{
+  "desktop": {
+    "content": [
+      {
+        "type": "text",
+        "text": "{\"cleaned\":true,\"groups\":{\"Low\":{\"Telegraph\":0,\"trails\":0,\"Primary\":12,\"emitters\":0,\"Detail\":0},\"High\":{\"Telegraph\":0,\"trails\":0,\"Primary\":10,\"emitters\":1,\"Detail\":40}},\"far\":{\"Telegraph\":0,\"trails\":0,\"Primary\":2,\"emitters\":0,\"Detail\":0},\"device\":\"Desktop\",\"culled\":{\"Telegraph\":0,\"trails\":0,\"Primary\":0,\"emitters\":0,\"Detail\":0},\"saturation\":{\"Telegraph\":8,\"trails\":2,\"Primary\":16,\"emitters\":4,\"Detail\":27},\"solo\":{\"Priest.Heal\":{\"Telegraph\":0,\"trails\":0,\"Primary\":0,\"emitters\":0,\"Detail\":30},\"Knight.Taunt\":{\"Telegraph\":0,\"trails\":0,\"Primary\":0,\"emitters\":0,\"Detail\":18},\"Archer.PiercingShot\":{\"Telegraph\":0,\"trails\":1,\"Primary\":0,\"emitters\":0,\"Detail\":15},\"Mage.Fireball\":{\"Telegraph\":0,\"trails\":2,\"Primary\":0,\"emitters\":4,\"Detail\":27},\"Warrior.PowerStrike\":{\"Telegraph\":0,\"trails\":0,\"Primary\":0,\"emitters\":1,\"Detail\":40}}}"
+      }
+    ],
+    "isError": false
+  },
+  "mobile": {
+    "content": [
+      {
+        "type": "text",
+        "text": "{\"cleaned\":true,\"groups\":{\"Low\":{\"Telegraph\":0,\"trails\":0,\"Primary\":12,\"emitters\":0,\"Detail\":0},\"High\":{\"Telegraph\":0,\"trails\":0,\"Primary\":10,\"emitters\":1,\"Detail\":30}},\"far\":{\"Telegraph\":0,\"trails\":0,\"Primary\":2,\"emitters\":0,\"Detail\":0},\"device\":\"Touch\",\"culled\":{\"Telegraph\":0,\"trails\":0,\"Primary\":0,\"emitters\":0,\"Detail\":0},\"saturation\":{\"Telegraph\":8,\"trails\":2,\"Primary\":16,\"emitters\":4,\"Detail\":23},\"solo\":{\"Priest.Heal\":{\"Telegraph\":0,\"trails\":0,\"Primary\":0,\"emitters\":0,\"Detail\":22},\"Knight.Taunt\":{\"Telegraph\":0,\"trails\":0,\"Primary\":0,\"emitters\":0,\"Detail\":16},\"Archer.PiercingShot\":{\"Telegraph\":0,\"trails\":1,\"Primary\":0,\"emitters\":0,\"Detail\":11},\"Mage.Fireball\":{\"Telegraph\":0,\"trails\":2,\"Primary\":0,\"emitters\":4,\"Detail\":23},\"Warrior.PowerStrike\":{\"Telegraph\":0,\"trails\":0,\"Primary\":0,\"emitters\":1,\"Detail\":30}}}"
+      }
+    ],
+    "isError": false
+  },
+  "battle": {
+    "content": [
+      {
+        "type": "text",
+        "text": "{\"Warrior\":{\"basic\":11,\"ability\":3,\"healing\":0,\"effect\":\"Basic\",\"damage\":82},\"Archer\":{\"basic\":28,\"ability\":7,\"healing\":0,\"effect\":\"Basic\",\"damage\":240},\"Knight\":{\"basic\":10,\"ability\":4,\"healing\":0,\"effect\":\"Basic\",\"damage\":30},\"Priest\":{\"basic\":14,\"ability\":7,\"healing\":96,\"effect\":\"Basic\",\"damage\":42},\"done\":true,\"Mage\":{\"basic\":25,\"ability\":6,\"healing\":0,\"effect\":\"Basic\",\"damage\":303}}"
+      }
+    ],
+    "isError": false
+  },
+  "console": {
+    "content": [
+      {
+        "type": "text",
+        "text": "[Guildborne] Phase 1 ready · Studio memory · not saved after Stop\n[Guildborne] profile_loaded {\"revision\":0}\n[Guildborne] session_started []\n[Guildborne] Phase 1 client ready\n[Phase22 QA] Client probe ready, revision 0\n[Guildborne] profile_saved {\"action\":\"BeginTutorial\",\"revision\":1}\n[Guildborne] tutorial_started []\n[Guildborne] profile_saved {\"action\":\"SelectPlayerClass\",\"revision\":2}\n[Guildborne] player_class_selected {\"classId\":\"Warrior\"}\n[Guildborne] profile_saved {\"action\":\"Recruit\",\"revision\":3}\n[Guildborne] adventurer_recruited {\"classId\":\"Warrior\"}\n[Guildborne] profile_saved {\"action\":\"Recruit\",\"revision\":4}\n[Guildborne] gold_destroyed {\"amount\":20,\"reason\":\"Recruitment\"}\n[Guildborne] item_acquired {\"quantity\":1,\"itemId\":\"short_bow\"}\n[Guildborne] adventurer_recruited {\"classId\":\"Archer\"}\n[Guildborne] profile_saved {\"action\":\"Recruit\",\"revision\":5}\n[Guildborne] gold_destroyed {\"amount\":20,\"reason\":\"Recruitment\"}\n[Guildborne] item_acquired {\"quantity\":1,\"itemId\":\"mage_staff\"}\n[Guildborne] adventurer_recruited {\"classId\":\"Mage\"}\n[Guildborne] profile_saved {\"action\":\"Recruit\",\"revision\":6}\n[Guildborne] gold_destroyed {\"amount\":20,\"reason\":\"Recruitment\"}\n[Guildborne] item_acquired {\"quantity\":1,\"itemId\":\"knight_sword\"}\n[Guildborne] adventurer_recruited {\"classId\":\"Knight\"}\n[Guildborne] profile_saved {\"action\":\"Recruit\",\"revision\":7}\n[Guildborne] gold_destroyed {\"amount\":20,\"reason\":\"Recruitment\"}\n[Guildborne] item_acquired {\"quantity\":1,\"itemId\":\"apprentice_staff\"}\n[Guildborne] adventurer_recruited {\"classId\":\"Priest\"}\n[Guildborne] profile_saved {\"action\":\"UpdateParty\",\"revision\":8}\n[Guildborne] party_created []\n[Guildborne] profile_saved {\"action\":\"CombatReward\",\"revision\":9}\n[Guildborne] gold_created {\"amount\":3,\"reason\":\"goblin_combat\"}\n[Guildborne] combat_reward []\n[Guildborne] profile_saved {\"action\":\"CombatReward\",\"revision\":10}\n[Guildborne] gold_created {\"amount\":3,\"reason\":\"goblin_combat\"}\n[Guildborne] combat_reward []\n[Guildborne] profile_saved {\"action\":\"CombatReward\",\"revision\":11}\n[Guildborne] gold_created {\"amount\":3,\"reason\":\"goblin_combat\"}\n[Guildborne] combat_reward []\n[Guildborne] profile_saved {\"action\":\"CombatReward\",\"revision\":12}\n[Guildborne] gold_created {\"amount\":3,\"reason\":\"goblin_combat\"}\n[Guildborne] combat_reward []\n[Guildborne] profile_saved {\"action\":\"CombatReward\",\"revision\":13}\n[Guildborne] gold_created {\"amount\":3,\"reason\":\"goblin_combat\"}\n[Guildborne] combat_reward []\n[Guildborne] profile_saved {\"action\":\"CombatReward\",\"revision\":14}\n[Guildborne] gold_created {\"amount\":3,\"reason\":\"goblin_combat\"}\n[Guildborne] combat_reward []\n[Guildborne] profile_saved {\"action\":\"CombatReward\",\"revision\":15}\n[Guildborne] gold_created {\"amount\":3,\"reason\":\"goblin_combat\"}\n[Guildborne] combat_reward []\n[Roblox][sabuiltin_Assistant.rbxm.Assistant.Packages._Index.AssistantUI.AssistantUI.Actions.ExecuteLuauActions] The execute_luau changed camera type. Resetting from Enum.CameraType.Scriptable back to Enum.CameraType.Custom"
+      }
+    ],
+    "isError": false
+  }
+}

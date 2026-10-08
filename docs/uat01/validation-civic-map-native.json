@@ -1,0 +1,31 @@
+{
+  "content": [
+    {
+      "type": "text",
+      "text": "{\"layout\":\"{\\\"ok\\\":true,\\\"result\\\":{\\\"synthetic\\\":true,\\\"textBounds\\\":108,\\\"profileWrites\\\":0,\\\"overlap\\\":false,\\\"languages\\\":[\\\"en\\\",\\\"th\\\"],\\\"widths\\\":[240,640,704],\\\"cases\\\":36,\\\"cityCount\\\":6}}\"}"
+    }
+  ],
+  "isError": false,
+  "ordinaryMouseFixture": {
+    "city": "Ironroot",
+    "language": "th",
+    "profileWrites": 0,
+    "callbacks": [
+      {
+        "name": "Civic landmark",
+        "x": 2000,
+        "z": -4070
+      },
+      {
+        "name": "Central City",
+        "x": 1942,
+        "z": -3912
+      },
+      {
+        "name": "Guild Zone Warp",
+        "x": 2058,
+        "z": -3912
+      }
+    ]
+  }
+}

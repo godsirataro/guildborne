@@ -1,0 +1,17 @@
+{
+  "date": "2026-10-06",
+  "studio": "4ab95e05-4207-4e20-a0f6-856526922e40",
+  "mode": "Offline Memory, all paid IDs zero, PermanentPassesEnabled=false",
+  "ui": {
+    "content": [
+      {
+        "type": "text",
+        "text": "{\"views\":48,\"textBoundsChecks\":750,\"platformCalls\":0,\"serverRequests\":0,\"capturedCallbacks\":12,\"profileWrites\":0}"
+      }
+    ],
+    "isError": false
+  },
+  "console": "Only normal Phase1 ready/profile_loaded revision0/session_started/client ready",
+  "scope": "48 synthetic presentation cases; captured callbacks only; no marketplace calls, gameplay Remote injection, profile grants, actual purchase or persistent acceptance",
+  "playStopped": true
+}

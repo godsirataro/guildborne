@@ -1,0 +1,9 @@
+{
+  "content": [
+    {
+      "type": "text",
+      "text": "{\"routes\":{\"1\":{\"route\":\"Main\",\"passed\":true,\"region\":\"Greenwood\"},\"3\":{\"route\":\"EastLoop\",\"passed\":true,\"region\":\"Greenwood\"},\"2\":{\"route\":\"WestLoop\",\"passed\":true,\"region\":\"Greenwood\"},\"5\":{\"route\":\"MidLoop\",\"passed\":true,\"region\":\"Ironveil\"},\"4\":{\"route\":\"Main\",\"passed\":true,\"region\":\"Ironveil\"},\"7\":{\"route\":\"Main\",\"passed\":true,\"region\":\"Ashen\"},\"6\":{\"route\":\"UpperLoop\",\"passed\":true,\"region\":\"Ironveil\"},\"9\":{\"route\":\"EastCourt\",\"passed\":true,\"region\":\"Ashen\"},\"8\":{\"route\":\"WestCourt\",\"passed\":true,\"region\":\"Ashen\"}},\"playerInteraction\":false,\"standardR15\":true,\"walkSpeed\":24,\"approxDistance\":1402.005168914795}"
+    }
+  ],
+  "isError": false
+}

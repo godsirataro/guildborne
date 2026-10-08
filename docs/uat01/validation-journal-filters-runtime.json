@@ -1,0 +1,18 @@
+{
+  "filterCountChecks": 28,
+  "emptyReset": true,
+  "widths": [
+    240,
+    640
+  ],
+  "busyGate": true,
+  "claimedItemsRemainComplete": true,
+  "synthetic": true,
+  "languages": [
+    "en",
+    "th"
+  ],
+  "noProfileWrites": true,
+  "focusResetsFilter": true,
+  "currentStockUsed": true
+}

@@ -1,0 +1,14 @@
+{
+  "status": "LOCAL_ARCHITECTURE_STUDY",
+  "objects": {
+    "Forge": 239,
+    "QuestHall": 259
+  },
+  "doorWidth": 8,
+  "doorClearance": 10,
+  "centralAisleWidth": 8,
+  "render": "preview.png",
+  "platformImported": false,
+  "humanApproved": false,
+  "reviewLighting": "Authored lantern and ember point lights; Eevee preview, geometry exports unchanged"
+}

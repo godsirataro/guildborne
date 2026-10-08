@@ -1,0 +1,9 @@
+PHASE45_SOAK_RUN	1
+PHASE45_LOAD orders=5000 cycles=2500 epochs=63 seconds=57.664 ordersPerSecond=86.71 pairP50Ms=22.322 pairP95Ms=39.393 pairMaxMs=64.577 invariantViolations=0 fixedKeys=1
+PHASE45_SOAK_RUN	2
+PHASE45_LOAD orders=5000 cycles=2500 epochs=63 seconds=56.766 ordersPerSecond=88.08 pairP50Ms=21.698 pairP95Ms=38.988 pairMaxMs=59.261 invariantViolations=0 fixedKeys=1
+PHASE45_SOAK_RUN	3
+PHASE45_LOAD orders=5000 cycles=2500 epochs=63 seconds=56.834 ordersPerSecond=87.98 pairP50Ms=22.037 pairP95Ms=38.143 pairMaxMs=58.124 invariantViolations=0 fixedKeys=1
+PHASE45_SOAK_RUN	4
+PHASE45_LOAD orders=5000 cycles=2500 epochs=63 seconds=56.984 ordersPerSecond=87.74 pairP50Ms=21.975 pairP95Ms=38.420 pairMaxMs=66.618 invariantViolations=0 fixedKeys=1
+PHASE45_SOAK totalOrders=20000 runs=4 elapsedSeconds=228.374 invariantViolations=0

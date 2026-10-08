@@ -1,0 +1,1096 @@
+{
+  "schema": 1,
+  "generatedAssetCount": 33,
+  "images": [
+    {
+      "file": "assets/uat01/generated/guildborne-archive-heart-v1.png",
+      "width": 1536,
+      "height": 1024,
+      "mode": "RGB",
+      "sha256": "7ab8a8dccf52aee6474318a7c2e0f39727b711c685af79edd3b7a8d5e67be8dc",
+      "generator": "built-in image_gen",
+      "date": "2026-10-06",
+      "robloxAssetId": null,
+      "uploaded": false,
+      "status": "archive_heart_finale_concept_reference",
+      "alphaRange": null,
+      "promptSource": "assets/uat01/ARCHIVE_HEART_PROMPT.md",
+      "warning": "Atmosphere reference only, not playable terrain. Runtime routes need continuous walkable bridges; the staged boss uses three seals, not the four decorative disks shown here."
+    },
+    {
+      "file": "assets/uat01/generated/guildborne-ashen-chapter03-v1.png",
+      "width": 1536,
+      "height": 1024,
+      "mode": "RGB",
+      "sha256": "6346c70bd6bbc567c86add3a2223654eafaf18e45a9dbd50949590d2a26418ea",
+      "generator": "built-in image_gen",
+      "date": "2026-10-01",
+      "robloxAssetId": null,
+      "uploaded": false,
+      "status": "concept_reference",
+      "alphaRange": null
+    },
+    {
+      "file": "assets/uat01/generated/guildborne-bestiary-concepts-v1.png",
+      "width": 1536,
+      "height": 1024,
+      "mode": "RGB",
+      "sha256": "38d8a9614d16f72cfdaf257983fa21e7cd88b5400bd9103c452381252ecaf412",
+      "generator": "built-in image_gen",
+      "date": "2026-10-01",
+      "robloxAssetId": null,
+      "uploaded": false,
+      "status": "concept_reference",
+      "alphaRange": null
+    },
+    {
+      "file": "assets/uat01/generated/guildborne-city-identities-v1.png",
+      "width": 1536,
+      "height": 1024,
+      "mode": "RGB",
+      "sha256": "4bf017c6e49cb467ada37087f5d1a7fc5850ba7d063e8c2411ba5f89126cd220",
+      "generator": "built-in image_gen",
+      "date": "2026-10-03",
+      "robloxAssetId": null,
+      "uploaded": false,
+      "status": "six_city_architecture_concept_reference",
+      "alphaRange": null,
+      "promptSource": "assets/uat01/CITY_IDENTITY_PROMPTS.md",
+      "warning": "Planned city identities; not six completed playable cities or a literal navigable layout."
+    },
+    {
+      "file": "assets/uat01/generated/guildborne-cosmetic-concepts-v1.png",
+      "width": 1774,
+      "height": 887,
+      "mode": "RGB",
+      "sha256": "51b6ec5cb15ca3d8374c225aefc8d3f3c90737af13899fdc4e9919a42bb391e6",
+      "generator": "built-in image_gen",
+      "date": "2026-10-01",
+      "robloxAssetId": null,
+      "uploaded": false,
+      "status": "concept_reference",
+      "alphaRange": null
+    },
+    {
+      "file": "assets/uat01/generated/guildborne-crest-v1.png",
+      "width": 1254,
+      "height": 1254,
+      "mode": "RGBA",
+      "sha256": "af33f1d5f6a5f2f2d548ff18f413b67b16d99eae88edb802149d5aeff61e669c",
+      "generator": "built-in image_gen",
+      "date": "2026-10-02",
+      "robloxAssetId": null,
+      "uploaded": false,
+      "status": "superseded_crest_candidate",
+      "alphaRange": [
+        0,
+        255
+      ],
+      "transparentPixelFraction": 0.672,
+      "nontransparentBounds": [
+        17,
+        49,
+        1222,
+        1214
+      ],
+      "promptSource": "assets/uat01/CREST_PROMPTS.md",
+      "minimumTransparentMarginPx": 17,
+      "requestedMarginMet": false,
+      "visibleAlphaBoundsOver8": [
+        93,
+        51,
+        1162,
+        1171
+      ],
+      "warning": "Generated alpha includes faint pixels beyond the visible crest. Padding/compression/import review remains pending; no raster edits applied outside image_gen."
+    },
+    {
+      "file": "assets/uat01/generated/guildborne-crest-v2.png",
+      "width": 1254,
+      "height": 1254,
+      "mode": "RGBA",
+      "sha256": "f06c6c14764bd8f48c6cab576e58f11f6415e0ba84d29d887e2dd82c0cd26711",
+      "generator": "built-in image_gen",
+      "date": "2026-10-02",
+      "robloxAssetId": null,
+      "uploaded": false,
+      "status": "brand_crest_candidate_import_pending",
+      "alphaRange": [
+        0,
+        255
+      ],
+      "transparentPixelFraction": 0.8115,
+      "nontransparentBounds": [
+        97,
+        71,
+        1119,
+        1180
+      ],
+      "promptSource": "assets/uat01/CREST_PROMPTS.md",
+      "minimumTransparentMarginPx": 71,
+      "requestedMarginMet": false,
+      "visibleAlphaBoundsOver8": [
+        225,
+        218,
+        1030,
+        1052
+      ],
+      "warning": "Generated alpha includes faint pixels beyond the visible crest. Padding/compression/import review remains pending; no raster edits applied outside image_gen."
+    },
+    {
+      "file": "assets/uat01/generated/guildborne-crosshaven-chapter05-v1.png",
+      "width": 1536,
+      "height": 1024,
+      "mode": "RGB",
+      "sha256": "c2d15e26ac8c23fc3aac2b34e0339d28d3fd0cac7b43e5387e37fb05e5c8aee4",
+      "generator": "built-in image_gen",
+      "date": "2026-10-06",
+      "robloxAssetId": null,
+      "uploaded": false,
+      "status": "crosshaven_chapter05_concept_reference",
+      "alphaRange": null,
+      "promptSource": "assets/uat01/CROSSHAVEN_CHAPTER05_PROMPT.md",
+      "warning": "Art direction only, not a game screenshot or literal navigable layout. Named NPC identities remain in the native city cast kit."
+    },
+    {
+      "file": "assets/uat01/generated/guildborne-crown-road-cast-v1.png",
+      "width": 1536,
+      "height": 1024,
+      "mode": "RGB",
+      "sha256": "22a37bd808ce26801b3e9c4c8f1a92610e07d6dac51ad2128083a9a431275b06",
+      "generator": "built-in image_gen",
+      "date": "2026-10-01",
+      "robloxAssetId": null,
+      "uploaded": false,
+      "status": "concept_reference",
+      "alphaRange": null
+    },
+    {
+      "file": "assets/uat01/generated/guildborne-crown-road-v1.png",
+      "width": 1536,
+      "height": 1024,
+      "mode": "RGB",
+      "sha256": "9867c8e22a0cf59c6c765abf29592a023ccb714ad3b47ea56bc56b70c9e92029",
+      "generator": "built-in image_gen",
+      "date": "2026-10-01",
+      "robloxAssetId": null,
+      "uploaded": false,
+      "status": "concept_reference",
+      "alphaRange": null
+    },
+    {
+      "file": "assets/uat01/generated/guildborne-equipment-icons-v1.png",
+      "width": 1254,
+      "height": 1254,
+      "mode": "RGBA",
+      "sha256": "e7caf7b66fef24084de7532c1b55f4bca0229e55017c9e1c94f7015823d71c51",
+      "generator": "built-in image_gen",
+      "date": "2026-10-01",
+      "robloxAssetId": null,
+      "uploaded": false,
+      "status": "static_atlas_candidate_crop_review_required",
+      "alphaRange": [
+        0,
+        255
+      ],
+      "transparentPixelFraction": 0.6371,
+      "nontransparentBounds": [
+        0,
+        0,
+        1241,
+        1238
+      ],
+      "columns": 4,
+      "rows": 4,
+      "cells": [
+        {
+          "id": "watchblade",
+          "rectXYXY": [
+            0,
+            0,
+            314,
+            314
+          ]
+        },
+        {
+          "id": "oathblade",
+          "rectXYXY": [
+            314,
+            0,
+            627,
+            314
+          ]
+        },
+        {
+          "id": "yew_longbow",
+          "rectXYXY": [
+            627,
+            0,
+            941,
+            314
+          ]
+        },
+        {
+          "id": "tide_staff",
+          "rectXYXY": [
+            941,
+            0,
+            1254,
+            314
+          ]
+        },
+        {
+          "id": "dawn_crozier",
+          "rectXYXY": [
+            0,
+            314,
+            314,
+            627
+          ]
+        },
+        {
+          "id": "scout_coat",
+          "rectXYXY": [
+            314,
+            314,
+            627,
+            627
+          ]
+        },
+        {
+          "id": "runewoven_mantle",
+          "rectXYXY": [
+            627,
+            314,
+            941,
+            627
+          ]
+        },
+        {
+          "id": "harbor_mail",
+          "rectXYXY": [
+            941,
+            314,
+            1254,
+            627
+          ]
+        },
+        {
+          "id": "vanguard_harness",
+          "rectXYXY": [
+            0,
+            627,
+            314,
+            941
+          ]
+        },
+        {
+          "id": "pilgrim_robes",
+          "rectXYXY": [
+            314,
+            627,
+            627,
+            941
+          ]
+        },
+        {
+          "id": "sentinel_seal",
+          "rectXYXY": [
+            627,
+            627,
+            941,
+            941
+          ]
+        },
+        {
+          "id": "hunters_token",
+          "rectXYXY": [
+            941,
+            627,
+            1254,
+            941
+          ]
+        },
+        {
+          "id": "focus_prism",
+          "rectXYXY": [
+            0,
+            941,
+            314,
+            1254
+          ]
+        },
+        {
+          "id": "wardstone",
+          "rectXYXY": [
+            314,
+            941,
+            627,
+            1254
+          ]
+        }
+      ],
+      "warning": "Uneven pixel dimensions: use explicit rectangles. Check each crop/gutter at 48px and Roblox import resolution before enabling. Never use as a flipbook."
+    },
+    {
+      "file": "assets/uat01/generated/guildborne-five-disciplines-v1.png",
+      "width": 1536,
+      "height": 1024,
+      "mode": "RGB",
+      "sha256": "f2518bb4226f57cb82635aa2b30f32dee08bce6913c1013812ad7773b7dbc6aa",
+      "generator": "built-in image_gen",
+      "date": "2026-10-01",
+      "robloxAssetId": null,
+      "uploaded": false,
+      "status": "concept_reference",
+      "alphaRange": null
+    },
+    {
+      "file": "assets/uat01/generated/guildborne-hero-templates-v1.png",
+      "width": 1536,
+      "height": 1024,
+      "mode": "RGB",
+      "sha256": "45bf934ed29bab13c1172e04588622b2343ebd4d381cfca6946be96b260aeefe",
+      "generator": "built-in image_gen",
+      "date": "2026-10-01",
+      "robloxAssetId": null,
+      "uploaded": false,
+      "status": "concept_reference",
+      "alphaRange": null
+    },
+    {
+      "file": "assets/uat01/generated/guildborne-ironveil-chapter02-v1.png",
+      "width": 1536,
+      "height": 1024,
+      "mode": "RGB",
+      "sha256": "d1b0e07579cf15b49f18cfa4c57a23d9f6c643971865a7a59266eefbe2cefd46",
+      "generator": "built-in image_gen",
+      "date": "2026-10-01",
+      "robloxAssetId": null,
+      "uploaded": false,
+      "status": "concept_reference",
+      "alphaRange": null
+    },
+    {
+      "file": "assets/uat01/generated/guildborne-island-arrival-v1.png",
+      "width": 1672,
+      "height": 941,
+      "mode": "RGB",
+      "sha256": "b20eb8c0b3c9e7159dadad7f4531060973a2e075a9d9436291e84fa90553b003",
+      "generator": "built-in image_gen",
+      "date": "2026-10-06",
+      "robloxAssetId": null,
+      "uploaded": false,
+      "status": "guild_island_arrival_concept_reference",
+      "alphaRange": null,
+      "promptSource": "assets/uat01/ISLAND_ARRIVAL_PROMPT.md"
+    },
+    {
+      "file": "assets/uat01/generated/guildborne-item-icons-v1.png",
+      "width": 1254,
+      "height": 1254,
+      "mode": "RGBA",
+      "sha256": "ae1a5c0a1bb8751e9ed06f4e2524e99df38f29963a6c2e6d151a082e7c675242",
+      "generator": "built-in image_gen",
+      "date": "2026-10-01",
+      "robloxAssetId": null,
+      "uploaded": false,
+      "status": "static_atlas_candidate_crop_review_required",
+      "alphaRange": [
+        0,
+        255
+      ],
+      "transparentPixelFraction": 0.6587,
+      "nontransparentBounds": [
+        0,
+        33,
+        1222,
+        1214
+      ],
+      "columns": 4,
+      "rows": 4,
+      "cells": [
+        {
+          "id": "stone",
+          "rectXYXY": [
+            0,
+            0,
+            314,
+            314
+          ]
+        },
+        {
+          "id": "timber",
+          "rectXYXY": [
+            314,
+            0,
+            627,
+            314
+          ]
+        },
+        {
+          "id": "iron_ore",
+          "rectXYXY": [
+            627,
+            0,
+            941,
+            314
+          ]
+        },
+        {
+          "id": "iron_ingot",
+          "rectXYXY": [
+            941,
+            0,
+            1254,
+            314
+          ]
+        },
+        {
+          "id": "herb",
+          "rectXYXY": [
+            0,
+            314,
+            314,
+            627
+          ]
+        },
+        {
+          "id": "training_sword",
+          "rectXYXY": [
+            314,
+            314,
+            627,
+            627
+          ]
+        },
+        {
+          "id": "short_bow",
+          "rectXYXY": [
+            627,
+            314,
+            941,
+            627
+          ]
+        },
+        {
+          "id": "apprentice_staff",
+          "rectXYXY": [
+            941,
+            314,
+            1254,
+            627
+          ]
+        },
+        {
+          "id": "iron_sword",
+          "rectXYXY": [
+            0,
+            627,
+            314,
+            941
+          ]
+        },
+        {
+          "id": "knight_sword",
+          "rectXYXY": [
+            314,
+            627,
+            627,
+            941
+          ]
+        },
+        {
+          "id": "mage_staff",
+          "rectXYXY": [
+            627,
+            627,
+            941,
+            941
+          ]
+        },
+        {
+          "id": "leather_vest",
+          "rectXYXY": [
+            941,
+            627,
+            1254,
+            941
+          ]
+        },
+        {
+          "id": "guardian_plate",
+          "rectXYXY": [
+            0,
+            941,
+            314,
+            1254
+          ]
+        },
+        {
+          "id": "woven_robes",
+          "rectXYXY": [
+            314,
+            941,
+            627,
+            1254
+          ]
+        },
+        {
+          "id": "bronze_ring",
+          "rectXYXY": [
+            627,
+            941,
+            941,
+            1254
+          ]
+        },
+        {
+          "id": "vitality_charm",
+          "rectXYXY": [
+            941,
+            941,
+            1254,
+            1254
+          ]
+        }
+      ],
+      "warning": "Uneven pixel dimensions: use explicit rectangles. Check each crop/gutter at 48px and Roblox import resolution before enabling. Never use as a flipbook."
+    },
+    {
+      "file": "assets/uat01/generated/guildborne-keyart-v1.png",
+      "width": 1672,
+      "height": 940,
+      "mode": "RGB",
+      "sha256": "cbde48c2febf98352ccd5dde2888c5c307744fcab16d80b9ef2eb0dddab242ca",
+      "generator": "built-in image_gen",
+      "date": "2026-10-01",
+      "robloxAssetId": null,
+      "uploaded": false,
+      "status": "local_art_source",
+      "alphaRange": null
+    },
+    {
+      "file": "assets/uat01/generated/guildborne-logo-v1.png",
+      "width": 1983,
+      "height": 793,
+      "mode": "RGBA",
+      "sha256": "895ebf4476cd52f380d34f5651846119e92c1ee35938eb463410354ed48c03e7",
+      "generator": "built-in image_gen",
+      "date": "2026-10-01",
+      "robloxAssetId": null,
+      "uploaded": false,
+      "status": "local_art_source",
+      "alphaRange": [
+        0,
+        255
+      ],
+      "transparentPixelFraction": 0.5331,
+      "nontransparentBounds": [
+        0,
+        0,
+        1982,
+        793
+      ]
+    },
+    {
+      "file": "assets/uat01/generated/guildborne-npc-concepts-v1.png",
+      "width": 1536,
+      "height": 1024,
+      "mode": "RGB",
+      "sha256": "4379c7b247c3e7ec4cfcee4968ec4a15f1bca30d47b61fcfb4c903ac6778ebf0",
+      "generator": "built-in image_gen",
+      "date": "2026-10-01",
+      "robloxAssetId": null,
+      "uploaded": false,
+      "status": "concept_reference",
+      "alphaRange": null
+    },
+    {
+      "file": "assets/uat01/generated/guildborne-obsidian-texture-v1.png",
+      "width": 1254,
+      "height": 1254,
+      "mode": "RGB",
+      "sha256": "47027f820a25be13d116007213a0c51b0c1485340355e22804bcc3957d797fb4",
+      "generator": "built-in image_gen",
+      "date": "2026-10-02",
+      "robloxAssetId": null,
+      "uploaded": false,
+      "status": "ui_texture_candidate_tiling_import_review_pending",
+      "alphaRange": null,
+      "promptSource": "assets/uat01/UI_TEXTURE_PROMPTS.md",
+      "edgeMeanAbsoluteDifferenceRGB": {
+        "horizontal": 5.456,
+        "vertical": 4.8
+      },
+      "warning": "Opposite-edge difference is diagnostic only, not seamlessness certification. No runtime asset ID; import and text contrast review pending."
+    },
+    {
+      "file": "assets/uat01/generated/guildborne-parchment-texture-v1.png",
+      "width": 1254,
+      "height": 1254,
+      "mode": "RGB",
+      "sha256": "692d0c7591d8731c62d3bb68e6e69c1757f6af3b649f307397f42af0f7d75d64",
+      "generator": "built-in image_gen",
+      "date": "2026-10-02",
+      "robloxAssetId": null,
+      "uploaded": false,
+      "status": "ui_texture_candidate_tiling_import_review_pending",
+      "alphaRange": null,
+      "promptSource": "assets/uat01/UI_TEXTURE_PROMPTS.md",
+      "edgeMeanAbsoluteDifferenceRGB": {
+        "horizontal": 4.26,
+        "vertical": 4.963
+      },
+      "warning": "Opposite-edge difference is diagnostic only, not seamlessness certification. No runtime asset ID; import and text contrast review pending."
+    },
+    {
+      "file": "assets/uat01/generated/guildborne-skill-icons-v1.png",
+      "width": 1402,
+      "height": 1122,
+      "mode": "RGBA",
+      "sha256": "ba2b7b1c9d098c0a6c7f4571c42ca3b28de8e577fd69fa9d854acf3349765187",
+      "generator": "built-in image_gen",
+      "date": "2026-10-01",
+      "robloxAssetId": null,
+      "uploaded": false,
+      "status": "static_atlas_candidate_crop_review_required",
+      "alphaRange": [
+        0,
+        255
+      ],
+      "transparentPixelFraction": 0.2674,
+      "nontransparentBounds": [
+        0,
+        0,
+        1402,
+        1122
+      ],
+      "columns": 5,
+      "rows": 4,
+      "cells": [
+        {
+          "id": "Knight.basic",
+          "rectXYXY": [
+            0,
+            0,
+            280,
+            281
+          ]
+        },
+        {
+          "id": "Warrior.basic",
+          "rectXYXY": [
+            280,
+            0,
+            561,
+            281
+          ]
+        },
+        {
+          "id": "Archer.basic",
+          "rectXYXY": [
+            561,
+            0,
+            841,
+            281
+          ]
+        },
+        {
+          "id": "Mage.basic",
+          "rectXYXY": [
+            841,
+            0,
+            1122,
+            281
+          ]
+        },
+        {
+          "id": "Priest.basic",
+          "rectXYXY": [
+            1122,
+            0,
+            1402,
+            281
+          ]
+        },
+        {
+          "id": "taunt",
+          "rectXYXY": [
+            0,
+            281,
+            280,
+            561
+          ]
+        },
+        {
+          "id": "power_strike",
+          "rectXYXY": [
+            280,
+            281,
+            561,
+            561
+          ]
+        },
+        {
+          "id": "piercing_shot",
+          "rectXYXY": [
+            561,
+            281,
+            841,
+            561
+          ]
+        },
+        {
+          "id": "fireball",
+          "rectXYXY": [
+            841,
+            281,
+            1122,
+            561
+          ]
+        },
+        {
+          "id": "heal",
+          "rectXYXY": [
+            1122,
+            281,
+            1402,
+            561
+          ]
+        },
+        {
+          "id": "bulwark",
+          "rectXYXY": [
+            0,
+            561,
+            280,
+            842
+          ]
+        },
+        {
+          "id": "cleave",
+          "rectXYXY": [
+            280,
+            561,
+            561,
+            842
+          ]
+        },
+        {
+          "id": "volley",
+          "rectXYXY": [
+            561,
+            561,
+            841,
+            842
+          ]
+        },
+        {
+          "id": "nova",
+          "rectXYXY": [
+            841,
+            561,
+            1122,
+            842
+          ]
+        },
+        {
+          "id": "renewal",
+          "rectXYXY": [
+            1122,
+            561,
+            1402,
+            842
+          ]
+        },
+        {
+          "id": "bulwark_master",
+          "rectXYXY": [
+            0,
+            842,
+            280,
+            1122
+          ]
+        },
+        {
+          "id": "cleave_master",
+          "rectXYXY": [
+            280,
+            842,
+            561,
+            1122
+          ]
+        },
+        {
+          "id": "volley_master",
+          "rectXYXY": [
+            561,
+            842,
+            841,
+            1122
+          ]
+        },
+        {
+          "id": "nova_master",
+          "rectXYXY": [
+            841,
+            842,
+            1122,
+            1122
+          ]
+        },
+        {
+          "id": "renewal_master",
+          "rectXYXY": [
+            1122,
+            842,
+            1402,
+            1122
+          ]
+        }
+      ],
+      "warning": "Uneven pixel dimensions: use explicit rectangles. Check each crop/gutter at 48px and Roblox import resolution before enabling. Never use as a flipbook."
+    },
+    {
+      "file": "assets/uat01/generated/guildborne-tower-chapter04-v1.png",
+      "width": 1536,
+      "height": 1024,
+      "mode": "RGB",
+      "sha256": "a5372b95f18d95323e8e8f592073e9e19235d529b37617691272483e33cf679e",
+      "generator": "built-in image_gen",
+      "date": "2026-10-01",
+      "robloxAssetId": null,
+      "uploaded": false,
+      "status": "concept_reference",
+      "alphaRange": null
+    },
+    {
+      "file": "assets/uat01/generated/guildborne-ui-concepts-v1.png",
+      "width": 1536,
+      "height": 1024,
+      "mode": "RGB",
+      "sha256": "e25691c582dbc40afc2e45d9568765300b1797e6247ed7ff98280027ff01dc1e",
+      "generator": "built-in image_gen",
+      "date": "2026-10-01",
+      "robloxAssetId": null,
+      "uploaded": false,
+      "status": "concept_reference",
+      "alphaRange": null
+    },
+    {
+      "file": "assets/uat01/generated/guildborne-vfx-guild-portal-v1.png",
+      "width": 1254,
+      "height": 1254,
+      "mode": "RGBA",
+      "sha256": "8c53dd0a1e6dc9275a644f5f78739ea420cc83d84e7952c706c1ff25444fc1ac",
+      "generator": "built-in image_gen",
+      "date": "2026-10-06",
+      "robloxAssetId": null,
+      "uploaded": false,
+      "status": "guild_portal_texture_candidate_import_pending",
+      "alphaRange": [
+        0,
+        253
+      ],
+      "transparentPixelFraction": 0.4461,
+      "nontransparentBounds": [
+        0,
+        0,
+        1246,
+        1254
+      ],
+      "promptSource": "assets/uat01/GUILD_PORTAL_PROMPT.md",
+      "minimumTransparentMarginPx": 0,
+      "requestedMarginMet": false,
+      "warning": "Static aura with irregular silhouette. Glow margin, alpha fringe, compression and mobile overdraw review pending. No upload or runtime binding."
+    },
+    {
+      "file": "assets/uat01/generated/guildborne-vfx-healing-ward-v1.png",
+      "width": 1254,
+      "height": 1254,
+      "mode": "RGBA",
+      "sha256": "1e88541e54410c7eaa045036641ed8a8f6bb89e35c860de152321d1c7b92d791",
+      "generator": "built-in image_gen",
+      "date": "2026-10-06",
+      "robloxAssetId": null,
+      "uploaded": false,
+      "status": "single_ward_texture_candidate_import_pending",
+      "alphaRange": [
+        0,
+        253
+      ],
+      "transparentPixelFraction": 0.6426,
+      "nontransparentBounds": [
+        0,
+        0,
+        1240,
+        1254
+      ],
+      "promptSource": "assets/uat01/HEALING_WARD_PROMPT.md",
+      "minimumTransparentMarginPx": 0,
+      "requestedMarginMet": false,
+      "warning": "Single static sprite, not a flipbook. Generated margin and glow need compression/background review. No upload or runtime texture binding."
+    },
+    {
+      "file": "assets/uat01/generated/guildborne-vfx-impact-v1.png",
+      "width": 1254,
+      "height": 1254,
+      "mode": "RGBA",
+      "sha256": "2f2238bdc835558ad4f3f73d939a8802131120439448feacd747cef1bfd3d50c",
+      "generator": "built-in image_gen",
+      "date": "2026-10-01",
+      "robloxAssetId": null,
+      "uploaded": false,
+      "status": "particle_candidate_margin_review_required",
+      "alphaRange": [
+        0,
+        254
+      ],
+      "transparentPixelFraction": 0.8895,
+      "nontransparentBounds": [
+        39,
+        21,
+        1194,
+        1198
+      ],
+      "promptSource": "assets/uat01/IMPACT_PROMPT.md",
+      "warning": "Single sprite, not flipbook. Upload, compression, runtime tint and dark/light background acceptance pending.",
+      "minimumTransparentMarginPx": 21,
+      "edgeReviewRequired": false,
+      "requestedTransparentMarginFraction": 0.18,
+      "requestedMarginMet": false,
+      "visibleAlphaBoundsOver16": [
+        273,
+        220,
+        982,
+        1028
+      ]
+    },
+    {
+      "file": "assets/uat01/generated/guildborne-vfx-slash-v1.png",
+      "width": 1254,
+      "height": 1254,
+      "mode": "RGBA",
+      "sha256": "770a7d01a9ce6230217f8b77471581b88776a836bd607df451cdb24d3d057d53",
+      "generator": "built-in image_gen",
+      "date": "2026-10-01",
+      "robloxAssetId": null,
+      "uploaded": false,
+      "status": "particle_candidate_faint_edge_alpha_review_required",
+      "alphaRange": [
+        0,
+        255
+      ],
+      "transparentPixelFraction": 0.7845,
+      "nontransparentBounds": [
+        0,
+        0,
+        1232,
+        1254
+      ],
+      "promptSource": "assets/uat01/VFX_TEXTURE_PROMPTS.md",
+      "warning": "Single sprite, not flipbook. Upload, compression, runtime tint and dark/light background acceptance pending.",
+      "minimumTransparentMarginPx": 0,
+      "edgeReviewRequired": true,
+      "requestedTransparentMarginFraction": 0.15,
+      "requestedMarginMet": false,
+      "visibleAlphaBoundsOver16": [
+        166,
+        126,
+        1126,
+        1080
+      ]
+    },
+    {
+      "file": "assets/uat01/generated/guildborne-vfx-smoke-v1.png",
+      "width": 1254,
+      "height": 1254,
+      "mode": "RGBA",
+      "sha256": "9b9117623ab575d2f8ba02c9ecfe5824e9af8eb8225c313d02b3dd3ed1c06082",
+      "generator": "built-in image_gen",
+      "date": "2026-10-01",
+      "robloxAssetId": null,
+      "uploaded": false,
+      "status": "particle_candidate_faint_edge_alpha_review_required",
+      "alphaRange": [
+        0,
+        254
+      ],
+      "transparentPixelFraction": 0.7075,
+      "nontransparentBounds": [
+        0,
+        20,
+        1244,
+        1198
+      ],
+      "promptSource": "assets/uat01/VFX_TEXTURE_PROMPTS.md",
+      "warning": "Single sprite, not flipbook. Upload, compression, runtime tint and dark/light background acceptance pending.",
+      "minimumTransparentMarginPx": 0,
+      "edgeReviewRequired": true,
+      "requestedTransparentMarginFraction": 0.2,
+      "requestedMarginMet": false,
+      "visibleAlphaBoundsOver16": [
+        256,
+        240,
+        1017,
+        1035
+      ]
+    },
+    {
+      "file": "assets/uat01/generated/guildborne-vfx-storyboard-v1.png",
+      "width": 1672,
+      "height": 941,
+      "mode": "RGB",
+      "sha256": "1e527800b589a3cb9a1b65ab9c06bf2888dbc6dcbacfec4a0112e2154a2890b1",
+      "generator": "built-in image_gen",
+      "date": "2026-10-01",
+      "robloxAssetId": null,
+      "uploaded": false,
+      "status": "concept_reference",
+      "alphaRange": null
+    },
+    {
+      "file": "assets/uat01/generated/guildborne-worldmap-v1.png",
+      "width": 1254,
+      "height": 1254,
+      "mode": "RGB",
+      "sha256": "ff7e7a33591d245226a3efe2220d92d254ce591e2465c8eb37cd4eed0c99060b",
+      "generator": "built-in image_gen",
+      "date": "2026-10-01",
+      "robloxAssetId": null,
+      "uploaded": false,
+      "status": "concept_reference",
+      "alphaRange": null
+    },
+    {
+      "file": "assets/uat01/friendly-orcs/concept.png",
+      "width": 1222,
+      "height": 1287,
+      "mode": "RGB",
+      "sha256": "e94724bed9d0229a8692ee210fa2f9bf3ee4a50534102dd4e4bb277d8737fa99",
+      "generator": "built-in image_gen",
+      "date": "2026-10-03",
+      "robloxAssetId": null,
+      "uploaded": false,
+      "status": "concept_reference",
+      "alphaRange": null,
+      "promptFile": "assets/uat01/friendly-orcs/concept-prompt.txt"
+    },
+    {
+      "file": "assets/uat01/building-themes/concept.png",
+      "width": 1536,
+      "height": 1024,
+      "mode": "RGB",
+      "sha256": "bdd9d16bc82d7816c45765d44a73a7340b0d64130c8f7066171e5fbfbffb16a0",
+      "generator": "built-in image_gen",
+      "date": "2026-10-03",
+      "robloxAssetId": null,
+      "uploaded": false,
+      "status": "concept_reference",
+      "promptFile": "assets/uat01/building-themes/concept-prompt.txt"
+    }
+  ],
+  "permissionStatus": "No cloud upload or external rights verification performed.",
+  "sourcePolicy": "Original generation prompts in PROMPTS.md. No third-party images imported; do not label generated outputs public domain."
+}

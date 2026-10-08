@@ -1,0 +1,13 @@
+# Ashen Chapter03 foundation — 2026-10-04
+
+Enabled only in the explicit memory-only Ashen preview. A fresh actual Chapter00-03 journey completed at revision151/Hall7/level50; see ASHEN_ACCEPTANCE.md. Its six quests extend the existing version1 campaign without rewriting prior checkpoints. Twenty synthetic combinations (five classes × two bridge routes × two witness choices) reach Hall7/level50 from earned rewards only. Both choices preserve equal power/access; no paid shortcut or specific random recruit is needed.
+
+Minimum continuation begins at1700XP/40Gold/Hall4. Rewards bank XP at the existing caps:1850XP/Hall4→Hall5 releases level38;2100XP/Hall5→Hall6 releases level43;2450XP/Hall6→Hall7 releases level50. Three permits include the exact existing Hall upgrade materials;Gold320,400,480 is consumed. Final minimum140Gold; no additional XP on the last quest. Permanent status/skill points, decoration entitlements and Codex rewards are not fabricated. Those design intents need separate binding.
+
+Six original scene prototypes: caravan checkpoint, memory hearth, ash bridge, witness court, bell tower and warden seals.178 visible parts/2136 triangles;33 approach markers;66 native body/floor checks and33 no-jump paths pass. Bridge rail openings were corrected after geometry review. The ash channel uses a flat non-hazardous cutaway floor; this is not a finished chasm or underground map. Blender gallery plus6FBX/6GLB reimports preserve dimensions, origin and triangles.
+
+Four friendly cast models: Human gatekeeper, Elf survivor, Dwarf bridgewright and Orc witness. Original new clothing/tools on existing editable Guildborne skeletons;140 visible parts/1680 triangles;60 native motors and16 walking limbs pass stop/destroy restoration.16 Idle/Walk/Greet/Work clips plus8 rest exports pass24 Blender round trips. Native walking uses Motor6D poses; imported Roblox animation/mesh IDs remain blank.
+
+UI fixtures cover108 EN/TH screens/882 text bounds/36 captured callbacks without networking. Full domain suite530 tests passes; 37prompt/15private-receipt world fixtures,33assembled paths and3physical escort routes pass; one full actual journey includes moving escorts, puzzles, timed safety wards and party combat victories. Enemy-wave NPC defense and further release acceptance remain pending. Concept art is a production reference, not a screenshot. No release, import or human UAT approval is implied.
+
+Evidence: `validation-ashen-foundation-domain.txt`, `validation-ashen-story-native.json`, `validation-ashen-cast-native.json`, `validation-ashen-ui-native.json`; local kits are `assets/uat01/ashen-story-kit` and `assets/uat01/ashen-cast` with editable Blender files and roundtrip reports.

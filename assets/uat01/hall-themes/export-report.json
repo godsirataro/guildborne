@@ -1,0 +1,158 @@
+[
+  {
+    "id": "hall_human_lv1",
+    "triangles": 412,
+    "bounds": [
+      24.561769485473633,
+      20.5,
+      14.839006423950195
+    ],
+    "sourceParts": 35,
+    "icon": "hall_human_lv1.png",
+    "robloxMeshAssetId": null,
+    "robloxImageAssetId": null
+  },
+  {
+    "id": "hall_elf_lv1",
+    "triangles": 508,
+    "bounds": [
+      24.561769485473633,
+      20.5,
+      16.613025665283203
+    ],
+    "sourceParts": 43,
+    "icon": "hall_elf_lv1.png",
+    "robloxMeshAssetId": null,
+    "robloxImageAssetId": null
+  },
+  {
+    "id": "hall_dwarf_lv1",
+    "triangles": 556,
+    "bounds": [
+      24.561769485473633,
+      20.5,
+      16.400001525878906
+    ],
+    "sourceParts": 47,
+    "icon": "hall_dwarf_lv1.png",
+    "robloxMeshAssetId": null,
+    "robloxImageAssetId": null
+  },
+  {
+    "id": "hall_orc_lv1",
+    "triangles": 604,
+    "bounds": [
+      24.561769485473633,
+      20.5,
+      16.487165451049805
+    ],
+    "sourceParts": 51,
+    "icon": "hall_orc_lv1.png",
+    "robloxMeshAssetId": null,
+    "robloxImageAssetId": null
+  },
+  {
+    "id": "hall_mage_lv1",
+    "triangles": 580,
+    "bounds": [
+      24.561769485473633,
+      20.5,
+      17.149999618530273
+    ],
+    "sourceParts": 49,
+    "icon": "hall_mage_lv1.png",
+    "robloxMeshAssetId": null,
+    "robloxImageAssetId": null
+  },
+  {
+    "id": "hall_crosshaven_lv1",
+    "triangles": 520,
+    "bounds": [
+      24.561769485473633,
+      20.5,
+      18.450000762939453
+    ],
+    "sourceParts": 44,
+    "icon": "hall_crosshaven_lv1.png",
+    "robloxMeshAssetId": null,
+    "robloxImageAssetId": null
+  },
+  {
+    "id": "hall_human_lv2",
+    "triangles": 604,
+    "bounds": [
+      28.541399002075195,
+      22.0,
+      16.5
+    ],
+    "sourceParts": 51,
+    "icon": "hall_human_lv2.png",
+    "robloxMeshAssetId": null,
+    "robloxImageAssetId": null
+  },
+  {
+    "id": "hall_elf_lv2",
+    "triangles": 700,
+    "bounds": [
+      28.541399002075195,
+      22.0,
+      16.613025665283203
+    ],
+    "sourceParts": 59,
+    "icon": "hall_elf_lv2.png",
+    "robloxMeshAssetId": null,
+    "robloxImageAssetId": null
+  },
+  {
+    "id": "hall_dwarf_lv2",
+    "triangles": 748,
+    "bounds": [
+      28.541399002075195,
+      22.0,
+      16.5
+    ],
+    "sourceParts": 63,
+    "icon": "hall_dwarf_lv2.png",
+    "robloxMeshAssetId": null,
+    "robloxImageAssetId": null
+  },
+  {
+    "id": "hall_orc_lv2",
+    "triangles": 796,
+    "bounds": [
+      28.541399002075195,
+      22.0,
+      16.5
+    ],
+    "sourceParts": 67,
+    "icon": "hall_orc_lv2.png",
+    "robloxMeshAssetId": null,
+    "robloxImageAssetId": null
+  },
+  {
+    "id": "hall_mage_lv2",
+    "triangles": 772,
+    "bounds": [
+      28.541399002075195,
+      22.0,
+      17.149999618530273
+    ],
+    "sourceParts": 65,
+    "icon": "hall_mage_lv2.png",
+    "robloxMeshAssetId": null,
+    "robloxImageAssetId": null
+  },
+  {
+    "id": "hall_crosshaven_lv2",
+    "triangles": 712,
+    "bounds": [
+      28.541399002075195,
+      22.0,
+      18.450000762939453
+    ],
+    "sourceParts": 60,
+    "icon": "hall_crosshaven_lv2.png",
+    "robloxMeshAssetId": null,
+    "robloxImageAssetId": null
+  }
+]

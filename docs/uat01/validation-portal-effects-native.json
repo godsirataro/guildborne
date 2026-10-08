@@ -1,0 +1,86 @@
+{
+  "native": {
+    "cleanup": true,
+    "stages": {
+      "1": {
+        "parts": 36,
+        "name": "desktop high saturation",
+        "active": 3
+      },
+      "2": {
+        "parts": 16,
+        "name": "low rebuild",
+        "active": 2
+      },
+      "3": {
+        "parts": 24,
+        "name": "touch high cap",
+        "active": 2
+      },
+      "4": {
+        "parts": 36,
+        "name": "reduced motion first",
+        "active": 3
+      },
+      "5": {
+        "parts": 36,
+        "name": "reduced motion later",
+        "active": 3
+      },
+      "6": {
+        "parts": 36,
+        "name": "reverse face readability",
+        "active": 3
+      },
+      "7": {
+        "parts": 0,
+        "name": "distance cull",
+        "active": 0
+      },
+      "8": {
+        "parts": 36,
+        "name": "return rebuild",
+        "active": 3
+      },
+      "9": {
+        "parts": 36,
+        "name": "removed tag replacement",
+        "active": 3
+      },
+      "10": {
+        "parts": 36,
+        "name": "destination changes",
+        "active": 3
+      },
+      "11": {
+        "parts": 36,
+        "name": "unknown destination hidden",
+        "active": 3
+      },
+      "12": {
+        "parts": 36,
+        "name": "destination restored",
+        "active": 3
+      },
+      "13": {
+        "parts": 36,
+        "name": "streamed out",
+        "active": 3
+      }
+    },
+    "geometryChecks": 400,
+    "promptMutations": 0,
+    "profileWrites": 0
+  },
+  "actual": {
+    "studioId": "b0e8fd72-3b6c-40f0-b4c2-2663abbd2236",
+    "memoryOnly": true,
+    "touchEmulation": true,
+    "nearbyGuildPortalParts": 8,
+    "keyboardETravel": {
+      "tagged": 8,
+      "position": "0, 3.9980251789093018, 23"
+    },
+    "note": "Movement-only character shortcut to city gate; screenshot reviewed after source-matching portal opacity adjustment"
+  }
+}

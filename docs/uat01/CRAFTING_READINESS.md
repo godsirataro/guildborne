@@ -1,0 +1,9 @@
+# Crafting material and capacity feedback — 2026-10-03
+
+All10recipe cards now show an original native item preview beside alphabetically ordered material names and current/required quantities. The compact layout reduces the preview to48pixels when available scrolling height is below180pixels; normal cards use64pixels. Images reuse existing local ItemVisuals and assign no cloud image or mesh IDs.
+
+CraftingViewState projects readiness from the same recipe costs and inventory limits used by the server. It distinguishes a missing placed Blacksmith, Hall level, material shortage, equipment capacity, material stack capacity, exhausted item sequence and an action already pending. Stored Blacksmiths do not count as placed. Each action still creates one item through the existing server CraftItem command; prices, quantities, save schema and progression are unchanged. StackLimit is now an explicit read-only catalog value. No client prediction consumes materials or creates equipment.
+
+Validation:464domain tests passed, including70recipe/state comparisons against ExpansionService and material shortage/read-only checks. The existing5000-order test completed with zero invariant violations. Native UI tested64layouts/states,640recipe cards and previews,80captured callbacks, English/Thai, widths240/640 and heights160/800. Text bounds, disabled focus, item identity, quantities and callback recipe IDs passed. Fixtures sent no gameplay requests. Actual fresh-player Base UI was opened through clicks and the compact Iron Ingot card visually inspected; see crafting-materials.png.
+
+The latest actual Forge construction and material accounting are recorded separately in ORC_SUPPLY_ACCEPTANCE.md. The new recipe presentation itself has not yet received a full earned-material craft/rejoin journey or physical-device/human acceptance. Viewport count is bounded to the10configured recipes; future catalog growth should introduce viewport culling or a selected-item inspector.

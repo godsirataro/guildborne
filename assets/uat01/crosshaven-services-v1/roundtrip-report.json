@@ -1,0 +1,38 @@
+[
+  {
+    "building": "Market",
+    "format": "glb",
+    "meshObjects": 302,
+    "triangles": 12388,
+    "maxBoundsError": 1.9073486328125e-06,
+    "collisionMetadataPreserved": true,
+    "status": "PASS"
+  },
+  {
+    "building": "Market",
+    "format": "fbx",
+    "meshObjects": 302,
+    "triangles": 12388,
+    "maxBoundsError": 3.814697265625e-06,
+    "collisionMetadataPreserved": true,
+    "status": "PASS"
+  },
+  {
+    "building": "Tavern",
+    "format": "glb",
+    "meshObjects": 287,
+    "triangles": 8776,
+    "maxBoundsError": 1.9073486328125e-06,
+    "collisionMetadataPreserved": true,
+    "status": "PASS"
+  },
+  {
+    "building": "Tavern",
+    "format": "fbx",
+    "meshObjects": 287,
+    "triangles": 8776,
+    "maxBoundsError": 3.814697265625e-06,
+    "collisionMetadataPreserved": true,
+    "status": "PASS"
+  }
+]

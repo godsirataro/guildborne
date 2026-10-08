@@ -1,0 +1,350 @@
+{
+  "receiptCounts": {
+    "greenwood_scout": 2,
+    "forest_captain": 1,
+    "quarry_raider": 2,
+    "quarry_guardian": 1,
+    "arcane_sentinel": 2,
+    "arcane_warden": 1,
+    "greenwood_archer": 1,
+    "greenwood_boar": 1,
+    "crystal_shaman": 1,
+    "stone_guard": 1,
+    "rune_caster": 2,
+    "rune_hound": 2
+  },
+  "greenwoodArcher": [
+    {
+      "playerHP": 50,
+      "hp": 62
+    },
+    {
+      "playerHP": 50,
+      "hp": 54
+    },
+    {
+      "playerHP": 50,
+      "hp": 33
+    },
+    {
+      "playerHP": 50,
+      "hp": 25
+    },
+    {
+      "playerHP": 50,
+      "hp": 17
+    },
+    {
+      "playerHP": 50,
+      "hp": 4
+    },
+    {
+      "hp": 0,
+      "playerHP": 50,
+      "reward": "Rewarded"
+    }
+  ],
+  "greenwoodBoar": [
+    {
+      "warning": "Boar Rush",
+      "playerHP": 56,
+      "evaders": 0,
+      "hp": 180,
+      "x": 0
+    },
+    {
+      "warning": "Boar Rush",
+      "playerHP": 56,
+      "evaders": 3,
+      "hp": 150,
+      "x": 7.1171875
+    },
+    {
+      "x": 7.1171875,
+      "action": 1791019719.517006,
+      "evaders": 0,
+      "hp": 129,
+      "playerHP": 56
+    },
+    {
+      "x": 7.1171875,
+      "action": 1791019719.517006,
+      "evaders": 0,
+      "hp": 87,
+      "playerHP": 56
+    },
+    {
+      "x": 7.1171875,
+      "action": 1791019719.517006,
+      "evaders": 0,
+      "hp": 74,
+      "playerHP": 56
+    },
+    {
+      "warning": "Boar Rush",
+      "playerHP": 56,
+      "x": 7.1171875,
+      "evaders": 4,
+      "hp": 63,
+      "action": 1791019719.517006
+    },
+    {
+      "x": -0.00390625,
+      "action": 1791019723.217393,
+      "evaders": 0,
+      "hp": 23,
+      "playerHP": 45
+    },
+    {
+      "x": -0.00390625,
+      "action": 1791019723.217393,
+      "evaders": 0,
+      "hp": 23,
+      "playerHP": 45
+    },
+    {
+      "x": -0.00390625,
+      "action": 1791019723.217393,
+      "evaders": 0,
+      "hp": 4,
+      "playerHP": 45
+    },
+    {
+      "x": -0.00390625,
+      "playerHP": 45,
+      "action": 1791019723.217393,
+      "evaders": 0,
+      "hp": 0,
+      "reward": "Rewarded"
+    }
+  ],
+  "crystalShaman": [
+    {
+      "playerHP": 56,
+      "hp": 114
+    },
+    {
+      "playerHP": 56,
+      "hp": 106
+    },
+    {
+      "playerHP": 56,
+      "hp": 93
+    },
+    {
+      "playerHP": 56,
+      "hp": 85
+    },
+    {
+      "playerHP": 56,
+      "hp": 77
+    },
+    {
+      "playerHP": 56,
+      "hp": 64
+    },
+    {
+      "playerHP": 56,
+      "hp": 48
+    },
+    {
+      "playerHP": 56,
+      "hp": 35
+    },
+    {
+      "playerHP": 56,
+      "hp": 27
+    },
+    {
+      "playerHP": 56,
+      "hp": 6
+    },
+    {
+      "hp": 0,
+      "playerHP": 56,
+      "reward": "Rewarded"
+    }
+  ],
+  "stoneGuard": [
+    {
+      "playerHP": 56,
+      "hp": 303
+    },
+    {
+      "playerHP": 56,
+      "hp": 290
+    },
+    {
+      "playerHP": 56,
+      "hp": 284
+    },
+    {
+      "playerHP": 56,
+      "hp": 261
+    },
+    {
+      "playerHP": 56,
+      "hp": 261
+    },
+    {
+      "playerHP": 56,
+      "hp": 243
+    },
+    {
+      "playerHP": 56,
+      "hp": 232
+    },
+    {
+      "playerHP": 56,
+      "hp": 220
+    },
+    {
+      "playerHP": 56,
+      "hp": 197
+    },
+    {
+      "playerHP": 56,
+      "hp": 168
+    },
+    {
+      "playerHP": 56,
+      "hp": 161
+    },
+    {
+      "playerHP": 56,
+      "hp": 150
+    },
+    {
+      "playerHP": 56,
+      "hp": 132
+    },
+    {
+      "playerHP": 56,
+      "hp": 127
+    },
+    {
+      "playerHP": 56,
+      "hp": 114
+    },
+    {
+      "playerHP": 56,
+      "hp": 104
+    },
+    {
+      "playerHP": 56,
+      "hp": 85
+    },
+    {
+      "playerHP": 56,
+      "hp": 62
+    },
+    {
+      "playerHP": 56,
+      "hp": 45
+    },
+    {
+      "playerHP": 56,
+      "hp": 27
+    },
+    {
+      "playerHP": 56,
+      "hp": 16
+    },
+    {
+      "playerHP": 56,
+      "hp": 4
+    },
+    {
+      "hp": 0,
+      "playerHP": 56,
+      "reward": "Rewarded"
+    }
+  ],
+  "runeCaster": [
+    {
+      "x": 1072,
+      "action": 1791019939.957963,
+      "evaders": 0,
+      "hp": 78,
+      "playerHP": 56
+    },
+    {
+      "x": 1072,
+      "action": 1791019939.957963,
+      "evaders": 0,
+      "hp": 65,
+      "playerHP": 56
+    },
+    {
+      "x": 1072,
+      "action": 1791019939.957963,
+      "evaders": 0,
+      "hp": 57,
+      "playerHP": 56
+    },
+    {
+      "warning": "Rune Flare",
+      "playerHP": 56,
+      "x": 1072,
+      "evaders": 1,
+      "hp": 19,
+      "action": 1791019939.957963
+    },
+    {
+      "warning": "Rune Flare",
+      "playerHP": 56,
+      "x": 1079.08203125,
+      "evaders": 1,
+      "hp": 11,
+      "action": 1791019939.957963
+    },
+    {
+      "x": 1079.08203125,
+      "playerHP": 56,
+      "action": 1791019943.508364,
+      "evaders": 0,
+      "hp": 0,
+      "reward": "Rewarded"
+    }
+  ],
+  "runeHound": [
+    {
+      "x": 1000,
+      "action": 1791019986.572254,
+      "evaders": 0,
+      "hp": 70,
+      "playerHP": 56
+    },
+    {
+      "warning": "Rune Pounce",
+      "playerHP": 56,
+      "x": 1000,
+      "evaders": 1,
+      "hp": 62,
+      "action": 1791019986.572254
+    },
+    {
+      "x": 1007.08203125,
+      "action": 1791019989.855975,
+      "evaders": 0,
+      "hp": 7,
+      "playerHP": 56
+    },
+    {
+      "x": 1007.08203125,
+      "action": 1791019989.855975,
+      "evaders": 0,
+      "hp": 7,
+      "playerHP": 56
+    },
+    {
+      "x": 1007.08203125,
+      "playerHP": 56,
+      "action": 1791019989.855975,
+      "evaders": 0,
+      "hp": 0,
+      "reward": "Rewarded"
+    }
+  ],
+  "note": "Actual offline UI/keyboard party combat. Extra Rune Caster/Hound kills occurred during tool/model pauses across natural respawns; counts are encounter receipts, not a claim of one death total."
+}

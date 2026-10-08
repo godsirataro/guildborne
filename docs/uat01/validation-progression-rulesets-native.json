@@ -1,0 +1,10 @@
+{
+  "migrationCases": 20,
+  "jsonRoundTrips": 61,
+  "ordinarySchema": 7,
+  "legacyHallCases": 20,
+  "optInSchema": 8,
+  "noviceHallCases": 21,
+  "profileWrites": 0,
+  "runtimeNoviceEnabled": false
+}

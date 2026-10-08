@@ -1,0 +1,64 @@
+{
+  "actors": {
+    "1": {
+      "clockAfter": 0.5113593027926964,
+      "paused": false,
+      "clockBefore": 0.5113593027926964,
+      "id": "elian",
+      "near": false
+    },
+    "2": {
+      "clockAfter": 0.8181825019419193,
+      "paused": false,
+      "clockBefore": 0.8181825019419193,
+      "id": "vaela",
+      "near": false
+    },
+    "3": {
+      "clockAfter": 0.6778756054118276,
+      "paused": false,
+      "clockBefore": 0.6778756054118276,
+      "id": "borin",
+      "near": false
+    },
+    "4": {
+      "clockAfter": 0.7578501975163817,
+      "paused": false,
+      "clockBefore": 0.7578501975163817,
+      "id": "nyra",
+      "near": false
+    },
+    "5": {
+      "clockAfter": 0.6792051997035742,
+      "paused": false,
+      "clockBefore": 0.6792051997035742,
+      "id": "sela",
+      "near": false
+    },
+    "6": {
+      "clockAfter": 5.380314075388014,
+      "paused": false,
+      "clockBefore": 4.61389967892319,
+      "id": "roka",
+      "near": true
+    }
+  },
+  "status": "PASS",
+  "scope": "Isolated local city/cast art fixture, no profile or gameplay completion",
+  "activeActors": 1,
+  "ordinaryInputPauseActors": [
+    "elian",
+    "vaela",
+    "borin",
+    "nyra",
+    "sela",
+    "roka"
+  ],
+  "ordinaryInputResumeActors": [
+    "elian",
+    "roka"
+  ],
+  "autoResumeAfterLeavingConversation": true,
+  "cityLabelAfterEventSettled": "Sylvaris",
+  "notes": "The initial immediate label assertion raced the asynchronous city change; a fresh session with a 0.3-second observation delay showed the correct city and empty console. No game profile or remote reward calls."
+}

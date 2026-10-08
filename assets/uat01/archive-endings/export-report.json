@@ -1,0 +1,41 @@
+[
+  {
+    "id": "preserve",
+    "triangles": 1044,
+    "bounds": [
+      32.0,
+      28.0,
+      14.5
+    ],
+    "materials": 6,
+    "status": "CREATED",
+    "robloxMeshAssetId": null,
+    "studioNativeVerified": false
+  },
+  {
+    "id": "transform",
+    "triangles": 600,
+    "bounds": [
+      32.0,
+      28.0,
+      14.5
+    ],
+    "materials": 9,
+    "status": "CREATED",
+    "robloxMeshAssetId": null,
+    "studioNativeVerified": false
+  },
+  {
+    "id": "dismantle",
+    "triangles": 1032,
+    "bounds": [
+      32.0,
+      28.0,
+      14.5
+    ],
+    "materials": 8,
+    "status": "CREATED",
+    "robloxMeshAssetId": null,
+    "studioNativeVerified": false
+  }
+]

@@ -1,0 +1,5 @@
+FBX version: 7400
+BORIN_ROUNDTRIP_PASS {"status": "PASS", "meshObjects": 114, "triangles": 14304, "bones": 16, "skinnedMeshes": 87, "actions": 28, "contactRoundtrip": [{"frame": 30, "hammerBottom": 2.7000012397766113, "workpieceTop": 2.700000047683716, "error": 1.1920928955078125e-06}, {"frame": 90, "hammerBottom": 2.7000012397766113, "workpieceTop": 2.700000047683716, "error": 1.1920928955078125e-06}, {"frame": 150, "hammerBottom": 2.7000012397766113, "workpieceTop": 2.700000047683716, "error": 1.1920928955078125e-06}], "windupClearance": 1.022087574005127, "stationaryFeetAndRoot": true, "loopSeamPassed": true, "platformImported": false, "notes": "GLB imported into a clean Blender scene at authored30fps. Evaluated skinned hammer surfaces tested; audio not listened to and Studio retarget/performance pending.", "format": "FBX"}
+Blender 5.2.1 LTS (hash 9e2066aef7ef built 2026-08-25 02:38:20)
+
+Blender quit

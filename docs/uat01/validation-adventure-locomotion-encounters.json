@@ -1,0 +1,9 @@
+{
+  "content": [
+    {
+      "type": "text",
+      "text": "{\"1\":{\"actors\":{\"1\":{\"id\":\"greenwood_scout\",\"patterns\":0,\"healEvents\":0,\"damageEvents\":7},\"4\":{\"id\":\"forest_captain\",\"patterns\":2,\"healEvents\":0,\"damageEvents\":2},\"3\":{\"id\":\"greenwood_boar\",\"patterns\":1,\"healEvents\":0,\"damageEvents\":3},\"2\":{\"id\":\"greenwood_archer\",\"patterns\":0,\"healEvents\":0,\"damageEvents\":6}},\"playerProfilesTouched\":false,\"region\":\"Greenwood\"},\"3\":{\"actors\":{\"1\":{\"id\":\"arcane_sentinel\",\"patterns\":0,\"healEvents\":0,\"damageEvents\":8},\"4\":{\"id\":\"arcane_warden\",\"patterns\":2,\"healEvents\":0,\"damageEvents\":3},\"3\":{\"id\":\"rune_hound\",\"patterns\":1,\"healEvents\":0,\"damageEvents\":3},\"2\":{\"id\":\"rune_caster\",\"patterns\":1,\"healEvents\":0,\"damageEvents\":3}},\"playerProfilesTouched\":false,\"region\":\"Ashen\"},\"2\":{\"actors\":{\"1\":{\"id\":\"quarry_raider\",\"patterns\":0,\"healEvents\":0,\"damageEvents\":7},\"4\":{\"id\":\"quarry_guardian\",\"patterns\":2,\"healEvents\":0,\"damageEvents\":3},\"3\":{\"id\":\"crystal_shaman\",\"patterns\":0,\"healEvents\":4,\"damageEvents\":0},\"2\":{\"id\":\"stone_guard\",\"patterns\":0,\"healEvents\":0,\"damageEvents\":5}},\"playerProfilesTouched\":false,\"region\":\"Ironveil\"}}"
+    }
+  ],
+  "isError": false
+}

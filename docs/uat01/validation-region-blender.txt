@@ -1,0 +1,318 @@
+C:\Work\MySelf\Guildborne\tools\blender_region_maps.py:10: DeprecationWarning: 'Material.use_nodes' is expected to be removed in Blender 6.0
+  m=bpy.data.materials.new(name);m.use_nodes=True;m.diffuse_color=(*map(linear,rgb),1);m.node_tree.nodes['Principled BSDF'].inputs['Base Color'].default_value=m.diffuse_color;m.node_tree.nodes['Principled BSDF'].inputs['Roughness'].default_value=.8;materials[name]=m
+
+FBX export starting... 'C:\\Work\\MySelf\\Guildborne\\assets\\uat01\\region-kit\\Greenwood.fbx'
+export finished in 0.0449 sec.
+INFO Draco is available, use library at C:\Program Files\Blender Foundation\Blender 5.2\5.2\scripts\addons_core\io_scene_gltf2\bf_intern_draco_bridge.dll
+INFO MeshOptimizer is available, use library at C:\Program Files\Blender Foundation\Blender 5.2\5.2\scripts\addons_core\io_scene_gltf2\bf_intern_meshopt_bridge.dll
+01:38:02 | INFO: Starting glTF 2.0 export
+01:38:02 | INFO: Extracting primitive: Cube.007
+01:38:02 | INFO: Primitives created: 1
+01:38:02 | INFO: Extracting primitive: Cube.002
+01:38:02 | INFO: Primitives created: 1
+01:38:02 | INFO: Extracting primitive: Cube.009
+01:38:02 | INFO: Primitives created: 1
+01:38:02 | INFO: Extracting primitive: Cube.010
+01:38:02 | INFO: Primitives created: 1
+01:38:02 | INFO: Extracting primitive: Cube.011
+01:38:02 | INFO: Primitives created: 1
+01:38:02 | INFO: Extracting primitive: Cube.013
+01:38:02 | INFO: Primitives created: 1
+01:38:02 | INFO: Extracting primitive: Cube.014
+01:38:02 | INFO: Primitives created: 1
+01:38:02 | INFO: Extracting primitive: Cube.015
+01:38:02 | INFO: Primitives created: 1
+01:38:02 | INFO: Extracting primitive: Cube.017
+01:38:02 | INFO: Primitives created: 1
+01:38:02 | INFO: Extracting primitive: Cube.018
+01:38:02 | INFO: Primitives created: 1
+01:38:02 | INFO: Extracting primitive: Cube.019
+01:38:02 | INFO: Primitives created: 1
+01:38:02 | INFO: Extracting primitive: Cube.021
+01:38:02 | INFO: Primitives created: 1
+01:38:02 | INFO: Extracting primitive: Cube.022
+01:38:02 | INFO: Primitives created: 1
+01:38:02 | INFO: Extracting primitive: Cube.023
+01:38:02 | INFO: Primitives created: 1
+01:38:02 | INFO: Extracting primitive: Cube.025
+01:38:02 | INFO: Primitives created: 1
+01:38:02 | INFO: Extracting primitive: Cube.026
+01:38:02 | INFO: Primitives created: 1
+01:38:02 | INFO: Extracting primitive: Cube.027
+01:38:02 | INFO: Primitives created: 1
+01:38:02 | INFO: Extracting primitive: Cube.029
+01:38:02 | INFO: Primitives created: 1
+01:38:02 | INFO: Extracting primitive: Cube.030
+01:38:02 | INFO: Primitives created: 1
+01:38:02 | INFO: Extracting primitive: Cube.031
+01:38:02 | INFO: Primitives created: 1
+01:38:02 | INFO: Extracting primitive: Cube.033
+01:38:02 | INFO: Primitives created: 1
+01:38:02 | INFO: Extracting primitive: Cube.034
+01:38:02 | INFO: Primitives created: 1
+01:38:02 | INFO: Extracting primitive: Cube.035
+01:38:02 | INFO: Primitives created: 1
+01:38:02 | INFO: Extracting primitive: Cube.037
+01:38:02 | INFO: Primitives created: 1
+01:38:02 | INFO: Extracting primitive: Cube.038
+01:38:02 | INFO: Primitives created: 1
+01:38:02 | INFO: Extracting primitive: Cube.039
+01:38:02 | INFO: Primitives created: 1
+01:38:02 | INFO: Extracting primitive: Cube.041
+01:38:02 | INFO: Primitives created: 1
+01:38:02 | INFO: Extracting primitive: Cube.042
+01:38:02 | INFO: Primitives created: 1
+01:38:02 | INFO: Extracting primitive: Cube.043
+01:38:02 | INFO: Primitives created: 1
+01:38:02 | INFO: Extracting primitive: Cube.045
+01:38:02 | INFO: Primitives created: 1
+01:38:02 | INFO: Extracting primitive: Cube.046
+01:38:02 | INFO: Primitives created: 1
+01:38:02 | INFO: Extracting primitive: Cube.047
+01:38:02 | INFO: Primitives created: 1
+01:38:02 | INFO: Extracting primitive: Cube.049
+01:38:02 | INFO: Primitives created: 1
+01:38:02 | INFO: Extracting primitive: Cube.050
+01:38:02 | INFO: Primitives created: 1
+01:38:02 | INFO: Extracting primitive: Cube.051
+01:38:02 | INFO: Primitives created: 1
+01:38:02 | INFO: Extracting primitive: Cube.053
+01:38:02 | INFO: Primitives created: 1
+01:38:02 | INFO: Extracting primitive: Cube.054
+01:38:02 | INFO: Primitives created: 1
+01:38:02 | INFO: Extracting primitive: Cube.055
+01:38:02 | INFO: Primitives created: 1
+01:38:02 | INFO: Extracting primitive: Cube.005
+01:38:02 | INFO: Primitives created: 1
+01:38:02 | INFO: Extracting primitive: Cube.006
+01:38:02 | INFO: Primitives created: 1
+01:38:02 | INFO: Extracting primitive: Cube
+01:38:02 | INFO: Primitives created: 1
+01:38:02 | INFO: Extracting primitive: Cube.001
+01:38:02 | INFO: Primitives created: 1
+01:38:02 | INFO: Extracting primitive: RootAscent
+01:38:02 | INFO: Primitives created: 1
+01:38:02 | INFO: Extracting primitive: Cube.003
+01:38:02 | INFO: Primitives created: 1
+01:38:02 | INFO: Extracting primitive: Cube.004
+01:38:02 | INFO: Primitives created: 1
+01:38:02 | INFO: Extracting primitive: Cube.008
+01:38:02 | INFO: Primitives created: 1
+01:38:02 | INFO: Extracting primitive: Cube.012
+01:38:02 | INFO: Primitives created: 1
+01:38:02 | INFO: Extracting primitive: Cube.016
+01:38:02 | INFO: Primitives created: 1
+01:38:02 | INFO: Extracting primitive: Cube.020
+01:38:02 | INFO: Primitives created: 1
+01:38:02 | INFO: Extracting primitive: Cube.024
+01:38:02 | INFO: Primitives created: 1
+01:38:02 | INFO: Extracting primitive: Cube.028
+01:38:02 | INFO: Primitives created: 1
+01:38:02 | INFO: Extracting primitive: Cube.032
+01:38:02 | INFO: Primitives created: 1
+01:38:02 | INFO: Extracting primitive: Cube.036
+01:38:02 | INFO: Primitives created: 1
+01:38:02 | INFO: Extracting primitive: Cube.040
+01:38:02 | INFO: Primitives created: 1
+01:38:02 | INFO: Extracting primitive: Cube.044
+01:38:02 | INFO: Primitives created: 1
+01:38:02 | INFO: Extracting primitive: Cube.048
+01:38:02 | INFO: Primitives created: 1
+01:38:02 | INFO: Extracting primitive: Cube.052
+01:38:02 | INFO: Primitives created: 1
+01:38:02 | INFO: Finished glTF 2.0 export in 0.1194303035736084 s
+C:\Work\MySelf\Guildborne\tools\blender_region_maps.py:29: DeprecationWarning: 'World.use_nodes' is expected to be removed in Blender 6.0
+  scene.world=bpy.data.worlds.new('RegionStudio');scene.world.use_nodes=True;scene.world.node_tree.nodes['Background'].inputs[0].default_value=(.12,.18,.24,1);scene.world.node_tree.nodes['Background'].inputs[1].default_value=.8
+00:12.062  render           | Saved: 'C:\Work\MySelf\Guildborne\assets\uat01\region-kit\Greenwood.png'
+C:\Work\MySelf\Guildborne\tools\blender_region_maps.py:10: DeprecationWarning: 'Material.use_nodes' is expected to be removed in Blender 6.0
+  m=bpy.data.materials.new(name);m.use_nodes=True;m.diffuse_color=(*map(linear,rgb),1);m.node_tree.nodes['Principled BSDF'].inputs['Base Color'].default_value=m.diffuse_color;m.node_tree.nodes['Principled BSDF'].inputs['Roughness'].default_value=.8;materials[name]=m
+
+Info: Saved as "Greenwood.blend"
+
+FBX export starting... 'C:\\Work\\MySelf\\Guildborne\\assets\\uat01\\region-kit\\Ironveil.fbx'
+export finished in 0.0340 sec.
+01:38:11 | INFO: Starting glTF 2.0 export
+01:38:11 | INFO: Extracting primitive: Cube.005
+01:38:11 | INFO: Primitives created: 1
+01:38:11 | INFO: Extracting primitive: Cube.006
+01:38:11 | INFO: Primitives created: 1
+01:38:11 | INFO: Extracting primitive: Cube.007
+01:38:11 | INFO: Primitives created: 1
+01:38:11 | INFO: Extracting primitive: Cube.009
+01:38:11 | INFO: Primitives created: 1
+01:38:11 | INFO: Extracting primitive: Cube.010
+01:38:11 | INFO: Primitives created: 1
+01:38:11 | INFO: Extracting primitive: Cube.011
+01:38:11 | INFO: Primitives created: 1
+01:38:11 | INFO: Extracting primitive: Cube.013
+01:38:11 | INFO: Primitives created: 1
+01:38:11 | INFO: Extracting primitive: Cube.014
+01:38:11 | INFO: Primitives created: 1
+01:38:11 | INFO: Extracting primitive: Cube.015
+01:38:11 | INFO: Primitives created: 1
+01:38:11 | INFO: Extracting primitive: Cube.017
+01:38:11 | INFO: Primitives created: 1
+01:38:11 | INFO: Extracting primitive: Cube.018
+01:38:11 | INFO: Primitives created: 1
+01:38:11 | INFO: Extracting primitive: Cube.019
+01:38:11 | INFO: Primitives created: 1
+01:38:11 | INFO: Extracting primitive: Cube.021
+01:38:11 | INFO: Primitives created: 1
+01:38:11 | INFO: Extracting primitive: Cube.022
+01:38:11 | INFO: Primitives created: 1
+01:38:11 | INFO: Extracting primitive: Cube.023
+01:38:11 | INFO: Primitives created: 1
+01:38:11 | INFO: Extracting primitive: Cube.025
+01:38:11 | INFO: Primitives created: 1
+01:38:11 | INFO: Extracting primitive: Cube.026
+01:38:11 | INFO: Primitives created: 1
+01:38:11 | INFO: Extracting primitive: Cube.027
+01:38:11 | INFO: Primitives created: 1
+01:38:11 | INFO: Extracting primitive: Cube.029
+01:38:11 | INFO: Primitives created: 1
+01:38:11 | INFO: Extracting primitive: Cube.030
+01:38:11 | INFO: Primitives created: 1
+01:38:11 | INFO: Extracting primitive: Cube.031
+01:38:11 | INFO: Primitives created: 1
+01:38:11 | INFO: Extracting primitive: Cube.033
+01:38:11 | INFO: Primitives created: 1
+01:38:11 | INFO: Extracting primitive: Cube.034
+01:38:11 | INFO: Primitives created: 1
+01:38:11 | INFO: Extracting primitive: Cube.035
+01:38:11 | INFO: Primitives created: 1
+01:38:11 | INFO: Extracting primitive: Cube.004
+01:38:11 | INFO: Primitives created: 1
+01:38:11 | INFO: Extracting primitive: Cube.008
+01:38:11 | INFO: Primitives created: 1
+01:38:11 | INFO: Extracting primitive: Cube.012
+01:38:11 | INFO: Primitives created: 1
+01:38:11 | INFO: Extracting primitive: Cube.016
+01:38:11 | INFO: Primitives created: 1
+01:38:11 | INFO: Extracting primitive: Cube.020
+01:38:11 | INFO: Primitives created: 1
+01:38:11 | INFO: Extracting primitive: Cube.024
+01:38:11 | INFO: Primitives created: 1
+01:38:11 | INFO: Extracting primitive: Cube.028
+01:38:11 | INFO: Primitives created: 1
+01:38:11 | INFO: Extracting primitive: Cube.032
+01:38:11 | INFO: Primitives created: 1
+01:38:11 | INFO: Extracting primitive: Cube.039
+01:38:11 | INFO: Primitives created: 1
+01:38:11 | INFO: Extracting primitive: Cube.041
+01:38:11 | INFO: Primitives created: 1
+01:38:11 | INFO: Extracting primitive: Cube.042
+01:38:11 | INFO: Primitives created: 1
+01:38:11 | INFO: Extracting primitive: Cube.038
+01:38:11 | INFO: Primitives created: 1
+01:38:11 | INFO: Extracting primitive: Cube.040
+01:38:11 | INFO: Primitives created: 1
+01:38:11 | INFO: Extracting primitive: Cube
+01:38:11 | INFO: Primitives created: 1
+01:38:11 | INFO: Extracting primitive: Cube.001
+01:38:11 | INFO: Primitives created: 1
+01:38:11 | INFO: Extracting primitive: Cube.002
+01:38:11 | INFO: Primitives created: 1
+01:38:11 | INFO: Extracting primitive: QuarryAscent
+01:38:11 | INFO: Primitives created: 1
+01:38:11 | INFO: Extracting primitive: Cube.036
+01:38:11 | INFO: Primitives created: 1
+01:38:11 | INFO: Extracting primitive: Cube.037
+01:38:11 | INFO: Primitives created: 1
+01:38:11 | INFO: Extracting primitive: SummitAscent
+01:38:11 | INFO: Primitives created: 1
+01:38:11 | INFO: Extracting primitive: Cube.003
+01:38:11 | INFO: Primitives created: 1
+01:38:11 | INFO: Finished glTF 2.0 export in 0.0727088451385498 s
+00:21.781  render           | Saved: 'C:\Work\MySelf\Guildborne\assets\uat01\region-kit\Ironveil.png'
+
+Info: Saved as "Ironveil.blend"
+
+FBX export starting... 'C:\\Work\\MySelf\\Guildborne\\assets\\uat01\\region-kit\\Ashen.fbx'
+export finished in 0.0279 sec.
+01:38:21 | INFO: Starting glTF 2.0 export
+01:38:21 | INFO: Extracting primitive: Cube.003
+01:38:21 | INFO: Primitives created: 1
+01:38:21 | INFO: Extracting primitive: Cube.005
+01:38:21 | INFO: Primitives created: 1
+01:38:21 | INFO: Extracting primitive: Cube.015
+01:38:21 | INFO: Primitives created: 1
+01:38:21 | INFO: Extracting primitive: Cube.032
+01:38:21 | INFO: Primitives created: 1
+01:38:21 | INFO: Extracting primitive: Cube.033
+01:38:21 | INFO: Primitives created: 1
+01:38:21 | INFO: Extracting primitive: Cube.034
+01:38:21 | INFO: Primitives created: 1
+01:38:21 | INFO: Extracting primitive: Cube.035
+01:38:21 | INFO: Primitives created: 1
+01:38:21 | INFO: Extracting primitive: Cube.002
+01:38:21 | INFO: Primitives created: 1
+01:38:21 | INFO: Extracting primitive: Cube.025
+01:38:21 | INFO: Primitives created: 1
+01:38:21 | INFO: Extracting primitive: Cube.027
+01:38:21 | INFO: Primitives created: 1
+01:38:21 | INFO: Extracting primitive: Cube.029
+01:38:21 | INFO: Primitives created: 1
+01:38:21 | INFO: Extracting primitive: Cube.031
+01:38:21 | INFO: Primitives created: 1
+01:38:21 | INFO: Extracting primitive: Cube.007
+01:38:21 | INFO: Primitives created: 1
+01:38:21 | INFO: Extracting primitive: Cube.008
+01:38:21 | INFO: Primitives created: 1
+01:38:21 | INFO: Extracting primitive: Cube.009
+01:38:21 | INFO: Primitives created: 1
+01:38:21 | INFO: Extracting primitive: Cube.011
+01:38:21 | INFO: Primitives created: 1
+01:38:21 | INFO: Extracting primitive: Cube.012
+01:38:21 | INFO: Primitives created: 1
+01:38:21 | INFO: Extracting primitive: Cube.013
+01:38:21 | INFO: Primitives created: 1
+01:38:21 | INFO: Extracting primitive: Cube.017
+01:38:21 | INFO: Primitives created: 1
+01:38:21 | INFO: Extracting primitive: Cube.018
+01:38:21 | INFO: Primitives created: 1
+01:38:21 | INFO: Extracting primitive: Cube.019
+01:38:21 | INFO: Primitives created: 1
+01:38:21 | INFO: Extracting primitive: Cube.021
+01:38:21 | INFO: Primitives created: 1
+01:38:21 | INFO: Extracting primitive: Cube.022
+01:38:21 | INFO: Primitives created: 1
+01:38:21 | INFO: Extracting primitive: Cube.023
+01:38:21 | INFO: Primitives created: 1
+01:38:21 | INFO: Extracting primitive: Cube.006
+01:38:21 | INFO: Primitives created: 1
+01:38:21 | INFO: Extracting primitive: Cube.010
+01:38:21 | INFO: Primitives created: 1
+01:38:21 | INFO: Extracting primitive: Cube.016
+01:38:21 | INFO: Primitives created: 1
+01:38:21 | INFO: Extracting primitive: Cube.020
+01:38:21 | INFO: Primitives created: 1
+01:38:21 | INFO: Extracting primitive: Cube
+01:38:21 | INFO: Primitives created: 1
+01:38:21 | INFO: Extracting primitive: Cube.001
+01:38:21 | INFO: Primitives created: 1
+01:38:21 | INFO: Extracting primitive: SanctumAscent
+01:38:21 | INFO: Primitives created: 1
+01:38:21 | INFO: Extracting primitive: Cube.024
+01:38:21 | INFO: Primitives created: 1
+01:38:21 | INFO: Extracting primitive: Cube.026
+01:38:21 | INFO: Primitives created: 1
+01:38:21 | INFO: Extracting primitive: Cube.028
+01:38:21 | INFO: Primitives created: 1
+01:38:21 | INFO: Extracting primitive: Cube.030
+01:38:21 | INFO: Primitives created: 1
+01:38:21 | INFO: Extracting primitive: Cube.004
+01:38:21 | INFO: Primitives created: 1
+01:38:21 | INFO: Extracting primitive: Cube.014
+01:38:21 | INFO: Primitives created: 1
+01:38:21 | INFO: Extracting primitive: Cube.036
+01:38:21 | INFO: Primitives created: 1
+01:38:21 | INFO: Extracting primitive: WardenAscent
+01:38:21 | INFO: Primitives created: 1
+01:38:21 | INFO: Finished glTF 2.0 export in 0.05754828453063965 s
+00:31.187  render           | Saved: 'C:\Work\MySelf\Guildborne\assets\uat01\region-kit\Ashen.png'
+
+Info: Saved as "Ashen.blend"
+REGION_MAP_EXPORTS 3
+Blender 5.2.1 LTS (hash 9e2066aef7ef built 2026-08-25 02:38:20)
+
+Blender quit

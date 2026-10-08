@@ -1,0 +1,19 @@
+{
+  "date": "2026-10-04",
+  "result": {
+    "content": [
+      {
+        "type": "text",
+        "text": "{\"views\":36,\"capturedActions\":12,\"textBoundsChecks\":216,\"languages\":{\"1\":\"en\",\"2\":\"th\"},\"runtimeBinding\":false,\"widths\":{\"1\":240,\"2\":640},\"profileWrites\":0}"
+      }
+    ],
+    "isError": false
+  },
+  "assertions": [
+    "Hero choices height 52px at640width,172px at240width",
+    "All five buttons >=88px wide and52px tall, no pair overlaps",
+    "Class and founder confirmations remain two-step; changing hero clears confirmation",
+    "Busy/capacity actions disabled; no profile/network writes"
+  ],
+  "limitations": "Synthetic GUI fixture; physical touch/controller and actual new layout founding acceptance pending"
+}

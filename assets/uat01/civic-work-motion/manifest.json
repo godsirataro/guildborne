@@ -1,0 +1,66 @@
+{
+  "clips": [
+    {
+      "id": "marshal_elian",
+      "file": "marshal_elian_Work.glb",
+      "parts": 35,
+      "joints": 16,
+      "seconds": 8,
+      "fps": 30,
+      "rootMotion": false,
+      "robloxAnimationId": null
+    },
+    {
+      "id": "arborist_vaela",
+      "file": "arborist_vaela_Work.glb",
+      "parts": 36,
+      "joints": 16,
+      "seconds": 8,
+      "fps": 30,
+      "rootMotion": false,
+      "robloxAnimationId": null
+    },
+    {
+      "id": "smith_borin",
+      "file": "smith_borin_Work.glb",
+      "parts": 32,
+      "joints": 16,
+      "seconds": 8,
+      "fps": 30,
+      "rootMotion": false,
+      "robloxAnimationId": null
+    },
+    {
+      "id": "cartographer_nyra",
+      "file": "cartographer_nyra_Work.glb",
+      "parts": 39,
+      "joints": 16,
+      "seconds": 8,
+      "fps": 30,
+      "rootMotion": false,
+      "robloxAnimationId": null
+    },
+    {
+      "id": "harbormaster_sela",
+      "file": "harbormaster_sela_Work.glb",
+      "parts": 41,
+      "joints": 16,
+      "seconds": 8,
+      "fps": 30,
+      "rootMotion": false,
+      "robloxAnimationId": null
+    },
+    {
+      "id": "steward_roka",
+      "file": "steward_roka_Work.glb",
+      "parts": 43,
+      "joints": 16,
+      "seconds": 8,
+      "fps": 30,
+      "rootMotion": false,
+      "robloxAnimationId": null
+    }
+  ],
+  "source": "src/shared/Presentation/CivicWorkMotion.luau",
+  "status": "LOCAL_OBJECT_HIERARCHY_REVIEW_CLIPS"
+}

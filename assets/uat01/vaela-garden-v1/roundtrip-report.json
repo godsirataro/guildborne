@@ -1,0 +1,49 @@
+{
+  "status": "PASS",
+  "bones": 16,
+  "meshObjects": 82,
+  "triangles": 9728,
+  "pourChecks": [
+    {
+      "frame": 60,
+      "spoutStreamError": 8.429369702178807e-07,
+      "soilContactError": 0.0
+    },
+    {
+      "frame": 70,
+      "spoutStreamError": 7.10896279923711e-07,
+      "soilContactError": 0.0
+    },
+    {
+      "frame": 80,
+      "spoutStreamError": 7.638934622988878e-07,
+      "soilContactError": 0.0
+    },
+    {
+      "frame": 90,
+      "spoutStreamError": 8.450416850303307e-07,
+      "soilContactError": 0.0
+    },
+    {
+      "frame": 100,
+      "spoutStreamError": 7.638934622988878e-07,
+      "soilContactError": 0.0
+    },
+    {
+      "frame": 110,
+      "spoutStreamError": 7.10896279923711e-07,
+      "soilContactError": 0.0
+    },
+    {
+      "frame": 120,
+      "spoutStreamError": 8.429369702178807e-07,
+      "soilContactError": 0.0
+    }
+  ],
+  "inactiveWaterChecks": 4,
+  "stationaryFootRootSupportHand": true,
+  "symmetricArmLengths": true,
+  "loopSeam": true,
+  "platformImported": false,
+  "format": "GLB"
+}

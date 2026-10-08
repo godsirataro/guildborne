@@ -1,0 +1,27 @@
+{
+  "seconds": 6,
+  "sampleRate": 48000,
+  "channels": 1,
+  "bits": 16,
+  "peak": 0.11999999999999998,
+  "events": [
+    {
+      "from": 0,
+      "to": 1.5,
+      "event": "ledger writing"
+    },
+    {
+      "from": 2,
+      "to": 3.5,
+      "event": "ledger writing"
+    },
+    {
+      "from": 4,
+      "to": 5.5,
+      "event": "ledger writing"
+    }
+  ],
+  "source": "Original deterministic synthesis",
+  "status": "TECHNICAL_TIMING_PASS_LISTENING_IMPORT_PENDING",
+  "robloxSoundId": null
+}

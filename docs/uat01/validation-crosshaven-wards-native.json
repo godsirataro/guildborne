@@ -1,0 +1,27 @@
+{
+  "wardVisualChecks": 12,
+  "campWards": {
+    "promptsPerLesson": 6,
+    "completedLessons": 3,
+    "distanceRejections": 9,
+    "ownerRejections": 9,
+    "cues": 9,
+    "actualPlayerJourney": false,
+    "roles": 3,
+    "languageStates": 2,
+    "staleCleanup": true,
+    "profileWrites": 0
+  },
+  "existingLessons": {
+    "promptsPerLesson": 6,
+    "completedLessons": 3,
+    "distanceRejections": 9,
+    "ownerRejections": 9,
+    "cues": 9,
+    "actualPlayerJourney": false,
+    "roles": 3,
+    "languageStates": 2,
+    "staleCleanup": true,
+    "profileWrites": 0
+  }
+}

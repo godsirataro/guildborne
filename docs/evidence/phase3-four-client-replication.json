@@ -1,0 +1,38 @@
+[
+  {
+    "content": [
+      {
+        "type": "text",
+        "text": "{\"map\":true,\"heroes\":{\"-3\":5,\"-2\":5,\"-1\":5,\"-4\":5},\"players\":4,\"progressionSame\":true,\"language\":\"en\",\"name\":\"Player1\"}"
+      }
+    ],
+    "isError": false
+  },
+  {
+    "content": [
+      {
+        "type": "text",
+        "text": "{\"map\":false,\"heroes\":{\"-3\":5,\"-2\":5,\"-1\":5,\"-4\":5},\"players\":4,\"progressionSame\":true,\"language\":\"en\",\"name\":\"Player4\"}"
+      }
+    ],
+    "isError": false
+  },
+  {
+    "content": [
+      {
+        "type": "text",
+        "text": "{\"map\":false,\"heroes\":{\"-3\":5,\"-2\":5,\"-1\":5,\"-4\":5},\"players\":4,\"progressionSame\":true,\"language\":\"en\",\"name\":\"Player3\"}"
+      }
+    ],
+    "isError": false
+  },
+  {
+    "content": [
+      {
+        "type": "text",
+        "text": "{\"map\":false,\"heroes\":{\"-3\":5,\"-2\":5,\"-1\":5,\"-4\":5},\"players\":4,\"progressionSame\":true,\"language\":\"en\",\"name\":\"Player2\"}"
+      }
+    ],
+    "isError": false
+  }
+]

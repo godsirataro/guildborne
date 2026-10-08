@@ -1,0 +1,9 @@
+{
+  "content": [
+    {
+      "type": "text",
+      "text": "{\"1\":{\"actors\":{\"1\":{\"patterns\":[],\"id\":\"greenwood_scout\",\"phases\":1,\"heals\":0,\"hits\":8},\"4\":{\"patterns\":{\"Root Burst\":true,\"Antler Cleave\":true},\"id\":\"forest_captain\",\"phases\":2,\"heals\":0,\"hits\":9},\"3\":{\"patterns\":{\"Boar Rush\":true},\"id\":\"greenwood_boar\",\"phases\":1,\"heals\":0,\"hits\":4},\"2\":{\"patterns\":[],\"id\":\"greenwood_archer\",\"phases\":1,\"heals\":0,\"hits\":7}},\"profileWrites\":0,\"rewardTickets\":4,\"region\":\"Greenwood\"},\"3\":{\"actors\":{\"1\":{\"patterns\":[],\"id\":\"arcane_sentinel\",\"phases\":1,\"heals\":0,\"hits\":10},\"4\":{\"patterns\":{\"Rune Lance\":true,\"Hollow Nova\":true},\"id\":\"arcane_warden\",\"phases\":2,\"heals\":0,\"hits\":8},\"3\":{\"patterns\":{\"Rune Pounce\":true},\"id\":\"rune_hound\",\"phases\":1,\"heals\":0,\"hits\":5},\"2\":{\"patterns\":{\"Rune Flare\":true},\"id\":\"rune_caster\",\"phases\":1,\"heals\":0,\"hits\":5}},\"profileWrites\":0,\"rewardTickets\":4,\"region\":\"Ashen\"},\"2\":{\"actors\":{\"1\":{\"patterns\":[],\"id\":\"quarry_raider\",\"phases\":1,\"heals\":0,\"hits\":9},\"4\":{\"patterns\":{\"Hammer Fall\":true,\"Fault Line\":true},\"id\":\"quarry_guardian\",\"phases\":2,\"heals\":0,\"hits\":8},\"3\":{\"patterns\":[],\"id\":\"crystal_shaman\",\"phases\":1,\"heals\":3,\"hits\":1},\"2\":{\"patterns\":[],\"id\":\"stone_guard\",\"phases\":1,\"heals\":0,\"hits\":6}},\"profileWrites\":0,\"rewardTickets\":4,\"region\":\"Ironveil\"}}"
+    }
+  ],
+  "isError": false
+}

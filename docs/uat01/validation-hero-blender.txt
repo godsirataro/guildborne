@@ -1,0 +1,468 @@
+C:\Work\MySelf\Guildborne\tools\blender_enemy_kit.py:15: DeprecationWarning: 'World.use_nodes' is expected to be removed in Blender 6.0
+  scene.world=bpy.data.worlds.new('EnemyStudio');scene.world.use_nodes=True;scene.world.node_tree.nodes['Background'].inputs[0].default_value=(.5,.5,.5,1);scene.world.node_tree.nodes['Background'].inputs[1].default_value=.8
+C:\Work\MySelf\Guildborne\tools\blender_enemy_kit.py:25: DeprecationWarning: 'Material.use_nodes' is expected to be removed in Blender 6.0
+  m=bpy.data.materials.new(name);m.use_nodes=True;m.diffuse_color=(*map(linear,rgb),1);shader=m.node_tree.nodes['Principled BSDF'];shader.inputs['Base Color'].default_value=m.diffuse_color;shader.inputs['Roughness'].default_value=.7;materials[name]=m
+
+FBX export starting... 'C:\\Work\\MySelf\\Guildborne\\assets\\uat01\\hero-kit\\knight_01_Rest.fbx'
+(bpy.data.armatures['Armature'], 'POSE')
+export finished in 0.0169 sec.
+INFO Draco is available, use library at C:\Program Files\Blender Foundation\Blender 5.2\5.2\scripts\addons_core\io_scene_gltf2\bf_intern_draco_bridge.dll
+INFO MeshOptimizer is available, use library at C:\Program Files\Blender Foundation\Blender 5.2\5.2\scripts\addons_core\io_scene_gltf2\bf_intern_meshopt_bridge.dll
+01:46:01 | INFO: Starting glTF 2.0 export
+01:46:01 | INFO: Extracting primitive: Cube
+01:46:01 | INFO: Primitives created: 8
+01:46:01 | INFO: Finished glTF 2.0 export in 0.08066964149475098 s
+00:04.797  render           | Saved: 'C:\Work\MySelf\Guildborne\assets\uat01\hero-kit\knight_01.png'
+C:\Work\MySelf\Guildborne\tools\blender_enemy_kit.py:15: DeprecationWarning: 'World.use_nodes' is expected to be removed in Blender 6.0
+  scene.world=bpy.data.worlds.new('EnemyStudio');scene.world.use_nodes=True;scene.world.node_tree.nodes['Background'].inputs[0].default_value=(.5,.5,.5,1);scene.world.node_tree.nodes['Background'].inputs[1].default_value=.8
+C:\Work\MySelf\Guildborne\tools\blender_enemy_kit.py:25: DeprecationWarning: 'Material.use_nodes' is expected to be removed in Blender 6.0
+  m=bpy.data.materials.new(name);m.use_nodes=True;m.diffuse_color=(*map(linear,rgb),1);shader=m.node_tree.nodes['Principled BSDF'];shader.inputs['Base Color'].default_value=m.diffuse_color;shader.inputs['Roughness'].default_value=.7;materials[name]=m
+
+
+FBX export starting... 'C:\\Work\\MySelf\\Guildborne\\assets\\uat01\\hero-kit\\knight_01_Idle.fbx'
+(bpy.data.armatures['Armature'], 'POSE')
+export finished in 0.0694 sec.
+
+FBX export starting... 'C:\\Work\\MySelf\\Guildborne\\assets\\uat01\\hero-kit\\knight_01_Walk.fbx'
+(bpy.data.armatures['Armature'], 'POSE')
+export finished in 0.0529 sec.
+
+FBX export starting... 'C:\\Work\\MySelf\\Guildborne\\assets\\uat01\\hero-kit\\knight_01_Attack.fbx'
+(bpy.data.armatures['Armature'], 'POSE')
+export finished in 0.0548 sec.
+
+FBX export starting... 'C:\\Work\\MySelf\\Guildborne\\assets\\uat01\\hero-kit\\knight_01_Hit.fbx'
+(bpy.data.armatures['Armature'], 'POSE')
+export finished in 0.0404 sec.
+Info: Saved as "knight_01.blend"
+
+FBX export starting... 'C:\\Work\\MySelf\\Guildborne\\assets\\uat01\\hero-kit\\knight_02_Rest.fbx'
+(bpy.data.armatures['Armature'], 'POSE')
+export finished in 0.0115 sec.
+01:46:03 | INFO: Starting glTF 2.0 export
+01:46:03 | INFO: Extracting primitive: Cube
+01:46:03 | INFO: Primitives created: 8
+01:46:03 | INFO: Finished glTF 2.0 export in 0.020786523818969727 s
+00:06.437  render           | Saved: 'C:\Work\MySelf\Guildborne\assets\uat01\hero-kit\knight_02.png'
+
+
+FBX export starting... 'C:\\Work\\MySelf\\Guildborne\\assets\\uat01\\hero-kit\\knight_02_Idle.fbx'
+(bpy.data.armatures['Armature'], 'POSE')
+export finished in 0.0611 sec.
+
+FBX export starting... 'C:\\Work\\MySelf\\Guildborne\\assets\\uat01\\hero-kit\\knight_02_Walk.fbx'
+(bpy.data.armatures['Armature'], 'POSE')
+export finished in 0.0517 sec.
+
+FBX export starting... 'C:\\Work\\MySelf\\Guildborne\\assets\\uat01\\hero-kit\\knight_02_Attack.fbx'
+(bpy.data.armatures['Armature'], 'POSE')
+export finished in 0.0514 sec.
+
+FBX export starting... 'C:\\Work\\MySelf\\Guildborne\\assets\\uat01\\hero-kit\\knight_02_Hit.fbx'
+(bpy.data.armatures['Armature'], 'POSE')
+export finished in 0.0345 sec.
+Info: Saved as "knight_02.blend"
+
+FBX export starting... 'C:\\Work\\MySelf\\Guildborne\\assets\\uat01\\hero-kit\\knight_03_Rest.fbx'
+(bpy.data.armatures['Armature'], 'POSE')
+export finished in 0.0118 sec.
+01:46:05 | INFO: Starting glTF 2.0 export
+01:46:05 | INFO: Extracting primitive: Cube
+01:46:05 | INFO: Primitives created: 8
+01:46:05 | INFO: Finished glTF 2.0 export in 0.020561695098876953 s
+00:08.094  render           | Saved: 'C:\Work\MySelf\Guildborne\assets\uat01\hero-kit\knight_03.png'
+
+
+FBX export starting... 'C:\\Work\\MySelf\\Guildborne\\assets\\uat01\\hero-kit\\knight_03_Idle.fbx'
+(bpy.data.armatures['Armature'], 'POSE')
+export finished in 0.0631 sec.
+
+FBX export starting... 'C:\\Work\\MySelf\\Guildborne\\assets\\uat01\\hero-kit\\knight_03_Walk.fbx'
+(bpy.data.armatures['Armature'], 'POSE')
+export finished in 0.0449 sec.
+
+FBX export starting... 'C:\\Work\\MySelf\\Guildborne\\assets\\uat01\\hero-kit\\knight_03_Attack.fbx'
+(bpy.data.armatures['Armature'], 'POSE')
+export finished in 0.0475 sec.
+
+FBX export starting... 'C:\\Work\\MySelf\\Guildborne\\assets\\uat01\\hero-kit\\knight_03_Hit.fbx'
+(bpy.data.armatures['Armature'], 'POSE')
+export finished in 0.0584 sec.
+Info: Saved as "knight_03.blend"
+
+FBX export starting... 'C:\\Work\\MySelf\\Guildborne\\assets\\uat01\\hero-kit\\warrior_01_Rest.fbx'
+(bpy.data.armatures['Armature'], 'POSE')
+export finished in 0.0112 sec.
+01:46:06 | INFO: Starting glTF 2.0 export
+01:46:06 | INFO: Extracting primitive: Cube
+01:46:06 | INFO: Primitives created: 7
+01:46:07 | INFO: Finished glTF 2.0 export in 0.02003645896911621 s
+00:09.703  render           | Saved: 'C:\Work\MySelf\Guildborne\assets\uat01\hero-kit\warrior_01.png'
+
+
+FBX export starting... 'C:\\Work\\MySelf\\Guildborne\\assets\\uat01\\hero-kit\\warrior_01_Idle.fbx'
+(bpy.data.armatures['Armature'], 'POSE')
+export finished in 0.0648 sec.
+
+FBX export starting... 'C:\\Work\\MySelf\\Guildborne\\assets\\uat01\\hero-kit\\warrior_01_Walk.fbx'
+(bpy.data.armatures['Armature'], 'POSE')
+export finished in 0.0442 sec.
+
+FBX export starting... 'C:\\Work\\MySelf\\Guildborne\\assets\\uat01\\hero-kit\\warrior_01_Attack.fbx'
+(bpy.data.armatures['Armature'], 'POSE')
+export finished in 0.0491 sec.
+
+FBX export starting... 'C:\\Work\\MySelf\\Guildborne\\assets\\uat01\\hero-kit\\warrior_01_Hit.fbx'
+(bpy.data.armatures['Armature'], 'POSE')
+export finished in 0.0323 sec.
+Info: Saved as "warrior_01.blend"
+
+FBX export starting... 'C:\\Work\\MySelf\\Guildborne\\assets\\uat01\\hero-kit\\warrior_02_Rest.fbx'
+(bpy.data.armatures['Armature'], 'POSE')
+export finished in 0.0133 sec.
+01:46:08 | INFO: Starting glTF 2.0 export
+01:46:08 | INFO: Extracting primitive: Cube
+01:46:08 | INFO: Primitives created: 8
+01:46:08 | INFO: Finished glTF 2.0 export in 0.025127649307250977 s
+00:11.391  render           | Saved: 'C:\Work\MySelf\Guildborne\assets\uat01\hero-kit\warrior_02.png'
+
+
+FBX export starting... 'C:\\Work\\MySelf\\Guildborne\\assets\\uat01\\hero-kit\\warrior_02_Idle.fbx'
+(bpy.data.armatures['Armature'], 'POSE')
+export finished in 0.0727 sec.
+
+FBX export starting... 'C:\\Work\\MySelf\\Guildborne\\assets\\uat01\\hero-kit\\warrior_02_Walk.fbx'
+(bpy.data.armatures['Armature'], 'POSE')
+export finished in 0.0464 sec.
+
+FBX export starting... 'C:\\Work\\MySelf\\Guildborne\\assets\\uat01\\hero-kit\\warrior_02_Attack.fbx'
+(bpy.data.armatures['Armature'], 'POSE')
+export finished in 0.0521 sec.
+
+FBX export starting... 'C:\\Work\\MySelf\\Guildborne\\assets\\uat01\\hero-kit\\warrior_02_Hit.fbx'
+(bpy.data.armatures['Armature'], 'POSE')
+export finished in 0.0361 sec.
+Info: Saved as "warrior_02.blend"
+
+FBX export starting... 'C:\\Work\\MySelf\\Guildborne\\assets\\uat01\\hero-kit\\warrior_03_Rest.fbx'
+(bpy.data.armatures['Armature'], 'POSE')
+export finished in 0.0117 sec.
+01:46:10 | INFO: Starting glTF 2.0 export
+01:46:10 | INFO: Extracting primitive: Cube
+01:46:10 | INFO: Primitives created: 8
+01:46:10 | INFO: Finished glTF 2.0 export in 0.02403092384338379 s
+00:13.047  render           | Saved: 'C:\Work\MySelf\Guildborne\assets\uat01\hero-kit\warrior_03.png'
+
+
+FBX export starting... 'C:\\Work\\MySelf\\Guildborne\\assets\\uat01\\hero-kit\\warrior_03_Idle.fbx'
+(bpy.data.armatures['Armature'], 'POSE')
+export finished in 0.0725 sec.
+
+FBX export starting... 'C:\\Work\\MySelf\\Guildborne\\assets\\uat01\\hero-kit\\warrior_03_Walk.fbx'
+(bpy.data.armatures['Armature'], 'POSE')
+export finished in 0.0452 sec.
+
+FBX export starting... 'C:\\Work\\MySelf\\Guildborne\\assets\\uat01\\hero-kit\\warrior_03_Attack.fbx'
+(bpy.data.armatures['Armature'], 'POSE')
+export finished in 0.0578 sec.
+
+FBX export starting... 'C:\\Work\\MySelf\\Guildborne\\assets\\uat01\\hero-kit\\warrior_03_Hit.fbx'
+(bpy.data.armatures['Armature'], 'POSE')
+export finished in 0.0373 sec.
+Info: Saved as "warrior_03.blend"
+
+FBX export starting... 'C:\\Work\\MySelf\\Guildborne\\assets\\uat01\\hero-kit\\archer_01_Rest.fbx'
+(bpy.data.armatures['Armature'], 'POSE')
+export finished in 0.0125 sec.
+01:46:11 | INFO: Starting glTF 2.0 export
+01:46:11 | INFO: Extracting primitive: Cube
+01:46:11 | INFO: Primitives created: 7
+01:46:11 | INFO: Finished glTF 2.0 export in 0.02151203155517578 s
+00:14.687  render           | Saved: 'C:\Work\MySelf\Guildborne\assets\uat01\hero-kit\archer_01.png'
+
+
+FBX export starting... 'C:\\Work\\MySelf\\Guildborne\\assets\\uat01\\hero-kit\\archer_01_Idle.fbx'
+(bpy.data.armatures['Armature'], 'POSE')
+export finished in 0.0689 sec.
+
+FBX export starting... 'C:\\Work\\MySelf\\Guildborne\\assets\\uat01\\hero-kit\\archer_01_Walk.fbx'
+(bpy.data.armatures['Armature'], 'POSE')
+export finished in 0.0453 sec.
+
+FBX export starting... 'C:\\Work\\MySelf\\Guildborne\\assets\\uat01\\hero-kit\\archer_01_Attack.fbx'
+(bpy.data.armatures['Armature'], 'POSE')
+export finished in 0.0511 sec.
+
+FBX export starting... 'C:\\Work\\MySelf\\Guildborne\\assets\\uat01\\hero-kit\\archer_01_Hit.fbx'
+(bpy.data.armatures['Armature'], 'POSE')
+export finished in 0.0446 sec.
+Info: Saved as "archer_01.blend"
+
+FBX export starting... 'C:\\Work\\MySelf\\Guildborne\\assets\\uat01\\hero-kit\\archer_02_Rest.fbx'
+(bpy.data.armatures['Armature'], 'POSE')
+export finished in 0.0115 sec.
+01:46:13 | INFO: Starting glTF 2.0 export
+01:46:13 | INFO: Extracting primitive: Cube
+01:46:13 | INFO: Primitives created: 7
+01:46:13 | INFO: Finished glTF 2.0 export in 0.020141124725341797 s
+00:16.312  render           | Saved: 'C:\Work\MySelf\Guildborne\assets\uat01\hero-kit\archer_02.png'
+
+
+FBX export starting... 'C:\\Work\\MySelf\\Guildborne\\assets\\uat01\\hero-kit\\archer_02_Idle.fbx'
+(bpy.data.armatures['Armature'], 'POSE')
+export finished in 0.0648 sec.
+
+FBX export starting... 'C:\\Work\\MySelf\\Guildborne\\assets\\uat01\\hero-kit\\archer_02_Walk.fbx'
+(bpy.data.armatures['Armature'], 'POSE')
+export finished in 0.0462 sec.
+
+FBX export starting... 'C:\\Work\\MySelf\\Guildborne\\assets\\uat01\\hero-kit\\archer_02_Attack.fbx'
+(bpy.data.armatures['Armature'], 'POSE')
+export finished in 0.0517 sec.
+
+FBX export starting... 'C:\\Work\\MySelf\\Guildborne\\assets\\uat01\\hero-kit\\archer_02_Hit.fbx'
+(bpy.data.armatures['Armature'], 'POSE')
+export finished in 0.0328 sec.
+Info: Saved as "archer_02.blend"
+
+FBX export starting... 'C:\\Work\\MySelf\\Guildborne\\assets\\uat01\\hero-kit\\archer_03_Rest.fbx'
+(bpy.data.armatures['Armature'], 'POSE')
+export finished in 0.0122 sec.
+01:46:15 | INFO: Starting glTF 2.0 export
+01:46:15 | INFO: Extracting primitive: Cube
+01:46:15 | INFO: Primitives created: 7
+01:46:15 | INFO: Finished glTF 2.0 export in 0.024248123168945312 s
+00:17.953  render           | Saved: 'C:\Work\MySelf\Guildborne\assets\uat01\hero-kit\archer_03.png'
+
+
+FBX export starting... 'C:\\Work\\MySelf\\Guildborne\\assets\\uat01\\hero-kit\\archer_03_Idle.fbx'
+(bpy.data.armatures['Armature'], 'POSE')
+export finished in 0.0658 sec.
+
+FBX export starting... 'C:\\Work\\MySelf\\Guildborne\\assets\\uat01\\hero-kit\\archer_03_Walk.fbx'
+(bpy.data.armatures['Armature'], 'POSE')
+export finished in 0.0818 sec.
+
+FBX export starting... 'C:\\Work\\MySelf\\Guildborne\\assets\\uat01\\hero-kit\\archer_03_Attack.fbx'
+(bpy.data.armatures['Armature'], 'POSE')
+export finished in 0.0533 sec.
+
+FBX export starting... 'C:\\Work\\MySelf\\Guildborne\\assets\\uat01\\hero-kit\\archer_03_Hit.fbx'
+(bpy.data.armatures['Armature'], 'POSE')
+export finished in 0.0385 sec.
+Info: Saved as "archer_03.blend"
+
+FBX export starting... 'C:\\Work\\MySelf\\Guildborne\\assets\\uat01\\hero-kit\\mage_01_Rest.fbx'
+(bpy.data.armatures['Armature'], 'POSE')
+export finished in 0.0126 sec.
+01:46:16 | INFO: Starting glTF 2.0 export
+01:46:16 | INFO: Extracting primitive: Cube
+01:46:16 | INFO: Primitives created: 7
+01:46:16 | INFO: Finished glTF 2.0 export in 0.020933151245117188 s
+00:19.547  render           | Saved: 'C:\Work\MySelf\Guildborne\assets\uat01\hero-kit\mage_01.png'
+
+
+FBX export starting... 'C:\\Work\\MySelf\\Guildborne\\assets\\uat01\\hero-kit\\mage_01_Idle.fbx'
+(bpy.data.armatures['Armature'], 'POSE')
+export finished in 0.0612 sec.
+
+FBX export starting... 'C:\\Work\\MySelf\\Guildborne\\assets\\uat01\\hero-kit\\mage_01_Walk.fbx'
+(bpy.data.armatures['Armature'], 'POSE')
+export finished in 0.0436 sec.
+
+FBX export starting... 'C:\\Work\\MySelf\\Guildborne\\assets\\uat01\\hero-kit\\mage_01_Attack.fbx'
+(bpy.data.armatures['Armature'], 'POSE')
+export finished in 0.0495 sec.
+
+FBX export starting... 'C:\\Work\\MySelf\\Guildborne\\assets\\uat01\\hero-kit\\mage_01_Hit.fbx'
+(bpy.data.armatures['Armature'], 'POSE')
+export finished in 0.0335 sec.
+Info: Saved as "mage_01.blend"
+
+FBX export starting... 'C:\\Work\\MySelf\\Guildborne\\assets\\uat01\\hero-kit\\mage_02_Rest.fbx'
+(bpy.data.armatures['Armature'], 'POSE')
+export finished in 0.0129 sec.
+01:46:18 | INFO: Starting glTF 2.0 export
+01:46:18 | INFO: Extracting primitive: Cube
+01:46:18 | INFO: Primitives created: 8
+01:46:18 | INFO: Finished glTF 2.0 export in 0.02484130859375 s
+00:21.266  render           | Saved: 'C:\Work\MySelf\Guildborne\assets\uat01\hero-kit\mage_02.png'
+
+
+FBX export starting... 'C:\\Work\\MySelf\\Guildborne\\assets\\uat01\\hero-kit\\mage_02_Idle.fbx'
+(bpy.data.armatures['Armature'], 'POSE')
+export finished in 0.0745 sec.
+
+FBX export starting... 'C:\\Work\\MySelf\\Guildborne\\assets\\uat01\\hero-kit\\mage_02_Walk.fbx'
+(bpy.data.armatures['Armature'], 'POSE')
+export finished in 0.0492 sec.
+
+FBX export starting... 'C:\\Work\\MySelf\\Guildborne\\assets\\uat01\\hero-kit\\mage_02_Attack.fbx'
+(bpy.data.armatures['Armature'], 'POSE')
+export finished in 0.0540 sec.
+
+FBX export starting... 'C:\\Work\\MySelf\\Guildborne\\assets\\uat01\\hero-kit\\mage_02_Hit.fbx'
+(bpy.data.armatures['Armature'], 'POSE')
+export finished in 0.0372 sec.
+Info: Saved as "mage_02.blend"
+
+FBX export starting... 'C:\\Work\\MySelf\\Guildborne\\assets\\uat01\\hero-kit\\mage_03_Rest.fbx'
+(bpy.data.armatures['Armature'], 'POSE')
+export finished in 0.0127 sec.
+01:46:20 | INFO: Starting glTF 2.0 export
+01:46:20 | INFO: Extracting primitive: Cube
+01:46:20 | INFO: Primitives created: 8
+01:46:20 | INFO: Finished glTF 2.0 export in 0.02664017677307129 s
+00:22.953  render           | Saved: 'C:\Work\MySelf\Guildborne\assets\uat01\hero-kit\mage_03.png'
+
+
+FBX export starting... 'C:\\Work\\MySelf\\Guildborne\\assets\\uat01\\hero-kit\\mage_03_Idle.fbx'
+(bpy.data.armatures['Armature'], 'POSE')
+export finished in 0.0694 sec.
+
+FBX export starting... 'C:\\Work\\MySelf\\Guildborne\\assets\\uat01\\hero-kit\\mage_03_Walk.fbx'
+(bpy.data.armatures['Armature'], 'POSE')
+export finished in 0.0479 sec.
+
+FBX export starting... 'C:\\Work\\MySelf\\Guildborne\\assets\\uat01\\hero-kit\\mage_03_Attack.fbx'
+(bpy.data.armatures['Armature'], 'POSE')
+export finished in 0.0541 sec.
+
+FBX export starting... 'C:\\Work\\MySelf\\Guildborne\\assets\\uat01\\hero-kit\\mage_03_Hit.fbx'
+(bpy.data.armatures['Armature'], 'POSE')
+export finished in 0.0367 sec.
+Info: Saved as "mage_03.blend"
+
+FBX export starting... 'C:\\Work\\MySelf\\Guildborne\\assets\\uat01\\hero-kit\\priest_01_Rest.fbx'
+(bpy.data.armatures['Armature'], 'POSE')
+export finished in 0.0124 sec.
+01:46:21 | INFO: Starting glTF 2.0 export
+01:46:21 | INFO: Extracting primitive: Cube
+01:46:21 | INFO: Primitives created: 7
+01:46:21 | INFO: Finished glTF 2.0 export in 0.022368431091308594 s
+00:24.734  render           | Saved: 'C:\Work\MySelf\Guildborne\assets\uat01\hero-kit\priest_01.png'
+
+
+FBX export starting... 'C:\\Work\\MySelf\\Guildborne\\assets\\uat01\\hero-kit\\priest_01_Idle.fbx'
+(bpy.data.armatures['Armature'], 'POSE')
+export finished in 0.0749 sec.
+
+FBX export starting... 'C:\\Work\\MySelf\\Guildborne\\assets\\uat01\\hero-kit\\priest_01_Walk.fbx'
+(bpy.data.armatures['Armature'], 'POSE')
+export finished in 0.0481 sec.
+
+FBX export starting... 'C:\\Work\\MySelf\\Guildborne\\assets\\uat01\\hero-kit\\priest_01_Attack.fbx'
+(bpy.data.armatures['Armature'], 'POSE')
+export finished in 0.0547 sec.
+
+FBX export starting... 'C:\\Work\\MySelf\\Guildborne\\assets\\uat01\\hero-kit\\priest_01_Hit.fbx'
+(bpy.data.armatures['Armature'], 'POSE')
+export finished in 0.0403 sec.
+Info: Saved as "priest_01.blend"
+
+FBX export starting... 'C:\\Work\\MySelf\\Guildborne\\assets\\uat01\\hero-kit\\priest_02_Rest.fbx'
+(bpy.data.armatures['Armature'], 'POSE')
+export finished in 0.0133 sec.
+01:46:23 | INFO: Starting glTF 2.0 export
+01:46:23 | INFO: Extracting primitive: Cube
+01:46:23 | INFO: Primitives created: 6
+01:46:23 | INFO: Finished glTF 2.0 export in 0.021439552307128906 s
+00:26.453  render           | Saved: 'C:\Work\MySelf\Guildborne\assets\uat01\hero-kit\priest_02.png'
+
+
+FBX export starting... 'C:\\Work\\MySelf\\Guildborne\\assets\\uat01\\hero-kit\\priest_02_Idle.fbx'
+(bpy.data.armatures['Armature'], 'POSE')
+export finished in 0.0696 sec.
+
+FBX export starting... 'C:\\Work\\MySelf\\Guildborne\\assets\\uat01\\hero-kit\\priest_02_Walk.fbx'
+(bpy.data.armatures['Armature'], 'POSE')
+export finished in 0.0486 sec.
+
+FBX export starting... 'C:\\Work\\MySelf\\Guildborne\\assets\\uat01\\hero-kit\\priest_02_Attack.fbx'
+(bpy.data.armatures['Armature'], 'POSE')
+export finished in 0.0504 sec.
+
+FBX export starting... 'C:\\Work\\MySelf\\Guildborne\\assets\\uat01\\hero-kit\\priest_02_Hit.fbx'
+(bpy.data.armatures['Armature'], 'POSE')
+export finished in 0.0351 sec.
+Info: Saved as "priest_02.blend"
+
+FBX export starting... 'C:\\Work\\MySelf\\Guildborne\\assets\\uat01\\hero-kit\\priest_03_Rest.fbx'
+(bpy.data.armatures['Armature'], 'POSE')
+export finished in 0.0168 sec.
+01:46:25 | INFO: Starting glTF 2.0 export
+01:46:25 | INFO: Extracting primitive: Cube
+01:46:25 | INFO: Primitives created: 6
+01:46:25 | INFO: Finished glTF 2.0 export in 0.022910118103027344 s
+00:28.172  render           | Saved: 'C:\Work\MySelf\Guildborne\assets\uat01\hero-kit\priest_03.png'
+
+
+FBX export starting... 'C:\\Work\\MySelf\\Guildborne\\assets\\uat01\\hero-kit\\priest_03_Idle.fbx'
+(bpy.data.armatures['Armature'], 'POSE')
+export finished in 0.0974 sec.
+
+FBX export starting... 'C:\\Work\\MySelf\\Guildborne\\assets\\uat01\\hero-kit\\priest_03_Walk.fbx'
+(bpy.data.armatures['Armature'], 'POSE')
+export finished in 0.0469 sec.
+
+FBX export starting... 'C:\\Work\\MySelf\\Guildborne\\assets\\uat01\\hero-kit\\priest_03_Attack.fbx'
+(bpy.data.armatures['Armature'], 'POSE')
+export finished in 0.0524 sec.
+
+FBX export starting... 'C:\\Work\\MySelf\\Guildborne\\assets\\uat01\\hero-kit\\priest_03_Hit.fbx'
+(bpy.data.armatures['Armature'], 'POSE')
+export finished in 0.0367 sec.
+Info: Saved as "priest_03.blend"
+01:46:27 | INFO: Data are loaded, start creating Blender stuff
+01:46:27 | INFO: Blender create Mesh node Cube
+01:46:27 | INFO: glTF import finished in 0.01s
+C:\Work\MySelf\Guildborne\tools\blender_enemy_kit.py:89: DeprecationWarning: 'Material.use_nodes' is expected to be removed in Blender 6.0
+  m=bpy.data.materials.new('Label');m.use_nodes=True;m.node_tree.nodes['Principled BSDF'].inputs['Base Color'].default_value=(.9,.8,.6,1);label.data.materials.append(m)
+01:46:27 | INFO: Data are loaded, start creating Blender stuff
+01:46:27 | INFO: Blender create Mesh node Cube
+01:46:27 | INFO: glTF import finished in 0.01s
+01:46:27 | INFO: Data are loaded, start creating Blender stuff
+01:46:27 | INFO: Blender create Mesh node Cube
+01:46:27 | INFO: glTF import finished in 0.01s
+01:46:27 | INFO: Data are loaded, start creating Blender stuff
+01:46:27 | INFO: Blender create Mesh node Cube
+01:46:27 | INFO: glTF import finished in 0.02s
+01:46:27 | INFO: Data are loaded, start creating Blender stuff
+01:46:27 | INFO: Blender create Mesh node Cube
+01:46:27 | INFO: glTF import finished in 0.02s
+01:46:27 | INFO: Data are loaded, start creating Blender stuff
+01:46:27 | INFO: Blender create Mesh node Cube
+01:46:27 | INFO: glTF import finished in 0.02s
+01:46:27 | INFO: Data are loaded, start creating Blender stuff
+01:46:27 | INFO: Blender create Mesh node Cube
+01:46:27 | INFO: glTF import finished in 0.02s
+01:46:27 | INFO: Data are loaded, start creating Blender stuff
+01:46:27 | INFO: Blender create Mesh node Cube
+01:46:27 | INFO: glTF import finished in 0.02s
+01:46:27 | INFO: Data are loaded, start creating Blender stuff
+01:46:27 | INFO: Blender create Mesh node Cube
+01:46:27 | INFO: glTF import finished in 0.02s
+01:46:27 | INFO: Data are loaded, start creating Blender stuff
+01:46:27 | INFO: Blender create Mesh node Cube
+01:46:27 | INFO: glTF import finished in 0.02s
+01:46:27 | INFO: Data are loaded, start creating Blender stuff
+01:46:27 | INFO: Blender create Mesh node Cube
+01:46:27 | INFO: glTF import finished in 0.02s
+01:46:27 | INFO: Data are loaded, start creating Blender stuff
+01:46:27 | INFO: Blender create Mesh node Cube
+01:46:27 | INFO: glTF import finished in 0.02s
+01:46:27 | INFO: Data are loaded, start creating Blender stuff
+01:46:27 | INFO: Blender create Mesh node Cube
+01:46:27 | INFO: glTF import finished in 0.03s
+01:46:27 | INFO: Data are loaded, start creating Blender stuff
+01:46:27 | INFO: Blender create Mesh node Cube
+01:46:27 | INFO: glTF import finished in 0.03s
+01:46:27 | INFO: Data are loaded, start creating Blender stuff
+01:46:27 | INFO: Blender create Mesh node Cube
+01:46:27 | INFO: glTF import finished in 0.03s
+00:38.219  render           | Saved: 'C:\Work\MySelf\Guildborne\assets\uat01\hero-kit\preview.png'
+Info: Saved as "Guildborne_Hero_Gallery.blend"
+ENEMY_RIG_KIT_COMPLETE 15 rigs 5268 triangles 60 clips
+Blender 5.2.1 LTS (hash 9e2066aef7ef built 2026-08-25 02:38:20)
+
+Blender quit

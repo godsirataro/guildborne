@@ -1,0 +1,324 @@
+{
+  "schema": 1,
+  "fps": 30,
+  "assets": [
+    {
+      "id": "marshal_elian",
+      "rigType": "Humanoid",
+      "region": "Crownford",
+      "role": "Charter marshal",
+      "bones": 16,
+      "triangles": 420,
+      "vertices": 280,
+      "restFiles": [
+        "marshal_elian_Rest.fbx",
+        "marshal_elian_Rest.glb"
+      ],
+      "clips": [
+        {
+          "name": "Idle",
+          "file": "marshal_elian_Idle.fbx",
+          "frames": 61,
+          "seconds": 2,
+          "loop": true,
+          "rootMotion": false,
+          "robloxAnimationId": null
+        },
+        {
+          "name": "Walk",
+          "file": "marshal_elian_Walk.fbx",
+          "frames": 31,
+          "seconds": 1,
+          "loop": true,
+          "rootMotion": false,
+          "robloxAnimationId": null
+        },
+        {
+          "name": "Greet",
+          "file": "marshal_elian_Greet.fbx",
+          "frames": 55,
+          "seconds": 1.8,
+          "loop": false,
+          "rootMotion": false,
+          "robloxAnimationId": null
+        },
+        {
+          "name": "Work",
+          "file": "marshal_elian_Work.fbx",
+          "frames": 61,
+          "seconds": 2,
+          "loop": true,
+          "rootMotion": false,
+          "robloxAnimationId": null
+        }
+      ],
+      "studioImported": false,
+      "liveEncounterBound": false
+    },
+    {
+      "id": "arborist_vaela",
+      "rigType": "Humanoid",
+      "region": "Sylvaris",
+      "role": "Garden keeper",
+      "bones": 16,
+      "triangles": 432,
+      "vertices": 288,
+      "restFiles": [
+        "arborist_vaela_Rest.fbx",
+        "arborist_vaela_Rest.glb"
+      ],
+      "clips": [
+        {
+          "name": "Idle",
+          "file": "arborist_vaela_Idle.fbx",
+          "frames": 61,
+          "seconds": 2,
+          "loop": true,
+          "rootMotion": false,
+          "robloxAnimationId": null
+        },
+        {
+          "name": "Walk",
+          "file": "arborist_vaela_Walk.fbx",
+          "frames": 31,
+          "seconds": 1,
+          "loop": true,
+          "rootMotion": false,
+          "robloxAnimationId": null
+        },
+        {
+          "name": "Greet",
+          "file": "arborist_vaela_Greet.fbx",
+          "frames": 55,
+          "seconds": 1.8,
+          "loop": false,
+          "rootMotion": false,
+          "robloxAnimationId": null
+        },
+        {
+          "name": "Work",
+          "file": "arborist_vaela_Work.fbx",
+          "frames": 61,
+          "seconds": 2,
+          "loop": true,
+          "rootMotion": false,
+          "robloxAnimationId": null
+        }
+      ],
+      "studioImported": false,
+      "liveEncounterBound": false
+    },
+    {
+      "id": "smith_borin",
+      "rigType": "Humanoid",
+      "region": "Deepforge",
+      "role": "Forge steward",
+      "bones": 16,
+      "triangles": 384,
+      "vertices": 256,
+      "restFiles": [
+        "smith_borin_Rest.fbx",
+        "smith_borin_Rest.glb"
+      ],
+      "clips": [
+        {
+          "name": "Idle",
+          "file": "smith_borin_Idle.fbx",
+          "frames": 61,
+          "seconds": 2,
+          "loop": true,
+          "rootMotion": false,
+          "robloxAnimationId": null
+        },
+        {
+          "name": "Walk",
+          "file": "smith_borin_Walk.fbx",
+          "frames": 31,
+          "seconds": 1,
+          "loop": true,
+          "rootMotion": false,
+          "robloxAnimationId": null
+        },
+        {
+          "name": "Greet",
+          "file": "smith_borin_Greet.fbx",
+          "frames": 55,
+          "seconds": 1.8,
+          "loop": false,
+          "rootMotion": false,
+          "robloxAnimationId": null
+        },
+        {
+          "name": "Work",
+          "file": "smith_borin_Work.fbx",
+          "frames": 61,
+          "seconds": 2,
+          "loop": true,
+          "rootMotion": false,
+          "robloxAnimationId": null
+        }
+      ],
+      "studioImported": false,
+      "liveEncounterBound": false
+    },
+    {
+      "id": "cartographer_nyra",
+      "rigType": "Humanoid",
+      "region": "Astralis",
+      "role": "Astral cartographer",
+      "bones": 16,
+      "triangles": 468,
+      "vertices": 312,
+      "restFiles": [
+        "cartographer_nyra_Rest.fbx",
+        "cartographer_nyra_Rest.glb"
+      ],
+      "clips": [
+        {
+          "name": "Idle",
+          "file": "cartographer_nyra_Idle.fbx",
+          "frames": 61,
+          "seconds": 2,
+          "loop": true,
+          "rootMotion": false,
+          "robloxAnimationId": null
+        },
+        {
+          "name": "Walk",
+          "file": "cartographer_nyra_Walk.fbx",
+          "frames": 31,
+          "seconds": 1,
+          "loop": true,
+          "rootMotion": false,
+          "robloxAnimationId": null
+        },
+        {
+          "name": "Greet",
+          "file": "cartographer_nyra_Greet.fbx",
+          "frames": 55,
+          "seconds": 1.8,
+          "loop": false,
+          "rootMotion": false,
+          "robloxAnimationId": null
+        },
+        {
+          "name": "Work",
+          "file": "cartographer_nyra_Work.fbx",
+          "frames": 61,
+          "seconds": 2,
+          "loop": true,
+          "rootMotion": false,
+          "robloxAnimationId": null
+        }
+      ],
+      "studioImported": false,
+      "liveEncounterBound": false
+    },
+    {
+      "id": "harbormaster_sela",
+      "rigType": "Humanoid",
+      "region": "Crosshaven",
+      "role": "Harbormaster",
+      "bones": 16,
+      "triangles": 492,
+      "vertices": 328,
+      "restFiles": [
+        "harbormaster_sela_Rest.fbx",
+        "harbormaster_sela_Rest.glb"
+      ],
+      "clips": [
+        {
+          "name": "Idle",
+          "file": "harbormaster_sela_Idle.fbx",
+          "frames": 61,
+          "seconds": 2,
+          "loop": true,
+          "rootMotion": false,
+          "robloxAnimationId": null
+        },
+        {
+          "name": "Walk",
+          "file": "harbormaster_sela_Walk.fbx",
+          "frames": 31,
+          "seconds": 1,
+          "loop": true,
+          "rootMotion": false,
+          "robloxAnimationId": null
+        },
+        {
+          "name": "Greet",
+          "file": "harbormaster_sela_Greet.fbx",
+          "frames": 55,
+          "seconds": 1.8,
+          "loop": false,
+          "rootMotion": false,
+          "robloxAnimationId": null
+        },
+        {
+          "name": "Work",
+          "file": "harbormaster_sela_Work.fbx",
+          "frames": 61,
+          "seconds": 2,
+          "loop": true,
+          "rootMotion": false,
+          "robloxAnimationId": null
+        }
+      ],
+      "studioImported": false,
+      "liveEncounterBound": false
+    },
+    {
+      "id": "steward_roka",
+      "rigType": "Humanoid",
+      "region": "Ironroot",
+      "role": "Community steward",
+      "bones": 16,
+      "triangles": 516,
+      "vertices": 344,
+      "restFiles": [
+        "steward_roka_Rest.fbx",
+        "steward_roka_Rest.glb"
+      ],
+      "clips": [
+        {
+          "name": "Idle",
+          "file": "steward_roka_Idle.fbx",
+          "frames": 61,
+          "seconds": 2,
+          "loop": true,
+          "rootMotion": false,
+          "robloxAnimationId": null
+        },
+        {
+          "name": "Walk",
+          "file": "steward_roka_Walk.fbx",
+          "frames": 31,
+          "seconds": 1,
+          "loop": true,
+          "rootMotion": false,
+          "robloxAnimationId": null
+        },
+        {
+          "name": "Greet",
+          "file": "steward_roka_Greet.fbx",
+          "frames": 55,
+          "seconds": 1.8,
+          "loop": false,
+          "rootMotion": false,
+          "robloxAnimationId": null
+        },
+        {
+          "name": "Work",
+          "file": "steward_roka_Work.fbx",
+          "frames": 61,
+          "seconds": 2,
+          "loop": true,
+          "rootMotion": false,
+          "robloxAnimationId": null
+        }
+      ],
+      "studioImported": false,
+      "liveEncounterBound": false
+    }
+  ]
+}

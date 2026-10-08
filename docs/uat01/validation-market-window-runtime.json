@@ -1,0 +1,25 @@
+{
+  "date": "2026-10-02",
+  "studio": "Guildborne - Staging",
+  "scope": "cloned current MarketView; isolated RemoteEvents; no ordinary profile or market mutation",
+  "correlation": {
+    "wrongItemPricesHiddenDuringRequest": true,
+    "pendingRetryDisabled": true,
+    "oldResponseIgnoredDuringNewRequest": true,
+    "timeoutEnablesRecovery": true,
+    "lateCurrentResponseRestoresCorrectTimberPrice22": true,
+    "requests": 2,
+    "allRequestsReadOnly": true
+  },
+  "emptyStates": {
+    "inventoryEmptyBranch": true,
+    "marketNoSearchResults": true,
+    "searchInputMethod": "CaptureFocus/Text/ReleaseFocus; MCP keyboard attempt did not change text, so keyboard acceptance remains pending",
+    "pointerClearSearchRestoresMaterialList": true,
+    "pointerMyOrdersShowsEmptyState": true,
+    "requests": 2,
+    "allRequestsReadOnly": true
+  },
+  "cleanup": "fixtures removed; owned Play stopped; Edit mode",
+  "limitations": "UI synthetic response replay is not real backend fault injection or live market acceptance. Old timer overlap also covered by pure RequestWindow tests."
+}

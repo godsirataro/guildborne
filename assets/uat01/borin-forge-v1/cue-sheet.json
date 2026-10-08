@@ -1,0 +1,21 @@
+{
+  "sampleRate": 48000,
+  "channels": 1,
+  "bits": 16,
+  "seconds": 6,
+  "contactFrames": [
+    30,
+    90,
+    150
+  ],
+  "contactSeconds": [
+    1,
+    3,
+    5
+  ],
+  "fps": 30,
+  "peak": 0.72,
+  "source": "Original deterministic synthesis; no external samples",
+  "status": "TECHNICAL_SYNC_VERIFIED_LISTENING_AND_ROBLOX_IMPORT_PENDING",
+  "robloxSoundId": null
+}

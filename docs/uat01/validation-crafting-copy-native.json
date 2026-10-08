@@ -1,0 +1,12 @@
+{
+  "date":"2026-10-03",
+  "method":"Isolated real ExpansionView factory with projected catalog and synthetic empty inventory; no callbacks invoked",
+  "cases":[
+    {"language":"en","forge":false,"text":"Build a Blacksmith first.","enabled":false},
+    {"language":"en","forge":true,"text":"Gather or earn the required materials first.","enabled":false},
+    {"language":"th","forge":false,"text":"ต้องสร้างโรงตีเหล็กก่อน","enabled":false},
+    {"language":"th","forge":true,"text":"เก็บหรือรับวัสดุที่ต้องใช้ให้ครบก่อน","enabled":false}
+  ],
+  "profileWrites":0,
+  "pass":true
+}

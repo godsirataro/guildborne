@@ -1,0 +1,50 @@
+{
+  "date": "2026-10-06",
+  "geometry": {
+    "content": [
+      {
+        "type": "text",
+        "text": "{\"readOnly\":true,\"cities\":[{\"paths\":8,\"id\":\"Crownford\",\"hostInRange\":true,\"prompts\":4,\"clearLandings\":2},{\"paths\":8,\"id\":\"Sylvaris\",\"hostInRange\":true,\"prompts\":4,\"clearLandings\":2},{\"paths\":8,\"id\":\"Deepforge\",\"hostInRange\":true,\"prompts\":4,\"clearLandings\":2},{\"paths\":8,\"id\":\"Astralis\",\"hostInRange\":true,\"prompts\":4,\"clearLandings\":2},{\"paths\":8,\"id\":\"Crosshaven\",\"hostInRange\":true,\"prompts\":4,\"clearLandings\":2},{\"paths\":8,\"id\":\"Ironroot\",\"hostInRange\":true,\"prompts\":4,\"clearLandings\":2}],\"profileWrites\":0}"
+      }
+    ],
+    "isError": false
+  },
+  "mapLayout": {
+    "content": [
+      {
+        "type": "text",
+        "text": "{\"ok\":true,\"result\":{\"synthetic\":true,\"textBounds\":144,\"profileWrites\":0,\"overlap\":false,\"languages\":[\"en\",\"th\"],\"widths\":[240,640,704],\"cases\":36,\"cityCount\":6}}"
+      }
+    ],
+    "isError": false
+  },
+  "ordinaryMapSelection": {
+    "content": [
+      {
+        "type": "text",
+        "text": "{\"panel\":false,\"text\":\"Welcome guide\\n98 studs\",\"arrow\":true}"
+      }
+    ],
+    "isError": false
+  },
+  "ordinaryCrownfordDialogue": {
+    "content": [
+      {
+        "type": "text",
+        "text": "{\"panel\":true,\"dialogue\":[\"Archivist Iven · Crownford welcome guide\",\"Welcome to Crownford. The clock gate reminds us that a promise has a time as well as a name. Elian's charter opens our streets to your guild. The map marks our landmark and both return portals. For trading and recruitment, return to Central City; your forge and building work remain on your own island.\",\"See you soon\"]}"
+      }
+    ],
+    "isError": false
+  },
+  "state": {
+    "content": [
+      {
+        "type": "text",
+        "text": "{\"revision\":10,\"zone\":\"Crownford\",\"gold\":25}"
+      }
+    ],
+    "isError": false
+  },
+  "method": "Fresh session with ordinary city_gate/elian_charter completion, native N-key map, actual mouse host waypoint and normal-speed walk/E. Host was initially behind camera; walked to opposite side, then E displayed dialogue. No source hotpatch/profile grants.",
+  "limits": "Only Crownford host actual dialogue; five other hosts geometry and bilingual content tests. Layout is isolated synthetic fixture."
+}

@@ -1,0 +1,3439 @@
+{
+  "bpm": 80,
+  "beats": 32,
+  "motif": [
+    [
+      0,
+      0,
+      1.5
+    ],
+    [
+      2,
+      2,
+      0.75
+    ],
+    [
+      3,
+      1,
+      0.75
+    ],
+    [
+      4,
+      3,
+      1.5
+    ],
+    [
+      6,
+      2,
+      1
+    ],
+    [
+      8,
+      1,
+      1.5
+    ],
+    [
+      10,
+      4,
+      0.75
+    ],
+    [
+      11,
+      3,
+      0.75
+    ],
+    [
+      12,
+      2,
+      1
+    ],
+    [
+      14,
+      0,
+      1.75
+    ]
+  ],
+  "scores": {
+    "crownford": {
+      "title": "Crownford • Civic Dawn",
+      "rootMidi": 50,
+      "scale": [
+        0,
+        2,
+        4,
+        7,
+        9
+      ],
+      "chords": [
+        [
+          0,
+          4,
+          7
+        ],
+        [
+          5,
+          9,
+          12
+        ],
+        [
+          7,
+          11,
+          14
+        ],
+        [
+          0,
+          4,
+          7
+        ]
+      ],
+      "events": [
+        {
+          "beat": 0,
+          "midi": 50,
+          "durationBeats": 3.7,
+          "level": 0.037,
+          "voice": "pad",
+          "pan": -0.35
+        },
+        {
+          "beat": 0,
+          "midi": 54,
+          "durationBeats": 3.7,
+          "level": 0.037,
+          "voice": "pad",
+          "pan": 0.0
+        },
+        {
+          "beat": 0,
+          "midi": 57,
+          "durationBeats": 3.7,
+          "level": 0.037,
+          "voice": "pad",
+          "pan": 0.35
+        },
+        {
+          "beat": 0,
+          "midi": 38,
+          "durationBeats": 2.8,
+          "level": 0.068,
+          "voice": "pluck",
+          "pan": 0
+        },
+        {
+          "beat": 4,
+          "midi": 50,
+          "durationBeats": 3.7,
+          "level": 0.037,
+          "voice": "pad",
+          "pan": -0.35
+        },
+        {
+          "beat": 4,
+          "midi": 54,
+          "durationBeats": 3.7,
+          "level": 0.037,
+          "voice": "pad",
+          "pan": 0.0
+        },
+        {
+          "beat": 4,
+          "midi": 57,
+          "durationBeats": 3.7,
+          "level": 0.037,
+          "voice": "pad",
+          "pan": 0.35
+        },
+        {
+          "beat": 4,
+          "midi": 38,
+          "durationBeats": 2.8,
+          "level": 0.068,
+          "voice": "pluck",
+          "pan": 0
+        },
+        {
+          "beat": 6,
+          "midi": 45,
+          "durationBeats": 1.65,
+          "level": 0.035,
+          "voice": "pluck",
+          "pan": 0
+        },
+        {
+          "beat": 8,
+          "midi": 55,
+          "durationBeats": 3.7,
+          "level": 0.037,
+          "voice": "pad",
+          "pan": -0.35
+        },
+        {
+          "beat": 8,
+          "midi": 59,
+          "durationBeats": 3.7,
+          "level": 0.037,
+          "voice": "pad",
+          "pan": 0.0
+        },
+        {
+          "beat": 8,
+          "midi": 62,
+          "durationBeats": 3.7,
+          "level": 0.037,
+          "voice": "pad",
+          "pan": 0.35
+        },
+        {
+          "beat": 8,
+          "midi": 43,
+          "durationBeats": 2.8,
+          "level": 0.068,
+          "voice": "pluck",
+          "pan": 0
+        },
+        {
+          "beat": 12,
+          "midi": 55,
+          "durationBeats": 3.7,
+          "level": 0.037,
+          "voice": "pad",
+          "pan": -0.35
+        },
+        {
+          "beat": 12,
+          "midi": 59,
+          "durationBeats": 3.7,
+          "level": 0.037,
+          "voice": "pad",
+          "pan": 0.0
+        },
+        {
+          "beat": 12,
+          "midi": 62,
+          "durationBeats": 3.7,
+          "level": 0.037,
+          "voice": "pad",
+          "pan": 0.35
+        },
+        {
+          "beat": 12,
+          "midi": 43,
+          "durationBeats": 2.8,
+          "level": 0.068,
+          "voice": "pluck",
+          "pan": 0
+        },
+        {
+          "beat": 14,
+          "midi": 50,
+          "durationBeats": 1.65,
+          "level": 0.035,
+          "voice": "pluck",
+          "pan": 0
+        },
+        {
+          "beat": 16,
+          "midi": 57,
+          "durationBeats": 3.7,
+          "level": 0.037,
+          "voice": "pad",
+          "pan": -0.35
+        },
+        {
+          "beat": 16,
+          "midi": 61,
+          "durationBeats": 3.7,
+          "level": 0.037,
+          "voice": "pad",
+          "pan": 0.0
+        },
+        {
+          "beat": 16,
+          "midi": 64,
+          "durationBeats": 3.7,
+          "level": 0.037,
+          "voice": "pad",
+          "pan": 0.35
+        },
+        {
+          "beat": 16,
+          "midi": 45,
+          "durationBeats": 2.8,
+          "level": 0.068,
+          "voice": "pluck",
+          "pan": 0
+        },
+        {
+          "beat": 20,
+          "midi": 57,
+          "durationBeats": 3.7,
+          "level": 0.037,
+          "voice": "pad",
+          "pan": -0.35
+        },
+        {
+          "beat": 20,
+          "midi": 61,
+          "durationBeats": 3.7,
+          "level": 0.037,
+          "voice": "pad",
+          "pan": 0.0
+        },
+        {
+          "beat": 20,
+          "midi": 64,
+          "durationBeats": 3.7,
+          "level": 0.037,
+          "voice": "pad",
+          "pan": 0.35
+        },
+        {
+          "beat": 20,
+          "midi": 45,
+          "durationBeats": 2.8,
+          "level": 0.068,
+          "voice": "pluck",
+          "pan": 0
+        },
+        {
+          "beat": 22,
+          "midi": 52,
+          "durationBeats": 1.65,
+          "level": 0.035,
+          "voice": "pluck",
+          "pan": 0
+        },
+        {
+          "beat": 24,
+          "midi": 50,
+          "durationBeats": 3.7,
+          "level": 0.037,
+          "voice": "pad",
+          "pan": -0.35
+        },
+        {
+          "beat": 24,
+          "midi": 54,
+          "durationBeats": 3.7,
+          "level": 0.037,
+          "voice": "pad",
+          "pan": 0.0
+        },
+        {
+          "beat": 24,
+          "midi": 57,
+          "durationBeats": 3.7,
+          "level": 0.037,
+          "voice": "pad",
+          "pan": 0.35
+        },
+        {
+          "beat": 24,
+          "midi": 38,
+          "durationBeats": 2.8,
+          "level": 0.068,
+          "voice": "pluck",
+          "pan": 0
+        },
+        {
+          "beat": 28,
+          "midi": 50,
+          "durationBeats": 3.7,
+          "level": 0.037,
+          "voice": "pad",
+          "pan": -0.35
+        },
+        {
+          "beat": 28,
+          "midi": 54,
+          "durationBeats": 3.7,
+          "level": 0.037,
+          "voice": "pad",
+          "pan": 0.0
+        },
+        {
+          "beat": 28,
+          "midi": 57,
+          "durationBeats": 3.7,
+          "level": 0.037,
+          "voice": "pad",
+          "pan": 0.35
+        },
+        {
+          "beat": 28,
+          "midi": 38,
+          "durationBeats": 2.8,
+          "level": 0.068,
+          "voice": "pluck",
+          "pan": 0
+        },
+        {
+          "beat": 30,
+          "midi": 45,
+          "durationBeats": 1.65,
+          "level": 0.035,
+          "voice": "pluck",
+          "pan": 0
+        },
+        {
+          "beat": 0,
+          "midi": 62,
+          "durationBeats": 1.5,
+          "level": 0.13,
+          "voice": "pluck",
+          "pan": -0.15
+        },
+        {
+          "beat": 2,
+          "midi": 66,
+          "durationBeats": 0.75,
+          "level": 0.13,
+          "voice": "pluck",
+          "pan": -0.15
+        },
+        {
+          "beat": 3,
+          "midi": 64,
+          "durationBeats": 0.75,
+          "level": 0.13,
+          "voice": "pluck",
+          "pan": -0.15
+        },
+        {
+          "beat": 4,
+          "midi": 69,
+          "durationBeats": 1.5,
+          "level": 0.13,
+          "voice": "pluck",
+          "pan": -0.15
+        },
+        {
+          "beat": 6,
+          "midi": 66,
+          "durationBeats": 1,
+          "level": 0.13,
+          "voice": "pluck",
+          "pan": -0.15
+        },
+        {
+          "beat": 8,
+          "midi": 64,
+          "durationBeats": 1.5,
+          "level": 0.13,
+          "voice": "pluck",
+          "pan": -0.15
+        },
+        {
+          "beat": 10,
+          "midi": 71,
+          "durationBeats": 0.75,
+          "level": 0.13,
+          "voice": "pluck",
+          "pan": -0.15
+        },
+        {
+          "beat": 11,
+          "midi": 69,
+          "durationBeats": 0.75,
+          "level": 0.13,
+          "voice": "pluck",
+          "pan": -0.15
+        },
+        {
+          "beat": 12,
+          "midi": 66,
+          "durationBeats": 1,
+          "level": 0.13,
+          "voice": "pluck",
+          "pan": -0.15
+        },
+        {
+          "beat": 14,
+          "midi": 62,
+          "durationBeats": 1.75,
+          "level": 0.13,
+          "voice": "pluck",
+          "pan": -0.15
+        },
+        {
+          "beat": 16,
+          "midi": 62,
+          "durationBeats": 1.5,
+          "level": 0.1,
+          "voice": "pluck",
+          "pan": 0.15
+        },
+        {
+          "beat": 18,
+          "midi": 66,
+          "durationBeats": 0.75,
+          "level": 0.1,
+          "voice": "pluck",
+          "pan": 0.15
+        },
+        {
+          "beat": 19,
+          "midi": 64,
+          "durationBeats": 0.75,
+          "level": 0.1,
+          "voice": "pluck",
+          "pan": 0.15
+        },
+        {
+          "beat": 20,
+          "midi": 69,
+          "durationBeats": 1.5,
+          "level": 0.1,
+          "voice": "pluck",
+          "pan": 0.15
+        },
+        {
+          "beat": 22,
+          "midi": 66,
+          "durationBeats": 1,
+          "level": 0.1,
+          "voice": "pluck",
+          "pan": 0.15
+        },
+        {
+          "beat": 24,
+          "midi": 64,
+          "durationBeats": 1.5,
+          "level": 0.1,
+          "voice": "pluck",
+          "pan": 0.15
+        },
+        {
+          "beat": 26,
+          "midi": 71,
+          "durationBeats": 0.75,
+          "level": 0.1,
+          "voice": "pluck",
+          "pan": 0.15
+        },
+        {
+          "beat": 27,
+          "midi": 69,
+          "durationBeats": 0.75,
+          "level": 0.1,
+          "voice": "pluck",
+          "pan": 0.15
+        },
+        {
+          "beat": 28,
+          "midi": 66,
+          "durationBeats": 1,
+          "level": 0.1,
+          "voice": "pluck",
+          "pan": 0.15
+        },
+        {
+          "beat": 30,
+          "midi": 62,
+          "durationBeats": 1.75,
+          "level": 0.1,
+          "voice": "pluck",
+          "pan": 0.15
+        }
+      ]
+    },
+    "sylvaris": {
+      "title": "Sylvaris • Canopy Paths",
+      "rootMidi": 55,
+      "scale": [
+        0,
+        2,
+        4,
+        7,
+        9
+      ],
+      "chords": [
+        [
+          0,
+          4,
+          7
+        ],
+        [
+          2,
+          5,
+          9
+        ],
+        [
+          5,
+          9,
+          12
+        ],
+        [
+          0,
+          4,
+          7
+        ]
+      ],
+      "events": [
+        {
+          "beat": 0,
+          "midi": 55,
+          "durationBeats": 3.7,
+          "level": 0.037,
+          "voice": "pad",
+          "pan": -0.35
+        },
+        {
+          "beat": 0,
+          "midi": 59,
+          "durationBeats": 3.7,
+          "level": 0.037,
+          "voice": "pad",
+          "pan": 0.0
+        },
+        {
+          "beat": 0,
+          "midi": 62,
+          "durationBeats": 3.7,
+          "level": 0.037,
+          "voice": "pad",
+          "pan": 0.35
+        },
+        {
+          "beat": 0,
+          "midi": 43,
+          "durationBeats": 2.8,
+          "level": 0.068,
+          "voice": "pluck",
+          "pan": 0
+        },
+        {
+          "beat": 4,
+          "midi": 55,
+          "durationBeats": 3.7,
+          "level": 0.037,
+          "voice": "pad",
+          "pan": -0.35
+        },
+        {
+          "beat": 4,
+          "midi": 59,
+          "durationBeats": 3.7,
+          "level": 0.037,
+          "voice": "pad",
+          "pan": 0.0
+        },
+        {
+          "beat": 4,
+          "midi": 62,
+          "durationBeats": 3.7,
+          "level": 0.037,
+          "voice": "pad",
+          "pan": 0.35
+        },
+        {
+          "beat": 4,
+          "midi": 43,
+          "durationBeats": 2.8,
+          "level": 0.068,
+          "voice": "pluck",
+          "pan": 0
+        },
+        {
+          "beat": 6,
+          "midi": 50,
+          "durationBeats": 1.65,
+          "level": 0.035,
+          "voice": "pluck",
+          "pan": 0
+        },
+        {
+          "beat": 8,
+          "midi": 57,
+          "durationBeats": 3.7,
+          "level": 0.037,
+          "voice": "pad",
+          "pan": -0.35
+        },
+        {
+          "beat": 8,
+          "midi": 60,
+          "durationBeats": 3.7,
+          "level": 0.037,
+          "voice": "pad",
+          "pan": 0.0
+        },
+        {
+          "beat": 8,
+          "midi": 64,
+          "durationBeats": 3.7,
+          "level": 0.037,
+          "voice": "pad",
+          "pan": 0.35
+        },
+        {
+          "beat": 8,
+          "midi": 45,
+          "durationBeats": 2.8,
+          "level": 0.068,
+          "voice": "pluck",
+          "pan": 0
+        },
+        {
+          "beat": 12,
+          "midi": 57,
+          "durationBeats": 3.7,
+          "level": 0.037,
+          "voice": "pad",
+          "pan": -0.35
+        },
+        {
+          "beat": 12,
+          "midi": 60,
+          "durationBeats": 3.7,
+          "level": 0.037,
+          "voice": "pad",
+          "pan": 0.0
+        },
+        {
+          "beat": 12,
+          "midi": 64,
+          "durationBeats": 3.7,
+          "level": 0.037,
+          "voice": "pad",
+          "pan": 0.35
+        },
+        {
+          "beat": 12,
+          "midi": 45,
+          "durationBeats": 2.8,
+          "level": 0.068,
+          "voice": "pluck",
+          "pan": 0
+        },
+        {
+          "beat": 14,
+          "midi": 52,
+          "durationBeats": 1.65,
+          "level": 0.035,
+          "voice": "pluck",
+          "pan": 0
+        },
+        {
+          "beat": 16,
+          "midi": 60,
+          "durationBeats": 3.7,
+          "level": 0.037,
+          "voice": "pad",
+          "pan": -0.35
+        },
+        {
+          "beat": 16,
+          "midi": 64,
+          "durationBeats": 3.7,
+          "level": 0.037,
+          "voice": "pad",
+          "pan": 0.0
+        },
+        {
+          "beat": 16,
+          "midi": 67,
+          "durationBeats": 3.7,
+          "level": 0.037,
+          "voice": "pad",
+          "pan": 0.35
+        },
+        {
+          "beat": 16,
+          "midi": 48,
+          "durationBeats": 2.8,
+          "level": 0.068,
+          "voice": "pluck",
+          "pan": 0
+        },
+        {
+          "beat": 20,
+          "midi": 60,
+          "durationBeats": 3.7,
+          "level": 0.037,
+          "voice": "pad",
+          "pan": -0.35
+        },
+        {
+          "beat": 20,
+          "midi": 64,
+          "durationBeats": 3.7,
+          "level": 0.037,
+          "voice": "pad",
+          "pan": 0.0
+        },
+        {
+          "beat": 20,
+          "midi": 67,
+          "durationBeats": 3.7,
+          "level": 0.037,
+          "voice": "pad",
+          "pan": 0.35
+        },
+        {
+          "beat": 20,
+          "midi": 48,
+          "durationBeats": 2.8,
+          "level": 0.068,
+          "voice": "pluck",
+          "pan": 0
+        },
+        {
+          "beat": 22,
+          "midi": 55,
+          "durationBeats": 1.65,
+          "level": 0.035,
+          "voice": "pluck",
+          "pan": 0
+        },
+        {
+          "beat": 24,
+          "midi": 55,
+          "durationBeats": 3.7,
+          "level": 0.037,
+          "voice": "pad",
+          "pan": -0.35
+        },
+        {
+          "beat": 24,
+          "midi": 59,
+          "durationBeats": 3.7,
+          "level": 0.037,
+          "voice": "pad",
+          "pan": 0.0
+        },
+        {
+          "beat": 24,
+          "midi": 62,
+          "durationBeats": 3.7,
+          "level": 0.037,
+          "voice": "pad",
+          "pan": 0.35
+        },
+        {
+          "beat": 24,
+          "midi": 43,
+          "durationBeats": 2.8,
+          "level": 0.068,
+          "voice": "pluck",
+          "pan": 0
+        },
+        {
+          "beat": 28,
+          "midi": 55,
+          "durationBeats": 3.7,
+          "level": 0.037,
+          "voice": "pad",
+          "pan": -0.35
+        },
+        {
+          "beat": 28,
+          "midi": 59,
+          "durationBeats": 3.7,
+          "level": 0.037,
+          "voice": "pad",
+          "pan": 0.0
+        },
+        {
+          "beat": 28,
+          "midi": 62,
+          "durationBeats": 3.7,
+          "level": 0.037,
+          "voice": "pad",
+          "pan": 0.35
+        },
+        {
+          "beat": 28,
+          "midi": 43,
+          "durationBeats": 2.8,
+          "level": 0.068,
+          "voice": "pluck",
+          "pan": 0
+        },
+        {
+          "beat": 30,
+          "midi": 50,
+          "durationBeats": 1.65,
+          "level": 0.035,
+          "voice": "pluck",
+          "pan": 0
+        },
+        {
+          "beat": 0,
+          "midi": 67,
+          "durationBeats": 1.5,
+          "level": 0.13,
+          "voice": "flute",
+          "pan": -0.15
+        },
+        {
+          "beat": 2,
+          "midi": 71,
+          "durationBeats": 0.75,
+          "level": 0.13,
+          "voice": "flute",
+          "pan": -0.15
+        },
+        {
+          "beat": 3,
+          "midi": 69,
+          "durationBeats": 0.75,
+          "level": 0.13,
+          "voice": "flute",
+          "pan": -0.15
+        },
+        {
+          "beat": 4,
+          "midi": 74,
+          "durationBeats": 1.5,
+          "level": 0.13,
+          "voice": "flute",
+          "pan": -0.15
+        },
+        {
+          "beat": 6,
+          "midi": 71,
+          "durationBeats": 1,
+          "level": 0.13,
+          "voice": "flute",
+          "pan": -0.15
+        },
+        {
+          "beat": 8,
+          "midi": 69,
+          "durationBeats": 1.5,
+          "level": 0.13,
+          "voice": "flute",
+          "pan": -0.15
+        },
+        {
+          "beat": 10,
+          "midi": 76,
+          "durationBeats": 0.75,
+          "level": 0.13,
+          "voice": "flute",
+          "pan": -0.15
+        },
+        {
+          "beat": 11,
+          "midi": 74,
+          "durationBeats": 0.75,
+          "level": 0.13,
+          "voice": "flute",
+          "pan": -0.15
+        },
+        {
+          "beat": 12,
+          "midi": 71,
+          "durationBeats": 1,
+          "level": 0.13,
+          "voice": "flute",
+          "pan": -0.15
+        },
+        {
+          "beat": 14,
+          "midi": 67,
+          "durationBeats": 1.75,
+          "level": 0.13,
+          "voice": "flute",
+          "pan": -0.15
+        },
+        {
+          "beat": 16,
+          "midi": 67,
+          "durationBeats": 1.5,
+          "level": 0.1,
+          "voice": "flute",
+          "pan": 0.15
+        },
+        {
+          "beat": 18,
+          "midi": 71,
+          "durationBeats": 0.75,
+          "level": 0.1,
+          "voice": "flute",
+          "pan": 0.15
+        },
+        {
+          "beat": 19,
+          "midi": 69,
+          "durationBeats": 0.75,
+          "level": 0.1,
+          "voice": "flute",
+          "pan": 0.15
+        },
+        {
+          "beat": 20,
+          "midi": 74,
+          "durationBeats": 1.5,
+          "level": 0.1,
+          "voice": "flute",
+          "pan": 0.15
+        },
+        {
+          "beat": 22,
+          "midi": 71,
+          "durationBeats": 1,
+          "level": 0.1,
+          "voice": "flute",
+          "pan": 0.15
+        },
+        {
+          "beat": 24,
+          "midi": 69,
+          "durationBeats": 1.5,
+          "level": 0.1,
+          "voice": "flute",
+          "pan": 0.15
+        },
+        {
+          "beat": 26,
+          "midi": 76,
+          "durationBeats": 0.75,
+          "level": 0.1,
+          "voice": "flute",
+          "pan": 0.15
+        },
+        {
+          "beat": 27,
+          "midi": 74,
+          "durationBeats": 0.75,
+          "level": 0.1,
+          "voice": "flute",
+          "pan": 0.15
+        },
+        {
+          "beat": 28,
+          "midi": 71,
+          "durationBeats": 1,
+          "level": 0.1,
+          "voice": "flute",
+          "pan": 0.15
+        },
+        {
+          "beat": 30,
+          "midi": 67,
+          "durationBeats": 1.75,
+          "level": 0.1,
+          "voice": "flute",
+          "pan": 0.15
+        }
+      ]
+    },
+    "deepforge": {
+      "title": "Deepforge • Gentle Embers",
+      "rootMidi": 50,
+      "scale": [
+        0,
+        3,
+        5,
+        7,
+        10
+      ],
+      "chords": [
+        [
+          0,
+          3,
+          7
+        ],
+        [
+          5,
+          8,
+          12
+        ],
+        [
+          7,
+          10,
+          14
+        ],
+        [
+          0,
+          3,
+          7
+        ]
+      ],
+      "events": [
+        {
+          "beat": 0,
+          "midi": 50,
+          "durationBeats": 3.7,
+          "level": 0.037,
+          "voice": "pad",
+          "pan": -0.35
+        },
+        {
+          "beat": 0,
+          "midi": 53,
+          "durationBeats": 3.7,
+          "level": 0.037,
+          "voice": "pad",
+          "pan": 0.0
+        },
+        {
+          "beat": 0,
+          "midi": 57,
+          "durationBeats": 3.7,
+          "level": 0.037,
+          "voice": "pad",
+          "pan": 0.35
+        },
+        {
+          "beat": 0,
+          "midi": 38,
+          "durationBeats": 2.8,
+          "level": 0.068,
+          "voice": "pluck",
+          "pan": 0
+        },
+        {
+          "beat": 4,
+          "midi": 50,
+          "durationBeats": 3.7,
+          "level": 0.037,
+          "voice": "pad",
+          "pan": -0.35
+        },
+        {
+          "beat": 4,
+          "midi": 53,
+          "durationBeats": 3.7,
+          "level": 0.037,
+          "voice": "pad",
+          "pan": 0.0
+        },
+        {
+          "beat": 4,
+          "midi": 57,
+          "durationBeats": 3.7,
+          "level": 0.037,
+          "voice": "pad",
+          "pan": 0.35
+        },
+        {
+          "beat": 4,
+          "midi": 38,
+          "durationBeats": 2.8,
+          "level": 0.068,
+          "voice": "pluck",
+          "pan": 0
+        },
+        {
+          "beat": 6,
+          "midi": 45,
+          "durationBeats": 1.65,
+          "level": 0.035,
+          "voice": "pluck",
+          "pan": 0
+        },
+        {
+          "beat": 8,
+          "midi": 55,
+          "durationBeats": 3.7,
+          "level": 0.037,
+          "voice": "pad",
+          "pan": -0.35
+        },
+        {
+          "beat": 8,
+          "midi": 58,
+          "durationBeats": 3.7,
+          "level": 0.037,
+          "voice": "pad",
+          "pan": 0.0
+        },
+        {
+          "beat": 8,
+          "midi": 62,
+          "durationBeats": 3.7,
+          "level": 0.037,
+          "voice": "pad",
+          "pan": 0.35
+        },
+        {
+          "beat": 8,
+          "midi": 43,
+          "durationBeats": 2.8,
+          "level": 0.068,
+          "voice": "pluck",
+          "pan": 0
+        },
+        {
+          "beat": 12,
+          "midi": 55,
+          "durationBeats": 3.7,
+          "level": 0.037,
+          "voice": "pad",
+          "pan": -0.35
+        },
+        {
+          "beat": 12,
+          "midi": 58,
+          "durationBeats": 3.7,
+          "level": 0.037,
+          "voice": "pad",
+          "pan": 0.0
+        },
+        {
+          "beat": 12,
+          "midi": 62,
+          "durationBeats": 3.7,
+          "level": 0.037,
+          "voice": "pad",
+          "pan": 0.35
+        },
+        {
+          "beat": 12,
+          "midi": 43,
+          "durationBeats": 2.8,
+          "level": 0.068,
+          "voice": "pluck",
+          "pan": 0
+        },
+        {
+          "beat": 14,
+          "midi": 50,
+          "durationBeats": 1.65,
+          "level": 0.035,
+          "voice": "pluck",
+          "pan": 0
+        },
+        {
+          "beat": 16,
+          "midi": 57,
+          "durationBeats": 3.7,
+          "level": 0.037,
+          "voice": "pad",
+          "pan": -0.35
+        },
+        {
+          "beat": 16,
+          "midi": 60,
+          "durationBeats": 3.7,
+          "level": 0.037,
+          "voice": "pad",
+          "pan": 0.0
+        },
+        {
+          "beat": 16,
+          "midi": 64,
+          "durationBeats": 3.7,
+          "level": 0.037,
+          "voice": "pad",
+          "pan": 0.35
+        },
+        {
+          "beat": 16,
+          "midi": 45,
+          "durationBeats": 2.8,
+          "level": 0.068,
+          "voice": "pluck",
+          "pan": 0
+        },
+        {
+          "beat": 20,
+          "midi": 57,
+          "durationBeats": 3.7,
+          "level": 0.037,
+          "voice": "pad",
+          "pan": -0.35
+        },
+        {
+          "beat": 20,
+          "midi": 60,
+          "durationBeats": 3.7,
+          "level": 0.037,
+          "voice": "pad",
+          "pan": 0.0
+        },
+        {
+          "beat": 20,
+          "midi": 64,
+          "durationBeats": 3.7,
+          "level": 0.037,
+          "voice": "pad",
+          "pan": 0.35
+        },
+        {
+          "beat": 20,
+          "midi": 45,
+          "durationBeats": 2.8,
+          "level": 0.068,
+          "voice": "pluck",
+          "pan": 0
+        },
+        {
+          "beat": 22,
+          "midi": 52,
+          "durationBeats": 1.65,
+          "level": 0.035,
+          "voice": "pluck",
+          "pan": 0
+        },
+        {
+          "beat": 24,
+          "midi": 50,
+          "durationBeats": 3.7,
+          "level": 0.037,
+          "voice": "pad",
+          "pan": -0.35
+        },
+        {
+          "beat": 24,
+          "midi": 53,
+          "durationBeats": 3.7,
+          "level": 0.037,
+          "voice": "pad",
+          "pan": 0.0
+        },
+        {
+          "beat": 24,
+          "midi": 57,
+          "durationBeats": 3.7,
+          "level": 0.037,
+          "voice": "pad",
+          "pan": 0.35
+        },
+        {
+          "beat": 24,
+          "midi": 38,
+          "durationBeats": 2.8,
+          "level": 0.068,
+          "voice": "pluck",
+          "pan": 0
+        },
+        {
+          "beat": 28,
+          "midi": 50,
+          "durationBeats": 3.7,
+          "level": 0.037,
+          "voice": "pad",
+          "pan": -0.35
+        },
+        {
+          "beat": 28,
+          "midi": 53,
+          "durationBeats": 3.7,
+          "level": 0.037,
+          "voice": "pad",
+          "pan": 0.0
+        },
+        {
+          "beat": 28,
+          "midi": 57,
+          "durationBeats": 3.7,
+          "level": 0.037,
+          "voice": "pad",
+          "pan": 0.35
+        },
+        {
+          "beat": 28,
+          "midi": 38,
+          "durationBeats": 2.8,
+          "level": 0.068,
+          "voice": "pluck",
+          "pan": 0
+        },
+        {
+          "beat": 30,
+          "midi": 45,
+          "durationBeats": 1.65,
+          "level": 0.035,
+          "voice": "pluck",
+          "pan": 0
+        },
+        {
+          "beat": 0,
+          "midi": 62,
+          "durationBeats": 1.5,
+          "level": 0.13,
+          "voice": "bell",
+          "pan": -0.15
+        },
+        {
+          "beat": 2,
+          "midi": 67,
+          "durationBeats": 0.75,
+          "level": 0.13,
+          "voice": "bell",
+          "pan": -0.15
+        },
+        {
+          "beat": 3,
+          "midi": 65,
+          "durationBeats": 0.75,
+          "level": 0.13,
+          "voice": "bell",
+          "pan": -0.15
+        },
+        {
+          "beat": 4,
+          "midi": 69,
+          "durationBeats": 1.5,
+          "level": 0.13,
+          "voice": "bell",
+          "pan": -0.15
+        },
+        {
+          "beat": 6,
+          "midi": 67,
+          "durationBeats": 1,
+          "level": 0.13,
+          "voice": "bell",
+          "pan": -0.15
+        },
+        {
+          "beat": 8,
+          "midi": 65,
+          "durationBeats": 1.5,
+          "level": 0.13,
+          "voice": "bell",
+          "pan": -0.15
+        },
+        {
+          "beat": 10,
+          "midi": 72,
+          "durationBeats": 0.75,
+          "level": 0.13,
+          "voice": "bell",
+          "pan": -0.15
+        },
+        {
+          "beat": 11,
+          "midi": 69,
+          "durationBeats": 0.75,
+          "level": 0.13,
+          "voice": "bell",
+          "pan": -0.15
+        },
+        {
+          "beat": 12,
+          "midi": 67,
+          "durationBeats": 1,
+          "level": 0.13,
+          "voice": "bell",
+          "pan": -0.15
+        },
+        {
+          "beat": 14,
+          "midi": 62,
+          "durationBeats": 1.75,
+          "level": 0.13,
+          "voice": "bell",
+          "pan": -0.15
+        },
+        {
+          "beat": 16,
+          "midi": 62,
+          "durationBeats": 1.5,
+          "level": 0.1,
+          "voice": "bell",
+          "pan": 0.15
+        },
+        {
+          "beat": 18,
+          "midi": 67,
+          "durationBeats": 0.75,
+          "level": 0.1,
+          "voice": "bell",
+          "pan": 0.15
+        },
+        {
+          "beat": 19,
+          "midi": 65,
+          "durationBeats": 0.75,
+          "level": 0.1,
+          "voice": "bell",
+          "pan": 0.15
+        },
+        {
+          "beat": 20,
+          "midi": 69,
+          "durationBeats": 1.5,
+          "level": 0.1,
+          "voice": "bell",
+          "pan": 0.15
+        },
+        {
+          "beat": 22,
+          "midi": 67,
+          "durationBeats": 1,
+          "level": 0.1,
+          "voice": "bell",
+          "pan": 0.15
+        },
+        {
+          "beat": 24,
+          "midi": 65,
+          "durationBeats": 1.5,
+          "level": 0.1,
+          "voice": "bell",
+          "pan": 0.15
+        },
+        {
+          "beat": 26,
+          "midi": 72,
+          "durationBeats": 0.75,
+          "level": 0.1,
+          "voice": "bell",
+          "pan": 0.15
+        },
+        {
+          "beat": 27,
+          "midi": 69,
+          "durationBeats": 0.75,
+          "level": 0.1,
+          "voice": "bell",
+          "pan": 0.15
+        },
+        {
+          "beat": 28,
+          "midi": 67,
+          "durationBeats": 1,
+          "level": 0.1,
+          "voice": "bell",
+          "pan": 0.15
+        },
+        {
+          "beat": 30,
+          "midi": 62,
+          "durationBeats": 1.75,
+          "level": 0.1,
+          "voice": "bell",
+          "pan": 0.15
+        }
+      ]
+    },
+    "astralis": {
+      "title": "Astralis • Starlit Charts",
+      "rootMidi": 57,
+      "scale": [
+        0,
+        2,
+        4,
+        6,
+        9
+      ],
+      "chords": [
+        [
+          0,
+          4,
+          7
+        ],
+        [
+          2,
+          6,
+          9
+        ],
+        [
+          4,
+          7,
+          11
+        ],
+        [
+          0,
+          4,
+          7
+        ]
+      ],
+      "events": [
+        {
+          "beat": 0,
+          "midi": 57,
+          "durationBeats": 3.7,
+          "level": 0.037,
+          "voice": "pad",
+          "pan": -0.35
+        },
+        {
+          "beat": 0,
+          "midi": 61,
+          "durationBeats": 3.7,
+          "level": 0.037,
+          "voice": "pad",
+          "pan": 0.0
+        },
+        {
+          "beat": 0,
+          "midi": 64,
+          "durationBeats": 3.7,
+          "level": 0.037,
+          "voice": "pad",
+          "pan": 0.35
+        },
+        {
+          "beat": 0,
+          "midi": 45,
+          "durationBeats": 2.8,
+          "level": 0.068,
+          "voice": "pluck",
+          "pan": 0
+        },
+        {
+          "beat": 4,
+          "midi": 57,
+          "durationBeats": 3.7,
+          "level": 0.037,
+          "voice": "pad",
+          "pan": -0.35
+        },
+        {
+          "beat": 4,
+          "midi": 61,
+          "durationBeats": 3.7,
+          "level": 0.037,
+          "voice": "pad",
+          "pan": 0.0
+        },
+        {
+          "beat": 4,
+          "midi": 64,
+          "durationBeats": 3.7,
+          "level": 0.037,
+          "voice": "pad",
+          "pan": 0.35
+        },
+        {
+          "beat": 4,
+          "midi": 45,
+          "durationBeats": 2.8,
+          "level": 0.068,
+          "voice": "pluck",
+          "pan": 0
+        },
+        {
+          "beat": 6,
+          "midi": 52,
+          "durationBeats": 1.65,
+          "level": 0.035,
+          "voice": "pluck",
+          "pan": 0
+        },
+        {
+          "beat": 8,
+          "midi": 59,
+          "durationBeats": 3.7,
+          "level": 0.037,
+          "voice": "pad",
+          "pan": -0.35
+        },
+        {
+          "beat": 8,
+          "midi": 63,
+          "durationBeats": 3.7,
+          "level": 0.037,
+          "voice": "pad",
+          "pan": 0.0
+        },
+        {
+          "beat": 8,
+          "midi": 66,
+          "durationBeats": 3.7,
+          "level": 0.037,
+          "voice": "pad",
+          "pan": 0.35
+        },
+        {
+          "beat": 8,
+          "midi": 47,
+          "durationBeats": 2.8,
+          "level": 0.068,
+          "voice": "pluck",
+          "pan": 0
+        },
+        {
+          "beat": 12,
+          "midi": 59,
+          "durationBeats": 3.7,
+          "level": 0.037,
+          "voice": "pad",
+          "pan": -0.35
+        },
+        {
+          "beat": 12,
+          "midi": 63,
+          "durationBeats": 3.7,
+          "level": 0.037,
+          "voice": "pad",
+          "pan": 0.0
+        },
+        {
+          "beat": 12,
+          "midi": 66,
+          "durationBeats": 3.7,
+          "level": 0.037,
+          "voice": "pad",
+          "pan": 0.35
+        },
+        {
+          "beat": 12,
+          "midi": 47,
+          "durationBeats": 2.8,
+          "level": 0.068,
+          "voice": "pluck",
+          "pan": 0
+        },
+        {
+          "beat": 14,
+          "midi": 54,
+          "durationBeats": 1.65,
+          "level": 0.035,
+          "voice": "pluck",
+          "pan": 0
+        },
+        {
+          "beat": 16,
+          "midi": 61,
+          "durationBeats": 3.7,
+          "level": 0.037,
+          "voice": "pad",
+          "pan": -0.35
+        },
+        {
+          "beat": 16,
+          "midi": 64,
+          "durationBeats": 3.7,
+          "level": 0.037,
+          "voice": "pad",
+          "pan": 0.0
+        },
+        {
+          "beat": 16,
+          "midi": 68,
+          "durationBeats": 3.7,
+          "level": 0.037,
+          "voice": "pad",
+          "pan": 0.35
+        },
+        {
+          "beat": 16,
+          "midi": 49,
+          "durationBeats": 2.8,
+          "level": 0.068,
+          "voice": "pluck",
+          "pan": 0
+        },
+        {
+          "beat": 20,
+          "midi": 61,
+          "durationBeats": 3.7,
+          "level": 0.037,
+          "voice": "pad",
+          "pan": -0.35
+        },
+        {
+          "beat": 20,
+          "midi": 64,
+          "durationBeats": 3.7,
+          "level": 0.037,
+          "voice": "pad",
+          "pan": 0.0
+        },
+        {
+          "beat": 20,
+          "midi": 68,
+          "durationBeats": 3.7,
+          "level": 0.037,
+          "voice": "pad",
+          "pan": 0.35
+        },
+        {
+          "beat": 20,
+          "midi": 49,
+          "durationBeats": 2.8,
+          "level": 0.068,
+          "voice": "pluck",
+          "pan": 0
+        },
+        {
+          "beat": 22,
+          "midi": 56,
+          "durationBeats": 1.65,
+          "level": 0.035,
+          "voice": "pluck",
+          "pan": 0
+        },
+        {
+          "beat": 24,
+          "midi": 57,
+          "durationBeats": 3.7,
+          "level": 0.037,
+          "voice": "pad",
+          "pan": -0.35
+        },
+        {
+          "beat": 24,
+          "midi": 61,
+          "durationBeats": 3.7,
+          "level": 0.037,
+          "voice": "pad",
+          "pan": 0.0
+        },
+        {
+          "beat": 24,
+          "midi": 64,
+          "durationBeats": 3.7,
+          "level": 0.037,
+          "voice": "pad",
+          "pan": 0.35
+        },
+        {
+          "beat": 24,
+          "midi": 45,
+          "durationBeats": 2.8,
+          "level": 0.068,
+          "voice": "pluck",
+          "pan": 0
+        },
+        {
+          "beat": 28,
+          "midi": 57,
+          "durationBeats": 3.7,
+          "level": 0.037,
+          "voice": "pad",
+          "pan": -0.35
+        },
+        {
+          "beat": 28,
+          "midi": 61,
+          "durationBeats": 3.7,
+          "level": 0.037,
+          "voice": "pad",
+          "pan": 0.0
+        },
+        {
+          "beat": 28,
+          "midi": 64,
+          "durationBeats": 3.7,
+          "level": 0.037,
+          "voice": "pad",
+          "pan": 0.35
+        },
+        {
+          "beat": 28,
+          "midi": 45,
+          "durationBeats": 2.8,
+          "level": 0.068,
+          "voice": "pluck",
+          "pan": 0
+        },
+        {
+          "beat": 30,
+          "midi": 52,
+          "durationBeats": 1.65,
+          "level": 0.035,
+          "voice": "pluck",
+          "pan": 0
+        },
+        {
+          "beat": 0,
+          "midi": 69,
+          "durationBeats": 1.5,
+          "level": 0.13,
+          "voice": "bell",
+          "pan": -0.15
+        },
+        {
+          "beat": 2,
+          "midi": 73,
+          "durationBeats": 0.75,
+          "level": 0.13,
+          "voice": "bell",
+          "pan": -0.15
+        },
+        {
+          "beat": 3,
+          "midi": 71,
+          "durationBeats": 0.75,
+          "level": 0.13,
+          "voice": "bell",
+          "pan": -0.15
+        },
+        {
+          "beat": 4,
+          "midi": 75,
+          "durationBeats": 1.5,
+          "level": 0.13,
+          "voice": "bell",
+          "pan": -0.15
+        },
+        {
+          "beat": 6,
+          "midi": 73,
+          "durationBeats": 1,
+          "level": 0.13,
+          "voice": "bell",
+          "pan": -0.15
+        },
+        {
+          "beat": 8,
+          "midi": 71,
+          "durationBeats": 1.5,
+          "level": 0.13,
+          "voice": "bell",
+          "pan": -0.15
+        },
+        {
+          "beat": 10,
+          "midi": 78,
+          "durationBeats": 0.75,
+          "level": 0.13,
+          "voice": "bell",
+          "pan": -0.15
+        },
+        {
+          "beat": 11,
+          "midi": 75,
+          "durationBeats": 0.75,
+          "level": 0.13,
+          "voice": "bell",
+          "pan": -0.15
+        },
+        {
+          "beat": 12,
+          "midi": 73,
+          "durationBeats": 1,
+          "level": 0.13,
+          "voice": "bell",
+          "pan": -0.15
+        },
+        {
+          "beat": 14,
+          "midi": 69,
+          "durationBeats": 1.75,
+          "level": 0.13,
+          "voice": "bell",
+          "pan": -0.15
+        },
+        {
+          "beat": 16,
+          "midi": 69,
+          "durationBeats": 1.5,
+          "level": 0.1,
+          "voice": "bell",
+          "pan": 0.15
+        },
+        {
+          "beat": 18,
+          "midi": 73,
+          "durationBeats": 0.75,
+          "level": 0.1,
+          "voice": "bell",
+          "pan": 0.15
+        },
+        {
+          "beat": 19,
+          "midi": 71,
+          "durationBeats": 0.75,
+          "level": 0.1,
+          "voice": "bell",
+          "pan": 0.15
+        },
+        {
+          "beat": 20,
+          "midi": 75,
+          "durationBeats": 1.5,
+          "level": 0.1,
+          "voice": "bell",
+          "pan": 0.15
+        },
+        {
+          "beat": 22,
+          "midi": 73,
+          "durationBeats": 1,
+          "level": 0.1,
+          "voice": "bell",
+          "pan": 0.15
+        },
+        {
+          "beat": 24,
+          "midi": 71,
+          "durationBeats": 1.5,
+          "level": 0.1,
+          "voice": "bell",
+          "pan": 0.15
+        },
+        {
+          "beat": 26,
+          "midi": 78,
+          "durationBeats": 0.75,
+          "level": 0.1,
+          "voice": "bell",
+          "pan": 0.15
+        },
+        {
+          "beat": 27,
+          "midi": 75,
+          "durationBeats": 0.75,
+          "level": 0.1,
+          "voice": "bell",
+          "pan": 0.15
+        },
+        {
+          "beat": 28,
+          "midi": 73,
+          "durationBeats": 1,
+          "level": 0.1,
+          "voice": "bell",
+          "pan": 0.15
+        },
+        {
+          "beat": 30,
+          "midi": 69,
+          "durationBeats": 1.75,
+          "level": 0.1,
+          "voice": "bell",
+          "pan": 0.15
+        }
+      ]
+    },
+    "crosshaven": {
+      "title": "Crosshaven • Meeting Tides",
+      "rootMidi": 53,
+      "scale": [
+        0,
+        2,
+        4,
+        7,
+        9
+      ],
+      "chords": [
+        [
+          0,
+          4,
+          7
+        ],
+        [
+          5,
+          9,
+          12
+        ],
+        [
+          2,
+          5,
+          9
+        ],
+        [
+          7,
+          11,
+          14
+        ]
+      ],
+      "events": [
+        {
+          "beat": 0,
+          "midi": 53,
+          "durationBeats": 3.7,
+          "level": 0.037,
+          "voice": "pad",
+          "pan": -0.35
+        },
+        {
+          "beat": 0,
+          "midi": 57,
+          "durationBeats": 3.7,
+          "level": 0.037,
+          "voice": "pad",
+          "pan": 0.0
+        },
+        {
+          "beat": 0,
+          "midi": 60,
+          "durationBeats": 3.7,
+          "level": 0.037,
+          "voice": "pad",
+          "pan": 0.35
+        },
+        {
+          "beat": 0,
+          "midi": 41,
+          "durationBeats": 2.8,
+          "level": 0.068,
+          "voice": "pluck",
+          "pan": 0
+        },
+        {
+          "beat": 4,
+          "midi": 53,
+          "durationBeats": 3.7,
+          "level": 0.037,
+          "voice": "pad",
+          "pan": -0.35
+        },
+        {
+          "beat": 4,
+          "midi": 57,
+          "durationBeats": 3.7,
+          "level": 0.037,
+          "voice": "pad",
+          "pan": 0.0
+        },
+        {
+          "beat": 4,
+          "midi": 60,
+          "durationBeats": 3.7,
+          "level": 0.037,
+          "voice": "pad",
+          "pan": 0.35
+        },
+        {
+          "beat": 4,
+          "midi": 41,
+          "durationBeats": 2.8,
+          "level": 0.068,
+          "voice": "pluck",
+          "pan": 0
+        },
+        {
+          "beat": 6,
+          "midi": 48,
+          "durationBeats": 1.65,
+          "level": 0.035,
+          "voice": "pluck",
+          "pan": 0
+        },
+        {
+          "beat": 8,
+          "midi": 58,
+          "durationBeats": 3.7,
+          "level": 0.037,
+          "voice": "pad",
+          "pan": -0.35
+        },
+        {
+          "beat": 8,
+          "midi": 62,
+          "durationBeats": 3.7,
+          "level": 0.037,
+          "voice": "pad",
+          "pan": 0.0
+        },
+        {
+          "beat": 8,
+          "midi": 65,
+          "durationBeats": 3.7,
+          "level": 0.037,
+          "voice": "pad",
+          "pan": 0.35
+        },
+        {
+          "beat": 8,
+          "midi": 46,
+          "durationBeats": 2.8,
+          "level": 0.068,
+          "voice": "pluck",
+          "pan": 0
+        },
+        {
+          "beat": 12,
+          "midi": 58,
+          "durationBeats": 3.7,
+          "level": 0.037,
+          "voice": "pad",
+          "pan": -0.35
+        },
+        {
+          "beat": 12,
+          "midi": 62,
+          "durationBeats": 3.7,
+          "level": 0.037,
+          "voice": "pad",
+          "pan": 0.0
+        },
+        {
+          "beat": 12,
+          "midi": 65,
+          "durationBeats": 3.7,
+          "level": 0.037,
+          "voice": "pad",
+          "pan": 0.35
+        },
+        {
+          "beat": 12,
+          "midi": 46,
+          "durationBeats": 2.8,
+          "level": 0.068,
+          "voice": "pluck",
+          "pan": 0
+        },
+        {
+          "beat": 14,
+          "midi": 53,
+          "durationBeats": 1.65,
+          "level": 0.035,
+          "voice": "pluck",
+          "pan": 0
+        },
+        {
+          "beat": 16,
+          "midi": 55,
+          "durationBeats": 3.7,
+          "level": 0.037,
+          "voice": "pad",
+          "pan": -0.35
+        },
+        {
+          "beat": 16,
+          "midi": 58,
+          "durationBeats": 3.7,
+          "level": 0.037,
+          "voice": "pad",
+          "pan": 0.0
+        },
+        {
+          "beat": 16,
+          "midi": 62,
+          "durationBeats": 3.7,
+          "level": 0.037,
+          "voice": "pad",
+          "pan": 0.35
+        },
+        {
+          "beat": 16,
+          "midi": 43,
+          "durationBeats": 2.8,
+          "level": 0.068,
+          "voice": "pluck",
+          "pan": 0
+        },
+        {
+          "beat": 20,
+          "midi": 55,
+          "durationBeats": 3.7,
+          "level": 0.037,
+          "voice": "pad",
+          "pan": -0.35
+        },
+        {
+          "beat": 20,
+          "midi": 58,
+          "durationBeats": 3.7,
+          "level": 0.037,
+          "voice": "pad",
+          "pan": 0.0
+        },
+        {
+          "beat": 20,
+          "midi": 62,
+          "durationBeats": 3.7,
+          "level": 0.037,
+          "voice": "pad",
+          "pan": 0.35
+        },
+        {
+          "beat": 20,
+          "midi": 43,
+          "durationBeats": 2.8,
+          "level": 0.068,
+          "voice": "pluck",
+          "pan": 0
+        },
+        {
+          "beat": 22,
+          "midi": 50,
+          "durationBeats": 1.65,
+          "level": 0.035,
+          "voice": "pluck",
+          "pan": 0
+        },
+        {
+          "beat": 24,
+          "midi": 60,
+          "durationBeats": 3.7,
+          "level": 0.037,
+          "voice": "pad",
+          "pan": -0.35
+        },
+        {
+          "beat": 24,
+          "midi": 64,
+          "durationBeats": 3.7,
+          "level": 0.037,
+          "voice": "pad",
+          "pan": 0.0
+        },
+        {
+          "beat": 24,
+          "midi": 67,
+          "durationBeats": 3.7,
+          "level": 0.037,
+          "voice": "pad",
+          "pan": 0.35
+        },
+        {
+          "beat": 24,
+          "midi": 48,
+          "durationBeats": 2.8,
+          "level": 0.068,
+          "voice": "pluck",
+          "pan": 0
+        },
+        {
+          "beat": 28,
+          "midi": 60,
+          "durationBeats": 3.7,
+          "level": 0.037,
+          "voice": "pad",
+          "pan": -0.35
+        },
+        {
+          "beat": 28,
+          "midi": 64,
+          "durationBeats": 3.7,
+          "level": 0.037,
+          "voice": "pad",
+          "pan": 0.0
+        },
+        {
+          "beat": 28,
+          "midi": 67,
+          "durationBeats": 3.7,
+          "level": 0.037,
+          "voice": "pad",
+          "pan": 0.35
+        },
+        {
+          "beat": 28,
+          "midi": 48,
+          "durationBeats": 2.8,
+          "level": 0.068,
+          "voice": "pluck",
+          "pan": 0
+        },
+        {
+          "beat": 30,
+          "midi": 55,
+          "durationBeats": 1.65,
+          "level": 0.035,
+          "voice": "pluck",
+          "pan": 0
+        },
+        {
+          "beat": 0,
+          "midi": 65,
+          "durationBeats": 1.5,
+          "level": 0.13,
+          "voice": "pluck",
+          "pan": -0.15
+        },
+        {
+          "beat": 2,
+          "midi": 69,
+          "durationBeats": 0.75,
+          "level": 0.13,
+          "voice": "pluck",
+          "pan": -0.15
+        },
+        {
+          "beat": 3,
+          "midi": 67,
+          "durationBeats": 0.75,
+          "level": 0.13,
+          "voice": "pluck",
+          "pan": -0.15
+        },
+        {
+          "beat": 4,
+          "midi": 72,
+          "durationBeats": 1.5,
+          "level": 0.13,
+          "voice": "pluck",
+          "pan": -0.15
+        },
+        {
+          "beat": 6,
+          "midi": 69,
+          "durationBeats": 1,
+          "level": 0.13,
+          "voice": "pluck",
+          "pan": -0.15
+        },
+        {
+          "beat": 8,
+          "midi": 67,
+          "durationBeats": 1.5,
+          "level": 0.13,
+          "voice": "pluck",
+          "pan": -0.15
+        },
+        {
+          "beat": 10,
+          "midi": 74,
+          "durationBeats": 0.75,
+          "level": 0.13,
+          "voice": "pluck",
+          "pan": -0.15
+        },
+        {
+          "beat": 11,
+          "midi": 72,
+          "durationBeats": 0.75,
+          "level": 0.13,
+          "voice": "pluck",
+          "pan": -0.15
+        },
+        {
+          "beat": 12,
+          "midi": 69,
+          "durationBeats": 1,
+          "level": 0.13,
+          "voice": "pluck",
+          "pan": -0.15
+        },
+        {
+          "beat": 14,
+          "midi": 65,
+          "durationBeats": 1.75,
+          "level": 0.13,
+          "voice": "pluck",
+          "pan": -0.15
+        },
+        {
+          "beat": 16,
+          "midi": 65,
+          "durationBeats": 1.5,
+          "level": 0.1,
+          "voice": "pluck",
+          "pan": 0.15
+        },
+        {
+          "beat": 18,
+          "midi": 69,
+          "durationBeats": 0.75,
+          "level": 0.1,
+          "voice": "pluck",
+          "pan": 0.15
+        },
+        {
+          "beat": 19,
+          "midi": 67,
+          "durationBeats": 0.75,
+          "level": 0.1,
+          "voice": "pluck",
+          "pan": 0.15
+        },
+        {
+          "beat": 20,
+          "midi": 72,
+          "durationBeats": 1.5,
+          "level": 0.1,
+          "voice": "pluck",
+          "pan": 0.15
+        },
+        {
+          "beat": 22,
+          "midi": 69,
+          "durationBeats": 1,
+          "level": 0.1,
+          "voice": "pluck",
+          "pan": 0.15
+        },
+        {
+          "beat": 24,
+          "midi": 67,
+          "durationBeats": 1.5,
+          "level": 0.1,
+          "voice": "pluck",
+          "pan": 0.15
+        },
+        {
+          "beat": 26,
+          "midi": 74,
+          "durationBeats": 0.75,
+          "level": 0.1,
+          "voice": "pluck",
+          "pan": 0.15
+        },
+        {
+          "beat": 27,
+          "midi": 72,
+          "durationBeats": 0.75,
+          "level": 0.1,
+          "voice": "pluck",
+          "pan": 0.15
+        },
+        {
+          "beat": 28,
+          "midi": 69,
+          "durationBeats": 1,
+          "level": 0.1,
+          "voice": "pluck",
+          "pan": 0.15
+        },
+        {
+          "beat": 30,
+          "midi": 65,
+          "durationBeats": 1.75,
+          "level": 0.1,
+          "voice": "pluck",
+          "pan": 0.15
+        }
+      ]
+    },
+    "ironroot": {
+      "title": "Ironroot • A Shared Hearth",
+      "rootMidi": 50,
+      "scale": [
+        0,
+        2,
+        3,
+        7,
+        9
+      ],
+      "chords": [
+        [
+          0,
+          3,
+          7
+        ],
+        [
+          5,
+          9,
+          12
+        ],
+        [
+          3,
+          7,
+          10
+        ],
+        [
+          0,
+          3,
+          7
+        ]
+      ],
+      "events": [
+        {
+          "beat": 0,
+          "midi": 50,
+          "durationBeats": 3.7,
+          "level": 0.037,
+          "voice": "pad",
+          "pan": -0.35
+        },
+        {
+          "beat": 0,
+          "midi": 53,
+          "durationBeats": 3.7,
+          "level": 0.037,
+          "voice": "pad",
+          "pan": 0.0
+        },
+        {
+          "beat": 0,
+          "midi": 57,
+          "durationBeats": 3.7,
+          "level": 0.037,
+          "voice": "pad",
+          "pan": 0.35
+        },
+        {
+          "beat": 0,
+          "midi": 38,
+          "durationBeats": 2.8,
+          "level": 0.068,
+          "voice": "pluck",
+          "pan": 0
+        },
+        {
+          "beat": 4,
+          "midi": 50,
+          "durationBeats": 3.7,
+          "level": 0.037,
+          "voice": "pad",
+          "pan": -0.35
+        },
+        {
+          "beat": 4,
+          "midi": 53,
+          "durationBeats": 3.7,
+          "level": 0.037,
+          "voice": "pad",
+          "pan": 0.0
+        },
+        {
+          "beat": 4,
+          "midi": 57,
+          "durationBeats": 3.7,
+          "level": 0.037,
+          "voice": "pad",
+          "pan": 0.35
+        },
+        {
+          "beat": 4,
+          "midi": 38,
+          "durationBeats": 2.8,
+          "level": 0.068,
+          "voice": "pluck",
+          "pan": 0
+        },
+        {
+          "beat": 6,
+          "midi": 45,
+          "durationBeats": 1.65,
+          "level": 0.035,
+          "voice": "pluck",
+          "pan": 0
+        },
+        {
+          "beat": 8,
+          "midi": 55,
+          "durationBeats": 3.7,
+          "level": 0.037,
+          "voice": "pad",
+          "pan": -0.35
+        },
+        {
+          "beat": 8,
+          "midi": 59,
+          "durationBeats": 3.7,
+          "level": 0.037,
+          "voice": "pad",
+          "pan": 0.0
+        },
+        {
+          "beat": 8,
+          "midi": 62,
+          "durationBeats": 3.7,
+          "level": 0.037,
+          "voice": "pad",
+          "pan": 0.35
+        },
+        {
+          "beat": 8,
+          "midi": 43,
+          "durationBeats": 2.8,
+          "level": 0.068,
+          "voice": "pluck",
+          "pan": 0
+        },
+        {
+          "beat": 12,
+          "midi": 55,
+          "durationBeats": 3.7,
+          "level": 0.037,
+          "voice": "pad",
+          "pan": -0.35
+        },
+        {
+          "beat": 12,
+          "midi": 59,
+          "durationBeats": 3.7,
+          "level": 0.037,
+          "voice": "pad",
+          "pan": 0.0
+        },
+        {
+          "beat": 12,
+          "midi": 62,
+          "durationBeats": 3.7,
+          "level": 0.037,
+          "voice": "pad",
+          "pan": 0.35
+        },
+        {
+          "beat": 12,
+          "midi": 43,
+          "durationBeats": 2.8,
+          "level": 0.068,
+          "voice": "pluck",
+          "pan": 0
+        },
+        {
+          "beat": 14,
+          "midi": 50,
+          "durationBeats": 1.65,
+          "level": 0.035,
+          "voice": "pluck",
+          "pan": 0
+        },
+        {
+          "beat": 16,
+          "midi": 53,
+          "durationBeats": 3.7,
+          "level": 0.037,
+          "voice": "pad",
+          "pan": -0.35
+        },
+        {
+          "beat": 16,
+          "midi": 57,
+          "durationBeats": 3.7,
+          "level": 0.037,
+          "voice": "pad",
+          "pan": 0.0
+        },
+        {
+          "beat": 16,
+          "midi": 60,
+          "durationBeats": 3.7,
+          "level": 0.037,
+          "voice": "pad",
+          "pan": 0.35
+        },
+        {
+          "beat": 16,
+          "midi": 41,
+          "durationBeats": 2.8,
+          "level": 0.068,
+          "voice": "pluck",
+          "pan": 0
+        },
+        {
+          "beat": 20,
+          "midi": 53,
+          "durationBeats": 3.7,
+          "level": 0.037,
+          "voice": "pad",
+          "pan": -0.35
+        },
+        {
+          "beat": 20,
+          "midi": 57,
+          "durationBeats": 3.7,
+          "level": 0.037,
+          "voice": "pad",
+          "pan": 0.0
+        },
+        {
+          "beat": 20,
+          "midi": 60,
+          "durationBeats": 3.7,
+          "level": 0.037,
+          "voice": "pad",
+          "pan": 0.35
+        },
+        {
+          "beat": 20,
+          "midi": 41,
+          "durationBeats": 2.8,
+          "level": 0.068,
+          "voice": "pluck",
+          "pan": 0
+        },
+        {
+          "beat": 22,
+          "midi": 48,
+          "durationBeats": 1.65,
+          "level": 0.035,
+          "voice": "pluck",
+          "pan": 0
+        },
+        {
+          "beat": 24,
+          "midi": 50,
+          "durationBeats": 3.7,
+          "level": 0.037,
+          "voice": "pad",
+          "pan": -0.35
+        },
+        {
+          "beat": 24,
+          "midi": 53,
+          "durationBeats": 3.7,
+          "level": 0.037,
+          "voice": "pad",
+          "pan": 0.0
+        },
+        {
+          "beat": 24,
+          "midi": 57,
+          "durationBeats": 3.7,
+          "level": 0.037,
+          "voice": "pad",
+          "pan": 0.35
+        },
+        {
+          "beat": 24,
+          "midi": 38,
+          "durationBeats": 2.8,
+          "level": 0.068,
+          "voice": "pluck",
+          "pan": 0
+        },
+        {
+          "beat": 28,
+          "midi": 50,
+          "durationBeats": 3.7,
+          "level": 0.037,
+          "voice": "pad",
+          "pan": -0.35
+        },
+        {
+          "beat": 28,
+          "midi": 53,
+          "durationBeats": 3.7,
+          "level": 0.037,
+          "voice": "pad",
+          "pan": 0.0
+        },
+        {
+          "beat": 28,
+          "midi": 57,
+          "durationBeats": 3.7,
+          "level": 0.037,
+          "voice": "pad",
+          "pan": 0.35
+        },
+        {
+          "beat": 28,
+          "midi": 38,
+          "durationBeats": 2.8,
+          "level": 0.068,
+          "voice": "pluck",
+          "pan": 0
+        },
+        {
+          "beat": 30,
+          "midi": 45,
+          "durationBeats": 1.65,
+          "level": 0.035,
+          "voice": "pluck",
+          "pan": 0
+        },
+        {
+          "beat": 0,
+          "midi": 62,
+          "durationBeats": 1.5,
+          "level": 0.13,
+          "voice": "flute",
+          "pan": -0.15
+        },
+        {
+          "beat": 2,
+          "midi": 65,
+          "durationBeats": 0.75,
+          "level": 0.13,
+          "voice": "flute",
+          "pan": -0.15
+        },
+        {
+          "beat": 3,
+          "midi": 64,
+          "durationBeats": 0.75,
+          "level": 0.13,
+          "voice": "flute",
+          "pan": -0.15
+        },
+        {
+          "beat": 4,
+          "midi": 69,
+          "durationBeats": 1.5,
+          "level": 0.13,
+          "voice": "flute",
+          "pan": -0.15
+        },
+        {
+          "beat": 6,
+          "midi": 65,
+          "durationBeats": 1,
+          "level": 0.13,
+          "voice": "flute",
+          "pan": -0.15
+        },
+        {
+          "beat": 8,
+          "midi": 64,
+          "durationBeats": 1.5,
+          "level": 0.13,
+          "voice": "flute",
+          "pan": -0.15
+        },
+        {
+          "beat": 10,
+          "midi": 71,
+          "durationBeats": 0.75,
+          "level": 0.13,
+          "voice": "flute",
+          "pan": -0.15
+        },
+        {
+          "beat": 11,
+          "midi": 69,
+          "durationBeats": 0.75,
+          "level": 0.13,
+          "voice": "flute",
+          "pan": -0.15
+        },
+        {
+          "beat": 12,
+          "midi": 65,
+          "durationBeats": 1,
+          "level": 0.13,
+          "voice": "flute",
+          "pan": -0.15
+        },
+        {
+          "beat": 14,
+          "midi": 62,
+          "durationBeats": 1.75,
+          "level": 0.13,
+          "voice": "flute",
+          "pan": -0.15
+        },
+        {
+          "beat": 16,
+          "midi": 62,
+          "durationBeats": 1.5,
+          "level": 0.1,
+          "voice": "flute",
+          "pan": 0.15
+        },
+        {
+          "beat": 18,
+          "midi": 65,
+          "durationBeats": 0.75,
+          "level": 0.1,
+          "voice": "flute",
+          "pan": 0.15
+        },
+        {
+          "beat": 19,
+          "midi": 64,
+          "durationBeats": 0.75,
+          "level": 0.1,
+          "voice": "flute",
+          "pan": 0.15
+        },
+        {
+          "beat": 20,
+          "midi": 69,
+          "durationBeats": 1.5,
+          "level": 0.1,
+          "voice": "flute",
+          "pan": 0.15
+        },
+        {
+          "beat": 22,
+          "midi": 65,
+          "durationBeats": 1,
+          "level": 0.1,
+          "voice": "flute",
+          "pan": 0.15
+        },
+        {
+          "beat": 24,
+          "midi": 64,
+          "durationBeats": 1.5,
+          "level": 0.1,
+          "voice": "flute",
+          "pan": 0.15
+        },
+        {
+          "beat": 26,
+          "midi": 71,
+          "durationBeats": 0.75,
+          "level": 0.1,
+          "voice": "flute",
+          "pan": 0.15
+        },
+        {
+          "beat": 27,
+          "midi": 69,
+          "durationBeats": 0.75,
+          "level": 0.1,
+          "voice": "flute",
+          "pan": 0.15
+        },
+        {
+          "beat": 28,
+          "midi": 65,
+          "durationBeats": 1,
+          "level": 0.1,
+          "voice": "flute",
+          "pan": 0.15
+        },
+        {
+          "beat": 30,
+          "midi": 62,
+          "durationBeats": 1.75,
+          "level": 0.1,
+          "voice": "flute",
+          "pan": 0.15
+        }
+      ]
+    },
+    "guild_haven": {
+      "title": "Guild Island • Homeward",
+      "rootMidi": 50,
+      "scale": [
+        0,
+        2,
+        4,
+        7,
+        9
+      ],
+      "chords": [
+        [
+          0,
+          4,
+          7
+        ],
+        [
+          5,
+          9,
+          12
+        ],
+        [
+          2,
+          5,
+          9
+        ],
+        [
+          0,
+          4,
+          7
+        ]
+      ],
+      "events": [
+        {
+          "beat": 0,
+          "midi": 50,
+          "durationBeats": 3.7,
+          "level": 0.037,
+          "voice": "pad",
+          "pan": -0.35
+        },
+        {
+          "beat": 0,
+          "midi": 54,
+          "durationBeats": 3.7,
+          "level": 0.037,
+          "voice": "pad",
+          "pan": 0.0
+        },
+        {
+          "beat": 0,
+          "midi": 57,
+          "durationBeats": 3.7,
+          "level": 0.037,
+          "voice": "pad",
+          "pan": 0.35
+        },
+        {
+          "beat": 0,
+          "midi": 38,
+          "durationBeats": 2.8,
+          "level": 0.068,
+          "voice": "pluck",
+          "pan": 0
+        },
+        {
+          "beat": 4,
+          "midi": 50,
+          "durationBeats": 3.7,
+          "level": 0.037,
+          "voice": "pad",
+          "pan": -0.35
+        },
+        {
+          "beat": 4,
+          "midi": 54,
+          "durationBeats": 3.7,
+          "level": 0.037,
+          "voice": "pad",
+          "pan": 0.0
+        },
+        {
+          "beat": 4,
+          "midi": 57,
+          "durationBeats": 3.7,
+          "level": 0.037,
+          "voice": "pad",
+          "pan": 0.35
+        },
+        {
+          "beat": 4,
+          "midi": 38,
+          "durationBeats": 2.8,
+          "level": 0.068,
+          "voice": "pluck",
+          "pan": 0
+        },
+        {
+          "beat": 6,
+          "midi": 45,
+          "durationBeats": 1.65,
+          "level": 0.035,
+          "voice": "pluck",
+          "pan": 0
+        },
+        {
+          "beat": 8,
+          "midi": 55,
+          "durationBeats": 3.7,
+          "level": 0.037,
+          "voice": "pad",
+          "pan": -0.35
+        },
+        {
+          "beat": 8,
+          "midi": 59,
+          "durationBeats": 3.7,
+          "level": 0.037,
+          "voice": "pad",
+          "pan": 0.0
+        },
+        {
+          "beat": 8,
+          "midi": 62,
+          "durationBeats": 3.7,
+          "level": 0.037,
+          "voice": "pad",
+          "pan": 0.35
+        },
+        {
+          "beat": 8,
+          "midi": 43,
+          "durationBeats": 2.8,
+          "level": 0.068,
+          "voice": "pluck",
+          "pan": 0
+        },
+        {
+          "beat": 12,
+          "midi": 55,
+          "durationBeats": 3.7,
+          "level": 0.037,
+          "voice": "pad",
+          "pan": -0.35
+        },
+        {
+          "beat": 12,
+          "midi": 59,
+          "durationBeats": 3.7,
+          "level": 0.037,
+          "voice": "pad",
+          "pan": 0.0
+        },
+        {
+          "beat": 12,
+          "midi": 62,
+          "durationBeats": 3.7,
+          "level": 0.037,
+          "voice": "pad",
+          "pan": 0.35
+        },
+        {
+          "beat": 12,
+          "midi": 43,
+          "durationBeats": 2.8,
+          "level": 0.068,
+          "voice": "pluck",
+          "pan": 0
+        },
+        {
+          "beat": 14,
+          "midi": 50,
+          "durationBeats": 1.65,
+          "level": 0.035,
+          "voice": "pluck",
+          "pan": 0
+        },
+        {
+          "beat": 16,
+          "midi": 52,
+          "durationBeats": 3.7,
+          "level": 0.037,
+          "voice": "pad",
+          "pan": -0.35
+        },
+        {
+          "beat": 16,
+          "midi": 55,
+          "durationBeats": 3.7,
+          "level": 0.037,
+          "voice": "pad",
+          "pan": 0.0
+        },
+        {
+          "beat": 16,
+          "midi": 59,
+          "durationBeats": 3.7,
+          "level": 0.037,
+          "voice": "pad",
+          "pan": 0.35
+        },
+        {
+          "beat": 16,
+          "midi": 40,
+          "durationBeats": 2.8,
+          "level": 0.068,
+          "voice": "pluck",
+          "pan": 0
+        },
+        {
+          "beat": 20,
+          "midi": 52,
+          "durationBeats": 3.7,
+          "level": 0.037,
+          "voice": "pad",
+          "pan": -0.35
+        },
+        {
+          "beat": 20,
+          "midi": 55,
+          "durationBeats": 3.7,
+          "level": 0.037,
+          "voice": "pad",
+          "pan": 0.0
+        },
+        {
+          "beat": 20,
+          "midi": 59,
+          "durationBeats": 3.7,
+          "level": 0.037,
+          "voice": "pad",
+          "pan": 0.35
+        },
+        {
+          "beat": 20,
+          "midi": 40,
+          "durationBeats": 2.8,
+          "level": 0.068,
+          "voice": "pluck",
+          "pan": 0
+        },
+        {
+          "beat": 22,
+          "midi": 47,
+          "durationBeats": 1.65,
+          "level": 0.035,
+          "voice": "pluck",
+          "pan": 0
+        },
+        {
+          "beat": 24,
+          "midi": 50,
+          "durationBeats": 3.7,
+          "level": 0.037,
+          "voice": "pad",
+          "pan": -0.35
+        },
+        {
+          "beat": 24,
+          "midi": 54,
+          "durationBeats": 3.7,
+          "level": 0.037,
+          "voice": "pad",
+          "pan": 0.0
+        },
+        {
+          "beat": 24,
+          "midi": 57,
+          "durationBeats": 3.7,
+          "level": 0.037,
+          "voice": "pad",
+          "pan": 0.35
+        },
+        {
+          "beat": 24,
+          "midi": 38,
+          "durationBeats": 2.8,
+          "level": 0.068,
+          "voice": "pluck",
+          "pan": 0
+        },
+        {
+          "beat": 28,
+          "midi": 50,
+          "durationBeats": 3.7,
+          "level": 0.037,
+          "voice": "pad",
+          "pan": -0.35
+        },
+        {
+          "beat": 28,
+          "midi": 54,
+          "durationBeats": 3.7,
+          "level": 0.037,
+          "voice": "pad",
+          "pan": 0.0
+        },
+        {
+          "beat": 28,
+          "midi": 57,
+          "durationBeats": 3.7,
+          "level": 0.037,
+          "voice": "pad",
+          "pan": 0.35
+        },
+        {
+          "beat": 28,
+          "midi": 38,
+          "durationBeats": 2.8,
+          "level": 0.068,
+          "voice": "pluck",
+          "pan": 0
+        },
+        {
+          "beat": 30,
+          "midi": 45,
+          "durationBeats": 1.65,
+          "level": 0.035,
+          "voice": "pluck",
+          "pan": 0
+        },
+        {
+          "beat": 0,
+          "midi": 62,
+          "durationBeats": 1.5,
+          "level": 0.13,
+          "voice": "pluck",
+          "pan": -0.15
+        },
+        {
+          "beat": 2,
+          "midi": 66,
+          "durationBeats": 0.75,
+          "level": 0.13,
+          "voice": "pluck",
+          "pan": -0.15
+        },
+        {
+          "beat": 3,
+          "midi": 64,
+          "durationBeats": 0.75,
+          "level": 0.13,
+          "voice": "pluck",
+          "pan": -0.15
+        },
+        {
+          "beat": 4,
+          "midi": 69,
+          "durationBeats": 1.5,
+          "level": 0.13,
+          "voice": "pluck",
+          "pan": -0.15
+        },
+        {
+          "beat": 6,
+          "midi": 66,
+          "durationBeats": 1,
+          "level": 0.13,
+          "voice": "pluck",
+          "pan": -0.15
+        },
+        {
+          "beat": 8,
+          "midi": 64,
+          "durationBeats": 1.5,
+          "level": 0.13,
+          "voice": "pluck",
+          "pan": -0.15
+        },
+        {
+          "beat": 10,
+          "midi": 71,
+          "durationBeats": 0.75,
+          "level": 0.13,
+          "voice": "pluck",
+          "pan": -0.15
+        },
+        {
+          "beat": 11,
+          "midi": 69,
+          "durationBeats": 0.75,
+          "level": 0.13,
+          "voice": "pluck",
+          "pan": -0.15
+        },
+        {
+          "beat": 12,
+          "midi": 66,
+          "durationBeats": 1,
+          "level": 0.13,
+          "voice": "pluck",
+          "pan": -0.15
+        },
+        {
+          "beat": 14,
+          "midi": 62,
+          "durationBeats": 1.75,
+          "level": 0.13,
+          "voice": "pluck",
+          "pan": -0.15
+        },
+        {
+          "beat": 16,
+          "midi": 62,
+          "durationBeats": 1.5,
+          "level": 0.1,
+          "voice": "pluck",
+          "pan": 0.15
+        },
+        {
+          "beat": 18,
+          "midi": 66,
+          "durationBeats": 0.75,
+          "level": 0.1,
+          "voice": "pluck",
+          "pan": 0.15
+        },
+        {
+          "beat": 19,
+          "midi": 64,
+          "durationBeats": 0.75,
+          "level": 0.1,
+          "voice": "pluck",
+          "pan": 0.15
+        },
+        {
+          "beat": 20,
+          "midi": 69,
+          "durationBeats": 1.5,
+          "level": 0.1,
+          "voice": "pluck",
+          "pan": 0.15
+        },
+        {
+          "beat": 22,
+          "midi": 66,
+          "durationBeats": 1,
+          "level": 0.1,
+          "voice": "pluck",
+          "pan": 0.15
+        },
+        {
+          "beat": 24,
+          "midi": 64,
+          "durationBeats": 1.5,
+          "level": 0.1,
+          "voice": "pluck",
+          "pan": 0.15
+        },
+        {
+          "beat": 26,
+          "midi": 71,
+          "durationBeats": 0.75,
+          "level": 0.1,
+          "voice": "pluck",
+          "pan": 0.15
+        },
+        {
+          "beat": 27,
+          "midi": 69,
+          "durationBeats": 0.75,
+          "level": 0.1,
+          "voice": "pluck",
+          "pan": 0.15
+        },
+        {
+          "beat": 28,
+          "midi": 66,
+          "durationBeats": 1,
+          "level": 0.1,
+          "voice": "pluck",
+          "pan": 0.15
+        },
+        {
+          "beat": 30,
+          "midi": 62,
+          "durationBeats": 1.75,
+          "level": 0.1,
+          "voice": "pluck",
+          "pan": 0.15
+        }
+      ]
+    }
+  }
+}

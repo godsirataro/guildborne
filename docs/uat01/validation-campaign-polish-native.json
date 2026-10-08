@@ -1,0 +1,10 @@
+{
+  "scope": "Post-journey source overrides in isolated native fixtures; active profile untouched",
+  "campaignGui": {"views":84,"textBoundsChecks":780,"capturedActions":36,"languages":["en","th"],"widths":[240,640,704],"chapters":6},
+  "noviceGui": {"views":54,"textBoundsChecks":324,"capturedActions":18,"widths":[240,640,704]},
+  "scrollRetention": {"retainedRebuilds":12,"checks":["AutomaticCanvasSize rebuild preserves offset","latest render wins","explicit reset","short page clamps","destroy before callback"]},
+  "cargo": {"parts":3,"checks":["root-welded","massless","no collision/query/touch","session cleanup"]},
+  "world": {"markers":24,"receipts":6,"notifications":6},
+  "profileWrites":0,
+  "actualPolishedJourney":false
+}

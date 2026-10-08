@@ -1,0 +1,53 @@
+{
+  "date": "2026-10-02",
+  "place": "Guildborne_OfflinePlaytest.rbxlx",
+  "placeId": 0,
+  "gameId": 0,
+  "runtimeSourceDifference": "ServerScriptService/Server/Config/Runtime only",
+  "persistence": "Studio memory; discarded on Stop",
+  "cloudAllowlistEmpty": true,
+  "ordinaryStagingProfileTouched": false,
+  "humanUAT": false,
+  "automatedRemoteJourney": "BLOCKED by Studio Capabilities before first command; no capability flags changed",
+  "uiChecks": {
+    "titleContinuePointer": "PASS",
+    "chooseWarriorPointer": "PASS",
+    "confirmClassPointer": "PASS; Warrior Human tier1 level1 XP0, HP30 Attack8 Defense4",
+    "classChoicePreservesScroll": {
+      "before": 635,
+      "after": 635,
+      "selectedMarker": true,
+      "confirmationPresent": true
+    },
+    "recruitWarriorPointer": "PASS",
+    "addAndSavePartyPointer": "PASS",
+    "trailWatchRealTimer": "PASS; 15 seconds",
+    "trailWatchClaimPointer": "PASS; result displays30 Gold,20 XP per member,Training Sword and2Herb",
+    "timberEscortRealTimerAndClaim": "PASS;25seconds,40Gold,30XP,6Timber,1IronIngot",
+    "quarryPatrolRealTimerAndClaim": "PASS;35seconds,60Gold,40XP,6IronOre,1IronSword",
+    "hallUpgradePointer": "PASS; Hall2,50Gold after130earned and80cost",
+    "archerPriestRecruitmentPointer": "PASS;20Gold each,10Gold remaining",
+    "inventoryActorCycle": "PASS; player to Archer to Priest to Warrior",
+    "assignTrainingSwordPointer": "PASS; Rowan loadout displays weapon: Training Sword",
+    "lateBeginTutorial": "PASS; recognizes completed milestones and displays Tutorial complete",
+    "finalSummary": "10 Gold · Hall Lv2",
+    "threeHeroParty": "PASS; Archer22HP,Priest24HP,Warrior33HP after save",
+    "keyboardMenuAndCycle": "PASS; M closes management,T selects Archer and Piercing Shot",
+    "hudTouchSelection": "PASS; corrected MCP coordinates select Priest/Heal then Warrior/Power Strike",
+    "toolInputCalibration": "MCP mouseButtonClick emitted Touch; requested115,154 observed53,134. Session offset62,20. Instance-path coordinates did not compensate this offset. No production layer change retained.",
+    "headerMenuTouch": "PASS with corrected session coordinates"
+  },
+  "method": "Supported MCP mouse actions on real UI. Some scroll positions set directly to bring buttons into the small750x304 safe viewport; no remote injection or profile edits.",
+  "remaining": [
+    "Guided onboarding order with Begin tutorial first",
+    "Idempotency assertions in offline runtime",
+    "Persistence/reconnect",
+    "Physical mobile/gamepad",
+    "Human20-30minute UAT"
+  ],
+  "cleanup": {
+    "ownedPlayStopped": true,
+    "temporaryPointerObserversRemovedByStop": true,
+    "displayOrderRestored": true
+  }
+}

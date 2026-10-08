@@ -1,0 +1,38 @@
+C:\Work\MySelf\Guildborne\tools\verify_item_kit.py:14: DeprecationWarning: 'Material.use_nodes' is expected to be removed in Blender 6.0
+  assert all(m and m.use_nodes for m in o.data.materials),path.name
+FBX version: 7400
+01:53:14 | INFO: Data are loaded, start creating Blender stuff
+01:53:14 | INFO: Blender create Mesh node Cube
+01:53:14 | INFO: glTF import finished in 0.00s
+FBX version: 7400
+01:53:14 | INFO: Data are loaded, start creating Blender stuff
+01:53:14 | INFO: Blender create Mesh node Cube.006
+01:53:14 | INFO: glTF import finished in 0.00s
+FBX version: 7400
+01:53:14 | INFO: Data are loaded, start creating Blender stuff
+01:53:14 | INFO: Blender create Mesh node Cube.011
+01:53:14 | INFO: glTF import finished in 0.00s
+FBX version: 7400
+01:53:15 | INFO: Data are loaded, start creating Blender stuff
+01:53:15 | INFO: Blender create Mesh node Cube.024
+01:53:15 | INFO: glTF import finished in 0.00s
+FBX version: 7400
+01:53:15 | INFO: Data are loaded, start creating Blender stuff
+01:53:15 | INFO: Blender create Mesh node Cube.036
+01:53:15 | INFO: glTF import finished in 0.00s
+FBX version: 7400
+01:53:15 | INFO: Data are loaded, start creating Blender stuff
+01:53:15 | INFO: Blender create Mesh node Cube.045
+01:53:15 | INFO: glTF import finished in 0.00s
+FBX version: 7400
+01:53:15 | INFO: Data are loaded, start creating Blender stuff
+01:53:15 | INFO: Blender create Mesh node Cube.056
+01:53:15 | INFO: glTF import finished in 0.01s
+FBX version: 7400
+01:53:15 | INFO: Data are loaded, start creating Blender stuff
+01:53:15 | INFO: Blender create Mesh node Cube.092
+01:53:15 | INFO: glTF import finished in 0.00s
+ITEM_ROUNDTRIP_PASS 16 exports
+Blender 5.2.1 LTS (hash 9e2066aef7ef built 2026-08-25 02:38:20)
+
+Blender quit

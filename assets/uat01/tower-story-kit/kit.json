@@ -1,0 +1,7143 @@
+{
+  "schema": 1,
+  "units": "stud",
+  "upAxis": "Y",
+  "palette": {
+    "ivory": [
+      216,
+      207,
+      185
+    ],
+    "navy": [
+      42,
+      57,
+      76
+    ],
+    "dark": [
+      29,
+      37,
+      50
+    ],
+    "brass": [
+      188,
+      149,
+      75
+    ],
+    "wood": [
+      110,
+      76,
+      57
+    ],
+    "teal": [
+      64,
+      195,
+      185
+    ],
+    "amber": [
+      243,
+      181,
+      76
+    ],
+    "blue": [
+      99,
+      157,
+      220
+    ]
+  },
+  "assets": [
+    {
+      "id": "charter_gate",
+      "kind": "Chapter04Scene",
+      "parts": [
+        {
+          "name": "WalkableFloor",
+          "size": [
+            64,
+            1,
+            72
+          ],
+          "position": [
+            0,
+            -0.5,
+            0
+          ],
+          "color": "navy",
+          "rotation": [
+            0,
+            0,
+            0
+          ],
+          "solid": true
+        },
+        {
+          "name": "ColumnFoot",
+          "size": [
+            3,
+            1,
+            3
+          ],
+          "position": [
+            -9.0,
+            0.5,
+            -25
+          ],
+          "color": "ivory",
+          "rotation": [
+            0,
+            0,
+            0
+          ],
+          "solid": true
+        },
+        {
+          "name": "ColumnShaft",
+          "size": [
+            2,
+            26,
+            2
+          ],
+          "position": [
+            -9.0,
+            14.0,
+            -25
+          ],
+          "color": "navy",
+          "rotation": [
+            0,
+            0,
+            0
+          ],
+          "solid": true
+        },
+        {
+          "name": "ColumnBand",
+          "size": [
+            2.4,
+            0.5,
+            2.4
+          ],
+          "position": [
+            -9.0,
+            2,
+            -25
+          ],
+          "color": "brass",
+          "rotation": [
+            0,
+            0,
+            0
+          ],
+          "solid": false
+        },
+        {
+          "name": "ColumnBand",
+          "size": [
+            2.4,
+            0.5,
+            2.4
+          ],
+          "position": [
+            -9.0,
+            25,
+            -25
+          ],
+          "color": "brass",
+          "rotation": [
+            0,
+            0,
+            0
+          ],
+          "solid": false
+        },
+        {
+          "name": "ColumnCrown",
+          "size": [
+            3,
+            1,
+            3
+          ],
+          "position": [
+            -9.0,
+            27.5,
+            -25
+          ],
+          "color": "ivory",
+          "rotation": [
+            0,
+            0,
+            0
+          ],
+          "solid": true
+        },
+        {
+          "name": "ColumnFoot",
+          "size": [
+            3,
+            1,
+            3
+          ],
+          "position": [
+            9.0,
+            0.5,
+            -25
+          ],
+          "color": "ivory",
+          "rotation": [
+            0,
+            0,
+            0
+          ],
+          "solid": true
+        },
+        {
+          "name": "ColumnShaft",
+          "size": [
+            2,
+            26,
+            2
+          ],
+          "position": [
+            9.0,
+            14.0,
+            -25
+          ],
+          "color": "navy",
+          "rotation": [
+            0,
+            0,
+            0
+          ],
+          "solid": true
+        },
+        {
+          "name": "ColumnBand",
+          "size": [
+            2.4,
+            0.5,
+            2.4
+          ],
+          "position": [
+            9.0,
+            2,
+            -25
+          ],
+          "color": "brass",
+          "rotation": [
+            0,
+            0,
+            0
+          ],
+          "solid": false
+        },
+        {
+          "name": "ColumnBand",
+          "size": [
+            2.4,
+            0.5,
+            2.4
+          ],
+          "position": [
+            9.0,
+            25,
+            -25
+          ],
+          "color": "brass",
+          "rotation": [
+            0,
+            0,
+            0
+          ],
+          "solid": false
+        },
+        {
+          "name": "ColumnCrown",
+          "size": [
+            3,
+            1,
+            3
+          ],
+          "position": [
+            9.0,
+            27.5,
+            -25
+          ],
+          "color": "ivory",
+          "rotation": [
+            0,
+            0,
+            0
+          ],
+          "solid": true
+        },
+        {
+          "name": "ArchLintel",
+          "size": [
+            21,
+            2,
+            3
+          ],
+          "position": [
+            0,
+            28,
+            -25
+          ],
+          "color": "ivory",
+          "rotation": [
+            0,
+            0,
+            0
+          ],
+          "solid": true
+        },
+        {
+          "name": "CrestInlay",
+          "size": [
+            2,
+            2,
+            0.2
+          ],
+          "position": [
+            0,
+            28,
+            -23.4
+          ],
+          "color": "teal",
+          "rotation": [
+            0,
+            0,
+            45
+          ],
+          "solid": false
+        },
+        {
+          "name": "ColumnFoot",
+          "size": [
+            3,
+            1,
+            3
+          ],
+          "position": [
+            -27,
+            0.5,
+            -28
+          ],
+          "color": "ivory",
+          "rotation": [
+            0,
+            0,
+            0
+          ],
+          "solid": true
+        },
+        {
+          "name": "ColumnShaft",
+          "size": [
+            2,
+            20,
+            2
+          ],
+          "position": [
+            -27,
+            11.0,
+            -28
+          ],
+          "color": "navy",
+          "rotation": [
+            0,
+            0,
+            0
+          ],
+          "solid": true
+        },
+        {
+          "name": "ColumnBand",
+          "size": [
+            2.4,
+            0.5,
+            2.4
+          ],
+          "position": [
+            -27,
+            2,
+            -28
+          ],
+          "color": "brass",
+          "rotation": [
+            0,
+            0,
+            0
+          ],
+          "solid": false
+        },
+        {
+          "name": "ColumnBand",
+          "size": [
+            2.4,
+            0.5,
+            2.4
+          ],
+          "position": [
+            -27,
+            19,
+            -28
+          ],
+          "color": "brass",
+          "rotation": [
+            0,
+            0,
+            0
+          ],
+          "solid": false
+        },
+        {
+          "name": "ColumnCrown",
+          "size": [
+            3,
+            1,
+            3
+          ],
+          "position": [
+            -27,
+            21.5,
+            -28
+          ],
+          "color": "ivory",
+          "rotation": [
+            0,
+            0,
+            0
+          ],
+          "solid": true
+        },
+        {
+          "name": "ColumnFoot",
+          "size": [
+            3,
+            1,
+            3
+          ],
+          "position": [
+            27,
+            0.5,
+            -28
+          ],
+          "color": "ivory",
+          "rotation": [
+            0,
+            0,
+            0
+          ],
+          "solid": true
+        },
+        {
+          "name": "ColumnShaft",
+          "size": [
+            2,
+            20,
+            2
+          ],
+          "position": [
+            27,
+            11.0,
+            -28
+          ],
+          "color": "navy",
+          "rotation": [
+            0,
+            0,
+            0
+          ],
+          "solid": true
+        },
+        {
+          "name": "ColumnBand",
+          "size": [
+            2.4,
+            0.5,
+            2.4
+          ],
+          "position": [
+            27,
+            2,
+            -28
+          ],
+          "color": "brass",
+          "rotation": [
+            0,
+            0,
+            0
+          ],
+          "solid": false
+        },
+        {
+          "name": "ColumnBand",
+          "size": [
+            2.4,
+            0.5,
+            2.4
+          ],
+          "position": [
+            27,
+            19,
+            -28
+          ],
+          "color": "brass",
+          "rotation": [
+            0,
+            0,
+            0
+          ],
+          "solid": false
+        },
+        {
+          "name": "ColumnCrown",
+          "size": [
+            3,
+            1,
+            3
+          ],
+          "position": [
+            27,
+            21.5,
+            -28
+          ],
+          "color": "ivory",
+          "rotation": [
+            0,
+            0,
+            0
+          ],
+          "solid": true
+        },
+        {
+          "name": "DeskTop",
+          "size": [
+            10,
+            0.6,
+            4
+          ],
+          "position": [
+            24,
+            3,
+            -23
+          ],
+          "color": "wood",
+          "rotation": [
+            0,
+            0,
+            0
+          ],
+          "solid": true
+        },
+        {
+          "name": "DeskLeg",
+          "size": [
+            0.6,
+            3,
+            0.6
+          ],
+          "position": [
+            20.0,
+            1.5,
+            -24.4
+          ],
+          "color": "brass",
+          "rotation": [
+            0,
+            0,
+            0
+          ],
+          "solid": true
+        },
+        {
+          "name": "DeskLeg",
+          "size": [
+            0.6,
+            3,
+            0.6
+          ],
+          "position": [
+            20.0,
+            1.5,
+            -21.6
+          ],
+          "color": "brass",
+          "rotation": [
+            0,
+            0,
+            0
+          ],
+          "solid": true
+        },
+        {
+          "name": "DeskLeg",
+          "size": [
+            0.6,
+            3,
+            0.6
+          ],
+          "position": [
+            28.0,
+            1.5,
+            -24.4
+          ],
+          "color": "brass",
+          "rotation": [
+            0,
+            0,
+            0
+          ],
+          "solid": true
+        },
+        {
+          "name": "DeskLeg",
+          "size": [
+            0.6,
+            3,
+            0.6
+          ],
+          "position": [
+            28.0,
+            1.5,
+            -21.6
+          ],
+          "color": "brass",
+          "rotation": [
+            0,
+            0,
+            0
+          ],
+          "solid": true
+        },
+        {
+          "name": "CheckpointPlinth",
+          "size": [
+            3,
+            3,
+            3
+          ],
+          "position": [
+            -12,
+            1.5,
+            24
+          ],
+          "color": "ivory",
+          "rotation": [
+            0,
+            0,
+            0
+          ],
+          "solid": true
+        },
+        {
+          "name": "CheckpointGlyph",
+          "size": [
+            1,
+            0.1,
+            1
+          ],
+          "position": [
+            -12,
+            3.1,
+            24
+          ],
+          "color": "teal",
+          "rotation": [
+            0,
+            0,
+            0
+          ],
+          "solid": false
+        },
+        {
+          "name": "CheckpointPlinth",
+          "size": [
+            3,
+            3,
+            3
+          ],
+          "position": [
+            12,
+            1.5,
+            24
+          ],
+          "color": "ivory",
+          "rotation": [
+            0,
+            0,
+            0
+          ],
+          "solid": true
+        },
+        {
+          "name": "CheckpointGlyph",
+          "size": [
+            1,
+            0.1,
+            1
+          ],
+          "position": [
+            12,
+            3.1,
+            24
+          ],
+          "color": "teal",
+          "rotation": [
+            0,
+            0,
+            0
+          ],
+          "solid": false
+        },
+        {
+          "name": "CheckpointPlinth",
+          "size": [
+            3,
+            3,
+            3
+          ],
+          "position": [
+            -12,
+            1.5,
+            15
+          ],
+          "color": "ivory",
+          "rotation": [
+            0,
+            0,
+            0
+          ],
+          "solid": true
+        },
+        {
+          "name": "CheckpointGlyph",
+          "size": [
+            1,
+            0.1,
+            1
+          ],
+          "position": [
+            -12,
+            3.1,
+            15
+          ],
+          "color": "teal",
+          "rotation": [
+            0,
+            0,
+            0
+          ],
+          "solid": false
+        },
+        {
+          "name": "CheckpointPlinth",
+          "size": [
+            3,
+            3,
+            3
+          ],
+          "position": [
+            12,
+            1.5,
+            15
+          ],
+          "color": "ivory",
+          "rotation": [
+            0,
+            0,
+            0
+          ],
+          "solid": true
+        },
+        {
+          "name": "CheckpointGlyph",
+          "size": [
+            1,
+            0.1,
+            1
+          ],
+          "position": [
+            12,
+            3.1,
+            15
+          ],
+          "color": "teal",
+          "rotation": [
+            0,
+            0,
+            0
+          ],
+          "solid": false
+        },
+        {
+          "name": "CheckpointPlinth",
+          "size": [
+            3,
+            3,
+            3
+          ],
+          "position": [
+            -12,
+            1.5,
+            6
+          ],
+          "color": "ivory",
+          "rotation": [
+            0,
+            0,
+            0
+          ],
+          "solid": true
+        },
+        {
+          "name": "CheckpointGlyph",
+          "size": [
+            1,
+            0.1,
+            1
+          ],
+          "position": [
+            -12,
+            3.1,
+            6
+          ],
+          "color": "teal",
+          "rotation": [
+            0,
+            0,
+            0
+          ],
+          "solid": false
+        },
+        {
+          "name": "CheckpointPlinth",
+          "size": [
+            3,
+            3,
+            3
+          ],
+          "position": [
+            12,
+            1.5,
+            6
+          ],
+          "color": "ivory",
+          "rotation": [
+            0,
+            0,
+            0
+          ],
+          "solid": true
+        },
+        {
+          "name": "CheckpointGlyph",
+          "size": [
+            1,
+            0.1,
+            1
+          ],
+          "position": [
+            12,
+            3.1,
+            6
+          ],
+          "color": "teal",
+          "rotation": [
+            0,
+            0,
+            0
+          ],
+          "solid": false
+        },
+        {
+          "name": "CheckpointPlinth",
+          "size": [
+            3,
+            3,
+            3
+          ],
+          "position": [
+            -12,
+            1.5,
+            -3
+          ],
+          "color": "ivory",
+          "rotation": [
+            0,
+            0,
+            0
+          ],
+          "solid": true
+        },
+        {
+          "name": "CheckpointGlyph",
+          "size": [
+            1,
+            0.1,
+            1
+          ],
+          "position": [
+            -12,
+            3.1,
+            -3
+          ],
+          "color": "teal",
+          "rotation": [
+            0,
+            0,
+            0
+          ],
+          "solid": false
+        },
+        {
+          "name": "CheckpointPlinth",
+          "size": [
+            3,
+            3,
+            3
+          ],
+          "position": [
+            12,
+            1.5,
+            -3
+          ],
+          "color": "ivory",
+          "rotation": [
+            0,
+            0,
+            0
+          ],
+          "solid": true
+        },
+        {
+          "name": "CheckpointGlyph",
+          "size": [
+            1,
+            0.1,
+            1
+          ],
+          "position": [
+            12,
+            3.1,
+            -3
+          ],
+          "color": "teal",
+          "rotation": [
+            0,
+            0,
+            0
+          ],
+          "solid": false
+        },
+        {
+          "name": "CheckpointPlinth",
+          "size": [
+            3,
+            3,
+            3
+          ],
+          "position": [
+            -12,
+            1.5,
+            -12
+          ],
+          "color": "ivory",
+          "rotation": [
+            0,
+            0,
+            0
+          ],
+          "solid": true
+        },
+        {
+          "name": "CheckpointGlyph",
+          "size": [
+            1,
+            0.1,
+            1
+          ],
+          "position": [
+            -12,
+            3.1,
+            -12
+          ],
+          "color": "teal",
+          "rotation": [
+            0,
+            0,
+            0
+          ],
+          "solid": false
+        },
+        {
+          "name": "CheckpointPlinth",
+          "size": [
+            3,
+            3,
+            3
+          ],
+          "position": [
+            12,
+            1.5,
+            -12
+          ],
+          "color": "ivory",
+          "rotation": [
+            0,
+            0,
+            0
+          ],
+          "solid": true
+        },
+        {
+          "name": "CheckpointGlyph",
+          "size": [
+            1,
+            0.1,
+            1
+          ],
+          "position": [
+            12,
+            3.1,
+            -12
+          ],
+          "color": "teal",
+          "rotation": [
+            0,
+            0,
+            0
+          ],
+          "solid": false
+        },
+        {
+          "name": "AisleInlay",
+          "size": [
+            0.3,
+            0.08,
+            7
+          ],
+          "position": [
+            0,
+            0.05,
+            -8
+          ],
+          "color": "brass",
+          "rotation": [
+            0,
+            0,
+            0
+          ],
+          "solid": false
+        },
+        {
+          "name": "AisleInlay",
+          "size": [
+            0.3,
+            0.08,
+            7
+          ],
+          "position": [
+            0,
+            0.05,
+            4
+          ],
+          "color": "brass",
+          "rotation": [
+            0,
+            0,
+            0
+          ],
+          "solid": false
+        },
+        {
+          "name": "AisleInlay",
+          "size": [
+            0.3,
+            0.08,
+            7
+          ],
+          "position": [
+            0,
+            0.05,
+            16
+          ],
+          "color": "brass",
+          "rotation": [
+            0,
+            0,
+            0
+          ],
+          "solid": false
+        },
+        {
+          "name": "AisleInlay",
+          "size": [
+            0.3,
+            0.08,
+            7
+          ],
+          "position": [
+            0,
+            0.05,
+            28
+          ],
+          "color": "brass",
+          "rotation": [
+            0,
+            0,
+            0
+          ],
+          "solid": false
+        }
+      ],
+      "markers": [
+        {
+          "id": "council",
+          "position": [
+            24,
+            0.15,
+            -17
+          ]
+        },
+        {
+          "id": "charter",
+          "position": [
+            0,
+            0.15,
+            -20
+          ]
+        },
+        {
+          "id": "checkpoint_1",
+          "position": [
+            -16,
+            0.15,
+            24
+          ]
+        },
+        {
+          "id": "checkpoint_2",
+          "position": [
+            16,
+            0.15,
+            24
+          ]
+        },
+        {
+          "id": "checkpoint_3",
+          "position": [
+            -16,
+            0.15,
+            15
+          ]
+        },
+        {
+          "id": "checkpoint_4",
+          "position": [
+            16,
+            0.15,
+            15
+          ]
+        },
+        {
+          "id": "checkpoint_5",
+          "position": [
+            -16,
+            0.15,
+            6
+          ]
+        },
+        {
+          "id": "checkpoint_6",
+          "position": [
+            16,
+            0.15,
+            6
+          ]
+        },
+        {
+          "id": "checkpoint_7",
+          "position": [
+            -16,
+            0.15,
+            -3
+          ]
+        },
+        {
+          "id": "checkpoint_8",
+          "position": [
+            16,
+            0.15,
+            -3
+          ]
+        },
+        {
+          "id": "checkpoint_9",
+          "position": [
+            -16,
+            0.15,
+            -12
+          ]
+        },
+        {
+          "id": "checkpoint_10",
+          "position": [
+            16,
+            0.15,
+            -12
+          ]
+        },
+        {
+          "id": "route_chart",
+          "position": [
+            0,
+            0.15,
+            29
+          ]
+        }
+      ],
+      "footprint": [
+        64,
+        72
+      ],
+      "aisleWidth": 10
+    },
+    {
+      "id": "guardian_school",
+      "kind": "Chapter04Scene",
+      "parts": [
+        {
+          "name": "WalkableFloor",
+          "size": [
+            64,
+            1,
+            48
+          ],
+          "position": [
+            0,
+            -0.5,
+            0
+          ],
+          "color": "navy",
+          "rotation": [
+            0,
+            0,
+            0
+          ],
+          "solid": true
+        },
+        {
+          "name": "ColumnFoot",
+          "size": [
+            3,
+            1,
+            3
+          ],
+          "position": [
+            -28,
+            0.5,
+            -19
+          ],
+          "color": "ivory",
+          "rotation": [
+            0,
+            0,
+            0
+          ],
+          "solid": true
+        },
+        {
+          "name": "ColumnShaft",
+          "size": [
+            2,
+            18,
+            2
+          ],
+          "position": [
+            -28,
+            10.0,
+            -19
+          ],
+          "color": "navy",
+          "rotation": [
+            0,
+            0,
+            0
+          ],
+          "solid": true
+        },
+        {
+          "name": "ColumnBand",
+          "size": [
+            2.4,
+            0.5,
+            2.4
+          ],
+          "position": [
+            -28,
+            2,
+            -19
+          ],
+          "color": "brass",
+          "rotation": [
+            0,
+            0,
+            0
+          ],
+          "solid": false
+        },
+        {
+          "name": "ColumnBand",
+          "size": [
+            2.4,
+            0.5,
+            2.4
+          ],
+          "position": [
+            -28,
+            17,
+            -19
+          ],
+          "color": "brass",
+          "rotation": [
+            0,
+            0,
+            0
+          ],
+          "solid": false
+        },
+        {
+          "name": "ColumnCrown",
+          "size": [
+            3,
+            1,
+            3
+          ],
+          "position": [
+            -28,
+            19.5,
+            -19
+          ],
+          "color": "ivory",
+          "rotation": [
+            0,
+            0,
+            0
+          ],
+          "solid": true
+        },
+        {
+          "name": "ColumnFoot",
+          "size": [
+            3,
+            1,
+            3
+          ],
+          "position": [
+            28,
+            0.5,
+            -19
+          ],
+          "color": "ivory",
+          "rotation": [
+            0,
+            0,
+            0
+          ],
+          "solid": true
+        },
+        {
+          "name": "ColumnShaft",
+          "size": [
+            2,
+            18,
+            2
+          ],
+          "position": [
+            28,
+            10.0,
+            -19
+          ],
+          "color": "navy",
+          "rotation": [
+            0,
+            0,
+            0
+          ],
+          "solid": true
+        },
+        {
+          "name": "ColumnBand",
+          "size": [
+            2.4,
+            0.5,
+            2.4
+          ],
+          "position": [
+            28,
+            2,
+            -19
+          ],
+          "color": "brass",
+          "rotation": [
+            0,
+            0,
+            0
+          ],
+          "solid": false
+        },
+        {
+          "name": "ColumnBand",
+          "size": [
+            2.4,
+            0.5,
+            2.4
+          ],
+          "position": [
+            28,
+            17,
+            -19
+          ],
+          "color": "brass",
+          "rotation": [
+            0,
+            0,
+            0
+          ],
+          "solid": false
+        },
+        {
+          "name": "ColumnCrown",
+          "size": [
+            3,
+            1,
+            3
+          ],
+          "position": [
+            28,
+            19.5,
+            -19
+          ],
+          "color": "ivory",
+          "rotation": [
+            0,
+            0,
+            0
+          ],
+          "solid": true
+        },
+        {
+          "name": "ColumnFoot",
+          "size": [
+            3,
+            1,
+            3
+          ],
+          "position": [
+            -8.0,
+            0.5,
+            -18
+          ],
+          "color": "ivory",
+          "rotation": [
+            0,
+            0,
+            0
+          ],
+          "solid": true
+        },
+        {
+          "name": "ColumnShaft",
+          "size": [
+            2,
+            16,
+            2
+          ],
+          "position": [
+            -8.0,
+            9.0,
+            -18
+          ],
+          "color": "navy",
+          "rotation": [
+            0,
+            0,
+            0
+          ],
+          "solid": true
+        },
+        {
+          "name": "ColumnBand",
+          "size": [
+            2.4,
+            0.5,
+            2.4
+          ],
+          "position": [
+            -8.0,
+            2,
+            -18
+          ],
+          "color": "brass",
+          "rotation": [
+            0,
+            0,
+            0
+          ],
+          "solid": false
+        },
+        {
+          "name": "ColumnBand",
+          "size": [
+            2.4,
+            0.5,
+            2.4
+          ],
+          "position": [
+            -8.0,
+            15,
+            -18
+          ],
+          "color": "brass",
+          "rotation": [
+            0,
+            0,
+            0
+          ],
+          "solid": false
+        },
+        {
+          "name": "ColumnCrown",
+          "size": [
+            3,
+            1,
+            3
+          ],
+          "position": [
+            -8.0,
+            17.5,
+            -18
+          ],
+          "color": "ivory",
+          "rotation": [
+            0,
+            0,
+            0
+          ],
+          "solid": true
+        },
+        {
+          "name": "ColumnFoot",
+          "size": [
+            3,
+            1,
+            3
+          ],
+          "position": [
+            8.0,
+            0.5,
+            -18
+          ],
+          "color": "ivory",
+          "rotation": [
+            0,
+            0,
+            0
+          ],
+          "solid": true
+        },
+        {
+          "name": "ColumnShaft",
+          "size": [
+            2,
+            16,
+            2
+          ],
+          "position": [
+            8.0,
+            9.0,
+            -18
+          ],
+          "color": "navy",
+          "rotation": [
+            0,
+            0,
+            0
+          ],
+          "solid": true
+        },
+        {
+          "name": "ColumnBand",
+          "size": [
+            2.4,
+            0.5,
+            2.4
+          ],
+          "position": [
+            8.0,
+            2,
+            -18
+          ],
+          "color": "brass",
+          "rotation": [
+            0,
+            0,
+            0
+          ],
+          "solid": false
+        },
+        {
+          "name": "ColumnBand",
+          "size": [
+            2.4,
+            0.5,
+            2.4
+          ],
+          "position": [
+            8.0,
+            15,
+            -18
+          ],
+          "color": "brass",
+          "rotation": [
+            0,
+            0,
+            0
+          ],
+          "solid": false
+        },
+        {
+          "name": "ColumnCrown",
+          "size": [
+            3,
+            1,
+            3
+          ],
+          "position": [
+            8.0,
+            17.5,
+            -18
+          ],
+          "color": "ivory",
+          "rotation": [
+            0,
+            0,
+            0
+          ],
+          "solid": true
+        },
+        {
+          "name": "ArchLintel",
+          "size": [
+            19,
+            2,
+            3
+          ],
+          "position": [
+            0,
+            18,
+            -18
+          ],
+          "color": "ivory",
+          "rotation": [
+            0,
+            0,
+            0
+          ],
+          "solid": true
+        },
+        {
+          "name": "CrestInlay",
+          "size": [
+            2,
+            2,
+            0.2
+          ],
+          "position": [
+            0,
+            18,
+            -16.4
+          ],
+          "color": "teal",
+          "rotation": [
+            0,
+            0,
+            45
+          ],
+          "solid": false
+        },
+        {
+          "name": "TrainingPlatform",
+          "size": [
+            12,
+            0.15,
+            12
+          ],
+          "position": [
+            -17,
+            0.08,
+            0
+          ],
+          "color": "ivory",
+          "rotation": [
+            0,
+            0,
+            0
+          ],
+          "solid": false
+        },
+        {
+          "name": "TrainingBoundary",
+          "size": [
+            10,
+            0.12,
+            0.2
+          ],
+          "position": [
+            -17,
+            0.16,
+            -5
+          ],
+          "color": "amber",
+          "rotation": [
+            0,
+            0,
+            0
+          ],
+          "solid": false
+        },
+        {
+          "name": "TrainingBoundary",
+          "size": [
+            10,
+            0.12,
+            0.2
+          ],
+          "position": [
+            -17,
+            0.16,
+            5
+          ],
+          "color": "amber",
+          "rotation": [
+            0,
+            0,
+            0
+          ],
+          "solid": false
+        },
+        {
+          "name": "BeaconBase",
+          "size": [
+            2,
+            1,
+            2
+          ],
+          "position": [
+            -17,
+            0.5,
+            -10
+          ],
+          "color": "ivory",
+          "rotation": [
+            0,
+            0,
+            0
+          ],
+          "solid": true
+        },
+        {
+          "name": "BeaconStem",
+          "size": [
+            0.6,
+            5,
+            0.6
+          ],
+          "position": [
+            -17,
+            3.5,
+            -10
+          ],
+          "color": "brass",
+          "rotation": [
+            0,
+            0,
+            0
+          ],
+          "solid": true
+        },
+        {
+          "name": "BeaconLight",
+          "size": [
+            1.5,
+            2,
+            1.5
+          ],
+          "position": [
+            -17,
+            6.5,
+            -10
+          ],
+          "color": "amber",
+          "rotation": [
+            0,
+            0,
+            0
+          ],
+          "solid": false
+        },
+        {
+          "name": "TrainingPlatform",
+          "size": [
+            12,
+            0.15,
+            12
+          ],
+          "position": [
+            17,
+            0.08,
+            0
+          ],
+          "color": "ivory",
+          "rotation": [
+            0,
+            0,
+            0
+          ],
+          "solid": false
+        },
+        {
+          "name": "TrainingBoundary",
+          "size": [
+            10,
+            0.12,
+            0.2
+          ],
+          "position": [
+            17,
+            0.16,
+            -5
+          ],
+          "color": "teal",
+          "rotation": [
+            0,
+            0,
+            0
+          ],
+          "solid": false
+        },
+        {
+          "name": "TrainingBoundary",
+          "size": [
+            10,
+            0.12,
+            0.2
+          ],
+          "position": [
+            17,
+            0.16,
+            5
+          ],
+          "color": "teal",
+          "rotation": [
+            0,
+            0,
+            0
+          ],
+          "solid": false
+        },
+        {
+          "name": "BeaconBase",
+          "size": [
+            2,
+            1,
+            2
+          ],
+          "position": [
+            17,
+            0.5,
+            -10
+          ],
+          "color": "ivory",
+          "rotation": [
+            0,
+            0,
+            0
+          ],
+          "solid": true
+        },
+        {
+          "name": "BeaconStem",
+          "size": [
+            0.6,
+            5,
+            0.6
+          ],
+          "position": [
+            17,
+            3.5,
+            -10
+          ],
+          "color": "brass",
+          "rotation": [
+            0,
+            0,
+            0
+          ],
+          "solid": true
+        },
+        {
+          "name": "BeaconLight",
+          "size": [
+            1.5,
+            2,
+            1.5
+          ],
+          "position": [
+            17,
+            6.5,
+            -10
+          ],
+          "color": "teal",
+          "rotation": [
+            0,
+            0,
+            0
+          ],
+          "solid": false
+        },
+        {
+          "name": "ShieldStand",
+          "size": [
+            0.8,
+            5,
+            0.8
+          ],
+          "position": [
+            -17,
+            2.5,
+            -5
+          ],
+          "color": "wood",
+          "rotation": [
+            0,
+            0,
+            0
+          ],
+          "solid": true
+        },
+        {
+          "name": "TrainingShield",
+          "size": [
+            4,
+            5,
+            1
+          ],
+          "position": [
+            -17,
+            4,
+            -5
+          ],
+          "color": "brass",
+          "rotation": [
+            0,
+            0,
+            0
+          ],
+          "solid": true
+        },
+        {
+          "name": "ShieldStripe",
+          "size": [
+            0.4,
+            4,
+            1.1
+          ],
+          "position": [
+            -17,
+            4,
+            -5
+          ],
+          "color": "ivory",
+          "rotation": [
+            0,
+            0,
+            0
+          ],
+          "solid": false
+        },
+        {
+          "name": "HealingBasin",
+          "size": [
+            5,
+            1,
+            4
+          ],
+          "position": [
+            17,
+            2.5,
+            -5
+          ],
+          "color": "ivory",
+          "rotation": [
+            0,
+            0,
+            0
+          ],
+          "solid": true
+        },
+        {
+          "name": "HealingWater",
+          "size": [
+            4,
+            0.1,
+            3
+          ],
+          "position": [
+            17,
+            3.1,
+            -5
+          ],
+          "color": "teal",
+          "rotation": [
+            0,
+            0,
+            0
+          ],
+          "solid": false
+        },
+        {
+          "name": "PlaqueStand",
+          "size": [
+            1.2,
+            3,
+            1.2
+          ],
+          "position": [
+            -17,
+            1.5,
+            -18
+          ],
+          "color": "brass",
+          "rotation": [
+            0,
+            0,
+            0
+          ],
+          "solid": true
+        },
+        {
+          "name": "PlaqueFace",
+          "size": [
+            4,
+            4,
+            0.5
+          ],
+          "position": [
+            -17,
+            5,
+            -18
+          ],
+          "color": "dark",
+          "rotation": [
+            0,
+            0,
+            0
+          ],
+          "solid": true
+        },
+        {
+          "name": "TriangleSide",
+          "size": [
+            0.22,
+            2,
+            0.2
+          ],
+          "position": [
+            -17.6,
+            5,
+            -17.6
+          ],
+          "color": "teal",
+          "rotation": [
+            0,
+            0,
+            35
+          ],
+          "solid": false
+        },
+        {
+          "name": "TriangleSide",
+          "size": [
+            0.22,
+            2,
+            0.2
+          ],
+          "position": [
+            -16.4,
+            5,
+            -17.6
+          ],
+          "color": "teal",
+          "rotation": [
+            0,
+            0,
+            -35
+          ],
+          "solid": false
+        },
+        {
+          "name": "TriangleBase",
+          "size": [
+            2.1,
+            0.22,
+            0.2
+          ],
+          "position": [
+            -17,
+            4.2,
+            -17.6
+          ],
+          "color": "teal",
+          "rotation": [
+            0,
+            0,
+            0
+          ],
+          "solid": false
+        },
+        {
+          "name": "PlaqueStand",
+          "size": [
+            1.2,
+            3,
+            1.2
+          ],
+          "position": [
+            0,
+            1.5,
+            -18
+          ],
+          "color": "brass",
+          "rotation": [
+            0,
+            0,
+            0
+          ],
+          "solid": true
+        },
+        {
+          "name": "PlaqueFace",
+          "size": [
+            4,
+            4,
+            0.5
+          ],
+          "position": [
+            0,
+            5,
+            -18
+          ],
+          "color": "dark",
+          "rotation": [
+            0,
+            0,
+            0
+          ],
+          "solid": true
+        },
+        {
+          "name": "Diamond",
+          "size": [
+            1.5,
+            1.5,
+            0.2
+          ],
+          "position": [
+            0,
+            5,
+            -17.6
+          ],
+          "color": "teal",
+          "rotation": [
+            0,
+            0,
+            45
+          ],
+          "solid": false
+        },
+        {
+          "name": "PlaqueStand",
+          "size": [
+            1.2,
+            3,
+            1.2
+          ],
+          "position": [
+            17,
+            1.5,
+            -18
+          ],
+          "color": "brass",
+          "rotation": [
+            0,
+            0,
+            0
+          ],
+          "solid": true
+        },
+        {
+          "name": "PlaqueFace",
+          "size": [
+            4,
+            4,
+            0.5
+          ],
+          "position": [
+            17,
+            5,
+            -18
+          ],
+          "color": "dark",
+          "rotation": [
+            0,
+            0,
+            0
+          ],
+          "solid": true
+        },
+        {
+          "name": "Cross",
+          "size": [
+            0.22,
+            2.1,
+            0.2
+          ],
+          "position": [
+            17,
+            5,
+            -17.6
+          ],
+          "color": "teal",
+          "rotation": [
+            0,
+            0,
+            -45
+          ],
+          "solid": false
+        },
+        {
+          "name": "Cross",
+          "size": [
+            0.22,
+            2.1,
+            0.2
+          ],
+          "position": [
+            17,
+            5,
+            -17.6
+          ],
+          "color": "teal",
+          "rotation": [
+            0,
+            0,
+            45
+          ],
+          "solid": false
+        }
+      ],
+      "markers": [
+        {
+          "id": "rule_1",
+          "position": [
+            -17,
+            0.15,
+            -14
+          ]
+        },
+        {
+          "id": "rule_2",
+          "position": [
+            0,
+            0.15,
+            -14
+          ]
+        },
+        {
+          "id": "rule_3",
+          "position": [
+            17,
+            0.15,
+            -14
+          ]
+        },
+        {
+          "id": "guard_trial",
+          "position": [
+            -17,
+            0.15,
+            3
+          ]
+        },
+        {
+          "id": "mend_trial",
+          "position": [
+            17,
+            0.15,
+            3
+          ]
+        },
+        {
+          "id": "refuge",
+          "position": [
+            0,
+            0.15,
+            9
+          ]
+        },
+        {
+          "id": "defense_trial",
+          "position": [
+            0,
+            0.15,
+            -4
+          ]
+        }
+      ],
+      "footprint": [
+        64,
+        48
+      ],
+      "aisleWidth": 10
+    },
+    {
+      "id": "hidden_archive",
+      "kind": "Chapter04Scene",
+      "parts": [
+        {
+          "name": "WalkableFloor",
+          "size": [
+            64,
+            1,
+            56
+          ],
+          "position": [
+            0,
+            -0.5,
+            0
+          ],
+          "color": "navy",
+          "rotation": [
+            0,
+            0,
+            0
+          ],
+          "solid": true
+        },
+        {
+          "name": "ArchiveWall",
+          "size": [
+            30,
+            18,
+            3
+          ],
+          "position": [
+            0,
+            9,
+            0
+          ],
+          "color": "dark",
+          "rotation": [
+            0,
+            0,
+            0
+          ],
+          "solid": true
+        },
+        {
+          "name": "ArchiveShelf",
+          "size": [
+            31,
+            0.5,
+            4
+          ],
+          "position": [
+            0,
+            2,
+            0
+          ],
+          "color": "wood",
+          "rotation": [
+            0,
+            0,
+            0
+          ],
+          "solid": true
+        },
+        {
+          "name": "ArchiveShelf",
+          "size": [
+            31,
+            0.5,
+            4
+          ],
+          "position": [
+            0,
+            7,
+            0
+          ],
+          "color": "wood",
+          "rotation": [
+            0,
+            0,
+            0
+          ],
+          "solid": true
+        },
+        {
+          "name": "ArchiveShelf",
+          "size": [
+            31,
+            0.5,
+            4
+          ],
+          "position": [
+            0,
+            12,
+            0
+          ],
+          "color": "wood",
+          "rotation": [
+            0,
+            0,
+            0
+          ],
+          "solid": true
+        },
+        {
+          "name": "ArchiveShelf",
+          "size": [
+            31,
+            0.5,
+            4
+          ],
+          "position": [
+            0,
+            17,
+            0
+          ],
+          "color": "wood",
+          "rotation": [
+            0,
+            0,
+            0
+          ],
+          "solid": true
+        },
+        {
+          "name": "ShelfUpright",
+          "size": [
+            0.5,
+            17,
+            4
+          ],
+          "position": [
+            -14,
+            9,
+            0
+          ],
+          "color": "brass",
+          "rotation": [
+            0,
+            0,
+            0
+          ],
+          "solid": true
+        },
+        {
+          "name": "ShelfUpright",
+          "size": [
+            0.5,
+            17,
+            4
+          ],
+          "position": [
+            -7,
+            9,
+            0
+          ],
+          "color": "brass",
+          "rotation": [
+            0,
+            0,
+            0
+          ],
+          "solid": true
+        },
+        {
+          "name": "ShelfUpright",
+          "size": [
+            0.5,
+            17,
+            4
+          ],
+          "position": [
+            0,
+            9,
+            0
+          ],
+          "color": "brass",
+          "rotation": [
+            0,
+            0,
+            0
+          ],
+          "solid": true
+        },
+        {
+          "name": "ShelfUpright",
+          "size": [
+            0.5,
+            17,
+            4
+          ],
+          "position": [
+            7,
+            9,
+            0
+          ],
+          "color": "brass",
+          "rotation": [
+            0,
+            0,
+            0
+          ],
+          "solid": true
+        },
+        {
+          "name": "ShelfUpright",
+          "size": [
+            0.5,
+            17,
+            4
+          ],
+          "position": [
+            14,
+            9,
+            0
+          ],
+          "color": "brass",
+          "rotation": [
+            0,
+            0,
+            0
+          ],
+          "solid": true
+        },
+        {
+          "name": "ArchiveVolume",
+          "size": [
+            1.8,
+            3,
+            2.2
+          ],
+          "position": [
+            -12,
+            4,
+            0.8
+          ],
+          "color": "teal",
+          "rotation": [
+            0,
+            0,
+            0
+          ],
+          "solid": true
+        },
+        {
+          "name": "ArchiveVolume",
+          "size": [
+            1.8,
+            3,
+            2.2
+          ],
+          "position": [
+            -9,
+            4,
+            0.8
+          ],
+          "color": "ivory",
+          "rotation": [
+            0,
+            0,
+            0
+          ],
+          "solid": true
+        },
+        {
+          "name": "ArchiveVolume",
+          "size": [
+            1.8,
+            3,
+            2.2
+          ],
+          "position": [
+            -6,
+            4,
+            0.8
+          ],
+          "color": "navy",
+          "rotation": [
+            0,
+            0,
+            0
+          ],
+          "solid": true
+        },
+        {
+          "name": "ArchiveVolume",
+          "size": [
+            1.8,
+            3,
+            2.2
+          ],
+          "position": [
+            -3,
+            4,
+            0.8
+          ],
+          "color": "brass",
+          "rotation": [
+            0,
+            0,
+            0
+          ],
+          "solid": true
+        },
+        {
+          "name": "ArchiveVolume",
+          "size": [
+            1.8,
+            3,
+            2.2
+          ],
+          "position": [
+            0,
+            4,
+            0.8
+          ],
+          "color": "teal",
+          "rotation": [
+            0,
+            0,
+            0
+          ],
+          "solid": true
+        },
+        {
+          "name": "ArchiveVolume",
+          "size": [
+            1.8,
+            3,
+            2.2
+          ],
+          "position": [
+            3,
+            4,
+            0.8
+          ],
+          "color": "ivory",
+          "rotation": [
+            0,
+            0,
+            0
+          ],
+          "solid": true
+        },
+        {
+          "name": "ArchiveVolume",
+          "size": [
+            1.8,
+            3,
+            2.2
+          ],
+          "position": [
+            6,
+            4,
+            0.8
+          ],
+          "color": "navy",
+          "rotation": [
+            0,
+            0,
+            0
+          ],
+          "solid": true
+        },
+        {
+          "name": "ArchiveVolume",
+          "size": [
+            1.8,
+            3,
+            2.2
+          ],
+          "position": [
+            9,
+            4,
+            0.8
+          ],
+          "color": "brass",
+          "rotation": [
+            0,
+            0,
+            0
+          ],
+          "solid": true
+        },
+        {
+          "name": "ArchiveVolume",
+          "size": [
+            1.8,
+            3,
+            2.2
+          ],
+          "position": [
+            12,
+            4,
+            0.8
+          ],
+          "color": "teal",
+          "rotation": [
+            0,
+            0,
+            0
+          ],
+          "solid": true
+        },
+        {
+          "name": "ArchiveVolume",
+          "size": [
+            1.8,
+            3,
+            2.2
+          ],
+          "position": [
+            -12,
+            9,
+            0.8
+          ],
+          "color": "ivory",
+          "rotation": [
+            0,
+            0,
+            0
+          ],
+          "solid": true
+        },
+        {
+          "name": "ArchiveVolume",
+          "size": [
+            1.8,
+            3,
+            2.2
+          ],
+          "position": [
+            -9,
+            9,
+            0.8
+          ],
+          "color": "navy",
+          "rotation": [
+            0,
+            0,
+            0
+          ],
+          "solid": true
+        },
+        {
+          "name": "ArchiveVolume",
+          "size": [
+            1.8,
+            3,
+            2.2
+          ],
+          "position": [
+            -6,
+            9,
+            0.8
+          ],
+          "color": "brass",
+          "rotation": [
+            0,
+            0,
+            0
+          ],
+          "solid": true
+        },
+        {
+          "name": "ArchiveVolume",
+          "size": [
+            1.8,
+            3,
+            2.2
+          ],
+          "position": [
+            -3,
+            9,
+            0.8
+          ],
+          "color": "teal",
+          "rotation": [
+            0,
+            0,
+            0
+          ],
+          "solid": true
+        },
+        {
+          "name": "ArchiveVolume",
+          "size": [
+            1.8,
+            3,
+            2.2
+          ],
+          "position": [
+            0,
+            9,
+            0.8
+          ],
+          "color": "ivory",
+          "rotation": [
+            0,
+            0,
+            0
+          ],
+          "solid": true
+        },
+        {
+          "name": "ArchiveVolume",
+          "size": [
+            1.8,
+            3,
+            2.2
+          ],
+          "position": [
+            3,
+            9,
+            0.8
+          ],
+          "color": "navy",
+          "rotation": [
+            0,
+            0,
+            0
+          ],
+          "solid": true
+        },
+        {
+          "name": "ArchiveVolume",
+          "size": [
+            1.8,
+            3,
+            2.2
+          ],
+          "position": [
+            6,
+            9,
+            0.8
+          ],
+          "color": "brass",
+          "rotation": [
+            0,
+            0,
+            0
+          ],
+          "solid": true
+        },
+        {
+          "name": "ArchiveVolume",
+          "size": [
+            1.8,
+            3,
+            2.2
+          ],
+          "position": [
+            9,
+            9,
+            0.8
+          ],
+          "color": "teal",
+          "rotation": [
+            0,
+            0,
+            0
+          ],
+          "solid": true
+        },
+        {
+          "name": "ArchiveVolume",
+          "size": [
+            1.8,
+            3,
+            2.2
+          ],
+          "position": [
+            12,
+            9,
+            0.8
+          ],
+          "color": "ivory",
+          "rotation": [
+            0,
+            0,
+            0
+          ],
+          "solid": true
+        },
+        {
+          "name": "ArchiveVolume",
+          "size": [
+            1.8,
+            3,
+            2.2
+          ],
+          "position": [
+            -12,
+            14,
+            0.8
+          ],
+          "color": "navy",
+          "rotation": [
+            0,
+            0,
+            0
+          ],
+          "solid": true
+        },
+        {
+          "name": "ArchiveVolume",
+          "size": [
+            1.8,
+            3,
+            2.2
+          ],
+          "position": [
+            -9,
+            14,
+            0.8
+          ],
+          "color": "brass",
+          "rotation": [
+            0,
+            0,
+            0
+          ],
+          "solid": true
+        },
+        {
+          "name": "ArchiveVolume",
+          "size": [
+            1.8,
+            3,
+            2.2
+          ],
+          "position": [
+            -6,
+            14,
+            0.8
+          ],
+          "color": "teal",
+          "rotation": [
+            0,
+            0,
+            0
+          ],
+          "solid": true
+        },
+        {
+          "name": "ArchiveVolume",
+          "size": [
+            1.8,
+            3,
+            2.2
+          ],
+          "position": [
+            -3,
+            14,
+            0.8
+          ],
+          "color": "ivory",
+          "rotation": [
+            0,
+            0,
+            0
+          ],
+          "solid": true
+        },
+        {
+          "name": "ArchiveVolume",
+          "size": [
+            1.8,
+            3,
+            2.2
+          ],
+          "position": [
+            0,
+            14,
+            0.8
+          ],
+          "color": "navy",
+          "rotation": [
+            0,
+            0,
+            0
+          ],
+          "solid": true
+        },
+        {
+          "name": "ArchiveVolume",
+          "size": [
+            1.8,
+            3,
+            2.2
+          ],
+          "position": [
+            3,
+            14,
+            0.8
+          ],
+          "color": "brass",
+          "rotation": [
+            0,
+            0,
+            0
+          ],
+          "solid": true
+        },
+        {
+          "name": "ArchiveVolume",
+          "size": [
+            1.8,
+            3,
+            2.2
+          ],
+          "position": [
+            6,
+            14,
+            0.8
+          ],
+          "color": "teal",
+          "rotation": [
+            0,
+            0,
+            0
+          ],
+          "solid": true
+        },
+        {
+          "name": "ArchiveVolume",
+          "size": [
+            1.8,
+            3,
+            2.2
+          ],
+          "position": [
+            9,
+            14,
+            0.8
+          ],
+          "color": "ivory",
+          "rotation": [
+            0,
+            0,
+            0
+          ],
+          "solid": true
+        },
+        {
+          "name": "ArchiveVolume",
+          "size": [
+            1.8,
+            3,
+            2.2
+          ],
+          "position": [
+            12,
+            14,
+            0.8
+          ],
+          "color": "navy",
+          "rotation": [
+            0,
+            0,
+            0
+          ],
+          "solid": true
+        },
+        {
+          "name": "DeskTop",
+          "size": [
+            10,
+            0.6,
+            4
+          ],
+          "position": [
+            0,
+            3,
+            -19
+          ],
+          "color": "wood",
+          "rotation": [
+            0,
+            0,
+            0
+          ],
+          "solid": true
+        },
+        {
+          "name": "DeskLeg",
+          "size": [
+            0.6,
+            3,
+            0.6
+          ],
+          "position": [
+            -4.0,
+            1.5,
+            -20.4
+          ],
+          "color": "brass",
+          "rotation": [
+            0,
+            0,
+            0
+          ],
+          "solid": true
+        },
+        {
+          "name": "DeskLeg",
+          "size": [
+            0.6,
+            3,
+            0.6
+          ],
+          "position": [
+            -4.0,
+            1.5,
+            -17.6
+          ],
+          "color": "brass",
+          "rotation": [
+            0,
+            0,
+            0
+          ],
+          "solid": true
+        },
+        {
+          "name": "DeskLeg",
+          "size": [
+            0.6,
+            3,
+            0.6
+          ],
+          "position": [
+            4.0,
+            1.5,
+            -20.4
+          ],
+          "color": "brass",
+          "rotation": [
+            0,
+            0,
+            0
+          ],
+          "solid": true
+        },
+        {
+          "name": "DeskLeg",
+          "size": [
+            0.6,
+            3,
+            0.6
+          ],
+          "position": [
+            4.0,
+            1.5,
+            -17.6
+          ],
+          "color": "brass",
+          "rotation": [
+            0,
+            0,
+            0
+          ],
+          "solid": true
+        },
+        {
+          "name": "RecoveredPlan",
+          "size": [
+            6,
+            0.15,
+            3
+          ],
+          "position": [
+            0,
+            3.5,
+            -19
+          ],
+          "color": "ivory",
+          "rotation": [
+            0,
+            0,
+            0
+          ],
+          "solid": false
+        },
+        {
+          "name": "PlaqueStand",
+          "size": [
+            1.2,
+            3,
+            1.2
+          ],
+          "position": [
+            -12,
+            1.5,
+            16
+          ],
+          "color": "brass",
+          "rotation": [
+            0,
+            0,
+            0
+          ],
+          "solid": true
+        },
+        {
+          "name": "PlaqueFace",
+          "size": [
+            4,
+            4,
+            0.5
+          ],
+          "position": [
+            -12,
+            5,
+            16
+          ],
+          "color": "dark",
+          "rotation": [
+            0,
+            0,
+            0
+          ],
+          "solid": true
+        },
+        {
+          "name": "TriangleSide",
+          "size": [
+            0.22,
+            2,
+            0.2
+          ],
+          "position": [
+            -12.6,
+            5,
+            16.4
+          ],
+          "color": "teal",
+          "rotation": [
+            0,
+            0,
+            35
+          ],
+          "solid": false
+        },
+        {
+          "name": "TriangleSide",
+          "size": [
+            0.22,
+            2,
+            0.2
+          ],
+          "position": [
+            -11.4,
+            5,
+            16.4
+          ],
+          "color": "teal",
+          "rotation": [
+            0,
+            0,
+            -35
+          ],
+          "solid": false
+        },
+        {
+          "name": "TriangleBase",
+          "size": [
+            2.1,
+            0.22,
+            0.2
+          ],
+          "position": [
+            -12,
+            4.2,
+            16.4
+          ],
+          "color": "teal",
+          "rotation": [
+            0,
+            0,
+            0
+          ],
+          "solid": false
+        },
+        {
+          "name": "PlaqueStand",
+          "size": [
+            1.2,
+            3,
+            1.2
+          ],
+          "position": [
+            0,
+            1.5,
+            16
+          ],
+          "color": "brass",
+          "rotation": [
+            0,
+            0,
+            0
+          ],
+          "solid": true
+        },
+        {
+          "name": "PlaqueFace",
+          "size": [
+            4,
+            4,
+            0.5
+          ],
+          "position": [
+            0,
+            5,
+            16
+          ],
+          "color": "dark",
+          "rotation": [
+            0,
+            0,
+            0
+          ],
+          "solid": true
+        },
+        {
+          "name": "Diamond",
+          "size": [
+            1.5,
+            1.5,
+            0.2
+          ],
+          "position": [
+            0,
+            5,
+            16.4
+          ],
+          "color": "teal",
+          "rotation": [
+            0,
+            0,
+            45
+          ],
+          "solid": false
+        },
+        {
+          "name": "PlaqueStand",
+          "size": [
+            1.2,
+            3,
+            1.2
+          ],
+          "position": [
+            12,
+            1.5,
+            16
+          ],
+          "color": "brass",
+          "rotation": [
+            0,
+            0,
+            0
+          ],
+          "solid": true
+        },
+        {
+          "name": "PlaqueFace",
+          "size": [
+            4,
+            4,
+            0.5
+          ],
+          "position": [
+            12,
+            5,
+            16
+          ],
+          "color": "dark",
+          "rotation": [
+            0,
+            0,
+            0
+          ],
+          "solid": true
+        },
+        {
+          "name": "Cross",
+          "size": [
+            0.22,
+            2.1,
+            0.2
+          ],
+          "position": [
+            12,
+            5,
+            16.4
+          ],
+          "color": "teal",
+          "rotation": [
+            0,
+            0,
+            -45
+          ],
+          "solid": false
+        },
+        {
+          "name": "Cross",
+          "size": [
+            0.22,
+            2.1,
+            0.2
+          ],
+          "position": [
+            12,
+            5,
+            16.4
+          ],
+          "color": "teal",
+          "rotation": [
+            0,
+            0,
+            45
+          ],
+          "solid": false
+        },
+        {
+          "name": "BeaconBase",
+          "size": [
+            2,
+            1,
+            2
+          ],
+          "position": [
+            -27,
+            0.5,
+            -21
+          ],
+          "color": "ivory",
+          "rotation": [
+            0,
+            0,
+            0
+          ],
+          "solid": true
+        },
+        {
+          "name": "BeaconStem",
+          "size": [
+            0.6,
+            5,
+            0.6
+          ],
+          "position": [
+            -27,
+            3.5,
+            -21
+          ],
+          "color": "brass",
+          "rotation": [
+            0,
+            0,
+            0
+          ],
+          "solid": true
+        },
+        {
+          "name": "BeaconLight",
+          "size": [
+            1.5,
+            2,
+            1.5
+          ],
+          "position": [
+            -27,
+            6.5,
+            -21
+          ],
+          "color": "teal",
+          "rotation": [
+            0,
+            0,
+            0
+          ],
+          "solid": false
+        },
+        {
+          "name": "BeaconBase",
+          "size": [
+            2,
+            1,
+            2
+          ],
+          "position": [
+            27,
+            0.5,
+            -21
+          ],
+          "color": "ivory",
+          "rotation": [
+            0,
+            0,
+            0
+          ],
+          "solid": true
+        },
+        {
+          "name": "BeaconStem",
+          "size": [
+            0.6,
+            5,
+            0.6
+          ],
+          "position": [
+            27,
+            3.5,
+            -21
+          ],
+          "color": "brass",
+          "rotation": [
+            0,
+            0,
+            0
+          ],
+          "solid": true
+        },
+        {
+          "name": "BeaconLight",
+          "size": [
+            1.5,
+            2,
+            1.5
+          ],
+          "position": [
+            27,
+            6.5,
+            -21
+          ],
+          "color": "teal",
+          "rotation": [
+            0,
+            0,
+            0
+          ],
+          "solid": false
+        }
+      ],
+      "markers": [
+        {
+          "id": "sequence_1",
+          "position": [
+            -12,
+            0.15,
+            10
+          ]
+        },
+        {
+          "id": "sequence_2",
+          "position": [
+            0,
+            0.15,
+            10
+          ]
+        },
+        {
+          "id": "sequence_3",
+          "position": [
+            12,
+            0.15,
+            10
+          ]
+        },
+        {
+          "id": "hidden_turn",
+          "position": [
+            -24,
+            0.15,
+            0
+          ]
+        },
+        {
+          "id": "hidden_exit",
+          "position": [
+            -24,
+            0.15,
+            -16
+          ]
+        },
+        {
+          "id": "archive_record",
+          "position": [
+            0,
+            0.15,
+            -12
+          ]
+        },
+        {
+          "id": "return_chart",
+          "position": [
+            24,
+            0.15,
+            12
+          ]
+        }
+      ],
+      "footprint": [
+        64,
+        56
+      ],
+      "aisleWidth": 10
+    },
+    {
+      "id": "memory_chamber",
+      "kind": "Chapter04Scene",
+      "parts": [
+        {
+          "name": "WalkableFloor",
+          "size": [
+            64,
+            1,
+            52
+          ],
+          "position": [
+            0,
+            -0.5,
+            0
+          ],
+          "color": "navy",
+          "rotation": [
+            0,
+            0,
+            0
+          ],
+          "solid": true
+        },
+        {
+          "name": "ColumnFoot",
+          "size": [
+            3,
+            1,
+            3
+          ],
+          "position": [
+            -27,
+            0.5,
+            -21
+          ],
+          "color": "ivory",
+          "rotation": [
+            0,
+            0,
+            0
+          ],
+          "solid": true
+        },
+        {
+          "name": "ColumnShaft",
+          "size": [
+            2,
+            14,
+            2
+          ],
+          "position": [
+            -27,
+            8.0,
+            -21
+          ],
+          "color": "navy",
+          "rotation": [
+            0,
+            0,
+            0
+          ],
+          "solid": true
+        },
+        {
+          "name": "ColumnBand",
+          "size": [
+            2.4,
+            0.5,
+            2.4
+          ],
+          "position": [
+            -27,
+            2,
+            -21
+          ],
+          "color": "brass",
+          "rotation": [
+            0,
+            0,
+            0
+          ],
+          "solid": false
+        },
+        {
+          "name": "ColumnBand",
+          "size": [
+            2.4,
+            0.5,
+            2.4
+          ],
+          "position": [
+            -27,
+            13,
+            -21
+          ],
+          "color": "brass",
+          "rotation": [
+            0,
+            0,
+            0
+          ],
+          "solid": false
+        },
+        {
+          "name": "ColumnCrown",
+          "size": [
+            3,
+            1,
+            3
+          ],
+          "position": [
+            -27,
+            15.5,
+            -21
+          ],
+          "color": "ivory",
+          "rotation": [
+            0,
+            0,
+            0
+          ],
+          "solid": true
+        },
+        {
+          "name": "ColumnFoot",
+          "size": [
+            3,
+            1,
+            3
+          ],
+          "position": [
+            -13,
+            0.5,
+            -21
+          ],
+          "color": "ivory",
+          "rotation": [
+            0,
+            0,
+            0
+          ],
+          "solid": true
+        },
+        {
+          "name": "ColumnShaft",
+          "size": [
+            2,
+            14,
+            2
+          ],
+          "position": [
+            -13,
+            8.0,
+            -21
+          ],
+          "color": "navy",
+          "rotation": [
+            0,
+            0,
+            0
+          ],
+          "solid": true
+        },
+        {
+          "name": "ColumnBand",
+          "size": [
+            2.4,
+            0.5,
+            2.4
+          ],
+          "position": [
+            -13,
+            2,
+            -21
+          ],
+          "color": "brass",
+          "rotation": [
+            0,
+            0,
+            0
+          ],
+          "solid": false
+        },
+        {
+          "name": "ColumnBand",
+          "size": [
+            2.4,
+            0.5,
+            2.4
+          ],
+          "position": [
+            -13,
+            13,
+            -21
+          ],
+          "color": "brass",
+          "rotation": [
+            0,
+            0,
+            0
+          ],
+          "solid": false
+        },
+        {
+          "name": "ColumnCrown",
+          "size": [
+            3,
+            1,
+            3
+          ],
+          "position": [
+            -13,
+            15.5,
+            -21
+          ],
+          "color": "ivory",
+          "rotation": [
+            0,
+            0,
+            0
+          ],
+          "solid": true
+        },
+        {
+          "name": "MemoryFrame",
+          "size": [
+            13,
+            14,
+            1
+          ],
+          "position": [
+            -20,
+            9,
+            -21
+          ],
+          "color": "brass",
+          "rotation": [
+            0,
+            0,
+            0
+          ],
+          "solid": true
+        },
+        {
+          "name": "MemoryGlass",
+          "size": [
+            11,
+            12,
+            1.1
+          ],
+          "position": [
+            -20,
+            9,
+            -21
+          ],
+          "color": "dark",
+          "rotation": [
+            0,
+            0,
+            0
+          ],
+          "solid": true
+        },
+        {
+          "name": "TriangleSide",
+          "size": [
+            0.22,
+            2,
+            0.2
+          ],
+          "position": [
+            -20.6,
+            10,
+            -20.3
+          ],
+          "color": "amber",
+          "rotation": [
+            0,
+            0,
+            35
+          ],
+          "solid": false
+        },
+        {
+          "name": "TriangleSide",
+          "size": [
+            0.22,
+            2,
+            0.2
+          ],
+          "position": [
+            -19.4,
+            10,
+            -20.3
+          ],
+          "color": "amber",
+          "rotation": [
+            0,
+            0,
+            -35
+          ],
+          "solid": false
+        },
+        {
+          "name": "TriangleBase",
+          "size": [
+            2.1,
+            0.22,
+            0.2
+          ],
+          "position": [
+            -20,
+            9.2,
+            -20.3
+          ],
+          "color": "amber",
+          "rotation": [
+            0,
+            0,
+            0
+          ],
+          "solid": false
+        },
+        {
+          "name": "ColumnFoot",
+          "size": [
+            3,
+            1,
+            3
+          ],
+          "position": [
+            -7,
+            0.5,
+            -21
+          ],
+          "color": "ivory",
+          "rotation": [
+            0,
+            0,
+            0
+          ],
+          "solid": true
+        },
+        {
+          "name": "ColumnShaft",
+          "size": [
+            2,
+            14,
+            2
+          ],
+          "position": [
+            -7,
+            8.0,
+            -21
+          ],
+          "color": "navy",
+          "rotation": [
+            0,
+            0,
+            0
+          ],
+          "solid": true
+        },
+        {
+          "name": "ColumnBand",
+          "size": [
+            2.4,
+            0.5,
+            2.4
+          ],
+          "position": [
+            -7,
+            2,
+            -21
+          ],
+          "color": "brass",
+          "rotation": [
+            0,
+            0,
+            0
+          ],
+          "solid": false
+        },
+        {
+          "name": "ColumnBand",
+          "size": [
+            2.4,
+            0.5,
+            2.4
+          ],
+          "position": [
+            -7,
+            13,
+            -21
+          ],
+          "color": "brass",
+          "rotation": [
+            0,
+            0,
+            0
+          ],
+          "solid": false
+        },
+        {
+          "name": "ColumnCrown",
+          "size": [
+            3,
+            1,
+            3
+          ],
+          "position": [
+            -7,
+            15.5,
+            -21
+          ],
+          "color": "ivory",
+          "rotation": [
+            0,
+            0,
+            0
+          ],
+          "solid": true
+        },
+        {
+          "name": "ColumnFoot",
+          "size": [
+            3,
+            1,
+            3
+          ],
+          "position": [
+            7,
+            0.5,
+            -21
+          ],
+          "color": "ivory",
+          "rotation": [
+            0,
+            0,
+            0
+          ],
+          "solid": true
+        },
+        {
+          "name": "ColumnShaft",
+          "size": [
+            2,
+            14,
+            2
+          ],
+          "position": [
+            7,
+            8.0,
+            -21
+          ],
+          "color": "navy",
+          "rotation": [
+            0,
+            0,
+            0
+          ],
+          "solid": true
+        },
+        {
+          "name": "ColumnBand",
+          "size": [
+            2.4,
+            0.5,
+            2.4
+          ],
+          "position": [
+            7,
+            2,
+            -21
+          ],
+          "color": "brass",
+          "rotation": [
+            0,
+            0,
+            0
+          ],
+          "solid": false
+        },
+        {
+          "name": "ColumnBand",
+          "size": [
+            2.4,
+            0.5,
+            2.4
+          ],
+          "position": [
+            7,
+            13,
+            -21
+          ],
+          "color": "brass",
+          "rotation": [
+            0,
+            0,
+            0
+          ],
+          "solid": false
+        },
+        {
+          "name": "ColumnCrown",
+          "size": [
+            3,
+            1,
+            3
+          ],
+          "position": [
+            7,
+            15.5,
+            -21
+          ],
+          "color": "ivory",
+          "rotation": [
+            0,
+            0,
+            0
+          ],
+          "solid": true
+        },
+        {
+          "name": "MemoryFrame",
+          "size": [
+            13,
+            14,
+            1
+          ],
+          "position": [
+            0,
+            9,
+            -21
+          ],
+          "color": "brass",
+          "rotation": [
+            0,
+            0,
+            0
+          ],
+          "solid": true
+        },
+        {
+          "name": "MemoryGlass",
+          "size": [
+            11,
+            12,
+            1.1
+          ],
+          "position": [
+            0,
+            9,
+            -21
+          ],
+          "color": "dark",
+          "rotation": [
+            0,
+            0,
+            0
+          ],
+          "solid": true
+        },
+        {
+          "name": "Diamond",
+          "size": [
+            1.5,
+            1.5,
+            0.2
+          ],
+          "position": [
+            0,
+            10,
+            -20.3
+          ],
+          "color": "amber",
+          "rotation": [
+            0,
+            0,
+            45
+          ],
+          "solid": false
+        },
+        {
+          "name": "ColumnFoot",
+          "size": [
+            3,
+            1,
+            3
+          ],
+          "position": [
+            13,
+            0.5,
+            -21
+          ],
+          "color": "ivory",
+          "rotation": [
+            0,
+            0,
+            0
+          ],
+          "solid": true
+        },
+        {
+          "name": "ColumnShaft",
+          "size": [
+            2,
+            14,
+            2
+          ],
+          "position": [
+            13,
+            8.0,
+            -21
+          ],
+          "color": "navy",
+          "rotation": [
+            0,
+            0,
+            0
+          ],
+          "solid": true
+        },
+        {
+          "name": "ColumnBand",
+          "size": [
+            2.4,
+            0.5,
+            2.4
+          ],
+          "position": [
+            13,
+            2,
+            -21
+          ],
+          "color": "brass",
+          "rotation": [
+            0,
+            0,
+            0
+          ],
+          "solid": false
+        },
+        {
+          "name": "ColumnBand",
+          "size": [
+            2.4,
+            0.5,
+            2.4
+          ],
+          "position": [
+            13,
+            13,
+            -21
+          ],
+          "color": "brass",
+          "rotation": [
+            0,
+            0,
+            0
+          ],
+          "solid": false
+        },
+        {
+          "name": "ColumnCrown",
+          "size": [
+            3,
+            1,
+            3
+          ],
+          "position": [
+            13,
+            15.5,
+            -21
+          ],
+          "color": "ivory",
+          "rotation": [
+            0,
+            0,
+            0
+          ],
+          "solid": true
+        },
+        {
+          "name": "ColumnFoot",
+          "size": [
+            3,
+            1,
+            3
+          ],
+          "position": [
+            27,
+            0.5,
+            -21
+          ],
+          "color": "ivory",
+          "rotation": [
+            0,
+            0,
+            0
+          ],
+          "solid": true
+        },
+        {
+          "name": "ColumnShaft",
+          "size": [
+            2,
+            14,
+            2
+          ],
+          "position": [
+            27,
+            8.0,
+            -21
+          ],
+          "color": "navy",
+          "rotation": [
+            0,
+            0,
+            0
+          ],
+          "solid": true
+        },
+        {
+          "name": "ColumnBand",
+          "size": [
+            2.4,
+            0.5,
+            2.4
+          ],
+          "position": [
+            27,
+            2,
+            -21
+          ],
+          "color": "brass",
+          "rotation": [
+            0,
+            0,
+            0
+          ],
+          "solid": false
+        },
+        {
+          "name": "ColumnBand",
+          "size": [
+            2.4,
+            0.5,
+            2.4
+          ],
+          "position": [
+            27,
+            13,
+            -21
+          ],
+          "color": "brass",
+          "rotation": [
+            0,
+            0,
+            0
+          ],
+          "solid": false
+        },
+        {
+          "name": "ColumnCrown",
+          "size": [
+            3,
+            1,
+            3
+          ],
+          "position": [
+            27,
+            15.5,
+            -21
+          ],
+          "color": "ivory",
+          "rotation": [
+            0,
+            0,
+            0
+          ],
+          "solid": true
+        },
+        {
+          "name": "MemoryFrame",
+          "size": [
+            13,
+            14,
+            1
+          ],
+          "position": [
+            20,
+            9,
+            -21
+          ],
+          "color": "brass",
+          "rotation": [
+            0,
+            0,
+            0
+          ],
+          "solid": true
+        },
+        {
+          "name": "MemoryGlass",
+          "size": [
+            11,
+            12,
+            1.1
+          ],
+          "position": [
+            20,
+            9,
+            -21
+          ],
+          "color": "dark",
+          "rotation": [
+            0,
+            0,
+            0
+          ],
+          "solid": true
+        },
+        {
+          "name": "Cross",
+          "size": [
+            0.22,
+            2.1,
+            0.2
+          ],
+          "position": [
+            20,
+            10,
+            -20.3
+          ],
+          "color": "amber",
+          "rotation": [
+            0,
+            0,
+            -45
+          ],
+          "solid": false
+        },
+        {
+          "name": "Cross",
+          "size": [
+            0.22,
+            2.1,
+            0.2
+          ],
+          "position": [
+            20,
+            10,
+            -20.3
+          ],
+          "color": "amber",
+          "rotation": [
+            0,
+            0,
+            45
+          ],
+          "solid": false
+        },
+        {
+          "name": "OathCircle",
+          "size": [
+            0.2,
+            0.1,
+            5
+          ],
+          "position": [
+            0.0,
+            0.08,
+            14.0
+          ],
+          "color": "teal",
+          "rotation": [
+            0,
+            0,
+            0
+          ],
+          "solid": false
+        },
+        {
+          "name": "OathCircle",
+          "size": [
+            0.2,
+            0.1,
+            5
+          ],
+          "position": [
+            5.656854249492381,
+            0.08,
+            11.65685424949238
+          ],
+          "color": "teal",
+          "rotation": [
+            0,
+            45,
+            0
+          ],
+          "solid": false
+        },
+        {
+          "name": "OathCircle",
+          "size": [
+            0.2,
+            0.1,
+            5
+          ],
+          "position": [
+            8.0,
+            0.08,
+            6.000000000000001
+          ],
+          "color": "teal",
+          "rotation": [
+            0,
+            90,
+            0
+          ],
+          "solid": false
+        },
+        {
+          "name": "OathCircle",
+          "size": [
+            0.2,
+            0.1,
+            5
+          ],
+          "position": [
+            5.656854249492381,
+            0.08,
+            0.3431457505076203
+          ],
+          "color": "teal",
+          "rotation": [
+            0,
+            135,
+            0
+          ],
+          "solid": false
+        },
+        {
+          "name": "OathCircle",
+          "size": [
+            0.2,
+            0.1,
+            5
+          ],
+          "position": [
+            9.797174393178826e-16,
+            0.08,
+            -2.0
+          ],
+          "color": "teal",
+          "rotation": [
+            0,
+            180,
+            0
+          ],
+          "solid": false
+        },
+        {
+          "name": "OathCircle",
+          "size": [
+            0.2,
+            0.1,
+            5
+          ],
+          "position": [
+            -5.65685424949238,
+            0.08,
+            0.34314575050761853
+          ],
+          "color": "teal",
+          "rotation": [
+            0,
+            225,
+            0
+          ],
+          "solid": false
+        },
+        {
+          "name": "OathCircle",
+          "size": [
+            0.2,
+            0.1,
+            5
+          ],
+          "position": [
+            -8.0,
+            0.08,
+            5.999999999999998
+          ],
+          "color": "teal",
+          "rotation": [
+            0,
+            270,
+            0
+          ],
+          "solid": false
+        },
+        {
+          "name": "OathCircle",
+          "size": [
+            0.2,
+            0.1,
+            5
+          ],
+          "position": [
+            -5.6568542494923815,
+            0.08,
+            11.65685424949238
+          ],
+          "color": "teal",
+          "rotation": [
+            0,
+            315,
+            0
+          ],
+          "solid": false
+        },
+        {
+          "name": "MemorySpiritBase",
+          "size": [
+            3,
+            0.4,
+            3
+          ],
+          "position": [
+            16,
+            0.2,
+            7
+          ],
+          "color": "ivory",
+          "rotation": [
+            0,
+            0,
+            0
+          ],
+          "solid": true
+        },
+        {
+          "name": "MemorySpirit",
+          "size": [
+            1.6,
+            3,
+            1.6
+          ],
+          "position": [
+            16,
+            3,
+            7
+          ],
+          "color": "teal",
+          "rotation": [
+            0,
+            0,
+            12
+          ],
+          "solid": false
+        }
+      ],
+      "markers": [
+        {
+          "id": "caravan_memory",
+          "position": [
+            -20,
+            0.15,
+            -12
+          ]
+        },
+        {
+          "id": "timber_memory",
+          "position": [
+            0,
+            0.15,
+            -12
+          ]
+        },
+        {
+          "id": "guild_memory",
+          "position": [
+            20,
+            0.15,
+            -12
+          ]
+        },
+        {
+          "id": "help_memory",
+          "position": [
+            16,
+            0.15,
+            12
+          ]
+        },
+        {
+          "id": "oath_courage",
+          "position": [
+            -6,
+            0.15,
+            6
+          ]
+        },
+        {
+          "id": "oath_compassion",
+          "position": [
+            6,
+            0.15,
+            6
+          ]
+        }
+      ],
+      "footprint": [
+        64,
+        52
+      ],
+      "aisleWidth": 10
+    },
+    {
+      "id": "twin_doors",
+      "kind": "Chapter04Scene",
+      "parts": [
+        {
+          "name": "WalkableFloor",
+          "size": [
+            76,
+            1,
+            58
+          ],
+          "position": [
+            0,
+            -0.5,
+            0
+          ],
+          "color": "navy",
+          "rotation": [
+            0,
+            0,
+            0
+          ],
+          "solid": true
+        },
+        {
+          "name": "ColumnFoot",
+          "size": [
+            3,
+            1,
+            3
+          ],
+          "position": [
+            -22.0,
+            0.5,
+            -9
+          ],
+          "color": "ivory",
+          "rotation": [
+            0,
+            0,
+            0
+          ],
+          "solid": true
+        },
+        {
+          "name": "ColumnShaft",
+          "size": [
+            2,
+            20,
+            2
+          ],
+          "position": [
+            -22.0,
+            11.0,
+            -9
+          ],
+          "color": "navy",
+          "rotation": [
+            0,
+            0,
+            0
+          ],
+          "solid": true
+        },
+        {
+          "name": "ColumnBand",
+          "size": [
+            2.4,
+            0.5,
+            2.4
+          ],
+          "position": [
+            -22.0,
+            2,
+            -9
+          ],
+          "color": "brass",
+          "rotation": [
+            0,
+            0,
+            0
+          ],
+          "solid": false
+        },
+        {
+          "name": "ColumnBand",
+          "size": [
+            2.4,
+            0.5,
+            2.4
+          ],
+          "position": [
+            -22.0,
+            19,
+            -9
+          ],
+          "color": "brass",
+          "rotation": [
+            0,
+            0,
+            0
+          ],
+          "solid": false
+        },
+        {
+          "name": "ColumnCrown",
+          "size": [
+            3,
+            1,
+            3
+          ],
+          "position": [
+            -22.0,
+            21.5,
+            -9
+          ],
+          "color": "ivory",
+          "rotation": [
+            0,
+            0,
+            0
+          ],
+          "solid": true
+        },
+        {
+          "name": "ColumnFoot",
+          "size": [
+            3,
+            1,
+            3
+          ],
+          "position": [
+            -10.0,
+            0.5,
+            -9
+          ],
+          "color": "ivory",
+          "rotation": [
+            0,
+            0,
+            0
+          ],
+          "solid": true
+        },
+        {
+          "name": "ColumnShaft",
+          "size": [
+            2,
+            20,
+            2
+          ],
+          "position": [
+            -10.0,
+            11.0,
+            -9
+          ],
+          "color": "navy",
+          "rotation": [
+            0,
+            0,
+            0
+          ],
+          "solid": true
+        },
+        {
+          "name": "ColumnBand",
+          "size": [
+            2.4,
+            0.5,
+            2.4
+          ],
+          "position": [
+            -10.0,
+            2,
+            -9
+          ],
+          "color": "brass",
+          "rotation": [
+            0,
+            0,
+            0
+          ],
+          "solid": false
+        },
+        {
+          "name": "ColumnBand",
+          "size": [
+            2.4,
+            0.5,
+            2.4
+          ],
+          "position": [
+            -10.0,
+            19,
+            -9
+          ],
+          "color": "brass",
+          "rotation": [
+            0,
+            0,
+            0
+          ],
+          "solid": false
+        },
+        {
+          "name": "ColumnCrown",
+          "size": [
+            3,
+            1,
+            3
+          ],
+          "position": [
+            -10.0,
+            21.5,
+            -9
+          ],
+          "color": "ivory",
+          "rotation": [
+            0,
+            0,
+            0
+          ],
+          "solid": true
+        },
+        {
+          "name": "ArchLintel",
+          "size": [
+            15,
+            2,
+            3
+          ],
+          "position": [
+            -16,
+            22,
+            -9
+          ],
+          "color": "ivory",
+          "rotation": [
+            0,
+            0,
+            0
+          ],
+          "solid": true
+        },
+        {
+          "name": "CrestInlay",
+          "size": [
+            2,
+            2,
+            0.2
+          ],
+          "position": [
+            -16,
+            22,
+            -7.4
+          ],
+          "color": "teal",
+          "rotation": [
+            0,
+            0,
+            45
+          ],
+          "solid": false
+        },
+        {
+          "name": "ColumnFoot",
+          "size": [
+            3,
+            1,
+            3
+          ],
+          "position": [
+            10.0,
+            0.5,
+            -9
+          ],
+          "color": "ivory",
+          "rotation": [
+            0,
+            0,
+            0
+          ],
+          "solid": true
+        },
+        {
+          "name": "ColumnShaft",
+          "size": [
+            2,
+            20,
+            2
+          ],
+          "position": [
+            10.0,
+            11.0,
+            -9
+          ],
+          "color": "navy",
+          "rotation": [
+            0,
+            0,
+            0
+          ],
+          "solid": true
+        },
+        {
+          "name": "ColumnBand",
+          "size": [
+            2.4,
+            0.5,
+            2.4
+          ],
+          "position": [
+            10.0,
+            2,
+            -9
+          ],
+          "color": "brass",
+          "rotation": [
+            0,
+            0,
+            0
+          ],
+          "solid": false
+        },
+        {
+          "name": "ColumnBand",
+          "size": [
+            2.4,
+            0.5,
+            2.4
+          ],
+          "position": [
+            10.0,
+            19,
+            -9
+          ],
+          "color": "brass",
+          "rotation": [
+            0,
+            0,
+            0
+          ],
+          "solid": false
+        },
+        {
+          "name": "ColumnCrown",
+          "size": [
+            3,
+            1,
+            3
+          ],
+          "position": [
+            10.0,
+            21.5,
+            -9
+          ],
+          "color": "ivory",
+          "rotation": [
+            0,
+            0,
+            0
+          ],
+          "solid": true
+        },
+        {
+          "name": "ColumnFoot",
+          "size": [
+            3,
+            1,
+            3
+          ],
+          "position": [
+            22.0,
+            0.5,
+            -9
+          ],
+          "color": "ivory",
+          "rotation": [
+            0,
+            0,
+            0
+          ],
+          "solid": true
+        },
+        {
+          "name": "ColumnShaft",
+          "size": [
+            2,
+            20,
+            2
+          ],
+          "position": [
+            22.0,
+            11.0,
+            -9
+          ],
+          "color": "navy",
+          "rotation": [
+            0,
+            0,
+            0
+          ],
+          "solid": true
+        },
+        {
+          "name": "ColumnBand",
+          "size": [
+            2.4,
+            0.5,
+            2.4
+          ],
+          "position": [
+            22.0,
+            2,
+            -9
+          ],
+          "color": "brass",
+          "rotation": [
+            0,
+            0,
+            0
+          ],
+          "solid": false
+        },
+        {
+          "name": "ColumnBand",
+          "size": [
+            2.4,
+            0.5,
+            2.4
+          ],
+          "position": [
+            22.0,
+            19,
+            -9
+          ],
+          "color": "brass",
+          "rotation": [
+            0,
+            0,
+            0
+          ],
+          "solid": false
+        },
+        {
+          "name": "ColumnCrown",
+          "size": [
+            3,
+            1,
+            3
+          ],
+          "position": [
+            22.0,
+            21.5,
+            -9
+          ],
+          "color": "ivory",
+          "rotation": [
+            0,
+            0,
+            0
+          ],
+          "solid": true
+        },
+        {
+          "name": "ArchLintel",
+          "size": [
+            15,
+            2,
+            3
+          ],
+          "position": [
+            16,
+            22,
+            -9
+          ],
+          "color": "ivory",
+          "rotation": [
+            0,
+            0,
+            0
+          ],
+          "solid": true
+        },
+        {
+          "name": "CrestInlay",
+          "size": [
+            2,
+            2,
+            0.2
+          ],
+          "position": [
+            16,
+            22,
+            -7.4
+          ],
+          "color": "teal",
+          "rotation": [
+            0,
+            0,
+            45
+          ],
+          "solid": false
+        },
+        {
+          "name": "DoorDivider",
+          "size": [
+            4,
+            12,
+            4
+          ],
+          "position": [
+            0,
+            6,
+            -9
+          ],
+          "color": "navy",
+          "rotation": [
+            0,
+            0,
+            0
+          ],
+          "solid": true
+        },
+        {
+          "name": "DoorSigil",
+          "size": [
+            2.5,
+            2.5,
+            0.3
+          ],
+          "position": [
+            -16,
+            18,
+            -7.3
+          ],
+          "color": "amber",
+          "rotation": [
+            0,
+            0,
+            45
+          ],
+          "solid": false
+        },
+        {
+          "name": "DoorSigil",
+          "size": [
+            2.5,
+            2.5,
+            0.3
+          ],
+          "position": [
+            16,
+            18,
+            -7.3
+          ],
+          "color": "blue",
+          "rotation": [
+            0,
+            0,
+            45
+          ],
+          "solid": false
+        },
+        {
+          "name": "BeaconBase",
+          "size": [
+            2,
+            1,
+            2
+          ],
+          "position": [
+            -33,
+            0.5,
+            -18
+          ],
+          "color": "ivory",
+          "rotation": [
+            0,
+            0,
+            0
+          ],
+          "solid": true
+        },
+        {
+          "name": "BeaconStem",
+          "size": [
+            0.6,
+            5,
+            0.6
+          ],
+          "position": [
+            -33,
+            3.5,
+            -18
+          ],
+          "color": "brass",
+          "rotation": [
+            0,
+            0,
+            0
+          ],
+          "solid": true
+        },
+        {
+          "name": "BeaconLight",
+          "size": [
+            1.5,
+            2,
+            1.5
+          ],
+          "position": [
+            -33,
+            6.5,
+            -18
+          ],
+          "color": "teal",
+          "rotation": [
+            0,
+            0,
+            0
+          ],
+          "solid": false
+        },
+        {
+          "name": "BeaconBase",
+          "size": [
+            2,
+            1,
+            2
+          ],
+          "position": [
+            33,
+            0.5,
+            -18
+          ],
+          "color": "ivory",
+          "rotation": [
+            0,
+            0,
+            0
+          ],
+          "solid": true
+        },
+        {
+          "name": "BeaconStem",
+          "size": [
+            0.6,
+            5,
+            0.6
+          ],
+          "position": [
+            33,
+            3.5,
+            -18
+          ],
+          "color": "brass",
+          "rotation": [
+            0,
+            0,
+            0
+          ],
+          "solid": true
+        },
+        {
+          "name": "BeaconLight",
+          "size": [
+            1.5,
+            2,
+            1.5
+          ],
+          "position": [
+            33,
+            6.5,
+            -18
+          ],
+          "color": "teal",
+          "rotation": [
+            0,
+            0,
+            0
+          ],
+          "solid": false
+        },
+        {
+          "name": "PlaqueStand",
+          "size": [
+            1.2,
+            3,
+            1.2
+          ],
+          "position": [
+            -21,
+            1.5,
+            15
+          ],
+          "color": "brass",
+          "rotation": [
+            0,
+            0,
+            0
+          ],
+          "solid": true
+        },
+        {
+          "name": "PlaqueFace",
+          "size": [
+            4,
+            4,
+            0.5
+          ],
+          "position": [
+            -21,
+            5,
+            15
+          ],
+          "color": "dark",
+          "rotation": [
+            0,
+            0,
+            0
+          ],
+          "solid": true
+        },
+        {
+          "name": "TriangleSide",
+          "size": [
+            0.22,
+            2,
+            0.2
+          ],
+          "position": [
+            -21.6,
+            5,
+            15.4
+          ],
+          "color": "teal",
+          "rotation": [
+            0,
+            0,
+            35
+          ],
+          "solid": false
+        },
+        {
+          "name": "TriangleSide",
+          "size": [
+            0.22,
+            2,
+            0.2
+          ],
+          "position": [
+            -20.4,
+            5,
+            15.4
+          ],
+          "color": "teal",
+          "rotation": [
+            0,
+            0,
+            -35
+          ],
+          "solid": false
+        },
+        {
+          "name": "TriangleBase",
+          "size": [
+            2.1,
+            0.22,
+            0.2
+          ],
+          "position": [
+            -21,
+            4.2,
+            15.4
+          ],
+          "color": "teal",
+          "rotation": [
+            0,
+            0,
+            0
+          ],
+          "solid": false
+        },
+        {
+          "name": "PlaqueStand",
+          "size": [
+            1.2,
+            3,
+            1.2
+          ],
+          "position": [
+            0,
+            1.5,
+            15
+          ],
+          "color": "brass",
+          "rotation": [
+            0,
+            0,
+            0
+          ],
+          "solid": true
+        },
+        {
+          "name": "PlaqueFace",
+          "size": [
+            4,
+            4,
+            0.5
+          ],
+          "position": [
+            0,
+            5,
+            15
+          ],
+          "color": "dark",
+          "rotation": [
+            0,
+            0,
+            0
+          ],
+          "solid": true
+        },
+        {
+          "name": "Diamond",
+          "size": [
+            1.5,
+            1.5,
+            0.2
+          ],
+          "position": [
+            0,
+            5,
+            15.4
+          ],
+          "color": "teal",
+          "rotation": [
+            0,
+            0,
+            45
+          ],
+          "solid": false
+        },
+        {
+          "name": "PlaqueStand",
+          "size": [
+            1.2,
+            3,
+            1.2
+          ],
+          "position": [
+            21,
+            1.5,
+            15
+          ],
+          "color": "brass",
+          "rotation": [
+            0,
+            0,
+            0
+          ],
+          "solid": true
+        },
+        {
+          "name": "PlaqueFace",
+          "size": [
+            4,
+            4,
+            0.5
+          ],
+          "position": [
+            21,
+            5,
+            15
+          ],
+          "color": "dark",
+          "rotation": [
+            0,
+            0,
+            0
+          ],
+          "solid": true
+        },
+        {
+          "name": "Cross",
+          "size": [
+            0.22,
+            2.1,
+            0.2
+          ],
+          "position": [
+            21,
+            5,
+            15.4
+          ],
+          "color": "teal",
+          "rotation": [
+            0,
+            0,
+            -45
+          ],
+          "solid": false
+        },
+        {
+          "name": "Cross",
+          "size": [
+            0.22,
+            2.1,
+            0.2
+          ],
+          "position": [
+            21,
+            5,
+            15.4
+          ],
+          "color": "teal",
+          "rotation": [
+            0,
+            0,
+            45
+          ],
+          "solid": false
+        },
+        {
+          "name": "BypassInlay",
+          "size": [
+            7,
+            0.1,
+            0.25
+          ],
+          "position": [
+            -24,
+            0.08,
+            -22
+          ],
+          "color": "teal",
+          "rotation": [
+            0,
+            0,
+            0
+          ],
+          "solid": false
+        },
+        {
+          "name": "BypassInlay",
+          "size": [
+            7,
+            0.1,
+            0.25
+          ],
+          "position": [
+            -12,
+            0.08,
+            -22
+          ],
+          "color": "teal",
+          "rotation": [
+            0,
+            0,
+            0
+          ],
+          "solid": false
+        },
+        {
+          "name": "BypassInlay",
+          "size": [
+            7,
+            0.1,
+            0.25
+          ],
+          "position": [
+            0,
+            0.08,
+            -22
+          ],
+          "color": "teal",
+          "rotation": [
+            0,
+            0,
+            0
+          ],
+          "solid": false
+        },
+        {
+          "name": "BypassInlay",
+          "size": [
+            7,
+            0.1,
+            0.25
+          ],
+          "position": [
+            12,
+            0.08,
+            -22
+          ],
+          "color": "teal",
+          "rotation": [
+            0,
+            0,
+            0
+          ],
+          "solid": false
+        },
+        {
+          "name": "BypassInlay",
+          "size": [
+            7,
+            0.1,
+            0.25
+          ],
+          "position": [
+            24,
+            0.08,
+            -22
+          ],
+          "color": "teal",
+          "rotation": [
+            0,
+            0,
+            0
+          ],
+          "solid": false
+        }
+      ],
+      "markers": [
+        {
+          "id": "door_clue_1",
+          "position": [
+            -21,
+            0.15,
+            9
+          ]
+        },
+        {
+          "id": "door_clue_2",
+          "position": [
+            0,
+            0.15,
+            9
+          ]
+        },
+        {
+          "id": "door_clue_3",
+          "position": [
+            21,
+            0.15,
+            9
+          ]
+        },
+        {
+          "id": "sun_door",
+          "position": [
+            -16,
+            0.15,
+            -3
+          ]
+        },
+        {
+          "id": "moon_door",
+          "position": [
+            16,
+            0.15,
+            -3
+          ]
+        },
+        {
+          "id": "bypass_left",
+          "position": [
+            -29,
+            0.15,
+            -18
+          ]
+        },
+        {
+          "id": "bypass_right",
+          "position": [
+            29,
+            0.15,
+            -18
+          ]
+        },
+        {
+          "id": "bypass_record",
+          "position": [
+            0,
+            0.15,
+            -22
+          ]
+        }
+      ],
+      "footprint": [
+        76,
+        58
+      ],
+      "aisleWidth": 10
+    },
+    {
+      "id": "first_ledger",
+      "kind": "Chapter04Scene",
+      "parts": [
+        {
+          "name": "WalkableFloor",
+          "size": [
+            76,
+            1,
+            72
+          ],
+          "position": [
+            0,
+            -0.5,
+            0
+          ],
+          "color": "navy",
+          "rotation": [
+            0,
+            0,
+            0
+          ],
+          "solid": true
+        },
+        {
+          "name": "ColumnFoot",
+          "size": [
+            3,
+            1,
+            3
+          ],
+          "position": [
+            -31,
+            0.5,
+            -28
+          ],
+          "color": "ivory",
+          "rotation": [
+            0,
+            0,
+            0
+          ],
+          "solid": true
+        },
+        {
+          "name": "ColumnShaft",
+          "size": [
+            2,
+            22,
+            2
+          ],
+          "position": [
+            -31,
+            12.0,
+            -28
+          ],
+          "color": "navy",
+          "rotation": [
+            0,
+            0,
+            0
+          ],
+          "solid": true
+        },
+        {
+          "name": "ColumnBand",
+          "size": [
+            2.4,
+            0.5,
+            2.4
+          ],
+          "position": [
+            -31,
+            2,
+            -28
+          ],
+          "color": "brass",
+          "rotation": [
+            0,
+            0,
+            0
+          ],
+          "solid": false
+        },
+        {
+          "name": "ColumnBand",
+          "size": [
+            2.4,
+            0.5,
+            2.4
+          ],
+          "position": [
+            -31,
+            21,
+            -28
+          ],
+          "color": "brass",
+          "rotation": [
+            0,
+            0,
+            0
+          ],
+          "solid": false
+        },
+        {
+          "name": "ColumnCrown",
+          "size": [
+            3,
+            1,
+            3
+          ],
+          "position": [
+            -31,
+            23.5,
+            -28
+          ],
+          "color": "ivory",
+          "rotation": [
+            0,
+            0,
+            0
+          ],
+          "solid": true
+        },
+        {
+          "name": "ColumnFoot",
+          "size": [
+            3,
+            1,
+            3
+          ],
+          "position": [
+            -31,
+            0.5,
+            24
+          ],
+          "color": "ivory",
+          "rotation": [
+            0,
+            0,
+            0
+          ],
+          "solid": true
+        },
+        {
+          "name": "ColumnShaft",
+          "size": [
+            2,
+            22,
+            2
+          ],
+          "position": [
+            -31,
+            12.0,
+            24
+          ],
+          "color": "navy",
+          "rotation": [
+            0,
+            0,
+            0
+          ],
+          "solid": true
+        },
+        {
+          "name": "ColumnBand",
+          "size": [
+            2.4,
+            0.5,
+            2.4
+          ],
+          "position": [
+            -31,
+            2,
+            24
+          ],
+          "color": "brass",
+          "rotation": [
+            0,
+            0,
+            0
+          ],
+          "solid": false
+        },
+        {
+          "name": "ColumnBand",
+          "size": [
+            2.4,
+            0.5,
+            2.4
+          ],
+          "position": [
+            -31,
+            21,
+            24
+          ],
+          "color": "brass",
+          "rotation": [
+            0,
+            0,
+            0
+          ],
+          "solid": false
+        },
+        {
+          "name": "ColumnCrown",
+          "size": [
+            3,
+            1,
+            3
+          ],
+          "position": [
+            -31,
+            23.5,
+            24
+          ],
+          "color": "ivory",
+          "rotation": [
+            0,
+            0,
+            0
+          ],
+          "solid": true
+        },
+        {
+          "name": "ColumnFoot",
+          "size": [
+            3,
+            1,
+            3
+          ],
+          "position": [
+            31,
+            0.5,
+            -28
+          ],
+          "color": "ivory",
+          "rotation": [
+            0,
+            0,
+            0
+          ],
+          "solid": true
+        },
+        {
+          "name": "ColumnShaft",
+          "size": [
+            2,
+            22,
+            2
+          ],
+          "position": [
+            31,
+            12.0,
+            -28
+          ],
+          "color": "navy",
+          "rotation": [
+            0,
+            0,
+            0
+          ],
+          "solid": true
+        },
+        {
+          "name": "ColumnBand",
+          "size": [
+            2.4,
+            0.5,
+            2.4
+          ],
+          "position": [
+            31,
+            2,
+            -28
+          ],
+          "color": "brass",
+          "rotation": [
+            0,
+            0,
+            0
+          ],
+          "solid": false
+        },
+        {
+          "name": "ColumnBand",
+          "size": [
+            2.4,
+            0.5,
+            2.4
+          ],
+          "position": [
+            31,
+            21,
+            -28
+          ],
+          "color": "brass",
+          "rotation": [
+            0,
+            0,
+            0
+          ],
+          "solid": false
+        },
+        {
+          "name": "ColumnCrown",
+          "size": [
+            3,
+            1,
+            3
+          ],
+          "position": [
+            31,
+            23.5,
+            -28
+          ],
+          "color": "ivory",
+          "rotation": [
+            0,
+            0,
+            0
+          ],
+          "solid": true
+        },
+        {
+          "name": "ColumnFoot",
+          "size": [
+            3,
+            1,
+            3
+          ],
+          "position": [
+            31,
+            0.5,
+            24
+          ],
+          "color": "ivory",
+          "rotation": [
+            0,
+            0,
+            0
+          ],
+          "solid": true
+        },
+        {
+          "name": "ColumnShaft",
+          "size": [
+            2,
+            22,
+            2
+          ],
+          "position": [
+            31,
+            12.0,
+            24
+          ],
+          "color": "navy",
+          "rotation": [
+            0,
+            0,
+            0
+          ],
+          "solid": true
+        },
+        {
+          "name": "ColumnBand",
+          "size": [
+            2.4,
+            0.5,
+            2.4
+          ],
+          "position": [
+            31,
+            2,
+            24
+          ],
+          "color": "brass",
+          "rotation": [
+            0,
+            0,
+            0
+          ],
+          "solid": false
+        },
+        {
+          "name": "ColumnBand",
+          "size": [
+            2.4,
+            0.5,
+            2.4
+          ],
+          "position": [
+            31,
+            21,
+            24
+          ],
+          "color": "brass",
+          "rotation": [
+            0,
+            0,
+            0
+          ],
+          "solid": false
+        },
+        {
+          "name": "ColumnCrown",
+          "size": [
+            3,
+            1,
+            3
+          ],
+          "position": [
+            31,
+            23.5,
+            24
+          ],
+          "color": "ivory",
+          "rotation": [
+            0,
+            0,
+            0
+          ],
+          "solid": true
+        },
+        {
+          "name": "ColumnFoot",
+          "size": [
+            3,
+            1,
+            3
+          ],
+          "position": [
+            -10.0,
+            0.5,
+            -28
+          ],
+          "color": "ivory",
+          "rotation": [
+            0,
+            0,
+            0
+          ],
+          "solid": true
+        },
+        {
+          "name": "ColumnShaft",
+          "size": [
+            2,
+            26,
+            2
+          ],
+          "position": [
+            -10.0,
+            14.0,
+            -28
+          ],
+          "color": "navy",
+          "rotation": [
+            0,
+            0,
+            0
+          ],
+          "solid": true
+        },
+        {
+          "name": "ColumnBand",
+          "size": [
+            2.4,
+            0.5,
+            2.4
+          ],
+          "position": [
+            -10.0,
+            2,
+            -28
+          ],
+          "color": "brass",
+          "rotation": [
+            0,
+            0,
+            0
+          ],
+          "solid": false
+        },
+        {
+          "name": "ColumnBand",
+          "size": [
+            2.4,
+            0.5,
+            2.4
+          ],
+          "position": [
+            -10.0,
+            25,
+            -28
+          ],
+          "color": "brass",
+          "rotation": [
+            0,
+            0,
+            0
+          ],
+          "solid": false
+        },
+        {
+          "name": "ColumnCrown",
+          "size": [
+            3,
+            1,
+            3
+          ],
+          "position": [
+            -10.0,
+            27.5,
+            -28
+          ],
+          "color": "ivory",
+          "rotation": [
+            0,
+            0,
+            0
+          ],
+          "solid": true
+        },
+        {
+          "name": "ColumnFoot",
+          "size": [
+            3,
+            1,
+            3
+          ],
+          "position": [
+            10.0,
+            0.5,
+            -28
+          ],
+          "color": "ivory",
+          "rotation": [
+            0,
+            0,
+            0
+          ],
+          "solid": true
+        },
+        {
+          "name": "ColumnShaft",
+          "size": [
+            2,
+            26,
+            2
+          ],
+          "position": [
+            10.0,
+            14.0,
+            -28
+          ],
+          "color": "navy",
+          "rotation": [
+            0,
+            0,
+            0
+          ],
+          "solid": true
+        },
+        {
+          "name": "ColumnBand",
+          "size": [
+            2.4,
+            0.5,
+            2.4
+          ],
+          "position": [
+            10.0,
+            2,
+            -28
+          ],
+          "color": "brass",
+          "rotation": [
+            0,
+            0,
+            0
+          ],
+          "solid": false
+        },
+        {
+          "name": "ColumnBand",
+          "size": [
+            2.4,
+            0.5,
+            2.4
+          ],
+          "position": [
+            10.0,
+            25,
+            -28
+          ],
+          "color": "brass",
+          "rotation": [
+            0,
+            0,
+            0
+          ],
+          "solid": false
+        },
+        {
+          "name": "ColumnCrown",
+          "size": [
+            3,
+            1,
+            3
+          ],
+          "position": [
+            10.0,
+            27.5,
+            -28
+          ],
+          "color": "ivory",
+          "rotation": [
+            0,
+            0,
+            0
+          ],
+          "solid": true
+        },
+        {
+          "name": "ArchLintel",
+          "size": [
+            23,
+            2,
+            3
+          ],
+          "position": [
+            0,
+            28,
+            -28
+          ],
+          "color": "ivory",
+          "rotation": [
+            0,
+            0,
+            0
+          ],
+          "solid": true
+        },
+        {
+          "name": "CrestInlay",
+          "size": [
+            2,
+            2,
+            0.2
+          ],
+          "position": [
+            0,
+            28,
+            -26.4
+          ],
+          "color": "teal",
+          "rotation": [
+            0,
+            0,
+            45
+          ],
+          "solid": false
+        },
+        {
+          "name": "DeskTop",
+          "size": [
+            16,
+            0.6,
+            4
+          ],
+          "position": [
+            0,
+            3,
+            -13
+          ],
+          "color": "wood",
+          "rotation": [
+            0,
+            0,
+            0
+          ],
+          "solid": true
+        },
+        {
+          "name": "DeskLeg",
+          "size": [
+            0.6,
+            3,
+            0.6
+          ],
+          "position": [
+            -7.0,
+            1.5,
+            -14.4
+          ],
+          "color": "brass",
+          "rotation": [
+            0,
+            0,
+            0
+          ],
+          "solid": true
+        },
+        {
+          "name": "DeskLeg",
+          "size": [
+            0.6,
+            3,
+            0.6
+          ],
+          "position": [
+            -7.0,
+            1.5,
+            -11.6
+          ],
+          "color": "brass",
+          "rotation": [
+            0,
+            0,
+            0
+          ],
+          "solid": true
+        },
+        {
+          "name": "DeskLeg",
+          "size": [
+            0.6,
+            3,
+            0.6
+          ],
+          "position": [
+            7.0,
+            1.5,
+            -14.4
+          ],
+          "color": "brass",
+          "rotation": [
+            0,
+            0,
+            0
+          ],
+          "solid": true
+        },
+        {
+          "name": "DeskLeg",
+          "size": [
+            0.6,
+            3,
+            0.6
+          ],
+          "position": [
+            7.0,
+            1.5,
+            -11.6
+          ],
+          "color": "brass",
+          "rotation": [
+            0,
+            0,
+            0
+          ],
+          "solid": true
+        },
+        {
+          "name": "LedgerCover",
+          "size": [
+            6,
+            0.5,
+            7
+          ],
+          "position": [
+            -3,
+            3.8,
+            -13
+          ],
+          "color": "brass",
+          "rotation": [
+            0,
+            0,
+            -10
+          ],
+          "solid": true
+        },
+        {
+          "name": "LedgerPages",
+          "size": [
+            5.7,
+            0.7,
+            6.7
+          ],
+          "position": [
+            -3,
+            4.3,
+            -13
+          ],
+          "color": "ivory",
+          "rotation": [
+            0,
+            0,
+            -10
+          ],
+          "solid": true
+        },
+        {
+          "name": "LedgerCover",
+          "size": [
+            6,
+            0.5,
+            7
+          ],
+          "position": [
+            3,
+            3.8,
+            -13
+          ],
+          "color": "brass",
+          "rotation": [
+            0,
+            0,
+            10
+          ],
+          "solid": true
+        },
+        {
+          "name": "LedgerPages",
+          "size": [
+            5.7,
+            0.7,
+            6.7
+          ],
+          "position": [
+            3,
+            4.3,
+            -13
+          ],
+          "color": "ivory",
+          "rotation": [
+            0,
+            0,
+            10
+          ],
+          "solid": true
+        },
+        {
+          "name": "PlaqueStand",
+          "size": [
+            1.2,
+            3,
+            1.2
+          ],
+          "position": [
+            -20,
+            1.5,
+            25
+          ],
+          "color": "brass",
+          "rotation": [
+            0,
+            0,
+            0
+          ],
+          "solid": true
+        },
+        {
+          "name": "PlaqueFace",
+          "size": [
+            4,
+            4,
+            0.5
+          ],
+          "position": [
+            -20,
+            5,
+            25
+          ],
+          "color": "dark",
+          "rotation": [
+            0,
+            0,
+            0
+          ],
+          "solid": true
+        },
+        {
+          "name": "TriangleSide",
+          "size": [
+            0.22,
+            2,
+            0.2
+          ],
+          "position": [
+            -20.6,
+            5,
+            25.4
+          ],
+          "color": "teal",
+          "rotation": [
+            0,
+            0,
+            35
+          ],
+          "solid": false
+        },
+        {
+          "name": "TriangleSide",
+          "size": [
+            0.22,
+            2,
+            0.2
+          ],
+          "position": [
+            -19.4,
+            5,
+            25.4
+          ],
+          "color": "teal",
+          "rotation": [
+            0,
+            0,
+            -35
+          ],
+          "solid": false
+        },
+        {
+          "name": "TriangleBase",
+          "size": [
+            2.1,
+            0.22,
+            0.2
+          ],
+          "position": [
+            -20,
+            4.2,
+            25.4
+          ],
+          "color": "teal",
+          "rotation": [
+            0,
+            0,
+            0
+          ],
+          "solid": false
+        },
+        {
+          "name": "PlaqueStand",
+          "size": [
+            1.2,
+            3,
+            1.2
+          ],
+          "position": [
+            0,
+            1.5,
+            25
+          ],
+          "color": "brass",
+          "rotation": [
+            0,
+            0,
+            0
+          ],
+          "solid": true
+        },
+        {
+          "name": "PlaqueFace",
+          "size": [
+            4,
+            4,
+            0.5
+          ],
+          "position": [
+            0,
+            5,
+            25
+          ],
+          "color": "dark",
+          "rotation": [
+            0,
+            0,
+            0
+          ],
+          "solid": true
+        },
+        {
+          "name": "Diamond",
+          "size": [
+            1.5,
+            1.5,
+            0.2
+          ],
+          "position": [
+            0,
+            5,
+            25.4
+          ],
+          "color": "teal",
+          "rotation": [
+            0,
+            0,
+            45
+          ],
+          "solid": false
+        },
+        {
+          "name": "PlaqueStand",
+          "size": [
+            1.2,
+            3,
+            1.2
+          ],
+          "position": [
+            20,
+            1.5,
+            25
+          ],
+          "color": "brass",
+          "rotation": [
+            0,
+            0,
+            0
+          ],
+          "solid": true
+        },
+        {
+          "name": "PlaqueFace",
+          "size": [
+            4,
+            4,
+            0.5
+          ],
+          "position": [
+            20,
+            5,
+            25
+          ],
+          "color": "dark",
+          "rotation": [
+            0,
+            0,
+            0
+          ],
+          "solid": true
+        },
+        {
+          "name": "Cross",
+          "size": [
+            0.22,
+            2.1,
+            0.2
+          ],
+          "position": [
+            20,
+            5,
+            25.4
+          ],
+          "color": "teal",
+          "rotation": [
+            0,
+            0,
+            -45
+          ],
+          "solid": false
+        },
+        {
+          "name": "Cross",
+          "size": [
+            0.22,
+            2.1,
+            0.2
+          ],
+          "position": [
+            20,
+            5,
+            25.4
+          ],
+          "color": "teal",
+          "rotation": [
+            0,
+            0,
+            45
+          ],
+          "solid": false
+        },
+        {
+          "name": "GuardianCircle",
+          "size": [
+            0.2,
+            0.1,
+            7
+          ],
+          "position": [
+            0.0,
+            0.08,
+            14.0
+          ],
+          "color": "brass",
+          "rotation": [
+            0,
+            0,
+            0
+          ],
+          "solid": false
+        },
+        {
+          "name": "GuardianCircle",
+          "size": [
+            0.2,
+            0.1,
+            7
+          ],
+          "position": [
+            7.778174593052023,
+            0.08,
+            10.778174593052023
+          ],
+          "color": "brass",
+          "rotation": [
+            0,
+            45,
+            0
+          ],
+          "solid": false
+        },
+        {
+          "name": "GuardianCircle",
+          "size": [
+            0.2,
+            0.1,
+            7
+          ],
+          "position": [
+            11.0,
+            0.08,
+            3.000000000000001
+          ],
+          "color": "brass",
+          "rotation": [
+            0,
+            90,
+            0
+          ],
+          "solid": false
+        },
+        {
+          "name": "GuardianCircle",
+          "size": [
+            0.2,
+            0.1,
+            7
+          ],
+          "position": [
+            7.778174593052023,
+            0.08,
+            -4.778174593052022
+          ],
+          "color": "brass",
+          "rotation": [
+            0,
+            135,
+            0
+          ],
+          "solid": false
+        },
+        {
+          "name": "GuardianCircle",
+          "size": [
+            0.2,
+            0.1,
+            7
+          ],
+          "position": [
+            1.3471114790620886e-15,
+            0.08,
+            -8.0
+          ],
+          "color": "brass",
+          "rotation": [
+            0,
+            180,
+            0
+          ],
+          "solid": false
+        },
+        {
+          "name": "GuardianCircle",
+          "size": [
+            0.2,
+            0.1,
+            7
+          ],
+          "position": [
+            -7.778174593052022,
+            0.08,
+            -4.778174593052024
+          ],
+          "color": "brass",
+          "rotation": [
+            0,
+            225,
+            0
+          ],
+          "solid": false
+        },
+        {
+          "name": "GuardianCircle",
+          "size": [
+            0.2,
+            0.1,
+            7
+          ],
+          "position": [
+            -11.0,
+            0.08,
+            2.999999999999998
+          ],
+          "color": "brass",
+          "rotation": [
+            0,
+            270,
+            0
+          ],
+          "solid": false
+        },
+        {
+          "name": "GuardianCircle",
+          "size": [
+            0.2,
+            0.1,
+            7
+          ],
+          "position": [
+            -7.778174593052024,
+            0.08,
+            10.778174593052022
+          ],
+          "color": "brass",
+          "rotation": [
+            0,
+            315,
+            0
+          ],
+          "solid": false
+        }
+      ],
+      "markers": [
+        {
+          "id": "city_seal_1",
+          "position": [
+            -20,
+            0.15,
+            18
+          ]
+        },
+        {
+          "id": "city_seal_2",
+          "position": [
+            0,
+            0.15,
+            18
+          ]
+        },
+        {
+          "id": "city_seal_3",
+          "position": [
+            20,
+            0.15,
+            18
+          ]
+        },
+        {
+          "id": "records_guardian",
+          "position": [
+            0,
+            0.15,
+            3
+          ]
+        },
+        {
+          "id": "copy_ledger",
+          "position": [
+            0,
+            0.15,
+            -7
+          ]
+        },
+        {
+          "id": "certify_ledger",
+          "position": [
+            26,
+            0.15,
+            18
+          ]
+        }
+      ],
+      "footprint": [
+        76,
+        72
+      ],
+      "aisleWidth": 10
+    }
+  ]
+}

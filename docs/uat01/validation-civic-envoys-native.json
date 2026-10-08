@@ -1,0 +1,235 @@
+{
+  "date": "2026-10-06",
+  "method": "ordinary mouse/keyboard, navigation speed 1, no gameplay remote injection or profile grants",
+  "claimedBeforeRokaPositionFix": [
+    {
+      "gold": 25,
+      "revision": 9,
+      "journal": {
+        "city_gate": {
+          "state": "Claimed",
+          "progress": 1
+        },
+        "elian_charter": {
+          "state": "Claimed",
+          "progress": 1
+        }
+      },
+      "code": "OK"
+    }
+  ],
+  "dialogues": {
+    "Vaela": [
+      [
+        {
+          "name": "TextLabel",
+          "text": "Build. Trade. Conquer. Begin with your own small adventurer guild."
+        },
+        {
+          "name": "TextLabel",
+          "text": "Arborist Vaela · Sylvaris envoy"
+        },
+        {
+          "name": "TextLabel",
+          "text": "Sylvaris grows by leaving room for the next seedling. I am studying Greenwood plants with Mogra. Gather gently at the herb patch, keep what you need, and tell me what the forest taught you."
+        },
+        {
+          "name": "TextLabel",
+          "text": "Complete Field Medicine first"
+        },
+        {
+          "name": "CloseDialogue",
+          "text": "See you soon"
+        }
+      ]
+    ],
+    "Sela": [
+      [
+        {
+          "name": "TextLabel",
+          "text": "Build. Trade. Conquer. Begin with your own small adventurer guild."
+        },
+        {
+          "name": "TextLabel",
+          "text": "Harbormaster Sela · Crosshaven envoy"
+        },
+        {
+          "name": "TextLabel",
+          "text": "Crosshaven is built on promises kept between strangers. Our cargo shelter needs a few sound boards before the next rain. Deliver the timber here and I will see it shared among every crew, whatever their homeland."
+        },
+        {
+          "name": "TextLabel",
+          "text": "Complete A Company Takes Shape first"
+        },
+        {
+          "name": "CloseDialogue",
+          "text": "See you soon"
+        }
+      ]
+    ],
+    "Borin": [
+      [
+        {
+          "name": "TextLabel",
+          "text": "Build. Trade. Conquer. Begin with your own small adventurer guild."
+        },
+        {
+          "name": "TextLabel",
+          "text": "Smith Borin · Deepforge envoy"
+        },
+        {
+          "name": "TextLabel",
+          "text": "Deepforge's best work is work that lasts. Rukk has the patience of a fine smith already. Practise two ingots in your guild forge; they remain yours, and every sound casting is one less wasted load of ore."
+        },
+        {
+          "name": "TextLabel",
+          "text": "Complete From Ore to Iron first"
+        },
+        {
+          "name": "CloseDialogue",
+          "text": "See you soon"
+        }
+      ]
+    ],
+    "Nyra": [
+      [
+        {
+          "name": "TextLabel",
+          "text": "Build. Trade. Conquer. Begin with your own small adventurer guild."
+        },
+        {
+          "name": "TextLabel",
+          "text": "Cartographer Nyra · Astralis envoy"
+        },
+        {
+          "name": "TextLabel",
+          "text": "A useful map marks a safe way home as carefully as a discovery. I came from Astralis to compare the Ashen stone seams. Visit the marked outcrop and return with your observations; keep the stone for your guild."
+        },
+        {
+          "name": "TextLabel",
+          "text": "Complete Field Medicine first"
+        },
+        {
+          "name": "CloseDialogue",
+          "text": "See you soon"
+        }
+      ]
+    ],
+    "RokaFreshBoot": [
+      [
+        {
+          "name": "TextLabel",
+          "text": "Build. Trade. Conquer. Begin with your own small adventurer guild."
+        },
+        {
+          "name": "TextLabel",
+          "text": "Steward Roka · Ironroot envoy"
+        },
+        {
+          "name": "TextLabel",
+          "text": "Borga says you know the value of a warm welcome. In Ironroot, a shared meal is how neighbours become friends. Bring a few herbs for our community pot; humans, elves, dwarves and Orcs all have a seat."
+        },
+        {
+          "name": "TextLabel",
+          "text": "Complete A Hearth for Everyone first"
+        },
+        {
+          "name": "CloseDialogue",
+          "text": "See you soon"
+        }
+      ]
+    ]
+  },
+  "finalGeometry": [
+    {
+      "readOnly": true,
+      "envoys": [
+        {
+          "path": "Success",
+          "id": "marshal_elian",
+          "y": 3.699998378753662,
+          "x": -63,
+          "city": "Crownford",
+          "blocked": [],
+          "z": -1090,
+          "motors": 15,
+          "ground": "Workspace.GuildborneWorld.City.Plaza.Courtyard",
+          "parts": 51
+        },
+        {
+          "path": "Success",
+          "id": "arborist_vaela",
+          "y": 3.699998378753662,
+          "x": 253,
+          "city": "Sylvaris",
+          "blocked": [],
+          "z": -1088,
+          "motors": 15,
+          "ground": "Workspace.GuildborneWorld.City.Market.Courtyard",
+          "parts": 52
+        },
+        {
+          "path": "Success",
+          "id": "steward_roka",
+          "y": 3.699998378753662,
+          "x": -95,
+          "city": "Ironroot",
+          "blocked": [],
+          "z": -856,
+          "motors": 15,
+          "ground": "Workspace.GuildborneWorld.City.Tavern.Courtyard",
+          "parts": 59
+        },
+        {
+          "path": "Success",
+          "id": "harbormaster_sela",
+          "y": 3.699998378753662,
+          "x": 298,
+          "city": "Crosshaven",
+          "blocked": [],
+          "z": -1052,
+          "motors": 15,
+          "ground": "Workspace.GuildborneWorld.City.Market.Courtyard",
+          "parts": 57
+        },
+        {
+          "path": "Success",
+          "id": "smith_borin",
+          "y": 3.300001621246338,
+          "x": 363,
+          "city": "Deepforge",
+          "blocked": [],
+          "z": -958,
+          "motors": 15,
+          "ground": "Workspace.GuildborneWorld.City.CityGround",
+          "parts": 48
+        },
+        {
+          "path": "Success",
+          "id": "cartographer_nyra",
+          "y": 3.699998378753662,
+          "x": -35,
+          "city": "Astralis",
+          "blocked": [],
+          "z": -1460,
+          "motors": 15,
+          "ground": "Workspace.GuildborneWorld.City.Tower.Courtyard",
+          "parts": 55
+        }
+      ],
+      "count": 6,
+      "profileWrites": 0
+    }
+  ],
+  "finalFreshFocus": [
+    {
+      "target": 144,
+      "canvas": 282,
+      "viewport": 128
+    }
+  ],
+  "console": [
+    "[Guildborne] Phase 1 ready · Studio memory · not saved after Stop\n[Guildborne] profile_loaded {\"revision\":0}\n[Guildborne] session_started []\n[Guildborne] Phase 1 client ready\n[Guildborne] profile_saved {\"action\":\"TravelZone\",\"revision\":1}"
+  ],
+  "limits": "Only Elian civic task completed through ordinary input. Other five prerequisite dialogue checked; rewards/faults covered by isolated domain tests. No six full city or live datastore claim."
+}

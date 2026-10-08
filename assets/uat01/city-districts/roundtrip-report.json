@@ -1,0 +1,170 @@
+[
+  {
+    "file": "crownford-district-v2.fbx",
+    "parts": 108,
+    "triangles": 1296,
+    "bounds": [
+      -10.0,
+      -12.5,
+      -0.10000203549861908,
+      10.0,
+      12.5,
+      3.4000000953674316
+    ],
+    "sha256": "9e83dfa2375e64134b1d6ec3957eb7d1e54b57068e45a4877972b8931be11d24"
+  },
+  {
+    "file": "crownford-district-v2.glb",
+    "parts": 108,
+    "triangles": 1296,
+    "bounds": [
+      -10.0,
+      -12.5,
+      -0.10000000149011612,
+      10.0,
+      12.5,
+      3.3999998569488525
+    ],
+    "sha256": "ad55db90841b54cd7001a751ffb405d84d9b874ed2c79a1ed8f02f45ccb2dfb4"
+  },
+  {
+    "file": "sylvaris-district-v2.fbx",
+    "parts": 112,
+    "triangles": 1344,
+    "bounds": [
+      -10.0,
+      -12.5,
+      -0.10000203549861908,
+      10.0,
+      12.5,
+      3.3999998569488525
+    ],
+    "sha256": "dce350c07e02e42919912367c05e7c74a4febe16ca96df03a486936940d398d9"
+  },
+  {
+    "file": "sylvaris-district-v2.glb",
+    "parts": 112,
+    "triangles": 1344,
+    "bounds": [
+      -10.0,
+      -12.5,
+      -0.10000000149011612,
+      10.0,
+      12.5,
+      3.4000000953674316
+    ],
+    "sha256": "379856bd146915b6ecbfca76372d3d95fb894c9a5d069c311285fc77c8edcc1c"
+  },
+  {
+    "file": "deepforge-district-v2.fbx",
+    "parts": 100,
+    "triangles": 1200,
+    "bounds": [
+      -10.0,
+      -12.5,
+      -0.10000203549861908,
+      10.0,
+      12.5,
+      3.325000047683716
+    ],
+    "sha256": "6ff64eef14c053314f679a70016cca8e369f2198ef641f10c5e6bdc79586c341"
+  },
+  {
+    "file": "deepforge-district-v2.glb",
+    "parts": 100,
+    "triangles": 1200,
+    "bounds": [
+      -10.0,
+      -12.5,
+      -0.10000000149011612,
+      10.0,
+      12.5,
+      3.325000047683716
+    ],
+    "sha256": "1bd9c9d7d33958e583ea47ffa63553762aab73f86f09520828477dc14948e7ba"
+  },
+  {
+    "file": "astralis-district-v2.fbx",
+    "parts": 120,
+    "triangles": 1440,
+    "bounds": [
+      -10.0,
+      -12.5,
+      -0.10000203549861908,
+      10.0,
+      12.5,
+      3.7274997234344482
+    ],
+    "sha256": "4aed7943f523c429a423f4cf631e37d092ba693e9c0a9af522c72ce22329baea"
+  },
+  {
+    "file": "astralis-district-v2.glb",
+    "parts": 120,
+    "triangles": 1440,
+    "bounds": [
+      -10.0,
+      -12.5,
+      -0.10000000149011612,
+      10.0,
+      12.5,
+      3.7274999618530273
+    ],
+    "sha256": "9d1e197211633999555604b8a70256d4ab574dbfe3bf14e1a9bbe5741eead33c"
+  },
+  {
+    "file": "crosshaven-district-v2.fbx",
+    "parts": 106,
+    "triangles": 1272,
+    "bounds": [
+      -10.0,
+      -12.5,
+      -0.10000203549861908,
+      10.0,
+      12.5,
+      3.499999761581421
+    ],
+    "sha256": "f12b8276051f8900506294fff689c2896f172cb0e5d461f1706d619da1941fcd"
+  },
+  {
+    "file": "crosshaven-district-v2.glb",
+    "parts": 106,
+    "triangles": 1272,
+    "bounds": [
+      -10.0,
+      -12.5,
+      -0.10000000149011612,
+      10.0,
+      12.5,
+      3.5
+    ],
+    "sha256": "d14f874fe95373f66bb7b5677fc716035cdab48a31f3239eef2a211c21dede27"
+  },
+  {
+    "file": "ironroot-district-v2.fbx",
+    "parts": 112,
+    "triangles": 1344,
+    "bounds": [
+      -10.0,
+      -12.5,
+      -0.10000203549861908,
+      10.0,
+      12.5,
+      2.8317999839782715
+    ],
+    "sha256": "877ddd7bf4ea8ca0ea2017b0139a67a31d5828b0be18db00f6252fc2a83f90bc"
+  },
+  {
+    "file": "ironroot-district-v2.glb",
+    "parts": 112,
+    "triangles": 1344,
+    "bounds": [
+      -10.0,
+      -12.5,
+      -0.10000000149011612,
+      10.0,
+      12.5,
+      2.8317999839782715
+    ],
+    "sha256": "9dca610dabd64da271d05a1195b9c2a3e31d6e379282ba2cf760fe865018ae28"
+  }
+]

@@ -1,0 +1,7 @@
+# Mine activity feedback — 2026-10-04
+
+Original local geometry now reads the server's mine activity attributes. A falling-hazard border and suspended shutter mark the threatened lane; a closed shutter turns teal. Miner footprints and an exit beacon distinguish walking from waiting. Text prompts remain the authoritative readable instructions; sound and animation are optional.
+
+The controller has no networking, reward, movement or damage calls. It renders only the owner's mine within100 studs, at most one activity, with14 parts maximum on High and8 on Low/touch. All parts are anchored, non-colliding, non-queryable and non-touchable. Reduced motion hides falling debris and removes beacon movement. Stale/future warnings, wrong owners, invalid positions, completed rescues and removed/reparented models clear their visuals. Destroy disconnects listeners.
+
+Native synthetic fixture:18 stages/106 non-colliding part checks pass, including quality/touch/reduced motion, stale/future warning rejection, duplicate-owner budget, tag remove/re-add, reparent and cleanup. A temporary three-panel native visual review confirmed amber warning, teal closed shutter and separate miner/exit markers; the review was removed and camera/HUD restored. This is visual fixture evidence, not another actual Chapter02 playthrough. Binding is in the explicit mine adapter and client bootstrap; full latest-effects journey, physical devices and human readability review remain open.

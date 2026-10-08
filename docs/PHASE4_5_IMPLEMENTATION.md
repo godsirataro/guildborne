@@ -1,0 +1,29 @@
+# Phase 4.5 — marketplace production hardening
+
+Implemented for **further controlled private testing**, not public release. No publication occurred and Phase 5 was not started. **TRUE CROSS-SERVER LIVE ACCEPTANCE: PENDING PRIVATE PUBLISH / PLATFORM ACCEPTANCE. PHYSICAL DEVICE: PENDING.** Phase 4.5 Studio/Architecture DoD is met for the documented bounded private-testing scope; full live acceptance remains gated below.
+
+## Delivered architecture
+
+`MarketEpochs` adds schema-v2 lifecycle and archival over the existing atomic book transforms. `MarketReconciliation` audits quiescent cohort snapshots. `MarketHealth` handles transport/budget circuit state. `MarketNamespace` and `MarketAcceptanceConfig` centralize public gating and opt-in private isolation. MarketService, MarketRuntime and MarketCloud retain their existing responsibilities. No new economy or gameplay system was added.
+
+Each item reuses one fixed authority key. ACTIVE closes into cancelled/refunded claims, waits for source confirmation and recipient acknowledgment, reconciles, archives and atomically starts the next generation. Raw receipts cannot be pruned before settlement and the replay window. Durable generation floors and lifetime per-item claim sequences reject old operations after pruning. Profile source journals compact through verified archived generations. An offline/capacity-blocked participant can hold an item closed; the design favors ownership preservation over uninterrupted availability.
+
+Archives preserve bounded candle windows and 32 recent epoch summaries plus fixed cumulative totals. Robust reference snapshots can serve an explicitly labeled, time-limited archived fallback. Limits are five open orders/player, 32 live admissions/item, 160 conservatively partitioned across five items, 128 tickets/raw-history bound/generation and 1 MiB serialized book. Both sides remain atomic in the same item key. There is no claim that this removes Roblox's per-hot-key throughput ceiling; item isolation, bounded records, write pacing and budget-aware maintenance make that ceiling manageable for private testing.
+
+Namespace version is the persisted market schema version; existing `GB_Market_staging` and `b:<item>:1` roots remain to avoid orphaning v1 escrow. Schema-v1 books migrate additively on first new writer. Older writers reject schema v2. PlayerData remains v6 with optional transfer epoch and per-item floor fields; progression is untouched. Deploy the new reader consistently and drain old servers. Do not change store roots, epochs or watermarks manually.
+
+Health modes HEALTHY/DEGRADED/READ_ONLY/PAUSED are server-controlled. Severe transport failures enter a timed read-only breaker, invariant mismatch latches paused, and durable per-item modes survive restart. Market maintenance yields cloud headroom to player saves. The operator BindableFunction is server-only, enabled only for Studio/private staging; it cannot grant assets or force unreceipted settlement. Public market stays disabled in configuration.
+
+The only adjacent regression fix reasserts server physics ownership after companion equipment weld changes. Native testing found equipped Warrior ownership could revert to automatic/client ownership; this preserves the existing server-authoritative follower/combat policy without changing combat rules.
+
+## Verification and scope
+
+Baseline: **210 passed**, including all original 136 regressions. Hardening adds **61 tests**, for **271 total** at this checkpoint, with strict analysis, build and repository validation. Native two-client and four-client flows, partial fills, repeated cancellation, rollover, pending-claim refusal, archive, new generation, read-only/pause, cloud loss/rebuild and preserved chart data were executed. [Studio report](PHASE4_5_STUDIO_TEST.md) contains exact observations and caveats. [Load report](PHASE4_5_LOAD_TEST.md) records the 5,000-order regular test and 20,000-order sustained synthetic run, all with zero invariant failures.
+
+The private acceptance builder produces a separate local artifact with an explicit run ID and allowlisted test accounts. It isolates both profiles and market under qa45_<runId>, includes a reserved-server launcher/evidence recorder, and never publishes. Default Runtime keeps this path disabled. A build-only test using dummy IDs 101/102 succeeded; that artifact is not a valid live test identity configuration and must not be published. Generate a fresh artifact with the approved real test accounts when publication is authorized.
+
+Remaining gates: independent nonempty/different live JobIds, real profile offline/rejoin/server-kill acceptance, physical Android/iOS touch, sustained cloud/private soak and target-concurrency qualification. Local multiplayer JobId was empty, so it cannot establish independent live servers. Roblox's supported teleport/reserved-server path requires a published experience and Roblox client; no publication was attempted.
+
+Known limits: offline claims can delay rollover indefinitely; per-item CAS remains a throughput limit; 24-hour archived summaries have a fifteen-minute edge bucket approximation; own detailed history covers retained raw generations, not indefinite account history; reference fallback across epochs retains a qualified snapshot rather than reconstructing account diversity from aggregated candles. Current operator counters are diagnostic snapshots, not a production telemetry warehouse. Existing player audit archive/platform version retention is outside market-authority compaction.
+
+Read [epochs](MARKET_EPOCHS.md), [archival](MARKET_ARCHIVAL.md), [recovery](MARKET_RECOVERY.md), [operations](MARKET_OPERATIONS_RUNBOOK.md), [private acceptance](PHASE4_PRIVATE_SERVER_ACCEPTANCE.md), and [device acceptance](PHASE4_5_MOBILE_DEVICE_ACCEPTANCE.md). PublicEnabled must remain false until those release gates pass.

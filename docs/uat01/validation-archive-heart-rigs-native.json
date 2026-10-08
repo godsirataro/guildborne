@@ -1,0 +1,13 @@
+{
+  "date": "2026-10-06",
+  "studio": "4ab95e05-4207-4e20-a0f6-856526922e40",
+  "visibleParts": 106,
+  "motors": 30,
+  "rigs": [
+    {"id":"last_warden","motors":15,"walk":true,"attack":true,"windup":true,"cancelRestores":true,"reducedIdle":true,"deathRevive":true,"distanceCullResets":true,"rootUntouched":true},
+    {"id":"keeper_of_names","motors":15,"walk":true,"attack":true,"windup":true,"cancelRestores":true,"reducedIdle":true,"deathRevive":true,"distanceCullResets":true,"rootUntouched":true}
+  ],
+  "profileWrites": 0,
+  "combatBound": false,
+  "scope": "Isolated local visual fixture, not a campaign boss victory."
+}

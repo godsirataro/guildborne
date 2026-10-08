@@ -1,0 +1,2293 @@
+{
+  "method": "Real F/Q key holds and observed-warning keyboard movement via MCP; temporary level10 eligibility, no profile grants.",
+  "samples": [
+    {
+      "now": 10220.744525399998,
+      "snapshot": {
+        "expiresAt": 10520.5774763,
+        "progress": [],
+        "playerHealth": 49,
+        "classId": "Archer",
+        "enemyHealth": 700,
+        "playerMaxHealth": 49,
+        "status": "Active",
+        "enemyMaxHealth": 700,
+        "id": "native-archer-3",
+        "position": {
+          "y": 0,
+          "x": 0,
+          "z": 16
+        },
+        "patientHealth": 30,
+        "patientMaxHealth": 100,
+        "nextAbility": 0,
+        "nextAttack": 0
+      }
+    },
+    {
+      "now": 10221.210634399999,
+      "snapshot": {
+        "expiresAt": 10520.876774600001,
+        "progress": {
+          "ranged_hit": 1
+        },
+        "playerHealth": 49,
+        "classId": "Archer",
+        "enemyHealth": 647,
+        "playerMaxHealth": 49,
+        "status": "Active",
+        "enemyMaxHealth": 700,
+        "id": "native-archer-3",
+        "position": {
+          "y": 0,
+          "x": 0,
+          "z": 16
+        },
+        "patientHealth": 30,
+        "patientMaxHealth": 100,
+        "nextAbility": 10227.943842,
+        "nextAttack": 10222.376774600001
+      }
+    },
+    {
+      "now": 10221.6775873,
+      "snapshot": {
+        "expiresAt": 10520.876774600001,
+        "progress": {
+          "ranged_hit": 1
+        },
+        "playerHealth": 49,
+        "classId": "Archer",
+        "enemyHealth": 647,
+        "playerMaxHealth": 49,
+        "status": "Active",
+        "enemyMaxHealth": 700,
+        "id": "native-archer-3",
+        "position": {
+          "y": 0,
+          "x": 0,
+          "z": 16
+        },
+        "patientHealth": 30,
+        "patientMaxHealth": 100,
+        "nextAbility": 10227.943842,
+        "nextAttack": 10222.376774600001
+      }
+    },
+    {
+      "now": 10222.144236,
+      "snapshot": {
+        "expiresAt": 10520.876774600001,
+        "progress": {
+          "ranged_hit": 1
+        },
+        "playerHealth": 49,
+        "classId": "Archer",
+        "enemyHealth": 647,
+        "playerMaxHealth": 49,
+        "status": "Active",
+        "enemyMaxHealth": 700,
+        "id": "native-archer-3",
+        "position": {
+          "y": 0,
+          "x": 0,
+          "z": 16
+        },
+        "patientHealth": 30,
+        "patientMaxHealth": 100,
+        "nextAbility": 10227.943842,
+        "nextAttack": 10222.376774600001
+      }
+    },
+    {
+      "now": 10222.611340399999,
+      "snapshot": {
+        "expiresAt": 10520.876774600001,
+        "progress": {
+          "ranged_hit": 1
+        },
+        "playerHealth": 49,
+        "classId": "Archer",
+        "enemyHealth": 647,
+        "playerMaxHealth": 49,
+        "status": "Active",
+        "enemyMaxHealth": 700,
+        "id": "native-archer-3",
+        "position": {
+          "y": 0,
+          "x": 0,
+          "z": 16
+        },
+        "patientHealth": 30,
+        "patientMaxHealth": 100,
+        "nextAbility": 10227.943842,
+        "nextAttack": 10222.376774600001
+      }
+    },
+    {
+      "now": 10223.0773433,
+      "snapshot": {
+        "warning": {
+          "impactAt": 10224.176910000002,
+          "x": 0,
+          "startsAt": 10222.976910000001,
+          "z": 16,
+          "radius": 6
+        },
+        "expiresAt": 10520.876774600001,
+        "progress": {
+          "ranged_hit": 2
+        },
+        "playerHealth": 49,
+        "classId": "Archer",
+        "enemyHealth": 628,
+        "playerMaxHealth": 49,
+        "status": "Active",
+        "nextAbility": 10227.943842,
+        "id": "native-archer-3",
+        "position": {
+          "y": 0,
+          "x": 0,
+          "z": 16
+        },
+        "patientHealth": 30,
+        "patientMaxHealth": 100,
+        "enemyMaxHealth": 700,
+        "nextAttack": 10224.2429223
+      }
+    },
+    {
+      "now": 10224.1445211,
+      "snapshot": {
+        "warning": {
+          "impactAt": 10224.176910000002,
+          "x": 0,
+          "startsAt": 10222.976910000001,
+          "z": 16,
+          "radius": 6
+        },
+        "expiresAt": 10520.876774600001,
+        "progress": {
+          "ranged_hit": 2
+        },
+        "playerHealth": 49,
+        "classId": "Archer",
+        "enemyHealth": 628,
+        "playerMaxHealth": 49,
+        "status": "Active",
+        "nextAbility": 10227.943842,
+        "id": "native-archer-3",
+        "position": {
+          "y": 0,
+          "x": 7.390625,
+          "z": 11.734375
+        },
+        "patientHealth": 30,
+        "patientMaxHealth": 100,
+        "enemyMaxHealth": 700,
+        "nextAttack": 10224.2429223
+      }
+    },
+    {
+      "now": 10224.5940944,
+      "snapshot": {
+        "expiresAt": 10520.876774600001,
+        "progress": {
+          "dodge": 1,
+          "ranged_hit": 3
+        },
+        "playerHealth": 49,
+        "classId": "Archer",
+        "enemyHealth": 609,
+        "playerMaxHealth": 49,
+        "status": "Active",
+        "enemyMaxHealth": 700,
+        "id": "native-archer-3",
+        "position": {
+          "y": 0,
+          "x": 7.390625,
+          "z": 11.734375
+        },
+        "patientHealth": 30,
+        "patientMaxHealth": 100,
+        "nextAbility": 10227.943842,
+        "nextAttack": 10225.7776883
+      }
+    },
+    {
+      "now": 10225.0441383,
+      "snapshot": {
+        "expiresAt": 10520.876774600001,
+        "progress": {
+          "dodge": 1,
+          "ranged_hit": 3
+        },
+        "playerHealth": 49,
+        "classId": "Archer",
+        "enemyHealth": 609,
+        "playerMaxHealth": 49,
+        "status": "Active",
+        "enemyMaxHealth": 700,
+        "id": "native-archer-3",
+        "position": {
+          "y": 0,
+          "x": 7.390625,
+          "z": 11.734375
+        },
+        "patientHealth": 30,
+        "patientMaxHealth": 100,
+        "nextAbility": 10227.943842,
+        "nextAttack": 10225.7776883
+      }
+    },
+    {
+      "now": 10225.5114989,
+      "snapshot": {
+        "expiresAt": 10520.876774600001,
+        "progress": {
+          "dodge": 1,
+          "ranged_hit": 3
+        },
+        "playerHealth": 49,
+        "classId": "Archer",
+        "enemyHealth": 609,
+        "playerMaxHealth": 49,
+        "status": "Active",
+        "enemyMaxHealth": 700,
+        "id": "native-archer-3",
+        "position": {
+          "y": 0,
+          "x": 7.390625,
+          "z": 11.734375
+        },
+        "patientHealth": 30,
+        "patientMaxHealth": 100,
+        "nextAbility": 10227.943842,
+        "nextAttack": 10225.7776883
+      }
+    },
+    {
+      "now": 10225.960751999999,
+      "snapshot": {
+        "expiresAt": 10520.876774600001,
+        "progress": {
+          "dodge": 1,
+          "ranged_hit": 3
+        },
+        "playerHealth": 49,
+        "classId": "Archer",
+        "enemyHealth": 609,
+        "playerMaxHealth": 49,
+        "status": "Active",
+        "enemyMaxHealth": 700,
+        "id": "native-archer-3",
+        "position": {
+          "y": 0,
+          "x": 7.390625,
+          "z": 11.734375
+        },
+        "patientHealth": 30,
+        "patientMaxHealth": 100,
+        "nextAbility": 10227.943842,
+        "nextAttack": 10225.7776883
+      }
+    },
+    {
+      "now": 10226.443976899998,
+      "snapshot": {
+        "expiresAt": 10520.876774600001,
+        "progress": {
+          "dodge": 1,
+          "ranged_hit": 3
+        },
+        "playerHealth": 49,
+        "classId": "Archer",
+        "enemyHealth": 590,
+        "playerMaxHealth": 49,
+        "status": "Active",
+        "enemyMaxHealth": 700,
+        "id": "native-archer-3",
+        "position": {
+          "y": 0,
+          "x": 7.390625,
+          "z": 11.734375
+        },
+        "patientHealth": 30,
+        "patientMaxHealth": 100,
+        "nextAbility": 10227.943842,
+        "nextAttack": 10227.5759665
+      }
+    },
+    {
+      "now": 10226.895404899999,
+      "snapshot": {
+        "expiresAt": 10520.876774600001,
+        "progress": {
+          "dodge": 1,
+          "ranged_hit": 3
+        },
+        "playerHealth": 49,
+        "classId": "Archer",
+        "enemyHealth": 590,
+        "playerMaxHealth": 49,
+        "status": "Active",
+        "enemyMaxHealth": 700,
+        "id": "native-archer-3",
+        "position": {
+          "y": 0,
+          "x": 7.390625,
+          "z": 11.734375
+        },
+        "patientHealth": 30,
+        "patientMaxHealth": 100,
+        "nextAbility": 10227.943842,
+        "nextAttack": 10227.5759665
+      }
+    },
+    {
+      "now": 10227.3622603,
+      "snapshot": {
+        "expiresAt": 10520.876774600001,
+        "progress": {
+          "dodge": 1,
+          "ranged_hit": 3
+        },
+        "playerHealth": 49,
+        "classId": "Archer",
+        "enemyHealth": 590,
+        "playerMaxHealth": 49,
+        "status": "Active",
+        "enemyMaxHealth": 700,
+        "id": "native-archer-3",
+        "position": {
+          "y": 0,
+          "x": 7.390625,
+          "z": 11.734375
+        },
+        "patientHealth": 30,
+        "patientMaxHealth": 100,
+        "nextAbility": 10227.943842,
+        "nextAttack": 10227.5759665
+      }
+    },
+    {
+      "now": 10227.8268188,
+      "snapshot": {
+        "expiresAt": 10520.876774600001,
+        "progress": {
+          "dodge": 1,
+          "ranged_hit": 3
+        },
+        "playerHealth": 49,
+        "classId": "Archer",
+        "enemyHealth": 590,
+        "playerMaxHealth": 49,
+        "status": "Active",
+        "enemyMaxHealth": 700,
+        "id": "native-archer-3",
+        "position": {
+          "y": 0,
+          "x": 7.390625,
+          "z": 11.734375
+        },
+        "patientHealth": 30,
+        "patientMaxHealth": 100,
+        "nextAbility": 10227.943842,
+        "nextAttack": 10227.5759665
+      }
+    },
+    {
+      "now": 10228.294112200001,
+      "snapshot": {
+        "warning": {
+          "impactAt": 10229.210924300001,
+          "x": 7.390625,
+          "startsAt": 10228.0109243,
+          "z": 11.734375,
+          "radius": 6
+        },
+        "expiresAt": 10520.876774600001,
+        "progress": {
+          "dodge": 1,
+          "ranged_hit": 3
+        },
+        "playerHealth": 49,
+        "classId": "Archer",
+        "enemyHealth": 537,
+        "playerMaxHealth": 49,
+        "status": "Active",
+        "nextAbility": 10235.0109243,
+        "id": "native-archer-3",
+        "position": {
+          "y": 0,
+          "x": 7.390625,
+          "z": 11.734375
+        },
+        "patientHealth": 30,
+        "patientMaxHealth": 100,
+        "enemyMaxHealth": 700,
+        "nextAttack": 10229.443321300001
+      }
+    },
+    {
+      "now": 10229.343802700001,
+      "snapshot": {
+        "expiresAt": 10520.876774600001,
+        "progress": {
+          "dodge": 1,
+          "ranged_hit": 3
+        },
+        "playerHealth": 49,
+        "classId": "Archer",
+        "enemyHealth": 537,
+        "playerMaxHealth": 49,
+        "status": "Active",
+        "enemyMaxHealth": 700,
+        "id": "native-archer-3",
+        "position": {
+          "y": 0,
+          "x": 0.0234375,
+          "z": 15.984375
+        },
+        "patientHealth": 30,
+        "patientMaxHealth": 100,
+        "nextAbility": 10235.0109243,
+        "nextAttack": 10229.443321300001
+      }
+    },
+    {
+      "now": 10229.7952285,
+      "snapshot": {
+        "expiresAt": 10520.876774600001,
+        "progress": {
+          "dodge": 1,
+          "ranged_hit": 3
+        },
+        "playerHealth": 49,
+        "classId": "Archer",
+        "enemyHealth": 518,
+        "playerMaxHealth": 49,
+        "status": "Active",
+        "enemyMaxHealth": 700,
+        "id": "native-archer-3",
+        "position": {
+          "y": 0,
+          "x": 0.0234375,
+          "z": 15.984375
+        },
+        "patientHealth": 30,
+        "patientMaxHealth": 100,
+        "nextAbility": 10235.0109243,
+        "nextAttack": 10230.976762899998
+      }
+    },
+    {
+      "now": 10230.260443399999,
+      "snapshot": {
+        "expiresAt": 10520.876774600001,
+        "progress": {
+          "dodge": 1,
+          "ranged_hit": 3
+        },
+        "playerHealth": 49,
+        "classId": "Archer",
+        "enemyHealth": 518,
+        "playerMaxHealth": 49,
+        "status": "Active",
+        "enemyMaxHealth": 700,
+        "id": "native-archer-3",
+        "position": {
+          "y": 0,
+          "x": 0.0234375,
+          "z": 15.984375
+        },
+        "patientHealth": 30,
+        "patientMaxHealth": 100,
+        "nextAbility": 10235.0109243,
+        "nextAttack": 10230.976762899998
+      }
+    },
+    {
+      "now": 10230.711768500001,
+      "snapshot": {
+        "expiresAt": 10520.876774600001,
+        "progress": {
+          "dodge": 1,
+          "ranged_hit": 3
+        },
+        "playerHealth": 49,
+        "classId": "Archer",
+        "enemyHealth": 518,
+        "playerMaxHealth": 49,
+        "status": "Active",
+        "enemyMaxHealth": 700,
+        "id": "native-archer-3",
+        "position": {
+          "y": 0,
+          "x": 0.0234375,
+          "z": 15.984375
+        },
+        "patientHealth": 30,
+        "patientMaxHealth": 100,
+        "nextAbility": 10235.0109243,
+        "nextAttack": 10230.976762899998
+      }
+    },
+    {
+      "now": 10231.160236799999,
+      "snapshot": {
+        "expiresAt": 10520.876774600001,
+        "progress": {
+          "dodge": 1,
+          "ranged_hit": 3
+        },
+        "playerHealth": 49,
+        "classId": "Archer",
+        "enemyHealth": 518,
+        "playerMaxHealth": 49,
+        "status": "Active",
+        "enemyMaxHealth": 700,
+        "id": "native-archer-3",
+        "position": {
+          "y": 0,
+          "x": 0.0234375,
+          "z": 15.984375
+        },
+        "patientHealth": 30,
+        "patientMaxHealth": 100,
+        "nextAbility": 10235.0109243,
+        "nextAttack": 10230.976762899998
+      }
+    },
+    {
+      "now": 10231.610533299998,
+      "snapshot": {
+        "expiresAt": 10520.876774600001,
+        "progress": {
+          "dodge": 1,
+          "ranged_hit": 3
+        },
+        "playerHealth": 49,
+        "classId": "Archer",
+        "enemyHealth": 499,
+        "playerMaxHealth": 49,
+        "status": "Active",
+        "enemyMaxHealth": 700,
+        "id": "native-archer-3",
+        "position": {
+          "y": 0,
+          "x": 0.0234375,
+          "z": 15.984375
+        },
+        "patientHealth": 30,
+        "patientMaxHealth": 100,
+        "nextAbility": 10235.0109243,
+        "nextAttack": 10232.7766289
+      }
+    },
+    {
+      "now": 10232.0939885,
+      "snapshot": {
+        "expiresAt": 10520.876774600001,
+        "progress": {
+          "dodge": 1,
+          "ranged_hit": 3
+        },
+        "playerHealth": 49,
+        "classId": "Archer",
+        "enemyHealth": 499,
+        "playerMaxHealth": 49,
+        "status": "Active",
+        "enemyMaxHealth": 700,
+        "id": "native-archer-3",
+        "position": {
+          "y": 0,
+          "x": 0.0234375,
+          "z": 15.984375
+        },
+        "patientHealth": 30,
+        "patientMaxHealth": 100,
+        "nextAbility": 10235.0109243,
+        "nextAttack": 10232.7766289
+      }
+    },
+    {
+      "now": 10232.528511699998,
+      "snapshot": {
+        "expiresAt": 10520.876774600001,
+        "progress": {
+          "dodge": 1,
+          "ranged_hit": 3
+        },
+        "playerHealth": 49,
+        "classId": "Archer",
+        "enemyHealth": 499,
+        "playerMaxHealth": 49,
+        "status": "Active",
+        "enemyMaxHealth": 700,
+        "id": "native-archer-3",
+        "position": {
+          "y": 0,
+          "x": 0.0234375,
+          "z": 15.984375
+        },
+        "patientHealth": 30,
+        "patientMaxHealth": 100,
+        "nextAbility": 10235.0109243,
+        "nextAttack": 10232.7766289
+      }
+    },
+    {
+      "now": 10232.9790082,
+      "snapshot": {
+        "expiresAt": 10520.876774600001,
+        "progress": {
+          "dodge": 1,
+          "ranged_hit": 3
+        },
+        "playerHealth": 49,
+        "classId": "Archer",
+        "enemyHealth": 499,
+        "playerMaxHealth": 49,
+        "status": "Active",
+        "enemyMaxHealth": 700,
+        "id": "native-archer-3",
+        "position": {
+          "y": 0,
+          "x": 0.0234375,
+          "z": 15.984375
+        },
+        "patientHealth": 30,
+        "patientMaxHealth": 100,
+        "nextAbility": 10235.0109243,
+        "nextAttack": 10232.7766289
+      }
+    },
+    {
+      "now": 10233.4268648,
+      "snapshot": {
+        "warning": {
+          "impactAt": 10234.2939248,
+          "x": 0.0234375,
+          "startsAt": 10233.0939248,
+          "z": 15.984375,
+          "radius": 6
+        },
+        "expiresAt": 10520.876774600001,
+        "progress": {
+          "dodge": 1,
+          "ranged_hit": 3
+        },
+        "playerHealth": 49,
+        "classId": "Archer",
+        "enemyHealth": 480,
+        "playerMaxHealth": 49,
+        "status": "Active",
+        "nextAbility": 10235.0109243,
+        "id": "native-archer-3",
+        "position": {
+          "y": 0,
+          "x": 0.0234375,
+          "z": 15.984375
+        },
+        "patientHealth": 30,
+        "patientMaxHealth": 100,
+        "enemyMaxHealth": 700,
+        "nextAttack": 10234.576212199998
+      }
+    },
+    {
+      "now": 10234.478013199998,
+      "snapshot": {
+        "expiresAt": 10520.876774600001,
+        "progress": {
+          "dodge": 1,
+          "ranged_hit": 3
+        },
+        "playerHealth": 49,
+        "classId": "Archer",
+        "enemyHealth": 480,
+        "playerMaxHealth": 49,
+        "status": "Active",
+        "enemyMaxHealth": 700,
+        "id": "native-archer-3",
+        "position": {
+          "y": 0,
+          "x": 7.390625,
+          "z": 11.734375
+        },
+        "patientHealth": 30,
+        "patientMaxHealth": 100,
+        "nextAbility": 10235.0109243,
+        "nextAttack": 10234.576212199998
+      }
+    },
+    {
+      "now": 10234.926620499999,
+      "snapshot": {
+        "expiresAt": 10520.876774600001,
+        "progress": {
+          "dodge": 1,
+          "ranged_hit": 3
+        },
+        "playerHealth": 49,
+        "classId": "Archer",
+        "enemyHealth": 461,
+        "playerMaxHealth": 49,
+        "status": "Active",
+        "enemyMaxHealth": 700,
+        "id": "native-archer-3",
+        "position": {
+          "y": 0,
+          "x": 7.390625,
+          "z": 11.734375
+        },
+        "patientHealth": 30,
+        "patientMaxHealth": 100,
+        "nextAbility": 10235.0109243,
+        "nextAttack": 10236.1096737
+      }
+    },
+    {
+      "now": 10235.376507099998,
+      "snapshot": {
+        "expiresAt": 10520.876774600001,
+        "progress": {
+          "dodge": 1,
+          "ranged_hit": 3
+        },
+        "playerHealth": 49,
+        "classId": "Archer",
+        "enemyHealth": 427,
+        "playerMaxHealth": 49,
+        "status": "Active",
+        "enemyMaxHealth": 700,
+        "id": "native-archer-3",
+        "position": {
+          "y": 0,
+          "x": 7.390625,
+          "z": 11.734375
+        },
+        "patientHealth": 30,
+        "patientMaxHealth": 100,
+        "nextAbility": 10242.142619399998,
+        "nextAttack": 10236.1096737
+      }
+    },
+    {
+      "now": 10235.8284603,
+      "snapshot": {
+        "expiresAt": 10520.876774600001,
+        "progress": {
+          "dodge": 1,
+          "ranged_hit": 3
+        },
+        "playerHealth": 49,
+        "classId": "Archer",
+        "enemyHealth": 427,
+        "playerMaxHealth": 49,
+        "status": "Active",
+        "enemyMaxHealth": 700,
+        "id": "native-archer-3",
+        "position": {
+          "y": 0,
+          "x": 7.390625,
+          "z": 11.734375
+        },
+        "patientHealth": 30,
+        "patientMaxHealth": 100,
+        "nextAbility": 10242.142619399998,
+        "nextAttack": 10236.1096737
+      }
+    },
+    {
+      "now": 10236.277884,
+      "snapshot": {
+        "expiresAt": 10520.876774600001,
+        "progress": {
+          "dodge": 1,
+          "ranged_hit": 3
+        },
+        "playerHealth": 49,
+        "classId": "Archer",
+        "enemyHealth": 427,
+        "playerMaxHealth": 49,
+        "status": "Active",
+        "enemyMaxHealth": 700,
+        "id": "native-archer-3",
+        "position": {
+          "y": 0,
+          "x": 7.390625,
+          "z": 11.734375
+        },
+        "patientHealth": 30,
+        "patientMaxHealth": 100,
+        "nextAbility": 10242.142619399998,
+        "nextAttack": 10236.1096737
+      }
+    },
+    {
+      "now": 10236.7267045,
+      "snapshot": {
+        "expiresAt": 10520.876774600001,
+        "progress": {
+          "dodge": 1,
+          "ranged_hit": 3
+        },
+        "playerHealth": 49,
+        "classId": "Archer",
+        "enemyHealth": 408,
+        "playerMaxHealth": 49,
+        "status": "Active",
+        "enemyMaxHealth": 700,
+        "id": "native-archer-3",
+        "position": {
+          "y": 0,
+          "x": 7.390625,
+          "z": 11.734375
+        },
+        "patientHealth": 30,
+        "patientMaxHealth": 100,
+        "nextAbility": 10242.142619399998,
+        "nextAttack": 10237.9101763
+      }
+    },
+    {
+      "now": 10237.1786642,
+      "snapshot": {
+        "expiresAt": 10520.876774600001,
+        "progress": {
+          "dodge": 1,
+          "ranged_hit": 3
+        },
+        "playerHealth": 49,
+        "classId": "Archer",
+        "enemyHealth": 408,
+        "playerMaxHealth": 49,
+        "status": "Active",
+        "enemyMaxHealth": 700,
+        "id": "native-archer-3",
+        "position": {
+          "y": 0,
+          "x": 7.390625,
+          "z": 11.734375
+        },
+        "patientHealth": 30,
+        "patientMaxHealth": 100,
+        "nextAbility": 10242.142619399998,
+        "nextAttack": 10237.9101763
+      }
+    },
+    {
+      "now": 10237.6450201,
+      "snapshot": {
+        "expiresAt": 10520.876774600001,
+        "progress": {
+          "dodge": 1,
+          "ranged_hit": 3
+        },
+        "playerHealth": 49,
+        "classId": "Archer",
+        "enemyHealth": 408,
+        "playerMaxHealth": 49,
+        "status": "Active",
+        "enemyMaxHealth": 700,
+        "id": "native-archer-3",
+        "position": {
+          "y": 0,
+          "x": 7.390625,
+          "z": 11.734375
+        },
+        "patientHealth": 30,
+        "patientMaxHealth": 100,
+        "nextAbility": 10242.142619399998,
+        "nextAttack": 10237.9101763
+      }
+    },
+    {
+      "now": 10238.0935011,
+      "snapshot": {
+        "expiresAt": 10520.876774600001,
+        "progress": {
+          "dodge": 1,
+          "ranged_hit": 3
+        },
+        "playerHealth": 49,
+        "classId": "Archer",
+        "enemyHealth": 408,
+        "playerMaxHealth": 49,
+        "status": "Active",
+        "enemyMaxHealth": 700,
+        "id": "native-archer-3",
+        "position": {
+          "y": 0,
+          "x": 7.390625,
+          "z": 11.734375
+        },
+        "patientHealth": 30,
+        "patientMaxHealth": 100,
+        "nextAbility": 10242.142619399998,
+        "nextAttack": 10237.9101763
+      }
+    },
+    {
+      "now": 10238.543185300001,
+      "snapshot": {
+        "warning": {
+          "impactAt": 10239.409394499999,
+          "x": 7.390625,
+          "startsAt": 10238.209394499998,
+          "z": 11.734375,
+          "radius": 6
+        },
+        "expiresAt": 10520.876774600001,
+        "progress": {
+          "dodge": 1,
+          "ranged_hit": 3
+        },
+        "playerHealth": 49,
+        "classId": "Archer",
+        "enemyHealth": 389,
+        "playerMaxHealth": 49,
+        "status": "Active",
+        "nextAbility": 10242.142619399998,
+        "id": "native-archer-3",
+        "position": {
+          "y": 0,
+          "x": 7.390625,
+          "z": 11.734375
+        },
+        "patientHealth": 30,
+        "patientMaxHealth": 100,
+        "enemyMaxHealth": 700,
+        "nextAttack": 10239.709394499998
+      }
+    },
+    {
+      "now": 10239.6275102,
+      "snapshot": {
+        "expiresAt": 10520.876774600001,
+        "progress": {
+          "dodge": 1,
+          "ranged_hit": 3
+        },
+        "playerHealth": 49,
+        "classId": "Archer",
+        "enemyHealth": 389,
+        "playerMaxHealth": 49,
+        "status": "Active",
+        "enemyMaxHealth": 700,
+        "id": "native-archer-3",
+        "position": {
+          "y": 0,
+          "x": 0.03125,
+          "z": 15.9921875
+        },
+        "patientHealth": 30,
+        "patientMaxHealth": 100,
+        "nextAbility": 10242.142619399998,
+        "nextAttack": 10239.709394499998
+      }
+    },
+    {
+      "now": 10240.0604642,
+      "snapshot": {
+        "expiresAt": 10520.876774600001,
+        "progress": {
+          "dodge": 1,
+          "ranged_hit": 3
+        },
+        "playerHealth": 49,
+        "classId": "Archer",
+        "enemyHealth": 370,
+        "playerMaxHealth": 49,
+        "status": "Active",
+        "enemyMaxHealth": 700,
+        "id": "native-archer-3",
+        "position": {
+          "y": 0,
+          "x": 0.03125,
+          "z": 15.9921875
+        },
+        "patientHealth": 30,
+        "patientMaxHealth": 100,
+        "nextAbility": 10242.142619399998,
+        "nextAttack": 10241.243845599998
+      }
+    },
+    {
+      "now": 10240.510195899999,
+      "snapshot": {
+        "expiresAt": 10520.876774600001,
+        "progress": {
+          "dodge": 1,
+          "ranged_hit": 3
+        },
+        "playerHealth": 49,
+        "classId": "Archer",
+        "enemyHealth": 370,
+        "playerMaxHealth": 49,
+        "status": "Active",
+        "enemyMaxHealth": 700,
+        "id": "native-archer-3",
+        "position": {
+          "y": 0,
+          "x": 0.03125,
+          "z": 15.9921875
+        },
+        "patientHealth": 30,
+        "patientMaxHealth": 100,
+        "nextAbility": 10242.142619399998,
+        "nextAttack": 10241.243845599998
+      }
+    },
+    {
+      "now": 10240.9601817,
+      "snapshot": {
+        "expiresAt": 10520.876774600001,
+        "progress": {
+          "dodge": 1,
+          "ranged_hit": 3
+        },
+        "playerHealth": 49,
+        "classId": "Archer",
+        "enemyHealth": 370,
+        "playerMaxHealth": 49,
+        "status": "Active",
+        "enemyMaxHealth": 700,
+        "id": "native-archer-3",
+        "position": {
+          "y": 0,
+          "x": 0.03125,
+          "z": 15.9921875
+        },
+        "patientHealth": 30,
+        "patientMaxHealth": 100,
+        "nextAbility": 10242.142619399998,
+        "nextAttack": 10241.243845599998
+      }
+    },
+    {
+      "now": 10241.426335799999,
+      "snapshot": {
+        "expiresAt": 10520.876774600001,
+        "progress": {
+          "dodge": 1,
+          "ranged_hit": 3
+        },
+        "playerHealth": 49,
+        "classId": "Archer",
+        "enemyHealth": 370,
+        "playerMaxHealth": 49,
+        "status": "Active",
+        "enemyMaxHealth": 700,
+        "id": "native-archer-3",
+        "position": {
+          "y": 0,
+          "x": 0.03125,
+          "z": 15.9921875
+        },
+        "patientHealth": 30,
+        "patientMaxHealth": 100,
+        "nextAbility": 10242.142619399998,
+        "nextAttack": 10241.243845599998
+      }
+    },
+    {
+      "now": 10241.8764337,
+      "snapshot": {
+        "expiresAt": 10520.876774600001,
+        "progress": {
+          "dodge": 1,
+          "ranged_hit": 3
+        },
+        "playerHealth": 49,
+        "classId": "Archer",
+        "enemyHealth": 351,
+        "playerMaxHealth": 49,
+        "status": "Active",
+        "enemyMaxHealth": 700,
+        "id": "native-archer-3",
+        "position": {
+          "y": 0,
+          "x": 0.03125,
+          "z": 15.9921875
+        },
+        "patientHealth": 30,
+        "patientMaxHealth": 100,
+        "nextAbility": 10242.142619399998,
+        "nextAttack": 10243.043025799998
+      }
+    },
+    {
+      "now": 10242.327304899998,
+      "snapshot": {
+        "expiresAt": 10520.876774600001,
+        "progress": {
+          "dodge": 1,
+          "ranged_hit": 3
+        },
+        "playerHealth": 49,
+        "classId": "Archer",
+        "enemyHealth": 351,
+        "playerMaxHealth": 49,
+        "status": "Active",
+        "enemyMaxHealth": 700,
+        "id": "native-archer-3",
+        "position": {
+          "y": 0,
+          "x": 0.03125,
+          "z": 15.9921875
+        },
+        "patientHealth": 30,
+        "patientMaxHealth": 100,
+        "nextAbility": 10242.142619399998,
+        "nextAttack": 10243.043025799998
+      }
+    },
+    {
+      "now": 10242.7769476,
+      "snapshot": {
+        "expiresAt": 10520.876774600001,
+        "progress": {
+          "dodge": 1,
+          "ranged_hit": 3
+        },
+        "playerHealth": 49,
+        "classId": "Archer",
+        "enemyHealth": 317,
+        "playerMaxHealth": 49,
+        "status": "Active",
+        "enemyMaxHealth": 700,
+        "id": "native-archer-3",
+        "position": {
+          "y": 0,
+          "x": 0.03125,
+          "z": 15.9921875
+        },
+        "patientHealth": 30,
+        "patientMaxHealth": 100,
+        "nextAbility": 10249.5426774,
+        "nextAttack": 10243.043025799998
+      }
+    },
+    {
+      "now": 10243.226944499998,
+      "snapshot": {
+        "expiresAt": 10520.876774600001,
+        "progress": {
+          "dodge": 1,
+          "ranged_hit": 3
+        },
+        "playerHealth": 49,
+        "classId": "Archer",
+        "enemyHealth": 317,
+        "playerMaxHealth": 49,
+        "status": "Active",
+        "enemyMaxHealth": 700,
+        "id": "native-archer-3",
+        "position": {
+          "y": 0,
+          "x": 0.03125,
+          "z": 15.9921875
+        },
+        "patientHealth": 30,
+        "patientMaxHealth": 100,
+        "nextAbility": 10249.5426774,
+        "nextAttack": 10243.043025799998
+      }
+    },
+    {
+      "now": 10243.676677700001,
+      "snapshot": {
+        "warning": {
+          "impactAt": 10244.4430283,
+          "x": 0.03125,
+          "startsAt": 10243.2430283,
+          "z": 15.9921875,
+          "radius": 6
+        },
+        "expiresAt": 10520.876774600001,
+        "progress": {
+          "dodge": 1,
+          "ranged_hit": 3
+        },
+        "playerHealth": 49,
+        "classId": "Archer",
+        "enemyHealth": 298,
+        "playerMaxHealth": 49,
+        "status": "Active",
+        "nextAbility": 10249.5426774,
+        "id": "native-archer-3",
+        "position": {
+          "y": 0,
+          "x": 0.03125,
+          "z": 15.9921875
+        },
+        "patientHealth": 30,
+        "patientMaxHealth": 100,
+        "enemyMaxHealth": 700,
+        "nextAttack": 10244.843054099998
+      }
+    },
+    {
+      "now": 10244.727198099998,
+      "snapshot": {
+        "expiresAt": 10520.876774600001,
+        "progress": {
+          "dodge": 1,
+          "ranged_hit": 3
+        },
+        "playerHealth": 49,
+        "classId": "Archer",
+        "enemyHealth": 298,
+        "playerMaxHealth": 49,
+        "status": "Active",
+        "enemyMaxHealth": 700,
+        "id": "native-archer-3",
+        "position": {
+          "y": 0,
+          "x": 7.390625,
+          "z": 11.7421875
+        },
+        "patientHealth": 30,
+        "patientMaxHealth": 100,
+        "nextAbility": 10249.5426774,
+        "nextAttack": 10244.843054099998
+      }
+    },
+    {
+      "now": 10245.194103999998,
+      "snapshot": {
+        "expiresAt": 10520.876774600001,
+        "progress": {
+          "dodge": 1,
+          "ranged_hit": 3
+        },
+        "playerHealth": 49,
+        "classId": "Archer",
+        "enemyHealth": 279,
+        "playerMaxHealth": 49,
+        "status": "Active",
+        "enemyMaxHealth": 700,
+        "id": "native-archer-3",
+        "position": {
+          "y": 0,
+          "x": 7.390625,
+          "z": 11.7421875
+        },
+        "patientHealth": 30,
+        "patientMaxHealth": 100,
+        "nextAbility": 10249.5426774,
+        "nextAttack": 10246.376835799998
+      }
+    },
+    {
+      "now": 10245.660006099999,
+      "snapshot": {
+        "expiresAt": 10520.876774600001,
+        "progress": {
+          "dodge": 1,
+          "ranged_hit": 3
+        },
+        "playerHealth": 49,
+        "classId": "Archer",
+        "enemyHealth": 279,
+        "playerMaxHealth": 49,
+        "status": "Active",
+        "enemyMaxHealth": 700,
+        "id": "native-archer-3",
+        "position": {
+          "y": 0,
+          "x": 7.390625,
+          "z": 11.7421875
+        },
+        "patientHealth": 30,
+        "patientMaxHealth": 100,
+        "nextAbility": 10249.5426774,
+        "nextAttack": 10246.376835799998
+      }
+    },
+    {
+      "now": 10246.1263941,
+      "snapshot": {
+        "expiresAt": 10520.876774600001,
+        "progress": {
+          "dodge": 1,
+          "ranged_hit": 3
+        },
+        "playerHealth": 49,
+        "classId": "Archer",
+        "enemyHealth": 279,
+        "playerMaxHealth": 49,
+        "status": "Active",
+        "enemyMaxHealth": 700,
+        "id": "native-archer-3",
+        "position": {
+          "y": 0,
+          "x": 7.390625,
+          "z": 11.7421875
+        },
+        "patientHealth": 30,
+        "patientMaxHealth": 100,
+        "nextAbility": 10249.5426774,
+        "nextAttack": 10246.376835799998
+      }
+    },
+    {
+      "now": 10246.593908499999,
+      "snapshot": {
+        "expiresAt": 10520.876774600001,
+        "progress": {
+          "dodge": 1,
+          "ranged_hit": 3
+        },
+        "playerHealth": 49,
+        "classId": "Archer",
+        "enemyHealth": 279,
+        "playerMaxHealth": 49,
+        "status": "Active",
+        "enemyMaxHealth": 700,
+        "id": "native-archer-3",
+        "position": {
+          "y": 0,
+          "x": 7.390625,
+          "z": 11.7421875
+        },
+        "patientHealth": 30,
+        "patientMaxHealth": 100,
+        "nextAbility": 10249.5426774,
+        "nextAttack": 10246.376835799998
+      }
+    },
+    {
+      "now": 10247.043349399999,
+      "snapshot": {
+        "expiresAt": 10520.876774600001,
+        "progress": {
+          "dodge": 1,
+          "ranged_hit": 3
+        },
+        "playerHealth": 49,
+        "classId": "Archer",
+        "enemyHealth": 260,
+        "playerMaxHealth": 49,
+        "status": "Active",
+        "enemyMaxHealth": 700,
+        "id": "native-archer-3",
+        "position": {
+          "y": 0,
+          "x": 7.390625,
+          "z": 11.7421875
+        },
+        "patientHealth": 30,
+        "patientMaxHealth": 100,
+        "nextAbility": 10249.5426774,
+        "nextAttack": 10248.242539300001
+      }
+    },
+    {
+      "now": 10247.493891399998,
+      "snapshot": {
+        "expiresAt": 10520.876774600001,
+        "progress": {
+          "dodge": 1,
+          "ranged_hit": 3
+        },
+        "playerHealth": 49,
+        "classId": "Archer",
+        "enemyHealth": 260,
+        "playerMaxHealth": 49,
+        "status": "Active",
+        "enemyMaxHealth": 700,
+        "id": "native-archer-3",
+        "position": {
+          "y": 0,
+          "x": 7.390625,
+          "z": 11.7421875
+        },
+        "patientHealth": 30,
+        "patientMaxHealth": 100,
+        "nextAbility": 10249.5426774,
+        "nextAttack": 10248.242539300001
+      }
+    },
+    {
+      "now": 10247.976000899998,
+      "snapshot": {
+        "expiresAt": 10520.876774600001,
+        "progress": {
+          "dodge": 1,
+          "ranged_hit": 3
+        },
+        "playerHealth": 49,
+        "classId": "Archer",
+        "enemyHealth": 260,
+        "playerMaxHealth": 49,
+        "status": "Active",
+        "enemyMaxHealth": 700,
+        "id": "native-archer-3",
+        "position": {
+          "y": 0,
+          "x": 7.390625,
+          "z": 11.7421875
+        },
+        "patientHealth": 30,
+        "patientMaxHealth": 100,
+        "nextAbility": 10249.5426774,
+        "nextAttack": 10248.242539300001
+      }
+    },
+    {
+      "now": 10248.426568899999,
+      "snapshot": {
+        "warning": {
+          "impactAt": 10249.5761217,
+          "x": 7.390625,
+          "startsAt": 10248.3761217,
+          "z": 11.7421875,
+          "radius": 6
+        },
+        "expiresAt": 10520.876774600001,
+        "progress": {
+          "dodge": 1,
+          "ranged_hit": 3
+        },
+        "playerHealth": 49,
+        "classId": "Archer",
+        "enemyHealth": 260,
+        "playerMaxHealth": 49,
+        "status": "Active",
+        "nextAbility": 10249.5426774,
+        "id": "native-archer-3",
+        "position": {
+          "y": 0,
+          "x": 7.390625,
+          "z": 11.7421875
+        },
+        "patientHealth": 30,
+        "patientMaxHealth": 100,
+        "enemyMaxHealth": 700,
+        "nextAttack": 10248.242539300001
+      }
+    },
+    {
+      "now": 10249.4927287,
+      "snapshot": {
+        "warning": {
+          "impactAt": 10249.5761217,
+          "x": 7.390625,
+          "startsAt": 10248.3761217,
+          "z": 11.7421875,
+          "radius": 6
+        },
+        "expiresAt": 10520.876774600001,
+        "progress": {
+          "dodge": 1,
+          "ranged_hit": 3
+        },
+        "playerHealth": 49,
+        "classId": "Archer",
+        "enemyHealth": 241,
+        "playerMaxHealth": 49,
+        "status": "Active",
+        "nextAbility": 10249.5426774,
+        "id": "native-archer-3",
+        "position": {
+          "y": 0,
+          "x": 0.03125,
+          "z": 15.9921875
+        },
+        "patientHealth": 30,
+        "patientMaxHealth": 100,
+        "enemyMaxHealth": 700,
+        "nextAttack": 10250.6417959
+      }
+    },
+    {
+      "now": 10249.943510999998,
+      "snapshot": {
+        "expiresAt": 10520.876774600001,
+        "progress": {
+          "dodge": 1,
+          "ranged_hit": 3
+        },
+        "playerHealth": 49,
+        "classId": "Archer",
+        "enemyHealth": 207,
+        "playerMaxHealth": 49,
+        "status": "Active",
+        "enemyMaxHealth": 700,
+        "id": "native-archer-3",
+        "position": {
+          "y": 0,
+          "x": 0.03125,
+          "z": 15.9921875
+        },
+        "patientHealth": 30,
+        "patientMaxHealth": 100,
+        "nextAbility": 10256.6763794,
+        "nextAttack": 10250.6417959
+      }
+    },
+    {
+      "now": 10250.4096407,
+      "snapshot": {
+        "expiresAt": 10520.876774600001,
+        "progress": {
+          "dodge": 1,
+          "ranged_hit": 3
+        },
+        "playerHealth": 49,
+        "classId": "Archer",
+        "enemyHealth": 207,
+        "playerMaxHealth": 49,
+        "status": "Active",
+        "enemyMaxHealth": 700,
+        "id": "native-archer-3",
+        "position": {
+          "y": 0,
+          "x": 0.03125,
+          "z": 15.9921875
+        },
+        "patientHealth": 30,
+        "patientMaxHealth": 100,
+        "nextAbility": 10256.6763794,
+        "nextAttack": 10250.6417959
+      }
+    },
+    {
+      "now": 10250.878910299998,
+      "snapshot": {
+        "expiresAt": 10520.876774600001,
+        "progress": {
+          "dodge": 1,
+          "ranged_hit": 3
+        },
+        "playerHealth": 49,
+        "classId": "Archer",
+        "enemyHealth": 207,
+        "playerMaxHealth": 49,
+        "status": "Active",
+        "enemyMaxHealth": 700,
+        "id": "native-archer-3",
+        "position": {
+          "y": 0,
+          "x": 0.03125,
+          "z": 15.9921875
+        },
+        "patientHealth": 30,
+        "patientMaxHealth": 100,
+        "nextAbility": 10256.6763794,
+        "nextAttack": 10250.6417959
+      }
+    },
+    {
+      "now": 10251.3444021,
+      "snapshot": {
+        "expiresAt": 10520.876774600001,
+        "progress": {
+          "dodge": 1,
+          "ranged_hit": 3
+        },
+        "playerHealth": 49,
+        "classId": "Archer",
+        "enemyHealth": 188,
+        "playerMaxHealth": 49,
+        "status": "Active",
+        "enemyMaxHealth": 700,
+        "id": "native-archer-3",
+        "position": {
+          "y": 0,
+          "x": 0.03125,
+          "z": 15.9921875
+        },
+        "patientHealth": 30,
+        "patientMaxHealth": 100,
+        "nextAbility": 10256.6763794,
+        "nextAttack": 10252.5085001
+      }
+    },
+    {
+      "now": 10251.8100174,
+      "snapshot": {
+        "expiresAt": 10520.876774600001,
+        "progress": {
+          "dodge": 1,
+          "ranged_hit": 3
+        },
+        "playerHealth": 49,
+        "classId": "Archer",
+        "enemyHealth": 188,
+        "playerMaxHealth": 49,
+        "status": "Active",
+        "enemyMaxHealth": 700,
+        "id": "native-archer-3",
+        "position": {
+          "y": 0,
+          "x": 0.03125,
+          "z": 15.9921875
+        },
+        "patientHealth": 30,
+        "patientMaxHealth": 100,
+        "nextAbility": 10256.6763794,
+        "nextAttack": 10252.5085001
+      }
+    },
+    {
+      "now": 10252.276985599998,
+      "snapshot": {
+        "expiresAt": 10520.876774600001,
+        "progress": {
+          "dodge": 1,
+          "ranged_hit": 3
+        },
+        "playerHealth": 49,
+        "classId": "Archer",
+        "enemyHealth": 188,
+        "playerMaxHealth": 49,
+        "status": "Active",
+        "enemyMaxHealth": 700,
+        "id": "native-archer-3",
+        "position": {
+          "y": 0,
+          "x": 0.03125,
+          "z": 15.9921875
+        },
+        "patientHealth": 30,
+        "patientMaxHealth": 100,
+        "nextAbility": 10256.6763794,
+        "nextAttack": 10252.5085001
+      }
+    },
+    {
+      "now": 10252.7269647,
+      "snapshot": {
+        "expiresAt": 10520.876774600001,
+        "progress": {
+          "dodge": 1,
+          "ranged_hit": 3
+        },
+        "playerHealth": 49,
+        "classId": "Archer",
+        "enemyHealth": 188,
+        "playerMaxHealth": 49,
+        "status": "Active",
+        "enemyMaxHealth": 700,
+        "id": "native-archer-3",
+        "position": {
+          "y": 0,
+          "x": 0.03125,
+          "z": 15.9921875
+        },
+        "patientHealth": 30,
+        "patientMaxHealth": 100,
+        "nextAbility": 10256.6763794,
+        "nextAttack": 10252.5085001
+      }
+    },
+    {
+      "now": 10253.192829399999,
+      "snapshot": {
+        "expiresAt": 10520.876774600001,
+        "progress": {
+          "dodge": 1,
+          "ranged_hit": 3
+        },
+        "playerHealth": 49,
+        "classId": "Archer",
+        "enemyHealth": 169,
+        "playerMaxHealth": 49,
+        "status": "Active",
+        "enemyMaxHealth": 700,
+        "id": "native-archer-3",
+        "position": {
+          "y": 0,
+          "x": 0.03125,
+          "z": 15.9921875
+        },
+        "patientHealth": 30,
+        "patientMaxHealth": 100,
+        "nextAbility": 10256.6763794,
+        "nextAttack": 10254.3770243
+      }
+    },
+    {
+      "now": 10253.659416999999,
+      "snapshot": {
+        "warning": {
+          "impactAt": 10254.676398300002,
+          "x": 0.03125,
+          "startsAt": 10253.476398300001,
+          "z": 15.9921875,
+          "radius": 6
+        },
+        "expiresAt": 10520.876774600001,
+        "progress": {
+          "dodge": 1,
+          "ranged_hit": 3
+        },
+        "playerHealth": 49,
+        "classId": "Archer",
+        "enemyHealth": 169,
+        "playerMaxHealth": 49,
+        "status": "Active",
+        "nextAbility": 10256.6763794,
+        "id": "native-archer-3",
+        "position": {
+          "y": 0,
+          "x": 0.03125,
+          "z": 15.9921875
+        },
+        "patientHealth": 30,
+        "patientMaxHealth": 100,
+        "enemyMaxHealth": 700,
+        "nextAttack": 10254.3770243
+      }
+    },
+    {
+      "now": 10254.725916299998,
+      "snapshot": {
+        "expiresAt": 10520.876774600001,
+        "progress": {
+          "dodge": 1,
+          "ranged_hit": 3
+        },
+        "playerHealth": 49,
+        "classId": "Archer",
+        "enemyHealth": 169,
+        "playerMaxHealth": 49,
+        "status": "Active",
+        "enemyMaxHealth": 700,
+        "id": "native-archer-3",
+        "position": {
+          "y": 0,
+          "x": 8.3203125,
+          "z": 11.2109375
+        },
+        "patientHealth": 30,
+        "patientMaxHealth": 100,
+        "nextAbility": 10256.6763794,
+        "nextAttack": 10254.3770243
+      }
+    },
+    {
+      "now": 10255.1762981,
+      "snapshot": {
+        "expiresAt": 10520.876774600001,
+        "progress": {
+          "dodge": 1,
+          "ranged_hit": 3
+        },
+        "playerHealth": 49,
+        "classId": "Archer",
+        "enemyHealth": 150,
+        "playerMaxHealth": 49,
+        "status": "Active",
+        "enemyMaxHealth": 700,
+        "id": "native-archer-3",
+        "position": {
+          "y": 0,
+          "x": 8.3203125,
+          "z": 11.2109375
+        },
+        "patientHealth": 30,
+        "patientMaxHealth": 100,
+        "nextAbility": 10256.6763794,
+        "nextAttack": 10256.308280000001
+      }
+    },
+    {
+      "now": 10255.627338999999,
+      "snapshot": {
+        "expiresAt": 10520.876774600001,
+        "progress": {
+          "dodge": 1,
+          "ranged_hit": 3
+        },
+        "playerHealth": 49,
+        "classId": "Archer",
+        "enemyHealth": 150,
+        "playerMaxHealth": 49,
+        "status": "Active",
+        "enemyMaxHealth": 700,
+        "id": "native-archer-3",
+        "position": {
+          "y": 0,
+          "x": 8.3203125,
+          "z": 11.2109375
+        },
+        "patientHealth": 30,
+        "patientMaxHealth": 100,
+        "nextAbility": 10256.6763794,
+        "nextAttack": 10256.308280000001
+      }
+    },
+    {
+      "now": 10256.077268099998,
+      "snapshot": {
+        "expiresAt": 10520.876774600001,
+        "progress": {
+          "dodge": 1,
+          "ranged_hit": 3
+        },
+        "playerHealth": 49,
+        "classId": "Archer",
+        "enemyHealth": 150,
+        "playerMaxHealth": 49,
+        "status": "Active",
+        "enemyMaxHealth": 700,
+        "id": "native-archer-3",
+        "position": {
+          "y": 0,
+          "x": 8.3203125,
+          "z": 11.2109375
+        },
+        "patientHealth": 30,
+        "patientMaxHealth": 100,
+        "nextAbility": 10256.6763794,
+        "nextAttack": 10256.308280000001
+      }
+    },
+    {
+      "now": 10256.526796999999,
+      "snapshot": {
+        "expiresAt": 10520.876774600001,
+        "progress": {
+          "dodge": 1,
+          "ranged_hit": 3
+        },
+        "playerHealth": 49,
+        "classId": "Archer",
+        "enemyHealth": 150,
+        "playerMaxHealth": 49,
+        "status": "Active",
+        "enemyMaxHealth": 700,
+        "id": "native-archer-3",
+        "position": {
+          "y": 0,
+          "x": 8.3203125,
+          "z": 11.2109375
+        },
+        "patientHealth": 30,
+        "patientMaxHealth": 100,
+        "nextAbility": 10256.6763794,
+        "nextAttack": 10256.308280000001
+      }
+    },
+    {
+      "now": 10256.975652199999,
+      "snapshot": {
+        "expiresAt": 10520.876774600001,
+        "progress": {
+          "dodge": 1,
+          "ranged_hit": 3
+        },
+        "playerHealth": 49,
+        "classId": "Archer",
+        "enemyHealth": 97,
+        "playerMaxHealth": 49,
+        "status": "Active",
+        "enemyMaxHealth": 700,
+        "id": "native-archer-3",
+        "position": {
+          "y": 0,
+          "x": 8.3203125,
+          "z": 11.2109375
+        },
+        "patientHealth": 30,
+        "patientMaxHealth": 100,
+        "nextAbility": 10263.742403199998,
+        "nextAttack": 10258.1765237
+      }
+    },
+    {
+      "now": 10257.4603622,
+      "snapshot": {
+        "expiresAt": 10520.876774600001,
+        "progress": {
+          "dodge": 1,
+          "ranged_hit": 3
+        },
+        "playerHealth": 49,
+        "classId": "Archer",
+        "enemyHealth": 97,
+        "playerMaxHealth": 49,
+        "status": "Active",
+        "enemyMaxHealth": 700,
+        "id": "native-archer-3",
+        "position": {
+          "y": 0,
+          "x": 8.3203125,
+          "z": 11.2109375
+        },
+        "patientHealth": 30,
+        "patientMaxHealth": 100,
+        "nextAbility": 10263.742403199998,
+        "nextAttack": 10258.1765237
+      }
+    },
+    {
+      "now": 10257.9257434,
+      "snapshot": {
+        "expiresAt": 10520.876774600001,
+        "progress": {
+          "dodge": 1,
+          "ranged_hit": 3
+        },
+        "playerHealth": 49,
+        "classId": "Archer",
+        "enemyHealth": 97,
+        "playerMaxHealth": 49,
+        "status": "Active",
+        "enemyMaxHealth": 700,
+        "id": "native-archer-3",
+        "position": {
+          "y": 0,
+          "x": 8.3203125,
+          "z": 11.2109375
+        },
+        "patientHealth": 30,
+        "patientMaxHealth": 100,
+        "nextAbility": 10263.742403199998,
+        "nextAttack": 10258.1765237
+      }
+    },
+    {
+      "now": 10258.3764291,
+      "snapshot": {
+        "expiresAt": 10520.876774600001,
+        "progress": {
+          "dodge": 1,
+          "ranged_hit": 3
+        },
+        "playerHealth": 49,
+        "classId": "Archer",
+        "enemyHealth": 97,
+        "playerMaxHealth": 49,
+        "status": "Active",
+        "enemyMaxHealth": 700,
+        "id": "native-archer-3",
+        "position": {
+          "y": 0,
+          "x": 8.3203125,
+          "z": 11.2109375
+        },
+        "patientHealth": 30,
+        "patientMaxHealth": 100,
+        "nextAbility": 10263.742403199998,
+        "nextAttack": 10258.1765237
+      }
+    },
+    {
+      "now": 10258.8424948,
+      "snapshot": {
+        "warning": {
+          "impactAt": 10259.6925834,
+          "x": 8.3203125,
+          "startsAt": 10258.492583399999,
+          "z": 11.2109375,
+          "radius": 6
+        },
+        "expiresAt": 10520.876774600001,
+        "progress": {
+          "dodge": 1,
+          "ranged_hit": 3
+        },
+        "playerHealth": 49,
+        "classId": "Archer",
+        "enemyHealth": 78,
+        "playerMaxHealth": 49,
+        "status": "Active",
+        "nextAbility": 10263.742403199998,
+        "id": "native-archer-3",
+        "position": {
+          "y": 0,
+          "x": 8.3203125,
+          "z": 11.2109375
+        },
+        "patientHealth": 30,
+        "patientMaxHealth": 100,
+        "enemyMaxHealth": 700,
+        "nextAttack": 10259.9757011
+      }
+    },
+    {
+      "now": 10259.892792800001,
+      "snapshot": {
+        "expiresAt": 10520.876774600001,
+        "progress": {
+          "dodge": 1,
+          "ranged_hit": 3
+        },
+        "playerHealth": 49,
+        "classId": "Archer",
+        "enemyHealth": 78,
+        "playerMaxHealth": 49,
+        "status": "Active",
+        "enemyMaxHealth": 700,
+        "id": "native-archer-3",
+        "position": {
+          "y": 0,
+          "x": 0.9609375,
+          "z": 15.4609375
+        },
+        "patientHealth": 30,
+        "patientMaxHealth": 100,
+        "nextAbility": 10263.742403199998,
+        "nextAttack": 10259.9757011
+      }
+    },
+    {
+      "now": 10260.342605099999,
+      "snapshot": {
+        "expiresAt": 10520.876774600001,
+        "progress": {
+          "dodge": 1,
+          "ranged_hit": 3
+        },
+        "playerHealth": 49,
+        "classId": "Archer",
+        "enemyHealth": 59,
+        "playerMaxHealth": 49,
+        "status": "Active",
+        "enemyMaxHealth": 700,
+        "id": "native-archer-3",
+        "position": {
+          "y": 0,
+          "x": 0.9609375,
+          "z": 15.4609375
+        },
+        "patientHealth": 30,
+        "patientMaxHealth": 100,
+        "nextAbility": 10263.742403199998,
+        "nextAttack": 10261.508939
+      }
+    },
+    {
+      "now": 10260.7935583,
+      "snapshot": {
+        "expiresAt": 10520.876774600001,
+        "progress": {
+          "dodge": 1,
+          "ranged_hit": 3
+        },
+        "playerHealth": 49,
+        "classId": "Archer",
+        "enemyHealth": 59,
+        "playerMaxHealth": 49,
+        "status": "Active",
+        "enemyMaxHealth": 700,
+        "id": "native-archer-3",
+        "position": {
+          "y": 0,
+          "x": 0.9609375,
+          "z": 15.4609375
+        },
+        "patientHealth": 30,
+        "patientMaxHealth": 100,
+        "nextAbility": 10263.742403199998,
+        "nextAttack": 10261.508939
+      }
+    },
+    {
+      "now": 10261.242623499998,
+      "snapshot": {
+        "expiresAt": 10520.876774600001,
+        "progress": {
+          "dodge": 1,
+          "ranged_hit": 3
+        },
+        "playerHealth": 49,
+        "classId": "Archer",
+        "enemyHealth": 59,
+        "playerMaxHealth": 49,
+        "status": "Active",
+        "enemyMaxHealth": 700,
+        "id": "native-archer-3",
+        "position": {
+          "y": 0,
+          "x": 0.9609375,
+          "z": 15.4609375
+        },
+        "patientHealth": 30,
+        "patientMaxHealth": 100,
+        "nextAbility": 10263.742403199998,
+        "nextAttack": 10261.508939
+      }
+    },
+    {
+      "now": 10261.691511500001,
+      "snapshot": {
+        "expiresAt": 10520.876774600001,
+        "progress": {
+          "dodge": 1,
+          "ranged_hit": 3
+        },
+        "playerHealth": 49,
+        "classId": "Archer",
+        "enemyHealth": 59,
+        "playerMaxHealth": 49,
+        "status": "Active",
+        "enemyMaxHealth": 700,
+        "id": "native-archer-3",
+        "position": {
+          "y": 0,
+          "x": 0.9609375,
+          "z": 15.4609375
+        },
+        "patientHealth": 30,
+        "patientMaxHealth": 100,
+        "nextAbility": 10263.742403199998,
+        "nextAttack": 10261.508939
+      }
+    },
+    {
+      "now": 10262.142330399998,
+      "snapshot": {
+        "expiresAt": 10520.876774600001,
+        "progress": {
+          "dodge": 1,
+          "ranged_hit": 3
+        },
+        "playerHealth": 49,
+        "classId": "Archer",
+        "enemyHealth": 40,
+        "playerMaxHealth": 49,
+        "status": "Active",
+        "enemyMaxHealth": 700,
+        "id": "native-archer-3",
+        "position": {
+          "y": 0,
+          "x": 0.9609375,
+          "z": 15.4609375
+        },
+        "patientHealth": 30,
+        "patientMaxHealth": 100,
+        "nextAbility": 10263.742403199998,
+        "nextAttack": 10263.309357399998
+      }
+    },
+    {
+      "now": 10262.5923075,
+      "snapshot": {
+        "expiresAt": 10520.876774600001,
+        "progress": {
+          "dodge": 1,
+          "ranged_hit": 3
+        },
+        "playerHealth": 49,
+        "classId": "Archer",
+        "enemyHealth": 40,
+        "playerMaxHealth": 49,
+        "status": "Active",
+        "enemyMaxHealth": 700,
+        "id": "native-archer-3",
+        "position": {
+          "y": 0,
+          "x": 0.9609375,
+          "z": 15.4609375
+        },
+        "patientHealth": 30,
+        "patientMaxHealth": 100,
+        "nextAbility": 10263.742403199998,
+        "nextAttack": 10263.309357399998
+      }
+    },
+    {
+      "now": 10263.0421165,
+      "snapshot": {
+        "expiresAt": 10520.876774600001,
+        "progress": {
+          "dodge": 1,
+          "ranged_hit": 3
+        },
+        "playerHealth": 49,
+        "classId": "Archer",
+        "enemyHealth": 40,
+        "playerMaxHealth": 49,
+        "status": "Active",
+        "enemyMaxHealth": 700,
+        "id": "native-archer-3",
+        "position": {
+          "y": 0,
+          "x": 0.9609375,
+          "z": 15.4609375
+        },
+        "patientHealth": 30,
+        "patientMaxHealth": 100,
+        "nextAbility": 10263.742403199998,
+        "nextAttack": 10263.309357399998
+      }
+    },
+    {
+      "now": 10263.5098717,
+      "snapshot": {
+        "warning": {
+          "impactAt": 10264.709127999999,
+          "x": 0.9609375,
+          "startsAt": 10263.509127999998,
+          "z": 15.4609375,
+          "radius": 6
+        },
+        "expiresAt": 10520.876774600001,
+        "progress": {
+          "dodge": 1,
+          "ranged_hit": 3
+        },
+        "playerHealth": 49,
+        "classId": "Archer",
+        "enemyHealth": 40,
+        "playerMaxHealth": 49,
+        "status": "Active",
+        "nextAbility": 10263.742403199998,
+        "id": "native-archer-3",
+        "position": {
+          "y": 0,
+          "x": 0.9609375,
+          "z": 15.4609375
+        },
+        "patientHealth": 30,
+        "patientMaxHealth": 100,
+        "enemyMaxHealth": 700,
+        "nextAttack": 10263.309357399998
+      }
+    },
+    {
+      "count": 1,
+      "snapshot": {
+        "warning": {
+          "impactAt": 10264.709127999999,
+          "x": 0.9609375,
+          "startsAt": 10263.509127999998,
+          "z": 15.4609375,
+          "radius": 6
+        },
+        "expiresAt": 10520.876774600001,
+        "progress": {
+          "ranged_hit": 3,
+          "victory": 1,
+          "dodge": 1
+        },
+        "playerHealth": 49,
+        "classId": "Archer",
+        "enemyHealth": 0,
+        "playerMaxHealth": 49,
+        "status": "Won",
+        "nextAbility": 10271.2746424,
+        "id": "native-archer-3",
+        "position": {
+          "y": 0,
+          "x": 7.096276760101318,
+          "z": 11.919189453125
+        },
+        "patientHealth": 30,
+        "patientMaxHealth": 100,
+        "enemyMaxHealth": 700,
+        "nextAttack": 10265.7082103
+      },
+      "now": 10264.560317700001,
+      "delivered": true
+    }
+  ]
+}

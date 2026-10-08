@@ -1,0 +1,90 @@
+C:\Work\MySelf\Guildborne\tools\blender_adventure_kit.py:24: DeprecationWarning: 'Material.use_nodes' is expected to be removed in Blender 6.0
+  m.use_nodes = True
+
+FBX export starting... 'C:\\Work\\MySelf\\Guildborne\\assets\\uat01\\adventure-kit\\GreenwoodWaystone.fbx'
+export finished in 0.0056 sec.
+INFO Draco is available, use library at C:\Program Files\Blender Foundation\Blender 5.2\5.2\scripts\addons_core\io_scene_gltf2\bf_intern_draco_bridge.dll
+INFO MeshOptimizer is available, use library at C:\Program Files\Blender Foundation\Blender 5.2\5.2\scripts\addons_core\io_scene_gltf2\bf_intern_meshopt_bridge.dll
+22:44:18 | INFO: Starting glTF 2.0 export
+22:44:18 | INFO: Extracting primitive: Cube.001
+22:44:18 | INFO: Primitives created: 5
+22:44:18 | INFO: Finished glTF 2.0 export in 0.06089496612548828 s
+
+
+FBX export starting... 'C:\\Work\\MySelf\\Guildborne\\assets\\uat01\\adventure-kit\\GreenwoodSupplyCache.fbx'
+export finished in 0.0044 sec.
+22:44:18 | INFO: Starting glTF 2.0 export
+22:44:18 | INFO: Extracting primitive: Cube.008
+22:44:18 | INFO: Primitives created: 4
+22:44:18 | INFO: Finished glTF 2.0 export in 0.008775949478149414 s
+
+
+FBX export starting... 'C:\\Work\\MySelf\\Guildborne\\assets\\uat01\\adventure-kit\\GreenwoodFern.fbx'
+export finished in 0.0049 sec.
+22:44:18 | INFO: Starting glTF 2.0 export
+22:44:18 | INFO: Extracting primitive: Cube.013
+22:44:18 | INFO: Primitives created: 3
+22:44:18 | INFO: Finished glTF 2.0 export in 0.006758213043212891 s
+
+
+FBX export starting... 'C:\\Work\\MySelf\\Guildborne\\assets\\uat01\\adventure-kit\\IronveilOreCart.fbx'
+export finished in 0.0049 sec.
+22:44:18 | INFO: Starting glTF 2.0 export
+22:44:18 | INFO: Extracting primitive: Cube.020
+22:44:18 | INFO: Primitives created: 4
+22:44:18 | INFO: Finished glTF 2.0 export in 0.008461236953735352 s
+
+
+FBX export starting... 'C:\\Work\\MySelf\\Guildborne\\assets\\uat01\\adventure-kit\\IronveilCrystalCluster.fbx'
+export finished in 0.0041 sec.
+22:44:18 | INFO: Starting glTF 2.0 export
+22:44:18 | INFO: Extracting primitive: Cube.032
+22:44:18 | INFO: Primitives created: 3
+22:44:18 | INFO: Finished glTF 2.0 export in 0.007521152496337891 s
+
+
+FBX export starting... 'C:\\Work\\MySelf\\Guildborne\\assets\\uat01\\adventure-kit\\IronveilForge.fbx'
+export finished in 0.0047 sec.
+22:44:18 | INFO: Starting glTF 2.0 export
+22:44:18 | INFO: Extracting primitive: Cube.039
+22:44:18 | INFO: Primitives created: 4
+22:44:18 | INFO: Finished glTF 2.0 export in 0.009669780731201172 s
+
+
+FBX export starting... 'C:\\Work\\MySelf\\Guildborne\\assets\\uat01\\adventure-kit\\AshenRunePillar.fbx'
+export finished in 0.0048 sec.
+22:44:18 | INFO: Starting glTF 2.0 export
+22:44:18 | INFO: Extracting primitive: Cube.048
+22:44:18 | INFO: Primitives created: 3
+22:44:18 | INFO: Finished glTF 2.0 export in 0.0075452327728271484 s
+
+
+FBX export starting... 'C:\\Work\\MySelf\\Guildborne\\assets\\uat01\\adventure-kit\\AshenShrine.fbx'
+export finished in 0.0047 sec.
+22:44:18 | INFO: Starting glTF 2.0 export
+22:44:18 | INFO: Extracting primitive: Cube.055
+22:44:18 | INFO: Primitives created: 4
+22:44:18 | INFO: Finished glTF 2.0 export in 0.008902549743652344 s
+
+
+FBX export starting... 'C:\\Work\\MySelf\\Guildborne\\assets\\uat01\\adventure-kit\\AdventurerQuestBoard.fbx'
+export finished in 0.0045 sec.
+22:44:18 | INFO: Starting glTF 2.0 export
+22:44:18 | INFO: Extracting primitive: Cube.063
+22:44:18 | INFO: Primitives created: 5
+22:44:18 | INFO: Finished glTF 2.0 export in 0.0105133056640625 s
+
+
+FBX export starting... 'C:\\Work\\MySelf\\Guildborne\\assets\\uat01\\adventure-kit\\HarborMarketStall.fbx'
+export finished in 0.0053 sec.
+22:44:18 | INFO: Starting glTF 2.0 export
+22:44:18 | INFO: Extracting primitive: Cube.074
+22:44:18 | INFO: Primitives created: 6
+22:44:18 | INFO: Finished glTF 2.0 export in 0.01161813735961914 s
+00:18.078  render           | Saved: 'C:\Work\MySelf\Guildborne\assets\uat01\adventure-kit\preview.png'
+
+Info: Saved as "Guildborne_Adventure_Kit.blend"
+GUILDBORNE_KIT_COMPLETE 10 1044
+Blender 5.2.1 LTS (hash 9e2066aef7ef built 2026-08-25 02:38:20)
+
+Blender quit

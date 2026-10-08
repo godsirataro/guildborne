@@ -1,0 +1,58 @@
+{
+  "date": "2026-10-06",
+  "scope": "Art Review placement only; no services, quests or rewards",
+  "finalFacingCheck": {
+    "civicNPCs": 6,
+    "faceEntrances": true
+  },
+  "placements": [
+    {
+      "reviewOnly": true,
+      "race": "Human",
+      "city": "Crownford",
+      "position": "2064, 0.30000001192092896, -30",
+      "id": "marshal_elian",
+      "parts": 35
+    },
+    {
+      "reviewOnly": true,
+      "race": "Elf",
+      "city": "Sylvaris",
+      "position": "2276, 0.30000001192092896, 36",
+      "id": "arborist_vaela",
+      "parts": 36
+    },
+    {
+      "reviewOnly": true,
+      "race": "Dwarf",
+      "city": "Deepforge",
+      "position": "2728, 0.30000001192092896, 32",
+      "id": "smith_borin",
+      "parts": 32
+    },
+    {
+      "reviewOnly": true,
+      "race": "Human",
+      "city": "Astralis",
+      "position": "2066, 0.30000001192092896, -446",
+      "id": "cartographer_nyra",
+      "parts": 39
+    },
+    {
+      "reviewOnly": true,
+      "race": "Human",
+      "city": "Crosshaven",
+      "position": "2280, 0.30000001192092896, -364",
+      "id": "harbormaster_sela",
+      "parts": 41
+    },
+    {
+      "reviewOnly": true,
+      "race": "Orc",
+      "city": "Ironroot",
+      "position": "2602, 0.30000001192092896, -430",
+      "id": "steward_roka",
+      "parts": 43
+    }
+  ]
+}

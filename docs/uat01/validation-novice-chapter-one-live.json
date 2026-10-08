@@ -1,0 +1,44 @@
+{
+  "scope": "Fresh schema8 profile in memory-only Novice preview. Actual E courier interaction, normal character navigation, A dodge, E help, J menu, mouse scroll and Claim100XP click. No debug rewards or profile grants.",
+  "beforeFinalInteraction": {
+    "character": {
+      "equipmentSlots": [],
+      "definitionVersion": 1,
+      "tier": 1,
+      "level": 1,
+      "xp": 0,
+      "raceId": "Human"
+    },
+    "hall": 0,
+    "revision": 3,
+    "novice": {
+      "version": 1,
+      "claimed": 0,
+      "objectives": {
+        "dodge_warning": true,
+        "walk_route": true,
+        "meet_courier": true
+      }
+    },
+    "gold": 0
+  },
+  "afterClaim": {
+    "character": {
+      "equipmentSlots": [],
+      "definitionVersion": 1,
+      "tier": 1,
+      "level": 3,
+      "xp": 100,
+      "raceId": "Human"
+    },
+    "cap": 10,
+    "gold": 0,
+    "revision": 5,
+    "novice": {
+      "version": 1,
+      "claimed": 1,
+      "objectives": []
+    },
+    "hall": 0
+  }
+}

@@ -1,0 +1,21 @@
+๑๔:๔๘:๕๔.๕๓๕  [Guildborne] Phase 1 ready · Studio memory · not saved after Stop  -  เซิร์ฟเวอร์ - ServerBootstrap:131
+  ๑๔:๔๘:๕๔.๖๒๗  [Guildborne] profile_loaded {"revision":0}  -  เซิร์ฟเวอร์ - ServerBootstrap:22
+  ๑๔:๔๘:๕๔.๖๒๘  [Guildborne] session_started []  -  เซิร์ฟเวอร์ - ServerBootstrap:22
+  ๑๔:๔๘:๕๔.๗๒๖  [Guildborne] Phase 1 client ready  -  ไคลเอนต์ - SliceController:55
+  ๑๔:๔๙:๑๗.๙๖๐  [Guildborne] profile_saved {"action":"BeginTutorial","revision":1}  -  เซิร์ฟเวอร์ - ServerBootstrap:22
+  ๑๔:๔๙:๑๗.๙๖๑  [Guildborne] tutorial_started []  -  เซิร์ฟเวอร์ - ServerBootstrap:22
+  ๑๔:๔๙:๓๖.๑๕๙  [Guildborne] profile_saved {"action":"SetLanguage","revision":2}  -  เซิร์ฟเวอร์ - ServerBootstrap:22
+  ๑๔:๔๙:๕๓.๒๒๖  [Guildborne] profile_saved {"action":"Recruit","revision":3}  -  เซิร์ฟเวอร์ - ServerBootstrap:22
+  ๑๔:๔๙:๕๓.๒๒๖  [Guildborne] adventurer_recruited {"classId":"Warrior"}  -  เซิร์ฟเวอร์ - ServerBootstrap:22
+  ๑๔:๕๐:๐๗.๗๐๘  [Guildborne] profile_saved {"action":"UpdateParty","revision":4}  -  เซิร์ฟเวอร์ - ServerBootstrap:22
+  ๑๔:๕๐:๐๗.๗๐๘  [Guildborne] party_created []  -  เซิร์ฟเวอร์ - ServerBootstrap:22
+  ๑๔:๕๐:๒๓.๒๙๐  [Guildborne] profile_saved {"action":"StartQuest","revision":5}  -  เซิร์ฟเวอร์ - ServerBootstrap:22
+  ๑๔:๕๐:๒๓.๒๙๑  [Guildborne] quest_started {"questId":"trail_watch"}  -  เซิร์ฟเวอร์ - ServerBootstrap:22
+  ๑๔:๕๓:๒๕.๑๐๑  [Guildborne] profile_saved {"action":"CompleteQuest","revision":6}  -  เซิร์ฟเวอร์ - ServerBootstrap:22
+  ๑๔:๕๓:๒๕.๑๐๑  [Guildborne] gold_created {"amount":30,"reason":"QuestReward"}  -  เซิร์ฟเวอร์ - ServerBootstrap:22
+  ๑๔:๕๓:๒๕.๑๐๑  [Guildborne] item_acquired {"quantity":1,"itemId":"training_sword"}  -  เซิร์ฟเวอร์ - ServerBootstrap:22
+  ๑๔:๕๓:๒๕.๑๐๑  [Guildborne] item_acquired {"quantity":2,"itemId":"herb"}  -  เซิร์ฟเวอร์ - ServerBootstrap:22
+  ๑๔:๕๓:๒๕.๑๐๑  [Guildborne] quest_completed {"questId":"trail_watch"}  -  เซิร์ฟเวอร์ - ServerBootstrap:22
+  ๑๔:๕๔:๑๘.๔๘๒  [Guildborne] profile_saved {"action":"EquipItem","revision":7}  -  เซิร์ฟเวอร์ - ServerBootstrap:22
+  ๑๔:๕๔:๑๘.๔๘๒  [Guildborne] weapon_equipped {"itemId":"training_sword","classId":"Warrior"}  -  เซิร์ฟเวอร์ - ServerBootstrap:22
+  ๑๔:๕๔:๕๕.๘๘๑  GBUI state true 0, 0 327, 376  -  ไคลเอนต์

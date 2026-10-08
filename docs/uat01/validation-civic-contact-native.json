@@ -1,0 +1,22 @@
+{
+  "added": {
+    "content": [
+      {
+        "type": "text",
+        "text": "{\"ok\":true,\"result\":[{\"vertices\":4338,\"meshCenter\":\"0, 2.7850000858306885, 0.699999988079071\",\"id\":\"vaela\",\"size\":\"4.300000190734863, 5.96999979019165, 3.5999999046325684\",\"bones\":16,\"triangles\":8384},{\"vertices\":4480,\"meshCenter\":\"0, 2.640000104904175, 0.6999999284744263\",\"id\":\"roka\",\"size\":\"4.5, 5.679999828338623, 3.799999952316284\",\"bones\":16,\"triangles\":8644},{\"vertices\":3184,\"meshCenter\":\"0, 2.7850000858306885, 0.6499999761581421\",\"id\":\"elian\",\"size\":\"4.300000190734863, 5.96999979019165, 3.799999952316284\",\"bones\":16,\"triangles\":6144},{\"vertices\":4246,\"meshCenter\":\"0, 2.865000009536743, 0.6499999761581421\",\"id\":\"nyra\",\"size\":\"4.300000190734863, 6.12999963760376, 3.799999952316284\",\"bones\":16,\"triangles\":8208},{\"vertices\":4502,\"meshCenter\":\"0, 2.880000114440918, 0.6499999761581421\",\"id\":\"sela\",\"size\":\"4.300000190734863, 6.159999847412109, 3.799999952316284\",\"bones\":16,\"triangles\":8720}]}"
+      }
+    ],
+    "isError": false
+  },
+  "probe": {
+    "content": [
+      {
+        "type": "text",
+        "text": "{\"status\":\"PASS\",\"method\":\"EditableMesh rest positions plus native Bone.TransformedWorldCFrame skinning; visual Studio captures separate. Cosmetic particle motion excluded.\",\"actors\":[{\"vertices\":6606,\"id\":\"borin\",\"samples\":[{\"error\":0,\"frame\":30},{\"error\":0,\"frame\":90},{\"error\":0,\"frame\":150}],\"bones\":16,\"triangles\":12792},{\"vertices\":4338,\"id\":\"vaela\",\"samples\":[{\"error\":0,\"frame\":0},{\"error\":0,\"frame\":15},{\"error\":0,\"frame\":30},{\"error\":0,\"frame\":45},{\"error\":0,\"frame\":60},{\"error\":0,\"frame\":75},{\"error\":0,\"frame\":90},{\"error\":0,\"frame\":105},{\"error\":0,\"frame\":120},{\"error\":0,\"frame\":135},{\"error\":0,\"frame\":150},{\"error\":0,\"frame\":165}],\"bones\":16,\"triangles\":8384},{\"vertices\":4480,\"id\":\"roka\",\"samples\":[{\"error\":0,\"frame\":0},{\"error\":1.1920928955078126e-7,\"frame\":15},{\"error\":5.960464477539063e-8,\"frame\":30},{\"error\":0,\"frame\":45},{\"error\":4.172325134277344e-7,\"frame\":60},{\"error\":8.046627044677734e-7,\"frame\":75},{\"error\":0,\"frame\":90},{\"error\":1.1920928955078126e-7,\"frame\":105},{\"error\":5.960464477539063e-8,\"frame\":120},{\"error\":0,\"frame\":135},{\"error\":4.172325134277344e-7,\"frame\":150},{\"error\":8.046627044677734e-7,\"frame\":165}],\"bones\":16,\"triangles\":8644},{\"vertices\":3184,\"id\":\"elian\",\"samples\":[{\"error\":0,\"frame\":90}],\"bones\":16,\"triangles\":6144},{\"vertices\":4246,\"id\":\"nyra\",\"samples\":[{\"error\":0,\"frame\":0},{\"error\":0,\"frame\":15},{\"error\":0,\"frame\":30},{\"error\":0,\"frame\":45},{\"error\":0,\"frame\":60},{\"error\":0,\"frame\":75},{\"error\":0,\"frame\":90},{\"error\":0,\"frame\":105},{\"error\":0,\"frame\":120},{\"error\":0,\"frame\":135},{\"error\":0,\"frame\":150},{\"error\":0,\"frame\":165}],\"bones\":16,\"triangles\":8208},{\"vertices\":4502,\"id\":\"sela\",\"samples\":[{\"error\":0,\"frame\":0},{\"error\":0,\"frame\":22},{\"error\":0,\"frame\":44},{\"error\":0,\"frame\":52},{\"error\":0,\"frame\":60},{\"error\":0,\"frame\":82},{\"error\":0,\"frame\":104},{\"error\":0,\"frame\":112},{\"error\":0,\"frame\":120},{\"error\":0,\"frame\":142},{\"error\":0,\"frame\":164},{\"error\":0,\"frame\":172}],\"bones\":16,\"triangles\":8720}]}"
+      }
+    ],
+    "isError": false
+  },
+  "published": false,
+  "notes": "Local Edit review at Y1000. EditableMesh + manual native Bone hierarchy. Captures and computed skin contacts; cosmetic particle bindings excluded."
+}

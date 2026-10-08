@@ -1,0 +1,35 @@
+{
+  "status": "PASS",
+  "meshObjects": 114,
+  "triangles": 14304,
+  "bones": 16,
+  "skinnedMeshes": 87,
+  "actions": 1,
+  "contactRoundtrip": [
+    {
+      "frame": 30,
+      "hammerBottom": 2.6999990940093994,
+      "workpieceTop": 2.700000047683716,
+      "error": 9.5367431640625e-07
+    },
+    {
+      "frame": 90,
+      "hammerBottom": 2.6999990940093994,
+      "workpieceTop": 2.700000047683716,
+      "error": 9.5367431640625e-07
+    },
+    {
+      "frame": 150,
+      "hammerBottom": 2.6999990940093994,
+      "workpieceTop": 2.700000047683716,
+      "error": 9.5367431640625e-07
+    }
+  ],
+  "windupClearance": 1.0220870971679688,
+  "stationaryFeetAndRoot": true,
+  "loopSeamPassed": true,
+  "platformImported": false,
+  "excludedBoneControlMeshes": 1,
+  "notes": "Export imported into a clean Blender scene at authored30fps. Evaluated skinned hammer surfaces tested; listening and production retarget/performance pending. Importer bone-control shapes excluded from geometry totals.",
+  "format": "GLB"
+}

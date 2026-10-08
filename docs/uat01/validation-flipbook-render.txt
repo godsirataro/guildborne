@@ -1,0 +1,8 @@
+C:\Work\MySelf\Guildborne\tools\blender_vfx_flipbook.py:10: DeprecationWarning: 'Material.use_nodes' is expected to be removed in Blender 6.0
+  m=bpy.data.materials.new(name);m.use_nodes=True
+00:19.219  render           | Saved: 'C:\Work\MySelf\Guildborne\assets\uat01\vfx-native\guildborne-shockwave-4x4-v1.png'
+Info: Saved as "Guildborne_Shockwave_Flipbook.blend"
+FLIPBOOK_RENDER_COMPLETE 16 frames,2048 square,RGBA
+Blender 5.2.1 LTS (hash 9e2066aef7ef built 2026-08-25 02:38:20)
+
+Blender quit

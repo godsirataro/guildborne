@@ -1,0 +1,1276 @@
+{
+  "ruleset": "GUILD-PROGRESSION-DESIGN-2.0",
+  "notice": "ข้อเสนอออกแบบใหม่ ไม่ใช่ข้อมูลจาก repository ที่ตรวจแล้ว และไม่ใช่โค้ดเกมพร้อมใช้งาน ต้องผูก IDs/รางวัล/ฉากกับของจริงและทดสอบก่อนเปิดใช้",
+  "classes": [
+    {
+      "id": "knight",
+      "tier": 1,
+      "parent_id": null,
+      "name_th": "อัศวิน",
+      "name_en": "Knight",
+      "unlock_level": 10,
+      "role": "แทงค์/ป้องกัน",
+      "active_ability_concepts": [
+        {
+          "id": "knight.active.1",
+          "name_th": "Taunt",
+          "effect_proposal": "เพิ่มความสนใจของศัตรูระยะใกล้ชั่วคราว ไม่แย่งเป้าได้ถาวร"
+        },
+        {
+          "id": "knight.active.2",
+          "name_th": "Guard",
+          "effect_proposal": "ตั้งรับลดความเสียหายในหน้าต่างสั้น"
+        },
+        {
+          "id": "knight.active.3",
+          "name_th": "Shield Bash",
+          "effect_proposal": "กระแทกและหยุดการร่ายที่ขัดจังหวะได้"
+        }
+      ],
+      "capstone_concept": {
+        "name_th": "คำมั่นผู้พิทักษ์",
+        "effect_proposal": "การป้องกันสำเร็จช่วยให้สกิลถัดไปมีประสิทธิภาพเพิ่มแบบมีเพดาน"
+      },
+      "trial_concept": "พา NPC ข้ามแนวโจมตี สกัดการร่าย และเลือกจังหวะรับแทนฆ่าศัตรูให้ไวที่สุด",
+      "production_class_id": null,
+      "status": "DESIGN_ONLY",
+      "base_class_id": "knight",
+      "next_choices": [
+        "guardian",
+        "crusader"
+      ]
+    },
+    {
+      "id": "warrior",
+      "tier": 1,
+      "parent_id": null,
+      "name_th": "นักรบ",
+      "name_en": "Warrior",
+      "unlock_level": 10,
+      "role": "ดาเมจระยะประชิด",
+      "active_ability_concepts": [
+        {
+          "id": "warrior.active.1",
+          "name_th": "Power Strike",
+          "effect_proposal": "โจมตีหนักเป้าหมายเดียว"
+        },
+        {
+          "id": "warrior.active.2",
+          "name_th": "Cleave",
+          "effect_proposal": "โจมตีเป็นกรวยหน้าแคบ"
+        },
+        {
+          "id": "warrior.active.3",
+          "name_th": "Rally",
+          "effect_proposal": "ให้บัฟกำลังใจสั้นที่ไม่ซ้อนกับตัวเอง"
+        }
+      ],
+      "capstone_concept": {
+        "name_th": "จังหวะแห่งเหล็ก",
+        "effect_proposal": "เข้าหน้าต่างอ่อนแอของบอสได้โบนัส ไม่เพิ่มพลังจากการยืนรับการโจมตี"
+      },
+      "trial_concept": "ทำลายเกราะฝึกตามลำดับ หลบการโจมตีเตือน และเลือกจังหวะปิดงาน",
+      "production_class_id": null,
+      "status": "DESIGN_ONLY",
+      "base_class_id": "warrior",
+      "next_choices": [
+        "berserker",
+        "duelist"
+      ]
+    },
+    {
+      "id": "archer",
+      "tier": 1,
+      "parent_id": null,
+      "name_th": "นักธนู",
+      "name_en": "Archer",
+      "unlock_level": 10,
+      "role": "ดาเมจระยะไกล/ควบคุมพื้นที่",
+      "active_ability_concepts": [
+        {
+          "id": "archer.active.1",
+          "name_th": "Piercing Shot",
+          "effect_proposal": "ลูกศรเจาะแนวในระยะและจำนวนเป้าที่จำกัด"
+        },
+        {
+          "id": "archer.active.2",
+          "name_th": "Volley",
+          "effect_proposal": "ยิงกลุ่มลูกศรในพื้นที่เล็กที่แสดงขอบเขตชัด"
+        },
+        {
+          "id": "archer.active.3",
+          "name_th": "Mark Target",
+          "effect_proposal": "ทำเครื่องหมายช่วยทีมเลือกเป้าหมาย ไม่ซ้อนเพิ่มดาเมจไร้เพดาน"
+        }
+      ],
+      "capstone_concept": {
+        "name_th": "สายตานายพราน",
+        "effect_proposal": "โจมตีเป้าที่อ่านจังหวะถูกได้ผลดีขึ้น ไม่บังคับยิงจุดเล็กบนมือถือ"
+      },
+      "trial_concept": "ตามรอยโดยอ่านฉาก ยิงเป้าลำดับ และช่วยผู้ติดกับโดยไม่ยิงผิด",
+      "production_class_id": null,
+      "status": "DESIGN_ONLY",
+      "base_class_id": "archer",
+      "next_choices": [
+        "ranger",
+        "marksman"
+      ]
+    },
+    {
+      "id": "mage",
+      "tier": 1,
+      "parent_id": null,
+      "name_th": "นักเวท",
+      "name_en": "Mage",
+      "unlock_level": 10,
+      "role": "เวทระยะไกล/พื้นที่",
+      "active_ability_concepts": [
+        {
+          "id": "mage.active.1",
+          "name_th": "Fireball",
+          "effect_proposal": "ลูกไฟและแรงระเบิดเล็ก"
+        },
+        {
+          "id": "mage.active.2",
+          "name_th": "Arcane Burst",
+          "effect_proposal": "ระเบิดเวทรอบจุดเป้าหมายที่กำหนด"
+        },
+        {
+          "id": "mage.active.3",
+          "name_th": "Frost Field",
+          "effect_proposal": "พื้นที่ชะลอที่ไม่หยุดบอสตลอดเวลา"
+        }
+      ],
+      "capstone_concept": {
+        "name_th": "วงจรเวท",
+        "effect_proposal": "ใช้สกิลต่างชนิดตามลำดับได้โบนัสที่มี cooldown"
+      },
+      "trial_concept": "ปรับทางพลังงาน แยกเป้าหมายจริงจากภาพลวง และคุมพื้นที่แทนกดดาเมจอย่างเดียว",
+      "production_class_id": null,
+      "status": "DESIGN_ONLY",
+      "base_class_id": "mage",
+      "next_choices": [
+        "elementalist",
+        "arcanist"
+      ]
+    },
+    {
+      "id": "priest",
+      "tier": 1,
+      "parent_id": null,
+      "name_th": "นักบวช",
+      "name_en": "Priest",
+      "unlock_level": 10,
+      "role": "ฮีล/โล่/ช่วยทีม",
+      "active_ability_concepts": [
+        {
+          "id": "priest.active.1",
+          "name_th": "Heal",
+          "effect_proposal": "ฮีลเป้าหมายที่ขาด HP"
+        },
+        {
+          "id": "priest.active.2",
+          "name_th": "Group Mend",
+          "effect_proposal": "ฟื้นฟูทีมในขอบเขตจำกัด"
+        },
+        {
+          "id": "priest.active.3",
+          "name_th": "Protective Blessing",
+          "effect_proposal": "โล่ชั่วคราวที่มีขนาดและเวลาสูงสุด"
+        }
+      ],
+      "capstone_concept": {
+        "name_th": "แสงที่ไม่ทอดทิ้ง",
+        "effect_proposal": "ช่วยผู้บาดเจ็บวิกฤตได้โบนัสโดยไม่สร้างวงจร down/revive ฟาร์ม"
+      },
+      "trial_concept": "ประเมินคนบาดเจ็บ จัดลำดับการช่วย และยืนหลบภัยขณะรักษา",
+      "production_class_id": null,
+      "status": "DESIGN_ONLY",
+      "base_class_id": "priest",
+      "next_choices": [
+        "cleric",
+        "inquisitor"
+      ]
+    },
+    {
+      "id": "guardian",
+      "tier": 2,
+      "parent_id": "knight",
+      "name_th": "ผู้พิทักษ์",
+      "name_en": "Guardian",
+      "unlock_level": 35,
+      "role": "แทงค์รับแรงปะทะ",
+      "active_ability_concepts": [
+        {
+          "id": "guardian.active.1",
+          "name_th": "Shield Wall",
+          "effect_proposal": "กำบังด้านหน้าให้ทีม"
+        },
+        {
+          "id": "guardian.active.2",
+          "name_th": "Interpose",
+          "effect_proposal": "เข้ารับการโจมตีที่ระบุแทนหนึ่งครั้ง"
+        },
+        {
+          "id": "guardian.active.3",
+          "name_th": "Ground Anchor",
+          "effect_proposal": "ลดการถูกผลักชั่วคราว"
+        }
+      ],
+      "capstone_concept": {
+        "name_th": "แนวหน้าที่ไม่แตก",
+        "effect_proposal": "ป้องกันเป็นช่วง ไม่อมตะ"
+      },
+      "trial_concept": "คุ้มกันสามจุด เลือกจุดที่เสียหายได้และรักษาชีวิตคนเป็นลำดับแรก",
+      "production_class_id": null,
+      "status": "DESIGN_ONLY",
+      "base_class_id": "knight",
+      "next_choices": [
+        "bastion_warden",
+        "iron_marshal"
+      ]
+    },
+    {
+      "id": "crusader",
+      "tier": 2,
+      "parent_id": "knight",
+      "name_th": "อัศวินศักดิ์สิทธิ์",
+      "name_en": "Crusader",
+      "unlock_level": 35,
+      "role": "แนวหน้า/ต้านเวท",
+      "active_ability_concepts": [
+        {
+          "id": "crusader.active.1",
+          "name_th": "Consecrated Strike",
+          "effect_proposal": "โจมตีและทิ้งพื้นที่ปลอดภัยเล็ก"
+        },
+        {
+          "id": "crusader.active.2",
+          "name_th": "Ward Break",
+          "effect_proposal": "ขัดจังหวะม่านเวท"
+        },
+        {
+          "id": "crusader.active.3",
+          "name_th": "Oath Link",
+          "effect_proposal": "แบ่งโล่ให้เพื่อนคนเดียว"
+        }
+      ],
+      "capstone_concept": {
+        "name_th": "สาบานต่อผู้มีชีวิต",
+        "effect_proposal": "โบนัสป้องกันเมื่อช่วยเพื่อน ไม่ผูกกับชื่อศาสนาในโลกจริง"
+      },
+      "trial_concept": "ช่วยผู้ต้องสงสัยโดยตรวจหลักฐาน เลือกคำสาบานและรับมือเวทในสนามทดลอง",
+      "production_class_id": null,
+      "status": "DESIGN_ONLY",
+      "base_class_id": "knight",
+      "next_choices": [
+        "dawn_paladin",
+        "spellbreaker"
+      ]
+    },
+    {
+      "id": "berserker",
+      "tier": 2,
+      "parent_id": "warrior",
+      "name_th": "นักรบคลั่ง",
+      "name_en": "Berserker",
+      "unlock_level": 35,
+      "role": "ประชิดเสี่ยงตำแหน่ง/ดาเมจต่อเนื่อง",
+      "active_ability_concepts": [
+        {
+          "id": "berserker.active.1",
+          "name_th": "Frenzy",
+          "effect_proposal": "เร่งจังหวะโจมตีระยะสั้นมีเพดาน"
+        },
+        {
+          "id": "berserker.active.2",
+          "name_th": "Rupture",
+          "effect_proposal": "ทำแผลเชิงแฟนตาซีที่ไม่ซ้อนอนันต์"
+        },
+        {
+          "id": "berserker.active.3",
+          "name_th": "Unbroken",
+          "effect_proposal": "ต้านการสะดุดครั้งเดียว"
+        }
+      ],
+      "capstone_concept": {
+        "name_th": "วินัยใต้ความเดือดดาล",
+        "effect_proposal": "แรงกดดันเพิ่มเมื่อหลบถูก ไม่ส่งเสริมจงใจเสียเลือด"
+      },
+      "trial_concept": "ผ่านสนามที่โจมตีแรงแต่ต้องควบคุมตัวเองและหยุดตามสัญญาณ",
+      "production_class_id": null,
+      "status": "DESIGN_ONLY",
+      "base_class_id": "warrior",
+      "next_choices": [
+        "ravager",
+        "warborn_champion"
+      ]
+    },
+    {
+      "id": "duelist",
+      "tier": 2,
+      "parent_id": "warrior",
+      "name_th": "นักดาบประลอง",
+      "name_en": "Duelist",
+      "unlock_level": 35,
+      "role": "ประชิดจับจังหวะ/ตอบโต้",
+      "active_ability_concepts": [
+        {
+          "id": "duelist.active.1",
+          "name_th": "Riposte",
+          "effect_proposal": "ตอบโต้หลังตั้งรับถูกจังหวะ"
+        },
+        {
+          "id": "duelist.active.2",
+          "name_th": "Step Cut",
+          "effect_proposal": "เคลื่อนระยะสั้นพร้อมโจมตี"
+        },
+        {
+          "id": "duelist.active.3",
+          "name_th": "Challenge",
+          "effect_proposal": "เน้นดวลเป้าเดียว ไม่บังคับ PvP"
+        }
+      ],
+      "capstone_concept": {
+        "name_th": "หนึ่งจังหวะเหนือศัตรู",
+        "effect_proposal": "ตอบโต้ต่อเนื่องมีหน้าต่างจำกัด"
+      },
+      "trial_concept": "ดวลครูฝึก อ่านท่า และยอมจบการต่อสู้เมื่อคู่ต่อสู้ยอมแพ้",
+      "production_class_id": null,
+      "status": "DESIGN_ONLY",
+      "base_class_id": "warrior",
+      "next_choices": [
+        "sword_saint",
+        "blade_dancer"
+      ]
+    },
+    {
+      "id": "ranger",
+      "tier": 2,
+      "parent_id": "archer",
+      "name_th": "ผู้ลาดตระเวน",
+      "name_en": "Ranger",
+      "unlock_level": 35,
+      "role": "กับดัก/เอาตัวรอด",
+      "active_ability_concepts": [
+        {
+          "id": "ranger.active.1",
+          "name_th": "Snare",
+          "effect_proposal": "กับดักชะลอแบบจำกัดเป้า"
+        },
+        {
+          "id": "ranger.active.2",
+          "name_th": "Trail Shot",
+          "effect_proposal": "ยิงแล้วเปลี่ยนตำแหน่ง"
+        },
+        {
+          "id": "ranger.active.3",
+          "name_th": "Scout Flare",
+          "effect_proposal": "เปิดเผยศัตรูในขอบเขต PvE"
+        }
+      ],
+      "capstone_concept": {
+        "name_th": "เจ้าถิ่น",
+        "effect_proposal": "ได้เปรียบจากการจัดพื้นที่ ไม่เพิ่มระยะเห็นทั้งแผนที่"
+      },
+      "trial_concept": "ตามรอย ช่วยสัตว์ และวางเส้นทางปลอดภัยให้ขบวน",
+      "production_class_id": null,
+      "status": "DESIGN_ONLY",
+      "base_class_id": "archer",
+      "next_choices": [
+        "beast_warden",
+        "windstrider"
+      ]
+    },
+    {
+      "id": "marksman",
+      "tier": 2,
+      "parent_id": "archer",
+      "name_th": "พลแม่นธนู",
+      "name_en": "Marksman",
+      "unlock_level": 35,
+      "role": "ยิงไกล/เป้าสำคัญ",
+      "active_ability_concepts": [
+        {
+          "id": "marksman.active.1",
+          "name_th": "Aimed Shot",
+          "effect_proposal": "เตรียมยิงแรงแบบหยุดได้"
+        },
+        {
+          "id": "marksman.active.2",
+          "name_th": "Pinning Shot",
+          "effect_proposal": "จำกัดการเคลื่อนช่วงสั้น"
+        },
+        {
+          "id": "marksman.active.3",
+          "name_th": "Spotter",
+          "effect_proposal": "เผยจุดอ่อนที่ server อนุญาต"
+        }
+      ],
+      "capstone_concept": {
+        "name_th": "ยิงเมื่อจำเป็น",
+        "effect_proposal": "ความแม่นจากตำแหน่งและลำดับ ไม่บังคับ flick aim"
+      },
+      "trial_concept": "ช่วยตัวประกันจำลองโดยเลือกเป้าและจังหวะที่ถูก ไม่ใช้คะแนน PvP",
+      "production_class_id": null,
+      "status": "DESIGN_ONLY",
+      "base_class_id": "archer",
+      "next_choices": [
+        "deadeye",
+        "arcane_sniper"
+      ]
+    },
+    {
+      "id": "elementalist",
+      "tier": 2,
+      "parent_id": "mage",
+      "name_th": "ผู้ควบคุมธาตุ",
+      "name_en": "Elementalist",
+      "unlock_level": 35,
+      "role": "เวทพื้นที่/สลับธาตุ",
+      "active_ability_concepts": [
+        {
+          "id": "elementalist.active.1",
+          "name_th": "Flame Wave",
+          "effect_proposal": "แนวไฟเคลื่อนที่"
+        },
+        {
+          "id": "elementalist.active.2",
+          "name_th": "Ice Rampart",
+          "effect_proposal": "กำแพงควบคุมเส้นทาง PvE ที่ไม่ขังผู้เล่น"
+        },
+        {
+          "id": "elementalist.active.3",
+          "name_th": "Storm Seed",
+          "effect_proposal": "จุดพลังที่ระเบิดเมื่อครบเงื่อนไข"
+        }
+      ],
+      "capstone_concept": {
+        "name_th": "สมดุลธาตุ",
+        "effect_proposal": "ใช้ธาตุต่างกันได้โบนัส ไม่เพิ่มปฏิกิริยาทุกคู่ตั้งแต่แรก"
+      },
+      "trial_concept": "ฟื้นสมดุลสามเสาโดยเลือกธาตุและปกป้องคนที่อยู่ใกล้",
+      "production_class_id": null,
+      "status": "DESIGN_ONLY",
+      "base_class_id": "mage",
+      "next_choices": [
+        "pyromancer",
+        "frostweaver"
+      ]
+    },
+    {
+      "id": "arcanist",
+      "tier": 2,
+      "parent_id": "mage",
+      "name_th": "นักเวทอาคม",
+      "name_en": "Arcanist",
+      "unlock_level": 35,
+      "role": "ตราเวท/พื้นที่ปลอดภัย",
+      "active_ability_concepts": [
+        {
+          "id": "arcanist.active.1",
+          "name_th": "Sigil",
+          "effect_proposal": "วางตราที่มีจำนวนสูงสุด"
+        },
+        {
+          "id": "arcanist.active.2",
+          "name_th": "Dispel Pulse",
+          "effect_proposal": "ลบบัฟศัตรูที่อนุญาต"
+        },
+        {
+          "id": "arcanist.active.3",
+          "name_th": "Phase Step",
+          "effect_proposal": "ขยับตำแหน่งสั้นด้วยจุดปลอดภัย"
+        }
+      ],
+      "capstone_concept": {
+        "name_th": "แบบแผนที่สมบูรณ์",
+        "effect_proposal": "เชื่อมตราตามเงื่อนไขที่ตรวจได้"
+      },
+      "trial_concept": "แก้ปริศนาตราประทับ ปิดรอยแยก และเลือกเก็บหลักฐานแทนพลังดิบ",
+      "production_class_id": null,
+      "status": "DESIGN_ONLY",
+      "base_class_id": "mage",
+      "next_choices": [
+        "chronomancer",
+        "spellbinder"
+      ]
+    },
+    {
+      "id": "cleric",
+      "tier": 2,
+      "parent_id": "priest",
+      "name_th": "ผู้เยียวยา",
+      "name_en": "Cleric",
+      "unlock_level": 35,
+      "role": "ฮีลหลัก/ล้างสถานะ",
+      "active_ability_concepts": [
+        {
+          "id": "cleric.active.1",
+          "name_th": "Cleanse",
+          "effect_proposal": "ล้างสถานะที่กำหนด"
+        },
+        {
+          "id": "cleric.active.2",
+          "name_th": "Sanctuary",
+          "effect_proposal": "พื้นที่ฟื้นฟูขนาดจำกัด"
+        },
+        {
+          "id": "cleric.active.3",
+          "name_th": "Life Thread",
+          "effect_proposal": "ฮีลตามเวลาแบบจำกัดการซ้อน"
+        }
+      ],
+      "capstone_concept": {
+        "name_th": "ห้องพยาบาลเคลื่อนที่",
+        "effect_proposal": "รักษาตามลำดับมีประสิทธิภาพ ไม่สร้างอมตะ"
+      },
+      "trial_concept": "บริหารทรัพยากรช่วยผู้บาดเจ็บหลายกลุ่มโดยทุกคนมีทางรอด",
+      "production_class_id": null,
+      "status": "DESIGN_ONLY",
+      "base_class_id": "priest",
+      "next_choices": [
+        "high_priest",
+        "oracle"
+      ]
+    },
+    {
+      "id": "inquisitor",
+      "tier": 2,
+      "parent_id": "priest",
+      "name_th": "ผู้พิทักษ์คำสัตย์",
+      "name_en": "Inquisitor",
+      "unlock_level": 35,
+      "role": "สนับสนุนเชิงรุก/ต้านคำสาป",
+      "active_ability_concepts": [
+        {
+          "id": "inquisitor.active.1",
+          "name_th": "Seal",
+          "effect_proposal": "ลดภัยจากสกิลที่กำหนด"
+        },
+        {
+          "id": "inquisitor.active.2",
+          "name_th": "Radiant Brand",
+          "effect_proposal": "ทำเครื่องหมายเพื่อช่วยทีม"
+        },
+        {
+          "id": "inquisitor.active.3",
+          "name_th": "Truth Ward",
+          "effect_proposal": "ป้องกันคำสาปช่วงสั้น"
+        }
+      ],
+      "capstone_concept": {
+        "name_th": "ความจริงไม่ใช่โทษทัณฑ์",
+        "effect_proposal": "ได้ผลจากการหยุดอันตราย ไม่จากการทำร้าย NPC"
+      },
+      "trial_concept": "สอบสวนคำสาปด้วยหลักฐานและช่วยผู้ถูกกล่าวหา ไม่ตัดสินจากรูปลักษณ์",
+      "production_class_id": null,
+      "status": "DESIGN_ONLY",
+      "base_class_id": "priest",
+      "next_choices": [
+        "judicator",
+        "soul_shepherd"
+      ]
+    },
+    {
+      "id": "bastion_warden",
+      "tier": 3,
+      "parent_id": "guardian",
+      "name_th": "ผู้เฝ้าปราการ",
+      "name_en": "Bastion Warden",
+      "unlock_level": 70,
+      "role": "แทงค์ยืนพื้นที่",
+      "active_ability_concepts": [
+        {
+          "id": "bastion_warden.active.1",
+          "name_th": "Citadel",
+          "effect_proposal": "ตั้งเขตโล่เล็ก"
+        },
+        {
+          "id": "bastion_warden.active.2",
+          "name_th": "Hold the Line",
+          "effect_proposal": "หยุดการฝ่าแนวชั่วคราว"
+        },
+        {
+          "id": "bastion_warden.active.3",
+          "name_th": "Shield Relay",
+          "effect_proposal": "ส่งโล่ตามสมาชิกใกล้กัน"
+        }
+      ],
+      "capstone_concept": {
+        "name_th": "Last Bastion",
+        "effect_proposal": "ลดแรงโจมตีรอบสุดท้ายของบอสช่วงสั้น"
+      },
+      "trial_concept": "ปกป้องเสาอพยพที่เสียพร้อมกันโดยเลือกตำแหน่งรับภัย",
+      "production_class_id": null,
+      "status": "DESIGN_ONLY",
+      "base_class_id": "knight",
+      "next_choices": []
+    },
+    {
+      "id": "iron_marshal",
+      "tier": 3,
+      "parent_id": "guardian",
+      "name_th": "จอมบัญชาการเหล็ก",
+      "name_en": "Iron Marshal",
+      "unlock_level": 70,
+      "role": "แทงค์สั่งการทีม",
+      "active_ability_concepts": [
+        {
+          "id": "iron_marshal.active.1",
+          "name_th": "Advance",
+          "effect_proposal": "พาทีมเคลื่อนสู่แนวที่ปลอดภัย"
+        },
+        {
+          "id": "iron_marshal.active.2",
+          "name_th": "Rally Standard",
+          "effect_proposal": "ธงบัฟทีมหนึ่งธง"
+        },
+        {
+          "id": "iron_marshal.active.3",
+          "name_th": "Cover Order",
+          "effect_proposal": "สั่งป้องกันเพื่อนที่มีภัยสูง"
+        }
+      ],
+      "capstone_concept": {
+        "name_th": "United Front",
+        "effect_proposal": "บัฟทีมจากการอยู่แนวรบที่กำหนด"
+      },
+      "trial_concept": "จัดกองกำลัง NPC สามหมู่ให้ผ่านสนามโดยไม่สูญเสียแนวหลัง",
+      "production_class_id": null,
+      "status": "DESIGN_ONLY",
+      "base_class_id": "knight",
+      "next_choices": []
+    },
+    {
+      "id": "dawn_paladin",
+      "tier": 3,
+      "parent_id": "crusader",
+      "name_th": "พาลาดินรุ่งอรุณ",
+      "name_en": "Dawn Paladin",
+      "unlock_level": 70,
+      "role": "แทงค์/ฟื้นฟู",
+      "active_ability_concepts": [
+        {
+          "id": "dawn_paladin.active.1",
+          "name_th": "Dawn Aegis",
+          "effect_proposal": "โล่และฮีลเล็ก"
+        },
+        {
+          "id": "dawn_paladin.active.2",
+          "name_th": "Mercy Strike",
+          "effect_proposal": "ตีเป้าและฟื้นเพื่อนใกล้"
+        },
+        {
+          "id": "dawn_paladin.active.3",
+          "name_th": "Beacon of Hope",
+          "effect_proposal": "จุดรวมทีมที่มีจำนวนจำกัด"
+        }
+      ],
+      "capstone_concept": {
+        "name_th": "First Light",
+        "effect_proposal": "ช่วยทีมผ่านช่วงอันตราย ไม่ชุบทุกคนฟรีซ้ำ"
+      },
+      "trial_concept": "ช่วยฝ่ายที่เคยเป็นศัตรูขณะรักษาเสาคุ้มกัน",
+      "production_class_id": null,
+      "status": "DESIGN_ONLY",
+      "base_class_id": "knight",
+      "next_choices": []
+    },
+    {
+      "id": "spellbreaker",
+      "tier": 3,
+      "parent_id": "crusader",
+      "name_th": "ผู้ทำลายอาคม",
+      "name_en": "Spellbreaker",
+      "unlock_level": 70,
+      "role": "แทงค์ต้านเวท",
+      "active_ability_concepts": [
+        {
+          "id": "spellbreaker.active.1",
+          "name_th": "Spell Shatter",
+          "effect_proposal": "ขัดจังหวะคาถาที่แสดงสัญญาณ"
+        },
+        {
+          "id": "spellbreaker.active.2",
+          "name_th": "Null Shield",
+          "effect_proposal": "ดูดซับเวทตามเพดาน"
+        },
+        {
+          "id": "spellbreaker.active.3",
+          "name_th": "Hex Sever",
+          "effect_proposal": "ตัดสายคำสาป"
+        }
+      ],
+      "capstone_concept": {
+        "name_th": "Silence the Storm",
+        "effect_proposal": "สร้างหน้าต่างต้านเวท ไม่ปิดบอสถาวร"
+      },
+      "trial_concept": "อ่านคำร่ายจริงจากภาพลวงและป้องกันเพื่อนตามจังหวะ",
+      "production_class_id": null,
+      "status": "DESIGN_ONLY",
+      "base_class_id": "knight",
+      "next_choices": []
+    },
+    {
+      "id": "ravager",
+      "tier": 3,
+      "parent_id": "berserker",
+      "name_th": "ผู้ฝ่าแนวรบ",
+      "name_en": "Ravager",
+      "unlock_level": 70,
+      "role": "ประชิดกวาดพื้นที่",
+      "active_ability_concepts": [
+        {
+          "id": "ravager.active.1",
+          "name_th": "Sunder Arc",
+          "effect_proposal": "ฟันกรวยทำลายเกราะชั่วคราว"
+        },
+        {
+          "id": "ravager.active.2",
+          "name_th": "Leap Break",
+          "effect_proposal": "กระโดดจุดปลอดภัยมีรัศมีเตือน"
+        },
+        {
+          "id": "ravager.active.3",
+          "name_th": "Momentum",
+          "effect_proposal": "เร่งสกิลถัดไปจากเคลื่อนที่ถูก"
+        }
+      ],
+      "capstone_concept": {
+        "name_th": "Breaking Wave",
+        "effect_proposal": "กวาดแนวเมื่อสะสมจังหวะครบ"
+      },
+      "trial_concept": "ทำลายแนวป้องกันโดยไม่โดนวงโต้กลับ",
+      "production_class_id": null,
+      "status": "DESIGN_ONLY",
+      "base_class_id": "warrior",
+      "next_choices": []
+    },
+    {
+      "id": "warborn_champion",
+      "tier": 3,
+      "parent_id": "berserker",
+      "name_th": "แชมเปียนแห่งสงคราม",
+      "name_en": "Warborn Champion",
+      "unlock_level": 70,
+      "role": "ประชิดทนทาน/พาทีมสู้",
+      "active_ability_concepts": [
+        {
+          "id": "warborn_champion.active.1",
+          "name_th": "Battle Cry",
+          "effect_proposal": "บัฟสั้นหนึ่งชนิดต่อทีม"
+        },
+        {
+          "id": "warborn_champion.active.2",
+          "name_th": "Endure",
+          "effect_proposal": "รับแรงปะทะมีขีดจำกัด"
+        },
+        {
+          "id": "warborn_champion.active.3",
+          "name_th": "Final Drive",
+          "effect_proposal": "โจมตีช่วงเปิดจุดอ่อน"
+        }
+      ],
+      "capstone_concept": {
+        "name_th": "Stand Together",
+        "effect_proposal": "ได้แรงจากเพื่อนยังรอด ไม่จากการเสียสละเพื่อน"
+      },
+      "trial_concept": "ชนะด้วยการรักษากำลังพล ไม่ใช่ดาเมจสูงสุด",
+      "production_class_id": null,
+      "status": "DESIGN_ONLY",
+      "base_class_id": "warrior",
+      "next_choices": []
+    },
+    {
+      "id": "sword_saint",
+      "tier": 3,
+      "parent_id": "duelist",
+      "name_th": "จอมดาบ",
+      "name_en": "Sword Saint",
+      "unlock_level": 70,
+      "role": "ตอบโต้แม่นยำ",
+      "active_ability_concepts": [
+        {
+          "id": "sword_saint.active.1",
+          "name_th": "Still Blade",
+          "effect_proposal": "ตั้งรับรอจังหวะ"
+        },
+        {
+          "id": "sword_saint.active.2",
+          "name_th": "Return Stroke",
+          "effect_proposal": "โจมตีตอบโต้"
+        },
+        {
+          "id": "sword_saint.active.3",
+          "name_th": "Clear Horizon",
+          "effect_proposal": "แนวดาบสั้นที่อ่านง่าย"
+        }
+      ],
+      "capstone_concept": {
+        "name_th": "One Perfect Cut",
+        "effect_proposal": "จังหวะจบหลังขัดท่าบอสที่กำหนด"
+      },
+      "trial_concept": "ผ่านดวลสามท่าที่ใช้การอ่านสัญญาณแทนกดรัว",
+      "production_class_id": null,
+      "status": "DESIGN_ONLY",
+      "base_class_id": "warrior",
+      "next_choices": []
+    },
+    {
+      "id": "blade_dancer",
+      "tier": 3,
+      "parent_id": "duelist",
+      "name_th": "นักร่ายรำดาบ",
+      "name_en": "Blade Dancer",
+      "unlock_level": 70,
+      "role": "เคลื่อนที่/คอมโบ",
+      "active_ability_concepts": [
+        {
+          "id": "blade_dancer.active.1",
+          "name_th": "Petal Step",
+          "effect_proposal": "ก้าวหลบระยะสั้น"
+        },
+        {
+          "id": "blade_dancer.active.2",
+          "name_th": "Twin Arc",
+          "effect_proposal": "สองแนวโจมตีต่อเนื่อง"
+        },
+        {
+          "id": "blade_dancer.active.3",
+          "name_th": "Echo Cut",
+          "effect_proposal": "รอยดาบภาพลวงที่ไม่เป็น NPC ถาวร"
+        }
+      ],
+      "capstone_concept": {
+        "name_th": "Waltz of Steel",
+        "effect_proposal": "ลำดับสามจังหวะมีเวลาหยุดพัก"
+      },
+      "trial_concept": "เคลื่อนผ่านสนามวงโจมตีโดยยังช่วยเป้าหมายภารกิจ",
+      "production_class_id": null,
+      "status": "DESIGN_ONLY",
+      "base_class_id": "warrior",
+      "next_choices": []
+    },
+    {
+      "id": "beast_warden",
+      "tier": 3,
+      "parent_id": "ranger",
+      "name_th": "ผู้พิทักษ์พงไพร",
+      "name_en": "Beast Warden",
+      "unlock_level": 70,
+      "role": "ควบคุมพื้นที่/คู่หูธรรมชาติ",
+      "active_ability_concepts": [
+        {
+          "id": "beast_warden.active.1",
+          "name_th": "Spirit Pounce",
+          "effect_proposal": "สัตว์วิญญาณเป็นเอฟเฟกต์สกิลชั่วคราว"
+        },
+        {
+          "id": "beast_warden.active.2",
+          "name_th": "Briar Snare",
+          "effect_proposal": "พื้นที่ชะลอ"
+        },
+        {
+          "id": "beast_warden.active.3",
+          "name_th": "Wild Shelter",
+          "effect_proposal": "ที่กำบังเล็ก"
+        }
+      ],
+      "capstone_concept": {
+        "name_th": "Pact of the Grove",
+        "effect_proposal": "พลังพิทักษ์จากภารกิจ ไม่เปิดสัตว์ติดตามไม่จำกัด"
+      },
+      "trial_concept": "แก้เหตุสัตว์คลุ้มคลั่งโดยทำลายตราควบคุมแทนฆ่าทุกตัว",
+      "production_class_id": null,
+      "status": "DESIGN_ONLY",
+      "base_class_id": "archer",
+      "next_choices": []
+    },
+    {
+      "id": "windstrider",
+      "tier": 3,
+      "parent_id": "ranger",
+      "name_th": "ผู้ย่างลม",
+      "name_en": "Windstrider",
+      "unlock_level": 70,
+      "role": "ยิงเคลื่อนที่/ช่วยเส้นทาง",
+      "active_ability_concepts": [
+        {
+          "id": "windstrider.active.1",
+          "name_th": "Gale Shot",
+          "effect_proposal": "ผลักมอนสเตอร์ที่ผลักได้"
+        },
+        {
+          "id": "windstrider.active.2",
+          "name_th": "Wind Step",
+          "effect_proposal": "เคลื่อนสั้นอย่างปลอดภัย"
+        },
+        {
+          "id": "windstrider.active.3",
+          "name_th": "Tailwind",
+          "effect_proposal": "เร่งทีมเฉพาะเขตจำกัด"
+        }
+      ],
+      "capstone_concept": {
+        "name_th": "Eye of the Gale",
+        "effect_proposal": "ยิงคุมพื้นที่เมื่อเลือกตำแหน่งถูก"
+      },
+      "trial_concept": "ข้ามสะพานลมและนำขบวนผ่านกับดัก",
+      "production_class_id": null,
+      "status": "DESIGN_ONLY",
+      "base_class_id": "archer",
+      "next_choices": []
+    },
+    {
+      "id": "deadeye",
+      "tier": 3,
+      "parent_id": "marksman",
+      "name_th": "เนตรพิฆาต",
+      "name_en": "Deadeye",
+      "unlock_level": 70,
+      "role": "ยิงเป้าหมายสำคัญ",
+      "active_ability_concepts": [
+        {
+          "id": "deadeye.active.1",
+          "name_th": "Priority Shot",
+          "effect_proposal": "ยิงเป้าที่ยืนยันไว้"
+        },
+        {
+          "id": "deadeye.active.2",
+          "name_th": "Patient Aim",
+          "effect_proposal": "ชาร์จพร้อมยกเลิกได้"
+        },
+        {
+          "id": "deadeye.active.3",
+          "name_th": "Weakpoint Volley",
+          "effect_proposal": "โจมตีจุดอ่อนขนาดสัมผัสง่าย"
+        }
+      ],
+      "capstone_concept": {
+        "name_th": "Decisive Arrow",
+        "effect_proposal": "รอบยิงพิเศษหลังทำกลไกสำเร็จ"
+      },
+      "trial_concept": "สกัดผู้ร่ายก่อนเวลาพร้อมไม่ทำร้ายตัวลวง",
+      "production_class_id": null,
+      "status": "DESIGN_ONLY",
+      "base_class_id": "archer",
+      "next_choices": []
+    },
+    {
+      "id": "arcane_sniper",
+      "tier": 3,
+      "parent_id": "marksman",
+      "name_th": "พลธนูอาคม",
+      "name_en": "Arcane Sniper",
+      "unlock_level": 70,
+      "role": "ยิงตราเวท/แก้เกราะ",
+      "active_ability_concepts": [
+        {
+          "id": "arcane_sniper.active.1",
+          "name_th": "Rune Arrow",
+          "effect_proposal": "ลูกศรเลือกคุณสมบัติก่อนยิง"
+        },
+        {
+          "id": "arcane_sniper.active.2",
+          "name_th": "Ward Pierce",
+          "effect_proposal": "ผ่านโล่ชนิดที่กำหนด"
+        },
+        {
+          "id": "arcane_sniper.active.3",
+          "name_th": "Sigil Pin",
+          "effect_proposal": "ตราตรึงเป้า"
+        }
+      ],
+      "capstone_concept": {
+        "name_th": "Astral Line",
+        "effect_proposal": "ยิงแนวหลายเป้าแบบจำกัดจำนวน"
+      },
+      "trial_concept": "จับคู่ตรากับเกราะเป้าหมายก่อนปล่อยลูกศร",
+      "production_class_id": null,
+      "status": "DESIGN_ONLY",
+      "base_class_id": "archer",
+      "next_choices": []
+    },
+    {
+      "id": "pyromancer",
+      "tier": 3,
+      "parent_id": "elementalist",
+      "name_th": "จอมเวทอัคคี",
+      "name_en": "Pyromancer",
+      "unlock_level": 70,
+      "role": "ไฟพื้นที่/แรงระเบิด",
+      "active_ability_concepts": [
+        {
+          "id": "pyromancer.active.1",
+          "name_th": "Cinder Field",
+          "effect_proposal": "ไฟพื้นมีเวลาและขอบชัด"
+        },
+        {
+          "id": "pyromancer.active.2",
+          "name_th": "Flame Lance",
+          "effect_proposal": "แนวไฟเจาะ"
+        },
+        {
+          "id": "pyromancer.active.3",
+          "name_th": "Ember Recall",
+          "effect_proposal": "จุดระเบิดร่องรอยที่ตัวเองวาง"
+        }
+      ],
+      "capstone_concept": {
+        "name_th": "Phoenix Dawn",
+        "effect_proposal": "คลื่นไฟที่ไม่ชุบชีวิตหรือย้อนเซฟ"
+      },
+      "trial_concept": "ควบคุมไฟเพื่อช่วยคนและตัดวงพลังบอส",
+      "production_class_id": null,
+      "status": "DESIGN_ONLY",
+      "base_class_id": "mage",
+      "next_choices": []
+    },
+    {
+      "id": "frostweaver",
+      "tier": 3,
+      "parent_id": "elementalist",
+      "name_th": "ผู้ถักเหมันต์",
+      "name_en": "Frostweaver",
+      "unlock_level": 70,
+      "role": "ชะลอ/ป้องกัน",
+      "active_ability_concepts": [
+        {
+          "id": "frostweaver.active.1",
+          "name_th": "Glacial Path",
+          "effect_proposal": "แนวน้ำแข็งชะลอ"
+        },
+        {
+          "id": "frostweaver.active.2",
+          "name_th": "Ice Ward",
+          "effect_proposal": "โล่น้ำแข็ง"
+        },
+        {
+          "id": "frostweaver.active.3",
+          "name_th": "Shatter",
+          "effect_proposal": "ปิดคอมโบเฉพาะสถานะที่อนุญาต"
+        }
+      ],
+      "capstone_concept": {
+        "name_th": "Winter Sanctuary",
+        "effect_proposal": "เขตปลอดภัยต้านคลื่นบอสชั่วคราว"
+      },
+      "trial_concept": "แช่แข็งช่องทางอันตรายโดยไม่ปิดทางหนีของเพื่อน",
+      "production_class_id": null,
+      "status": "DESIGN_ONLY",
+      "base_class_id": "mage",
+      "next_choices": []
+    },
+    {
+      "id": "chronomancer",
+      "tier": 3,
+      "parent_id": "arcanist",
+      "name_th": "นักเวทกาล",
+      "name_en": "Chronomancer",
+      "unlock_level": 70,
+      "role": "ปรับจังหวะ/สนับสนุน",
+      "active_ability_concepts": [
+        {
+          "id": "chronomancer.active.1",
+          "name_th": "Haste Sigil",
+          "effect_proposal": "เร่งจังหวะในขอบเขตที่มีเพดาน"
+        },
+        {
+          "id": "chronomancer.active.2",
+          "name_th": "Slow Field",
+          "effect_proposal": "ชะลอศัตรูตามความต้านทาน"
+        },
+        {
+          "id": "chronomancer.active.3",
+          "name_th": "Delayed Echo",
+          "effect_proposal": "เอฟเฟกต์ซ้ำลดกำลังที่ server กำหนด"
+        }
+      ],
+      "capstone_concept": {
+        "name_th": "Moment of Clarity",
+        "effect_proposal": "หน้าต่างปรับจังหวะ ไม่ย้อนเงิน ไอเทม เซฟ หรือเหตุการณ์รางวัล"
+      },
+      "trial_concept": "ซิงก์กลไกนาฬิกาจำลองโดยไม่ใช้การย้อน state ของโลกจริง",
+      "production_class_id": null,
+      "status": "DESIGN_ONLY",
+      "base_class_id": "mage",
+      "next_choices": []
+    },
+    {
+      "id": "spellbinder",
+      "tier": 3,
+      "parent_id": "arcanist",
+      "name_th": "จอมผนึก",
+      "name_en": "Spellbinder",
+      "unlock_level": 70,
+      "role": "ผนึก/จัดพื้นที่",
+      "active_ability_concepts": [
+        {
+          "id": "spellbinder.active.1",
+          "name_th": "Binding Seal",
+          "effect_proposal": "หยุดเป้าที่อนุญาตสั้น ๆ"
+        },
+        {
+          "id": "spellbinder.active.2",
+          "name_th": "Arcane Lattice",
+          "effect_proposal": "แนวตราป้องกัน"
+        },
+        {
+          "id": "spellbinder.active.3",
+          "name_th": "Unravel",
+          "effect_proposal": "ลดกลไกโล่ศัตรู"
+        }
+      ],
+      "capstone_concept": {
+        "name_th": "The Final Sigil",
+        "effect_proposal": "ผนึกบอสได้เฉพาะช่วงที่กลไกเปิด"
+      },
+      "trial_concept": "อ่านและต่อวงผนึกภายใต้การโจมตี",
+      "production_class_id": null,
+      "status": "DESIGN_ONLY",
+      "base_class_id": "mage",
+      "next_choices": []
+    },
+    {
+      "id": "high_priest",
+      "tier": 3,
+      "parent_id": "cleric",
+      "name_th": "มหานักบวช",
+      "name_en": "High Priest",
+      "unlock_level": 70,
+      "role": "รักษาทีมต่อเนื่อง",
+      "active_ability_concepts": [
+        {
+          "id": "high_priest.active.1",
+          "name_th": "Grand Mend",
+          "effect_proposal": "ฮีลทีมระยะจำกัด"
+        },
+        {
+          "id": "high_priest.active.2",
+          "name_th": "Purifying Rain",
+          "effect_proposal": "ล้างสถานะพร้อม cooldown"
+        },
+        {
+          "id": "high_priest.active.3",
+          "name_th": "Vigil",
+          "effect_proposal": "โล่เพื่อนบาดเจ็บมาก"
+        }
+      ],
+      "capstone_concept": {
+        "name_th": "Light Unbroken",
+        "effect_proposal": "ช่วยทีมรอดหนึ่งหน้าต่าง ไม่อมตะ"
+      },
+      "trial_concept": "บริหารการฮีล ล้างสถานะ และตำแหน่งโดยมีทรัพยากรฝึกจำกัด",
+      "production_class_id": null,
+      "status": "DESIGN_ONLY",
+      "base_class_id": "priest",
+      "next_choices": []
+    },
+    {
+      "id": "oracle",
+      "tier": 3,
+      "parent_id": "cleric",
+      "name_th": "ผู้หยั่งรู้",
+      "name_en": "Oracle",
+      "unlock_level": 70,
+      "role": "โล่ล่วงหน้า/อ่านภัย",
+      "active_ability_concepts": [
+        {
+          "id": "oracle.active.1",
+          "name_th": "Premonition",
+          "effect_proposal": "ชี้ภัยที่ server เปิดเผย"
+        },
+        {
+          "id": "oracle.active.2",
+          "name_th": "Fate Ward",
+          "effect_proposal": "โล่เตรียมรับการโจมตี"
+        },
+        {
+          "id": "oracle.active.3",
+          "name_th": "Guiding Star",
+          "effect_proposal": "จุดนัดหมายช่วยทีม"
+        }
+      ],
+      "capstone_concept": {
+        "name_th": "A Better Tomorrow",
+        "effect_proposal": "ป้องกันคลื่นที่คาดการณ์ ไม่เลือกสุ่มหลบทุกอย่าง"
+      },
+      "trial_concept": "อ่านสัญญาณและป้องกันก่อนภัยมา แทนรอ HP ลด",
+      "production_class_id": null,
+      "status": "DESIGN_ONLY",
+      "base_class_id": "priest",
+      "next_choices": []
+    },
+    {
+      "id": "judicator",
+      "tier": 3,
+      "parent_id": "inquisitor",
+      "name_th": "ตุลาการแสง",
+      "name_en": "Judicator",
+      "unlock_level": 70,
+      "role": "สนับสนุนเชิงรุก/ลบคำสาป",
+      "active_ability_concepts": [
+        {
+          "id": "judicator.active.1",
+          "name_th": "Radiant Verdict",
+          "effect_proposal": "โจมตีเป้าติดตรา"
+        },
+        {
+          "id": "judicator.active.2",
+          "name_th": "Merciful Seal",
+          "effect_proposal": "ยับยั้งเวทที่ขัดได้"
+        },
+        {
+          "id": "judicator.active.3",
+          "name_th": "Shared Resolve",
+          "effect_proposal": "บัฟทีมแบบไม่ซ้อนอนันต์"
+        }
+      ],
+      "capstone_concept": {
+        "name_th": "Judgment Without Chains",
+        "effect_proposal": "ปลดคำสาปโดยรักษาคนที่ถูกควบคุม"
+      },
+      "trial_concept": "แยกต้นเหตุจากผู้ถูกควบคุมและชนะโดยช่วยผู้บริสุทธิ์",
+      "production_class_id": null,
+      "status": "DESIGN_ONLY",
+      "base_class_id": "priest",
+      "next_choices": []
+    },
+    {
+      "id": "soul_shepherd",
+      "tier": 3,
+      "parent_id": "inquisitor",
+      "name_th": "ผู้นำทางวิญญาณ",
+      "name_en": "Soul Shepherd",
+      "unlock_level": 70,
+      "role": "ฮีล/ช่วยเพื่อนล้ม",
+      "active_ability_concepts": [
+        {
+          "id": "soul_shepherd.active.1",
+          "name_th": "Spirit Lantern",
+          "effect_proposal": "จุดฟื้นฟู"
+        },
+        {
+          "id": "soul_shepherd.active.2",
+          "name_th": "Return Path",
+          "effect_proposal": "ช่วยลดเวลาฟื้นเฉพาะเงื่อนไขที่ปลอดภัย"
+        },
+        {
+          "id": "soul_shepherd.active.3",
+          "name_th": "Memory Veil",
+          "effect_proposal": "โล่ชั่วคราวจากตำแหน่ง"
+        }
+      ],
+      "capstone_concept": {
+        "name_th": "Never Forgotten",
+        "effect_proposal": "การกู้เพื่อนจำกัดต่อ encounter ไม่วนฟาร์มคืนชีพ"
+      },
+      "trial_concept": "พาความทรงจำหลงทางกลับโดยไม่ปล่อยตัวประกันถูกลบ",
+      "production_class_id": null,
+      "status": "DESIGN_ONLY",
+      "base_class_id": "priest",
+      "next_choices": []
+    }
+  ]
+}

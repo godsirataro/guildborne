@@ -1,0 +1,57 @@
+C:\Work\MySelf\Guildborne\tools\blender_item_kit.py:14: DeprecationWarning: 'Material.use_nodes' is expected to be removed in Blender 6.0
+  m=bpy.data.materials.new(name);m.use_nodes=True;m.diffuse_color=(*map(linear,rgb),1)
+C:\Work\MySelf\Guildborne\tools\blender_item_kit.py:18: DeprecationWarning: 'World.use_nodes' is expected to be removed in Blender 6.0
+  scene=bpy.context.scene;scene.world=bpy.data.worlds.new('InventoryStudio');scene.world.use_nodes=True
+
+FBX export starting... 'C:\\Work\\MySelf\\Guildborne\\assets\\uat01\\city-interior-kit\\guild_office.fbx'
+export finished in 0.0097 sec.
+INFO Draco is available, use library at C:\Program Files\Blender Foundation\Blender 5.2\5.2\scripts\addons_core\io_scene_gltf2\bf_intern_draco_bridge.dll
+INFO MeshOptimizer is available, use library at C:\Program Files\Blender Foundation\Blender 5.2\5.2\scripts\addons_core\io_scene_gltf2\bf_intern_meshopt_bridge.dll
+02:37:46 | INFO: Starting glTF 2.0 export
+02:37:46 | INFO: Extracting primitive: Cube
+02:37:46 | INFO: Primitives created: 7
+02:37:46 | INFO: Finished glTF 2.0 export in 0.061391353607177734 s
+00:04.219  render           | Saved: 'C:\Work\MySelf\Guildborne\assets\uat01\city-interior-kit\guild_office.png'
+
+
+FBX export starting... 'C:\\Work\\MySelf\\Guildborne\\assets\\uat01\\city-interior-kit\\hearth_tavern.fbx'
+export finished in 0.0049 sec.
+02:37:47 | INFO: Starting glTF 2.0 export
+02:37:47 | INFO: Extracting primitive: Cube.031
+02:37:47 | INFO: Primitives created: 5
+02:37:47 | INFO: Finished glTF 2.0 export in 0.01222372055053711 s
+00:05.297  render           | Saved: 'C:\Work\MySelf\Guildborne\assets\uat01\city-interior-kit\hearth_tavern.png'
+
+
+FBX export starting... 'C:\\Work\\MySelf\\Guildborne\\assets\\uat01\\city-interior-kit\\exchange_office.fbx'
+export finished in 0.0061 sec.
+02:37:48 | INFO: Starting glTF 2.0 export
+02:37:48 | INFO: Extracting primitive: Cube.067
+02:37:48 | INFO: Primitives created: 6
+02:37:48 | INFO: Finished glTF 2.0 export in 0.016753196716308594 s
+00:06.453  render           | Saved: 'C:\Work\MySelf\Guildborne\assets\uat01\city-interior-kit\exchange_office.png'
+
+
+FBX export starting... 'C:\\Work\\MySelf\\Guildborne\\assets\\uat01\\city-interior-kit\\forge_workshop.fbx'
+export finished in 0.0092 sec.
+02:37:49 | INFO: Starting glTF 2.0 export
+02:37:49 | INFO: Extracting primitive: Cube.097
+02:37:49 | INFO: Primitives created: 5
+02:37:49 | INFO: Finished glTF 2.0 export in 0.011445283889770508 s
+00:07.578  render           | Saved: 'C:\Work\MySelf\Guildborne\assets\uat01\city-interior-kit\forge_workshop.png'
+
+
+FBX export starting... 'C:\\Work\\MySelf\\Guildborne\\assets\\uat01\\city-interior-kit\\alchemy_study.fbx'
+export finished in 0.0098 sec.
+02:37:50 | INFO: Starting glTF 2.0 export
+02:37:50 | INFO: Extracting primitive: Cube.120
+02:37:50 | INFO: Primitives created: 8
+02:37:50 | INFO: Finished glTF 2.0 export in 0.019427061080932617 s
+00:08.797  render           | Saved: 'C:\Work\MySelf\Guildborne\assets\uat01\city-interior-kit\alchemy_study.png'
+00:17.719  render           | Saved: 'C:\Work\MySelf\Guildborne\assets\uat01\city-interior-kit\preview.png'
+
+Info: Saved as "Guildborne_City_Interiors.blend"
+ITEM_KIT_COMPLETE 5 2028 triangles
+Blender 5.2.1 LTS (hash 9e2066aef7ef built 2026-08-25 02:38:20)
+
+Blender quit

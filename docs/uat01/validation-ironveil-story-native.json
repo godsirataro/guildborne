@@ -1,0 +1,20 @@
+{
+  "status": "PASS",
+  "scope": "isolated native geometry; no player movement or rewards",
+  "models": 6,
+  "parts": 210,
+  "markers": 29,
+  "clearanceChecks": 58,
+  "pathfindingRoutes": 29,
+  "actualPlayerWalk": false,
+  "questBinding": false,
+  "fixes": [
+    "Moved reagent approach from z11 to z12 to clear desk body volume"
+  ],
+  "exports": {
+    "FBX": 6,
+    "GLB": 6,
+    "roundtrip": "PASS",
+    "triangles": 2520
+  }
+}

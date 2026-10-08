@@ -1,0 +1,9 @@
+{
+  "content": [
+    {
+      "type": "text",
+      "text": "[Guildborne] Phase 1 ready · Studio memory · not saved after Stop\n[Guildborne] profile_loaded {\"revision\":0}\n[Guildborne] session_started []\n[Guildborne] Phase 1 client ready\n[Guildborne] profile_saved {\"action\":\"SelectPlayerClass\",\"revision\":1}\n[Guildborne] player_class_selected {\"classId\":\"Warrior\"}\n[Guildborne] profile_saved {\"action\":\"TravelZone\",\"revision\":2}\n[Guildborne] profile_saved {\"action\":\"Recruit\",\"revision\":3}\n[Guildborne] adventurer_recruited {\"classId\":\"Warrior\"}\n[Guildborne] profile_saved {\"action\":\"UpdateParty\",\"revision\":4}\n[Guildborne] party_created []\n[Guildborne] profile_saved {\"action\":\"UpdateParty\",\"revision\":5}\n[Guildborne] party_created []\n[Guildborne] profile_saved {\"action\":\"StartQuest\",\"revision\":6}\n[Guildborne] quest_started {\"questId\":\"trail_watch\"}\n[Guildborne] profile_saved {\"action\":\"CompleteQuest\",\"revision\":7}\n[Guildborne] gold_created {\"amount\":30,\"reason\":\"QuestReward\"}\n[Guildborne] item_acquired {\"quantity\":1,\"itemId\":\"training_sword\"}\n[Guildborne] item_acquired {\"quantity\":2,\"itemId\":\"herb\"}\n[Guildborne] quest_completed {\"questId\":\"trail_watch\"}\n[Guildborne] profile_saved {\"action\":\"Recruit\",\"revision\":8}\n[Guildborne] gold_destroyed {\"amount\":20,\"reason\":\"Recruitment\"}\n[Guildborne] item_acquired {\"quantity\":1,\"itemId\":\"apprentice_staff\"}\n[Guildborne] adventurer_recruited {\"classId\":\"Priest\"}\n[Guildborne] profile_saved {\"action\":\"UpdateParty\",\"revision\":9}\n[Guildborne] party_updated []\n[Guildborne] profile_saved {\"action\":\"CombatReward\",\"revision\":10}\n[Guildborne] gold_created {\"amount\":3,\"reason\":\"encounter:greenwood_scout\"}\n[Guildborne] combat_reward []\n[Guildborne] profile_saved {\"action\":\"TravelZone\",\"revision\":11}"
+    }
+  ],
+  "isError": false
+}

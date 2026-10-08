@@ -1,0 +1,141 @@
+{
+  "date": "2026-10-03",
+  "placeId": 0,
+  "studioId": "51e7899b-3097-4099-b85b-3f24b848bf35",
+  "prompts": 33,
+  "arrival": [
+    2000,
+    2.998,
+    108
+  ],
+  "actualKeyboardETravel": true,
+  "walkMethod": "character_navigation speed_multiplier=1; read-only position checks",
+  "walks": [
+    {
+      "name": "Market",
+      "navigation": {
+        "content": [
+          {
+            "type": "text",
+            "text": "Success"
+          }
+        ],
+        "isError": false
+      },
+      "actual": {
+        "content": [
+          {
+            "type": "text",
+            "text": "{\"health\":100,\"position\":\"1942.18115234375, 3.298025369644165, 28.6219425201416\"}"
+          }
+        ],
+        "isError": false
+      }
+    },
+    {
+      "name": "Forge",
+      "navigation": {
+        "content": [
+          {
+            "type": "text",
+            "text": "Success"
+          }
+        ],
+        "isError": false
+      },
+      "actual": {
+        "content": [
+          {
+            "type": "text",
+            "text": "{\"health\":100,\"position\":\"2057.75634765625, 3.298025369644165, 28.731416702270508\"}"
+          }
+        ],
+        "isError": false
+      }
+    },
+    {
+      "name": "Tavern",
+      "navigation": {
+        "content": [
+          {
+            "type": "text",
+            "text": "Success"
+          }
+        ],
+        "isError": false
+      },
+      "actual": {
+        "content": [
+          {
+            "type": "text",
+            "text": "{\"health\":100,\"position\":\"1942.1983642578125, 3.298025369644165, -27.349735260009766\"}"
+          }
+        ],
+        "isError": false
+      }
+    },
+    {
+      "name": "QuestHall",
+      "navigation": {
+        "content": [
+          {
+            "type": "text",
+            "text": "Success"
+          }
+        ],
+        "isError": false
+      },
+      "actual": {
+        "content": [
+          {
+            "type": "text",
+            "text": "{\"health\":100,\"position\":\"2057.7666015625, 3.298025369644165, -27.299226760864258\"}"
+          }
+        ],
+        "isError": false
+      }
+    },
+    {
+      "name": "Landmark",
+      "navigation": {
+        "content": [
+          {
+            "type": "text",
+            "text": "Success"
+          }
+        ],
+        "isError": false
+      },
+      "actual": {
+        "content": [
+          {
+            "type": "text",
+            "text": "{\"health\":100,\"position\":\"2000.3787841796875, 3.9980251789093018, -69.49141693115234\"}"
+          }
+        ],
+        "isError": false
+      }
+    },
+    {
+      "name": "GuildIslandPortal",
+      "navigation": {
+        "content": [
+          {
+            "type": "text",
+            "text": "Success"
+          }
+        ],
+        "isError": false
+      },
+      "actual": {
+        "content": [
+          {
+            "type": "text",
+            "text": "{\"health\":100,\"position\":\"2057.3330078125, 3.3980252742767334, 87.98020935058594\"}"
+          }
+        ],
+        "isError": false
+      }
+    }
+  ]
+}

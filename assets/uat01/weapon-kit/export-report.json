@@ -1,0 +1,57 @@
+[
+  {
+    "id": "watchblade",
+    "triangles": 112,
+    "bounds": [
+      1.8522670269012451,
+      0.4950000047683716,
+      4.474558353424072
+    ],
+    "pivot": "grip",
+    "robloxMeshAssetId": null
+  },
+  {
+    "id": "oathblade",
+    "triangles": 136,
+    "bounds": [
+      1.8522670269012451,
+      0.4950000047683716,
+      4.474558353424072
+    ],
+    "pivot": "grip",
+    "robloxMeshAssetId": null
+  },
+  {
+    "id": "yew_longbow",
+    "triangles": 120,
+    "bounds": [
+      1.3632529973983765,
+      0.3799999952316284,
+      4.915525436401367
+    ],
+    "pivot": "grip",
+    "robloxMeshAssetId": null
+  },
+  {
+    "id": "tide_staff",
+    "triangles": 120,
+    "bounds": [
+      1.5762420892715454,
+      0.550000011920929,
+      5.527333736419678
+    ],
+    "pivot": "grip",
+    "robloxMeshAssetId": null
+  },
+  {
+    "id": "dawn_crozier",
+    "triangles": 144,
+    "bounds": [
+      1.34782075881958,
+      0.45000001788139343,
+      5.608911037445068
+    ],
+    "pivot": "grip",
+    "robloxMeshAssetId": null
+  }
+]

@@ -1,0 +1,801 @@
+{
+  "schema": 1,
+  "fps": 30,
+  "assets": [
+    {
+      "id": "knight_01",
+      "rigType": "Humanoid",
+      "region": "Knight",
+      "role": "Melee",
+      "bones": 16,
+      "triangles": 348,
+      "vertices": 232,
+      "restFiles": [
+        "knight_01_Rest.fbx",
+        "knight_01_Rest.glb"
+      ],
+      "clips": [
+        {
+          "name": "Idle",
+          "file": "knight_01_Idle.fbx",
+          "frames": 61,
+          "seconds": 2,
+          "loop": true,
+          "rootMotion": false,
+          "robloxAnimationId": null
+        },
+        {
+          "name": "Walk",
+          "file": "knight_01_Walk.fbx",
+          "frames": 31,
+          "seconds": 1,
+          "loop": true,
+          "rootMotion": false,
+          "robloxAnimationId": null
+        },
+        {
+          "name": "Attack",
+          "file": "knight_01_Attack.fbx",
+          "frames": 37,
+          "seconds": 1.2,
+          "loop": false,
+          "rootMotion": false,
+          "robloxAnimationId": null
+        },
+        {
+          "name": "Hit",
+          "file": "knight_01_Hit.fbx",
+          "frames": 16,
+          "seconds": 0.5,
+          "loop": false,
+          "rootMotion": false,
+          "robloxAnimationId": null
+        }
+      ],
+      "studioImported": false,
+      "liveEncounterBound": false
+    },
+    {
+      "id": "knight_02",
+      "rigType": "Humanoid",
+      "region": "Knight",
+      "role": "Melee",
+      "bones": 16,
+      "triangles": 360,
+      "vertices": 240,
+      "restFiles": [
+        "knight_02_Rest.fbx",
+        "knight_02_Rest.glb"
+      ],
+      "clips": [
+        {
+          "name": "Idle",
+          "file": "knight_02_Idle.fbx",
+          "frames": 61,
+          "seconds": 2,
+          "loop": true,
+          "rootMotion": false,
+          "robloxAnimationId": null
+        },
+        {
+          "name": "Walk",
+          "file": "knight_02_Walk.fbx",
+          "frames": 31,
+          "seconds": 1,
+          "loop": true,
+          "rootMotion": false,
+          "robloxAnimationId": null
+        },
+        {
+          "name": "Attack",
+          "file": "knight_02_Attack.fbx",
+          "frames": 37,
+          "seconds": 1.2,
+          "loop": false,
+          "rootMotion": false,
+          "robloxAnimationId": null
+        },
+        {
+          "name": "Hit",
+          "file": "knight_02_Hit.fbx",
+          "frames": 16,
+          "seconds": 0.5,
+          "loop": false,
+          "rootMotion": false,
+          "robloxAnimationId": null
+        }
+      ],
+      "studioImported": false,
+      "liveEncounterBound": false
+    },
+    {
+      "id": "knight_03",
+      "rigType": "Humanoid",
+      "region": "Knight",
+      "role": "Melee",
+      "bones": 16,
+      "triangles": 360,
+      "vertices": 240,
+      "restFiles": [
+        "knight_03_Rest.fbx",
+        "knight_03_Rest.glb"
+      ],
+      "clips": [
+        {
+          "name": "Idle",
+          "file": "knight_03_Idle.fbx",
+          "frames": 61,
+          "seconds": 2,
+          "loop": true,
+          "rootMotion": false,
+          "robloxAnimationId": null
+        },
+        {
+          "name": "Walk",
+          "file": "knight_03_Walk.fbx",
+          "frames": 31,
+          "seconds": 1,
+          "loop": true,
+          "rootMotion": false,
+          "robloxAnimationId": null
+        },
+        {
+          "name": "Attack",
+          "file": "knight_03_Attack.fbx",
+          "frames": 37,
+          "seconds": 1.2,
+          "loop": false,
+          "rootMotion": false,
+          "robloxAnimationId": null
+        },
+        {
+          "name": "Hit",
+          "file": "knight_03_Hit.fbx",
+          "frames": 16,
+          "seconds": 0.5,
+          "loop": false,
+          "rootMotion": false,
+          "robloxAnimationId": null
+        }
+      ],
+      "studioImported": false,
+      "liveEncounterBound": false
+    },
+    {
+      "id": "warrior_01",
+      "rigType": "Humanoid",
+      "region": "Warrior",
+      "role": "Melee",
+      "bones": 16,
+      "triangles": 324,
+      "vertices": 216,
+      "restFiles": [
+        "warrior_01_Rest.fbx",
+        "warrior_01_Rest.glb"
+      ],
+      "clips": [
+        {
+          "name": "Idle",
+          "file": "warrior_01_Idle.fbx",
+          "frames": 61,
+          "seconds": 2,
+          "loop": true,
+          "rootMotion": false,
+          "robloxAnimationId": null
+        },
+        {
+          "name": "Walk",
+          "file": "warrior_01_Walk.fbx",
+          "frames": 31,
+          "seconds": 1,
+          "loop": true,
+          "rootMotion": false,
+          "robloxAnimationId": null
+        },
+        {
+          "name": "Attack",
+          "file": "warrior_01_Attack.fbx",
+          "frames": 37,
+          "seconds": 1.2,
+          "loop": false,
+          "rootMotion": false,
+          "robloxAnimationId": null
+        },
+        {
+          "name": "Hit",
+          "file": "warrior_01_Hit.fbx",
+          "frames": 16,
+          "seconds": 0.5,
+          "loop": false,
+          "rootMotion": false,
+          "robloxAnimationId": null
+        }
+      ],
+      "studioImported": false,
+      "liveEncounterBound": false
+    },
+    {
+      "id": "warrior_02",
+      "rigType": "Humanoid",
+      "region": "Warrior",
+      "role": "Melee",
+      "bones": 16,
+      "triangles": 336,
+      "vertices": 224,
+      "restFiles": [
+        "warrior_02_Rest.fbx",
+        "warrior_02_Rest.glb"
+      ],
+      "clips": [
+        {
+          "name": "Idle",
+          "file": "warrior_02_Idle.fbx",
+          "frames": 61,
+          "seconds": 2,
+          "loop": true,
+          "rootMotion": false,
+          "robloxAnimationId": null
+        },
+        {
+          "name": "Walk",
+          "file": "warrior_02_Walk.fbx",
+          "frames": 31,
+          "seconds": 1,
+          "loop": true,
+          "rootMotion": false,
+          "robloxAnimationId": null
+        },
+        {
+          "name": "Attack",
+          "file": "warrior_02_Attack.fbx",
+          "frames": 37,
+          "seconds": 1.2,
+          "loop": false,
+          "rootMotion": false,
+          "robloxAnimationId": null
+        },
+        {
+          "name": "Hit",
+          "file": "warrior_02_Hit.fbx",
+          "frames": 16,
+          "seconds": 0.5,
+          "loop": false,
+          "rootMotion": false,
+          "robloxAnimationId": null
+        }
+      ],
+      "studioImported": false,
+      "liveEncounterBound": false
+    },
+    {
+      "id": "warrior_03",
+      "rigType": "Humanoid",
+      "region": "Warrior",
+      "role": "Melee",
+      "bones": 16,
+      "triangles": 348,
+      "vertices": 232,
+      "restFiles": [
+        "warrior_03_Rest.fbx",
+        "warrior_03_Rest.glb"
+      ],
+      "clips": [
+        {
+          "name": "Idle",
+          "file": "warrior_03_Idle.fbx",
+          "frames": 61,
+          "seconds": 2,
+          "loop": true,
+          "rootMotion": false,
+          "robloxAnimationId": null
+        },
+        {
+          "name": "Walk",
+          "file": "warrior_03_Walk.fbx",
+          "frames": 31,
+          "seconds": 1,
+          "loop": true,
+          "rootMotion": false,
+          "robloxAnimationId": null
+        },
+        {
+          "name": "Attack",
+          "file": "warrior_03_Attack.fbx",
+          "frames": 37,
+          "seconds": 1.2,
+          "loop": false,
+          "rootMotion": false,
+          "robloxAnimationId": null
+        },
+        {
+          "name": "Hit",
+          "file": "warrior_03_Hit.fbx",
+          "frames": 16,
+          "seconds": 0.5,
+          "loop": false,
+          "rootMotion": false,
+          "robloxAnimationId": null
+        }
+      ],
+      "studioImported": false,
+      "liveEncounterBound": false
+    },
+    {
+      "id": "archer_01",
+      "rigType": "Humanoid",
+      "region": "Archer",
+      "role": "Ranged",
+      "bones": 16,
+      "triangles": 360,
+      "vertices": 240,
+      "restFiles": [
+        "archer_01_Rest.fbx",
+        "archer_01_Rest.glb"
+      ],
+      "clips": [
+        {
+          "name": "Idle",
+          "file": "archer_01_Idle.fbx",
+          "frames": 61,
+          "seconds": 2,
+          "loop": true,
+          "rootMotion": false,
+          "robloxAnimationId": null
+        },
+        {
+          "name": "Walk",
+          "file": "archer_01_Walk.fbx",
+          "frames": 31,
+          "seconds": 1,
+          "loop": true,
+          "rootMotion": false,
+          "robloxAnimationId": null
+        },
+        {
+          "name": "Attack",
+          "file": "archer_01_Attack.fbx",
+          "frames": 37,
+          "seconds": 1.2,
+          "loop": false,
+          "rootMotion": false,
+          "robloxAnimationId": null
+        },
+        {
+          "name": "Hit",
+          "file": "archer_01_Hit.fbx",
+          "frames": 16,
+          "seconds": 0.5,
+          "loop": false,
+          "rootMotion": false,
+          "robloxAnimationId": null
+        }
+      ],
+      "studioImported": false,
+      "liveEncounterBound": false
+    },
+    {
+      "id": "archer_02",
+      "rigType": "Humanoid",
+      "region": "Archer",
+      "role": "Ranged",
+      "bones": 16,
+      "triangles": 384,
+      "vertices": 256,
+      "restFiles": [
+        "archer_02_Rest.fbx",
+        "archer_02_Rest.glb"
+      ],
+      "clips": [
+        {
+          "name": "Idle",
+          "file": "archer_02_Idle.fbx",
+          "frames": 61,
+          "seconds": 2,
+          "loop": true,
+          "rootMotion": false,
+          "robloxAnimationId": null
+        },
+        {
+          "name": "Walk",
+          "file": "archer_02_Walk.fbx",
+          "frames": 31,
+          "seconds": 1,
+          "loop": true,
+          "rootMotion": false,
+          "robloxAnimationId": null
+        },
+        {
+          "name": "Attack",
+          "file": "archer_02_Attack.fbx",
+          "frames": 37,
+          "seconds": 1.2,
+          "loop": false,
+          "rootMotion": false,
+          "robloxAnimationId": null
+        },
+        {
+          "name": "Hit",
+          "file": "archer_02_Hit.fbx",
+          "frames": 16,
+          "seconds": 0.5,
+          "loop": false,
+          "rootMotion": false,
+          "robloxAnimationId": null
+        }
+      ],
+      "studioImported": false,
+      "liveEncounterBound": false
+    },
+    {
+      "id": "archer_03",
+      "rigType": "Humanoid",
+      "region": "Archer",
+      "role": "Ranged",
+      "bones": 16,
+      "triangles": 408,
+      "vertices": 272,
+      "restFiles": [
+        "archer_03_Rest.fbx",
+        "archer_03_Rest.glb"
+      ],
+      "clips": [
+        {
+          "name": "Idle",
+          "file": "archer_03_Idle.fbx",
+          "frames": 61,
+          "seconds": 2,
+          "loop": true,
+          "rootMotion": false,
+          "robloxAnimationId": null
+        },
+        {
+          "name": "Walk",
+          "file": "archer_03_Walk.fbx",
+          "frames": 31,
+          "seconds": 1,
+          "loop": true,
+          "rootMotion": false,
+          "robloxAnimationId": null
+        },
+        {
+          "name": "Attack",
+          "file": "archer_03_Attack.fbx",
+          "frames": 37,
+          "seconds": 1.2,
+          "loop": false,
+          "rootMotion": false,
+          "robloxAnimationId": null
+        },
+        {
+          "name": "Hit",
+          "file": "archer_03_Hit.fbx",
+          "frames": 16,
+          "seconds": 0.5,
+          "loop": false,
+          "rootMotion": false,
+          "robloxAnimationId": null
+        }
+      ],
+      "studioImported": false,
+      "liveEncounterBound": false
+    },
+    {
+      "id": "mage_01",
+      "rigType": "Humanoid",
+      "region": "Mage",
+      "role": "Spell",
+      "bones": 16,
+      "triangles": 336,
+      "vertices": 224,
+      "restFiles": [
+        "mage_01_Rest.fbx",
+        "mage_01_Rest.glb"
+      ],
+      "clips": [
+        {
+          "name": "Idle",
+          "file": "mage_01_Idle.fbx",
+          "frames": 61,
+          "seconds": 2,
+          "loop": true,
+          "rootMotion": false,
+          "robloxAnimationId": null
+        },
+        {
+          "name": "Walk",
+          "file": "mage_01_Walk.fbx",
+          "frames": 31,
+          "seconds": 1,
+          "loop": true,
+          "rootMotion": false,
+          "robloxAnimationId": null
+        },
+        {
+          "name": "Attack",
+          "file": "mage_01_Attack.fbx",
+          "frames": 37,
+          "seconds": 1.2,
+          "loop": false,
+          "rootMotion": false,
+          "robloxAnimationId": null
+        },
+        {
+          "name": "Hit",
+          "file": "mage_01_Hit.fbx",
+          "frames": 16,
+          "seconds": 0.5,
+          "loop": false,
+          "rootMotion": false,
+          "robloxAnimationId": null
+        }
+      ],
+      "studioImported": false,
+      "liveEncounterBound": false
+    },
+    {
+      "id": "mage_02",
+      "rigType": "Humanoid",
+      "region": "Mage",
+      "role": "Spell",
+      "bones": 16,
+      "triangles": 324,
+      "vertices": 216,
+      "restFiles": [
+        "mage_02_Rest.fbx",
+        "mage_02_Rest.glb"
+      ],
+      "clips": [
+        {
+          "name": "Idle",
+          "file": "mage_02_Idle.fbx",
+          "frames": 61,
+          "seconds": 2,
+          "loop": true,
+          "rootMotion": false,
+          "robloxAnimationId": null
+        },
+        {
+          "name": "Walk",
+          "file": "mage_02_Walk.fbx",
+          "frames": 31,
+          "seconds": 1,
+          "loop": true,
+          "rootMotion": false,
+          "robloxAnimationId": null
+        },
+        {
+          "name": "Attack",
+          "file": "mage_02_Attack.fbx",
+          "frames": 37,
+          "seconds": 1.2,
+          "loop": false,
+          "rootMotion": false,
+          "robloxAnimationId": null
+        },
+        {
+          "name": "Hit",
+          "file": "mage_02_Hit.fbx",
+          "frames": 16,
+          "seconds": 0.5,
+          "loop": false,
+          "rootMotion": false,
+          "robloxAnimationId": null
+        }
+      ],
+      "studioImported": false,
+      "liveEncounterBound": false
+    },
+    {
+      "id": "mage_03",
+      "rigType": "Humanoid",
+      "region": "Mage",
+      "role": "Spell",
+      "bones": 16,
+      "triangles": 336,
+      "vertices": 224,
+      "restFiles": [
+        "mage_03_Rest.fbx",
+        "mage_03_Rest.glb"
+      ],
+      "clips": [
+        {
+          "name": "Idle",
+          "file": "mage_03_Idle.fbx",
+          "frames": 61,
+          "seconds": 2,
+          "loop": true,
+          "rootMotion": false,
+          "robloxAnimationId": null
+        },
+        {
+          "name": "Walk",
+          "file": "mage_03_Walk.fbx",
+          "frames": 31,
+          "seconds": 1,
+          "loop": true,
+          "rootMotion": false,
+          "robloxAnimationId": null
+        },
+        {
+          "name": "Attack",
+          "file": "mage_03_Attack.fbx",
+          "frames": 37,
+          "seconds": 1.2,
+          "loop": false,
+          "rootMotion": false,
+          "robloxAnimationId": null
+        },
+        {
+          "name": "Hit",
+          "file": "mage_03_Hit.fbx",
+          "frames": 16,
+          "seconds": 0.5,
+          "loop": false,
+          "rootMotion": false,
+          "robloxAnimationId": null
+        }
+      ],
+      "studioImported": false,
+      "liveEncounterBound": false
+    },
+    {
+      "id": "priest_01",
+      "rigType": "Humanoid",
+      "region": "Priest",
+      "role": "Support",
+      "bones": 16,
+      "triangles": 336,
+      "vertices": 224,
+      "restFiles": [
+        "priest_01_Rest.fbx",
+        "priest_01_Rest.glb"
+      ],
+      "clips": [
+        {
+          "name": "Idle",
+          "file": "priest_01_Idle.fbx",
+          "frames": 61,
+          "seconds": 2,
+          "loop": true,
+          "rootMotion": false,
+          "robloxAnimationId": null
+        },
+        {
+          "name": "Walk",
+          "file": "priest_01_Walk.fbx",
+          "frames": 31,
+          "seconds": 1,
+          "loop": true,
+          "rootMotion": false,
+          "robloxAnimationId": null
+        },
+        {
+          "name": "Attack",
+          "file": "priest_01_Attack.fbx",
+          "frames": 37,
+          "seconds": 1.2,
+          "loop": false,
+          "rootMotion": false,
+          "robloxAnimationId": null
+        },
+        {
+          "name": "Hit",
+          "file": "priest_01_Hit.fbx",
+          "frames": 16,
+          "seconds": 0.5,
+          "loop": false,
+          "rootMotion": false,
+          "robloxAnimationId": null
+        }
+      ],
+      "studioImported": false,
+      "liveEncounterBound": false
+    },
+    {
+      "id": "priest_02",
+      "rigType": "Humanoid",
+      "region": "Priest",
+      "role": "Support",
+      "bones": 16,
+      "triangles": 348,
+      "vertices": 232,
+      "restFiles": [
+        "priest_02_Rest.fbx",
+        "priest_02_Rest.glb"
+      ],
+      "clips": [
+        {
+          "name": "Idle",
+          "file": "priest_02_Idle.fbx",
+          "frames": 61,
+          "seconds": 2,
+          "loop": true,
+          "rootMotion": false,
+          "robloxAnimationId": null
+        },
+        {
+          "name": "Walk",
+          "file": "priest_02_Walk.fbx",
+          "frames": 31,
+          "seconds": 1,
+          "loop": true,
+          "rootMotion": false,
+          "robloxAnimationId": null
+        },
+        {
+          "name": "Attack",
+          "file": "priest_02_Attack.fbx",
+          "frames": 37,
+          "seconds": 1.2,
+          "loop": false,
+          "rootMotion": false,
+          "robloxAnimationId": null
+        },
+        {
+          "name": "Hit",
+          "file": "priest_02_Hit.fbx",
+          "frames": 16,
+          "seconds": 0.5,
+          "loop": false,
+          "rootMotion": false,
+          "robloxAnimationId": null
+        }
+      ],
+      "studioImported": false,
+      "liveEncounterBound": false
+    },
+    {
+      "id": "priest_03",
+      "rigType": "Humanoid",
+      "region": "Priest",
+      "role": "Support",
+      "bones": 16,
+      "triangles": 360,
+      "vertices": 240,
+      "restFiles": [
+        "priest_03_Rest.fbx",
+        "priest_03_Rest.glb"
+      ],
+      "clips": [
+        {
+          "name": "Idle",
+          "file": "priest_03_Idle.fbx",
+          "frames": 61,
+          "seconds": 2,
+          "loop": true,
+          "rootMotion": false,
+          "robloxAnimationId": null
+        },
+        {
+          "name": "Walk",
+          "file": "priest_03_Walk.fbx",
+          "frames": 31,
+          "seconds": 1,
+          "loop": true,
+          "rootMotion": false,
+          "robloxAnimationId": null
+        },
+        {
+          "name": "Attack",
+          "file": "priest_03_Attack.fbx",
+          "frames": 37,
+          "seconds": 1.2,
+          "loop": false,
+          "rootMotion": false,
+          "robloxAnimationId": null
+        },
+        {
+          "name": "Hit",
+          "file": "priest_03_Hit.fbx",
+          "frames": 16,
+          "seconds": 0.5,
+          "loop": false,
+          "rootMotion": false,
+          "robloxAnimationId": null
+        }
+      ],
+      "studioImported": false,
+      "liveEncounterBound": false
+    }
+  ]
+}

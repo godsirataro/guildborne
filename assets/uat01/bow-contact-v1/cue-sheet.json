@@ -1,0 +1,21 @@
+{
+  "sampleRate": 48000,
+  "channels": 1,
+  "bits": 16,
+  "duration": 6,
+  "releaseSeconds": [
+    0.24,
+    2.24,
+    4.24
+  ],
+  "releaseSamples": [
+    11520,
+    107520,
+    203520
+  ],
+  "peak": 0.5500045777764214,
+  "source": "assets/uat01/audio/combat/bow_release.wav",
+  "sourceSha256": "13d10ca34ec953f2248a8531d49a19f5639f9c00853e94321dcae2663f68410a",
+  "status": "REUSED_ORIGINAL_CUE_TIMING_CHECKED_LISTENING_IMPORT_PENDING",
+  "robloxSoundId": null
+}

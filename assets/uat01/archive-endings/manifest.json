@@ -1,0 +1,22 @@
+{
+  "generator": "built-in image_gen; original procedural native/Blender geometry",
+  "concept": "concept-v1.png",
+  "conceptPrompt": "CONCEPT_PROMPT.txt",
+  "conceptSha256": "a96f38a432e4b874f3a71e9c945619a88bcc809bbdf58c32f80afe7fb38b3726",
+  "conceptIsRuntimeArt": false,
+  "scenes": [
+    "preserve",
+    "transform",
+    "dismantle"
+  ],
+  "nativeParts": 223,
+  "triangles": 2676,
+  "exports": 6,
+  "runtime": "Completed campaign UI replay and committed court epilogue table display",
+  "robloxAssetId": null,
+  "humanApproved": false,
+  "limitations": [
+    "Native models are blockout tableaus, not the final illustrated scenery or animated cinematics.",
+    "No imported assets, real-device acceptance or human art approval."
+  ]
+}

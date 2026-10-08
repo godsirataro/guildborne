@@ -1,0 +1,5 @@
+from pathlib import Path
+import json,subprocess
+R=Path(__file__).resolve().parents[1]
+project={'name':'Guildborne_CivicArchitectureReview','tree':{'$className':'DataModel','ReplicatedStorage':{'Shared':{'$className':'Folder','Presentation':{'$className':'Folder',**{n:{'$path':'../src/shared/Presentation/'+n+'.luau'}for n in ['CrownfordArchitecture','CivicServiceArchitecture','CivicInstitutionArchitecture']}}}},'ServerScriptService':{'Services':{'$className':'Folder',**{n:{'$path':'../src/server/Services/'+n+'.luau'}for n in ['CivicDistrictKit','CivicLandmarkKit','CivicServiceKit']}},'ArchitectureBoot':{'$path':'../tools/civic_architecture_review.server.luau'}},'StarterPlayer':{'StarterPlayerScripts':{'$className':'StarterPlayerScripts','ArchitectureControls':{'$path':'../tools/civic_architecture_review.client.luau'}}}}}
+p=R/'build/civic-architecture-review.project.json';p.write_text(json.dumps(project,indent=2)+'\n');subprocess.run([str(R/'.tools/rojo/rojo.exe'),'build',str(p),'--output',str(R/'build/Guildborne_CivicArchitectureReview.rbxlx')],check=True)

@@ -1,0 +1,565 @@
+{
+  "scope": "Isolated camp geometry fixture, real R/E input and speed1 navigation",
+  "profileWrites": 0,
+  "samples": [
+    {
+      "state": {
+        "successes": 0,
+        "role": "Combined",
+        "health": {
+          "right": 100,
+          "centre": 100,
+          "left": 100
+        },
+        "phase": "Ready",
+        "mistakes": 0,
+        "status": "Active",
+        "maxHealth": 100,
+        "waves": 0
+      },
+      "completions": 0
+    },
+    {
+      "state": {
+        "successes": 0,
+        "role": "Combined",
+        "health": {
+          "right": 100,
+          "centre": 100,
+          "left": 100
+        },
+        "phase": "Ready",
+        "mistakes": 0,
+        "status": "Active",
+        "maxHealth": 100,
+        "waves": 0
+      },
+      "completions": 0
+    },
+    {
+      "state": {
+        "successes": 0,
+        "role": "Combined",
+        "health": {
+          "right": 100,
+          "centre": 100,
+          "left": 100
+        },
+        "phase": "Ready",
+        "mistakes": 0,
+        "status": "Active",
+        "maxHealth": 100,
+        "waves": 0
+      },
+      "completions": 0
+    },
+    {
+      "state": {
+        "phase": "Warning",
+        "successes": 0,
+        "role": "Combined",
+        "health": {
+          "right": 100,
+          "centre": 100,
+          "left": 100
+        },
+        "cue": {
+          "acted": false,
+          "role": "Guard",
+          "target": "left",
+          "impactAt": 14083.638148199992,
+          "expiresAt": 14087.638148199992
+        },
+        "mistakes": 0,
+        "status": "Active",
+        "maxHealth": 100,
+        "waves": 1
+      },
+      "cuePosition": {
+        "y": 263,
+        "x": 2508,
+        "z": 1395
+      },
+      "completions": 0
+    },
+    {
+      "state": {
+        "phase": "Warning",
+        "successes": 0,
+        "role": "Combined",
+        "health": {
+          "right": 100,
+          "centre": 100,
+          "left": 100
+        },
+        "cue": {
+          "acted": true,
+          "role": "Guard",
+          "target": "left",
+          "impactAt": 14083.638148199992,
+          "expiresAt": 14087.638148199992
+        },
+        "mistakes": 0,
+        "status": "Active",
+        "maxHealth": 100,
+        "waves": 1
+      },
+      "cuePosition": {
+        "y": 263,
+        "x": 2508,
+        "z": 1395
+      },
+      "completions": 0
+    },
+    {
+      "state": {
+        "phase": "Warning",
+        "successes": 0,
+        "role": "Combined",
+        "health": {
+          "right": 100,
+          "centre": 100,
+          "left": 100
+        },
+        "cue": {
+          "acted": true,
+          "role": "Guard",
+          "target": "left",
+          "impactAt": 14083.638148199992,
+          "expiresAt": 14087.638148199992
+        },
+        "mistakes": 0,
+        "status": "Active",
+        "maxHealth": 100,
+        "waves": 1
+      },
+      "cuePosition": {
+        "y": 263,
+        "x": 2508,
+        "z": 1395
+      },
+      "completions": 0
+    },
+    {
+      "state": {
+        "phase": "Warning",
+        "successes": 0,
+        "role": "Combined",
+        "health": {
+          "right": 100,
+          "centre": 100,
+          "left": 100
+        },
+        "cue": {
+          "acted": true,
+          "role": "Guard",
+          "target": "left",
+          "impactAt": 14083.638148199992,
+          "expiresAt": 14087.638148199992
+        },
+        "mistakes": 0,
+        "status": "Active",
+        "maxHealth": 100,
+        "waves": 1
+      },
+      "cuePosition": {
+        "y": 263,
+        "x": 2508,
+        "z": 1395
+      },
+      "completions": 0
+    },
+    {
+      "state": {
+        "successes": 1,
+        "role": "Combined",
+        "health": {
+          "right": 100,
+          "centre": 100,
+          "left": 100
+        },
+        "phase": "Ready",
+        "mistakes": 0,
+        "status": "Active",
+        "maxHealth": 100,
+        "waves": 1
+      },
+      "completions": 0
+    },
+    {
+      "state": {
+        "successes": 1,
+        "role": "Combined",
+        "health": {
+          "right": 100,
+          "centre": 100,
+          "left": 100
+        },
+        "phase": "Ready",
+        "mistakes": 0,
+        "status": "Active",
+        "maxHealth": 100,
+        "waves": 1
+      },
+      "completions": 0
+    },
+    {
+      "state": {
+        "successes": 1,
+        "role": "Combined",
+        "health": {
+          "right": 100,
+          "centre": 100,
+          "left": 100
+        },
+        "phase": "Ready",
+        "mistakes": 0,
+        "status": "Active",
+        "maxHealth": 100,
+        "waves": 1
+      },
+      "completions": 0
+    },
+    {
+      "state": {
+        "phase": "Warning",
+        "successes": 1,
+        "role": "Combined",
+        "health": {
+          "right": 100,
+          "centre": 100,
+          "left": 100
+        },
+        "cue": {
+          "acted": false,
+          "role": "Mend",
+          "target": "centre",
+          "impactAt": 14087.654813499998,
+          "expiresAt": 14091.654813499998
+        },
+        "mistakes": 0,
+        "status": "Active",
+        "maxHealth": 100,
+        "waves": 2
+      },
+      "cuePosition": {
+        "y": 263,
+        "x": 2520,
+        "z": 1395
+      },
+      "completions": 0
+    },
+    {
+      "state": {
+        "phase": "Warning",
+        "successes": 1,
+        "role": "Combined",
+        "health": {
+          "right": 100,
+          "centre": 100,
+          "left": 100
+        },
+        "cue": {
+          "acted": false,
+          "role": "Mend",
+          "target": "centre",
+          "impactAt": 14087.654813499998,
+          "expiresAt": 14091.654813499998
+        },
+        "mistakes": 0,
+        "status": "Active",
+        "maxHealth": 100,
+        "waves": 2
+      },
+      "cuePosition": {
+        "y": 263,
+        "x": 2520,
+        "z": 1395
+      },
+      "completions": 0
+    },
+    {
+      "state": {
+        "phase": "Warning",
+        "successes": 1,
+        "role": "Combined",
+        "health": {
+          "right": 100,
+          "centre": 100,
+          "left": 100
+        },
+        "cue": {
+          "acted": false,
+          "role": "Mend",
+          "target": "centre",
+          "impactAt": 14087.654813499998,
+          "expiresAt": 14091.654813499998
+        },
+        "mistakes": 0,
+        "status": "Active",
+        "maxHealth": 100,
+        "waves": 2
+      },
+      "cuePosition": {
+        "y": 263,
+        "x": 2520,
+        "z": 1395
+      },
+      "completions": 0
+    },
+    {
+      "state": {
+        "phase": "Warning",
+        "successes": 1,
+        "role": "Combined",
+        "health": {
+          "right": 100,
+          "centre": 100,
+          "left": 100
+        },
+        "cue": {
+          "acted": false,
+          "role": "Mend",
+          "target": "centre",
+          "impactAt": 14087.654813499998,
+          "expiresAt": 14091.654813499998
+        },
+        "mistakes": 0,
+        "status": "Active",
+        "maxHealth": 100,
+        "waves": 2
+      },
+      "cuePosition": {
+        "y": 263,
+        "x": 2520,
+        "z": 1395
+      },
+      "completions": 0
+    },
+    {
+      "state": {
+        "phase": "Recovery",
+        "successes": 1,
+        "role": "Combined",
+        "health": {
+          "right": 100,
+          "centre": 65,
+          "left": 100
+        },
+        "cue": {
+          "acted": false,
+          "role": "Mend",
+          "target": "centre",
+          "impactAt": 14087.654813499998,
+          "expiresAt": 14091.654813499998
+        },
+        "mistakes": 0,
+        "status": "Active",
+        "maxHealth": 100,
+        "waves": 2
+      },
+      "cuePosition": {
+        "y": 263,
+        "x": 2520,
+        "z": 1395
+      },
+      "completions": 0
+    },
+    {
+      "state": {
+        "successes": 2,
+        "role": "Combined",
+        "health": {
+          "right": 100,
+          "centre": 100,
+          "left": 100
+        },
+        "phase": "Ready",
+        "mistakes": 0,
+        "status": "Active",
+        "maxHealth": 100,
+        "waves": 2
+      },
+      "completions": 0
+    },
+    {
+      "state": {
+        "successes": 2,
+        "role": "Combined",
+        "health": {
+          "right": 100,
+          "centre": 100,
+          "left": 100
+        },
+        "phase": "Ready",
+        "mistakes": 0,
+        "status": "Active",
+        "maxHealth": 100,
+        "waves": 2
+      },
+      "completions": 0
+    },
+    {
+      "state": {
+        "phase": "Warning",
+        "successes": 2,
+        "role": "Combined",
+        "health": {
+          "right": 100,
+          "centre": 100,
+          "left": 100
+        },
+        "cue": {
+          "acted": false,
+          "role": "Guard",
+          "target": "right",
+          "impactAt": 14092.003870499997,
+          "expiresAt": 14096.003870499997
+        },
+        "mistakes": 0,
+        "status": "Active",
+        "maxHealth": 100,
+        "waves": 3
+      },
+      "cuePosition": {
+        "y": 263,
+        "x": 2532,
+        "z": 1395
+      },
+      "completions": 0
+    },
+    {
+      "state": {
+        "phase": "Warning",
+        "successes": 2,
+        "role": "Combined",
+        "health": {
+          "right": 100,
+          "centre": 100,
+          "left": 100
+        },
+        "cue": {
+          "acted": true,
+          "role": "Guard",
+          "target": "right",
+          "impactAt": 14092.003870499997,
+          "expiresAt": 14096.003870499997
+        },
+        "mistakes": 0,
+        "status": "Active",
+        "maxHealth": 100,
+        "waves": 3
+      },
+      "cuePosition": {
+        "y": 263,
+        "x": 2532,
+        "z": 1395
+      },
+      "completions": 0
+    },
+    {
+      "state": {
+        "phase": "Warning",
+        "successes": 2,
+        "role": "Combined",
+        "health": {
+          "right": 100,
+          "centre": 100,
+          "left": 100
+        },
+        "cue": {
+          "acted": true,
+          "role": "Guard",
+          "target": "right",
+          "impactAt": 14092.003870499997,
+          "expiresAt": 14096.003870499997
+        },
+        "mistakes": 0,
+        "status": "Active",
+        "maxHealth": 100,
+        "waves": 3
+      },
+      "cuePosition": {
+        "y": 263,
+        "x": 2532,
+        "z": 1395
+      },
+      "completions": 0
+    },
+    {
+      "state": {
+        "phase": "Warning",
+        "successes": 2,
+        "role": "Combined",
+        "health": {
+          "right": 100,
+          "centre": 100,
+          "left": 100
+        },
+        "cue": {
+          "acted": true,
+          "role": "Guard",
+          "target": "right",
+          "impactAt": 14092.003870499997,
+          "expiresAt": 14096.003870499997
+        },
+        "mistakes": 0,
+        "status": "Active",
+        "maxHealth": 100,
+        "waves": 3
+      },
+      "cuePosition": {
+        "y": 263,
+        "x": 2532,
+        "z": 1395
+      },
+      "completions": 0
+    },
+    {
+      "state": {
+        "phase": "Warning",
+        "successes": 2,
+        "role": "Combined",
+        "health": {
+          "right": 100,
+          "centre": 100,
+          "left": 100
+        },
+        "cue": {
+          "acted": true,
+          "role": "Guard",
+          "target": "right",
+          "impactAt": 14092.003870499997,
+          "expiresAt": 14096.003870499997
+        },
+        "mistakes": 0,
+        "status": "Active",
+        "maxHealth": 100,
+        "waves": 3
+      },
+      "cuePosition": {
+        "y": 263,
+        "x": 2532,
+        "z": 1395
+      },
+      "completions": 0
+    },
+    {
+      "state": {
+        "successes": 3,
+        "role": "Combined",
+        "health": {
+          "right": 100,
+          "centre": 100,
+          "left": 100
+        },
+        "phase": "Finished",
+        "mistakes": 0,
+        "status": "Completed",
+        "maxHealth": 100,
+        "waves": 3
+      },
+      "completions": 1
+    }
+  ]
+}

@@ -1,0 +1,11 @@
+# City and guild musical sketches — 2026-10-06
+
+Seven original24second,80BPM,eight-bar stereo loops now cover Crownford, Sylvaris, Deepforge, Astralis, Crosshaven, Ironroot and the guild island. They share an authored motif, with different harmony, register, timbre and light percussion. No sampled recordings, downloaded melodies or existing game music were used. Scores and deterministic synthesis are editable in `assets/uat01/city-music/scores.json` and `tools/build_city_music.py`.
+
+These are **musical sketches awaiting listening review**, not a final score. WAV masters are48kHz/16bit/stereo,168seconds total/32.3MB. Technical checks pass finite samples, no clipping, RMS approximately−22.5dBFS, peak below−8dBFS, negligible DC and a wraparound sample difference below0.0025. Circular note/echo tails continue across the loop boundary. This is signal verification, not a loudness certification or perceptual listening review.
+
+`MusicController` supports two-second transitions with at most two music Sounds. Rapid retargeting retains the louder existing track; unknown/unconfigured routes fade to silence. Master/music/mute are session-only preferences, and music now has an EN/TH settings button. Blank IDs produce no music folder, Sounds or asset requests. All IDs remain blank. Current prototype City/Guild/Greenwood/Ironveil/Ashen routes reuse Crosshaven/guild/Sylvaris/Deepforge/Astralis motifs respectively; this does not imply six completed cities. Crownford and Ironroot recordings remain unbound to a live route.
+
+Verification:662domain tests including6new transition/config scenarios; native32EN/TH settings text checks, mix/mute/clamp and zero unbound Sounds; actual mouse navigation to Settings and Music volume changed the local preference to75%. Offline console boot clean and Play stopped. Strict analysis/eight builds pass with305runtime sources. Evidence: `validation-city-music-synthesis.txt`, `validation-city-music-domain.txt`, `validation-city-music-native.json`.
+
+Remaining: listening/composition/instrument refinement, approved Roblox imports/permissions, configured streaming/load failure and audible transitions, physical device/performance and human mix acceptance. No platform upload or live audio activation occurred.

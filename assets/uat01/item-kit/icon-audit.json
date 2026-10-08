@@ -1,0 +1,422 @@
+[
+  {
+    "id": "watchblade",
+    "file": "watchblade.png",
+    "size": [
+      512,
+      512
+    ],
+    "transparentMarginPx": 63,
+    "alphaRange": [
+      0,
+      255
+    ],
+    "sha256": "8a6bf5313c3a695cca46466f3c04b11c81ad4d8cd1229d3caa68ec69fb0368d0"
+  },
+  {
+    "id": "oathblade",
+    "file": "oathblade.png",
+    "size": [
+      512,
+      512
+    ],
+    "transparentMarginPx": 63,
+    "alphaRange": [
+      0,
+      255
+    ],
+    "sha256": "e31b305097b78d1150e4dc7e991f0b72d662dea83c28f71fba9dad2fb820e53b"
+  },
+  {
+    "id": "yew_longbow",
+    "file": "yew_longbow.png",
+    "size": [
+      512,
+      512
+    ],
+    "transparentMarginPx": 51,
+    "alphaRange": [
+      0,
+      255
+    ],
+    "sha256": "e421b07ca9d2eb05ed41d4cd29755eeda9d785b412194e353ad82f7e27328d2c"
+  },
+  {
+    "id": "tide_staff",
+    "file": "tide_staff.png",
+    "size": [
+      512,
+      512
+    ],
+    "transparentMarginPx": 51,
+    "alphaRange": [
+      0,
+      255
+    ],
+    "sha256": "d40dd2464154bb3b7e2eefd65d9d722a97621baa34b04d59fdfc8c889ff4a6b4"
+  },
+  {
+    "id": "dawn_crozier",
+    "file": "dawn_crozier.png",
+    "size": [
+      512,
+      512
+    ],
+    "transparentMarginPx": 51,
+    "alphaRange": [
+      0,
+      255
+    ],
+    "sha256": "08fad75bb000e6acdbc62fc982b258afadc131127907361db3de7056c0bcf777"
+  },
+  {
+    "id": "training_sword",
+    "file": "training_sword.png",
+    "size": [
+      512,
+      512
+    ],
+    "transparentMarginPx": 63,
+    "alphaRange": [
+      0,
+      255
+    ],
+    "sha256": "bac99178cd42235f6428cc7cb8bdfc48ef1e46471b5a87e0d7d3f1ecff1f071d"
+  },
+  {
+    "id": "iron_sword",
+    "file": "iron_sword.png",
+    "size": [
+      512,
+      512
+    ],
+    "transparentMarginPx": 63,
+    "alphaRange": [
+      0,
+      255
+    ],
+    "sha256": "6d1d52cadac54bdd092a14caca479512a1957388bc540a47e6ae77875aac168b"
+  },
+  {
+    "id": "knight_sword",
+    "file": "knight_sword.png",
+    "size": [
+      512,
+      512
+    ],
+    "transparentMarginPx": 63,
+    "alphaRange": [
+      0,
+      255
+    ],
+    "sha256": "b66f22c84dee563c001301f227bf004de916d068287bb7b296c64938374199b6"
+  },
+  {
+    "id": "short_bow",
+    "file": "short_bow.png",
+    "size": [
+      512,
+      512
+    ],
+    "transparentMarginPx": 51,
+    "alphaRange": [
+      0,
+      255
+    ],
+    "sha256": "87f1a0fcfb776336be86b2dcf703b9f563092a202b5d66164e678e2585428db1"
+  },
+  {
+    "id": "apprentice_staff",
+    "file": "apprentice_staff.png",
+    "size": [
+      512,
+      512
+    ],
+    "transparentMarginPx": 51,
+    "alphaRange": [
+      0,
+      255
+    ],
+    "sha256": "40f9a41f60b24431782342c7c64a62c1793568f9bae8772cd298e05ac16167c8"
+  },
+  {
+    "id": "mage_staff",
+    "file": "mage_staff.png",
+    "size": [
+      512,
+      512
+    ],
+    "transparentMarginPx": 51,
+    "alphaRange": [
+      0,
+      255
+    ],
+    "sha256": "fea57adc1680453778c5b90bc0ac4ce97ef270448535637418e00b20bbba1a41"
+  },
+  {
+    "id": "leather_vest",
+    "file": "leather_vest.png",
+    "size": [
+      512,
+      512
+    ],
+    "transparentMarginPx": 74,
+    "alphaRange": [
+      0,
+      255
+    ],
+    "sha256": "9a9ea48043d76d85248e3db0903a8479899166312b702f6807844c5302ce07d5"
+  },
+  {
+    "id": "guardian_plate",
+    "file": "guardian_plate.png",
+    "size": [
+      512,
+      512
+    ],
+    "transparentMarginPx": 73,
+    "alphaRange": [
+      0,
+      255
+    ],
+    "sha256": "fdabb7408fc307841f6917c75c58c8a36feddaaeab8b68ac25f02e82db432645"
+  },
+  {
+    "id": "woven_robes",
+    "file": "woven_robes.png",
+    "size": [
+      512,
+      512
+    ],
+    "transparentMarginPx": 95,
+    "alphaRange": [
+      0,
+      255
+    ],
+    "sha256": "8bb04647c2619b729af28a5c65464173e4f6c9a238767455c6d152e63e28ba18"
+  },
+  {
+    "id": "scout_coat",
+    "file": "scout_coat.png",
+    "size": [
+      512,
+      512
+    ],
+    "transparentMarginPx": 95,
+    "alphaRange": [
+      0,
+      255
+    ],
+    "sha256": "2a5a0ce965b6958a967a7096eb9b32787d0c4ce83afa1fbe50f13b5b731444d2"
+  },
+  {
+    "id": "runewoven_mantle",
+    "file": "runewoven_mantle.png",
+    "size": [
+      512,
+      512
+    ],
+    "transparentMarginPx": 95,
+    "alphaRange": [
+      0,
+      255
+    ],
+    "sha256": "dca573a853cd610617c4aae7f2a1cc3e7d1255a1ace3eb73e5d504dc23df1bc8"
+  },
+  {
+    "id": "harbor_mail",
+    "file": "harbor_mail.png",
+    "size": [
+      512,
+      512
+    ],
+    "transparentMarginPx": 73,
+    "alphaRange": [
+      0,
+      255
+    ],
+    "sha256": "e27030d1e6898295b35b5e61ef0dfd670ed9e112dd5d40c93219cec2c67e1391"
+  },
+  {
+    "id": "vanguard_harness",
+    "file": "vanguard_harness.png",
+    "size": [
+      512,
+      512
+    ],
+    "transparentMarginPx": 74,
+    "alphaRange": [
+      0,
+      255
+    ],
+    "sha256": "ed3017f5af06399ce9552694a59e5fd1d3ab9cd2769afbebe3938280aa80b064"
+  },
+  {
+    "id": "pilgrim_robes",
+    "file": "pilgrim_robes.png",
+    "size": [
+      512,
+      512
+    ],
+    "transparentMarginPx": 95,
+    "alphaRange": [
+      0,
+      255
+    ],
+    "sha256": "7b6637ccd1d76b425d2176da7322233422ee4eedcaf004aa18dd9def4f6a127a"
+  },
+  {
+    "id": "bronze_ring",
+    "file": "bronze_ring.png",
+    "size": [
+      512,
+      512
+    ],
+    "transparentMarginPx": 94,
+    "alphaRange": [
+      0,
+      255
+    ],
+    "sha256": "82d62846020fd7ccda91bce6f4c53f46e7cea328df34129107f60dfaac6076c3"
+  },
+  {
+    "id": "vitality_charm",
+    "file": "vitality_charm.png",
+    "size": [
+      512,
+      512
+    ],
+    "transparentMarginPx": 92,
+    "alphaRange": [
+      0,
+      255
+    ],
+    "sha256": "9519871e74fa3b6d817e8f44ee5b63b2af6631e31ee76975465d6e20c78beefc"
+  },
+  {
+    "id": "sentinel_seal",
+    "file": "sentinel_seal.png",
+    "size": [
+      512,
+      512
+    ],
+    "transparentMarginPx": 75,
+    "alphaRange": [
+      0,
+      255
+    ],
+    "sha256": "fd1c4c825ce866226d2ef89acdcbc716f79d7f6a4d0c4aac7a1524d12f6c32b6"
+  },
+  {
+    "id": "hunters_token",
+    "file": "hunters_token.png",
+    "size": [
+      512,
+      512
+    ],
+    "transparentMarginPx": 75,
+    "alphaRange": [
+      0,
+      255
+    ],
+    "sha256": "2f5575be30c1551160a3d4c5b29c049c8bf04b00c2560188f3a1c8a4a44a1e66"
+  },
+  {
+    "id": "focus_prism",
+    "file": "focus_prism.png",
+    "size": [
+      512,
+      512
+    ],
+    "transparentMarginPx": 92,
+    "alphaRange": [
+      0,
+      255
+    ],
+    "sha256": "2140a76d86d8229a744bf8721233361c798344eec3f854d59f68bab6647f293e"
+  },
+  {
+    "id": "wardstone",
+    "file": "wardstone.png",
+    "size": [
+      512,
+      512
+    ],
+    "transparentMarginPx": 75,
+    "alphaRange": [
+      0,
+      255
+    ],
+    "sha256": "812586cd4d4692a2a481eb3dc2deb352981e00de9d24acb2159e3ff0faa137cd"
+  },
+  {
+    "id": "stone",
+    "file": "stone.png",
+    "size": [
+      512,
+      512
+    ],
+    "transparentMarginPx": 72,
+    "alphaRange": [
+      0,
+      255
+    ],
+    "sha256": "79037e801c087c410ebaa12752ac154bd84dc5ad3b8b578bf896aaf126533b8c"
+  },
+  {
+    "id": "iron_ore",
+    "file": "iron_ore.png",
+    "size": [
+      512,
+      512
+    ],
+    "transparentMarginPx": 88,
+    "alphaRange": [
+      0,
+      255
+    ],
+    "sha256": "30e89171bc15c8ac4fdf7d0eeb83d40f9e1fa6e5cf869ad16cb3b2eefc3c6645"
+  },
+  {
+    "id": "iron_ingot",
+    "file": "iron_ingot.png",
+    "size": [
+      512,
+      512
+    ],
+    "transparentMarginPx": 54,
+    "alphaRange": [
+      0,
+      255
+    ],
+    "sha256": "4d155c1e3ac8096122f6fa9d937545fef1499e0abb5c1597b39d3ee31b510cba"
+  },
+  {
+    "id": "timber",
+    "file": "timber.png",
+    "size": [
+      512,
+      512
+    ],
+    "transparentMarginPx": 105,
+    "alphaRange": [
+      0,
+      255
+    ],
+    "sha256": "4dae421aca001f6193e6f34d1dbbfdeef29361240efb6282d33f38ad3088dea4"
+  },
+  {
+    "id": "herb",
+    "file": "herb.png",
+    "size": [
+      512,
+      512
+    ],
+    "transparentMarginPx": 78,
+    "alphaRange": [
+      0,
+      255
+    ],
+    "sha256": "f09d84051e93bf3c1d72c98d7fc5c74b002789ea5c3250e500413655c13f0902"
+  }
+]

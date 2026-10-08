@@ -1,0 +1,13 @@
+{
+  "placeId": 86788611613035,
+  "probe": "tests/studio_weapon_grip_probe.luau",
+  "passed": true,
+  "equipCases": 22,
+  "weldedParts": 170,
+  "r6AndR15": true,
+  "gripAlignment": true,
+  "replacementCleanup": true,
+  "unequipCleanup": true,
+  "noProfileWrites": true,
+  "fixtureRemoved": true
+}

@@ -1,0 +1,13 @@
+{
+  "status": "LOCAL_ARCHITECTURE_STUDY",
+  "objects": {
+    "Market": 327,
+    "Tavern": 312
+  },
+  "doorWidth": 8,
+  "doorClearance": 10,
+  "centralAisleWidth": 8,
+  "render": "preview.png",
+  "platformImported": false,
+  "humanApproved": false
+}

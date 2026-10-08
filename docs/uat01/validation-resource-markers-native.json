@@ -1,0 +1,32 @@
+{
+  "native": {
+    "foreignHidden": true,
+    "countdownExpires": true,
+    "unknownUntouched": true,
+    "destroyRestores": true,
+    "recoveryGated": true,
+    "synthetic": true,
+    "initialDisabledPreserved": true,
+    "unownedGuildHidden": true,
+    "lateNode": true,
+    "removalCleanup": true,
+    "bilingual": true,
+    "loadingGated": true,
+    "profileWrites": 0
+  },
+  "live": {
+    "promptDisabled": true,
+    "remaining": 6,
+    "text": "Timber\nGather again in 6s",
+    "baseLabelHidden": true
+  },
+  "expiry": {
+    "baseLabelRestored": true,
+    "promptRestored": true
+  },
+  "limitations": [
+    "Memory-only owned Studio session",
+    "Movement-only debug approach; gather used actual keyboard input",
+    "No physical mobile or multiplayer acceptance"
+  ]
+}

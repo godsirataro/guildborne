@@ -1,0 +1,28 @@
+{
+  "date": "2026-10-06",
+  "ui": {
+    "views": 144,
+    "textBoundsChecks": 900,
+    "allGeometryCornersInsideCamera": true,
+    "nonColliding": true,
+    "serverRequests": 0,
+    "profileWrites": 0
+  },
+  "world": {
+    "prompts": 42,
+    "privateSyntheticReceipts": 13,
+    "endingDisplays": 3,
+    "unchangedDisplayPreserved": true,
+    "uncommittedEndingHidden": true,
+    "epochCleanup": true,
+    "profileWrites": 0,
+    "actualPlayerJourney": false
+  },
+  "blender": {
+    "models": 3,
+    "parts": 223,
+    "triangles": 2676,
+    "verifiedExports": 6
+  },
+  "visualReview": "Transform Thai native preview and Blender gallery inspected. Native models are static blockout tableaus, not full cinematic scenes."
+}

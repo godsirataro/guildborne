@@ -1,0 +1,3542 @@
+{
+  "date": "2026-10-06",
+  "scope": "Isolated native fixtures using synthetic admission, actual speed-1 navigation and keyboard, no gameplay Remote injection or profile grants.",
+  "keeper": {
+    "class": "Mage",
+    "language": "en",
+    "samples": [
+      {
+        "state": {
+          "expiresAt": 2489.415878800006,
+          "phase": "Ready",
+          "combatHits": 0,
+          "mistakes": 0,
+          "coreMaxHealth": 180,
+          "deadline": 2250.415878800006,
+          "nextAbility": 2249.415878800006,
+          "seals": 0,
+          "coreHealth": 180,
+          "status": "Active",
+          "rescues": 0,
+          "stage": 1,
+          "nextAttack": 2249.415878800006
+        },
+        "last": "CoreShielded",
+        "position": {
+          "y": 103,
+          "x": 3600,
+          "z": 1422
+        },
+        "receipts": [],
+        "profileWrites": 0
+      },
+      {
+        "state": {
+          "expiresAt": 2489.415878800006,
+          "phase": "Ready",
+          "combatHits": 0,
+          "mistakes": 0,
+          "coreMaxHealth": 180,
+          "deadline": 2250.415878800006,
+          "nextAbility": 2249.415878800006,
+          "seals": 0,
+          "coreHealth": 180,
+          "status": "Active",
+          "rescues": 0,
+          "stage": 1,
+          "nextAttack": 2249.415878800006
+        },
+        "last": "CoreShielded",
+        "position": {
+          "y": 103,
+          "x": 3600,
+          "z": 1422
+        },
+        "receipts": [],
+        "profileWrites": 0
+      },
+      {
+        "state": {
+          "expiresAt": 2489.415878800006,
+          "phase": "Ready",
+          "combatHits": 0,
+          "mistakes": 0,
+          "coreMaxHealth": 180,
+          "deadline": 2250.415878800006,
+          "nextAbility": 2249.415878800006,
+          "seals": 0,
+          "coreHealth": 180,
+          "status": "Active",
+          "rescues": 0,
+          "stage": 1,
+          "nextAttack": 2249.415878800006
+        },
+        "last": "CoreShielded",
+        "position": {
+          "y": 103,
+          "x": 3600,
+          "z": 1422
+        },
+        "receipts": [],
+        "profileWrites": 0
+      },
+      {
+        "state": {
+          "expiresAt": 2489.415878800006,
+          "phase": "Ready",
+          "combatHits": 0,
+          "mistakes": 0,
+          "coreMaxHealth": 180,
+          "deadline": 2250.415878800006,
+          "nextAbility": 2249.415878800006,
+          "seals": 0,
+          "coreHealth": 180,
+          "status": "Active",
+          "rescues": 0,
+          "stage": 1,
+          "nextAttack": 2249.415878800006
+        },
+        "last": "CoreShielded",
+        "position": {
+          "y": 103,
+          "x": 3600,
+          "z": 1422
+        },
+        "receipts": [],
+        "profileWrites": 0
+      },
+      {
+        "state": {
+          "warning": {
+            "duration": 2.5,
+            "dz": 1,
+            "width": 6,
+            "y": 0,
+            "x": 0,
+            "name": "Oath Line",
+            "z": 0,
+            "due": 2252.916551100003,
+            "length": 30,
+            "shape": "Line",
+            "dx": 0
+          },
+          "expiresAt": 2489.415878800006,
+          "phase": "Warning",
+          "combatHits": 0,
+          "mistakes": 0,
+          "coreMaxHealth": 180,
+          "deadline": 2252.916551100003,
+          "nextAbility": 2249.415878800006,
+          "seals": 0,
+          "coreHealth": 180,
+          "status": "Active",
+          "rescues": 0,
+          "stage": 1,
+          "nextAttack": 2249.415878800006
+        },
+        "last": "CoreShielded",
+        "position": {
+          "y": 103,
+          "x": 3600,
+          "z": 1422
+        },
+        "receipts": [],
+        "profileWrites": 0
+      },
+      {
+        "state": {
+          "warning": {
+            "duration": 2.5,
+            "dz": 1,
+            "width": 6,
+            "y": 0,
+            "x": 0,
+            "name": "Oath Line",
+            "z": 0,
+            "due": 2252.916551100003,
+            "length": 30,
+            "shape": "Line",
+            "dx": 0
+          },
+          "expiresAt": 2489.415878800006,
+          "phase": "Warning",
+          "combatHits": 0,
+          "mistakes": 0,
+          "coreMaxHealth": 180,
+          "deadline": 2252.916551100003,
+          "nextAbility": 2249.415878800006,
+          "seals": 0,
+          "coreHealth": 180,
+          "status": "Active",
+          "rescues": 0,
+          "stage": 1,
+          "nextAttack": 2249.415878800006
+        },
+        "last": "CoreShielded",
+        "position": {
+          "y": 103,
+          "x": 3589.943603515625,
+          "z": 1401.889892578125
+        },
+        "receipts": [],
+        "profileWrites": 0
+      },
+      {
+        "state": {
+          "warning": {
+            "duration": 2.5,
+            "dz": 1,
+            "width": 6,
+            "y": 0,
+            "x": 0,
+            "name": "Oath Line",
+            "z": 0,
+            "due": 2252.916551100003,
+            "length": 30,
+            "shape": "Line",
+            "dx": 0
+          },
+          "expiresAt": 2489.415878800006,
+          "phase": "Warning",
+          "combatHits": 0,
+          "mistakes": 0,
+          "coreMaxHealth": 180,
+          "deadline": 2252.916551100003,
+          "nextAbility": 2249.415878800006,
+          "seals": 0,
+          "coreHealth": 180,
+          "status": "Active",
+          "rescues": 0,
+          "stage": 1,
+          "nextAttack": 2249.415878800006
+        },
+        "last": "CoreShielded",
+        "position": {
+          "y": 103,
+          "x": 3589.328125,
+          "z": 1400.6483154296875
+        },
+        "receipts": [],
+        "profileWrites": 0
+      },
+      {
+        "state": {
+          "warning": {
+            "duration": 2.5,
+            "dz": 1,
+            "width": 6,
+            "y": 0,
+            "x": 0,
+            "name": "Oath Line",
+            "z": 0,
+            "due": 2252.916551100003,
+            "length": 30,
+            "shape": "Line",
+            "dx": 0
+          },
+          "expiresAt": 2489.415878800006,
+          "phase": "Warning",
+          "combatHits": 0,
+          "mistakes": 0,
+          "coreMaxHealth": 180,
+          "deadline": 2252.916551100003,
+          "nextAbility": 2249.415878800006,
+          "seals": 0,
+          "coreHealth": 180,
+          "status": "Active",
+          "rescues": 0,
+          "stage": 1,
+          "nextAttack": 2249.415878800006
+        },
+        "last": "CoreShielded",
+        "position": {
+          "y": 103,
+          "x": 3589.328125,
+          "z": 1400.6484375
+        },
+        "receipts": [],
+        "profileWrites": 0
+      },
+      {
+        "state": {
+          "warning": {
+            "duration": 2.5,
+            "dz": 1,
+            "width": 6,
+            "y": 0,
+            "x": 0,
+            "name": "Oath Line",
+            "z": 0,
+            "due": 2252.916551100003,
+            "length": 30,
+            "shape": "Line",
+            "dx": 0
+          },
+          "expiresAt": 2489.415878800006,
+          "phase": "Warning",
+          "combatHits": 0,
+          "mistakes": 0,
+          "coreMaxHealth": 180,
+          "deadline": 2252.916551100003,
+          "nextAbility": 2249.415878800006,
+          "seals": 0,
+          "coreHealth": 180,
+          "status": "Active",
+          "rescues": 0,
+          "stage": 1,
+          "nextAttack": 2249.415878800006
+        },
+        "last": "CoreShielded",
+        "position": {
+          "y": 103,
+          "x": 3589.328125,
+          "z": 1400.6484375
+        },
+        "receipts": [],
+        "profileWrites": 0
+      },
+      {
+        "state": {
+          "expiresAt": 2489.415878800006,
+          "mistakes": 0,
+          "phase": "Rescue",
+          "combatHits": 0,
+          "status": "Active",
+          "deadline": 2264.983376999997,
+          "coreMaxHealth": 180,
+          "nextAbility": 2249.415878800006,
+          "seals": 0,
+          "coreHealth": 180,
+          "target": {
+            "y": 0,
+            "x": -12,
+            "z": 10
+          },
+          "rescues": 0,
+          "stage": 1,
+          "nextAttack": 2249.415878800006
+        },
+        "last": "CoreShielded",
+        "position": {
+          "y": 103,
+          "x": 3589.328125,
+          "z": 1400.6484375
+        },
+        "receipts": [],
+        "profileWrites": 0
+      },
+      {
+        "state": {
+          "expiresAt": 2489.415878800006,
+          "mistakes": 0,
+          "phase": "Mechanism",
+          "combatHits": 0,
+          "status": "Active",
+          "deadline": 2265.8653527999995,
+          "coreMaxHealth": 180,
+          "nextAbility": 2249.415878800006,
+          "seals": 0,
+          "coreHealth": 180,
+          "target": {
+            "y": 0,
+            "x": 12,
+            "z": -8
+          },
+          "rescues": 1,
+          "stage": 1,
+          "nextAttack": 2249.415878800006
+        },
+        "last": "OK",
+        "position": {
+          "y": 103,
+          "x": 3588.11328125,
+          "z": 1409.21484375
+        },
+        "receipts": [],
+        "profileWrites": 0
+      },
+      {
+        "state": {
+          "expiresAt": 2489.415878800006,
+          "mistakes": 0,
+          "phase": "Attack",
+          "combatHits": 0,
+          "status": "Active",
+          "deadline": 2268.0826375000033,
+          "coreMaxHealth": 180,
+          "nextAbility": 2249.415878800006,
+          "seals": 0,
+          "coreHealth": 180,
+          "target": {
+            "y": 0,
+            "x": 0,
+            "z": 0
+          },
+          "rescues": 1,
+          "stage": 1,
+          "nextAttack": 2249.415878800006
+        },
+        "last": "OK",
+        "position": {
+          "y": 103,
+          "x": 3611.3671875,
+          "z": 1392.453125
+        },
+        "receipts": [],
+        "profileWrites": 0
+      },
+      {
+        "state": {
+          "expiresAt": 2489.415878800006,
+          "mistakes": 0,
+          "phase": "Attack",
+          "combatHits": 1,
+          "status": "Active",
+          "deadline": 2268.0826375000033,
+          "coreMaxHealth": 180,
+          "nextAbility": 2257.9163342999964,
+          "seals": 0,
+          "coreHealth": 69,
+          "target": {
+            "y": 0,
+            "x": 0,
+            "z": 0
+          },
+          "rescues": 1,
+          "stage": 1,
+          "nextAttack": 2259.2163342999966
+        },
+        "last": "OK",
+        "position": {
+          "y": 103,
+          "x": 3600.577880859375,
+          "z": 1403.414306640625
+        },
+        "receipts": [],
+        "profileWrites": 0
+      },
+      {
+        "state": {
+          "expiresAt": 2489.415878800006,
+          "mistakes": 0,
+          "phase": "Attack",
+          "combatHits": 1,
+          "status": "Active",
+          "deadline": 2268.0826375000033,
+          "coreMaxHealth": 180,
+          "nextAbility": 2257.9163342999964,
+          "seals": 0,
+          "coreHealth": 69,
+          "target": {
+            "y": 0,
+            "x": 0,
+            "z": 0
+          },
+          "rescues": 1,
+          "stage": 1,
+          "nextAttack": 2259.2163342999966
+        },
+        "last": "Cooldown",
+        "position": {
+          "y": 103,
+          "x": 3600.578125,
+          "z": 1403.4140625
+        },
+        "receipts": [],
+        "profileWrites": 0
+      },
+      {
+        "state": {
+          "expiresAt": 2489.415878800006,
+          "mistakes": 0,
+          "phase": "Attack",
+          "combatHits": 1,
+          "status": "Active",
+          "deadline": 2268.0826375000033,
+          "coreMaxHealth": 180,
+          "nextAbility": 2257.9163342999964,
+          "seals": 0,
+          "coreHealth": 69,
+          "target": {
+            "y": 0,
+            "x": 0,
+            "z": 0
+          },
+          "rescues": 1,
+          "stage": 1,
+          "nextAttack": 2259.2163342999966
+        },
+        "last": "Cooldown",
+        "position": {
+          "y": 103,
+          "x": 3600.578125,
+          "z": 1403.4140625
+        },
+        "receipts": [],
+        "profileWrites": 0
+      },
+      {
+        "state": {
+          "expiresAt": 2489.415878800006,
+          "mistakes": 0,
+          "phase": "Attack",
+          "combatHits": 1,
+          "status": "Active",
+          "deadline": 2268.0826375000033,
+          "coreMaxHealth": 180,
+          "nextAbility": 2257.9163342999964,
+          "seals": 0,
+          "coreHealth": 69,
+          "target": {
+            "y": 0,
+            "x": 0,
+            "z": 0
+          },
+          "rescues": 1,
+          "stage": 1,
+          "nextAttack": 2259.2163342999966
+        },
+        "last": "Cooldown",
+        "position": {
+          "y": 103,
+          "x": 3600.578125,
+          "z": 1403.4140625
+        },
+        "receipts": [],
+        "profileWrites": 0
+      },
+      {
+        "state": {
+          "expiresAt": 2489.415878800006,
+          "mistakes": 0,
+          "phase": "Attack",
+          "combatHits": 1,
+          "status": "Active",
+          "deadline": 2268.0826375000033,
+          "coreMaxHealth": 180,
+          "nextAbility": 2257.9163342999964,
+          "seals": 0,
+          "coreHealth": 69,
+          "target": {
+            "y": 0,
+            "x": 0,
+            "z": 0
+          },
+          "rescues": 1,
+          "stage": 1,
+          "nextAttack": 2259.2163342999966
+        },
+        "last": "Cooldown",
+        "position": {
+          "y": 103,
+          "x": 3600.578125,
+          "z": 1403.4140625
+        },
+        "receipts": [],
+        "profileWrites": 0
+      },
+      {
+        "state": {
+          "expiresAt": 2489.415878800006,
+          "phase": "Ready",
+          "combatHits": 2,
+          "mistakes": 0,
+          "coreMaxHealth": 180,
+          "deadline": 2260.332159700003,
+          "nextAbility": 2259.832159700003,
+          "seals": 1,
+          "coreHealth": 180,
+          "status": "Active",
+          "rescues": 1,
+          "stage": 2,
+          "nextAttack": 2261.1321597000033
+        },
+        "last": "OK",
+        "position": {
+          "y": 103,
+          "x": 3600.578125,
+          "z": 1403.4140625
+        },
+        "receipts": [],
+        "profileWrites": 0
+      },
+      {
+        "state": {
+          "expiresAt": 2489.415878800006,
+          "phase": "Ready",
+          "combatHits": 2,
+          "mistakes": 0,
+          "coreMaxHealth": 180,
+          "deadline": 2260.332159700003,
+          "nextAbility": 2259.832159700003,
+          "seals": 1,
+          "coreHealth": 180,
+          "status": "Active",
+          "rescues": 1,
+          "stage": 2,
+          "nextAttack": 2261.1321597000033
+        },
+        "last": "OK",
+        "position": {
+          "y": 103,
+          "x": 3600.578125,
+          "z": 1403.4140625
+        },
+        "receipts": [],
+        "profileWrites": 0
+      },
+      {
+        "state": {
+          "expiresAt": 2489.415878800006,
+          "phase": "Ready",
+          "combatHits": 2,
+          "mistakes": 0,
+          "coreMaxHealth": 180,
+          "deadline": 2260.332159700003,
+          "nextAbility": 2259.832159700003,
+          "seals": 1,
+          "coreHealth": 180,
+          "status": "Active",
+          "rescues": 1,
+          "stage": 2,
+          "nextAttack": 2261.1321597000033
+        },
+        "last": "OK",
+        "position": {
+          "y": 103,
+          "x": 3600.578125,
+          "z": 1403.4140625
+        },
+        "receipts": [],
+        "profileWrites": 0
+      },
+      {
+        "state": {
+          "expiresAt": 2489.415878800006,
+          "phase": "Ready",
+          "combatHits": 2,
+          "mistakes": 0,
+          "coreMaxHealth": 180,
+          "deadline": 2260.332159700003,
+          "nextAbility": 2259.832159700003,
+          "seals": 1,
+          "coreHealth": 180,
+          "status": "Active",
+          "rescues": 1,
+          "stage": 2,
+          "nextAttack": 2261.1321597000033
+        },
+        "last": "OK",
+        "position": {
+          "y": 103,
+          "x": 3600.578125,
+          "z": 1403.4140625
+        },
+        "receipts": [],
+        "profileWrites": 0
+      },
+      {
+        "state": {
+          "warning": {
+            "radius": 18,
+            "duration": 2.5,
+            "dz": 0.9859637484322283,
+            "dx": 0.16695953634779154,
+            "innerRadius": 5,
+            "name": "Hollow Oath",
+            "z": 0,
+            "due": 2262.8491405999957,
+            "y": 0,
+            "shape": "Ring",
+            "x": 0
+          },
+          "expiresAt": 2489.415878800006,
+          "phase": "Warning",
+          "combatHits": 2,
+          "mistakes": 0,
+          "coreMaxHealth": 180,
+          "deadline": 2262.8491405999957,
+          "nextAbility": 2259.832159700003,
+          "seals": 1,
+          "coreHealth": 180,
+          "status": "Active",
+          "rescues": 1,
+          "stage": 2,
+          "nextAttack": 2261.1321597000033
+        },
+        "last": "OK",
+        "position": {
+          "y": 103,
+          "x": 3600.578125,
+          "z": 1403.4140625
+        },
+        "receipts": [],
+        "profileWrites": 0
+      },
+      {
+        "state": {
+          "warning": {
+            "radius": 18,
+            "duration": 2.5,
+            "dz": 0.9859637484322283,
+            "dx": 0.16695953634779154,
+            "innerRadius": 5,
+            "name": "Hollow Oath",
+            "z": 0,
+            "due": 2262.8491405999957,
+            "y": 0,
+            "shape": "Ring",
+            "x": 0
+          },
+          "expiresAt": 2489.415878800006,
+          "phase": "Warning",
+          "combatHits": 2,
+          "mistakes": 0,
+          "coreMaxHealth": 180,
+          "deadline": 2262.8491405999957,
+          "nextAbility": 2259.832159700003,
+          "seals": 1,
+          "coreHealth": 180,
+          "status": "Active",
+          "rescues": 1,
+          "stage": 2,
+          "nextAttack": 2261.1321597000033
+        },
+        "last": "OK",
+        "position": {
+          "y": 103,
+          "x": 3600.51708984375,
+          "z": 1403.0322265625
+        },
+        "receipts": [],
+        "profileWrites": 0
+      },
+      {
+        "state": {
+          "warning": {
+            "radius": 18,
+            "duration": 2.5,
+            "dz": 0.9859637484322283,
+            "dx": 0.16695953634779154,
+            "innerRadius": 5,
+            "name": "Hollow Oath",
+            "z": 0,
+            "due": 2262.8491405999957,
+            "y": 0,
+            "shape": "Ring",
+            "x": 0
+          },
+          "expiresAt": 2489.415878800006,
+          "phase": "Warning",
+          "combatHits": 2,
+          "mistakes": 0,
+          "coreMaxHealth": 180,
+          "deadline": 2262.8491405999957,
+          "nextAbility": 2259.832159700003,
+          "seals": 1,
+          "coreHealth": 180,
+          "status": "Active",
+          "rescues": 1,
+          "stage": 2,
+          "nextAttack": 2261.1321597000033
+        },
+        "last": "OK",
+        "position": {
+          "y": 103.00003051757812,
+          "x": 3600.147705078125,
+          "z": 1400.8470458984375
+        },
+        "receipts": [],
+        "profileWrites": 0
+      },
+      {
+        "state": {
+          "warning": {
+            "radius": 18,
+            "duration": 2.5,
+            "dz": 0.9859637484322283,
+            "dx": 0.16695953634779154,
+            "innerRadius": 5,
+            "name": "Hollow Oath",
+            "z": 0,
+            "due": 2262.8491405999957,
+            "y": 0,
+            "shape": "Ring",
+            "x": 0
+          },
+          "expiresAt": 2489.415878800006,
+          "phase": "Warning",
+          "combatHits": 2,
+          "mistakes": 0,
+          "coreMaxHealth": 180,
+          "deadline": 2262.8491405999957,
+          "nextAbility": 2259.832159700003,
+          "seals": 1,
+          "coreHealth": 180,
+          "status": "Active",
+          "rescues": 1,
+          "stage": 2,
+          "nextAttack": 2261.1321597000033
+        },
+        "last": "OK",
+        "position": {
+          "y": 103,
+          "x": 3600.1484375,
+          "z": 1400.8515625
+        },
+        "receipts": [],
+        "profileWrites": 0
+      },
+      {
+        "state": {
+          "warning": {
+            "radius": 18,
+            "duration": 2.5,
+            "dz": 0.9859637484322283,
+            "dx": 0.16695953634779154,
+            "innerRadius": 5,
+            "name": "Hollow Oath",
+            "z": 0,
+            "due": 2262.8491405999957,
+            "y": 0,
+            "shape": "Ring",
+            "x": 0
+          },
+          "expiresAt": 2489.415878800006,
+          "phase": "Warning",
+          "combatHits": 2,
+          "mistakes": 0,
+          "coreMaxHealth": 180,
+          "deadline": 2262.8491405999957,
+          "nextAbility": 2259.832159700003,
+          "seals": 1,
+          "coreHealth": 180,
+          "status": "Active",
+          "rescues": 1,
+          "stage": 2,
+          "nextAttack": 2261.1321597000033
+        },
+        "last": "OK",
+        "position": {
+          "y": 103,
+          "x": 3600.1484375,
+          "z": 1400.8515625
+        },
+        "receipts": [],
+        "profileWrites": 0
+      },
+      {
+        "state": {
+          "warning": {
+            "radius": 18,
+            "duration": 2.5,
+            "dz": 0.9859637484322283,
+            "dx": 0.16695953634779154,
+            "innerRadius": 5,
+            "name": "Hollow Oath",
+            "z": 0,
+            "due": 2262.8491405999957,
+            "y": 0,
+            "shape": "Ring",
+            "x": 0
+          },
+          "expiresAt": 2489.415878800006,
+          "phase": "Warning",
+          "combatHits": 2,
+          "mistakes": 0,
+          "coreMaxHealth": 180,
+          "deadline": 2262.8491405999957,
+          "nextAbility": 2259.832159700003,
+          "seals": 1,
+          "coreHealth": 180,
+          "status": "Active",
+          "rescues": 1,
+          "stage": 2,
+          "nextAttack": 2261.1321597000033
+        },
+        "last": "OK",
+        "position": {
+          "y": 103,
+          "x": 3600.1484375,
+          "z": 1400.8515625
+        },
+        "receipts": [],
+        "profileWrites": 0
+      },
+      {
+        "state": {
+          "warning": {
+            "radius": 18,
+            "duration": 2.5,
+            "dz": 0.9859637484322283,
+            "dx": 0.16695953634779154,
+            "innerRadius": 5,
+            "name": "Hollow Oath",
+            "z": 0,
+            "due": 2262.8491405999957,
+            "y": 0,
+            "shape": "Ring",
+            "x": 0
+          },
+          "expiresAt": 2489.415878800006,
+          "phase": "Warning",
+          "combatHits": 2,
+          "mistakes": 0,
+          "coreMaxHealth": 180,
+          "deadline": 2262.8491405999957,
+          "nextAbility": 2259.832159700003,
+          "seals": 1,
+          "coreHealth": 180,
+          "status": "Active",
+          "rescues": 1,
+          "stage": 2,
+          "nextAttack": 2261.1321597000033
+        },
+        "last": "OK",
+        "position": {
+          "y": 103,
+          "x": 3600.1484375,
+          "z": 1400.8515625
+        },
+        "receipts": [],
+        "profileWrites": 0
+      },
+      {
+        "state": {
+          "warning": {
+            "radius": 18,
+            "duration": 2.5,
+            "dz": 0.9859637484322283,
+            "dx": 0.16695953634779154,
+            "innerRadius": 5,
+            "name": "Hollow Oath",
+            "z": 0,
+            "due": 2262.8491405999957,
+            "y": 0,
+            "shape": "Ring",
+            "x": 0
+          },
+          "expiresAt": 2489.415878800006,
+          "phase": "Warning",
+          "combatHits": 2,
+          "mistakes": 0,
+          "coreMaxHealth": 180,
+          "deadline": 2262.8491405999957,
+          "nextAbility": 2259.832159700003,
+          "seals": 1,
+          "coreHealth": 180,
+          "status": "Active",
+          "rescues": 1,
+          "stage": 2,
+          "nextAttack": 2261.1321597000033
+        },
+        "last": "OK",
+        "position": {
+          "y": 103,
+          "x": 3600.1484375,
+          "z": 1400.8515625
+        },
+        "receipts": [],
+        "profileWrites": 0
+      },
+      {
+        "state": {
+          "warning": {
+            "radius": 18,
+            "duration": 2.5,
+            "dz": 0.9859637484322283,
+            "dx": 0.16695953634779154,
+            "innerRadius": 5,
+            "name": "Hollow Oath",
+            "z": 0,
+            "due": 2262.8491405999957,
+            "y": 0,
+            "shape": "Ring",
+            "x": 0
+          },
+          "expiresAt": 2489.415878800006,
+          "phase": "Warning",
+          "combatHits": 2,
+          "mistakes": 0,
+          "coreMaxHealth": 180,
+          "deadline": 2262.8491405999957,
+          "nextAbility": 2259.832159700003,
+          "seals": 1,
+          "coreHealth": 180,
+          "status": "Active",
+          "rescues": 1,
+          "stage": 2,
+          "nextAttack": 2261.1321597000033
+        },
+        "last": "OK",
+        "position": {
+          "y": 103,
+          "x": 3600.1484375,
+          "z": 1400.8515625
+        },
+        "receipts": [],
+        "profileWrites": 0
+      },
+      {
+        "state": {
+          "warning": {
+            "radius": 18,
+            "duration": 2.5,
+            "dz": 0.9859637484322283,
+            "dx": 0.16695953634779154,
+            "innerRadius": 5,
+            "name": "Hollow Oath",
+            "z": 0,
+            "due": 2262.8491405999957,
+            "y": 0,
+            "shape": "Ring",
+            "x": 0
+          },
+          "expiresAt": 2489.415878800006,
+          "phase": "Warning",
+          "combatHits": 2,
+          "mistakes": 0,
+          "coreMaxHealth": 180,
+          "deadline": 2262.8491405999957,
+          "nextAbility": 2259.832159700003,
+          "seals": 1,
+          "coreHealth": 180,
+          "status": "Active",
+          "rescues": 1,
+          "stage": 2,
+          "nextAttack": 2261.1321597000033
+        },
+        "last": "OK",
+        "position": {
+          "y": 103,
+          "x": 3600.1484375,
+          "z": 1400.8515625
+        },
+        "receipts": [],
+        "profileWrites": 0
+      },
+      {
+        "state": {
+          "warning": {
+            "radius": 18,
+            "duration": 2.5,
+            "dz": 0.9859637484322283,
+            "dx": 0.16695953634779154,
+            "innerRadius": 5,
+            "name": "Hollow Oath",
+            "z": 0,
+            "due": 2262.8491405999957,
+            "y": 0,
+            "shape": "Ring",
+            "x": 0
+          },
+          "expiresAt": 2489.415878800006,
+          "phase": "Warning",
+          "combatHits": 2,
+          "mistakes": 0,
+          "coreMaxHealth": 180,
+          "deadline": 2262.8491405999957,
+          "nextAbility": 2259.832159700003,
+          "seals": 1,
+          "coreHealth": 180,
+          "status": "Active",
+          "rescues": 1,
+          "stage": 2,
+          "nextAttack": 2261.1321597000033
+        },
+        "last": "OK",
+        "position": {
+          "y": 103,
+          "x": 3600.1484375,
+          "z": 1400.8515625
+        },
+        "receipts": [],
+        "profileWrites": 0
+      },
+      {
+        "state": {
+          "warning": {
+            "radius": 18,
+            "duration": 2.5,
+            "dz": 0.9859637484322283,
+            "dx": 0.16695953634779154,
+            "innerRadius": 5,
+            "name": "Hollow Oath",
+            "z": 0,
+            "due": 2262.8491405999957,
+            "y": 0,
+            "shape": "Ring",
+            "x": 0
+          },
+          "expiresAt": 2489.415878800006,
+          "phase": "Warning",
+          "combatHits": 2,
+          "mistakes": 0,
+          "coreMaxHealth": 180,
+          "deadline": 2262.8491405999957,
+          "nextAbility": 2259.832159700003,
+          "seals": 1,
+          "coreHealth": 180,
+          "status": "Active",
+          "rescues": 1,
+          "stage": 2,
+          "nextAttack": 2261.1321597000033
+        },
+        "last": "OK",
+        "position": {
+          "y": 103,
+          "x": 3600.1484375,
+          "z": 1400.8515625
+        },
+        "receipts": [],
+        "profileWrites": 0
+      },
+      {
+        "state": {
+          "expiresAt": 2489.415878800006,
+          "mistakes": 0,
+          "phase": "Rescue",
+          "combatHits": 2,
+          "status": "Active",
+          "deadline": 2274.883267099998,
+          "coreMaxHealth": 180,
+          "nextAbility": 2259.832159700003,
+          "seals": 1,
+          "coreHealth": 180,
+          "target": {
+            "y": 0,
+            "x": 12,
+            "z": 10
+          },
+          "rescues": 1,
+          "stage": 2,
+          "nextAttack": 2261.1321597000033
+        },
+        "last": "OK",
+        "position": {
+          "y": 103,
+          "x": 3600.1484375,
+          "z": 1400.8515625
+        },
+        "receipts": [],
+        "profileWrites": 0
+      },
+      {
+        "state": {
+          "expiresAt": 2489.415878800006,
+          "mistakes": 0,
+          "phase": "Mechanism",
+          "combatHits": 2,
+          "status": "Active",
+          "deadline": 2276.132581099999,
+          "coreMaxHealth": 180,
+          "nextAbility": 2259.832159700003,
+          "seals": 1,
+          "coreHealth": 180,
+          "target": {
+            "y": 0,
+            "x": -12,
+            "z": -8
+          },
+          "rescues": 2,
+          "stage": 2,
+          "nextAttack": 2261.1321597000033
+        },
+        "last": "OK",
+        "position": {
+          "y": 103,
+          "x": 3611.4296875,
+          "z": 1409.5625
+        },
+        "receipts": [],
+        "profileWrites": 0
+      },
+      {
+        "state": {
+          "expiresAt": 2489.415878800006,
+          "mistakes": 0,
+          "phase": "Attack",
+          "combatHits": 2,
+          "status": "Active",
+          "deadline": 2278.398519299997,
+          "coreMaxHealth": 180,
+          "nextAbility": 2259.832159700003,
+          "seals": 1,
+          "coreHealth": 180,
+          "target": {
+            "y": 0,
+            "x": 0,
+            "z": 0
+          },
+          "rescues": 2,
+          "stage": 2,
+          "nextAttack": 2261.1321597000033
+        },
+        "last": "OK",
+        "position": {
+          "y": 103,
+          "x": 3588.60205078125,
+          "z": 1392.4522705078125
+        },
+        "receipts": [],
+        "profileWrites": 0
+      },
+      {
+        "state": {
+          "expiresAt": 2489.415878800006,
+          "mistakes": 0,
+          "phase": "Attack",
+          "combatHits": 3,
+          "status": "Active",
+          "deadline": 2278.398519299997,
+          "coreMaxHealth": 180,
+          "nextAbility": 2268.2318258000014,
+          "seals": 1,
+          "coreHealth": 69,
+          "target": {
+            "y": 0,
+            "x": 0,
+            "z": 0
+          },
+          "rescues": 2,
+          "stage": 2,
+          "nextAttack": 2269.5318258000016
+        },
+        "last": "OK",
+        "position": {
+          "y": 103,
+          "x": 3599.3984375,
+          "z": 1403.390625
+        },
+        "receipts": [],
+        "profileWrites": 0
+      },
+      {
+        "state": {
+          "expiresAt": 2489.415878800006,
+          "mistakes": 0,
+          "phase": "Attack",
+          "combatHits": 3,
+          "status": "Active",
+          "deadline": 2278.398519299997,
+          "coreMaxHealth": 180,
+          "nextAbility": 2268.2318258000014,
+          "seals": 1,
+          "coreHealth": 69,
+          "target": {
+            "y": 0,
+            "x": 0,
+            "z": 0
+          },
+          "rescues": 2,
+          "stage": 2,
+          "nextAttack": 2269.5318258000016
+        },
+        "last": "Cooldown",
+        "position": {
+          "y": 103,
+          "x": 3599.3984375,
+          "z": 1403.390625
+        },
+        "receipts": [],
+        "profileWrites": 0
+      },
+      {
+        "state": {
+          "expiresAt": 2489.415878800006,
+          "mistakes": 0,
+          "phase": "Attack",
+          "combatHits": 3,
+          "status": "Active",
+          "deadline": 2278.398519299997,
+          "coreMaxHealth": 180,
+          "nextAbility": 2268.2318258000014,
+          "seals": 1,
+          "coreHealth": 69,
+          "target": {
+            "y": 0,
+            "x": 0,
+            "z": 0
+          },
+          "rescues": 2,
+          "stage": 2,
+          "nextAttack": 2269.5318258000016
+        },
+        "last": "Cooldown",
+        "position": {
+          "y": 103,
+          "x": 3599.3984375,
+          "z": 1403.390625
+        },
+        "receipts": [],
+        "profileWrites": 0
+      },
+      {
+        "state": {
+          "expiresAt": 2489.415878800006,
+          "mistakes": 0,
+          "phase": "Attack",
+          "combatHits": 3,
+          "status": "Active",
+          "deadline": 2278.398519299997,
+          "coreMaxHealth": 180,
+          "nextAbility": 2268.2318258000014,
+          "seals": 1,
+          "coreHealth": 69,
+          "target": {
+            "y": 0,
+            "x": 0,
+            "z": 0
+          },
+          "rescues": 2,
+          "stage": 2,
+          "nextAttack": 2269.5318258000016
+        },
+        "last": "Cooldown",
+        "position": {
+          "y": 103,
+          "x": 3599.3984375,
+          "z": 1403.390625
+        },
+        "receipts": [],
+        "profileWrites": 0
+      },
+      {
+        "state": {
+          "expiresAt": 2489.415878800006,
+          "mistakes": 0,
+          "phase": "Attack",
+          "combatHits": 3,
+          "status": "Active",
+          "deadline": 2278.398519299997,
+          "coreMaxHealth": 180,
+          "nextAbility": 2268.2318258000014,
+          "seals": 1,
+          "coreHealth": 69,
+          "target": {
+            "y": 0,
+            "x": 0,
+            "z": 0
+          },
+          "rescues": 2,
+          "stage": 2,
+          "nextAttack": 2269.5318258000016
+        },
+        "last": "Cooldown",
+        "position": {
+          "y": 103,
+          "x": 3599.3984375,
+          "z": 1403.390625
+        },
+        "receipts": [],
+        "profileWrites": 0
+      },
+      {
+        "state": {
+          "expiresAt": 2489.415878800006,
+          "mistakes": 0,
+          "phase": "Attack",
+          "combatHits": 3,
+          "status": "Active",
+          "deadline": 2278.398519299997,
+          "coreMaxHealth": 180,
+          "nextAbility": 2268.2318258000014,
+          "seals": 1,
+          "coreHealth": 69,
+          "target": {
+            "y": 0,
+            "x": 0,
+            "z": 0
+          },
+          "rescues": 2,
+          "stage": 2,
+          "nextAttack": 2269.5318258000016
+        },
+        "last": "Cooldown",
+        "position": {
+          "y": 103,
+          "x": 3599.3984375,
+          "z": 1403.390625
+        },
+        "receipts": [],
+        "profileWrites": 0
+      },
+      {
+        "state": {
+          "expiresAt": 2489.415878800006,
+          "phase": "Ready",
+          "combatHits": 4,
+          "mistakes": 0,
+          "coreMaxHealth": 180,
+          "deadline": 2270.7984958000015,
+          "nextAbility": 2270.2984958000015,
+          "seals": 2,
+          "coreHealth": 180,
+          "status": "Active",
+          "rescues": 2,
+          "stage": 3,
+          "nextAttack": 2271.5984958000017
+        },
+        "last": "OK",
+        "position": {
+          "y": 103,
+          "x": 3599.3984375,
+          "z": 1403.390625
+        },
+        "receipts": [],
+        "profileWrites": 0
+      },
+      {
+        "state": {
+          "expiresAt": 2489.415878800006,
+          "phase": "Ready",
+          "combatHits": 4,
+          "mistakes": 0,
+          "coreMaxHealth": 180,
+          "deadline": 2270.7984958000015,
+          "nextAbility": 2270.2984958000015,
+          "seals": 2,
+          "coreHealth": 180,
+          "status": "Active",
+          "rescues": 2,
+          "stage": 3,
+          "nextAttack": 2271.5984958000017
+        },
+        "last": "OK",
+        "position": {
+          "y": 103,
+          "x": 3599.3984375,
+          "z": 1403.390625
+        },
+        "receipts": [],
+        "profileWrites": 0
+      },
+      {
+        "state": {
+          "expiresAt": 2489.415878800006,
+          "phase": "Ready",
+          "combatHits": 4,
+          "mistakes": 0,
+          "coreMaxHealth": 180,
+          "deadline": 2270.7984958000015,
+          "nextAbility": 2270.2984958000015,
+          "seals": 2,
+          "coreHealth": 180,
+          "status": "Active",
+          "rescues": 2,
+          "stage": 3,
+          "nextAttack": 2271.5984958000017
+        },
+        "last": "OK",
+        "position": {
+          "y": 103,
+          "x": 3599.3984375,
+          "z": 1403.390625
+        },
+        "receipts": [],
+        "profileWrites": 0
+      },
+      {
+        "state": {
+          "expiresAt": 2489.415878800006,
+          "phase": "Ready",
+          "combatHits": 4,
+          "mistakes": 0,
+          "coreMaxHealth": 180,
+          "deadline": 2270.7984958000015,
+          "nextAbility": 2270.2984958000015,
+          "seals": 2,
+          "coreHealth": 180,
+          "status": "Active",
+          "rescues": 2,
+          "stage": 3,
+          "nextAttack": 2271.5984958000017
+        },
+        "last": "OK",
+        "position": {
+          "y": 103,
+          "x": 3599.3984375,
+          "z": 1403.390625
+        },
+        "receipts": [],
+        "profileWrites": 0
+      },
+      {
+        "state": {
+          "warning": {
+            "radius": 6,
+            "duration": 2.5,
+            "targeted": true,
+            "y": 0,
+            "x": -0.6015625,
+            "name": "Marked Name",
+            "z": 3.390625,
+            "due": 2273.3160333999986,
+            "dz": 0.9846232660466404,
+            "shape": "Circle",
+            "dx": -0.17469122462117814
+          },
+          "expiresAt": 2489.415878800006,
+          "phase": "Warning",
+          "combatHits": 4,
+          "mistakes": 0,
+          "coreMaxHealth": 180,
+          "deadline": 2273.3160333999986,
+          "nextAbility": 2270.2984958000015,
+          "seals": 2,
+          "coreHealth": 180,
+          "status": "Active",
+          "rescues": 2,
+          "stage": 3,
+          "nextAttack": 2271.5984958000017
+        },
+        "last": "OK",
+        "position": {
+          "y": 103,
+          "x": 3599.3984375,
+          "z": 1403.390625
+        },
+        "receipts": [],
+        "profileWrites": 0
+      },
+      {
+        "state": {
+          "warning": {
+            "radius": 6,
+            "duration": 2.5,
+            "targeted": true,
+            "y": 0,
+            "x": -0.6015625,
+            "name": "Marked Name",
+            "z": 3.390625,
+            "due": 2273.3160333999986,
+            "dz": 0.9846232660466404,
+            "shape": "Circle",
+            "dx": -0.17469122462117814
+          },
+          "expiresAt": 2489.415878800006,
+          "phase": "Warning",
+          "combatHits": 4,
+          "mistakes": 0,
+          "coreMaxHealth": 180,
+          "deadline": 2273.3160333999986,
+          "nextAbility": 2270.2984958000015,
+          "seals": 2,
+          "coreHealth": 180,
+          "status": "Active",
+          "rescues": 2,
+          "stage": 3,
+          "nextAttack": 2271.5984958000017
+        },
+        "last": "OK",
+        "position": {
+          "y": 103,
+          "x": 3607.0634765625,
+          "z": 1403.390625
+        },
+        "receipts": [],
+        "profileWrites": 0
+      },
+      {
+        "state": {
+          "warning": {
+            "radius": 6,
+            "duration": 2.5,
+            "targeted": true,
+            "y": 0,
+            "x": -0.6015625,
+            "name": "Marked Name",
+            "z": 3.390625,
+            "due": 2273.3160333999986,
+            "dz": 0.9846232660466404,
+            "shape": "Circle",
+            "dx": -0.17469122462117814
+          },
+          "expiresAt": 2489.415878800006,
+          "phase": "Warning",
+          "combatHits": 4,
+          "mistakes": 0,
+          "coreMaxHealth": 180,
+          "deadline": 2273.3160333999986,
+          "nextAbility": 2270.2984958000015,
+          "seals": 2,
+          "coreHealth": 180,
+          "status": "Active",
+          "rescues": 2,
+          "stage": 3,
+          "nextAttack": 2271.5984958000017
+        },
+        "last": "OK",
+        "position": {
+          "y": 103,
+          "x": 3608.7265625,
+          "z": 1403.390625
+        },
+        "receipts": [],
+        "profileWrites": 0
+      },
+      {
+        "state": {
+          "warning": {
+            "radius": 6,
+            "duration": 2.5,
+            "targeted": true,
+            "y": 0,
+            "x": -0.6015625,
+            "name": "Marked Name",
+            "z": 3.390625,
+            "due": 2273.3160333999986,
+            "dz": 0.9846232660466404,
+            "shape": "Circle",
+            "dx": -0.17469122462117814
+          },
+          "expiresAt": 2489.415878800006,
+          "phase": "Warning",
+          "combatHits": 4,
+          "mistakes": 0,
+          "coreMaxHealth": 180,
+          "deadline": 2273.3160333999986,
+          "nextAbility": 2270.2984958000015,
+          "seals": 2,
+          "coreHealth": 180,
+          "status": "Active",
+          "rescues": 2,
+          "stage": 3,
+          "nextAttack": 2271.5984958000017
+        },
+        "last": "OK",
+        "position": {
+          "y": 103,
+          "x": 3608.7265625,
+          "z": 1403.390625
+        },
+        "receipts": [],
+        "profileWrites": 0
+      },
+      {
+        "state": {
+          "warning": {
+            "radius": 6,
+            "duration": 2.5,
+            "targeted": true,
+            "y": 0,
+            "x": -0.6015625,
+            "name": "Marked Name",
+            "z": 3.390625,
+            "due": 2273.3160333999986,
+            "dz": 0.9846232660466404,
+            "shape": "Circle",
+            "dx": -0.17469122462117814
+          },
+          "expiresAt": 2489.415878800006,
+          "phase": "Warning",
+          "combatHits": 4,
+          "mistakes": 0,
+          "coreMaxHealth": 180,
+          "deadline": 2273.3160333999986,
+          "nextAbility": 2270.2984958000015,
+          "seals": 2,
+          "coreHealth": 180,
+          "status": "Active",
+          "rescues": 2,
+          "stage": 3,
+          "nextAttack": 2271.5984958000017
+        },
+        "last": "OK",
+        "position": {
+          "y": 103,
+          "x": 3608.7265625,
+          "z": 1403.390625
+        },
+        "receipts": [],
+        "profileWrites": 0
+      },
+      {
+        "state": {
+          "warning": {
+            "radius": 6,
+            "duration": 2.5,
+            "targeted": true,
+            "y": 0,
+            "x": -0.6015625,
+            "name": "Marked Name",
+            "z": 3.390625,
+            "due": 2273.3160333999986,
+            "dz": 0.9846232660466404,
+            "shape": "Circle",
+            "dx": -0.17469122462117814
+          },
+          "expiresAt": 2489.415878800006,
+          "phase": "Warning",
+          "combatHits": 4,
+          "mistakes": 0,
+          "coreMaxHealth": 180,
+          "deadline": 2273.3160333999986,
+          "nextAbility": 2270.2984958000015,
+          "seals": 2,
+          "coreHealth": 180,
+          "status": "Active",
+          "rescues": 2,
+          "stage": 3,
+          "nextAttack": 2271.5984958000017
+        },
+        "last": "OK",
+        "position": {
+          "y": 103,
+          "x": 3608.7265625,
+          "z": 1403.390625
+        },
+        "receipts": [],
+        "profileWrites": 0
+      },
+      {
+        "state": {
+          "warning": {
+            "radius": 6,
+            "duration": 2.5,
+            "targeted": true,
+            "y": 0,
+            "x": -0.6015625,
+            "name": "Marked Name",
+            "z": 3.390625,
+            "due": 2273.3160333999986,
+            "dz": 0.9846232660466404,
+            "shape": "Circle",
+            "dx": -0.17469122462117814
+          },
+          "expiresAt": 2489.415878800006,
+          "phase": "Warning",
+          "combatHits": 4,
+          "mistakes": 0,
+          "coreMaxHealth": 180,
+          "deadline": 2273.3160333999986,
+          "nextAbility": 2270.2984958000015,
+          "seals": 2,
+          "coreHealth": 180,
+          "status": "Active",
+          "rescues": 2,
+          "stage": 3,
+          "nextAttack": 2271.5984958000017
+        },
+        "last": "OK",
+        "position": {
+          "y": 103,
+          "x": 3608.7265625,
+          "z": 1403.390625
+        },
+        "receipts": [],
+        "profileWrites": 0
+      },
+      {
+        "state": {
+          "warning": {
+            "radius": 6,
+            "duration": 2.5,
+            "targeted": true,
+            "y": 0,
+            "x": -0.6015625,
+            "name": "Marked Name",
+            "z": 3.390625,
+            "due": 2273.3160333999986,
+            "dz": 0.9846232660466404,
+            "shape": "Circle",
+            "dx": -0.17469122462117814
+          },
+          "expiresAt": 2489.415878800006,
+          "phase": "Warning",
+          "combatHits": 4,
+          "mistakes": 0,
+          "coreMaxHealth": 180,
+          "deadline": 2273.3160333999986,
+          "nextAbility": 2270.2984958000015,
+          "seals": 2,
+          "coreHealth": 180,
+          "status": "Active",
+          "rescues": 2,
+          "stage": 3,
+          "nextAttack": 2271.5984958000017
+        },
+        "last": "OK",
+        "position": {
+          "y": 103,
+          "x": 3608.7265625,
+          "z": 1403.390625
+        },
+        "receipts": [],
+        "profileWrites": 0
+      },
+      {
+        "state": {
+          "warning": {
+            "radius": 6,
+            "duration": 2.5,
+            "targeted": true,
+            "y": 0,
+            "x": -0.6015625,
+            "name": "Marked Name",
+            "z": 3.390625,
+            "due": 2273.3160333999986,
+            "dz": 0.9846232660466404,
+            "shape": "Circle",
+            "dx": -0.17469122462117814
+          },
+          "expiresAt": 2489.415878800006,
+          "phase": "Warning",
+          "combatHits": 4,
+          "mistakes": 0,
+          "coreMaxHealth": 180,
+          "deadline": 2273.3160333999986,
+          "nextAbility": 2270.2984958000015,
+          "seals": 2,
+          "coreHealth": 180,
+          "status": "Active",
+          "rescues": 2,
+          "stage": 3,
+          "nextAttack": 2271.5984958000017
+        },
+        "last": "OK",
+        "position": {
+          "y": 103,
+          "x": 3608.7265625,
+          "z": 1403.390625
+        },
+        "receipts": [],
+        "profileWrites": 0
+      },
+      {
+        "state": {
+          "warning": {
+            "radius": 6,
+            "duration": 2.5,
+            "targeted": true,
+            "y": 0,
+            "x": -0.6015625,
+            "name": "Marked Name",
+            "z": 3.390625,
+            "due": 2273.3160333999986,
+            "dz": 0.9846232660466404,
+            "shape": "Circle",
+            "dx": -0.17469122462117814
+          },
+          "expiresAt": 2489.415878800006,
+          "phase": "Warning",
+          "combatHits": 4,
+          "mistakes": 0,
+          "coreMaxHealth": 180,
+          "deadline": 2273.3160333999986,
+          "nextAbility": 2270.2984958000015,
+          "seals": 2,
+          "coreHealth": 180,
+          "status": "Active",
+          "rescues": 2,
+          "stage": 3,
+          "nextAttack": 2271.5984958000017
+        },
+        "last": "OK",
+        "position": {
+          "y": 103,
+          "x": 3608.7265625,
+          "z": 1403.390625
+        },
+        "receipts": [],
+        "profileWrites": 0
+      },
+      {
+        "state": {
+          "expiresAt": 2489.415878800006,
+          "mistakes": 0,
+          "phase": "Rescue",
+          "combatHits": 4,
+          "status": "Active",
+          "deadline": 2285.3484963000083,
+          "coreMaxHealth": 180,
+          "nextAbility": 2270.2984958000015,
+          "seals": 2,
+          "coreHealth": 180,
+          "target": {
+            "y": 0,
+            "x": 0,
+            "z": -12
+          },
+          "rescues": 2,
+          "stage": 3,
+          "nextAttack": 2271.5984958000017
+        },
+        "last": "OK",
+        "position": {
+          "y": 103,
+          "x": 3608.7265625,
+          "z": 1403.390625
+        },
+        "receipts": [],
+        "profileWrites": 0
+      },
+      {
+        "state": {
+          "expiresAt": 2489.415878800006,
+          "mistakes": 0,
+          "phase": "Mechanism",
+          "combatHits": 4,
+          "status": "Active",
+          "deadline": 2286.814671400003,
+          "coreMaxHealth": 180,
+          "nextAbility": 2270.2984958000015,
+          "seals": 2,
+          "coreHealth": 180,
+          "target": {
+            "y": 0,
+            "x": 0,
+            "z": 12
+          },
+          "rescues": 3,
+          "stage": 3,
+          "nextAttack": 2271.5984958000017
+        },
+        "last": "OK",
+        "position": {
+          "y": 103,
+          "x": 3600.433349609375,
+          "z": 1388.7659912109375
+        },
+        "receipts": [],
+        "profileWrites": 0
+      },
+      {
+        "state": {
+          "expiresAt": 2489.415878800006,
+          "mistakes": 0,
+          "phase": "Attack",
+          "combatHits": 4,
+          "status": "Active",
+          "deadline": 2288.6818207000033,
+          "coreMaxHealth": 180,
+          "nextAbility": 2270.2984958000015,
+          "seals": 2,
+          "coreHealth": 180,
+          "target": {
+            "y": 0,
+            "x": 0,
+            "z": 0
+          },
+          "rescues": 3,
+          "stage": 3,
+          "nextAttack": 2271.5984958000017
+        },
+        "last": "OK",
+        "position": {
+          "y": 103.00000762939453,
+          "x": 3600.015380859375,
+          "z": 1411.2073974609375
+        },
+        "receipts": [],
+        "profileWrites": 0
+      },
+      {
+        "state": {
+          "expiresAt": 2489.415878800006,
+          "mistakes": 0,
+          "phase": "Attack",
+          "combatHits": 5,
+          "status": "Active",
+          "deadline": 2288.6818207000033,
+          "coreMaxHealth": 180,
+          "nextAbility": 2277.9155079000047,
+          "seals": 2,
+          "coreHealth": 69,
+          "target": {
+            "y": 0,
+            "x": 0,
+            "z": 0
+          },
+          "rescues": 3,
+          "stage": 3,
+          "nextAttack": 2279.215507900005
+        },
+        "last": "OK",
+        "position": {
+          "y": 103,
+          "x": 3599.999755859375,
+          "z": 1404.8238525390625
+        },
+        "receipts": [],
+        "profileWrites": 0
+      },
+      {
+        "state": {
+          "expiresAt": 2489.415878800006,
+          "mistakes": 0,
+          "phase": "Attack",
+          "combatHits": 5,
+          "status": "Active",
+          "deadline": 2288.6818207000033,
+          "coreMaxHealth": 180,
+          "nextAbility": 2277.9155079000047,
+          "seals": 2,
+          "coreHealth": 69,
+          "target": {
+            "y": 0,
+            "x": 0,
+            "z": 0
+          },
+          "rescues": 3,
+          "stage": 3,
+          "nextAttack": 2279.215507900005
+        },
+        "last": "Cooldown",
+        "position": {
+          "y": 103,
+          "x": 3600,
+          "z": 1404.8671875
+        },
+        "receipts": [],
+        "profileWrites": 0
+      },
+      {
+        "state": {
+          "expiresAt": 2489.415878800006,
+          "mistakes": 0,
+          "phase": "Attack",
+          "combatHits": 5,
+          "status": "Active",
+          "deadline": 2288.6818207000033,
+          "coreMaxHealth": 180,
+          "nextAbility": 2277.9155079000047,
+          "seals": 2,
+          "coreHealth": 69,
+          "target": {
+            "y": 0,
+            "x": 0,
+            "z": 0
+          },
+          "rescues": 3,
+          "stage": 3,
+          "nextAttack": 2279.215507900005
+        },
+        "last": "Cooldown",
+        "position": {
+          "y": 103,
+          "x": 3600,
+          "z": 1404.8671875
+        },
+        "receipts": [],
+        "profileWrites": 0
+      },
+      {
+        "state": {
+          "expiresAt": 2489.415878800006,
+          "mistakes": 0,
+          "phase": "Attack",
+          "combatHits": 5,
+          "status": "Active",
+          "deadline": 2288.6818207000033,
+          "coreMaxHealth": 180,
+          "nextAbility": 2277.9155079000047,
+          "seals": 2,
+          "coreHealth": 69,
+          "target": {
+            "y": 0,
+            "x": 0,
+            "z": 0
+          },
+          "rescues": 3,
+          "stage": 3,
+          "nextAttack": 2279.215507900005
+        },
+        "last": "Cooldown",
+        "position": {
+          "y": 103,
+          "x": 3600,
+          "z": 1404.8671875
+        },
+        "receipts": [],
+        "profileWrites": 0
+      },
+      {
+        "state": {
+          "expiresAt": 2489.415878800006,
+          "mistakes": 0,
+          "phase": "Attack",
+          "combatHits": 5,
+          "status": "Active",
+          "deadline": 2288.6818207000033,
+          "coreMaxHealth": 180,
+          "nextAbility": 2277.9155079000047,
+          "seals": 2,
+          "coreHealth": 69,
+          "target": {
+            "y": 0,
+            "x": 0,
+            "z": 0
+          },
+          "rescues": 3,
+          "stage": 3,
+          "nextAttack": 2279.215507900005
+        },
+        "last": "Cooldown",
+        "position": {
+          "y": 103,
+          "x": 3600,
+          "z": 1404.8671875
+        },
+        "receipts": [],
+        "profileWrites": 0
+      },
+      {
+        "state": {
+          "expiresAt": 2489.415878800006,
+          "mistakes": 0,
+          "phase": "Attack",
+          "combatHits": 5,
+          "status": "Active",
+          "deadline": 2288.6818207000033,
+          "coreMaxHealth": 180,
+          "nextAbility": 2277.9155079000047,
+          "seals": 2,
+          "coreHealth": 69,
+          "target": {
+            "y": 0,
+            "x": 0,
+            "z": 0
+          },
+          "rescues": 3,
+          "stage": 3,
+          "nextAttack": 2279.215507900005
+        },
+        "last": "Cooldown",
+        "position": {
+          "y": 103,
+          "x": 3600,
+          "z": 1404.8671875
+        },
+        "receipts": [],
+        "profileWrites": 0
+      },
+      {
+        "state": {
+          "expiresAt": 2489.415878800006,
+          "phase": "Finished",
+          "combatHits": 6,
+          "mistakes": 0,
+          "coreMaxHealth": 180,
+          "deadline": 2288.6818207000033,
+          "nextAbility": 2280.098775300008,
+          "seals": 3,
+          "coreHealth": 0,
+          "status": "Won",
+          "rescues": 3,
+          "stage": 3,
+          "nextAttack": 2281.3987753000083
+        },
+        "last": "OK",
+        "position": {
+          "y": 103,
+          "x": 3600,
+          "z": 1404.8671875
+        },
+        "receipts": [
+          {
+            "args": {
+              "objective": "complete_keeper_of_names"
+            },
+            "owner": 11732987790,
+            "action": "CampaignObjective",
+            "requestId": "heart:native_fixture"
+          }
+        ],
+        "profileWrites": 0
+      }
+    ],
+    "leaveClick": {
+      "removed": true,
+      "returned": true
+    }
+  },
+  "warden": {
+    "class": "Knight",
+    "language": "th",
+    "samples": [
+      {
+        "state": {
+          "expiresAt": 2562.296577800007,
+          "phase": "Ready",
+          "combatHits": 0,
+          "mistakes": 0,
+          "coreMaxHealth": 180,
+          "deadline": 2323.296577800007,
+          "nextAbility": 2322.296577800007,
+          "seals": 0,
+          "coreHealth": 180,
+          "status": "Active",
+          "rescues": 0,
+          "stage": 1,
+          "nextAttack": 2322.296577800007
+        },
+        "last": "CoreShielded",
+        "position": {
+          "y": 103,
+          "x": 3600,
+          "z": 1422
+        },
+        "receipts": [],
+        "profileWrites": 0
+      },
+      {
+        "state": {
+          "expiresAt": 2562.296577800007,
+          "phase": "Ready",
+          "combatHits": 0,
+          "mistakes": 0,
+          "coreMaxHealth": 180,
+          "deadline": 2323.296577800007,
+          "nextAbility": 2322.296577800007,
+          "seals": 0,
+          "coreHealth": 180,
+          "status": "Active",
+          "rescues": 0,
+          "stage": 1,
+          "nextAttack": 2322.296577800007
+        },
+        "last": "CoreShielded",
+        "position": {
+          "y": 103,
+          "x": 3600,
+          "z": 1422
+        },
+        "receipts": [],
+        "profileWrites": 0
+      },
+      {
+        "state": {
+          "expiresAt": 2562.296577800007,
+          "phase": "Ready",
+          "combatHits": 0,
+          "mistakes": 0,
+          "coreMaxHealth": 180,
+          "deadline": 2323.296577800007,
+          "nextAbility": 2322.296577800007,
+          "seals": 0,
+          "coreHealth": 180,
+          "status": "Active",
+          "rescues": 0,
+          "stage": 1,
+          "nextAttack": 2322.296577800007
+        },
+        "last": "CoreShielded",
+        "position": {
+          "y": 103,
+          "x": 3600,
+          "z": 1422
+        },
+        "receipts": [],
+        "profileWrites": 0
+      },
+      {
+        "state": {
+          "expiresAt": 2562.296577800007,
+          "phase": "Ready",
+          "combatHits": 0,
+          "mistakes": 0,
+          "coreMaxHealth": 180,
+          "deadline": 2323.296577800007,
+          "nextAbility": 2322.296577800007,
+          "seals": 0,
+          "coreHealth": 180,
+          "status": "Active",
+          "rescues": 0,
+          "stage": 1,
+          "nextAttack": 2322.296577800007
+        },
+        "last": "CoreShielded",
+        "position": {
+          "y": 103,
+          "x": 3600,
+          "z": 1422
+        },
+        "receipts": [],
+        "profileWrites": 0
+      },
+      {
+        "state": {
+          "warning": {
+            "duration": 2.5,
+            "dz": 1,
+            "width": 6,
+            "y": 0,
+            "x": 0,
+            "name": "Oath Line",
+            "z": 0,
+            "due": 2325.8134392000065,
+            "length": 30,
+            "shape": "Line",
+            "dx": 0
+          },
+          "expiresAt": 2562.296577800007,
+          "phase": "Warning",
+          "combatHits": 0,
+          "mistakes": 0,
+          "coreMaxHealth": 180,
+          "deadline": 2325.8134392000065,
+          "nextAbility": 2322.296577800007,
+          "seals": 0,
+          "coreHealth": 180,
+          "status": "Active",
+          "rescues": 0,
+          "stage": 1,
+          "nextAttack": 2322.296577800007
+        },
+        "last": "CoreShielded",
+        "position": {
+          "y": 103,
+          "x": 3600,
+          "z": 1422
+        },
+        "receipts": [],
+        "profileWrites": 0
+      },
+      {
+        "state": {
+          "warning": {
+            "duration": 2.5,
+            "dz": 1,
+            "width": 6,
+            "y": 0,
+            "x": 0,
+            "name": "Oath Line",
+            "z": 0,
+            "due": 2325.8134392000065,
+            "length": 30,
+            "shape": "Line",
+            "dx": 0
+          },
+          "expiresAt": 2562.296577800007,
+          "phase": "Warning",
+          "combatHits": 0,
+          "mistakes": 0,
+          "coreMaxHealth": 180,
+          "deadline": 2325.8134392000065,
+          "nextAbility": 2322.296577800007,
+          "seals": 0,
+          "coreHealth": 180,
+          "status": "Active",
+          "rescues": 0,
+          "stage": 1,
+          "nextAttack": 2322.296577800007
+        },
+        "last": "CoreShielded",
+        "position": {
+          "y": 103,
+          "x": 3590.085205078125,
+          "z": 1402.167724609375
+        },
+        "receipts": [],
+        "profileWrites": 0
+      },
+      {
+        "state": {
+          "warning": {
+            "duration": 2.5,
+            "dz": 1,
+            "width": 6,
+            "y": 0,
+            "x": 0,
+            "name": "Oath Line",
+            "z": 0,
+            "due": 2325.8134392000065,
+            "length": 30,
+            "shape": "Line",
+            "dx": 0
+          },
+          "expiresAt": 2562.296577800007,
+          "phase": "Warning",
+          "combatHits": 0,
+          "mistakes": 0,
+          "coreMaxHealth": 180,
+          "deadline": 2325.8134392000065,
+          "nextAbility": 2322.296577800007,
+          "seals": 0,
+          "coreHealth": 180,
+          "status": "Active",
+          "rescues": 0,
+          "stage": 1,
+          "nextAttack": 2322.296577800007
+        },
+        "last": "CoreShielded",
+        "position": {
+          "y": 103,
+          "x": 3589.3125,
+          "z": 1400.6328125
+        },
+        "receipts": [],
+        "profileWrites": 0
+      },
+      {
+        "state": {
+          "warning": {
+            "duration": 2.5,
+            "dz": 1,
+            "width": 6,
+            "y": 0,
+            "x": 0,
+            "name": "Oath Line",
+            "z": 0,
+            "due": 2325.8134392000065,
+            "length": 30,
+            "shape": "Line",
+            "dx": 0
+          },
+          "expiresAt": 2562.296577800007,
+          "phase": "Warning",
+          "combatHits": 0,
+          "mistakes": 0,
+          "coreMaxHealth": 180,
+          "deadline": 2325.8134392000065,
+          "nextAbility": 2322.296577800007,
+          "seals": 0,
+          "coreHealth": 180,
+          "status": "Active",
+          "rescues": 0,
+          "stage": 1,
+          "nextAttack": 2322.296577800007
+        },
+        "last": "CoreShielded",
+        "position": {
+          "y": 103,
+          "x": 3589.3125,
+          "z": 1400.6328125
+        },
+        "receipts": [],
+        "profileWrites": 0
+      },
+      {
+        "state": {
+          "warning": {
+            "duration": 2.5,
+            "dz": 1,
+            "width": 6,
+            "y": 0,
+            "x": 0,
+            "name": "Oath Line",
+            "z": 0,
+            "due": 2325.8134392000065,
+            "length": 30,
+            "shape": "Line",
+            "dx": 0
+          },
+          "expiresAt": 2562.296577800007,
+          "phase": "Warning",
+          "combatHits": 0,
+          "mistakes": 0,
+          "coreMaxHealth": 180,
+          "deadline": 2325.8134392000065,
+          "nextAbility": 2322.296577800007,
+          "seals": 0,
+          "coreHealth": 180,
+          "status": "Active",
+          "rescues": 0,
+          "stage": 1,
+          "nextAttack": 2322.296577800007
+        },
+        "last": "CoreShielded",
+        "position": {
+          "y": 103,
+          "x": 3589.3125,
+          "z": 1400.6328125
+        },
+        "receipts": [],
+        "profileWrites": 0
+      },
+      {
+        "state": {
+          "expiresAt": 2562.296577800007,
+          "mistakes": 0,
+          "phase": "Mechanism",
+          "combatHits": 0,
+          "status": "Active",
+          "deadline": 2337.863180100001,
+          "coreMaxHealth": 180,
+          "nextAbility": 2322.296577800007,
+          "seals": 0,
+          "coreHealth": 180,
+          "target": {
+            "y": 0,
+            "x": 12,
+            "z": -8
+          },
+          "rescues": 0,
+          "stage": 1,
+          "nextAttack": 2322.296577800007
+        },
+        "last": "CoreShielded",
+        "position": {
+          "y": 103,
+          "x": 3589.3125,
+          "z": 1400.6328125
+        },
+        "receipts": [],
+        "profileWrites": 0
+      },
+      {
+        "state": {
+          "expiresAt": 2562.296577800007,
+          "phase": "Ready",
+          "combatHits": 0,
+          "mistakes": 0,
+          "coreMaxHealth": 180,
+          "deadline": 2328.7799178999994,
+          "nextAbility": 2322.296577800007,
+          "seals": 1,
+          "coreHealth": 180,
+          "status": "Active",
+          "rescues": 0,
+          "stage": 2,
+          "nextAttack": 2322.296577800007
+        },
+        "last": "OK",
+        "position": {
+          "y": 103,
+          "x": 3611.11181640625,
+          "z": 1392.335205078125
+        },
+        "receipts": [],
+        "profileWrites": 0
+      },
+      {
+        "state": {
+          "expiresAt": 2562.296577800007,
+          "phase": "Ready",
+          "combatHits": 0,
+          "mistakes": 0,
+          "coreMaxHealth": 180,
+          "deadline": 2328.7799178999994,
+          "nextAbility": 2322.296577800007,
+          "seals": 1,
+          "coreHealth": 180,
+          "status": "Active",
+          "rescues": 0,
+          "stage": 2,
+          "nextAttack": 2322.296577800007
+        },
+        "last": "OK",
+        "position": {
+          "y": 103,
+          "x": 3611.109375,
+          "z": 1392.3359375
+        },
+        "receipts": [],
+        "profileWrites": 0
+      },
+      {
+        "state": {
+          "expiresAt": 2562.296577800007,
+          "phase": "Ready",
+          "combatHits": 0,
+          "mistakes": 0,
+          "coreMaxHealth": 180,
+          "deadline": 2328.7799178999994,
+          "nextAbility": 2322.296577800007,
+          "seals": 1,
+          "coreHealth": 180,
+          "status": "Active",
+          "rescues": 0,
+          "stage": 2,
+          "nextAttack": 2322.296577800007
+        },
+        "last": "OK",
+        "position": {
+          "y": 103,
+          "x": 3611.109375,
+          "z": 1392.3359375
+        },
+        "receipts": [],
+        "profileWrites": 0
+      },
+      {
+        "state": {
+          "expiresAt": 2562.296577800007,
+          "phase": "Ready",
+          "combatHits": 0,
+          "mistakes": 0,
+          "coreMaxHealth": 180,
+          "deadline": 2328.7799178999994,
+          "nextAbility": 2322.296577800007,
+          "seals": 1,
+          "coreHealth": 180,
+          "status": "Active",
+          "rescues": 0,
+          "stage": 2,
+          "nextAttack": 2322.296577800007
+        },
+        "last": "OK",
+        "position": {
+          "y": 103,
+          "x": 3611.109375,
+          "z": 1392.3359375
+        },
+        "receipts": [],
+        "profileWrites": 0
+      },
+      {
+        "state": {
+          "warning": {
+            "radius": 18,
+            "duration": 2.5,
+            "dz": -0.5678546906154388,
+            "dx": 0.8231288175893517,
+            "innerRadius": 5,
+            "name": "Hollow Oath",
+            "z": 0,
+            "due": 2331.2807466000086,
+            "y": 0,
+            "shape": "Ring",
+            "x": 0
+          },
+          "expiresAt": 2562.296577800007,
+          "phase": "Warning",
+          "combatHits": 0,
+          "mistakes": 0,
+          "coreMaxHealth": 180,
+          "deadline": 2331.2807466000086,
+          "nextAbility": 2322.296577800007,
+          "seals": 1,
+          "coreHealth": 180,
+          "status": "Active",
+          "rescues": 0,
+          "stage": 2,
+          "nextAttack": 2322.296577800007
+        },
+        "last": "OK",
+        "position": {
+          "y": 103,
+          "x": 3611.109375,
+          "z": 1392.3359375
+        },
+        "receipts": [],
+        "profileWrites": 0
+      },
+      {
+        "state": {
+          "warning": {
+            "radius": 18,
+            "duration": 2.5,
+            "dz": -0.5678546906154388,
+            "dx": 0.8231288175893517,
+            "innerRadius": 5,
+            "name": "Hollow Oath",
+            "z": 0,
+            "due": 2331.2807466000086,
+            "y": 0,
+            "shape": "Ring",
+            "x": 0
+          },
+          "expiresAt": 2562.296577800007,
+          "phase": "Warning",
+          "combatHits": 0,
+          "mistakes": 0,
+          "coreMaxHealth": 180,
+          "deadline": 2331.2807466000086,
+          "nextAbility": 2322.296577800007,
+          "seals": 1,
+          "coreHealth": 180,
+          "status": "Active",
+          "rescues": 0,
+          "stage": 2,
+          "nextAttack": 2322.296577800007
+        },
+        "last": "OK",
+        "position": {
+          "y": 103,
+          "x": 3601.90087890625,
+          "z": 1398.6868896484375
+        },
+        "receipts": [],
+        "profileWrites": 0
+      },
+      {
+        "state": {
+          "warning": {
+            "radius": 18,
+            "duration": 2.5,
+            "dz": -0.5678546906154388,
+            "dx": 0.8231288175893517,
+            "innerRadius": 5,
+            "name": "Hollow Oath",
+            "z": 0,
+            "due": 2331.2807466000086,
+            "y": 0,
+            "shape": "Ring",
+            "x": 0
+          },
+          "expiresAt": 2562.296577800007,
+          "phase": "Warning",
+          "combatHits": 0,
+          "mistakes": 0,
+          "coreMaxHealth": 180,
+          "deadline": 2331.2807466000086,
+          "nextAbility": 2322.296577800007,
+          "seals": 1,
+          "coreHealth": 180,
+          "status": "Active",
+          "rescues": 0,
+          "stage": 2,
+          "nextAttack": 2322.296577800007
+        },
+        "last": "OK",
+        "position": {
+          "y": 103,
+          "x": 3600.8095703125,
+          "z": 1399.4384765625
+        },
+        "receipts": [],
+        "profileWrites": 0
+      },
+      {
+        "state": {
+          "warning": {
+            "radius": 18,
+            "duration": 2.5,
+            "dz": -0.5678546906154388,
+            "dx": 0.8231288175893517,
+            "innerRadius": 5,
+            "name": "Hollow Oath",
+            "z": 0,
+            "due": 2331.2807466000086,
+            "y": 0,
+            "shape": "Ring",
+            "x": 0
+          },
+          "expiresAt": 2562.296577800007,
+          "phase": "Warning",
+          "combatHits": 0,
+          "mistakes": 0,
+          "coreMaxHealth": 180,
+          "deadline": 2331.2807466000086,
+          "nextAbility": 2322.296577800007,
+          "seals": 1,
+          "coreHealth": 180,
+          "status": "Active",
+          "rescues": 0,
+          "stage": 2,
+          "nextAttack": 2322.296577800007
+        },
+        "last": "OK",
+        "position": {
+          "y": 103,
+          "x": 3600.53125,
+          "z": 1399.6328125
+        },
+        "receipts": [],
+        "profileWrites": 0
+      },
+      {
+        "state": {
+          "warning": {
+            "radius": 18,
+            "duration": 2.5,
+            "dz": -0.5678546906154388,
+            "dx": 0.8231288175893517,
+            "innerRadius": 5,
+            "name": "Hollow Oath",
+            "z": 0,
+            "due": 2331.2807466000086,
+            "y": 0,
+            "shape": "Ring",
+            "x": 0
+          },
+          "expiresAt": 2562.296577800007,
+          "phase": "Warning",
+          "combatHits": 0,
+          "mistakes": 0,
+          "coreMaxHealth": 180,
+          "deadline": 2331.2807466000086,
+          "nextAbility": 2322.296577800007,
+          "seals": 1,
+          "coreHealth": 180,
+          "status": "Active",
+          "rescues": 0,
+          "stage": 2,
+          "nextAttack": 2322.296577800007
+        },
+        "last": "OK",
+        "position": {
+          "y": 103,
+          "x": 3600.53125,
+          "z": 1399.6328125
+        },
+        "receipts": [],
+        "profileWrites": 0
+      },
+      {
+        "state": {
+          "warning": {
+            "radius": 18,
+            "duration": 2.5,
+            "dz": -0.5678546906154388,
+            "dx": 0.8231288175893517,
+            "innerRadius": 5,
+            "name": "Hollow Oath",
+            "z": 0,
+            "due": 2331.2807466000086,
+            "y": 0,
+            "shape": "Ring",
+            "x": 0
+          },
+          "expiresAt": 2562.296577800007,
+          "phase": "Warning",
+          "combatHits": 0,
+          "mistakes": 0,
+          "coreMaxHealth": 180,
+          "deadline": 2331.2807466000086,
+          "nextAbility": 2322.296577800007,
+          "seals": 1,
+          "coreHealth": 180,
+          "status": "Active",
+          "rescues": 0,
+          "stage": 2,
+          "nextAttack": 2322.296577800007
+        },
+        "last": "OK",
+        "position": {
+          "y": 103,
+          "x": 3600.53125,
+          "z": 1399.6328125
+        },
+        "receipts": [],
+        "profileWrites": 0
+      },
+      {
+        "state": {
+          "warning": {
+            "radius": 18,
+            "duration": 2.5,
+            "dz": -0.5678546906154388,
+            "dx": 0.8231288175893517,
+            "innerRadius": 5,
+            "name": "Hollow Oath",
+            "z": 0,
+            "due": 2331.2807466000086,
+            "y": 0,
+            "shape": "Ring",
+            "x": 0
+          },
+          "expiresAt": 2562.296577800007,
+          "phase": "Warning",
+          "combatHits": 0,
+          "mistakes": 0,
+          "coreMaxHealth": 180,
+          "deadline": 2331.2807466000086,
+          "nextAbility": 2322.296577800007,
+          "seals": 1,
+          "coreHealth": 180,
+          "status": "Active",
+          "rescues": 0,
+          "stage": 2,
+          "nextAttack": 2322.296577800007
+        },
+        "last": "OK",
+        "position": {
+          "y": 103,
+          "x": 3600.53125,
+          "z": 1399.6328125
+        },
+        "receipts": [],
+        "profileWrites": 0
+      },
+      {
+        "state": {
+          "warning": {
+            "radius": 18,
+            "duration": 2.5,
+            "dz": -0.5678546906154388,
+            "dx": 0.8231288175893517,
+            "innerRadius": 5,
+            "name": "Hollow Oath",
+            "z": 0,
+            "due": 2331.2807466000086,
+            "y": 0,
+            "shape": "Ring",
+            "x": 0
+          },
+          "expiresAt": 2562.296577800007,
+          "phase": "Warning",
+          "combatHits": 0,
+          "mistakes": 0,
+          "coreMaxHealth": 180,
+          "deadline": 2331.2807466000086,
+          "nextAbility": 2322.296577800007,
+          "seals": 1,
+          "coreHealth": 180,
+          "status": "Active",
+          "rescues": 0,
+          "stage": 2,
+          "nextAttack": 2322.296577800007
+        },
+        "last": "OK",
+        "position": {
+          "y": 103,
+          "x": 3600.53125,
+          "z": 1399.6328125
+        },
+        "receipts": [],
+        "profileWrites": 0
+      },
+      {
+        "state": {
+          "warning": {
+            "radius": 18,
+            "duration": 2.5,
+            "dz": -0.5678546906154388,
+            "dx": 0.8231288175893517,
+            "innerRadius": 5,
+            "name": "Hollow Oath",
+            "z": 0,
+            "due": 2331.2807466000086,
+            "y": 0,
+            "shape": "Ring",
+            "x": 0
+          },
+          "expiresAt": 2562.296577800007,
+          "phase": "Warning",
+          "combatHits": 0,
+          "mistakes": 0,
+          "coreMaxHealth": 180,
+          "deadline": 2331.2807466000086,
+          "nextAbility": 2322.296577800007,
+          "seals": 1,
+          "coreHealth": 180,
+          "status": "Active",
+          "rescues": 0,
+          "stage": 2,
+          "nextAttack": 2322.296577800007
+        },
+        "last": "OK",
+        "position": {
+          "y": 103,
+          "x": 3600.53125,
+          "z": 1399.6328125
+        },
+        "receipts": [],
+        "profileWrites": 0
+      },
+      {
+        "state": {
+          "expiresAt": 2562.296577800007,
+          "mistakes": 0,
+          "phase": "Mechanism",
+          "combatHits": 0,
+          "status": "Active",
+          "deadline": 2343.3131730000023,
+          "coreMaxHealth": 180,
+          "nextAbility": 2322.296577800007,
+          "seals": 1,
+          "coreHealth": 180,
+          "target": {
+            "y": 0,
+            "x": -12,
+            "z": -8
+          },
+          "rescues": 0,
+          "stage": 2,
+          "nextAttack": 2322.296577800007
+        },
+        "last": "OK",
+        "position": {
+          "y": 103,
+          "x": 3600.53125,
+          "z": 1399.6328125
+        },
+        "receipts": [],
+        "profileWrites": 0
+      },
+      {
+        "state": {
+          "expiresAt": 2562.296577800007,
+          "phase": "Ready",
+          "combatHits": 0,
+          "mistakes": 0,
+          "coreMaxHealth": 180,
+          "deadline": 2333.6288272999955,
+          "nextAbility": 2322.296577800007,
+          "seals": 2,
+          "coreHealth": 180,
+          "status": "Active",
+          "rescues": 0,
+          "stage": 3,
+          "nextAttack": 2322.296577800007
+        },
+        "last": "OK",
+        "position": {
+          "y": 103,
+          "x": 3588.62451171875,
+          "z": 1392.3824462890625
+        },
+        "receipts": [],
+        "profileWrites": 0
+      },
+      {
+        "state": {
+          "expiresAt": 2562.296577800007,
+          "phase": "Ready",
+          "combatHits": 0,
+          "mistakes": 0,
+          "coreMaxHealth": 180,
+          "deadline": 2333.6288272999955,
+          "nextAbility": 2322.296577800007,
+          "seals": 2,
+          "coreHealth": 180,
+          "status": "Active",
+          "rescues": 0,
+          "stage": 3,
+          "nextAttack": 2322.296577800007
+        },
+        "last": "OK",
+        "position": {
+          "y": 103,
+          "x": 3588.625,
+          "z": 1392.3828125
+        },
+        "receipts": [],
+        "profileWrites": 0
+      },
+      {
+        "state": {
+          "expiresAt": 2562.296577800007,
+          "phase": "Ready",
+          "combatHits": 0,
+          "mistakes": 0,
+          "coreMaxHealth": 180,
+          "deadline": 2333.6288272999955,
+          "nextAbility": 2322.296577800007,
+          "seals": 2,
+          "coreHealth": 180,
+          "status": "Active",
+          "rescues": 0,
+          "stage": 3,
+          "nextAttack": 2322.296577800007
+        },
+        "last": "OK",
+        "position": {
+          "y": 103,
+          "x": 3588.625,
+          "z": 1392.3828125
+        },
+        "receipts": [],
+        "profileWrites": 0
+      },
+      {
+        "state": {
+          "expiresAt": 2562.296577800007,
+          "phase": "Ready",
+          "combatHits": 0,
+          "mistakes": 0,
+          "coreMaxHealth": 180,
+          "deadline": 2333.6288272999955,
+          "nextAbility": 2322.296577800007,
+          "seals": 2,
+          "coreHealth": 180,
+          "status": "Active",
+          "rescues": 0,
+          "stage": 3,
+          "nextAttack": 2322.296577800007
+        },
+        "last": "OK",
+        "position": {
+          "y": 103,
+          "x": 3588.625,
+          "z": 1392.3828125
+        },
+        "receipts": [],
+        "profileWrites": 0
+      },
+      {
+        "state": {
+          "warning": {
+            "radius": 6,
+            "duration": 2.5,
+            "targeted": true,
+            "y": 0,
+            "x": -11.375,
+            "name": "Marked Name",
+            "z": -7.6171875,
+            "due": 2336.1455554999993,
+            "dz": -0.5564110560103849,
+            "shape": "Circle",
+            "dx": -0.8309071769755081
+          },
+          "expiresAt": 2562.296577800007,
+          "phase": "Warning",
+          "combatHits": 0,
+          "mistakes": 0,
+          "coreMaxHealth": 180,
+          "deadline": 2336.1455554999993,
+          "nextAbility": 2322.296577800007,
+          "seals": 2,
+          "coreHealth": 180,
+          "status": "Active",
+          "rescues": 0,
+          "stage": 3,
+          "nextAttack": 2322.296577800007
+        },
+        "last": "OK",
+        "position": {
+          "y": 103,
+          "x": 3588.625,
+          "z": 1392.3828125
+        },
+        "receipts": [],
+        "profileWrites": 0
+      },
+      {
+        "state": {
+          "warning": {
+            "radius": 6,
+            "duration": 2.5,
+            "targeted": true,
+            "y": 0,
+            "x": -11.375,
+            "name": "Marked Name",
+            "z": -7.6171875,
+            "due": 2336.1455554999993,
+            "dz": -0.5564110560103849,
+            "shape": "Circle",
+            "dx": -0.8309071769755081
+          },
+          "expiresAt": 2562.296577800007,
+          "phase": "Warning",
+          "combatHits": 0,
+          "mistakes": 0,
+          "coreMaxHealth": 180,
+          "deadline": 2336.1455554999993,
+          "nextAbility": 2322.296577800007,
+          "seals": 2,
+          "coreHealth": 180,
+          "status": "Active",
+          "rescues": 0,
+          "stage": 3,
+          "nextAttack": 2322.296577800007
+        },
+        "last": "OK",
+        "position": {
+          "y": 103,
+          "x": 3595.79931640625,
+          "z": 1392.3828125
+        },
+        "receipts": [],
+        "profileWrites": 0
+      },
+      {
+        "state": {
+          "warning": {
+            "radius": 6,
+            "duration": 2.5,
+            "targeted": true,
+            "y": 0,
+            "x": -11.375,
+            "name": "Marked Name",
+            "z": -7.6171875,
+            "due": 2336.1455554999993,
+            "dz": -0.5564110560103849,
+            "shape": "Circle",
+            "dx": -0.8309071769755081
+          },
+          "expiresAt": 2562.296577800007,
+          "phase": "Warning",
+          "combatHits": 0,
+          "mistakes": 0,
+          "coreMaxHealth": 180,
+          "deadline": 2336.1455554999993,
+          "nextAbility": 2322.296577800007,
+          "seals": 2,
+          "coreHealth": 180,
+          "status": "Active",
+          "rescues": 0,
+          "stage": 3,
+          "nextAttack": 2322.296577800007
+        },
+        "last": "OK",
+        "position": {
+          "y": 103,
+          "x": 3597.982177734375,
+          "z": 1392.3828125
+        },
+        "receipts": [],
+        "profileWrites": 0
+      },
+      {
+        "state": {
+          "warning": {
+            "radius": 6,
+            "duration": 2.5,
+            "targeted": true,
+            "y": 0,
+            "x": -11.375,
+            "name": "Marked Name",
+            "z": -7.6171875,
+            "due": 2336.1455554999993,
+            "dz": -0.5564110560103849,
+            "shape": "Circle",
+            "dx": -0.8309071769755081
+          },
+          "expiresAt": 2562.296577800007,
+          "phase": "Warning",
+          "combatHits": 0,
+          "mistakes": 0,
+          "coreMaxHealth": 180,
+          "deadline": 2336.1455554999993,
+          "nextAbility": 2322.296577800007,
+          "seals": 2,
+          "coreHealth": 180,
+          "status": "Active",
+          "rescues": 0,
+          "stage": 3,
+          "nextAttack": 2322.296577800007
+        },
+        "last": "OK",
+        "position": {
+          "y": 103,
+          "x": 3597.984375,
+          "z": 1392.3828125
+        },
+        "receipts": [],
+        "profileWrites": 0
+      },
+      {
+        "state": {
+          "warning": {
+            "radius": 6,
+            "duration": 2.5,
+            "targeted": true,
+            "y": 0,
+            "x": -11.375,
+            "name": "Marked Name",
+            "z": -7.6171875,
+            "due": 2336.1455554999993,
+            "dz": -0.5564110560103849,
+            "shape": "Circle",
+            "dx": -0.8309071769755081
+          },
+          "expiresAt": 2562.296577800007,
+          "phase": "Warning",
+          "combatHits": 0,
+          "mistakes": 0,
+          "coreMaxHealth": 180,
+          "deadline": 2336.1455554999993,
+          "nextAbility": 2322.296577800007,
+          "seals": 2,
+          "coreHealth": 180,
+          "status": "Active",
+          "rescues": 0,
+          "stage": 3,
+          "nextAttack": 2322.296577800007
+        },
+        "last": "OK",
+        "position": {
+          "y": 103,
+          "x": 3597.984375,
+          "z": 1392.3828125
+        },
+        "receipts": [],
+        "profileWrites": 0
+      },
+      {
+        "state": {
+          "warning": {
+            "radius": 6,
+            "duration": 2.5,
+            "targeted": true,
+            "y": 0,
+            "x": -11.375,
+            "name": "Marked Name",
+            "z": -7.6171875,
+            "due": 2336.1455554999993,
+            "dz": -0.5564110560103849,
+            "shape": "Circle",
+            "dx": -0.8309071769755081
+          },
+          "expiresAt": 2562.296577800007,
+          "phase": "Warning",
+          "combatHits": 0,
+          "mistakes": 0,
+          "coreMaxHealth": 180,
+          "deadline": 2336.1455554999993,
+          "nextAbility": 2322.296577800007,
+          "seals": 2,
+          "coreHealth": 180,
+          "status": "Active",
+          "rescues": 0,
+          "stage": 3,
+          "nextAttack": 2322.296577800007
+        },
+        "last": "OK",
+        "position": {
+          "y": 103,
+          "x": 3597.984375,
+          "z": 1392.3828125
+        },
+        "receipts": [],
+        "profileWrites": 0
+      },
+      {
+        "state": {
+          "warning": {
+            "radius": 6,
+            "duration": 2.5,
+            "targeted": true,
+            "y": 0,
+            "x": -11.375,
+            "name": "Marked Name",
+            "z": -7.6171875,
+            "due": 2336.1455554999993,
+            "dz": -0.5564110560103849,
+            "shape": "Circle",
+            "dx": -0.8309071769755081
+          },
+          "expiresAt": 2562.296577800007,
+          "phase": "Warning",
+          "combatHits": 0,
+          "mistakes": 0,
+          "coreMaxHealth": 180,
+          "deadline": 2336.1455554999993,
+          "nextAbility": 2322.296577800007,
+          "seals": 2,
+          "coreHealth": 180,
+          "status": "Active",
+          "rescues": 0,
+          "stage": 3,
+          "nextAttack": 2322.296577800007
+        },
+        "last": "OK",
+        "position": {
+          "y": 103,
+          "x": 3597.984375,
+          "z": 1392.3828125
+        },
+        "receipts": [],
+        "profileWrites": 0
+      },
+      {
+        "state": {
+          "warning": {
+            "radius": 6,
+            "duration": 2.5,
+            "targeted": true,
+            "y": 0,
+            "x": -11.375,
+            "name": "Marked Name",
+            "z": -7.6171875,
+            "due": 2336.1455554999993,
+            "dz": -0.5564110560103849,
+            "shape": "Circle",
+            "dx": -0.8309071769755081
+          },
+          "expiresAt": 2562.296577800007,
+          "phase": "Warning",
+          "combatHits": 0,
+          "mistakes": 0,
+          "coreMaxHealth": 180,
+          "deadline": 2336.1455554999993,
+          "nextAbility": 2322.296577800007,
+          "seals": 2,
+          "coreHealth": 180,
+          "status": "Active",
+          "rescues": 0,
+          "stage": 3,
+          "nextAttack": 2322.296577800007
+        },
+        "last": "OK",
+        "position": {
+          "y": 103,
+          "x": 3597.984375,
+          "z": 1392.3828125
+        },
+        "receipts": [],
+        "profileWrites": 0
+      },
+      {
+        "state": {
+          "warning": {
+            "radius": 6,
+            "duration": 2.5,
+            "targeted": true,
+            "y": 0,
+            "x": -11.375,
+            "name": "Marked Name",
+            "z": -7.6171875,
+            "due": 2336.1455554999993,
+            "dz": -0.5564110560103849,
+            "shape": "Circle",
+            "dx": -0.8309071769755081
+          },
+          "expiresAt": 2562.296577800007,
+          "phase": "Warning",
+          "combatHits": 0,
+          "mistakes": 0,
+          "coreMaxHealth": 180,
+          "deadline": 2336.1455554999993,
+          "nextAbility": 2322.296577800007,
+          "seals": 2,
+          "coreHealth": 180,
+          "status": "Active",
+          "rescues": 0,
+          "stage": 3,
+          "nextAttack": 2322.296577800007
+        },
+        "last": "OK",
+        "position": {
+          "y": 103,
+          "x": 3597.984375,
+          "z": 1392.3828125
+        },
+        "receipts": [],
+        "profileWrites": 0
+      },
+      {
+        "state": {
+          "warning": {
+            "radius": 6,
+            "duration": 2.5,
+            "targeted": true,
+            "y": 0,
+            "x": -11.375,
+            "name": "Marked Name",
+            "z": -7.6171875,
+            "due": 2336.1455554999993,
+            "dz": -0.5564110560103849,
+            "shape": "Circle",
+            "dx": -0.8309071769755081
+          },
+          "expiresAt": 2562.296577800007,
+          "phase": "Warning",
+          "combatHits": 0,
+          "mistakes": 0,
+          "coreMaxHealth": 180,
+          "deadline": 2336.1455554999993,
+          "nextAbility": 2322.296577800007,
+          "seals": 2,
+          "coreHealth": 180,
+          "status": "Active",
+          "rescues": 0,
+          "stage": 3,
+          "nextAttack": 2322.296577800007
+        },
+        "last": "OK",
+        "position": {
+          "y": 103,
+          "x": 3597.984375,
+          "z": 1392.3828125
+        },
+        "receipts": [],
+        "profileWrites": 0
+      },
+      {
+        "state": {
+          "expiresAt": 2562.296577800007,
+          "mistakes": 0,
+          "phase": "Mechanism",
+          "combatHits": 0,
+          "status": "Active",
+          "deadline": 2348.1455991999974,
+          "coreMaxHealth": 180,
+          "nextAbility": 2322.296577800007,
+          "seals": 2,
+          "coreHealth": 180,
+          "target": {
+            "y": 0,
+            "x": 0,
+            "z": 12
+          },
+          "rescues": 0,
+          "stage": 3,
+          "nextAttack": 2322.296577800007
+        },
+        "last": "OK",
+        "position": {
+          "y": 103,
+          "x": 3597.984375,
+          "z": 1392.3828125
+        },
+        "receipts": [],
+        "profileWrites": 0
+      },
+      {
+        "state": {
+          "expiresAt": 2562.296577800007,
+          "phase": "Finished",
+          "combatHits": 0,
+          "mistakes": 0,
+          "coreMaxHealth": 180,
+          "deadline": 2348.1455991999974,
+          "nextAbility": 2322.296577800007,
+          "seals": 3,
+          "coreHealth": 180,
+          "status": "Won",
+          "rescues": 0,
+          "stage": 3,
+          "nextAttack": 2322.296577800007
+        },
+        "last": "OK",
+        "position": {
+          "y": 103,
+          "x": 3599.9296875,
+          "z": 1411.3206787109375
+        },
+        "receipts": [
+          {
+            "args": {
+              "objective": "break_warden_seals"
+            },
+            "owner": 11732987790,
+            "action": "CampaignObjective",
+            "requestId": "heart:native_fixture"
+          }
+        ],
+        "profileWrites": 0
+      }
+    ]
+  },
+  "earlierInterruptedKeeper": {
+    "outcome": "Harness stopped before last attack; later input missed the remaining window. Rerun completed without mistakes.",
+    "last": {
+      "state": {
+        "warning": {
+          "radius": 6,
+          "duration": 2.5,
+          "targeted": true,
+          "y": 0,
+          "x": 0,
+          "name": "Marked Name",
+          "z": 4.8359375,
+          "due": 2167.0707589000085,
+          "dz": 1,
+          "shape": "Circle",
+          "dx": 0
+        },
+        "expiresAt": 2360.6538187999977,
+        "phase": "Warning",
+        "combatHits": 5,
+        "mistakes": 2,
+        "coreMaxHealth": 180,
+        "deadline": 2167.0707589000085,
+        "nextAbility": 2149.2197460000025,
+        "seals": 2,
+        "coreHealth": 180,
+        "status": "Active",
+        "rescues": 3,
+        "stage": 3,
+        "nextAttack": 2150.5197460000027
+      },
+      "last": "CoreShielded",
+      "position": {
+        "y": 103,
+        "x": 3600,
+        "z": 1404.8359375
+      },
+      "receipts": [],
+      "profileWrites": 0
+    }
+  },
+  "uiTextFit": {
+    "en": 4,
+    "th": 4
+  },
+  "profileWrites": 0
+}

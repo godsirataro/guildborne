@@ -1,0 +1,16 @@
+{
+  "consistentGates": true,
+  "noClipping": true,
+  "synthetic": true,
+  "checks": 160,
+  "languages": [
+    "en",
+    "th"
+  ],
+  "widths": [
+    240,
+    640
+  ],
+  "noProfileWrites": true,
+  "states": 8
+}

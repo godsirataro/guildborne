@@ -1,0 +1,362 @@
+[
+  {
+    "file": "watchblade.fbx",
+    "triangles": 112,
+    "boundsAndOriginPreserved": true,
+    "sha256": "98f6b9d142fcbf98881faf7c2c15d46fe1e91646169ffdd661a0929b6e4d7a61"
+  },
+  {
+    "file": "watchblade.glb",
+    "triangles": 112,
+    "boundsAndOriginPreserved": true,
+    "sha256": "c979c1e695e51d4f96c3c2df63849e17c05144cc8962b76566c0853b833dfc20"
+  },
+  {
+    "file": "oathblade.fbx",
+    "triangles": 136,
+    "boundsAndOriginPreserved": true,
+    "sha256": "302172a816163ac9e01da51b9bbb1c933706ab2268b5a0dc811e0e5104be5f68"
+  },
+  {
+    "file": "oathblade.glb",
+    "triangles": 136,
+    "boundsAndOriginPreserved": true,
+    "sha256": "90bb1e8fdcfa5d7b7977970139c8f9a42e8c7b81d89457e228bf47b18c0844ff"
+  },
+  {
+    "file": "yew_longbow.fbx",
+    "triangles": 120,
+    "boundsAndOriginPreserved": true,
+    "sha256": "fd5fd06b46c474953f5fa69f1f0c919627a9c378ffe9088b8ad1e271630c6690"
+  },
+  {
+    "file": "yew_longbow.glb",
+    "triangles": 120,
+    "boundsAndOriginPreserved": true,
+    "sha256": "8d0ebd747cc1ba02f775e7d6654b3b6d783f7921c09f84c5a8ff66cdf47b88a3"
+  },
+  {
+    "file": "tide_staff.fbx",
+    "triangles": 120,
+    "boundsAndOriginPreserved": true,
+    "sha256": "bfca14993fd3088f798b14057e2692e4465ae15ec489e6efe710463bef9b08e9"
+  },
+  {
+    "file": "tide_staff.glb",
+    "triangles": 120,
+    "boundsAndOriginPreserved": true,
+    "sha256": "9b6dffbe7fc313273c72e342c003c605abf4b00e5c03d828d6098786399a3839"
+  },
+  {
+    "file": "dawn_crozier.fbx",
+    "triangles": 144,
+    "boundsAndOriginPreserved": true,
+    "sha256": "95194701c63f618897b708fd2716a05d13d64d0e8d2ea57453ea00c4cf077a32"
+  },
+  {
+    "file": "dawn_crozier.glb",
+    "triangles": 144,
+    "boundsAndOriginPreserved": true,
+    "sha256": "0acdd92b9f60da5c00d3d12a8d71963ab5f045cedde5cf4f59fcd0c95335e418"
+  },
+  {
+    "file": "training_sword.fbx",
+    "triangles": 112,
+    "boundsAndOriginPreserved": true,
+    "sha256": "a60a476146a7c34d4a93dbc9977a4d93b9017901470b393574275f9d9ab85426"
+  },
+  {
+    "file": "training_sword.glb",
+    "triangles": 112,
+    "boundsAndOriginPreserved": true,
+    "sha256": "7facee014ac9e1987c5b4e988aa73ffe4f4688d14b6bc3693e7daacca06a9b0e"
+  },
+  {
+    "file": "iron_sword.fbx",
+    "triangles": 112,
+    "boundsAndOriginPreserved": true,
+    "sha256": "ef51a03e2607ef7e461ed06407f7df11b6e89406c61ce56cb4acdf3a6ccda05d"
+  },
+  {
+    "file": "iron_sword.glb",
+    "triangles": 112,
+    "boundsAndOriginPreserved": true,
+    "sha256": "171e668e622564676e89ad15470fffecc684f81bfb939b91310cc1ec83024432"
+  },
+  {
+    "file": "knight_sword.fbx",
+    "triangles": 112,
+    "boundsAndOriginPreserved": true,
+    "sha256": "19528a4cb70a9a43f53b16c23121d0717fee1c06d3cc89ca6b34ca26dad51d7b"
+  },
+  {
+    "file": "knight_sword.glb",
+    "triangles": 112,
+    "boundsAndOriginPreserved": true,
+    "sha256": "7ab168c8adc912880b5e33e752a33426b27d63f9be23eb2a5361b575905d764e"
+  },
+  {
+    "file": "short_bow.fbx",
+    "triangles": 120,
+    "boundsAndOriginPreserved": true,
+    "sha256": "4b64d0eee09df027cb5a060c6cbc6e201b82a83692c8a57ed21d623dc653eaef"
+  },
+  {
+    "file": "short_bow.glb",
+    "triangles": 120,
+    "boundsAndOriginPreserved": true,
+    "sha256": "31cffc5ddfa7091b5bd2c82bb4b048c175b9cb33d9462c38708be163a72f8d1b"
+  },
+  {
+    "file": "apprentice_staff.fbx",
+    "triangles": 120,
+    "boundsAndOriginPreserved": true,
+    "sha256": "76be5f49a84d1d07d63c34620c9038c1546b527332c12442a865b8414f2ea0db"
+  },
+  {
+    "file": "apprentice_staff.glb",
+    "triangles": 120,
+    "boundsAndOriginPreserved": true,
+    "sha256": "0bfbd8937e7723a64d717a640f2c9f36782ef7cfbd766db448fa66cb5e3bab35"
+  },
+  {
+    "file": "mage_staff.fbx",
+    "triangles": 120,
+    "boundsAndOriginPreserved": true,
+    "sha256": "9e3a671640fc64162771b63ad21a8d0688e535377070c139d77ba9f10be7aada"
+  },
+  {
+    "file": "mage_staff.glb",
+    "triangles": 120,
+    "boundsAndOriginPreserved": true,
+    "sha256": "1ecf4ab812d07520c10dc3c6aa3bf9b3d16103ed5f3be8756d274dfb42850396"
+  },
+  {
+    "file": "leather_vest.fbx",
+    "triangles": 108,
+    "boundsAndOriginPreserved": true,
+    "sha256": "f21ad2bbed938a99d203b1c5a8fd9e9d4d2e5d81ac7bd0961b9663cd3c12863b"
+  },
+  {
+    "file": "leather_vest.glb",
+    "triangles": 108,
+    "boundsAndOriginPreserved": true,
+    "sha256": "366bf53c2af190152f8d271330ca2f2636a8b00b1fff7f0fc6ee29774c59aff7"
+  },
+  {
+    "file": "guardian_plate.fbx",
+    "triangles": 96,
+    "boundsAndOriginPreserved": true,
+    "sha256": "ab23f21ab2a0274d8b2e0cf537dc77e6f1b417bcaac9e5bbd76fa9ad4c5f493e"
+  },
+  {
+    "file": "guardian_plate.glb",
+    "triangles": 96,
+    "boundsAndOriginPreserved": true,
+    "sha256": "7ad6ceeea8a84cc1a42f6d4da2d0f5b32f9e1d661161bab9d52de3c71a74443e"
+  },
+  {
+    "file": "woven_robes.fbx",
+    "triangles": 132,
+    "boundsAndOriginPreserved": true,
+    "sha256": "a9667576c49489f17b4b8c371e06ae9345ced9dd082e8d691b2210cd2b56a4ca"
+  },
+  {
+    "file": "woven_robes.glb",
+    "triangles": 132,
+    "boundsAndOriginPreserved": true,
+    "sha256": "c7ef60e7b3202a2c69396e31a6816960a243977417ac12c5b3a246527ead0ef8"
+  },
+  {
+    "file": "scout_coat.fbx",
+    "triangles": 132,
+    "boundsAndOriginPreserved": true,
+    "sha256": "8077f32e75ede42f30463f8a10d88782f58289991190fd97f1317f670c0961b5"
+  },
+  {
+    "file": "scout_coat.glb",
+    "triangles": 132,
+    "boundsAndOriginPreserved": true,
+    "sha256": "ddd7e21ae613bc5fb5c53854e2bbaecc276ecdf3cdeb7c37c221507608673602"
+  },
+  {
+    "file": "runewoven_mantle.fbx",
+    "triangles": 132,
+    "boundsAndOriginPreserved": true,
+    "sha256": "744eb706c28e1357da10122478634409d94c92b27c5cd02d697bcae86531a736"
+  },
+  {
+    "file": "runewoven_mantle.glb",
+    "triangles": 132,
+    "boundsAndOriginPreserved": true,
+    "sha256": "21749d36be55aad037e28b4bbb96624843139c64c4accdcb9f54a95cb40f978b"
+  },
+  {
+    "file": "harbor_mail.fbx",
+    "triangles": 96,
+    "boundsAndOriginPreserved": true,
+    "sha256": "548631a8cd082c2c6bafc36592796595bf84e0f2360a041e949327e9847706bc"
+  },
+  {
+    "file": "harbor_mail.glb",
+    "triangles": 96,
+    "boundsAndOriginPreserved": true,
+    "sha256": "efc91ec6aeec4f54519ebe7295910c6cd335a62fba2ea773c5c77e7ba1c7f662"
+  },
+  {
+    "file": "vanguard_harness.fbx",
+    "triangles": 96,
+    "boundsAndOriginPreserved": true,
+    "sha256": "9183bff2c9923cf55f48a48f3967c5711aef9d8ed167e7bf6d58452e2cd10103"
+  },
+  {
+    "file": "vanguard_harness.glb",
+    "triangles": 96,
+    "boundsAndOriginPreserved": true,
+    "sha256": "ddbfc87dd0a4e8f94c8dc49abab6dfa14afe3d7f0b03ba652c64cf9597648d5f"
+  },
+  {
+    "file": "pilgrim_robes.fbx",
+    "triangles": 132,
+    "boundsAndOriginPreserved": true,
+    "sha256": "532ea90f76d37990c317b7a06330e72f86421b6f6cd6c388fe87dd3c4bfb9a8d"
+  },
+  {
+    "file": "pilgrim_robes.glb",
+    "triangles": 132,
+    "boundsAndOriginPreserved": true,
+    "sha256": "6e026f40972d559617b059265f99674b4bd72dd31ac20ebb98300b67a275eb56"
+  },
+  {
+    "file": "bronze_ring.fbx",
+    "triangles": 108,
+    "boundsAndOriginPreserved": true,
+    "sha256": "719d2f0e0ae9ac1a98cd4a7e6b1cc3eb218fc3023353524c650bb219b2139920"
+  },
+  {
+    "file": "bronze_ring.glb",
+    "triangles": 108,
+    "boundsAndOriginPreserved": true,
+    "sha256": "ae4fe1b55848e64aa1003fd529f91738199d62472f61d9354cc85db53ed6e5a1"
+  },
+  {
+    "file": "vitality_charm.fbx",
+    "triangles": 48,
+    "boundsAndOriginPreserved": true,
+    "sha256": "6b870c0cf1c4ef921ffd3ccc7d5d1f6f99e5636acfe29680433d30c7092813c5"
+  },
+  {
+    "file": "vitality_charm.glb",
+    "triangles": 48,
+    "boundsAndOriginPreserved": true,
+    "sha256": "f4cd99217b56429097d6d5c6d9fffcd730acbd407e648dcbf788209b529e0ea8"
+  },
+  {
+    "file": "sentinel_seal.fbx",
+    "triangles": 60,
+    "boundsAndOriginPreserved": true,
+    "sha256": "f1b400dff3fc3c80bc24847edc14fe2ec68ade1a39c63f7328ff6daa4f48a0b2"
+  },
+  {
+    "file": "sentinel_seal.glb",
+    "triangles": 60,
+    "boundsAndOriginPreserved": true,
+    "sha256": "0545af94d640498b18980673812be388772a98cf28d00259d74945efa3c60ec8"
+  },
+  {
+    "file": "hunters_token.fbx",
+    "triangles": 60,
+    "boundsAndOriginPreserved": true,
+    "sha256": "8572f5db6919bf0c3ff7c957b4fe76f5b96e03d3e0608da61abd65a007fd34d4"
+  },
+  {
+    "file": "hunters_token.glb",
+    "triangles": 60,
+    "boundsAndOriginPreserved": true,
+    "sha256": "a5002e9068a15888adc11bcf72d56dfbf84d03fba1d348085901e2e5ef7459c0"
+  },
+  {
+    "file": "focus_prism.fbx",
+    "triangles": 48,
+    "boundsAndOriginPreserved": true,
+    "sha256": "93febfcda9810a677f394976011ffbfac2fae0e63d669628f9a8949405e01835"
+  },
+  {
+    "file": "focus_prism.glb",
+    "triangles": 48,
+    "boundsAndOriginPreserved": true,
+    "sha256": "1a78713408550d4015aae7abb69cd450d24df5e57c527588b20bf95e6d4af02c"
+  },
+  {
+    "file": "wardstone.fbx",
+    "triangles": 60,
+    "boundsAndOriginPreserved": true,
+    "sha256": "06524b1b45d4299954b856828fc45520b2a306fd809feae0f7077ed4da1cc81e"
+  },
+  {
+    "file": "wardstone.glb",
+    "triangles": 60,
+    "boundsAndOriginPreserved": true,
+    "sha256": "f93710d6695144c6f8e5b623b061622482a6f987fce76d8312994d8e9a1d5020"
+  },
+  {
+    "file": "stone.fbx",
+    "triangles": 36,
+    "boundsAndOriginPreserved": true,
+    "sha256": "63efdf388a1a112f5d4ea6c474a5cb96f974180c746a484447303d5330c0db6c"
+  },
+  {
+    "file": "stone.glb",
+    "triangles": 36,
+    "boundsAndOriginPreserved": true,
+    "sha256": "d5f616ffed41fe66e8d184871e81848bbdbee088b04428d8b9e3a84f4d4c8e91"
+  },
+  {
+    "file": "iron_ore.fbx",
+    "triangles": 48,
+    "boundsAndOriginPreserved": true,
+    "sha256": "5affa8febe50f557e17b014926951537baa6c202de707ec8ee6d029fc4b7a5c2"
+  },
+  {
+    "file": "iron_ore.glb",
+    "triangles": 48,
+    "boundsAndOriginPreserved": true,
+    "sha256": "6d5e5c023a99a4e6a6ebfca3aff7de6c760ddda6bfeb4ea14e130955c0c49614"
+  },
+  {
+    "file": "iron_ingot.fbx",
+    "triangles": 24,
+    "boundsAndOriginPreserved": true,
+    "sha256": "866176ca20cd7fb34b5b458a7d79075146910652589416e391a3e4e76c729010"
+  },
+  {
+    "file": "iron_ingot.glb",
+    "triangles": 24,
+    "boundsAndOriginPreserved": true,
+    "sha256": "c21d8f1555cb61699ed1cff1fae4c8c71f9fa997f6694c05f5d806632103b708"
+  },
+  {
+    "file": "timber.fbx",
+    "triangles": 84,
+    "boundsAndOriginPreserved": true,
+    "sha256": "860710cff32dcbd85c375c28dc409c484f607649abd7d7cd8cfc0b6e7b7fcaf3"
+  },
+  {
+    "file": "timber.glb",
+    "triangles": 84,
+    "boundsAndOriginPreserved": true,
+    "sha256": "3c1959bc1d323d771c881217098206aa3462870ca3081b58d6182094ab857972"
+  },
+  {
+    "file": "herb.fbx",
+    "triangles": 84,
+    "boundsAndOriginPreserved": true,
+    "sha256": "08f82d8aca6f7bf8e767cc2aae918498570a391dede844e4ca2917b6d960a25c"
+  },
+  {
+    "file": "herb.glb",
+    "triangles": 84,
+    "boundsAndOriginPreserved": true,
+    "sha256": "4febeaed6395c514bb1f4459b0f005e2dac8e4e54c9caa1603558e291dfdeaf8"
+  }
+]

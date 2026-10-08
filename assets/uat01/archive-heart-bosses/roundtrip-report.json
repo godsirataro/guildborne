@@ -1,0 +1,130 @@
+[
+  {
+    "file": "last_warden_Rest.fbx",
+    "asset": "last_warden",
+    "triangles": 468,
+    "bones": 16,
+    "weightsNormalized": true,
+    "sha256": "67b95600b47c1d2c4a1453231a65f7e5daa8bf8f5b73072e23e8199040638def"
+  },
+  {
+    "file": "last_warden_Rest.glb",
+    "asset": "last_warden",
+    "triangles": 468,
+    "bones": 16,
+    "weightsNormalized": true,
+    "sha256": "4c67737d44db98355f23ded742fe79478973d5140c6d1a2db15897c032e1c108"
+  },
+  {
+    "file": "last_warden_Idle.fbx",
+    "asset": "last_warden",
+    "triangles": 468,
+    "bones": 16,
+    "weightsNormalized": true,
+    "sha256": "f1c9dd604ed1fa80d1582d504576bbea33b29ce262afc3c77ab7f193aa4c532c",
+    "frames": 61,
+    "sampledMotion": 0.04274557082953834,
+    "rootStationary": true,
+    "loopSeamVerified": true
+  },
+  {
+    "file": "last_warden_Walk.fbx",
+    "asset": "last_warden",
+    "triangles": 468,
+    "bones": 16,
+    "weightsNormalized": true,
+    "sha256": "54be8ba745b4fe537d5e37b0e1bdbd11c2be15d95d6894466d0915f9ec7a0853",
+    "frames": 31,
+    "sampledMotion": 1.3437203746957493,
+    "rootStationary": true,
+    "loopSeamVerified": true
+  },
+  {
+    "file": "last_warden_Attack.fbx",
+    "asset": "last_warden",
+    "triangles": 468,
+    "bones": 16,
+    "weightsNormalized": true,
+    "sha256": "52c31a6dbfcbf23b4904f40c8412c8c30122b9e57a165967383c2522ce08e0eb",
+    "frames": 37,
+    "sampledMotion": 2.192819363880403,
+    "rootStationary": true,
+    "loopSeamVerified": false
+  },
+  {
+    "file": "last_warden_Hit.fbx",
+    "asset": "last_warden",
+    "triangles": 468,
+    "bones": 16,
+    "weightsNormalized": true,
+    "sha256": "94416396e4cc0bf3a8a0a6e08211285c28705589d9c9b90a4d1d7bba99a21a4a",
+    "frames": 16,
+    "sampledMotion": 0.315870013841959,
+    "rootStationary": true,
+    "loopSeamVerified": false
+  },
+  {
+    "file": "keeper_of_names_Rest.fbx",
+    "asset": "keeper_of_names",
+    "triangles": 804,
+    "bones": 16,
+    "weightsNormalized": true,
+    "sha256": "648af20a2b77901b7af7c3b104a13126b00fadcad0ab304582bff15b16d973b2"
+  },
+  {
+    "file": "keeper_of_names_Rest.glb",
+    "asset": "keeper_of_names",
+    "triangles": 804,
+    "bones": 16,
+    "weightsNormalized": true,
+    "sha256": "63e44e40cec0e64363b04d4b2b19fd165db9bd69d7e1c4667b1eea8e35cd98f2"
+  },
+  {
+    "file": "keeper_of_names_Idle.fbx",
+    "asset": "keeper_of_names",
+    "triangles": 804,
+    "bones": 16,
+    "weightsNormalized": true,
+    "sha256": "d91c679376f02cecdc41c31a2f1b26989ff731103156133235412e351bac68ed",
+    "frames": 61,
+    "sampledMotion": 0.056994089472368614,
+    "rootStationary": true,
+    "loopSeamVerified": true
+  },
+  {
+    "file": "keeper_of_names_Walk.fbx",
+    "asset": "keeper_of_names",
+    "triangles": 804,
+    "bones": 16,
+    "weightsNormalized": true,
+    "sha256": "193e0b538fa9a99995aa6377e1cacf202e799b6b3bbadb1ede65502c8d793569",
+    "frames": 31,
+    "sampledMotion": 1.7916274046795024,
+    "rootStationary": true,
+    "loopSeamVerified": true
+  },
+  {
+    "file": "keeper_of_names_Attack.fbx",
+    "asset": "keeper_of_names",
+    "triangles": 804,
+    "bones": 16,
+    "weightsNormalized": true,
+    "sha256": "2f9d806a789796c7de1428bc20cf153e59b289a62070ff5dba5e63e244b7267b",
+    "frames": 37,
+    "sampledMotion": 2.9237608890159663,
+    "rootStationary": true,
+    "loopSeamVerified": false
+  },
+  {
+    "file": "keeper_of_names_Hit.fbx",
+    "asset": "keeper_of_names",
+    "triangles": 804,
+    "bones": 16,
+    "weightsNormalized": true,
+    "sha256": "b0a5c6ca0cf62da32b1c5b2163ca41f67f38ecef2eedc541f1288424605cd9fa",
+    "frames": 16,
+    "sampledMotion": 0.4211599588512627,
+    "rootStationary": true,
+    "loopSeamVerified": false
+  }
+]

@@ -1,0 +1,9 @@
+{
+  "content": [
+    {
+      "type": "text",
+      "text": "{\"physicalMovementSimulated\":false,\"actorsPerParty\":6,\"simultaneousEnemies\":16,\"realClients\":0,\"syntheticRewardCallbacks\":48,\"regions\":{\"1\":{\"serverBatchP50Ms\":0.4378000012366101,\"region\":\"Greenwood\",\"serverBatchMaxMs\":7.075800000166055,\"serverBatchP95Ms\":4.434500002389541,\"ticks\":180,\"dodgeChoices\":1228,\"hits\":172},\"3\":{\"serverBatchP50Ms\":0.5186999987927266,\"region\":\"Ashen\",\"serverBatchMaxMs\":8.532899999408983,\"serverBatchP95Ms\":5.318800001987256,\"ticks\":180,\"dodgeChoices\":1464,\"hits\":168},\"2\":{\"serverBatchP50Ms\":0.411000000895001,\"region\":\"Ironveil\",\"serverBatchMaxMs\":9.213699999236269,\"serverBatchP95Ms\":1.2793999994755723,\"ticks\":180,\"dodgeChoices\":1020,\"hits\":164}},\"foreignDamageBlocked\":true,\"damageFormula\":\"fixed one damage for isolation, not balance\",\"parties\":4,\"profileWrites\":0}"
+    }
+  ],
+  "isError": false
+}

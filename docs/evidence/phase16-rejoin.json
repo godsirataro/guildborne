@@ -1,0 +1,542 @@
+{
+  "checkpoint": {
+    "data": {
+      "adventurers": {
+        "a:Priest": {
+          "equipmentSlots": {
+            "weapon": "recruit:Priest:1"
+          },
+          "stats": {
+            "Attack": 6,
+            "Defense": 3,
+            "Health": 24,
+            "WeaponBonus": 2
+          },
+          "name": "Sage",
+          "level": 1,
+          "id": "a:Priest",
+          "baseStats": {
+            "Defense": 3,
+            "Health": 24,
+            "Attack": 4
+          },
+          "xp": 5,
+          "classId": "Priest"
+        },
+        "a:Archer": {
+          "equipmentSlots": {
+            "weapon": "recruit:Archer:1"
+          },
+          "stats": {
+            "Attack": 10,
+            "Defense": 2,
+            "Health": 22,
+            "WeaponBonus": 2
+          },
+          "name": "Ash",
+          "level": 1,
+          "id": "a:Archer",
+          "baseStats": {
+            "Defense": 2,
+            "Health": 22,
+            "Attack": 8
+          },
+          "xp": 5,
+          "classId": "Archer"
+        },
+        "a:Mage": {
+          "equipmentSlots": {
+            "weapon": "recruit:Mage:1"
+          },
+          "stats": {
+            "Attack": 12,
+            "Defense": 1,
+            "Health": 20,
+            "WeaponBonus": 2
+          },
+          "name": "Lyra",
+          "level": 1,
+          "id": "a:Mage",
+          "baseStats": {
+            "Defense": 1,
+            "Health": 20,
+            "Attack": 10
+          },
+          "xp": 5,
+          "classId": "Mage"
+        },
+        "a:Warrior": {
+          "equipmentSlots": {
+            "weapon": "q:3:1"
+          },
+          "stats": {
+            "Attack": 12,
+            "Defense": 4,
+            "Health": 36,
+            "WeaponBonus": 4
+          },
+          "name": "Rowan",
+          "level": 3,
+          "id": "a:Warrior",
+          "baseStats": {
+            "Defense": 4,
+            "Health": 30,
+            "Attack": 6
+          },
+          "xp": 110,
+          "classId": "Warrior"
+        },
+        "a:Knight": {
+          "equipmentSlots": {
+            "weapon": "recruit:Knight:1"
+          },
+          "stats": {
+            "Attack": 6,
+            "Defense": 7,
+            "Health": 40,
+            "WeaponBonus": 2
+          },
+          "name": "Bram",
+          "level": 1,
+          "id": "a:Knight",
+          "baseStats": {
+            "Defense": 7,
+            "Health": 40,
+            "Attack": 4
+          },
+          "xp": 5,
+          "classId": "Knight"
+        }
+      },
+      "party": {
+        "adventurerIds": [
+          "a:Knight",
+          "a:Warrior",
+          "a:Archer",
+          "a:Mage",
+          "a:Priest"
+        ]
+      },
+      "quests": {
+        "active": {
+          "contentVersion": "slice-1.6",
+          "completeAt": 1790588051,
+          "questId": "quarry_patrol",
+          "state": "Running",
+          "partySnapshot": [
+            {
+              "id": "a:Knight",
+              "stats": {
+                "WeaponBonus": 2,
+                "Defense": 7,
+                "Health": 40,
+                "Attack": 6
+              }
+            },
+            {
+              "id": "a:Warrior",
+              "stats": {
+                "WeaponBonus": 4,
+                "Defense": 4,
+                "Health": 36,
+                "Attack": 12
+              }
+            },
+            {
+              "id": "a:Archer",
+              "stats": {
+                "WeaponBonus": 2,
+                "Defense": 2,
+                "Health": 22,
+                "Attack": 10
+              }
+            },
+            {
+              "id": "a:Mage",
+              "stats": {
+                "WeaponBonus": 2,
+                "Defense": 1,
+                "Health": 20,
+                "Attack": 12
+              }
+            },
+            {
+              "id": "a:Priest",
+              "stats": {
+                "WeaponBonus": 2,
+                "Defense": 3,
+                "Health": 24,
+                "Attack": 6
+              }
+            }
+          ],
+          "rewardSnapshot": {
+            "Items": [
+              {
+                "Id": "iron_ore",
+                "Quantity": 2
+              }
+            ],
+            "XP": 10,
+            "Gold": 15
+          },
+          "startAt": 1790588022,
+          "sequence": 8,
+          "runId": "q:8",
+          "firstClear": false
+        },
+        "nextRunSequence": 9,
+        "lastResult": {
+          "questName": "Trail Watch",
+          "runId": "q:7",
+          "reward": {
+            "Items": [
+              {
+                "Id": "timber",
+                "Quantity": 1
+              },
+              {
+                "Id": "herb",
+                "Quantity": 1
+              }
+            ],
+            "XP": 5,
+            "Gold": 10
+          }
+        },
+        "claimedThrough": 7,
+        "firstClears": {
+          "timber_escort": true,
+          "quarry_patrol": true,
+          "trail_watch": true
+        }
+      },
+      "hallLevel": 2,
+      "gold": 10,
+      "inventory": {
+        "equipment": {
+          "recruit:Knight:1": {
+            "binding": "Account",
+            "definitionId": "knight_sword",
+            "upgradeLevel": 0
+          },
+          "recruit:Priest:1": {
+            "binding": "Account",
+            "definitionId": "apprentice_staff",
+            "upgradeLevel": 0
+          },
+          "recruit:Mage:1": {
+            "binding": "Account",
+            "definitionId": "mage_staff",
+            "upgradeLevel": 0
+          },
+          "q:3:1": {
+            "binding": "Account",
+            "definitionId": "iron_sword",
+            "upgradeLevel": 0
+          },
+          "q:1:1": {
+            "binding": "Account",
+            "definitionId": "training_sword",
+            "upgradeLevel": 0
+          },
+          "recruit:Archer:1": {
+            "binding": "Account",
+            "definitionId": "short_bow",
+            "upgradeLevel": 0
+          }
+        },
+        "stacks": {
+          "herb": 4,
+          "timber": 4
+        }
+      },
+      "language": "th",
+      "progression": {
+        "tutorialStep": "complete",
+        "everEquipped": true,
+        "welcomeSeen": true,
+        "tutorialCompleted": true,
+        "recruitedClasses": {
+          "Warrior": true,
+          "Archer": true,
+          "Knight": true,
+          "Priest": true,
+          "Mage": true
+        }
+      }
+    },
+    "revision": 34
+  },
+  "restored": {
+    "revision": 34,
+    "data": {
+      "progression": {
+        "tutorialStep": "complete",
+        "everEquipped": true,
+        "welcomeSeen": true,
+        "tutorialCompleted": true,
+        "recruitedClasses": {
+          "Warrior": true,
+          "Archer": true,
+          "Knight": true,
+          "Priest": true,
+          "Mage": true
+        }
+      },
+      "party": {
+        "adventurerIds": {
+          "1": "a:Knight",
+          "2": "a:Warrior",
+          "3": "a:Archer",
+          "4": "a:Mage",
+          "5": "a:Priest"
+        }
+      },
+      "adventurers": {
+        "a:Priest": {
+          "equipmentSlots": {
+            "weapon": "recruit:Priest:1"
+          },
+          "stats": {
+            "Attack": 6,
+            "Defense": 3,
+            "Health": 24,
+            "WeaponBonus": 2
+          },
+          "name": "Sage",
+          "level": 1,
+          "id": "a:Priest",
+          "baseStats": {
+            "Defense": 3,
+            "Health": 24,
+            "Attack": 4
+          },
+          "xp": 5,
+          "classId": "Priest"
+        },
+        "a:Archer": {
+          "equipmentSlots": {
+            "weapon": "recruit:Archer:1"
+          },
+          "stats": {
+            "Attack": 10,
+            "Defense": 2,
+            "Health": 22,
+            "WeaponBonus": 2
+          },
+          "name": "Ash",
+          "level": 1,
+          "id": "a:Archer",
+          "baseStats": {
+            "Defense": 2,
+            "Health": 22,
+            "Attack": 8
+          },
+          "xp": 5,
+          "classId": "Archer"
+        },
+        "a:Warrior": {
+          "equipmentSlots": {
+            "weapon": "q:3:1"
+          },
+          "stats": {
+            "Attack": 12,
+            "Defense": 4,
+            "Health": 36,
+            "WeaponBonus": 4
+          },
+          "name": "Rowan",
+          "level": 3,
+          "id": "a:Warrior",
+          "baseStats": {
+            "Defense": 4,
+            "Health": 30,
+            "Attack": 6
+          },
+          "xp": 110,
+          "classId": "Warrior"
+        },
+        "a:Mage": {
+          "equipmentSlots": {
+            "weapon": "recruit:Mage:1"
+          },
+          "stats": {
+            "Attack": 12,
+            "Defense": 1,
+            "Health": 20,
+            "WeaponBonus": 2
+          },
+          "name": "Lyra",
+          "level": 1,
+          "id": "a:Mage",
+          "baseStats": {
+            "Defense": 1,
+            "Health": 20,
+            "Attack": 10
+          },
+          "xp": 5,
+          "classId": "Mage"
+        },
+        "a:Knight": {
+          "equipmentSlots": {
+            "weapon": "recruit:Knight:1"
+          },
+          "stats": {
+            "Attack": 6,
+            "Defense": 7,
+            "Health": 40,
+            "WeaponBonus": 2
+          },
+          "name": "Bram",
+          "level": 1,
+          "id": "a:Knight",
+          "baseStats": {
+            "Defense": 7,
+            "Health": 40,
+            "Attack": 4
+          },
+          "xp": 5,
+          "classId": "Knight"
+        }
+      },
+      "gold": 10,
+      "quests": {
+        "active": {
+          "contentVersion": "slice-1.6",
+          "completeAt": 1790588051,
+          "questId": "quarry_patrol",
+          "partySnapshot": {
+            "1": {
+              "id": "a:Knight",
+              "stats": {
+                "WeaponBonus": 2,
+                "Defense": 7,
+                "Health": 40,
+                "Attack": 6
+              }
+            },
+            "2": {
+              "id": "a:Warrior",
+              "stats": {
+                "WeaponBonus": 4,
+                "Defense": 4,
+                "Health": 36,
+                "Attack": 12
+              }
+            },
+            "3": {
+              "id": "a:Archer",
+              "stats": {
+                "WeaponBonus": 2,
+                "Defense": 2,
+                "Health": 22,
+                "Attack": 10
+              }
+            },
+            "4": {
+              "id": "a:Mage",
+              "stats": {
+                "WeaponBonus": 2,
+                "Defense": 1,
+                "Health": 20,
+                "Attack": 12
+              }
+            },
+            "5": {
+              "id": "a:Priest",
+              "stats": {
+                "WeaponBonus": 2,
+                "Defense": 3,
+                "Health": 24,
+                "Attack": 6
+              }
+            }
+          },
+          "state": "Running",
+          "rewardSnapshot": {
+            "Items": {
+              "1": {
+                "Id": "iron_ore",
+                "Quantity": 2
+              }
+            },
+            "XP": 10,
+            "Gold": 15
+          },
+          "startAt": 1790588022,
+          "firstClear": false,
+          "runId": "q:8",
+          "sequence": 8
+        },
+        "nextRunSequence": 9,
+        "lastResult": {
+          "questName": "Trail Watch",
+          "runId": "q:7",
+          "reward": {
+            "Items": {
+              "1": {
+                "Id": "timber",
+                "Quantity": 1
+              },
+              "2": {
+                "Id": "herb",
+                "Quantity": 1
+              }
+            },
+            "XP": 5,
+            "Gold": 10
+          }
+        },
+        "claimedThrough": 7,
+        "firstClears": {
+          "timber_escort": true,
+          "quarry_patrol": true,
+          "trail_watch": true
+        }
+      },
+      "inventory": {
+        "equipment": {
+          "recruit:Knight:1": {
+            "binding": "Account",
+            "upgradeLevel": 0,
+            "definitionId": "knight_sword"
+          },
+          "recruit:Priest:1": {
+            "binding": "Account",
+            "upgradeLevel": 0,
+            "definitionId": "apprentice_staff"
+          },
+          "recruit:Mage:1": {
+            "binding": "Account",
+            "upgradeLevel": 0,
+            "definitionId": "mage_staff"
+          },
+          "q:3:1": {
+            "binding": "Account",
+            "upgradeLevel": 0,
+            "definitionId": "iron_sword"
+          },
+          "recruit:Archer:1": {
+            "binding": "Account",
+            "upgradeLevel": 0,
+            "definitionId": "short_bow"
+          },
+          "q:1:1": {
+            "binding": "Account",
+            "upgradeLevel": 0,
+            "definitionId": "training_sword"
+          }
+        },
+        "stacks": {
+          "herb": 4,
+          "timber": 4
+        }
+      },
+      "language": "th",
+      "hallLevel": 2
+    }
+  },
+  "normalizedDifferences": [],
+  "note": "MCP table results encode arrays as numeric-key objects; normalized to identical one-based keys before comparison."
+}

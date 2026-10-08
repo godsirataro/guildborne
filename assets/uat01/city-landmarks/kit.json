@@ -1,0 +1,4235 @@
+{
+  "schema": 1,
+  "units": "stud",
+  "palette": {
+    "ivory": [
+      235,
+      225,
+      202
+    ],
+    "stone": [
+      155,
+      159,
+      155
+    ],
+    "basalt": [
+      65,
+      73,
+      81
+    ],
+    "wood": [
+      128,
+      82,
+      53
+    ],
+    "redwood": [
+      114,
+      63,
+      42
+    ],
+    "burgundy": [
+      135,
+      53,
+      64
+    ],
+    "emerald": [
+      46,
+      119,
+      84
+    ],
+    "copper": [
+      180,
+      113,
+      64
+    ],
+    "indigo": [
+      61,
+      64,
+      123
+    ],
+    "teal": [
+      49,
+      130,
+      138
+    ],
+    "ochre": [
+      211,
+      156,
+      62
+    ],
+    "gold": [
+      220,
+      184,
+      101
+    ],
+    "cyan": [
+      88,
+      201,
+      214
+    ],
+    "amber": [
+      241,
+      147,
+      58
+    ],
+    "leaf": [
+      74,
+      140,
+      88
+    ]
+  },
+  "assets": [
+    {
+      "id": "crownford_clock_gate",
+      "city": "Crownford",
+      "name": "Clock Gate",
+      "footprint": [
+        32,
+        22
+      ],
+      "parts": [
+        {
+          "name": "Foundation",
+          "size": [
+            32,
+            1,
+            22
+          ],
+          "position": [
+            0,
+            0.5,
+            0
+          ],
+          "color": "stone",
+          "rotation": [
+            0,
+            0,
+            0
+          ],
+          "collide": true,
+          "shape": "Block"
+        },
+        {
+          "name": "SideBorder",
+          "size": [
+            0.5,
+            0.2,
+            20
+          ],
+          "position": [
+            -15.0,
+            1.1,
+            0
+          ],
+          "color": "gold",
+          "rotation": [
+            0,
+            0,
+            0
+          ],
+          "collide": false,
+          "shape": "Block"
+        },
+        {
+          "name": "SideBorder",
+          "size": [
+            0.5,
+            0.2,
+            20
+          ],
+          "position": [
+            15.0,
+            1.1,
+            0
+          ],
+          "color": "gold",
+          "rotation": [
+            0,
+            0,
+            0
+          ],
+          "collide": false,
+          "shape": "Block"
+        },
+        {
+          "name": "GatePier",
+          "size": [
+            7,
+            20,
+            8
+          ],
+          "position": [
+            -10,
+            11,
+            0
+          ],
+          "color": "ivory",
+          "rotation": [
+            0,
+            0,
+            0
+          ],
+          "collide": true,
+          "shape": "Block"
+        },
+        {
+          "name": "PierFoot",
+          "size": [
+            8,
+            1.4,
+            9
+          ],
+          "position": [
+            -10,
+            1.7,
+            0
+          ],
+          "color": "stone",
+          "rotation": [
+            0,
+            0,
+            0
+          ],
+          "collide": true,
+          "shape": "Block"
+        },
+        {
+          "name": "PierCap",
+          "size": [
+            8,
+            1,
+            9
+          ],
+          "position": [
+            -10,
+            21,
+            0
+          ],
+          "color": "gold",
+          "rotation": [
+            0,
+            0,
+            0
+          ],
+          "collide": true,
+          "shape": "Block"
+        },
+        {
+          "name": "Turret",
+          "size": [
+            5,
+            6,
+            6
+          ],
+          "position": [
+            -10,
+            24.5,
+            0
+          ],
+          "color": "ivory",
+          "rotation": [
+            0,
+            0,
+            0
+          ],
+          "collide": true,
+          "shape": "Block"
+        },
+        {
+          "name": "TurretRoof",
+          "size": [
+            6,
+            2,
+            7
+          ],
+          "position": [
+            -10,
+            28.5,
+            0
+          ],
+          "color": "burgundy",
+          "rotation": [
+            0,
+            0,
+            0
+          ],
+          "collide": true,
+          "shape": "Block"
+        },
+        {
+          "name": "Banner",
+          "size": [
+            2.6,
+            7,
+            0.35
+          ],
+          "position": [
+            -10,
+            15,
+            4.3
+          ],
+          "color": "burgundy",
+          "rotation": [
+            0,
+            0,
+            0
+          ],
+          "collide": false,
+          "shape": "Block"
+        },
+        {
+          "name": "GatePier",
+          "size": [
+            7,
+            20,
+            8
+          ],
+          "position": [
+            10,
+            11,
+            0
+          ],
+          "color": "ivory",
+          "rotation": [
+            0,
+            0,
+            0
+          ],
+          "collide": true,
+          "shape": "Block"
+        },
+        {
+          "name": "PierFoot",
+          "size": [
+            8,
+            1.4,
+            9
+          ],
+          "position": [
+            10,
+            1.7,
+            0
+          ],
+          "color": "stone",
+          "rotation": [
+            0,
+            0,
+            0
+          ],
+          "collide": true,
+          "shape": "Block"
+        },
+        {
+          "name": "PierCap",
+          "size": [
+            8,
+            1,
+            9
+          ],
+          "position": [
+            10,
+            21,
+            0
+          ],
+          "color": "gold",
+          "rotation": [
+            0,
+            0,
+            0
+          ],
+          "collide": true,
+          "shape": "Block"
+        },
+        {
+          "name": "Turret",
+          "size": [
+            5,
+            6,
+            6
+          ],
+          "position": [
+            10,
+            24.5,
+            0
+          ],
+          "color": "ivory",
+          "rotation": [
+            0,
+            0,
+            0
+          ],
+          "collide": true,
+          "shape": "Block"
+        },
+        {
+          "name": "TurretRoof",
+          "size": [
+            6,
+            2,
+            7
+          ],
+          "position": [
+            10,
+            28.5,
+            0
+          ],
+          "color": "burgundy",
+          "rotation": [
+            0,
+            0,
+            0
+          ],
+          "collide": true,
+          "shape": "Block"
+        },
+        {
+          "name": "Banner",
+          "size": [
+            2.6,
+            7,
+            0.35
+          ],
+          "position": [
+            10,
+            15,
+            4.3
+          ],
+          "color": "burgundy",
+          "rotation": [
+            0,
+            0,
+            0
+          ],
+          "collide": false,
+          "shape": "Block"
+        },
+        {
+          "name": "ArchBeam",
+          "size": [
+            28,
+            5,
+            8
+          ],
+          "position": [
+            0,
+            19,
+            0
+          ],
+          "color": "ivory",
+          "rotation": [
+            0,
+            0,
+            0
+          ],
+          "collide": true,
+          "shape": "Block"
+        },
+        {
+          "name": "ClockHouse",
+          "size": [
+            11,
+            11,
+            8
+          ],
+          "position": [
+            0,
+            26.5,
+            0
+          ],
+          "color": "ivory",
+          "rotation": [
+            0,
+            0,
+            0
+          ],
+          "collide": true,
+          "shape": "Block"
+        },
+        {
+          "name": "ClockRoof",
+          "size": [
+            13,
+            2,
+            10
+          ],
+          "position": [
+            0,
+            33,
+            0
+          ],
+          "color": "burgundy",
+          "rotation": [
+            0,
+            0,
+            0
+          ],
+          "collide": true,
+          "shape": "Block"
+        },
+        {
+          "name": "ClockFace",
+          "size": [
+            7,
+            7,
+            0.35
+          ],
+          "position": [
+            0,
+            27,
+            4.3
+          ],
+          "color": "gold",
+          "rotation": [
+            0,
+            0,
+            0
+          ],
+          "collide": false,
+          "shape": "Block"
+        },
+        {
+          "name": "ClockDial",
+          "size": [
+            6.2,
+            6.2,
+            0.35
+          ],
+          "position": [
+            0,
+            27,
+            4.55
+          ],
+          "color": "ivory",
+          "rotation": [
+            0,
+            0,
+            0
+          ],
+          "collide": false,
+          "shape": "Block"
+        },
+        {
+          "name": "ClockTick",
+          "size": [
+            0.3,
+            0.7,
+            0.2
+          ],
+          "position": [
+            0.0,
+            29.5,
+            4.8
+          ],
+          "color": "basalt",
+          "rotation": [
+            0,
+            0,
+            -0.0
+          ],
+          "collide": false,
+          "shape": "Block"
+        },
+        {
+          "name": "ClockTick",
+          "size": [
+            0.3,
+            0.7,
+            0.2
+          ],
+          "position": [
+            1.2499999999999998,
+            29.165063509461095,
+            4.8
+          ],
+          "color": "basalt",
+          "rotation": [
+            0,
+            0,
+            -29.999999999999996
+          ],
+          "collide": false,
+          "shape": "Block"
+        },
+        {
+          "name": "ClockTick",
+          "size": [
+            0.3,
+            0.7,
+            0.2
+          ],
+          "position": [
+            2.1650635094610964,
+            28.25,
+            4.8
+          ],
+          "color": "basalt",
+          "rotation": [
+            0,
+            0,
+            -59.99999999999999
+          ],
+          "collide": false,
+          "shape": "Block"
+        },
+        {
+          "name": "ClockTick",
+          "size": [
+            0.3,
+            0.7,
+            0.2
+          ],
+          "position": [
+            2.5,
+            27.0,
+            4.8
+          ],
+          "color": "basalt",
+          "rotation": [
+            0,
+            0,
+            -90.0
+          ],
+          "collide": false,
+          "shape": "Block"
+        },
+        {
+          "name": "ClockTick",
+          "size": [
+            0.3,
+            0.7,
+            0.2
+          ],
+          "position": [
+            2.165063509461097,
+            25.75,
+            4.8
+          ],
+          "color": "basalt",
+          "rotation": [
+            0,
+            0,
+            -119.99999999999999
+          ],
+          "collide": false,
+          "shape": "Block"
+        },
+        {
+          "name": "ClockTick",
+          "size": [
+            0.3,
+            0.7,
+            0.2
+          ],
+          "position": [
+            1.2499999999999998,
+            24.834936490538905,
+            4.8
+          ],
+          "color": "basalt",
+          "rotation": [
+            0,
+            0,
+            -150.0
+          ],
+          "collide": false,
+          "shape": "Block"
+        },
+        {
+          "name": "ClockTick",
+          "size": [
+            0.3,
+            0.7,
+            0.2
+          ],
+          "position": [
+            3.061616997868383e-16,
+            24.5,
+            4.8
+          ],
+          "color": "basalt",
+          "rotation": [
+            0,
+            0,
+            -180.0
+          ],
+          "collide": false,
+          "shape": "Block"
+        },
+        {
+          "name": "ClockTick",
+          "size": [
+            0.3,
+            0.7,
+            0.2
+          ],
+          "position": [
+            -1.2499999999999993,
+            24.8349364905389,
+            4.8
+          ],
+          "color": "basalt",
+          "rotation": [
+            0,
+            0,
+            -210.0
+          ],
+          "collide": false,
+          "shape": "Block"
+        },
+        {
+          "name": "ClockTick",
+          "size": [
+            0.3,
+            0.7,
+            0.2
+          ],
+          "position": [
+            -2.1650635094610964,
+            25.75,
+            4.8
+          ],
+          "color": "basalt",
+          "rotation": [
+            0,
+            0,
+            -239.99999999999997
+          ],
+          "collide": false,
+          "shape": "Block"
+        },
+        {
+          "name": "ClockTick",
+          "size": [
+            0.3,
+            0.7,
+            0.2
+          ],
+          "position": [
+            -2.5,
+            27.0,
+            4.8
+          ],
+          "color": "basalt",
+          "rotation": [
+            0,
+            0,
+            -270.0
+          ],
+          "collide": false,
+          "shape": "Block"
+        },
+        {
+          "name": "ClockTick",
+          "size": [
+            0.3,
+            0.7,
+            0.2
+          ],
+          "position": [
+            -2.1650635094610964,
+            28.25,
+            4.8
+          ],
+          "color": "basalt",
+          "rotation": [
+            0,
+            0,
+            -300.0
+          ],
+          "collide": false,
+          "shape": "Block"
+        },
+        {
+          "name": "ClockTick",
+          "size": [
+            0.3,
+            0.7,
+            0.2
+          ],
+          "position": [
+            -1.250000000000001,
+            29.165063509461095,
+            4.8
+          ],
+          "color": "basalt",
+          "rotation": [
+            0,
+            0,
+            -330.0
+          ],
+          "collide": false,
+          "shape": "Block"
+        },
+        {
+          "name": "ClockHand",
+          "size": [
+            0.28,
+            2.3,
+            0.25
+          ],
+          "position": [
+            0,
+            27.9,
+            5
+          ],
+          "color": "basalt",
+          "rotation": [
+            0,
+            0,
+            0
+          ],
+          "collide": false,
+          "shape": "Block"
+        },
+        {
+          "name": "ClockHand",
+          "size": [
+            1.8,
+            0.28,
+            0.25
+          ],
+          "position": [
+            0.75,
+            27,
+            5.05
+          ],
+          "color": "basalt",
+          "rotation": [
+            0,
+            0,
+            0
+          ],
+          "collide": false,
+          "shape": "Block"
+        }
+      ],
+      "runtimeBound": false,
+      "entryRoute": {
+        "x": 0,
+        "fromZ": 15.0,
+        "toZ": 0,
+        "width": 4,
+        "height": 5,
+        "floorY": 1
+      }
+    },
+    {
+      "id": "sylvaris_council_tree",
+      "city": "Sylvaris",
+      "name": "Council Tree Pavilion",
+      "footprint": [
+        38,
+        34
+      ],
+      "parts": [
+        {
+          "name": "Foundation",
+          "size": [
+            38,
+            1,
+            34
+          ],
+          "position": [
+            0,
+            0.5,
+            0
+          ],
+          "color": "stone",
+          "rotation": [
+            0,
+            0,
+            0
+          ],
+          "collide": true,
+          "shape": "Block"
+        },
+        {
+          "name": "SideBorder",
+          "size": [
+            0.5,
+            0.2,
+            32
+          ],
+          "position": [
+            -18.0,
+            1.1,
+            0
+          ],
+          "color": "gold",
+          "rotation": [
+            0,
+            0,
+            0
+          ],
+          "collide": false,
+          "shape": "Block"
+        },
+        {
+          "name": "SideBorder",
+          "size": [
+            0.5,
+            0.2,
+            32
+          ],
+          "position": [
+            18.0,
+            1.1,
+            0
+          ],
+          "color": "gold",
+          "rotation": [
+            0,
+            0,
+            0
+          ],
+          "collide": false,
+          "shape": "Block"
+        },
+        {
+          "name": "LivingTrunk",
+          "size": [
+            5,
+            26,
+            5
+          ],
+          "position": [
+            0,
+            14,
+            -9
+          ],
+          "color": "wood",
+          "rotation": [
+            0,
+            0,
+            0
+          ],
+          "collide": true,
+          "shape": "Block"
+        },
+        {
+          "name": "CarvedColumn",
+          "size": [
+            1.6,
+            16,
+            1.6
+          ],
+          "position": [
+            -13,
+            9,
+            -11
+          ],
+          "color": "ivory",
+          "rotation": [
+            0,
+            0,
+            0
+          ],
+          "collide": true,
+          "shape": "Block"
+        },
+        {
+          "name": "ColumnCapital",
+          "size": [
+            3,
+            1,
+            3
+          ],
+          "position": [
+            -13,
+            17,
+            -11
+          ],
+          "color": "gold",
+          "rotation": [
+            0,
+            0,
+            0
+          ],
+          "collide": true,
+          "shape": "Block"
+        },
+        {
+          "name": "CarvedColumn",
+          "size": [
+            1.6,
+            16,
+            1.6
+          ],
+          "position": [
+            -13,
+            9,
+            11
+          ],
+          "color": "ivory",
+          "rotation": [
+            0,
+            0,
+            0
+          ],
+          "collide": true,
+          "shape": "Block"
+        },
+        {
+          "name": "ColumnCapital",
+          "size": [
+            3,
+            1,
+            3
+          ],
+          "position": [
+            -13,
+            17,
+            11
+          ],
+          "color": "gold",
+          "rotation": [
+            0,
+            0,
+            0
+          ],
+          "collide": true,
+          "shape": "Block"
+        },
+        {
+          "name": "CarvedColumn",
+          "size": [
+            1.6,
+            16,
+            1.6
+          ],
+          "position": [
+            13,
+            9,
+            -11
+          ],
+          "color": "ivory",
+          "rotation": [
+            0,
+            0,
+            0
+          ],
+          "collide": true,
+          "shape": "Block"
+        },
+        {
+          "name": "ColumnCapital",
+          "size": [
+            3,
+            1,
+            3
+          ],
+          "position": [
+            13,
+            17,
+            -11
+          ],
+          "color": "gold",
+          "rotation": [
+            0,
+            0,
+            0
+          ],
+          "collide": true,
+          "shape": "Block"
+        },
+        {
+          "name": "CarvedColumn",
+          "size": [
+            1.6,
+            16,
+            1.6
+          ],
+          "position": [
+            13,
+            9,
+            11
+          ],
+          "color": "ivory",
+          "rotation": [
+            0,
+            0,
+            0
+          ],
+          "collide": true,
+          "shape": "Block"
+        },
+        {
+          "name": "ColumnCapital",
+          "size": [
+            3,
+            1,
+            3
+          ],
+          "position": [
+            13,
+            17,
+            11
+          ],
+          "color": "gold",
+          "rotation": [
+            0,
+            0,
+            0
+          ],
+          "collide": true,
+          "shape": "Block"
+        },
+        {
+          "name": "SideBeam",
+          "size": [
+            1.5,
+            1.4,
+            25
+          ],
+          "position": [
+            -13,
+            17.8,
+            0
+          ],
+          "color": "ivory",
+          "rotation": [
+            0,
+            0,
+            0
+          ],
+          "collide": true,
+          "shape": "Block"
+        },
+        {
+          "name": "SideBeam",
+          "size": [
+            1.5,
+            1.4,
+            25
+          ],
+          "position": [
+            13,
+            17.8,
+            0
+          ],
+          "color": "ivory",
+          "rotation": [
+            0,
+            0,
+            0
+          ],
+          "collide": true,
+          "shape": "Block"
+        },
+        {
+          "name": "FrontBeam",
+          "size": [
+            28,
+            1.5,
+            1.5
+          ],
+          "position": [
+            0,
+            17.8,
+            11
+          ],
+          "color": "ivory",
+          "rotation": [
+            0,
+            0,
+            0
+          ],
+          "collide": true,
+          "shape": "Block"
+        },
+        {
+          "name": "BackBeam",
+          "size": [
+            28,
+            1.5,
+            1.5
+          ],
+          "position": [
+            0,
+            17.8,
+            -11
+          ],
+          "color": "ivory",
+          "rotation": [
+            0,
+            0,
+            0
+          ],
+          "collide": true,
+          "shape": "Block"
+        },
+        {
+          "name": "TreeBough",
+          "size": [
+            2,
+            14.142135623730951,
+            2
+          ],
+          "position": [
+            -5.0,
+            22.0,
+            -9.0
+          ],
+          "color": "wood",
+          "rotation": [
+            0,
+            0,
+            45.0
+          ],
+          "collide": false,
+          "shape": "Block"
+        },
+        {
+          "name": "LeafCanopy",
+          "size": [
+            17,
+            4,
+            15
+          ],
+          "position": [
+            -7,
+            29,
+            -8
+          ],
+          "color": "emerald",
+          "rotation": [
+            0,
+            0,
+            -9
+          ],
+          "collide": false,
+          "shape": "Block"
+        },
+        {
+          "name": "LeafCrown",
+          "size": [
+            12,
+            4,
+            11
+          ],
+          "position": [
+            -5,
+            32,
+            -8
+          ],
+          "color": "leaf",
+          "rotation": [
+            0,
+            0,
+            0
+          ],
+          "collide": false,
+          "shape": "Block"
+        },
+        {
+          "name": "CouncilBench",
+          "size": [
+            3,
+            2,
+            8
+          ],
+          "position": [
+            -11,
+            2,
+            -5
+          ],
+          "color": "wood",
+          "rotation": [
+            0,
+            0,
+            0
+          ],
+          "collide": true,
+          "shape": "Block"
+        },
+        {
+          "name": "CouncilBench",
+          "size": [
+            3,
+            2,
+            8
+          ],
+          "position": [
+            -11,
+            2,
+            6
+          ],
+          "color": "wood",
+          "rotation": [
+            0,
+            0,
+            0
+          ],
+          "collide": true,
+          "shape": "Block"
+        },
+        {
+          "name": "TreeBough",
+          "size": [
+            2,
+            14.142135623730951,
+            2
+          ],
+          "position": [
+            5.0,
+            22.0,
+            -9.0
+          ],
+          "color": "wood",
+          "rotation": [
+            0,
+            0,
+            -45.0
+          ],
+          "collide": false,
+          "shape": "Block"
+        },
+        {
+          "name": "LeafCanopy",
+          "size": [
+            17,
+            4,
+            15
+          ],
+          "position": [
+            7,
+            29,
+            -8
+          ],
+          "color": "emerald",
+          "rotation": [
+            0,
+            0,
+            9
+          ],
+          "collide": false,
+          "shape": "Block"
+        },
+        {
+          "name": "LeafCrown",
+          "size": [
+            12,
+            4,
+            11
+          ],
+          "position": [
+            5,
+            32,
+            -8
+          ],
+          "color": "leaf",
+          "rotation": [
+            0,
+            0,
+            0
+          ],
+          "collide": false,
+          "shape": "Block"
+        },
+        {
+          "name": "CouncilBench",
+          "size": [
+            3,
+            2,
+            8
+          ],
+          "position": [
+            11,
+            2,
+            -5
+          ],
+          "color": "wood",
+          "rotation": [
+            0,
+            0,
+            0
+          ],
+          "collide": true,
+          "shape": "Block"
+        },
+        {
+          "name": "CouncilBench",
+          "size": [
+            3,
+            2,
+            8
+          ],
+          "position": [
+            11,
+            2,
+            6
+          ],
+          "color": "wood",
+          "rotation": [
+            0,
+            0,
+            0
+          ],
+          "collide": true,
+          "shape": "Block"
+        },
+        {
+          "name": "CouncilLectern",
+          "size": [
+            5,
+            3,
+            3
+          ],
+          "position": [
+            0,
+            2.5,
+            -5
+          ],
+          "color": "ivory",
+          "rotation": [
+            0,
+            0,
+            0
+          ],
+          "collide": true,
+          "shape": "Block"
+        },
+        {
+          "name": "AmberLamp",
+          "size": [
+            1.5,
+            2,
+            1.5
+          ],
+          "position": [
+            -13,
+            14,
+            11
+          ],
+          "color": "amber",
+          "rotation": [
+            0,
+            0,
+            0
+          ],
+          "collide": false,
+          "shape": "Block"
+        },
+        {
+          "name": "AmberLamp",
+          "size": [
+            1.5,
+            2,
+            1.5
+          ],
+          "position": [
+            13,
+            14,
+            11
+          ],
+          "color": "amber",
+          "rotation": [
+            0,
+            0,
+            0
+          ],
+          "collide": false,
+          "shape": "Block"
+        }
+      ],
+      "runtimeBound": false,
+      "entryRoute": {
+        "x": 0,
+        "fromZ": 21.0,
+        "toZ": 0,
+        "width": 4,
+        "height": 5,
+        "floorY": 1
+      }
+    },
+    {
+      "id": "deepforge_grand_forge",
+      "city": "Deepforge",
+      "name": "Grand Forge",
+      "footprint": [
+        40,
+        34
+      ],
+      "parts": [
+        {
+          "name": "Foundation",
+          "size": [
+            40,
+            1,
+            34
+          ],
+          "position": [
+            0,
+            0.5,
+            0
+          ],
+          "color": "stone",
+          "rotation": [
+            0,
+            0,
+            0
+          ],
+          "collide": true,
+          "shape": "Block"
+        },
+        {
+          "name": "SideBorder",
+          "size": [
+            0.5,
+            0.2,
+            32
+          ],
+          "position": [
+            -19.0,
+            1.1,
+            0
+          ],
+          "color": "gold",
+          "rotation": [
+            0,
+            0,
+            0
+          ],
+          "collide": false,
+          "shape": "Block"
+        },
+        {
+          "name": "SideBorder",
+          "size": [
+            0.5,
+            0.2,
+            32
+          ],
+          "position": [
+            19.0,
+            1.1,
+            0
+          ],
+          "color": "gold",
+          "rotation": [
+            0,
+            0,
+            0
+          ],
+          "collide": false,
+          "shape": "Block"
+        },
+        {
+          "name": "ForgePier",
+          "size": [
+            5,
+            19,
+            5
+          ],
+          "position": [
+            -15,
+            10.5,
+            10
+          ],
+          "color": "basalt",
+          "rotation": [
+            0,
+            0,
+            0
+          ],
+          "collide": true,
+          "shape": "Block"
+        },
+        {
+          "name": "CopperPierBand",
+          "size": [
+            5.5,
+            1,
+            5.5
+          ],
+          "position": [
+            -15,
+            13,
+            10
+          ],
+          "color": "copper",
+          "rotation": [
+            0,
+            0,
+            0
+          ],
+          "collide": true,
+          "shape": "Block"
+        },
+        {
+          "name": "SideWall",
+          "size": [
+            3,
+            14,
+            25
+          ],
+          "position": [
+            -15,
+            8,
+            -2
+          ],
+          "color": "basalt",
+          "rotation": [
+            0,
+            0,
+            0
+          ],
+          "collide": true,
+          "shape": "Block"
+        },
+        {
+          "name": "Chimney",
+          "size": [
+            5,
+            31,
+            6
+          ],
+          "position": [
+            -15,
+            16.5,
+            -10
+          ],
+          "color": "basalt",
+          "rotation": [
+            0,
+            0,
+            0
+          ],
+          "collide": true,
+          "shape": "Block"
+        },
+        {
+          "name": "ChimneyCap",
+          "size": [
+            6,
+            1.5,
+            7
+          ],
+          "position": [
+            -15,
+            32.5,
+            -10
+          ],
+          "color": "copper",
+          "rotation": [
+            0,
+            0,
+            0
+          ],
+          "collide": true,
+          "shape": "Block"
+        },
+        {
+          "name": "ForgePier",
+          "size": [
+            5,
+            19,
+            5
+          ],
+          "position": [
+            15,
+            10.5,
+            10
+          ],
+          "color": "basalt",
+          "rotation": [
+            0,
+            0,
+            0
+          ],
+          "collide": true,
+          "shape": "Block"
+        },
+        {
+          "name": "CopperPierBand",
+          "size": [
+            5.5,
+            1,
+            5.5
+          ],
+          "position": [
+            15,
+            13,
+            10
+          ],
+          "color": "copper",
+          "rotation": [
+            0,
+            0,
+            0
+          ],
+          "collide": true,
+          "shape": "Block"
+        },
+        {
+          "name": "SideWall",
+          "size": [
+            3,
+            14,
+            25
+          ],
+          "position": [
+            15,
+            8,
+            -2
+          ],
+          "color": "basalt",
+          "rotation": [
+            0,
+            0,
+            0
+          ],
+          "collide": true,
+          "shape": "Block"
+        },
+        {
+          "name": "Chimney",
+          "size": [
+            5,
+            31,
+            6
+          ],
+          "position": [
+            15,
+            16.5,
+            -10
+          ],
+          "color": "basalt",
+          "rotation": [
+            0,
+            0,
+            0
+          ],
+          "collide": true,
+          "shape": "Block"
+        },
+        {
+          "name": "ChimneyCap",
+          "size": [
+            6,
+            1.5,
+            7
+          ],
+          "position": [
+            15,
+            32.5,
+            -10
+          ],
+          "color": "copper",
+          "rotation": [
+            0,
+            0,
+            0
+          ],
+          "collide": true,
+          "shape": "Block"
+        },
+        {
+          "name": "ForgeLintel",
+          "size": [
+            34,
+            4,
+            5
+          ],
+          "position": [
+            0,
+            22,
+            10
+          ],
+          "color": "basalt",
+          "rotation": [
+            0,
+            0,
+            0
+          ],
+          "collide": true,
+          "shape": "Block"
+        },
+        {
+          "name": "RoofSlope",
+          "size": [
+            19.98,
+            1,
+            29
+          ],
+          "position": [
+            -8.879999999999999,
+            25,
+            0
+          ],
+          "color": "copper",
+          "rotation": [
+            0,
+            0,
+            24
+          ],
+          "collide": true,
+          "shape": "Block"
+        },
+        {
+          "name": "RoofSlope",
+          "size": [
+            19.98,
+            1,
+            29
+          ],
+          "position": [
+            8.879999999999999,
+            25,
+            0
+          ],
+          "color": "copper",
+          "rotation": [
+            0,
+            0,
+            -24
+          ],
+          "collide": true,
+          "shape": "Block"
+        },
+        {
+          "name": "BackWall",
+          "size": [
+            28,
+            17,
+            3
+          ],
+          "position": [
+            0,
+            9.5,
+            -14
+          ],
+          "color": "basalt",
+          "rotation": [
+            0,
+            0,
+            0
+          ],
+          "collide": true,
+          "shape": "Block"
+        },
+        {
+          "name": "HearthGlow",
+          "size": [
+            10,
+            10,
+            0.4
+          ],
+          "position": [
+            0,
+            7,
+            -12.3
+          ],
+          "color": "amber",
+          "rotation": [
+            0,
+            0,
+            0
+          ],
+          "collide": false,
+          "shape": "Block"
+        },
+        {
+          "name": "HearthJamb",
+          "size": [
+            3,
+            13,
+            4
+          ],
+          "position": [
+            -7,
+            7.5,
+            -10.5
+          ],
+          "color": "stone",
+          "rotation": [
+            0,
+            0,
+            0
+          ],
+          "collide": true,
+          "shape": "Block"
+        },
+        {
+          "name": "HearthJamb",
+          "size": [
+            3,
+            13,
+            4
+          ],
+          "position": [
+            7,
+            7.5,
+            -10.5
+          ],
+          "color": "stone",
+          "rotation": [
+            0,
+            0,
+            0
+          ],
+          "collide": true,
+          "shape": "Block"
+        },
+        {
+          "name": "HearthLintel",
+          "size": [
+            17,
+            3,
+            4
+          ],
+          "position": [
+            0,
+            15,
+            -10.5
+          ],
+          "color": "stone",
+          "rotation": [
+            0,
+            0,
+            0
+          ],
+          "collide": true,
+          "shape": "Block"
+        },
+        {
+          "name": "AnvilFoot",
+          "size": [
+            7,
+            2,
+            5
+          ],
+          "position": [
+            0,
+            2,
+            -6
+          ],
+          "color": "basalt",
+          "rotation": [
+            0,
+            0,
+            0
+          ],
+          "collide": true,
+          "shape": "Block"
+        },
+        {
+          "name": "AnvilBody",
+          "size": [
+            5,
+            3,
+            3
+          ],
+          "position": [
+            0,
+            4.5,
+            -6
+          ],
+          "color": "stone",
+          "rotation": [
+            0,
+            0,
+            0
+          ],
+          "collide": true,
+          "shape": "Block"
+        },
+        {
+          "name": "AnvilTop",
+          "size": [
+            9,
+            1,
+            4
+          ],
+          "position": [
+            0,
+            6.5,
+            -6
+          ],
+          "color": "basalt",
+          "rotation": [
+            0,
+            0,
+            0
+          ],
+          "collide": true,
+          "shape": "Block"
+        },
+        {
+          "name": "ForgeBanner",
+          "size": [
+            2,
+            7,
+            0.3
+          ],
+          "position": [
+            -10,
+            17,
+            12.7
+          ],
+          "color": "copper",
+          "rotation": [
+            0,
+            0,
+            0
+          ],
+          "collide": false,
+          "shape": "Block"
+        },
+        {
+          "name": "ForgeBanner",
+          "size": [
+            2,
+            7,
+            0.3
+          ],
+          "position": [
+            10,
+            17,
+            12.7
+          ],
+          "color": "copper",
+          "rotation": [
+            0,
+            0,
+            0
+          ],
+          "collide": false,
+          "shape": "Block"
+        }
+      ],
+      "runtimeBound": false,
+      "entryRoute": {
+        "x": 0,
+        "fromZ": 21.0,
+        "toZ": 0,
+        "width": 4,
+        "height": 5,
+        "floorY": 1
+      }
+    },
+    {
+      "id": "astralis_observatory",
+      "city": "Astralis",
+      "name": "Crystal Observatory",
+      "footprint": [
+        38,
+        34
+      ],
+      "parts": [
+        {
+          "name": "Foundation",
+          "size": [
+            38,
+            1,
+            34
+          ],
+          "position": [
+            0,
+            0.5,
+            0
+          ],
+          "color": "stone",
+          "rotation": [
+            0,
+            0,
+            0
+          ],
+          "collide": true,
+          "shape": "Block"
+        },
+        {
+          "name": "SideBorder",
+          "size": [
+            0.5,
+            0.2,
+            32
+          ],
+          "position": [
+            -18.0,
+            1.1,
+            0
+          ],
+          "color": "gold",
+          "rotation": [
+            0,
+            0,
+            0
+          ],
+          "collide": false,
+          "shape": "Block"
+        },
+        {
+          "name": "SideBorder",
+          "size": [
+            0.5,
+            0.2,
+            32
+          ],
+          "position": [
+            18.0,
+            1.1,
+            0
+          ],
+          "color": "gold",
+          "rotation": [
+            0,
+            0,
+            0
+          ],
+          "collide": false,
+          "shape": "Block"
+        },
+        {
+          "name": "ObservatoryColumn",
+          "size": [
+            2.5,
+            19,
+            2.5
+          ],
+          "position": [
+            -12,
+            10.5,
+            -11
+          ],
+          "color": "indigo",
+          "rotation": [
+            0,
+            0,
+            0
+          ],
+          "collide": true,
+          "shape": "Block"
+        },
+        {
+          "name": "ColumnCapital",
+          "size": [
+            4,
+            1,
+            4
+          ],
+          "position": [
+            -12,
+            20.5,
+            -11
+          ],
+          "color": "gold",
+          "rotation": [
+            0,
+            0,
+            0
+          ],
+          "collide": true,
+          "shape": "Block"
+        },
+        {
+          "name": "ObservatoryColumn",
+          "size": [
+            2.5,
+            19,
+            2.5
+          ],
+          "position": [
+            -12,
+            10.5,
+            11
+          ],
+          "color": "indigo",
+          "rotation": [
+            0,
+            0,
+            0
+          ],
+          "collide": true,
+          "shape": "Block"
+        },
+        {
+          "name": "ColumnCapital",
+          "size": [
+            4,
+            1,
+            4
+          ],
+          "position": [
+            -12,
+            20.5,
+            11
+          ],
+          "color": "gold",
+          "rotation": [
+            0,
+            0,
+            0
+          ],
+          "collide": true,
+          "shape": "Block"
+        },
+        {
+          "name": "ObservatoryColumn",
+          "size": [
+            2.5,
+            19,
+            2.5
+          ],
+          "position": [
+            12,
+            10.5,
+            -11
+          ],
+          "color": "indigo",
+          "rotation": [
+            0,
+            0,
+            0
+          ],
+          "collide": true,
+          "shape": "Block"
+        },
+        {
+          "name": "ColumnCapital",
+          "size": [
+            4,
+            1,
+            4
+          ],
+          "position": [
+            12,
+            20.5,
+            -11
+          ],
+          "color": "gold",
+          "rotation": [
+            0,
+            0,
+            0
+          ],
+          "collide": true,
+          "shape": "Block"
+        },
+        {
+          "name": "ObservatoryColumn",
+          "size": [
+            2.5,
+            19,
+            2.5
+          ],
+          "position": [
+            12,
+            10.5,
+            11
+          ],
+          "color": "indigo",
+          "rotation": [
+            0,
+            0,
+            0
+          ],
+          "collide": true,
+          "shape": "Block"
+        },
+        {
+          "name": "ColumnCapital",
+          "size": [
+            4,
+            1,
+            4
+          ],
+          "position": [
+            12,
+            20.5,
+            11
+          ],
+          "color": "gold",
+          "rotation": [
+            0,
+            0,
+            0
+          ],
+          "collide": true,
+          "shape": "Block"
+        },
+        {
+          "name": "RoofSide",
+          "size": [
+            3,
+            2,
+            26
+          ],
+          "position": [
+            -12,
+            22,
+            0
+          ],
+          "color": "indigo",
+          "rotation": [
+            0,
+            0,
+            0
+          ],
+          "collide": true,
+          "shape": "Block"
+        },
+        {
+          "name": "RoofSide",
+          "size": [
+            3,
+            2,
+            26
+          ],
+          "position": [
+            12,
+            22,
+            0
+          ],
+          "color": "indigo",
+          "rotation": [
+            0,
+            0,
+            0
+          ],
+          "collide": true,
+          "shape": "Block"
+        },
+        {
+          "name": "RoofCross",
+          "size": [
+            27,
+            2,
+            3
+          ],
+          "position": [
+            0,
+            22,
+            -11
+          ],
+          "color": "indigo",
+          "rotation": [
+            0,
+            0,
+            0
+          ],
+          "collide": true,
+          "shape": "Block"
+        },
+        {
+          "name": "RoofCross",
+          "size": [
+            27,
+            2,
+            3
+          ],
+          "position": [
+            0,
+            22,
+            11
+          ],
+          "color": "indigo",
+          "rotation": [
+            0,
+            0,
+            0
+          ],
+          "collide": true,
+          "shape": "Block"
+        },
+        {
+          "name": "RoofDeck",
+          "size": [
+            27,
+            1,
+            26
+          ],
+          "position": [
+            0,
+            23,
+            0
+          ],
+          "color": "indigo",
+          "rotation": [
+            0,
+            0,
+            0
+          ],
+          "collide": true,
+          "shape": "Block"
+        },
+        {
+          "name": "Crystal",
+          "size": [
+            7,
+            10,
+            7
+          ],
+          "position": [
+            0,
+            31,
+            0
+          ],
+          "color": "cyan",
+          "rotation": [
+            0,
+            0,
+            45
+          ],
+          "collide": false,
+          "shape": "Block"
+        },
+        {
+          "name": "Orbit",
+          "size": [
+            5.844018992255457,
+            0.55,
+            0.65
+          ],
+          "position": [
+            2.847009496127728,
+            30.0,
+            10.62518408917975
+          ],
+          "color": "gold",
+          "rotation": [
+            0,
+            14.999999999999998,
+            0
+          ],
+          "collide": false,
+          "shape": "Block"
+        },
+        {
+          "name": "Orbit",
+          "size": [
+            5.844018992255457,
+            0.55,
+            0.65
+          ],
+          "position": [
+            7.778174593052023,
+            30.0,
+            7.778174593052023
+          ],
+          "color": "gold",
+          "rotation": [
+            0,
+            45.0,
+            0
+          ],
+          "collide": false,
+          "shape": "Block"
+        },
+        {
+          "name": "Orbit",
+          "size": [
+            5.844018992255457,
+            0.55,
+            0.65
+          ],
+          "position": [
+            10.62518408917975,
+            30.0,
+            2.847009496127728
+          ],
+          "color": "gold",
+          "rotation": [
+            0,
+            75.0,
+            0
+          ],
+          "collide": false,
+          "shape": "Block"
+        },
+        {
+          "name": "Orbit",
+          "size": [
+            5.844018992255457,
+            0.55,
+            0.65
+          ],
+          "position": [
+            10.62518408917975,
+            30.0,
+            -2.847009496127727
+          ],
+          "color": "gold",
+          "rotation": [
+            0,
+            105.0,
+            0
+          ],
+          "collide": false,
+          "shape": "Block"
+        },
+        {
+          "name": "Orbit",
+          "size": [
+            5.844018992255457,
+            0.55,
+            0.65
+          ],
+          "position": [
+            7.778174593052023,
+            30.0,
+            -7.778174593052022
+          ],
+          "color": "gold",
+          "rotation": [
+            0,
+            135.0,
+            0
+          ],
+          "collide": false,
+          "shape": "Block"
+        },
+        {
+          "name": "Orbit",
+          "size": [
+            5.844018992255457,
+            0.55,
+            0.65
+          ],
+          "position": [
+            2.8470094961277312,
+            30.0,
+            -10.62518408917975
+          ],
+          "color": "gold",
+          "rotation": [
+            0,
+            165.0,
+            0
+          ],
+          "collide": false,
+          "shape": "Block"
+        },
+        {
+          "name": "Orbit",
+          "size": [
+            5.844018992255457,
+            0.55,
+            0.65
+          ],
+          "position": [
+            -2.8470094961277286,
+            30.0,
+            -10.62518408917975
+          ],
+          "color": "gold",
+          "rotation": [
+            0,
+            195.0,
+            0
+          ],
+          "collide": false,
+          "shape": "Block"
+        },
+        {
+          "name": "Orbit",
+          "size": [
+            5.844018992255457,
+            0.55,
+            0.65
+          ],
+          "position": [
+            -7.778174593052018,
+            30.0,
+            -7.778174593052027
+          ],
+          "color": "gold",
+          "rotation": [
+            0,
+            224.99999999999997,
+            0
+          ],
+          "collide": false,
+          "shape": "Block"
+        },
+        {
+          "name": "Orbit",
+          "size": [
+            5.844018992255457,
+            0.55,
+            0.65
+          ],
+          "position": [
+            -10.62518408917975,
+            30.0,
+            -2.847009496127727
+          ],
+          "color": "gold",
+          "rotation": [
+            0,
+            255.00000000000003,
+            0
+          ],
+          "collide": false,
+          "shape": "Block"
+        },
+        {
+          "name": "Orbit",
+          "size": [
+            5.844018992255457,
+            0.55,
+            0.65
+          ],
+          "position": [
+            -10.625184089179752,
+            30.0,
+            2.8470094961277232
+          ],
+          "color": "gold",
+          "rotation": [
+            0,
+            285.0,
+            0
+          ],
+          "collide": false,
+          "shape": "Block"
+        },
+        {
+          "name": "Orbit",
+          "size": [
+            5.844018992255457,
+            0.55,
+            0.65
+          ],
+          "position": [
+            -7.778174593052024,
+            30.0,
+            7.778174593052021
+          ],
+          "color": "gold",
+          "rotation": [
+            0,
+            315.0,
+            0
+          ],
+          "collide": false,
+          "shape": "Block"
+        },
+        {
+          "name": "Orbit",
+          "size": [
+            5.844018992255457,
+            0.55,
+            0.65
+          ],
+          "position": [
+            -2.8470094961277375,
+            30.0,
+            10.625184089179749
+          ],
+          "color": "gold",
+          "rotation": [
+            0,
+            344.99999999999994,
+            0
+          ],
+          "collide": false,
+          "shape": "Block"
+        },
+        {
+          "name": "UpperOrbit",
+          "size": [
+            3.7734666314352903,
+            0.55,
+            0.65
+          ],
+          "position": [
+            1.8117333157176452,
+            37.0,
+            6.761480784023478
+          ],
+          "color": "gold",
+          "rotation": [
+            0,
+            14.999999999999998,
+            0
+          ],
+          "collide": false,
+          "shape": "Block"
+        },
+        {
+          "name": "UpperOrbit",
+          "size": [
+            3.7734666314352903,
+            0.55,
+            0.65
+          ],
+          "position": [
+            4.949747468305833,
+            37.0,
+            4.949747468305833
+          ],
+          "color": "gold",
+          "rotation": [
+            0,
+            45.0,
+            0
+          ],
+          "collide": false,
+          "shape": "Block"
+        },
+        {
+          "name": "UpperOrbit",
+          "size": [
+            3.7734666314352903,
+            0.55,
+            0.65
+          ],
+          "position": [
+            6.761480784023478,
+            37.0,
+            1.8117333157176452
+          ],
+          "color": "gold",
+          "rotation": [
+            0,
+            75.0,
+            0
+          ],
+          "collide": false,
+          "shape": "Block"
+        },
+        {
+          "name": "UpperOrbit",
+          "size": [
+            3.7734666314352903,
+            0.55,
+            0.65
+          ],
+          "position": [
+            6.761480784023478,
+            37.0,
+            -1.8117333157176443
+          ],
+          "color": "gold",
+          "rotation": [
+            0,
+            105.0,
+            0
+          ],
+          "collide": false,
+          "shape": "Block"
+        },
+        {
+          "name": "UpperOrbit",
+          "size": [
+            3.7734666314352903,
+            0.55,
+            0.65
+          ],
+          "position": [
+            4.949747468305833,
+            37.0,
+            -4.949747468305832
+          ],
+          "color": "gold",
+          "rotation": [
+            0,
+            135.0,
+            0
+          ],
+          "collide": false,
+          "shape": "Block"
+        },
+        {
+          "name": "UpperOrbit",
+          "size": [
+            3.7734666314352903,
+            0.55,
+            0.65
+          ],
+          "position": [
+            1.8117333157176472,
+            37.0,
+            -6.761480784023478
+          ],
+          "color": "gold",
+          "rotation": [
+            0,
+            165.0,
+            0
+          ],
+          "collide": false,
+          "shape": "Block"
+        },
+        {
+          "name": "UpperOrbit",
+          "size": [
+            3.7734666314352903,
+            0.55,
+            0.65
+          ],
+          "position": [
+            -1.8117333157176456,
+            37.0,
+            -6.761480784023478
+          ],
+          "color": "gold",
+          "rotation": [
+            0,
+            195.0,
+            0
+          ],
+          "collide": false,
+          "shape": "Block"
+        },
+        {
+          "name": "UpperOrbit",
+          "size": [
+            3.7734666314352903,
+            0.55,
+            0.65
+          ],
+          "position": [
+            -4.94974746830583,
+            37.0,
+            -4.949747468305835
+          ],
+          "color": "gold",
+          "rotation": [
+            0,
+            224.99999999999997,
+            0
+          ],
+          "collide": false,
+          "shape": "Block"
+        },
+        {
+          "name": "UpperOrbit",
+          "size": [
+            3.7734666314352903,
+            0.55,
+            0.65
+          ],
+          "position": [
+            -6.761480784023478,
+            37.0,
+            -1.8117333157176443
+          ],
+          "color": "gold",
+          "rotation": [
+            0,
+            255.00000000000003,
+            0
+          ],
+          "collide": false,
+          "shape": "Block"
+        },
+        {
+          "name": "UpperOrbit",
+          "size": [
+            3.7734666314352903,
+            0.55,
+            0.65
+          ],
+          "position": [
+            -6.761480784023479,
+            37.0,
+            1.811733315717642
+          ],
+          "color": "gold",
+          "rotation": [
+            0,
+            285.0,
+            0
+          ],
+          "collide": false,
+          "shape": "Block"
+        },
+        {
+          "name": "UpperOrbit",
+          "size": [
+            3.7734666314352903,
+            0.55,
+            0.65
+          ],
+          "position": [
+            -4.949747468305834,
+            37.0,
+            4.949747468305832
+          ],
+          "color": "gold",
+          "rotation": [
+            0,
+            315.0,
+            0
+          ],
+          "collide": false,
+          "shape": "Block"
+        },
+        {
+          "name": "UpperOrbit",
+          "size": [
+            3.7734666314352903,
+            0.55,
+            0.65
+          ],
+          "position": [
+            -1.811733315717651,
+            37.0,
+            6.761480784023477
+          ],
+          "color": "gold",
+          "rotation": [
+            0,
+            344.99999999999994,
+            0
+          ],
+          "collide": false,
+          "shape": "Block"
+        },
+        {
+          "name": "CyanFinial",
+          "size": [
+            2,
+            5,
+            2
+          ],
+          "position": [
+            -12,
+            25,
+            11
+          ],
+          "color": "cyan",
+          "rotation": [
+            0,
+            0,
+            35
+          ],
+          "collide": false,
+          "shape": "Block"
+        },
+        {
+          "name": "CyanFinial",
+          "size": [
+            2,
+            5,
+            2
+          ],
+          "position": [
+            12,
+            25,
+            11
+          ],
+          "color": "cyan",
+          "rotation": [
+            0,
+            0,
+            35
+          ],
+          "collide": false,
+          "shape": "Block"
+        },
+        {
+          "name": "ChartTable",
+          "size": [
+            8,
+            3,
+            5
+          ],
+          "position": [
+            0,
+            2.5,
+            -7
+          ],
+          "color": "indigo",
+          "rotation": [
+            0,
+            0,
+            0
+          ],
+          "collide": true,
+          "shape": "Block"
+        },
+        {
+          "name": "ChartInlay",
+          "size": [
+            7,
+            0.15,
+            4
+          ],
+          "position": [
+            0,
+            4.1,
+            -7
+          ],
+          "color": "cyan",
+          "rotation": [
+            0,
+            0,
+            0
+          ],
+          "collide": false,
+          "shape": "Block"
+        }
+      ],
+      "runtimeBound": false,
+      "entryRoute": {
+        "x": 0,
+        "fromZ": 21.0,
+        "toZ": 0,
+        "width": 4,
+        "height": 5,
+        "floorY": 1
+      }
+    },
+    {
+      "id": "crosshaven_charter_pavilion",
+      "city": "Crosshaven",
+      "name": "Charter Pavilion",
+      "footprint": [
+        38,
+        34
+      ],
+      "parts": [
+        {
+          "name": "Foundation",
+          "size": [
+            38,
+            1,
+            34
+          ],
+          "position": [
+            0,
+            0.5,
+            0
+          ],
+          "color": "stone",
+          "rotation": [
+            0,
+            0,
+            0
+          ],
+          "collide": true,
+          "shape": "Block"
+        },
+        {
+          "name": "SideBorder",
+          "size": [
+            0.5,
+            0.2,
+            32
+          ],
+          "position": [
+            -18.0,
+            1.1,
+            0
+          ],
+          "color": "gold",
+          "rotation": [
+            0,
+            0,
+            0
+          ],
+          "collide": false,
+          "shape": "Block"
+        },
+        {
+          "name": "SideBorder",
+          "size": [
+            0.5,
+            0.2,
+            32
+          ],
+          "position": [
+            18.0,
+            1.1,
+            0
+          ],
+          "color": "gold",
+          "rotation": [
+            0,
+            0,
+            0
+          ],
+          "collide": false,
+          "shape": "Block"
+        },
+        {
+          "name": "CivicColumn",
+          "size": [
+            2,
+            15,
+            2
+          ],
+          "position": [
+            -12,
+            8.5,
+            -11
+          ],
+          "color": "ivory",
+          "rotation": [
+            0,
+            0,
+            0
+          ],
+          "collide": true,
+          "shape": "Block"
+        },
+        {
+          "name": "ColumnCapital",
+          "size": [
+            3.5,
+            1,
+            3.5
+          ],
+          "position": [
+            -12,
+            16,
+            -11
+          ],
+          "color": "copper",
+          "rotation": [
+            0,
+            0,
+            0
+          ],
+          "collide": true,
+          "shape": "Block"
+        },
+        {
+          "name": "CivicColumn",
+          "size": [
+            2,
+            15,
+            2
+          ],
+          "position": [
+            -12,
+            8.5,
+            11
+          ],
+          "color": "ivory",
+          "rotation": [
+            0,
+            0,
+            0
+          ],
+          "collide": true,
+          "shape": "Block"
+        },
+        {
+          "name": "ColumnCapital",
+          "size": [
+            3.5,
+            1,
+            3.5
+          ],
+          "position": [
+            -12,
+            16,
+            11
+          ],
+          "color": "copper",
+          "rotation": [
+            0,
+            0,
+            0
+          ],
+          "collide": true,
+          "shape": "Block"
+        },
+        {
+          "name": "CivicColumn",
+          "size": [
+            2,
+            15,
+            2
+          ],
+          "position": [
+            12,
+            8.5,
+            -11
+          ],
+          "color": "ivory",
+          "rotation": [
+            0,
+            0,
+            0
+          ],
+          "collide": true,
+          "shape": "Block"
+        },
+        {
+          "name": "ColumnCapital",
+          "size": [
+            3.5,
+            1,
+            3.5
+          ],
+          "position": [
+            12,
+            16,
+            -11
+          ],
+          "color": "copper",
+          "rotation": [
+            0,
+            0,
+            0
+          ],
+          "collide": true,
+          "shape": "Block"
+        },
+        {
+          "name": "CivicColumn",
+          "size": [
+            2,
+            15,
+            2
+          ],
+          "position": [
+            12,
+            8.5,
+            11
+          ],
+          "color": "ivory",
+          "rotation": [
+            0,
+            0,
+            0
+          ],
+          "collide": true,
+          "shape": "Block"
+        },
+        {
+          "name": "ColumnCapital",
+          "size": [
+            3.5,
+            1,
+            3.5
+          ],
+          "position": [
+            12,
+            16,
+            11
+          ],
+          "color": "copper",
+          "rotation": [
+            0,
+            0,
+            0
+          ],
+          "collide": true,
+          "shape": "Block"
+        },
+        {
+          "name": "SideCornice",
+          "size": [
+            2,
+            2,
+            26
+          ],
+          "position": [
+            -12,
+            17,
+            0
+          ],
+          "color": "ivory",
+          "rotation": [
+            0,
+            0,
+            0
+          ],
+          "collide": true,
+          "shape": "Block"
+        },
+        {
+          "name": "SideCornice",
+          "size": [
+            2,
+            2,
+            26
+          ],
+          "position": [
+            12,
+            17,
+            0
+          ],
+          "color": "ivory",
+          "rotation": [
+            0,
+            0,
+            0
+          ],
+          "collide": true,
+          "shape": "Block"
+        },
+        {
+          "name": "FrontCornice",
+          "size": [
+            27,
+            2,
+            2
+          ],
+          "position": [
+            0,
+            17,
+            -11
+          ],
+          "color": "ivory",
+          "rotation": [
+            0,
+            0,
+            0
+          ],
+          "collide": true,
+          "shape": "Block"
+        },
+        {
+          "name": "FrontCornice",
+          "size": [
+            27,
+            2,
+            2
+          ],
+          "position": [
+            0,
+            17,
+            11
+          ],
+          "color": "ivory",
+          "rotation": [
+            0,
+            0,
+            0
+          ],
+          "collide": true,
+          "shape": "Block"
+        },
+        {
+          "name": "TieredRoof",
+          "size": [
+            31,
+            2,
+            26.349999999999998
+          ],
+          "position": [
+            0,
+            19,
+            0
+          ],
+          "color": "teal",
+          "rotation": [
+            0,
+            0,
+            0
+          ],
+          "collide": true,
+          "shape": "Block"
+        },
+        {
+          "name": "TieredRoof",
+          "size": [
+            25,
+            2,
+            21.25
+          ],
+          "position": [
+            0,
+            21,
+            0
+          ],
+          "color": "teal",
+          "rotation": [
+            0,
+            0,
+            0
+          ],
+          "collide": true,
+          "shape": "Block"
+        },
+        {
+          "name": "TieredRoof",
+          "size": [
+            19,
+            2,
+            16.15
+          ],
+          "position": [
+            0,
+            23,
+            0
+          ],
+          "color": "teal",
+          "rotation": [
+            0,
+            0,
+            0
+          ],
+          "collide": true,
+          "shape": "Block"
+        },
+        {
+          "name": "TieredRoof",
+          "size": [
+            12,
+            2,
+            10.2
+          ],
+          "position": [
+            0,
+            25,
+            0
+          ],
+          "color": "teal",
+          "rotation": [
+            0,
+            0,
+            0
+          ],
+          "collide": true,
+          "shape": "Block"
+        },
+        {
+          "name": "TieredRoof",
+          "size": [
+            6,
+            2,
+            5.1
+          ],
+          "position": [
+            0,
+            27,
+            0
+          ],
+          "color": "teal",
+          "rotation": [
+            0,
+            0,
+            0
+          ],
+          "collide": true,
+          "shape": "Block"
+        },
+        {
+          "name": "CivicSpire",
+          "size": [
+            1.2,
+            7,
+            1.2
+          ],
+          "position": [
+            0,
+            31.5,
+            0
+          ],
+          "color": "copper",
+          "rotation": [
+            0,
+            0,
+            0
+          ],
+          "collide": true,
+          "shape": "Block"
+        },
+        {
+          "name": "CivicBanner",
+          "size": [
+            2.1,
+            4,
+            0.2
+          ],
+          "position": [
+            -10,
+            13.5,
+            11.8
+          ],
+          "color": "burgundy",
+          "rotation": [
+            0,
+            0,
+            0
+          ],
+          "collide": false,
+          "shape": "Block"
+        },
+        {
+          "name": "CivicBanner",
+          "size": [
+            2.1,
+            4,
+            0.2
+          ],
+          "position": [
+            -6,
+            13.5,
+            11.8
+          ],
+          "color": "emerald",
+          "rotation": [
+            0,
+            0,
+            0
+          ],
+          "collide": false,
+          "shape": "Block"
+        },
+        {
+          "name": "CivicBanner",
+          "size": [
+            2.1,
+            4,
+            0.2
+          ],
+          "position": [
+            -2,
+            13.5,
+            11.8
+          ],
+          "color": "copper",
+          "rotation": [
+            0,
+            0,
+            0
+          ],
+          "collide": false,
+          "shape": "Block"
+        },
+        {
+          "name": "CivicBanner",
+          "size": [
+            2.1,
+            4,
+            0.2
+          ],
+          "position": [
+            2,
+            13.5,
+            11.8
+          ],
+          "color": "indigo",
+          "rotation": [
+            0,
+            0,
+            0
+          ],
+          "collide": false,
+          "shape": "Block"
+        },
+        {
+          "name": "CivicBanner",
+          "size": [
+            2.1,
+            4,
+            0.2
+          ],
+          "position": [
+            6,
+            13.5,
+            11.8
+          ],
+          "color": "teal",
+          "rotation": [
+            0,
+            0,
+            0
+          ],
+          "collide": false,
+          "shape": "Block"
+        },
+        {
+          "name": "CivicBanner",
+          "size": [
+            2.1,
+            4,
+            0.2
+          ],
+          "position": [
+            10,
+            13.5,
+            11.8
+          ],
+          "color": "ochre",
+          "rotation": [
+            0,
+            0,
+            0
+          ],
+          "collide": false,
+          "shape": "Block"
+        },
+        {
+          "name": "CharterPlinth",
+          "size": [
+            7,
+            3,
+            4
+          ],
+          "position": [
+            0,
+            2.5,
+            -6
+          ],
+          "color": "ivory",
+          "rotation": [
+            0,
+            0,
+            0
+          ],
+          "collide": true,
+          "shape": "Block"
+        },
+        {
+          "name": "CharterBook",
+          "size": [
+            5,
+            0.4,
+            3
+          ],
+          "position": [
+            0,
+            4.2,
+            -6
+          ],
+          "color": "gold",
+          "rotation": [
+            8,
+            0,
+            0
+          ],
+          "collide": false,
+          "shape": "Block"
+        }
+      ],
+      "runtimeBound": false,
+      "entryRoute": {
+        "x": 0,
+        "fromZ": 21.0,
+        "toZ": 0,
+        "width": 4,
+        "height": 5,
+        "floorY": 1
+      }
+    },
+    {
+      "id": "ironroot_feast_hall",
+      "city": "Ironroot",
+      "name": "Welcome Feast Hall",
+      "footprint": [
+        42,
+        36
+      ],
+      "parts": [
+        {
+          "name": "Foundation",
+          "size": [
+            42,
+            1,
+            36
+          ],
+          "position": [
+            0,
+            0.5,
+            0
+          ],
+          "color": "stone",
+          "rotation": [
+            0,
+            0,
+            0
+          ],
+          "collide": true,
+          "shape": "Block"
+        },
+        {
+          "name": "SideBorder",
+          "size": [
+            0.5,
+            0.2,
+            34
+          ],
+          "position": [
+            -20.0,
+            1.1,
+            0
+          ],
+          "color": "gold",
+          "rotation": [
+            0,
+            0,
+            0
+          ],
+          "collide": false,
+          "shape": "Block"
+        },
+        {
+          "name": "SideBorder",
+          "size": [
+            0.5,
+            0.2,
+            34
+          ],
+          "position": [
+            20.0,
+            1.1,
+            0
+          ],
+          "color": "gold",
+          "rotation": [
+            0,
+            0,
+            0
+          ],
+          "collide": false,
+          "shape": "Block"
+        },
+        {
+          "name": "FeastPost",
+          "size": [
+            2.5,
+            17,
+            2.5
+          ],
+          "position": [
+            -15,
+            9.5,
+            -12
+          ],
+          "color": "redwood",
+          "rotation": [
+            0,
+            0,
+            0
+          ],
+          "collide": true,
+          "shape": "Block"
+        },
+        {
+          "name": "PostBinding",
+          "size": [
+            2.8,
+            0.7,
+            2.8
+          ],
+          "position": [
+            -15,
+            12,
+            -12
+          ],
+          "color": "gold",
+          "rotation": [
+            0,
+            0,
+            0
+          ],
+          "collide": false,
+          "shape": "Block"
+        },
+        {
+          "name": "FeastPost",
+          "size": [
+            2.5,
+            17,
+            2.5
+          ],
+          "position": [
+            -15,
+            9.5,
+            12
+          ],
+          "color": "redwood",
+          "rotation": [
+            0,
+            0,
+            0
+          ],
+          "collide": true,
+          "shape": "Block"
+        },
+        {
+          "name": "PostBinding",
+          "size": [
+            2.8,
+            0.7,
+            2.8
+          ],
+          "position": [
+            -15,
+            12,
+            12
+          ],
+          "color": "gold",
+          "rotation": [
+            0,
+            0,
+            0
+          ],
+          "collide": false,
+          "shape": "Block"
+        },
+        {
+          "name": "FeastPost",
+          "size": [
+            2.5,
+            17,
+            2.5
+          ],
+          "position": [
+            15,
+            9.5,
+            -12
+          ],
+          "color": "redwood",
+          "rotation": [
+            0,
+            0,
+            0
+          ],
+          "collide": true,
+          "shape": "Block"
+        },
+        {
+          "name": "PostBinding",
+          "size": [
+            2.8,
+            0.7,
+            2.8
+          ],
+          "position": [
+            15,
+            12,
+            -12
+          ],
+          "color": "gold",
+          "rotation": [
+            0,
+            0,
+            0
+          ],
+          "collide": false,
+          "shape": "Block"
+        },
+        {
+          "name": "FeastPost",
+          "size": [
+            2.5,
+            17,
+            2.5
+          ],
+          "position": [
+            15,
+            9.5,
+            12
+          ],
+          "color": "redwood",
+          "rotation": [
+            0,
+            0,
+            0
+          ],
+          "collide": true,
+          "shape": "Block"
+        },
+        {
+          "name": "PostBinding",
+          "size": [
+            2.8,
+            0.7,
+            2.8
+          ],
+          "position": [
+            15,
+            12,
+            12
+          ],
+          "color": "gold",
+          "rotation": [
+            0,
+            0,
+            0
+          ],
+          "collide": false,
+          "shape": "Block"
+        },
+        {
+          "name": "SideBeam",
+          "size": [
+            2,
+            2,
+            29
+          ],
+          "position": [
+            -15,
+            19,
+            0
+          ],
+          "color": "redwood",
+          "rotation": [
+            0,
+            0,
+            0
+          ],
+          "collide": true,
+          "shape": "Block"
+        },
+        {
+          "name": "SideBeam",
+          "size": [
+            2,
+            2,
+            29
+          ],
+          "position": [
+            15,
+            19,
+            0
+          ],
+          "color": "redwood",
+          "rotation": [
+            0,
+            0,
+            0
+          ],
+          "collide": true,
+          "shape": "Block"
+        },
+        {
+          "name": "FeastLintel",
+          "size": [
+            33,
+            2,
+            2
+          ],
+          "position": [
+            0,
+            19,
+            -12
+          ],
+          "color": "redwood",
+          "rotation": [
+            0,
+            0,
+            0
+          ],
+          "collide": true,
+          "shape": "Block"
+        },
+        {
+          "name": "FeastLintel",
+          "size": [
+            33,
+            2,
+            2
+          ],
+          "position": [
+            0,
+            19,
+            12
+          ],
+          "color": "redwood",
+          "rotation": [
+            0,
+            0,
+            0
+          ],
+          "collide": true,
+          "shape": "Block"
+        },
+        {
+          "name": "RoofSlope",
+          "size": [
+            20.520000000000003,
+            1,
+            32
+          ],
+          "position": [
+            -9.12,
+            23,
+            0
+          ],
+          "color": "ochre",
+          "rotation": [
+            0,
+            0,
+            24
+          ],
+          "collide": true,
+          "shape": "Block"
+        },
+        {
+          "name": "RoofSlope",
+          "size": [
+            20.520000000000003,
+            1,
+            32
+          ],
+          "position": [
+            9.12,
+            23,
+            0
+          ],
+          "color": "ochre",
+          "rotation": [
+            0,
+            0,
+            -24
+          ],
+          "collide": true,
+          "shape": "Block"
+        },
+        {
+          "name": "CarvedWelcome",
+          "size": [
+            1.2,
+            9.433981132056603,
+            1.2
+          ],
+          "position": [
+            -12.5,
+            24.0,
+            13.0
+          ],
+          "color": "redwood",
+          "rotation": [
+            0,
+            0,
+            -32.005383208083494
+          ],
+          "collide": false,
+          "shape": "Block"
+        },
+        {
+          "name": "SideBench",
+          "size": [
+            4,
+            2,
+            8
+          ],
+          "position": [
+            -12,
+            2,
+            -8
+          ],
+          "color": "redwood",
+          "rotation": [
+            0,
+            0,
+            0
+          ],
+          "collide": true,
+          "shape": "Block"
+        },
+        {
+          "name": "SideBench",
+          "size": [
+            4,
+            2,
+            8
+          ],
+          "position": [
+            -12,
+            2,
+            1
+          ],
+          "color": "redwood",
+          "rotation": [
+            0,
+            0,
+            0
+          ],
+          "collide": true,
+          "shape": "Block"
+        },
+        {
+          "name": "CarvedWelcome",
+          "size": [
+            1.2,
+            9.433981132056603,
+            1.2
+          ],
+          "position": [
+            12.5,
+            24.0,
+            13.0
+          ],
+          "color": "redwood",
+          "rotation": [
+            0,
+            0,
+            32.005383208083494
+          ],
+          "collide": false,
+          "shape": "Block"
+        },
+        {
+          "name": "SideBench",
+          "size": [
+            4,
+            2,
+            8
+          ],
+          "position": [
+            12,
+            2,
+            -8
+          ],
+          "color": "redwood",
+          "rotation": [
+            0,
+            0,
+            0
+          ],
+          "collide": true,
+          "shape": "Block"
+        },
+        {
+          "name": "SideBench",
+          "size": [
+            4,
+            2,
+            8
+          ],
+          "position": [
+            12,
+            2,
+            1
+          ],
+          "color": "redwood",
+          "rotation": [
+            0,
+            0,
+            0
+          ],
+          "collide": true,
+          "shape": "Block"
+        },
+        {
+          "name": "FeastTable",
+          "size": [
+            14,
+            3,
+            6
+          ],
+          "position": [
+            0,
+            2.5,
+            -8
+          ],
+          "color": "redwood",
+          "rotation": [
+            0,
+            0,
+            0
+          ],
+          "collide": true,
+          "shape": "Block"
+        },
+        {
+          "name": "TableRunner",
+          "size": [
+            3,
+            0.1,
+            5.5
+          ],
+          "position": [
+            0,
+            4.05,
+            -8
+          ],
+          "color": "emerald",
+          "rotation": [
+            0,
+            0,
+            0
+          ],
+          "collide": false,
+          "shape": "Block"
+        },
+        {
+          "name": "WelcomeBanner",
+          "size": [
+            3,
+            6,
+            0.2
+          ],
+          "position": [
+            -10,
+            15,
+            13.2
+          ],
+          "color": "emerald",
+          "rotation": [
+            0,
+            0,
+            0
+          ],
+          "collide": false,
+          "shape": "Block"
+        },
+        {
+          "name": "BannerDiamond",
+          "size": [
+            1.2,
+            1.2,
+            0.3
+          ],
+          "position": [
+            -10,
+            15,
+            13.4
+          ],
+          "color": "ochre",
+          "rotation": [
+            0,
+            0,
+            45
+          ],
+          "collide": false,
+          "shape": "Block"
+        },
+        {
+          "name": "WelcomeBanner",
+          "size": [
+            3,
+            6,
+            0.2
+          ],
+          "position": [
+            10,
+            15,
+            13.2
+          ],
+          "color": "emerald",
+          "rotation": [
+            0,
+            0,
+            0
+          ],
+          "collide": false,
+          "shape": "Block"
+        },
+        {
+          "name": "BannerDiamond",
+          "size": [
+            1.2,
+            1.2,
+            0.3
+          ],
+          "position": [
+            10,
+            15,
+            13.4
+          ],
+          "color": "ochre",
+          "rotation": [
+            0,
+            0,
+            45
+          ],
+          "collide": false,
+          "shape": "Block"
+        }
+      ],
+      "runtimeBound": false,
+      "entryRoute": {
+        "x": 0,
+        "fromZ": 22.0,
+        "toZ": 0,
+        "width": 4,
+        "height": 5,
+        "floorY": 1
+      }
+    }
+  ]
+}

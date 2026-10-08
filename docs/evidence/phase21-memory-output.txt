@@ -1,0 +1,220 @@
+[Guildborne] Phase 1 ready · Studio memory · not saved after Stop
+[Guildborne] profile_loaded {"revision":0}
+[Guildborne] session_started []
+[Guildborne] Phase 1 client ready
+GBQA PASS GetState nil revision 0 gold 0
+[Guildborne] profile_saved {"action":"SetLanguage","revision":1}
+GBQA PASS SetLanguage OK revision 1 gold 0
+GBQA PASS SetLanguage InvalidRequest revision 1 gold 0
+[Guildborne] profile_saved {"action":"BeginTutorial","revision":2}
+[Guildborne] tutorial_started []
+GBQA PASS BeginTutorial OK revision 2 gold 0
+[Guildborne] profile_saved {"action":"Recruit","revision":3}
+[Guildborne] adventurer_recruited {"classId":"Warrior"}
+GBQA PASS Recruit OK revision 3 gold 0
+GBQA PASS UpdateParty InvalidParty revision 3 gold 0
+GBQA PASS UpdateParty InvalidParty revision 3 gold 0
+[Guildborne] profile_saved {"action":"UpdateParty","revision":4}
+[Guildborne] party_created []
+GBQA PASS UpdateParty OK revision 4 gold 0
+GBQA PASS UpdateParty AlreadyCommitted revision 4 gold 0
+GBQA PASS UpdateParty RequestConflict revision 4 gold 0
+GBQA PASS UpgradeGuildHall HallLocked revision 4 gold 0
+GBQA PASS StartQuest InvalidQuest revision 4 gold 0
+GBQA PASS CompleteQuest QuestNotActive revision 4 gold 0
+GBQA PASS CompleteQuest InvalidRequest revision 4 gold 0
+GBQA PASS EquipItem ItemNotOwned revision 4 gold 0
+[Guildborne] profile_saved {"action":"StartQuest","revision":5}
+[Guildborne] quest_started {"questId":"trail_watch"}
+GBQA PASS StartQuest OK revision 5 gold 0
+GBQA PASS CompleteQuest QuestTooEarly revision 5 gold 0
+GBQA PASS UpdateParty QuestActive revision 5 gold 0
+[Guildborne] profile_saved {"action":"CompleteQuest","revision":6}
+[Guildborne] gold_created {"amount":30,"reason":"QuestReward"}
+[Guildborne] item_acquired {"quantity":1,"itemId":"training_sword"}
+[Guildborne] item_acquired {"quantity":2,"itemId":"herb"}
+[Guildborne] quest_completed {"questId":"trail_watch"}
+GBQA PASS CompleteQuest OK revision 6 gold 30
+GBQA PASS CompleteQuest AlreadyCommitted revision 6 gold 30
+GBQA PASS CompleteQuest QuestNotActive revision 6 gold 30
+[Guildborne] profile_saved {"action":"EquipItem","revision":7}
+[Guildborne] weapon_equipped {"itemId":"training_sword","classId":"Warrior"}
+GBQA PASS EquipItem OK revision 7 gold 30
+[Guildborne] profile_saved {"action":"Recruit","revision":8}
+[Guildborne] gold_destroyed {"amount":20,"reason":"Recruitment"}
+[Guildborne] item_acquired {"quantity":1,"itemId":"short_bow"}
+[Guildborne] adventurer_recruited {"classId":"Archer"}
+GBQA PASS Recruit OK revision 8 gold 10
+GBQA PASS EquipItem IncompatibleWeapon revision 8 gold 10
+[Guildborne] profile_saved {"action":"StartQuest","revision":9}
+[Guildborne] quest_started {"questId":"timber_escort"}
+GBQA PASS StartQuest OK revision 9 gold 10
+GBQA PASS CompleteQuest QuestTooEarly revision 9 gold 10
+GBQA PASS UpdateParty QuestActive revision 9 gold 10
+[Guildborne] profile_saved {"action":"CompleteQuest","revision":10}
+[Guildborne] gold_created {"amount":40,"reason":"QuestReward"}
+[Guildborne] item_acquired {"quantity":6,"itemId":"timber"}
+[Guildborne] item_acquired {"quantity":1,"itemId":"iron_ingot"}
+[Guildborne] quest_completed {"questId":"timber_escort"}
+GBQA PASS CompleteQuest OK revision 10 gold 50
+GBQA PASS CompleteQuest AlreadyCommitted revision 10 gold 50
+GBQA PASS CompleteQuest QuestNotActive revision 10 gold 50
+[Guildborne] profile_saved {"action":"Recruit","revision":11}
+[Guildborne] gold_destroyed {"amount":20,"reason":"Recruitment"}
+[Guildborne] item_acquired {"quantity":1,"itemId":"apprentice_staff"}
+[Guildborne] adventurer_recruited {"classId":"Priest"}
+GBQA PASS Recruit OK revision 11 gold 30
+[Guildborne] profile_saved {"action":"StartQuest","revision":12}
+[Guildborne] quest_started {"questId":"quarry_patrol"}
+GBQA PASS StartQuest OK revision 12 gold 30
+GBQA PASS CompleteQuest QuestTooEarly revision 12 gold 30
+GBQA PASS UpdateParty QuestActive revision 12 gold 30
+[Guildborne] profile_saved {"action":"CompleteQuest","revision":13}
+[Guildborne] gold_created {"amount":60,"reason":"QuestReward"}
+[Guildborne] item_acquired {"quantity":6,"itemId":"iron_ore"}
+[Guildborne] item_acquired {"quantity":1,"itemId":"iron_sword"}
+[Guildborne] quest_completed {"questId":"quarry_patrol"}
+GBQA PASS CompleteQuest OK revision 13 gold 90
+GBQA PASS CompleteQuest AlreadyCommitted revision 13 gold 90
+GBQA PASS CompleteQuest QuestNotActive revision 13 gold 90
+[Guildborne] profile_saved {"action":"UpgradeGuildHall","revision":14}
+[Guildborne] item_destroyed {"quantity":2,"itemId":"herb","reason":"GuildUpgrade"}
+[Guildborne] item_destroyed {"quantity":6,"itemId":"timber","reason":"GuildUpgrade"}
+[Guildborne] item_destroyed {"quantity":1,"itemId":"iron_ingot","reason":"GuildUpgrade"}
+[Guildborne] item_destroyed {"quantity":6,"itemId":"iron_ore","reason":"GuildUpgrade"}
+[Guildborne] gold_destroyed {"amount":80,"reason":"GuildUpgrade"}
+[Guildborne] guild_upgraded {"level":2}
+[Guildborne] tutorial_completed []
+GBQA PASS UpgradeGuildHall OK revision 14 gold 10
+GBQA PASS UpgradeGuildHall AlreadyCommitted revision 14 gold 10
+GBQA PASS UpgradeGuildHall HallAlreadyUpgraded revision 14 gold 10
+GBQA FINAL {"adventurers":{"a:Priest":{"equipmentSlots":[],"stats":{"Attack":4,"Defense":3,"Health":24,"WeaponBonus":0},"name":"Sage","level":1,"id":"a:Priest","baseStats":{"Defense":3,"Health":24,"Attack":4},"xp":0,"classId":"Priest"},"a:Archer":{"equipmentSlots":[],"stats":{"Attack":8,"Defense":2,"Health":22,"WeaponBonus":0},"name":"Ash","level":1,"id":"a:Archer","baseStats":{"Defense":2,"Health":22,"Attack":8},"xp":0,"classId":"Archer"},"a:Warrior":{"equipmentSlots":{"weapon":"q:1:1"},"stats":{"Attack":9,"Defense":4,"Health":33,"WeaponBonus":2},"name":"Rowan","level":2,"id":"a:Warrior","baseStats":{"Defense":4,"Health":30,"Attack":6},"xp":90,"classId":"Warrior"}},"party":{"adventurerIds":["a:Warrior"]},"quests":{"nextRunSequence":4,"lastResult":{"questName":"Quarry Patrol","runId":"q:3","reward":{"Items":[{"Id":"iron_ore","Quantity":6},{"Id":"iron_sword","Quantity":1}],"XP":40,"Gold":60}},"claimedThrough":3,"firstClears":{"timber_escort":true,"quarry_patrol":true,"trail_watch":true}},"hallLevel":2,"gold":10,"inventory":{"equipment":{"q:3:1":{"binding":"Account","definitionId":"iron_sword","upgradeLevel":0},"recruit:Priest:1":{"binding":"Account","upgradeLevel":0,"definitionId":"apprentice_staff"},"q:1:1":{"binding":"Account","definitionId":"training_sword","upgradeLevel":0},"recruit:Archer:1":{"binding":"Account","definitionId":"short_bow","upgradeLevel":0}},"stacks":[]},"language":"th","progression":{"tutorialStep":"complete","recruitedClasses":{"Warrior":true,"Archer":true,"Priest":true},"welcomeSeen":true,"tutorialCompleted":true,"everEquipped":true}}
+GBQA NATIVE LOOP AND REJECTION TESTS PASSED
+GBHERO PASS GetState nil 14
+[Guildborne] profile_saved {"action":"StartQuest","revision":15}
+[Guildborne] quest_started {"questId":"trail_watch"}
+GBHERO PASS StartQuest OK 15
+[Guildborne] profile_saved {"action":"CompleteQuest","revision":16}
+[Guildborne] gold_created {"amount":10,"reason":"QuestReward"}
+[Guildborne] item_acquired {"quantity":1,"itemId":"timber"}
+[Guildborne] item_acquired {"quantity":1,"itemId":"herb"}
+[Guildborne] quest_completed {"questId":"trail_watch"}
+GBHERO PASS CompleteQuest OK 16
+[Guildborne] profile_saved {"action":"StartQuest","revision":17}
+[Guildborne] quest_started {"questId":"trail_watch"}
+GBHERO PASS StartQuest OK 17
+[Guildborne] profile_saved {"action":"CompleteQuest","revision":18}
+[Guildborne] gold_created {"amount":10,"reason":"QuestReward"}
+[Guildborne] item_acquired {"quantity":1,"itemId":"timber"}
+[Guildborne] item_acquired {"quantity":1,"itemId":"herb"}
+[Guildborne] quest_completed {"questId":"trail_watch"}
+GBHERO PASS CompleteQuest OK 18
+[Guildborne] profile_saved {"action":"StartQuest","revision":19}
+[Guildborne] quest_started {"questId":"trail_watch"}
+GBHERO PASS StartQuest OK 19
+[Guildborne] profile_saved {"action":"CompleteQuest","revision":20}
+[Guildborne] gold_created {"amount":10,"reason":"QuestReward"}
+[Guildborne] item_acquired {"quantity":1,"itemId":"timber"}
+[Guildborne] item_acquired {"quantity":1,"itemId":"herb"}
+[Guildborne] quest_completed {"questId":"trail_watch"}
+GBHERO PASS CompleteQuest OK 20
+[Guildborne] profile_saved {"action":"Recruit","revision":21}
+[Guildborne] gold_destroyed {"amount":20,"reason":"Recruitment"}
+[Guildborne] item_acquired {"quantity":1,"itemId":"knight_sword"}
+[Guildborne] adventurer_recruited {"classId":"Knight"}
+GBHERO PASS Recruit OK 21
+[Guildborne] profile_saved {"action":"Recruit","revision":22}
+[Guildborne] gold_destroyed {"amount":20,"reason":"Recruitment"}
+[Guildborne] item_acquired {"quantity":1,"itemId":"mage_staff"}
+[Guildborne] adventurer_recruited {"classId":"Mage"}
+GBHERO PASS Recruit OK 22
+[Guildborne] profile_saved {"action":"EquipItem","revision":23}
+[Guildborne] weapon_equipped {"itemId":"iron_sword","classId":"Warrior"}
+GBHERO PASS EquipItem OK 23
+[Guildborne] profile_saved {"action":"EquipItem","revision":24}
+[Guildborne] weapon_equipped {"itemId":"short_bow","classId":"Archer"}
+GBHERO PASS EquipItem OK 24
+[Guildborne] profile_saved {"action":"EquipItem","revision":25}
+[Guildborne] weapon_equipped {"itemId":"apprentice_staff","classId":"Priest"}
+GBHERO PASS EquipItem OK 25
+[Guildborne] profile_saved {"action":"EquipItem","revision":26}
+[Guildborne] weapon_equipped {"itemId":"knight_sword","classId":"Knight"}
+GBHERO PASS EquipItem OK 26
+[Guildborne] profile_saved {"action":"EquipItem","revision":27}
+[Guildborne] weapon_equipped {"itemId":"mage_staff","classId":"Mage"}
+GBHERO PASS EquipItem OK 27
+[Guildborne] profile_saved {"action":"UpdateParty","revision":28}
+[Guildborne] party_updated []
+GBHERO PASS UpdateParty OK 28
+GBHERO PASS UpdateParty InvalidRequest 28
+GBHERO PASS UpdateParty InvalidParty 28
+[Guildborne] profile_saved {"action":"StartQuest","revision":29}
+[Guildborne] quest_started {"questId":"trail_watch"}
+GBHERO PASS StartQuest OK 29
+[Guildborne] profile_saved {"action":"CompleteQuest","revision":30}
+[Guildborne] gold_created {"amount":10,"reason":"QuestReward"}
+[Guildborne] item_acquired {"quantity":1,"itemId":"timber"}
+[Guildborne] item_acquired {"quantity":1,"itemId":"herb"}
+[Guildborne] quest_completed {"questId":"trail_watch"}
+GBHERO PASS CompleteQuest OK 30
+[Guildborne] profile_saved {"action":"UpdateParty","revision":31}
+[Guildborne] party_updated []
+GBHERO PASS UpdateParty OK 31
+[Guildborne] profile_saved {"action":"UpdateParty","revision":32}
+[Guildborne] party_updated []
+GBHERO PASS UpdateParty OK 32
+[Guildborne] profile_saved {"action":"SetLanguage","revision":33}
+GBHERO PASS SetLanguage OK 33
+GBHERO FIVE HERO LOOP PASSED {"data":{"adventurers":{"a:Priest":{"equipmentSlots":{"weapon":"recruit:Priest:1"},"stats":{"Attack":6,"Defense":3,"Health":24,"WeaponBonus":2},"name":"Sage","level":1,"id":"a:Priest","baseStats":{"Defense":3,"Health":24,"Attack":4},"xp":5,"classId":"Priest"},"a:Archer":{"equipmentSlots":{"weapon":"recruit:Archer:1"},"stats":{"Attack":10,"Defense":2,"Health":22,"WeaponBonus":2},"name":"Ash","level":1,"id":"a:Archer","baseStats":{"Defense":2,"Health":22,"Attack":8},"xp":5,"classId":"Archer"},"a:Warrior":{"equipmentSlots":{"weapon":"q:3:1"},"stats":{"Attack":12,"Defense":4,"Health":36,"WeaponBonus":4},"name":"Rowan","level":3,"id":"a:Warrior","baseStats":{"Defense":4,"Health":30,"Attack":6},"xp":110,"classId":"Warrior"},"a:Mage":{"equipmentSlots":{"weapon":"recruit:Mage:1"},"stats":{"Attack":12,"Defense":1,"Health":20,"WeaponBonus":2},"name":"Lyra","level":1,"id":"a:Mage","baseStats":{"Defense":1,"Health":20,"Attack":10},"xp":5,"classId":"Mage"},"a:Knight":{"equipmentSlots":{"weapon":"recruit:Knight:1"},"stats":{"Attack":6,"Defense":7,"Health":40,"WeaponBonus":2},"name":"Bram","level":1,"id":"a:Knight","baseStats":{"Defense":7,"Health":40,"Attack":4},"xp":5,"classId":"Knight"}},"party":{"adventurerIds":["a:Knight","a:Warrior","a:Archer","a:Mage","a:Priest"]},"quests":{"nextRunSequence":8,"lastResult":{"questName":"Trail Watch","runId":"q:7","reward":{"Items":[{"Id":"timber","Quantity":1},{"Id":"herb","Quantity":1}],"XP":5,"Gold":10}},"claimedThrough":7,"firstClears":{"timber_escort":true,"quarry_patrol":true,"trail_watch":true}},"hallLevel":2,"gold":10,"inventory":{"equipment":{"recruit:Knight:1":{"binding":"Account","definitionId":"knight_sword","upgradeLevel":0},"recruit:Priest:1":{"binding":"Account","upgradeLevel":0,"definitionId":"apprentice_staff"},"recruit:Mage:1":{"binding":"Account","definitionId":"mage_staff","upgradeLevel":0},"q:3:1":{"binding":"Account","definitionId":"iron_sword","upgradeLevel":0},"q:1:1":{"binding":"Account","definitionId":"training_sword","upgradeLevel":0},"recruit:Archer:1":{"binding":"Account","definitionId":"short_bow","upgradeLevel":0}},"stacks":{"timber":4,"herb":4}},"language":"th","progression":{"tutorialStep":"complete","recruitedClasses":{"Warrior":true,"Archer":true,"Knight":true,"Priest":true,"Mage":true},"welcomeSeen":true,"tutorialCompleted":true,"everEquipped":true}},"revision":33}
+[Guildborne] profile_saved {"action":"CombatReward","revision":34}
+[Guildborne] gold_created {"amount":3,"reason":"goblin_combat"}
+[Guildborne] combat_reward []
+[Guildborne] profile_saved {"action":"CombatReward","revision":35}
+[Guildborne] gold_created {"amount":3,"reason":"goblin_combat"}
+[Guildborne] combat_reward []
+[Guildborne] profile_saved {"action":"CombatReward","revision":36}
+[Guildborne] gold_created {"amount":3,"reason":"goblin_combat"}
+[Guildborne] combat_reward []
+[Guildborne] profile_saved {"action":"CombatReward","revision":37}
+[Guildborne] gold_created {"amount":3,"reason":"goblin_combat"}
+[Guildborne] combat_reward []
+[Roblox][sabuiltin_Assistant.rbxm.Assistant.Packages._Index.AssistantUI.AssistantUI.Actions.ExecuteLuauActions] The execute_luau changed camera type. Resetting from Enum.CameraType.Scriptable back to Enum.CameraType.Custom
+[Guildborne] profile_saved {"action":"CombatReward","revision":38}
+[Guildborne] gold_created {"amount":3,"reason":"goblin_combat"}
+[Guildborne] combat_reward []
+[Guildborne] profile_saved {"action":"CombatReward","revision":39}
+[Guildborne] gold_created {"amount":3,"reason":"goblin_combat"}
+[Guildborne] combat_reward []
+[Guildborne] profile_saved {"action":"CombatReward","revision":40}
+[Guildborne] gold_created {"amount":3,"reason":"goblin_combat"}
+[Guildborne] combat_reward []
+[Guildborne] profile_saved {"action":"CombatReward","revision":41}
+[Guildborne] gold_created {"amount":3,"reason":"goblin_combat"}
+[Guildborne] combat_reward []
+[Guildborne] profile_saved {"action":"CombatReward","revision":42}
+[Guildborne] gold_created {"amount":3,"reason":"goblin_combat"}
+[Guildborne] combat_reward []
+[Guildborne] profile_saved {"action":"CombatReward","revision":43}
+[Guildborne] gold_created {"amount":3,"reason":"goblin_combat"}
+[Guildborne] combat_reward []
+[Guildborne] profile_saved {"action":"CombatReward","revision":44}
+[Guildborne] gold_created {"amount":3,"reason":"goblin_combat"}
+[Guildborne] combat_reward []
+[Guildborne] profile_saved {"action":"CombatReward","revision":45}
+[Guildborne] gold_created {"amount":3,"reason":"goblin_combat"}
+[Guildborne] combat_reward []
+[Guildborne] profile_saved {"action":"UpdateParty","revision":46}
+[Guildborne] party_updated []
+GBHERO PASS UpdateParty OK 46
+[Guildborne] profile_saved {"action":"CombatReward","revision":47}
+[Guildborne] gold_created {"amount":3,"reason":"goblin_combat"}
+[Guildborne] combat_reward []
+[Guildborne] profile_saved {"action":"CombatReward","revision":48}
+[Guildborne] gold_created {"amount":3,"reason":"goblin_combat"}
+[Guildborne] combat_reward []
+[Guildborne] profile_saved {"action":"CombatReward","revision":49}
+[Guildborne] gold_created {"amount":3,"reason":"goblin_combat"}
+[Guildborne] combat_reward []
+[Guildborne] profile_saved {"action":"UpdateParty","revision":50}
+[Guildborne] party_updated []
+GBHERO PASS UpdateParty OK 50

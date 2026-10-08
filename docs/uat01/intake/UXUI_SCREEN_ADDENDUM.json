@@ -1,0 +1,298 @@
+{
+  "ruleset": "GUILD-PROGRESSION-DESIGN-2.0",
+  "notice": "ข้อเสนอออกแบบใหม่ ไม่ใช่ข้อมูลจาก repository ที่ตรวจแล้ว และไม่ใช่โค้ดเกมพร้อมใช้งาน ต้องผูก IDs/รางวัล/ฉากกับของจริงและทดสอบก่อนเปิดใช้",
+  "surfaces": [
+    {
+      "id": "QUEST_JOURNAL",
+      "title_th": "สมุดเควส",
+      "content": "Main/Side/Hero/Class/World/Exploration/Recurring tabs; max3 tracked",
+      "states": [
+        "locked",
+        "loading",
+        "active",
+        "turn-in",
+        "claimed",
+        "retry"
+      ],
+      "ux_rule": "มือถือใช้รายการก่อน ไม่โชว์แผนที่ใหญ่ทั้งหน้า",
+      "status": "DESIGN_ONLY",
+      "reuse_existing_blueprint": true
+    },
+    {
+      "id": "QUEST_DETAIL",
+      "title_th": "รายละเอียดเควส",
+      "content": "วัตถุประสงค์ รางวัลที่ยืนยันแล้ว จุดหมาย การเลือก และเงื่อนไขที่ขาด",
+      "states": [
+        "unknown",
+        "revealed",
+        "requirements_missing",
+        "reward_pending"
+      ],
+      "ux_rule": "ชัดว่า recommended level ไม่เท่าขั้นต่ำที่ห้ามเล่น",
+      "status": "DESIGN_ONLY",
+      "reuse_existing_blueprint": true
+    },
+    {
+      "id": "STORY_CHRONICLE",
+      "title_th": "แผนผังเนื้อเรื่อง",
+      "content": "บทที่ผ่าน checkpoint และฉากย้อนดู",
+      "states": [
+        "unseen",
+        "active",
+        "completed",
+        "replay"
+      ],
+      "ux_rule": "replay ไม่รับแต้ม/รางวัลครั้งแรกซ้ำ",
+      "status": "DESIGN_ONLY",
+      "reuse_existing_blueprint": true
+    },
+    {
+      "id": "HERO_DOSSIER",
+      "title_th": "ประวัติฮีโร่",
+      "content": "HeroInstance ที่เลือก เลเวล tier rank bond equipment",
+      "states": [
+        "owned",
+        "expedition",
+        "downed",
+        "unavailable"
+      ],
+      "ux_rule": "อย่าสับสนชื่อ template กับตัวที่เป็นเจ้าของ",
+      "status": "DESIGN_ONLY",
+      "reuse_existing_blueprint": true
+    },
+    {
+      "id": "HERO_STORY",
+      "title_th": "ความสัมพันธ์ฮีโร่",
+      "content": "สามตอนและคำใบ้เรื่องส่วนตัว",
+      "states": [
+        "not_owned",
+        "level_locked",
+        "available",
+        "completed"
+      ],
+      "ux_rule": "ไม่บังคับสุ่มได้ Hero เฉพาะเพื่อจบ main",
+      "status": "DESIGN_ONLY",
+      "reuse_existing_blueprint": true
+    },
+    {
+      "id": "CLASS_CHOOSER",
+      "title_th": "เลือกอาชีพ",
+      "content": "ดูสาย สกิลตัวอย่าง บทบาท ทดลอง และยืนยัน",
+      "states": [
+        "preview",
+        "trial_required",
+        "eligible",
+        "committing",
+        "committed"
+      ],
+      "ux_rule": "แสดงค่าคืนแต้ม ไม่ auto เลือกจาก timeout",
+      "status": "DESIGN_ONLY",
+      "reuse_existing_blueprint": true
+    },
+    {
+      "id": "CLASS_TRIAL",
+      "title_th": "บททดสอบอาชีพ",
+      "content": "อุปกรณ์ฝึก temporary และเงื่อนไขชนะตามบทบาท",
+      "states": [
+        "ready",
+        "in_trial",
+        "failed",
+        "checkpoint",
+        "succeeded"
+      ],
+      "ux_rule": "ออกกลางทางกลับได้ ไม่เสีย Gold/hero",
+      "status": "DESIGN_ONLY",
+      "reuse_existing_blueprint": true
+    },
+    {
+      "id": "CLASS_LINEAGE",
+      "title_th": "เส้นทางสามอาชีพ",
+      "content": "5→10→20 พร้อมสายที่เลือกและสายที่ยังไม่เรียน",
+      "states": [
+        "selected",
+        "alternative",
+        "legacy_unlocked",
+        "new_locked"
+      ],
+      "ux_rule": "show Class2 Lv35 / Class3 Lv70 ไม่ใช้ค่า30เก่า",
+      "status": "DESIGN_ONLY",
+      "reuse_existing_blueprint": true
+    },
+    {
+      "id": "SKILL_TREE",
+      "title_th": "ต้นไม้สกิล",
+      "content": "แต้มที่มี/ที่ใช้ เงื่อนไขและ path ปัจจุบัน",
+      "states": [
+        "locked",
+        "learnable",
+        "ranked",
+        "max",
+        "draft"
+      ],
+      "ux_rule": "มือถือมี list mode แทนบังคับ pinch/drag",
+      "status": "DESIGN_ONLY",
+      "reuse_existing_blueprint": true
+    },
+    {
+      "id": "SKILL_NODE",
+      "title_th": "รายละเอียดโหนด",
+      "content": "rankปัจจุบัน→ถัดไป ผลจริง cooldown cost prerequisite",
+      "states": [
+        "need_level",
+        "need_tier",
+        "need_points",
+        "need_quest",
+        "exclusive"
+      ],
+      "ux_rule": "ไม่ใช้สีอย่างเดียวระบุ locked",
+      "status": "DESIGN_ONLY",
+      "reuse_existing_blueprint": true
+    },
+    {
+      "id": "BUILD_PLANNER",
+      "title_th": "แผน build",
+      "content": "ทดลองแต้มโดยยังไม่บันทึก Undo/Reset draft/Apply",
+      "states": [
+        "clean",
+        "dirty",
+        "invalid",
+        "server_rejected",
+        "saved"
+      ],
+      "ux_rule": "กด Apply ครั้งเดียวส่ง intent ไม่ autosave ทุกกด+",
+      "status": "DESIGN_ONLY",
+      "reuse_existing_blueprint": true
+    },
+    {
+      "id": "STAT_ALLOCATOR",
+      "title_th": "จัด Status",
+      "content": "STR DEX INT VIT WIS พร้อม before/after/softcap",
+      "states": [
+        "unspent",
+        "draft",
+        "cap_hit",
+        "confirmed"
+      ],
+      "ux_rule": "มี +1/-1/+5 และ suggested preset อธิบาย",
+      "status": "DESIGN_ONLY",
+      "reuse_existing_blueprint": true
+    },
+    {
+      "id": "RESPEC_CONFIRM",
+      "title_th": "คืนแต้ม",
+      "content": "แต้มที่จะคืน skill/status สิ่งที่ไม่หาย และค่าใช้จ่ายจริง",
+      "states": [
+        "free_promotion",
+        "free_uat",
+        "paid_earnable",
+        "blocked"
+      ],
+      "ux_rule": "ไม่ทำปุ่มกำกวมว่าจะรีเลเวล",
+      "status": "DESIGN_ONLY",
+      "reuse_existing_blueprint": true
+    },
+    {
+      "id": "LOADOUT_AI",
+      "title_th": "ชุดสกิลและ AI",
+      "content": "basic+3active; ชอบฮีลเมื่อ HP ต่ำ/ใช้ taunt เมื่อเพื่อนถูกโจมตี",
+      "states": [
+        "equipped",
+        "not_equipped",
+        "auto_disabled",
+        "cooldown"
+      ],
+      "ux_rule": "manualและautoใช้ cooldown เดียวกัน",
+      "status": "DESIGN_ONLY",
+      "reuse_existing_blueprint": true
+    },
+    {
+      "id": "HALL_CAP",
+      "title_th": "เพดานเลเวล",
+      "content": "level/current cap/hall/next cap/required permit",
+      "states": [
+        "normal",
+        "near_cap",
+        "capped",
+        "max100",
+        "legacy"
+      ],
+      "ux_rule": "ปุ่มนำทางไปเควสหรือ Hall ไม่ขาย XP boost ตอนตัน",
+      "status": "DESIGN_ONLY",
+      "reuse_existing_blueprint": true
+    },
+    {
+      "id": "HALL_UPGRADE",
+      "title_th": "อัปหอกิลด์",
+      "content": "cap20→25 ตัวอย่างปลด/วัสดุ/permit",
+      "states": [
+        "quest_missing",
+        "material_missing",
+        "ready",
+        "saving",
+        "upgraded"
+      ],
+      "ux_rule": "บอก Hall4 เปิดโอกาสขึ้น35 ไม่เปลี่ยนClass2ทันที",
+      "status": "DESIGN_ONLY",
+      "reuse_existing_blueprint": true
+    },
+    {
+      "id": "RECRUIT_GATE",
+      "title_th": "รับสมัคร",
+      "content": "Class1 + Hall1 + main flag; Hero starts10 and earned points",
+      "states": [
+        "locked",
+        "preview",
+        "owned",
+        "full",
+        "ready",
+        "recruiting"
+      ],
+      "ux_rule": "มีทางรับตัวแรกแน่นอน แยกจากสุ่ม",
+      "status": "DESIGN_ONLY",
+      "reuse_existing_blueprint": true
+    },
+    {
+      "id": "WORLD_EVENT",
+      "title_th": "เหตุการณ์โลก",
+      "content": "สถานะช่วง วัตถุประสงค์ contribution และผลรับ",
+      "states": [
+        "announced",
+        "active",
+        "completed",
+        "expired",
+        "reward_pending"
+      ],
+      "ux_rule": "แยก global schedule จาก local encounter ไม่อ้างคนทุกserverตีตัวเดียว",
+      "status": "DESIGN_ONLY",
+      "reuse_existing_blueprint": true
+    },
+    {
+      "id": "SECRET_NOTEBOOK",
+      "title_th": "สมุดเบาะแส",
+      "content": "เฉพาะคำใบ้ที่พบ มีระดับ hint โดยสมัครใจ",
+      "states": [
+        "undiscovered",
+        "clue1",
+        "clue2",
+        "resolved"
+      ],
+      "ux_rule": "ไม่ spoil รายชื่อทั้งหมดหรือบังคับเวลาจริง",
+      "status": "DESIGN_ONLY",
+      "reuse_existing_blueprint": true
+    },
+    {
+      "id": "PROGRESSION_RESULT",
+      "title_th": "ผลเปลี่ยนอาชีพ/เลเวล",
+      "content": "ชื่อสายใหม่ แต้มที่คืน cap และเป้าหมายถัดไป",
+      "states": [
+        "loading",
+        "confirmed",
+        "recovering",
+        "already_applied"
+      ],
+      "ux_rule": "อนิเมชันไม่เป็นตัวจ่ายรางวัล; skip ได้",
+      "status": "DESIGN_ONLY",
+      "reuse_existing_blueprint": true
+    }
+  ]
+}

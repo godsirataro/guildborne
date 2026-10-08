@@ -1,0 +1,13 @@
+Building project 'Guildborne'
+Built project to Guildborne.rbxlx
+Created sourcemap at build/sourcemap.json
+[INFO] Loading definitions file: @roblox - .tools/luau-lsp/globalTypes.d.luau
+[WARN] client does not allow didChangeWatchedFiles registration - automatic updating on sourcemap changes disabled
+src/client/UI/ExpansionView.luau(67,10): LocalShadow: Variable 'ids' shadows previous declaration at line 43
+src/client/UI/SettlementView.luau(42,12): MultiLineStatement: Statement spans multiple lines; use indentation to silence
+Compiled 9 KLOC into 806 KB bytecode (read 0.01s, parse 0.01s, compile 0.02s)
+PASS: 43 design/evidence documents, JSON/TOML, Rojo paths,
+      460 local links, 1 JSON fixture(s), 96 strict Luau files.
+PASS: built-place boundaries and exact runtime sourcemap coverage.
+Roblox runtime behavior and external link availability are not checked here.
+PASS: remaining final checks after UTF-8 repair; 274 tests passed in validation-uat-ui-latest.txt.

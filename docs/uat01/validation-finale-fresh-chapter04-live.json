@@ -1,0 +1,3390 @@
+{
+  "method": "Ordinary keyboard/mouse and navigation speed1; read-only State observer; no profile grants or gameplay source edits/injected Remotes",
+  "snapshot": {
+    "mode": "Studio memory · not saved after Stop",
+    "data": {
+      "adventurers": {
+        "a:Knight": {
+          "equipmentSlots": {
+            "weapon": "novice:founder:1"
+          },
+          "stats": {
+            "WeaponBonus": 2,
+            "Defense": 7,
+            "Health": 247,
+            "Attack": 75
+          },
+          "id": "a:Knight",
+          "classId": "Knight",
+          "xp": 3535,
+          "name": "Bram",
+          "level": 70,
+          "baseStats": {
+            "Defense": 7,
+            "Health": 40,
+            "Attack": 4
+          },
+          "rank": "F"
+        },
+        "h:1": {
+          "equipmentSlots": {
+            "weapon": "campaign:recruit:1:1"
+          },
+          "stats": {
+            "WeaponBonus": 2,
+            "Defense": 3,
+            "Health": 222,
+            "Attack": 72
+          },
+          "id": "h:1",
+          "classId": "Priest",
+          "xp": 3335,
+          "name": "Sage",
+          "level": 67,
+          "baseStats": {
+            "Defense": 3,
+            "Health": 24,
+            "Attack": 4
+          },
+          "rank": "F"
+        }
+      },
+      "expansion": {
+        "actors": {
+          "player": {
+            "skills": {
+              "vitality": true,
+              "focus": true
+            },
+            "tier": 1
+          }
+        },
+        "nextBuilding": 1,
+        "buildings": [],
+        "themeRights": [],
+        "gatherReady": [],
+        "raceChosen": false,
+        "gathered": [],
+        "tower": {
+          "nextRun": 1,
+          "highest": 0,
+          "checkpoint": 0
+        }
+      },
+      "levelCap": 70,
+      "nextHallLevelCap": 75,
+      "settlement": {
+        "nextOffer": 1,
+        "elixirs": 0,
+        "tavernLevel": 1,
+        "nextHero": 2,
+        "journal": [],
+        "nextJob": 1,
+        "jobs": []
+      },
+      "language": "en",
+      "guildLand": {
+        "accessMode": "Private",
+        "plots": {
+          "grove": {
+            "purchased": false,
+            "questEligible": false,
+            "materials": {
+              "herb": 8,
+              "timber": 24
+            },
+            "delivered": [],
+            "purchaseAvailable": false,
+            "status": "QuestLocked",
+            "quests": {
+              "trail_watch": false
+            },
+            "name": "Grove Terrace"
+          },
+          "quarry": {
+            "purchased": false,
+            "questEligible": false,
+            "materials": {
+              "stone": 32,
+              "iron_ore": 16
+            },
+            "delivered": [],
+            "purchaseAvailable": false,
+            "status": "QuestLocked",
+            "quests": {
+              "quarry_patrol": false,
+              "timber_escort": false
+            },
+            "name": "Quarry Terrace"
+          },
+          "summit": {
+            "purchased": false,
+            "questEligible": false,
+            "materials": {
+              "stone": 40,
+              "timber": 40,
+              "iron_ingot": 4
+            },
+            "delivered": [],
+            "purchaseAvailable": false,
+            "status": "QuestLocked",
+            "quests": {
+              "quarry_patrol": false
+            },
+            "name": "Summit Terrace"
+          }
+        }
+      },
+      "inventory": {
+        "equipment": {
+          "novice:class:1": {
+            "binding": "Account",
+            "upgradeLevel": 0,
+            "definitionId": "mage_staff"
+          },
+          "campaign:recruit:1:1": {
+            "binding": "Account",
+            "definitionId": "apprentice_staff",
+            "upgradeLevel": 0
+          },
+          "novice:founder:1": {
+            "binding": "Account",
+            "upgradeLevel": 0,
+            "definitionId": "knight_sword"
+          }
+        },
+        "stacks": {
+          "timber": 4,
+          "iron_ore": 2,
+          "herb": 3
+        },
+        "nextEquipmentSequence": 1
+      },
+      "character": {
+        "classPathId": "mage:1",
+        "stats": {
+          "WeaponBonus": 2,
+          "Defense": 1,
+          "Health": 233,
+          "Attack": 83
+        },
+        "definitionVersion": 1,
+        "classId": "Mage",
+        "xp": 3515,
+        "raceId": "Human",
+        "tier": 1,
+        "level": 70,
+        "equipmentSlots": {
+          "weapon": "novice:class:1"
+        },
+        "skillId": "fireball"
+      },
+      "hallLevel": 11,
+      "gold": 248,
+      "party": {
+        "adventurerIds": [
+          "a:Knight",
+          "h:1"
+        ]
+      },
+      "rosterCapacity": 5,
+      "quests": {
+        "nextRunSequence": 1,
+        "claimedThrough": 0,
+        "firstClears": []
+      },
+      "progression": {
+        "tutorialStep": "complete",
+        "novice": {
+          "trialClass": "Mage",
+          "founderHero": "a:Knight",
+          "claimed": 6,
+          "version": 1,
+          "objectives": [],
+          "branch": "rescue"
+        },
+        "recruitedClasses": {
+          "Knight": true,
+          "Priest": true
+        },
+        "welcomeSeen": true,
+        "ruleset": "guildborne.progression.2",
+        "campaign": {
+          "version": 1,
+          "hallPermit": 11,
+          "choices": {
+            "allocate_timber": "workers",
+            "choose_joint_review": "workers",
+            "renew_tower_oath": "courage",
+            "choose_bridge_route": "sheltered",
+            "choose_crest": "compass",
+            "choose_tower_door": "sun",
+            "choose_motto": "together",
+            "choose_witness_route": "trust"
+          },
+          "claimed": 24,
+          "recruitHero": "h:1",
+          "objectives": []
+        },
+        "tutorialCompleted": true,
+        "everEquipped": false
+      }
+    },
+    "revision": 198
+  },
+  "guard": [
+    {
+      "a": {
+        "LessonRole": "Guard",
+        "OwnerUserId": 11732987790,
+        "LessonPhase": "Ready",
+        "TrainingOnly": true,
+        "LessonStatus": "Active",
+        "CueActed": false,
+        "Successes": 0
+      }
+    },
+    {
+      "a": {
+        "LessonRole": "Guard",
+        "OwnerUserId": 11732987790,
+        "LessonPhase": "Ready",
+        "TrainingOnly": true,
+        "LessonStatus": "Active",
+        "CueActed": false,
+        "Successes": 0
+      }
+    },
+    {
+      "a": {
+        "LessonRole": "Guard",
+        "OwnerUserId": 11732987790,
+        "CueEndsAt": 1791243790.1391032,
+        "LessonStatus": "Active",
+        "Successes": 0,
+        "CueTarget": "left",
+        "LessonPhase": "Warning",
+        "CuePosition": null,
+        "CueRole": "Guard",
+        "CueActed": false,
+        "TrainingOnly": true
+      },
+      "pos": [
+        2068,
+        103,
+        1505
+      ]
+    },
+    {
+      "a": {
+        "LessonRole": "Guard",
+        "OwnerUserId": 11732987790,
+        "CueEndsAt": 1791243790.1390748,
+        "LessonStatus": "Active",
+        "LastActionAccepted": true,
+        "Successes": 0,
+        "CueTarget": "left",
+        "LastAction": "ShieldReady",
+        "LessonPhase": "Warning",
+        "CuePosition": null,
+        "CueRole": "Guard",
+        "CueActed": true,
+        "TrainingOnly": true
+      },
+      "pos": [
+        2068,
+        103,
+        1505
+      ]
+    },
+    {
+      "a": {
+        "LessonRole": "Guard",
+        "OwnerUserId": 11732987790,
+        "CueEndsAt": 1791243790.139081,
+        "LessonStatus": "Active",
+        "LastActionAccepted": true,
+        "Successes": 0,
+        "CueTarget": "left",
+        "LastAction": "ShieldReady",
+        "LessonPhase": "Warning",
+        "CuePosition": null,
+        "CueRole": "Guard",
+        "CueActed": true,
+        "TrainingOnly": true
+      },
+      "pos": [
+        2068,
+        103,
+        1505
+      ]
+    },
+    {
+      "a": {
+        "LessonRole": "Guard",
+        "OwnerUserId": 11732987790,
+        "CueEndsAt": 1791243790.1390827,
+        "LessonStatus": "Active",
+        "LastActionAccepted": true,
+        "Successes": 0,
+        "CueTarget": "left",
+        "LastAction": "ShieldReady",
+        "LessonPhase": "Warning",
+        "CuePosition": null,
+        "CueRole": "Guard",
+        "CueActed": true,
+        "TrainingOnly": true
+      },
+      "pos": [
+        2068,
+        103,
+        1505
+      ]
+    },
+    {
+      "a": {
+        "LessonRole": "Guard",
+        "OwnerUserId": 11732987790,
+        "CueEndsAt": 1791243790.1390798,
+        "LessonStatus": "Active",
+        "LastActionAccepted": true,
+        "Successes": 0,
+        "CueTarget": "left",
+        "LastAction": "ShieldReady",
+        "LessonPhase": "Warning",
+        "CuePosition": null,
+        "CueRole": "Guard",
+        "CueActed": true,
+        "TrainingOnly": true
+      },
+      "pos": [
+        2068,
+        103,
+        1505
+      ]
+    },
+    {
+      "a": {
+        "LessonRole": "Guard",
+        "OwnerUserId": 11732987790,
+        "LessonStatus": "Active",
+        "Successes": 1,
+        "LastActionAccepted": true,
+        "LessonPhase": "Ready",
+        "LastAction": "ShieldReady",
+        "CueActed": false,
+        "TrainingOnly": true
+      }
+    },
+    {
+      "a": {
+        "LessonRole": "Guard",
+        "OwnerUserId": 11732987790,
+        "LessonStatus": "Active",
+        "Successes": 1,
+        "LastActionAccepted": true,
+        "LessonPhase": "Ready",
+        "LastAction": "ShieldReady",
+        "CueActed": false,
+        "TrainingOnly": true
+      }
+    },
+    {
+      "a": {
+        "LessonRole": "Guard",
+        "OwnerUserId": 11732987790,
+        "CueEndsAt": 1791243794.1551774,
+        "LessonStatus": "Active",
+        "LastActionAccepted": true,
+        "Successes": 1,
+        "CueTarget": "centre",
+        "LastAction": "ShieldReady",
+        "LessonPhase": "Warning",
+        "CuePosition": null,
+        "CueRole": "Guard",
+        "CueActed": false,
+        "TrainingOnly": true
+      },
+      "pos": [
+        2080,
+        103,
+        1505
+      ]
+    },
+    {
+      "a": {
+        "LessonRole": "Guard",
+        "OwnerUserId": 11732987790,
+        "CueEndsAt": 1791243794.1551716,
+        "LessonStatus": "Active",
+        "LastActionAccepted": true,
+        "Successes": 1,
+        "CueTarget": "centre",
+        "LastAction": "ShieldReady",
+        "LessonPhase": "Warning",
+        "CuePosition": null,
+        "CueRole": "Guard",
+        "CueActed": true,
+        "TrainingOnly": true
+      },
+      "pos": [
+        2080,
+        103,
+        1505
+      ]
+    },
+    {
+      "a": {
+        "LessonRole": "Guard",
+        "OwnerUserId": 11732987790,
+        "CueEndsAt": 1791243794.1551766,
+        "LessonStatus": "Active",
+        "LastActionAccepted": true,
+        "Successes": 1,
+        "CueTarget": "centre",
+        "LastAction": "ShieldReady",
+        "LessonPhase": "Warning",
+        "CuePosition": null,
+        "CueRole": "Guard",
+        "CueActed": true,
+        "TrainingOnly": true
+      },
+      "pos": [
+        2080,
+        103,
+        1505
+      ]
+    },
+    {
+      "a": {
+        "LessonRole": "Guard",
+        "OwnerUserId": 11732987790,
+        "CueEndsAt": 1791243794.1551728,
+        "LessonStatus": "Active",
+        "LastActionAccepted": true,
+        "Successes": 1,
+        "CueTarget": "centre",
+        "LastAction": "ShieldReady",
+        "LessonPhase": "Warning",
+        "CuePosition": null,
+        "CueRole": "Guard",
+        "CueActed": true,
+        "TrainingOnly": true
+      },
+      "pos": [
+        2080,
+        103,
+        1505
+      ]
+    },
+    {
+      "a": {
+        "LessonRole": "Guard",
+        "OwnerUserId": 11732987790,
+        "CueEndsAt": 1791243794.1551688,
+        "LessonStatus": "Active",
+        "LastActionAccepted": true,
+        "Successes": 1,
+        "CueTarget": "centre",
+        "LastAction": "ShieldReady",
+        "LessonPhase": "Warning",
+        "CuePosition": null,
+        "CueRole": "Guard",
+        "CueActed": true,
+        "TrainingOnly": true
+      },
+      "pos": [
+        2080,
+        103,
+        1505
+      ]
+    },
+    {
+      "a": {
+        "LessonRole": "Guard",
+        "OwnerUserId": 11732987790,
+        "LessonStatus": "Active",
+        "Successes": 2,
+        "LastActionAccepted": true,
+        "LessonPhase": "Ready",
+        "LastAction": "ShieldReady",
+        "CueActed": false,
+        "TrainingOnly": true
+      }
+    },
+    {
+      "a": {
+        "LessonRole": "Guard",
+        "OwnerUserId": 11732987790,
+        "LessonStatus": "Active",
+        "Successes": 2,
+        "LastActionAccepted": true,
+        "LessonPhase": "Ready",
+        "LastAction": "ShieldReady",
+        "CueActed": false,
+        "TrainingOnly": true
+      }
+    },
+    {
+      "a": {
+        "LessonRole": "Guard",
+        "OwnerUserId": 11732987790,
+        "CueEndsAt": 1791243798.1562817,
+        "LessonStatus": "Active",
+        "LastActionAccepted": true,
+        "Successes": 2,
+        "CueTarget": "right",
+        "LastAction": "ShieldReady",
+        "LessonPhase": "Warning",
+        "CuePosition": null,
+        "CueRole": "Guard",
+        "CueActed": false,
+        "TrainingOnly": true
+      },
+      "pos": [
+        2092,
+        103,
+        1505
+      ]
+    },
+    {
+      "a": {
+        "LessonRole": "Guard",
+        "OwnerUserId": 11732987790,
+        "CueEndsAt": 1791243798.1562843,
+        "LessonStatus": "Active",
+        "LastActionAccepted": true,
+        "Successes": 2,
+        "CueTarget": "right",
+        "LastAction": "ShieldReady",
+        "LessonPhase": "Warning",
+        "CuePosition": null,
+        "CueRole": "Guard",
+        "CueActed": true,
+        "TrainingOnly": true
+      },
+      "pos": [
+        2092,
+        103,
+        1505
+      ]
+    },
+    {
+      "a": {
+        "LessonRole": "Guard",
+        "OwnerUserId": 11732987790,
+        "CueEndsAt": 1791243798.1562843,
+        "LessonStatus": "Active",
+        "LastActionAccepted": true,
+        "Successes": 2,
+        "CueTarget": "right",
+        "LastAction": "ShieldReady",
+        "LessonPhase": "Warning",
+        "CuePosition": null,
+        "CueRole": "Guard",
+        "CueActed": true,
+        "TrainingOnly": true
+      },
+      "pos": [
+        2092,
+        103,
+        1505
+      ]
+    },
+    {
+      "a": {
+        "LessonRole": "Guard",
+        "OwnerUserId": 11732987790,
+        "CueEndsAt": 1791243798.1562777,
+        "LessonStatus": "Active",
+        "LastActionAccepted": true,
+        "Successes": 2,
+        "CueTarget": "right",
+        "LastAction": "ShieldReady",
+        "LessonPhase": "Warning",
+        "CuePosition": null,
+        "CueRole": "Guard",
+        "CueActed": true,
+        "TrainingOnly": true
+      },
+      "pos": [
+        2092,
+        103,
+        1505
+      ]
+    },
+    {}
+  ],
+  "mend": [
+    {
+      "a": {
+        "LessonRole": "Mend",
+        "OwnerUserId": 11732987790,
+        "LessonPhase": "Ready",
+        "TrainingOnly": true,
+        "LessonStatus": "Active",
+        "CueActed": false,
+        "Successes": 0
+      }
+    },
+    {
+      "a": {
+        "LessonRole": "Mend",
+        "OwnerUserId": 11732987790,
+        "LessonPhase": "Ready",
+        "TrainingOnly": true,
+        "LessonStatus": "Active",
+        "CueActed": false,
+        "Successes": 0
+      }
+    },
+    {
+      "a": {
+        "LessonRole": "Mend",
+        "OwnerUserId": 11732987790,
+        "CueEndsAt": 1791243820.6535308,
+        "LessonStatus": "Active",
+        "Successes": 0,
+        "CueTarget": "left",
+        "LessonPhase": "Warning",
+        "CuePosition": null,
+        "CueRole": "Mend",
+        "CueActed": false,
+        "TrainingOnly": true
+      },
+      "pos": [
+        2068,
+        103,
+        1505
+      ]
+    },
+    {
+      "a": {
+        "LessonRole": "Mend",
+        "OwnerUserId": 11732987790,
+        "CueEndsAt": 1791243820.6535354,
+        "LessonStatus": "Active",
+        "Successes": 0,
+        "CueTarget": "left",
+        "LessonPhase": "Warning",
+        "CuePosition": null,
+        "CueRole": "Mend",
+        "CueActed": false,
+        "TrainingOnly": true
+      },
+      "pos": [
+        2068,
+        103,
+        1505
+      ]
+    },
+    {
+      "a": {
+        "LessonRole": "Mend",
+        "OwnerUserId": 11732987790,
+        "CueEndsAt": 1791243820.6535347,
+        "LessonStatus": "Active",
+        "Successes": 0,
+        "CueTarget": "left",
+        "LessonPhase": "Warning",
+        "CuePosition": null,
+        "CueRole": "Mend",
+        "CueActed": false,
+        "TrainingOnly": true
+      },
+      "pos": [
+        2068,
+        103,
+        1505
+      ]
+    },
+    {
+      "a": {
+        "LessonRole": "Mend",
+        "OwnerUserId": 11732987790,
+        "CueEndsAt": 1791243820.653531,
+        "LessonStatus": "Active",
+        "Successes": 0,
+        "CueTarget": "left",
+        "LessonPhase": "Warning",
+        "CuePosition": null,
+        "CueRole": "Mend",
+        "CueActed": false,
+        "TrainingOnly": true
+      },
+      "pos": [
+        2068,
+        103,
+        1505
+      ]
+    },
+    {
+      "a": {
+        "LessonRole": "Mend",
+        "OwnerUserId": 11732987790,
+        "CueEndsAt": 1791243820.653535,
+        "LessonStatus": "Active",
+        "Successes": 0,
+        "CueTarget": "left",
+        "LessonPhase": "Warning",
+        "CuePosition": null,
+        "CueRole": "Mend",
+        "CueActed": false,
+        "TrainingOnly": true
+      },
+      "pos": [
+        2068,
+        103,
+        1505
+      ]
+    },
+    {
+      "a": {
+        "LessonRole": "Mend",
+        "OwnerUserId": 11732987790,
+        "CueEndsAt": 1791243820.6535363,
+        "LessonStatus": "Active",
+        "Successes": 0,
+        "CueTarget": "left",
+        "LessonPhase": "Warning",
+        "CuePosition": null,
+        "CueRole": "Mend",
+        "CueActed": false,
+        "TrainingOnly": true
+      },
+      "pos": [
+        2068,
+        103,
+        1505
+      ]
+    },
+    {
+      "a": {
+        "LessonRole": "Mend",
+        "OwnerUserId": 11732987790,
+        "CueEndsAt": 1791243824.6535335,
+        "LessonStatus": "Active",
+        "Successes": 0,
+        "CueTarget": "left",
+        "LessonPhase": "Recovery",
+        "CuePosition": null,
+        "CueRole": "Mend",
+        "CueActed": false,
+        "TrainingOnly": true
+      },
+      "pos": [
+        2068,
+        103,
+        1505
+      ]
+    },
+    {
+      "a": {
+        "LessonRole": "Mend",
+        "OwnerUserId": 11732987790,
+        "LessonStatus": "Active",
+        "Successes": 1,
+        "LastActionAccepted": true,
+        "LessonPhase": "Ready",
+        "LastAction": "Recovered",
+        "CueActed": false,
+        "TrainingOnly": true
+      }
+    },
+    {
+      "a": {
+        "LessonRole": "Mend",
+        "OwnerUserId": 11732987790,
+        "LessonStatus": "Active",
+        "Successes": 1,
+        "LastActionAccepted": true,
+        "LessonPhase": "Ready",
+        "LastAction": "Recovered",
+        "CueActed": false,
+        "TrainingOnly": true
+      }
+    },
+    {
+      "a": {
+        "LessonRole": "Mend",
+        "OwnerUserId": 11732987790,
+        "CueEndsAt": 1791243827.0709655,
+        "LessonStatus": "Active",
+        "LastActionAccepted": true,
+        "Successes": 1,
+        "CueTarget": "centre",
+        "LastAction": "Recovered",
+        "LessonPhase": "Warning",
+        "CuePosition": null,
+        "CueRole": "Mend",
+        "CueActed": false,
+        "TrainingOnly": true
+      },
+      "pos": [
+        2080,
+        103,
+        1505
+      ]
+    },
+    {
+      "a": {
+        "LessonRole": "Mend",
+        "OwnerUserId": 11732987790,
+        "CueEndsAt": 1791243827.0709739,
+        "LessonStatus": "Active",
+        "LastActionAccepted": true,
+        "Successes": 1,
+        "CueTarget": "centre",
+        "LastAction": "Recovered",
+        "LessonPhase": "Warning",
+        "CuePosition": null,
+        "CueRole": "Mend",
+        "CueActed": false,
+        "TrainingOnly": true
+      },
+      "pos": [
+        2080,
+        103,
+        1505
+      ]
+    },
+    {
+      "a": {
+        "LessonRole": "Mend",
+        "OwnerUserId": 11732987790,
+        "CueEndsAt": 1791243827.070972,
+        "LessonStatus": "Active",
+        "LastActionAccepted": true,
+        "Successes": 1,
+        "CueTarget": "centre",
+        "LastAction": "Recovered",
+        "LessonPhase": "Warning",
+        "CuePosition": null,
+        "CueRole": "Mend",
+        "CueActed": false,
+        "TrainingOnly": true
+      },
+      "pos": [
+        2080,
+        103,
+        1505
+      ]
+    },
+    {
+      "a": {
+        "LessonRole": "Mend",
+        "OwnerUserId": 11732987790,
+        "CueEndsAt": 1791243827.0709684,
+        "LessonStatus": "Active",
+        "LastActionAccepted": true,
+        "Successes": 1,
+        "CueTarget": "centre",
+        "LastAction": "Recovered",
+        "LessonPhase": "Warning",
+        "CuePosition": null,
+        "CueRole": "Mend",
+        "CueActed": false,
+        "TrainingOnly": true
+      },
+      "pos": [
+        2080,
+        103,
+        1505
+      ]
+    },
+    {
+      "a": {
+        "LessonRole": "Mend",
+        "OwnerUserId": 11732987790,
+        "CueEndsAt": 1791243827.0709648,
+        "LessonStatus": "Active",
+        "LastActionAccepted": true,
+        "Successes": 1,
+        "CueTarget": "centre",
+        "LastAction": "Recovered",
+        "LessonPhase": "Warning",
+        "CuePosition": null,
+        "CueRole": "Mend",
+        "CueActed": false,
+        "TrainingOnly": true
+      },
+      "pos": [
+        2080,
+        103,
+        1505
+      ]
+    },
+    {
+      "a": {
+        "LessonRole": "Mend",
+        "OwnerUserId": 11732987790,
+        "CueEndsAt": 1791243827.0709722,
+        "LessonStatus": "Active",
+        "LastActionAccepted": true,
+        "Successes": 1,
+        "CueTarget": "centre",
+        "LastAction": "Recovered",
+        "LessonPhase": "Warning",
+        "CuePosition": null,
+        "CueRole": "Mend",
+        "CueActed": false,
+        "TrainingOnly": true
+      },
+      "pos": [
+        2080,
+        103,
+        1505
+      ]
+    },
+    {
+      "a": {
+        "LessonRole": "Mend",
+        "OwnerUserId": 11732987790,
+        "CueEndsAt": 1791243831.0709686,
+        "LessonStatus": "Active",
+        "LastActionAccepted": true,
+        "Successes": 1,
+        "CueTarget": "centre",
+        "LastAction": "Recovered",
+        "LessonPhase": "Recovery",
+        "CuePosition": null,
+        "CueRole": "Mend",
+        "CueActed": false,
+        "TrainingOnly": true
+      },
+      "pos": [
+        2080,
+        103,
+        1505
+      ]
+    },
+    {
+      "a": {
+        "LessonRole": "Mend",
+        "OwnerUserId": 11732987790,
+        "LessonStatus": "Active",
+        "Successes": 2,
+        "LastActionAccepted": true,
+        "LessonPhase": "Ready",
+        "LastAction": "Recovered",
+        "CueActed": false,
+        "TrainingOnly": true
+      }
+    },
+    {
+      "a": {
+        "LessonRole": "Mend",
+        "OwnerUserId": 11732987790,
+        "LessonStatus": "Active",
+        "Successes": 2,
+        "LastActionAccepted": true,
+        "LessonPhase": "Ready",
+        "LastAction": "Recovered",
+        "CueActed": false,
+        "TrainingOnly": true
+      }
+    },
+    {
+      "a": {
+        "LessonRole": "Mend",
+        "OwnerUserId": 11732987790,
+        "CueEndsAt": 1791243832.3040454,
+        "LessonStatus": "Active",
+        "LastActionAccepted": true,
+        "Successes": 2,
+        "CueTarget": "right",
+        "LastAction": "Recovered",
+        "LessonPhase": "Warning",
+        "CuePosition": null,
+        "CueRole": "Mend",
+        "CueActed": false,
+        "TrainingOnly": true
+      },
+      "pos": [
+        2092,
+        103,
+        1505
+      ]
+    },
+    {
+      "a": {
+        "LessonRole": "Mend",
+        "OwnerUserId": 11732987790,
+        "CueEndsAt": 1791243832.3040462,
+        "LessonStatus": "Active",
+        "LastActionAccepted": true,
+        "Successes": 2,
+        "CueTarget": "right",
+        "LastAction": "Recovered",
+        "LessonPhase": "Warning",
+        "CuePosition": null,
+        "CueRole": "Mend",
+        "CueActed": false,
+        "TrainingOnly": true
+      },
+      "pos": [
+        2092,
+        103,
+        1505
+      ]
+    },
+    {
+      "a": {
+        "LessonRole": "Mend",
+        "OwnerUserId": 11732987790,
+        "CueEndsAt": 1791243832.3040383,
+        "LessonStatus": "Active",
+        "LastActionAccepted": true,
+        "Successes": 2,
+        "CueTarget": "right",
+        "LastAction": "Recovered",
+        "LessonPhase": "Warning",
+        "CuePosition": null,
+        "CueRole": "Mend",
+        "CueActed": false,
+        "TrainingOnly": true
+      },
+      "pos": [
+        2092,
+        103,
+        1505
+      ]
+    },
+    {
+      "a": {
+        "LessonRole": "Mend",
+        "OwnerUserId": 11732987790,
+        "CueEndsAt": 1791243832.3040376,
+        "LessonStatus": "Active",
+        "LastActionAccepted": true,
+        "Successes": 2,
+        "CueTarget": "right",
+        "LastAction": "Recovered",
+        "LessonPhase": "Warning",
+        "CuePosition": null,
+        "CueRole": "Mend",
+        "CueActed": false,
+        "TrainingOnly": true
+      },
+      "pos": [
+        2092,
+        103,
+        1505
+      ]
+    },
+    {
+      "a": {
+        "LessonRole": "Mend",
+        "OwnerUserId": 11732987790,
+        "CueEndsAt": 1791243832.304044,
+        "LessonStatus": "Active",
+        "LastActionAccepted": true,
+        "Successes": 2,
+        "CueTarget": "right",
+        "LastAction": "Recovered",
+        "LessonPhase": "Warning",
+        "CuePosition": null,
+        "CueRole": "Mend",
+        "CueActed": false,
+        "TrainingOnly": true
+      },
+      "pos": [
+        2092,
+        103,
+        1505
+      ]
+    },
+    {
+      "a": {
+        "LessonRole": "Mend",
+        "OwnerUserId": 11732987790,
+        "CueEndsAt": 1791243832.304046,
+        "LessonStatus": "Active",
+        "LastActionAccepted": true,
+        "Successes": 2,
+        "CueTarget": "right",
+        "LastAction": "Recovered",
+        "LessonPhase": "Warning",
+        "CuePosition": null,
+        "CueRole": "Mend",
+        "CueActed": false,
+        "TrainingOnly": true
+      },
+      "pos": [
+        2092,
+        103,
+        1505
+      ]
+    },
+    {
+      "a": {
+        "LessonRole": "Mend",
+        "OwnerUserId": 11732987790,
+        "CueEndsAt": 1791243836.3040476,
+        "LessonStatus": "Active",
+        "LastActionAccepted": true,
+        "Successes": 2,
+        "CueTarget": "right",
+        "LastAction": "Recovered",
+        "LessonPhase": "Recovery",
+        "CuePosition": null,
+        "CueRole": "Mend",
+        "CueActed": false,
+        "TrainingOnly": true
+      },
+      "pos": [
+        2092,
+        103,
+        1505
+      ]
+    },
+    {
+      "a": {
+        "LessonRole": "Mend",
+        "OwnerUserId": 11732987790,
+        "LessonStatus": "Completed",
+        "Successes": 3,
+        "LastActionAccepted": true,
+        "LessonPhase": "Finished",
+        "LastAction": "Recovered",
+        "CueActed": false,
+        "TrainingOnly": true
+      }
+    }
+  ],
+  "combined": [
+    {
+      "a": {
+        "LessonRole": "Combined",
+        "OwnerUserId": 11732987790,
+        "LessonPhase": "Ready",
+        "TrainingOnly": true,
+        "LessonStatus": "Active",
+        "CueActed": false,
+        "Successes": 0
+      }
+    },
+    {
+      "a": {
+        "LessonRole": "Combined",
+        "OwnerUserId": 11732987790,
+        "LessonPhase": "Ready",
+        "TrainingOnly": true,
+        "LessonStatus": "Active",
+        "CueActed": false,
+        "Successes": 0
+      }
+    },
+    {
+      "a": {
+        "LessonRole": "Combined",
+        "OwnerUserId": 11732987790,
+        "CueEndsAt": 1791243868.2695403,
+        "LessonStatus": "Active",
+        "Successes": 0,
+        "CueTarget": "left",
+        "LessonPhase": "Warning",
+        "CuePosition": null,
+        "CueRole": "Guard",
+        "CueActed": false,
+        "TrainingOnly": true
+      },
+      "pos": [
+        2068,
+        103,
+        1505
+      ]
+    },
+    {
+      "a": {
+        "LessonRole": "Combined",
+        "OwnerUserId": 11732987790,
+        "CueEndsAt": 1791243868.2695472,
+        "LessonStatus": "Active",
+        "LastActionAccepted": true,
+        "Successes": 0,
+        "CueTarget": "left",
+        "LastAction": "ShieldReady",
+        "LessonPhase": "Warning",
+        "CuePosition": null,
+        "CueRole": "Guard",
+        "CueActed": true,
+        "TrainingOnly": true
+      },
+      "pos": [
+        2068,
+        103,
+        1505
+      ]
+    },
+    {
+      "a": {
+        "LessonRole": "Combined",
+        "OwnerUserId": 11732987790,
+        "CueEndsAt": 1791243868.2695396,
+        "LessonStatus": "Active",
+        "LastActionAccepted": true,
+        "Successes": 0,
+        "CueTarget": "left",
+        "LastAction": "ShieldReady",
+        "LessonPhase": "Warning",
+        "CuePosition": null,
+        "CueRole": "Guard",
+        "CueActed": true,
+        "TrainingOnly": true
+      },
+      "pos": [
+        2068,
+        103,
+        1505
+      ]
+    },
+    {
+      "a": {
+        "LessonRole": "Combined",
+        "OwnerUserId": 11732987790,
+        "CueEndsAt": 1791243868.269535,
+        "LessonStatus": "Active",
+        "LastActionAccepted": true,
+        "Successes": 0,
+        "CueTarget": "left",
+        "LastAction": "ShieldReady",
+        "LessonPhase": "Warning",
+        "CuePosition": null,
+        "CueRole": "Guard",
+        "CueActed": true,
+        "TrainingOnly": true
+      },
+      "pos": [
+        2068,
+        103,
+        1505
+      ]
+    },
+    {
+      "a": {
+        "LessonRole": "Combined",
+        "OwnerUserId": 11732987790,
+        "CueEndsAt": 1791243868.2695339,
+        "LessonStatus": "Active",
+        "LastActionAccepted": true,
+        "Successes": 0,
+        "CueTarget": "left",
+        "LastAction": "ShieldReady",
+        "LessonPhase": "Warning",
+        "CuePosition": null,
+        "CueRole": "Guard",
+        "CueActed": true,
+        "TrainingOnly": true
+      },
+      "pos": [
+        2068,
+        103,
+        1505
+      ]
+    },
+    {
+      "a": {
+        "LessonRole": "Combined",
+        "OwnerUserId": 11732987790,
+        "LessonStatus": "Active",
+        "Successes": 1,
+        "LastActionAccepted": true,
+        "LessonPhase": "Ready",
+        "LastAction": "ShieldReady",
+        "CueActed": false,
+        "TrainingOnly": true
+      }
+    },
+    {
+      "a": {
+        "LessonRole": "Combined",
+        "OwnerUserId": 11732987790,
+        "LessonStatus": "Active",
+        "Successes": 1,
+        "LastActionAccepted": true,
+        "LessonPhase": "Ready",
+        "LastAction": "ShieldReady",
+        "CueActed": false,
+        "TrainingOnly": true
+      }
+    },
+    {
+      "a": {
+        "LessonRole": "Combined",
+        "OwnerUserId": 11732987790,
+        "CueEndsAt": 1791243872.3018193,
+        "LessonStatus": "Active",
+        "LastActionAccepted": true,
+        "Successes": 1,
+        "CueTarget": "centre",
+        "LastAction": "ShieldReady",
+        "LessonPhase": "Warning",
+        "CuePosition": null,
+        "CueRole": "Mend",
+        "CueActed": false,
+        "TrainingOnly": true
+      },
+      "pos": [
+        2080,
+        103,
+        1505
+      ]
+    },
+    {
+      "a": {
+        "LessonRole": "Combined",
+        "OwnerUserId": 11732987790,
+        "CueEndsAt": 1791243872.3018262,
+        "LessonStatus": "Active",
+        "LastActionAccepted": true,
+        "Successes": 1,
+        "CueTarget": "centre",
+        "LastAction": "ShieldReady",
+        "LessonPhase": "Warning",
+        "CuePosition": null,
+        "CueRole": "Mend",
+        "CueActed": false,
+        "TrainingOnly": true
+      },
+      "pos": [
+        2080,
+        103,
+        1505
+      ]
+    },
+    {
+      "a": {
+        "LessonRole": "Combined",
+        "OwnerUserId": 11732987790,
+        "CueEndsAt": 1791243872.3018138,
+        "LessonStatus": "Active",
+        "LastActionAccepted": true,
+        "Successes": 1,
+        "CueTarget": "centre",
+        "LastAction": "ShieldReady",
+        "LessonPhase": "Warning",
+        "CuePosition": null,
+        "CueRole": "Mend",
+        "CueActed": false,
+        "TrainingOnly": true
+      },
+      "pos": [
+        2080,
+        103,
+        1505
+      ]
+    },
+    {
+      "a": {
+        "LessonRole": "Combined",
+        "OwnerUserId": 11732987790,
+        "CueEndsAt": 1791243872.3018143,
+        "LessonStatus": "Active",
+        "LastActionAccepted": true,
+        "Successes": 1,
+        "CueTarget": "centre",
+        "LastAction": "ShieldReady",
+        "LessonPhase": "Warning",
+        "CuePosition": null,
+        "CueRole": "Mend",
+        "CueActed": false,
+        "TrainingOnly": true
+      },
+      "pos": [
+        2080,
+        103,
+        1505
+      ]
+    },
+    {
+      "a": {
+        "LessonRole": "Combined",
+        "OwnerUserId": 11732987790,
+        "CueEndsAt": 1791243872.3018098,
+        "LessonStatus": "Active",
+        "LastActionAccepted": true,
+        "Successes": 1,
+        "CueTarget": "centre",
+        "LastAction": "ShieldReady",
+        "LessonPhase": "Warning",
+        "CuePosition": null,
+        "CueRole": "Mend",
+        "CueActed": false,
+        "TrainingOnly": true
+      },
+      "pos": [
+        2080,
+        103,
+        1505
+      ]
+    },
+    {
+      "a": {
+        "LessonRole": "Combined",
+        "OwnerUserId": 11732987790,
+        "CueEndsAt": 1791243876.3018177,
+        "LessonStatus": "Active",
+        "LastActionAccepted": true,
+        "Successes": 1,
+        "CueTarget": "centre",
+        "LastAction": "ShieldReady",
+        "LessonPhase": "Recovery",
+        "CuePosition": null,
+        "CueRole": "Mend",
+        "CueActed": false,
+        "TrainingOnly": true
+      },
+      "pos": [
+        2080,
+        103,
+        1505
+      ]
+    },
+    {
+      "a": {
+        "LessonRole": "Combined",
+        "OwnerUserId": 11732987790,
+        "LessonStatus": "Active",
+        "Successes": 2,
+        "LastActionAccepted": true,
+        "LessonPhase": "Ready",
+        "LastAction": "Recovered",
+        "CueActed": false,
+        "TrainingOnly": true
+      }
+    },
+    {
+      "a": {
+        "LessonRole": "Combined",
+        "OwnerUserId": 11732987790,
+        "LessonStatus": "Active",
+        "Successes": 2,
+        "LastActionAccepted": true,
+        "LessonPhase": "Ready",
+        "LastAction": "Recovered",
+        "CueActed": false,
+        "TrainingOnly": true
+      }
+    },
+    {
+      "a": {
+        "LessonRole": "Combined",
+        "OwnerUserId": 11732987790,
+        "CueEndsAt": 1791243877.2858105,
+        "LessonStatus": "Active",
+        "LastActionAccepted": true,
+        "Successes": 2,
+        "CueTarget": "right",
+        "LastAction": "Recovered",
+        "LessonPhase": "Warning",
+        "CuePosition": null,
+        "CueRole": "Guard",
+        "CueActed": false,
+        "TrainingOnly": true
+      },
+      "pos": [
+        2092,
+        103,
+        1505
+      ]
+    },
+    {
+      "a": {
+        "LessonRole": "Combined",
+        "OwnerUserId": 11732987790,
+        "CueEndsAt": 1791243877.2858133,
+        "LessonStatus": "Active",
+        "LastActionAccepted": true,
+        "Successes": 2,
+        "CueTarget": "right",
+        "LastAction": "ShieldReady",
+        "LessonPhase": "Warning",
+        "CuePosition": null,
+        "CueRole": "Guard",
+        "CueActed": true,
+        "TrainingOnly": true
+      },
+      "pos": [
+        2092,
+        103,
+        1505
+      ]
+    },
+    {
+      "a": {
+        "LessonRole": "Combined",
+        "OwnerUserId": 11732987790,
+        "CueEndsAt": 1791243877.2858114,
+        "LessonStatus": "Active",
+        "LastActionAccepted": true,
+        "Successes": 2,
+        "CueTarget": "right",
+        "LastAction": "ShieldReady",
+        "LessonPhase": "Warning",
+        "CuePosition": null,
+        "CueRole": "Guard",
+        "CueActed": true,
+        "TrainingOnly": true
+      },
+      "pos": [
+        2092,
+        103,
+        1505
+      ]
+    },
+    {
+      "a": {
+        "LessonRole": "Combined",
+        "OwnerUserId": 11732987790,
+        "CueEndsAt": 1791243877.2858088,
+        "LessonStatus": "Active",
+        "LastActionAccepted": true,
+        "Successes": 2,
+        "CueTarget": "right",
+        "LastAction": "ShieldReady",
+        "LessonPhase": "Warning",
+        "CuePosition": null,
+        "CueRole": "Guard",
+        "CueActed": true,
+        "TrainingOnly": true
+      },
+      "pos": [
+        2092,
+        103,
+        1505
+      ]
+    },
+    {
+      "a": {
+        "LessonRole": "Combined",
+        "OwnerUserId": 11732987790,
+        "CueEndsAt": 1791243877.285811,
+        "LessonStatus": "Active",
+        "LastActionAccepted": true,
+        "Successes": 2,
+        "CueTarget": "right",
+        "LastAction": "ShieldReady",
+        "LessonPhase": "Warning",
+        "CuePosition": null,
+        "CueRole": "Guard",
+        "CueActed": true,
+        "TrainingOnly": true
+      },
+      "pos": [
+        2092,
+        103,
+        1505
+      ]
+    },
+    {}
+  ],
+  "memories": {
+    "content": [
+      {
+        "type": "text",
+        "text": "[\"You rescued the caravan's people.\\nYou supported the workers.\\nFounding oath: togetherness\"]"
+      }
+    ],
+    "isError": false
+  },
+  "recordsGuardian": [
+    {
+      "target": [
+        2000,
+        135.39999389648438,
+        1300
+      ],
+      "warning": {
+        "visible": false,
+        "x": 2000,
+        "z": 1300
+      },
+      "attributes": {
+        "TrialStatus": "Active",
+        "OwnerUserId": 11732987790,
+        "ReturnLabel": "Leave trial",
+        "PlayerHealth": 212,
+        "AbilityLabel": "Fireball",
+        "DisplayHealth": "HP 212/212 · Records Guardian 2800/2800",
+        "BasicLabel": "Basic Attack",
+        "NextBasicAt": 0,
+        "EnemyHealth": 2800,
+        "NextAbilityAt": 0,
+        "NoviceTrialArena": true,
+        "DisplayTitle": "Mage · Ready",
+        "DisplayGoals": "Defeat the opponent 0/1 · Skills used 0/1 · Warnings dodged 0/2",
+        "ClassId": "Mage",
+        "DisplayHint": "Use F/Q or the buttons. Dodge orange warnings."
+      },
+      "position": [
+        2000,
+        134.99801635742188,
+        1312
+      ]
+    },
+    {
+      "target": [
+        2000,
+        135.39999389648438,
+        1300
+      ],
+      "warning": {
+        "visible": false,
+        "x": 2000,
+        "z": 1300
+      },
+      "attributes": {
+        "PlayerHealth": 212,
+        "AbilityLabel": "Fireball",
+        "DisplayHealth": "HP 212/212 · Records Guardian 2549/2800",
+        "ActionAt": 1791244302.6011,
+        "DisplayHint": "Use F/Q or the buttons. Dodge orange warnings.",
+        "OwnerUserId": 11732987790,
+        "ReturnLabel": "Leave trial",
+        "ActionEffect": "Basic",
+        "DisplayGoals": "Defeat the opponent 0/1 · Skills used 1/1 · Warnings dodged 0/2",
+        "NextBasicAt": 1791244304.400998,
+        "ActionTargetPosition": null,
+        "EnemyHealth": 2549,
+        "TrialStatus": "Active",
+        "NextAbilityAt": 1791244310.5016472,
+        "NoviceTrialArena": true,
+        "DisplayTitle": "Mage · Training",
+        "ActionOriginPosition": null,
+        "ClassId": "Mage",
+        "BasicLabel": "Basic Attack"
+      },
+      "position": [
+        2000,
+        134.99801635742188,
+        1312
+      ]
+    },
+    {
+      "target": [
+        2000,
+        135.39999389648438,
+        1300
+      ],
+      "warning": {
+        "visible": false,
+        "x": 2000,
+        "z": 1300
+      },
+      "attributes": {
+        "PlayerHealth": 212,
+        "AbilityLabel": "Fireball",
+        "DisplayHealth": "HP 212/212 · Records Guardian 2549/2800",
+        "ActionAt": 1791244302.6011,
+        "DisplayHint": "Your skill is recharging.",
+        "OwnerUserId": 11732987790,
+        "ReturnLabel": "Leave trial",
+        "ActionEffect": "Basic",
+        "DisplayGoals": "Defeat the opponent 0/1 · Skills used 1/1 · Warnings dodged 0/2",
+        "NextBasicAt": 1791244304.4009976,
+        "ActionTargetPosition": null,
+        "EnemyHealth": 2549,
+        "TrialStatus": "Active",
+        "NextAbilityAt": 1791244310.501648,
+        "NoviceTrialArena": true,
+        "DisplayTitle": "Mage · Training",
+        "ActionOriginPosition": null,
+        "ClassId": "Mage",
+        "BasicLabel": "Basic Attack"
+      },
+      "position": [
+        2000,
+        134.99801635742188,
+        1312
+      ]
+    },
+    {
+      "target": [
+        2000,
+        135.39999389648438,
+        1300
+      ],
+      "warning": {
+        "visible": true,
+        "x": 2000,
+        "z": 1312
+      },
+      "attributes": {
+        "PlayerHealth": 212,
+        "AbilityLabel": "Fireball",
+        "DisplayHealth": "HP 212/212 · Records Guardian 2549/2800",
+        "ActionAt": 1791244302.6011,
+        "DisplayHint": "Your skill is recharging.",
+        "ActionTargetPosition": null,
+        "OwnerUserId": 11732987790,
+        "ReturnLabel": "Leave trial",
+        "ActionEffect": "Basic",
+        "DisplayGoals": "Defeat the opponent 0/1 · Skills used 1/1 · Warnings dodged 0/2",
+        "NextBasicAt": 0,
+        "EnemyHealth": 2549,
+        "WarningToken": 4236.066537000006,
+        "TrialStatus": "Active",
+        "NextAbilityAt": 1791244310.5016477,
+        "NoviceTrialArena": true,
+        "DisplayTitle": "Mage · Training",
+        "ActionOriginPosition": null,
+        "ClassId": "Mage",
+        "BasicLabel": "Basic Attack"
+      },
+      "position": [
+        2000,
+        134.99801635742188,
+        1312
+      ]
+    },
+    {
+      "target": [
+        2000,
+        135.39999389648438,
+        1300
+      ],
+      "warning": {
+        "visible": false,
+        "x": 2000,
+        "z": 1312
+      },
+      "attributes": {
+        "PlayerHealth": 212,
+        "AbilityLabel": "Fireball",
+        "DisplayHealth": "HP 212/212 · Records Guardian 2473/2800",
+        "ActionAt": 1791244305.918772,
+        "DisplayHint": "Use F/Q or the buttons. Dodge orange warnings.",
+        "OwnerUserId": 11732987790,
+        "ReturnLabel": "Leave trial",
+        "ActionEffect": "Basic",
+        "DisplayGoals": "Defeat the opponent 0/1 · Skills used 1/1 · Warnings dodged 1/2",
+        "NextBasicAt": 1791244307.7186728,
+        "ActionTargetPosition": null,
+        "EnemyHealth": 2473,
+        "TrialStatus": "Active",
+        "NextAbilityAt": 1791244310.5016475,
+        "NoviceTrialArena": true,
+        "DisplayTitle": "Mage · Training",
+        "ActionOriginPosition": null,
+        "ClassId": "Mage",
+        "BasicLabel": "Basic Attack"
+      },
+      "position": [
+        1990.75048828125,
+        134.99801635742188,
+        1311.9996337890625
+      ]
+    },
+    {
+      "target": [
+        2000,
+        135.39999389648438,
+        1300
+      ],
+      "warning": {
+        "visible": false,
+        "x": 2000,
+        "z": 1312
+      },
+      "attributes": {
+        "PlayerHealth": 212,
+        "AbilityLabel": "Fireball",
+        "DisplayHealth": "HP 212/212 · Records Guardian 2473/2800",
+        "ActionAt": 1791244305.918772,
+        "DisplayHint": "Your skill is recharging.",
+        "OwnerUserId": 11732987790,
+        "ReturnLabel": "Leave trial",
+        "ActionEffect": "Basic",
+        "DisplayGoals": "Defeat the opponent 0/1 · Skills used 1/1 · Warnings dodged 1/2",
+        "NextBasicAt": 0,
+        "ActionTargetPosition": null,
+        "EnemyHealth": 2473,
+        "TrialStatus": "Active",
+        "NextAbilityAt": 1791244310.501647,
+        "NoviceTrialArena": true,
+        "DisplayTitle": "Mage · Training",
+        "ActionOriginPosition": null,
+        "ClassId": "Mage",
+        "BasicLabel": "Basic Attack"
+      },
+      "position": [
+        1999.310302734375,
+        134.9980010986328,
+        1312
+      ]
+    },
+    {
+      "target": [
+        2000,
+        135.39999389648438,
+        1300
+      ],
+      "warning": {
+        "visible": false,
+        "x": 2000,
+        "z": 1312
+      },
+      "attributes": {
+        "PlayerHealth": 212,
+        "AbilityLabel": "Fireball",
+        "DisplayHealth": "HP 212/212 · Records Guardian 2397/2800",
+        "ActionAt": 1791244308.318249,
+        "DisplayHint": "Use F/Q or the buttons. Dodge orange warnings.",
+        "OwnerUserId": 11732987790,
+        "ReturnLabel": "Leave trial",
+        "ActionEffect": "Basic",
+        "DisplayGoals": "Defeat the opponent 0/1 · Skills used 1/1 · Warnings dodged 1/2",
+        "NextBasicAt": 1791244310.1181602,
+        "ActionTargetPosition": null,
+        "EnemyHealth": 2397,
+        "TrialStatus": "Active",
+        "NextAbilityAt": 1791244310.5016475,
+        "NoviceTrialArena": true,
+        "DisplayTitle": "Mage · Training",
+        "ActionOriginPosition": null,
+        "ClassId": "Mage",
+        "BasicLabel": "Basic Attack"
+      },
+      "position": [
+        1999.310302734375,
+        134.9980010986328,
+        1312
+      ]
+    },
+    {
+      "target": [
+        2000,
+        135.39999389648438,
+        1300
+      ],
+      "warning": {
+        "visible": true,
+        "x": 1999.30859375,
+        "z": 1312
+      },
+      "attributes": {
+        "PlayerHealth": 212,
+        "AbilityLabel": "Fireball",
+        "DisplayHealth": "HP 212/212 · Records Guardian 2397/2800",
+        "ActionAt": 1791244308.318249,
+        "DisplayHint": "Your skill is recharging.",
+        "ActionTargetPosition": null,
+        "OwnerUserId": 11732987790,
+        "ReturnLabel": "Leave trial",
+        "ActionEffect": "Basic",
+        "DisplayGoals": "Defeat the opponent 0/1 · Skills used 1/1 · Warnings dodged 1/2",
+        "NextBasicAt": 1791244310.1181607,
+        "EnemyHealth": 2397,
+        "WarningToken": 4241.164911800006,
+        "TrialStatus": "Active",
+        "NextAbilityAt": 1791244310.501648,
+        "NoviceTrialArena": true,
+        "DisplayTitle": "Mage · Training",
+        "ActionOriginPosition": null,
+        "ClassId": "Mage",
+        "BasicLabel": "Basic Attack"
+      },
+      "position": [
+        1999.310302734375,
+        134.9980010986328,
+        1312
+      ]
+    },
+    {
+      "target": [
+        2000,
+        135.39999389648438,
+        1300
+      ],
+      "warning": {
+        "visible": false,
+        "x": 1999.30859375,
+        "z": 1312
+      },
+      "attributes": {
+        "PlayerHealth": 212,
+        "AbilityLabel": "Fireball",
+        "DisplayHealth": "HP 212/212 · Records Guardian 2146/2800",
+        "ActionAt": 1791244310.750705,
+        "DisplayHint": "Use F/Q or the buttons. Dodge orange warnings.",
+        "OwnerUserId": 11732987790,
+        "ReturnLabel": "Leave trial",
+        "ActionEffect": "Basic",
+        "DisplayGoals": "Defeat the opponent 0/1 · Skills used 1/1 · Warnings dodged 2/2",
+        "NextBasicAt": 1791244312.5505989,
+        "ActionTargetPosition": null,
+        "EnemyHealth": 2146,
+        "TrialStatus": "Active",
+        "NextAbilityAt": 1791244318.6341798,
+        "NoviceTrialArena": true,
+        "DisplayTitle": "Mage · Training",
+        "ActionOriginPosition": null,
+        "ClassId": "Mage",
+        "BasicLabel": "Basic Attack"
+      },
+      "position": [
+        2009.2276611328125,
+        134.9980010986328,
+        1311.99951171875
+      ]
+    },
+    {
+      "target": [
+        2000,
+        135.39999389648438,
+        1300
+      ],
+      "warning": {
+        "visible": false,
+        "x": 1999.30859375,
+        "z": 1312
+      },
+      "attributes": {
+        "PlayerHealth": 212,
+        "AbilityLabel": "Fireball",
+        "DisplayHealth": "HP 212/212 · Records Guardian 2146/2800",
+        "ActionAt": 1791244310.750705,
+        "DisplayHint": "Your skill is recharging.",
+        "OwnerUserId": 11732987790,
+        "ReturnLabel": "Leave trial",
+        "ActionEffect": "Basic",
+        "DisplayGoals": "Defeat the opponent 0/1 · Skills used 1/1 · Warnings dodged 2/2",
+        "NextBasicAt": 0,
+        "ActionTargetPosition": null,
+        "EnemyHealth": 2146,
+        "TrialStatus": "Active",
+        "NextAbilityAt": 1791244318.6341796,
+        "NoviceTrialArena": true,
+        "DisplayTitle": "Mage · Training",
+        "ActionOriginPosition": null,
+        "ClassId": "Mage",
+        "BasicLabel": "Basic Attack"
+      },
+      "position": [
+        2000.6678466796875,
+        134.9980010986328,
+        1312
+      ]
+    },
+    {
+      "target": [
+        2000,
+        135.39999389648438,
+        1300
+      ],
+      "warning": {
+        "visible": false,
+        "x": 1999.30859375,
+        "z": 1312
+      },
+      "attributes": {
+        "PlayerHealth": 212,
+        "AbilityLabel": "Fireball",
+        "DisplayHealth": "HP 212/212 · Records Guardian 2070/2800",
+        "ActionAt": 1791244312.983695,
+        "DisplayHint": "Use F/Q or the buttons. Dodge orange warnings.",
+        "OwnerUserId": 11732987790,
+        "ReturnLabel": "Leave trial",
+        "ActionEffect": "Basic",
+        "DisplayGoals": "Defeat the opponent 0/1 · Skills used 1/1 · Warnings dodged 2/2",
+        "NextBasicAt": 1791244314.7836154,
+        "ActionTargetPosition": null,
+        "EnemyHealth": 2070,
+        "TrialStatus": "Active",
+        "NextAbilityAt": 1791244318.6341803,
+        "NoviceTrialArena": true,
+        "DisplayTitle": "Mage · Training",
+        "ActionOriginPosition": null,
+        "ClassId": "Mage",
+        "BasicLabel": "Basic Attack"
+      },
+      "position": [
+        2000.6678466796875,
+        134.9980010986328,
+        1312
+      ]
+    },
+    {
+      "target": [
+        2000,
+        135.39999389648438,
+        1300
+      ],
+      "warning": {
+        "visible": false,
+        "x": 1999.30859375,
+        "z": 1312
+      },
+      "attributes": {
+        "PlayerHealth": 212,
+        "AbilityLabel": "Fireball",
+        "DisplayHealth": "HP 212/212 · Records Guardian 2070/2800",
+        "ActionAt": 1791244312.983695,
+        "DisplayHint": "Your skill is recharging.",
+        "OwnerUserId": 11732987790,
+        "ReturnLabel": "Leave trial",
+        "ActionEffect": "Basic",
+        "DisplayGoals": "Defeat the opponent 0/1 · Skills used 1/1 · Warnings dodged 2/2",
+        "NextBasicAt": 1791244314.7836146,
+        "ActionTargetPosition": null,
+        "EnemyHealth": 2070,
+        "TrialStatus": "Active",
+        "NextAbilityAt": 1791244318.6341796,
+        "NoviceTrialArena": true,
+        "DisplayTitle": "Mage · Training",
+        "ActionOriginPosition": null,
+        "ClassId": "Mage",
+        "BasicLabel": "Basic Attack"
+      },
+      "position": [
+        2000.6678466796875,
+        134.9980010986328,
+        1312
+      ]
+    },
+    {
+      "target": [
+        2000,
+        135.39999389648438,
+        1300
+      ],
+      "warning": {
+        "visible": true,
+        "x": 2000.66796875,
+        "z": 1312
+      },
+      "attributes": {
+        "PlayerHealth": 212,
+        "AbilityLabel": "Fireball",
+        "DisplayHealth": "HP 212/212 · Records Guardian 1994/2800",
+        "ActionAt": 1791244314.818107,
+        "DisplayHint": "Use F/Q or the buttons. Dodge orange warnings.",
+        "ActionTargetPosition": null,
+        "OwnerUserId": 11732987790,
+        "ReturnLabel": "Leave trial",
+        "ActionEffect": "Basic",
+        "DisplayGoals": "Defeat the opponent 0/1 · Skills used 1/1 · Warnings dodged 2/2",
+        "NextBasicAt": 1791244316.6180274,
+        "EnemyHealth": 1994,
+        "WarningToken": 4246.215392400001,
+        "TrialStatus": "Active",
+        "NextAbilityAt": 1791244318.63418,
+        "NoviceTrialArena": true,
+        "DisplayTitle": "Mage · Training",
+        "ActionOriginPosition": null,
+        "ClassId": "Mage",
+        "BasicLabel": "Basic Attack"
+      },
+      "position": [
+        2000.6678466796875,
+        134.9980010986328,
+        1312
+      ]
+    },
+    {
+      "target": [
+        2000,
+        135.39999389648438,
+        1300
+      ],
+      "warning": {
+        "visible": false,
+        "x": 2000.66796875,
+        "z": 1312
+      },
+      "attributes": {
+        "PlayerHealth": 201,
+        "AbilityLabel": "Fireball",
+        "DisplayHealth": "HP 201/212 · Records Guardian 1994/2800",
+        "ActionAt": 1791244314.818107,
+        "DisplayHint": "Your skill is recharging.",
+        "OwnerUserId": 11732987790,
+        "ReturnLabel": "Leave trial",
+        "ActionEffect": "Basic",
+        "DisplayGoals": "Defeat the opponent 0/1 · Skills used 1/1 · Warnings dodged 2/2",
+        "NextBasicAt": 0,
+        "ActionTargetPosition": null,
+        "EnemyHealth": 1994,
+        "TrialStatus": "Active",
+        "NextAbilityAt": 1791244318.634179,
+        "NoviceTrialArena": true,
+        "DisplayTitle": "Mage · Training",
+        "ActionOriginPosition": null,
+        "ClassId": "Mage",
+        "BasicLabel": "Basic Attack"
+      },
+      "position": [
+        1990.75048828125,
+        134.9980010986328,
+        1312.000244140625
+      ]
+    },
+    {
+      "target": [
+        2000,
+        135.39999389648438,
+        1300
+      ],
+      "warning": {
+        "visible": false,
+        "x": 2000.66796875,
+        "z": 1312
+      },
+      "attributes": {
+        "PlayerHealth": 201,
+        "AbilityLabel": "Fireball",
+        "DisplayHealth": "HP 201/212 · Records Guardian 1918/2800",
+        "ActionAt": 1791244317.76775,
+        "DisplayHint": "Use F/Q or the buttons. Dodge orange warnings.",
+        "OwnerUserId": 11732987790,
+        "ReturnLabel": "Leave trial",
+        "ActionEffect": "Basic",
+        "DisplayGoals": "Defeat the opponent 0/1 · Skills used 1/1 · Warnings dodged 2/2",
+        "NextBasicAt": 1791244319.5676455,
+        "ActionTargetPosition": null,
+        "EnemyHealth": 1918,
+        "TrialStatus": "Active",
+        "NextAbilityAt": 1791244318.63418,
+        "NoviceTrialArena": true,
+        "DisplayTitle": "Mage · Training",
+        "ActionOriginPosition": null,
+        "ClassId": "Mage",
+        "BasicLabel": "Basic Attack"
+      },
+      "position": [
+        1999.310302734375,
+        134.9980010986328,
+        1312
+      ]
+    },
+    {
+      "target": [
+        2000,
+        135.39999389648438,
+        1300
+      ],
+      "warning": {
+        "visible": false,
+        "x": 2000.66796875,
+        "z": 1312
+      },
+      "attributes": {
+        "PlayerHealth": 201,
+        "AbilityLabel": "Fireball",
+        "DisplayHealth": "HP 201/212 · Records Guardian 1918/2800",
+        "ActionAt": 1791244317.76775,
+        "DisplayHint": "Your skill is recharging.",
+        "OwnerUserId": 11732987790,
+        "ReturnLabel": "Leave trial",
+        "ActionEffect": "Basic",
+        "DisplayGoals": "Defeat the opponent 0/1 · Skills used 1/1 · Warnings dodged 2/2",
+        "NextBasicAt": 1791244319.5676448,
+        "ActionTargetPosition": null,
+        "EnemyHealth": 1918,
+        "TrialStatus": "Active",
+        "NextAbilityAt": 0,
+        "NoviceTrialArena": true,
+        "DisplayTitle": "Mage · Training",
+        "ActionOriginPosition": null,
+        "ClassId": "Mage",
+        "BasicLabel": "Basic Attack"
+      },
+      "position": [
+        1999.310302734375,
+        134.9980010986328,
+        1312
+      ]
+    },
+    {
+      "target": [
+        2000,
+        135.39999389648438,
+        1300
+      ],
+      "warning": {
+        "visible": true,
+        "x": 1999.30859375,
+        "z": 1312
+      },
+      "attributes": {
+        "PlayerHealth": 201,
+        "AbilityLabel": "Fireball",
+        "DisplayHealth": "HP 201/212 · Records Guardian 1743/2800",
+        "ActionAt": 1791244319.400767,
+        "DisplayHint": "Your skill is recharging.",
+        "WarningToken": 4251.331330400004,
+        "ActionTargetPosition": null,
+        "OwnerUserId": 11732987790,
+        "ReturnLabel": "Leave trial",
+        "ActionEffect": "Magic",
+        "DisplayGoals": "Defeat the opponent 0/1 · Skills used 1/1 · Warnings dodged 2/2",
+        "NextBasicAt": 0,
+        "EnemyHealth": 1743,
+        "ActionAbilityId": "fireball",
+        "TrialStatus": "Active",
+        "NextAbilityAt": 1791244327.4006476,
+        "NoviceTrialArena": true,
+        "DisplayTitle": "Mage · Training",
+        "ActionOriginPosition": null,
+        "ClassId": "Mage",
+        "BasicLabel": "Basic Attack"
+      },
+      "position": [
+        1999.310302734375,
+        134.9980010986328,
+        1312
+      ]
+    },
+    {
+      "target": [
+        2000,
+        135.39999389648438,
+        1300
+      ],
+      "warning": {
+        "visible": false,
+        "x": 1999.30859375,
+        "z": 1312
+      },
+      "attributes": {
+        "PlayerHealth": 201,
+        "AbilityLabel": "Fireball",
+        "DisplayHealth": "HP 201/212 · Records Guardian 1667/2800",
+        "ActionAt": 1791244321.066959,
+        "DisplayHint": "Use F/Q or the buttons. Dodge orange warnings.",
+        "OwnerUserId": 11732987790,
+        "ReturnLabel": "Leave trial",
+        "ActionEffect": "Basic",
+        "DisplayGoals": "Defeat the opponent 0/1 · Skills used 1/1 · Warnings dodged 2/2",
+        "NextBasicAt": 1791244322.8668618,
+        "ActionTargetPosition": null,
+        "EnemyHealth": 1667,
+        "TrialStatus": "Active",
+        "NextAbilityAt": 1791244327.4006474,
+        "NoviceTrialArena": true,
+        "DisplayTitle": "Mage · Training",
+        "ActionOriginPosition": null,
+        "ClassId": "Mage",
+        "BasicLabel": "Basic Attack"
+      },
+      "position": [
+        2009.2276611328125,
+        134.9980010986328,
+        1311.99951171875
+      ]
+    },
+    {
+      "target": [
+        2000,
+        135.39999389648438,
+        1300
+      ],
+      "warning": {
+        "visible": false,
+        "x": 1999.30859375,
+        "z": 1312
+      },
+      "attributes": {
+        "PlayerHealth": 201,
+        "AbilityLabel": "Fireball",
+        "DisplayHealth": "HP 201/212 · Records Guardian 1667/2800",
+        "ActionAt": 1791244321.066959,
+        "DisplayHint": "Your skill is recharging.",
+        "OwnerUserId": 11732987790,
+        "ReturnLabel": "Leave trial",
+        "ActionEffect": "Basic",
+        "DisplayGoals": "Defeat the opponent 0/1 · Skills used 1/1 · Warnings dodged 2/2",
+        "NextBasicAt": 0,
+        "ActionTargetPosition": null,
+        "EnemyHealth": 1667,
+        "TrialStatus": "Active",
+        "NextAbilityAt": 1791244327.4006476,
+        "NoviceTrialArena": true,
+        "DisplayTitle": "Mage · Training",
+        "ActionOriginPosition": null,
+        "ClassId": "Mage",
+        "BasicLabel": "Basic Attack"
+      },
+      "position": [
+        2000.6678466796875,
+        134.9980010986328,
+        1312
+      ]
+    },
+    {
+      "target": [
+        2000,
+        135.39999389648438,
+        1300
+      ],
+      "warning": {
+        "visible": false,
+        "x": 1999.30859375,
+        "z": 1312
+      },
+      "attributes": {
+        "PlayerHealth": 201,
+        "AbilityLabel": "Fireball",
+        "DisplayHealth": "HP 201/212 · Records Guardian 1591/2800",
+        "ActionAt": 1791244323.400216,
+        "DisplayHint": "Use F/Q or the buttons. Dodge orange warnings.",
+        "OwnerUserId": 11732987790,
+        "ReturnLabel": "Leave trial",
+        "ActionEffect": "Basic",
+        "DisplayGoals": "Defeat the opponent 0/1 · Skills used 1/1 · Warnings dodged 2/2",
+        "NextBasicAt": 1791244325.2001216,
+        "ActionTargetPosition": null,
+        "EnemyHealth": 1591,
+        "TrialStatus": "Active",
+        "NextAbilityAt": 1791244327.4006484,
+        "NoviceTrialArena": true,
+        "DisplayTitle": "Mage · Training",
+        "ActionOriginPosition": null,
+        "ClassId": "Mage",
+        "BasicLabel": "Basic Attack"
+      },
+      "position": [
+        2000.6678466796875,
+        134.9980010986328,
+        1312
+      ]
+    },
+    {
+      "target": [
+        2000,
+        135.39999389648438,
+        1300
+      ],
+      "warning": {
+        "visible": false,
+        "x": 1999.30859375,
+        "z": 1312
+      },
+      "attributes": {
+        "PlayerHealth": 201,
+        "AbilityLabel": "Fireball",
+        "DisplayHealth": "HP 201/212 · Records Guardian 1591/2800",
+        "ActionAt": 1791244323.400216,
+        "DisplayHint": "Your skill is recharging.",
+        "OwnerUserId": 11732987790,
+        "ReturnLabel": "Leave trial",
+        "ActionEffect": "Basic",
+        "DisplayGoals": "Defeat the opponent 0/1 · Skills used 1/1 · Warnings dodged 2/2",
+        "NextBasicAt": 1791244325.2001207,
+        "ActionTargetPosition": null,
+        "EnemyHealth": 1591,
+        "TrialStatus": "Active",
+        "NextAbilityAt": 1791244327.4006479,
+        "NoviceTrialArena": true,
+        "DisplayTitle": "Mage · Training",
+        "ActionOriginPosition": null,
+        "ClassId": "Mage",
+        "BasicLabel": "Basic Attack"
+      },
+      "position": [
+        2000.6678466796875,
+        134.9980010986328,
+        1312
+      ]
+    },
+    {
+      "target": [
+        2000,
+        135.39999389648438,
+        1300
+      ],
+      "warning": {
+        "visible": true,
+        "x": 2000.66796875,
+        "z": 1312
+      },
+      "attributes": {
+        "PlayerHealth": 201,
+        "AbilityLabel": "Fireball",
+        "DisplayHealth": "HP 201/212 · Records Guardian 1591/2800",
+        "ActionAt": 1791244323.400216,
+        "DisplayHint": "Your skill is recharging.",
+        "ActionTargetPosition": null,
+        "OwnerUserId": 11732987790,
+        "ReturnLabel": "Leave trial",
+        "ActionEffect": "Basic",
+        "DisplayGoals": "Defeat the opponent 0/1 · Skills used 1/1 · Warnings dodged 2/2",
+        "NextBasicAt": 0,
+        "EnemyHealth": 1591,
+        "WarningToken": 4256.3817415000085,
+        "TrialStatus": "Active",
+        "NextAbilityAt": 1791244327.4006476,
+        "NoviceTrialArena": true,
+        "DisplayTitle": "Mage · Training",
+        "ActionOriginPosition": null,
+        "ClassId": "Mage",
+        "BasicLabel": "Basic Attack"
+      },
+      "position": [
+        2000.6678466796875,
+        134.9980010986328,
+        1312
+      ]
+    },
+    {
+      "target": [
+        2000,
+        135.39999389648438,
+        1300
+      ],
+      "warning": {
+        "visible": false,
+        "x": 2000.66796875,
+        "z": 1312
+      },
+      "attributes": {
+        "PlayerHealth": 190,
+        "AbilityLabel": "Fireball",
+        "DisplayHealth": "HP 190/212 · Records Guardian 1515/2800",
+        "ActionAt": 1791244326.666489,
+        "DisplayHint": "Use F/Q or the buttons. Dodge orange warnings.",
+        "OwnerUserId": 11732987790,
+        "ReturnLabel": "Leave trial",
+        "ActionEffect": "Basic",
+        "DisplayGoals": "Defeat the opponent 0/1 · Skills used 1/1 · Warnings dodged 2/2",
+        "NextBasicAt": 1791244328.4663951,
+        "ActionTargetPosition": null,
+        "EnemyHealth": 1515,
+        "TrialStatus": "Active",
+        "NextAbilityAt": 1791244327.400649,
+        "NoviceTrialArena": true,
+        "DisplayTitle": "Mage · Training",
+        "ActionOriginPosition": null,
+        "ClassId": "Mage",
+        "BasicLabel": "Basic Attack"
+      },
+      "position": [
+        1990.75048828125,
+        134.9980010986328,
+        1312.00048828125
+      ]
+    },
+    {
+      "target": [
+        2000,
+        135.39999389648438,
+        1300
+      ],
+      "warning": {
+        "visible": false,
+        "x": 2000.66796875,
+        "z": 1312
+      },
+      "attributes": {
+        "PlayerHealth": 190,
+        "AbilityLabel": "Fireball",
+        "DisplayHealth": "HP 190/212 · Records Guardian 1340/2800",
+        "ActionAt": 1791244327.983729,
+        "DisplayHint": "Your skill is recharging.",
+        "ActionTargetPosition": null,
+        "OwnerUserId": 11732987790,
+        "ReturnLabel": "Leave trial",
+        "ActionEffect": "Magic",
+        "DisplayGoals": "Defeat the opponent 0/1 · Skills used 1/1 · Warnings dodged 2/2",
+        "NextBasicAt": 0,
+        "EnemyHealth": 1340,
+        "ActionAbilityId": "fireball",
+        "TrialStatus": "Active",
+        "NextAbilityAt": 1791244335.983622,
+        "NoviceTrialArena": true,
+        "DisplayTitle": "Mage · Training",
+        "ActionOriginPosition": null,
+        "ClassId": "Mage",
+        "BasicLabel": "Basic Attack"
+      },
+      "position": [
+        1999.22509765625,
+        134.9980010986328,
+        1312
+      ]
+    },
+    {
+      "target": [
+        2000,
+        135.39999389648438,
+        1300
+      ],
+      "warning": {
+        "visible": false,
+        "x": 2000.66796875,
+        "z": 1312
+      },
+      "attributes": {
+        "PlayerHealth": 190,
+        "AbilityLabel": "Fireball",
+        "DisplayHealth": "HP 190/212 · Records Guardian 1264/2800",
+        "ActionAt": 1791244328.916812,
+        "DisplayHint": "Use F/Q or the buttons. Dodge orange warnings.",
+        "OwnerUserId": 11732987790,
+        "ReturnLabel": "Leave trial",
+        "ActionEffect": "Basic",
+        "DisplayGoals": "Defeat the opponent 0/1 · Skills used 1/1 · Warnings dodged 2/2",
+        "NextBasicAt": 1791244330.7167277,
+        "ActionTargetPosition": null,
+        "EnemyHealth": 1264,
+        "TrialStatus": "Active",
+        "NextAbilityAt": 1791244335.9836223,
+        "NoviceTrialArena": true,
+        "DisplayTitle": "Mage · Training",
+        "ActionOriginPosition": null,
+        "ClassId": "Mage",
+        "BasicLabel": "Basic Attack"
+      },
+      "position": [
+        1999.22509765625,
+        134.9980010986328,
+        1312
+      ]
+    },
+    {
+      "target": [
+        2000,
+        135.39999389648438,
+        1300
+      ],
+      "warning": {
+        "visible": true,
+        "x": 1999.2265625,
+        "z": 1312
+      },
+      "attributes": {
+        "PlayerHealth": 190,
+        "AbilityLabel": "Fireball",
+        "DisplayHealth": "HP 190/212 · Records Guardian 1264/2800",
+        "ActionAt": 1791244328.916812,
+        "DisplayHint": "Your skill is recharging.",
+        "ActionTargetPosition": null,
+        "OwnerUserId": 11732987790,
+        "ReturnLabel": "Leave trial",
+        "ActionEffect": "Basic",
+        "DisplayGoals": "Defeat the opponent 0/1 · Skills used 1/1 · Warnings dodged 2/2",
+        "NextBasicAt": 1791244330.716728,
+        "EnemyHealth": 1264,
+        "WarningToken": 4261.465690800003,
+        "TrialStatus": "Active",
+        "NextAbilityAt": 1791244335.9836228,
+        "NoviceTrialArena": true,
+        "DisplayTitle": "Mage · Training",
+        "ActionOriginPosition": null,
+        "ClassId": "Mage",
+        "BasicLabel": "Basic Attack"
+      },
+      "position": [
+        1999.22509765625,
+        134.9980010986328,
+        1312
+      ]
+    },
+    {
+      "target": [
+        2000,
+        135.39999389648438,
+        1300
+      ],
+      "warning": {
+        "visible": false,
+        "x": 1999.2265625,
+        "z": 1312
+      },
+      "attributes": {
+        "PlayerHealth": 190,
+        "AbilityLabel": "Fireball",
+        "DisplayHealth": "HP 190/212 · Records Guardian 1188/2800",
+        "ActionAt": 1791244331.333374,
+        "DisplayHint": "Use F/Q or the buttons. Dodge orange warnings.",
+        "OwnerUserId": 11732987790,
+        "ReturnLabel": "Leave trial",
+        "ActionEffect": "Basic",
+        "DisplayGoals": "Defeat the opponent 0/1 · Skills used 1/1 · Warnings dodged 2/2",
+        "NextBasicAt": 1791244333.133272,
+        "ActionTargetPosition": null,
+        "EnemyHealth": 1188,
+        "TrialStatus": "Active",
+        "NextAbilityAt": 1791244335.983622,
+        "NoviceTrialArena": true,
+        "DisplayTitle": "Mage · Training",
+        "ActionOriginPosition": null,
+        "ClassId": "Mage",
+        "BasicLabel": "Basic Attack"
+      },
+      "position": [
+        2009.1424560546875,
+        134.9980010986328,
+        1311.99951171875
+      ]
+    },
+    {
+      "target": [
+        2000,
+        135.39999389648438,
+        1300
+      ],
+      "warning": {
+        "visible": false,
+        "x": 1999.2265625,
+        "z": 1312
+      },
+      "attributes": {
+        "PlayerHealth": 190,
+        "AbilityLabel": "Fireball",
+        "DisplayHealth": "HP 190/212 · Records Guardian 1188/2800",
+        "ActionAt": 1791244331.333374,
+        "DisplayHint": "Your skill is recharging.",
+        "OwnerUserId": 11732987790,
+        "ReturnLabel": "Leave trial",
+        "ActionEffect": "Basic",
+        "DisplayGoals": "Defeat the opponent 0/1 · Skills used 1/1 · Warnings dodged 2/2",
+        "NextBasicAt": 0,
+        "ActionTargetPosition": null,
+        "EnemyHealth": 1188,
+        "TrialStatus": "Active",
+        "NextAbilityAt": 1791244335.983622,
+        "NoviceTrialArena": true,
+        "DisplayTitle": "Mage · Training",
+        "ActionOriginPosition": null,
+        "ClassId": "Mage",
+        "BasicLabel": "Basic Attack"
+      },
+      "position": [
+        2000.84912109375,
+        134.9980010986328,
+        1311.9998779296875
+      ]
+    },
+    {
+      "target": [
+        2000,
+        135.39999389648438,
+        1300
+      ],
+      "warning": {
+        "visible": false,
+        "x": 1999.2265625,
+        "z": 1312
+      },
+      "attributes": {
+        "PlayerHealth": 190,
+        "AbilityLabel": "Fireball",
+        "DisplayHealth": "HP 190/212 · Records Guardian 1112/2800",
+        "ActionAt": 1791244333.618071,
+        "DisplayHint": "Use F/Q or the buttons. Dodge orange warnings.",
+        "OwnerUserId": 11732987790,
+        "ReturnLabel": "Leave trial",
+        "ActionEffect": "Basic",
+        "DisplayGoals": "Defeat the opponent 0/1 · Skills used 1/1 · Warnings dodged 2/2",
+        "NextBasicAt": 1791244335.417951,
+        "ActionTargetPosition": null,
+        "EnemyHealth": 1112,
+        "TrialStatus": "Active",
+        "NextAbilityAt": 1791244335.9836228,
+        "NoviceTrialArena": true,
+        "DisplayTitle": "Mage · Training",
+        "ActionOriginPosition": null,
+        "ClassId": "Mage",
+        "BasicLabel": "Basic Attack"
+      },
+      "position": [
+        2000.84912109375,
+        134.9980010986328,
+        1311.9998779296875
+      ]
+    },
+    {
+      "target": [
+        2000,
+        135.39999389648438,
+        1300
+      ],
+      "warning": {
+        "visible": true,
+        "x": 2000.84765625,
+        "z": 1312
+      },
+      "attributes": {
+        "PlayerHealth": 190,
+        "AbilityLabel": "Fireball",
+        "DisplayHealth": "HP 190/212 · Records Guardian 1112/2800",
+        "ActionAt": 1791244333.618071,
+        "DisplayHint": "Your skill is recharging.",
+        "ActionTargetPosition": null,
+        "OwnerUserId": 11732987790,
+        "ReturnLabel": "Leave trial",
+        "ActionEffect": "Basic",
+        "DisplayGoals": "Defeat the opponent 0/1 · Skills used 1/1 · Warnings dodged 2/2",
+        "NextBasicAt": 1791244335.4179506,
+        "EnemyHealth": 1112,
+        "WarningToken": 4266.514320200004,
+        "TrialStatus": "Active",
+        "NextAbilityAt": 1791244335.9836223,
+        "NoviceTrialArena": true,
+        "DisplayTitle": "Mage · Training",
+        "ActionOriginPosition": null,
+        "ClassId": "Mage",
+        "BasicLabel": "Basic Attack"
+      },
+      "position": [
+        2000.84912109375,
+        134.9980010986328,
+        1311.9998779296875
+      ]
+    },
+    {
+      "target": [
+        2000,
+        135.39999389648438,
+        1300
+      ],
+      "warning": {
+        "visible": false,
+        "x": 2000.84765625,
+        "z": 1312
+      },
+      "attributes": {
+        "PlayerHealth": 190,
+        "AbilityLabel": "Fireball",
+        "DisplayHealth": "HP 190/212 · Records Guardian 1036/2800",
+        "ActionAt": 1791244336.083371,
+        "DisplayHint": "Use F/Q or the buttons. Dodge orange warnings.",
+        "OwnerUserId": 11732987790,
+        "ReturnLabel": "Leave trial",
+        "ActionEffect": "Basic",
+        "DisplayGoals": "Defeat the opponent 0/1 · Skills used 1/1 · Warnings dodged 2/2",
+        "NextBasicAt": 1791244337.883272,
+        "ActionTargetPosition": null,
+        "EnemyHealth": 1036,
+        "TrialStatus": "Active",
+        "NextAbilityAt": 0,
+        "NoviceTrialArena": true,
+        "DisplayTitle": "Mage · Training",
+        "ActionOriginPosition": null,
+        "ClassId": "Mage",
+        "BasicLabel": "Basic Attack"
+      },
+      "position": [
+        1990.6651611328125,
+        134.9980010986328,
+        1312.0003662109375
+      ]
+    },
+    {
+      "target": [
+        2000,
+        135.39999389648438,
+        1300
+      ],
+      "warning": {
+        "visible": false,
+        "x": 2000.84765625,
+        "z": 1312
+      },
+      "attributes": {
+        "PlayerHealth": 190,
+        "AbilityLabel": "Fireball",
+        "DisplayHealth": "HP 190/212 · Records Guardian 861/2800",
+        "ActionAt": 1791244337.366862,
+        "DisplayHint": "Your skill is recharging.",
+        "ActionTargetPosition": null,
+        "OwnerUserId": 11732987790,
+        "ReturnLabel": "Leave trial",
+        "ActionEffect": "Magic",
+        "DisplayGoals": "Defeat the opponent 0/1 · Skills used 1/1 · Warnings dodged 2/2",
+        "NextBasicAt": 0,
+        "EnemyHealth": 861,
+        "ActionAbilityId": "fireball",
+        "TrialStatus": "Active",
+        "NextAbilityAt": 1791244345.366765,
+        "NoviceTrialArena": true,
+        "DisplayTitle": "Mage · Training",
+        "ActionOriginPosition": null,
+        "ClassId": "Mage",
+        "BasicLabel": "Basic Attack"
+      },
+      "position": [
+        1999.206298828125,
+        134.9980010986328,
+        1312
+      ]
+    },
+    {
+      "target": [
+        2000,
+        135.39999389648438,
+        1300
+      ],
+      "warning": {
+        "visible": false,
+        "x": 2000.84765625,
+        "z": 1312
+      },
+      "attributes": {
+        "PlayerHealth": 190,
+        "AbilityLabel": "Fireball",
+        "DisplayHealth": "HP 190/212 · Records Guardian 785/2800",
+        "ActionAt": 1791244338.417401,
+        "DisplayHint": "Use F/Q or the buttons. Dodge orange warnings.",
+        "OwnerUserId": 11732987790,
+        "ReturnLabel": "Leave trial",
+        "ActionEffect": "Basic",
+        "DisplayGoals": "Defeat the opponent 0/1 · Skills used 1/1 · Warnings dodged 2/2",
+        "NextBasicAt": 1791244340.2173,
+        "ActionTargetPosition": null,
+        "EnemyHealth": 785,
+        "TrialStatus": "Active",
+        "NextAbilityAt": 1791244345.366765,
+        "NoviceTrialArena": true,
+        "DisplayTitle": "Mage · Training",
+        "ActionOriginPosition": null,
+        "ClassId": "Mage",
+        "BasicLabel": "Basic Attack"
+      },
+      "position": [
+        1999.206298828125,
+        134.9980010986328,
+        1312
+      ]
+    },
+    {
+      "target": [
+        2000,
+        135.39999389648438,
+        1300
+      ],
+      "warning": {
+        "visible": false,
+        "x": 2000.84765625,
+        "z": 1312
+      },
+      "attributes": {
+        "PlayerHealth": 190,
+        "AbilityLabel": "Fireball",
+        "DisplayHealth": "HP 190/212 · Records Guardian 785/2800",
+        "ActionAt": 1791244338.417401,
+        "DisplayHint": "Your skill is recharging.",
+        "OwnerUserId": 11732987790,
+        "ReturnLabel": "Leave trial",
+        "ActionEffect": "Basic",
+        "DisplayGoals": "Defeat the opponent 0/1 · Skills used 1/1 · Warnings dodged 2/2",
+        "NextBasicAt": 1791244340.2172997,
+        "ActionTargetPosition": null,
+        "EnemyHealth": 785,
+        "TrialStatus": "Active",
+        "NextAbilityAt": 1791244345.3667657,
+        "NoviceTrialArena": true,
+        "DisplayTitle": "Mage · Training",
+        "ActionOriginPosition": null,
+        "ClassId": "Mage",
+        "BasicLabel": "Basic Attack"
+      },
+      "position": [
+        1999.206298828125,
+        134.9980010986328,
+        1312
+      ]
+    },
+    {
+      "target": [
+        2000,
+        135.39999389648438,
+        1300
+      ],
+      "warning": {
+        "visible": true,
+        "x": 1999.20703125,
+        "z": 1312
+      },
+      "attributes": {
+        "PlayerHealth": 190,
+        "AbilityLabel": "Fireball",
+        "DisplayHealth": "HP 190/212 · Records Guardian 785/2800",
+        "ActionAt": 1791244338.417401,
+        "DisplayHint": "Your skill is recharging.",
+        "ActionTargetPosition": null,
+        "OwnerUserId": 11732987790,
+        "ReturnLabel": "Leave trial",
+        "ActionEffect": "Basic",
+        "DisplayGoals": "Defeat the opponent 0/1 · Skills used 1/1 · Warnings dodged 2/2",
+        "NextBasicAt": 0,
+        "EnemyHealth": 785,
+        "WarningToken": 4271.563976500009,
+        "TrialStatus": "Active",
+        "NextAbilityAt": 1791244345.3667653,
+        "NoviceTrialArena": true,
+        "DisplayTitle": "Mage · Training",
+        "ActionOriginPosition": null,
+        "ClassId": "Mage",
+        "BasicLabel": "Basic Attack"
+      },
+      "position": [
+        1999.206298828125,
+        134.9980010986328,
+        1312
+      ]
+    },
+    {
+      "target": [
+        2000,
+        135.39999389648438,
+        1300
+      ],
+      "warning": {
+        "visible": false,
+        "x": 1999.20703125,
+        "z": 1312
+      },
+      "attributes": {
+        "PlayerHealth": 179,
+        "AbilityLabel": "Fireball",
+        "DisplayHealth": "HP 179/212 · Records Guardian 709/2800",
+        "ActionAt": 1791244341.732862,
+        "DisplayHint": "Use F/Q or the buttons. Dodge orange warnings.",
+        "OwnerUserId": 11732987790,
+        "ReturnLabel": "Leave trial",
+        "ActionEffect": "Basic",
+        "DisplayGoals": "Defeat the opponent 0/1 · Skills used 1/1 · Warnings dodged 2/2",
+        "NextBasicAt": 1791244343.53277,
+        "ActionTargetPosition": null,
+        "EnemyHealth": 709,
+        "TrialStatus": "Active",
+        "NextAbilityAt": 1791244345.3667648,
+        "NoviceTrialArena": true,
+        "DisplayTitle": "Mage · Training",
+        "ActionOriginPosition": null,
+        "ClassId": "Mage",
+        "BasicLabel": "Basic Attack"
+      },
+      "position": [
+        2009.1236572265625,
+        134.9980010986328,
+        1311.99951171875
+      ]
+    },
+    {
+      "target": [
+        2000,
+        135.39999389648438,
+        1300
+      ],
+      "warning": {
+        "visible": false,
+        "x": 1999.20703125,
+        "z": 1312
+      },
+      "attributes": {
+        "PlayerHealth": 179,
+        "AbilityLabel": "Fireball",
+        "DisplayHealth": "HP 179/212 · Records Guardian 709/2800",
+        "ActionAt": 1791244341.732862,
+        "DisplayHint": "Your skill is recharging.",
+        "OwnerUserId": 11732987790,
+        "ReturnLabel": "Leave trial",
+        "ActionEffect": "Basic",
+        "DisplayGoals": "Defeat the opponent 0/1 · Skills used 1/1 · Warnings dodged 2/2",
+        "NextBasicAt": 0,
+        "ActionTargetPosition": null,
+        "EnemyHealth": 709,
+        "TrialStatus": "Active",
+        "NextAbilityAt": 1791244345.3667657,
+        "NoviceTrialArena": true,
+        "DisplayTitle": "Mage · Training",
+        "ActionOriginPosition": null,
+        "ClassId": "Mage",
+        "BasicLabel": "Basic Attack"
+      },
+      "position": [
+        2000.83056640625,
+        134.9980010986328,
+        1311.9998779296875
+      ]
+    },
+    {
+      "target": [
+        2000,
+        135.39999389648438,
+        1300
+      ],
+      "warning": {
+        "visible": false,
+        "x": 1999.20703125,
+        "z": 1312
+      },
+      "attributes": {
+        "PlayerHealth": 179,
+        "AbilityLabel": "Fireball",
+        "DisplayHealth": "HP 179/212 · Records Guardian 633/2800",
+        "ActionAt": 1791244343.982707,
+        "DisplayHint": "Use F/Q or the buttons. Dodge orange warnings.",
+        "OwnerUserId": 11732987790,
+        "ReturnLabel": "Leave trial",
+        "ActionEffect": "Basic",
+        "DisplayGoals": "Defeat the opponent 0/1 · Skills used 1/1 · Warnings dodged 2/2",
+        "NextBasicAt": 1791244345.7826073,
+        "ActionTargetPosition": null,
+        "EnemyHealth": 633,
+        "TrialStatus": "Active",
+        "NextAbilityAt": 1791244345.3667653,
+        "NoviceTrialArena": true,
+        "DisplayTitle": "Mage · Training",
+        "ActionOriginPosition": null,
+        "ClassId": "Mage",
+        "BasicLabel": "Basic Attack"
+      },
+      "position": [
+        2000.83056640625,
+        134.9980010986328,
+        1311.9998779296875
+      ]
+    },
+    {
+      "target": [
+        2000,
+        135.39999389648438,
+        1300
+      ],
+      "warning": {
+        "visible": true,
+        "x": 2000.83203125,
+        "z": 1312
+      },
+      "attributes": {
+        "PlayerHealth": 179,
+        "AbilityLabel": "Fireball",
+        "DisplayHealth": "HP 179/212 · Records Guardian 633/2800",
+        "ActionAt": 1791244343.982707,
+        "DisplayHint": "Your skill is recharging.",
+        "ActionTargetPosition": null,
+        "OwnerUserId": 11732987790,
+        "ReturnLabel": "Leave trial",
+        "ActionEffect": "Basic",
+        "DisplayGoals": "Defeat the opponent 0/1 · Skills used 1/1 · Warnings dodged 2/2",
+        "NextBasicAt": 1791244345.7826068,
+        "EnemyHealth": 633,
+        "WarningToken": 4276.6308800000115,
+        "TrialStatus": "Active",
+        "NextAbilityAt": 1791244345.366765,
+        "NoviceTrialArena": true,
+        "DisplayTitle": "Mage · Training",
+        "ActionOriginPosition": null,
+        "ClassId": "Mage",
+        "BasicLabel": "Basic Attack"
+      },
+      "position": [
+        2000.83056640625,
+        134.9980010986328,
+        1311.9998779296875
+      ]
+    },
+    {
+      "target": [
+        2000,
+        135.39999389648438,
+        1300
+      ],
+      "warning": {
+        "visible": false,
+        "x": 2000.83203125,
+        "z": 1312
+      },
+      "attributes": {
+        "PlayerHealth": 179,
+        "AbilityLabel": "Fireball",
+        "DisplayHealth": "HP 179/212 · Records Guardian 382/2800",
+        "ActionAt": 1791244346.350741,
+        "DisplayHint": "Use F/Q or the buttons. Dodge orange warnings.",
+        "OwnerUserId": 11732987790,
+        "ReturnLabel": "Leave trial",
+        "ActionEffect": "Basic",
+        "DisplayGoals": "Defeat the opponent 0/1 · Skills used 1/1 · Warnings dodged 2/2",
+        "NextBasicAt": 1791244348.1505985,
+        "ActionTargetPosition": null,
+        "EnemyHealth": 382,
+        "TrialStatus": "Active",
+        "NextAbilityAt": 1791244354.2508457,
+        "NoviceTrialArena": true,
+        "DisplayTitle": "Mage · Training",
+        "ActionOriginPosition": null,
+        "ClassId": "Mage",
+        "BasicLabel": "Basic Attack"
+      },
+      "position": [
+        1990.7799072265625,
+        134.9980010986328,
+        1312.000244140625
+      ]
+    },
+    {
+      "target": [
+        2000,
+        135.39999389648438,
+        1300
+      ],
+      "warning": {
+        "visible": false,
+        "x": 2000.83203125,
+        "z": 1312
+      },
+      "attributes": {
+        "PlayerHealth": 179,
+        "AbilityLabel": "Fireball",
+        "DisplayHealth": "HP 179/212 · Records Guardian 382/2800",
+        "ActionAt": 1791244346.350741,
+        "DisplayHint": "Your skill is recharging.",
+        "OwnerUserId": 11732987790,
+        "ReturnLabel": "Leave trial",
+        "ActionEffect": "Basic",
+        "DisplayGoals": "Defeat the opponent 0/1 · Skills used 1/1 · Warnings dodged 2/2",
+        "NextBasicAt": 0,
+        "ActionTargetPosition": null,
+        "EnemyHealth": 382,
+        "TrialStatus": "Active",
+        "NextAbilityAt": 1791244354.2508452,
+        "NoviceTrialArena": true,
+        "DisplayTitle": "Mage · Training",
+        "ActionOriginPosition": null,
+        "ClassId": "Mage",
+        "BasicLabel": "Basic Attack"
+      },
+      "position": [
+        1999.139892578125,
+        134.9980010986328,
+        1312.0001220703125
+      ]
+    },
+    {
+      "target": [
+        2000,
+        135.39999389648438,
+        1300
+      ],
+      "warning": {
+        "visible": false,
+        "x": 2000.83203125,
+        "z": 1312
+      },
+      "attributes": {
+        "PlayerHealth": 179,
+        "AbilityLabel": "Fireball",
+        "DisplayHealth": "HP 179/212 · Records Guardian 306/2800",
+        "ActionAt": 1791244348.600734,
+        "DisplayHint": "Use F/Q or the buttons. Dodge orange warnings.",
+        "OwnerUserId": 11732987790,
+        "ReturnLabel": "Leave trial",
+        "ActionEffect": "Basic",
+        "DisplayGoals": "Defeat the opponent 0/1 · Skills used 1/1 · Warnings dodged 2/2",
+        "NextBasicAt": 1791244350.4006262,
+        "ActionTargetPosition": null,
+        "EnemyHealth": 306,
+        "TrialStatus": "Active",
+        "NextAbilityAt": 1791244354.2508454,
+        "NoviceTrialArena": true,
+        "DisplayTitle": "Mage · Training",
+        "ActionOriginPosition": null,
+        "ClassId": "Mage",
+        "BasicLabel": "Basic Attack"
+      },
+      "position": [
+        1999.139892578125,
+        134.9980010986328,
+        1312.0001220703125
+      ]
+    },
+    {
+      "target": [
+        2000,
+        135.39999389648438,
+        1300
+      ],
+      "warning": {
+        "visible": false,
+        "x": 2000.83203125,
+        "z": 1312
+      },
+      "attributes": {
+        "PlayerHealth": 179,
+        "AbilityLabel": "Fireball",
+        "DisplayHealth": "HP 179/212 · Records Guardian 306/2800",
+        "ActionAt": 1791244348.600734,
+        "DisplayHint": "Your skill is recharging.",
+        "OwnerUserId": 11732987790,
+        "ReturnLabel": "Leave trial",
+        "ActionEffect": "Basic",
+        "DisplayGoals": "Defeat the opponent 0/1 · Skills used 1/1 · Warnings dodged 2/2",
+        "NextBasicAt": 1791244350.4006257,
+        "ActionTargetPosition": null,
+        "EnemyHealth": 306,
+        "TrialStatus": "Active",
+        "NextAbilityAt": 1791244354.2508447,
+        "NoviceTrialArena": true,
+        "DisplayTitle": "Mage · Training",
+        "ActionOriginPosition": null,
+        "ClassId": "Mage",
+        "BasicLabel": "Basic Attack"
+      },
+      "position": [
+        1999.139892578125,
+        134.9980010986328,
+        1312.0001220703125
+      ]
+    },
+    {
+      "target": [
+        2000,
+        135.39999389648438,
+        1300
+      ],
+      "warning": {
+        "visible": true,
+        "x": 1999.140625,
+        "z": 1312
+      },
+      "attributes": {
+        "PlayerHealth": 179,
+        "AbilityLabel": "Fireball",
+        "DisplayHealth": "HP 179/212 · Records Guardian 306/2800",
+        "ActionAt": 1791244348.600734,
+        "DisplayHint": "Your skill is recharging.",
+        "ActionTargetPosition": null,
+        "OwnerUserId": 11732987790,
+        "ReturnLabel": "Leave trial",
+        "ActionEffect": "Basic",
+        "DisplayGoals": "Defeat the opponent 0/1 · Skills used 1/1 · Warnings dodged 2/2",
+        "NextBasicAt": 0,
+        "EnemyHealth": 306,
+        "WarningToken": 4281.730633600004,
+        "TrialStatus": "Active",
+        "NextAbilityAt": 1791244354.250845,
+        "NoviceTrialArena": true,
+        "DisplayTitle": "Mage · Training",
+        "ActionOriginPosition": null,
+        "ClassId": "Mage",
+        "BasicLabel": "Basic Attack"
+      },
+      "position": [
+        1999.139892578125,
+        134.9980010986328,
+        1312.0001220703125
+      ]
+    },
+    {
+      "target": [
+        2000,
+        135.39999389648438,
+        1300
+      ],
+      "warning": {
+        "visible": false,
+        "x": 1999.140625,
+        "z": 1312
+      },
+      "attributes": {
+        "PlayerHealth": 168,
+        "AbilityLabel": "Fireball",
+        "DisplayHealth": "HP 168/212 · Records Guardian 230/2800",
+        "ActionAt": 1791244351.965673,
+        "DisplayHint": "Use F/Q or the buttons. Dodge orange warnings.",
+        "OwnerUserId": 11732987790,
+        "ReturnLabel": "Leave trial",
+        "ActionEffect": "Basic",
+        "DisplayGoals": "Defeat the opponent 0/1 · Skills used 1/1 · Warnings dodged 2/2",
+        "NextBasicAt": 1791244353.7655652,
+        "ActionTargetPosition": null,
+        "EnemyHealth": 230,
+        "TrialStatus": "Active",
+        "NextAbilityAt": 1791244354.2508447,
+        "NoviceTrialArena": true,
+        "DisplayTitle": "Mage · Training",
+        "ActionOriginPosition": null,
+        "ClassId": "Mage",
+        "BasicLabel": "Basic Attack"
+      },
+      "position": [
+        2009.3238525390625,
+        134.9980010986328,
+        1311.9996337890625
+      ]
+    },
+    {
+      "target": [
+        2000,
+        135.39999389648438,
+        1300
+      ],
+      "warning": {
+        "visible": false,
+        "x": 1999.140625,
+        "z": 1312
+      },
+      "attributes": {
+        "PlayerHealth": 168,
+        "AbilityLabel": "Fireball",
+        "DisplayHealth": "HP 168/212 · Records Guardian 230/2800",
+        "ActionAt": 1791244351.965673,
+        "DisplayHint": "Your skill is recharging.",
+        "OwnerUserId": 11732987790,
+        "ReturnLabel": "Leave trial",
+        "ActionEffect": "Basic",
+        "DisplayGoals": "Defeat the opponent 0/1 · Skills used 1/1 · Warnings dodged 2/2",
+        "NextBasicAt": 0,
+        "ActionTargetPosition": null,
+        "EnemyHealth": 230,
+        "TrialStatus": "Active",
+        "NextAbilityAt": 1791244354.2508454,
+        "NoviceTrialArena": true,
+        "DisplayTitle": "Mage · Training",
+        "ActionOriginPosition": null,
+        "ClassId": "Mage",
+        "BasicLabel": "Basic Attack"
+      },
+      "position": [
+        2000.6971435546875,
+        134.9980010986328,
+        1312
+      ]
+    },
+    {
+      "target": [
+        2000,
+        135.39999389648438,
+        1300
+      ],
+      "warning": {
+        "visible": false,
+        "x": 1999.140625,
+        "z": 1312
+      },
+      "attributes": {
+        "PlayerHealth": 168,
+        "AbilityLabel": "Fireball",
+        "DisplayHealth": "HP 168/212 · Records Guardian 154/2800",
+        "ActionAt": 1791244354.198763,
+        "DisplayHint": "Use F/Q or the buttons. Dodge orange warnings.",
+        "OwnerUserId": 11732987790,
+        "ReturnLabel": "Leave trial",
+        "ActionEffect": "Basic",
+        "DisplayGoals": "Defeat the opponent 0/1 · Skills used 1/1 · Warnings dodged 2/2",
+        "NextBasicAt": 1791244355.9986537,
+        "ActionTargetPosition": null,
+        "EnemyHealth": 154,
+        "TrialStatus": "Active",
+        "NextAbilityAt": 0,
+        "NoviceTrialArena": true,
+        "DisplayTitle": "Mage · Training",
+        "ActionOriginPosition": null,
+        "ClassId": "Mage",
+        "BasicLabel": "Basic Attack"
+      },
+      "position": [
+        2000.6971435546875,
+        134.9980010986328,
+        1312
+      ]
+    },
+    {}
+  ],
+  "finding": "After trial auto-return the HUD briefly displayed raw EnterCamp text. Localization/status follow-up; trial objective committed normally."
+}

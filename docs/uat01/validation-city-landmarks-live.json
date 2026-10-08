@@ -1,0 +1,81 @@
+{
+  "date": "2026-10-03",
+  "studioId": "51e7899b-3097-4099-b85b-3f24b848bf35",
+  "placeId": 0,
+  "mode": "standalone art review; no persistence",
+  "travelInput": "actual keyboard E",
+  "arrival": [
+    0,
+    2.998,
+    -470
+  ],
+  "returnPosition": [
+    0,
+    3.998,
+    45
+  ],
+  "prompts": 21,
+  "method": "Studio character_navigation at speed_multiplier=1, followed by read-only character position/health; no PivotTo injection",
+  "routes": [
+    {
+      "city": "Crownford",
+      "position": [
+        -69.546,
+        3.998,
+        -509.306
+      ],
+      "health": 100
+    },
+    {
+      "city": "Sylvaris",
+      "position": [
+        -0.432,
+        3.998,
+        -509.303
+      ],
+      "health": 100
+    },
+    {
+      "city": "Deepforge",
+      "position": [
+        69.5,
+        3.998,
+        -509.305
+      ],
+      "health": 100
+    },
+    {
+      "city": "Astralis",
+      "position": [
+        -69.63,
+        3.998,
+        -589.33
+      ],
+      "health": 100
+    },
+    {
+      "city": "Crosshaven",
+      "position": [
+        -0.615,
+        3.998,
+        -589.994
+      ],
+      "health": 100
+    },
+    {
+      "city": "Ironroot",
+      "position": [
+        69.424,
+        3.998,
+        -589.548
+      ],
+      "health": 100
+    }
+  ],
+  "console": "empty on startup",
+  "limitations": [
+    "Local art review only",
+    "No full city services or quests",
+    "No physical mobile or multiplayer acceptance"
+  ]
+}

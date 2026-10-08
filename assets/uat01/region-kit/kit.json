@@ -1,0 +1,2889 @@
+{
+  "schema": 1,
+  "units": "stud",
+  "upAxis": "Y",
+  "palette": {
+    "grass": [
+      74,
+      117,
+      72
+    ],
+    "earth": [
+      100,
+      78,
+      56
+    ],
+    "path": [
+      180,
+      153,
+      108
+    ],
+    "rock": [
+      96,
+      105,
+      119
+    ],
+    "dark": [
+      52,
+      61,
+      79
+    ],
+    "sand": [
+      177,
+      143,
+      88
+    ],
+    "rune": [
+      80,
+      202,
+      216
+    ],
+    "purple": [
+      112,
+      86,
+      155
+    ],
+    "wood": [
+      116,
+      79,
+      50
+    ],
+    "leaf": [
+      55,
+      96,
+      63
+    ],
+    "gold": [
+      216,
+      174,
+      76
+    ]
+  },
+  "assets": [
+    {
+      "id": "Greenwood",
+      "title": "Greenwood Reach",
+      "parts": [
+        {
+          "name": "Island",
+          "size": [
+            220,
+            4,
+            200
+          ],
+          "position": [
+            0,
+            0,
+            0
+          ],
+          "color": "grass",
+          "collide": true,
+          "shape": "Block",
+          "yaw": 0
+        },
+        {
+          "name": "Landing",
+          "size": [
+            28,
+            4,
+            26
+          ],
+          "position": [
+            0,
+            0,
+            113
+          ],
+          "color": "wood",
+          "collide": true,
+          "shape": "Block",
+          "yaw": 0
+        },
+        {
+          "name": "BossRise",
+          "size": [
+            96,
+            4,
+            50
+          ],
+          "position": [
+            0,
+            4,
+            -70
+          ],
+          "color": "earth",
+          "collide": true,
+          "shape": "Block",
+          "yaw": 0
+        },
+        {
+          "name": "RootAscent",
+          "size": [
+            20,
+            4,
+            25
+          ],
+          "position": [
+            0,
+            4.0,
+            -32.5
+          ],
+          "color": "path",
+          "collide": true,
+          "shape": "Wedge",
+          "yaw": 180
+        },
+        {
+          "name": "Trail",
+          "size": [
+            18,
+            4,
+            90
+          ],
+          "position": [
+            -60,
+            0.04999999999999982,
+            10
+          ],
+          "color": "path",
+          "collide": true,
+          "shape": "Block",
+          "yaw": 0
+        },
+        {
+          "name": "Trail",
+          "size": [
+            18,
+            4,
+            90
+          ],
+          "position": [
+            60,
+            0.04999999999999982,
+            10
+          ],
+          "color": "path",
+          "collide": true,
+          "shape": "Block",
+          "yaw": 0
+        },
+        {
+          "name": "CrossTrail",
+          "size": [
+            138,
+            4,
+            18
+          ],
+          "position": [
+            0,
+            0.06000000000000005,
+            50
+          ],
+          "color": "path",
+          "collide": true,
+          "shape": "Block",
+          "yaw": 0
+        },
+        {
+          "name": "CrossTrail",
+          "size": [
+            138,
+            4,
+            18
+          ],
+          "position": [
+            0,
+            0.06000000000000005,
+            -25
+          ],
+          "color": "path",
+          "collide": true,
+          "shape": "Block",
+          "yaw": 0
+        },
+        {
+          "name": "ArrivalTrail",
+          "size": [
+            18,
+            4,
+            46
+          ],
+          "position": [
+            0,
+            0.04999999999999982,
+            78
+          ],
+          "color": "path",
+          "collide": true,
+          "shape": "Block",
+          "yaw": 0
+        },
+        {
+          "name": "Trunk",
+          "size": [
+            3,
+            12,
+            3
+          ],
+          "position": [
+            -90,
+            8,
+            75
+          ],
+          "color": "wood",
+          "collide": true,
+          "shape": "Block",
+          "yaw": 0
+        },
+        {
+          "name": "Canopy",
+          "size": [
+            13,
+            6,
+            13
+          ],
+          "position": [
+            -90,
+            13,
+            75
+          ],
+          "color": "leaf",
+          "collide": false,
+          "shape": "Block",
+          "yaw": 0
+        },
+        {
+          "name": "Canopy",
+          "size": [
+            10,
+            6,
+            10
+          ],
+          "position": [
+            -90,
+            18,
+            75
+          ],
+          "color": "leaf",
+          "collide": false,
+          "shape": "Block",
+          "yaw": 0
+        },
+        {
+          "name": "Canopy",
+          "size": [
+            6,
+            6,
+            6
+          ],
+          "position": [
+            -90,
+            22,
+            75
+          ],
+          "color": "leaf",
+          "collide": false,
+          "shape": "Block",
+          "yaw": 0
+        },
+        {
+          "name": "Trunk",
+          "size": [
+            3,
+            12,
+            3
+          ],
+          "position": [
+            85,
+            8,
+            72
+          ],
+          "color": "wood",
+          "collide": true,
+          "shape": "Block",
+          "yaw": 0
+        },
+        {
+          "name": "Canopy",
+          "size": [
+            13,
+            6,
+            13
+          ],
+          "position": [
+            85,
+            13,
+            72
+          ],
+          "color": "leaf",
+          "collide": false,
+          "shape": "Block",
+          "yaw": 0
+        },
+        {
+          "name": "Canopy",
+          "size": [
+            10,
+            6,
+            10
+          ],
+          "position": [
+            85,
+            18,
+            72
+          ],
+          "color": "leaf",
+          "collide": false,
+          "shape": "Block",
+          "yaw": 0
+        },
+        {
+          "name": "Canopy",
+          "size": [
+            6,
+            6,
+            6
+          ],
+          "position": [
+            85,
+            22,
+            72
+          ],
+          "color": "leaf",
+          "collide": false,
+          "shape": "Block",
+          "yaw": 0
+        },
+        {
+          "name": "Trunk",
+          "size": [
+            3,
+            12,
+            3
+          ],
+          "position": [
+            -89,
+            8,
+            18
+          ],
+          "color": "wood",
+          "collide": true,
+          "shape": "Block",
+          "yaw": 0
+        },
+        {
+          "name": "Canopy",
+          "size": [
+            13,
+            6,
+            13
+          ],
+          "position": [
+            -89,
+            13,
+            18
+          ],
+          "color": "leaf",
+          "collide": false,
+          "shape": "Block",
+          "yaw": 0
+        },
+        {
+          "name": "Canopy",
+          "size": [
+            10,
+            6,
+            10
+          ],
+          "position": [
+            -89,
+            18,
+            18
+          ],
+          "color": "leaf",
+          "collide": false,
+          "shape": "Block",
+          "yaw": 0
+        },
+        {
+          "name": "Canopy",
+          "size": [
+            6,
+            6,
+            6
+          ],
+          "position": [
+            -89,
+            22,
+            18
+          ],
+          "color": "leaf",
+          "collide": false,
+          "shape": "Block",
+          "yaw": 0
+        },
+        {
+          "name": "Trunk",
+          "size": [
+            3,
+            12,
+            3
+          ],
+          "position": [
+            90,
+            8,
+            5
+          ],
+          "color": "wood",
+          "collide": true,
+          "shape": "Block",
+          "yaw": 0
+        },
+        {
+          "name": "Canopy",
+          "size": [
+            13,
+            6,
+            13
+          ],
+          "position": [
+            90,
+            13,
+            5
+          ],
+          "color": "leaf",
+          "collide": false,
+          "shape": "Block",
+          "yaw": 0
+        },
+        {
+          "name": "Canopy",
+          "size": [
+            10,
+            6,
+            10
+          ],
+          "position": [
+            90,
+            18,
+            5
+          ],
+          "color": "leaf",
+          "collide": false,
+          "shape": "Block",
+          "yaw": 0
+        },
+        {
+          "name": "Canopy",
+          "size": [
+            6,
+            6,
+            6
+          ],
+          "position": [
+            90,
+            22,
+            5
+          ],
+          "color": "leaf",
+          "collide": false,
+          "shape": "Block",
+          "yaw": 0
+        },
+        {
+          "name": "Trunk",
+          "size": [
+            3,
+            12,
+            3
+          ],
+          "position": [
+            -85,
+            8,
+            -50
+          ],
+          "color": "wood",
+          "collide": true,
+          "shape": "Block",
+          "yaw": 0
+        },
+        {
+          "name": "Canopy",
+          "size": [
+            13,
+            6,
+            13
+          ],
+          "position": [
+            -85,
+            13,
+            -50
+          ],
+          "color": "leaf",
+          "collide": false,
+          "shape": "Block",
+          "yaw": 0
+        },
+        {
+          "name": "Canopy",
+          "size": [
+            10,
+            6,
+            10
+          ],
+          "position": [
+            -85,
+            18,
+            -50
+          ],
+          "color": "leaf",
+          "collide": false,
+          "shape": "Block",
+          "yaw": 0
+        },
+        {
+          "name": "Canopy",
+          "size": [
+            6,
+            6,
+            6
+          ],
+          "position": [
+            -85,
+            22,
+            -50
+          ],
+          "color": "leaf",
+          "collide": false,
+          "shape": "Block",
+          "yaw": 0
+        },
+        {
+          "name": "Trunk",
+          "size": [
+            3,
+            12,
+            3
+          ],
+          "position": [
+            87,
+            8,
+            -60
+          ],
+          "color": "wood",
+          "collide": true,
+          "shape": "Block",
+          "yaw": 0
+        },
+        {
+          "name": "Canopy",
+          "size": [
+            13,
+            6,
+            13
+          ],
+          "position": [
+            87,
+            13,
+            -60
+          ],
+          "color": "leaf",
+          "collide": false,
+          "shape": "Block",
+          "yaw": 0
+        },
+        {
+          "name": "Canopy",
+          "size": [
+            10,
+            6,
+            10
+          ],
+          "position": [
+            87,
+            18,
+            -60
+          ],
+          "color": "leaf",
+          "collide": false,
+          "shape": "Block",
+          "yaw": 0
+        },
+        {
+          "name": "Canopy",
+          "size": [
+            6,
+            6,
+            6
+          ],
+          "position": [
+            87,
+            22,
+            -60
+          ],
+          "color": "leaf",
+          "collide": false,
+          "shape": "Block",
+          "yaw": 0
+        },
+        {
+          "name": "Trunk",
+          "size": [
+            3,
+            12,
+            3
+          ],
+          "position": [
+            -45,
+            8,
+            8
+          ],
+          "color": "wood",
+          "collide": true,
+          "shape": "Block",
+          "yaw": 0
+        },
+        {
+          "name": "Canopy",
+          "size": [
+            13,
+            6,
+            13
+          ],
+          "position": [
+            -45,
+            13,
+            8
+          ],
+          "color": "leaf",
+          "collide": false,
+          "shape": "Block",
+          "yaw": 0
+        },
+        {
+          "name": "Canopy",
+          "size": [
+            10,
+            6,
+            10
+          ],
+          "position": [
+            -45,
+            18,
+            8
+          ],
+          "color": "leaf",
+          "collide": false,
+          "shape": "Block",
+          "yaw": 0
+        },
+        {
+          "name": "Canopy",
+          "size": [
+            6,
+            6,
+            6
+          ],
+          "position": [
+            -45,
+            22,
+            8
+          ],
+          "color": "leaf",
+          "collide": false,
+          "shape": "Block",
+          "yaw": 0
+        },
+        {
+          "name": "Trunk",
+          "size": [
+            3,
+            12,
+            3
+          ],
+          "position": [
+            42,
+            8,
+            12
+          ],
+          "color": "wood",
+          "collide": true,
+          "shape": "Block",
+          "yaw": 0
+        },
+        {
+          "name": "Canopy",
+          "size": [
+            13,
+            6,
+            13
+          ],
+          "position": [
+            42,
+            13,
+            12
+          ],
+          "color": "leaf",
+          "collide": false,
+          "shape": "Block",
+          "yaw": 0
+        },
+        {
+          "name": "Canopy",
+          "size": [
+            10,
+            6,
+            10
+          ],
+          "position": [
+            42,
+            18,
+            12
+          ],
+          "color": "leaf",
+          "collide": false,
+          "shape": "Block",
+          "yaw": 0
+        },
+        {
+          "name": "Canopy",
+          "size": [
+            6,
+            6,
+            6
+          ],
+          "position": [
+            42,
+            22,
+            12
+          ],
+          "color": "leaf",
+          "collide": false,
+          "shape": "Block",
+          "yaw": 0
+        },
+        {
+          "name": "Trunk",
+          "size": [
+            3,
+            12,
+            3
+          ],
+          "position": [
+            -95,
+            8,
+            -83
+          ],
+          "color": "wood",
+          "collide": true,
+          "shape": "Block",
+          "yaw": 0
+        },
+        {
+          "name": "Canopy",
+          "size": [
+            13,
+            6,
+            13
+          ],
+          "position": [
+            -95,
+            13,
+            -83
+          ],
+          "color": "leaf",
+          "collide": false,
+          "shape": "Block",
+          "yaw": 0
+        },
+        {
+          "name": "Canopy",
+          "size": [
+            10,
+            6,
+            10
+          ],
+          "position": [
+            -95,
+            18,
+            -83
+          ],
+          "color": "leaf",
+          "collide": false,
+          "shape": "Block",
+          "yaw": 0
+        },
+        {
+          "name": "Canopy",
+          "size": [
+            6,
+            6,
+            6
+          ],
+          "position": [
+            -95,
+            22,
+            -83
+          ],
+          "color": "leaf",
+          "collide": false,
+          "shape": "Block",
+          "yaw": 0
+        },
+        {
+          "name": "Trunk",
+          "size": [
+            3,
+            12,
+            3
+          ],
+          "position": [
+            95,
+            8,
+            -87
+          ],
+          "color": "wood",
+          "collide": true,
+          "shape": "Block",
+          "yaw": 0
+        },
+        {
+          "name": "Canopy",
+          "size": [
+            13,
+            6,
+            13
+          ],
+          "position": [
+            95,
+            13,
+            -87
+          ],
+          "color": "leaf",
+          "collide": false,
+          "shape": "Block",
+          "yaw": 0
+        },
+        {
+          "name": "Canopy",
+          "size": [
+            10,
+            6,
+            10
+          ],
+          "position": [
+            95,
+            18,
+            -87
+          ],
+          "color": "leaf",
+          "collide": false,
+          "shape": "Block",
+          "yaw": 0
+        },
+        {
+          "name": "Canopy",
+          "size": [
+            6,
+            6,
+            6
+          ],
+          "position": [
+            95,
+            22,
+            -87
+          ],
+          "color": "leaf",
+          "collide": false,
+          "shape": "Block",
+          "yaw": 0
+        },
+        {
+          "name": "Trunk",
+          "size": [
+            3,
+            12,
+            3
+          ],
+          "position": [
+            -37,
+            12,
+            -77
+          ],
+          "color": "wood",
+          "collide": true,
+          "shape": "Block",
+          "yaw": 0
+        },
+        {
+          "name": "Canopy",
+          "size": [
+            13,
+            6,
+            13
+          ],
+          "position": [
+            -37,
+            17,
+            -77
+          ],
+          "color": "leaf",
+          "collide": false,
+          "shape": "Block",
+          "yaw": 0
+        },
+        {
+          "name": "Canopy",
+          "size": [
+            10,
+            6,
+            10
+          ],
+          "position": [
+            -37,
+            22,
+            -77
+          ],
+          "color": "leaf",
+          "collide": false,
+          "shape": "Block",
+          "yaw": 0
+        },
+        {
+          "name": "Canopy",
+          "size": [
+            6,
+            6,
+            6
+          ],
+          "position": [
+            -37,
+            26,
+            -77
+          ],
+          "color": "leaf",
+          "collide": false,
+          "shape": "Block",
+          "yaw": 0
+        },
+        {
+          "name": "Trunk",
+          "size": [
+            3,
+            12,
+            3
+          ],
+          "position": [
+            37,
+            12,
+            -77
+          ],
+          "color": "wood",
+          "collide": true,
+          "shape": "Block",
+          "yaw": 0
+        },
+        {
+          "name": "Canopy",
+          "size": [
+            13,
+            6,
+            13
+          ],
+          "position": [
+            37,
+            17,
+            -77
+          ],
+          "color": "leaf",
+          "collide": false,
+          "shape": "Block",
+          "yaw": 0
+        },
+        {
+          "name": "Canopy",
+          "size": [
+            10,
+            6,
+            10
+          ],
+          "position": [
+            37,
+            22,
+            -77
+          ],
+          "color": "leaf",
+          "collide": false,
+          "shape": "Block",
+          "yaw": 0
+        },
+        {
+          "name": "Canopy",
+          "size": [
+            6,
+            6,
+            6
+          ],
+          "position": [
+            37,
+            26,
+            -77
+          ],
+          "color": "leaf",
+          "collide": false,
+          "shape": "Block",
+          "yaw": 0
+        }
+      ],
+      "routes": [
+        {
+          "name": "Main",
+          "points": [
+            [
+              0,
+              2.05,
+              112
+            ],
+            [
+              0,
+              2.05,
+              50
+            ],
+            [
+              0,
+              2.06,
+              -20
+            ],
+            [
+              0,
+              6,
+              -45
+            ],
+            [
+              0,
+              6,
+              -70
+            ]
+          ]
+        },
+        {
+          "name": "WestLoop",
+          "points": [
+            [
+              0,
+              2.06,
+              50
+            ],
+            [
+              -60,
+              2.06,
+              50
+            ],
+            [
+              -60,
+              2.06,
+              -18
+            ],
+            [
+              0,
+              2.06,
+              -18
+            ]
+          ]
+        },
+        {
+          "name": "EastLoop",
+          "points": [
+            [
+              0,
+              2.06,
+              50
+            ],
+            [
+              60,
+              2.06,
+              50
+            ],
+            [
+              60,
+              2.06,
+              -18
+            ],
+            [
+              0,
+              2.06,
+              -18
+            ]
+          ]
+        }
+      ],
+      "markers": [
+        {
+          "name": "Arrival",
+          "position": [
+            0,
+            2,
+            105
+          ],
+          "role": "Arrival"
+        },
+        {
+          "name": "ScoutCamp",
+          "position": [
+            -60,
+            2,
+            10
+          ],
+          "role": "Melee"
+        },
+        {
+          "name": "ArcherCamp",
+          "position": [
+            60,
+            2,
+            10
+          ],
+          "role": "Ranged"
+        },
+        {
+          "name": "BoarTrail",
+          "position": [
+            0,
+            2,
+            10
+          ],
+          "role": "Charge"
+        },
+        {
+          "name": "ForestCaptain",
+          "position": [
+            0,
+            6,
+            -70
+          ],
+          "role": "Boss"
+        }
+      ],
+      "partCount": 57,
+      "encountersEnabled": false
+    },
+    {
+      "id": "Ironveil",
+      "title": "Ironveil Quarry",
+      "parts": [
+        {
+          "name": "Island",
+          "size": [
+            240,
+            4,
+            220
+          ],
+          "position": [
+            0,
+            0,
+            0
+          ],
+          "color": "rock",
+          "collide": true,
+          "shape": "Block",
+          "yaw": 0
+        },
+        {
+          "name": "Landing",
+          "size": [
+            28,
+            4,
+            24
+          ],
+          "position": [
+            0,
+            0,
+            122
+          ],
+          "color": "wood",
+          "collide": true,
+          "shape": "Block",
+          "yaw": 0
+        },
+        {
+          "name": "MidTerrace",
+          "size": [
+            220,
+            4,
+            160
+          ],
+          "position": [
+            0,
+            4,
+            -30
+          ],
+          "color": "sand",
+          "collide": true,
+          "shape": "Block",
+          "yaw": 0
+        },
+        {
+          "name": "UpperTerrace",
+          "size": [
+            190,
+            4,
+            105
+          ],
+          "position": [
+            0,
+            8,
+            -57.5
+          ],
+          "color": "rock",
+          "collide": true,
+          "shape": "Block",
+          "yaw": 0
+        },
+        {
+          "name": "QuarryAscent",
+          "size": [
+            20,
+            4,
+            25
+          ],
+          "position": [
+            0,
+            4.0,
+            62.5
+          ],
+          "color": "path",
+          "collide": true,
+          "shape": "Wedge",
+          "yaw": 180
+        },
+        {
+          "name": "SummitAscent",
+          "size": [
+            20,
+            4,
+            25
+          ],
+          "position": [
+            0,
+            8.0,
+            7.5
+          ],
+          "color": "path",
+          "collide": true,
+          "shape": "Wedge",
+          "yaw": 180
+        },
+        {
+          "name": "CrystalBase",
+          "size": [
+            7,
+            3,
+            7
+          ],
+          "position": [
+            -82,
+            3.5,
+            80
+          ],
+          "color": "rock",
+          "collide": true,
+          "shape": "Block",
+          "yaw": 0
+        },
+        {
+          "name": "Crystal",
+          "size": [
+            2,
+            5,
+            2
+          ],
+          "position": [
+            -84,
+            7.5,
+            80
+          ],
+          "color": "gold",
+          "collide": false,
+          "shape": "Block",
+          "yaw": 45
+        },
+        {
+          "name": "Crystal",
+          "size": [
+            2,
+            10,
+            2
+          ],
+          "position": [
+            -82,
+            10.0,
+            80
+          ],
+          "color": "gold",
+          "collide": false,
+          "shape": "Block",
+          "yaw": 45
+        },
+        {
+          "name": "Crystal",
+          "size": [
+            2,
+            7,
+            2
+          ],
+          "position": [
+            -80,
+            8.5,
+            80
+          ],
+          "color": "gold",
+          "collide": false,
+          "shape": "Block",
+          "yaw": 45
+        },
+        {
+          "name": "CrystalBase",
+          "size": [
+            7,
+            3,
+            7
+          ],
+          "position": [
+            82,
+            3.5,
+            80
+          ],
+          "color": "rock",
+          "collide": true,
+          "shape": "Block",
+          "yaw": 0
+        },
+        {
+          "name": "Crystal",
+          "size": [
+            2,
+            5,
+            2
+          ],
+          "position": [
+            80,
+            7.5,
+            80
+          ],
+          "color": "gold",
+          "collide": false,
+          "shape": "Block",
+          "yaw": 45
+        },
+        {
+          "name": "Crystal",
+          "size": [
+            2,
+            10,
+            2
+          ],
+          "position": [
+            82,
+            10.0,
+            80
+          ],
+          "color": "gold",
+          "collide": false,
+          "shape": "Block",
+          "yaw": 45
+        },
+        {
+          "name": "Crystal",
+          "size": [
+            2,
+            7,
+            2
+          ],
+          "position": [
+            84,
+            8.5,
+            80
+          ],
+          "color": "gold",
+          "collide": false,
+          "shape": "Block",
+          "yaw": 45
+        },
+        {
+          "name": "CrystalBase",
+          "size": [
+            7,
+            3,
+            7
+          ],
+          "position": [
+            -85,
+            7.5,
+            22
+          ],
+          "color": "rock",
+          "collide": true,
+          "shape": "Block",
+          "yaw": 0
+        },
+        {
+          "name": "Crystal",
+          "size": [
+            2,
+            5,
+            2
+          ],
+          "position": [
+            -87,
+            11.5,
+            22
+          ],
+          "color": "gold",
+          "collide": false,
+          "shape": "Block",
+          "yaw": 45
+        },
+        {
+          "name": "Crystal",
+          "size": [
+            2,
+            10,
+            2
+          ],
+          "position": [
+            -85,
+            14.0,
+            22
+          ],
+          "color": "gold",
+          "collide": false,
+          "shape": "Block",
+          "yaw": 45
+        },
+        {
+          "name": "Crystal",
+          "size": [
+            2,
+            7,
+            2
+          ],
+          "position": [
+            -83,
+            12.5,
+            22
+          ],
+          "color": "gold",
+          "collide": false,
+          "shape": "Block",
+          "yaw": 45
+        },
+        {
+          "name": "CrystalBase",
+          "size": [
+            7,
+            3,
+            7
+          ],
+          "position": [
+            85,
+            7.5,
+            22
+          ],
+          "color": "rock",
+          "collide": true,
+          "shape": "Block",
+          "yaw": 0
+        },
+        {
+          "name": "Crystal",
+          "size": [
+            2,
+            5,
+            2
+          ],
+          "position": [
+            83,
+            11.5,
+            22
+          ],
+          "color": "gold",
+          "collide": false,
+          "shape": "Block",
+          "yaw": 45
+        },
+        {
+          "name": "Crystal",
+          "size": [
+            2,
+            10,
+            2
+          ],
+          "position": [
+            85,
+            14.0,
+            22
+          ],
+          "color": "gold",
+          "collide": false,
+          "shape": "Block",
+          "yaw": 45
+        },
+        {
+          "name": "Crystal",
+          "size": [
+            2,
+            7,
+            2
+          ],
+          "position": [
+            87,
+            12.5,
+            22
+          ],
+          "color": "gold",
+          "collide": false,
+          "shape": "Block",
+          "yaw": 45
+        },
+        {
+          "name": "CrystalBase",
+          "size": [
+            7,
+            3,
+            7
+          ],
+          "position": [
+            -72,
+            11.5,
+            -48
+          ],
+          "color": "rock",
+          "collide": true,
+          "shape": "Block",
+          "yaw": 0
+        },
+        {
+          "name": "Crystal",
+          "size": [
+            2,
+            5,
+            2
+          ],
+          "position": [
+            -74,
+            15.5,
+            -48
+          ],
+          "color": "gold",
+          "collide": false,
+          "shape": "Block",
+          "yaw": 45
+        },
+        {
+          "name": "Crystal",
+          "size": [
+            2,
+            10,
+            2
+          ],
+          "position": [
+            -72,
+            18.0,
+            -48
+          ],
+          "color": "gold",
+          "collide": false,
+          "shape": "Block",
+          "yaw": 45
+        },
+        {
+          "name": "Crystal",
+          "size": [
+            2,
+            7,
+            2
+          ],
+          "position": [
+            -70,
+            16.5,
+            -48
+          ],
+          "color": "gold",
+          "collide": false,
+          "shape": "Block",
+          "yaw": 45
+        },
+        {
+          "name": "CrystalBase",
+          "size": [
+            7,
+            3,
+            7
+          ],
+          "position": [
+            72,
+            11.5,
+            -48
+          ],
+          "color": "rock",
+          "collide": true,
+          "shape": "Block",
+          "yaw": 0
+        },
+        {
+          "name": "Crystal",
+          "size": [
+            2,
+            5,
+            2
+          ],
+          "position": [
+            70,
+            15.5,
+            -48
+          ],
+          "color": "gold",
+          "collide": false,
+          "shape": "Block",
+          "yaw": 45
+        },
+        {
+          "name": "Crystal",
+          "size": [
+            2,
+            10,
+            2
+          ],
+          "position": [
+            72,
+            18.0,
+            -48
+          ],
+          "color": "gold",
+          "collide": false,
+          "shape": "Block",
+          "yaw": 45
+        },
+        {
+          "name": "Crystal",
+          "size": [
+            2,
+            7,
+            2
+          ],
+          "position": [
+            74,
+            16.5,
+            -48
+          ],
+          "color": "gold",
+          "collide": false,
+          "shape": "Block",
+          "yaw": 45
+        },
+        {
+          "name": "CrystalBase",
+          "size": [
+            7,
+            3,
+            7
+          ],
+          "position": [
+            -60,
+            11.5,
+            -90
+          ],
+          "color": "rock",
+          "collide": true,
+          "shape": "Block",
+          "yaw": 0
+        },
+        {
+          "name": "Crystal",
+          "size": [
+            2,
+            5,
+            2
+          ],
+          "position": [
+            -62,
+            15.5,
+            -90
+          ],
+          "color": "gold",
+          "collide": false,
+          "shape": "Block",
+          "yaw": 45
+        },
+        {
+          "name": "Crystal",
+          "size": [
+            2,
+            10,
+            2
+          ],
+          "position": [
+            -60,
+            18.0,
+            -90
+          ],
+          "color": "gold",
+          "collide": false,
+          "shape": "Block",
+          "yaw": 45
+        },
+        {
+          "name": "Crystal",
+          "size": [
+            2,
+            7,
+            2
+          ],
+          "position": [
+            -58,
+            16.5,
+            -90
+          ],
+          "color": "gold",
+          "collide": false,
+          "shape": "Block",
+          "yaw": 45
+        },
+        {
+          "name": "CrystalBase",
+          "size": [
+            7,
+            3,
+            7
+          ],
+          "position": [
+            60,
+            11.5,
+            -90
+          ],
+          "color": "rock",
+          "collide": true,
+          "shape": "Block",
+          "yaw": 0
+        },
+        {
+          "name": "Crystal",
+          "size": [
+            2,
+            5,
+            2
+          ],
+          "position": [
+            58,
+            15.5,
+            -90
+          ],
+          "color": "gold",
+          "collide": false,
+          "shape": "Block",
+          "yaw": 45
+        },
+        {
+          "name": "Crystal",
+          "size": [
+            2,
+            10,
+            2
+          ],
+          "position": [
+            60,
+            18.0,
+            -90
+          ],
+          "color": "gold",
+          "collide": false,
+          "shape": "Block",
+          "yaw": 45
+        },
+        {
+          "name": "Crystal",
+          "size": [
+            2,
+            7,
+            2
+          ],
+          "position": [
+            62,
+            16.5,
+            -90
+          ],
+          "color": "gold",
+          "collide": false,
+          "shape": "Block",
+          "yaw": 45
+        },
+        {
+          "name": "QuarryWall",
+          "size": [
+            7,
+            15,
+            145
+          ],
+          "position": [
+            -106,
+            13,
+            -26
+          ],
+          "color": "dark",
+          "collide": true,
+          "shape": "Block",
+          "yaw": 0
+        },
+        {
+          "name": "QuarryWall",
+          "size": [
+            7,
+            15,
+            145
+          ],
+          "position": [
+            106,
+            13,
+            -26
+          ],
+          "color": "dark",
+          "collide": true,
+          "shape": "Block",
+          "yaw": 0
+        },
+        {
+          "name": "GantryPost",
+          "size": [
+            4,
+            18,
+            4
+          ],
+          "position": [
+            -44,
+            19,
+            -80
+          ],
+          "color": "wood",
+          "collide": true,
+          "shape": "Block",
+          "yaw": 0
+        },
+        {
+          "name": "GantryBrace",
+          "size": [
+            4,
+            3,
+            20
+          ],
+          "position": [
+            -44,
+            27,
+            -73
+          ],
+          "color": "wood",
+          "collide": false,
+          "shape": "Block",
+          "yaw": 0
+        },
+        {
+          "name": "GantryPost",
+          "size": [
+            4,
+            18,
+            4
+          ],
+          "position": [
+            44,
+            19,
+            -80
+          ],
+          "color": "wood",
+          "collide": true,
+          "shape": "Block",
+          "yaw": 0
+        },
+        {
+          "name": "GantryBrace",
+          "size": [
+            4,
+            3,
+            20
+          ],
+          "position": [
+            44,
+            27,
+            -73
+          ],
+          "color": "wood",
+          "collide": false,
+          "shape": "Block",
+          "yaw": 0
+        },
+        {
+          "name": "GantryCrossbeam",
+          "size": [
+            92,
+            4,
+            4
+          ],
+          "position": [
+            0,
+            29,
+            -80
+          ],
+          "color": "wood",
+          "collide": false,
+          "shape": "Block",
+          "yaw": 0
+        }
+      ],
+      "routes": [
+        {
+          "name": "Main",
+          "points": [
+            [
+              0,
+              2,
+              120
+            ],
+            [
+              0,
+              2,
+              75
+            ],
+            [
+              0,
+              6,
+              50
+            ],
+            [
+              0,
+              6,
+              20
+            ],
+            [
+              0,
+              10,
+              -5
+            ],
+            [
+              0,
+              10,
+              -70
+            ]
+          ]
+        },
+        {
+          "name": "MidLoop",
+          "points": [
+            [
+              0,
+              6,
+              40
+            ],
+            [
+              -52,
+              6,
+              40
+            ],
+            [
+              -52,
+              6,
+              5
+            ],
+            [
+              0,
+              6,
+              30
+            ]
+          ]
+        },
+        {
+          "name": "UpperLoop",
+          "points": [
+            [
+              0,
+              10,
+              -20
+            ],
+            [
+              45,
+              10,
+              -20
+            ],
+            [
+              45,
+              10,
+              -68
+            ],
+            [
+              0,
+              10,
+              -68
+            ]
+          ]
+        }
+      ],
+      "markers": [
+        {
+          "name": "Arrival",
+          "position": [
+            0,
+            2,
+            115
+          ],
+          "role": "Arrival"
+        },
+        {
+          "name": "RaiderCamp",
+          "position": [
+            -52,
+            6,
+            25
+          ],
+          "role": "Melee"
+        },
+        {
+          "name": "StoneGuard",
+          "position": [
+            45,
+            10,
+            -25
+          ],
+          "role": "Guard"
+        },
+        {
+          "name": "ShamanCamp",
+          "position": [
+            -45,
+            10,
+            -50
+          ],
+          "role": "Support"
+        },
+        {
+          "name": "QuarryGuardian",
+          "position": [
+            0,
+            10,
+            -70
+          ],
+          "role": "Boss"
+        }
+      ],
+      "partCount": 45,
+      "encountersEnabled": false
+    },
+    {
+      "id": "Ashen",
+      "title": "Ashen Sanctum",
+      "parts": [
+        {
+          "name": "Island",
+          "size": [
+            220,
+            4,
+            220
+          ],
+          "position": [
+            0,
+            0,
+            0
+          ],
+          "color": "dark",
+          "collide": true,
+          "shape": "Block",
+          "yaw": 0
+        },
+        {
+          "name": "Landing",
+          "size": [
+            28,
+            4,
+            26
+          ],
+          "position": [
+            0,
+            0,
+            123
+          ],
+          "color": "rock",
+          "collide": true,
+          "shape": "Block",
+          "yaw": 0
+        },
+        {
+          "name": "CentralSanctum",
+          "size": [
+            90,
+            4,
+            50
+          ],
+          "position": [
+            0,
+            3,
+            0
+          ],
+          "color": "purple",
+          "collide": true,
+          "shape": "Block",
+          "yaw": 0
+        },
+        {
+          "name": "SanctumAscent",
+          "size": [
+            20,
+            3,
+            20
+          ],
+          "position": [
+            0,
+            3.5,
+            35.0
+          ],
+          "color": "path",
+          "collide": true,
+          "shape": "Wedge",
+          "yaw": 180
+        },
+        {
+          "name": "BossSanctum",
+          "size": [
+            90,
+            4,
+            55
+          ],
+          "position": [
+            0,
+            6,
+            -72.5
+          ],
+          "color": "rock",
+          "collide": true,
+          "shape": "Block",
+          "yaw": 0
+        },
+        {
+          "name": "WardenAscent",
+          "size": [
+            20,
+            3,
+            20
+          ],
+          "position": [
+            0,
+            6.5,
+            -35.0
+          ],
+          "color": "path",
+          "collide": true,
+          "shape": "Wedge",
+          "yaw": 180
+        },
+        {
+          "name": "WardenRampFoundation",
+          "size": [
+            20,
+            3,
+            20
+          ],
+          "position": [
+            0,
+            3.5,
+            -35
+          ],
+          "color": "rock",
+          "collide": true,
+          "shape": "Block",
+          "yaw": 0
+        },
+        {
+          "name": "SideCourt",
+          "size": [
+            45,
+            4,
+            70
+          ],
+          "position": [
+            -72,
+            3,
+            0
+          ],
+          "color": "rock",
+          "collide": true,
+          "shape": "Block",
+          "yaw": 0
+        },
+        {
+          "name": "Bridge",
+          "size": [
+            4.5,
+            4,
+            16
+          ],
+          "position": [
+            -47.25,
+            3,
+            0
+          ],
+          "color": "path",
+          "collide": true,
+          "shape": "Block",
+          "yaw": 0
+        },
+        {
+          "name": "CrystalBase",
+          "size": [
+            7,
+            3,
+            7
+          ],
+          "position": [
+            -72,
+            6.5,
+            -24
+          ],
+          "color": "rock",
+          "collide": true,
+          "shape": "Block",
+          "yaw": 0
+        },
+        {
+          "name": "Crystal",
+          "size": [
+            2,
+            5,
+            2
+          ],
+          "position": [
+            -74,
+            10.5,
+            -24
+          ],
+          "color": "rune",
+          "collide": false,
+          "shape": "Block",
+          "yaw": 45
+        },
+        {
+          "name": "Crystal",
+          "size": [
+            2,
+            10,
+            2
+          ],
+          "position": [
+            -72,
+            13.0,
+            -24
+          ],
+          "color": "rune",
+          "collide": false,
+          "shape": "Block",
+          "yaw": 45
+        },
+        {
+          "name": "Crystal",
+          "size": [
+            2,
+            7,
+            2
+          ],
+          "position": [
+            -70,
+            11.5,
+            -24
+          ],
+          "color": "rune",
+          "collide": false,
+          "shape": "Block",
+          "yaw": 45
+        },
+        {
+          "name": "CrystalBase",
+          "size": [
+            7,
+            3,
+            7
+          ],
+          "position": [
+            -72,
+            6.5,
+            24
+          ],
+          "color": "rock",
+          "collide": true,
+          "shape": "Block",
+          "yaw": 0
+        },
+        {
+          "name": "Crystal",
+          "size": [
+            2,
+            5,
+            2
+          ],
+          "position": [
+            -74,
+            10.5,
+            24
+          ],
+          "color": "rune",
+          "collide": false,
+          "shape": "Block",
+          "yaw": 45
+        },
+        {
+          "name": "Crystal",
+          "size": [
+            2,
+            10,
+            2
+          ],
+          "position": [
+            -72,
+            13.0,
+            24
+          ],
+          "color": "rune",
+          "collide": false,
+          "shape": "Block",
+          "yaw": 45
+        },
+        {
+          "name": "Crystal",
+          "size": [
+            2,
+            7,
+            2
+          ],
+          "position": [
+            -70,
+            11.5,
+            24
+          ],
+          "color": "rune",
+          "collide": false,
+          "shape": "Block",
+          "yaw": 45
+        },
+        {
+          "name": "SideCourt",
+          "size": [
+            45,
+            4,
+            70
+          ],
+          "position": [
+            72,
+            3,
+            0
+          ],
+          "color": "rock",
+          "collide": true,
+          "shape": "Block",
+          "yaw": 0
+        },
+        {
+          "name": "Bridge",
+          "size": [
+            4.5,
+            4,
+            16
+          ],
+          "position": [
+            47.25,
+            3,
+            0
+          ],
+          "color": "path",
+          "collide": true,
+          "shape": "Block",
+          "yaw": 0
+        },
+        {
+          "name": "CrystalBase",
+          "size": [
+            7,
+            3,
+            7
+          ],
+          "position": [
+            72,
+            6.5,
+            -24
+          ],
+          "color": "rock",
+          "collide": true,
+          "shape": "Block",
+          "yaw": 0
+        },
+        {
+          "name": "Crystal",
+          "size": [
+            2,
+            5,
+            2
+          ],
+          "position": [
+            70,
+            10.5,
+            -24
+          ],
+          "color": "rune",
+          "collide": false,
+          "shape": "Block",
+          "yaw": 45
+        },
+        {
+          "name": "Crystal",
+          "size": [
+            2,
+            10,
+            2
+          ],
+          "position": [
+            72,
+            13.0,
+            -24
+          ],
+          "color": "rune",
+          "collide": false,
+          "shape": "Block",
+          "yaw": 45
+        },
+        {
+          "name": "Crystal",
+          "size": [
+            2,
+            7,
+            2
+          ],
+          "position": [
+            74,
+            11.5,
+            -24
+          ],
+          "color": "rune",
+          "collide": false,
+          "shape": "Block",
+          "yaw": 45
+        },
+        {
+          "name": "CrystalBase",
+          "size": [
+            7,
+            3,
+            7
+          ],
+          "position": [
+            72,
+            6.5,
+            24
+          ],
+          "color": "rock",
+          "collide": true,
+          "shape": "Block",
+          "yaw": 0
+        },
+        {
+          "name": "Crystal",
+          "size": [
+            2,
+            5,
+            2
+          ],
+          "position": [
+            70,
+            10.5,
+            24
+          ],
+          "color": "rune",
+          "collide": false,
+          "shape": "Block",
+          "yaw": 45
+        },
+        {
+          "name": "Crystal",
+          "size": [
+            2,
+            10,
+            2
+          ],
+          "position": [
+            72,
+            13.0,
+            24
+          ],
+          "color": "rune",
+          "collide": false,
+          "shape": "Block",
+          "yaw": 45
+        },
+        {
+          "name": "Crystal",
+          "size": [
+            2,
+            7,
+            2
+          ],
+          "position": [
+            74,
+            11.5,
+            24
+          ],
+          "color": "rune",
+          "collide": false,
+          "shape": "Block",
+          "yaw": 45
+        },
+        {
+          "name": "SanctumColumn",
+          "size": [
+            5,
+            19,
+            5
+          ],
+          "position": [
+            -38,
+            17.5,
+            -52
+          ],
+          "color": "rock",
+          "collide": true,
+          "shape": "Block",
+          "yaw": 0
+        },
+        {
+          "name": "ColumnCrown",
+          "size": [
+            8,
+            2,
+            8
+          ],
+          "position": [
+            -38,
+            28,
+            -52
+          ],
+          "color": "gold",
+          "collide": false,
+          "shape": "Block",
+          "yaw": 0
+        },
+        {
+          "name": "SanctumColumn",
+          "size": [
+            5,
+            19,
+            5
+          ],
+          "position": [
+            -38,
+            17.5,
+            -90
+          ],
+          "color": "rock",
+          "collide": true,
+          "shape": "Block",
+          "yaw": 0
+        },
+        {
+          "name": "ColumnCrown",
+          "size": [
+            8,
+            2,
+            8
+          ],
+          "position": [
+            -38,
+            28,
+            -90
+          ],
+          "color": "gold",
+          "collide": false,
+          "shape": "Block",
+          "yaw": 0
+        },
+        {
+          "name": "SanctumColumn",
+          "size": [
+            5,
+            19,
+            5
+          ],
+          "position": [
+            38,
+            17.5,
+            -52
+          ],
+          "color": "rock",
+          "collide": true,
+          "shape": "Block",
+          "yaw": 0
+        },
+        {
+          "name": "ColumnCrown",
+          "size": [
+            8,
+            2,
+            8
+          ],
+          "position": [
+            38,
+            28,
+            -52
+          ],
+          "color": "gold",
+          "collide": false,
+          "shape": "Block",
+          "yaw": 0
+        },
+        {
+          "name": "SanctumColumn",
+          "size": [
+            5,
+            19,
+            5
+          ],
+          "position": [
+            38,
+            17.5,
+            -90
+          ],
+          "color": "rock",
+          "collide": true,
+          "shape": "Block",
+          "yaw": 0
+        },
+        {
+          "name": "ColumnCrown",
+          "size": [
+            8,
+            2,
+            8
+          ],
+          "position": [
+            38,
+            28,
+            -90
+          ],
+          "color": "gold",
+          "collide": false,
+          "shape": "Block",
+          "yaw": 0
+        },
+        {
+          "name": "BrokenSpire",
+          "size": [
+            8,
+            24,
+            8
+          ],
+          "position": [
+            -91,
+            14,
+            -80
+          ],
+          "color": "purple",
+          "collide": true,
+          "shape": "Block",
+          "yaw": 0
+        },
+        {
+          "name": "BrokenSpire",
+          "size": [
+            8,
+            24,
+            8
+          ],
+          "position": [
+            -91,
+            14,
+            75
+          ],
+          "color": "purple",
+          "collide": true,
+          "shape": "Block",
+          "yaw": 0
+        },
+        {
+          "name": "BrokenSpire",
+          "size": [
+            8,
+            24,
+            8
+          ],
+          "position": [
+            91,
+            14,
+            -80
+          ],
+          "color": "purple",
+          "collide": true,
+          "shape": "Block",
+          "yaw": 0
+        },
+        {
+          "name": "BrokenSpire",
+          "size": [
+            8,
+            24,
+            8
+          ],
+          "position": [
+            91,
+            14,
+            75
+          ],
+          "color": "purple",
+          "collide": true,
+          "shape": "Block",
+          "yaw": 0
+        },
+        {
+          "name": "WardenArch",
+          "size": [
+            82,
+            5,
+            6
+          ],
+          "position": [
+            0,
+            29,
+            -90
+          ],
+          "color": "rock",
+          "collide": false,
+          "shape": "Block",
+          "yaw": 0
+        }
+      ],
+      "routes": [
+        {
+          "name": "Main",
+          "points": [
+            [
+              0,
+              2,
+              120
+            ],
+            [
+              0,
+              2,
+              45
+            ],
+            [
+              0,
+              5,
+              25
+            ],
+            [
+              0,
+              5,
+              -25
+            ],
+            [
+              0,
+              8,
+              -45
+            ],
+            [
+              0,
+              8,
+              -70
+            ]
+          ]
+        },
+        {
+          "name": "WestCourt",
+          "points": [
+            [
+              0,
+              5,
+              0
+            ],
+            [
+              -72,
+              5,
+              0
+            ],
+            [
+              -72,
+              5,
+              10
+            ]
+          ]
+        },
+        {
+          "name": "EastCourt",
+          "points": [
+            [
+              0,
+              5,
+              0
+            ],
+            [
+              72,
+              5,
+              0
+            ],
+            [
+              72,
+              5,
+              10
+            ]
+          ]
+        }
+      ],
+      "markers": [
+        {
+          "name": "Arrival",
+          "position": [
+            0,
+            2,
+            115
+          ],
+          "role": "Arrival"
+        },
+        {
+          "name": "SentinelCourt",
+          "position": [
+            -72,
+            5,
+            0
+          ],
+          "role": "Melee"
+        },
+        {
+          "name": "CasterCourt",
+          "position": [
+            72,
+            5,
+            0
+          ],
+          "role": "Spell"
+        },
+        {
+          "name": "HoundApproach",
+          "position": [
+            0,
+            2,
+            65
+          ],
+          "role": "Charge"
+        },
+        {
+          "name": "ArcaneWarden",
+          "position": [
+            0,
+            8,
+            -70
+          ],
+          "role": "Boss"
+        }
+      ],
+      "partCount": 40,
+      "encountersEnabled": false
+    }
+  ]
+}

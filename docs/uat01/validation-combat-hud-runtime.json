@@ -1,0 +1,14 @@
+{
+  "collapsedRoster": true,
+  "physicalDeviceTested": false,
+  "noProfileWrites": true,
+  "minimumSafeArea": [
+    320,
+    280
+  ],
+  "textBoundsPassed": true,
+  "touchTargets44": true,
+  "destroyCleanup": true,
+  "viewportLanguageCases": 10,
+  "pointerCycleAcceptance": "PENDING: tool reported clicks but neither fixture Activated counter nor selected actor changed; do not treat as a pass."
+}

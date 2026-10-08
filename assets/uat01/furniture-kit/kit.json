@@ -1,0 +1,2158 @@
+{
+  "schema": 1,
+  "units": "stud",
+  "palette": {
+    "wood": [
+      121,
+      80,
+      51
+    ],
+    "dark": [
+      64,
+      46,
+      38
+    ],
+    "ivory": [
+      235,
+      225,
+      202
+    ],
+    "gold": [
+      212,
+      170,
+      82
+    ],
+    "navy": [
+      46,
+      68,
+      100
+    ],
+    "red": [
+      145,
+      61,
+      65
+    ],
+    "green": [
+      66,
+      133,
+      94
+    ],
+    "stone": [
+      118,
+      133,
+      144
+    ],
+    "cyan": [
+      100,
+      208,
+      213
+    ],
+    "soil": [
+      70,
+      53,
+      39
+    ]
+  },
+  "assets": [
+    {
+      "id": "hearth_table",
+      "name": "Hearth Table",
+      "nameTH": "โต๊ะไม้เตาผิง",
+      "footprint": [
+        8,
+        6
+      ],
+      "parts": [
+        {
+          "name": "Leg",
+          "size": [
+            0.4,
+            2.8,
+            0.4
+          ],
+          "position": [
+            -3.15,
+            1.4,
+            -2.15
+          ],
+          "color": "dark",
+          "rotation": [
+            0,
+            0,
+            0
+          ],
+          "collide": false
+        },
+        {
+          "name": "Leg",
+          "size": [
+            0.4,
+            2.8,
+            0.4
+          ],
+          "position": [
+            -3.15,
+            1.4,
+            2.15
+          ],
+          "color": "dark",
+          "rotation": [
+            0,
+            0,
+            0
+          ],
+          "collide": false
+        },
+        {
+          "name": "Leg",
+          "size": [
+            0.4,
+            2.8,
+            0.4
+          ],
+          "position": [
+            3.15,
+            1.4,
+            -2.15
+          ],
+          "color": "dark",
+          "rotation": [
+            0,
+            0,
+            0
+          ],
+          "collide": false
+        },
+        {
+          "name": "Leg",
+          "size": [
+            0.4,
+            2.8,
+            0.4
+          ],
+          "position": [
+            3.15,
+            1.4,
+            2.15
+          ],
+          "color": "dark",
+          "rotation": [
+            0,
+            0,
+            0
+          ],
+          "collide": false
+        },
+        {
+          "name": "TableTop",
+          "size": [
+            7.5,
+            0.4,
+            5.5
+          ],
+          "position": [
+            0,
+            3,
+            0
+          ],
+          "color": "wood",
+          "rotation": [
+            0,
+            0,
+            0
+          ],
+          "collide": false
+        },
+        {
+          "name": "Runner",
+          "size": [
+            2,
+            0.06,
+            5
+          ],
+          "position": [
+            0,
+            3.23,
+            0
+          ],
+          "color": "navy",
+          "rotation": [
+            0,
+            0,
+            0
+          ],
+          "collide": false
+        },
+        {
+          "name": "BrassInlay",
+          "size": [
+            0.12,
+            0.07,
+            4.8
+          ],
+          "position": [
+            -2.6,
+            3.24,
+            0
+          ],
+          "color": "gold",
+          "rotation": [
+            0,
+            0,
+            0
+          ],
+          "collide": false
+        },
+        {
+          "name": "BrassInlay",
+          "size": [
+            0.12,
+            0.07,
+            4.8
+          ],
+          "position": [
+            2.6,
+            3.24,
+            0
+          ],
+          "color": "gold",
+          "rotation": [
+            0,
+            0,
+            0
+          ],
+          "collide": false
+        }
+      ],
+      "runtimeBound": true
+    },
+    {
+      "id": "hearth_chair",
+      "name": "Hearth Chair",
+      "nameTH": "เก้าอี้ไม้เตาผิง",
+      "footprint": [
+        4,
+        4
+      ],
+      "parts": [
+        {
+          "name": "Leg",
+          "size": [
+            0.4,
+            1.8,
+            0.4
+          ],
+          "position": [
+            -1.0499999999999998,
+            0.9,
+            -1.0499999999999998
+          ],
+          "color": "dark",
+          "rotation": [
+            0,
+            0,
+            0
+          ],
+          "collide": false
+        },
+        {
+          "name": "Leg",
+          "size": [
+            0.4,
+            1.8,
+            0.4
+          ],
+          "position": [
+            -1.0499999999999998,
+            0.9,
+            1.0499999999999998
+          ],
+          "color": "dark",
+          "rotation": [
+            0,
+            0,
+            0
+          ],
+          "collide": false
+        },
+        {
+          "name": "Leg",
+          "size": [
+            0.4,
+            1.8,
+            0.4
+          ],
+          "position": [
+            1.0499999999999998,
+            0.9,
+            -1.0499999999999998
+          ],
+          "color": "dark",
+          "rotation": [
+            0,
+            0,
+            0
+          ],
+          "collide": false
+        },
+        {
+          "name": "Leg",
+          "size": [
+            0.4,
+            1.8,
+            0.4
+          ],
+          "position": [
+            1.0499999999999998,
+            0.9,
+            1.0499999999999998
+          ],
+          "color": "dark",
+          "rotation": [
+            0,
+            0,
+            0
+          ],
+          "collide": false
+        },
+        {
+          "name": "Seat",
+          "size": [
+            3,
+            0.35,
+            3
+          ],
+          "position": [
+            0,
+            1.95,
+            0
+          ],
+          "color": "wood",
+          "rotation": [
+            0,
+            0,
+            0
+          ],
+          "collide": false
+        },
+        {
+          "name": "BackPost",
+          "size": [
+            0.35,
+            3.8,
+            0.35
+          ],
+          "position": [
+            -1.2,
+            1.9,
+            -1.2
+          ],
+          "color": "dark",
+          "rotation": [
+            0,
+            0,
+            0
+          ],
+          "collide": false
+        },
+        {
+          "name": "BackPost",
+          "size": [
+            0.35,
+            3.8,
+            0.35
+          ],
+          "position": [
+            1.2,
+            1.9,
+            -1.2
+          ],
+          "color": "dark",
+          "rotation": [
+            0,
+            0,
+            0
+          ],
+          "collide": false
+        },
+        {
+          "name": "BackRest",
+          "size": [
+            2.5,
+            1.2,
+            0.35
+          ],
+          "position": [
+            0,
+            3.2,
+            -1.2
+          ],
+          "color": "navy",
+          "rotation": [
+            0,
+            0,
+            0
+          ],
+          "collide": false
+        },
+        {
+          "name": "Crest",
+          "size": [
+            0.55,
+            0.55,
+            0.15
+          ],
+          "position": [
+            0,
+            3.2,
+            -0.96
+          ],
+          "color": "gold",
+          "rotation": [
+            0,
+            0,
+            45
+          ],
+          "collide": false
+        }
+      ],
+      "runtimeBound": true
+    },
+    {
+      "id": "welcome_bench",
+      "name": "Welcome Bench",
+      "nameTH": "ม้านั่งต้อนรับ",
+      "footprint": [
+        8,
+        4
+      ],
+      "parts": [
+        {
+          "name": "Leg",
+          "size": [
+            0.4,
+            1.8,
+            0.4
+          ],
+          "position": [
+            -3.15,
+            0.9,
+            -1.0499999999999998
+          ],
+          "color": "dark",
+          "rotation": [
+            0,
+            0,
+            0
+          ],
+          "collide": false
+        },
+        {
+          "name": "Leg",
+          "size": [
+            0.4,
+            1.8,
+            0.4
+          ],
+          "position": [
+            -3.15,
+            0.9,
+            1.0499999999999998
+          ],
+          "color": "dark",
+          "rotation": [
+            0,
+            0,
+            0
+          ],
+          "collide": false
+        },
+        {
+          "name": "Leg",
+          "size": [
+            0.4,
+            1.8,
+            0.4
+          ],
+          "position": [
+            3.15,
+            0.9,
+            -1.0499999999999998
+          ],
+          "color": "dark",
+          "rotation": [
+            0,
+            0,
+            0
+          ],
+          "collide": false
+        },
+        {
+          "name": "Leg",
+          "size": [
+            0.4,
+            1.8,
+            0.4
+          ],
+          "position": [
+            3.15,
+            0.9,
+            1.0499999999999998
+          ],
+          "color": "dark",
+          "rotation": [
+            0,
+            0,
+            0
+          ],
+          "collide": false
+        },
+        {
+          "name": "Seat",
+          "size": [
+            7.5,
+            0.4,
+            3.2
+          ],
+          "position": [
+            0,
+            2,
+            0
+          ],
+          "color": "wood",
+          "rotation": [
+            0,
+            0,
+            0
+          ],
+          "collide": false
+        },
+        {
+          "name": "BackPost",
+          "size": [
+            0.4,
+            3.8,
+            0.4
+          ],
+          "position": [
+            -3.1,
+            1.9,
+            -1.2
+          ],
+          "color": "dark",
+          "rotation": [
+            0,
+            0,
+            0
+          ],
+          "collide": false
+        },
+        {
+          "name": "BackPost",
+          "size": [
+            0.4,
+            3.8,
+            0.4
+          ],
+          "position": [
+            3.1,
+            1.9,
+            -1.2
+          ],
+          "color": "dark",
+          "rotation": [
+            0,
+            0,
+            0
+          ],
+          "collide": false
+        },
+        {
+          "name": "BackRest",
+          "size": [
+            7,
+            1,
+            0.3
+          ],
+          "position": [
+            0,
+            3.2,
+            -1.2
+          ],
+          "color": "green",
+          "rotation": [
+            0,
+            0,
+            0
+          ],
+          "collide": false
+        },
+        {
+          "name": "WelcomeDiamond",
+          "size": [
+            0.5,
+            0.5,
+            0.15
+          ],
+          "position": [
+            -2,
+            3.2,
+            -0.95
+          ],
+          "color": "gold",
+          "rotation": [
+            0,
+            0,
+            45
+          ],
+          "collide": false
+        },
+        {
+          "name": "WelcomeDiamond",
+          "size": [
+            0.5,
+            0.5,
+            0.15
+          ],
+          "position": [
+            0,
+            3.2,
+            -0.95
+          ],
+          "color": "gold",
+          "rotation": [
+            0,
+            0,
+            45
+          ],
+          "collide": false
+        },
+        {
+          "name": "WelcomeDiamond",
+          "size": [
+            0.5,
+            0.5,
+            0.15
+          ],
+          "position": [
+            2,
+            3.2,
+            -0.95
+          ],
+          "color": "gold",
+          "rotation": [
+            0,
+            0,
+            45
+          ],
+          "collide": false
+        }
+      ],
+      "runtimeBound": true
+    },
+    {
+      "id": "guild_bookcase",
+      "name": "Guild Bookcase",
+      "nameTH": "ตู้หนังสือกิลด์",
+      "footprint": [
+        6,
+        4
+      ],
+      "parts": [
+        {
+          "name": "Side",
+          "size": [
+            0.4,
+            7,
+            2.6
+          ],
+          "position": [
+            -2.6,
+            3.5,
+            0
+          ],
+          "color": "dark",
+          "rotation": [
+            0,
+            0,
+            0
+          ],
+          "collide": false
+        },
+        {
+          "name": "Side",
+          "size": [
+            0.4,
+            7,
+            2.6
+          ],
+          "position": [
+            2.6,
+            3.5,
+            0
+          ],
+          "color": "dark",
+          "rotation": [
+            0,
+            0,
+            0
+          ],
+          "collide": false
+        },
+        {
+          "name": "Shelf",
+          "size": [
+            5.6,
+            0.35,
+            2.8
+          ],
+          "position": [
+            0,
+            0.2,
+            0
+          ],
+          "color": "wood",
+          "rotation": [
+            0,
+            0,
+            0
+          ],
+          "collide": false
+        },
+        {
+          "name": "Shelf",
+          "size": [
+            5.6,
+            0.35,
+            2.8
+          ],
+          "position": [
+            0,
+            2.4,
+            0
+          ],
+          "color": "wood",
+          "rotation": [
+            0,
+            0,
+            0
+          ],
+          "collide": false
+        },
+        {
+          "name": "Shelf",
+          "size": [
+            5.6,
+            0.35,
+            2.8
+          ],
+          "position": [
+            0,
+            4.6,
+            0
+          ],
+          "color": "wood",
+          "rotation": [
+            0,
+            0,
+            0
+          ],
+          "collide": false
+        },
+        {
+          "name": "Shelf",
+          "size": [
+            5.6,
+            0.35,
+            2.8
+          ],
+          "position": [
+            0,
+            6.8,
+            0
+          ],
+          "color": "wood",
+          "rotation": [
+            0,
+            0,
+            0
+          ],
+          "collide": false
+        },
+        {
+          "name": "Back",
+          "size": [
+            5.6,
+            7,
+            0.2
+          ],
+          "position": [
+            0,
+            3.5,
+            -1.3
+          ],
+          "color": "dark",
+          "rotation": [
+            0,
+            0,
+            0
+          ],
+          "collide": false
+        },
+        {
+          "name": "Book",
+          "size": [
+            0.65,
+            1.65,
+            1.6
+          ],
+          "position": [
+            -1.8,
+            1.3,
+            0
+          ],
+          "color": "navy",
+          "rotation": [
+            0,
+            0,
+            0
+          ],
+          "collide": false
+        },
+        {
+          "name": "Book",
+          "size": [
+            0.65,
+            1.65,
+            1.6
+          ],
+          "position": [
+            -0.6500000000000001,
+            1.3,
+            0
+          ],
+          "color": "red",
+          "rotation": [
+            0,
+            0,
+            0
+          ],
+          "collide": false
+        },
+        {
+          "name": "Book",
+          "size": [
+            0.65,
+            1.65,
+            1.6
+          ],
+          "position": [
+            0.4999999999999998,
+            1.3,
+            0
+          ],
+          "color": "green",
+          "rotation": [
+            0,
+            0,
+            0
+          ],
+          "collide": false
+        },
+        {
+          "name": "Book",
+          "size": [
+            0.65,
+            1.65,
+            1.6
+          ],
+          "position": [
+            1.6499999999999997,
+            1.3,
+            0
+          ],
+          "color": "ivory",
+          "rotation": [
+            0,
+            0,
+            0
+          ],
+          "collide": false
+        },
+        {
+          "name": "Book",
+          "size": [
+            0.65,
+            1.65,
+            1.6
+          ],
+          "position": [
+            -1.8,
+            3.5,
+            0
+          ],
+          "color": "navy",
+          "rotation": [
+            0,
+            0,
+            0
+          ],
+          "collide": false
+        },
+        {
+          "name": "Book",
+          "size": [
+            0.65,
+            1.65,
+            1.6
+          ],
+          "position": [
+            -0.6500000000000001,
+            3.5,
+            0
+          ],
+          "color": "red",
+          "rotation": [
+            0,
+            0,
+            0
+          ],
+          "collide": false
+        },
+        {
+          "name": "Book",
+          "size": [
+            0.65,
+            1.65,
+            1.6
+          ],
+          "position": [
+            0.4999999999999998,
+            3.5,
+            0
+          ],
+          "color": "green",
+          "rotation": [
+            0,
+            0,
+            0
+          ],
+          "collide": false
+        },
+        {
+          "name": "Book",
+          "size": [
+            0.65,
+            1.65,
+            1.6
+          ],
+          "position": [
+            1.6499999999999997,
+            3.5,
+            0
+          ],
+          "color": "ivory",
+          "rotation": [
+            0,
+            0,
+            0
+          ],
+          "collide": false
+        },
+        {
+          "name": "Book",
+          "size": [
+            0.65,
+            1.65,
+            1.6
+          ],
+          "position": [
+            -1.8,
+            5.7,
+            0
+          ],
+          "color": "navy",
+          "rotation": [
+            0,
+            0,
+            0
+          ],
+          "collide": false
+        },
+        {
+          "name": "Book",
+          "size": [
+            0.65,
+            1.65,
+            1.6
+          ],
+          "position": [
+            -0.6500000000000001,
+            5.7,
+            0
+          ],
+          "color": "red",
+          "rotation": [
+            0,
+            0,
+            0
+          ],
+          "collide": false
+        },
+        {
+          "name": "Book",
+          "size": [
+            0.65,
+            1.65,
+            1.6
+          ],
+          "position": [
+            0.4999999999999998,
+            5.7,
+            0
+          ],
+          "color": "green",
+          "rotation": [
+            0,
+            0,
+            0
+          ],
+          "collide": false
+        },
+        {
+          "name": "Book",
+          "size": [
+            0.65,
+            1.65,
+            1.6
+          ],
+          "position": [
+            1.6499999999999997,
+            5.7,
+            0
+          ],
+          "color": "ivory",
+          "rotation": [
+            0,
+            0,
+            0
+          ],
+          "collide": false
+        }
+      ],
+      "runtimeBound": true
+    },
+    {
+      "id": "woven_rug",
+      "name": "Compass Rug",
+      "nameTH": "พรมเข็มทิศ",
+      "footprint": [
+        8,
+        8
+      ],
+      "parts": [
+        {
+          "name": "Rug",
+          "size": [
+            7.6,
+            0.08,
+            7.6
+          ],
+          "position": [
+            0,
+            0.04,
+            0
+          ],
+          "color": "navy",
+          "rotation": [
+            0,
+            0,
+            0
+          ],
+          "collide": false
+        },
+        {
+          "name": "Edge",
+          "size": [
+            0.15,
+            0.03,
+            7.1
+          ],
+          "position": [
+            -3.5,
+            0.095,
+            0
+          ],
+          "color": "gold",
+          "rotation": [
+            0,
+            0,
+            0
+          ],
+          "collide": false
+        },
+        {
+          "name": "Edge",
+          "size": [
+            0.15,
+            0.03,
+            7.1
+          ],
+          "position": [
+            3.5,
+            0.095,
+            0
+          ],
+          "color": "gold",
+          "rotation": [
+            0,
+            0,
+            0
+          ],
+          "collide": false
+        },
+        {
+          "name": "Edge",
+          "size": [
+            7.1,
+            0.03,
+            0.15
+          ],
+          "position": [
+            0,
+            0.095,
+            -3.5
+          ],
+          "color": "gold",
+          "rotation": [
+            0,
+            0,
+            0
+          ],
+          "collide": false
+        },
+        {
+          "name": "Edge",
+          "size": [
+            7.1,
+            0.03,
+            0.15
+          ],
+          "position": [
+            0,
+            0.095,
+            3.5
+          ],
+          "color": "gold",
+          "rotation": [
+            0,
+            0,
+            0
+          ],
+          "collide": false
+        },
+        {
+          "name": "North",
+          "size": [
+            0.3,
+            0.04,
+            3.5
+          ],
+          "position": [
+            0,
+            0.11,
+            0
+          ],
+          "color": "ivory",
+          "rotation": [
+            0,
+            0,
+            0
+          ],
+          "collide": false
+        },
+        {
+          "name": "East",
+          "size": [
+            3.5,
+            0.04,
+            0.3
+          ],
+          "position": [
+            0,
+            0.11,
+            0
+          ],
+          "color": "gold",
+          "rotation": [
+            0,
+            0,
+            0
+          ],
+          "collide": false
+        }
+      ],
+      "runtimeBound": true
+    },
+    {
+      "id": "guild_banner",
+      "name": "Standing Guild Banner",
+      "nameTH": "ธงกิลด์ตั้งพื้น",
+      "footprint": [
+        4,
+        4
+      ],
+      "parts": [
+        {
+          "name": "Foot",
+          "size": [
+            3,
+            0.3,
+            3
+          ],
+          "position": [
+            0,
+            0.15,
+            0
+          ],
+          "color": "stone",
+          "rotation": [
+            0,
+            0,
+            0
+          ],
+          "collide": false
+        },
+        {
+          "name": "Pole",
+          "size": [
+            0.3,
+            7,
+            0.3
+          ],
+          "position": [
+            0,
+            3.5,
+            0
+          ],
+          "color": "dark",
+          "rotation": [
+            0,
+            0,
+            0
+          ],
+          "collide": false
+        },
+        {
+          "name": "Crossbar",
+          "size": [
+            3.6,
+            0.25,
+            0.3
+          ],
+          "position": [
+            0,
+            6.5,
+            0
+          ],
+          "color": "gold",
+          "rotation": [
+            0,
+            0,
+            0
+          ],
+          "collide": false
+        },
+        {
+          "name": "Cloth",
+          "size": [
+            3.2,
+            4,
+            0.12
+          ],
+          "position": [
+            0,
+            4.5,
+            0.1
+          ],
+          "color": "navy",
+          "rotation": [
+            0,
+            0,
+            0
+          ],
+          "collide": false
+        },
+        {
+          "name": "Crest",
+          "size": [
+            1,
+            1,
+            0.15
+          ],
+          "position": [
+            0,
+            4.8,
+            0.2
+          ],
+          "color": "gold",
+          "rotation": [
+            0,
+            0,
+            45
+          ],
+          "collide": false
+        }
+      ],
+      "runtimeBound": true
+    },
+    {
+      "id": "garden_planter",
+      "name": "Garden Planter",
+      "nameTH": "กระบะสวน",
+      "footprint": [
+        6,
+        4
+      ],
+      "parts": [
+        {
+          "name": "Base",
+          "size": [
+            5.4,
+            0.3,
+            3.4
+          ],
+          "position": [
+            0,
+            0.15,
+            0
+          ],
+          "color": "wood",
+          "rotation": [
+            0,
+            0,
+            0
+          ],
+          "collide": false
+        },
+        {
+          "name": "Soil",
+          "size": [
+            4.8,
+            0.3,
+            2.8
+          ],
+          "position": [
+            0,
+            1.1,
+            0
+          ],
+          "color": "soil",
+          "rotation": [
+            0,
+            0,
+            0
+          ],
+          "collide": false
+        },
+        {
+          "name": "End",
+          "size": [
+            0.4,
+            1.5,
+            3.4
+          ],
+          "position": [
+            -2.5,
+            0.75,
+            0
+          ],
+          "color": "wood",
+          "rotation": [
+            0,
+            0,
+            0
+          ],
+          "collide": false
+        },
+        {
+          "name": "End",
+          "size": [
+            0.4,
+            1.5,
+            3.4
+          ],
+          "position": [
+            2.5,
+            0.75,
+            0
+          ],
+          "color": "wood",
+          "rotation": [
+            0,
+            0,
+            0
+          ],
+          "collide": false
+        },
+        {
+          "name": "Side",
+          "size": [
+            5.4,
+            1.5,
+            0.4
+          ],
+          "position": [
+            0,
+            0.75,
+            -1.5
+          ],
+          "color": "wood",
+          "rotation": [
+            0,
+            0,
+            0
+          ],
+          "collide": false
+        },
+        {
+          "name": "Side",
+          "size": [
+            5.4,
+            1.5,
+            0.4
+          ],
+          "position": [
+            0,
+            0.75,
+            1.5
+          ],
+          "color": "wood",
+          "rotation": [
+            0,
+            0,
+            0
+          ],
+          "collide": false
+        },
+        {
+          "name": "Stem",
+          "size": [
+            0.15,
+            1.8,
+            0.15
+          ],
+          "position": [
+            -1.5,
+            1.8,
+            0
+          ],
+          "color": "green",
+          "rotation": [
+            0,
+            0,
+            0
+          ],
+          "collide": false
+        },
+        {
+          "name": "Leaf",
+          "size": [
+            0.3,
+            1,
+            0.7
+          ],
+          "position": [
+            -1.85,
+            2.1,
+            0
+          ],
+          "color": "green",
+          "rotation": [
+            0,
+            0,
+            -45
+          ],
+          "collide": false
+        },
+        {
+          "name": "Leaf",
+          "size": [
+            0.3,
+            1,
+            0.7
+          ],
+          "position": [
+            -1.15,
+            2.1,
+            0
+          ],
+          "color": "green",
+          "rotation": [
+            0,
+            0,
+            45
+          ],
+          "collide": false
+        },
+        {
+          "name": "Flower",
+          "size": [
+            0.55,
+            0.4,
+            0.55
+          ],
+          "position": [
+            -1.5,
+            2.85,
+            0
+          ],
+          "color": "gold",
+          "rotation": [
+            0,
+            0,
+            0
+          ],
+          "collide": false
+        },
+        {
+          "name": "Stem",
+          "size": [
+            0.15,
+            1.8,
+            0.15
+          ],
+          "position": [
+            0,
+            1.8,
+            0
+          ],
+          "color": "green",
+          "rotation": [
+            0,
+            0,
+            0
+          ],
+          "collide": false
+        },
+        {
+          "name": "Leaf",
+          "size": [
+            0.3,
+            1,
+            0.7
+          ],
+          "position": [
+            -0.35,
+            2.1,
+            0
+          ],
+          "color": "green",
+          "rotation": [
+            0,
+            0,
+            -45
+          ],
+          "collide": false
+        },
+        {
+          "name": "Leaf",
+          "size": [
+            0.3,
+            1,
+            0.7
+          ],
+          "position": [
+            0.35,
+            2.1,
+            0
+          ],
+          "color": "green",
+          "rotation": [
+            0,
+            0,
+            45
+          ],
+          "collide": false
+        },
+        {
+          "name": "Flower",
+          "size": [
+            0.55,
+            0.4,
+            0.55
+          ],
+          "position": [
+            0,
+            2.85,
+            0
+          ],
+          "color": "gold",
+          "rotation": [
+            0,
+            0,
+            0
+          ],
+          "collide": false
+        },
+        {
+          "name": "Stem",
+          "size": [
+            0.15,
+            1.8,
+            0.15
+          ],
+          "position": [
+            1.5,
+            1.8,
+            0
+          ],
+          "color": "green",
+          "rotation": [
+            0,
+            0,
+            0
+          ],
+          "collide": false
+        },
+        {
+          "name": "Leaf",
+          "size": [
+            0.3,
+            1,
+            0.7
+          ],
+          "position": [
+            1.15,
+            2.1,
+            0
+          ],
+          "color": "green",
+          "rotation": [
+            0,
+            0,
+            -45
+          ],
+          "collide": false
+        },
+        {
+          "name": "Leaf",
+          "size": [
+            0.3,
+            1,
+            0.7
+          ],
+          "position": [
+            1.85,
+            2.1,
+            0
+          ],
+          "color": "green",
+          "rotation": [
+            0,
+            0,
+            45
+          ],
+          "collide": false
+        },
+        {
+          "name": "Flower",
+          "size": [
+            0.55,
+            0.4,
+            0.55
+          ],
+          "position": [
+            1.5,
+            2.85,
+            0
+          ],
+          "color": "gold",
+          "rotation": [
+            0,
+            0,
+            0
+          ],
+          "collide": false
+        }
+      ],
+      "runtimeBound": true
+    },
+    {
+      "id": "crystal_lantern",
+      "name": "Crystal Lantern",
+      "nameTH": "โคมผลึก",
+      "footprint": [
+        4,
+        4
+      ],
+      "parts": [
+        {
+          "name": "Foot",
+          "size": [
+            2,
+            0.25,
+            2
+          ],
+          "position": [
+            0,
+            0.125,
+            0
+          ],
+          "color": "stone",
+          "rotation": [
+            0,
+            0,
+            0
+          ],
+          "collide": false
+        },
+        {
+          "name": "Post",
+          "size": [
+            0.35,
+            4,
+            0.35
+          ],
+          "position": [
+            0,
+            2,
+            0
+          ],
+          "color": "dark",
+          "rotation": [
+            0,
+            0,
+            0
+          ],
+          "collide": false
+        },
+        {
+          "name": "Base",
+          "size": [
+            1.7,
+            0.25,
+            1.7
+          ],
+          "position": [
+            0,
+            4,
+            0
+          ],
+          "color": "gold",
+          "rotation": [
+            0,
+            0,
+            0
+          ],
+          "collide": false
+        },
+        {
+          "name": "Glow",
+          "size": [
+            1,
+            1.4,
+            1
+          ],
+          "position": [
+            0,
+            4.8,
+            0
+          ],
+          "color": "cyan",
+          "rotation": [
+            0,
+            0,
+            0
+          ],
+          "collide": false
+        },
+        {
+          "name": "Frame",
+          "size": [
+            0.12,
+            1.6,
+            0.12
+          ],
+          "position": [
+            -0.65,
+            4.8,
+            -0.65
+          ],
+          "color": "gold",
+          "rotation": [
+            0,
+            0,
+            0
+          ],
+          "collide": false
+        },
+        {
+          "name": "Frame",
+          "size": [
+            0.12,
+            1.6,
+            0.12
+          ],
+          "position": [
+            -0.65,
+            4.8,
+            0.65
+          ],
+          "color": "gold",
+          "rotation": [
+            0,
+            0,
+            0
+          ],
+          "collide": false
+        },
+        {
+          "name": "Frame",
+          "size": [
+            0.12,
+            1.6,
+            0.12
+          ],
+          "position": [
+            0.65,
+            4.8,
+            -0.65
+          ],
+          "color": "gold",
+          "rotation": [
+            0,
+            0,
+            0
+          ],
+          "collide": false
+        },
+        {
+          "name": "Frame",
+          "size": [
+            0.12,
+            1.6,
+            0.12
+          ],
+          "position": [
+            0.65,
+            4.8,
+            0.65
+          ],
+          "color": "gold",
+          "rotation": [
+            0,
+            0,
+            0
+          ],
+          "collide": false
+        },
+        {
+          "name": "Cap",
+          "size": [
+            1.8,
+            0.3,
+            1.8
+          ],
+          "position": [
+            0,
+            5.7,
+            0
+          ],
+          "color": "navy",
+          "rotation": [
+            0,
+            0,
+            0
+          ],
+          "collide": false
+        }
+      ],
+      "runtimeBound": true
+    },
+    {
+      "id": "display_plinth",
+      "name": "Display Plinth",
+      "nameTH": "แท่นจัดแสดง",
+      "footprint": [
+        4,
+        4
+      ],
+      "parts": [
+        {
+          "name": "Base",
+          "size": [
+            3.6,
+            0.4,
+            3.6
+          ],
+          "position": [
+            0,
+            0.2,
+            0
+          ],
+          "color": "stone",
+          "rotation": [
+            0,
+            0,
+            0
+          ],
+          "collide": false
+        },
+        {
+          "name": "Column",
+          "size": [
+            2.6,
+            2.2,
+            2.6
+          ],
+          "position": [
+            0,
+            1.5,
+            0
+          ],
+          "color": "stone",
+          "rotation": [
+            0,
+            0,
+            0
+          ],
+          "collide": false
+        },
+        {
+          "name": "Top",
+          "size": [
+            3.6,
+            0.35,
+            3.6
+          ],
+          "position": [
+            0,
+            2.775,
+            0
+          ],
+          "color": "gold",
+          "rotation": [
+            0,
+            0,
+            0
+          ],
+          "collide": false
+        },
+        {
+          "name": "Cushion",
+          "size": [
+            3,
+            0.15,
+            3
+          ],
+          "position": [
+            0,
+            3.025,
+            0
+          ],
+          "color": "red",
+          "rotation": [
+            0,
+            0,
+            0
+          ],
+          "collide": false
+        }
+      ],
+      "runtimeBound": true
+    },
+    {
+      "id": "hearth_bed",
+      "name": "Hearth Bed",
+      "nameTH": "เตียงไม้เตาผิง",
+      "footprint": [
+        6,
+        8
+      ],
+      "parts": [
+        {
+          "name": "Leg",
+          "size": [
+            0.4,
+            1,
+            0.4
+          ],
+          "position": [
+            -2.15,
+            0.5,
+            -3.15
+          ],
+          "color": "dark",
+          "rotation": [
+            0,
+            0,
+            0
+          ],
+          "collide": false
+        },
+        {
+          "name": "Leg",
+          "size": [
+            0.4,
+            1,
+            0.4
+          ],
+          "position": [
+            -2.15,
+            0.5,
+            3.15
+          ],
+          "color": "dark",
+          "rotation": [
+            0,
+            0,
+            0
+          ],
+          "collide": false
+        },
+        {
+          "name": "Leg",
+          "size": [
+            0.4,
+            1,
+            0.4
+          ],
+          "position": [
+            2.15,
+            0.5,
+            -3.15
+          ],
+          "color": "dark",
+          "rotation": [
+            0,
+            0,
+            0
+          ],
+          "collide": false
+        },
+        {
+          "name": "Leg",
+          "size": [
+            0.4,
+            1,
+            0.4
+          ],
+          "position": [
+            2.15,
+            0.5,
+            3.15
+          ],
+          "color": "dark",
+          "rotation": [
+            0,
+            0,
+            0
+          ],
+          "collide": false
+        },
+        {
+          "name": "Frame",
+          "size": [
+            5.5,
+            0.5,
+            7.4
+          ],
+          "position": [
+            0,
+            1,
+            0
+          ],
+          "color": "wood",
+          "rotation": [
+            0,
+            0,
+            0
+          ],
+          "collide": false
+        },
+        {
+          "name": "Mattress",
+          "size": [
+            5,
+            0.5,
+            7
+          ],
+          "position": [
+            0,
+            1.5,
+            0
+          ],
+          "color": "ivory",
+          "rotation": [
+            0,
+            0,
+            0
+          ],
+          "collide": false
+        },
+        {
+          "name": "Blanket",
+          "size": [
+            5.05,
+            0.15,
+            4.4
+          ],
+          "position": [
+            0,
+            1.82,
+            1.15
+          ],
+          "color": "navy",
+          "rotation": [
+            0,
+            0,
+            0
+          ],
+          "collide": false
+        },
+        {
+          "name": "Pillow",
+          "size": [
+            3.6,
+            0.45,
+            1.3
+          ],
+          "position": [
+            0,
+            1.95,
+            -2.5
+          ],
+          "color": "ivory",
+          "rotation": [
+            0,
+            0,
+            0
+          ],
+          "collide": false
+        },
+        {
+          "name": "Headboard",
+          "size": [
+            5.5,
+            2.8,
+            0.35
+          ],
+          "position": [
+            0,
+            1.4,
+            -3.65
+          ],
+          "color": "wood",
+          "rotation": [
+            0,
+            0,
+            0
+          ],
+          "collide": false
+        }
+      ],
+      "runtimeBound": true
+    }
+  ]
+}

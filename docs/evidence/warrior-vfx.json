@@ -1,0 +1,29 @@
+{
+  "cosmetic": {
+    "content": [
+      {
+        "type": "text",
+        "text": "{\"mode\":\"Memory cosmetic probe\",\"remaining\":0,\"peak\":40,\"trailGone\":true}"
+      }
+    ],
+    "isError": false
+  },
+  "stress": {
+    "content": [
+      {
+        "type": "text",
+        "text": "{\"remaining\":0,\"stressPeak\":48}"
+      }
+    ],
+    "isError": false
+  },
+  "joints": {
+    "content": [
+      {
+        "type": "text",
+        "text": "{\"joint\":\"AnimationConstraint\",\"settled\":\"0, 0, 0, 0.994465709, 0.0923800021, -0.0500387587, -0.0877789855, 0.992295444, 0.087433286, 0.0577303357, -0.0825570449, 0.994912803\",\"cast\":\"0, 0, 0, 0.863233566, 0.332934469, 0.379450142, -0.503431976, 0.623177886, 0.598502755, -0.0372027606, -0.70767498, 0.705557942\",\"moved\":true}"
+      }
+    ],
+    "isError": false
+  }
+}

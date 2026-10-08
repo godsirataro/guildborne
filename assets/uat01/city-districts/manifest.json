@@ -1,0 +1,548 @@
+[
+  {
+    "id": "crownford-district-v2",
+    "city": "Crownford",
+    "identity": "Formal civic avenue",
+    "parts": 108,
+    "triangles": 1296,
+    "bounds": [
+      -10.0,
+      -12.5,
+      -0.10000000149011612,
+      10.0,
+      12.5,
+      3.3999998569488525
+    ],
+    "studToMeter": 0.1,
+    "markers": [
+      {
+        "name": "Market",
+        "position": [
+          -58,
+          3,
+          28
+        ]
+      },
+      {
+        "name": "Forge",
+        "position": [
+          58,
+          3,
+          28
+        ]
+      },
+      {
+        "name": "Tavern",
+        "position": [
+          -58,
+          3,
+          -28
+        ]
+      },
+      {
+        "name": "QuestHall",
+        "position": [
+          58,
+          3,
+          -28
+        ]
+      },
+      {
+        "name": "Landmark",
+        "position": [
+          0,
+          4,
+          -70
+        ]
+      },
+      {
+        "name": "GuildIslandPortal",
+        "position": [
+          58,
+          3,
+          88
+        ]
+      },
+      {
+        "name": "RegionalGate",
+        "position": [
+          -58,
+          3,
+          88
+        ]
+      },
+      {
+        "name": "Arrival",
+        "position": [
+          0,
+          3,
+          108
+        ]
+      },
+      {
+        "name": "Plaza",
+        "position": [
+          0,
+          3,
+          12
+        ]
+      }
+    ],
+    "runtimeBound": false
+  },
+  {
+    "id": "sylvaris-district-v2",
+    "city": "Sylvaris",
+    "identity": "Garden promenade",
+    "parts": 112,
+    "triangles": 1344,
+    "bounds": [
+      -10.0,
+      -12.5,
+      -0.10000000149011612,
+      10.0,
+      12.5,
+      3.4000000953674316
+    ],
+    "studToMeter": 0.1,
+    "markers": [
+      {
+        "name": "Market",
+        "position": [
+          -60,
+          3,
+          38
+        ]
+      },
+      {
+        "name": "Forge",
+        "position": [
+          60,
+          3,
+          12
+        ]
+      },
+      {
+        "name": "Tavern",
+        "position": [
+          -60,
+          3,
+          -22
+        ]
+      },
+      {
+        "name": "QuestHall",
+        "position": [
+          60,
+          3,
+          -48
+        ]
+      },
+      {
+        "name": "Landmark",
+        "position": [
+          0,
+          4,
+          -70
+        ]
+      },
+      {
+        "name": "GuildIslandPortal",
+        "position": [
+          58,
+          3,
+          88
+        ]
+      },
+      {
+        "name": "RegionalGate",
+        "position": [
+          -58,
+          3,
+          88
+        ]
+      },
+      {
+        "name": "Arrival",
+        "position": [
+          0,
+          3,
+          108
+        ]
+      },
+      {
+        "name": "Plaza",
+        "position": [
+          0,
+          3,
+          12
+        ]
+      }
+    ],
+    "runtimeBound": false
+  },
+  {
+    "id": "deepforge-district-v2",
+    "city": "Deepforge",
+    "identity": "Foundry processional",
+    "parts": 100,
+    "triangles": 1200,
+    "bounds": [
+      -10.0,
+      -12.5,
+      -0.10000000149011612,
+      10.0,
+      12.5,
+      3.325000047683716
+    ],
+    "studToMeter": 0.1,
+    "markers": [
+      {
+        "name": "Market",
+        "position": [
+          -62,
+          3,
+          34
+        ]
+      },
+      {
+        "name": "Forge",
+        "position": [
+          62,
+          3,
+          34
+        ]
+      },
+      {
+        "name": "Tavern",
+        "position": [
+          -62,
+          3,
+          -24
+        ]
+      },
+      {
+        "name": "QuestHall",
+        "position": [
+          62,
+          3,
+          -24
+        ]
+      },
+      {
+        "name": "Landmark",
+        "position": [
+          0,
+          4,
+          -70
+        ]
+      },
+      {
+        "name": "GuildIslandPortal",
+        "position": [
+          58,
+          3,
+          88
+        ]
+      },
+      {
+        "name": "RegionalGate",
+        "position": [
+          -58,
+          3,
+          88
+        ]
+      },
+      {
+        "name": "Arrival",
+        "position": [
+          0,
+          3,
+          108
+        ]
+      },
+      {
+        "name": "Plaza",
+        "position": [
+          0,
+          3,
+          12
+        ]
+      }
+    ],
+    "runtimeBound": false
+  },
+  {
+    "id": "astralis-district-v2",
+    "city": "Astralis",
+    "identity": "Astral diamond walk",
+    "parts": 120,
+    "triangles": 1440,
+    "bounds": [
+      -10.0,
+      -12.5,
+      -0.10000000149011612,
+      10.0,
+      12.5,
+      3.7274999618530273
+    ],
+    "studToMeter": 0.1,
+    "markers": [
+      {
+        "name": "Market",
+        "position": [
+          -60,
+          3,
+          42
+        ]
+      },
+      {
+        "name": "Forge",
+        "position": [
+          60,
+          3,
+          18
+        ]
+      },
+      {
+        "name": "Tavern",
+        "position": [
+          -60,
+          3,
+          -20
+        ]
+      },
+      {
+        "name": "QuestHall",
+        "position": [
+          60,
+          3,
+          -44
+        ]
+      },
+      {
+        "name": "Landmark",
+        "position": [
+          0,
+          4,
+          -70
+        ]
+      },
+      {
+        "name": "GuildIslandPortal",
+        "position": [
+          58,
+          3,
+          88
+        ]
+      },
+      {
+        "name": "RegionalGate",
+        "position": [
+          -58,
+          3,
+          88
+        ]
+      },
+      {
+        "name": "Arrival",
+        "position": [
+          0,
+          3,
+          108
+        ]
+      },
+      {
+        "name": "Plaza",
+        "position": [
+          0,
+          3,
+          12
+        ]
+      }
+    ],
+    "runtimeBound": false
+  },
+  {
+    "id": "crosshaven-district-v2",
+    "city": "Crosshaven",
+    "identity": "Harbor exchange loop",
+    "parts": 106,
+    "triangles": 1272,
+    "bounds": [
+      -10.0,
+      -12.5,
+      -0.10000000149011612,
+      10.0,
+      12.5,
+      3.5
+    ],
+    "studToMeter": 0.1,
+    "markers": [
+      {
+        "name": "Market",
+        "position": [
+          -56,
+          3,
+          38
+        ]
+      },
+      {
+        "name": "Forge",
+        "position": [
+          56,
+          3,
+          38
+        ]
+      },
+      {
+        "name": "Tavern",
+        "position": [
+          -70,
+          3,
+          -22
+        ]
+      },
+      {
+        "name": "QuestHall",
+        "position": [
+          70,
+          3,
+          -22
+        ]
+      },
+      {
+        "name": "Landmark",
+        "position": [
+          0,
+          4,
+          -70
+        ]
+      },
+      {
+        "name": "GuildIslandPortal",
+        "position": [
+          58,
+          3,
+          88
+        ]
+      },
+      {
+        "name": "RegionalGate",
+        "position": [
+          -58,
+          3,
+          88
+        ]
+      },
+      {
+        "name": "Arrival",
+        "position": [
+          0,
+          3,
+          108
+        ]
+      },
+      {
+        "name": "Plaza",
+        "position": [
+          0,
+          3,
+          12
+        ]
+      }
+    ],
+    "runtimeBound": false
+  },
+  {
+    "id": "ironroot-district-v2",
+    "city": "Ironroot",
+    "identity": "Shared hearth lanes",
+    "parts": 112,
+    "triangles": 1344,
+    "bounds": [
+      -10.0,
+      -12.5,
+      -0.10000000149011612,
+      10.0,
+      12.5,
+      2.8317999839782715
+    ],
+    "studToMeter": 0.1,
+    "markers": [
+      {
+        "name": "Market",
+        "position": [
+          -64,
+          3,
+          32
+        ]
+      },
+      {
+        "name": "Forge",
+        "position": [
+          64,
+          3,
+          32
+        ]
+      },
+      {
+        "name": "Tavern",
+        "position": [
+          -64,
+          3,
+          -28
+        ]
+      },
+      {
+        "name": "QuestHall",
+        "position": [
+          64,
+          3,
+          -28
+        ]
+      },
+      {
+        "name": "Landmark",
+        "position": [
+          0,
+          4,
+          -70
+        ]
+      },
+      {
+        "name": "GuildIslandPortal",
+        "position": [
+          58,
+          3,
+          88
+        ]
+      },
+      {
+        "name": "RegionalGate",
+        "position": [
+          -58,
+          3,
+          88
+        ]
+      },
+      {
+        "name": "Arrival",
+        "position": [
+          0,
+          3,
+          108
+        ]
+      },
+      {
+        "name": "Plaza",
+        "position": [
+          0,
+          3,
+          12
+        ]
+      }
+    ],
+    "runtimeBound": false
+  }
+]

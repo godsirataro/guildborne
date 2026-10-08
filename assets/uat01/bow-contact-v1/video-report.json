@@ -1,0 +1,27 @@
+{
+  "status": "PASS",
+  "bytes": 76106,
+  "tracks": [
+    {
+      "type": "vide",
+      "codec": "avc1",
+      "samples": 60,
+      "mediaSeconds": 2.0,
+      "width": 480,
+      "height": 480
+    },
+    {
+      "type": "soun",
+      "codec": "mp4a",
+      "samples": 95,
+      "mediaSeconds": 2.026666666666667,
+      "channels": 2,
+      "sampleRate": 48000
+    }
+  ],
+  "releaseSecondsInVideo": [
+    0.24
+  ],
+  "decodedFrame": "build/bow-video-decoded.png",
+  "listeningApproved": false
+}

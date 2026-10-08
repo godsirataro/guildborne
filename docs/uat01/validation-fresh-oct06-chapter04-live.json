@@ -1,0 +1,268 @@
+{
+  "revision": 217,
+  "data": {
+    "inventory": {
+      "equipment": {
+        "q:3:1": {
+          "binding": "Account",
+          "upgradeLevel": 0,
+          "definitionId": "iron_sword"
+        },
+        "novice:class:1": {
+          "binding": "Account",
+          "upgradeLevel": 0,
+          "definitionId": "mage_staff"
+        },
+        "campaign:recruit:1:1": {
+          "binding": "Account",
+          "definitionId": "apprentice_staff",
+          "upgradeLevel": 0
+        },
+        "novice:founder:1": {
+          "binding": "Account",
+          "upgradeLevel": 0,
+          "definitionId": "knight_sword"
+        },
+        "q:1:1": {
+          "binding": "Account",
+          "upgradeLevel": 0,
+          "definitionId": "training_sword"
+        }
+      },
+      "stacks": {
+        "iron_ingot": 1,
+        "timber": 8,
+        "herb": 5,
+        "iron_ore": 8
+      },
+      "nextEquipmentSequence": 1
+    },
+    "expansion": {
+      "actors": {
+        "player": {
+          "path": "elementalist",
+          "skills": {
+            "path_art": true,
+            "vitality": true,
+            "focus": true
+          },
+          "equipped": "nova",
+          "tier": 2
+        }
+      },
+      "nextBuilding": 1,
+      "buildings": [],
+      "themeRights": [],
+      "tower": {
+        "nextRun": 1,
+        "highest": 0,
+        "checkpoint": 0
+      },
+      "gatherReady": [],
+      "gathered": [],
+      "raceChosen": false
+    },
+    "levelCap": 70,
+    "nextHallLevelCap": 75,
+    "settlement": {
+      "nextOffer": 1,
+      "elixirs": 0,
+      "tavernLevel": 1,
+      "nextHero": 2,
+      "nextJob": 1,
+      "journal": [],
+      "jobs": []
+    },
+    "language": "en",
+    "quests": {
+      "nextRunSequence": 4,
+      "lastResult": {
+        "questName": "Quarry Patrol",
+        "runId": "q:3",
+        "reward": {
+          "Items": {
+            "1": {
+              "Id": "iron_ore",
+              "Quantity": 6
+            },
+            "2": {
+              "Id": "iron_sword",
+              "Quantity": 1
+            }
+          },
+          "XP": 40,
+          "Gold": 60
+        }
+      },
+      "claimedThrough": 3,
+      "firstClears": {
+        "timber_escort": true,
+        "quarry_patrol": true,
+        "trail_watch": true
+      }
+    },
+    "adventurers": {
+      "a:Knight": {
+        "equipmentSlots": {
+          "weapon": "novice:founder:1"
+        },
+        "stats": {
+          "WeaponBonus": 2,
+          "Defense": 7,
+          "Health": 247,
+          "Attack": 75
+        },
+        "id": "a:Knight",
+        "classId": "Knight",
+        "xp": 3661,
+        "name": "Bram",
+        "level": 70,
+        "baseStats": {
+          "Defense": 7,
+          "Health": 40,
+          "Attack": 4
+        },
+        "rank": "F"
+      },
+      "h:1": {
+        "equipmentSlots": {
+          "weapon": "campaign:recruit:1:1"
+        },
+        "stats": {
+          "WeaponBonus": 2,
+          "Defense": 3,
+          "Health": 231,
+          "Attack": 75
+        },
+        "id": "h:1",
+        "classId": "Priest",
+        "xp": 3461,
+        "name": "Sage",
+        "level": 70,
+        "baseStats": {
+          "Defense": 3,
+          "Health": 24,
+          "Attack": 4
+        },
+        "rank": "F"
+      }
+    },
+    "character": {
+      "classPathId": "elementalist",
+      "stats": {
+        "WeaponBonus": 2,
+        "Defense": 1,
+        "Health": 233,
+        "Attack": 83
+      },
+      "definitionVersion": 1,
+      "classId": "Mage",
+      "xp": 3515,
+      "raceId": "Human",
+      "tier": 2,
+      "level": 70,
+      "equipmentSlots": {
+        "weapon": "novice:class:1"
+      },
+      "skillId": "fireball"
+    },
+    "party": {
+      "adventurerIds": {
+        "1": "a:Knight",
+        "2": "h:1"
+      }
+    },
+    "hallLevel": 11,
+    "gold": 414,
+    "rosterCapacity": 5,
+    "guildLand": {
+      "accessMode": "Private",
+      "plots": {
+        "grove": {
+          "materials": {
+            "timber": 24,
+            "herb": 8
+          },
+          "questEligible": true,
+          "name": "Grove Terrace",
+          "purchased": false,
+          "purchaseAvailable": false,
+          "status": "QuestLocked",
+          "quests": {
+            "trail_watch": true
+          },
+          "delivered": []
+        },
+        "quarry": {
+          "materials": {
+            "stone": 32,
+            "iron_ore": 16
+          },
+          "questEligible": true,
+          "name": "Quarry Terrace",
+          "purchased": false,
+          "purchaseAvailable": false,
+          "status": "QuestLocked",
+          "quests": {
+            "quarry_patrol": true,
+            "timber_escort": true
+          },
+          "delivered": []
+        },
+        "summit": {
+          "materials": {
+            "stone": 40,
+            "timber": 40,
+            "iron_ingot": 4
+          },
+          "questEligible": true,
+          "name": "Summit Terrace",
+          "purchased": false,
+          "purchaseAvailable": false,
+          "status": "QuestLocked",
+          "quests": {
+            "quarry_patrol": true
+          },
+          "delivered": []
+        }
+      }
+    },
+    "progression": {
+      "tutorialStep": "complete",
+      "novice": {
+        "trialClass": "Mage",
+        "founderHero": "a:Knight",
+        "claimed": 6,
+        "branch": "rescue",
+        "version": 1,
+        "objectives": []
+      },
+      "recruitedClasses": {
+        "Knight": true,
+        "Priest": true
+      },
+      "welcomeSeen": true,
+      "ruleset": "guildborne.progression.2",
+      "campaign": {
+        "version": 1,
+        "hallPermit": 11,
+        "choices": {
+          "allocate_timber": "workers",
+          "choose_joint_review": "workers",
+          "renew_tower_oath": "compassion",
+          "choose_bridge_route": "direct",
+          "choose_crest": "compass",
+          "choose_tower_door": "moon",
+          "choose_motto": "together",
+          "choose_witness_route": "guard"
+        },
+        "objectives": [],
+        "claimed": 24,
+        "recruitHero": "h:1"
+      },
+      "tutorialCompleted": true,
+      "everEquipped": false
+    }
+  },
+  "mode": "Studio memory · not saved after Stop"
+}

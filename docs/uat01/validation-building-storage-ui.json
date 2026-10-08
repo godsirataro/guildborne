@@ -1,0 +1,61 @@
+{
+  "date": "2026-10-03",
+  "environment": "Owned offline memory Studio, PlaceId0/GameId0",
+  "input": "Actual keyboard gathering prompts and pointer building controls; server debug positioning between resource nodes",
+  "gathered": {
+    "timber": 8,
+    "stone": 4
+  },
+  "construction": {
+    "id": "b:1",
+    "kind": "warehouse",
+    "revision": 7,
+    "materialDebits": {
+      "timber": 8,
+      "stone": 4
+    }
+  },
+  "stored": {
+    "revision": 8,
+    "modelRemoved": true,
+    "warehouseCapacity": 100
+  },
+  "restored": {
+    "revision": 9,
+    "sameId": "b:1",
+    "position": [
+      64,
+      1.5,
+      -24
+    ],
+    "rotationDegrees": 90,
+    "warehouseCapacity": 200
+  },
+  "storageAndRestoreMaterialEvents": 0,
+  "firstConstructionAttempt": "Rejected for missing materials; one more valid wood gathering completed before successful construction",
+  "cloudWrites": false,
+  "purchases": false,
+  "humanAcceptance": false,
+  "limitations": [
+    "Warehouse runtime UI journey only; upgraded quarters preservation and save failures tested in domain harness",
+    "Fine positioning is validated separately"
+  ],
+  "finePlacementFixture": {
+    "language": "th",
+    "viewport": [
+      750,
+      362
+    ],
+    "pointerInputs": true,
+    "command": "RestoreBuilding",
+    "args": {
+      "buildingId": "b:1",
+      "x": 6.25,
+      "z": -3.75,
+      "rotation": 1
+    },
+    "labelsFit": true,
+    "guiAndGhostRemoved": true,
+    "liveProfileCommandSent": false
+  }
+}

@@ -1,0 +1,132 @@
+[
+  {
+    "id": "GreenwoodWaystone",
+    "triangles": 84,
+    "bounds": [
+      4.185594081878662,
+      3.0097782611846924,
+      5.75
+    ],
+    "materials": 5,
+    "status": "CREATED",
+    "robloxMeshAssetId": null,
+    "studioNativeVerified": false
+  },
+  {
+    "id": "GreenwoodSupplyCache",
+    "triangles": 60,
+    "bounds": [
+      3.200000286102295,
+      2.700000047683716,
+      2.5250000953674316
+    ],
+    "materials": 4,
+    "status": "CREATED",
+    "robloxMeshAssetId": null,
+    "studioNativeVerified": false
+  },
+  {
+    "id": "GreenwoodFern",
+    "triangles": 84,
+    "bounds": [
+      2.4859676361083984,
+      2.2779111862182617,
+      2.135686159133911
+    ],
+    "materials": 3,
+    "status": "CREATED",
+    "robloxMeshAssetId": null,
+    "studioNativeVerified": false
+  },
+  {
+    "id": "IronveilOreCart",
+    "triangles": 144,
+    "bounds": [
+      4.211999893188477,
+      4.420000076293945,
+      3.419027805328369
+    ],
+    "materials": 4,
+    "status": "CREATED",
+    "robloxMeshAssetId": null,
+    "studioNativeVerified": false
+  },
+  {
+    "id": "IronveilCrystalCluster",
+    "triangles": 84,
+    "bounds": [
+      4.577908039093018,
+      3.961719036102295,
+      5.459619522094727
+    ],
+    "materials": 3,
+    "status": "CREATED",
+    "robloxMeshAssetId": null,
+    "studioNativeVerified": false
+  },
+  {
+    "id": "IronveilForge",
+    "triangles": 108,
+    "bounds": [
+      6.5,
+      4.149999618530273,
+      5.6999993324279785
+    ],
+    "materials": 4,
+    "status": "CREATED",
+    "robloxMeshAssetId": null,
+    "studioNativeVerified": false
+  },
+  {
+    "id": "AshenRunePillar",
+    "triangles": 84,
+    "bounds": [
+      3.799999952316284,
+      3.799999952316284,
+      8.199999809265137
+    ],
+    "materials": 3,
+    "status": "CREATED",
+    "robloxMeshAssetId": null,
+    "studioNativeVerified": false
+  },
+  {
+    "id": "AshenShrine",
+    "triangles": 96,
+    "bounds": [
+      6.1319580078125,
+      6.0,
+      4.294974327087402
+    ],
+    "materials": 4,
+    "status": "CREATED",
+    "robloxMeshAssetId": null,
+    "studioNativeVerified": false
+  },
+  {
+    "id": "AdventurerQuestBoard",
+    "triangles": 132,
+    "bounds": [
+      7.0,
+      2.1500000953674316,
+      7.907106876373291
+    ],
+    "materials": 5,
+    "status": "CREATED",
+    "robloxMeshAssetId": null,
+    "studioNativeVerified": false
+  },
+  {
+    "id": "HarborMarketStall",
+    "triangles": 168,
+    "bounds": [
+      6.750000953674316,
+      5.000000476837158,
+      6.974999904632568
+    ],
+    "materials": 6,
+    "status": "CREATED",
+    "robloxMeshAssetId": null,
+    "studioNativeVerified": false
+  }
+]

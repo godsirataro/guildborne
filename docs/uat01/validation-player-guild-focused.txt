@@ -1,0 +1,57 @@
+PASS player guild founder handshake grants no authority before canonical activation
+PASS player guild membership slot rejects simultaneous guild invitations
+PASS player guild partial joins survive record cloning and repeated phases
+PASS player guild invitation targets expiry revoked officers and capacity are enforced
+PASS player guild role capabilities do not conflate commanders and officers
+PASS player guild revocation precedes slot clearing and stale activation cannot restore rights
+PASS player guild officer cannot revoke peers or master while members can leave
+PASS player guild leadership requires recipient consent and rejects replaced expired offers
+PASS player guild pending join can be abandoned without activating or leaking the slot
+PASS player guild consumed generations cannot rejoin using delayed old proofs
+PASS player guild failed invitation reservation can be cancelled before a member exists
+PASS player guild recovery advances only the durable handshake phase
+PASS player guild failed reads never clear a membership reservation
+PASS player guild recovery finishes revocation without touching a newer guild
+PASS player guild inconsistent active records are quarantined without inventing authority
+PASS player guild pending projection exposes only its owner's public phase
+PASS player guild roster excludes internal records and rejects nonmembers
+PASS player guild roster transfer consent is visible only to the current recipient
+PASS player guild persisted schema accepts each legitimate founder phase and cancellation
+PASS player guild persisted schema rejects malformed or contradictory authority
+PASS player guild schema stays valid across repeated joins leadership changes and removals
+PASS player guild join retries every uncertain write without duplicate membership
+PASS player guild unfinished operation cannot replay after membership was removed
+PASS player guild operation identity cannot be reused with another invitation
+PASS player guild expired invitation retains reservation for explicit safe cancellation
+PASS player guild revocation racing join activation never grants canonical authority
+PASS player guild concurrent cancellation protects a subsequent guild reservation
+PASS player guild invalid join intents are rejected before storage access
+PASS player guild cancellation recovers every write at each unfinished join stage
+PASS player guild cancellation fences an accept already past the journal read
+PASS player guild cancellation wins against delayed completion of active membership
+PASS player guild old cancellation preserves a newer same-guild membership
+PASS player guild completed join cannot be undone by cancellation
+PASS player guild cancellation handles missing reads and invalid callers without writes
+PASS player guild leave and kick recover every uncertain durable write
+PASS player guild removal validates current role and actor incarnation before revoking
+PASS player guild removal operation identity cannot change its actor or target
+PASS player guild removal completes its written revocation after actor loses privileges
+PASS player guild delayed removal never deletes a newer rejoined member
+PASS player guild removal rejects malformed input before touching storage
+PASS player guild creation retries all six writes without duplicate guilds or slots
+PASS player guild creation cannot overwrite another founder at the same guild key
+PASS player guild creation journal pins identity and rejects parallel second founding
+PASS player guild delayed founder replay cannot steal a newer membership reservation
+PASS player guild immutable origin survives legitimate leadership transfer during finalization
+PASS player guild creation schema rejects malformed origin and generation fences safely
+PASS player guild generations and counters stop before leaving their persisted range
+PASS player guild journal schema validates every coordinator phase and logical key
+PASS player guild removal keys distinguish delimiter-bearing guild and operation IDs
+PASS player guild journal schema rejects unknown phases malformed proof and overflows
+PASS player guild validated store drives founder join cancellation and removal end to end
+PASS player guild store keeps before and after write failures uncertain and retryable
+PASS player guild store reruns callbacks on current copies and discards stale candidates
+PASS player guild store rejects invalid mutations without changing persisted records
+PASS player guild store never treats unavailable or corrupted records as missing
+PASS player guild physical key collisions cannot read or replace another logical record
+56 player guild tests passed

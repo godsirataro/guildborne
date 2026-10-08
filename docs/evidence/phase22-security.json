@@ -1,0 +1,19 @@
+{
+  "beforeRevision": 60,
+  "character": {
+    "classPathId": "warrior:1",
+    "raceId": "Human",
+    "definitionVersion": 1,
+    "tier": 1,
+    "level": 1,
+    "classId": "Warrior",
+    "xp": 12,
+    "skillId": "power_strike"
+  },
+  "spamReplies": 4,
+  "goldAfter": 79,
+  "selectionCode": "ClassAlreadySelected",
+  "afterRevision": 60,
+  "goldBefore": 79,
+  "forgedCode": "InvalidRequest"
+}

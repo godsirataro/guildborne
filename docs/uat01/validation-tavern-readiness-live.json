@@ -1,0 +1,49 @@
+{
+  "beforeHireAfterCancel": {
+    "revision": 8,
+    "offer": {
+      "id": "offer:1",
+      "classId": "Knight",
+      "rank": "F"
+    },
+    "gold": 50
+  },
+  "afterHire": {
+    "hero": {
+      "equipmentSlots": {
+        "weapon": "hire:1:1"
+      },
+      "stats": {
+        "Attack": 6,
+        "Defense": 7,
+        "Health": 40,
+        "WeaponBonus": 2
+      },
+      "id": "h:1",
+      "classId": "Knight",
+      "xp": 0,
+      "name": "Bram",
+      "level": 1,
+      "baseStats": {
+        "Defense": 7,
+        "Health": 40,
+        "Attack": 4
+      },
+      "rank": "F"
+    },
+    "revision": 9,
+    "candidateGone": true,
+    "gold": 20,
+    "weapon": {
+      "binding": "Account",
+      "definitionId": "knight_sword",
+      "upgradeLevel": 0
+    }
+  },
+  "earnedGold": 70,
+  "scoutingGoldCost": 20,
+  "hiringGoldCost": 30,
+  "memoryOnly": true,
+  "actualMouseInput": true,
+  "profileGrants": false
+}

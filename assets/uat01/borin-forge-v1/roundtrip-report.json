@@ -1,0 +1,33 @@
+{
+  "status": "PASS",
+  "meshObjects": 109,
+  "triangles": 13376,
+  "bones": 16,
+  "skinnedMeshes": 81,
+  "actions": 1,
+  "contactRoundtrip": [
+    {
+      "frame": 30,
+      "hammerBottom": 2.6999990940093994,
+      "workpieceTop": 2.700000047683716,
+      "error": 9.5367431640625e-07
+    },
+    {
+      "frame": 90,
+      "hammerBottom": 2.6999990940093994,
+      "workpieceTop": 2.700000047683716,
+      "error": 9.5367431640625e-07
+    },
+    {
+      "frame": 150,
+      "hammerBottom": 2.6999990940093994,
+      "workpieceTop": 2.700000047683716,
+      "error": 9.5367431640625e-07
+    }
+  ],
+  "windupClearance": 0.7999985218048096,
+  "stationaryFeetAndRoot": true,
+  "loopSeamPassed": true,
+  "platformImported": false,
+  "notes": "GLB imported into a clean Blender scene at authored30fps. Evaluated skinned hammer surfaces tested; audio not listened to and Studio retarget/performance pending."
+}

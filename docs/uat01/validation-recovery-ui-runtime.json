@@ -1,0 +1,41 @@
+{
+  "placeId": 86788611613035,
+  "syntheticClientStateOnly": true,
+  "backendFaultInjection": false,
+  "realProfileWrites": false,
+  "recoveryFromClosedMenu": true,
+  "checks": [
+    {
+      "status": "Degraded",
+      "retryLoad": false,
+      "retrySave": true,
+      "titleVisible": false,
+      "panelVisible": true
+    },
+    {
+      "status": "LeaseLost",
+      "retryLoad": false,
+      "retrySave": false,
+      "titleVisible": false,
+      "panelVisible": true
+    },
+    {
+      "status": "LoadFailed",
+      "retryLoad": true,
+      "retrySave": false,
+      "titleVisible": false,
+      "panelVisible": true
+    },
+    {
+      "status": "Loading",
+      "retryLoad": false,
+      "retrySave": false,
+      "titleVisible": false,
+      "panelVisible": true
+    }
+  ],
+  "initialTitleLoadFailureRoutedToRecovery": true,
+  "authoritativeActiveRestored": true,
+  "fixturesRemoved": true,
+  "ownedPlayStopped": true
+}

@@ -1,0 +1,19 @@
+{
+  "status": "REUSED_ORIGINAL_CUE_TIMING_CHECKED_LISTENING_IMPORT_PENDING",
+  "source": "assets/uat01/audio/combat/sword_swing.wav",
+  "sourceSha256": "eb6b35146d1ef010e211a05bf3e681599abec0b27f6cea5b206909b2328152e8",
+  "swingStarts": [
+    0.2,
+    2.2,
+    4.2
+  ],
+  "cutSample": [
+    0.3,
+    2.3,
+    4.3
+  ],
+  "sampleRate": 48000,
+  "duration": 6,
+  "peak": 0.5500045777764214,
+  "robloxSoundId": null
+}

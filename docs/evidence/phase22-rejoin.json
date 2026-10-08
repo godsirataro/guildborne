@@ -1,0 +1,214 @@
+{
+  "exact": true,
+  "beforeRevision": 57,
+  "data": {
+    "progression": {
+      "tutorialStep": "complete",
+      "everEquipped": true,
+      "welcomeSeen": true,
+      "tutorialCompleted": true,
+      "recruitedClasses": {
+        "Warrior": true,
+        "Archer": true,
+        "Knight": true,
+        "Priest": true,
+        "Mage": true
+      }
+    },
+    "inventory": {
+      "equipment": {
+        "recruit:Knight:1": {
+          "binding": "Account",
+          "upgradeLevel": 0,
+          "definitionId": "knight_sword"
+        },
+        "recruit:Priest:1": {
+          "binding": "Account",
+          "upgradeLevel": 0,
+          "definitionId": "apprentice_staff"
+        },
+        "recruit:Mage:1": {
+          "binding": "Account",
+          "upgradeLevel": 0,
+          "definitionId": "mage_staff"
+        },
+        "q:3:1": {
+          "binding": "Account",
+          "upgradeLevel": 0,
+          "definitionId": "iron_sword"
+        },
+        "recruit:Archer:1": {
+          "binding": "Account",
+          "upgradeLevel": 0,
+          "definitionId": "short_bow"
+        },
+        "q:1:1": {
+          "binding": "Account",
+          "upgradeLevel": 0,
+          "definitionId": "training_sword"
+        }
+      },
+      "stacks": {
+        "herb": 4,
+        "timber": 4
+      }
+    },
+    "party": {
+      "adventurerIds": {
+        "1": "a:Knight",
+        "2": "a:Warrior",
+        "3": "a:Archer",
+        "4": "a:Mage",
+        "5": "a:Priest"
+      }
+    },
+    "adventurers": {
+      "a:Priest": {
+        "equipmentSlots": {
+          "weapon": "recruit:Priest:1"
+        },
+        "stats": {
+          "Attack": 7,
+          "Defense": 3,
+          "Health": 27,
+          "WeaponBonus": 2
+        },
+        "name": "Sage",
+        "level": 2,
+        "id": "a:Priest",
+        "baseStats": {
+          "Defense": 3,
+          "Health": 24,
+          "Attack": 4
+        },
+        "xp": 51,
+        "classId": "Priest"
+      },
+      "a:Archer": {
+        "equipmentSlots": {
+          "weapon": "recruit:Archer:1"
+        },
+        "stats": {
+          "Attack": 11,
+          "Defense": 2,
+          "Health": 25,
+          "WeaponBonus": 2
+        },
+        "name": "Ash",
+        "level": 2,
+        "id": "a:Archer",
+        "baseStats": {
+          "Defense": 2,
+          "Health": 22,
+          "Attack": 8
+        },
+        "xp": 51,
+        "classId": "Archer"
+      },
+      "a:Warrior": {
+        "equipmentSlots": {
+          "weapon": "q:3:1"
+        },
+        "stats": {
+          "Attack": 13,
+          "Defense": 4,
+          "Health": 39,
+          "WeaponBonus": 4
+        },
+        "name": "Rowan",
+        "level": 4,
+        "id": "a:Warrior",
+        "baseStats": {
+          "Defense": 4,
+          "Health": 30,
+          "Attack": 6
+        },
+        "xp": 156,
+        "classId": "Warrior"
+      },
+      "a:Mage": {
+        "equipmentSlots": {
+          "weapon": "recruit:Mage:1"
+        },
+        "stats": {
+          "Attack": 13,
+          "Defense": 1,
+          "Health": 23,
+          "WeaponBonus": 2
+        },
+        "name": "Lyra",
+        "level": 2,
+        "id": "a:Mage",
+        "baseStats": {
+          "Defense": 1,
+          "Health": 20,
+          "Attack": 10
+        },
+        "xp": 51,
+        "classId": "Mage"
+      },
+      "a:Knight": {
+        "equipmentSlots": {
+          "weapon": "recruit:Knight:1"
+        },
+        "stats": {
+          "Attack": 7,
+          "Defense": 7,
+          "Health": 43,
+          "WeaponBonus": 2
+        },
+        "name": "Bram",
+        "level": 2,
+        "id": "a:Knight",
+        "baseStats": {
+          "Defense": 7,
+          "Health": 40,
+          "Attack": 4
+        },
+        "xp": 51,
+        "classId": "Knight"
+      }
+    },
+    "hallLevel": 2,
+    "character": {
+      "classPathId": "warrior:1",
+      "raceId": "Human",
+      "definitionVersion": 1,
+      "tier": 1,
+      "level": 1,
+      "classId": "Warrior",
+      "xp": 12,
+      "skillId": "power_strike"
+    },
+    "quests": {
+      "nextRunSequence": 8,
+      "lastResult": {
+        "questName": "Trail Watch",
+        "runId": "q:7",
+        "reward": {
+          "Items": {
+            "1": {
+              "Id": "timber",
+              "Quantity": 1
+            },
+            "2": {
+              "Id": "herb",
+              "Quantity": 1
+            }
+          },
+          "XP": 5,
+          "Gold": 10
+        }
+      },
+      "claimedThrough": 7,
+      "firstClears": {
+        "timber_escort": true,
+        "quarry_patrol": true,
+        "trail_watch": true
+      }
+    },
+    "language": "th",
+    "gold": 79
+  },
+  "revision": 57
+}

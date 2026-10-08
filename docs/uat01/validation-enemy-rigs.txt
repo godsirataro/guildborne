@@ -1,0 +1,378 @@
+C:\Work\MySelf\Guildborne\tools\blender_enemy_kit.py:12: DeprecationWarning: 'World.use_nodes' is expected to be removed in Blender 6.0
+  scene.world=bpy.data.worlds.new('EnemyStudio');scene.world.use_nodes=True;scene.world.node_tree.nodes['Background'].inputs[0].default_value=(.5,.5,.5,1);scene.world.node_tree.nodes['Background'].inputs[1].default_value=.8
+C:\Work\MySelf\Guildborne\tools\blender_enemy_kit.py:22: DeprecationWarning: 'Material.use_nodes' is expected to be removed in Blender 6.0
+  m=bpy.data.materials.new(name);m.use_nodes=True;m.diffuse_color=(*map(linear,rgb),1);shader=m.node_tree.nodes['Principled BSDF'];shader.inputs['Base Color'].default_value=m.diffuse_color;shader.inputs['Roughness'].default_value=.7;materials[name]=m
+
+FBX export starting... 'C:\\Work\\MySelf\\Guildborne\\assets\\uat01\\enemy-kit\\greenwood_scout_Rest.fbx'
+(bpy.data.armatures['Armature'], 'POSE')
+export finished in 0.0123 sec.
+INFO Draco is available, use library at C:\Program Files\Blender Foundation\Blender 5.2\5.2\scripts\addons_core\io_scene_gltf2\bf_intern_draco_bridge.dll
+INFO MeshOptimizer is available, use library at C:\Program Files\Blender Foundation\Blender 5.2\5.2\scripts\addons_core\io_scene_gltf2\bf_intern_meshopt_bridge.dll
+01:20:33 | INFO: Starting glTF 2.0 export
+01:20:33 | INFO: Extracting primitive: Cube
+01:20:33 | INFO: Primitives created: 7
+01:20:33 | INFO: Finished glTF 2.0 export in 0.10931539535522461 s
+00:09.921  render           | Saved: 'C:\Work\MySelf\Guildborne\assets\uat01\enemy-kit\greenwood_scout.png'
+C:\Work\MySelf\Guildborne\tools\blender_enemy_kit.py:12: DeprecationWarning: 'World.use_nodes' is expected to be removed in Blender 6.0
+  scene.world=bpy.data.worlds.new('EnemyStudio');scene.world.use_nodes=True;scene.world.node_tree.nodes['Background'].inputs[0].default_value=(.5,.5,.5,1);scene.world.node_tree.nodes['Background'].inputs[1].default_value=.8
+C:\Work\MySelf\Guildborne\tools\blender_enemy_kit.py:22: DeprecationWarning: 'Material.use_nodes' is expected to be removed in Blender 6.0
+  m=bpy.data.materials.new(name);m.use_nodes=True;m.diffuse_color=(*map(linear,rgb),1);shader=m.node_tree.nodes['Principled BSDF'];shader.inputs['Base Color'].default_value=m.diffuse_color;shader.inputs['Roughness'].default_value=.7;materials[name]=m
+
+
+FBX export starting... 'C:\\Work\\MySelf\\Guildborne\\assets\\uat01\\enemy-kit\\greenwood_scout_Idle.fbx'
+(bpy.data.armatures['Armature'], 'POSE')
+export finished in 0.0656 sec.
+
+FBX export starting... 'C:\\Work\\MySelf\\Guildborne\\assets\\uat01\\enemy-kit\\greenwood_scout_Walk.fbx'
+(bpy.data.armatures['Armature'], 'POSE')
+export finished in 0.0538 sec.
+
+FBX export starting... 'C:\\Work\\MySelf\\Guildborne\\assets\\uat01\\enemy-kit\\greenwood_scout_Attack.fbx'
+(bpy.data.armatures['Armature'], 'POSE')
+export finished in 0.0519 sec.
+
+FBX export starting... 'C:\\Work\\MySelf\\Guildborne\\assets\\uat01\\enemy-kit\\greenwood_scout_Hit.fbx'
+(bpy.data.armatures['Armature'], 'POSE')
+export finished in 0.0332 sec.
+Info: Saved as "greenwood_scout.blend"
+
+FBX export starting... 'C:\\Work\\MySelf\\Guildborne\\assets\\uat01\\enemy-kit\\greenwood_archer_Rest.fbx'
+(bpy.data.armatures['Armature'], 'POSE')
+export finished in 0.0120 sec.
+01:20:35 | INFO: Starting glTF 2.0 export
+01:20:35 | INFO: Extracting primitive: Cube
+01:20:35 | INFO: Primitives created: 7
+01:20:35 | INFO: Finished glTF 2.0 export in 0.019873619079589844 s
+00:11.546  render           | Saved: 'C:\Work\MySelf\Guildborne\assets\uat01\enemy-kit\greenwood_archer.png'
+
+
+FBX export starting... 'C:\\Work\\MySelf\\Guildborne\\assets\\uat01\\enemy-kit\\greenwood_archer_Idle.fbx'
+(bpy.data.armatures['Armature'], 'POSE')
+export finished in 0.0630 sec.
+
+FBX export starting... 'C:\\Work\\MySelf\\Guildborne\\assets\\uat01\\enemy-kit\\greenwood_archer_Walk.fbx'
+(bpy.data.armatures['Armature'], 'POSE')
+export finished in 0.0443 sec.
+
+FBX export starting... 'C:\\Work\\MySelf\\Guildborne\\assets\\uat01\\enemy-kit\\greenwood_archer_Attack.fbx'
+(bpy.data.armatures['Armature'], 'POSE')
+export finished in 0.0504 sec.
+
+FBX export starting... 'C:\\Work\\MySelf\\Guildborne\\assets\\uat01\\enemy-kit\\greenwood_archer_Hit.fbx'
+(bpy.data.armatures['Armature'], 'POSE')
+export finished in 0.0338 sec.
+Info: Saved as "greenwood_archer.blend"
+
+FBX export starting... 'C:\\Work\\MySelf\\Guildborne\\assets\\uat01\\enemy-kit\\greenwood_boar_Rest.fbx'
+(bpy.data.armatures['Armature'], 'POSE')
+export finished in 0.0106 sec.
+01:20:37 | INFO: Starting glTF 2.0 export
+01:20:37 | INFO: Extracting primitive: Cube
+01:20:37 | INFO: Primitives created: 4
+01:20:37 | INFO: Finished glTF 2.0 export in 0.013793468475341797 s
+00:13.078  render           | Saved: 'C:\Work\MySelf\Guildborne\assets\uat01\enemy-kit\greenwood_boar.png'
+
+
+FBX export starting... 'C:\\Work\\MySelf\\Guildborne\\assets\\uat01\\enemy-kit\\greenwood_boar_Idle.fbx'
+(bpy.data.armatures['Armature'], 'POSE')
+export finished in 0.0658 sec.
+
+FBX export starting... 'C:\\Work\\MySelf\\Guildborne\\assets\\uat01\\enemy-kit\\greenwood_boar_Walk.fbx'
+(bpy.data.armatures['Armature'], 'POSE')
+export finished in 0.0471 sec.
+
+FBX export starting... 'C:\\Work\\MySelf\\Guildborne\\assets\\uat01\\enemy-kit\\greenwood_boar_Attack.fbx'
+(bpy.data.armatures['Armature'], 'POSE')
+export finished in 0.0487 sec.
+
+FBX export starting... 'C:\\Work\\MySelf\\Guildborne\\assets\\uat01\\enemy-kit\\greenwood_boar_Hit.fbx'
+(bpy.data.armatures['Armature'], 'POSE')
+export finished in 0.0313 sec.
+Info: Saved as "greenwood_boar.blend"
+
+FBX export starting... 'C:\\Work\\MySelf\\Guildborne\\assets\\uat01\\enemy-kit\\forest_captain_Rest.fbx'
+(bpy.data.armatures['Armature'], 'POSE')
+export finished in 0.0121 sec.
+01:20:38 | INFO: Starting glTF 2.0 export
+01:20:38 | INFO: Extracting primitive: Cube
+01:20:38 | INFO: Primitives created: 8
+01:20:38 | INFO: Finished glTF 2.0 export in 0.07062315940856934 s
+00:14.765  render           | Saved: 'C:\Work\MySelf\Guildborne\assets\uat01\enemy-kit\forest_captain.png'
+
+
+FBX export starting... 'C:\\Work\\MySelf\\Guildborne\\assets\\uat01\\enemy-kit\\forest_captain_Idle.fbx'
+(bpy.data.armatures['Armature'], 'POSE')
+export finished in 0.0706 sec.
+
+FBX export starting... 'C:\\Work\\MySelf\\Guildborne\\assets\\uat01\\enemy-kit\\forest_captain_Walk.fbx'
+(bpy.data.armatures['Armature'], 'POSE')
+export finished in 0.0525 sec.
+
+FBX export starting... 'C:\\Work\\MySelf\\Guildborne\\assets\\uat01\\enemy-kit\\forest_captain_Attack.fbx'
+(bpy.data.armatures['Armature'], 'POSE')
+export finished in 0.0542 sec.
+
+FBX export starting... 'C:\\Work\\MySelf\\Guildborne\\assets\\uat01\\enemy-kit\\forest_captain_Hit.fbx'
+(bpy.data.armatures['Armature'], 'POSE')
+export finished in 0.0359 sec.
+Info: Saved as "forest_captain.blend"
+
+FBX export starting... 'C:\\Work\\MySelf\\Guildborne\\assets\\uat01\\enemy-kit\\quarry_raider_Rest.fbx'
+(bpy.data.armatures['Armature'], 'POSE')
+export finished in 0.0122 sec.
+01:20:40 | INFO: Starting glTF 2.0 export
+01:20:40 | INFO: Extracting primitive: Cube
+01:20:40 | INFO: Primitives created: 8
+01:20:40 | INFO: Finished glTF 2.0 export in 0.023867130279541016 s
+00:16.390  render           | Saved: 'C:\Work\MySelf\Guildborne\assets\uat01\enemy-kit\quarry_raider.png'
+
+
+FBX export starting... 'C:\\Work\\MySelf\\Guildborne\\assets\\uat01\\enemy-kit\\quarry_raider_Idle.fbx'
+(bpy.data.armatures['Armature'], 'POSE')
+export finished in 0.0668 sec.
+
+FBX export starting... 'C:\\Work\\MySelf\\Guildborne\\assets\\uat01\\enemy-kit\\quarry_raider_Walk.fbx'
+(bpy.data.armatures['Armature'], 'POSE')
+export finished in 0.0458 sec.
+
+FBX export starting... 'C:\\Work\\MySelf\\Guildborne\\assets\\uat01\\enemy-kit\\quarry_raider_Attack.fbx'
+(bpy.data.armatures['Armature'], 'POSE')
+export finished in 0.0528 sec.
+
+FBX export starting... 'C:\\Work\\MySelf\\Guildborne\\assets\\uat01\\enemy-kit\\quarry_raider_Hit.fbx'
+(bpy.data.armatures['Armature'], 'POSE')
+export finished in 0.0345 sec.
+Info: Saved as "quarry_raider.blend"
+
+FBX export starting... 'C:\\Work\\MySelf\\Guildborne\\assets\\uat01\\enemy-kit\\stone_guard_Rest.fbx'
+(bpy.data.armatures['Armature'], 'POSE')
+export finished in 0.0135 sec.
+01:20:42 | INFO: Starting glTF 2.0 export
+01:20:42 | INFO: Extracting primitive: Cube
+01:20:42 | INFO: Primitives created: 5
+01:20:42 | INFO: Finished glTF 2.0 export in 0.018183231353759766 s
+00:18.078  render           | Saved: 'C:\Work\MySelf\Guildborne\assets\uat01\enemy-kit\stone_guard.png'
+
+
+FBX export starting... 'C:\\Work\\MySelf\\Guildborne\\assets\\uat01\\enemy-kit\\stone_guard_Idle.fbx'
+(bpy.data.armatures['Armature'], 'POSE')
+export finished in 0.0670 sec.
+
+FBX export starting... 'C:\\Work\\MySelf\\Guildborne\\assets\\uat01\\enemy-kit\\stone_guard_Walk.fbx'
+(bpy.data.armatures['Armature'], 'POSE')
+export finished in 0.0461 sec.
+
+FBX export starting... 'C:\\Work\\MySelf\\Guildborne\\assets\\uat01\\enemy-kit\\stone_guard_Attack.fbx'
+(bpy.data.armatures['Armature'], 'POSE')
+export finished in 0.0556 sec.
+
+FBX export starting... 'C:\\Work\\MySelf\\Guildborne\\assets\\uat01\\enemy-kit\\stone_guard_Hit.fbx'
+(bpy.data.armatures['Armature'], 'POSE')
+export finished in 0.0359 sec.
+Info: Saved as "stone_guard.blend"
+
+FBX export starting... 'C:\\Work\\MySelf\\Guildborne\\assets\\uat01\\enemy-kit\\crystal_shaman_Rest.fbx'
+(bpy.data.armatures['Armature'], 'POSE')
+export finished in 0.0123 sec.
+01:20:43 | INFO: Starting glTF 2.0 export
+01:20:43 | INFO: Extracting primitive: Cube
+01:20:43 | INFO: Primitives created: 5
+01:20:43 | INFO: Finished glTF 2.0 export in 0.022377490997314453 s
+00:19.687  render           | Saved: 'C:\Work\MySelf\Guildborne\assets\uat01\enemy-kit\crystal_shaman.png'
+
+
+FBX export starting... 'C:\\Work\\MySelf\\Guildborne\\assets\\uat01\\enemy-kit\\crystal_shaman_Idle.fbx'
+(bpy.data.armatures['Armature'], 'POSE')
+export finished in 0.0660 sec.
+
+FBX export starting... 'C:\\Work\\MySelf\\Guildborne\\assets\\uat01\\enemy-kit\\crystal_shaman_Walk.fbx'
+(bpy.data.armatures['Armature'], 'POSE')
+export finished in 0.0459 sec.
+
+FBX export starting... 'C:\\Work\\MySelf\\Guildborne\\assets\\uat01\\enemy-kit\\crystal_shaman_Attack.fbx'
+(bpy.data.armatures['Armature'], 'POSE')
+export finished in 0.0485 sec.
+
+FBX export starting... 'C:\\Work\\MySelf\\Guildborne\\assets\\uat01\\enemy-kit\\crystal_shaman_Hit.fbx'
+(bpy.data.armatures['Armature'], 'POSE')
+export finished in 0.0321 sec.
+Info: Saved as "crystal_shaman.blend"
+
+FBX export starting... 'C:\\Work\\MySelf\\Guildborne\\assets\\uat01\\enemy-kit\\quarry_guardian_Rest.fbx'
+(bpy.data.armatures['Armature'], 'POSE')
+export finished in 0.0111 sec.
+01:20:45 | INFO: Starting glTF 2.0 export
+01:20:45 | INFO: Extracting primitive: Cube
+01:20:45 | INFO: Primitives created: 5
+01:20:45 | INFO: Finished glTF 2.0 export in 0.015893220901489258 s
+00:21.281  render           | Saved: 'C:\Work\MySelf\Guildborne\assets\uat01\enemy-kit\quarry_guardian.png'
+
+
+FBX export starting... 'C:\\Work\\MySelf\\Guildborne\\assets\\uat01\\enemy-kit\\quarry_guardian_Idle.fbx'
+(bpy.data.armatures['Armature'], 'POSE')
+export finished in 0.0633 sec.
+
+FBX export starting... 'C:\\Work\\MySelf\\Guildborne\\assets\\uat01\\enemy-kit\\quarry_guardian_Walk.fbx'
+(bpy.data.armatures['Armature'], 'POSE')
+export finished in 0.0506 sec.
+
+FBX export starting... 'C:\\Work\\MySelf\\Guildborne\\assets\\uat01\\enemy-kit\\quarry_guardian_Attack.fbx'
+(bpy.data.armatures['Armature'], 'POSE')
+export finished in 0.0483 sec.
+
+FBX export starting... 'C:\\Work\\MySelf\\Guildborne\\assets\\uat01\\enemy-kit\\quarry_guardian_Hit.fbx'
+(bpy.data.armatures['Armature'], 'POSE')
+export finished in 0.0316 sec.
+Info: Saved as "quarry_guardian.blend"
+
+FBX export starting... 'C:\\Work\\MySelf\\Guildborne\\assets\\uat01\\enemy-kit\\arcane_sentinel_Rest.fbx'
+(bpy.data.armatures['Armature'], 'POSE')
+export finished in 0.0113 sec.
+01:20:46 | INFO: Starting glTF 2.0 export
+01:20:46 | INFO: Extracting primitive: Cube
+01:20:46 | INFO: Primitives created: 7
+01:20:46 | INFO: Finished glTF 2.0 export in 0.019242286682128906 s
+00:22.906  render           | Saved: 'C:\Work\MySelf\Guildborne\assets\uat01\enemy-kit\arcane_sentinel.png'
+
+
+FBX export starting... 'C:\\Work\\MySelf\\Guildborne\\assets\\uat01\\enemy-kit\\arcane_sentinel_Idle.fbx'
+(bpy.data.armatures['Armature'], 'POSE')
+export finished in 0.0641 sec.
+
+FBX export starting... 'C:\\Work\\MySelf\\Guildborne\\assets\\uat01\\enemy-kit\\arcane_sentinel_Walk.fbx'
+(bpy.data.armatures['Armature'], 'POSE')
+export finished in 0.0428 sec.
+
+FBX export starting... 'C:\\Work\\MySelf\\Guildborne\\assets\\uat01\\enemy-kit\\arcane_sentinel_Attack.fbx'
+(bpy.data.armatures['Armature'], 'POSE')
+export finished in 0.0518 sec.
+
+FBX export starting... 'C:\\Work\\MySelf\\Guildborne\\assets\\uat01\\enemy-kit\\arcane_sentinel_Hit.fbx'
+(bpy.data.armatures['Armature'], 'POSE')
+export finished in 0.0580 sec.
+Info: Saved as "arcane_sentinel.blend"
+
+FBX export starting... 'C:\\Work\\MySelf\\Guildborne\\assets\\uat01\\enemy-kit\\rune_caster_Rest.fbx'
+(bpy.data.armatures['Armature'], 'POSE')
+export finished in 0.0115 sec.
+01:20:48 | INFO: Starting glTF 2.0 export
+01:20:48 | INFO: Extracting primitive: Cube
+01:20:48 | INFO: Primitives created: 6
+01:20:48 | INFO: Finished glTF 2.0 export in 0.018739700317382812 s
+00:24.546  render           | Saved: 'C:\Work\MySelf\Guildborne\assets\uat01\enemy-kit\rune_caster.png'
+
+
+FBX export starting... 'C:\\Work\\MySelf\\Guildborne\\assets\\uat01\\enemy-kit\\rune_caster_Idle.fbx'
+(bpy.data.armatures['Armature'], 'POSE')
+export finished in 0.0627 sec.
+
+FBX export starting... 'C:\\Work\\MySelf\\Guildborne\\assets\\uat01\\enemy-kit\\rune_caster_Walk.fbx'
+(bpy.data.armatures['Armature'], 'POSE')
+export finished in 0.0435 sec.
+
+FBX export starting... 'C:\\Work\\MySelf\\Guildborne\\assets\\uat01\\enemy-kit\\rune_caster_Attack.fbx'
+(bpy.data.armatures['Armature'], 'POSE')
+export finished in 0.0481 sec.
+
+FBX export starting... 'C:\\Work\\MySelf\\Guildborne\\assets\\uat01\\enemy-kit\\rune_caster_Hit.fbx'
+(bpy.data.armatures['Armature'], 'POSE')
+export finished in 0.0341 sec.
+Info: Saved as "rune_caster.blend"
+
+FBX export starting... 'C:\\Work\\MySelf\\Guildborne\\assets\\uat01\\enemy-kit\\rune_hound_Rest.fbx'
+(bpy.data.armatures['Armature'], 'POSE')
+export finished in 0.0111 sec.
+01:20:50 | INFO: Starting glTF 2.0 export
+01:20:50 | INFO: Extracting primitive: Cube
+01:20:50 | INFO: Primitives created: 3
+01:20:50 | INFO: Finished glTF 2.0 export in 0.014294862747192383 s
+00:26.140  render           | Saved: 'C:\Work\MySelf\Guildborne\assets\uat01\enemy-kit\rune_hound.png'
+
+
+FBX export starting... 'C:\\Work\\MySelf\\Guildborne\\assets\\uat01\\enemy-kit\\rune_hound_Idle.fbx'
+(bpy.data.armatures['Armature'], 'POSE')
+export finished in 0.0669 sec.
+
+FBX export starting... 'C:\\Work\\MySelf\\Guildborne\\assets\\uat01\\enemy-kit\\rune_hound_Walk.fbx'
+(bpy.data.armatures['Armature'], 'POSE')
+export finished in 0.0451 sec.
+
+FBX export starting... 'C:\\Work\\MySelf\\Guildborne\\assets\\uat01\\enemy-kit\\rune_hound_Attack.fbx'
+(bpy.data.armatures['Armature'], 'POSE')
+export finished in 0.0589 sec.
+
+FBX export starting... 'C:\\Work\\MySelf\\Guildborne\\assets\\uat01\\enemy-kit\\rune_hound_Hit.fbx'
+(bpy.data.armatures['Armature'], 'POSE')
+export finished in 0.0337 sec.
+Info: Saved as "rune_hound.blend"
+
+FBX export starting... 'C:\\Work\\MySelf\\Guildborne\\assets\\uat01\\enemy-kit\\arcane_warden_Rest.fbx'
+(bpy.data.armatures['Armature'], 'POSE')
+export finished in 0.0124 sec.
+01:20:51 | INFO: Starting glTF 2.0 export
+01:20:51 | INFO: Extracting primitive: Cube
+01:20:51 | INFO: Primitives created: 6
+01:20:51 | INFO: Finished glTF 2.0 export in 0.025740385055541992 s
+00:27.796  render           | Saved: 'C:\Work\MySelf\Guildborne\assets\uat01\enemy-kit\arcane_warden.png'
+
+
+FBX export starting... 'C:\\Work\\MySelf\\Guildborne\\assets\\uat01\\enemy-kit\\arcane_warden_Idle.fbx'
+(bpy.data.armatures['Armature'], 'POSE')
+export finished in 0.0656 sec.
+
+FBX export starting... 'C:\\Work\\MySelf\\Guildborne\\assets\\uat01\\enemy-kit\\arcane_warden_Walk.fbx'
+(bpy.data.armatures['Armature'], 'POSE')
+export finished in 0.0475 sec.
+
+FBX export starting... 'C:\\Work\\MySelf\\Guildborne\\assets\\uat01\\enemy-kit\\arcane_warden_Attack.fbx'
+(bpy.data.armatures['Armature'], 'POSE')
+export finished in 0.0510 sec.
+
+FBX export starting... 'C:\\Work\\MySelf\\Guildborne\\assets\\uat01\\enemy-kit\\arcane_warden_Hit.fbx'
+(bpy.data.armatures['Armature'], 'POSE')
+export finished in 0.0366 sec.
+Info: Saved as "arcane_warden.blend"
+01:20:53 | INFO: Data are loaded, start creating Blender stuff
+01:20:53 | INFO: Blender create Mesh node Cube
+01:20:53 | INFO: glTF import finished in 0.02s
+C:\Work\MySelf\Guildborne\tools\blender_enemy_kit.py:86: DeprecationWarning: 'Material.use_nodes' is expected to be removed in Blender 6.0
+  m=bpy.data.materials.new('Label');m.use_nodes=True;m.node_tree.nodes['Principled BSDF'].inputs['Base Color'].default_value=(.9,.8,.6,1);label.data.materials.append(m)
+01:20:53 | INFO: Data are loaded, start creating Blender stuff
+01:20:53 | INFO: Blender create Mesh node Cube
+01:20:53 | INFO: glTF import finished in 0.02s
+01:20:53 | INFO: Data are loaded, start creating Blender stuff
+01:20:53 | INFO: Blender create Mesh node Cube
+01:20:53 | INFO: glTF import finished in 0.01s
+01:20:53 | INFO: Data are loaded, start creating Blender stuff
+01:20:53 | INFO: Blender create Mesh node Cube
+01:20:53 | INFO: glTF import finished in 0.02s
+01:20:53 | INFO: Data are loaded, start creating Blender stuff
+01:20:53 | INFO: Blender create Mesh node Cube
+01:20:53 | INFO: glTF import finished in 0.02s
+01:20:53 | INFO: Data are loaded, start creating Blender stuff
+01:20:53 | INFO: Blender create Mesh node Cube
+01:20:53 | INFO: glTF import finished in 0.02s
+01:20:53 | INFO: Data are loaded, start creating Blender stuff
+01:20:53 | INFO: Blender create Mesh node Cube
+01:20:53 | INFO: glTF import finished in 0.02s
+01:20:53 | INFO: Data are loaded, start creating Blender stuff
+01:20:53 | INFO: Blender create Mesh node Cube
+01:20:53 | INFO: glTF import finished in 0.02s
+01:20:53 | INFO: Data are loaded, start creating Blender stuff
+01:20:53 | INFO: Blender create Mesh node Cube
+01:20:53 | INFO: glTF import finished in 0.02s
+01:20:53 | INFO: Data are loaded, start creating Blender stuff
+01:20:53 | INFO: Blender create Mesh node Cube
+01:20:53 | INFO: glTF import finished in 0.02s
+01:20:53 | INFO: Data are loaded, start creating Blender stuff
+01:20:53 | INFO: Blender create Mesh node Cube
+01:20:53 | INFO: glTF import finished in 0.02s
+01:20:53 | INFO: Data are loaded, start creating Blender stuff
+01:20:53 | INFO: Blender create Mesh node Cube
+01:20:53 | INFO: glTF import finished in 0.02s
+00:38.187  render           | Saved: 'C:\Work\MySelf\Guildborne\assets\uat01\enemy-kit\preview.png'
+Info: Saved as "Guildborne_Enemy_Gallery.blend"
+ENEMY_RIG_KIT_COMPLETE 12 rigs 4008 triangles 48 clips
+Blender 5.2.1 LTS (hash 9e2066aef7ef built 2026-08-25 02:38:20)
+
+Blender quit

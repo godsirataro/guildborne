@@ -1,0 +1,41 @@
+{
+  "schema": 1,
+  "clips": [
+    {
+      "id": "preserve",
+      "seconds": 8,
+      "fps": 30,
+      "frames": 241,
+      "parts": 87,
+      "animatedParts": 13,
+      "file": "preserve_Replay.glb",
+      "robloxAnimationId": null,
+      "role": "editable native-motion reference; platform import pending"
+    },
+    {
+      "id": "transform",
+      "seconds": 8,
+      "fps": 30,
+      "frames": 241,
+      "parts": 50,
+      "animatedParts": 18,
+      "file": "transform_Replay.glb",
+      "robloxAnimationId": null,
+      "role": "editable native-motion reference; platform import pending"
+    },
+    {
+      "id": "dismantle",
+      "seconds": 8,
+      "fps": 30,
+      "frames": 241,
+      "parts": 86,
+      "animatedParts": 15,
+      "file": "dismantle_Replay.glb",
+      "robloxAnimationId": null,
+      "role": "editable native-motion reference; platform import pending"
+    }
+  ],
+  "units": "stud",
+  "conversion": "Roblox (x,y,z) to Blender (x,-z,y)",
+  "nativeSource": "src/shared/Presentation/ArchiveEndingMotion.luau"
+}

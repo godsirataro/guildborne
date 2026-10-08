@@ -1,0 +1,14 @@
+{
+  "place": "build/Guildborne_OfflinePlaytest.rbxlx",
+  "runtimeScriptCount": 316,
+  "changedSourcePaths": [
+    "ServerScriptService/Server/Config/Runtime"
+  ],
+  "runtimeModuleCount": 1,
+  "studioPersistence": "Memory",
+  "cloudAllowlistEmpty": true,
+  "stagingRuntimeSha256": "faf091ecb11926c69d6663f4987629a38a7d66f7128c4d29c2a37693c32a5ed5",
+  "stagingRuntimeUnchanged": true,
+  "placeSha256": "728bc9deed57ed398d7de12a4f0609390a2cbdc2c6aa4115e364f817a2da02cd",
+  "runtimeAcceptance": "Separate evidence required; build comparison does not prove gameplay"
+}

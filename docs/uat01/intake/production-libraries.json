@@ -1,0 +1,2427 @@
+{
+  "schema": 1,
+  "libraries": [
+    {
+      "id": "city-interior-kit",
+      "title": "City room furnishings",
+      "files": [
+        {
+          "path": "assets/uat01/city-interior-kit/alchemy_study.fbx",
+          "bytes": 28828,
+          "sha256": "e949a842c983b2394d0ce29cbcc9fa53eb8b9a68e631e769b32c0e7ed6120db5"
+        },
+        {
+          "path": "assets/uat01/city-interior-kit/alchemy_study.glb",
+          "bytes": 47772,
+          "sha256": "26a79aa19262238759e436a85709a0acd722e10925b579a3066b48ceef449665"
+        },
+        {
+          "path": "assets/uat01/city-interior-kit/alchemy_study.png",
+          "bytes": 244432,
+          "sha256": "11848785a0f46193e81c30ab5f30273e39cf34d3b8dc768dbde834b5e6358494"
+        },
+        {
+          "path": "assets/uat01/city-interior-kit/exchange_office.fbx",
+          "bytes": 24268,
+          "sha256": "b8ed22d05743528f0a52cdf29fd16f89e58da09d5b43b7524e2e7ed3096ba958"
+        },
+        {
+          "path": "assets/uat01/city-interior-kit/exchange_office.glb",
+          "bytes": 30632,
+          "sha256": "6d3d6c97d01735d63e1ec100d6db63c77fd640d14511dc4c550a1e36cc43bd50"
+        },
+        {
+          "path": "assets/uat01/city-interior-kit/exchange_office.png",
+          "bytes": 257820,
+          "sha256": "e9722a02019de878c294ce8364ccec2fe63128e9de240f55f55ec0e239682e16"
+        },
+        {
+          "path": "assets/uat01/city-interior-kit/export-report.json",
+          "bytes": 1341,
+          "sha256": "c3affe5e485e55f400ae490b6d68073ce9c88909f007526b240a8243a4af8312"
+        },
+        {
+          "path": "assets/uat01/city-interior-kit/forge_workshop.fbx",
+          "bytes": 22716,
+          "sha256": "08c05e735ec81f3ca9bcb3d2eb6bc1602b5e988dd55e0143fdf5bca1dcb38857"
+        },
+        {
+          "path": "assets/uat01/city-interior-kit/forge_workshop.glb",
+          "bytes": 24044,
+          "sha256": "c12827c7b8212ec1fc045c63cc4c0c4df5a10ae200dabb441d6d8c2e8970917d"
+        },
+        {
+          "path": "assets/uat01/city-interior-kit/forge_workshop.png",
+          "bytes": 250149,
+          "sha256": "e3c2e51c9daa85cd4df9ea318b47d7383c75a7f7a570c7d30c3f903857dd787b"
+        },
+        {
+          "path": "assets/uat01/city-interior-kit/guild_office.fbx",
+          "bytes": 25612,
+          "sha256": "54edb0fde1e4154079c5a0426a18bd22c2ec5efef2d34e726b52e801c5a32678"
+        },
+        {
+          "path": "assets/uat01/city-interior-kit/guild_office.glb",
+          "bytes": 32336,
+          "sha256": "d23daea465556c2edf6de52b1f0248baa7a02d87469fd19ac9143381aa46ea91"
+        },
+        {
+          "path": "assets/uat01/city-interior-kit/guild_office.png",
+          "bytes": 249360,
+          "sha256": "177c0141578612ac7a54d5bf4ac0789acbf22b63fbdeee1c687e505e96b9b0e5"
+        },
+        {
+          "path": "assets/uat01/city-interior-kit/Guildborne_City_Interiors.blend",
+          "bytes": 175269,
+          "sha256": "7b1c27c5081526eb24cca0eb7efe8fae06bcfbc15a2d33f27b7e694fb63780eb"
+        },
+        {
+          "path": "assets/uat01/city-interior-kit/hearth_tavern.fbx",
+          "bytes": 24140,
+          "sha256": "3e872c3222ea1859bb3bdd034ec12d7a9da55f7641d0afbee197803a7960e1ee"
+        },
+        {
+          "path": "assets/uat01/city-interior-kit/hearth_tavern.glb",
+          "bytes": 34980,
+          "sha256": "70fcffa4d8354adcae37b25d44ebc75a1fe9fdd3a658f8bd7026d4e1f32735ba"
+        },
+        {
+          "path": "assets/uat01/city-interior-kit/hearth_tavern.png",
+          "bytes": 256424,
+          "sha256": "581af4e16de8abfd2c066a7f52e9398aa5541c91131411eb311a7718bc6701c3"
+        },
+        {
+          "path": "assets/uat01/city-interior-kit/kit.json",
+          "bytes": 64546,
+          "sha256": "c2fd3d8938dcf96cae4131b30ba571129969fb651e0b308459a9fb9d0a1f3069"
+        },
+        {
+          "path": "assets/uat01/city-interior-kit/preview.png",
+          "bytes": 630574,
+          "sha256": "c89c8f54161d19b4a50867b460f0c8d80fdfec1c30d8fec2d50e6d0b39fa2719"
+        },
+        {
+          "path": "assets/uat01/city-interior-kit/roundtrip-report.json",
+          "bytes": 1899,
+          "sha256": "2999e9c6b3a57a924ddcb3917538966f6811b652958dfb4a02456c049830bce8"
+        }
+      ],
+      "counts": {
+        ".blend": 1,
+        ".fbx": 5,
+        ".glb": 5,
+        ".png": 6,
+        ".gif": 0
+      },
+      "nativeSource": "src/server/Services/CityInteriorKit.luau",
+      "pending": "Native five-building integration complete; mesh imports, physical traversal and device acceptance pending",
+      "uatApproved": false,
+      "cloudImported": false
+    },
+    {
+      "id": "adventure-kit",
+      "title": "Environment props",
+      "files": [
+        {
+          "path": "assets/uat01/adventure-kit/AdventurerQuestBoard.fbx",
+          "bytes": 21148,
+          "sha256": "b62c18c8466ad73b14ee6565918741ddf4b526d06c49b952c37b2b5407a38d8e"
+        },
+        {
+          "path": "assets/uat01/adventure-kit/AdventurerQuestBoard.glb",
+          "bytes": 13816,
+          "sha256": "0c0a4a64fd4a899179ef79d1b7f2809c10add2ecc5f6b8637c16620f8a4b9fbd"
+        },
+        {
+          "path": "assets/uat01/adventure-kit/AshenRunePillar.fbx",
+          "bytes": 18268,
+          "sha256": "371c068d1f2c2a6c9b87fe637a03be4db0b32c35a655c464f510d58fc5a8f585"
+        },
+        {
+          "path": "assets/uat01/adventure-kit/AshenRunePillar.glb",
+          "bytes": 8924,
+          "sha256": "06e749b056fa1ccfeb21f52fffa76105db476d6cfa311028d8e7f8b824a2d78a"
+        },
+        {
+          "path": "assets/uat01/adventure-kit/AshenShrine.fbx",
+          "bytes": 19884,
+          "sha256": "cbf5b09ea0455c5afd40380d82698dbafc64743b44de3f362fbc69a8c4e33e1e"
+        },
+        {
+          "path": "assets/uat01/adventure-kit/AshenShrine.glb",
+          "bytes": 10636,
+          "sha256": "a318aa6ab7ce1ab62b29054eb1c87221a1987a9328957116e1be15abf5d3aa2b"
+        },
+        {
+          "path": "assets/uat01/adventure-kit/export-report.json",
+          "bytes": 2761,
+          "sha256": "8d278768088b7913f7e0c4c81ad2cb20f208ac687654f3179b5e457c3dd477dd"
+        },
+        {
+          "path": "assets/uat01/adventure-kit/GreenwoodFern.fbx",
+          "bytes": 18700,
+          "sha256": "fee0c6f3ab1dfe67c79f8ff0147d1019fe8cd6ca821166f2c1d0f20a8a59d035"
+        },
+        {
+          "path": "assets/uat01/adventure-kit/GreenwoodFern.glb",
+          "bytes": 8948,
+          "sha256": "9333b66917b510b4cd712135916da05167b9ce64de30a1a7aa659bbecea41533"
+        },
+        {
+          "path": "assets/uat01/adventure-kit/GreenwoodSupplyCache.fbx",
+          "bytes": 19052,
+          "sha256": "279cc2258f3f09c36e6769f996d417c0b1a2b5b3a937fc8bf2603449a5eba653"
+        },
+        {
+          "path": "assets/uat01/adventure-kit/GreenwoodSupplyCache.glb",
+          "bytes": 7896,
+          "sha256": "a5f4e72081a8443c973a072466832af3f396350349bd5377ae98e46070455e96"
+        },
+        {
+          "path": "assets/uat01/adventure-kit/GreenwoodWaystone.fbx",
+          "bytes": 20556,
+          "sha256": "293c5a1eeeb38ef03242643f8985d8caf71e1c931889fc0f5fae5c28c5f43c4c"
+        },
+        {
+          "path": "assets/uat01/adventure-kit/GreenwoodWaystone.glb",
+          "bytes": 10528,
+          "sha256": "6869fcdb15551c826e2a31547a7c3127da5253ed19035b0977f4d660e7dc8ea6"
+        },
+        {
+          "path": "assets/uat01/adventure-kit/Guildborne_Adventure_Kit.blend",
+          "bytes": 119626,
+          "sha256": "22fedf5c1f37bffa0ce684bb10332a6267dffd0f5415e0aa43f0aefb955f5edd"
+        },
+        {
+          "path": "assets/uat01/adventure-kit/HarborMarketStall.fbx",
+          "bytes": 22284,
+          "sha256": "a9905f8d4508e164c65181ce88531ddd2126038e84254630fd438dffeff6dcfd"
+        },
+        {
+          "path": "assets/uat01/adventure-kit/HarborMarketStall.glb",
+          "bytes": 17100,
+          "sha256": "2ede8d7d9e06d28a047e9914b8b8c58e3dfe4901edfb9137fd565e6d5aad3f69"
+        },
+        {
+          "path": "assets/uat01/adventure-kit/IronveilCrystalCluster.fbx",
+          "bytes": 18780,
+          "sha256": "8d750926f1e39c78e0bd8c3ca058df452fee8c068abf8b70ee8cc6c361ca6a95"
+        },
+        {
+          "path": "assets/uat01/adventure-kit/IronveilCrystalCluster.glb",
+          "bytes": 8892,
+          "sha256": "9a466b0a525e15223fc8078b36848c4c6a860ada512cca23848ea33c293c786b"
+        },
+        {
+          "path": "assets/uat01/adventure-kit/IronveilForge.fbx",
+          "bytes": 19436,
+          "sha256": "a640916b584bbdefeefe53cfa225258385c84b82ec4d191ffdf96956ddf0011e"
+        },
+        {
+          "path": "assets/uat01/adventure-kit/IronveilForge.glb",
+          "bytes": 11068,
+          "sha256": "d965790d840920e1292c8f7c3bbc10b2e3bd140530e2a56d61582a8c100379ce"
+        },
+        {
+          "path": "assets/uat01/adventure-kit/IronveilOreCart.fbx",
+          "bytes": 20300,
+          "sha256": "97b3adc9d1a2fd602ae3a9c090c8dc15fa704e8cda6e2bb4198b037013a60eb9"
+        },
+        {
+          "path": "assets/uat01/adventure-kit/IronveilOreCart.glb",
+          "bytes": 13644,
+          "sha256": "c2c846987c85b696174e973ba0cd665029e656f122a9bbc106bbd2428a3c2f04"
+        },
+        {
+          "path": "assets/uat01/adventure-kit/kit.json",
+          "bytes": 35126,
+          "sha256": "d973d427a5190b664e7e8aef445004727408321b8459f17a508af09e56fdd1d2"
+        },
+        {
+          "path": "assets/uat01/adventure-kit/preview.png",
+          "bytes": 1692396,
+          "sha256": "9bab9783ae23bfc6bde0220b422a9fbb200e366eaeac50943d2a121a548cf7c0"
+        },
+        {
+          "path": "assets/uat01/adventure-kit/roundtrip-report.json",
+          "bytes": 2599,
+          "sha256": "83db488f151dda4d2cccc5b7757bda4fc7f121f53e0a52fbf611ed85a533ddca"
+        }
+      ],
+      "counts": {
+        ".blend": 1,
+        ".fbx": 10,
+        ".glb": 10,
+        ".png": 1,
+        ".gif": 0
+      },
+      "nativeSource": "src/server/Services/AdventurePropKit.luau",
+      "pending": "Roblox mesh import; dressing and environment acceptance",
+      "uatApproved": false,
+      "cloudImported": false
+    },
+    {
+      "id": "weapon-kit",
+      "title": "Equipment weapons",
+      "files": [
+        {
+          "path": "assets/uat01/weapon-kit/dawn_crozier.fbx",
+          "bytes": 20268,
+          "sha256": "bf01cac4d664cb7c883b60df711bfabc4efd8a842ba73d153a40df246815cb00"
+        },
+        {
+          "path": "assets/uat01/weapon-kit/dawn_crozier.glb",
+          "bytes": 13888,
+          "sha256": "0acdd92b9f60da5c00d3d12a8d71963ab5f045cedde5cf4f59fcd0c95335e418"
+        },
+        {
+          "path": "assets/uat01/weapon-kit/export-report.json",
+          "bytes": 1085,
+          "sha256": "06ab258996e545a9a36c4bba4da701dc726867d240de3c4e40c915b62420e923"
+        },
+        {
+          "path": "assets/uat01/weapon-kit/Guildborne_Weapon_Kit.blend",
+          "bytes": 107576,
+          "sha256": "3b79e89d8c0b54096c73ed731be623c825ec36330347a7d504031782a679580a"
+        },
+        {
+          "path": "assets/uat01/weapon-kit/kit.json",
+          "bytes": 20506,
+          "sha256": "532ff28a46d48de77b0a32fbcb49a2288e1dbfc1a6cf518783ac4ce81a59af74"
+        },
+        {
+          "path": "assets/uat01/weapon-kit/oathblade.fbx",
+          "bytes": 19148,
+          "sha256": "7f030a1f4c81f51c5d835071189c564dee726dad9a1f94dde89df3e791390b7f"
+        },
+        {
+          "path": "assets/uat01/weapon-kit/oathblade.glb",
+          "bytes": 12732,
+          "sha256": "90bb1e8fdcfa5d7b7977970139c8f9a42e8c7b81d89457e228bf47b18c0844ff"
+        },
+        {
+          "path": "assets/uat01/weapon-kit/preview.png",
+          "bytes": 1507637,
+          "sha256": "bc3900254c0085b5a5aafc9808aaa74be5a93ae7c075bf5e6881dba2c6d1da54"
+        },
+        {
+          "path": "assets/uat01/weapon-kit/roundtrip-report.json",
+          "bytes": 2119,
+          "sha256": "5d9ac067ee348eef4f9bd6076f865151179bcb7509946d1dcd21fba85572a95d"
+        },
+        {
+          "path": "assets/uat01/weapon-kit/tide_staff.fbx",
+          "bytes": 19996,
+          "sha256": "cd5d2be25b131c21de3cef500dd47cbdc366a7fef1c6f572c2eee6ae5f31cfcb"
+        },
+        {
+          "path": "assets/uat01/weapon-kit/tide_staff.glb",
+          "bytes": 12160,
+          "sha256": "9b6dffbe7fc313273c72e342c003c605abf4b00e5c03d828d6098786399a3839"
+        },
+        {
+          "path": "assets/uat01/weapon-kit/watchblade.fbx",
+          "bytes": 18796,
+          "sha256": "871a0d0b6080a93f30b4edead35197a04058b678f2cbc524e765f4c3d95f0889"
+        },
+        {
+          "path": "assets/uat01/weapon-kit/watchblade.glb",
+          "bytes": 11048,
+          "sha256": "c979c1e695e51d4f96c3c2df63849e17c05144cc8962b76566c0853b833dfc20"
+        },
+        {
+          "path": "assets/uat01/weapon-kit/yew_longbow.fbx",
+          "bytes": 21404,
+          "sha256": "a04af8db148f6e02bae802710c439842ff9c48aa31a5ab690e586aa99c264ac0"
+        },
+        {
+          "path": "assets/uat01/weapon-kit/yew_longbow.glb",
+          "bytes": 12876,
+          "sha256": "8d0ebd747cc1ba02f775e7d6654b3b6d783f7921c09f84c5a8ff66cdf47b88a3"
+        }
+      ],
+      "counts": {
+        ".blend": 1,
+        ".fbx": 5,
+        ".glb": 5,
+        ".png": 1,
+        ".gif": 0
+      },
+      "nativeSource": "src/server/Services/WeaponVisuals.luau",
+      "pending": "Roblox mesh import; device readability",
+      "uatApproved": false,
+      "cloudImported": false
+    },
+    {
+      "id": "item-kit",
+      "title": "Inventory display models",
+      "files": [
+        {
+          "path": "assets/uat01/item-kit/apprentice_staff.fbx",
+          "bytes": 19996,
+          "sha256": "76be5f49a84d1d07d63c34620c9038c1546b527332c12442a865b8414f2ea0db"
+        },
+        {
+          "path": "assets/uat01/item-kit/apprentice_staff.glb",
+          "bytes": 12168,
+          "sha256": "0bfbd8937e7723a64d717a640f2c9f36782ef7cfbd766db448fa66cb5e3bab35"
+        },
+        {
+          "path": "assets/uat01/item-kit/apprentice_staff.png",
+          "bytes": 113702,
+          "sha256": "40f9a41f60b24431782342c7c64a62c1793568f9bae8772cd298e05ac16167c8"
+        },
+        {
+          "path": "assets/uat01/item-kit/bronze_ring.fbx",
+          "bytes": 17548,
+          "sha256": "719d2f0e0ae9ac1a98cd4a7e6b1cc3eb218fc3023353524c650bb219b2139920"
+        },
+        {
+          "path": "assets/uat01/item-kit/bronze_ring.glb",
+          "bytes": 9716,
+          "sha256": "ae4fe1b55848e64aa1003fd529f91738199d62472f61d9354cc85db53ed6e5a1"
+        },
+        {
+          "path": "assets/uat01/item-kit/bronze_ring.png",
+          "bytes": 134191,
+          "sha256": "82d62846020fd7ccda91bce6f4c53f46e7cea328df34129107f60dfaac6076c3"
+        },
+        {
+          "path": "assets/uat01/item-kit/dawn_crozier.fbx",
+          "bytes": 20268,
+          "sha256": "95194701c63f618897b708fd2716a05d13d64d0e8d2ea57453ea00c4cf077a32"
+        },
+        {
+          "path": "assets/uat01/item-kit/dawn_crozier.glb",
+          "bytes": 13888,
+          "sha256": "0acdd92b9f60da5c00d3d12a8d71963ab5f045cedde5cf4f59fcd0c95335e418"
+        },
+        {
+          "path": "assets/uat01/item-kit/dawn_crozier.png",
+          "bytes": 109358,
+          "sha256": "08fad75bb000e6acdbc62fc982b258afadc131127907361db3de7056c0bcf777"
+        },
+        {
+          "path": "assets/uat01/item-kit/export-report.json",
+          "bytes": 8471,
+          "sha256": "a4624f15268167dda447181672ee4a68663e0d2e2d2fd8478c113fec3d7a6d37"
+        },
+        {
+          "path": "assets/uat01/item-kit/focus_prism.fbx",
+          "bytes": 17980,
+          "sha256": "93febfcda9810a677f394976011ffbfac2fae0e63d669628f9a8949405e01835"
+        },
+        {
+          "path": "assets/uat01/item-kit/focus_prism.glb",
+          "bytes": 6436,
+          "sha256": "1a78713408550d4015aae7abb69cd450d24df5e57c527588b20bf95e6d4af02c"
+        },
+        {
+          "path": "assets/uat01/item-kit/focus_prism.png",
+          "bytes": 129317,
+          "sha256": "2140a76d86d8229a744bf8721233361c798344eec3f854d59f68bab6647f293e"
+        },
+        {
+          "path": "assets/uat01/item-kit/guardian_plate.fbx",
+          "bytes": 19468,
+          "sha256": "ab23f21ab2a0274d8b2e0cf537dc77e6f1b417bcaac9e5bbd76fa9ad4c5f493e"
+        },
+        {
+          "path": "assets/uat01/item-kit/guardian_plate.glb",
+          "bytes": 10516,
+          "sha256": "7ad6ceeea8a84cc1a42f6d4da2d0f5b32f9e1d661161bab9d52de3c71a74443e"
+        },
+        {
+          "path": "assets/uat01/item-kit/guardian_plate.png",
+          "bytes": 141446,
+          "sha256": "fdabb7408fc307841f6917c75c58c8a36feddaaeab8b68ac25f02e82db432645"
+        },
+        {
+          "path": "assets/uat01/item-kit/Guildborne_Item_Kit.blend",
+          "bytes": 130191,
+          "sha256": "18cf01bb0361900e935d58b09ba70958813639b7e506d6409f0900a300e2baed"
+        },
+        {
+          "path": "assets/uat01/item-kit/harbor_mail.fbx",
+          "bytes": 20540,
+          "sha256": "548631a8cd082c2c6bafc36592796595bf84e0f2360a041e949327e9847706bc"
+        },
+        {
+          "path": "assets/uat01/item-kit/harbor_mail.glb",
+          "bytes": 11208,
+          "sha256": "efc91ec6aeec4f54519ebe7295910c6cd335a62fba2ea773c5c77e7ba1c7f662"
+        },
+        {
+          "path": "assets/uat01/item-kit/harbor_mail.png",
+          "bytes": 144614,
+          "sha256": "e27030d1e6898295b35b5e61ef0dfd670ed9e112dd5d40c93219cec2c67e1391"
+        },
+        {
+          "path": "assets/uat01/item-kit/herb.fbx",
+          "bytes": 17388,
+          "sha256": "08f82d8aca6f7bf8e767cc2aae918498570a391dede844e4ca2917b6d960a25c"
+        },
+        {
+          "path": "assets/uat01/item-kit/herb.glb",
+          "bytes": 8024,
+          "sha256": "4febeaed6395c514bb1f4459b0f005e2dac8e4e54c9caa1603558e291dfdeaf8"
+        },
+        {
+          "path": "assets/uat01/item-kit/herb.png",
+          "bytes": 137496,
+          "sha256": "f09d84051e93bf3c1d72c98d7fc5c74b002789ea5c3250e500413655c13f0902"
+        },
+        {
+          "path": "assets/uat01/item-kit/hunters_token.fbx",
+          "bytes": 18028,
+          "sha256": "8572f5db6919bf0c3ff7c957b4fe76f5b96e03d3e0608da61abd65a007fd34d4"
+        },
+        {
+          "path": "assets/uat01/item-kit/hunters_token.glb",
+          "bytes": 7276,
+          "sha256": "a5002e9068a15888adc11bcf72d56dfbf84d03fba1d348085901e2e5ef7459c0"
+        },
+        {
+          "path": "assets/uat01/item-kit/hunters_token.png",
+          "bytes": 151537,
+          "sha256": "2f5575be30c1551160a3d4c5b29c049c8bf04b00c2560188f3a1c8a4a44a1e66"
+        },
+        {
+          "path": "assets/uat01/item-kit/icon-audit.json",
+          "bytes": 8376,
+          "sha256": "aa98f56b075f4c20e2e3884e256c3004c2b61787af92537d741ddbb18986caad"
+        },
+        {
+          "path": "assets/uat01/item-kit/iron_ingot.fbx",
+          "bytes": 15260,
+          "sha256": "866176ca20cd7fb34b5b458a7d79075146910652589416e391a3e4e76c729010"
+        },
+        {
+          "path": "assets/uat01/item-kit/iron_ingot.glb",
+          "bytes": 2912,
+          "sha256": "c21d8f1555cb61699ed1cff1fae4c8c71f9fa997f6694c05f5d806632103b708"
+        },
+        {
+          "path": "assets/uat01/item-kit/iron_ingot.png",
+          "bytes": 121310,
+          "sha256": "4d155c1e3ac8096122f6fa9d937545fef1499e0abb5c1597b39d3ee31b510cba"
+        },
+        {
+          "path": "assets/uat01/item-kit/iron_ore.fbx",
+          "bytes": 16940,
+          "sha256": "5affa8febe50f557e17b014926951537baa6c202de707ec8ee6d029fc4b7a5c2"
+        },
+        {
+          "path": "assets/uat01/item-kit/iron_ore.glb",
+          "bytes": 5504,
+          "sha256": "6d5e5c023a99a4e6a6ebfca3aff7de6c760ddda6bfeb4ea14e130955c0c49614"
+        },
+        {
+          "path": "assets/uat01/item-kit/iron_ore.png",
+          "bytes": 140231,
+          "sha256": "30e89171bc15c8ac4fdf7d0eeb83d40f9e1fa6e5cf869ad16cb3b2eefc3c6645"
+        },
+        {
+          "path": "assets/uat01/item-kit/iron_sword.fbx",
+          "bytes": 18796,
+          "sha256": "ef51a03e2607ef7e461ed06407f7df11b6e89406c61ce56cb4acdf3a6ccda05d"
+        },
+        {
+          "path": "assets/uat01/item-kit/iron_sword.glb",
+          "bytes": 11048,
+          "sha256": "171e668e622564676e89ad15470fffecc684f81bfb939b91310cc1ec83024432"
+        },
+        {
+          "path": "assets/uat01/item-kit/iron_sword.png",
+          "bytes": 112490,
+          "sha256": "6d1d52cadac54bdd092a14caca479512a1957388bc540a47e6ae77875aac168b"
+        },
+        {
+          "path": "assets/uat01/item-kit/kit.json",
+          "bytes": 90443,
+          "sha256": "123e9e0d1d0e9ee8663471aafa469be89fa2cf2a148fbef12af9284644fce1e8"
+        },
+        {
+          "path": "assets/uat01/item-kit/knight_sword.fbx",
+          "bytes": 18780,
+          "sha256": "19528a4cb70a9a43f53b16c23121d0717fee1c06d3cc89ca6b34ca26dad51d7b"
+        },
+        {
+          "path": "assets/uat01/item-kit/knight_sword.glb",
+          "bytes": 11048,
+          "sha256": "7ab168c8adc912880b5e33e752a33426b27d63f9be23eb2a5361b575905d764e"
+        },
+        {
+          "path": "assets/uat01/item-kit/knight_sword.png",
+          "bytes": 114449,
+          "sha256": "b66f22c84dee563c001301f227bf004de916d068287bb7b296c64938374199b6"
+        },
+        {
+          "path": "assets/uat01/item-kit/leather_vest.fbx",
+          "bytes": 18492,
+          "sha256": "f21ad2bbed938a99d203b1c5a8fd9e9d4d2e5d81ac7bd0961b9663cd3c12863b"
+        },
+        {
+          "path": "assets/uat01/item-kit/leather_vest.glb",
+          "bytes": 10644,
+          "sha256": "366bf53c2af190152f8d271330ca2f2636a8b00b1fff7f0fc6ee29774c59aff7"
+        },
+        {
+          "path": "assets/uat01/item-kit/leather_vest.png",
+          "bytes": 137659,
+          "sha256": "9a9ea48043d76d85248e3db0903a8479899166312b702f6807844c5302ce07d5"
+        },
+        {
+          "path": "assets/uat01/item-kit/mage_staff.fbx",
+          "bytes": 19996,
+          "sha256": "9e3a671640fc64162771b63ad21a8d0688e535377070c139d77ba9f10be7aada"
+        },
+        {
+          "path": "assets/uat01/item-kit/mage_staff.glb",
+          "bytes": 12164,
+          "sha256": "1ecf4ab812d07520c10dc3c6aa3bf9b3d16103ed5f3be8756d274dfb42850396"
+        },
+        {
+          "path": "assets/uat01/item-kit/mage_staff.png",
+          "bytes": 113370,
+          "sha256": "fea57adc1680453778c5b90bc0ac4ce97ef270448535637418e00b20bbba1a41"
+        },
+        {
+          "path": "assets/uat01/item-kit/oathblade.fbx",
+          "bytes": 19148,
+          "sha256": "302172a816163ac9e01da51b9bbb1c933706ab2268b5a0dc811e0e5104be5f68"
+        },
+        {
+          "path": "assets/uat01/item-kit/oathblade.glb",
+          "bytes": 12732,
+          "sha256": "90bb1e8fdcfa5d7b7977970139c8f9a42e8c7b81d89457e228bf47b18c0844ff"
+        },
+        {
+          "path": "assets/uat01/item-kit/oathblade.png",
+          "bytes": 116603,
+          "sha256": "e31b305097b78d1150e4dc7e991f0b72d662dea83c28f71fba9dad2fb820e53b"
+        },
+        {
+          "path": "assets/uat01/item-kit/pilgrim_robes.fbx",
+          "bytes": 21132,
+          "sha256": "532ea90f76d37990c317b7a06330e72f86421b6f6cd6c388fe87dd3c4bfb9a8d"
+        },
+        {
+          "path": "assets/uat01/item-kit/pilgrim_robes.glb",
+          "bytes": 13960,
+          "sha256": "6e026f40972d559617b059265f99674b4bd72dd31ac20ebb98300b67a275eb56"
+        },
+        {
+          "path": "assets/uat01/item-kit/pilgrim_robes.png",
+          "bytes": 150885,
+          "sha256": "7b6637ccd1d76b425d2176da7322233422ee4eedcaf004aa18dd9def4f6a127a"
+        },
+        {
+          "path": "assets/uat01/item-kit/preview.png",
+          "bytes": 1353511,
+          "sha256": "ba1d90501b193cb623c5c73e1193ba90418ee1e786f123d7d43fc53caf499e8b"
+        },
+        {
+          "path": "assets/uat01/item-kit/roundtrip-report.json",
+          "bytes": 11199,
+          "sha256": "294c26f465663326686aa454233410fe35ecc6c50cb4102dc49dbdd0b3995107"
+        },
+        {
+          "path": "assets/uat01/item-kit/runewoven_mantle.fbx",
+          "bytes": 21132,
+          "sha256": "744eb706c28e1357da10122478634409d94c92b27c5cd02d697bcae86531a736"
+        },
+        {
+          "path": "assets/uat01/item-kit/runewoven_mantle.glb",
+          "bytes": 13964,
+          "sha256": "21749d36be55aad037e28b4bbb96624843139c64c4accdcb9f54a95cb40f978b"
+        },
+        {
+          "path": "assets/uat01/item-kit/runewoven_mantle.png",
+          "bytes": 154374,
+          "sha256": "dca573a853cd610617c4aae7f2a1cc3e7d1255a1ace3eb73e5d504dc23df1bc8"
+        },
+        {
+          "path": "assets/uat01/item-kit/scout_coat.fbx",
+          "bytes": 19980,
+          "sha256": "8077f32e75ede42f30463f8a10d88782f58289991190fd97f1317f670c0961b5"
+        },
+        {
+          "path": "assets/uat01/item-kit/scout_coat.glb",
+          "bytes": 13040,
+          "sha256": "ddd7e21ae613bc5fb5c53854e2bbaecc276ecdf3cdeb7c37c221507608673602"
+        },
+        {
+          "path": "assets/uat01/item-kit/scout_coat.png",
+          "bytes": 146825,
+          "sha256": "2a5a0ce965b6958a967a7096eb9b32787d0c4ce83afa1fbe50f13b5b731444d2"
+        },
+        {
+          "path": "assets/uat01/item-kit/sentinel_seal.fbx",
+          "bytes": 17948,
+          "sha256": "f1b400dff3fc3c80bc24847edc14fe2ec68ade1a39c63f7328ff6daa4f48a0b2"
+        },
+        {
+          "path": "assets/uat01/item-kit/sentinel_seal.glb",
+          "bytes": 6976,
+          "sha256": "0545af94d640498b18980673812be388772a98cf28d00259d74945efa3c60ec8"
+        },
+        {
+          "path": "assets/uat01/item-kit/sentinel_seal.png",
+          "bytes": 153284,
+          "sha256": "fd1c4c825ce866226d2ef89acdcbc716f79d7f6a4d0c4aac7a1524d12f6c32b6"
+        },
+        {
+          "path": "assets/uat01/item-kit/short_bow.fbx",
+          "bytes": 19132,
+          "sha256": "4b64d0eee09df027cb5a060c6cbc6e201b82a83692c8a57ed21d623dc653eaef"
+        },
+        {
+          "path": "assets/uat01/item-kit/short_bow.glb",
+          "bytes": 11488,
+          "sha256": "31cffc5ddfa7091b5bd2c82bb4b048c175b9cb33d9462c38708be163a72f8d1b"
+        },
+        {
+          "path": "assets/uat01/item-kit/short_bow.png",
+          "bytes": 113894,
+          "sha256": "87f1a0fcfb776336be86b2dcf703b9f563092a202b5d66164e678e2585428db1"
+        },
+        {
+          "path": "assets/uat01/item-kit/stone.fbx",
+          "bytes": 15596,
+          "sha256": "63efdf388a1a112f5d4ea6c474a5cb96f974180c746a484447303d5330c0db6c"
+        },
+        {
+          "path": "assets/uat01/item-kit/stone.glb",
+          "bytes": 3744,
+          "sha256": "d5f616ffed41fe66e8d184871e81848bbdbee088b04428d8b9e3a84f4d4c8e91"
+        },
+        {
+          "path": "assets/uat01/item-kit/stone.png",
+          "bytes": 122446,
+          "sha256": "79037e801c087c410ebaa12752ac154bd84dc5ad3b8b578bf896aaf126533b8c"
+        },
+        {
+          "path": "assets/uat01/item-kit/tide_staff.fbx",
+          "bytes": 19996,
+          "sha256": "bfca14993fd3088f798b14057e2692e4465ae15ec489e6efe710463bef9b08e9"
+        },
+        {
+          "path": "assets/uat01/item-kit/tide_staff.glb",
+          "bytes": 12160,
+          "sha256": "9b6dffbe7fc313273c72e342c003c605abf4b00e5c03d828d6098786399a3839"
+        },
+        {
+          "path": "assets/uat01/item-kit/tide_staff.png",
+          "bytes": 114182,
+          "sha256": "d40dd2464154bb3b7e2eefd65d9d722a97621baa34b04d59fdfc8c889ff4a6b4"
+        },
+        {
+          "path": "assets/uat01/item-kit/timber.fbx",
+          "bytes": 18572,
+          "sha256": "860710cff32dcbd85c375c28dc409c484f607649abd7d7cd8cfc0b6e7b7fcaf3"
+        },
+        {
+          "path": "assets/uat01/item-kit/timber.glb",
+          "bytes": 8604,
+          "sha256": "3c1959bc1d323d771c881217098206aa3462870ca3081b58d6182094ab857972"
+        },
+        {
+          "path": "assets/uat01/item-kit/timber.png",
+          "bytes": 140971,
+          "sha256": "4dae421aca001f6193e6f34d1dbbfdeef29361240efb6282d33f38ad3088dea4"
+        },
+        {
+          "path": "assets/uat01/item-kit/training_sword.fbx",
+          "bytes": 17724,
+          "sha256": "a60a476146a7c34d4a93dbc9977a4d93b9017901470b393574275f9d9ab85426"
+        },
+        {
+          "path": "assets/uat01/item-kit/training_sword.glb",
+          "bytes": 10136,
+          "sha256": "7facee014ac9e1987c5b4e988aa73ffe4f4688d14b6bc3693e7daacca06a9b0e"
+        },
+        {
+          "path": "assets/uat01/item-kit/training_sword.png",
+          "bytes": 107596,
+          "sha256": "bac99178cd42235f6428cc7cb8bdfc48ef1e46471b5a87e0d7d3f1ecff1f071d"
+        },
+        {
+          "path": "assets/uat01/item-kit/vanguard_harness.fbx",
+          "bytes": 19548,
+          "sha256": "9183bff2c9923cf55f48a48f3967c5711aef9d8ed167e7bf6d58452e2cd10103"
+        },
+        {
+          "path": "assets/uat01/item-kit/vanguard_harness.glb",
+          "bytes": 10520,
+          "sha256": "ddbfc87dd0a4e8f94c8dc49abab6dfa14afe3d7f0b03ba652c64cf9597648d5f"
+        },
+        {
+          "path": "assets/uat01/item-kit/vanguard_harness.png",
+          "bytes": 147186,
+          "sha256": "ed3017f5af06399ce9552694a59e5fd1d3ab9cd2769afbebe3938280aa80b064"
+        },
+        {
+          "path": "assets/uat01/item-kit/vitality_charm.fbx",
+          "bytes": 17980,
+          "sha256": "6b870c0cf1c4ef921ffd3ccc7d5d1f6f99e5636acfe29680433d30c7092813c5"
+        },
+        {
+          "path": "assets/uat01/item-kit/vitality_charm.glb",
+          "bytes": 6436,
+          "sha256": "f4cd99217b56429097d6d5c6d9fffcd730acbd407e648dcbf788209b529e0ea8"
+        },
+        {
+          "path": "assets/uat01/item-kit/vitality_charm.png",
+          "bytes": 129715,
+          "sha256": "9519871e74fa3b6d817e8f44ee5b63b2af6631e31ee76975465d6e20c78beefc"
+        },
+        {
+          "path": "assets/uat01/item-kit/wardstone.fbx",
+          "bytes": 18060,
+          "sha256": "06524b1b45d4299954b856828fc45520b2a306fd809feae0f7077ed4da1cc81e"
+        },
+        {
+          "path": "assets/uat01/item-kit/wardstone.glb",
+          "bytes": 7272,
+          "sha256": "f93710d6695144c6f8e5b623b061622482a6f987fce76d8312994d8e9a1d5020"
+        },
+        {
+          "path": "assets/uat01/item-kit/wardstone.png",
+          "bytes": 158118,
+          "sha256": "812586cd4d4692a2a481eb3dc2deb352981e00de9d24acb2159e3ff0faa137cd"
+        },
+        {
+          "path": "assets/uat01/item-kit/watchblade.fbx",
+          "bytes": 18796,
+          "sha256": "98f6b9d142fcbf98881faf7c2c15d46fe1e91646169ffdd661a0929b6e4d7a61"
+        },
+        {
+          "path": "assets/uat01/item-kit/watchblade.glb",
+          "bytes": 11048,
+          "sha256": "c979c1e695e51d4f96c3c2df63849e17c05144cc8962b76566c0853b833dfc20"
+        },
+        {
+          "path": "assets/uat01/item-kit/watchblade.png",
+          "bytes": 112149,
+          "sha256": "8a6bf5313c3a695cca46466f3c04b11c81ad4d8cd1229d3caa68ec69fb0368d0"
+        },
+        {
+          "path": "assets/uat01/item-kit/woven_robes.fbx",
+          "bytes": 21132,
+          "sha256": "a9667576c49489f17b4b8c371e06ae9345ced9dd082e8d691b2210cd2b56a4ca"
+        },
+        {
+          "path": "assets/uat01/item-kit/woven_robes.glb",
+          "bytes": 13964,
+          "sha256": "c7ef60e7b3202a2c69396e31a6816960a243977417ac12c5b3a246527ead0ef8"
+        },
+        {
+          "path": "assets/uat01/item-kit/woven_robes.png",
+          "bytes": 153743,
+          "sha256": "8bb04647c2619b729af28a5c65464173e4f6c9a238767455c6d152e63e28ba18"
+        },
+        {
+          "path": "assets/uat01/item-kit/yew_longbow.fbx",
+          "bytes": 21404,
+          "sha256": "fd5fd06b46c474953f5fa69f1f0c919627a9c378ffe9088b8ad1e271630c6690"
+        },
+        {
+          "path": "assets/uat01/item-kit/yew_longbow.glb",
+          "bytes": 12876,
+          "sha256": "8d0ebd747cc1ba02f775e7d6654b3b6d783f7921c09f84c5a8ff66cdf47b88a3"
+        },
+        {
+          "path": "assets/uat01/item-kit/yew_longbow.png",
+          "bytes": 114934,
+          "sha256": "e421b07ca9d2eb05ed41d4cd29755eeda9d785b412194e353ad82f7e27328d2c"
+        }
+      ],
+      "counts": {
+        ".blend": 1,
+        ".fbx": 30,
+        ".glb": 30,
+        ".png": 31,
+        ".gif": 0
+      },
+      "nativeSource": "src/shared/Data/ItemVisuals.luau",
+      "pending": "Roblox image/mesh import; arbitrary avatar fitting",
+      "uatApproved": false,
+      "cloudImported": false
+    },
+    {
+      "id": "character-kit",
+      "title": "Sentinel custom rig",
+      "files": [
+        {
+          "path": "assets/uat01/character-kit/GB_Cast.fbx",
+          "bytes": 189324,
+          "sha256": "38cca5ee0f25c35749aaae08a25164864787169c9ced84b52f2168eadcf2dd6b"
+        },
+        {
+          "path": "assets/uat01/character-kit/GB_Dodge.fbx",
+          "bytes": 179196,
+          "sha256": "13a103c964af02c97e60a5ac136362ef8c942f218e9abb1ca3606a4cadb2f5ec"
+        },
+        {
+          "path": "assets/uat01/character-kit/GB_Down.fbx",
+          "bytes": 188684,
+          "sha256": "d93488e13e0eeead0e44f78e9e6eed9646e3fc8f356c070826da696dca0b268f"
+        },
+        {
+          "path": "assets/uat01/character-kit/GB_Hit.fbx",
+          "bytes": 168332,
+          "sha256": "0c7c8690634d63f8d156817ab867a2ce9d0d6e66c30fdb99977417c202692946"
+        },
+        {
+          "path": "assets/uat01/character-kit/GB_Idle.fbx",
+          "bytes": 200572,
+          "sha256": "ed649863778ef86b9d07e495a86b0ab5408e661fe66b2db55d6017e0be566497"
+        },
+        {
+          "path": "assets/uat01/character-kit/GB_Recover.fbx",
+          "bytes": 184108,
+          "sha256": "8e10a4f48534a9735aa513b9005de57845cc4bebeb27d8456e383688d7d0bd12"
+        },
+        {
+          "path": "assets/uat01/character-kit/GB_Run.fbx",
+          "bytes": 179196,
+          "sha256": "4f8e61e223bf60b81c6ce1e60157d29b99913ebc338e9af8f1716c46a3b4c785"
+        },
+        {
+          "path": "assets/uat01/character-kit/GB_Slash.fbx",
+          "bytes": 188684,
+          "sha256": "1fdc764a3b93c96f6135efca477894a80a13fbad983817c2c35e62d4f79e2cf9"
+        },
+        {
+          "path": "assets/uat01/character-kit/GB_Walk.fbx",
+          "bytes": 188684,
+          "sha256": "f1c17e9eff6e07b602dfb4a86194ffc277e43ccf6b25280668a54f0932dc7275"
+        },
+        {
+          "path": "assets/uat01/character-kit/Guildborne_Sentinel_Animation_Kit.blend",
+          "bytes": 183466,
+          "sha256": "e8a9e8683ed532e83d99756639dd73a1d40496c179431c70d3b2993cb9b458d6"
+        },
+        {
+          "path": "assets/uat01/character-kit/Guildborne_Sentinel_Rest.fbx",
+          "bytes": 57164,
+          "sha256": "9082f4a36c7574c4f3c838ffbbd2c0d29be1b019c23f7f2f4f66fa79340033a5"
+        },
+        {
+          "path": "assets/uat01/character-kit/Guildborne_Sentinel_Rest.glb",
+          "bytes": 42016,
+          "sha256": "bf7b6ca2085a054a1768a5240c8c8c919035520e653757a5e3be10f5004fe152"
+        },
+        {
+          "path": "assets/uat01/character-kit/manifest.json",
+          "bytes": 2443,
+          "sha256": "231e3ddd5eef09081e7a2c984cdebf01b25e38eaf017e75d96c4bac95079004f"
+        },
+        {
+          "path": "assets/uat01/character-kit/motion-preview.gif",
+          "bytes": 6423049,
+          "sha256": "62fa0271d7b14f7147275d8ba090b764c72cb3656d674f92d6f89eab44817455"
+        },
+        {
+          "path": "assets/uat01/character-kit/preview.png",
+          "bytes": 1897015,
+          "sha256": "b5cced01b36344e6e626d9a19f844db3fa0d78885b90662c8f60f839295f7ed7"
+        },
+        {
+          "path": "assets/uat01/character-kit/roundtrip-report.json",
+          "bytes": 3551,
+          "sha256": "401577845bbcbbcce70600726cbbe64643da1af0463339767ae4ee887c797b2c"
+        }
+      ],
+      "counts": {
+        ".blend": 1,
+        ".fbx": 10,
+        ".glb": 1,
+        ".png": 1,
+        ".gif": 1
+      },
+      "nativeSource": null,
+      "pending": "Roblox rig import and retargeting",
+      "uatApproved": false,
+      "cloudImported": false
+    },
+    {
+      "id": "enemy-kit",
+      "title": "Regional enemy rigs",
+      "files": [
+        {
+          "path": "assets/uat01/enemy-kit/arcane_sentinel.blend",
+          "bytes": 135729,
+          "sha256": "0f29be967859483b8d0419934c746a391fae0870861c924a4057a41d03c69aab"
+        },
+        {
+          "path": "assets/uat01/enemy-kit/arcane_sentinel.png",
+          "bytes": 161676,
+          "sha256": "ec77d97a7f53bce721c74e4fb310f4917a71488397d89f90b9bbddf2dac0f02e"
+        },
+        {
+          "path": "assets/uat01/enemy-kit/arcane_sentinel_Attack.fbx",
+          "bytes": 181596,
+          "sha256": "87160c39f480bcdd0ffb2d0e620dd3af122c308c06ee58e587c38ff00b989cca"
+        },
+        {
+          "path": "assets/uat01/enemy-kit/arcane_sentinel_Hit.fbx",
+          "bytes": 169564,
+          "sha256": "64e7af63b365cfafb27a427b9f3949bb865c646d4364b62769a5de146ef93b21"
+        },
+        {
+          "path": "assets/uat01/enemy-kit/arcane_sentinel_Idle.fbx",
+          "bytes": 203036,
+          "sha256": "13599d311e00578317b8c0b9fd55a958397529c634ed18c46c0014680731af27"
+        },
+        {
+          "path": "assets/uat01/enemy-kit/arcane_sentinel_Rest.fbx",
+          "bytes": 58812,
+          "sha256": "c52e9c9ecc899be475b5ead3735673f411ab493d72d2ad79387c06f5530423f8"
+        },
+        {
+          "path": "assets/uat01/enemy-kit/arcane_sentinel_Rest.glb",
+          "bytes": 44268,
+          "sha256": "4776aa77378d53898dfa92a9a036762b2b02ef3ee281247e1d2386bb1877b98f"
+        },
+        {
+          "path": "assets/uat01/enemy-kit/arcane_sentinel_Walk.fbx",
+          "bytes": 189916,
+          "sha256": "d4a1ccb6044e282174c8f2109fc740eb1a17f43384288e07b307f584a60da210"
+        },
+        {
+          "path": "assets/uat01/enemy-kit/arcane_warden.blend",
+          "bytes": 135199,
+          "sha256": "34dad968c9c1a2287b4832a43a503d3006246fd0ca80d439c141ad4d1ccd4adc"
+        },
+        {
+          "path": "assets/uat01/enemy-kit/arcane_warden.png",
+          "bytes": 148715,
+          "sha256": "d0013b741d0c602173460df549bfc347dfcebbb2d8bd4875ad3042adfd67515d"
+        },
+        {
+          "path": "assets/uat01/enemy-kit/arcane_warden_Attack.fbx",
+          "bytes": 183052,
+          "sha256": "a51b1562b389f21a7516c05f2ea3c3cf59a733c246ad14db6956abc286252c4e"
+        },
+        {
+          "path": "assets/uat01/enemy-kit/arcane_warden_Hit.fbx",
+          "bytes": 170556,
+          "sha256": "aacf4e915fe0f3c4542deaf3b01e4c9c2ed511ceceda78d5667a311a391696ec"
+        },
+        {
+          "path": "assets/uat01/enemy-kit/arcane_warden_Idle.fbx",
+          "bytes": 204172,
+          "sha256": "050498e3467b4c686af8f1bcecf00b9b1b73a93741f32b302e03ece97010d53e"
+        },
+        {
+          "path": "assets/uat01/enemy-kit/arcane_warden_Rest.fbx",
+          "bytes": 59644,
+          "sha256": "a1a0529154934e33d16abb4219b76d56c3aa1b8ea4b2f9a51f6eef4cbd2bc019"
+        },
+        {
+          "path": "assets/uat01/enemy-kit/arcane_warden_Rest.glb",
+          "bytes": 57620,
+          "sha256": "8a2c22a4cff169085806849e38ee6e8c6cd8b52d2cc4160f68ec3cdcb1261b58"
+        },
+        {
+          "path": "assets/uat01/enemy-kit/arcane_warden_Walk.fbx",
+          "bytes": 190908,
+          "sha256": "3c01dab0d6f076e278aa3747aec92311efb27f7cc9f50753ef4be27e761e7b88"
+        },
+        {
+          "path": "assets/uat01/enemy-kit/crystal_shaman.blend",
+          "bytes": 133651,
+          "sha256": "fe010c230ab7f37539a8177b31194b0f48fb5f9b7acbfb6a88158c8d2f6edfe8"
+        },
+        {
+          "path": "assets/uat01/enemy-kit/crystal_shaman.png",
+          "bytes": 161408,
+          "sha256": "958b831c967cb800f0ab59184b24ea9e6fc53058fee042b658835620fcb40b79"
+        },
+        {
+          "path": "assets/uat01/enemy-kit/crystal_shaman_Attack.fbx",
+          "bytes": 180812,
+          "sha256": "2f05a529c49ee46d3a1fdeb50284c71f59bea0a29f371c00b2a9d0b6055b97ae"
+        },
+        {
+          "path": "assets/uat01/enemy-kit/crystal_shaman_Hit.fbx",
+          "bytes": 168348,
+          "sha256": "feab48895cd8dc71fedb50a1af398285381419596f3af9969490e493c2895231"
+        },
+        {
+          "path": "assets/uat01/enemy-kit/crystal_shaman_Idle.fbx",
+          "bytes": 201724,
+          "sha256": "f69412931782912ead241848ad09a47edc5e3425f460f97f4daad3b466592b9a"
+        },
+        {
+          "path": "assets/uat01/enemy-kit/crystal_shaman_Rest.fbx",
+          "bytes": 57180,
+          "sha256": "986fc4fb1c7533f3ada25b2f40692f90ab1fd00913b0736953774f38ab1bdf36"
+        },
+        {
+          "path": "assets/uat01/enemy-kit/crystal_shaman_Rest.glb",
+          "bytes": 47096,
+          "sha256": "a02062006068fe9d3dc66e1088e1897523722be0d0acaf319bf4a450f0a9ddc2"
+        },
+        {
+          "path": "assets/uat01/enemy-kit/crystal_shaman_Walk.fbx",
+          "bytes": 188700,
+          "sha256": "1d12603f6711c4d04ab3b8b325f9ab72d21f3abf331d79231f9760b38cf183ef"
+        },
+        {
+          "path": "assets/uat01/enemy-kit/forest_captain.blend",
+          "bytes": 138438,
+          "sha256": "933d0fcb3b1d755e0873c9d175a813335b311598b072a7812740893d731d4b3d"
+        },
+        {
+          "path": "assets/uat01/enemy-kit/forest_captain.png",
+          "bytes": 157267,
+          "sha256": "54c73dfc9c3dbb9993cde7a0f41952424f768297d01f822c3f00c5867a8d0db3"
+        },
+        {
+          "path": "assets/uat01/enemy-kit/forest_captain_Attack.fbx",
+          "bytes": 185436,
+          "sha256": "242a9260803c1c78c76b6cb45c2dc7dac08f7c088770d7442c1a1f87f7390395"
+        },
+        {
+          "path": "assets/uat01/enemy-kit/forest_captain_Hit.fbx",
+          "bytes": 172780,
+          "sha256": "780bb3874f001adb7bd15af4493460bf45e5a71fdb4982b24ac5df05cb3820b4"
+        },
+        {
+          "path": "assets/uat01/enemy-kit/forest_captain_Idle.fbx",
+          "bytes": 206396,
+          "sha256": "b34f7d762c79a25079f0a20f2ddbc5b697f5967525894d7bd2932bedc5535607"
+        },
+        {
+          "path": "assets/uat01/enemy-kit/forest_captain_Rest.fbx",
+          "bytes": 62124,
+          "sha256": "356994362123f1c11765aaa94da7a403aa4c946f6e22e81d76342e2181644f22"
+        },
+        {
+          "path": "assets/uat01/enemy-kit/forest_captain_Rest.glb",
+          "bytes": 60424,
+          "sha256": "6f38393df988f7d1d6f50ef807e7c16c2a6d4ca0df1fd1a9ba60168f177421b8"
+        },
+        {
+          "path": "assets/uat01/enemy-kit/forest_captain_Walk.fbx",
+          "bytes": 193132,
+          "sha256": "b3134498858a9f1ca96301c86d29c8302ada00d771b5fca41c9fa12dab9c6b5b"
+        },
+        {
+          "path": "assets/uat01/enemy-kit/greenwood_archer.blend",
+          "bytes": 136090,
+          "sha256": "00bedd434efa81cb43a4fb8de55dcb24f4d5710a8dfb8894bdd3718ca2cd71de"
+        },
+        {
+          "path": "assets/uat01/enemy-kit/greenwood_archer.png",
+          "bytes": 163251,
+          "sha256": "58b814f658dbfbf7c0e8866524cec7a0a290a637827a2b5f8d59b1bd96bf79a4"
+        },
+        {
+          "path": "assets/uat01/enemy-kit/greenwood_archer_Attack.fbx",
+          "bytes": 183148,
+          "sha256": "3697f5009f6f5be662a5641982c414b3cdda1e5b17c836419d0493c76ee76cbc"
+        },
+        {
+          "path": "assets/uat01/enemy-kit/greenwood_archer_Hit.fbx",
+          "bytes": 170684,
+          "sha256": "8e41db1e87ebdbfbddeeef90c95927f157cd0fd5708fe07e733febb65cd9246d"
+        },
+        {
+          "path": "assets/uat01/enemy-kit/greenwood_archer_Idle.fbx",
+          "bytes": 204060,
+          "sha256": "3f92c9100659a0d253723acb86a186edacba76d55fd2d3bd555251dd62351639"
+        },
+        {
+          "path": "assets/uat01/enemy-kit/greenwood_archer_Rest.fbx",
+          "bytes": 59516,
+          "sha256": "7c0ca4928c628c3c31722b33df753418306e5fd95ed2021b312da52f540f790a"
+        },
+        {
+          "path": "assets/uat01/enemy-kit/greenwood_archer_Rest.glb",
+          "bytes": 53024,
+          "sha256": "d54e9a277095c2f7177a7395b1bade25f1c492921a93c181aa7fe5529ae962f7"
+        },
+        {
+          "path": "assets/uat01/enemy-kit/greenwood_archer_Walk.fbx",
+          "bytes": 191036,
+          "sha256": "e4301d36e1aff72b64876a69541a13fb8a9bdac33e42d584ef63a7c57c60f652"
+        },
+        {
+          "path": "assets/uat01/enemy-kit/greenwood_boar.blend",
+          "bytes": 131153,
+          "sha256": "6a724b063e0a952a8146b6a7add077e28392b34e7c767fc99287e59f3955d94c"
+        },
+        {
+          "path": "assets/uat01/enemy-kit/greenwood_boar.png",
+          "bytes": 126149,
+          "sha256": "4a4aabb052e4f4402cc73b5315553f335c70e1cef64d041ae77539c5730cd33e"
+        },
+        {
+          "path": "assets/uat01/enemy-kit/greenwood_boar_Attack.fbx",
+          "bytes": 178860,
+          "sha256": "4f8f0543cf526b72c7ad2da914e585f14c9764361c2af1fca9f177f17031acab"
+        },
+        {
+          "path": "assets/uat01/enemy-kit/greenwood_boar_Hit.fbx",
+          "bytes": 166636,
+          "sha256": "6aaa8ab966b37dc24cf9623c83e555ee24eced2ebe245c3da870bcdf1af8c425"
+        },
+        {
+          "path": "assets/uat01/enemy-kit/greenwood_boar_Idle.fbx",
+          "bytes": 201356,
+          "sha256": "bbc9c2be0161a484a8b108674c39011af84dca8f176ae4191c69bce8c53e54f5"
+        },
+        {
+          "path": "assets/uat01/enemy-kit/greenwood_boar_Rest.fbx",
+          "bytes": 56060,
+          "sha256": "a3697a67e7b7101107020a5ff4b26872977b4de92e04663ea92ed46373242f1c"
+        },
+        {
+          "path": "assets/uat01/enemy-kit/greenwood_boar_Rest.glb",
+          "bytes": 42012,
+          "sha256": "249833f8ec10d55848dd0cb2387d60759f49c4f7024b884cd6145d0d2841be38"
+        },
+        {
+          "path": "assets/uat01/enemy-kit/greenwood_boar_Walk.fbx",
+          "bytes": 186988,
+          "sha256": "83aae54c5951a59acf160902ba609f5b7d5e6703ed45ec0716f2354ebbf5ad4d"
+        },
+        {
+          "path": "assets/uat01/enemy-kit/greenwood_scout.blend",
+          "bytes": 135500,
+          "sha256": "b38763ba607db6ac1041e280f5fe6db6d08606f701b5be01d9f9bd3c617fa3cb"
+        },
+        {
+          "path": "assets/uat01/enemy-kit/greenwood_scout.png",
+          "bytes": 157471,
+          "sha256": "71fa3aba4b7915cf46718fe33f35ece1e5e982421bd181c0b2e349337360020f"
+        },
+        {
+          "path": "assets/uat01/enemy-kit/greenwood_scout_Attack.fbx",
+          "bytes": 182172,
+          "sha256": "b8b9928818270586841a61a0e985bbf4b1933c56fc3e2b6eb0392073ca43f85d"
+        },
+        {
+          "path": "assets/uat01/enemy-kit/greenwood_scout_Hit.fbx",
+          "bytes": 170172,
+          "sha256": "bf26987306efda7c8200f5f9df0c0d04157ffc9546b85d58bc9c7a345ebe9eed"
+        },
+        {
+          "path": "assets/uat01/enemy-kit/greenwood_scout_Idle.fbx",
+          "bytes": 203740,
+          "sha256": "8a832dfa7bb57773c45f02cadd071504d0842d272bcbf3acf908833cc6df6dae"
+        },
+        {
+          "path": "assets/uat01/enemy-kit/greenwood_scout_Rest.fbx",
+          "bytes": 59404,
+          "sha256": "6012af180d94424de4efbc022cd89a575a6c9b69b42fce6018651d0c76b110c1"
+        },
+        {
+          "path": "assets/uat01/enemy-kit/greenwood_scout_Rest.glb",
+          "bytes": 48128,
+          "sha256": "a43b2002ddd3855ba91011cc58b2ec92bb451af515b3cd0b655ea8b1721072d7"
+        },
+        {
+          "path": "assets/uat01/enemy-kit/greenwood_scout_Walk.fbx",
+          "bytes": 190508,
+          "sha256": "186f1439ba9b659952afb77124a7d96dae48073433036ab37251659248841c45"
+        },
+        {
+          "path": "assets/uat01/enemy-kit/Guildborne_Enemy_Gallery.blend",
+          "bytes": 277062,
+          "sha256": "3cf42810bc19ddeebb96dc201082be4c2e91d83e0e40431bdb0db486780c5179"
+        },
+        {
+          "path": "assets/uat01/enemy-kit/kit.json",
+          "bytes": 197900,
+          "sha256": "68006a1213a9c1d92cedc7e3e78c5a4accab05529db48f7d18d193f99255d6d5"
+        },
+        {
+          "path": "assets/uat01/enemy-kit/manifest.json",
+          "bytes": 16358,
+          "sha256": "c0856baa8e1938dea2906714c413eb1fb27ecc7a1ab380d0eb56db13565887cd"
+        },
+        {
+          "path": "assets/uat01/enemy-kit/preview.png",
+          "bytes": 1230075,
+          "sha256": "910d340127672893b9f3a83d55fd474f72b9382eb31f253e55107364ec16e557"
+        },
+        {
+          "path": "assets/uat01/enemy-kit/quarry_guardian.blend",
+          "bytes": 134159,
+          "sha256": "a0f8e45f20c79a945a4e50861d437809fc30e3d4372039e37904ce291dcbed0b"
+        },
+        {
+          "path": "assets/uat01/enemy-kit/quarry_guardian.png",
+          "bytes": 154592,
+          "sha256": "78aedd65c2a9e44915feeaa3f290fb76a7306b30cb3b9022bf2d5cb295c43a0b"
+        },
+        {
+          "path": "assets/uat01/enemy-kit/quarry_guardian_Attack.fbx",
+          "bytes": 180268,
+          "sha256": "a661da553063c2423a4dcd4525b6f870faea1b43ccf07429cae5b74829fc4dfe"
+        },
+        {
+          "path": "assets/uat01/enemy-kit/quarry_guardian_Hit.fbx",
+          "bytes": 167804,
+          "sha256": "88c6aa1510a1f75ec2b1331c56979e79aded5b410a2d42f37ee2504ce3966396"
+        },
+        {
+          "path": "assets/uat01/enemy-kit/quarry_guardian_Idle.fbx",
+          "bytes": 201196,
+          "sha256": "f86571ff4c78bb9b36fe9338193d128b51a176780124bf0019f38a5e731d7f9a"
+        },
+        {
+          "path": "assets/uat01/enemy-kit/quarry_guardian_Rest.fbx",
+          "bytes": 56636,
+          "sha256": "afa9c58a53e4a8bce00b3083525507c959c72317535516442560eab29df21a98"
+        },
+        {
+          "path": "assets/uat01/enemy-kit/quarry_guardian_Rest.glb",
+          "bytes": 43100,
+          "sha256": "1aee79446899dc9bb15558b83f1ed359a81758b6df232618c1b8262bb069d8cc"
+        },
+        {
+          "path": "assets/uat01/enemy-kit/quarry_guardian_Walk.fbx",
+          "bytes": 188156,
+          "sha256": "88dd9aef213cdad203d64e8931ab34a349eb24d06ce366684c27f9ef543a9dc1"
+        },
+        {
+          "path": "assets/uat01/enemy-kit/quarry_raider.blend",
+          "bytes": 137823,
+          "sha256": "8b6625e2e33a918bb18b4cfcaac6555c1ae86ffaf7ee35a4a10ab60c6486b3b7"
+        },
+        {
+          "path": "assets/uat01/enemy-kit/quarry_raider.png",
+          "bytes": 150583,
+          "sha256": "7bbceab5db992e13e6b68c2151b5a8b415154c017f44f3a950695003e601e8d6"
+        },
+        {
+          "path": "assets/uat01/enemy-kit/quarry_raider_Attack.fbx",
+          "bytes": 183356,
+          "sha256": "78aeda1a2634c19418956327be28acc1243756aa247bac617726f1a397a2087b"
+        },
+        {
+          "path": "assets/uat01/enemy-kit/quarry_raider_Hit.fbx",
+          "bytes": 171372,
+          "sha256": "b1ef7fe0227d08d51b35aa253ae51c75afb232374ab989fb8517adfe7d7ec759"
+        },
+        {
+          "path": "assets/uat01/enemy-kit/quarry_raider_Idle.fbx",
+          "bytes": 204940,
+          "sha256": "3a24304bb0b0397556073f341c001ebe0cf4560b2aa923df322ea8668b35e537"
+        },
+        {
+          "path": "assets/uat01/enemy-kit/quarry_raider_Rest.fbx",
+          "bytes": 60284,
+          "sha256": "d11cdaba994df098b07d3adb4d62678ff5b9383b85221ab8e6090155e04194b2"
+        },
+        {
+          "path": "assets/uat01/enemy-kit/quarry_raider_Rest.glb",
+          "bytes": 49208,
+          "sha256": "b66bfdd9e9a20df38b50c394d24ec649e1b410f1f80a3b42c461979f5845d2c5"
+        },
+        {
+          "path": "assets/uat01/enemy-kit/quarry_raider_Walk.fbx",
+          "bytes": 191724,
+          "sha256": "1c1c851616abb2856e26d19c3a763fc67f47a7b07b9f09e8873347176e491fea"
+        },
+        {
+          "path": "assets/uat01/enemy-kit/roundtrip-report.json",
+          "bytes": 22919,
+          "sha256": "cf51cf384bc092157d0a3f9c50ad823c983f755f1cc9faea0ff3e305e7cf4a60"
+        },
+        {
+          "path": "assets/uat01/enemy-kit/rune_caster.blend",
+          "bytes": 135424,
+          "sha256": "5cddaf0527d685fb1b4cca8de78cb929364f347fa6d3e2d80e66a6991557f3c5"
+        },
+        {
+          "path": "assets/uat01/enemy-kit/rune_caster.png",
+          "bytes": 150256,
+          "sha256": "267dabeec58a6f1810afb064f2adb700b93b476d08614ee89af192964a088ad2"
+        },
+        {
+          "path": "assets/uat01/enemy-kit/rune_caster_Attack.fbx",
+          "bytes": 181980,
+          "sha256": "7c8fc0b723fe818d368df2526c8a3a939af280fb406b1b35b95706d282c67f2a"
+        },
+        {
+          "path": "assets/uat01/enemy-kit/rune_caster_Hit.fbx",
+          "bytes": 169404,
+          "sha256": "b08a626a837dec97359fb01af25aa2a8da8cf5f70309f3a3929f387112ccd8ec"
+        },
+        {
+          "path": "assets/uat01/enemy-kit/rune_caster_Idle.fbx",
+          "bytes": 202876,
+          "sha256": "bc5ca420f08f101ee4c2108a8f252cb35e06ed60ef6ec656100a215e930ac4f0"
+        },
+        {
+          "path": "assets/uat01/enemy-kit/rune_caster_Rest.fbx",
+          "bytes": 58652,
+          "sha256": "30d8777b96fd36e71d53ca3aa8ad9bf9973ed1a7bc4f14d945351f8c29334b5b"
+        },
+        {
+          "path": "assets/uat01/enemy-kit/rune_caster_Rest.glb",
+          "bytes": 48252,
+          "sha256": "18de95a4b10102050bc0456360d2ce50bba5bc77d4dd4d0133214a0cc2d1fa3c"
+        },
+        {
+          "path": "assets/uat01/enemy-kit/rune_caster_Walk.fbx",
+          "bytes": 189756,
+          "sha256": "38bf5a221cec25dc00d961bec7cda1994031360ba2d0f356f995678816621800"
+        },
+        {
+          "path": "assets/uat01/enemy-kit/rune_hound.blend",
+          "bytes": 131141,
+          "sha256": "64d5a921efedd89aa81c34400748adbe724dda3ad0dffaf244ebd640390b402d"
+        },
+        {
+          "path": "assets/uat01/enemy-kit/rune_hound.png",
+          "bytes": 123805,
+          "sha256": "527f8ebddef8f154d2740c0f20ee500bc2b83268a1d837b1de4925bbef428e6b"
+        },
+        {
+          "path": "assets/uat01/enemy-kit/rune_hound_Attack.fbx",
+          "bytes": 177852,
+          "sha256": "9e53fb6cc57ed9cbd263c1fea9d2fb56b756e1c162af562fe7a94d0c335a5ddc"
+        },
+        {
+          "path": "assets/uat01/enemy-kit/rune_hound_Hit.fbx",
+          "bytes": 165628,
+          "sha256": "f86d045e0b059374bf428aa5ca9b688cecc952a162ac9e70be00a7a43cff4e82"
+        },
+        {
+          "path": "assets/uat01/enemy-kit/rune_hound_Idle.fbx",
+          "bytes": 200348,
+          "sha256": "5fb9b1b261c7240cf7658d0a2c58a0cb55c034819b4c339168581d434534574d"
+        },
+        {
+          "path": "assets/uat01/enemy-kit/rune_hound_Rest.fbx",
+          "bytes": 55052,
+          "sha256": "7437a17e2fd3b7f39b69eedf86732a141f0a03ed0ed8d73382bc337c3410d094"
+        },
+        {
+          "path": "assets/uat01/enemy-kit/rune_hound_Rest.glb",
+          "bytes": 40812,
+          "sha256": "96c5f50c138d2d9315db80309f0aeae40dccbf71b4e8ebdaf3fb5a199a2cd919"
+        },
+        {
+          "path": "assets/uat01/enemy-kit/rune_hound_Walk.fbx",
+          "bytes": 185980,
+          "sha256": "5af19ac59cdbe569ddc5c8ccb8b496f23463722c1c7cc11ce2d7d1de358fa3a9"
+        },
+        {
+          "path": "assets/uat01/enemy-kit/stone_guard.blend",
+          "bytes": 132223,
+          "sha256": "a5546ccc56b7e5e14529173525dd282f038e32e89aff8fc93ca5e56a9891ac54"
+        },
+        {
+          "path": "assets/uat01/enemy-kit/stone_guard.png",
+          "bytes": 158037,
+          "sha256": "27db5d6e649c628ec1a7a05cf3317047e97e6a8651f2a2d421cc2f97bfc6192b"
+        },
+        {
+          "path": "assets/uat01/enemy-kit/stone_guard_Attack.fbx",
+          "bytes": 179548,
+          "sha256": "3b39c75bd4038467b3a5a1c03eb0cce4dff2cadc6dcd66d62eb8ef7ad953c4f7"
+        },
+        {
+          "path": "assets/uat01/enemy-kit/stone_guard_Hit.fbx",
+          "bytes": 167676,
+          "sha256": "fe455887e2e954ff38a73662d738fa1aaf87df1fe47e576ef0c604b08672f8f5"
+        },
+        {
+          "path": "assets/uat01/enemy-kit/stone_guard_Idle.fbx",
+          "bytes": 201196,
+          "sha256": "65d064fc7f6300925276566e9a6ecd0ff4c10e567a8fce72807afc8d735ed46c"
+        },
+        {
+          "path": "assets/uat01/enemy-kit/stone_guard_Rest.fbx",
+          "bytes": 56828,
+          "sha256": "db7f9fdbf33bafe1216da6481b5c87cb627525337acf2219527ca31fd5ae69b7"
+        },
+        {
+          "path": "assets/uat01/enemy-kit/stone_guard_Rest.glb",
+          "bytes": 41872,
+          "sha256": "a46f992d359bf268e10f57fbeb312ef2f9d5a94b32ebb7ad03358f3a6bc84955"
+        },
+        {
+          "path": "assets/uat01/enemy-kit/stone_guard_Walk.fbx",
+          "bytes": 188012,
+          "sha256": "c02148f37cd7536c9ad842692f4755480640dfcd5f13d3ad696f4cf79dafc42e"
+        },
+        {
+          "path": "assets/uat01/enemy-kit/walk-preview-report.json",
+          "bytes": 145,
+          "sha256": "4682cb61e72534aaf7f9720a642f2202c49136e101dd2f390fce3ecc39ccbaea"
+        },
+        {
+          "path": "assets/uat01/enemy-kit/walk-preview.gif",
+          "bytes": 9638421,
+          "sha256": "8dd824418a0f0fb364a29ce16582c46b217accb2a6b9836e6239302660c2fa68"
+        }
+      ],
+      "counts": {
+        ".blend": 13,
+        ".fbx": 60,
+        ".glb": 12,
+        ".png": 13,
+        ".gif": 1
+      },
+      "nativeSource": "src/server/Services/AdventureEnemyKit.luau",
+      "pending": "Live regional AI, attacks, damage, quest events and rewards",
+      "uatApproved": false,
+      "cloudImported": false
+    },
+    {
+      "id": "region-kit",
+      "title": "Traversable regional blockouts",
+      "files": [
+        {
+          "path": "assets/uat01/region-kit/Ashen.blend",
+          "bytes": 111396,
+          "sha256": "5e76445830830583a950f10c20e7b84340dbdece19114981b6f79988d96d7a68"
+        },
+        {
+          "path": "assets/uat01/region-kit/Ashen.fbx",
+          "bytes": 120188,
+          "sha256": "de91c9b30e22153a0fc02dbe3649a82be9b68a453bb12b0467d04e6fd31a2ab1"
+        },
+        {
+          "path": "assets/uat01/region-kit/Ashen.glb",
+          "bytes": 54980,
+          "sha256": "077aba324da865a0b5457f5d54db68e9bc07cadbec7c22b472305fbdebfe8b1e"
+        },
+        {
+          "path": "assets/uat01/region-kit/Ashen.png",
+          "bytes": 1541833,
+          "sha256": "029b9c753c6c66535dc7d6d004d514f24b7a042f7659654482f282fe0f031204"
+        },
+        {
+          "path": "assets/uat01/region-kit/Greenwood.blend",
+          "bytes": 116787,
+          "sha256": "e48b2e6072470d734759dd5a1393985656a376f432bb8308c5b502318f0117f7"
+        },
+        {
+          "path": "assets/uat01/region-kit/Greenwood.fbx",
+          "bytes": 167004,
+          "sha256": "164f6dcc41f1b52be7ee7f87d49629532ba698155638f47e34863ab6bfbe9df1"
+        },
+        {
+          "path": "assets/uat01/region-kit/Greenwood.glb",
+          "bytes": 79148,
+          "sha256": "20673e206050f7427d05e5e9f81d6a1bddfaaac115b1b01ef3bd355bbb9613da"
+        },
+        {
+          "path": "assets/uat01/region-kit/Greenwood.png",
+          "bytes": 1538092,
+          "sha256": "503d1a809bc5935d1de5598efae60cf52adf5dccb3c6cdd97ddb8ae3da4bd688"
+        },
+        {
+          "path": "assets/uat01/region-kit/Ironveil.blend",
+          "bytes": 113594,
+          "sha256": "c019057ccdad70492453a9d4e17f2a54bf373defc90f77363510461b673d4b21"
+        },
+        {
+          "path": "assets/uat01/region-kit/Ironveil.fbx",
+          "bytes": 136028,
+          "sha256": "8978654f374197c7d6706401f6fdeed60ed9fe6148fcd1f39bce8f27bae69232"
+        },
+        {
+          "path": "assets/uat01/region-kit/Ironveil.glb",
+          "bytes": 63900,
+          "sha256": "b5afe8ee17c3e1bd6aaf9668a2bbdf40f0605db07a481063fb0f6a3786f27557"
+        },
+        {
+          "path": "assets/uat01/region-kit/Ironveil.png",
+          "bytes": 1574276,
+          "sha256": "cde1f0c16d1fbb5c660fa88c5abaf34f89e75f5011a79cb32b7fe83b18ca8ef0"
+        },
+        {
+          "path": "assets/uat01/region-kit/kit.json",
+          "bytes": 55216,
+          "sha256": "444ddd2119d518ca09a8fb60d03e4643358534c2cd335823dcad551021a0ec0e"
+        },
+        {
+          "path": "assets/uat01/region-kit/manifest.json",
+          "bytes": 366,
+          "sha256": "92b54004e1a7275d7cf14bf58766e6444594aaa94416c1c57c19b5f9a90db718"
+        },
+        {
+          "path": "assets/uat01/region-kit/roundtrip-report.json",
+          "bytes": 1671,
+          "sha256": "caa217adea1eff9ff7e081c2e097325510befd176f2e66ca926803585e61347a"
+        }
+      ],
+      "counts": {
+        ".blend": 3,
+        ".fbx": 3,
+        ".glb": 3,
+        ".png": 3,
+        ".gif": 0
+      },
+      "nativeSource": "src/server/Services/AdventureMapKit.luau",
+      "pending": "Final dressing/boundaries, travel/checkpoints, encounters and rewards",
+      "uatApproved": false,
+      "cloudImported": false
+    },
+    {
+      "id": "hero-kit",
+      "title": "Companion visual templates",
+      "files": [
+        {
+          "path": "assets/uat01/hero-kit/archer_01.blend",
+          "bytes": 135767,
+          "sha256": "58e2f902800884cf251142816ac3887500f668e3cc6c8afa5491b8bd3272b6b9"
+        },
+        {
+          "path": "assets/uat01/hero-kit/archer_01.png",
+          "bytes": 160926,
+          "sha256": "1f456a1b609d7e349f0f332729e16ad41a2f1f64395b0c870133e735b6ce6c20"
+        },
+        {
+          "path": "assets/uat01/hero-kit/archer_01_Attack.fbx",
+          "bytes": 182716,
+          "sha256": "8e6763ea09fb7609babf9ebd7a06634815ef6bdf537a311310556bf5b1945782"
+        },
+        {
+          "path": "assets/uat01/hero-kit/archer_01_Hit.fbx",
+          "bytes": 170316,
+          "sha256": "3266c8399492c9e8852b8b1d30ac44e7aad897804e928b050b281c104ca5155f"
+        },
+        {
+          "path": "assets/uat01/hero-kit/archer_01_Idle.fbx",
+          "bytes": 203724,
+          "sha256": "054eedb13c51cfded39528ecdec05b47891c747031bdd7bab4f77835e027fae4"
+        },
+        {
+          "path": "assets/uat01/hero-kit/archer_01_Rest.fbx",
+          "bytes": 59148,
+          "sha256": "8df639716a994b60bc60860561841de904fbdc0fa8b40bc30f2962c64d1eb8ab"
+        },
+        {
+          "path": "assets/uat01/hero-kit/archer_01_Rest.glb",
+          "bytes": 51420,
+          "sha256": "8c4bfed4fe90fdbe9c9cb47c81f25c6037a9c012478e7c482e5382fc024cfebf"
+        },
+        {
+          "path": "assets/uat01/hero-kit/archer_01_Walk.fbx",
+          "bytes": 190668,
+          "sha256": "974bd983477e86fa5101203c3347c639e05b63e5109e49efb6973f902bf2b2c7"
+        },
+        {
+          "path": "assets/uat01/hero-kit/archer_02.blend",
+          "bytes": 136604,
+          "sha256": "940ef658f480f307f4b6f515f4eb2c8b503e31b69799b6b9406d645545ffa80a"
+        },
+        {
+          "path": "assets/uat01/hero-kit/archer_02.png",
+          "bytes": 160143,
+          "sha256": "732d76a42a785c6472269632d8fde6427035cc7debe1c491e2456d491df104e8"
+        },
+        {
+          "path": "assets/uat01/hero-kit/archer_02_Attack.fbx",
+          "bytes": 182940,
+          "sha256": "a975f8e2bcc7a49acf3f6378122ddd0ae8232fff55886ef7c4c6ad0483ded509"
+        },
+        {
+          "path": "assets/uat01/hero-kit/archer_02_Hit.fbx",
+          "bytes": 170540,
+          "sha256": "6152041a6ec0f57700559ad62141a23b9fa872045cd6b2517f9b51cce4f9d0c4"
+        },
+        {
+          "path": "assets/uat01/hero-kit/archer_02_Idle.fbx",
+          "bytes": 203948,
+          "sha256": "2a27eb15ed242f96051465dde79305ed42c63f4c7ec952052caa45532f79e9f6"
+        },
+        {
+          "path": "assets/uat01/hero-kit/archer_02_Rest.fbx",
+          "bytes": 59356,
+          "sha256": "bc2e89844c0e09bad66b92a3f424dbd195b3154a21e62d898eed1042697b853b"
+        },
+        {
+          "path": "assets/uat01/hero-kit/archer_02_Rest.glb",
+          "bytes": 54060,
+          "sha256": "372e0ea603e5ef614e22f8a74698aa2016a213849d1d5caddebea78b1e003dc6"
+        },
+        {
+          "path": "assets/uat01/hero-kit/archer_02_Walk.fbx",
+          "bytes": 190876,
+          "sha256": "03bd03336dbcd7f8243bc1be6be9a0360da5a31d5e2df6ff50b5bda9b1c60cb0"
+        },
+        {
+          "path": "assets/uat01/hero-kit/archer_03.blend",
+          "bytes": 137109,
+          "sha256": "2193edc3eaf57cb42a230db65ddc498e805b30ad145dad9a05dc13252ed161b9"
+        },
+        {
+          "path": "assets/uat01/hero-kit/archer_03.png",
+          "bytes": 152504,
+          "sha256": "42b6fb826a60ba9c210ff256bb7819019a3cfcca36c8d4042822deadddab0c22"
+        },
+        {
+          "path": "assets/uat01/hero-kit/archer_03_Attack.fbx",
+          "bytes": 183356,
+          "sha256": "90deef5aa51ec9c33d4d40cc5b50f8fffd4d4c4c9f0e7d1b506cfc381ce00d52"
+        },
+        {
+          "path": "assets/uat01/hero-kit/archer_03_Hit.fbx",
+          "bytes": 170940,
+          "sha256": "3f7e4df4e7a8703a197e66da9bfff30364673222097f9562f79574d0bca6ba70"
+        },
+        {
+          "path": "assets/uat01/hero-kit/archer_03_Idle.fbx",
+          "bytes": 204348,
+          "sha256": "a90afb9e6c95bb90a5ca1fbfe32ff6b5fb1e7fa7771c4aa68a5ef60512cfd495"
+        },
+        {
+          "path": "assets/uat01/hero-kit/archer_03_Rest.fbx",
+          "bytes": 59772,
+          "sha256": "e328ef7b1862c16b7316d632a9613712574c9d523c0ccc441b57e28e93bd6386"
+        },
+        {
+          "path": "assets/uat01/hero-kit/archer_03_Rest.glb",
+          "bytes": 56836,
+          "sha256": "d6c8a3ca5e22fe24b17c9317138c85264424062cdca982391e15eb1101f9bd22"
+        },
+        {
+          "path": "assets/uat01/hero-kit/archer_03_Walk.fbx",
+          "bytes": 191292,
+          "sha256": "ca723fcbbc391ccc6c188836247eaf687d4cb85e4f1bd6fd068b342c024137ac"
+        },
+        {
+          "path": "assets/uat01/hero-kit/Guildborne_Hero_Gallery.blend",
+          "bytes": 303688,
+          "sha256": "134dfff8605d9d3788299818baf998d79febd211bdec992e53c85e1c86f1e734"
+        },
+        {
+          "path": "assets/uat01/hero-kit/kit.json",
+          "bytes": 236879,
+          "sha256": "e3caad031677b56ffa84167ebc61ca1a4b53f84c82a2b5e2301730080da54b2e"
+        },
+        {
+          "path": "assets/uat01/hero-kit/knight_01.blend",
+          "bytes": 135978,
+          "sha256": "1f5389f4aa0f0f53d9c32420d804645c91a32164f42fcc34871bd2dc6ec0c9e5"
+        },
+        {
+          "path": "assets/uat01/hero-kit/knight_01.png",
+          "bytes": 158926,
+          "sha256": "0f15f85e2debf7e735505067180b7ed01670c0afe5f3dad6335de2ea098b86f5"
+        },
+        {
+          "path": "assets/uat01/hero-kit/knight_01_Attack.fbx",
+          "bytes": 183084,
+          "sha256": "d83ffc24605cced991061e1a5d0b29709486b83c4f10b628ec673e68ef72710d"
+        },
+        {
+          "path": "assets/uat01/hero-kit/knight_01_Hit.fbx",
+          "bytes": 171164,
+          "sha256": "64d898718dc1de17cb3118761deb6e02a8c592a331628bc328345fd399d23fa2"
+        },
+        {
+          "path": "assets/uat01/hero-kit/knight_01_Idle.fbx",
+          "bytes": 204572,
+          "sha256": "4f24e3e8d47567211a6228b2891eace1c7412de94befc4ac16c32ddf627322e4"
+        },
+        {
+          "path": "assets/uat01/hero-kit/knight_01_Rest.fbx",
+          "bytes": 59996,
+          "sha256": "e1bc7668a01f55c658bf9c5936dc67d3180f7538e20656ead7088919ec29d8f0"
+        },
+        {
+          "path": "assets/uat01/hero-kit/knight_01_Rest.glb",
+          "bytes": 50808,
+          "sha256": "127618facac343108db56592a6cbe3f435a73ffaafd97bb6845ddd2f4d64bc66"
+        },
+        {
+          "path": "assets/uat01/hero-kit/knight_01_Walk.fbx",
+          "bytes": 191516,
+          "sha256": "c388fb7907f0d41c94817800a883f62de374913523168518081f1a27bc5aaa44"
+        },
+        {
+          "path": "assets/uat01/hero-kit/knight_02.blend",
+          "bytes": 137506,
+          "sha256": "05d2546e00d05c8959b29a6fb7d4fdb7e4df5792f12c04fac19b8e99a65165da"
+        },
+        {
+          "path": "assets/uat01/hero-kit/knight_02.png",
+          "bytes": 158873,
+          "sha256": "e488057d692bce8dd5599fe0d07c43fd2e070438928339660cca87a96ce2370b"
+        },
+        {
+          "path": "assets/uat01/hero-kit/knight_02_Attack.fbx",
+          "bytes": 183228,
+          "sha256": "650a3c18f475292e28ac44308d99d97eb8c14708176f60a94f4457b378e383ea"
+        },
+        {
+          "path": "assets/uat01/hero-kit/knight_02_Hit.fbx",
+          "bytes": 171308,
+          "sha256": "b8a9728dbb2949647e353d78f9b77ce7a135bea82762dd535991ceb886365f66"
+        },
+        {
+          "path": "assets/uat01/hero-kit/knight_02_Idle.fbx",
+          "bytes": 204732,
+          "sha256": "24d9571dec07665d96579330329bf1f8d2724595e5d199981736b33847c8c446"
+        },
+        {
+          "path": "assets/uat01/hero-kit/knight_02_Rest.fbx",
+          "bytes": 60140,
+          "sha256": "a012b76193d32e2addb976ed3280eb6ec09b8745678e39022c8ca1b5ca5add57"
+        },
+        {
+          "path": "assets/uat01/hero-kit/knight_02_Rest.glb",
+          "bytes": 52316,
+          "sha256": "c5c8aa64477950669c12fe5fd090427eabc2a71ad8f62903644a48081b27b67c"
+        },
+        {
+          "path": "assets/uat01/hero-kit/knight_02_Walk.fbx",
+          "bytes": 191660,
+          "sha256": "a631e8222d700aafd01a3efea1586f7b1426df1d4106ab43e84c34e497a7e3b6"
+        },
+        {
+          "path": "assets/uat01/hero-kit/knight_03.blend",
+          "bytes": 136650,
+          "sha256": "d4a35c39be307ea5b50ce3766721746b48ab01d3bf953450fc5d9e2bf92db8a3"
+        },
+        {
+          "path": "assets/uat01/hero-kit/knight_03.png",
+          "bytes": 152493,
+          "sha256": "4511dcd98e5304e9a784c1d270e4b8cc8eda7fcd1e5146294a94ec203897940e"
+        },
+        {
+          "path": "assets/uat01/hero-kit/knight_03_Attack.fbx",
+          "bytes": 183260,
+          "sha256": "8207265079231e18efd1cc841535661f6506f878416c78d1d96c5af7a4b5c4b1"
+        },
+        {
+          "path": "assets/uat01/hero-kit/knight_03_Hit.fbx",
+          "bytes": 171340,
+          "sha256": "6cc9fdef834670fe420049ba49fdcd4217d503512a3893bfa247c5b4f1d8a4c8"
+        },
+        {
+          "path": "assets/uat01/hero-kit/knight_03_Idle.fbx",
+          "bytes": 204748,
+          "sha256": "657f3a133777a1be08a53bdd4cdfc34482133a61c1c808ea6a8007a0ca1c03a2"
+        },
+        {
+          "path": "assets/uat01/hero-kit/knight_03_Rest.fbx",
+          "bytes": 60156,
+          "sha256": "245c8b9b35a07be16325eecf17c5587cbe730d463b2285a0cb5678ed19b664b6"
+        },
+        {
+          "path": "assets/uat01/hero-kit/knight_03_Rest.glb",
+          "bytes": 52196,
+          "sha256": "244e87eacf4112b741baccb4858d2f102a4b39559248c21d87d8c5f7625afef2"
+        },
+        {
+          "path": "assets/uat01/hero-kit/knight_03_Walk.fbx",
+          "bytes": 191692,
+          "sha256": "3da003b62ba345f968950d9b512039219cb4b591d875d261b362fa632f52da24"
+        },
+        {
+          "path": "assets/uat01/hero-kit/mage_01.blend",
+          "bytes": 135660,
+          "sha256": "47315b103b361a57700071d088aef7fb396d0ab88f1f0d329b7bc5c5f53b3979"
+        },
+        {
+          "path": "assets/uat01/hero-kit/mage_01.png",
+          "bytes": 150000,
+          "sha256": "159e8d51af7a752ce4f9c333d3d99268c9b13022e1b0a2964a983c17a7529741"
+        },
+        {
+          "path": "assets/uat01/hero-kit/mage_01_Attack.fbx",
+          "bytes": 182428,
+          "sha256": "d9acd5650c84f475865b8eba0fc08f5e1e47e239444e44ba0b6b37161553293b"
+        },
+        {
+          "path": "assets/uat01/hero-kit/mage_01_Hit.fbx",
+          "bytes": 170028,
+          "sha256": "a972c4e2c61d6d4c649c30b309f8282eed6c1ee3c4279df15d66883a7393e8be"
+        },
+        {
+          "path": "assets/uat01/hero-kit/mage_01_Idle.fbx",
+          "bytes": 203436,
+          "sha256": "88ffb0d1505351784e5426268ee6ea802eaa636d9d24bf8dc42b41f44d9513fe"
+        },
+        {
+          "path": "assets/uat01/hero-kit/mage_01_Rest.fbx",
+          "bytes": 58860,
+          "sha256": "9cea5273885fe1488ef51faf10b5f560a9ead7f6f81387e1d3474bb9d8e2945e"
+        },
+        {
+          "path": "assets/uat01/hero-kit/mage_01_Rest.glb",
+          "bytes": 48776,
+          "sha256": "52078d26c5b1c8d9b2873d56b93ca828613c16096fd71d2766a9d88fede47b3b"
+        },
+        {
+          "path": "assets/uat01/hero-kit/mage_01_Walk.fbx",
+          "bytes": 190380,
+          "sha256": "34553c240e7f9e61d0bb505c63b1dbac3e7beae3fb9d3ed17f3e40a54ae79177"
+        },
+        {
+          "path": "assets/uat01/hero-kit/mage_02.blend",
+          "bytes": 136388,
+          "sha256": "c384f827d1b9f441d54b4e1586d35617bf17dce2f819db8590638ffd03bcb98f"
+        },
+        {
+          "path": "assets/uat01/hero-kit/mage_02.png",
+          "bytes": 160983,
+          "sha256": "1761d399413c86684d73dbfd513e0cb63e110df5cd714bd3c0793e943e6ac2af"
+        },
+        {
+          "path": "assets/uat01/hero-kit/mage_02_Attack.fbx",
+          "bytes": 183468,
+          "sha256": "bfa80328eebc5ef0a103f718ab79dfa316f1aa45c1a46324bc5afc8e3a7015eb"
+        },
+        {
+          "path": "assets/uat01/hero-kit/mage_02_Hit.fbx",
+          "bytes": 171068,
+          "sha256": "12bfa1a70134e949197bfa20b749d9e892d6cb3818eef36305b18d0c6af22986"
+        },
+        {
+          "path": "assets/uat01/hero-kit/mage_02_Idle.fbx",
+          "bytes": 204476,
+          "sha256": "c9b09f20f13b4aef2bcf155d7abaed0bbb364289e34ca5e246e2908a6377b957"
+        },
+        {
+          "path": "assets/uat01/hero-kit/mage_02_Rest.fbx",
+          "bytes": 59884,
+          "sha256": "fdf6ab7cfcf1153165f95ca1afe5cc4e802b7ddcc21857dcbe71ac7683a06783"
+        },
+        {
+          "path": "assets/uat01/hero-kit/mage_02_Rest.glb",
+          "bytes": 48596,
+          "sha256": "6008acc1deaa751e02ae52b8d2e49d2fdf7b1a6f15318bc42a303be734dfcff2"
+        },
+        {
+          "path": "assets/uat01/hero-kit/mage_02_Walk.fbx",
+          "bytes": 191420,
+          "sha256": "825653f9417801fe27ad216a82d32242fb651989c382b452efa75e200261dc3f"
+        },
+        {
+          "path": "assets/uat01/hero-kit/mage_03.blend",
+          "bytes": 137520,
+          "sha256": "375ac5f47d716ced5996f4e4ac50567c0c8bddb69de013066ef3886dcc7e3f74"
+        },
+        {
+          "path": "assets/uat01/hero-kit/mage_03.png",
+          "bytes": 152402,
+          "sha256": "173fcb55c63e9bbcf3ff33ba15a44a5785a1c796c5a2e0d9ae0060871cddbf5a"
+        },
+        {
+          "path": "assets/uat01/hero-kit/mage_03_Attack.fbx",
+          "bytes": 183564,
+          "sha256": "612d03a97c0e5b6f3d6200c83a16bc80bd58762e966cc3db15cc2079a97d14f1"
+        },
+        {
+          "path": "assets/uat01/hero-kit/mage_03_Hit.fbx",
+          "bytes": 171148,
+          "sha256": "4f66bac18efc4e6fc9ee15ff845bc8f45fab3c2846893e7adb15abb6579b3a42"
+        },
+        {
+          "path": "assets/uat01/hero-kit/mage_03_Idle.fbx",
+          "bytes": 204556,
+          "sha256": "7955a9e5b4b5e2b42de464d14bad542724cd10b910cb87b2386dc1b245160f6c"
+        },
+        {
+          "path": "assets/uat01/hero-kit/mage_03_Rest.fbx",
+          "bytes": 59980,
+          "sha256": "3a01feddce085bf7d6961663b3cc5e0831912c4ed9c28de7f1459c543c7e86a2"
+        },
+        {
+          "path": "assets/uat01/hero-kit/mage_03_Rest.glb",
+          "bytes": 49732,
+          "sha256": "28d301602984708a942026565440d24b8b66203bc735967683bfb59f4708d318"
+        },
+        {
+          "path": "assets/uat01/hero-kit/mage_03_Walk.fbx",
+          "bytes": 191500,
+          "sha256": "e358aa05664d96341581dce13f02c21a3af764a40b7834e12be51f554ce6886e"
+        },
+        {
+          "path": "assets/uat01/hero-kit/manifest.json",
+          "bytes": 19930,
+          "sha256": "d26393226872d4b2ebd9bef852c217af4da5559dfa3e321be35d34e815788c6f"
+        },
+        {
+          "path": "assets/uat01/hero-kit/preview.png",
+          "bytes": 1003253,
+          "sha256": "df50381c0d263bf076311ccf3faccd302da90fe4f6442e05797f8a6b38130230"
+        },
+        {
+          "path": "assets/uat01/hero-kit/priest_01.blend",
+          "bytes": 135364,
+          "sha256": "483d785270632926da8f33c608fef23f815e1edf55160f91df98d4811f02f933"
+        },
+        {
+          "path": "assets/uat01/hero-kit/priest_01.png",
+          "bytes": 164834,
+          "sha256": "b21d922f3702a8eaee64ec2dddd195787ad68f112ba888141a53aa36d572ca02"
+        },
+        {
+          "path": "assets/uat01/hero-kit/priest_01_Attack.fbx",
+          "bytes": 182364,
+          "sha256": "485aec100d5772d46a7b01a3d73430c38a2695cf219e0824a72c1e7837611fa2"
+        },
+        {
+          "path": "assets/uat01/hero-kit/priest_01_Hit.fbx",
+          "bytes": 169964,
+          "sha256": "bab805cf88537ede1d33207eb2570af5ce413dbef261a78a7e02e0f9e333645d"
+        },
+        {
+          "path": "assets/uat01/hero-kit/priest_01_Idle.fbx",
+          "bytes": 203372,
+          "sha256": "354d236fb54d739e10fae9e6b5cd881d12a349d5a751e85173ca954fe2ac7d48"
+        },
+        {
+          "path": "assets/uat01/hero-kit/priest_01_Rest.fbx",
+          "bytes": 58796,
+          "sha256": "31d6fb9c50c2a6a001c03dcfe935bef2c1ca5d77293a551585f1ef4ddf093e90"
+        },
+        {
+          "path": "assets/uat01/hero-kit/priest_01_Rest.glb",
+          "bytes": 48944,
+          "sha256": "d7fb2bd1bf41c25fe848b87bbaa1e60450d6991e0c618c2755c751aa89049481"
+        },
+        {
+          "path": "assets/uat01/hero-kit/priest_01_Walk.fbx",
+          "bytes": 190316,
+          "sha256": "2f10bea51e306bbfdac029e95d1e928bcfc9ff25c8d7d857009cf864c41f614f"
+        },
+        {
+          "path": "assets/uat01/hero-kit/priest_02.blend",
+          "bytes": 132985,
+          "sha256": "5f74353d18e3c722d7994409f587342b74b101e8a66f20b523194a4083781dbc"
+        },
+        {
+          "path": "assets/uat01/hero-kit/priest_02.png",
+          "bytes": 156697,
+          "sha256": "346fab1fea6def5fda5425ae943829cd6815c038fe81ed442132664afe7384ee"
+        },
+        {
+          "path": "assets/uat01/hero-kit/priest_02_Attack.fbx",
+          "bytes": 181404,
+          "sha256": "cb24389641ae4d0215ce42209b71fae2005fe9d9db042bec5a3a0b7c91895ff5"
+        },
+        {
+          "path": "assets/uat01/hero-kit/priest_02_Hit.fbx",
+          "bytes": 169004,
+          "sha256": "10ba7ede2c99e76e42c25abbce7a6fe5a5880d1f3349dd95e80ed6be2a892dc2"
+        },
+        {
+          "path": "assets/uat01/hero-kit/priest_02_Idle.fbx",
+          "bytes": 202412,
+          "sha256": "fa60d4ed0680dc829aaad355e8ade6e7b1f88b78635e01d9e710de5606bbc124"
+        },
+        {
+          "path": "assets/uat01/hero-kit/priest_02_Rest.fbx",
+          "bytes": 57820,
+          "sha256": "0eb3e383625c598560dce237b41118d205c4c3e3489892a00b80b819104c4150"
+        },
+        {
+          "path": "assets/uat01/hero-kit/priest_02_Rest.glb",
+          "bytes": 49072,
+          "sha256": "8478638e4573429464db31ac974604a89967222eb86f42c254de94a42cd1b660"
+        },
+        {
+          "path": "assets/uat01/hero-kit/priest_02_Walk.fbx",
+          "bytes": 189356,
+          "sha256": "2f9d041c2e56b9f93b739f3dc92b2798cbedce80ed875680328cac7a7726d857"
+        },
+        {
+          "path": "assets/uat01/hero-kit/priest_03.blend",
+          "bytes": 136621,
+          "sha256": "8867d963a8f2070db27e6197653c7e46a1283493567f19ee44fce24efd32e4ec"
+        },
+        {
+          "path": "assets/uat01/hero-kit/priest_03.png",
+          "bytes": 154556,
+          "sha256": "7e3742116268e41ecad561470d4575f96b5cad7137b980fd3c491abc66159d87"
+        },
+        {
+          "path": "assets/uat01/hero-kit/priest_03_Attack.fbx",
+          "bytes": 181564,
+          "sha256": "5e32098b17ef86c9c892dc46411827582934cfdf574dcc72ff0c6e39abd82cea"
+        },
+        {
+          "path": "assets/uat01/hero-kit/priest_03_Hit.fbx",
+          "bytes": 169164,
+          "sha256": "69b8082ec5ae8116393b309c26ea8bc573044b76cb977ddd14d1298f2b30be04"
+        },
+        {
+          "path": "assets/uat01/hero-kit/priest_03_Idle.fbx",
+          "bytes": 202572,
+          "sha256": "ba5581ab0fc84ccc327214b88a78b92b7890404c2e6d6f574f2002d4b02ead24"
+        },
+        {
+          "path": "assets/uat01/hero-kit/priest_03_Rest.fbx",
+          "bytes": 57980,
+          "sha256": "2c7ff724405296c1e8f554922e5474e670e2446c0410c920dfbbd4eb43c9ab9f"
+        },
+        {
+          "path": "assets/uat01/hero-kit/priest_03_Rest.glb",
+          "bytes": 50404,
+          "sha256": "f701d4dcd66ffdcadae4e6ab3ad83b8010c631f7d73c70a596d397845cf90355"
+        },
+        {
+          "path": "assets/uat01/hero-kit/priest_03_Walk.fbx",
+          "bytes": 189500,
+          "sha256": "459a91cb44becbb2d6479bbb96b96fc0f4040effc724780da4d5ef33bee8d676"
+        },
+        {
+          "path": "assets/uat01/hero-kit/roundtrip-report.json",
+          "bytes": 27824,
+          "sha256": "7ab5bbbb408a5eab41be50826a8ce3fcb8a36603439a0911e3f1146c643e841c"
+        },
+        {
+          "path": "assets/uat01/hero-kit/warrior_01.blend",
+          "bytes": 135949,
+          "sha256": "886f05a260dd3d162f46df07a5c956511f398fec2e963f676191257a8c7abea5"
+        },
+        {
+          "path": "assets/uat01/hero-kit/warrior_01.png",
+          "bytes": 159548,
+          "sha256": "e6de1d5b98ea4ecfa2d65f0822bda337eef91ed36c25ea891fa4ec8fbde00e89"
+        },
+        {
+          "path": "assets/uat01/hero-kit/warrior_01_Attack.fbx",
+          "bytes": 181852,
+          "sha256": "233850c34485a4a7b3a4a3357cf5f2583007d6e27762fc5bb104edabb02a3c03"
+        },
+        {
+          "path": "assets/uat01/hero-kit/warrior_01_Hit.fbx",
+          "bytes": 169932,
+          "sha256": "2a57ce336657669bc3a877769929a098dbfd879c568065102286edd256383d89"
+        },
+        {
+          "path": "assets/uat01/hero-kit/warrior_01_Idle.fbx",
+          "bytes": 203340,
+          "sha256": "07ab672771169bf7973847526dd8dcb459ce94faf39d80e0cff938d97074e1a8"
+        },
+        {
+          "path": "assets/uat01/hero-kit/warrior_01_Rest.fbx",
+          "bytes": 58748,
+          "sha256": "910baf85ef56f5c0ace267f45b1e249ce29fc977107238c59a7692b10c4f6b8b"
+        },
+        {
+          "path": "assets/uat01/hero-kit/warrior_01_Rest.glb",
+          "bytes": 47864,
+          "sha256": "8c3652943b9d915e62e59b91426e449cc4c5432937575e481806a5f78d2e2331"
+        },
+        {
+          "path": "assets/uat01/hero-kit/warrior_01_Walk.fbx",
+          "bytes": 190268,
+          "sha256": "1706b062a313f1e7a88dc373800ccf9d96823886e19d73eb8d1f9e57c55ce802"
+        },
+        {
+          "path": "assets/uat01/hero-kit/warrior_02.blend",
+          "bytes": 134196,
+          "sha256": "603dfba8700d356ee68130f82b0d9612a93626a95ab9ddede62ccf409e908eb1"
+        },
+        {
+          "path": "assets/uat01/hero-kit/warrior_02.png",
+          "bytes": 157816,
+          "sha256": "71315adcbe59adbe1d514a5e4c284144ed20883524df06511409d13038f72d5a"
+        },
+        {
+          "path": "assets/uat01/hero-kit/warrior_02_Attack.fbx",
+          "bytes": 183100,
+          "sha256": "2199a5c25ebf7cda34616ddc2a64b0980b71d1354219003c0a396045d040312c"
+        },
+        {
+          "path": "assets/uat01/hero-kit/warrior_02_Hit.fbx",
+          "bytes": 171180,
+          "sha256": "29a4937dda13df8d28e01c27f665a7ef9c7a4a8d15024b550fa3a10c9e3eee16"
+        },
+        {
+          "path": "assets/uat01/hero-kit/warrior_02_Idle.fbx",
+          "bytes": 204588,
+          "sha256": "28df8e3f13f51658d1c498524fb2064af9d16e931f00b37a89dd9d126d83baa0"
+        },
+        {
+          "path": "assets/uat01/hero-kit/warrior_02_Rest.fbx",
+          "bytes": 59996,
+          "sha256": "65a247faec58194285dbcf6d09518500aa7dc07960a03aa7c3e7c9a055f34d55"
+        },
+        {
+          "path": "assets/uat01/hero-kit/warrior_02_Rest.glb",
+          "bytes": 50120,
+          "sha256": "9cadb983777fe1749bee5f488008c182edf7beef18d2573eff4f617b2c51cc59"
+        },
+        {
+          "path": "assets/uat01/hero-kit/warrior_02_Walk.fbx",
+          "bytes": 191516,
+          "sha256": "9df38ac81407400697d93ee738e543dc090331d10694c8cc352ca232f4ab305b"
+        },
+        {
+          "path": "assets/uat01/hero-kit/warrior_03.blend",
+          "bytes": 137679,
+          "sha256": "1cbc95de34ff29bced9ef0c8a34a7ea9c0b03547f8a54806c4b57b2bc572d960"
+        },
+        {
+          "path": "assets/uat01/hero-kit/warrior_03.png",
+          "bytes": 154644,
+          "sha256": "e69d41b2c9d809860e0a2062e24c8021ae2ecb58b9eb2b761462fc1c6ad3d8d9"
+        },
+        {
+          "path": "assets/uat01/hero-kit/warrior_03_Attack.fbx",
+          "bytes": 183308,
+          "sha256": "afe111a9143848801a449ece974b8dd1f45973ff547acb75743c82a17eb86883"
+        },
+        {
+          "path": "assets/uat01/hero-kit/warrior_03_Hit.fbx",
+          "bytes": 171372,
+          "sha256": "12a93ae6f92d31d998f8838a2f317cc784ea97a738059438e94ee01f9d0ac601"
+        },
+        {
+          "path": "assets/uat01/hero-kit/warrior_03_Idle.fbx",
+          "bytes": 204796,
+          "sha256": "47303c6c4e1144fc49bbf8ac645c0806d5c2a70cdefaf35b1dd8102be7a05492"
+        },
+        {
+          "path": "assets/uat01/hero-kit/warrior_03_Rest.fbx",
+          "bytes": 60204,
+          "sha256": "0c106fa2fb64d9ffc57d725b807aaca1aa28a0855907b51471d4473ef93f3141"
+        },
+        {
+          "path": "assets/uat01/hero-kit/warrior_03_Rest.glb",
+          "bytes": 51484,
+          "sha256": "b7c8f5c83a95df3043e654fe1071c50bd2120c4c60b920f33e2bb9b41df37b1e"
+        },
+        {
+          "path": "assets/uat01/hero-kit/warrior_03_Walk.fbx",
+          "bytes": 191724,
+          "sha256": "52491d3fe1c19486fd69cc2b405a779afa227658b1be5fa47942b6394ddb301b"
+        }
+      ],
+      "counts": {
+        ".blend": 16,
+        ".fbx": 75,
+        ".glb": 15,
+        ".png": 16,
+        ".gif": 0
+      },
+      "nativeSource": "src/server/Services/HeroVisualKit.luau",
+      "pending": "Current companion appearances integrated; new recruitment catalog/ownership/rotation and custom-rig imports remain",
+      "uatApproved": false,
+      "cloudImported": false
+    },
+    {
+      "id": "cosmetic-kit",
+      "title": "Cosmetic art prototypes",
+      "files": [
+        {
+          "path": "assets/uat01/cosmetic-kit/company_banner.fbx",
+          "bytes": 20364,
+          "sha256": "23a0ef20e9fda6fa0dbd07bbe2cd88305a01f9ec0b473e8b44e0e7235d01bb2b"
+        },
+        {
+          "path": "assets/uat01/cosmetic-kit/company_banner.glb",
+          "bytes": 14696,
+          "sha256": "bb5275955d97b6dadc26088675ccadebe7c6b4aba7f096c17e19f32a69986f24"
+        },
+        {
+          "path": "assets/uat01/cosmetic-kit/company_banner.png",
+          "bytes": 140381,
+          "sha256": "5290d10598461bc3bd24fd1e73942546cd7cd9bcf806edf6a934e336add0264a"
+        },
+        {
+          "path": "assets/uat01/cosmetic-kit/compass_blade.fbx",
+          "bytes": 18108,
+          "sha256": "3c947f2daac3f503593b1bf033d1836495c0ecc9d2f1664a37b9abd44df444a7"
+        },
+        {
+          "path": "assets/uat01/cosmetic-kit/compass_blade.glb",
+          "bytes": 7032,
+          "sha256": "c4e575819046b76b4247c1465f707d2e0268368478665131b80751cbce1b025c"
+        },
+        {
+          "path": "assets/uat01/cosmetic-kit/compass_blade.png",
+          "bytes": 116190,
+          "sha256": "7acb0258675ec5544b9e47568c748e7dd95e002038e047b5f213ce5cc9e885a2"
+        },
+        {
+          "path": "assets/uat01/cosmetic-kit/export-report.json",
+          "bytes": 2256,
+          "sha256": "e38c03a992b424a9e84658a1fd4cd7f84d90b8809a2d0f8b235fbf2bc7f3c825"
+        },
+        {
+          "path": "assets/uat01/cosmetic-kit/founder_cloak.fbx",
+          "bytes": 18108,
+          "sha256": "3af1d4571672bb3b975bfeb2a4ead44c0a1a9326f6c11e003096845d23871b9d"
+        },
+        {
+          "path": "assets/uat01/cosmetic-kit/founder_cloak.glb",
+          "bytes": 7896,
+          "sha256": "8d8543fd70e9f81fc131a17adde8aeb1a1b76e4902218e956bd52be5d6bae08f"
+        },
+        {
+          "path": "assets/uat01/cosmetic-kit/founder_cloak.png",
+          "bytes": 152361,
+          "sha256": "1f99599388fa45c26e0f657fb56309564f58b610956078c5d65cf5f48c89d139"
+        },
+        {
+          "path": "assets/uat01/cosmetic-kit/friendly_greeting.fbx",
+          "bytes": 20060,
+          "sha256": "f9114f5e333bf746aa8417b01ca13427163391df0726b47f4f52ef25c31d75a5"
+        },
+        {
+          "path": "assets/uat01/cosmetic-kit/friendly_greeting.glb",
+          "bytes": 13204,
+          "sha256": "13137a839bbf49f08fb8c6af98fae692ccc651f72cbe0bccee70cd5dee68dba6"
+        },
+        {
+          "path": "assets/uat01/cosmetic-kit/friendly_greeting.png",
+          "bytes": 128000,
+          "sha256": "eb2478e879741de173199b3ca885d351743e5c6aa39c7d7329413018fc07cff5"
+        },
+        {
+          "path": "assets/uat01/cosmetic-kit/friendly_greeting_Animation.fbx",
+          "bytes": 202684,
+          "sha256": "46c9bf2c74b726fa7b15a22f9e60308c654bcb4f023ec8fcb2932a865570229d"
+        },
+        {
+          "path": "assets/uat01/cosmetic-kit/FriendlyGreeting.blend",
+          "bytes": 149757,
+          "sha256": "f0d279ccc38c05732c4d5e1a8d8b79913ee803a38256d1f5efbab9b452182ac4"
+        },
+        {
+          "path": "assets/uat01/cosmetic-kit/greeting-report.json",
+          "bytes": 151,
+          "sha256": "5985246b6b3fbeeebb50ea60263beb7403ee412404a1c7f602896055551fda2f"
+        },
+        {
+          "path": "assets/uat01/cosmetic-kit/greeting-roundtrip.json",
+          "bytes": 261,
+          "sha256": "bdde671e53d895fc7eb28cb9b19982faf0053f918481a11b977138387783f600"
+        },
+        {
+          "path": "assets/uat01/cosmetic-kit/Guildborne_Cosmetic_Kit.blend",
+          "bytes": 113009,
+          "sha256": "becef086e7d44126e7e29b8bb641d354abd41ae13e99a5bff067eebe064bca95"
+        },
+        {
+          "path": "assets/uat01/cosmetic-kit/hearth_decor.fbx",
+          "bytes": 19820,
+          "sha256": "9667dd60c8ff8eae08449972c92776a720de4a877db49bff3277321003252d14"
+        },
+        {
+          "path": "assets/uat01/cosmetic-kit/hearth_decor.glb",
+          "bytes": 13748,
+          "sha256": "53a0770b159bd2349c028897ac0bf34d53aa3d572979ccc67e1d463748f399c2"
+        },
+        {
+          "path": "assets/uat01/cosmetic-kit/hearth_decor.png",
+          "bytes": 127183,
+          "sha256": "8b4719df1fdec38ef14dad6a96b8e9936e0e94fb67f6a746ed7c59273d096552"
+        },
+        {
+          "path": "assets/uat01/cosmetic-kit/icon-audit.json",
+          "bytes": 2293,
+          "sha256": "8d001a08e5bd2288ee3eb784ecbd9fd9b2ef589f04c5c73c52e9d4dbee5f838d"
+        },
+        {
+          "path": "assets/uat01/cosmetic-kit/ivory_portrait_frame.fbx",
+          "bytes": 17516,
+          "sha256": "4d2bbfe68af6faeab6bb170780ad7d21d8c730cba7afc7f0ba1bc5a3959b09c6"
+        },
+        {
+          "path": "assets/uat01/cosmetic-kit/ivory_portrait_frame.glb",
+          "bytes": 9696,
+          "sha256": "609f7d69592f434eae1612e07343dfd07e64ec1afb61914c18decdcc84ff22d5"
+        },
+        {
+          "path": "assets/uat01/cosmetic-kit/ivory_portrait_frame.png",
+          "bytes": 121149,
+          "sha256": "e537e6b3e01a51e49f37989e85dad847af41af33418fcf2966de3caee049c919"
+        },
+        {
+          "path": "assets/uat01/cosmetic-kit/kit.json",
+          "bytes": 41246,
+          "sha256": "a933abe02df26900cef9e47da0ee5dfcaf30e7a9315816bf0963149b80e95d03"
+        },
+        {
+          "path": "assets/uat01/cosmetic-kit/pale_spell_trail.fbx",
+          "bytes": 20588,
+          "sha256": "d81453b7f01ed83d1a859f323b71f733fe791362dcf4a9088ec8b1550738bd65"
+        },
+        {
+          "path": "assets/uat01/cosmetic-kit/pale_spell_trail.glb",
+          "bytes": 14832,
+          "sha256": "a545bc3abf796629eee591d10d7afc0b21d2db7efc32c0578b1c17623fce9abe"
+        },
+        {
+          "path": "assets/uat01/cosmetic-kit/pale_spell_trail.png",
+          "bytes": 106954,
+          "sha256": "17ba2ca3b1aa872e7420888dccd5bb5242f9928b3244c6aec292eba4b4e6548b"
+        },
+        {
+          "path": "assets/uat01/cosmetic-kit/preview.png",
+          "bytes": 920283,
+          "sha256": "8baacd5c59d61fcfd3c3e571e141af6473d62fd73f52b092c6d6427021fbcea3"
+        },
+        {
+          "path": "assets/uat01/cosmetic-kit/roundtrip-report.json",
+          "bytes": 3049,
+          "sha256": "8a58b67649954b33b05073011b80ba9fe045d24dfcb48a2b39f6fef53ff9a090"
+        },
+        {
+          "path": "assets/uat01/cosmetic-kit/rune_portal.fbx",
+          "bytes": 23308,
+          "sha256": "e3d3861b7f3942129ef0624cbdd7bf0aac2fb54e8b4b2f9bdf404bd67c1b0957"
+        },
+        {
+          "path": "assets/uat01/cosmetic-kit/rune_portal.glb",
+          "bytes": 33312,
+          "sha256": "b4ce540516bb0c197fbae3580d01115a9838af253ce8f86168543e82113caf20"
+        },
+        {
+          "path": "assets/uat01/cosmetic-kit/rune_portal.png",
+          "bytes": 150155,
+          "sha256": "0417b482ef7bf992d1d8b266f7fb39e223737ecec10c267aafd76c910de14773"
+        }
+      ],
+      "counts": {
+        ".blend": 2,
+        ".fbx": 9,
+        ".glb": 8,
+        ".png": 9,
+        ".gif": 0
+      },
+      "nativeSource": "src/server/Services/CosmeticVisualKit.luau",
+      "pending": "Entitlements/equip, shop delivery, cloak skinning and dynamic VFX",
+      "uatApproved": false,
+      "cloudImported": false
+    }
+  ],
+  "registrySummary": {
+    "assets": 239,
+    "screens": 65,
+    "screenScopes": {
+      "UAT01": 57,
+      "FUTURE": 8
+    },
+    "assetStatuses": {
+      "PLANNED": 75,
+      "REUSE_NATIVE_COMPONENTS_PENDING_AUDIT": 81,
+      "SOURCED_CROP_REVIEW": 12,
+      "UNBOUND_GAMEPLAY_DESIGN": 8,
+      "NATIVE_PREVIEW_AND_LOCAL_ICON_READY_IMPORT_PENDING": 30,
+      "APPEARANCE_INTEGRATED_RECRUITMENT_CATALOG_PENDING": 15,
+      "COSMETIC_PREVIEW_INTEGRATED_ENTITLEMENT_UNBOUND": 8,
+      "CREATED_LISTENING_REVIEW_PENDING": 10
+    }
+  },
+  "notes": [
+    "Library entries overlap: weapon models also appear in the item kit; counts are not unique game assets.",
+    "Portable exports are local artifacts, not uploaded Roblox IDs or human UAT acceptance.",
+    "Static portal/trail previews are not implemented dynamic VFX; templates are not recruitment entitlements.",
+    "Runtime full domain suite323; subsequent art-only changes have separate build/type/compile/native evidence."
+  ]
+}

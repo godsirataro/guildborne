@@ -1,0 +1,29 @@
+{
+  "desktop": {
+    "content": [
+      {
+        "type": "text",
+        "text": "{\"poses\":{\"Warrior\":{\"shoulder\":true,\"torso\":true},\"Archer\":{\"shoulder\":true,\"torso\":true},\"Knight\":{\"shoulder\":true,\"torso\":true},\"Priest\":{\"shoulder\":true,\"torso\":true},\"Mage\":{\"shoulder\":true,\"torso\":true}},\"remaining\":0,\"stressCount\":48,\"peak\":37,\"effects\":{\"Warrior\":31,\"Archer\":15,\"Knight\":21,\"Priest\":18,\"Mage\":37}}"
+      }
+    ],
+    "isError": false
+  },
+  "mobile": {
+    "content": [
+      {
+        "type": "text",
+        "text": "{\"touch\":true,\"remaining\":0,\"stressCount\":30}"
+      }
+    ],
+    "isError": false
+  },
+  "trail": {
+    "content": [
+      {
+        "type": "text",
+        "text": "{\"remaining\":0,\"trail\":1,\"impactEmitters\":1}"
+      }
+    ],
+    "isError": false
+  }
+}

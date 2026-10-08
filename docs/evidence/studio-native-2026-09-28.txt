@@ -1,0 +1,97 @@
+๑๔:๓๔:๑๙.๔๑๒  [Guildborne] Phase 1 ready · Studio memory · not saved after Stop  -  เซิร์ฟเวอร์ - ServerBootstrap:131
+๑๔:๓๔:๑๙.๕๒๘  [Guildborne] profile_loaded {"revision":0}  -  เซิร์ฟเวอร์ - ServerBootstrap:22
+๑๔:๓๔:๑๙.๕๒๘  [Guildborne] session_started []  -  เซิร์ฟเวอร์ - ServerBootstrap:22
+๑๔:๓๔:๑๙.๕๘๕  [Guildborne] Phase 1 client ready  -  ไคลเอนต์ - SliceController:55
+๑๔:๓๔:๓๔.๑๓๙  [Guildborne] profile_saved {"action":"SetLanguage","revision":1}  -  เซิร์ฟเวอร์ - ServerBootstrap:22
+๑๔:๓๕:๒๔.๗๗๑  [Guildborne] profile_saved {"action":"SetLanguage","revision":2}  -  เซิร์ฟเวอร์ - ServerBootstrap:22
+๑๔:๓๕:๒๕.๓๓๗  [Guildborne] profile_saved {"action":"SetLanguage","revision":3}  -  เซิร์ฟเวอร์ - ServerBootstrap:22
+๑๔:๓๕:๒๖.๕๗๑  [Guildborne] profile_saved {"action":"SetLanguage","revision":4}  -  เซิร์ฟเวอร์ - ServerBootstrap:22
+๑๔:๓๕:๒๗.๐๘๘  [Guildborne] profile_saved {"action":"SetLanguage","revision":5}  -  เซิร์ฟเวอร์ - ServerBootstrap:22
+๑๔:๓๕:๓๒.๔๗๑  [Guildborne] profile_saved {"action":"SetLanguage","revision":6}  -  เซิร์ฟเวอร์ - ServerBootstrap:22
+๑๔:๓๖:๓๗.๓๑๘  GBQA PASS GetState nil revision 6 gold 0  -  ไคลเอนต์
+๑๔:๓๖:๓๗.๙๘๕  [Guildborne] profile_saved {"action":"SetLanguage","revision":7}  -  เซิร์ฟเวอร์ - ServerBootstrap:22
+๑๔:๓๖:๓๘.๐๒๐  GBQA PASS SetLanguage OK revision 7 gold 0  -  ไคลเอนต์
+๑๔:๓๖:๓๘.๗๓๘  GBQA PASS SetLanguage InvalidRequest revision 7 gold 0  -  ไคลเอนต์
+๑๔:๓๖:๓๙.๔๑๙  [Guildborne] profile_saved {"action":"BeginTutorial","revision":8}  -  เซิร์ฟเวอร์ - ServerBootstrap:22
+๑๔:๓๖:๓๙.๔๑๙  [Guildborne] tutorial_started []  -  เซิร์ฟเวอร์ - ServerBootstrap:22
+๑๔:๓๖:๓๙.๔๕๔  GBQA PASS BeginTutorial OK revision 8 gold 0  -  ไคลเอนต์
+๑๔:๓๖:๔๐.๑๓๕  [Guildborne] profile_saved {"action":"Recruit","revision":9}  -  เซิร์ฟเวอร์ - ServerBootstrap:22
+๑๔:๓๖:๔๐.๑๓๕  [Guildborne] adventurer_recruited {"classId":"Warrior"}  -  เซิร์ฟเวอร์ - ServerBootstrap:22
+๑๔:๓๖:๔๐.๑๖๙  GBQA PASS Recruit OK revision 9 gold 0  -  ไคลเอนต์
+๑๔:๓๖:๔๐.๘๘๗   ▶ GBQA PASS UpdateParty InvalidParty revision 9 gold 0 (x2)  -  ไคลเอนต์
+๑๔:๓๖:๔๒.๒๘๕  [Guildborne] profile_saved {"action":"UpdateParty","revision":10}  -  เซิร์ฟเวอร์ - ServerBootstrap:22
+๑๔:๓๖:๔๒.๒๘๕  [Guildborne] party_created []  -  เซิร์ฟเวอร์ - ServerBootstrap:22
+๑๔:๓๖:๔๒.๓๒๐  GBQA PASS UpdateParty OK revision 10 gold 0  -  ไคลเอนต์
+๑๔:๓๖:๔๓.๐๓๖  GBQA PASS UpdateParty AlreadyCommitted revision 10 gold 0  -  ไคลเอนต์
+๑๔:๓๖:๔๓.๗๕๓  GBQA PASS UpdateParty RequestConflict revision 10 gold 0  -  ไคลเอนต์
+๑๔:๓๖:๔๔.๔๖๙  GBQA PASS UpgradeGuildHall HallLocked revision 10 gold 0  -  ไคลเอนต์
+๑๔:๓๖:๔๕.๑๘๗  GBQA PASS StartQuest InvalidQuest revision 10 gold 0  -  ไคลเอนต์
+๑๔:๓๖:๔๕.๙๐๒  GBQA PASS CompleteQuest QuestNotActive revision 10 gold 0  -  ไคลเอนต์
+๑๔:๓๖:๔๖.๖๒๐  GBQA PASS CompleteQuest InvalidRequest revision 10 gold 0  -  ไคลเอนต์
+๑๔:๓๖:๔๗.๓๓๕  GBQA PASS EquipItem ItemNotOwned revision 10 gold 0  -  ไคลเอนต์
+๑๔:๓๖:๔๘.๐๑๘  [Guildborne] profile_saved {"action":"StartQuest","revision":11}  -  เซิร์ฟเวอร์ - ServerBootstrap:22
+๑๔:๓๖:๔๘.๐๑๘  [Guildborne] quest_started {"questId":"trail_watch"}  -  เซิร์ฟเวอร์ - ServerBootstrap:22
+๑๔:๓๖:๔๘.๐๕๓  GBQA PASS StartQuest OK revision 11 gold 0  -  ไคลเอนต์
+๑๔:๓๖:๔๘.๗๗๐  GBQA PASS CompleteQuest QuestTooEarly revision 11 gold 0  -  ไคลเอนต์
+๑๔:๓๖:๔๙.๔๘๖  GBQA PASS UpdateParty QuestActive revision 11 gold 0  -  ไคลเอนต์
+๑๔:๓๗:๐๕.๑๖๘  [Guildborne] profile_saved {"action":"CompleteQuest","revision":12}  -  เซิร์ฟเวอร์ - ServerBootstrap:22
+๑๔:๓๗:๐๕.๑๖๘  [Guildborne] gold_created {"amount":30,"reason":"QuestReward"}  -  เซิร์ฟเวอร์ - ServerBootstrap:22
+๑๔:๓๗:๐๕.๑๖๘  [Guildborne] item_acquired {"quantity":1,"itemId":"training_sword"}  -  เซิร์ฟเวอร์ - ServerBootstrap:22
+๑๔:๓๗:๐๕.๑๖๘  [Guildborne] item_acquired {"quantity":2,"itemId":"herb"}  -  เซิร์ฟเวอร์ - ServerBootstrap:22
+๑๔:๓๗:๐๕.๑๖๘  [Guildborne] quest_completed {"questId":"trail_watch"}  -  เซิร์ฟเวอร์ - ServerBootstrap:22
+๑๔:๓๗:๐๕.๒๐๓  GBQA PASS CompleteQuest OK revision 12 gold 30  -  ไคลเอนต์
+๑๔:๓๗:๐๕.๙๑๙  GBQA PASS CompleteQuest AlreadyCommitted revision 12 gold 30  -  ไคลเอนต์
+๑๔:๓๗:๐๖.๖๓๕  GBQA PASS CompleteQuest QuestNotActive revision 12 gold 30  -  ไคลเอนต์
+๑๔:๓๗:๐๗.๓๑๖  [Guildborne] profile_saved {"action":"EquipItem","revision":13}  -  เซิร์ฟเวอร์ - ServerBootstrap:22
+๑๔:๓๗:๐๗.๓๑๖  [Guildborne] weapon_equipped {"itemId":"training_sword","classId":"Warrior"}  -  เซิร์ฟเวอร์ - ServerBootstrap:22
+๑๔:๓๗:๐๗.๓๕๒  GBQA PASS EquipItem OK revision 13 gold 30  -  ไคลเอนต์
+๑๔:๓๗:๐๘.๐๓๔  [Guildborne] profile_saved {"action":"Recruit","revision":14}  -  เซิร์ฟเวอร์ - ServerBootstrap:22
+๑๔:๓๗:๐๘.๐๓๔  [Guildborne] gold_destroyed {"amount":20,"reason":"Recruitment"}  -  เซิร์ฟเวอร์ - ServerBootstrap:22
+๑๔:๓๗:๐๘.๐๓๔  [Guildborne] item_acquired {"quantity":1,"itemId":"short_bow"}  -  เซิร์ฟเวอร์ - ServerBootstrap:22
+๑๔:๓๗:๐๘.๐๓๔  [Guildborne] adventurer_recruited {"classId":"Archer"}  -  เซิร์ฟเวอร์ - ServerBootstrap:22
+๑๔:๓๗:๐๘.๐๖๙  GBQA PASS Recruit OK revision 14 gold 10  -  ไคลเอนต์
+๑๔:๓๗:๐๘.๗๘๕  GBQA PASS EquipItem IncompatibleWeapon revision 14 gold 10  -  ไคลเอนต์
+๑๔:๓๗:๐๙.๔๖๘  [Guildborne] profile_saved {"action":"StartQuest","revision":15}  -  เซิร์ฟเวอร์ - ServerBootstrap:22
+๑๔:๓๗:๐๙.๔๖๘  [Guildborne] quest_started {"questId":"timber_escort"}  -  เซิร์ฟเวอร์ - ServerBootstrap:22
+๑๔:๓๗:๐๙.๕๐๒  GBQA PASS StartQuest OK revision 15 gold 10  -  ไคลเอนต์
+๑๔:๓๗:๑๐.๒๑๙  GBQA PASS CompleteQuest QuestTooEarly revision 15 gold 10  -  ไคลเอนต์
+๑๔:๓๗:๑๐.๙๓๖  GBQA PASS UpdateParty QuestActive revision 15 gold 10  -  ไคลเอนต์
+๑๔:๓๗:๓๕.๖๑๖  [Guildborne] profile_saved {"action":"CompleteQuest","revision":16}  -  เซิร์ฟเวอร์ - ServerBootstrap:22
+๑๔:๓๗:๓๕.๖๑๖  [Guildborne] gold_created {"amount":40,"reason":"QuestReward"}  -  เซิร์ฟเวอร์ - ServerBootstrap:22
+๑๔:๓๗:๓๕.๖๑๖  [Guildborne] item_acquired {"quantity":6,"itemId":"timber"}  -  เซิร์ฟเวอร์ - ServerBootstrap:22
+๑๔:๓๗:๓๕.๖๑๖  [Guildborne] item_acquired {"quantity":1,"itemId":"iron_ingot"}  -  เซิร์ฟเวอร์ - ServerBootstrap:22
+๑๔:๓๗:๓๕.๖๑๖  [Guildborne] quest_completed {"questId":"timber_escort"}  -  เซิร์ฟเวอร์ - ServerBootstrap:22
+๑๔:๓๗:๓๕.๖๕๐  GBQA PASS CompleteQuest OK revision 16 gold 50  -  ไคลเอนต์
+๑๔:๓๗:๓๖.๓๖๗  GBQA PASS CompleteQuest AlreadyCommitted revision 16 gold 50  -  ไคลเอนต์
+๑๔:๓๗:๓๗.๐๘๔  GBQA PASS CompleteQuest QuestNotActive revision 16 gold 50  -  ไคลเอนต์
+๑๔:๓๗:๓๗.๗๖๖  [Guildborne] profile_saved {"action":"Recruit","revision":17}  -  เซิร์ฟเวอร์ - ServerBootstrap:22
+๑๔:๓๗:๓๗.๗๖๖  [Guildborne] gold_destroyed {"amount":20,"reason":"Recruitment"}  -  เซิร์ฟเวอร์ - ServerBootstrap:22
+๑๔:๓๗:๓๗.๗๖๖  [Guildborne] item_acquired {"quantity":1,"itemId":"apprentice_staff"}  -  เซิร์ฟเวอร์ - ServerBootstrap:22
+๑๔:๓๗:๓๗.๗๖๖  [Guildborne] adventurer_recruited {"classId":"Priest"}  -  เซิร์ฟเวอร์ - ServerBootstrap:22
+๑๔:๓๗:๓๗.๘๐๒  GBQA PASS Recruit OK revision 17 gold 30  -  ไคลเอนต์
+๑๔:๓๗:๓๘.๔๘๓  [Guildborne] profile_saved {"action":"StartQuest","revision":18}  -  เซิร์ฟเวอร์ - ServerBootstrap:22
+๑๔:๓๗:๓๘.๔๘๓  [Guildborne] quest_started {"questId":"quarry_patrol"}  -  เซิร์ฟเวอร์ - ServerBootstrap:22
+๑๔:๓๗:๓๘.๕๑๘  GBQA PASS StartQuest OK revision 18 gold 30  -  ไคลเอนต์
+๑๔:๓๗:๓๙.๒๓๔  GBQA PASS CompleteQuest QuestTooEarly revision 18 gold 30  -  ไคลเอนต์
+๑๔:๓๗:๓๙.๙๕๑  GBQA PASS UpdateParty QuestActive revision 18 gold 30  -  ไคลเอนต์
+๑๔:๓๘:๑๔.๖๓๑  [Guildborne] profile_saved {"action":"CompleteQuest","revision":19}  -  เซิร์ฟเวอร์ - ServerBootstrap:22
+๑๔:๓๘:๑๔.๖๓๒  [Guildborne] gold_created {"amount":60,"reason":"QuestReward"}  -  เซิร์ฟเวอร์ - ServerBootstrap:22
+๑๔:๓๘:๑๔.๖๓๒  [Guildborne] item_acquired {"quantity":6,"itemId":"iron_ore"}  -  เซิร์ฟเวอร์ - ServerBootstrap:22
+๑๔:๓๘:๑๔.๖๓๒  [Guildborne] item_acquired {"quantity":1,"itemId":"iron_sword"}  -  เซิร์ฟเวอร์ - ServerBootstrap:22
+๑๔:๓๘:๑๔.๖๓๒  [Guildborne] quest_completed {"questId":"quarry_patrol"}  -  เซิร์ฟเวอร์ - ServerBootstrap:22
+๑๔:๓๘:๑๔.๖๖๗  GBQA PASS CompleteQuest OK revision 19 gold 90  -  ไคลเอนต์
+๑๔:๓๘:๑๕.๓๘๓  GBQA PASS CompleteQuest AlreadyCommitted revision 19 gold 90  -  ไคลเอนต์
+๑๔:๓๘:๑๖.๐๙๙  GBQA PASS CompleteQuest QuestNotActive revision 19 gold 90  -  ไคลเอนต์
+๑๔:๓๘:๑๖.๗๘๑  [Guildborne] profile_saved {"action":"UpgradeGuildHall","revision":20}  -  เซิร์ฟเวอร์ - ServerBootstrap:22
+๑๔:๓๘:๑๖.๗๘๒  [Guildborne] item_destroyed {"quantity":2,"itemId":"herb","reason":"GuildUpgrade"}  -  เซิร์ฟเวอร์ - ServerBootstrap:22
+๑๔:๓๘:๑๖.๗๘๒  [Guildborne] item_destroyed {"quantity":6,"itemId":"timber","reason":"GuildUpgrade"}  -  เซิร์ฟเวอร์ - ServerBootstrap:22
+๑๔:๓๘:๑๖.๗๘๒  [Guildborne] item_destroyed {"quantity":1,"itemId":"iron_ingot","reason":"GuildUpgrade"}  -  เซิร์ฟเวอร์ - ServerBootstrap:22
+๑๔:๓๘:๑๖.๗๘๒  [Guildborne] item_destroyed {"quantity":6,"itemId":"iron_ore","reason":"GuildUpgrade"}  -  เซิร์ฟเวอร์ - ServerBootstrap:22
+๑๔:๓๘:๑๖.๗๘๒  [Guildborne] gold_destroyed {"amount":80,"reason":"GuildUpgrade"}  -  เซิร์ฟเวอร์ - ServerBootstrap:22
+๑๔:๓๘:๑๖.๗๘๒  [Guildborne] guild_upgraded {"level":2}  -  เซิร์ฟเวอร์ - ServerBootstrap:22
+๑๔:๓๘:๑๖.๗๘๒  [Guildborne] tutorial_completed []  -  เซิร์ฟเวอร์ - ServerBootstrap:22
+๑๔:๓๘:๑๖.๘๑๘  GBQA PASS UpgradeGuildHall OK revision 20 gold 10  -  ไคลเอนต์
+๑๔:๓๘:๑๗.๕๓๔  GBQA PASS UpgradeGuildHall AlreadyCommitted revision 20 gold 10  -  ไคลเอนต์
+๑๔:๓๘:๑๘.๒๔๙  GBQA PASS UpgradeGuildHall HallAlreadyUpgraded revision 20 gold 10  -  ไคลเอนต์
+๑๔:๓๘:๑๘.๒๔๙  GBQA FINAL {"adventurers":{"a:Priest":{"equipmentSlots":[],"stats":{"Attack":4,"Defense":3,"Health":24,"WeaponBonus":0},"name":"Sage","level":1,"id":"a:Priest","baseStats":{"Defense":3,"Health":24,"Attack":4},"xp":0,"classId":"Priest"},"a:Warrior":{"equipmentSlots":{"weapon":"q:1:1"},"stats":{"Attack":9,"Defense":4,"Health":33,"WeaponBonus":2},"name":"Rowan","level":2,"id":"a:Warrior","baseStats":{"Defense":4,"Health":30,"Attack":6},"xp":90,"classId":"Warrior"},"a:Archer":{"equipmentSlots":[],"stats":{"Attack":8,"Defense":2,"Health":22,"WeaponBonus":0},"name":"Ash","level":1,"id":"a:Archer","baseStats":{"Defense":2,"Health":22,"Attack":8},"xp":0,"classId":"Archer"}},"party":{"adventurerIds":["a:Warrior"]},"quests":{"nextRunSequence":4,"lastResult":{"questName":"Quarry Patrol","runId":"q:3","reward":{"Items":[{"Id":"iron_ore","Quantity":6},{"Id":"iron_sword","Quantity":1}],"XP":40,"Gold":60}},"claimedThrough":3,"firstClears":{"timber_escort":true,"quarry_patrol":true,"trail_watch":true}},"hallLevel":2,"gold":10,"inventory":{"equipment":{"q:3:1":{"binding":"Account","definitionId":"iron_sword","upgradeLevel":0},"recruit:Priest:1":{"binding":"Account","upgradeLevel":0,"definitionId":"apprentice_staff"},"q:1:1":{"binding":"Account","upgradeLevel":0,"definitionId":"training_sword"},"recruit:Archer:1":{"binding":"Account","upgradeLevel":0,"definitionId":"short_bow"}},"stacks":[]},"language":"th","progression":{"tutorialStep":"complete","recruitedClasses":{"Warrior":true,"Archer":true,"Priest":true},"welcomeSeen":true,"tutorialCompleted":true,"everEquipped":true}}  -  ไคลเอนต์
+๑๔:๓๘:๑๘.๒๔๙  GBQA NATIVE LOOP AND REJECTION TESTS PASSED  -  ไคลเอนต์

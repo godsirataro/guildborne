@@ -1,0 +1,16 @@
+{
+  "noProfileWrites": true,
+  "noClipping": true,
+  "noOverlap": true,
+  "districts": 6,
+  "languages": [
+    "en",
+    "th"
+  ],
+  "widths": [
+    260,
+    640
+  ],
+  "cases": 24,
+  "synthetic": true
+}

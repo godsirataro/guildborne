@@ -1,0 +1,218 @@
+{
+  "schema": 1,
+  "fps": 30,
+  "assets": [
+    {
+      "id": "borga",
+      "rigType": "Humanoid",
+      "region": "Orc",
+      "role": "Innkeeper",
+      "bones": 16,
+      "triangles": 456,
+      "vertices": 304,
+      "restFiles": [
+        "borga_Rest.fbx",
+        "borga_Rest.glb"
+      ],
+      "clips": [
+        {
+          "name": "Idle",
+          "file": "borga_Idle.fbx",
+          "frames": 61,
+          "seconds": 2,
+          "loop": true,
+          "rootMotion": false,
+          "robloxAnimationId": null
+        },
+        {
+          "name": "Walk",
+          "file": "borga_Walk.fbx",
+          "frames": 31,
+          "seconds": 1,
+          "loop": true,
+          "rootMotion": false,
+          "robloxAnimationId": null
+        },
+        {
+          "name": "Greet",
+          "file": "borga_Greet.fbx",
+          "frames": 55,
+          "seconds": 1.8,
+          "loop": false,
+          "rootMotion": false,
+          "robloxAnimationId": null
+        },
+        {
+          "name": "Work",
+          "file": "borga_Work.fbx",
+          "frames": 61,
+          "seconds": 2,
+          "loop": true,
+          "rootMotion": false,
+          "robloxAnimationId": null
+        }
+      ],
+      "studioImported": false,
+      "liveEncounterBound": false
+    },
+    {
+      "id": "mogra",
+      "rigType": "Humanoid",
+      "region": "Orc",
+      "role": "Herbalist",
+      "bones": 16,
+      "triangles": 516,
+      "vertices": 344,
+      "restFiles": [
+        "mogra_Rest.fbx",
+        "mogra_Rest.glb"
+      ],
+      "clips": [
+        {
+          "name": "Idle",
+          "file": "mogra_Idle.fbx",
+          "frames": 61,
+          "seconds": 2,
+          "loop": true,
+          "rootMotion": false,
+          "robloxAnimationId": null
+        },
+        {
+          "name": "Walk",
+          "file": "mogra_Walk.fbx",
+          "frames": 31,
+          "seconds": 1,
+          "loop": true,
+          "rootMotion": false,
+          "robloxAnimationId": null
+        },
+        {
+          "name": "Greet",
+          "file": "mogra_Greet.fbx",
+          "frames": 55,
+          "seconds": 1.8,
+          "loop": false,
+          "rootMotion": false,
+          "robloxAnimationId": null
+        },
+        {
+          "name": "Work",
+          "file": "mogra_Work.fbx",
+          "frames": 61,
+          "seconds": 2,
+          "loop": true,
+          "rootMotion": false,
+          "robloxAnimationId": null
+        }
+      ],
+      "studioImported": false,
+      "liveEncounterBound": false
+    },
+    {
+      "id": "rukk",
+      "rigType": "Humanoid",
+      "region": "Orc",
+      "role": "ApprenticeSmith",
+      "bones": 16,
+      "triangles": 492,
+      "vertices": 328,
+      "restFiles": [
+        "rukk_Rest.fbx",
+        "rukk_Rest.glb"
+      ],
+      "clips": [
+        {
+          "name": "Idle",
+          "file": "rukk_Idle.fbx",
+          "frames": 61,
+          "seconds": 2,
+          "loop": true,
+          "rootMotion": false,
+          "robloxAnimationId": null
+        },
+        {
+          "name": "Walk",
+          "file": "rukk_Walk.fbx",
+          "frames": 31,
+          "seconds": 1,
+          "loop": true,
+          "rootMotion": false,
+          "robloxAnimationId": null
+        },
+        {
+          "name": "Greet",
+          "file": "rukk_Greet.fbx",
+          "frames": 55,
+          "seconds": 1.8,
+          "loop": false,
+          "rootMotion": false,
+          "robloxAnimationId": null
+        },
+        {
+          "name": "Work",
+          "file": "rukk_Work.fbx",
+          "frames": 61,
+          "seconds": 2,
+          "loop": true,
+          "rootMotion": false,
+          "robloxAnimationId": null
+        }
+      ],
+      "studioImported": false,
+      "liveEncounterBound": false
+    },
+    {
+      "id": "ghar",
+      "rigType": "Humanoid",
+      "region": "Orc",
+      "role": "Mercenary",
+      "bones": 16,
+      "triangles": 432,
+      "vertices": 288,
+      "restFiles": [
+        "ghar_Rest.fbx",
+        "ghar_Rest.glb"
+      ],
+      "clips": [
+        {
+          "name": "Idle",
+          "file": "ghar_Idle.fbx",
+          "frames": 61,
+          "seconds": 2,
+          "loop": true,
+          "rootMotion": false,
+          "robloxAnimationId": null
+        },
+        {
+          "name": "Walk",
+          "file": "ghar_Walk.fbx",
+          "frames": 31,
+          "seconds": 1,
+          "loop": true,
+          "rootMotion": false,
+          "robloxAnimationId": null
+        },
+        {
+          "name": "Greet",
+          "file": "ghar_Greet.fbx",
+          "frames": 55,
+          "seconds": 1.8,
+          "loop": false,
+          "rootMotion": false,
+          "robloxAnimationId": null
+        },
+        {
+          "name": "Work",
+          "file": "ghar_Work.fbx",
+          "frames": 61,
+          "seconds": 2,
+          "loop": true,
+          "rootMotion": false,
+          "robloxAnimationId": null
+        }
+      ],
+      "studioImported": false,
+      "liveEncounterBound": false
+    }
+  ]
+}

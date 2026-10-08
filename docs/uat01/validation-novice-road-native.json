@@ -1,0 +1,78 @@
+{
+  "routes": {
+    "1": {
+      "waypoints": 39,
+      "name": "CaravanRejoin",
+      "studs": 226.6081223487854
+    },
+    "2": {
+      "waypoints": 36,
+      "name": "CaravanRescue",
+      "studs": 210.0893042087555
+    },
+    "3": {
+      "waypoints": 34,
+      "name": "CaravanSupplies",
+      "studs": 197.51735281944275
+    },
+    "4": {
+      "waypoints": 18,
+      "name": "CourierCamp",
+      "studs": 97.30859160423279
+    },
+    "5": {
+      "waypoints": 45,
+      "name": "CrossroadsKeeper",
+      "studs": 265.18504428863525
+    },
+    "6": {
+      "waypoints": 57,
+      "name": "Discipline_Archer",
+      "studs": 336.3976683616638
+    },
+    "7": {
+      "waypoints": 59,
+      "name": "Discipline_Knight",
+      "studs": 341.7504531145096
+    },
+    "8": {
+      "waypoints": 57,
+      "name": "Discipline_Mage",
+      "studs": 333.6508779525757
+    },
+    "9": {
+      "waypoints": 56,
+      "name": "Discipline_Priest",
+      "studs": 331.6609191894531
+    },
+    "10": {
+      "waypoints": 59,
+      "name": "Discipline_Warrior",
+      "studs": 344.3829228281975
+    },
+    "11": {
+      "waypoints": 55,
+      "name": "FiveDisciplines",
+      "studs": 321.6989085674286
+    },
+    "12": {
+      "waypoints": 63,
+      "name": "HallForecourt",
+      "studs": 374.00151681900024
+    },
+    "13": {
+      "waypoints": 69,
+      "name": "HallInterior",
+      "studs": 409.00606870651245
+    },
+    "14": {
+      "waypoints": 25,
+      "name": "TrainingYard",
+      "studs": 143.63614225387573
+    }
+  },
+  "gameplayBound": false,
+  "depth": 450,
+  "width": 300,
+  "parts": 119
+}

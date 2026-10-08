@@ -1,0 +1,71 @@
+--!strict
+return function(test:any,eq:any,harness:any,util:any,schema:any)
+    local function setup(kind:string):any
+        local h=harness();h.setup()
+        for _,id in ipairs({"timber","stone","herb","iron_ore"}) do h.data().inventory.stacks[id]=50 end
+        eq(h.send("PlaceBuilding",{kind=kind,x=6,z=-4,rotation=0}),"OK")
+        return h
+    end
+    test("building storage preserves identity upgrades materials and rejoin",function()
+        local h=setup("quarters");h.data().expansion.buildings["b:1"].level=2
+        local inventory=util.copy(h.data().inventory);local original=util.copy(h.data().expansion.buildings["b:1"])
+        local command=h.command("StoreBuilding",{buildingId="b:1"})
+        eq(h.service.Execute(1,command),"OK");eq(h.data().expansion.buildings["b:1"],nil)
+        eq(h.data().expansion.storage["b:1"],original);eq(h.data().inventory,inventory)
+        eq(h.service.Execute(1,command),"AlreadyCommitted")
+        eq(h.send("PlaceBuilding",{kind="quarters",x=8,z=2,rotation=0}),"BuildingLimit")
+        eq(h.send("DismantleBuilding",{buildingId="b:1"}),"InvalidBuilding")
+        eq(h.service.Close(1),"OK");h.service=h.make();eq(h.service.Load(1,"storage-rejoin"),"OK")
+        command=h.command("RestoreBuilding",{buildingId="b:1",x=8,z=2,rotation=3})
+        eq(h.service.Execute(1,command),"OK");eq(h.service.Execute(1,command),"AlreadyCommitted")
+        eq(h.data().expansion.buildings["b:1"],{kind="quarters",x=8,z=2,rotation=3,level=2})
+        eq(h.data().expansion.storage["b:1"],nil);eq(h.data().inventory,inventory)
+        eq(h.data().expansion.nextBuilding,2);eq(schema.validate(h.service.Sessions[1].record,1),true)
+    end)
+    test("stored buildings cannot bypass locked terrain overlap or ownership",function()
+        local h=setup("warehouse");eq(h.send("StoreBuilding",{buildingId="b:1"}),"OK")
+        eq(h.send("PlaceBuilding",{kind="forge",x=6,z=-4,rotation=0}),"OK")
+        local before=util.copy(h.data())
+        eq(h.send("RestoreBuilding",{buildingId="b:1",x=-11,z=-3,rotation=0}),"PlotLocked")
+        eq(h.send("RestoreBuilding",{buildingId="b:1",x=6,z=-4,rotation=0}),"InvalidPlacement")
+        eq(h.send("RestoreBuilding",{buildingId="foreign",x=8,z=2,rotation=0}),"InvalidBuilding")
+        eq(h.send("StoreBuilding",{buildingId="b:1"}),"InvalidBuilding")
+        eq(h.data(),before)
+    end)
+    test("uncertain storage and restoration never lose or duplicate a building",function()
+        for _,action in ipairs({"StoreBuilding","RestoreBuilding"}) do for _,mode in ipairs({"before","after"}) do
+            local h=setup("warehouse")
+            if action=="RestoreBuilding" then eq(h.send("StoreBuilding",{buildingId="b:1"}),"OK") end
+            local before=util.copy(h.data());local args:any={buildingId="b:1"}
+            if action=="RestoreBuilding" then args.x=8;args.z=2;args.rotation=1 end
+            h.mode=mode;local command=h.command(action,args)
+            eq(h.service.Execute(1,command),"SavePending");eq(h.data(),before)
+            h.mode="ok";eq(h.service.Refresh(1),"OK");eq(h.service.Execute(1,command),"AlreadyCommitted")
+            local e=h.data().expansion;eq(e.nextBuilding,2);eq(h.data().inventory,before.inventory)
+            eq(util.count(e.buildings)+util.count(e.storage or {}),1)
+            eq(e.buildings["b:1"]~=nil,action=="RestoreBuilding")
+            eq(e.storage["b:1"]~=nil,action=="StoreBuilding")
+        end end
+    end)
+    test("storage schema rejects duplicate ownership invalid levels and malformed entries",function()
+        local h=setup("quarters");local record=util.copy(h.service.Sessions[1].record)
+        eq(schema.validate(record,1),true)
+        record.data.expansion.storage={["b:1"]=util.copy(record.data.expansion.buildings["b:1"])}
+        eq(schema.validate(record,1),false)
+        record.data.expansion.buildings={};eq(schema.validate(record,1),true)
+        record.data.expansion.storage["b:1"].level=10;eq(schema.validate(record,1),false)
+        record.data.expansion.storage["b:1"]={kind="not-a-building",x=6,z=-4,rotation=0};eq(schema.validate(record,1),false)
+        record.data.expansion.storage="bad";eq(schema.validate(record,1),false)
+    end)
+    test("fine placement survives storage restoration save uncertainty and reload",function()
+        local h=setup("warehouse");local inventory=util.copy(h.data().inventory)
+        eq(h.send("MoveBuilding",{buildingId="b:1",x=6.25,z=-3.75,rotation=1}),"OK")
+        eq(h.send("StoreBuilding",{buildingId="b:1"}),"OK");eq(h.data().expansion.storage["b:1"].x,6.25)
+        h.mode="after";local command=h.command("RestoreBuilding",{buildingId="b:1",x=8.25,z=2.75,rotation=2})
+        eq(h.service.Execute(1,command),"SavePending");eq(h.data().expansion.buildings["b:1"],nil)
+        h.mode="ok";eq(h.service.Refresh(1),"OK");eq(h.service.Execute(1,command),"AlreadyCommitted")
+        eq(h.service.Close(1),"OK");h.service=h.make();eq(h.service.Load(1,"fine-rejoin"),"OK")
+        eq(h.data().expansion.buildings["b:1"],{kind="warehouse",x=8.25,z=2.75,rotation=2})
+        eq(h.data().inventory,inventory)
+    end)
+end

@@ -1,0 +1,294 @@
+{
+  "date": "2026-10-03",
+  "placeId": 0,
+  "gameId": 0,
+  "studioId": "b0e8fd72-3b6c-40f0-b4c2-2663abbd2236",
+  "inputs": "Real keyboard E and UI clicks; movement-only Character PivotTo shortcuts; no profile/item/currency writes from tools",
+  "start": {
+    "revision": 10,
+    "gold": 10,
+    "stacks": {
+      "timber": 6,
+      "herb": 2,
+      "iron_ingot": 1
+    }
+  },
+  "checkpoints": {
+    "borgaTimberGather": {
+      "revision": 16,
+      "gold": 18,
+      "position": "-35, 4.998024940490723, 1460",
+      "journal": {
+        "borga_hearth": {
+          "progress": 4,
+          "state": "Claimed"
+        },
+        "borga_greenwood_timber": {
+          "progress": 2,
+          "state": "Active"
+        }
+      },
+      "stacks": {
+        "timber": 6,
+        "herb": 2,
+        "iron_ingot": 1
+      }
+    },
+    "borgaTimberClaim": {
+      "revision": 19,
+      "gold": 26,
+      "position": "-150, 3.6980249881744385, -832",
+      "journal": {
+        "borga_greenwood_timber": {
+          "progress": 2,
+          "state": "Claimed"
+        },
+        "borga_hearth": {
+          "progress": 4,
+          "state": "Claimed"
+        },
+        "borga_ashen_stone": {
+          "progress": 0,
+          "state": "Active"
+        }
+      },
+      "stacks": {
+        "timber": 6,
+        "herb": 2,
+        "iron_ingot": 1
+      }
+    },
+    "borgaStoneGather": {
+      "revision": 22,
+      "gold": 26,
+      "position": "1065, 7.998024940490723, 1425",
+      "journal": {
+        "borga_greenwood_timber": {
+          "progress": 2,
+          "state": "Claimed"
+        },
+        "borga_hearth": {
+          "progress": 4,
+          "state": "Claimed"
+        },
+        "borga_ashen_stone": {
+          "progress": 2,
+          "state": "Active"
+        }
+      },
+      "stacks": {
+        "stone": 4,
+        "timber": 6,
+        "herb": 2,
+        "iron_ingot": 1
+      }
+    },
+    "borgaFinal": {
+      "revision": 24,
+      "gold": 34,
+      "position": "-150, 3.6980249881744385, -832",
+      "journal": {
+        "borga_greenwood_timber": {
+          "progress": 2,
+          "state": "Claimed"
+        },
+        "borga_hearth": {
+          "progress": 4,
+          "state": "Claimed"
+        },
+        "borga_ashen_stone": {
+          "progress": 2,
+          "state": "Claimed"
+        }
+      },
+      "stacks": {
+        "stone": 4,
+        "timber": 6,
+        "herb": 2,
+        "iron_ingot": 1
+      }
+    },
+    "rukkStart": {
+      "revision": 40,
+      "gold": 88,
+      "position": "404, 3.298025369644165, -985",
+      "journal": {
+        "city_gate": {
+          "progress": 1,
+          "state": "Claimed"
+        },
+        "rukk_practice": {
+          "progress": 1,
+          "state": "Claimed"
+        },
+        "borga_hearth": {
+          "progress": 4,
+          "state": "Claimed"
+        },
+        "stonework": {
+          "progress": 3,
+          "state": "Claimed"
+        },
+        "rukk_ironveil_stone": {
+          "progress": 0,
+          "state": "Active"
+        },
+        "forge_foundation": {
+          "progress": 1,
+          "state": "Claimed"
+        },
+        "borga_ashen_stone": {
+          "progress": 2,
+          "state": "Claimed"
+        },
+        "borga_greenwood_timber": {
+          "progress": 2,
+          "state": "Claimed"
+        }
+      },
+      "stacks": {
+        "stone": 2,
+        "herb": 2
+      }
+    },
+    "rukkStoneGather": {
+      "revision": 43,
+      "gold": 88,
+      "position": "460, 4.998024940490723, 1475",
+      "journal": {
+        "city_gate": {
+          "progress": 1,
+          "state": "Claimed"
+        },
+        "rukk_practice": {
+          "progress": 1,
+          "state": "Claimed"
+        },
+        "borga_hearth": {
+          "progress": 4,
+          "state": "Claimed"
+        },
+        "stonework": {
+          "progress": 3,
+          "state": "Claimed"
+        },
+        "rukk_ironveil_stone": {
+          "progress": 2,
+          "state": "Active"
+        },
+        "forge_foundation": {
+          "progress": 1,
+          "state": "Claimed"
+        },
+        "borga_ashen_stone": {
+          "progress": 2,
+          "state": "Claimed"
+        },
+        "borga_greenwood_timber": {
+          "progress": 2,
+          "state": "Claimed"
+        }
+      },
+      "stacks": {
+        "stone": 6,
+        "herb": 2
+      }
+    },
+    "rukkOreGather": {
+      "revision": 49,
+      "gold": 96,
+      "position": "540, 8.998024940490723, 1435",
+      "journal": {
+        "rukk_practice": {
+          "progress": 1,
+          "state": "Claimed"
+        },
+        "borga_ashen_stone": {
+          "progress": 2,
+          "state": "Claimed"
+        },
+        "rukk_ironveil_ore": {
+          "progress": 2,
+          "state": "Active"
+        },
+        "city_gate": {
+          "progress": 1,
+          "state": "Claimed"
+        },
+        "stonework": {
+          "progress": 3,
+          "state": "Claimed"
+        },
+        "borga_greenwood_timber": {
+          "progress": 2,
+          "state": "Claimed"
+        },
+        "rukk_ironveil_stone": {
+          "progress": 2,
+          "state": "Claimed"
+        },
+        "borga_hearth": {
+          "progress": 4,
+          "state": "Claimed"
+        },
+        "forge_foundation": {
+          "progress": 1,
+          "state": "Claimed"
+        }
+      },
+      "stacks": {
+        "stone": 6,
+        "herb": 2,
+        "iron_ore": 4
+      }
+    },
+    "rukkFinal": {
+      "revision": 51,
+      "gold": 104,
+      "position": "404, 3.298025369644165, -985",
+      "journal": {
+        "rukk_practice": {
+          "progress": 1,
+          "state": "Claimed"
+        },
+        "borga_ashen_stone": {
+          "progress": 2,
+          "state": "Claimed"
+        },
+        "rukk_ironveil_ore": {
+          "progress": 2,
+          "state": "Claimed"
+        },
+        "city_gate": {
+          "progress": 1,
+          "state": "Claimed"
+        },
+        "stonework": {
+          "progress": 3,
+          "state": "Claimed"
+        },
+        "borga_greenwood_timber": {
+          "progress": 2,
+          "state": "Claimed"
+        },
+        "rukk_ironveil_stone": {
+          "progress": 2,
+          "state": "Claimed"
+        },
+        "borga_hearth": {
+          "progress": 4,
+          "state": "Claimed"
+        },
+        "forge_foundation": {
+          "progress": 1,
+          "state": "Claimed"
+        }
+      },
+      "stacks": {
+        "stone": 6,
+        "herb": 2,
+        "iron_ore": 4
+      }
+    }
+  }
+}

@@ -1,0 +1,9 @@
+# Walkable city and NPC contact review
+
+`build/Guildborne_CivicCastSceneReview.rbxlx` combines the six detailed contact studies with the six city service districts. Rebuild with `python tools/build_civic_cast_scene.py`. This standalone local art fixture does not replace the full game's current NPC rigs or grant quests, travel unlocks, inventory or currency.
+
+Elian, Vaela, Borin, Nyra and Sela stand beside their city's market; Roka stands beside Ironroot's tavern. Their original workstations and cosmetic contact effects are included. Walk with WASD and use the city buttons to inspect each area. Press E nearby to pause/resume a work loop. Moving more than 12 studs away resumes a paused loop; actors beyond 120 studs are hidden and their clocks stop. Each actor has an independent clock.
+
+Ordinary UI and keyboard input reached all six actors and paused their work. Elian and Roka were explicitly resumed by E. Read-only observation confirmed Elian stayed at the same frame during a conversation, five distant actors held their clocks while Roka advanced, only one actor was active, and distant models were hidden. Elian resumed automatically after walking away. A fresh session verified the city label after the asynchronous travel event settled and had empty console output. Evidence: `validation-civic-cast-scene.json`.
+
+This is a visual integration review: all six datasets are loaded in memory, despite distance-based playback culling. Detailed workstation meshes have no collision; existing city architecture retains its collision. Pausing holds the current work pose and hides contact cosmetics; it is not a final tool-putdown or greeting animation. Full-game dialogue binding, streaming/memory budgets, collision proxies, polished transitions, mobile/touch/gamepad testing and final reference likeness remain pending. EditableMesh creation still requires platform capability; failures are logged rather than silently substituting accepted art.

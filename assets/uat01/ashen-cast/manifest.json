@@ -1,0 +1,218 @@
+{
+  "schema": 1,
+  "fps": 30,
+  "assets": [
+    {
+      "id": "gatekeeper",
+      "rigType": "Humanoid",
+      "region": "Human",
+      "role": "Story",
+      "bones": 16,
+      "triangles": 432,
+      "vertices": 288,
+      "restFiles": [
+        "gatekeeper_Rest.fbx",
+        "gatekeeper_Rest.glb"
+      ],
+      "clips": [
+        {
+          "name": "Idle",
+          "file": "gatekeeper_Idle.fbx",
+          "frames": 61,
+          "seconds": 2,
+          "loop": true,
+          "rootMotion": false,
+          "robloxAnimationId": null
+        },
+        {
+          "name": "Walk",
+          "file": "gatekeeper_Walk.fbx",
+          "frames": 31,
+          "seconds": 1,
+          "loop": true,
+          "rootMotion": false,
+          "robloxAnimationId": null
+        },
+        {
+          "name": "Greet",
+          "file": "gatekeeper_Greet.fbx",
+          "frames": 55,
+          "seconds": 1.8,
+          "loop": false,
+          "rootMotion": false,
+          "robloxAnimationId": null
+        },
+        {
+          "name": "Work",
+          "file": "gatekeeper_Work.fbx",
+          "frames": 61,
+          "seconds": 2,
+          "loop": true,
+          "rootMotion": false,
+          "robloxAnimationId": null
+        }
+      ],
+      "studioImported": false,
+      "liveEncounterBound": false
+    },
+    {
+      "id": "survivor",
+      "rigType": "Humanoid",
+      "region": "Elf",
+      "role": "Story",
+      "bones": 16,
+      "triangles": 372,
+      "vertices": 248,
+      "restFiles": [
+        "survivor_Rest.fbx",
+        "survivor_Rest.glb"
+      ],
+      "clips": [
+        {
+          "name": "Idle",
+          "file": "survivor_Idle.fbx",
+          "frames": 61,
+          "seconds": 2,
+          "loop": true,
+          "rootMotion": false,
+          "robloxAnimationId": null
+        },
+        {
+          "name": "Walk",
+          "file": "survivor_Walk.fbx",
+          "frames": 31,
+          "seconds": 1,
+          "loop": true,
+          "rootMotion": false,
+          "robloxAnimationId": null
+        },
+        {
+          "name": "Greet",
+          "file": "survivor_Greet.fbx",
+          "frames": 55,
+          "seconds": 1.8,
+          "loop": false,
+          "rootMotion": false,
+          "robloxAnimationId": null
+        },
+        {
+          "name": "Work",
+          "file": "survivor_Work.fbx",
+          "frames": 61,
+          "seconds": 2,
+          "loop": true,
+          "rootMotion": false,
+          "robloxAnimationId": null
+        }
+      ],
+      "studioImported": false,
+      "liveEncounterBound": false
+    },
+    {
+      "id": "bridgewright",
+      "rigType": "Humanoid",
+      "region": "Dwarf",
+      "role": "Story",
+      "bones": 16,
+      "triangles": 396,
+      "vertices": 264,
+      "restFiles": [
+        "bridgewright_Rest.fbx",
+        "bridgewright_Rest.glb"
+      ],
+      "clips": [
+        {
+          "name": "Idle",
+          "file": "bridgewright_Idle.fbx",
+          "frames": 61,
+          "seconds": 2,
+          "loop": true,
+          "rootMotion": false,
+          "robloxAnimationId": null
+        },
+        {
+          "name": "Walk",
+          "file": "bridgewright_Walk.fbx",
+          "frames": 31,
+          "seconds": 1,
+          "loop": true,
+          "rootMotion": false,
+          "robloxAnimationId": null
+        },
+        {
+          "name": "Greet",
+          "file": "bridgewright_Greet.fbx",
+          "frames": 55,
+          "seconds": 1.8,
+          "loop": false,
+          "rootMotion": false,
+          "robloxAnimationId": null
+        },
+        {
+          "name": "Work",
+          "file": "bridgewright_Work.fbx",
+          "frames": 61,
+          "seconds": 2,
+          "loop": true,
+          "rootMotion": false,
+          "robloxAnimationId": null
+        }
+      ],
+      "studioImported": false,
+      "liveEncounterBound": false
+    },
+    {
+      "id": "witness",
+      "rigType": "Humanoid",
+      "region": "Orc",
+      "role": "Story",
+      "bones": 16,
+      "triangles": 480,
+      "vertices": 320,
+      "restFiles": [
+        "witness_Rest.fbx",
+        "witness_Rest.glb"
+      ],
+      "clips": [
+        {
+          "name": "Idle",
+          "file": "witness_Idle.fbx",
+          "frames": 61,
+          "seconds": 2,
+          "loop": true,
+          "rootMotion": false,
+          "robloxAnimationId": null
+        },
+        {
+          "name": "Walk",
+          "file": "witness_Walk.fbx",
+          "frames": 31,
+          "seconds": 1,
+          "loop": true,
+          "rootMotion": false,
+          "robloxAnimationId": null
+        },
+        {
+          "name": "Greet",
+          "file": "witness_Greet.fbx",
+          "frames": 55,
+          "seconds": 1.8,
+          "loop": false,
+          "rootMotion": false,
+          "robloxAnimationId": null
+        },
+        {
+          "name": "Work",
+          "file": "witness_Work.fbx",
+          "frames": 61,
+          "seconds": 2,
+          "loop": true,
+          "rootMotion": false,
+          "robloxAnimationId": null
+        }
+      ],
+      "studioImported": false,
+      "liveEncounterBound": false
+    }
+  ]
+}

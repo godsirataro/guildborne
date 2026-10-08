@@ -1,0 +1,51 @@
+import fs from 'node:fs/promises';
+import path from 'node:path';
+import { FileBlob, SpreadsheetFile } from '@oai/artifact-tool';
+const root=path.resolve(import.meta.dirname,'../..');
+const out=path.join(root,'outputs/01a0f39c-43bd-7a81-917f-8a8cd02c0ddf');
+await fs.mkdir(out,{recursive:true});
+const data=JSON.parse(await fs.readFile(path.join(root,'docs/uat01/intake/registry-reconciled.json'),'utf8'));
+const work=(await fs.readFile(path.join(root,'docs/uat01/WORK_CHECKLIST.md'),'utf8')).split('\n').filter(x=>x.startsWith('| ')&&!x.startsWith('| Area')&&!x.startsWith('| ---')).map(x=>x.split('|').slice(1,-1).map(s=>s.trim()));
+if(data.assets.length<239||data.screens.length<65||new Set(data.assets.map(x=>x.designId)).size!==data.assets.length)throw Error('Registry integrity');
+const wb=await SpreadsheetFile.importXlsx(await FileBlob.load(path.join(out,'Guildborne_Production_Registry.xlsx')));
+console.log((await wb.inspect({kind:'workbook,sheet,table',maxChars:3500,tableMaxRows:2,tableMaxCols:3})).ndjson);
+const sheets=Object.fromEntries(['Summary','Worklist','Assets','Screens'].map(n=>[n,wb.worksheets.getItem(n)]));
+const colors={navy:'#172B40',gold:'#B78C45',ink:'#24384A',muted:'#64748B',pale:'#F2F5F8'};
+function base(s,title,note,cols){s.showGridLines=false;s.getRange(`A1:${cols}300`).format.font={name:'Arial',size:10,color:colors.ink};s.getRange('A2').values=[[title]];s.getRange('A2').format.font={name:'Arial',size:18,bold:true,color:colors.navy};s.getRange('A3').values=[[note]];s.getRange('A3').format.font={name:'Arial',size:10,color:colors.muted};s.getRange('2:2').format.rowHeight=30;s.getRange('3:3').format.rowHeight=24;s.tabColor=colors.gold;}
+function table(s,headers,rows,widths,name){const end=String.fromCharCode(64+headers.length);const last=5+rows.length;s.getRange(`A5:${end}${last}`).values=[headers,...rows];s.getRange(`A5:${end}5`).format={fill:colors.navy,font:{name:'Arial',size:10,bold:true,color:'#FFFFFF'},rowHeight:28,wrapText:true};s.getRange(`A6:${end}${last}`).format={wrapText:true,verticalAlignment:'top'};widths.forEach((w,i)=>s.getRange(`${String.fromCharCode(65+i)}:${String.fromCharCode(65+i)}`).format.columnWidth=w);const existing=s.tables.items.find(t=>t.name===name);if(!existing)throw Error('Missing existing table '+name);existing.delete();s.getRange(`A5:${end}2000`).clear({applyTo:'contents'});s.getRange(`A5:${end}${last}`).values=[headers,...rows];const t=s.tables.add(`A5:${end}${last}`,true,name);t.style='TableStyleMedium2';rows.forEach((row,i)=>{const lines=Math.max(...row.map((v,j)=>String(v??'').split('\n').reduce((n,line)=>n+Math.max(1,Math.ceil(line.length/(widths[j]*.85))),0)));s.getRange(`A${i+6}:${end}${i+6}`).format.rowHeight=Math.max(34,lines*14+12);});s.freezePanes.freezeRows(5);s.freezePanes.freezeColumns(1);return last;}
+const titleStatus=x=>x.toLowerCase().replaceAll('_',' ').replace(/^./,c=>c.toUpperCase());
+base(sheets.Assets,'GUILDBORNE / Asset registry',`${data.assets.length} design slots • Source availability is not production or UAT approval.`,'H');
+const sourceText=a=>typeof a==='string'?a:Object.entries(a??{}).filter(([,v])=>v!=null).map(([k,v])=>`${k}: ${typeof v==='string'?v:JSON.stringify(v)}`).join('\n');
+const alast=table(sheets.Assets,['Design ID','Group','Priority','Production status','Source files / evidence','Production binding','Roblox asset ID','UAT approved'],data.assets.map(a=>[a.designId,a.group,a.priority,titleStatus(a.status),sourceText(a.source),a.productionBinding??'Pending / see source evidence',a.robloxAssetId??'',a.uatApproved?'YES':'NO']),[39,16,9,52,86,42,20,16],'AssetRegistry');
+base(sheets.Screens,'GUILDBORNE / Screen acceptance',`${data.summary.screenScopes.UAT01} alpha surfaces + ${data.summary.screenScopes.FUTURE} future surfaces • Input/state acceptance pending.`,'H');
+const slast=table(sheets.Screens,['Screen ID','Surface','Scope','Status','Implementation candidate','Required behavior','Required states','UAT approved'],data.screens.map(s=>[s.designId,s.name,s.scope,titleStatus(s.status),s.implementationCandidate??'No candidate',s.requiredBehavior,s.requiredStates,s.uatApproved?'YES':'NO']),[33,28,12,35,60,80,70,16],'ScreenRegistry');
+base(sheets.Worklist,'GUILDBORNE / Delivery worklist','Implemented evidence and remaining acceptance are kept separate.','D');
+table(sheets.Worklist,['Area','Current delivery','Implemented / created','Remaining work'],work.map(r=>[r[0],r[0]==='Future modes'?'DEFERRED':'PARTIAL',r[1],r[2]]),[28,19,95,100],'DeliveryWorklist');
+const s=sheets.Summary;base(s,'GUILDBORNE / Production checkpoint','Local production review • 06 Oct 2026 • No cloud publication or human UAT approval.','H');
+s.getRange('A:A').format.columnWidth=66;s.getRange('B:B').format.columnWidth=15;s.getRange('C:C').format.columnWidth=4;s.getRange('D:D').format.columnWidth=28;s.getRange('E:E').format.columnWidth=26;
+s.getRange('A5:B100').clear({applyTo:'contents'});
+s.getRange('A6:B100').format={fill:'#FFFFFF',font:{name:'Arial',size:10,bold:false,color:colors.ink}};
+s.getRange('A5:B5').values=[['Asset production status','Slots']];s.getRange('A5:B5').format={fill:colors.navy,font:{bold:true,color:'#FFFFFF'},rowHeight:26};
+const statuses=Object.keys(data.summary.assetStatuses);
+statuses.forEach((st,i)=>{let r=6+i;s.getRange(`A${r}`).values=[[titleStatus(st)]];s.getRange(`B${r}`).formulas=[[`=COUNTIFS(Assets!$D$6:$D$${alast},A${r})`]];});
+const total=6+statuses.length;s.getRange(`A${total}`).values=[['Total design slots']];s.getRange(`B${total}`).formulas=[[`=SUM(B6:B${total-1})`]];s.getRange(`A${total}:B${total}`).format={fill:colors.pale,font:{bold:true},rowHeight:26};
+s.getRange('D5:E13').values=[['Release gate','State'],['Local UAT','NOT READY'],['Live platform','PENDING'],['Live commerce','DISABLED'],['Human UAT','NO'],['Public release','NO'],['v2 XP/Hall migration','DISABLED'],['Regional player combat','OFFLINE ONLY'],['Status point allocation','OFFLINE ONLY']];
+s.getRange('D5:E5').format={fill:colors.navy,font:{bold:true,color:'#FFFFFF'}};
+s.getRange('D15:E20').values=[['Acceptance coverage','Count'],['Alpha screen records',null],['Future screen records',null],['UAT-approved assets',null],['UAT-approved screens',null],['Work areas',work.length]];
+s.getRange('D15:E15').format={fill:colors.navy,font:{bold:true,color:'#FFFFFF'}};
+s.getRange('E16:E19').formulas=[[`=COUNTIFS(Screens!$C$6:$C$${slast},"UAT01")`],[`=COUNTIFS(Screens!$C$6:$C$${slast},"FUTURE")`],[`=COUNTIFS(Assets!$H$6:$H$${alast},"YES")`],[`=COUNTIFS(Screens!$H$6:$H$${slast},"YES")`]];
+const notes=total+2;
+s.getRange(`A${notes}`).values=[['How to use this registry']];s.getRange(`A${notes}`).format.font={bold:true,color:colors.navy,size:12};
+s.getRange(`A${notes+1}:A${notes+4}`).values=[['Filter Assets by status to find import, binding and review work.'],['Review Worklist for gameplay and acceptance still missing.'],['Screens are design surfaces; candidate files do not prove all states work.'],['Counts measure inventory, not game completion or release readiness.']];
+s.getRange(`A${notes+6}`).values=[['Sources: reconciled registry + implementation checklist; original workbook preserved.']];s.getRange(`A${notes+7}`).values=[[`Original workbook SHA-256: ${data.sourceWorkbookSha256}`]];s.getRange(`A${notes+6}:A${notes+7}`).format.font={size:9,color:colors.muted};
+s.getRange(`A6:B${total-1}`).format.rowHeight=25;s.getRange(`B6:B${total}`).format.horizontalAlignment='right';s.getRange('D6:E20').format.rowHeight=25;
+wb.recalculate();
+const values=s.getRange(`B${total}`).values;
+for(const [st,count] of Object.entries(data.summary.assetStatuses)){const row=6+statuses.indexOf(st);if(s.getRange(`B${row}`).values[0][0]!==count)throw Error('Status count mismatch '+st);}
+if(values[0][0]!==data.assets.length)throw Error(`Formula total failed ${JSON.stringify(values)}`);
+if(JSON.stringify(s.getRange('E16:E19').values)!==JSON.stringify([[data.summary.screenScopes.UAT01],[data.summary.screenScopes.FUTURE],[0],[0]]))throw Error('Coverage formulas failed');
+sheets.Assets.getRange('H6').values=[['YES']];wb.recalculate();if(s.getRange('E18').values[0][0]!==1)throw Error('Input response failed');sheets.Assets.getRange('H6').values=[['NO']];wb.recalculate();
+await fs.writeFile(path.join(out,'registry-inspection.json'),JSON.stringify(await wb.inspect({kind:'table',range:`Summary!A5:E${total}`,include:'values,formulas',maxChars:14000,tableMaxRows:statuses.length+2,tableMaxCols:5}),null,2));
+for(const [name,range] of [['Summary',`A1:E${notes+7}`],['Assets','A1:H9'],['Screens','A1:H9'],['Worklist','A1:D9']]){const p=await wb.render({sheetName:name,range,scale:1,format:'png'});await fs.writeFile(path.join(out,`preview-${name}.png`),new Uint8Array(await p.arrayBuffer()));}
+const file=await SpreadsheetFile.exportXlsx(wb);await file.save(path.join(out,'Guildborne_Production_Registry.xlsx'));
+console.log(JSON.stringify({assets:data.assets.length,screens:data.screens.length,workAreas:work.length,formulaTotal:values[0][0],inputResponsePassed:true,output:path.join(out,'Guildborne_Production_Registry.xlsx')}));

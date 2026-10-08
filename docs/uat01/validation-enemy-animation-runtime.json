@@ -1,0 +1,9 @@
+{
+  "content": [
+    {
+      "type": "text",
+      "text": "{\"deathRespawn\":true,\"windup\":true,\"distanceCullResets\":true,\"motors\":6,\"reparentResume\":true,\"rootUntouched\":true,\"reducedIdle\":true,\"cancelRestores\":true,\"attack\":true,\"walk\":true}"
+    }
+  ],
+  "isError": false
+}

@@ -1,0 +1,106 @@
+[
+  {
+    "id": "founder_cloak",
+    "triangles": 72,
+    "bounds": [
+      2.450000047683716,
+      0.6650000214576721,
+      3.1694111824035645
+    ],
+    "sourceParts": 6,
+    "icon": "founder_cloak.png",
+    "robloxMeshAssetId": null,
+    "robloxImageAssetId": null
+  },
+  {
+    "id": "compass_blade",
+    "triangles": 60,
+    "bounds": [
+      1.25,
+      0.34999996423721313,
+      4.002841949462891
+    ],
+    "sourceParts": 5,
+    "icon": "compass_blade.png",
+    "robloxMeshAssetId": null,
+    "robloxImageAssetId": null
+  },
+  {
+    "id": "company_banner",
+    "triangles": 156,
+    "bounds": [
+      3.299999713897705,
+      0.35499998927116394,
+      6.0
+    ],
+    "sourceParts": 13,
+    "icon": "company_banner.png",
+    "robloxMeshAssetId": null,
+    "robloxImageAssetId": null
+  },
+  {
+    "id": "hearth_decor",
+    "triangles": 144,
+    "bounds": [
+      5.0,
+      4.0,
+      2.75
+    ],
+    "sourceParts": 12,
+    "icon": "hearth_decor.png",
+    "robloxMeshAssetId": null,
+    "robloxImageAssetId": null
+  },
+  {
+    "id": "ivory_portrait_frame",
+    "triangles": 108,
+    "bounds": [
+      3.8788225650787354,
+      0.3400000333786011,
+      4.778319835662842
+    ],
+    "sourceParts": 9,
+    "icon": "ivory_portrait_frame.png",
+    "robloxMeshAssetId": null,
+    "robloxImageAssetId": null
+  },
+  {
+    "id": "friendly_greeting",
+    "triangles": 132,
+    "bounds": [
+      4.219283103942871,
+      1.1500000953674316,
+      5.161993026733398
+    ],
+    "sourceParts": 11,
+    "icon": "friendly_greeting.png",
+    "robloxMeshAssetId": null,
+    "robloxImageAssetId": null
+  },
+  {
+    "id": "rune_portal",
+    "triangles": 432,
+    "bounds": [
+      6.15000057220459,
+      0.9350000023841858,
+      5.675000190734863
+    ],
+    "sourceParts": 36,
+    "icon": "rune_portal.png",
+    "robloxMeshAssetId": null,
+    "robloxImageAssetId": null
+  },
+  {
+    "id": "pale_spell_trail",
+    "triangles": 168,
+    "bounds": [
+      2.4314541816711426,
+      1.1162073612213135,
+      3.4239649772644043
+    ],
+    "sourceParts": 14,
+    "icon": "pale_spell_trail.png",
+    "robloxMeshAssetId": null,
+    "robloxImageAssetId": null
+  }
+]

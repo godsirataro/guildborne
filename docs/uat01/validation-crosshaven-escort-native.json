@@ -1,0 +1,17 @@
+{
+  "routes": [
+    {
+      "completionCallbacks": 1,
+      "length": 24.124640552386868,
+      "scene": "rift_refuge"
+    },
+    {
+      "completionCallbacks": 1,
+      "length": 83.14794548272354,
+      "scene": "name_registry"
+    }
+  ],
+  "actualPlayerEscort": false,
+  "syntheticOwnerEvidence": true,
+  "profileWrites": 0
+}

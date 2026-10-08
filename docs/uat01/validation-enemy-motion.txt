@@ -1,0 +1,44 @@
+C:\Work\MySelf\Guildborne\tools\render_enemy_motion.py:20: DeprecationWarning: 'Material.use_nodes' is expected to be removed in Blender 6.0
+  material=bpy.data.materials.new('Label');material.use_nodes=True;material.node_tree.nodes['Principled BSDF'].inputs['Base Color'].default_value=(.9,.8,.6,1);label.data.materials.append(material)
+C:\Work\MySelf\Guildborne\tools\render_enemy_motion.py:21: DeprecationWarning: 'World.use_nodes' is expected to be removed in Blender 6.0
+  scene.world=bpy.data.worlds.new('MotionStudio');scene.world.use_nodes=True;scene.world.node_tree.nodes['Background'].inputs[0].default_value=(.03,.045,.07,1);scene.world.node_tree.nodes['Background'].inputs[1].default_value=.8
+00:08.469  render           | Saved: 'C:\Work\MySelf\Guildborne\build\enemy-motion\00.png'
+00:13.922  render           | Saved: 'C:\Work\MySelf\Guildborne\build\enemy-motion\01.png'
+00:19.485  render           | Saved: 'C:\Work\MySelf\Guildborne\build\enemy-motion\02.png'
+00:25.016  render           | Saved: 'C:\Work\MySelf\Guildborne\build\enemy-motion\03.png'
+00:30.297  render           | Saved: 'C:\Work\MySelf\Guildborne\build\enemy-motion\04.png'
+00:35.625  render           | Saved: 'C:\Work\MySelf\Guildborne\build\enemy-motion\05.png'
+00:40.875  render           | Saved: 'C:\Work\MySelf\Guildborne\build\enemy-motion\06.png'
+00:46.282  render           | Saved: 'C:\Work\MySelf\Guildborne\build\enemy-motion\07.png'
+00:51.704  render           | Saved: 'C:\Work\MySelf\Guildborne\build\enemy-motion\08.png'
+00:57.079  render           | Saved: 'C:\Work\MySelf\Guildborne\build\enemy-motion\09.png'
+01:02.438  render           | Saved: 'C:\Work\MySelf\Guildborne\build\enemy-motion\10.png'
+01:07.938  render           | Saved: 'C:\Work\MySelf\Guildborne\build\enemy-motion\11.png'
+01:13.297  render           | Saved: 'C:\Work\MySelf\Guildborne\build\enemy-motion\12.png'
+01:18.641  render           | Saved: 'C:\Work\MySelf\Guildborne\build\enemy-motion\13.png'
+01:24.000  render           | Saved: 'C:\Work\MySelf\Guildborne\build\enemy-motion\14.png'
+01:29.438  render           | Saved: 'C:\Work\MySelf\Guildborne\build\enemy-motion\15.png'
+01:35.141  render           | Saved: 'C:\Work\MySelf\Guildborne\build\enemy-motion\16.png'
+01:40.688  render           | Saved: 'C:\Work\MySelf\Guildborne\build\enemy-motion\17.png'
+01:46.125  render           | Saved: 'C:\Work\MySelf\Guildborne\build\enemy-motion\18.png'
+01:51.516  render           | Saved: 'C:\Work\MySelf\Guildborne\build\enemy-motion\19.png'
+01:57.016  render           | Saved: 'C:\Work\MySelf\Guildborne\build\enemy-motion\20.png'
+02:02.563  render           | Saved: 'C:\Work\MySelf\Guildborne\build\enemy-motion\21.png'
+02:08.094  render           | Saved: 'C:\Work\MySelf\Guildborne\build\enemy-motion\22.png'
+02:13.500  render           | Saved: 'C:\Work\MySelf\Guildborne\build\enemy-motion\23.png'
+FBX version: 7400
+FBX version: 7400
+FBX version: 7400
+FBX version: 7400
+FBX version: 7400
+FBX version: 7400
+FBX version: 7400
+FBX version: 7400
+FBX version: 7400
+FBX version: 7400
+FBX version: 7400
+FBX version: 7400
+ENEMY_MOTION_FRAMES 24
+Blender 5.2.1 LTS (hash 9e2066aef7ef built 2026-08-25 02:38:20)
+
+Blender quit

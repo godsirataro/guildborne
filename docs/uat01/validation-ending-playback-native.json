@@ -1,0 +1,33 @@
+{
+  "date": "2026-10-06",
+  "playback": {
+    "content": [
+      {
+        "type": "text",
+        "text": "{\"serverRequests\":0,\"checks\":943,\"reducedMotionStops\":true,\"scenes\":3,\"hiddenStops\":true,\"stopRestores\":true,\"normalCompletion\":true,\"destroyStops\":true,\"worldCameraWrites\":0,\"profileWrites\":0}"
+      }
+    ],
+    "isError": false
+  },
+  "camera": {
+    "content": [
+      {
+        "type": "text",
+        "text": "{\"worldCameraWrites\":0,\"profileWrites\":0,\"samples\":729,\"widths\":3,\"boundingCorners\":5832,\"scenes\":3}"
+      }
+    ],
+    "isError": false
+  },
+  "conclusion": {
+    "content": [
+      {
+        "type": "text",
+        "text": "{\"views\":144,\"serverRequests\":0,\"profileWrites\":0,\"textBoundsChecks\":1032}"
+      }
+    ],
+    "isError": false
+  },
+  "console": "Normal offline boot only",
+  "playStopped": true,
+  "scope": "Native isolated presentation fixtures and sampled geometry; no actual campaign replay, no profile grants or platform imports"
+}

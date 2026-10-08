@@ -1,0 +1,84 @@
+{
+  "date": "2026-10-06",
+  "scope": "Synthetic presentation only; no gameplay profile mutation or reward acceptance",
+  "views": [
+    {
+      "lang": "en",
+      "message": "Combat rewards saved. For this story objective, bring a companion into the fight and defeat the enemy again.",
+      "result": {
+        "content": [
+          {
+            "type": "text",
+            "text": "{\"visible\":true,\"boundsX\":515,\"height\":72,\"text\":\"Combat rewards saved. For this story objective, bring a companion into the fight and defeat the enemy again.\",\"boundsY\":32,\"width\":525}"
+          }
+        ],
+        "isError": false
+      }
+    },
+    {
+      "lang": "en",
+      "message": "Combat rewards saved. Keep a participating companion alive and nearby, then defeat the enemy again.",
+      "result": {
+        "content": [
+          {
+            "type": "text",
+            "text": "{\"visible\":true,\"boundsX\":472,\"height\":72,\"text\":\"Combat rewards saved. Keep a participating companion alive and nearby, then defeat the enemy again.\",\"boundsY\":32,\"width\":525}"
+          }
+        ],
+        "isError": false
+      }
+    },
+    {
+      "lang": "en",
+      "message": "Combat rewards saved. Stay within 30 studs of a living, participating companion when the enemy falls. Retry when it returns.",
+      "result": {
+        "content": [
+          {
+            "type": "text",
+            "text": "{\"visible\":true,\"boundsX\":490,\"height\":72,\"text\":\"Combat rewards saved. Stay within 30 studs of a living, participating companion when the enemy falls. Retry when it returns.\",\"boundsY\":32,\"width\":525}"
+          }
+        ],
+        "isError": false
+      }
+    },
+    {
+      "lang": "th",
+      "message": "Combat rewards saved. For this story objective, bring a companion into the fight and defeat the enemy again.",
+      "result": {
+        "content": [
+          {
+            "type": "text",
+            "text": "{\"visible\":true,\"boundsX\":405,\"height\":72,\"text\":\"บันทึกรางวัลต่อสู้แล้ว เควสนี้ต้องมีเพื่อนร่วมสู้ พาเพื่อนเข้าสู้แล้วเอาชนะศัตรูอีกครั้ง\",\"boundsY\":16,\"width\":525}"
+          }
+        ],
+        "isError": false
+      }
+    },
+    {
+      "lang": "th",
+      "message": "Combat rewards saved. Keep a participating companion alive and nearby, then defeat the enemy again.",
+      "result": {
+        "content": [
+          {
+            "type": "text",
+            "text": "{\"visible\":true,\"boundsX\":390,\"height\":72,\"text\":\"บันทึกรางวัลต่อสู้แล้ว ให้เพื่อนที่ร่วมสู้ยังมีชีวิตและอยู่ใกล้ แล้วเอาชนะศัตรูอีกครั้ง\",\"boundsY\":16,\"width\":525}"
+          }
+        ],
+        "isError": false
+      }
+    },
+    {
+      "lang": "th",
+      "message": "Combat rewards saved. Stay within 30 studs of a living, participating companion when the enemy falls. Retry when it returns.",
+      "result": {
+        "content": [
+          {
+            "type": "text",
+            "text": "{\"visible\":true,\"boundsX\":425,\"height\":72,\"text\":\"บันทึกรางวัลต่อสู้แล้ว เมื่อศัตรูล้ม ต้องอยู่ไม่เกิน 30 สตัดจากเพื่อนที่ร่วมสู้และยังมีชีวิต ลองใหม่เมื่อศัตรูเกิด\",\"boundsY\":32,\"width\":525}"
+          }
+        ],
+        "isError": false
+      }
+    }
+  ]
+}

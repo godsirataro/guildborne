@@ -1,0 +1,13 @@
+{
+  "date": "2026-10-06",
+  "scope": "Synthetic client UI using historical Hall10 data and current catalog. Actual J key and mouse; captured callbacks only, no gameplay networking. EN and TH button bounds144..196 within viewport128..252. Two clicks captured twice; no real upgrade claimed. Original scroll-reset race reproduced before fix.",
+  "thai": {
+    "content": [
+      {
+        "type": "text",
+        "text": "{\"bottom\":196,\"tracker\":\"เควสต์ที่ติดตาม [J]\\nกลับเกาะกิลด์ · อัปเกรดหอระดับ 11\",\"top\":144,\"viewportBottom\":252,\"fullyVisible\":true,\"calls\":0,\"button\":\"อัปเกรดหอกิลด์ Lv11 · 800 Gold\",\"x\":435,\"y\":190,\"viewportTop\":128}"
+      }
+    ],
+    "isError": false
+  }
+}

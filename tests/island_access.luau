@@ -1,0 +1,57 @@
+--!strict
+local make=require("../src/shared/Data/IslandAccess")
+local Protocol=require("../src/shared/Network/Protocol")
+return function(test:any,eq:any)
+    local function context(friend:boolean?):any return {alive=true,nearPortal=true,destinationClear=true,friend=friend==true} end
+    local function join(a:any,visitor:number,owner:number,c:any,now:number):(boolean,string)
+        local ticket,reason=a.request(visitor,owner,c,now);if not ticket then return false,reason end
+        return a.commit(ticket,c,now)
+    end
+    test("island visits default private and require trusted friendship for friends mode",function()
+        local a=make({});eq(a.register(1),true);eq(a.register(1),false)
+        local ok,reason=join(a,2,1,context(),10);eq(ok,false);eq(reason,"IslandPrivate")
+        eq(join(a,1,1,context(),10),true);eq(assert(a.describe(1)).visitors,0)
+        eq(a.policy(1,"Friends"),true);ok,reason=join(a,2,1,context(),10);eq(ok,false);eq(reason,"FriendsOnly")
+        eq(join(a,2,1,context(true),10),true);eq(a.contains(2,1),true)
+    end)
+    test("visit ticket rechecks capacity combat portal and safe destination",function()
+        local a=make({maxVisitors=1});a.register(1,"Public")
+        local one=a.request(2,1,context(),10);local two=a.request(3,1,context(),10)
+        eq(a.commit(one,context(),11),true);local ok,reason=a.commit(two,context(),11);eq(ok,false);eq(reason,"IslandFull")
+        a.leave(2)
+        for _,field in ipairs({"alive","nearPortal","destinationClear"}) do
+            local ticket=a.request(2,1,context(),12);local c=context();c[field]=false;eq(a.commit(ticket,c,12),false);eq(a.contains(2,1),false)
+        end
+        for _,field in ipairs({"inCombat","inTower"}) do local ticket=a.request(2,1,context(),12);local c=context();c[field]=true;eq(a.commit(ticket,c,12),false) end
+    end)
+    test("policy change departure and re-registration invalidate pending visits",function()
+        local a=make({});a.register(1,"Public");local ticket=a.request(2,1,context(),0)
+        a.policy(1,"Private");eq(a.commit(ticket,context(),1),false)
+        a.policy(1,"Public");ticket=a.request(2,1,context(),2);a.remove(1);a.register(1,"Public")
+        eq(a.commit(ticket,context(),3),false);eq(join(a,2,1,context(),4),true)
+        local removed=a.ready(1,false);eq(removed[1],2);eq(a.contains(2,1),false)
+        a.ready(1,true);eq(a.contains(2,1),false)
+    end)
+    test("visit tickets cannot be changed replayed or used after expiry",function()
+        local a=make({ticketSeconds=3});a.register(1,"Public");a.register(4,"Public")
+        local ticket=a.request(2,1,context(),10);local bad=table.clone(assert(ticket));bad.owner=4
+        eq(a.commit(bad,context(),11),false);eq(a.commit(ticket,context(),11),true);eq(a.commit(ticket,context(),11),false)
+        a.leave(2);ticket=a.request(2,1,context(),20);local ok,reason=a.commit(ticket,context(),24);eq(ok,false);eq(reason,"VisitExpired")
+        ticket=a.request(2,1,context(),30);eq(a.commit(ticket,context(),29),false)
+    end)
+    test("only the visited owner can kick and a kicked guest cannot immediately re-enter",function()
+        local a=make({});a.register(1,"Public");a.register(4,"Public");join(a,2,1,context(),0)
+        eq(a.kick(4,2),false);eq(a.contains(2,1),true);eq(a.kick(1,2),true)
+        local ok,reason=join(a,2,1,context(),1);eq(ok,false);eq(reason,"VisitBlocked")
+        eq(join(a,2,4,context(),1),true);eq(a.contains(2,4),true)
+        local copy=assert(a.describe(4));copy.mode="Private";eq(assert(a.describe(4)).mode,"Public")
+        local removed=a.remove(4);eq(removed[1],2);eq(a.contains(2,4),false)
+    end)
+    test("visitor removal protocol never accepts a caller-supplied owner",function()
+        local packet:any={version=1,requestId="kick_1",revision=0,action="KickIslandVisitor",args={visitorId="123"}}
+        eq(Protocol.validate(packet),true)
+        packet.args.ownerId="other_owner";eq(Protocol.validate(packet),false)
+        packet.args={visitorId=123};eq(Protocol.validate(packet),false)
+        packet.args={visitorId=string.rep("1",65)};eq(Protocol.validate(packet),false)
+    end)
+end

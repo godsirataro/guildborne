@@ -1,0 +1,15 @@
+{
+  "date": "2026-10-04",
+  "actualNativeInput": true,
+  "entry": "Fixture E prompts near fresh Crown Road avatar; isolated fake eligibility, no campaign profile grants",
+  "scope": "Standalone five root-class training runs, not Chapter04 story completion",
+  "result": {
+    "content": [
+      {
+        "type": "text",
+        "text": "{\"trial\":{\"warning\":{\"impactAt\":41264.9880116,\"x\":4.39794921875,\"startsAt\":41263.7880116,\"z\":-5.549560546875,\"radius\":6},\"nextAttack\":41266.888750699996,\"playerHealth\":196,\"progress\":{\"skill_used\":1,\"victory\":1,\"dodge\":2},\"classId\":\"Priest\",\"enemyHealth\":0,\"patientMaxHealth\":100,\"patientHealth\":100,\"enemyMaxHealth\":2800,\"id\":\"32e0729e-cf98-478d-932d-5a2e0d640539\",\"position\":{\"y\":-0.0019512176513671876,\"x\":6.44091796875,\"z\":7.02734375},\"status\":\"Won\",\"playerMaxHealth\":216,\"nextAbility\":41144.4271513,\"expiresAt\":41319.4271513},\"results\":{\"Warrior\":{\"health\":159,\"progress\":{\"skill_used\":1,\"victory\":1,\"dodge\":2},\"status\":\"Won\",\"enemyHealth\":0,\"receipt\":{\"requestId\":\"ledger:27479797-06ec-42e9-be37-1f0d2f8acf4b\",\"owner\":11732987790,\"action\":\"CampaignObjective\",\"args\":{\"objective\":\"complete_records_guardian\"}}},\"Archer\":{\"health\":214,\"progress\":{\"skill_used\":1,\"victory\":1,\"dodge\":2},\"status\":\"Won\",\"enemyHealth\":0,\"receipt\":{\"requestId\":\"ledger:c2a616a7-7e82-4e71-b843-fa3f66c90352\",\"owner\":11732987790,\"action\":\"CampaignObjective\",\"args\":{\"objective\":\"complete_records_guardian\"}}},\"Knight\":{\"health\":216,\"progress\":{\"skill_used\":1,\"victory\":1,\"dodge\":2},\"status\":\"Won\",\"enemyHealth\":0,\"receipt\":{\"requestId\":\"ledger:de004519-4a6c-4901-831f-a0487f07f4b0\",\"owner\":11732987790,\"action\":\"CampaignObjective\",\"args\":{\"objective\":\"complete_records_guardian\"}}},\"Priest\":{\"health\":196,\"progress\":{\"skill_used\":1,\"victory\":1,\"dodge\":2},\"status\":\"Won\",\"enemyHealth\":0,\"receipt\":{\"requestId\":\"ledger:32e0729e-cf98-478d-932d-5a2e0d640539\",\"owner\":11732987790,\"action\":\"CampaignObjective\",\"args\":{\"objective\":\"complete_records_guardian\"}}},\"Mage\":{\"health\":190,\"progress\":{\"skill_used\":1,\"victory\":1,\"dodge\":2},\"status\":\"Won\",\"enemyHealth\":0,\"receipt\":{\"requestId\":\"ledger:ca0427a3-d5f8-481a-9b03-689fa7afffd5\",\"owner\":11732987790,\"action\":\"CampaignObjective\",\"args\":{\"objective\":\"complete_records_guardian\"}}}}}"
+      }
+    ],
+    "isError": false
+  }
+}

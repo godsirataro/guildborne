@@ -1,0 +1,258 @@
+[
+  {
+    "file": "courier_Rest.fbx",
+    "asset": "courier",
+    "triangles": 372,
+    "bones": 16,
+    "weightsNormalized": true,
+    "sha256": "5b924d616f395b6dc2b3d9e4f56d8f42db78d3a21d69623cbf27ab753bb953f0"
+  },
+  {
+    "file": "courier_Rest.glb",
+    "asset": "courier",
+    "triangles": 372,
+    "bones": 16,
+    "weightsNormalized": true,
+    "sha256": "d1a47755b6cd2b0b04f8682fb0f9751d5306be1beacd61346cfcb80cf81545c2"
+  },
+  {
+    "file": "courier_Idle.fbx",
+    "asset": "courier",
+    "triangles": 372,
+    "bones": 16,
+    "weightsNormalized": true,
+    "sha256": "1a4956d631bb6a1d15d56ab5fac73fd0a00040ff427ba9dde422c47728a07d08",
+    "frames": 61,
+    "sampledMotion": 0.03499286621809006,
+    "rootStationary": true,
+    "loopSeamVerified": true
+  },
+  {
+    "file": "courier_Walk.fbx",
+    "asset": "courier",
+    "triangles": 372,
+    "bones": 16,
+    "weightsNormalized": true,
+    "sha256": "5d6213046a9400c3cd017a07cbccab4a6059a163f99cfd55cf8c5bf8bc020cc4",
+    "frames": 31,
+    "sampledMotion": 0.7465113590118619,
+    "rootStationary": true,
+    "loopSeamVerified": true
+  },
+  {
+    "file": "courier_Greet.fbx",
+    "asset": "courier",
+    "triangles": 372,
+    "bones": 16,
+    "weightsNormalized": true,
+    "sha256": "f509960f3e424cf0ea30810fae49cadbdab4fd4fb75ab122cc5024db2a3f5a0b",
+    "frames": 55,
+    "sampledMotion": 1.1529563665390015,
+    "rootStationary": true,
+    "loopSeamVerified": false
+  },
+  {
+    "file": "courier_Work.fbx",
+    "asset": "courier",
+    "triangles": 372,
+    "bones": 16,
+    "weightsNormalized": true,
+    "sha256": "313787b22f14ded12a0e6eb57864c9b894dc66971d4cb50aaee93acfff843994",
+    "frames": 61,
+    "sampledMotion": 0.4054645895957947,
+    "rootStationary": true,
+    "loopSeamVerified": true
+  },
+  {
+    "file": "dwarf_traveler_Rest.fbx",
+    "asset": "dwarf_traveler",
+    "triangles": 348,
+    "bones": 16,
+    "weightsNormalized": true,
+    "sha256": "cdc3ade4497ac8c9ead80c2305011674bd6dfa53ff4eda92dcc8f9cfa831c98a"
+  },
+  {
+    "file": "dwarf_traveler_Rest.glb",
+    "asset": "dwarf_traveler",
+    "triangles": 348,
+    "bones": 16,
+    "weightsNormalized": true,
+    "sha256": "16bdc852575c39778447bacaf14fca2402fe1558dfa2020cb258bca9124018f4"
+  },
+  {
+    "file": "dwarf_traveler_Idle.fbx",
+    "asset": "dwarf_traveler",
+    "triangles": 348,
+    "bones": 16,
+    "weightsNormalized": true,
+    "sha256": "ce21f5d4cf366d109323bbd2111ee6bbc8f4d6a10bcd5ec4c8d00aaa01de76d5",
+    "frames": 61,
+    "sampledMotion": 0.03499286621809006,
+    "rootStationary": true,
+    "loopSeamVerified": true
+  },
+  {
+    "file": "dwarf_traveler_Walk.fbx",
+    "asset": "dwarf_traveler",
+    "triangles": 348,
+    "bones": 16,
+    "weightsNormalized": true,
+    "sha256": "e3dd8631d5f32e9e9a3a18fea3a04b1074c79b6f8e5a25a3f082e528bccaff35",
+    "frames": 31,
+    "sampledMotion": 0.5822788143625033,
+    "rootStationary": true,
+    "loopSeamVerified": true
+  },
+  {
+    "file": "dwarf_traveler_Greet.fbx",
+    "asset": "dwarf_traveler",
+    "triangles": 348,
+    "bones": 16,
+    "weightsNormalized": true,
+    "sha256": "3d41f4d8782c9f28382b1c2491c5176483919e6fc5bb51f6ddc5bdbfe7d8aecf",
+    "frames": 55,
+    "sampledMotion": 0.8648277521133423,
+    "rootStationary": true,
+    "loopSeamVerified": false
+  },
+  {
+    "file": "dwarf_traveler_Work.fbx",
+    "asset": "dwarf_traveler",
+    "triangles": 348,
+    "bones": 16,
+    "weightsNormalized": true,
+    "sha256": "0e6158c51b9412100f8caaad0baae46cb27f7569b3d8338e80ca3bfaaa95e6ea",
+    "frames": 61,
+    "sampledMotion": 0.35211971402168274,
+    "rootStationary": true,
+    "loopSeamVerified": true
+  },
+  {
+    "file": "elf_traveler_Rest.fbx",
+    "asset": "elf_traveler",
+    "triangles": 336,
+    "bones": 16,
+    "weightsNormalized": true,
+    "sha256": "ee7b1598d8962eccdf52f610b8b794eb9e76179e78182ae16977264fcb5a1fad"
+  },
+  {
+    "file": "elf_traveler_Rest.glb",
+    "asset": "elf_traveler",
+    "triangles": 336,
+    "bones": 16,
+    "weightsNormalized": true,
+    "sha256": "9449118ad72b279511921aa10ad3620940260ec8a4626f95d2a9b047f70a96be"
+  },
+  {
+    "file": "elf_traveler_Idle.fbx",
+    "asset": "elf_traveler",
+    "triangles": 336,
+    "bones": 16,
+    "weightsNormalized": true,
+    "sha256": "b456317f6184e6dd79c584e5b9d18471c73dfdbf3e56bb13a9d901b68b5db441",
+    "frames": 61,
+    "sampledMotion": 0.03499286621809006,
+    "rootStationary": true,
+    "loopSeamVerified": true
+  },
+  {
+    "file": "elf_traveler_Walk.fbx",
+    "asset": "elf_traveler",
+    "triangles": 336,
+    "bones": 16,
+    "weightsNormalized": true,
+    "sha256": "45b350bb0992236a7719dc6051fb80139e3c47ef63d79ddf9ab40e9fae998d67",
+    "frames": 31,
+    "sampledMotion": 0.8062324199263031,
+    "rootStationary": true,
+    "loopSeamVerified": true
+  },
+  {
+    "file": "elf_traveler_Greet.fbx",
+    "asset": "elf_traveler",
+    "triangles": 336,
+    "bones": 16,
+    "weightsNormalized": true,
+    "sha256": "ad933f9a4160e30ce1cbb295dfaddf27de0fa6dc2e173a8e921944480f2557b9",
+    "frames": 55,
+    "sampledMotion": 1.2564096450805664,
+    "rootStationary": true,
+    "loopSeamVerified": false
+  },
+  {
+    "file": "elf_traveler_Work.fbx",
+    "asset": "elf_traveler",
+    "triangles": 336,
+    "bones": 16,
+    "weightsNormalized": true,
+    "sha256": "61c28706fd77530a44b9e908759a43f925dc9869e35f8a37bfe9a5e871fc8f5e",
+    "frames": 61,
+    "sampledMotion": 0.4383128881454468,
+    "rootStationary": true,
+    "loopSeamVerified": true
+  },
+  {
+    "file": "crossroads_keeper_Rest.fbx",
+    "asset": "crossroads_keeper",
+    "triangles": 432,
+    "bones": 16,
+    "weightsNormalized": true,
+    "sha256": "c01f480bb8cfc7dba435f0f111b351c3fab3c031d332f61e5f893b6b84f6b23e"
+  },
+  {
+    "file": "crossroads_keeper_Rest.glb",
+    "asset": "crossroads_keeper",
+    "triangles": 432,
+    "bones": 16,
+    "weightsNormalized": true,
+    "sha256": "c280c5ed22c4a97fd15b36d111ed50bd3b8f411f8e16f847200e6732d6ed6463"
+  },
+  {
+    "file": "crossroads_keeper_Idle.fbx",
+    "asset": "crossroads_keeper",
+    "triangles": 432,
+    "bones": 16,
+    "weightsNormalized": true,
+    "sha256": "adce8381b507a324e8ebc185537b3d2b644aef887d71b7afead7ed0f070bf6d1",
+    "frames": 61,
+    "sampledMotion": 0.03499286621809006,
+    "rootStationary": true,
+    "loopSeamVerified": true
+  },
+  {
+    "file": "crossroads_keeper_Walk.fbx",
+    "asset": "crossroads_keeper",
+    "triangles": 432,
+    "bones": 16,
+    "weightsNormalized": true,
+    "sha256": "fee415f2429c9c4f7565952764bdcd80e1d7868dab414fad0a733ba8961f222d",
+    "frames": 31,
+    "sampledMotion": 0.7987672211676227,
+    "rootStationary": true,
+    "loopSeamVerified": true
+  },
+  {
+    "file": "crossroads_keeper_Attack.fbx",
+    "asset": "crossroads_keeper",
+    "triangles": 432,
+    "bones": 16,
+    "weightsNormalized": true,
+    "sha256": "1090d67648475c5dbad9d5edc28af5797345119d7a18823a8a97541ae479ca9b",
+    "frames": 37,
+    "sampledMotion": 1.3033800237121653,
+    "rootStationary": true,
+    "loopSeamVerified": false
+  },
+  {
+    "file": "crossroads_keeper_Hit.fbx",
+    "asset": "crossroads_keeper",
+    "triangles": 432,
+    "bones": 16,
+    "weightsNormalized": true,
+    "sha256": "33ed082a7de40bbb95d06959b5d9864142f91027ef0adb772aa88371c091abac",
+    "frames": 16,
+    "sampledMotion": 0.27151189645263685,
+    "rootStationary": true,
+    "loopSeamVerified": false
+  }
+]

@@ -1,0 +1,258 @@
+[
+  {
+    "file": "charter_warden_Rest.fbx",
+    "asset": "charter_warden",
+    "triangles": 444,
+    "bones": 16,
+    "weightsNormalized": true,
+    "sha256": "1dd65ed0ffd005d8495f29a0d384d960111536308cedf6896485f5432588a19c"
+  },
+  {
+    "file": "charter_warden_Rest.glb",
+    "asset": "charter_warden",
+    "triangles": 444,
+    "bones": 16,
+    "weightsNormalized": true,
+    "sha256": "e18474c3c3fb5243b11e33aaa2166df96803108bc9e918671543036d09cc1f87"
+  },
+  {
+    "file": "charter_warden_Idle.fbx",
+    "asset": "charter_warden",
+    "triangles": 444,
+    "bones": 16,
+    "weightsNormalized": true,
+    "sha256": "fbca0d26d3394191db100cf1503fe7641371d0abfd2904ece1196efc10323e7b",
+    "frames": 61,
+    "sampledMotion": 0.03499286621809006,
+    "rootStationary": true,
+    "loopSeamVerified": true
+  },
+  {
+    "file": "charter_warden_Walk.fbx",
+    "asset": "charter_warden",
+    "triangles": 444,
+    "bones": 16,
+    "weightsNormalized": true,
+    "sha256": "6312e85f9518e1d3cba70f023c1f07d1290661d9a9d6c859acab63ea6e616642",
+    "frames": 31,
+    "sampledMotion": 0.7465113590118619,
+    "rootStationary": true,
+    "loopSeamVerified": true
+  },
+  {
+    "file": "charter_warden_Greet.fbx",
+    "asset": "charter_warden",
+    "triangles": 444,
+    "bones": 16,
+    "weightsNormalized": true,
+    "sha256": "1b58773c795e07e75940a651354dad0e3d681d9d3622239a17240f696408838f",
+    "frames": 55,
+    "sampledMotion": 1.1529563665390015,
+    "rootStationary": true,
+    "loopSeamVerified": false
+  },
+  {
+    "file": "charter_warden_Work.fbx",
+    "asset": "charter_warden",
+    "triangles": 444,
+    "bones": 16,
+    "weightsNormalized": true,
+    "sha256": "7dc5728c19b4e15f691b0905f97852553b1e8cba08c3abc6d348e7f6b2341360",
+    "frames": 61,
+    "sampledMotion": 0.4054645895957947,
+    "rootStationary": true,
+    "loopSeamVerified": true
+  },
+  {
+    "file": "archivist_Rest.fbx",
+    "asset": "archivist",
+    "triangles": 396,
+    "bones": 16,
+    "weightsNormalized": true,
+    "sha256": "1eafdebd33a05718994d514e2b9341c33a8a2d8a2d077d6f9a4b4f733233ee52"
+  },
+  {
+    "file": "archivist_Rest.glb",
+    "asset": "archivist",
+    "triangles": 396,
+    "bones": 16,
+    "weightsNormalized": true,
+    "sha256": "78ec793e067b6ee46d16a954a92c15a2e30c12ef3303af696b344429d604f064"
+  },
+  {
+    "file": "archivist_Idle.fbx",
+    "asset": "archivist",
+    "triangles": 396,
+    "bones": 16,
+    "weightsNormalized": true,
+    "sha256": "e98d82f8477648cfe873d02fcdb4275cc029cad2217d95e6776ef7fea6d8211e",
+    "frames": 61,
+    "sampledMotion": 0.03499286621809006,
+    "rootStationary": true,
+    "loopSeamVerified": true
+  },
+  {
+    "file": "archivist_Walk.fbx",
+    "asset": "archivist",
+    "triangles": 396,
+    "bones": 16,
+    "weightsNormalized": true,
+    "sha256": "fb1e7d4bd7a091d0c466b7c61ce41c6ac889be7228a90d8df8b2ecdb994b7bf4",
+    "frames": 31,
+    "sampledMotion": 0.8062324199263031,
+    "rootStationary": true,
+    "loopSeamVerified": true
+  },
+  {
+    "file": "archivist_Greet.fbx",
+    "asset": "archivist",
+    "triangles": 396,
+    "bones": 16,
+    "weightsNormalized": true,
+    "sha256": "8fccf6d03fceb9fc243c1a8b13667c05b58dec65c91469781cf5ff339c792491",
+    "frames": 55,
+    "sampledMotion": 1.2564096450805664,
+    "rootStationary": true,
+    "loopSeamVerified": false
+  },
+  {
+    "file": "archivist_Work.fbx",
+    "asset": "archivist",
+    "triangles": 396,
+    "bones": 16,
+    "weightsNormalized": true,
+    "sha256": "11995623b9b3bef38fd97bf7294ab0edbfbd1b585edd8fcbc25b6e0cd3b85d67",
+    "frames": 61,
+    "sampledMotion": 0.4383128881454468,
+    "rootStationary": true,
+    "loopSeamVerified": true
+  },
+  {
+    "file": "council_clerk_Rest.fbx",
+    "asset": "council_clerk",
+    "triangles": 396,
+    "bones": 16,
+    "weightsNormalized": true,
+    "sha256": "3b201376a2da8c628d0debecff9fd65c56845736d69aa0c2836c375378347eb3"
+  },
+  {
+    "file": "council_clerk_Rest.glb",
+    "asset": "council_clerk",
+    "triangles": 396,
+    "bones": 16,
+    "weightsNormalized": true,
+    "sha256": "285db0bf63b6809e0f8dc0f0d30ba6685ce167d7318353b2b3fcab98e33a0b64"
+  },
+  {
+    "file": "council_clerk_Idle.fbx",
+    "asset": "council_clerk",
+    "triangles": 396,
+    "bones": 16,
+    "weightsNormalized": true,
+    "sha256": "439c8633c23aa0b47097d3714683c4bdd6feb176be8379b3f943d6bcbc806e3a",
+    "frames": 61,
+    "sampledMotion": 0.03499286621809006,
+    "rootStationary": true,
+    "loopSeamVerified": true
+  },
+  {
+    "file": "council_clerk_Walk.fbx",
+    "asset": "council_clerk",
+    "triangles": 396,
+    "bones": 16,
+    "weightsNormalized": true,
+    "sha256": "7a2e31c407d20b7fa0de9f317dec1d46c25ead6b37452b7f550e71ed273f7b41",
+    "frames": 31,
+    "sampledMotion": 0.5822788143625033,
+    "rootStationary": true,
+    "loopSeamVerified": true
+  },
+  {
+    "file": "council_clerk_Greet.fbx",
+    "asset": "council_clerk",
+    "triangles": 396,
+    "bones": 16,
+    "weightsNormalized": true,
+    "sha256": "0404a5c996173d0c6052b44cdf68628088915f9116e8b04b85cf841c75175787",
+    "frames": 55,
+    "sampledMotion": 0.8648277521133423,
+    "rootStationary": true,
+    "loopSeamVerified": false
+  },
+  {
+    "file": "council_clerk_Work.fbx",
+    "asset": "council_clerk",
+    "triangles": 396,
+    "bones": 16,
+    "weightsNormalized": true,
+    "sha256": "9879913d2a2c26e25b1769773ca9cec075d838f850d845aca70ba3e5aef82b6f",
+    "frames": 61,
+    "sampledMotion": 0.35211971402168274,
+    "rootStationary": true,
+    "loopSeamVerified": true
+  },
+  {
+    "file": "bookbinder_Rest.fbx",
+    "asset": "bookbinder",
+    "triangles": 516,
+    "bones": 16,
+    "weightsNormalized": true,
+    "sha256": "88ca39a0a6ffe85b81d526d66303f4f4e4d155e5ad28300ffd389adc5223dc2e"
+  },
+  {
+    "file": "bookbinder_Rest.glb",
+    "asset": "bookbinder",
+    "triangles": 516,
+    "bones": 16,
+    "weightsNormalized": true,
+    "sha256": "1b9ca099f518476a40908ea76a1a69203dea665fef7961da0bc5c4970d51d58a"
+  },
+  {
+    "file": "bookbinder_Idle.fbx",
+    "asset": "bookbinder",
+    "triangles": 516,
+    "bones": 16,
+    "weightsNormalized": true,
+    "sha256": "652479acf10d4536eb75085002c19337bad65e661cee75068c8a8a0ccf86454a",
+    "frames": 61,
+    "sampledMotion": 0.03499286621809006,
+    "rootStationary": true,
+    "loopSeamVerified": true
+  },
+  {
+    "file": "bookbinder_Walk.fbx",
+    "asset": "bookbinder",
+    "triangles": 516,
+    "bones": 16,
+    "weightsNormalized": true,
+    "sha256": "8f9b31c446d88e5117cf16faaeb78df126534d3f423099fbdf23c44c8c1bc177",
+    "frames": 31,
+    "sampledMotion": 0.7465113590118619,
+    "rootStationary": true,
+    "loopSeamVerified": true
+  },
+  {
+    "file": "bookbinder_Greet.fbx",
+    "asset": "bookbinder",
+    "triangles": 516,
+    "bones": 16,
+    "weightsNormalized": true,
+    "sha256": "c8eedcc6ddabdf9bf4e79b7fdac57311ba7e7735918ad15fd0442db9d0ba7531",
+    "frames": 55,
+    "sampledMotion": 1.1529563665390015,
+    "rootStationary": true,
+    "loopSeamVerified": false
+  },
+  {
+    "file": "bookbinder_Work.fbx",
+    "asset": "bookbinder",
+    "triangles": 516,
+    "bones": 16,
+    "weightsNormalized": true,
+    "sha256": "7dec1b30a6afea3e257695afde752ea6c82fb4053b59acf4d90042c56c5e3ef6",
+    "frames": 61,
+    "sampledMotion": 0.4054645895957947,
+    "rootStationary": true,
+    "loopSeamVerified": true
+  }
+]

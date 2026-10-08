@@ -1,0 +1,3200 @@
+{
+  "schema": 1,
+  "units": "stud",
+  "upAxis": "Y",
+  "palette": {
+    "skin_light": [
+      219,
+      177,
+      139
+    ],
+    "skin_mid": [
+      175,
+      122,
+      87
+    ],
+    "skin_dark": [
+      109,
+      73,
+      59
+    ],
+    "steel": [
+      161,
+      178,
+      191
+    ],
+    "iron": [
+      83,
+      103,
+      130
+    ],
+    "gold": [
+      209,
+      169,
+      79
+    ],
+    "red": [
+      152,
+      67,
+      65
+    ],
+    "green": [
+      66,
+      113,
+      80
+    ],
+    "blue": [
+      65,
+      104,
+      148
+    ],
+    "purple": [
+      112,
+      82,
+      150
+    ],
+    "ivory": [
+      223,
+      215,
+      188
+    ],
+    "wood": [
+      104,
+      72,
+      48
+    ],
+    "dark": [
+      39,
+      44,
+      57
+    ],
+    "cyan": [
+      90,
+      203,
+      218
+    ],
+    "hair": [
+      71,
+      50,
+      43
+    ],
+    "navy": [
+      40,
+      54,
+      79
+    ],
+    "teal": [
+      57,
+      110,
+      116
+    ],
+    "sage": [
+      99,
+      123,
+      85
+    ],
+    "auburn": [
+      132,
+      70,
+      43
+    ],
+    "blond": [
+      191,
+      172,
+      126
+    ],
+    "copper": [
+      191,
+      117,
+      61
+    ],
+    "coal": [
+      46,
+      57,
+      67
+    ],
+    "work_teal": [
+      73,
+      145,
+      147
+    ],
+    "chalk": [
+      231,
+      221,
+      190
+    ],
+    "orc_olive": [
+      111,
+      146,
+      91
+    ],
+    "orc_sage": [
+      139,
+      166,
+      105
+    ],
+    "orc_deepgreen": [
+      87,
+      127,
+      91
+    ],
+    "orc_teal": [
+      70,
+      130,
+      133
+    ],
+    "orc_ochre": [
+      183,
+      139,
+      70
+    ],
+    "orc_burgundy": [
+      131,
+      62,
+      67
+    ],
+    "orc_cream": [
+      222,
+      211,
+      179
+    ],
+    "orc_slate": [
+      79,
+      101,
+      126
+    ],
+    "orc_rust": [
+      155,
+      88,
+      60
+    ],
+    "orc_leather": [
+      76,
+      61,
+      53
+    ],
+    "orc_wood": [
+      131,
+      92,
+      55
+    ],
+    "orc_steel": [
+      162,
+      175,
+      175
+    ],
+    "orc_gold": [
+      198,
+      160,
+      79
+    ],
+    "orc_dark": [
+      36,
+      42,
+      40
+    ],
+    "orc_leaf": [
+      69,
+      135,
+      82
+    ],
+    "orc_glass": [
+      110,
+      192,
+      176
+    ]
+  },
+  "assets": [
+    {
+      "id": "miner",
+      "region": "Dwarf",
+      "role": "Story",
+      "rigType": "Humanoid",
+      "parts": [
+        {
+          "name": "Waist",
+          "size": [
+            1.711,
+            0.468,
+            0.858
+          ],
+          "position": [
+            0.0,
+            1.911,
+            0.0
+          ],
+          "color": "coal",
+          "bone": "LowerTorso",
+          "rotation": [
+            0,
+            0,
+            0
+          ]
+        },
+        {
+          "name": "Chest",
+          "size": [
+            2.006,
+            0.663,
+            1.045
+          ],
+          "position": [
+            0.0,
+            2.5116,
+            0.0
+          ],
+          "color": "coal",
+          "bone": "UpperTorso",
+          "rotation": [
+            0,
+            0,
+            0
+          ]
+        },
+        {
+          "name": "Belt",
+          "size": [
+            1.8644,
+            0.156,
+            0.946
+          ],
+          "position": [
+            0.0,
+            1.833,
+            0.0
+          ],
+          "color": "wood",
+          "bone": "LowerTorso",
+          "rotation": [
+            0,
+            0,
+            0
+          ]
+        },
+        {
+          "name": "Head",
+          "size": [
+            1.5576,
+            0.858,
+            1.232
+          ],
+          "position": [
+            0.0,
+            3.393,
+            0.0
+          ],
+          "color": "skin_light",
+          "bone": "Head",
+          "rotation": [
+            0,
+            0,
+            0
+          ]
+        },
+        {
+          "name": "LeftEye",
+          "size": [
+            0.1534,
+            0.1092,
+            0.055
+          ],
+          "position": [
+            -0.354,
+            3.4476,
+            -0.6336
+          ],
+          "color": "dark",
+          "bone": "Head",
+          "rotation": [
+            0,
+            0,
+            0
+          ]
+        },
+        {
+          "name": "LeftUpperArm",
+          "size": [
+            0.6608,
+            0.5616,
+            0.704
+          ],
+          "position": [
+            -1.3688,
+            2.535,
+            0.0
+          ],
+          "color": "coal",
+          "bone": "LeftUpperArm",
+          "rotation": [
+            0,
+            0,
+            0
+          ]
+        },
+        {
+          "name": "LeftLowerArm",
+          "size": [
+            0.6018,
+            0.4368,
+            0.649
+          ],
+          "position": [
+            -1.3688,
+            1.9812,
+            0.0
+          ],
+          "color": "skin_light",
+          "bone": "LeftLowerArm",
+          "rotation": [
+            0,
+            0,
+            0
+          ]
+        },
+        {
+          "name": "LeftHand",
+          "size": [
+            0.5782,
+            0.273,
+            0.616
+          ],
+          "position": [
+            -1.3688,
+            1.5756,
+            0.0
+          ],
+          "color": "skin_light",
+          "bone": "LeftHand",
+          "rotation": [
+            0,
+            0,
+            0
+          ]
+        },
+        {
+          "name": "LeftUpperLeg",
+          "size": [
+            0.7198,
+            0.6708,
+            0.748
+          ],
+          "position": [
+            -0.5664,
+            1.3104,
+            0.0
+          ],
+          "color": "dark",
+          "bone": "LeftUpperLeg",
+          "rotation": [
+            0,
+            0,
+            0
+          ]
+        },
+        {
+          "name": "LeftLowerLeg",
+          "size": [
+            0.6962,
+            0.546,
+            0.726
+          ],
+          "position": [
+            -0.5664,
+            0.585,
+            0.0
+          ],
+          "color": "coal",
+          "bone": "LeftLowerLeg",
+          "rotation": [
+            0,
+            0,
+            0
+          ]
+        },
+        {
+          "name": "LeftBoot",
+          "size": [
+            0.8496,
+            0.3276,
+            1.1
+          ],
+          "position": [
+            -0.5664,
+            0.1794,
+            -0.198
+          ],
+          "color": "wood",
+          "bone": "LeftFoot",
+          "rotation": [
+            0,
+            0,
+            0
+          ]
+        },
+        {
+          "name": "RightEye",
+          "size": [
+            0.1534,
+            0.1092,
+            0.055
+          ],
+          "position": [
+            0.354,
+            3.4476,
+            -0.6336
+          ],
+          "color": "dark",
+          "bone": "Head",
+          "rotation": [
+            0,
+            0,
+            0
+          ]
+        },
+        {
+          "name": "RightUpperArm",
+          "size": [
+            0.6608,
+            0.5616,
+            0.704
+          ],
+          "position": [
+            1.3688,
+            2.535,
+            0.0
+          ],
+          "color": "coal",
+          "bone": "RightUpperArm",
+          "rotation": [
+            0,
+            0,
+            0
+          ]
+        },
+        {
+          "name": "RightLowerArm",
+          "size": [
+            0.6018,
+            0.4368,
+            0.649
+          ],
+          "position": [
+            1.3688,
+            1.9812,
+            0.0
+          ],
+          "color": "skin_light",
+          "bone": "RightLowerArm",
+          "rotation": [
+            0,
+            0,
+            0
+          ]
+        },
+        {
+          "name": "RightHand",
+          "size": [
+            0.5782,
+            0.273,
+            0.616
+          ],
+          "position": [
+            1.3688,
+            1.5756,
+            0.0
+          ],
+          "color": "skin_light",
+          "bone": "RightHand",
+          "rotation": [
+            0,
+            0,
+            0
+          ]
+        },
+        {
+          "name": "RightUpperLeg",
+          "size": [
+            0.7198,
+            0.6708,
+            0.748
+          ],
+          "position": [
+            0.5664,
+            1.3104,
+            0.0
+          ],
+          "color": "dark",
+          "bone": "RightUpperLeg",
+          "rotation": [
+            0,
+            0,
+            0
+          ]
+        },
+        {
+          "name": "RightLowerLeg",
+          "size": [
+            0.6962,
+            0.546,
+            0.726
+          ],
+          "position": [
+            0.5664,
+            0.585,
+            0.0
+          ],
+          "color": "coal",
+          "bone": "RightLowerLeg",
+          "rotation": [
+            0,
+            0,
+            0
+          ]
+        },
+        {
+          "name": "RightBoot",
+          "size": [
+            0.8496,
+            0.3276,
+            1.1
+          ],
+          "position": [
+            0.5664,
+            0.1794,
+            -0.198
+          ],
+          "color": "wood",
+          "bone": "RightFoot",
+          "rotation": [
+            0,
+            0,
+            0
+          ]
+        },
+        {
+          "name": "HairCap",
+          "size": [
+            1.652,
+            0.234,
+            1.32
+          ],
+          "position": [
+            0.0,
+            3.8922,
+            0.022
+          ],
+          "color": "auburn",
+          "bone": "Head",
+          "rotation": [
+            0,
+            0,
+            0
+          ]
+        },
+        {
+          "name": "LeftBrow",
+          "size": [
+            0.295,
+            0.0507,
+            0.0715
+          ],
+          "position": [
+            -0.354,
+            3.5802,
+            -0.682
+          ],
+          "color": "auburn",
+          "bone": "Head",
+          "rotation": [
+            0,
+            0,
+            -4
+          ]
+        },
+        {
+          "name": "LeftEar",
+          "size": [
+            0.1888,
+            0.1872,
+            0.275
+          ],
+          "position": [
+            -0.8614,
+            3.432,
+            0.0
+          ],
+          "color": "skin_light",
+          "bone": "Head",
+          "rotation": [
+            0,
+            0,
+            0
+          ]
+        },
+        {
+          "name": "RightBrow",
+          "size": [
+            0.295,
+            0.0507,
+            0.0715
+          ],
+          "position": [
+            0.354,
+            3.5802,
+            -0.682
+          ],
+          "color": "auburn",
+          "bone": "Head",
+          "rotation": [
+            0,
+            0,
+            4
+          ]
+        },
+        {
+          "name": "RightEar",
+          "size": [
+            0.1888,
+            0.1872,
+            0.275
+          ],
+          "position": [
+            0.8614,
+            3.432,
+            0.0
+          ],
+          "color": "skin_light",
+          "bone": "Head",
+          "rotation": [
+            0,
+            0,
+            0
+          ]
+        },
+        {
+          "name": "Mouth",
+          "size": [
+            0.295,
+            0.0351,
+            0.066
+          ],
+          "position": [
+            0.0,
+            3.1746,
+            -0.671
+          ],
+          "color": "dark",
+          "bone": "Head",
+          "rotation": [
+            0,
+            0,
+            0
+          ]
+        },
+        {
+          "name": "Beard",
+          "size": [
+            1.298,
+            0.546,
+            0.33
+          ],
+          "position": [
+            0.0,
+            3.1044,
+            -0.704
+          ],
+          "color": "auburn",
+          "bone": "Head",
+          "rotation": [
+            0,
+            0,
+            0
+          ]
+        },
+        {
+          "name": "BeardTip",
+          "size": [
+            0.7434,
+            0.3276,
+            0.297
+          ],
+          "position": [
+            0.0,
+            2.7378,
+            -0.704
+          ],
+          "color": "auburn",
+          "bone": "Head",
+          "rotation": [
+            0,
+            0,
+            0
+          ]
+        },
+        {
+          "name": "SafetyHelmet",
+          "size": [
+            1.85,
+            0.36,
+            1.5
+          ],
+          "position": [
+            0,
+            3.95,
+            0
+          ],
+          "color": "copper",
+          "bone": "Head",
+          "rotation": [
+            0,
+            0,
+            0
+          ]
+        },
+        {
+          "name": "HelmetRim",
+          "size": [
+            1.95,
+            0.12,
+            1.65
+          ],
+          "position": [
+            0,
+            3.78,
+            0
+          ],
+          "color": "coal",
+          "bone": "Head",
+          "rotation": [
+            0,
+            0,
+            0
+          ]
+        },
+        {
+          "name": "LampHousing",
+          "size": [
+            0.48,
+            0.38,
+            0.2
+          ],
+          "position": [
+            0,
+            3.94,
+            -0.8
+          ],
+          "color": "coal",
+          "bone": "Head",
+          "rotation": [
+            0,
+            0,
+            0
+          ]
+        },
+        {
+          "name": "LampLens",
+          "size": [
+            0.28,
+            0.25,
+            0.1
+          ],
+          "position": [
+            0,
+            3.94,
+            -0.94
+          ],
+          "color": "chalk",
+          "bone": "Head",
+          "rotation": [
+            0,
+            0,
+            0
+          ]
+        },
+        {
+          "name": "WorkApron",
+          "size": [
+            1.6,
+            1.45,
+            0.15
+          ],
+          "position": [
+            0,
+            2.1,
+            -0.72
+          ],
+          "color": "wood",
+          "bone": "UpperTorso",
+          "rotation": [
+            0,
+            0,
+            0
+          ]
+        },
+        {
+          "name": "ReflectiveStrip",
+          "size": [
+            0.16,
+            0.85,
+            0.09
+          ],
+          "position": [
+            -0.55,
+            2.48,
+            -0.84
+          ],
+          "color": "chalk",
+          "bone": "UpperTorso",
+          "rotation": [
+            0,
+            0,
+            0
+          ]
+        },
+        {
+          "name": "ReflectiveStrip",
+          "size": [
+            0.16,
+            0.85,
+            0.09
+          ],
+          "position": [
+            0.55,
+            2.48,
+            -0.84
+          ],
+          "color": "chalk",
+          "bone": "UpperTorso",
+          "rotation": [
+            0,
+            0,
+            0
+          ]
+        },
+        {
+          "name": "RescueBand",
+          "size": [
+            0.48,
+            0.22,
+            0.7
+          ],
+          "position": [
+            -1.38,
+            2.19,
+            0
+          ],
+          "color": "chalk",
+          "bone": "LeftLowerArm",
+          "rotation": [
+            0,
+            0,
+            0
+          ]
+        },
+        {
+          "name": "DustPatch",
+          "size": [
+            0.29,
+            0.16,
+            0.07
+          ],
+          "position": [
+            0.51,
+            3.25,
+            -0.7
+          ],
+          "color": "coal",
+          "bone": "Head",
+          "rotation": [
+            0,
+            0,
+            0
+          ]
+        }
+      ],
+      "bones": [
+        {
+          "name": "Root",
+          "head": [
+            0.0,
+            0.0,
+            0.0
+          ],
+          "tail": [
+            0.0,
+            0.39,
+            0.0
+          ],
+          "parent": null
+        },
+        {
+          "name": "LowerTorso",
+          "head": [
+            0.0,
+            1.677,
+            0.0
+          ],
+          "tail": [
+            0.0,
+            2.184,
+            0.0
+          ],
+          "parent": "Root"
+        },
+        {
+          "name": "UpperTorso",
+          "head": [
+            0.0,
+            2.184,
+            0.0
+          ],
+          "tail": [
+            0.0,
+            2.925,
+            0.0
+          ],
+          "parent": "LowerTorso"
+        },
+        {
+          "name": "Head",
+          "head": [
+            0.0,
+            2.925,
+            0.0
+          ],
+          "tail": [
+            0.0,
+            3.783,
+            0.0
+          ],
+          "parent": "UpperTorso"
+        },
+        {
+          "name": "LeftUpperArm",
+          "head": [
+            -1.239,
+            2.847,
+            0.0
+          ],
+          "tail": [
+            -1.357,
+            2.223,
+            0.0
+          ],
+          "parent": "UpperTorso"
+        },
+        {
+          "name": "LeftLowerArm",
+          "head": [
+            -1.357,
+            2.223,
+            0.0
+          ],
+          "tail": [
+            -1.3924,
+            1.716,
+            0.0
+          ],
+          "parent": "LeftUpperArm"
+        },
+        {
+          "name": "LeftHand",
+          "head": [
+            -1.3924,
+            1.716,
+            0.0
+          ],
+          "tail": [
+            -1.3924,
+            1.482,
+            0.0
+          ],
+          "parent": "LeftLowerArm"
+        },
+        {
+          "name": "LeftUpperLeg",
+          "head": [
+            -0.5664,
+            1.677,
+            0.0
+          ],
+          "tail": [
+            -0.5664,
+            0.897,
+            0.0
+          ],
+          "parent": "LowerTorso"
+        },
+        {
+          "name": "LeftLowerLeg",
+          "head": [
+            -0.5664,
+            0.897,
+            0.0
+          ],
+          "tail": [
+            -0.5664,
+            0.273,
+            0.0
+          ],
+          "parent": "LeftUpperLeg"
+        },
+        {
+          "name": "LeftFoot",
+          "head": [
+            -0.5664,
+            0.273,
+            0.0
+          ],
+          "tail": [
+            -0.5664,
+            0.156,
+            -0.66
+          ],
+          "parent": "LeftLowerLeg"
+        },
+        {
+          "name": "RightUpperArm",
+          "head": [
+            1.239,
+            2.847,
+            0.0
+          ],
+          "tail": [
+            1.357,
+            2.223,
+            0.0
+          ],
+          "parent": "UpperTorso"
+        },
+        {
+          "name": "RightLowerArm",
+          "head": [
+            1.357,
+            2.223,
+            0.0
+          ],
+          "tail": [
+            1.3924,
+            1.716,
+            0.0
+          ],
+          "parent": "RightUpperArm"
+        },
+        {
+          "name": "RightHand",
+          "head": [
+            1.3924,
+            1.716,
+            0.0
+          ],
+          "tail": [
+            1.3924,
+            1.482,
+            0.0
+          ],
+          "parent": "RightLowerArm"
+        },
+        {
+          "name": "RightUpperLeg",
+          "head": [
+            0.5664,
+            1.677,
+            0.0
+          ],
+          "tail": [
+            0.5664,
+            0.897,
+            0.0
+          ],
+          "parent": "LowerTorso"
+        },
+        {
+          "name": "RightLowerLeg",
+          "head": [
+            0.5664,
+            0.897,
+            0.0
+          ],
+          "tail": [
+            0.5664,
+            0.273,
+            0.0
+          ],
+          "parent": "RightUpperLeg"
+        },
+        {
+          "name": "RightFoot",
+          "head": [
+            0.5664,
+            0.273,
+            0.0
+          ],
+          "tail": [
+            0.5664,
+            0.156,
+            -0.66
+          ],
+          "parent": "RightLowerLeg"
+        }
+      ],
+      "designId": "npc.ironveil.miner",
+      "recruitmentBound": false,
+      "friendly": true
+    },
+    {
+      "id": "engineer",
+      "region": "Dwarf",
+      "role": "Story",
+      "rigType": "Humanoid",
+      "parts": [
+        {
+          "name": "Waist",
+          "size": [
+            1.711,
+            0.468,
+            0.858
+          ],
+          "position": [
+            0.0,
+            1.911,
+            0.0
+          ],
+          "color": "work_teal",
+          "bone": "LowerTorso",
+          "rotation": [
+            0,
+            0,
+            0
+          ]
+        },
+        {
+          "name": "Chest",
+          "size": [
+            2.006,
+            0.663,
+            1.045
+          ],
+          "position": [
+            0.0,
+            2.5116,
+            0.0
+          ],
+          "color": "work_teal",
+          "bone": "UpperTorso",
+          "rotation": [
+            0,
+            0,
+            0
+          ]
+        },
+        {
+          "name": "Belt",
+          "size": [
+            1.8644,
+            0.156,
+            0.946
+          ],
+          "position": [
+            0.0,
+            1.833,
+            0.0
+          ],
+          "color": "wood",
+          "bone": "LowerTorso",
+          "rotation": [
+            0,
+            0,
+            0
+          ]
+        },
+        {
+          "name": "Head",
+          "size": [
+            1.5576,
+            0.858,
+            1.232
+          ],
+          "position": [
+            0.0,
+            3.393,
+            0.0
+          ],
+          "color": "skin_light",
+          "bone": "Head",
+          "rotation": [
+            0,
+            0,
+            0
+          ]
+        },
+        {
+          "name": "LeftEye",
+          "size": [
+            0.1534,
+            0.1092,
+            0.055
+          ],
+          "position": [
+            -0.354,
+            3.4476,
+            -0.6336
+          ],
+          "color": "dark",
+          "bone": "Head",
+          "rotation": [
+            0,
+            0,
+            0
+          ]
+        },
+        {
+          "name": "LeftUpperArm",
+          "size": [
+            0.6608,
+            0.5616,
+            0.704
+          ],
+          "position": [
+            -1.3688,
+            2.535,
+            0.0
+          ],
+          "color": "work_teal",
+          "bone": "LeftUpperArm",
+          "rotation": [
+            0,
+            0,
+            0
+          ]
+        },
+        {
+          "name": "LeftLowerArm",
+          "size": [
+            0.6018,
+            0.4368,
+            0.649
+          ],
+          "position": [
+            -1.3688,
+            1.9812,
+            0.0
+          ],
+          "color": "skin_light",
+          "bone": "LeftLowerArm",
+          "rotation": [
+            0,
+            0,
+            0
+          ]
+        },
+        {
+          "name": "LeftHand",
+          "size": [
+            0.5782,
+            0.273,
+            0.616
+          ],
+          "position": [
+            -1.3688,
+            1.5756,
+            0.0
+          ],
+          "color": "skin_light",
+          "bone": "LeftHand",
+          "rotation": [
+            0,
+            0,
+            0
+          ]
+        },
+        {
+          "name": "LeftUpperLeg",
+          "size": [
+            0.7198,
+            0.6708,
+            0.748
+          ],
+          "position": [
+            -0.5664,
+            1.3104,
+            0.0
+          ],
+          "color": "dark",
+          "bone": "LeftUpperLeg",
+          "rotation": [
+            0,
+            0,
+            0
+          ]
+        },
+        {
+          "name": "LeftLowerLeg",
+          "size": [
+            0.6962,
+            0.546,
+            0.726
+          ],
+          "position": [
+            -0.5664,
+            0.585,
+            0.0
+          ],
+          "color": "work_teal",
+          "bone": "LeftLowerLeg",
+          "rotation": [
+            0,
+            0,
+            0
+          ]
+        },
+        {
+          "name": "LeftBoot",
+          "size": [
+            0.8496,
+            0.3276,
+            1.1
+          ],
+          "position": [
+            -0.5664,
+            0.1794,
+            -0.198
+          ],
+          "color": "wood",
+          "bone": "LeftFoot",
+          "rotation": [
+            0,
+            0,
+            0
+          ]
+        },
+        {
+          "name": "RightEye",
+          "size": [
+            0.1534,
+            0.1092,
+            0.055
+          ],
+          "position": [
+            0.354,
+            3.4476,
+            -0.6336
+          ],
+          "color": "dark",
+          "bone": "Head",
+          "rotation": [
+            0,
+            0,
+            0
+          ]
+        },
+        {
+          "name": "RightUpperArm",
+          "size": [
+            0.6608,
+            0.5616,
+            0.704
+          ],
+          "position": [
+            1.3688,
+            2.535,
+            0.0
+          ],
+          "color": "work_teal",
+          "bone": "RightUpperArm",
+          "rotation": [
+            0,
+            0,
+            0
+          ]
+        },
+        {
+          "name": "RightLowerArm",
+          "size": [
+            0.6018,
+            0.4368,
+            0.649
+          ],
+          "position": [
+            1.3688,
+            1.9812,
+            0.0
+          ],
+          "color": "skin_light",
+          "bone": "RightLowerArm",
+          "rotation": [
+            0,
+            0,
+            0
+          ]
+        },
+        {
+          "name": "RightHand",
+          "size": [
+            0.5782,
+            0.273,
+            0.616
+          ],
+          "position": [
+            1.3688,
+            1.5756,
+            0.0
+          ],
+          "color": "skin_light",
+          "bone": "RightHand",
+          "rotation": [
+            0,
+            0,
+            0
+          ]
+        },
+        {
+          "name": "RightUpperLeg",
+          "size": [
+            0.7198,
+            0.6708,
+            0.748
+          ],
+          "position": [
+            0.5664,
+            1.3104,
+            0.0
+          ],
+          "color": "dark",
+          "bone": "RightUpperLeg",
+          "rotation": [
+            0,
+            0,
+            0
+          ]
+        },
+        {
+          "name": "RightLowerLeg",
+          "size": [
+            0.6962,
+            0.546,
+            0.726
+          ],
+          "position": [
+            0.5664,
+            0.585,
+            0.0
+          ],
+          "color": "work_teal",
+          "bone": "RightLowerLeg",
+          "rotation": [
+            0,
+            0,
+            0
+          ]
+        },
+        {
+          "name": "RightBoot",
+          "size": [
+            0.8496,
+            0.3276,
+            1.1
+          ],
+          "position": [
+            0.5664,
+            0.1794,
+            -0.198
+          ],
+          "color": "wood",
+          "bone": "RightFoot",
+          "rotation": [
+            0,
+            0,
+            0
+          ]
+        },
+        {
+          "name": "HairCap",
+          "size": [
+            1.652,
+            0.234,
+            1.32
+          ],
+          "position": [
+            0.0,
+            3.8922,
+            0.022
+          ],
+          "color": "auburn",
+          "bone": "Head",
+          "rotation": [
+            0,
+            0,
+            0
+          ]
+        },
+        {
+          "name": "LeftBrow",
+          "size": [
+            0.295,
+            0.0507,
+            0.0715
+          ],
+          "position": [
+            -0.354,
+            3.5802,
+            -0.682
+          ],
+          "color": "auburn",
+          "bone": "Head",
+          "rotation": [
+            0,
+            0,
+            -4
+          ]
+        },
+        {
+          "name": "LeftEar",
+          "size": [
+            0.1888,
+            0.1872,
+            0.275
+          ],
+          "position": [
+            -0.8614,
+            3.432,
+            0.0
+          ],
+          "color": "skin_light",
+          "bone": "Head",
+          "rotation": [
+            0,
+            0,
+            0
+          ]
+        },
+        {
+          "name": "RightBrow",
+          "size": [
+            0.295,
+            0.0507,
+            0.0715
+          ],
+          "position": [
+            0.354,
+            3.5802,
+            -0.682
+          ],
+          "color": "auburn",
+          "bone": "Head",
+          "rotation": [
+            0,
+            0,
+            4
+          ]
+        },
+        {
+          "name": "RightEar",
+          "size": [
+            0.1888,
+            0.1872,
+            0.275
+          ],
+          "position": [
+            0.8614,
+            3.432,
+            0.0
+          ],
+          "color": "skin_light",
+          "bone": "Head",
+          "rotation": [
+            0,
+            0,
+            0
+          ]
+        },
+        {
+          "name": "Mouth",
+          "size": [
+            0.295,
+            0.0351,
+            0.066
+          ],
+          "position": [
+            0.0,
+            3.1746,
+            -0.671
+          ],
+          "color": "dark",
+          "bone": "Head",
+          "rotation": [
+            0,
+            0,
+            0
+          ]
+        },
+        {
+          "name": "Beard",
+          "size": [
+            1.298,
+            0.546,
+            0.33
+          ],
+          "position": [
+            0.0,
+            3.1044,
+            -0.704
+          ],
+          "color": "auburn",
+          "bone": "Head",
+          "rotation": [
+            0,
+            0,
+            0
+          ]
+        },
+        {
+          "name": "BeardTip",
+          "size": [
+            0.7434,
+            0.3276,
+            0.297
+          ],
+          "position": [
+            0.0,
+            2.7378,
+            -0.704
+          ],
+          "color": "auburn",
+          "bone": "Head",
+          "rotation": [
+            0,
+            0,
+            0
+          ]
+        },
+        {
+          "name": "SafetyHelmet",
+          "size": [
+            1.85,
+            0.36,
+            1.5
+          ],
+          "position": [
+            0,
+            3.95,
+            0
+          ],
+          "color": "copper",
+          "bone": "Head",
+          "rotation": [
+            0,
+            0,
+            0
+          ]
+        },
+        {
+          "name": "HelmetRim",
+          "size": [
+            1.95,
+            0.12,
+            1.65
+          ],
+          "position": [
+            0,
+            3.78,
+            0
+          ],
+          "color": "coal",
+          "bone": "Head",
+          "rotation": [
+            0,
+            0,
+            0
+          ]
+        },
+        {
+          "name": "LampHousing",
+          "size": [
+            0.48,
+            0.38,
+            0.2
+          ],
+          "position": [
+            0,
+            3.94,
+            -0.8
+          ],
+          "color": "coal",
+          "bone": "Head",
+          "rotation": [
+            0,
+            0,
+            0
+          ]
+        },
+        {
+          "name": "LampLens",
+          "size": [
+            0.28,
+            0.25,
+            0.1
+          ],
+          "position": [
+            0,
+            3.94,
+            -0.94
+          ],
+          "color": "chalk",
+          "bone": "Head",
+          "rotation": [
+            0,
+            0,
+            0
+          ]
+        },
+        {
+          "name": "WorkApron",
+          "size": [
+            1.6,
+            1.45,
+            0.15
+          ],
+          "position": [
+            0,
+            2.1,
+            -0.72
+          ],
+          "color": "wood",
+          "bone": "UpperTorso",
+          "rotation": [
+            0,
+            0,
+            0
+          ]
+        },
+        {
+          "name": "ReflectiveStrip",
+          "size": [
+            0.16,
+            0.85,
+            0.09
+          ],
+          "position": [
+            -0.55,
+            2.48,
+            -0.84
+          ],
+          "color": "chalk",
+          "bone": "UpperTorso",
+          "rotation": [
+            0,
+            0,
+            0
+          ]
+        },
+        {
+          "name": "ReflectiveStrip",
+          "size": [
+            0.16,
+            0.85,
+            0.09
+          ],
+          "position": [
+            0.55,
+            2.48,
+            -0.84
+          ],
+          "color": "chalk",
+          "bone": "UpperTorso",
+          "rotation": [
+            0,
+            0,
+            0
+          ]
+        },
+        {
+          "name": "Blueprint",
+          "size": [
+            0.95,
+            0.7,
+            0.14
+          ],
+          "position": [
+            1.38,
+            1.64,
+            -0.65
+          ],
+          "color": "work_teal",
+          "bone": "RightHand",
+          "rotation": [
+            0,
+            0,
+            0
+          ]
+        },
+        {
+          "name": "BlueprintMark",
+          "size": [
+            0.65,
+            0.07,
+            0.05
+          ],
+          "position": [
+            1.38,
+            1.76,
+            -0.75
+          ],
+          "color": "chalk",
+          "bone": "RightHand",
+          "rotation": [
+            0,
+            0,
+            0
+          ]
+        },
+        {
+          "name": "ToolBelt",
+          "size": [
+            1.7,
+            0.25,
+            1.25
+          ],
+          "position": [
+            0,
+            1.7,
+            0
+          ],
+          "color": "coal",
+          "bone": "LowerTorso",
+          "rotation": [
+            0,
+            0,
+            0
+          ]
+        },
+        {
+          "name": "WrenchHandle",
+          "size": [
+            0.16,
+            0.63,
+            0.15
+          ],
+          "position": [
+            -1.45,
+            1.56,
+            -0.45
+          ],
+          "color": "steel",
+          "bone": "LeftHand",
+          "rotation": [
+            0,
+            0,
+            0
+          ]
+        },
+        {
+          "name": "WrenchJaw",
+          "size": [
+            0.13,
+            0.27,
+            0.16
+          ],
+          "position": [
+            -1.61,
+            1.99,
+            -0.45
+          ],
+          "color": "steel",
+          "bone": "LeftHand",
+          "rotation": [
+            0,
+            0,
+            0
+          ]
+        },
+        {
+          "name": "WrenchJaw",
+          "size": [
+            0.13,
+            0.27,
+            0.16
+          ],
+          "position": [
+            -1.29,
+            1.99,
+            -0.45
+          ],
+          "color": "steel",
+          "bone": "LeftHand",
+          "rotation": [
+            0,
+            0,
+            0
+          ]
+        }
+      ],
+      "bones": [
+        {
+          "name": "Root",
+          "head": [
+            0.0,
+            0.0,
+            0.0
+          ],
+          "tail": [
+            0.0,
+            0.39,
+            0.0
+          ],
+          "parent": null
+        },
+        {
+          "name": "LowerTorso",
+          "head": [
+            0.0,
+            1.677,
+            0.0
+          ],
+          "tail": [
+            0.0,
+            2.184,
+            0.0
+          ],
+          "parent": "Root"
+        },
+        {
+          "name": "UpperTorso",
+          "head": [
+            0.0,
+            2.184,
+            0.0
+          ],
+          "tail": [
+            0.0,
+            2.925,
+            0.0
+          ],
+          "parent": "LowerTorso"
+        },
+        {
+          "name": "Head",
+          "head": [
+            0.0,
+            2.925,
+            0.0
+          ],
+          "tail": [
+            0.0,
+            3.783,
+            0.0
+          ],
+          "parent": "UpperTorso"
+        },
+        {
+          "name": "LeftUpperArm",
+          "head": [
+            -1.239,
+            2.847,
+            0.0
+          ],
+          "tail": [
+            -1.357,
+            2.223,
+            0.0
+          ],
+          "parent": "UpperTorso"
+        },
+        {
+          "name": "LeftLowerArm",
+          "head": [
+            -1.357,
+            2.223,
+            0.0
+          ],
+          "tail": [
+            -1.3924,
+            1.716,
+            0.0
+          ],
+          "parent": "LeftUpperArm"
+        },
+        {
+          "name": "LeftHand",
+          "head": [
+            -1.3924,
+            1.716,
+            0.0
+          ],
+          "tail": [
+            -1.3924,
+            1.482,
+            0.0
+          ],
+          "parent": "LeftLowerArm"
+        },
+        {
+          "name": "LeftUpperLeg",
+          "head": [
+            -0.5664,
+            1.677,
+            0.0
+          ],
+          "tail": [
+            -0.5664,
+            0.897,
+            0.0
+          ],
+          "parent": "LowerTorso"
+        },
+        {
+          "name": "LeftLowerLeg",
+          "head": [
+            -0.5664,
+            0.897,
+            0.0
+          ],
+          "tail": [
+            -0.5664,
+            0.273,
+            0.0
+          ],
+          "parent": "LeftUpperLeg"
+        },
+        {
+          "name": "LeftFoot",
+          "head": [
+            -0.5664,
+            0.273,
+            0.0
+          ],
+          "tail": [
+            -0.5664,
+            0.156,
+            -0.66
+          ],
+          "parent": "LeftLowerLeg"
+        },
+        {
+          "name": "RightUpperArm",
+          "head": [
+            1.239,
+            2.847,
+            0.0
+          ],
+          "tail": [
+            1.357,
+            2.223,
+            0.0
+          ],
+          "parent": "UpperTorso"
+        },
+        {
+          "name": "RightLowerArm",
+          "head": [
+            1.357,
+            2.223,
+            0.0
+          ],
+          "tail": [
+            1.3924,
+            1.716,
+            0.0
+          ],
+          "parent": "RightUpperArm"
+        },
+        {
+          "name": "RightHand",
+          "head": [
+            1.3924,
+            1.716,
+            0.0
+          ],
+          "tail": [
+            1.3924,
+            1.482,
+            0.0
+          ],
+          "parent": "RightLowerArm"
+        },
+        {
+          "name": "RightUpperLeg",
+          "head": [
+            0.5664,
+            1.677,
+            0.0
+          ],
+          "tail": [
+            0.5664,
+            0.897,
+            0.0
+          ],
+          "parent": "LowerTorso"
+        },
+        {
+          "name": "RightLowerLeg",
+          "head": [
+            0.5664,
+            0.897,
+            0.0
+          ],
+          "tail": [
+            0.5664,
+            0.273,
+            0.0
+          ],
+          "parent": "RightUpperLeg"
+        },
+        {
+          "name": "RightFoot",
+          "head": [
+            0.5664,
+            0.273,
+            0.0
+          ],
+          "tail": [
+            0.5664,
+            0.156,
+            -0.66
+          ],
+          "parent": "RightLowerLeg"
+        }
+      ],
+      "designId": "npc.ironveil.engineer",
+      "recruitmentBound": false,
+      "friendly": true
+    },
+    {
+      "id": "carrier",
+      "displayName": "Borga",
+      "region": "Orc",
+      "role": "Story",
+      "designId": "npc.ironveil.carrier",
+      "rigType": "Humanoid",
+      "parts": [
+        {
+          "name": "Waist",
+          "size": [
+            1.48,
+            0.6,
+            0.85
+          ],
+          "position": [
+            0,
+            2.45,
+            0
+          ],
+          "color": "orc_ochre",
+          "bone": "LowerTorso",
+          "rotation": [
+            0,
+            0,
+            0
+          ]
+        },
+        {
+          "name": "Chest",
+          "size": [
+            1.9,
+            0.9,
+            1.05
+          ],
+          "position": [
+            0,
+            3.2,
+            0
+          ],
+          "color": "orc_ochre",
+          "bone": "UpperTorso",
+          "rotation": [
+            0,
+            0,
+            0
+          ]
+        },
+        {
+          "name": "Belt",
+          "size": [
+            1.55,
+            0.18,
+            0.94
+          ],
+          "position": [
+            0,
+            2.35,
+            0
+          ],
+          "color": "orc_leather",
+          "bone": "LowerTorso",
+          "rotation": [
+            0,
+            0,
+            0
+          ]
+        },
+        {
+          "name": "Head",
+          "size": [
+            1.45,
+            1.12,
+            1.18
+          ],
+          "position": [
+            0,
+            4.35,
+            0
+          ],
+          "color": "orc_olive",
+          "bone": "Head",
+          "rotation": [
+            0,
+            0,
+            0
+          ]
+        },
+        {
+          "name": "LeftEyeWhite",
+          "size": [
+            0.24,
+            0.22,
+            0.045
+          ],
+          "position": [
+            -0.3,
+            4.45,
+            -0.606
+          ],
+          "color": "orc_cream",
+          "bone": "Head",
+          "rotation": [
+            0,
+            0,
+            0
+          ]
+        },
+        {
+          "name": "LeftEye",
+          "size": [
+            0.14,
+            0.16,
+            0.055
+          ],
+          "position": [
+            -0.3,
+            4.45,
+            -0.61
+          ],
+          "color": "orc_dark",
+          "bone": "Head",
+          "rotation": [
+            0,
+            0,
+            0
+          ]
+        },
+        {
+          "name": "LeftEar",
+          "size": [
+            0.42,
+            0.42,
+            0.28
+          ],
+          "position": [
+            -0.83,
+            4.47,
+            0.02
+          ],
+          "color": "orc_olive",
+          "bone": "Head",
+          "rotation": [
+            0,
+            0,
+            -22
+          ]
+        },
+        {
+          "name": "LeftTusk",
+          "size": [
+            0.12,
+            0.27,
+            0.14
+          ],
+          "position": [
+            -0.4,
+            4.02,
+            -0.66
+          ],
+          "color": "orc_cream",
+          "bone": "Head",
+          "rotation": [
+            0,
+            0,
+            14
+          ]
+        },
+        {
+          "name": "LeftUpperArm",
+          "size": [
+            0.62,
+            0.74,
+            0.7
+          ],
+          "position": [
+            -1.16,
+            3.27,
+            0
+          ],
+          "color": "orc_ochre",
+          "bone": "LeftUpperArm",
+          "rotation": [
+            0,
+            0,
+            0
+          ]
+        },
+        {
+          "name": "LeftLowerArm",
+          "size": [
+            0.58,
+            0.6,
+            0.64
+          ],
+          "position": [
+            -1.16,
+            2.57,
+            0
+          ],
+          "color": "orc_olive",
+          "bone": "LeftLowerArm",
+          "rotation": [
+            0,
+            0,
+            0
+          ]
+        },
+        {
+          "name": "LeftHand",
+          "size": [
+            0.55,
+            0.36,
+            0.61
+          ],
+          "position": [
+            -1.16,
+            2.03,
+            0
+          ],
+          "color": "orc_olive",
+          "bone": "LeftHand",
+          "rotation": [
+            0,
+            0,
+            0
+          ]
+        },
+        {
+          "name": "LeftUpperLeg",
+          "size": [
+            0.65,
+            0.87,
+            0.71
+          ],
+          "position": [
+            -0.48,
+            1.69,
+            0
+          ],
+          "color": "orc_leather",
+          "bone": "LeftUpperLeg",
+          "rotation": [
+            0,
+            0,
+            0
+          ]
+        },
+        {
+          "name": "LeftLowerLeg",
+          "size": [
+            0.61,
+            0.7,
+            0.69
+          ],
+          "position": [
+            -0.48,
+            0.77,
+            0
+          ],
+          "color": "orc_ochre",
+          "bone": "LeftLowerLeg",
+          "rotation": [
+            0,
+            0,
+            0
+          ]
+        },
+        {
+          "name": "LeftBoot",
+          "size": [
+            0.76,
+            0.43,
+            1.05
+          ],
+          "position": [
+            -0.48,
+            0.235,
+            -0.18
+          ],
+          "color": "orc_leather",
+          "bone": "LeftFoot",
+          "rotation": [
+            0,
+            0,
+            0
+          ]
+        },
+        {
+          "name": "RightEyeWhite",
+          "size": [
+            0.24,
+            0.22,
+            0.045
+          ],
+          "position": [
+            0.3,
+            4.45,
+            -0.606
+          ],
+          "color": "orc_cream",
+          "bone": "Head",
+          "rotation": [
+            0,
+            0,
+            0
+          ]
+        },
+        {
+          "name": "RightEye",
+          "size": [
+            0.14,
+            0.16,
+            0.055
+          ],
+          "position": [
+            0.3,
+            4.45,
+            -0.61
+          ],
+          "color": "orc_dark",
+          "bone": "Head",
+          "rotation": [
+            0,
+            0,
+            0
+          ]
+        },
+        {
+          "name": "RightEar",
+          "size": [
+            0.42,
+            0.42,
+            0.28
+          ],
+          "position": [
+            0.83,
+            4.47,
+            0.02
+          ],
+          "color": "orc_olive",
+          "bone": "Head",
+          "rotation": [
+            0,
+            0,
+            22
+          ]
+        },
+        {
+          "name": "RightTusk",
+          "size": [
+            0.12,
+            0.27,
+            0.14
+          ],
+          "position": [
+            0.4,
+            4.02,
+            -0.66
+          ],
+          "color": "orc_cream",
+          "bone": "Head",
+          "rotation": [
+            0,
+            0,
+            -14
+          ]
+        },
+        {
+          "name": "RightUpperArm",
+          "size": [
+            0.62,
+            0.74,
+            0.7
+          ],
+          "position": [
+            1.16,
+            3.27,
+            0
+          ],
+          "color": "orc_ochre",
+          "bone": "RightUpperArm",
+          "rotation": [
+            0,
+            0,
+            0
+          ]
+        },
+        {
+          "name": "RightLowerArm",
+          "size": [
+            0.58,
+            0.6,
+            0.64
+          ],
+          "position": [
+            1.16,
+            2.57,
+            0
+          ],
+          "color": "orc_olive",
+          "bone": "RightLowerArm",
+          "rotation": [
+            0,
+            0,
+            0
+          ]
+        },
+        {
+          "name": "RightHand",
+          "size": [
+            0.55,
+            0.36,
+            0.61
+          ],
+          "position": [
+            1.16,
+            2.03,
+            0
+          ],
+          "color": "orc_olive",
+          "bone": "RightHand",
+          "rotation": [
+            0,
+            0,
+            0
+          ]
+        },
+        {
+          "name": "RightUpperLeg",
+          "size": [
+            0.65,
+            0.87,
+            0.71
+          ],
+          "position": [
+            0.48,
+            1.69,
+            0
+          ],
+          "color": "orc_leather",
+          "bone": "RightUpperLeg",
+          "rotation": [
+            0,
+            0,
+            0
+          ]
+        },
+        {
+          "name": "RightLowerLeg",
+          "size": [
+            0.61,
+            0.7,
+            0.69
+          ],
+          "position": [
+            0.48,
+            0.77,
+            0
+          ],
+          "color": "orc_ochre",
+          "bone": "RightLowerLeg",
+          "rotation": [
+            0,
+            0,
+            0
+          ]
+        },
+        {
+          "name": "RightBoot",
+          "size": [
+            0.76,
+            0.43,
+            1.05
+          ],
+          "position": [
+            0.48,
+            0.235,
+            -0.18
+          ],
+          "color": "orc_leather",
+          "bone": "RightFoot",
+          "rotation": [
+            0,
+            0,
+            0
+          ]
+        },
+        {
+          "name": "Smile",
+          "size": [
+            0.36,
+            0.055,
+            0.06
+          ],
+          "position": [
+            0,
+            4.04,
+            -0.615
+          ],
+          "color": "orc_dark",
+          "bone": "Head",
+          "rotation": [
+            0,
+            0,
+            0
+          ]
+        },
+        {
+          "name": "Brow",
+          "size": [
+            0.35,
+            0.07,
+            0.08
+          ],
+          "position": [
+            -0.3,
+            4.67,
+            -0.64
+          ],
+          "color": "orc_dark",
+          "bone": "Head",
+          "rotation": [
+            0,
+            0,
+            4
+          ]
+        },
+        {
+          "name": "SmileCorner",
+          "size": [
+            0.06,
+            0.12,
+            0.065
+          ],
+          "position": [
+            -0.2,
+            4.07,
+            -0.62
+          ],
+          "color": "orc_dark",
+          "bone": "Head",
+          "rotation": [
+            0,
+            0,
+            0
+          ]
+        },
+        {
+          "name": "Brow",
+          "size": [
+            0.35,
+            0.07,
+            0.08
+          ],
+          "position": [
+            0.3,
+            4.67,
+            -0.64
+          ],
+          "color": "orc_dark",
+          "bone": "Head",
+          "rotation": [
+            0,
+            0,
+            -4
+          ]
+        },
+        {
+          "name": "SmileCorner",
+          "size": [
+            0.06,
+            0.12,
+            0.065
+          ],
+          "position": [
+            0.2,
+            4.07,
+            -0.62
+          ],
+          "color": "orc_dark",
+          "bone": "Head",
+          "rotation": [
+            0,
+            0,
+            0
+          ]
+        },
+        {
+          "name": "HairCrown",
+          "size": [
+            1.5,
+            0.3,
+            1.2
+          ],
+          "position": [
+            0,
+            4.97,
+            0.03
+          ],
+          "color": "orc_leather",
+          "bone": "Head",
+          "rotation": [
+            0,
+            0,
+            0
+          ]
+        },
+        {
+          "name": "ShortBeard",
+          "size": [
+            1.05,
+            0.3,
+            0.23
+          ],
+          "position": [
+            0,
+            3.9,
+            -0.55
+          ],
+          "color": "orc_leather",
+          "bone": "Head",
+          "rotation": [
+            0,
+            0,
+            0
+          ]
+        },
+        {
+          "name": "Sideburn",
+          "size": [
+            0.2,
+            0.4,
+            0.18
+          ],
+          "position": [
+            -0.66,
+            4.15,
+            -0.5
+          ],
+          "color": "orc_leather",
+          "bone": "Head",
+          "rotation": [
+            0,
+            0,
+            0
+          ]
+        },
+        {
+          "name": "Sideburn",
+          "size": [
+            0.2,
+            0.4,
+            0.18
+          ],
+          "position": [
+            0.66,
+            4.15,
+            -0.5
+          ],
+          "color": "orc_leather",
+          "bone": "Head",
+          "rotation": [
+            0,
+            0,
+            0
+          ]
+        },
+        {
+          "name": "CarrierHarness",
+          "size": [
+            0.26,
+            1.8,
+            0.15
+          ],
+          "position": [
+            -0.55,
+            3,
+            -0.71
+          ],
+          "color": "copper",
+          "bone": "UpperTorso",
+          "rotation": [
+            0,
+            0,
+            -14
+          ]
+        },
+        {
+          "name": "CarrierHarness",
+          "size": [
+            0.26,
+            1.8,
+            0.15
+          ],
+          "position": [
+            0.55,
+            3,
+            -0.71
+          ],
+          "color": "copper",
+          "bone": "UpperTorso",
+          "rotation": [
+            0,
+            0,
+            14
+          ]
+        },
+        {
+          "name": "OrePack",
+          "size": [
+            1.8,
+            1.5,
+            0.75
+          ],
+          "position": [
+            0,
+            3,
+            0.88
+          ],
+          "color": "wood",
+          "bone": "UpperTorso",
+          "rotation": [
+            0,
+            0,
+            0
+          ]
+        },
+        {
+          "name": "PackBand",
+          "size": [
+            0.18,
+            1.55,
+            0.82
+          ],
+          "position": [
+            -0.55,
+            3,
+            0.88
+          ],
+          "color": "copper",
+          "bone": "UpperTorso",
+          "rotation": [
+            0,
+            0,
+            0
+          ]
+        },
+        {
+          "name": "PackBand",
+          "size": [
+            0.18,
+            1.55,
+            0.82
+          ],
+          "position": [
+            0.55,
+            3,
+            0.88
+          ],
+          "color": "copper",
+          "bone": "UpperTorso",
+          "rotation": [
+            0,
+            0,
+            0
+          ]
+        },
+        {
+          "name": "ReceiptBook",
+          "size": [
+            0.72,
+            0.87,
+            0.13
+          ],
+          "position": [
+            1.42,
+            2,
+            -0.54
+          ],
+          "color": "chalk",
+          "bone": "RightHand",
+          "rotation": [
+            0,
+            0,
+            0
+          ]
+        },
+        {
+          "name": "ReceiptSeal",
+          "size": [
+            0.2,
+            0.2,
+            0.05
+          ],
+          "position": [
+            1.42,
+            2,
+            -0.64
+          ],
+          "color": "work_teal",
+          "bone": "RightHand",
+          "rotation": [
+            0,
+            0,
+            45
+          ]
+        }
+      ],
+      "bones": [
+        {
+          "name": "Root",
+          "head": [
+            0,
+            0,
+            0
+          ],
+          "tail": [
+            0,
+            0.5,
+            0
+          ],
+          "parent": null
+        },
+        {
+          "name": "LowerTorso",
+          "head": [
+            0,
+            2.15,
+            0
+          ],
+          "tail": [
+            0,
+            2.8,
+            0
+          ],
+          "parent": "Root"
+        },
+        {
+          "name": "UpperTorso",
+          "head": [
+            0,
+            2.8,
+            0
+          ],
+          "tail": [
+            0,
+            3.75,
+            0
+          ],
+          "parent": "LowerTorso"
+        },
+        {
+          "name": "Head",
+          "head": [
+            0,
+            3.75,
+            0
+          ],
+          "tail": [
+            0,
+            4.85,
+            0
+          ],
+          "parent": "UpperTorso"
+        },
+        {
+          "name": "LeftUpperArm",
+          "head": [
+            -1.05,
+            3.65,
+            0
+          ],
+          "tail": [
+            -1.15,
+            2.85,
+            0
+          ],
+          "parent": "UpperTorso"
+        },
+        {
+          "name": "LeftLowerArm",
+          "head": [
+            -1.15,
+            2.85,
+            0
+          ],
+          "tail": [
+            -1.18,
+            2.2,
+            0
+          ],
+          "parent": "LeftUpperArm"
+        },
+        {
+          "name": "LeftHand",
+          "head": [
+            -1.18,
+            2.2,
+            0
+          ],
+          "tail": [
+            -1.18,
+            1.9,
+            0
+          ],
+          "parent": "LeftLowerArm"
+        },
+        {
+          "name": "LeftUpperLeg",
+          "head": [
+            -0.48,
+            2.15,
+            0
+          ],
+          "tail": [
+            -0.48,
+            1.15,
+            0
+          ],
+          "parent": "LowerTorso"
+        },
+        {
+          "name": "LeftLowerLeg",
+          "head": [
+            -0.48,
+            1.15,
+            0
+          ],
+          "tail": [
+            -0.48,
+            0.35,
+            0
+          ],
+          "parent": "LeftUpperLeg"
+        },
+        {
+          "name": "LeftFoot",
+          "head": [
+            -0.48,
+            0.35,
+            0
+          ],
+          "tail": [
+            -0.48,
+            0.2,
+            -0.6
+          ],
+          "parent": "LeftLowerLeg"
+        },
+        {
+          "name": "RightUpperArm",
+          "head": [
+            1.05,
+            3.65,
+            0
+          ],
+          "tail": [
+            1.15,
+            2.85,
+            0
+          ],
+          "parent": "UpperTorso"
+        },
+        {
+          "name": "RightLowerArm",
+          "head": [
+            1.15,
+            2.85,
+            0
+          ],
+          "tail": [
+            1.18,
+            2.2,
+            0
+          ],
+          "parent": "RightUpperArm"
+        },
+        {
+          "name": "RightHand",
+          "head": [
+            1.18,
+            2.2,
+            0
+          ],
+          "tail": [
+            1.18,
+            1.9,
+            0
+          ],
+          "parent": "RightLowerArm"
+        },
+        {
+          "name": "RightUpperLeg",
+          "head": [
+            0.48,
+            2.15,
+            0
+          ],
+          "tail": [
+            0.48,
+            1.15,
+            0
+          ],
+          "parent": "LowerTorso"
+        },
+        {
+          "name": "RightLowerLeg",
+          "head": [
+            0.48,
+            1.15,
+            0
+          ],
+          "tail": [
+            0.48,
+            0.35,
+            0
+          ],
+          "parent": "RightUpperLeg"
+        },
+        {
+          "name": "RightFoot",
+          "head": [
+            0.48,
+            0.35,
+            0
+          ],
+          "tail": [
+            0.48,
+            0.2,
+            -0.6
+          ],
+          "parent": "RightLowerLeg"
+        }
+      ],
+      "friendly": true
+    }
+  ]
+}

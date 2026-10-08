@@ -1,0 +1,67 @@
+[Guildborne] Phase 1 client ready
+GBQA PASS GetState nil revision 0 gold 0
+GBQA PASS SetLanguage OK revision 1 gold 0
+GBQA PASS SetLanguage InvalidRequest revision 1 gold 0
+GBQA PASS BeginTutorial OK revision 2 gold 0
+GBQA PASS Recruit OK revision 3 gold 0
+GBQA PASS UpdateParty InvalidParty revision 3 gold 0
+GBQA PASS UpdateParty InvalidParty revision 3 gold 0
+GBQA PASS UpdateParty OK revision 4 gold 0
+GBQA PASS UpdateParty AlreadyCommitted revision 4 gold 0
+GBQA PASS UpdateParty RequestConflict revision 4 gold 0
+GBQA PASS UpgradeGuildHall HallLocked revision 4 gold 0
+GBQA PASS StartQuest InvalidQuest revision 4 gold 0
+GBQA PASS CompleteQuest QuestNotActive revision 4 gold 0
+GBQA PASS CompleteQuest InvalidRequest revision 4 gold 0
+GBQA PASS EquipItem ItemNotOwned revision 4 gold 0
+GBQA PASS StartQuest OK revision 5 gold 0
+GBQA PASS CompleteQuest QuestTooEarly revision 5 gold 0
+GBQA PASS UpdateParty QuestActive revision 5 gold 0
+GBQA PASS CompleteQuest OK revision 6 gold 30
+GBQA PASS CompleteQuest AlreadyCommitted revision 6 gold 30
+GBQA PASS CompleteQuest QuestNotActive revision 6 gold 30
+GBQA PASS EquipItem OK revision 7 gold 30
+GBQA PASS Recruit OK revision 8 gold 10
+GBQA PASS EquipItem IncompatibleWeapon revision 8 gold 10
+GBQA PASS StartQuest OK revision 9 gold 10
+GBQA PASS CompleteQuest QuestTooEarly revision 9 gold 10
+GBQA PASS UpdateParty QuestActive revision 9 gold 10
+GBQA PASS CompleteQuest OK revision 10 gold 50
+GBQA PASS CompleteQuest AlreadyCommitted revision 10 gold 50
+GBQA PASS CompleteQuest QuestNotActive revision 10 gold 50
+GBQA PASS Recruit OK revision 11 gold 30
+GBQA PASS StartQuest OK revision 12 gold 30
+GBQA PASS CompleteQuest QuestTooEarly revision 12 gold 30
+GBQA PASS UpdateParty QuestActive revision 12 gold 30
+GBQA PASS CompleteQuest OK revision 13 gold 90
+GBQA PASS CompleteQuest AlreadyCommitted revision 13 gold 90
+GBQA PASS CompleteQuest QuestNotActive revision 13 gold 90
+GBQA PASS UpgradeGuildHall OK revision 14 gold 10
+GBQA PASS UpgradeGuildHall AlreadyCommitted revision 14 gold 10
+GBQA PASS UpgradeGuildHall HallAlreadyUpgraded revision 14 gold 10
+GBQA FINAL {"adventurers":{"a:Priest":{"equipmentSlots":[],"stats":{"Attack":4,"Defense":3,"Health":24,"WeaponBonus":0},"name":"Sage","baseStats":{"Defense":3,"Health":24,"Attack":4},"id":"a:Priest","classId":"Priest","xp":0,"level":1},"a:Archer":{"equipmentSlots":[],"stats":{"Attack":8,"Defense":2,"Health":22,"WeaponBonus":0},"name":"Ash","baseStats":{"Defense":2,"Health":22,"Attack":8},"id":"a:Archer","classId":"Archer","xp":0,"level":1},"a:Warrior":{"equipmentSlots":{"weapon":"q:1:1"},"stats":{"Attack":9,"Defense":4,"Health":33,"WeaponBonus":2},"name":"Rowan","baseStats":{"Defense":4,"Health":30,"Attack":6},"id":"a:Warrior","classId":"Warrior","xp":90,"level":2}},"party":{"adventurerIds":["a:Warrior"]},"quests":{"nextRunSequence":4,"lastResult":{"questName":"Quarry Patrol","runId":"q:3","reward":{"Items":[{"Id":"iron_ore","Quantity":6},{"Id":"iron_sword","Quantity":1}],"XP":40,"Gold":60}},"claimedThrough":3,"firstClears":{"timber_escort":true,"quarry_patrol":true,"trail_watch":true}},"hallLevel":2,"gold":10,"inventory":{"equipment":{"q:3:1":{"binding":"Account","definitionId":"iron_sword","upgradeLevel":0},"recruit:Priest:1":{"binding":"Account","upgradeLevel":0,"definitionId":"apprentice_staff"},"q:1:1":{"binding":"Account","upgradeLevel":0,"definitionId":"training_sword"},"recruit:Archer:1":{"binding":"Account","upgradeLevel":0,"definitionId":"short_bow"}},"stacks":[]},"language":"th","progression":{"tutorialStep":"complete","everEquipped":true,"welcomeSeen":true,"tutorialCompleted":true,"recruitedClasses":{"Priest":true,"Archer":true,"Warrior":true}}}
+GBQA NATIVE LOOP AND REJECTION TESTS PASSED
+GBHERO PASS GetState nil 14
+GBHERO PASS StartQuest OK 15
+GBHERO PASS CompleteQuest OK 16
+GBHERO PASS StartQuest OK 17
+GBHERO PASS CompleteQuest OK 18
+GBHERO PASS StartQuest OK 19
+GBHERO PASS CompleteQuest OK 20
+GBHERO PASS Recruit OK 21
+GBHERO PASS Recruit OK 22
+GBHERO PASS EquipItem OK 23
+GBHERO PASS EquipItem OK 24
+GBHERO PASS EquipItem OK 25
+GBHERO PASS EquipItem OK 26
+GBHERO PASS EquipItem OK 27
+GBHERO PASS UpdateParty OK 28
+GBHERO PASS UpdateParty InvalidRequest 28
+GBHERO PASS UpdateParty InvalidParty 28
+GBHERO PASS StartQuest OK 29
+GBHERO PASS CompleteQuest OK 30
+GBHERO PASS UpdateParty OK 31
+GBHERO PASS UpdateParty OK 32
+GBHERO PASS SetLanguage OK 33
+GBHERO FIVE HERO LOOP PASSED {"data":{"adventurers":{"a:Priest":{"equipmentSlots":{"weapon":"recruit:Priest:1"},"stats":{"Attack":6,"Defense":3,"Health":24,"WeaponBonus":2},"name":"Sage","level":1,"id":"a:Priest","baseStats":{"Defense":3,"Health":24,"Attack":4},"xp":5,"classId":"Priest"},"a:Archer":{"equipmentSlots":{"weapon":"recruit:Archer:1"},"stats":{"Attack":10,"Defense":2,"Health":22,"WeaponBonus":2},"name":"Ash","level":1,"id":"a:Archer","baseStats":{"Defense":2,"Health":22,"Attack":8},"xp":5,"classId":"Archer"},"a:Mage":{"equipmentSlots":{"weapon":"recruit:Mage:1"},"stats":{"Attack":12,"Defense":1,"Health":20,"WeaponBonus":2},"name":"Lyra","classId":"Mage","id":"a:Mage","level":1,"xp":5,"baseStats":{"Defense":1,"Health":20,"Attack":10}},"a:Warrior":{"equipmentSlots":{"weapon":"q:3:1"},"stats":{"Attack":12,"Defense":4,"Health":36,"WeaponBonus":4},"name":"Rowan","level":3,"id":"a:Warrior","baseStats":{"Defense":4,"Health":30,"Attack":6},"xp":110,"classId":"Warrior"},"a:Knight":{"equipmentSlots":{"weapon":"recruit:Knight:1"},"stats":{"Attack":6,"Defense":7,"Health":40,"WeaponBonus":2},"name":"Bram","level":1,"id":"a:Knight","baseStats":{"Defense":7,"Health":40,"Attack":4},"xp":5,"classId":"Knight"}},"party":{"adventurerIds":["a:Knight","a:Warrior","a:Archer","a:Mage","a:Priest"]},"quests":{"nextRunSequence":8,"lastResult":{"questName":"Trail Watch","runId":"q:7","reward":{"Items":[{"Id":"timber","Quantity":1},{"Id":"herb","Quantity":1}],"XP":5,"Gold":10}},"claimedThrough":7,"firstClears":{"timber_escort":true,"quarry_patrol":true,"trail_watch":true}},"hallLevel":2,"gold":10,"inventory":{"equipment":{"recruit:Knight:1":{"binding":"Account","upgradeLevel":0,"definitionId":"knight_sword"},"recruit:Priest:1":{"binding":"Account","upgradeLevel":0,"definitionId":"apprentice_staff"},"recruit:Mage:1":{"binding":"Account","definitionId":"mage_staff","upgradeLevel":0},"q:3:1":{"binding":"Account","upgradeLevel":0,"definitionId":"iron_sword"},"q:1:1":{"binding":"Account","upgradeLevel":0,"definitionId":"training_sword"},"recruit:Archer:1":{"binding":"Account","upgradeLevel":0,"definitionId":"short_bow"}},"stacks":{"herb":4,"timber":4}},"language":"th","progression":{"tutorialStep":"complete","everEquipped":true,"welcomeSeen":true,"tutorialCompleted":true,"recruitedClasses":{"Warrior":true,"Archer":true,"Knight":true,"Priest":true,"Mage":true}}},"revision":33}
+GBHERO PASS StartQuest OK 34

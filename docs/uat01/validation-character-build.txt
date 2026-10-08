@@ -1,0 +1,55 @@
+C:\Work\MySelf\Guildborne\tools\blender_character_kit.py:16: DeprecationWarning: 'Material.use_nodes' is expected to be removed in Blender 6.0
+  m=bpy.data.materials.new(name);m.use_nodes=True
+
+FBX export starting... 'C:\\Work\\MySelf\\Guildborne\\assets\\uat01\\character-kit\\Guildborne_Sentinel_Rest.fbx'
+(bpy.data.armatures['Armature'], 'POSE')
+export finished in 0.0129 sec.
+INFO Draco is available, use library at C:\Program Files\Blender Foundation\Blender 5.2\5.2\scripts\addons_core\io_scene_gltf2\bf_intern_draco_bridge.dll
+INFO MeshOptimizer is available, use library at C:\Program Files\Blender Foundation\Blender 5.2\5.2\scripts\addons_core\io_scene_gltf2\bf_intern_meshopt_bridge.dll
+23:47:15 | INFO: Starting glTF 2.0 export
+23:47:15 | INFO: Extracting primitive: Cube
+23:47:15 | INFO: Primitives created: 6
+23:47:15 | INFO: Finished glTF 2.0 export in 0.07155370712280273 s
+00:19.578  render           | Saved: 'C:\Work\MySelf\Guildborne\assets\uat01\character-kit\preview.png'
+
+
+FBX export starting... 'C:\\Work\\MySelf\\Guildborne\\assets\\uat01\\character-kit\\GB_Idle.fbx'
+(bpy.data.armatures['Armature'], 'POSE')
+export finished in 0.0650 sec.
+
+FBX export starting... 'C:\\Work\\MySelf\\Guildborne\\assets\\uat01\\character-kit\\GB_Walk.fbx'
+(bpy.data.armatures['Armature'], 'POSE')
+export finished in 0.0484 sec.
+
+FBX export starting... 'C:\\Work\\MySelf\\Guildborne\\assets\\uat01\\character-kit\\GB_Run.fbx'
+(bpy.data.armatures['Armature'], 'POSE')
+export finished in 0.0474 sec.
+
+FBX export starting... 'C:\\Work\\MySelf\\Guildborne\\assets\\uat01\\character-kit\\GB_Slash.fbx'
+(bpy.data.armatures['Armature'], 'POSE')
+export finished in 0.0491 sec.
+
+FBX export starting... 'C:\\Work\\MySelf\\Guildborne\\assets\\uat01\\character-kit\\GB_Cast.fbx'
+(bpy.data.armatures['Armature'], 'POSE')
+export finished in 0.0566 sec.
+
+FBX export starting... 'C:\\Work\\MySelf\\Guildborne\\assets\\uat01\\character-kit\\GB_Dodge.fbx'
+(bpy.data.armatures['Armature'], 'POSE')
+export finished in 0.0566 sec.
+
+FBX export starting... 'C:\\Work\\MySelf\\Guildborne\\assets\\uat01\\character-kit\\GB_Hit.fbx'
+(bpy.data.armatures['Armature'], 'POSE')
+export finished in 0.0340 sec.
+
+FBX export starting... 'C:\\Work\\MySelf\\Guildborne\\assets\\uat01\\character-kit\\GB_Down.fbx'
+(bpy.data.armatures['Armature'], 'POSE')
+export finished in 0.0440 sec.
+
+FBX export starting... 'C:\\Work\\MySelf\\Guildborne\\assets\\uat01\\character-kit\\GB_Recover.fbx'
+(bpy.data.armatures['Armature'], 'POSE')
+export finished in 0.0497 sec.
+Info: Saved as "Guildborne_Sentinel_Animation_Kit.blend"
+CHARACTER_KIT_COMPLETE 288 triangles 16 bones 9 clips
+Blender 5.2.1 LTS (hash 9e2066aef7ef built 2026-08-25 02:38:20)
+
+Blender quit

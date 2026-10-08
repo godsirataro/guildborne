@@ -1,0 +1,18 @@
+{
+  "date": "2026-10-06",
+  "method": "Ordinary mouse and keyboard, character_navigation speed 1, read-only state observation; no gameplay remote injection or profile grants",
+  "studioId": "4ab95e05-4207-4e20-a0f6-856526922e40",
+  "lockedAttempt": {"zone":"City","revision":1,"code":"CivicRouteLocked","position":[-174.1816,3.2980,-650.3275]},
+  "earnedArrival": {"zone":"Crownford","revision":10,"gold":25,"position":[0,2.9980,-3892],"claimed":["city_gate","elian_charter"]},
+  "walking": [
+    {"destination":"Market","health":100,"position":[-57.8189,3.2980,-3971.3782]},
+    {"destination":"Forge","health":100,"position":[57.7636,3.2980,-3971.2898]},
+    {"destination":"Tavern","health":100,"position":[-57.7523,3.2980,-4027.1873]},
+    {"destination":"QuestHall","health":100,"position":[57.7729,3.2980,-4027.3174]},
+    {"destination":"Landmark","position":[0.4509,3.9980,-4069.3953]}
+  ],
+  "guildPortal": {"zone":"Guild","position":[0,3.9980,23]},
+  "geometry": {"cities":6,"pathsPerCity":7,"clearLandingsPerCity":2,"promptsPerCity":3,"allPassed":true,"readOnly":true},
+  "interruption": "Tool host closed stdout during the subsequent return/reentry/exit sequence. After reconnect no Studio instances were connected. That sequence has no verified result and is not counted.",
+  "limitations": ["Other five city unlocks only domain-tested; no actual full journeys", "Direct civic city to Central City exit acceptance pending", "Later CityNavigation safe-zone banner change source-only, not present in this run", "Memory progress is not a resumable save"]
+}
