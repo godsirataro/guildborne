@@ -1,0 +1,54 @@
+name: Guildborne agentic production checks
+
+on:
+  pull_request:
+  workflow_dispatch:
+
+permissions:
+  contents: read
+
+concurrency:
+  group: guildborne-production-${{ github.workflow }}-${{ github.ref }}
+  cancel-in-progress: true
+
+jobs:
+  production-tools:
+    runs-on: ubuntu-latest
+    timeout-minutes: 10
+    steps:
+      - uses: actions/checkout@11d5960a326750d5838078e36cf38b85af677262
+        with:
+          persist-credentials: false
+      - uses: actions/setup-python@a26af69be951a213d495a4c3e4e4022e16d87065
+        with:
+          python-version: '3.11'
+      - name: Test production tools without cloud credentials
+        run: python -m unittest discover -s tests/agentic -v
+      - name: Validate skills and task graph
+        run: python tools/agentic/forge.py validate
+      - name: Build local inventory and work packages
+        run: python tools/agentic/forge.py plan
+      - name: Generate procedural fallback previews
+        run: python tools/agentic/generate_primitives.py
+      - name: Upload local production reports and previews
+        uses: actions/upload-artifact@ea165f8d65b6e75b540449e92b4886f43607fa02
+        with:
+          name: guildborne-production-preview
+          path: build/agentic/
+          retention-days: 7
+  existing-regression:
+    runs-on: windows-latest
+    timeout-minutes: 25
+    steps:
+      - uses: actions/checkout@11d5960a326750d5838078e36cf38b85af677262
+        with:
+          persist-credentials: false
+      - uses: actions/setup-python@a26af69be951a213d495a4c3e4e4022e16d87065
+        with:
+          python-version: '3.11'
+      - name: Install existing checksum-pinned development tools
+        shell: pwsh
+        run: ./tools/setup_tools.ps1
+      - name: Run existing Luau and repository validation
+        shell: pwsh
+        run: ./tools/validate.ps1
