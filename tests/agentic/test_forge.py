@@ -1,15 +1,11 @@
 """Production-tool tests only. They do not certify gameplay, Studio or model quality."""
 from __future__ import annotations
-import copy
-import importlib.util
-import json
 from pathlib import Path
 import struct
 import sys
 import tempfile
 import unittest
 import zlib
-from unittest.mock import patch
 
 ROOT = Path(__file__).resolve().parents[2]
 sys.path.insert(0, str(ROOT / 'tools/agentic'))
@@ -167,8 +163,8 @@ class ForgeTests(unittest.TestCase):
 class ProductionTests(unittest.TestCase):
     def test_repository_skills_and_task_plan(self):
         spec=forge.read_json(ROOT/'production/plan.json')
-        self.assertEqual(len(forge.validate_plan(spec)),29)
-        self.assertEqual(forge.validate_skills(ROOT,spec),22)
+        self.assertEqual(len(forge.validate_plan(spec)),28)
+        self.assertEqual(forge.validate_skills(ROOT,spec),21)
 
     def test_normalized_original_kit(self):
         data=forge.read_json(ROOT/'production/character-kit-v1/catalog.json')
