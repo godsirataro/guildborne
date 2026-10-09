@@ -11,8 +11,10 @@ FILE_EXT = {'.luau','.lua','.py','.md','.json','.png','.webp','.svg','.jpg','.jp
             '.fbx','.gltf','.glb','.blend','.bin','.csv','.xlsx','.wav','.ogg','.mp3','.flac','.rbxmx','.rbxm'}
 ROUTES = (
     (r'guild.?war|territory|siege', 'guild-war-territory'),
-    (r'island|plot|furniture|building.?theme|build.?mode', 'guild-islands'),
-    (r'npc.?life|civic.?work|city.?host|envoy|dialogue', 'npc-life'),
+    (r'island|plot|furniture|building.?theme|build.?mode|hall[._]?themes|utility[._]?themes', 'guild-islands'),
+    (r'npc.?life|civic.?work|city.?host|envoy|dialogue|novice[.]trial[.]patient', 'npc-life'),
+    (r'novice[.]trial[.]sentinel', 'monsters'),
+    (r'novice[.]trial[.]', 'city-zones'),
     (r'brand|logo|crest|monogram', 'brand-art'),
     (r'audio|music|sound|sfx', 'audio'),
     (r'vfx|effect|particle|trail|telegraph', 'vfx'),
@@ -37,9 +39,14 @@ def source_paths(value):
     elif isinstance(value, list):
         for child in value:
             yield from source_paths(child)
-    elif isinstance(value, str) and ('/' in value or '\\' in value) and '://' not in value:
-        if Path(value).suffix.lower() in FILE_EXT:
-            yield value
+    elif isinstance(value, str):
+        # The checked-in legacy registry uses semicolon-separated source lists.
+        # Preserve the registry itself; only normalize its reference representation.
+        for token in value.split(';'):
+            token = token.strip()
+            if ('/' in token or '\\' in token) and '://' not in token:
+                if Path(token).suffix.lower() in FILE_EXT or token.endswith('/'):
+                    yield token
 
 
 def row_id(row, kind):
@@ -70,11 +77,18 @@ def reconcile(root: Path, registry: dict, kit: dict, plan: dict, aliases: dict):
             if identity.casefold() in seen:
                 raise ValueError(f'Duplicate/case-colliding registry identity: {identity}')
             seen.add(identity.casefold())
-            files = []
+            files, directories = [], []
             for rel in sorted(set(source_paths(row.get('source', {}))) | set(source_paths(row.get('productionBinding', {}))) | set(source_paths(row.get('implementationCandidate', {})))):
-                path = inside(root, rel)
+                directory_reference = rel.endswith('/')
+                path = inside(root, rel[:-1] if directory_reference else rel)
                 if path.is_symlink():
                     raise ValueError(f'Symlink is not accepted as a source: {rel}')
+                if directory_reference:
+                    if path.is_dir():
+                        directories.append({'path': rel[:-1], 'verifiedHere': 'DIRECTORY_EXISTS_ONLY'})
+                    else:
+                        missing.append({'id': identity, 'path': rel, 'kind': 'directory'})
+                    continue
                 if not path.is_file():
                     missing.append({'id': identity, 'path': rel})
                     continue
@@ -91,8 +105,8 @@ def reconcile(root: Path, registry: dict, kit: dict, plan: dict, aliases: dict):
                 'robloxAssetId': row.get('robloxAssetId'), 'productionBinding': row.get('productionBinding'),
                 'implementationCandidate': row.get('implementationCandidate'),
                 'requiredBehavior': row.get('requiredBehavior'), 'requiredStates': row.get('requiredStates'),
-                'files': files, 'workPackage': target,
-                'action': 'REVIEW_EXISTING_BEFORE_GENERATION' if files else 'RESOLVE_SOURCE_OR_NATIVE_BINDING',
+                'files': files, 'directories': directories, 'workPackage': target,
+                'action': 'REVIEW_EXISTING_BEFORE_GENERATION' if files or directories else 'RESOLVE_SOURCE_OR_NATIVE_BINDING',
                 'provenance': row.get('provenance'), 'licenseReview': 'REQUIRED_UNLESS_VERIFIED_SEPARATELY',
                 'verifiedHere': 'FILE_BYTES_ONLY', 'uatApprovedByReconciliation': False})
     kit_ids = set()
@@ -115,7 +129,7 @@ def reconcile(root: Path, registry: dict, kit: dict, plan: dict, aliases: dict):
         'sharedContentCandidates': [v for v in shared.values() if len(v) > 1],
         'routingReviewRequired': [x['id'] for x in entries if x['workPackage'] == 'audit'],
         'tasks': dict(Counter(x['workPackage'] for x in entries)),
-        'warning': 'Native GUI/parts may legitimately have no upload ID. Shared source bytes do not prove interchangeable assets. No status or runtime record was changed.'}
+        'warning': 'Legacy semicolon lists are parsed read-only; directories are existence-checked, not recursively approved. Native GUI/parts may legitimately have no upload ID. Shared source bytes do not prove interchangeable assets. No status or runtime record was changed.'}
 
 
 def main(argv=None):

@@ -13,12 +13,17 @@ def prepare(root: Path, report: dict, identity: str, *, allow_rework=False):
     if len(rows)!=1: raise ValueError('Select exactly one reconciled canonical identity')
     row=rows[0]
     if row['kind']=='screen': raise ValueError('Screens are native interactive UI, not baked full-screen image jobs')
-    if row['files'] and not allow_rework: raise ValueError('Existing source found: review/reuse first or explicitly approve rework')
+    if (row['files'] or row.get('directories')) and not allow_rework: raise ValueError('Existing source found: review/reuse first or explicitly approve rework')
     refs=[]
     for f in row['files']:
         p=inside(root,f['path'])
         if not p.is_file() or digest(p)!=f['sha256']:raise ValueError('Source changed since reconciliation; rerun audit')
         refs.append(f['path'])
+    directories=[]
+    for entry in row.get('directories', []):
+        path=inside(root,entry['path'])
+        if not path.is_dir():raise ValueError('Source directory changed since reconciliation; rerun audit')
+        directories.append(entry['path'])
     prompt=('Create an original Guildborne production candidate for '+row['designId']+'. '
         'Read production/ART_BIBLE.md and the routed specialist skill. '
         'Reuse the listed sources and preserve semantic identity. Do not bake dynamic text, prices, '
@@ -30,7 +35,7 @@ def prepare(root: Path, report: dict, identity: str, *, allow_rework=False):
         'Report unavailable tools rather than substitute a screenshot for a rig or interaction. '
         'No new Roblox asset IDs or UAT approval may be invented.')
     return {'schemaVersion':2,'identity':identity,'workPackage':row['workPackage'],
-        'state':'AWAITING_VERIFIED_PROVIDER','existingSources':refs,'prompt':prompt,
+        'state':'AWAITING_VERIFIED_PROVIDER','existingSources':refs,'existingSourceDirectories':directories,'prompt':prompt,
         'provider':None,'runtimeImported':False,'uatApproved':False,
         'reworkApproved':bool(allow_rework),'sourceRegistrySha256':report.get('registrySha256')}
 

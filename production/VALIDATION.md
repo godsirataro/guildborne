@@ -18,7 +18,7 @@ CI reconciliation uses the complete repository checkout.
 | Check | Actual result |
 | --- | --- |
 | Baseline production-tool suite at reviewed source |66 tests passed |
-| Merge-hardening production-tool suite |108 tests passed; zero failures/skips on Linux after portability fixes |
+| Merge-hardening production-tool suite |115 tests passed; zero failures/skips on Linux after portability/reference fixes |
 | Plan and skills |33 tasks /25 skills, valid metadata/dependencies |
 | Python source compilation |Passed for tools/agentic and tests/agentic |
 | Character contract |15 names /13 presets /20 palettes; aliases and untested fit matrix generated |
@@ -78,3 +78,19 @@ Four additional regressions exercise relative-root recording, worker checkpoints
 preview manifests and invalid source-reference rejection. All108 tests then passed
 on Linux. The Windows rerun is a required current-head merge check, not assumed
 passed by this authoring-time record.
+
+## Legacy registry reference correction
+
+CI run37903820449 passed all three jobs (Ubuntu/Windows production tools and
+existing game regression plus12 progression checks). The exported source archive
+was compared byte-for-byte with all23 local changed/new files: no mismatches.
+Inspecting its full-checkout reconciliation then found153 false missing-file
+references: each was a legacy semicolon-separated list treated as a single path.
+
+The reconciler now splits that existing representation without rewriting the
+registry. It hashes individual file references and records directories as
+DIRECTORY_EXISTS_ONLY, not recursively validated art. Existing directories block
+unapproved image regeneration. Seven additional tests cover lists, directories,
+missing members, stale directories, traversal, deduplication and theme/trial
+routing; the resulting local suite passed115 tests. The new revision still
+requires fresh green CI; this historical run is not approval of later commits.
