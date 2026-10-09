@@ -67,6 +67,7 @@ def panel(size=256):
 
 
 def generate(root: Path, size=128):
+    root = root.resolve()
     out=inside(root,'build/agentic/generated/primitives')
     out.mkdir(parents=True,exist_ok=True)
     records=[]

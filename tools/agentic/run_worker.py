@@ -65,6 +65,9 @@ def changed_outside(paths, scopes):
 
 def run(root: Path, task_id: str, executable: str, ledger_path: Path, *, attempts=1, timeout=900,
         authorized=False, invoke=run_process, resume_run=None, confirmed_stopped=False):
+    # A Windows temp root may use RUNNER~1 while inside() resolves the long name.
+    root = root.resolve()
+    ledger_path = ledger_path.resolve()
     if not authorized:
         raise ValueError('Model use needs explicit --authorize-model-run; may consume quota/cost')
     if type(attempts) is not int or not 1 <= attempts <= 3 or type(timeout) is not int or not 10 <= timeout <= 1800:
@@ -121,10 +124,10 @@ def run(root: Path, task_id: str, executable: str, ledger_path: Path, *, attempt
             except (OSError, ValueError, TimeoutError, subprocess.SubprocessError, KeyboardInterrupt) as exc:
                 record['status'] = 'INTERRUPTED_REQUIRES_REVIEW'; record['error'] = str(exc)
                 # Count even interrupted attempts so resume never overwrites prior logs.
-                record['attempts'].append({'status':'INTERRUPTED','path':str(step.relative_to(root))})
+                record['attempts'].append({'status':'INTERRUPTED','path':step.relative_to(root).as_posix()})
                 save_json(out/'run.json',record)
                 raise
-            record['attempts'].append({**result,'path':str(step.relative_to(root))})
+            record['attempts'].append({**result,'path':step.relative_to(root).as_posix()})
             try:
                 if git_evidence.head(root) != base:
                     record['status'] = 'BLOCKED_HEAD_CHANGED'; break

@@ -13,6 +13,8 @@ from run_worker import run_process
 
 
 def record(root: Path, argv: list[str], *, timeout=300, approved=False):
+    # Normalize relative and Windows 8.3 roots before inside()/relative_to().
+    root = root.resolve()
     if not approved or not argv or not all(isinstance(x, str) and x and '\0' not in x for x in argv):
         raise ValueError('An explicitly reviewed argv array is required')
     if type(timeout) is not int or not 1 <= timeout <= 1800:

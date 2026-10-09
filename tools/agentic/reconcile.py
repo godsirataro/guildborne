@@ -37,7 +37,7 @@ def source_paths(value):
     elif isinstance(value, list):
         for child in value:
             yield from source_paths(child)
-    elif isinstance(value, str) and '/' in value and '://' not in value:
+    elif isinstance(value, str) and ('/' in value or '\\' in value) and '://' not in value:
         if Path(value).suffix.lower() in FILE_EXT:
             yield value
 

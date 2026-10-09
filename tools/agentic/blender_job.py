@@ -17,6 +17,7 @@ def command(executable: str, source: Path, script: Path, collection: str, report
 
 
 def audit(root: Path, executable: str, relative: str, expected_sha: str, collection: str, *, approved=False, invoke=run_process):
+    root = root.resolve()
     if not approved:raise ValueError('Review .blend and script before --approve-local-blender')
     source=inside(root,relative);script=root/'tools/agentic/blender_audit.py'
     if source.suffix.lower()!='.blend' or not source.is_file() or digest(source)!=expected_sha:

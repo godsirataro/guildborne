@@ -18,7 +18,7 @@ CI reconciliation uses the complete repository checkout.
 | Check | Actual result |
 | --- | --- |
 | Baseline production-tool suite at reviewed source |66 tests passed |
-| Merge-hardening production-tool suite |104 tests passed; zero failures/skips on Linux |
+| Merge-hardening production-tool suite |108 tests passed; zero failures/skips on Linux after portability fixes |
 | Plan and skills |33 tasks /25 skills, valid metadata/dependencies |
 | Python source compilation |Passed for tools/agentic and tests/agentic |
 | Character contract |15 names /13 presets /20 palettes; aliases and untested fit matrix generated |
@@ -40,9 +40,9 @@ The image decoder proves normalized pixels and alpha, not final visual quality.
 
 CI now runs the production-tool suite on Ubuntu AND Windows. The original pinned
 Windows game validation remains unchanged, supplemented by12 latest-progression
-checks (previous6 plus6 compatibility checks). Local Luau execution was unavailable;
-consult the current PR CI run for the executed Luau/type/build result and actual
-count rather than promoting this pending authoring-time statement to PASS.
+checks (previous6 plus6 compatibility checks). Local Luau execution was unavailable. CI run37902783515 on the previous
+merge-hardening head passed the original game validation and all12 targeted
+progression checks; final verification must still use the current PR revision.
 
 Additional progression checks cover already-earned Class2 at30 remaining valid;
 new heroes starting at10 independent of Hall/leader; hero-only respec isolation;
@@ -61,3 +61,20 @@ See MERGE_READINESS.md for the implemented merge scope and the distinct pending
 provider/Studio/Blender/hardware/cross-server/human game-acceptance gates. The
 normalized Character Kit contract is self-contained; the exact original ZIP/XLSX
 intake still requires the supplied archive. Final models/art are not in this PR.
+
+## Windows portability failure found and corrected
+
+The first expanded matrix run37902783515 passed Ubuntu104 tests and the Windows
+game checks, but the Windows Python job reported20 errors and1 failed assertion.
+Most errors came from comparing a resolved long root to its Windows8.3 spelling
+(`RUNNER~1`) with Path.relative_to. One fixture incorrectly emitted backslash paths
+in a registry whose contract requires POSIX paths. The failure was not skipped.
+
+Recorder, worker, preview generator and Blender audit APIs now normalize their
+root before constructing child paths. Attempt records use portable POSIX paths.
+The fixture emits the same canonical paths used by the real registry; malformed
+backslash references now fail explicitly rather than disappear from the audit.
+Four additional regressions exercise relative-root recording, worker checkpoints,
+preview manifests and invalid source-reference rejection. All108 tests then passed
+on Linux. The Windows rerun is a required current-head merge check, not assumed
+passed by this authoring-time record.

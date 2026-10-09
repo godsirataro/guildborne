@@ -151,8 +151,8 @@ class ReconciliationTests(unittest.TestCase):
 
     def test_existing_sources_and_screen_candidates_are_hashed_not_regenerated(self):
         p=self.root/'src/client/UI/Test.luau';p.parent.mkdir(parents=True);p.write_text('return {}')
-        reg={'assets':[{'designId':'ui.brand.logo','group':'brand','source':{'native':str(p.relative_to(self.root))},'uatApproved':False}],
-             'screens':[{'designId':'screen.test','scope':'UAT01','implementationCandidate':str(p.relative_to(self.root))}]}
+        reg={'assets':[{'designId':'ui.brand.logo','group':'brand','source':{'native':p.relative_to(self.root).as_posix()},'uatApproved':False}],
+             'screens':[{'designId':'screen.test','scope':'UAT01','implementationCandidate':p.relative_to(self.root).as_posix()}]}
         before=copy.deepcopy(reg);r=rec.reconcile(self.root,reg,self.kit,self.plan,self.aliases)
         self.assertEqual(r['counts']['filesHashed'],1);self.assertEqual(reg,before)
         for row in r['entries'][:2]:
