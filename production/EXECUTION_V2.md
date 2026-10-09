@@ -108,7 +108,8 @@ from fabricating a log. Independent inspection remains required.
 `asset_jobs.py --identity asset:ui.brand.wordmark` prepares a canonical job.
 An existing source requires explicit --allow-rework and matching source hashes.
 It does not call a provider. Selected candidates record actual origin/tool/rights;
-PNG container/CRC inspection does not replace pixel decode or visual review.
+PNG inspection checks bounded pixel decode, scanline filters and actual alpha;
+it does not certify visual quality, checkerboard removal or rights.
 Interactive screens cannot be baked into an image job. No uploaded ID is invented.
 
 `character_contract.py` emits the complete normalized authoring contract and
@@ -128,3 +129,32 @@ Nonzero or uncertain writes, invariant failure, missing ownership, unapproved
 external action, conflicting checkout, unknown tool schema or stale references
 stop the affected task. Keep unrelated safe tasks moving. No auto-merge, Roblox
 publishing, device certification, cloud soak certification or popularity claims.
+
+## Recorded-check handoff and merge checks
+
+Record local tests only after committing source. `record_check.py` retains stdout
+and stderr byte-for-byte, including legitimate zero-byte streams, and produces a
+nonempty `invocation.json` receipt. It records failed launches, timeouts and
+interruptions as FAIL rather than losing the checkpoint. No stream is invented.
+
+`compose_evidence.py --task TASK --check CHECK_ID=RESULT_PATH ... --output
+build/agentic/evidence/NEW_FILE.json` checks one assignment per required task check,
+current Git commit/tree, unchanged source, invocation receipts and all file hashes.
+Only local tasks accept this evidence path; a shell command cannot certify physical
+touch or live Studio/cross-server behavior. The resulting packet can be submitted
+to Forge, but only independent review can accept it. Reviewer strings remain
+cooperative labels, not authenticated identities or signed attestations.
+
+MCP discovery supports 2024-11-05, 2025-03-26, 2025-06-18 and 2025-11-25. It rejects
+malformed responses/cursors/tools and calls only advertised read-only allowlisted
+tools. A protocol handshake is NOT place verification or approval to mutate it.
+Bridge shutdown targets only the process group created by the probe; containment
+of detached processes still belongs to the host.
+
+Worker postconditions now checkpoint invalid/changed plans and interruptions.
+A child write scope never authorizes modifying its parent directory. These checks
+are cooperative detection after execution, not a replacement for the Codex host
+sandbox and tool permissions.
+
+See MERGE_READINESS.md: green code CI allows a tooling merge review, not publication
+or a declaration that all requested models, screens, quests and wars are finished.

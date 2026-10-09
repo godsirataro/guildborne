@@ -43,21 +43,37 @@ def read_json(path: Path):
 
 
 def relative_path(value: str) -> PurePosixPath:
-    if not isinstance(value, str) or not value or "\\" in value or ":" in value or "\x00" in value:
+    """One canonical path spelling on Windows and POSIX; no Git internals."""
+    if (not isinstance(value, str) or not value or "\\" in value or ":" in value
+            or any(ord(c) < 32 for c in value) or value.startswith("~")):
         raise ValueError(f"Invalid project path: {value!r}")
     p = PurePosixPath(value)
-    if p.is_absolute() or ".." in p.parts or ".git" in p.parts or value.startswith("~"):
-        raise ValueError(f"Unsafe project path: {value}")
-    if p.as_posix() == ".":
-        raise ValueError("Repository-root write scope is not allowed")
+    parts = value.split("/")
+    reserved = {"con", "prn", "aux", "nul", *(f"com{i}" for i in range(1, 10)),
+                *(f"lpt{i}" for i in range(1, 10))}
+    if (p.is_absolute() or any(part in ("", ".", "..") for part in parts)
+            or any(part.casefold() == ".git" for part in parts)
+            or any(part.endswith((" ", ".")) or part.split(".")[0].casefold() in reserved for part in parts)):
+        raise ValueError(f"Unsafe or non-canonical project path: {value}")
     return p
 
 
 def inside(root: Path, value: str) -> Path:
-    p = root / relative_path(value)
-    if not p.resolve().is_relative_to(root.resolve()):
+    base = root.resolve()
+    p = base
+    for part in relative_path(value).parts:
+        p = p / part
+        if p.is_symlink():
+            raise ValueError(f"Symlink path is not permitted: {value}")
+    if not p.resolve().is_relative_to(base):
         raise ValueError(f"Path escapes repository: {value}")
     return p
+
+
+def contains_path(scope: str, path: str) -> bool:
+    """Unlike overlap, a child scope does not authorize changes to its parent."""
+    parent, child = relative_path(scope.casefold()), relative_path(path.casefold())
+    return child == parent or parent in child.parents
 
 
 def digest(path: Path) -> str:
@@ -171,6 +187,21 @@ def evidence_packet(root: Path, task, packet):
         seen.add(rel)
         if artifact.get("sha256") != digest(p):
             raise ValueError(f"Evidence hash mismatch: {rel}")
+    if "checkRuns" in packet:
+        runs = packet["checkRuns"]
+        if task["environment"] != "local" or not isinstance(runs, dict) or set(runs) != set(task["checks"]):
+            raise ValueError("Recorded check assignments differ from the local task contract")
+        import record_check
+        for proof in runs.values():
+            if not isinstance(proof, dict) or proof.get("path") not in seen:
+                raise ValueError("Each check result must be a hashed evidence artifact")
+            path = inside(root, proof["path"])
+            if digest(path) != proof.get("sha256"):
+                raise ValueError("Recorded check result changed")
+            recorded = read_json(path)
+            record_check.verify(root, recorded)
+            if any(a["path"] not in seen for a in recorded["artifacts"]):
+                raise ValueError("All check logs and receipts must accompany task evidence")
     if task["environment"] == "cross_server":
         jobs = packet.get("serverJobIds", [])
         if not isinstance(jobs, list) or any(not isinstance(j, str) or not j.strip() for j in jobs) or len(set(jobs)) < 2:

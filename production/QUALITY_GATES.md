@@ -36,3 +36,16 @@ Title -> new/returning save -> Novice/Class1 -> Hall -> Hero10 -> configure skil
 ## Popularity
 
 Test fun, first-session clarity, combat feel, content diversity and retention. No promise of downloads or revenue, fake players, misleading trailers or coercive timers. Monetization and growth require real observed player behavior and later explicit release/budget approvals.
+
+## Merge checks are not release checks
+
+For PR #1, require the Ubuntu and Windows production-tool jobs plus existing
+Windows game regression and latest-ruleset tests on the current PR revision.
+Per-check local evidence may use `compose_evidence.py`; check receipt/log hashes
+are revalidated on submit and accept. No empty-log shortcut or changed source is
+accepted by that route. Independent semantic review is still mandatory.
+
+PNG validation decodes normalized RGB/RGBA scanlines within a byte budget and
+reports actual alpha coverage. An RGBA channel alone is not transparency; neither
+pixel validity nor a generated file is human art approval. Fully invisible
+candidates cannot be submitted as visible image assets.

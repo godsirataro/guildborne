@@ -5,7 +5,7 @@ This is an existing Roblox/Luau game, not a blank template. Read the actual sour
 ## Start
 
 - Use `$guildborne-director` for end-to-end production. Specialist skills live in `.agents/skills/`.
-- Run `python tools/agentic/forge.py doctor`, `validate`, and `plan`.
+- Run `python tools/agentic/forge.py doctor`, `validate`, and `plan`. Read `production/MERGE_READINESS.md` for the distinction between merge checks and pending game/tool acceptance.
 - Read `production/LATEST_GOALS.md` and `production/EXECUTION_V2.md`; run reconciliation and character-contract checks. Read the matching section in `production/SPECIALIST_PLAYBOOK.md` before implementation.
 - Read `production/plan.json`; reconcile assigned write scopes with actual modules before claiming a task. Do not create competing services just because a suggested directory does not exist.
 - Existing source paths: `src/client`, `src/server`, `src/shared`. Existing asset workflows: `assets/uat01`, `tools/blender_*.py`, `tools/audit_*.py`, `docs/uat01/intake`.
@@ -28,3 +28,5 @@ Server owns combat, currency, inventory, class/skill/stat allocation, guild perm
 ## Evidence
 
 `PLANNED`, file-generated, Blender-validated, Roblox-imported, Studio-tested, physical-device-tested and human-approved are separate facts. Runtime IDs remain null until real import. Four clients on one Studio server are not cross-server evidence. A layout emulator is not physical touch/performance proof. Missing tool access blocks only the dependent work. No invented screenshots, test counts, provider capabilities or popular-game guarantees. Human art/UAT/release signoff remains external.
+
+Local check evidence can be recorded with `record_check.py` and composed with `compose_evidence.py`. Keep receipts and even empty raw streams unchanged. A composed packet is still REVIEW-only until a different reviewer validates it. Never promote local subprocess evidence to Studio/device/cross-server acceptance.

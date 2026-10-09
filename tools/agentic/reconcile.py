@@ -10,6 +10,9 @@ from forge import ROOT, inside, read_json, save_json, digest, validate_plan
 FILE_EXT = {'.luau','.lua','.py','.md','.json','.png','.webp','.svg','.jpg','.jpeg',
             '.fbx','.gltf','.glb','.blend','.bin','.csv','.xlsx','.wav','.ogg','.mp3','.flac','.rbxmx','.rbxm'}
 ROUTES = (
+    (r'guild.?war|territory|siege', 'guild-war-territory'),
+    (r'island|plot|furniture|building.?theme|build.?mode', 'guild-islands'),
+    (r'npc.?life|civic.?work|city.?host|envoy|dialogue', 'npc-life'),
     (r'brand|logo|crest|monogram', 'brand-art'),
     (r'audio|music|sound|sfx', 'audio'),
     (r'vfx|effect|particle|trail|telegraph', 'vfx'),

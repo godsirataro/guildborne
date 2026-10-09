@@ -11,7 +11,7 @@ import subprocess
 import sys
 import time
 import uuid
-from forge import ROOT, Ledger, inside, read_json, save_json, validate_skills, overlap
+from forge import ROOT, Ledger, inside, read_json, save_json, validate_skills, contains_path
 import git_evidence
 
 
@@ -53,14 +53,14 @@ def run_process(argv, prompt: str, root: Path, out: Path, timeout: int, heartbea
 
 
 def changed_paths(root: Path):
-    tracked = git_evidence.git(root, 'diff', '--name-only', 'HEAD', '-z')
+    tracked = git_evidence.git(root, 'diff', '--no-renames', '--name-only', 'HEAD', '-z')
     untracked = git_evidence.git(root, 'ls-files', '--others', '--exclude-standard', '-z')
     return sorted(set(filter(None, (tracked + '\0' + untracked).split('\0'))))
 
 
 def changed_outside(paths, scopes):
     return [p for p in paths if not p.startswith('build/agentic/')
-            and not any(overlap(p, s) for s in scopes)]
+            and not any(contains_path(s, p) for s in scopes)]
 
 
 def run(root: Path, task_id: str, executable: str, ledger_path: Path, *, attempts=1, timeout=900,
@@ -118,18 +118,23 @@ def run(root: Path, task_id: str, executable: str, ledger_path: Path, *, attempt
             try:
                 result = invoke(command(executable, step/'last-message.txt'), packet, root, step,
                                 timeout, lambda: ledger.heartbeat(task_id, token))
-            except (OSError, ValueError, TimeoutError, subprocess.SubprocessError) as exc:
+            except (OSError, ValueError, TimeoutError, subprocess.SubprocessError, KeyboardInterrupt) as exc:
                 record['status'] = 'INTERRUPTED_REQUIRES_REVIEW'; record['error'] = str(exc)
                 # Count even interrupted attempts so resume never overwrites prior logs.
                 record['attempts'].append({'status':'INTERRUPTED','path':str(step.relative_to(root))})
                 save_json(out/'run.json',record)
                 raise
             record['attempts'].append({**result,'path':str(step.relative_to(root))})
-            if git_evidence.head(root) != base:
-                record['status'] = 'BLOCKED_HEAD_CHANGED'; break
-            violations = changed_outside(changed_paths(root), task['writeScopes'])
-            if violations:
-                record['status'] = 'BLOCKED_SCOPE_VIOLATION'; record['outOfScope'] = violations; break
+            try:
+                if git_evidence.head(root) != base:
+                    record['status'] = 'BLOCKED_HEAD_CHANGED'; break
+                if git_evidence.plan_hash(read_json(root/'production/plan.json')) != record['planSha256']:
+                    record['status'] = 'BLOCKED_PLAN_CHANGED'; break
+                violations = changed_outside(changed_paths(root), task['writeScopes'])
+                if violations:
+                    record['status'] = 'BLOCKED_SCOPE_VIOLATION'; record['outOfScope'] = violations; break
+            except (OSError, ValueError, TypeError) as exc:
+                record['status'] = 'BLOCKED_POSTCHECK_FAILED'; record['error'] = str(exc); break
             if result['exitCode'] == 0:
                 record['status'] = 'REVIEW_CANDIDATE_NOT_ACCEPTED'; break
             packet += '\nPrevious attempt failed; inspect ' + str(step) + ' and fix only assigned work.\n'

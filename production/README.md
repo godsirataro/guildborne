@@ -2,6 +2,8 @@
 
 A repository-first production control plane for the existing game. **This PR adds skills, executable planning/ownership/evidence tools, original-kit intake and procedural asset generation. It does not declare all gameplay or art finished.** The planner does not call models. V2 adds separately opted-in Codex execution, MCP discovery and Blender audit adapters; no automatic publishing or purchases. See [current execution](EXECUTION_V2.md) and [latest goals](LATEST_GOALS.md).
 
+See [merge readiness and outstanding game gates](MERGE_READINESS.md) before interpreting CI success.
+
 ## Quick start
 
 From the repository root, Python 3.11+:
@@ -85,3 +87,21 @@ The dedicated commerce-processing specialist is not included: its GitHub write r
 ## CI and release
 
 CI validates this package separately from the game's existing Windows Luau/build checks; it has no publish stage and no write permission. Physical Android/iOS, true independent live servers, sustained cloud soak, final artistic review and human UAT remain gates. No claim that the package guarantees popularity or production readiness.
+
+## Merge-hardening follow-up
+
+The tools now reject Windows path aliases and symlink parents, record quiet/failed
+checks without losing their execution receipts, compose per-check evidence, validate
+PNG pixels/filters/alpha (not only chunk CRC), and negotiate the stable MCP
+2025-11-25 protocol as well as earlier supported revisions. CI exercises production
+tooling on both Ubuntu and Windows; the existing Luau/build job remains separate.
+
+For a local task, record each approved check on committed clean source, then:
+
+```sh
+python tools/agentic/compose_evidence.py --task audit --check inventory=build/agentic/checks/ACTUAL_RUN_1/result.json --check baseline=build/agentic/checks/ACTUAL_RUN_2/result.json --check conflicts=build/agentic/checks/ACTUAL_RUN_3/result.json --output build/agentic/evidence/audit.json
+```
+
+Replace ACTUAL_RUN paths with real recorder outputs. Check assignments explicitly
+state which command checks which requirement; an independent reviewer must verify
+that semantic match. The composer does not run an agent or accept the task.

@@ -53,3 +53,12 @@ recruitment already implemented behind preview gates. The source audit now
 consumes the full registry rather than treating the old323/271 counts as current.
 A ruleset-aware Class2 level check fixes the observed Novice readiness mismatch;
 legacy paths and default preview flags are not destructively rewritten.
+
+## Merge-hardening verification — 2026-10-09
+
+- OpenAI, [Codex non-interactive mode](https://developers.openai.com/codex/noninteractive/): `codex exec`, stdin prompts, JSON events and workspace-write; checked against the official page. No paid model invoked by CI.
+- Roblox, [Studio MCP](https://create.roblox.com/docs/studio/mcp): official stdio bridge and explicit Studio instance discovery. This PR tests a labeled protocol fixture, not a user's running Studio.
+- MCP maintainers, [2025-11-25 transports](https://github.com/modelcontextprotocol/modelcontextprotocol/blob/main/docs/specification/2025-11-25/basic/transports.mdx): newline-delimited stdio messages and transport boundaries. Stable version negotiation was added; no remote bridge listener is introduced.
+
+These sources inform adapter contracts. They do not certify local provider
+availability, a Blender export, a Roblox import or physical-device acceptance.

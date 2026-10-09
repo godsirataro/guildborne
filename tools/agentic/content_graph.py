@@ -5,11 +5,14 @@ from __future__ import annotations
 def validate(nodes: list[dict], *, kind: str = 'quest') -> dict:
     if kind not in ('quest', 'skill') or not isinstance(nodes, list) or len(nodes) > 512:
         raise ValueError('Expected quest or skill node list')
-    by_id = {}
+    by_id, receipt_keys = {}, set()
     for n in nodes:
         if not isinstance(n, dict) or not isinstance(n.get('id'), str) or not n['id'] or n['id'] in by_id:
             raise ValueError('Missing or duplicate node ID')
         by_id[n['id']] = n
+        for flag in ('main','requiresPayment','requiresPlayerGuild','requiresMarket','requiresRandomHero'):
+            if flag in n and type(n[flag]) is not bool:
+                raise ValueError(f'{flag} must be a boolean')
         for f in ('level', 'hall'):
             v = n.get(f, 1 if f == 'level' else 0)
             limit = 100 if f == 'level' else 20
@@ -19,8 +22,11 @@ def validate(nodes: list[dict], *, kind: str = 'quest') -> dict:
             raise ValueError('requires must be a list')
         if n.get('main', False) and any(n.get(x, False) for x in ('requiresPayment','requiresPlayerGuild','requiresMarket','requiresRandomHero')):
             raise ValueError('Main progression depends on payment/guild/market/random recruitment')
-        if kind == 'quest' and n.get('reward') and not n.get('rewardReceiptKey'):
-            raise ValueError('Reward needs stable server receipt key')
+        if kind == 'quest' and n.get('reward'):
+            key = n.get('rewardReceiptKey')
+            if not isinstance(key, str) or not key.strip() or key in receipt_keys:
+                raise ValueError('Reward needs a unique stable server receipt key')
+            receipt_keys.add(key)
         if kind == 'skill' and (type(n.get('cost')) is not int or n['cost'] < 0):
             raise ValueError('Invalid skill cost')
     seen, active, ordered = set(), set(), []
