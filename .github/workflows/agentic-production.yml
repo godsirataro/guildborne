@@ -30,6 +30,11 @@ jobs:
         run: python tools/agentic/forge.py plan
       - name: Generate procedural fallback previews
         run: python tools/agentic/generate_primitives.py
+      - name: Package exact tracked source for reproducible offline review
+        run: |
+          git rev-parse HEAD > build/agentic/review-commit.txt
+          git archive --format=zip --output=build/agentic/review-source.zip HEAD src tests tools docs production .agents AGENTS.md README.md default.project.json rokit.toml .gitignore
+          sha256sum build/agentic/review-source.zip > build/agentic/review-source.sha256
       - name: Upload local production reports and previews
         uses: actions/upload-artifact@ea165f8d65b6e75b540449e92b4886f43607fa02
         with:
