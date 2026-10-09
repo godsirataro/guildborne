@@ -2,6 +2,7 @@
 from __future__ import annotations
 from pathlib import Path
 import struct
+import subprocess
 import sys
 import tempfile
 import unittest
@@ -28,18 +29,28 @@ class ForgeTests(unittest.TestCase):
         self.tmp = tempfile.TemporaryDirectory()
         self.addCleanup(self.tmp.cleanup)
         self.root = Path(self.tmp.name)
+        subprocess.run(["git", "init", "-q", str(self.root)], check=True)
+        (self.root/".gitignore").write_text("build/\n")
+        subprocess.run(["git", "-C", str(self.root), "add", ".gitignore"], check=True)
+        subprocess.run(["git", "-C", str(self.root), "-c", "user.name=Fixture", "-c", "user.email=fixture@example.invalid", "commit", "-qm", "synthetic fixture"], check=True)
+        self.sha = forge.git_evidence.head(self.root)
 
     def ledger(self, spec=None):
-        value = forge.Ledger(self.root / 'ledger.sqlite3', self.root, spec or plan())
+        self.active_plan = spec or plan()
+        value = forge.Ledger(self.root / 'build/agentic/ledger.sqlite3', self.root, spec or plan())
         self.addCleanup(value.close)
         return value
 
     def packet(self, spec=None):
         spec = spec or task()
-        f = self.root / 'evidence.txt'
+        f = self.root / 'build/agentic/evidence.txt'
+        f.parent.mkdir(parents=True, exist_ok=True)
         f.write_text('Synthetic test fixture, NOT real Studio evidence.\n')
-        return dict(taskId=spec['id'], environment=spec['environment'], buildCommit='a'*40,
-                    checks={'review':'PASS'}, artifacts=[{'path':'evidence.txt','sha256':forge.digest(f)}])
+        return dict(taskId=spec['id'], environment=spec['environment'], buildCommit=self.sha,
+                    sourceTree=forge.git_evidence.validate_commit(self.root,self.sha),
+                    planSha256=forge.git_evidence.plan_hash(getattr(self,'active_plan',plan())),
+                    invocation={'tool':'fixture','runId':'fixture-1','exitCode':0,'buildCommit':self.sha,'logs':['build/agentic/evidence.txt']},
+                    checks={'review':'PASS'}, artifacts=[{'path':'build/agentic/evidence.txt','sha256':forge.digest(f)}])
 
     def test_json_rejects_duplicate_and_nonfinite(self):
         f=self.root/'a.json'
@@ -119,13 +130,13 @@ class ForgeTests(unittest.TestCase):
 
     def test_tampering_after_submission_rejected(self):
         l=self.ledger();token=l.claim('a','writer');l.submit('a',token,self.packet())
-        (self.root/'evidence.txt').write_text('Modified evidence')
+        (self.root/'build/agentic/evidence.txt').write_text('Modified evidence')
         with self.assertRaises(ValueError): l.accept('a','reviewer')
 
     def test_plan_change_requires_new_ledger(self):
         l=self.ledger()
         changed=plan();changed['tasks'][0]['brief']='different'
-        with self.assertRaises(ValueError): forge.Ledger(self.root/'ledger.sqlite3',self.root,changed)
+        with self.assertRaises(ValueError): forge.Ledger(self.root/'build/agentic/ledger.sqlite3',self.root,changed)
 
     def test_failed_missing_or_placeholder_evidence_rejected(self):
         for field,value in [('checks',{'review':'PENDING'}),('artifacts',[]),('buildCommit','0'*40),('environment','studio')]:
@@ -145,7 +156,7 @@ class ForgeTests(unittest.TestCase):
         p['deviceModel']='Synthetic fixture';forge.evidence_packet(self.root,spec,p)
 
     def test_competing_connections_serialize_claim(self):
-        spec=plan();a=self.ledger(spec);b=forge.Ledger(self.root/'ledger.sqlite3',self.root,spec);self.addCleanup(b.close)
+        spec=plan();a=self.ledger(spec);b=forge.Ledger(self.root/'build/agentic/ledger.sqlite3',self.root,spec);self.addCleanup(b.close)
         a.claim('a','first')
         with self.assertRaises(ValueError): b.claim('a','second')
 
@@ -163,8 +174,8 @@ class ForgeTests(unittest.TestCase):
 class ProductionTests(unittest.TestCase):
     def test_repository_skills_and_task_plan(self):
         spec=forge.read_json(ROOT/'production/plan.json')
-        self.assertEqual(len(forge.validate_plan(spec)),28)
-        self.assertEqual(forge.validate_skills(ROOT,spec),21)
+        self.assertEqual(len(forge.validate_plan(spec)),33)
+        self.assertEqual(forge.validate_skills(ROOT,spec),25)
 
     def test_normalized_original_kit(self):
         data=forge.read_json(ROOT/'production/character-kit-v1/catalog.json')

@@ -11,7 +11,7 @@
 7. **Human**: art direction, feel, usability and UAT acceptance.
 8. **Release**: explicit authorized owner decision. Never automated by this package.
 
-A workflow must report PASS/FAIL/PENDING/BLOCKED per layer, not a single misleading DONE. Forge validates evidence shape/hashes; the reviewer validates truth and whether the tested commit matches the intended code. Reviewer strings are not identity authentication. Logs themselves can be misleading; retain scenario, environment, timestamp, input seed, build, expected/actual values and underlying files.
+A workflow must report PASS/FAIL/PENDING/BLOCKED per layer, not a single misleading DONE. Forge v2 validates real commit/tree identity, clean tracked source, current plan fingerprint, successful recorded invocation and artifact hashes; the reviewer validates truth and whether the tested commit matches the intended code. Reviewer strings are not identity authentication. Logs themselves can be misleading; retain scenario, environment, timestamp, input seed, build, expected/actual values and underlying files.
 
 ## Core invariants
 

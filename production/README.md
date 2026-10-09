@@ -1,6 +1,6 @@
 # Guildborne Agentic Production Forge
 
-A repository-first production control plane for the existing game. **This PR adds skills, executable planning/ownership/evidence tools, original-kit intake and procedural asset generation. It does not declare all gameplay or art finished.** It does not call a model, launch Studio/Blender, publish, or purchase anything by itself.
+A repository-first production control plane for the existing game. **This PR adds skills, executable planning/ownership/evidence tools, original-kit intake and procedural asset generation. It does not declare all gameplay or art finished.** The planner does not call models. V2 adds separately opted-in Codex execution, MCP discovery and Blender audit adapters; no automatic publishing or purchases. See [current execution](EXECUTION_V2.md) and [latest goals](LATEST_GOALS.md).
 
 ## Quick start
 
@@ -10,11 +10,13 @@ From the repository root, Python 3.11+:
 python tools/agentic/forge.py doctor
 python tools/agentic/forge.py validate
 python tools/agentic/forge.py plan
+python tools/agentic/reconcile.py
+python tools/agentic/character_contract.py
 python -m unittest discover -s tests/agentic -p "test_*.py" -v
 python tools/agentic/generate_primitives.py
 ```
 
-In Codex, invoke `$guildborne-director`. It discovers the 21 specialist skills and follows 28 dependency-ordered work packages. Tasks cover source audit, research, modular bodies/clothes, UI/logo/icon production, player/companion combat, animation, VFX, maps/zones/building, monsters/bosses, quests/story/hero bonds, skills/stats/progression, inventory/crafting, markets, player guilds, existing shop presentation, audio, EN/TH, performance, UAT and ethical growth.
+In Codex, invoke `$guildborne-director`. It discovers the 25 specialist skills and follows 33 dependency-ordered work packages. Tasks cover source audit, research, modular bodies/clothes, UI/logo/icon production, player/companion combat, animation, VFX, maps/zones/building, monsters/bosses, quests/story/hero bonds, skills/stats/progression, inventory/crafting, markets, player guilds, existing shop presentation, audio, EN/TH, performance, UAT and ethical growth.
 
 This is an **agent-directed pipeline**, not an unattended script that secretly starts paid models. The local agent uses its genuinely connected image/Studio/Blender/audio tools. The Python planner emits prompts and tracks work; it does not impersonate those tools.
 
@@ -37,11 +39,11 @@ Run current regression, then deliver Human Standard + Heavy + removable tunic/tr
 python tools/agentic/forge.py status
 python tools/agentic/forge.py claim --task audit --owner director-worker
 python tools/agentic/forge.py heartbeat --task audit --token ACTUAL_RETURNED_TOKEN
-python tools/agentic/forge.py submit --task audit --token ACTUAL_RETURNED_TOKEN --evidence production/audit/evidence.json
+python tools/agentic/forge.py submit --task audit --token ACTUAL_RETURNED_TOKEN --evidence build/agentic/evidence/audit.json
 python tools/agentic/forge.py accept --task audit --owner independent-reviewer
 ```
 
-`submit` checks task/environment, required PASS checks, build-commit format and real artifact hashes, then moves the task to REVIEW. A different reviewer must inspect truth and accept. Names in the ledger are **not authenticated identities**; this is cooperative coordination, not access control. File existence/hash is necessary but cannot prove a test was genuinely executed.
+`submit` checks task/environment, required PASS checks, real local Git commit/tree identity, clean source, plan fingerprint, recorded invocation and artifact hashes, then moves the task to REVIEW. A different reviewer must inspect truth and accept. Names in the ledger are **not authenticated identities**; this is cooperative coordination, not access control. File existence/hash is necessary but cannot prove a test was genuinely executed.
 
 Dependencies advance only after ACCEPTED. Active and REVIEW write scopes block overlapping writers. Expired leases are not automatically stolen because an old Studio worker may still be running. Confirm the old process/session stopped, then use `release` with its token. For worktrees always supply one shared absolute `--ledger` path controlled by the integrator.
 
@@ -52,8 +54,11 @@ Evidence JSON shape (replace values with observed data; this example is not evid
   "taskId": "audit",
   "environment": "local",
   "buildCommit": "0000000000000000000000000000000000000000",
+  "sourceTree": "REPLACE_WITH_ACTUAL_TREE_SHA",
+  "planSha256": "REPLACE_WITH_CURRENT_PLAN_HASH",
+  "invocation": {"tool":"ACTUAL_TOOL", "runId":"ACTUAL_RUN_ID", "exitCode":0, "buildCommit":"REPLACE_WITH_SAME_BUILD", "logs":["build/agentic/evidence/actual-log.txt"]},
   "checks": {"inventory":"PASS", "baseline":"PASS", "conflicts":"PASS"},
-  "artifacts": [{"path":"production/audit/actual-log.txt", "sha256":"REPLACE_WITH_ACTUAL_FILE_SHA256"}]
+  "artifacts": [{"path":"build/agentic/evidence/actual-log.txt", "sha256":"REPLACE_WITH_ACTUAL_FILE_SHA256"}]
 }
 ```
 

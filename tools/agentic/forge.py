@@ -13,6 +13,9 @@ import sqlite3
 import tempfile
 import time
 import uuid
+import sys
+sys.path.insert(0, str(Path(__file__).resolve().parent))
+import git_evidence
 
 SLUG = re.compile(r"^[a-z0-9]+(?:-[a-z0-9]+)*$")
 ROOT = Path(__file__).resolve().parents[2]
@@ -146,7 +149,7 @@ def validate_skills(root: Path, plan):
 
 
 def evidence_packet(root: Path, task, packet):
-    """Validate recorded evidence, not its truth. Independent review is still required."""
+    """Validate commit/tree identity and recorded evidence; independent review remains required."""
     if packet.get("taskId") != task["id"] or packet.get("environment") != task["environment"]:
         raise ValueError("Evidence task/environment mismatch")
     if not re.fullmatch(r"[0-9a-f]{40}", packet.get("buildCommit", "")) or packet.get("buildCommit") == "0" * 40:
@@ -155,6 +158,7 @@ def evidence_packet(root: Path, task, packet):
         raise ValueError("Every required check must be explicitly reported")
     if any(value != "PASS" for value in packet["checks"].values()):
         raise ValueError("Non-passing checks cannot be submitted as complete")
+    git_evidence.validate_identity(root, packet)
     artifacts = packet.get("artifacts")
     if not isinstance(artifacts, list) or not artifacts:
         raise ValueError("Evidence artifacts are required")
@@ -181,6 +185,7 @@ class Ledger:
     def __init__(self, database: Path, root: Path, plan):
         self.root = root
         self.tasks = validate_plan(plan)
+        self.plan_hash = git_evidence.plan_hash(plan)
         database.parent.mkdir(parents=True, exist_ok=True)
         self.db = sqlite3.connect(database, timeout=10, isolation_level=None)
         self.db.row_factory = sqlite3.Row
@@ -260,6 +265,8 @@ class Ledger:
             raise
 
     def submit(self, key, token, packet):
+        if packet.get("planSha256") != self.plan_hash:
+            raise ValueError("Evidence plan fingerprint mismatch")
         evidence_packet(self.root, self.tasks[key], packet)
         self.db.execute("BEGIN IMMEDIATE")
         try:
@@ -290,9 +297,9 @@ class Ledger:
             raise ValueError("Cannot release another owner's task")
 
 
-def inventory(root: Path):
+def inventory(root: Path, *, hash_files: bool = False):
     entries = []
-    suffixes = {".luau", ".py", ".ps1", ".md", ".json", ".toml", ".blend", ".fbx", ".glb", ".png", ".wav", ".ogg"}
+    suffixes = {".luau", ".py", ".ps1", ".md", ".json", ".toml", ".blend", ".fbx", ".glb", ".png", ".wav", ".ogg", ".svg", ".gltf", ".bin", ".csv", ".xlsx", ".webp", ".jpg", ".jpeg", ".flac", ".mp3", ".rbxm", ".rbxmx", ".lua", ".yml", ".yaml"}
     for folder in ("src", "tests", "tools", "assets", "docs/uat01", "review"):
         for path in sorted((root / folder).rglob("*")):
             if path.is_symlink() or not path.is_file() or path.suffix.lower() not in suffixes:
@@ -300,8 +307,11 @@ def inventory(root: Path):
             if any(part in ("__pycache__", ".git", "node_modules", ".venv") for part in path.parts):
                 continue
             inside(root, path.relative_to(root).as_posix())
-            entries.append({"path": path.relative_to(root).as_posix(), "bytes": path.stat().st_size})
-    return {"schemaVersion": 1, "inspection": "filesystem-metadata-not-runtime-verification", "files": entries}
+            entry = {"path": path.relative_to(root).as_posix(), "bytes": path.stat().st_size}
+            if hash_files:
+                entry["sha256"] = digest(path)
+            entries.append(entry)
+    return {"schemaVersion": 1, "inspection": "filesystem-hashes-not-runtime-verification" if hash_files else "filesystem-metadata-not-runtime-verification", "files": entries}
 
 
 def main(argv=None):
@@ -322,11 +332,11 @@ def main(argv=None):
             print(json.dumps({"tasks": len(plan["tasks"]), "skills": validate_skills(root, plan), "status": "PASS", "scope": "plan-and-skill-contract-only"}))
             return 0
         if args.command == "doctor":
-            print(json.dumps({"python": os.sys.version.split()[0], "git": bool(shutil.which("git")), "blenderBinary": bool(shutil.which("blender")), "codexBinary": bool(shutil.which("codex")), "studioMCP": "MUST_PROBE_IN_AGENT_SESSION", "imageGeneration": "MUST_PROBE_IN_AGENT_SESSION", "publicRelease": "NOT_AUTHORIZED"}, indent=2))
+            print(json.dumps({"python": os.sys.version.split()[0], "git": bool(shutil.which("git")), "blenderBinary": bool(shutil.which("blender")), "codexBinary": bool(shutil.which("codex")), "studioMCP": "MUST_PROBE_IN_AGENT_SESSION", "imageGeneration": "MUST_PROBE_IN_AGENT_SESSION", "probeCommand": "python tools/agentic/mcp_probe.py --help", "localWorkerCommand": "python tools/agentic/run_worker.py --help", "publicRelease": "NOT_AUTHORIZED"}, indent=2))
             return 0
         if args.command == "plan":
             out = root / "build/agentic"
-            save_json(out / "inventory.json", inventory(root))
+            save_json(out / "inventory.json", inventory(root, hash_files=True))
             for task in plan["tasks"]:
                 text = "# " + task["title"] + "\n\nRead AGENTS.md and .agents/skills/" + task["skill"] + "/SKILL.md.\n\n" + task["brief"] + "\n\n" + json.dumps(task, ensure_ascii=False, indent=2) + "\n\nClaim a lease before writing. Missing tools block this task, not unrelated work. Never mark a requested artifact as already generated.\n"
                 target = inside(root, "build/agentic/prompts/" + task["id"] + ".md")

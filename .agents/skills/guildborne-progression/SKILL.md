@@ -13,3 +13,16 @@ Read production/PROGRESSION_CONTRACT.md and current configuration. Player starts
 
 ## Handoff
 Deliver changed paths, assumptions, tests actually run, evidence hashes, unresolved issues and next owner. Submit for an independent review; do not mark human UAT or public release complete.
+
+## V2 production contract
+
+Read `production/LATEST_GOALS.md`, `production/EXECUTION_V2.md` and the relevant
+rows of `build/agentic/reconciliation.json`. Reconcile current source before
+expanding scope. Use `tools/agentic/record_check.py` for actual local check logs;
+use `tools/agentic/mcp_probe.py` only for connection discovery, not playtest proof.
+Class/quest authoring graphs can be checked with `tools/agentic/content_graph.py`.
+Character production follows `production/GOLDEN_PATH_V2.md`; image work uses
+canonical jobs from `tools/agentic/asset_jobs.py`, preserving existing source hashes.
+A local-code worker can use `tools/agentic/run_worker.py` after explicit model-run
+approval. Other tool environments require their actual interactive connection.
+Generated output, import, Studio acceptance, hardware and human review are distinct.

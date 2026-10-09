@@ -31,6 +31,25 @@ Reviewed for this change: **2026-10-09**. Public docs verify capabilities, not t
 
 No third-party skill source was copied wholesale or installed. The specialist skills are project-authored instructions based on the above capabilities and Guildborne contracts. No open-source license is assigned to the user's game by this PR.
 
-## Repository audit findings
+## Repository audit findings — v1 historical
 
-The root contains no existing AGENTS.md or .agents/skills tree at the inspected commit. Existing UAT asset generators and files already cover city/region, weapon/item, character/enemy/hero and cosmetic libraries. `tools/audit_production_libraries.py` distinguishes native/source/exported art from pending rig imports, gameplay bindings and human approval; preserve this distinction. Its recorded323-test note differs from older README271-test summaries, so neither number is claimed as a newly executed baseline here. `tools/validate.ps1` is the actual regression entrypoint, with pinned tool setup. Runtime source and existing Rojo project files are intentionally unchanged by the control-plane addition.
+The root contains no existing AGENTS.md or .agents/skills tree at the inspected commit. Existing UAT asset generators and files already cover city/region, weapon/item, character/enemy/hero and cosmetic libraries. `tools/audit_production_libraries.py` distinguishes native/source/exported art from pending rig imports, gameplay bindings and human approval; preserve this distinction. Its recorded323-test note differs from older README271-test summaries, so neither number is claimed as a newly executed baseline here. `tools/validate.ps1` is the actual regression entrypoint, with pinned tool setup. Runtime source and existing Rojo project files were unchanged by the original v1 control-plane addition. V2 includes the narrow ruleset-aware progression fix described below.
+
+## V2 recheck —2026-10-09
+
+- [Codex noninteractive execution](https://developers.openai.com/codex/noninteractive/):
+  exec, JSONL output, workspace-write sandbox and output-last-message are the
+  reviewed basis of run_worker.py. It does not bypass sandbox or force a model.
+- [Official Studio MCP](https://create.roblox.com/docs/studio/mcp): local stdio,
+  list_roblox_studios and get_studio_state. Discover current input schemas rather
+  than assuming an installed server exposes every documented generation tool.
+- [MCP stdio transport](https://modelcontextprotocol.io/specification/2025-06-18/basic/transports):
+  newline-delimited JSON-RPC; stdout is protocol only. Probe rejects server requests.
+- Blender command-line manual fetch failed in this session; exact installed
+  help/flags remain an explicit workstation preflight, not a claimed local test.
+
+Code re-audit found current Novice rulesets, Hall caps, StatusPoints and Lv10
+recruitment already implemented behind preview gates. The source audit now
+consumes the full registry rather than treating the old323/271 counts as current.
+A ruleset-aware Class2 level check fixes the observed Novice readiness mismatch;
+legacy paths and default preview flags are not destructively rewritten.

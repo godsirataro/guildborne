@@ -6,6 +6,7 @@ This is an existing Roblox/Luau game, not a blank template. Read the actual sour
 
 - Use `$guildborne-director` for end-to-end production. Specialist skills live in `.agents/skills/`.
 - Run `python tools/agentic/forge.py doctor`, `validate`, and `plan`.
+- Read `production/LATEST_GOALS.md` and `production/EXECUTION_V2.md`; run reconciliation and character-contract checks. Read the matching section in `production/SPECIALIST_PLAYBOOK.md` before implementation.
 - Read `production/plan.json`; reconcile assigned write scopes with actual modules before claiming a task. Do not create competing services just because a suggested directory does not exist.
 - Existing source paths: `src/client`, `src/server`, `src/shared`. Existing asset workflows: `assets/uat01`, `tools/blender_*.py`, `tools/audit_*.py`, `docs/uat01/intake`.
 - For original game validation use `tools/setup_tools.ps1` then `tools/validate.ps1` when supported. Pipeline Python tests do not replace this baseline.
@@ -16,7 +17,7 @@ Use real subagent capabilities when available, otherwise work sequentially. One 
 
 ## Game identity and migration
 
-Guildborne is an original fantasy RPG with a player plus up to five hero companions. Native Roblox UI, not an HTML overlay. Human/Elf/Orc/Dwarf are cosmetic races; Wizard is Human appearance. Bodies, clothes, hair, beards, ears, tusks and gear are modular. Inspect `production/PROGRESSION_CONTRACT.md` for approved 10/35/70 class gates and Hall cap rules; preserve old earned progression, saves and current canonical IDs. Reconcile conflicting legacy design before code changes.
+Guildborne is an original fantasy RPG with a player plus up to five hero companions. Native Roblox UI, not an HTML overlay. The new Human/Elf/Orc/Dwarf appearance system is cosmetic; Wizard is Human appearance. Existing combat ancestry bonuses are legacy data and must not be silently removed or conflated with uppercase cosmetic IDs. Bodies, clothes, hair, beards, ears, tusks and gear are modular. Inspect `production/PROGRESSION_CONTRACT.md` for approved 10/35/70 class gates and Hall cap rules; preserve old earned progression, saves and current canonical IDs. Reconcile conflicting legacy design before code changes.
 
 ## Non-negotiable safety
 

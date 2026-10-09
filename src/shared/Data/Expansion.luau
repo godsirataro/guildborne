@@ -87,12 +87,20 @@ function E.learnProblem(build: any,level: number,id: string): string?
 	if (id=="ward" and build.skills.focus) or (id=="focus" and build.skills.ward) then return "SkillBranchConflict" end
 	return nil
 end
+function E.usesNoviceProgression(data:any):boolean
+ return data.progression~=nil and data.progression.ruleset=="guildborne.progression.2"
+end
+-- New-journey gates differ from already-shipped legacy progression. Do not rewrite saved paths.
+function E.advancementLevel(data:any,tier:number):number
+ local novice=E.usesNoviceProgression(data)
+ return if tier==1 then 10 elseif tier==2 then (if novice then 35 else 30) else 70
+end
 -- Shared read-only readiness; the server still owns spatial and transaction checks.
 function E.advanceProblem(data:any,actor:any,build:any,id:string):string?
  local path=E.Paths[id]
  if not path or path.Class~=actor.classId or path.Tier~=build.tier+1 or (path.Parent and path.Parent~=build.path) then return "InvalidClassPath" end
  local e=data.expansion
- if actor.level<path.Level or not data.quests.firstClears.quarry_patrol or e.tower.highest<path.Floor then return "AdvancementLocked" end
+ if actor.level<E.advancementLevel(data,path.Tier) or not data.quests.firstClears.quarry_patrol or e.tower.highest<path.Floor then return "AdvancementLocked" end
  if path.Prestige then
   local quarters=false;for _,building in pairs(e.buildings) do if building.kind=="quarters" then quarters=true end end
   if not quarters then return "QuartersRequired" end

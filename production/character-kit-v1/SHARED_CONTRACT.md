@@ -55,7 +55,7 @@ Exact variants are in `manifest/body_presets.json`: 4 Human, 3 Elf, 3 Orc, 3 Dwa
   "raceId": "HUMAN",
   "bodyPresetId": "HUMAN_STANDARD",
   "skinPaletteId": "SKIN_HUMAN_03",
-  "headPresetId": "HEAD_HUMAN_01",
+  "headPresetId": "CHR_HEAD_HUMAN_01",
   "hairAssetId": "ACC_HAIR_HUMAN_01",
   "hairColorId": "HAIR_DARK_BROWN",
   "beardAssetId": null,
@@ -106,3 +106,7 @@ Official Roblox docs (verify latest before import/implementation):
 - https://create.roblox.com/docs/art/accessories/layered-clothing
 - https://create.roblox.com/docs/art/accessories/clothing-specifications
 - https://create.roblox.com/docs/avatar/character-bodies/import
+
+## v2 integration clarification
+
+The sample head ID now uses the canonical catalog ID. Earlier HEAD_*_01 examples resolve only through aliases.json; aliases do not confer ownership. Cosmetic raceId remains separate from the legacy combat ancestry field; do not pass uppercase IDs straight into Expansion.Races. Existing ancestry bonuses and saved unlocks need a reviewed migration, not silent deletion.

@@ -1,5 +1,6 @@
 --!strict
 local Rules=require(game.ReplicatedStorage.Shared.Data.Expansion)
+local AdvancementCopy=require(game.ReplicatedStorage.Shared.Config.ClassAdvancementCopy)
 local SkillTree=require(script.Parent.SkillTreeView)
 local SkillAvailability=require(script.Parent.SkillAvailability)
 local ClassBadge=require(script.Parent.ClassBadge)
@@ -131,8 +132,8 @@ return function(ui: any)
 			end
 			if not catalog.StatusAllocationAvailable then button(loadout,if confirm=="reset" then "Confirm reset · 10 Gold" else "Reset skills · 10 Gold",not busy,function() if confirm=="reset" then confirm=nil;ui.act("ResetSkills",{actorId=actorId}) else confirm="reset";ui.render() end end) end
 			local advancement=card(ui.scroll,"Class advancement")
-			text(advancement,"Class 2: Lv30 + Quarry Patrol. Class 3: Lv70 + Tower floor 5. Choices are permanent.",16)
-			if catalog.StatusAllocationAvailable then text(advancement,"Advancing refunds your spent skill and attribute points. Assign them again after choosing your class.",15) end
+			text(advancement,AdvancementCopy.header(data.settings.language,Rules.advancementLevel(data,2)),16)
+			if catalog.StatusAllocationAvailable or Rules.usesNoviceProgression(data) then text(advancement,"Advancing refunds your spent skill and attribute points. Assign them again after choosing your class.",15) end
 			if not data.quests.firstClears.quarry_patrol then
 				text(advancement,"Complete and claim Trail Watch, Timber Escort, then Quarry Patrol in Quests. The mine story and borrowed trial do not replace these expeditions.",15)
 				button(advancement,"Open required expeditions",not busy,function()ui.navigate("Quests")end).Name="OpenAdvancementQuests"
@@ -143,7 +144,7 @@ return function(ui: any)
 				local art=Rules.Abilities[path.Skill]
 				text(advancement,T("Art: {name}",{name=T(art.Name)}),16)
 				text(advancement,T("Cooldown: {seconds}s · Range: {range} studs",{seconds=art.Cooldown,range=art.Range}),14)
-				text(advancement,T("Level: {current} / {required}",{current=a.level,required=path.Level}).." · "..T("Quarry Patrol")..": "..T(if data.quests.firstClears.quarry_patrol then "Complete" else "Incomplete"),14)
+				text(advancement,T("Level: {current} / {required}",{current=a.level,required=Rules.advancementLevel(data,path.Tier)}).." · "..T("Quarry Patrol")..": "..T(if data.quests.firstClears.quarry_patrol then "Complete" else "Incomplete"),14)
 				if path.Floor>0 then text(advancement,T("Tower progress: {current} / {required}",{current=e.tower.highest,required=path.Floor}),14) end
 				if path.Prestige then text(advancement,"Requires Hero Quarters. Prestige trades damage or health for a different role.",14) end
 				if path.Secret then text(advancement,"Secret clue: gather all four resources and conquer floor 10.",14) end
