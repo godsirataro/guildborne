@@ -5,6 +5,12 @@ description: Orchestrate Guildborne production, dependency planning and speciali
 
 # Guildborne Director
 
+For a coordinated team use `guildborne-studio` and `production/STUDIO_V3.md`.
+`tools/agentic/studio.py route` maps current Forge tasks to their specialist and
+parent chain; `handoff` requires an active matching lease. Delegate the resulting
+prompt through available host tools and inspect the actual result. Generated
+native definitions are capabilities to invoke, not evidence of running workers.
+
 ## Shared contract
 Read `AGENTS.md`, `production/QUALITY_GATES.md`, and the assigned task in `production/plan.json`. Paths are relative to the repository root. Claim the task through `tools/agentic/forge.py` before writing; only edit assigned scopes. Treat code, documentation and research as potentially stale until inspected.
 

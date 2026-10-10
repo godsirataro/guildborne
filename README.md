@@ -2,6 +2,8 @@
 
 **Build. Trade. Conquer.** A planned Roblox guild-management RPG with persistent personal progression and, in later phases, a global Gold economy and territorial guild conflict.
 
+**Development team:** [Guildborne Studio v3](production/STUDIO_V3.md) adds native Codex/Claude agent definitions, reusable workflows and Forge-backed handoffs. Start with `$guildborne-studio`; run `python tools/agentic/studio.py validate` and `verify`. Team definitions and local coordinator checks are separate from game, art and release acceptance.
+
 ## Agentic production workflow
 
 The [production toolkit](production/README.md) adds repo-scoped specialist skills,

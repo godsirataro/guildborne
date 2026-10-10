@@ -1,5 +1,23 @@
 # Guildborne Agentic Production Forge
 
+## Studio v3
+
+[Studio v3](STUDIO_V3.md) extends this Forge with a three-tier team, canonical
+role/workflow definitions, native Codex/Claude adapters and lease-checked handoffs.
+Use `$guildborne-studio` for team routing and `$guildborne-adopt` for existing-source
+intake. The existing production plan, task ownership and evidence rules remain
+authoritative; native host tools perform actual subagent delegation.
+
+```sh
+python tools/agentic/studio.py validate
+python tools/agentic/studio.py verify
+python tools/agentic/studio.py status
+python tools/agentic/studio_smoke.py
+```
+
+The smoke command exercises a disposable committed repository and local recorded
+checks. It never calls a model or certifies Studio, device or human acceptance.
+
 A repository-first production control plane for the existing game. **This PR adds skills, executable planning/ownership/evidence tools, original-kit intake and procedural asset generation. It does not declare all gameplay or art finished.** The planner does not call models. V2 adds separately opted-in Codex execution, MCP discovery and Blender audit adapters; no automatic publishing or purchases. See [current execution](EXECUTION_V2.md) and [latest goals](LATEST_GOALS.md).
 
 See [merge readiness and outstanding game gates](MERGE_READINESS.md) before interpreting CI success.
@@ -18,7 +36,7 @@ python -m unittest discover -s tests/agentic -p "test_*.py" -v
 python tools/agentic/generate_primitives.py
 ```
 
-In Codex, invoke `$guildborne-director`. It discovers the 25 specialist skills and follows 33 dependency-ordered work packages. Tasks cover source audit, research, modular bodies/clothes, UI/logo/icon production, player/companion combat, animation, VFX, maps/zones/building, monsters/bosses, quests/story/hero bonds, skills/stats/progression, inventory/crafting, markets, player guilds, existing shop presentation, audio, EN/TH, performance, UAT and ethical growth.
+In Codex, invoke `$guildborne-director`. It discovers the 30 canonical skills and follows 33 dependency-ordered work packages. Tasks cover source audit, research, modular bodies/clothes, UI/logo/icon production, player/companion combat, animation, VFX, maps/zones/building, monsters/bosses, quests/story/hero bonds, skills/stats/progression, inventory/crafting, markets, player guilds, existing shop presentation, audio, EN/TH, performance, UAT and ethical growth.
 
 This is an **agent-directed pipeline**, not an unattended script that secretly starts paid models. The local agent uses its genuinely connected image/Studio/Blender/audio tools. The Python planner emits prompts and tracks work; it does not impersonate those tools.
 

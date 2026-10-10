@@ -34,6 +34,12 @@ jobs:
         run: python -m compileall -q tools/agentic tests/agentic
       - name: Validate skills and task graph
         run: python tools/agentic/forge.py validate
+      - name: Validate Studio roles, workflows and native adapters
+        run: |
+          python tools/agentic/studio.py validate
+          python tools/agentic/studio.py verify
+      - name: Exercise recorded handoff and independent review in a disposable repository
+        run: python tools/agentic/studio_smoke.py
       - name: Build local inventory and work packages
         run: python tools/agentic/forge.py plan
       - name: Reconcile current UAT registry and self-contained character contract
@@ -45,7 +51,7 @@ jobs:
       - name: Package tracked code and docs for reproducible offline review
         run: |
           git rev-parse HEAD > build/agentic/review-commit.txt
-          git archive --format=zip --output=build/agentic/review-source.zip HEAD src tests tools docs production .agents .github AGENTS.md README.md default.project.json rokit.toml .gitignore .gitattributes
+          git archive --format=zip --output=build/agentic/review-source.zip HEAD src tests tools docs production .agents .codex .claude .github AGENTS.md README.md default.project.json rokit.toml .gitignore .gitattributes
           python -c "from pathlib import Path; import hashlib; p=Path('build/agentic/review-source.zip'); Path('build/agentic/review-source.sha256').write_text(hashlib.sha256(p.read_bytes()).hexdigest()+'  review-source.zip\n',encoding='utf-8')"
       - name: Upload local production reports and previews
         uses: actions/upload-artifact@ea165f8d65b6e75b540449e92b4886f43607fa02

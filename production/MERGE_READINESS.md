@@ -7,9 +7,16 @@ green badge. Merging does not activate new campaign flags, commerce or publicati
 
 ## What this PR implements
 
+Studio v3 adds canonical team/workflow/rule specifications, generated native
+Codex/Claude adapters, reusable adoption/architecture/sprint/Luau/studio skills,
+and Forge-backed routing and handoff. CI validates the canonical references,
+adapter hashes and a disposable local recorded-review route. Read
+[Studio v3 acceptance](STUDIO_V3_ACCEPTANCE.md) for actual workstation evidence.
+These additions do not change game runtime or certify every downstream task.
+
 | Area | Delivered and testable here |
 | --- | --- |
-| Agent production | 25 specialist skills and 33 dependency-ordered work packages, deeper shared playbook, cooperative file/session ownership |
+| Agent production | 30 canonical skills (25 existing plus 5 Studio additions), 33 team roles and 33 dependency-ordered work packages, deeper shared playbook, cooperative file/session ownership |
 | Existing work intake | Read-only reconciliation of every current UAT asset/screen plus the 89-entry character catalog; hashes, existing native bindings and explicit head aliases |
 | Local execution | Opt-in Codex subprocess runner with bounded attempts/time/output, unchanged-HEAD/plan/scope checks, retained failure/resume checkpoints |
 | Tool discovery | Read-only stdio MCP handshake/pagination with supported-version, schema and discovered-tool checks; reviewed local command configuration |
@@ -53,7 +60,7 @@ protection or independent review.
 | MCP compatibility and malformed responses | Stable2025-11-25 plus earlier protocol negotiation, tool/cursor validation and controlled owned-bridge cleanup. No actual Studio connection claimed. |
 | PNG only checked CRC/container | Bounded decompression, scanline/filter validation, alpha coverage and invisible-candidate rejection implemented. Visual review is separate. |
 | Character Kit availability | Normalized production contract is self-contained; importing the exact original17-file ZIP/XLSX still requires the supplied reviewed archive. No original binary is reconstructed or falsely claimed bundled. |
-| Full provider / Studio / Blender loop | Guarded adapters and work specifications exist. Real provider, export/import, clothing fit and visual playtests require the actual workstation. Not claimed complete. |
+| Full provider / Studio / Blender loop | Guarded adapters and work specifications exist. Native Codex skill discovery and read-only existing Blender source inspection ran locally; no Studio session was connected. Real provider, export/import, clothing fit and visual playtests remain pending. |
 | Commerce specialist | Prior blocked processing scope remains deferred. This PR does not retry it through another route or enable sales. |
 | PR description and draft mismatch | Update metadata after current checks. Ready for review is not authorization to merge automatically. |
 

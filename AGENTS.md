@@ -4,6 +4,7 @@ This is an existing Roblox/Luau game, not a blank template. Read the actual sour
 
 ## Start
 
+- For Studio v3 team orchestration use `$guildborne-studio`, read `production/STUDIO_V3.md`, and run `python tools/agentic/studio.py validate` and `verify`. Canonical roles/workflows are in `production/studio/studio.json`; generated native adapters are in `.codex/agents` and `.claude/agents`. The Python router prepares handoffs; the connected host performs actual delegation.
 - Use `$guildborne-director` for end-to-end production. Specialist skills live in `.agents/skills/`.
 - Run `python tools/agentic/forge.py doctor`, `validate`, and `plan`. Read `production/MERGE_READINESS.md` for the distinction between merge checks and pending game/tool acceptance.
 - Read `production/LATEST_GOALS.md` and `production/EXECUTION_V2.md`; run reconciliation and character-contract checks. Read the matching section in `production/SPECIALIST_PLAYBOOK.md` before implementation.
