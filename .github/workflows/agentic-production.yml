@@ -1,0 +1,85 @@
+name: Guildborne agentic production checks
+
+on:
+  pull_request:
+  workflow_dispatch:
+
+permissions:
+  contents: read
+
+concurrency:
+  group: guildborne-production-${{ github.workflow }}-${{ github.ref }}
+  cancel-in-progress: true
+
+jobs:
+  production-tools:
+    strategy:
+      fail-fast: false
+      matrix:
+        os: [ubuntu-latest, windows-latest]
+    runs-on: ${{ matrix.os }}
+    env:
+      PYTHONUTF8: '1'
+    timeout-minutes: 10
+    steps:
+      - uses: actions/checkout@11d5960a326750d5838078e36cf38b85af677262
+        with:
+          persist-credentials: false
+      - uses: actions/setup-python@a26af69be951a213d495a4c3e4e4022e16d87065
+        with:
+          python-version: '3.11'
+      - name: Test production tools without cloud credentials
+        run: python -m unittest discover -s tests/agentic -v
+      - name: Compile production-tool sources
+        run: python -m compileall -q tools/agentic tests/agentic
+      - name: Validate skills and task graph
+        run: python tools/agentic/forge.py validate
+      - name: Validate Studio roles, workflows and native adapters
+        run: |
+          python tools/agentic/studio.py validate
+          python tools/agentic/studio.py verify
+      - name: Exercise recorded handoff and independent review in a disposable repository
+        run: python tools/agentic/studio_smoke.py
+      - name: Build local inventory and work packages
+        run: python tools/agentic/forge.py plan
+      - name: Reconcile current UAT registry and self-contained character contract
+        run: |
+          python tools/agentic/reconcile.py
+          python tools/agentic/character_contract.py
+      - name: Generate procedural fallback previews
+        run: python tools/agentic/generate_primitives.py
+      - name: Package tracked code and docs for reproducible offline review
+        run: |
+          git rev-parse HEAD > build/agentic/review-commit.txt
+          git archive --format=zip --output=build/agentic/review-source.zip HEAD src tests tools docs production .agents .codex .claude .github AGENTS.md README.md default.project.json rokit.toml .gitignore .gitattributes
+          python -c "from pathlib import Path; import hashlib; p=Path('build/agentic/review-source.zip'); Path('build/agentic/review-source.sha256').write_text(hashlib.sha256(p.read_bytes()).hexdigest()+'  review-source.zip\n',encoding='utf-8')"
+      - name: Upload local production reports and previews
+        uses: actions/upload-artifact@ea165f8d65b6e75b540449e92b4886f43607fa02
+        with:
+          name: guildborne-production-preview-${{ runner.os }}
+          path: |
+            build/agentic/
+            !build/agentic/runs/**
+            !build/agentic/*ledger*.sqlite3*
+          retention-days: 7
+  existing-regression:
+    runs-on: windows-latest
+    timeout-minutes: 25
+    steps:
+      - uses: actions/checkout@11d5960a326750d5838078e36cf38b85af677262
+        with:
+          persist-credentials: false
+      - uses: actions/setup-python@a26af69be951a213d495a4c3e4e4022e16d87065
+        with:
+          python-version: '3.11'
+      - name: Install existing checksum-pinned development tools
+        shell: pwsh
+        run: ./tools/setup_tools.ps1
+      - name: Run existing Luau and repository validation
+        shell: pwsh
+        run: ./tools/validate.ps1
+      - name: Run additional latest-ruleset progression checks
+        shell: pwsh
+        run: |
+          & ./.tools/luau/luau.exe tests/run_latest_progression.luau
+          if ($LASTEXITCODE -ne 0) { throw 'Latest progression checks failed' }

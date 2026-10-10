@@ -2,6 +2,18 @@
 
 **Build. Trade. Conquer.** A planned Roblox guild-management RPG with persistent personal progression and, in later phases, a global Gold economy and territorial guild conflict.
 
+**Development team:** [Guildborne Studio v3](production/STUDIO_V3.md) adds native Codex/Claude agent definitions, reusable workflows and Forge-backed handoffs. Start with `$guildborne-studio`; run `python tools/agentic/studio.py validate` and `verify`. Team definitions and local coordinator checks are separate from game, art and release acceptance.
+
+## Agentic production workflow
+
+The [production toolkit](production/README.md) adds repo-scoped specialist skills,
+registry reconciliation, guarded local workers and evidence capture. Read
+[latest goals](production/LATEST_GOALS.md) and
+[merge versus game-release readiness](production/MERGE_READINESS.md) first.
+Historical phase/test counts below are not the current acceptance ledger; consult
+`docs/uat01/WORK_CHECKLIST.md` and run the present regression suite. Tool CI does
+not certify Studio/Blender artwork, live cross-server behavior or a public release.
+
 ## Current state
 
 **Phase 4.5 hardening:** controlled epochs, bounded archives, replay-safe compaction, circuit breakers and server-only operations. 271 tests pass; the 20,000-order synthetic soak had zero invariant violations. Further private testing is supported. **Public market disabled; true cross-server and physical device acceptance pending.** Nothing published; Phase 5 not started. [Implementation](docs/PHASE4_5_IMPLEMENTATION.md) · [Studio evidence](docs/PHASE4_5_STUDIO_TEST.md) · [Operations](docs/MARKET_OPERATIONS_RUNBOOK.md).

@@ -155,7 +155,7 @@ return function(content: any,util: any,economy: any,rules: any,landPlacement:any
 				local problem=rules.advanceProblem(data,actor,build,a.pathId);if problem then return problem end
 				local path=rules.Paths[a.pathId]
 				build.path=a.pathId;build.tier=path.Tier;build.equipped=nil
-				if content.StatusAllocationAvailable then build.skills={};actor.statusAllocations=nil end
+				if content.StatusAllocationAvailable or rules.usesNoviceProgression(data) then build.skills={};actor.statusAllocations=nil end
 				if a.actorId=="player" then actor.tier=build.tier;actor.classPathId=a.pathId end
 			elseif action=="LearnSkill" then
 				local problem=rules.learnProblem(build,actor.level,a.skillId);if problem then return problem end

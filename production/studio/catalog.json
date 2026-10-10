@@ -1,0 +1,1058 @@
+{
+  "execution": "HOST_DELEGATION_REQUIRED_NO_AUTOMATIC_MODELS_OR_APPS",
+  "gates": [
+    {
+      "environment": "local",
+      "evidence": "Validate canonical spec/generated agents/current plan and skills with source identity. Structural validation is not executed gameplay.",
+      "id": "source-contract",
+      "title": "Source, role and dependency contract"
+    },
+    {
+      "environment": "local",
+      "evidence": "Run current tools/validate.ps1 and relevant Python checks on candidate; retain invocation/raw streams. Historical counts and fixtures do not replace game baseline.",
+      "id": "current-regression",
+      "title": "Fresh game and tooling regression"
+    },
+    {
+      "environment": "local",
+      "evidence": "Retain source hashes, reviewed/declarative rights and original IDs. Runtime IDs remain null until real import; asset counts are not accepted output.",
+      "id": "provenance",
+      "title": "Original source and rights trail"
+    },
+    {
+      "environment": "blender",
+      "evidence": "Record verified Blender session/version, source/export hashes and evaluated topology/rig/fit/contact metrics. File generation alone is insufficient.",
+      "id": "blender-validation",
+      "title": "Actual Blender geometry and motion"
+    },
+    {
+      "environment": "image",
+      "evidence": "Inspect pixels/alpha/margins/intended size with provenance; distinguish preview from final art and later import.",
+      "id": "image-validation",
+      "title": "Actual image alpha/readability"
+    },
+    {
+      "environment": "audio",
+      "evidence": "Record owned/licensed masters, required provider authorization, cue IDs and actual sync/mix/listening. Missing provider or files leaves pending.",
+      "id": "audio-validation",
+      "title": "Actual masters and listening"
+    },
+    {
+      "environment": "studio",
+      "evidence": "Identify actual Studio/build; retain real import/playtest Output and screenshots. Generated files or fixture IPC cannot imply imported IDs or acceptance.",
+      "id": "studio-integration",
+      "title": "Verified import and player test"
+    },
+    {
+      "environment": "studio",
+      "evidence": "Use actual two/four clients on identified Studio server and up to twenty companion scenarios. Local multiplayer does not pass distinct-live-server acceptance.",
+      "id": "multiplayer",
+      "title": "Real local client isolation"
+    },
+    {
+      "environment": "device",
+      "evidence": "Record real device/input identity, touch/gameplay, duration/samples and memory/thermal observations. Emulators and injected mouse cannot pass.",
+      "id": "physical-device",
+      "title": "Physical Android/iOS acceptance"
+    },
+    {
+      "environment": "cross_server",
+      "evidence": "Requires scoped private platform approval, distinct nonempty live JobIds, real clients, durable settlement/recovery and zero conservation error.",
+      "id": "cross-server",
+      "title": "Distinct live settlement/recovery"
+    },
+    {
+      "environment": "local",
+      "evidence": "Different worker reviews source, invocation and hashes; composed local packets remain REVIEW until validated. Names are not identity authentication.",
+      "id": "independent-review",
+      "title": "Different reviewer inspects change"
+    },
+    {
+      "environment": "local",
+      "evidence": "External human art/feel/UAT approval and separately scoped release authorization required. Local tooling cannot certify or auto-merge/publish.",
+      "id": "human-release",
+      "title": "External art/UAT/release decision"
+    }
+  ],
+  "name": "Guildborne Studio v3",
+  "roles": [
+    {
+      "claude": ".claude/agents/animator.md",
+      "codex": ".codex/agents/animator.toml",
+      "department": "art",
+      "id": "animator",
+      "instructions": "Create real skeletal clips with semantic timing markers. Verify contact, grip, drift, variant retargeting and transitions; presentation never owns damage/rewards.",
+      "parent": "art-lead",
+      "skills": [
+        "guildborne-animation"
+      ],
+      "tier": "specialist",
+      "title": "Animator"
+    },
+    {
+      "claude": ".claude/agents/art-lead.md",
+      "codex": ".codex/agents/art-lead.toml",
+      "department": "art",
+      "id": "art-lead",
+      "instructions": "Coordinate original modular source, fit, export, import and readability. Standard/Heavy is the first complete fit path; generated files are not human-approved final art.",
+      "parent": "creative-director",
+      "skills": [
+        "guildborne-characters",
+        "guildborne-rigging",
+        "guildborne-ui-art",
+        "guildborne-vfx"
+      ],
+      "tier": "lead",
+      "title": "Art Lead"
+    },
+    {
+      "claude": ".claude/agents/asset-curator.md",
+      "codex": ".codex/agents/asset-curator.toml",
+      "department": "art",
+      "id": "asset-curator",
+      "instructions": "Reconcile actual rows/hashes/aliases without resetting status. Track source/export/import/Studio/human separately; preserve canonical/null IDs and original archive bytes.",
+      "parent": "art-lead",
+      "skills": [
+        "guildborne-asset-provenance"
+      ],
+      "tier": "specialist",
+      "title": "Asset Curator"
+    },
+    {
+      "claude": ".claude/agents/audio-designer.md",
+      "codex": ".codex/agents/audio-designer.toml",
+      "department": "audio",
+      "id": "audio-designer",
+      "instructions": "Produce owned manifests and masters through actual approved providers. Align impact/mix and bounded loops; missing providers do not justify fake audio or import IDs.",
+      "parent": "audio-lead",
+      "skills": [
+        "guildborne-audio"
+      ],
+      "tier": "specialist",
+      "title": "Audio Designer"
+    },
+    {
+      "claude": ".claude/agents/audio-lead.md",
+      "codex": ".codex/agents/audio-lead.toml",
+      "department": "audio",
+      "id": "audio-lead",
+      "instructions": "Define owned cue contracts and actual provider availability with measured mix. Planning does not authorize paid generation or asset upload.",
+      "parent": "creative-director",
+      "skills": [
+        "guildborne-audio"
+      ],
+      "tier": "lead",
+      "title": "Audio Lead"
+    },
+    {
+      "claude": ".claude/agents/character-artist.md",
+      "codex": ".codex/agents/character-artist.toml",
+      "department": "art",
+      "id": "character-artist",
+      "instructions": "Author actual fifteen-part Standard/Heavy bodies before fit-tested Elf/Orc/Dwarf expansion. Wizard is Human appearance. Preserve coverage and fair proxies; runtime IDs stay null until import.",
+      "parent": "art-lead",
+      "skills": [
+        "guildborne-characters"
+      ],
+      "tier": "specialist",
+      "title": "Character Artist"
+    },
+    {
+      "claude": ".claude/agents/combat-engineer.md",
+      "codex": ".codex/agents/combat-engineer.toml",
+      "department": "engineering",
+      "id": "combat-engineer",
+      "instructions": "Read CombatAbilities, CombatDamage and CombatTargeting. Preserve server intent validation, per-actor cooldowns, bounded AI, safe zones and durable reward-once.",
+      "parent": "engineering-lead",
+      "skills": [
+        "guildborne-combat-ai",
+        "guildborne-luau"
+      ],
+      "tier": "specialist",
+      "title": "Combat Engineer"
+    },
+    {
+      "claude": ".claude/agents/creative-director.md",
+      "codex": ".codex/agents/creative-director.toml",
+      "department": "creative",
+      "id": "creative-director",
+      "instructions": "Define the original fantasy party RPG direction with player plus up to five companions. Reconcile actual source and latest goals; preserve native EN/TH UI and external human art/feel approval.",
+      "parent": null,
+      "skills": [
+        "guildborne-director",
+        "guildborne-studio"
+      ],
+      "tier": "director",
+      "title": "Creative Director"
+    },
+    {
+      "claude": ".claude/agents/engineering-lead.md",
+      "codex": ".codex/agents/engineering-lead.toml",
+      "department": "engineering",
+      "id": "engineering-lead",
+      "instructions": "Reconcile exact modules and scopes before implementation. Coordinate server/client integration and reliable tools; reuse services with explicit migration and fresh checks.",
+      "parent": "technical-director",
+      "skills": [
+        "guildborne-architecture",
+        "guildborne-luau",
+        "guildborne-tooling"
+      ],
+      "tier": "lead",
+      "title": "Engineering Lead"
+    },
+    {
+      "claude": ".claude/agents/game-design-lead.md",
+      "codex": ".codex/agents/game-design-lead.toml",
+      "department": "design",
+      "id": "game-design-lead",
+      "instructions": "Maintain progression, combat and social contracts against actual game modules. Preserve Novice 10/35/70 gates, earned legacy paths and safe free progression.",
+      "parent": "creative-director",
+      "skills": [
+        "guildborne-progression",
+        "guildborne-combat-ai",
+        "guildborne-guild-social"
+      ],
+      "tier": "lead",
+      "title": "Game Design Lead"
+    },
+    {
+      "claude": ".claude/agents/gameplay-designer.md",
+      "codex": ".codex/agents/gameplay-designer.toml",
+      "department": "design",
+      "id": "gameplay-designer",
+      "instructions": "Reuse Content, Expansion, StatusPoints, Hall caps and hero-start math. Preserve earned paths and opt-in flags. Verify refunds, prerequisites and no Hall deadlocks.",
+      "parent": "game-design-lead",
+      "skills": [
+        "guildborne-progression"
+      ],
+      "tier": "specialist",
+      "title": "Gameplay Designer"
+    },
+    {
+      "claude": ".claude/agents/growth-analyst.md",
+      "codex": ".codex/agents/growth-analyst.toml",
+      "department": "release",
+      "id": "growth-analyst",
+      "instructions": "Use real opt-in feedback to test onboarding/retention hypotheses and truthful actual-game assets. No fabricated players, popularity guarantees, campaign release or ad spending.",
+      "parent": "release-lead",
+      "skills": [
+        "guildborne-growth"
+      ],
+      "tier": "specialist",
+      "title": "Growth Analyst"
+    },
+    {
+      "claude": ".claude/agents/guild-engineer.md",
+      "codex": ".codex/agents/guild-engineer.toml",
+      "department": "engineering",
+      "id": "guild-engineer",
+      "instructions": "Keep player guild separate from Personal Hall. Verify invites, role transfer and shared permissions before bounded war/territory design. Cosmetic outcomes cannot grant income or alter markets.",
+      "parent": "engineering-lead",
+      "skills": [
+        "guildborne-guild-social",
+        "guildborne-war-territory"
+      ],
+      "tier": "specialist",
+      "title": "Guild Engineer"
+    },
+    {
+      "claude": ".claude/agents/localization-lead.md",
+      "codex": ".codex/agents/localization-lead.toml",
+      "department": "localization",
+      "id": "localization-lead",
+      "instructions": "Coordinate canonical EN/TH terms, layout expansion, native focus and accessible cues with narrative/UI owners.",
+      "parent": "creative-director",
+      "skills": [
+        "guildborne-localization",
+        "guildborne-ux-native"
+      ],
+      "tier": "lead",
+      "title": "Localization Lead"
+    },
+    {
+      "claude": ".claude/agents/localization-specialist.md",
+      "codex": ".codex/agents/localization-specialist.toml",
+      "department": "localization",
+      "id": "localization-specialist",
+      "instructions": "Review actual EN/TH copy/placeholders/wrapping/safe areas/focus and non-color cues. Reconcile canonical file ownership; physical input acceptance stays separate.",
+      "parent": "localization-lead",
+      "skills": [
+        "guildborne-localization"
+      ],
+      "tier": "specialist",
+      "title": "Localization Specialist"
+    },
+    {
+      "claude": ".claude/agents/market-engineer.md",
+      "codex": ".codex/agents/market-engineer.toml",
+      "department": "engineering",
+      "id": "market-engineer",
+      "instructions": "Audit escrow, epochs, claims and recovery with generation fencing, idempotency and zero conservation error. Local audit never changes Phase4.5 storage or calls live cloud.",
+      "parent": "engineering-lead",
+      "skills": [
+        "guildborne-market"
+      ],
+      "tier": "specialist",
+      "title": "Market Engineer"
+    },
+    {
+      "claude": ".claude/agents/narrative-designer.md",
+      "codex": ".codex/agents/narrative-designer.toml",
+      "department": "narrative",
+      "id": "narrative-designer",
+      "instructions": "Author hero identity and bond stories using actual owned actors/templates. Preserve receipts and duplicate-template first-time reward protection; coordinate EN/TH dialogue.",
+      "parent": "narrative-lead",
+      "skills": [
+        "guildborne-quests"
+      ],
+      "tier": "specialist",
+      "title": "Narrative Designer"
+    },
+    {
+      "claude": ".claude/agents/narrative-lead.md",
+      "codex": ".codex/agents/narrative-lead.toml",
+      "department": "narrative",
+      "id": "narrative-lead",
+      "instructions": "Map real quest/hero IDs to checkpointed stories and NPC activity. Mandatory progression cannot depend on paid content, markets, random recruitment or guild membership.",
+      "parent": "creative-director",
+      "skills": [
+        "guildborne-quests",
+        "guildborne-npc-life"
+      ],
+      "tier": "lead",
+      "title": "Narrative Lead"
+    },
+    {
+      "claude": ".claude/agents/npc-designer.md",
+      "codex": ".codex/agents/npc-designer.toml",
+      "department": "narrative",
+      "id": "npc-designer",
+      "instructions": "Bind civic contact studies to bounded idle/work/travel/talk states and authoritative quest hooks. Support all friendly races, interruption/resume, physical contact and cleanup.",
+      "parent": "narrative-lead",
+      "skills": [
+        "guildborne-npc-life"
+      ],
+      "tier": "specialist",
+      "title": "NPC Designer"
+    },
+    {
+      "claude": ".claude/agents/performance-engineer.md",
+      "codex": ".codex/agents/performance-engineer.toml",
+      "department": "quality",
+      "id": "performance-engineer",
+      "instructions": "Measure client/server/GPU/UI/network separately with duration and samples, four players/twenty companions and cleanup. Synthetic load/emulation do not certify devices.",
+      "parent": "qa-lead",
+      "skills": [
+        "guildborne-performance"
+      ],
+      "tier": "specialist",
+      "title": "Performance Engineer"
+    },
+    {
+      "claude": ".claude/agents/producer.md",
+      "codex": ".codex/agents/producer.toml",
+      "department": "production",
+      "id": "producer",
+      "instructions": "Sequence dependency-ready scoped work in one shared Forge ledger. Delegate through actual authorized host capabilities, otherwise execute sequentially. Keep acceptance layers and blocked dependencies explicit.",
+      "parent": null,
+      "skills": [
+        "guildborne-director",
+        "guildborne-studio",
+        "guildborne-sprint",
+        "guildborne-adopt"
+      ],
+      "tier": "director",
+      "title": "Producer"
+    },
+    {
+      "claude": ".claude/agents/qa-engineer.md",
+      "codex": ".codex/agents/qa-engineer.toml",
+      "department": "quality",
+      "id": "qa-engineer",
+      "instructions": "Run fresh source and normal-player checks with build/scenario/input/expected/actual/log evidence. Real devices and distinct live JobIds are separate gates; different reviewer validates packets.",
+      "parent": "qa-lead",
+      "skills": [
+        "guildborne-qa"
+      ],
+      "tier": "specialist",
+      "title": "QA Engineer"
+    },
+    {
+      "claude": ".claude/agents/qa-lead.md",
+      "codex": ".codex/agents/qa-lead.toml",
+      "department": "quality",
+      "id": "qa-lead",
+      "instructions": "Select representative fresh regressions and normal-player journeys. Separate fixtures, Studio, local multiplayer, hardware and cross-server observations; reject invented evidence.",
+      "parent": "technical-director",
+      "skills": [
+        "guildborne-qa",
+        "guildborne-performance"
+      ],
+      "tier": "lead",
+      "title": "QA Lead"
+    },
+    {
+      "claude": ".claude/agents/quest-designer.md",
+      "codex": ".codex/agents/quest-designer.toml",
+      "department": "narrative",
+      "id": "quest-designer",
+      "instructions": "Trace actual Chapter00-06 services and IDs before graph authoring. Validate dependencies, Hall, replay and reward budgets; normalized checks do not certify runtime.",
+      "parent": "narrative-lead",
+      "skills": [
+        "guildborne-quests"
+      ],
+      "tier": "specialist",
+      "title": "Quest Designer"
+    },
+    {
+      "claude": ".claude/agents/release-lead.md",
+      "codex": ".codex/agents/release-lead.toml",
+      "department": "release",
+      "id": "release-lead",
+      "instructions": "Prepare a reviewable private candidate with unresolved gates. PR authorization does not permit merge, publication, commerce or spending; human release remains external.",
+      "parent": "producer",
+      "skills": [
+        "guildborne-qa",
+        "guildborne-growth",
+        "guildborne-sprint"
+      ],
+      "tier": "lead",
+      "title": "Release Lead"
+    },
+    {
+      "claude": ".claude/agents/rigging-artist.md",
+      "codex": ".codex/agents/rigging-artist.toml",
+      "department": "art",
+      "id": "rigging-artist",
+      "instructions": "Match actual R15 reference, skinning, cages and attachments. Validate removable tunic/trousers/hair on both first presets through deformation/export; fit family is not approval.",
+      "parent": "art-lead",
+      "skills": [
+        "guildborne-rigging"
+      ],
+      "tier": "specialist",
+      "title": "Rigging Artist"
+    },
+    {
+      "claude": ".claude/agents/systems-engineer.md",
+      "codex": ".codex/agents/systems-engineer.toml",
+      "department": "engineering",
+      "id": "systems-engineer",
+      "instructions": "Reuse actual item/equipment/crafting services and IDs. Preserve atomic owned transfers and replay-safe costs; test insufficient resources, full bags and interrupted actions.",
+      "parent": "engineering-lead",
+      "skills": [
+        "guildborne-items-crafting",
+        "guildborne-luau"
+      ],
+      "tier": "specialist",
+      "title": "Systems Engineer"
+    },
+    {
+      "claude": ".claude/agents/technical-director.md",
+      "codex": ".codex/agents/technical-director.toml",
+      "department": "technical",
+      "id": "technical-director",
+      "instructions": "Reconcile runtime boundaries and source ownership before integration. Preserve server authority, saves, market invariants and current flags. Require fresh regression and independent review.",
+      "parent": null,
+      "skills": [
+        "guildborne-director",
+        "guildborne-architecture",
+        "guildborne-luau"
+      ],
+      "tier": "director",
+      "title": "Technical Director"
+    },
+    {
+      "claude": ".claude/agents/tools-engineer.md",
+      "codex": ".codex/agents/tools-engineer.toml",
+      "department": "engineering",
+      "id": "tools-engineer",
+      "instructions": "Verify primary sources and reviewed actual discovery with version/rights/telemetry/cost. No arbitrary MCP/skill installation; fixture IPC is not Studio/model execution.",
+      "parent": "engineering-lead",
+      "skills": [
+        "guildborne-tooling",
+        "guildborne-research",
+        "guildborne-adopt"
+      ],
+      "tier": "specialist",
+      "title": "Tools Engineer"
+    },
+    {
+      "claude": ".claude/agents/ui-artist.md",
+      "codex": ".codex/agents/ui-artist.toml",
+      "department": "art",
+      "id": "ui-artist",
+      "instructions": "Produce original crest/icons/frames from real semantic IDs and reviewed rights using available approved tools. Inspect alpha and small-size readability; previews are not final art.",
+      "parent": "art-lead",
+      "skills": [
+        "guildborne-ui-art"
+      ],
+      "tier": "specialist",
+      "title": "UI Artist"
+    },
+    {
+      "claude": ".claude/agents/ui-designer.md",
+      "codex": ".codex/agents/ui-designer.toml",
+      "department": "design",
+      "id": "ui-designer",
+      "instructions": "Use existing native components and authoritative bindings. Cover loading/empty/unavailable/error/pending/confirmed EN/TH states and focus; shop work stays presentation only.",
+      "parent": "game-design-lead",
+      "skills": [
+        "guildborne-ux-native"
+      ],
+      "tier": "specialist",
+      "title": "Native UI Designer"
+    },
+    {
+      "claude": ".claude/agents/vfx-artist.md",
+      "codex": ".codex/agents/vfx-artist.toml",
+      "department": "art",
+      "id": "vfx-artist",
+      "instructions": "Bind bounded effects and enemy warnings to actual combat. Test cancel/respawn cleanup and low quality with five heroes; preserve critical reduced-motion telegraphs.",
+      "parent": "art-lead",
+      "skills": [
+        "guildborne-vfx"
+      ],
+      "tier": "specialist",
+      "title": "VFX Artist"
+    },
+    {
+      "claude": ".claude/agents/world-builder.md",
+      "codex": ".codex/agents/world-builder.toml",
+      "department": "art",
+      "id": "world-builder",
+      "instructions": "Reuse current city/map/guild land/visit/theme modules. Validate ordinary routes with five followers, free island start, visitor permissions and durable building ownership.",
+      "parent": "art-lead",
+      "skills": [
+        "guildborne-world",
+        "guildborne-island-building"
+      ],
+      "tier": "specialist",
+      "title": "World Builder"
+    }
+  ],
+  "schemaVersion": 1,
+  "taskRoles": {
+    "animation": "animator",
+    "audio": "audio-designer",
+    "audit": "technical-director",
+    "brand-art": "ui-artist",
+    "character-import": "character-artist",
+    "character-intake": "asset-curator",
+    "city-zones": "world-builder",
+    "clothing-fit": "rigging-artist",
+    "combat": "combat-engineer",
+    "growth": "growth-analyst",
+    "guild-foundation": "guild-engineer",
+    "guild-islands": "world-builder",
+    "guild-war-territory": "guild-engineer",
+    "hero-stories": "narrative-designer",
+    "human-body": "character-artist",
+    "icon-art": "ui-artist",
+    "inventory-crafting": "systems-engineer",
+    "localization": "localization-specialist",
+    "market-integrity": "market-engineer",
+    "monsters": "combat-engineer",
+    "npc-life": "npc-designer",
+    "performance": "performance-engineer",
+    "physical-mobile": "qa-engineer",
+    "private-cross-server": "qa-engineer",
+    "progression": "gameplay-designer",
+    "race-expansion": "character-artist",
+    "registry-reconciliation": "asset-curator",
+    "research": "tools-engineer",
+    "story-quests": "quest-designer",
+    "tool-capabilities": "tools-engineer",
+    "uat": "qa-engineer",
+    "ux-system": "ui-designer",
+    "vfx": "vfx-artist"
+  },
+  "upstream": {
+    "adoption": "concepts-only",
+    "commit": "be8993bbc5a1f016bc770b2846ce06272d284526",
+    "license": "MIT",
+    "ref": "v1.1.3",
+    "sources": [
+      "https://learn.chatgpt.com/docs/agent-configuration/subagents",
+      "https://code.claude.com/docs/en/sub-agents"
+    ],
+    "url": "https://github.com/Donchitos/Claude-Code-Game-Studios"
+  },
+  "workflows": [
+    {
+      "gates": [
+        "source-contract",
+        "current-regression",
+        "independent-review"
+      ],
+      "id": "repository-adoption",
+      "lead": "engineering-lead",
+      "steps": [
+        {
+          "dependsOn": [],
+          "id": "audit",
+          "role": "technical-director",
+          "skill": "guildborne-director"
+        },
+        {
+          "dependsOn": [
+            "audit"
+          ],
+          "id": "reconcile",
+          "role": "asset-curator",
+          "skill": "guildborne-asset-provenance"
+        },
+        {
+          "dependsOn": [
+            "reconcile"
+          ],
+          "id": "architecture",
+          "role": "engineering-lead",
+          "skill": "guildborne-architecture"
+        },
+        {
+          "dependsOn": [
+            "audit"
+          ],
+          "id": "capabilities",
+          "role": "tools-engineer",
+          "skill": "guildborne-tooling"
+        },
+        {
+          "dependsOn": [
+            "architecture",
+            "capabilities"
+          ],
+          "id": "sprint",
+          "role": "producer",
+          "skill": "guildborne-sprint"
+        }
+      ],
+      "title": "Audit and adopt the existing game"
+    },
+    {
+      "gates": [
+        "provenance",
+        "blender-validation",
+        "studio-integration",
+        "independent-review"
+      ],
+      "id": "character-golden-path",
+      "lead": "art-lead",
+      "steps": [
+        {
+          "dependsOn": [],
+          "id": "intake",
+          "role": "asset-curator",
+          "skill": "guildborne-asset-provenance"
+        },
+        {
+          "dependsOn": [
+            "intake"
+          ],
+          "id": "bodies",
+          "role": "character-artist",
+          "skill": "guildborne-characters"
+        },
+        {
+          "dependsOn": [
+            "bodies"
+          ],
+          "id": "fit",
+          "role": "rigging-artist",
+          "skill": "guildborne-rigging"
+        },
+        {
+          "dependsOn": [
+            "fit"
+          ],
+          "id": "import",
+          "role": "character-artist",
+          "skill": "guildborne-characters"
+        },
+        {
+          "dependsOn": [
+            "import"
+          ],
+          "id": "verify",
+          "role": "qa-engineer",
+          "skill": "guildborne-qa"
+        }
+      ],
+      "title": "Standard and Heavy removable outfit"
+    },
+    {
+      "gates": [
+        "current-regression",
+        "blender-validation",
+        "audio-validation",
+        "studio-integration",
+        "multiplayer"
+      ],
+      "id": "combat-slice",
+      "lead": "engineering-lead",
+      "steps": [
+        {
+          "dependsOn": [],
+          "id": "progression",
+          "role": "gameplay-designer",
+          "skill": "guildborne-progression"
+        },
+        {
+          "dependsOn": [
+            "progression"
+          ],
+          "id": "combat",
+          "role": "combat-engineer",
+          "skill": "guildborne-combat-ai"
+        },
+        {
+          "dependsOn": [
+            "combat"
+          ],
+          "id": "animation",
+          "role": "animator",
+          "skill": "guildborne-animation"
+        },
+        {
+          "dependsOn": [
+            "animation"
+          ],
+          "id": "effects",
+          "role": "vfx-artist",
+          "skill": "guildborne-vfx"
+        },
+        {
+          "dependsOn": [
+            "animation"
+          ],
+          "id": "cues",
+          "role": "audio-designer",
+          "skill": "guildborne-audio"
+        },
+        {
+          "dependsOn": [
+            "effects",
+            "cues"
+          ],
+          "id": "playtest",
+          "role": "qa-engineer",
+          "skill": "guildborne-qa"
+        }
+      ],
+      "title": "One complete player and companion skill"
+    },
+    {
+      "gates": [
+        "image-validation",
+        "studio-integration",
+        "physical-device"
+      ],
+      "id": "native-ui",
+      "lead": "localization-lead",
+      "steps": [
+        {
+          "dependsOn": [],
+          "id": "screen-audit",
+          "role": "ui-designer",
+          "skill": "guildborne-ux-native"
+        },
+        {
+          "dependsOn": [
+            "screen-audit"
+          ],
+          "id": "icons",
+          "role": "ui-artist",
+          "skill": "guildborne-ui-art"
+        },
+        {
+          "dependsOn": [
+            "icons"
+          ],
+          "id": "bindings",
+          "role": "ui-designer",
+          "skill": "guildborne-ux-native"
+        },
+        {
+          "dependsOn": [
+            "bindings"
+          ],
+          "id": "language",
+          "role": "localization-specialist",
+          "skill": "guildborne-localization"
+        },
+        {
+          "dependsOn": [
+            "language"
+          ],
+          "id": "input",
+          "role": "qa-engineer",
+          "skill": "guildborne-qa"
+        }
+      ],
+      "title": "Native commander HUD and EN/TH states"
+    },
+    {
+      "gates": [
+        "provenance",
+        "studio-integration",
+        "multiplayer",
+        "physical-device"
+      ],
+      "id": "world-islands",
+      "lead": "game-design-lead",
+      "steps": [
+        {
+          "dependsOn": [],
+          "id": "routes",
+          "role": "world-builder",
+          "skill": "guildborne-world"
+        },
+        {
+          "dependsOn": [
+            "routes"
+          ],
+          "id": "islands",
+          "role": "world-builder",
+          "skill": "guildborne-island-building"
+        },
+        {
+          "dependsOn": [
+            "routes"
+          ],
+          "id": "npc-life",
+          "role": "npc-designer",
+          "skill": "guildborne-npc-life"
+        },
+        {
+          "dependsOn": [
+            "islands",
+            "npc-life"
+          ],
+          "id": "walkthrough",
+          "role": "qa-engineer",
+          "skill": "guildborne-qa"
+        }
+      ],
+      "title": "Safe world routes and island visits"
+    },
+    {
+      "gates": [
+        "source-contract",
+        "current-regression",
+        "studio-integration",
+        "independent-review"
+      ],
+      "id": "story-progression",
+      "lead": "narrative-lead",
+      "steps": [
+        {
+          "dependsOn": [],
+          "id": "rules",
+          "role": "gameplay-designer",
+          "skill": "guildborne-progression"
+        },
+        {
+          "dependsOn": [
+            "rules"
+          ],
+          "id": "main-story",
+          "role": "quest-designer",
+          "skill": "guildborne-quests"
+        },
+        {
+          "dependsOn": [
+            "main-story"
+          ],
+          "id": "hero-bonds",
+          "role": "narrative-designer",
+          "skill": "guildborne-quests"
+        },
+        {
+          "dependsOn": [
+            "hero-bonds"
+          ],
+          "id": "dialogue",
+          "role": "localization-specialist",
+          "skill": "guildborne-localization"
+        },
+        {
+          "dependsOn": [
+            "dialogue"
+          ],
+          "id": "journey",
+          "role": "qa-engineer",
+          "skill": "guildborne-qa"
+        }
+      ],
+      "title": "Main route, Hall permits and hero bonds"
+    },
+    {
+      "gates": [
+        "current-regression",
+        "studio-integration",
+        "cross-server",
+        "independent-review"
+      ],
+      "id": "items-market",
+      "lead": "engineering-lead",
+      "steps": [
+        {
+          "dependsOn": [],
+          "id": "items",
+          "role": "systems-engineer",
+          "skill": "guildborne-items-crafting"
+        },
+        {
+          "dependsOn": [
+            "items"
+          ],
+          "id": "conservation",
+          "role": "market-engineer",
+          "skill": "guildborne-market"
+        },
+        {
+          "dependsOn": [
+            "conservation"
+          ],
+          "id": "presentation",
+          "role": "ui-designer",
+          "skill": "guildborne-ux-native"
+        },
+        {
+          "dependsOn": [
+            "presentation"
+          ],
+          "id": "review",
+          "role": "qa-engineer",
+          "skill": "guildborne-qa"
+        }
+      ],
+      "title": "Inventory and market integrity review"
+    },
+    {
+      "gates": [
+        "current-regression",
+        "studio-integration",
+        "multiplayer",
+        "independent-review"
+      ],
+      "id": "guild-conflict",
+      "lead": "game-design-lead",
+      "steps": [
+        {
+          "dependsOn": [],
+          "id": "membership",
+          "role": "guild-engineer",
+          "skill": "guildborne-guild-social"
+        },
+        {
+          "dependsOn": [
+            "membership"
+          ],
+          "id": "objectives",
+          "role": "guild-engineer",
+          "skill": "guildborne-war-territory"
+        },
+        {
+          "dependsOn": [
+            "objectives"
+          ],
+          "id": "permissions",
+          "role": "qa-engineer",
+          "skill": "guildborne-qa"
+        }
+      ],
+      "title": "Guild permissions and bounded territory"
+    },
+    {
+      "gates": [
+        "provenance",
+        "audio-validation",
+        "studio-integration",
+        "physical-device"
+      ],
+      "id": "audio-production",
+      "lead": "audio-lead",
+      "steps": [
+        {
+          "dependsOn": [],
+          "id": "rights",
+          "role": "asset-curator",
+          "skill": "guildborne-asset-provenance"
+        },
+        {
+          "dependsOn": [
+            "rights"
+          ],
+          "id": "masters",
+          "role": "audio-designer",
+          "skill": "guildborne-audio"
+        },
+        {
+          "dependsOn": [
+            "masters"
+          ],
+          "id": "sync",
+          "role": "audio-designer",
+          "skill": "guildborne-audio"
+        },
+        {
+          "dependsOn": [
+            "sync"
+          ],
+          "id": "listening",
+          "role": "qa-engineer",
+          "skill": "guildborne-qa"
+        }
+      ],
+      "title": "Owned cues through runtime mix"
+    },
+    {
+      "gates": [
+        "current-regression",
+        "studio-integration",
+        "multiplayer",
+        "physical-device",
+        "cross-server",
+        "independent-review",
+        "human-release"
+      ],
+      "id": "acceptance-release",
+      "lead": "release-lead",
+      "steps": [
+        {
+          "dependsOn": [],
+          "id": "performance",
+          "role": "performance-engineer",
+          "skill": "guildborne-performance"
+        },
+        {
+          "dependsOn": [
+            "performance"
+          ],
+          "id": "uat",
+          "role": "qa-engineer",
+          "skill": "guildborne-qa"
+        },
+        {
+          "dependsOn": [
+            "uat"
+          ],
+          "id": "growth",
+          "role": "growth-analyst",
+          "skill": "guildborne-growth"
+        },
+        {
+          "dependsOn": [
+            "uat",
+            "growth"
+          ],
+          "id": "handoff",
+          "role": "producer",
+          "skill": "guildborne-studio"
+        }
+      ],
+      "title": "Private candidate and external handoff"
+    }
+  ]
+}
