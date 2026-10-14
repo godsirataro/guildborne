@@ -3,6 +3,8 @@ local Shared=game:GetService("ReplicatedStorage").Shared
 local entries=require(Shared.Config.FriendlyNpcs)
 local build=require(script.Parent.FriendlyNpcKit)
 local Kit=require(script.Parent.ArtKit)
+local Borin=require(Shared.Presentation.BorinPresentation)
+local BorinMotion=require(Shared.Presentation.BorinWorkMotion)
 return function(town:Instance,open:(Player,string)->(),prompt:(BasePart,string,(Player)->())->())
     local folder=build(true);folder.Name="FriendlyOrcs";folder.Parent=town
     local civic=require(script.Parent.CityCharacterKit)(true)
@@ -23,10 +25,15 @@ return function(town:Instance,open:(Player,string)->(),prompt:(BasePart,string,(
             local at=Vector3.new(entry.x,if ground then ground.Position.Y else 1,entry.z)
             model:PivotTo(CFrame.lookAt(at,Vector3.new(0,at.Y,entry.z)))
         end
+        if id=="smith_borin" then Borin.attach(model) end
         local label=Kit.Label(root,entry.name.." · "..entry.role,entry.nameTh.." · "..entry.roleTh,5)
         local billboard=label.Parent :: BillboardGui;billboard.Size=UDim2.fromOffset(240,70)
         prompt(root,"Talk",function(player)
             model:SetAttribute("GreetingAt",workspace:GetServerTimeNow())
+            if id=="smith_borin" then
+                model:SetAttribute("BorinInteractUntil",workspace:GetServerTimeNow()+BorinMotion.InteractSeconds)
+                model:SetAttribute("BorinInteractor",player.UserId)
+            end
             open(player,"FriendlyNPC:"..id)
         end)
         local talk=root:FindFirstChildOfClass("ProximityPrompt")

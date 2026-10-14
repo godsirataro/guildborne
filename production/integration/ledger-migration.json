@@ -1,0 +1,8 @@
+{
+  "oldLedger": "C:\\Work\\MySelf\\Guildborne\\build\\agentic\\integration-v4-ledger.sqlite3",
+  "activeLedger": "C:\\Work\\MySelf\\Guildborne\\build\\agentic\\integration-v5-ledger.sqlite3",
+  "allWritersStoppedBeforeMigration": true,
+  "studioPlayStopped": true,
+  "method": "SQLite backup after explicit lease releases; plan fingerprint reconciled on new inactive copy; all learning tables preserved",
+  "learningRecords": 1
+}

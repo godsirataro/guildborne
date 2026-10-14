@@ -1,6 +1,17 @@
 --!strict
 -- English source strings are stable keys; placeholders are shared by both languages.
 local thai: { [string]: string } = {
+	["Available after the Lv1–35 preview."]="ยังไม่เปิดในตัวอย่าง Lv1–35",
+	["Today's daily reward was already saved."]="บันทึกรางวัลรายวันของวันนี้แล้ว",
+	["This season reward was already saved."]="บันทึกรางวัลซีซันขั้นนี้แล้ว",
+	["Complete the required story chapter first."]="ผ่านบทเนื้อเรื่องที่กำหนดก่อน",
+	["Premium rewards are unavailable in this preview."]="รางวัล Premium ยังไม่เปิดในตัวอย่างนี้",
+	["Rewards are unavailable in this build."]="รางวัลยังไม่เปิดในบิลด์นี้",
+	["This destination or action is outside the Lv1–35 preview."]="พื้นที่หรือการกระทำนี้อยู่นอกตัวอย่าง Lv1–35",
+	["This preview supports Hall levels up to 4."]="ตัวอย่างนี้รองรับหอกิลด์ถึงระดับ 4",
+	["Complete the Class2 mentor chapter first."]="ผ่านบททดสอบอาจารย์ Class2 ก่อน",
+	["Hero Class2 mentor trials are not available in this preview."]="บททดสอบ Class2 ของฮีโร่ยังไม่เปิดในตัวอย่างนี้",
+	["Rewards saved."]="บันทึกรางวัลแล้ว",
 	["Use the combat buttons: starter art, Class 2 art, and Class 3 art. On keyboard: Q, Z, and X. Learn each branch art to unlock its slot."]="ใช้ปุ่มต่อสู้สำหรับสกิลเริ่มต้น สกิลคลาส 2 และคลาส 3 คีย์บอร์ดใช้ Q, Z และ X เรียนสกิลประจำสายเพื่อปลดช่องนั้น",
 	["Reset SP and AP for free in Status points near your Guild Hall."]="รีเซ็ต SP และ AP ฟรีในหน้าค่าสถานะ เมื่ออยู่ใกล้หอกิลด์ของคุณ",
 	["Resetting learned skills costs 10 Gold."]="รีเซ็ตสกิลที่เรียนแล้วใช้ 10 Gold",
@@ -1144,4 +1155,114 @@ thai["Civic landmark"]="สถานที่สำคัญของเมื�
 thai["Landmark and return portals. Gold dot: you."]="สถานที่สำคัญและประตูเดินทางกลับ จุดสีทองคือตำแหน่งของคุณ"
 thai["Welcome guide"]="ผู้ต้อนรับ"
 thai["Return to your guild island to upgrade the tavern."]="กลับเกาะกิลด์ของคุณเพื่ออัปเกรดโรงเตี๊ยม"
+local appearanceThai = {
+
+	["Character appearance"]="รูปลักษณ์ตัวละคร", ["Your character"]="ตัวละครของคุณ",
+	["{class} · Level {level} · Cosmetic changes only"]="{class} · ระดับ {level} · เปลี่ยนเฉพาะรูปลักษณ์",
+	["Race"]="เผ่ารูปลักษณ์", ["Body"]="รูปร่าง", ["Body preset"]="แบบรูปร่าง", ["Skin tone"]="สีผิว",
+	["Head / Hair"]="ใบหน้า / ผม", ["Outfit"]="เครื่องแต่งกาย", ["Head"]="ใบหน้า", ["Hair"]="ทรงผม", ["Beard"]="เครา",
+	["Head preset"]="แบบใบหน้า", ["Hair style"]="ทรงผม", ["Beard style"]="แบบเครา", ["Hair color"]="สีผม",
+	["Ears"]="ใบหู", ["Tusks"]="เขี้ยว", ["Back view"]="ด้านหลัง",
+	["Human"]="มนุษย์", ["Elf"]="เอลฟ์", ["Orc"]="ออร์ค", ["Dwarf"]="คนแคระ",
+	["Standard"]="มาตรฐาน", ["Slim"]="เพรียว", ["Athletic"]="แข็งแรง", ["Heavy"]="ใหญ่", ["Graceful"]="สง่างาม",
+	["Ranger"]="นักเดินป่า", ["Sturdy"]="บึกบึน", ["Lean"]="กระชับ", ["Compact"]="กะทัดรัด", ["Broad"]="กว้าง", ["Stout"]="หนาแน่น",
+	["Every race supports Knight, Warrior, Archer, Mage and Priest."]="ทุกเผ่าเลือกอัศวิน นักรบ นักธนู นักเวท และนักบวชได้",
+	["Inner top"]="เสื้อชั้นใน", ["Inner bottom"]="กางเกงชั้นใน", ["Outer top"]="เสื้อชั้นนอก", ["Outer bottom"]="กางเกงชั้นนอก",
+	["Chest armor"]="เกราะอก", ["Shoulders"]="เกราะไหล่", ["Gloves"]="ถุงมือ", ["Boots"]="รองเท้า", ["Belt"]="เข็มขัด", ["Cape"]="ผ้าคลุม", ["Headwear"]="หมวก",
+	["Traveler tunic"]="เสื้อนักเดินทาง", ["Traveler trousers"]="กางเกงนักเดินทาง", ["Mage robe"]="เสื้อคลุมนักเวท", ["Priest robe"]="เสื้อคลุมนักบวช",
+	["Wizard robe"]="เสื้อคลุมพ่อมด", ["Wizard hat"]="หมวกพ่อมด", ["Ranger hood"]="ฮู้ดนักเดินป่า", ["Traveler cape"]="ผ้าคลุมนักเดินทาง", ["Guild cape"]="ผ้าคลุมกิลด์",
+	["Knight chest armor"]="เกราะอกอัศวิน", ["Knight shoulders"]="เกราะไหล่อัศวิน",
+	["Base covering stays on when clothing is removed. Equipment is managed in Inventory."]="ชุดปกปิดพื้นฐานคงอยู่เมื่อถอดเสื้อผ้า จัดการอุปกรณ์ต่อสู้ได้ในกระเป๋า",
+	["Planned layered garment · fit pending"]="เสื้อผ้าหลายชั้นตามแผน · รอตรวจความพอดี",
+	["Separate accessory · fit pending"]="ชิ้นส่วนแยก · รอตรวจความพอดี",
+	["Preview substitute · production meshes and clothing fit pending"]="แบบทดแทนสำหรับพรีวิว · รอโมเดลจริงและตรวจเสื้อผ้า",
+	["Appearance preview"]="พรีวิวรูปลักษณ์", ["Unavailable"]="ยังไม่พร้อม", ["None"]="ไม่สวม",
+	["Front"]="ด้านหน้า", ["Side"]="ด้านข้าง", ["Back"]="กลับ", ["Reset View"]="รีเซ็ตมุมมอง", ["Zoom in"]="ซูมเข้า", ["Zoom out"]="ซูมออก",
+	["Compare before"]="ดูก่อนเปลี่ยน", ["Show after"]="ดูหลังเปลี่ยน", ["Apply"]="ยืนยัน", ["Applying…"]="กำลังยืนยัน…",
+	["Discard unsaved appearance changes?"]="ทิ้งการเปลี่ยนรูปลักษณ์ที่ยังไม่ได้บันทึกหรือไม่?",
+	["Keep editing"]="แก้ไขต่อ", ["Discard draft"]="ทิ้งการเปลี่ยน",
+	["The appearance request was sent. Closing the preview does not cancel it."]="ส่งคำขอเปลี่ยนรูปลักษณ์แล้ว การปิดพรีวิวจะไม่ยกเลิกคำขอ",
+	["Keep waiting"]="รอต่อ", ["Close preview"]="ปิดพรีวิว",
+	["Discard this appearance draft?"]="ทิ้งแบบร่างรูปลักษณ์นี้?", ["Request sent. Closing will not cancel it."]="ส่งคำขอแล้ว การปิดจะไม่ยกเลิกคำขอ",
+	["Placeholder · fit pending"]="โมเดลทดแทน · รอตรวจเสื้อผ้า", ["Preview unavailable"]="ยังไม่มีพรีวิว",
+	["PORCELAIN"]="ขาวนวล", ["LIGHT"]="อ่อน", ["TAN"]="แทน", ["BROWN"]="น้ำตาล", ["DEEP"]="เข้ม",
+	["PEARL"]="ไข่มุก", ["FAIR"]="ขาว", ["GOLDEN"]="ทอง", ["BRONZE"]="บรอนซ์", ["ASH"]="เทา",
+	["SAGE"]="เขียวอ่อน", ["OLIVE"]="เขียวมะกอก", ["MOSS"]="เขียวมอส", ["FOREST"]="เขียวป่า", ["GREY_GREEN"]="เขียวเทา", ["RUDDY"]="แดงระเรื่อ", ["DEEP_BROWN"]="น้ำตาลเข้ม",
+	["DARK BROWN"]="น้ำตาลเข้ม", ["BLACK"]="ดำ", ["BLOND"]="ทอง", ["WHITE"]="ขาว", ["RED"]="แดง",
+}
+for key, value in pairs(appearanceThai) do thai[key] = value end
+local appearanceMessages = {
+	AppearancePreviewOnly={"Preview only. Apply to request a cosmetic change.", "พรีวิวเท่านั้น กดยืนยันเพื่อส่งคำขอเปลี่ยนรูปลักษณ์"},
+	AppearanceCompactPreviewOnly={"Preview only · Apply to confirm", "พรีวิวเท่านั้น · กดยืนยันเพื่อส่งคำขอ"},
+	AppearanceCompactUnsaved={"Unsaved appearance", "ยังไม่บันทึกรูปลักษณ์"},
+	AppearanceCompactPending={"Waiting for server", "รอเซิร์ฟเวอร์ยืนยัน"},
+	AppearanceCompactUnconfirmed={"Save unconfirmed · Apply paused", "ยังไม่ทราบผล · พักปุ่มยืนยัน"},
+	AppearanceCompactCommitted={"Appearance confirmed", "ยืนยันรูปลักษณ์แล้ว"},
+	AppearanceCompactRefused={"Not sent · finish current action", "ยังไม่ส่ง · รอรายการปัจจุบัน"},
+	AppearanceCompactRejected={"Appearance refused · draft kept", "คำขอถูกปฏิเสธ · เก็บแบบร่างไว้"},
+	AppearanceCompactStale={"Saved look changed · draft kept", "ข้อมูลเปลี่ยน · เก็บแบบร่างไว้"},
+	AppearanceUnsaved={"Unsaved appearance changes.", "มีการเปลี่ยนรูปลักษณ์ที่ยังไม่ได้บันทึก"},
+	AppearancePending={"Waiting for the server to confirm this appearance. Do not submit again.", "กำลังรอเซิร์ฟเวอร์ยืนยันรูปลักษณ์ กรุณารอ"},
+	AppearanceOutcomeUnconfirmed={"The server has not confirmed this request yet. You can close the preview; Apply stays paused until confirmation.", "เซิร์ฟเวอร์ยังไม่ยืนยันคำขอนี้ ปิดพรีวิวได้ และจะพักปุ่มยืนยันไว้จนทราบผล"},
+	AppearanceRequestRefused={"The appearance request was not sent. Wait for the current action to finish.", "ยังไม่ได้ส่งคำขอรูปลักษณ์ กรุณารอให้รายการปัจจุบันเสร็จก่อน"},
+	AppearanceCommitted={"Appearance confirmed by the server.", "เซิร์ฟเวอร์ยืนยันรูปลักษณ์แล้ว"},
+	AppearanceDraftStale={"Your saved appearance changed. Your draft is kept; Cancel to reload it.", "รูปลักษณ์ที่บันทึกเปลี่ยนแล้ว ยังเก็บแบบร่างไว้ กดยกเลิกเพื่อโหลดข้อมูลล่าสุด"},
+	AppearanceActorUnavailable={"This actor's appearance is unavailable. Refresh the guild state.", "ยังไม่มีข้อมูลรูปลักษณ์ตัวละครนี้ กรุณารอข้อมูลกิลด์ล่าสุด"},
+	AppearancePreviewUnavailable={"The appearance model is unavailable. Your saved look is unchanged.", "ยังไม่มีโมเดลพรีวิว รูปลักษณ์ที่บันทึกยังคงเดิม"},
+	InvalidAppearance={"Choose a valid appearance.", "กรุณาเลือกรูปลักษณ์ที่ถูกต้อง"},
+	AppearanceAssetUnavailable={"This appearance asset is not available in this world.", "ยังไม่เปิดใช้ชิ้นส่วนรูปลักษณ์นี้ในโลกนี้"},
+	AppearanceFitUnverified={"This garment's fit has not been approved for this body.", "ยังไม่รับรองความพอดีของชิ้นส่วนนี้กับรูปร่างที่เลือก"},
+	AppearanceNotOwned={"This appearance item is not owned.", "ยังไม่มีสิทธิ์ใช้ชิ้นส่วนรูปลักษณ์นี้"},
+	AppearanceFitMismatch={"This item does not fit the selected body family.", "ชิ้นส่วนนี้ไม่รองรับตระกูลรูปร่างที่เลือก"},
+	AppearanceRaceMismatch={"This item does not support the selected cosmetic race.", "ชิ้นส่วนนี้ไม่รองรับเผ่ารูปลักษณ์ที่เลือก"},
+	StaleAppearanceRevision={"Your appearance changed. Cancel to reload the latest saved selection.", "รูปลักษณ์เปลี่ยนแล้ว กดยกเลิกเพื่อโหลดข้อมูลล่าสุด"},
+	AppearanceUnavailable={"Character customization is not available in this world.", "ยังไม่เปิดปรับแต่งตัวละครในโลกนี้"},
+	AppearanceRevisionConflict={"Your saved appearance changed. Your draft is kept; Cancel to reload it.", "รูปลักษณ์ที่บันทึกเปลี่ยนแล้ว ยังเก็บแบบร่างไว้ กดยกเลิกเพื่อโหลดข้อมูลล่าสุด"},
+	AppearanceActorNotOwned={"This hero is not in your owned roster.", "นักผจญภัยคนนี้ไม่ได้อยู่ในกิลด์ของคุณ"},
+	AppearanceRevisionLimit={"This appearance needs support before it can change again.", "กรุณาติดต่อฝ่ายช่วยเหลือก่อนเปลี่ยนรูปลักษณ์นี้อีกครั้ง"},
+	InvalidAppearanceRace={"Choose a registered cosmetic race.", "กรุณาเลือกเผ่ารูปลักษณ์ที่รองรับ"},
+	InvalidBodyPreset={"This body does not support the selected cosmetic race.", "แบบรูปร่างนี้ไม่รองรับเผ่ารูปลักษณ์ที่เลือก"},
+	InvalidSkinPalette={"Choose a skin tone for the selected cosmetic race.", "กรุณาเลือกสีผิวของเผ่ารูปลักษณ์ที่เลือก"},
+	InvalidHairColor={"Choose a registered hair color.", "กรุณาเลือกสีผมที่รองรับ"},
+	UnknownAppearanceAsset={"This appearance item is not in the catalog.", "ไม่มีชิ้นส่วนรูปลักษณ์นี้ในรายการ"},
+	AppearanceSlotMismatch={"This appearance item cannot be used in that slot.", "ไม่สามารถใช้ชิ้นส่วนรูปลักษณ์นี้ในช่องดังกล่าว"},
+	AppearanceSlotConflict={"An appearance slot is selected more than once.", "มีการเลือกชิ้นส่วนซ้ำในช่องรูปลักษณ์"},
+	InvalidRaceFeature={"Choose supported ears or tusks for the selected race.", "กรุณาเลือกใบหูหรือเขี้ยวที่รองรับเผ่าที่เลือก"},
+	GameplayEquipmentSlot={"Manage combat weapons in Inventory.", "จัดการอาวุธต่อสู้ได้ในกระเป๋า"},
+	HeroUnavailable={"This hero is assigned elsewhere or is not healthy.", "นักผจญภัยคนนี้กำลังทำงานอื่นหรือยังไม่พร้อม"},
+	StaleRevision={"Your guild was refreshed. Your appearance draft is kept.", "ข้อมูลกิลด์อัปเดตแล้ว ยังเก็บแบบร่างรูปลักษณ์ไว้"},
+	LeaveTowerFirst={"Leave the tower before changing your appearance.", "ออกจากหอคอยก่อนเปลี่ยนรูปลักษณ์"},
+}
+for key, values in pairs(appearanceMessages) do englishCodes[key] = values[1]; thai[key] = values[2] end
+local heroMentorMessages={
+ HeroMentorStarted={"Hero training started. Watch the selected hero or cancel training.","เริ่มฝึกฮีโร่แล้ว ดูการฝึกของฮีโร่ที่เลือกหรือยกเลิกได้"},
+ ReturnToGuild={"Return to your Guild island and leave combat first.","กลับเกาะกิลด์ของคุณและออกจากการต่อสู้ก่อน"},
+ ProfileNotReady={"Your profile is not ready. Wait for saving or loading to finish.","ข้อมูลผู้เล่นยังไม่พร้อม กรุณารอโหลดหรือบันทึกให้เสร็จ"},
+ ActorNotReady={"Wait until your character is alive and ready.","รอจนตัวละครมีชีวิตและพร้อมก่อน"},
+ SavePending={"Checking the save result. Please wait.","กำลังตรวจสอบผลการบันทึก กรุณารอสักครู่"},
+ PartyRequired={"Add this hero to your party before training or advancing.","เพิ่มฮีโร่ตัวนี้เข้าทีมก่อนฝึกหรือเปลี่ยนอาชีพ"},
+ AdvancementLocked={"Complete the required level, quests and Tower progress first.","ผ่านข้อกำหนดเลเวล เควสต์ และหอคอยก่อน"},
+ InvalidClassPath={"Choose a path available for this hero's current class and tier.","เลือกสายที่ตรงกับอาชีพและขั้นปัจจุบันของฮีโร่"},
+ FinishExpedition={"Finish or leave the current expedition or Tower run first.","จบหรือออกจากภารกิจสำรวจหรือหอคอยปัจจุบันก่อน"},
+ HeroMentorSaving={"Saving the hero trial. Please wait; cancellation is unavailable.","กำลังบันทึกผลฝึกฮีโร่ กรุณารอ ยังยกเลิกไม่ได้"},
+ HeroMentorCleanupFailed={"Training could not restore your hero. Please rejoin before trying again.","คืนฮีโร่จากสนามฝึกไม่สำเร็จ กรุณาเข้าเกมใหม่ก่อนลองอีกครั้ง"},
+ InvalidTrial={"Training could not start. Please try again.","เริ่มการฝึกไม่สำเร็จ กรุณาลองอีกครั้ง"},
+ ClassTrialLocked={"Requires this hero at Lv35 and Hall4.","ฮีโร่ตัวนี้ต้องเลเวล 35 และหอกิลด์ระดับ 4"},
+ HeroMentorUnavailable={"Hero training is not available in this environment.","สภาพแวดล้อมนี้ยังไม่เปิดฝึกฮีโร่"},
+ HeroMentorAlreadyProven={"This hero already passed this path trial.","ฮีโร่ผ่านการฝึกสายนี้แล้ว"},
+ HeroMentorRequired={"Complete this hero's mentor trial for this path.","ผ่านบททดสอบครูฝึกของฮีโร่ตัวนี้ในสายที่เลือกก่อน"},
+ HeroMentorActive={"Finish or cancel hero training first.","จบหรือยกเลิกการฝึกฮีโร่ก่อน"},
+ HeroMentorComplete={"Hero trial saved. You can now advance this hero.","บันทึกผลฝึกแล้ว เปลี่ยนอาชีพฮีโร่ตัวนี้ได้"},
+ HeroMentorCancelled={"Hero training cancelled.","ยกเลิกการฝึกฮีโร่แล้ว"},
+ HeroMentorFailed={"Hero trial failed. Try again.","ฮีโร่ไม่ผ่านบททดสอบ ลองใหม่ได้"},
+ HeroChanged={"Hero or session changed. Start a new trial.","ฮีโร่หรือเซสชันเปลี่ยน กรุณาเริ่มบททดสอบใหม่"},
+}
+for key,values in pairs(heroMentorMessages)do englishCodes[key]=values[1];thai[key]=values[2]end
+thai["Complete this hero's mentor trial for this path."]="ผ่านบททดสอบครูฝึกของฮีโร่ตัวนี้ในสายที่เลือกก่อน"
+thai["Hero mentor training"]="ฝึกฮีโร่กับครูฝึก"
+thai["This hero must demonstrate a borrowed art and defeat the construct. Training does not advance the class."]="ฮีโร่ต้องใช้ท่าทดลองให้เกิดผลจริงและชนะหุ่นฝึก การฝึกยังไม่เปลี่ยนอาชีพ"
+thai["Hero trial proven"]="ผ่านบททดสอบฮีโร่แล้ว"
+thai["Ready for hero trial"]="พร้อมฝึกฮีโร่"
+thai["Train hero"]="ฝึกฮีโร่"
+thai["Cancel hero training"]="ยกเลิกการฝึกฮีโร่"
 return Localization

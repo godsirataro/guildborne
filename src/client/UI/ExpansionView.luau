@@ -111,7 +111,8 @@ return function(ui: any)
 			if tab=="Status" then drawStatus(data,catalog,actorId,busy);return end
 			if catalog.StatusAllocationAvailable then button(head,"Status points",not busy,function()ui.navigate("Status")end).Name="OpenStatus" end
 			local build=Rules.build(data,actorId)
-			local skillBlocked=busy or (e.tower.active ~= nil and e.tower.active.state == "Fighting")
+			local mentorSession=data.heroMentorSession
+			local skillBlocked=busy or mentorSession~=nil or (e.tower.active ~= nil and e.tower.active.state == "Fighting")
 			text(head,T(a.classId).." · "..T(if build.path then Rules.Paths[build.path].Name else "Class 1").." · Lv"..a.level,18)
 			text(head,T("Skill points")..": "..(a.level-1-Rules.spent(build)),16)
 			text(head,"Use the combat buttons: starter art, Class 2 art, and Class 3 art. On keyboard: Q, Z, and X. Learn each branch art to unlock its slot.",16)
@@ -131,8 +132,26 @@ return function(ui: any)
 				button(loadout,T(if Rules.Abilities[id] then Rules.Abilities[id].Name else "Starter skill")..(if build.equipped==id then " ✓" else ""),not busy,function() ui.act("EquipSkill",{actorId=actorId,skillId=id}) end)
 			end
 			if not catalog.StatusAllocationAvailable then button(loadout,if confirm=="reset" then "Confirm reset · 10 Gold" else "Reset skills · 10 Gold",not busy,function() if confirm=="reset" then confirm=nil;ui.act("ResetSkills",{actorId=actorId}) else confirm="reset";ui.render() end end) end
+			local mentorActor=data.heroMentor and data.heroMentor[actorId]
+			if mentorSession then
+				local activeHero=data.adventurers[mentorSession.actorId]
+				local activePath=Rules.Paths[mentorSession.pathId]
+				local sessionCard=card(ui.scroll,"Hero mentor training")
+				text(sessionCard,(if activeHero then activeHero.name else mentorSession.actorId).." · "..T(if activePath then activePath.Name else mentorSession.pathId),16)
+				text(sessionCard,T(if mentorSession.status=="Saving" then "HeroMentorSaving" else "HeroMentorActive"),15)
+				button(sessionCard,"Cancel hero training",not busy and mentorSession.status=="Active",function()ui.act("CancelHeroMentor",{})end).Name="CancelHeroMentor"
+			end
+			if mentorActor then
+				local trialCard=card(ui.scroll,"Hero mentor training")
+				text(trialCard,"This hero must demonstrate a borrowed art and defeat the construct. Training does not advance the class.",15)
+				for _,pathId in ipairs((function():{string}local ids={};for id in pairs(mentorActor)do table.insert(ids,id)end;table.sort(ids);return ids end)())do
+					local state=mentorActor[pathId]
+					text(trialCard,T(Rules.Paths[pathId].Name).." · "..T(if state.ready then "Hero trial proven" else state.problem or "Ready for hero trial"),14)
+					button(trialCard,T("Train hero").." · "..T(Rules.Paths[pathId].Name),not skillBlocked and not state.problem and not state.ready,function()ui.act("StartHeroMentor",{actorId=actorId,pathId=pathId})end).Name="TrainHero_"..pathId
+				end
+			end
 			local advancement=card(ui.scroll,"Class advancement")
-			text(advancement,AdvancementCopy.header(data.settings.language,Rules.advancementLevel(data,2)),16)
+			text(advancement,AdvancementCopy.header(data.language,Rules.advancementLevel(data,2)),16)
 			if catalog.StatusAllocationAvailable or Rules.usesNoviceProgression(data) then text(advancement,"Advancing refunds your spent skill and attribute points. Assign them again after choosing your class.",15) end
 			if not data.quests.firstClears.quarry_patrol then
 				text(advancement,"Complete and claim Trail Watch, Timber Escort, then Quarry Patrol in Quests. The mine story and borrowed trial do not replace these expeditions.",15)
@@ -148,9 +167,15 @@ return function(ui: any)
 				if path.Floor>0 then text(advancement,T("Tower progress: {current} / {required}",{current=e.tower.highest,required=path.Floor}),14) end
 				if path.Prestige then text(advancement,"Requires Hero Quarters. Prestige trades damage or health for a different role.",14) end
 				if path.Secret then text(advancement,"Secret clue: gather all four resources and conquer floor 10.",14) end
-				local problem=Rules.advanceProblem(data,a,build,id)
+				local releaseProblems=data.releaseAdvancementProblems and data.releaseAdvancementProblems[actorId]
+				local releaseProblem=releaseProblems and releaseProblems[id]
+				local mentorProblem=mentorActor and mentorActor[id] and mentorActor[id].advanceProblem
+				local problem=releaseProblem or mentorProblem or Rules.advanceProblem(data,a,build,id)
 				local reasons={AdvancementLocked="Complete the listed level, quest and Tower requirements.",QuartersRequired="Build Hero Quarters first.",SecretUndiscovered="Gather wood, stone, ore and herbs to reveal this path."}
-				local label=if skillBlocked then T("Unavailable") elseif problem then T(reasons[problem] or "Unavailable") else T(if confirm==id then "Confirm class" else "Advance")..": "..T(path.Name)
+				reasons.ReleaseContentUnavailable="Available after the Lv1–35 preview."
+				reasons.ClassMentorRequired="Complete the Class2 mentor chapter first."
+				reasons.HeroMentorRequired="Complete this hero's mentor trial for this path."
+				local label=if skillBlocked then T("Unavailable") elseif problem then T(reasons[problem] or problem) else T(if confirm==id then "Confirm class" else "Advance")..": "..T(path.Name)
 				button(advancement,label,not skillBlocked and problem==nil,function() if confirm==id then confirm=nil;ui.act("AdvanceClass",{actorId=actorId,pathId=id}) else confirm=id;ui.render() end end).Name="Advance_"..id
 			end
 			if actorId=="player" then
@@ -159,6 +184,11 @@ return function(ui: any)
 			end
 		else
 			local t=e.tower;local run=t.active
+			if catalog.ReleaseContent and catalog.ReleaseContent.TowerUnavailable then
+				text(head,"Available after the Lv1–35 preview.",16)
+				if run then button(head,"Leave tower",not busy,function()ui.act("LeaveTower")end)end
+				return
+			end
 			text(head,T("Highest floor")..": "..t.highest.." / 10",18)
 			text(head,"Clear all enemies to earn first-clear or repeat rewards. Bosses guard floors 5 and 10. Rest between floors; checkpoint 5 unlocks entry at 6.",16)
 			text(head,"Falling ends the attempt. Rejoining restarts the current fight without granting rewards. Leaving keeps cleared floors.",16)

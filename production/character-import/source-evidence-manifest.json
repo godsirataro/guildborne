@@ -1,0 +1,529 @@
+{
+  "schemaVersion": 1,
+  "date": "2026-10-11",
+  "baseHead": "4cc9a8232e0fd9ae7bf517983c274e800e8ad4a4",
+  "sourceState": "UNCOMMITTED_PRIVATE_CANDIDATE",
+  "status": "REVIEW_ONLY_NOT_PRODUCTION_OR_HUMAN_ACCEPTANCE",
+  "files": [
+    {
+      "bytes": 56764,
+      "path": "assets/accessories/export/ACC_HAIR_HUMAN_01.fbx",
+      "sha256": "92865f69213866d59a37eb50e87e952e3a034beeae627bfdbc85a8694900e440"
+    },
+    {
+      "bytes": 12468,
+      "path": "assets/accessories/export/ACC_HAIR_HUMAN_01.glb",
+      "sha256": "0832afeacb1b55d4e5c6ddcbf622b1c9e78493587a3a6967c04b86d2c3d712b4"
+    },
+    {
+      "bytes": 133510,
+      "path": "assets/accessories/source/ACC_HAIR_HUMAN_01.blend",
+      "sha256": "9aee37dd33c992b0b906239ea04569efc08670c5d3d385b6bdf2408523b96575"
+    },
+    {
+      "bytes": 335292,
+      "path": "assets/characters/export/CHR_BDY_HUMAN_HEAVY_V01.fbx",
+      "sha256": "2e353a204d3bf2aaf16746f281dec4efea3a0a1343999198c1cac0edb176e291"
+    },
+    {
+      "bytes": 111296,
+      "path": "assets/characters/export/CHR_BDY_HUMAN_HEAVY_V01.glb",
+      "sha256": "a8eef5385b4e00f89cc74816851aa920406e86493a62e2e48c0201edb4e86fc8"
+    },
+    {
+      "bytes": 335276,
+      "path": "assets/characters/export/CHR_BDY_HUMAN_STANDARD_V01.fbx",
+      "sha256": "7e51a15b046e96d9ce98959fbaa68fdb26f82a2c303ccbbdcaa577e423950c18"
+    },
+    {
+      "bytes": 111224,
+      "path": "assets/characters/export/CHR_BDY_HUMAN_STANDARD_V01.glb",
+      "sha256": "db2370d83f1535326f72e88d27539cd1297433d42f3023b522c4e3effaf5785e"
+    },
+    {
+      "bytes": 752377,
+      "path": "assets/characters/export/previews/CHR_BDY_HUMAN_HEAVY_V01_back.png",
+      "sha256": "a00c772317733923ee34b7e6154105a5bf6d3bd00acd4d5642d4ee981aa58a8d"
+    },
+    {
+      "bytes": 802654,
+      "path": "assets/characters/export/previews/CHR_BDY_HUMAN_HEAVY_V01_exploded.png",
+      "sha256": "7861323784e722ab27f5bebbe37e86f40a3f62eb1362e6cc64b57916c2fd3d69"
+    },
+    {
+      "bytes": 3649,
+      "path": "assets/characters/export/previews/CHR_BDY_HUMAN_HEAVY_V01_fbx_reimport.json",
+      "sha256": "0cf2e7ed09640c573461a7c22ca4bf6e642304601a5beefe7689510288ab8a02"
+    },
+    {
+      "bytes": 770294,
+      "path": "assets/characters/export/previews/CHR_BDY_HUMAN_HEAVY_V01_front.png",
+      "sha256": "a361623ceca44f31c361a97e5ae356c1fc52b0b9f6650a7d138441f7499ff0d3"
+    },
+    {
+      "bytes": 3681,
+      "path": "assets/characters/export/previews/CHR_BDY_HUMAN_HEAVY_V01_glb_reimport.json",
+      "sha256": "08454836b8a3f55b06a0516339adcbc8924fc87b06c5838382a3f19eace24141"
+    },
+    {
+      "bytes": 6303,
+      "path": "assets/characters/export/previews/CHR_BDY_HUMAN_HEAVY_V01_inspection.json",
+      "sha256": "d9f77b06162cd09b4b99a8ab8a8c4556cc3626277533a3ac0a0242cb57e022ca"
+    },
+    {
+      "bytes": 680368,
+      "path": "assets/characters/export/previews/CHR_BDY_HUMAN_HEAVY_V01_side.png",
+      "sha256": "2cd6a4c0a407fab1cbb8f00989e75268b9ce471be12a0b854947b355affb475d"
+    },
+    {
+      "bytes": 735276,
+      "path": "assets/characters/export/previews/CHR_BDY_HUMAN_STANDARD_V01_back.png",
+      "sha256": "2cb9cefb4d8ce3a1eb9e36b4f13710c1ac29a73b3583cfd14b955511acf93ba5"
+    },
+    {
+      "bytes": 772605,
+      "path": "assets/characters/export/previews/CHR_BDY_HUMAN_STANDARD_V01_exploded.png",
+      "sha256": "ba0024d648493c21c3442ad6a1f4a04397205bdda88b80a3f5ad02f69d37cb48"
+    },
+    {
+      "bytes": 3615,
+      "path": "assets/characters/export/previews/CHR_BDY_HUMAN_STANDARD_V01_fbx_reimport.json",
+      "sha256": "ea97509e70f70e1c545ddd52b94d3415eb684364abec4f3c5d4c3536aa7466d4"
+    },
+    {
+      "bytes": 753291,
+      "path": "assets/characters/export/previews/CHR_BDY_HUMAN_STANDARD_V01_front.png",
+      "sha256": "695929efb687af5bd972e9f1409bdd1b18f86e912aa84909167ba25fb664965c"
+    },
+    {
+      "bytes": 3684,
+      "path": "assets/characters/export/previews/CHR_BDY_HUMAN_STANDARD_V01_glb_reimport.json",
+      "sha256": "c8c86f8f985030186f4e8db788e8ef01ae83a74f47ab39217477e4891e1af854"
+    },
+    {
+      "bytes": 6311,
+      "path": "assets/characters/export/previews/CHR_BDY_HUMAN_STANDARD_V01_inspection.json",
+      "sha256": "08c520537828f36600a136cff3dcbcee70facffa12b698dd7a5e4e5847f16c28"
+    },
+    {
+      "bytes": 671864,
+      "path": "assets/characters/export/previews/CHR_BDY_HUMAN_STANDARD_V01_side.png",
+      "sha256": "9633775c906057b9d4cf6d61d766f0e3df18aec2fc23d47c985e80d1d8e11114"
+    },
+    {
+      "bytes": 133451,
+      "path": "assets/characters/source/CHR_BDY_HUMAN_HEAVY_V01.blend",
+      "sha256": "e020f65f6ca137e17061d6a0c0107375293d617c9d480acb498648022f6f95fd"
+    },
+    {
+      "bytes": 133711,
+      "path": "assets/characters/source/CHR_BDY_HUMAN_STANDARD_V01.blend",
+      "sha256": "d2d0c49d61f811715553fb7aa898a001edf03c2aa4ccf45756e017ab90247226"
+    },
+    {
+      "bytes": 57516,
+      "path": "assets/clothing/export/CLO_HAT_WIZARD_01.fbx",
+      "sha256": "d03a54eb6caf4921e0c0eb89fe250a58769d4287ea45d98888992b0651d45924"
+    },
+    {
+      "bytes": 15132,
+      "path": "assets/clothing/export/CLO_HAT_WIZARD_01.glb",
+      "sha256": "71ffc47d85a764fec6a2d8616ed7f34e7af98f5bed85330cc55ec3cc493cf971"
+    },
+    {
+      "bytes": 63884,
+      "path": "assets/clothing/export/CLO_ROBE_WIZARD_01.fbx",
+      "sha256": "6458a2975036325ddc2ce756c1c1c068502a5b0ece11768e66179997f907bdf3"
+    },
+    {
+      "bytes": 45164,
+      "path": "assets/clothing/export/CLO_ROBE_WIZARD_01.glb",
+      "sha256": "7ee1d9ef05f72559ab534766bdd54174d729453962ae147aca55174255e43902"
+    },
+    {
+      "bytes": 62124,
+      "path": "assets/clothing/export/CLO_TROUSERS_TRAVELER_01.fbx",
+      "sha256": "51b283dcf826dc6acff61a4c123aed12b322496d6bd3a7aadf76d3bf11585f14"
+    },
+    {
+      "bytes": 37228,
+      "path": "assets/clothing/export/CLO_TROUSERS_TRAVELER_01.glb",
+      "sha256": "0551cd8adddb8491b6492d14cb7148707de3fbd06fa0a461e7c2ab928eb0553c"
+    },
+    {
+      "bytes": 61292,
+      "path": "assets/clothing/export/CLO_TUNIC_TRAVELER_01.fbx",
+      "sha256": "788b5f3afe32dd438bce3511fbb50e1bd402593d476aee7834e1f0ea762fb2e6"
+    },
+    {
+      "bytes": 32800,
+      "path": "assets/clothing/export/CLO_TUNIC_TRAVELER_01.glb",
+      "sha256": "6565465597ec6742415e2fd6ccbcd169a060b68b298f5c3f30b4abd117bcd094"
+    },
+    {
+      "bytes": 133511,
+      "path": "assets/clothing/source/CLO_HAT_WIZARD_01.blend",
+      "sha256": "3fb86aea332a186e5d41900545de394503bdaad7d0301b535c29fc30442034c4"
+    },
+    {
+      "bytes": 133519,
+      "path": "assets/clothing/source/CLO_ROBE_WIZARD_01.blend",
+      "sha256": "4059f8e6076b78318a62ceaad81e994ad385ea01fd0b2fa83e32ebd9921286b3"
+    },
+    {
+      "bytes": 133783,
+      "path": "assets/clothing/source/CLO_TROUSERS_TRAVELER_01.blend",
+      "sha256": "d0297418878a31e9f10b79e4856203c0ecfa1f999aa5b0dd72a961820bbf05ce"
+    },
+    {
+      "bytes": 133597,
+      "path": "assets/clothing/source/CLO_TUNIC_TRAVELER_01.blend",
+      "sha256": "89474904b3c7d6e5adf8867c2057d38ef0997a0f0059072b989ccd6b477290d3"
+    },
+    {
+      "bytes": 1954,
+      "path": "docs/APPEARANCE_DATA_MODEL.md",
+      "sha256": "fc17bb19730ae0c36ecb727cbc9f5e0436202ae2be2a085e9f2543b1a48eb02c"
+    },
+    {
+      "bytes": 2328,
+      "path": "docs/CHARACTER_ASSET_STATUS.md",
+      "sha256": "42f935498d179718a50523cb04a6a72fa30c4e87563d5f9226b1c3d4e61fa7b7"
+    },
+    {
+      "bytes": 2221,
+      "path": "docs/CHARACTER_GAP_ANALYSIS.md",
+      "sha256": "aff64271b4726cba2a277fe9d70a4b660ae920d326bcc827d19cd12edd18203e"
+    },
+    {
+      "bytes": 5314,
+      "path": "docs/CHARACTER_PIPELINE.md",
+      "sha256": "b5919fad386d3f14b5ec3478cd66f5919f51065abc221b4fde97ea1d1bde9328"
+    },
+    {
+      "bytes": 8564,
+      "path": "docs/CHARACTER_STUDIO_TEST.md",
+      "sha256": "5b131a6b4048a2e91eb5a77d1f3e4b119644a696a2d13a2ea6540ce74676596f"
+    },
+    {
+      "bytes": 1606,
+      "path": "docs/CHARACTER_UAT.md",
+      "sha256": "df56efcc953f0e1891e17f5467ac1d3d6712558a92223947de72e34dea94ced7"
+    },
+    {
+      "bytes": 1808,
+      "path": "docs/CLOTHING_COMPATIBILITY.md",
+      "sha256": "87969af275fd0bf0c9a70a8a48bd27a30d3bf3e7f2248a1d7c68795cabc7e01c"
+    },
+    {
+      "bytes": 9982,
+      "path": "production/character-import/blender-handoff.md",
+      "sha256": "cd20e8a1ea9e30ee18c90af9adee5c7edd75fd5e60a5f8f9487dce163ee71bc5"
+    },
+    {
+      "bytes": 22253,
+      "path": "production/character-import/geometry-report.json",
+      "sha256": "c96ab5b38d8d4bda346c80c81f78d09a9ae826ee68d322594d81dcc42f541c7c"
+    },
+    {
+      "bytes": 86982,
+      "path": "production/character-import/studio-local-articulated-mesh.png",
+      "sha256": "f2d5c9c4c0e428d833f38732c7315517eeca9bcbb8787bb391854dd765d5fb0f"
+    },
+    {
+      "bytes": 59028,
+      "path": "production/character-import/studio-local-mesh-preview.png",
+      "sha256": "0c094bdf42142c077955eb2b7db4b533446db8314eb10ab9412ff98b08b33899"
+    },
+    {
+      "bytes": 25942,
+      "path": "production/character-import/studio-npc-rig-observations.json",
+      "sha256": "3214a4e356883c66576317042851b3b521c06fc84ffd45dd81c0c5c53defab98"
+    },
+    {
+      "bytes": 6559,
+      "path": "production/character-import/studio-observations.json",
+      "sha256": "c838110c08a1536492268376c9f80082879a9a59624757918265bc5c18950626"
+    },
+    {
+      "bytes": 225555,
+      "path": "production/character-import/studio-ui-desktop.png",
+      "sha256": "d4b38d7cf03ab96f628a3a3dacb64dddcb946cb6bb6faac7a3a919129062af55"
+    },
+    {
+      "bytes": 88414,
+      "path": "production/character-import/studio-ui-phone-landscape.png",
+      "sha256": "692a7b0c5265fa9b63decefff3859dfafa35555414f4bbccded8f077859762db"
+    },
+    {
+      "bytes": 67721,
+      "path": "production/character-import/studio-ui-phone-portrait-th.png",
+      "sha256": "1ec001a80f8336cf63d725c6df5579c11bc97001133312c8c7ab947b58d5f1d4"
+    },
+    {
+      "bytes": 155,
+      "path": "production/character-kit-v1/aliases.json",
+      "sha256": "21ecf79c8aec017ffb1a146debe3fb16746e598327b0a0788a31c4e38fe37303"
+    },
+    {
+      "bytes": 15920,
+      "path": "production/character-kit-v1/catalog.json",
+      "sha256": "dec57e1c04ed315ef69de214eecb02a6a401b28f2cdb50262ebf032f87b89f0c"
+    },
+    {
+      "bytes": 212,
+      "path": "production/character-kit-v1/intake-receipt.json",
+      "sha256": "96da063cae8db658ea93bf6d19415a4676d0497e13eebc83e3fd3e05aaca6063"
+    },
+    {
+      "bytes": 14251,
+      "path": "production/character-kit-v1/original/Guildborne_Character_Pipeline_v1/01_ASTRA_MASTER_PROMPT.md",
+      "sha256": "75f6ccf164778cc6b22a6bfb7f34b43c1e49960f1814eb99797cdaa9f394bc11"
+    },
+    {
+      "bytes": 3978,
+      "path": "production/character-kit-v1/original/Guildborne_Character_Pipeline_v1/02_BLENDER_PARTNER_PROMPT.md",
+      "sha256": "980b4a8525260e89d334375e5f1dce8f6feaac129268f2eb149636c3b1416daf"
+    },
+    {
+      "bytes": 6668,
+      "path": "production/character-kit-v1/original/Guildborne_Character_Pipeline_v1/03_SHARED_CONTRACT.md",
+      "sha256": "86fdf04a62b69fbc257b4a3412dfffb1ee398ed7f59179087be4f9e0d38e3eaf"
+    },
+    {
+      "bytes": 7395,
+      "path": "production/character-kit-v1/original/Guildborne_Character_Pipeline_v1/04_ASSET_REGISTRY.md",
+      "sha256": "b9e2879a0f12ab36f1fee7cd7819b6c666d8edcdf18845712f32aab74ba7f854"
+    },
+    {
+      "bytes": 3106,
+      "path": "production/character-kit-v1/original/Guildborne_Character_Pipeline_v1/docs/BLENDER_PARTNER_BRIEF.md",
+      "sha256": "612efef19a2ad1d76dee045a14ef6ef0432283aa6447de36553b252ecff58c88"
+    },
+    {
+      "bytes": 3670,
+      "path": "production/character-kit-v1/original/Guildborne_Character_Pipeline_v1/docs/QA_ACCEPTANCE.md",
+      "sha256": "9d2ddc632e62ce2ce10e6eca28d20f800f77da4a3fac626ddc35a57596ae003b"
+    },
+    {
+      "bytes": 21939,
+      "path": "production/character-kit-v1/original/Guildborne_Character_Pipeline_v1/Guildborne_Asset_Registry.xlsx",
+      "sha256": "59bc57bb17456989dba47d194598b31f744cda860bf695c72ef2584630c3faa1"
+    },
+    {
+      "bytes": 30522,
+      "path": "production/character-kit-v1/original/Guildborne_Character_Pipeline_v1/manifest/asset_registry.csv",
+      "sha256": "437f63e27df2ffba1837ddb541f8d83fd82c51a20bbf063472d7556b7f29f2db"
+    },
+    {
+      "bytes": 58419,
+      "path": "production/character-kit-v1/original/Guildborne_Character_Pipeline_v1/manifest/asset_registry.json",
+      "sha256": "59001cb78d39ff2a2cab0855966d58b7f12e41d47ff34d958d58472906dff967"
+    },
+    {
+      "bytes": 1837,
+      "path": "production/character-kit-v1/original/Guildborne_Character_Pipeline_v1/manifest/body_presets.csv",
+      "sha256": "0a5e47726d119c2ba32a08035fb4b3152be2a9e8112ac29642c82861bcc4ca0d"
+    },
+    {
+      "bytes": 4126,
+      "path": "production/character-kit-v1/original/Guildborne_Character_Pipeline_v1/manifest/body_presets.json",
+      "sha256": "b5e0eac69c1816207eb7f07b236f4b879af394a67a1457c5c98357303bbcb6b4"
+    },
+    {
+      "bytes": 5227,
+      "path": "production/character-kit-v1/original/Guildborne_Character_Pipeline_v1/manifest/fit_qa_matrix.csv",
+      "sha256": "7f50a62f14af0ee17896d07a8a3670e3072e147e79c2cb6c69be40b0aad69bf7"
+    },
+    {
+      "bytes": 2540,
+      "path": "production/character-kit-v1/original/Guildborne_Character_Pipeline_v1/manifest/skin_palettes.csv",
+      "sha256": "fa50de76aeff3ca97efcb4803c40e1842061d9142afa7dc390a9c15518f56b39"
+    },
+    {
+      "bytes": 5132,
+      "path": "production/character-kit-v1/original/Guildborne_Character_Pipeline_v1/manifest/skin_palettes.json",
+      "sha256": "7d0a0b62a285890eac511b3798f11eafd8a77b8c97e91cc87b66e54060432e27"
+    },
+    {
+      "bytes": 3754,
+      "path": "production/character-kit-v1/original/Guildborne_Character_Pipeline_v1/README.md",
+      "sha256": "328c4618d0b513ecd9ff7c4a439d881161b5318c6548aa4eaf2334ca7e83afda"
+    },
+    {
+      "bytes": 10112,
+      "path": "production/character-kit-v1/original/Guildborne_Character_Pipeline_v1/tools/build_registry.py",
+      "sha256": "a9a088a4e376827f81cb53357865a41bd0f3969b433872ac815e9bba04dc9c39"
+    },
+    {
+      "bytes": 3441,
+      "path": "production/character-kit-v1/original/Guildborne_Character_Pipeline_v1/tools/validate_manifest.py",
+      "sha256": "1dcc9a8f5e9529c01df6ae896f0ffc5ed356806e73afd90912b4c0f4f5ea5e48"
+    },
+    {
+      "bytes": 3285,
+      "path": "production/character-kit-v1/README.md",
+      "sha256": "7ef96ff802c868359d2d1c099438ca3ec55ea203e81b547a55a49ce4bc2a5e3e"
+    },
+    {
+      "bytes": 7076,
+      "path": "production/character-kit-v1/SHARED_CONTRACT.md",
+      "sha256": "f320218b3a97545200c26bcda6ba32ed7bf67937dd3f8a51182f13ac389e7579"
+    },
+    {
+      "bytes": 5161,
+      "path": "src/client/Controllers/AppearancePreviewController.luau",
+      "sha256": "fdcb4a6610012f807a8ea344df64b5789e8885e3d750ba6b9fa0088936edd4fa"
+    },
+    {
+      "bytes": 11203,
+      "path": "src/client/Controllers/SliceController.luau",
+      "sha256": "d79c021a45b62c614b5c249a3b62c775838a185a272ac9b39007b9889deac3a9"
+    },
+    {
+      "bytes": 33882,
+      "path": "src/client/UI/CharacterCustomizationUI.luau",
+      "sha256": "0f15f57f62ea82ad4cddb8161c98210fce281f44b4dd48e340b3e7f4d8e24f75"
+    },
+    {
+      "bytes": 40723,
+      "path": "src/client/UI/SliceUI.luau",
+      "sha256": "4aeb279e482a766ca87b24b3cdd317ec2cd288df7ab194b1816ad3057dd8a60e"
+    },
+    {
+      "bytes": 21232,
+      "path": "src/server/ServerBootstrap.server.luau",
+      "sha256": "6f97e2a43b9ebb3afc30c0290000891398ca79213eed1cd29f4afdc8bd266f5f"
+    },
+    {
+      "bytes": 1539,
+      "path": "src/server/Services/CharacterAppearance/AppearanceAssetRegistry.luau",
+      "sha256": "cc7872e202c815f118b056b4d9a508e315d961882fd28cb99fc2464b973d8f47"
+    },
+    {
+      "bytes": 4035,
+      "path": "src/server/Services/CharacterAppearance/AppearanceService.luau",
+      "sha256": "3d006e97348e50cf55add3783a4c9131f526ad379ed55250a489fd3f55fbee18"
+    },
+    {
+      "bytes": 807,
+      "path": "src/server/Services/CharacterAppearance/PreviewPolicy.luau",
+      "sha256": "18f29e7db2b9c9073149a092cc8bea8ddd0a12f18c70b17cda76504df981e69b"
+    },
+    {
+      "bytes": 287,
+      "path": "src/server/Services/CharacterAppearance/RigAssemblyService.luau",
+      "sha256": "c04bb6fdf60660ddcc01b3bb8b4c52319391c3e2e48f8104dd976559e075a7db"
+    },
+    {
+      "bytes": 7996,
+      "path": "src/server/Services/HeroRig.luau",
+      "sha256": "4d4f930bec06d44450f40cc51083c1e9c3bb594132743aa7fbd20d71388aa284"
+    },
+    {
+      "bytes": 13694,
+      "path": "src/server/Services/HeroService.luau",
+      "sha256": "43e57e45553a66c113e5b744837ff58a46991d2d8772c26ef5d73aa8e85421c8"
+    },
+    {
+      "bytes": 7579,
+      "path": "src/server/Systems/Commands.luau",
+      "sha256": "789c314cbe107d89315f5b03021c37e0086d347c6188cadf2ef43a708d502041"
+    },
+    {
+      "bytes": 18017,
+      "path": "src/server/Systems/ProfileSchema.luau",
+      "sha256": "ec16ff60b69310632400507c4eec338ed575fba24270da743a9dd0e7e916ffd5"
+    },
+    {
+      "bytes": 5625,
+      "path": "src/server/Systems/ViewProjection.luau",
+      "sha256": "48d3a52e74e0fa27cfcaf68c48326f92eb9adaaea378f79b06ccb2d16f1d8234"
+    },
+    {
+      "bytes": 151646,
+      "path": "src/shared/Config/Localization.luau",
+      "sha256": "8a16fb19888efc2a2020aaec9f5bfe0d5ae32bb14f25d1dfe3cf45f8156b5b87"
+    },
+    {
+      "bytes": 48287,
+      "path": "src/shared/Data/AppearanceCatalog.luau",
+      "sha256": "33cb075fc497daca137d2ab396fc4defddaf1d807bb0b28b3bfa4225a045071f"
+    },
+    {
+      "bytes": 5902,
+      "path": "src/shared/Data/AppearanceRules.luau",
+      "sha256": "0d61db9d50dacae9072033d3772b3a7663fe36dcdc4618a3c91c55331c5c2eb9"
+    },
+    {
+      "bytes": 6473,
+      "path": "src/shared/Network/Protocol.luau",
+      "sha256": "fe71a5026a6031df78e8fbf9a90ffc184593b6ddc287ca53b02ecf17019db771"
+    },
+    {
+      "bytes": 422786,
+      "path": "src/shared/Presentation/ModularAppearance/GeneratedGeometry.luau",
+      "sha256": "67885a4b7f7249bb04475a12a83c579a96c6f334631186286e71107d0b94f07f"
+    },
+    {
+      "bytes": 103926,
+      "path": "src/shared/Presentation/ModularAppearance/GeneratedRig.luau",
+      "sha256": "53adc61a5ae31c880610e9e8b7d83f928a47081c8b26054b34edc85e235ee342"
+    },
+    {
+      "bytes": 10157,
+      "path": "src/shared/Presentation/ModularAppearance/LocalGeometryPreview.luau",
+      "sha256": "b78d3bb037d1ee105ee7ae6cb7581eabaf5b767fbdcc9035340e23dc8d6a9bf8"
+    },
+    {
+      "bytes": 6983,
+      "path": "src/shared/Presentation/ModularAppearance/LocalGeometryRig.luau",
+      "sha256": "479bdd175fbff96421cfd16b577da1c43cab2bd9dd28a36e4b37e2e07ffabfc5"
+    },
+    {
+      "bytes": 11942,
+      "path": "src/shared/Presentation/ModularAppearance/Renderer.luau",
+      "sha256": "f3192db87810192a1f90ead072b8e3ea2b350916294335578afb6bd7b2fc9221"
+    },
+    {
+      "bytes": 2514,
+      "path": "src/shared/Presentation/ModularAppearance/Skeleton.luau",
+      "sha256": "10a0dccdc9f73ffd4565c256822d14961b28b487b7a7f9ef26c5ad4fb7205edd"
+    },
+    {
+      "bytes": 19489,
+      "path": "tests/appearance.luau",
+      "sha256": "589912771249a929e783a14b21ac47c6d8ec1a155b4539677334d5595e65135b"
+    },
+    {
+      "bytes": 498,
+      "path": "tests/run_appearance.luau",
+      "sha256": "aa5f5fbbdadb8ddfa21fa5ca41d1c2b522879cbe84cf2752552fe47add9f6ffb"
+    },
+    {
+      "bytes": 36633,
+      "path": "tests/run.luau",
+      "sha256": "a0731a1d205430602230f277beaa1e5e1c36f91912a1221cbd129f04d0e8c293"
+    },
+    {
+      "bytes": 9311,
+      "path": "tests/studio_modular_character_probe.luau",
+      "sha256": "ae0ee1131d37438fca3a66a17234f1ad7f7e5eaf57d3c69e766f4e621516eb09"
+    },
+    {
+      "bytes": 35842,
+      "path": "tools/blender_modular_human.py",
+      "sha256": "3e98b54c39cc0a6ea52581b5aeed80569d348eaf4c991be3eb88191506db3d61"
+    },
+    {
+      "bytes": 4449,
+      "path": "tools/build_appearance_catalog.py",
+      "sha256": "c5bd8ca55c951d313ada0f490cb3491f501f81c7a6944f5a5a1b72de66ec5e98"
+    },
+    {
+      "bytes": 3128,
+      "path": "tools/build_character_preview.ps1",
+      "sha256": "143fc76d34e39b5667c2da86b4b6a727ad62bb5e13c95b9c96cb3eae807e370b"
+    }
+  ]
+}

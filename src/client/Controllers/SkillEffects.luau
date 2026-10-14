@@ -5,10 +5,33 @@ local Debris=game:GetService("Debris")
 local Input=game:GetService("UserInputService")
 local Config=require(game.ReplicatedStorage.Shared.Config.VFXConfig)
 local PathVFX=require(game.ReplicatedStorage.Shared.Config.PathVFX)
+local Timeline=require(game.ReplicatedStorage.Shared.Presentation.ActionTimeline)
 local V=Vector3.new
 return function()
 	local count=0;local primaryCount=0;local criticalCount=0;local detailedUntil=0
 	local lastCast=setmetatable({} :: {[Model]: number}, {__mode="k"})
+	local lastStamp=setmetatable({} :: {[Model]: number}, {__mode="k"})
+	local generations=setmetatable({} :: {[Model]: number}, {__mode="k"})
+	local function alive(model: Model): boolean
+		local hp=model:GetAttribute("CombatHealth")
+		local humanoid=model:FindFirstChildOfClass("Humanoid")
+		return model:IsDescendantOf(workspace) and (typeof(hp)~="number" or hp>0) and (not humanoid or humanoid.Health>0)
+	end
+	-- Capture action identity before waiting. Replacements, death and streaming
+	-- invalidate delayed cosmetics without changing authoritative combat results.
+	local function later(model: Model,seconds: number,callback: () -> ())
+		local generation=generations[model];local stamp=model:GetAttribute("ActionAt")
+		local due=os.clock()+seconds
+		task.delay(seconds,function()
+			if alive(model) and generations[model]==generation and model:GetAttribute("ActionAt")==stamp and os.clock()-due<=.2 then callback() end
+		end)
+	end
+	local function atMarker(model: Model,at: number,callback: () -> ())
+		local stamp=model:GetAttribute("ActionAt")
+		local age=if typeof(stamp)=="number" then workspace:GetServerTimeNow()-stamp else 0
+		if age<0 or age>at then return end
+		later(model,at-age,callback)
+	end
 	local function low(): boolean return workspace:GetAttribute(Config.QualityAttribute)=="Low" end
 	local function reduced(): boolean return Input.TouchEnabled or low() end
 	local colors=Config.Palette
@@ -92,8 +115,7 @@ return function()
 			make(V(.12,.12,.5),CFrame.lookAt(p,charge),color,Enum.PartType.Block,.1,{Position=charge,Transparency=1})
 		end
 		-- Release coincides with ActionPose's .10–.24 second swing.
-		task.delay(.1,function()
-			if not model:IsDescendantOf(workspace) then return end
+		atMarker(model,Timeline.Release,function()
 			if hand and hand:IsA("BasePart") and not hand:FindFirstChild("GuildborneCastTrail") then
 				local a=Instance.new("Attachment");a.Name="GuildborneTrailRoot";a.Position=V(0,-.6,0);a.Parent=hand
 				local b=Instance.new("Attachment");b.Name="GuildborneTrailTip";b.Position=V(0,-2.8,0);b.Parent=hand
@@ -105,16 +127,11 @@ return function()
 			end
 			swordWave(aim,color,wide)
 		end)
-		task.delay(.24,function()
-			if not model:IsDescendantOf(workspace) then return end
+		atMarker(model,Timeline.Contact,function()
 			burst(target,color,true)
 			-- Ground-level shock crescent leaves the target silhouette readable.
 			arc(CFrame.new(target-V(0,2.4,0)),if wide then 4 else 2.5,color,0,math.pi*1.8,.35)
 		end)
-	end
-	-- Delayed phrases remain cosmetic and stop spawning when their caster disappears.
-	local function later(model: Model,seconds: number,callback: () -> ())
-		task.delay(seconds,function() if model:IsDescendantOf(workspace) then callback() end end)
 	end
 	local function pulse(at: Vector3,color: Color3)
 		local n=if reduced() then 6 else 8
@@ -146,7 +163,7 @@ return function()
 		elseif class=="Warrior" then
 			local cf=aim*CFrame.new(0,.3,-2)*CFrame.Angles(0,0,-.6)
 			make(V(3.4,.16,.25),cf,color,Enum.PartType.Block,.22,{CFrame=cf+aim.LookVector*2,Size=V(1,.04,.08),Transparency=1},.2,"Primary")
-			later(model,.18,function() make(V(.15,1.3,.15),CFrame.new(target)*CFrame.Angles(0,0,.7),white,Enum.PartType.Block,.18,{Size=V(.04,2,.04),Transparency=1},.2,"Primary") end)
+			atMarker(model,Timeline.Contact,function() make(V(.15,1.3,.15),CFrame.new(target)*CFrame.Angles(0,0,.7),white,Enum.PartType.Block,.18,{Size=V(.04,2,.04),Transparency=1},.2,"Primary") end)
 		else
 			if length>.1 then make(if class=="Archer" then V(.12,.12,2.4) else V(.85,.85,.85),CFrame.lookAt(source,target),color,if class=="Mage" then Enum.PartType.Ball else Enum.PartType.Block,.18,{Position=target,Transparency=.35},.15,"Primary") end
 			later(model,.18,function()
@@ -266,7 +283,14 @@ return function()
 			end
 			return
 		end
+		if not alive(model) then return end
+		local stamp=model:GetAttribute("ActionAt")
+		if typeof(stamp)=="number" then
+			if not Timeline.active(workspace:GetServerTimeNow()-stamp) or lastStamp[model]==stamp then return end
+		end
 		local now=os.clock();if lastCast[model] and now-lastCast[model]<.1 then return end;lastCast[model]=now
+		if typeof(stamp)=="number" then lastStamp[model]=stamp end
+		generations[model]=(generations[model] or 0)+1
 		local cap=if Input.TouchEnabled then Config.Budget.Touch else Config.Budget.Desktop
 		if skill and (low() or distance>Config.Distance.Detail or now<detailedUntil or count>cap-12) then
 			compact(model,class,effect,aim,target,color);return

@@ -111,6 +111,8 @@ function Rig.Outfit(model: Model, armor: string?, accessory: string?)
 	require(script.Parent.WardrobeVisuals)(model,armor,accessory)
 end
 function Rig.Race(model: Model,race: string)
+	-- Cosmetic overlays own visible race features; legacy ancestry still drives stats.
+	if model:GetAttribute("ModularAppearanceActive")==true then return end
 	if model:GetAttribute("RenderedRace")==race then return end
 	local head=model:FindFirstChild("Head") :: BasePart?;if not head then return end
 	local old=model:FindFirstChild("AncestryVisual");if old then old:Destroy() end

@@ -1,0 +1,73 @@
+{
+  "date": "2026-10-14",
+  "status": "REVIEW_LOCAL_PARTIAL",
+  "publicReady": false,
+  "sourceTests": {
+    "run": 732,
+    "status": "PASS"
+  },
+  "productionToolTests": {
+    "run": 177,
+    "skipped": 5,
+    "status": "PASS"
+  },
+  "independentSourceReview": {
+    "status": "PASS_SCOPED",
+    "reviewers": [
+      "launch_progression",
+      "launch_rewards"
+    ],
+    "limitations": "Not full gameplay, art, cloud or release approval"
+  },
+  "studio": {
+    "status": "PARTIAL_PASS",
+    "placeId": 0,
+    "gameId": 0,
+    "persistence": "Memory",
+    "scriptEntries": 357,
+    "rewardRequests": 6,
+    "noviceChaptersClaimed": 1,
+    "finalLevel": 3
+  },
+  "cloud": "PENDING",
+  "multiplayer": "PENDING",
+  "physicalDevices": "PENDING",
+  "humanUAT": "PENDING",
+  "commerce": "DISABLED_PENDING_IMPLEMENTATION",
+  "runtimeAssets": "INCOMPLETE",
+  "candidateSha256": "842df8d99735bf5a245c816983f6441e95b88a90c0a9d59a9808447b061bd2b9",
+  "logReceipts": [
+    {
+      "path": "production\\launch\\integration\\validation-current.log",
+      "sha256": "4725bc839b3c4eef04a4edbac863d2e6b7ad3b9026f167f9ff95550e00d64112",
+      "bytes": 59002
+    },
+    {
+      "path": "production\\launch\\integration\\agentic-final.log",
+      "sha256": "ed7040fb715af10a747c183f83466888fa31f3d17bab8ccaa094422afbb8c7f3",
+      "bytes": 413
+    },
+    {
+      "path": "production\\launch\\integration\\forge-current.log",
+      "sha256": "9c2693793f0c71ea7b09796b6e38675cdfe061b5936477fca3a428f8a0f0a483",
+      "bytes": 88
+    },
+    {
+      "path": "production\\launch\\integration\\studio-validate.log",
+      "sha256": "cfc5904d678bd83095ece23e16a7e8d591217a02d00f81d5cb60096322475870",
+      "bytes": 90
+    },
+    {
+      "path": "production\\launch\\integration\\studio-verify.log",
+      "sha256": "30bdcea6ce0f919e099ba206d16ce5b1bae48fcf1aef0b462a4bdc41394dacc9",
+      "bytes": 113
+    },
+    {
+      "path": "production\\launch\\integration\\doctor-current.log",
+      "sha256": "9f3e6d21ca40d4c3560d6a689bd179bd5d3daf94c07e2bc07b6c87cef187a621",
+      "bytes": 367
+    }
+  ],
+  "latestIncrement": "hero-mentor-ui-checks.json",
+  "historicalSnapshot": true
+}

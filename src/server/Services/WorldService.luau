@@ -11,10 +11,10 @@ local LandWorld=require(script.Parent.GuildLandWorld)
 local HallWorld=require(script.Parent.GuildHallWorld)
 local World = {}
 
-function World.new(onOpen: (Player, string) -> (), reward: any, towerResult: any, intent: any,regionalRewardFactory:any?)
+function World.new(onOpen: (Player, string) -> (), reward: any, towerResult: any, intent: any,regionalRewardFactory:any?,release:any?)
 	local folder = Instance.new("Folder"); folder.Name = "GuildborneWorld"; folder.Parent = workspace
 	local templates = Kit.Build(); templates.Parent = ServerStorage
-	local expansion=require(script.Parent.ExpansionWorld)(onOpen,intent)
+	local expansion=require(script.Parent.ExpansionWorld)(onOpen,intent,release)
 	local heroes = require(script.Parent.HeroService)(templates, onOpen, reward,towerResult,regionalRewardFactory)
 	Lighting.ClockTime = 10.5; Lighting.Brightness = 2
 	Lighting.Ambient = Color3.fromRGB(111, 114, 109)
@@ -24,7 +24,7 @@ function World.new(onOpen: (Player, string) -> (), reward: any, towerResult: any
 	local grade = Instance.new("ColorCorrectionEffect"); grade.Name = "GuildborneDaylight"
 	grade.TintColor = Color3.fromRGB(255, 245, 228); grade.Contrast = .04; grade.Saturation = -.06; grade.Parent = Lighting
 	local city=require(script.Parent.CityWorld)(folder,templates,onOpen,intent)
-	city.regions=require(script.Parent.RegionalWorld)(folder,city.town,intent,templates)
+	city.regions=require(script.Parent.RegionalWorld)(folder,city.town,intent,templates,release)
 	city.portals=table.clone(city.guildAccessPortals)
 	for _,region in pairs(city.regions) do table.insert(city.portals,region.entry);table.insert(city.portals,region.exit) end
 	local civic=require(script.Parent.CivicCityWorld)(folder,city.town,intent,onOpen)
@@ -188,6 +188,8 @@ function World.new(onOpen: (Player, string) -> (), reward: any, towerResult: any
 	function service.CampaignContext(player:Player):any?
 		local plot=plots[player];return if plot then {origin=plot.origin,model=plot.model} else nil
 	end
+	function service.BeginHeroMentor(player:Player,actorId:string):any? return heroes.BeginMentor(player,actorId)end
+	function service.EndHeroMentor(player:Player)heroes.EndMentor(player)end
 	function service.CompanionEvidence(player:Player,actorId:string):any? return heroes.CompanionEvidence(player,actorId) end
 	function service.RefreshCampaignCompanions(player:Player)heroes.Travel(player)end
 	function service.IslandDirectory(player:Player):{any} return visits.directory(player) end

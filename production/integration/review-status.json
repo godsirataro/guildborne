@@ -1,0 +1,44 @@
+{
+  "status": "LOCAL_REVIEW_CANDIDATE_NOT_FULL_GAME_ACCEPTANCE",
+  "candidateSha256": "cce23c8edf8e97cd6efc87f7201abe4fef7abea7a5f1d56402f251d0e6f53f36",
+  "embeddedScriptsMatched": 352,
+  "mismatches": 0,
+  "studioId": "2b68ef16-ca19-4e9f-8658-23538750cd2f",
+  "placeId": 0,
+  "gameId": 0,
+  "persistence": "Memory",
+  "finalPreviewCleanup": "PASS",
+  "originalGameSuite": {
+    "tests": 714,
+    "status": "PASS"
+  },
+  "agenticSuite": {
+    "tests": 177,
+    "skipped": 5,
+    "status": "PASS"
+  },
+  "pending": [
+    "audible runtime bindings/listening",
+    "Borin ordinary quest journey",
+    "detailed weapon/rig gameplay binding",
+    "full UI novice progression route",
+    "two/four-client test",
+    "persistent rejoin and cross-server",
+    "physical device",
+    "human art and UAT"
+  ],
+  "evidence": {
+    "actionCancellationProbe.json": "86e2a55318e680cf2a7233c8de722847b0363cc47120a5364264d623a83d9186",
+    "borinDetailedLifecycle.json": "623bda5b7857ab6491be54f612dc06c545bdd797a399fc7337c072ed2f4481e7",
+    "borinNativeProbe.json": "d746dfce9b826c9c3219f26033bbf1f2a2421273c26898f23a852b7196cb80bc",
+    "final-actionCancellationProbe.json": "86e2a55318e680cf2a7233c8de722847b0363cc47120a5364264d623a83d9186",
+    "final-borinNativeProbe.json": "d746dfce9b826c9c3219f26033bbf1f2a2421273c26898f23a852b7196cb80bc",
+    "final-finalPreviewCleanup.json": "10b8e42066d8c03501bacadc17e6d32663ba9586afb5c094843d3ca04e55a38f",
+    "final-finalSync.json": "8dad4acddadbe1aa8e41cd5d84b63c50d837b04b4183271c495fe679f15e9222",
+    "final-presentationProbe.json": "2143f8d639b3d8fc07a074b23108f9b3481b741e63a8b2ec062659e13e5982fd",
+    "finalSync.json": "4a4816ecb2f07e552b4c4913830da98482c5f07c8774ab58793dc5d27384b77b",
+    "journey-summary.json": "07928c8b2c992bdb908d577af42534f42fe8695dfe5db8c0fd00f30f92e5cd17",
+    "presentationProbe.json": "2143f8d639b3d8fc07a074b23108f9b3481b741e63a8b2ec062659e13e5982fd",
+    "weaponGripProbe.json": "20728bef11c0bc00ebe44987b6031af3bbd661c4f534d2f46125cd30017312dc"
+  }
+}

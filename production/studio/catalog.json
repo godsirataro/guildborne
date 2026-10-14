@@ -471,7 +471,8 @@
       "skills": [
         "guildborne-tooling",
         "guildborne-research",
-        "guildborne-adopt"
+        "guildborne-adopt",
+        "guildborne-learning"
       ],
       "tier": "specialist",
       "title": "Tools Engineer"
@@ -535,6 +536,7 @@
     "animation": "animator",
     "audio": "audio-designer",
     "audit": "technical-director",
+    "borin-integration": "npc-designer",
     "brand-art": "ui-artist",
     "character-import": "character-artist",
     "character-intake": "asset-curator",
@@ -549,12 +551,17 @@
     "human-body": "character-artist",
     "icon-art": "ui-artist",
     "inventory-crafting": "systems-engineer",
+    "launch-content": "gameplay-designer",
+    "launch-integration": "technical-director",
+    "launch-rewards": "systems-engineer",
+    "learning-loop": "tools-engineer",
     "localization": "localization-specialist",
     "market-integrity": "market-engineer",
     "monsters": "combat-engineer",
     "npc-life": "npc-designer",
     "performance": "performance-engineer",
     "physical-mobile": "qa-engineer",
+    "presentation-integration": "animator",
     "private-cross-server": "qa-engineer",
     "progression": "gameplay-designer",
     "race-expansion": "character-artist",

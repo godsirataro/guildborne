@@ -1,13 +1,22 @@
 --!strict
 -- Optional Chapter 01 domain. Apply only to disposable transaction candidates.
 -- observe is private server evidence; never expose it as a client command.
-return function(content:any,util:any,economy:any,config:any)
+return function(content:any,util:any,economy:any,config:any,validationCatalog:any?)
+ local savedCatalog=validationCatalog or config
+ assert(savedCatalog.Version==config.Version and #savedCatalog.Chapters>=#config.Chapters,"Incompatible campaign validation catalog")
+ for i,chapter in ipairs(config.Chapters)do
+  assert(util.equal(chapter,savedCatalog.Chapters[i]),"Active campaign must be a validation prefix")
+ end
+ for id,choices in pairs(config.Choices)do assert(util.equal(choices,savedCatalog.Choices[id]),"Incompatible campaign choices")end
  local S={}
  function S.new():any return {version=config.Version,claimed=0,objectives={},choices={}}end
  local function available(data:any):boolean
   return content.ProgressionMode(data)==content.ProgressionRulesets.Novice and data.progression.novice and data.progression.novice.claimed==6 and data.personalGuild.buildings.guildHall>=1 and data.progression.campaign~=nil
  end
  function S.validate(data:any)
+  -- Validate historical earned state with the complete catalog. Active commands below
+  -- still use only the selected release prefix and cannot progress a later chapter.
+  local config=savedCatalog
   local s=data.progression.campaign;assert(type(s)=="table"and s.version==config.Version)
   assert(content.ProgressionMode(data)==content.ProgressionRulesets.Novice)
   assert(util.integer(s.claimed,0,#config.Chapters)and type(s.objectives)=="table"and type(s.choices)=="table")

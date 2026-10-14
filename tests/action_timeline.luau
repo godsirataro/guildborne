@@ -1,0 +1,10 @@
+-- Standalone pure presentation contract; does not simulate server combat.
+local T=require("../src/shared/Presentation/ActionTimeline")
+assert(not T.active(0/0) and not T.active(math.huge) and not T.active(-.1))
+assert(T.phase(0)=="Anticipation" and T.phase(.1)=="Release")
+assert(T.phase(.24)=="Contact" and T.phase(.3)=="Recovery" and T.phase(.63)=="Idle")
+assert(#T.crossed(.05,.25)==2)
+assert(#T.crossed(.25,.25)==0 and #T.crossed(.4,.2)==0)
+assert(#T.crossed(.25,.3)==1 and T.crossed(.25,.3)[1]=="recovery")
+assert(#T.crossed(.3,10)==0 and #T.crossed(0/0,.3)==0)
+print("PASS action timeline: finite input, phase boundaries, skipped frames, replay and stale observations")

@@ -1,0 +1,13 @@
+{
+  "candidate": "55404c199438de6138cf0fee877151c9bc3c422e88a1f1c57e3ba2cf06e08a17",
+  "description": "Preserved existing scout observation before later boss approach/cast. Player counters4/301; scout was killed by companions. This was not a successful player cast.",
+  "observation": {
+    "content": [
+      {
+        "type": "text",
+        "text": "{\"enemy\":{\"CombatHealth\":0,\"CombatTarget\":\"a:Warrior\",\"CombatMaxHealth\":135,\"TemplateOnly\":false,\"EncounterMarker\":\"ScoutCamp\",\"DamageCueAt\":1791953382.169364,\"Feedback\":\"-5\",\"CombatState\":\"Dead\",\"Taunted\":false,\"PreviewState\":\"Dead\",\"EnemyAnimationClass\":\"Knight\",\"EnemyActionAt\":1791953380.887597,\"RigType\":\"Humanoid\",\"OwnerUserId\":11732987790,\"Region\":\"Greenwood\",\"VisualRole\":\"Melee\",\"DamageDealt\":99,\"EnemyTitle\":\"Greenwood Scout\",\"DamageCue\":\"melee_hit\",\"FeedbackAt\":1791953382.169417,\"EncounterId\":\"greenwood_scout\",\"RewardState\":\"Rewarded\",\"PreviewPhase\":2,\"GuildborneEnemy\":true,\"PreviewHealth\":0,\"PreviewOnly\":false,\"EnemyArticulated\":true},\"player\":{\"AbilityCount\":4,\"CombatHealth\":138,\"AbilityName\":\"Berserker Art\",\"ActionTargetPosition\":\"30, 2.5, 4\",\"Skill1Name\":\"Power Strike\",\"ClassId\":\"Warrior\",\"Skill2Name\":\"Berserker Art\",\"CombatMaxHealth\":138,\"Skill3Cooldown\":0,\"RaceId\":\"Human\",\"NoParentArt\":false,\"GuildbornePlayer\":true,\"CombatState\":\"Idle\",\"ActionAt\":1791953181.012974,\"XP\":1763,\"ClassPath\":\"Berserker\",\"Skill2Cooldown\":0,\"Skill1Cooldown\":0,\"OwnerUserId\":11732987790,\"WeaponId\":\"training_sword\",\"ActionEffect\":\"Basic\",\"DamageDealt\":301,\"Feedback\":\"+24\",\"DamageCue\":\"melee_hit\",\"FeedbackAt\":1791952016.9258,\"ActionRange\":5,\"DamageCueAt\":1791952016.925612,\"Action\":\"Gather\",\"BasicAttackCount\":8,\"RenderedRace\":\"Human\",\"Cooldown\":0,\"Level\":35}}"
+      }
+    ],
+    "isError": false
+  }
+}

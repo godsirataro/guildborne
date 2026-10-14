@@ -7,18 +7,23 @@ local Rules=require(game.ReplicatedStorage.Shared.Data.Expansion)
 local Content=require(script.Parent.Parent.Config.Content)
 local City=require(game.ReplicatedStorage.Shared.Config.City)
 local V=Vector3.new
-return function(parent:Instance,town:Instance,intent:any,templates:Folder):any
+return function(parent:Instance,town:Instance,intent:any,templates:Folder,release:any?):any
     local maps=MapKit();local regions={}
+    local function blocked(action:string,args:any):boolean return release~=nil and release.Enabled==true and release.problem({},action,args)~=nil end
     local function portal(container:Instance,name:string,position:Vector3,destination:string):Part
         for _,x in ipairs({-5,5}) do Kit.Part(container,"RegionalGatePost",V(1,10,1.5),position+V(x,0,0),Color3.fromRGB(104,79,54),Enum.Material.Wood,true) end
         Kit.Part(container,"RegionalGateLintel",V(11,1,1.5),position+V(0,5,0),Color3.fromRGB(163,143,88),Enum.Material.Wood,true)
         local anchor=Kit.Part(container,name,V(8,9,.3),position,Color3.fromRGB(110,185,132),Enum.Material.Neon,false)
         anchor.Transparency=.8;anchor.CanQuery=false;anchor.CanTouch=false;anchor:SetAttribute("TravelDestination",destination)
         game:GetService("CollectionService"):AddTag(anchor,"GuildborneTravelPortal")
-        Kit.Label(anchor,name,Locale.translate("th",name),5)
+        local unavailable=blocked("TravelZone",{zone=destination})
+        anchor:SetAttribute("ReleaseUnavailable",unavailable)
+        Kit.Label(anchor,if unavailable then name.." · Not open in Lv1–35" else name,if unavailable then Locale.translate("th",name).." · ยังไม่เปิดใน Lv1–35" else Locale.translate("th",name),5)
         local prompt=Instance.new("ProximityPrompt");prompt.ActionText="Travel / เดินทาง";prompt.ObjectText=name.." / "..Locale.translate("th",name)
         prompt.MaxActivationDistance=10;prompt.RequiresLineOfSight=false;prompt.Parent=anchor
+        prompt.Enabled=not unavailable
         prompt.Triggered:Connect(function(player)
+            if unavailable then return end
             local root=player.Character and player.Character:FindFirstChild("HumanoidRootPart")
             if root and root:IsA("BasePart") and (root.Position-anchor.Position).Magnitude<=14 then intent(player,"TravelZone",{zone=destination}) end
         end)
@@ -27,7 +32,7 @@ return function(parent:Instance,town:Instance,intent:any,templates:Folder):any
     for _,regionId in ipairs(City.RegionOrder) do
     local worldDef=City.Regions[regionId];local landing=City.Destinations[regionId]
     local model=maps:FindFirstChild(regionId) :: Model;model.Parent=parent;model:PivotTo(CFrame.new(worldDef.X,0,worldDef.Z))
-    model:SetAttribute("TraversalEnabled",true)
+    model:SetAttribute("TraversalEnabled",not blocked("TravelZone",{zone=regionId}))
     local entry=portal(town,regionId,V(0,5.5,worldDef.CityGateZ),regionId)
     local exit=portal(model,"Central City",V(landing.X,7,landing.Z+12),"City")
     local spawn=Instance.new("SpawnLocation");spawn.Name=landing.Spawn;spawn.Size=V(6,1,6);spawn.Position=V(landing.X,2.5,landing.Z)
@@ -52,10 +57,13 @@ return function(parent:Instance,town:Instance,intent:any,templates:Folder):any
                 leaf.CFrame*=CFrame.Angles(0,angle,math.rad(20));leaf.CanQuery=false;leaf.CanTouch=false
             end
         end
-        local name=Content.Items[def.Item].Name;Kit.Label(anchor,name,Locale.translate("th",name),3)
+        local unavailable=blocked("GatherResource",{nodeId=id})
+        anchor:SetAttribute("ReleaseUnavailable",unavailable)
+        local name=Content.Items[def.Item].Name;Kit.Label(anchor,if unavailable then name.." · Not open in Lv1–35" else name,if unavailable then Locale.translate("th",name).." · ยังไม่เปิดใน Lv1–35" else Locale.translate("th",name),3)
         local prompt=Instance.new("ProximityPrompt");prompt.Name="Gather";prompt.ActionText="Gather / เก็บ";prompt.ObjectText=name.." / "..Locale.translate("th",name)
         prompt.HoldDuration=.5;prompt.MaxActivationDistance=9;prompt.RequiresLineOfSight=false;prompt.Parent=anchor
-        prompt.Triggered:Connect(function(player)intent(player,"GatherResource",{nodeId=id})end)
+        prompt.Enabled=not unavailable
+        prompt.Triggered:Connect(function(player)if not unavailable then intent(player,"GatherResource",{nodeId=id})end end)
     end end
     regions[regionId]={model=model,spawn=spawn,entry=entry,exit=exit,nodes=nodes}
     end

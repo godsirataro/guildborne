@@ -5,7 +5,7 @@ local Locale=require(game.ReplicatedStorage.Shared.Config.Localization)
 local Appearance=require(game.ReplicatedStorage.Shared.Presentation.BuildingAppearance)
 local furnitureSync=require(script.Parent.FurnitureWorld)
 local V=Vector3.new
-return function(open: any,intent: any)
+return function(open: any,intent: any,release:any?)
 	local S={}
 	local function part(parent: Instance,name: string,size: Vector3,cf: CFrame,color: Color3): Part
 		local p=Instance.new("Part");p.Name=name;p.Size=size;p.CFrame=cf;p.Color=color;p.Anchored=true;p.Material=Enum.Material.Wood;p.Parent=parent;return p
@@ -31,7 +31,9 @@ return function(open: any,intent: any)
 			plot.nodes[id]=p
 		end
 		local portal=part(f,"TowerPortal",V(6,9,1),CFrame.new(plot.origin+V(-27,4.5,34)),Color3.fromRGB(132,113,207));portal.Material=Enum.Material.Neon;portal.CanCollide=false
-		label(portal,"Spire of Echoes · 10 floors\nหอคอยเสียงสะท้อน · 10 ชั้น")
+		local unavailable=release and release.Enabled and release.problem({},"StartTower",{floor=1})~=nil
+		portal:SetAttribute("ReleaseUnavailable",unavailable==true)
+		label(portal,if unavailable then "Spire of Echoes · Not open in Lv1–35\nหอคอยเสียงสะท้อน · ยังไม่เปิดใน Lv1–35" else "Spire of Echoes · 10 floors\nหอคอยเสียงสะท้อน · 10 ชั้น")
 		local prompt=Instance.new("ProximityPrompt");prompt.ActionText="Tower / หอคอย";prompt.MaxActivationDistance=9;prompt.RequiresLineOfSight=false;prompt.Parent=portal
 		prompt.Triggered:Connect(function(who) if who==player then open(player,"Tower") end end)
 		plot.model:SetAttribute("PlotOrigin",plot.origin)

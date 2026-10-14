@@ -11,6 +11,7 @@ function Journal.describe(data: any,catalog: any,id: string): any
         return {state="Active",progress=progress,ready=progress>=def.Count,locked=false}
     end
     local prerequisite=def.Requires and data.settlement.journal[def.Requires]
+	if catalog.ReleaseContent and catalog.ReleaseContent.BlockedTasks[id] then return {state="Locked",progress=0,ready=false,locked=true,releaseUnavailable=true} end
 	if def.RequiresRegionalCombat and catalog.RegionalCombatAvailable~=true then return {state="Locked",progress=0,ready=false,locked=true,unavailable=true} end
     local locked=def.Requires~=nil and (not prerequisite or prerequisite.state~="Claimed")
     return {state=if locked then "Locked" else "Available",progress=0,ready=false,locked=locked}

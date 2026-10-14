@@ -1,0 +1,28 @@
+{
+  "candidateSha256": "842df8d99735bf5a245c816983f6441e95b88a90c0a9d59a9808447b061bd2b9",
+  "environment": "Studio unpublished PlaceId0 GameId0 Memory",
+  "rewardSmoke": {
+    "content": [
+      {
+        "type": "text",
+        "text": "{\"dailyClaims\":1,\"chapters\":12,\"requests\":{\"1\":{\"status\":\"Active\",\"revision\":0,\"action\":\"GetState\"},\"3\":{\"status\":\"Active\",\"revision\":1,\"action\":\"ClaimDailyReward\",\"code\":\"DailyAlreadyClaimed\"},\"2\":{\"status\":\"Active\",\"revision\":1,\"action\":\"ClaimDailyReward\",\"code\":\"OK\"},\"5\":{\"status\":\"Active\",\"revision\":1,\"action\":\"ClaimSeasonReward\",\"code\":\"PremiumRequired\"},\"4\":{\"status\":\"Active\",\"revision\":1,\"action\":\"ClaimSeasonReward\",\"code\":\"SeasonTierLocked\"},\"6\":{\"status\":\"Active\",\"revision\":2,\"action\":\"SetLanguage\",\"code\":\"OK\"}},\"publicAcceptance\":false,\"level\":1,\"kind\":\"Studio Memory network smoke\",\"herbs\":2}"
+      }
+    ],
+    "isError": false
+  },
+  "noviceOpening": {
+    "content": [
+      {
+        "type": "text",
+        "text": "{\"level\":3,\"novice\":{\"claimed\":1,\"version\":1,\"objectives\":[]},\"revision\":7}"
+      }
+    ],
+    "isError": false
+  },
+  "inputEvidence": "Navigation at normal speed, keyboard E, mouse click on NoviceClaim. No direct objective receipt, grant, profile edit or time skip.",
+  "limits": [
+    "Only first Novice chapter claimed (Lv3), not full Lv1–35",
+    "Network reward smoke is not entire UI acceptance",
+    "No physical device, cloud persistence or cross-server test"
+  ]
+}

@@ -6,10 +6,11 @@ local ContentProvider=game:GetService("ContentProvider")
 local GuiService=game:GetService("GuiService")
 local Config=require(game.ReplicatedStorage.Shared.Config.AudioConfig)
 local budget=require(game.ReplicatedStorage.Shared.Data.AudioBudget)(Config.MaxVoices)
-local A={};local started=false
+local A={};local started=false;local generation=0
 local folder: Folder?=nil
 local templates: {[string]: Sound}={};local groups: {[string]: SoundGroup}={}
 local voices: {[number]: Instance}={};local connections: {RBXScriptConnection}={}
+local finishes: {[number]: () -> ()}={}
 local buttons: {[Instance]: {RBXScriptConnection}}={}
 function A.Level(group: string): number
     local value=workspace:GetAttribute(Config.Attributes[group])
@@ -19,7 +20,7 @@ local function mix()
     local master=if workspace:GetAttribute(Config.Attributes.Muted)==true then 0 else A.Level("Master")
     for key,group in pairs(groups) do group.Volume=master*A.Level(key) end
 end
-function A.Play(key: string,position: Vector3?): boolean
+local function play(key: string,position: Vector3?,actor: Instance?): boolean
     local cue=Config.Cues[key];local template=templates[key]
     if not started or not cue or not template or not template.IsLoaded or not template.Parent then return false end
     if workspace:GetAttribute(Config.Attributes.Muted)==true or A.Level("Master")*A.Level(cue.group)<=0 then return false end
@@ -41,13 +42,29 @@ function A.Play(key: string,position: Vector3?): boolean
         sound.Parent=part;part.Parent=workspace;container=part
     else sound.Parent=folder end
     voices[token]=container
+    local epoch=generation;local finished=false
     local ended: RBXScriptConnection?=nil
+    local removed: RBXScriptConnection?=nil
     local function finish()
+        if finished then return end;finished=true
         if ended then ended:Disconnect();ended=nil end
-        budget.Release(token);voices[token]=nil;container:Destroy()
+        if removed then removed:Disconnect();removed=nil end
+        if generation==epoch then budget.Release(token);voices[token]=nil;finishes[token]=nil end
+        container:Destroy()
+    end
+    finishes[token]=finish
+    if actor then
+        removed=actor.AncestryChanged:Connect(function() if not actor:IsDescendantOf(workspace) then finish() end end)
+        if not actor:IsDescendantOf(workspace) then finish();return false end
     end
     ended=sound.Ended:Connect(finish);sound:Play();task.delay(duration,finish)
     return true
+end
+function A.Play(key: string,position: Vector3?): boolean
+    return play(key,position,nil)
+end
+function A.PlayFor(actor: Instance,key: string,position: Vector3?): boolean
+    return play(key,position,actor)
 end
 local function unwatch(child: Instance)
     local list=buttons[child];if list then for _,c in ipairs(list) do c:Disconnect() end;buttons[child]=nil end
@@ -57,7 +74,7 @@ local function watch(child: Instance)
     buttons[child]={child.Activated:Connect(function() if child.Active then A.Play("press") end end),child.MouseEnter:Connect(function() if child.Active then A.Play("hover") end end)}
 end
 function A.Start()
-    if started then return end;started=true
+    if started then return end;generation+=1;started=true
     local created=Instance.new("Folder");created.Name="GuildborneAudio";created.Parent=SoundService;folder=created
     for _,key in ipairs({"UI","Combat"}) do local g=Instance.new("SoundGroup");g.Name="Guildborne"..key;g.Parent=created;groups[key]=g end
     for _,attribute in pairs(Config.Attributes) do table.insert(connections,workspace:GetAttributeChangedSignal(attribute):Connect(mix)) end
@@ -71,7 +88,9 @@ function A.Start()
         end
     end
     if #load>0 then task.spawn(function() pcall(function()ContentProvider:PreloadAsync(load)end) end) end
+    local epoch=generation
     local gui=Players.LocalPlayer:WaitForChild("PlayerGui")
+    if not started or generation~=epoch then return end
     for _,child in ipairs(gui:GetDescendants()) do watch(child) end
     table.insert(connections,gui.DescendantAdded:Connect(watch));table.insert(connections,gui.DescendantRemoving:Connect(unwatch))
     table.insert(connections,GuiService:GetPropertyChangedSignal("SelectedObject"):Connect(function()local s=GuiService.SelectedObject;if s and s:IsDescendantOf(gui) and s.Active then A.Play("hover") end end))
@@ -80,7 +99,9 @@ function A.Destroy()
     started=false
     for _,c in ipairs(connections) do c:Disconnect() end;table.clear(connections)
     for child in pairs(buttons) do unwatch(child) end
-    for _,container in pairs(voices) do container:Destroy() end;table.clear(voices);budget.Clear()
+    local pending={};for _,finish in pairs(finishes) do table.insert(pending,finish) end
+    for _,finish in ipairs(pending) do finish() end
+    generation+=1;table.clear(finishes);table.clear(voices);budget.Clear()
     if folder then folder:Destroy();folder=nil end;table.clear(templates);table.clear(groups)
 end
 return A

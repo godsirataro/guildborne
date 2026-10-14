@@ -1,13 +1,14 @@
 --!strict
 -- Shared R6/R15 cosmetic choreography; never moves the authoritative root.
+local Timeline=require(game.ReplicatedStorage.Shared.Presentation.ActionTimeline)
 local function ease(x: number): number
 	x=math.clamp(x,0,1);return x*x*(3-2*x)
 end
 return function(class: string,effect: string,age: number,jointName: string): CFrame?
-	if age<0 or age>.62 then return nil end
-	local wind=ease(age/.10)
-	local release=ease((age-.10)/.14)
-	local settle=1-ease((age-.26)/.36)
+	if not Timeline.active(age) then return nil end
+	local wind=ease(age/Timeline.Release)
+	local release=ease((age-Timeline.Release)/(Timeline.Contact-Timeline.Release))
+	local settle=1-ease((age-Timeline.Recovery)/(Timeline.Duration-Timeline.Recovery))
 	local charge=wind*(1-release);local strike=release*settle
 	-- Brief recoil accent without freezing locomotion or moving the authoritative root.
 	local recoil=math.sin(math.clamp((age-.24)/.16,0,1)*math.pi)*settle

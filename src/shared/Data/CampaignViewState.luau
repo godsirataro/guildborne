@@ -5,7 +5,7 @@ return function(data:any,catalog:any,busy:boolean):any
  local config=catalog and catalog.CampaignChapter
  local unavailable={stage="Unavailable",objectives={},canClaim=false,ready=false}
  if not state or not config or not data.progression.novice or data.progression.novice.claimed~=6 then return unavailable end
- if #config.Chapters>0 and state.claimed==#config.Chapters then
+ if #config.Chapters>0 and state.claimed>=#config.Chapters then
   local last=config.Chapters[#config.Chapters]
   return {stage="Complete",title=if data.language=="th"then last.Thai else last.Title,total=#config.Chapters,
    finale=last.Id=="MAIN_06_06",objectives={},canClaim=false,ready=true,hallPermit=state.hallPermit}

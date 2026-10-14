@@ -1,0 +1,65 @@
+{
+  "sync": {
+    "content": [
+      {
+        "type": "text",
+        "text": "{\"updated\":0,\"gameId\":0,\"httpRestored\":true,\"verified\":360,\"sha256\":\"41e341d43e58bbce62efcbe80652fab6650cbe04de899d2c73dbe307a295002c\",\"placeId\":0}"
+      }
+    ],
+    "isError": false
+  },
+  "fresh": {
+    "content": [
+      {
+        "type": "text",
+        "text": "{\"rows\":{\"1\":{\"heroCount\":0,\"revision\":0,\"action\":\"GetState\",\"code\":\"OK\",\"level\":1},\"3\":{\"heroCount\":0,\"revision\":0,\"action\":\"HeroMentorProof\",\"code\":\"InvalidRequest\",\"level\":1},\"2\":{\"heroCount\":0,\"revision\":0,\"action\":\"StartHeroMentor\",\"code\":\"NoviceJourneyRequired\",\"level\":1}},\"placeId\":0}"
+      }
+    ],
+    "isError": false
+  },
+  "fixtureSetup": {
+    "content": [
+      {
+        "type": "text",
+        "text": "{\"actorId\":\"h:1\",\"model\":true,\"start\":\"OK\",\"kind\":\"SYNTHETIC_WORLD_FIXTURE_NOT_NORMAL_ROUTE\",\"position\":\"5012, 53, 12\"}"
+      }
+    ],
+    "isError": false
+  },
+  "warriorObserved": {
+    "content": [
+      {
+        "type": "text",
+        "text": "{\"models\":4,\"rows\":{\"1\":{\"code\":\"HeroMentorFailed\",\"kind\":\"notice\"}},\"attributes\":{\"HeroHealth\":108,\"ActorId\":\"h:1\",\"Status\":\"Active\",\"PathId\":\"berserker\",\"EnemyHealth\":232,\"ArtEffectProven\":true},\"active\":true}"
+      }
+    ],
+    "isError": false
+  },
+  "warriorFinal": {
+    "content": [
+      {
+        "type": "text",
+        "text": "{\"next\":\"OK\",\"rows\":{\"1\":{\"code\":\"HeroMentorFailed\",\"kind\":\"notice\"},\"3\":{\"code\":\"HeroMentorComplete\",\"kind\":\"notice\"},\"2\":{\"pathId\":\"berserker\",\"kind\":\"fixture_commit\",\"actorId\":\"h:1\",\"code\":\"OK\"}},\"proof\":{\"skills\":[],\"mentorProof\":{\"version\":1,\"pathId\":\"berserker\",\"trialId\":\"625e6a3f-2162-454e-bb48-f56f59a59d37\"},\"tier\":1},\"active\":false}"
+      }
+    ],
+    "isError": false
+  },
+  "priestObserved": {
+    "content": [
+      {
+        "type": "text",
+        "text": "{\"patient\":{\"CombatHealth\":100},\"rows\":{\"1\":{\"code\":\"HeroMentorFailed\",\"kind\":\"notice\"},\"3\":{\"code\":\"HeroMentorComplete\",\"kind\":\"notice\"},\"2\":{\"pathId\":\"berserker\",\"kind\":\"fixture_commit\",\"actorId\":\"h:1\",\"code\":\"OK\"}},\"attributes\":{\"HeroHealth\":96,\"ActorId\":\"h:2\",\"Status\":\"Active\",\"PathId\":\"cleric\",\"EnemyHealth\":448,\"ArtEffectProven\":true},\"active\":true}"
+      }
+    ],
+    "isError": false
+  },
+  "priestFinal": {
+    "content": [
+      {
+        "type": "text",
+        "text": "{\"next\":\"OK\",\"rows\":{\"1\":{\"code\":\"HeroMentorFailed\",\"kind\":\"notice\"},\"3\":{\"code\":\"HeroMentorComplete\",\"kind\":\"notice\"},\"2\":{\"pathId\":\"berserker\",\"kind\":\"fixture_commit\",\"actorId\":\"h:1\",\"code\":\"OK\"},\"5\":{\"code\":\"HeroMentorComplete\",\"kind\":\"notice\"},\"4\":{\"pathId\":\"cleric\",\"kind\":\"fixture_commit\",\"actorId\":\"h:2\",\"code\":\"OK\"}},\"proof\":{\"skills\":[],\"mentorProof\":{\"version\":1,\"pathId\":\"cleric\",\"trialId\":\"17a6d716-8df6-43ca-a376-2be0bd8a75a7\"},\"tier\":1},\"active\":false}"
+      }
+    ],
+    "isError": false
+  }
+}

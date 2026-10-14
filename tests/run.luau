@@ -130,7 +130,7 @@ test("enemy field guide preserves existing camp and all ten floor combat values"
  guide.Camp.Health=0
  eq(project(nil,"test",1000).catalog.Bestiary.Camp.Health,135)
 end)
-local function harness(schemaOverride:any?,noviceStory:any?,campaign:any?,permanentEntitlements:any?): any
+local function harness(schemaOverride:any?,noviceStory:any?,campaign:any?,permanentEntitlements:any?,commandsOverride:any?,heroMentor:any?): any
 	local h: any = { now = 1000, records = {}, audit = {}, mode = "ok", notifications = 0, serial = 0 }
 	local store = { Update = function(key: string, transform: any, _userId: number?): any
 		if h.mode == "before" then error("Injected unavailable before write") end
@@ -145,8 +145,8 @@ local function harness(schemaOverride:any?,noviceStory:any?,campaign:any?,perman
 		local value = transform(Util.copy(h.audit[key])); h.audit[key] = Util.copy(value); return value
 	end }
 	function h.make()
-		return MakeService({ PermanentEntitlements=permanentEntitlements,Campaign=campaign,NoviceStory=noviceStory, MarketEscrow=MarketEscrow, Util = Util, Content = Content, Config = Config, Schema = schemaOverride or Schema, Protocol = Protocol, CombatRewards = CombatRewards, Expansion=ExpansionService,
-			Commands = if noviceStory then require("../src/server/Systems/Commands")({Guild=require("../src/server/Services/PersonalGuildService")(Content,Economy,campaign~=nil),Campaign=campaign,Content=Content,NoviceStory=noviceStory,Protocol=Protocol,Util=Util,Progression=Progression,Settlement=require("../src/server/Services/SettlementService")(Content,Economy,Util)}) else Commands, Store = store, AuditStore = archive, Now = function() return h.now end,
+		return MakeService({ HeroMentor=heroMentor,PermanentEntitlements=permanentEntitlements,Campaign=campaign,NoviceStory=noviceStory, MarketEscrow=MarketEscrow, Util = Util, Content = Content, Config = Config, Schema = schemaOverride or Schema, Protocol = Protocol, CombatRewards = CombatRewards, Expansion=ExpansionService,
+			Commands = commandsOverride or (if noviceStory then require("../src/server/Systems/Commands")({Guild=require("../src/server/Services/PersonalGuildService")(Content,Economy,campaign~=nil),Campaign=campaign,Content=Content,NoviceStory=noviceStory,Protocol=Protocol,Util=Util,Progression=Progression,Settlement=require("../src/server/Services/SettlementService")(Content,Economy,Util)}) else Commands), Store = store, AuditStore = archive, Now = function() return h.now end,
 			Wait = function(_seconds: number) end, Jitter = function() return 0 end,
 			Log = function(_name: string, _fields: any) end,
 			OnCommitted = function(_userId: number, _events: any)
@@ -545,4 +545,10 @@ require("./civic_cities")(test,eq,harness,Content,Util,Localization)
 require("./city")(test,eq,harness,Util,Content,Schema,Localization,Protocol)
 require("./market")(test,eq,Util,Content,LegacySchema)
 require("./market_hardening")(test,eq,Util,Content,LegacySchema)
+require("./appearance")(test,eq)
+require("./hero_mentor")(test,eq,harness)
+require("./launch_content")(test,eq)
+require("./launch_rewards")(test,eq)
+require("./launch_transaction_integration")(test,eq,harness)
+require("./launch_availability")(test,eq)
 print(string.format("\n%d tests passed.", passed))

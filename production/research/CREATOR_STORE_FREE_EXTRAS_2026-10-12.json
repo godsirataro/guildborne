@@ -1,0 +1,936 @@
+{
+  "schemaVersion": 1,
+  "title": "Guildborne free asset extras: VFX, animation, food, potion and books",
+  "reviewDate": "2026-10-12",
+  "timezone": "Asia/Bangkok",
+  "status": "RESEARCH_REVIEW_CANDIDATE",
+  "scope": "FREE_ONLY_LISTING_RESEARCH",
+  "sourceHead": "4cc9a8232e0fd9ae7bf517983c274e800e8ad4a4",
+  "sourceCheckout": "DIRTY_EXISTING_CHARACTER_WORK",
+  "notes": [
+    "17 additional Store listings inspected in live browser; Get Model observed without clicking acquisition.",
+    "2 listings have no Technical Details tab; unshown counts are null, not zero.",
+    "Counts apply to whole listed assets, not selected pieces or measured runtime budgets.",
+    "Four separate author-site packs advertise 25 clips in total. File contents, motions and download availability were not inspected.",
+    "No downloads, acquisition, imports, animation uploads, runtime-ID registration, game edits, payments or publishing.",
+    "P1/P2 rank further inspection priority only, not production acceptance.",
+    "No verified eat/drink/book-reading/spell-cast motion shortlist. Potion Animation objects do not establish clip type or R15 fit."
+  ],
+  "candidates": [
+    {
+      "candidateStoreAssetId": "13043766945",
+      "url": "https://create.roblox.com/store/asset/13043766945",
+      "name": "Potion V10",
+      "listedCreator": "Chrobahh",
+      "category": "potion",
+      "researchPriority": "P2",
+      "proposedUse": "Decorative potion bottle variant; no consumable logic accepted.",
+      "rightsEvidence": "Description empty; original authorship and dependencies unverified.",
+      "listing": {
+        "checkedDate": "2026-10-12",
+        "method": "LIVE_BROWSER_DESCRIPTION_AND_TECHNICAL_DETAILS_WHEN_PRESENT",
+        "acquisitionSignal": "Get Model",
+        "freeAcquisition": true,
+        "lastUpdated": "2023-04-08",
+        "technicalDetailsTabPresent": true
+      },
+      "technicalDetails": {
+        "scope": "WHOLE_LISTED_ASSET",
+        "triangles": 1898,
+        "vertices": 1453,
+        "meshPartCount": null,
+        "scriptCount": null,
+        "animationObjectCount": null
+      },
+      "descriptionClaims": [],
+      "runtimeAssetId": null,
+      "pinnedAssetVersionId": null,
+      "intakeHash": null,
+      "acceptance": {
+        "listingVerified": true,
+        "internalsReviewed": false,
+        "rightsCleared": false,
+        "dependenciesVerified": false,
+        "downloaded": false,
+        "imported": false,
+        "studioTested": false,
+        "physicalDeviceTested": false,
+        "humanApproved": false
+      }
+    },
+    {
+      "candidateStoreAssetId": "2702822393",
+      "url": "https://create.roblox.com/store/asset/2702822393",
+      "name": "Low Poly Book",
+      "listedCreator": "980246",
+      "category": "book",
+      "researchPriority": "P1",
+      "proposedUse": "Closed skill-book / recipe-book prop with original Guildborne cover.",
+      "rightsEvidence": "Author permits use in listing; optional donation is not a purchase requirement; dependencies unverified.",
+      "listing": {
+        "checkedDate": "2026-10-12",
+        "method": "LIVE_BROWSER_DESCRIPTION_AND_TECHNICAL_DETAILS_WHEN_PRESENT",
+        "acquisitionSignal": "Get Model",
+        "freeAcquisition": true,
+        "lastUpdated": "2019-01-02",
+        "technicalDetailsTabPresent": true
+      },
+      "technicalDetails": {
+        "scope": "WHOLE_LISTED_ASSET",
+        "triangles": 64,
+        "vertices": 128,
+        "meshPartCount": 1,
+        "scriptCount": null,
+        "animationObjectCount": null
+      },
+      "descriptionClaims": [],
+      "runtimeAssetId": null,
+      "pinnedAssetVersionId": null,
+      "intakeHash": null,
+      "acceptance": {
+        "listingVerified": true,
+        "internalsReviewed": false,
+        "rightsCleared": false,
+        "dependenciesVerified": false,
+        "downloaded": false,
+        "imported": false,
+        "studioTested": false,
+        "physicalDeviceTested": false,
+        "humanApproved": false
+      }
+    },
+    {
+      "candidateStoreAssetId": "13555696157",
+      "url": "https://create.roblox.com/store/asset/13555696157",
+      "name": "Books",
+      "listedCreator": "zzz_1551",
+      "category": "book",
+      "researchPriority": "P2",
+      "proposedUse": "Book piles for guild bookcase, Bookbinder and alchemy shop.",
+      "rightsEvidence": "Description empty; original authorship and dependencies unverified.",
+      "listing": {
+        "checkedDate": "2026-10-12",
+        "method": "LIVE_BROWSER_DESCRIPTION_AND_TECHNICAL_DETAILS_WHEN_PRESENT",
+        "acquisitionSignal": "Get Model",
+        "freeAcquisition": true,
+        "lastUpdated": "2023-05-26",
+        "technicalDetailsTabPresent": true
+      },
+      "technicalDetails": {
+        "scope": "WHOLE_LISTED_ASSET",
+        "triangles": 588,
+        "vertices": 764,
+        "meshPartCount": 3,
+        "scriptCount": null,
+        "animationObjectCount": null
+      },
+      "descriptionClaims": [],
+      "runtimeAssetId": null,
+      "pinnedAssetVersionId": null,
+      "intakeHash": null,
+      "acceptance": {
+        "listingVerified": true,
+        "internalsReviewed": false,
+        "rightsCleared": false,
+        "dependenciesVerified": false,
+        "downloaded": false,
+        "imported": false,
+        "studioTested": false,
+        "physicalDeviceTested": false,
+        "humanApproved": false
+      }
+    },
+    {
+      "candidateStoreAssetId": "4933223142",
+      "url": "https://create.roblox.com/store/asset/4933223142",
+      "name": "Bread",
+      "listedCreator": "WoozyNate",
+      "category": "food",
+      "researchPriority": "P1",
+      "proposedUse": "Shared-meal, tavern and food-stall set dressing.",
+      "rightsEvidence": "Description empty; original authorship and dependencies unverified.",
+      "listing": {
+        "checkedDate": "2026-10-12",
+        "method": "LIVE_BROWSER_DESCRIPTION_AND_TECHNICAL_DETAILS_WHEN_PRESENT",
+        "acquisitionSignal": "Get Model",
+        "freeAcquisition": true,
+        "lastUpdated": "2020-04-23",
+        "technicalDetailsTabPresent": true
+      },
+      "technicalDetails": {
+        "scope": "WHOLE_LISTED_ASSET",
+        "triangles": 578,
+        "vertices": 858,
+        "meshPartCount": null,
+        "scriptCount": null,
+        "animationObjectCount": null
+      },
+      "descriptionClaims": [],
+      "runtimeAssetId": null,
+      "pinnedAssetVersionId": null,
+      "intakeHash": null,
+      "acceptance": {
+        "listingVerified": true,
+        "internalsReviewed": false,
+        "rightsCleared": false,
+        "dependenciesVerified": false,
+        "downloaded": false,
+        "imported": false,
+        "studioTested": false,
+        "physicalDeviceTested": false,
+        "humanApproved": false
+      }
+    },
+    {
+      "candidateStoreAssetId": "1690639246",
+      "url": "https://create.roblox.com/store/asset/1690639246",
+      "name": "Meat",
+      "listedCreator": "CourageousKyran",
+      "category": "food",
+      "researchPriority": "P1",
+      "proposedUse": "Cooking / market meat prop; not a server consumable.",
+      "rightsEvidence": "Description empty; original authorship and dependencies unverified.",
+      "listing": {
+        "checkedDate": "2026-10-12",
+        "method": "LIVE_BROWSER_DESCRIPTION_AND_TECHNICAL_DETAILS_WHEN_PRESENT",
+        "acquisitionSignal": "Get Model",
+        "freeAcquisition": true,
+        "lastUpdated": "2018-04-30",
+        "technicalDetailsTabPresent": true
+      },
+      "technicalDetails": {
+        "scope": "WHOLE_LISTED_ASSET",
+        "triangles": 156,
+        "vertices": 106,
+        "meshPartCount": 1,
+        "scriptCount": null,
+        "animationObjectCount": null
+      },
+      "descriptionClaims": [],
+      "runtimeAssetId": null,
+      "pinnedAssetVersionId": null,
+      "intakeHash": null,
+      "acceptance": {
+        "listingVerified": true,
+        "internalsReviewed": false,
+        "rightsCleared": false,
+        "dependenciesVerified": false,
+        "downloaded": false,
+        "imported": false,
+        "studioTested": false,
+        "physicalDeviceTested": false,
+        "humanApproved": false
+      }
+    },
+    {
+      "candidateStoreAssetId": "2759295720",
+      "url": "https://create.roblox.com/store/asset/2759295720",
+      "name": "Apple",
+      "listedCreator": "kinglalu",
+      "category": "food",
+      "researchPriority": "P2",
+      "proposedUse": "Orchard / market / table fruit prop.",
+      "rightsEvidence": "Description empty; original authorship and dependencies unverified.",
+      "listing": {
+        "checkedDate": "2026-10-12",
+        "method": "LIVE_BROWSER_DESCRIPTION_AND_TECHNICAL_DETAILS_WHEN_PRESENT",
+        "acquisitionSignal": "Get Model",
+        "freeAcquisition": true,
+        "lastUpdated": "2019-01-18",
+        "technicalDetailsTabPresent": true
+      },
+      "technicalDetails": {
+        "scope": "WHOLE_LISTED_ASSET",
+        "triangles": 1540,
+        "vertices": 922,
+        "meshPartCount": 1,
+        "scriptCount": null,
+        "animationObjectCount": null
+      },
+      "descriptionClaims": [],
+      "runtimeAssetId": null,
+      "pinnedAssetVersionId": null,
+      "intakeHash": null,
+      "acceptance": {
+        "listingVerified": true,
+        "internalsReviewed": false,
+        "rightsCleared": false,
+        "dependenciesVerified": false,
+        "downloaded": false,
+        "imported": false,
+        "studioTested": false,
+        "physicalDeviceTested": false,
+        "humanApproved": false
+      }
+    },
+    {
+      "candidateStoreAssetId": "5056649208",
+      "url": "https://create.roblox.com/store/asset/5056649208",
+      "name": "Combat Potion Set",
+      "listedCreator": "CharlieForms",
+      "category": "potion",
+      "researchPriority": "P2",
+      "proposedUse": "Inspect bottles and contained motion objects only; preserve Guildborne combat.",
+      "rightsEvidence": "Health / speed / forcefield described; animation type, original authorship and dependencies unverified.",
+      "listing": {
+        "checkedDate": "2026-10-12",
+        "method": "LIVE_BROWSER_DESCRIPTION_AND_TECHNICAL_DETAILS_WHEN_PRESENT",
+        "acquisitionSignal": "Get Model",
+        "freeAcquisition": true,
+        "lastUpdated": "2020-05-20",
+        "technicalDetailsTabPresent": true
+      },
+      "technicalDetails": {
+        "scope": "WHOLE_LISTED_ASSET",
+        "triangles": 864,
+        "vertices": 1026,
+        "meshPartCount": null,
+        "scriptCount": 3,
+        "animationObjectCount": 6,
+        "audioCount": 6,
+        "toolCount": 3
+      },
+      "descriptionClaims": [
+        "Health, speed, forcefield effects; lasts 10 seconds; cooldown 20 seconds. Does not establish R15 drink clips."
+      ],
+      "runtimeAssetId": null,
+      "pinnedAssetVersionId": null,
+      "intakeHash": null,
+      "acceptance": {
+        "listingVerified": true,
+        "internalsReviewed": false,
+        "rightsCleared": false,
+        "dependenciesVerified": false,
+        "downloaded": false,
+        "imported": false,
+        "studioTested": false,
+        "physicalDeviceTested": false,
+        "humanApproved": false
+      }
+    },
+    {
+      "candidateStoreAssetId": "11289365085",
+      "url": "https://create.roblox.com/store/asset/11289365085",
+      "name": "blue mystical wizard's cauldron for halloween",
+      "listedCreator": "seG1as",
+      "category": "potion",
+      "researchPriority": "P2",
+      "proposedUse": "Alternative alchemy cauldron geometry / color study.",
+      "rightsEvidence": "Description empty; original authorship and dependencies unverified.",
+      "listing": {
+        "checkedDate": "2026-10-12",
+        "method": "LIVE_BROWSER_DESCRIPTION_AND_TECHNICAL_DETAILS_WHEN_PRESENT",
+        "acquisitionSignal": "Get Model",
+        "freeAcquisition": true,
+        "lastUpdated": "2022-10-16",
+        "technicalDetailsTabPresent": true
+      },
+      "technicalDetails": {
+        "scope": "WHOLE_LISTED_ASSET",
+        "triangles": 2112,
+        "vertices": 1805,
+        "meshPartCount": 1,
+        "scriptCount": null,
+        "animationObjectCount": null
+      },
+      "descriptionClaims": [],
+      "runtimeAssetId": null,
+      "pinnedAssetVersionId": null,
+      "intakeHash": null,
+      "acceptance": {
+        "listingVerified": true,
+        "internalsReviewed": false,
+        "rightsCleared": false,
+        "dependenciesVerified": false,
+        "downloaded": false,
+        "imported": false,
+        "studioTested": false,
+        "physicalDeviceTested": false,
+        "humanApproved": false
+      }
+    },
+    {
+      "candidateStoreAssetId": "9088469378",
+      "url": "https://create.roblox.com/store/asset/9088469378",
+      "name": "Free-to-use VFX Pack #2 - Lazers and Blasts",
+      "listedCreator": "BegoneDamen",
+      "category": "vfx",
+      "researchPriority": "P2",
+      "proposedUse": "Select mage beam / impact visuals after per-component rights review.",
+      "rightsEvidence": "Free-to-use is in title; description empty; textures and dependencies unverified.",
+      "listing": {
+        "checkedDate": "2026-10-12",
+        "method": "LIVE_BROWSER_DESCRIPTION_AND_TECHNICAL_DETAILS_WHEN_PRESENT",
+        "acquisitionSignal": "Get Model",
+        "freeAcquisition": true,
+        "lastUpdated": "2022-03-13",
+        "technicalDetailsTabPresent": true
+      },
+      "technicalDetails": {
+        "scope": "WHOLE_LISTED_ASSET",
+        "triangles": 15010,
+        "vertices": 32388,
+        "meshPartCount": 10,
+        "scriptCount": null,
+        "animationObjectCount": null
+      },
+      "descriptionClaims": [],
+      "runtimeAssetId": null,
+      "pinnedAssetVersionId": null,
+      "intakeHash": null,
+      "acceptance": {
+        "listingVerified": true,
+        "internalsReviewed": false,
+        "rightsCleared": false,
+        "dependenciesVerified": false,
+        "downloaded": false,
+        "imported": false,
+        "studioTested": false,
+        "physicalDeviceTested": false,
+        "humanApproved": false
+      }
+    },
+    {
+      "candidateStoreAssetId": "83841806206726",
+      "url": "https://create.roblox.com/store/asset/83841806206726",
+      "name": "saythrt's Mega Pack",
+      "listedCreator": "No²³; credited @15VSF",
+      "category": "vfx",
+      "researchPriority": "P2",
+      "proposedUse": "Reference library; select small original effects, not entire pack.",
+      "rightsEvidence": "Author says free for any game or VFX; credits requested when repurposing/modding. Per-texture authorship unverified.",
+      "listing": {
+        "checkedDate": "2026-10-12",
+        "method": "LIVE_BROWSER_DESCRIPTION_AND_TECHNICAL_DETAILS_WHEN_PRESENT",
+        "acquisitionSignal": "Get Model",
+        "freeAcquisition": true,
+        "lastUpdated": "2025-04-22",
+        "technicalDetailsTabPresent": false
+      },
+      "technicalDetails": {
+        "scope": "WHOLE_LISTED_ASSET",
+        "triangles": null,
+        "vertices": null,
+        "meshPartCount": null,
+        "scriptCount": null,
+        "animationObjectCount": null
+      },
+      "descriptionClaims": [
+        "V.111; 7k+ textures, 180+ meshes, 14 scripts, 5 premades. Description claims only; no Technical Details tab displayed."
+      ],
+      "runtimeAssetId": null,
+      "pinnedAssetVersionId": null,
+      "intakeHash": null,
+      "acceptance": {
+        "listingVerified": true,
+        "internalsReviewed": false,
+        "rightsCleared": false,
+        "dependenciesVerified": false,
+        "downloaded": false,
+        "imported": false,
+        "studioTested": false,
+        "physicalDeviceTested": false,
+        "humanApproved": false
+      }
+    },
+    {
+      "candidateStoreAssetId": "14375826814",
+      "url": "https://create.roblox.com/store/asset/14375826814",
+      "name": "Parallax Portal",
+      "listedCreator": "Roblox Code Samples; credited @DevelopmentDeadline",
+      "category": "vfx",
+      "researchPriority": "P1",
+      "proposedUse": "Portal depth presentation for guild-island/dungeon entrance.",
+      "rightsEvidence": "Roblox Code Samples listing; dependencies and internal scripts not inspected.",
+      "listing": {
+        "checkedDate": "2026-10-12",
+        "method": "LIVE_BROWSER_DESCRIPTION_AND_TECHNICAL_DETAILS_WHEN_PRESENT",
+        "acquisitionSignal": "Get Model",
+        "freeAcquisition": true,
+        "lastUpdated": "2023-08-10",
+        "technicalDetailsTabPresent": true
+      },
+      "technicalDetails": {
+        "scope": "WHOLE_LISTED_ASSET",
+        "triangles": 60,
+        "vertices": 120,
+        "meshPartCount": null,
+        "scriptCount": 1,
+        "animationObjectCount": null
+      },
+      "descriptionClaims": [],
+      "runtimeAssetId": null,
+      "pinnedAssetVersionId": null,
+      "intakeHash": null,
+      "acceptance": {
+        "listingVerified": true,
+        "internalsReviewed": false,
+        "rightsCleared": false,
+        "dependenciesVerified": false,
+        "downloaded": false,
+        "imported": false,
+        "studioTested": false,
+        "physicalDeviceTested": false,
+        "humanApproved": false
+      }
+    },
+    {
+      "candidateStoreAssetId": "11720399759",
+      "url": "https://create.roblox.com/store/asset/11720399759",
+      "name": "SimpleAnimation [R15]",
+      "listedCreator": "GnomeCode",
+      "category": "animation",
+      "researchPriority": "P2",
+      "proposedUse": "Study default R15 locomotion, footsteps and footprints; controller integration review.",
+      "rightsEvidence": "Listing claims R15 support; rig fit, clip permissions and original authorship unverified.",
+      "listing": {
+        "checkedDate": "2026-10-12",
+        "method": "LIVE_BROWSER_DESCRIPTION_AND_TECHNICAL_DETAILS_WHEN_PRESENT",
+        "acquisitionSignal": "Get Model",
+        "freeAcquisition": true,
+        "lastUpdated": "2022-12-08",
+        "technicalDetailsTabPresent": true
+      },
+      "technicalDetails": {
+        "scope": "WHOLE_LISTED_ASSET",
+        "triangles": 4752,
+        "vertices": 3234,
+        "meshPartCount": null,
+        "scriptCount": 2,
+        "animationObjectCount": null,
+        "decalCount": 3
+      },
+      "descriptionClaims": [],
+      "runtimeAssetId": null,
+      "pinnedAssetVersionId": null,
+      "intakeHash": null,
+      "acceptance": {
+        "listingVerified": true,
+        "internalsReviewed": false,
+        "rightsCleared": false,
+        "dependenciesVerified": false,
+        "downloaded": false,
+        "imported": false,
+        "studioTested": false,
+        "physicalDeviceTested": false,
+        "humanApproved": false
+      }
+    },
+    {
+      "candidateStoreAssetId": "10328759036",
+      "url": "https://create.roblox.com/store/asset/10328759036",
+      "name": "Custom R15 Animations",
+      "listedCreator": "Btwcodyyy",
+      "category": "animation",
+      "researchPriority": "P2",
+      "proposedUse": "Inspect actual idle/locomotion clips before choosing any.",
+      "rightsEvidence": "11 Animation objects displayed; identities, provenance, rig fit and playback permission unverified.",
+      "listing": {
+        "checkedDate": "2026-10-12",
+        "method": "LIVE_BROWSER_DESCRIPTION_AND_TECHNICAL_DETAILS_WHEN_PRESENT",
+        "acquisitionSignal": "Get Model",
+        "freeAcquisition": true,
+        "lastUpdated": "2022-07-23",
+        "technicalDetailsTabPresent": true
+      },
+      "technicalDetails": {
+        "scope": "WHOLE_LISTED_ASSET",
+        "triangles": null,
+        "vertices": null,
+        "meshPartCount": null,
+        "scriptCount": 1,
+        "animationObjectCount": 11
+      },
+      "descriptionClaims": [],
+      "runtimeAssetId": null,
+      "pinnedAssetVersionId": null,
+      "intakeHash": null,
+      "acceptance": {
+        "listingVerified": true,
+        "internalsReviewed": false,
+        "rightsCleared": false,
+        "dependenciesVerified": false,
+        "downloaded": false,
+        "imported": false,
+        "studioTested": false,
+        "physicalDeviceTested": false,
+        "humanApproved": false
+      }
+    },
+    {
+      "candidateStoreAssetId": "16382650186",
+      "url": "https://create.roblox.com/store/asset/16382650186",
+      "name": "Laser Beam Blaster",
+      "listedCreator": "Roblox Resources; credited @TooManyOveralls",
+      "category": "vfx",
+      "researchPriority": "P1",
+      "proposedUse": "Use official beam tutorial technique for mage channel / tether; sample is a blaster prop.",
+      "rightsEvidence": "Official tutorial links this asset. Internal model not inspected; tutorial is not proof of included completed VFX.",
+      "listing": {
+        "checkedDate": "2026-10-12",
+        "method": "LIVE_BROWSER_DESCRIPTION_AND_TECHNICAL_DETAILS_WHEN_PRESENT",
+        "acquisitionSignal": "Get Model",
+        "freeAcquisition": true,
+        "lastUpdated": "2024-02-17",
+        "technicalDetailsTabPresent": true
+      },
+      "technicalDetails": {
+        "scope": "WHOLE_LISTED_ASSET",
+        "triangles": 3553,
+        "vertices": 3531,
+        "meshPartCount": 6,
+        "scriptCount": null,
+        "animationObjectCount": null
+      },
+      "descriptionClaims": [],
+      "runtimeAssetId": null,
+      "pinnedAssetVersionId": null,
+      "intakeHash": null,
+      "acceptance": {
+        "listingVerified": true,
+        "internalsReviewed": false,
+        "rightsCleared": false,
+        "dependenciesVerified": false,
+        "downloaded": false,
+        "imported": false,
+        "studioTested": false,
+        "physicalDeviceTested": false,
+        "humanApproved": false
+      }
+    },
+    {
+      "candidateStoreAssetId": "13595118497",
+      "url": "https://create.roblox.com/store/asset/13595118497",
+      "name": "Tween Group",
+      "listedCreator": "Roblox Code Samples; credited @DevelopmentDeadline",
+      "category": "vfx_utility",
+      "researchPriority": "P1",
+      "proposedUse": "Study grouped play/pause/cancel for visual skill cleanup.",
+      "rightsEvidence": "Roblox Code Samples listing; code unreviewed. Listing notes no PlaybackState/Completed event support.",
+      "listing": {
+        "checkedDate": "2026-10-12",
+        "method": "LIVE_BROWSER_DESCRIPTION_AND_TECHNICAL_DETAILS_WHEN_PRESENT",
+        "acquisitionSignal": "Get Model",
+        "freeAcquisition": true,
+        "lastUpdated": "2023-06-21",
+        "technicalDetailsTabPresent": true
+      },
+      "technicalDetails": {
+        "scope": "WHOLE_LISTED_ASSET",
+        "triangles": 12,
+        "vertices": 24,
+        "meshPartCount": null,
+        "scriptCount": 1,
+        "animationObjectCount": null
+      },
+      "descriptionClaims": [],
+      "runtimeAssetId": null,
+      "pinnedAssetVersionId": null,
+      "intakeHash": null,
+      "acceptance": {
+        "listingVerified": true,
+        "internalsReviewed": false,
+        "rightsCleared": false,
+        "dependenciesVerified": false,
+        "downloaded": false,
+        "imported": false,
+        "studioTested": false,
+        "physicalDeviceTested": false,
+        "humanApproved": false
+      }
+    },
+    {
+      "candidateStoreAssetId": "13794493103",
+      "url": "https://create.roblox.com/store/asset/13794493103",
+      "name": "Open book",
+      "listedCreator": "zzz_1551",
+      "category": "book",
+      "researchPriority": "P1",
+      "proposedUse": "Open spell-book, recipe-book and lectern prop.",
+      "rightsEvidence": "Description empty; original authorship and dependencies unverified.",
+      "listing": {
+        "checkedDate": "2026-10-12",
+        "method": "LIVE_BROWSER_DESCRIPTION_AND_TECHNICAL_DETAILS_WHEN_PRESENT",
+        "acquisitionSignal": "Get Model",
+        "freeAcquisition": true,
+        "lastUpdated": "2023-06-19",
+        "technicalDetailsTabPresent": true
+      },
+      "technicalDetails": {
+        "scope": "WHOLE_LISTED_ASSET",
+        "triangles": 514,
+        "vertices": 596,
+        "meshPartCount": 1,
+        "scriptCount": null,
+        "animationObjectCount": null
+      },
+      "descriptionClaims": [],
+      "runtimeAssetId": null,
+      "pinnedAssetVersionId": null,
+      "intakeHash": null,
+      "acceptance": {
+        "listingVerified": true,
+        "internalsReviewed": false,
+        "rightsCleared": false,
+        "dependenciesVerified": false,
+        "downloaded": false,
+        "imported": false,
+        "studioTested": false,
+        "physicalDeviceTested": false,
+        "humanApproved": false
+      }
+    },
+    {
+      "candidateStoreAssetId": "6091930553",
+      "url": "https://create.roblox.com/store/asset/6091930553",
+      "name": "R15 Sword System With Animations",
+      "listedCreator": "Count_Alfie",
+      "category": "animation",
+      "researchPriority": "P2",
+      "proposedUse": "Inspect possible sword motions; do not adopt its combat system.",
+      "rightsEvidence": "Author claims R15 only and incomplete leaderboard support; motion identities, rights and permissions unverified.",
+      "listing": {
+        "checkedDate": "2026-10-12",
+        "method": "LIVE_BROWSER_DESCRIPTION_AND_TECHNICAL_DETAILS_WHEN_PRESENT",
+        "acquisitionSignal": "Get Model",
+        "freeAcquisition": true,
+        "lastUpdated": "2020-12-16",
+        "technicalDetailsTabPresent": false
+      },
+      "technicalDetails": {
+        "scope": "WHOLE_LISTED_ASSET",
+        "triangles": null,
+        "vertices": null,
+        "meshPartCount": null,
+        "scriptCount": null,
+        "animationObjectCount": null
+      },
+      "descriptionClaims": [],
+      "runtimeAssetId": null,
+      "pinnedAssetVersionId": null,
+      "intakeHash": null,
+      "acceptance": {
+        "listingVerified": true,
+        "internalsReviewed": false,
+        "rightsCleared": false,
+        "dependenciesVerified": false,
+        "downloaded": false,
+        "imported": false,
+        "studioTested": false,
+        "physicalDeviceTested": false,
+        "humanApproved": false
+      }
+    }
+  ],
+  "externalAnimationCandidates": [
+    {
+      "url": "https://cinderlore.com/products/r15-combat-starter-motions",
+      "name": "R15 Combat Starter Motions",
+      "listedAuthor": "Cinderlore Studios",
+      "sourceType": "PRIMARY_AUTHOR_WEBSITE_OUTSIDE_CREATOR_STORE",
+      "checkedDate": "2026-10-12",
+      "freeEvidence": "Product page states Free; no payment or signup required.",
+      "advertisedVersion": "1.0.1",
+      "authorClaims": {
+        "clipCount": 7,
+        "fileSizeBytes": 172155,
+        "format": ".rbxm KeyframeSequence",
+        "rig": "R15",
+        "contents": "punch, guard and hit reaction"
+      },
+      "license": {
+        "url": "https://cinderlore.com/license",
+        "version": "1.0",
+        "effectiveDate": "2026-09-06",
+        "summary": "Permits commercial Roblox games, editing, own/group uploads and private team use without credit. No standalone file/public repository/pack/template redistribution, reusable ID library or deployment in non-Roblox games. Applies to four specified free packs only.",
+        "acceptedByUser": false
+      },
+      "runtimeAssetId": null,
+      "pinnedAssetVersionId": null,
+      "intakeHash": null,
+      "acceptance": {
+        "productAndLicensePagesRead": true,
+        "internalsReviewed": false,
+        "rightsCleared": false,
+        "downloaded": false,
+        "imported": false,
+        "studioTested": false,
+        "physicalDeviceTested": false,
+        "humanApproved": false
+      }
+    },
+    {
+      "url": "https://cinderlore.com/products/r15-npc-interaction-sampler",
+      "name": "R15 NPC Interaction Sampler",
+      "listedAuthor": "Cinderlore Studios",
+      "sourceType": "PRIMARY_AUTHOR_WEBSITE_OUTSIDE_CREATOR_STORE",
+      "checkedDate": "2026-10-12",
+      "freeEvidence": "Product page states Free; no payment or signup required.",
+      "advertisedVersion": "1.0.1",
+      "authorClaims": {
+        "clipCount": 6,
+        "fileSizeBytes": 409863,
+        "format": ".rbxm KeyframeSequence",
+        "rig": "R15",
+        "contents": "bow, head shake, pocket pickup, point, think and wave"
+      },
+      "license": {
+        "url": "https://cinderlore.com/license",
+        "version": "1.0",
+        "effectiveDate": "2026-09-06",
+        "summary": "Permits commercial Roblox games, editing, own/group uploads and private team use without credit. No standalone file/public repository/pack/template redistribution, reusable ID library or deployment in non-Roblox games. Applies to four specified free packs only.",
+        "acceptedByUser": false
+      },
+      "runtimeAssetId": null,
+      "pinnedAssetVersionId": null,
+      "intakeHash": null,
+      "acceptance": {
+        "productAndLicensePagesRead": true,
+        "internalsReviewed": false,
+        "rightsCleared": false,
+        "downloaded": false,
+        "imported": false,
+        "studioTested": false,
+        "physicalDeviceTested": false,
+        "humanApproved": false
+      }
+    },
+    {
+      "url": "https://cinderlore.com/products/r15-movement-dash-sampler",
+      "name": "R15 Movement & Dash Sampler",
+      "listedAuthor": "Cinderlore Studios",
+      "sourceType": "PRIMARY_AUTHOR_WEBSITE_OUTSIDE_CREATOR_STORE",
+      "checkedDate": "2026-10-12",
+      "freeEvidence": "Product page states Free; no payment or signup required.",
+      "advertisedVersion": "1.0.1",
+      "authorClaims": {
+        "clipCount": 6,
+        "fileSizeBytes": 115392,
+        "format": ".rbxm KeyframeSequence",
+        "rig": "R15",
+        "contents": "four directional dashes, two-handed vault and wall jump"
+      },
+      "license": {
+        "url": "https://cinderlore.com/license",
+        "version": "1.0",
+        "effectiveDate": "2026-09-06",
+        "summary": "Permits commercial Roblox games, editing, own/group uploads and private team use without credit. No standalone file/public repository/pack/template redistribution, reusable ID library or deployment in non-Roblox games. Applies to four specified free packs only.",
+        "acceptedByUser": false
+      },
+      "runtimeAssetId": null,
+      "pinnedAssetVersionId": null,
+      "intakeHash": null,
+      "acceptance": {
+        "productAndLicensePagesRead": true,
+        "internalsReviewed": false,
+        "rightsCleared": false,
+        "downloaded": false,
+        "imported": false,
+        "studioTested": false,
+        "physicalDeviceTested": false,
+        "humanApproved": false
+      }
+    },
+    {
+      "url": "https://cinderlore.com/products/r15-fishing-life-skill-sampler",
+      "name": "R15 Fishing & Life-Skill Sampler",
+      "listedAuthor": "Cinderlore Studios",
+      "sourceType": "PRIMARY_AUTHOR_WEBSITE_OUTSIDE_CREATOR_STORE",
+      "checkedDate": "2026-10-12",
+      "freeEvidence": "Product page states Free; no payment or signup required.",
+      "advertisedVersion": "1.0.1",
+      "authorClaims": {
+        "clipCount": 6,
+        "fileSizeBytes": 636188,
+        "format": ".rbxm KeyframeSequence",
+        "rig": "R15",
+        "contents": "fishing windup/hold/release/wait, sickle and watering loops"
+      },
+      "license": {
+        "url": "https://cinderlore.com/license",
+        "version": "1.0",
+        "effectiveDate": "2026-09-06",
+        "summary": "Permits commercial Roblox games, editing, own/group uploads and private team use without credit. No standalone file/public repository/pack/template redistribution, reusable ID library or deployment in non-Roblox games. Applies to four specified free packs only.",
+        "acceptedByUser": false
+      },
+      "runtimeAssetId": null,
+      "pinnedAssetVersionId": null,
+      "intakeHash": null,
+      "acceptance": {
+        "productAndLicensePagesRead": true,
+        "internalsReviewed": false,
+        "rightsCleared": false,
+        "downloaded": false,
+        "imported": false,
+        "studioTested": false,
+        "physicalDeviceTested": false,
+        "humanApproved": false
+      }
+    }
+  ],
+  "excludedOrDeferred": [
+    {
+      "url": "https://create.roblox.com/store/asset/130699546775916",
+      "name": "low quality food pack - Claire",
+      "reason": "Search index claimed free; live browser returned 404 on 2026-10-12. Excluded from verified shortlist."
+    },
+    {
+      "url": "https://create.roblox.com/store/asset/84438691886171",
+      "name": "Polygon Food Pack",
+      "reason": "Indexed price $9.99; excluded under free-only requirement."
+    },
+    {
+      "url": "https://create.roblox.com/store/asset/11460137833",
+      "name": "Healing Potion",
+      "reason": "Listing describes reupload; original rights unresolved."
+    },
+    {
+      "url": "https://create.roblox.com/store/asset/11428025133",
+      "name": "Healing Animations",
+      "reason": "Indexed counts include 1 script, 1 decal, but no verified R15 or character clip contents; defer."
+    },
+    {
+      "url": "https://create.roblox.com/store/asset/133601709278915",
+      "name": "Motion Lab",
+      "reason": "Free plugin install but generation credits described; full workflow not verified free."
+    },
+    {
+      "url": "https://create.roblox.com/store/asset/72922819641120",
+      "name": "VFX Texture Share",
+      "reason": "Free plugin; texture provenance and network/code behavior unresolved; no install."
+    }
+  ],
+  "sources": [
+    {
+      "url": "https://create.roblox.com/docs/tutorials/use-case-tutorials/vfx/laser-traps-with-beams",
+      "supportedFact": "Official beam setup links Laser Beam Blaster. Optional damage example sets Health=0; not Guildborne combat design.",
+      "checkedDate": "2026-10-12"
+    },
+    {
+      "url": "https://create.roblox.com/docs/education/build-it-play-it-island-of-move/sharing-animations",
+      "supportedFact": "Animations can be shared to people/groups/games without universally reuploading.",
+      "checkedDate": "2026-10-12"
+    },
+    {
+      "url": "https://create.roblox.com/docs/reference/engine/classes/Animation",
+      "supportedFact": "Animation content ID is distinct from containing model ID; replication requires correct Animator/server setup.",
+      "checkedDate": "2026-10-12"
+    },
+    {
+      "url": "https://create.roblox.com/docs/scripting/security/third-party-vulnerabilities",
+      "supportedFact": "Creator Store metadata/popularity does not establish code safety.",
+      "checkedDate": "2026-10-12"
+    },
+    {
+      "url": "https://create.roblox.com/docs/projects/assets/privacy",
+      "supportedFact": "Dependency access permissions require verification for target experience.",
+      "checkedDate": "2026-10-12"
+    },
+    {
+      "url": "https://en.help.roblox.com/hc/en-us/articles/21308223046932-Creator-Store-Terms",
+      "supportedFact": "Store assets have platform terms; free acquisition is not an off-platform redistribution license.",
+      "checkedDate": "2026-10-12"
+    }
+  ]
+}
+

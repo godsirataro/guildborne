@@ -1,0 +1,22 @@
+{
+  "date": "2026-10-14",
+  "sourceCandidate": "4f56b8978cba86f11dcc0cd7f53a5c105bc9f67891911e19ce3e9bf916776e52",
+  "nativeFixture": {
+    "content": [
+      {
+        "type": "text",
+        "text": "{\"profileMutation\":false,\"towerExitRetained\":true,\"status\":\"PASS\",\"kind\":\"Synthetic native UI fixture with actual snapshot shape\",\"mentorDisabled\":true,\"skillsNoSettings\":true}"
+      }
+    ],
+    "isError": false
+  },
+  "normalRoute": {
+    "candidate": "548fff321762daac8d3faa0e9315d362da580b60b5ae4de2304c33c0d3276dd8",
+    "noviceClaimed": 2,
+    "level": 5,
+    "revision": 9,
+    "mode": "Studio Memory",
+    "notFullRoute": true
+  },
+  "publicReady": false
+}

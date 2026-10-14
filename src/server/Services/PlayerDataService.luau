@@ -171,6 +171,10 @@ return function(deps: any)
 		if type(command.requestId)~="string" or #command.requestId<1 or #command.requestId>64 or type(command.args)~="table" then return "InvalidRequest",nil end
 		return execute(userId,command,function(record:any)return deps.NoviceStory.receipt(record,command)end)
 	end
+	function Service.CommitHeroMentor(userId:number,command:any):(string,any)
+		if not deps.HeroMentor or type(command)~="table" or command.action~="HeroMentorProof" or type(command.requestId)~="string" or #command.requestId>64 or type(command.args)~="table" then return "InvalidAction",nil end
+		return execute(userId,command,function(record:any)return deps.HeroMentor.commit(record,command)end)
+	end
 	function Service.CommitCampaign(userId:number,command:any):(string,any)
 		if not deps.Campaign or type(command)~="table"or command.action~="CampaignObjective"then return "InvalidAction",nil end
 		if type(command.requestId)~="string"or #command.requestId<1 or #command.requestId>64 or type(command.args)~="table"then return "InvalidRequest",nil end

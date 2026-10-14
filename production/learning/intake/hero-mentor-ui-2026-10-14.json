@@ -1,0 +1,22 @@
+{
+  "outcome": "success",
+  "context": "Independent source and preserved-evidence review of Guildborne hero mentor presentation on 2026-10-14, local Memory candidate 82674727eefa082b788dd517d9d3febda46e8891ef8b1609e80d5c79fa13aac0. The native ExpansionView fixture supplied synthetic session/readiness data and captured local callbacks; it did not run a normal hero journey or live profile commit.",
+  "observation": "The preserved Studio raw contains ten successful widget cases: English and Thai crossed with idle, Active, Saving, proof retained after party removal, and proof retained while dispatched. Train was available only in idle; Cancel was absent when idle/ineligible, available Active and disabled Saving; Advance stayed disabled in all tested cases. Source review found a separate integration gap: adding localized code entries alone did not make SliceController use them. The controller correction preserved legacy messages, translated recognized codes and kept unknown-code fallback. The initial fixture nil-call failure is retained; the corrected fixture clears prior widgets between languages.",
+  "correction": "Treat saved proof readiness and current actor eligibility as separate presentation facts. Derive minimal ephemeral actor/path/phase from the caller's owned server entry rather than profile revision alone; emit phase notifications that trigger the existing UI redraw path. Trace localized codes through the actual controller resolver, not just catalog tests. Verify Active and Saving button behavior and party/dispatch invalidation in both languages. Isolate each native-widget fixture case and preserve failed raw outputs.",
+  "limit": "This is a bounded source/native-widget lesson, not gameplay or release acceptance. Widget inputs were synthetic; the fixture did not exercise World.State to Network to SliceController to SliceUI end-to-end, nor a same-revision live Active-to-Saving notification. Those paths were source-reviewed only. The first failure's stale-widget diagnosis is contextual, not independently rerun. The full 752-test baseline preceded the small controller localization correction; later analysis was separate. No claim of ordinary hero recruitment/leveling/advancement, cloud persistence, distinct live servers, visual fit, animation/audio quality, device performance or human UAT. No skill proposal, evaluation, promotion, model call, publishing or authority change is performed by recording this lesson.",
+  "tags": ["hero-mentor", "native-ui", "ephemeral-state", "localization", "fixture", "independent-review"],
+  "evidence": [
+    {
+      "path": "production/launch/integration/hero-mentor-ui-raw.json",
+      "sha256": "e620fcd6a268f73f1ecbf2e4ff107bc4419d17a9fa6fb3c7030282123378931f"
+    },
+    {
+      "path": "production/launch/integration/hero-mentor-ui-fixture.luau",
+      "sha256": "d9cb1fd7be05c757eaa4d3e1befae840bbb0faf254323fe486e821c1a89ec187"
+    },
+    {
+      "path": "production/launch/integration/hero-mentor-ui-build-receipt.json",
+      "sha256": "5afdd8dea718f6025bd6ef54ef2e3a49c0f3eca84c8a4dbf3c99e0904ec361e8"
+    }
+  ]
+}

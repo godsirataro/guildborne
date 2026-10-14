@@ -1,3 +1,7 @@
+# Current release scope — 2026-10-14
+
+The approved Public boundary is now recorded in [LAUNCH_PLAN.md](LAUNCH_PLAN.md): Lv1–35, two main arcs, four cosmetic races / 13 presets, five companions per owner, personal Guild/island, six-human Party with shared Solo/Party encounters and divided EXP/loot, Premium shop/Battle Pass and free daily check-in. Guild has one human owner and NPC heroes only; human membership belongs to Federation after launch. See [Party6 contract](launch/integration/PARTY6_PLAN.md). Market, wars and Federation follow after launch. Local implementation is in progress; publishing, live commerce, cloud/device/human acceptance remain separate gates. Older references to human-member player guilds below are superseded by this clarification; preserve legacy data until an explicit migration is reviewed.
+
 # Guildborne latest-goal implementation contract — 2026-10-09
 
 This continuation stays in PR #1. It is not approval to merge, publish, purchase,

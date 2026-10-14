@@ -51,6 +51,28 @@ Generated output, import, Studio acceptance, hardware and human review are disti
 
 ## Forge tasks (these scopes apply only after a valid task claim)
 
+### borin-integration: Borin Integration
+
+Bind Borin authored presentation to existing authoritative NPC and quest. Work/interact/recover lifecycle with one pose owner, streamed cleanup, no invented IDs or rewards. Source candidate proceeds independently; actual rig/import/Studio/human acceptance remain separate.
+
+Environment: local; skill: guildborne-npc-life
+
+Write scopes: src/server/Services/FriendlyCityNpcs.luau, src/client/Controllers/FriendlyNpcAnimator.luau, src/shared/Presentation/BorinWorkMotion.luau, src/shared/Presentation/BorinPresentation.luau, tests/borin_presentation.luau, tests/studio_borin_integration.luau, production/npc-life/borin-integration.md
+
+Required checks: source-contract, regression, independent-review
+
+Dependencies: none
+
+Path rule server-authority: Reuse actual services; server owns combat/inventory/currency/allocation/rewards/guild/build/escrow. Preserve fencing/receipts/saves/disabled flags. No production cloud writes or commerce activation.
+
+Path rule native-client: Native Roblox UI/presentation only. Send intent, never damage/value/rewards. Coordinate actual UI/Controller modules, EN/TH states and cleanup.
+
+Path rule shared-contracts: Shared definitions are client-safe. Preserve IDs/earned ancestry and progression separately from cosmetic IDs. Reconcile Novice 10/35/70 and Hall contracts.
+
+Path rule tooling: Use reviewed bounded local commands/tests. Studio/Forge planners do not launch models; paid/model subprocess, MCP mutation and installation require actual authorization/capability.
+
+Path rule production-evidence: Reconcile latest goals/registries/scopes. One shared ledger, claim before writes, immediate lease check and preserved raw receipts. Different reviewer validates evidence; local checks cannot replace hardware/cloud/human gates.
+
 ### npc-life: Natural friendly NPC activity and quest integration
 
 Reuse six civic contact studies; bind them to real world NPCs without duplicating quest rewards. Humans, Elves, Orcs and Dwarfs can all be friendly. Review deterministic routines, distance LOD, work contacts and interruption/recovery.

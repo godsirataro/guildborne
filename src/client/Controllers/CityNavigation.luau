@@ -64,8 +64,8 @@ return function()
 		for _,entry in ipairs(entries) do
 			local node=Instance.new("TextButton");node.Name="GuideResource_"..entry.id;node.Size=UDim2.new(.24,0,0,44);node.Position=regionalPoint(region,entry.x,entry.z);node.AnchorPoint=Vector2.new(.5,.5);node.BackgroundColor3=Art.UI.Button;node.TextColor3=Art.UI.Text;node.TextSize=15;node.TextWrapped=true;node.Visible=false;node.Parent=regionalMap
 			node.TextScaled=true;local fontLimit=Instance.new("UITextSizeConstraint");fontLimit.MinTextSize=12;fontLimit.MaxTextSize=15;fontLimit.Parent=node
-			table.insert(regionNodes,{button=node,region=region,name=entry.name})
-			connect(node.Activated,function()select(entry.name,entry.x,entry.z)end)
+			table.insert(regionNodes,{button=node,region=region,name=entry.name,id=entry.id})
+			connect(node.Activated,function()if node.Active then select(entry.name,entry.x,entry.z)end end)
 		end
 	end
 	local regionalMarker=marker:Clone();regionalMarker.Name="RegionalPlayerPosition";regionalMarker.Parent=regionalMap
@@ -89,7 +89,13 @@ return function()
 		if mapCivic then hint.Text=Locale.translate(language,"Landmark and return portals. Gold dot: you.")end
 		map.Visible=not future and mapRegion==nil and mapCivic==nil;regionalMap.Visible=not future and mapRegion~=nil
 		civicMap.frame.Visible=not future and mapCivic~=nil;civicMap.update(mapCivic,language)
-		for _,entry in ipairs(regionNodes) do entry.button.Visible=entry.region==mapRegion;entry.button.Text=Locale.translate(language,entry.name) end
+		for _,entry in ipairs(regionNodes) do
+			local release=snapshot and snapshot.catalog and snapshot.catalog.ReleaseContent
+			local unavailable=release and release.BlockedNodes and release.BlockedNodes[entry.id]==true
+			entry.button.Visible=entry.region==mapRegion
+			entry.button.Active=not unavailable;entry.button.AutoButtonColor=not unavailable
+			entry.button.Text=Locale.translate(language,entry.name)..(if unavailable then " · "..Locale.translate(language,"Available after the Lv1–35 preview.")else "")
+		end
 		for key,node in pairs(nodes) do node.Text=Locale.translate(language,key) end
 	end
 	local function show()

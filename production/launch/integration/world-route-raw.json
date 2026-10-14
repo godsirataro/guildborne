@@ -1,0 +1,45 @@
+{
+  "foundation": {
+    "content": [
+      {
+        "type": "text",
+        "text": "{\"heroes\":{\"a:Warrior\":{\"equipmentSlots\":{\"weapon\":\"novice:founder:1\"},\"stats\":{\"Attack\":17,\"Defense\":4,\"Health\":57,\"WeaponBonus\":2},\"appearance\":{\"hairColorId\":\"HAIR_DARK_BROWN\",\"bodyPresetId\":\"HUMAN_STANDARD\",\"raceFeatures\":[],\"raceId\":\"HUMAN\",\"outfitSlots\":{\"INNER_TOP\":\"CLO_TUNIC_TRAVELER_01\",\"INNER_BOTTOM\":\"CLO_TROUSERS_TRAVELER_01\"},\"appearanceVersion\":1,\"skinPaletteId\":\"SKIN_HUMAN_03\",\"hairAssetId\":\"ACC_HAIR_HUMAN_01\",\"headPresetId\":\"CHR_HEAD_HUMAN_01\"},\"id\":\"a:Warrior\",\"classId\":\"Warrior\",\"appearanceEnabled\":false,\"name\":\"Rowan\",\"xp\":450,\"baseStats\":{\"Defense\":4,\"Health\":30,\"Attack\":6},\"level\":10,\"appearanceRevision\":0,\"rank\":\"F\"}},\"revision\":28,\"campaign\":{\"choices\":[],\"version\":1,\"claimed\":0,\"objectives\":[]},\"gold\":0,\"level\":10,\"class\":\"Warrior\",\"novice\":{\"trialClass\":\"Warrior\",\"founderHero\":\"a:Warrior\",\"claimed\":6,\"branch\":\"rescue\",\"version\":1,\"objectives\":[]},\"hall\":1}"
+      }
+    ],
+    "isError": false
+  },
+  "worldProbe": {
+    "content": [
+      {
+        "type": "text",
+        "text": "{\"greenwood\":true,\"blockedEntry\":\"Ashen\",\"cityReturn\":true,\"towerRecoveryPanel\":true,\"persistence\":\"Memory\",\"blockedNodes\":2,\"status\":\"PASS\",\"ironveil\":true,\"publicAcceptance\":false}"
+      }
+    ],
+    "isError": false
+  },
+  "warriorTrial": {
+    "visible": false,
+    "goals": "Basic hits 3/3 · Sentinel defeated 1/1 · Warnings dodged 1/1",
+    "z": 846.7737426757812,
+    "status": "Won",
+    "hp": "HP 30/57 · Sentinel 0/700",
+    "delivered": true
+  },
+  "hallTrial": {
+    "visible": false,
+    "goals": "Defeat the opponent 1/1",
+    "z": 646.7516479492188,
+    "status": "Won",
+    "hp": "HP 30/57 · Hall Sentinel 0/360",
+    "delivered": true
+  },
+  "main01": {
+    "content": [
+      {
+        "type": "text",
+        "text": "{\"data\":{\"adventurers\":{\"a:Warrior\":{\"equipmentSlots\":{\"weapon\":\"novice:founder:1\"},\"stats\":{\"Attack\":19,\"Defense\":4,\"Health\":63,\"WeaponBonus\":2},\"appearance\":{\"hairColorId\":\"HAIR_DARK_BROWN\",\"bodyPresetId\":\"HUMAN_STANDARD\",\"raceFeatures\":[],\"raceId\":\"HUMAN\",\"outfitSlots\":{\"INNER_TOP\":\"CLO_TUNIC_TRAVELER_01\",\"INNER_BOTTOM\":\"CLO_TROUSERS_TRAVELER_01\"},\"appearanceVersion\":1,\"skinPaletteId\":\"SKIN_HUMAN_03\",\"hairAssetId\":\"ACC_HAIR_HUMAN_01\",\"headPresetId\":\"CHR_HEAD_HUMAN_01\"},\"id\":\"a:Warrior\",\"classId\":\"Warrior\",\"appearanceEnabled\":false,\"name\":\"Rowan\",\"xp\":550,\"baseStats\":{\"Defense\":4,\"Health\":30,\"Attack\":6},\"level\":12,\"appearanceRevision\":0,\"rank\":\"F\"}},\"levelCap\":20,\"nextHallLevelCap\":25,\"settlement\":{\"nextOffer\":1,\"elixirs\":0,\"tavernLevel\":1,\"nextHero\":1,\"nextJob\":1,\"journal\":[],\"jobs\":[]},\"releaseAdvancementProblems\":{\"a:Warrior\":{\"commander\":\"ReleaseContentUnavailable\",\"berserker\":\"HeroMentorUnavailable\",\"warlord\":\"ReleaseContentUnavailable\",\"sword_saint\":\"ReleaseContentUnavailable\",\"duelist\":\"HeroMentorUnavailable\"},\"player\":{\"commander\":\"ReleaseContentUnavailable\",\"berserker\":\"ClassMentorRequired\",\"warlord\":\"ReleaseContentUnavailable\",\"sword_saint\":\"ReleaseContentUnavailable\",\"duelist\":\"ClassMentorRequired\"}},\"party\":{\"adventurerIds\":{\"1\":\"a:Warrior\"}},\"gold\":15,\"language\":\"en\",\"expansion\":{\"actors\":[],\"nextBuilding\":1,\"buildings\":[],\"themeRights\":[],\"tower\":{\"nextRun\":1,\"highest\":0,\"checkpoint\":0},\"gatherReady\":[],\"gathered\":[],\"raceChosen\":false},\"guildLand\":{\"accessMode\":\"Private\",\"plots\":{\"grove\":{\"purchaseAvailable\":false,\"questEligible\":false,\"name\":\"Grove Terrace\",\"delivered\":[],\"status\":\"QuestLocked\",\"purchased\":false,\"quests\":{\"trail_watch\":false},\"materials\":{\"timber\":24,\"herb\":8}},\"quarry\":{\"purchaseAvailable\":false,\"questEligible\":false,\"name\":\"Quarry Terrace\",\"delivered\":[],\"status\":\"QuestLocked\",\"purchased\":false,\"quests\":{\"quarry_patrol\":false,\"timber_escort\":false},\"materials\":{\"stone\":32,\"iron_ore\":16}},\"summit\":{\"purchaseAvailable\":false,\"questEligible\":false,\"name\":\"Summit Terrace\",\"delivered\":[],\"status\":\"QuestLocked\",\"purchased\":false,\"quests\":{\"quarry_patrol\":false},\"materials\":{\"stone\":40,\"timber\":40,\"iron_ingot\":4}}}},\"character\":{\"classPathId\":\"warrior:1\",\"stats\":{\"Attack\":19,\"Defense\":4,\"Health\":63,\"WeaponBonus\":2},\"appearance\":{\"hairColorId\":\"HAIR_DARK_BROWN\",\"bodyPresetId\":\"HUMAN_STANDARD\",\"raceFeatures\":[],\"raceId\":\"HUMAN\",\"outfitSlots\":{\"INNER_TOP\":\"CLO_TUNIC_TRAVELER_01\",\"INNER_BOTTOM\":\"CLO_TROUSERS_TRAVELER_01\"},\"appearanceVersion\":1,\"hairAssetId\":\"ACC_HAIR_HUMAN_01\",\"skinPaletteId\":\"SKIN_HUMAN_03\",\"headPresetId\":\"CHR_HEAD_HUMAN_01\"},\"classId\":\"Warrior\",\"appearanceEnabled\":false,\"raceId\":\"Human\",\"definitionVersion\":1,\"equipmentSlots\":{\"weapon\":\"novice:class:1\"},\"tier\":1,\"xp\":550,\"level\":12,\"appearanceRevision\":0,\"skillId\":\"power_strike\"},\"progression\":{\"tutorialStep\":\"complete\",\"recruitedClasses\":{\"Warrior\":true},\"campaign\":{\"choices\":[],\"version\":1,\"claimed\":1,\"objectives\":[]},\"welcomeSeen\":true,\"ruleset\":\"guildborne.progression.2\",\"novice\":{\"trialClass\":\"Warrior\",\"founderHero\":\"a:Warrior\",\"claimed\":6,\"branch\":\"rescue\",\"version\":1,\"objectives\":[]},\"tutorialCompleted\":true,\"everEquipped\":false},\"inventory\":{\"equipment\":{\"novice:class:1\":{\"binding\":\"Account\",\"definitionId\":\"training_sword\",\"upgradeLevel\":0},\"novice:founder:1\":{\"binding\":\"Account\",\"definitionId\":\"training_sword\",\"upgradeLevel\":0}},\"stacks\":[],\"nextEquipmentSequence\":1},\"launchRewards\":{\"daily\":{\"nextAt\":1792022400,\"claimable\":true,\"claims\":0,\"reward\":{\"Id\":\"herb\",\"Quantity\":2}},\"available\":true,\"premiumAvailable\":false,\"preview\":true,\"seasonId\":\"launch_preview_01\",\"tiers\":{\"1\":{\"free\":{\"Id\":\"herb\",\"Quantity\":2},\"premiumClaimed\":false,\"tier\":1,\"earned\":false,\"freeClaimed\":false,\"premium\":{\"Id\":\"herb\",\"Quantity\":2},\"milestone\":\"MAIN_01_06\"},\"3\":{\"free\":{\"Id\":\"stone\",\"Quantity\":2},\"premiumClaimed\":false,\"tier\":3,\"earned\":false,\"freeClaimed\":false,\"premium\":{\"Id\":\"stone\",\"Quantity\":2},\"milestone\":\"MAIN_02_02\"},\"2\":{\"free\":{\"Id\":\"timber\",\"Quantity\":2},\"premiumClaimed\":false,\"tier\":2,\"earned\":false,\"freeClaimed\":false,\"premium\":{\"Id\":\"timber\",\"Quantity\":2},\"milestone\":\"MAIN_02_01\"},\"5\":{\"free\":{\"Id\":\"herb\",\"Quantity\":3},\"premiumClaimed\":false,\"tier\":5,\"earned\":false,\"freeClaimed\":false,\"premium\":{\"Id\":\"herb\",\"Quantity\":3},\"milestone\":\"MAIN_02_04\"},\"4\":{\"free\":{\"Id\":\"iron_ore\",\"Quantity\":1},\"premiumClaimed\":false,\"tier\":4,\"earned\":false,\"freeClaimed\":false,\"premium\":{\"Id\":\"iron_ore\",\"Quantity\":1},\"milestone\":\"MAIN_02_03\"},\"6\":{\"free\":{\"Id\":\"iron_ingot\",\"Quantity\":1},\"premiumClaimed\":false,\"tier\":6,\"earned\":false,\"freeClaimed\":false,\"premium\":{\"Id\":\"iron_ingot\",\"Quantity\":1},\"milestone\":\"MAIN_02_05\"}}},\"hallLevel\":1,\"rosterCapacity\":5,\"quests\":{\"nextRunSequence\":1,\"claimedThrough\":0,\"firstClears\":[]},\"permanentPassOffers\":{\"Land\":[],\"Theme\":[]}},\"revision\":33}"
+      }
+    ],
+    "isError": false
+  }
+}

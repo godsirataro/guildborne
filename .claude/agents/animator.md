@@ -49,6 +49,28 @@ Path rule asset-lifecycle: Keep modular owned source/export hashes, manifests, f
 
 Path rule production-evidence: Reconcile latest goals/registries/scopes. One shared ledger, claim before writes, immediate lease check and preserved raw receipts. Different reviewer validates evidence; local checks cannot replace hardware/cloud/human gates.
 
+### presentation-integration: Presentation Integration
+
+Integrate existing action timing and deterministic presentation cues with bounded lifecycle. Build isolated Memory-only full-game preview; inspect and playtest actual Studio candidate without cloud writes or publication. Preserve server combat and existing source ownership.
+
+Environment: studio; skill: guildborne-animation
+
+Write scopes: src/client/Controllers/ActionPose.luau, src/client/Controllers/AudioController.luau, src/shared/Presentation/ActionTimeline.luau, src/shared/Config/AudioConfig.luau, tests/action_timeline.luau, tests/studio_presentation_integration.luau, tools/build_integration_preview.py, production/integration, tests/agentic/test_forge.py, production/studio, production/studio/studio.json, .codex/agents, .claude/agents, src/client/Controllers/SkillEffects.luau, tests/studio_action_cancellation.luau
+
+Required checks: source-contract, regression, independent-review
+
+Dependencies: none
+
+Path rule native-client: Native Roblox UI/presentation only. Send intent, never damage/value/rewards. Coordinate actual UI/Controller modules, EN/TH states and cleanup.
+
+Path rule shared-contracts: Shared definitions are client-safe. Preserve IDs/earned ancestry and progression separately from cosmetic IDs. Reconcile Novice 10/35/70 and Hall contracts.
+
+Path rule tooling: Use reviewed bounded local commands/tests. Studio/Forge planners do not launch models; paid/model subprocess, MCP mutation and installation require actual authorization/capability.
+
+Path rule production-evidence: Reconcile latest goals/registries/scopes. One shared ledger, claim before writes, immediate lease check and preserved raw receipts. Different reviewer validates evidence; local checks cannot replace hardware/cloud/human gates.
+
+Path rule agent-instructions: Generate Codex agents from canonical Studio spec/existing skills with inherited model/permissions, no arbitrary hooks. Use actual authorized host delegation or sequential work; planners do not start workers.
+
 ## Evidence gates
 
 audio-validation (audio): Record owned/licensed masters, required provider authorization, cue IDs and actual sync/mix/listening. Missing provider or files leaves pending.

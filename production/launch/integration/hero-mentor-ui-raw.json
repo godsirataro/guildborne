@@ -1,0 +1,38 @@
+{
+  "sync": {
+    "content": [
+      {
+        "type": "text",
+        "text": "{\"candidate\":\"82674727eefa082b788dd517d9d3febda46e8891ef8b1609e80d5c79fa13aac0\",\"gameId\":0,\"changed\":8,\"scripts\":360,\"placeId\":0}"
+      }
+    ],
+    "isError": false
+  },
+  "fixture": {
+    "content": [
+      {
+        "type": "text",
+        "text": "{\"noProfileWrites\":true,\"cases\":{\"1\":{\"state\":\"idle\",\"cancel\":\"absent\",\"advance\":false,\"language\":\"en\",\"train\":true},\"3\":{\"state\":\"Saving\",\"cancel\":false,\"advance\":false,\"language\":\"en\",\"train\":false},\"2\":{\"state\":\"Active\",\"cancel\":true,\"advance\":false,\"language\":\"en\",\"train\":false},\"5\":{\"state\":\"dispatched\",\"cancel\":\"absent\",\"advance\":false,\"language\":\"en\",\"train\":false},\"4\":{\"state\":\"partyRemoved\",\"cancel\":\"absent\",\"advance\":false,\"language\":\"en\",\"train\":false},\"7\":{\"state\":\"Active\",\"cancel\":true,\"advance\":false,\"language\":\"th\",\"train\":false},\"6\":{\"state\":\"idle\",\"cancel\":\"absent\",\"advance\":false,\"language\":\"th\",\"train\":true},\"9\":{\"state\":\"partyRemoved\",\"cancel\":\"absent\",\"advance\":false,\"language\":\"th\",\"train\":false},\"8\":{\"state\":\"Saving\",\"cancel\":false,\"advance\":false,\"language\":\"th\",\"train\":false},\"10\":{\"state\":\"dispatched\",\"cancel\":\"absent\",\"advance\":false,\"language\":\"th\",\"train\":false}},\"synthetic\":true}"
+      }
+    ],
+    "isError": false
+  },
+  "initialFixtureFailure": {
+    "content": [
+      {
+        "type": "text",
+        "text": "sabuiltin_Assistant.rbxm.Assistant.Packages._Index.AssistantUI.AssistantUI.Tools.ExecuteLuauTool:86: sabuiltin_Assistant.rbxm.Assistant.Packages._Index.AssistantUI.AssistantUI.Util.CommandExecution:54: AssistantCommand:35: AssistantCommand:19: attempt to call a nil value"
+      }
+    ],
+    "isError": true
+  },
+  "oldCandidateNoviceChapterOne": {
+    "content": [
+      {
+        "type": "text",
+        "text": "{\"level\":3,\"revision\":5,\"novice\":{\"claimed\":1,\"version\":1,\"objectives\":[]},\"position\":\"-4560.1923828125, 2.998025894165039, 151.02621459960938\"}"
+      }
+    ],
+    "isError": false
+  }
+}

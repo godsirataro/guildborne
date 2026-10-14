@@ -1,0 +1,122 @@
+{
+  "schemaVersion": 1,
+  "presets": [
+    {
+      "bodyPresetId": "HUMAN_SLIM",
+      "raceId": "HUMAN",
+      "visualHeightRatioToHuman": 1.0,
+      "relativeShoulderWidth": 0.91,
+      "fitProfile": "FAMILY_HUMANOID",
+      "status": "PLANNED",
+      "notes": "Art target only; Studio geometry and fit must be tested, not combat-stat scaling."
+    },
+    {
+      "bodyPresetId": "HUMAN_STANDARD",
+      "raceId": "HUMAN",
+      "visualHeightRatioToHuman": 1.0,
+      "relativeShoulderWidth": 1.0,
+      "fitProfile": "FAMILY_HUMANOID",
+      "status": "PLANNED",
+      "notes": "Art target only; Studio geometry and fit must be tested, not combat-stat scaling."
+    },
+    {
+      "bodyPresetId": "HUMAN_ATHLETIC",
+      "raceId": "HUMAN",
+      "visualHeightRatioToHuman": 1.01,
+      "relativeShoulderWidth": 1.07,
+      "fitProfile": "FAMILY_HUMANOID",
+      "status": "PLANNED",
+      "notes": "Art target only; Studio geometry and fit must be tested, not combat-stat scaling."
+    },
+    {
+      "bodyPresetId": "HUMAN_HEAVY",
+      "raceId": "HUMAN",
+      "visualHeightRatioToHuman": 0.99,
+      "relativeShoulderWidth": 1.17,
+      "fitProfile": "FAMILY_HUMANOID",
+      "status": "PLANNED",
+      "notes": "Art target only; Studio geometry and fit must be tested, not combat-stat scaling."
+    },
+    {
+      "bodyPresetId": "ELF_GRACEFUL",
+      "raceId": "ELF",
+      "visualHeightRatioToHuman": 1.06,
+      "relativeShoulderWidth": 0.89,
+      "fitProfile": "FAMILY_HUMANOID",
+      "status": "PLANNED",
+      "notes": "Art target only; Studio geometry and fit must be tested, not combat-stat scaling."
+    },
+    {
+      "bodyPresetId": "ELF_RANGER",
+      "raceId": "ELF",
+      "visualHeightRatioToHuman": 1.04,
+      "relativeShoulderWidth": 1.01,
+      "fitProfile": "FAMILY_HUMANOID",
+      "status": "PLANNED",
+      "notes": "Art target only; Studio geometry and fit must be tested, not combat-stat scaling."
+    },
+    {
+      "bodyPresetId": "ELF_STURDY",
+      "raceId": "ELF",
+      "visualHeightRatioToHuman": 1.04,
+      "relativeShoulderWidth": 1.12,
+      "fitProfile": "FAMILY_HUMANOID",
+      "status": "PLANNED",
+      "notes": "Art target only; Studio geometry and fit must be tested, not combat-stat scaling."
+    },
+    {
+      "bodyPresetId": "ORC_LEAN",
+      "raceId": "ORC",
+      "visualHeightRatioToHuman": 1.08,
+      "relativeShoulderWidth": 1.05,
+      "fitProfile": "FAMILY_ORC",
+      "status": "PLANNED",
+      "notes": "Art target only; Studio geometry and fit must be tested, not combat-stat scaling."
+    },
+    {
+      "bodyPresetId": "ORC_STANDARD",
+      "raceId": "ORC",
+      "visualHeightRatioToHuman": 1.12,
+      "relativeShoulderWidth": 1.25,
+      "fitProfile": "FAMILY_ORC",
+      "status": "PLANNED",
+      "notes": "Art target only; Studio geometry and fit must be tested, not combat-stat scaling."
+    },
+    {
+      "bodyPresetId": "ORC_HEAVY",
+      "raceId": "ORC",
+      "visualHeightRatioToHuman": 1.1,
+      "relativeShoulderWidth": 1.4,
+      "fitProfile": "FAMILY_ORC",
+      "status": "PLANNED",
+      "notes": "Art target only; Studio geometry and fit must be tested, not combat-stat scaling."
+    },
+    {
+      "bodyPresetId": "DWARF_COMPACT",
+      "raceId": "DWARF",
+      "visualHeightRatioToHuman": 0.78,
+      "relativeShoulderWidth": 1.12,
+      "fitProfile": "FAMILY_DWARF",
+      "status": "PLANNED",
+      "notes": "Art target only; Studio geometry and fit must be tested, not combat-stat scaling."
+    },
+    {
+      "bodyPresetId": "DWARF_BROAD",
+      "raceId": "DWARF",
+      "visualHeightRatioToHuman": 0.79,
+      "relativeShoulderWidth": 1.31,
+      "fitProfile": "FAMILY_DWARF",
+      "status": "PLANNED",
+      "notes": "Art target only; Studio geometry and fit must be tested, not combat-stat scaling."
+    },
+    {
+      "bodyPresetId": "DWARF_STOUT",
+      "raceId": "DWARF",
+      "visualHeightRatioToHuman": 0.76,
+      "relativeShoulderWidth": 1.43,
+      "fitProfile": "FAMILY_DWARF",
+      "status": "PLANNED",
+      "notes": "Art target only; Studio geometry and fit must be tested, not combat-stat scaling."
+    }
+  ]
+}

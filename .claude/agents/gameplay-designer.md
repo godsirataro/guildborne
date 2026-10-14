@@ -46,6 +46,28 @@ Generated output, import, Studio acceptance, hardware and human review are disti
 
 ## Forge tasks (these scopes apply only after a valid task claim)
 
+### launch-content: Launch Content
+
+Implement existing release policy plus genuine per-hero/per-path Class2 mentor trial with server-owned combat observations, private transactional receipts, optional backward-compatible proof, native UI and lifecycle cleanup. Preserve legacy earned progress. No cloud activation.
+
+Environment: local; skill: guildborne-progression
+
+Write scopes: src/server/Config/ReleaseContent.luau, src/server/Systems/ReleasePolicy.luau, src/server/Services/CampaignService.luau, tests/launch_content.luau, tests/run_launch_content.luau, production/launch/content.md, src/server/Systems/HeroMentorTrial.luau, src/server/Services/HeroMentorWorld.luau, src/server/Services/HeroMentorReceiptAdapter.luau, src/server/Services/ExpansionService.luau, src/server/Systems/ExpansionSchema.luau, src/server/Services/PlayerDataService.luau, src/server/ServerBootstrap.server.luau, src/server/Services/WorldService.luau, src/server/Services/HeroService.luau, src/server/Systems/ViewProjection.luau, src/client/UI/ExpansionView.luau, src/shared/Network/Protocol.luau, src/shared/Config/Localization.luau, tests/hero_mentor.luau, tests/run_hero_mentor.luau, tests/run.luau, production/launch/hero-mentor.md, src/server/Services/NetworkService.luau, tests/launch_transaction_integration.luau
+
+Required checks: source-contract, regression, independent-review
+
+Dependencies: none
+
+Path rule server-authority: Reuse actual services; server owns combat/inventory/currency/allocation/rewards/guild/build/escrow. Preserve fencing/receipts/saves/disabled flags. No production cloud writes or commerce activation.
+
+Path rule native-client: Native Roblox UI/presentation only. Send intent, never damage/value/rewards. Coordinate actual UI/Controller modules, EN/TH states and cleanup.
+
+Path rule shared-contracts: Shared definitions are client-safe. Preserve IDs/earned ancestry and progression separately from cosmetic IDs. Reconcile Novice 10/35/70 and Hall contracts.
+
+Path rule tooling: Use reviewed bounded local commands/tests. Studio/Forge planners do not launch models; paid/model subprocess, MCP mutation and installation require actual authorization/capability.
+
+Path rule production-evidence: Reconcile latest goals/registries/scopes. One shared ledger, claim before writes, immediate lease check and preserved raw receipts. Different reviewer validates evidence; local checks cannot replace hardware/cloud/human gates.
+
 ### progression: Class, skill tree, status and Hall integration
 
 Read LATEST_GOALS.md. Reuse Content.ProgressionRulesets, HallLevelCap, RecruitmentStartingXP and StatusPoints. Novice Class2 readiness is35; retain legacy policy and earned paths. Do not switch default campaign flags or create a competing progression service. Additional migration/cutover requires its own tested fixture plan.

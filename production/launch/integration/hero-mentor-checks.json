@@ -1,0 +1,56 @@
+{
+  "date": "2026-10-14",
+  "status": "SCOPED_STUDIO_FIXTURE_PASS_INDEPENDENTLY_REVIEWED",
+  "publicReady": false,
+  "candidateSha256": "41e341d43e58bbce62efcbe80652fab6650cbe04de899d2c73dbe307a295002c",
+  "sourceTests": 749,
+  "sourceReview": "policy_review PASS_SCOPED",
+  "studio": {
+    "placeId": 0,
+    "gameId": 0,
+    "persistence": "Memory",
+    "scriptsCompared": 360,
+    "normalBoot": "PASS",
+    "worldFixturePaths": [
+      "berserker",
+      "cleric",
+      "guardian"
+    ],
+    "normalHeroRoute": "PENDING",
+    "fixtureCommitSink": "pure operation in isolated fixture record, not live PDS"
+  },
+  "report": "HERO_MENTOR_UPDATE.md",
+  "raw": [
+    {
+      "path": "hero-mentor-world-raw.json",
+      "sha256": "340a67c7a65f634ac4b32c66f38a707a6544699bf04b0ff314654c23ca9b4f56"
+    },
+    {
+      "path": "hero-mentor-lifecycle-raw.json",
+      "sha256": "f28cb6bd4071b6bded7020e71d5363cb1bd5673dc49a096ce8633bed43ca08f5"
+    },
+    {
+      "path": "hero-mentor-console-raw.json",
+      "sha256": "9496bc2e8da5dd3b3f5a5ca7628816c73c367efe1cf2dde4a49f5772191bc60a"
+    },
+    {
+      "path": "hero-mentor-clean-raw.json",
+      "sha256": "c00e71eed906d5503dbb90ea98cb54249773efffb1d3cb9e51450d441e1c46c5"
+    },
+    {
+      "path": "hero-mentor-build-receipt.json",
+      "sha256": "63480fb99488cb0c8f52f571d1eb4bc029aa1f284a75e2667d28a18095b61f64"
+    }
+  ],
+  "candidateFile": "build/Guildborne_LaunchPreview.rbxlx",
+  "buildReceipt": "build/launch-preview-build.json",
+  "syncManifest": "build/launch-sync/sources.json",
+  "studioWindowTitle": "Guildborne_IntegrationPreview.rbxlx",
+  "preservedBuildReceipt": "production/launch/integration/hero-mentor-build-receipt.json",
+  "syncManifestSha256": "2fdcc252881a079d7c52072d9703642ec5987549f96a85c7ddb2e9fa9132ec80",
+  "evidenceReview": {
+    "reviewer": "policy_review",
+    "status": "PASS_SCOPED",
+    "verified": "Five preserved artifact hashes, candidate/build receipt,342 source hashes,360 unique sync paths,749-test log and98 adapters; raw scoped outcomes and fresh cleanup. Fixture cause/images not independently reproduced."
+  }
+}

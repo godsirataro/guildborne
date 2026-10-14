@@ -223,6 +223,7 @@ class Ledger:
         self.db.execute("PRAGMA journal_mode=WAL")
         self.db.execute("CREATE TABLE IF NOT EXISTS meta (key TEXT PRIMARY KEY, value TEXT NOT NULL)")
         self.db.execute("CREATE TABLE IF NOT EXISTS jobs (id TEXT PRIMARY KEY, state TEXT NOT NULL, owner TEXT, token TEXT, expires REAL, evidence TEXT, reviewer TEXT)")
+        self.db.execute("CREATE TABLE IF NOT EXISTS learning_handoffs (id TEXT PRIMARY KEY, task TEXT NOT NULL, body TEXT NOT NULL, sha256 TEXT NOT NULL)")
         fingerprint = hashlib.sha256(json.dumps(plan, sort_keys=True, allow_nan=False).encode()).hexdigest()
         self.db.execute("BEGIN IMMEDIATE")
         try:
@@ -312,9 +313,11 @@ class Ledger:
         self.db.execute("BEGIN IMMEDIATE")
         try:
             row = self.db.execute("SELECT * FROM jobs WHERE id=?", (key,)).fetchone()
-            if not row or row["state"] != "REVIEW" or not reviewer.strip() or reviewer == row["owner"]:
+            if (not row or row["state"] != "REVIEW" or not isinstance(reviewer, str) or not reviewer.strip()
+                    or reviewer.strip().casefold() == row["owner"].strip().casefold()):
                 raise ValueError("A different named reviewer must review a submitted task")
             evidence_packet(self.root, self.tasks[key], json.loads(row["evidence"]))
+            self._learning_handoff(row, "ACCEPTED", reviewer)
             self.db.execute("UPDATE jobs SET state='ACCEPTED',reviewer=?,token=NULL WHERE id=?", (reviewer, key))
             self.db.execute("COMMIT")
         except Exception:
@@ -323,9 +326,41 @@ class Ledger:
 
     def release(self, key, token):
         # The human/operator first confirms old worker and tool session have stopped.
-        cursor = self.db.execute("UPDATE jobs SET state='PLANNED',owner=NULL,token=NULL,expires=NULL,evidence=NULL WHERE id=? AND token=? AND state IN ('ACTIVE','REVIEW')", (key, token))
-        if cursor.rowcount != 1:
-            raise ValueError("Cannot release another owner's task")
+        self.db.execute("BEGIN IMMEDIATE")
+        try:
+            row = self.db.execute("SELECT * FROM jobs WHERE id=?", (key,)).fetchone()
+            if not row or row["token"] != token or row["state"] not in ("ACTIVE", "REVIEW"):
+                raise ValueError("Cannot release another owner's task")
+            self._learning_handoff(row, "RELEASED", None)
+            self.db.execute("UPDATE jobs SET state='PLANNED',owner=NULL,token=NULL,expires=NULL,evidence=NULL WHERE id=?", (key,))
+            self.db.execute("COMMIT")
+        except Exception:
+            self.db.execute("ROLLBACK")
+            raise
+
+    def _learning_handoff(self, row, event, reviewer):
+        """Capture completion/release context, never infer a lesson or approve a skill.
+
+        Called inside the task transition transaction. Released packets are raw
+        historical references, not freshly passing evidence.
+        """
+        packet = json.loads(row["evidence"]) if row["evidence"] else None
+        body = {"taskId": row["id"], "author": row["owner"], "event": event,
+                "taskStateBefore": row["state"], "reviewer": reviewer, "created": time.time(),
+                "planSha256": self.plan_hash, "evidence": packet,
+                "evidenceValidatedAtEvent": event == "ACCEPTED", "status": "NEEDS_EVIDENCE_BACKED_LESSON",
+                "acceptance": "HANDOFF_ONLY_NOT_SKILL_OR_GAME_ACCEPTANCE"}
+        raw = json.dumps(body, sort_keys=True, ensure_ascii=False, allow_nan=False)
+        self.db.execute("INSERT INTO learning_handoffs VALUES (?,?,?,?)",
+                        (uuid.uuid4().hex, row["id"], raw, hashlib.sha256(raw.encode()).hexdigest()))
+
+    def learning_handoffs(self):
+        results = []
+        for row in self.db.execute("SELECT * FROM learning_handoffs ORDER BY rowid"):
+            if hashlib.sha256(row["body"].encode()).hexdigest() != row["sha256"]:
+                raise ValueError("Learning handoff was tampered with")
+            results.append({"id": row["id"], "handoff": json.loads(row["body"])})
+        return results
 
 
 def inventory(root: Path, *, hash_files: bool = False):
@@ -347,7 +382,7 @@ def inventory(root: Path, *, hash_files: bool = False):
 
 def main(argv=None):
     parser = argparse.ArgumentParser(description=__doc__)
-    parser.add_argument("command", choices=("validate", "plan", "doctor", "status", "claim", "heartbeat", "check-lease", "submit", "accept", "release"))
+    parser.add_argument("command", choices=("validate", "plan", "doctor", "status", "claim", "heartbeat", "check-lease", "submit", "accept", "release", "learning-handoffs"))
     parser.add_argument("--root", type=Path, default=ROOT)
     parser.add_argument("--ledger", type=Path, help="Use the SAME coordinator ledger for all worktrees")
     parser.add_argument("--task")
@@ -379,6 +414,8 @@ def main(argv=None):
         try:
             if args.command == "status":
                 print(json.dumps({"ready": ledger.ready(), "tasks": [{k:v for k,v in r.items() if k not in ('token','evidence')} for r in ledger.rows()]}, indent=2))
+            elif args.command == "learning-handoffs":
+                print(json.dumps(ledger.learning_handoffs(), ensure_ascii=False, indent=2))
             else:
                 if args.task not in ledger.tasks:
                     raise ValueError("Choose a valid --task")

@@ -46,19 +46,27 @@ Generated output, import, Studio acceptance, hardware and human review are disti
 
 ## Forge tasks (these scopes apply only after a valid task claim)
 
-### character-import: Modular appearance runtime integration
+### character-import: Modular appearance source integration and private test candidate
 
-Adapt existing appearance services rather than forcing a new path. Changes outside assigned prefix require ownership handoff. Validate clothes, skin and identity persistence.
+User-authorized 2026-10-10 character vertical slice. Reconciled scopes follow existing ProfileSchema, Commands, HeroService and native UI. Local contract/runtime work proceeds before Blender/Studio availability; does not accept or bypass human-body/clothing-fit gates. Build Human Standard/Heavy labeled placeholders until genuine meshes/cages are imported. Keep all runtime IDs null until observed import; Studio/save-rejoin/fairness/device acceptance separate and pending. Preserve default runtime, market protection and gameplay ancestry.
 
-Environment: studio; skill: guildborne-characters
+Environment: local; skill: guildborne-characters
 
-Write scopes: production/character-import, src/server/Services/CharacterAppearance
+Write scopes: production/character-kit-v1, production/character-import, src/shared/Data/AppearanceCatalog.luau, src/shared/Data/AppearanceRules.luau, src/shared/Presentation/ModularAppearance, src/shared/Network/Protocol.luau, src/shared/Config/Localization.luau, src/server/Services/CharacterAppearance, src/server/Systems/ProfileSchema.luau, src/server/Systems/Commands.luau, src/server/Systems/ViewProjection.luau, src/server/ServerBootstrap.server.luau, src/server/Services/HeroService.luau, src/server/Services/HeroRig.luau, src/client/UI/CharacterCustomizationUI.luau, src/client/UI/SliceUI.luau, src/client/Controllers/AppearancePreviewController.luau, src/client/Controllers/SliceController.luau, tests/appearance.luau, tests/run_appearance.luau, tests/run.luau, tests/studio_modular_character_probe.luau, tools/build_appearance_catalog.py, tools/build_character_preview.ps1, docs/CHARACTER_GAP_ANALYSIS.md, docs/CHARACTER_PIPELINE.md, docs/APPEARANCE_DATA_MODEL.md, docs/CLOTHING_COMPATIBILITY.md, docs/CHARACTER_STUDIO_TEST.md, docs/CHARACTER_UAT.md, docs/CHARACTER_ASSET_STATUS.md, tools/blender_modular_human.py, assets/characters/source, assets/characters/export, assets/clothing/source, assets/clothing/export, assets/accessories/source, assets/accessories/export
 
-Required checks: actual-import, animations, save-rejoin, fair-hitbox
+Required checks: catalog-security, migration-preservation, runtime-build, baseline-regression
 
-Dependencies: clothing-fit
+Dependencies: none
 
 Path rule server-authority: Reuse actual services; server owns combat/inventory/currency/allocation/rewards/guild/build/escrow. Preserve fencing/receipts/saves/disabled flags. No production cloud writes or commerce activation.
+
+Path rule native-client: Native Roblox UI/presentation only. Send intent, never damage/value/rewards. Coordinate actual UI/Controller modules, EN/TH states and cleanup.
+
+Path rule shared-contracts: Shared definitions are client-safe. Preserve IDs/earned ancestry and progression separately from cosmetic IDs. Reconcile Novice 10/35/70 and Hall contracts.
+
+Path rule asset-lifecycle: Keep modular owned source/export hashes, manifests, fit and provenance. Generated/Blender/import/Studio/human states differ. Never invent runtime IDs or copy competitor assets/fonts.
+
+Path rule tooling: Use reviewed bounded local commands/tests. Studio/Forge planners do not launch models; paid/model subprocess, MCP mutation and installation require actual authorization/capability.
 
 Path rule production-evidence: Reconcile latest goals/registries/scopes. One shared ledger, claim before writes, immediate lease check and preserved raw receipts. Different reviewer validates evidence; local checks cannot replace hardware/cloud/human gates.
 

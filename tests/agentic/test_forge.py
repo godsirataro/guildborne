@@ -174,8 +174,8 @@ class ForgeTests(unittest.TestCase):
 class ProductionTests(unittest.TestCase):
     def test_repository_skills_and_task_plan(self):
         spec=forge.read_json(ROOT/'production/plan.json')
-        self.assertEqual(len(forge.validate_plan(spec)),33)
-        self.assertEqual(forge.validate_skills(ROOT,spec),30)
+        self.assertEqual(len(forge.validate_plan(spec)),39)
+        self.assertEqual(forge.validate_skills(ROOT,spec),31)
 
     def test_normalized_original_kit(self):
         data=forge.read_json(ROOT/'production/character-kit-v1/catalog.json')

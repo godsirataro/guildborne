@@ -7,6 +7,7 @@ return function(data: any,catalog: any,npc: string,all: boolean?): any
 		local def=catalog.Journal[id]
 		if (def.NPC or "City Herald")~=npc then continue end
 		local entry=journal[id];local state,priority="",0
+		if not entry and catalog.ReleaseContent and catalog.ReleaseContent.BlockedTasks[id] then continue end
 		if not entry and def.RequiresRegionalCombat and catalog.RegionalCombatAvailable~=true then continue end
 		if entry and entry.state=="Active" then
 			local progress=if def.Item then data.inventory.stacks[def.Item] or 0 else entry.progress

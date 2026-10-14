@@ -1,5 +1,5 @@
 --!strict
-return function(content: any, util: any, gear: any, expansion: any?, validateExpansion: any?, market: any?, land: any?,noviceProfiles:boolean?,noviceStory:any?,campaign:any?)
+return function(content: any, util: any, gear: any, expansion: any?, validateExpansion: any?, market: any?, land: any?,noviceProfiles:boolean?,noviceStory:any?,campaign:any?,appearance:any?,launchRewards:any?)
 	assert(not land or market,"Land schema requires market schema")
 	assert(not noviceProfiles or land,"Novice schema requires full profile services")
 	assert(not campaign or (noviceProfiles and noviceStory),"Campaign schema requires Novice story")
@@ -30,6 +30,7 @@ return function(content: any, util: any, gear: any, expansion: any?, validateExp
 			if noviceStory then record.data.progression.novice=noviceStory.new() end
 			if campaign then record.data.progression.campaign=campaign.new()end
 		end
+		if appearance then assert(appearance.migrate(record.data),"Invalid appearance defaults") end
 		return record
 	end
 
@@ -42,6 +43,7 @@ return function(content: any, util: any, gear: any, expansion: any?, validateExp
 			assert(util.integer(record.session.epoch, 0, 1000000000) and util.integer(record.session.leaseExpiresAt, 0, 100000000000))
 			assert(record.session.ownerToken == nil or type(record.session.ownerToken) == "string")
 			local d = record.data
+			if d.launchRewards~=nil then assert(launchRewards and launchRewards.validate(d.launchRewards),"Invalid launch reward extension") end
 			local mode=content.ProgressionMode(d)
 			if version>=8 then assert(d.progression.ruleset==content.ProgressionRulesets.Legacy or d.progression.ruleset==content.ProgressionRulesets.Novice)
 			else assert(d.progression.ruleset==nil,"Ruleset marker requires schema8") end
@@ -103,7 +105,14 @@ return function(content: any, util: any, gear: any, expansion: any?, validateExp
 				assert(util.integer(d.inventory.nextEquipmentSequence,1,1000000000))
 				slots(d.character)
 			end
+			local function cosmetic(actor: any)
+				if actor.appearance~=nil or actor.appearanceRevision~=nil or actor.appearanceEnabled~=nil then
+					assert(appearance and appearance.validateStored(actor),"Invalid appearance extension")
+				end
+			end
+			if d.character then cosmetic(d.character) end
 			for id, adventurer in pairs(d.adventurers) do
+				cosmetic(adventurer)
 				assert(gear.validStatus(adventurer),"Invalid hero status allocation")
 				assert(type(id) == "string" and #id <= 64 and adventurer.id == id and type(adventurer.name) == "string")
 				local def = content.Adventurers[adventurer.classId]
@@ -237,6 +246,10 @@ return function(content: any, util: any, gear: any, expansion: any?, validateExp
 			local ok, migrated = pcall(step, copy)
 			if not ok or type(migrated) ~= "table" or migrated.schemaVersion ~= version + 1 then return nil, "MigrationFailed" end
 			copy = migrated
+		end
+		if appearance and target==Schema.Version then
+			if not validate(copy,copy.data.profile.userId,target) then return nil,"CorruptProfile" end
+			if not appearance.migrate(copy.data) then return nil,"CorruptAppearance" end
 		end
 		return copy, "OK"
 	end

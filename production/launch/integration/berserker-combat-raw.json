@@ -1,0 +1,13 @@
+{
+  "candidate": "55404c199438de6138cf0fee877151c9bc3c422e88a1f1c57e3ba2cf06e08a17",
+  "method": "Normal UI learning and equip; normal navigation and keyboard Z; read-only actor attributes. First scout attempt was out of range and died to companions; only boss observation proves player cleave.",
+  "bossCast": {
+    "content": [
+      {
+        "type": "text",
+        "text": "{\"boss\":{\"CombatHealth\":551,\"RegionalImpactAt\":1791953419.117968,\"PreviewHealth\":551,\"CombatTarget\":\"player\",\"CombatMaxHealth\":650,\"DamageCueAt\":1791953418.701431,\"EncounterMarker\":\"ForestCaptain\",\"Taunted\":false,\"PreviewPhase\":1,\"TemplateOnly\":false,\"CombatState\":\"Attack\",\"PreviewState\":\"Impact\",\"EnemyAnimationClass\":\"Warrior\",\"EncounterId\":\"forest_captain\",\"RegionalTelegraphAt\":1791953417.868636,\"EnemyActionAt\":1791953419.117957,\"Region\":\"Greenwood\",\"VisualRole\":\"Boss\",\"DamageDealt\":54,\"EnemyTitle\":\"Forest Captain\",\"DamageCue\":\"melee_hit\",\"Feedback\":\"-28\",\"BossPhase\":1,\"FeedbackAt\":1791953418.701492,\"GuildborneEnemy\":true,\"OwnerUserId\":11732987790,\"RigType\":\"Humanoid\",\"PreviewOnly\":false,\"EnemyArticulated\":true},\"player\":{\"Action\":\"Berserker Art\",\"NoParentArt\":false,\"ClassId\":\"Warrior\",\"GuildbornePlayer\":true,\"CombatState\":\"Attack\",\"ClassPath\":\"Berserker\",\"Skill1Cooldown\":8,\"OwnerUserId\":11732987790,\"RaceId\":\"Human\",\"FeedbackAt\":1791952016.9258,\"Cooldown\":8,\"AbilityCount\":5,\"CombatHealth\":138,\"AbilityName\":\"Berserker Art\",\"Skill1Name\":\"Power Strike\",\"CombatMaxHealth\":138,\"Skill3Cooldown\":0,\"Level\":35,\"XP\":1763,\"Skill2Cooldown\":8,\"WeaponId\":\"training_sword\",\"ActionEffect\":\"Area\",\"DamageDealt\":372,\"ActionAt\":1791953418.68392,\"DamageCue\":\"melee_hit\",\"Feedback\":\"+24\",\"DamageCueAt\":1791952016.925612,\"RenderedRace\":\"Human\",\"ActionAbilityId\":\"cleave\",\"BasicAttackCount\":8,\"ActionTargetPosition\":\"-5.6227922439575195, 9, 1332.09033203125\",\"Skill2Name\":\"Berserker Art\",\"ActionRange\":8}}"
+      }
+    ],
+    "isError": false
+  }
+}

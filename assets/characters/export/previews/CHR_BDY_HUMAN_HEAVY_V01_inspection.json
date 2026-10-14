@@ -1,0 +1,246 @@
+{
+  "source": "assets/characters/source/CHR_BDY_HUMAN_HEAVY_V01.blend",
+  "sourceSha256": "e020f65f6ca137e17061d6a0c0107375293d617c9d480acb498648022f6f95fd",
+  "sourceUnchanged": true,
+  "blenderVersion": "5.2.1 LTS",
+  "geometry": [
+    {
+      "name": "Head_Geo",
+      "vertices": 48,
+      "triangles": 92,
+      "nonManifoldEdges": 0,
+      "uvLayers": 1,
+      "weightNormalizationErrors": 0,
+      "maxInfluences": 1
+    },
+    {
+      "name": "UpperTorso_Geo",
+      "vertices": 40,
+      "triangles": 76,
+      "nonManifoldEdges": 0,
+      "uvLayers": 1,
+      "weightNormalizationErrors": 0,
+      "maxInfluences": 1
+    },
+    {
+      "name": "LowerTorso_Geo",
+      "vertices": 32,
+      "triangles": 60,
+      "nonManifoldEdges": 0,
+      "uvLayers": 1,
+      "weightNormalizationErrors": 0,
+      "maxInfluences": 1
+    },
+    {
+      "name": "LeftUpperArm_Geo",
+      "vertices": 32,
+      "triangles": 60,
+      "nonManifoldEdges": 0,
+      "uvLayers": 1,
+      "weightNormalizationErrors": 0,
+      "maxInfluences": 1
+    },
+    {
+      "name": "LeftLowerArm_Geo",
+      "vertices": 32,
+      "triangles": 60,
+      "nonManifoldEdges": 0,
+      "uvLayers": 1,
+      "weightNormalizationErrors": 0,
+      "maxInfluences": 1
+    },
+    {
+      "name": "LeftHand_Geo",
+      "vertices": 24,
+      "triangles": 44,
+      "nonManifoldEdges": 0,
+      "uvLayers": 1,
+      "weightNormalizationErrors": 0,
+      "maxInfluences": 1
+    },
+    {
+      "name": "RightUpperArm_Geo",
+      "vertices": 32,
+      "triangles": 60,
+      "nonManifoldEdges": 0,
+      "uvLayers": 1,
+      "weightNormalizationErrors": 0,
+      "maxInfluences": 1
+    },
+    {
+      "name": "RightLowerArm_Geo",
+      "vertices": 32,
+      "triangles": 60,
+      "nonManifoldEdges": 0,
+      "uvLayers": 1,
+      "weightNormalizationErrors": 0,
+      "maxInfluences": 1
+    },
+    {
+      "name": "RightHand_Geo",
+      "vertices": 24,
+      "triangles": 44,
+      "nonManifoldEdges": 0,
+      "uvLayers": 1,
+      "weightNormalizationErrors": 0,
+      "maxInfluences": 1
+    },
+    {
+      "name": "LeftUpperLeg_Geo",
+      "vertices": 32,
+      "triangles": 60,
+      "nonManifoldEdges": 0,
+      "uvLayers": 1,
+      "weightNormalizationErrors": 0,
+      "maxInfluences": 1
+    },
+    {
+      "name": "LeftLowerLeg_Geo",
+      "vertices": 32,
+      "triangles": 60,
+      "nonManifoldEdges": 0,
+      "uvLayers": 1,
+      "weightNormalizationErrors": 0,
+      "maxInfluences": 1
+    },
+    {
+      "name": "LeftFoot_Geo",
+      "vertices": 24,
+      "triangles": 44,
+      "nonManifoldEdges": 0,
+      "uvLayers": 1,
+      "weightNormalizationErrors": 0,
+      "maxInfluences": 1
+    },
+    {
+      "name": "RightUpperLeg_Geo",
+      "vertices": 32,
+      "triangles": 60,
+      "nonManifoldEdges": 0,
+      "uvLayers": 1,
+      "weightNormalizationErrors": 0,
+      "maxInfluences": 1
+    },
+    {
+      "name": "RightLowerLeg_Geo",
+      "vertices": 32,
+      "triangles": 60,
+      "nonManifoldEdges": 0,
+      "uvLayers": 1,
+      "weightNormalizationErrors": 0,
+      "maxInfluences": 1
+    },
+    {
+      "name": "RightFoot_Geo",
+      "vertices": 24,
+      "triangles": 44,
+      "nonManifoldEdges": 0,
+      "uvLayers": 1,
+      "weightNormalizationErrors": 0,
+      "maxInfluences": 1
+    }
+  ],
+  "deformationSweep": [
+    {
+      "name": "Head_Geo",
+      "maxVertexDisplacement": 0.0,
+      "allFinite": true
+    },
+    {
+      "name": "UpperTorso_Geo",
+      "maxVertexDisplacement": 0.0,
+      "allFinite": true
+    },
+    {
+      "name": "LowerTorso_Geo",
+      "maxVertexDisplacement": 0.0,
+      "allFinite": true
+    },
+    {
+      "name": "LeftUpperArm_Geo",
+      "maxVertexDisplacement": 0.5214207249633566,
+      "allFinite": true
+    },
+    {
+      "name": "LeftLowerArm_Geo",
+      "maxVertexDisplacement": 1.0716104208014454,
+      "allFinite": true
+    },
+    {
+      "name": "LeftHand_Geo",
+      "maxVertexDisplacement": 1.2538526707785798,
+      "allFinite": true
+    },
+    {
+      "name": "RightUpperArm_Geo",
+      "maxVertexDisplacement": 0.5214207249633566,
+      "allFinite": true
+    },
+    {
+      "name": "RightLowerArm_Geo",
+      "maxVertexDisplacement": 1.0716104208014454,
+      "allFinite": true
+    },
+    {
+      "name": "RightHand_Geo",
+      "maxVertexDisplacement": 1.2538526707785798,
+      "allFinite": true
+    },
+    {
+      "name": "LeftUpperLeg_Geo",
+      "maxVertexDisplacement": 0.6198420434627817,
+      "allFinite": true
+    },
+    {
+      "name": "LeftLowerLeg_Geo",
+      "maxVertexDisplacement": 0.6860882232884771,
+      "allFinite": true
+    },
+    {
+      "name": "LeftFoot_Geo",
+      "maxVertexDisplacement": 0.6901673827161195,
+      "allFinite": true
+    },
+    {
+      "name": "RightUpperLeg_Geo",
+      "maxVertexDisplacement": 0.41670110133058497,
+      "allFinite": true
+    },
+    {
+      "name": "RightLowerLeg_Geo",
+      "maxVertexDisplacement": 1.6420810686750986,
+      "allFinite": true
+    },
+    {
+      "name": "RightFoot_Geo",
+      "maxVertexDisplacement": 2.1531178212703637,
+      "allFinite": true
+    }
+  ],
+  "renderedImages": [
+    {
+      "path": "assets/characters/export/previews/CHR_BDY_HUMAN_HEAVY_V01_front.png",
+      "sha256": "a361623ceca44f31c361a97e5ae356c1fc52b0b9f6650a7d138441f7499ff0d3"
+    },
+    {
+      "path": "assets/characters/export/previews/CHR_BDY_HUMAN_HEAVY_V01_side.png",
+      "sha256": "2cd6a4c0a407fab1cbb8f00989e75268b9ce471be12a0b854947b355affb475d"
+    },
+    {
+      "path": "assets/characters/export/previews/CHR_BDY_HUMAN_HEAVY_V01_back.png",
+      "sha256": "a00c772317733923ee34b7e6154105a5bf6d3bd00acd4d5642d4ee981aa58a8d"
+    },
+    {
+      "path": "assets/characters/export/previews/CHR_BDY_HUMAN_HEAVY_V01_exploded.png",
+      "sha256": "7861323784e722ab27f5bebbe37e86f40a3f62eb1362e6cc64b57916c2fd3d69"
+    }
+  ],
+  "claims": "LOCAL_GEOMETRY_AND_NUMERIC_DEFORMATION_ONLY",
+  "pending": [
+    "visual seam fit approval",
+    "garment cage/topology",
+    "Roblox import and motion",
+    "human art approval"
+  ],
+  "studioTested": false
+}

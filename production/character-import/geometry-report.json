@@ -1,0 +1,761 @@
+{
+  "schemaVersion": 1,
+  "generator": "tools/blender_modular_human.py",
+  "origin": "ORIGINAL_LOCAL_PROCEDURAL_CANDIDATE_FROM_USER_ART_DIRECTION",
+  "blenderVersion": "5.2.1 LTS",
+  "assets": [
+    {
+      "assetId": "CHR_BDY_HUMAN_STANDARD_V01",
+      "status": "EXPORTED",
+      "robloxAssetId": null,
+      "files": [
+        {
+          "path": "assets/characters/source/CHR_BDY_HUMAN_STANDARD_V01.blend",
+          "bytes": 133711,
+          "sha256": "d2d0c49d61f811715553fb7aa898a001edf03c2aa4ccf45756e017ab90247226"
+        },
+        {
+          "path": "assets/characters/export/CHR_BDY_HUMAN_STANDARD_V01.fbx",
+          "bytes": 335276,
+          "sha256": "7e51a15b046e96d9ce98959fbaa68fdb26f82a2c303ccbbdcaa577e423950c18"
+        },
+        {
+          "path": "assets/characters/export/CHR_BDY_HUMAN_STANDARD_V01.glb",
+          "bytes": 111224,
+          "sha256": "db2370d83f1535326f72e88d27539cd1297433d42f3023b522c4e3effaf5785e"
+        }
+      ],
+      "meshes": [
+        {
+          "name": "LowerTorso_Geo",
+          "vertices": 32,
+          "triangles": 60,
+          "nonManifoldEdges": 0,
+          "uvLayers": 1,
+          "weightNormalizationErrors": 0,
+          "maxInfluences": 1
+        },
+        {
+          "name": "UpperTorso_Geo",
+          "vertices": 40,
+          "triangles": 76,
+          "nonManifoldEdges": 0,
+          "uvLayers": 1,
+          "weightNormalizationErrors": 0,
+          "maxInfluences": 1
+        },
+        {
+          "name": "Head_Geo",
+          "vertices": 48,
+          "triangles": 92,
+          "nonManifoldEdges": 0,
+          "uvLayers": 1,
+          "weightNormalizationErrors": 0,
+          "maxInfluences": 1
+        },
+        {
+          "name": "LeftUpperArm_Geo",
+          "vertices": 32,
+          "triangles": 60,
+          "nonManifoldEdges": 0,
+          "uvLayers": 1,
+          "weightNormalizationErrors": 0,
+          "maxInfluences": 1
+        },
+        {
+          "name": "LeftLowerArm_Geo",
+          "vertices": 32,
+          "triangles": 60,
+          "nonManifoldEdges": 0,
+          "uvLayers": 1,
+          "weightNormalizationErrors": 0,
+          "maxInfluences": 1
+        },
+        {
+          "name": "LeftHand_Geo",
+          "vertices": 24,
+          "triangles": 44,
+          "nonManifoldEdges": 0,
+          "uvLayers": 1,
+          "weightNormalizationErrors": 0,
+          "maxInfluences": 1
+        },
+        {
+          "name": "LeftUpperLeg_Geo",
+          "vertices": 32,
+          "triangles": 60,
+          "nonManifoldEdges": 0,
+          "uvLayers": 1,
+          "weightNormalizationErrors": 0,
+          "maxInfluences": 1
+        },
+        {
+          "name": "LeftLowerLeg_Geo",
+          "vertices": 32,
+          "triangles": 60,
+          "nonManifoldEdges": 0,
+          "uvLayers": 1,
+          "weightNormalizationErrors": 0,
+          "maxInfluences": 1
+        },
+        {
+          "name": "LeftFoot_Geo",
+          "vertices": 24,
+          "triangles": 44,
+          "nonManifoldEdges": 0,
+          "uvLayers": 1,
+          "weightNormalizationErrors": 0,
+          "maxInfluences": 1
+        },
+        {
+          "name": "RightUpperArm_Geo",
+          "vertices": 32,
+          "triangles": 60,
+          "nonManifoldEdges": 0,
+          "uvLayers": 1,
+          "weightNormalizationErrors": 0,
+          "maxInfluences": 1
+        },
+        {
+          "name": "RightLowerArm_Geo",
+          "vertices": 32,
+          "triangles": 60,
+          "nonManifoldEdges": 0,
+          "uvLayers": 1,
+          "weightNormalizationErrors": 0,
+          "maxInfluences": 1
+        },
+        {
+          "name": "RightHand_Geo",
+          "vertices": 24,
+          "triangles": 44,
+          "nonManifoldEdges": 0,
+          "uvLayers": 1,
+          "weightNormalizationErrors": 0,
+          "maxInfluences": 1
+        },
+        {
+          "name": "RightUpperLeg_Geo",
+          "vertices": 32,
+          "triangles": 60,
+          "nonManifoldEdges": 0,
+          "uvLayers": 1,
+          "weightNormalizationErrors": 0,
+          "maxInfluences": 1
+        },
+        {
+          "name": "RightLowerLeg_Geo",
+          "vertices": 32,
+          "triangles": 60,
+          "nonManifoldEdges": 0,
+          "uvLayers": 1,
+          "weightNormalizationErrors": 0,
+          "maxInfluences": 1
+        },
+        {
+          "name": "RightFoot_Geo",
+          "vertices": 24,
+          "triangles": 44,
+          "nonManifoldEdges": 0,
+          "uvLayers": 1,
+          "weightNormalizationErrors": 0,
+          "maxInfluences": 1
+        }
+      ],
+      "cages": "UNAVAILABLE",
+      "studioImported": false,
+      "studioTested": false,
+      "fitStatus": "SOURCE_CANDIDATE_UNTESTED",
+      "humanArtApproval": "PENDING",
+      "authoredPreset": "HUMAN_STANDARD",
+      "rigBones": [
+        "HumanoidRootPart",
+        "LowerTorso",
+        "UpperTorso",
+        "Head",
+        "LeftUpperArm",
+        "LeftLowerArm",
+        "LeftHand",
+        "RightUpperArm",
+        "RightLowerArm",
+        "RightHand",
+        "LeftUpperLeg",
+        "LeftLowerLeg",
+        "LeftFoot",
+        "RightUpperLeg",
+        "RightLowerLeg",
+        "RightFoot"
+      ],
+      "attachments": [
+        "HairAttachment",
+        "HatAttachment",
+        "FaceFrontAttachment",
+        "BodyFrontAttachment",
+        "BodyBackAttachment",
+        "WaistCenterAttachment",
+        "LeftGripAttachment",
+        "RightGripAttachment",
+        "LeftFootAttachment",
+        "RightFootAttachment"
+      ]
+    },
+    {
+      "assetId": "CLO_TUNIC_TRAVELER_01",
+      "status": "EXPORTED",
+      "robloxAssetId": null,
+      "files": [
+        {
+          "path": "assets/clothing/source/CLO_TUNIC_TRAVELER_01.blend",
+          "bytes": 133597,
+          "sha256": "89474904b3c7d6e5adf8867c2057d38ef0997a0f0059072b989ccd6b477290d3"
+        },
+        {
+          "path": "assets/clothing/export/CLO_TUNIC_TRAVELER_01.fbx",
+          "bytes": 61292,
+          "sha256": "788b5f3afe32dd438bce3511fbb50e1bd402593d476aee7834e1f0ea762fb2e6"
+        },
+        {
+          "path": "assets/clothing/export/CLO_TUNIC_TRAVELER_01.glb",
+          "bytes": 32800,
+          "sha256": "6565465597ec6742415e2fd6ccbcd169a060b68b298f5c3f30b4abd117bcd094"
+        }
+      ],
+      "meshes": [
+        {
+          "name": "CLO_TUNIC_TRAVELER_01_Geo",
+          "vertices": 136,
+          "triangles": 256,
+          "nonManifoldEdges": 0,
+          "uvLayers": 1,
+          "weightNormalizationErrors": 0,
+          "maxInfluences": 1
+        }
+      ],
+      "cages": "UNAVAILABLE",
+      "studioImported": false,
+      "studioTested": false,
+      "fitStatus": "SOURCE_CANDIDATE_UNTESTED",
+      "humanArtApproval": "PENDING",
+      "authoredPreset": "HUMAN_STANDARD",
+      "rigBones": [
+        "HumanoidRootPart",
+        "LowerTorso",
+        "UpperTorso",
+        "Head",
+        "LeftUpperArm",
+        "LeftLowerArm",
+        "LeftHand",
+        "RightUpperArm",
+        "RightLowerArm",
+        "RightHand",
+        "LeftUpperLeg",
+        "LeftLowerLeg",
+        "LeftFoot",
+        "RightUpperLeg",
+        "RightLowerLeg",
+        "RightFoot"
+      ],
+      "attachments": [
+        "HairAttachment",
+        "HatAttachment",
+        "FaceFrontAttachment",
+        "BodyFrontAttachment",
+        "BodyBackAttachment",
+        "WaistCenterAttachment",
+        "LeftGripAttachment",
+        "RightGripAttachment",
+        "LeftFootAttachment",
+        "RightFootAttachment"
+      ]
+    },
+    {
+      "assetId": "CLO_TROUSERS_TRAVELER_01",
+      "status": "EXPORTED",
+      "robloxAssetId": null,
+      "files": [
+        {
+          "path": "assets/clothing/source/CLO_TROUSERS_TRAVELER_01.blend",
+          "bytes": 133783,
+          "sha256": "d0297418878a31e9f10b79e4856203c0ecfa1f999aa5b0dd72a961820bbf05ce"
+        },
+        {
+          "path": "assets/clothing/export/CLO_TROUSERS_TRAVELER_01.fbx",
+          "bytes": 62124,
+          "sha256": "51b283dcf826dc6acff61a4c123aed12b322496d6bd3a7aadf76d3bf11585f14"
+        },
+        {
+          "path": "assets/clothing/export/CLO_TROUSERS_TRAVELER_01.glb",
+          "bytes": 37228,
+          "sha256": "0551cd8adddb8491b6492d14cb7148707de3fbd06fa0a461e7c2ab928eb0553c"
+        }
+      ],
+      "meshes": [
+        {
+          "name": "CLO_TROUSERS_TRAVELER_01_Geo",
+          "vertices": 160,
+          "triangles": 300,
+          "nonManifoldEdges": 0,
+          "uvLayers": 1,
+          "weightNormalizationErrors": 0,
+          "maxInfluences": 1
+        }
+      ],
+      "cages": "UNAVAILABLE",
+      "studioImported": false,
+      "studioTested": false,
+      "fitStatus": "SOURCE_CANDIDATE_UNTESTED",
+      "humanArtApproval": "PENDING",
+      "authoredPreset": "HUMAN_STANDARD",
+      "rigBones": [
+        "HumanoidRootPart",
+        "LowerTorso",
+        "UpperTorso",
+        "Head",
+        "LeftUpperArm",
+        "LeftLowerArm",
+        "LeftHand",
+        "RightUpperArm",
+        "RightLowerArm",
+        "RightHand",
+        "LeftUpperLeg",
+        "LeftLowerLeg",
+        "LeftFoot",
+        "RightUpperLeg",
+        "RightLowerLeg",
+        "RightFoot"
+      ],
+      "attachments": [
+        "HairAttachment",
+        "HatAttachment",
+        "FaceFrontAttachment",
+        "BodyFrontAttachment",
+        "BodyBackAttachment",
+        "WaistCenterAttachment",
+        "LeftGripAttachment",
+        "RightGripAttachment",
+        "LeftFootAttachment",
+        "RightFootAttachment"
+      ]
+    },
+    {
+      "assetId": "CLO_ROBE_WIZARD_01",
+      "status": "EXPORTED",
+      "robloxAssetId": null,
+      "files": [
+        {
+          "path": "assets/clothing/source/CLO_ROBE_WIZARD_01.blend",
+          "bytes": 133519,
+          "sha256": "4059f8e6076b78318a62ceaad81e994ad385ea01fd0b2fa83e32ebd9921286b3"
+        },
+        {
+          "path": "assets/clothing/export/CLO_ROBE_WIZARD_01.fbx",
+          "bytes": 63884,
+          "sha256": "6458a2975036325ddc2ce756c1c1c068502a5b0ece11768e66179997f907bdf3"
+        },
+        {
+          "path": "assets/clothing/export/CLO_ROBE_WIZARD_01.glb",
+          "bytes": 45164,
+          "sha256": "7ee1d9ef05f72559ab534766bdd54174d729453962ae147aca55174255e43902"
+        }
+      ],
+      "meshes": [
+        {
+          "name": "CLO_ROBE_WIZARD_01_Geo",
+          "vertices": 200,
+          "triangles": 376,
+          "nonManifoldEdges": 0,
+          "uvLayers": 1,
+          "weightNormalizationErrors": 0,
+          "maxInfluences": 1
+        }
+      ],
+      "cages": "UNAVAILABLE",
+      "studioImported": false,
+      "studioTested": false,
+      "fitStatus": "SOURCE_CANDIDATE_UNTESTED",
+      "humanArtApproval": "PENDING",
+      "authoredPreset": "HUMAN_STANDARD",
+      "rigBones": [
+        "HumanoidRootPart",
+        "LowerTorso",
+        "UpperTorso",
+        "Head",
+        "LeftUpperArm",
+        "LeftLowerArm",
+        "LeftHand",
+        "RightUpperArm",
+        "RightLowerArm",
+        "RightHand",
+        "LeftUpperLeg",
+        "LeftLowerLeg",
+        "LeftFoot",
+        "RightUpperLeg",
+        "RightLowerLeg",
+        "RightFoot"
+      ],
+      "attachments": [
+        "HairAttachment",
+        "HatAttachment",
+        "FaceFrontAttachment",
+        "BodyFrontAttachment",
+        "BodyBackAttachment",
+        "WaistCenterAttachment",
+        "LeftGripAttachment",
+        "RightGripAttachment",
+        "LeftFootAttachment",
+        "RightFootAttachment"
+      ]
+    },
+    {
+      "assetId": "ACC_HAIR_HUMAN_01",
+      "status": "EXPORTED",
+      "robloxAssetId": null,
+      "files": [
+        {
+          "path": "assets/accessories/source/ACC_HAIR_HUMAN_01.blend",
+          "bytes": 133510,
+          "sha256": "9aee37dd33c992b0b906239ea04569efc08670c5d3d385b6bdf2408523b96575"
+        },
+        {
+          "path": "assets/accessories/export/ACC_HAIR_HUMAN_01.fbx",
+          "bytes": 56764,
+          "sha256": "92865f69213866d59a37eb50e87e952e3a034beeae627bfdbc85a8694900e440"
+        },
+        {
+          "path": "assets/accessories/export/ACC_HAIR_HUMAN_01.glb",
+          "bytes": 12468,
+          "sha256": "0832afeacb1b55d4e5c6ddcbf622b1c9e78493587a3a6967c04b86d2c3d712b4"
+        }
+      ],
+      "meshes": [
+        {
+          "name": "ACC_HAIR_HUMAN_01_Geo",
+          "vertices": 32,
+          "triangles": 60,
+          "nonManifoldEdges": 0,
+          "uvLayers": 1,
+          "weightNormalizationErrors": 0,
+          "maxInfluences": 1
+        }
+      ],
+      "cages": "UNAVAILABLE",
+      "studioImported": false,
+      "studioTested": false,
+      "fitStatus": "SOURCE_CANDIDATE_UNTESTED",
+      "humanArtApproval": "PENDING",
+      "authoredPreset": "HUMAN_STANDARD",
+      "rigBones": [
+        "HumanoidRootPart",
+        "LowerTorso",
+        "UpperTorso",
+        "Head",
+        "LeftUpperArm",
+        "LeftLowerArm",
+        "LeftHand",
+        "RightUpperArm",
+        "RightLowerArm",
+        "RightHand",
+        "LeftUpperLeg",
+        "LeftLowerLeg",
+        "LeftFoot",
+        "RightUpperLeg",
+        "RightLowerLeg",
+        "RightFoot"
+      ],
+      "attachments": [
+        "HairAttachment",
+        "HatAttachment",
+        "FaceFrontAttachment",
+        "BodyFrontAttachment",
+        "BodyBackAttachment",
+        "WaistCenterAttachment",
+        "LeftGripAttachment",
+        "RightGripAttachment",
+        "LeftFootAttachment",
+        "RightFootAttachment"
+      ]
+    },
+    {
+      "assetId": "CLO_HAT_WIZARD_01",
+      "status": "EXPORTED",
+      "robloxAssetId": null,
+      "files": [
+        {
+          "path": "assets/clothing/source/CLO_HAT_WIZARD_01.blend",
+          "bytes": 133511,
+          "sha256": "3fb86aea332a186e5d41900545de394503bdaad7d0301b535c29fc30442034c4"
+        },
+        {
+          "path": "assets/clothing/export/CLO_HAT_WIZARD_01.fbx",
+          "bytes": 57516,
+          "sha256": "d03a54eb6caf4921e0c0eb89fe250a58769d4287ea45d98888992b0651d45924"
+        },
+        {
+          "path": "assets/clothing/export/CLO_HAT_WIZARD_01.glb",
+          "bytes": 15132,
+          "sha256": "71ffc47d85a764fec6a2d8616ed7f34e7af98f5bed85330cc55ec3cc493cf971"
+        }
+      ],
+      "meshes": [
+        {
+          "name": "CLO_HAT_WIZARD_01_Geo",
+          "vertices": 48,
+          "triangles": 88,
+          "nonManifoldEdges": 0,
+          "uvLayers": 1,
+          "weightNormalizationErrors": 0,
+          "maxInfluences": 1
+        }
+      ],
+      "cages": "UNAVAILABLE",
+      "studioImported": false,
+      "studioTested": false,
+      "fitStatus": "SOURCE_CANDIDATE_UNTESTED",
+      "humanArtApproval": "PENDING",
+      "authoredPreset": "HUMAN_STANDARD",
+      "rigBones": [
+        "HumanoidRootPart",
+        "LowerTorso",
+        "UpperTorso",
+        "Head",
+        "LeftUpperArm",
+        "LeftLowerArm",
+        "LeftHand",
+        "RightUpperArm",
+        "RightLowerArm",
+        "RightHand",
+        "LeftUpperLeg",
+        "LeftLowerLeg",
+        "LeftFoot",
+        "RightUpperLeg",
+        "RightLowerLeg",
+        "RightFoot"
+      ],
+      "attachments": [
+        "HairAttachment",
+        "HatAttachment",
+        "FaceFrontAttachment",
+        "BodyFrontAttachment",
+        "BodyBackAttachment",
+        "WaistCenterAttachment",
+        "LeftGripAttachment",
+        "RightGripAttachment",
+        "LeftFootAttachment",
+        "RightFootAttachment"
+      ]
+    },
+    {
+      "assetId": "CHR_BDY_HUMAN_HEAVY_V01",
+      "status": "EXPORTED",
+      "robloxAssetId": null,
+      "files": [
+        {
+          "path": "assets/characters/source/CHR_BDY_HUMAN_HEAVY_V01.blend",
+          "bytes": 133451,
+          "sha256": "e020f65f6ca137e17061d6a0c0107375293d617c9d480acb498648022f6f95fd"
+        },
+        {
+          "path": "assets/characters/export/CHR_BDY_HUMAN_HEAVY_V01.fbx",
+          "bytes": 335292,
+          "sha256": "2e353a204d3bf2aaf16746f281dec4efea3a0a1343999198c1cac0edb176e291"
+        },
+        {
+          "path": "assets/characters/export/CHR_BDY_HUMAN_HEAVY_V01.glb",
+          "bytes": 111296,
+          "sha256": "a8eef5385b4e00f89cc74816851aa920406e86493a62e2e48c0201edb4e86fc8"
+        }
+      ],
+      "meshes": [
+        {
+          "name": "LowerTorso_Geo",
+          "vertices": 32,
+          "triangles": 60,
+          "nonManifoldEdges": 0,
+          "uvLayers": 1,
+          "weightNormalizationErrors": 0,
+          "maxInfluences": 1
+        },
+        {
+          "name": "UpperTorso_Geo",
+          "vertices": 40,
+          "triangles": 76,
+          "nonManifoldEdges": 0,
+          "uvLayers": 1,
+          "weightNormalizationErrors": 0,
+          "maxInfluences": 1
+        },
+        {
+          "name": "Head_Geo",
+          "vertices": 48,
+          "triangles": 92,
+          "nonManifoldEdges": 0,
+          "uvLayers": 1,
+          "weightNormalizationErrors": 0,
+          "maxInfluences": 1
+        },
+        {
+          "name": "LeftUpperArm_Geo",
+          "vertices": 32,
+          "triangles": 60,
+          "nonManifoldEdges": 0,
+          "uvLayers": 1,
+          "weightNormalizationErrors": 0,
+          "maxInfluences": 1
+        },
+        {
+          "name": "LeftLowerArm_Geo",
+          "vertices": 32,
+          "triangles": 60,
+          "nonManifoldEdges": 0,
+          "uvLayers": 1,
+          "weightNormalizationErrors": 0,
+          "maxInfluences": 1
+        },
+        {
+          "name": "LeftHand_Geo",
+          "vertices": 24,
+          "triangles": 44,
+          "nonManifoldEdges": 0,
+          "uvLayers": 1,
+          "weightNormalizationErrors": 0,
+          "maxInfluences": 1
+        },
+        {
+          "name": "LeftUpperLeg_Geo",
+          "vertices": 32,
+          "triangles": 60,
+          "nonManifoldEdges": 0,
+          "uvLayers": 1,
+          "weightNormalizationErrors": 0,
+          "maxInfluences": 1
+        },
+        {
+          "name": "LeftLowerLeg_Geo",
+          "vertices": 32,
+          "triangles": 60,
+          "nonManifoldEdges": 0,
+          "uvLayers": 1,
+          "weightNormalizationErrors": 0,
+          "maxInfluences": 1
+        },
+        {
+          "name": "LeftFoot_Geo",
+          "vertices": 24,
+          "triangles": 44,
+          "nonManifoldEdges": 0,
+          "uvLayers": 1,
+          "weightNormalizationErrors": 0,
+          "maxInfluences": 1
+        },
+        {
+          "name": "RightUpperArm_Geo",
+          "vertices": 32,
+          "triangles": 60,
+          "nonManifoldEdges": 0,
+          "uvLayers": 1,
+          "weightNormalizationErrors": 0,
+          "maxInfluences": 1
+        },
+        {
+          "name": "RightLowerArm_Geo",
+          "vertices": 32,
+          "triangles": 60,
+          "nonManifoldEdges": 0,
+          "uvLayers": 1,
+          "weightNormalizationErrors": 0,
+          "maxInfluences": 1
+        },
+        {
+          "name": "RightHand_Geo",
+          "vertices": 24,
+          "triangles": 44,
+          "nonManifoldEdges": 0,
+          "uvLayers": 1,
+          "weightNormalizationErrors": 0,
+          "maxInfluences": 1
+        },
+        {
+          "name": "RightUpperLeg_Geo",
+          "vertices": 32,
+          "triangles": 60,
+          "nonManifoldEdges": 0,
+          "uvLayers": 1,
+          "weightNormalizationErrors": 0,
+          "maxInfluences": 1
+        },
+        {
+          "name": "RightLowerLeg_Geo",
+          "vertices": 32,
+          "triangles": 60,
+          "nonManifoldEdges": 0,
+          "uvLayers": 1,
+          "weightNormalizationErrors": 0,
+          "maxInfluences": 1
+        },
+        {
+          "name": "RightFoot_Geo",
+          "vertices": 24,
+          "triangles": 44,
+          "nonManifoldEdges": 0,
+          "uvLayers": 1,
+          "weightNormalizationErrors": 0,
+          "maxInfluences": 1
+        }
+      ],
+      "cages": "UNAVAILABLE",
+      "studioImported": false,
+      "studioTested": false,
+      "fitStatus": "SOURCE_CANDIDATE_UNTESTED",
+      "humanArtApproval": "PENDING",
+      "authoredPreset": "HUMAN_HEAVY",
+      "rigBones": [
+        "HumanoidRootPart",
+        "LowerTorso",
+        "UpperTorso",
+        "Head",
+        "LeftUpperArm",
+        "LeftLowerArm",
+        "LeftHand",
+        "RightUpperArm",
+        "RightLowerArm",
+        "RightHand",
+        "LeftUpperLeg",
+        "LeftLowerLeg",
+        "LeftFoot",
+        "RightUpperLeg",
+        "RightLowerLeg",
+        "RightFoot"
+      ],
+      "attachments": [
+        "HairAttachment",
+        "HatAttachment",
+        "FaceFrontAttachment",
+        "BodyFrontAttachment",
+        "BodyBackAttachment",
+        "WaistCenterAttachment",
+        "LeftGripAttachment",
+        "RightGripAttachment",
+        "LeftFootAttachment",
+        "RightFootAttachment"
+      ]
+    }
+  ],
+  "sourceGeometryChecks": "15 separate closed weighted UV meshes per body; numeric metrics are evaluated in Blender",
+  "coordinateContract": "Z-up/-Y forward source; FBX -Z forward/Y up conversion; actual Roblox import orientation PENDING",
+  "cages": "UNAVAILABLE_NO_ROBLOX_REFERENCE_TOPOLOGY_VALIDATION",
+  "clothingTechnology": "PRESET_SPECIFIC_SKINNED_FALLBACK_CANDIDATE_NOT_VALIDATED_LAYERED_CLOTHING",
+  "studioImported": false,
+  "studioTested": false,
+  "robloxAssetIds": null,
+  "pending": [
+    "body outer cages",
+    "garment inner/outer cages and UV correspondence",
+    "Studio MeshPart import and axes",
+    "R15 joint and attachment import",
+    "deformation and seam/clipping poses",
+    "Standard/Heavy garment fit",
+    "rigid accessory fitting",
+    "human art review",
+    "device performance"
+  ]
+}

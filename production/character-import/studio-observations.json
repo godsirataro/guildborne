@@ -1,0 +1,124 @@
+{
+  "date": "2026-10-11",
+  "head": "4cc9a82",
+  "sourceState": "UNCOMMITTED_CANDIDATE_HASH_MANIFEST_REQUIRED",
+  "acceptance": "REVIEW_ONLY_LOCAL_STUDIO_NOT_PRODUCTION_DEVICE_OR_HUMAN_ACCEPTANCE",
+  "studio": "b92c1047-dca2-42ce-ae73-e4f9e844b464",
+  "isolation": {
+    "placeId": 0,
+    "gameId": 0,
+    "persistence": "Memory",
+    "cloudAllowlistEmpty": true
+  },
+  "mesh": {
+    "content": [
+      {
+        "type": "text",
+        "text": "{\"assets\":{\"1\":{\"core\":15,\"meshParts\":15,\"id\":\"CHR_BDY_HUMAN_STANDARD_V01\",\"sourceSha256\":\"d2d0c49d61f811715553fb7aa898a001edf03c2aa4ccf45756e017ab90247226\",\"triangles\":884},\"3\":{\"core\":0,\"meshParts\":1,\"id\":\"CLO_TUNIC_TRAVELER_01\",\"sourceSha256\":\"89474904b3c7d6e5adf8867c2057d38ef0997a0f0059072b989ccd6b477290d3\",\"triangles\":256},\"2\":{\"core\":15,\"meshParts\":15,\"id\":\"CHR_BDY_HUMAN_HEAVY_V01\",\"sourceSha256\":\"e020f65f6ca137e17061d6a0c0107375293d617c9d480acb498648022f6f95fd\",\"triangles\":884},\"5\":{\"core\":0,\"meshParts\":1,\"id\":\"CLO_ROBE_WIZARD_01\",\"sourceSha256\":\"4059f8e6076b78318a62ceaad81e994ad385ea01fd0b2fa83e32ebd9921286b3\",\"triangles\":376},\"4\":{\"core\":0,\"meshParts\":1,\"id\":\"CLO_TROUSERS_TRAVELER_01\",\"sourceSha256\":\"d0297418878a31e9f10b79e4856203c0ecfa1f999aa5b0dd72a961820bbf05ce\",\"triangles\":300},\"7\":{\"core\":0,\"meshParts\":1,\"id\":\"CLO_HAT_WIZARD_01\",\"sourceSha256\":\"3fb86aea332a186e5d41900545de394503bdaad7d0301b535c29fc30442034c4\",\"triangles\":88},\"6\":{\"core\":0,\"meshParts\":1,\"id\":\"ACC_HAIR_HUMAN_01\",\"sourceSha256\":\"9aee37dd33c992b0b906239ea04569efc08670c5d3d385b6bdf2408523b96575\",\"triangles\":60}},\"assetIdsRemainNull\":true,\"editableMeshResources\":35,\"staticGeometryOnly\":true,\"productionImport\":false,\"cleanupVerified\":true}"
+      }
+    ],
+    "isError": false
+  },
+  "fixture": {
+    "content": [
+      {
+        "type": "text",
+        "text": "{\"layeredMissingMeshRejected\":true,\"robloxAssetIdsRemainNull\":true,\"bodyPresets\":{\"1\":\"HUMAN_STANDARD\",\"2\":\"HUMAN_HEAVY\"},\"fixtureCases\":14,\"animationFitAcceptance\":false,\"idempotentRebuild\":true,\"skinPalettes\":5,\"modestyRetained\":true,\"coreParts\":15,\"ancestryVisualIsolation\":true,\"productionMeshAcceptance\":false,\"r15Joints\":15,\"geometry\":\"PLACEHOLDER_PARTS\",\"weaponPreserved\":true}"
+      }
+    ],
+    "isError": false
+  },
+  "nativeUi": {
+    "content": [
+      {
+        "type": "text",
+        "text": "{\"uncertainSaveTracked\":true,\"lateSaveConfirmed\":true,\"terminalDenialCorrelated\":true,\"networkWrites\":0,\"unrelatedResponseIgnored\":true,\"nativeUiFixtureCases\":4}"
+      }
+    ],
+    "isError": false
+  },
+  "cancel": {
+    "content": [
+      {
+        "type": "text",
+        "text": "{\"cancelNoCommit\":true,\"realInputDraftPreviewOnly\":true,\"revision\":0,\"unsavedWarningObserved\":true}"
+      }
+    ],
+    "isError": false
+  },
+  "apply": {
+    "content": [
+      {
+        "type": "text",
+        "text": "{\"pendingReleased\":true,\"appearance\":{\"hairColorId\":\"HAIR_DARK_BROWN\",\"bodyPresetId\":\"HUMAN_STANDARD\",\"raceFeatures\":[],\"raceId\":\"HUMAN\",\"outfitSlots\":{\"INNER_TOP\":\"CLO_TUNIC_TRAVELER_01\",\"INNER_BOTTOM\":\"CLO_TROUSERS_TRAVELER_01\"},\"appearanceVersion\":1,\"hairAssetId\":\"ACC_HAIR_HUMAN_01\",\"skinPaletteId\":\"SKIN_HUMAN_03\",\"headPresetId\":\"CHR_HEAD_HUMAN_01\"},\"realInputApplySaved\":true,\"revision\":1,\"actorRevision\":1}"
+      }
+    ],
+    "isError": false
+  },
+  "remote": {
+    "content": [
+      {
+        "type": "text",
+        "text": "{\"dataScalars\":{\"levelCap\":5,\"gold\":0,\"nextHallLevelCap\":10,\"rosterCapacity\":5,\"language\":\"en\",\"hallLevel\":1},\"rejectionsAndReplay\":{\"1\":{\"requestId\":\"remove-outfit-remote\",\"revision\":7,\"result\":{\"revision\":7,\"appearanceActorId\":\"player\",\"appearanceRevision\":7,\"code\":\"OK\"},\"code\":\"OK\"},\"3\":{\"revision\":7,\"requestId\":\"stale-actor\",\"code\":\"AppearanceRevisionConflict\"},\"2\":{\"revision\":7,\"requestId\":\"unowned-actor\",\"code\":\"AppearanceActorNotOwned\"},\"5\":{\"revision\":7,\"requestId\":\"stale-profile\",\"code\":\"StaleRevision\"},\"4\":{\"revision\":7,\"requestId\":\"forged-id\",\"code\":\"UnknownAppearanceAsset\"},\"6\":{\"requestId\":\"remove-outfit-remote\",\"revision\":7,\"result\":{\"appearanceActorId\":\"player\",\"revision\":7,\"appearanceRevision\":7,\"code\":\"OK\"},\"code\":\"AlreadyCommitted\"}},\"gold\":0,\"goldPreserved\":true,\"actorRevision\":7}"
+      }
+    ],
+    "isError": false
+  },
+  "portrait": {
+    "content": [
+      {
+        "type": "text",
+        "text": "{\"applyText\":\"ยืนยัน\",\"previewSize\":\"354, 89\",\"applySize\":\"116.666672, 52\",\"physicalDeviceAcceptance\":false,\"rootSize\":\"386, 704\",\"choicesSize\":\"362, 181\",\"orientation\":\"Enum.ScreenOrientation.Sensor\",\"viewport\":\"402, 778\",\"visible\":true,\"insets\":\"Enum.ScreenInsets.CoreUISafeInsets\"}"
+      }
+    ],
+    "isError": false
+  },
+  "pending": [
+    "production imported R15 MeshParts",
+    "valid layered cages",
+    "per-preset clothing fit",
+    "full animation fit",
+    "persistent reconnect",
+    "multi-client/five-hero scene",
+    "physical-device performance",
+    "human art/UAT",
+    "portrait Side-button native input and full orbit/zoom/touch gesture validation"
+  ],
+  "testSessions": {
+    "remoteAndRespawn": "22a97c69-2171-44da-a8c6-871776239a83",
+    "finalNativeUiAndGeometry": "b92c1047-dca2-42ce-ae73-e4f9e844b464"
+  },
+  "nativeInputIssue": {
+    "status": "FAILED_PENDING_RETEST",
+    "observation": "Portrait Side mouse-input attempt left camera unchanged; no gesture acceptance follows from layout screenshots.",
+    "cameraControllerApi": {
+      "frontSideBackReset": true,
+      "zoomClamps": true,
+      "fixtureDestroyed": true,
+      "nativeInputAcceptance": false
+    }
+  },
+  "animationObservation": {
+    "movementStuds": 34.50483703613281,
+    "states": [
+      "Running",
+      "Jumping",
+      "Freefall",
+      "Landed"
+    ],
+    "observedTracks": [
+      "WalkAnim",
+      "RunAnim",
+      "JumpAnim",
+      "FallAnim"
+    ],
+    "sampledJointRotation": 0,
+    "fullAnimationFitAcceptance": false
+  },
+  "review": {
+    "reviewer": "/root/appearance_domain",
+    "method": "Independent read-only source, screenshot and raw observation/log review",
+    "finding": "Prior correlation and ancestry bugs repaired; local-only claims supported. Added missing failed Side-input probe to pending list.",
+    "acceptance": "REVIEW_ONLY"
+  }
+}

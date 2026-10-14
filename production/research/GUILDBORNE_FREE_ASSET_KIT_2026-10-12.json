@@ -1,0 +1,2881 @@
+{
+  "schemaVersion": 1,
+  "title": "Guildborne comprehensive free asset raw-material kit",
+  "reviewDate": "2026-10-12",
+  "timezone": "Asia/Bangkok",
+  "status": "RESEARCH_AND_ADAPTATION_PLAN_ONLY",
+  "scope": "FREE_ONLY_RAW_MATERIAL_CATALOG",
+  "sourceHead": "4cc9a8232e0fd9ae7bf517983c274e800e8ad4a4",
+  "sourceCheckout": "DIRTY_EXISTING_CHARACTER_WORK",
+  "counts": {
+    "creatorStoreListings": 42,
+    "newLiveCreatorStoreListings": 12,
+    "newAuthorSiteCC0Packs": 18,
+    "priorRestrictedAnimationPacks": 4,
+    "catalogRecords": 64
+  },
+  "notes": [
+    "30 Store listing records reused from two same-day prior reports without re-browsing each; 12 new listings inspected live.",
+    "18 new author-site packs have free routes and CC0 stated on primary author pages; content counts/formats are author claims, not file inventory.",
+    "Four prior Cinderlore packs use a bespoke restricted Roblox-only license, not CC0.",
+    "Do not sum model/file counts as unique assets; packs may overlap, include variations/growth stages or mixed formats.",
+    "Free acquisition does not prove all dependencies/workflows free or runtime-ready. Exact platform quotas/fees at future import remain subject to current requirements.",
+    "Runtime IDs, pinned versions and asset intake hashes remain null. No acquisition/download/import/upload/execution/publishing/spending or runtime changes.",
+    "Research candidate keys are not replacements for canonical registry logical IDs; registry unchanged."
+  ],
+  "storeCandidates": [
+    {
+      "candidateStoreAssetId": "6933438443",
+      "url": "https://create.roblox.com/store/asset/6933438443",
+      "name": "Synty Nature Pack",
+      "listedCreator": "Roblox",
+      "category": "prior_report",
+      "listing": {
+        "checkedDate": "2026-10-12",
+        "method": "LIVE_BROWSER_DESCRIPTION_AND_TECHNICAL_DETAILS",
+        "acquisitionSignal": "Get Model",
+        "freeAcquisition": true,
+        "lastUpdated": "2021-06-11"
+      },
+      "technicalDetails": {
+        "scope": "WHOLE_LISTED_ASSET",
+        "triangles": 108816,
+        "vertices": 140065,
+        "meshPartCount": 200,
+        "scriptCount": null
+      },
+      "rightsEvidence": "Listing states these Synty packs licensed for use in any Roblox game. No off-platform redistribution license inferred.",
+      "proposedUse": "nature/island visual variants",
+      "sourceReport": "production/research/CREATOR_STORE_FREE_2026-10-12.json",
+      "evidenceReusedFromPriorReport": true,
+      "runtimeAssetId": null,
+      "pinnedAssetVersionId": null,
+      "intakeHash": null,
+      "acceptance": {
+        "listingVerified": true,
+        "internalsReviewed": false,
+        "dependenciesVerified": false,
+        "downloaded": false,
+        "imported": false,
+        "studioTested": false,
+        "physicalDeviceTested": false,
+        "humanApproved": false
+      }
+    },
+    {
+      "candidateStoreAssetId": "6934021345",
+      "url": "https://create.roblox.com/store/asset/6934021345",
+      "name": "Synty Dungeon Pack: Cave & Castle Interiors",
+      "listedCreator": "Roblox",
+      "category": "prior_report",
+      "listing": {
+        "checkedDate": "2026-10-12",
+        "method": "LIVE_BROWSER_DESCRIPTION_AND_TECHNICAL_DETAILS",
+        "acquisitionSignal": "Get Model",
+        "freeAcquisition": true,
+        "lastUpdated": "2021-06-11"
+      },
+      "technicalDetails": {
+        "scope": "WHOLE_LISTED_ASSET",
+        "triangles": 162088,
+        "vertices": 267219,
+        "meshPartCount": 271,
+        "scriptCount": null
+      },
+      "rightsEvidence": "Listing states these Synty packs licensed for use in any Roblox game. No off-platform redistribution license inferred.",
+      "proposedUse": "cave/castle visual shells",
+      "sourceReport": "production/research/CREATOR_STORE_FREE_2026-10-12.json",
+      "evidenceReusedFromPriorReport": true,
+      "runtimeAssetId": null,
+      "pinnedAssetVersionId": null,
+      "intakeHash": null,
+      "acceptance": {
+        "listingVerified": true,
+        "internalsReviewed": false,
+        "dependenciesVerified": false,
+        "downloaded": false,
+        "imported": false,
+        "studioTested": false,
+        "physicalDeviceTested": false,
+        "humanApproved": false
+      }
+    },
+    {
+      "candidateStoreAssetId": "6933905899",
+      "url": "https://create.roblox.com/store/asset/6933905899",
+      "name": "Synty Dungeon Pack: Basement & Goblin Camp",
+      "listedCreator": "Roblox",
+      "category": "prior_report",
+      "listing": {
+        "checkedDate": "2026-10-12",
+        "method": "LIVE_BROWSER_DESCRIPTION_AND_TECHNICAL_DETAILS",
+        "acquisitionSignal": "Get Model",
+        "freeAcquisition": true,
+        "lastUpdated": "2021-06-11"
+      },
+      "technicalDetails": {
+        "scope": "WHOLE_LISTED_ASSET",
+        "triangles": 102885,
+        "vertices": 154438,
+        "meshPartCount": 179,
+        "scriptCount": null
+      },
+      "rightsEvidence": "Listing states these Synty packs licensed for use in any Roblox game. No off-platform redistribution license inferred.",
+      "proposedUse": "camp/basement/mine set dressing",
+      "sourceReport": "production/research/CREATOR_STORE_FREE_2026-10-12.json",
+      "evidenceReusedFromPriorReport": true,
+      "runtimeAssetId": null,
+      "pinnedAssetVersionId": null,
+      "intakeHash": null,
+      "acceptance": {
+        "listingVerified": true,
+        "internalsReviewed": false,
+        "dependenciesVerified": false,
+        "downloaded": false,
+        "imported": false,
+        "studioTested": false,
+        "physicalDeviceTested": false,
+        "humanApproved": false
+      }
+    },
+    {
+      "candidateStoreAssetId": "6933790012",
+      "url": "https://create.roblox.com/store/asset/6933790012",
+      "name": "Synty Dungeon Pack: Weapons & Props",
+      "listedCreator": "Roblox",
+      "category": "prior_report",
+      "listing": {
+        "checkedDate": "2026-10-12",
+        "method": "LIVE_BROWSER_DESCRIPTION_AND_TECHNICAL_DETAILS",
+        "acquisitionSignal": "Get Model",
+        "freeAcquisition": true,
+        "lastUpdated": "2021-06-11"
+      },
+      "technicalDetails": {
+        "scope": "WHOLE_LISTED_ASSET",
+        "triangles": 141121,
+        "vertices": 207716,
+        "meshPartCount": 234,
+        "scriptCount": null
+      },
+      "rightsEvidence": "Listing states these Synty packs licensed for use in any Roblox game. No off-platform redistribution license inferred.",
+      "proposedUse": "equipment and prop visual candidates",
+      "sourceReport": "production/research/CREATOR_STORE_FREE_2026-10-12.json",
+      "evidenceReusedFromPriorReport": true,
+      "runtimeAssetId": null,
+      "pinnedAssetVersionId": null,
+      "intakeHash": null,
+      "acceptance": {
+        "listingVerified": true,
+        "internalsReviewed": false,
+        "dependenciesVerified": false,
+        "downloaded": false,
+        "imported": false,
+        "studioTested": false,
+        "physicalDeviceTested": false,
+        "humanApproved": false
+      }
+    },
+    {
+      "candidateStoreAssetId": "6934081776",
+      "url": "https://create.roblox.com/store/asset/6934081776",
+      "name": "Synty Dungeon Pack: Skeletons & Bones",
+      "listedCreator": "Roblox",
+      "category": "prior_report",
+      "listing": {
+        "checkedDate": "2026-10-12",
+        "method": "LIVE_BROWSER_DESCRIPTION_AND_TECHNICAL_DETAILS",
+        "acquisitionSignal": "Get Model",
+        "freeAcquisition": true,
+        "lastUpdated": "2021-06-11"
+      },
+      "technicalDetails": {
+        "scope": "WHOLE_LISTED_ASSET",
+        "triangles": 72801,
+        "vertices": 104075,
+        "meshPartCount": 50,
+        "scriptCount": null
+      },
+      "rightsEvidence": "Listing states these Synty packs licensed for use in any Roblox game. No off-platform redistribution license inferred.",
+      "proposedUse": "bones/ruins props; rigs unverified",
+      "sourceReport": "production/research/CREATOR_STORE_FREE_2026-10-12.json",
+      "evidenceReusedFromPriorReport": true,
+      "runtimeAssetId": null,
+      "pinnedAssetVersionId": null,
+      "intakeHash": null,
+      "acceptance": {
+        "listingVerified": true,
+        "internalsReviewed": false,
+        "dependenciesVerified": false,
+        "downloaded": false,
+        "imported": false,
+        "studioTested": false,
+        "physicalDeviceTested": false,
+        "humanApproved": false
+      }
+    },
+    {
+      "candidateStoreAssetId": "466438261",
+      "url": "https://create.roblox.com/store/asset/466438261",
+      "name": "Arched Stone Bridge",
+      "listedCreator": "EndorsedModel",
+      "category": "prior_report",
+      "listing": {
+        "checkedDate": "2026-10-12",
+        "method": "LIVE_BROWSER_DESCRIPTION_AND_TECHNICAL_DETAILS",
+        "acquisitionSignal": "Get Model",
+        "freeAcquisition": true,
+        "lastUpdated": "2016-10-04"
+      },
+      "technicalDetails": {
+        "scope": "WHOLE_LISTED_ASSET",
+        "triangles": 708,
+        "vertices": 1416,
+        "meshPartCount": null,
+        "scriptCount": null
+      },
+      "rightsEvidence": "Creator Store listing and general Roblox terms; internal provenance and dependency rights unreviewed.",
+      "proposedUse": "bridge visual and route prototype",
+      "sourceReport": "production/research/CREATOR_STORE_FREE_2026-10-12.json",
+      "evidenceReusedFromPriorReport": true,
+      "runtimeAssetId": null,
+      "pinnedAssetVersionId": null,
+      "intakeHash": null,
+      "acceptance": {
+        "listingVerified": true,
+        "internalsReviewed": false,
+        "dependenciesVerified": false,
+        "downloaded": false,
+        "imported": false,
+        "studioTested": false,
+        "physicalDeviceTested": false,
+        "humanApproved": false
+      }
+    },
+    {
+      "candidateStoreAssetId": "14798688821",
+      "url": "https://create.roblox.com/store/asset/14798688821",
+      "name": "Medieval prop pack",
+      "listedCreator": "Sanguophage",
+      "category": "prior_report",
+      "listing": {
+        "checkedDate": "2026-10-12",
+        "method": "LIVE_BROWSER_DESCRIPTION_AND_TECHNICAL_DETAILS",
+        "acquisitionSignal": "Get Model",
+        "freeAcquisition": true,
+        "lastUpdated": "2023-09-17"
+      },
+      "technicalDetails": {
+        "scope": "WHOLE_LISTED_ASSET",
+        "triangles": 57733,
+        "vertices": 60933,
+        "meshPartCount": 102,
+        "scriptCount": null
+      },
+      "rightsEvidence": "Creator Store listing and general Roblox terms; internal provenance and dependency rights unreviewed.",
+      "proposedUse": "community prop candidates; contents unverified",
+      "sourceReport": "production/research/CREATOR_STORE_FREE_2026-10-12.json",
+      "evidenceReusedFromPriorReport": true,
+      "runtimeAssetId": null,
+      "pinnedAssetVersionId": null,
+      "intakeHash": null,
+      "acceptance": {
+        "listingVerified": true,
+        "internalsReviewed": false,
+        "dependenciesVerified": false,
+        "downloaded": false,
+        "imported": false,
+        "studioTested": false,
+        "physicalDeviceTested": false,
+        "humanApproved": false
+      }
+    },
+    {
+      "candidateStoreAssetId": "13595063828",
+      "url": "https://create.roblox.com/store/asset/13595063828",
+      "name": "Play Smoke Puff",
+      "listedCreator": "Roblox Code Samples",
+      "category": "prior_report",
+      "listing": {
+        "checkedDate": "2026-10-12",
+        "method": "LIVE_BROWSER_DESCRIPTION_AND_TECHNICAL_DETAILS",
+        "acquisitionSignal": "Get Model",
+        "freeAcquisition": true,
+        "lastUpdated": "2023-06-21"
+      },
+      "technicalDetails": {
+        "scope": "WHOLE_LISTED_ASSET",
+        "triangles": 36,
+        "vertices": 72,
+        "meshPartCount": null,
+        "scriptCount": 1
+      },
+      "rightsEvidence": "Creator Store listing and general Roblox terms; internal provenance and dependency rights unreviewed.",
+      "proposedUse": "smoke burst presentation example",
+      "sourceReport": "production/research/CREATOR_STORE_FREE_2026-10-12.json",
+      "evidenceReusedFromPriorReport": true,
+      "runtimeAssetId": null,
+      "pinnedAssetVersionId": null,
+      "intakeHash": null,
+      "acceptance": {
+        "listingVerified": true,
+        "internalsReviewed": false,
+        "dependenciesVerified": false,
+        "downloaded": false,
+        "imported": false,
+        "studioTested": false,
+        "physicalDeviceTested": false,
+        "humanApproved": false
+      }
+    },
+    {
+      "candidateStoreAssetId": "241587286",
+      "url": "https://create.roblox.com/store/asset/241587286",
+      "name": "Particle Emitter Pack - fire, smoke, sparkles",
+      "listedCreator": "Wonuf",
+      "category": "prior_report",
+      "listing": {
+        "checkedDate": "2026-10-12",
+        "method": "LIVE_BROWSER_DESCRIPTION_AND_TECHNICAL_DETAILS",
+        "acquisitionSignal": "Get Model",
+        "freeAcquisition": true,
+        "lastUpdated": "2015-04-25"
+      },
+      "technicalDetails": {
+        "scope": "WHOLE_LISTED_ASSET",
+        "triangles": 36,
+        "vertices": 72,
+        "meshPartCount": null,
+        "scriptCount": null
+      },
+      "rightsEvidence": "Creator Store listing and general Roblox terms; internal provenance and dependency rights unreviewed.",
+      "proposedUse": "emitter configuration reference",
+      "sourceReport": "production/research/CREATOR_STORE_FREE_2026-10-12.json",
+      "evidenceReusedFromPriorReport": true,
+      "runtimeAssetId": null,
+      "pinnedAssetVersionId": null,
+      "intakeHash": null,
+      "acceptance": {
+        "listingVerified": true,
+        "internalsReviewed": false,
+        "dependenciesVerified": false,
+        "downloaded": false,
+        "imported": false,
+        "studioTested": false,
+        "physicalDeviceTested": false,
+        "humanApproved": false
+      }
+    },
+    {
+      "candidateStoreAssetId": "6432306802",
+      "url": "https://create.roblox.com/store/asset/6432306802",
+      "name": "Forest Pack",
+      "listedCreator": "Roblox",
+      "category": "prior_report",
+      "listing": {
+        "checkedDate": "2026-10-12",
+        "method": "LIVE_BROWSER_DESCRIPTION_AND_TECHNICAL_DETAILS",
+        "acquisitionSignal": "Get Model",
+        "freeAcquisition": true,
+        "lastUpdated": "2021-09-28"
+      },
+      "technicalDetails": {
+        "scope": "WHOLE_LISTED_ASSET",
+        "triangles": 153252,
+        "vertices": 149690,
+        "meshPartCount": 83,
+        "scriptCount": 13
+      },
+      "rightsEvidence": "Creator Store listing and general Roblox terms; internal provenance and dependency rights unreviewed.",
+      "proposedUse": "selective nature/wildlife; style and alpha audit",
+      "sourceReport": "production/research/CREATOR_STORE_FREE_2026-10-12.json",
+      "evidenceReusedFromPriorReport": true,
+      "runtimeAssetId": null,
+      "pinnedAssetVersionId": null,
+      "intakeHash": null,
+      "acceptance": {
+        "listingVerified": true,
+        "internalsReviewed": false,
+        "dependenciesVerified": false,
+        "downloaded": false,
+        "imported": false,
+        "studioTested": false,
+        "physicalDeviceTested": false,
+        "humanApproved": false
+      }
+    },
+    {
+      "candidateStoreAssetId": "15239103896",
+      "url": "https://create.roblox.com/store/asset/15239103896",
+      "name": "Medieval Low Poly Kit",
+      "listedCreator": "Scotti925",
+      "category": "prior_report",
+      "listing": {
+        "checkedDate": "2026-10-12",
+        "method": "LIVE_BROWSER_DESCRIPTION_AND_TECHNICAL_DETAILS",
+        "acquisitionSignal": "Get Model",
+        "freeAcquisition": true,
+        "lastUpdated": "2023-12-02"
+      },
+      "technicalDetails": {
+        "scope": "WHOLE_LISTED_ASSET",
+        "triangles": 140927,
+        "vertices": 221031,
+        "meshPartCount": 163,
+        "scriptCount": null
+      },
+      "rightsEvidence": "Creator Store listing and general Roblox terms; internal provenance and dependency rights unreviewed.",
+      "proposedUse": "alternative village/environment kit",
+      "sourceReport": "production/research/CREATOR_STORE_FREE_2026-10-12.json",
+      "evidenceReusedFromPriorReport": true,
+      "runtimeAssetId": null,
+      "pinnedAssetVersionId": null,
+      "intakeHash": null,
+      "acceptance": {
+        "listingVerified": true,
+        "internalsReviewed": false,
+        "dependenciesVerified": false,
+        "downloaded": false,
+        "imported": false,
+        "studioTested": false,
+        "physicalDeviceTested": false,
+        "humanApproved": false
+      }
+    },
+    {
+      "candidateStoreAssetId": "10840642581",
+      "url": "https://create.roblox.com/store/asset/10840642581",
+      "name": "House Props Pack - Duvall Drive",
+      "listedCreator": "Roblox",
+      "category": "prior_report",
+      "listing": {
+        "checkedDate": "2026-10-12",
+        "method": "LIVE_BROWSER_DESCRIPTION_AND_TECHNICAL_DETAILS",
+        "acquisitionSignal": "Get Model",
+        "freeAcquisition": true,
+        "lastUpdated": "2022-09-24"
+      },
+      "technicalDetails": {
+        "scope": "WHOLE_LISTED_ASSET",
+        "triangles": 243941,
+        "vertices": 233928,
+        "meshPartCount": 514,
+        "scriptCount": 1
+      },
+      "rightsEvidence": "Creator Store listing and general Roblox terms; internal provenance and dependency rights unreviewed.",
+      "proposedUse": "selected period-appropriate interior details",
+      "sourceReport": "production/research/CREATOR_STORE_FREE_2026-10-12.json",
+      "evidenceReusedFromPriorReport": true,
+      "runtimeAssetId": null,
+      "pinnedAssetVersionId": null,
+      "intakeHash": null,
+      "acceptance": {
+        "listingVerified": true,
+        "internalsReviewed": false,
+        "dependenciesVerified": false,
+        "downloaded": false,
+        "imported": false,
+        "studioTested": false,
+        "physicalDeviceTested": false,
+        "humanApproved": false
+      }
+    },
+    {
+      "candidateStoreAssetId": "10840661513",
+      "url": "https://create.roblox.com/store/asset/10840661513",
+      "name": "Landscaping Pack - Duvall Drive",
+      "listedCreator": "Roblox",
+      "category": "prior_report",
+      "listing": {
+        "checkedDate": "2026-10-12",
+        "method": "LIVE_BROWSER_DESCRIPTION_AND_TECHNICAL_DETAILS",
+        "acquisitionSignal": "Get Model",
+        "freeAcquisition": true,
+        "lastUpdated": "2022-09-24"
+      },
+      "technicalDetails": {
+        "scope": "WHOLE_LISTED_ASSET",
+        "triangles": 912716,
+        "vertices": 1003762,
+        "meshPartCount": 1803,
+        "scriptCount": 4
+      },
+      "rightsEvidence": "Creator Store listing and general Roblox terms; internal provenance and dependency rights unreviewed.",
+      "proposedUse": "selected garden details only",
+      "sourceReport": "production/research/CREATOR_STORE_FREE_2026-10-12.json",
+      "evidenceReusedFromPriorReport": true,
+      "runtimeAssetId": null,
+      "pinnedAssetVersionId": null,
+      "intakeHash": null,
+      "acceptance": {
+        "listingVerified": true,
+        "internalsReviewed": false,
+        "dependenciesVerified": false,
+        "downloaded": false,
+        "imported": false,
+        "studioTested": false,
+        "physicalDeviceTested": false,
+        "humanApproved": false
+      }
+    },
+    {
+      "candidateStoreAssetId": "13043766945",
+      "url": "https://create.roblox.com/store/asset/13043766945",
+      "name": "Potion V10",
+      "listedCreator": "Chrobahh",
+      "category": "potion",
+      "listing": {
+        "checkedDate": "2026-10-12",
+        "method": "LIVE_BROWSER_DESCRIPTION_AND_TECHNICAL_DETAILS_WHEN_PRESENT",
+        "acquisitionSignal": "Get Model",
+        "freeAcquisition": true,
+        "lastUpdated": "2023-04-08",
+        "technicalDetailsTabPresent": true
+      },
+      "technicalDetails": {
+        "scope": "WHOLE_LISTED_ASSET",
+        "triangles": 1898,
+        "vertices": 1453,
+        "meshPartCount": null,
+        "scriptCount": null,
+        "animationObjectCount": null
+      },
+      "rightsEvidence": "Description empty; original authorship and dependencies unverified.",
+      "proposedUse": "Decorative potion bottle variant; no consumable logic accepted.",
+      "sourceReport": "production/research/CREATOR_STORE_FREE_EXTRAS_2026-10-12.json",
+      "evidenceReusedFromPriorReport": true,
+      "runtimeAssetId": null,
+      "pinnedAssetVersionId": null,
+      "intakeHash": null,
+      "acceptance": {
+        "listingVerified": true,
+        "internalsReviewed": false,
+        "rightsCleared": false,
+        "dependenciesVerified": false,
+        "downloaded": false,
+        "imported": false,
+        "studioTested": false,
+        "physicalDeviceTested": false,
+        "humanApproved": false
+      }
+    },
+    {
+      "candidateStoreAssetId": "2702822393",
+      "url": "https://create.roblox.com/store/asset/2702822393",
+      "name": "Low Poly Book",
+      "listedCreator": "980246",
+      "category": "book",
+      "listing": {
+        "checkedDate": "2026-10-12",
+        "method": "LIVE_BROWSER_DESCRIPTION_AND_TECHNICAL_DETAILS_WHEN_PRESENT",
+        "acquisitionSignal": "Get Model",
+        "freeAcquisition": true,
+        "lastUpdated": "2019-01-02",
+        "technicalDetailsTabPresent": true
+      },
+      "technicalDetails": {
+        "scope": "WHOLE_LISTED_ASSET",
+        "triangles": 64,
+        "vertices": 128,
+        "meshPartCount": 1,
+        "scriptCount": null,
+        "animationObjectCount": null
+      },
+      "rightsEvidence": "Author permits use in listing; optional donation is not a purchase requirement; dependencies unverified.",
+      "proposedUse": "Closed skill-book / recipe-book prop with original Guildborne cover.",
+      "sourceReport": "production/research/CREATOR_STORE_FREE_EXTRAS_2026-10-12.json",
+      "evidenceReusedFromPriorReport": true,
+      "runtimeAssetId": null,
+      "pinnedAssetVersionId": null,
+      "intakeHash": null,
+      "acceptance": {
+        "listingVerified": true,
+        "internalsReviewed": false,
+        "rightsCleared": false,
+        "dependenciesVerified": false,
+        "downloaded": false,
+        "imported": false,
+        "studioTested": false,
+        "physicalDeviceTested": false,
+        "humanApproved": false
+      }
+    },
+    {
+      "candidateStoreAssetId": "13555696157",
+      "url": "https://create.roblox.com/store/asset/13555696157",
+      "name": "Books",
+      "listedCreator": "zzz_1551",
+      "category": "book",
+      "listing": {
+        "checkedDate": "2026-10-12",
+        "method": "LIVE_BROWSER_DESCRIPTION_AND_TECHNICAL_DETAILS_WHEN_PRESENT",
+        "acquisitionSignal": "Get Model",
+        "freeAcquisition": true,
+        "lastUpdated": "2023-05-26",
+        "technicalDetailsTabPresent": true
+      },
+      "technicalDetails": {
+        "scope": "WHOLE_LISTED_ASSET",
+        "triangles": 588,
+        "vertices": 764,
+        "meshPartCount": 3,
+        "scriptCount": null,
+        "animationObjectCount": null
+      },
+      "rightsEvidence": "Description empty; original authorship and dependencies unverified.",
+      "proposedUse": "Book piles for guild bookcase, Bookbinder and alchemy shop.",
+      "sourceReport": "production/research/CREATOR_STORE_FREE_EXTRAS_2026-10-12.json",
+      "evidenceReusedFromPriorReport": true,
+      "runtimeAssetId": null,
+      "pinnedAssetVersionId": null,
+      "intakeHash": null,
+      "acceptance": {
+        "listingVerified": true,
+        "internalsReviewed": false,
+        "rightsCleared": false,
+        "dependenciesVerified": false,
+        "downloaded": false,
+        "imported": false,
+        "studioTested": false,
+        "physicalDeviceTested": false,
+        "humanApproved": false
+      }
+    },
+    {
+      "candidateStoreAssetId": "4933223142",
+      "url": "https://create.roblox.com/store/asset/4933223142",
+      "name": "Bread",
+      "listedCreator": "WoozyNate",
+      "category": "food",
+      "listing": {
+        "checkedDate": "2026-10-12",
+        "method": "LIVE_BROWSER_DESCRIPTION_AND_TECHNICAL_DETAILS_WHEN_PRESENT",
+        "acquisitionSignal": "Get Model",
+        "freeAcquisition": true,
+        "lastUpdated": "2020-04-23",
+        "technicalDetailsTabPresent": true
+      },
+      "technicalDetails": {
+        "scope": "WHOLE_LISTED_ASSET",
+        "triangles": 578,
+        "vertices": 858,
+        "meshPartCount": null,
+        "scriptCount": null,
+        "animationObjectCount": null
+      },
+      "rightsEvidence": "Description empty; original authorship and dependencies unverified.",
+      "proposedUse": "Shared-meal, tavern and food-stall set dressing.",
+      "sourceReport": "production/research/CREATOR_STORE_FREE_EXTRAS_2026-10-12.json",
+      "evidenceReusedFromPriorReport": true,
+      "runtimeAssetId": null,
+      "pinnedAssetVersionId": null,
+      "intakeHash": null,
+      "acceptance": {
+        "listingVerified": true,
+        "internalsReviewed": false,
+        "rightsCleared": false,
+        "dependenciesVerified": false,
+        "downloaded": false,
+        "imported": false,
+        "studioTested": false,
+        "physicalDeviceTested": false,
+        "humanApproved": false
+      }
+    },
+    {
+      "candidateStoreAssetId": "1690639246",
+      "url": "https://create.roblox.com/store/asset/1690639246",
+      "name": "Meat",
+      "listedCreator": "CourageousKyran",
+      "category": "food",
+      "listing": {
+        "checkedDate": "2026-10-12",
+        "method": "LIVE_BROWSER_DESCRIPTION_AND_TECHNICAL_DETAILS_WHEN_PRESENT",
+        "acquisitionSignal": "Get Model",
+        "freeAcquisition": true,
+        "lastUpdated": "2018-04-30",
+        "technicalDetailsTabPresent": true
+      },
+      "technicalDetails": {
+        "scope": "WHOLE_LISTED_ASSET",
+        "triangles": 156,
+        "vertices": 106,
+        "meshPartCount": 1,
+        "scriptCount": null,
+        "animationObjectCount": null
+      },
+      "rightsEvidence": "Description empty; original authorship and dependencies unverified.",
+      "proposedUse": "Cooking / market meat prop; not a server consumable.",
+      "sourceReport": "production/research/CREATOR_STORE_FREE_EXTRAS_2026-10-12.json",
+      "evidenceReusedFromPriorReport": true,
+      "runtimeAssetId": null,
+      "pinnedAssetVersionId": null,
+      "intakeHash": null,
+      "acceptance": {
+        "listingVerified": true,
+        "internalsReviewed": false,
+        "rightsCleared": false,
+        "dependenciesVerified": false,
+        "downloaded": false,
+        "imported": false,
+        "studioTested": false,
+        "physicalDeviceTested": false,
+        "humanApproved": false
+      }
+    },
+    {
+      "candidateStoreAssetId": "2759295720",
+      "url": "https://create.roblox.com/store/asset/2759295720",
+      "name": "Apple",
+      "listedCreator": "kinglalu",
+      "category": "food",
+      "listing": {
+        "checkedDate": "2026-10-12",
+        "method": "LIVE_BROWSER_DESCRIPTION_AND_TECHNICAL_DETAILS_WHEN_PRESENT",
+        "acquisitionSignal": "Get Model",
+        "freeAcquisition": true,
+        "lastUpdated": "2019-01-18",
+        "technicalDetailsTabPresent": true
+      },
+      "technicalDetails": {
+        "scope": "WHOLE_LISTED_ASSET",
+        "triangles": 1540,
+        "vertices": 922,
+        "meshPartCount": 1,
+        "scriptCount": null,
+        "animationObjectCount": null
+      },
+      "rightsEvidence": "Description empty; original authorship and dependencies unverified.",
+      "proposedUse": "Orchard / market / table fruit prop.",
+      "sourceReport": "production/research/CREATOR_STORE_FREE_EXTRAS_2026-10-12.json",
+      "evidenceReusedFromPriorReport": true,
+      "runtimeAssetId": null,
+      "pinnedAssetVersionId": null,
+      "intakeHash": null,
+      "acceptance": {
+        "listingVerified": true,
+        "internalsReviewed": false,
+        "rightsCleared": false,
+        "dependenciesVerified": false,
+        "downloaded": false,
+        "imported": false,
+        "studioTested": false,
+        "physicalDeviceTested": false,
+        "humanApproved": false
+      }
+    },
+    {
+      "candidateStoreAssetId": "5056649208",
+      "url": "https://create.roblox.com/store/asset/5056649208",
+      "name": "Combat Potion Set",
+      "listedCreator": "CharlieForms",
+      "category": "potion",
+      "listing": {
+        "checkedDate": "2026-10-12",
+        "method": "LIVE_BROWSER_DESCRIPTION_AND_TECHNICAL_DETAILS_WHEN_PRESENT",
+        "acquisitionSignal": "Get Model",
+        "freeAcquisition": true,
+        "lastUpdated": "2020-05-20",
+        "technicalDetailsTabPresent": true
+      },
+      "technicalDetails": {
+        "scope": "WHOLE_LISTED_ASSET",
+        "triangles": 864,
+        "vertices": 1026,
+        "meshPartCount": null,
+        "scriptCount": 3,
+        "animationObjectCount": 6,
+        "audioCount": 6,
+        "toolCount": 3
+      },
+      "rightsEvidence": "Health / speed / forcefield described; animation type, original authorship and dependencies unverified.",
+      "proposedUse": "Inspect bottles and contained motion objects only; preserve Guildborne combat.",
+      "sourceReport": "production/research/CREATOR_STORE_FREE_EXTRAS_2026-10-12.json",
+      "evidenceReusedFromPriorReport": true,
+      "runtimeAssetId": null,
+      "pinnedAssetVersionId": null,
+      "intakeHash": null,
+      "acceptance": {
+        "listingVerified": true,
+        "internalsReviewed": false,
+        "rightsCleared": false,
+        "dependenciesVerified": false,
+        "downloaded": false,
+        "imported": false,
+        "studioTested": false,
+        "physicalDeviceTested": false,
+        "humanApproved": false
+      }
+    },
+    {
+      "candidateStoreAssetId": "11289365085",
+      "url": "https://create.roblox.com/store/asset/11289365085",
+      "name": "blue mystical wizard's cauldron for halloween",
+      "listedCreator": "seG1as",
+      "category": "potion",
+      "listing": {
+        "checkedDate": "2026-10-12",
+        "method": "LIVE_BROWSER_DESCRIPTION_AND_TECHNICAL_DETAILS_WHEN_PRESENT",
+        "acquisitionSignal": "Get Model",
+        "freeAcquisition": true,
+        "lastUpdated": "2022-10-16",
+        "technicalDetailsTabPresent": true
+      },
+      "technicalDetails": {
+        "scope": "WHOLE_LISTED_ASSET",
+        "triangles": 2112,
+        "vertices": 1805,
+        "meshPartCount": 1,
+        "scriptCount": null,
+        "animationObjectCount": null
+      },
+      "rightsEvidence": "Description empty; original authorship and dependencies unverified.",
+      "proposedUse": "Alternative alchemy cauldron geometry / color study.",
+      "sourceReport": "production/research/CREATOR_STORE_FREE_EXTRAS_2026-10-12.json",
+      "evidenceReusedFromPriorReport": true,
+      "runtimeAssetId": null,
+      "pinnedAssetVersionId": null,
+      "intakeHash": null,
+      "acceptance": {
+        "listingVerified": true,
+        "internalsReviewed": false,
+        "rightsCleared": false,
+        "dependenciesVerified": false,
+        "downloaded": false,
+        "imported": false,
+        "studioTested": false,
+        "physicalDeviceTested": false,
+        "humanApproved": false
+      }
+    },
+    {
+      "candidateStoreAssetId": "9088469378",
+      "url": "https://create.roblox.com/store/asset/9088469378",
+      "name": "Free-to-use VFX Pack #2 - Lazers and Blasts",
+      "listedCreator": "BegoneDamen",
+      "category": "vfx",
+      "listing": {
+        "checkedDate": "2026-10-12",
+        "method": "LIVE_BROWSER_DESCRIPTION_AND_TECHNICAL_DETAILS_WHEN_PRESENT",
+        "acquisitionSignal": "Get Model",
+        "freeAcquisition": true,
+        "lastUpdated": "2022-03-13",
+        "technicalDetailsTabPresent": true
+      },
+      "technicalDetails": {
+        "scope": "WHOLE_LISTED_ASSET",
+        "triangles": 15010,
+        "vertices": 32388,
+        "meshPartCount": 10,
+        "scriptCount": null,
+        "animationObjectCount": null
+      },
+      "rightsEvidence": "Free-to-use is in title; description empty; textures and dependencies unverified.",
+      "proposedUse": "Select mage beam / impact visuals after per-component rights review.",
+      "sourceReport": "production/research/CREATOR_STORE_FREE_EXTRAS_2026-10-12.json",
+      "evidenceReusedFromPriorReport": true,
+      "runtimeAssetId": null,
+      "pinnedAssetVersionId": null,
+      "intakeHash": null,
+      "acceptance": {
+        "listingVerified": true,
+        "internalsReviewed": false,
+        "rightsCleared": false,
+        "dependenciesVerified": false,
+        "downloaded": false,
+        "imported": false,
+        "studioTested": false,
+        "physicalDeviceTested": false,
+        "humanApproved": false
+      }
+    },
+    {
+      "candidateStoreAssetId": "83841806206726",
+      "url": "https://create.roblox.com/store/asset/83841806206726",
+      "name": "saythrt's Mega Pack",
+      "listedCreator": "No��; credited @15VSF",
+      "category": "vfx",
+      "listing": {
+        "checkedDate": "2026-10-12",
+        "method": "LIVE_BROWSER_DESCRIPTION_AND_TECHNICAL_DETAILS_WHEN_PRESENT",
+        "acquisitionSignal": "Get Model",
+        "freeAcquisition": true,
+        "lastUpdated": "2025-04-22",
+        "technicalDetailsTabPresent": false
+      },
+      "technicalDetails": {
+        "scope": "WHOLE_LISTED_ASSET",
+        "triangles": null,
+        "vertices": null,
+        "meshPartCount": null,
+        "scriptCount": null,
+        "animationObjectCount": null
+      },
+      "rightsEvidence": "Author says free for any game or VFX; credits requested when repurposing/modding. Per-texture authorship unverified.",
+      "proposedUse": "Reference library; select small original effects, not entire pack.",
+      "sourceReport": "production/research/CREATOR_STORE_FREE_EXTRAS_2026-10-12.json",
+      "evidenceReusedFromPriorReport": true,
+      "runtimeAssetId": null,
+      "pinnedAssetVersionId": null,
+      "intakeHash": null,
+      "acceptance": {
+        "listingVerified": true,
+        "internalsReviewed": false,
+        "rightsCleared": false,
+        "dependenciesVerified": false,
+        "downloaded": false,
+        "imported": false,
+        "studioTested": false,
+        "physicalDeviceTested": false,
+        "humanApproved": false
+      }
+    },
+    {
+      "candidateStoreAssetId": "14375826814",
+      "url": "https://create.roblox.com/store/asset/14375826814",
+      "name": "Parallax Portal",
+      "listedCreator": "Roblox Code Samples; credited @DevelopmentDeadline",
+      "category": "vfx",
+      "listing": {
+        "checkedDate": "2026-10-12",
+        "method": "LIVE_BROWSER_DESCRIPTION_AND_TECHNICAL_DETAILS_WHEN_PRESENT",
+        "acquisitionSignal": "Get Model",
+        "freeAcquisition": true,
+        "lastUpdated": "2023-08-10",
+        "technicalDetailsTabPresent": true
+      },
+      "technicalDetails": {
+        "scope": "WHOLE_LISTED_ASSET",
+        "triangles": 60,
+        "vertices": 120,
+        "meshPartCount": null,
+        "scriptCount": 1,
+        "animationObjectCount": null
+      },
+      "rightsEvidence": "Roblox Code Samples listing; dependencies and internal scripts not inspected.",
+      "proposedUse": "Portal depth presentation for guild-island/dungeon entrance.",
+      "sourceReport": "production/research/CREATOR_STORE_FREE_EXTRAS_2026-10-12.json",
+      "evidenceReusedFromPriorReport": true,
+      "runtimeAssetId": null,
+      "pinnedAssetVersionId": null,
+      "intakeHash": null,
+      "acceptance": {
+        "listingVerified": true,
+        "internalsReviewed": false,
+        "rightsCleared": false,
+        "dependenciesVerified": false,
+        "downloaded": false,
+        "imported": false,
+        "studioTested": false,
+        "physicalDeviceTested": false,
+        "humanApproved": false
+      }
+    },
+    {
+      "candidateStoreAssetId": "11720399759",
+      "url": "https://create.roblox.com/store/asset/11720399759",
+      "name": "SimpleAnimation [R15]",
+      "listedCreator": "GnomeCode",
+      "category": "animation",
+      "listing": {
+        "checkedDate": "2026-10-12",
+        "method": "LIVE_BROWSER_DESCRIPTION_AND_TECHNICAL_DETAILS_WHEN_PRESENT",
+        "acquisitionSignal": "Get Model",
+        "freeAcquisition": true,
+        "lastUpdated": "2022-12-08",
+        "technicalDetailsTabPresent": true
+      },
+      "technicalDetails": {
+        "scope": "WHOLE_LISTED_ASSET",
+        "triangles": 4752,
+        "vertices": 3234,
+        "meshPartCount": null,
+        "scriptCount": 2,
+        "animationObjectCount": null,
+        "decalCount": 3
+      },
+      "rightsEvidence": "Listing claims R15 support; rig fit, clip permissions and original authorship unverified.",
+      "proposedUse": "Study default R15 locomotion, footsteps and footprints; controller integration review.",
+      "sourceReport": "production/research/CREATOR_STORE_FREE_EXTRAS_2026-10-12.json",
+      "evidenceReusedFromPriorReport": true,
+      "runtimeAssetId": null,
+      "pinnedAssetVersionId": null,
+      "intakeHash": null,
+      "acceptance": {
+        "listingVerified": true,
+        "internalsReviewed": false,
+        "rightsCleared": false,
+        "dependenciesVerified": false,
+        "downloaded": false,
+        "imported": false,
+        "studioTested": false,
+        "physicalDeviceTested": false,
+        "humanApproved": false
+      }
+    },
+    {
+      "candidateStoreAssetId": "10328759036",
+      "url": "https://create.roblox.com/store/asset/10328759036",
+      "name": "Custom R15 Animations",
+      "listedCreator": "Btwcodyyy",
+      "category": "animation",
+      "listing": {
+        "checkedDate": "2026-10-12",
+        "method": "LIVE_BROWSER_DESCRIPTION_AND_TECHNICAL_DETAILS_WHEN_PRESENT",
+        "acquisitionSignal": "Get Model",
+        "freeAcquisition": true,
+        "lastUpdated": "2022-07-23",
+        "technicalDetailsTabPresent": true
+      },
+      "technicalDetails": {
+        "scope": "WHOLE_LISTED_ASSET",
+        "triangles": null,
+        "vertices": null,
+        "meshPartCount": null,
+        "scriptCount": 1,
+        "animationObjectCount": 11
+      },
+      "rightsEvidence": "11 Animation objects displayed; identities, provenance, rig fit and playback permission unverified.",
+      "proposedUse": "Inspect actual idle/locomotion clips before choosing any.",
+      "sourceReport": "production/research/CREATOR_STORE_FREE_EXTRAS_2026-10-12.json",
+      "evidenceReusedFromPriorReport": true,
+      "runtimeAssetId": null,
+      "pinnedAssetVersionId": null,
+      "intakeHash": null,
+      "acceptance": {
+        "listingVerified": true,
+        "internalsReviewed": false,
+        "rightsCleared": false,
+        "dependenciesVerified": false,
+        "downloaded": false,
+        "imported": false,
+        "studioTested": false,
+        "physicalDeviceTested": false,
+        "humanApproved": false
+      }
+    },
+    {
+      "candidateStoreAssetId": "16382650186",
+      "url": "https://create.roblox.com/store/asset/16382650186",
+      "name": "Laser Beam Blaster",
+      "listedCreator": "Roblox Resources; credited @TooManyOveralls",
+      "category": "vfx",
+      "listing": {
+        "checkedDate": "2026-10-12",
+        "method": "LIVE_BROWSER_DESCRIPTION_AND_TECHNICAL_DETAILS_WHEN_PRESENT",
+        "acquisitionSignal": "Get Model",
+        "freeAcquisition": true,
+        "lastUpdated": "2024-02-17",
+        "technicalDetailsTabPresent": true
+      },
+      "technicalDetails": {
+        "scope": "WHOLE_LISTED_ASSET",
+        "triangles": 3553,
+        "vertices": 3531,
+        "meshPartCount": 6,
+        "scriptCount": null,
+        "animationObjectCount": null
+      },
+      "rightsEvidence": "Official tutorial links this asset. Internal model not inspected; tutorial is not proof of included completed VFX.",
+      "proposedUse": "Use official beam tutorial technique for mage channel / tether; sample is a blaster prop.",
+      "sourceReport": "production/research/CREATOR_STORE_FREE_EXTRAS_2026-10-12.json",
+      "evidenceReusedFromPriorReport": true,
+      "runtimeAssetId": null,
+      "pinnedAssetVersionId": null,
+      "intakeHash": null,
+      "acceptance": {
+        "listingVerified": true,
+        "internalsReviewed": false,
+        "rightsCleared": false,
+        "dependenciesVerified": false,
+        "downloaded": false,
+        "imported": false,
+        "studioTested": false,
+        "physicalDeviceTested": false,
+        "humanApproved": false
+      }
+    },
+    {
+      "candidateStoreAssetId": "13595118497",
+      "url": "https://create.roblox.com/store/asset/13595118497",
+      "name": "Tween Group",
+      "listedCreator": "Roblox Code Samples; credited @DevelopmentDeadline",
+      "category": "vfx_utility",
+      "listing": {
+        "checkedDate": "2026-10-12",
+        "method": "LIVE_BROWSER_DESCRIPTION_AND_TECHNICAL_DETAILS_WHEN_PRESENT",
+        "acquisitionSignal": "Get Model",
+        "freeAcquisition": true,
+        "lastUpdated": "2023-06-21",
+        "technicalDetailsTabPresent": true
+      },
+      "technicalDetails": {
+        "scope": "WHOLE_LISTED_ASSET",
+        "triangles": 12,
+        "vertices": 24,
+        "meshPartCount": null,
+        "scriptCount": 1,
+        "animationObjectCount": null
+      },
+      "rightsEvidence": "Roblox Code Samples listing; code unreviewed. Listing notes no PlaybackState/Completed event support.",
+      "proposedUse": "Study grouped play/pause/cancel for visual skill cleanup.",
+      "sourceReport": "production/research/CREATOR_STORE_FREE_EXTRAS_2026-10-12.json",
+      "evidenceReusedFromPriorReport": true,
+      "runtimeAssetId": null,
+      "pinnedAssetVersionId": null,
+      "intakeHash": null,
+      "acceptance": {
+        "listingVerified": true,
+        "internalsReviewed": false,
+        "rightsCleared": false,
+        "dependenciesVerified": false,
+        "downloaded": false,
+        "imported": false,
+        "studioTested": false,
+        "physicalDeviceTested": false,
+        "humanApproved": false
+      }
+    },
+    {
+      "candidateStoreAssetId": "13794493103",
+      "url": "https://create.roblox.com/store/asset/13794493103",
+      "name": "Open book",
+      "listedCreator": "zzz_1551",
+      "category": "book",
+      "listing": {
+        "checkedDate": "2026-10-12",
+        "method": "LIVE_BROWSER_DESCRIPTION_AND_TECHNICAL_DETAILS_WHEN_PRESENT",
+        "acquisitionSignal": "Get Model",
+        "freeAcquisition": true,
+        "lastUpdated": "2023-06-19",
+        "technicalDetailsTabPresent": true
+      },
+      "technicalDetails": {
+        "scope": "WHOLE_LISTED_ASSET",
+        "triangles": 514,
+        "vertices": 596,
+        "meshPartCount": 1,
+        "scriptCount": null,
+        "animationObjectCount": null
+      },
+      "rightsEvidence": "Description empty; original authorship and dependencies unverified.",
+      "proposedUse": "Open spell-book, recipe-book and lectern prop.",
+      "sourceReport": "production/research/CREATOR_STORE_FREE_EXTRAS_2026-10-12.json",
+      "evidenceReusedFromPriorReport": true,
+      "runtimeAssetId": null,
+      "pinnedAssetVersionId": null,
+      "intakeHash": null,
+      "acceptance": {
+        "listingVerified": true,
+        "internalsReviewed": false,
+        "rightsCleared": false,
+        "dependenciesVerified": false,
+        "downloaded": false,
+        "imported": false,
+        "studioTested": false,
+        "physicalDeviceTested": false,
+        "humanApproved": false
+      }
+    },
+    {
+      "candidateStoreAssetId": "6091930553",
+      "url": "https://create.roblox.com/store/asset/6091930553",
+      "name": "R15 Sword System With Animations",
+      "listedCreator": "Count_Alfie",
+      "category": "animation",
+      "listing": {
+        "checkedDate": "2026-10-12",
+        "method": "LIVE_BROWSER_DESCRIPTION_AND_TECHNICAL_DETAILS_WHEN_PRESENT",
+        "acquisitionSignal": "Get Model",
+        "freeAcquisition": true,
+        "lastUpdated": "2020-12-16",
+        "technicalDetailsTabPresent": false
+      },
+      "technicalDetails": {
+        "scope": "WHOLE_LISTED_ASSET",
+        "triangles": null,
+        "vertices": null,
+        "meshPartCount": null,
+        "scriptCount": null,
+        "animationObjectCount": null
+      },
+      "rightsEvidence": "Author claims R15 only and incomplete leaderboard support; motion identities, rights and permissions unverified.",
+      "proposedUse": "Inspect possible sword motions; do not adopt its combat system.",
+      "sourceReport": "production/research/CREATOR_STORE_FREE_EXTRAS_2026-10-12.json",
+      "evidenceReusedFromPriorReport": true,
+      "runtimeAssetId": null,
+      "pinnedAssetVersionId": null,
+      "intakeHash": null,
+      "acceptance": {
+        "listingVerified": true,
+        "internalsReviewed": false,
+        "rightsCleared": false,
+        "dependenciesVerified": false,
+        "downloaded": false,
+        "imported": false,
+        "studioTested": false,
+        "physicalDeviceTested": false,
+        "humanApproved": false
+      }
+    },
+    {
+      "candidateStoreAssetId": "2496756132",
+      "url": "https://create.roblox.com/store/asset/2496756132",
+      "name": "Treasure Chest Union",
+      "listedCreator": "Vyxium",
+      "category": "loot",
+      "researchPriority": "P2_AFTER_CC0_CORE",
+      "listing": {
+        "checkedDate": "2026-10-12",
+        "method": "LIVE_BROWSER_DESCRIPTION_AND_TECHNICAL_DETAILS",
+        "acquisitionSignal": "Get Model",
+        "freeAcquisition": true,
+        "lastUpdated": "2018-10-18",
+        "technicalDetailsTabPresent": true
+      },
+      "technicalDetails": {
+        "scope": "WHOLE_LISTED_ASSET",
+        "triangles": 850,
+        "vertices": 1134,
+        "meshPartCount": null,
+        "scriptCount": null,
+        "animationObjectCount": null
+      },
+      "proposedUse": "Top/bottom unions for opening and closing. No loot logic accepted.",
+      "rightsEvidence": "Listing author describes separable unions; authorship/dependencies and scope of modification rights unreviewed.",
+      "evidenceReusedFromPriorReport": false,
+      "runtimeAssetId": null,
+      "pinnedAssetVersionId": null,
+      "intakeHash": null,
+      "acceptance": {
+        "listingVerified": true,
+        "internalsReviewed": false,
+        "rightsCleared": false,
+        "dependenciesVerified": false,
+        "downloaded": false,
+        "imported": false,
+        "studioTested": false,
+        "physicalDeviceTested": false,
+        "humanApproved": false
+      }
+    },
+    {
+      "candidateStoreAssetId": "313318251",
+      "url": "https://create.roblox.com/store/asset/313318251",
+      "name": "Medieval Building Pack",
+      "listedCreator": "EndorsedModel",
+      "category": "world",
+      "researchPriority": "P2_AFTER_CC0_CORE",
+      "listing": {
+        "checkedDate": "2026-10-12",
+        "method": "LIVE_BROWSER_DESCRIPTION_AND_TECHNICAL_DETAILS",
+        "acquisitionSignal": "Get Model",
+        "freeAcquisition": true,
+        "lastUpdated": "2015-10-23",
+        "technicalDetailsTabPresent": true
+      },
+      "technicalDetails": {
+        "scope": "WHOLE_LISTED_ASSET",
+        "triangles": 33440,
+        "vertices": 66880,
+        "meshPartCount": null,
+        "scriptCount": null,
+        "animationObjectCount": null
+      },
+      "proposedUse": "Town exterior set dressing only; author says buildings cannot be entered.",
+      "rightsEvidence": "Creator Store listing; no CC0/exclusive ownership inferred.",
+      "evidenceReusedFromPriorReport": false,
+      "runtimeAssetId": null,
+      "pinnedAssetVersionId": null,
+      "intakeHash": null,
+      "acceptance": {
+        "listingVerified": true,
+        "internalsReviewed": false,
+        "rightsCleared": false,
+        "dependenciesVerified": false,
+        "downloaded": false,
+        "imported": false,
+        "studioTested": false,
+        "physicalDeviceTested": false,
+        "humanApproved": false
+      }
+    },
+    {
+      "candidateStoreAssetId": "3381058398",
+      "url": "https://create.roblox.com/store/asset/3381058398",
+      "name": "horse rigged and animated",
+      "listedCreator": "BlckBrryJam",
+      "category": "wildlife",
+      "researchPriority": "P2_AFTER_CC0_CORE",
+      "listing": {
+        "checkedDate": "2026-10-12",
+        "method": "LIVE_BROWSER_DESCRIPTION_AND_TECHNICAL_DETAILS",
+        "acquisitionSignal": "Get Model",
+        "freeAcquisition": true,
+        "lastUpdated": "2019-07-05",
+        "technicalDetailsTabPresent": true
+      },
+      "technicalDetails": {
+        "scope": "WHOLE_LISTED_ASSET",
+        "triangles": 4547,
+        "vertices": 2388,
+        "meshPartCount": 21,
+        "scriptCount": null,
+        "animationObjectCount": 1
+      },
+      "proposedUse": "Horse art/motion inspection for stable/caravan; no mount system.",
+      "rightsEvidence": "Author says free to use and asks credit. Claims five named motions, but listing shows one Animation object; contents unresolved.",
+      "evidenceReusedFromPriorReport": false,
+      "runtimeAssetId": null,
+      "pinnedAssetVersionId": null,
+      "intakeHash": null,
+      "acceptance": {
+        "listingVerified": true,
+        "internalsReviewed": false,
+        "rightsCleared": false,
+        "dependenciesVerified": false,
+        "downloaded": false,
+        "imported": false,
+        "studioTested": false,
+        "physicalDeviceTested": false,
+        "humanApproved": false
+      }
+    },
+    {
+      "candidateStoreAssetId": "5441932362",
+      "url": "https://create.roblox.com/store/asset/5441932362",
+      "name": "## Sword and shield",
+      "listedCreator": "UviaRoblox",
+      "category": "gear",
+      "researchPriority": "P2_AFTER_CC0_CORE",
+      "listing": {
+        "checkedDate": "2026-10-12",
+        "method": "LIVE_BROWSER_DESCRIPTION_AND_TECHNICAL_DETAILS",
+        "acquisitionSignal": "Get Model",
+        "freeAcquisition": true,
+        "lastUpdated": "2020-07-27",
+        "technicalDetailsTabPresent": true
+      },
+      "technicalDetails": {
+        "scope": "WHOLE_LISTED_ASSET",
+        "triangles": 3396,
+        "vertices": 3945,
+        "meshPartCount": 14,
+        "scriptCount": null,
+        "animationObjectCount": null,
+        "decalCount": 2
+      },
+      "proposedUse": "Sword/shield silhouette candidate; use original Guildborne crest.",
+      "rightsEvidence": "Author says free to use; original authorship and two decals' provenance unreviewed.",
+      "evidenceReusedFromPriorReport": false,
+      "runtimeAssetId": null,
+      "pinnedAssetVersionId": null,
+      "intakeHash": null,
+      "acceptance": {
+        "listingVerified": true,
+        "internalsReviewed": false,
+        "rightsCleared": false,
+        "dependenciesVerified": false,
+        "downloaded": false,
+        "imported": false,
+        "studioTested": false,
+        "physicalDeviceTested": false,
+        "humanApproved": false
+      }
+    },
+    {
+      "candidateStoreAssetId": "16263631766",
+      "url": "https://create.roblox.com/store/asset/16263631766",
+      "name": "Medieval Market Stalls",
+      "listedCreator": "Scripted_Kool",
+      "category": "world",
+      "researchPriority": "P2_AFTER_CC0_CORE",
+      "listing": {
+        "checkedDate": "2026-10-12",
+        "method": "LIVE_BROWSER_DESCRIPTION_AND_TECHNICAL_DETAILS",
+        "acquisitionSignal": "Get Model",
+        "freeAcquisition": true,
+        "lastUpdated": "2024-12-02",
+        "technicalDetailsTabPresent": true
+      },
+      "technicalDetails": {
+        "scope": "WHOLE_LISTED_ASSET",
+        "triangles": 12900,
+        "vertices": 26370,
+        "meshPartCount": 48,
+        "scriptCount": null,
+        "animationObjectCount": null
+      },
+      "proposedUse": "Select stall/props for town markets and guild bazaar dressing.",
+      "rightsEvidence": "Description says market stalls with props; texture rights and dependencies unreviewed.",
+      "evidenceReusedFromPriorReport": false,
+      "runtimeAssetId": null,
+      "pinnedAssetVersionId": null,
+      "intakeHash": null,
+      "acceptance": {
+        "listingVerified": true,
+        "internalsReviewed": false,
+        "rightsCleared": false,
+        "dependenciesVerified": false,
+        "downloaded": false,
+        "imported": false,
+        "studioTested": false,
+        "physicalDeviceTested": false,
+        "humanApproved": false
+      }
+    },
+    {
+      "candidateStoreAssetId": "10971861418",
+      "url": "https://create.roblox.com/store/asset/10971861418",
+      "name": "Anvil",
+      "listedCreator": "Kajto_Kujo",
+      "category": "crafting",
+      "researchPriority": "P2_AFTER_CC0_CORE",
+      "listing": {
+        "checkedDate": "2026-10-12",
+        "method": "LIVE_BROWSER_DESCRIPTION_AND_TECHNICAL_DETAILS",
+        "acquisitionSignal": "Get Model",
+        "freeAcquisition": true,
+        "lastUpdated": "2022-10-11",
+        "technicalDetailsTabPresent": true
+      },
+      "technicalDetails": {
+        "scope": "WHOLE_LISTED_ASSET",
+        "triangles": 2184,
+        "vertices": 5533,
+        "meshPartCount": 1,
+        "scriptCount": null,
+        "animationObjectCount": null
+      },
+      "proposedUse": "Forge/workstation visual variant.",
+      "rightsEvidence": "Description says simple anvil decoration; original authorship and dependencies unreviewed.",
+      "evidenceReusedFromPriorReport": false,
+      "runtimeAssetId": null,
+      "pinnedAssetVersionId": null,
+      "intakeHash": null,
+      "acceptance": {
+        "listingVerified": true,
+        "internalsReviewed": false,
+        "rightsCleared": false,
+        "dependenciesVerified": false,
+        "downloaded": false,
+        "imported": false,
+        "studioTested": false,
+        "physicalDeviceTested": false,
+        "humanApproved": false
+      }
+    },
+    {
+      "candidateStoreAssetId": "11861768348",
+      "url": "https://create.roblox.com/store/asset/11861768348",
+      "name": "Pickaxe",
+      "listedCreator": "coolcapidog",
+      "category": "gathering",
+      "researchPriority": "P2_AFTER_CC0_CORE",
+      "listing": {
+        "checkedDate": "2026-10-12",
+        "method": "LIVE_BROWSER_DESCRIPTION_AND_TECHNICAL_DETAILS",
+        "acquisitionSignal": "Get Model",
+        "freeAcquisition": true,
+        "lastUpdated": "2022-12-19",
+        "technicalDetailsTabPresent": true
+      },
+      "technicalDetails": {
+        "scope": "WHOLE_LISTED_ASSET",
+        "triangles": 234,
+        "vertices": 475,
+        "meshPartCount": 2,
+        "scriptCount": 2,
+        "animationObjectCount": null,
+        "audioCount": 1,
+        "toolCount": 1
+      },
+      "proposedUse": "Mining worker/tool visual; retain GatherResource authority.",
+      "rightsEvidence": "Description empty; script/audio/source rights not inspected.",
+      "evidenceReusedFromPriorReport": false,
+      "runtimeAssetId": null,
+      "pinnedAssetVersionId": null,
+      "intakeHash": null,
+      "acceptance": {
+        "listingVerified": true,
+        "internalsReviewed": false,
+        "rightsCleared": false,
+        "dependenciesVerified": false,
+        "downloaded": false,
+        "imported": false,
+        "studioTested": false,
+        "physicalDeviceTested": false,
+        "humanApproved": false
+      }
+    },
+    {
+      "candidateStoreAssetId": "13114054675",
+      "url": "https://create.roblox.com/store/asset/13114054675",
+      "name": "Lever",
+      "listedCreator": "adamqplaysroblox",
+      "category": "dungeon",
+      "researchPriority": "P2_AFTER_CC0_CORE",
+      "listing": {
+        "checkedDate": "2026-10-12",
+        "method": "LIVE_BROWSER_DESCRIPTION_AND_TECHNICAL_DETAILS",
+        "acquisitionSignal": "Get Model",
+        "freeAcquisition": true,
+        "lastUpdated": "2023-04-14",
+        "technicalDetailsTabPresent": true
+      },
+      "technicalDetails": {
+        "scope": "WHOLE_LISTED_ASSET",
+        "triangles": 2778,
+        "vertices": 2784,
+        "meshPartCount": null,
+        "scriptCount": 2,
+        "animationObjectCount": null,
+        "audioCount": 1
+      },
+      "proposedUse": "Lever geometry/motion candidate for existing server puzzle markers.",
+      "rightsEvidence": "Author claims fully scripted lever made by author; no script behavior or modification licence clearance inferred.",
+      "evidenceReusedFromPriorReport": false,
+      "runtimeAssetId": null,
+      "pinnedAssetVersionId": null,
+      "intakeHash": null,
+      "acceptance": {
+        "listingVerified": true,
+        "internalsReviewed": false,
+        "rightsCleared": false,
+        "dependenciesVerified": false,
+        "downloaded": false,
+        "imported": false,
+        "studioTested": false,
+        "physicalDeviceTested": false,
+        "humanApproved": false
+      }
+    },
+    {
+      "candidateStoreAssetId": "73613290042723",
+      "url": "https://create.roblox.com/store/asset/73613290042723",
+      "name": "Minecart",
+      "listedCreator": "Wish Game; credited @clashnewbme",
+      "category": "gathering",
+      "researchPriority": "P2_AFTER_CC0_CORE",
+      "listing": {
+        "checkedDate": "2026-10-12",
+        "method": "LIVE_BROWSER_DESCRIPTION_AND_TECHNICAL_DETAILS",
+        "acquisitionSignal": "Get Model",
+        "freeAcquisition": true,
+        "lastUpdated": "2025-05-03",
+        "technicalDetailsTabPresent": true
+      },
+      "technicalDetails": {
+        "scope": "WHOLE_LISTED_ASSET",
+        "triangles": 88,
+        "vertices": 150,
+        "meshPartCount": 1,
+        "scriptCount": null,
+        "animationObjectCount": null
+      },
+      "proposedUse": "Static mine cargo/quest landmark first; no rails/physics controller confirmed.",
+      "rightsEvidence": "Description credits clashnewbme; original source and dependencies unreviewed.",
+      "evidenceReusedFromPriorReport": false,
+      "runtimeAssetId": null,
+      "pinnedAssetVersionId": null,
+      "intakeHash": null,
+      "acceptance": {
+        "listingVerified": true,
+        "internalsReviewed": false,
+        "rightsCleared": false,
+        "dependenciesVerified": false,
+        "downloaded": false,
+        "imported": false,
+        "studioTested": false,
+        "physicalDeviceTested": false,
+        "humanApproved": false
+      }
+    },
+    {
+      "candidateStoreAssetId": "87891139",
+      "url": "https://create.roblox.com/store/asset/87891139",
+      "name": "Portcullis",
+      "listedCreator": "tusKOr661",
+      "category": "dungeon",
+      "researchPriority": "P2_AFTER_CC0_CORE",
+      "listing": {
+        "checkedDate": "2026-10-12",
+        "method": "LIVE_BROWSER_DESCRIPTION_AND_TECHNICAL_DETAILS",
+        "acquisitionSignal": "Get Model",
+        "freeAcquisition": true,
+        "lastUpdated": "2012-07-26",
+        "technicalDetailsTabPresent": true
+      },
+      "technicalDetails": {
+        "scope": "WHOLE_LISTED_ASSET",
+        "triangles": 288,
+        "vertices": 576,
+        "meshPartCount": null,
+        "scriptCount": 2,
+        "animationObjectCount": null
+      },
+      "proposedUse": "Gate visual shell; server owns opening state and safe passage.",
+      "rightsEvidence": "Description empty; old scripts and dependencies unreviewed.",
+      "evidenceReusedFromPriorReport": false,
+      "runtimeAssetId": null,
+      "pinnedAssetVersionId": null,
+      "intakeHash": null,
+      "acceptance": {
+        "listingVerified": true,
+        "internalsReviewed": false,
+        "rightsCleared": false,
+        "dependenciesVerified": false,
+        "downloaded": false,
+        "imported": false,
+        "studioTested": false,
+        "physicalDeviceTested": false,
+        "humanApproved": false
+      }
+    },
+    {
+      "candidateStoreAssetId": "454965215",
+      "url": "https://create.roblox.com/store/asset/454965215",
+      "name": "Monster",
+      "listedCreator": "Roblox; credited Luckymaxer",
+      "category": "monsters",
+      "researchPriority": "P2_AFTER_CC0_CORE",
+      "listing": {
+        "checkedDate": "2026-10-12",
+        "method": "LIVE_BROWSER_DESCRIPTION_AND_TECHNICAL_DETAILS",
+        "acquisitionSignal": "Get Model",
+        "freeAcquisition": true,
+        "lastUpdated": "2016-07-15",
+        "technicalDetailsTabPresent": true
+      },
+      "technicalDetails": {
+        "scope": "WHOLE_LISTED_ASSET",
+        "triangles": 2916,
+        "vertices": 2056,
+        "meshPartCount": null,
+        "scriptCount": 3,
+        "animationObjectCount": null
+      },
+      "proposedUse": "Monster appearance/rig reference; retain existing enemy IDs and server combat.",
+      "rightsEvidence": "Official Roblox listing credits Luckymaxer; no R15 or rig compatibility confirmed.",
+      "evidenceReusedFromPriorReport": false,
+      "runtimeAssetId": null,
+      "pinnedAssetVersionId": null,
+      "intakeHash": null,
+      "acceptance": {
+        "listingVerified": true,
+        "internalsReviewed": false,
+        "rightsCleared": false,
+        "dependenciesVerified": false,
+        "downloaded": false,
+        "imported": false,
+        "studioTested": false,
+        "physicalDeviceTested": false,
+        "humanApproved": false
+      }
+    },
+    {
+      "candidateStoreAssetId": "3924238625",
+      "url": "https://create.roblox.com/store/asset/3924238625",
+      "name": "Drooling Zombie (Rthro)",
+      "listedCreator": "Roblox",
+      "category": "monsters",
+      "researchPriority": "P2_AFTER_CC0_CORE",
+      "listing": {
+        "checkedDate": "2026-10-12",
+        "method": "LIVE_BROWSER_DESCRIPTION_AND_TECHNICAL_DETAILS",
+        "acquisitionSignal": "Get Model",
+        "freeAcquisition": true,
+        "lastUpdated": "2022-08-13",
+        "technicalDetailsTabPresent": true
+      },
+      "technicalDetails": {
+        "scope": "WHOLE_LISTED_ASSET",
+        "triangles": 8576,
+        "vertices": 6715,
+        "meshPartCount": 15,
+        "scriptCount": 4,
+        "animationObjectCount": 29
+      },
+      "proposedUse": "Official NPC-kit visual/rig reference for undead; no adoption of autonomous attack scripts.",
+      "rightsEvidence": "Official NPC kit under Roblox Limited Use License; customizable per docs, retain notices and Roblox-only scope; not CC0 or ownership grant.",
+      "evidenceReusedFromPriorReport": false,
+      "runtimeAssetId": null,
+      "pinnedAssetVersionId": null,
+      "intakeHash": null,
+      "acceptance": {
+        "listingVerified": true,
+        "internalsReviewed": false,
+        "rightsCleared": false,
+        "dependenciesVerified": false,
+        "downloaded": false,
+        "imported": false,
+        "studioTested": false,
+        "physicalDeviceTested": false,
+        "humanApproved": false
+      },
+      "licenseUrl": "https://create.roblox.com/docs/resources/limited-use-license"
+    }
+  ],
+  "authorSiteCC0Packs": [
+    {
+      "candidateKey": "q-medieval-village",
+      "name": "Medieval Village Pack",
+      "listedAuthor": "Quaternius",
+      "url": "https://quaternius.com/packs/medievalvillage.html",
+      "category": "world",
+      "sourceType": "PRIMARY_AUTHOR_SITE_CC0_FREE_PACK",
+      "checkedDate": "2026-10-12",
+      "freeAcquisition": true,
+      "freeEvidence": "Pack page offers free download and CC0 personal/commercial use; author FAQ confirms modification allowed.",
+      "rightsEvidence": {
+        "license": "CC0-1.0",
+        "licenseUrl": "https://creativecommons.org/publicdomain/zero/1.0/",
+        "authorPolicyUrl": "https://quaternius.com/faq.html",
+        "basis": "PACK_AND_AUTHOR_POLICY_WEB_PAGES_ONLY",
+        "exclusiveOwnership": false
+      },
+      "authorClaims": {
+        "contentCount": 44,
+        "countUnit": "models",
+        "advertisedFormats": [
+          "FBX",
+          "OBJ",
+          "Blend"
+        ],
+        "contents": "Village structures and town props",
+        "limits": null
+      },
+      "runtimeAssetId": null,
+      "pinnedAssetVersionId": null,
+      "intakeHash": null,
+      "acceptance": {
+        "webEvidenceReviewed": true,
+        "internalsReviewed": false,
+        "dependenciesVerified": false,
+        "downloaded": false,
+        "imported": false,
+        "studioTested": false,
+        "physicalDeviceTested": false,
+        "humanApproved": false
+      }
+    },
+    {
+      "candidateKey": "q-modular-ruins",
+      "name": "Ultimate Modular Ruins Pack",
+      "listedAuthor": "Quaternius",
+      "url": "https://quaternius.com/packs/ultimatemodularruins.html",
+      "category": "dungeon",
+      "sourceType": "PRIMARY_AUTHOR_SITE_CC0_FREE_PACK",
+      "checkedDate": "2026-10-12",
+      "freeAcquisition": true,
+      "freeEvidence": "Pack page offers free download and CC0 personal/commercial use; author FAQ confirms modification allowed.",
+      "rightsEvidence": {
+        "license": "CC0-1.0",
+        "licenseUrl": "https://creativecommons.org/publicdomain/zero/1.0/",
+        "authorPolicyUrl": "https://quaternius.com/faq.html",
+        "basis": "PACK_AND_AUTHOR_POLICY_WEB_PAGES_ONLY",
+        "exclusiveOwnership": false
+      },
+      "authorClaims": {
+        "contentCount": 90,
+        "countUnit": "models",
+        "advertisedFormats": [
+          "FBX",
+          "OBJ",
+          "Blend"
+        ],
+        "contents": "Modular ruins/dungeon props and animated character",
+        "limits": null
+      },
+      "runtimeAssetId": null,
+      "pinnedAssetVersionId": null,
+      "intakeHash": null,
+      "acceptance": {
+        "webEvidenceReviewed": true,
+        "internalsReviewed": false,
+        "dependenciesVerified": false,
+        "downloaded": false,
+        "imported": false,
+        "studioTested": false,
+        "physicalDeviceTested": false,
+        "humanApproved": false
+      }
+    },
+    {
+      "candidateKey": "q-modular-weapons",
+      "name": "Modular Weapons Pack",
+      "listedAuthor": "Quaternius",
+      "url": "https://quaternius.com/packs/medievalweapons.html",
+      "category": "gear",
+      "sourceType": "PRIMARY_AUTHOR_SITE_CC0_FREE_PACK",
+      "checkedDate": "2026-10-12",
+      "freeAcquisition": true,
+      "freeEvidence": "Pack page offers free download and CC0 personal/commercial use; author FAQ confirms modification allowed.",
+      "rightsEvidence": {
+        "license": "CC0-1.0",
+        "licenseUrl": "https://creativecommons.org/publicdomain/zero/1.0/",
+        "authorPolicyUrl": "https://quaternius.com/faq.html",
+        "basis": "PACK_AND_AUTHOR_POLICY_WEB_PAGES_ONLY",
+        "exclusiveOwnership": false
+      },
+      "authorClaims": {
+        "contentCount": 24,
+        "countUnit": "models",
+        "advertisedFormats": [
+          "FBX",
+          "OBJ",
+          "Blend"
+        ],
+        "contents": "Weapon geometry including swords, daggers, bows, shields, hammers",
+        "limits": null
+      },
+      "runtimeAssetId": null,
+      "pinnedAssetVersionId": null,
+      "intakeHash": null,
+      "acceptance": {
+        "webEvidenceReviewed": true,
+        "internalsReviewed": false,
+        "dependenciesVerified": false,
+        "downloaded": false,
+        "imported": false,
+        "studioTested": false,
+        "physicalDeviceTested": false,
+        "humanApproved": false
+      }
+    },
+    {
+      "candidateKey": "q-rpg",
+      "name": "Ultimate RPG Pack",
+      "listedAuthor": "Quaternius",
+      "url": "https://quaternius.com/packs/ultimaterpg.html",
+      "category": "items",
+      "sourceType": "PRIMARY_AUTHOR_SITE_CC0_FREE_PACK",
+      "checkedDate": "2026-10-12",
+      "freeAcquisition": true,
+      "freeEvidence": "Pack page offers free download and CC0 personal/commercial use; author FAQ confirms modification allowed.",
+      "rightsEvidence": {
+        "license": "CC0-1.0",
+        "licenseUrl": "https://creativecommons.org/publicdomain/zero/1.0/",
+        "authorPolicyUrl": "https://quaternius.com/faq.html",
+        "basis": "PACK_AND_AUTHOR_POLICY_WEB_PAGES_ONLY",
+        "exclusiveOwnership": false
+      },
+      "authorClaims": {
+        "contentCount": 106,
+        "countUnit": "models",
+        "advertisedFormats": [
+          "FBX",
+          "OBJ",
+          "Blend",
+          "PNG model renders"
+        ],
+        "contents": "Inventory/equipment/loot raw material; included renders need adaptation to edited models",
+        "limits": null
+      },
+      "runtimeAssetId": null,
+      "pinnedAssetVersionId": null,
+      "intakeHash": null,
+      "acceptance": {
+        "webEvidenceReviewed": true,
+        "internalsReviewed": false,
+        "dependenciesVerified": false,
+        "downloaded": false,
+        "imported": false,
+        "studioTested": false,
+        "physicalDeviceTested": false,
+        "humanApproved": false
+      }
+    },
+    {
+      "candidateKey": "q-monsters",
+      "name": "Ultimate Monsters",
+      "listedAuthor": "Quaternius",
+      "url": "https://quaternius.com/packs/ultimatemonsters.html",
+      "category": "monsters",
+      "sourceType": "PRIMARY_AUTHOR_SITE_CC0_FREE_PACK",
+      "checkedDate": "2026-10-12",
+      "freeAcquisition": true,
+      "freeEvidence": "Pack page offers free download and CC0 personal/commercial use; author FAQ confirms modification allowed.",
+      "rightsEvidence": {
+        "license": "CC0-1.0",
+        "licenseUrl": "https://creativecommons.org/publicdomain/zero/1.0/",
+        "authorPolicyUrl": "https://quaternius.com/faq.html",
+        "basis": "PACK_AND_AUTHOR_POLICY_WEB_PAGES_ONLY",
+        "exclusiveOwnership": false
+      },
+      "authorClaims": {
+        "contentCount": 50,
+        "countUnit": "animated monsters",
+        "advertisedFormats": [
+          "FBX",
+          "OBJ",
+          "Blend"
+        ],
+        "contents": "Animated enemy candidates; exact clip counts and rigs not inspected",
+        "limits": "Header also lists glTF; body lists FBX/OBJ/Blend. Actual archive formats unverified."
+      },
+      "runtimeAssetId": null,
+      "pinnedAssetVersionId": null,
+      "intakeHash": null,
+      "acceptance": {
+        "webEvidenceReviewed": true,
+        "internalsReviewed": false,
+        "dependenciesVerified": false,
+        "downloaded": false,
+        "imported": false,
+        "studioTested": false,
+        "physicalDeviceTested": false,
+        "humanApproved": false
+      }
+    },
+    {
+      "candidateKey": "q-animals",
+      "name": "Ultimate Animated Animal Pack",
+      "listedAuthor": "Quaternius",
+      "url": "https://quaternius.com/packs/ultimateanimatedanimals.html",
+      "category": "wildlife",
+      "sourceType": "PRIMARY_AUTHOR_SITE_CC0_FREE_PACK",
+      "checkedDate": "2026-10-12",
+      "freeAcquisition": true,
+      "freeEvidence": "Pack page offers free download and CC0 personal/commercial use; author FAQ confirms modification allowed.",
+      "rightsEvidence": {
+        "license": "CC0-1.0",
+        "licenseUrl": "https://creativecommons.org/publicdomain/zero/1.0/",
+        "authorPolicyUrl": "https://quaternius.com/faq.html",
+        "basis": "PACK_AND_AUTHOR_POLICY_WEB_PAGES_ONLY",
+        "exclusiveOwnership": false
+      },
+      "authorClaims": {
+        "contentCount": 12,
+        "countUnit": "animals",
+        "advertisedFormats": [
+          "FBX",
+          "OBJ",
+          "glTF",
+          "Blend"
+        ],
+        "contents": "Author advertises more than 12 animations per animal; wildlife raw material",
+        "limits": "No mount or passive-wildlife system inferred."
+      },
+      "runtimeAssetId": null,
+      "pinnedAssetVersionId": null,
+      "intakeHash": null,
+      "acceptance": {
+        "webEvidenceReviewed": true,
+        "internalsReviewed": false,
+        "dependenciesVerified": false,
+        "downloaded": false,
+        "imported": false,
+        "studioTested": false,
+        "physicalDeviceTested": false,
+        "humanApproved": false
+      }
+    },
+    {
+      "candidateKey": "q-food",
+      "name": "Ultimate Food Pack",
+      "listedAuthor": "Quaternius",
+      "url": "https://quaternius.com/packs/ultimatefood.html",
+      "category": "food",
+      "sourceType": "PRIMARY_AUTHOR_SITE_CC0_FREE_PACK",
+      "checkedDate": "2026-10-12",
+      "freeAcquisition": true,
+      "freeEvidence": "Pack page offers free download and CC0 personal/commercial use; author FAQ confirms modification allowed.",
+      "rightsEvidence": {
+        "license": "CC0-1.0",
+        "licenseUrl": "https://creativecommons.org/publicdomain/zero/1.0/",
+        "authorPolicyUrl": "https://quaternius.com/faq.html",
+        "basis": "PACK_AND_AUTHOR_POLICY_WEB_PAGES_ONLY",
+        "exclusiveOwnership": false
+      },
+      "authorClaims": {
+        "contentCount": 103,
+        "countUnit": "models",
+        "advertisedFormats": [
+          "FBX",
+          "OBJ",
+          "Blend"
+        ],
+        "contents": "Select fantasy-compatible food/ingredient props",
+        "limits": null
+      },
+      "runtimeAssetId": null,
+      "pinnedAssetVersionId": null,
+      "intakeHash": null,
+      "acceptance": {
+        "webEvidenceReviewed": true,
+        "internalsReviewed": false,
+        "dependenciesVerified": false,
+        "downloaded": false,
+        "imported": false,
+        "studioTested": false,
+        "physicalDeviceTested": false,
+        "humanApproved": false
+      }
+    },
+    {
+      "candidateKey": "q-crops",
+      "name": "Ultimate Crops Pack",
+      "listedAuthor": "Quaternius",
+      "url": "https://quaternius.com/packs/ultimatecrops.html",
+      "category": "gathering",
+      "sourceType": "PRIMARY_AUTHOR_SITE_CC0_FREE_PACK",
+      "checkedDate": "2026-10-12",
+      "freeAcquisition": true,
+      "freeEvidence": "Pack page offers free download and CC0 personal/commercial use; author FAQ confirms modification allowed.",
+      "rightsEvidence": {
+        "license": "CC0-1.0",
+        "licenseUrl": "https://creativecommons.org/publicdomain/zero/1.0/",
+        "authorPolicyUrl": "https://quaternius.com/faq.html",
+        "basis": "PACK_AND_AUTHOR_POLICY_WEB_PAGES_ONLY",
+        "exclusiveOwnership": false
+      },
+      "authorClaims": {
+        "contentCount": 102,
+        "countUnit": "models",
+        "advertisedFormats": [
+          "FBX",
+          "OBJ",
+          "Blend"
+        ],
+        "contents": "Crops represented through five growth stages",
+        "limits": "102 models across pack, not 102 crop species or proof of farming gameplay."
+      },
+      "runtimeAssetId": null,
+      "pinnedAssetVersionId": null,
+      "intakeHash": null,
+      "acceptance": {
+        "webEvidenceReviewed": true,
+        "internalsReviewed": false,
+        "dependenciesVerified": false,
+        "downloaded": false,
+        "imported": false,
+        "studioTested": false,
+        "physicalDeviceTested": false,
+        "humanApproved": false
+      }
+    },
+    {
+      "candidateKey": "k-fantasy-borders",
+      "name": "Fantasy UI Borders",
+      "listedAuthor": "Kenney",
+      "url": "https://kenney.nl/assets/fantasy-ui-borders",
+      "category": "ui",
+      "sourceType": "PRIMARY_AUTHOR_SITE_CC0_FREE_PACK",
+      "checkedDate": "2026-10-12",
+      "freeAcquisition": true,
+      "freeEvidence": "Asset page explicitly says free and offers Continue without donating. Paid bundles/tools optional and excluded.",
+      "rightsEvidence": {
+        "license": "CC0-1.0",
+        "licenseUrl": "https://creativecommons.org/publicdomain/zero/1.0/",
+        "authorPolicyUrl": "https://kenney.nl/support",
+        "basis": "PACK_AND_AUTHOR_POLICY_WEB_PAGES_ONLY",
+        "exclusiveOwnership": false
+      },
+      "authorClaims": {
+        "contentCount": 140,
+        "countUnit": "files",
+        "advertisedFormats": null,
+        "contents": "Sprite/tile-sheet panel art for native UI",
+        "limits": "Author itch page says 130+ sprites; exact archive extensions unverified."
+      },
+      "runtimeAssetId": null,
+      "pinnedAssetVersionId": null,
+      "intakeHash": null,
+      "acceptance": {
+        "webEvidenceReviewed": true,
+        "internalsReviewed": false,
+        "dependenciesVerified": false,
+        "downloaded": false,
+        "imported": false,
+        "studioTested": false,
+        "physicalDeviceTested": false,
+        "humanApproved": false
+      }
+    },
+    {
+      "candidateKey": "k-game-icons",
+      "name": "Game Icons",
+      "listedAuthor": "Kenney",
+      "url": "https://kenney.nl/assets/game-icons",
+      "category": "icons",
+      "sourceType": "PRIMARY_AUTHOR_SITE_CC0_FREE_PACK",
+      "checkedDate": "2026-10-12",
+      "freeAcquisition": true,
+      "freeEvidence": "Asset page explicitly says free and offers Continue without donating. Paid bundles/tools optional and excluded.",
+      "rightsEvidence": {
+        "license": "CC0-1.0",
+        "licenseUrl": "https://creativecommons.org/publicdomain/zero/1.0/",
+        "authorPolicyUrl": "https://kenney.nl/support",
+        "basis": "PACK_AND_AUTHOR_POLICY_WEB_PAGES_ONLY",
+        "exclusiveOwnership": false
+      },
+      "authorClaims": {
+        "contentCount": 105,
+        "countUnit": "files",
+        "advertisedFormats": null,
+        "contents": "General UI/control symbols",
+        "limits": "Not a verified illustrated spell-icon library."
+      },
+      "runtimeAssetId": null,
+      "pinnedAssetVersionId": null,
+      "intakeHash": null,
+      "acceptance": {
+        "webEvidenceReviewed": true,
+        "internalsReviewed": false,
+        "dependenciesVerified": false,
+        "downloaded": false,
+        "imported": false,
+        "studioTested": false,
+        "physicalDeviceTested": false,
+        "humanApproved": false
+      }
+    },
+    {
+      "candidateKey": "k-rpg-audio",
+      "name": "RPG Audio",
+      "listedAuthor": "Kenney",
+      "url": "https://kenney.nl/assets/rpg-audio",
+      "category": "audio",
+      "sourceType": "PRIMARY_AUTHOR_SITE_CC0_FREE_PACK",
+      "checkedDate": "2026-10-12",
+      "freeAcquisition": true,
+      "freeEvidence": "Asset page explicitly says free and offers Continue without donating. Paid bundles/tools optional and excluded.",
+      "rightsEvidence": {
+        "license": "CC0-1.0",
+        "licenseUrl": "https://creativecommons.org/publicdomain/zero/1.0/",
+        "authorPolicyUrl": "https://kenney.nl/support",
+        "basis": "PACK_AND_AUTHOR_POLICY_WEB_PAGES_ONLY",
+        "exclusiveOwnership": false
+      },
+      "authorClaims": {
+        "contentCount": 50,
+        "countUnit": "files",
+        "advertisedFormats": null,
+        "contents": "Foley, footsteps, weapon audio candidates",
+        "limits": "Codec, sample rates, durations and sound quality unverified."
+      },
+      "runtimeAssetId": null,
+      "pinnedAssetVersionId": null,
+      "intakeHash": null,
+      "acceptance": {
+        "webEvidenceReviewed": true,
+        "internalsReviewed": false,
+        "dependenciesVerified": false,
+        "downloaded": false,
+        "imported": false,
+        "studioTested": false,
+        "physicalDeviceTested": false,
+        "humanApproved": false
+      }
+    },
+    {
+      "candidateKey": "k-ui-audio",
+      "name": "UI Audio",
+      "listedAuthor": "Kenney",
+      "url": "https://kenney.nl/assets/ui-audio",
+      "category": "audio",
+      "sourceType": "PRIMARY_AUTHOR_SITE_CC0_FREE_PACK",
+      "checkedDate": "2026-10-12",
+      "freeAcquisition": true,
+      "freeEvidence": "Asset page explicitly says free and offers Continue without donating. Paid bundles/tools optional and excluded.",
+      "rightsEvidence": {
+        "license": "CC0-1.0",
+        "licenseUrl": "https://creativecommons.org/publicdomain/zero/1.0/",
+        "authorPolicyUrl": "https://kenney.nl/support",
+        "basis": "PACK_AND_AUTHOR_POLICY_WEB_PAGES_ONLY",
+        "exclusiveOwnership": false
+      },
+      "authorClaims": {
+        "contentCount": 50,
+        "countUnit": "files",
+        "advertisedFormats": null,
+        "contents": "Button/switch/click audio candidates",
+        "limits": "Codec, sample rates, durations and sound quality unverified."
+      },
+      "runtimeAssetId": null,
+      "pinnedAssetVersionId": null,
+      "intakeHash": null,
+      "acceptance": {
+        "webEvidenceReviewed": true,
+        "internalsReviewed": false,
+        "dependenciesVerified": false,
+        "downloaded": false,
+        "imported": false,
+        "studioTested": false,
+        "physicalDeviceTested": false,
+        "humanApproved": false
+      }
+    },
+    {
+      "candidateKey": "k-ui-rpg",
+      "name": "UI Pack (RPG Expansion)",
+      "listedAuthor": "Kenney",
+      "url": "https://kenney.nl/assets/ui-pack-rpg-expansion",
+      "category": "ui",
+      "sourceType": "PRIMARY_AUTHOR_SITE_CC0_FREE_PACK",
+      "checkedDate": "2026-10-12",
+      "freeAcquisition": true,
+      "freeEvidence": "Asset page explicitly says free and offers Continue without donating. Paid bundles/tools optional and excluded.",
+      "rightsEvidence": {
+        "license": "CC0-1.0",
+        "licenseUrl": "https://creativecommons.org/publicdomain/zero/1.0/",
+        "authorPolicyUrl": "https://kenney.nl/support",
+        "basis": "PACK_AND_AUTHOR_POLICY_WEB_PAGES_ONLY",
+        "exclusiveOwnership": false
+      },
+      "authorClaims": {
+        "contentCount": 85,
+        "countUnit": "files",
+        "advertisedFormats": null,
+        "contents": "RPG button/panel/slider art for native UI",
+        "limits": null
+      },
+      "runtimeAssetId": null,
+      "pinnedAssetVersionId": null,
+      "intakeHash": null,
+      "acceptance": {
+        "webEvidenceReviewed": true,
+        "internalsReviewed": false,
+        "dependenciesVerified": false,
+        "downloaded": false,
+        "imported": false,
+        "studioTested": false,
+        "physicalDeviceTested": false,
+        "humanApproved": false
+      }
+    },
+    {
+      "candidateKey": "k-fantasy-town",
+      "name": "Fantasy Town Kit",
+      "listedAuthor": "Kenney",
+      "url": "https://kenney.nl/assets/fantasy-town-kit",
+      "category": "world",
+      "sourceType": "PRIMARY_AUTHOR_SITE_CC0_FREE_PACK",
+      "checkedDate": "2026-10-12",
+      "freeAcquisition": true,
+      "freeEvidence": "Asset page explicitly says free and offers Continue without donating. Paid bundles/tools optional and excluded.",
+      "rightsEvidence": {
+        "license": "CC0-1.0",
+        "licenseUrl": "https://creativecommons.org/publicdomain/zero/1.0/",
+        "authorPolicyUrl": "https://kenney.nl/support",
+        "basis": "PACK_AND_AUTHOR_POLICY_WEB_PAGES_ONLY",
+        "exclusiveOwnership": false
+      },
+      "authorClaims": {
+        "contentCount": 160,
+        "countUnit": "files",
+        "advertisedFormats": null,
+        "contents": "3D building/wall variations",
+        "limits": "General import guide discusses formats; this archive not inspected."
+      },
+      "runtimeAssetId": null,
+      "pinnedAssetVersionId": null,
+      "intakeHash": null,
+      "acceptance": {
+        "webEvidenceReviewed": true,
+        "internalsReviewed": false,
+        "dependenciesVerified": false,
+        "downloaded": false,
+        "imported": false,
+        "studioTested": false,
+        "physicalDeviceTested": false,
+        "humanApproved": false
+      }
+    },
+    {
+      "candidateKey": "k-modular-dungeon",
+      "name": "Modular Dungeon Kit",
+      "listedAuthor": "Kenney",
+      "url": "https://kenney.nl/assets/modular-dungeon-kit",
+      "category": "dungeon",
+      "sourceType": "PRIMARY_AUTHOR_SITE_CC0_FREE_PACK",
+      "checkedDate": "2026-10-12",
+      "freeAcquisition": true,
+      "freeEvidence": "Asset page explicitly says free and offers Continue without donating. Paid bundles/tools optional and excluded.",
+      "rightsEvidence": {
+        "license": "CC0-1.0",
+        "licenseUrl": "https://creativecommons.org/publicdomain/zero/1.0/",
+        "authorPolicyUrl": "https://kenney.nl/support",
+        "basis": "PACK_AND_AUTHOR_POLICY_WEB_PAGES_ONLY",
+        "exclusiveOwnership": false
+      },
+      "authorClaims": {
+        "contentCount": 40,
+        "countUnit": "files",
+        "advertisedFormats": null,
+        "contents": "Dungeon kit; page marks animation and variations",
+        "limits": "Exact rigs, clips, formats and model counts unverified."
+      },
+      "runtimeAssetId": null,
+      "pinnedAssetVersionId": null,
+      "intakeHash": null,
+      "acceptance": {
+        "webEvidenceReviewed": true,
+        "internalsReviewed": false,
+        "dependenciesVerified": false,
+        "downloaded": false,
+        "imported": false,
+        "studioTested": false,
+        "physicalDeviceTested": false,
+        "humanApproved": false
+      }
+    },
+    {
+      "candidateKey": "k-music-jingles",
+      "name": "Music Jingles",
+      "listedAuthor": "Kenney",
+      "url": "https://kenney.nl/assets/music-jingles",
+      "category": "audio",
+      "sourceType": "PRIMARY_AUTHOR_SITE_CC0_FREE_PACK",
+      "checkedDate": "2026-10-12",
+      "freeAcquisition": true,
+      "freeEvidence": "Asset page explicitly says free and offers Continue without donating. Paid bundles/tools optional and excluded.",
+      "rightsEvidence": {
+        "license": "CC0-1.0",
+        "licenseUrl": "https://creativecommons.org/publicdomain/zero/1.0/",
+        "authorPolicyUrl": "https://kenney.nl/support",
+        "basis": "PACK_AND_AUTHOR_POLICY_WEB_PAGES_ONLY",
+        "exclusiveOwnership": false
+      },
+      "authorClaims": {
+        "contentCount": 85,
+        "countUnit": "files",
+        "advertisedFormats": null,
+        "contents": "Short musical feedback candidates",
+        "limits": "Not 85 full background scores or verified seamless loops."
+      },
+      "runtimeAssetId": null,
+      "pinnedAssetVersionId": null,
+      "intakeHash": null,
+      "acceptance": {
+        "webEvidenceReviewed": true,
+        "internalsReviewed": false,
+        "dependenciesVerified": false,
+        "downloaded": false,
+        "imported": false,
+        "studioTested": false,
+        "physicalDeviceTested": false,
+        "humanApproved": false
+      }
+    },
+    {
+      "candidateKey": "k-input-prompts",
+      "name": "Input Prompts",
+      "listedAuthor": "Kenney",
+      "url": "https://kenney.nl/assets/input-prompts",
+      "category": "input",
+      "sourceType": "PRIMARY_AUTHOR_SITE_CC0_FREE_PACK",
+      "checkedDate": "2026-10-12",
+      "freeAcquisition": true,
+      "freeEvidence": "Asset page explicitly says free and offers Continue without donating. Paid bundles/tools optional and excluded.",
+      "rightsEvidence": {
+        "license": "CC0-1.0",
+        "licenseUrl": "https://creativecommons.org/publicdomain/zero/1.0/",
+        "authorPolicyUrl": "https://kenney.nl/support",
+        "basis": "PACK_AND_AUTHOR_POLICY_WEB_PAGES_ONLY",
+        "exclusiveOwnership": false
+      },
+      "authorClaims": {
+        "contentCount": 1500,
+        "countUnit": "files",
+        "advertisedFormats": [
+          "PNG",
+          "SVG"
+        ],
+        "contents": "Keyboard/mouse/touch/generic control prompts",
+        "limits": "Image subset only; fonts excluded. Author guide states 64/128 bitmap sizes. No physical-device acceptance."
+      },
+      "runtimeAssetId": null,
+      "pinnedAssetVersionId": null,
+      "intakeHash": null,
+      "acceptance": {
+        "webEvidenceReviewed": true,
+        "internalsReviewed": false,
+        "dependenciesVerified": false,
+        "downloaded": false,
+        "imported": false,
+        "studioTested": false,
+        "physicalDeviceTested": false,
+        "humanApproved": false
+      }
+    },
+    {
+      "candidateKey": "k-fighter-voice",
+      "name": "Voiceover Pack (Fighter)",
+      "listedAuthor": "Kenney",
+      "url": "https://kenney.nl/assets/voiceover-pack-fighter",
+      "category": "voice",
+      "sourceType": "PRIMARY_AUTHOR_SITE_CC0_FREE_PACK",
+      "checkedDate": "2026-10-12",
+      "freeAcquisition": true,
+      "freeEvidence": "Asset page explicitly says free and offers Continue without donating. Paid bundles/tools optional and excluded.",
+      "rightsEvidence": {
+        "license": "CC0-1.0",
+        "licenseUrl": "https://creativecommons.org/publicdomain/zero/1.0/",
+        "authorPolicyUrl": "https://kenney.nl/support",
+        "basis": "PACK_AND_AUTHOR_POLICY_WEB_PAGES_ONLY",
+        "exclusiveOwnership": false
+      },
+      "authorClaims": {
+        "contentCount": 45,
+        "countUnit": "files",
+        "advertisedFormats": null,
+        "contents": "Combat vocal cue audition candidates",
+        "limits": "Language, phrases, emotional coverage, duration and raw codec unverified."
+      },
+      "runtimeAssetId": null,
+      "pinnedAssetVersionId": null,
+      "intakeHash": null,
+      "acceptance": {
+        "webEvidenceReviewed": true,
+        "internalsReviewed": false,
+        "dependenciesVerified": false,
+        "downloaded": false,
+        "imported": false,
+        "studioTested": false,
+        "physicalDeviceTested": false,
+        "humanApproved": false
+      }
+    }
+  ],
+  "priorRestrictedAnimationPacks": [
+    {
+      "url": "https://cinderlore.com/products/r15-combat-starter-motions",
+      "name": "R15 Combat Starter Motions",
+      "listedAuthor": "Cinderlore Studios",
+      "sourceType": "PRIMARY_AUTHOR_WEBSITE_OUTSIDE_CREATOR_STORE",
+      "checkedDate": "2026-10-12",
+      "freeEvidence": "Product page states Free; no payment or signup required.",
+      "advertisedVersion": "1.0.1",
+      "authorClaims": {
+        "clipCount": 7,
+        "fileSizeBytes": 172155,
+        "format": ".rbxm KeyframeSequence",
+        "rig": "R15",
+        "contents": "punch, guard and hit reaction"
+      },
+      "license": {
+        "url": "https://cinderlore.com/license",
+        "version": "1.0",
+        "effectiveDate": "2026-09-06",
+        "summary": "Permits commercial Roblox games, editing, own/group uploads and private team use without credit. No standalone file/public repository/pack/template redistribution, reusable ID library or deployment in non-Roblox games. Applies to four specified free packs only.",
+        "acceptedByUser": false
+      },
+      "runtimeAssetId": null,
+      "pinnedAssetVersionId": null,
+      "intakeHash": null,
+      "acceptance": {
+        "productAndLicensePagesRead": true,
+        "internalsReviewed": false,
+        "rightsCleared": false,
+        "downloaded": false,
+        "imported": false,
+        "studioTested": false,
+        "physicalDeviceTested": false,
+        "humanApproved": false
+      }
+    },
+    {
+      "url": "https://cinderlore.com/products/r15-npc-interaction-sampler",
+      "name": "R15 NPC Interaction Sampler",
+      "listedAuthor": "Cinderlore Studios",
+      "sourceType": "PRIMARY_AUTHOR_WEBSITE_OUTSIDE_CREATOR_STORE",
+      "checkedDate": "2026-10-12",
+      "freeEvidence": "Product page states Free; no payment or signup required.",
+      "advertisedVersion": "1.0.1",
+      "authorClaims": {
+        "clipCount": 6,
+        "fileSizeBytes": 409863,
+        "format": ".rbxm KeyframeSequence",
+        "rig": "R15",
+        "contents": "bow, head shake, pocket pickup, point, think and wave"
+      },
+      "license": {
+        "url": "https://cinderlore.com/license",
+        "version": "1.0",
+        "effectiveDate": "2026-09-06",
+        "summary": "Permits commercial Roblox games, editing, own/group uploads and private team use without credit. No standalone file/public repository/pack/template redistribution, reusable ID library or deployment in non-Roblox games. Applies to four specified free packs only.",
+        "acceptedByUser": false
+      },
+      "runtimeAssetId": null,
+      "pinnedAssetVersionId": null,
+      "intakeHash": null,
+      "acceptance": {
+        "productAndLicensePagesRead": true,
+        "internalsReviewed": false,
+        "rightsCleared": false,
+        "downloaded": false,
+        "imported": false,
+        "studioTested": false,
+        "physicalDeviceTested": false,
+        "humanApproved": false
+      }
+    },
+    {
+      "url": "https://cinderlore.com/products/r15-movement-dash-sampler",
+      "name": "R15 Movement & Dash Sampler",
+      "listedAuthor": "Cinderlore Studios",
+      "sourceType": "PRIMARY_AUTHOR_WEBSITE_OUTSIDE_CREATOR_STORE",
+      "checkedDate": "2026-10-12",
+      "freeEvidence": "Product page states Free; no payment or signup required.",
+      "advertisedVersion": "1.0.1",
+      "authorClaims": {
+        "clipCount": 6,
+        "fileSizeBytes": 115392,
+        "format": ".rbxm KeyframeSequence",
+        "rig": "R15",
+        "contents": "four directional dashes, two-handed vault and wall jump"
+      },
+      "license": {
+        "url": "https://cinderlore.com/license",
+        "version": "1.0",
+        "effectiveDate": "2026-09-06",
+        "summary": "Permits commercial Roblox games, editing, own/group uploads and private team use without credit. No standalone file/public repository/pack/template redistribution, reusable ID library or deployment in non-Roblox games. Applies to four specified free packs only.",
+        "acceptedByUser": false
+      },
+      "runtimeAssetId": null,
+      "pinnedAssetVersionId": null,
+      "intakeHash": null,
+      "acceptance": {
+        "productAndLicensePagesRead": true,
+        "internalsReviewed": false,
+        "rightsCleared": false,
+        "downloaded": false,
+        "imported": false,
+        "studioTested": false,
+        "physicalDeviceTested": false,
+        "humanApproved": false
+      }
+    },
+    {
+      "url": "https://cinderlore.com/products/r15-fishing-life-skill-sampler",
+      "name": "R15 Fishing & Life-Skill Sampler",
+      "listedAuthor": "Cinderlore Studios",
+      "sourceType": "PRIMARY_AUTHOR_WEBSITE_OUTSIDE_CREATOR_STORE",
+      "checkedDate": "2026-10-12",
+      "freeEvidence": "Product page states Free; no payment or signup required.",
+      "advertisedVersion": "1.0.1",
+      "authorClaims": {
+        "clipCount": 6,
+        "fileSizeBytes": 636188,
+        "format": ".rbxm KeyframeSequence",
+        "rig": "R15",
+        "contents": "fishing windup/hold/release/wait, sickle and watering loops"
+      },
+      "license": {
+        "url": "https://cinderlore.com/license",
+        "version": "1.0",
+        "effectiveDate": "2026-09-06",
+        "summary": "Permits commercial Roblox games, editing, own/group uploads and private team use without credit. No standalone file/public repository/pack/template redistribution, reusable ID library or deployment in non-Roblox games. Applies to four specified free packs only.",
+        "acceptedByUser": false
+      },
+      "runtimeAssetId": null,
+      "pinnedAssetVersionId": null,
+      "intakeHash": null,
+      "acceptance": {
+        "productAndLicensePagesRead": true,
+        "internalsReviewed": false,
+        "rightsCleared": false,
+        "downloaded": false,
+        "imported": false,
+        "studioTested": false,
+        "physicalDeviceTested": false,
+        "humanApproved": false
+      }
+    }
+  ],
+  "coverage": [
+    {
+      "area": "player_hero_bodies",
+      "existingSystem": "Use existing original Human/Elf/Orc/Dwarf modular appearance contract",
+      "sourcePaths": [
+        "src/server/Services/CharacterAppearance/AppearanceAssetRegistry.luau"
+      ],
+      "candidateRefs": [],
+      "limits": "No free modular armor/body pack accepted; body/cage/per-preset fit pending."
+    },
+    {
+      "area": "gear_inventory",
+      "existingSystem": "Existing ItemVisuals / WeaponVisuals / WardrobeVisuals",
+      "sourcePaths": [
+        "src/server/Services/HeroRig.luau",
+        "src/server/Services/WardrobeVisuals.luau"
+      ],
+      "candidateRefs": [
+        "q-rpg",
+        "q-modular-weapons",
+        "store:5441932362"
+      ],
+      "limits": "Map canonical item IDs, Grip/Shaft and equipped/preview views; no stat/economy changes from models."
+    },
+    {
+      "area": "enemies_wildlife",
+      "existingSystem": "Existing AdventureEnemyKit / AdventureCombatBridge / EnemyArticulation",
+      "sourcePaths": [
+        "src/server/Services/AdventureCombatBridge.luau"
+      ],
+      "candidateRefs": [
+        "q-monsters",
+        "q-animals",
+        "store:3381058398",
+        "store:3924238625"
+      ],
+      "limits": "Custom skeletons and six-joint carriers require adapter work; mounts and passive wildlife behavior not present."
+    },
+    {
+      "area": "town_guild_furniture",
+      "existingSystem": "Existing city architecture, FurnitureWorld, GuildHallWorld",
+      "sourcePaths": [
+        "src/server/Services/WorldService.luau",
+        "src/server/Services/FurnitureWorld.luau",
+        "src/server/Services/GuildHallWorld.luau"
+      ],
+      "candidateRefs": [
+        "q-medieval-village",
+        "k-fantasy-town",
+        "store:16263631766"
+      ],
+      "limits": "Retain footprint/collision/routes/prompts/permissions; no furniture catalog replacement."
+    },
+    {
+      "area": "nature_resources",
+      "existingSystem": "RegionalWorld and ExpansionWorld resource visual hooks",
+      "sourcePaths": [
+        "src/server/Services/RegionalWorld.luau",
+        "src/server/Services/ExpansionWorld.luau"
+      ],
+      "candidateRefs": [
+        "q-crops",
+        "store:6933438443",
+        "store:11861768348",
+        "store:73613290042723"
+      ],
+      "limits": "Resource shells preserve node ID, gathering command, cooldown and rewards; growth/farming is proposed only."
+    },
+    {
+      "area": "crafting_alchemy",
+      "existingSystem": "Existing recipes, CraftItem, CityInteriorKit alchemy scene",
+      "sourcePaths": [
+        "src/server/Services/ExpansionService.luau",
+        "src/server/Services/CityInteriorKit.luau"
+      ],
+      "candidateRefs": [
+        "q-rpg",
+        "store:10971861418",
+        "store:11289365085"
+      ],
+      "limits": "Bench/cauldron/anvil visuals; no new recipe or consume effects inferred."
+    },
+    {
+      "area": "food_consumables",
+      "existingSystem": "Existing shared-meal narrative and decorative props",
+      "sourcePaths": [
+        "src/server/Config/Content.luau",
+        "src/server/Services/DispatchService.luau"
+      ],
+      "candidateRefs": [
+        "q-food",
+        "store:5056649208"
+      ],
+      "limits": "General food/buff and HP/mana drink consumption not verified; Elixir remains hero revival counter."
+    },
+    {
+      "area": "dungeons_loot",
+      "existingSystem": "Existing mine/tower/archive art and server marker/state split",
+      "sourcePaths": [
+        "src/server/Services/TowerWorld.luau"
+      ],
+      "candidateRefs": [
+        "q-modular-ruins",
+        "k-modular-dungeon",
+        "store:2496756132",
+        "store:13114054675",
+        "store:87891139"
+      ],
+      "limits": "Lever/gate/chest shells cannot independently unlock or grant loot."
+    },
+    {
+      "area": "vfx_skills",
+      "existingSystem": "Existing SkillEffects/ActionPose resolver",
+      "sourcePaths": [
+        "src/client/Controllers/SkillEffects.luau"
+      ],
+      "candidateRefs": [
+        "store:14375826814",
+        "store:9088469378",
+        "store:13595118497"
+      ],
+      "limits": "Poison/DoT and skill-book unlock are not implemented by presentation assets."
+    },
+    {
+      "area": "animation",
+      "existingSystem": "Existing procedural player/hero/NPC pose ownership",
+      "sourcePaths": [
+        "src/client/Controllers/PlayerCombatController.luau",
+        "src/client/Controllers/HeroAnimator.luau"
+      ],
+      "candidateRefs": [
+        "https://cinderlore.com/products/r15-npc-interaction-sampler",
+        "https://cinderlore.com/products/r15-fishing-life-skill-sampler"
+      ],
+      "limits": "No verified eat/drink/read-book/spell-cast clips; actual permission/playback and rig fit pending."
+    },
+    {
+      "area": "ui_icons_controls",
+      "existingSystem": "Native UI symbols, AssetImage and input layouts",
+      "sourcePaths": [
+        "src/client/UI/AssetImage.luau",
+        "src/client/UI/SymbolIcon.luau"
+      ],
+      "candidateRefs": [
+        "k-fantasy-borders",
+        "k-ui-rpg",
+        "k-game-icons",
+        "k-input-prompts"
+      ],
+      "limits": "Keep live TH/EN text native; no font distribution; slices/alpha/small-size review pending."
+    },
+    {
+      "area": "audio_voice_music",
+      "existingSystem": "AudioConfig/MusicConfig with currently empty bindings",
+      "sourcePaths": [
+        "src/shared/Config/AudioConfig.luau",
+        "src/shared/Config/MusicConfig.luau"
+      ],
+      "candidateRefs": [
+        "k-rpg-audio",
+        "k-ui-audio",
+        "k-music-jingles",
+        "k-fighter-voice"
+      ],
+      "limits": "No audition or upload. Jingles are not full scores; voice language unknown. Original city music sources remain."
+    },
+    {
+      "area": "books_quests",
+      "existingSystem": "Existing Bookbinder, guild_bookcase and native skill/journal navigation",
+      "sourcePaths": [
+        "src/shared/Presentation/FurnitureKit.luau"
+      ],
+      "candidateRefs": [
+        "store:2702822393",
+        "store:13794493103",
+        "store:13555696157"
+      ],
+      "limits": "Adapt covers and props; quest text/lore/skill unlock server contracts remain original."
+    }
+  ],
+  "optionalFreeSubsets": [
+    {
+      "url": "https://quaternius.com/packs/medievalvillagemegakit.html",
+      "name": "Medieval Village MegaKit Standard",
+      "license": "CC0-1.0",
+      "authorSaysFreePercent": "60–70%",
+      "freeModelCount": null,
+      "fullAdvertisedCount": 304,
+      "countScope": "ENTIRE_MULTI_TIER_PACK_NOT_ALL_FREE",
+      "excludedTiers": [
+        "Pro",
+        "Source"
+      ],
+      "status": "FREE_SUBSET_CONTENTS_UNVERIFIED_NOT_IN_CORE_CATALOG"
+    },
+    {
+      "url": "https://quaternius.com/packs/fantasypropsmegakit.html",
+      "name": "Fantasy Props MegaKit Standard",
+      "license": "CC0-1.0",
+      "authorSaysFreePercent": "60–70%",
+      "freeModelCount": null,
+      "fullAdvertisedCount": 211,
+      "countScope": "ENTIRE_MULTI_TIER_PACK_NOT_ALL_FREE",
+      "excludedTiers": [
+        "Pro",
+        "Source"
+      ],
+      "status": "FREE_SUBSET_CONTENTS_UNVERIFIED_NOT_IN_CORE_CATALOG"
+    }
+  ],
+  "excluded": [
+    "Paid All-in-1 Kenney bundle and Asset Forge/Shape tools; optional, not required for free individual packs.",
+    "Quaternius Pro/Source tiers, paid creature/chest packs, anime/franchise/competitor reuploads.",
+    "Input Prompts fonts; image subset only under project no-font-distribution rule."
+  ],
+  "adoptionOrder": [
+    "Audition/map original and CC0 audio to existing cue contracts",
+    "Foliage/rocks/resource shells",
+    "Workstation/furniture/room detail",
+    "Dungeon mechanism visual shells",
+    "Gear variants under existing IDs",
+    "Monster/wildlife rig adapters after fit and motion review"
+  ],
+  "artDirection": {
+    "source": "production/ART_BIBLE.md",
+    "palette": [
+      "Navy/Obsidian",
+      "Brass/Gold",
+      "Ivory",
+      "Burgundy",
+      "Subtle cyan"
+    ],
+    "method": [
+      "Select a consistent primary 3D family instead of mixing every pack",
+      "Change silhouettes/proportions/materials and original crest/details",
+      "Keep anatomy, clothing modularity and gameplay proxies",
+      "Re-render icons from edited geometry",
+      "Author matching VFX/SFX timing and original lore"
+    ],
+    "exclusiveClaim": false
+  },
+  "sources": [
+    {
+      "url": "https://quaternius.com/faq.html",
+      "checkedDate": "2026-10-12",
+      "fact": "Author permits free commercial use, modification/combinations and optional credit; inspect individual pack tier."
+    },
+    {
+      "url": "https://kenney.nl/support",
+      "checkedDate": "2026-10-12",
+      "fact": "CC0 asset pages; commercial use and optional credit; Kenney logo reserved."
+    },
+    {
+      "url": "https://creativecommons.org/publicdomain/zero/1.0/",
+      "checkedDate": "2026-10-12",
+      "fact": "CC0 permits modification/commercial copying; no exclusivity or trademark/publicity clearance inferred."
+    },
+    {
+      "url": "https://kenney.nl/knowledge-base/game-assets-2d/using-input-prompts",
+      "checkedDate": "2026-10-12",
+      "fact": "Input prompt images provided as PNG/SVG, bitmap64/128."
+    },
+    {
+      "url": "https://create.roblox.com/docs/resources/npc-kit",
+      "checkedDate": "2026-10-12",
+      "fact": "Official NPC kit customizable; Drooling Zombie uses Rthro; animations depend on rig Motor6D naming."
+    },
+    {
+      "url": "https://create.roblox.com/docs/resources/limited-use-license",
+      "checkedDate": "2026-10-12",
+      "fact": "Roblox platform purpose, notices and dependency conditions; no ownership grant."
+    },
+    {
+      "url": "https://create.roblox.com/docs/audio/assets",
+      "checkedDate": "2026-10-12",
+      "fact": "Audio rights, formats and usage permissions; currently documented monthly free import quotas do not mean blanket unlimited upload."
+    },
+    {
+      "url": "https://create.roblox.com/docs/avatar/character-bodies/import",
+      "checkedDate": "2026-10-12",
+      "fact": "Character import preview does not prove avatar-ready specifications or game fit."
+    }
+  ],
+  "pending": [
+    "File/version/hash/provenance intake",
+    "Dependency and script review",
+    "Real geometry/texture/audio budgets",
+    "Rig/body/clothing/preset compatibility",
+    "Roblox import and universe permissions",
+    "Studio and physical-device tests",
+    "Human art/UAT acceptance"
+  ]
+}
+

@@ -1,0 +1,487 @@
+{
+  "schemaVersion": 1,
+  "title": "Guildborne free Creator Store research",
+  "reviewDate": "2026-10-12",
+  "timezone": "Asia/Bangkok",
+  "status": "RESEARCH_REVIEW_CANDIDATE",
+  "scope": "FREE_ONLY_LISTING_RESEARCH",
+  "sourceHead": "4cc9a8232e0fd9ae7bf517983c274e800e8ad4a4",
+  "sourceCheckout": "DIRTY_EXISTING_CHARACTER_WORK",
+  "notes": [
+    "All 13 listings inspected in live browser: Get Model, creator, Description and Technical Details.",
+    "Counts describe entire listed asset, not individual selected models or benchmark results.",
+    "Null script counts mean not displayed, not proven script-free.",
+    "No Get Model acquisition, internal model inspection, download, import, Studio run, publishing, spending or runtime-ID registration occurred.",
+    "Additional paid dependencies, internal provenance and runtime permission checks remain pending."
+  ],
+  "candidates": [
+    {
+      "candidateStoreAssetId": "6933438443",
+      "url": "https://create.roblox.com/store/asset/6933438443",
+      "name": "Synty Nature Pack",
+      "listedCreator": "Roblox",
+      "priority": "P1",
+      "proposedUse": "nature/island visual variants",
+      "listing": {
+        "checkedDate": "2026-10-12",
+        "method": "LIVE_BROWSER_DESCRIPTION_AND_TECHNICAL_DETAILS",
+        "acquisitionSignal": "Get Model",
+        "freeAcquisition": true,
+        "lastUpdated": "2021-06-11"
+      },
+      "technicalDetails": {
+        "scope": "WHOLE_LISTED_ASSET",
+        "triangles": 108816,
+        "vertices": 140065,
+        "meshPartCount": 200,
+        "scriptCount": null
+      },
+      "rightsEvidence": "Listing states these Synty packs licensed for use in any Roblox game. No off-platform redistribution license inferred.",
+      "runtimeAssetId": null,
+      "pinnedAssetVersionId": null,
+      "intakeHash": null,
+      "acceptance": {
+        "listingVerified": true,
+        "internalsReviewed": false,
+        "dependenciesVerified": false,
+        "downloaded": false,
+        "imported": false,
+        "studioTested": false,
+        "physicalDeviceTested": false,
+        "humanApproved": false
+      }
+    },
+    {
+      "candidateStoreAssetId": "6934021345",
+      "url": "https://create.roblox.com/store/asset/6934021345",
+      "name": "Synty Dungeon Pack: Cave & Castle Interiors",
+      "listedCreator": "Roblox",
+      "priority": "P1",
+      "proposedUse": "cave/castle visual shells",
+      "listing": {
+        "checkedDate": "2026-10-12",
+        "method": "LIVE_BROWSER_DESCRIPTION_AND_TECHNICAL_DETAILS",
+        "acquisitionSignal": "Get Model",
+        "freeAcquisition": true,
+        "lastUpdated": "2021-06-11"
+      },
+      "technicalDetails": {
+        "scope": "WHOLE_LISTED_ASSET",
+        "triangles": 162088,
+        "vertices": 267219,
+        "meshPartCount": 271,
+        "scriptCount": null
+      },
+      "rightsEvidence": "Listing states these Synty packs licensed for use in any Roblox game. No off-platform redistribution license inferred.",
+      "runtimeAssetId": null,
+      "pinnedAssetVersionId": null,
+      "intakeHash": null,
+      "acceptance": {
+        "listingVerified": true,
+        "internalsReviewed": false,
+        "dependenciesVerified": false,
+        "downloaded": false,
+        "imported": false,
+        "studioTested": false,
+        "physicalDeviceTested": false,
+        "humanApproved": false
+      }
+    },
+    {
+      "candidateStoreAssetId": "6933905899",
+      "url": "https://create.roblox.com/store/asset/6933905899",
+      "name": "Synty Dungeon Pack: Basement & Goblin Camp",
+      "listedCreator": "Roblox",
+      "priority": "P1",
+      "proposedUse": "camp/basement/mine set dressing",
+      "listing": {
+        "checkedDate": "2026-10-12",
+        "method": "LIVE_BROWSER_DESCRIPTION_AND_TECHNICAL_DETAILS",
+        "acquisitionSignal": "Get Model",
+        "freeAcquisition": true,
+        "lastUpdated": "2021-06-11"
+      },
+      "technicalDetails": {
+        "scope": "WHOLE_LISTED_ASSET",
+        "triangles": 102885,
+        "vertices": 154438,
+        "meshPartCount": 179,
+        "scriptCount": null
+      },
+      "rightsEvidence": "Listing states these Synty packs licensed for use in any Roblox game. No off-platform redistribution license inferred.",
+      "runtimeAssetId": null,
+      "pinnedAssetVersionId": null,
+      "intakeHash": null,
+      "acceptance": {
+        "listingVerified": true,
+        "internalsReviewed": false,
+        "dependenciesVerified": false,
+        "downloaded": false,
+        "imported": false,
+        "studioTested": false,
+        "physicalDeviceTested": false,
+        "humanApproved": false
+      }
+    },
+    {
+      "candidateStoreAssetId": "6933790012",
+      "url": "https://create.roblox.com/store/asset/6933790012",
+      "name": "Synty Dungeon Pack: Weapons & Props",
+      "listedCreator": "Roblox",
+      "priority": "P2",
+      "proposedUse": "equipment and prop visual candidates",
+      "listing": {
+        "checkedDate": "2026-10-12",
+        "method": "LIVE_BROWSER_DESCRIPTION_AND_TECHNICAL_DETAILS",
+        "acquisitionSignal": "Get Model",
+        "freeAcquisition": true,
+        "lastUpdated": "2021-06-11"
+      },
+      "technicalDetails": {
+        "scope": "WHOLE_LISTED_ASSET",
+        "triangles": 141121,
+        "vertices": 207716,
+        "meshPartCount": 234,
+        "scriptCount": null
+      },
+      "rightsEvidence": "Listing states these Synty packs licensed for use in any Roblox game. No off-platform redistribution license inferred.",
+      "runtimeAssetId": null,
+      "pinnedAssetVersionId": null,
+      "intakeHash": null,
+      "acceptance": {
+        "listingVerified": true,
+        "internalsReviewed": false,
+        "dependenciesVerified": false,
+        "downloaded": false,
+        "imported": false,
+        "studioTested": false,
+        "physicalDeviceTested": false,
+        "humanApproved": false
+      }
+    },
+    {
+      "candidateStoreAssetId": "6934081776",
+      "url": "https://create.roblox.com/store/asset/6934081776",
+      "name": "Synty Dungeon Pack: Skeletons & Bones",
+      "listedCreator": "Roblox",
+      "priority": "P2",
+      "proposedUse": "bones/ruins props; rigs unverified",
+      "listing": {
+        "checkedDate": "2026-10-12",
+        "method": "LIVE_BROWSER_DESCRIPTION_AND_TECHNICAL_DETAILS",
+        "acquisitionSignal": "Get Model",
+        "freeAcquisition": true,
+        "lastUpdated": "2021-06-11"
+      },
+      "technicalDetails": {
+        "scope": "WHOLE_LISTED_ASSET",
+        "triangles": 72801,
+        "vertices": 104075,
+        "meshPartCount": 50,
+        "scriptCount": null
+      },
+      "rightsEvidence": "Listing states these Synty packs licensed for use in any Roblox game. No off-platform redistribution license inferred.",
+      "runtimeAssetId": null,
+      "pinnedAssetVersionId": null,
+      "intakeHash": null,
+      "acceptance": {
+        "listingVerified": true,
+        "internalsReviewed": false,
+        "dependenciesVerified": false,
+        "downloaded": false,
+        "imported": false,
+        "studioTested": false,
+        "physicalDeviceTested": false,
+        "humanApproved": false
+      }
+    },
+    {
+      "candidateStoreAssetId": "466438261",
+      "url": "https://create.roblox.com/store/asset/466438261",
+      "name": "Arched Stone Bridge",
+      "listedCreator": "EndorsedModel",
+      "priority": "P1",
+      "proposedUse": "bridge visual and route prototype",
+      "listing": {
+        "checkedDate": "2026-10-12",
+        "method": "LIVE_BROWSER_DESCRIPTION_AND_TECHNICAL_DETAILS",
+        "acquisitionSignal": "Get Model",
+        "freeAcquisition": true,
+        "lastUpdated": "2016-10-04"
+      },
+      "technicalDetails": {
+        "scope": "WHOLE_LISTED_ASSET",
+        "triangles": 708,
+        "vertices": 1416,
+        "meshPartCount": null,
+        "scriptCount": null
+      },
+      "rightsEvidence": "Creator Store listing and general Roblox terms; internal provenance and dependency rights unreviewed.",
+      "runtimeAssetId": null,
+      "pinnedAssetVersionId": null,
+      "intakeHash": null,
+      "acceptance": {
+        "listingVerified": true,
+        "internalsReviewed": false,
+        "dependenciesVerified": false,
+        "downloaded": false,
+        "imported": false,
+        "studioTested": false,
+        "physicalDeviceTested": false,
+        "humanApproved": false
+      }
+    },
+    {
+      "candidateStoreAssetId": "14798688821",
+      "url": "https://create.roblox.com/store/asset/14798688821",
+      "name": "Medieval prop pack",
+      "listedCreator": "Sanguophage",
+      "priority": "P2",
+      "proposedUse": "community prop candidates; contents unverified",
+      "listing": {
+        "checkedDate": "2026-10-12",
+        "method": "LIVE_BROWSER_DESCRIPTION_AND_TECHNICAL_DETAILS",
+        "acquisitionSignal": "Get Model",
+        "freeAcquisition": true,
+        "lastUpdated": "2023-09-17"
+      },
+      "technicalDetails": {
+        "scope": "WHOLE_LISTED_ASSET",
+        "triangles": 57733,
+        "vertices": 60933,
+        "meshPartCount": 102,
+        "scriptCount": null
+      },
+      "rightsEvidence": "Creator Store listing and general Roblox terms; internal provenance and dependency rights unreviewed.",
+      "runtimeAssetId": null,
+      "pinnedAssetVersionId": null,
+      "intakeHash": null,
+      "acceptance": {
+        "listingVerified": true,
+        "internalsReviewed": false,
+        "dependenciesVerified": false,
+        "downloaded": false,
+        "imported": false,
+        "studioTested": false,
+        "physicalDeviceTested": false,
+        "humanApproved": false
+      }
+    },
+    {
+      "candidateStoreAssetId": "13595063828",
+      "url": "https://create.roblox.com/store/asset/13595063828",
+      "name": "Play Smoke Puff",
+      "listedCreator": "Roblox Code Samples",
+      "priority": "P2",
+      "proposedUse": "smoke burst presentation example",
+      "listing": {
+        "checkedDate": "2026-10-12",
+        "method": "LIVE_BROWSER_DESCRIPTION_AND_TECHNICAL_DETAILS",
+        "acquisitionSignal": "Get Model",
+        "freeAcquisition": true,
+        "lastUpdated": "2023-06-21"
+      },
+      "technicalDetails": {
+        "scope": "WHOLE_LISTED_ASSET",
+        "triangles": 36,
+        "vertices": 72,
+        "meshPartCount": null,
+        "scriptCount": 1
+      },
+      "rightsEvidence": "Creator Store listing and general Roblox terms; internal provenance and dependency rights unreviewed.",
+      "runtimeAssetId": null,
+      "pinnedAssetVersionId": null,
+      "intakeHash": null,
+      "acceptance": {
+        "listingVerified": true,
+        "internalsReviewed": false,
+        "dependenciesVerified": false,
+        "downloaded": false,
+        "imported": false,
+        "studioTested": false,
+        "physicalDeviceTested": false,
+        "humanApproved": false
+      }
+    },
+    {
+      "candidateStoreAssetId": "241587286",
+      "url": "https://create.roblox.com/store/asset/241587286",
+      "name": "Particle Emitter Pack - fire, smoke, sparkles",
+      "listedCreator": "Wonuf",
+      "priority": "P3",
+      "proposedUse": "emitter configuration reference",
+      "listing": {
+        "checkedDate": "2026-10-12",
+        "method": "LIVE_BROWSER_DESCRIPTION_AND_TECHNICAL_DETAILS",
+        "acquisitionSignal": "Get Model",
+        "freeAcquisition": true,
+        "lastUpdated": "2015-04-25"
+      },
+      "technicalDetails": {
+        "scope": "WHOLE_LISTED_ASSET",
+        "triangles": 36,
+        "vertices": 72,
+        "meshPartCount": null,
+        "scriptCount": null
+      },
+      "rightsEvidence": "Creator Store listing and general Roblox terms; internal provenance and dependency rights unreviewed.",
+      "runtimeAssetId": null,
+      "pinnedAssetVersionId": null,
+      "intakeHash": null,
+      "acceptance": {
+        "listingVerified": true,
+        "internalsReviewed": false,
+        "dependenciesVerified": false,
+        "downloaded": false,
+        "imported": false,
+        "studioTested": false,
+        "physicalDeviceTested": false,
+        "humanApproved": false
+      }
+    },
+    {
+      "candidateStoreAssetId": "6432306802",
+      "url": "https://create.roblox.com/store/asset/6432306802",
+      "name": "Forest Pack",
+      "listedCreator": "Roblox",
+      "priority": "P2",
+      "proposedUse": "selective nature/wildlife; style and alpha audit",
+      "listing": {
+        "checkedDate": "2026-10-12",
+        "method": "LIVE_BROWSER_DESCRIPTION_AND_TECHNICAL_DETAILS",
+        "acquisitionSignal": "Get Model",
+        "freeAcquisition": true,
+        "lastUpdated": "2021-09-28"
+      },
+      "technicalDetails": {
+        "scope": "WHOLE_LISTED_ASSET",
+        "triangles": 153252,
+        "vertices": 149690,
+        "meshPartCount": 83,
+        "scriptCount": 13
+      },
+      "rightsEvidence": "Creator Store listing and general Roblox terms; internal provenance and dependency rights unreviewed.",
+      "runtimeAssetId": null,
+      "pinnedAssetVersionId": null,
+      "intakeHash": null,
+      "acceptance": {
+        "listingVerified": true,
+        "internalsReviewed": false,
+        "dependenciesVerified": false,
+        "downloaded": false,
+        "imported": false,
+        "studioTested": false,
+        "physicalDeviceTested": false,
+        "humanApproved": false
+      }
+    },
+    {
+      "candidateStoreAssetId": "15239103896",
+      "url": "https://create.roblox.com/store/asset/15239103896",
+      "name": "Medieval Low Poly Kit",
+      "listedCreator": "Scotti925",
+      "priority": "P3",
+      "proposedUse": "alternative village/environment kit",
+      "listing": {
+        "checkedDate": "2026-10-12",
+        "method": "LIVE_BROWSER_DESCRIPTION_AND_TECHNICAL_DETAILS",
+        "acquisitionSignal": "Get Model",
+        "freeAcquisition": true,
+        "lastUpdated": "2023-12-02"
+      },
+      "technicalDetails": {
+        "scope": "WHOLE_LISTED_ASSET",
+        "triangles": 140927,
+        "vertices": 221031,
+        "meshPartCount": 163,
+        "scriptCount": null
+      },
+      "rightsEvidence": "Creator Store listing and general Roblox terms; internal provenance and dependency rights unreviewed.",
+      "runtimeAssetId": null,
+      "pinnedAssetVersionId": null,
+      "intakeHash": null,
+      "acceptance": {
+        "listingVerified": true,
+        "internalsReviewed": false,
+        "dependenciesVerified": false,
+        "downloaded": false,
+        "imported": false,
+        "studioTested": false,
+        "physicalDeviceTested": false,
+        "humanApproved": false
+      }
+    },
+    {
+      "candidateStoreAssetId": "10840642581",
+      "url": "https://create.roblox.com/store/asset/10840642581",
+      "name": "House Props Pack - Duvall Drive",
+      "listedCreator": "Roblox",
+      "priority": "P3",
+      "proposedUse": "selected period-appropriate interior details",
+      "listing": {
+        "checkedDate": "2026-10-12",
+        "method": "LIVE_BROWSER_DESCRIPTION_AND_TECHNICAL_DETAILS",
+        "acquisitionSignal": "Get Model",
+        "freeAcquisition": true,
+        "lastUpdated": "2022-09-24"
+      },
+      "technicalDetails": {
+        "scope": "WHOLE_LISTED_ASSET",
+        "triangles": 243941,
+        "vertices": 233928,
+        "meshPartCount": 514,
+        "scriptCount": 1
+      },
+      "rightsEvidence": "Creator Store listing and general Roblox terms; internal provenance and dependency rights unreviewed.",
+      "runtimeAssetId": null,
+      "pinnedAssetVersionId": null,
+      "intakeHash": null,
+      "acceptance": {
+        "listingVerified": true,
+        "internalsReviewed": false,
+        "dependenciesVerified": false,
+        "downloaded": false,
+        "imported": false,
+        "studioTested": false,
+        "physicalDeviceTested": false,
+        "humanApproved": false
+      }
+    },
+    {
+      "candidateStoreAssetId": "10840661513",
+      "url": "https://create.roblox.com/store/asset/10840661513",
+      "name": "Landscaping Pack - Duvall Drive",
+      "listedCreator": "Roblox",
+      "priority": "P3",
+      "proposedUse": "selected garden details only",
+      "listing": {
+        "checkedDate": "2026-10-12",
+        "method": "LIVE_BROWSER_DESCRIPTION_AND_TECHNICAL_DETAILS",
+        "acquisitionSignal": "Get Model",
+        "freeAcquisition": true,
+        "lastUpdated": "2022-09-24"
+      },
+      "technicalDetails": {
+        "scope": "WHOLE_LISTED_ASSET",
+        "triangles": 912716,
+        "vertices": 1003762,
+        "meshPartCount": 1803,
+        "scriptCount": 4
+      },
+      "rightsEvidence": "Creator Store listing and general Roblox terms; internal provenance and dependency rights unreviewed.",
+      "runtimeAssetId": null,
+      "pinnedAssetVersionId": null,
+      "intakeHash": null,
+      "acceptance": {
+        "listingVerified": true,
+        "internalsReviewed": false,
+        "dependenciesVerified": false,
+        "downloaded": false,
+        "imported": false,
+        "studioTested": false,
+        "physicalDeviceTested": false,
+        "humanApproved": false
+      }
+    }
+  ]
+}

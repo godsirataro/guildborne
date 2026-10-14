@@ -1,0 +1,11 @@
+{
+  "python": "3.12.14",
+  "git": true,
+  "blenderBinary": false,
+  "codexBinary": true,
+  "studioMCP": "MUST_PROBE_IN_AGENT_SESSION",
+  "imageGeneration": "MUST_PROBE_IN_AGENT_SESSION",
+  "probeCommand": "python tools/agentic/mcp_probe.py --help",
+  "localWorkerCommand": "python tools/agentic/run_worker.py --help",
+  "publicRelease": "NOT_AUTHORIZED"
+}

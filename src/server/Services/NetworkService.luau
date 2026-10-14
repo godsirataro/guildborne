@@ -18,6 +18,7 @@ return function(deps: any)
 		deps.World.Update(player, if view.data then view.data.hallLevel else 1, view.data, view.status == "Active")
 		view.islands=if deps.World.IslandDirectory then deps.World.IslandDirectory(player) else {}
 		view.islandVisitors=if deps.World.IslandVisitors then deps.World.IslandVisitors(player) else {}
+		if view.data and deps.World.HeroMentorState then view.data.heroMentorSession=deps.World.HeroMentorState(player) end
 		state:FireClient(player, view)
 	end
 	function Network.Remove(player: Player) buckets[player] = nil; combatBuckets[player] = nil end
@@ -52,6 +53,9 @@ return function(deps: any)
 			code = deps.Load(player)
 		elseif packet.action == "RetrySave" then
 			code = deps.Data.Refresh(player.UserId)
+		elseif packet.action=="StartHeroMentor" or packet.action=="CancelHeroMentor" then
+			local handler=deps.World.HeroMentorIntent
+			code=if handler then handler(player,packet.action,packet.args) else "HeroMentorUnavailable"
 		elseif packet.action=="RequestPermanentPass" then
 			local ok,response=pcall(deps.PermanentPassRequest,player,packet)
 			code=if ok then response else "PurchaseUnavailable"

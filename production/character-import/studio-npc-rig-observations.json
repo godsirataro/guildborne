@@ -1,0 +1,239 @@
+{
+  "schemaVersion": 1,
+  "date": "2026-10-11",
+  "sourceState": "UNCOMMITTED_PRIVATE_CANDIDATE",
+  "status": "REVIEW_ONLY_NOT_PRODUCTION_OR_HUMAN_ACCEPTANCE",
+  "studioId": "14f90567-42a7-4805-a448-1ccd40bb9768",
+  "placeFile": "build/Guildborne_CharacterPreview_NpcRig.rbxlx",
+  "boundedLiveSourcePatch": "src/shared/Presentation/ModularAppearance/LocalGeometryPreview.luau",
+  "ordinaryActorRendering": "PLACEHOLDER_PARTS_UNCHANGED",
+  "pending": [
+    "genuine flexible garment skinning/cages and per-preset fit",
+    "gameplay idle/walk/run/jump/attacks/skills and foot/grip contact",
+    "civic NPC shared skeleton adapter",
+    "spawned NPC dialogue/quest/work/streaming validation",
+    "production import and runtime asset IDs",
+    "physical-device and human art approval"
+  ],
+  "receipts": [
+    {
+      "name": "safe-place-and-source-verification",
+      "result": {
+        "content": [
+          {
+            "type": "text",
+            "text": "{\"persistence\":\"Memory\",\"gameId\":0,\"rendererSourceBytes\":11942,\"placeId\":0,\"fixtureSourceBytes\":9313,\"cloudAllowlistEmpty\":true}"
+          }
+        ],
+        "isError": false
+      }
+    },
+    {
+      "name": "appearance-npc-builder-fixture",
+      "result": {
+        "status": "fulfilled",
+        "value": {
+          "content": [
+            {
+              "type": "text",
+              "text": "{\"robloxAssetIdsRemainNull\":true,\"bodyPresets\":{\"1\":\"HUMAN_STANDARD\",\"2\":\"HUMAN_HEAVY\"},\"npcRolePropsPreserved\":true,\"animationFitAcceptance\":false,\"skinPalettes\":5,\"modestyRetained\":true,\"productionMeshAcceptance\":false,\"layeredMissingMeshRejected\":true,\"fixtureCases\":17,\"unadaptedCivicSkeletonRejected\":true,\"coreParts\":15,\"npcPromptIdentityPreserved\":true,\"idempotentRebuild\":true,\"ancestryVisualIsolation\":true,\"npcWorldIntegrationAcceptance\":false,\"weaponPreserved\":true,\"geometry\":\"PLACEHOLDER_PARTS\",\"r15Joints\":15}"
+            }
+          ],
+          "isError": false
+        }
+      }
+    },
+    {
+      "name": "actual-local-body-build-and-motor-articulation",
+      "code": "assert(game:GetService('RunService'):IsStudio() and game.PlaceId==0 and game.GameId==0); local P=require(game.ReplicatedStorage.Shared.Presentation.ModularAppearance.LocalGeometryPreview); local C=require(game.ReplicatedStorage.Shared.Data.AppearanceCatalog); local R=require(game.ReplicatedStorage.Shared.Presentation.ModularAppearance.GeneratedRig); local rules=require(game.ReplicatedStorage.Shared.Data.AppearanceRules);local selection=rules.copy(C.Defaults.HUMAN);local holder=Instance.new('Folder');holder.Name='LocalArticulatedMeshInspection';holder.Parent=workspace; local rows={}; for index,preset in ipairs({'HUMAN_STANDARD','HUMAN_HEAVY'}) do selection.bodyPresetId=preset;selection.skinPaletteId=if index==1 then 'SKIN_HUMAN_02' else 'SKIN_HUMAN_04';selection.outfitSlots={INNER_TOP='CLO_TUNIC_TRAVELER_01',INNER_BOTTOM='CLO_TROUSERS_TRAVELER_01',HEADWEAR='CLO_HAT_WIZARD_01'};selection.hairAssetId='ACC_HAIR_HUMAN_01';local model,err=P.BuildRig(selection);assert(model,err);model:PivotTo(CFrame.new((index-1)*5,80,0));model.Parent=holder;local body=C.Bodies[preset].assetId;local source=R.Assets[body];local count=0;local motors={};for _,v in ipairs(model:GetDescendants()) do if v:IsA('MeshPart') and v:GetAttribute('CoreBodyPart') then count+=1;assert(v.MeshId=='' and not v.CanCollide and not v.CanTouch and not v.CanQuery and v.Massless and not v.Anchored) end;if v:IsA('Motor6D') then motors[v.Name]=v end end;assert(count==15);local before=model.LeftHand.Position;local joint=motors.LeftElbow; joint.Transform=CFrame.Angles(math.rad(60),0,0);task.wait(.2);local moved=(model.LeftHand.Position-before).Magnitude;joint.Transform=CFrame.identity;task.wait(.1);local returnError=(model.LeftHand.Position-before).Magnitude;rows[preset]={coreMeshParts=count,motors=model:GetAttribute('JointCount'),elbowHandMovement=moved,returnToBindError=returnError,sourceSha256=source.sourceSha256,garmentStatus=model:GetAttribute('GarmentRigStatus'),omitted=model:GetAttribute('OmittedUnskinnedGarments'),rootAnchored=model.PrimaryPart.Anchored,rootInvisible=model.PrimaryPart.Transparency==1};assert(moved>.05 and returnError<.01,'Actual joint failed to articulate') end;return {bodies=rows,retainedMeshResources=P.ResourceCount(),ordinaryRuntimeRendererUnchanged=true,productionImport=false,fitAcceptance=false}",
+      "result": {
+        "content": [
+          {
+            "type": "text",
+            "text": "sabuiltin_Assistant.rbxm.Assistant.Packages._Index.AssistantUI.AssistantUI.Tools.ExecuteLuauTool:86: sabuiltin_Assistant.rbxm.Assistant.Packages._Index.AssistantUI.AssistantUI.Util.CommandExecution:54: ReplicatedStorage.Shared.Data.AppearanceRules:32: invalid argument #1 to 'pairs' (table expected, got string)"
+          }
+        ],
+        "isError": true
+      }
+    },
+    {
+      "name": "actual-local-body-build-and-motor-articulation-corrected-fixture",
+      "code": "assert(game:GetService('RunService'):IsStudio() and game.PlaceId==0 and game.GameId==0); local P=require(game.ReplicatedStorage.Shared.Presentation.ModularAppearance.LocalGeometryPreview); local C=require(game.ReplicatedStorage.Shared.Data.AppearanceCatalog); local R=require(game.ReplicatedStorage.Shared.Presentation.ModularAppearance.GeneratedRig); local rules=require(game.ReplicatedStorage.Shared.Data.AppearanceRules);local selection={appearanceVersion=1,raceId='HUMAN',bodyPresetId='HUMAN_STANDARD',skinPaletteId='SKIN_HUMAN_03',headPresetId='CHR_HEAD_HUMAN_01',hairColorId='HAIR_DARK_BROWN',raceFeatures={},outfitSlots={}};local holder=Instance.new('Folder');holder.Name='LocalArticulatedMeshInspection';holder.Parent=workspace; local rows={}; for index,preset in ipairs({'HUMAN_STANDARD','HUMAN_HEAVY'}) do selection.bodyPresetId=preset;selection.skinPaletteId=if index==1 then 'SKIN_HUMAN_02' else 'SKIN_HUMAN_04';selection.outfitSlots={INNER_TOP='CLO_TUNIC_TRAVELER_01',INNER_BOTTOM='CLO_TROUSERS_TRAVELER_01',HEADWEAR='CLO_HAT_WIZARD_01'};selection.hairAssetId='ACC_HAIR_HUMAN_01';local model,err=P.BuildRig(selection);assert(model,err);model:PivotTo(CFrame.new((index-1)*5,80,0));model.Parent=holder;local body=C.Bodies[preset].assetId;local source=R.Assets[body];local count=0;local motors={};for _,v in ipairs(model:GetDescendants()) do if v:IsA('MeshPart') and v:GetAttribute('CoreBodyPart') then count+=1;assert(v.MeshId=='' and not v.CanCollide and not v.CanTouch and not v.CanQuery and v.Massless and not v.Anchored) end;if v:IsA('Motor6D') then motors[v.Name]=v end end;assert(count==15);local before=model.LeftHand.Position;local joint=motors.LeftElbow; joint.Transform=CFrame.Angles(math.rad(60),0,0);task.wait(.2);local moved=(model.LeftHand.Position-before).Magnitude;joint.Transform=CFrame.identity;task.wait(.1);local returnError=(model.LeftHand.Position-before).Magnitude;rows[preset]={coreMeshParts=count,motors=model:GetAttribute('JointCount'),elbowHandMovement=moved,returnToBindError=returnError,sourceSha256=source.sourceSha256,garmentStatus=model:GetAttribute('GarmentRigStatus'),omitted=model:GetAttribute('OmittedUnskinnedGarments'),rootAnchored=model.PrimaryPart.Anchored,rootInvisible=model.PrimaryPart.Transparency==1};assert(moved>.05 and returnError<.01,'Actual joint failed to articulate') end;return {bodies=rows,retainedMeshResources=P.ResourceCount(),ordinaryRuntimeRendererUnchanged=true,productionImport=false,fitAcceptance=false}",
+      "result": {
+        "content": [
+          {
+            "type": "text",
+            "text": "sabuiltin_Assistant.rbxm.Assistant.Packages._Index.AssistantUI.AssistantUI.Tools.ExecuteLuauTool:86: sabuiltin_Assistant.rbxm.Assistant.Packages._Index.AssistantUI.AssistantUI.Util.CommandExecution:54: AssistantCommand:1: LOCAL_MESH_CREATION_FAILED:ReplicatedStorage.Shared.Presentation.ModularAppearance.LocalGeometryPreview:53: EDITABLE_MESH_MEMORY_UNAVAILABLE"
+          }
+        ],
+        "isError": true
+      }
+    },
+    {
+      "name": "editable-mesh-memory-probe-Client",
+      "code": "local out={isClient=game:GetService('RunService'):IsClient(),resources=require(game.ReplicatedStorage.Shared.Presentation.ModularAppearance.LocalGeometryPreview).ResourceCount()};local ok,mesh=pcall(function() return game:GetService('AssetService'):CreateEditableMesh() end);out.ok=ok;out.returnedMesh=mesh~=nil;out.error=if ok then nil else tostring(mesh);if ok and mesh then mesh:Destroy() end;return out",
+      "result": {
+        "content": [
+          {
+            "type": "text",
+            "text": "{\"ok\":true,\"returnedMesh\":true,\"isClient\":true,\"resources\":0}"
+          }
+        ],
+        "isError": false
+      }
+    },
+    {
+      "name": "editable-mesh-memory-probe-Server",
+      "code": "local out={isClient=game:GetService('RunService'):IsClient(),resources=require(game.ReplicatedStorage.Shared.Presentation.ModularAppearance.LocalGeometryPreview).ResourceCount()};local ok,mesh=pcall(function() return game:GetService('AssetService'):CreateEditableMesh() end);out.ok=ok;out.returnedMesh=mesh~=nil;out.error=if ok then nil else tostring(mesh);if ok and mesh then mesh:Destroy() end;return out",
+      "result": {
+        "content": [
+          {
+            "type": "text",
+            "text": "{\"ok\":true,\"returnedMesh\":true,\"isClient\":false,\"resources\":0}"
+          }
+        ],
+        "isError": false
+      }
+    },
+    {
+      "name": "compact-fixed-size-clone-probe-edit",
+      "code": "assert(game:GetService('RunService'):IsStudio() and game.PlaceId==0 and game.GameId==0);local service=game:GetService('AssetService');local dynamic=service:CreateEditableMesh();assert(dynamic,'Dynamic unavailable');local a=dynamic:AddVertex(Vector3.new(0,0,0));local b=dynamic:AddVertex(Vector3.new(1,0,0));local c=dynamic:AddVertex(Vector3.new(0,1,0));dynamic:AddTriangle(a,b,c);local ok,fixed=pcall(function() return service:CreateEditableMeshAsync(Content.fromObject(dynamic),{FixedSize=true}) end);local report={ok=ok,dynamicFixed=dynamic.FixedSize};if ok and fixed then report.fixed=fixed.FixedSize;report.vertices=#fixed:GetVertices();local p=service:CreateMeshPartAsync(Content.fromObject(fixed));report.meshClass=p.ClassName;report.meshId=p.MeshId;p:Destroy();fixed:Destroy() else report.error=tostring(fixed) end;dynamic:Destroy();return report",
+      "result": {
+        "content": [
+          {
+            "type": "text",
+            "text": "{\"vertices\":3,\"meshClass\":\"MeshPart\",\"fixed\":true,\"meshId\":\"\",\"ok\":true,\"dynamicFixed\":false}"
+          }
+        ],
+        "isError": false
+      }
+    },
+    {
+      "name": "compact-fixed-size-clone-probe-client",
+      "code": "assert(game:GetService('RunService'):IsStudio() and game.PlaceId==0 and game.GameId==0);local service=game:GetService('AssetService');local dynamic=service:CreateEditableMesh();assert(dynamic,'Dynamic unavailable');local a=dynamic:AddVertex(Vector3.new(0,0,0));local b=dynamic:AddVertex(Vector3.new(1,0,0));local c=dynamic:AddVertex(Vector3.new(0,1,0));dynamic:AddTriangle(a,b,c);local ok,fixed=pcall(function() return service:CreateEditableMeshAsync(Content.fromObject(dynamic),{FixedSize=true}) end);local report={ok=ok,dynamicFixed=dynamic.FixedSize};if ok and fixed then report.fixed=fixed.FixedSize;report.vertices=#fixed:GetVertices();local p=service:CreateMeshPartAsync(Content.fromObject(fixed));report.meshClass=p.ClassName;report.meshId=p.MeshId;p:Destroy();fixed:Destroy() else report.error=tostring(fixed) end;dynamic:Destroy();return report",
+      "result": {
+        "content": [
+          {
+            "type": "text",
+            "text": "{\"vertices\":3,\"meshClass\":\"MeshPart\",\"fixed\":true,\"meshId\":\"\",\"ok\":true,\"dynamicFixed\":false}"
+          }
+        ],
+        "isError": false
+      }
+    },
+    {
+      "name": "bounded-fixed-preview-source-sync",
+      "sourceCharacters": 10159,
+      "result": {
+        "content": [
+          {
+            "type": "text",
+            "text": "{\"sourceBytes\":10159,\"fixedSizeCodePresent\":true,\"module\":\"ReplicatedStorage.Shared.Presentation.ModularAppearance.LocalGeometryPreview\"}"
+          }
+        ],
+        "isError": false
+      }
+    },
+    {
+      "name": "actual-local-body-build-and-motor-articulation-fixed-size-retest",
+      "code": "assert(game:GetService('RunService'):IsStudio() and game.PlaceId==0 and game.GameId==0); local P=require(game.ReplicatedStorage.Shared.Presentation.ModularAppearance.LocalGeometryPreview); local C=require(game.ReplicatedStorage.Shared.Data.AppearanceCatalog); local R=require(game.ReplicatedStorage.Shared.Presentation.ModularAppearance.GeneratedRig); local rules=require(game.ReplicatedStorage.Shared.Data.AppearanceRules);local selection={appearanceVersion=1,raceId='HUMAN',bodyPresetId='HUMAN_STANDARD',skinPaletteId='SKIN_HUMAN_03',headPresetId='CHR_HEAD_HUMAN_01',hairColorId='HAIR_DARK_BROWN',raceFeatures={},outfitSlots={}};local holder=Instance.new('Folder');holder.Name='LocalArticulatedMeshInspection';holder.Parent=workspace; local rows={}; for index,preset in ipairs({'HUMAN_STANDARD','HUMAN_HEAVY'}) do selection.bodyPresetId=preset;selection.skinPaletteId=if index==1 then 'SKIN_HUMAN_02' else 'SKIN_HUMAN_04';selection.outfitSlots={INNER_TOP='CLO_TUNIC_TRAVELER_01',INNER_BOTTOM='CLO_TROUSERS_TRAVELER_01',HEADWEAR='CLO_HAT_WIZARD_01'};selection.hairAssetId='ACC_HAIR_HUMAN_01';local model,err=P.BuildRig(selection);assert(model,err);model:PivotTo(CFrame.new((index-1)*5,80,0));model.Parent=holder;local body=C.Bodies[preset].assetId;local source=R.Assets[body];local count=0;local motors={};for _,v in ipairs(model:GetDescendants()) do if v:IsA('MeshPart') and v:GetAttribute('CoreBodyPart') then count+=1;assert(v.MeshId=='' and not v.CanCollide and not v.CanTouch and not v.CanQuery and v.Massless and not v.Anchored) end;if v:IsA('Motor6D') then motors[v.Name]=v end end;assert(count==15);local before=model.LeftHand.Position;local joint=motors.LeftElbow; joint.Transform=CFrame.Angles(math.rad(60),0,0);task.wait(.2);local moved=(model.LeftHand.Position-before).Magnitude;joint.Transform=CFrame.identity;task.wait(.1);local returnError=(model.LeftHand.Position-before).Magnitude;rows[preset]={coreMeshParts=count,motors=model:GetAttribute('JointCount'),elbowHandMovement=moved,returnToBindError=returnError,sourceSha256=source.sourceSha256,garmentStatus=model:GetAttribute('GarmentRigStatus'),omitted=model:GetAttribute('OmittedUnskinnedGarments'),rootAnchored=model.PrimaryPart.Anchored,rootInvisible=model.PrimaryPart.Transparency==1};assert(moved>.05 and returnError<.01,'Actual joint failed to articulate') end;return {bodies=rows,retainedMeshResources=P.ResourceCount(),ordinaryRuntimeRendererUnchanged=true,productionImport=false,fitAcceptance=false}",
+      "result": {
+        "content": [
+          {
+            "type": "text",
+            "text": "{\"ordinaryRuntimeRendererUnchanged\":true,\"bodies\":{\"HUMAN_STANDARD\":{\"rootAnchored\":true,\"elbowHandMovement\":0.8591963052749634,\"rootInvisible\":true,\"sourceSha256\":\"d2d0c49d61f811715553fb7aa898a001edf03c2aa4ccf45756e017ab90247226\",\"returnToBindError\":0,\"coreMeshParts\":15,\"omitted\":\"CLO_TROUSERS_TRAVELER_01,CLO_TUNIC_TRAVELER_01\",\"garmentStatus\":\"UNAVAILABLE_UNSKINNED_NO_CAGES\",\"motors\":15},\"HUMAN_HEAVY\":{\"rootAnchored\":true,\"elbowHandMovement\":0.86253422498703,\"rootInvisible\":true,\"sourceSha256\":\"e020f65f6ca137e17061d6a0c0107375293d617c9d480acb498648022f6f95fd\",\"returnToBindError\":0,\"coreMeshParts\":15,\"omitted\":\"CLO_TROUSERS_TRAVELER_01,CLO_TUNIC_TRAVELER_01\",\"garmentStatus\":\"UNAVAILABLE_UNSKINNED_NO_CAGES\",\"motors\":15}},\"retainedMeshResources\":34,\"productionImport\":false,\"fitAcceptance\":false}"
+          }
+        ],
+        "isError": false
+      }
+    },
+    {
+      "name": "source-derived-real-mesh-native-local-animation-clip",
+      "code": "local holder=workspace:FindFirstChild('LocalArticulatedMeshInspection');assert(holder);local C=require(game.ReplicatedStorage.Shared.Data.AppearanceCatalog);local R=require(game.ReplicatedStorage.Shared.Presentation.ModularAppearance.GeneratedRig);local report={};for _,model in ipairs(holder:GetChildren()) do local source=R.Assets[C.Bodies[model:GetAttribute('BodyPresetId')].assetId];local sequence=Instance.new('KeyframeSequence');sequence.Name='LocalJointSweep';sequence.Loop=true;sequence.Priority=Enum.AnimationPriority.Action;local bend={LeftUpperArm=.45,RightUpperArm=-.45,LeftLowerArm=.7,RightLowerArm=.7,LeftHand=.25,RightHand=-.25,LeftUpperLeg=.35,RightUpperLeg=-.35,LeftLowerLeg=.55,RightLowerLeg=.55,LeftFoot=.2,RightFoot=-.2,Head=.15};for index,time in ipairs({0,1,2}) do local key=Instance.new('Keyframe');key.Time=time;key.Name='Sweep'..index;key.Parent=sequence;local poses={};for _,bone in ipairs(source.bones) do local pose=Instance.new('Pose');pose.Name=bone.name;pose.Weight=if bone.name=='HumanoidRootPart' then 0 else 1;pose.CFrame=CFrame.Angles((bend[bone.name] or 0)*(if index==2 then 1 else 0),0,0);pose.Parent=if bone.parent=='' then key else poses[bone.parent];poses[bone.name]=pose end end;local temporary=game:GetService('AnimationClipProvider'):RegisterAnimationClip(sequence);local animation=Instance.new('Animation');animation.Name='LocalJointSweepAnimation';animation.AnimationId=temporary;animation.Parent=model;sequence.Parent=model;local animator=model:FindFirstChild('LocalPreviewAnimationController'):FindFirstChildOfClass('Animator');local track=animator:LoadAnimation(animation);track.Name='LocalJointSweep';track:Play(0,1,0);for _=1,30 do if track.Length>0 then break end;task.wait(.02) end;track.TimePosition=1;task.wait(.2);local angles={};local animated=0;for _,v in ipairs(model:GetDescendants()) do if v:IsA('Motor6D') then local _,angle=v.Transform:ToAxisAngle();angles[v.Name]=angle;if angle>.01 then animated+=1 end end end;report[model:GetAttribute('BodyPresetId')]={temporaryLocalClip=temporary,trackLength=track.Length,isPlaying=track.IsPlaying,timePosition=track.TimePosition,animatedJoints=animated,jointAngles=angles};assert(track.Length==2 and track.IsPlaying and animated>=12,'Native animation failed to drive actual mesh rig');model:SetAttribute('AnimationStatus','SOURCE_LOCAL_JOINT_SWEEP_OBSERVED_NOT_GAMEPLAY_FIT') end;return {bodies=report,uploadedAnimations=0,publishedAnimationIds=0,gameplayAnimationAcceptance=false,clothingFitAcceptance=false}",
+      "result": {
+        "content": [
+          {
+            "type": "text",
+            "text": "{\"clothingFitAcceptance\":false,\"bodies\":{\"HUMAN_STANDARD\":{\"animatedJoints\":13,\"temporaryLocalClip\":\"af78714aa6c7e6b910857390cb35e1c1\",\"isPlaying\":true,\"trackLength\":2,\"timePosition\":1,\"jointAngles\":{\"Waist\":0,\"LeftShoulder\":0.4499780237674713,\"LeftAnkle\":0.1999882012605667,\"Root\":0,\"RightKnee\":0.5499539375305176,\"RightElbow\":0.6999534368515015,\"RightWrist\":0.24993854761123658,\"RightAnkle\":0.1999882012605667,\"LeftKnee\":0.5499539375305176,\"RightHip\":0.34990939497947695,\"RightShoulder\":0.4499780237674713,\"LeftWrist\":0.24993854761123658,\"LeftElbow\":0.6999534368515015,\"Neck\":0.14998960494995118,\"LeftHip\":0.34990939497947695}},\"HUMAN_HEAVY\":{\"animatedJoints\":13,\"temporaryLocalClip\":\"af78714aa6c7e6b910857390cb35e1c1\",\"isPlaying\":true,\"trackLength\":2,\"timePosition\":1,\"jointAngles\":{\"Waist\":0,\"LeftShoulder\":0.4499780237674713,\"LeftAnkle\":0.1999882012605667,\"Root\":0,\"RightKnee\":0.5499539375305176,\"RightElbow\":0.6999534368515015,\"RightWrist\":0.24993854761123658,\"RightAnkle\":0.1999882012605667,\"LeftKnee\":0.5499539375305176,\"RightHip\":0.34990939497947695,\"RightShoulder\":0.4499780237674713,\"LeftWrist\":0.24993854761123658,\"LeftElbow\":0.6999534368515015,\"Neck\":0.14998960494995118,\"LeftHip\":0.34990939497947695}}},\"gameplayAnimationAcceptance\":false,\"publishedAnimationIds\":0,\"uploadedAnimations\":0}"
+          }
+        ],
+        "isError": false
+      }
+    },
+    {
+      "name": "actual-real-mesh-posed-camera-inspection",
+      "code": "local holder=workspace.LocalArticulatedMeshInspection;local boxes={};local low=Vector3.new(math.huge,math.huge,math.huge);local high=Vector3.new(-math.huge,-math.huge,-math.huge);for _,model in ipairs(holder:GetChildren()) do local cf,size=model:GetBoundingBox();boxes[model.Name]={center={cf.X,cf.Y,cf.Z},size={size.X,size.Y,size.Z}};low=low:Min(cf.Position-size/2);high=high:Max(cf.Position+size/2) end;local target=(low+high)/2;local distance=math.max((high-low).X, (high-low).Y)*1.4;local camera=workspace.CurrentCamera;camera.CameraType=Enum.CameraType.Scriptable;camera.CFrame=CFrame.lookAt(target+Vector3.new(0,1,distance),target);for _,gui in ipairs(game.Players.LocalPlayer.PlayerGui:GetChildren()) do if gui:IsA('ScreenGui') then gui:SetAttribute('LocalRigInspectionPreviousEnabled',gui.Enabled);gui.Enabled=false end end;return {boxes=boxes,camera={camera.CFrame.X,camera.CFrame.Y,camera.CFrame.Z},lookingAt={target.X,target.Y,target.Z},viewport={camera.ViewportSize.X,camera.ViewportSize.Y}}",
+      "result": {
+        "content": [
+          {
+            "type": "text",
+            "text": "{\"viewport\":{\"1\":750,\"2\":382},\"camera\":{\"1\":2.633587121963501,\"3\":11.773700714111329,\"2\":81.72000885009766},\"boxes\":{\"HUMAN_HEAVY_LocalRigPreview\":{\"center\":{\"1\":5,\"3\":0,\"2\":80.72000885009766},\"size\":{\"1\":3.6769611835479738,\"3\":1.4412522315979005,\"2\":6.359994888305664}},\"HUMAN_STANDARD_LocalRigPreview\":{\"center\":{\"1\":0,\"3\":0,\"2\":80.72000885009766},\"size\":{\"1\":3.1426122188568117,\"3\":1.4412522315979005,\"2\":6.359994888305664}}},\"lookingAt\":{\"1\":2.633587121963501,\"3\":0,\"2\":80.72000885009766}}"
+          }
+        ],
+        "isError": false
+      }
+    },
+    {
+      "name": "late-render-inspection-camera-fixture",
+      "code": "local holder=workspace.LocalArticulatedMeshInspection;local cf=CFrame.lookAt(Vector3.new(2.6335871,81.7200089,11.7737007),Vector3.new(2.6335871,80.7200089,0));game:GetService('RunService'):BindToRenderStep('LocalRigInspectionCamera',Enum.RenderPriority.Last.Value+100,function() if not holder.Parent then game:GetService('RunService'):UnbindFromRenderStep('LocalRigInspectionCamera');return end;workspace.CurrentCamera.CameraType=Enum.CameraType.Scriptable;workspace.CurrentCamera.CFrame=cf end);task.wait(.1);return {cameraType=workspace.CurrentCamera.CameraType.Name,camera={workspace.CurrentCamera.CFrame.X,workspace.CurrentCamera.CFrame.Y,workspace.CurrentCamera.CFrame.Z},inspectorModels=#holder:GetChildren()}",
+      "result": {
+        "content": [
+          {
+            "type": "text",
+            "text": "{\"inspectorModels\":2,\"camera\":{\"1\":2.633587121963501,\"3\":11.773700714111329,\"2\":81.72000885009766},\"cameraType\":\"Scriptable\"}"
+          }
+        ],
+        "isError": false
+      }
+    },
+    {
+      "name": "posed-mesh-inspection-framing",
+      "result": {
+        "content": [
+          {
+            "type": "text",
+            "text": "{\"fieldOfView\":40}"
+          }
+        ],
+        "isError": false
+      }
+    },
+    {
+      "name": "actual-rigid-attachment-and-mesh-lifecycle-cleanup",
+      "code": "local P=require(game.ReplicatedStorage.Shared.Presentation.ModularAppearance.LocalGeometryPreview);local holder=workspace.LocalArticulatedMeshInspection;local rigidChecks=0;for _,model in ipairs(holder:GetChildren()) do for _,a in ipairs(model:GetChildren()) do if a:IsA('Accessory') then local handle=a:FindFirstChild('Handle');local weld=handle:FindFirstChild('AccessoryWeld');local name=if a.AccessoryType==Enum.AccessoryType.Hair then 'HairAttachment' else 'HatAttachment';local head=model:FindFirstChild('Head');local localAnchor=handle:FindFirstChild(name);local bodyAnchor=head:FindFirstChild(name);assert(weld.Part0==head and weld.Part1==handle);assert((localAnchor.WorldPosition-bodyAnchor.WorldPosition).Magnitude<.001,'Rigid attachment disconnected');rigidChecks+=1 end end end;local before=P.ResourceCount();game:GetService('RunService'):UnbindFromRenderStep('LocalRigInspectionCamera');holder:Destroy();local after=P.ResourceCount();for _,gui in ipairs(game.Players.LocalPlayer.PlayerGui:GetChildren()) do if gui:IsA('ScreenGui') then local previous=gui:GetAttribute('LocalRigInspectionPreviousEnabled');if type(previous)=='boolean' then gui.Enabled=previous;gui:SetAttribute('LocalRigInspectionPreviousEnabled',nil) end end end;assert(before==34 and after==0);return {rigidAttachmentChecks=rigidChecks,meshResourcesBefore=before,meshResourcesAfter=after,fixtureRemoved=workspace:FindFirstChild('LocalArticulatedMeshInspection')==nil,rigidFitAcceptance=false}",
+      "result": {
+        "content": [
+          {
+            "type": "text",
+            "text": "{\"rigidFitAcceptance\":false,\"rigidAttachmentChecks\":4,\"meshResourcesBefore\":34,\"meshResourcesAfter\":0,\"fixtureRemoved\":true}"
+          }
+        ],
+        "isError": false
+      }
+    },
+    {
+      "name": "restore-device-simulator-after-local-tests",
+      "result": {
+        "content": [
+          {
+            "type": "text",
+            "text": "{\"placeId\":0,\"simulatorStopped\":true,\"gameId\":0}"
+          }
+        ],
+        "isError": false
+      }
+    }
+  ],
+  "finalCapture": {
+    "path": "production/character-import/studio-local-articulated-mesh.png",
+    "scenario": "actual source candidate meshes, native local joint-sweep pose; always-on modesty, flexible garments omitted",
+    "evidence": "ACTUAL_STUDIO_CAPTURE_NOT_DEVICE_OR_FIT_ACCEPTANCE"
+  },
+  "toolSessionsStopped": true,
+  "independentReview": {
+    "reviewer": "/root/appearance_domain",
+    "scope": "read-only isolated code, source-to-built-place comparison, saved receipts and actual screenshot",
+    "result": "NO_CONCRETE_BUG_FOUND_WITHIN_ISOLATED_SCOPE",
+    "formalAcceptance": false
+  }
+}

@@ -1,0 +1,20 @@
+{
+  "date": "2026-10-14",
+  "status": "SCOPED_STUDIO_PASS_INDEPENDENTLY_REVIEWED",
+  "publicReady": false,
+  "candidateSha256": "55404c199438de6138cf0fee877151c9bc3c422e88a1f1c57e3ba2cf06e08a17",
+  "runtimeSourceChanged": false,
+  "environment": {"placeId": 0, "gameId": 0, "persistence": "Memory", "clients": 1},
+  "normalUIRoute": {"borinPrerequisites": "PASS", "blacksmithPlacement": "PASS", "newCraftsAfterAccept": 2, "claimGoldDelta": 12, "retainedIngots": 4, "deepforgeTravel": "PASS", "berserkerSkillLearnEquip": "PASS", "keyboardZPlayerCleave": "PASS_SINGLE_CAST"},
+  "separateProtocolProbe": {"code": "QuestNotActive", "revisionBefore": 153, "revisionAfter": 153, "goldBefore": 296, "goldAfter": 296, "ingotsBefore": 4, "ingotsAfter": 4},
+  "checksThisIncrement": ["studio validate", "studio verify", "forge validate", "forge doctor", "forge plan", "git diff --check"],
+  "priorSourceBaseline": {"tests": 736, "rerunThisIncrement": false, "reference": "world-route-checks.json"},
+  "evidence": [
+    {"path": "borin-route-raw.json", "sha256": "b0e5d36f57005bdfe95fbec64ee80cc11c3e86b9c6f50be16413d1a4757eb646"},
+    {"path": "berserker-combat-raw.json", "sha256": "a816a14c0bc8cbaff3d1d77b7ab8681b6d7fcb55a26991ccbed23f537ef3a825"},
+    {"path": "borin-repeat-full-response.json", "sha256": "41cac2b5e4cb48ea7b56433d4f1aacb6e21edd59a532a4e5f4516e11677c7e33"}
+  ],
+  "independentReview": "launch_progression:PASS_SCOPED_OUTCOMES_ACCOUNTING_AND_CAST_COUNTERS; pre-cast qualification resolved with preserved berserker-precast-raw.json",
+  "leftPlayingForUser": true,
+  "remaining": "Hero Class2; other player branches; persistent/cloud/multiplayer/device tests; runtime art/audio; commerce; human UAT/release."
+}

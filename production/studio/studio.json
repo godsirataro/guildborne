@@ -385,7 +385,8 @@
       "skills": [
         "guildborne-tooling",
         "guildborne-research",
-        "guildborne-adopt"
+        "guildborne-adopt",
+        "guildborne-learning"
       ],
       "instructions": "Verify primary sources and reviewed actual discovery with version/rights/telemetry/cost. No arbitrary MCP/skill installation; fixture IPC is not Studio/model execution."
     },
@@ -434,7 +435,13 @@
     "uat": "qa-engineer",
     "private-cross-server": "qa-engineer",
     "physical-mobile": "qa-engineer",
-    "growth": "growth-analyst"
+    "growth": "growth-analyst",
+    "learning-loop": "tools-engineer",
+    "borin-integration": "npc-designer",
+    "presentation-integration": "animator",
+    "launch-content": "gameplay-designer",
+    "launch-rewards": "systems-engineer",
+    "launch-integration": "technical-director"
   },
   "workflows": [
     {

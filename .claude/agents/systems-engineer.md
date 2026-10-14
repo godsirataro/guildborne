@@ -66,6 +66,26 @@ Path rule shared-contracts: Shared definitions are client-safe. Preserve IDs/ear
 
 Path rule production-evidence: Reconcile latest goals/registries/scopes. One shared ledger, claim before writes, immediate lease check and preserved raw receipts. Different reviewer validates evidence; local checks cannot replace hardware/cloud/human gates.
 
+### launch-rewards: Launch Rewards
+
+Implement server-owned UTC daily and free/premium seasonal claims through existing transactional integration. No network ownership claims, no live sale or invented product IDs.
+
+Environment: local; skill: guildborne-items-crafting
+
+Write scopes: src/server/Config/LaunchRewards.luau, src/server/Systems/LaunchRewards.luau, src/client/UI/LaunchRewardsView.luau, tests/launch_rewards.luau, tests/run_launch_rewards.luau, production/launch/rewards.md
+
+Required checks: source-contract, regression, independent-review
+
+Dependencies: none
+
+Path rule server-authority: Reuse actual services; server owns combat/inventory/currency/allocation/rewards/guild/build/escrow. Preserve fencing/receipts/saves/disabled flags. No production cloud writes or commerce activation.
+
+Path rule native-client: Native Roblox UI/presentation only. Send intent, never damage/value/rewards. Coordinate actual UI/Controller modules, EN/TH states and cleanup.
+
+Path rule tooling: Use reviewed bounded local commands/tests. Studio/Forge planners do not launch models; paid/model subprocess, MCP mutation and installation require actual authorization/capability.
+
+Path rule production-evidence: Reconcile latest goals/registries/scopes. One shared ledger, claim before writes, immediate lease check and preserved raw receipts. Different reviewer validates evidence; local checks cannot replace hardware/cloud/human gates.
+
 ## Evidence gates
 
 audio-validation (audio): Record owned/licensed masters, required provider authorization, cue IDs and actual sync/mix/listening. Missing provider or files leaves pending.

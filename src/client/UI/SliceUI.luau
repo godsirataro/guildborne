@@ -7,7 +7,8 @@ local Art = require(game:GetService("ReplicatedStorage").Shared.Config.Art)
 local ClassBadge=require(script.Parent.ClassBadge)
 local ProjectTracker = require(game:GetService("ReplicatedStorage").Shared.Data.QuestTracker)
 
-return function(send: (string, any) -> ())
+-- Legacy fixture callbacks return no value; the live controller additionally returns a request ID.
+return function(send: any)
 	local player = Players.LocalPlayer
 	local gui = Instance.new("ScreenGui")
 	gui.Name = "GuildborneUI"; gui.ResetOnSpawn = false
@@ -154,6 +155,13 @@ return function(send: (string, any) -> ())
 		return table.concat(parts, " · ")
 	end
 	local builder=require(script.Parent.BuildView)(send,T,function() panel.Visible=true end)
+	-- Created lazily so unavailable worlds keep their current UI and do not load a preview rig.
+	local customization: any = nil
+	local function openAppearance(id: string?)
+		if busy or not snapshot or snapshot.status ~= "Active" or snapshot.catalog.AppearanceAvailable ~= true then return end
+		if not customization then customization = require(script.Parent.CharacterCustomizationUI)(gui, send, function() panel.Visible = true end) end
+		customization.SetBusy(busy); customization.Open(snapshot, id)
+	end
 	local drawExpansion=require(script.Parent.ExpansionView)({scroll=scroll,T=T,card=card,text=text,button=button,act=act,render=function(reset: boolean?) UI.Render(reset) end,
 		navigate=function(name: string) tab=name;UI.Render(true) end,explore=function() panel.Visible=false end,
 		build=function(data: any,kind: string,id: string?) builder.open(data,kind,id);panel.Visible=false end})
@@ -169,13 +177,16 @@ return function(send: (string, any) -> ())
 	local drawThemes=require(script.Parent.BuildingThemesView)({scroll=scroll,T=T,card=card,text=text,button=button,act=act,render=function(reset:boolean?)UI.Render(reset)end,navigate=function(name:string)tab=name;UI.Render(true)end})
 	local drawNovice=require(script.Parent.NoviceJourneyView)({scroll=scroll,T=T,card=card,text=text,button=button,act=act,render=function()UI.Render()end})
 	local drawCampaign=require(script.Parent.CampaignView)({scroll=scroll,T=T,card=card,text=text,button=button,act=act,render=function()UI.Render()end})
+	local drawLaunchRewards=require(script.Parent.LaunchRewardsView)({scroll=scroll,T=T,card=card,text=text,button=button,act=act})
 	local function guildHall(data:any)
 		local frame = card(scroll, T("Personal Guild · Hall Lv{level}", { level = data.hallLevel }))
 		button(frame, if language == "en" then "ภาษาไทย (TH)" else "English (EN)", not busy, function()
 			act("SetLanguage", { language = if language == "en" then "th" else "en" })
 		end)
 		text(frame, "Manage your adventurers, equip weapons, and send a party on short expeditions.")
-		if snapshot.catalog.HallUpgrades[data.hallLevel] then
+		if snapshot.catalog.ReleaseContent and data.hallLevel>=snapshot.catalog.ReleaseContent.MaxHall then
+			text(frame,if language=="th" then "ถึงขอบเขตหอกิลด์ของตัวอย่าง Lv1–35 แล้ว ความก้าวหน้าเดิมยังคงอยู่" else "The Lv1–35 preview Hall limit is reached. Previously earned progress is retained.",16)
+		elseif snapshot.catalog.HallUpgrades[data.hallLevel] then
 			local nextHall=snapshot.catalog.HallUpgrades[data.hallLevel]
 			text(frame,T("Character level cap")..": "..data.levelCap.." → "..(data.nextHallLevelCap or nextHall.To*5),17)
 			local costs = { T("{amount} Gold", { amount = nextHall.Gold }) }
@@ -337,6 +348,7 @@ return function(send: (string, any) -> ())
 
 	local dispatchRefresh=0
 	function UI.Tick()
+		if customization then customization.Tick() end
 		worldNotice.Visible=os.clock()<worldNoticeUntil and not MenuRouter.isBlocking() and not titleView.isOpen()
 		if (tab=="Dispatch" or tab=="Tavern") and snapshot and snapshot.data and not busy and panel.Visible and os.clock()-dispatchRefresh>5 then dispatchRefresh=os.clock();UI.Render() end
 		if countdown and snapshot and snapshot.data and snapshot.data.quests.active then
@@ -397,6 +409,11 @@ return function(send: (string, any) -> ())
 			if snapshot.status == "LeaseLost" then text(frame, "Rejoin to reload the authoritative profile.", 16) end
 			return
 		end
+		if (tab=="Guild" or tab=="LaunchRewards") and data.launchRewards then
+			button(scroll,if tab=="LaunchRewards" then T("Guild") else (if language=="th" then "รางวัลรายวันและซีซัน" else "Daily and season rewards"),not busy,function()
+				tab=if tab=="LaunchRewards" then "Guild" else "LaunchRewards";UI.Render(true)
+			end).Name="LaunchRewardsNavigation"
+		end
 		if tab == "Dialogue" and friendlyNpc and friendlyNpcs[friendlyNpc] then
 			local entry=friendlyNpcs[friendlyNpc]
 			local frame=card(scroll,if language=="th" then entry.nameTh.." · "..entry.roleTh else entry.name.." · "..entry.role)
@@ -424,6 +441,7 @@ return function(send: (string, any) -> ())
 			else
 				for _,id in ipairs(snapshot.catalog.JournalOrder) do
 					local def=snapshot.catalog.Journal[id]
+					if snapshot.catalog.ReleaseContent and snapshot.catalog.ReleaseContent.BlockedTasks[id] then continue end
 					if def.RequiresRegionalCombat and snapshot.catalog.RegionalCombatAvailable~=true then continue end
 					if def.NPC==entry.name and not data.settlement.journal[id] and def.Requires then
 						text(frame,T("Complete {quest} first",{quest=T(snapshot.catalog.Journal[def.Requires].Name)}),16)
@@ -431,6 +449,7 @@ return function(send: (string, any) -> ())
 				end
 			end
 			button(frame,if language=="th" then "ไว้คุยกันใหม่" else "See you soon",true,function()panel.Visible=false end).Name="CloseDialogue"
+		elseif tab=="LaunchRewards" then drawLaunchRewards(snapshot,busy)
 		elseif tab=="Islands" then drawIslands(snapshot.islands or {},busy,snapshot.islandVisitors or {})
 		elseif tab=="Themes" then drawThemes(data,busy)
 		elseif tab == "Land" then require(script.Parent.GuildLandView)({scroll=scroll,T=T,card=card,text=text,button=button,act=act,navigate=function(name: string)tab=name;UI.Render(true)end},data,snapshot.catalog,busy)
@@ -440,13 +459,16 @@ return function(send: (string, any) -> ())
 			settingsCard.Name="PresentationSettingsCard"
 			button(settingsCard, "Back to Guild", true, function() tab = "Guild"; UI.Render(true) end)
 			require(script.Parent.SettingsControls)(settingsCard, T)
+			if snapshot.catalog.AppearanceAvailable == true then
+				button(settingsCard, "Character appearance", not busy, function() openAppearance() end).Name = "OpenCharacterAppearance"
+			end
 			local collectionCard=card(scroll,"Cosmetic collection preview")
 			collectionCard.Name="CosmeticCollection"
 			require(script.Parent.CosmeticPreview)(collectionCard,T)
 		elseif tab == "Guild" then guild(data) elseif tab == "Party" then party(data) elseif tab == "Quests" then quests(data) elseif tab=="Inventory" then inventory(data) elseif tab=="Tavern" or tab=="Journal" or tab=="Dispatch" then drawSettlement(tab,data,snapshot.catalog,busy) else drawExpansion(tab,data,snapshot.catalog,busy) end
 		UI.Tick()
 	end
-	function UI.Update(view: any, message: string?)
+	function UI.Update(view: any, message: string?, responseToAction: boolean?)
 		local changed = not snapshot or snapshot.revision ~= view.revision or snapshot.status ~= view.status
 			or snapshot.problem ~= view.problem or snapshot.mode ~= view.mode or message ~= nil or view.navigate ~= nil
   local oldCampaign=snapshot and snapshot.data and snapshot.data.progression and snapshot.data.progression.campaign
@@ -457,6 +479,7 @@ return function(send: (string, any) -> ())
    if advanced then notice="Story progress saved.";noticeCode=nil;worldNoticeUntil=0;changed=true end
   end
 		snapshot = view; receivedAt = os.clock()
+		if customization then customization.Update(view, message, responseToAction) end
 		titleView.update(view)
 		if view.data then language = view.data.language or "en";builder.update(view.data) end
 		-- Polls refresh the clock without replacing controls while the player is tapping/scrolling.
@@ -494,19 +517,27 @@ return function(send: (string, any) -> ())
 	function UI.OpenJournalQuest(id:string)
 		journalFocus=id;tab="Journal";panel.Visible=true;UI.Render(true,"Journal_"..id)
 	end
-	function UI.SetBusy(value: boolean) busy = value; UI.Render() end
-	toggle.Activated:Connect(function() panel.Visible = not panel.Visible; toggle.Text = T(if panel.Visible then "Explore" else "Guild menu") end)
+	function UI.SetBusy(value: boolean) busy = value; if customization then customization.SetBusy(value) end; UI.Render() end
+	toggle.Activated:Connect(function()
+		if customization and customization.IsOpen() then customization.RequestClose(); return end
+		panel.Visible = not panel.Visible; toggle.Text = T(if panel.Visible then "Explore" else "Guild menu")
+	end)
 	local function openTracked()
 		if busy or titleView.isOpen() or not snapshot or snapshot.status~="Active" then return end
+		if customization and customization.IsOpen() then customization.RequestClose(); return end
 		journalFocus=tracked and tracked.id;tab=if tracked then tracked.tab else "Journal";panel.Visible=true
 		UI.Render(true,if tab=="Guild"and tracked then tracked.focus elseif tab=="Journal"and tracked then "Journal_"..tracked.id else nil)
 	end
 	tracker.Activated:Connect(openTracked)
 	UserInputService.InputBegan:Connect(function(input, processed)
-		if not processed and not titleView.isOpen() and input.KeyCode == Enum.KeyCode.M then panel.Visible = not panel.Visible; toggle.Text = T(if panel.Visible then "Explore" else "Guild menu") end
+		if not processed and not titleView.isOpen() and input.KeyCode == Enum.KeyCode.M then
+			if customization and customization.IsOpen() then customization.RequestClose()
+			else panel.Visible = not panel.Visible; toggle.Text = T(if panel.Visible then "Explore" else "Guild menu") end
+		end
 		if not processed and input.KeyCode==Enum.KeyCode.J then openTracked() end
 	end)
 	panel:GetPropertyChangedSignal("Visible"):Connect(function() toggle.Text=T(if panel.Visible then "Explore" else "Guild menu") end)
+	gui.Destroying:Connect(function() if customization then customization.Destroy(); customization = nil end end)
 	UI.Render()
 	return UI
 end

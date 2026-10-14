@@ -9,15 +9,18 @@ local Util = require(Shared.Util.TableUtil)
 local Protocol = require(Shared.Network.Protocol)
 local Content = require(script.Parent.Config.Content)
 local Runtime = require(script.Parent.Config.Runtime)
-local noviceEnabled=Runtime.NoviceJourney==true and RunService:IsStudio() and game.PlaceId==0 and game.GameId==0 and Runtime.StudioPersistence=="Memory"
-local ironveilEnabled=noviceEnabled and Runtime.IronveilJourney==true
-local ashenEnabled=ironveilEnabled and Runtime.AshenJourney==true
+local Release=require(script.Parent.Systems.ReleasePolicy)(require(script.Parent.Config.ReleaseContent)).resolve(Runtime,{isStudio=RunService:IsStudio(),placeId=game.PlaceId,gameId=game.GameId})
+local launchEnabled=Release.Enabled==true
+local noviceEnabled=(Runtime.NoviceJourney==true or launchEnabled) and RunService:IsStudio() and game.PlaceId==0 and game.GameId==0 and Runtime.StudioPersistence=="Memory"
+local ironveilEnabled=noviceEnabled and (Runtime.IronveilJourney==true or launchEnabled)
+local ashenEnabled=ironveilEnabled and Runtime.AshenJourney==true and not launchEnabled
 local towerEnabled=ashenEnabled and Runtime.TowerJourney==true
 local crosshavenEnabled=towerEnabled and Runtime.CrosshavenJourney==true
 local archiveHeartEnabled=crosshavenEnabled and Runtime.ArchiveHeartJourney==true
 Content.RegionalCombatAvailable=RunService:IsStudio() and game.PlaceId==0 and game.GameId==0 and Runtime.StudioPersistence=="Memory"
 Content.StatusAllocationAvailable=Content.RegionalCombatAvailable
 Content.RecruitmentTemplatesAvailable=Content.RegionalCombatAvailable
+Content.AppearanceAvailable=RunService:IsStudio() and game.PlaceId==0 and game.GameId==0 and Runtime.StudioPersistence=="Memory"
 if Runtime.PrivateAcceptance.Enabled and not RunService:IsStudio() and game.PrivateServerId=="" then
 	print("[Guildborne] Private acceptance lobby: profile loading disabled")
 	return -- Dedicated QA launcher (excluded from default build) owns teleport admission.
@@ -60,6 +63,7 @@ local PermanentPassCatalog=require(script.Parent.Systems.PermanentPassCatalog)(r
 local PermanentEntitlements=if Runtime.PermanentPassesEnabled then require(script.Parent.Systems.PermanentEntitlements)(PermanentPassCatalog,GuildLand,BuildingThemes,Util) else nil
 local PermanentPassOffers=require(script.Parent.Systems.PermanentPassOffers)(PermanentPassCatalog,GuildLand,BuildingThemes)
 local Economy = require(script.Parent.Services.EconomyService)(Content, Util)
+local LaunchRewards=require(script.Parent.Systems.LaunchRewards)(Content,Util,Economy,require(script.Parent.Config.LaunchRewards))
 local NoviceChapter=require(script.Parent.Config.NoviceChapter)
 local NoviceStory=if noviceEnabled then require(script.Parent.Services.NoviceStoryService)(Content,Util,Economy,NoviceChapter)else nil
 local CampaignArcs:{any}={require(script.Parent.Config.ChapterOne)}
@@ -69,16 +73,20 @@ if towerEnabled then table.insert(CampaignArcs,require(script.Parent.Config.Chap
 if crosshavenEnabled then table.insert(CampaignArcs,require(script.Parent.Config.ChapterFive))end
 if archiveHeartEnabled then table.insert(CampaignArcs,require(script.Parent.Config.ChapterSix))end
 local CampaignChapter=require(script.Parent.Config.CampaignSequence)(CampaignArcs)
-local Campaign=if noviceEnabled then require(script.Parent.Services.CampaignService)(Content,Util,Economy,CampaignChapter)else nil
-local Schema = require(script.Parent.Systems.ProfileSchema)(Content, Util, Gear, Expansion, ValidateExpansion,MarketEscrow,GuildLand,noviceEnabled,NoviceStory,Campaign)
+local FullCampaignChapter=if launchEnabled then require(script.Parent.Config.CampaignSequence)({require(script.Parent.Config.ChapterOne),require(script.Parent.Config.ChapterTwo),require(script.Parent.Config.ChapterThree),require(script.Parent.Config.ChapterFour),require(script.Parent.Config.ChapterFive),require(script.Parent.Config.ChapterSix)}) else nil
+local Campaign=if noviceEnabled then require(script.Parent.Services.CampaignService)(Content,Util,Economy,CampaignChapter,FullCampaignChapter)else nil
+local AppearancePolicy=if Content.AppearanceAvailable then require(script.Parent.Services.CharacterAppearance.PreviewPolicy) else nil
+local Appearance=if AppearancePolicy then require(script.Parent.Services.CharacterAppearance.AppearanceService)(require(Shared.Data.AppearanceCatalog),require(Shared.Data.AppearanceRules),AppearancePolicy) else nil
+local Schema = require(script.Parent.Systems.ProfileSchema)(Content, Util, Gear, Expansion, ValidateExpansion,MarketEscrow,GuildLand,noviceEnabled,NoviceStory,Campaign,Appearance,LaunchRewards)
 local CombatConfig=require(script.Parent.Config.Combat)
 for id,ability in pairs(Expansion.Abilities) do CombatConfig.Abilities[id]=ability end
 require(script.Parent.Systems.CombatValidator)(Content,CombatConfig,require(script.Parent.Systems.CombatStats)(Content,CombatConfig,Gear))
 Util.freeze(CombatConfig)
 local CombatRewards=require(script.Parent.Systems.CombatRewards)(Content,CombatConfig,Util,Economy,require(script.Parent.Config.AdventureRewards))
 local Progression = require(script.Parent.Systems.Progression)(Content, Gear)
-local ExpansionService=require(script.Parent.Services.ExpansionService)(Content,Util,Economy,Expansion,LandPlacement,BuildingThemes)
-local Commands = require(script.Parent.Systems.Commands)({ Content=Content,Campaign=Campaign,NoviceStory=NoviceStory, Status=require(script.Parent.Services.StatusPointService)(Content,StatusPoints,Expansion), GuildLand=require(script.Parent.Services.GuildLandService)(GuildLand), Dispatch=require(script.Parent.Services.DispatchService)(Content,Economy,Util), Settlement=require(script.Parent.Services.SettlementService)(Content,Economy,Util), Expansion=ExpansionService, Protocol = Protocol, Util = Util, Progression = Progression,
+local HeroMentor=if launchEnabled then require(script.Parent.Systems.HeroMentorTrial)(Expansion,Util) else nil
+local ExpansionService=require(script.Parent.Services.ExpansionService)(Content,Util,Economy,Expansion,LandPlacement,BuildingThemes,HeroMentor)
+local Commands = require(script.Parent.Systems.Commands)({ Release=Release,LaunchRewards=if launchEnabled then LaunchRewards else nil,Appearance=Appearance,Content=Content,Campaign=Campaign,NoviceStory=NoviceStory, Status=require(script.Parent.Services.StatusPointService)(Content,StatusPoints,Expansion), GuildLand=require(script.Parent.Services.GuildLandService)(GuildLand), Dispatch=require(script.Parent.Services.DispatchService)(Content,Economy,Util), Settlement=require(script.Parent.Services.SettlementService)(Content,Economy,Util), Expansion=ExpansionService, Protocol = Protocol, Util = Util, Progression = Progression,
 	Equipment = require(script.Parent.Services.EquipmentService)(Content, Economy, Gear),
 	Character = require(script.Parent.Systems.PlayerCharacter)(Content),
 	Adventurers = require(script.Parent.Services.AdventurerService)(Content, Economy, Util),
@@ -111,7 +119,7 @@ else
 		warn("[Guildborne] Persistence not configured: set a permitted development/staging universe in Config/Runtime.")
 	end
 end
-local Data = require(script.Parent.Services.PlayerDataService)({ PermanentEntitlements=PermanentEntitlements,Campaign=Campaign,NoviceStory=NoviceStory,MarketEscrow=MarketEscrow, Util = Util, Content = Content, Config = Runtime, CombatRewards = CombatRewards, Expansion=ExpansionService,
+local Data = require(script.Parent.Services.PlayerDataService)({ HeroMentor=HeroMentor,PermanentEntitlements=PermanentEntitlements,Campaign=Campaign,NoviceStory=NoviceStory,MarketEscrow=MarketEscrow, Util = Util, Content = Content, Config = Runtime, CombatRewards = CombatRewards, Expansion=ExpansionService,
 	Schema = Schema, Protocol = Protocol, Commands = Commands, Store = store, AuditStore = auditStore,
 	Now = os.time, Wait = task.wait, Jitter = function() return math.random() * 0.15 end, Log = log,
 	OnCommitted = function(userId: number, events: any)
@@ -121,7 +129,7 @@ local Data = require(script.Parent.Services.PlayerDataService)({ PermanentEntitl
 local bestiary=require(script.Parent.Systems.EnemyProfiles)(CombatConfig).catalog(Content)
 bestiary.Regions=require(script.Parent.Systems.AdventureFieldGuide)(require(script.Parent.Config.AdventureEncounters),require(script.Parent.Config.AdventureEnemyProfiles),require(script.Parent.Config.AdventureRewards),require(script.Parent.Systems.AdventureStats),require(Shared.Config.City).RegionOrder)
 bestiary.RegionalCombatAvailable=RunService:IsStudio() and game.PlaceId==0 and game.GameId==0 and Runtime.StudioPersistence=="Memory"
-local Project = require(script.Parent.Systems.ViewProjection)(Content, Progression, Util, Expansion, bestiary,{rules=GuildLand,catalog=require(script.Parent.Config.GuildLand)},if noviceEnabled then NoviceChapter else nil,if noviceEnabled then CampaignChapter else nil,{Enabled=Runtime.PermanentPassesEnabled,Catalog=PermanentPassCatalog,Offers=PermanentPassOffers})
+local Project = require(script.Parent.Systems.ViewProjection)(Content, Progression, Util, Expansion, bestiary,{rules=GuildLand,catalog=require(script.Parent.Config.GuildLand)},if noviceEnabled then NoviceChapter else nil,if noviceEnabled then CampaignChapter else nil,{Enabled=Runtime.PermanentPassesEnabled,Catalog=PermanentPassCatalog,Offers=PermanentPassOffers},{Service=Appearance,Policy=AppearancePolicy},{Release=Release,Mentor=HeroMentor,Rewards=if launchEnabled then LaunchRewards else nil})
 local Network: any
 local PermanentPassRuntime:any
 local campaignWorld:any
@@ -130,7 +138,7 @@ local ashenWorld:any
 local towerWorld:any
 local crosshavenWorld:any
 local archiveHeartWorld:any
-local World = require(script.Parent.Services.WorldService).new(function(player: Player, tab: string)
+local World:any = require(script.Parent.Services.WorldService).new(function(player: Player, tab: string)
 	if Network then Network.Send(player, nil, nil, nil, tab) end
 end, function(player: Player, deathId: string, members: {string},encounterId:string?): boolean
 	local command: any=nil
@@ -173,7 +181,7 @@ end, function(player:Player)
 		if outcome=="Committed" then if Network then Network.Send(player) end;Data.FlushAudit(player.UserId);if campaignWorld then campaignWorld.Victory(player,ticket)end;if ironveilWorld then ironveilWorld.Victory(player,ticket)end;if ashenWorld then ashenWorld.Victory(player,ticket)end end
 		return outcome
 	end
-end)
+end,Release)
 local closing = false
 local started: { [Player]: boolean } = {}
 local function load(player: Player): string
@@ -221,6 +229,20 @@ if noviceEnabled then
  World.PlayerAction=function(player:Player,action:string,actorId:string?):(boolean,string)
   local ok,code=playerAction(player,action,actorId);if ok then campaignWorld.Order(player,action,actorId)end;return ok,code
  end
+end
+
+if HeroMentor then
+ local mentorWorld=require(script.Parent.Services.HeroMentorWorld)({Data=Data,World=World,Trial=HeroMentor,
+  Notify=function(player:Player,code:string?)Network.Send(player,code)end,
+  MakeReceipt=function(userId:number,receipt:any,epoch:any,token:any)return require(script.Parent.Services.HeroMentorReceiptAdapter)(Data,userId,receipt,Util,epoch,token)end})
+ World.HeroMentorIntent=mentorWorld.Intent
+ World.HeroMentorState=mentorWorld.State
+ local validate,remove=World.ValidateIntent,World.Remove
+ World.ValidateIntent=function(player:Player,action:string,args:any):string?
+  if mentorWorld.Active(player) and not ({GetState=true,RetrySave=true,CancelHeroMentor=true})[action]then return "HeroMentorActive"end
+  return validate(player,action,args)
+ end
+ World.Remove=function(player:Player)mentorWorld.Remove(player);remove(player)end
 end
 
 require(script.Parent.Services.PurchaseService)(Content,Data,Network)

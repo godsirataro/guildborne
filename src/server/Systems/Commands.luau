@@ -5,7 +5,19 @@ return function(deps: any)
 	function Commands.apply(record: any, command: any, now: number): (any, any, any)
 		local valid, code = deps.Protocol.validate(command)
 		if not valid then return nil, { code = code }, {} end
+		-- Cosmetic commits do not heal injuries, advance journals/tutorials, alter gear,
+		-- or change ancestry. Existing persistence provides revision fencing and replay.
+		if command.action=="CommitAppearance" then
+			if not deps.Appearance then return nil,{code="AppearanceUnavailable"},{} end
+			local candidate=deps.Util.copy(record)
+			local events={}
+			local problem=deps.Appearance.apply(candidate.data,command.args,function(name: string,payload: any) table.insert(events,{name=name,payload=payload}) end)
+			if problem then return nil,{code=problem},{} end
+			local actor=if command.args.actorId=="player" then candidate.data.character else candidate.data.adventurers[command.args.actorId]
+			return candidate,{code="OK",appearanceActorId=command.args.actorId,appearanceRevision=actor.appearanceRevision},events
+		end
 		if deps.Content then local gate=deps.Content.NoviceActionProblem(record.data,command.action);if gate then return nil,{code=gate},{} end end
+		if deps.Release and deps.Release.Enabled then local gate=deps.Release.problem(record.data,command.action,command.args);if gate then return nil,{code=gate},{} end end
 		local copy = deps.Util.copy(record)
 		local data = copy.data
 		for _,hero in pairs(data.adventurers) do if hero.condition=="Injured" and now>=(hero.injuredUntil or math.huge) then hero.condition="Healthy";hero.injuredUntil=nil end end
@@ -22,7 +34,9 @@ return function(deps: any)
 		local function emit(name: string, payload: any) table.insert(events, { name = name, payload = payload }) end
 		local problem: string? = nil
 		local result: any = { code = "OK" }
-		if command.action=="AllocateStatus" or command.action=="ResetBuildPoints" then
+		if command.action=="ClaimDailyReward" or command.action=="ClaimSeasonReward" then
+			if deps.LaunchRewards then problem,result.reward=deps.LaunchRewards.apply(data,command.action,command.args,now,emit) else problem="LaunchRewardsUnavailable" end
+		elseif command.action=="AllocateStatus" or command.action=="ResetBuildPoints" then
 			problem=if deps.Status then deps.Status.apply(data,command.action,command.args,emit) else "StatusUnavailable"
 		elseif ({SetGuildAccess=true,UnlockGuildPlot=true,ContributeGuildPlot=true,OpenGuildPlot=true})[command.action] then
 			problem=if deps.GuildLand then deps.GuildLand.apply(data,command.action,command.args,emit) else "LandUnavailable"

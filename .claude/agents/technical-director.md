@@ -100,6 +100,32 @@ Dependencies: none
 
 Path rule production-evidence: Reconcile latest goals/registries/scopes. One shared ledger, claim before writes, immediate lease check and preserved raw receipts. Different reviewer validates evidence; local checks cannot replace hardware/cloud/human gates.
 
+### launch-integration: Launch Integration
+
+Coordinate approved Public roadmap; integrate two chapters and reward UI in Memory candidate; preserve Staging/public flags. Generate bounded original art candidates only with explicit pending fit/import gates.
+
+Environment: studio; skill: guildborne-director
+
+Write scopes: src/server/ServerBootstrap.server.luau, src/server/Systems/Commands.luau, src/server/Systems/ProfileSchema.luau, src/server/Systems/ViewProjection.luau, src/shared/Network/Protocol.luau, src/shared/Config/Localization.luau, src/server/Config/Content.luau, src/client/UI/SliceUI.luau, src/client/Controllers/SliceController.luau, tests/run.luau, tests/launch_transaction_integration.luau, tests/studio_launch_rewards.luau, tools/build_integration_preview.py, production/launch/integration, production/LAUNCH_PLAN.md, production/launch/backlog.json, production/LATEST_GOALS.md, tests/agentic/test_forge.py, production/studio, .codex/agents, .claude/agents, tools/blender_launch_bodies.py, production/launch/characters, assets/characters/launch-candidates, src/shared/Data/CampaignViewState.luau, src/shared/Data/QuestTracker.luau, src/shared/Data/JournalViewState.luau, src/shared/Data/QuestNpcState.luau, src/client/UI/SettlementView.luau, src/client/UI/ExpansionView.luau, tests/launch_availability.luau, src/server/Services/WorldService.luau, src/server/Services/RegionalWorld.luau, src/server/Services/ExpansionWorld.luau, src/client/Controllers/CityNavigation.luau, src/client/UI/BestiaryView.luau
+
+Required checks: source-contract, regression, independent-review
+
+Dependencies: none
+
+Path rule server-authority: Reuse actual services; server owns combat/inventory/currency/allocation/rewards/guild/build/escrow. Preserve fencing/receipts/saves/disabled flags. No production cloud writes or commerce activation.
+
+Path rule native-client: Native Roblox UI/presentation only. Send intent, never damage/value/rewards. Coordinate actual UI/Controller modules, EN/TH states and cleanup.
+
+Path rule shared-contracts: Shared definitions are client-safe. Preserve IDs/earned ancestry and progression separately from cosmetic IDs. Reconcile Novice 10/35/70 and Hall contracts.
+
+Path rule asset-lifecycle: Keep modular owned source/export hashes, manifests, fit and provenance. Generated/Blender/import/Studio/human states differ. Never invent runtime IDs or copy competitor assets/fonts.
+
+Path rule tooling: Use reviewed bounded local commands/tests. Studio/Forge planners do not launch models; paid/model subprocess, MCP mutation and installation require actual authorization/capability.
+
+Path rule production-evidence: Reconcile latest goals/registries/scopes. One shared ledger, claim before writes, immediate lease check and preserved raw receipts. Different reviewer validates evidence; local checks cannot replace hardware/cloud/human gates.
+
+Path rule agent-instructions: Generate Codex agents from canonical Studio spec/existing skills with inherited model/permissions, no arbitrary hooks. Use actual authorized host delegation or sequential work; planners do not start workers.
+
 ## Evidence gates
 
 audio-validation (audio): Record owned/licensed masters, required provider authorization, cue IDs and actual sync/mix/listening. Missing provider or files leaves pending.

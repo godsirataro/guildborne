@@ -1,0 +1,38 @@
+{
+  "pending": {
+    "content": [
+      {
+        "type": "text",
+        "text": "{\"cancel\":\"SavePending\",\"attributes\":{\"HeroHealth\":98,\"ActorId\":\"h:3\",\"Status\":\"Saving\",\"PathId\":\"guardian\",\"EnemyHealth\":0,\"ArtEffectProven\":true},\"active\":true,\"status\":\"Saving\",\"rows\":{\"1\":{\"code\":\"HeroMentorFailed\",\"kind\":\"notice\"},\"3\":{\"code\":\"HeroMentorComplete\",\"kind\":\"notice\"},\"2\":{\"pathId\":\"berserker\",\"kind\":\"fixture_commit\",\"actorId\":\"h:1\",\"code\":\"OK\"},\"5\":{\"code\":\"HeroMentorComplete\",\"kind\":\"notice\"},\"4\":{\"pathId\":\"cleric\",\"kind\":\"fixture_commit\",\"actorId\":\"h:2\",\"code\":\"OK\"}}}"
+      }
+    ],
+    "isError": false
+  },
+  "guardian": {
+    "content": [
+      {
+        "type": "text",
+        "text": "{\"models\":{\"1\":{\"id\":\"a:Archer\",\"anchored\":true,\"health\":22,\"parent\":\"Heroes\"},\"3\":{\"id\":\"h:1\",\"anchored\":false,\"health\":132,\"parent\":\"Heroes\"},\"2\":{\"id\":\"a:Mage\",\"anchored\":true,\"health\":20,\"parent\":\"Heroes\"},\"5\":{\"id\":\"h:3\",\"anchored\":false,\"health\":142,\"parent\":\"Heroes\"},\"4\":{\"id\":\"h:2\",\"anchored\":false,\"health\":126,\"parent\":\"Heroes\"}},\"arenaExists\":false,\"active\":false,\"rows\":{\"1\":{\"code\":\"HeroMentorFailed\",\"kind\":\"notice\"},\"3\":{\"code\":\"HeroMentorComplete\",\"kind\":\"notice\"},\"2\":{\"pathId\":\"berserker\",\"kind\":\"fixture_commit\",\"actorId\":\"h:1\",\"code\":\"OK\"},\"5\":{\"code\":\"HeroMentorComplete\",\"kind\":\"notice\"},\"4\":{\"pathId\":\"cleric\",\"kind\":\"fixture_commit\",\"actorId\":\"h:2\",\"code\":\"OK\"},\"7\":{\"code\":\"HeroMentorComplete\",\"kind\":\"notice\"},\"6\":{\"pathId\":\"guardian\",\"kind\":\"fixture_commit\",\"actorId\":\"h:3\",\"code\":\"OK\"}},\"position\":\"5000, 2.998046875, 6\",\"proof\":{\"skills\":[],\"mentorProof\":{\"version\":1,\"pathId\":\"guardian\",\"trialId\":\"a9dd8acd-8d27-48f1-98a7-f0a28b9e818f\"},\"tier\":1}}"
+      }
+    ],
+    "isError": false
+  },
+  "cancelSession": {
+    "content": [
+      {
+        "type": "text",
+        "text": "{\"recordUnchanged\":true,\"cancel\":\"OK\",\"activeAfterEpochChange\":false,\"repeatedCancel\":\"OK\",\"start\":\"OK\",\"rows\":{\"1\":{\"code\":\"HeroMentorFailed\",\"kind\":\"notice\"},\"3\":{\"code\":\"HeroMentorComplete\",\"kind\":\"notice\"},\"2\":{\"pathId\":\"berserker\",\"kind\":\"fixture_commit\",\"actorId\":\"h:1\",\"code\":\"OK\"},\"5\":{\"code\":\"HeroMentorComplete\",\"kind\":\"notice\"},\"4\":{\"pathId\":\"cleric\",\"kind\":\"fixture_commit\",\"actorId\":\"h:2\",\"code\":\"OK\"},\"7\":{\"code\":\"HeroMentorComplete\",\"kind\":\"notice\"},\"6\":{\"pathId\":\"guardian\",\"kind\":\"fixture_commit\",\"actorId\":\"h:3\",\"code\":\"OK\"},\"9\":{\"code\":\"HeroMentorCancelled\",\"kind\":\"notice\"},\"8\":{\"code\":\"HeroMentorCancelled\",\"kind\":\"notice\"}},\"arenaExists\":false,\"sessionChangedStart\":\"OK\"}"
+      }
+    ],
+    "isError": false
+  },
+  "acquisitionFailure": {
+    "content": [
+      {
+        "type": "text",
+        "text": "{\"arenaExists\":false,\"heroes\":{\"1\":{\"id\":\"h:2\",\"anchored\":false,\"parent\":\"Heroes\"},\"3\":{\"id\":\"h:1\",\"anchored\":false,\"parent\":\"Heroes\"},\"2\":{\"id\":\"h:3\",\"anchored\":false,\"parent\":\"Heroes\"}},\"active\":false,\"released\":1,\"result\":\"HeroMentorUnavailable\"}"
+      }
+    ],
+    "isError": false
+  }
+}

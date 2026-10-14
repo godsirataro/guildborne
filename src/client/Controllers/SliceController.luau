@@ -31,6 +31,15 @@ return function(makeUI: any)
 		InventoryFull = "Inventory is full. Your quest remains claimable; no reward was consumed.",
 		AuditBacklog = "Your saved history is catching up. Please retry later.", InternalError = "An unexpected error paused this session. Rejoin safely.",
 	}
+	messages.DailyAlreadyClaimed="Today's daily reward was already saved."
+	messages.SeasonAlreadyClaimed="This season reward was already saved."
+	messages.SeasonTierLocked="Complete the required story chapter first."
+	messages.PremiumRequired="Premium rewards are unavailable in this preview."
+	messages.LaunchRewardsUnavailable="Rewards are unavailable in this build."
+	messages.ReleaseContentUnavailable="This destination or action is outside the Lv1–35 preview."
+	messages.ReleaseHallCap="This preview supports Hall levels up to 4."
+	messages.ClassMentorRequired="Complete the Class2 mentor chapter first."
+	messages.HeroMentorUnavailable="Hero Class2 mentor trials are not available in this preview."
 	messages.CampaignHallLocked="Complete the guild quest and claim the required Hall permit first."
 	messages.CampaignCompanionParticipation="Combat rewards saved. For this story objective, bring a companion into the fight and defeat the enemy again."
 	messages.CampaignCompanionUnavailable="Combat rewards saved. Keep a participating companion alive and nearby, then defeat the enemy again."
@@ -123,11 +132,12 @@ return function(makeUI: any)
 	messages.NoPointsToReset="There are no spent SP or AP to reset."
 	messages.FinishYourExpedition="Finish your expedition before changing points."
 	messages.UseBuildPointReset="Use the free SP and AP reset in Status points."
-	local function send(action: string, args: any)
+	local function send(action: string, args: any): string?
 		if pending and action ~= "GetState" then return end
 		local requestId = HttpService:GenerateGUID(false)
 		if action ~= "GetState" then pending = requestId; sentAt = os.clock(); ui.SetBusy(true) end
 		command:FireServer({ version = 1, requestId = requestId, action = action, revision = revision, args = args })
+		return requestId
 	end
 	ui = makeUI(send)
 	local questMarkers=require(script.Parent.QuestNpcMarkers)()
@@ -138,12 +148,17 @@ return function(makeUI: any)
 		resourceMarkers.Update(view)
 		revision = view.revision
 		if pending and (view.requestId == pending or os.clock() - sentAt > 10) then pending = nil; ui.SetBusy(false) end
-		local message = if view.code then messages[view.code] or Localization.translate(
-			if view.data then view.data.language or "en" else "en", "Please retry or rejoin. Code: {code}", { code = view.code }) else nil
-		if view.result and view.result.reward then message = "Rewards saved. Open Quests to review your result." end
+		local message: string? = nil
+		if view.code then
+			local language = if view.data then view.data.language or "en" else "en"
+			local translated = Localization.translate(language, view.code)
+			message = messages[view.code] or (if translated ~= view.code then translated else Localization.translate(
+				language, "Please retry or rejoin. Code: {code}", { code = view.code }))
+		end
+		if view.result and view.result.reward then message = "Rewards saved." end
 		local cue=feedback(view,responseToAction);if cue then Audio.Play(cue) end
 		if view.navigate=="CityFuture" or view.navigate=="Market" then view=table.clone(view);view.navigate=nil end
-		ui.Update(view, message)
+		ui.Update(view, message, responseToAction)
 	end)
 	send("GetState", {})
 	task.spawn(function()

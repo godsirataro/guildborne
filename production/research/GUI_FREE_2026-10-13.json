@@ -1,0 +1,703 @@
+{
+  "schemaVersion": 1,
+  "title": "Guildborne free GUI and adjacent asset research",
+  "reviewDate": "2026-10-13",
+  "timezone": "Asia/Bangkok",
+  "status": "RESEARCH_AND_ADAPTATION_PLAN_ONLY",
+  "sourceHead": "4cc9a8232e0fd9ae7bf517983c274e800e8ad4a4",
+  "sourceCheckout": "DIRTY_EXISTING_CHARACTER_WORK",
+  "scope": "FREE_ONLY_RESEARCH_NO_ACQUISITION",
+  "counts": {
+    "liveStoreListings": 11,
+    "guiCandidates": 8,
+    "libraryStoreRoutes": 2,
+    "pluginCandidates": 1,
+    "newCC0Packs": 6,
+    "upstreamLibraries": 4,
+    "upstreamOnlyLibraries": 2,
+    "uniqueNewCatalogRecords": 19,
+    "builtInDocumentationEntries": 4
+  },
+  "countingRule": "11 Store + 6 CC0 + 2 upstream-only =19. TopbarPlus/React each have a Store record and upstream library record but count once. Built-in documentation excluded from catalog.",
+  "priorCatalog": "production/research/GUILDBORNE_FREE_ASSET_KIT_2026-10-12.json",
+  "notes": [
+    "Visible free route confirms acquisition offering, not rights clearance, native hierarchy, source safety or fit.",
+    "Creator Store dates are live browser display in Asia/Bangkok; indexed UTC dates may be one day earlier.",
+    "Missing technical counts are null, not zero. Store script counts do not inventory nested modules or dependencies.",
+    "Features are author claims unless identified as source findings. Mobile-ready/typewriter/native claims have not been playtested.",
+    "Kenney counts are files including possible variants, not unique components. Archive formats/fonts not inspected; no font distribution.",
+    "Free source does not imply exclusive ownership. Redesign Guildborne palette/shapes/icons and preserve required licences.",
+    "No assets acquired/downloaded/imported/uploaded/installed/executed. Runtime IDs and pinned dependency versions remain null.",
+    "No current baseline game tests, Studio, physical devices or human art acceptance claimed by this research."
+  ],
+  "storeItems": [
+    {
+      "assetId": "13595046452",
+      "title": "Loading Screen",
+      "creator": "Roblox Code Samples / @DevelopmentDeadline",
+      "url": "https://create.roblox.com/store/asset/13595046452",
+      "kind": "gui_candidate",
+      "freeEvidence": "LIVE_GET_MODEL",
+      "created": "2023-05-30",
+      "updated": "2023-06-21",
+      "technical": {
+        "scriptCount": 1,
+        "audioCount": null,
+        "triangleCount": null,
+        "verticesCount": null,
+        "decalCount": null
+      },
+      "technicalDetailsVisible": true,
+      "authorClaim": "ตัวอย่างหน้าจอโหลด มีข้อความสถานะและ spinner; ผู้สร้างระบุให้วางใน ReplicatedFirst",
+      "adaptation": "เปลี่ยนโลโก้/กรอบ/ข้อความ TH–EN; progress ต้องสะท้อนงานโหลดจริง",
+      "licenseClass": "official_sample",
+      "licenseClearance": "PENDING_PAYLOAD_AND_DEPENDENCY_REVIEW",
+      "runtimeId": null,
+      "payloadInspected": false,
+      "downloaded": false,
+      "imported": false,
+      "studioTested": false,
+      "deviceTested": false,
+      "nativeDescendantsVerified": false
+    },
+    {
+      "assetId": "129964615928538",
+      "title": "NotificationKit",
+      "creator": "@biootoxin495",
+      "url": "https://create.roblox.com/store/asset/129964615928538",
+      "kind": "gui_candidate",
+      "freeEvidence": "LIVE_GET_MODEL",
+      "created": "2026-08-06",
+      "updated": "2026-08-06",
+      "technical": {
+        "scriptCount": null,
+        "audioCount": null,
+        "triangleCount": null,
+        "verticesCount": null,
+        "decalCount": null
+      },
+      "technicalDetailsVisible": false,
+      "authorClaim": "ผู้สร้างระบุ native UI, toast/action, channels และ queue/priority policies",
+      "adaptation": "ใช้แจ้ง loot/quest/craft หลังรับผลจาก server; จัดคิวและ cleanup ให้เข้ากับ UI เดิม",
+      "licenseClass": "community_no_named_license",
+      "licenseClearance": "PENDING_PAYLOAD_AND_DEPENDENCY_REVIEW",
+      "runtimeId": null,
+      "payloadInspected": false,
+      "downloaded": false,
+      "imported": false,
+      "studioTested": false,
+      "deviceTested": false,
+      "nativeDescendantsVerified": false
+    },
+    {
+      "assetId": "18419395844",
+      "title": "Easy Dialogue System",
+      "creator": "@xyzdrej",
+      "url": "https://create.roblox.com/store/asset/18419395844",
+      "kind": "gui_candidate",
+      "freeEvidence": "LIVE_GET_MODEL",
+      "created": "2024-07-10",
+      "updated": "2024-07-11",
+      "technical": {
+        "scriptCount": 1,
+        "audioCount": 3,
+        "triangleCount": null,
+        "verticesCount": null,
+        "decalCount": null
+      },
+      "technicalDetailsVisible": true,
+      "authorClaim": "โพสต์ต้นฉบับระบุ Dialogue ScreenGui, typewriter และปุ่มเดินบทสนทนา",
+      "adaptation": "ใช้แนวทางแสดงบทพูด; ตรวจ TH graphemes/touch/gamepad และคง quest callbacks เดิม",
+      "licenseClass": "community_no_named_license",
+      "licenseClearance": "PENDING_PAYLOAD_AND_DEPENDENCY_REVIEW",
+      "runtimeId": null,
+      "payloadInspected": false,
+      "downloaded": false,
+      "imported": false,
+      "studioTested": false,
+      "deviceTested": false,
+      "nativeDescendantsVerified": false
+    },
+    {
+      "assetId": "9384556526",
+      "title": "Customizable Minimap",
+      "creator": "@91repz",
+      "url": "https://create.roblox.com/store/asset/9384556526",
+      "kind": "gui_candidate",
+      "freeEvidence": "LIVE_GET_MODEL",
+      "created": "2022-04-16",
+      "updated": "2022-04-16",
+      "technical": {
+        "scriptCount": 2,
+        "audioCount": null,
+        "triangleCount": 14,
+        "verticesCount": 28,
+        "decalCount": null
+      },
+      "technicalDetailsVisible": true,
+      "authorClaim": "ผู้สร้างเดิมระบุเป็น minimap ปรับแต่งได้; วิธี render ยังไม่ตรวจ",
+      "adaptation": "ต่อพิกัดและ markers ของ CityNavigation; จำกัดการ update/ต้นทุน render",
+      "licenseClass": "community_no_named_license",
+      "licenseClearance": "PENDING_PAYLOAD_AND_DEPENDENCY_REVIEW",
+      "runtimeId": null,
+      "payloadInspected": false,
+      "downloaded": false,
+      "imported": false,
+      "studioTested": false,
+      "deviceTested": false,
+      "nativeDescendantsVerified": false
+    },
+    {
+      "assetId": "94517727460767",
+      "title": "Settings GUI ADVANCED V1.6",
+      "creator": "@xBlu3_V3bxs10",
+      "url": "https://create.roblox.com/store/asset/94517727460767",
+      "kind": "gui_candidate",
+      "freeEvidence": "LIVE_GET_MODEL",
+      "created": "2025-12-24",
+      "updated": "2026-04-15",
+      "technical": {
+        "scriptCount": 3,
+        "audioCount": null,
+        "triangleCount": 14,
+        "verticesCount": 28,
+        "decalCount": 1
+      },
+      "technicalDetailsVisible": true,
+      "authorClaim": "คำอธิบายระบุ audio/graphics/UI scaling และแก้สี/ข้อความ/layout ได้",
+      "adaptation": "ศึกษา slider; bind Master/UI/Combat/Music และ VFX/motion settings เดิม",
+      "licenseClass": "community_no_named_license",
+      "licenseClearance": "PENDING_PAYLOAD_AND_DEPENDENCY_REVIEW",
+      "runtimeId": null,
+      "payloadInspected": false,
+      "downloaded": false,
+      "imported": false,
+      "studioTested": false,
+      "deviceTested": false,
+      "nativeDescendantsVerified": false
+    },
+    {
+      "assetId": "124873348702500",
+      "title": "Player Profile Card UI",
+      "creator": "@xBlu3_V3bxs10",
+      "url": "https://create.roblox.com/store/asset/124873348702500",
+      "kind": "gui_candidate",
+      "freeEvidence": "LIVE_GET_MODEL",
+      "created": "2025-12-24",
+      "updated": "2025-12-24",
+      "technical": {
+        "scriptCount": 1,
+        "audioCount": null,
+        "triangleCount": 14,
+        "verticesCount": 28,
+        "decalCount": 1
+      },
+      "technicalDetailsVisible": true,
+      "authorClaim": "ผู้สร้างระบุ avatar/ชื่อ/UserId และ playtime bar เต็มเมื่อครบหนึ่งชั่วโมง",
+      "adaptation": "ใช้กรอบการ์ด player/hero; เปลี่ยนเนื้อหาเป็นข้อมูลจริง ไม่สมมติ playtime reward",
+      "licenseClass": "community_no_named_license",
+      "licenseClearance": "PENDING_PAYLOAD_AND_DEPENDENCY_REVIEW",
+      "runtimeId": null,
+      "payloadInspected": false,
+      "downloaded": false,
+      "imported": false,
+      "studioTested": false,
+      "deviceTested": false,
+      "nativeDescendantsVerified": false
+    },
+    {
+      "assetId": "96150583459141",
+      "title": "Premium Health Bar",
+      "creator": "@xBlu3_V3bxs10",
+      "url": "https://create.roblox.com/store/asset/96150583459141",
+      "kind": "gui_candidate",
+      "freeEvidence": "LIVE_GET_MODEL",
+      "created": "2025-12-24",
+      "updated": "2025-12-24",
+      "technical": {
+        "scriptCount": 1,
+        "audioCount": null,
+        "triangleCount": 14,
+        "verticesCount": 28,
+        "decalCount": 1
+      },
+      "technicalDetailsVisible": true,
+      "authorClaim": "ผู้สร้างระบุ Humanoid health, damage lag และ hit/heartbeat effects; อ้าง mobile scaling",
+      "adaptation": "ศึกษา health fill/lag สำหรับ 6 actor cards; เคารพ reduced motion และใช้ health/max จริง",
+      "licenseClass": "community_no_named_license",
+      "licenseClearance": "PENDING_PAYLOAD_AND_DEPENDENCY_REVIEW",
+      "runtimeId": null,
+      "payloadInspected": false,
+      "downloaded": false,
+      "imported": false,
+      "studioTested": false,
+      "deviceTested": false,
+      "nativeDescendantsVerified": false
+    },
+    {
+      "assetId": "17395410352",
+      "title": "Clean Inventory Gui",
+      "creator": "@jstedebilove",
+      "url": "https://create.roblox.com/store/asset/17395410352",
+      "kind": "gui_candidate",
+      "freeEvidence": "LIVE_GET_MODEL",
+      "created": "2024-05-05",
+      "updated": "2024-05-05",
+      "technical": {
+        "scriptCount": 2,
+        "audioCount": 3,
+        "triangleCount": null,
+        "verticesCount": null,
+        "decalCount": null
+      },
+      "technicalDetailsVisible": true,
+      "authorClaim": "ไม่มีคำอธิบาย; ยืนยันเพียงหน้ารายการและ metadata",
+      "adaptation": "inspection candidate สำหรับกรอบ/layout เท่านั้น; ไม่ยืนยัน inventory/equipment/stack system",
+      "licenseClass": "community_no_named_license",
+      "licenseClearance": "PENDING_PAYLOAD_AND_DEPENDENCY_REVIEW",
+      "runtimeId": null,
+      "payloadInspected": false,
+      "downloaded": false,
+      "imported": false,
+      "studioTested": false,
+      "deviceTested": false,
+      "nativeDescendantsVerified": false
+    },
+    {
+      "assetId": "92368439343389",
+      "title": "TopbarPlus",
+      "creator": "@ForeverHD",
+      "url": "https://create.roblox.com/store/asset/92368439343389",
+      "kind": "library_store_route",
+      "freeEvidence": "LIVE_GET_MODEL",
+      "created": "2025-06-06",
+      "updated": "2025-09-17",
+      "technical": {
+        "scriptCount": 1,
+        "audioCount": null,
+        "triangleCount": 14,
+        "verticesCount": 28,
+        "decalCount": 1
+      },
+      "technicalDetailsVisible": true,
+      "authorClaim": "native topbar icons พร้อม themes/dropdowns/menus",
+      "adaptation": "launcher ไป Inventory/Quests/Guild/Settings ผ่าน MenuRouter",
+      "licenseClass": "MPL_2_0_PLUS_ATTRIBUTION",
+      "licenseClearance": "PENDING_PAYLOAD_AND_DEPENDENCY_REVIEW",
+      "runtimeId": null,
+      "payloadInspected": false,
+      "downloaded": false,
+      "imported": false,
+      "studioTested": false,
+      "deviceTested": false,
+      "nativeDescendantsVerified": false
+    },
+    {
+      "assetId": "15621638430",
+      "title": "ReactLua",
+      "creator": "@Roblox",
+      "url": "https://create.roblox.com/store/asset/15621638430",
+      "kind": "library_store_route",
+      "freeEvidence": "LIVE_GET_MODEL",
+      "created": "2023-12-13",
+      "updated": "2026-10-10",
+      "technical": {
+        "scriptCount": 1,
+        "audioCount": null,
+        "triangleCount": null,
+        "verticesCount": null,
+        "decalCount": null
+      },
+      "technicalDetailsVisible": true,
+      "authorClaim": "Store ระบุ translation ของ ReactJS17.x และ Updateable; upstream README ลิงก์ exact ID",
+      "adaptation": "ตัวเลือก component framework; pin package/renderer/dependencies ก่อนทดลอง",
+      "licenseClass": "MIT_UPSTREAM_STORE_PAYLOAD_UNREVIEWED",
+      "licenseClearance": "PENDING_PAYLOAD_AND_DEPENDENCY_REVIEW",
+      "runtimeId": null,
+      "payloadInspected": false,
+      "downloaded": false,
+      "imported": false,
+      "studioTested": false,
+      "deviceTested": false,
+      "nativeDescendantsVerified": false
+    },
+    {
+      "assetId": "7635753718",
+      "title": "Template Tester",
+      "creator": "@Dr_Frayon",
+      "url": "https://create.roblox.com/store/asset/7635753718",
+      "kind": "plugin",
+      "freeEvidence": "LIVE_GET_PLUGIN_NO_PRICE_DISPLAYED",
+      "created": "2021-10-03",
+      "updated": "2026-01-05",
+      "technical": {
+        "scriptCount": null,
+        "audioCount": null,
+        "triangleCount": null,
+        "verticesCount": null,
+        "decalCount": null
+      },
+      "technicalDetailsVisible": false,
+      "authorClaim": "ผู้สร้างระบุ preview classic Shirt/Pants/T-Shirt บน NPC จากไฟล์ local พร้อม undo/redo",
+      "adaptation": "เครื่องมือเสริมศึกษาทดลอง texture; ไม่ใช่ตรวจ layered clothing/cage/rig fit",
+      "licenseClass": "plugin_no_named_license",
+      "licenseClearance": "PENDING_PAYLOAD_AND_DEPENDENCY_REVIEW",
+      "runtimeId": null,
+      "payloadInspected": false,
+      "downloaded": false,
+      "imported": false,
+      "studioTested": false,
+      "deviceTested": false,
+      "nativeDescendantsVerified": false
+    }
+  ],
+  "packs": [
+    {
+      "title": "UI Pack",
+      "url": "https://kenney.nl/assets/ui-pack",
+      "creator": "Kenney",
+      "fileCount": 430,
+      "version": "2.0",
+      "tags": "button/panel/slider",
+      "adaptation": "ฐานปุ่ม แผง และ slider",
+      "license": "CC0_1_0_AUTHOR_PAGE",
+      "freeEvidence": "AUTHOR_FREE_ROUTE_CONTINUE_WITHOUT_DONATING",
+      "archiveInspected": false,
+      "formats": null,
+      "runtimeId": null,
+      "downloaded": false,
+      "imported": false
+    },
+    {
+      "title": "UI Pack - Adventure",
+      "url": "https://kenney.nl/assets/ui-pack-adventure",
+      "creator": "Kenney",
+      "fileCount": 130,
+      "version": "1.0",
+      "tags": "adventure/interface",
+      "adaptation": "กรอบ quest/dialogue/inventory",
+      "license": "CC0_1_0_AUTHOR_PAGE",
+      "freeEvidence": "AUTHOR_FREE_ROUTE_CONTINUE_WITHOUT_DONATING",
+      "archiveInspected": false,
+      "formats": null,
+      "runtimeId": null,
+      "downloaded": false,
+      "imported": false
+    },
+    {
+      "title": "Cursor Pack",
+      "url": "https://kenney.nl/assets/cursor-pack",
+      "creator": "Kenney",
+      "fileCount": 180,
+      "version": "1.1",
+      "tags": "cursor/pointer",
+      "adaptation": "เคอร์เซอร์ desktop/interaction",
+      "license": "CC0_1_0_AUTHOR_PAGE",
+      "freeEvidence": "AUTHOR_FREE_ROUTE_CONTINUE_WITHOUT_DONATING",
+      "archiveInspected": false,
+      "formats": null,
+      "runtimeId": null,
+      "downloaded": false,
+      "imported": false
+    },
+    {
+      "title": "Game Icons (Expansion)",
+      "url": "https://kenney.nl/assets/game-icons-expansion",
+      "creator": "Kenney",
+      "fileCount": 60,
+      "version": "1.0",
+      "tags": "icon/prompt/gamepad",
+      "adaptation": "ปุ่มและ prompt สำหรับ controller",
+      "license": "CC0_1_0_AUTHOR_PAGE",
+      "freeEvidence": "AUTHOR_FREE_ROUTE_CONTINUE_WITHOUT_DONATING",
+      "archiveInspected": false,
+      "formats": null,
+      "runtimeId": null,
+      "downloaded": false,
+      "imported": false
+    },
+    {
+      "title": "Mobile Controls",
+      "url": "https://kenney.nl/assets/mobile-controls",
+      "creator": "Kenney",
+      "fileCount": 900,
+      "version": "1.0",
+      "tags": "mobile/controls",
+      "adaptation": "ภาพปุ่มสัมผัส/HUD ไม่ใช่ระบบ input",
+      "license": "CC0_1_0_AUTHOR_PAGE",
+      "freeEvidence": "AUTHOR_FREE_ROUTE_CONTINUE_WITHOUT_DONATING",
+      "archiveInspected": false,
+      "formats": null,
+      "runtimeId": null,
+      "downloaded": false,
+      "imported": false
+    },
+    {
+      "title": "Emotes Pack",
+      "url": "https://kenney.nl/assets/emotes-pack",
+      "creator": "Kenney",
+      "fileCount": 480,
+      "version": "1.0",
+      "tags": "emote/icon/balloon",
+      "adaptation": "สัญลักษณ์อารมณ์ของ NPC/hero/social",
+      "license": "CC0_1_0_AUTHOR_PAGE",
+      "freeEvidence": "AUTHOR_FREE_ROUTE_CONTINUE_WITHOUT_DONATING",
+      "archiveInspected": false,
+      "formats": null,
+      "runtimeId": null,
+      "downloaded": false,
+      "imported": false
+    }
+  ],
+  "libraries": [
+    {
+      "key": "topbarplus",
+      "title": "TopbarPlus",
+      "url": "https://github.com/1ForeverHD/TopbarPlus",
+      "storeAssetId": "92368439343389",
+      "license": "MPL-2.0 plus explicit attribution terms",
+      "licenseUrl": "https://github.com/1ForeverHD/TopbarPlus/blob/main/LICENSE",
+      "version": "3.4.0 main manifest",
+      "versionUrl": "https://github.com/1ForeverHD/TopbarPlus/blob/main/wally.toml",
+      "fit": "Topbar launcher; preserve Attribute or credit in experience description/linked DevForum, and comply with covered-code distribution terms.",
+      "freeEvidence": "UPSTREAM_FREE_SOURCE_LICENSE",
+      "pinnedVersion": null,
+      "installed": false,
+      "payloadAudit": false,
+      "telemetryAudit": "NOT_PERFORMED",
+      "runtimeTested": false
+    },
+    {
+      "key": "fusion",
+      "title": "Fusion",
+      "url": "https://github.com/dphfox/Fusion",
+      "storeAssetId": null,
+      "license": "MIT",
+      "licenseUrl": "https://github.com/dphfox/Fusion/blob/main/LICENSE",
+      "version": "Release v0.3-beta; main 0.4.0-dev1",
+      "versionUrl": "https://github.com/dphfox/Fusion/releases",
+      "fit": "Reactive UI/scopes; use examples matching selected API version.",
+      "freeEvidence": "UPSTREAM_FREE_SOURCE_LICENSE",
+      "pinnedVersion": null,
+      "installed": false,
+      "payloadAudit": false,
+      "telemetryAudit": "NOT_PERFORMED",
+      "runtimeTested": false
+    },
+    {
+      "key": "vide",
+      "title": "Vide",
+      "url": "https://github.com/centau/vide",
+      "storeAssetId": null,
+      "license": "MIT",
+      "licenseUrl": "https://github.com/centau/vide/blob/main/LICENSE.md",
+      "version": "0.4.1 pre-release (2026-07-11)",
+      "versionUrl": "https://github.com/centau/vide/releases",
+      "fit": "Typed reactive components; pre-release and changed create overloads need review.",
+      "freeEvidence": "UPSTREAM_FREE_SOURCE_LICENSE",
+      "pinnedVersion": null,
+      "installed": false,
+      "payloadAudit": false,
+      "telemetryAudit": "NOT_PERFORMED",
+      "runtimeTested": false
+    },
+    {
+      "key": "react-luau",
+      "title": "React Luau — Roblox upstream",
+      "url": "https://github.com/Roblox/react-luau",
+      "storeAssetId": "15621638430",
+      "license": "MIT",
+      "licenseUrl": "https://github.com/Roblox/react-luau/blob/main/LICENSE",
+      "version": "Official Wally index 17.3.13; Store payload version uninspected",
+      "versionUrl": "https://github.com/UpliftGames/wally-index/blob/main/roblox/react",
+      "fit": "Native ReactRoblox renderer; dependency closure includes LuauPolyfill/ReactGlobals/Shared.",
+      "freeEvidence": "UPSTREAM_FREE_SOURCE_LICENSE",
+      "pinnedVersion": null,
+      "installed": false,
+      "payloadAudit": false,
+      "telemetryAudit": "NOT_PERFORMED",
+      "runtimeTested": false
+    }
+  ],
+  "builtins": [
+    {
+      "title": "9-slice",
+      "url": "https://create.roblox.com/docs/ui/9-slice",
+      "fit": "กรอบปรับขนาดโดยรักษามุมและขอบ ใช้กับข้อความไทย",
+      "kind": "BUILT_IN_CAPABILITY_NOT_CATALOG_ASSET",
+      "localCapabilityVerified": false
+    },
+    {
+      "title": "ViewportFrame",
+      "url": "https://create.roblox.com/docs/ui/viewport-frames",
+      "fit": "preview item/hero 3D; เกมมี ItemViewport เดิมแล้ว",
+      "kind": "BUILT_IN_CAPABILITY_NOT_CATALOG_ASSET",
+      "localCapabilityVerified": false
+    },
+    {
+      "title": "UIDragDetector",
+      "url": "https://create.roblox.com/docs/ui/ui-drag-detectors",
+      "fit": "slider/drag ใน native UI; inventory action ยังต้อง server validate",
+      "kind": "BUILT_IN_CAPABILITY_NOT_CATALOG_ASSET",
+      "localCapabilityVerified": false
+    },
+    {
+      "title": "UI styling / Style Editor",
+      "url": "https://create.roblox.com/docs/ui/styling",
+      "fit": "tokens/theme/query ตาม viewport/input/accessibility; ทดลองหลังตรวจ Studio capability",
+      "kind": "BUILT_IN_CAPABILITY_NOT_CATALOG_ASSET",
+      "localCapabilityVerified": false
+    }
+  ],
+  "sourceFit": [
+    {
+      "area": "inventory",
+      "path": "src/client/UI/InventoryView.luau",
+      "line": 41,
+      "fit": "กรอบ slot/selection/rarity/icon; preserve IDs/ownership/equip/sell intents"
+    },
+    {
+      "area": "craft",
+      "path": "src/client/UI/ExpansionView.luau",
+      "line": 86,
+      "fit": "recipe/ingredient art; authoritative CraftItem gates unchanged"
+    },
+    {
+      "area": "skills",
+      "path": "src/client/UI/SkillTreeView.luau",
+      "line": 10,
+      "fit": "five-node graph art; pan/zoom/automatic compact switching would be new work"
+    },
+    {
+      "area": "quests",
+      "path": "src/client/UI/SettlementView.luau",
+      "line": 14,
+      "fit": "journal/status/portrait art; branching dialogue would be new work"
+    },
+    {
+      "area": "party_hud",
+      "path": "src/client/Controllers/PlayerCombatController.luau",
+      "line": 55,
+      "fit": "player+5hero cards; use actual actor health/selected actor/cooldowns"
+    },
+    {
+      "area": "map",
+      "path": "src/client/Controllers/CityNavigation.luau",
+      "line": 27,
+      "fit": "city/region/waypoints exist; persistent minimap would be new work"
+    },
+    {
+      "area": "settings",
+      "path": "src/client/UI/SettingsControls.luau",
+      "line": 18,
+      "fit": "local attributes; volume25% steps/VFX/reduced idle motion/mute exist"
+    },
+    {
+      "area": "router",
+      "path": "src/client/UI/MenuRouter.luau",
+      "line": 69,
+      "fit": "modal focus/menu blocking/touch controls; adapter required"
+    },
+    {
+      "area": "render",
+      "path": "src/client/UI/SliceUI.luau",
+      "line": 369,
+      "fit": "destroy/rebuild content; clean listeners and register widgets through renderer"
+    },
+    {
+      "area": "art_binding",
+      "path": "src/shared/Config/VisualAssets.luau",
+      "line": 5,
+      "fit": "Logo/KeyArt/ItemAtlas/EquipmentAtlas currently empty; native fallback exists"
+    }
+  ],
+  "supportSources": [
+    {
+      "title": "Easy Dialogue System original author",
+      "url": "https://devforum.roblox.com/t/open-source-easy-dialogue-system/3061677",
+      "fact": "Author release and ScreenGui/typewriter description; no named MIT/CC0 license"
+    },
+    {
+      "title": "Customizable Minimap original author",
+      "url": "https://devforum.roblox.com/t/feedback-on-my-minimap-model/1757320",
+      "fact": "Original author links exact asset ID"
+    },
+    {
+      "title": "React Luau official README",
+      "url": "https://github.com/Roblox/react-luau/blob/main/README.md",
+      "fact": "Official Wally and Creator Store route exist; historical community claim otherwise is stale"
+    },
+    {
+      "title": "Kenney support",
+      "url": "https://kenney.nl/support",
+      "fact": "CC0 asset use; branding/logo rights separate"
+    }
+  ],
+  "excluded": [
+    {
+      "assetId": "13145640849",
+      "title": "3D Minimap Creator",
+      "reason": "LIVE_404_2026_10_13"
+    },
+    {
+      "assetId": "9900177631",
+      "title": "Custom Inventory GUI",
+      "reason": "AUTHOR_ADMITS_MORE_THAN_NINE_TOOLS_INACCESSIBLE"
+    },
+    {
+      "assetId": "93979152176040",
+      "title": "Legends of Speed GUI",
+      "reason": "COMPETITOR_REUPLOAD"
+    },
+    {
+      "assetId": "83209927819118",
+      "title": "Legends of Speed Inventory GUI",
+      "reason": "COMPETITOR_REUPLOAD"
+    },
+    {
+      "assetId": "114459060879392",
+      "title": "TopBar Shop",
+      "reason": "PAID_2_99_EXCLUDED"
+    },
+    {
+      "assetId": "110946529305856",
+      "title": "Slime RNG bundle",
+      "reason": "PAID_EXCLUDED"
+    },
+    {
+      "assetId": "120075856563336",
+      "title": "Slime RNG bundle",
+      "reason": "PAID_EXCLUDED"
+    }
+  ],
+  "unverifiedIndexOnly": [
+    {
+      "assetId": "5725546455",
+      "title": "Health Bar",
+      "url": "https://create.roblox.com/store/asset/5725546455",
+      "freeEvidence": "INDEXED_GET_MODEL_ONLY",
+      "reason": "Older duplicate use case; not added to confirmed new catalog"
+    },
+    {
+      "assetId": "7083450476",
+      "title": "Progress Bar UI",
+      "url": "https://create.roblox.com/store/asset/7083450476",
+      "freeEvidence": "INDEXED_GET_MODEL_ONLY",
+      "reason": "Empty description; not added to confirmed new catalog"
+    }
+  ],
+  "acceptance": {
+    "catalogConsistencyCheck": "PASS_COUNTS_UNIQUENESS_SOURCE_PATHS_AND_NO_ACQUISITION_FLAGS",
+    "documentReviewer": "asset_fit",
+    "listingResearch": "COMPLETED",
+    "independentDocumentReview": "PASS_RESEARCH_DOCUMENT_ONLY_BY_ASSET_FIT",
+    "payloadReview": "NOT_PERFORMED",
+    "robloxImport": "NOT_PERFORMED",
+    "studioTest": "NOT_PERFORMED",
+    "deviceTest": "NOT_PERFORMED",
+    "humanArtApproval": "PENDING",
+    "runtimeChanges": false,
+    "acquisitionCount": 0
+  },
+  "nextOwner": "Guildborne UI/native UX and asset curator; review payload/rights, select art, create scoped adapter prototype, then Studio/device/human acceptance."
+}

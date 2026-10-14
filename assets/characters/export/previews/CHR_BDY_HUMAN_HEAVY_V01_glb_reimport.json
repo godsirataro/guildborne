@@ -1,0 +1,157 @@
+{
+  "file": "assets/characters/export/CHR_BDY_HUMAN_HEAVY_V01.glb",
+  "sha256": "a8eef5385b4e00f89cc74816851aa920406e86493a62e2e48c0201edb4e86fc8",
+  "exportUnchanged": true,
+  "blenderVersion": "5.2.1 LTS",
+  "status": "LOCAL_EXPORT_REIMPORT_CHECKS_PASS",
+  "meshes": [
+    {
+      "name": "Head_Geo",
+      "triangles": 92,
+      "vertices": 176,
+      "uvLayers": 1,
+      "unweightedVertices": 0,
+      "allWorldVerticesFinite": true
+    },
+    {
+      "name": "LeftFoot_Geo",
+      "triangles": 44,
+      "vertices": 80,
+      "uvLayers": 1,
+      "unweightedVertices": 0,
+      "allWorldVerticesFinite": true
+    },
+    {
+      "name": "LeftHand_Geo",
+      "triangles": 44,
+      "vertices": 80,
+      "uvLayers": 1,
+      "unweightedVertices": 0,
+      "allWorldVerticesFinite": true
+    },
+    {
+      "name": "LeftLowerArm_Geo",
+      "triangles": 60,
+      "vertices": 112,
+      "uvLayers": 1,
+      "unweightedVertices": 0,
+      "allWorldVerticesFinite": true
+    },
+    {
+      "name": "LeftLowerLeg_Geo",
+      "triangles": 60,
+      "vertices": 112,
+      "uvLayers": 1,
+      "unweightedVertices": 0,
+      "allWorldVerticesFinite": true
+    },
+    {
+      "name": "LeftUpperArm_Geo",
+      "triangles": 60,
+      "vertices": 112,
+      "uvLayers": 1,
+      "unweightedVertices": 0,
+      "allWorldVerticesFinite": true
+    },
+    {
+      "name": "LeftUpperLeg_Geo",
+      "triangles": 60,
+      "vertices": 112,
+      "uvLayers": 1,
+      "unweightedVertices": 0,
+      "allWorldVerticesFinite": true
+    },
+    {
+      "name": "LowerTorso_Geo",
+      "triangles": 60,
+      "vertices": 112,
+      "uvLayers": 1,
+      "unweightedVertices": 0,
+      "allWorldVerticesFinite": true
+    },
+    {
+      "name": "RightFoot_Geo",
+      "triangles": 44,
+      "vertices": 80,
+      "uvLayers": 1,
+      "unweightedVertices": 0,
+      "allWorldVerticesFinite": true
+    },
+    {
+      "name": "RightHand_Geo",
+      "triangles": 44,
+      "vertices": 80,
+      "uvLayers": 1,
+      "unweightedVertices": 0,
+      "allWorldVerticesFinite": true
+    },
+    {
+      "name": "RightLowerArm_Geo",
+      "triangles": 60,
+      "vertices": 112,
+      "uvLayers": 1,
+      "unweightedVertices": 0,
+      "allWorldVerticesFinite": true
+    },
+    {
+      "name": "RightLowerLeg_Geo",
+      "triangles": 60,
+      "vertices": 112,
+      "uvLayers": 1,
+      "unweightedVertices": 0,
+      "allWorldVerticesFinite": true
+    },
+    {
+      "name": "RightUpperArm_Geo",
+      "triangles": 60,
+      "vertices": 112,
+      "uvLayers": 1,
+      "unweightedVertices": 0,
+      "allWorldVerticesFinite": true
+    },
+    {
+      "name": "RightUpperLeg_Geo",
+      "triangles": 60,
+      "vertices": 112,
+      "uvLayers": 1,
+      "unweightedVertices": 0,
+      "allWorldVerticesFinite": true
+    },
+    {
+      "name": "UpperTorso_Geo",
+      "triangles": 76,
+      "vertices": 144,
+      "uvLayers": 1,
+      "unweightedVertices": 0,
+      "allWorldVerticesFinite": true
+    }
+  ],
+  "importerBoneDisplayHelpers": [
+    "Icosphere"
+  ],
+  "bones": [
+    "HumanoidRootPart",
+    "LowerTorso",
+    "LeftUpperLeg",
+    "LeftLowerLeg",
+    "LeftFoot",
+    "RightUpperLeg",
+    "RightLowerLeg",
+    "RightFoot",
+    "UpperTorso",
+    "Head",
+    "LeftUpperArm",
+    "LeftLowerArm",
+    "LeftHand",
+    "RightUpperArm",
+    "RightLowerArm",
+    "RightHand"
+  ],
+  "errors": [],
+  "studioImported": false,
+  "pending": [
+    "actual Roblox importer axis/origin/joint interpretation",
+    "cages",
+    "deformation/fit approval"
+  ]
+}

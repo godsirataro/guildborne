@@ -64,6 +64,12 @@ return function(content: any,util: any,rules: any,landPlacement:any?,themes:any?
 			-- Preserve already-earned legacy promotions; AdvanceClass enforces current 30/70 gates.
 			local path=build.path and rules.Paths[build.path]
 			assert((build.tier==1 and not path) or (path and path.Tier==build.tier and path.Class==actor.classId and actor.level>=(if path.Tier==2 then 3 else 6)))
+			if build.mentorProof~=nil then
+				local proof=build.mentorProof;assert(id~="player" and type(proof)=="table" and proof.version==1)
+				for key in pairs(proof)do assert(key=="version" or key=="pathId" or key=="trialId")end
+				local proved=rules.Paths[proof.pathId];assert(proved and proved.Tier==2 and proved.Class==actor.classId)
+				assert(type(proof.trialId)=="string" and #proof.trialId>0 and #proof.trialId<=48 and proof.trialId:match("^[%w_:%-]+$"))
+			end
 			for skill,value in pairs(build.skills) do
 				local def=rules.Skills[skill];assert(def and value==true and (def.Tier or 1)<=build.tier and (not def.Requires or build.skills[def.Requires]))
 			end

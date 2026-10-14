@@ -1,0 +1,15 @@
+{
+  "status": "PASS_LOCAL_CHECKS_PARTIAL_STUDIO",
+  "sourceTests": 736,
+  "candidate": "4f56b8978cba86f11dcc0cd7f53a5c105bc9f67891911e19ce3e9bf916776e52",
+  "logSha256": "624977262dc145a8e3ea67fb37cc2adfa7a6d752e7929e6bfe875b7515abf9d4",
+  "independentReviewer": "launch_progression",
+  "nativeUIFixture": "PASS_SYNTHETIC_REAL_SNAPSHOT_SHAPE",
+  "normalRoute": {
+    "level": 5,
+    "noviceChapters": 2,
+    "candidate": "548fff321762daac8d3faa0e9315d362da580b60b5ae4de2304c33c0d3276dd8"
+  },
+  "publicReady": false,
+  "remaining": "World portal/navigation messaging; full route and all broader launch gates"
+}

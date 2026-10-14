@@ -1,0 +1,521 @@
+{
+  "schemaVersion": 1,
+  "title": "Free helpers for Guildborne modular character system",
+  "reviewDate": "2026-10-14",
+  "timezone": "Asia/Bangkok",
+  "status": "RESEARCH_AND_SCOPED_ADAPTATION_PLAN",
+  "linkedThread": {
+    "threadId": "01a12605-bc35-7000-9fa7-db8dff09d70e",
+    "title": "09-Implement modular character system",
+    "url": "codex://threads/01a12605-bc35-7000-9fa7-db8dff09d70e",
+    "readOnly": true,
+    "messaged": false
+  },
+  "sourceHead": "4cc9a8232e0fd9ae7bf517983c274e800e8ad4a4",
+  "sourceCheckout": "DIRTY_EXISTING_CHARACTER_WORK",
+  "scope": "FREE_ONLY_RESEARCH_NO_ASSET_OR_RUNTIME_CHANGES",
+  "counts": {
+    "researchOptionRecords": 11,
+    "sourceGapMappings": 6
+  },
+  "notes": [
+    "Options group files/tools; not11models or11importedassets.",
+    "All sources author/official upstream. No paid tier recommended or acquired.",
+    "Official Roblox downloadable references are not provenCC0/MIT or blanket redistributable. Archive licence inspection pending.",
+    "Quaternius whole-kit marketing counts are not free-tier inventory. Exact free model/animation counts null.",
+    "Current local articulation is recorded historically; this session did not rerun Studio tests.",
+    "Ordinary runtime uses Parts substitutes; isolatedEditableMesh preview does not bind liveplayer/hero/NPC.",
+    "Shared canonical body/clothing IDs, server save/entitlements and always-on coverage remain intact.",
+    "MPFB/Quaternius generic Humanoid skeletons are not approved RobloxR15 bodies/cages.",
+    "Research suggestions do not grant upload, publication, spending or cloud writes."
+  ],
+  "items": [
+    {
+      "key": "roblox-r15-and-cages",
+      "title": "Roblox R15 rig, body cages and clothing cages",
+      "url": "https://create.roblox.com/docs/avatar/resources",
+      "priority": 1,
+      "kind": "OFFICIAL_REFERENCE_FILES",
+      "freeEvidence": "OFFICIAL_DOWNLOAD_LINKS_NO_PAYMENT_ROUTE",
+      "license": "ROBLOX_REFERENCE_USE_NOT_VERIFIED_CC0",
+      "referenceLabels": [
+        "Standard R15 Rig and Attachments",
+        "Cages for Clothing",
+        "Cages for Bodies",
+        "Combined Project Files"
+      ],
+      "formatsAdvertised": [
+        "blend",
+        "ma",
+        "fbx"
+      ],
+      "supportedFact": "R15 rig/attachments, 15 body cages, full-body inner/outer clothing cages. Project files are for authoring, not direct Studio import.",
+      "fit": "ใช้ cage topology/UV และ skeleton reference กับ Human Standard/Heavy และ tunic/trousers เดิม",
+      "requires": "ปรับ cage ตามแต่ละหุ่น; inspect licence/archive; preserve vertices/UV correspondence.",
+      "downloaded": false,
+      "archiveInspected": false,
+      "installed": false,
+      "imported": false,
+      "studioTested": false,
+      "deviceTested": false,
+      "runtimeId": null
+    },
+    {
+      "key": "roblox-body-templates",
+      "title": "Roblox body templates and Goblin reference",
+      "url": "https://create.roblox.com/docs/avatar/character-bodies/project-files",
+      "priority": 2,
+      "kind": "OFFICIAL_REFERENCE_FILES",
+      "freeEvidence": "OFFICIAL_DOWNLOAD_LINKS_NO_PAYMENT_ROUTE",
+      "license": "ROBLOX_REFERENCE_USE_NOT_VERIFIED_CC0",
+      "referenceLabels": [
+        "RoundMale.zip",
+        "RoundFemale.zip",
+        "SquareMale.zip",
+        "SquareFemale.zip",
+        "MuzzleMale.zip",
+        "MuzzleFemale.zip",
+        "GoblinCharacter.zip"
+      ],
+      "formatsAdvertised": [
+        "blend",
+        "fbx",
+        "png"
+      ],
+      "supportedFact": "Starting character templates and a fantasy Goblin with full body cage are offered for examples/boilerplate/reference.",
+      "fit": "ศึกษา head/body/rig/cage และสร้างหน้าตา Guildborne; Goblin เป็น reference ไม่ใช่ accepted Orc",
+      "requires": "cleanup, original silhouette, neutral tint and 15 meshes; no automatic Heavy/Dwarf fit.",
+      "downloaded": false,
+      "archiveInspected": false,
+      "installed": false,
+      "imported": false,
+      "studioTested": false,
+      "deviceTested": false,
+      "runtimeId": null
+    },
+    {
+      "key": "roblox-layered-reference",
+      "title": "Roblox caged clothing examples",
+      "url": "https://create.roblox.com/docs/avatar/layered-accessories/project-files",
+      "priority": 1,
+      "kind": "OFFICIAL_REFERENCE_FILES",
+      "freeEvidence": "OFFICIAL_DOWNLOAD_LINKS_NO_PAYMENT_ROUTE",
+      "license": "ROBLOX_REFERENCE_USE_NOT_VERIFIED_CC0",
+      "referenceLabels": [
+        "Tshirt-model.fbx (uncaged)",
+        "Additional-FBX-assets.zip (caged examples)"
+      ],
+      "formatsAdvertised": [
+        "fbx",
+        "zip"
+      ],
+      "supportedFact": "Uncaged T-shirt and caged layered accessory examples are separately listed.",
+      "fit": "เทียบโครง garment/cage แล้วสร้าง tunic/trousers ของเกมให้เป็น layered จริง",
+      "requires": "Archive contents unknown; no verified fantasy tunic/trousers or universal fit.",
+      "downloaded": false,
+      "archiveInspected": false,
+      "installed": false,
+      "imported": false,
+      "studioTested": false,
+      "deviceTested": false,
+      "runtimeId": null
+    },
+    {
+      "key": "avatar-setup",
+      "title": "Avatar Setup — Development Avatar",
+      "url": "https://create.roblox.com/docs/avatar-setup",
+      "priority": 1,
+      "kind": "BUILT_IN_STUDIO_TOOL",
+      "freeEvidence": "BUILT_IN_FREE_STUDIO_TOOL_NOT_MARKETPLACE_PUBLICATION",
+      "license": "ROBLOX_TOOL_USE",
+      "supportedFact": "Development Avatar preset targets NPC/starter characters. Tool can set up avatar components and preview animations/clothing; attachment and body cage edits are available.",
+      "fit": "ทดลองบนสำเนา body+garments โดยเลือก workflow ให้ชัด",
+      "requires": "Input requirements apply; preserve compatible R15 rig or tool may replace it. Do not assume existing candidate qualifies. No Save/upload/publish in research.",
+      "downloaded": false,
+      "archiveInspected": false,
+      "installed": false,
+      "imported": false,
+      "studioTested": false,
+      "deviceTested": false,
+      "runtimeId": null
+    },
+    {
+      "key": "accessory-fitting-tool",
+      "title": "Accessory Fitting Tool",
+      "url": "https://create.roblox.com/docs/avatar/accessory-fitting-tool",
+      "priority": 1,
+      "kind": "BUILT_IN_STUDIO_TOOL",
+      "freeEvidence": "BUILT_IN_FREE_STUDIO_TOOL",
+      "license": "ROBLOX_TOOL_USE",
+      "supportedFact": "Custom bodies, animations and layered combinations can be previewed; minor fitting edits and Accessory hierarchy generation.",
+      "fit": "ทดสอบ Standard/Heavy แบบcustom ทั้งใส่แยกและซ้อน tunic/trousers; rigid hair/hat offsets",
+      "requires": "Classic/Normal/Slender selector does not affect layered accessories; not Heavy/Orc/Dwarf fit proof.",
+      "downloaded": false,
+      "archiveInspected": false,
+      "installed": false,
+      "imported": false,
+      "studioTested": false,
+      "deviceTested": false,
+      "runtimeId": null
+    },
+    {
+      "key": "mpfb2",
+      "title": "MPFB2",
+      "url": "https://github.com/makehumancommunity/mpfb2",
+      "priority": 2,
+      "kind": "FREE_GENERATOR_TOOL",
+      "freeEvidence": "AUTHOR_FAQ_FREE_NO_PAYWALL",
+      "license": "GPLv3_CODE_CC0_BUNDLED_GRAPHICS_OUTPUT_THIRD_PARTY_LICENSES_SEPARATE",
+      "version": "2.0.18",
+      "versionDate": "2026-10-10",
+      "supportedFact": "Blender human-generation workflow with free core assets. Release notes document Hair Editor support/fix for Blender4.2–5.2.",
+      "fit": "ทางเลือกสร้างฐาน Human ที่ปรับสัดส่วน แล้วเก็บเป็น preset geometry; ไม่เพิ่ม runtime full-body sliders",
+      "requires": "Specific documented compatibility is not local full-pipeline proof. Retopology, R15 split/rig/cages and art adaptation required. Addon dependencies/execution/telemetry unreviewed.",
+      "downloaded": false,
+      "archiveInspected": false,
+      "installed": false,
+      "imported": false,
+      "studioTested": false,
+      "deviceTested": false,
+      "runtimeId": null
+    },
+    {
+      "key": "makehuman-hair01",
+      "title": "MakeHuman Hair01",
+      "url": "https://static.makehumancommunity.org/assets/assetpacks/hair01.html",
+      "priority": 2,
+      "kind": "FREE_CC0_ASSET_PACK",
+      "freeEvidence": "AUTHOR_ASSET_PACK_DOWNLOAD",
+      "license": "CC0_AUTHOR_CATALOG",
+      "catalogItemCount": 18,
+      "supportedFact": "Catalog lists mostly low-poly/stylized hair.",
+      "fit": "คัดทรงผมเป็น donor/reference แล้วลด geometry/ปรับรูปทรงและสีให้เข้ากับเกม",
+      "requires": "Attach to existing HAIR IDs; per-head/preset fit; do not assume Roblox-ready.",
+      "downloaded": false,
+      "archiveInspected": false,
+      "installed": false,
+      "imported": false,
+      "studioTested": false,
+      "deviceTested": false,
+      "runtimeId": null
+    },
+    {
+      "key": "makehuman-bodyparts05",
+      "title": "MakeHuman Bodyparts05",
+      "url": "https://static.makehumancommunity.org/assets/assetpacks/bodyparts05.html",
+      "priority": 2,
+      "kind": "FREE_CC0_ASSET_PACK",
+      "freeEvidence": "AUTHOR_ASSET_PACK_DOWNLOAD",
+      "license": "CC0_AUTHOR_CATALOG",
+      "catalogItemCount": 5,
+      "supportedFact": "Beards/moustaches including Viking beard are listed.",
+      "fit": "คัดเครา/หนวดให้Human/Dwarf เป็นชิ้นแยกและ tint แยก",
+      "requires": "rigid/skinned attachment choice, facial clipping and provenance review; no Dwarf fit confirmed.",
+      "downloaded": false,
+      "archiveInspected": false,
+      "installed": false,
+      "imported": false,
+      "studioTested": false,
+      "deviceTested": false,
+      "runtimeId": null
+    },
+    {
+      "key": "quaternius-base-standard",
+      "title": "Universal Base Characters — Standard only",
+      "url": "https://quaternius.com/packs/universalbasecharacters.html",
+      "freeRouteUrl": "https://quaternius.itch.io/universal-base-characters/purchase",
+      "priority": 3,
+      "kind": "PARTIAL_FREE_CC0_ASSET_PACK",
+      "freeEvidence": "ZERO_DOLLAR_STANDARD_DOWNLOAD_ROUTE",
+      "license": "CC0_AUTHOR_PAGE",
+      "freeTier": "Standard",
+      "advertisedDownloadMB": 122,
+      "freeItemCount": null,
+      "wholeKitMarketing": {
+        "baseModels": 6,
+        "hairstyles": 20,
+        "averageTriangles": 13000
+      },
+      "freeFormatsAdvertised": [
+        "obj",
+        "fbx",
+        "gltf"
+      ],
+      "supportedFact": "Humanoid base and hairstyle kit; author advertises60–70% free, not exact free inventory.",
+      "fit": "ศึกษา proportions/topology หรือคัด donor ที่อยู่ในfree tier",
+      "requires": "Paid Source blend/shaders excluded. Humanoid rig is not Roblox R15/15-part/cage compatibility.",
+      "downloaded": false,
+      "archiveInspected": false,
+      "installed": false,
+      "imported": false,
+      "studioTested": false,
+      "deviceTested": false,
+      "runtimeId": null
+    },
+    {
+      "key": "quaternius-outfits-standard",
+      "title": "Modular Character Outfits — Fantasy Standard only",
+      "url": "https://quaternius.com/packs/modularcharacteroutfitsfantasy.html",
+      "freeRouteUrl": "https://quaternius.itch.io/modular-character-outfits-fantasy/purchase",
+      "priority": 2,
+      "kind": "PARTIAL_FREE_CC0_ASSET_PACK",
+      "freeEvidence": "ZERO_DOLLAR_STANDARD_DOWNLOAD_ROUTE",
+      "license": "CC0_AUTHOR_PAGE",
+      "freeTier": "Standard",
+      "advertisedDownloadMB": 280,
+      "freeItemCount": null,
+      "wholeKitMarketing": {
+        "headerModels": 74,
+        "outfits": 12,
+        "separateParts": 62,
+        "textureVariationsPerOutfit": 3
+      },
+      "freeFormatsAdvertised": [
+        "obj",
+        "fbx",
+        "gltf"
+      ],
+      "supportedFact": "Modular fantasy clothing with Humanoid rig, designed for Universal Base Characters; author advertises60–70% free.",
+      "fit": "คัดชิ้นเสื้อ/ชุดที่freeจริง เปลี่ยน silhouette/material แล้ว weight/rig/cage บนหุ่น Guildborne",
+      "requires": "No62parts/all12outfits free claim. Paid Source blend excluded. Not a ready Roblox layered garment.",
+      "downloaded": false,
+      "archiveInspected": false,
+      "installed": false,
+      "imported": false,
+      "studioTested": false,
+      "deviceTested": false,
+      "runtimeId": null
+    },
+    {
+      "key": "quaternius-animation-standard",
+      "title": "Universal Animation Library — Standard only",
+      "url": "https://quaternius.itch.io/universal-animation-library",
+      "freeRouteUrl": "https://quaternius.itch.io/universal-animation-library/purchase",
+      "priority": 3,
+      "kind": "PARTIAL_FREE_CC0_ANIMATION_PACK",
+      "freeEvidence": "ZERO_DOLLAR_STANDARD_DOWNLOAD_ROUTE",
+      "license": "CC0_AUTHOR_PAGE",
+      "freeTier": "Standard",
+      "advertisedDownloadMB": 15,
+      "freeItemCount": null,
+      "wholeKitMarketing": {
+        "animationCountText": "120+"
+      },
+      "version": "3.0 author changelog (2026-06-16)",
+      "supportedFact": "Locomotion/life/combat animation kit with root-motion/no-root-motion variants advertised for the whole library.",
+      "fit": "คัดเฉพาะคลิปfree เพื่อศึกษา walk/idle/work poses และ retarget",
+      "requires": "Do not claim120+free or each advertised clip inStandard. R15 mapping, grip/foot contact, game timing and animation ownership remain work.",
+      "downloaded": false,
+      "archiveInspected": false,
+      "installed": false,
+      "imported": false,
+      "studioTested": false,
+      "deviceTested": false,
+      "runtimeId": null
+    }
+  ],
+  "gaps": [
+    {
+      "area": "production mesh binding",
+      "path": "src/server/Services/CharacterAppearance/AppearanceAssetRegistry.luau",
+      "line": 8,
+      "status": "PLANNED_IDS_AND_TEMPLATES_NULL",
+      "helps": [
+        "roblox-r15-and-cages",
+        "roblox-body-templates"
+      ]
+    },
+    {
+      "area": "layered cages",
+      "path": "tools/blender_modular_human.py",
+      "line": 139,
+      "status": "CAGES_UNAVAILABLE",
+      "helps": [
+        "roblox-r15-and-cages",
+        "roblox-layered-reference",
+        "avatar-setup"
+      ]
+    },
+    {
+      "area": "Standard/Heavy garment fit",
+      "path": "src/shared/Presentation/ModularAppearance/LocalGeometryRig.luau",
+      "line": 75,
+      "status": "FLEXIBLE_GARMENTS_EXCLUDED_FROM_ARTICULATED_PREVIEW",
+      "helps": [
+        "accessory-fitting-tool",
+        "roblox-layered-reference",
+        "quaternius-outfits-standard"
+      ]
+    },
+    {
+      "area": "race/preset art coverage",
+      "path": "src/shared/Presentation/ModularAppearance/Renderer.luau",
+      "line": 17,
+      "status": "STANDARD_HEAVY_PLACEHOLDER_ONLY_BEARD_RACE_FEATURES_REJECTED",
+      "helps": [
+        "mpfb2",
+        "makehuman-hair01",
+        "makehuman-bodyparts05",
+        "roblox-body-templates"
+      ]
+    },
+    {
+      "area": "gameplay animation",
+      "path": "src/shared/Presentation/ModularAppearance/LocalGeometryRig.luau",
+      "line": 37,
+      "status": "LOCAL_CALIBRATION_RECEIPTS_EXIST_GAMEPLAY_UNACCEPTED",
+      "helps": [
+        "roblox-r15-and-cages",
+        "quaternius-animation-standard"
+      ]
+    },
+    {
+      "area": "shared NPC integration",
+      "path": "src/server/Services/HeroRig.luau",
+      "line": 2,
+      "status": "EXISTING_R6_CARRIER_WORLD_INTEGRATION_PENDING",
+      "helps": [
+        "roblox-r15-and-cages",
+        "accessory-fitting-tool",
+        "quaternius-animation-standard"
+      ]
+    }
+  ],
+  "sources": [
+    {
+      "title": "Avatar setup supported inputs",
+      "url": "https://create.roblox.com/docs/avatar-setup/auto-setup-requirements",
+      "fact": "Detailed layered-input table permits standalone best-effort cage; other overview wording says bundle. Prefer actual body bundle.",
+      "retrievedDate": "2026-10-14"
+    },
+    {
+      "title": "Cage/weight workflow",
+      "url": "https://create.roblox.com/docs/art/accessories/rig-and-cage-existing-models",
+      "fact": "Authoring workflow; preserve cage vertices and UVs, automatic weights may need manual refinement.",
+      "retrievedDate": "2026-10-14"
+    },
+    {
+      "title": "MPFB license",
+      "url": "https://github.com/makehumancommunity/mpfb2/blob/master/LICENSE.md",
+      "fact": "GPLv3 code vs CC0 bundled graphical assets/output.",
+      "retrievedDate": "2026-10-14"
+    },
+    {
+      "title": "MPFB free FAQ",
+      "url": "https://static.makehumancommunity.org/mpfb/faq/is_it_really_free.html",
+      "fact": "No paid/premium/paywall.",
+      "retrievedDate": "2026-10-14"
+    },
+    {
+      "title": "MPFB model output FAQ",
+      "url": "https://static.makehumancommunity.org/mpfb/faq/can_i_sell_models.html",
+      "fact": "Third-party licenses still apply.",
+      "retrievedDate": "2026-10-14"
+    },
+    {
+      "title": "MPFB2.0.18 release",
+      "url": "https://static.makehumancommunity.org/mpfb/releases/release_2018.html",
+      "fact": "2026-10-10; Hair Editor4.2–5.2 fix, not local complete-pipeline test.",
+      "retrievedDate": "2026-10-14"
+    },
+    {
+      "title": "Mixed asset catalog",
+      "url": "https://static.makehumancommunity.org/assets/assetpacks/index.html",
+      "fact": "CC0 and CC-BY separate; do not assume allpacksCC0.",
+      "retrievedDate": "2026-10-14"
+    },
+    {
+      "title": "Studio body testing",
+      "url": "https://create.roblox.com/docs/avatar/character-bodies/test-studio",
+      "fact": "Technical fit/animation testing, not human/device acceptance.",
+      "retrievedDate": "2026-10-14"
+    },
+    {
+      "title": "Blender body testing",
+      "url": "https://create.roblox.com/docs/avatar/character-bodies/test-blender",
+      "fact": "Pre-import rig/pose/skin/cage verification.",
+      "retrievedDate": "2026-10-14"
+    },
+    {
+      "title": "Free Studio",
+      "url": "https://create.roblox.com/docs/studio",
+      "fact": "Free tooling; publishing is a separate step.",
+      "retrievedDate": "2026-10-14"
+    }
+  ],
+  "productionSequence": [
+    {
+      "step": 1,
+      "work": "Inspect selected official rig/cage/reference archives and licences; hash source; preserve original assets and canonical IDs.",
+      "status": "PLANNED"
+    },
+    {
+      "step": 2,
+      "work": "Rig/cage actual HumanStandard and Heavy; preserve15 visible body meshes and separate skin/hair/garment materials.",
+      "status": "PLANNED"
+    },
+    {
+      "step": 3,
+      "work": "Convert original CLO_TUNIC_TRAVELER_01 and CLO_TROUSERS_TRAVELER_01 into layered garments; author weights and inner/outer cages.",
+      "status": "PLANNED"
+    },
+    {
+      "step": 4,
+      "work": "Test each item separately/together on both bodies with locomotion, sit/crouch, attack/cast, equip/remove/cleanup; validate tint/modesty.",
+      "status": "PLANNED"
+    },
+    {
+      "step": 5,
+      "work": "Bind accepted originals through AppearanceAssetRegistry; preserve IDs/ownership/revisions; test Player/Hero paths and save/respawn/rejoin.",
+      "status": "PLANNED"
+    },
+    {
+      "step": 6,
+      "work": "Adapter for both world NPC carriers preserving tags/tools/dialogue/quest/work/streaming, then expand remaining races/presets.",
+      "status": "PLANNED"
+    }
+  ],
+  "excluded": [
+    {
+      "title": "Paid Quaternius Source/Pro",
+      "reason": "FREE_ONLY_SCOPE"
+    },
+    {
+      "title": "Bulk MakeHuman Suits02",
+      "url": "https://static.makehumancommunity.org/assets/assetpacks/suits02.html",
+      "reason": "MIXED_GENERIC_AND_NAMED_FAN_IP_ITEMS_NO_BULK_INTAKE"
+    },
+    {
+      "title": "Lola as layered clothing base",
+      "reason": "OFFICIAL_REFERENCE_LACKS_CAGES"
+    },
+    {
+      "title": "Template Tester as cage solution",
+      "reason": "CLASSIC_TEXTURE_PREVIEW_NOT_LAYERED_FIT_TOOL"
+    }
+  ],
+  "localChecks": {
+    "forgeDoctor": "EXECUTED_PATH_DISCOVERY_ONLY",
+    "forgeValidate": "PASS_33_TASKS_30_SKILLS",
+    "forgePlan": "EXECUTED",
+    "reconcile": "PASS_502_ASSETS_73_SCREENS_89_KIT_402_HASHED_0_MISSING_NOT_UAT",
+    "characterContract": "PASS_89_PLANNED_15_PARTS",
+    "studioValidate": "PASS_33_ROLES_33_TASKS_10_WORKFLOWS",
+    "studioVerify": "PASS_97_GENERATED_FILES_ONLY"
+  },
+  "acceptance": {
+    "primarySourceResearch": "COMPLETED",
+    "sourceMapping": "COMPLETED",
+    "independentDocumentReview": "PASS_RESEARCH_DOCUMENT_ONLY_BY_ASSET_FIT",
+    "catalogConsistencyCheck": "PASS_11_OPTIONS_6_GAPS_FREE_TIER_NULL_IDS_AND_NO_ACQUISITION_FLAGS",
+    "archiveInspection": "NOT_PERFORMED",
+    "localAddonOrAvatarToolTest": "NOT_PERFORMED",
+    "robloxImport": "NOT_PERFORMED",
+    "studioGameplayTest": "NOT_PERFORMED",
+    "deviceTest": "NOT_PERFORMED",
+    "humanArtReview": "PENDING",
+    "runtimeChanges": false,
+    "acquisitionCount": 0
+  },
+  "nextOwners": "Character artist + rigging artist for inspected archives/original cages/garment fit; guild engineer for accepted Player/Hero/NPC adapters; QA for per-preset/tool/runtime/device evidence."
+}

@@ -1,0 +1,28 @@
+{
+  "outcome": "success",
+  "context": "Independent read-only asset_fit review of the offline Guildborne learning loop, followed by scoped regression fixes on 2026-10-14.",
+  "observation": "The independent reviewer reproduced three defects: an old rollback could succeed after newer promotions recreated identical bytes (ABA); a holdout could reuse a structured input already present in lesson evidence after renaming its ID; Forge accept allowed a self-review label with altered case/whitespace.",
+  "correction": "Guard rollback by latest successful per-target journal lineage inside the mutation transaction, not bytes alone. Exclude canonical structured input fingerprints from all supporting lesson evidence when selecting fresh holdout/refusal cases. Compare reviewer and author labels after strip and casefold in both learning and Forge. Preserve the original acceptance state and test each reproduced refusal.",
+  "limit": "Regression-only process lesson anchored to these source/test SHA256 snapshots. Source hashes are not execution receipts or signed identity proof. The final local runs reported 27 learning tests and 23 ForgeTests passing, each with one Windows symlink privilege skip; internal junction refusal ran successfully. These runs do not establish human behavior quality, OS sandboxing, Studio/device/cross-server/UAT acceptance, paid service permission, or an automatic skill promotion. Current reviewer labels remain cooperative rather than authenticated.",
+  "tags": [
+    "learning",
+    "regression",
+    "independent-review",
+    "rollback",
+    "holdout"
+  ],
+  "evidence": [
+    {
+      "path": "tools/agentic/learning.py",
+      "sha256": "069ae8c657d0ce4045d837200e3bafe493f752396778b4d55d4a8ce02ac49c80"
+    },
+    {
+      "path": "tools/agentic/forge.py",
+      "sha256": "5804082529969e55d62393476738409fe362f7e058a54105427f8f0efedac8d6"
+    },
+    {
+      "path": "tests/agentic/test_learning.py",
+      "sha256": "99dab95f67e5f3049b6c747d66af2dfc1274654ce5844d9a8e4ec62fe9024638"
+    }
+  ]
+}

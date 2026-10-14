@@ -4,6 +4,7 @@
 local C: any={AssetIds={},MaxVoices=16,MaxDistance=80,Defaults={Master=.75,UI=.7,Combat=.8,Music=.45},
     Attributes={Master="GuildborneAudioMaster",UI="GuildborneAudioUI",Combat="GuildborneAudioCombat",Music="GuildborneAudioMusic",Muted="GuildborneAudioMuted"}}
 C.Cues={
+    forge_strike={group="Combat",duration=.65,interval=.25},
     hover={group="UI",duration=.1,interval=.1},press={group="UI",duration=.145,interval=.08},back={group="UI",duration=.245,interval=.1},
     modal_open={group="UI",duration=.27,interval=.15},confirm={group="UI",duration=.365,interval=.15},error={group="UI",duration=.315,interval=.25},
     reward={group="UI",duration=.595,interval=.3},level_up={group="UI",duration=.765,interval=.3},recruit_reveal={group="UI",duration=.815,interval=.3},notification={group="UI",duration=.365,interval=.2},

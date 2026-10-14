@@ -1,0 +1,165 @@
+{
+  "schemaVersion": 1,
+  "palettes": [
+    {
+      "skinPaletteId": "SKIN_HUMAN_01",
+      "raceId": "HUMAN",
+      "label": "PORCELAIN",
+      "colorHex": "#F3D9C0",
+      "status": "PLANNED",
+      "notes": "Config option, not individual new body mesh. Validate tint with actual material."
+    },
+    {
+      "skinPaletteId": "SKIN_HUMAN_02",
+      "raceId": "HUMAN",
+      "label": "LIGHT",
+      "colorHex": "#E8BE97",
+      "status": "PLANNED",
+      "notes": "Config option, not individual new body mesh. Validate tint with actual material."
+    },
+    {
+      "skinPaletteId": "SKIN_HUMAN_03",
+      "raceId": "HUMAN",
+      "label": "TAN",
+      "colorHex": "#C68D60",
+      "status": "PLANNED",
+      "notes": "Config option, not individual new body mesh. Validate tint with actual material."
+    },
+    {
+      "skinPaletteId": "SKIN_HUMAN_04",
+      "raceId": "HUMAN",
+      "label": "BROWN",
+      "colorHex": "#94613E",
+      "status": "PLANNED",
+      "notes": "Config option, not individual new body mesh. Validate tint with actual material."
+    },
+    {
+      "skinPaletteId": "SKIN_HUMAN_05",
+      "raceId": "HUMAN",
+      "label": "DEEP",
+      "colorHex": "#573928",
+      "status": "PLANNED",
+      "notes": "Config option, not individual new body mesh. Validate tint with actual material."
+    },
+    {
+      "skinPaletteId": "SKIN_ELF_01",
+      "raceId": "ELF",
+      "label": "PEARL",
+      "colorHex": "#F0E4D8",
+      "status": "PLANNED",
+      "notes": "Config option, not individual new body mesh. Validate tint with actual material."
+    },
+    {
+      "skinPaletteId": "SKIN_ELF_02",
+      "raceId": "ELF",
+      "label": "FAIR",
+      "colorHex": "#EBD1B8",
+      "status": "PLANNED",
+      "notes": "Config option, not individual new body mesh. Validate tint with actual material."
+    },
+    {
+      "skinPaletteId": "SKIN_ELF_03",
+      "raceId": "ELF",
+      "label": "GOLDEN",
+      "colorHex": "#DDAC79",
+      "status": "PLANNED",
+      "notes": "Config option, not individual new body mesh. Validate tint with actual material."
+    },
+    {
+      "skinPaletteId": "SKIN_ELF_04",
+      "raceId": "ELF",
+      "label": "BRONZE",
+      "colorHex": "#A77C58",
+      "status": "PLANNED",
+      "notes": "Config option, not individual new body mesh. Validate tint with actual material."
+    },
+    {
+      "skinPaletteId": "SKIN_ELF_05",
+      "raceId": "ELF",
+      "label": "ASH",
+      "colorHex": "#A1A3A0",
+      "status": "PLANNED",
+      "notes": "Config option, not individual new body mesh. Validate tint with actual material."
+    },
+    {
+      "skinPaletteId": "SKIN_ORC_01",
+      "raceId": "ORC",
+      "label": "SAGE",
+      "colorHex": "#ADB48A",
+      "status": "PLANNED",
+      "notes": "Config option, not individual new body mesh. Validate tint with actual material."
+    },
+    {
+      "skinPaletteId": "SKIN_ORC_02",
+      "raceId": "ORC",
+      "label": "OLIVE",
+      "colorHex": "#929C60",
+      "status": "PLANNED",
+      "notes": "Config option, not individual new body mesh. Validate tint with actual material."
+    },
+    {
+      "skinPaletteId": "SKIN_ORC_03",
+      "raceId": "ORC",
+      "label": "MOSS",
+      "colorHex": "#687746",
+      "status": "PLANNED",
+      "notes": "Config option, not individual new body mesh. Validate tint with actual material."
+    },
+    {
+      "skinPaletteId": "SKIN_ORC_04",
+      "raceId": "ORC",
+      "label": "FOREST",
+      "colorHex": "#455D39",
+      "status": "PLANNED",
+      "notes": "Config option, not individual new body mesh. Validate tint with actual material."
+    },
+    {
+      "skinPaletteId": "SKIN_ORC_05",
+      "raceId": "ORC",
+      "label": "GREY_GREEN",
+      "colorHex": "#8C9B87",
+      "status": "PLANNED",
+      "notes": "Config option, not individual new body mesh. Validate tint with actual material."
+    },
+    {
+      "skinPaletteId": "SKIN_DWARF_01",
+      "raceId": "DWARF",
+      "label": "FAIR",
+      "colorHex": "#EDCCB2",
+      "status": "PLANNED",
+      "notes": "Config option, not individual new body mesh. Validate tint with actual material."
+    },
+    {
+      "skinPaletteId": "SKIN_DWARF_02",
+      "raceId": "DWARF",
+      "label": "RUDDY",
+      "colorHex": "#DCA98E",
+      "status": "PLANNED",
+      "notes": "Config option, not individual new body mesh. Validate tint with actual material."
+    },
+    {
+      "skinPaletteId": "SKIN_DWARF_03",
+      "raceId": "DWARF",
+      "label": "TAN",
+      "colorHex": "#C18C63",
+      "status": "PLANNED",
+      "notes": "Config option, not individual new body mesh. Validate tint with actual material."
+    },
+    {
+      "skinPaletteId": "SKIN_DWARF_04",
+      "raceId": "DWARF",
+      "label": "BRONZE",
+      "colorHex": "#90623F",
+      "status": "PLANNED",
+      "notes": "Config option, not individual new body mesh. Validate tint with actual material."
+    },
+    {
+      "skinPaletteId": "SKIN_DWARF_05",
+      "raceId": "DWARF",
+      "label": "DEEP_BROWN",
+      "colorHex": "#624737",
+      "status": "PLANNED",
+      "notes": "Config option, not individual new body mesh. Validate tint with actual material."
+    }
+  ]
+}

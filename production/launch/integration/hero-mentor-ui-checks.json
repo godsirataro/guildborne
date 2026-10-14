@@ -1,0 +1,15 @@
+{
+  "date": "2026-10-14",
+  "status": "SCOPED_STUDIO_NATIVE_UI_FIXTURE_PASS_INDEPENDENTLY_REVIEWED",
+  "publicReady": false,
+  "candidateSha256": "82674727eefa082b788dd517d9d3febda46e8891ef8b1609e80d5c79fa13aac0",
+  "sourceTestsBeforeControllerLocalization": 752,
+  "finalControllerAnalysis": "PASS",
+  "independentTargetedTests": 15,
+  "studio": {"placeId": 0, "gameId": 0, "persistence": "Memory", "scriptsCompared": 360, "nativeFixtureCases": 10, "languages": ["en", "th"], "normalHeroJourney": "PENDING", "sameRevisionLivePhase": "PENDING"},
+  "report": "HERO_MENTOR_UI_UPDATE.md",
+  "raw": "hero-mentor-ui-raw.json",
+  "rawSha256": "e620fcd6a268f73f1ecbf2e4ff107bc4419d17a9fa6fb3c7030282123378931f",
+  "validation": "hero-mentor-ui-validation.log",
+  "fixtureLimit": "Synthetic data and captured UI callbacks; no gameplay requests or profile writes. Does not prove normal progression, cloud persistence, visual fit or device performance."
+}

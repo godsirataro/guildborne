@@ -15,6 +15,13 @@ local Gear=require(ReplicatedStorage.Shared.Data.Equipment)(Content,Expansion,re
 local present = require(script.Parent.Parent.Systems.HeroPresentation)(Content,Gear)
 local V = Vector3.new
 local homes = { V(-30,3,-9), V(-23,3,-9), V(-16,3,-9), V(-27,3,-17), V(-19,3,-17) }
+local function appearance(model:Model,actor:any?)
+	if not Content.AppearanceAvailable or not actor or actor.appearanceEnabled~=true then return end
+	local renderer=require(ReplicatedStorage.Shared.Presentation.ModularAppearance.Renderer)
+	local ok,problem=renderer.apply(model,actor.appearance)
+	model:SetAttribute("AppearanceRevision",actor.appearanceRevision)
+	model:SetAttribute("AppearanceProblem",if ok then nil else problem)
+end
 
 return function(templates: Folder, onOpen: (Player,string) -> (), reward: any,towerResult: any,regionalRewardFactory:any?)
 	local combat=require(script.Parent.CombatService)(templates,reward,towerResult,regionalRewardFactory)
@@ -40,6 +47,7 @@ return function(templates: Folder, onOpen: (Player,string) -> (), reward: any,to
 		local function assign(p: Instance) if p:IsA("BasePart") then p.CollisionGroup="GuildborneCharacters" end end
 		for _,p in ipairs(character:GetDescendants()) do assign(p) end
 		s.characterConnection=character.DescendantAdded:Connect(assign)
+		appearance(character,s.characterData)
 		table.clear(s.history); s.reset=true;s.towerPosition=s.towerRun and s.towerRun.state=="Fighting"
 	end
 	local function makeHero(player: Player, s: any, desc: any): any
@@ -68,7 +76,9 @@ return function(templates: Folder, onOpen: (Player,string) -> (), reward: any,to
 	end
 	function service.Sync(player: Player, data: any, active: boolean)
 		local s=sessions[player]; if not s then return end
+		if s.mentor then return end
 		s.active=active;s.extra=Gear.extras(data,data.character);s.playerBuild=Gear.build(data,data.character);s.expansionData=data.expansion; s.characterData=data.character; s.playerLoadout=if data.character.classId then Gear.loadout(data,data.character) else nil
+		if player.Character then appearance(player.Character,data.character) end
 		combat.TowerSync(player,s,data.expansion and data.expansion.tower.active)
 		for _,desc in ipairs(present(data)) do
 			local h=s.heroes[desc.id]
@@ -83,6 +93,7 @@ return function(templates: Folder, onOpen: (Player,string) -> (), reward: any,to
 			end
 			if h.weapon~=desc.weapon then Rig.Equip(h.model,desc.weapon,templates); h.weapon=desc.weapon end
 			Rig.Outfit(h.model,desc.armor,desc.accessory)
+			appearance(h.model,data.adventurers[desc.id])
 			-- Equipment weld changes can reset assembly ownership even while already walking.
 			if not h.root.Anchored and (h.root:GetNetworkOwnershipAuto() or h.root:GetNetworkOwner()~=nil) then h.root:SetNetworkOwner(nil) end
 			h.model:SetAttribute("HeroState",desc.state); h.model:SetAttribute("PartySlot",desc.slot)
@@ -140,6 +151,7 @@ return function(templates: Folder, onOpen: (Player,string) -> (), reward: any,to
 		elapsed+=dt; if elapsed<.2 then return end; elapsed=0
 		local now=os.clock()
 		for player,s in pairs(sessions) do
+			if s.mentor then continue end
 			local character=player.Character; local root=character and character:FindFirstChild("HumanoidRootPart") :: BasePart?
 			local humanoid=character and character:FindFirstChildOfClass("Humanoid")
 			local inCity=root~=nil and City.contains(root.Position.X,root.Position.Z)
@@ -188,7 +200,7 @@ return function(templates: Folder, onOpen: (Player,string) -> (), reward: any,to
 	end
 	function service.PlayerAction(player: Player, action: string, actorId: string?): (boolean, string)
 		local s=sessions[player]
-		if not s then return false,"NotReady" end
+		if not s or s.mentor then return false,"NotReady" end
 		return combat.PlayerAction(s,action,os.clock(),actorId)
 	end
 	-- Read-only server evidence for campaign adapters; never accepts a client snapshot.
@@ -197,6 +209,34 @@ return function(templates: Folder, onOpen: (Player,string) -> (), reward: any,to
 		if not h or h.state~="Following" or not a or a.owner~=player.UserId or not h.model:IsDescendantOf(workspace) then return nil end
 		return {id=actorId,health=a.health,position=h.root.Position,order=a.order,
 			focus=if a.focusTarget and a.focusTarget.health>0 then a.focusTarget.id else nil}
+	end
+	-- One temporary pose owner. Freeze unrelated followers in place; restore exactly once.
+	function service.BeginMentor(player:Player,actorId:string):any?
+		local s=sessions[player];local h=s and s.heroes[actorId]
+		if not s or s.mentor or not h or h.state~="Following" or not h.combat or h.combat.health<=0 or s.combat then return nil end
+		local saved={};s.mentor={actorId=actorId,saved=saved}
+		for id,member in pairs(s.heroes)do
+			member.generation+=1;member.path=nil
+			saved[id]={anchored=member.root.Anchored,pivot=member.model:GetPivot(),parent=member.model.Parent,attributes=member.model:GetAttributes()}
+			member.root.Anchored=true;member.root.AssemblyLinearVelocity=Vector3.zero
+		end
+		return h.model
+	end
+	function service.EndMentor(player:Player)
+		local s=sessions[player];local owned=s and s.mentor;if not owned then return end
+		s.mentor=nil;s.reset=true
+		for id,saved in pairs(owned.saved)do local h=s.heroes[id];if h and h.root.Parent then
+			local restored,problem=pcall(function()
+			if id==owned.actorId then
+				h.model.Parent=saved.parent;h.model:PivotTo(saved.pivot)
+				for key in pairs(h.model:GetAttributes())do if saved.attributes[key]==nil then h.model:SetAttribute(key,nil)end end
+				for key,value in pairs(saved.attributes)do h.model:SetAttribute(key,value)end
+			end
+			h.root.Anchored=saved.anchored;h.root.AssemblyLinearVelocity=Vector3.zero;h.root.AssemblyAngularVelocity=Vector3.zero
+			if not h.root.Anchored then h.root:SetNetworkOwner(nil)end
+			end)
+			if not restored then warn("[Guildborne] Hero mentor member restore failed: "..tostring(problem))end
+		end end
 	end
 	function service.Remove(player: Player)
 		local s=sessions[player]; if not s then return end

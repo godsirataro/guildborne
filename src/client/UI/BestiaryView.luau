@@ -23,6 +23,7 @@ return function(ui: any)
 		local expedition = card(ui.scroll, "Timed expeditions"); expedition.Name = "ExpeditionEntry"
 		show(expedition, guide.Expedition, "Expedition encounter values differ from enemies fought in the world.")
 		local tower = card(ui.scroll, T("Tower · Floor {floor}", {floor = floor})); tower.Name = "TowerEntries"
+		if catalog.ReleaseContent and catalog.ReleaseContent.TowerUnavailable then text(tower,"Available after the Lv1–35 preview.",16).Name="ReleaseBoundary" end
 		text(tower, "Preview any floor. This does not unlock travel or claim rewards.", 14)
 		button(tower, "Previous floor", floor > 1 and not busy, function() floor -= 1; ui.render() end).Name = "PreviousFloor"
 		button(tower, "Next floor", floor < #guide.Floors and not busy, function() floor += 1; ui.render() end).Name = "NextFloor"
@@ -41,6 +42,7 @@ return function(ui: any)
 			end
 			for _,entry in ipairs(guide.Regions[regionIndex].Entries) do
 				local frame=card(ui.scroll,entry.Name);frame.Name="Enemy_"..entry.Id
+				if catalog.ReleaseContent and catalog.ReleaseContent.BlockedZones[guide.Regions[regionIndex].Id] then text(frame,"Available after the Lv1–35 preview.",16).Name="ReleaseBoundary" end
 				show(frame,entry,entry.Note,true)
 				text(frame,T("Reward: {gold} Gold · {xp} XP per credited member",{gold=entry.Gold,xp=entry.XP}),15)
 				for _,item in ipairs(entry.Items) do text(frame,T("{item} × {amount}",{item=T(catalog.Items[item.Id].Name),amount=item.Quantity}),15) end

@@ -35,7 +35,7 @@ return function(ui: any)
 					end
 				else
 					local locked=state.locked
-					button(f,if state.unavailable then "Regional encounters are not open yet." elseif locked then T("Complete {quest} first",{quest=T(catalog.Journal[def.Requires].Name)}) else "Accept quest",not busy and not locked,function() ui.act("AcceptTask",{questId=id}) end).Name="Accept_"..id
+					button(f,if state.releaseUnavailable then "Available after the Lv1–35 preview." elseif state.unavailable then "Regional encounters are not open yet." elseif locked then T("Complete {quest} first",{quest=T(catalog.Journal[def.Requires].Name)}) else "Accept quest",not busy and not locked,function() ui.act("AcceptTask",{questId=id}) end).Name="Accept_"..id
 				end
 			end
 			if visibleCount==0 then

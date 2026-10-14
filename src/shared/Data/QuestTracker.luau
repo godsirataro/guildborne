@@ -41,12 +41,13 @@ return function(data: any,catalog: any,pinned: string?): any
 	if step and tutorialTabs[step] then return {kind="Tutorial",step=step,tab=tutorialTabs[step]} end
 	for _,id in ipairs(catalog.JournalOrder) do local item=active(id);if item then return item end end
  local chapters=catalog.CampaignChapter and catalog.CampaignChapter.Chapters
- if campaign and chapters and #chapters>0 and campaign.claimed==#chapters then
+ if campaign and chapters and #chapters>0 and campaign.claimed>=#chapters then
   local last=chapters[#chapters]
   if last.Title and last.Thai then return {kind="CampaignComplete",tab="Guild",focus="CampaignJourney",name=if data.language=="th"then last.Thai else last.Title,ready=false}end
  end
 	for _,id in ipairs(catalog.JournalOrder) do
 		local def=catalog.Journal[id]
+		if catalog.ReleaseContent and catalog.ReleaseContent.BlockedTasks[id] then continue end
 		if def.RequiresRegionalCombat and catalog.RegionalCombatAvailable~=true then continue end
 		local unlocked=not def.Requires or (journal[def.Requires] and journal[def.Requires].state=="Claimed")
 		if not journal[id] and unlocked then return {id=id,kind="Available",name=def.Name,description=def.Description,npc=def.NPC,tab="Journal"} end

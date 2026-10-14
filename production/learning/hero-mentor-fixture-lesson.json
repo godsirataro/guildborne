@@ -1,0 +1,24 @@
+{
+  "outcome": "failure",
+  "context": "Guildborne HeroMentorWorld isolated Studio MCP fixture after a normal fresh launch boot. Fixture calls required modules directly rather than running the server bootstrap.",
+  "observation": "First fixture trial had no path ability and failed without proof. MCP-required Combat configuration did not contain the bootstrap Expansion.Abilities merge. After explicitly composing that configuration, Berserker, Cleric and Guardian fixture trials produced observed art effects and individual proof.",
+  "correction": "Before independent Studio world fixtures, explicitly compose bootstrap-injected dependencies and inspect required ability presence. Keep initial failures and distinguish fixture command/commit sinks from the real bootstrap Data session; do not attribute a fixture composition failure to normal gameplay without reproduction.",
+  "limit": "Observed on this local Studio/MCP context and three Class2 paths. Does not establish universal require-cache behavior, normal UI progression, cloud persistence or art/audio quality; no live skill promoted.",
+  "tags": [
+    "studio",
+    "fixture",
+    "bootstrap",
+    "combat",
+    "hero-mentor"
+  ],
+  "evidence": [
+    {
+      "path": "production/launch/integration/hero-mentor-world-raw.json",
+      "sha256": "340a67c7a65f634ac4b32c66f38a707a6544699bf04b0ff314654c23ca9b4f56"
+    },
+    {
+      "path": "production/launch/integration/hero-mentor-lifecycle-raw.json",
+      "sha256": "f28cb6bd4071b6bded7020e71d5363cb1bd5673dc49a096ce8633bed43ca08f5"
+    }
+  ]
+}

@@ -84,7 +84,7 @@ function Content.NoviceActionProblem(data:any,action:string):string?
  if Content.ProgressionMode(data)~=Content.ProgressionRulesets.Novice then return nil end
  local story=data.progression.novice
  if story and story.claimed==6 then return nil end
- if ({GetState=true,RetryLoad=true,RetrySave=true,SetLanguage=true,BeginTutorial=true,ClaimNoviceChapter=true,FoundNoviceGuild=true,SelectPlayerClass=true})[action] then return nil end
+ if ({GetState=true,RetryLoad=true,RetrySave=true,SetLanguage=true,BeginTutorial=true,CommitAppearance=true,ClaimDailyReward=true,ClaimSeasonReward=true,ClaimNoviceChapter=true,FoundNoviceGuild=true,SelectPlayerClass=true})[action] then return nil end
  return "NoviceJourneyRequired"
 end
 function Content.RecruitmentStartingXP(data:any):number

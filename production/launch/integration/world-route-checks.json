@@ -1,0 +1,39 @@
+{
+  "date": "2026-10-14",
+  "status": "PASS_LOCAL_AND_SCOPED_SINGLE_CLIENT_ROUTE",
+  "publicReady": false,
+  "candidateSha256": "55404c199438de6138cf0fee877151c9bc3c422e88a1f1c57e3ba2cf06e08a17",
+  "sourceTests": 736,
+  "validationLog": "validation-world.log",
+  "validationLogSha256": "e1461397d9f6b75c4d0e67dc172722c0743ed8c95bcd746e6667ffc5bad95280",
+  "sourceReview": {"reviewer": "launch_progression", "status": "PASS_SCOPED_WORLD_BOUNDARY"},
+  "evidenceReview": {"reviewer": "launch_progression", "status": "PASS_SCOPED_LOCAL_PROGRESSION", "limitation": "Path advancement proven; learned/equipped Berserker skill combat not yet tested."},
+  "studio": {
+    "id": "2b68ef16-ca19-4e9f-8658-23538750cd2f",
+    "placeId": 0,
+    "gameId": 0,
+    "persistence": "Memory",
+    "clients": 1,
+    "scriptEntries": 357,
+    "worldBoundaryProbe": "PASS",
+    "normalRoute": {
+      "noviceChapters": 6,
+      "campaignChapters": 12,
+      "level": 35,
+      "hall": 4,
+      "classId": "Warrior",
+      "path": "berserker",
+      "tier": 2,
+      "gold": 211,
+      "revision": 114,
+      "expeditionFirstClears": ["trail_watch", "timber_escort", "quarry_patrol"],
+      "method": "Normal-speed navigation, keyboard and native UI. Read-only outcome probes. No grants/profile edits/direct objective receipts/time skipping."
+    },
+    "finalSnapshot": "world-route-class2-raw.json",
+    "finalSnapshotSha256": "eeb5e344e30f6a13439bdc4d69a42b0ab27bfbcf978ba3b632fc9b800bae2122",
+    "console": "world-route-console-raw.json",
+    "consoleCaveat": "Includes corrected AssistantCommand MenuRouter path error; not a zero-error console claim.",
+    "leftPlayingForUser": true
+  },
+  "remaining": ["other actual class branches", "hero mentor contract", "Borin craft-two route", "persistence/rejoin", "multiplayer/cross-server", "physical devices", "runtime presets/fit/audio", "commerce/season lifecycle", "human UAT/release signoff"]
+}
