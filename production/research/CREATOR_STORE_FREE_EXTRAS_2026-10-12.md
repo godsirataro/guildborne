@@ -1,6 +1,6 @@
 # Guildborne — ของฟรีเพิ่มเติม: VFX, animation, อาหาร, potion/poison และหนังสือ
 
-ตรวจวันที่ **12 ตุลาคม 2026** (Asia/Bangkok) · สถานะ **RESEARCH / รอตรวจรับ asset**  
+ตรวจวันที่ **12 ตุลาคม 2026** (Asia/Bangkok) · สถานะ **RESEARCH / รอตรวจรับ asset**
 ต่อจาก [รายงานชุดแรก](C:/Work/MySelf/Guildborne/production/research/CREATOR_STORE_FREE_2026-10-12.md)
 
 ## ผลที่พบ
@@ -131,4 +131,3 @@ Human/Elf/Orc/Dwarf appearance รุ่นใหม่มี R15 15 core parts;
 - ไม่คัด Healing Potion ที่อ้าง reupload, Healing Animations ที่ยังไม่รู้ชนิด clip, plugin ที่ต้องใช้ generation credits หรือ texture-fetch plugin ที่ยังไม่ตรวจที่มา/เครือข่าย
 - หลักเกณฑ์สิทธิ์ Store ใช้ [Creator Store Terms](https://en.help.roblox.com/hc/en-us/articles/21308223046932-Creator-Store-Terms); “รับฟรี” ไม่อนุมานสิทธิ์แจกไฟล์นอกแพลตฟอร์ม
 - เอกสารและ JSON ต้องผ่าน independent research review; ไม่ใช่ evidence packet ที่ผ่าน Studio/device/release acceptance
-

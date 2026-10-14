@@ -6,7 +6,7 @@
 
 ## ข้อสรุปและช่องว่างจริง
 
-ของที่ช่วยตรงที่สุดคือ **official R15 rig + body cage + clothing cage + caged garment reference + fitting tools**  
+ของที่ช่วยตรงที่สุดคือ **official R15 rig + body cage + clothing cage + caged garment reference + fitting tools**
 ของเสริมสำหรับงานศิลป์คือ MPFB, ผม/เครา CC0 และ free Standard ของ Quaternius โดยต้องดัดแปลง skeleton/geometry/fitting
 
 - มี body Standard/Heavy เดิมและหลักฐาน local MeshPart articulation แล้ว จึงไม่เรียกว่าข้อต่อยังไม่ทำทั้งหมด
@@ -37,7 +37,7 @@
 
 ## เลือก official files ให้ตรง workflow
 
-[Avatar Resources](https://create.roblox.com/docs/avatar/resources) มี Standard R15 Rig and Attachments, Cages for Bodies, Cages for Clothing และ Combined Project Files; formats ที่หน้าเว็บเสนอคือ .blend/.ma/.fbx  
+[Avatar Resources](https://create.roblox.com/docs/avatar/resources) มี Standard R15 Rig and Attachments, Cages for Bodies, Cages for Clothing และ Combined Project Files; formats ที่หน้าเว็บเสนอคือ .blend/.ma/.fbx
 กลุ่ม rig/cage เป็นไฟล์สำหรับสร้างงานใน DCC ยังต้องเตรียม export ไม่ใช่ของที่โยนเข้า Studio ได้ทันที
 
 [Body project files](https://create.roblox.com/docs/avatar/character-bodies/project-files) มี Round/Square/Muzzle แบบ Male/Female และ GoblinCharacter.zip; ใช้เป็น starting/reference แล้วแก้หน้าตา/สัดส่วนของเกม ไม่ตั้งชื่อ Goblin เป็น Orc ของ Guildborneหรือถือว่า fit Dwarf แล้ว
@@ -48,10 +48,10 @@ Roblox ระบุให้ใช้ไฟล์เหล่านี้เป�
 
 ## Avatar Setup และ AFT ช่วยได้แค่ไหน
 
-[Avatar Setup](https://create.roblox.com/docs/avatar-setup) มี Development Avatar สำหรับ NPC/starter characters แยกจาก Platform Avatar; preview animations/garments, attachment edits และ Cage Brush ช่วยเตรียมและตรวจงาน  
+[Avatar Setup](https://create.roblox.com/docs/avatar-setup) มี Development Avatar สำหรับ NPC/starter characters แยกจาก Platform Avatar; preview animations/garments, attachment edits และ Cage Brush ช่วยเตรียมและตรวจงาน
 ไฟล์ Auto-Setup references กับ traditional templates เป็นคนละ workflow อย่าสลับใช้โดยถือว่าตรงกัน
 
-[Input specifications](https://create.roblox.com/docs/avatar-setup/auto-setup-requirements) มีเงื่อนไข rig/head/pose/mesh; ถ้า rig ไม่เข้ามาตรฐานอาจสร้าง rig ใหม่ จึงต้องตรวจสำเนาโมเดล ไม่อนุมานว่า Human candidate ปัจจุบันผ่าน input แล้ว  
+[Input specifications](https://create.roblox.com/docs/avatar-setup/auto-setup-requirements) มีเงื่อนไข rig/head/pose/mesh; ถ้า rig ไม่เข้ามาตรฐานอาจสร้าง rig ใหม่ จึงต้องตรวจสำเนาโมเดล ไม่อนุมานว่า Human candidate ปัจจุบันผ่าน input แล้ว
 คำอธิบายภาพรวมบางส่วนกล่าวให้ bundle body ส่วน detailed layered-input table อนุญาต standalone แบบ best effort ข้อเสนอคือ bundle actual body+garment เพื่อจัด fitting ชัดเจน
 
 [AFT](https://create.roblox.com/docs/avatar/accessory-fitting-tool) ใช้ custom bodies/custom animations/multiple layers ตรวจและแก้ fit บางส่วนได้ ตัวเลือก Classic/Normal/Slender **ไม่เปลี่ยน layered accessory fit** จึงไม่พิสูจน์ Standard/Heavy/Orc/Dwarf ผ่านโดยสลับ selector
@@ -86,7 +86,7 @@ MPFB:
 | gameplay animation | [LocalGeometryRig.luau](/C:/Work/MySelf/Guildborne/src/shared/Presentation/ModularAppearance/LocalGeometryRig.luau:37) · LOCAL_CALIBRATION_RECEIPTS_EXIST_GAMEPLAY_UNACCEPTED | Roblox R15 rig, body cages and clothing cages; Universal Animation Library — Standard only |
 | shared NPC integration | [HeroRig.luau](/C:/Work/MySelf/Guildborne/src/server/Services/HeroRig.luau:2) · EXISTING_R6_CARRIER_WORLD_INTEGRATION_PENDING | Roblox R15 rig, body cages and clothing cages; Accessory Fitting Tool; Universal Animation Library — Standard only |
 
-รักษา appearance save/ownership/revisions/fit/slots ผ่านระบบเดิม แยก cosmeticจากWEAPON entitlement และlegacy ancestry สถิติการต่อสู้  
+รักษา appearance save/ownership/revisions/fit/slots ผ่านระบบเดิม แยก cosmeticจากWEAPON entitlement และlegacy ancestry สถิติการต่อสู้
 NPCต้องเก็บ tags/IDs/worktools/prompt/dialogue/quests/routines และcleanup; HeroRig R6 carrierและcivic skeletonยังต้องadapter ไม่ใส่NPC AI scriptsทั่วไปมาแทน
 
 ## ลำดับที่คุ้มที่สุด
@@ -98,19 +98,18 @@ NPCต้องเก็บ tags/IDs/worktools/prompt/dialogue/quests/routines �
 5. รับเฉพาะสิ่งที่ผ่านเข้าระบบเดิม แล้วตรวจPlayer/Hero/save/respawn/rejoin
 6. ต่อspawned NPCทั้งสองโครงพร้อมงาน/บทพูด/streaming จากนั้นขยายElf/Orc/Dwarfและpresetsที่เหลือ
 
-GUIรอบก่อนช่วยหน้าแต่งตัว/portrait/selection แต่ไม่แก้cages; Template Testerช่วยclassic texture preview ไม่แก้flexible garment fit  
+GUIรอบก่อนช่วยหน้าแต่งตัว/portrait/selection แต่ไม่แก้cages; Template Testerช่วยclassic texture preview ไม่แก้flexible garment fit
 animation/VFX/food/book/clutterก่อนหน้าช่วยโลกและpresentation ต่อได้หลังbody+clothesroute ผ่าน ไม่ใช่แทนจุดตรวจนี้
 
 ## สถานะหลักฐาน
 
-SourceHEAD 4cc9a8232e0fd9ae7bf517983c274e800e8ad4a4; checkoutมีงานตัวละครเดิมที่ยังไม่commitและถูกเก็บไว้  
-รันForge doctor/validate/plan, reconciliation, character-contract, Studio router validate/verifyแล้วผ่านตามขอบเขตmetadata/generated-files  
+SourceHEAD 4cc9a8232e0fd9ae7bf517983c274e800e8ad4a4; checkoutมีงานตัวละครเดิมที่ยังไม่commitและถูกเก็บไว้
+รันForge doctor/validate/plan, reconciliation, character-contract, Studio router validate/verifyแล้วผ่านตามขอบเขตmetadata/generated-files
 reconciliation502assets/73screens/89kit/402hashed/0missing; character contract89planned/15parts ไม่ได้สร้างmeshหรือรับรองfit
 
-ไม่ได้download/install/import/upload/publish/executeaddon/avatarfittingtools หรือแก้runtime/registry/productionassets ยังไม่มีfreshStudio/game/device/humanartacceptance  
-JSONคู่รายงานมีnullableIDs/freecounts, license/tier และreviewstatus  
+ไม่ได้download/install/import/upload/publish/executeaddon/avatarfittingtools หรือแก้runtime/registry/productionassets ยังไม่มีfreshStudio/game/device/humanartacceptance
+JSONคู่รายงานมีnullableIDs/freecounts, license/tier และreviewstatus
 ผู้รับต่อ: character/riggingartistสำหรับcages/garments, engineerสำหรับacceptedPlayer/Hero/NPCadapter, QAสำหรับfit/runtime/device evidence
 
 Independent document review โดย asset_fit: **PASS** — จำนวนและ source gaps ตรงกัน แยก free tiers/rights/preview จาก runtime acceptance ถูกต้อง ไม่มี correction
 Local catalog consistency check: **PASS** — JSON, unique keys, source paths, nullable free counts/runtime IDs และ no-acquisition flags
-

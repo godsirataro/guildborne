@@ -1,6 +1,6 @@
 # Guildborne — คลังวัตถุดิบฟรีครบหมวดและแผนดัดแปลง
 
-ตรวจวันที่ **12 ตุลาคม 2026** (Asia/Bangkok) · **RESEARCH / ADAPTATION PLAN**  
+ตรวจวันที่ **12 ตุลาคม 2026** (Asia/Bangkok) · **RESEARCH / ADAPTATION PLAN**
 รายงานนี้รวมของจากสองรอบก่อนกับตัวเลือกใหม่ เพื่อเลือกวัตถุดิบและจุดต่อจริงของ Guildborne ไม่ใช่ประกาศว่ารับ asset เข้าเกมครบแล้ว
 
 ## คลังที่จัดไว้
@@ -171,4 +171,3 @@ Roblox [character import](https://create.roblox.com/docs/avatar/character-bodies
 งานนี้อ่านเว็บ/source และสร้างคลังวิจัยเท่านั้น: ไม่มี Get acquisition/download, Blender/asset script execution, asset upload/import, Roblox publish, spending, DataStore write หรือ runtime change ค่ารับรอง internals/import/Studio/device/human ยังเป็น false; runtime IDs/version/hash ของ asset เป็น null
 
 การตรวจเอกสาร/JSON และ independent research review ไม่แทน asset acceptance หรือ game regression จึงไม่มีการอ้างผล gameplay/mobile test ใหม่
-

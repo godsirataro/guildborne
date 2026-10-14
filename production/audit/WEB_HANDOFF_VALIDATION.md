@@ -15,7 +15,7 @@ Fresh local checks:
 - Changed/untracked-file credential-pattern scan: 257 files, no matched private-key/OpenAI/GitHub/AWS credential patterns. This bounded scan is not a complete security audit.
 - Independent read-only feature-source review identified one wording correction: hero identity exists, but bond/personal stories remain planned. Corrected in the brief.
 
-Raw local command logs are copied byte-for-byte beside this report. They were run against the dirty source candidate before the snapshot commit; they are not clean-commit Forge receipts or a submitted/accepted evidence packet. The only subsequent task edits are handoff documentation and copied logs.
+Raw local command logs are copied byte-for-byte beside this report. They were run against the dirty source candidate before the snapshot commit; they are not clean-commit Forge receipts or a submitted/accepted evidence packet. Subsequent task edits are handoff documentation, copied logs and whitespace-only normalization of seven research Markdown/JSON reports newly added to Git. JSON values were verified unchanged. Original kit intake and raw evidence streams were not normalized. The first normalization attempt failed on local text encoding before edits; the UTF-8 retry succeeded. Final staged whitespace validation passed.
 
 Coordination: the default ledger rejected the changed plan. The existing matching shared `build/agentic/launch-v11-ledger.sqlite3` was inspected and the `audit` task claimed for `production/audit`; no old ledger was reset or active session stolen. Read-only source review used one subagent. No Studio/Blender mutation occurred.
 
