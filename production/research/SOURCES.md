@@ -62,3 +62,33 @@ legacy paths and default preview flags are not destructively rewritten.
 
 These sources inform adapter contracts. They do not certify local provider
 availability, a Blender export, a Roblox import or physical-device acceptance.
+
+
+## 2026-10-16 research update — reviewed against merged main
+
+See [ROBLOX_AI_ADOPTION_20261016.md](ROBLOX_AI_ADOPTION_20261016.md) for
+the feature-by-feature Guildborne applicability review and
+[Studio MCP QA runbook](../STUDIO_MCP_QA_RUNBOOK.md) for explicit
+workstation and multiplayer acceptance steps.
+
+- [Roblox official Studio agent plugin](https://github.com/Roblox/roblox-studio-agent-plugin):
+  native plugin onboarding for Codex/ChatGPT desktop, Roblox_Studio canonical entry,
+  local Windows/macOS Studio required; no web-only Studio connection.
+- [Official plugin connection guide](https://github.com/Roblox/roblox-studio-agent-plugin/blob/main/skills/roblox-get-started/references/connect.md):
+  review the real config, avoid duplicate MCP servers and restart tool clients as needed.
+- [StudioTestService](https://create.roblox.com/docs/reference/engine/classes/StudioTestService):
+  up to eight simulated clients on one Studio server; launching the test requires
+  plugin security. No single Studio server can prove live cross-server behavior.
+- [Rojo 7.7.1 changelog](https://github.com/rojo-rbx/rojo/blob/master/CHANGELOG.md):
+  Windows sourcemap and watcher fixes. This PR **retains existing 7.7.0 pins**
+  until an independently checksum-verified upgrade of both rokit.toml and setup_tools.ps1.
+- [MCP for Blender](https://github.com/ahujasid/mcp-for-blender):
+  this upstream currently exists. The earlier failed lookup for a different URL
+  should **not** be interpreted as a finding that Blender MCP is unavailable.
+  This is community software capable of code execution and potential third-party
+  integrations; review [terms/privacy](https://github.com/ahujasid/mcp-for-blender/blob/main/TERMS_AND_CONDITIONS.md)
+  and exact version/source before separately approved installation.
+
+No community skills/add-ons were imported or executed, no real tool was
+connected through this browser research and no asset or game acceptance
+was promoted.
