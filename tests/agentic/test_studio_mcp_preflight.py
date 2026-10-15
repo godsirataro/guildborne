@@ -46,6 +46,12 @@ class StudioMcpPreflightTests(unittest.TestCase):
         self.assertFalse(report["connected"])
         self.assertFalse(report["playtested"])
 
+    def test_official_creator_hub_launcher_variant_is_supported(self):
+        self.config.write_text("[mcp_servers.Roblox_Studio]\ncommand='cmd.exe'\n"
+                               "args=['/c', '%LOCALAPPDATA%\\Roblox\\mcp.bat']\n", encoding="utf-8")
+        self.create_launcher()
+        self.assertEqual(self.inspect()["status"], "CONFIGURED_NOT_CONNECTED")
+
     def test_duplicate_registered_server_requires_review(self):
         self.config.write_text(CANONICAL + "\n[mcp_servers.old_roblox]\ncommand = 'StudioMCP'\n", encoding="utf-8")
         self.create_launcher()
