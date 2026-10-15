@@ -1268,7 +1268,14 @@
         "src/server/Services/CentralCityWorld.luau",
         "src/server/Services/CityWorld.luau",
         "src/server/Services/WorldService.luau",
-        "src/server/Services/ExpansionWorld.luau"
+        "src/server/Services/ExpansionWorld.luau",
+        "src/server/Services/CityLandscape.luau",
+        "src/server/Services/CityLandscapeData.luau",
+        "tools/build_city_landscape.py",
+        "tools/render_city_landscape.py",
+        "tools/verify_city_landscape.py",
+        "assets/uat01/city-landscape",
+        "production/world/central-city-landscape.md"
       ],
       "checks": [
         "source-contract",
@@ -1276,7 +1283,7 @@
         "independent-review"
       ],
       "title": "Functional city tavern and trusted crafting station",
-      "brief": "Add interior Tavern/Crafting anchors and authorize only CraftItem at the registered city forge. Preserve private plot and all economy/progression gates."
+      "brief": "Add interior Tavern/Crafting anchors and authorize only CraftItem at the registered city forge. Preserve private plot and all economy/progression gates. Author central-city natural landscape from a shared reproducible geometry recipe; preserve travel/service routes and keep Blender preview separate from Studio acceptance."
     },
     {
       "id": "p1-city-ui",
@@ -1321,6 +1328,56 @@
       ],
       "title": "Isolated city source and physics verification",
       "brief": "Current source standalone Memory place only. Verify station authority and five actual HeroService followers. Preserve raw evidence and external human/device gates."
+    },
+    {
+      "id": "ecosystem-code",
+      "skill": "guildborne-tooling",
+      "environment": "local",
+      "dependsOn": [],
+      "writeScopes": [
+        "tools/agentic/ecosystem.py",
+        "tests/agentic/test_ecosystem.py"
+      ],
+      "checks": [
+        "source-contract",
+        "regression",
+        "independent-review"
+      ],
+      "title": "Guildborne ecosystem routing and inventory",
+      "brief": "Read-only portable validation/routing for optional host Roblox skills over existing Guildborne tasks. No network/install/model/Studio mutation or acceptance promotion."
+    },
+    {
+      "id": "ecosystem-adoption",
+      "skill": "guildborne-director",
+      "environment": "local",
+      "dependsOn": [],
+      "writeScopes": [
+        "production/studio/ecosystem.json",
+        "production/AI_ECOSYSTEM_TH.md",
+        "production/research/ecosystem-2026-10-16",
+        "production/README.md",
+        "production/STUDIO_V3.md",
+        ".agents/skills/guildborne-studio/SKILL.md",
+        ".github/workflows/agentic-production.yml",
+        "production/studio/studio.json",
+        "production/studio/catalog.json",
+        "production/studio/generated-manifest.json",
+        ".codex/agents",
+        ".claude/agents",
+        "README.md",
+        "production/STUDIO_MCP_QA_RUNBOOK.md",
+        "production/research/ROBLOX_AI_ADOPTION_20261016.md",
+        "production/research/SOURCES.md",
+        "tests/agentic/test_studio_mcp_preflight.py",
+        "tools/agentic/studio_mcp_preflight.py"
+      ],
+      "checks": [
+        "source-contract",
+        "regression",
+        "independent-review"
+      ],
+      "title": "Adapt AI ecosystem to existing GL2 production",
+      "brief": "Map supplied NEONSHIFT ecosystem concepts to existing Guildborne GL2/RPG roles and pipelines. Verify actual tool access and optional host skills, wire CI contract checks, preserve game source and release gates."
     }
   ],
   "deferredCapabilities": [

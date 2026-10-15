@@ -1,5 +1,17 @@
 # Guildborne Studio v3
 
+## Ecosystem routing — 2026-10-16
+
+The current generated catalog includes 60 Forge task routes and 31 project skills;
+the initial counts in the historical introduction below describe the first Studio
+v3 version. See [the Guildborne AI ecosystem guide](AI_ECOSYSTEM_TH.md) and
+`studio/ecosystem.json` for optional Roblox platform guidance. Use
+`python tools/agentic/ecosystem.py route --task p1-city-services` before preparing a
+handoff. This read-only report does not evaluate ledger readiness or acquire a
+lease; continue using Studio routing and Forge ownership for execution. Missing
+host skills are an explicit fallback, not a CI failure. The existing 33 roles and
+10 workflows remain the team model; concurrency follows the actual connected host.
+
 Studio v3 adds a three-tier team around the existing Forge and Roblox/Luau game: 3 directors, 8 leads and 22 specialists. `studio/studio.json` is the single source for 33 roles, all 33 existing task routes, 10 workflows, 12 gates and 7 path rules. The 25 existing skills remain in use, with Studio, Adopt, Architecture, Sprint and Luau bringing the installed set to 30. It adds no gameplay, imported art or commerce processing.
 
 The organization draws concepts from [Claude Code Game Studios v1.1.3](https://github.com/Donchitos/Claude-Code-Game-Studios/tree/v1.1.3), commit `be8993bbc5a1f016bc770b2846ce06272d284526` (MIT). This is concepts-only adaptation for Guildborne/Codex; no upstream source or skill pack is copied or installed. Tool integration uses existing Roblox Studio, Blender, Rojo and Luau workflows.

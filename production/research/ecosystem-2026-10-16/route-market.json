@@ -1,0 +1,53 @@
+{
+  "planningOnly": true,
+  "dispatchStarted": false,
+  "acceptanceChanged": false,
+  "taskId": "market-integrity",
+  "role": "market-engineer",
+  "roleTitle": "Market Engineer",
+  "environment": "local",
+  "writeScopes": [
+    "production/market-review"
+  ],
+  "checks": [
+    "conservation",
+    "replay",
+    "release-gates"
+  ],
+  "primarySkill": {
+    "id": "guildborne-market",
+    "path": "C:\\Work\\MySelf\\Guildborne\\.agents\\skills\\guildborne-market\\SKILL.md",
+    "status": "PRESENT",
+    "sha256": "d3ce9d11d341be2dc0ce6f922984f2798bb0821ecaf416b832f1f0542efca963"
+  },
+  "bootstrapSkill": {
+    "id": "roblox-collaboration-mode",
+    "path": "C:\\Users\\godsi\\.codex\\skills\\roblox-collaboration-mode\\SKILL.md",
+    "status": "PRESENT",
+    "sha256": "4f08a6f7bda8c13cf22cea4cb4d2dd5bd2b1ed28f32a665f2a5da4d4735af3af"
+  },
+  "supportSkills": [
+    {
+      "id": "roblox-server-data",
+      "path": "C:\\Users\\godsi\\.codex\\skills\\roblox-server-data\\SKILL.md",
+      "status": "PRESENT",
+      "sha256": "db7a7c9bb1ccc807ec0d138709fe7890b30390c2137b93f0384c01df1f7afe85"
+    },
+    {
+      "id": "roblox-data",
+      "path": "C:\\Users\\godsi\\.codex\\skills\\roblox-data\\SKILL.md",
+      "status": "PRESENT",
+      "sha256": "f46decb9a2c843b18dc17c3ab15319ca828697322bae5453127aaba2144b235f"
+    },
+    {
+      "id": "roblox-security",
+      "path": "C:\\Users\\godsi\\.codex\\skills\\roblox-security\\SKILL.md",
+      "status": "PRESENT",
+      "sha256": "1d123e218d5226c3a77e228ef9e0f6d7b341c776b28d10bfc790b52284e6b695"
+    }
+  ],
+  "skillsRoot": "C:\\Users\\godsi\\.codex\\skills",
+  "missingSkills": [],
+  "fallbackPrimarySkill": null,
+  "notice": "File presence and hashes do not prove review, connection, execution or acceptance."
+}

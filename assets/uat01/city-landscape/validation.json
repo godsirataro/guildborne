@@ -1,0 +1,28 @@
+{
+  "status": "PASS",
+  "scope": "deterministic recipe and projected geometry only",
+  "parts": 1598,
+  "counts": {
+    "Trunk": 87,
+    "Bough": 261,
+    "OakCrown": 435,
+    "RootBed": 87,
+    "Understory": 394,
+    "Wildflowers": 216,
+    "WeatheredRock": 40,
+    "GrassyBerm": 6,
+    "SpringBed": 2,
+    "SpringWater": 2,
+    "SpringBank": 16,
+    "WatersidePlant": 30,
+    "GardenFlagstone": 22
+  },
+  "collisionParts": 133,
+  "protectedRectangles": 72,
+  "independentRouteSamples": 1141,
+  "partyEnvelopeRadiusStuds": 6,
+  "studioTested": false,
+  "physicalDeviceTested": false,
+  "humanArtApproved": false,
+  "recipeSha256": "20ce97cffb8204946ff0330f45c45148a5e424f73cdd4d9e8bf89d5e8ac64748"
+}

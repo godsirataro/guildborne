@@ -1,5 +1,15 @@
 # Guildborne Agentic Production Forge
 
+## AI ecosystem adaptation — 2026-10-16
+
+[คู่มือประยุกต์ NEONSHIFT สำหรับ Guildborne](AI_ECOSYSTEM_TH.md) connects existing
+Studio v3/Forge tasks to optional host Roblox skills and separates code and asset
+workflows. `python tools/agentic/ecosystem.py validate` checks the portable manifest;
+`route --task p1-city-services` explains skill selection; `doctor` inventories local
+files without installing tools or certifying MCP connectivity. Canonical decisions
+live in `studio/ecosystem.json`. Existing runtime libraries and GL2 acceptance stay
+authoritative.
+
 ## Studio v3
 
 [Studio v3](STUDIO_V3.md) extends this Forge with a three-tier team, canonical

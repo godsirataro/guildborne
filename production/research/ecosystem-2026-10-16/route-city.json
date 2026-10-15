@@ -1,0 +1,69 @@
+{
+  "planningOnly": true,
+  "dispatchStarted": false,
+  "acceptanceChanged": false,
+  "taskId": "p1-city-services",
+  "role": "world-builder",
+  "roleTitle": "World Builder",
+  "environment": "local",
+  "writeScopes": [
+    "src/server/Services/CentralCityWorld.luau",
+    "src/server/Services/CityWorld.luau",
+    "src/server/Services/WorldService.luau",
+    "src/server/Services/ExpansionWorld.luau",
+    "src/server/Services/CityLandscape.luau",
+    "src/server/Services/CityLandscapeData.luau",
+    "tools/build_city_landscape.py",
+    "tools/render_city_landscape.py",
+    "tools/verify_city_landscape.py",
+    "assets/uat01/city-landscape",
+    "production/world/central-city-landscape.md"
+  ],
+  "checks": [
+    "source-contract",
+    "regression",
+    "independent-review"
+  ],
+  "primarySkill": {
+    "id": "guildborne-world",
+    "path": "C:\\Work\\MySelf\\Guildborne\\.agents\\skills\\guildborne-world\\SKILL.md",
+    "status": "PRESENT",
+    "sha256": "ace43994879321dd5197ba01d7944ea072496cb230985b51c5e50c1a71c7c4e1"
+  },
+  "bootstrapSkill": {
+    "id": "roblox-collaboration-mode",
+    "path": "C:\\Users\\godsi\\.codex\\skills\\roblox-collaboration-mode\\SKILL.md",
+    "status": "PRESENT",
+    "sha256": "4f08a6f7bda8c13cf22cea4cb4d2dd5bd2b1ed28f32a665f2a5da4d4735af3af"
+  },
+  "supportSkills": [
+    {
+      "id": "roblox-building",
+      "path": "C:\\Users\\godsi\\.codex\\skills\\roblox-building\\SKILL.md",
+      "status": "PRESENT",
+      "sha256": "6df373549d6271e6909cb6358161b05493daa197a8a7e691938426ff9e6569d5"
+    },
+    {
+      "id": "roblox-lighting",
+      "path": "C:\\Users\\godsi\\.codex\\skills\\roblox-lighting\\SKILL.md",
+      "status": "PRESENT",
+      "sha256": "c8a90acad8401086cacd52316cd2197c7e90eef99f50371fe81ba38f1da3e729"
+    },
+    {
+      "id": "roblox-npc-ai",
+      "path": "C:\\Users\\godsi\\.codex\\skills\\roblox-npc-ai\\SKILL.md",
+      "status": "PRESENT",
+      "sha256": "5f2723047a6353d5287699a3f7c6f8ce8c81bb02cbe7da9e9536115ff6463792"
+    },
+    {
+      "id": "roblox-physics",
+      "path": "C:\\Users\\godsi\\.codex\\skills\\roblox-physics\\SKILL.md",
+      "status": "PRESENT",
+      "sha256": "fe6f9a07e6520d78dd44258b7a0b90ae29dbce6e74b901ef01da7d6ae343f203"
+    }
+  ],
+  "skillsRoot": "C:\\Users\\godsi\\.codex\\skills",
+  "missingSkills": [],
+  "fallbackPrimarySkill": null,
+  "notice": "File presence and hashes do not prove review, connection, execution or acceptance."
+}

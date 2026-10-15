@@ -1,0 +1,381 @@
+{
+  "planningOnly": true,
+  "dispatchStarted": false,
+  "acceptanceChanged": false,
+  "scope": "filesystem-inventory-only",
+  "taskCount": 60,
+  "roleCount": 33,
+  "tools": [
+    {
+      "id": "rojo",
+      "decision": "USE_EXISTING",
+      "reason": "Keep tested checksum-pinned7.7.0; upstream7.7.1 is an upgrade candidate requiring separate checksum and regression review.",
+      "files": [
+        {
+          "path": "C:\\Work\\MySelf\\Guildborne\\rokit.toml",
+          "status": "PRESENT",
+          "sha256": "ec83d0aa77b7b1a4b97183601940c9b9ddb05e29c0ad2da5ef4fcdf516aff713"
+        },
+        {
+          "path": "C:\\Work\\MySelf\\Guildborne\\tools\\setup_tools.ps1",
+          "status": "PRESENT",
+          "sha256": "ce6ba2b5a8f9c6d30aa02fcef9f26a316d35b28104276a37fa96d7e9c091d551"
+        },
+        {
+          "path": "C:\\Work\\MySelf\\Guildborne\\.tools\\rojo\\rojo.exe",
+          "status": "PRESENT",
+          "sha256": "d9154aa9b1d5997967565679d107bf719e273f5881c3c9e263fd6fd223d5e81e"
+        }
+      ],
+      "executed": false
+    },
+    {
+      "id": "luau",
+      "decision": "USE_EXISTING",
+      "reason": "Existing direct Luau tests and compilation.",
+      "files": [
+        {
+          "path": "C:\\Work\\MySelf\\Guildborne\\tools\\validate.ps1",
+          "status": "PRESENT",
+          "sha256": "19643ef04e19a43aa49994f3129ecd7af1c429b880e6b9afead39a6a696a5bd3"
+        },
+        {
+          "path": "C:\\Work\\MySelf\\Guildborne\\.tools\\luau\\luau.exe",
+          "status": "PRESENT",
+          "sha256": "9b0181083a16ac8022189ad17fffc1ddc3eced1780f4c631051909e3f5581eb9"
+        },
+        {
+          "path": "C:\\Work\\MySelf\\Guildborne\\.tools\\luau\\luau-compile.exe",
+          "status": "PRESENT",
+          "sha256": "6cc79c1b87c4baed05f7852a2c64fcf6f28c946fe2204121c0319eb031a5f5e4"
+        }
+      ],
+      "executed": false
+    },
+    {
+      "id": "luau-lsp",
+      "decision": "USE_EXISTING",
+      "reason": "Existing Roblox-aware type analysis.",
+      "files": [
+        {
+          "path": "C:\\Work\\MySelf\\Guildborne\\.tools\\luau-lsp\\luau-lsp.exe",
+          "status": "PRESENT",
+          "sha256": "89e9162cf7ab828ccd48af158a43e680f263586e53b21c0de5732718224940bd"
+        },
+        {
+          "path": "C:\\Work\\MySelf\\Guildborne\\.tools\\luau-lsp\\globalTypes.d.luau",
+          "status": "PRESENT",
+          "sha256": "2b0df788dc3fd1b572e71ee7fe9e1c55cc23882afbd5024aecdec30d9bd7520f"
+        }
+      ],
+      "executed": false
+    },
+    {
+      "id": "forge-studio",
+      "decision": "USE_EXISTING",
+      "reason": "One shared ledger; existing roles and taskScopes.",
+      "files": [
+        {
+          "path": "C:\\Work\\MySelf\\Guildborne\\tools\\agentic\\forge.py",
+          "status": "PRESENT",
+          "sha256": "5804082529969e55d62393476738409fe362f7e058a54105427f8f0efedac8d6"
+        },
+        {
+          "path": "C:\\Work\\MySelf\\Guildborne\\tools\\agentic\\studio.py",
+          "status": "PRESENT",
+          "sha256": "9bf0a3e2ce4230648eb4f8d4af8e7250527510d17a23f0080c0dfd3548a7a7c5"
+        },
+        {
+          "path": "C:\\Work\\MySelf\\Guildborne\\production\\plan.json",
+          "status": "PRESENT",
+          "sha256": "af3c650a172096407727de1b346f008825b78933d7644381ecfbc7f881af6a26"
+        },
+        {
+          "path": "C:\\Work\\MySelf\\Guildborne\\production\\studio\\studio.json",
+          "status": "PRESENT",
+          "sha256": "201aede43a960250ce03b8878ad9b2bc78d89e75864f677070988d629723007b"
+        }
+      ],
+      "executed": false
+    },
+    {
+      "id": "studio-mcp",
+      "decision": "USE_EXISTING",
+      "reason": "Live tool discovery and target identity required; executable or listed tool alone is not successful invocation.",
+      "files": [
+        {
+          "path": "C:\\Work\\MySelf\\Guildborne\\tools\\agentic\\mcp_probe.py",
+          "status": "PRESENT",
+          "sha256": "1c94e9cbe9ea124f493aaae5fa2781f877cc3e69b4c56954dce221028a6e1ad4"
+        }
+      ],
+      "executed": false
+    },
+    {
+      "id": "blender",
+      "decision": "USE_EXISTING",
+      "reason": "Reviewed local Blender scripts remain fallback when live MCP handshake fails.",
+      "files": [
+        {
+          "path": "C:\\Work\\MySelf\\Guildborne\\tools\\agentic\\blender_job.py",
+          "status": "PRESENT",
+          "sha256": "7db4ba70719614d5dcda394aee8b5623800ccf05b61ea41d5948c9820164e732"
+        },
+        {
+          "path": "C:\\Work\\MySelf\\Guildborne\\tools\\agentic\\blender_audit.py",
+          "status": "PRESENT",
+          "sha256": "5b1827707bf795d92f5a8bb99d24f3c6dea8695fead366b74e91f82af66137a5"
+        }
+      ],
+      "executed": false
+    },
+    {
+      "id": "ci",
+      "decision": "USE_EXISTING",
+      "reason": "Existing credential-free checks and separate Windows game regression; no automatic publish.",
+      "files": [
+        {
+          "path": "C:\\Work\\MySelf\\Guildborne\\.github\\workflows\\agentic-production.yml",
+          "status": "PRESENT",
+          "sha256": "0e9e4ab1fa3c76200ab3175f1565aea9e34682396e1f4792fe80fa6e78786944"
+        }
+      ],
+      "executed": false
+    },
+    {
+      "id": "host-roblox-skills",
+      "decision": "OPTIONAL",
+      "reason": "Use installed host platform skills on demand; no copied skill pack or automatic installer.",
+      "files": [],
+      "executed": false
+    },
+    {
+      "id": "wally-pesde",
+      "decision": "DEFER",
+      "reason": "No runtime dependency need established; keep existing zero-third-party-runtime-dependency architecture.",
+      "files": [],
+      "executed": false
+    },
+    {
+      "id": "selene-stylua-lune",
+      "decision": "DEFER",
+      "reason": "Add only for a demonstrated gap with reviewed pin/config and staged formatting; do not rewrite the whole existing codebase.",
+      "files": [],
+      "executed": false
+    },
+    {
+      "id": "fusion-react",
+      "decision": "KEEP_CUSTOM",
+      "reason": "Reuse native UI adapters; migration requires a distinct scoped decision.",
+      "files": [
+        {
+          "path": "C:\\Work\\MySelf\\Guildborne\\src\\client\\UI\\SliceUI.luau",
+          "status": "PRESENT",
+          "sha256": "2d0aac0747c27fd1e3a27e9b7a9985475dad654ccb1208c8802be2e1cb438017"
+        }
+      ],
+      "executed": false
+    },
+    {
+      "id": "profilestore",
+      "decision": "KEEP_CUSTOM",
+      "reason": "Preserve existing sessions, migration compatibility, fenced market receipts/recovery.",
+      "files": [
+        {
+          "path": "C:\\Work\\MySelf\\Guildborne\\src\\server\\Services\\PlayerDataService.luau",
+          "status": "PRESENT",
+          "sha256": "bd0a236d0382297e3a3704f602dfd039a1a1cfd909f0e685941284f6198279ee"
+        },
+        {
+          "path": "C:\\Work\\MySelf\\Guildborne\\src\\server\\Persistence\\RobloxStore.luau",
+          "status": "PRESENT",
+          "sha256": "48f81f12cc0f04b0c72f691a4e745548c47c7349dda95417085ab8566a7ddc9d"
+        },
+        {
+          "path": "C:\\Work\\MySelf\\Guildborne\\src\\server\\Persistence\\MarketCloud.luau",
+          "status": "PRESENT",
+          "sha256": "b49ed9a4347ab5a97cc111f1ec533e84cbad989e0f05e5821070615c63e9d9b1"
+        }
+      ],
+      "executed": false
+    },
+    {
+      "id": "matter-ecs",
+      "decision": "DEFER",
+      "reason": "Profile HeroService/NPC cost first; no traffic-system transplantation.",
+      "files": [],
+      "executed": false
+    },
+    {
+      "id": "paid-generators-open-cloud",
+      "decision": "DEFER",
+      "reason": "Provider availability and scoped spending/upload/publishing authority remain separate; runtime IDs only after real import.",
+      "files": [],
+      "executed": false
+    }
+  ],
+  "skillsRoot": "C:\\Users\\godsi\\.codex\\skills",
+  "optionalSkills": [
+    {
+      "id": "roblox-analytics",
+      "path": "C:\\Users\\godsi\\.codex\\skills\\roblox-analytics\\SKILL.md",
+      "status": "PRESENT",
+      "sha256": "4107afa886b7d14b7400cbe8cdcc17ed9fa19f86a5d807ef7ff6149f0b780086"
+    },
+    {
+      "id": "roblox-animation-vfx",
+      "path": "C:\\Users\\godsi\\.codex\\skills\\roblox-animation-vfx\\SKILL.md",
+      "status": "PRESENT",
+      "sha256": "27a9d65c3d578077de7def0276fa5e2fa64270de2731a99b32fc80e699747734"
+    },
+    {
+      "id": "roblox-architecture",
+      "path": "C:\\Users\\godsi\\.codex\\skills\\roblox-architecture\\SKILL.md",
+      "status": "PRESENT",
+      "sha256": "a1783049765cbfbad31ffb14ff20e44fd18551db267451fdc71b4039a51f8fa3"
+    },
+    {
+      "id": "roblox-audio",
+      "path": "C:\\Users\\godsi\\.codex\\skills\\roblox-audio\\SKILL.md",
+      "status": "PRESENT",
+      "sha256": "67aa3f5663914f22f695480030611b4bbb9e27333f73df38f111212c0bca0fad"
+    },
+    {
+      "id": "roblox-building",
+      "path": "C:\\Users\\godsi\\.codex\\skills\\roblox-building\\SKILL.md",
+      "status": "PRESENT",
+      "sha256": "6df373549d6271e6909cb6358161b05493daa197a8a7e691938426ff9e6569d5"
+    },
+    {
+      "id": "roblox-collaboration-mode",
+      "path": "C:\\Users\\godsi\\.codex\\skills\\roblox-collaboration-mode\\SKILL.md",
+      "status": "PRESENT",
+      "sha256": "4f08a6f7bda8c13cf22cea4cb4d2dd5bd2b1ed28f32a665f2a5da4d4735af3af"
+    },
+    {
+      "id": "roblox-data",
+      "path": "C:\\Users\\godsi\\.codex\\skills\\roblox-data\\SKILL.md",
+      "status": "PRESENT",
+      "sha256": "f46decb9a2c843b18dc17c3ab15319ca828697322bae5453127aaba2144b235f"
+    },
+    {
+      "id": "roblox-game-design",
+      "path": "C:\\Users\\godsi\\.codex\\skills\\roblox-game-design\\SKILL.md",
+      "status": "PRESENT",
+      "sha256": "88a83481d12444fa87aa437ed1d54289c28bc65c2ec952596bb9a58e739c8f85"
+    },
+    {
+      "id": "roblox-growth-design",
+      "path": "C:\\Users\\godsi\\.codex\\skills\\roblox-growth-design\\SKILL.md",
+      "status": "PRESENT",
+      "sha256": "0e2b2045c1ab64c4037d663296995886f44f3aa5e24ee511d3db3613d3ecb067"
+    },
+    {
+      "id": "roblox-gui",
+      "path": "C:\\Users\\godsi\\.codex\\skills\\roblox-gui\\SKILL.md",
+      "status": "PRESENT",
+      "sha256": "d3a4f3084a4671f8917bee5957a6876332b866b3760af1df0c7c409a62ca31ab"
+    },
+    {
+      "id": "roblox-input",
+      "path": "C:\\Users\\godsi\\.codex\\skills\\roblox-input\\SKILL.md",
+      "status": "PRESENT",
+      "sha256": "5bde713ffff65973538016286bb62bd254085745c67568271dc26e2a2b1fd9d2"
+    },
+    {
+      "id": "roblox-lighting",
+      "path": "C:\\Users\\godsi\\.codex\\skills\\roblox-lighting\\SKILL.md",
+      "status": "PRESENT",
+      "sha256": "c8a90acad8401086cacd52316cd2197c7e90eef99f50371fe81ba38f1da3e729"
+    },
+    {
+      "id": "roblox-localization",
+      "path": "C:\\Users\\godsi\\.codex\\skills\\roblox-localization\\SKILL.md",
+      "status": "PRESENT",
+      "sha256": "f4e2ca6b1ace1979d18bdb090fcdad8ff4e8f4f14d9920857631a7b208310d31"
+    },
+    {
+      "id": "roblox-luau-core",
+      "path": "C:\\Users\\godsi\\.codex\\skills\\roblox-luau-core\\SKILL.md",
+      "status": "PRESENT",
+      "sha256": "c0f9b034dfcd60c5ed74894945ea76f197d59eb1c7a3ee90128199b0b08403aa"
+    },
+    {
+      "id": "roblox-luau-patterns",
+      "path": "C:\\Users\\godsi\\.codex\\skills\\roblox-luau-patterns\\SKILL.md",
+      "status": "PRESENT",
+      "sha256": "b2e5dfd84a1105d5636994937ec518d465f0183ebb19b6d1d19ce8571cdf2299"
+    },
+    {
+      "id": "roblox-luau-types",
+      "path": "C:\\Users\\godsi\\.codex\\skills\\roblox-luau-types\\SKILL.md",
+      "status": "PRESENT",
+      "sha256": "547e852a7773b0db93cf6aa133a44c95c2e1245c81f064a1a2216f3c77b889ee"
+    },
+    {
+      "id": "roblox-networking",
+      "path": "C:\\Users\\godsi\\.codex\\skills\\roblox-networking\\SKILL.md",
+      "status": "PRESENT",
+      "sha256": "b8b348926b13c822b1c74dca547359a69d226830c23cf6f88749ad4752ab3d89"
+    },
+    {
+      "id": "roblox-npc-ai",
+      "path": "C:\\Users\\godsi\\.codex\\skills\\roblox-npc-ai\\SKILL.md",
+      "status": "PRESENT",
+      "sha256": "5f2723047a6353d5287699a3f7c6f8ce8c81bb02cbe7da9e9536115ff6463792"
+    },
+    {
+      "id": "roblox-performance",
+      "path": "C:\\Users\\godsi\\.codex\\skills\\roblox-performance\\SKILL.md",
+      "status": "PRESENT",
+      "sha256": "13eff30c4c85dbd994732bf910a844ccf96ebf20d81d43c25a2bc6a16b6fe075"
+    },
+    {
+      "id": "roblox-physics",
+      "path": "C:\\Users\\godsi\\.codex\\skills\\roblox-physics\\SKILL.md",
+      "status": "PRESENT",
+      "sha256": "fe6f9a07e6520d78dd44258b7a0b90ae29dbce6e74b901ef01da7d6ae343f203"
+    },
+    {
+      "id": "roblox-player-psychology",
+      "path": "C:\\Users\\godsi\\.codex\\skills\\roblox-player-psychology\\SKILL.md",
+      "status": "PRESENT",
+      "sha256": "10a62682a503fa0eb428d54ae58b404cb027db1750618dad2bc4b27ea5262ce4"
+    },
+    {
+      "id": "roblox-security",
+      "path": "C:\\Users\\godsi\\.codex\\skills\\roblox-security\\SKILL.md",
+      "status": "PRESENT",
+      "sha256": "1d123e218d5226c3a77e228ef9e0f6d7b341c776b28d10bfc790b52284e6b695"
+    },
+    {
+      "id": "roblox-server-data",
+      "path": "C:\\Users\\godsi\\.codex\\skills\\roblox-server-data\\SKILL.md",
+      "status": "PRESENT",
+      "sha256": "db7a7c9bb1ccc807ec0d138709fe7890b30390c2137b93f0384c01df1f7afe85"
+    },
+    {
+      "id": "roblox-studio-mcp",
+      "path": "C:\\Users\\godsi\\.codex\\skills\\roblox-studio-mcp\\SKILL.md",
+      "status": "PRESENT",
+      "sha256": "d4228aeea0ed7d2943f6c203905c87bb06478acdcc610ad520fa18a36061430b"
+    },
+    {
+      "id": "roblox-tooling",
+      "path": "C:\\Users\\godsi\\.codex\\skills\\roblox-tooling\\SKILL.md",
+      "status": "PRESENT",
+      "sha256": "de20dbf877e47f1dff6c8a46d9c2d7acdd19778c8547e9447c91597aacbfa4e3"
+    }
+  ],
+  "blender": {
+    "path": "C:\\Program Files\\Blender Foundation\\Blender 5.2\\blender.exe",
+    "status": "PRESENT",
+    "source": "common-windows-5.2",
+    "executed": false
+  },
+  "mcp": {
+    "status": "LIVE_PROBE_REQUIRED",
+    "connectionVerified": false
+  },
+  "notice": "Missing optional files do not block unrelated work. Nothing was installed, connected or executed."
+}

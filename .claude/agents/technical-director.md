@@ -100,6 +100,24 @@ Dependencies: none
 
 Path rule production-evidence: Reconcile latest goals/registries/scopes. One shared ledger, claim before writes, immediate lease check and preserved raw receipts. Different reviewer validates evidence; local checks cannot replace hardware/cloud/human gates.
 
+### ecosystem-adoption: Adapt AI ecosystem to existing GL2 production
+
+Map supplied NEONSHIFT ecosystem concepts to existing Guildborne GL2/RPG roles and pipelines. Verify actual tool access and optional host skills, wire CI contract checks, preserve game source and release gates.
+
+Environment: local; skill: guildborne-director
+
+Write scopes: production/studio/ecosystem.json, production/AI_ECOSYSTEM_TH.md, production/research/ecosystem-2026-10-16, production/README.md, production/STUDIO_V3.md, .agents/skills/guildborne-studio/SKILL.md, .github/workflows/agentic-production.yml, production/studio/studio.json, production/studio/catalog.json, production/studio/generated-manifest.json, .codex/agents, .claude/agents, README.md, production/STUDIO_MCP_QA_RUNBOOK.md, production/research/ROBLOX_AI_ADOPTION_20261016.md, production/research/SOURCES.md, tests/agentic/test_studio_mcp_preflight.py, tools/agentic/studio_mcp_preflight.py
+
+Required checks: source-contract, regression, independent-review
+
+Dependencies: none
+
+Path rule tooling: Use reviewed bounded local commands/tests. Studio/Forge planners do not launch models; paid/model subprocess, MCP mutation and installation require actual authorization/capability.
+
+Path rule production-evidence: Reconcile latest goals/registries/scopes. One shared ledger, claim before writes, immediate lease check and preserved raw receipts. Different reviewer validates evidence; local checks cannot replace hardware/cloud/human gates.
+
+Path rule agent-instructions: Generate Codex agents from canonical Studio spec/existing skills with inherited model/permissions, no arbitrary hooks. Use actual authorized host delegation or sequential work; planners do not start workers.
+
 ### expansion-integration: Expansion Integration
 
 Reconcile user20-theme expansion, define contracts, integrate tactical and analytics slice, preserve launch scope and verify evidence.

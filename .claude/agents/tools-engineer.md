@@ -124,6 +124,20 @@ Generated output, import, Studio acceptance, hardware and human review are disti
 
 ## Forge tasks (these scopes apply only after a valid task claim)
 
+### ecosystem-code: Guildborne ecosystem routing and inventory
+
+Read-only portable validation/routing for optional host Roblox skills over existing Guildborne tasks. No network/install/model/Studio mutation or acceptance promotion.
+
+Environment: local; skill: guildborne-tooling
+
+Write scopes: tools/agentic/ecosystem.py, tests/agentic/test_ecosystem.py
+
+Required checks: source-contract, regression, independent-review
+
+Dependencies: none
+
+Path rule tooling: Use reviewed bounded local commands/tests. Studio/Forge planners do not launch models; paid/model subprocess, MCP mutation and installation require actual authorization/capability.
+
 ### learning-loop: Learning Loop
 
 Implement evidence-backed lesson retrieval, candidate skill patches, independent evaluation, promotion and rollback at explicit task completion. Preserve evidence and permission boundaries. No paid model or background jobs.

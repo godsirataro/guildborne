@@ -1,0 +1,85 @@
+{
+  "scope": "local-production-tooling-only",
+  "gameAcceptanceChanged": false,
+  "checks": [
+    {
+      "name": "production-tests",
+      "argv": [
+        "python",
+        "-m",
+        "unittest",
+        "discover",
+        "-s",
+        "tests/agentic",
+        "-v"
+      ],
+      "startedAt": "2026-10-15T20:19:35.525733+00:00",
+      "exitCode": 1,
+      "stdout": "production-tests.stdout.log",
+      "stderr": "production-tests.stderr.log"
+    },
+    {
+      "name": "forge-validate",
+      "argv": [
+        "python",
+        "tools/agentic/forge.py",
+        "validate"
+      ],
+      "startedAt": "2026-10-15T20:21:32.149027+00:00",
+      "exitCode": 0,
+      "stdout": "forge-validate.stdout.log",
+      "stderr": "forge-validate.stderr.log"
+    },
+    {
+      "name": "studio-validate",
+      "argv": [
+        "python",
+        "tools/agentic/studio.py",
+        "validate"
+      ],
+      "startedAt": "2026-10-15T20:21:32.348513+00:00",
+      "exitCode": 0,
+      "stdout": "studio-validate.stdout.log",
+      "stderr": "studio-validate.stderr.log"
+    },
+    {
+      "name": "studio-verify",
+      "argv": [
+        "python",
+        "tools/agentic/studio.py",
+        "verify"
+      ],
+      "startedAt": "2026-10-15T20:21:32.980262+00:00",
+      "exitCode": 0,
+      "stdout": "studio-verify.stdout.log",
+      "stderr": "studio-verify.stderr.log"
+    },
+    {
+      "name": "ecosystem-validate",
+      "argv": [
+        "python",
+        "tools/agentic/ecosystem.py",
+        "validate"
+      ],
+      "startedAt": "2026-10-15T20:21:34.137627+00:00",
+      "exitCode": 0,
+      "stdout": "ecosystem-validate.stdout.log",
+      "stderr": "ecosystem-validate.stderr.log"
+    },
+    {
+      "name": "tool-compile",
+      "argv": [
+        "python",
+        "-m",
+        "compileall",
+        "-q",
+        "tools/agentic/ecosystem.py",
+        "tests/agentic/test_ecosystem.py"
+      ],
+      "startedAt": "2026-10-15T20:21:34.711036+00:00",
+      "exitCode": 0,
+      "stdout": "tool-compile.stdout.log",
+      "stderr": "tool-compile.stderr.log"
+    }
+  ]
+}

@@ -38,6 +38,8 @@ jobs:
         run: |
           python tools/agentic/studio.py validate
           python tools/agentic/studio.py verify
+      - name: Validate portable ecosystem routes without host skill dependencies
+        run: python tools/agentic/ecosystem.py validate
       - name: Exercise recorded handoff and independent review in a disposable repository
         run: python tools/agentic/studio_smoke.py
       - name: Build local inventory and work packages

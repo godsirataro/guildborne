@@ -1,0 +1,362 @@
+{
+  "schemaVersion": 1,
+  "bootstrapSkill": "roblox-collaboration-mode",
+  "precedence": "System/developer/user instructions, current AGENTS and GL2 contracts; repo skills provide game-specific rules, optional host skills provide platform guidance. Missing host skills do not block existing workflows.",
+  "skillRouting": {
+    "guildborne-adopt": [
+      "roblox-architecture",
+      "roblox-tooling"
+    ],
+    "guildborne-animation": [
+      "roblox-animation-vfx",
+      "roblox-physics"
+    ],
+    "guildborne-architecture": [
+      "roblox-architecture",
+      "roblox-luau-patterns",
+      "roblox-security"
+    ],
+    "guildborne-asset-provenance": [
+      "roblox-building",
+      "roblox-tooling"
+    ],
+    "guildborne-audio": [
+      "roblox-audio"
+    ],
+    "guildborne-characters": [
+      "roblox-building",
+      "roblox-physics"
+    ],
+    "guildborne-combat-ai": [
+      "roblox-npc-ai",
+      "roblox-physics",
+      "roblox-networking",
+      "roblox-security"
+    ],
+    "guildborne-director": [
+      "roblox-architecture",
+      "roblox-game-design"
+    ],
+    "guildborne-growth": [
+      "roblox-growth-design",
+      "roblox-analytics",
+      "roblox-player-psychology"
+    ],
+    "guildborne-guild-social": [
+      "roblox-networking",
+      "roblox-data",
+      "roblox-server-data",
+      "roblox-security"
+    ],
+    "guildborne-island-building": [
+      "roblox-building",
+      "roblox-physics",
+      "roblox-security"
+    ],
+    "guildborne-items-crafting": [
+      "roblox-data",
+      "roblox-security",
+      "roblox-gui"
+    ],
+    "guildborne-learning": [
+      "roblox-tooling"
+    ],
+    "guildborne-localization": [
+      "roblox-localization",
+      "roblox-gui"
+    ],
+    "guildborne-luau": [
+      "roblox-luau-core",
+      "roblox-luau-types",
+      "roblox-luau-patterns",
+      "roblox-security"
+    ],
+    "guildborne-market": [
+      "roblox-server-data",
+      "roblox-data",
+      "roblox-security"
+    ],
+    "guildborne-npc-life": [
+      "roblox-npc-ai",
+      "roblox-animation-vfx",
+      "roblox-physics"
+    ],
+    "guildborne-performance": [
+      "roblox-performance",
+      "roblox-networking"
+    ],
+    "guildborne-progression": [
+      "roblox-game-design",
+      "roblox-data",
+      "roblox-security"
+    ],
+    "guildborne-qa": [
+      "roblox-studio-mcp",
+      "roblox-security",
+      "roblox-performance",
+      "roblox-input"
+    ],
+    "guildborne-quests": [
+      "roblox-game-design",
+      "roblox-localization"
+    ],
+    "guildborne-research": [
+      "roblox-tooling"
+    ],
+    "guildborne-rigging": [
+      "roblox-animation-vfx",
+      "roblox-physics"
+    ],
+    "guildborne-sprint": [
+      "roblox-tooling"
+    ],
+    "guildborne-studio": [
+      "roblox-studio-mcp",
+      "roblox-tooling"
+    ],
+    "guildborne-tooling": [
+      "roblox-tooling",
+      "roblox-studio-mcp"
+    ],
+    "guildborne-ui-art": [
+      "roblox-gui"
+    ],
+    "guildborne-ux-native": [
+      "roblox-gui",
+      "roblox-input",
+      "roblox-localization"
+    ],
+    "guildborne-vfx": [
+      "roblox-animation-vfx",
+      "roblox-performance"
+    ],
+    "guildborne-war-territory": [
+      "roblox-server-data",
+      "roblox-networking",
+      "roblox-security",
+      "roblox-game-design"
+    ],
+    "guildborne-world": [
+      "roblox-building",
+      "roblox-lighting",
+      "roblox-npc-ai",
+      "roblox-physics"
+    ]
+  },
+  "tools": [
+    {
+      "id": "rojo",
+      "decision": "USE_EXISTING",
+      "paths": [
+        "rokit.toml",
+        "tools/setup_tools.ps1",
+        ".tools/rojo/rojo.exe"
+      ],
+      "reason": "Keep tested checksum-pinned7.7.0; upstream7.7.1 is an upgrade candidate requiring separate checksum and regression review.",
+      "pinnedVersion": "7.7.0",
+      "upstreamObservedVersion": "7.7.1"
+    },
+    {
+      "id": "luau",
+      "decision": "USE_EXISTING",
+      "paths": [
+        "tools/validate.ps1",
+        ".tools/luau/luau.exe",
+        ".tools/luau/luau-compile.exe"
+      ],
+      "reason": "Existing direct Luau tests and compilation."
+    },
+    {
+      "id": "luau-lsp",
+      "decision": "USE_EXISTING",
+      "paths": [
+        ".tools/luau-lsp/luau-lsp.exe",
+        ".tools/luau-lsp/globalTypes.d.luau"
+      ],
+      "reason": "Existing Roblox-aware type analysis."
+    },
+    {
+      "id": "forge-studio",
+      "decision": "USE_EXISTING",
+      "paths": [
+        "tools/agentic/forge.py",
+        "tools/agentic/studio.py",
+        "production/plan.json",
+        "production/studio/studio.json"
+      ],
+      "reason": "One shared ledger; existing roles and taskScopes."
+    },
+    {
+      "id": "studio-mcp",
+      "decision": "USE_EXISTING",
+      "paths": [
+        "tools/agentic/mcp_probe.py"
+      ],
+      "reason": "Live tool discovery and target identity required; executable or listed tool alone is not successful invocation."
+    },
+    {
+      "id": "blender",
+      "decision": "USE_EXISTING",
+      "paths": [
+        "tools/agentic/blender_job.py",
+        "tools/agentic/blender_audit.py"
+      ],
+      "reason": "Reviewed local Blender scripts remain fallback when live MCP handshake fails."
+    },
+    {
+      "id": "ci",
+      "decision": "USE_EXISTING",
+      "paths": [
+        ".github/workflows/agentic-production.yml"
+      ],
+      "reason": "Existing credential-free checks and separate Windows game regression; no automatic publish."
+    },
+    {
+      "id": "host-roblox-skills",
+      "decision": "OPTIONAL",
+      "paths": [],
+      "reason": "Use installed host platform skills on demand; no copied skill pack or automatic installer."
+    },
+    {
+      "id": "wally-pesde",
+      "decision": "DEFER",
+      "paths": [],
+      "reason": "No runtime dependency need established; keep existing zero-third-party-runtime-dependency architecture."
+    },
+    {
+      "id": "selene-stylua-lune",
+      "decision": "DEFER",
+      "paths": [],
+      "reason": "Add only for a demonstrated gap with reviewed pin/config and staged formatting; do not rewrite the whole existing codebase."
+    },
+    {
+      "id": "fusion-react",
+      "decision": "KEEP_CUSTOM",
+      "paths": [
+        "src/client/UI/SliceUI.luau"
+      ],
+      "reason": "Reuse native UI adapters; migration requires a distinct scoped decision."
+    },
+    {
+      "id": "profilestore",
+      "decision": "KEEP_CUSTOM",
+      "paths": [
+        "src/server/Services/PlayerDataService.luau",
+        "src/server/Persistence/RobloxStore.luau",
+        "src/server/Persistence/MarketCloud.luau"
+      ],
+      "reason": "Preserve existing sessions, migration compatibility, fenced market receipts/recovery."
+    },
+    {
+      "id": "matter-ecs",
+      "decision": "DEFER",
+      "paths": [],
+      "reason": "Profile HeroService/NPC cost first; no traffic-system transplantation."
+    },
+    {
+      "id": "paid-generators-open-cloud",
+      "decision": "DEFER",
+      "paths": [],
+      "reason": "Provider availability and scoped spending/upload/publishing authority remain separate; runtime IDs only after real import."
+    }
+  ],
+  "pipelines": {
+    "code": {
+      "commands": [
+        [
+          "python",
+          "tools/agentic/ecosystem.py",
+          "validate"
+        ],
+        [
+          "python",
+          "-m",
+          "unittest",
+          "discover",
+          "-s",
+          "tests/agentic",
+          "-v"
+        ],
+        [
+          "python",
+          "tools/agentic/studio.py",
+          "verify"
+        ],
+        [
+          "pwsh",
+          "-File",
+          "tools/validate.ps1"
+        ],
+        [
+          "python",
+          "tools/build_integration_preview.py",
+          "--launch"
+        ]
+      ],
+      "externalGates": [
+        "Exact candidate identity and Memory-only Studio tests",
+        "Real multiplayer then distinct-live-server tests where required",
+        "Physical Android/iOS and human UAT",
+        "Explicit merge and Roblox publication approval"
+      ],
+      "sequence": [
+        "Inspect actual source and GL2 acceptance",
+        "Route task and read relevant skills",
+        "Claim shared-ledger scope",
+        "Implement and local checks",
+        "Build isolated candidate and verify source identity",
+        "Studio input/physics/failure tests",
+        "Independent review",
+        "Owner-controlled release"
+      ]
+    },
+    "assets": {
+      "commands": [
+        [
+          "python",
+          "tools/agentic/reconcile.py"
+        ],
+        [
+          "python",
+          "tools/agentic/character_contract.py"
+        ],
+        [
+          "python",
+          "tools/agentic/blender_job.py",
+          "--help"
+        ]
+      ],
+      "externalGates": [
+        "Provenance and per-asset rights",
+        "Blender geometry/rig/contact validation",
+        "Actual Roblox import plus owned runtime ID",
+        "Studio scale/interior/NPC/tool-grip/hero-traversal verification",
+        "Device cost and human art approval"
+      ],
+      "sequence": [
+        "Source kit/registry and modular contract",
+        "Reviewed generator or authored blend",
+        "Reproducible source/export/provenance",
+        "Rig and geometry inspection",
+        "Isolated import",
+        "Runtime traversal and performance",
+        "Human review before multiplying content"
+      ]
+    }
+  },
+  "gl2": {
+    "plan": "production/design/integration/FULL_GAME_GOLIVE_GL2_TH.md",
+    "publicRequires": [
+      "Lv100",
+      "Class3",
+      "Federation",
+      "war",
+      "territory",
+      "Gold/material player market"
+    ],
+    "lv35": "INTERNAL_ONLY",
+    "artStarts": "P1",
+    "artCompleteBy": "P8",
+    "publicReady": false
+  }
+}

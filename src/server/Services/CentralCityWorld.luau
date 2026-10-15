@@ -122,16 +122,14 @@ return function(town: Folder,templates: Folder,open: any,prompt: any): any
 	future(tower,"Expeditions beyond the gate",V(22,4,-1515))
 	for x=-440,440,40 do asset("CityWall",V(x,0,-1635));asset("CityWall",V(x,0,-625)) end
 	for z=-1595,-665,40 do asset("CityWall",V(-455,0,z),90);asset("CityWall",V(455,0,z),90) end
-	-- Repeated street frontage, trees and furniture break long routes into readable blocks.
+	-- Street lanterns preserve navigation rhythm; landscape uses irregular planted groves.
 	for _,z in ipairs({-760,-920,-1000,-1260,-1380,-1480}) do
 		for _,side in ipairs({-1,1}) do
 			asset("Lantern",V(side*24,1,z),0,nil,1.8)
-			asset("Planter",V(side*42,1,z))
-			asset("TreeA",V(side*62,1,z),0,nil,1.6)
 			if z<-1200 then streetHouse(V(side*125,1,z),if side<0 then 90 else -90,.7) end
 		end
 	end
-	for _,x in ipairs({-220,-140,140,220}) do for _,z in ipairs({-1060,-1140}) do asset("TreeB",V(x,1,z),0,nil,1.4);asset("Bench",V(x,1,z+8)) end end
+	for _,x in ipairs({-220,-140,140,220}) do for _,z in ipairs({-1060,-1140}) do asset("Bench",V(x,1,z+8)) end end
 	-- Close street frontages frame the avenue; outer garden courts remain expansion space.
 	for _,z in ipairs({-755,-825,-915,-985}) do
 		streetHouse(V(93,1,z),-90,.85)
@@ -166,5 +164,6 @@ return function(town: Folder,templates: Folder,open: any,prompt: any): any
 		end
 	end
 	for name,root in pairs(require(script.Parent.FriendlyCityNpcs)(town,open,prompt)) do S.npcs[name]=root end
+	require(script.Parent.CityLandscape)(town)
 	return S
 end

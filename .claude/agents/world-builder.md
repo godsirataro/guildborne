@@ -105,17 +105,23 @@ Path rule production-evidence: Reconcile latest goals/registries/scopes. One sha
 
 ### p1-city-services: Functional city tavern and trusted crafting station
 
-Add interior Tavern/Crafting anchors and authorize only CraftItem at the registered city forge. Preserve private plot and all economy/progression gates.
+Add interior Tavern/Crafting anchors and authorize only CraftItem at the registered city forge. Preserve private plot and all economy/progression gates. Author central-city natural landscape from a shared reproducible geometry recipe; preserve travel/service routes and keep Blender preview separate from Studio acceptance.
 
 Environment: local; skill: guildborne-world
 
-Write scopes: src/server/Services/CentralCityWorld.luau, src/server/Services/CityWorld.luau, src/server/Services/WorldService.luau, src/server/Services/ExpansionWorld.luau
+Write scopes: src/server/Services/CentralCityWorld.luau, src/server/Services/CityWorld.luau, src/server/Services/WorldService.luau, src/server/Services/ExpansionWorld.luau, src/server/Services/CityLandscape.luau, src/server/Services/CityLandscapeData.luau, tools/build_city_landscape.py, tools/render_city_landscape.py, tools/verify_city_landscape.py, assets/uat01/city-landscape, production/world/central-city-landscape.md
 
 Required checks: source-contract, regression, independent-review
 
 Dependencies: none
 
 Path rule server-authority: Reuse actual services; server owns combat/inventory/currency/allocation/rewards/guild/build/escrow. Preserve fencing/receipts/saves/disabled flags. No production cloud writes or commerce activation.
+
+Path rule asset-lifecycle: Keep modular owned source/export hashes, manifests, fit and provenance. Generated/Blender/import/Studio/human states differ. Never invent runtime IDs or copy competitor assets/fonts.
+
+Path rule tooling: Use reviewed bounded local commands/tests. Studio/Forge planners do not launch models; paid/model subprocess, MCP mutation and installation require actual authorization/capability.
+
+Path rule production-evidence: Reconcile latest goals/registries/scopes. One shared ledger, claim before writes, immediate lease check and preserved raw receipts. Different reviewer validates evidence; local checks cannot replace hardware/cloud/human gates.
 
 ### shared-local-travel: Opt-in Local Shared Scene Travel
 
