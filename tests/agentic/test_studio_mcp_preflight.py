@@ -73,6 +73,12 @@ class StudioMcpPreflightTests(unittest.TestCase):
         self.create_launcher()
         self.assertEqual(self.inspect()["status"], "REVIEW_UNKNOWN_COMMAND")
 
+    def test_non_string_argument_is_rejected_without_crashing(self):
+        self.config.write_text("[mcp_servers.Roblox_Studio]\ncommand='cmd.exe'\n"
+                               "args=[12, 'mcp.bat']\n", encoding="utf-8")
+        self.create_launcher()
+        self.assertEqual(self.inspect()["status"], "REVIEW_UNKNOWN_COMMAND")
+
     def test_malformed_config_and_oversized_config_are_sanitized(self):
         self.config.write_text("[mcp_servers\nSECRET_PASSWORD=do-not-echo", encoding="utf-8")
         self.assertEqual(self.inspect()["status"], "REVIEW_CONFIG_PARSE")
