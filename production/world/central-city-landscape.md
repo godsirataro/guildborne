@@ -3,6 +3,27 @@
 2026-10-16. Status: **SOURCE_IMPLEMENTED / BLENDER_PREVIEW / LOCAL_CHECKS_PASS**.
 This is an initial native landscape study, not the final art benchmark or all-map completion.
 
+## Reference district connectivity — 2026-10-16
+
+Added four native cobblestone road segments to the existing city: an 18-stud-wide
+extension from the market avenue at (350, -1100) to (410, -1100), an east forge lane
+to (410, -1000), a 12-stud-wide connector to the rotated forge doorway at
+(390, -1000), and a 12-stud-wide Exchange connector from (300, -1130) to its
+doorway at (300, -1160). Coordinates here are (X, Z). The existing forge sign is
+eight studs outside the actual door; the new paving reaches the door itself.
+The Exchange connector closes the gap beyond the courtyard, between its two
+front stalls. Existing landscape reservations already protect all four segments;
+the landscape recipe and generated decorative geometry are unchanged.
+
+Fresh `python tools/verify_city_landscape.py` passes 1,172 landscape route samples
+and 109 additional samples checking six-stud envelopes against actual road
+dimensions and new landscape footprints. The 522 branch endpoint checks still
+pass. These are projected source geometry checks only; they do not test the
+existing foundation step, humanoid collision, five-hero doorway behavior or
+performance. Building transforms, service IDs, market availability, hero logic
+and streaming settings are unchanged. Four collidable road parts are added.
+Fresh full baseline and Studio party walk evidence must be recorded separately.
+
 ## Implemented
 
 `CentralCityWorld` now assembles `CityLandscape` from a reproducible shared geometry recipe.

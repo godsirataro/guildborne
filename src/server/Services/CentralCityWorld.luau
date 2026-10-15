@@ -48,6 +48,12 @@ return function(town: Folder,templates: Folder,open: any,prompt: any): any
 	road("GrandAvenue",V(0,0,-680),V(0,0,-1530),32)
 	road("GuildMarketAvenue",V(-350,0,-1100),V(350,0,-1100),32)
 	road("TavernApproach",V(0,0,-820),V(-205,0,-820),32)
+	-- Follow the reserved east approach around the stalls to the rotated forge door.
+	road("ForgeApproach",V(350,0,-1100),V(410,0,-1100),18)
+	road("ForgeEastLane",V(410,0,-1100),V(410,0,-1000),18)
+	road("ForgeThreshold",V(410,0,-1000),V(390,0,-1000),12)
+	-- The Exchange front wall is at z=-1160; its courtyard ends at z=-1150.
+	road("ExchangeThreshold",V(300,0,-1130),V(300,0,-1160),12)
 	for _,x in ipairs({-300,300}) do
 		road("DistrictLane",V(x,0,-960),V(x,0,-1130),18)
 		local outer=x+math.sign(x)*40
