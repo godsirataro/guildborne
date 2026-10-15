@@ -35,7 +35,8 @@ def _expected_launcher(server: dict, platform: str) -> bool:
         return False
     if platform == "win32":
         return (command.lower() in ("cmd.exe", "cmd")
-                and len(args) == 2 and args[0].lower() == "/c"
+                and len(args) == 2 and all(isinstance(a, str) for a in args)
+                and args[0].lower() == "/c"
                 and args[1].lower().replace("/", "\\") in (
                     r"cd \d %localappdata%\roblox && .\mcp.bat",
                     r"%localappdata%\roblox\mcp.bat",
