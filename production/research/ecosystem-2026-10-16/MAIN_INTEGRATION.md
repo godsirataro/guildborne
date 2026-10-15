@@ -51,3 +51,11 @@ the manifest. Both local files were normalized to the committed LF representatio
 and the adapters/manifest regenerated; their source hashes were then checked
 against staged Git blobs before a new CI run. No validator was bypassed and no
 runtime logic changed in this repair.
+
+Run `38803465926` then passed Linux tooling and the Windows game baseline. Its
+Windows tooling job exposed two fixture comparisons using the runner's short
+`RUNNER~1` TEMP alias while the implementation correctly resolved the long path.
+The ecosystem fixture now resolves its existing temporary parent before building
+expected paths and mock symlink targets; all assertions and guards remain in
+place. The focused 18 tests passed locally (one host symlink privilege skip).
+The final commit requires a fresh complete CI result after this fixture repair.

@@ -20,8 +20,11 @@ class EcosystemTests(unittest.TestCase):
     def setUp(self):
         temporary = tempfile.TemporaryDirectory()
         self.addCleanup(temporary.cleanup)
-        self.root = Path(temporary.name) / "repo"
-        self.skills = Path(temporary.name) / "global-skills"
+        # Windows runners may expose TEMP through an 8.3 alias (RUNNER~1).
+        # Use the same canonical parent as the router and symlink guard.
+        fixture_root = Path(temporary.name).resolve()
+        self.root = fixture_root / "repo"
+        self.skills = fixture_root / "global-skills"
         self.manifest = {
             "schemaVersion": 1, "bootstrapSkill": "roblox-collaboration-mode",
             "skillRouting": {"guildborne-qa": ["roblox-luau-core"], "guildborne-tooling": []},
