@@ -43,3 +43,11 @@ These are working-tree observations, not a formal clean-source Forge acceptance
 packet. GitHub Actions must be read on the final integration commit; the earlier
 PR #2 green checks alone do not cover this combined source. No new Studio,
 physical-device, cross-server or human art/UAT acceptance is claimed.
+
+The first integration CI run (`38803177076`) exposed source metadata generated
+from Windows CRLF bytes in `production/plan.json` and `production/studio/studio.json`.
+Git stores these two source files as LF, so a clean CI checkout correctly rejected
+the manifest. Both local files were normalized to the committed LF representation
+and the adapters/manifest regenerated; their source hashes were then checked
+against staged Git blobs before a new CI run. No validator was bypassed and no
+runtime logic changed in this repair.
