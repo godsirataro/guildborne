@@ -22,6 +22,7 @@ Public ครั้งแรกยังต้องมี Lv100, Class3, Federa
 ```powershell
 python tools/agentic/ecosystem.py validate
 python tools/agentic/ecosystem.py doctor
+python tools/agentic/studio_mcp_preflight.py --strict
 python tools/agentic/ecosystem.py route --task p1-city-services
 python tools/agentic/ecosystem.py route --task shared-pve-reward-coordinator
 python tools/agentic/ecosystem.py route --task market-integrity
@@ -32,6 +33,8 @@ python tools/agentic/ecosystem.py route --task market-integrity
 อ่าน `roblox-collaboration-mode` ก่อนเมื่อมี จากนั้นอ่าน project skill และเฉพาะ supporting skills ที่เกี่ยวข้อง หาก host ไม่มี skill ให้ทำงานด้วย project skill และเอกสารทางการต่อได้ การพบไฟล์หรือ hash ยืนยันได้เพียงไฟล์ในเครื่อง ไม่รับรองความถูกต้องหรือความทันสมัยของคำแนะนำในไฟล์
 
 ก่อนแก้ไฟล์ยังต้องอ่าน source/รายงานล่าสุดตาม AGENTS, ตรวจ dependencies ด้วย Studio route, claim scope ผ่าน Forge โดยใช้ ledger เดียวของ coordinator และตรวจ lease ก่อนเขียน/รวมงาน ดู [ขั้นตอนทีม](STUDIO_V3.md) และ [execution](EXECUTION_V2.md) สำหรับ handoff และ reviewer
+
+เครื่องมือจาก PR #2 รวมอยู่ใน workflow นี้แล้ว: `studio_mcp_preflight.py` ตรวจ registration ของ Codex แบบอ่านอย่างเดียว และ [Studio MCP / Multiplayer QA runbook](STUDIO_MCP_QA_RUNBOOK.md) ใช้กับ Memory preview ที่ตรวจ identity แล้ว Preflight ที่ผ่านยังไม่ใช่การเชื่อมต่อหรือผล playtest; registration ที่ปิดใช้งานต้องไม่ผ่าน `--strict`
 
 ## สองกระบวนการผลิต
 

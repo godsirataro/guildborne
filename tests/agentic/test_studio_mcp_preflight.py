@@ -1,8 +1,11 @@
 """No Studio required; verifies fail-closed static MCP preflight behavior."""
 import importlib.util
+from contextlib import redirect_stdout
+import io
 from pathlib import Path
 import tempfile
 import unittest
+from unittest.mock import patch
 
 SCRIPT = Path(__file__).resolve().parents[2] / "tools/agentic/studio_mcp_preflight.py"
 spec = importlib.util.spec_from_file_location("guildborne_studio_preflight", SCRIPT)
@@ -51,6 +54,27 @@ class StudioMcpPreflightTests(unittest.TestCase):
                                "args=['/c', '%LOCALAPPDATA%\\Roblox\\mcp.bat']\n", encoding="utf-8")
         self.create_launcher()
         self.assertEqual(self.inspect()["status"], "CONFIGURED_NOT_CONNECTED")
+
+    def test_disabled_or_malformed_enabled_does_not_pass_strict_preflight(self):
+        self.create_launcher()
+        for value, status in [("false", "STUDIO_DISABLED"), ("'false'", "REVIEW_ENABLED_VALUE"),
+                              ("1", "REVIEW_ENABLED_VALUE"), ("[]", "REVIEW_ENABLED_VALUE")]:
+            with self.subTest(value=value):
+                self.config.write_text(CANONICAL + "enabled = " + value + "\n", encoding="utf-8")
+                report = self.inspect()
+                self.assertEqual(report["status"], status)
+                self.assertFalse(report["configured"])
+                self.assertFalse(report["connected"])
+                with patch.object(module, "inspect_config", return_value=report), redirect_stdout(io.StringIO()):
+                    self.assertEqual(module.main(["--config", str(self.config), "--strict"]), 1)
+
+    def test_explicitly_enabled_registration_remains_static_only(self):
+        self.create_launcher()
+        self.config.write_text(CANONICAL + "enabled = true\n", encoding="utf-8")
+        report = self.inspect()
+        self.assertEqual(report["status"], "CONFIGURED_NOT_CONNECTED")
+        self.assertFalse(report["connected"])
+        self.assertFalse(report["playtested"])
 
     def test_duplicate_registered_server_requires_review(self):
         self.config.write_text(CANONICAL + "\n[mcp_servers.old_roblox]\ncommand = 'StudioMCP'\n", encoding="utf-8")

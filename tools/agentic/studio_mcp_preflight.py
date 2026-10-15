@@ -114,6 +114,17 @@ def inspect_config(
         return result
 
     server = servers[CANONICAL_NAME]
+    if isinstance(server, dict):
+        enabled = server.get("enabled", True)
+        if type(enabled) is not bool:
+            result["status"] = "REVIEW_ENABLED_VALUE"
+            checks.append("Roblox_Studio enabled must be a TOML boolean")
+            return result
+        if not enabled:
+            result["status"] = "STUDIO_DISABLED"
+            checks.append("Roblox_Studio registration is disabled")
+            result["nextStep"] = "Review the intended Studio connection before enabling this registration."
+            return result
     if not _studio_command(server) or not _expected_launcher(server, platform):
         result["status"] = "REVIEW_UNKNOWN_COMMAND"
         checks.append("Roblox_Studio registration does not match the reviewed official launcher command")
@@ -121,7 +132,8 @@ def inspect_config(
 
     result["configured"] = True
     result["nextStep"] = (
-        "Open the approved Guildborne staging place, enable Studio MCP, "
+        "Open the verified isolated Memory preview, or the separately approved "
+        "staging environment for persistence tests; enable Studio MCP, "
         "start a new Codex session, and discover Studio tools and place identity."
     )
     if platform == "win32":

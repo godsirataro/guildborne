@@ -6,3 +6,6 @@
 *.py text eol=lf
 *.rbxl binary
 *.rbxm binary
+# Preserve exact captured evidence bytes across Windows/Linux checkouts.
+assets/uat01/city-landscape/** -text whitespace=cr-at-eol
+production/research/ecosystem-2026-10-16/*.log -text whitespace=cr-at-eol

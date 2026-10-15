@@ -21,8 +21,10 @@
   "protectedRectangles": 72,
   "independentRouteSamples": 1141,
   "partyEnvelopeRadiusStuds": 6,
+  "branchEndpointChecks": 522,
+  "maxBranchEndpointErrorStuds": 0.00011757015139497185,
   "studioTested": false,
   "physicalDeviceTested": false,
   "humanArtApproved": false,
-  "recipeSha256": "20ce97cffb8204946ff0330f45c45148a5e424f73cdd4d9e8bf89d5e8ac64748"
+  "recipeSha256": "c05f68e6d2883e22780b2c723d247171e3f6919de7fba9975c82a65590d2ede4"
 }

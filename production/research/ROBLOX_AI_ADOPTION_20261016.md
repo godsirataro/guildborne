@@ -1,5 +1,7 @@
 # Guildborne AI development tool adoption — 2026-10-16
 
+Integration note: the baseline and empty-Studio observations below describe the earlier main audit at the stated SHA. The consolidated [AI ecosystem guide](../AI_ECOSYSTEM_TH.md) now routes 60 tasks across 31 project skills; the [local snapshot](ecosystem-2026-10-16/README.md) records successful Studio discovery with unverified place identity and a failed Blender handshake. The preflight, ecosystem router and existing Forge/Studio workflows form one toolchain; these different observations are not contradictory game acceptance claims.
+
 **Purpose:** Adapt useful facts from the NEONSHIFT Roblox AI research to **Guildborne**, the existing original fantasy guild-management RPG. **Not** a new project template or a claim that a live game/Studio session was tested.
 
 **Repository inspected:** main at 4cc9a8232e0fd9ae7bf517983c274e800e8ad4a4, including AGENTS.md, README.md, production/STUDIO_V3.md, LATEST_GOALS.md, research/SOURCES.md, mcp_probe.py, Rojo setup and GitHub CI. The merged Studio v3 already provides **33 agent roles, 30 project skills, 10 workflows**, cooperative Forge handoffs, offline tests and reviewed MCP discovery. Reuse those: adding every community skill, framework or agent again would be counterproductive.

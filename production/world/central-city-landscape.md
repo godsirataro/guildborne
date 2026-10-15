@@ -24,9 +24,14 @@ runtime integration.
 
 - `python tools/verify_city_landscape.py`: deterministic source match, full rotated footprints
   against 72 reserved rectangles, 1,141 independent route samples with six-stud horizontal
-  radius; PASS. These samples check new geometry only, not Roblox humanoid/party physics.
-- `tools/validate.ps1`: 890 tests; Rojo build; strict analysis; compilation; repository and
-  built-place checks; PASS. Final three world module sources match the validated `.rbxlx`.
+  radius; PASS. The branch-rotation correction additionally checks 522 generated cylinder
+  endpoints with maximum error 0.000118 studs and exact recipe-to-Luau content, including LF
+  source bytes. A mutation restoring the previous rotation is rejected by the endpoint check.
+  These samples check new geometry only, not Roblox humanoid/party physics.
+- Historical pre-correction `tools/validate.ps1` log: 890 tests; Rojo build; strict analysis;
+  compilation; repository and built-place checks; PASS. This preserved log predates the
+  branch-rotation correction. The corrected source requires the coordinator's fresh full
+  baseline; the previous built-place match is not evidence for the corrected source.
 - Blender 5.2.1 LTS background render: both PNGs and editable `.blend` generated. The renderer
   uses exact new primitive dimensions, rotations and colors. Lighting is Blender preview
   lighting. Existing city buildings, NPCs and services are intentionally absent from these
@@ -36,13 +41,22 @@ runtime integration.
   1,598 parts / 133 solid / 87 trees; no new concrete blocker. This is source review only.
 - Visual iteration corrected intersecting flagstones, disconnected water shapes and camera
   near-plane clipping. The current images remain an early art study, not human art signoff.
+- 2026-10-16 branch correction: cylinder local X now follows the intended trunk-to-crown
+  vector under Roblox XYZ rotation. Previous endpoints missed their trunk attachment by up
+  to 5.51 studs. Regenerated JSON, Luau, both images and the editable Blender file; isolated
+  background Blender exited 0. `branch-rotation-render.log` is the new unchanged raw stream;
+  the earlier render and baseline logs are preserved as historical evidence.
 
 Artifacts: `assets/uat01/city-landscape/landscape.json`, `validation.json`,
 `hearth-garden-preview.png`, `landscape-layout-preview.png`,
 `Guildborne_Central_Landscape.blend`, raw local logs and `evidence-hashes.json`.
+Evidence hashes use raw asset/log bytes. Text sources (`.py`, `.luau`, `.md`) are normalized
+to LF before hashing so their values match Git's committed text bytes. The manifest explicitly
+records this distinction. The generator emits JSON and Luau with stable LF line endings.
 
-Private candidate: `build/Guildborne_IntegrationPreview.rbxlx`, built with the existing
-Memory-only preview builder; staging Runtime source unchanged. No publishing performed.
+Historical private candidate: `build/Guildborne_IntegrationPreview.rbxlx`, built with the
+existing Memory-only preview builder before the branch correction; regeneration is pending.
+Staging Runtime source unchanged. No publishing performed.
 
 ## Reproduce
 
@@ -65,6 +79,8 @@ foliage mesh silhouettes and in-game lighting. Profile the complete city on targ
 hardware before increasing detail. Obtain human art approval before multiplying the style
 across six cities, campaign areas, guild islands and war maps. These are still pending.
 
-Shared coordinator ledger: `build/agentic/launch-v22-ledger.sqlite3`; v21 had no active owners
-when the existing city-services scope was extended. This working-tree report is REVIEW-only;
+Initial shared coordinator ledger: `build/agentic/launch-v22-ledger.sqlite3`; v21 had no active
+owners when the existing city-services scope was extended. The branch correction uses the
+coordinator's `build/agentic/launch-v26-ledger.sqlite3`, task `p1-city-services`.
+This working-tree report is REVIEW-only;
 no clean release commit, formal Forge acceptance or public go-live approval is claimed.

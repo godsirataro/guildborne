@@ -1,19 +1,29 @@
 {
   "status": "REVIEW_ONLY",
+  "hashNormalization": {
+    "sourceExtensions": [
+      ".py",
+      ".luau",
+      ".md"
+    ],
+    "sourceBytes": "CRLF normalized to LF, matching committed Git text",
+    "otherFiles": "raw bytes; historical logs preserved"
+  },
   "sha256": {
     "assets/uat01/city-landscape/blender-render.log": "1595a2b1307228b0039893836fb1a565eb60b704d59e746510a6182e48ad1996",
-    "assets/uat01/city-landscape/Guildborne_Central_Landscape.blend": "be8a31f025bd136805760ca4d01c93878d89e773705224be735e047d84168cff",
-    "assets/uat01/city-landscape/hearth-garden-preview.png": "9720f608f84a3906c4ded299608e179ece1025273803cd187ff309e0acf53d6b",
-    "assets/uat01/city-landscape/landscape-layout-preview.png": "35788be793752c6949353ab0900a00ee164da74dface5a799bd4fd59e7916b72",
-    "assets/uat01/city-landscape/landscape.json": "20ce97cffb8204946ff0330f45c45148a5e424f73cdd4d9e8bf89d5e8ac64748",
+    "assets/uat01/city-landscape/Guildborne_Central_Landscape.blend": "ef53e10e984d72642f609396a92b84c20c667776997b10323511e068f6092f7c",
+    "assets/uat01/city-landscape/hearth-garden-preview.png": "104bc2eb3c866e655e50570f96030ef545eec12d541bb8fbb3e08ca4327bd29e",
+    "assets/uat01/city-landscape/landscape-layout-preview.png": "9279bf58680dbb9d2d595a51abafca3e981dd470265171f9dcef2a57536eab37",
+    "assets/uat01/city-landscape/landscape.json": "c05f68e6d2883e22780b2c723d247171e3f6919de7fba9975c82a65590d2ede4",
     "assets/uat01/city-landscape/local-baseline.log": "2621cb8da872cab8f7895ddce9551888a49a2dcd00fe2028f4b6a962076eade8",
-    "assets/uat01/city-landscape/validation.json": "793fbede18bc026d970e4562a95f2a2051b3bd6a7e4259b36f13b4a69439220e",
+    "assets/uat01/city-landscape/validation.json": "692a4c5b3c03f3857382b02424ea6d7ed26d5ef275474ec93703af1a4f049faa",
     "src/server/Services/CityLandscape.luau": "1b8050b62646d70c2ed71acde45bec05926c114c5525a8542f0531de01671d0d",
-    "src/server/Services/CityLandscapeData.luau": "3488f3a739ba63316cd4f6b58b910380c706107a8948ec2cff988291d21f6ff7",
-    "src/server/Services/CentralCityWorld.luau": "f3d37573ddcde4d47729520f1647d8a819ad0532bc2c2d70e952521cb5b163ed",
-    "tools/build_city_landscape.py": "0683082d7bd36563bcbabcd2de2a29c88e0367cb62f3e5e73aa03e271a5c540e",
+    "src/server/Services/CityLandscapeData.luau": "14e573df5389cd3c8f88e371459cd7dc774c4994cd230817fc7765efa5198822",
+    "src/server/Services/CentralCityWorld.luau": "e83e72dba8570e710b38987d06ee13f896c7071bb4006ffc85d022ed36e36309",
+    "tools/build_city_landscape.py": "dc1ab7de19a80c60f40d0dd9fc6ac6e5ce947fb3665c40053ea3b1be703949a0",
     "tools/render_city_landscape.py": "68b3cd98dbe97a01d3d705d33a9509d757426c449842e20707bc617f41800b25",
-    "tools/verify_city_landscape.py": "9591b38725fd980843f45a00cddfad8d4f23dfff6de6d8113666b1a483bed0d1",
-    "production/world/central-city-landscape.md": "fc892c6d118113cdae9d3b74cd4326cf7d06a52550f8094565e5fd1140a13cfe"
+    "tools/verify_city_landscape.py": "28d971976dce639fd1ae218b477c1322c205add96393180a47c3f7bc549778da",
+    "production/world/central-city-landscape.md": "932539a76ba803ab2f87af8f6909148d59769f33eb560a611427bddb6170f1f0",
+    "assets/uat01/city-landscape/branch-rotation-render.log": "3753ddefc3b54c5b7b7ac94da3110e532179663d455c9ddb472193625ce0b107"
   }
 }

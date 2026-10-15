@@ -5,7 +5,7 @@ import math
 import re
 from collections import Counter
 from pathlib import Path
-from build_city_landscape import ROOT, OUT, make_recipe, bounds
+from build_city_landscape import ROOT, OUT, make_recipe, bounds, rotation_matrix, luau_source
 
 data=json.loads((OUT/'landscape.json').read_text(encoding='utf-8'))
 assert data == make_recipe(), 'Generated recipe differs from deterministic source'
@@ -21,6 +21,26 @@ for p in data['parts']:
         x,z,xx,zz=r['bounds']
         if a < xx and c > x and b < zz and d > z:errors.append((p['name'],r['name']))
 assert not errors, errors[:10]
+
+# Cylinder length is local X. Check the generated rotations against intended
+# branch endpoints, independently of the angle formula used by the authoring code.
+branch_checks=0
+branch_max_error=0
+trunk=None
+for p in data['parts']:
+    if p['name']=='Trunk':trunk=p
+    if p['name']!='Bough':continue
+    assert trunk is not None and trunk['group']==p['group'], 'Bough lacks its trunk'
+    start=[trunk['position'][0],trunk['size'][0]*.52,trunk['position'][2]]
+    end=[2*p['position'][i]-start[i] for i in range(3)]
+    rotation=rotation_matrix(p['rotation'])
+    for sign,expected in ((-1,start),(1,end)):
+        actual=[p['position'][i]+sign*rotation[i][0]*p['size'][0]/2 for i in range(3)]
+        error=math.dist(actual,expected)
+        branch_max_error=max(branch_max_error,error)
+        assert error < .001, ('Bough endpoint mismatch',p['position'],error)
+    branch_checks+=1
+assert branch_checks > 0
 
 # Independent swept party path: regressions found at tavern and rotated forge door.
 # Radius 6 is a geometric reservation, not a replacement for the physical five-hero walk.
@@ -39,7 +59,8 @@ for route in routes:
                 assert not (a < px+6 and c > px-6 and b < pz+6 and d > pz-6), (p['name'],px,pz)
 
 native=(ROOT/'src/server/Services/CityLandscapeData.luau').read_text(encoding='utf-8')
-assert native.count('{group=')==len(data['parts'])
+assert native==luau_source(data), 'Generated Luau differs from the verified recipe'
+assert b'\r' not in (ROOT/'src/server/Services/CityLandscapeData.luau').read_bytes(), 'Generated Luau must use LF'
 world=(ROOT/'src/server/Services/CentralCityWorld.luau').read_text(encoding='utf-8')
 assert 'require(script.Parent.CityLandscape)(town)' in world
 assert 'asset("TreeA"' not in world and 'asset("TreeB"' not in world
@@ -50,7 +71,8 @@ report=dict(status='PASS',scope='deterministic recipe and projected geometry onl
     parts=len(data['parts']),counts=dict(Counter(p['name'] for p in data['parts'])),
     collisionParts=sum(p['solid'] for p in data['parts']),protectedRectangles=len(data['exclusions']),
     independentRouteSamples=samples,partyEnvelopeRadiusStuds=6,
+    branchEndpointChecks=branch_checks*2,maxBranchEndpointErrorStuds=branch_max_error,
     studioTested=False,physicalDeviceTested=False,humanArtApproved=False,
     recipeSha256=hashlib.sha256((OUT/'landscape.json').read_bytes()).hexdigest())
-(OUT/'validation.json').write_text(json.dumps(report,indent=2)+'\n',encoding='utf-8')
+(OUT/'validation.json').write_text(json.dumps(report,indent=2)+'\n',encoding='utf-8',newline='\n')
 print(json.dumps(report,indent=2))

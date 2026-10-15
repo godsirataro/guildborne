@@ -1369,7 +1369,8 @@
         "production/research/ROBLOX_AI_ADOPTION_20261016.md",
         "production/research/SOURCES.md",
         "tests/agentic/test_studio_mcp_preflight.py",
-        "tools/agentic/studio_mcp_preflight.py"
+        "tools/agentic/studio_mcp_preflight.py",
+        ".gitattributes"
       ],
       "checks": [
         "source-contract",

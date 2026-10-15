@@ -4,13 +4,17 @@
 
 ## 1. Prepare the real workstation
 
-This is for the developer's Windows machine with an approved **Guildborne - Staging** place open. It cannot be accomplished through a GitHub connector or a web-only ChatGPT chat.
+This is for the developer's Windows machine with the verified **isolated Guildborne Memory preview** open for the journey below. Default staging uses DataStore with NoviceJourney disabled; it is not the Novice test fixture. Persistent staging cases require their own approved environment and test identities. A GitHub connector or a web-only chat cannot operate the local Studio session.
+
+Build the journey candidate with `python tools/build_integration_preview.py --launch`, then open the emitted `build/Guildborne_LaunchPreview.rbxlx` and inspect its build receipt. Verify Memory persistence, empty allowed DataStore universes, the expected source identity and the actual selected Studio instance before play. A build receipt is not a passed playtest. See the [shared ecosystem workflow](AI_ECOSYSTEM_TH.md).
 
 1. Run the static-only preflight from repo root: **python tools/agentic/studio_mcp_preflight.py --strict**
 2. Inspect actual host setup: **codex mcp list**. The canonical server is **Roblox_Studio**; review unexpected or duplicate registrations rather than adding another.
-3. In Roblox Studio: open the **approved staging place** → Assistant → … → Settings → MCP Servers → Enable Studio as MCP server → Quick Connect **ChatGPT (codex)**. If tools are absent, open a new Codex thread.
+3. In Roblox Studio: select that **verified Memory preview** → Assistant → … → Settings → MCP Servers → Enable Studio as MCP server → Quick Connect **ChatGPT (codex)**. If tools are absent, open a new Codex thread.
 4. Use the [official Roblox Studio agent plugin](https://github.com/Roblox/roblox-studio-agent-plugin) and its [host registration instructions](https://github.com/Roblox/roblox-studio-agent-plugin/blob/main/skills/roblox-get-started/references/connect.md); do not install community bridges blindly.
 5. Use existing read-only [mcp_probe.py](../tools/agentic/mcp_probe.py) only after reviewing its local command JSON and SHA-256, as documented in EXECUTION_V2.md. Its output is **MCP_CONNECTED_NOT_STUDIO_ACCEPTED**, not a passed playtest.
+
+`STUDIO_DISABLED` and `REVIEW_ENABLED_VALUE` fail strict preflight. `CONFIGURED_NOT_CONNECTED` means only an enabled launcher-shaped registration and a launcher file were found; it never means the bridge or game is connected.
 
 **Preflight meanings:** CONFIGURED_NOT_CONNECTED verifies only a reviewed launcher-shaped TOML entry and presence of the local launcher file. REVIEW_DUPLICATE_STUDIO and REVIEW_UNKNOWN_COMMAND require human review. There is no credential, command or environment-value echo and no executable launch. Verify actual connected Studio ID, place identity, tool inventory and input schemas before any mutating tool call. Claim the appropriate exclusive Forge/Studio owner lease and retain existing source control.
 
@@ -20,14 +24,14 @@ For a single player, use actually advertised [Studio MCP tools](https://create.r
 
 1. New Novice save → tutorial and Guild Hall → Class1 quest at Lv10 → recruit heroes and form up to a five-hero party.
 2. Quest claim, authoritative Gold/XP receipt, weapon equip, battle and loot, crafting, city, island and TH/EN mobile HUD.
-3. Leave/rejoin, duplicate claim, malformed client intent and refused/inactive marketplace states; all authoritative economy results must be verified on server.
+3. Leave/rejoin while the Memory test server remains alive, duplicate claim, malformed client intent and refused/inactive marketplace states; all authoritative economy results must be verified on server. Memory mode does not prove durability across server restarts: test persistent reconnect/recovery separately in the approved staging environment.
 4. Record logs/screenshots, actual build commit/tree, environment, observed expected vs actual, reviewer and the uncompleted gates. Merely opening a UI or taking a screenshot is not server-state evidence.
 
 Consult docs/uat01/WORK_CHECKLIST.md and the respective implementation records for current canonical IDs, rules and existing evidence.
 
 ## 3. Multiplayer test matrix
 
-[StudioTestService](https://create.roblox.com/docs/reference/engine/classes/StudioTestService) supports up to **8 simulated clients on one Studio server**. Its ExecuteMultiplayerTestAsync method **requires plugin security and a plugin script**; it is not callable from arbitrary server code or assumed available via execute_luau. Programmatic tests need a reviewed plugin-side launcher and a running test-server script to call EndTest. Start with manual Studio multi-client testing if no such harness is yet available. Do not claim these scenarios have run.
+[Studio's testing modes documentation](https://create.roblox.com/docs/studio/testing-modes#scripted-testing) describes up to **8 simulated clients on one Studio server** through StudioTestService. Its [ExecuteMultiplayerTestAsync method](https://create.roblox.com/docs/reference/engine/classes/StudioTestService) **requires plugin security and a plugin script**; it is not callable from arbitrary server code or assumed available via execute_luau. Programmatic tests need a reviewed plugin-side launcher and a running test-server script to call EndTest. Start with manual Studio multi-client testing if no such harness is yet available. Do not claim these scenarios have run.
 
 | Scenario | What must be observed | Evidence layer |
 | --- | --- | --- |

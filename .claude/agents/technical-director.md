@@ -106,7 +106,7 @@ Map supplied NEONSHIFT ecosystem concepts to existing Guildborne GL2/RPG roles a
 
 Environment: local; skill: guildborne-director
 
-Write scopes: production/studio/ecosystem.json, production/AI_ECOSYSTEM_TH.md, production/research/ecosystem-2026-10-16, production/README.md, production/STUDIO_V3.md, .agents/skills/guildborne-studio/SKILL.md, .github/workflows/agentic-production.yml, production/studio/studio.json, production/studio/catalog.json, production/studio/generated-manifest.json, .codex/agents, .claude/agents, README.md, production/STUDIO_MCP_QA_RUNBOOK.md, production/research/ROBLOX_AI_ADOPTION_20261016.md, production/research/SOURCES.md, tests/agentic/test_studio_mcp_preflight.py, tools/agentic/studio_mcp_preflight.py
+Write scopes: production/studio/ecosystem.json, production/AI_ECOSYSTEM_TH.md, production/research/ecosystem-2026-10-16, production/README.md, production/STUDIO_V3.md, .agents/skills/guildborne-studio/SKILL.md, .github/workflows/agentic-production.yml, production/studio/studio.json, production/studio/catalog.json, production/studio/generated-manifest.json, .codex/agents, .claude/agents, README.md, production/STUDIO_MCP_QA_RUNBOOK.md, production/research/ROBLOX_AI_ADOPTION_20261016.md, production/research/SOURCES.md, tests/agentic/test_studio_mcp_preflight.py, tools/agentic/studio_mcp_preflight.py, .gitattributes
 
 Required checks: source-contract, regression, independent-review
 

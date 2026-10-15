@@ -190,7 +190,8 @@
       "id": "studio-mcp",
       "decision": "USE_EXISTING",
       "paths": [
-        "tools/agentic/mcp_probe.py"
+        "tools/agentic/mcp_probe.py",
+        "tools/agentic/studio_mcp_preflight.py"
       ],
       "reason": "Live tool discovery and target identity required; executable or listed tool alone is not successful invocation."
     },
