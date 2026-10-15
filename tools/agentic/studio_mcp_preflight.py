@@ -36,8 +36,10 @@ def _expected_launcher(server: dict, platform: str) -> bool:
     if platform == "win32":
         return (command.lower() in ("cmd.exe", "cmd")
                 and len(args) == 2 and args[0].lower() == "/c"
-                and args[1].lower().replace("/", "\\") ==
-                r"cd \d %localappdata%\roblox && .\mcp.bat")
+                and args[1].lower().replace("/", "\\") in (
+                    r"cd \d %localappdata%\roblox && .\mcp.bat",
+                    r"%localappdata%\roblox\mcp.bat",
+                ))
     if platform == "darwin":
         return Path(command).name == "StudioMCP" and not args
     return True  # Host is separately rejected as unsupported.
