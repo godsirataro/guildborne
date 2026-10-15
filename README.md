@@ -4,6 +4,8 @@
 
 **Development team:** [Guildborne Studio v3](production/STUDIO_V3.md) adds native Codex/Claude agent definitions, reusable workflows and Forge-backed handoffs. Start with `$guildborne-studio`; run `python tools/agentic/studio.py validate` and `verify`. Team definitions and local coordinator checks are separate from game, art and release acceptance.
 
+**Roblox Studio MCP adoption (2026-10-16):** [Read-only local preflight and real multiplayer QA guide](production/STUDIO_MCP_QA_RUNBOOK.md) · [Source-backed tool adoption decisions](production/research/ROBLOX_AI_ADOPTION_20261016.md). Setup and local fixtures are **not** Studio, device or live cross-server acceptance. No game flag, marketplace or publication is changed by this addition.
+
 ## Agentic production workflow
 
 The [production toolkit](production/README.md) adds repo-scoped specialist skills,
