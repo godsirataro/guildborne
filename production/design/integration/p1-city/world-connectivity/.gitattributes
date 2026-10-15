@@ -1,0 +1,2 @@
+# Immutable subprocess streams: retain original bytes, including CRLF and empty files.
+*.txt -text
