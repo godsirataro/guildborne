@@ -49,7 +49,8 @@ return function(ui: any)
 				local furnishings=e.layoutFurniture and e.layoutFurniture[tostring(layoutSlot)]
 				if furnishings then local count=0;for _ in pairs(furnishings) do count+=1 end;text(head,T("Furniture")..": "..count,15) end
 			end
-		elseif tab=="Base" then
+		elseif tab=="Base" or tab=="Crafting" then
+			if tab=="Base" then
 			button(head,"Guild land",not busy,function()ui.navigate("Land")end).Name="OpenLand"
 			button(head,"Layouts",not busy,function()ui.navigate("Layouts")end).Name="OpenLayouts"
 			button(head,"Building themes",not busy,function()ui.navigate("Themes")end).Name="OpenThemes"
@@ -83,11 +84,14 @@ return function(ui: any)
 					button(frame,"Place stored building",not busy,function()ui.build(data,kind,id)end).Name="Restore_"..id
 				else button(frame,"Preview building",not busy,function() ui.build(data,kind,nil) end).Name="Preview" end
 			end
+			end
 			local forge=card(ui.scroll,"Crafting")
 			text(forge,"Recipes consume the listed materials and create one item.",16)
+			text(forge,"Use your guild workshop or the city forge. A placed Blacksmith on your island is required.",16)
+			local locationProblem=if ui.craftProblem then ui.craftProblem() else nil
 			for _,id in ipairs(Rules.RecipeOrder) do
 				local r=Rules.Recipes[id];local def=catalog.Items[r.Item]
-				local state=CraftingState(data,catalog,Rules,id,busy)
+				local state=CraftingState(data,catalog,Rules,id,busy,locationProblem)
 				local recipeCard=card(ui.scroll,def.Name);recipeCard.Name="Recipe_"..id
 				local compact=ui.scroll.AbsoluteSize.Y<180;local size=if compact then 48 else 64
 				local row=Instance.new("Frame");row.Name="RecipeIngredients";row.BackgroundTransparency=1;row.Size=UDim2.new(1,0,0,size);row.AutomaticSize=Enum.AutomaticSize.Y;row.Parent=recipeCard

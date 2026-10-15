@@ -1,0 +1,75 @@
+{
+  "candidate": "2ec894203304f3c20f7ea69cd8c5700526c0267d5fd5ebb7f973a9fdfcb37644",
+  "studio": "05efd918-4503-49c8-9e99-2ae9c5732b51",
+  "scope": "Local Studio single actual player; Memory only",
+  "results": {
+    "travelEarnedBefore": {
+      "content": [
+        {
+          "type": "text",
+          "text": "{\"status\":\"Active\",\"revision\":28,\"data\":{\"adventurers\":{\"a:Warrior\":{\"equipmentSlots\":{\"weapon\":\"novice:founder:1\"},\"stats\":{\"Attack\":17,\"Defense\":4,\"Health\":57,\"WeaponBonus\":2},\"appearance\":{\"hairColorId\":\"HAIR_DARK_BROWN\",\"bodyPresetId\":\"HUMAN_STANDARD\",\"raceFeatures\":[],\"raceId\":\"HUMAN\",\"outfitSlots\":{\"INNER_TOP\":\"CLO_TUNIC_TRAVELER_01\",\"INNER_BOTTOM\":\"CLO_TROUSERS_TRAVELER_01\"},\"appearanceVersion\":1,\"skinPaletteId\":\"SKIN_HUMAN_03\",\"hairAssetId\":\"ACC_HAIR_HUMAN_01\",\"headPresetId\":\"CHR_HEAD_HUMAN_01\"},\"id\":\"a:Warrior\",\"classId\":\"Warrior\",\"appearanceEnabled\":false,\"name\":\"Rowan\",\"xp\":450,\"baseStats\":{\"Defense\":4,\"Health\":30,\"Attack\":6},\"level\":10,\"appearanceRevision\":0,\"rank\":\"F\"}},\"party\":{\"adventurerIds\":{\"1\":\"a:Warrior\"}},\"hallLevel\":1,\"progression\":{\"tutorialStep\":\"complete\",\"recruitedClasses\":{\"Warrior\":true},\"campaign\":{\"choices\":[],\"version\":1,\"claimed\":0,\"objectives\":[]},\"welcomeSeen\":true,\"ruleset\":\"guildborne.progression.2\",\"novice\":{\"trialClass\":\"Warrior\",\"founderHero\":\"a:Warrior\",\"claimed\":6,\"branch\":\"rescue\",\"version\":1,\"objectives\":[]},\"tutorialCompleted\":true,\"everEquipped\":false},\"gold\":0,\"character\":{\"equipmentSlots\":{\"weapon\":\"novice:class:1\"},\"stats\":{\"Attack\":17,\"Defense\":4,\"Health\":57,\"WeaponBonus\":2},\"appearance\":{\"hairColorId\":\"HAIR_DARK_BROWN\",\"bodyPresetId\":\"HUMAN_STANDARD\",\"raceFeatures\":[],\"raceId\":\"HUMAN\",\"outfitSlots\":{\"INNER_TOP\":\"CLO_TUNIC_TRAVELER_01\",\"INNER_BOTTOM\":\"CLO_TROUSERS_TRAVELER_01\"},\"appearanceVersion\":1,\"hairAssetId\":\"ACC_HAIR_HUMAN_01\",\"skinPaletteId\":\"SKIN_HUMAN_03\",\"headPresetId\":\"CHR_HEAD_HUMAN_01\"},\"classId\":\"Warrior\",\"xp\":450,\"raceId\":\"Human\",\"definitionVersion\":1,\"classPathId\":\"warrior:1\",\"tier\":1,\"appearanceEnabled\":false,\"level\":10,\"appearanceRevision\":0,\"skillId\":\"power_strike\"}},\"humanParty\":{\"directory\":[],\"revision\":2,\"members\":[],\"available\":true,\"capacity\":6,\"incomingInvites\":[],\"localUserId\":\"11732987790\",\"outgoingInvites\":[]}}"
+        }
+      ],
+      "isError": false
+    },
+    "travelNativeEntry": {
+      "content": [
+        {
+          "type": "text",
+          "text": "{\"zone\":\"SharedLocalCandidate\",\"home\":\"2.88922119140625, 3.99798583984375, 24.6053466796875\",\"position\":\"6000, 2.98828125, 6054\"}"
+        }
+      ],
+      "isError": false
+    },
+    "travelEarnedAfter": {
+      "content": [
+        {
+          "type": "text",
+          "text": "{\"status\":\"Active\",\"revision\":29,\"data\":{\"adventurers\":{\"a:Warrior\":{\"equipmentSlots\":{\"weapon\":\"novice:founder:1\"},\"stats\":{\"Attack\":17,\"Defense\":4,\"Health\":57,\"WeaponBonus\":2},\"appearance\":{\"hairColorId\":\"HAIR_DARK_BROWN\",\"bodyPresetId\":\"HUMAN_STANDARD\",\"raceFeatures\":[],\"raceId\":\"HUMAN\",\"outfitSlots\":{\"INNER_TOP\":\"CLO_TUNIC_TRAVELER_01\",\"INNER_BOTTOM\":\"CLO_TROUSERS_TRAVELER_01\"},\"appearanceVersion\":1,\"skinPaletteId\":\"SKIN_HUMAN_03\",\"hairAssetId\":\"ACC_HAIR_HUMAN_01\",\"headPresetId\":\"CHR_HEAD_HUMAN_01\"},\"id\":\"a:Warrior\",\"classId\":\"Warrior\",\"appearanceEnabled\":false,\"name\":\"Rowan\",\"xp\":451,\"baseStats\":{\"Defense\":4,\"Health\":30,\"Attack\":6},\"level\":10,\"appearanceRevision\":0,\"rank\":\"F\"}},\"party\":{\"adventurerIds\":{\"1\":\"a:Warrior\"}},\"hallLevel\":1,\"progression\":{\"tutorialStep\":\"complete\",\"recruitedClasses\":{\"Warrior\":true},\"campaign\":{\"choices\":[],\"version\":1,\"claimed\":0,\"objectives\":[]},\"welcomeSeen\":true,\"ruleset\":\"guildborne.progression.2\",\"novice\":{\"trialClass\":\"Warrior\",\"founderHero\":\"a:Warrior\",\"version\":1,\"branch\":\"rescue\",\"claimed\":6,\"objectives\":[]},\"tutorialCompleted\":true,\"everEquipped\":false},\"gold\":3,\"character\":{\"classPathId\":\"warrior:1\",\"stats\":{\"Attack\":17,\"Defense\":4,\"Health\":57,\"WeaponBonus\":2},\"appearance\":{\"hairColorId\":\"HAIR_DARK_BROWN\",\"bodyPresetId\":\"HUMAN_STANDARD\",\"raceFeatures\":[],\"raceId\":\"HUMAN\",\"outfitSlots\":{\"INNER_TOP\":\"CLO_TUNIC_TRAVELER_01\",\"INNER_BOTTOM\":\"CLO_TROUSERS_TRAVELER_01\"},\"appearanceVersion\":1,\"skinPaletteId\":\"SKIN_HUMAN_03\",\"hairAssetId\":\"ACC_HAIR_HUMAN_01\",\"headPresetId\":\"CHR_HEAD_HUMAN_01\"},\"classId\":\"Warrior\",\"xp\":451,\"raceId\":\"Human\",\"definitionVersion\":1,\"equipmentSlots\":{\"weapon\":\"novice:class:1\"},\"tier\":1,\"appearanceEnabled\":false,\"level\":10,\"appearanceRevision\":0,\"skillId\":\"power_strike\"}},\"humanParty\":{\"directory\":[],\"revision\":2,\"members\":[],\"available\":true,\"capacity\":6,\"incomingInvites\":[],\"localUserId\":\"11732987790\",\"outgoingInvites\":[]}}"
+        }
+      ],
+      "isError": false
+    },
+    "travelNativeReturn": {
+      "content": [
+        {
+          "type": "text",
+          "text": "{\"scene\":{\"RewardsEnabled\":true,\"RewardStatus\":\"Delivered\",\"Origin\":\"6000, 0, 6000\",\"Status\":\"Completed\",\"damage_dealt\":4,\"CandidateOnly\":true,\"enemy_basic_attack\":4},\"zone\":\"Guild\",\"jump\":50,\"position\":\"4.99456787109375, 3.998046875, 25.775390625\",\"error\":2.40862774848938,\"walk\":17}"
+        }
+      ],
+      "isError": false
+    },
+    "travelFaultReturn": {
+      "content": [
+        {
+          "type": "text",
+          "text": "{\"zone\":\"Guild\",\"jump\":50,\"position\":\"4.99456787109375, 3.99786376953125, 25.775390625\",\"injected\":\"scene Status Faulted\",\"expected\":\"4.99456787109375, 3.998046875, 25.775390625\",\"error\":0.00018310546875,\"walk\":17}"
+        }
+      ],
+      "isError": false
+    },
+    "travelStationaryReturn": {
+      "content": [
+        {
+          "type": "text",
+          "text": "{\"position\":\"4.99456787109375, 3.998046875, 25.775390625\",\"expected\":\"4.99456787109375, 3.998046875, 25.775390625\",\"error\":0,\"zone\":\"Guild\"}"
+        }
+      ],
+      "isError": false
+    },
+    "travelFinalProfile": {
+      "content": [
+        {
+          "type": "text",
+          "text": "{\"status\":\"Active\",\"revision\":29,\"data\":{\"adventurers\":{\"a:Warrior\":{\"equipmentSlots\":{\"weapon\":\"novice:founder:1\"},\"stats\":{\"Attack\":17,\"Defense\":4,\"Health\":57,\"WeaponBonus\":2},\"appearance\":{\"hairColorId\":\"HAIR_DARK_BROWN\",\"bodyPresetId\":\"HUMAN_STANDARD\",\"raceFeatures\":[],\"raceId\":\"HUMAN\",\"outfitSlots\":{\"INNER_TOP\":\"CLO_TUNIC_TRAVELER_01\",\"INNER_BOTTOM\":\"CLO_TROUSERS_TRAVELER_01\"},\"appearanceVersion\":1,\"skinPaletteId\":\"SKIN_HUMAN_03\",\"hairAssetId\":\"ACC_HAIR_HUMAN_01\",\"headPresetId\":\"CHR_HEAD_HUMAN_01\"},\"id\":\"a:Warrior\",\"classId\":\"Warrior\",\"appearanceEnabled\":false,\"name\":\"Rowan\",\"xp\":451,\"baseStats\":{\"Defense\":4,\"Health\":30,\"Attack\":6},\"level\":10,\"appearanceRevision\":0,\"rank\":\"F\"}},\"party\":{\"adventurerIds\":{\"1\":\"a:Warrior\"}},\"hallLevel\":1,\"progression\":{\"tutorialStep\":\"complete\",\"recruitedClasses\":{\"Warrior\":true},\"campaign\":{\"choices\":[],\"version\":1,\"claimed\":0,\"objectives\":[]},\"welcomeSeen\":true,\"ruleset\":\"guildborne.progression.2\",\"novice\":{\"trialClass\":\"Warrior\",\"founderHero\":\"a:Warrior\",\"claimed\":6,\"branch\":\"rescue\",\"version\":1,\"objectives\":[]},\"tutorialCompleted\":true,\"everEquipped\":false},\"gold\":3,\"character\":{\"equipmentSlots\":{\"weapon\":\"novice:class:1\"},\"stats\":{\"Attack\":17,\"Defense\":4,\"Health\":57,\"WeaponBonus\":2},\"appearance\":{\"hairColorId\":\"HAIR_DARK_BROWN\",\"bodyPresetId\":\"HUMAN_STANDARD\",\"raceFeatures\":[],\"raceId\":\"HUMAN\",\"outfitSlots\":{\"INNER_TOP\":\"CLO_TUNIC_TRAVELER_01\",\"INNER_BOTTOM\":\"CLO_TROUSERS_TRAVELER_01\"},\"appearanceVersion\":1,\"hairAssetId\":\"ACC_HAIR_HUMAN_01\",\"skinPaletteId\":\"SKIN_HUMAN_03\",\"headPresetId\":\"CHR_HEAD_HUMAN_01\"},\"classId\":\"Warrior\",\"xp\":451,\"raceId\":\"Human\",\"definitionVersion\":1,\"classPathId\":\"warrior:1\",\"tier\":1,\"appearanceEnabled\":false,\"level\":10,\"appearanceRevision\":0,\"skillId\":\"power_strike\"}},\"humanParty\":{\"directory\":[],\"revision\":2,\"members\":[],\"available\":true,\"capacity\":6,\"incomingInvites\":[],\"localUserId\":\"11732987790\",\"outgoingInvites\":[]}}"
+        }
+      ],
+      "isError": false
+    }
+  },
+  "notes": [
+    "Earned Novice six chapters, class and Hall using native prompts/UI, Humanoid MoveTo and ordinary TrialInput combat driver; no profile/HP/objective/time edits.",
+    "First before-entry read happened while MoveTo was still settling; 2.4086 distance is not an exact snapshot comparison. Stationary rerun is zero.",
+    "Faulted scene attribute was deliberately injected then restored Completed; not a naturally occurring fault."
+  ]
+}

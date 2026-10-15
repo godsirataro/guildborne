@@ -1,6 +1,7 @@
 --!strict
 local Players = game:GetService("Players")
 local UserInputService = game:GetService("UserInputService")
+local CollectionService = game:GetService("CollectionService")
 local MenuRouter = require(script.Parent.MenuRouter)
 local Localization = require(game:GetService("ReplicatedStorage").Shared.Config.Localization)
 local Art = require(game:GetService("ReplicatedStorage").Shared.Config.Art)
@@ -162,7 +163,44 @@ return function(send: any)
 		if not customization then customization = require(script.Parent.CharacterCustomizationUI)(gui, send, function() panel.Visible = true end) end
 		customization.SetBusy(busy); customization.Open(snapshot, id)
 	end
-	local drawExpansion=require(script.Parent.ExpansionView)({scroll=scroll,T=T,card=card,text=text,button=button,act=act,render=function(reset: boolean?) UI.Render(reset) end,
+	-- Presentation only. Every craft rechecks the registered station and owned forge on the server.
+	local function craftProblem():string?
+		local character=player.Character
+		local root=character and character:FindFirstChild("HumanoidRootPart")
+		local humanoid=character and character:FindFirstChildOfClass("Humanoid")
+		if not character or not root or not root:IsA("BasePart") or not humanoid then return "ActorNotReady" end
+		local combatHealth=character:GetAttribute("CombatHealth")
+		if not (humanoid.Health>0) then return "Downed" end
+		if combatHealth~=nil and (typeof(combatHealth)~="number" or not (combatHealth>0 and combatHealth<math.huge)) then return "Downed" end
+		local world=workspace:FindFirstChild("GuildborneWorld")
+		if not world then return "ActorNotReady" end
+		local owned:Instance?=nil
+		for _,candidate in ipairs(world:GetChildren())do
+			if candidate.Name=="PersonalGuild" and candidate:GetAttribute("OwnerUserId")==player.UserId then owned=candidate;break end
+		end
+		-- A remote island can stream out while its owner's city forge stays visible.
+		if owned and owned:GetAttribute("InCombat")==true then return "ReturnToGuild" end
+		local origin=owned and owned:GetAttribute("PlotOrigin")
+		if player:GetAttribute("CurrentZone")=="Guild" and typeof(origin)=="Vector3" then
+			local distance=(root.Position-origin).Magnitude
+			if distance==distance and distance<=165 then return nil end
+		end
+		local city=world:FindFirstChild("City")
+		if city then
+			for _,station in ipairs(CollectionService:GetTagged("GuildborneCityCraftingStation"))do
+				if station:IsA("BasePart") and station:IsDescendantOf(city) and station:GetAttribute("CityService")=="Crafting" then
+					local distance=(root.Position-station.Position).Magnitude
+					if distance==distance and distance<=14 then
+						if typeof(combatHealth)~="number" or not (combatHealth>0 and combatHealth<math.huge) then return "Downed" end
+						return nil
+					end
+				end
+			end
+		end
+		if not owned then return "ActorNotReady" end
+		return "Visit your guild workshop or the city forge to craft."
+	end
+	local drawExpansion=require(script.Parent.ExpansionView)({scroll=scroll,T=T,card=card,text=text,button=button,act=act,craftProblem=craftProblem,render=function(reset: boolean?) UI.Render(reset) end,
 		navigate=function(name: string) tab=name;UI.Render(true) end,explore=function() panel.Visible=false end,
 		build=function(data: any,kind: string,id: string?) builder.open(data,kind,id);panel.Visible=false end})
 	local drawSettlement=require(script.Parent.SettlementView)({scroll=scroll,T=T,card=card,text=text,button=button,act=act,
@@ -178,6 +216,7 @@ return function(send: any)
 	local drawNovice=require(script.Parent.NoviceJourneyView)({scroll=scroll,T=T,card=card,text=text,button=button,act=act,render=function()UI.Render()end})
 	local drawCampaign=require(script.Parent.CampaignView)({scroll=scroll,T=T,card=card,text=text,button=button,act=act,render=function()UI.Render()end})
 	local drawLaunchRewards=require(script.Parent.LaunchRewardsView)({scroll=scroll,T=T,card=card,text=text,button=button,act=act})
+	local drawHumanParty=require(script.Parent.HumanPartyView)({scroll=scroll,T=T,card=card,text=text,button=button,act=act,render=function()UI.Render()end,navigate=function(name:string)tab=name;UI.Render(true)end})
 	local function guildHall(data:any)
 		local frame = card(scroll, T("Personal Guild · Hall Lv{level}", { level = data.hallLevel }))
 		button(frame, if language == "en" then "ภาษาไทย (TH)" else "English (EN)", not busy, function()
@@ -213,10 +252,13 @@ return function(send: any)
 		text(frame, snapshot.mode, 15, colors.Muted)
 	end
 	local function guild(data: any)
-		if data.progression.novice and data.progression.novice.claimed<6 then
-			drawNovice(data,snapshot.catalog,busy)
-			return
+		local activeNovice=data.progression.novice and data.progression.novice.claimed<6
+		if activeNovice then drawNovice(data,snapshot.catalog,busy) end
+		if snapshot.humanParty and snapshot.humanParty.available then
+			local social=card(scroll,"Play with other players")
+			button(social,"Human Party",not busy,function()tab="HumanParty";UI.Render(true)end).Name="OpenHumanParty"
 		end
+		if activeNovice then return end
 		if snapshot.catalog.CampaignChapter then drawCampaign(data,snapshot.catalog,busy) end
 		local priorityHall=snapshot.catalog.CampaignChapter~=nil and data.progression.campaign and (data.progression.campaign.hallPermit or 0)>data.hallLevel
 		if priorityHall then guildHall(data) end
@@ -266,7 +308,8 @@ return function(send: any)
 	end
 	local function party(data: any)
 		local gear=require(game.ReplicatedStorage.Shared.Data.Equipment)(snapshot.catalog)
-		local management = card(scroll, "One expedition party")
+		local management = card(scroll, "Your NPC hero team")
+		if snapshot.humanParty and snapshot.humanParty.available then button(management,"Open Human Party",not busy,function()tab="HumanParty";UI.Render(true)end).Name="HeroesToHumanParty" end
 		text(management, "Recruit at the tavern. Selected heroes fight alongside you in the Goblin Camp.", 16, colors.Muted)
 		text(management, "Select up to five adventurers, then save. Your saved team follows you while exploring.", 16)
 		local members = {}
@@ -347,10 +390,15 @@ return function(send: any)
 	local function inventory(data: any) drawInventory(data,snapshot.catalog,busy) end
 
 	local dispatchRefresh=0
+	local craftingRefresh=0;local lastCraftProblem:string?=nil
 	function UI.Tick()
 		if customization then customization.Tick() end
 		worldNotice.Visible=os.clock()<worldNoticeUntil and not MenuRouter.isBlocking() and not titleView.isOpen()
 		if (tab=="Dispatch" or tab=="Tavern") and snapshot and snapshot.data and not busy and panel.Visible and os.clock()-dispatchRefresh>5 then dispatchRefresh=os.clock();UI.Render() end
+		if (tab=="Crafting" or tab=="Base") and snapshot and snapshot.data and not busy and panel.Visible and os.clock()-craftingRefresh>=.25 then
+			craftingRefresh=os.clock();local problem=craftProblem()
+			if problem~=lastCraftProblem then UI.Render() end
+		end
 		if countdown and snapshot and snapshot.data and snapshot.data.quests.active then
 			local left = math.max(0, math.ceil(snapshot.data.quests.active.completeAt - (snapshot.serverTime + os.clock() - receivedAt)))
 			countdown.Text = if left > 0 then T("Returning in {seconds} seconds", { seconds = left }) else T("Expedition complete. Your rewards are ready.")
@@ -367,13 +415,14 @@ return function(send: any)
 	local retainScroll=require(script.Parent.ScrollRetention)(scroll)
 	function UI.Render(resetScroll: boolean?, focusName:string?)
 		retainScroll(resetScroll,focusName)
+		if tab=="Crafting" or tab=="Base" then lastCraftProblem=craftProblem() end
 		countdown = nil; activeButton = nil
 		if resetScroll then scroll.CanvasPosition = Vector2.zero end
 		for _, child in ipairs(scroll:GetChildren()) do if child:IsA("GuiObject") then child:Destroy() end end
 		for name, b in pairs(tabButtons) do
 			b.BackgroundColor3 = if name == tab then colors.Accent else colors.Card
 			b.TextColor3 = if name == tab then colors.Background else colors.Muted
-			b.Text = T(name)
+			b.Text = T(if name=="Party"then "NPC heroes"else name)
 		end
 		local data = snapshot and snapshot.data
 		tracked=ProjectTracker(data,snapshot and snapshot.catalog,pinnedQuest)
@@ -388,7 +437,8 @@ return function(send: any)
 		toggle.Text = T(if panel.Visible then "Explore" else "Guild menu")
 		gold.Text = if data then T("{gold} Gold · Hall Lv{level}", { gold = data.gold, level = data.hallLevel }) else T("Guildborne · Loading")
 		tutorial.Text = T(if tracked and (tracked.kind=="Novice"or tracked.kind=="Campaign"or tracked.kind=="CampaignComplete")then tracked.name elseif data then tutorialText[data.progression.tutorialStep] or "Choose your next guild task." else "Preparing your Personal Guild…")
-		if compactLayout then text(scroll, tutorial.Text, 14) end
+		local noviceGuidanceOnHud=tab=="Guild" and snapshot and snapshot.status=="Active" and data and data.progression.novice and data.progression.novice.claimed<6 and tracked and tracked.kind=="Novice"
+		if compactLayout and not noviceGuidanceOnHud then text(scroll, tutorial.Text, 14) end
 		local saveLabel = if busy then "Saving…" elseif snapshot and snapshot.status == "Active" then (if string.find(snapshot.mode, "memory") then "Session only" else "Saved") else (snapshot and snapshot.status or "Loading")
 		status.Text = T(saveLabel) .. " · " .. T(notice)
 		if not snapshot or not data then
@@ -407,12 +457,17 @@ return function(send: any)
 			text(frame, snapshot.problem or snapshot.status, 16, colors.Muted)
 			button(frame, "Retry save / recovery", snapshot.status == "Degraded" and not busy, function() act("RetrySave") end).Name="RetrySave"
 			if snapshot.status == "LeaseLost" then text(frame, "Rejoin to reload the authoritative profile.", 16) end
+			if (snapshot.status=="Saving" or snapshot.status=="Degraded") and snapshot.humanParty and snapshot.humanParty.available then
+				drawHumanParty(snapshot,busy)
+			end
 			return
 		end
 		if (tab=="Guild" or tab=="LaunchRewards") and data.launchRewards then
-			button(scroll,if tab=="LaunchRewards" then T("Guild") else (if language=="th" then "รางวัลรายวันและซีซัน" else "Daily and season rewards"),not busy,function()
+			local rewardsNavigation=button(scroll,if tab=="LaunchRewards" then T("Guild") else (if language=="th" then "รางวัลรายวันและซีซัน" else "Daily and season rewards"),not busy,function()
 				tab=if tab=="LaunchRewards" then "Guild" else "LaunchRewards";UI.Render(true)
-			end).Name="LaunchRewardsNavigation"
+			end)
+			rewardsNavigation.Name="LaunchRewardsNavigation"
+			rewardsNavigation.LayoutOrder=if tab=="Guild" then 100 else 0
 		end
 		if tab == "Dialogue" and friendlyNpc and friendlyNpcs[friendlyNpc] then
 			local entry=friendlyNpcs[friendlyNpc]
@@ -450,6 +505,7 @@ return function(send: any)
 			end
 			button(frame,if language=="th" then "ไว้คุยกันใหม่" else "See you soon",true,function()panel.Visible=false end).Name="CloseDialogue"
 		elseif tab=="LaunchRewards" then drawLaunchRewards(snapshot,busy)
+		elseif tab=="HumanParty" then drawHumanParty(snapshot,busy)
 		elseif tab=="Islands" then drawIslands(snapshot.islands or {},busy,snapshot.islandVisitors or {})
 		elseif tab=="Themes" then drawThemes(data,busy)
 		elseif tab == "Land" then require(script.Parent.GuildLandView)({scroll=scroll,T=T,card=card,text=text,button=button,act=act,navigate=function(name: string)tab=name;UI.Render(true)end},data,snapshot.catalog,busy)
@@ -469,8 +525,12 @@ return function(send: any)
 		UI.Tick()
 	end
 	function UI.Update(view: any, message: string?, responseToAction: boolean?)
+		local oldHumanParty=snapshot and snapshot.humanParty
+		local newHumanParty=view.humanParty
 		local changed = not snapshot or snapshot.revision ~= view.revision or snapshot.status ~= view.status
 			or snapshot.problem ~= view.problem or snapshot.mode ~= view.mode or message ~= nil or view.navigate ~= nil
+			or (oldHumanParty and oldHumanParty.revision)~=(newHumanParty and newHumanParty.revision)
+			or (oldHumanParty and oldHumanParty.available)~=(newHumanParty and newHumanParty.available)
   local oldCampaign=snapshot and snapshot.data and snapshot.data.progression and snapshot.data.progression.campaign
   local newCampaign=view.data and view.data.progression and view.data.progression.campaign
   if not message and noticeCode and string.sub(noticeCode,1,17)=="CampaignCompanion" and oldCampaign and newCampaign then
@@ -499,7 +559,7 @@ return function(send: any)
 			local state=require(game:GetService("ReplicatedStorage").Shared.Data.QuestNpcState)(view.data,view.catalog,npc)
 			journalFocus=state and state.id;navigateQuest=journalFocus;tab="Journal";panel.Visible=true;scroll.CanvasPosition=Vector2.zero
 		end
-		if view.navigate and (tabButtons[view.navigate] or view.navigate=="Islands" or view.navigate=="Base" or view.navigate=="Skills" or view.navigate=="Tower" or view.navigate=="Tavern" or view.navigate=="Journal" or view.navigate=="Dispatch") then tab = view.navigate; panel.Visible = true; scroll.CanvasPosition = Vector2.zero end
+		if view.navigate and (tabButtons[view.navigate] or (view.navigate=="HumanParty" and view.humanParty and view.humanParty.available) or view.navigate=="Islands" or view.navigate=="Base" or view.navigate=="Crafting" or view.navigate=="Skills" or view.navigate=="Tower" or view.navigate=="Tavern" or view.navigate=="Journal" or view.navigate=="Dispatch") then tab = view.navigate; panel.Visible = true; scroll.CanvasPosition = Vector2.zero end
 		if view.data and not partyDirty then
 			table.clear(selected)
 			for _, id in ipairs(view.data.party.adventurerIds) do selected[id] = true end

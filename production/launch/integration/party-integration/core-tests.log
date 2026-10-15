@@ -1,0 +1,10 @@
+PASS human party six-owner cap retains five companions per owner and rejects seventh
+PASS final slot competing accepts are fenced then capacity checked
+PASS request replay cannot recreate an invite or alter another incarnation
+PASS bounded replay eviction still rejects old revisions and ineligible recovery remains usable
+PASS leadership permissions readiness resets and snapshot isolation
+PASS invite ownership expiry and bounded inbox reject abuse
+PASS disconnect transfers leader retains slot during grace and fences old session
+PASS canonical Studio user ids supported and malformed action arguments rejected
+PASS runtime fences live players disabled mode profile state and stale removal
+9 human party checks passed (local synthetic evidence).

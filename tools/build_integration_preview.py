@@ -11,7 +11,9 @@ import argparse
 ROOT = Path(__file__).resolve().parents[1]
 
 
-def build(launch=False):
+def build(launch=False, shared_combat=False):
+    if shared_combat and not launch:
+        raise ValueError("Shared combat fixture requires --launch")
     runtime = ROOT / "src/server/Config/Runtime.luau"
     before = hashlib.sha256(runtime.read_bytes()).hexdigest()
     project = json.loads((ROOT / "default.project.json").read_text())
@@ -26,6 +28,8 @@ def build(launch=False):
             assert base_runtime.count(flag) == 1, f"Unexpected offline runtime: {flag}"
         assert "LaunchCandidate" not in base_runtime
         candidate_runtime = base_runtime.replace('NoviceJourney=false', 'LaunchCandidate=true,\n    NoviceJourney=true').replace('IronveilJourney=false','IronveilJourney=true')
+        if shared_combat:
+            candidate_runtime = candidate_runtime.replace('LaunchCandidate=true,', 'LaunchCandidate=true,\n    SharedCombatCandidate=true,')
         runtime_path = out / "LaunchRuntime.luau"
         runtime_path.write_text(candidate_runtime, encoding="utf-8")
     project.pop("servePlaceIds", None)
@@ -90,6 +94,7 @@ def build(launch=False):
                "sources": {str(p.relative_to(ROOT)): hashlib.sha256(p.read_bytes()).hexdigest()
                            for p in sorted((ROOT / "src").rglob("*.luau"))}}
     receipt["variant"] = variant
+    receipt["sharedCombatCandidate"] = shared_combat
     receipt["runtimeSha256"] = hashlib.sha256(runtime_path.read_bytes()).hexdigest()
     (out / f"{variant}-preview-build.json").write_text(json.dumps(receipt, indent=2) + "\n")
     # Read-only localhost transfer data for the already-open local preview. The
@@ -124,4 +129,6 @@ def build(launch=False):
 if __name__ == "__main__":
     parser = argparse.ArgumentParser()
     parser.add_argument("--launch", action="store_true")
-    build(parser.parse_args().launch)
+    parser.add_argument("--shared-combat", action="store_true", help="Opt-in local Memory combat/reward lab; no public route or cloud persistence")
+    args = parser.parse_args()
+    build(args.launch, args.shared_combat)

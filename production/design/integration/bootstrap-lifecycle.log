@@ -1,0 +1,2 @@
+PASS bootstrap actual-source lifecycle: disconnected load, replacement load, stale observation, current observation
+PASS actual combat observer: captured identity, rejoin rejection, capacity, absent player

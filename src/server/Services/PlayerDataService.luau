@@ -75,6 +75,11 @@ return function(deps: any)
 			if not owned(current, session) then reason = "LeaseLost"; return nil end
 			local now = deps.Now()
 			if current.session.leaseExpiresAt <= now then reason = "LeaseLost"; return nil end
+			if pending.command.action == "CommitSharedPvE" and deps.SharedPvEClaims then
+				local status = deps.SharedPvEClaims.check(current,pending.command.args)
+				if status == "AlreadyCommitted" then return current end
+				if status then reason=status;return nil end
+			end
 			for _, operation in ipairs(current.operations.recentResults) do
 				if operation.id == pending.id then
 					if not util.equal(operation.command, pending.command) then reason = "RequestConflict"; return nil end
@@ -130,7 +135,7 @@ return function(deps: any)
 		return "OK", result
 	end
 
-	local function execute(userId: number, command: any, serverApply: any?): (string, any)
+	local function execute(userId: number, command: any, serverApply: any?, durableCheck: any?): (string, any)
 		if not serverApply then
 			local valid, code = deps.Protocol.validate(command)
 			if not valid then return code, nil end
@@ -141,6 +146,10 @@ return function(deps: any)
 		if session.closing then return "Closing", nil end
 		if session.state ~= "Active" then return session.problem or session.state, nil end
 		if deps.Now() >= session.record.session.leaseExpiresAt - config.LeaseSafetySeconds then return "LeaseExpiring", nil end
+		if durableCheck then
+			local status=durableCheck(session.record,command.args)
+			if status then return status,nil end
+		end
 		local operationId = tostring(session.epoch) .. ":" .. command.requestId
 		for _, operation in ipairs(session.record.operations.recentResults) do
 			if operation.id == operationId then
@@ -170,6 +179,13 @@ return function(deps: any)
 		if not deps.NoviceStory or type(command)~="table" or (command.action~="NoviceObjective" and command.action~="NoviceTrial") then return "InvalidAction",nil end
 		if type(command.requestId)~="string" or #command.requestId<1 or #command.requestId>64 or type(command.args)~="table" then return "InvalidRequest",nil end
 		return execute(userId,command,function(record:any)return deps.NoviceStory.receipt(record,command)end)
+	end
+	-- Private trusted repository recipient; never accepted by public Protocol.
+	function Service.CommitSharedPvE(userId:number,command:any):(string,any)
+		local claims=deps.SharedPvEClaims
+		if not claims or type(command)~="table" or command.action~="CommitSharedPvE" then return "InvalidAction",nil end
+		if command.version~=1 or type(command.requestId)~="string" or #command.requestId<1 or #command.requestId>64 or not util.integer(command.revision,0,1000000000) or not claims.validateClaim(command.args,userId) then return "InvalidSharedClaim",nil end
+		return execute(userId,command,function(record:any)return claims.apply(record,command)end,claims.check)
 	end
 	function Service.CommitHeroMentor(userId:number,command:any):(string,any)
 		if not deps.HeroMentor or type(command)~="table" or command.action~="HeroMentorProof" or type(command.requestId)~="string" or #command.requestId>64 or type(command.args)~="table" then return "InvalidAction",nil end

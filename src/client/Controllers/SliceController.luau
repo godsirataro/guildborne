@@ -132,6 +132,15 @@ return function(makeUI: any)
 	messages.NoPointsToReset="There are no spent SP or AP to reset."
 	messages.FinishYourExpedition="Finish your expedition before changing points."
 	messages.UseBuildPointReset="Use the free SP and AP reset in Status points."
+	messages.HumanPartyStale="Party membership changed. Review the updated list and try again."
+	messages.HumanPartyFull="This party already has 6 players. Join another party or continue solo."
+	messages.HumanPartyLeaderRequired="Only the party leader can do that. Ask your leader to help."
+	messages.HumanPartyAlreadyMember="One of these players is already in a party. Review the party list."
+	messages.HumanPartyInvitePending="An invitation is already waiting for this player. Wait for their response."
+	messages.HumanPartyInviteLimit="Too many invitations are waiting. Wait for a response or let an invitation expire."
+	messages.HumanPartyInviteExpired="This invitation is no longer available. Ask for a new invitation."
+	messages.HumanPartyNotMember="That party membership is no longer current. Review the updated member list."
+	messages.HumanPartyUnavailable="That player or party action is temporarily unavailable. Wait a moment and try again."
 	local function send(action: string, args: any): string?
 		if pending and action ~= "GetState" then return end
 		local requestId = HttpService:GenerateGUID(false)

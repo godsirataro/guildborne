@@ -1,0 +1,2 @@
+PASS HumanParty UI fixture: ready revision, plain identity, confirmation, stale confirmation reset, Thai labels, invitation payload and expiry
+PASS recovery fixture: Saving/Degraded allow Leave Decline Disband Kick only; controller busy blocks all mutations

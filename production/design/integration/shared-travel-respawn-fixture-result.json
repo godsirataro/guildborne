@@ -1,0 +1,22 @@
+{
+  "candidate": "8deff026c6b574595e84ef89c1453cbe0115e3dc4196ff64604034ee781b0919",
+  "sync": {
+    "content": [
+      {
+        "type": "text",
+        "text": "{\"candidateSha256\":\"8deff026c6b574595e84ef89c1453cbe0115e3dc4196ff64604034ee781b0919\",\"changed\":1,\"persistence\":\"Memory\",\"sourcesChecked\":377}"
+      }
+    ],
+    "isError": false
+  },
+  "result": {
+    "content": [
+      {
+        "type": "text",
+        "text": "{\"scope\":\"Synthetic owner and anchored rigs; real TravelService/Heartbeat/raycast, explicitly ordered engine-pivot simulation; no actual Player LoadCharacter\",\"cleanup\":true,\"first\":{\"error\":0,\"early\":\"9000, 4, 9000\",\"heldBeforeCallback\":true,\"isLocal\":false},\"second\":{\"heldDuringSaving\":true,\"error\":0,\"isLocal\":false}}"
+      }
+    ],
+    "isError": false
+  },
+  "limitation": "Synthetic owner/anchored model replacement with actual Heartbeat and raycasts; not actual Player LoadCharacter or earned route. First fixture attempt omitted session.record and was correctly refused; stopped Play before corrected rerun."
+}

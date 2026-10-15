@@ -66,6 +66,28 @@ Path rule server-authority: Reuse actual services; server owns combat/inventory/
 
 Path rule production-evidence: Reconcile latest goals/registries/scopes. One shared ledger, claim before writes, immediate lease check and preserved raw receipts. Different reviewer validates evidence; local checks cannot replace hardware/cloud/human gates.
 
+### hero-tactics-slice: Hero Tactics Slice
+
+Runtime Balanced/Defensive, Hold and safe Regroup formation plus native feedback; existing combat authority. No profile migration or reward changes.
+
+Environment: local; skill: guildborne-combat-ai
+
+Write scopes: src/server/Systems/HeroTactics.luau, src/server/Services/CombatService.luau, src/server/Services/HeroService.luau, src/server/Systems/PlayerCombatInput.luau, src/client/Controllers/PlayerCombatController.luau, src/shared/Config/CombatBindings.luau, src/shared/Config/Localization.luau, tests/hero_tactics.luau, tests/run_hero_tactics.luau, production/design/evidence/tactics.md
+
+Required checks: source-contract, regression, independent-review
+
+Dependencies: none
+
+Path rule server-authority: Reuse actual services; server owns combat/inventory/currency/allocation/rewards/guild/build/escrow. Preserve fencing/receipts/saves/disabled flags. No production cloud writes or commerce activation.
+
+Path rule native-client: Native Roblox UI/presentation only. Send intent, never damage/value/rewards. Coordinate actual UI/Controller modules, EN/TH states and cleanup.
+
+Path rule shared-contracts: Shared definitions are client-safe. Preserve IDs/earned ancestry and progression separately from cosmetic IDs. Reconcile Novice 10/35/70 and Hall contracts.
+
+Path rule tooling: Use reviewed bounded local commands/tests. Studio/Forge planners do not launch models; paid/model subprocess, MCP mutation and installation require actual authorization/capability.
+
+Path rule production-evidence: Reconcile latest goals/registries/scopes. One shared ledger, claim before writes, immediate lease check and preserved raw receipts. Different reviewer validates evidence; local checks cannot replace hardware/cloud/human gates.
+
 ### monsters: Monster and boss encounters
 
 Audit current content before filling approved gaps. Deliver distinct behavior with animation/VFX/audio hooks and lifecycle/reward tests; counts are targets, not permission for shallow copies.
@@ -79,6 +101,78 @@ Required checks: nine-archetypes, three-bosses, telegraphs, reward-once
 Dependencies: combat, city-zones
 
 Path rule server-authority: Reuse actual services; server owns combat/inventory/currency/allocation/rewards/guild/build/escrow. Preserve fencing/receipts/saves/disabled flags. No production cloud writes or commerce activation.
+
+Path rule production-evidence: Reconcile latest goals/registries/scopes. One shared ledger, claim before writes, immediate lease check and preserved raw receipts. Different reviewer validates evidence; local checks cannot replace hardware/cloud/human gates.
+
+### shared-combat-context: Shared Combat Context and Fenced Phases
+
+Optional private shared combat bundle with current membership and geometry guards, opaque consume-once phases and default combat compatibility. No HeroService activation, payouts or automatic shared respawn.
+
+Environment: local; skill: guildborne-combat-ai
+
+Write scopes: src/server/Services/CombatService.luau, src/server/Systems/SharedCombatPhases.luau, tests/shared_combat_phases.luau, tests/run_shared_combat_phases.luau, production/design/evidence/shared-combat-context.md
+
+Required checks: source-contract, regression, independent-review
+
+Dependencies: none
+
+Path rule server-authority: Reuse actual services; server owns combat/inventory/currency/allocation/rewards/guild/build/escrow. Preserve fencing/receipts/saves/disabled flags. No production cloud writes or commerce activation.
+
+Path rule tooling: Use reviewed bounded local commands/tests. Studio/Forge planners do not launch models; paid/model subprocess, MCP mutation and installation require actual authorization/capability.
+
+Path rule production-evidence: Reconcile latest goals/registries/scopes. One shared ledger, claim before writes, immediate lease check and preserved raw receipts. Different reviewer validates evidence; local checks cannot replace hardware/cloud/human gates.
+
+### shared-combat-coordinator: Shared Scene Coordinator and Owner Scheduling
+
+Optional injected shared basic scout scene with exact session ownership, fresh actor incarnations preserving state, two-pass owner scheduling and cleanup. Default world unchanged; no payouts/cloud/shared travel activation. Root owns explicit candidate-only injection.
+
+Environment: local; skill: guildborne-combat-ai
+
+Write scopes: src/server/Services/SharedCombatCoordinator.luau, src/server/Services/HeroService.luau, tests/shared_combat_coordinator.luau, tests/run_shared_combat_coordinator.luau, production/design/evidence/shared-combat-coordinator.md
+
+Required checks: source-contract, regression, independent-review
+
+Dependencies: none
+
+Path rule server-authority: Reuse actual services; server owns combat/inventory/currency/allocation/rewards/guild/build/escrow. Preserve fencing/receipts/saves/disabled flags. No production cloud writes or commerce activation.
+
+Path rule tooling: Use reviewed bounded local commands/tests. Studio/Forge planners do not launch models; paid/model subprocess, MCP mutation and installation require actual authorization/capability.
+
+Path rule production-evidence: Reconcile latest goals/registries/scopes. One shared ledger, claim before writes, immediate lease check and preserved raw receipts. Different reviewer validates evidence; local checks cannot replace hardware/cloud/human gates.
+
+### shared-pve-identity: Shared PvE Identity
+
+Explicit encounter membership and composite actor/threat identity, optional targeting policy preserving legacy defaults. No shared runtime activation, profile grants or party command widening.
+
+Environment: local; skill: guildborne-combat-ai
+
+Write scopes: src/server/Systems/SharedEncounterIdentity.luau, src/server/Systems/CombatTargeting.luau, src/server/Systems/CombatDamage.luau, tests/shared_encounter_identity.luau, tests/run_shared_encounter_identity.luau, production/design/evidence/shared-identity.md
+
+Required checks: source-contract, regression, independent-review
+
+Dependencies: none
+
+Path rule server-authority: Reuse actual services; server owns combat/inventory/currency/allocation/rewards/guild/build/escrow. Preserve fencing/receipts/saves/disabled flags. No production cloud writes or commerce activation.
+
+Path rule tooling: Use reviewed bounded local commands/tests. Studio/Forge planners do not launch models; paid/model subprocess, MCP mutation and installation require actual authorization/capability.
+
+Path rule production-evidence: Reconcile latest goals/registries/scopes. One shared ledger, claim before writes, immediate lease check and preserved raw receipts. Different reviewer validates evidence; local checks cannot replace hardware/cloud/human gates.
+
+### shared-pve-runtime: Shared Encounter Scheduler
+
+Bounded explicit shared registry runtime with once-per-tick gather/enemy/owner ordering and session invalidation; injected private harness only, no live zone or payout activation.
+
+Environment: local; skill: guildborne-combat-ai
+
+Write scopes: src/server/Services/SharedEncounterRuntime.luau, tests/shared_encounter_runtime.luau, tests/run_shared_encounter_runtime.luau, production/design/evidence/shared-runtime.md
+
+Required checks: source-contract, regression, independent-review
+
+Dependencies: none
+
+Path rule server-authority: Reuse actual services; server owns combat/inventory/currency/allocation/rewards/guild/build/escrow. Preserve fencing/receipts/saves/disabled flags. No production cloud writes or commerce activation.
+
+Path rule tooling: Use reviewed bounded local commands/tests. Studio/Forge planners do not launch models; paid/model subprocess, MCP mutation and installation require actual authorization/capability.
 
 Path rule production-evidence: Reconcile latest goals/registries/scopes. One shared ledger, claim before writes, immediate lease check and preserved raw receipts. Different reviewer validates evidence; local checks cannot replace hardware/cloud/human gates.
 

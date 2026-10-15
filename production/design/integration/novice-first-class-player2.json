@@ -1,0 +1,9 @@
+{
+  "content": [
+    {
+      "type": "text",
+      "text": "{\"running\":false,\"attributes\":{\"PlayerHealth\":57,\"BasicLabel\":\"Basic Attack\",\"TrialStatus\":\"Won\",\"ActionAt\":1791977380.904794,\"DisplayHint\":\"Saving trial result...\",\"OwnerUserId\":-2,\"ReturnLabel\":\"Leave trial\",\"ActionEffect\":\"Basic\",\"DisplayGoals\":\"Basic hits 3/3 · Sentinel defeated 1/1 · Warnings dodged 1/1\",\"NextBasicAt\":1791977382.004685,\"ActionTargetPosition\":\"-4500, 28, 850\",\"EnemyHealth\":0,\"AbilityLabel\":\"Power Strike\",\"NextAbilityAt\":1791977383.720784,\"NoviceTrialArena\":true,\"DisplayTitle\":\"Warrior · Trial complete\",\"ActionOriginPosition\":\"-4500.00048828125, 27.998046875, 846.5330200195312\",\"DisplayHealth\":\"HP 57/57 · Sentinel 0/700\",\"ClassId\":\"Warrior\"},\"started\":1155.545815200021,\"status\":\"Won\",\"events\":{\"1\":{\"at\":1157.67752940004,\"action\":\"dodge\",\"token\":1203.636653399968},\"3\":{\"at\":1167.9455083000358,\"action\":\"dodge\",\"token\":1213.903655299975},\"2\":{\"at\":1162.7619214000297,\"action\":\"dodge\",\"token\":1208.6861088000006},\"5\":{\"at\":1178.110816600034,\"action\":\"dodge\",\"token\":1224.0348736000015},\"4\":{\"at\":1173.01137870003,\"action\":\"dodge\",\"token\":1218.969298299984},\"7\":{\"at\":1188.2940365000396,\"action\":\"dodge\",\"token\":1234.2350730999606},\"6\":{\"at\":1183.1935326000094,\"action\":\"dodge\",\"token\":1229.1017187999678}},\"finished\":1189.8825748999953}"
+    }
+  ],
+  "isError": false
+}

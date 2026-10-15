@@ -1,0 +1,9 @@
+{
+  "content": [
+    {
+      "type": "text",
+      "text": "{\"observedEvents\":4,\"duplicateAttackBlocked\":true,\"foreignActorRejected\":true,\"oncePerStamp\":true,\"crossOwnerHealing\":34,\"owners\":2,\"damage\":12,\"ok\":true,\"boundsAndCurrentFence\":true,\"detachRetainsOtherOwner\":true,\"lineOfSightBlocked\":true,\"effects\":{\"1\":{\"value\":12,\"event\":\"damage_dealt\",\"targetOwner\":0,\"sourceOwner\":-91901},\"4\":{\"value\":\"heal\",\"event\":\"hero_ability_used\",\"targetOwner\":-91902,\"sourceOwner\":-91901},\"3\":{\"value\":34,\"event\":\"healing_done\",\"targetOwner\":-91902,\"sourceOwner\":-91901},\"2\":{\"value\":1,\"event\":\"hero_basic_attack\",\"targetOwner\":0,\"sourceOwner\":-91901}},\"synthetic\":true,\"cleanup\":true,\"companionsPerOwner\":5,\"neutralHeroRecovery\":0,\"preserveHealthCooldowns\":true,\"profileWrites\":0}"
+    }
+  ],
+  "isError": false
+}

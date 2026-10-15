@@ -9,12 +9,18 @@ local City = require(ReplicatedStorage.Shared.Config.City)
 local Art = require(ReplicatedStorage.Shared.Config.Art)
 local Rig = require(script.Parent.HeroRig)
 local templateChoice=require(script.Parent.Parent.Systems.HeroTemplateChoice)
+local Tactics=require(script.Parent.Parent.Systems.HeroTactics)
 local Content = require(script.Parent.Parent.Config.Content)
 local Expansion=require(ReplicatedStorage.Shared.Data.Expansion)
 local Gear=require(ReplicatedStorage.Shared.Data.Equipment)(Content,Expansion,require(ReplicatedStorage.Shared.Data.StatusPoints))
 local present = require(script.Parent.Parent.Systems.HeroPresentation)(Content,Gear)
 local V = Vector3.new
 local homes = { V(-30,3,-9), V(-23,3,-9), V(-16,3,-9), V(-27,3,-17), V(-19,3,-17) }
+local function invalidatePath(h: any)
+	-- ComputeAsync may still be yielding. Only its completion releases computing;
+	-- advancing the generation prevents it from restoring an obsolete route.
+	h.generation+=1; h.path=nil; h.waypoint=nil
+end
 local function appearance(model:Model,actor:any?)
 	if not Content.AppearanceAvailable or not actor or actor.appearanceEnabled~=true then return end
 	local renderer=require(ReplicatedStorage.Shared.Presentation.ModularAppearance.Renderer)
@@ -23,8 +29,25 @@ local function appearance(model:Model,actor:any?)
 	model:SetAttribute("AppearanceProblem",if ok then nil else problem)
 end
 
-return function(templates: Folder, onOpen: (Player,string) -> (), reward: any,towerResult: any,regionalRewardFactory:any?)
-	local combat=require(script.Parent.CombatService)(templates,reward,towerResult,regionalRewardFactory)
+return function(templates: Folder, onOpen: (Player,string) -> (), reward: any,towerResult: any,regionalRewardFactory:any?,combatObserver:any?,sharedDeps:any?)
+	local combat=require(script.Parent.CombatService)(templates,reward,towerResult,regionalRewardFactory,combatObserver)
+	local shared=if sharedDeps then require(script.Parent.SharedCombatCoordinator)({
+		Registry=require(script.Parent.Parent.Systems.SharedEncounterIdentity)(),MakeRuntime=require(script.Parent.SharedEncounterRuntime),
+		Scene=sharedDeps.Scene,Session=sharedDeps.Session,ContainsPosition=sharedDeps.ContainsPosition,Observe=sharedDeps.Observe,Recover=sharedDeps.Recover,Status=sharedDeps.Status,MakeRewards=sharedDeps.MakeRewards,
+		MakeCombat=function(context:any)return require(script.Parent.CombatService)(templates,nil,nil,nil,combatObserver,context)end,
+		Enter=function(_player:any,s:any)
+			local saved={};for _,enemy in ipairs(s.campEnemies or {})do table.insert(saved,{model=enemy.model,parent=enemy.model.Parent});enemy.model.Parent=nil end
+			local regional=s.adventureRegion and s.adventures and s.adventures[s.adventureRegion]
+			if regional then regional.Suspend()end
+			s.sharedPersonal={camp=saved,regional=regional}
+		end,
+		Exit=function(_player:any,s:any)
+			local saved=s.sharedPersonal;s.sharedPersonal=nil
+			if not saved or not s.alive then return end
+			if saved.regional then saved.regional.Resume()end
+			for _,entry in ipairs(saved.camp)do entry.model.Parent=entry.parent end
+		end,
+	})else nil
 	for _, name in ipairs({"GuildborneHeroes","GuildborneCharacters"}) do
 		if not Physics:IsCollisionGroupRegistered(name) then Physics:RegisterCollisionGroup(name) end
 	end
@@ -33,8 +56,10 @@ return function(templates: Folder, onOpen: (Player,string) -> (), reward: any,to
 	Physics:CollisionGroupSetCollidable("GuildborneCharacters","GuildborneCharacters",false)
 	local away=Instance.new("Folder"); away.Name="GuildborneAwayHeroes"; away.Parent=ServerStorage
 	local sessions: { [Player]: any } = {}
+	local destroyed=false
 	local service = {}
 	function service.Add(player: Player, plot: Model, origin: Vector3)
+		if destroyed then return end
 		local folder=Instance.new("Folder"); folder.Name="Heroes"; folder.Parent=plot
 		local params=RaycastParams.new(); params.FilterType=Enum.RaycastFilterType.Include
 		params.FilterDescendantsInstances={workspace:FindFirstChild("GuildborneWorld") :: Instance}; params.RespectCanCollide=true;params.CollisionGroup="GuildborneHeroes"
@@ -42,7 +67,10 @@ return function(templates: Folder, onOpen: (Player,string) -> (), reward: any,to
 		combat.Add(sessions[player],player)
 	end
 	function service.Character(player: Player, character: Model)
+		if destroyed then return end
 		local s=sessions[player]; if not s then return end
+		if shared then shared.Detach(player,s)end
+		for _,h in pairs(s.heroes)do invalidatePath(h)end
 		if s.characterConnection then s.characterConnection:Disconnect() end
 		local function assign(p: Instance) if p:IsA("BasePart") then p.CollisionGroup="GuildborneCharacters" end end
 		for _,p in ipairs(character:GetDescendants()) do assign(p) end
@@ -75,18 +103,32 @@ return function(templates: Folder, onOpen: (Player,string) -> (), reward: any,to
 			lastPosition=root.Position,lastProgress=os.clock(),nextPath=0,generation=0,recoveries=0}
 	end
 	function service.Sync(player: Player, data: any, active: boolean)
+		if destroyed then return end
 		local s=sessions[player]; if not s then return end
 		if s.mentor then return end
+		local descriptions=present(data)
+		local described={};for _,desc in ipairs(descriptions)do described[desc.id]=true end
+		if shared and shared.Claimed(player,s)then
+			local change=data.expansion and data.expansion.tower.active~=nil
+			for _,desc in ipairs(descriptions)do local h=s.heroes[desc.id]
+				if (h and h.state=="Following")or desc.state=="Following"then
+					if not h or h.state~=desc.state or h.slot~=desc.slot or h.visible~=desc.visible then change=true end
+				end
+			end
+			for id,h in pairs(s.heroes)do if h.state=="Following"and not described[id]then change=true end end
+			if change then shared.Detach(player,s)end
+		end
+		if shared then for id,h in pairs(s.heroes)do if not described[id]then h.generation+=1;h.model:Destroy();s.heroes[id]=nil end end end
 		s.active=active;s.extra=Gear.extras(data,data.character);s.playerBuild=Gear.build(data,data.character);s.expansionData=data.expansion; s.characterData=data.character; s.playerLoadout=if data.character.classId then Gear.loadout(data,data.character) else nil
 		if player.Character then appearance(player.Character,data.character) end
-		combat.TowerSync(player,s,data.expansion and data.expansion.tower.active)
-		for _,desc in ipairs(present(data)) do
+		if not shared or not shared.Claimed(player,s)then combat.TowerSync(player,s,data.expansion and data.expansion.tower.active)end
+		for _,desc in ipairs(descriptions) do
 			local h=s.heroes[desc.id]
 			if not h then h=makeHero(player,s,desc); s.heroes[desc.id]=h end
 			h.followSpeedBonus=if desc.extra then desc.extra.Speed or 0 else 0
 			local changed=h.state~=desc.state or h.slot~=desc.slot or h.visible~=desc.visible
 			if changed then
-				h.generation+=1; h.path=nil; h.state=desc.state; h.slot=desc.slot;h.visible=desc.visible; h.lastProgress=os.clock()
+				invalidatePath(h); h.state=desc.state; h.slot=desc.slot;h.visible=desc.visible; h.lastProgress=os.clock()
 				h.root.Anchored=true; h.model.Parent=if desc.state=="On expedition" or desc.state=="Dead" or not desc.visible then away else s.folder
 				h.model:PivotTo(h.home)
 				if desc.state=="Following" then s.reset=true end
@@ -113,8 +155,9 @@ return function(templates: Folder, onOpen: (Player,string) -> (), reward: any,to
 		return if hit then hit.Position+V(0,3,0) else nil
 	end
 	local function recover(h: any, position: Vector3)
+		invalidatePath(h)
 		h.model:PivotTo(CFrame.new(position)); h.root.AssemblyLinearVelocity=Vector3.zero; h.root.AssemblyAngularVelocity=Vector3.zero
-		h.path=nil; h.lastProgress=os.clock(); h.recoveries+=1; h.model:SetAttribute("RecoveryCount",h.recoveries)
+		h.humanoid:MoveTo(position); h.lastPosition=position; h.lastProgress=os.clock(); h.recoveries+=1; h.model:SetAttribute("RecoveryCount",h.recoveries)
 	end
 	local function walk(s: any, h: any, goal: Vector3, now: number)
 		if h.root.Anchored then h.root.Anchored=false; h.root:SetNetworkOwner(nil) end
@@ -122,10 +165,10 @@ return function(templates: Folder, onOpen: (Player,string) -> (), reward: any,to
 		if (position-h.lastPosition).Magnitude>.6 then h.lastProgress=now; h.lastPosition=position end
 		local distance=(goal-position).Magnitude
 		if distance>45 or position.Y<s.origin.Y-8 or (distance>4 and now-h.lastProgress>7) then recover(h,goal); return end
-		if distance<1.8 then h.humanoid:MoveTo(position); h.path=nil; h.lastProgress=now; return end
+		if distance<1.8 then invalidatePath(h); h.humanoid:MoveTo(position); h.lastProgress=now; return end
 		h.humanoid.WalkSpeed=(if distance>12 then 21 else 17)+(h.followSpeedBonus or 0)
 		local obstruction=workspace:Raycast(position,goal-position,s.params)
-		if not obstruction then h.path=nil; h.humanoid:MoveTo(goal); return end
+		if not obstruction then invalidatePath(h); h.humanoid:MoveTo(goal); return end
 		if h.path then
 			local waypoint=h.path[h.waypoint]
 			if waypoint and (waypoint.Position-position).Magnitude<3.5 then h.waypoint+=1; waypoint=h.path[h.waypoint] end
@@ -147,19 +190,28 @@ return function(templates: Folder, onOpen: (Player,string) -> (), reward: any,to
 		end)
 	end
 	local elapsed=0
-	RunService.Heartbeat:Connect(function(dt)
+	local heartbeat=RunService.Heartbeat:Connect(function(dt)
+		if destroyed then return end
 		elapsed+=dt; if elapsed<.2 then return end; elapsed=0
-		local now=os.clock()
+		local now=os.clock();local frames={}
 		for player,s in pairs(sessions) do
-			if s.mentor then continue end
+			if s.mentor then if shared then shared.Detach(player,s)end;continue end
 			local character=player.Character; local root=character and character:FindFirstChild("HumanoidRootPart") :: BasePart?
 			local humanoid=character and character:FindFirstChildOfClass("Humanoid")
 			local inCity=root~=nil and City.contains(root.Position.X,root.Position.Z)
 			local inWorld=root~=nil and (inCity or City.region(root.Position.X,root.Position.Z)~=nil or (root.Position.Z>=-80 and root.Position.Z<118 and root.Position.X>=-70))
-			local valid=root~=nil and humanoid~=nil and humanoid.Health>0 and s.active==true and inWorld
+			local physical=root~=nil and humanoid~=nil and humanoid.Health>0
+			local valid=physical and s.active==true and inWorld
+			local claimed=false
+			if shared then
+				local sharedValid,status;claimed,sharedValid,status=shared.Prepare(player,s,root,physical,now,walk)
+				if claimed then valid=sharedValid end
+				s.plot:SetAttribute("SharedCombatStatus",if claimed then status else nil)
+			end
 
 			if valid and root then
 				if s.reset or (#s.history>0 and (s.history[1]-root.Position).Magnitude>35) then
+					for _,h in pairs(s.heroes)do invalidatePath(h)end
 					table.clear(s.history)
 					for i=0,30 do table.insert(s.history,root.Position+root.CFrame.LookVector*(-i)) end
 					s.reset=false
@@ -167,12 +219,17 @@ return function(templates: Folder, onOpen: (Player,string) -> (), reward: any,to
 				if #s.history==0 or (s.history[1]-root.Position).Magnitude>1 then table.insert(s.history,1,root.Position) end
 				while #s.history>80 do table.remove(s.history) end
 			end
-			combat.Step(player,s,root,valid,now,walk)
+			if not claimed then combat.Step(player,s,root,valid,now,walk)end
+			table.insert(frames,{s=s,root=root,valid=valid,inCity=inCity})
+		end
+		if shared then shared.Tick(now)end
+		for _,frame in ipairs(frames)do
+			local s,root,valid,inCity=frame.s,frame.root,frame.valid,frame.inCity
 			for _,h in pairs(s.heroes) do
 				if h.state=="Following" then
 					if h.combatMove then continue end
 					if not valid then
-						h.root.Anchored=true; h.model:PivotTo(h.home); h.path=nil; s.reset=true
+						invalidatePath(h); h.root.Anchored=true; h.model:PivotTo(h.home); s.reset=true
 					else
 						local remaining=4+(h.slot-1)*(if inCity then 2.5 else 3.5)
 						local target=s.history[#s.history]
@@ -180,6 +237,11 @@ return function(templates: Folder, onOpen: (Player,string) -> (), reward: any,to
 							local a,b=s.history[i-1],s.history[i]; local length=(b-a).Magnitude
 							if length>=remaining then target=a:Lerp(b,remaining/math.max(length,.001)); break end
 							remaining-=length
+						end
+						if root and h.combat and h.combat.order=="Regroup" then
+							local offset=Tactics.offset(h.combat.class,h.slot or 1)
+							local formation=floor(s,root.CFrame:PointToWorldSpace(V(offset.x,0,offset.z)))
+							if formation then target=formation end
 						end
 						local safe=target and floor(s,target)
 						if safe then walk(s,h,safe,now) end
@@ -189,18 +251,22 @@ return function(templates: Folder, onOpen: (Player,string) -> (), reward: any,to
 		end
 	end)
 	function service.Travel(player: Player)
+		if destroyed then return end
 		local s=sessions[player];local c=player.Character;if not s or not c then return end
+		if shared then shared.Detach(player,s)end
 		table.clear(s.history);s.reset=true
 		for _,h in pairs(s.heroes) do if h.state=="Following" then
-			h.generation+=1;h.path=nil;h.combatMove=false
+			invalidatePath(h);h.combatMove=false
 			local target=c:GetPivot().Position+V(((h.slot-1)%3-1)*3,0,4+math.floor((h.slot-1)/3)*3)
 			local safe=floor(s,target);if safe then recover(h,safe) end
-			if h.combat then h.combat.target=nil;h.combat.previousTarget=nil;h.combat.active=false;h.combat.order=nil;h.combat.focusTarget=nil end
+			if h.combat then h.combat.target=nil;h.combat.previousTarget=nil;h.combat.active=false;Tactics.clear(h.combat) end
 		end end
 	end
 	function service.PlayerAction(player: Player, action: string, actorId: string?): (boolean, string)
+		if destroyed then return false,"NotReady" end
 		local s=sessions[player]
 		if not s or s.mentor then return false,"NotReady" end
+		if shared then local claimed,ok,why=shared.Action(player,s,action,os.clock(),actorId);if claimed then return ok,why end end
 		return combat.PlayerAction(s,action,os.clock(),actorId)
 	end
 	-- Read-only server evidence for campaign adapters; never accepts a client snapshot.
@@ -212,17 +278,20 @@ return function(templates: Folder, onOpen: (Player,string) -> (), reward: any,to
 	end
 	-- One temporary pose owner. Freeze unrelated followers in place; restore exactly once.
 	function service.BeginMentor(player:Player,actorId:string):any?
+		if destroyed then return nil end
 		local s=sessions[player];local h=s and s.heroes[actorId]
 		if not s or s.mentor or not h or h.state~="Following" or not h.combat or h.combat.health<=0 or s.combat then return nil end
+		if shared then shared.Detach(player,s)end
 		local saved={};s.mentor={actorId=actorId,saved=saved}
 		for id,member in pairs(s.heroes)do
-			member.generation+=1;member.path=nil
+			invalidatePath(member)
 			saved[id]={anchored=member.root.Anchored,pivot=member.model:GetPivot(),parent=member.model.Parent,attributes=member.model:GetAttributes()}
 			member.root.Anchored=true;member.root.AssemblyLinearVelocity=Vector3.zero
 		end
 		return h.model
 	end
 	function service.EndMentor(player:Player)
+		if destroyed then return end
 		local s=sessions[player];local owned=s and s.mentor;if not owned then return end
 		s.mentor=nil;s.reset=true
 		for id,saved in pairs(owned.saved)do local h=s.heroes[id];if h and h.root.Parent then
@@ -240,11 +309,25 @@ return function(templates: Folder, onOpen: (Player,string) -> (), reward: any,to
 	end
 	function service.Remove(player: Player)
 		local s=sessions[player]; if not s then return end
-		s.alive=false; if s.characterConnection then s.characterConnection:Disconnect() end
+		s.alive=false; if shared then shared.Detach(player,s)end; if s.characterConnection then s.characterConnection:Disconnect() end
 		combat.Remove(player,s)
 		for _,h in pairs(s.heroes) do h.generation+=1; h.model:Destroy() end
 		for _,e in ipairs(s.enemies) do e.model:Destroy() end
 		s.folder:Destroy(); sessions[player]=nil
+	end
+	function service.SharedStatus():string return if shared then shared.Status()else "Disabled"end
+	function service.CloseShared()if shared then shared.Close()end end
+	function service.PumpSharedRewards():(boolean,string)if not shared then return false,"Disabled"end;return shared.PumpRewards()end
+	function service.SharedRewardState():any return if shared then shared.RewardState()else nil end
+	-- Called by the owning runtime between combat updates. Pending frozen rewards
+	-- remain accessible through PumpSharedRewards/SharedRewardState after shutdown.
+	function service.Destroy()
+		if destroyed then return end
+		destroyed=true;heartbeat:Disconnect()
+		local players={};for player in pairs(sessions)do table.insert(players,player)end
+		for _,player in ipairs(players)do service.Remove(player)end
+		if shared then shared.Close()end
+		away:Destroy()
 	end
 	return service
 end

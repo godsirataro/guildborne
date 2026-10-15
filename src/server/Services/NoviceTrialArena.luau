@@ -10,8 +10,11 @@ local Gear=require(Shared.Data.Equipment)(Content,require(Shared.Data.Expansion)
 local create=require(Server.Systems.NoviceTrialCombat)({Util=Util,Content=Content,Combat=Combat,Trials=Trials,
  Stats=require(Server.Systems.CombatStats)(Content,Combat,Gear),Targeting=require(Server.Systems.CombatTargeting),Damage=require(Server.Systems.CombatDamage),Abilities=require(Server.Systems.CombatAbilities)})
 local V=Vector3.new
-return function(player:Player,data:any,classId:string,runId:string,origin:Vector3,onComplete:any,onExit:any?,options:any?):any
- local make=if options then options.Create else create
+return function(player:Player,data:any,classId:string,runId:string,origin:Vector3,onComplete:any,onExit:any?,options:any?,identity:any?):any
+ local defaultCreate=create
+ if identity then defaultCreate=require(Server.Systems.NoviceTrialCombat)({Util=Util,Content=Content,Combat=Combat,Trials=require(Server.Systems.NoviceTrialSession)(TrialConfig,Util,identity),
+  Stats=require(Server.Systems.CombatStats)(Content,Combat,Gear),Targeting=require(Server.Systems.CombatTargeting),Damage=require(Server.Systems.CombatDamage),Abilities=require(Server.Systems.CombatAbilities)})end
+ local make=if options then options.Create else defaultCreate
  local goalsConfig=if options then options.Goals else TrialConfig.Classes[classId].Goals
  local abilityId=if options and options.AbilityId then options.AbilityId else Combat.Classes[classId].Ability
  local trialAbility=assert((options and options.Ability)or Combat.Abilities[abilityId],"Missing trial ability")

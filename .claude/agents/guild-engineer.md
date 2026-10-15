@@ -97,6 +97,24 @@ Dependencies: guild-foundation, combat, city-zones, market-integrity
 
 Path rule production-evidence: Reconcile latest goals/registries/scopes. One shared ledger, claim before writes, immediate lease check and preserved raw receipts. Different reviewer validates evidence; local checks cannot replace hardware/cloud/human gates.
 
+### human-party-core: Human Party Core
+
+Pure six-human temporary party lifecycle and runtime adapter; no profile or reward mutation.
+
+Environment: local; skill: guildborne-guild-social
+
+Write scopes: src/server/Systems/HumanParty.luau, src/server/Services/HumanPartyRuntime.luau, tests/human_party.luau, tests/run_human_party.luau, production/launch/integration/party-core.md
+
+Required checks: source-contract, regression, independent-review
+
+Dependencies: none
+
+Path rule server-authority: Reuse actual services; server owns combat/inventory/currency/allocation/rewards/guild/build/escrow. Preserve fencing/receipts/saves/disabled flags. No production cloud writes or commerce activation.
+
+Path rule tooling: Use reviewed bounded local commands/tests. Studio/Forge planners do not launch models; paid/model subprocess, MCP mutation and installation require actual authorization/capability.
+
+Path rule production-evidence: Reconcile latest goals/registries/scopes. One shared ledger, claim before writes, immediate lease check and preserved raw receipts. Different reviewer validates evidence; local checks cannot replace hardware/cloud/human gates.
+
 ## Evidence gates
 
 audio-validation (audio): Record owned/licensed masters, required provider authorization, cue IDs and actual sync/mix/listening. Missing provider or files leaves pending.

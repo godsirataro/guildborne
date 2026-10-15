@@ -1,0 +1,38 @@
+[
+  {
+    "content": [
+      {
+        "type": "text",
+        "text": "{\"profileRevisionBefore\":0,\"code\":\"OK\",\"status\":\"Active\",\"humanParty\":{\"partyId\":\"party:1\",\"revision\":9,\"capacity\":6,\"leaderUserId\":\"-1\",\"members\":[{\"username\":\"Player1\",\"displayName\":\"Player1\",\"userId\":\"-1\",\"heroCount\":0,\"connectionState\":\"Connected\",\"ready\":false},{\"username\":\"Player2\",\"displayName\":\"Player2\",\"userId\":\"-2\",\"heroCount\":0,\"connectionState\":\"Connected\",\"ready\":false}],\"outgoingInvites\":[{\"partyId\":\"party:1\",\"targetUserId\":\"-3\",\"fromUserId\":\"-1\",\"inviteId\":\"invite:4\",\"expiresAt\":1791973142}],\"available\":true,\"directory\":[{\"username\":\"Player2\",\"available\":false,\"heroCount\":0,\"userId\":\"-2\",\"displayName\":\"Player2\"},{\"username\":\"Player3\",\"available\":true,\"heroCount\":0,\"userId\":\"-3\",\"displayName\":\"Player3\"},{\"username\":\"Player4\",\"available\":true,\"heroCount\":0,\"userId\":\"-4\",\"displayName\":\"Player4\"}],\"localUserId\":\"-1\",\"incomingInvites\":[]},\"userId\":-1,\"profileRevisionAfter\":0}"
+      }
+    ],
+    "isError": false
+  },
+  {
+    "content": [
+      {
+        "type": "text",
+        "text": "{\"profileRevisionBefore\":0,\"code\":\"OK\",\"status\":\"Active\",\"humanParty\":{\"partyId\":\"party:1\",\"revision\":10,\"capacity\":6,\"leaderUserId\":\"-1\",\"members\":[{\"username\":\"Player1\",\"displayName\":\"Player1\",\"userId\":\"-1\",\"heroCount\":0,\"connectionState\":\"Connected\",\"ready\":false},{\"username\":\"Player2\",\"displayName\":\"Player2\",\"userId\":\"-2\",\"heroCount\":0,\"connectionState\":\"Connected\",\"ready\":false},{\"username\":\"Player3\",\"displayName\":\"Player3\",\"userId\":\"-3\",\"heroCount\":0,\"connectionState\":\"Connected\",\"ready\":false}],\"outgoingInvites\":[],\"available\":true,\"directory\":[{\"username\":\"Player1\",\"available\":false,\"heroCount\":0,\"userId\":\"-1\",\"displayName\":\"Player1\"},{\"username\":\"Player2\",\"available\":false,\"heroCount\":0,\"userId\":\"-2\",\"displayName\":\"Player2\"},{\"username\":\"Player4\",\"available\":true,\"heroCount\":0,\"userId\":\"-4\",\"displayName\":\"Player4\"}],\"localUserId\":\"-3\",\"incomingInvites\":[]},\"userId\":-3,\"profileRevisionAfter\":0}"
+      }
+    ],
+    "isError": false
+  },
+  {
+    "content": [
+      {
+        "type": "text",
+        "text": "{\"profileRevisionBefore\":0,\"code\":\"OK\",\"status\":\"Active\",\"humanParty\":{\"partyId\":\"party:1\",\"revision\":11,\"capacity\":6,\"leaderUserId\":\"-1\",\"members\":[{\"username\":\"Player1\",\"displayName\":\"Player1\",\"userId\":\"-1\",\"heroCount\":0,\"connectionState\":\"Connected\",\"ready\":false},{\"username\":\"Player2\",\"displayName\":\"Player2\",\"userId\":\"-2\",\"heroCount\":0,\"connectionState\":\"Connected\",\"ready\":false},{\"username\":\"Player3\",\"displayName\":\"Player3\",\"userId\":\"-3\",\"heroCount\":0,\"connectionState\":\"Connected\",\"ready\":false}],\"outgoingInvites\":[{\"partyId\":\"party:1\",\"targetUserId\":\"-4\",\"fromUserId\":\"-1\",\"inviteId\":\"invite:5\",\"expiresAt\":1791973143}],\"available\":true,\"directory\":[{\"username\":\"Player2\",\"available\":false,\"heroCount\":0,\"userId\":\"-2\",\"displayName\":\"Player2\"},{\"username\":\"Player3\",\"available\":false,\"heroCount\":0,\"userId\":\"-3\",\"displayName\":\"Player3\"},{\"username\":\"Player4\",\"available\":true,\"heroCount\":0,\"userId\":\"-4\",\"displayName\":\"Player4\"}],\"localUserId\":\"-1\",\"incomingInvites\":[]},\"userId\":-1,\"profileRevisionAfter\":0}"
+      }
+    ],
+    "isError": false
+  },
+  {
+    "content": [
+      {
+        "type": "text",
+        "text": "{\"profileRevisionBefore\":0,\"code\":\"OK\",\"status\":\"Active\",\"humanParty\":{\"partyId\":\"party:1\",\"revision\":12,\"capacity\":6,\"leaderUserId\":\"-1\",\"members\":[{\"username\":\"Player1\",\"displayName\":\"Player1\",\"userId\":\"-1\",\"heroCount\":0,\"connectionState\":\"Connected\",\"ready\":false},{\"username\":\"Player2\",\"displayName\":\"Player2\",\"userId\":\"-2\",\"heroCount\":0,\"connectionState\":\"Connected\",\"ready\":false},{\"username\":\"Player3\",\"displayName\":\"Player3\",\"userId\":\"-3\",\"heroCount\":0,\"connectionState\":\"Connected\",\"ready\":false},{\"username\":\"Player4\",\"displayName\":\"Player4\",\"userId\":\"-4\",\"heroCount\":0,\"connectionState\":\"Connected\",\"ready\":false}],\"outgoingInvites\":[],\"available\":true,\"directory\":[{\"username\":\"Player1\",\"available\":false,\"heroCount\":0,\"userId\":\"-1\",\"displayName\":\"Player1\"},{\"username\":\"Player2\",\"available\":false,\"heroCount\":0,\"userId\":\"-2\",\"displayName\":\"Player2\"},{\"username\":\"Player3\",\"available\":false,\"heroCount\":0,\"userId\":\"-3\",\"displayName\":\"Player3\"}],\"localUserId\":\"-4\",\"incomingInvites\":[]},\"userId\":-4,\"profileRevisionAfter\":0}"
+      }
+    ],
+    "isError": false
+  }
+]

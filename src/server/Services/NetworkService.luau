@@ -15,6 +15,7 @@ return function(deps: any)
 		if player.Parent ~= Players then return end
 		local view = deps.Project(deps.Data.Sessions[player.UserId], deps.Mode, os.time())
 		view.code = code; view.result = result; view.requestId = requestId; view.navigate = navigate
+		view.humanParty=if deps.HumanParty then deps.HumanParty.State(player) else nil
 		deps.World.Update(player, if view.data then view.data.hallLevel else 1, view.data, view.status == "Active")
 		view.islands=if deps.World.IslandDirectory then deps.World.IslandDirectory(player) else {}
 		view.islandVisitors=if deps.World.IslandVisitors then deps.World.IslandVisitors(player) else {}
@@ -40,6 +41,18 @@ return function(deps: any)
 		bucket.tokens -= 1
 		local valid = deps.Protocol.validate(packet)
 		if not valid then Network.Send(player, "InvalidRequest"); return end
+		-- Social membership is ephemeral and must remain escapable during solo trials.
+		-- It never reaches profile commands, spatial actions or economic audit callbacks.
+		local social={HumanPartyInvite=true,HumanPartyAccept=true,HumanPartyDecline=true,HumanPartyLeave=true,
+			HumanPartyDisband=true,HumanPartyKick=true,HumanPartyTransferLeader=true,HumanPartySetReady=true}
+		if social[packet.action] then
+			local ok,code=pcall(function()
+				return if deps.HumanParty then deps.HumanParty.Intent(player,packet.action,packet.args,packet.requestId) else "HumanPartyUnavailable"
+			end)
+			if not ok then deps.Log("human_party_error",{});code="HumanPartyUnavailable" end
+			Network.Send(player,code,nil,packet.requestId)
+			return
+		end
 		local current=deps.Data.Sessions[player.UserId]
 		if deps.Content and current and current.record then
 			local gate=deps.Content.NoviceActionProblem(current.record.data,packet.action)

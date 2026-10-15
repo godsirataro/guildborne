@@ -1,0 +1,686 @@
+{
+  "schemaVersion": 1,
+  "deliveryPlan": "GL-2.0",
+  "date": "2026-10-15",
+  "publicReady": false,
+  "p0Complete": false,
+  "publicMaxLevel": 100,
+  "internalAlphaMaxLevel": 35,
+  "requiredPublicSystems": [
+    "Class3",
+    "Federation",
+    "war",
+    "territory",
+    "player-market"
+  ],
+  "sourcePlan": "production/design/integration/FULL_GAME_GOLIVE_GL2_TH.md",
+  "phaseMeaning": "Delivery/acceptance dependencies, not permission to activate runtime or acceptance evidence.",
+  "taskMappingMeaning": "Existing Forge package references only; missing implementation scopes require a reviewed task and lease before writing. No Forge dependency is bypassed.",
+  "phases": [
+    {
+      "id": "P0",
+      "dependsOn": [],
+      "status": "OPEN"
+    },
+    {
+      "id": "P1",
+      "dependsOn": [
+        "P0"
+      ],
+      "status": "OPEN"
+    },
+    {
+      "id": "P2",
+      "dependsOn": [
+        "P0"
+      ],
+      "status": "OPEN"
+    },
+    {
+      "id": "P3",
+      "dependsOn": [
+        "P0"
+      ],
+      "status": "OPEN"
+    },
+    {
+      "id": "P4",
+      "dependsOn": [
+        "P2"
+      ],
+      "status": "OPEN"
+    },
+    {
+      "id": "P5",
+      "dependsOn": [
+        "P2",
+        "P3",
+        "P4"
+      ],
+      "status": "OPEN"
+    },
+    {
+      "id": "P6",
+      "dependsOn": [
+        "P3"
+      ],
+      "status": "OPEN"
+    },
+    {
+      "id": "P7",
+      "dependsOn": [
+        "P6"
+      ],
+      "status": "OPEN"
+    },
+    {
+      "id": "P8",
+      "dependsOn": [
+        "P1"
+      ],
+      "status": "OPEN"
+    },
+    {
+      "id": "P9",
+      "dependsOn": [
+        "P2",
+        "P3",
+        "P4",
+        "P5",
+        "P6",
+        "P7",
+        "P8"
+      ],
+      "status": "OPEN"
+    },
+    {
+      "id": "P10",
+      "dependsOn": [
+        "P9"
+      ],
+      "status": "OPEN"
+    },
+    {
+      "id": "P11",
+      "dependsOn": [
+        "P10"
+      ],
+      "status": "OPEN"
+    },
+    {
+      "id": "P12",
+      "dependsOn": [
+        "P11"
+      ],
+      "status": "OPEN"
+    },
+    {
+      "id": "P13",
+      "dependsOn": [
+        "P12"
+      ],
+      "status": "OPEN"
+    }
+  ],
+  "groups": [
+    {
+      "id": "progression",
+      "phase": "P4",
+      "startsAt": "P1",
+      "ownerRole": "gameplay-designer",
+      "forgeTasks": [
+        "progression",
+        "launch-content"
+      ],
+      "featureIds": [
+        "07",
+        "16"
+      ],
+      "sourcePaths": [
+        "src/server/Config/Content.luau",
+        "src/shared/Data/Expansion.luau"
+      ],
+      "acceptance": [
+        "Ordinary player and owned-hero routes through10/35/70/100; preserve legacy earned progression",
+        "Hall18–20 permits and non-level benefits specified and playable"
+      ],
+      "requiredBeforePublic": true,
+      "status": "AUDITED_SCOPE_NOT_ACCEPTED",
+      "foundationDependencies": []
+    },
+    {
+      "id": "campaign",
+      "phase": "P4",
+      "startsAt": "P2",
+      "ownerRole": "quest-designer",
+      "forgeTasks": [
+        "story-quests",
+        "launch-content"
+      ],
+      "featureIds": [
+        "01",
+        "07"
+      ],
+      "sourcePaths": [
+        "src/server/Config/NoviceChapter.luau",
+        "src/server/Config/ChapterSix.luau",
+        "src/server/Services/CampaignService.luau"
+      ],
+      "acceptance": [
+        "Six arcs/36 steps plus Novice6; full quest inventory and ending",
+        "All supported branches, normal inputs, no grants/skipped time or paid/market requirement"
+      ],
+      "requiredBeforePublic": true,
+      "status": "AUDITED_SCOPE_NOT_ACCEPTED",
+      "foundationDependencies": [
+        "progression"
+      ]
+    },
+    {
+      "id": "classes",
+      "phase": "P4",
+      "startsAt": "P2",
+      "ownerRole": "gameplay-designer",
+      "forgeTasks": [
+        "progression",
+        "launch-content"
+      ],
+      "featureIds": [
+        "07",
+        "16"
+      ],
+      "sourcePaths": [
+        "src/shared/Data/Expansion.luau",
+        "src/shared/Data/StatusPoints.luau"
+      ],
+      "acceptance": [
+        "Five base, ten Class2, ten Class3 and four special paths; quest/readiness per actor",
+        "Allocation/respec never doubles earned budget; no Class4"
+      ],
+      "requiredBeforePublic": true,
+      "status": "AUDITED_SCOPE_NOT_ACCEPTED",
+      "foundationDependencies": [
+        "progression"
+      ]
+    },
+    {
+      "id": "heroes",
+      "phase": "P5",
+      "startsAt": "P1",
+      "ownerRole": "combat-engineer",
+      "forgeTasks": [
+        "hero-tactics-slice",
+        "shared-combat-coordinator",
+        "hero-stories"
+      ],
+      "featureIds": [
+        "02",
+        "03",
+        "05"
+      ],
+      "sourcePaths": [
+        "src/server/Services/HeroService.luau",
+        "src/server/Systems/HeroTactics.luau"
+      ],
+      "acceptance": [
+        "Five companions per owner; tactics/formation/manual override and recovery",
+        "Named combos/Bond/stories, instance identity and replay-safe saved progress"
+      ],
+      "requiredBeforePublic": true,
+      "status": "AUDITED_SCOPE_NOT_ACCEPTED",
+      "foundationDependencies": [
+        "progression"
+      ]
+    },
+    {
+      "id": "personal-guild",
+      "phase": "P5",
+      "startsAt": "P2",
+      "ownerRole": "guild-engineer",
+      "forgeTasks": [
+        "guild-foundation",
+        "guild-islands"
+      ],
+      "featureIds": [
+        "06",
+        "14"
+      ],
+      "sourcePaths": [
+        "src/server/Services/PersonalGuildService.luau",
+        "src/shared/Data/Expansion.luau"
+      ],
+      "acceptance": [
+        "One human owner; real Training Ground, Strategy Table, research and trophy utilities",
+        "Practice creates no ordinary XP/loot/proof; saved presets and permission checks"
+      ],
+      "requiredBeforePublic": true,
+      "status": "AUDITED_SCOPE_NOT_ACCEPTED",
+      "foundationDependencies": [
+        "progression"
+      ]
+    },
+    {
+      "id": "islands",
+      "phase": "P5",
+      "startsAt": "P2",
+      "ownerRole": "guild-engineer",
+      "forgeTasks": [
+        "guild-islands"
+      ],
+      "featureIds": [
+        "06",
+        "17"
+      ],
+      "sourcePaths": [
+        "src/server/Services/GuildLandService.luau",
+        "src/server/Services/IslandVisits.luau"
+      ],
+      "acceptance": [
+        "Place/move/store/restore/theme/visit with preserved ownership and costs",
+        "Distinct-server owner visits, privacy changes, owner loss and safe return"
+      ],
+      "requiredBeforePublic": true,
+      "status": "AUDITED_SCOPE_NOT_ACCEPTED",
+      "foundationDependencies": [
+        "personal-guild"
+      ]
+    },
+    {
+      "id": "shared-multiplayer",
+      "phase": "P3",
+      "startsAt": "P1",
+      "ownerRole": "systems-engineer",
+      "forgeTasks": [
+        "human-party-core",
+        "shared-pve-settlement",
+        "shared-pve-claims",
+        "shared-local-travel"
+      ],
+      "featureIds": [
+        "08",
+        "09"
+      ],
+      "sourcePaths": [
+        "src/server/Services/HumanPartyRuntime.luau",
+        "src/server/Services/SharedPvESettlementStore.luau",
+        "src/server/Services/TravelService.luau"
+      ],
+      "acceptance": [
+        "Real2/4/6 humans plus owned heroes and mixed Solo/Party outsiders",
+        "Support participation, immutable conserved settlements, durable replay/disconnect/server-loss recovery"
+      ],
+      "requiredBeforePublic": true,
+      "status": "AUDITED_SCOPE_NOT_ACCEPTED",
+      "foundationDependencies": [
+        "progression"
+      ]
+    },
+    {
+      "id": "federation",
+      "phase": "P6",
+      "startsAt": "P3",
+      "ownerRole": "guild-engineer",
+      "forgeTasks": [
+        "guild-foundation"
+      ],
+      "featureIds": [
+        "17"
+      ],
+      "sourcePaths": [
+        "src/server/Systems/PlayerGuildSchema.luau",
+        "src/server/Systems/PlayerGuildMembership.luau"
+      ],
+      "acceptance": [
+        "Reviewed legacy PlayerGuild-to-Federation mapping without namespace rename",
+        "Atomic membership, concurrent invitations, role capabilities, leadership transfer, leave/disband recovery"
+      ],
+      "requiredBeforePublic": true,
+      "status": "AUDITED_SCOPE_NOT_ACCEPTED",
+      "foundationDependencies": [
+        "shared-multiplayer"
+      ]
+    },
+    {
+      "id": "war",
+      "phase": "P6",
+      "startsAt": "P3",
+      "ownerRole": "gameplay-designer",
+      "forgeTasks": [
+        "guild-war-territory"
+      ],
+      "featureIds": [
+        "04",
+        "17"
+      ],
+      "sourcePaths": [],
+      "acceptance": [
+        "Bounded real multi-team objectives, roster lock, win/lose/cancel and reconnect",
+        "Final outcome/reward once; server loss never guesses winner; paid buffs excluded"
+      ],
+      "requiredBeforePublic": true,
+      "status": "AUDITED_SCOPE_NOT_ACCEPTED",
+      "foundationDependencies": [
+        "federation",
+        "shared-multiplayer"
+      ]
+    },
+    {
+      "id": "territory",
+      "phase": "P7",
+      "startsAt": "P6",
+      "ownerRole": "gameplay-designer",
+      "forgeTasks": [
+        "guild-war-territory"
+      ],
+      "featureIds": [
+        "17"
+      ],
+      "sourcePaths": [],
+      "acceptance": [
+        "Named territories with capture/hold/contest, ownership/version fencing",
+        "Benefit caps/upkeep/season reset; duplicate outcomes cannot duplicate income or force market prices"
+      ],
+      "requiredBeforePublic": true,
+      "status": "AUDITED_SCOPE_NOT_ACCEPTED",
+      "foundationDependencies": [
+        "war"
+      ]
+    },
+    {
+      "id": "economy-market",
+      "phase": "P7",
+      "startsAt": "P3",
+      "ownerRole": "market-engineer",
+      "forgeTasks": [
+        "inventory-crafting",
+        "market-integrity",
+        "private-cross-server"
+      ],
+      "featureIds": [
+        "10"
+      ],
+      "sourcePaths": [
+        "src/server/Config/Market.luau",
+        "src/shared/Data/Expansion.luau"
+      ],
+      "acceptance": [
+        "Gold and reviewed material allowlist; fills/partial fills/cancel/escrow/claim/history",
+        "Distinct live servers, generation fencing, compaction/recovery and zero conservation error"
+      ],
+      "requiredBeforePublic": true,
+      "status": "AUDITED_SCOPE_NOT_ACCEPTED",
+      "foundationDependencies": [
+        "shared-multiplayer"
+      ]
+    },
+    {
+      "id": "endgame",
+      "phase": "P5",
+      "startsAt": "P4",
+      "ownerRole": "gameplay-designer",
+      "forgeTasks": [
+        "story-quests",
+        "hero-stories",
+        "guild-foundation"
+      ],
+      "featureIds": [
+        "05",
+        "14",
+        "15",
+        "16"
+      ],
+      "sourcePaths": [
+        "src/server/Services/ExpansionService.luau"
+      ],
+      "acceptance": [
+        "Tower10 and finale; named challenges/mastery/trophies/research/events",
+        "Lifecycle/expiry/eligibility/rejoin/reward-once; no mandatory Bond power grind"
+      ],
+      "requiredBeforePublic": true,
+      "status": "AUDITED_SCOPE_NOT_ACCEPTED",
+      "foundationDependencies": [
+        "campaign",
+        "shared-multiplayer"
+      ]
+    },
+    {
+      "id": "appearance",
+      "phase": "P8",
+      "startsAt": "P1",
+      "ownerRole": "art-lead",
+      "forgeTasks": [
+        "human-body",
+        "clothing-fit",
+        "character-import",
+        "race-expansion",
+        "animation",
+        "vfx",
+        "audio"
+      ],
+      "featureIds": [
+        "17"
+      ],
+      "sourcePaths": [
+        "src/shared/Data/AppearanceCatalog.luau"
+      ],
+      "acceptance": [
+        "Four cosmetic races/13 presets/20 palettes with15 core parts and modular outfit/gear",
+        "All release source/export/runtime assets, fit/load/provenance/audio/device/human review"
+      ],
+      "requiredBeforePublic": true,
+      "status": "AUDITED_SCOPE_NOT_ACCEPTED",
+      "foundationDependencies": []
+    },
+    {
+      "id": "cities-world",
+      "phase": "P8",
+      "startsAt": "P1",
+      "ownerRole": "world-builder",
+      "forgeTasks": [
+        "city-zones",
+        "npc-life"
+      ],
+      "featureIds": [
+        "04",
+        "17"
+      ],
+      "sourcePaths": [
+        "src/shared/Config/CivicCities.luau",
+        "src/server/Services/CityInteriorKit.luau",
+        "src/server/Services/FriendlyCityNpcs.luau"
+      ],
+      "acceptance": [
+        "P1 square→tavern→forge benchmark then all six cities/required regions",
+        "13-body scale, interiors, NPC routes/tool contact, five-hero doors/stairs, lighting/audio in game"
+      ],
+      "requiredBeforePublic": true,
+      "status": "AUDITED_SCOPE_NOT_ACCEPTED",
+      "foundationDependencies": []
+    },
+    {
+      "id": "ux-accessibility",
+      "phase": "P10",
+      "startsAt": "P1",
+      "ownerRole": "ui-designer",
+      "forgeTasks": [
+        "ux-system",
+        "localization",
+        "physical-mobile"
+      ],
+      "featureIds": [
+        "01",
+        "11"
+      ],
+      "sourcePaths": [
+        "src/shared/Config/Localization.luau"
+      ],
+      "acceptance": [
+        "Native TH/EN screens and loading/empty/error/retry/disabled states",
+        "Actual Android/iOS input/performance and declared keyboard/gamepad coverage; reduced motion/flash"
+      ],
+      "requiredBeforePublic": true,
+      "status": "AUDITED_SCOPE_NOT_ACCEPTED",
+      "foundationDependencies": []
+    },
+    {
+      "id": "rewards-commerce",
+      "phase": "P9",
+      "startsAt": "P2",
+      "ownerRole": "market-engineer",
+      "forgeTasks": [
+        "launch-rewards",
+        "launch-integration"
+      ],
+      "featureIds": [
+        "18"
+      ],
+      "sourcePaths": [
+        "src/server/Config/LaunchRewards.luau",
+        "src/server/Systems/LaunchRewards.luau"
+      ],
+      "acceptance": [
+        "Seven-step daily preserves sequence; final Premium/Pass/season catalog and reviewed receipt route",
+        "Entitlements/old-season claims/recovery; PvE buff caps with no war effect; scoped activation remains external"
+      ],
+      "requiredBeforePublic": true,
+      "status": "AUDITED_SCOPE_NOT_ACCEPTED",
+      "foundationDependencies": [
+        "progression"
+      ]
+    },
+    {
+      "id": "operations-web",
+      "phase": "P11",
+      "startsAt": "P0",
+      "ownerRole": "release-lead",
+      "forgeTasks": [
+        "analytics-foundation",
+        "performance",
+        "uat",
+        "growth"
+      ],
+      "featureIds": [
+        "12",
+        "13",
+        "19",
+        "20"
+      ],
+      "sourcePaths": [
+        "src/server/Services/AnalyticsAdapter.luau"
+      ],
+      "acceptance": [
+        "Same-build full integration, load/fault/migration/rollback and human UAT",
+        "Required website pages, real footage/approved links, support and72h operators; scoped owner release decision"
+      ],
+      "requiredBeforePublic": true,
+      "status": "AUDITED_SCOPE_NOT_ACCEPTED",
+      "foundationDependencies": [
+        "campaign",
+        "heroes",
+        "islands",
+        "war",
+        "territory",
+        "economy-market",
+        "endgame",
+        "appearance",
+        "cities-world",
+        "ux-accessibility",
+        "rewards-commerce"
+      ]
+    }
+  ],
+  "unresolvedDecisions": [
+    {
+      "id": "combos",
+      "ownerRole": "combat-engineer",
+      "canonicalIds": null,
+      "proposedCount": 3,
+      "countApproved": false,
+      "decision": "playably distinct combo designs",
+      "status": "OPEN_P0_BLOCKER"
+    },
+    {
+      "id": "hero-stories",
+      "ownerRole": "narrative-designer",
+      "canonicalIds": null,
+      "proposedCount": 3,
+      "countApproved": false,
+      "decision": "instance-keyed beginning/middle/ending story templates",
+      "status": "OPEN_P0_BLOCKER"
+    },
+    {
+      "id": "research-nodes",
+      "ownerRole": "gameplay-designer",
+      "canonicalIds": null,
+      "proposedCount": 9,
+      "countApproved": false,
+      "decision": "Military/Crafting/Exploration, three nodes each",
+      "status": "OPEN_P0_BLOCKER"
+    },
+    {
+      "id": "event-types",
+      "ownerRole": "quest-designer",
+      "canonicalIds": null,
+      "proposedCount": 3,
+      "countApproved": false,
+      "decision": "defense, exploration/escort, wandering boss proposals",
+      "status": "OPEN_P0_BLOCKER"
+    },
+    {
+      "id": "team-challenges",
+      "ownerRole": "gameplay-designer",
+      "canonicalIds": null,
+      "proposedCount": 3,
+      "countApproved": false,
+      "decision": "replayable endgame challenges",
+      "status": "OPEN_P0_BLOCKER"
+    },
+    {
+      "id": "territories",
+      "ownerRole": "world-builder",
+      "canonicalIds": null,
+      "proposedCount": 3,
+      "countApproved": false,
+      "decision": "world-supported capture/hold/contest territories",
+      "status": "OPEN_P0_BLOCKER"
+    },
+    {
+      "id": "hall18-20",
+      "ownerRole": "gameplay-designer",
+      "canonicalIds": null,
+      "proposedCount": 3,
+      "countApproved": false,
+      "decision": "permits and meaningful non-level utility/visual benefits",
+      "status": "OPEN_P0_BLOCKER"
+    },
+    {
+      "id": "release-content",
+      "ownerRole": "asset-curator",
+      "canonicalIds": null,
+      "proposedCount": null,
+      "countApproved": false,
+      "decision": "complete named enemies/bosses/items/quests/outfits/actions/VFX/cues",
+      "status": "OPEN_P0_BLOCKER"
+    },
+    {
+      "id": "capacity-devices",
+      "ownerRole": "performance-engineer",
+      "canonicalIds": null,
+      "proposedCount": null,
+      "countApproved": false,
+      "decision": "war/server population, minimum physical devices and measured budgets",
+      "status": "OPEN_P0_BLOCKER"
+    },
+    {
+      "id": "commerce-catalog",
+      "ownerRole": "market-engineer",
+      "canonicalIds": null,
+      "proposedCount": null,
+      "countApproved": false,
+      "decision": "approved products/pass/season identities and receipt scope",
+      "status": "OPEN_P0_BLOCKER"
+    }
+  ],
+  "releaseAuthorization": "PENDING_SCOPED_OWNER_DECISION",
+  "dependencyMeaning": "Group foundationDependencies name source/authority foundations needed for integration, not a wait for final group acceptance. These are not scheduling edges. The phases DAG defines acceptance ordering; startsAt is earliest development and phase is completion. Forge dependencies and leases remain authoritative for execution."
+}

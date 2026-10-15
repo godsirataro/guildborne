@@ -1,6 +1,11 @@
 --!strict
 local Protocol = { Version = 1, MaxPartySize = 5 }
 local schemas: { [string]: { [string]: string } } = {
+	HumanPartyInvite={targetUserId="id",partyRevision="revision"},
+	HumanPartyAccept={inviteId="id",partyRevision="revision"},HumanPartyDecline={inviteId="id",partyRevision="revision"},
+	HumanPartyLeave={partyRevision="revision"},HumanPartyDisband={partyRevision="revision"},
+	HumanPartyKick={targetUserId="id",partyRevision="revision"},HumanPartyTransferLeader={targetUserId="id",partyRevision="revision"},
+	HumanPartySetReady={ready="boolean",partyRevision="revision"},
 	StartHeroMentor={actorId="id",pathId="id"},CancelHeroMentor={},
 	ClaimDailyReward={},ClaimSeasonReward={seasonId="id",tier="integer",track="id"},
 	RequestPermanentPass={kind="id",key="id"},
@@ -33,6 +38,7 @@ local schemas: { [string]: { [string]: string } } = {
 local function id(value: any): boolean
 	return type(value) == "string" and #value > 0 and #value <= 64 and string.match(value, "^[%w_:%-]+$") ~= nil
 end
+local function boolean(value: any): boolean return type(value) == "boolean" end
 
 -- Keep this wire shape independent of catalog availability. Domain validation follows
 -- on the server; this bounds copying, persistence receipts, and network payload size.
@@ -70,6 +76,7 @@ function Protocol.validate(message: any): (boolean, string?)
 	for key, value in pairs(message.args) do
 		local kind = shape[key]
 		if not kind then return false, "InvalidRequest" end
+		if kind == "boolean" and not boolean(value) then return false, "InvalidRequest" end
 		if kind=="integer" and (type(value)~="number" or value~=value or value%1~=0 or math.abs(value)>100) then return false,"InvalidRequest" end
 		if kind=="grid" and (type(value)~="number" or value~=value or math.abs(value)>100 or (value*4)%1~=0) then return false,"InvalidRequest" end
 		if kind == "id" and not id(value) then return false, "InvalidRequest" end

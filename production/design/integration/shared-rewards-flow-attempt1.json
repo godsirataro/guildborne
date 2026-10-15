@@ -1,0 +1,9 @@
+{
+  "content": [
+    {
+      "type": "text",
+      "text": "{\"actors\":2,\"cleanup\":true,\"companions\":0,\"productionWrites\":0,\"heroService\":false,\"legacyRewardCalls\":0,\"fixedTestBudget\":{\"herb\":3,\"xp\":11,\"gold\":7},\"problem\":\"AssistantCommand:90: Actual combat did not defeat scout within 25 seconds\",\"ok\":false,\"schedulerCleanup\":\"No Heartbeat or event connections created; explicit ticks only\",\"owners\":2,\"isolatedMemoryOnly\":true,\"initialEnemyHP\":135,\"profileSessionsClosed\":true,\"synthetic\":true}"
+    }
+  ],
+  "isError": false
+}

@@ -1,0 +1,9 @@
+{
+  "content": [
+    {
+      "type": "text",
+      "text": "{\"status\":\"Active\",\"revision\":0,\"humanParty\":{\"partyId\":\"party:1\",\"revision\":6,\"capacity\":6,\"leaderUserId\":\"-1\",\"members\":[{\"username\":\"Player1\",\"displayName\":\"Player1\",\"userId\":\"-1\",\"heroCount\":0,\"connectionState\":\"Connected\",\"ready\":false},{\"username\":\"Player2\",\"displayName\":\"Player2\",\"userId\":\"-2\",\"heroCount\":0,\"connectionState\":\"Connected\",\"ready\":false}],\"outgoingInvites\":[],\"available\":true,\"directory\":[{\"username\":\"Player1\",\"available\":false,\"heroCount\":0,\"userId\":\"-1\",\"displayName\":\"Player1\"}],\"localUserId\":\"-2\",\"incomingInvites\":[]}}"
+    }
+  ],
+  "isError": false
+}

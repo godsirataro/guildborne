@@ -46,6 +46,22 @@ Generated output, import, Studio acceptance, hardware and human review are disti
 
 ## Forge tasks (these scopes apply only after a valid task claim)
 
+### p1-city-verification: Isolated city source and physics verification
+
+Current source standalone Memory place only. Verify station authority and five actual HeroService followers. Preserve raw evidence and external human/device gates.
+
+Environment: studio; skill: guildborne-qa
+
+Write scopes: tests/studio_central_city_services_probe.luau, tests/studio_city_party_walk_probe.luau, production/world/central-city-services.md, production/design/integration/p1-city, tests/run.luau
+
+Required checks: source-contract, regression, independent-review
+
+Dependencies: none
+
+Path rule tooling: Use reviewed bounded local commands/tests. Studio/Forge planners do not launch models; paid/model subprocess, MCP mutation and installation require actual authorization/capability.
+
+Path rule production-evidence: Reconcile latest goals/registries/scopes. One shared ledger, claim before writes, immediate lease check and preserved raw receipts. Different reviewer validates evidence; local checks cannot replace hardware/cloud/human gates.
+
 ### physical-mobile: Physical Android/iOS acceptance
 
 Requires actual device evidence. Studio emulation, mouse injection or screenshots cannot satisfy this task.

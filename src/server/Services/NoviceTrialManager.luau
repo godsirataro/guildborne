@@ -22,7 +22,8 @@ return function(deps:any)
   local slot:number?=nil
   for i=1,deps.MaxArenas do if not slots[i]then slot=i;break end end
   if not slot then return "TrialCapacity"end
-  local runId=deps.NewRunId();local eligible,problem=deps.Trials.start(session.record.data,userId,classId,runId,deps.Now())
+  local trials=if deps.TrialsFor then deps.TrialsFor(player)else deps.Trials
+  local runId=deps.NewRunId();local eligible,problem=trials.start(session.record.data,userId,classId,runId,deps.Now())
   if not eligible then return problem end
   local entry:any={slot=slot,epoch=session.epoch,token=session.token,delivery="Waiting"}
   slots[slot]=userId;entries[userId]=entry

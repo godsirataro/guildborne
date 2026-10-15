@@ -46,6 +46,44 @@ Generated output, import, Studio acceptance, hardware and human review are disti
 
 ## Forge tasks (these scopes apply only after a valid task claim)
 
+### human-party-ui: Human Party Ui
+
+Native EN/TH human Party roster/invites separate from NPC Party; independent transient revision.
+
+Environment: local; skill: guildborne-ux-native
+
+Write scopes: src/client/UI/HumanPartyView.luau, src/client/UI/SliceUI.luau, src/shared/Config/Localization.luau, production/launch/integration/party-ui.md, src/client/Controllers/SliceController.luau
+
+Required checks: source-contract, regression, independent-review
+
+Dependencies: none
+
+Path rule native-client: Native Roblox UI/presentation only. Send intent, never damage/value/rewards. Coordinate actual UI/Controller modules, EN/TH states and cleanup.
+
+Path rule shared-contracts: Shared definitions are client-safe. Preserve IDs/earned ancestry and progression separately from cosmetic IDs. Reconcile Novice 10/35/70 and Hall contracts.
+
+Path rule production-evidence: Reconcile latest goals/registries/scopes. One shared ledger, claim before writes, immediate lease check and preserved raw receipts. Different reviewer validates evidence; local checks cannot replace hardware/cloud/human gates.
+
+### p1-city-ui: Native city service readiness
+
+Reuse recipe cards in dedicated Crafting view, truthful Novice and station readiness with movement refresh. Project recruitment level explicitly.
+
+Environment: local; skill: guildborne-ux-native
+
+Write scopes: src/client/UI/SliceUI.luau, src/client/UI/ExpansionView.luau, src/client/UI/SettlementView.luau, src/shared/Data/TavernViewState.luau, src/shared/Data/CraftingViewState.luau, src/server/Systems/ViewProjection.luau, src/shared/Config/Localization.luau, tests/tavern_view_state.luau, tests/crafting_view_state.luau
+
+Required checks: source-contract, regression, independent-review
+
+Dependencies: none
+
+Path rule server-authority: Reuse actual services; server owns combat/inventory/currency/allocation/rewards/guild/build/escrow. Preserve fencing/receipts/saves/disabled flags. No production cloud writes or commerce activation.
+
+Path rule native-client: Native Roblox UI/presentation only. Send intent, never damage/value/rewards. Coordinate actual UI/Controller modules, EN/TH states and cleanup.
+
+Path rule shared-contracts: Shared definitions are client-safe. Preserve IDs/earned ancestry and progression separately from cosmetic IDs. Reconcile Novice 10/35/70 and Hall contracts.
+
+Path rule tooling: Use reviewed bounded local commands/tests. Studio/Forge planners do not launch models; paid/model subprocess, MCP mutation and installation require actual authorization/capability.
+
 ### ux-system: Native design system and all-screen inventory
 
 Audit and enhance existing native UI; produce tokens/components, navigation/flow map and complete state coverage. Include title, menu, hero, quest, skill tree, inventory, maps, shops, guild and exchange. Shop work is presentation-only through existing bindings. New commerce processing and live activation remain outside this work package.

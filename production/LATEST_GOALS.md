@@ -1,6 +1,12 @@
-# Current release scope — 2026-10-14
+## Latest delivery direction — 2026-10-15
 
-The approved Public boundary is now recorded in [LAUNCH_PLAN.md](LAUNCH_PLAN.md): Lv1–35, two main arcs, four cosmetic races / 13 presets, five companions per owner, personal Guild/island, six-human Party with shared Solo/Party encounters and divided EXP/loot, Premium shop/Battle Pass and free daily check-in. Guild has one human owner and NPC heroes only; human membership belongs to Federation after launch. See [Party6 contract](launch/integration/PARTY6_PLAN.md). Market, wars and Federation follow after launch. Local implementation is in progress; publishing, live commerce, cloud/device/human acceptance remain separate gates. Older references to human-member player guilds below are superseded by this clarification; preserve legacy data until an explicit migration is reviewed.
+First Public must be the **full game including Lv100/Class3, Federation, war, territory and player market**, per the user's latest instruction. Review [GL-2.0](design/integration/FULL_GAME_GOLIVE_GL2_TH.md) for phases P0–P13 and all twenty system groups. Lv35 is now an internal milestone. Older first-Public/post-launch classifications below and in existing manifests must be reconciled in P0; they do not override this direction. Runtime flags and historical evidence are unchanged. Detailed plan sign-off and actual release approval remain pending.
+
+Expansion update: [20-theme implementation plan](design/EXPANSION_PLAN.md) and [feature registry](design/features.json). Tactical/analytics source slices are now being integrated; all Public gates remain required.
+
+# Full-game delivery scope — 2026-10-15
+
+The first Public requires Lv1–100, Class3, the full campaign, Federation, war, territory and the Gold/material player market, together with every required group in [GL-2.0](design/integration/FULL_GAME_GOLIVE_GL2_TH.md). Lv1–35/two arcs is P2 internal Alpha only. Guild has one human owner and NPC heroes; human membership belongs to Federation. See [Party6 contract](launch/integration/PARTY6_PLAN.md). City/model work begins at P1 alongside systems; P8 closes that work. Content minimums remain proposals pending named-inventory decisions. Implementation, cloud/device/human acceptance and scoped release authorization remain separate gates. Preserve legacy saves and identity namespaces.
 
 # Guildborne latest-goal implementation contract — 2026-10-09
 

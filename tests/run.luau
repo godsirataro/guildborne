@@ -212,6 +212,17 @@ test("v1 profile without optional language remains valid and projects English", 
 	eq(project({ state = "Active", record = record }, "test", 1000).data.language, "en")
 	record.data.settings.language = "bad"; eq(Schema.validate(record, 1), false)
 end)
+test("recruitment projection uses authoritative starting level for legacy and Novice", function()
+	local project=require("../src/server/Systems/ViewProjection")(Content,Progression,Util)
+	local record=Schema.new(1,1000)
+	for _,case in ipairs({{ruleset=Content.ProgressionRulesets.Legacy,level=1},{ruleset=Content.ProgressionRulesets.Novice,level=10}})do
+		record.data.progression.ruleset=case.ruleset
+		record.data.progression.novice={claimed=6}
+		local before=Util.copy(record)
+		eq(project({state="Active",record=record},"test",1000).data.recruitmentLevel,case.level)
+		eq(record,before)
+	end
+end)
 test("duplicate item, quest, and adventurer IDs rejected", function()
 	for _, key in ipairs({ "Items", "Quests", "Adventurers" }) do
 		local copy = Util.copy(Content); local _, entry = next(copy[key]); entry.Id = "invalid"
@@ -547,6 +558,20 @@ require("./market")(test,eq,Util,Content,LegacySchema)
 require("./market_hardening")(test,eq,Util,Content,LegacySchema)
 require("./appearance")(test,eq)
 require("./hero_mentor")(test,eq,harness)
+require("./human_party")(test,eq)
+require("./human_party_protocol")(test,eq)
+require("./hero_tactics")(test,eq)
+require("./analytics_foundation")(test,eq)
+require("./shared_encounter_identity")(test,eq)
+require("./shared_pve_settlement")(test,eq)
+require("./shared_encounter_runtime")(test,eq)
+require("./shared_encounter_participation")(test,eq)
+require("./shared_pve_claims")(test,eq)
+require("./shared_combat_phases")(test,eq)
+require("./shared_combat_coordinator")(test,eq)
+require("./shared_combat_rewards")(test,eq)
+require("./shared_local_travel")(test,eq)
+require("./novice_studio_identity")(test,eq)
 require("./launch_content")(test,eq)
 require("./launch_rewards")(test,eq)
 require("./launch_transaction_integration")(test,eq,harness)

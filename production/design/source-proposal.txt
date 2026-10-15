@@ -1,0 +1,835 @@
+# Guildborne — Complete Expansion & Competitive Development Plan
+
+Game Design • Hero AI • Guild Management • Combat • Multiplayer • Retention • LiveOps • Website • Production Roadmap
+
+ท่านพี่ ข้าพเจ้าจะขยายข้อเสนอทั้งหมดที่เคยแนะนำให้กลายเป็น แผนพัฒนา Guildborne ฉบับครบวงจร โดยมองเป้าหมายระยะยาวคือการสร้างเกม Roblox ที่มีเอกลักษณ์ แข่งขันในตลาด RPG ได้ และเติบโตเป็นเกมที่มีชุมชนผู้เล่นจริงขอรับ
+
+แผนนี้อ้างอิง source และเอกสารใน GitHub branch `codex/guildborne-agentic-production-20261009` พร้อมข้อมูลออกแบบเกมจาก Roblox Creator Hub
+
+หลักการสำคัญ: ข้าพเจ้าไม่เสนอให้รื้อเกมหรือเพิ่มระบบซ้ำ แต่ให้ต่อยอดจากของเดิม โดยแยกข้อเสนอใหม่ออกจากขอบเขต Public ที่ท่านพี่อนุมัติไว้แล้ว
+
+## 1. เป้าหมายใหม่ของ Guildborne
+
+# GUILDBORNE
+
+Lead Your Heroes. Build Your Guild. Fight Together.
+
+Tactical Action RPG
+
+ผู้เล่นสู้เองและบัญชาการทีมฮีโร่ NPC
+
+Living Guild Simulation
+
+สร้างและพัฒนากิลด์ส่วนตัวอย่างมีความหมาย
+
+Cooperative Adventure
+
+Solo ได้ เล่นกับเพื่อนได้ ไม่บังคับรวม Party
+
+Long-term Progression
+
+สะสมฮีโร่ อุปกรณ์ ความสามารถ และความสำเร็จ
+
+### Core Gameplay Loop ที่ควรเป็นหัวใจของเกม
+
+1\. Prepare & Manage
+
+จัดทีม • เตรียมอุปกรณ์ • ฝึกฮีโร่ • เลือกกลยุทธ์
+
+2\. Explore & Fight
+
+สำรวจ • ทำเควสต์ • สั่งทีม • ต่อสู้กับบอส
+
+3\. Earn & Progress
+
+รับ EXP • Loot • Materials • พัฒนาความสัมพันธ์
+
+4\. Upgrade Your Guild
+
+คราฟต์ • อัปเกรด Hall • ปลดล็อกความสามารถ
+
+กลับไปเตรียมทีมสำหรับความท้าทายครั้งต่อไป
+
+ลูปนี้ควรทำให้ผู้เล่นรู้สึกถึงความก้าวหน้าทุกครั้งที่เล่น แม้จะมีเวลาเพียง 10–20 นาที โดยระยะเวลาดังกล่าวเป็นเป้าหมายด้านการออกแบบ ไม่ใช่เวลาที่ผ่านการทดสอบแล้ว
+
+## 2. ภาพรวมแผนเพิ่มทั้งหมด
+
+ข้าพเจ้าแบ่งเป็น 20 กลุ่มงาน ครอบคลุมทั้งข้อเสนอที่พูดไปก่อนหน้าและรายละเอียดที่ต้องมีเพื่อให้ทีมพัฒนานำไปทำจริงได้
+
+P0 = สำคัญทันที • P1 = สำคัญก่อน Public • P2 = ทำต่อหลัง Core Loop มั่นคง • P3 = Expansion
+
+| กลุ่มงาน                                | Priority | แนวทาง                                |
+| --------------------------------------- | -------- | ------------------------------------- |
+| 01. First-Time User Experience          | P0       | ปรับ 5–30 นาทีแรก                     |
+| 02. Advanced Hero AI                    | P0       | ต่อยอด AI ที่มี                       |
+| 03. Hero Team Combo                     | P0       | เพิ่มจุดขายหลัก                       |
+| 04. Combat Feel & Boss                  | P0       | ยกระดับระบบเดิม                       |
+| 05. Hero Identity & Bond                | P1       | เพิ่มระบบความผูกพัน                   |
+| 06. Living Guild Management             | P1       | เพิ่มความลึกของฐาน                    |
+| 07. Quest & Exploration                 | P1       | ยกระดับเนื้อหาเดิม                    |
+| 08. Human Party 6                       | P1       | Requirement เดิมที่ยังไม่เสร็จ        |
+| 09. Shared PvE & Rewards                | P1       | Requirement เดิมที่ยังไม่เสร็จ        |
+| 10. Economy & Crafting                  | P1       | ปรับสมดุลและต่อยอด                    |
+| 11. UX / Mobile / Accessibility         | P1       | ยกระดับคุณภาพ                         |
+| 12. Save / Security / Performance       | P1       | Release blocker                       |
+| 13. Analytics & Balance                 | P0       | วัดความสนุกและปัญหา                   |
+| 14. Guild Research & Specialization     | P2       | ระบบใหม่                              |
+| 15. Dynamic World Events                | P2       | ระบบใหม่                              |
+| 16. Replayability & Endgame             | P2       | เพิ่มเป้าหมายระยะยาว                  |
+| 17. Social / Cosmetic / Personalization | P2       | ขยายระบบเดิม                          |
+| 18. Daily / Season / Monetization       | P1–P2    | ปิด requirement เดิมแล้วพัฒนา LiveOps |
+| 19. Official Website & Discovery        | P1       | เว็บ, Branding, Marketing             |
+| 20. AI Production & Release Pipeline    | P0–P1    | ต่อยอด Studio v3 และ Forge            |
+
+> สถานะเหล่านี้เป็น ลำดับความสำคัญที่ข้าพเจ้าเสนอ ไม่ใช่สถานะงานจริงใน GitHub และ P0/P1 ไม่ได้หมายความว่าทุกฟีเจอร์ต้องเสร็จในเวอร์ชันเต็มทันที
+
+## 3. แผนระบบการเล่นหลัก (Gameplay)
+
+### 01 — First-Time User Experience (FTUE)
+
+P0 — ต้องปรับก่อนทดสอบผู้เล่นใหม่
+
+ปัญหาที่ต้องแก้: ผู้เล่นใหม่อาจยังไม่รู้ว่า Guildborne สนุกตรงไหน หากต้องทำ Novice หลายภารกิจก่อนสัมผัสระบบบริหารฮีโร่
+
+ระบบที่มีอยู่แล้วคือ Novice Journey, บทเรียนอาชีพ, Class Trial, Tutorial Combat และ Hall Story ไม่จำเป็นต้องสร้างใหม่ทั้งหมด
+
+สิ่งที่ควรปรับคือ ลำดับการนำเสนอ ให้รู้สึกว่าเริ่มผจญภัยทันที
+
+| เวลาเป้าหมาย | ประสบการณ์                                                |
+| ------------ | --------------------------------------------------------- |
+| 0–1 นาที     | ควบคุมตัวละครและโจมตีศัตรู                                |
+| 1–3 นาที     | เรียนรู้ Dodge, Attack และ Skill แรก                      |
+| 3–5 นาที     | ทดลองสั่ง NPC พันธมิตรชั่วคราว                            |
+| 5–10 นาที    | เจอศัตรูพิเศษและทดลองสั่งทีมร่วมสู้                       |
+| 10–20 นาที   | เห็นความก้าวหน้าและเป้าหมายเลือกอาชีพ                     |
+| 20–30 นาที   | เข้าใจว่าจะสร้าง Personal Guild และรับฮีโร่ถาวรได้อย่างไร |
+
+รายละเอียดสำคัญ: NPC ช่วง Tutorial เป็นตัวละครยืมชั่วคราว ไม่ใช่การปลดล็อกฮีโร่ถาวรก่อน Class1/Hall และไม่จำเป็นต้องบังคับให้ถึง Lv10 ภายใน 30 นาที ถ้าจังหวะการเล่นจริงไม่เหมาะสม
+
+ควรเพิ่มระบบ Contextual Tutorial และ Hint เมื่อผู้เล่นติดขัด แทนการแสดงคำอธิบายยาว ๆ ตั้งแต่แรก ซึ่งสอดคล้องกับแนวทาง Onboarding ของ Roblox&#x20;
+
+[image](https://www.google.com/s2/favicons?domain=https://create.roblox.com\&sz=32)
+
+Documentation - Roblox Creator Hub
+
++1
+
+
+
+เกณฑ์รับงาน: ผู้เล่นใหม่ที่ไม่เคยรู้จักเกมมาก่อนสามารถเล่นและเข้าใจเป้าหมายหลักได้ โดยไม่ต้องมีผู้พัฒนาอธิบาย และต้องวัดเวลาที่ใช้กับจุดที่ผู้เล่นเลิกเล่นจริง
+
+### 02 — Advanced Hero AI
+
+P0 — จุดขายหลักของเกม
+
+ปัจจุบันมีพื้นฐานการทำงานของฮีโร่ใน `HeroService.luau`, `CombatService.luau` และระบบจัดการคำสั่งต่อสู้แล้ว
+
+ข้าพเจ้าเสนอให้ขยายจาก AI ที่ติดตามและโจมตี ไปสู่ Tactical Companion AI ที่ผู้เล่นกำหนดกลยุทธ์ได้
+
+ตัวอย่างระบบสั่งการฮีโร่
+
+Aggressive
+
+รุกโจมตีเป้าหมายที่เหมาะสม
+
+Defensive
+
+รักษาตำแหน่งและปกป้องทีม
+
+Focus Target
+
+รวมกำลังโจมตีเป้าหมายเดียว
+
+Protect Leader
+
+ช่วยเหลือและป้องกันหัวหน้าทีม
+
+Hold Position
+
+รักษาจุดยุทธศาสตร์
+
+Regroup
+
+กลับมารวมตัวและจัด Formation
+
+ระบบขั้นสูงที่เพิ่มต่อได้
+
+| ระบบ              | การทำงานที่เสนอ                                    |
+| ----------------- | -------------------------------------------------- |
+| Tactical Preset   | ตั้งค่ากลยุทธ์ของฮีโร่แต่ละตัวแล้วบันทึกไว้        |
+| Skill Priority    | กำหนดให้ใช้สกิลตามสถานการณ์ เช่น Heal เมื่อ HP ต่ำ |
+| Threat Awareness  | Tank รู้จักปกป้องสมาชิกที่ถูกโจมตี                 |
+| Formation         | วาง Tank หน้า, Melee กลาง, Ranged/Support หลัง     |
+| Smart Positioning | ฮีโร่ระยะไกลรักษาระยะจากศัตรู                      |
+| Manual Override   | ผู้เล่นสั่งแทรก AI ได้ทันที                        |
+| Behavior Feedback | แสดงว่า AI กำลังทำอะไร และเหตุใดจึงไม่ใช้สกิล      |
+
+ตัวอย่าง Priest อาจมีเงื่อนไขดังนี้
+
+```
+IF ally.HP < 40%
+AND Heal is ready
+AND ally is in range
+THEN cast Heal
+
+ELSE IF enemy is attacking Leader
+AND support skill is available
+THEN use Support
+
+ELSE follow Defensive behavior
+```
+
+นี่เป็นเพียงตัวอย่างกฎ AI ซึ่งยังต้องกำหนดระยะ, คูลดาวน์, ความปลอดภัยและการประเมินเป้าหมายจริง
+
+ด้านสถาปัตยกรรม ควรแยกเป็น Perception → Tactical Decision → Action Intent → Server Validation โดยนำไปเชื่อมกับระบบเดิม ไม่สร้าง Combat Authority อีกชุด
+
+เกณฑ์รับงาน: สั่งครบ 5 ฮีโร่แล้วต้องตอบสนองถูกต้อง ไม่เข้าโจมตีข้ามสิทธิ์ ไม่ติดเส้นทางจนเล่นต่อไม่ได้ และวัดต้นทุน AI เมื่อมีผู้เล่นหลายคนพร้อมกัน
+
+### 03 — Hero Team Combo System
+
+P0 — Signature Feature ใหม่
+
+นี่เป็นข้อเสนอที่ข้าพเจ้าคิดว่ามีคุณค่าสูงที่สุดต่อความแตกต่างของ Guildborne
+
+เกมอื่นมีระบบสกิลมากมาย แต่ Guildborne ควรมี การประสานสกิลระหว่างผู้เล่นและ NPC ที่เกิดจากการสั่งทีมอย่างชาญฉลาด
+
+ตัวอย่างคอมโบ:
+
+Knight
+
+Taunt
+
+Mage
+
+Area Spell
+
+Archer
+
+Weak Point
+
+## Team Combo!
+
+เปิดช่องโจมตีบอสด้วยการประสานบทบาทของทีม
+
+ตัวอย่างความสามารถที่เสนอ:
+
+| Combo            | ตัวละครที่ใช้    | ผลลัพธ์ตัวอย่าง                      |
+| ---------------- | ---------------- | ------------------------------------ |
+| Guardian Strike  | Knight + Warrior | เปิดช่องโจมตีศัตรูที่กำลังถูกป้องกัน |
+| Elemental Volley | Mage + Archer    | ยิงธาตุลงพื้นที่ที่ Mage เตรียมไว้   |
+| Holy Stand       | Knight + Priest  | ป้องกันทีมจากการโจมตีหนัก            |
+| Hunter's Mark    | Archer + Warrior | เปิดเผยจุดอ่อนเป้าหมาย               |
+| Arcane Barrier   | Mage + Priest    | ป้องกันความเสียหายช่วงสั้น           |
+
+ข้าพเจ้าแนะนำให้เริ่มเพียง 2–3 คอมโบที่เล่นสนุกจริง ก่อนเพิ่มทั้ง Catalog
+
+ระบบควรเปิดช่องให้ผู้เล่น Solo ที่มีทีม NPC ใช้งานได้ และการกดคอมโบต้องมีจังหวะ ฝีมือ คูลดาวน์ และการตอบโต้ของศัตรู ไม่ใช่แค่เพิ่ม Damage อัตโนมัติจนเกมง่ายเกินไป
+
+### 04 — Combat Feel & Boss Design
+
+P0 — ต้องพัฒนาคู่กับ Hero AI
+
+ข้อเสนอคือปรับคุณภาพการต่อสู้ ไม่ใช่เปลี่ยนระบบ Combat เดิมทั้งหมด
+
+| ด้าน            | รายละเอียดที่ควรปรับ                           |
+| --------------- | ---------------------------------------------- |
+| Attack Feedback | เสียงกระแทก, Impact VFX, Hit Confirmation      |
+| Animation       | ท่าต่อสู้มี Wind-up, Contact, Recovery ชัดเจน  |
+| Dodge           | มีจังหวะหลบและตอบโต้ที่ฝึกฝนได้                |
+| Enemy Telegraph | มีสัญญาณเตือนก่อนการโจมตีหนัก                  |
+| Boss Mechanics  | เปลี่ยนรูปแบบโจมตีตามสถานการณ์                 |
+| Weak Point      | ให้ผู้เล่นใช้ตำแหน่งหรือ Skill Combo ได้เปรียบ |
+| Camera          | สั่นเบา ๆ เฉพาะจังหวะสำคัญและปิดได้            |
+| Accessibility   | ไม่พึ่งสีเพียงอย่างเดียว ลด Flash/Motion ได้   |
+
+บอสที่ดีไม่ควรเป็นเพียงศัตรู HP สูง แต่ต้องบังคับให้ผู้เล่นตัดสินใจ เช่น สั่ง Regroup เพื่อหลบการโจมตีวงกว้าง หรือส่ง Tank ไปดึงความสนใจเพื่อให้ทีมรอด
+
+สิ่งสำคัญคือ Hit Detection, Damage และ Reward ยังต้องให้ Server เป็นผู้ตัดสิน เอฟเฟกต์ภาพหรือเสียงไม่สามารถสร้างความเสียหายหรือไอเทมขึ้นมาเองได้
+
+## 4. ระบบฮีโร่และการบริหารกิลด์
+
+### 05 — Hero Identity, Personality & Bond
+
+P1 — เพิ่มแรงผูกพันระยะยาว
+
+จาก Feature F12 ในเอกสารเดิม Hero Identity มี source บางส่วนแล้ว แต่ Bond และ Personal Stories ยังไม่ได้รับรองว่าเล่นได้ครบ
+
+ข้าพเจ้าอยากให้ฮีโร่มีความแตกต่างมากกว่า Class, Level และ Rank
+
+| องค์ประกอบ       | สิ่งที่เสนอ                             |
+| ---------------- | --------------------------------------- |
+| Hero Personality | Brave, Cautious, Loyal, Curious เป็นต้น |
+| Hero Preferences | ชอบกิจกรรมหรือรูปแบบการฝึกบางชนิด       |
+| Bond Level       | เพิ่มความสัมพันธ์จากการทำกิจกรรมร่วมกัน |
+| Personal Quest   | ภารกิจเฉพาะตัวละคร                      |
+| Hero Dialogue    | พูดตามเหตุการณ์และความสัมพันธ์          |
+| Guild Activity   | เห็นฮีโร่ฝึก พักผ่อน หรือทำงานในฐาน     |
+| Team Synergy     | ปลดล็อกการทำงานร่วมกันบางรูปแบบ         |
+
+ตัวอย่าง: ฮีโร่ Knight ชื่อ Rowan เคยช่วยผู้เล่นผ่านบอสครั้งสำคัญ ต่อมาอาจเปิดภารกิจส่วนตัวเกี่ยวกับคำสาบานของอัศวิน และเมื่อสำเร็จจะปลดล็อก Cosmetic หรือ Team Animation พิเศษ
+
+ช่วงเริ่มต้นไม่ควรให้ Bond เพิ่มพลังจนผู้เล่นต้องฟาร์มความสัมพันธ์แบบบังคับ เพราะจะกลายเป็นงานน่าเบื่อแทนความผูกพัน
+
+หลักการทางข้อมูล: ฮีโร่แต่ละ instance ต้องมี identity ของตนเอง แม้ชื่อหรือ Class ซ้ำกัน ห้ามใช้ชื่อเป็น Primary Key หรือทำให้การย้ายอุปกรณ์/Save Migration สับสน
+
+### 06 — Living Guild Management
+
+P1 — เพิ่มความหมายให้ Personal Guild
+
+Hall ใน Guildborne ปัจจุบันมีหน้าที่สำคัญต่อ Level Cap และการปลดล็อกเนื้อหาอยู่แล้ว ข้าพเจ้าไม่แนะนำให้แก้สูตรเดิม
+
+สิ่งที่เพิ่มคือ ให้ฐานกิลด์ส่งผลต่อวิธีที่ผู้เล่นเตรียมทีมและใช้ชีวิตในเกม
+
+| อาคาร           | ความสามารถเพิ่มเติมที่เสนอ                     |
+| --------------- | ---------------------------------------------- |
+| Guild Hall      | แสดงความก้าวหน้าและ Achievement ของกิลด์       |
+| Hero Quarters   | ให้ฮีโร่พักและเปลี่ยนทีม                       |
+| Training Ground | ทดลองสกิลและ Formation                         |
+| Blacksmith      | สร้างและปรับแต่งอุปกรณ์ตาม Recipe              |
+| Warehouse       | จัดการ Materials และเตรียมของสำหรับ Expedition |
+| Strategy Table  | บันทึก Team Preset, เลือกภารกิจ                |
+| Trophy Hall     | แสดงบอสที่ปราบและของสะสม                       |
+| Research Room   | รองรับระบบ Guild Research ในอนาคต              |
+
+สามอาคารแรกที่ควรทำให้สนุกจริงคือ Training Ground, Strategy Table และ Blacksmith เพราะเชื่อมกับ Core Loop โดยตรง
+
+ตัวอย่าง: ผู้เล่นกลับมาจากบอสที่แพ้เพราะทีมรักษาไม่ทัน จึงกลับมาฝึก Priest ปรับ Formation และคราฟต์อุปกรณ์ป้องกัน จากนั้นกลับไปสู้ใหม่และเห็นผลของการตัดสินใจ
+
+นี่คือ Guild Management ที่มีความหมาย ไม่ใช่แค่วางอาคารเพื่อเพิ่มค่าสถานะ
+
+### 07 — Quest & Exploration Improvement
+
+P1 — ปรับระบบเดิม
+
+Guildborne มีระบบ Main/Side/Secret/World/Class/Hero Quests รวมถึง Journal และ Quest Tracker อยู่แล้ว ข้าพเจ้าแนะนำให้เน้นเรื่องคุณภาพของภารกิจ
+
+ภารกิจควรมีประเภทแตกต่างกัน เช่น Combat, Escort, Investigation, Gathering, Defense, Puzzle และ Team Challenge โดยเน้นให้แต่ละประเภทใช้ความสามารถของฮีโร่ในรูปแบบต่างกัน
+
+เพิ่ม Quest Hints เมื่อผู้เล่นติดขัด, ระบบติดตามเป้าหมายที่ไม่รกจอ, NPC Dialogue ที่ตอบสนองต่อความคืบหน้า และการเดินทางกลับเมื่อเควสต์ล้มเหลวโดยไม่ทำให้ Save ค้าง
+
+ห้ามเปลี่ยน Main Campaign ที่อนุมัติแล้ว: Public ยังคงอยู่ที่สอง Arc แรก รวม 12 Campaign Steps ส่วน Arc ต่อไปและ Class3 อยู่หลังเปิดเกม
+
+## 5. Multiplayer & Shared PvE
+
+สองระบบนี้เป็นขอบเขต Public ที่อนุมัติแล้ว ไม่ใช่ฟีเจอร์ใหม่ที่ข้าพเจ้าเพิ่งเสนอ และยังเป็นส่วนที่มีความเสี่ยงทางเทคนิคสูงที่สุด
+
+### 08 — Human Party 6 Players
+
+เป้าหมาย: ผู้เล่นมนุษย์รวมทีมกันได้สูงสุด 6 คน โดยยังมี Personal Guild และ NPC ของตัวเอง
+
+ต้องแยกความหมายให้ชัด:
+
+| ระบบ           | สมาชิก                            | ลักษณะ        |
+| -------------- | --------------------------------- | ------------- |
+| Personal Guild | เจ้าของมนุษย์ 1 คน + NPC          | ถาวร          |
+| Hero Team      | NPC สูงสุด 5 ตัวต่อเจ้าของ        | ทีมต่อสู้     |
+| Human Party    | ผู้เล่นมนุษย์ 1–6 คนรวม Leader    | กลุ่มชั่วคราว |
+| Federation     | หลายผู้เล่นและหลาย Personal Guild | หลัง Public   |
+
+ระบบ Human Party ควรรองรับ Invite, Accept, Decline, Leave, Kick, Disband, Leader Transfer, Ready Check, Shared Travel และ Disconnect/Rejoin Grace
+
+ตัวอย่างการเล่น:
+
+ผู้เล่น A เป็น Knight, B เป็น Mage, C เป็น Archer แต่ละคนมีทีม NPC ของตัวเอง ทั้งสามรวม Human Party แล้วเข้า Dungeon เดียวกัน แต่ยังควบคุมฮีโร่ของตัวเองเท่านั้น
+
+หาก B หลุดจากเซิร์ฟเวอร์ จะต้องมีนโยบายกลับเข้าทีมที่ชัดเจน โดยไม่ทำให้ข้อมูลของคนอื่นเสียหาย
+
+ข้อห้าม: Leader ของ Human Party ไม่มีสิทธิ์แก้ไอเทม สถานะ หรือกิลด์ส่วนตัวของสมาชิก
+
+### 09 — Shared PvE & Reward Settlement
+
+เป้าหมาย: Solo Player, Human Party และทีม NPC ของแต่ละคนต่อสู้กับศัตรูชุดเดียวกันได้จริง
+
+ปัจจุบัน `RegionalCombat.luau` มี Encounter แบบ `OfflinePersonal` ตามเจ้าของ จึงต้องเปลี่ยนเฉพาะพื้นที่ที่รองรับ Shared PvE ไปใช้ Server-authoritative Shared Encounter
+
+ตัวอย่างระบบแบ่ง EXP
+
+สมมติศัตรูหนึ่ง Encounter มี EXP Pool คงที่ 600 EXP
+
+| เจ้าของที่มีสิทธิ์ | EXP ต่อเจ้าของ | รวมแจก |
+| ------------------ | -------------- | ------ |
+| 1 คน               | 600            | 600    |
+| 2 คน               | 300            | 600    |
+| 3 คน               | 200            | 600    |
+| 6 คน               | 100            | 600    |
+
+ตัวอย่างตาม PARTY6_PLAN ไม่ใช่อัตรา EXP ที่ใช้งานจริง ฮีโร่ NPC นับผลงานให้เจ้าของ แล้วจึงแบ่ง EXP ภายในทีมตามกติกาที่ต้องออกแบบต่อ
+
+สิ่งที่ต้องกำหนดเพิ่มคือการนับผู้มีส่วนร่วม ไม่ใช่แจกให้ทุกคนที่ยืนใกล้บอส ผู้เล่นที่สร้างความเสียหาย รักษาเพื่อนหรือป้องกันทีมอย่างมีความหมายต้องมีสิทธิ์ โดยไม่บังคับ Last Hit
+
+ระบบต้องจัดการของที่แบ่งไม่ได้ เช่น อาวุธหนึ่งชิ้นจะต้องแจกเพียงครั้งเดียว ส่วน Quest Key Item ที่แต่ละคนต้องใช้ควรใช้สิทธิ์เฉพาะบุคคล ไม่ถูกหารจนทำเควสต์ต่อไม่ได้
+
+ด้านข้อมูลจำเป็นต้องมี Encounter ID, Owner Eligibility, Settlement Snapshot, Pending Claims และ Receipt ที่ทำซ้ำแล้วไม่เพิ่มรางวัล เพื่อให้การหลุดเกมหรือเซิร์ฟเวอร์ล่มไม่สร้างไอเทมซ้ำ
+
+การทดสอบ 6 ผู้เล่นที่พาฮีโร่คนละ 5 ตัวหมายถึง 36 Allied Actors ก่อนรวมศัตรู ซึ่งเป็น Stress Scenario ที่ต้องวัด ไม่ใช่ขนาดเซิร์ฟเวอร์ที่รับรองแล้ว
+
+## 6. Economy, UX และความปลอดภัย
+
+### 10 — Economy & Crafting Balance
+
+Guildborne มีระบบ Gold, Inventory, Materials, Equipment, Crafting และ Market foundation อยู่แล้ว
+
+ข้าพเจ้าเสนอให้สร้าง Economy Balance Model เพื่อให้ของแต่ละอย่างมีคุณค่าและผู้เล่นมีเหตุผลในการใช้ทรัพยากร
+
+| ระบบเศรษฐกิจ | แนวทาง                                          |
+| ------------ | ----------------------------------------------- |
+| Gold Source  | เควสต์ ต่อสู้ ขายของ Expedition                 |
+| Gold Sink    | คราฟต์ ปรับแต่ง อัปเกรด Guild                   |
+| Materials    | เก็บจากพื้นที่และศัตรูตามกฎที่กำหนด             |
+| Equipment    | ของมีความแตกต่างด้านการเล่น ไม่ใช่แค่เลขสูงกว่า |
+| Crafting     | มี Recipe ที่ผู้เล่นเข้าใจและคาดการณ์ต้นทุนได้  |
+| Loot Rarity  | แยกความหายากกับความมีประโยชน์                   |
+| Marketplace  | หลัง Public ตาม Release Gate เดิม               |
+
+ควรวัดปริมาณ Gold ที่สร้างและถูกใช้จริง เพื่อป้องกันเงินเฟ้อในเกม และไม่ควรเพิ่มระบบสุ่มรางวัลแบบเสียเงินจริงโดยไม่มีการพิจารณาความเป็นธรรมและกฎแพลตฟอร์ม
+
+### 11 — Mobile UX & Accessibility
+
+ผู้เล่น Roblox จำนวนมากเข้าเกมผ่านมือถือ จึงต้องออกแบบตั้งแต่ต้น ไม่ใช่ย่อ UI จาก PC ลงมา
+
+สิ่งที่ต้องมีคือปุ่ม Attack, Dodge, Skill, Hero Commands และการเปลี่ยนเป้าหมายที่กดได้ถนัดมือ ข้อมูล HP/Status ต้องมองเห็นระหว่างต่อสู้โดยไม่บังจอ
+
+แนะนำให้มี Command Wheel สำหรับสั่งฮีโร่ด้วยสัมผัสเพียงไม่กี่ครั้ง และให้คำสั่งฉุกเฉิน เช่น Regroup ใช้ได้รวดเร็ว
+
+ด้าน Accessibility ควรมีขนาดข้อความที่อ่านง่าย สัญลักษณ์ที่ไม่อาศัยสีเพียงอย่างเดียว ตัวเลือกลดภาพกระพริบ/Camera Motion และระบบ TH/EN ที่ข้อความไม่ล้นหน้าจอ
+
+### 12 — Save, Anti-Exploit & Performance
+
+ส่วนนี้เป็น Release Blocker ไม่ใช่ของตกแต่งที่ทำทีหลังได้
+
+| หัวข้อ              | ต้องทดสอบอะไร                            |
+| ------------------- | ---------------------------------------- |
+| Save Migration      | ข้อมูลเก่าและใหม่ยังโหลดได้              |
+| Session Ownership   | ไม่มีสองเซิร์ฟเวอร์เขียนข้อมูลผิดเจ้าของ |
+| Reward Idempotency  | กด Claim ซ้ำไม่ได้เงินซ้ำ                |
+| Inventory Integrity | ย้ายอุปกรณ์แล้วไม่ทำของหายหรือเพิ่มเอง   |
+| Disconnect Recovery | หลุดระหว่าง Quest/Reward แล้วกลับมาได้   |
+| Server Authority    | Client ส่งคำสั่ง ไม่ใช่ผลการคำนวณ        |
+| Performance         | วัด AI, Physics, VFX, Network, Memory    |
+| Device              | Android/iOS จริง เล่นต่อเนื่อง 30 นาที   |
+
+สำหรับ DataStore ต้องระวังการเขียนที่เซิร์ฟเวอร์ไม่ได้รับผลตอบกลับ เพราะอาจมีการบันทึกสำเร็จไปแล้ว การ Retry จึงต้องไม่ทำให้รางวัลหรือรายการซื้อซ้ำ&#x20;
+
+[image](https://www.google.com/s2/favicons?domain=https://create.roblox.com\&sz=32)
+
+Documentation - Roblox Creator Hub
+
+
+
+ด้าน Performance แนะนำใช้ MicroProfiler และทดสอบอุปกรณ์จริง รวมทั้งความร้อนและ FPS ที่ลดลงระหว่างเล่นยาว ไม่ใช้ผล Emulator เป็นหลักฐานทดแทน&#x20;
+
+[image](https://www.google.com/s2/favicons?domain=https://create.roblox.com\&sz=32)
+
+Documentation - Roblox Creator Hub
+
++1
+
+
+
+## 7. Analytics & Game Balancing
+
+### 13 — Product Analytics Contract
+
+ข้าพเจ้าถือว่าส่วนนี้เป็น P0 เพราะถ้าไม่มีข้อมูล เราจะไม่รู้ว่าเพิ่มระบบไหนแล้วเกมสนุกขึ้นจริง
+
+ปัจจุบันมี `AnalyticsAdapter.luau` ซึ่งเป็นจุดเชื่อม Provider อยู่แล้ว แต่ยังต้องออกแบบ Event Schema และ Dashboard
+
+Guildborne Player Funnel ที่เสนอ
+
+Join Game
+
+100% ของกลุ่มเริ่มต้น
+
+First Combat
+
+ต้องวัดจริง
+
+First Hero Command
+
+ต้องวัดจริง
+
+First Meaningful Reward
+
+ต้องวัดจริง
+
+Class1 / Guild Unlock
+
+ต้องวัดจริง
+
+ความยาวแถบเป็นภาพสมมติสำหรับอธิบาย Funnel ไม่ใช่สถิติ Guildborne
+
+เหตุการณ์ที่ควรติดตามเพิ่มเติมคือ Hero Command Usage, Skill Usage, Boss Death, Quest Abandonment, Hall Upgrade, Gold Source/Sink และ Party Session Success
+
+Roblox มี Funnel, Custom และ Economy Events รองรับการวิเคราะห์เหล่านี้โดยตรง แต่ Events ประเภทดังกล่าวต้องส่งจาก Server ใน Published Experience ไม่ใช่ Studio&#x20;
+
+[image](https://www.google.com/s2/favicons?domain=https://create.roblox.com\&sz=32)
+
+Documentation - Roblox Creator Hub
+
++2
+
+
+
+### เกณฑ์วัดความสำเร็จที่เสนอ
+
+| Metric                 | ใช้ตัดสินอะไร                       |
+| ---------------------- | ----------------------------------- |
+| First-play Bounce Rate | เกมทำให้คนเลิกเร็วหรือไม่           |
+| First Combat Time      | เริ่มสนุกได้เร็วแค่ไหน              |
+| Hero Command Adoption  | จุดขายหลักถูกใช้งานจริงไหม          |
+| D1 Retention           | คนกลับมาวันถัดไปไหม                 |
+| D7 Retention           | เกิดความผูกพันกับเกมหรือยัง         |
+| Average Session Time   | Core Loop มีความลึกเพียงพอไหม       |
+| Party Rejoin Success   | ระบบเล่นกับเพื่อนเชื่อถือได้หรือไม่ |
+| Crash / Save Failure   | เกมพร้อมสำหรับผู้เล่นจำนวนมากไหม    |
+
+ข้าพเจ้าไม่แนะนำให้ตั้ง D1 หรือ D7 เป็นตัวเลขสัญญาล่วงหน้า ควรเริ่มจากผล Closed Beta แล้วเทียบกับ Benchmark เกมประเภทใกล้เคียงเมื่อมีข้อมูลเพียงพอ
+
+แนวทางนี้สอดคล้องกับ Roblox Discovery ที่พิจารณาสัญญาณอย่าง Play Through Rate, Bounce Rate, จำนวนวันที่เล่น และระยะเวลาที่เล่น&#x20;
+
+[image](https://www.google.com/s2/favicons?domain=https://create.roblox.com\&sz=32)
+
+Documentation - Roblox Creator Hub
+
+
+
+## 8. ระบบขยายหลัง Core Loop แข็งแรง
+
+สี่ระบบถัดไปเป็น ข้อเสนอเพิ่มเติมสำหรับการเติบโตระยะยาว ไม่จำเป็นต้องบังคับใส่ใน Public รุ่นแรก
+
+### 14 — Guild Research & Specialization
+
+ระบบใหม่ที่จะทำให้แต่ละ Personal Guild มีแนวทางต่างกัน
+
+ตัวอย่าง 3 สายที่เสนอ:
+
+Military
+
+กลยุทธ์และฝึกทีม
+
+Crafting
+
+ผลิตและปรับแต่ง
+
+Exploration
+
+สำรวจและ Expedition
+
+Research ใช้ทรัพยากรที่หาได้ในเกมและปลดล็อกความสามารถด้านการจัดการ ไม่ควรใช้เพื่อข้าม Class Quest, Hall Gate หรือ Level Cap
+
+ควรเริ่มต้นด้วย Node น้อย ๆ ก่อน และเปิดให้ปรับสายได้ภายใต้ต้นทุนที่สมเหตุสมผล ไม่ลงโทษผู้เล่นใหม่ที่เลือกผิดจนต้องเริ่มเกมใหม่
+
+### 15 — Dynamic World Events
+
+ระบบเหตุการณ์ในโลกที่เปลี่ยนตามรอบเวลา ทำให้พื้นที่เก่ากลับมาน่าสนใจ
+
+ตัวอย่างกิจกรรมที่เสนอ:
+
+| Event           | การเล่น                        |
+| --------------- | ------------------------------ |
+| Goblin Raid     | ป้องกันเมืองหรือจุดพัก         |
+| Missing Caravan | ตามหาขบวนสินค้าที่หายไป        |
+| Wandering Boss  | บอสพิเศษปรากฏในพื้นที่ที่กำหนด |
+| Resource Surge  | พื้นที่หนึ่งมีทรัพยากรพิเศษ    |
+| Guild Defense   | ป้องกันฐานจากศัตรู NPC         |
+| Forgotten Ruins | ค้นพบภารกิจสำรวจชั่วคราว       |
+
+ควรใช้ Event ที่ประกอบจากระบบ Quest/Combat/Reward เดิม ไม่สร้างระบบแจกไอเทมใหม่โดยไม่ผ่าน Economic Validation
+
+หากเป็น Shared Event ต้องใช้กฎแบ่งรางวัลเดียวกับ Shared PvE เพื่อไม่สร้างช่องโหว่ให้ผู้เล่นรับของซ้ำ
+
+### 16 — Replayability & Endgame
+
+ปัญหาของ RPG คือเมื่อผู้เล่นถึง Max Level หรือผ่านเนื้อเรื่องหลักแล้ว เขาจะกลับมาเล่นทำไม
+
+สำหรับ Public Lv35 ข้าพเจ้าเสนอให้เริ่มจาก Replayable Challenges ที่ใช้เนื้อหาที่ปลดล็อกแล้ว โดยไม่เปิด Tower หรือ Class3 ก่อนกำหนด
+
+ตัวอย่างระบบหลังจากจบสอง Arc:
+
+| ระบบ                 | เหตุผลที่กลับมาเล่น                  |
+| -------------------- | ------------------------------------ |
+| Challenge Encounters | ศัตรูเดิมแต่มีรูปแบบการต่อสู้ต่างกัน |
+| Hero Mastery         | ฝึกใช้ฮีโร่แต่ละสายอย่างเชี่ยวชาญ    |
+| Guild Achievements   | สะสมความสำเร็จและของตกแต่ง           |
+| Equipment Builds     | ทดลองการจัดทีมหลายรูปแบบ             |
+| Team Trial           | ทดสอบความสามารถในการบัญชาการทีม      |
+| Seasonal Challenges  | ภารกิจหมุนเวียนโดยไม่เพิ่ม Level Cap |
+
+เมื่อขยายหลัง Public ค่อยเพิ่ม Tower, Class3, Lv70–100 และ Late-game Bosses ที่เตรียมไว้ใน Catalog
+
+ไม่ควรสร้าง Endgame ที่ต้อง Grind ซ้ำเดิมหลายร้อยรอบเพื่อเพิ่มตัวเลขอย่างเดียว เพราะจะลดความรู้สึกสนุกของการบริหารทีม
+
+### 17 — Social, Cosmetic & Personalization
+
+ระบบ Island Visits มี foundation แล้วสำหรับการเยี่ยมเกาะของผู้เล่นที่อยู่ในเซิร์ฟเวอร์เดียวกัน
+
+ข้าพเจ้าเสนอให้ขยายเป็น Social Expression โดยให้ผู้เล่นอวดความก้าวหน้าของ Personal Guild ผ่าน Trophy Display, Hall Decoration, Hero Showcase และ Appearance Presets
+
+ส่วนที่ควรทำหลัง Public คือ Cross-server Visits, Federation Showcase และกิจกรรมระหว่างสมาพันธ์ โดยต้องจัดการสิทธิ์การเข้าเกาะและความปลอดภัยของผู้เล่นให้ครบ
+
+ควรหลีกเลี่ยงระบบ Chat/UGC แบบกำหนดเองที่ไม่มีมาตรการกลั่นกรอง และใช้ระบบ Roblox ที่เหมาะสมกับอายุและสิทธิ์ของผู้เล่นเป็นหลัก
+
+## 9. Retention, LiveOps และ Monetization
+
+### 18 — Daily Check-in, Season & Premium Shop
+
+ส่วนนี้แยกออกเป็นสองระยะ เพราะมีข้อกำหนด Public เดิมและงานขยายระยะยาว
+
+สิ่งที่อยู่ในแผน Public เดิม
+
+| ระบบ                        | สถานะจาก Repository                 |
+| --------------------------- | ----------------------------------- |
+| Daily Check-in 7 ขั้น UTC   | มี Local Preview                    |
+| ขาดวันแล้วไม่รีเซ็ตลำดับ    | เป็นกติกาปัจจุบัน                   |
+| Season 6 Free Preview Tiers | มี Source                           |
+| Premium Battle Pass         | ยังต้องทำ entitlement และ lifecycle |
+| Premium Shop                | ราคาและ Product IDs ยังไม่ยืนยัน    |
+| Purchase Receipt Handling   | ยังต้องรับรองการส่งมอบและ Recovery  |
+
+สิ่งที่ข้าพเจ้าเสนอเพิ่มหลังเปิดเกม
+
+LiveOps ควรมีทั้ง Event ระยะสั้น และ Content Update ถาวร เช่น Cosmetic ชุดใหม่ Hero Personal Story และ Challenge ใหม่ โดยจัดตารางให้สอดคล้องกับกำลังทีมจริง
+
+Roblox แนะนำการผสมระหว่าง Events และ Updates เพื่อให้ผู้เล่นมีเหตุผลกลับมาเล่นระหว่างการอัปเดตใหญ่&#x20;
+
+[image](https://www.google.com/s2/favicons?domain=https://create.roblox.com\&sz=32)
+
+Documentation - Roblox Creator Hub
+
++1
+
+
+
+ด้าน Monetization ข้าพเจ้าแนะนำให้ขายสิ่งที่ช่วยแสดงตัวตนหรือสร้างความสะดวกในขอบเขตที่เป็นธรรม มากกว่าการขายพลังที่ทำให้ผู้เล่นฟรีแข่งขันไม่ได้
+
+ตัวอย่างสินค้าในอนาคตอาจเป็น Outfit, Guild Theme, Hero Appearance และ Cosmetic Effects ส่วน PvE Buff ที่อยู่ใน Launch Requirement เดิมต้องผ่าน Balance Cap ไม่ข้าม Content Gate และไม่ส่งผลต่อ War
+
+สำหรับ Developer Product ต้องใช้การตรวจสอบและบันทึก Purchase Receipt อย่างถูกต้อง รวมถึงยืนยันการส่งมอบก่อนตอบรับว่าธุรกรรมสำเร็จ&#x20;
+
+[image](https://www.google.com/s2/favicons?domain=https://create.roblox.com\&sz=32)
+
+Documentation - Roblox Creator Hub
+
++1
+
+
+
+## 10. Official Website & Marketing Strategy
+
+### 19 — Website ที่เติบโตไปพร้อมเกม
+
+ข้าพเจ้าแนะนำให้เว็บไซต์ Guildborne มีสองเป้าหมาย คือเป็นแหล่งข้อมูลอย่างเป็นทางการ และเป็นเครื่องมือให้ผู้เล่นติดตามการพัฒนา
+
+| หน้า            | เนื้อหาที่ควรมี                                  |
+| --------------- | ------------------------------------------------ |
+| Home            | จุดขาย เกมเพลย์จริง สถานะการพัฒนา                |
+| Features        | ฟีเจอร์ทั้งหมดพร้อมตัวกรองและสถานะ               |
+| Roadmap         | Now/Next/Later, Milestone, Dependencies          |
+| World & Classes | โลก อาชีพ ฮีโร่ และเนื้อเรื่องที่เปิดเผยได้      |
+| Devlog          | สิ่งที่พัฒนาเสร็จ สิ่งที่กำลังทดสอบ Known Issues |
+| FAQ             | คำตอบเรื่อง Guild, Hero Team, Party, Federation  |
+| Gallery         | ภาพจริงจาก Candidate พร้อม Build Label           |
+| Playtest        | ลิงก์เมื่อได้รับการอนุมัติจริง                   |
+| Community       | ช่องทางที่เจ้าของเกมตรวจสอบแล้ว                  |
+
+MVP Website ควรเริ่มเพียง Home, Features, Roadmap, Devlog และ FAQ ก่อน แล้วค่อยเพิ่มหน้าที่เหลือ
+
+### ระบบเชื่อมข้อมูลระหว่างเกมกับเว็บไซต์
+
+ควรใช้ Content Schema ที่เก็บข้อมูลแต่ละ Feature เช่น:
+
+```
+{
+  "id": "GB-TAC-001",
+  "titleTH": "Tactical Hero AI",
+  "titleEN": "Tactical Hero AI",
+  "category": "heroes",
+  "implementationStatus": "planned",
+  "releaseAvailability": "unavailable",
+  "targetMilestone": "TBD",
+  "targetDate": null,
+  "sourcePaths": [],
+  "acceptanceGates": [],
+  "evidenceLinks": [],
+  "publicCopyApproved": false
+}
+```
+
+นี่เป็นตัวอย่างข้อเสนอใหม่ ไม่ใช่ข้อมูลที่ Commit แล้ว
+
+เว็บไซต์ไม่ควรอัปเดตเป็น `Released` เพียงเพราะ Pull Request ถูก Merge แต่ต้องมีหลักฐานว่าฟีเจอร์ผ่าน Release Gate จริง
+
+### Marketing & Discovery
+
+ควรสื่อสารเกมผ่านคลิป Gameplay จริง ความยาวสั้น ๆ ที่แสดงจุดขาย Hero Combo, การสั่งทีม และ Guild Island
+
+ตัวอย่าง Hook การตลาด:
+
+> One Player. Five Heroes. One Guild to Build.
+
+แต่ต้องใช้ฟุตเทจที่ตรงกับ Build จริง ไม่สร้างภาพเกมเพลย์ที่ไม่มีในเกมแล้วโฆษณาว่าเล่นได้
+
+กลยุทธ์ที่ควรใช้: พัฒนา Retention และ First-session Experience ให้ดีก่อนเพิ่มงบโฆษณา เพราะ Roblox Discovery ให้ความสำคัญกับคุณภาพการเล่นและการกลับมาเล่นซ้ำ&#x20;
+
+[image](https://www.google.com/s2/favicons?domain=https://create.roblox.com\&sz=32)
+
+Documentation - Roblox Creator Hub
+
++1
+
+
+
+## 11. AI Production Studio & Development Pipeline
+
+### 20 — ต่อยอด Guildborne Studio v3
+
+Repository มีระบบ Production Team อยู่แล้ว ไม่ควรสร้างระบบ Agent ใหม่ซ้ำ
+
+โครงสร้างปัจจุบันมี 33 Roles, 30 Skills, 10 Workflows และ Forge สำหรับจัดการ Dependency และ Evidence
+
+ข้าพเจ้าเสนอให้เพิ่มกระบวนการดังนี้:
+
+Product Requirement / Game Design
+
+Technical Design / Impact Analysis
+
+Forge Task Assignment & Scoped Development
+
+Code Review / Automated Tests / Studio Tests
+
+Real Device / Multiplayer / Human UAT
+
+Owner Approval → Release
+
+ทุกงานควรมีเจ้าของ ขอบเขตไฟล์ที่แก้ได้ Dependencies, Test Cases, Evidence และ Rollback Plan
+
+AI Agent ช่วยเขียน Luau, ออกแบบ Quest, สร้าง Asset Pipeline และตรวจสอบงานได้ แต่การสร้างไฟล์หรือ Test ผ่านไม่ได้หมายความว่า Art, Game Feel, Studio Integration หรือ Release ได้รับการอนุมัติแล้ว
+
+ระบบ Auto-learning ของ Agent ควรเรียนรู้จากผลทดสอบและ Human Feedback โดยไม่สามารถเปลี่ยนสิทธิ์ Publish, จ่ายเงิน, แก้ Production DataStore หรือเปิด Commerce เอง
+
+## 12. แผนลงมือทำจริงตามลำดับ
+
+ข้าพเจ้าไม่แนะนำให้สร้าง 20 ระบบพร้อมกัน แต่ให้จัดเป็น Workstreams ที่ทำงานคู่กันได้โดยไม่แย่งแก้ไฟล์เดียวกัน
+
+| ระยะ                     | งานหลัก                                   | ผลลัพธ์ที่ต้องได้                 |
+| ------------------------ | ----------------------------------------- | --------------------------------- |
+| A. Foundation Review     | Audit source, Feature Contracts, Baseline | แผนและขอบเขตที่ไม่ซ้ำระบบเดิม     |
+| B. Fun Vertical Slice    | FTUE, Hero AI, Combo, Combat Feel         | ตัวอย่างเกมที่ผู้เล่นใหม่ทดลองได้ |
+| C. Guild Depth           | Hero Identity, Training, Guild Utility    | บริหารทีมแล้วเห็นผลในเกม          |
+| D. Public Systems        | Party6, Shared PvE, Rewards, Commerce     | ระบบตาม Launch Requirements       |
+| E. Release Qualification | Cloud, Devices, Assets, Human UAT         | Candidate ที่ผ่าน Release Gates   |
+| F. Growth & Expansion    | LiveOps, Research, Events, Endgame        | รักษาผู้เล่นและขยายเนื้อหา        |
+
+นี่เป็นลำดับการทำงาน ไม่ใช่กำหนดวันเปิดเกม แต่ละระยะสามารถแตกงานทำขนานกันได้เมื่อ Dependencies พร้อม
+
+### แผนที่ข้าพเจ้าจะเริ่มก่อนจริง ๆ
+
+## 01
+
+Hero AI Vertical Slice
+
+เพิ่ม Tactical Preset 2–3 รูปแบบ, Manual Override, Formation และ Behavior Feedback โดยเชื่อมกับ HeroService/CombatService เดิม จากนั้นทดสอบฮีโร่ครบ 5 คน
+
+## 02
+
+First Signature Team Combo
+
+ออกแบบ Knight + Mage + Archer Combo หนึ่งชุด พร้อม Server Validation, Animation, VFX, Audio และการรับมือเมื่อสกิลถูกยกเลิก
+
+## 03
+
+FTUE Rework
+
+ทำให้ผู้เล่นได้ทดลอง Hero Command ภายใน 5 นาที โดยไม่ทำลาย Quest/Progression ของ Novice เดิม แล้วทดสอบกับผู้เล่นใหม่
+
+## 04
+
+Analytics Foundation
+
+เพิ่ม Event Contract สำหรับ First Combat, Hero Command, First Win, Quest Drop-off และ Performance เพื่อวัดผลก่อนและหลังแก้เกม
+
+## 05
+
+Living Guild Prototype
+
+ทำ Training Ground และ Strategy Table ที่ใช้เปลี่ยนแผนก่อนออกผจญภัย โดยไม่แก้สูตร Hall Level เดิม
+
+ห้างานนี้จะทำให้ข้าพเจ้าประเมินได้ดีขึ้นมากว่า Guildborne มี Gameplay Identity ที่ผู้เล่นอยากเล่นต่อจริงหรือยัง ก่อนนำระบบขนาดใหญ่อย่าง Party6 มาเพิ่มความซับซ้อน
+
+แต่การทดสอบ Vertical Slice ไม่ใช่การยกเลิก Party6 จาก Public Scope — Party6 ยังคงเป็น requirement ที่ต้องทำให้สำเร็จตามแผนเดิม
+
+## 13. Definition of Done ที่ทุก Feature ต้องผ่าน
+
+| Gate                      | หลักฐาน                                    |
+| ------------------------- | ------------------------------------------ |
+| Design Accepted           | Requirement/Behavior/Balance ชัดเจน        |
+| Source Implemented        | มีโค้ดจริง ไม่ใช่ Stub ที่แสดงผลอย่างเดียว |
+| Unit & Integration Tested | ผ่าน Test ที่ตรงกับระบบ                    |
+| Studio Verified           | เล่นได้ด้วย Input จริง                     |
+| Multiplayer Verified      | ตรวจ Owner/Party/Concurrent Cases          |
+| Device Verified           | ตรวจบนอุปกรณ์จริงที่เกี่ยวข้อง             |
+| Human UAT                 | ผู้เล่นจริงเข้าใจและสนุก                   |
+| Release Approved          | เจ้าของอนุมัติ Build และ Scope             |
+
+ฟีเจอร์ที่มี Code แล้วแต่ยังไม่ผ่าน Studio หรือผู้เล่นจริงต้องคงสถานะ Partial/Pending ไม่ควรถูกนับเป็น Done โดยอัตโนมัติ
+
+## 14. เอกสารใหม่ที่ควรเพิ่มใน GitHub
+
+ข้าพเจ้าเสนอให้เพิ่มเอกสารออกแบบภายใต้ `production/design/` และอ้างอิงกลับไปยัง `production/LAUNCH_PLAN.md` โดยไม่เปลี่ยน Source of Truth เดิมจนกว่าจะ Review
+
+| เอกสารที่เสนอ               | หน้าที่                                                    |
+| --------------------------- | ---------------------------------------------------------- |
+| `GAME_DESIGN_PILLARS.md`    | จุดขายและหลักการออกแบบ                                     |
+| `FTUE_AND_FUN_GATES.md`     | เส้นทางเล่น 30 นาทีแรกและเกณฑ์ความสนุก                     |
+| `HERO_TACTICS_CONTRACT.md`  | กฎ AI/Formation/Orders                                     |
+| `TEAM_COMBO_DESIGN.md`      | คอมโบ, เงื่อนไข, Balance                                   |
+| `HERO_BOND_DESIGN.md`       | บุคลิก ความสัมพันธ์ เควสต์                                 |
+| `LIVING_GUILD_DESIGN.md`    | บทบาทอาคารและ Guild Loop                                   |
+| `SHARED_PVE_INTEGRATION.md` | Integration ของ Party/Encounter/Reward โดยอ้าง PARTY6_PLAN |
+| `BALANCE_AND_ANALYTICS.md`  | Economy, Event, KPI, Benchmark                             |
+| `LIVEOPS_AND_RETENTION.md`  | แผน Event, Season, Content Cadence                         |
+| `PUBLIC_WEB_CONTENT.md`     | ข้อมูล Feature/Devlog/Roadmap สำหรับเว็บ                   |
+
+เอกสารเหล่านี้ควรเริ่มต้นเป็น `PROPOSED` และสร้าง Task ใน Forge ตามความพร้อมของ Dependency ไม่ใช่เปิด Agent ให้พัฒนาได้ทุกอย่างโดยไม่มีเจ้าของงาน
+
+## 15. สิ่งที่ข้าพเจ้าไม่แนะนำให้เพิ่มตอนนี้
+
+| สิ่งที่ควรเลื่อน                          | เหตุผล                                                      |
+| ----------------------------------------- | ----------------------------------------------------------- |
+| เมืองใหม่อีกจำนวนมาก                      | เพิ่มภาระ Art/Quest/QA โดยยังไม่พิสูจน์ Core Loop           |
+| Class3 และ Lv100 ก่อน Public              | ขัดกับ Launch Boundary ที่จำกัด Lv35                        |
+| Federation War และ Territory              | ต้องมีระบบ Social, Combat และ Settlement ที่เชื่อถือได้ก่อน |
+| Global Marketplace Live                   | เสี่ยงเรื่อง Dupe, Escrow และ Cross-server                  |
+| LLM ทำงานทุก NPC ทุกเฟรม                  | ต้นทุนและความไม่แน่นอนสูง ควบคุม Game Feel ยาก              |
+| Real-money Random Rewards เป็นแกนหารายได้ | เสี่ยงต่อความเป็นธรรม ความไว้วางใจ และข้อกำกับ              |
+| ขยายเป็น Open-world MMO เต็มรูปแบบทันที   | ภาระระบบและ Performance สูงมาก                              |
+
+## 16. คำตัดสิน: Guildborne ควรไปทางไหน
+
+## สิ่งที่ควรชนะให้ได้ก่อน
+
+Player Fantasy
+
+ฉันเป็นหัวหน้าทีมฮีโร่ ไม่ใช่ตัวละคร RPG ทั่วไป
+
+Moment-to-Moment Fun
+
+สู้เอง สั่งฮีโร่ แล้วเห็นผลของกลยุทธ์ทันที
+
+Long-term Motivation
+
+กลับมาเพื่อพัฒนาทีมและ Guild ที่ผูกพัน
+
+Social Value
+
+เล่น Solo สนุก และร่วมมือกับเพื่อนได้จริง
+
+ข้าพเจ้าแนะนำให้ใช้ Hero Tactical Combat + Living Personal Guild เป็นแกนการแข่งขัน ไม่ควรพยายามชนะ Blox Fruits ด้วยการสร้างอาชีพมากกว่า ชนะ Brookhaven ด้วยการสร้างเมืองใหญ่กว่า หรือชนะ Grow a Garden ด้วยรางวัล Login ที่ถี่กว่า
+
+เกมเหล่านั้นมีจุดแข็งของตัวเองอยู่แล้ว ส่วน Guildborne ควรสร้างคุณค่าที่ผู้เล่นสัมผัสได้จากการบัญชาการฮีโร่ที่มีเอกลักษณ์ การต่อสู้เป็นทีม และการพัฒนากิลด์ที่มีชีวิต
+
+ในมุมของข้าพเจ้า แผนทั้ง 20 กลุ่มนี้ควรเป็น Product Vision ระยะยาว แต่การพัฒนารอบแรกต้องเริ่มจาก 5 งานที่เลือกไว้ข้างต้น แล้วนำผลทดสอบจริงมากำหนดว่าจะลงทุนกับระบบใดเพิ่ม
+
+นี่จะช่วยให้ Guildborne เดินไปสู่เกมที่ใหญ่ขึ้นอย่างมีเหตุผล โดยไม่เสียเวลาและทรัพยากรไปกับฟีเจอร์ที่ผู้เล่นอาจไม่ได้ใช้ขอรับกระผม
+
+แหล่งอ้างอิงหลัก: [Current Launch Plan](https://github.com/godsirataro/guildborne/blob/codex/guildborne-agentic-production-20261009/production/LAUNCH_PLAN.md), [Party6 Contract](https://github.com/godsirataro/guildborne/blob/codex/guildborne-agentic-production-20261009/production/launch/integration/PARTY6_PLAN.md), [Current Development Backlog](https://github.com/godsirataro/guildborne/blob/codex/guildborne-agentic-production-20261009/production/launch/backlog.json) และ [Roblox Creator Hub — Game Design](https://create.roblox.com/docs/production/game-design)

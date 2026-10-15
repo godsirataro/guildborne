@@ -1,0 +1,96 @@
+--!strict
+return function(test:any,eq:any)
+ local Identity=require("../src/server/Systems/SharedEncounterIdentity")
+ local Make=require("../src/server/Systems/SharedEncounterParticipation")
+ local function fixture(n:number):any
+  local r=Identity();local encounter=r.create();local enemy={id="enemy",kind="Enemy",owner=0};r.addEnemy(encounter,enemy)
+  local heroes={};local tokens={};for i=1,n do tokens[i]=r.addOwner(encounter,i);heroes[i]={id="hero",kind="Hero",owner=i};r.addActor(encounter,tokens[i],heroes[i])end
+  local f:any={r=r,encounter=encounter,enemy=enemy,heroes=heroes,tokens=tokens,time=0}
+  f.ledger=Make(r.policy(),function()return f.time end,{totalEnemyHP=1000,encounterToken=encounter})
+  return f
+ end
+ test("participation solo and six plus outsider require actual owned effects",function()
+  for _,n in ipairs({1,7})do local f=fixture(n);for i=1,n do eq(f.ledger.Observe(i,"damage_dealt",f.heroes[i],f.enemy,10),true)end
+   local s=f.ledger.Freeze();eq(#s.owners,n);for i=1,n do eq(s.owners[i],i)end
+  end
+  local f=fixture(2);local npc={id="npc",kind="Hero",owner=2};f.r.addActor(f.encounter,f.tokens[2],npc)
+  eq(f.ledger.Observe(1,"damage_dealt",npc,f.enemy,10),true);eq(f.ledger.Freeze().owners,{2})
+ end)
+ test("healing requires recorded encounter wounds and tanking credits recipient owner",function()
+  local f=fixture(3)
+  eq(f.ledger.Observe(1,"healing_done",f.heroes[2],f.heroes[1],100),false)
+  eq(f.ledger.Observe(1,"damage_dealt",f.enemy,f.heroes[1],12),false)
+  eq(f.ledger.Observe(2,"damage_dealt",f.enemy,f.heroes[1],12),true)
+  eq(f.ledger.Observe(3,"healing_done",f.heroes[2],f.heroes[1],100),true)
+  eq(f.ledger.Observe(4,"healing_done",f.heroes[2],f.heroes[1],100),false)
+  eq(f.ledger.Observe(5,"healing_done",f.heroes[3],f.heroes[3],100),false)
+  local s=f.ledger.Freeze();eq(s.owners,{1,2});eq(s.diagnostics[2].healing,12)
+ end)
+ test("replays invalid actors foreign encounters and nonfinite events give no credit",function()
+  local f=fixture(1);eq(f.ledger.Observe(1,"damage_dealt",f.heroes[1],f.enemy,10),true)
+  eq(f.ledger.Observe(1,"damage_dealt",f.heroes[1],f.enemy,10),false)
+  for i,n in ipairs({0/0,math.huge,-1,0,1000000001})do eq(f.ledger.Observe(i+1,"damage_dealt",f.heroes[1],f.enemy,n),false)end
+  eq(f.ledger.Observe(7,"damage_dealt",{id="hero",kind="Hero",owner=1},f.enemy,10),false)
+  local e=f.r.create();local token=f.r.addOwner(e,2);local hero={id="h",kind="Hero",owner=2};local enemy={id="e",kind="Enemy",owner=0};f.r.addActor(e,token,hero);f.r.addEnemy(e,enemy)
+  eq(f.ledger.Observe(8,"damage_dealt",hero,enemy,10),false)
+  eq(f.ledger.Observe(7,"damage_dealt",f.heroes[1],f.enemy,10),false)
+  local s=f.ledger.Freeze();eq(s.diagnostics[1].damage,10);eq(s.lastSeq,8)
+ end)
+ test("activity expiry and late chip damage cannot qualify idle owners",function()
+  local f=fixture(3);f.ledger.Observe(1,"damage_dealt",f.heroes[1],f.enemy,10)
+  f.time=91;f.ledger.Observe(2,"damage_dealt",f.heroes[2],f.enemy,9)
+  eq(f.ledger.Freeze().owners,{})
+ end)
+ test("death departure and rejoin preserve bounded earned contribution",function()
+  local f=fixture(3)
+  for i=1,3 do f.ledger.Observe(i,"damage_dealt",f.heroes[i],f.enemy,10)end
+  f.heroes[1].hp=0;f.r.removeActor(f.heroes[1])
+  f.time=5;eq(f.ledger.Leave(2),true);eq(f.ledger.Observe(4,"damage_dealt",f.heroes[2],f.enemy,100),false);f.r.removeOwner(f.tokens[2])
+  local token=f.r.addOwner(f.encounter,2);local rejoined={id="new",kind="Hero",owner=2};f.r.addActor(f.encounter,token,rejoined)
+  f.time=34;eq(f.ledger.Leave(2),true);eq(f.ledger.Observe(5,"damage_dealt",rejoined,f.enemy,100),true)
+  eq(f.ledger.Freeze().owners,{1,2,3})
+  local expired=fixture(1);expired.ledger.Observe(1,"damage_dealt",expired.heroes[1],expired.enemy,10);expired.ledger.Leave(1);expired.time=31;eq(expired.ledger.Freeze().owners,{})
+ end)
+ test("freeze is stable detached and clocks fail closed",function()
+  local f=fixture(1);f.time=5;f.ledger.Observe(1,"damage_dealt",f.heroes[1],f.enemy,10)
+  f.time=4;eq(f.ledger.Freeze(),nil);eq(f.ledger.Leave(1),false)
+  f.time=math.huge;eq(f.ledger.Observe(2,"damage_dealt",f.heroes[1],f.enemy,10),false)
+  f.time=6;local frozen=f.ledger.Freeze();frozen.owners[1]=999;frozen.diagnostics[1].damage=999
+  eq(f.ledger.Freeze().owners,{1});eq(f.ledger.Freeze().diagnostics[1].damage,10)
+  eq(f.ledger.Observe(2,"damage_dealt",f.heroes[1],f.enemy,10),false);eq(f.ledger.Leave(1),false)
+ end)
+ test("ledger caps owner admission without displacing earned participants",function()
+  local f=fixture(16);for i=1,16 do eq(f.ledger.Observe(i,"damage_dealt",f.heroes[i],f.enemy,10),true)end
+  eq(f.ledger.Leave(17),true);eq(#f.ledger.Freeze().owners,16)
+ end)
+ test("rejoining without effective action does not renew departed eligibility",function()
+  local f=fixture(1);f.ledger.Observe(1,"damage_dealt",f.heroes[1],f.enemy,10);f.ledger.Leave(1)
+  f.r.removeOwner(f.tokens[1]);local token=f.r.addOwner(f.encounter,1);local hero={id="rejoined",kind="Hero",owner=1};f.r.addActor(f.encounter,token,hero)
+  f.time=31;eq(f.ledger.Observe(2,"healing_done",hero,hero,100),false);eq(f.ledger.Freeze().owners,{})
+ end)
+ test("detached actor wounds release capacity without transferring wound credit",function()
+  local f=fixture(16);local seq=0
+  for i=1,16 do
+   seq+=1;eq(f.ledger.Observe(seq,"damage_dealt",f.enemy,f.heroes[i],10),true)
+   for j=1,5 do local hero={id="npc_"..j,kind="Hero",owner=i};f.r.addActor(f.encounter,f.tokens[i],hero);seq+=1;eq(f.ledger.Observe(seq,"damage_dealt",f.enemy,hero,10),true)end
+  end
+  f.r.removeActor(f.heroes[1]);local replacement={id="replacement",kind="Hero",owner=1};f.r.addActor(f.encounter,f.tokens[1],replacement)
+  eq(f.ledger.Observe(seq+1,"healing_done",f.heroes[2],replacement,10),false)
+  eq(f.ledger.Observe(seq+2,"damage_dealt",f.enemy,replacement,10),true)
+ end)
+ test("expired wounds and neutral recovery cannot renew healer eligibility",function()
+  local f=fixture(2);f.ledger.Observe(1,"damage_dealt",f.enemy,f.heroes[1],20)
+  f.time=91;eq(f.ledger.Observe(2,"healing_done",f.heroes[2],f.heroes[1],20),false);eq(f.ledger.Freeze().owners,{})
+  local g=fixture(2);g.ledger.Observe(1,"damage_dealt",g.enemy,g.heroes[1],20)
+  eq(g.ledger.Recover(2,g.heroes[1],15),true)
+  eq(g.ledger.Observe(3,"healing_done",g.heroes[2],g.heroes[1],20),true)
+  eq(g.ledger.Freeze().owners,{1});eq(g.ledger.Freeze().diagnostics[2].healing,5)
+  eq(g.ledger.Recover(4,g.heroes[1],10),false)
+ end)
+ test("negative Studio owner IDs remain explicit registered authorities",function()
+  local r=Identity();local encounter=r.create();local token=r.addOwner(encounter,-1)
+  local hero={id="studio",kind="Hero",owner=-1};local enemy={id="enemy",kind="Enemy",owner=0};r.addActor(encounter,token,hero);r.addEnemy(encounter,enemy)
+  local ledger=Make(r.policy(),function()return 0 end,{totalEnemyHP=1000,encounterToken=encounter})
+  eq(ledger.Observe(1,"damage_dealt",hero,enemy,10),true);eq(ledger.Leave(0),false);eq(ledger.Freeze().owners,{-1})
+ end)
+end

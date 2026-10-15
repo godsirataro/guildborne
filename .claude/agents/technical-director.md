@@ -100,6 +100,48 @@ Dependencies: none
 
 Path rule production-evidence: Reconcile latest goals/registries/scopes. One shared ledger, claim before writes, immediate lease check and preserved raw receipts. Different reviewer validates evidence; local checks cannot replace hardware/cloud/human gates.
 
+### expansion-integration: Expansion Integration
+
+Reconcile user20-theme expansion, define contracts, integrate tactical and analytics slice, preserve launch scope and verify evidence.
+
+Environment: local; skill: guildborne-director
+
+Write scopes: production/LAUNCH_PLAN.md, production/LATEST_GOALS.md, production/launch/backlog.json, production/studio, .codex/agents, .claude/agents, src/server/ServerBootstrap.server.luau, src/server/Services/WorldService.luau, tests/run.luau, tools/build_integration_preview.py, production/design/EXPANSION_PLAN.md, production/design/features.json, production/design/source-proposal.txt, production/design/GAME_DESIGN_PILLARS.md, production/design/FTUE_AND_FUN_GATES.md, production/design/HERO_TACTICS_CONTRACT.md, production/design/TEAM_COMBO_DESIGN.md, production/design/HERO_BOND_DESIGN.md, production/design/LIVING_GUILD_DESIGN.md, production/design/SHARED_PVE_INTEGRATION.md, production/design/BALANCE_AND_ANALYTICS.md, production/design/LIVEOPS_AND_RETENTION.md, production/design/PUBLIC_WEB_CONTENT.md, production/design/integration
+
+Required checks: source-contract, regression, independent-review
+
+Dependencies: none
+
+Path rule server-authority: Reuse actual services; server owns combat/inventory/currency/allocation/rewards/guild/build/escrow. Preserve fencing/receipts/saves/disabled flags. No production cloud writes or commerce activation.
+
+Path rule tooling: Use reviewed bounded local commands/tests. Studio/Forge planners do not launch models; paid/model subprocess, MCP mutation and installation require actual authorization/capability.
+
+Path rule production-evidence: Reconcile latest goals/registries/scopes. One shared ledger, claim before writes, immediate lease check and preserved raw receipts. Different reviewer validates evidence; local checks cannot replace hardware/cloud/human gates.
+
+Path rule agent-instructions: Generate Codex agents from canonical Studio spec/existing skills with inherited model/permissions, no arbitrary hooks. Use actual authorized host delegation or sequential work; planners do not start workers.
+
+### human-party-integration: Human Party Integration
+
+Integrate server-local Party lifecycle in local candidate, tests and evidence. Shared encounters/travel/reward settlement remain separately gated.
+
+Environment: local; skill: guildborne-director
+
+Write scopes: src/server/Services/NetworkService.luau, src/server/ServerBootstrap.server.luau, src/shared/Network/Protocol.luau, tests/run.luau, tests/human_party_protocol.luau, production/launch/integration/party-integration, production/launch/backlog.json, production/LAUNCH_PLAN.md, tools/build_integration_preview.py, production/studio, .codex/agents, .claude/agents
+
+Required checks: source-contract, regression, independent-review
+
+Dependencies: none
+
+Path rule server-authority: Reuse actual services; server owns combat/inventory/currency/allocation/rewards/guild/build/escrow. Preserve fencing/receipts/saves/disabled flags. No production cloud writes or commerce activation.
+
+Path rule shared-contracts: Shared definitions are client-safe. Preserve IDs/earned ancestry and progression separately from cosmetic IDs. Reconcile Novice 10/35/70 and Hall contracts.
+
+Path rule tooling: Use reviewed bounded local commands/tests. Studio/Forge planners do not launch models; paid/model subprocess, MCP mutation and installation require actual authorization/capability.
+
+Path rule production-evidence: Reconcile latest goals/registries/scopes. One shared ledger, claim before writes, immediate lease check and preserved raw receipts. Different reviewer validates evidence; local checks cannot replace hardware/cloud/human gates.
+
+Path rule agent-instructions: Generate Codex agents from canonical Studio spec/existing skills with inherited model/permissions, no arbitrary hooks. Use actual authorized host delegation or sequential work; planners do not start workers.
+
 ### launch-integration: Launch Integration
 
 Coordinate approved Public roadmap; integrate two chapters and reward UI in Memory candidate; preserve Staging/public flags. Generate bounded original art candidates only with explicit pending fit/import gates.

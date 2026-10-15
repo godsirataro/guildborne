@@ -1,0 +1,36 @@
+{
+  "outcome": "success",
+  "context": "Local Studio actual SliceController Party outcome presentation, nine codes in English and Thai, candidate fd07d575.",
+  "observation": "Exact text matching initially missed save-mode-prefixed labels. Substring matching found all eighteen lines but all were hidden behind the title screen. After the visible Begin button was clicked, all eighteen matched labels were visible through ancestors and TextFits true.",
+  "correction": "For actual UI acceptance, inspect the complete rendered label, all ancestor visibility and active overlays; exercise the normal entry action before measuring fit. Preserve failed observations and distinguish injected presentation codes from server authority rejections.",
+  "limit": "Landscape device-emulated viewport only; no portrait, physical touch or performance acceptance. This lesson records evidence and does not promote a skill or change permissions.",
+  "tags": [
+    "roblox",
+    "native-ui",
+    "visibility",
+    "party",
+    "localization"
+  ],
+  "evidence": [
+    {
+      "path": "production/design/integration/PARTY_MESSAGE_RENDER.md",
+      "sha256": "1cf99ed7c1c3f64efc1461e8157215aa831d0a4c63af42a6a76d51cdf9af3f70"
+    },
+    {
+      "path": "production/design/integration/party-message-observer.luau",
+      "sha256": "438ee8aace6c5cc0b70f7813095fa848a122948c07d1f08be395dd5f5e621f58"
+    },
+    {
+      "path": "production/design/integration/party-message-render-attempt1.json",
+      "sha256": "4c57d0774310063a4f1083a9902a8e0a87bcf0faed698649b4830364f6698293"
+    },
+    {
+      "path": "production/design/integration/party-message-render-attempt2.json",
+      "sha256": "c2e2c295a6210f1aae5d67153100a7459735d1d5921b27591276c8fdd1e07505"
+    },
+    {
+      "path": "production/design/integration/party-message-render-attempt3.json",
+      "sha256": "60eeffaa42b445644c627aca3dd447dd317482b477ac6b6cd6c1a2bb6a66ee5f"
+    }
+  ]
+}

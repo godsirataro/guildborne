@@ -1,0 +1,42 @@
+{
+  "candidate": "3f7f4cf06ff4757bd9b38717797e9a39482af4032c5aadbbca52a4f0281bae9c",
+  "player1": {
+    "status": "fulfilled",
+    "value": {
+      "content": [
+        {
+          "type": "text",
+          "text": "{\"status\":\"Active\",\"revision\":28,\"data\":{\"adventurers\":{\"a:Priest\":{\"equipmentSlots\":{\"weapon\":\"novice:founder:1\"},\"stats\":{\"Attack\":15,\"Defense\":3,\"Health\":51,\"WeaponBonus\":2},\"appearance\":{\"hairColorId\":\"HAIR_DARK_BROWN\",\"bodyPresetId\":\"HUMAN_STANDARD\",\"raceFeatures\":[],\"raceId\":\"HUMAN\",\"outfitSlots\":{\"INNER_TOP\":\"CLO_TUNIC_TRAVELER_01\",\"INNER_BOTTOM\":\"CLO_TROUSERS_TRAVELER_01\"},\"appearanceVersion\":1,\"skinPaletteId\":\"SKIN_HUMAN_03\",\"hairAssetId\":\"ACC_HAIR_HUMAN_01\",\"headPresetId\":\"CHR_HEAD_HUMAN_01\"},\"id\":\"a:Priest\",\"classId\":\"Priest\",\"appearanceEnabled\":false,\"name\":\"Sage\",\"xp\":450,\"baseStats\":{\"Defense\":3,\"Health\":24,\"Attack\":4},\"level\":10,\"appearanceRevision\":0,\"rank\":\"F\"}},\"party\":{\"adventurerIds\":{\"1\":\"a:Priest\"}},\"hallLevel\":1,\"progression\":{\"tutorialStep\":\"complete\",\"recruitedClasses\":{\"Priest\":true},\"campaign\":{\"choices\":[],\"version\":1,\"claimed\":0,\"objectives\":[]},\"welcomeSeen\":true,\"ruleset\":\"guildborne.progression.2\",\"novice\":{\"trialClass\":\"Warrior\",\"founderHero\":\"a:Priest\",\"claimed\":6,\"branch\":\"rescue\",\"version\":1,\"objectives\":[]},\"tutorialCompleted\":true,\"everEquipped\":false},\"gold\":0,\"character\":{\"equipmentSlots\":{\"weapon\":\"novice:class:1\"},\"stats\":{\"Attack\":17,\"Defense\":4,\"Health\":57,\"WeaponBonus\":2},\"appearance\":{\"hairColorId\":\"HAIR_DARK_BROWN\",\"bodyPresetId\":\"HUMAN_STANDARD\",\"raceFeatures\":[],\"raceId\":\"HUMAN\",\"outfitSlots\":{\"INNER_TOP\":\"CLO_TUNIC_TRAVELER_01\",\"INNER_BOTTOM\":\"CLO_TROUSERS_TRAVELER_01\"},\"appearanceVersion\":1,\"hairAssetId\":\"ACC_HAIR_HUMAN_01\",\"skinPaletteId\":\"SKIN_HUMAN_03\",\"headPresetId\":\"CHR_HEAD_HUMAN_01\"},\"classId\":\"Warrior\",\"xp\":450,\"raceId\":\"Human\",\"definitionVersion\":1,\"classPathId\":\"warrior:1\",\"tier\":1,\"appearanceEnabled\":false,\"level\":10,\"appearanceRevision\":0,\"skillId\":\"power_strike\"}},\"humanParty\":{\"directory\":{\"1\":{\"heroCount\":0,\"available\":true,\"username\":\"Player2\",\"userId\":\"-2\",\"displayName\":\"Player2\"}},\"revision\":3,\"members\":[],\"available\":true,\"capacity\":6,\"incomingInvites\":[],\"localUserId\":\"-1\",\"outgoingInvites\":[]}}"
+        }
+      ],
+      "isError": false
+    }
+  },
+  "player2": {
+    "content": [
+      {
+        "type": "text",
+        "text": "{\"status\":\"Active\",\"revision\":28,\"data\":{\"adventurers\":{\"a:Warrior\":{\"equipmentSlots\":{\"weapon\":\"novice:founder:1\"},\"stats\":{\"Attack\":17,\"Defense\":4,\"Health\":57,\"WeaponBonus\":2},\"appearance\":{\"hairColorId\":\"HAIR_DARK_BROWN\",\"bodyPresetId\":\"HUMAN_STANDARD\",\"raceFeatures\":[],\"raceId\":\"HUMAN\",\"outfitSlots\":{\"INNER_TOP\":\"CLO_TUNIC_TRAVELER_01\",\"INNER_BOTTOM\":\"CLO_TROUSERS_TRAVELER_01\"},\"appearanceVersion\":1,\"skinPaletteId\":\"SKIN_HUMAN_03\",\"hairAssetId\":\"ACC_HAIR_HUMAN_01\",\"headPresetId\":\"CHR_HEAD_HUMAN_01\"},\"id\":\"a:Warrior\",\"classId\":\"Warrior\",\"appearanceEnabled\":false,\"name\":\"Rowan\",\"xp\":450,\"baseStats\":{\"Defense\":4,\"Health\":30,\"Attack\":6},\"level\":10,\"appearanceRevision\":0,\"rank\":\"F\"}},\"party\":{\"adventurerIds\":{\"1\":\"a:Warrior\"}},\"hallLevel\":1,\"progression\":{\"tutorialStep\":\"complete\",\"recruitedClasses\":{\"Warrior\":true},\"campaign\":{\"choices\":[],\"version\":1,\"claimed\":0,\"objectives\":[]},\"welcomeSeen\":true,\"ruleset\":\"guildborne.progression.2\",\"novice\":{\"trialClass\":\"Warrior\",\"founderHero\":\"a:Warrior\",\"version\":1,\"branch\":\"rescue\",\"claimed\":6,\"objectives\":[]},\"tutorialCompleted\":true,\"everEquipped\":false},\"gold\":0,\"character\":{\"classPathId\":\"warrior:1\",\"stats\":{\"Attack\":17,\"Defense\":4,\"Health\":57,\"WeaponBonus\":2},\"appearance\":{\"hairColorId\":\"HAIR_DARK_BROWN\",\"bodyPresetId\":\"HUMAN_STANDARD\",\"raceFeatures\":[],\"raceId\":\"HUMAN\",\"outfitSlots\":{\"INNER_TOP\":\"CLO_TUNIC_TRAVELER_01\",\"INNER_BOTTOM\":\"CLO_TROUSERS_TRAVELER_01\"},\"appearanceVersion\":1,\"hairAssetId\":\"ACC_HAIR_HUMAN_01\",\"skinPaletteId\":\"SKIN_HUMAN_03\",\"headPresetId\":\"CHR_HEAD_HUMAN_01\"},\"classId\":\"Warrior\",\"appearanceEnabled\":false,\"raceId\":\"Human\",\"definitionVersion\":1,\"equipmentSlots\":{\"weapon\":\"novice:class:1\"},\"tier\":1,\"xp\":450,\"level\":10,\"appearanceRevision\":0,\"skillId\":\"power_strike\"}},\"humanParty\":{\"directory\":{\"1\":{\"heroCount\":1,\"available\":true,\"username\":\"Player1\",\"userId\":\"-1\",\"displayName\":\"Player1\"}},\"revision\":4,\"members\":[],\"available\":true,\"capacity\":6,\"incomingInvites\":[],\"localUserId\":\"-2\",\"outgoingInvites\":[]}}"
+      }
+    ],
+    "isError": false
+  },
+  "hall1": {
+    "content": [
+      {
+        "type": "text",
+        "text": "{\"running\":false,\"attributes\":{\"ActionTargetPosition\":\"-4500, 28, 650\",\"ClassId\":\"Warrior\",\"EnemyHealth\":0,\"ActionAt\":1791977364.405423,\"ReceiptDelivered\":true,\"DisplayHint\":\"Saving trial result...\",\"WarningToken\":1218.969183499983,\"OwnerUserId\":-1,\"ReturnLabel\":\"Leave trial\",\"ActionEffect\":\"Basic\",\"DisplayGoals\":\"Defeat the opponent 1/1\",\"NextBasicAt\":1791977365.5053056,\"AbilityLabel\":\"Power Strike\",\"PlayerHealth\":57,\"TrialStatus\":\"Won\",\"NextAbilityAt\":1791977365.1717332,\"NoviceTrialArena\":true,\"DisplayTitle\":\"Warrior · Lesson complete\",\"ActionOriginPosition\":\"-4499.99951171875, 27.997314453125, 648.7494506835938\",\"DisplayHealth\":\"HP 57/57 · Hall Sentinel 0/360\",\"BasicLabel\":\"Basic Attack\"},\"started\":1157.0819185000146,\"status\":\"Won\",\"events\":{\"1\":{\"at\":1159.2456967000035,\"action\":\"dodge\",\"token\":1203.736271999951},\"4\":{\"at\":1174.4774977000198,\"action\":\"dodge\",\"token\":1218.969183499983},\"3\":{\"at\":1169.4126809000155,\"action\":\"dodge\",\"token\":1213.903482099995},\"2\":{\"at\":1164.3289679000155,\"action\":\"dodge\",\"token\":1208.8028888999834}},\"finished\":1174.8286334000296}"
+      }
+    ],
+    "isError": false
+  },
+  "hall2": {
+    "content": [
+      {
+        "type": "text",
+        "text": "{\"running\":false,\"attributes\":{\"ActionTargetPosition\":\"-4900, 28, 650\",\"ClassId\":\"Warrior\",\"EnemyHealth\":0,\"ActionAt\":1791977469.985651,\"ReceiptDelivered\":true,\"DisplayHint\":\"Saving trial result...\",\"WarningToken\":1324.6477234999766,\"OwnerUserId\":-2,\"ReturnLabel\":\"Leave trial\",\"ActionEffect\":\"Basic\",\"DisplayGoals\":\"Defeat the opponent 1/1\",\"NextBasicAt\":1791977471.0855284,\"AbilityLabel\":\"Power Strike\",\"PlayerHealth\":57,\"TrialStatus\":\"Won\",\"NextAbilityAt\":1791977470.7184263,\"NoviceTrialArena\":true,\"DisplayTitle\":\"Warrior · Lesson complete\",\"ActionOriginPosition\":\"-4899.998046875, 27.998046875, 647.0869140625\",\"DisplayHealth\":\"HP 57/57 · Hall Sentinel 0/360\",\"BasicLabel\":\"Basic Attack\"},\"started\":1261.2080284000259,\"status\":\"Won\",\"events\":{\"1\":{\"at\":1263.256589800003,\"action\":\"dodge\",\"token\":1309.2159109999776},\"4\":{\"at\":1278.723917299998,\"action\":\"dodge\",\"token\":1324.6477234999766},\"3\":{\"at\":1273.5243599000388,\"action\":\"dodge\",\"token\":1319.4665997999837},\"2\":{\"at\":1268.4903071000009,\"action\":\"dodge\",\"token\":1314.4155751999934}},\"finished\":1278.9726160999854}"
+      }
+    ],
+    "isError": false
+  }
+}

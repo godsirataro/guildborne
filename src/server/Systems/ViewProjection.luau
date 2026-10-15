@@ -37,6 +37,7 @@ return function(content: any, progression: any, util: any, expansion: any?, best
 			inventory = util.copy(data.inventory), hallLevel = data.personalGuild.buildings.guildHall,
 			progression = util.copy(data.progression), quests = util.copy(data.quests), language = data.settings.language or "en" }
 		view.data.settlement.purchases=nil
+		view.data.recruitmentLevel=content:LevelFromXP(content.RecruitmentStartingXP(data),content.ProfileLevelCap(data))
 		if view.data.expansion then for _,build in pairs(view.data.expansion.actors)do build.mentorProof=nil end end
 		if launch and launch.Mentor then view.data.heroMentor=launch.Mentor.presentation(data) end
 		if catalog.ReleaseContent and expansion then

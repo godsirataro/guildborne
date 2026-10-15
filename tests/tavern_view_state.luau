@@ -37,4 +37,21 @@ return function(test:any,eq:any)
   d.inventory.stacks.stone=3;d.gold=99;eq(describe(d,catalog,false).upgradeProblem,"You need more Gold.")
   d.settlement.tavernLevel=5;eq(describe(d,catalog,false).upgradeProblem,"Tavern is at maximum level.")
  end)
+ test("tavern novice readiness matches server gates without restricting legacy recruitment",function()
+  for _,claimed in ipairs({-1,0,5,6})do
+   local d=ready();d.progression={ruleset=content.ProgressionRulesets.Novice}
+   if claimed>=0 then d.progression.novice={claimed=claimed}end
+   local before=util.copy(d);local state=describe(d,catalog,false)
+   eq(state.scoutProblem,content.NoviceActionProblem(d,"ScoutHero"))
+   eq(state.hireProblem,content.NoviceActionProblem(d,"HireHero"))
+   eq(state.upgradeProblem,content.NoviceActionProblem(d,"UpgradeTavern"));eq(d,before)
+  end
+  local d=ready();d.progression={ruleset=content.ProgressionRulesets.Legacy,novice={claimed=0}}
+  eq(describe(d,catalog,false).scoutProblem,nil);eq(describe(d,catalog,false).hireProblem,nil)
+  eq(describe(ready(),catalog,false).hireProblem,nil)
+ end)
+ test("tavern candidate level uses public projection and never invents a level",function()
+  local d=ready();eq(describe(d,catalog,false).hireLevel,nil)
+  for _,level in ipairs({1,10})do d.recruitmentLevel=level;eq(describe(d,catalog,false).hireLevel,level)end
+ end)
 end

@@ -68,6 +68,24 @@ Path rule tooling: Use reviewed bounded local commands/tests. Studio/Forge plann
 
 Path rule production-evidence: Reconcile latest goals/registries/scopes. One shared ledger, claim before writes, immediate lease check and preserved raw receipts. Different reviewer validates evidence; local checks cannot replace hardware/cloud/human gates.
 
+### novice-studio-identity: Local Studio Novice Test Identity Compatibility
+
+Actual Studio multiplayer uses negative test Player IDs; lessons silently reject them. Add explicitly local Studio Place/Game0 Memory-only injected identity policy, preserve positive-only defaults and every progression/solo/receipt condition. No profile edits or synthetic proof.
+
+Environment: local; skill: guildborne-progression
+
+Write scopes: src/server/Systems/NoviceTrialSession.luau, src/server/Systems/NoviceLessonSession.luau, src/server/Systems/NoviceTrialInput.luau, src/server/Systems/StudioTrialIdentity.luau, src/server/Services/NoviceLessonFactory.luau, src/server/Services/NoviceTrialArena.luau, src/server/Services/NoviceCourseWorld.luau, src/server/Services/NoviceTrialManager.luau, tests/novice_studio_identity.luau, tests/run_novice_studio_identity.luau, production/design/evidence/novice-studio-identity.md
+
+Required checks: source-contract, regression, independent-review
+
+Dependencies: none
+
+Path rule server-authority: Reuse actual services; server owns combat/inventory/currency/allocation/rewards/guild/build/escrow. Preserve fencing/receipts/saves/disabled flags. No production cloud writes or commerce activation.
+
+Path rule tooling: Use reviewed bounded local commands/tests. Studio/Forge planners do not launch models; paid/model subprocess, MCP mutation and installation require actual authorization/capability.
+
+Path rule production-evidence: Reconcile latest goals/registries/scopes. One shared ledger, claim before writes, immediate lease check and preserved raw receipts. Different reviewer validates evidence; local checks cannot replace hardware/cloud/human gates.
+
 ### progression: Class, skill tree, status and Hall integration
 
 Read LATEST_GOALS.md. Reuse Content.ProgressionRulesets, HallLevelCap, RecruitmentStartingXP and StatusPoints. Novice Class2 readiness is35; retain legacy policy and earned paths. Do not switch default campaign flags or create a competing progression service. Additional migration/cutover requires its own tested fixture plan.

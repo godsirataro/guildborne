@@ -1,0 +1,60 @@
+{
+  "outcome": "success",
+  "context": "Local tactical and analytics acceptance 2026-10-14. User authorized continuing until 50 percent quota remains; this record is evidence-backed local learning only.",
+  "observation": "Review found post-yield Load could begin a disconnected session, queued userId events could cross rejoin, and pcall providers could yield. Actual-source coroutine fixtures passed after live Player checks, captured original Player and bounded async Product. Five synthetic physical heroes held and regrouped in Studio with no reward calls. A first injected-hazard dodge fixture failed because its collision query geometry included actor roots; after using a geometry-only container all five evaded and returned. Actual UI found J conflicted with quest tracker; Hold moved to K.",
+  "correction": "Capture source session identity before deferred callbacks and revalidate after yielding load. Bound asynchronous telemetry independently of gameplay. Test key bindings against all UI input handlers. Physics fixture geometry must match production query filters and keep actors outside geometry-only obstacle queries; preserve failed raw attempts.",
+  "limit": "Synthetic Studio fixtures are not normal progression, real multiplayer, physical mobile or final art approval. Dodge used an injected hazard and actual evasion/movement modules. HeroService fixture leaves an empty Heartbeat until Play restart, which was performed. No skill promotion or new permissions. Search in newly versioned V15 ledger returned no prior lessons; earlier intake files remain archived, so absence is not proof no prior lesson exists.",
+  "tags": [
+    "analytics",
+    "session-fencing",
+    "studio",
+    "tactics",
+    "physics-fixture"
+  ],
+  "evidence": [
+    {
+      "path": "production/learning/intake/tactics-session-2026-10-14/ServerBootstrap.server.luau",
+      "sha256": "4029db8f6a1f5474ca1a0ecbd9f6506ec1d8fac81952937f1f728bba4bb632e9"
+    },
+    {
+      "path": "production/learning/intake/tactics-session-2026-10-14/AnalyticsAdapter.luau",
+      "sha256": "3c318e9aeea02d9433de508dbe98080fb4c744151b2508e91da575b5772e1c42"
+    },
+    {
+      "path": "production/learning/intake/tactics-session-2026-10-14/CombatService.luau",
+      "sha256": "4c473e123b46c57f13fdfb91e81c55bfda10445cdc77d13cf092daf0a41862fe"
+    },
+    {
+      "path": "production/design/integration/bootstrap-lifecycle-fixture.luau",
+      "sha256": "4e140fae82fd96663c7cadd6ed75c871b6442a93d52c7053b60b325fe5a7a32b"
+    },
+    {
+      "path": "production/design/integration/bootstrap-lifecycle.log",
+      "sha256": "7a8c58bd0be54f4db8e4c7953f0448d2769abe59b5167820a75848c96d392f7a"
+    },
+    {
+      "path": "production/design/integration/tactics-studio-fixture.luau",
+      "sha256": "0090f3f13977e6bdcd1689b50cb6645fc871b9ee05ae4a322091aed468b95f68"
+    },
+    {
+      "path": "production/design/integration/tactics-studio-result.json",
+      "sha256": "708c3d3ce6a21b85dcd11e059d0b15ac5929419cff577c4ff70911648e89ba97"
+    },
+    {
+      "path": "production/design/integration/tactics-dodge-fixture.luau",
+      "sha256": "f6ed379b8e8c1d76b508a92eac4af30d4ae71b414264fbb7f5ef5a5c85d3f19f"
+    },
+    {
+      "path": "production/design/integration/tactics-dodge-attempt1.json",
+      "sha256": "7792c01896c4054ddf77bf1497c136155fd79de2b3261ec3ef3826419de179f6"
+    },
+    {
+      "path": "production/design/integration/tactics-dodge-result.json",
+      "sha256": "0e0104bc54885e983f7c1baf74e772e3cbfd811b8ad20fa9983102d67c2a81b2"
+    },
+    {
+      "path": "production/design/integration/studio-key-fix.json",
+      "sha256": "f7cfee43b7b378db403bdedc6467be2c175cda295617b9e05dcb24182f2d474b"
+    }
+  ]
+}

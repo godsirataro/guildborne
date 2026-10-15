@@ -1,6 +1,6 @@
 --!strict
 -- Read-only projection of one-item crafting readiness. Server remains authoritative.
-return function(data:any,catalog:any,rules:any,id:string,busy:boolean):any
+return function(data:any,catalog:any,rules:any,id:string,busy:boolean,locationProblem:string?):any
     local recipe=assert(rules.Recipes[id],"Unknown recipe")
     local item=assert(catalog.Items[recipe.Item],"Unknown output")
     local rows={};local missing=false;local ids={}
@@ -13,7 +13,11 @@ return function(data:any,catalog:any,rules:any,id:string,busy:boolean):any
     local forge=false;for _,building in pairs(data.expansion.buildings) do if building.kind=="forge" then forge=true end end
     local equipment=0;for _ in pairs(data.inventory.equipment) do equipment+=1 end
     local problem:string?=nil;local params:any=nil
+    local progression=data.progression
+    local noviceLocked=progression and progression.ruleset=="guildborne.progression.2" and (not progression.novice or progression.novice.claimed~=6)
     if busy then problem="Waiting for the current action."
+    elseif noviceLocked then problem="NoviceJourneyRequired"
+    elseif locationProblem then problem=locationProblem
     elseif not forge then problem="Build a Blacksmith first."
     elseif data.hallLevel<(recipe.HallLevel or 1) then problem="Requires Hall Lv{level}";params={level=recipe.HallLevel or 1}
     elseif missing then problem="Gather or earn the required materials first."

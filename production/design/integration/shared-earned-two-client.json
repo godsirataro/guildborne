@@ -1,0 +1,57 @@
+{
+  "candidate": "3f7f4cf06ff4757bd9b38717797e9a39482af4032c5aadbbca52a4f0281bae9c",
+  "setup": "Two actual local clients earned Lv10/Class1/Hall1 and one founder NPC each, then explicit server pivot to isolated lab; no public travel claim.",
+  "entered": {
+    "content": [
+      {
+        "type": "text",
+        "text": "{\"Player1\":{\"attrs\":{\"CombatHealth\":57,\"AbilityName\":\"Power Strike\",\"NoParentArt\":false,\"ClassId\":\"Warrior\",\"CombatMaxHealth\":57,\"Skill3Cooldown\":0,\"GuildbornePlayer\":true,\"CombatState\":\"Attack\",\"Level\":10,\"XP\":450,\"ClassPath\":\"Warrior\",\"Skill1Cooldown\":0,\"OwnerUserId\":-1,\"WeaponId\":\"training_sword\",\"RaceId\":\"Human\",\"Skill2Cooldown\":0,\"TacticalPreset\":\"Balanced\",\"Skill1Name\":\"Power Strike\",\"Cooldown\":0,\"RenderedRace\":\"Human\"},\"heroes\":{\"1\":{\"attrs\":{\"Action\":\"Basic Attack\",\"NoParentArt\":false,\"Skill2Cooldown\":0,\"CombatTarget\":\"g:1\",\"CombatState\":\"Attack\",\"RecoveryCount\":2,\"Skill1Cooldown\":0,\"OwnerUserId\":-1,\"FeedbackAt\":1791977439.419904,\"Cooldown\":0,\"Rank\":\"F\",\"AbilityCount\":1,\"CombatHealth\":51,\"AbilityName\":\"Heal\",\"Skill1Name\":\"Heal\",\"TacticalReason\":\"TacticNoHealTarget\",\"CombatMaxHealth\":51,\"Skill3Cooldown\":0,\"Level\":10,\"VisualTemplateId\":\"priest_02\",\"ActionTargetPosition\":\"5989.3818359375, 2, 6074.8330078125\",\"PartySlot\":1,\"WeaponId\":\"apprentice_staff\",\"ActionEffect\":\"Basic\",\"DamageDealt\":12,\"ActionAt\":1791977718.210524,\"BasicAttackCount\":1,\"Feedback\":\"+25.4\",\"ActionRange\":17,\"AdventurerId\":\"a:Priest\",\"GuildborneHero\":true,\"TacticalPreset\":\"Balanced\",\"ClassId\":\"Priest\",\"HealingDone\":25.4,\"HeroState\":\"Following\"},\"id\":\"a:Priest\",\"pos\":\"5999.00146484375, 3, 6058.00341796875\"}},\"pos\":\"5999, 2.998046875, 6054\"},\"Player2\":{\"attrs\":{\"CombatHealth\":57,\"AbilityName\":\"Power Strike\",\"NoParentArt\":false,\"ClassId\":\"Warrior\",\"CombatMaxHealth\":57,\"Skill3Cooldown\":0,\"GuildbornePlayer\":true,\"CombatState\":\"Attack\",\"Level\":10,\"XP\":450,\"ClassPath\":\"Warrior\",\"Skill1Cooldown\":0,\"OwnerUserId\":-2,\"WeaponId\":\"training_sword\",\"RaceId\":\"Human\",\"Skill2Cooldown\":0,\"TacticalPreset\":\"Balanced\",\"Skill1Name\":\"Power Strike\",\"Cooldown\":0,\"RenderedRace\":\"Human\"},\"heroes\":{\"1\":{\"attrs\":{\"Action\":\"Basic Attack\",\"NoParentArt\":false,\"Skill2Cooldown\":0,\"CombatTarget\":\"g:1\",\"CombatState\":\"Attack\",\"RecoveryCount\":2,\"Skill1Cooldown\":6,\"OwnerUserId\":-2,\"FeedbackAt\":1791977719.042051,\"Cooldown\":6,\"Rank\":\"F\",\"AbilityCount\":1,\"CombatHealth\":48,\"AbilityName\":\"Power Strike\",\"Skill1Name\":\"Power Strike\",\"TacticalReason\":\"TacticCooldown\",\"CombatMaxHealth\":57,\"Skill3Cooldown\":0,\"Level\":10,\"VisualTemplateId\":\"warrior_02\",\"ActionTargetPosition\":\"5992.95458984375, 2, 6068.58203125\",\"DamageCueAt\":1791977719.042033,\"PartySlot\":1,\"WeaponId\":\"training_sword\",\"ActionEffect\":\"Basic\",\"DamageDealt\":41,\"BasicAttackCount\":1,\"DamageCue\":\"melee_hit\",\"Feedback\":\"-9\",\"ActionRange\":5,\"AdventurerId\":\"a:Warrior\",\"ActionAt\":1791977719.042288,\"TacticalPreset\":\"Balanced\",\"GuildborneHero\":true,\"ClassId\":\"Warrior\",\"HeroState\":\"Following\"},\"id\":\"a:Warrior\",\"pos\":\"5993.6875, 3, 6068.71240234375\"}},\"pos\":\"6003, 2.998046875, 6054\"}}"
+      }
+    ],
+    "isError": false
+  },
+  "lateProbeError": {
+    "content": [
+      {
+        "type": "text",
+        "text": "sabuiltin_Assistant.rbxm.Assistant.Packages._Index.AssistantUI.AssistantUI.Tools.ExecuteLuauTool:86: sabuiltin_Assistant.rbxm.Assistant.Packages._Index.AssistantUI.AssistantUI.Util.CommandExecution:54: Goblin1 is not a valid member of Model \"Workspace.GuildborneWorld.SharedCombatCandidate\""
+      }
+    ],
+    "isError": true
+  },
+  "final": {
+    "content": [
+      {
+        "type": "text",
+        "text": "{\"enemyModelPresent\":false,\"scene\":{\"RewardsEnabled\":false,\"CandidateOnly\":true,\"Origin\":\"6000, 0, 6000\",\"Status\":\"Faulted\",\"damage_dealt\":4,\"enemy_basic_attack\":4,\"Failure\":\"EnemyStep\"},\"heroes\":{\"1\":{\"state\":\"Follow\",\"health\":51,\"id\":\"a:Priest\",\"owner\":-1,\"healing\":61.4,\"damage\":36},\"2\":{\"state\":\"Follow\",\"health\":57,\"id\":\"a:Warrior\",\"owner\":-2,\"damage\":99}}}"
+      }
+    ],
+    "isError": false
+  },
+  "profilesAfter": [
+    {
+      "status": "fulfilled",
+      "value": {
+        "content": [
+          {
+            "type": "text",
+            "text": "{\"status\":\"Active\",\"revision\":28,\"data\":{\"adventurers\":{\"a:Warrior\":{\"equipmentSlots\":{\"weapon\":\"novice:founder:1\"},\"stats\":{\"Attack\":17,\"Defense\":4,\"Health\":57,\"WeaponBonus\":2},\"appearance\":{\"hairColorId\":\"HAIR_DARK_BROWN\",\"bodyPresetId\":\"HUMAN_STANDARD\",\"raceFeatures\":[],\"raceId\":\"HUMAN\",\"outfitSlots\":{\"INNER_TOP\":\"CLO_TUNIC_TRAVELER_01\",\"INNER_BOTTOM\":\"CLO_TROUSERS_TRAVELER_01\"},\"appearanceVersion\":1,\"skinPaletteId\":\"SKIN_HUMAN_03\",\"hairAssetId\":\"ACC_HAIR_HUMAN_01\",\"headPresetId\":\"CHR_HEAD_HUMAN_01\"},\"id\":\"a:Warrior\",\"classId\":\"Warrior\",\"appearanceEnabled\":false,\"name\":\"Rowan\",\"xp\":450,\"baseStats\":{\"Defense\":4,\"Health\":30,\"Attack\":6},\"level\":10,\"appearanceRevision\":0,\"rank\":\"F\"}},\"party\":{\"adventurerIds\":{\"1\":\"a:Warrior\"}},\"hallLevel\":1,\"progression\":{\"tutorialStep\":\"complete\",\"recruitedClasses\":{\"Warrior\":true},\"campaign\":{\"choices\":[],\"version\":1,\"claimed\":0,\"objectives\":[]},\"welcomeSeen\":true,\"ruleset\":\"guildborne.progression.2\",\"novice\":{\"trialClass\":\"Warrior\",\"founderHero\":\"a:Warrior\",\"version\":1,\"branch\":\"rescue\",\"claimed\":6,\"objectives\":[]},\"tutorialCompleted\":true,\"everEquipped\":false},\"gold\":0,\"character\":{\"classPathId\":\"warrior:1\",\"stats\":{\"Attack\":17,\"Defense\":4,\"Health\":57,\"WeaponBonus\":2},\"appearance\":{\"hairColorId\":\"HAIR_DARK_BROWN\",\"bodyPresetId\":\"HUMAN_STANDARD\",\"raceFeatures\":[],\"raceId\":\"HUMAN\",\"outfitSlots\":{\"INNER_TOP\":\"CLO_TUNIC_TRAVELER_01\",\"INNER_BOTTOM\":\"CLO_TROUSERS_TRAVELER_01\"},\"appearanceVersion\":1,\"hairAssetId\":\"ACC_HAIR_HUMAN_01\",\"skinPaletteId\":\"SKIN_HUMAN_03\",\"headPresetId\":\"CHR_HEAD_HUMAN_01\"},\"classId\":\"Warrior\",\"appearanceEnabled\":false,\"raceId\":\"Human\",\"definitionVersion\":1,\"equipmentSlots\":{\"weapon\":\"novice:class:1\"},\"tier\":1,\"xp\":450,\"level\":10,\"appearanceRevision\":0,\"skillId\":\"power_strike\"}},\"humanParty\":{\"directory\":{\"1\":{\"heroCount\":1,\"available\":true,\"username\":\"Player1\",\"userId\":\"-1\",\"displayName\":\"Player1\"}},\"revision\":4,\"members\":[],\"available\":true,\"capacity\":6,\"incomingInvites\":[],\"localUserId\":\"-2\",\"outgoingInvites\":[]}}"
+          }
+        ],
+        "isError": false
+      }
+    },
+    {
+      "status": "fulfilled",
+      "value": {
+        "content": [
+          {
+            "type": "text",
+            "text": "{\"status\":\"Active\",\"revision\":28,\"data\":{\"adventurers\":{\"a:Priest\":{\"equipmentSlots\":{\"weapon\":\"novice:founder:1\"},\"stats\":{\"Attack\":15,\"Defense\":3,\"Health\":51,\"WeaponBonus\":2},\"appearance\":{\"hairColorId\":\"HAIR_DARK_BROWN\",\"bodyPresetId\":\"HUMAN_STANDARD\",\"raceFeatures\":[],\"raceId\":\"HUMAN\",\"outfitSlots\":{\"INNER_TOP\":\"CLO_TUNIC_TRAVELER_01\",\"INNER_BOTTOM\":\"CLO_TROUSERS_TRAVELER_01\"},\"appearanceVersion\":1,\"skinPaletteId\":\"SKIN_HUMAN_03\",\"hairAssetId\":\"ACC_HAIR_HUMAN_01\",\"headPresetId\":\"CHR_HEAD_HUMAN_01\"},\"id\":\"a:Priest\",\"classId\":\"Priest\",\"appearanceEnabled\":false,\"name\":\"Sage\",\"xp\":450,\"baseStats\":{\"Defense\":3,\"Health\":24,\"Attack\":4},\"level\":10,\"appearanceRevision\":0,\"rank\":\"F\"}},\"party\":{\"adventurerIds\":{\"1\":\"a:Priest\"}},\"hallLevel\":1,\"progression\":{\"tutorialStep\":\"complete\",\"recruitedClasses\":{\"Priest\":true},\"campaign\":{\"choices\":[],\"version\":1,\"claimed\":0,\"objectives\":[]},\"welcomeSeen\":true,\"ruleset\":\"guildborne.progression.2\",\"novice\":{\"trialClass\":\"Warrior\",\"founderHero\":\"a:Priest\",\"claimed\":6,\"branch\":\"rescue\",\"version\":1,\"objectives\":[]},\"tutorialCompleted\":true,\"everEquipped\":false},\"gold\":0,\"character\":{\"equipmentSlots\":{\"weapon\":\"novice:class:1\"},\"stats\":{\"Attack\":17,\"Defense\":4,\"Health\":57,\"WeaponBonus\":2},\"appearance\":{\"hairColorId\":\"HAIR_DARK_BROWN\",\"bodyPresetId\":\"HUMAN_STANDARD\",\"raceFeatures\":[],\"raceId\":\"HUMAN\",\"outfitSlots\":{\"INNER_TOP\":\"CLO_TUNIC_TRAVELER_01\",\"INNER_BOTTOM\":\"CLO_TROUSERS_TRAVELER_01\"},\"appearanceVersion\":1,\"hairAssetId\":\"ACC_HAIR_HUMAN_01\",\"skinPaletteId\":\"SKIN_HUMAN_03\",\"headPresetId\":\"CHR_HEAD_HUMAN_01\"},\"classId\":\"Warrior\",\"xp\":450,\"raceId\":\"Human\",\"definitionVersion\":1,\"classPathId\":\"warrior:1\",\"tier\":1,\"appearanceEnabled\":false,\"level\":10,\"appearanceRevision\":0,\"skillId\":\"power_strike\"}},\"humanParty\":{\"directory\":{\"1\":{\"heroCount\":1,\"available\":true,\"username\":\"Player2\",\"userId\":\"-2\",\"displayName\":\"Player2\"}},\"revision\":4,\"members\":[],\"available\":true,\"capacity\":6,\"incomingInvites\":[],\"localUserId\":\"-1\",\"outgoingInvites\":[]}}"
+          }
+        ],
+        "isError": false
+      }
+    }
+  ]
+}

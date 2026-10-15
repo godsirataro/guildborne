@@ -1,317 +1,442 @@
 {
   "version": 1,
-  "date": "2026-10-14",
+  "date": "2026-10-15",
   "publicReady": false,
   "candidateOnly": true,
-  "sourcePlan": "production/LAUNCH_PLAN.md",
+  "sourcePlan": "production/design/integration/FULL_GAME_GOLIVE_GL2_TH.md",
   "items": [
     {
       "id": "baseline",
-      "phase": "0",
+      "phase": "P0",
       "ownerRole": "technical-director",
       "status": "LOCAL_PASS",
-      "remainingOrEvidence": "hero-mentor-ui-validation.log:752 tests and all automated checks passed before Controller localization; final Controller analysis passed. Candidate82674727:360 scripts compared and10 synthetic native UI cases passed. Normal hero route and clean release revision pending; see HERO_MENTOR_UI_UPDATE.md."
+      "remainingOrEvidence": "validation-shared-travel-respawn.log:885 tests and all automated checks. Candidate e804 two actual Studio solo owners earned Novice/class/Hall and received one conserved2XP/3gold pool in real Memory profiles; reentry stable. Candidate2ec894 earned single-owner native entry/return and fault/fall return passed; actual respawn exposed original-position race. Reviewed8deff fix matched377 local sources and synthetic engine scheduling passed, actual Player respawn rerun pending. See design/integration/SHARED_NATIVE_TRAVEL.md. No Public-ready claim.",
+      "historicalPhase": "0",
+      "requiredBeforePublic": true
     },
     {
       "id": "environments",
-      "phase": "0",
+      "phase": "P0",
       "ownerRole": "tools-engineer",
       "status": "PARTIAL",
-      "remainingOrEvidence": "isolated Memory candidate; persistent namespace/account/asset ownership pending"
+      "remainingOrEvidence": "isolated Memory candidate; persistent namespace/account/asset ownership pending",
+      "historicalPhase": "0",
+      "requiredBeforePublic": true
     },
     {
       "id": "release-content",
-      "phase": "1",
+      "phase": "P2",
       "ownerRole": "gameplay-designer",
       "status": "SOURCE_REVIEWED",
-      "remainingOrEvidence": "World portals/resources/navigation/bestiary release boundary implemented and reviewed. Same candidate normal single-client Memory route completed two arcs/Lv35/Hall4; broader acceptance pending."
+      "remainingOrEvidence": "World portals/resources/navigation/bestiary release boundary implemented and reviewed. Same candidate normal single-client Memory route completed two arcs/Lv35/Hall4; broader acceptance pending.",
+      "historicalPhase": "1",
+      "requiredBeforePublic": true
     },
     {
       "id": "novice-class1",
-      "phase": "1",
+      "phase": "P2",
       "ownerRole": "quest-designer",
       "status": "PARTIAL_STUDIO",
-      "remainingOrEvidence": "candidate55404c19:Novice6, five borrowed lessons, real Warrior solo/Hall trials, Rowan founding and two arcs throughLv35/Hall4 via normal inputs. Other real classes, persistence and UAT pending."
+      "remainingOrEvidence": "Candidate3f7: two actual Studio clients completed all6 Novice chapters, borrowed five-class lessons, Warrior first-class/Hall trials, normal UI founding; both revision28 Lv10 Hall1, one founder each. Earlier55404 continued two arcsLv35/Hall4. Other real first classes/cloud/device/UAT pending.",
+      "historicalPhase": "1",
+      "requiredBeforePublic": true
     },
     {
       "id": "class2-player",
-      "phase": "1",
+      "phase": "P2",
       "ownerRole": "quest-designer",
       "status": "SOURCE_REVIEWED",
-      "remainingOrEvidence": "candidate55404c19 normal route: mentor borrowed Berserker trial, campaign12, three expedition first-clears and actual AdvanceClass through UI. revision114 Lv35/tier2/berserker/Hall4. Other branches/rejoin pending."
+      "remainingOrEvidence": "candidate55404c19 normal route: mentor borrowed Berserker trial, campaign12, three expedition first-clears and actual AdvanceClass through UI. revision114 Lv35/tier2/berserker/Hall4. Other branches/rejoin pending.",
+      "historicalPhase": "1",
+      "requiredBeforePublic": true
     },
     {
       "id": "class2-hero",
-      "phase": "1",
+      "phase": "P2",
       "ownerRole": "gameplay-designer",
       "status": "PARTIAL_STUDIO_FIXTURE",
-      "remainingOrEvidence": "Subject/path trial and private transactional proof implemented/reviewed; all10 paths synthetic tests; Studio fixture Berserker/Cleric/Guardian, pending cancel and cleanup passed. Normal hero route, remaining runtime paths, persistence/devices pending."
+      "remainingOrEvidence": "Subject/path trial and private transactional proof implemented/reviewed; all10 paths synthetic tests; Studio fixture Berserker/Cleric/Guardian, pending cancel and cleanup passed. Normal hero route, remaining runtime paths, persistence/devices pending.",
+      "historicalPhase": "1",
+      "requiredBeforePublic": true
     },
     {
       "id": "borin-route",
-      "phase": "1",
+      "phase": "P2",
       "ownerRole": "npc-designer",
       "status": "PARTIAL",
-      "remainingOrEvidence": "candidate55404c19 normal route: Journal prerequisite chain, native Blacksmith placement, two new ingots after Borin accept, claim263→275Gold with four ingots retained, actual Deepforge travel. Separate repeat ClaimTask probe QuestNotActive/no revision or value change. Persistent/multiplayer and art/audio acceptance pending."
+      "remainingOrEvidence": "candidate55404c19 normal route: Journal prerequisite chain, native Blacksmith placement, two new ingots after Borin accept, claim263→275Gold with four ingots retained, actual Deepforge travel. Separate repeat ClaimTask probe QuestNotActive/no revision or value change. Persistent/multiplayer and art/audio acceptance pending.",
+      "historicalPhase": "1",
+      "requiredBeforePublic": true
     },
     {
       "id": "route-ui",
-      "phase": "1",
+      "phase": "P2",
       "ownerRole": "ui-designer",
       "status": "PARTIAL",
-      "remainingOrEvidence": "TH/EN reward and release menu gates integrated; historical turn-ins preserved; Skills language crash fixed; world portal/navigation availability and full save-state UX pending"
+      "remainingOrEvidence": "TH/EN reward and release menu gates integrated; historical turn-ins preserved; Skills language crash fixed; world portal/navigation availability and full save-state UX pending",
+      "historicalPhase": "1",
+      "requiredBeforePublic": true
     },
     {
       "id": "beta-eight-presets",
-      "phase": "2",
+      "phase": "P8",
       "ownerRole": "character-artist",
       "status": "TODO",
-      "remainingOrEvidence": "canonical Standard/Heavy equivalent pairs, per-race proportions"
+      "remainingOrEvidence": "canonical Standard/Heavy equivalent pairs, per-race proportions",
+      "historicalPhase": "2",
+      "requiredBeforePublic": true
     },
     {
       "id": "public-thirteen-presets",
-      "phase": "2",
+      "phase": "P8",
       "ownerRole": "rigging-artist",
       "status": "TODO",
-      "remainingOrEvidence": "all13 runtime bindings, cages, outfit/weapon fit"
+      "remainingOrEvidence": "all13 runtime bindings, cages, outfit/weapon fit",
+      "historicalPhase": "2",
+      "requiredBeforePublic": true
     },
     {
       "id": "weapons-actions",
-      "phase": "2",
+      "phase": "P8",
       "ownerRole": "animator",
       "status": "PARTIAL",
-      "remainingOrEvidence": "five classes, R15/hero mapping, contact/release/footsteps and cancellation"
+      "remainingOrEvidence": "five classes, R15/hero mapping, contact/release/footsteps and cancellation",
+      "historicalPhase": "2",
+      "requiredBeforePublic": true
     },
     {
       "id": "runtime-audio",
-      "phase": "2",
+      "phase": "P8",
       "ownerRole": "audio-designer",
       "status": "TODO",
-      "remainingOrEvidence": "licensed real bindings, load test, listening and mix"
+      "remainingOrEvidence": "licensed real bindings, load test, listening and mix",
+      "historicalPhase": "2",
+      "requiredBeforePublic": true
     },
     {
       "id": "world-vfx-ui",
-      "phase": "2",
+      "phase": "P8",
       "ownerRole": "art-lead",
       "status": "PARTIAL",
-      "remainingOrEvidence": "NPC/city/boss identity; low graphics full-party readability"
+      "remainingOrEvidence": "NPC/city/boss identity; low graphics full-party readability",
+      "historicalPhase": "2",
+      "requiredBeforePublic": true
     },
     {
       "id": "island-hall",
-      "phase": "3",
+      "phase": "P2",
       "ownerRole": "guild-engineer",
       "status": "PARTIAL",
-      "remainingOrEvidence": "placement/move/remove/visits owner loss and quest/material plot rights"
+      "remainingOrEvidence": "placement/move/remove/visits owner loss and quest/material plot rights",
+      "historicalPhase": "3",
+      "requiredBeforePublic": true
     },
     {
       "id": "human-party-six",
-      "phase": "3",
+      "phase": "P3",
       "ownerRole": "guild-engineer",
-      "status": "DESIGN_PENDING_IMPLEMENTATION",
-      "remainingOrEvidence": "Required firstPublic: temporary1-6 humans including leader; invites/accept/leave/kick/leadertransfer/rejoin/ready/sharedtravel. Guild is onehuman owner+NPCheroes only. Legacy PlayerGuild membership is superseded; Federation remains postlaunch. See integration/PARTY6_PLAN.md."
+      "status": "LOCAL_REAL_CLIENT_LIFECYCLE_PASS_SHARED_TRAVEL_PENDING",
+      "remainingOrEvidence": "Actual local Party reached6 members with seventh solo, full-party rejection, leadership and disconnect grace, duplicate disband stable. First2 joined visibleUI; laterclients used ordinary clientremotes. Candidate-specific evidence design/integration/PARTY_REAL_CLIENTS.md. Sharedtravel, six-owner companionload and cloudhandoff remain pending. Guild oneowner+NPC; Federation later.",
+      "historicalPhase": "3",
+      "requiredBeforePublic": true
     },
     {
       "id": "shared-solo-party-pve",
-      "phase": "3",
+      "phase": "P3",
       "ownerRole": "combat-engineer",
-      "status": "DESIGN_PENDING_IMPLEMENTATION",
-      "remainingOrEvidence": "Required firstPublic: shared enemy authority for solo/Party/ownerhero teams; composite actor identity, multiowner support/threat and eligibility; current RegionalCombat is OfflinePersonal perowner. Solo remains viable; measured instance capacity and access gates."
+      "status": "LOCAL_TWO_CLIENT_SCOUT_PASS_SHARED_TRAVEL_PENDING",
+      "remainingOrEvidence": "Opt-in exactStudio/Place0/Game0/Memory lab: real2earned owners and Priest/Warrior companions killed same135HPscout; terminalCompleted and normalrecovery fixtures pass. ExplicitfixturePivot entry, no naturalsharedtravel. Defaultregionalworld unchanged;2/4/6owner mixedpopulation/load, access and repeatencounter lifecycle remain.",
+      "historicalPhase": "3",
+      "requiredBeforePublic": true
     },
     {
       "id": "shared-party-reward-settlement",
-      "phase": "3",
+      "phase": "P3",
       "ownerRole": "systems-engineer",
-      "status": "DESIGN_PENDING_IMPLEMENTATION",
-      "remainingOrEvidence": "Fixed encounter EXP/loot pool divided across eligible owners, NPCs credit owner; define internal hero XP and unitloot policy before implementation. Durable settlement/recipient claims, exact conservation, replay/crash/fullinventory recovery; no crossprofile atomicity claim."
+      "status": "LOCAL_MEMORY_DELIVERY_PASS_CLOUD_RECOVERY_PENDING",
+      "remainingOrEvidence": "Reviewed v2 immutable owner/frozenactor allocation, participation, fencedprofile receipts and optional externalPump. Actual2client lab total2XP to eligibleheroes(1each),gold3(1/2),rev28to29each; re-entry unchanged. Synthetic realPDS11XP/7gold/3herbs and duplicate/service reconstruction pass. Separate cloud/processcrash/offlinecontributor recovery, capacity/retention and productionbalance acceptance remain; no crossprofile atomicity.",
+      "historicalPhase": "3",
+      "requiredBeforePublic": true
     },
     {
       "id": "premium-catalog",
-      "phase": "3",
+      "phase": "P9",
       "ownerRole": "market-engineer",
       "status": "TODO",
-      "remainingOrEvidence": "priced SKU/type/duration/cap table, outfit fit eligibility"
+      "remainingOrEvidence": "priced SKU/type/duration/cap table, outfit fit eligibility",
+      "historicalPhase": "3",
+      "requiredBeforePublic": true
     },
     {
       "id": "pve-buffs",
-      "phase": "3",
+      "phase": "P9",
       "ownerRole": "combat-engineer",
       "status": "TODO",
-      "remainingOrEvidence": "entitlements separate appearance, no war or cap/quest bypass"
+      "remainingOrEvidence": "entitlements separate appearance, no war or cap/quest bypass",
+      "historicalPhase": "3",
+      "requiredBeforePublic": true
     },
     {
       "id": "commerce-receipts",
-      "phase": "3",
+      "phase": "P9",
       "ownerRole": "market-engineer",
       "status": "TODO",
-      "remainingOrEvidence": "one receipt path, entitlement delivery/retry/crash/rejoin with actual products"
+      "remainingOrEvidence": "one receipt path, entitlement delivery/retry/crash/rejoin with actual products",
+      "historicalPhase": "3",
+      "requiredBeforePublic": true
     },
     {
       "id": "battle-pass",
-      "phase": "3",
+      "phase": "P9",
       "ownerRole": "systems-engineer",
       "status": "PARTIAL",
-      "remainingOrEvidence": "preview six free tiers; dated season, premium entitlement and retention pending"
+      "remainingOrEvidence": "preview six free tiers; dated season, premium entitlement and retention pending",
+      "historicalPhase": "3",
+      "requiredBeforePublic": true
     },
     {
       "id": "daily-checkin",
-      "phase": "3",
+      "phase": "P2",
       "ownerRole": "systems-engineer",
       "status": "STUDIO_MEMORY_SMOKE_PASS",
-      "remainingOrEvidence": "seven-day cycle, atomic persisted local tests; cloud acceptance pending"
+      "remainingOrEvidence": "seven-day cycle, atomic persisted local tests; cloud acceptance pending",
+      "historicalPhase": "3",
+      "requiredBeforePublic": true
     },
     {
       "id": "beta-multiplayer",
-      "phase": "4",
+      "phase": "P10",
       "ownerRole": "qa-engineer",
       "status": "TODO",
-      "remainingOrEvidence": "real2 then4 then6 clients; fullParty6+30NPCheroes scenario and mixed outside solo/Party sharing, totalinstance capacity measured separately; no synthetic capacity claim"
+      "remainingOrEvidence": "real2 then4 then6 clients; fullParty6+30NPCheroes scenario and mixed outside solo/Party sharing, totalinstance capacity measured separately; no synthetic capacity claim",
+      "historicalPhase": "4",
+      "requiredBeforePublic": true
     },
     {
       "id": "save-migration-cloud",
-      "phase": "4",
+      "phase": "P10",
       "ownerRole": "qa-engineer",
       "status": "TODO",
-      "remainingOrEvidence": "new/legacy/corrupt/pending/overlap on isolated test data"
+      "remainingOrEvidence": "new/legacy/corrupt/pending/overlap on isolated test data",
+      "historicalPhase": "4",
+      "requiredBeforePublic": true
     },
     {
       "id": "android-ios",
-      "phase": "4",
+      "phase": "P10",
       "ownerRole": "performance-engineer",
       "status": "EXTERNAL_PENDING",
-      "remainingOrEvidence": "actual touch and30min session, minimum device30FPS and bounded memory"
+      "remainingOrEvidence": "actual touch and30min session, minimum device30FPS and bounded memory",
+      "historicalPhase": "4",
+      "requiredBeforePublic": true
     },
     {
       "id": "cross-server",
-      "phase": "4",
+      "phase": "P10",
       "ownerRole": "qa-engineer",
       "status": "EXTERNAL_PENDING",
-      "remainingOrEvidence": "distinct nonempty JobIds, personalownership/save/Party transfer and shared reward recovery; Federation membership is postlaunch"
+      "remainingOrEvidence": "distinct nonempty JobIds, personalownership/save/Party transfer and shared reward recovery; Federation membership is postlaunch",
+      "historicalPhase": "4",
+      "requiredBeforePublic": true
     },
     {
       "id": "new-player-uat",
-      "phase": "4",
+      "phase": "P10",
       "ownerRole": "qa-lead",
       "status": "EXTERNAL_PENDING",
-      "remainingOrEvidence": "TH/EN unfamiliar testers; human art/feel signoff"
+      "remainingOrEvidence": "TH/EN unfamiliar testers; human art/feel signoff",
+      "historicalPhase": "4",
+      "requiredBeforePublic": true
     },
     {
       "id": "release-candidate",
-      "phase": "5",
+      "phase": "P11",
       "ownerRole": "release-lead",
       "status": "TODO",
-      "remainingOrEvidence": "same tested immutable revision, regression after changes"
+      "remainingOrEvidence": "same tested immutable revision, regression after changes",
+      "historicalPhase": "5",
+      "requiredBeforePublic": true
     },
     {
       "id": "store-media",
-      "phase": "5",
+      "phase": "P11",
       "ownerRole": "growth-analyst",
       "status": "TODO",
-      "remainingOrEvidence": "actual footage, truthful scope, icon and thumbnails"
+      "remainingOrEvidence": "actual footage, truthful scope, icon and thumbnails",
+      "historicalPhase": "5",
+      "requiredBeforePublic": true
     },
     {
       "id": "eligibility-maturity",
-      "phase": "5",
+      "phase": "P11",
       "ownerRole": "release-lead",
       "status": "EXTERNAL_PENDING",
-      "remainingOrEvidence": "actual account/group Creator Dashboard and current policy"
+      "remainingOrEvidence": "actual account/group Creator Dashboard and current policy",
+      "historicalPhase": "5",
+      "requiredBeforePublic": true
     },
     {
       "id": "public-activation",
-      "phase": "5",
+      "phase": "P12",
       "ownerRole": "release-lead",
       "status": "EXTERNAL_PENDING",
-      "remainingOrEvidence": "scoped build/universe/products decision after gates"
+      "remainingOrEvidence": "scoped build/universe/products decision after gates",
+      "historicalPhase": "5",
+      "requiredBeforePublic": false
     },
     {
       "id": "rollback",
-      "phase": "5",
+      "phase": "P11",
       "ownerRole": "technical-director",
       "status": "PLANNED",
-      "remainingOrEvidence": "compatible schema rollback and receipt recovery drill"
+      "remainingOrEvidence": "compatible schema rollback and receipt recovery drill",
+      "historicalPhase": "5",
+      "requiredBeforePublic": true
     },
     {
       "id": "first72hours",
-      "phase": "6",
+      "phase": "P13",
       "ownerRole": "release-lead",
       "status": "PLANNED",
-      "remainingOrEvidence": "assigned coverage, error/delivery/FPS/tutorial signals"
+      "remainingOrEvidence": "assigned coverage, error/delivery/FPS/tutorial signals",
+      "historicalPhase": "6",
+      "requiredBeforePublic": false
     },
     {
       "id": "firstweek",
-      "phase": "6",
+      "phase": "P13",
       "ownerRole": "growth-analyst",
       "status": "PLANNED",
-      "remainingOrEvidence": "daily evidence review, no paid ads default"
+      "remainingOrEvidence": "daily evidence review, no paid ads default",
+      "historicalPhase": "6",
+      "requiredBeforePublic": false
     },
     {
       "id": "chapters70-100",
-      "phase": "post",
+      "phase": "P4",
       "ownerRole": "narrative-lead",
-      "status": "DEFERRED",
-      "remainingOrEvidence": "earned progress preserved"
+      "status": "PLANNED_REQUIRES_IMPLEMENTATION_AND_ACCEPTANCE",
+      "remainingOrEvidence": "earned progress preserved",
+      "historicalPhase": "post",
+      "requiredBeforePublic": true,
+      "historicalStatus": "DEFERRED"
     },
     {
       "id": "guild-war",
-      "phase": "post",
+      "phase": "P6",
       "ownerRole": "gameplay-designer",
-      "status": "DEFERRED",
-      "remainingOrEvidence": "bounded roster/objectives, one outcome, no purchased buffs"
+      "status": "PLANNED_REQUIRES_IMPLEMENTATION_AND_ACCEPTANCE",
+      "remainingOrEvidence": "bounded roster/objectives, one outcome, no purchased buffs",
+      "historicalPhase": "post",
+      "requiredBeforePublic": true,
+      "historicalStatus": "DEFERRED"
     },
     {
       "id": "federation",
-      "phase": "post",
+      "phase": "P6",
       "ownerRole": "gameplay-designer",
-      "status": "DEFERRED",
-      "remainingOrEvidence": "Human membership belongs here: federation of personalGuild owners and independent participants, roles/command/withdrawal. Guild itself has no otherhuman members. Reconcile legacyPlayerGuild modules/saves explicitly before reuse."
+      "status": "PLANNED_REQUIRES_IMPLEMENTATION_AND_ACCEPTANCE",
+      "remainingOrEvidence": "Human membership belongs here: federation of personalGuild owners and independent participants, roles/command/withdrawal. Guild itself has no otherhuman members. Reconcile legacyPlayerGuild modules/saves explicitly before reuse.",
+      "historicalPhase": "post",
+      "requiredBeforePublic": true,
+      "historicalStatus": "DEFERRED"
     },
     {
       "id": "territory",
-      "phase": "post",
+      "phase": "P7",
       "ownerRole": "gameplay-designer",
-      "status": "DEFERRED",
-      "remainingOrEvidence": "duration/cap benefits and measured battle capacity"
+      "status": "PLANNED_REQUIRES_IMPLEMENTATION_AND_ACCEPTANCE",
+      "remainingOrEvidence": "duration/cap benefits and measured battle capacity",
+      "historicalPhase": "post",
+      "requiredBeforePublic": true,
+      "historicalStatus": "DEFERRED"
     },
     {
       "id": "player-market",
-      "phase": "post",
+      "phase": "P7",
       "ownerRole": "market-engineer",
-      "status": "DEFERRED",
-      "remainingOrEvidence": "escrow, recovery, cross-server conservation before activation"
+      "status": "PLANNED_REQUIRES_IMPLEMENTATION_AND_ACCEPTANCE",
+      "remainingOrEvidence": "escrow, recovery, cross-server conservation before activation",
+      "historicalPhase": "post",
+      "requiredBeforePublic": true,
+      "historicalStatus": "DEFERRED"
     },
     {
       "id": "free-asset-intake",
-      "phase": "research",
+      "phase": "P1",
       "ownerRole": "asset-curator",
       "status": "PARTIAL",
-      "remainingOrEvidence": "94 options researched; payload/license/source-export-runtime review per asset"
+      "remainingOrEvidence": "94 options researched; payload/license/source-export-runtime review per asset",
+      "historicalPhase": "research",
+      "requiredBeforePublic": true
     },
     {
       "id": "tool-trials",
-      "phase": "research",
+      "phase": "P0",
       "ownerRole": "tools-engineer",
       "status": "PLANNED",
-      "remainingOrEvidence": "Blender MCP, Codebase Memory, Graft, Agent Reach, exact OpenDesign identity"
+      "remainingOrEvidence": "Blender MCP, Codebase Memory, Graft, Agent Reach, exact OpenDesign identity",
+      "historicalPhase": "research",
+      "requiredBeforePublic": false
     },
     {
       "id": "motion-video",
-      "phase": "research",
+      "phase": "P11",
       "ownerRole": "tools-engineer",
       "status": "PLANNED",
-      "remainingOrEvidence": "8 linked motion repositories, OpenMontage; actual footage production"
+      "remainingOrEvidence": "8 linked motion repositories, OpenMontage; actual footage production",
+      "historicalPhase": "research",
+      "requiredBeforePublic": false
     },
     {
       "id": "selective-agent-skills",
-      "phase": "research",
+      "phase": "P0",
       "ownerRole": "tools-engineer",
       "status": "PLANNED",
-      "remainingOrEvidence": "Agency Agents, Diagram Design, Scientific skills, grill workflows, CLI routing"
+      "remainingOrEvidence": "Agency Agents, Diagram Design, Scientific skills, grill workflows, CLI routing",
+      "historicalPhase": "research",
+      "requiredBeforePublic": false
     },
     {
       "id": "auto-learn",
-      "phase": "continuous",
+      "phase": "P0",
       "ownerRole": "tools-engineer",
       "status": "PARTIAL",
-      "remainingOrEvidence": "one lesson; no promoted candidate yet; holdout and independent review required"
+      "remainingOrEvidence": "one lesson; no promoted candidate yet; holdout and independent review required",
+      "historicalPhase": "continuous",
+      "requiredBeforePublic": false
+    },
+    {
+      "id": "hero-tactics-slice",
+      "phase": "P1",
+      "ownerRole": "combat-engineer",
+      "status": "SOURCE_IMPLEMENTED_PENDING_INTEGRATION",
+      "remainingOrEvidence": "production/design/integration/REPORT.md; runtime, device and human acceptance separate",
+      "historicalPhase": "expansion-foundation",
+      "requiredBeforePublic": true
+    },
+    {
+      "id": "analytics-foundation",
+      "phase": "P9",
+      "ownerRole": "growth-analyst",
+      "status": "SOURCE_IMPLEMENTED_PENDING_INTEGRATION",
+      "remainingOrEvidence": "production/design/integration/REPORT.md; runtime, device and human acceptance separate",
+      "historicalPhase": "expansion-foundation",
+      "requiredBeforePublic": true
+    },
+    {
+      "id": "expansion-integration",
+      "phase": "P9",
+      "ownerRole": "technical-director",
+      "status": "SOURCE_IMPLEMENTED_PENDING_INTEGRATION",
+      "remainingOrEvidence": "production/design/integration/REPORT.md; runtime, device and human acceptance separate",
+      "historicalPhase": "expansion-foundation",
+      "requiredBeforePublic": true
     }
-  ]
+  ],
+  "expansionPlan": "production/design/EXPANSION_PLAN.md",
+  "deliveryPlan": "GL-2.0",
+  "phaseScheme": "GL-2.0-P0-P13",
+  "publicMaxLevel": 100,
+  "internalAlphaMaxLevel": 35
 }

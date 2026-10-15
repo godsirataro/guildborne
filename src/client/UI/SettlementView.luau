@@ -61,7 +61,7 @@ return function(ui: any)
 			if catalog.RecruitmentTemplatesAvailable then text(head,"Each class has three equally likely named recruits. Their base stats match that class.",15) end
 			if s.offer then local o=s.offer;local def=catalog.Adventurers[o.classId];local template=o.templateId and catalog.HeroTemplates and catalog.HeroTemplates[o.templateId]
 				local f=card(ui.scroll,T(if template then template.Name else def.Name).." · "..T(o.classId).." · "..T("Rank").." "..o.rank);f.Name="TavernCandidate"
-				text(f,T("Role")..": "..T(catalog.Roles[o.classId]).." · Lv1",16)
+				text(f,T("Role")..": "..T(catalog.Roles[o.classId]).." · "..(if type(state.hireLevel)=="number" then "Lv"..state.hireLevel else T("Recruitment level unavailable.")),16)
 				text(f,T("Base health {health} · attack {attack} · defense {defense}",{health=def.Stats.Health,attack=def.Stats.Attack,defense=def.Stats.Defense}),15).Name="CandidateBaseStats"
 				text(f,"Rank, level and equipment add to these base stats.",14)
 				local weapon=catalog.Character.Classes[o.classId].Weapon

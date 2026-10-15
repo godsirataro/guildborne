@@ -1,6 +1,23 @@
 --!strict
 return function(config: any)
 	local R={}
+	function R.localCurrent(snapshot:any,session:any):boolean
+		return snapshot~=nil and session~=nil and snapshot.session==session and snapshot.epoch==session.epoch and snapshot.token==session.token
+			and not session.closing and session.state=="Active" and session.record~=nil and not session.busy
+	end
+	function R.localValidate(session:any,character:any,snapshot:any,enter:boolean,alive:boolean,downed:boolean,inCombat:boolean,tower:boolean,distance:number,gate:string?):string?
+		if not session or session.state~="Active" or session.closing or session.busy or not session.record then return "ActorNotReady"end
+		if snapshot and (not R.localCurrent(snapshot,session) or snapshot.character~=character)then return "ActorNotReady"end
+		if enter and snapshot then return "AlreadyThere"end
+		if not enter and not snapshot then return "TravelUnavailable"end
+		if gate then return gate end
+		if not alive then return "ActorNotReady"end
+		if downed then return "Downed"end
+		if inCombat then return "ReturnToGuild"end
+		if tower then return "FinishExpedition"end
+		if distance~=distance or distance<0 or distance>16 then return "VisitStation"end
+		return nil
+	end
 	function R.validate(zone: any,alive: boolean,downed: boolean,inCombat: boolean,towerActive: boolean,distance: number): string?
 		if type(zone)~="string" or not config.Destinations[zone] then return "InvalidZone" end
 		if not alive then return "ActorNotReady" end

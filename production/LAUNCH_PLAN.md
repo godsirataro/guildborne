@@ -1,18 +1,32 @@
-# Guildborne Public launch execution — 2026-10-14
+# Guildborne full-game delivery execution — GL-2.0 / 2026-10-15
 
-Status: **LOCAL CANDIDATE IN PROGRESS; NOT PUBLIC READY**. This is the current release scope and supersedes older all-at-once launch assumptions. Execution details and evidence remain in `launch/` and `integration/`; no historical result is promoted to current acceptance.
+## Latest owner direction — full-game first Public, 2026-10-15
 
-## Approved release boundary
+The user now requires **all systems, Lv100/Class3, Federation, war, territory and player market before first Public**. [GL-2.0 full-game phase roadmap](design/integration/FULL_GAME_GOLIVE_GL2_TH.md) is the current owner-review plan. Lv35 becomes an internal/closed milestone. The Lv35 launch boundary and post-launch classifications below are historical and superseded as delivery targets; source flags and evidence remain unchanged until reviewed implementation. Detailed GL-2.0 acceptance/counts await sign-off; publication and commerce activation remain separately scoped.
+
+## Current execution register
+
+[GL-2.0 scope matrix](design/integration/GL2_SCOPE_MATRIX.json), [feature registry](design/features.json) and [backlog](launch/backlog.json) use P0–P13. Every required gameplay group must pass before Public; Lv35 is internal Alpha. Current runtime selection remains the isolated Lv35 candidate until later reviewed integration. See [P0 source inventory and open decisions](design/integration/GL2_SOURCE_INVENTORY.md).
+
+Run `python production/design/integration/validate_gl2.py` to detect scope/dependency regressions. A metadata pass does not grant gameplay or release acceptance. P0 remains open until named content, dependencies, capacity/device targets and proposed counts are resolved.
+
+## Historical Lv35 candidate and evidence (superseded delivery scope)
+
+Historical reference: [GL-1.0 plan](design/integration/GOLIVE_MASTER_PLAN_TH.md) described the former Lv35-first approach. GL-2.0 supersedes that delivery boundary. Neither document grants publication permission.
+
+Status: **LOCAL CANDIDATE IN PROGRESS; NOT PUBLIC READY**. The sections below record the previous Lv35 candidate and its evidence. Their launch/post-launch labels are historical, superseded by GL-2.0; they do not define the current Public boundary. Execution details and evidence remain in `launch/` and `integration/`; no historical result is promoted to current acceptance.
+
+## Historical candidate boundary (P2 internal Alpha)
 
 Latest local increment: [world boundary and Lv1–35 route](launch/integration/WORLD_ROUTE_UPDATE.md). On candidate55404c19, a fresh single-client Memory run completed Novice6, Warrior/Hall founding, both main arcs through35 and Hall4 using ordinary inputs. Full launch acceptance remains pending; see the linked report for class, cloud, asset and device limits.
 
 Continuation: [Borin and learned Berserker art](launch/integration/BORIN_SKILL_UPDATE.md) verifies normal craft-two/claim/Deepforge travel, one real player Class2 art cast, and a separate no-duplicate reward probe on the same candidate. Broader acceptance remains pending.
 
-Local integration → Closed Beta → Release Candidate → Public Lv1–35 → expansion.
+Historical sequence (retired): local integration → Closed Beta → Release Candidate → Public Lv1–35 → expansion. Current sequence: P0 scope → concurrent P1–P8 delivery → P9 full integration → P10 Closed Beta → P11 RC → P12 full-game Public → P13 stabilization.
 
-Public requires four cosmetic races and all 13 catalog presets; Class1 at10 and Class2 at35 with actual prerequisites; two main arcs; player plus five heroes; personal island/Hall/build/visits; six-human Party and shared Solo/Party PvE with divided encounter EXP/loot; Premium shop, Battle Pass, free daily rewards. Guild means one human owner plus NPC heroes, never a human-member organization. Human membership belongs to post-launch Federation. PvE paid buffs never bypass class/Hall/content gates and have no war effect. Player market and wars remain closed and cannot block the main route. Preserve earned legacy progression.
+The historical Lv35 candidate covered Class1 at10/Class2 at35, two main arcs, player plus five heroes, personal island/Hall/build/visits, Party6/shared PvE and reward previews. That candidate remains useful for P2 internal Alpha. First Public now additionally requires the full GL-2.0 campaign/Lv100/Class3, living Guild/endgame, Federation, war, territory and qualified player market. Personal Guild still has one human owner and NPC heroes. Paid PvE buffs cannot bypass progression or affect war; the free main route cannot require market participation. Preserve earned legacy progression.
 
-Authoritative scope correction: [Party6 and shared PvE contract](launch/integration/PARTY6_PLAN.md). Party6 is required for first Public; implementation is pending. Earlier references to basic human-member Player Guild are superseded. Six-player and mixed-population acceptance are additional gates; prior readiness estimates used the smaller scope.
+Authoritative scope correction: [Party6 and shared PvE contract](launch/integration/PARTY6_PLAN.md). Party6 is required for first Public. [Local membership increment](launch/integration/party-integration/REPORT.md) implements lifecycle and native UI; shared encounters/travel/rewards and real multiplayer acceptance remain pending. Earlier references to basic human-member Player Guild are superseded. Six-player and mixed-population acceptance are additional gates; prior readiness estimates used the smaller scope.
 
 Beta's two silhouettes per race map to existing IDs: Human STANDARD/HEAVY; Elf GRACEFUL/STURDY; Orc STANDARD/HEAVY; Dwarf COMPACT/STOUT. These are candidate mappings, not fit/import approval; never invent Elf/Dwarf STANDARD IDs. Public adds HUMAN_SLIM/ATHLETIC, ELF_RANGER, ORC_LEAN, DWARF_BROAD.
 
@@ -51,9 +65,9 @@ No fabricated date or overall completion percentage: these gates require actual 
 
 Stop new offers if delivery/entitlement is incorrect, preserve unresolved receipt queues, and reconcile authoritative ledgers. Restrict affected systems for duplication/corruption; never guess compensating value or erase profiles. Rollback revision must read schemas already written. Keep market disabled until separate escrow/cross-server qualification. Record incident owner, affected build, timestamps, evidence and recovery checks.
 
-## Post-launch scope retained
+## Former post-launch scope — now required P4/P6/P7 before Public
 
-Continue chapters to Class3 at70 and level100. Guild war begins bounded with roster locking, one-time outcomes and no paid buffs. Federation supports multiple guilds plus independent participants, delegated command and withdrawal. Territory benefits have duration/caps; capacity is measured before promising player counts. Market opens separately after escrow/recovery/cross-server qualification.
+Complete chapters to Class3 at70 and level100 in P4. Federation and bounded war with roster locking, one-time outcomes and no paid buffs are P6. Territory and the Gold/material market are P7. Capacity is measured before promising player counts; market requires escrow/recovery/cross-server qualification. Any missing acceptance blocks full-game Public.
 
 ## Tool and asset backlog retained
 
@@ -66,3 +80,7 @@ Auto-learn records evidence and human feedback after tasks; only held-out evalua
 Source reports: `launch/content.md`, `launch/rewards.md`, `launch/integration/`; earlier evidence: `integration/IMPLEMENTATION.md`, `integration/review-status.json`; research: `research/TOOLS_FREE_2026-10-14.md`, `research/GUILDBORNE_UNIFIED_FREE_CATALOG_2026-10-14.md`.
 
 Latest hero mentor increment: [native UI and source evidence](launch/integration/HERO_MENTOR_UI_UPDATE.md), candidate82674727,752 automated tests before the separately analyzed Controller localization delta; ten synthetic native UI cases. Normal hero route and full launch gates remain pending. Earlier candidate41e341d4 world fixtures are historical evidence in HERO_MENTOR_UPDATE.md.
+
+## Complete expansion update
+
+See [the reconciled twenty-theme plan](design/EXPANSION_PLAN.md) and feature registry. Tactical AI and analytics are the first implementation slices; Combo, FTUE and living Guild have explicit contracts. Shared PvE/conserved settlement remains mandatory before Public. This update does not mark source changes as runtime/device acceptance.

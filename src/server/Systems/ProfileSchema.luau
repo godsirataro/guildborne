@@ -1,4 +1,5 @@
 --!strict
+local SharedClaims = if script then require(script.Parent.SharedPvEClaims) else require("./SharedPvEClaims")
 return function(content: any, util: any, gear: any, expansion: any?, validateExpansion: any?, market: any?, land: any?,noviceProfiles:boolean?,noviceStory:any?,campaign:any?,appearance:any?,launchRewards:any?)
 	assert(not land or market,"Land schema requires market schema")
 	assert(not noviceProfiles or land,"Novice schema requires full profile services")
@@ -43,6 +44,7 @@ return function(content: any, util: any, gear: any, expansion: any?, validateExp
 			assert(util.integer(record.session.epoch, 0, 1000000000) and util.integer(record.session.leaseExpiresAt, 0, 100000000000))
 			assert(record.session.ownerToken == nil or type(record.session.ownerToken) == "string")
 			local d = record.data
+			assert(SharedClaims.validateExtension(d), "Invalid shared PvE claims")
 			if d.launchRewards~=nil then assert(launchRewards and launchRewards.validate(d.launchRewards),"Invalid launch reward extension") end
 			local mode=content.ProgressionMode(d)
 			if version>=8 then assert(d.progression.ruleset==content.ProgressionRulesets.Legacy or d.progression.ruleset==content.ProgressionRulesets.Novice)

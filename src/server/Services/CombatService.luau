@@ -1,5 +1,6 @@
 --!strict
 -- One bounded update per plot, called by the existing follower scheduler.
+local Players=game:GetService("Players")
 local City=require(game.ReplicatedStorage.Shared.Config.City)
 local Config=require(script.Parent.Parent.Config.Combat)
 local Content=require(script.Parent.Parent.Config.Content)
@@ -9,27 +10,45 @@ local Gear=require(game.ReplicatedStorage.Shared.Data.Equipment)(Content,Expansi
 local Stats=require(script.Parent.Parent.Systems.CombatStats)(Content,Config,Gear)
 local Space=require(script.Parent.Parent.Systems.CombatSpace)(City)
 local sight=require(script.Parent.CombatLineOfSight)(workspace:WaitForChild("GuildborneWorld"))
-local Target=require(script.Parent.Parent.Systems.CombatTargeting)(function(a: any,b: any) return (a.root.Position-b.root.Position).Magnitude end,Space.hostile,sight)
+local MakeTarget=require(script.Parent.Parent.Systems.CombatTargeting)
 local Lifecycle=require(script.Parent.Parent.Systems.EnemyLifecycle)
 local BossPatterns=require(script.Parent.Parent.Systems.BossPatterns)
+local Tactics=require(script.Parent.Parent.Systems.HeroTactics)
 local Http=game:GetService("HttpService")
 local V=Vector3.new
-return function(templates: Folder, reward: any,towerResult: any,regionalRewardFactory:any?)
+return function(templates: Folder, reward: any,towerResult: any,regionalRewardFactory:any?,combatObserver:any?,sharedContext:any?)
+	local phases=if sharedContext then require(script.Parent.Parent.Systems.SharedCombatPhases)(sharedContext)else nil
+	local Target=MakeTarget(function(a:any,b:any)return (a.root.Position-b.root.Position).Magnitude end,if phases then nil else Space.hostile,sight,if phases then phases.Policy else nil)
+	local function contains(s:any,a:any):boolean return if phases then phases.Policy.key(a)~=nil else Space.contains(s,a.root.Position)end
 	local Enemy=require(script.Parent.EnemyService)(templates)
 	local service={}
 	local Rig=require(script.Parent.HeroRig)
 	local participation=require(script.Parent.Parent.Systems.PlayerParticipation)
+	local observerPending=0
+	local function observe(owner:number,event:string,payload:any)
+		if combatObserver and observerPending<32 then
+			-- Capture connection identity before queueing; never attribute an old hit to a rejoin.
+			local originalPlayer=Players:GetPlayerByUserId(owner)
+			if not originalPlayer then return end
+			observerPending+=1
+			task.defer(function()pcall(combatObserver,owner,event,payload,originalPlayer);observerPending-=1 end)
+		end
+	end
 	local function emit(name: string,a: any,b: any,value: any)
+		if phases then phases.Notify("Observe",name,a,b,value)end
+		if combatObserver and a.id=="player" and a.kind=="Hero" and type(value)=="number" and value>0 and (name=="damage_dealt" or name=="healing_done")then
+			observe(a.owner,if name=="damage_dealt"then "combat_player_damage"else "combat_player_heal",{amount=value})
+		end
 		if name=="enemy_basic_attack" then a.model:SetAttribute("EnemyActionAt",workspace:GetServerTimeNow()) end
 		-- A commanded companion can land a killing blow before the next AI step.
 		-- Capture the same server-owned party snapshot the AI uses, exactly once.
-		if name=="damage_dealt" and a.id~="player" and a.kind=="Hero" and b.kind=="Enemy" and not b.participants then
+		if not phases and name=="damage_dealt" and a.id~="player" and a.kind=="Hero" and b.kind=="Enemy" and not b.participants then
 			b.participants={}
 			for _,member in ipairs(if a.session then a.session.allies or {} else {a}) do
 				if member.id~="player" and member.owner==a.owner and member.active then table.insert(b.participants,member.id) end
 			end
 		end
-		participation(name,a,b,value,if a.session then a.session.enemies else {},os.clock())
+		if not phases then participation(name,a,b,value,if a.session then a.session.enemies else {},os.clock())end
 		local plot=a.plot
 		if plot then
 			plot:SetAttribute(name,(plot:GetAttribute(name) or 0)+1)
@@ -59,17 +78,19 @@ return function(templates: Folder, reward: any,towerResult: any,regionalRewardFa
     local Regional=require(script.Parent.RegionalCombat)(Damage,regionalRewardFactory)
 	local Abilities=require(script.Parent.Parent.Systems.CombatAbilities)(Config,Target,Damage,emit)
 	function service.Add(s: any,player: Player)
+		if phases then return end
 		s.enemies=Enemy.create(s.plot,s.origin,player.UserId)
 		s.campEnemies=s.enemies
 		for _,e in ipairs(s.enemies) do e.plot=s.plot;e.session=s end
 		s.combat=false
 	end
 	function service.TowerSync(player: Player,s: any,run: any)
+		if phases then return end
 		local key=if run then run.id..":"..run.floor..":"..run.state else "camp"
 		if key==s.towerKey then return end
 		Regional.Stop(player,s)
 		local previous=s.towerKey;s.towerKey=key;s.towerRun=run;s.towerPending=false;s.towerDone=false
-		for _,h in pairs(s.heroes or {}) do if h.combat then h.combat.focusTarget=nil;h.combat.order=nil end end
+		for _,h in pairs(s.heroes or {}) do if h.combat then Tactics.clear(h.combat) end end
 		for _,enemy in ipairs(s.enemies) do enemy.model:Destroy() end
 		local fighting=run and run.state=="Fighting";s.towerPosition=fighting
 		s.enemies=Enemy.create(s.plot,s.origin,player.UserId,if fighting then run.floor else nil)
@@ -110,7 +131,7 @@ return function(templates: Folder, reward: any,towerResult: any,regionalRewardFa
 		local path=desc.build.path and Expansion.Paths[desc.build.path]
 		h.model:SetAttribute("NoParentArt",path~=nil and path.Tier==3 and path.Parent==nil)
 		h.combat.active=desc.state=="Following"
-		if not h.combat.active then h.combat.order=nil;h.combat.focusTarget=nil end
+		if not h.combat.active then Tactics.clear(h.combat) end
 	end
 	local function publish(e: any,now: number)
 		e.model:SetAttribute("CombatHealth",math.ceil(e.health)); e.model:SetAttribute("CombatMaxHealth",e.stats.MaxHealth)
@@ -126,6 +147,8 @@ return function(templates: Folder, reward: any,towerResult: any,regionalRewardFa
 		end
 		if e.class then
 			e.model:SetAttribute("CompanionOrder",e.order)
+			e.model:SetAttribute("TacticalPreset",e.tactic or "Balanced")
+			e.model:SetAttribute("TacticalReason",e.tacticReason)
 			local ability=e.ability or Config.Classes[e.class].Ability
 			e.model:SetAttribute("AbilityName",Config.Abilities[ability].Name)
 			e.model:SetAttribute("Cooldown",math.max(0,math.ceil(math.max(e.cooldowns[ability] or 0,e.nextAbility or 0)-now)))
@@ -138,16 +161,18 @@ return function(templates: Folder, reward: any,towerResult: any,regionalRewardFa
 			end
 		end
 	end
-	function service.Step(player: Player,s: any,leader: BasePart?,valid: boolean,now: number,walk: any)
-		Regional.Sync(player,s)
+	type StepFrame={enemies:any?,support:any?,player:Player?,s:any,leader:BasePart?,character:Model?,now:number,walk:any,combatWalk:any,p:any,allies:{any},engage:boolean,recovery:number,fighting:boolean}
+	local function prepareOwner(player:Player,s:any,leader:BasePart?,valid:boolean,now:number,walk:any):StepFrame
+		if not phases then Regional.Sync(player,s)end
 		local function combatWalk(h: any,goal: Vector3)
-			local region=s.adventureRegion and City.Regions[s.adventureRegion]
+			local region=not phases and s.adventureRegion and City.Regions[s.adventureRegion]
+			local origin=if phases then sharedContext.Scene.origin else s.origin
 			local safe=if region then V(math.clamp(goal.X,region.X-region.HalfWidth+5,region.X+region.HalfWidth-5),goal.Y,math.clamp(goal.Z,region.Z-region.Back+5,region.Z+88))
-				else V(math.clamp(goal.X,s.origin.X-34,s.origin.X+34),s.origin.Y+3,math.clamp(goal.Z,s.origin.Z+49,s.origin.Z+112))
+				else V(math.clamp(goal.X,origin.X-34,origin.X+34),origin.Y+3,math.clamp(goal.Z,origin.Z+49,origin.Z+112))
 			walk(s,h,safe,now)
 		end
 		local character=player.Character
-		if s.towerPosition and character and leader then character:PivotTo(CFrame.new(s.origin+V(0,4,63)));s.towerPosition=false;s.reset=true end
+		if not phases and s.towerPosition and character and leader then character:PivotTo(CFrame.new(s.origin+V(0,4,63)));s.towerPosition=false;s.reset=true end
 		local c=s.characterData
 		if c and c.classId and character and leader then
 			local loadout=s.playerLoadout
@@ -176,7 +201,7 @@ return function(templates: Folder, reward: any,towerResult: any,regionalRewardFa
 				h.combat.session=s
 				h.combat.active=valid and h.state=="Following"
 				h.combat.target=nil
-				if h.combat.active then table.insert(allies,h.combat) end
+				if h.combat.active then table.insert(allies,h.combat) else Tactics.clear(h.combat) end
 				h.combatMove=false
 			end
 		end
@@ -184,17 +209,25 @@ return function(templates: Folder, reward: any,towerResult: any,regionalRewardFa
 		if p then p.session=s end
 		if p and p.active then table.insert(allies,p) end
 		s.allies=allies;for _,a in ipairs(allies) do a.allies=allies end
-		local engage=valid and leader~=nil and Space.contains(s,leader.Position) and #allies>0
+		local engage=valid and leader~=nil and (phases~=nil or Space.contains(s,leader.Position)) and #allies>0
 		s.engage=engage
 		local recovery=Config.RecoveryPerSecond
 		if s.expansionData then for _,b in pairs(s.expansionData.buildings) do if b.kind=="quarters" then recovery*=1.5;break end end end
-		local fighting=Regional.Step(s,if engage then allies else {},now,Config.Tick)
+		return {player=player,s=s,leader=leader,character=character,now=now,walk=walk,combatWalk=combatWalk,p=p,allies=allies,engage=engage,recovery=recovery,fighting=false}
+	end
+	local function stepEnemies(frame:StepFrame)
+		local player,s,now,allies,engage=frame.player,frame.s,frame.now,frame.allies,frame.engage
+		local fighting=if phases then false else Regional.Step(s,if engage then allies else {},now,Config.Tick)
+		-- Shared completion must leave normal owner recovery running before the
+		-- last corpse loses scene membership. Support includes domain-down actors.
+		local awaitingRecovery=false
+		if phases then for _,ally in ipairs(allies)do if ally.health<=0 then awaitingRecovery=true;break end end end
 		for _,e in ipairs(s.enemies) do
-			if e.templateId then continue end
+			if e.templateId or (phases and not phases.Policy.key(e))then continue end
 			e.session=s
 			if e.health==0 then
 				BossPatterns.cancel(e,now);e.model:SetAttribute("TelegraphAt",nil)
-				if not e.towerFloor and Lifecycle.claimDeath(e) then
+				if not phases and not e.towerFloor and Lifecycle.claimDeath(e) then
 					local members=table.clone(e.participants or {})
 					if e.playerParticipated then table.insert(members,"player") end
 					table.sort(members)
@@ -208,15 +241,15 @@ return function(templates: Folder, reward: any,towerResult: any,regionalRewardFa
 						if ok then s.plot:SetAttribute("RewardsSaved",(s.plot:GetAttribute("RewardsSaved") or 0)+1) end
 					end)
 				end
-				if now-(e.downedAt or now)>=2 then e.model.Parent=nil end
-				if not e.towerFloor and not e.rewardPending and now-(e.downedAt or now)>=Config.Goblin.RespawnSeconds then Enemy.reset(e) end
+				if not awaitingRecovery and now-(e.downedAt or now)>=2 then e.model.Parent=nil end
+				if not phases and not e.towerFloor and not e.rewardPending and now-(e.downedAt or now)>=Config.Goblin.RespawnSeconds then Enemy.reset(e) end
 			else
 				local outside=(e.root.Position-e.home).Magnitude>Config.EnemyLeash
 				if not engage or outside then
 					BossPatterns.cancel(e,now);e.model:SetAttribute("TelegraphAt",nil)
 					e.target=nil; e.threat={}; e.tauntTarget=nil; e.tauntUntil=nil; e.state="ReturnToLeader"
 					Enemy.move(e,e.home,Config.Tick)
-					if (e.root.Position-e.home).Magnitude<1 then e.health=e.stats.MaxHealth; e.state="Idle"; e.participants=nil; e.playerParticipated=nil end
+					if (e.root.Position-e.home).Magnitude<1 then local before=e.health;e.health=e.stats.MaxHealth;if phases and e.health>before then phases.Notify("Recover",e,e.health-before)end; e.state="Idle"; e.participants=nil; e.playerParticipated=nil end
 				else
 					e.target=Target.enemy(e,allies,e.target,e.stats.DetectionRange,now)
 					if e.target then
@@ -247,35 +280,48 @@ return function(templates: Folder, reward: any,towerResult: any,regionalRewardFa
 				end
 			end
 		end
+		frame.fighting=fighting
+	end
+	local function stepOwner(frame:StepFrame)
+		local s,leader,character,now=frame.s,frame.leader,frame.character,frame.now
+		local walk,combatWalk,p,allies=frame.walk,frame.combatWalk,frame.p,frame.allies
+		local engage,recovery,fighting=frame.engage,frame.recovery,frame.fighting
+		local enemies=frame.enemies or s.enemies
+		local support=frame.support or allies
 		for _,h in pairs(s.heroes) do
 			local a=h.combat
 			if not a then continue end
-			if a.active and leader then
+			if a.active and leader and (not phases or phases.Policy.key(a)~=nil)then
 				local close=(a.root.Position-leader.Position).Magnitude<=Config.LeaderLeash
-				local held=a.order=="Regroup" or a.order=="Retreat"
-				local escape=if a.health>0 and not held then Regional.Dodge(s,a,now) else nil
-				local focus=a.focusTarget
-				local enemy=if engage and close and not held then
-					(if focus and table.find(s.enemies,focus) and Target.valid(a,focus,Config.DetectionRange) then focus else Target.enemy(a,s.enemies,a.previousTarget,Config.DetectionRange,now)) else nil
+				if a.holdPoint and (a.holdPoint-leader.Position).Magnitude>Config.LeaderLeash then Tactics.clear(a) end
+				a.detectionRange=Config.DetectionRange
+				local enemy,reason=Tactics.select(a,p,enemies,Target,engage,close,now,function(x:any,y:any)return (x.root.Position-y.root.Position).Magnitude end)
+				a.tacticReason=reason
+				local escape=if a.health>0 and a.order~="Retreat" then (if phases then nil else Regional.Dodge(s,a,now)) else nil
 				a.target=enemy; a.previousTarget=enemy
 				if a.health<=0 then
-					a.order=nil;a.focusTarget=nil
+					Tactics.clear(a)
 					a.state="Downed"; h.combatMove=true; h.humanoid:MoveTo(a.root.Position)
-					if not fighting and now-(a.downedAt or now)>=Config.DownSeconds then a.health=a.stats.MaxHealth*.5; a.state="Recover" end
+					if not fighting and now-(a.downedAt or now)>=Config.DownSeconds then local before=a.health;a.health=a.stats.MaxHealth*.5;if phases and a.health>before then phases.Notify("Recover",a,a.health-before)end; a.state="Recover" end
 				elseif escape then
-					fighting=true;h.combatMove=true;a.state="Evade";h.humanoid.WalkSpeed=a.stats.MoveSpeed
+					fighting=true;h.combatMove=true;a.state="Evade";a.tacticReason="TacticEvading";h.humanoid.WalkSpeed=a.stats.MoveSpeed
 					-- Corridor was checked by RegionalEvasion. Avoid the follower's recovery teleport.
 					if h.evadeStamp~=a.evasion.stamp then h.evadeStamp=a.evasion.stamp;h.generation+=1;h.path=nil end
 					if h.root.Anchored then h.root.Anchored=false;h.root:SetNetworkOwner(nil) end
 					h.humanoid:MoveTo(escape)
+				elseif a.order=="Hold" and a.holdPoint then
+					h.combatMove=true;a.state="Hold";h.humanoid.WalkSpeed=a.stats.MoveSpeed
+					walk(s,h,a.holdPoint,now)
 				elseif enemy then
-					if not enemy.participants then
+					if not phases and not enemy.participants then
 						enemy.participants={}; for _,member in ipairs(allies) do if member.id~="player" then table.insert(enemy.participants,member.id) end end
 					end
 					fighting=true; h.combatMove=true
 					local role=Config.Classes[a.class];local skill=a.ability or role.Ability; local def=Config.Abilities[skill]
-					local abilityTarget=if def.Effect=="Heal" then Target.heal(a,allies,def.Range) else enemy
-					local cast=Abilities.cast(a,skill,abilityTarget,s.enemies,now)
+					local abilityTarget=if def.Effect=="Heal" then Target.heal(a,if phases and not def.Group then support else allies,def.Range) else enemy
+					local cast,castProblem=Abilities.cast(a,skill,abilityTarget,enemies,now)
+					if phases and not phases.Policy.key(a)then continue end
+					if cast then a.tacticReason="TacticCasting" elseif castProblem=="Cooldown"then a.tacticReason="TacticCooldown" elseif def.Effect=="Heal" and not abilityTarget then a.tacticReason="TacticNoHealTarget" elseif castProblem=="InvalidTarget"then a.tacticReason="TacticOutOfRange" end
 					local desiredRange=math.min(a.stats.AttackRange,def.Range)
 					local distance=(a.root.Position-enemy.root.Position).Magnitude
 					local away=a.root.Position-enemy.root.Position
@@ -286,6 +332,7 @@ return function(templates: Folder, reward: any,towerResult: any,regionalRewardFa
 					elseif desiredRange>10 and distance<9 and away.Magnitude>.1 then
 						a.state="Approach"; combatWalk(h,a.root.Position+away.Unit*5)
 					else h.humanoid:MoveTo(a.root.Position); a.state="Attack" end
+					if phases and not phases.Policy.key(a)then continue end
 					h.humanoid.WalkSpeed=a.stats.MoveSpeed
 					if cast then a.state="CastAbility" else Abilities.basic(a,enemy,now) end
 				else
@@ -294,41 +341,46 @@ return function(templates: Folder, reward: any,towerResult: any,regionalRewardFa
 						a.state="Retreat";h.combatMove=true
 						local slot=h.slot or 1
 						local destination=s.adventureRegion and City.Destinations[s.adventureRegion]
-						local home=if destination then V(destination.X+((slot-1)%3-1)*3,destination.Y,destination.Z+math.floor((slot-1)/3)*3)
+						local home=if phases then sharedContext.Scene.origin+V(((slot-1)%3-1)*3,3,23+math.floor((slot-1)/3)*3)elseif destination then V(destination.X+((slot-1)%3-1)*3,destination.Y,destination.Z+math.floor((slot-1)/3)*3)
 							else s.origin+V(((slot-1)%3-1)*3,3,23+math.floor((slot-1)/3)*3)
 						local delta=home-a.root.Position
 						-- Short goals preserve walking; avoid the follower's long-distance recovery teleport.
 						walk(s,h,if delta.Magnitude>12 then a.root.Position+delta.Unit*12 else home,now)
 					elseif a.order=="Regroup" then a.state="Regroup" end
+					if phases and not phases.Policy.key(a)then continue end
 					if not fighting and now-(a.lastHit or 0)>Config.RecoveryDelay and a.health<a.stats.MaxHealth then
-						a.health=math.min(a.stats.MaxHealth,a.health+recovery*Config.Tick); a.state="Recover"
+						local before=a.health;a.health=math.min(a.stats.MaxHealth,a.health+recovery*Config.Tick);if phases and a.health>before then phases.Notify("Recover",a,a.health-before)end; a.state="Recover"
 					end
 					local skill=a.ability or Config.Classes[a.class].Ability;local def=Config.Abilities[skill]
-					if not City.contains(leader.Position.X,leader.Position.Z) and def.Effect=="Heal" then Abilities.cast(a,skill,Target.heal(a,allies,def.Range),s.enemies,now) end
+					if not City.contains(leader.Position.X,leader.Position.Z) and def.Effect=="Heal" then Abilities.cast(a,skill,Target.heal(a,if phases and not def.Group then support else allies,def.Range),enemies,now) end
 				end
 			end
-			publish(a,now)
+			if not phases or phases.Policy.key(a)then publish(a,now)end
 		end
-		if p and character and p.model==character then
+		if p and character and p.model==character and (not phases or phases.Policy.key(p)~=nil)then
 			local humanoid=character and character:FindFirstChildOfClass("Humanoid")
 			if p.health<=0 then
 				p.state="Downed"
 				if humanoid then humanoid.WalkSpeed=0; humanoid.JumpPower=0; humanoid.JumpHeight=0 end
 				if now-(p.downedAt or now)>=Config.DownSeconds then
-					p.health=p.stats.MaxHealth*.5; p.state="Recover"; p.lastHit=now
+					local before=p.health;p.health=p.stats.MaxHealth*.5;if phases and p.health>before then phases.Notify("Recover",p,p.health-before)end; p.state="Recover"; p.lastHit=now
 					local destination=s.adventureRegion and City.Destinations[s.adventureRegion]
-					character:PivotTo(CFrame.new(if destination then V(destination.X,destination.Y,destination.Z) else s.origin+V(0,4,23))); s.reset=true
+					if not phases then character:PivotTo(CFrame.new(if destination then V(destination.X,destination.Y,destination.Z) else s.origin+V(0,4,23))); s.reset=true end
 				end
 			else
 				if humanoid then humanoid.WalkSpeed=p.stats.MoveSpeed; humanoid.JumpPower=50; humanoid.JumpHeight=7.2 end
 				p.state=if fighting then "Attack" else "Idle"
-				if not fighting and now-(p.lastHit or 0)>Config.RecoveryDelay then p.health=math.min(p.stats.MaxHealth,p.health+recovery*Config.Tick) end
+				if not fighting and now-(p.lastHit or 0)>Config.RecoveryDelay then local before=p.health;p.health=math.min(p.stats.MaxHealth,p.health+recovery*Config.Tick);if phases and p.health>before then phases.Notify("Recover",p,p.health-before)end end
 			end
-			publish(p,now)
+			if not phases or phases.Policy.key(p)then publish(p,now)end
 		end
-		for _,e in ipairs(s.enemies) do publish(e,now) end
+		frame.fighting=fighting
+	end
+	local function finishStep(frame:StepFrame)
+		local player,s,p,now,fighting=frame.player,frame.s,frame.p,frame.now,frame.fighting
+		if not phases then for _,e in ipairs(s.enemies) do publish(e,now) end end
 		local run=s.towerRun
-		if run and run.state=="Fighting" and not s.towerPending and not s.towerDone then
+		if not phases and run and run.state=="Fighting" and not s.towerPending and not s.towerDone then
 			local allDead=true;for _,e in ipairs(s.enemies) do if e.health>0 then allDead=false end end
 			local failed=p and p.health<=0
 			if allDead or failed then
@@ -345,28 +397,86 @@ return function(templates: Folder, reward: any,towerResult: any,regionalRewardFa
 		end
 		s.plot:SetAttribute("InCombat",fighting)
 	end
+	function service.Step(player:Player,s:any,leader:BasePart?,valid:boolean,now:number,walk:any)
+		if phases then return end -- Shared context requires the explicit fenced phases.
+		local frame=prepareOwner(player,s,leader,valid,now,walk)
+		stepEnemies(frame)
+		stepOwner(frame)
+		finishStep(frame)
+	end
+	-- Stage A private API. Caller prepares all owners, registers actors externally, then ticks once.
+	function service.PrepareSharedOwner(player:Player,s:any,leader:BasePart?,valid:boolean,stamp:number,walk:any,session:any):(any?,any)
+		if not phases or s.mentor or s.towerRun or not phases.CanPrepare(player.UserId,session,stamp)then return nil,"Unavailable"end
+		local function guardedWalk(owner:any,hero:any,goal:any,now:any)
+			if phases.Policy.key(hero.combat)then phases.Call(walk,owner,hero,goal,now)end
+		end
+		local frame=prepareOwner(player,s,leader,valid,stamp,guardedWalk)
+		local token,problem=phases.Prepare(player.UserId,session,stamp,frame.allies,frame)
+		return token,if token then table.freeze(table.clone(frame.allies))else problem
+	end
+	function service.RegisterSharedOwner(token:any):(boolean,string)
+		if not phases then return false,"Unavailable"end;return phases.Register(token)
+	end
+	function service.StepSharedEnemies(stamp:number):(boolean,string)
+		if not phases then return false,"Unavailable"end
+		local scene=sharedContext.Scene
+		if type(scene)~="table"or type(scene.enemies)~="table"or getmetatable(scene.enemies)~=nil then return false,"InvalidEnemies"end
+		for _,enemy in ipairs(scene.enemies)do if type(enemy)~="table"or getmetatable(enemy)~=nil then return false,"InvalidEnemies"end;if enemy.boss or enemy.templateId or enemy.towerFloor then return false,"BasicEnemiesOnly"end end
+		return phases.Enemies(stamp,scene.enemies,function(allies:any,enemies:any):boolean
+			local frame:any={s=scene,now=stamp,allies=allies,engage=#allies>0,fighting=false}
+			stepEnemies(frame)
+			for _,enemy in ipairs(enemies)do if phases.Policy.key(enemy)then publish(enemy,stamp)end end
+			return frame.fighting
+		end)
+	end
+	function service.StepSharedOwner(token:any):(boolean,string)
+		if not phases then return false,"Unavailable"end
+		return phases.Owner(token,function(frame:any,own:any,support:any,fighting:boolean)
+			frame.allies=own;frame.support=support;frame.enemies=sharedContext.Scene.enemies;frame.fighting=fighting
+			for _,actor in ipairs(own)do actor.allies=own end
+			stepOwner(frame)
+		end)
+	end
+	function service.FinishSharedOwner(token:any):(boolean,string)
+		if not phases then return false,"Unavailable"end;return phases.Finish(token,finishStep)
+	end
+	function service.DetachSharedOwner(ownerId:number,session:any)if phases then phases.Detach(ownerId,session)end end
+	function service.CloseShared()if phases then phases.Close()end end
 	function service.PlayerAction(s: any, action: string, now: number, actorId: string?): (boolean,string)
 		local leader=s.playerCombat
 		if not s.active or not leader or not Target.alive(leader) or not leader.model:FindFirstChildOfClass("Humanoid") or leader.model:FindFirstChildOfClass("Humanoid").Health<=0 then return false,"NotReady" end
+		if phases and (not phases.CommandReady()or not phases.Policy.key(leader))then return false,"NotReady"end
+		local enemies=if phases then sharedContext.Scene.enemies else s.enemies
 		local a=leader; local build=s.playerBuild
-		local isOrder=action=="Focus" or action=="Regroup" or action=="Retreat"
+		local isOrder=Tactics.isOrder(action)
 		if actorId and actorId~="player" then
 			local hero=s.heroes and s.heroes[actorId]
 			if not hero or hero.state~="Following" or not hero.combat or hero.combat.owner~=leader.owner or not Target.alive(hero.combat) then return false,"CompanionUnavailable" end
 			a=hero.combat;build=a.build
 			if not build or (not isOrder and (a.root.Position-leader.root.Position).Magnitude>Config.LeaderLeash) then return false,"CompanionUnavailable" end
 		end
+		if phases and not phases.Policy.key(a)then return false,"CompanionUnavailable"end
 		if isOrder then
 			if a==leader then return false,"Select a companion first" end
 			if not a.model.Parent then return false,"CompanionUnavailable" end
 			-- Orders only affect owned AI movement/selection; they never cast, heal or refill cooldowns.
-			a.order=action;a.focusTarget=if action=="Focus" then Target.enemy(a,s.enemies,nil,Config.DetectionRange,now) else nil
-			a.model:SetAttribute("CompanionOrder",action)
+			local anchor=a.root.Position
+			if action=="Hold" then
+				local hit=workspace:Raycast(anchor+V(0,8,0),V(0,-24,0),s.params)
+				if not hit then return false,"CompanionUnavailable"end
+				anchor=hit.Position+V(0,3,0)
+			end
+			local controlled=s.heroes[actorId]
+			controlled.generation+=1;controlled.path=nil
+			Tactics.apply(a,action,anchor);a.focusTarget=if action=="Focus" then Target.enemy(a,enemies,nil,Config.DetectionRange,now) else nil
+			a.model:SetAttribute("TacticalPreset",a.tactic or "Balanced")
+			observe(leader.owner,"hero_order_accepted",{order=action})
+			a.model:SetAttribute("CompanionOrder",a.order)
 			return true,"OK"
 		end
 		-- Re-evaluate bounds at receipt time; never trust stale 5 Hz active flags.
-		if not a.model.Parent or not Space.contains(s,a.root.Position) then return false,"EnterCamp" end
-		if not leader.model.Parent or not Space.contains(s,leader.root.Position) then return false,"EnterCamp" end
+		if not a.model.Parent or not contains(s,a) then return false,"EnterCamp" end
+		if not leader.model.Parent or not contains(s,leader) then return false,"EnterCamp" end
 		a.session=s;leader.session=s
 		local role=Config.Classes[a.class]
 		-- Resolve only from committed server progression, never a client ability ID.
@@ -378,13 +488,13 @@ return function(templates: Folder, reward: any,towerResult: any,regionalRewardFa
 		if not skill then return false,"SkillNotLearned" end
 		if action~="Basic" and action~="Ability" and not slot then return false,"InvalidRequest" end
 		local def=Config.Abilities[skill]
-		local target=if action~="Basic" and def.Effect=="Heal" then Target.heal(a,s.allies or {},def.Range)
-			else Target.enemy(a,s.enemies,nil,if action=="Basic" then a.stats.AttackRange else def.Range,now)
+		local target=if action~="Basic" and def.Effect=="Heal" then Target.heal(a,if phases then (if def.Group then phases.Own(a)else phases.Support())else s.allies or {},def.Range)
+			else Target.enemy(a,enemies,nil,if action=="Basic" then a.stats.AttackRange else def.Range,now)
 		if not target then return false,"NoTarget" end
-		if action~="Basic" then return Abilities.cast(a,skill,target,s.enemies,now) end
+		if action~="Basic" then return Abilities.cast(a,skill,target,enemies,now) end
 		local ok=Abilities.basic(a,target,now)
 		return ok,if ok then "OK" else "Cooldown"
 	end
-	function service.Remove(player:Player,s:any) Regional.Remove(player,s) end
+	function service.Remove(player:Player,s:any) if not phases then Regional.Remove(player,s)end end
 	return service
 end

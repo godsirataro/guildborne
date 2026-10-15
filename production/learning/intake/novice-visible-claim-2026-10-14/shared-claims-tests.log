@@ -1,0 +1,16 @@
+PASS atomic claim uses frozen recipients and durable receipt, public protocol rejects
+PASS durable claim survives recent32 eviction and fresh session epoch
+PASS adapter recreation and pre/post commit exceptions deliver once
+PASS adapter handles thrown commit response and retains immutable command across uncertainty
+PASS unknown pre-commit result resolves after unrelated revision without blocking other claims
+PASS public request IDs cannot poison fresh private claim attempts
+PASS yielded repository Read cannot submit into unrelated pending save
+PASS adapter bounds and exact-session cleanup do not cancel replacement work
+PASS crash after uncertain write resolves receipt under new owner epoch
+PASS two recipients remain independent when one inventory is full
+PASS missing frozen actor, XP cap, wallet and receipt capacity reject entire allocation
+PASS optional extension absent valid and malformed receipts rejected even without activation
+PASS lease and session states precede durable success and yielded Read fences replacement
+PASS frozen hero XP is independent of current party and audit saturation is atomic
+PASS equipment uses bounded sequence ids and byte capacity rejects before commit
+15 shared claims checks passed (injected, no cloud acceptance).

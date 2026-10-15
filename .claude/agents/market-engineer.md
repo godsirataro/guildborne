@@ -47,6 +47,78 @@ Dependencies: audit
 
 Path rule production-evidence: Reconcile latest goals/registries/scopes. One shared ledger, claim before writes, immediate lease check and preserved raw receipts. Different reviewer validates evidence; local checks cannot replace hardware/cloud/human gates.
 
+### shared-pve-claims: Shared PvE Durable Profile Claims
+
+Private injected v2 settlement recipient grants and additive bounded profile receipts using existing fenced transaction. No public remote, world activation or cloud writes.
+
+Environment: local; skill: guildborne-market
+
+Write scopes: src/server/Systems/SharedPvEClaims.luau, src/server/Services/SharedPvERewardAdapter.luau, src/server/Services/PlayerDataService.luau, src/server/Systems/ProfileSchema.luau, tests/shared_pve_claims.luau, tests/run_shared_pve_claims.luau, production/design/evidence/shared-claims.md
+
+Required checks: source-contract, regression, independent-review
+
+Dependencies: none
+
+Path rule server-authority: Reuse actual services; server owns combat/inventory/currency/allocation/rewards/guild/build/escrow. Preserve fencing/receipts/saves/disabled flags. No production cloud writes or commerce activation.
+
+Path rule tooling: Use reviewed bounded local commands/tests. Studio/Forge planners do not launch models; paid/model subprocess, MCP mutation and installation require actual authorization/capability.
+
+Path rule production-evidence: Reconcile latest goals/registries/scopes. One shared ledger, claim before writes, immediate lease check and preserved raw receipts. Different reviewer validates evidence; local checks cannot replace hardware/cloud/human gates.
+
+### shared-pve-participation: Shared PvE Participation
+
+Server-observed bounded contribution ledger and immutable eligibility snapshot; non-client evidence, meaningful damage/effective combat heal/tanking, retained earned participation after departure. Experimental thresholds, no payouts.
+
+Environment: local; skill: guildborne-market
+
+Write scopes: src/server/Systems/SharedEncounterParticipation.luau, tests/shared_encounter_participation.luau, tests/run_shared_encounter_participation.luau, production/design/evidence/shared-participation.md
+
+Required checks: source-contract, regression, independent-review
+
+Dependencies: none
+
+Path rule server-authority: Reuse actual services; server owns combat/inventory/currency/allocation/rewards/guild/build/escrow. Preserve fencing/receipts/saves/disabled flags. No production cloud writes or commerce activation.
+
+Path rule tooling: Use reviewed bounded local commands/tests. Studio/Forge planners do not launch models; paid/model subprocess, MCP mutation and installation require actual authorization/capability.
+
+Path rule production-evidence: Reconcile latest goals/registries/scopes. One shared ledger, claim before writes, immediate lease check and preserved raw receipts. Different reviewer validates evidence; local checks cannot replace hardware/cloud/human gates.
+
+### shared-pve-reward-coordinator: Private Shared Combat Participation and Settlement Binding
+
+Optional trusted nonyield effect sinks with frozen owner rosters, departure hooks and one death snapshot; bounded asynchronous existing settlement/claim delivery, fail closed on uncertain preparation. Single basic enemy, no automatic respawn or default activation, no cloud/production writes. Root owns eventual explicit candidate injection.
+
+Environment: local; skill: guildborne-market
+
+Write scopes: src/server/Services/SharedCombatRewards.luau, src/server/Services/SharedCombatCoordinator.luau, src/server/Services/HeroService.luau, tests/shared_combat_rewards.luau, tests/run_shared_combat_rewards.luau, production/design/evidence/shared-combat-rewards.md
+
+Required checks: source-contract, regression, independent-review
+
+Dependencies: none
+
+Path rule server-authority: Reuse actual services; server owns combat/inventory/currency/allocation/rewards/guild/build/escrow. Preserve fencing/receipts/saves/disabled flags. No production cloud writes or commerce activation.
+
+Path rule tooling: Use reviewed bounded local commands/tests. Studio/Forge planners do not launch models; paid/model subprocess, MCP mutation and installation require actual authorization/capability.
+
+Path rule production-evidence: Reconcile latest goals/registries/scopes. One shared ledger, claim before writes, immediate lease check and preserved raw receipts. Different reviewer validates evidence; local checks cannot replace hardware/cloud/human gates.
+
+### shared-pve-settlement: Shared PvE Conserved Settlement
+
+Immutable bounded canonical allocations and injected Store preparation/recovery. No payouts, production persistence activation or acknowledgement without durable profile receipts.
+
+Environment: local; skill: guildborne-market
+
+Write scopes: src/server/Systems/SharedPvESettlement.luau, src/server/Services/SharedPvESettlementStore.luau, tests/shared_pve_settlement.luau, tests/run_shared_pve_settlement.luau, production/design/evidence/shared-settlement.md
+
+Required checks: source-contract, regression, independent-review
+
+Dependencies: none
+
+Path rule server-authority: Reuse actual services; server owns combat/inventory/currency/allocation/rewards/guild/build/escrow. Preserve fencing/receipts/saves/disabled flags. No production cloud writes or commerce activation.
+
+Path rule tooling: Use reviewed bounded local commands/tests. Studio/Forge planners do not launch models; paid/model subprocess, MCP mutation and installation require actual authorization/capability.
+
+Path rule production-evidence: Reconcile latest goals/registries/scopes. One shared ledger, claim before writes, immediate lease check and preserved raw receipts. Different reviewer validates evidence; local checks cannot replace hardware/cloud/human gates.
+
 ## Evidence gates
 
 audio-validation (audio): Record owned/licensed masters, required provider authorization, cue IDs and actual sync/mix/listening. Missing provider or files leaves pending.

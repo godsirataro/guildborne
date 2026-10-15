@@ -1,0 +1,45 @@
+{
+  "outcome": "success",
+  "context": "Local Studio isolated Memory recovery fixture on candidate e804fcda68202968fce5af6123d1c209c8e86f54c0f2f53bc4e36f141fe242c6; two synthetic classed owner actors, zero NPC companions, real CombatService/Coordinator/claims. Both attempts used the same candidate source.",
+  "observation": "Attempt1 defeated the unchanged 135HP scout with one domain-downed owner, then completed after 2.167 seconds with that detached owner HP0 and WalkSpeed/JumpPower/JumpHeight0. Its recovery loop called Tick with a fresh stamp without preparing owners. Coordinator intentionally detaches owners whose prepared stamp differs, so support was empty and no owner recovery could run. Actual HeroService prepares every owner and then ticks with the same stamp. Attempt2 corrected the fixture schedule without a runtime change: after 7.149 seconds from enemy death, both owners had HP15, WalkSpeed17, JumpPower50 and JumpHeight approximately7.2 before Completed; three further terminal ticks remained stable, fixed11XP/7gold/3herbs conserved, two receipts and duplicate/reconstructed-session delivery remained stable.",
+  "correction": "When extending an explicit-tick integration fixture across combat, recovery or terminal cleanup, preserve the production scheduler contract on every tick: choose one stamp, Prepare each still-current owner using that stamp, then Tick once with it. Verify registration/support and ownership before attributing missing recovery to runtime behavior. Preserve the failing observation and compare with the corrected fixture on the same candidate; do not bypass stale-stamp fencing or inject health/movement recovery to make the test pass.",
+  "limit": "Attempt1 raw result is preserved, but the first erroneous fixture source was corrected in place and is not included as an invented historical snapshot. The archived fixture is the corrected version; source diagnosis is supported by current coordinator stale-stamp detach and HeroService ordering. Recovery duration is measured from enemy death, not from the earlier downing event, so 7.149 seconds is not a replacement for the configured10-second down timer. This is synthetic local Studio Memory evidence using explicit CombatService/Coordinator ticks, not actual HeroService scheduling execution, human multiplayer, cloud persistence, physical device, full progression or Public acceptance. Archived sources are reference snapshots, not a standalone runnable package. Independent source/observation review was reported separately; no fresh skill holdout/refusal evaluation exists. No skill proposal/promotion, model training, background work, paid action or permission change is performed.",
+  "tags": [
+    "shared-combat",
+    "fixture-scheduling",
+    "prepare-tick",
+    "stale-stamp",
+    "downed-recovery",
+    "evidence-boundaries"
+  ],
+  "evidence": [
+    {
+      "path": "production/learning/intake/shared-recovery-schedule-2026-10-14/shared-rewards-recovery-attempt1.json",
+      "sha256": "eb9e2e5c27b454ba8e583a7973ef63e41ae4cea273e212e8efb85cb1c607d329"
+    },
+    {
+      "path": "production/learning/intake/shared-recovery-schedule-2026-10-14/shared-rewards-recovery-attempt2.json",
+      "sha256": "3e23c5290a2508409d47173352fd6a2dc469033ec2c591cff47023a1f4a66d65"
+    },
+    {
+      "path": "production/learning/intake/shared-recovery-schedule-2026-10-14/shared-rewards-recovery-fixture.luau",
+      "sha256": "7519e26d54b3ea762a25b5bfe0ca66ba0890c130aef560503983d41fc2284c95"
+    },
+    {
+      "path": "production/learning/intake/shared-recovery-schedule-2026-10-14/HeroService.luau",
+      "sha256": "8b7e7bd0d0cd040e9fea6c7b671e452a6b1d7461bfe5e79d5736f5da6feb71bd"
+    },
+    {
+      "path": "production/learning/intake/shared-recovery-schedule-2026-10-14/SharedCombatCoordinator.luau",
+      "sha256": "24f37d7d5b4b81cd190fb98ec43f4ea8065010751c7f9232ab2fb8f0270408dd"
+    },
+    {
+      "path": "production/learning/intake/shared-recovery-schedule-2026-10-14/CombatService.luau",
+      "sha256": "9ff6a0b6c99defc93961f965a0eff88b28f5b30d441da0cd6fe253aaaca7a5d7"
+    },
+    {
+      "path": "production/learning/intake/shared-recovery-schedule-2026-10-14/SharedCombatPhases.luau",
+      "sha256": "19ab591ee04d72d03126607c86a284947df9491327d744fc6c3c115e220c0ac0"
+    }
+  ]
+}

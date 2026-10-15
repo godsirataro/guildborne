@@ -1,0 +1,17 @@
+{
+ "date":"2026-10-14",
+ "status":"SCOPED_LOCAL_PASS_INDEPENDENTLY_REVIEWED",
+ "publicReady":false,
+ "candidateSha256":"39dfc9420fb57af517370c842c0e09bfd000560539aa0df4dd6db6eea9f803dc",
+ "automatedTestsBeforeFinalUiRecoveryRefinement":764,
+ "finalUiAnalysisCompileStub":"PASS",
+ "coreSyntheticChecks":9,
+ "studioScriptsCompared":363,
+ "nativeUiSyntheticCases":4,
+ "networkSyntheticSocialActions":8,
+ "actualClients":1,
+ "realSixClientAcceptance":"PENDING",
+ "sharedCombatAndRewards":"NOT_IMPLEMENTED",
+ "rawSha256":"4329b931ef45ea14c2c38f274df37ec17117f95059e077579b758de841c90322",
+ "report":"REPORT.md"
+}

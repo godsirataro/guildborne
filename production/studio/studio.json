@@ -441,7 +441,26 @@
     "presentation-integration": "animator",
     "launch-content": "gameplay-designer",
     "launch-rewards": "systems-engineer",
-    "launch-integration": "technical-director"
+    "launch-integration": "technical-director",
+    "human-party-core": "guild-engineer",
+    "human-party-ui": "ui-designer",
+    "human-party-integration": "technical-director",
+    "hero-tactics-slice": "combat-engineer",
+    "analytics-foundation": "growth-analyst",
+    "expansion-integration": "technical-director",
+    "shared-pve-identity": "combat-engineer",
+    "shared-pve-settlement": "market-engineer",
+    "shared-pve-runtime": "combat-engineer",
+    "shared-pve-participation": "market-engineer",
+    "shared-pve-claims": "market-engineer",
+    "shared-combat-context": "combat-engineer",
+    "shared-combat-coordinator": "combat-engineer",
+    "novice-studio-identity": "gameplay-designer",
+    "shared-pve-reward-coordinator": "market-engineer",
+    "shared-local-travel": "world-builder",
+    "p1-city-services": "world-builder",
+    "p1-city-ui": "ui-designer",
+    "p1-city-verification": "qa-engineer"
   },
   "workflows": [
     {

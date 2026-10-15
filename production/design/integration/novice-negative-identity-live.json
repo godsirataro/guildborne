@@ -1,0 +1,56 @@
+{
+  "candidate": "3f7f4cf06ff4757bd9b38717797e9a39482af4032c5aadbbca52a4f0281bae9c",
+  "sync": {
+    "content": [
+      {
+        "type": "text",
+        "text": "{\"candidateSha256\":\"3f7f4cf06ff4757bd9b38717797e9a39482af4032c5aadbbca52a4f0281bae9c\",\"changed\":11,\"persistence\":\"Memory\",\"sourcesChecked\":377}"
+      }
+    ],
+    "isError": false
+  },
+  "entered": {
+    "content": [
+      {
+        "type": "text",
+        "text": "{\"-1\":{\"attrs\":{\"TrialStatus\":\"Active\",\"OwnerUserId\":-1,\"ReturnLabel\":\"Leave trial\",\"PlayerHealth\":36,\"ClassId\":\"Warrior\",\"DisplayHealth\":\"HP 36/36 · Training dummy 120/120\",\"BasicLabel\":\"Basic Attack\",\"NextBasicAt\":0,\"DisplayGoals\":\"Basic hits 0/1\",\"NextAbilityAt\":0,\"NoviceTrialArena\":true,\"DisplayTitle\":\"Warrior · Ready\",\"EnemyHealth\":120,\"AbilityLabel\":\"Power Strike\",\"DisplayHint\":\"Use F/Q or the buttons. Dodge orange warnings.\"},\"arena\":true},\"-2\":{\"attrs\":{\"TrialStatus\":\"Active\",\"OwnerUserId\":-2,\"ReturnLabel\":\"Leave trial\",\"PlayerHealth\":36,\"ClassId\":\"Warrior\",\"DisplayHealth\":\"HP 36/36 · Training dummy 120/120\",\"BasicLabel\":\"Basic Attack\",\"NextBasicAt\":0,\"DisplayGoals\":\"Basic hits 0/1\",\"NextAbilityAt\":0,\"NoviceTrialArena\":true,\"DisplayTitle\":\"Warrior · Ready\",\"EnemyHealth\":120,\"AbilityLabel\":\"Power Strike\",\"DisplayHint\":\"Use F/Q or the buttons. Dodge orange warnings.\"},\"arena\":true}}"
+      }
+    ],
+    "isError": false
+  },
+  "practiceWon": {
+    "content": [
+      {
+        "type": "text",
+        "text": "{\"-1\":{\"ActionTargetPosition\":\"-4500, 28, 650\",\"ClassId\":\"Warrior\",\"EnemyHealth\":110,\"ActionAt\":1791976452.991916,\"DisplayHint\":\"Leave training to continue your journey.\",\"BasicLabel\":\"Basic Attack\",\"OwnerUserId\":-1,\"ReturnLabel\":\"Leave trial\",\"ActionEffect\":\"Basic\",\"DisplayGoals\":\"Basic hits 1/1\",\"NextBasicAt\":1791976454.0917812,\"ReceiptDelivered\":true,\"AbilityLabel\":\"Power Strike\",\"PlayerHealth\":36,\"NextAbilityAt\":0,\"NoviceTrialArena\":true,\"DisplayTitle\":\"Warrior · Lesson complete\",\"ActionOriginPosition\":\"-4500, 27.998046875, 654\",\"TrialStatus\":\"Won\",\"DisplayHealth\":\"HP 36/36 · Training dummy 110/120\"},\"-2\":{\"ActionTargetPosition\":\"-4900, 28, 650\",\"ClassId\":\"Warrior\",\"EnemyHealth\":110,\"ActionAt\":1791976452.824785,\"DisplayHint\":\"Leave training to continue your journey.\",\"BasicLabel\":\"Basic Attack\",\"OwnerUserId\":-2,\"ReturnLabel\":\"Leave trial\",\"ActionEffect\":\"Basic\",\"DisplayGoals\":\"Basic hits 1/1\",\"NextBasicAt\":1791976453.9246345,\"ReceiptDelivered\":true,\"AbilityLabel\":\"Power Strike\",\"PlayerHealth\":36,\"NextAbilityAt\":0,\"NoviceTrialArena\":true,\"DisplayTitle\":\"Warrior · Lesson complete\",\"ActionOriginPosition\":\"-4900, 28, 654\",\"TrialStatus\":\"Won\",\"DisplayHealth\":\"HP 36/36 · Training dummy 110/120\"}}"
+      }
+    ],
+    "isError": false
+  },
+  "keeper": [
+    {
+      "status": "fulfilled",
+      "value": {
+        "content": [
+          {
+            "type": "text",
+            "text": "{\"running\":false,\"attributes\":{\"PlayerHealth\":48,\"AbilityLabel\":\"Power Strike\",\"EnemyHealth\":0,\"ActionAt\":1791976707.598556,\"DisplayHint\":\"Leave training to continue your journey.\",\"WarningToken\":561.9785900999559,\"OwnerUserId\":-2,\"ReturnLabel\":\"Leave trial\",\"ActionEffect\":\"Basic\",\"DisplayGoals\":\"Defeat the opponent 1/1\",\"NextBasicAt\":1791976708.6984463,\"ActionTargetPosition\":\"-4900, 28, 650\",\"DisplayHealth\":\"HP 48/48 · Crossroads Keeper 0/240\",\"ClassId\":\"Warrior\",\"NextAbilityAt\":1791976713.1310135,\"NoviceTrialArena\":true,\"DisplayTitle\":\"Warrior · Lesson complete\",\"ActionOriginPosition\":\"-4899.99951171875, 27.99801254272461, 649.427978515625\",\"TrialStatus\":\"Won\",\"BasicLabel\":\"Basic Attack\"},\"started\":503.5941396999988,\"status\":\"Won\",\"events\":{\"1\":{\"at\":505.68767349998236,\"action\":\"dodge\",\"token\":551.6297338999575},\"3\":{\"at\":516.0543422999908,\"action\":\"dodge\",\"token\":561.9785900999559},\"2\":{\"at\":510.8543589999899,\"action\":\"dodge\",\"token\":556.7966237999499}},\"finished\":516.5757145000389}"
+          }
+        ],
+        "isError": false
+      }
+    },
+    {
+      "status": "fulfilled",
+      "value": {
+        "content": [
+          {
+            "type": "text",
+            "text": "{\"running\":false,\"attributes\":{\"ActionTargetPosition\":\"-4500, 28, 650\",\"ClassId\":\"Warrior\",\"EnemyHealth\":0,\"ActionAt\":1791976707.73168,\"ReceiptDelivered\":true,\"DisplayHint\":\"Saving trial result...\",\"WarningToken\":561.978447499976,\"OwnerUserId\":-1,\"ReturnLabel\":\"Leave trial\",\"ActionEffect\":\"Basic\",\"DisplayGoals\":\"Defeat the opponent 1/1\",\"NextBasicAt\":1791976708.8315447,\"AbilityLabel\":\"Power Strike\",\"PlayerHealth\":48,\"TrialStatus\":\"Won\",\"NextAbilityAt\":1791976713.1976243,\"NoviceTrialArena\":true,\"DisplayTitle\":\"Warrior · Lesson complete\",\"ActionOriginPosition\":\"-4500, 27.998046875, 646.7994384765625\",\"DisplayHealth\":\"HP 48/48 · Crossroads Keeper 0/240\",\"BasicLabel\":\"Basic Attack\"},\"started\":505.08944360003809,\"status\":\"Won\",\"events\":{\"1\":{\"at\":507.2392983000027,\"action\":\"dodge\",\"token\":551.7291614999995},\"3\":{\"at\":517.4891229000059,\"action\":\"dodge\",\"token\":561.978447499976},\"2\":{\"at\":512.2722155000083,\"action\":\"dodge\",\"token\":556.7964693999966}},\"finished\":518.1545607000007}"
+          }
+        ],
+        "isError": false
+      }
+    }
+  ]
+}

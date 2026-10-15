@@ -1,0 +1,9 @@
+{
+  "content": [
+    {
+      "type": "text",
+      "text": "{\"actors\":2,\"legacyRewardCalls\":0,\"heroService\":false,\"fixedTestBudget\":{\"herb\":3,\"xp\":11,\"gold\":7},\"owners\":2,\"sessionMatchesPersisted\":true,\"initialEnemyHP\":135,\"profileSessionsClosed\":true,\"duplicateStable\":true,\"ok\":true,\"cleanup\":true,\"ownerState\":{\"-94902\":{\"distance\":2.2360680103302,\"health\":15,\"active\":true},\"-94901\":{\"distance\":2.2360680103302,\"health\":0,\"active\":true}},\"companions\":0,\"schedulerCleanup\":\"No Heartbeat or event connections created; explicit ticks only\",\"ticks\":72,\"delta\":{\"herb\":3,\"receipts\":2,\"xp\":11,\"gold\":7},\"noGrantOrSettlementBeforePump\":true,\"memoryServiceReconstructionStable\":true,\"enemyHP\":0,\"acceptedActions\":{\"-94902\":7,\"-94901\":12},\"effects\":27,\"isolatedMemoryOnly\":true,\"actionReasons\":{\"OK\":15,\"Ability:NotReady\":63,\"NotReady\":63,\"Cooldown\":66,\"Ability:OK\":4,\"Ability:Cooldown\":77},\"productionWrites\":0,\"synthetic\":true}"
+    }
+  ],
+  "isError": false
+}

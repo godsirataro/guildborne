@@ -5,8 +5,14 @@ local Locale=require(game.ReplicatedStorage.Shared.Config.Localization)
 local Appearance=require(game.ReplicatedStorage.Shared.Presentation.BuildingAppearance)
 local furnitureSync=require(script.Parent.FurnitureWorld)
 local V=Vector3.new
-return function(open: any,intent: any,release:any?)
+return function(open: any,intent: any,release:any?,cityForge:BasePart?)
 	local S={}
+	-- Capture the original hierarchy, not just an arbitrary tagged workspace part.
+	local forgeWorld=workspace:FindFirstChild("GuildborneWorld")
+	local forgeCity=forgeWorld and forgeWorld:FindFirstChild("City")
+	local forgeDistrict=forgeCity and forgeCity:FindFirstChild("Market")
+	local forgeBuilding=forgeDistrict and forgeDistrict:FindFirstChild("Blacksmith")
+	local registeredForge=if cityForge and cityForge.Parent==forgeBuilding then cityForge else nil
 	local function part(parent: Instance,name: string,size: Vector3,cf: CFrame,color: Color3): Part
 		local p=Instance.new("Part");p.Name=name;p.Size=size;p.CFrame=cf;p.Color=color;p.Anchored=true;p.Material=Enum.Material.Wood;p.Parent=parent;return p
 	end
@@ -74,6 +80,21 @@ return function(open: any,intent: any,release:any?)
 		if not ({DismantleFurniture=true,CraftFurniture=true,PlaceFurniture=true,StoreFurniture=true,GatherResource=true,PlaceBuilding=true,MoveBuilding=true,MoveGuildHall=true,StoreBuilding=true,RestoreBuilding=true,UnlockBuildingTheme=true,ApplyBuildingTheme=true,SaveBuildLayout=true,ApplyBuildLayout=true,DeleteBuildLayout=true,DismantleBuilding=true,CraftItem=true,AdvanceClass=true,LearnSkill=true,EquipSkill=true,ResetSkills=true,SelectRace=true,StartTower=true,EnterTowerFloor=true})[action] then return nil end
 		local character=player.Character;local root=character and character:FindFirstChild("HumanoidRootPart")
 		if not plot or not character or not root or not root:IsA("BasePart") then return "ActorNotReady" end
+		-- Only this server-registered, live station extends the CraftItem location
+		-- gate. The existing domain still owns forge, Hall, material and novice rules.
+		if action=="CraftItem" and registeredForge and forgeBuilding and forgeDistrict and forgeCity and forgeWorld
+			and registeredForge.Parent==forgeBuilding and forgeBuilding.Parent==forgeDistrict
+			and forgeDistrict.Parent==forgeCity and forgeCity.Parent==forgeWorld and forgeWorld.Parent==workspace then
+			local distance=(root.Position-registeredForge.Position).Magnitude
+			if distance==distance and distance<=14 then
+				local humanoid=character:FindFirstChildOfClass("Humanoid")
+				if not character:IsDescendantOf(workspace) or not root:IsDescendantOf(character) or not humanoid or not (humanoid.Health>0) then return "ActorNotReady" end
+				local health=character:GetAttribute("CombatHealth")
+				if typeof(health)~="number" or not (health>0 and health<math.huge) then return "Downed" end
+				if plot.model:GetAttribute("InCombat") then return "ReturnToGuild" end
+				return nil
+			end
+		end
 		if (character:GetAttribute("CombatHealth") or 1)<=0 then return "Downed" end
 		if action=="GatherResource" then
 			local humanoid=character:FindFirstChildOfClass("Humanoid");if not humanoid or humanoid.Health<=0 then return "ActorNotReady" end
@@ -81,7 +102,8 @@ return function(open: any,intent: any,release:any?)
 			local node=plot.nodes[args.nodeId];local distance=if node then (root.Position-node.Position).Magnitude else math.huge
 			if distance~=distance or distance>12 then return "ResourceTooFar" end
 		elseif action=="DismantleFurniture" or action=="CraftFurniture" or action=="PlaceFurniture" or action=="StoreFurniture" or action=="PlaceBuilding" or action=="MoveBuilding" or action=="DismantleBuilding" or action=="MoveGuildHall" or action=="StoreBuilding" or action=="RestoreBuilding" or action=="UnlockBuildingTheme" or action=="ApplyBuildingTheme" or action=="SaveBuildLayout" or action=="ApplyBuildLayout" or action=="DeleteBuildLayout" or action=="CraftItem" or action=="AdvanceClass" or action=="LearnSkill" or action=="EquipSkill" or action=="ResetSkills" or action=="SelectRace" or action=="StartTower" then
-			if plot.model:GetAttribute("InCombat") or (root.Position-plot.origin).Magnitude>165 then return "ReturnToGuild" end
+			local distance=(root.Position-plot.origin).Magnitude
+			if plot.model:GetAttribute("InCombat") or distance~=distance or distance>165 then return "ReturnToGuild" end
 		end
 		return nil
 	end

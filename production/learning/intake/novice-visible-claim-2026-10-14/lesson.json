@@ -1,0 +1,61 @@
+{
+  "outcome": "success",
+  "context": "Guildborne local Studio Novice UI correction on 2026-10-14. Latest observed candidate 75169c5d3c878aba276ed9f44be9c8f4ca1d8d7829f86eb4e38402436486503b, Place0/Game0 with Memory persistence and one actual local player. Shared PvE checkpoint and preserved 15-test claim log provide surrounding build context, not proof of UI behavior.",
+  "observation": "The coordinator normal objective route reached chapter1 and chapter2 ready-to-claim states, but initial tool clicks reported success while the NoviceClaim button was outside the scroll viewport and did not advance progression. Wheel scrolling and a visible click then claimed. At 874x402 the content viewport was 144px tall. Reordering active Novice before optional Human Party/daily navigation improved priority but a duplicate compact guidance line still left the 52px claim button clipped by 5px. After removing only the redundant Active Guild Novice guidance, stored English and Thai observations both show claimY199 plus height52 within viewportTop128 plus height144, Canvas0 and fullyVisible true. A stored Thai visible click observation then showed the chapter2 basic-attack tracker, Canvas0 and noWheelUsed true.",
+  "correction": "Treat a successful GUI automation call as delivery of an attempted input, not proof the intended action happened. Verify the control is fully inside its clipping viewport, click it visibly, and inspect the actual post-action UI/server progression. On a compact active onboarding panel, put the primary chapter/claim card before optional social/reward navigation and remove duplicate guidance only when the HUD already shows that same Novice objective. Preserve Human Party availability, back navigation and loading/error/other-tab guidance. Check both English and Thai at the same constrained viewport after every layout correction.",
+  "limit": "The initial unsuccessful click and 5px intermediate clipping are coordinator observations documented in archived reports; no fabricated raw screenshot file is included. Final rectangle/Thai post-click results are archived actual tool results, not human UAT or physical touch/performance evidence. The route was automated movement-assisted, and later chapter4 boss failure remains retained; full Novice completion is not established. The 837-test full baseline and reviewed 15 injected claim checks predate the final SliceUI-only adjustment and establish separate local code evidence, not final UI acceptance; final SliceUI compile/static analysis and EN/TH viewport checks were separate. Archived source files are reference snapshots, not a standalone runnable package. No independent fresh holdout/refusal evaluator has approved a skill candidate, so this records one lesson only with no proposal, skill promotion, model training, background job, paid call or permission change.",
+  "tags": [
+    "native-ui",
+    "viewport-clipping",
+    "onboarding",
+    "automation-verification",
+    "localization",
+    "evidence-boundaries"
+  ],
+  "evidence": [
+    {
+      "path": "production/learning/intake/novice-visible-claim-2026-10-14/SliceUI.luau",
+      "sha256": "3cfcf12fac62a21703a023dcd8ac00dc16cc102b4d1e8686a949b69eac38b759"
+    },
+    {
+      "path": "production/learning/intake/novice-visible-claim-2026-10-14/NoviceJourneyView.luau",
+      "sha256": "f1f392e89c0fcba3c73bb6811d2879848933ade2eeba0a88537e9aca8750fc16"
+    },
+    {
+      "path": "production/learning/intake/novice-visible-claim-2026-10-14/NOVICE_CHAPTER1_OBSERVATION.md",
+      "sha256": "376c02b92820b140add6a223d8ad1a9ec225ea8cf4764a08335c81f58f5e9f39"
+    },
+    {
+      "path": "production/learning/intake/novice-visible-claim-2026-10-14/SHARED_PVE_CHECKPOINT.md",
+      "sha256": "2bcd1fb9954db75ce9ab579da786a5a5021b58d2835c7f3a52e2395a3615af7a"
+    },
+    {
+      "path": "production/learning/intake/novice-visible-claim-2026-10-14/novice-priority-en.json",
+      "sha256": "dc0ac74dfdfb9f03ec4f90ecf2329c30f2eaeff442b98d083e984a1a0ff98253"
+    },
+    {
+      "path": "production/learning/intake/novice-visible-claim-2026-10-14/novice-priority-th.json",
+      "sha256": "738aa1f18de7e16818894a8e2956f94c85820a8cccde52cfd54bbe933eb1b370"
+    },
+    {
+      "path": "production/learning/intake/novice-visible-claim-2026-10-14/novice-priority-claim-th.json",
+      "sha256": "9a4fb2dbd4887f9e5a4cc75b6b9ca555796dfe57c27c1803f074222172f544a6"
+    },
+    {
+      "path": "production/learning/intake/novice-visible-claim-2026-10-14/validation-shared-claims.log",
+      "sha256": "4676b9e51d72618b51cb3268644665f337435f587f841a634b246b2bd007fd3f"
+    },
+    {
+      "path": "production/learning/intake/novice-visible-claim-2026-10-14/shared-claims.md",
+      "sha256": "c0c4db7f7f64b7dacc8c464c321422a8c66026054ac549e57fbeba2b690c4493"
+    },
+    {
+      "path": "production/learning/intake/novice-visible-claim-2026-10-14/shared-claims-tests.log",
+      "sha256": "e983eab26043f0195975715bf90120a1e940e375666648f8a641d488a9b80e19"
+    },
+    {
+      "path": "production/learning/intake/novice-visible-claim-2026-10-14/party-ui.md",
+      "sha256": "494deefea406f10e0764678248c6723e9e051cf1c1bb695d315ae6cac6214a09"
+    }
+  ]
+}

@@ -30,4 +30,24 @@ return function(test:any,eq:any)
   eq(s.canCraft,false);d.inventory.stacks.iron_ore=3;eq(describe(d,catalog,rules,"iron_ingot",false).canCraft,true)
   eq(describe(d,catalog,rules,"iron_ingot",true).problem,"Waiting for the current action.")
  end)
+ test("crafting novice readiness matches server action gate and preserves legacy",function()
+  for _,claimed in ipairs({-1,0,5,6})do
+   local d=ready("iron_ingot");d.progression={ruleset=content.ProgressionRulesets.Novice}
+   if claimed>=0 then d.progression.novice={claimed=claimed}end
+   local before=util.copy(d);local state=describe(d,catalog,rules,"iron_ingot",false)
+   eq(state.problem,content.NoviceActionProblem(d,"CraftItem"));eq(d,before)
+  end
+  local d=ready("iron_ingot");d.progression={ruleset=content.ProgressionRulesets.Legacy,novice={claimed=0}}
+  eq(describe(d,catalog,rules,"iron_ingot",false).canCraft,true)
+ end)
+ test("crafting live location refusal updates without changing materials or bypassing owned forge",function()
+  local d=ready("iron_ingot");local before=util.copy(d)
+  for _,reason in ipairs({"ActorNotReady","Downed","ReturnToGuild","Visit your guild workshop or the city forge to craft."})do
+   local state=describe(d,catalog,rules,"iron_ingot",false,reason)
+   eq(state.problem,reason);eq(state.canCraft,false);eq(d,before)
+  end
+  eq(describe(d,catalog,rules,"iron_ingot",false,nil).canCraft,true)
+  d.expansion.storage=d.expansion.buildings;d.expansion.buildings={}
+  eq(describe(d,catalog,rules,"iron_ingot",false,nil).problem,"Build a Blacksmith first.")
+ end)
 end

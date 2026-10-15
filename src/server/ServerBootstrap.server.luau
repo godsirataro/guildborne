@@ -11,6 +11,7 @@ local Content = require(script.Parent.Config.Content)
 local Runtime = require(script.Parent.Config.Runtime)
 local Release=require(script.Parent.Systems.ReleasePolicy)(require(script.Parent.Config.ReleaseContent)).resolve(Runtime,{isStudio=RunService:IsStudio(),placeId=game.PlaceId,gameId=game.GameId})
 local launchEnabled=Release.Enabled==true
+local sharedLabEnabled=launchEnabled and (Runtime :: any).SharedCombatCandidate==true and RunService:IsStudio() and game.PlaceId==0 and game.GameId==0 and Runtime.StudioPersistence=="Memory"
 local noviceEnabled=(Runtime.NoviceJourney==true or launchEnabled) and RunService:IsStudio() and game.PlaceId==0 and game.GameId==0 and Runtime.StudioPersistence=="Memory"
 local ironveilEnabled=noviceEnabled and (Runtime.IronveilJourney==true or launchEnabled)
 local ashenEnabled=ironveilEnabled and Runtime.AshenJourney==true and not launchEnabled
@@ -33,7 +34,7 @@ local verbose = RunService:IsStudio() and Runtime.VerboseStudioLogs
 local function log(name: string, fields: any)
 	if not verbose then return end
 	local safe = {}
-	for _, key in ipairs({ "revision", "action", "questId", "reason", "amount", "level", "classId", "itemId", "quantity", "event" }) do
+	for _, key in ipairs({ "revision", "action", "questId", "reason", "amount", "level", "classId", "itemId", "quantity", "event", "version", "milestone", "elapsedSeconds" }) do
 		if fields[key] ~= nil then safe[key] = fields[key] end
 	end
 	print("[Guildborne] " .. name .. " " .. HttpService:JSONEncode(safe))
@@ -44,7 +45,16 @@ if Runtime.RobloxAnalyticsEnabled and not RunService:IsStudio() then
 		if player then RobloxAnalytics:LogCustomEvent(player, name, 1) end
 	end)
 end
-local Analytics = require(script.Parent.Services.AnalyticsAdapter)(providers, log)
+local Analytics = require(script.Parent.Services.AnalyticsAdapter)(providers, log, require(script.Parent.Systems.AnalyticsContract))
+local funnelOwners:{[number]:Player}={}
+local Funnel=require(script.Parent.Systems.OnboardingFunnel)({Now=os.clock,
+	Emit=function(userId:number,name:string,payload:any)
+		Analytics.Product(name,payload,Players:GetPlayerByUserId(userId))
+	end})
+local function observeProduct(userId:number,name:string,payload:any,sourcePlayer:Player?)
+	-- Telemetry is never part of combat/profile authority or commit success.
+	if sourcePlayer and funnelOwners[userId]==sourcePlayer and Players:GetPlayerByUserId(userId)==sourcePlayer then pcall(Funnel.Observe,userId,name,payload) end
+end
 local Expansion=require(Shared.Data.Expansion)
 require(script.Parent.Systems.RecipeValidator)(Content,Expansion,Util)
 local LandPlacement=require(Shared.Data.LandBuildingPlacement)(Expansion,require(Shared.Data.IslandPlacement),require(Shared.Config.GuildIslandLayout))
@@ -119,12 +129,13 @@ else
 		warn("[Guildborne] Persistence not configured: set a permitted development/staging universe in Config/Runtime.")
 	end
 end
-local Data = require(script.Parent.Services.PlayerDataService)({ HeroMentor=HeroMentor,PermanentEntitlements=PermanentEntitlements,Campaign=Campaign,NoviceStory=NoviceStory,MarketEscrow=MarketEscrow, Util = Util, Content = Content, Config = Runtime, CombatRewards = CombatRewards, Expansion=ExpansionService,
+local sharedClaims=if sharedLabEnabled then require(script.Parent.Systems.SharedPvEClaims).new(Content,Util,Economy)else nil
+local Data = require(script.Parent.Services.PlayerDataService)({ SharedPvEClaims=sharedClaims,HeroMentor=HeroMentor,PermanentEntitlements=PermanentEntitlements,Campaign=Campaign,NoviceStory=NoviceStory,MarketEscrow=MarketEscrow, Util = Util, Content = Content, Config = Runtime, CombatRewards = CombatRewards, Expansion=ExpansionService,
 	Schema = Schema, Protocol = Protocol, Commands = Commands, Store = store, AuditStore = auditStore,
 	Now = os.time, Wait = task.wait, Jitter = function() return math.random() * 0.15 end, Log = log,
 	OnCommitted = function(userId: number, events: any)
 		local player = Players:GetPlayerByUserId(userId)
-		for _, event in ipairs(events) do Analytics.Emit(event.name, event.payload, player) end
+		for _, event in ipairs(events) do observeProduct(userId,event.name,event.payload,player);Analytics.Emit(event.name, event.payload, player) end
 	end })
 local bestiary=require(script.Parent.Systems.EnemyProfiles)(CombatConfig).catalog(Content)
 bestiary.Regions=require(script.Parent.Systems.AdventureFieldGuide)(require(script.Parent.Config.AdventureEncounters),require(script.Parent.Config.AdventureEnemyProfiles),require(script.Parent.Config.AdventureRewards),require(script.Parent.Systems.AdventureStats),require(Shared.Config.City).RegionOrder)
@@ -138,6 +149,67 @@ local ashenWorld:any
 local towerWorld:any
 local crosshavenWorld:any
 local archiveHeartWorld:any
+-- Explicit local acceptance lab, independent of the ordinary launch candidate.
+-- One encounter only. Rewards use actual loaded Memory profiles; no public route.
+local sharedCandidateFactory:any=nil
+local sharedRewardAdapter:any=nil
+local sharedScene:Model?=nil
+local sharedMentorActive:(Player)->boolean=function(_player:Player):boolean return false end
+if sharedLabEnabled then
+	sharedCandidateFactory=function(parent:Instance,templates:Folder):any
+		local scene=Instance.new("Model");scene.Name="SharedCombatCandidate";scene.Parent=parent
+		local origin=Vector3.new(6000,0,6000)
+		local ground=Instance.new("Part");ground.Name="Ground";ground.Anchored=true
+		ground.Size=Vector3.new(100,2,150);ground.Position=origin+Vector3.new(0,-1,75);ground.Material=Enum.Material.Grass;ground.Parent=scene
+		local spawned=require(script.Parent.Services.EnemyService)(templates).create(scene,origin,0)
+		local scout=spawned[1];for i=2,#spawned do spawned[i].model:Destroy()end
+		scout.plot=scene
+		sharedScene=scene
+		scene:SetAttribute("CandidateOnly",true);scene:SetAttribute("RewardsEnabled",true)
+		scene:SetAttribute("Origin",origin);scene:SetAttribute("Status","Ready")
+		local settlement=require(script.Parent.Systems.SharedPvESettlement)
+		local repository=require(script.Parent.Services.SharedPvESettlementStore)(require(script.Parent.Persistence.MemoryStore)(Util),Util,settlement,"shared_lab",2)
+		sharedRewardAdapter=require(script.Parent.Services.SharedPvERewardAdapter)({Data=Data,Repository=repository,Claims=sharedClaims,Util=Util,Namespace="shared_lab"})
+		local encounterId="scout_"..HttpService:GenerateGUID(false)
+		local delivery={Deliver=function(ownerId:number,id:string):(string,string)
+			local original=Players:GetPlayerByUserId(ownerId);local session=Data.Sessions[ownerId]
+			local outcome,code=sharedRewardAdapter.Deliver(ownerId,id)
+			if original and original.Parent==Players and Players:GetPlayerByUserId(ownerId)==original and session and Data.Sessions[ownerId]==session and not session.closing then
+				if outcome=="Committed" then if Network then Network.Send(original)end;Data.FlushAudit(ownerId)
+				elseif code=="AuditBacklog" then Data.FlushAudit(ownerId)end
+			end
+			return outcome,code
+		end}
+		return {
+			Scene={plot=scene,origin=origin,enemies={scout}},
+			TravelGate=function(player:Player,enter:boolean):string?
+				local session=Data.Sessions[player.UserId]
+				if player.Parent~=Players or Players:GetPlayerByUserId(player.UserId)~=player or not session or session.closing or session.state~="Active" then return "ActorNotReady" end
+				if session.busy then return "SavePending" end
+				if sharedMentorActive(player) then return "HeroMentorActive" end
+				if enter and (not scene.Parent or scene:GetAttribute("Status")=="Faulted" or scene:GetAttribute("Status")=="Closed") then return "TravelUnavailable" end
+				return Content.NoviceActionProblem(session.record.data,"TravelZone")
+			end,
+			TravelNotify=function(player:Player,code:string)if Network then Network.Send(player,code)end end,
+			MakeRewards=function(context:any):any
+				return require(script.Parent.Services.SharedCombatRewards)({Policy=context.Policy,EncounterToken=context.EncounterToken,Enemy=context.Enemy,OwnerRoster=context.OwnerRoster,
+					Now=os.clock,EncounterId=encounterId,RotationSeed=0,
+					Budget={xp=CombatConfig.Goblin.Reward.XP,gold=CombatConfig.Goblin.Reward.Gold,items={}},
+					MakeParticipation=require(script.Parent.Systems.SharedEncounterParticipation),Settlement=settlement,Repository=repository,Delivery=delivery,Util=Util})
+			end,
+			Session=function(player:Player):any
+				if player.Parent~=Players or Players:GetPlayerByUserId(player.UserId)~=player then return nil end
+				return Data.Sessions[player.UserId]
+			end,
+			ContainsPosition=function(position:Vector3):boolean
+				local p=position-origin
+				return math.abs(p.X)<=34 and p.Z>=49 and p.Z<=112 and p.Y>0 and p.Y<30
+			end,
+			Status=function(status:string,reason:string?)scene:SetAttribute("Status",status);scene:SetAttribute("Failure",reason)end,
+			Destroy=function()scene:Destroy()end,
+		}
+	end
+end
 local World:any = require(script.Parent.Services.WorldService).new(function(player: Player, tab: string)
 	if Network then Network.Send(player, nil, nil, nil, tab) end
 end, function(player: Player, deathId: string, members: {string},encounterId:string?): boolean
@@ -181,25 +253,45 @@ end, function(player:Player)
 		if outcome=="Committed" then if Network then Network.Send(player) end;Data.FlushAudit(player.UserId);if campaignWorld then campaignWorld.Victory(player,ticket)end;if ironveilWorld then ironveilWorld.Victory(player,ticket)end;if ashenWorld then ashenWorld.Victory(player,ticket)end end
 		return outcome
 	end
-end,Release)
+end,Release,observeProduct,sharedCandidateFactory)
 local closing = false
+local sharedPumpBusy=false
+local function pumpSharedRewards()
+	if not sharedRewardAdapter or sharedPumpBusy then return end
+	sharedPumpBusy=true
+	local ok=pcall(function()
+		sharedRewardAdapter.Sweep()
+		local state=World.SharedRewardState()
+		if state and (state.status=="PendingPreparation" or state.status=="PendingDelivery")then World.PumpSharedRewards()end
+		state=World.SharedRewardState()
+		if sharedScene and sharedScene.Parent and state then sharedScene:SetAttribute("RewardStatus",state.status)end
+	end)
+	sharedPumpBusy=false
+	if not ok then log("shared_reward_worker_retry",{})end
+end
 local started: { [Player]: boolean } = {}
+local HumanParty=require(script.Parent.Services.HumanPartyRuntime)({Enabled=launchEnabled,Data=Data,
+	Notify=function(player:Player)if Network then Network.Send(player)end end})
 local function load(player: Player): string
 	if closing or player.Parent ~= Players then return "Closing" end
 	local code = Data.Load(player.UserId, HttpService:GenerateGUID(false))
-	if code == "OK" and not started[player] then
-		started[player] = true; Analytics.Emit("session_started", {}, player)
+	if code == "OK" and not closing and player.Parent==Players and Players:GetPlayerByUserId(player.UserId)==player and not started[player] then
+		started[player] = true
+		if funnelOwners[player.UserId]~=player then pcall(Funnel.End,player.UserId);funnelOwners[player.UserId]=player;pcall(Funnel.Begin,player.UserId) end
+		Analytics.Emit("session_started", {}, player)
 	end
 	if player.Parent ~= Players then Data.Close(player.UserId) end
 	if code=="OK" and player.Parent==Players and PermanentPassRuntime then PermanentPassRuntime.Joined(player) end
+	if code=="OK" and player.Parent==Players then HumanParty.Add(player) end
 	return code
 end
-Network = require(script.Parent.Services.NetworkService)({ Content=Content, Data = Data, Protocol = Protocol, Project = Project,
+Network = require(script.Parent.Services.NetworkService)({ HumanParty=HumanParty,Content=Content, Data = Data, Protocol = Protocol, Project = Project,
 	Mode = mode, World = World, Load = load, Log = log,PermanentPassRequest=function(player:Player,packet:any):string
 		return if PermanentPassRuntime then PermanentPassRuntime.Request(player,packet) else "PurchaseUnavailable"
 	end })
 if noviceEnabled then
  local course=require(script.Parent.Services.NoviceCourseWorld)({Data=Data,Chapter=NoviceChapter,
+  TrialIdentityContext={IsStudio=RunService:IsStudio(),PlaceId=game.PlaceId,GameId=game.GameId,PersistenceMode=Runtime.StudioPersistence},
   MakeReceipt=function(userId:number,receipt:any)return require(script.Parent.Services.NoviceReceiptAdapter)(Data,userId,receipt,Util,NoviceChapter,Content)end,
   Notify=function(player:Player)Network.Send(player)end,
   ReturnToGuild=function(player:Player)World.IntentCommitted(player,"TravelZone",{zone="Guild"})end})
@@ -235,6 +327,7 @@ if HeroMentor then
  local mentorWorld=require(script.Parent.Services.HeroMentorWorld)({Data=Data,World=World,Trial=HeroMentor,
   Notify=function(player:Player,code:string?)Network.Send(player,code)end,
   MakeReceipt=function(userId:number,receipt:any,epoch:any,token:any)return require(script.Parent.Services.HeroMentorReceiptAdapter)(Data,userId,receipt,Util,epoch,token)end})
+ sharedMentorActive=mentorWorld.Active
  World.HeroMentorIntent=mentorWorld.Intent
  World.HeroMentorState=mentorWorld.State
  local validate,remove=World.ValidateIntent,World.Remove
@@ -262,9 +355,15 @@ local function joined(player: Player)
 	if code == "OK" then Data.FlushAudit(player.UserId) end
 end
 local function drain(player: Player)
+	local departingSession=Data.Sessions[player.UserId]
+	HumanParty.Remove(player)
 	PermanentPassRuntime.Remove(player)
-	if started[player] then Analytics.Emit("session_ended", {}, player); started[player] = nil end
+	if started[player] then
+		if funnelOwners[player.UserId]==player then funnelOwners[player.UserId]=nil;pcall(Funnel.End,player.UserId) end
+		Analytics.Emit("session_ended", {}, player); started[player] = nil
+	end
 	Network.Remove(player); World.Remove(player)
+	if sharedRewardAdapter and departingSession then sharedRewardAdapter.Remove(player.UserId,departingSession)end
 	local deadline = os.clock() + 22
 	repeat
 		local code = Data.Close(player.UserId)
@@ -276,6 +375,12 @@ end
 Players.PlayerAdded:Connect(function(player) task.spawn(joined, player) end)
 Players.PlayerRemoving:Connect(drain)
 for _, player in ipairs(Players:GetPlayers()) do task.spawn(joined, player) end
+if sharedLabEnabled then task.spawn(function()
+	while not closing do task.wait(.5);if closing then break end;pumpSharedRewards()end
+end)end
+task.spawn(function()
+	while not closing do task.wait(1);HumanParty.Step() end
+end)
 task.spawn(function()
 	while not closing do
 		task.wait(Runtime.HeartbeatSeconds + math.random())
@@ -288,6 +393,17 @@ task.spawn(function()
 end)
 game:BindToClose(function()
 	closing = true
+	if sharedLabEnabled then World.DestroyHeroRuntime()end
+	World.CloseSharedCombat()
+	if sharedLabEnabled then
+		local untilAt=os.clock()+3
+		while sharedPumpBusy and os.clock()<untilAt do task.wait(.05)end
+		for _=1,16 do
+			if sharedPumpBusy or os.clock()>=untilAt then break end
+			local state=World.SharedRewardState();if not state or (state.status~="PendingPreparation" and state.status~="PendingDelivery")then break end
+			pumpSharedRewards()
+		end
+	end
 	local remaining = 0
 	for _, player in ipairs(Players:GetPlayers()) do
 		remaining += 1

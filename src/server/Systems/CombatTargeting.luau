@@ -1,10 +1,12 @@
 --!strict
 -- Distances come from server entity positions through the injected distance function.
-return function(distance: any,hostileSpace: any?,lineOfSight:any?)
+return function(distance: any,hostileSpace: any?,lineOfSight:any?,identityPolicy:any?)
 	local T = {}
+	function T.key(actor:any):any return if identityPolicy then identityPolicy.key(actor) else actor.id end
+	function T.effectValid(a:any,b:any,ally:boolean?):boolean return identityPolicy==nil or identityPolicy.valid(a,b,ally) end
 	function T.alive(e: any): boolean return e~=nil and e.active==true and e.health>0 and e.state~="Downed" and e.state~="Dead" end
 	function T.valid(a: any, b: any, range: number, ally: boolean?): boolean
-		return T.alive(a) and T.alive(b) and a.owner==b.owner and (if ally then a.kind==b.kind else a.kind~=b.kind)
+		return T.alive(a) and T.alive(b) and (if identityPolicy then identityPolicy.valid(a,b,ally) else a.owner==b.owner and (if ally then a.kind==b.kind else a.kind~=b.kind))
 			and (ally==true or hostileSpace==nil or hostileSpace(a,b))
 			and distance(a,b)<=range
 			and (lineOfSight==nil or lineOfSight(a,b))
@@ -14,7 +16,8 @@ return function(distance: any,hostileSpace: any?,lineOfSight:any?)
 		local best,score=nil,-math.huge
 		for _,e in ipairs(candidates) do
 			if T.valid(actor,e,range) then
-				local threat=(actor.threat and actor.threat[e.id]) or 0
+				local key=T.key(e)
+				local threat=(key and actor.threat and actor.threat[key]) or 0
 				local value=threat*100+(if e==existing then 20 else 0)+(if e.target==actor then 10 else 0)-distance(actor,e)
 				if value>score then best=e; score=value end
 			end

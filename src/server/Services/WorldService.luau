@@ -11,11 +11,13 @@ local LandWorld=require(script.Parent.GuildLandWorld)
 local HallWorld=require(script.Parent.GuildHallWorld)
 local World = {}
 
-function World.new(onOpen: (Player, string) -> (), reward: any, towerResult: any, intent: any,regionalRewardFactory:any?,release:any?)
+function World.new(onOpen: (Player, string) -> (), reward: any, towerResult: any, intent: any,regionalRewardFactory:any?,release:any?,combatObserver:any?,sharedCandidateFactory:any?)
 	local folder = Instance.new("Folder"); folder.Name = "GuildborneWorld"; folder.Parent = workspace
 	local templates = Kit.Build(); templates.Parent = ServerStorage
-	local expansion=require(script.Parent.ExpansionWorld)(onOpen,intent,release)
-	local heroes = require(script.Parent.HeroService)(templates, onOpen, reward,towerResult,regionalRewardFactory)
+	-- Only a trusted server caller supplies this opt-in factory. The scene lives
+	-- outside individual plots so removing one owner cannot destroy others' combat.
+	local sharedCandidate=if sharedCandidateFactory then sharedCandidateFactory(folder,templates)else nil
+	local heroes = require(script.Parent.HeroService)(templates, onOpen, reward,towerResult,regionalRewardFactory,combatObserver,sharedCandidate)
 	Lighting.ClockTime = 10.5; Lighting.Brightness = 2
 	Lighting.Ambient = Color3.fromRGB(111, 114, 109)
 	Lighting.OutdoorAmbient = Color3.fromRGB(142, 148, 134)
@@ -24,6 +26,7 @@ function World.new(onOpen: (Player, string) -> (), reward: any, towerResult: any
 	local grade = Instance.new("ColorCorrectionEffect"); grade.Name = "GuildborneDaylight"
 	grade.TintColor = Color3.fromRGB(255, 245, 228); grade.Contrast = .04; grade.Saturation = -.06; grade.Parent = Lighting
 	local city=require(script.Parent.CityWorld)(folder,templates,onOpen,intent)
+	local expansion=require(script.Parent.ExpansionWorld)(onOpen,intent,release,city.craftingStation)
 	city.regions=require(script.Parent.RegionalWorld)(folder,city.town,intent,templates,release)
 	city.portals=table.clone(city.guildAccessPortals)
 	for _,region in pairs(city.regions) do table.insert(city.portals,region.entry);table.insert(city.portals,region.exit) end
@@ -34,7 +37,32 @@ function World.new(onOpen: (Player, string) -> (), reward: any, towerResult: any
 	local plots: { [Player]: any } = {}
 	local occupied: { [number]: boolean } = {}
 	local service = {}
-	local travel=require(script.Parent.TravelService)(city,plots,heroes)
+	local localEntries:{[Player]:BasePart}={}
+	local localTravel:any=nil
+	if sharedCandidate and sharedCandidate.TravelGate then
+		local scene=sharedCandidate.Scene
+		local exit=Kit.Part(scene.plot,"LocalSharedExit",V(1,1,1),scene.origin+V(0,3,50),C.Gold,Enum.Material.Neon,false)
+		Kit.Label(exit,"Return from local test","กลับจากฉากทดสอบในเครื่อง",3)
+		localTravel={Geometry=scene.plot,Entry=function(player:Player):BasePart? return localEntries[player]end,Exit=exit,
+			Landing=scene.origin+V(0,3,54),Fallback=scene.origin+V(8,3,54),
+			Session=sharedCandidate.Session,Gate=sharedCandidate.TravelGate,
+			Recover=function():boolean return not scene.plot.Parent or scene.plot:GetAttribute("Status")=="Faulted" or scene.plot:GetAttribute("Status")=="Closed" end,
+			Contains=function(position:Vector3):boolean local p=position-scene.origin;return math.abs(p.X)<=48 and p.Z>=2 and p.Z<=148 and p.Y> -15 and p.Y<50 end}
+	end
+	local travel=require(script.Parent.TravelService)(city,plots,heroes,localTravel)
+	local function localPrompt(anchor:BasePart,enter:boolean,owner:Player?)
+		local prompt=Instance.new("ProximityPrompt");prompt.Name=if enter then "EnterLocalShared"else "ReturnLocalShared"
+		prompt.ActionText=if enter then "Enter test / เข้าทดสอบ"else "Return / กลับ"
+		prompt.ObjectText="Local shared PvE / ฉากร่วมในเครื่อง";prompt.MaxActivationDistance=9;prompt.RequiresLineOfSight=false;prompt.Parent=anchor
+		prompt.Triggered:Connect(function(player:Player)
+			if owner and player~=owner then return end
+			local code:string
+			if enter then local _,result=travel.EnterLocal(player);code=result
+			else local _,result=travel.ReturnLocal(player);code=result end
+			if sharedCandidate and sharedCandidate.TravelNotify then sharedCandidate.TravelNotify(player,code)end
+		end)
+	end
+	if localTravel then localPrompt(localTravel.Exit,false,nil)end
 	local visits=require(script.Parent.IslandVisits)(plots,travel,nil,city.guildAccessPortals)
 	function service.Add(player: Player)
 		if plots[player] then return end
@@ -147,6 +175,10 @@ function World.new(onOpen: (Player, string) -> (), reward: any, towerResult: any
 		heroes.Add(player,model,origin)
 		local connection=player.CharacterAdded:Connect(move)
 		plots[player]={spawn=spawn,model=model,slot=slot,hall=hall,hallStation=hallStation,level=1,origin=origin,buildings=groups.Buildings,connection=connection}
+		if localTravel then
+			local anchor=part("Gameplay","LocalSharedEntry",V(1,1,1),V(9,3,23),C.Gold,false)
+			localEntries[player]=anchor;Kit.Label(anchor,"Local shared PvE test","ทดสอบฉากร่วมในเครื่อง",3);localPrompt(anchor,true,player)
+		end
 		expansion.add(player,plots[player]);visits.add(player,city.add(player,slot))
 		for _,region in pairs(city.regions) do for id,node in pairs(region.nodes) do plots[player].nodes[id]=node end end
 		if player.Character then task.spawn(move,player.Character) end
@@ -176,10 +208,11 @@ function World.new(onOpen: (Player, string) -> (), reward: any, towerResult: any
 		end
 	end
 	function service.ValidateIntent(player: Player,action: string,args: any): string?
-		if action=="RequestPermanentPass" then return expansion.validate(player,plots[player],"CraftItem",{}) end
+		-- These gates remain island-only even when CraftItem permits the city forge.
+		if action=="RequestPermanentPass" then return expansion.validate(player,plots[player],"PlaceBuilding",{}) end
 		if action=="TravelZone" then return travel.Validate(player,args.zone) end
 		local problem=city.validate(player,plots[player],action,args);if problem then return problem end
-		if action=="UpgradeGuildHall" or action=="UpgradeTavern" or action=="UpgradeQuarters" or action=="UnlockGuildPlot" or action=="ContributeGuildPlot" or action=="OpenGuildPlot" then return expansion.validate(player,plots[player],"CraftItem",{}) end
+		if action=="UpgradeGuildHall" or action=="UpgradeTavern" or action=="UpgradeQuarters" or action=="UnlockGuildPlot" or action=="ContributeGuildPlot" or action=="OpenGuildPlot" then return expansion.validate(player,plots[player],"PlaceBuilding",{}) end
 		return expansion.validate(player,plots[player],action,args)
 	end
 	function service.PlayerAction(player: Player, action: string, actorId: string?): (boolean, string)
@@ -191,6 +224,16 @@ function World.new(onOpen: (Player, string) -> (), reward: any, towerResult: any
 	function service.BeginHeroMentor(player:Player,actorId:string):any? return heroes.BeginMentor(player,actorId)end
 	function service.EndHeroMentor(player:Player)heroes.EndMentor(player)end
 	function service.CompanionEvidence(player:Player,actorId:string):any? return heroes.CompanionEvidence(player,actorId) end
+	function service.SharedCombatStatus():string return heroes.SharedStatus()end
+	function service.SharedRewardState():any return heroes.SharedRewardState()end
+	function service.PumpSharedRewards()return heroes.PumpSharedRewards()end
+	function service.DestroyHeroRuntime()heroes.Destroy()end
+	function service.CloseSharedCombat()
+		heroes.CloseShared()
+		for player,entry in pairs(localEntries)do entry:Destroy();localEntries[player]=nil end
+		if sharedCandidate and sharedCandidate.Destroy then sharedCandidate.Destroy()end
+		sharedCandidate=nil
+	end
 	function service.RefreshCampaignCompanions(player:Player)heroes.Travel(player)end
 	function service.IslandDirectory(player:Player):{any} return visits.directory(player) end
 	function service.IslandVisitors(player:Player):{any} return visits.roster(player) end
@@ -207,6 +250,7 @@ function World.new(onOpen: (Player, string) -> (), reward: any, towerResult: any
 	function service.Remove(player: Player)
 		visits.remove(player)
 		travel.Remove(player);heroes.Remove(player)
+		localEntries[player]=nil
 		local plot=plots[player]
 		if plot then
 			for _,visitor in ipairs(game.Players:GetPlayers()) do local c=visitor.Character

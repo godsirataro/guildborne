@@ -28,7 +28,7 @@ return function(parent: Instance,templates: Folder,open: any,intent: any)
 		prompt(p,"Travel",function(player) intent(player,"TravelZone",{zone=destination}) end);return p
 	end
 	local central=require(script.Parent.CentralCityWorld)(town,templates,open,prompt)
-	S.town=town;S.npcs=central.npcs
+	S.town=town;S.npcs=central.npcs;S.craftingStation=central.craftingStation;S.tavernStation=central.tavernStation
 	S.cityPortal=portal(town,"Guild Zone Warp",V(0,6,-680),Color3.fromRGB(121,163,244),"Guild")
 	S.cityPortal:SetAttribute("CityReturnStop","Arrival")
 	S.guildPortal=portal(guild,"Central City",V(-44,6,-65),Color3.fromRGB(121,163,244),"City")

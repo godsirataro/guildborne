@@ -83,7 +83,21 @@ return function(town: Folder,templates: Folder,open: any,prompt: any): any
 		end
 		for _,part in ipairs(m:GetChildren()) do if part:IsA("BasePart") and part.Name=="PitchedRoof" then part.Color=def.color end end
 		local entry=V(def.x,4,def.z+28);if def.angle==90 then entry=V(def.x+28,4,def.z) end
-		future(f,def.name,entry)
+		if def.name=="The Hearth and Banner" or def.name=="Blacksmith" then
+			sign(f,def.name,entry)
+			local crafting=def.name=="Blacksmith"
+			local tab=if crafting then "Crafting" else "Tavern"
+			local position=m:GetPivot():PointToWorldSpace(if crafting then V(8,3,4) else V(-5,3,2))
+			local anchor=p(m,if crafting then "CityForgeStation" else "CityTavernStation",V(.2,.2,.2),position,C.Gold,false)
+			anchor.Transparency=1;anchor.CanCollide=false;anchor.CanTouch=false;anchor.CanQuery=false
+			anchor:SetAttribute("CityService",tab);anchor:SetAttribute("MaxServiceDistance",14)
+			Kit.Label(anchor,tab,Locale.translate("th",tab),3)
+			prompt(anchor,tab,function(player)open(player,tab)end)
+			if crafting then
+				S.craftingStation=anchor
+				game:GetService("CollectionService"):AddTag(anchor,"GuildborneCityCraftingStation")
+			else S.tavernStation=anchor end
+		else future(f,def.name,entry) end
 		for _,side in ipairs({-1,1}) do local b=asset("DistrictBanner",V(def.x+side*36,1,def.z+24),0,f);
 			(b:FindFirstChild("Cloth") :: BasePart).Color=def.color end
 	end

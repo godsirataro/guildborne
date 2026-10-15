@@ -97,15 +97,17 @@ return function()
 	end
 	local basic=button("BasicAttack",0,"Basic")
 	local skills={button("Skill1",60,"Ability1"),button("Skill2",120,"Ability2"),button("Skill3",180,"Ability3")}
-	local orders=Instance.new("Frame");orders.Name="CompanionOrders";orders.AnchorPoint=Vector2.new(.5,1)
+	local orders=Instance.new("ScrollingFrame");orders.Name="CompanionOrders";orders.AnchorPoint=Vector2.new(.5,1)
+	orders.CanvasSize=UDim2.fromOffset(660,0);orders.ScrollBarThickness=4;orders.ScrollingDirection=Enum.ScrollingDirection.X;orders.BorderSizePixel=0
 	orders.Size=UDim2.new(.9,0,0,44);orders.BackgroundTransparency=1;orders.Parent=gui
 	local limit=Instance.new("UISizeConstraint");limit.MaxSize=Vector2.new(360,44);limit.Parent=orders
 	local orderButtons: {TextButton}={}
-	for index,action in ipairs({"Focus","Regroup","Retreat"}) do
-		local b=Instance.new("TextButton");b.Name=action;b.Size=UDim2.new(1/3,-4,1,0);b.Position=UDim2.new((index-1)/3,2,0,0)
+	for index,action in ipairs({"Focus","Regroup","Retreat","Hold","TacticBalanced","TacticDefensive"}) do
+		local b=Instance.new("TextButton");b.Name=action;b.Size=UDim2.new(0,106,1,-4);b.Position=UDim2.fromOffset((index-1)*110,0)
 		b.Font=Enum.Font.GothamMedium;b.TextSize=12;b.TextWrapped=true;b.TextColor3=Art.UI.Text;b.Parent=orders;Instance.new("UICorner",b)
 		local padding=Instance.new("UIPadding");padding.PaddingLeft=UDim.new(0,26);padding.PaddingRight=UDim.new(0,3);padding.Parent=b
-		local icon=require(script.Parent.Parent.UI.SymbolIcon)(b,"ui.combat."..(if action=="Focus" then "focus_target" else string.lower(action)),18,Art.UI.Accent)
+		local icon=if index<=3 then require(script.Parent.Parent.UI.SymbolIcon)(b,"ui.combat."..(if action=="Focus" then "focus_target" else string.lower(action)),18,Art.UI.Accent) else nil
+		if not icon then padding.PaddingLeft=UDim.new(0,3)end
 		if icon then icon.Position=UDim2.new(0,-21,.5,-9) end
 		connect(b.Activated,function() send(action) end);table.insert(orderButtons,b)
 	end
@@ -189,7 +191,7 @@ return function()
 		for _,b in ipairs(orderButtons) do
 			b.Text=T(b.Name)..Bindings.hint(b.Name,inputMode)
 			b.Active=c~=nil and (c:GetAttribute("CombatHealth") or 0)>0;b.Selectable=b.Active
-			b.BackgroundColor3=if c and c:GetAttribute("CompanionOrder")==b.Name then Art.UI.Button else Art.UI.Card
+			b.BackgroundColor3=if c and (c:GetAttribute("CompanionOrder")==b.Name or "Tactic"..tostring(c:GetAttribute("TacticalPreset"))==b.Name) then Art.UI.Button else Art.UI.Card
 		end
 		for index,card in ipairs(cards) do
 			card.Size=UDim2.fromOffset(layout.cardWidth,44)
@@ -221,7 +223,7 @@ return function()
 		end
 		if c and c:GetAttribute("ClassId") then
 			health.Text=T(tostring(c:GetAttribute("ClassPath") or c:GetAttribute("ClassId"))).." · Lv"..tostring(c:GetAttribute("Level")).." · HP "..tostring(c:GetAttribute("CombatHealth")).."/"..tostring(c:GetAttribute("CombatMaxHealth"))
-				.."\n"..(if os.clock()<statusUntil then T(status) elseif c:GetAttribute("CombatState")=="Downed" then T("Downed").." · "..T("Recovering at guild") elseif selectedId~="player" then T("Companion command · shared AI cooldown") else tostring(c:GetAttribute("XP")).." XP"..(if #party>0 and inputMode~="Touch" then " · "..T("Next hero")..Bindings.hint("Cycle",inputMode) else ""))
+				.."\n"..(if os.clock()<statusUntil then T(status) elseif c:GetAttribute("CombatState")=="Downed" then T("Downed").." · "..T("Recovering at guild") elseif selectedId~="player" then T("Tactic"..tostring(c:GetAttribute("TacticalPreset") or "Balanced")).." · "..T(tostring(c:GetAttribute("TacticalReason") or "TacticFollowing")) else tostring(c:GetAttribute("XP")).." XP"..(if #party>0 and inputMode~="Touch" then " · "..T("Next hero")..Bindings.hint("Cycle",inputMode) else ""))
 		else health.Text=T("Select a class in Guild") end
 	end)
 	local function cleanup()

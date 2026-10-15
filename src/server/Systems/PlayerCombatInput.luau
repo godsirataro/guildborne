@@ -1,7 +1,7 @@
 --!strict
 -- Exact, tiny intent protocol. No client targets, stats, positions, clocks or rewards.
 local Input = {}
-local actions={Basic=true,Ability=true,Ability1=true,Ability2=true,Ability3=true,Focus=true,Regroup=true,Retreat=true}
+local actions={Basic=true,Ability=true,Ability1=true,Ability2=true,Ability3=true,Focus=true,Regroup=true,Retreat=true,Hold=true,TacticBalanced=true,TacticDefensive=true}
 function Input.valid(packet: any): boolean
 	if type(packet) ~= "table" or type(packet.action)~="string" or not actions[packet.action] then return false end
 	local count = 0

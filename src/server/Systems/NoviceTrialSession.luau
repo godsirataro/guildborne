@@ -1,14 +1,14 @@
 --!strict
 -- Server-only, temporary trial evidence. No RemoteEvent or profile writes.
 -- The future combat/world adapter owns measurements, event IDs and isolation.
-return function(config:any,util:any)
+return function(config:any,util:any,identity:any?)
  local S={}
  local function id(v:any):boolean return type(v)=="string" and #v>0 and #v<=64 and v:match("^[%w_:%-]+$")~=nil end
  local function finite(v:any):boolean return type(v)=="number" and v==v and math.abs(v)<math.huge end
  function S.start(data:any,userId:number,classId:string,runId:string,now:number):(any?,string?)
   local story=data.progression and data.progression.novice
   if not config.Classes[classId] then return nil,"InvalidClass" end
-  if not id(runId) or #runId>58 or not finite(now) or now<0 or not util.integer(userId,1,9007199254740991) then return nil,"InvalidTrial" end
+  if not id(runId) or #runId>58 or not finite(now) or now<0 or not (if identity then identity(userId)==true else util.integer(userId,1,9007199254740991)) then return nil,"InvalidTrial" end
   if not story or story.claimed~=5 or data.character.classId or data.character.level<10 then return nil,"ClassTrialLocked" end
   if #data.party.adventurerIds~=0 or data.quests.active or data.expansion.tower.active then return nil,"SoloTrialRequired" end
   return {id=runId,owner=userId,classId=classId,startedAt=now,expiresAt=now+config.Duration,status="Active",progress={},events={},eventCount=0},nil

@@ -1,0 +1,31 @@
+{
+  "candidate": "2ec894203304f3c20f7ea69cd8c5700526c0267d5fd5ebb7f973a9fdfcb37644",
+  "fall": {
+    "content": [
+      {
+        "type": "text",
+        "text": "{\"health\":100,\"zone\":\"Guild\",\"injected\":\"character pivot below candidate bounds\",\"error\":0,\"position\":\"4.99456787109375, 3.998046875, 25.775390625\"}"
+      }
+    ],
+    "isError": false
+  },
+  "respawn": {
+    "content": [
+      {
+        "type": "text",
+        "text": "{\"walk\":17,\"jump\":50,\"zone\":\"Guild\",\"injected\":\"server Player LoadCharacter\",\"position\":\"0, 3.998046875, 23\",\"error\":5.713886260986328,\"newCharacter\":true}"
+      }
+    ],
+    "isError": false
+  },
+  "assessment": "Fall PASS; respawn returns Guild safe normal spawn but fails original-pivot restoration. Retained regression pending fix.",
+  "console": {
+    "content": [
+      {
+        "type": "text",
+        "text": "[Guildborne] Phase 1 ready · Studio memory · not saved after Stop\n[Guildborne] profile_loaded {\"revision\":0}\n[Guildborne] session_started []\n[Guildborne] onboarding_milestone {\"milestone\":\"session_ready\",\"version\":1,\"elapsedSeconds\":0}\n[Guildborne] Phase 1 client ready\n[Guildborne] profile_saved {\"action\":\"NoviceObjective\",\"revision\":1}\n[Guildborne] novice_objective_observed {\"action\":\"NoviceObjective\"}\n[Guildborne] profile_saved {\"action\":\"NoviceObjective\",\"revision\":2}\n[Guildborne] novice_objective_observed {\"action\":\"NoviceObjective\"}\n[Guildborne] profile_saved {\"action\":\"NoviceObjective\",\"revision\":3}\n[Guildborne] novice_objective_observed {\"action\":\"NoviceObjective\"}\n[Guildborne] profile_saved {\"action\":\"NoviceObjective\",\"revision\":4}\n[Guildborne] novice_objective_observed {\"action\":\"NoviceObjective\"}\n[Guildborne] profile_saved {\"action\":\"ClaimNoviceChapter\",\"revision\":5}\n[Guildborne] novice_chapter_claimed []\n[Guildborne] profile_saved {\"action\":\"NoviceObjective\",\"revision\":6}\n[Guildborne] novice_objective_observed {\"action\":\"NoviceObjective\"}\n[Guildborne] profile_saved {\"action\":\"NoviceObjective\",\"revision\":7}\n[Guildborne] novice_objective_observed {\"action\":\"NoviceObjective\"}\n[Guildborne] profile_saved {\"action\":\"NoviceObjective\",\"revision\":8}\n[Guildborne] novice_objective_observed {\"action\":\"NoviceObjective\"}\n[Guildborne] profile_saved {\"action\":\"ClaimNoviceChapter\",\"revision\":9}\n[Guildborne] novice_chapter_claimed []\n[Guildborne] profile_saved {\"action\":\"NoviceObjective\",\"revision\":10}\n[Guildborne] novice_objective_observed {\"action\":\"NoviceObjective\"}\n[Guildborne] profile_saved {\"action\":\"NoviceObjective\",\"revision\":11}\n[Guildborne] novice_objective_observed {\"action\":\"NoviceObjective\"}\n[Guildborne] profile_saved {\"action\":\"NoviceObjective\",\"revision\":12}\n[Guildborne] novice_objective_observed {\"action\":\"NoviceObjective\"}\n[Guildborne] profile_saved {\"action\":\"ClaimNoviceChapter\",\"revision\":13}\n[Guildborne] novice_chapter_claimed []\n[Guildborne] profile_saved {\"action\":\"NoviceObjective\",\"revision\":14}\n[Guildborne] novice_objective_observed {\"action\":\"NoviceObjective\"}\n[Guildborne] profile_saved {\"action\":\"NoviceObjective\",\"revision\":15}\n[Guildborne] novice_objective_observed {\"action\":\"NoviceObjective\"}\n[Guildborne] profile_saved {\"action\":\"NoviceObjective\",\"revision\":16}\n[Guildborne] novice_objective_observed {\"action\":\"NoviceObjective\"}\n[Guildborne] profile_saved {\"action\":\"ClaimNoviceChapter\",\"revision\":17}\n[Guildborne] novice_chapter_claimed []\n[Guildborne] profile_saved {\"action\":\"NoviceObjective\",\"revision\":18}\n[Guildborne] novice_objective_observed {\"action\":\"NoviceObjective\"}\n[Guildborne] profile_saved {\"action\":\"NoviceObjective\",\"revision\":19}\n[Guildborne] novice_objective_observed {\"action\":\"NoviceObjective\"}\n[Guildborne] profile_saved {\"action\":\"NoviceObjective\",\"revision\":20}\n[Guildborne] novice_objective_observed {\"action\":\"NoviceObjective\"}\n[Guildborne] profile_saved {\"action\":\"NoviceObjective\",\"revision\":21}\n[Guildborne] novice_objective_observed {\"action\":\"NoviceObjective\"}\n[Guildborne] profile_saved {\"action\":\"NoviceObjective\",\"revision\":22}\n[Guildborne] novice_objective_observed {\"action\":\"NoviceObjective\"}\n[Guildborne] profile_saved {\"action\":\"ClaimNoviceChapter\",\"revision\":23}\n[Guildborne] novice_chapter_claimed []\n[Guildborne] profile_saved {\"action\":\"NoviceTrial\",\"revision\":24}\n[Guildborne] novice_objective_observed {\"action\":\"NoviceTrial\",\"classId\":\"Warrior\"}\n[Guildborne] profile_saved {\"action\":\"SelectPlayerClass\",\"revision\":25}\n[Guildborne] item_acquired {\"quantity\":1,\"itemId\":\"training_sword\"}\n[Guildborne] novice_class_selected {\"classId\":\"Warrior\"}\n[Guildborne] onboarding_milestone {\"milestone\":\"class_selected\",\"version\":1,\"elapsedSeconds\":309}\n[Guildborne] profile_saved {\"action\":\"NoviceObjective\",\"revision\":26}\n[Guildborne] novice_objective_observed {\"action\":\"NoviceObjective\"}\n[Guildborne] profile_saved {\"action\":\"NoviceObjective\",\"revision\":27}\n[Guildborne] novice_objective_observed {\"action\":\"NoviceObjective\"}\n[Guildborne] profile_saved {\"action\":\"FoundNoviceGuild\",\"revision\":28}\n[Guildborne] item_acquired {\"quantity\":1,\"itemId\":\"training_sword\"}\n[Guildborne] novice_guild_founded {\"classId\":\"Warrior\"}\n[Guildborne] novice_chapter_claimed []\n[Guildborne] onboarding_milestone {\"milestone\":\"guild_founded\",\"version\":1,\"elapsedSeconds\":591}\n[Guildborne] onboarding_milestone {\"milestone\":\"first_npc_recruited\",\"version\":1,\"elapsedSeconds\":591}\nAssistantCommand:1: entry\nStack Begin\nScript 'AssistantCommand', Line 1\nStack End\n[Guildborne] profile_saved {\"action\":\"CommitSharedPvE\",\"revision\":29}\n[Guildborne] gold_created {\"amount\":3,\"reason\":\"shared_pve\"}\n[Guildborne] shared_pve_claim []"
+      }
+    ],
+    "isError": false
+  }
+}

@@ -33,6 +33,24 @@ Deliver changed paths, assumptions, tests actually run, evidence hashes, unresol
 
 ## Forge tasks (these scopes apply only after a valid task claim)
 
+### analytics-foundation: Analytics Foundation
+
+Bounded local event contracts and independent session milestones; no external provider enablement or claimed retention.
+
+Environment: local; skill: guildborne-growth
+
+Write scopes: src/server/Systems/AnalyticsContract.luau, src/server/Systems/OnboardingFunnel.luau, src/server/Services/AnalyticsAdapter.luau, tests/analytics_foundation.luau, tests/run_analytics_foundation.luau, production/design/evidence/analytics.md
+
+Required checks: source-contract, regression, independent-review
+
+Dependencies: none
+
+Path rule server-authority: Reuse actual services; server owns combat/inventory/currency/allocation/rewards/guild/build/escrow. Preserve fencing/receipts/saves/disabled flags. No production cloud writes or commerce activation.
+
+Path rule tooling: Use reviewed bounded local commands/tests. Studio/Forge planners do not launch models; paid/model subprocess, MCP mutation and installation require actual authorization/capability.
+
+Path rule production-evidence: Reconcile latest goals/registries/scopes. One shared ledger, claim before writes, immediate lease check and preserved raw receipts. Different reviewer validates evidence; local checks cannot replace hardware/cloud/human gates.
+
 ### growth: Playtest funnel and ethical growth experiments
 
 Prepare instrumented onboarding/retention experiments and truthful screenshots from actual gameplay. No fake players, ad spending, promises of popularity or public release.

@@ -1,0 +1,17 @@
+# Native local shared travel
+
+Candidate `2ec894203304f3c20f7ea69cd8c5700526c0267d5fd5ebb7f973a9fdfcb37644` matched377 Edit sources. Local Studio / Place0 / Game0 / Memory only. Staging was untouched. Full baseline883 tests and automated checks passed before the observations below.
+
+One actual player completed six Novice chapters, Warrior class trial/selection and free Hall founding. Movement used Humanoid MoveTo, prompts/claims/founding used native input, and trials used ordinary TrialInput commands with a bounded combat driver. No profile, HP, objective or clock edits were used to earn eligibility. Revision28, Hall1, player and founder Warrior each450XP.
+
+Native E entered through the player's home prompt, reaching SharedLocalCandidate. The existing companion defeated the scout. One Bootstrap reward transaction advanced revision29, player451XP, hero451XP and3Gold: conserved configured pool2XP/3Gold. Native E returned home. Repeated completed-scene entry/return left rewards unchanged. The first position comparison was sampled while MoveTo was still settling (2.4086stud difference), so it is not an exact snapshot assertion. A stationary rerun returned with measured zero difference.
+
+Injected scene Status=Faulted returned home within the observation interval with0.000183stud error, WalkSpeed17/JumpPower50; status was restored to Completed. Injected pivot below the scene bounds also returned home with zero difference. These are deliberate fault fixtures, not naturally observed encounter failures.
+
+**Respawn regression retained:** server LoadCharacter created a new character and returned safely to Guild, but the final position was normal home spawn rather than the original entry position (5.7139stud difference). Heartbeat recovery consumed the snapshot before WorldService's delayed Respawn overwrote it. Source correction now waits for the delayed callback to arm the exact new character and retains that handoff through Saving/busy. Independent source review and14 focused checks passed; full baseline885 tests and all automated checks passed in validation-shared-travel-respawn.log.
+
+Corrected candidate `8deff026c6b574595e84ef89c1453cbe0115e3dc4196ff64604034ee781b0919` matched377 sources (one changed). Its synthetic owner/anchored rigs used actual TravelService, Heartbeat and raycasts, with an explicitly ordered replacement/pivot simulation. The snapshot survived the early heartbeat and returned exactly after the delayed callback; Saving-to-Active retry also returned exactly. See shared-travel-respawn-fixture.luau and shared-travel-respawn-fixture-result.json. First fixture attempt omitted session.record and correctly received ActorNotReady; raw failure retained and Play restarted before correction. These checks do not replace an actual Player LoadCharacter rerun, which remains pending.
+
+Raw evidence: `shared-travel-positive.json`, `shared-travel-lifecycle-attempt1.json`, and `shared-travel-novice-refusal.json`. The console contains an assistant inspection-path error (`entry`) from an incorrect parent assumption; the next inspection corrected the path. It is not a gameplay error and is retained unchanged.
+
+Observers and fixture globals were cleared, and owned Play stopped. This proves local single-owner travel and actual Memory payout, not six-human convoy travel, cloud persistence, physical mobile performance or public readiness. Earlier two-owner actual payout is separately recorded in SHARED_REAL_PROFILE_PAYOUT.md.

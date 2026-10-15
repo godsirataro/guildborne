@@ -1,0 +1,268 @@
+{
+  "schemaVersion": 1,
+  "date": "2026-10-15",
+  "publicReady": false,
+  "source": "source-proposal.txt",
+  "features": [
+    {
+      "id": "01",
+      "name": "FTUE",
+      "releaseGate": "full-game-required",
+      "ownerRole": "gameplay-designer",
+      "dependsOn": [],
+      "status": "PLANNED_OR_EXISTING_BASE_REQUIRES_ACCEPTANCE",
+      "publicCopyApproved": false,
+      "historicalReleaseGate": "launch-core",
+      "requiredBeforePublic": true,
+      "phase": "P2"
+    },
+    {
+      "id": "02",
+      "name": "Hero tactical AI",
+      "releaseGate": "full-game-required",
+      "ownerRole": "combat-engineer",
+      "dependsOn": [],
+      "status": "SOURCE_REVIEWED_SYNTHETIC_STUDIO_PASS_NORMAL_ROUTE_PENDING",
+      "publicCopyApproved": false,
+      "historicalReleaseGate": "vertical-slice",
+      "requiredBeforePublic": true,
+      "phase": "P1"
+    },
+    {
+      "id": "03",
+      "name": "Team combo",
+      "releaseGate": "full-game-required",
+      "ownerRole": "combat-engineer",
+      "dependsOn": [
+        "02"
+      ],
+      "status": "PLANNED_OR_EXISTING_BASE_REQUIRES_ACCEPTANCE",
+      "publicCopyApproved": false,
+      "historicalReleaseGate": "vertical-slice",
+      "requiredBeforePublic": true,
+      "phase": "P1"
+    },
+    {
+      "id": "04",
+      "name": "Combat feel and bosses",
+      "releaseGate": "full-game-required",
+      "ownerRole": "combat-engineer",
+      "dependsOn": [],
+      "status": "PLANNED_OR_EXISTING_BASE_REQUIRES_ACCEPTANCE",
+      "publicCopyApproved": false,
+      "historicalReleaseGate": "launch-core",
+      "requiredBeforePublic": true,
+      "phase": "P1"
+    },
+    {
+      "id": "05",
+      "name": "Hero identity and bond",
+      "releaseGate": "full-game-required",
+      "ownerRole": "narrative-designer",
+      "dependsOn": [],
+      "status": "PLANNED_OR_EXISTING_BASE_REQUIRES_ACCEPTANCE",
+      "publicCopyApproved": false,
+      "historicalReleaseGate": "expansion",
+      "requiredBeforePublic": true,
+      "phase": "P5"
+    },
+    {
+      "id": "06",
+      "name": "Living Guild",
+      "releaseGate": "full-game-required",
+      "ownerRole": "guild-engineer",
+      "dependsOn": [],
+      "status": "PLANNED_OR_EXISTING_BASE_REQUIRES_ACCEPTANCE",
+      "publicCopyApproved": false,
+      "historicalReleaseGate": "launch-core-plus-prototype",
+      "requiredBeforePublic": true,
+      "phase": "P5"
+    },
+    {
+      "id": "07",
+      "name": "Quests",
+      "releaseGate": "full-game-required",
+      "ownerRole": "quest-designer",
+      "dependsOn": [],
+      "status": "PLANNED_OR_EXISTING_BASE_REQUIRES_ACCEPTANCE",
+      "publicCopyApproved": false,
+      "historicalReleaseGate": "launch-core",
+      "requiredBeforePublic": true,
+      "phase": "P4"
+    },
+    {
+      "id": "08",
+      "name": "Human Party6",
+      "releaseGate": "full-game-required",
+      "ownerRole": "guild-engineer",
+      "dependsOn": [],
+      "status": "PARTIAL_LOCAL",
+      "publicCopyApproved": false,
+      "historicalReleaseGate": "launch-required",
+      "requiredBeforePublic": true,
+      "phase": "P3"
+    },
+    {
+      "id": "09",
+      "name": "Shared PvE and rewards",
+      "releaseGate": "full-game-required",
+      "ownerRole": "systems-engineer",
+      "dependsOn": [
+        "08",
+        "12"
+      ],
+      "status": "PLANNED_OR_EXISTING_BASE_REQUIRES_ACCEPTANCE",
+      "publicCopyApproved": false,
+      "historicalReleaseGate": "launch-required",
+      "requiredBeforePublic": true,
+      "phase": "P3"
+    },
+    {
+      "id": "10",
+      "name": "Economy and crafting",
+      "releaseGate": "full-game-required",
+      "ownerRole": "market-engineer",
+      "dependsOn": [],
+      "status": "PLANNED_OR_EXISTING_BASE_REQUIRES_ACCEPTANCE",
+      "publicCopyApproved": false,
+      "historicalReleaseGate": "launch-core",
+      "requiredBeforePublic": true,
+      "phase": "P2"
+    },
+    {
+      "id": "11",
+      "name": "Mobile and accessibility",
+      "releaseGate": "full-game-required",
+      "ownerRole": "ui-designer",
+      "dependsOn": [],
+      "status": "PLANNED_OR_EXISTING_BASE_REQUIRES_ACCEPTANCE",
+      "publicCopyApproved": false,
+      "historicalReleaseGate": "launch-required",
+      "requiredBeforePublic": true,
+      "phase": "P10"
+    },
+    {
+      "id": "12",
+      "name": "Save security and performance",
+      "releaseGate": "full-game-required",
+      "ownerRole": "qa-lead",
+      "dependsOn": [],
+      "status": "PLANNED_OR_EXISTING_BASE_REQUIRES_ACCEPTANCE",
+      "publicCopyApproved": false,
+      "historicalReleaseGate": "launch-required",
+      "requiredBeforePublic": true,
+      "phase": "P10"
+    },
+    {
+      "id": "13",
+      "name": "Analytics",
+      "releaseGate": "full-game-required",
+      "ownerRole": "growth-analyst",
+      "dependsOn": [],
+      "status": "SOURCE_REVIEWED_LOCAL_BOOT_PASS_LIVE_ANALYTICS_DISABLED",
+      "publicCopyApproved": false,
+      "historicalReleaseGate": "foundation",
+      "requiredBeforePublic": true,
+      "phase": "P9"
+    },
+    {
+      "id": "14",
+      "name": "Guild research",
+      "releaseGate": "full-game-required",
+      "ownerRole": "gameplay-designer",
+      "dependsOn": [
+        "06",
+        "10"
+      ],
+      "status": "PLANNED_OR_EXISTING_BASE_REQUIRES_ACCEPTANCE",
+      "publicCopyApproved": false,
+      "historicalReleaseGate": "post-launch",
+      "requiredBeforePublic": true,
+      "phase": "P5"
+    },
+    {
+      "id": "15",
+      "name": "World events",
+      "releaseGate": "full-game-required",
+      "ownerRole": "quest-designer",
+      "dependsOn": [
+        "09"
+      ],
+      "status": "PLANNED_OR_EXISTING_BASE_REQUIRES_ACCEPTANCE",
+      "publicCopyApproved": false,
+      "historicalReleaseGate": "post-launch",
+      "requiredBeforePublic": true,
+      "phase": "P5"
+    },
+    {
+      "id": "16",
+      "name": "Endgame",
+      "releaseGate": "full-game-required",
+      "ownerRole": "gameplay-designer",
+      "dependsOn": [
+        "07",
+        "09"
+      ],
+      "status": "PLANNED_OR_EXISTING_BASE_REQUIRES_ACCEPTANCE",
+      "publicCopyApproved": false,
+      "historicalReleaseGate": "post-launch",
+      "requiredBeforePublic": true,
+      "phase": "P4"
+    },
+    {
+      "id": "17",
+      "name": "Social and cosmetics",
+      "releaseGate": "full-game-required",
+      "ownerRole": "character-artist",
+      "dependsOn": [],
+      "status": "PLANNED_OR_EXISTING_BASE_REQUIRES_ACCEPTANCE",
+      "publicCopyApproved": false,
+      "historicalReleaseGate": "launch-assets-plus-expansion",
+      "requiredBeforePublic": true,
+      "phase": "P8"
+    },
+    {
+      "id": "18",
+      "name": "Daily season and shop",
+      "releaseGate": "full-game-required",
+      "ownerRole": "market-engineer",
+      "dependsOn": [
+        "12"
+      ],
+      "status": "PLANNED_OR_EXISTING_BASE_REQUIRES_ACCEPTANCE",
+      "publicCopyApproved": false,
+      "historicalReleaseGate": "launch-required",
+      "requiredBeforePublic": true,
+      "phase": "P9"
+    },
+    {
+      "id": "19",
+      "name": "Website and discovery",
+      "releaseGate": "full-game-required",
+      "ownerRole": "release-lead",
+      "dependsOn": [
+        "04",
+        "17"
+      ],
+      "status": "PLANNED_OR_EXISTING_BASE_REQUIRES_ACCEPTANCE",
+      "publicCopyApproved": false,
+      "historicalReleaseGate": "optional",
+      "requiredBeforePublic": true,
+      "phase": "P11"
+    },
+    {
+      "id": "20",
+      "name": "Agent pipeline",
+      "releaseGate": "full-game-required",
+      "ownerRole": "producer",
+      "dependsOn": [],
+      "status": "PARTIAL_LOCAL",
+      "publicCopyApproved": false,
+      "historicalReleaseGate": "production",
+      "requiredBeforePublic": true,
+      "phase": "P0"
+    }
+  ],
+  "deliveryPlan": "GL-2.0",
+  "sourcePlan": "production/design/integration/FULL_GAME_GOLIVE_GL2_TH.md"
+}

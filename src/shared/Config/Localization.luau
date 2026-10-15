@@ -1,6 +1,15 @@
 --!strict
 -- English source strings are stable keys; placeholders are shared by both languages.
 local thai: { [string]: string } = {
+	["Party membership changed. Review the updated list and try again."]="สมาชิกปาร์ตี้มีการเปลี่ยนแปลง ตรวจรายชื่อล่าสุดแล้วลองอีกครั้ง",
+	["This party already has 6 players. Join another party or continue solo."]="ปาร์ตี้นี้มีผู้เล่นครบ 6 คนแล้ว เข้าปาร์ตี้อื่นหรือเล่นคนเดียวต่อได้",
+	["Only the party leader can do that. Ask your leader to help."]="เฉพาะหัวหน้าปาร์ตี้เท่านั้นที่ทำได้ ขอให้หัวหน้าปาร์ตี้ช่วยดำเนินการ",
+	["One of these players is already in a party. Review the party list."]="ผู้เล่นคนใดคนหนึ่งอยู่ในปาร์ตี้แล้ว ตรวจรายชื่อปาร์ตี้อีกครั้ง",
+	["An invitation is already waiting for this player. Wait for their response."]="ส่งคำเชิญให้ผู้เล่นนี้แล้ว กรุณารอการตอบรับ",
+	["Too many invitations are waiting. Wait for a response or let an invitation expire."]="มีคำเชิญที่รอตอบรับครบจำนวนแล้ว รอการตอบรับหรือให้คำเชิญหมดอายุก่อน",
+	["This invitation is no longer available. Ask for a new invitation."]="คำเชิญนี้ใช้ไม่ได้แล้ว ขอคำเชิญใหม่จากผู้เชิญ",
+	["That party membership is no longer current. Review the updated member list."]="สถานะสมาชิกปาร์ตี้เปลี่ยนไปแล้ว ตรวจรายชื่อสมาชิกล่าสุด",
+	["That player or party action is temporarily unavailable. Wait a moment and try again."]="ผู้เล่นหรือการจัดการปาร์ตี้นี้ยังไม่พร้อม รอสักครู่แล้วลองอีกครั้ง",
 	["Available after the Lv1–35 preview."]="ยังไม่เปิดในตัวอย่าง Lv1–35",
 	["Today's daily reward was already saved."]="บันทึกรางวัลรายวันของวันนี้แล้ว",
 	["This season reward was already saved."]="บันทึกรางวัลซีซันขั้นนี้แล้ว",
@@ -1265,4 +1274,59 @@ thai["Hero trial proven"]="ผ่านบททดสอบฮีโร่แ�
 thai["Ready for hero trial"]="พร้อมฝึกฮีโร่"
 thai["Train hero"]="ฝึกฮีโร่"
 thai["Cancel hero training"]="ยกเลิกการฝึกฮีโร่"
+local humanPartyText:{[string]:string}={
+ ["Human Party"]="ปาร์ตี้ผู้เล่น",
+ ["Open Human Party"]="เปิดปาร์ตี้ผู้เล่น",
+ ["NPC heroes"]="ฮีโร่ NPC",
+ ["Your NPC hero team"]="ทีมฮีโร่ NPC ของคุณ",
+ ["Manage my NPC heroes"]="จัดทีมฮีโร่ NPC ของฉัน",
+ ["Play with other players"]="เล่นกับผู้เล่นคนอื่น",
+ ["Human parties are unavailable here. Please try again later."]="ยังใช้ปาร์ตี้ผู้เล่นที่นี่ไม่ได้ กรุณาลองใหม่ภายหลัง",
+ ["Player"]="ผู้เล่น",
+ ["Confirm: {action}"]="ยืนยัน: {action}",
+ ["This preview supports invitations and party membership. Shared travel and shared combat rewards are not available yet."]="ตัวอย่างนี้รองรับการเชิญและเข้าปาร์ตี้ ยังไม่รองรับเดินทางร่วมกันหรือแบ่งรางวัลต่อสู้",
+ ["Each player keeps their own Guild and up to five NPC heroes. Party leaders cannot change another player's heroes or items."]="ผู้เล่นแต่ละคนมีกิลด์ของตนเองและพาฮีโร่ NPC ได้สูงสุดห้าคน หัวหน้าปาร์ตี้เปลี่ยนฮีโร่หรือไอเท็มของคนอื่นไม่ได้",
+ ["Players: {count}/{limit}"]="ผู้เล่น: {count}/{limit}",
+ ["Mark not ready"]="เปลี่ยนเป็นยังไม่พร้อม",
+ ["Mark ready"]="แจ้งว่าพร้อม",
+ ["Ready only signals your party status. It does not accept travel."]="พร้อมเป็นเพียงสถานะในปาร์ตี้ ไม่ใช่การยินยอมเดินทาง",
+ ["Leave party"]="ออกจากปาร์ตี้",
+ ["Disband party"]="ยุบปาร์ตี้",
+ ["You are playing solo. Invite another player to form a party."]="คุณกำลังเล่นคนเดียว เชิญผู้เล่นอื่นเพื่อตั้งปาร์ตี้ได้",
+ ["Party leader"]="หัวหน้าปาร์ตี้",
+ ["Party member"]="สมาชิกปาร์ตี้",
+ ["NPC heroes: {count}"]="ฮีโร่ NPC: {count}",
+ ["Reconnecting — place reserved briefly"]="กำลังเชื่อมต่อใหม่ — สำรองที่นั่งชั่วคราว",
+ ["Ready"]="พร้อม",
+ ["Not ready"]="ยังไม่พร้อม",
+ ["Make party leader"]="แต่งตั้งเป็นหัวหน้าปาร์ตี้",
+ ["Remove from party"]="นำออกจากปาร์ตี้",
+ ["Party invitations"]="คำเชิญเข้าปาร์ตี้",
+ ["No invitations waiting."]="ไม่มีคำเชิญที่รออยู่",
+ ["Invitation expires shortly. The server checks availability when you accept."]="คำเชิญมีเวลาจำกัด ระบบจะตรวจที่ว่างอีกครั้งเมื่อคุณตอบรับ",
+ ["Invitation expired."]="คำเชิญหมดอายุแล้ว",
+ ["Accept invitation"]="ตอบรับคำเชิญ",
+ ["Decline invitation"]="ปฏิเสธคำเชิญ",
+ ["Players in this server"]="ผู้เล่นในเซิร์ฟเวอร์นี้",
+ ["Invitation sent"]="ส่งคำเชิญแล้ว",
+ ["Invite to party"]="เชิญเข้าปาร์ตี้",
+ ["No other players are available in this server."]="ยังไม่มีผู้เล่นอื่นในเซิร์ฟเวอร์นี้",
+ ["Party is full."]="ปาร์ตี้เต็มแล้ว",
+ ["Only the party leader can invite players."]="เฉพาะหัวหน้าปาร์ตี้เท่านั้นที่เชิญผู้เล่นได้",
+}
+for key,value in pairs(humanPartyText)do thai[key]=value end
+local tacticalMessages={
+ TacticNoHealTarget={"No injured ally in range","ไม่มีพันธมิตรบาดเจ็บในระยะ"},TacticOutOfRange={"Moving into ability range","ขยับเข้าระยะสกิล"},
+ Hold={"Hold","ประจำจุด"},TacticBalanced={"Balanced","สมดุล"},TacticDefensive={"Defensive","ป้องกัน"},
+ TacticHolding={"Holding position","รักษาจุดยืน"},TacticRegrouping={"Reforming near leader","จัดแถวใกล้ผู้นำ"},
+ TacticRetreating={"Returning to safety","กลับจุดปลอดภัย"},TacticLeash={"Returning to leader","กลับหาผู้นำ"},
+ TacticFollowing={"Following leader","ตามผู้นำ"},TacticFocusing={"Focusing target","โจมตีเป้าหมายที่สั่ง"},
+ TacticProtecting={"Protecting leader","ปกป้องผู้นำ"},TacticGuarding={"Watching nearby threats","เฝ้าภัยใกล้ผู้นำ"},
+ TacticEngaging={"Engaging enemy","เข้าต่อสู้"},TacticEvading={"Avoiding danger","หลบอันตราย"},
+ TacticCasting={"Using ability","ใช้สกิล"},TacticCooldown={"Ability cooling down","รอคูลดาวน์สกิล"},
+}
+for key,values in pairs(tacticalMessages)do englishCodes[key]=values[1];thai[key]=values[2]end
+thai["Recruitment level unavailable."]="ยังไม่มีข้อมูลเลเวลเริ่มต้นของฮีโร่"
+thai["Use your guild workshop or the city forge. A placed Blacksmith on your island is required."]="ใช้โรงงานกิลด์หรือโรงตีเหล็กในเมือง โดยต้องวางโรงตีเหล็กบนเกาะของคุณก่อน"
+thai["Visit your guild workshop or the city forge to craft."]="ไปที่โรงงานกิลด์หรือโรงตีเหล็กในเมืองเพื่อคราฟต์"
 return Localization

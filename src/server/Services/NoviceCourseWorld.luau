@@ -10,8 +10,12 @@ local Lessons=require(script.Parent.Parent.Config.NoviceLessons)
 local V=Vector3.new
 return function(deps:any)
  local entries:{[Player]:any}={};local occupied:{[number]:boolean}={};local S={}
+ local function identityFor(player:Player):any
+  return require(script.Parent.Parent.Systems.StudioTrialIdentity)(deps.TrialIdentityContext,player.UserId,function()return player.Parent==Players and Players:GetPlayerByUserId(player.UserId)==player end)
+ end
  local manager=require(script.Parent.NoviceTrialManager)({Data=deps.Data,MaxArenas=8,Now=os.clock,
-  NewRunId=function()return Http:GenerateGUID(false)end,CreateArena=Arena,MakeReceipt=deps.MakeReceipt,Notify=deps.Notify,
+  NewRunId=function()return Http:GenerateGUID(false)end,CreateArena=function(player:Player,data:any,classId:string,runId:string,origin:Vector3,complete:any,exit:any) return Arena(player,data,classId,runId,origin,complete,exit,nil,identityFor(player))end,
+  TrialsFor=function(player:Player)return require(script.Parent.Parent.Systems.NoviceTrialSession)(require(script.Parent.Parent.Config.NoviceTrials),require(game.ReplicatedStorage.Shared.Util.TableUtil),identityFor(player))end,MakeReceipt=deps.MakeReceipt,Notify=deps.Notify,
   Origin=function(slot:number)return V(-4500-(slot-1)*400,25,850)end,
   Trials=require(script.Parent.Parent.Systems.NoviceTrialSession)(require(script.Parent.Parent.Config.NoviceTrials),require(game.ReplicatedStorage.Shared.Util.TableUtil))})
  local function profile(player:Player):any
@@ -74,7 +78,7 @@ return function(deps:any)
   local function lesson(id:string)
    local s=profile(player);local def=Lessons[id]
    if not s or s.state~="Active"or s.busy or e.pending or e.lesson or workspace:FindFirstChild("NoviceTrial_"..player.UserId)then return end
-   local options=LessonFactory(id);local classId=def.Class or s.record.data.character.classId
+   local options=LessonFactory(id,identityFor(player));local classId=def.Class or s.record.data.character.classId
    local runId=Http:GenerateGUID(false);local check=options.Create(s.record.data,player.UserId,classId,runId,os.clock())
    if not check then return end
    local send:any=nil
