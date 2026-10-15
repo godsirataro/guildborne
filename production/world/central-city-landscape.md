@@ -68,12 +68,18 @@ runtime integration.
   background Blender exited 0. `branch-rotation-render.log` is the new unchanged raw stream;
   the earlier render and baseline logs are preserved as historical evidence.
 
-Artifacts: `assets/uat01/city-landscape/landscape.json`, `validation.json`,
+Historical landscape-pass artifacts: `assets/uat01/city-landscape/landscape.json`, `validation.json`,
 `hearth-garden-preview.png`, `landscape-layout-preview.png`,
 `Guildborne_Central_Landscape.blend`, raw local logs and `evidence-hashes.json`.
 Evidence hashes use raw asset/log bytes. Text sources (`.py`, `.luau`, `.md`) are normalized
 to LF before hashing so their values match Git's committed text bytes. The manifest explicitly
 records this distinction. The generator emits JSON and Luau with stable LF line endings.
+
+The preserved `evidence-hashes.json` describes the earlier landscape commit.
+Its source/report hashes are not current after the reference-route changes above.
+Fresh connectivity receipts and source identity are indexed in
+[the world connectivity evidence index](../audit/world-builder/EVIDENCE_INDEX.md).
+Old raw render and test streams have not been rewritten.
 
 Historical private candidate: `build/Guildborne_IntegrationPreview.rbxlx`, built with the
 existing Memory-only preview builder before the branch correction; regeneration is pending.

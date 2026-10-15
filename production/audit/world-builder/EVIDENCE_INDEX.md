@@ -2,6 +2,28 @@
 
 This is an incomplete two-round program checkpoint, not all-world acceptance.
 
+## Recorded candidate
+
+Code/test candidate: `e842d009385158f3b48e4d02af0fc0d961735cbf`.
+Both immutable local-command receipts verified against clean unchanged source:
+
+| Command | Result | Preserved receipt |
+|---|---|---|
+| `pwsh -NoProfile -File tools/validate.ps1` | PASS: 890 tests; analysis, compile, build, repository checks | [baseline result](../../design/integration/p1-city/world-connectivity/baseline/result.json) |
+| `python tools/verify_city_landscape.py` | PASS: projected geometry only | [geometry result](../../design/integration/p1-city/world-connectivity/geometry/result.json) |
+
+Receipt folders preserve result, invocation and raw stdout/stderr bytes, including
+empty streams. Their original `build/agentic/checks` paths remain recorded in the
+JSON; copies are archival, not rewritten Forge submissions. Later commits only
+clarify documentation/status vocabulary and preserve these records, not change
+the tested runtime/test/verifier code.
+
+Independent reviewer `/root/independent_review` inspected actual CityKit doorway
+transforms, furnishings and probe semantics: no source runtime blockers found.
+The reviewer found stale historical hash references; the landscape report now
+explicitly labels the old manifest historical and points here. This was source
+review, not an independent Studio replay or formal Forge task acceptance.
+
 ## Changed behavior
 
 Four cobblestone segments connect the market avenue to the east-facing forge

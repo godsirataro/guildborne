@@ -1,0 +1,28 @@
+{
+  "schemaVersion": 1,
+  "kind": "LOCAL_COMMAND_RECEIPT",
+  "runId": "fe9ac155da0642bf9db567ac84c35948",
+  "tool": "C:\\Users\\godsi\\AppData\\Local\\Programs\\Python\\Python314\\python.exe",
+  "argv": [
+    "C:\\Users\\godsi\\AppData\\Local\\Programs\\Python\\Python314\\python.exe",
+    "tools/verify_city_landscape.py"
+  ],
+  "buildCommit": "e842d009385158f3b48e4d02af0fc0d961735cbf",
+  "sourceTree": "6f5bec170fd360f9e5583566c32f065e90202d16",
+  "exitCode": 0,
+  "sourceUnchanged": true,
+  "seconds": 8.624341499998991,
+  "streams": [
+    {
+      "path": "build/agentic/checks/fe9ac155da0642bf9db567ac84c35948/stdout.txt",
+      "sha256": "b024ebf4283ffa611ed54c4ba52b23613abeed4be9e9b7777f4b5072ca798934",
+      "bytes": 858
+    },
+    {
+      "path": "build/agentic/checks/fe9ac155da0642bf9db567ac84c35948/stderr.txt",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "bytes": 0
+    }
+  ],
+  "error": null
+}
