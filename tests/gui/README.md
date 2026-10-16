@@ -25,3 +25,10 @@ runs it. EN/TH wrapping, phone safe areas, gamepad focus, touch targets, image
 appearance, physical-device performance and full gameplay acceptance remain
 separate checks. Rebuild after source changes; an older place is not current
 source evidence.
+
+W1 adds simulated Title Tab routing, loading activation guard, textbox/core-menu
+pass-through, repeated refresh, hide/reopen, ScreenGui disable/enable and destroy
+cleanup coverage. These mocks do not establish engine input priority or processed
+input delivery. In the current native candidate, press Tab without calling
+MenuRouter manually, check selection, then Return; repeat after mouse input and
+with Settings open. Confirm hidden Title releases Tab back to gameplay/Core UI.

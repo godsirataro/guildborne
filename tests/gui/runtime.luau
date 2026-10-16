@@ -38,7 +38,7 @@ function Runtime.environment()
  end
  local function new(class)
   local object = {ClassName = class, Name = class, children = {}, attributes = {}, signals = {}, AbsoluteSize = {X = 800, Y = 600}, Visible = true, IsLoaded = false}
-  for _, key in ipairs({"MouseEnter", "MouseLeave", "SelectionGained", "SelectionLost", "InputBegan", "InputEnded", "Activated", "Destroying"}) do object[key] = signal() end
+  for _, key in ipairs({"AncestryChanged", "MouseEnter", "MouseLeave", "SelectionGained", "SelectionLost", "InputBegan", "InputEnded", "Activated", "Destroying"}) do object[key] = signal() end
   return setmetatable(object, {__index = methods, __newindex = function(t, key, value)
    rawset(t, key, value)
    if key == "Parent" and value then table.insert(value.children, t) end
@@ -56,7 +56,16 @@ function Runtime.environment()
  local enum = setmetatable({}, {__index = function(t, key)
   local group = setmetatable({}, {__index = function(_, item) return key .. "." .. item end}); rawset(t, key, group); return group
  end})
+ enum.ContextActionPriority = {High = {Value = 3000}}
+ local actions = {bindings = {}}
+ function actions:BindActionAtPriority(name, callback, touch, priority, key)
+  self.bindings[name] = {callback=callback,touch=touch,priority=priority,key=key}
+ end
+ function actions:UnbindAction(name) self.bindings[name] = nil end
+ local input = {focused = nil}
+ function input:GetFocusedTextBox() return self.focused end
  return {
+  Services = {ContextActionService=actions,UserInputService=input,GuiService={MenuIsOpen=false}},
   Instance = {new = new}, Enum = enum,
   ColorSequence = {new = function(...) return {...} end},
   Color3 = {new = color, fromRGB = function(r,g,b) return color(r/255,g/255,b/255) end},

@@ -7,12 +7,12 @@ ROOT = Path(__file__).resolve().parents[2]
 MODULES = ["src/shared/Config/Art.luau", "src/shared/Config/VisualAssets.luau",
            "src/client/UI/AssetImage.luau", "src/client/UI/DesignSystem/Theme.luau"]
 MODULES += [f"src/client/UI/Components/{name}.luau" for name in
-            ("GuildborneButton", "GuildbornePanel", "HeaderBar", "TabBar")]
+            ("GuildborneButton", "GuildbornePanel", "HeaderBar", "TabBar", "TitleKeyboardFocus")]
 MODULES += ["src/client/UI/SymbolIcon.luau", "src/shared/Data/UISymbols.luau"]
 MODULES += ["src/client/UI/TitleView.luau", "src/shared/Config/Localization.luau"]
 # Only Title orchestration dependencies are stubbed; component source and Title are real.
 STUBS = {
-    "MenuRouter": "return {register=function() end}",
+    "MenuRouter": "return {register=function() end,focusCurrent=function() Services.FocusCalls=(Services.FocusCalls or 0)+1 end}",
     "CompanyPreview": '''return function(parent)
  local frame=Instance.new("Frame");frame.Name="CompanyPreview";frame.Parent=parent
  return {update=function() parent:SetAttribute("PreviewUpdates",(parent:GetAttribute("PreviewUpdates") or 0)+1) end,
@@ -47,7 +47,7 @@ end
         code += f"modules[node({quote(path.removesuffix('.luau'))})]={quote((ROOT/path).read_text(encoding='utf-8'))}\n"
     for name, stub in STUBS.items():
         code += f"modules[node({quote('src/client/UI/'+name)})]={quote(stub)}\n"
-    code += '''env.game={ReplicatedStorage={Shared=node("src/shared")}}
+    code += '''env.game={ReplicatedStorage={Shared=node("src/shared")},GetService=function(_,name) return env.Services[name] end}
 env.UI=node("src/client/UI")
 env.require=function(target)
  if cache[target] then return cache[target] end

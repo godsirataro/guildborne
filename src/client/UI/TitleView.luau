@@ -6,6 +6,8 @@ local Localization = require(game.ReplicatedStorage.Shared.Config.Localization)
 local Panel = require(script.Parent.Components.GuildbornePanel)
 local Button = require(script.Parent.Components.GuildborneButton)
 local Header = require(script.Parent.Components.HeaderBar)
+local KeyboardFocus = require(script.Parent.Components.TitleKeyboardFocus)
+local MenuRouter = require(script.Parent.MenuRouter)
 
 -- Only presentation changes here: the existing profile, language and recovery
 -- callbacks remain authoritative. Concept art supplies no currencies or actions.
@@ -15,7 +17,8 @@ return function(parent: ScreenGui, enter: () -> (), language: () -> ())
 	local root = Instance.new("Frame")
 	root.Name = "TitleScreen"; root.Size = UDim2.fromScale(1, 1)
 	root.BackgroundColor3 = colors.Background; root.BorderSizePixel = 0; root.ZIndex = 20; root.Parent = parent
-	require(script.Parent.MenuRouter).register("Title", root, true)
+	MenuRouter.register("Title", root, true)
+	KeyboardFocus.bind(root, parent, MenuRouter.focusCurrent)
 	local backdrop = AssetImage.create(root, Assets.KeyArt, UDim2.fromScale(1, 1))
 	if backdrop then backdrop.ScaleType = Enum.ScaleType.Crop; backdrop.ImageTransparency = .8 end
 	local shell = Panel.create(root, {name = "TitleShell", size = UDim2.new(1, -24, 1, -24)})
