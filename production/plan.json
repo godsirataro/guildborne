@@ -1401,6 +1401,135 @@
       ],
       "title": "Regal GUI foundation and first-screen review candidate",
       "brief": "Bounded continuation of ux-system after fresh source audit and baseline at 42cb34b. Adopt user logo and ten visual references, build reusable native components and Title integration with actual profile bindings; preserve current runtime logic. Audit all 73 registry rows without acceptance promotion. Stop broad reskin for first-screen owner visual review. No asset upload, cloud writes or paid systems. Studio and device evidence remain separate."
+    },
+    {
+      "id": "world-quality-slice",
+      "skill": "guildborne-world",
+      "environment": "blender",
+      "dependsOn": [],
+      "writeScopes": [
+        "assets/production/world-slice",
+        "production/world/quality-slice",
+        "tools/blender_world_slice.py",
+        "tools/build_world_slice.py",
+        "tools/verify_world_slice.py",
+        "src/server/Services/WorldQualitySlice.luau",
+        "src/server/Services/WorldQualityAssets.luau",
+        "src/server/Services/CentralCityWorld.luau",
+        "src/server/Services/CityWorld.luau",
+        "src/server/Services/RegionalWorld.luau",
+        "src/server/Services/AdventureScene.luau",
+        "src/shared/Config/WorldQuality.luau",
+        "tests/world_quality.luau"
+      ],
+      "checks": [
+        "source-contract",
+        "regression",
+        "independent-review"
+      ],
+      "title": "Curated world art and connected starter route",
+      "brief": "Use reviewed local CC0 Catalog town/ruins assets, real Blender mesh processing and authored composition. Export provenance, render and bounded mesh data for isolated Studio; build a connected city-to-Greenwood route proposal preserving existing anchors and IDs. Record all-world Lv1-100 topology and content gaps. No Studio mutation before explicit handoff, no uploads or production flags."
+    },
+    {
+      "id": "gameplay-ui-quality",
+      "skill": "guildborne-ux-native",
+      "environment": "local",
+      "dependsOn": [],
+      "writeScopes": [
+        "src/client/UI/Components",
+        "src/client/UI/DesignSystem",
+        "src/client/UI/SliceUI.luau",
+        "src/client/UI/SettlementView.luau",
+        "src/client/UI/QuestTrackerView.luau",
+        "src/client/Controllers/PlayerCombatController.luau",
+        "src/client/Controllers/CityNavigation.luau",
+        "src/shared/Data/CombatHudLayout.luau",
+        "src/shared/Data/QuestRoute.luau",
+        "src/shared/Data/QuestTracker.luau",
+        "src/shared/Config/Localization.luau",
+        "assets/production/ui-slice",
+        "production/ux/gameplay-quality",
+        "tools/build_gameplay_ui_review.py",
+        "tests/gui",
+        "tests/city_waypoint.luau",
+        "tests/quest_tracker.luau"
+      ],
+      "checks": [
+        "source-contract",
+        "regression",
+        "independent-review"
+      ],
+      "title": "Art-directed native HUD and Journal journey",
+      "brief": "Build readable custom fantasy HUD, selected player and five-hero context, real cooldowns and Journal/quest navigation. Reuse server snapshots and existing actions. Review licensed borders/icons before selected export; no fake IDs, no framework migration, no baked UI text. Resolve owned-island quest navigation with actual anchors and unavailable states. Studio remains coordinator-owned."
+    },
+    {
+      "id": "enemy-quality-slice",
+      "skill": "guildborne-animation",
+      "environment": "local",
+      "dependsOn": [],
+      "writeScopes": [
+        "assets/production/enemy-slice",
+        "production/integration/enemy-quality",
+        "tools/blender_enemy_slice.py",
+        "tools/build_enemy_slice.py",
+        "tools/verify_enemy_slice.py",
+        "src/server/Services/EnemyAppearance.luau",
+        "src/server/Services/EnemyArticulation.luau",
+        "src/server/Services/AdventureEnemyKit.luau",
+        "src/client/Controllers/EnemyAnimator.luau",
+        "src/client/Controllers/SkillEffects.luau",
+        "src/shared/Presentation/ActionPose.luau",
+        "src/shared/Presentation/ActionTimeline.luau",
+        "src/shared/Config/EnemyVisualAssets.luau",
+        "tests/enemy_quality.luau",
+        "tests/action_timeline.luau"
+      ],
+      "checks": [
+        "source-contract",
+        "regression",
+        "independent-review"
+      ],
+      "title": "Curated enemies with readable animation and effects",
+      "brief": "Inspect licensed monster/animation sources and prepare one regular and one elite for existing encounter IDs. Preserve hitboxes, timing, stats, rewards and server authority. Own only visual/animation adapters and tests. Run Blender only with a separate exclusive enemy-blender-window lease after world worker releases; no Studio ownership. Restricted sources stay outside Git. No placeholder IDs or silent imported/rigged claims."
+    },
+    {
+      "id": "enemy-blender-window",
+      "skill": "guildborne-rigging",
+      "environment": "blender",
+      "dependsOn": [],
+      "writeScopes": [
+        "production/integration/enemy-blender-window"
+      ],
+      "checks": [
+        "source-contract",
+        "regression",
+        "independent-review"
+      ],
+      "title": "Exclusive enemy Blender execution window",
+      "brief": "Coordination-only Blender environment lease paired with enemy-quality-slice file lease. Claim only after world-quality-slice release and explicit stopped-process handoff. Does not grant extra file scope or Studio access."
+    },
+    {
+      "id": "quality-slice-integration",
+      "skill": "guildborne-director",
+      "environment": "studio",
+      "dependsOn": [],
+      "writeScopes": [
+        "production/integration/quality-slice",
+        "tools/build_quality_preview.py",
+        "tools/import_quality_meshes.py",
+        "tests/studio_quality_slice.luau",
+        "src/server/ServerBootstrap.server.luau",
+        "src/server/Config/Runtime.luau",
+        "src/server/Services/WorldService.luau",
+        "src/shared/Config/VisualAssets.luau"
+      ],
+      "checks": [
+        "source-contract",
+        "regression",
+        "independent-review"
+      ],
+      "title": "Review and integrate custom-quality slice in isolated Studio",
+      "brief": "Controller only. Integrate bounded reviewed worker commits, build Memory preview without modifying default live flags, import exact reviewed mesh/image content locally, verify actual source and gameplay camera/route/UI/combat. Preserve earned progression and market invariants. Publishing, spending, production DataStore and release remain prohibited; no new PR needed."
     }
   ],
   "deferredCapabilities": [
@@ -1410,7 +1539,7 @@
       "reason": "Dedicated commerce specialist file could not be uploaded: connector safety status was indeterminate. No permission or safeguard bypass attempted. Existing shop UI may be inspected; new receipt processing and live commerce require a separate reviewed task."
     }
   ],
-  "revision": 4,
+  "revision": 5,
   "externalGates": [
     "Roblox publishing",
     "asset uploads/ownership",

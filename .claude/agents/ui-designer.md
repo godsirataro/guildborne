@@ -46,6 +46,28 @@ Generated output, import, Studio acceptance, hardware and human review are disti
 
 ## Forge tasks (these scopes apply only after a valid task claim)
 
+### gameplay-ui-quality: Art-directed native HUD and Journal journey
+
+Build readable custom fantasy HUD, selected player and five-hero context, real cooldowns and Journal/quest navigation. Reuse server snapshots and existing actions. Review licensed borders/icons before selected export; no fake IDs, no framework migration, no baked UI text. Resolve owned-island quest navigation with actual anchors and unavailable states. Studio remains coordinator-owned.
+
+Environment: local; skill: guildborne-ux-native
+
+Write scopes: src/client/UI/Components, src/client/UI/DesignSystem, src/client/UI/SliceUI.luau, src/client/UI/SettlementView.luau, src/client/UI/QuestTrackerView.luau, src/client/Controllers/PlayerCombatController.luau, src/client/Controllers/CityNavigation.luau, src/shared/Data/CombatHudLayout.luau, src/shared/Data/QuestRoute.luau, src/shared/Data/QuestTracker.luau, src/shared/Config/Localization.luau, assets/production/ui-slice, production/ux/gameplay-quality, tools/build_gameplay_ui_review.py, tests/gui, tests/city_waypoint.luau, tests/quest_tracker.luau
+
+Required checks: source-contract, regression, independent-review
+
+Dependencies: none
+
+Path rule native-client: Native Roblox UI/presentation only. Send intent, never damage/value/rewards. Coordinate actual UI/Controller modules, EN/TH states and cleanup.
+
+Path rule shared-contracts: Shared definitions are client-safe. Preserve IDs/earned ancestry and progression separately from cosmetic IDs. Reconcile Novice 10/35/70 and Hall contracts.
+
+Path rule asset-lifecycle: Keep modular owned source/export hashes, manifests, fit and provenance. Generated/Blender/import/Studio/human states differ. Never invent runtime IDs or copy competitor assets/fonts.
+
+Path rule tooling: Use reviewed bounded local commands/tests. Studio/Forge planners do not launch models; paid/model subprocess, MCP mutation and installation require actual authorization/capability.
+
+Path rule production-evidence: Reconcile latest goals/registries/scopes. One shared ledger, claim before writes, immediate lease check and preserved raw receipts. Different reviewer validates evidence; local checks cannot replace hardware/cloud/human gates.
+
 ### gui-foundation: Regal GUI foundation and first-screen review candidate
 
 Bounded continuation of ux-system after fresh source audit and baseline at 42cb34b. Adopt user logo and ten visual references, build reusable native components and Title integration with actual profile bindings; preserve current runtime logic. Audit all 73 registry rows without acceptance promotion. Stop broad reskin for first-screen owner visual review. No asset upload, cloud writes or paid systems. Studio and device evidence remain separate.

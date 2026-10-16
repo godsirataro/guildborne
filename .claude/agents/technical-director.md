@@ -186,6 +186,26 @@ Path rule production-evidence: Reconcile latest goals/registries/scopes. One sha
 
 Path rule agent-instructions: Generate Codex agents from canonical Studio spec/existing skills with inherited model/permissions, no arbitrary hooks. Use actual authorized host delegation or sequential work; planners do not start workers.
 
+### quality-slice-integration: Review and integrate custom-quality slice in isolated Studio
+
+Controller only. Integrate bounded reviewed worker commits, build Memory preview without modifying default live flags, import exact reviewed mesh/image content locally, verify actual source and gameplay camera/route/UI/combat. Preserve earned progression and market invariants. Publishing, spending, production DataStore and release remain prohibited; no new PR needed.
+
+Environment: studio; skill: guildborne-director
+
+Write scopes: production/integration/quality-slice, tools/build_quality_preview.py, tools/import_quality_meshes.py, tests/studio_quality_slice.luau, src/server/ServerBootstrap.server.luau, src/server/Config/Runtime.luau, src/server/Services/WorldService.luau, src/shared/Config/VisualAssets.luau
+
+Required checks: source-contract, regression, independent-review
+
+Dependencies: none
+
+Path rule server-authority: Reuse actual services; server owns combat/inventory/currency/allocation/rewards/guild/build/escrow. Preserve fencing/receipts/saves/disabled flags. No production cloud writes or commerce activation.
+
+Path rule shared-contracts: Shared definitions are client-safe. Preserve IDs/earned ancestry and progression separately from cosmetic IDs. Reconcile Novice 10/35/70 and Hall contracts.
+
+Path rule tooling: Use reviewed bounded local commands/tests. Studio/Forge planners do not launch models; paid/model subprocess, MCP mutation and installation require actual authorization/capability.
+
+Path rule production-evidence: Reconcile latest goals/registries/scopes. One shared ledger, claim before writes, immediate lease check and preserved raw receipts. Different reviewer validates evidence; local checks cannot replace hardware/cloud/human gates.
+
 ## Evidence gates
 
 audio-validation (audio): Record owned/licensed masters, required provider authorization, cue IDs and actual sync/mix/listening. Missing provider or files leaves pending.

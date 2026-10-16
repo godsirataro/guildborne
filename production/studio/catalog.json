@@ -546,7 +546,10 @@
     "combat": "combat-engineer",
     "ecosystem-adoption": "technical-director",
     "ecosystem-code": "tools-engineer",
+    "enemy-blender-window": "rigging-artist",
+    "enemy-quality-slice": "animator",
     "expansion-integration": "technical-director",
+    "gameplay-ui-quality": "ui-designer",
     "growth": "growth-analyst",
     "gui-foundation": "ui-designer",
     "guild-foundation": "guild-engineer",
@@ -577,6 +580,7 @@
     "presentation-integration": "animator",
     "private-cross-server": "qa-engineer",
     "progression": "gameplay-designer",
+    "quality-slice-integration": "technical-director",
     "race-expansion": "character-artist",
     "registry-reconciliation": "asset-curator",
     "research": "tools-engineer",
@@ -593,7 +597,8 @@
     "tool-capabilities": "tools-engineer",
     "uat": "qa-engineer",
     "ux-system": "ui-designer",
-    "vfx": "vfx-artist"
+    "vfx": "vfx-artist",
+    "world-quality-slice": "world-builder"
   },
   "upstream": {
     "adoption": "concepts-only",

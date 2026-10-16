@@ -49,6 +49,20 @@ Path rule asset-lifecycle: Keep modular owned source/export hashes, manifests, f
 
 Path rule production-evidence: Reconcile latest goals/registries/scopes. One shared ledger, claim before writes, immediate lease check and preserved raw receipts. Different reviewer validates evidence; local checks cannot replace hardware/cloud/human gates.
 
+### enemy-blender-window: Exclusive enemy Blender execution window
+
+Coordination-only Blender environment lease paired with enemy-quality-slice file lease. Claim only after world-quality-slice release and explicit stopped-process handoff. Does not grant extra file scope or Studio access.
+
+Environment: blender; skill: guildborne-rigging
+
+Write scopes: production/integration/enemy-blender-window
+
+Required checks: source-contract, regression, independent-review
+
+Dependencies: none
+
+Path rule production-evidence: Reconcile latest goals/registries/scopes. One shared ledger, claim before writes, immediate lease check and preserved raw receipts. Different reviewer validates evidence; local checks cannot replace hardware/cloud/human gates.
+
 ## Evidence gates
 
 audio-validation (audio): Record owned/licensed masters, required provider authorization, cue IDs and actual sync/mix/listening. Missing provider or files leaves pending.

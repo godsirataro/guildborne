@@ -141,6 +141,28 @@ Path rule tooling: Use reviewed bounded local commands/tests. Studio/Forge plann
 
 Path rule production-evidence: Reconcile latest goals/registries/scopes. One shared ledger, claim before writes, immediate lease check and preserved raw receipts. Different reviewer validates evidence; local checks cannot replace hardware/cloud/human gates.
 
+### world-quality-slice: Curated world art and connected starter route
+
+Use reviewed local CC0 Catalog town/ruins assets, real Blender mesh processing and authored composition. Export provenance, render and bounded mesh data for isolated Studio; build a connected city-to-Greenwood route proposal preserving existing anchors and IDs. Record all-world Lv1-100 topology and content gaps. No Studio mutation before explicit handoff, no uploads or production flags.
+
+Environment: blender; skill: guildborne-world
+
+Write scopes: assets/production/world-slice, production/world/quality-slice, tools/blender_world_slice.py, tools/build_world_slice.py, tools/verify_world_slice.py, src/server/Services/WorldQualitySlice.luau, src/server/Services/WorldQualityAssets.luau, src/server/Services/CentralCityWorld.luau, src/server/Services/CityWorld.luau, src/server/Services/RegionalWorld.luau, src/server/Services/AdventureScene.luau, src/shared/Config/WorldQuality.luau, tests/world_quality.luau
+
+Required checks: source-contract, regression, independent-review
+
+Dependencies: none
+
+Path rule server-authority: Reuse actual services; server owns combat/inventory/currency/allocation/rewards/guild/build/escrow. Preserve fencing/receipts/saves/disabled flags. No production cloud writes or commerce activation.
+
+Path rule shared-contracts: Shared definitions are client-safe. Preserve IDs/earned ancestry and progression separately from cosmetic IDs. Reconcile Novice 10/35/70 and Hall contracts.
+
+Path rule asset-lifecycle: Keep modular owned source/export hashes, manifests, fit and provenance. Generated/Blender/import/Studio/human states differ. Never invent runtime IDs or copy competitor assets/fonts.
+
+Path rule tooling: Use reviewed bounded local commands/tests. Studio/Forge planners do not launch models; paid/model subprocess, MCP mutation and installation require actual authorization/capability.
+
+Path rule production-evidence: Reconcile latest goals/registries/scopes. One shared ledger, claim before writes, immediate lease check and preserved raw receipts. Different reviewer validates evidence; local checks cannot replace hardware/cloud/human gates.
+
 ## Evidence gates
 
 audio-validation (audio): Record owned/licensed masters, required provider authorization, cue IDs and actual sync/mix/listening. Missing provider or files leaves pending.

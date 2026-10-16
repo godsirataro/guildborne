@@ -49,6 +49,30 @@ Path rule asset-lifecycle: Keep modular owned source/export hashes, manifests, f
 
 Path rule production-evidence: Reconcile latest goals/registries/scopes. One shared ledger, claim before writes, immediate lease check and preserved raw receipts. Different reviewer validates evidence; local checks cannot replace hardware/cloud/human gates.
 
+### enemy-quality-slice: Curated enemies with readable animation and effects
+
+Inspect licensed monster/animation sources and prepare one regular and one elite for existing encounter IDs. Preserve hitboxes, timing, stats, rewards and server authority. Own only visual/animation adapters and tests. Run Blender only with a separate exclusive enemy-blender-window lease after world worker releases; no Studio ownership. Restricted sources stay outside Git. No placeholder IDs or silent imported/rigged claims.
+
+Environment: local; skill: guildborne-animation
+
+Write scopes: assets/production/enemy-slice, production/integration/enemy-quality, tools/blender_enemy_slice.py, tools/build_enemy_slice.py, tools/verify_enemy_slice.py, src/server/Services/EnemyAppearance.luau, src/server/Services/EnemyArticulation.luau, src/server/Services/AdventureEnemyKit.luau, src/client/Controllers/EnemyAnimator.luau, src/client/Controllers/SkillEffects.luau, src/shared/Presentation/ActionPose.luau, src/shared/Presentation/ActionTimeline.luau, src/shared/Config/EnemyVisualAssets.luau, tests/enemy_quality.luau, tests/action_timeline.luau
+
+Required checks: source-contract, regression, independent-review
+
+Dependencies: none
+
+Path rule server-authority: Reuse actual services; server owns combat/inventory/currency/allocation/rewards/guild/build/escrow. Preserve fencing/receipts/saves/disabled flags. No production cloud writes or commerce activation.
+
+Path rule native-client: Native Roblox UI/presentation only. Send intent, never damage/value/rewards. Coordinate actual UI/Controller modules, EN/TH states and cleanup.
+
+Path rule shared-contracts: Shared definitions are client-safe. Preserve IDs/earned ancestry and progression separately from cosmetic IDs. Reconcile Novice 10/35/70 and Hall contracts.
+
+Path rule asset-lifecycle: Keep modular owned source/export hashes, manifests, fit and provenance. Generated/Blender/import/Studio/human states differ. Never invent runtime IDs or copy competitor assets/fonts.
+
+Path rule tooling: Use reviewed bounded local commands/tests. Studio/Forge planners do not launch models; paid/model subprocess, MCP mutation and installation require actual authorization/capability.
+
+Path rule production-evidence: Reconcile latest goals/registries/scopes. One shared ledger, claim before writes, immediate lease check and preserved raw receipts. Different reviewer validates evidence; local checks cannot replace hardware/cloud/human gates.
+
 ### presentation-integration: Presentation Integration
 
 Integrate existing action timing and deterministic presentation cues with bounded lifecycle. Build isolated Memory-only full-game preview; inspect and playtest actual Studio candidate without cloud writes or publication. Preserve server combat and existing source ownership.
