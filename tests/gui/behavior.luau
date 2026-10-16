@@ -75,9 +75,13 @@ end)
 local Title = require(UI.TitleView)
 test("title waits for active profile and enters once on repeated Continue",function()
  local entered,languages=0,0
- local parent=Instance.new("ScreenGui")
+ local parent=Instance.new("ScreenGui");parent.Parent=root;parent.Enabled=true
  local h=Title(parent,function() entered+=1 end,function() languages+=1 end)
  local play,language=find(parent,"Continue"),find(parent,"Language")
+ local tab=Services.ContextActionService.bindings.GuildborneTitleKeyboardFocus
+ local before=Services.FocusCalls or 0
+ tab.callback("GuildborneTitleKeyboardFocus",Enum.UserInputState.Begin)
+ assert(Services.FocusCalls==before+1)
  play.Activated:Fire();language.Activated:Fire();assert(entered==0 and languages==0)
  h.update({status="Loading",data={language="en"}})
  play.Activated:Fire();language.Activated:Fire();assert(entered==0 and languages==0)
@@ -85,6 +89,8 @@ test("title waits for active profile and enters once on repeated Continue",funct
  assert(play.Text=="เริ่มเส้นทางนักผจญภัย")
  language.Activated:Fire();assert(languages==1)
  play.Activated:Fire();play.Activated:Fire();assert(entered==1 and not h.isOpen())
+ find(parent,"TitleScreen"):GetPropertyChangedSignal("Visible"):Fire()
+ assert(not Services.ContextActionService.bindings.GuildborneTitleKeyboardFocus)
  local company=find(parent,"YourCompany")
  assert(company:GetAttribute("PreviewDestroys")==1)
  parent:Destroy();assert(company:GetAttribute("PreviewDestroys")==1)
@@ -96,5 +102,31 @@ test("title recovery hands off once and cleans preview",function()
  assert(entered==1 and not h.isOpen())
  assert(find(parent,"YourCompany"):GetAttribute("PreviewDestroys")==1)
  parent:Destroy()
+end)
+test("Title Tab delegates focus and releases input outside visible menu",function()
+ local focus=require(UI.Components.TitleKeyboardFocus)
+ local screen=Instance.new("ScreenGui");screen.Parent=root;screen.Enabled=true
+ local frame=Instance.new("Frame");frame.Parent=screen
+ local count=0;local h=focus.bind(frame,screen,function() count+=1 end)
+ local actions=Services.ContextActionService
+ local name="GuildborneTitleKeyboardFocus"
+ local binding=actions.bindings[name]
+ frame:GetPropertyChangedSignal("Visible"):Fire();assert(actions.bindings[name]==binding)
+ assert(binding and not binding.touch and binding.priority==3000 and binding.key==Enum.KeyCode.Tab)
+ assert(binding.callback(name,Enum.UserInputState.Begin)==Enum.ContextActionResult.Sink and count==1)
+ binding.callback(name,Enum.UserInputState.End);assert(count==1)
+ Services.UserInputService.focused={}
+ assert(binding.callback(name,Enum.UserInputState.Begin)==Enum.ContextActionResult.Pass and count==1)
+ Services.UserInputService.focused=nil;Services.GuiService.MenuIsOpen=true
+ assert(binding.callback(name,Enum.UserInputState.Begin)==Enum.ContextActionResult.Pass and count==1)
+ Services.GuiService.MenuIsOpen=false
+ frame.Visible=false;frame:GetPropertyChangedSignal("Visible"):Fire();assert(not actions.bindings[name])
+ assert(binding.callback(name,Enum.UserInputState.Begin)==Enum.ContextActionResult.Pass)
+ frame.Visible=true;frame:GetPropertyChangedSignal("Visible"):Fire();assert(actions.bindings[name])
+ screen.Enabled=false;screen:GetPropertyChangedSignal("Enabled"):Fire();assert(not actions.bindings[name])
+ screen.Enabled=true;screen:GetPropertyChangedSignal("Enabled"):Fire();assert(actions.bindings[name])
+ frame:Destroy();assert(not actions.bindings[name]);h.destroy()
+ frame:GetPropertyChangedSignal("Visible"):Fire();assert(not actions.bindings[name])
+ screen:Destroy()
 end)
 print("PASS "..passed.." simulated GUI behavior cases; Studio/device acceptance remains pending")
