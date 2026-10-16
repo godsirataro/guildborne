@@ -66,19 +66,27 @@ function Binding.create(assets: Instance, parent: Instance, onAllocated: ((any) 
 		local hp=model:GetAttribute("CombatHealth")
 		return model:GetAttribute("CombatState")=="Dead" or (type(hp)=="number" and hp<=0)
 	end
+	local function upright(pivot: CFrame): boolean
+		-- These two regional actors travel upright. Corpse transforms can replicate
+		-- before health/state: never cache the server's 90-degree corpse roll as
+		-- a live ground basis, and never infer a replacement base from that roll.
+		return pivot.UpVector:Dot(Vector3.yAxis)>.98
+	end
 	local function add(model: Model)
 		if closed or slots>=2 or states[model] or not eligible(model) or (retryAt[model] or 0)>os.clock() then return end
 		-- No live ground basis was observed for an existing corpse. Keep its native
 		-- presentation until respawn instead of guessing the pre-death transform.
 		if isDead(model) then return end
+		local initialPivot=model:GetPivot()
+		if not upright(initialPivot) then return end
 		serial+=1; slots+=1
 		local state: any = {id=model:GetAttribute("EncounterId"),owner=model:GetAttribute("OwnerUserId"),
 			root=model.PrimaryPart,parent=model.Parent,generation=tostring(serial),connections={},hidden={},building=true,
-			lastLivePivot=model:GetPivot()}
+			lastLivePivot=initialPivot}
 		states[model]=state
 		local function invalidate() if not current(model,state) then dispose(model,state) end end
 		table.insert(state.connections,model.AncestryChanged:Connect(invalidate))
-		for _,name in ipairs({"OwnerUserId","EncounterId"}) do
+		for _,name in ipairs({"OwnerUserId","EncounterId","GuildborneEnemy"}) do
 			table.insert(state.connections,model:GetAttributeChangedSignal(name):Connect(invalidate))
 		end
 		table.insert(state.connections,model:GetPropertyChangedSignal("PrimaryPart"):Connect(invalidate))
@@ -92,7 +100,7 @@ function Binding.create(assets: Instance, parent: Instance, onAllocated: ((any) 
 					state.handle=allocated
 					if not current(model,state) then allocated.destroy(); error("Binding cancelled") end
 				end)
-				if not current(model,state) then handle.destroy(); return end
+				if not current(model,state) then dispose(model,state); return end
 				state.offset=origin:ToObjectSpace(handle.part.CFrame)
 				for _,instance in ipairs(model:GetDescendants()) do hide(state,instance) end
 				table.insert(state.connections,model.DescendantAdded:Connect(function(instance) hide(state,instance) end))
@@ -139,7 +147,10 @@ function Binding.create(assets: Instance, parent: Instance, onAllocated: ((any) 
 				-- CombatService tilts/lifts the native corpse. Authored Death already
 				-- falls to the ground, so retain the last live basis only while dead.
 				-- Living actors continue following every frame, including during load.
-				if not dead then state.lastLivePivot=model:GetPivot() end
+				if not dead then
+					local livePivot=model:GetPivot()
+					if upright(livePivot) then state.lastLivePivot=livePivot end
+				end
 				if not state.ready then continue end
 				local success, failure=pcall(function()
 					local snapshot: any={EncounterId=state.id,generation=state.generation,present=true,observedDeathAt=state.deathAt}
