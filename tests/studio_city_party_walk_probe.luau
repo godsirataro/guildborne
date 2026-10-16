@@ -204,7 +204,9 @@ return function(options)
    walk('Build ground to bridge mouth',origin+V(64,4,-34))
    walk('Owner IslandBridge',bridge.Position+V(0,4,0))
    walk('IslandPromenade junction',V(bridge.Position.X,4,-65))
-   walk('Promenade to Central City gate',V(returnGate.Position.X,4,returnGate.Position.Z))
+   -- Approach from the east without walking through the solid arch pillar at X+5.
+   walk('Promenade to Central City gate approach',V(returnGate.Position.X+8,4,returnGate.Position.Z))
+   assert((root.Position-returnGate.Position).Magnitude<=10,'Return gate outside native prompt reach')
    result.promenadeWalk='completed: ordinary speed, recovery counter unchanged'
    local returnDenied=travel.Validate(owner,'City');assert(returnDenied==nil,'City return denied: '..tostring(returnDenied))
    assert(travel.Travel(owner,'City'),'City return failed')
