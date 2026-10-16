@@ -7,7 +7,7 @@ ROOT = Path(__file__).resolve().parents[2]
 MODULES = ["src/shared/Config/Art.luau", "src/shared/Config/VisualAssets.luau",
            "src/client/UI/AssetImage.luau", "src/client/UI/DesignSystem/Theme.luau"]
 MODULES += [f"src/client/UI/Components/{name}.luau" for name in
-            ("GuildborneButton", "GuildbornePanel", "HeaderBar", "TabBar", "TitleKeyboardFocus")]
+            ("GuildborneButton", "GuildbornePanel", "HeaderBar", "TabBar", "TitleKeyboardFocus", "RegalOrnament", "TitleVista")]
 MODULES += ["src/client/UI/SymbolIcon.luau", "src/shared/Data/UISymbols.luau"]
 MODULES += ["src/client/UI/TitleView.luau", "src/shared/Config/Localization.luau"]
 # Only Title orchestration dependencies are stubbed; component source and Title are real.

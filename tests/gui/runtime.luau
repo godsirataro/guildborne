@@ -48,6 +48,7 @@ function Runtime.environment()
   return setmetatable({X = x, Y = y, Z = z, Magnitude = math.sqrt(x*x+y*y)}, {
    __mul=function(a,b) return vector(a.X*b,a.Y*b) end,
    __sub=function(a,b) return vector(a.X-b.X,a.Y-b.Y) end,
+   __add=function(a,b) return vector(a.X+b.X,a.Y+b.Y) end,
   })
  end
  local function color(r, g, b)
@@ -67,6 +68,7 @@ function Runtime.environment()
  return {
   Services = {ContextActionService=actions,UserInputService=input,GuiService={MenuIsOpen=false}},
   Instance = {new = new}, Enum = enum,
+  CFrame = {lookAt = function(a,b) return {a,b} end},
   ColorSequence = {new = function(...) return {...} end},
   Color3 = {new = color, fromRGB = function(r,g,b) return color(r/255,g/255,b/255) end},
   Vector2 = {new = vector}, Vector3 = {new = vector},
