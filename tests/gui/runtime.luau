@@ -38,10 +38,10 @@ function Runtime.environment()
  end
  local function new(class)
   local object = {ClassName = class, Name = class, children = {}, attributes = {}, signals = {}, AbsoluteSize = {X = 800, Y = 600}, Visible = true, IsLoaded = false}
-  for _, key in ipairs({"AncestryChanged", "MouseEnter", "MouseLeave", "SelectionGained", "SelectionLost", "InputBegan", "InputEnded", "Activated", "Destroying"}) do object[key] = signal() end
+  for _, key in ipairs({"ChildAdded", "AncestryChanged", "MouseEnter", "MouseLeave", "SelectionGained", "SelectionLost", "InputBegan", "InputEnded", "Activated", "Destroying"}) do object[key] = signal() end
   return setmetatable(object, {__index = methods, __newindex = function(t, key, value)
    rawset(t, key, value)
-   if key == "Parent" and value then table.insert(value.children, t) end
+   if key == "Parent" and value then table.insert(value.children, t); value.ChildAdded:Fire(t) end
   end})
  end
  local function vector(x, y, z)
@@ -65,14 +65,15 @@ function Runtime.environment()
  function actions:UnbindAction(name) self.bindings[name] = nil end
  local input = {focused = nil}
  function input:GetFocusedTextBox() return self.focused end
- local function transform(...) return setmetatable({...},{__mul=function(a,b) return {a,b} end}) end
+ local function transform(...) return setmetatable({...},{__mul=function(a,b) return transform(a,b) end}) end
  return {
   Services = {ContextActionService=actions,UserInputService=input,GuiService={MenuIsOpen=false}},
   Instance = {new = new}, Enum = enum,
   CFrame = {lookAt = function(a,b) return {a,b} end,new=transform,Angles=transform},
   ColorSequence = {new = function(...) return {...} end},
   Color3 = {new = color, fromRGB = function(r,g,b) return color(r/255,g/255,b/255) end},
-  Vector2 = {new = vector}, Vector3 = {new = vector},
+  Vector2 = {new = vector,zero=vector(0,0)}, Vector3 = {new = vector},
+  Rect = {new=function(x1,y1,x2,y2) return {Min=vector(x1,y1),Max=vector(x2,y2)} end},
   UDim = {new = function(scale, offset) return {Scale=scale, Offset=offset} end},
   UDim2 = {new = function(...) return {...} end, fromScale = function(x,y) return {x,0,y,0} end, fromOffset = function(x,y) return {0,x,0,y} end},
  }, connections

@@ -6,6 +6,14 @@ return function(test: any,eq: any)
 		b={Name="Gather",Description="Bring herbs",Count=3,Item="herb",Requires="a",NPC=true,Category="NPC"},
 		c={Name="Battle",Description="Win",Count=2,Requires="b",Category="Side"}}}
 	local function data(): any return {progression={tutorialStep="complete"},settlement={journal={}},inventory={stacks={}}} end
+	test("campaign tracker projects current objective identity and Hall prerequisite focus",function()
+	 local c:any={Journal={},JournalOrder={},CampaignChapter={Chapters={{Hall=2,Objectives={"first","next"}}},ObjectiveLabels={first={"First","แรก"},next={"Next","ถัดไป"}}}}
+	 local d=data();d.hallLevel=1;d.progression.campaign={claimed=0,objectives={}}
+	 eq(project(d,c,nil).focus,"UpgradeGuildHall")
+	 d.hallLevel=2;eq(project(d,c,nil).objective,"first")
+	 d.progression.campaign.objectives.first=true;eq(project(d,c,nil).objective,"next")
+	 d.progression.campaign.objectives.next=true;eq(project(d,c,nil).objective,nil);eq(project(d,c,nil).ready,true)
+	end)
 	test("earned Hall permit stays tracked after the final campaign and clears after upgrade",function()
 		local c:any={Journal=catalog.Journal,JournalOrder=catalog.JournalOrder,CampaignChapter={Chapters={{HallPermit=2,Objectives={"first"}},{HallPermit=3,Objectives={"last"}}},ObjectiveLabels={first={"First","แรก"},last={"Last","สุดท้าย"}}}}
 		local d=data();d.hallLevel=2;d.language="en";d.progression.campaign={claimed=2,hallPermit=3,objectives={}}

@@ -1,6 +1,54 @@
 --!strict
 local W=require("../src/shared/Data/CityWaypoint")
 return function(test: any,eq: any)
+ test("owned island route follows live Hall and exit anchors without routing to a foreign owner",function()
+  local city=require("../src/shared/Config/City");local route=require("../src/shared/Data/QuestRoute")(city,{},W)
+  local context:any={playerId=7,inGuild=true,island={ownerId=7,hall={x=293,z=-14},exit={x=-44,z=-65}}}
+  local quest={kind="Campaign",focus="UpgradeGuildHall"};local catalog={Journal={}}
+  local target=route(quest,catalog,280,23,context)
+  eq(target.x,293);eq(target.zone,"Guild");eq(target.final,true)
+  context.island.hall={x=311,z=17};eq(route(quest,catalog,280,23,context).x,311)
+  context.island.hall=nil;eq(route(quest,catalog,280,23,context),nil)
+  context.island.ownerId=8;eq(route(quest,catalog,280,23,context),nil)
+  context.island.ownerId=7
+  local journal={id="return_task",kind="Active",npc="Mira",ready=true};catalog.Journal.return_task={NPC="Mira"}
+  eq(route(journal,catalog,280,23,context).x,-44)
+  context.island.exit=nil;eq(route(journal,catalog,280,23,context),nil)
+  eq(route({kind="CampaignComplete"},catalog,280,23,context),nil)
+ end)
+ test("island exit is offered only for a resolved world objective and scoped quest labels stay distinct",function()
+  local city=require("../src/shared/Config/City")
+  local route=require("../src/shared/Data/QuestRoute")(city,{Nodes={timber={Region="Greenwood"}}},W)
+  local context={playerId=7,inGuild=true,island={ownerId=7,exit={x=-44,z=-65}}}
+  local catalog={Journal={gather={Event="Gather:timber"},menu={},unknown={NPC="Missing"}}}
+  eq(route(nil,catalog,280,23,context),nil)
+  local unresolved:{any}={{kind="Tutorial",tab="Inventory"},{kind="Novice",tab="Guild"},{kind="Active",id="menu"},{kind="Available",id="unknown",npc="Missing"},{kind="Active",id="missing",npc="Mira"}}
+  for _,quest in ipairs(unresolved)do
+   eq(route(quest,catalog,280,23,context),nil)
+  end
+  eq(route({kind="Active",id="gather",ready=false},catalog,280,23,context).name,"Central City")
+  eq(route({kind="Active",id="gather",ready=true},catalog,280,23,context),nil)
+  local locale=require("../src/shared/Config/Localization")
+  eq(locale.translate("th","Main quests"),"เควสหลัก");eq(locale.translate("th","Side quests"),"เควสรอง");eq(locale.translate("th","NPC quests"),"เควส NPC")
+  eq(locale.translate("en","Side quests"),"Side quests")
+ end)
+ test("campaign objective route advances island city Greenwood and keeps unavailable targets unset",function()
+  local city=require("../src/shared/Config/City");local route=require("../src/shared/Data/QuestRoute")(city,{},W)
+  local context:any={playerId=7,inGuild=true,island={ownerId=7,exit={x=-44,z=-65}},campaign={ownerId=7,objective="inspect_tracks",point={x=-30,z=1450,zone="Greenwood"}}}
+  local quest:any={kind="Campaign",objective="inspect_tracks",name="Inspect tracks"};local catalog={Journal={}}
+  eq(route(quest,catalog,280,23,context).name,"Central City")
+  context.inGuild=false
+  local target=route(quest,catalog,0,-1100,context);eq(target.name,"Greenwood");eq(target.z,city.Regions.Greenwood.CityGateZ)
+  target=route(quest,catalog,0,1505,context);eq(target.x,-30);eq(target.final,true)
+  context.campaign.point={x=-5,z=1480,zone="Greenwood"};eq(route(quest,catalog,0,1505,context).x,-5)
+  context.campaign.ownerId=8;eq(route(quest,catalog,0,1505,context),nil)
+  context.campaign.ownerId=7;context.campaign.objective="old";eq(route(quest,catalog,0,1505,context),nil)
+  context.campaign.objective="inspect_tracks";context.campaign.point=nil;eq(route(quest,catalog,0,1505,context),nil)
+  quest.objective="return_forest_evidence";context.campaign.objective=quest.objective;context.campaign.point={x=280,z=-9,zone="Guild"}
+  eq(route(quest,catalog,0,1505,context).name,"Central City")
+  eq(route(quest,catalog,0,-1100,context).kind,"Portal")
+  context.inGuild=true;eq(route(quest,catalog,280,23,context).x,280)
+ end)
  test("earned Hall directions choose the nearest city guild portal and completed campaigns invent no NPC",function()
   local city=require("../src/shared/Config/City")
   local route=require("../src/shared/Data/QuestRoute")(city,{},W)

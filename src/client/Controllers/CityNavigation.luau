@@ -9,6 +9,64 @@ local MenuRouter=require(script.Parent.Parent.UI.MenuRouter)
 local Waypoint=require(game.ReplicatedStorage.Shared.Data.CityWaypoint)
 local QuestTarget=require(game.ReplicatedStorage.Shared.Data.QuestTracker)
 local Rules=require(game.ReplicatedStorage.Shared.Data.Expansion)
+local IslandLayout=require(game.ReplicatedStorage.Shared.Config.GuildIslandLayout)
+-- Read the replicated owner and real anchors each tick: islands and Hall stations can move.
+local function navigationContext(player:Player,x:number,z:number):any
+ local context:any={playerId=player.UserId,inGuild=false}
+ local world=workspace:FindFirstChild("GuildborneWorld");if not world then return context end
+ local owned:Instance?=nil
+ for _,model in ipairs(world:GetChildren())do
+  if model.Name=="PersonalGuild" and model:IsA("Model") and model:GetAttribute("OwnerUserId")==player.UserId then owned=model;break end
+ end
+ local spawn=owned and owned:FindFirstChild("PersonalGuildSpawn")
+ local spawnPart=if spawn and spawn:IsA("BasePart") then spawn else nil
+ local originX=if spawnPart then spawnPart.Position.X-City.Destinations.Guild.X else 0
+ local originZ=if spawnPart then spawnPart.Position.Z-City.Destinations.Guild.Z else 0
+ local bounds=IslandLayout.Bounds
+ local function onIsland(px:number,pz:number):boolean
+  return spawnPart~=nil and px-originX>=bounds.minX and px-originX<=bounds.maxX and pz-originZ>=bounds.minZ and pz-originZ<=bounds.maxZ
+ end
+ local zone=world:FindFirstChild("GuildZone")
+ local function planarContains(part:Instance?):boolean
+  if not part or not part:IsA("BasePart") then return false end
+  local localPoint=part.CFrame:PointToObjectSpace(Vector3.new(x,part.Position.Y,z))
+  return math.abs(localPoint.X)<=part.Size.X/2 and math.abs(localPoint.Z)<=part.Size.Z/2
+ end
+ local link=zone and zone:FindFirstChild("IslandLink_"..player.UserId)
+ context.inGuild=spawnPart~=nil and (onIsland(x,z) or planarContains(zone and zone:FindFirstChild("IslandPromenade")) or planarContains(link and link:FindFirstChild("IslandBridge")))
+ local function position(part:Instance?):any
+  return if part and part:IsA("BasePart") then {x=part.Position.X,z=part.Position.Z,zone="Guild"} else nil
+ end
+ local env=owned and owned:FindFirstChild("Environment");local gameplay=env and env:FindFirstChild("Gameplay")
+ local exit=zone and zone:FindFirstChild("Central City")
+ context.island={ownerId=player.UserId,hall=position(gameplay and gameplay:FindFirstChild("Guild Hall")),exit=if exit and exit:GetAttribute("TravelDestination")=="City" then position(exit) else nil}
+ local bridge=link and link:FindFirstChild("IslandBridge")
+ local promenade=zone and zone:FindFirstChild("IslandPromenade")
+ -- Reach the owner's bridge before following the shared promenade, rather than
+ -- sending an arrow diagonally across the gap between island and city portal.
+ if context.inGuild and not planarContains(promenade) then
+  context.island.exit=if context.island.exit and bridge and bridge:IsA("BasePart") and promenade and promenade:IsA("BasePart") then {x=bridge.Position.X,z=promenade.Position.Z,zone="Guild"} else nil
+ end
+ -- CampaignWorld marks the current objective on its owner model and enables only
+ -- outstanding actionable markers (tour/track progress and delivery choices included).
+ local campaign=workspace:FindFirstChild("GuildCampaign_"..player.UserId)
+ if campaign and campaign:GetAttribute("CampaignOwner")==player.UserId then
+  local best:any=nil;local distance=math.huge
+  for _,part in ipairs(campaign:GetChildren())do
+   if part:IsA("BasePart") then
+    local prompt=part:FindFirstChild("Campaign_"..part.Name)
+    if prompt and prompt:IsA("ProximityPrompt") and prompt.Enabled then
+     local p=part.Position;local targetZone=if City.contains(p.X,p.Z) then "City" else City.region(p.X,p.Z)
+     if not targetZone and onIsland(p.X,p.Z) then targetZone="Guild" end
+     local squared=(x-p.X)^2+(z-p.Z)^2
+     if targetZone and squared<distance then distance=squared;best={x=p.X,z=p.Z,zone=targetZone}end
+    end
+   end
+  end
+  context.campaign={ownerId=player.UserId,objective=campaign:GetAttribute("Objective"),point=best}
+ end
+ return context
+end
 local QuestRoute=require(game.ReplicatedStorage.Shared.Data.QuestRoute)(City,Rules,Waypoint,function(region:string,marker:string):any
  local world=workspace:FindFirstChild("GuildborneWorld")
  local area=world and world:FindFirstChild(region)
@@ -21,7 +79,7 @@ local districtSymbols={Plaza="plaza",Guild="guild_home",Market="exchange",Tavern
 return function()
 	local player=Players.LocalPlayer;local language="en"
 	local selected: any=nil;local snapshot: any=nil;local arrivedUntil=0;local mapRegion:string?=nil
-	local mapCivic:string?=nil
+	local mapCivic:string?=nil;local mapGuild=false
 	local connections: {RBXScriptConnection}={}
 	local function connect(signal: RBXScriptSignal,callback: any) table.insert(connections,signal:Connect(callback)) end
 	local gui=Instance.new("ScreenGui");gui.Name="CityNavigation";gui.ResetOnSpawn=false;gui.ScreenInsets=Enum.ScreenInsets.CoreUISafeInsets;gui.DisplayOrder=20;gui.Parent=player:WaitForChild("PlayerGui")
@@ -82,12 +140,13 @@ return function()
 	local future=false
 	local function refresh()
 		toggle.Text=Locale.translate(language,if mapRegion then "Region Map" else "City Map")
-		title.Text=Locale.translate(language,if future then "Coming in a future phase" else mapCivic or mapRegion or "Central City")
+		title.Text=Locale.translate(language,if future then "Coming in a future phase" elseif mapGuild then "Personal Guild" else mapCivic or mapRegion or "Central City")
 		hint.Text=Locale.translate(language,if future then "Recruitment and crafting remain at your Personal Guild." elseif mapRegion then "Resource sites and return portal. Gold dot: you. Follow the paths and avoid enemy warnings." else "Tap a district for directions. Gold dot: you. Follow streets around buildings.")
 		questGuide.Text=Locale.translate(language,"Guide to quest objective");clear.Text=Locale.translate(language,"Clear route")
 		questGuide.Visible=not future;clear.Visible=not future
 		if mapCivic then hint.Text=Locale.translate(language,"Landmark and return portals. Gold dot: you.")end
-		map.Visible=not future and mapRegion==nil and mapCivic==nil;regionalMap.Visible=not future and mapRegion~=nil
+		if mapGuild then hint.Text=Locale.translate(language,"Guide to quest objective") end
+		map.Visible=not future and not mapGuild and mapRegion==nil and mapCivic==nil;regionalMap.Visible=not future and mapRegion~=nil
 		civicMap.frame.Visible=not future and mapCivic~=nil;civicMap.update(mapCivic,language)
 		for _,entry in ipairs(regionNodes) do
 			local release=snapshot and snapshot.catalog and snapshot.catalog.ReleaseContent
@@ -125,26 +184,31 @@ return function()
 		civicMap.frame.Size=map.Size
 		local district=root and City.district(root.Position.X,root.Position.Z)
 		local region=root and City.region(root.Position.X,root.Position.Z)
+		local context=if root then navigationContext(player,root.Position.X,root.Position.Z) else nil
+		local inGuild=context and context.inGuild==true
+		if (inGuild==true)~=mapGuild then mapGuild=inGuild==true;refresh()end
 		local civic:string?=nil
 		if root then for _,id in ipairs(Civic.Order)do if Civic.contains(id,root.Position.X,root.Position.Z)then civic=id;break end end end
 		if civic~=mapCivic then mapCivic=civic;selected=nil;scroll.CanvasPosition=Vector2.zero;refresh()end
 		if region~=mapRegion then mapRegion=region;scroll.CanvasPosition=if region then Vector2.new(0,math.max(0,mapHeight*.71-scroll.AbsoluteSize.Y*.5)) else Vector2.zero;refresh() end
-		toggle.Visible=(district~=nil or region~=nil or civic~=nil) and (not MenuRouter.isBlocking() or panel.Visible)
-		banner.Visible=(toggle.Visible or ((region~=nil or civic~=nil) and not MenuRouter.isBlocking())) and not panel.Visible
+		toggle.Visible=(district~=nil or region~=nil or civic~=nil or inGuild) and (not MenuRouter.isBlocking() or panel.Visible)
+		banner.Visible=(toggle.Visible or ((region~=nil or civic~=nil or (selected and selected.quest)) and not MenuRouter.isBlocking())) and not panel.Visible
 		local fightingRegion=region and root and player:GetAttribute("RegionalCombatEnabled")==region and City.regionCombat(region,root.Position.X,root.Position.Y,root.Position.Z)
 		banner.Text=if region then Locale.translate(language,region)..(if fightingRegion then "" else " · "..Locale.translate(language,"Safe zone")) elseif district then Locale.translate(language,district).." · "..Locale.translate(language,"Safe zone") else ""
 		if civic then banner.Text=Locale.translate(language,civic).." · "..Locale.translate(language,"Safe zone")end
+		if inGuild then banner.Text=Locale.translate(language,"Personal Guild") end
 		direction.Visible=false
 		local target=selected
 		if selected and selected.quest and root and snapshot and snapshot.data then
 			local pin=player.PlayerGui:GetAttribute("GuildbornePinnedQuest")
 			local quest=QuestTarget(snapshot.data,snapshot.catalog,if type(pin)=="string" then pin else nil)
-			target=QuestRoute(quest,snapshot.catalog,root.Position.X,root.Position.Z)
+			target=QuestRoute(quest,snapshot.catalog,root.Position.X,root.Position.Z,context)
 			if civic then local d=(Civic.Definitions :: any)[civic];target={name="Central City",x=d.X-58,z=d.Z+88,zone=civic,kind="Portal",final=false}end
+			if not target then banner.Text=Locale.translate(language,"Quest route unavailable. Keep tracking and follow the objective instructions.") end
 		end
-		if root and (district or region or civic) and target and target.x then
+		if root and (district or region or civic or inGuild) and target and target.x then
 			local distance,arrived=Waypoint.progress(root.Position.X,root.Position.Z,target.x,target.z)
-			if target.zone~=(civic or region or "City") then selected=nil
+			if target.zone~=(civic or region or (if inGuild then "Guild" else "City")) then if not selected.quest then selected=nil end
 			elseif arrived then
 				if selected.quest then banner.Text=Locale.translate(language,target.name).."\n"..Locale.translate(language,if target.kind=="Enemy" then "Watch enemy attack warnings" else "Interact at destination") else selected=nil;arrivedUntil=os.clock()+3 end
 			else

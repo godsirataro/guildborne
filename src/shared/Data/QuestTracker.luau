@@ -23,9 +23,9 @@ return function(data: any,catalog: any,pinned: string?): any
 	end
 	if campaign and catalog.CampaignChapter and campaign.claimed<#catalog.CampaignChapter.Chapters then
 		local chapter=catalog.CampaignChapter.Chapters[campaign.claimed+1]
-		if chapter.Hall and (data.hallLevel or 0)<chapter.Hall then return {kind="Campaign",tab="Guild",name=(if data.language=="th"then "กลับเกาะกิลด์ · อัปเกรดหอระดับ "else "Return to guild island · Upgrade Hall ")..chapter.Hall,ready=false}end
+		if chapter.Hall and (data.hallLevel or 0)<chapter.Hall then return {kind="Campaign",tab="Guild",focus="UpgradeGuildHall",name=(if data.language=="th"then "กลับเกาะกิลด์ · อัปเกรดหอระดับ "else "Return to guild island · Upgrade Hall ")..chapter.Hall,ready=false}end
 		for _,objective in ipairs(chapter.Objectives)do
-			if not campaign.objectives[objective]then return {kind="Campaign",tab="Guild",name=catalog.CampaignChapter.ObjectiveLabels[objective][if data.language=="th"then 2 else 1],ready=false}end
+			if not campaign.objectives[objective]then return {kind="Campaign",objective=objective,tab="Guild",name=catalog.CampaignChapter.ObjectiveLabels[objective][if data.language=="th"then 2 else 1],ready=false}end
 		end
 		return {kind="Campaign",tab="Guild",name=if data.language=="th"then "รับรางวัลบทนี้ในเมนูกิลด์"else "Claim chapter rewards in the Guild menu.",ready=true}
 	end

@@ -7,6 +7,8 @@ local Localization = require(game:GetService("ReplicatedStorage").Shared.Config.
 local Art = require(game:GetService("ReplicatedStorage").Shared.Config.Art)
 local ClassBadge=require(script.Parent.ClassBadge)
 local ProjectTracker = require(game:GetService("ReplicatedStorage").Shared.Data.QuestTracker)
+local MakeTracker = require(script.Parent.QuestTrackerView)
+local QualityAsset = require(script.Parent.Components.QualityAsset)
 
 -- Legacy fixture callbacks return no value; the live controller additionally returns a request ID.
 return function(send: any)
@@ -83,20 +85,20 @@ return function(send: any)
 
 	local hud = Instance.new("Frame"); hud.Size = UDim2.new(1, -16, 0, 52); hud.Position = UDim2.fromOffset(8, 6)
 	hud.BackgroundColor3 = colors.Background; hud.Parent = gui; corner(hud)
+	QualityAsset.create(hud,"panelBorder").ZIndex=3
 	local gold = Instance.new("TextLabel"); gold.Size = UDim2.new(1, -114, 1, 0); gold.Position = UDim2.fromOffset(12, 0)
 	gold.BackgroundTransparency = 1; gold.Font = Enum.Font.GothamBold; gold.TextSize = 18; gold.TextXAlignment = Enum.TextXAlignment.Left
 	gold.TextColor3 = colors.Accent; gold.Text = T("Guildborne · Loading"); gold.TextWrapped = true; gold.Parent = hud
 	local toggle = Instance.new("TextButton"); toggle.Size = UDim2.fromOffset(96, 48); toggle.Position = UDim2.new(1, -100, 0, 2)
 	toggle.Text = "Explore"; toggle.TextSize = 16; toggle.Font = Enum.Font.GothamMedium; toggle.TextColor3 = colors.Text; toggle.BackgroundColor3 = colors.Button; toggle.Parent = hud; corner(toggle)
 	gold.Size=UDim2.new(.3,-8,1,0);gold.TextSize=15
-	local tracker=Instance.new("TextButton");tracker.Name="QuestTracker";tracker.Size=UDim2.new(.42,-8,0,44);tracker.Position=UDim2.new(.32,0,0,4)
-	tracker.BackgroundColor3=colors.Card;tracker.TextColor3=colors.Text;tracker.Font=Enum.Font.GothamMedium;tracker.TextSize=14
-	tracker.TextWrapped=true;tracker.TextTruncate=Enum.TextTruncate.AtEnd;tracker.Parent=hud;corner(tracker)
+	local trackerView=MakeTracker(gui);local tracker=trackerView.button
 	local panel = Instance.new("Frame"); panel.Name = "ManagementPanel"
 	panel.AnchorPoint = Vector2.new(0.5, 0); panel.Position = UDim2.new(0.5, 0, 0, 64)
 	panel.Size = UDim2.new(1, -16, 1, -72); panel.BackgroundColor3 = colors.Background; panel.Parent = gui; corner(panel)
+	QualityAsset.create(panel,"panelBorder").ZIndex=3
 	MenuRouter.register("Management",panel)
-	local constraint = Instance.new("UISizeConstraint"); constraint.MaxSize = Vector2.new(720, 1000); constraint.Parent = panel
+	local constraint = Instance.new("UISizeConstraint"); constraint.MaxSize = Vector2.new(1000, 1000); constraint.Parent = panel
 	local tutorial = Instance.new("TextLabel"); tutorial.Size = UDim2.new(1, -24, 0, 66); tutorial.Position = UDim2.fromOffset(12, 8)
 	tutorial.BackgroundTransparency = 1; tutorial.TextSize = 16; tutorial.Font = Enum.Font.GothamMedium; tutorial.TextColor3 = colors.Text
 	tutorial.TextWrapped = true; tutorial.TextXAlignment = Enum.TextXAlignment.Left; tutorial.TextYAlignment = Enum.TextYAlignment.Center; tutorial.Parent = panel
@@ -117,8 +119,8 @@ return function(send: any)
 	status.BackgroundTransparency = 1; status.TextSize = 14; status.Font = Enum.Font.Gotham; status.TextColor3 = colors.Muted
 	status.TextWrapped = true; status.TextXAlignment = Enum.TextXAlignment.Left; status.Parent = panel
 	local compactLayout = false
-	local function responsiveLayout()
-		local compact = panel.AbsoluteSize.Y < 390
+	local function responsiveLayout(inRender: boolean?)
+		local compact = panel.AbsoluteSize.Y < 390 or tab=="Journal"
 		local changed = compactLayout ~= compact
 		compactLayout = compact
 		tutorial.Visible = not compact
@@ -129,7 +131,7 @@ return function(send: any)
 		scroll.Size = UDim2.new(1, -16, 1, if compact then -108 else -212)
 		status.Position = UDim2.new(0, 12, 1, if compact then -40 else -64)
 		status.Size = UDim2.new(1, -24, 0, if compact then 36 else 58)
-		if changed and UI.Render then UI.Render(true) end
+		if changed and UI.Render and not inRender then UI.Render(true) end
 	end
 	panel:GetPropertyChangedSignal("AbsoluteSize"):Connect(responsiveLayout)
 	responsiveLayout()
@@ -204,6 +206,7 @@ return function(send: any)
 		navigate=function(name: string) tab=name;UI.Render(true) end,explore=function() panel.Visible=false end,
 		build=function(data: any,kind: string,id: string?) builder.open(data,kind,id);panel.Visible=false end})
 	local drawSettlement=require(script.Parent.SettlementView)({scroll=scroll,T=T,card=card,text=text,button=button,act=act,
+		language=function()return language end,
 		atGuild=function()return player:GetAttribute("CurrentZone")=="Guild"end,
 		render=function(reset: boolean?) UI.Render(reset) end,navigate=function(name: string) tab=name;UI.Render(true) end,
 		trackQuest=function(id: string) pinnedQuest=if pinnedQuest==id then nil else id;UI.Render() end,
@@ -392,6 +395,7 @@ return function(send: any)
 	local dispatchRefresh=0
 	local craftingRefresh=0;local lastCraftProblem:string?=nil
 	function UI.Tick()
+		tracker.Visible=not titleView.isOpen() and not MenuRouter.isBlocking()
 		if customization then customization.Tick() end
 		worldNotice.Visible=os.clock()<worldNoticeUntil and not MenuRouter.isBlocking() and not titleView.isOpen()
 		if (tab=="Dispatch" or tab=="Tavern") and snapshot and snapshot.data and not busy and panel.Visible and os.clock()-dispatchRefresh>5 then dispatchRefresh=os.clock();UI.Render() end
@@ -414,6 +418,7 @@ return function(send: any)
 	end
 	local retainScroll=require(script.Parent.ScrollRetention)(scroll)
 	function UI.Render(resetScroll: boolean?, focusName:string?)
+		responsiveLayout(true)
 		retainScroll(resetScroll,focusName)
 		if tab=="Crafting" or tab=="Base" then lastCraftProblem=craftProblem() end
 		countdown = nil; activeButton = nil
@@ -427,18 +432,16 @@ return function(send: any)
 		local data = snapshot and snapshot.data
 		tracked=ProjectTracker(data,snapshot and snapshot.catalog,pinnedQuest)
 		player.PlayerGui:SetAttribute("GuildbornePinnedQuest",pinnedQuest)
-		tracker.Active=not busy and snapshot~=nil and snapshot.status=="Active";tracker.Selectable=tracker.Active
 		local inputName=UserInputService:GetLastInputType().Name
 		local hint=if inputName=="Touch" or string.sub(inputName,1,7)=="Gamepad" then "" else " [J]"
-		if tracked and tracked.kind=="Tutorial" then tracker.Text=T("Next step")..hint.."\n"..T(tracked.tab)
-		elseif tracked then
-			tracker.Text=T(if tracked.kind=="CampaignComplete" then "Journey complete" elseif tracked.kind=="Available" then "Next quest" elseif tracked.ready then "Ready to claim" else "Tracked quest")..hint.."\n"..T(tracked.name)..(if tracked.kind=="Active" then " "..tracked.progress.."/"..tracked.count else "")
-		else tracker.Text=T("Quest journal")..hint end
+		local trackerTitle=T(if tracked and tracked.kind=="Tutorial" then "Next step" elseif tracked and tracked.kind=="CampaignComplete" then "Journey complete" elseif tracked and tracked.kind=="Available" then "Next quest" elseif tracked and tracked.ready then "Ready to claim" else "Tracked quest")..hint
+		local trackerValue=if tracked then T(if tracked.kind=="Tutorial" then tracked.tab else tracked.name)..(if tracked.kind=="Active" then " "..tracked.progress.."/"..tracked.count else "") else T("Quest journal")..hint
+		trackerView.update(tracked,trackerTitle,trackerValue,not busy and snapshot~=nil and snapshot.status=="Active")
 		toggle.Text = T(if panel.Visible then "Explore" else "Guild menu")
 		gold.Text = if data then T("{gold} Gold · Hall Lv{level}", { gold = data.gold, level = data.hallLevel }) else T("Guildborne · Loading")
 		tutorial.Text = T(if tracked and (tracked.kind=="Novice"or tracked.kind=="Campaign"or tracked.kind=="CampaignComplete")then tracked.name elseif data then tutorialText[data.progression.tutorialStep] or "Choose your next guild task." else "Preparing your Personal Guild…")
 		local noviceGuidanceOnHud=tab=="Guild" and snapshot and snapshot.status=="Active" and data and data.progression.novice and data.progression.novice.claimed<6 and tracked and tracked.kind=="Novice"
-		if compactLayout and not noviceGuidanceOnHud then text(scroll, tutorial.Text, 14) end
+		if compactLayout and tab~="Journal" and not noviceGuidanceOnHud then text(scroll, tutorial.Text, 14) end
 		local saveLabel = if busy then "Saving…" elseif snapshot and snapshot.status == "Active" then (if string.find(snapshot.mode, "memory") then "Session only" else "Saved") else (snapshot and snapshot.status or "Loading")
 		status.Text = T(saveLabel) .. " · " .. T(notice)
 		if not snapshot or not data then
