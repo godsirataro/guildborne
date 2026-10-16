@@ -1,0 +1,30 @@
+{
+  "schemaVersion": 1,
+  "kind": "LOCAL_COMMAND_RECEIPT",
+  "runId": "229ed8c563764de697e5c894f55ec561",
+  "tool": "powershell",
+  "argv": [
+    "powershell",
+    "-NoProfile",
+    "-File",
+    "tools/validate.ps1"
+  ],
+  "buildCommit": "42cb34bcb4ee6f1c30a5805ae92c1c20ca3db323",
+  "sourceTree": "e789feeda9ac0f3065591aa0006bd2a36f6ff8c2",
+  "exitCode": 0,
+  "sourceUnchanged": true,
+  "seconds": 106.38577039999655,
+  "streams": [
+    {
+      "path": "build/agentic/checks/229ed8c563764de697e5c894f55ec561/stdout.txt",
+      "sha256": "08bb0fc46e117ecfc2ae7f486ae166cca3d52bb316c43b6a4b5dd734ea8add3c",
+      "bytes": 68932
+    },
+    {
+      "path": "build/agentic/checks/229ed8c563764de697e5c894f55ec561/stderr.txt",
+      "sha256": "cd2e272d0c8c1a4179403afa1b1f4ccb98c53e1bfbc068eb11eca2f26749cd59",
+      "bytes": 221
+    }
+  ],
+  "error": null
+}

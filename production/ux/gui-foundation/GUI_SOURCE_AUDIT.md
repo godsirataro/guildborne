@@ -1,10 +1,10 @@
-# GUI source audit — 2026-10-16
+# GUI source audit â€” 2026-10-16
 
 Status: SOURCE_AUDITED. This is a source mapping for the bounded reusable-foundation and Title review slice, not acceptance of a full GUI replacement. No new Studio/device/human GUI test is established here.
 
 ## Evidence boundary
 
-The canonical input is `docs/uat01/intake/registry-reconciled.json`: 73 screen rows, 21 without an implementation candidate, eight historical FUTURE rows, and no `uatApproved:true`. The companion CSV preserves all 73 IDs, original scope/status/candidate fields and adds 14 separately named `extra.*` surfaces. SOURCE_AUDITED means the mapping/dependency was reviewed, not that every state or action passed. Every `gui_test_status` remains NOT_RUN.
+The canonical input is `docs/uat01/intake/registry-reconciled.json`: 73 screen rows, 21 without an implementation candidate, eight historical FUTURE rows, and no `uatApproved:true`. The companion CSV preserves all 73 IDs, original scope/status/candidate fields and adds 14 separately named `extra.*` surfaces. SOURCE_AUDITED means the mapping/dependency was reviewed, not that every state or action passed. At initial audit all tests were NOT_RUN. The current CSV records partial native fixture observations for Title/loading only; see GUI_ACCEPTANCE.md.
 
 Coordinator-reported baseline receipt `229ed8c563764de697e5c894f55ec561` passed at `42cb34b`; it is pre-change baseline evidence, not GUI acceptance. Coordinator's Studio discovery found session `1e078f2a-71bd-4c20-bc35-7a41b7bbb4d4` with null name; `get_studio_state` reported `Place is not open`. No open-place screenshot or runtime acceptance is inferred.
 

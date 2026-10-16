@@ -15,11 +15,11 @@ All items below remain pending unless a later linked receipt records the exact t
 
 Runtime logo/image imports, approved 9-slice decoration and any new icons need actual source-to-runtime bindings and provenance. Existing uploaded IDs cannot be assumed from local PNG files. Keep dynamic labels/prices out of textures. Use native geometry fallback while asset binding is unavailable. Stylesheets are optional after capability verification; they do not justify rewriting game logic.
 
-Studio MCP is discoverable, but the coordinator's state probe reported Place is not open. Open-place identity, Rojo sync/build, fresh boot, Output, native interaction screenshots, cleanup and test fixtures are still required. Do not attach to or overwrite another worker's interactive session without the shared ownership handoff.
+Studio MCP initially reported Place is not open. The separate local review place was subsequently opened and fixture interactions captured; see GUI_ACCEPTANCE.md. Full-game integration, actual hero models and device checks remain required. Do not attach to or overwrite another worker's interactive session without the shared ownership handoff.
 
 ## Required fresh QA
 
-Run post-change Luau checks and builds against the actual candidate. Baseline receipt 229ed8c563764de697e5c894f55ec561 at42cb34b predates this candidate and is not GUI proof. Record commands, tree/commit, logs and expected/actual results without changing raw receipts.
+Post-change checks at6742d85 passed; see GUI_ACCEPTANCE.md for immutable receipts. Rerun affected checks after further code changes. Baseline receipt 229ed8c563764de697e5c894f55ec561 at42cb34b predates this candidate and is not GUI proof. Record commands, tree/commit, logs and expected/actual results without changing raw receipts.
 
 Exercise Title profile loading, failure/retry, degraded/lease-lost handoff, Continue, language, settings, credits, model cleanup and respawn. For each migrated screen exercise empty/locked/pending/error/committed states, rapid repeated input, snapshot refresh, focus retention, actor switching and return navigation. Market additionally needs stale/read-only/paused/partial/recovery outcomes; no optimistic success.
 

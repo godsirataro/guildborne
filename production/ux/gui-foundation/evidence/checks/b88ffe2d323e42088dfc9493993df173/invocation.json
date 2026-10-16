@@ -1,0 +1,28 @@
+{
+  "schemaVersion": 1,
+  "kind": "LOCAL_COMMAND_RECEIPT",
+  "runId": "b88ffe2d323e42088dfc9493993df173",
+  "tool": "C:\\Users\\godsi\\AppData\\Local\\Programs\\Python\\Python314\\python.exe",
+  "argv": [
+    "C:\\Users\\godsi\\AppData\\Local\\Programs\\Python\\Python314\\python.exe",
+    "tests/gui/run.py"
+  ],
+  "buildCommit": "6742d859d0f432aba50250bd420a4d6e6024824b",
+  "sourceTree": "57d38f57f1aa3c3d5713b596e1fde12dad0342d3",
+  "exitCode": 0,
+  "sourceUnchanged": true,
+  "seconds": 0.44375039999431465,
+  "streams": [
+    {
+      "path": "build/agentic/checks/b88ffe2d323e42088dfc9493993df173/stdout.txt",
+      "sha256": "29ea59aa5fffa0a0b0a630bbf76189fa20ba83b19fbeceea98bed955024a449c",
+      "bytes": 638
+    },
+    {
+      "path": "build/agentic/checks/b88ffe2d323e42088dfc9493993df173/stderr.txt",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "bytes": 0
+    }
+  ],
+  "error": null
+}

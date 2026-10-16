@@ -1,0 +1,2 @@
+# Captured bytes and their hashes must survive checkout unchanged.
+evidence/** -text whitespace=cr-at-eol
