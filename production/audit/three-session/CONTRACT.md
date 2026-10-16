@@ -1,12 +1,12 @@
-# Cross-stream integration contract — revision 1
+# Cross-stream integration contract — revision 2
 
-Status: source-backed proposal awaiting stream acknowledgements of this revision. Read with DASHBOARD.md. No new network schema is introduced.
+Revision 1 was acknowledged by all three streams. Revision 2 records S13's source correction below; no runtime/schema change. Read with DASHBOARD.md.
 
 ## World and quest navigation
 
 City.Config owns public geometry; TravelService owns actual travel, live player/plot checks, gate proximity and safe landing. City.Destinations keys City/Guild map to CentralCity/PersonalGuild identities; they are not interchangeable strings. MarketDistrict is a GuildPortalStops key; Market is a district. Preserve this distinction. Configured MarketDistrict portal is (300,-1080), return (300,-1068), fallback (300,-1060) in X/Z. Do not derive service prompt positions from concept art.
 
-QuestTracker projects server snapshot state. QuestRoute resolves actual catalog tasks/markers, gate steps, owner-island return and unavailable streamed markers. UI pinning is presentation only. A missing marker does not complete a quest. Canonical IDs, quest receipts, travel prerequisites and existing reward authority are unchanged. S13 must confirm the exact existing Goblin Camp route and service objects before an integrated test.
+QuestTracker projects server snapshot state. QuestRoute resolves actual catalog tasks/markers and supported city/region gate steps. It currently returns nil outside the City/known regions: navigation within an owner island and its return route are an identified implementation gap, not an accepted feature. UI pinning is presentation only. A missing marker does not complete a quest. Canonical IDs, quest receipts, travel prerequisites and existing reward authority are unchanged. S13 confirmed the real island camp and gate anchors; its synthetic five-follower probe does not establish earned recruitment or owner-authorized dispatcher acceptance.
 
 ## Combat and skill presentation
 

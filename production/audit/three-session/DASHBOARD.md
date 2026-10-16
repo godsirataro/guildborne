@@ -2,6 +2,57 @@
 
 Checkpoint: 2026-10-16, Asia/Bangkok. VERDICT: AT_RISK. This is a delivery dashboard, not whole-game acceptance.
 
+## Verified controller checkpoint — W2
+
+Integrated S15 lifecycle c58754a, S14 keyboard 7dc131d and visual 076b753,
+S13 route 78ec391 and gate-approach correction 3358598. Controller source head
+5bad1f3. Original S15 raw logs restored byte-for-byte in 51adb54 and protected
+against newline normalization. Metadata repair CI run 38864305260 passed all
+three jobs; the earlier failed hash checks below are historical.
+
+Fresh combined baseline before W2 passed 890 regressions and strict analysis.
+Final W2 baseline passed 890 regressions, 369 strict files and all automated
+checks (raw receipt: final-local-check.json); independent GUI review passed 11 simulations with
+no blocking source defect. These are not visual acceptance.
+
+First integrated Studio candidate source-matched 367 scripts. Real Tab/Enter
+worked; actual player Warrior Power Strike returned OK then Cooldown, with
+server damage/cooldown/action attributes observed. High/Low lifecycle probe
+passed cancellation, replacement, death/removal and malformed/stale observation
+checks. Pose probe produced 225 finite samples; audio IDs remain unbound.
+Central city services probe passed 29 assertions. Raw first-run MCP responses:
+studio-first-run.json.
+
+Synthetic five-hero route reached city, portal, island and camp with 1498 samples,
+maximum gap 23.8816, no unexpected recovery or rewards, then failed at return
+gate: its approach went through a solid pillar. This was a probe-path defect.
+3358598 stops before the pillar within native prompt range; corrected Studio
+run PASSED: 35 segments, 1587 samples, maximum gap 24.0493, two explicit travel
+transitions, zero unintended recovery/rewards and cleanup true. Raw receipt:
+studio-w2.json. Synthetic leader/roster is not earned-player proof.
+
+W2 GUI candidate SHA256
+6cf20020949d5aeb214306ee2f26bb992edf8998039b8e370e7a3d301791db0a
+matched all 369 source entries in standalone PlaceId=0/GameId=0 Studio.
+Actual 796x675 image was compared with 03_MAIN_MENU. Visual review failed:
+blocky/dark citadel, oversized header, clipped lower controls and cramped
+language text. S14 has a bounded revision assignment. User reference fidelity
+is the current priority. No final-art or physical-device approval is claimed.
+
+Separate actual-player ordinary-input journey PASSED: Journal city_gate Accept,
+walk/E travel Guild->City->Guild, Ready 1/1, Claim, visible Gold 0->15 and
+Claimed 1/1 with claim control removed. No fixture grants or class XP claim.
+Raw receipt: quest-ordinary-input.json. This proves actual owner travel and
+earned quest reward/UI binding, separately from the synthetic follower probe.
+
+Contract revision 2 corrects an overstatement: QuestRoute does not navigate
+within the owner island. The combined pinned quest-to-camp combat journey is
+still pending. Imported art/audio, broader screens/classes/world, multiplayer,
+device and human gates remain open.
+
+The sections below preserve the historical W0 assignment/baseline; the W2
+checkpoint above supersedes their pending/not-run statuses.
+
 ## Base and authority
 
 Verified remote main: bf948c636aa47e1d1b92a617895d324fcfaf42e9. Map PR #3 head 42cb34b targets main; GUI PR #4 head 49c5162 targets codex/world-connectivity. Map's three CI jobs passed; GUI's regression passed but both production jobs failed on generated source hashes. Controller reproduced the failure in a fresh checkout and corrected only two hashes in 84fe8cb. CI revalidation remains required.

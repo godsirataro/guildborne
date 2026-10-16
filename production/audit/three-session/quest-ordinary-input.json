@@ -1,0 +1,50 @@
+{
+  "sourceCommit": "5bad1f3",
+  "studio": "02afc7a5-1f90-42c7-9249-042bb028efb6",
+  "scenario": "Fresh Memory profile; real Journal city_gate accept; ordinary walk and E portals Guild->City->Guild; actual GUI claim. No class selected, no XP assertion, no grants.",
+  "accepted": {
+    "content": [
+      {
+        "type": "text",
+        "text": "{\"1\":{\"name\":\"TextLabel\",\"text\":\"A Guild of Your Own\"},\"3\":{\"name\":\"TextLabel\",\"text\":\"Reward: 15 Gold · 10 XP\"},\"2\":{\"name\":\"TextLabel\",\"text\":\"Visit the Guild Zone through the city portal.\"},\"5\":{\"name\":\"Track_city_gate\",\"text\":\"Track quest\"},\"4\":{\"name\":\"JournalProgress\",\"text\":\"Active · 0/1\"},\"6\":{\"name\":\"Claim_city_gate\",\"text\":\"Claim task reward\"}}"
+      }
+    ],
+    "isError": false
+  },
+  "ready": {
+    "content": [
+      {
+        "type": "text",
+        "text": "{\"zone\":\"Guild\",\"texts\":{\"1\":{\"y\":288,\"text\":\"A Guild of Your Own\",\"name\":\"TextLabel\",\"x\":62},\"3\":{\"y\":344,\"text\":\"Reward: 15 Gold · 10 XP\",\"name\":\"TextLabel\",\"x\":62},\"2\":{\"y\":318,\"text\":\"Visit the Guild Zone through the city portal.\",\"name\":\"TextLabel\",\"x\":62},\"5\":{\"y\":395,\"text\":\"Track quest\",\"name\":\"Track_city_gate\",\"x\":62},\"4\":{\"y\":369,\"text\":\"Ready to turn in · 1/1\",\"name\":\"JournalProgress\",\"x\":62},\"6\":{\"y\":457,\"text\":\"Claim task reward\",\"name\":\"Claim_city_gate\",\"x\":62}}}"
+      }
+    ],
+    "isError": false
+  },
+  "before": {
+    "content": [
+      {
+        "type": "text",
+        "text": "{\"1\":{\"path\":\"Players.iswhlaedev.PlayerGui.GuildborneUI.Frame.TextLabel\",\"text\":\"0 Gold · Hall Lv1\"},\"3\":{\"path\":\"Players.iswhlaedev.PlayerGui.GuildborneUI.ManagementPanel.Content.Journal_city_gate.JournalProgress\",\"text\":\"Ready to turn in · 1/1\"},\"2\":{\"path\":\"Players.iswhlaedev.PlayerGui.GuildborneUI.ManagementPanel.Content.Journal_city_gate.TextLabel\",\"text\":\"Reward: 15 Gold · 10 XP\"},\"5\":{\"path\":\"Players.iswhlaedev.PlayerGui.GuildborneUI.ManagementPanel.Content.Journal_stonework.TextLabel\",\"text\":\"Reward: 12 Gold · 10 XP\"},\"4\":{\"path\":\"Players.iswhlaedev.PlayerGui.GuildborneUI.ManagementPanel.Content.Journal_camp_threat.TextLabel\",\"text\":\"Reward: 30 Gold · 25 XP\"},\"7\":{\"path\":\"Players.iswhlaedev.PlayerGui.GuildborneUI.ManagementPanel.Content.Journal_first_ingot.TextLabel\",\"text\":\"Reward: 10 Gold · 10 XP\"},\"6\":{\"path\":\"Players.iswhlaedev.PlayerGui.GuildborneUI.ManagementPanel.Content.Journal_forge_foundation.TextLabel\",\"text\":\"Reward: 15 Gold · 10 XP\"},\"9\":{\"path\":\"Players.iswhlaedev.PlayerGui.GuildborneUI.ManagementPanel.Content.Journal_ready_for_battle.TextLabel\",\"text\":\"Reward: 10 Gold · 10 XP\"},\"8\":{\"path\":\"Players.iswhlaedev.PlayerGui.GuildborneUI.ManagementPanel.Content.Journal_field_outfit.TextLabel\",\"text\":\"Reward: 15 Gold · 15 XP\"},\"13\":{\"path\":\"Players.iswhlaedev.PlayerGui.CityNavigation.CityMap.TextLabel\",\"text\":\"Tap a district for directions. Gold dot: you. Follow streets around buildings.\"},\"12\":{\"path\":\"Players.iswhlaedev.PlayerGui.GuildborneUI.ManagementPanel.Content.Journal_spire_entry.TextLabel\",\"text\":\"Reward: 15 Gold · 15 XP\"},\"11\":{\"path\":\"Players.iswhlaedev.PlayerGui.GuildborneUI.ManagementPanel.Content.Journal_first_lesson.TextLabel\",\"text\":\"Reward: 10 Gold · 10 XP\"},\"10\":{\"path\":\"Players.iswhlaedev.PlayerGui.GuildborneUI.ManagementPanel.Content.Journal_growing_hall.TextLabel\",\"text\":\"Reward: 15 Gold · 10 XP\"}}"
+      }
+    ],
+    "isError": false
+  },
+  "after": {
+    "content": [
+      {
+        "type": "text",
+        "text": "{\"1\":{\"path\":\"Players.iswhlaedev.PlayerGui.GuildborneUI.Frame.TextLabel\",\"text\":\"15 Gold · Hall Lv1\"},\"3\":{\"path\":\"Players.iswhlaedev.PlayerGui.GuildborneUI.ManagementPanel.Content.Journal_city_gate.JournalProgress\",\"text\":\"Claimed · 1/1\"},\"2\":{\"path\":\"Players.iswhlaedev.PlayerGui.GuildborneUI.ManagementPanel.Content.Journal_city_gate.TextLabel\",\"text\":\"Reward: 15 Gold · 10 XP\"},\"5\":{\"path\":\"Players.iswhlaedev.PlayerGui.GuildborneUI.ManagementPanel.Content.Journal_stonework.TextLabel\",\"text\":\"Reward: 12 Gold · 10 XP\"},\"4\":{\"path\":\"Players.iswhlaedev.PlayerGui.GuildborneUI.ManagementPanel.Content.Journal_camp_threat.TextLabel\",\"text\":\"Reward: 30 Gold · 25 XP\"},\"7\":{\"path\":\"Players.iswhlaedev.PlayerGui.GuildborneUI.ManagementPanel.Content.Journal_first_ingot.TextLabel\",\"text\":\"Reward: 10 Gold · 10 XP\"},\"6\":{\"path\":\"Players.iswhlaedev.PlayerGui.GuildborneUI.ManagementPanel.Content.Journal_forge_foundation.TextLabel\",\"text\":\"Reward: 15 Gold · 10 XP\"},\"9\":{\"path\":\"Players.iswhlaedev.PlayerGui.GuildborneUI.ManagementPanel.Content.Journal_ready_for_battle.TextLabel\",\"text\":\"Reward: 10 Gold · 10 XP\"},\"8\":{\"path\":\"Players.iswhlaedev.PlayerGui.GuildborneUI.ManagementPanel.Content.Journal_field_outfit.TextLabel\",\"text\":\"Reward: 15 Gold · 15 XP\"},\"13\":{\"path\":\"Players.iswhlaedev.PlayerGui.CityNavigation.CityMap.TextLabel\",\"text\":\"Tap a district for directions. Gold dot: you. Follow streets around buildings.\"},\"12\":{\"path\":\"Players.iswhlaedev.PlayerGui.GuildborneUI.ManagementPanel.Content.Journal_spire_entry.TextLabel\",\"text\":\"Reward: 15 Gold · 15 XP\"},\"11\":{\"path\":\"Players.iswhlaedev.PlayerGui.GuildborneUI.ManagementPanel.Content.Journal_first_lesson.TextLabel\",\"text\":\"Reward: 10 Gold · 10 XP\"},\"10\":{\"path\":\"Players.iswhlaedev.PlayerGui.GuildborneUI.ManagementPanel.Content.Journal_growing_hall.TextLabel\",\"text\":\"Reward: 15 Gold · 10 XP\"}}"
+      }
+    ],
+    "isError": false
+  },
+  "end": {
+    "content": [
+      {
+        "type": "text",
+        "text": "{\"claimRemoved\":true,\"progress\":\"Claimed · 1/1\"}"
+      }
+    ],
+    "isError": false
+  }
+}
