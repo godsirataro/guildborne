@@ -40,8 +40,8 @@ Observed results:
   1366x768,1920x1080 reported TextFits=true for Thai Continue/Language/company text.
   These are constrained native Frames, NOT device-emulator or physical-device tests.
 
-Screenshots are actual796x675 Studio viewport captures: title-desktop-en.png,
-title-desktop-th.png, title-layout-360-th.png, component-gallery.png. The narrow
+Screenshots are actual796x675 Studio viewport captures: title-desktop-en.jpg,
+title-desktop-th.jpg, title-layout-360-th.jpg, component-gallery.jpg. The narrow
 capture shows a constrained360x568 Title above the gallery; it is not a phone photo.
 
 Caveats: an initial Tab injection did not establish SelectedObject. Explicit focus
@@ -64,3 +64,7 @@ physical touch/virtual keyboard, device performance, multiplayer, cross-server,
 human art/UAT and release remain pending. Asset IDs imported:none.
 Owner review of the reusable foundation/first screen precedes broad migration as
 specified in the supplied master prompt. No merge, publish or commerce activation.
+
+Independent evidence reviewer verified all20 artifact hashes, committed raw bytes,
+four receipts/eight streams and unchanged runtime source. Screenshot extensions
+were corrected to JPEG without altering image bytes returned by Studio.
