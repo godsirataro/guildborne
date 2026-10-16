@@ -1,0 +1,133 @@
+{
+  "schemaVersion": 1,
+  "status": "SOURCE_SELECTED_NOT_RUNTIME_IMPORTED",
+  "runtimeIds": {},
+  "images": [
+    {
+      "key": "panelBorder",
+      "path": "assets/production/ui-slice/panelBorder.png",
+      "width": 96,
+      "height": 96,
+      "sliceCenter": [
+        28,
+        28,
+        68,
+        68
+      ],
+      "recommendedSliceScale": 0.5,
+      "recommendedTint": "#DCB76B",
+      "sha256": "850f5107445a80df2872e59192ba67267f3a6beb323a2a3682d0ec48ac945bc9",
+      "bytes": 179,
+      "alphaBounds": [
+        0,
+        0,
+        96,
+        96
+      ],
+      "sourceArchive": "C:\\Work\\MySelf\\Guildborne\\docs\\Guildborne-Catalog-94\\kenney_fantasy-ui-borders.zip",
+      "sourceArchiveSha256": "59532da3bd61195a425585455b40baa6cbf1eda8227c42adcef31a535a737769",
+      "sourceMember": "PNG/Double/Border/panel-border-002.png",
+      "originalBytesUnmodified": true,
+      "license": "CC0-1.0",
+      "robloxAssetId": null,
+      "binding": "local Studio EditableImage via QualityAssetKey only; runtime fallback until approved import"
+    },
+    {
+      "key": "parchment",
+      "path": "assets/production/ui-slice/parchment.png",
+      "width": 100,
+      "height": 100,
+      "sliceCenter": [
+        16,
+        16,
+        84,
+        84
+      ],
+      "recommendedSliceScale": 1,
+      "recommendedTint": "#FFFFFF",
+      "sha256": "f2755c0e5cedb7b79d889d3770fd95bd13e2f82b12f21ffa239a7f762726c601",
+      "bytes": 785,
+      "alphaBounds": [
+        0,
+        0,
+        100,
+        100
+      ],
+      "sourceArchive": "C:\\Work\\MySelf\\Guildborne\\docs\\Guildborne-Catalog-94\\kenney_ui-pack-rpg-expansion.zip",
+      "sourceArchiveSha256": "c69c30c09d74df542842e4ec811735b6d260cd6c9e2ee261d7b894d259a6adb4",
+      "sourceMember": "PNG/panel_beigeLight.png",
+      "originalBytesUnmodified": true,
+      "license": "CC0-1.0",
+      "robloxAssetId": null,
+      "binding": "local Studio EditableImage via QualityAssetKey only; runtime fallback until approved import"
+    },
+    {
+      "key": "questIcon",
+      "path": "assets/production/ui-slice/questIcon.png",
+      "width": 100,
+      "height": 100,
+      "sliceCenter": null,
+      "recommendedSliceScale": 1,
+      "recommendedTint": "#DCB76B",
+      "sha256": "60faed6673976798a058071fade4861fa246638d9619a5bd261e93e766c69928",
+      "bytes": 15304,
+      "alphaBounds": [
+        42,
+        24,
+        58,
+        84
+      ],
+      "sourceArchive": "C:\\Work\\MySelf\\Guildborne\\docs\\Guildborne-Catalog-94\\kenney_game-icons.zip",
+      "sourceArchiveSha256": "7a86d8d58e0b851e22004b3c70bf90b003632bbf9ac633424daa3bb17d9e7e4e",
+      "sourceMember": "PNG/White/2x/exclamation.png",
+      "originalBytesUnmodified": true,
+      "license": "CC0-1.0",
+      "robloxAssetId": null,
+      "binding": "local Studio EditableImage via QualityAssetKey only; runtime fallback until approved import"
+    },
+    {
+      "key": "partyIcon",
+      "path": "assets/production/ui-slice/partyIcon.png",
+      "width": 100,
+      "height": 100,
+      "sliceCenter": null,
+      "recommendedSliceScale": 1,
+      "recommendedTint": "#DCB76B",
+      "sha256": "e9c3199ee5c296f438598bf3ee959ecc476ee07ea24463702c72ce2a5356f11b",
+      "bytes": 15819,
+      "alphaBounds": [
+        16,
+        28,
+        86,
+        76
+      ],
+      "sourceArchive": "C:\\Work\\MySelf\\Guildborne\\docs\\Guildborne-Catalog-94\\kenney_game-icons.zip",
+      "sourceArchiveSha256": "7a86d8d58e0b851e22004b3c70bf90b003632bbf9ac633424daa3bb17d9e7e4e",
+      "sourceMember": "PNG/White/2x/multiplayer.png",
+      "originalBytesUnmodified": true,
+      "license": "CC0-1.0",
+      "robloxAssetId": null,
+      "binding": "local Studio EditableImage via QualityAssetKey only; runtime fallback until approved import"
+    }
+  ],
+  "licenses": [
+    {
+      "path": "assets/production/ui-slice/licenses/fantasy-ui-borders.txt",
+      "sha256": "f7185bbb59c1a5dec131621e76bddde6855035224119927bba21f3b0bbc3ca83",
+      "sourceMember": "License.txt",
+      "sourceArchive": "kenney_fantasy-ui-borders.zip"
+    },
+    {
+      "path": "assets/production/ui-slice/licenses/ui-pack-rpg-expansion.txt",
+      "sha256": "c3d0753e9a4a0874a9985993eb4228d57e5b0cbf44159ea6cb1c794008a13544",
+      "sourceMember": "license.txt",
+      "sourceArchive": "kenney_ui-pack-rpg-expansion.zip"
+    },
+    {
+      "path": "assets/production/ui-slice/licenses/game-icons.txt",
+      "sha256": "68a86b3a620be3366d6dc28a4a8ffb8d5de12e0b86b5199c86e51fc617e29a49",
+      "sourceMember": "license.txt",
+      "sourceArchive": "kenney_game-icons.zip"
+    }
+  ]
+}

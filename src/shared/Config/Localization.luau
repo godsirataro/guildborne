@@ -1,6 +1,10 @@
 --!strict
 -- English source strings are stable keys; placeholders are shared by both languages.
 local thai: { [string]: string } = {
+	["Main quests"]="เควสหลัก",
+	["Side quests"]="เควสรอง",
+	["NPC quests"]="เควส NPC",
+	["Quest route unavailable. Keep tracking and follow the objective instructions."]="ยังระบุเส้นทางไม่ได้ ติดตามภารกิจไว้และทำตามคำแนะนำของเป้าหมาย",
 	["Party membership changed. Review the updated list and try again."]="สมาชิกปาร์ตี้มีการเปลี่ยนแปลง ตรวจรายชื่อล่าสุดแล้วลองอีกครั้ง",
 	["This party already has 6 players. Join another party or continue solo."]="ปาร์ตี้นี้มีผู้เล่นครบ 6 คนแล้ว เข้าปาร์ตี้อื่นหรือเล่นคนเดียวต่อได้",
 	["Only the party leader can do that. Ask your leader to help."]="เฉพาะหัวหน้าปาร์ตี้เท่านั้นที่ทำได้ ขอให้หัวหน้าปาร์ตี้ช่วยดำเนินการ",

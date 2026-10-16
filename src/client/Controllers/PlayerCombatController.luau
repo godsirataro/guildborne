@@ -11,6 +11,7 @@ local City=require(Replicated.Shared.Config.City)
 local MenuRouter=require(script.Parent.Parent.UI.MenuRouter)
 local MakePortrait=require(script.Parent.Parent.UI.ActorPortrait)
 local Layout=require(Replicated.Shared.Data.CombatHudLayout)
+local Chrome=require(script.Parent.Parent.UI.Components.CombatChrome)
 return function()
 	local connections: {RBXScriptConnection}={}
 	local function connect(signal: RBXScriptSignal,callback: any) table.insert(connections,signal:Connect(callback)) end
@@ -18,6 +19,7 @@ return function()
 	local remotes=Replicated:WaitForChild("GuildborneRemotes")
 	local remote=remotes:WaitForChild("CombatIntent") :: RemoteEvent
 	local language="en"
+	local heroNames: {[string]:string}={}
 	local status=""; local statusUntil=0
 	local gui=Instance.new("ScreenGui"); gui.Name="GuildbornePlayerCombatUI"; gui.ResetOnSpawn=false
 	gui.ScreenInsets=Enum.ScreenInsets.CoreUISafeInsets; gui.Parent=player:WaitForChild("PlayerGui")
@@ -26,6 +28,9 @@ return function()
 	health.BackgroundColor3=Art.UI.Background; health.TextColor3=Art.UI.Text; health.Font=Enum.Font.GothamMedium
 	health.TextSize=13; health.TextWrapped=true; health.Parent=gui
 	local corner=Instance.new("UICorner"); corner.Parent=health
+	Chrome.surface(health)
+	local selectedHealth=Chrome.health(health)
+	local healthPadding=Instance.new("UIPadding");healthPadding.PaddingBottom=UDim.new(0,7);healthPadding.Parent=health
 	local selectedId="player"
 	local companions: {[Model]: boolean}={}
 	local function observe(instance: Instance)
@@ -53,12 +58,14 @@ return function()
 	local cards: {TextButton}={}
 	local portraits: {any}={}
 	local cardLabels: {TextLabel}={}
+	local cardChrome: {any}={}
 	for index=1,6 do
 		local card=Instance.new("TextButton");card.Name="Actor"..index;card.Size=UDim2.fromOffset(138,44)
 		card.Position=UDim2.fromOffset(0,(index-1)*48);card.Font=Enum.Font.GothamMedium;card.TextSize=12;card.TextWrapped=true
 		card.TextColor3=Art.UI.Text;card.BackgroundColor3=Art.UI.Card;card.Parent=selection
 		Instance.new("UICorner",card)
 		card.Text="";table.insert(portraits,MakePortrait(card))
+		table.insert(cardChrome,Chrome.actor(card))
 		local label=Instance.new("TextLabel");label.Name="ActorLabel";label.BackgroundTransparency=1
 		label.Position=UDim2.fromOffset(44,0);label.Size=UDim2.new(1,-47,1,0);label.TextColor3=Art.UI.Text
 		label.Font=Enum.Font.GothamMedium;label.TextSize=11;label.TextWrapped=true;label.Parent=card;table.insert(cardLabels,label)
@@ -97,6 +104,8 @@ return function()
 	end
 	local basic=button("BasicAttack",0,"Basic")
 	local skills={button("Skill1",60,"Ability1"),button("Skill2",120,"Ability2"),button("Skill3",180,"Ability3")}
+	local basicChrome=Chrome.skill(basic,0)
+	local skillChrome={Chrome.skill(skills[1],1),Chrome.skill(skills[2],2),Chrome.skill(skills[3],3)}
 	local orders=Instance.new("ScrollingFrame");orders.Name="CompanionOrders";orders.AnchorPoint=Vector2.new(.5,1)
 	orders.CanvasSize=UDim2.fromOffset(660,0);orders.ScrollBarThickness=4;orders.ScrollingDirection=Enum.ScrollingDirection.X;orders.BorderSizePixel=0
 	orders.Size=UDim2.new(.9,0,0,44);orders.BackgroundTransparency=1;orders.Parent=gui
@@ -122,7 +131,11 @@ return function()
 		if code~="OK" then status=code; statusUntil=os.clock()+1.5 end
 	end);
 	connect((remotes:WaitForChild("State") :: RemoteEvent).OnClientEvent,function(view)
-		if view.data then language=view.data.language or "en" end
+		if view.data then
+			language=view.data.language or "en"
+			table.clear(heroNames)
+			for id,hero in pairs(view.data.adventurers or {}) do if type(hero.name)=="string" then heroNames[id]=hero.name end end
+		end
 	end)
 	local animated: Model?=nil
 	local joints: {Motor6D | AnimationConstraint}={}
@@ -194,25 +207,30 @@ return function()
 			b.BackgroundColor3=if c and (c:GetAttribute("CompanionOrder")==b.Name or "Tactic"..tostring(c:GetAttribute("TacticalPreset"))==b.Name) then Art.UI.Button else Art.UI.Card
 		end
 		for index,card in ipairs(cards) do
-			card.Size=UDim2.fromOffset(layout.cardWidth,44)
-			card.Position=if layout.collapsed then UDim2.fromOffset(0,0) elseif grid then UDim2.fromOffset(((index-1)%layout.columns)*(layout.cardWidth+6),math.floor((index-1)/layout.columns)*48) else UDim2.fromOffset(0,(index-1)*48)
+			card.Size=UDim2.fromOffset(layout.cardWidth,layout.cardHeight)
+			card.Position=if layout.collapsed then UDim2.fromOffset(0,0) elseif grid then UDim2.fromOffset(((index-1)%layout.columns)*(layout.cardWidth+6),math.floor((index-1)/layout.columns)*layout.cardStride) else UDim2.fromOffset(0,(index-1)*layout.cardStride)
 			local actor=if index==1 then player.Character else party[index-1]
 			local id=if index==1 then "player" elseif actor then actor:GetAttribute("AdventurerId") else nil
 			card.Visible=actor~=nil and (not layout.collapsed or id==selectedId);card:SetAttribute("ActorId",id)
 			card.BackgroundColor3=if id==selectedId then Art.UI.Button else Art.UI.Card
+			cardChrome[index].update(id==selectedId,index,actor and actor:GetAttribute("CombatHealth"),actor and actor:GetAttribute("CombatMaxHealth"))
 			-- Preserve two readable lines even in the three-column short-screen roster.
 			local narrow=layout.cardWidth<110
 			local portrait=card:FindFirstChildWhichIsA("ViewportFrame")
-			if portrait then portrait.Size=UDim2.fromOffset(if narrow then 26 else 38,if narrow then 26 else 38);portrait.Position=UDim2.fromOffset(3,if narrow then 9 else 3) end
-			cardLabels[index].Position=UDim2.fromOffset(if narrow then 32 else 44,0)
-			cardLabels[index].Size=UDim2.new(1,if narrow then -35 else -47,1,0)
+			local portraitSize=if layout.cardHeight>44 then 48 else if narrow then 26 else 32
+			if portrait then portrait.Size=UDim2.fromOffset(portraitSize,portraitSize);portrait.Position=UDim2.fromOffset(4,3) end
+			cardLabels[index].Position=UDim2.fromOffset(portraitSize+9,2)
+			cardLabels[index].Size=UDim2.new(1,-portraitSize-14,1,-11)
+			cardLabels[index].TextSize=if layout.cardHeight>44 then 13 else 11
+			cardLabels[index].TextTruncate=Enum.TextTruncate.AtEnd
 			if visible and card.Visible then portraits[index].update(actor) end
-			cardLabels[index].Text=(if index==1 then T("Player") else T(tostring(actor and actor:GetAttribute("ClassId") or "")))
+			cardLabels[index].Text=(if index==1 then (if layout.cardHeight>44 then player.DisplayName else T("Player")) else T(heroNames[tostring(id)] or tostring(actor and actor:GetAttribute("ClassId") or "")))
 				.."\n"..tostring(actor and actor:GetAttribute("CombatHealth") or "–").." HP"
 		end
 		basic.Text=T("Attack")..Bindings.hint("Basic",inputMode)
 		local alive=c~=nil and c:GetAttribute("ClassId")~=nil and (c:GetAttribute("CombatHealth") or 0)>0
 		basic.Active=alive;basic.Selectable=alive;basic.AutoButtonColor=alive
+		basicChrome.update(alive,0,true)
 		for slot,b in ipairs(skills) do
 			local name=c and c:GetAttribute("Skill"..slot.."Name")
 			local cd=if c then c:GetAttribute("Skill"..slot.."Cooldown") or 0 else 0
@@ -220,7 +238,9 @@ return function()
 			b.Active=alive and name~=nil and cd==0; b.Selectable=b.Active; b.AutoButtonColor=b.Active
 			b.BackgroundColor3=if b.Active then Art.UI.Button else Art.UI.Card
 			b.TextColor3=if name then Art.UI.Text else Art.UI.Muted
+			skillChrome[slot].update(b.Active,cd,name~=nil)
 		end
+		selectedHealth.update(c and c:GetAttribute("CombatHealth"),c and c:GetAttribute("CombatMaxHealth"))
 		if c and c:GetAttribute("ClassId") then
 			health.Text=T(tostring(c:GetAttribute("ClassPath") or c:GetAttribute("ClassId"))).." · Lv"..tostring(c:GetAttribute("Level")).." · HP "..tostring(c:GetAttribute("CombatHealth")).."/"..tostring(c:GetAttribute("CombatMaxHealth"))
 				.."\n"..(if os.clock()<statusUntil then T(status) elseif c:GetAttribute("CombatState")=="Downed" then T("Downed").." · "..T("Recovering at guild") elseif selectedId~="player" then T("Tactic"..tostring(c:GetAttribute("TacticalPreset") or "Balanced")).." · "..T(tostring(c:GetAttribute("TacticalReason") or "TacticFollowing")) else tostring(c:GetAttribute("XP")).." XP"..(if #party>0 and inputMode~="Touch" then " · "..T("Next hero")..Bindings.hint("Cycle",inputMode) else ""))

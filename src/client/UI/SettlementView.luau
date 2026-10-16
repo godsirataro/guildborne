@@ -1,48 +1,17 @@
 --!strict
 local Art=require(game.ReplicatedStorage.Shared.Config.Art)
-local Journal=require(game.ReplicatedStorage.Shared.Data.JournalViewState)
-local EmptyState=require(script.Parent.EmptyState)
+local MakeJournal=require(script.Parent.Components.JournalPane)
 local TavernState=require(game.ReplicatedStorage.Shared.Data.TavernViewState)
 return function(ui: any)
 	local T,card,text,button=ui.T,ui.card,ui.text,ui.button
-	local chosen="woodland";local team: {[string]:boolean}={};local confirm=false;local replaceOffer:string?=nil;local category="Main"
-	local journalFilter="All"
+	local chosen="woodland";local team: {[string]:boolean}={};local confirm=false;local replaceOffer:string?=nil
+	local drawJournal=MakeJournal(ui)
 	return function(tab: string,data: any,catalog: any,busy: boolean)
+		if tab=="Journal" then drawJournal(data,catalog,busy);return end
 		local s=data.settlement;local head=card(ui.scroll,tab)
 		if tab~="Tavern" or not s.offer or replaceOffer~=s.offer.id then replaceOffer=nil end
 		button(head,"Back to Guild",not busy,function() ui.navigate("Guild") end)
-		if tab=="Journal" then
-			local focused=ui.journalFocus and ui.journalFocus();if focused and catalog.Journal[focused] then category=catalog.Journal[focused].Category;journalFilter="All" end
-			text(head,"Main and NPC quests are completed personally. Only marked field jobs can be dispatched.",16)
-			button(head,T("Category")..": "..T(category),not busy,function() category=({Main="Side",Side="NPC",NPC="Main"})[category];ui.render(true) end)
-			local labels={All="All tasks",Available="Available",Active="Active",Ready="Ready to turn in",Claimed="Claimed"}
-			button(head,T("Quest view")..": "..T(labels[journalFilter]),not busy,function()
-				journalFilter=({All="Available",Available="Active",Active="Ready",Ready="Claimed",Claimed="All"})[journalFilter];ui.render(true)
-			end).Name="JournalFilter"
-			local visibleCount=0
-			for _,id in ipairs(catalog.JournalOrder) do local def=catalog.Journal[id];if def.Category~=category then continue end
-				local state=Journal.describe(data,catalog,id);if not Journal.matches(state,journalFilter) then continue end
-				visibleCount+=1
-				local task=s.journal[id];local f=card(ui.scroll,T(def.Name));f.Name="Journal_"..id;text(f,def.Description,16)
-				text(f,T("Reward")..": "..def.Gold.." Gold · "..def.XP.." XP",15)
-				if def.NPC then text(f,T("Visit {npc} in the city to accept and turn in this quest.",{npc=T(def.NPC)}),15) end
-				if task then
-					text(f,T(if state.ready then "Ready to turn in" else task.state).." · "..state.progress.."/"..def.Count,16).Name="JournalProgress"
-					if task.state=="Active" then button(f,if ui.isTracked(id) then "Stop tracking" else "Track quest",not busy,function() ui.trackQuest(id) end).Name="Track_"..id end
-					if task.state=="Active" then
-						if def.Item then text(f,"Required items are consumed when you claim this reward.",14) end
-						button(f,"Claim task reward",state.ready and not busy,function() ui.act("ClaimTask",{questId=id}) end).Name="Claim_"..id
-					end
-				else
-					local locked=state.locked
-					button(f,if state.releaseUnavailable then "Available after the Lv1–35 preview." elseif state.unavailable then "Regional encounters are not open yet." elseif locked then T("Complete {quest} first",{quest=T(catalog.Journal[def.Requires].Name)}) else "Accept quest",not busy and not locked,function() ui.act("AcceptTask",{questId=id}) end).Name="Accept_"..id
-				end
-			end
-			if visibleCount==0 then
-				EmptyState(ui.scroll,"no_quests",T)
-				if journalFilter~="All" then button(head,"Show all tasks",not busy,function() journalFilter="All";ui.render(true) end).Name="ResetJournalFilter" end
-			end
-		elseif tab=="Tavern" then
+		if tab=="Tavern" then
 			local state=TavernState(data,catalog,busy)
 			local atGuild=not ui.atGuild or ui.atGuild()
 			text(head,T("Tavern level")..": "..s.tavernLevel.." / "..catalog.Tavern.MaxLevel.." · "..T("Roster capacity")..": "..state.count.."/"..data.rosterCapacity,16)

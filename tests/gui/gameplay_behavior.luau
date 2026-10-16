@@ -1,0 +1,121 @@
+--!nocheck
+-- Executes actual GUI modules in the callback simulation; no pixel/layout claims.
+local UI=getfenv().UI
+local Journal=require(UI.Components.JournalPane)
+local Asset=require(UI.Components.QualityAsset)
+local Tracker=require(UI.QuestTrackerView)
+local passed=0
+local function test(name,run) run();passed+=1;print("PASS gameplay GUI "..name) end
+local function find(parent,name)
+ if parent.Name==name then return parent end
+ for _,child in ipairs(parent:GetChildren()) do local result=find(child,name);if result then return result end end
+ return nil
+end
+local function definition(id,extra)
+ local def={Name=id,Description="A real objective",Category="Main",Count=3,Gold=12,XP=9}
+ for k,v in pairs(extra or {}) do def[k]=v end
+ return def
+end
+local function fixture(defs,order,tasks,busy,focus)
+ local data={settlement={journal=tasks or {}},inventory={stacks={}}}
+ local catalog={Journal=defs,JournalOrder=order}
+ local calls,tracked={},{}
+ local ui={scroll=Instance.new("Frame"),T=function(value) return value end,language=function()return "en"end,
+  journalFocus=function() return focus end,isTracked=function()return false end,
+  trackQuest=function(id)table.insert(tracked,id)end,act=function(action,args)table.insert(calls,{action=action,args=args})end}
+ local draw=Journal(ui)
+ local function render()
+  ui.scroll:Destroy();ui.scroll=Instance.new("Frame");draw(data,catalog,busy)
+ end
+ ui.render=render
+ render()
+ return {ui=ui,data=data,catalog=catalog,calls=calls,tracked=tracked,render=render,destroy=function()ui.scroll:Destroy()end}
+end
+test("accept dispatches canonical intent and disabled busy guards remain closed",function()
+ local f=fixture({q=definition("q")},{"q"})
+ local accept=assert(find(f.ui.scroll,"Accept_q"));accept.Activated:Fire()
+ assert(#f.calls==1 and f.calls[1].action=="AcceptTask" and f.calls[1].args.questId=="q")
+ f.destroy();accept.Activated:Fire();assert(#f.calls==1)
+ local busy=fixture({q=definition("q")},{"q"},nil,true)
+ local blocked=find(busy.ui.scroll,"Accept_q");assert(not blocked.Active and not blocked.Selectable)
+ blocked.Activated:Fire();assert(#busy.calls==0);busy.destroy()
+end)
+test("prerequisite and release locks never dispatch acceptance",function()
+ local f=fixture({q=definition("q",{Requires="prior"}),prior=definition("prior")},{"q"})
+ local accept=find(f.ui.scroll,"Accept_q");assert(not accept.Active);accept.Activated:Fire();assert(#f.calls==0)
+ f.data.settlement.journal.prior={state="Claimed"};f.render();assert(find(f.ui.scroll,"Accept_q").Active)
+ f.catalog.ReleaseContent={BlockedTasks={q=true}};f.render()
+ accept=find(f.ui.scroll,"Accept_q");assert(not accept.Active);accept.Activated:Fire();assert(#f.calls==0);f.destroy()
+end)
+test("incomplete claim and busy ready claim stay disabled",function()
+ for _,scenario in ipairs({{progress=2,busy=false},{progress=3,busy=true}}) do
+  local f=fixture({q=definition("q")},{"q"},{q={state="Active",progress=scenario.progress}},scenario.busy)
+  local claim=assert(find(f.ui.scroll,"Claim_q"));assert(not claim.Active);claim.Activated:Fire();assert(#f.calls==0)
+  if scenario.busy then find(f.ui.scroll,"Track_q").Activated:Fire();assert(#f.tracked==0) end
+  f.destroy()
+ end
+end)
+test("ready claim uses server stock and never mutates inventory locally",function()
+ local f=fixture({q=definition("q",{Item="Herb"})},{"q"},{q={state="Active",progress=3}})
+ assert(not find(f.ui.scroll,"Claim_q").Active)
+ f.data.inventory.stacks.Herb=3;f.render()
+ local claim=find(f.ui.scroll,"Claim_q");assert(claim.Active);claim.Activated:Fire()
+ assert(#f.calls==1 and f.calls[1].action=="ClaimTask" and f.calls[1].args.questId=="q")
+ assert(f.data.inventory.stacks.Herb==3 and f.data.settlement.journal.q.state=="Active")
+ find(f.ui.scroll,"Track_q").Activated:Fire();assert(f.tracked[1]=="q");f.destroy()
+end)
+test("claimed tasks expose no accept or claim controls",function()
+ local f=fixture({q=definition("q")},{"q"},{q={state="Claimed"}})
+ assert(not find(f.ui.scroll,"Claim_q") and not find(f.ui.scroll,"Accept_q"))
+ assert(find(f.ui.scroll,"JournalProgress").Text=="Claimed  ·  3 / 3");f.destroy()
+end)
+test("empty category renders real empty-state and stale callbacks disconnect",function()
+ local f=fixture({q=definition("q")},{"q"})
+ local prior=find(f.ui.scroll,"Accept_q")
+ find(f.ui.scroll,"Category_Side").Activated:Fire()
+ assert(find(f.ui.scroll,"EmptyState_no_quests"));prior.Activated:Fire();assert(#f.calls==0);f.destroy()
+end)
+test("narrow journal selection and back change list-detail state",function()
+ local f=fixture({q=definition("q")},{"q"})
+ local body=find(f.ui.scroll,"JournalLayout");body.AbsoluteSize={X=390,Y=400};body:GetPropertyChangedSignal("AbsoluteSize"):Fire()
+ assert(find(f.ui.scroll,"QuestList").Visible and not find(f.ui.scroll,"Journal_q").Visible)
+ find(f.ui.scroll,"SelectQuest_q").Activated:Fire()
+ body=find(f.ui.scroll,"JournalLayout");body.AbsoluteSize={X=390,Y=400};body:GetPropertyChangedSignal("AbsoluteSize"):Fire()
+ assert(not find(f.ui.scroll,"QuestList").Visible and find(f.ui.scroll,"Journal_q").Visible)
+ find(f.ui.scroll,"JournalBackToList").Activated:Fire()
+ body=find(f.ui.scroll,"JournalLayout");body.AbsoluteSize={X=390,Y=400};body:GetPropertyChangedSignal("AbsoluteSize"):Fire()
+ assert(find(f.ui.scroll,"QuestList").Visible)
+ local size=body.Size;f.destroy();body:GetPropertyChangedSignal("AbsoluteSize"):Fire();assert(body.Size==size)
+end)
+test("asset key and slice metadata exist at parenting without runtime IDs",function()
+ local parent=Instance.new("Frame");local observed=0
+ local connection=parent.ChildAdded:Connect(function(child)
+  assert(type(child:GetAttribute("QualityAssetKey"))=="string" and child.Image=="")
+  if child:GetAttribute("QualityAssetKey")=="panelBorder" then assert(child.SliceCenter and child.ScaleType==Enum.ScaleType.Slice) end
+  observed+=1
+ end)
+ local border=Asset.create(parent,"panelBorder");local icon=Asset.create(parent,"questIcon")
+ assert(not border.Active and border.BackgroundTransparency==1 and icon.ScaleType==Enum.ScaleType.Fit and observed==2)
+ connection:Disconnect();parent:Destroy()
+end)
+test("tracker maps progress ready state availability and missing data",function()
+ local gui=Instance.new("ScreenGui");local tracker=Tracker(gui)
+ tracker.update({progress=2,count=4,ready=false},"Journal","Gather herbs",true)
+ local track=find(tracker.button,"TrackedProgress");local fill=track:GetChildren()[1]
+ assert(track.Visible and fill.Size[1]==.5 and tracker.button.Active and tracker.button.Selectable)
+ assert(find(tracker.button,"TrackerObjective").Text=="Gather herbs")
+ tracker.update({progress=8,count=4,ready=true},"Journal","Ready",false)
+ assert(fill.Size[1]==1 and not tracker.button.Active and not tracker.button.Selectable)
+ tracker.update(nil,"Journal","No objective",true);assert(not track.Visible and fill.Size[1]==0)
+ gui:Destroy()
+end)
+test("tracker resize responds before destruction and disconnects afterwards",function()
+ local gui=Instance.new("ScreenGui");gui.AbsoluteSize={X=1024,Y=768};local tracker=Tracker(gui)
+ assert(find(tracker.button,"TrackerHeading").Visible)
+ gui.AbsoluteSize={X=390,Y=844};gui:GetPropertyChangedSignal("AbsoluteSize"):Fire()
+ assert(not find(tracker.button,"TrackerHeading").Visible)
+ local position=tracker.button.Position;tracker.button:Destroy()
+ gui.AbsoluteSize={X=1366,Y=768};gui:GetPropertyChangedSignal("AbsoluteSize"):Fire()
+ assert(tracker.button.Position==position);gui:Destroy()
+end)
+print(passed.." gameplay GUI behavior tests passed (simulation only).")

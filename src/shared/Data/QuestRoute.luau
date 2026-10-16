@@ -1,10 +1,44 @@
 --!strict
 -- Read-only directions from public geometry and the projected quest state.
 return function(city:any,rules:any,waypoint:any,resolveMarker:any?)
- return function(quest:any,catalog:any,x:number,z:number):any
+ return function(quest:any,catalog:any,x:number,z:number,context:any?):any
   local region=city.region(x,z);local inCity=city.contains(x,z)
-  if not region and not inCity then return nil end
-  if inCity and quest and quest.kind=="Campaign" and quest.focus=="UpgradeGuildHall" then
+  local owned=context and context.island and context.playerId==context.island.ownerId
+  local inGuild=owned and context.inGuild==true
+  local function pointTarget(point:any,name:string,kind:string,final:boolean):any
+   if not point then return nil end
+   return {name=name,x=point.x,z=point.z,zone=point.zone or "Guild",kind=kind,final=final}
+  end
+  if not region and not inCity and not inGuild then return nil end
+  if quest and quest.kind=="CampaignComplete" then return nil end
+  local campaign=context and context.campaign
+  local objective=if quest and quest.kind=="Campaign" and campaign and campaign.ownerId==context.playerId and campaign.objective==quest.objective then campaign.point else nil
+  local needsIsland=quest and quest.kind=="Campaign" and (quest.focus=="UpgradeGuildHall" or (objective and objective.zone=="Guild"))
+  local def=quest and quest.id and catalog.Journal[quest.id]
+  local nodeId=def and def.Event and def.Event:match("^Gather:(.+)$")
+  local node=nodeId and rules.Nodes and rules.Nodes[nodeId]
+  if inGuild then
+   if needsIsland then
+    return pointTarget(if quest.focus=="UpgradeGuildHall" then context.island.hall else objective,if quest.focus=="UpgradeGuildHall" then "Guild Hall" else quest.name,"Objective",true)
+   end
+   local destination=objective and (objective.zone=="City" or city.Regions[objective.zone]~=nil)
+   if quest and def and (quest.kind=="Active" or quest.kind=="Available") then
+    destination=type(quest.npc)=="string" and waypoint.NPCs[quest.npc]~=nil
+    if quest.kind=="Active" and not quest.ready then
+     destination=destination or (node and city.Regions[node.Region]~=nil)
+     if not destination and catalog.RegionalCombatAvailable==true then
+      for _,area in ipairs(if catalog.Bestiary then catalog.Bestiary.Regions or {} else {})do
+       for _,enemy in ipairs(area.Entries)do
+        if type(def.Event)=="string" and enemy.QuestEvent==def.Event and city.Regions[area.Id] then destination=true end
+       end
+      end
+     end
+    end
+   end
+   if not destination then return nil end
+   return pointTarget(context.island.exit,"Central City","Portal",false)
+  end
+  if inCity and needsIsland then
    local best=nil;local distance=math.huge
    for _,id in ipairs({"Arrival","GuildDistrict","MarketDistrict","TowerDistrict"})do
     local stop=city.GuildPortalStops and city.GuildPortalStops[id]
@@ -12,10 +46,13 @@ return function(city:any,rules:any,waypoint:any,resolveMarker:any?)
    end
    if best then return {name=best.Name,x=best.X,z=best.Z,zone="City",kind="Portal",final=false}end
   end
-  if quest and quest.kind=="CampaignComplete" then return nil end
-  local def=quest and quest.id and catalog.Journal[quest.id]
-  local nodeId=def and def.Event and def.Event:match("^Gather:(.+)$")
-  local node=nodeId and rules.Nodes[nodeId]
+  if quest and quest.kind=="Campaign" and quest.focus~="UpgradeGuildHall" then
+   if not objective then return nil end -- Menu/order objectives have no world destination.
+   if objective.zone==(region or "City") then return pointTarget(objective,quest.name,"Objective",true) end
+   if inCity and city.Regions[objective.zone] then
+    return {name=objective.zone,x=0,z=city.Regions[objective.zone].CityGateZ,zone="City",kind="Portal",final=false}
+   end
+  end
   if quest and quest.kind=="Active" and not quest.ready and node and node.Region then
    if region==node.Region then
     local area=city.Regions[region]
