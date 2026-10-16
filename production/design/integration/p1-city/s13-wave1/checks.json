@@ -1,0 +1,56 @@
+{
+  "status": "LOCAL_ONLY_REVIEW",
+  "studio": "NOT_RUN",
+  "utc": "2026-10-16T07:10:08.974290+00:00",
+  "probeSha256": "645ec4603e0101eb5c8dbc988a82d88b478778b8d301a47240bae9fb84841e25",
+  "checks": [
+    {
+      "name": "compile",
+      "command": [
+        "C:/Work/MySelf/Guildborne/.tools/luau/luau-compile.exe",
+        "--null",
+        "tests\\studio_city_party_walk_probe.luau",
+        "tests/studio_central_city_services_probe.luau"
+      ],
+      "exitCode": 0,
+      "stdoutBase64": "Q29tcGlsZWQgMCBLTE9DIGludG8gMjMgS0IgYnl0ZWNvZGUgKHJlYWQgMC4wMXMsIHBhcnNlIDAuMDBzLCBjb21waWxlIDAuMDBzKQ0K",
+      "stderrBase64": ""
+    },
+    {
+      "name": "analyze",
+      "command": [
+        "C:/Work/MySelf/Guildborne/.tools/luau-lsp/luau-lsp.exe",
+        "analyze",
+        "--platform=roblox",
+        "--sourcemap=build/sourcemap.json",
+        "--definitions=C:/Work/MySelf/Guildborne/.tools/luau-lsp/globalTypes.d.luau",
+        "tests\\studio_city_party_walk_probe.luau",
+        "tests/studio_central_city_services_probe.luau"
+      ],
+      "exitCode": 0,
+      "stdoutBase64": "",
+      "stderrBase64": "W0lORk9dIExvYWRpbmcgZGVmaW5pdGlvbnMgZmlsZTogQHJvYmxveCAtIEM6L1dvcmsvTXlTZWxmL0d1aWxkYm9ybmUvLnRvb2xzL2x1YXUtbHNwL2dsb2JhbFR5cGVzLmQubHVhdQ0KW1dBUk5dIGNsaWVudCBkb2VzIG5vdCBhbGxvdyBkaWRDaGFuZ2VXYXRjaGVkRmlsZXMgcmVnaXN0cmF0aW9uIC0gYXV0b21hdGljIHVwZGF0aW5nIG9uIHNvdXJjZW1hcCBjaGFuZ2VzIGRpc2FibGVkDQo="
+    },
+    {
+      "name": "city-source-audit",
+      "command": [
+        "python",
+        "tools/verify_city_landscape.py"
+      ],
+      "exitCode": 0,
+      "stdoutBase64": "ew0KICAic3RhdHVzIjogIlBBU1MiLA0KICAic2NvcGUiOiAiZGV0ZXJtaW5pc3RpYyByZWNpcGUgYW5kIHByb2plY3RlZCBnZW9tZXRyeSBvbmx5IiwNCiAgInBhcnRzIjogMTU5OCwNCiAgImNvdW50cyI6IHsNCiAgICAiVHJ1bmsiOiA4NywNCiAgICAiQm91Z2giOiAyNjEsDQogICAgIk9ha0Nyb3duIjogNDM1LA0KICAgICJSb290QmVkIjogODcsDQogICAgIlVuZGVyc3RvcnkiOiAzOTQsDQogICAgIldpbGRmbG93ZXJzIjogMjE2LA0KICAgICJXZWF0aGVyZWRSb2NrIjogNDAsDQogICAgIkdyYXNzeUJlcm0iOiA2LA0KICAgICJTcHJpbmdCZWQiOiAyLA0KICAgICJTcHJpbmdXYXRlciI6IDIsDQogICAgIlNwcmluZ0JhbmsiOiAxNiwNCiAgICAiV2F0ZXJzaWRlUGxhbnQiOiAzMCwNCiAgICAiR2FyZGVuRmxhZ3N0b25lIjogMjINCiAgfSwNCiAgImNvbGxpc2lvblBhcnRzIjogMTMzLA0KICAicHJvdGVjdGVkUmVjdGFuZ2xlcyI6IDcyLA0KICAiaW5kZXBlbmRlbnRSb3V0ZVNhbXBsZXMiOiAxMTcyLA0KICAicGFydHlFbnZlbG9wZVJhZGl1c1N0dWRzIjogNiwNCiAgInBhdmVkU2VydmljZUFwcHJvYWNoU2FtcGxlcyI6IDEwOSwNCiAgImJyYW5jaEVuZHBvaW50Q2hlY2tzIjogNTIyLA0KICAibWF4QnJhbmNoRW5kcG9pbnRFcnJvclN0dWRzIjogMC4wMDAxMTc1NzAxNTEzOTQ5NzE4NSwNCiAgInN0dWRpb1Rlc3RlZCI6IGZhbHNlLA0KICAicGh5c2ljYWxEZXZpY2VUZXN0ZWQiOiBmYWxzZSwNCiAgImh1bWFuQXJ0QXBwcm92ZWQiOiBmYWxzZSwNCiAgInJlY2lwZVNoYTI1NiI6ICJjMDVmNjhlNmQyODgzZTIyNzgwYjJjNzIzZDI0NzE3MWUzZjY5MTlkZTdmYmE5OTc1YzgyYTY1NTkwZDJlZGU0Ig0KfQ0K",
+      "stderrBase64": ""
+    },
+    {
+      "name": "diff-check",
+      "command": [
+        "git",
+        "diff",
+        "--check"
+      ],
+      "exitCode": 0,
+      "stdoutBase64": "",
+      "stderrBase64": ""
+    }
+  ]
+}
