@@ -1,0 +1,13 @@
+{
+  "blenderProcessExited": true,
+  "logs": {
+    "assets\\production\\world-slice\\blender-final.log": {
+      "bytes": 7672,
+      "sha256": "d6b332f02d9233d70b0b20f7eb91f94d8a32e64355827fb4ed7ae7c3139fd9d7"
+    },
+    "assets\\production\\world-slice\\blender-run.log": {
+      "bytes": 7434,
+      "sha256": "7244e627956ef4f79ae11ea4d7bd9f6f8cbebef46d9ed4f784226abeb0caab6e"
+    }
+  }
+}

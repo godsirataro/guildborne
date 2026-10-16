@@ -1,0 +1,7 @@
+*.json -text whitespace=cr-at-eol
+*.txt -text -whitespace
+*.log -text -whitespace
+*.fbx binary
+*.blend binary
+*.glb binary
+*.png binary
