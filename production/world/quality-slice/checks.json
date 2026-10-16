@@ -1,0 +1,59 @@
+{
+  "utc": "2026-10-16T18:56:29.939932+00:00",
+  "checks": [
+    {
+      "command": [
+        "python",
+        "-m",
+        "py_compile",
+        "tools/build_world_slice.py",
+        "tools/blender_world_slice.py",
+        "tools/verify_world_slice.py"
+      ],
+      "exitCode": 0,
+      "stdoutBase64": "",
+      "stderrBase64": ""
+    },
+    {
+      "command": [
+        "python",
+        "tools/verify_world_slice.py"
+      ],
+      "exitCode": 0,
+      "stdoutBase64": "ew0KICAic3RhdHVzIjogIk9GRkxJTkVfR0VPTUVUUllfUEFTUyIsDQogICJtZXNoZXMiOiAyNywNCiAgInZlcnRpY2VzIjogMjcwMzYsDQogICJ0cmlhbmdsZXMiOiAzNjg2NywNCiAgInBsYWNlbWVudHMiOiA2OCwNCiAgImluc3RhbmNlZFRyaWFuZ2xlcyI6IDY4MTg1LA0KICAic3R1ZGlvVGVzdGVkIjogZmFsc2UNCn0NCg==",
+      "stderrBase64": ""
+    },
+    {
+      "command": [
+        "python",
+        "C:/Work/MySelf/Guildborne-controller/tools/import_quality_meshes.py",
+        "assets/production/world-slice/world-slice.mesh.json"
+      ],
+      "exitCode": 0,
+      "stdoutBase64": "ew0KICAibWVzaGVzIjogMjcsDQogICJ2ZXJ0aWNlcyI6IDI3MDM2LA0KICAidHJpYW5nbGVzIjogMzY4NjcsDQogICJwbGFjZW1lbnRzIjogNjgsDQogICJzb3VyY2VTaGEyNTYiOiAiYmM5OGU4Y2U4NTdjY2JkY2E1M2JjNDQ4NWI0ZDg1ZWEzOGM0ZTc2ZjIyNDhhYWMxMjEwOTc0YTA1Mzg3MTYyNiINCn0NCg==",
+      "stderrBase64": ""
+    },
+    {
+      "command": [
+        "git",
+        "diff",
+        "--check"
+      ],
+      "exitCode": 0,
+      "stdoutBase64": "",
+      "stderrBase64": ""
+    },
+    {
+      "command": [
+        "git",
+        "diff",
+        "--cached",
+        "--check"
+      ],
+      "exitCode": 0,
+      "stdoutBase64": "",
+      "stderrBase64": ""
+    }
+  ],
+  "studioTested": false
+}
