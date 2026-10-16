@@ -46,6 +46,24 @@ Generated output, import, Studio acceptance, hardware and human review are disti
 
 ## Forge tasks (these scopes apply only after a valid task claim)
 
+### gui-foundation: Regal GUI foundation and first-screen review candidate
+
+Bounded continuation of ux-system after fresh source audit and baseline at 42cb34b. Adopt user logo and ten visual references, build reusable native components and Title integration with actual profile bindings; preserve current runtime logic. Audit all 73 registry rows without acceptance promotion. Stop broad reskin for first-screen owner visual review. No asset upload, cloud writes or paid systems. Studio and device evidence remain separate.
+
+Environment: local; skill: guildborne-ux-native
+
+Write scopes: src/client/UI/DesignSystem, src/client/UI/Components, src/client/UI/TitleView.luau, production/ux/gui-foundation, design/guildborne-gui-production, tests/gui, tools/build_gui_review.py
+
+Required checks: source-contract, regression, independent-review
+
+Dependencies: none
+
+Path rule native-client: Native Roblox UI/presentation only. Send intent, never damage/value/rewards. Coordinate actual UI/Controller modules, EN/TH states and cleanup.
+
+Path rule tooling: Use reviewed bounded local commands/tests. Studio/Forge planners do not launch models; paid/model subprocess, MCP mutation and installation require actual authorization/capability.
+
+Path rule production-evidence: Reconcile latest goals/registries/scopes. One shared ledger, claim before writes, immediate lease check and preserved raw receipts. Different reviewer validates evidence; local checks cannot replace hardware/cloud/human gates.
+
 ### human-party-ui: Human Party Ui
 
 Native EN/TH human Party roster/invites separate from NPC Party; independent transient revision.

@@ -1,0 +1,10 @@
+PASS disabled and pending independently guard activation
+PASS external destruction disconnects callbacks
+PASS invalid and disabled tab selections preserve selected tab
+PASS missing and rejected logo IDs preserve live wordmark
+PASS logo loading toggles fallback without hiding subtitle
+PASS panel remains native when no uploaded slice is available
+PASS valid slice uses nested decoration and preserves supplied slice center
+PASS title waits for active profile and enters once on repeated Continue
+PASS title recovery hands off once and cleans preview
+PASS 9 simulated GUI behavior cases; Studio/device acceptance remains pending

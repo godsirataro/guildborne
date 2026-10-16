@@ -1,0 +1,120 @@
+{
+  "references": [
+    {
+      "path": "design/guildborne-gui-production/03_REFERENCES/00_OFFICIAL_GUILDBORNE_LOGO.png",
+      "source": "guildborne-logo-v1.png",
+      "sha256": "895ebf4476cd52f380d34f5651846119e92c1ee35938eb463410354ed48c03e7",
+      "bytes": 1706713,
+      "width": 1983,
+      "height": 793,
+      "role": "approved-source-logo",
+      "runtimeAssetId": null
+    },
+    {
+      "path": "design/guildborne-gui-production/03_REFERENCES/01_BRAND_UI_KIT.png",
+      "source": "codex-clipboard-b753a13a-4850-4496-8d7a-b8123fcda3d7.png",
+      "sha256": "94026d40fdea2713c4c918e80a5cd35cba4d18bbf2f30702649f9e4c8d687590",
+      "bytes": 3048411,
+      "width": 1672,
+      "height": 941,
+      "role": "visual-reference-only",
+      "runtimeAssetId": null
+    },
+    {
+      "path": "design/guildborne-gui-production/03_REFERENCES/02_LOADING_SCREEN.png",
+      "source": "codex-clipboard-a2f7703e-5b23-4a2f-9bf0-d6d718c6f2a1.png",
+      "sha256": "e5de450f132ea388015420fef33c772502768e122335b99fe40d6ced41e7e402",
+      "bytes": 3071905,
+      "width": 1672,
+      "height": 941,
+      "role": "visual-reference-only",
+      "runtimeAssetId": null
+    },
+    {
+      "path": "design/guildborne-gui-production/03_REFERENCES/03_MAIN_MENU.png",
+      "source": "codex-clipboard-b95b1783-5640-4c13-a15e-e77ba53ea7f9.png",
+      "sha256": "2fd8dfd743e78c19d64e840e32bdbefe547a8ee2e70d6a01543a2ba5cfc4c358",
+      "bytes": 3321205,
+      "width": 1672,
+      "height": 941,
+      "role": "visual-reference-only",
+      "runtimeAssetId": null
+    },
+    {
+      "path": "design/guildborne-gui-production/03_REFERENCES/04_WORLD_MAP.png",
+      "source": "codex-clipboard-bfadd763-ea91-4def-ac10-b8dcf4331236.png",
+      "sha256": "98c076f73916b5d277d2484dcf593d4fefcad107a1be99eff3bf7606b898c5aa",
+      "bytes": 3579315,
+      "width": 1672,
+      "height": 941,
+      "role": "visual-reference-only",
+      "runtimeAssetId": null
+    },
+    {
+      "path": "design/guildborne-gui-production/03_REFERENCES/05_CHARACTER_STATUS.png",
+      "source": "codex-clipboard-0357402c-efa6-47f3-90a4-d49cdab5475d.png",
+      "sha256": "c5d9ade5a55901f5a42b6f7270ed57508f4e5bdc7043ce0fec68ac88a9039b3e",
+      "bytes": 3201720,
+      "width": 1672,
+      "height": 941,
+      "role": "visual-reference-only",
+      "runtimeAssetId": null
+    },
+    {
+      "path": "design/guildborne-gui-production/03_REFERENCES/06_SKILL_TREE.png",
+      "source": "codex-clipboard-5a5b4c07-0974-47ed-b110-ad9f341a7d61.png",
+      "sha256": "2b63036d955856980cdee024eba103e74b65cb5a41906f4d56ce31319b61c29f",
+      "bytes": 2843662,
+      "width": 1672,
+      "height": 941,
+      "role": "visual-reference-only",
+      "runtimeAssetId": null
+    },
+    {
+      "path": "design/guildborne-gui-production/03_REFERENCES/07_INVENTORY_EQUIPMENT.png",
+      "source": "codex-clipboard-5a32a322-b288-49eb-a47a-4c384d53b4b9.png",
+      "sha256": "1ea1f7bdceb7bdab1b0209ca1fa6ddd1802a435475ccc53b6971571db100a0fc",
+      "bytes": 3069983,
+      "width": 1672,
+      "height": 941,
+      "role": "visual-reference-only",
+      "runtimeAssetId": null
+    },
+    {
+      "path": "design/guildborne-gui-production/03_REFERENCES/08_QUEST_JOURNAL.png",
+      "source": "codex-clipboard-acd085b7-0985-4efb-acb9-674503838b6f.png",
+      "sha256": "a5bba01d58f6631fa2661406bce78c642b5605e03b19b5b880dfaaf5b6c99505",
+      "bytes": 3041953,
+      "width": 1672,
+      "height": 941,
+      "role": "visual-reference-only",
+      "runtimeAssetId": null
+    },
+    {
+      "path": "design/guildborne-gui-production/03_REFERENCES/09_GUILD_MANAGEMENT.png",
+      "source": "codex-clipboard-6fbcaada-fe36-46e7-a31a-b00a4d361745.png",
+      "sha256": "2e2650a2a90f7fcb7306f84942438ecead20c36e95109ef19ad4ff48b6f20a2c",
+      "bytes": 2866508,
+      "width": 1672,
+      "height": 941,
+      "role": "visual-reference-only",
+      "runtimeAssetId": null
+    },
+    {
+      "path": "design/guildborne-gui-production/03_REFERENCES/10_SHOP_CRAFTING.png",
+      "source": "codex-clipboard-e69d9cd1-c530-4219-8699-625d325b9eba.png",
+      "sha256": "a0e534b1fd3bdaab73c74bdb0dbde9709b0a8d9460fe6a7438c288c2172009a3",
+      "bytes": 2947938,
+      "width": 1672,
+      "height": 941,
+      "role": "visual-reference-only",
+      "runtimeAssetId": null
+    }
+  ],
+  "promptSha256": "f0ecacef2825ee47571cb72ba92aca907bdba087dccb4818b7ef5b69792c2767",
+  "missingPackFiles": [
+    "02_SPECS/*",
+    "04_TRACKING/*"
+  ],
+  "note": "Standalone prompt and ten attachments supplied. No ZIP found. Logo bytes copied from existing user-approved v1; no generation/upload. Reference text and stats are not game authority."
+}

@@ -1,0 +1,21 @@
+{
+  "loading": {
+    "content": [
+      {
+        "type": "text",
+        "text": "{\"focusAfterReady\":\"Continue\",\"entered\":0,\"playActive\":false,\"languages\":0,\"text\":\"Loading your guild…\",\"languageActive\":false,\"ready\":false}"
+      }
+    ],
+    "isError": false
+  },
+  "recovery": {
+    "content": [
+      {
+        "type": "text",
+        "text": "{\"previewDestroyed\":true,\"hidden\":true,\"keyboardEntries\":1,\"totalEntries\":1}"
+      }
+    ],
+    "isError": false
+  },
+  "note": "Explicit MenuRouter.focusCurrent call tests existing focus owner; initial Tab injection did not establish focus. Physical keyboard/gamepad acceptance pending."
+}
