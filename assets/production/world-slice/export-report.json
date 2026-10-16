@@ -17,10 +17,10 @@
         ]
       ],
       "scale": 12.048716905656505,
-      "vertices": 6376,
-      "triangles": 6246,
+      "vertices": 12752,
+      "triangles": 21996,
       "materials": 8,
-      "chunks": 4,
+      "chunks": 11,
       "height": 30.0
     },
     {
@@ -38,10 +38,10 @@
         ]
       ],
       "scale": 9.84508679460224,
-      "vertices": 6003,
-      "triangles": 7162,
+      "vertices": 12006,
+      "triangles": 20670,
       "materials": 9,
-      "chunks": 4,
+      "chunks": 11,
       "height": 32.0
     },
     {
@@ -59,10 +59,10 @@
         ]
       ],
       "scale": 9.78175882085676,
-      "vertices": 3591,
-      "triangles": 4335,
+      "vertices": 7182,
+      "triangles": 12590,
       "materials": 10,
-      "chunks": 3,
+      "chunks": 7,
       "height": 28.0
     },
     {
@@ -318,15 +318,23 @@
       "height": 12.999999046325684
     }
   ],
-  "uniqueMeshChunks": 27,
-  "placements": 68,
-  "authoredObjects": 55,
-  "uniqueTriangles": 36867,
-  "instancedTriangles": 68185,
+  "uniqueMeshChunks": 45,
+  "placements": 103,
+  "authoredObjects": 72,
+  "uniqueTriangles": 74380,
+  "instancedTriangles": 114300,
   "runtimeIds": null,
   "studioTested": false,
   "humanApproved": false,
   "files": {
+    ".gitattributes": {
+      "bytes": 136,
+      "sha256": "722572d1611325952965878af99bac9774079e854cd4bc0fd764640b98566513"
+    },
+    "collision.json": {
+      "bytes": 220655,
+      "sha256": "f884975fcfaa960c5bc3e98eaf4818e6eef41f822318a8f43644cedcbc7b471d"
+    },
     "intake.json": {
       "bytes": 7929,
       "sha256": "cdf497bbe1bc6d1393d5c3782b0b045af27de955d5c01be92b68402a1a728561"
@@ -335,25 +343,29 @@
       "bytes": 364,
       "sha256": "83d8959f9fc56353ed571fbe2dc52e4bcd64508e2399501cd45ac2ce3df0bf8c"
     },
+    "source-orientation-audit.json": {
+      "bytes": 1462,
+      "sha256": "9d22695d585edc19e2c0f5f419cdddf5579e5f0b8522af450e495e86cc97eff5"
+    },
     "village-LICENSE.txt": {
       "bytes": 364,
       "sha256": "83d8959f9fc56353ed571fbe2dc52e4bcd64508e2399501cd45ac2ce3df0bf8c"
     },
     "woodland-threshold.blend": {
-      "bytes": 1004708,
-      "sha256": "b47b4d753f005d82099f241e7aa46975b19ed98d764503a5ef8567b100bdad03"
+      "bytes": 1745561,
+      "sha256": "8fe97a06c4334eb7aee869cfeddcbd6c38b3f1bda4b7de144acfa94239d61994"
     },
     "woodland-threshold.glb": {
-      "bytes": 2290588,
-      "sha256": "15964c002bcfe8b644f519256be3a2566a89f7bc9d8e84e2872865e3bbb41439"
+      "bytes": 4635880,
+      "sha256": "51b0cb9eaf861452673af6b24df87c0cf398677eeff50e8fa8ba3f4d698e9788"
     },
     "woodland-threshold.png": {
-      "bytes": 2202910,
-      "sha256": "69a76d331a55f5aaa1ab1c3582f4406f8c435e6ffe97244df9670937aa0947ef"
+      "bytes": 2166998,
+      "sha256": "70041d06fdb0e65936367223b9bd8b9c37fe50eb03e1783d0deab161bbcd9dc6"
     },
     "world-slice.mesh.json": {
-      "bytes": 1363709,
-      "sha256": "bc98e8ce857ccbdca53bc4485b4d85ea38c4e76f2248aac1210974a053871626"
+      "bytes": 3032314,
+      "sha256": "a6fed50575aa16a4572c8904bc312af9a0de64aa6332b9d532b548fbf9463d7d"
     }
   }
 }

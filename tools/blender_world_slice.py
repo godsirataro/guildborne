@@ -2,8 +2,8 @@
 No imported scripts, generators, network, upload or gameplay mutation.
 """
 from pathlib import Path
-import bpy, json, math, hashlib
-from mathutils import Vector
+import bpy, bmesh, json, math, hashlib
+from mathutils import Vector, Matrix
 
 ROOT=Path(__file__).resolve().parents[1];OUT=ROOT/'assets/production/world-slice'
 records=json.loads((OUT/'intake.json').read_text(encoding='utf-8'))
@@ -12,7 +12,7 @@ scene=bpy.context.scene
 library=bpy.data.collections.new('Curated_CC0_Library');scene.collection.children.link(library)
 composition=bpy.data.collections.new('Authored_Woodland_Threshold');scene.collection.children.link(composition)
 stage=bpy.data.collections.new('Preview_Only_Stage');scene.collection.children.link(stage)
-meshes=[];placements=[];templates={};metrics=[]
+meshes=[];placements=[];templates={};metrics=[];structural={};colliders=[]
 def srgb(v):return max(0,min(1,12.92*v if v<=.0031308 else 1.055*v**(1/2.4)-.055))
 def color(mat):
  c=mat.diffuse_color[:3] if mat else (.35,.35,.35)
@@ -35,10 +35,28 @@ for record in records:
  high=Vector([max(v[i] for v in points) for i in range(3)])
  center=Vector(((low.x+high.x)/2,(low.y+high.y)/2,low.z))
  scale=record['height']/max(.001,high.z-low.z) if record['height'] else 18/(high.x-low.x)
+ structural[record['id']]=[]
+ if record['id'] in ('stable','house','sawmill'):
+  for o in objects:
+   bm=bmesh.new();bm.from_mesh(o.data);bmesh.ops.recalc_face_normals(bm,faces=list(bm.faces));bm.to_mesh(o.data);bm.free()
+   o.data.calc_loop_triangles()
+   for tri in o.data.loop_triangles:
+    points=[(o.matrix_world@o.data.vertices[i].co-center)*scale for i in tri.vertices]
+    if (points[1]-points[0]).cross(points[2]-points[0]).length/2>15:
+     structural[record['id']].append(points)
+   # Source contains inconsistent/open wall and roof shells. A thin inward shell
+   # gives real back surfaces instead of relying on a double-sided render flag.
+   modifier=o.modifiers.new('Source_Surface_Thickness','SOLIDIFY');modifier.thickness=.003;modifier.offset=-1
+   evaluated=o.evaluated_get(bpy.context.evaluated_depsgraph_get())
+   fixed=bpy.data.meshes.new_from_object(evaluated,depsgraph=bpy.context.evaluated_depsgraph_get())
+   o.modifiers.clear();o.data=fixed
  vertices=[];triangles=[];colors=[];face_colors=[]
  for o in objects:
   offset=len(vertices);matrix=o.matrix_world.copy()
-  for v in o.data.vertices:vertices.append((matrix@v.co-center)*scale)
+  for v in o.data.vertices:
+   pos=(matrix@v.co-center)*scale
+   if record['id']=='path':pos.y*=.225
+   vertices.append(pos)
   o.data.calc_loop_triangles()
   for tri in o.data.loop_triangles:
    indices=[offset+i for i in tri.vertices]
@@ -90,28 +108,62 @@ for record in records:
  for o in imported:bpy.data.objects.remove(o,do_unlink=True)
 library.hide_render=True;library.hide_viewport=True
 by_id={r['id']:r for r in records}
-def place(asset,name,x,y,yaw=0,z=0):
+def terrain_height(world_z):return 2 if world_z>=1380 else 6 if world_z<=1355 else 2+(1380-world_z)*.16
+def collision_part(name,kind,size,center,rotation=None):
+ r=rotation or Matrix.Identity(3)
+ colliders.append(dict(name=name,kind=kind,size=[round(v,6) for v in size],cframe=[round(v,6) for v in center]+[round(r[i][j],8) for i in range(3) for j in range(3)]))
+def collision_triangle(name,a,b,c):
+ # Split on the longest side into two exact right triangular prisms. Roblox
+ # WedgePart has its high edge at local +Z; normals are irrelevant to collision.
+ pairs=[(a,b,c),(b,c,a),(c,a,b)];a,b,c=max(pairs,key=lambda p:(p[2]-p[1]).length_squared)
+ axis=(c-b).normalized();foot=b+axis*(a-b).dot(axis);height=(a-foot).length
+ if height<.05:return
+ up=(a-foot).normalized()
+ for i,end in enumerate((b,c)):
+  length=(end-foot).length
+  if length<.05:continue
+  back=-(end-foot).normalized();right=up.cross(back).normalized()
+  rotation=Matrix((right,up,back)).transposed()
+  collision_part(name+f'_{i}','WedgePart',(.06,height,length),(a+end)/2,rotation)
+def place(asset,name,x,y,yaw=0,z=None,pitch=0):
+ if z is None:z=terrain_height(1410-y)-2
  obj=templates[asset].copy();obj.data=templates[asset].data;composition.objects.link(obj);obj.name=name
- obj.location=(x,y,z);obj.rotation_euler.z=math.radians(yaw)
- theta=math.radians(yaw);c=round(math.cos(theta),8);s=round(math.sin(theta),8)
+ obj.location=(x,y,z);obj.rotation_euler=(pitch,0,math.radians(yaw))
+ theta=math.radians(yaw);c=round(math.cos(theta),8);s=round(math.sin(theta),8);cp=math.cos(pitch);sp=math.sin(pitch)
  # Explicit Greenwood art-preview placement, not a new travel destination.
- cf=[x,z+2,1410-y,c,0,s,0,1,0,-s,0,c]
+ cf=[x,z+2,1410-y,c,s*sp,s*cp,0,cp,-sp,-s,c*sp,c*cp]
  for mid in by_id[asset]['chunks']:placements.append(dict(meshId=mid,name=name+'_'+mid,cframe=cf,scale=[1,1,1]))
+ if structural[asset]:
+  rot=Matrix((cf[3:6],cf[6:9],cf[9:12]));offset=Vector(cf[:3])
+  for i,tri in enumerate(structural[asset]):
+   world=[offset+rot@Vector((v.x,v.z,-v.y)) for v in tri]
+   collision_triangle(name+f'_SourceSurface_{i}',*world)
  return obj
 # A legible lived-in street opens into an older forest threshold. Architecture remains
 # outside a 20-stud center aisle; curated silhouettes replace procedural cube art.
-place('stable','Caravan_Stable',-35,-38,90)
-place('house','Gatekeepers_House',34,-32,-90)
-place('sawmill','Woodcutters_Lodge',-41,20,90)
+place('stable','Caravan_Stable',-40,-80,90)
+place('house','Gatekeepers_House',36,-68,-90)
+place('sawmill','Woodcutters_Lodge',-90,20,90)
 place('cart','Arrival_Cart',-18,-62,15)
 place('cart','Timber_Cart',-23,1,-25)
 for i,(x,y) in enumerate([(-22,-40),(-25,-43),(22,-32),(24,-35),(-24,23)]):place('barrel',f'Provision_Barrel_{i}',x,y)
-for i,y in enumerate([-80,-46,-12,22,56,90]):place('path',f'Worn_Causeway_{i}',0,y)
+path_top=max(v.co.z for v in templates['path'].data.vertices)
+for i,wz in enumerate(list(range(1507,1382,-8))+[1376,1368,1360]+[1351,1343,1335,1327]):
+ slope=math.atan(.16) if 1355<wz<1380 else 0
+ place('path',f'Worn_Causeway_{i}',0,1410-wz,z=terrain_height(wz)-2+.08-path_top,pitch=slope)
+# Preserve native ramp/court collision; add a thin continuous road support following
+# those same heights. This does not relocate any encounter or portal.
+collision_part('ArrivalStreet','Part',(18,.16,64.5),(0,2,1412.25))
+collision_part('ArrivalStreetSouth','Part',(18,.16,64.5),(0,2,1476.75))
+collision_part('ForestRoad','Part',(18,.16,35),(0,6,1337.5))
+collision_part('StableApron','Part',(44,.2,60),(-40,1.9,1490))
 place('arch','Old_Greenwood_Arch',0,30)
 place('ruin_wall','Ivy_Wall_West',-24,34,8)
 place('ruin_wall','Ivy_Wall_East',24,38,180)
 place('stag','Forest_Warden_Stag',23,59,-25)
-place('bridge','Old_Stone_Crossing',0,65)
+bridge_top=max(v.co.z for v in templates['bridge'].data.vertices)
+place('bridge','Old_Stone_Crossing',0,65,z=6.08-2-bridge_top)
+collision_part('StoneCrossingDeck','Part',(18,.16,15.54),(0,6,1345))
 place('bridge_support','Crossing_Foundation_West',-10,65,z=-9)
 place('bridge_support','Crossing_Foundation_East',10,65,z=-9)
 for i,(x,y,yaw) in enumerate([(-20,-67,0),(20,-64,0),(-20,-54,0),(20,-51,0),(-20,48,0),(20,44,0)]):place('fence',f'Roadside_Fence_{i}',x,y,yaw)
@@ -121,6 +173,20 @@ for i,(x,y) in enumerate([(-18,48),(19,53),(-28,60),(27,78),(-19,85),(20,94),(-4
 # Reusable library and real composed GLB; preview base/lights do not enter game geometry.
 packet=dict(schemaVersion=1,coordinateSystem='RobloxYUp',units='studs',pivot='asset XZ centered; minY=0; chunks share asset pivot',previewWorldOrigin=[0,2,1410],meshes=meshes,placements=placements,runtimeImported=False,compositionOnly=True)
 (OUT/'world-slice.mesh.json').write_text(json.dumps(packet,separators=(',',':'))+'\n',encoding='utf-8')
+mesh_lookup={m['id']:m for m in meshes}
+art_contract=[]
+for p in placements:
+ bounds=mesh_lookup[p['meshId']]['bounds'];center=Vector([(a+b)/2 for a,b in zip(bounds['min'],bounds['max'])])
+ cf=p['cframe'];r=Matrix((cf[3:6],cf[6:9],cf[9:12]));position=Vector(cf[:3])+r@center
+ art_contract.append(dict(name=p['name'],meshId=p['meshId'],position=[round(v,5) for v in position],rotation=cf[3:]))
+collision_data=dict(schemaVersion=1,sourceMeshSha256=hashlib.sha256((OUT/'world-slice.mesh.json').read_bytes()).hexdigest(),expectedArtNames=[p['name'] for p in placements],expectedArt=art_contract,minArtPlacements=len(placements),colliders=colliders)
+(OUT/'collision.json').write_text(json.dumps(collision_data,indent=2)+'\n',encoding='utf-8')
+def luau(value):
+ if isinstance(value,str):return json.dumps(value)
+ if isinstance(value,(int,float)):return repr(value)
+ if isinstance(value,list):return '{'+','.join(luau(v) for v in value)+'}'
+ return '{'+','.join('['+json.dumps(k)+']='+luau(v) for k,v in value.items())+'}'
+(ROOT/'src/server/Services/WorldQualityAssets.luau').write_text('--!strict\n-- Generated source-derived static collision; opt-in only.\nreturn '+luau(collision_data)+'\n',encoding='utf-8')
 bpy.ops.object.select_all(action='DESELECT')
 for o in composition.objects:o.select_set(True)
 bpy.context.view_layer.objects.active=next(iter(composition.objects))
@@ -134,14 +200,15 @@ def stage_cube(name,location,scale,rgb,bevel=0):
  mat.node_tree.nodes['Principled BSDF'].inputs['Roughness'].default_value=.9;o.data.materials.append(mat)
  if bevel:m=o.modifiers.new('Soft display edge','BEVEL');m.width=bevel;m.segments=3
  return o
-stage_cube('PREVIEW_ONLY_Ground',(0,12,-2),(145,205,4),(.13,.21,.12),3)
+stage_cube('PREVIEW_ONLY_Ground',(-12,0,-2),(205,245,4),(.13,.21,.12),3)
+stage_cube('PREVIEW_ONLY_BossCourt',(0,80,2),(96,50,4),(.13,.21,.12))
 stage_cube('PREVIEW_ONLY_Stream',(0,65,.04),(135,8,.08),(.045,.24,.26))
 world=bpy.data.worlds.new('Woodland_Morning');scene.world=world;world.use_nodes=True
 world.node_tree.nodes['Background'].inputs[0].default_value=(.15,.21,.26,1);world.node_tree.nodes['Background'].inputs[1].default_value=.45
 bpy.ops.object.light_add(type='SUN',location=(0,0,100));sun=bpy.context.object;sun.rotation_euler=(math.radians(28),math.radians(-22),math.radians(-30));sun.data.energy=2.2;sun.data.angle=.12;link_only(sun,stage)
 bpy.ops.object.light_add(type='AREA',location=(0,-30,120));light=bpy.context.object;light.data.energy=18000;light.data.shape='DISK';light.data.size=100;link_only(light,stage)
 bpy.ops.object.camera_add(location=(155,-215,180));camera=bpy.context.object
-camera.rotation_euler=(Vector((0,15,10))-camera.location).to_track_quat('-Z','Y').to_euler();camera.data.type='ORTHO';camera.data.ortho_scale=255;scene.camera=camera;link_only(camera,stage)
+camera.rotation_euler=(Vector((-10,0,10))-camera.location).to_track_quat('-Z','Y').to_euler();camera.data.type='ORTHO';camera.data.ortho_scale=295;scene.camera=camera;link_only(camera,stage)
 scene.render.engine='CYCLES';scene.cycles.samples=32;scene.cycles.use_denoising=True
 scene.render.resolution_x=1400;scene.render.resolution_y=1400;scene.render.resolution_percentage=100
 scene.render.image_settings.file_format='PNG';scene.view_settings.view_transform='AgX'

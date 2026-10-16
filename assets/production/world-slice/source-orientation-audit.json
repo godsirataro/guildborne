@@ -1,0 +1,80 @@
+[
+  {
+    "asset": "stable",
+    "object": "Stable",
+    "determinant": 1.0,
+    "faces": 3107,
+    "recalculatedFlipCount": 125,
+    "materials": [
+      "Beige",
+      "Wood",
+      "Wood_Side",
+      "Stone_Dark",
+      "RoofTiles",
+      "Windows",
+      "Wood_Light",
+      "Stone_Light"
+    ]
+  },
+  {
+    "asset": "house",
+    "object": "House_2",
+    "determinant": 1.0,
+    "faces": 3569,
+    "recalculatedFlipCount": 14,
+    "materials": [
+      "Beige",
+      "Wood",
+      "Stone_Dark",
+      "Windows",
+      "Wood_Light",
+      "RoofTiles",
+      "Stone_Light",
+      "Wood_Side",
+      "Stone"
+    ]
+  },
+  {
+    "asset": "sawmill",
+    "object": "Sawmill",
+    "determinant": 1.0,
+    "faces": 2114,
+    "recalculatedFlipCount": 2,
+    "materials": [
+      "RoofTiles_Red",
+      "Plaster",
+      "Wood_Side",
+      "Wood_Side",
+      "DarkWood",
+      "Metal",
+      "Windows",
+      "Wood",
+      "Wood_Light",
+      "Stone_Dark",
+      "Stone_Light"
+    ]
+  },
+  {
+    "asset": "arch",
+    "object": "Arch_Round",
+    "determinant": 1.0,
+    "faces": 1484,
+    "recalculatedFlipCount": 0,
+    "materials": [
+      "Main",
+      "Black",
+      "Highlights"
+    ]
+  },
+  {
+    "asset": "bridge",
+    "object": "BridgeSection",
+    "determinant": 1.0,
+    "faces": 926,
+    "recalculatedFlipCount": 0,
+    "materials": [
+      "Main",
+      "Highlights"
+    ]
+  }
+]
