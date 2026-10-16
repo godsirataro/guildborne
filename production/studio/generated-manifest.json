@@ -30,7 +30,7 @@
     ".claude/agents/technical-director.md": "59df40f4c103ee55e75b74385148d4931e74c19dc15d8037690f106aec7e6fa2",
     ".claude/agents/tools-engineer.md": "cf62b23c42f9d3d9e4a250516341aaf43787e97114a4682be0eae3eddef83272",
     ".claude/agents/ui-artist.md": "ddf56ca4d49a9bec265e8736c4f9eeaee258449089c006c2a3bf9a5cf2c2f1e1",
-    ".claude/agents/ui-designer.md": "edfe554b815d528841936f92cd249e96cbbc3d052cab6654aa26dda3715c8435",
+    ".claude/agents/ui-designer.md": "c6cc2c4950e506f3656e9ca750a9b3795860d87fe62f7902fcfad827c1a290ad",
     ".claude/agents/vfx-artist.md": "565f1933a8b9a697af3aab4534d233ba7a11a2e95e175fe2766b914e1acf79a8",
     ".claude/agents/world-builder.md": "266e7b462b48eaaaf901817f8bafce3f49ffbb345102c641c02eca03336a5065",
     ".claude/skills/guildborne-adopt/SKILL.md": "82d6401ceb6c9b7f4cbc041e7d8d8d2be4458a4add598234f7f48e075c773770",
@@ -94,10 +94,10 @@
     ".codex/agents/technical-director.toml": "b58bd8f3a0557ff9732661097ef8300053abea031e5bdddd3a71c0b6da6ca472",
     ".codex/agents/tools-engineer.toml": "a50fa31555059899ff10f98146020038a5b087ec4e90160934040d6855e3fd39",
     ".codex/agents/ui-artist.toml": "2c964f88eb549a08ad72def6f054f5dde7ef47fc47765c3d3b7f4bfd5d8fafc7",
-    ".codex/agents/ui-designer.toml": "cfbf09a33f4753f1ac48434c76e7dcc381e67df1417906f95974d6b186442a0c",
+    ".codex/agents/ui-designer.toml": "4b6ca33781ea4d387593bc04d8bd4d05708b3d3424af1c53918052f919f114db",
     ".codex/agents/vfx-artist.toml": "7e8f71504b37d57399b6274c4d164288fea6394e32526a6f3f5541615207bd05",
     ".codex/agents/world-builder.toml": "b871b4aa75fd79b5df71624a8f382e2cd34e49cb1b1d082a0de87473bfd4ce81",
-    "production/studio/catalog.json": "1757675027105874dd10ae1fa6b83dc69895560cc95e29ab95fb0bfa12c201be"
+    "production/studio/catalog.json": "2df2b5dbb8f7449a983c80ccb79bf1669d061b56579044f6914634ea7dcb581c"
   },
   "schemaVersion": 1,
   "sources": {
@@ -134,11 +134,11 @@
       ".agents/skills/guildborne-war-territory/SKILL.md": "82ad7a43eed0c84aee078c803fcceaac8401fb87a6b82c176847fa8e6ded247d",
       ".agents/skills/guildborne-world/SKILL.md": "ace43994879321dd5197ba01d7944ea072496cb230985b51c5e50c1a71c7c4e1",
       "AGENTS.md": "a593dfabad72ff1fe02d59a8e25630c3eb555d22965588f4840ecbd3365b454c",
-      "production/plan.json": "688e6882fad1a537e682b347235efdc817ef6704beff3e4cc5e38117b289be55",
-      "production/studio/studio.json": "d0b6c272c93334737139eb56432af84795d8585fd45aad359ba07b116d8af666",
+      "production/plan.json": "3a02faefe3700a0deba464f6d60767c6fdb0fd242530bff7125c43ac3e388a15",
+      "production/studio/studio.json": "40a1d1406426b1d66c95184b0ecfcb9ac01fcad47495d3cf833642e200999a83",
       "tools/agentic/studio.py": "9bf0a3e2ce4230648eb4f8d4af8e7250527510d17a23f0080c0dfd3548a7a7c5"
     },
-    "planSha256": "6aa483fc1505fa10991890b5de7a9db2f2297b9423386130474ffb333c070e86",
-    "specSha256": "e912b45aaf456a7e87dbdc9f82a3603f3c8fa98b040079a235dbc40ed33fc446"
+    "planSha256": "ada4051fc71a4ce45c07f05b1e2423d7f96897802a0527aeffce468616253859",
+    "specSha256": "69cd406d02289aa39d8b616404b576a20e073923c643069bcbf5e5da6e4d046b"
   }
 }

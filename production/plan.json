@@ -1379,6 +1379,28 @@
       ],
       "title": "Adapt AI ecosystem to existing GL2 production",
       "brief": "Map supplied NEONSHIFT ecosystem concepts to existing Guildborne GL2/RPG roles and pipelines. Verify actual tool access and optional host skills, wire CI contract checks, preserve game source and release gates."
+    },
+    {
+      "id": "gui-foundation",
+      "skill": "guildborne-ux-native",
+      "environment": "local",
+      "dependsOn": [],
+      "writeScopes": [
+        "src/client/UI/DesignSystem",
+        "src/client/UI/Components",
+        "src/client/UI/TitleView.luau",
+        "production/ux/gui-foundation",
+        "design/guildborne-gui-production",
+        "tests/gui",
+        "tools/build_gui_review.py"
+      ],
+      "checks": [
+        "source-contract",
+        "regression",
+        "independent-review"
+      ],
+      "title": "Regal GUI foundation and first-screen review candidate",
+      "brief": "Bounded continuation of ux-system after fresh source audit and baseline at 42cb34b. Adopt user logo and ten visual references, build reusable native components and Title integration with actual profile bindings; preserve current runtime logic. Audit all 73 registry rows without acceptance promotion. Stop broad reskin for first-screen owner visual review. No asset upload, cloud writes or paid systems. Studio and device evidence remain separate."
     }
   ],
   "deferredCapabilities": [
