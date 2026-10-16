@@ -2,6 +2,18 @@
 
 This is an incomplete two-round program checkpoint, not all-world acceptance.
 
+## Studio follow-up after explicit target confirmation
+
+The Central reference loop now has bounded real Studio physics evidence:
+20 five-hero segments, 1,277 samples, all three service buildings entered/exited,
+no additional recovery, and 29 service assertions passed. Actual-player automated
+navigation and Tavern/Crafting prompt activation also ran. See the
+[Studio report and raw evidence](../../design/integration/p1-city/world-connectivity/studio/REPORT.md).
+The initial legacy offline build failed on missing ReleaseContent; the existing
+dynamic Memory builder produced the successful candidate. Earlier pending/no-open-
+place statements below describe initial preflight only. Neither whole-world
+completion nor device/human acceptance follows from this result.
+
 ## Recorded candidate
 
 Code/test candidate: `e842d009385158f3b48e4d02af0fc0d961735cbf`.

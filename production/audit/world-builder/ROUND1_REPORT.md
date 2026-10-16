@@ -2,6 +2,12 @@
 
 Status: INCOMPLETE / REVIEW ONLY. Source audit covers every requested row; this is not completion of world connectivity.
 
+Update: after user confirmation, the Central reference synthetic five-hero loop
+passed in real Studio physics (20 segments, 1,277 samples), along with 29 city
+service assertions and actual-player automated navigation/prompt checks. See
+EVIDENCE_INDEX.md. Other rows and full earned journeys remain pending. Statements
+below about no open place record initial preflight, not current Central evidence.
+
 Existing travel graph contains City, Guild, three regional surfaces and six civic districts. Chapter previews and private courts add conditional paths. Fixed landings and server ownership are preserved. Central City route changes are delegated to p1-city-services; final implementation/check results belong in the coordinator evidence index.
 
 Current-run Studio acceptance is pending: coordinator reports Studio MCP is connected but no place is open. No player walk, five-companion route, respawn, charter unlock, NPC interaction, escort, floor or arena claim is made here. Historical FRESH_FINALE_PROGRESS documents an ordinary-input Memory Chapter00-06 run, with later isolated fixes recorded separately.
