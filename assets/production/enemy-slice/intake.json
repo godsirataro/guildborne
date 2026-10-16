@@ -1,0 +1,202 @@
+{
+  "schema": 1,
+  "source": "https://quaternius.com/packs/ultimatemonsters.html",
+  "license": "CC0-1.0",
+  "archiveSha256": "61d7144dd8dfa05433e43c48cf3c68edd0a92be218fd29623114056654a79181",
+  "licenseNote": "Archive license header says Ultimate Platformer Pack; pack-specific author page confirms Ultimate Monsters CC0.",
+  "status": "SOURCE_INSPECTED_NOT_IMPORTED",
+  "assets": [
+    {
+      "id": "greenwood_scout",
+      "sourceName": "Tribal",
+      "archiveMember": "Ultimate Monsters/Big/glTF/Tribal.gltf",
+      "sha256": "ffe686b0f0e7a2fb968ea9829358f059df903d2a60c9a94bd3516b1c3d42b7c4",
+      "sourceFile": "source/Tribal.gltf",
+      "role": "Melee",
+      "runtimeAssetId": null,
+      "studioImported": false,
+      "primitives": [
+        {
+          "vertices": 4792,
+          "triangles": 6620,
+          "maxInfluences": 4
+        }
+      ],
+      "jointCount": 43,
+      "clips": [
+        {
+          "name": "Death",
+          "seconds": 0.7666666507720947,
+          "channels": 84
+        },
+        {
+          "name": "Duck",
+          "seconds": 1.6666666269302368,
+          "channels": 84
+        },
+        {
+          "name": "HitReact",
+          "seconds": 0.6000000238418579,
+          "channels": 84
+        },
+        {
+          "name": "Idle",
+          "seconds": 1.0,
+          "channels": 84
+        },
+        {
+          "name": "Jump",
+          "seconds": 0.36666667461395264,
+          "channels": 84
+        },
+        {
+          "name": "Jump_Idle",
+          "seconds": 0.5,
+          "channels": 84
+        },
+        {
+          "name": "Jump_Land",
+          "seconds": 0.36666667461395264,
+          "channels": 84
+        },
+        {
+          "name": "No",
+          "seconds": 1.6666666269302368,
+          "channels": 84
+        },
+        {
+          "name": "Punch",
+          "seconds": 0.8666666746139526,
+          "channels": 84
+        },
+        {
+          "name": "Run",
+          "seconds": 0.5666666626930237,
+          "channels": 82
+        },
+        {
+          "name": "Walk",
+          "seconds": 1.0,
+          "channels": 82
+        },
+        {
+          "name": "Wave",
+          "seconds": 1.6666666269302368,
+          "channels": 84
+        },
+        {
+          "name": "Weapon",
+          "seconds": 0.8666666746139526,
+          "channels": 84
+        },
+        {
+          "name": "Yes",
+          "seconds": 1.6666666269302368,
+          "channels": 84
+        }
+      ],
+      "vertices": 4792,
+      "triangles": 6620
+    },
+    {
+      "id": "forest_captain",
+      "sourceName": "Monkroose",
+      "archiveMember": "Ultimate Monsters/Big/glTF/Monkroose.gltf",
+      "sha256": "4e984e22bef1a49da0ff92154f5747d3e61997637937532bc066867f08e8e719",
+      "sourceFile": "source/Monkroose.gltf",
+      "role": "Boss",
+      "runtimeAssetId": null,
+      "studioImported": false,
+      "primitives": [
+        {
+          "vertices": 3495,
+          "triangles": 5824,
+          "maxInfluences": 4
+        }
+      ],
+      "jointCount": 43,
+      "clips": [
+        {
+          "name": "Death",
+          "seconds": 0.7666666507720947,
+          "channels": 84
+        },
+        {
+          "name": "Duck",
+          "seconds": 1.6666666269302368,
+          "channels": 84
+        },
+        {
+          "name": "HitReact",
+          "seconds": 0.6000000238418579,
+          "channels": 84
+        },
+        {
+          "name": "Idle",
+          "seconds": 1.0,
+          "channels": 84
+        },
+        {
+          "name": "Jump",
+          "seconds": 0.36666667461395264,
+          "channels": 84
+        },
+        {
+          "name": "Jump_Idle",
+          "seconds": 0.5,
+          "channels": 84
+        },
+        {
+          "name": "Jump_Land",
+          "seconds": 0.36666667461395264,
+          "channels": 84
+        },
+        {
+          "name": "No",
+          "seconds": 1.6666666269302368,
+          "channels": 84
+        },
+        {
+          "name": "Punch",
+          "seconds": 0.8666666746139526,
+          "channels": 84
+        },
+        {
+          "name": "Run",
+          "seconds": 0.5666666626930237,
+          "channels": 82
+        },
+        {
+          "name": "Walk",
+          "seconds": 1.0,
+          "channels": 82
+        },
+        {
+          "name": "Wave",
+          "seconds": 1.6666666269302368,
+          "channels": 84
+        },
+        {
+          "name": "Weapon",
+          "seconds": 0.8666666746139526,
+          "channels": 84
+        },
+        {
+          "name": "Yes",
+          "seconds": 1.6666666269302368,
+          "channels": 84
+        }
+      ],
+      "vertices": 3495,
+      "triangles": 5824
+    }
+  ],
+  "License.txt": {
+    "sha256": "de990ef6fc68cffd7fd1ae342c4d0c823b541b8848d8f76bca5d3339f4de6f6e",
+    "archiveMember": "Ultimate Monsters/License.txt"
+  },
+  "Atlas_Monsters.png": {
+    "sha256": "b970ed1359ce749fd81a8395d58ff5f3044d843213e17fb94b97892d417c0af9",
+    "archiveMember": "Ultimate Monsters/Atlas_Monsters.png"
+  }
+}

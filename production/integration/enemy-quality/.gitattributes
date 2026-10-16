@@ -1,0 +1,2 @@
+# Raw subprocess streams are evidence, including original Windows line endings.
+*.log -text whitespace=cr-at-eol
