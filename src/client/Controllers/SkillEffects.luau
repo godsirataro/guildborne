@@ -109,10 +109,13 @@ return function()
 	local function warriorCast(model: Model,aim: CFrame,target: Vector3,color: Color3,wide: boolean)
 		local hand=model:FindFirstChild("RightHand") or model:FindFirstChild("Right Arm")
 		local charge=if hand and hand:IsA("BasePart") then hand.Position else aim.Position+aim.RightVector
+		local age=workspace:GetServerTimeNow()-(model:GetAttribute("ActionAt") :: number)
+		if age<Timeline.Release then
 		make(V(.8,.8,.8),CFrame.new(charge),color,Enum.PartType.Ball,.1,{Size=V(.12,.12,.12),Transparency=.7})
 		for i=1,3 do
 			local a=i*math.pi*2/3;local p=charge+V(math.cos(a)*1.5,.5,math.sin(a)*1.5)
 			make(V(.12,.12,.5),CFrame.lookAt(p,charge),color,Enum.PartType.Block,.1,{Position=charge,Transparency=1})
+		end
 		end
 		-- Release coincides with ActionPose's .10–.24 second swing.
 		atMarker(model,Timeline.Release,function()
@@ -122,6 +125,12 @@ return function()
 				local trail=Instance.new("Trail");trail.Name="GuildborneCastTrail";trail.Attachment0=a;trail.Attachment1=b
 				trail.FaceCamera=true;trail.Lifetime=.18;trail.LightEmission=.45;trail.Color=ColorSequence.new(white,color)
 				trail.WidthScale=NumberSequence.new(1,0);trail.Transparency=NumberSequence.new(.08,1);trail.Parent=hand
+				local stamp=model:GetAttribute("ActionAt")
+				local expires=os.clock()+.5
+				task.spawn(function()
+					while trail.Parent and alive(model) and model:GetAttribute("ActionAt")==stamp and os.clock()<expires do task.wait(.03) end
+					trail:Destroy();a:Destroy();b:Destroy()
+				end)
 				task.delay(.18,function() if trail.Parent then trail.Enabled=false end end)
 				Debris:AddItem(trail,.5);Debris:AddItem(a,.5);Debris:AddItem(b,.5)
 			end
@@ -162,7 +171,9 @@ return function()
 			make(V(.15,.6,.15),CFrame.new(target+V(0,2.7,0)),color,Enum.PartType.Block,.4,{Position=target+V(0,3.1,0),Transparency=1},.2,"Primary")
 		elseif class=="Warrior" then
 			local cf=aim*CFrame.new(0,.3,-2)*CFrame.Angles(0,0,-.6)
-			make(V(3.4,.16,.25),cf,color,Enum.PartType.Block,.22,{CFrame=cf+aim.LookVector*2,Size=V(1,.04,.08),Transparency=1},.2,"Primary")
+			atMarker(model,Timeline.Release,function()
+				make(V(3.4,.16,.25),cf,color,Enum.PartType.Block,.22,{CFrame=cf+aim.LookVector*2,Size=V(1,.04,.08),Transparency=1},.2,"Primary")
+			end)
 			atMarker(model,Timeline.Contact,function() make(V(.15,1.3,.15),CFrame.new(target)*CFrame.Angles(0,0,.7),white,Enum.PartType.Block,.18,{Size=V(.04,2,.04),Transparency=1},.2,"Primary") end)
 		else
 			if length>.1 then make(if class=="Archer" then V(.12,.12,2.4) else V(.85,.85,.85),CFrame.lookAt(source,target),color,if class=="Mage" then Enum.PartType.Ball else Enum.PartType.Block,.18,{Position=target,Transparency=.35},.15,"Primary") end
@@ -285,9 +296,7 @@ return function()
 		end
 		if not alive(model) then return end
 		local stamp=model:GetAttribute("ActionAt")
-		if typeof(stamp)=="number" then
-			if not Timeline.active(workspace:GetServerTimeNow()-stamp) or lastStamp[model]==stamp then return end
-		end
+		if not Timeline.accept(stamp,workspace:GetServerTimeNow(),lastStamp[model]) then return end
 		local now=os.clock();if lastCast[model] and now-lastCast[model]<.1 then return end;lastCast[model]=now
 		if typeof(stamp)=="number" then lastStamp[model]=stamp end
 		generations[model]=(generations[model] or 0)+1

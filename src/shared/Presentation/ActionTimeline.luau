@@ -7,6 +7,12 @@ end
 function T.active(age: number): boolean
 	return finite(age) and age >= 0 and age <= T.Duration
 end
+-- Only a new, live server timestamp may start presentation. Missing/reordered
+-- observations cannot manufacture another cast; this never authorizes damage.
+function T.accept(stamp: any, now: number, previous: number?): boolean
+	return typeof(stamp)=="number" and finite(stamp) and finite(now)
+		and T.active(now-stamp) and (previous==nil or stamp>previous)
+end
 function T.phase(age: number): string
 	if not T.active(age) then return "Idle" end
 	if age < T.Release then return "Anticipation" end
