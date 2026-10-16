@@ -86,7 +86,7 @@ test("title waits for active profile and enters once on repeated Continue",funct
  h.update({status="Loading",data={language="en"}})
  play.Activated:Fire();language.Activated:Fire();assert(entered==0 and languages==0)
  h.update({status="Active",data={language="th",progression={novice={claimed=0}}}})
- assert(play.Text=="เริ่มเส้นทางนักผจญภัย")
+ assert(play.Text=="เริ่มผจญภัย")
  language.Activated:Fire();assert(languages==1)
  play.Activated:Fire();play.Activated:Fire();assert(entered==1 and not h.isOpen())
  find(parent,"TitleScreen"):GetPropertyChangedSignal("Visible"):Fire()
@@ -139,20 +139,47 @@ test("Title scene remains intentional without heroes and bounds decorative geome
   assert(part.Anchored and not part.CanCollide and not part.CanTouch and not part.CanQuery)
   count+=1
  end
- assert(count>0 and count<=60)
+ assert(count>0 and count<=160)
+ local viewport=find(parent,"CitadelDiorama")
+ assert(viewport.BackgroundTransparency==1 and find(parent,"DuskSky") and find(parent,"SettingSun"))
  local scroll=find(parent,"TitleContent")
  local story=find(parent,"YourCompany");local controls=find(parent,"EntryControls")
- controls.AbsoluteSize={X=220,Y=380};story.AbsoluteSize={X=400,Y=464}
+ controls.AbsoluteSize={X=220,Y=304};story.AbsoluteSize={X=400,Y=372}
  for _,width in ipairs({320,680,1280}) do
   scroll.AbsoluteSize={X=width,Y=600};scroll:GetPropertyChangedSignal("AbsoluteSize"):Fire()
   local rail=find(parent,"EntryRail")
-  assert(rail.Size[4]==416)
+  assert(rail.Size[4]==340)
   assert(rail.Size[1]==(if width<680 then 1 else .35))
-  assert(story.Position[4]==(if width<680 then 440 else 0))
+  assert(story.Position[4]==(if width<680 then 364 else 0))
  end
  h.update({status="Active",data={language="th",progression={novice={claimed=0}}}})
  assert(find(parent,"ChapterHeading").Font==Enum.Font.GothamMedium)
  assert(find(parent,"CitadelDiorama").Visible)
+ local camera=viewport.CurrentCamera
+ parent:Destroy()
+ local oldTransform=camera.CFrame
+ viewport:GetPropertyChangedSignal("AbsoluteSize"):Fire()
+ assert(camera.CFrame==oldTransform)
+end)
+test("short Title reserves room for controls and uses single-line localized actions",function()
+ local parent=Instance.new("ScreenGui");local h=Title(parent,function() end,function() end)
+ local scroll=find(parent,"TitleContent");local controls=find(parent,"EntryControls")
+ controls.AbsoluteSize={X=199,Y=304};find(parent,"YourCompany").AbsoluteSize={X=400,Y=312}
+ for _,width in ipairs({264,680,740}) do
+  scroll.AbsoluteSize={X=width,Y=494};scroll:GetPropertyChangedSignal("AbsoluteSize"):Fire()
+  assert(find(parent,"GuildborneHeader").Size[4]==112)
+  assert(find(parent,"CompanyStage").Size[4]==220)
+  -- Header + list gap + complete control rail fits the mocked short viewport.
+  assert(112+12+find(parent,"EntryRail").Size[4]<=494)
+ end
+ for _,language in ipairs({"en","th"}) do
+  h.update({status="Active",data={language=language,progression={novice={claimed=0}}}})
+  for _,name in ipairs({"Continue","Language","Settings","Credits"}) do
+   local button=find(parent,name)
+   assert(button.TextScaled and not button.TextWrapped)
+  end
+  assert(find(parent,"Language").Text==(if language=="en" then "Language: EN" else "ภาษา: ไทย"))
+ end
  parent:Destroy()
 end)
 print("PASS "..passed.." simulated GUI behavior cases; Studio/device acceptance remains pending")

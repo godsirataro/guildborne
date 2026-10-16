@@ -8,16 +8,17 @@ local Header = {}
 function Header.create(parent: Instance, options: Options?)
 	local opts: Options = options or {}
 	local frame = Instance.new("Frame")
-	frame.Name = "GuildborneHeader"; frame.Size = opts.size or UDim2.new(1, 0, 0, 180)
+	frame.Name = "GuildborneHeader"; frame.Size = opts.size or UDim2.new(1, 0, 0, 124)
 	frame.BackgroundTransparency = 1; frame.Parent = parent
 	local nativeBrand = Instance.new("Frame")
-	nativeBrand.Name = "NativeBrandFallback"; nativeBrand.Size = UDim2.new(1, 0, 1, -38)
+	nativeBrand.Name = "NativeBrandFallback"; nativeBrand.Size = UDim2.new(1, 0, 1, -30)
 	nativeBrand.BackgroundTransparency = 1; nativeBrand.Active = false; nativeBrand.Parent = frame
 	local crest = Ornament.crest(nativeBrand)
 	crest.AnchorPoint = Vector2.new(.5, 0); crest.Position = UDim2.new(.5, 0, 0, 0)
+	local crestScale = Instance.new("UIScale"); crestScale.Scale = .68; crestScale.Parent = crest
 	local wordmark = Instance.new("TextLabel")
-	wordmark.Name = "LiveWordmark"; wordmark.Size = UDim2.new(1, -24, 1, -60)
-	wordmark.Position = UDim2.fromOffset(12, 54); wordmark.BackgroundTransparency = 1
+	wordmark.Name = "LiveWordmark"; wordmark.Size = UDim2.new(1, -24, 1, -38)
+	wordmark.Position = UDim2.fromOffset(12, 32); wordmark.BackgroundTransparency = 1
 	wordmark.Font = Theme.Fonts.Heading; wordmark.Text = "GUILDBORNE"; wordmark.TextSize = 52
 	wordmark.TextStrokeColor3 = Theme.Colors.GoldShadow; wordmark.TextStrokeTransparency = .15
 	wordmark.TextColor3 = Theme.Colors.Text; wordmark.TextWrapped = false; wordmark.Parent = nativeBrand
@@ -33,10 +34,10 @@ function Header.create(parent: Instance, options: Options?)
 	gem.Name = "BrandGem"; gem.AnchorPoint = Vector2.new(.5, .5); gem.Position = UDim2.new(.5, 0, 1, -3)
 	gem.Size = UDim2.fromOffset(6, 6); gem.Rotation = 45; gem.BackgroundColor3 = Theme.Colors.Gold; gem.BorderSizePixel = 0; gem.Active = false; gem.Parent = nativeBrand
 	local subtitle = Instance.new("TextLabel")
-	subtitle.Name = "Subtitle"; subtitle.Position = UDim2.new(0, 12, 1, -38); subtitle.Size = UDim2.new(1, -24, 0, 34)
+	subtitle.Name = "Subtitle"; subtitle.Position = UDim2.new(0, 12, 1, -28); subtitle.Size = UDim2.new(1, -24, 0, 28)
 	subtitle.BackgroundTransparency = 1; subtitle.Font = Theme.Fonts.Body; subtitle.TextSize = 16
 	subtitle.TextColor3 = Theme.Colors.Text; subtitle.TextWrapped = true; subtitle.Text = opts.subtitle or ""; subtitle.Parent = frame
-	local logo = AssetImage.create(frame, opts.logoId or Assets.Logo, UDim2.new(1, -24, 1, -38))
+	local logo = AssetImage.create(frame, opts.logoId or Assets.Logo, UDim2.new(1, -24, 1, -30))
 	local connections: {RBXScriptConnection} = {}
 	if logo then
 		logo.Name = "GuildborneLogo"; logo.AnchorPoint = Vector2.new(.5, 0); logo.Position = UDim2.new(.5, 0, 0, 0)
@@ -48,11 +49,11 @@ function Header.create(parent: Instance, options: Options?)
 	local function responsive()
 		local compact = if compactOverride ~= nil then compactOverride else frame.AbsoluteSize.X < 420
 		-- The fixed Latin wordmark uses a built-in serif; Thai subtitle keeps the body font.
-		wordmark.TextSize = if compact then 32 else 52
-		wordmark.Position = UDim2.fromOffset(12, if compact then 48 else 54)
-		wordmark.Size = UDim2.new(1, -24, 1, if compact then -52 else -60)
+		wordmark.TextSize = if compact then 32 else if frame.AbsoluteSize.Y < 120 then 44 else 52
+		wordmark.Position = UDim2.fromOffset(12, 32)
+		wordmark.Size = UDim2.new(1, -24, 1, -38)
 		crest.Size = UDim2.fromOffset(120, 64)
-		subtitle.TextSize = if compact then 15 else 16
+		subtitle.TextSize = if compact then 12 else 14
 	end
 	table.insert(connections, frame:GetPropertyChangedSignal("AbsoluteSize"):Connect(responsive))
 	local function cleanup() for _, connection in ipairs(connections) do connection:Disconnect() end; table.clear(connections) end

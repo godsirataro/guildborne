@@ -46,9 +46,9 @@ function Runtime.environment()
  end
  local function vector(x, y, z)
   return setmetatable({X = x, Y = y, Z = z, Magnitude = math.sqrt(x*x+y*y)}, {
-   __mul=function(a,b) return vector(a.X*b,a.Y*b) end,
-   __sub=function(a,b) return vector(a.X-b.X,a.Y-b.Y) end,
-   __add=function(a,b) return vector(a.X+b.X,a.Y+b.Y) end,
+   __mul=function(a,b) return vector(a.X*b,a.Y*b,if a.Z then a.Z*b else nil) end,
+   __sub=function(a,b) return vector(a.X-b.X,a.Y-b.Y,if a.Z and b.Z then a.Z-b.Z else nil) end,
+   __add=function(a,b) return vector(a.X+b.X,a.Y+b.Y,if a.Z and b.Z then a.Z+b.Z else nil) end,
   })
  end
  local function color(r, g, b)
@@ -65,10 +65,11 @@ function Runtime.environment()
  function actions:UnbindAction(name) self.bindings[name] = nil end
  local input = {focused = nil}
  function input:GetFocusedTextBox() return self.focused end
+ local function transform(...) return setmetatable({...},{__mul=function(a,b) return {a,b} end}) end
  return {
   Services = {ContextActionService=actions,UserInputService=input,GuiService={MenuIsOpen=false}},
   Instance = {new = new}, Enum = enum,
-  CFrame = {lookAt = function(a,b) return {a,b} end},
+  CFrame = {lookAt = function(a,b) return {a,b} end,new=transform,Angles=transform},
   ColorSequence = {new = function(...) return {...} end},
   Color3 = {new = color, fromRGB = function(r,g,b) return color(r/255,g/255,b/255) end},
   Vector2 = {new = vector}, Vector3 = {new = vector},
