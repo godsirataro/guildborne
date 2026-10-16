@@ -1,0 +1,3 @@
+# Preserve source/export bytes so recorded SHA256 survives clone and integration.
+* -text whitespace=cr-at-eol
+source/** -diff
