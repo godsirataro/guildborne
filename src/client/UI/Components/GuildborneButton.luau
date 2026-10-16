@@ -1,5 +1,6 @@
 --!strict
 local Theme = require(script.Parent.Parent.DesignSystem.Theme)
+local Ornament = require(script.Parent.RegalOrnament)
 export type Options = { name: string?, text: string?, size: UDim2?, primary: boolean?, onActivated: (() -> ())? }
 export type Handle = { button: TextButton, setDisabled: (boolean) -> (), setPending: (boolean) -> (), setSelected: (boolean) -> (), destroy: () -> () }
 local Button = {}
@@ -14,10 +15,26 @@ function Button.create(parent: Instance, options: Options?): Handle
 	local gradient = Instance.new("UIGradient")
 	gradient.Color = ColorSequence.new(Color3.new(1, 1, 1), Color3.fromRGB(182, 177, 177)); gradient.Rotation = 90; gradient.Parent = button
 	local padding = Instance.new("UIPadding")
-	padding.PaddingLeft = UDim.new(0, 14); padding.PaddingRight = UDim.new(0, 14); padding.Parent = button
-	local corner = Instance.new("UICorner"); corner.CornerRadius = UDim.new(0, 4); corner.Parent = button
+	padding.PaddingLeft = UDim.new(0, if opts.primary then 30 else 18); padding.PaddingRight = padding.PaddingLeft; padding.Parent = button
+	local corner = Instance.new("UICorner"); corner.CornerRadius = UDim.new(0, 2); corner.Parent = button
 	local border = Instance.new("UIStroke")
 	border.ApplyStrokeMode = Enum.ApplyStrokeMode.Border; border.Parent = button
+	local inset = Instance.new("Frame")
+	inset.Name = "ButtonBevel"; inset.BackgroundTransparency = 1; inset.Position = UDim2.fromOffset(4, 4)
+	inset.Size = UDim2.new(1, -8, 1, -8); inset.Active = false; inset.Parent = button
+	local innerRim = Instance.new("UIStroke"); innerRim.Color = Theme.Colors.GoldShadow; innerRim.Parent = inset
+	local accent: Frame? = nil
+	if opts.primary then
+		local ornaments = Instance.new("Frame"); ornaments.Name = "PrimaryOrnaments"; ornaments.Size = UDim2.fromScale(1, 1)
+		ornaments.BackgroundTransparency = 1; ornaments.Active = false; ornaments.Parent = button
+		accent = ornaments
+		Ornament.corner(ornaments, UDim2.fromOffset(0, 0), 0, true)
+		Ornament.corner(ornaments, UDim2.new(1, -32, 1, -32), 180, true)
+		local seal = Instance.new("Frame")
+		seal.Name = "ActionMedallion"; seal.AnchorPoint = Vector2.new(.5, .5)
+		seal.Position = UDim2.new(1, -13, .5, 0); seal.Size = UDim2.fromOffset(7, 7); seal.Rotation = 45
+		seal.BorderSizePixel = 0; seal.BackgroundColor3 = Theme.Colors.GoldLight; seal.Active = false; seal.Parent = ornaments
+	end
 	local mark = Instance.new("Frame")
 	mark.Name = "SelectedMark"; mark.AnchorPoint = Vector2.new(.5, 1); mark.Position = UDim2.fromScale(.5, 1)
 	mark.Size = UDim2.new(1, -24, 0, 3); mark.BorderSizePixel = 0; mark.BackgroundColor3 = Theme.Colors.Gold; mark.Parent = button
@@ -31,8 +48,11 @@ function Button.create(parent: Instance, options: Options?): Handle
 		local base = if opts.primary or selected then Theme.Colors.Primary else Theme.Colors.Surface
 		button.BackgroundColor3 = if not enabled then Theme.Colors.Surface else if pressed then base:Lerp(Color3.new(0, 0, 0), .22) else if hovered or focused then base:Lerp(Theme.Colors.Gold, .13) else base
 		button.TextColor3 = if enabled then Theme.Colors.Text else Theme.Colors.Muted
+		innerRim.Color = if enabled then Theme.Colors.Gold else Theme.Colors.Border
+		innerRim.Transparency = if enabled then .5 else .8
+		if accent then accent.Visible = enabled end
 		border.Color = if focused and enabled then Theme.Colors.Focus else Theme.Colors.Gold
-		border.Thickness = if focused and enabled then 2 else 1
+		border.Thickness = if focused and enabled then 3 else if opts.primary then 2 else 1
 		border.Transparency = if enabled then (if selected or hovered or focused then 0 else .3) else .7
 		mark.Visible = selected
 	end
