@@ -9,17 +9,19 @@ import import_quality_meshes
 
 ROOT=Path(__file__).resolve().parents[1]
 
-def build(sources, launch=False, shared_combat=False, world=False, images=None, enemies=None):
+def build(sources, launch=False, shared_combat=False, world=False, images=None, enemies=None, bind_enemies=False):
+    if bind_enemies and not enemies:
+        raise ValueError('Enemy binding requires reviewed enemy datasets')
     build_integration_preview.build(launch, shared_combat)
     variant='launch' if launch else 'integration'
     out=ROOT/'build'
     project=json.loads((out/f'{variant}-preview.project.json').read_text())
     base=json.loads((out/f'{variant}-sync/sources.json').read_text())
     project['name']='Guildborne_QualityPreview'
-    folder={'$className':'Folder','$attributes':{'IsolatedMemory':True,'EnableWorldSlice':world}}
+    folder={'$className':'Folder','$attributes':{'IsolatedMemory':True,'EnableWorldSlice':world,'BindEnemies':bind_enemies}}
     source_root=ROOT/'production/integration/quality-slice'
     entries=base['entries']
-    for name in ['NativeAssetPreview','NativeImagePreview']+(['NativeEnemyPreview'] if enemies else []):
+    for name in ['NativeAssetPreview','NativeImagePreview']+(['NativeEnemyPreview','EnemyBindingPreview'] if enemies else []):
         native=source_root/(name+'.luau')
         folder[name]={'$path':str(native)}
         entries.append(dict(path=['ReplicatedStorage','QualityPreviewAssets',name],className='ModuleScript',source=native.read_text(encoding='utf-8-sig')))
@@ -75,7 +77,7 @@ def build(sources, launch=False, shared_combat=False, world=False, images=None, 
         if isinstance(node,dict) and '$attributes' in node:
             attributes.append({'path':['ReplicatedStorage','QualityPreviewAssets',name],'values':node['$attributes']})
     (sync/'sources.json').write_text(json.dumps({'mode':'VERIFY_BUILT_PLACE_ONLY_NOT_SOURCE_SYNC','candidateSha256':digest,'attributes':attributes,'entries':entries}),encoding='utf-8')
-    receipt={'status':'BUILT_NOT_STUDIO_TESTED','persistence':'Memory','candidate':str(candidate),'sha256':digest,'launch':launch,'sharedCombat':shared_combat,'worldSlice':world,'art':reports,'enemies':enemy_reports,'images':image_report,'runtimeAssetsUploaded':False}
+    receipt={'status':'BUILT_NOT_STUDIO_TESTED','persistence':'Memory','candidate':str(candidate),'sha256':digest,'launch':launch,'sharedCombat':shared_combat,'worldSlice':world,'bindEnemies':bind_enemies,'art':reports,'enemies':enemy_reports,'images':image_report,'runtimeAssetsUploaded':False}
     (out/'quality-preview-build.json').write_text(json.dumps(receipt,indent=2)+'\n',encoding='utf-8')
     print(json.dumps(receipt,indent=2))
     return receipt
@@ -88,5 +90,6 @@ if __name__=='__main__':
     parser.add_argument('--world',action='store_true')
     parser.add_argument('--images',type=Path)
     parser.add_argument('--enemy',type=Path,action='append',default=[])
+    parser.add_argument('--bind-enemies',action='store_true')
     args=parser.parse_args()
-    build(args.mesh,args.launch,args.shared_combat,args.world,args.images,args.enemy)
+    build(args.mesh,args.launch,args.shared_combat,args.world,args.images,args.enemy,args.bind_enemies)

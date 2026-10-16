@@ -95,6 +95,8 @@ def validate_enemy(data):
     """Bound skeletal review input before it becomes local ModuleScript data."""
     if not isinstance(data, dict) or data.get('schemaVersion') != 1:
         raise ValueError('Expected enemy schemaVersion 1')
+    if not isinstance(data.get('id'), str) or not ID.fullmatch(data['id']):
+        raise ValueError('Invalid enemy identity')
     geometry={k:data.get(k) for k in ('vertices','triangles','colors','faceColors')}
     geometry['id']='actor'
     report=validate({'schemaVersion':1,'meshes':[geometry], 'placements':[{'meshId':'actor','name':'actor','cframe':[0,0,0,1,0,0,0,1,0,0,0,1]}]})
@@ -119,6 +121,18 @@ def validate_enemy(data):
         if type(parent) is not int or not 0<=parent<=i:
             raise ValueError('Bones must be parent before child')
         transform(bone.get('bind')); transform(bone.get('localBind'))
+        # EditableMesh uses model-space bind frames; native Bones use localBind.
+        # Both representations must describe the same rest skeleton.
+        local = bone['localBind']
+        expected = local
+        if parent:
+            ancestor = bones[parent-1]['bind']
+            expected = [ancestor[r] + sum(ancestor[3+3*r+k]*local[k] for k in range(3))
+                        for r in range(3)]
+            expected += [sum(ancestor[3+3*r+k]*local[3+3*k+c] for k in range(3))
+                         for r in range(3) for c in range(3)]
+        if any(abs(a-b)>1e-5 for a,b in zip(expected,bone['bind'])):
+            raise ValueError('Model-space bind disagrees with parent/local bind')
     if not isinstance(weights,list) or len(weights)!=len(data['vertices']):
         raise ValueError('Every vertex requires weights')
     for influences in weights:

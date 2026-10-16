@@ -55,4 +55,27 @@ class EnemyPackagingTests(unittest.TestCase):
             data=copy.deepcopy(valid());data['bones'][0][key][3]=2
             with self.subTest(key=key),self.assertRaises(ValueError):quality.validate_enemy(data)
 
+    def test_enemy_identity_rejected(self):
+        for identity in (None, False, '', '../actor', 'actor name', 'a'*101):
+            data=valid();data['id']=identity
+            with self.subTest(identity=identity),self.assertRaises(ValueError):quality.validate_enemy(data)
+
+    def test_bind_hierarchy_disagreement_rejected(self):
+        for index in (0,1):
+            data=valid();data['bones'][index]['localBind'][0]=.01
+            with self.subTest(bone=index),self.assertRaises(ValueError):quality.validate_enemy(data)
+        # Valid rotations alone cannot prove that both bind representations agree.
+        data=valid();data['bones'][1]['localBind'][3:]=[0,-1,0,1,0,0,0,0,1]
+        with self.assertRaises(ValueError):quality.validate_enemy(data)
+
+    def test_bind_composition_rotates_child_translation(self):
+        data=valid()
+        root=[2,3,4,0,-1,0,1,0,0,0,0,1]
+        data['bones'][0]['bind']=root[:];data['bones'][0]['localBind']=root[:]
+        data['bones'][1]['localBind']=[1,0,0,1,0,0,0,1,0,0,0,1]
+        data['bones'][1]['bind']=[2,4,4,0,-1,0,1,0,0,0,0,1]
+        quality.validate_enemy(data)
+        data['bones'][1]['bind'][0]+=2e-5
+        with self.assertRaises(ValueError):quality.validate_enemy(data)
+
 if __name__=='__main__':unittest.main(verbosity=2)

@@ -17,6 +17,14 @@ local function own(handle: any)
 	if closed then handle.destroy(); error("Preview cancelled") end
 	table.insert(handles, handle)
 end
+if assets:GetAttribute("BindEnemies") == true then
+	local ok, problem = pcall(function()
+		require(assets:WaitForChild("EnemyBindingPreview")).create(assets, workspace, own)
+	end)
+	if closed then return end
+	assets:SetAttribute("EnemyBindingState", if ok then "READY_LOCAL_ONLY" else "FAILED")
+	if not ok then assets:SetAttribute("EnemyBindingError", tostring(problem)) end
+end
 local images = assets:FindFirstChild("Images")
 if images then
 	local ok, handle = pcall(function()
