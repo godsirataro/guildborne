@@ -9,7 +9,7 @@ import import_quality_meshes
 
 ROOT=Path(__file__).resolve().parents[1]
 
-def build(sources, launch=False, shared_combat=False, world=False, images=None):
+def build(sources, launch=False, shared_combat=False, world=False, images=None, enemies=None):
     build_integration_preview.build(launch, shared_combat)
     variant='launch' if launch else 'integration'
     out=ROOT/'build'
@@ -19,7 +19,7 @@ def build(sources, launch=False, shared_combat=False, world=False, images=None):
     folder={'$className':'Folder','$attributes':{'IsolatedMemory':True,'EnableWorldSlice':world}}
     source_root=ROOT/'production/integration/quality-slice'
     entries=base['entries']
-    for name in ['NativeAssetPreview','NativeImagePreview']:
+    for name in ['NativeAssetPreview','NativeImagePreview']+(['NativeEnemyPreview'] if enemies else []):
         native=source_root/(name+'.luau')
         folder[name]={'$path':str(native)}
         entries.append(dict(path=['ReplicatedStorage','QualityPreviewAssets',name],className='ModuleScript',source=native.read_text(encoding='utf-8-sig')))
@@ -35,6 +35,18 @@ def build(sources, launch=False, shared_combat=False, world=False, images=None):
             entries.append(dict(path=['ReplicatedStorage','QualityPreviewAssets',name,path.stem],className='ModuleScript',source=path.read_text(encoding='utf-8-sig')))
         folder[name]=node
         reports.append({'dataset':name,**report})
+    enemy_reports=[]
+    for i,source in enumerate(enemies or [],1):
+        name=f'Enemy{i}'
+        target=out/'quality-art'/name
+        report=import_quality_meshes.package_enemy(source,target)
+        node={'$className':'Folder','$attributes':{'SourceSha256':report['sourceSha256'],'SkeletalReview':True}}
+        for filename in ['Data.luau']+[f'Chunk{n}.luau' for n in range(1,report['chunks']+1)]:
+            path=target/filename
+            node[path.stem]={'$path':str(path)}
+            entries.append(dict(path=['ReplicatedStorage','QualityPreviewAssets',name,path.stem],className='ModuleScript',source=path.read_text(encoding='utf-8-sig')))
+        folder[name]=node
+        enemy_reports.append({'dataset':name,**report})
     image_report=None
     if images:
         target=out/'quality-art/Images'
@@ -63,7 +75,7 @@ def build(sources, launch=False, shared_combat=False, world=False, images=None):
         if isinstance(node,dict) and '$attributes' in node:
             attributes.append({'path':['ReplicatedStorage','QualityPreviewAssets',name],'values':node['$attributes']})
     (sync/'sources.json').write_text(json.dumps({'mode':'VERIFY_BUILT_PLACE_ONLY_NOT_SOURCE_SYNC','candidateSha256':digest,'attributes':attributes,'entries':entries}),encoding='utf-8')
-    receipt={'status':'BUILT_NOT_STUDIO_TESTED','persistence':'Memory','candidate':str(candidate),'sha256':digest,'launch':launch,'sharedCombat':shared_combat,'worldSlice':world,'art':reports,'images':image_report,'runtimeAssetsUploaded':False}
+    receipt={'status':'BUILT_NOT_STUDIO_TESTED','persistence':'Memory','candidate':str(candidate),'sha256':digest,'launch':launch,'sharedCombat':shared_combat,'worldSlice':world,'art':reports,'enemies':enemy_reports,'images':image_report,'runtimeAssetsUploaded':False}
     (out/'quality-preview-build.json').write_text(json.dumps(receipt,indent=2)+'\n',encoding='utf-8')
     print(json.dumps(receipt,indent=2))
     return receipt
@@ -75,5 +87,6 @@ if __name__=='__main__':
     parser.add_argument('--shared-combat',action='store_true')
     parser.add_argument('--world',action='store_true')
     parser.add_argument('--images',type=Path)
+    parser.add_argument('--enemy',type=Path,action='append',default=[])
     args=parser.parse_args()
-    build(args.mesh,args.launch,args.shared_combat,args.world,args.images)
+    build(args.mesh,args.launch,args.shared_combat,args.world,args.images,args.enemy)

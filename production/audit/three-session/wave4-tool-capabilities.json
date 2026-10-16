@@ -1,0 +1,17 @@
+{
+  "scope": "Actual isolated Studio capability probe; not asset import acceptance",
+  "studio": "2e46479c-fff4-4178-9b73-d07b675a7634",
+  "result": {
+    "content": [
+      {
+        "type": "text",
+        "text": "{\"pixelRoundtrip\":true,\"cleanup\":true,\"meshSize\":\"2, 2, 0.0010000000474974513\",\"meshCenter\":\"1, 1, 0\",\"meshPart\":true}"
+      }
+    ],
+    "isError": false
+  },
+  "blender": "5.2.1 LTS command verified",
+  "rojo": "7.7.0 command verified",
+  "quotaRemaining": 53,
+  "quotaScope": "reported weekly account-wide, not per task"
+}

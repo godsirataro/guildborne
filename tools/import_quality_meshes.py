@@ -91,6 +91,74 @@ def validate(data):
             raise ValueError("Scale must be positive and bounded")
     return dict(meshes=len(meshes), vertices=total_vertices, triangles=total_faces, placements=len(placements))
 
+def validate_enemy(data):
+    """Bound skeletal review input before it becomes local ModuleScript data."""
+    if not isinstance(data, dict) or data.get('schemaVersion') != 1:
+        raise ValueError('Expected enemy schemaVersion 1')
+    geometry={k:data.get(k) for k in ('vertices','triangles','colors','faceColors')}
+    geometry['id']='actor'
+    report=validate({'schemaVersion':1,'meshes':[geometry], 'placements':[{'meshId':'actor','name':'actor','cframe':[0,0,0,1,0,0,0,1,0,0,0,1]}]})
+    bones=data.get('bones'); weights=data.get('weights'); clips=data.get('clips')
+    if not isinstance(bones,list) or not 1<=len(bones)<=128:
+        raise ValueError('Invalid bone budget')
+    names=set()
+    def transform(value):
+        numbers(value,12,10000)
+        rows=[value[3:6],value[6:9],value[9:12]]
+        for i,row in enumerate(rows):
+            if abs(sum(x*x for x in row)-1)>.002 or any(abs(sum(a*b for a,b in zip(row,other)))>.002 for other in rows[i+1:]):
+                raise ValueError('Invalid skeletal rotation')
+        a,b,c=rows
+        determinant=a[0]*(b[1]*c[2]-b[2]*c[1])-a[1]*(b[0]*c[2]-b[2]*c[0])+a[2]*(b[0]*c[1]-b[1]*c[0])
+        if abs(determinant-1)>.002: raise ValueError('Mirrored skeletal rotation')
+    for i,bone in enumerate(bones):
+        name=bone.get('name'); parent=bone.get('parent')
+        if not isinstance(name,str) or not name or len(name)>128 or name in names:
+            raise ValueError('Invalid bone name')
+        names.add(name)
+        if type(parent) is not int or not 0<=parent<=i:
+            raise ValueError('Bones must be parent before child')
+        transform(bone.get('bind')); transform(bone.get('localBind'))
+    if not isinstance(weights,list) or len(weights)!=len(data['vertices']):
+        raise ValueError('Every vertex requires weights')
+    for influences in weights:
+        if not isinstance(influences,list) or not 1<=len(influences)<=4: raise ValueError('Invalid influences')
+        indices=set(); total=0
+        for pair in influences:
+            numbers(pair,2,128)
+            index,weight=pair
+            if type(index) is not int or not 1<=index<=len(bones) or index in indices or not 0<weight<=1:
+                raise ValueError('Invalid bone influence')
+            indices.add(index); total+=weight
+        if abs(total-1)>.0001: raise ValueError('Weights must sum to one')
+    if not isinstance(clips,dict) or not 1<=len(clips)<=32: raise ValueError('Invalid clip budget')
+    total_frames=0
+    for name,clip in clips.items():
+        if not isinstance(name,str) or not ID.fullmatch(name): raise ValueError('Invalid clip name')
+        fps=clip.get('fps'); seconds=clip.get('seconds'); frames=clip.get('frames')
+        numbers([fps,seconds],2,600)
+        if not 1<=fps<=60 or not 0<seconds<=60 or type(clip.get('looped')) is not bool:
+            raise ValueError('Invalid clip timing')
+        if not isinstance(frames,list) or not 1<=len(frames)<=3601: raise ValueError('Invalid frame budget')
+        if abs(len(frames)-(round(seconds*fps)+1))>1: raise ValueError('Clip sample count mismatch')
+        total_frames+=len(frames)
+        if total_frames>10000: raise ValueError('Total frame budget exceeded')
+        for frame in frames:
+            if not isinstance(frame,list) or len(frame)!=len(bones): raise ValueError('Frame bone count mismatch')
+            for pose in frame: transform(pose)
+    yaw=data.get('recommendedRootYawDegrees',180)
+    numbers([yaw],1,360)
+    return {**report,'bones':len(bones),'clips':len(clips),'frames':total_frames}
+
+def package_enemy(path, output):
+    path=Path(path)
+    if path.stat().st_size>64*1024*1024: raise ValueError('Enemy data larger than 64 MiB')
+    raw=path.read_bytes()
+    data=json.loads(raw.decode('utf-8-sig'),parse_constant=reject_constant,object_pairs_hook=unique_pairs)
+    report={**validate_enemy(data),**package_data(data,output),'sourceSha256':hashlib.sha256(raw).hexdigest(),'status':'PACKAGED_LOCAL_SKELETAL_REVIEW_NOT_IMPORTED'}
+    (Path(output)/'receipt.json').write_text(json.dumps(report,indent=2)+'\n',encoding='utf-8')
+    return report
+
 def load(path):
     path = Path(path)
     if path.stat().st_size > 64 * 1024 * 1024:

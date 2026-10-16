@@ -48,6 +48,13 @@ function Preview.create(data: any, parent: Instance, onAllocated: ((any) -> ())?
 				end
 				if i % 750 == 0 then task.wait(); assert(not closed, "Preview construction cancelled") end
 			end
+			-- Compact completed topology before allocating the next source chunk.
+			-- Dynamic meshes reserve much more client memory than fixed-size meshes.
+			local fixed = assert(AssetService:CreateEditableMeshAsync(Content.fromObject(mesh), {FixedSize=true}), "Fixed mesh budget unavailable")
+			table.insert(meshes, fixed)
+			assert(not closed, "Preview construction cancelled")
+			mesh:Destroy()
+			mesh = fixed
 			local part = AssetService:CreateMeshPartAsync(Content.fromObject(mesh))
 			templates[def.id] = part
 			assert(not closed, "Preview construction cancelled")

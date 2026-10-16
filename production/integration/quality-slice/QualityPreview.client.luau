@@ -34,7 +34,7 @@ if images then
 	end
 end
 for _, dataset in ipairs(assets:GetChildren()) do
-	if dataset:IsA("Folder") and dataset.Name ~= "Images" and dataset:FindFirstChild("Data") then
+	if dataset:IsA("Folder") and dataset.Name ~= "Images" and dataset:GetAttribute("SkeletalReview") ~= true and dataset:FindFirstChild("Data") then
 		local started = os.clock()
 		local ok, result = pcall(function()
 			local data = require(dataset.Data :: ModuleScript)
