@@ -31,8 +31,8 @@ return function(parent: ScreenGui, enter: () -> (), language: () -> ())
 	scroll.BackgroundTransparency = 1; scroll.BorderSizePixel = 0; scroll.ScrollBarThickness = 4
 	scroll.ScrollBarImageColor3 = colors.Accent; scroll.CanvasSize = UDim2.new()
 	scroll.AutomaticCanvasSize = Enum.AutomaticSize.Y; scroll.ScrollingDirection = Enum.ScrollingDirection.Y; scroll.Parent = shell
-	local list = Instance.new("UIListLayout"); list.Padding = UDim.new(0, 16); list.SortOrder = Enum.SortOrder.LayoutOrder; list.Parent = scroll
-	local header = Header.create(scroll, {size = UDim2.new(1, -8, 0, 190), logoId = Assets.Logo})
+	local list = Instance.new("UIListLayout"); list.Padding = UDim.new(0, 12); list.SortOrder = Enum.SortOrder.LayoutOrder; list.Parent = scroll
+	local header = Header.create(scroll, {size = UDim2.new(1, -8, 0, 124), logoId = Assets.Logo})
 	header.frame.LayoutOrder = 0
 	local columns = Instance.new("Frame")
 	columns.Name = "TitleColumns"; columns.BackgroundTransparency = 1; columns.Size = UDim2.new(1, -8, 0, 400)
@@ -40,7 +40,7 @@ return function(parent: ScreenGui, enter: () -> (), language: () -> ())
 	local function column(name: string): Frame
 		local frame = Instance.new("Frame"); frame.Name = name; frame.Size = UDim2.new(.48, 0, 0, 0)
 		frame.AutomaticSize = Enum.AutomaticSize.Y; frame.BackgroundTransparency = 1; frame.Parent = columns
-		local flow = Instance.new("UIListLayout"); flow.SortOrder = Enum.SortOrder.LayoutOrder; flow.Padding = UDim.new(0, 12); flow.Parent = frame
+		local flow = Instance.new("UIListLayout"); flow.SortOrder = Enum.SortOrder.LayoutOrder; flow.Padding = UDim.new(0, 8); flow.Parent = frame
 		return frame
 	end
 	local story = column("YourCompany")
@@ -56,12 +56,12 @@ return function(parent: ScreenGui, enter: () -> (), language: () -> ())
 		return item
 	end
 	local stage = Vista.create(story); stage.frame.LayoutOrder = 0
-	local companyHeading = label(story, "CompanyHeading", 28, 38, 1); companyHeading.TextColor3 = colors.Accent
-	local company = label(story, "CompanyDescription", 16, 52, 2)
+	local companyHeading = label(story, "CompanyHeading", 25, 32, 1); companyHeading.TextColor3 = colors.Accent
+	local company = label(story, "CompanyDescription", 15, 44, 2)
 	local preview = require(script.Parent.CompanyPreview)(stage.heroHost)
 	local companyViewport = stage.heroHost:FindFirstChild("CompanyPreview") :: GuiObject
 	companyViewport.Size = UDim2.fromScale(1, 1); companyViewport.BackgroundTransparency = 1
-	local chapter = label(controls, "ChapterHeading", 25, 38, -1); chapter.TextColor3 = colors.Accent
+	local chapter = label(controls, "ChapterHeading", 22, 32, -1); chapter.TextColor3 = colors.Accent
 	local previewDestroyed = false
 	local function destroyPreview()
 		if not previewDestroyed then previewDestroyed = true; preview.destroy() end
@@ -70,8 +70,8 @@ return function(parent: ScreenGui, enter: () -> (), language: () -> ())
 		if not root.Visible then return end
 		root.Visible = false; destroyPreview(); enter()
 	end
-	local status = label(controls, "ReadinessStatus", 15, 44, 0)
-	local play = Button.create(controls, {name = "Continue", primary = true, size = UDim2.new(1, 0, 0, 72), onActivated = function()
+	local status = label(controls, "ReadinessStatus", 15, 32, 0)
+	local play = Button.create(controls, {name = "Continue", primary = true, size = UDim2.new(1, 0, 0, 56), onActivated = function()
 		if root:GetAttribute("ProfileReady") then leaveTitle() end
 	end})
 	play.button.LayoutOrder = 1
@@ -88,16 +88,22 @@ return function(parent: ScreenGui, enter: () -> (), language: () -> ())
 	local creditsLabel = label(controls, "CreditsText", 16, 100, 6); creditsLabel.Visible = false
 	local credits = Button.create(controls, {name = "Credits", onActivated = function() creditsLabel.Visible = not creditsLabel.Visible end})
 	credits.button.LayoutOrder = 5
-	local alpha = label(scroll, "AlphaNotice", 13, 32, 2); alpha.TextColor3 = colors.Muted; alpha.TextXAlignment = Enum.TextXAlignment.Center
+	for _, control in ipairs({play.button, settings.button, settingsToggle.button, credits.button}) do
+		control.TextWrapped = false; control.TextScaled = true
+		local fit = Instance.new("UITextSizeConstraint")
+		fit.MinTextSize = 14; fit.MaxTextSize = 17; fit.Parent = control
+	end
+	local alpha = label(scroll, "AlphaNotice", 12, 24, 2); alpha.TextColor3 = colors.Muted; alpha.TextXAlignment = Enum.TextXAlignment.Center
 	local connections: {RBXScriptConnection} = {}
 	local function responsive()
 		local compact = scroll.AbsoluteSize.X < 680
-		header.setCompact(compact); header.frame.Size = UDim2.new(1, -8, 0, if compact then 154 else 190)
+		local short = scroll.AbsoluteSize.Y < 540
+		header.setCompact(compact); header.frame.Size = UDim2.new(1, -8, 0, if compact or short then 112 else 124)
 		story.Size = UDim2.new(if compact then 1 else .62, 0, 0, 0)
 		rail.Size = UDim2.new(if compact then 1 else .35, 0, 0, controls.AbsoluteSize.Y + 36)
 		rail.Position = if compact then UDim2.fromOffset(0, 0) else UDim2.fromScale(.65, 0)
 		story.Position = if compact then UDim2.fromOffset(0, controls.AbsoluteSize.Y + 60) else UDim2.fromOffset(0, 0)
-		stage.frame.Size = UDim2.new(1, 0, 0, if compact then 240 else 350)
+		stage.frame.Size = UDim2.new(1, 0, 0, if short then 220 else if compact then 240 else 280)
 		columns.Size = UDim2.new(1, -8, 0, if compact then controls.AbsoluteSize.Y + story.AbsoluteSize.Y + 60 else math.max(controls.AbsoluteSize.Y + 36, story.AbsoluteSize.Y))
 	end
 	table.insert(connections, scroll:GetPropertyChangedSignal("AbsoluteSize"):Connect(responsive))
@@ -115,7 +121,7 @@ return function(parent: ScreenGui, enter: () -> (), language: () -> ())
 		languageCode = if th then "th" else "en"
 		companyHeading.Font = if th then Theme.Fonts.Body else Theme.Fonts.Heading
 		chapter.Font = if th then Theme.Fonts.Body else Theme.Fonts.Heading
-		chapter.Text = if th then "การเดินทางบทใหม่" else "THE NEXT CHAPTER"
+		chapter.Text = if th then "การเดินทาง" else "YOUR JOURNEY"
 		settingsToggle.button.Text = Localization.translate(languageCode, "Settings"); presentation.refresh()
 		settingsToggle.setSelected(presentation.frame.Visible)
 		local ready = view ~= nil and view.data ~= nil and view.status == "Active"
@@ -123,12 +129,12 @@ return function(parent: ScreenGui, enter: () -> (), language: () -> ())
 		root:SetAttribute("ProfileReady", ready)
 		play.setPending(not ready); settings.setDisabled(not ready)
 		local novice = view and view.data and view.data.progression and view.data.progression.novice and view.data.progression.novice.claimed < 6
-		play.button.Text = if ready then (if novice then (if th then "เริ่มเส้นทางนักผจญภัย" else "Begin your adventure") else (if th then "เข้าสู่กิลด์" else "Continue to your guild")) else (if th then "กำลังโหลดกิลด์…" else "Loading your guild…")
-		status.Text = if ready then (if th then "พร้อมออกเดินทาง" else "Ready for your journey") else (if th then "กำลังรอข้อมูลผู้เล่นจากเซิร์ฟเวอร์…" else "Waiting for your player profile…")
-		header.setSubtitle(if th then "ผจญภัย · ร่วมสร้าง · พิชิต" else "ADVENTURE  ·  BELONG  ·  BUILD  ·  CONQUER")
+		play.button.Text = if ready then (if novice then (if th then "เริ่มผจญภัย" else "Begin adventure") else (if th then "เข้าสู่กิลด์" else "Continue")) else (if th then "กำลังโหลด…" else "Loading…")
+		status.Text = if ready then (if th then "พร้อมออกเดินทาง" else "Ready to depart") else (if th then "กำลังรอข้อมูลผู้เล่น…" else "Waiting for your profile…")
+		header.setSubtitle(if th then "ผจญภัย · ร่วมสร้าง · พิชิต" else "BELONG  ·  BUILD  ·  CONQUER")
 		companyHeading.Text = if novice then (if th then "เส้นทางของคุณเริ่มต้นที่นี่" else "Your journey begins here") else (if th then "เหล่านักผจญภัยของคุณ" else "Your company awaits")
 		company.Text = if novice then (if th then "ออกเดินทางบน Crown Road ฝึกฝน เลือกอาชีพ และก่อตั้งกิลด์ของคุณ" else "Follow Crown Road. Train, choose your class, and earn the right to found a guild.") else (if th then "นำทีมนักผจญภัยห้าคน ออกเดินทางจากเมืองของคุณ" else "Command five adventurers. Begin your journey in the guild city.")
-		settings.button.Text = if th then "ภาษา: ไทย → English" else "Language: English → ไทย"
+		settings.button.Text = if th then "ภาษา: ไทย" else "Language: EN"
 		credits.button.Text = if th then "ผู้สร้าง" else "Credits"
 		alpha.Text = if th then "อัลฟาทดลองเล่น" else "FIRST PLAYABLE ALPHA"
 		creditsLabel.Text = if th then "Guildborne ใช้โมเดลพื้นฐานและระบบ Luau ที่สร้างขึ้นเอง บนเอนจิน Roblox รอบ UAT-01 นี้ไม่มีการซื้อแอสเซ็ต" else "Original Guildborne native geometry and Luau systems. Roblox engine. No purchased assets added in UAT-01."
