@@ -1,13 +1,26 @@
 {
-  "blenderProcessExited": true,
+  "ownedBackgroundBlenderProcessesExited": true,
+  "unrelatedInteractiveBlenderLeftRunning": true,
   "logs": {
-    "assets\\production\\world-slice\\blender-final.log": {
+    "assets/production/world-slice/blender-final.log": {
       "bytes": 7672,
       "sha256": "d6b332f02d9233d70b0b20f7eb91f94d8a32e64355827fb4ed7ae7c3139fd9d7"
     },
-    "assets\\production\\world-slice\\blender-run.log": {
+    "assets/production/world-slice/blender-playable-final.log": {
+      "bytes": 7680,
+      "sha256": "3ac076c0a34c2e6ac8b70977e41b54a65daebf9c3e01db8f91619fe48ac5606a"
+    },
+    "assets/production/world-slice/blender-playable.log": {
+      "bytes": 7681,
+      "sha256": "1af8ef58fcd812b0856d8cffbda6bdb37e44a120da02a7928e3a5c7090101861"
+    },
+    "assets/production/world-slice/blender-run.log": {
       "bytes": 7434,
       "sha256": "7244e627956ef4f79ae11ea4d7bd9f6f8cbebef46d9ed4f784226abeb0caab6e"
+    },
+    "assets/production/world-slice/orientation-audit.log": {
+      "bytes": 1179,
+      "sha256": "3a0a8ebb27927b17514938c338b11760b19cc65530aa2e2a76abc0e240fdafaa"
     }
   }
 }
