@@ -3,6 +3,27 @@
 2026-10-16. Status: **SOURCE_IMPLEMENTED / BLENDER_PREVIEW / LOCAL_CHECKS_PASS**.
 This is an initial native landscape study, not the final art benchmark or all-map completion.
 
+## Reference district connectivity — 2026-10-16
+
+Added four native cobblestone road segments to the existing city: an 18-stud-wide
+extension from the market avenue at (350, -1100) to (410, -1100), an east forge lane
+to (410, -1000), a 12-stud-wide connector to the rotated forge doorway at
+(390, -1000), and a 12-stud-wide Exchange connector from (300, -1130) to its
+doorway at (300, -1160). Coordinates here are (X, Z). The existing forge sign is
+eight studs outside the actual door; the new paving reaches the door itself.
+The Exchange connector closes the gap beyond the courtyard, between its two
+front stalls. Existing landscape reservations already protect all four segments;
+the landscape recipe and generated decorative geometry are unchanged.
+
+Fresh `python tools/verify_city_landscape.py` passes 1,172 landscape route samples
+and 109 additional samples checking six-stud envelopes against actual road
+dimensions and new landscape footprints. The 522 branch endpoint checks still
+pass. These are projected source geometry checks only; they do not test the
+existing foundation step, humanoid collision, five-hero doorway behavior or
+performance. Building transforms, service IDs, market availability, hero logic
+and streaming settings are unchanged. Four collidable road parts are added.
+Fresh full baseline and Studio party walk evidence must be recorded separately.
+
 ## Implemented
 
 `CentralCityWorld` now assembles `CityLandscape` from a reproducible shared geometry recipe.
@@ -47,12 +68,18 @@ runtime integration.
   background Blender exited 0. `branch-rotation-render.log` is the new unchanged raw stream;
   the earlier render and baseline logs are preserved as historical evidence.
 
-Artifacts: `assets/uat01/city-landscape/landscape.json`, `validation.json`,
+Historical landscape-pass artifacts: `assets/uat01/city-landscape/landscape.json`, `validation.json`,
 `hearth-garden-preview.png`, `landscape-layout-preview.png`,
 `Guildborne_Central_Landscape.blend`, raw local logs and `evidence-hashes.json`.
 Evidence hashes use raw asset/log bytes. Text sources (`.py`, `.luau`, `.md`) are normalized
 to LF before hashing so their values match Git's committed text bytes. The manifest explicitly
 records this distinction. The generator emits JSON and Luau with stable LF line endings.
+
+The preserved `evidence-hashes.json` describes the earlier landscape commit.
+Its source/report hashes are not current after the reference-route changes above.
+Fresh connectivity receipts and source identity are indexed in
+[the world connectivity evidence index](../audit/world-builder/EVIDENCE_INDEX.md).
+Old raw render and test streams have not been rewritten.
 
 Historical private candidate: `build/Guildborne_IntegrationPreview.rbxlx`, built with the
 existing Memory-only preview builder before the branch correction; regeneration is pending.

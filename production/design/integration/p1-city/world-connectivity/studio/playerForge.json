@@ -1,0 +1,9 @@
+{
+  "content": [
+    {
+      "type": "text",
+      "text": "{\"zone\":\"City\",\"texts\":{\"1\":{\"text\":\"Crafting\",\"path\":\"Players.iswhlaedev.PlayerGui.GuildborneUI.ManagementPanel.Content.Frame.TextLabel\"},\"3\":{\"text\":\"Recipes consume the listed materials and create one item.\",\"path\":\"Players.iswhlaedev.PlayerGui.GuildborneUI.ManagementPanel.Content.Frame.TextLabel\"},\"2\":{\"text\":\"Crafting\",\"path\":\"Players.iswhlaedev.PlayerGui.GuildborneUI.ManagementPanel.Content.Frame.TextLabel\"},\"5\":{\"text\":\"Market / Craft District\",\"path\":\"Players.iswhlaedev.PlayerGui.CityNavigation.CityMap.MapScroll.DistrictMap.Guide_Market\"},\"4\":{\"text\":\"Use your guild workshop or the city forge. A placed Blacksmith on your island is required.\",\"path\":\"Players.iswhlaedev.PlayerGui.GuildborneUI.ManagementPanel.Content.Frame.TextLabel\"},\"6\":{\"text\":\"Crafting / การผลิต\",\"path\":\"Players.iswhlaedev.PlayerGui.ProximityPrompts.Prompt.Frame.TextFrame.ActionText\"}},\"position\":\"373.2187194824219, 4.798026084899902, -1000.0005493164062\"}"
+    }
+  ],
+  "isError": false
+}

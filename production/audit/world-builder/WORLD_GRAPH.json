@@ -1,0 +1,628 @@
+{
+  "date": "2026-10-16",
+  "sourceOrigin": "bf948c6",
+  "status": "REVIEW_ONLY_SOURCE_AUDIT",
+  "currentStudioAcceptance": "PENDING",
+  "note": "Source facts, not runtime acceptance; companion/collision/visual checks require a real loaded Studio place.",
+  "nodes": [
+    {
+      "id": "City",
+      "kind": "shared_hub",
+      "boundsXZ": [
+        -460,
+        460,
+        -1640,
+        -620
+      ],
+      "landing": [
+        0,
+        5,
+        -720
+      ],
+      "fallback": [
+        0,
+        5,
+        -750
+      ],
+      "source": "src/shared/Config/City.luau"
+    },
+    {
+      "id": "Guild",
+      "kind": "owner_plot",
+      "landingLocal": [
+        0,
+        5,
+        23
+      ],
+      "fallbackLocal": [
+        0,
+        5,
+        14
+      ],
+      "origin": "slot * GuildIslandLayout.SlotSpacing, 1, 0",
+      "source": "src/server/Services/CityWorld.luau"
+    },
+    {
+      "id": "Greenwood",
+      "kind": "regional_surface",
+      "center": [
+        0,
+        0,
+        1400
+      ],
+      "landing": [
+        0,
+        7,
+        1505
+      ],
+      "fallback": [
+        0,
+        7,
+        1495
+      ],
+      "source": "src/server/Services/RegionalWorld.luau"
+    },
+    {
+      "id": "Ironveil",
+      "kind": "regional_surface",
+      "center": [
+        500,
+        0,
+        1400
+      ],
+      "landing": [
+        500,
+        7,
+        1515
+      ],
+      "fallback": [
+        500,
+        7,
+        1505
+      ],
+      "source": "src/server/Services/RegionalWorld.luau"
+    },
+    {
+      "id": "Ashen",
+      "kind": "regional_surface",
+      "center": [
+        1000,
+        0,
+        1400
+      ],
+      "landing": [
+        1000,
+        7,
+        1515
+      ],
+      "fallback": [
+        1000,
+        7,
+        1505
+      ],
+      "source": "src/server/Services/RegionalWorld.luau"
+    },
+    {
+      "id": "Crownford",
+      "kind": "civic_district",
+      "center": [
+        0,
+        0,
+        -4000
+      ],
+      "landing": [
+        0,
+        4,
+        -3892
+      ],
+      "fallback": [
+        0,
+        4,
+        -3900
+      ],
+      "boundsXZ": [
+        -100,
+        100,
+        -4125,
+        -3875
+      ],
+      "requiredClaimedQuest": "elian_charter",
+      "source": "src/shared/Config/CivicCities.luau"
+    },
+    {
+      "id": "Sylvaris",
+      "kind": "civic_district",
+      "center": [
+        400,
+        0,
+        -4000
+      ],
+      "landing": [
+        400,
+        4,
+        -3892
+      ],
+      "fallback": [
+        400,
+        4,
+        -3900
+      ],
+      "boundsXZ": [
+        300,
+        500,
+        -4125,
+        -3875
+      ],
+      "requiredClaimedQuest": "vaela_seedlings",
+      "source": "src/shared/Config/CivicCities.luau"
+    },
+    {
+      "id": "Deepforge",
+      "kind": "civic_district",
+      "center": [
+        800,
+        0,
+        -4000
+      ],
+      "landing": [
+        800,
+        4,
+        -3892
+      ],
+      "fallback": [
+        800,
+        4,
+        -3900
+      ],
+      "boundsXZ": [
+        700,
+        900,
+        -4125,
+        -3875
+      ],
+      "requiredClaimedQuest": "borin_castings",
+      "source": "src/shared/Config/CivicCities.luau"
+    },
+    {
+      "id": "Astralis",
+      "kind": "civic_district",
+      "center": [
+        1200,
+        0,
+        -4000
+      ],
+      "landing": [
+        1200,
+        4,
+        -3892
+      ],
+      "fallback": [
+        1200,
+        4,
+        -3900
+      ],
+      "boundsXZ": [
+        1100,
+        1300,
+        -4125,
+        -3875
+      ],
+      "requiredClaimedQuest": "nyra_stonecharts",
+      "source": "src/shared/Config/CivicCities.luau"
+    },
+    {
+      "id": "Crosshaven",
+      "kind": "civic_district",
+      "center": [
+        1600,
+        0,
+        -4000
+      ],
+      "landing": [
+        1600,
+        4,
+        -3892
+      ],
+      "fallback": [
+        1600,
+        4,
+        -3900
+      ],
+      "boundsXZ": [
+        1500,
+        1700,
+        -4125,
+        -3875
+      ],
+      "requiredClaimedQuest": "sela_shelter",
+      "source": "src/shared/Config/CivicCities.luau"
+    },
+    {
+      "id": "Ironroot",
+      "kind": "civic_district",
+      "center": [
+        2000,
+        0,
+        -4000
+      ],
+      "landing": [
+        2000,
+        4,
+        -3892
+      ],
+      "fallback": [
+        2000,
+        4,
+        -3900
+      ],
+      "boundsXZ": [
+        1900,
+        2100,
+        -4125,
+        -3875
+      ],
+      "requiredClaimedQuest": "roka_shared_pot",
+      "source": "src/shared/Config/CivicCities.luau"
+    },
+    {
+      "id": "TowerCourt",
+      "kind": "owner_private_preview_court",
+      "base": [
+        2000,
+        100,
+        1400
+      ],
+      "slotHeight": 80,
+      "defaultRuntimeEnabled": false,
+      "source": "src/server/Config/TowerCourtLayout.luau"
+    },
+    {
+      "id": "CrosshavenCourt",
+      "kind": "owner_private_preview_court",
+      "base": [
+        2600,
+        100,
+        1400
+      ],
+      "slotHeight": 80,
+      "defaultRuntimeEnabled": false,
+      "source": "src/server/Config/CrosshavenCourtLayout.luau"
+    },
+    {
+      "id": "ArchiveHeartCourt",
+      "kind": "owner_private_preview_court",
+      "base": [
+        3400,
+        100,
+        1400
+      ],
+      "slotHeight": 80,
+      "defaultRuntimeEnabled": false,
+      "source": "src/server/Config/ArchiveHeartCourtLayout.luau"
+    },
+    {
+      "id": "NoviceCourse",
+      "kind": "owner_private_preview",
+      "originFormula": "(-4500-(slot-1)*400,0,0)",
+      "defaultRuntimeEnabled": false,
+      "source": "src/server/Services/NoviceCourseWorld.luau"
+    }
+  ],
+  "edges": [
+    {
+      "from": "City",
+      "to": "Guild",
+      "kind": "server_validated_portal",
+      "returnStops": [
+        "Arrival",
+        "GuildDistrict",
+        "MarketDistrict",
+        "TowerDistrict"
+      ]
+    },
+    {
+      "from": "Guild",
+      "to": "City",
+      "kind": "server_validated_portal",
+      "return": "remembered safe central stop, else default"
+    },
+    {
+      "from": "City",
+      "to": "Greenwood",
+      "anchor": [
+        0,
+        5.5,
+        -1450
+      ],
+      "kind": "server_validated_portal"
+    },
+    {
+      "from": "Greenwood",
+      "to": "City",
+      "anchor": [
+        0,
+        7,
+        1517
+      ],
+      "kind": "server_validated_portal"
+    },
+    {
+      "from": "City",
+      "to": "Ironveil",
+      "anchor": [
+        0,
+        5.5,
+        -1390
+      ],
+      "kind": "server_validated_portal"
+    },
+    {
+      "from": "Ironveil",
+      "to": "City",
+      "anchor": [
+        500,
+        7,
+        1527
+      ],
+      "kind": "server_validated_portal"
+    },
+    {
+      "from": "City",
+      "to": "Ashen",
+      "anchor": [
+        0,
+        5.5,
+        -1330
+      ],
+      "kind": "server_validated_portal"
+    },
+    {
+      "from": "Ashen",
+      "to": "City",
+      "anchor": [
+        1000,
+        7,
+        1527
+      ],
+      "kind": "server_validated_portal"
+    },
+    {
+      "from": "City",
+      "to": "Crownford",
+      "anchor": [
+        -175.0,
+        4,
+        -644
+      ],
+      "kind": "earned_charter_portal"
+    },
+    {
+      "from": "Crownford",
+      "to": "City",
+      "anchor": [
+        -58,
+        4,
+        -3912
+      ],
+      "kind": "server_validated_portal"
+    },
+    {
+      "from": "Crownford",
+      "to": "Guild",
+      "anchor": [
+        58,
+        4,
+        -3912
+      ],
+      "kind": "server_validated_portal"
+    },
+    {
+      "from": "City",
+      "to": "Sylvaris",
+      "anchor": [
+        -105.0,
+        4,
+        -644
+      ],
+      "kind": "earned_charter_portal"
+    },
+    {
+      "from": "Sylvaris",
+      "to": "City",
+      "anchor": [
+        342,
+        4,
+        -3912
+      ],
+      "kind": "server_validated_portal"
+    },
+    {
+      "from": "Sylvaris",
+      "to": "Guild",
+      "anchor": [
+        458,
+        4,
+        -3912
+      ],
+      "kind": "server_validated_portal"
+    },
+    {
+      "from": "City",
+      "to": "Deepforge",
+      "anchor": [
+        -35.0,
+        4,
+        -644
+      ],
+      "kind": "earned_charter_portal"
+    },
+    {
+      "from": "Deepforge",
+      "to": "City",
+      "anchor": [
+        742,
+        4,
+        -3912
+      ],
+      "kind": "server_validated_portal"
+    },
+    {
+      "from": "Deepforge",
+      "to": "Guild",
+      "anchor": [
+        858,
+        4,
+        -3912
+      ],
+      "kind": "server_validated_portal"
+    },
+    {
+      "from": "City",
+      "to": "Astralis",
+      "anchor": [
+        35.0,
+        4,
+        -644
+      ],
+      "kind": "earned_charter_portal"
+    },
+    {
+      "from": "Astralis",
+      "to": "City",
+      "anchor": [
+        1142,
+        4,
+        -3912
+      ],
+      "kind": "server_validated_portal"
+    },
+    {
+      "from": "Astralis",
+      "to": "Guild",
+      "anchor": [
+        1258,
+        4,
+        -3912
+      ],
+      "kind": "server_validated_portal"
+    },
+    {
+      "from": "City",
+      "to": "Crosshaven",
+      "anchor": [
+        105.0,
+        4,
+        -644
+      ],
+      "kind": "earned_charter_portal"
+    },
+    {
+      "from": "Crosshaven",
+      "to": "City",
+      "anchor": [
+        1542,
+        4,
+        -3912
+      ],
+      "kind": "server_validated_portal"
+    },
+    {
+      "from": "Crosshaven",
+      "to": "Guild",
+      "anchor": [
+        1658,
+        4,
+        -3912
+      ],
+      "kind": "server_validated_portal"
+    },
+    {
+      "from": "City",
+      "to": "Ironroot",
+      "anchor": [
+        175.0,
+        4,
+        -644
+      ],
+      "kind": "earned_charter_portal"
+    },
+    {
+      "from": "Ironroot",
+      "to": "City",
+      "anchor": [
+        1942,
+        4,
+        -3912
+      ],
+      "kind": "server_validated_portal"
+    },
+    {
+      "from": "Ironroot",
+      "to": "Guild",
+      "anchor": [
+        2058,
+        4,
+        -3912
+      ],
+      "kind": "server_validated_portal"
+    },
+    {
+      "from": "Ashen",
+      "to": "TowerCourt",
+      "anchor": [
+        1000,
+        2.15,
+        1498
+      ],
+      "kind": "owner_session_quest_gated_preview"
+    },
+    {
+      "from": "TowerCourt",
+      "to": "Ashen",
+      "kind": "preview_safe_return"
+    },
+    {
+      "from": "City",
+      "to": "CrosshavenCourt",
+      "anchor": [
+        18,
+        2.15,
+        -700
+      ],
+      "kind": "owner_session_quest_gated_preview"
+    },
+    {
+      "from": "CrosshavenCourt",
+      "to": "City",
+      "kind": "preview_safe_return"
+    },
+    {
+      "from": "City",
+      "to": "ArchiveHeartCourt",
+      "anchor": [
+        -18,
+        2.15,
+        -700
+      ],
+      "kind": "owner_session_quest_gated_preview"
+    },
+    {
+      "from": "ArchiveHeartCourt",
+      "to": "City",
+      "kind": "preview_safe_return"
+    }
+  ],
+  "identityConflicts": [
+    {
+      "desired": "civic Crosshaven plus Chapter05 overlay share one physical city",
+      "current": "Crosshaven district center (1600,0,-4000); Chapter05 court base (2600,100,1400), per-owner vertical slots",
+      "status": "UNRESOLVED_MIGRATION_REQUIRED",
+      "constraint": "Do not alias these positions or move owner/session anchors without campaign isolation and regression design."
+    }
+  ],
+  "omissions": [
+    "Novice finish transition and dynamic combat arenas are not enumerated as verified travel edges.",
+    "Territory proposals and optional event paths are not established runtime destinations.",
+    "Ten combat floors are a separate progression/run from the Chapter04 orientation court."
+  ]
+}

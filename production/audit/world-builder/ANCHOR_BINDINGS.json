@@ -1,0 +1,123 @@
+{
+  "date": "2026-10-16",
+  "sourceOrigin": "bf948c6",
+  "status": "REVIEW_ONLY_SOURCE_AUDIT",
+  "currentStudioAcceptance": "PENDING",
+  "note": "Source facts, not runtime acceptance; companion/collision/visual checks require a real loaded Studio place.",
+  "authority": "Existing TravelService, campaign owner/session checks and server intent validation remain authoritative. This file is not loaded at runtime.",
+  "referenceDistrict": [
+    {
+      "id": "Plaza",
+      "position": [
+        0,
+        0,
+        -1100
+      ],
+      "source": "src/shared/Config/City.luau"
+    },
+    {
+      "id": "CityTavernStation",
+      "buildingOrigin": [
+        -140,
+        1,
+        -870
+      ],
+      "localOffset": [
+        -5,
+        3,
+        2
+      ],
+      "service": "Tavern",
+      "source": "src/server/Services/CentralCityWorld.luau"
+    },
+    {
+      "id": "CityForgeStation",
+      "buildingOrigin": [
+        370,
+        1,
+        -1000
+      ],
+      "rotationY": 90,
+      "localOffset": [
+        8,
+        3,
+        4
+      ],
+      "service": "Crafting",
+      "tag": "GuildborneCityCraftingStation",
+      "maxServiceDistance": 14,
+      "source": "src/server/Services/CentralCityWorld.luau"
+    },
+    {
+      "id": "Guildborne Exchange",
+      "interactionPosition": [
+        300,
+        4,
+        -1152
+      ],
+      "service": "Market",
+      "source": "src/server/Services/CentralCityWorld.luau"
+    }
+  ],
+  "questExamples": [
+    {
+      "id": "SupplyPickup",
+      "objective": "help_city",
+      "position": [
+        -100,
+        1.2,
+        -790
+      ]
+    },
+    {
+      "id": "SupplyDelivery",
+      "objective": "help_city",
+      "position": [
+        -100,
+        1.2,
+        -835
+      ]
+    },
+    {
+      "id": "TrackOne",
+      "objective": "inspect_tracks",
+      "position": [
+        -5,
+        2.2,
+        1480
+      ]
+    },
+    {
+      "id": "TrackTwo",
+      "objective": "inspect_tracks",
+      "position": [
+        -30,
+        2.2,
+        1450
+      ]
+    },
+    {
+      "id": "EscortFinish",
+      "objective": "finish_escort",
+      "position": [
+        -55,
+        2.2,
+        1430
+      ]
+    }
+  ],
+  "questExampleSource": "src/server/Services/CampaignWorld.luau",
+  "fullAnchorSources": [
+    "src/shared/Data/CityWaypoint.luau",
+    "src/shared/Config/FriendlyNpcs.luau",
+    "src/server/Services/NoviceCourseWorld.luau",
+    "src/server/Services/CampaignWorld.luau",
+    "src/server/Services/IronveilWorld.luau",
+    "src/server/Services/AshenWorld.luau",
+    "src/server/Services/TowerWorld.luau",
+    "src/server/Services/CrosshavenWorld.luau",
+    "src/server/Services/ArchiveHeartWorld.luau",
+    "src/server/Services/HeroMentorWorld.luau"
+  ],
+  "coverage": "Representative fixed bindings plus source ownership map; not an exhaustive extracted anchor manifest."
+}

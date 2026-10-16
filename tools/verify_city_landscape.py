@@ -46,7 +46,8 @@ assert branch_checks > 0
 # Radius 6 is a geometric reservation, not a replacement for the physical five-hero walk.
 routes=[[(0,-720),(0,-820),(-140,-820),(-140,-870),(-140,-820)],
         [(0,-820),(0,-1100),(300,-1100),(410,-1100),(410,-1000),(370,-1000)],
-        [(0,-1100),(0,-1490)], [(-350,-1100),(350,-1100)]]
+        [(0,-1100),(0,-1490)], [(-350,-1100),(350,-1100)],
+        [(300,-1100),(300,-1160)]]
 samples=0
 for route in routes:
     for (x,z),(xx,zz) in zip(route,route[1:]):
@@ -62,6 +63,34 @@ native=(ROOT/'src/server/Services/CityLandscapeData.luau').read_text(encoding='u
 assert native==luau_source(data), 'Generated Luau differs from the verified recipe'
 assert b'\r' not in (ROOT/'src/server/Services/CityLandscapeData.luau').read_bytes(), 'Generated Luau must use LF'
 world=(ROOT/'src/server/Services/CentralCityWorld.luau').read_text(encoding='utf-8')
+# Check the actual authored road dimensions, rather than merely testing that
+# decoration avoids a hypothetical route. These straight segments must carry a
+# six-stud envelope and reach the CityKit front wall (local z=20) at each door.
+road_pattern=r'road\("([^"\n]+)",V\((-?[\d.]+),0,(-?[\d.]+)\),V\((-?[\d.]+),0,(-?[\d.]+)\),([\d.]+)\)'
+road_bounds={}
+for name,x,z,xx,zz,width in re.findall(road_pattern,world):
+    x,z,xx,zz,width=map(float,(x,z,xx,zz,width))
+    assert x==xx or z==zz, ('Expected axis-aligned road',name)
+    road_bounds[name]=(min(x,xx)-width/2,min(z,zz)-width/2,
+                       max(x,xx)+width/2,max(z,zz)+width/2)
+paved_routes={
+    'ForgeApproach':((350,-1100),(410,-1100)),
+    'ForgeEastLane':((410,-1100),(410,-1000)),
+    'ForgeThreshold':((410,-1000),(390,-1000)),
+    'ExchangeThreshold':((300,-1130),(300,-1160)),
+}
+paved_samples=0
+for name,(start,end) in paved_routes.items():
+    assert name in road_bounds, ('Missing paved service approach',name)
+    a,b,c,d=road_bounds[name]
+    steps=math.ceil(math.dist(start,end)/2)
+    for i in range(steps+1):
+        x,z=[start[j]+(end[j]-start[j])*i/steps for j in range(2)]
+        assert a<=x-6 and c>=x+6 and b<=z-6 and d>=z+6, ('Paving gap',name,x,z)
+        paved_samples+=1
+        for part in data['parts']:
+            pa,pb,pc,pd=bounds(part)
+            assert not (pa<x+6 and pc>x-6 and pb<z+6 and pd>z-6), ('Landscape blocks paved approach',name,part['name'])
 assert 'require(script.Parent.CityLandscape)(town)' in world
 assert 'asset("TreeA"' not in world and 'asset("TreeB"' not in world
 # Service identities and authority integration must survive landscape integration.
@@ -71,6 +100,7 @@ report=dict(status='PASS',scope='deterministic recipe and projected geometry onl
     parts=len(data['parts']),counts=dict(Counter(p['name'] for p in data['parts'])),
     collisionParts=sum(p['solid'] for p in data['parts']),protectedRectangles=len(data['exclusions']),
     independentRouteSamples=samples,partyEnvelopeRadiusStuds=6,
+    pavedServiceApproachSamples=paved_samples,
     branchEndpointChecks=branch_checks*2,maxBranchEndpointErrorStuds=branch_max_error,
     studioTested=False,physicalDeviceTested=False,humanArtApproved=False,
     recipeSha256=hashlib.sha256((OUT/'landscape.json').read_bytes()).hexdigest())

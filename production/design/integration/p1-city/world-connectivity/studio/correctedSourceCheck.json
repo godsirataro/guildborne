@@ -1,0 +1,9 @@
+{
+  "content": [
+    {
+      "type": "text",
+      "text": "sabuiltin_Assistant.rbxm.Assistant.Packages._Index.AssistantUI.AssistantUI.Tools.ExecuteLuauTool:116: sabuiltin_Assistant.rbxm.Assistant.Packages._Index.AssistantUI.AssistantUI.Util.CommandExecution:54: AssistantCommand:1: Unable to assign property Source. Provided string length (308183) is greater than or equal to max length (200000)\nAssistantCommand:1\nAssistantCommand:1\n"
+    }
+  ],
+  "isError": true
+}

@@ -8,7 +8,7 @@ return function()
  local world=workspace.GuildborneWorld
  local fixture=Instance.new('Model');fixture.Name='P1FiveHeroCityTraversal';fixture.Parent=world
  local service
- local result={synthetic=true,rewardCalls=0,segments={},maxSeparation=0,samples=0}
+ local result={synthetic=true,rewardCalls=0,segments={},buildingChecks={},maxSeparation=0,samples=0}
  local ok,problem=xpcall(function()
   local function building(name)
    for _,m in ipairs(world:GetDescendants())do
@@ -16,7 +16,7 @@ return function()
    end
    error('Missing building '..name)
   end
-  local tavern,forge=building('The Hearth and Banner'),building('Blacksmith')
+  local tavern,forge,market=building('The Hearth and Banner'),building('Blacksmith'),building('Guildborne Exchange')
   local function point(m,z)return m:GetPivot():PointToWorldSpace(V(0,3,z))end
   local shared=game.ReplicatedStorage.Shared
   local content=require(server.Config.Content)
@@ -82,6 +82,7 @@ return function()
     if not inside then task.wait(.1)end
    until inside or os.clock()>deadline
    assert(inside,'Not all five entered '..m.Name)
+   table.insert(result.buildingChecks,{building=m.Name,state='inside',heroes=sample()})
   end
   local function allOutside(m)
    local deadline=os.clock()+8;local outside=false
@@ -94,6 +95,7 @@ return function()
     if not outside then task.wait(.1)end
    until outside or os.clock()>deadline
    assert(outside,'Not all five exited '..m.Name)
+   table.insert(result.buildingChecks,{building=m.Name,state='outside',heroes=sample()})
   end
   walk('Avenue to tavern',V(0,4,-820));walk('Tavern forecourt',V(-140,4,-820))
   walk('Tavern threshold',point(tavern,28));walk('Tavern interior',point(tavern,-12));allInside(tavern)
@@ -101,6 +103,11 @@ return function()
   walk('Market avenue',V(300,4,-1100));walk('Forge outer approach',V(410,4,-1100))
   walk('Forge forecourt',V(410,4,-1000));walk('Forge threshold',point(forge,28))
   walk('Forge interior',point(forge,-12));allInside(forge);walk('Forge exit',point(forge,50));allOutside(forge)
+  -- Retrace the east approach to avoid cutting across the market stalls.
+  walk('Forge return avenue',V(410,4,-1100));walk('Exchange approach',V(300,4,-1100))
+  walk('Exchange threshold',point(market,28));walk('Exchange interior',point(market,-12));allInside(market)
+  walk('Exchange exit',point(market,50));allOutside(market)
+  walk('Exchange return avenue',V(300,4,-1100));walk('Return Plaza',V(0,4,-1100))
   task.wait(2);result.finalHeroes=sample()
  end,debug.traceback)
  if service then service.Destroy()end

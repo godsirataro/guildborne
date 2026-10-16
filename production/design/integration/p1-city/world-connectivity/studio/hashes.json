@@ -1,0 +1,24 @@
+{
+  "status": "REVIEW_ONLY",
+  "sha256": {
+    "build-receipt.json": "586328cb862522c30e12f1b2947a034d917e66d50253e5cac839c8cf91412afd",
+    "cleanup.json": "3f52eb06ba20d922358d67f6b2ed28ad127d80ff0097f80fb0617d2f4dafc289",
+    "correctedSourceCheck.json": "724964bc6205686fa1a49dd7220517c6a8295ea36699bc27d71c49a77c79540e",
+    "finalConsole.json": "96e571888bdb6ad3dd98a6c59d8bf050383f8f2b4b2c3fbbbc4fe16f2a315287",
+    "finalServices.json": "68ee5bea64859336fb8b1040f57757303bd15950166ffd4ddd3b148e1b83cf70",
+    "finalSourceCheck.json": "1fb8be45e2727a93204e45729183fb31842bb7d80ef36ae5db9044e6492b24e1",
+    "forge.png": "92c168be3404f5362288a7b68db7dfb855704ee0633af54e6fad147e08d31b6a",
+    "independent-review.md": "490c09090dff6b8c7116c424e3e2e76d1e4499aebde76767ec91b23b905bdcde",
+    "initialConsole.json": "33f8daf0a347cda9de356fc6ca30c334ca5cb06e3b4478e5a92f663ae37092af",
+    "partyFinal.json": "e74b22c0b3c261498eb35b6ac08dc7f018dc73291520081db87c19523de41b37",
+    "playerForge.json": "1ca00744264fb3e52baeff6dfab5338dfd2437efe26e6f421e43aead060c025f",
+    "playerMarket.json": "a5bae485fb827d8d7905b1749f88b7bd9a88f06a6c90b1b134d6955198018c66",
+    "playerTavern.json": "23cedc3e469a8e1ae7a4377bbc83baa0f40bed80cf2c1b2f36308c8d9fd38641",
+    "playerTavernFinal.json": "722468aa1d87b0314a0b1f0a8101d4d9327945f2bab5fbceae44ed178496cf2f",
+    "plaza.png": "6d9ce0fbc10359d5598f6c421519d622e77a93f06b406bcdcb1fc5e7d4ac14ef",
+    "REPORT.md": "b670a5c4a0d1ba8fe91d2683966edb7cb167bce5e605fdeb01448a31d570b7da",
+    "services.json": "a0d27d267243ebbe223059d606370c1c6e7608e0b5056777618f3e2b9257863e",
+    "sourceCheck.json": "4eaaaa0fd3bfc5716f4481d769781390f8f29feb4beca862e8650a5708f0617e",
+    "tavern.png": "3734f373e96a0309c9c9d7328ab7311e28f653605ae7c24cde56ad6f9cbbe444"
+  }
+}

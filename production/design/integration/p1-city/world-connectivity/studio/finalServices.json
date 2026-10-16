@@ -1,0 +1,9 @@
+{
+  "content": [
+    {
+      "type": "text",
+      "text": "{\"ok\":true,\"cleanup\":true,\"syntheticActor\":true,\"tests\":{\"21\":\"invalid combat health bad\",\"22\":\"missing humanoid denied\",\"27\":\"nonfinite position denied\",\"26\":\"missing root denied\",\"25\":\"removed station denied\",\"24\":\"moved station denied\",\"23\":\"dead humanoid denied\",\"28\":\"island crafting preserved\",\"29\":\"island building preserved\",\"20\":\"invalid combat health inf\",\"19\":\"invalid combat health -1\",\"18\":\"invalid combat health 0\",\"9\":\"city denies PlaceBuilding\",\"1\":\"Crafting physical anchor\",\"15\":\"missing plot denied\",\"3\":\"Tavern physical anchor\",\"2\":\"Crafting prompt\",\"5\":\"registered forge\",\"4\":\"Tavern prompt\",\"7\":\"inclusive radius\",\"6\":\"craft at forge\",\"14\":\"city denies StartTower\",\"8\":\"outside radius denied\",\"16\":\"missing station denied\",\"17\":\"combat denied\",\"13\":\"city denies SelectRace\",\"12\":\"city denies LearnSkill\",\"11\":\"city denies MoveBuilding\",\"10\":\"city denies CraftFurniture\"},\"actualExpansionWorld\":true}"
+    }
+  ],
+  "isError": false
+}

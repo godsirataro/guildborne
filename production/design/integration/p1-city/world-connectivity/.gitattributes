@@ -1,0 +1,4 @@
+# Immutable subprocess streams: retain original bytes, including CRLF and empty files.
+*.txt -text
+# Studio tool results, receipts and captures are hashed as raw bytes.
+studio/* -text
