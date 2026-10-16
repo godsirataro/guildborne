@@ -4,6 +4,24 @@ Checkpoint: 2026-10-16, Asia/Bangkok. VERDICT: AT_RISK. This is a delivery dashb
 
 ## Verified controller checkpoint — W2
 
+### W3 GUI follow-up (latest)
+
+Integrated e29c26a as b86253a. Worker full baseline passed 890; controller and
+independent reviewer each passed 12 GUI simulations. Studio candidate
+780fccae98041bb1b41525c28fd7f82ba0e1ff5837b2eab8e91e893380adcda5
+matched all 369 source entries. Actual desktop English and Thai button text fit;
+Thai also fits at the 680-content-width breakpoint and bounded 320x600 native
+layout fixture. The latter is not physical-device evidence. Settings expands,
+Credits text fits and Tab/Enter hides Title and opens management. All owned
+Play sessions stopped. Evidence: studio-w3-gui.json and gui-w3-desktop.jpg.
+
+W2 visual defects materially improved: compact header, complete default control
+rail, shorter localized labels, brighter scenic citadel with layered terrain.
+Visual similarity remains PARTIAL: procedural art is not the reference's painted
+landscape/crest, and those original assets have no verified runtime binding.
+Human visual approval and broader GUI reskin remain open. The W3 scope is
+Title/components; W2 combat/quest/route results are not relabeled as W3 reruns.
+
 Integrated S15 lifecycle c58754a, S14 keyboard 7dc131d and visual 076b753,
 S13 route 78ec391 and gate-approach correction 3358598. Controller source head
 5bad1f3. Original S15 raw logs restored byte-for-byte in 51adb54 and protected

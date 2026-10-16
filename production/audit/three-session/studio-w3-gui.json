@@ -1,0 +1,61 @@
+{
+  "sourceCommit": "b86253a",
+  "sourceCheck": {
+    "content": [
+      {
+        "type": "text",
+        "text": "{\"place\":0,\"game\":0,\"count\":369,\"candidate\":\"780fccae98041bb1b41525c28fd7f82ba0e1ff5837b2eab8e91e893380adcda5\"}"
+      }
+    ],
+    "isError": false
+  },
+  "desktopImage": "gui-w3-desktop.jpg",
+  "thai": {
+    "content": [
+      {
+        "type": "text",
+        "text": "{\"1\":{\"text\":\"เข้าสู่กิลด์\",\"name\":\"Continue\",\"fits\":true},\"3\":{\"text\":\"ผู้สร้าง\",\"name\":\"Credits\",\"fits\":true},\"2\":{\"text\":\"ภาษา: ไทย\",\"name\":\"Language\",\"fits\":true}}"
+      }
+    ],
+    "isError": false
+  },
+  "breakpointLayoutFixture": {
+    "content": [
+      {
+        "type": "text",
+        "text": "{\"height\":600,\"scrollWidth\":680,\"buttons\":{\"1\":{\"y\":258,\"h\":56,\"name\":\"Continue\",\"x\":482.7999572753906,\"fits\":true,\"w\":199.1999969482422,\"text\":\"เข้าสู่กิลด์\"},\"3\":{\"y\":434,\"h\":48,\"name\":\"Credits\",\"x\":482.7999572753906,\"fits\":true,\"w\":199.1999969482422,\"text\":\"ผู้สร้าง\"},\"2\":{\"y\":322,\"h\":48,\"name\":\"Language\",\"x\":482.7999572753906,\"fits\":true,\"w\":199.1999969482422,\"text\":\"ภาษา: ไทย\"}},\"width\":736}"
+      }
+    ],
+    "isError": false
+  },
+  "portraitLayoutFixture": {
+    "content": [
+      {
+        "type": "text",
+        "text": "{\"height\":600,\"scrollWidth\":264,\"buttons\":{\"1\":{\"y\":246,\"h\":56,\"name\":\"Continue\",\"x\":46,\"fits\":true,\"w\":220,\"text\":\"เข้าสู่กิลด์\"},\"3\":{\"y\":422,\"h\":48,\"name\":\"Credits\",\"x\":46,\"fits\":true,\"w\":220,\"text\":\"ผู้สร้าง\"},\"2\":{\"y\":310,\"h\":48,\"name\":\"Language\",\"x\":46,\"fits\":true,\"w\":220,\"text\":\"ภาษา: ไทย\"}},\"width\":320}"
+      }
+    ],
+    "isError": false
+  },
+  "keyboardEntry": {
+    "content": [
+      {
+        "type": "text",
+        "text": "{\"managementVisible\":true,\"titleHidden\":true}"
+      }
+    ],
+    "isError": false
+  },
+  "settingsCredits": {
+    "content": [
+      {
+        "type": "text",
+        "text": "{\"creditsVisible\":true,\"canvas\":\"740, 620\",\"textFits\":true,\"railHeight\":448}"
+      }
+    ],
+    "isError": false
+  },
+  "independentReview": "12 simulated tests passed; no blocking source defect",
+  "verdict": "Native functional/layout improvements verified. Reference fidelity remains PARTIAL: no painted branding/art runtime binding; no physical-device or human acceptance.",
+  "scope": "Title/components only; final W3 does not re-execute prior W2 quest/combat route."
+}
