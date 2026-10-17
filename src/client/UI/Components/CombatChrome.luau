@@ -44,11 +44,14 @@ function Chrome.actor(card:TextButton)
  healthText.Font=Theme.Fonts.Body;healthText.TextSize=10;healthText.TextXAlignment=Enum.TextXAlignment.Left;healthText.TextTruncate=Enum.TextTruncate.AtEnd;healthText.ZIndex=4;healthText.Parent=card
  local function layout(width:number,height:number)
   local large=height>44;local portraitSize=if large then 48 else if width<110 then 26 else 32
+  local tall=height>=68
   frame.Position=UDim2.fromOffset(3,2);frame.Size=UDim2.fromOffset(portraitSize+2,portraitSize+2)
   number.Position=UDim2.fromOffset(4,portraitSize-9);gem.Position=UDim2.fromOffset(portraitSize-1,portraitSize-2)
-  name.Position=UDim2.fromOffset(portraitSize+9,if large then 7 else 2)
-  name.Size=UDim2.new(1,-portraitSize-14,0,if large then 22 else 19);name.TextSize=if width<110 then 12 else 13
-  healthText.Position=UDim2.fromOffset(portraitSize+9,if large then 30 else 21)
+  name.TextWrapped=tall
+  name.Position=UDim2.fromOffset(portraitSize+9,if tall then 4 elseif large then 7 else 2)
+  name.Size=UDim2.new(1,-portraitSize-14,0,if tall then 34 elseif large then 22 else 19);name.TextSize=if width<110 then 12 else 13
+  healthText.TextSize=if tall then 12 else 10
+  healthText.Position=UDim2.fromOffset(portraitSize+9,if tall then 42 elseif large then 30 else 21)
   healthText.Size=UDim2.new(1,-portraitSize-14,0,if large then 16 else 13)
  end
  layout(138,44)

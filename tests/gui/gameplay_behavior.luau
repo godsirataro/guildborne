@@ -185,4 +185,28 @@ test("party identity health and portrait ornament keep separate bounded lanes",f
   card:Destroy()
  end
 end)
+test("six tall party cards reserve separate name health and control regions",function()
+ local layoutFor=require(game.ReplicatedStorage.Shared.Data.CombatHudLayout)
+ local Chrome=require(UI.Components.CombatChrome)
+ for _,size in ipairs({{390,844},{360,800},{320,760},{900,640},{1366,768}}) do
+  local w,h=size[1],size[2];local layout=layoutFor(w,h)
+  assert(layout.cardHeight==68 and layout.selectionHeight==5*layout.cardStride+layout.cardHeight)
+  assert(64+layout.selectionHeight<=h-layout.ordersBottom-44)
+  if w<500 then assert(8+layout.cardWidth<w-8-layout.padWidth) end
+  for i=1,6 do
+   local card=Instance.new("TextButton");local chrome=Chrome.actor(card);chrome.layout(layout.cardWidth,layout.cardHeight)
+   local name=chrome.name;local hp=find(card,"ActorHealth")
+   for _,text in ipairs({"Rowan of the Silver Forest","โรแวนผู้พิทักษ์พงไพร"}) do
+    name.Text=text;chrome.update(i==6,i,18,160)
+    assert(name.Text==text and name.TextWrapped and name.TextSize==13)
+    assert(name.Position[4]+name.Size[4]<=hp.Position[4])
+    assert(hp.Position[4]+hp.Size[4]<=layout.cardHeight-8 and hp.TextSize==12)
+    assert(find(card,"SelectedActorGem").Visible==(i==6))
+   end
+   chrome.layout(138,44);assert(not name.TextWrapped and hp.TextSize==10)
+   card:Destroy()
+  end
+ end
+ assert(layoutFor(390,759).cardHeight==44,"Short portraits retain compact roster")
+end)
 print(passed.." gameplay GUI behavior tests passed (simulation only).")
