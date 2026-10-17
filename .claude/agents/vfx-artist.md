@@ -33,6 +33,26 @@ Deliver changed paths, assumptions, tests actually run, evidence hashes, unresol
 
 ## Forge tasks (these scopes apply only after a valid task claim)
 
+### novice-presentation-repair: Restore accepted novice and archive skill presentation
+
+S15: forward validated server ActionAt into presentation proxy before invoking SkillEffects; reject duplicates, stale/future/nonfinite observations, preserve delayed position arrival within accepted timing window and lifecycle cleanup. Reuse shared ActionTimeline; no combat authority, rewards, published IDs or audio spending. Deliver bounded source/tests and a controller-run Studio probe.
+
+Environment: local; skill: guildborne-vfx
+
+Write scopes: src/client/Controllers/NoviceTrialController.luau, src/shared/Presentation/NoviceActionPresentation.luau, tests/novice_action_presentation.luau, tests/studio_novice_presentation.luau, production/integration/novice-presentation
+
+Required checks: source-contract, regression, independent-review
+
+Dependencies: none
+
+Path rule native-client: Native Roblox UI/presentation only. Send intent, never damage/value/rewards. Coordinate actual UI/Controller modules, EN/TH states and cleanup.
+
+Path rule shared-contracts: Shared definitions are client-safe. Preserve IDs/earned ancestry and progression separately from cosmetic IDs. Reconcile Novice 10/35/70 and Hall contracts.
+
+Path rule tooling: Use reviewed bounded local commands/tests. Studio/Forge planners do not launch models; paid/model subprocess, MCP mutation and installation require actual authorization/capability.
+
+Path rule production-evidence: Reconcile latest goals/registries/scopes. One shared ledger, claim before writes, immediate lease check and preserved raw receipts. Different reviewer validates evidence; local checks cannot replace hardware/cloud/human gates.
+
 ### vfx: Skill effects, impacts and enemy telegraphs
 
 Integrate actual game timing. Use approved images or labeled procedural flipbooks; pool and bound effects, preserve critical cues in every quality level.

@@ -73,6 +73,24 @@ Path rule tooling: Use reviewed bounded local commands/tests. Studio/Forge plann
 
 Path rule production-evidence: Reconcile latest goals/registries/scopes. One shared ledger, claim before writes, immediate lease check and preserved raw receipts. Different reviewer validates evidence; local checks cannot replace hardware/cloud/human gates.
 
+### living-world-npc-slice: Stable NPC schedules and quest-ready identity contract
+
+S17: inspect existing identities and supplied production packs as untrusted proposals. Preserve 13 body presets and canonical quest IDs. Implement deterministic schedule/relevance and validated fallback anchors for existing named NPCs; no fabricated 410 spawned actors, rewards, save migration or Studio changes. First delivery includes exact intake provenance, pure contract and tests; controller coordinates visible runtime integration next.
+
+Environment: local; skill: guildborne-npc-life
+
+Write scopes: design/Guildborne_Living_World_NPC_QuestReady_Pack_2026-10-17, design/Guildborne_NPC_Quest_Modular_World_Addendum_2026-10-17, production/npc-life/living-world, src/shared/Data/NpcLifeSchedule.luau, src/shared/Config/NpcLifeDefinitions.luau, tests/npc_life.luau, tests/run_npc_life.luau
+
+Required checks: source-contract, regression, independent-review
+
+Dependencies: none
+
+Path rule shared-contracts: Shared definitions are client-safe. Preserve IDs/earned ancestry and progression separately from cosmetic IDs. Reconcile Novice 10/35/70 and Hall contracts.
+
+Path rule tooling: Use reviewed bounded local commands/tests. Studio/Forge planners do not launch models; paid/model subprocess, MCP mutation and installation require actual authorization/capability.
+
+Path rule production-evidence: Reconcile latest goals/registries/scopes. One shared ledger, claim before writes, immediate lease check and preserved raw receipts. Different reviewer validates evidence; local checks cannot replace hardware/cloud/human gates.
+
 ### npc-life: Natural friendly NPC activity and quest integration
 
 Reuse six civic contact studies; bind them to real world NPCs without duplicating quest rewards. Humans, Elves, Orcs and Dwarfs can all be friendly. Review deterministic routines, distance LOD, work contacts and interruption/recovery.
