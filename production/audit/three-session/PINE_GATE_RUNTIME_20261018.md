@@ -1,0 +1,13 @@
+# Original pine-gate identity — actual Studio review
+
+S13 `12a7b5a` independently reviewed and integrated as `95b7aa2`. Two arch resources changed; all prior vertex/triangle/face-color/palette prefixes, 35 other resources, 116 placements and 413 collider records remain unchanged. Added300triangles/182vertices. Arch chunks2000/1248 triangles are at or below the2000 cap; handoff wording corrected. Total45267unique triangles. Controller gate checker rerun PASS.
+
+Combined Memory candidate built successfully, SHA256 `1f6fbad01a5916848f57902afd1f90cb37ff40cf2147ae4765a80420eba5a81e`, copied to `build/Guildborne_GateIdentityReview.rbxlx`. Studio `9c5f0ee4-43d9-4ff3-9b42-deb11276cf1d` confirmed PlaceId/GameId0, Memory and isolated preview before Play. Previous controller Studio was stopped; no earned progress was present to preserve there.
+
+Actual Client Dataset1: READY_LOCAL_ONLY,116placements,45267triangles,LoadSeconds4.501566200000525. Art and collision SHA256 both `9baaf8de0faf3ff7f4a4f2c32ea692e48aa9dbb021f609e3530029ed7844ddc7`; collisionReadytrue,enemybindingREADY_LOCAL_ONLY. Total engine/client Stats memory3021.38671875MB, not incremental mesh cost or mobile performance.
+
+Actual mesh positions: arch__000 `(0,14.5,1380)`; arch__001 `(0,16.25,1379.9989013671875)`, matching exported taller-chunk center within rounding. Sizes respectively `(21.880779266357422,25,3.474600076675415)` and `(21.880779266357422,28.5,3.4723000526428223)`. Both are noncollidable/nonquery decorative MeshParts.
+
+Inspected actual tool captures `pine_gate_identity_runtime` from(40,25,1440) toward(0,14,1380), and `pine_gate_reverse_runtime` from(-35,22,1325) toward(0,16,1380). Pine emblem and pier panels are visible in Roblox daylight and chunks align. Reverse is plain stone; a foreground tree dominates part of that view. Motif improves identity modestly. Flatness, strong ground faceting, sparse composition and isolated-platform edges remain. Screenshots were inspected in tool output, not separately archived PNG files. Eleven ScreenGui states were saved, hidden, restored; temporary capture folder removal verified.
+
+No ordinary player-plus-hero passage, dynamic combat telegraph contrast, all-camera, physical-device or human-art acceptance claimed. Earlier pathfinding evidence is not relabeled as a new-gate traversal. S14 compact-control layout wave remains active. Latest account observation before this integration:92%used/8%remaining; no additional art wave dispatched.

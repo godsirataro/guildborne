@@ -8,7 +8,7 @@ The reviewed arch retains every original vertex, triangle, face-color assignment
 
 Only the two arch mesh resources change (palette extension in both; geometry additions in chunk 2). All 35 other mesh payloads, all 116 placement records, all 413 colliders and runtime services/anchors remain unchanged. Generated collision metadata updates the source hash and the second arch chunk's art center for its taller bounds. No new collision or placement.
 
-Budget: 300 added triangles and 182 vertices. Arch chunks 2,000 / 1,248 triangles, below 2,000 each; dedicated added-detail budget 400. Complete packet: 37 resources, 32,321 vertices, 45,267 unique triangles, 94,465 instanced triangles, 116 placements.
+Budget: 300 added triangles and 182 vertices. Arch chunks 2,000 / 1,248 triangles, at or below 2,000 each; dedicated added-detail budget 400. Complete packet: 37 resources, 32,321 vertices, 45,267 unique triangles, 94,465 instanced triangles, 116 placements.
 
 ## Actual evidence
 
