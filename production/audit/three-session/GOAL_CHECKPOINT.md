@@ -1,5 +1,13 @@
 # Controller goal checkpoint — 2026-10-17
 
+## Latest continuation (supersedes older resume details below)
+
+Controller integrated terrain9909de1 as9fc507c, compass9337ae2 as064a79c. Plan-only0c8229c registers CivicCityWorld and its Studio probe under borin-integration. ALL v3 leases were explicitly released before the plan change. Current SINGLE shared ledger: C:/Work/MySelf/Guildborne/build/agentic/four-session-v4.sqlite3; v3 retained only as history. S17 is implementing civic-host hints; S15 owns Blender for Walk forearm seam correction; S14 fixing narrow English unavailable-helper text; root owns Studio. Do not use v3 for new claims.
+
+Fresh candidate SHA024fad6c3f4fcc518a4e99d7bfefd080dbbb03798d085eeba50ce25fef401873 is running in Studio68487ea4-e619-421d-876a-e3801768d464. Terrain4e0a917e READY108placements40628triangles5.8329918s with matched collision. Prior18ff56a4 stopped. Preserve earned a6d25956 Play: ordinary WoodlandDebt finished, reward claimed through GUI, now chapter5 The Quiet Wolves Lv18 at(-47.1466,5.0580,1443.2112), objective disable_false_crest. Client-only navigation review2 modules now use current compass; server/profile never rewritten. Actual fullHUD shows visible compass inside card, no Attack overlap. Root prepared no new reward shortcuts.
+
+Studio native-label fixture EN/TH destination/authored/unavailable at796x674,796x400,390x844: all shown text fits except English portrait unavailable helper. S14 has exact repro.320x280 card unsupported/hidden and not accepted. No physical-device claim. Latest quota71%used/29%remaining.
+
 User requested persistent goal tracking. Existing app Goal remains ACTIVE; its objective already covers S13/S14/S15/S17, integration, evidence and the approximately 5% remaining Codex usage stop threshold. The Goal API supports status transitions only, not editing an active objective. This file supplements it; it does not declare completion.
 
 ## Intended outcome
