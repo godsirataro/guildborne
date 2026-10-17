@@ -31,8 +31,17 @@ function Preview.create(data: any, parent: Instance, onAllocated: ((any) -> ())?
 			local mesh = assert(AssetService:CreateEditableMesh(), "Editable mesh budget unavailable")
 			table.insert(meshes, mesh)
 			local vertices, colors = {}, {}
+			-- MeshPart uses mesh-local coordinates: apply the source center once.
+			local low = vector(def.vertices[1])
+			local high = low
+			for _, v in ipairs(def.vertices) do
+				local point = vector(v)
+				low = low:Min(point); high = high:Max(point)
+			end
+			local originalCenter = (low + high) / 2
+			centers[def.id] = originalCenter
 			for i, v in ipairs(def.vertices) do
-				vertices[i] = mesh:AddVertex(vector(v))
+				vertices[i] = mesh:AddVertex(vector(v) - originalCenter)
 				if i % 1000 == 0 then task.wait(); assert(not closed, "Preview construction cancelled") end
 			end
 			for i, c in ipairs(def.colors) do colors[i] = mesh:AddColor(Color3.new(c[1], c[2], c[3]), 1) end
@@ -55,13 +64,14 @@ function Preview.create(data: any, parent: Instance, onAllocated: ((any) -> ())?
 			assert(not closed, "Preview construction cancelled")
 			mesh:Destroy()
 			mesh = fixed
+			assert(mesh:GetCenter().Magnitude < 0.0001, "Imported chunk is not centered")
 			local part = AssetService:CreateMeshPartAsync(Content.fromObject(mesh))
 			templates[def.id] = part
 			assert(not closed, "Preview construction cancelled")
 			part.Name = def.id; part.Anchored = true
 			part.CanCollide = false; part.CanTouch = false; part.CanQuery = false
 			part.Color = Color3.new(1,1,1); part.Material = Enum.Material.SmoothPlastic
-			templates[def.id] = part; centers[def.id] = mesh:GetCenter()
+			templates[def.id] = part
 			result.triangles += #def.triangles
 			task.wait()
 		end

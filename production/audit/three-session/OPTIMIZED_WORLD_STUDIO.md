@@ -50,3 +50,26 @@ successful local import do not establish correct runtime appearance. S13 has
 been dispatched to investigate actual import topology/winding/index handling
 and author a scoped correction; importer edits remain coordinator-owned. No
 publishing, runtime IDs, production persistence or geometry acceptance inferred.
+
+## Explicit chunk centering fixes the observed runtime displacement
+
+Integrated S13 diagnostic812f507 as b542a8d. Changed NativeAssetPreview only:
+compute original vertex-bounds center, subtract it before AddVertex, retain that
+center for scaled placement, and assert compact mesh center is near zero. Exact
+source patched into second isolated candidate in Edit, equality checked, then
+Play restarted; original earned gameplay session remained untouched.
+
+Dataset634a again READY_LOCAL_ONLY:4.1977005s,85placements,37074triangles;
+413colliders. Actual centered-roofs capture from the same requested camera
+(105,94,1545) toward(0,8,1410) shows continuous stable and sawmill roofs, with
+formerly separated chunks aligned. ScreenGui visibility restored after capture.
+This supersedes the specific displaced-roof rejection above, not whole-world
+art approval. Ground remains visibly flat/sparse and distant disconnected areas
+are visible; final world quality and seamless connectivity remain incomplete.
+
+17 packaging tests passed and importer compiled. Independent read-only review
+confirmed all positive nonuniform scales preserve t+R*S*v, unchanged expectedArt,
+translation-invariant normals and existing failure cleanup. The1e-4 center
+assertion is verified for this dataset, not arbitrary future large-coordinate
+assets. Geometry hash/counts and collision source were unchanged. This is an
+in-memory patched candidate, not a newly exported place hash or device test.
