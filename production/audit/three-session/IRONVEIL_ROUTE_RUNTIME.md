@@ -23,3 +23,13 @@ This extends evidence to ordinary island→city→surface→mine travel and all 
 ## Ordinary chapter reward claimed
 
 Actual Guild menu button, scroll-up and CampaignClaim click accepted chapter7 reward. Fresh State: claimed7, level22,XP1053,Hall2,748Gold, nextobjective read_mine_signal / Read the three-symbol safety signal. Player still by mine reception; Management open. No reward/profile injection. Chapter8 onward route expansion is being implemented separately, not yet accepted.
+
+## Remaining chapter routing and real chapter8 escort
+
+Independently reviewed five-file remaining-Ironveil routing candidate integrated41ff1c8. Final focused tests17routecases,GUI simulation,LSP/compile passed. Candidate adds explicit objective areas for puzzles/choices, replicated escort/protection state, own guardian surface exit and trial suppression, plus coordinate-free claim instructions. It does not invent server-private puzzle progress. Live context for protection/guardian/trial is still unverified.
+
+EarnedStudioa6d client now uses exactsource navigation/route/beacon review6 copies, keeping review4MenuGate. Actual N/Guide selection near(538.670,102.998,1468.409) displayed Read the three-symbol safety signal with destination-direction guidance. Controller read actual MineInstructions Billboard text: TRIANGLE→DIAMOND→CROSS, diamond safe shaft. Ordinary movement/R followed these instructions; server-enabled markers changed from read signals to shaft choices. Ordinary A/R selected diamond and objective became rescue_miner.
+
+At approximately(543.355,102.998,1469.268), real R started escort. Actual replicated mine attributes: EscortStatus Walking, EscortPosition(544.831,100,1470), EscortExit(555,100,1478), DeliveryProblem OK; card pointed to live miner1stud away. Ordinary D/S movement stayed near worker; after3seconds escort completed and dynamic attributes cleared. No NPC/profile/reward/position mutation.
+
+Fresh State confirmed claimed7, objectives read_mine_signal/choose_safe_shaft/rescue_miner alltrue, readytrue,748Gold unchanged. Actual card displayed Claim chapter rewards in the Guild menu., TextFitstrue, blank destination/distance, DestinationCompass.Visible=false, WaypointBeacon.Enabled=false. Chapter8 reward NOTclaimed yet. Player remains(551.028,102.998,1471.989),Hall2,Lv22,Managementclosed. This is actual puzzle/escort/instruction transition evidence, not allremainingminecontent orfreshwholebuild acceptance.
