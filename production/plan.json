@@ -741,6 +741,8 @@
       "environment": "local",
       "dependsOn": [],
       "writeScopes": [
+        "src/server/Services/CivicCityWorld.luau",
+        "tests/studio_civic_host_interaction.luau",
         "src/server/Services/FriendlyCityNpcs.luau",
         "src/client/Controllers/FriendlyNpcAnimator.luau",
         "src/shared/Presentation/BorinWorkMotion.luau",
