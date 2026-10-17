@@ -102,7 +102,9 @@ return function(gui: ScreenGui)
 		if not cardWanted then resize(); return end
 		local T = function(key: string, values: any?) return Locale.translate(language, key, values) end
 		if unavailable then
-			step.Text = T("Route unavailable"); destination.Text = T("Follow the quest instructions"); distanceLabel.Text = ""; resize(); return
+			step.Text = T("Route unavailable")
+			destination.Text = T(if gui.AbsoluteSize.X < 600 then "See quest" else "Follow the quest instructions")
+			distanceLabel.Text = ""; resize(); return
 		end
 		local destinationHint = target.guidance == "destination"
 		if destinationHint and heading and heading == heading and math.abs(heading) < math.huge then

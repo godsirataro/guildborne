@@ -6,6 +6,7 @@ local thai: { [string]: string } = {
 	["Bearing only\nUse paths"] = "ทิศทางเท่านั้น\nเดินตามทาง",
 	["Route unavailable"] = "ยังนำทางไม่ได้",
 	["Follow the quest instructions"] = "ทำตามคำแนะนำของเควส",
+	["See quest"] = "ดูภารกิจ",
 	["Leave the Hall"] = "ออกทางประตูหอกิลด์",
 	["Follow the island path"] = "ตามทางเดินบนเกาะ",
 	["Reach your island bridge"] = "ไปทางเข้าสะพานของคุณ",
