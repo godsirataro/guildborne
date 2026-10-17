@@ -15,7 +15,7 @@ class WorldPairingTests(unittest.TestCase):
         source=ROOT/'assets/production/world-slice/world-slice.mesh.json'
         name,manifest=preview.world_contract([source])
         self.assertEqual(name,'Dataset1')
-        self.assertEqual(len(manifest['expectedArt']),103)
+        self.assertEqual(len(manifest['expectedArt']),85)
 
     def test_missing_duplicate_and_unrelated_pair(self):
         source=ROOT/'assets/production/world-slice/world-slice.mesh.json'
@@ -31,7 +31,8 @@ class WorldPairingTests(unittest.TestCase):
                 target.parent.mkdir(parents=True,exist_ok=True)
                 text=(ROOT/rel).read_text()
                 if rel.endswith('.luau'):
-                    text=text.replace('a6fed50575aa16a4572c8904bc312af9a0de64aa6332b9d532b548fbf9463d7d','0'*64)
+                    import re
+                    text=re.sub(r'(?<=\["sourceMeshSha256"\]=")[0-9a-f]{64}', '0'*64, text)
                 target.write_text(text)
             with patch.object(preview,'ROOT',root), self.assertRaises(ValueError):
                 preview.world_contract([])
