@@ -22,7 +22,7 @@ def main():
     check(set(meshes)==set(oldmeshes) and len(data['meshes'])==37,'Changed resource identity/count')
     check(data['placements']==prior['placements'] and len(data['placements'])==116,'Changed placement records')
     for mid,m in oldmeshes.items():
-        if mid not in REVISED:check(meshes.get(mid)==m,'Changed prior mesh '+mid)
+        if mid not in REVISED|{'arch__000','arch__001'}:check(meshes.get(mid)==m,'Changed prior mesh '+mid)
     check(collision['colliders']==old('assets/production/world-slice/collision.json')['colliders'] and len(collision['colliders'])==413,'Changed colliders')
     check(collision['sourceMeshSha256']==hashlib.sha256(raw).hexdigest(),'Stale collision source')
     clip=runpy.run_path(str(HERE/'check_terrain_composition.py'))['intersection_area']
@@ -57,7 +57,7 @@ def main():
     check(len(st)<=4000,'Total surface triangle budget')
     report=dict(status='OFFLINE_CENTRAL_FAIL' if errors else 'OFFLINE_CENTRAL_PASS',baseline='9b79d5c',
         sourceMeshSha256=hashlib.sha256(raw).hexdigest(),checkerSha256=hashlib.sha256(Path(__file__).read_bytes()).hexdigest(),
-        preservedMeshes=35,preservedPlacements=116,preservedColliders=413,revisedMeshes=rows,
+        preservedMeshes=33,preservedPlacements=116,preservedColliders=413,revisedMeshes=rows,
         surfaceTriangles=len(st),surfaceArea=area,expectedArea=expected,exclusions=EXCLUDED,errors=errors,
         studioTested=False,limits='Flat source surfaces only. No new raised geometry; existing sightlines unchanged geometrically. Runtime appearance, telegraph contrast, physics and human art approval not tested.')
     (HERE/'central-clearance.json').write_bytes((json.dumps(report,indent=2)+'\n').encode())

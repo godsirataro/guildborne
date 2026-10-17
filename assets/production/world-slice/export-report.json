@@ -171,12 +171,12 @@
         ]
       ],
       "scale": 7.0767045442735625,
-      "vertices": 1546,
-      "triangles": 2948,
+      "vertices": 2446,
+      "triangles": 3248,
       "selectiveBackTriangles": 0,
-      "materials": 3,
+      "materials": 9,
       "chunks": 2,
-      "height": 25.0
+      "height": 28.5
     },
     {
       "id": "ruin_wall",
@@ -416,8 +416,8 @@
   "uniqueMeshChunks": 37,
   "placements": 116,
   "authoredObjects": 103,
-  "uniqueTriangles": 44967,
-  "instancedTriangles": 94165,
+  "uniqueTriangles": 45267,
+  "instancedTriangles": 94465,
   "runtimeIds": null,
   "studioTested": false,
   "humanApproved": false,
@@ -427,8 +427,8 @@
       "sha256": "722572d1611325952965878af99bac9774079e854cd4bc0fd764640b98566513"
     },
     "collision.json": {
-      "bytes": 226210,
-      "sha256": "62803990c066afd9584bdf88c5f44cad70be82a4097146e1688ff36129ea150a"
+      "bytes": 226207,
+      "sha256": "68412e5c1199c17f0b6dafb969e9b368a164e812b8cfda1742fae522241269a8"
     },
     "intake.json": {
       "bytes": 7929,
@@ -447,20 +447,20 @@
       "sha256": "83d8959f9fc56353ed571fbe2dc52e4bcd64508e2399501cd45ac2ce3df0bf8c"
     },
     "woodland-threshold.blend": {
-      "bytes": 2087335,
-      "sha256": "c7d9fdaa9dd00f802198204b144dbab2eb9b995f48f56fd2db031e1d86b4dc99"
+      "bytes": 2103538,
+      "sha256": "6b080f8456c96fc0d64c18b3267db18080fc35ed60ed1ad6ce9d50b908bfb565"
     },
     "woodland-threshold.glb": {
-      "bytes": 3261088,
-      "sha256": "02582edb02b9aefb0b6c19fa792a66743c3a9af4c9a86a6ce23f17d5ec5a2bea"
+      "bytes": 3288288,
+      "sha256": "ee987980996bdd4369d1fd0a68863b826eedacd65cbf47b20ed737a1b3014262"
     },
     "woodland-threshold.png": {
-      "bytes": 2269544,
-      "sha256": "6555cd76bd92877cc82c8c304917b23da5cbd0fed39775c084c145e955dabff6"
+      "bytes": 2270136,
+      "sha256": "6d9b252babc11b4143f363ca75f960e1f2586596a8c957a5578b1a9cb9a49072"
     },
     "world-slice.mesh.json": {
-      "bytes": 1635839,
-      "sha256": "011091586afb5416cb2c205b2a3db3e6ca36e4e82a79abe5489b24e6385e825d"
+      "bytes": 1644067,
+      "sha256": "9baaf8de0faf3ff7f4a4f2c32ea692e48aa9dbb021f609e3530029ed7844ddc7"
     }
   }
 }

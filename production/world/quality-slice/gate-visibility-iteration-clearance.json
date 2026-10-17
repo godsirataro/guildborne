@@ -1,0 +1,182 @@
+{
+  "status": "OFFLINE_GATE_FAIL",
+  "baseline": "ba1aaa1",
+  "sourceMeshSha256": "ddda21e755d04b649a50416cbf783224fbcbf8014df59a99ff9e87f585cd2f77",
+  "checkerSha256": "0c699584f8d2f61258778d9c04378c38f484a0ea57f2d300a56cc00ba3458e4a",
+  "preservedMeshes": 35,
+  "preservedPlacements": 116,
+  "preservedColliders": 413,
+  "archChunks": [
+    {
+      "meshId": "arch__000",
+      "originalTriangles": 2000,
+      "addedTriangles": 0
+    },
+    {
+      "meshId": "arch__001",
+      "originalTriangles": 948,
+      "addedTriangles": 300
+    }
+  ],
+  "addedTriangles": 300,
+  "oldMasonryProjectionSamples": 1488,
+  "visibility": [
+    {
+      "camera": [
+        105,
+        94,
+        1545
+      ],
+      "samples": 824,
+      "baselineArchOccluded": [
+        98,
+        119,
+        120,
+        158,
+        180,
+        203,
+        371,
+        372,
+        373,
+        374,
+        375,
+        384,
+        385,
+        386,
+        387,
+        388,
+        397,
+        398,
+        403,
+        413,
+        414,
+        419,
+        430,
+        431,
+        448,
+        465,
+        466,
+        483
+      ],
+      "addedGeometryIntersections": [
+        360,
+        361,
+        371,
+        372,
+        384,
+        403
+      ],
+      "newlyOccluded": [
+        360,
+        361
+      ]
+    },
+    {
+      "camera": [
+        40,
+        12,
+        1510
+      ],
+      "samples": 824,
+      "baselineArchOccluded": [
+        97,
+        118,
+        119,
+        201,
+        202,
+        203,
+        358,
+        369,
+        370,
+        383,
+        384,
+        385,
+        399,
+        400,
+        417,
+        418,
+        420,
+        421,
+        438,
+        439,
+        440,
+        441,
+        459,
+        460,
+        461,
+        479,
+        480,
+        481
+      ],
+      "addedGeometryIntersections": [
+        369,
+        370,
+        384,
+        400,
+        420,
+        440,
+        441,
+        460,
+        461,
+        481
+      ],
+      "newlyOccluded": []
+    },
+    {
+      "camera": [
+        40,
+        22,
+        1435
+      ],
+      "samples": 824,
+      "baselineArchOccluded": [
+        78,
+        99,
+        120,
+        158,
+        180,
+        203,
+        365,
+        366,
+        367,
+        368,
+        376,
+        379,
+        380,
+        381,
+        382,
+        389,
+        394,
+        395,
+        396,
+        403,
+        411,
+        412,
+        413,
+        429,
+        430,
+        447,
+        448,
+        465,
+        466,
+        483
+      ],
+      "addedGeometryIntersections": [
+        78,
+        158,
+        431,
+        448,
+        466
+      ],
+      "newlyOccluded": [
+        431
+      ]
+    }
+  ],
+  "errors": [
+    "Newly blocked previously visible samples (105, 94, 1545)",
+    "Newly blocked previously visible samples (40, 22, 1435)"
+  ],
+  "studioTested": false,
+  "limits": "Source append-only geometry and finite projection/sightline samples. Not exact volume containment, all-camera, runtime appearance/physics or human art acceptance."
+}

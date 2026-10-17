@@ -78,6 +78,15 @@ for record in records:
     for point in (c,b,a):
      back.append(len(vertices));vertices.append(point-normal*.02)
     triangles.append(back);face_colors.append(colors.index(rgb)+1);selective_backs+=1
+ # Original gate additions are appended after reviewed source topology, keeping
+ # both arch chunk IDs/placement records and the source geometry byte-identical.
+ if record['id']=='arch':
+  import runpy
+  gate=runpy.run_path(str(ROOT/'production/world/quality-slice/gate_recipe.py'))['make_gate']()
+  offset=len(vertices);color_offset=len(colors)
+  vertices.extend(Vector((x,-z,y)) for x,y,z in gate['vertices'])
+  triangles.extend([[offset+i for i in f] for f in gate['triangles']])
+  colors.extend(gate['colors']);face_colors.extend(color_offset+i for i in gate['faceColors'])
  assert triangles
  # Keep original material colors, with roughness unified for a coherent matte miniature look.
  material_list=[]

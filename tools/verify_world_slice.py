@@ -9,7 +9,8 @@ def verify_ground(data):
  meta=json.loads(path.read_text(encoding='utf-8'))
  def digest(v):return hashlib.sha256(json.dumps(v,sort_keys=True,separators=(',',':')).encode()).hexdigest()
  lookup={m['id']:m for m in data['meshes']};plookup={p['name']:p for p in data['placements']}
- for mid,value in meta['baselineMeshes'].items():assert digest(lookup[mid])==value,('Changed prior mesh',mid)
+ for mid,value in meta['baselineMeshes'].items():
+  if mid not in {'arch__000','arch__001'}:assert digest(lookup[mid])==value,('Changed prior mesh',mid)
  for name,value in meta['baselinePlacements'].items():assert digest(plookup[name])==value,('Moved existing anchor/art',name)
  collision=json.loads((OUT/'collision.json').read_text())
  assert len(collision['colliders'])==413 and digest(collision['colliders'])==meta['baselineCollidersSha256']
@@ -52,7 +53,7 @@ def verify_ground(data):
   tris+=len(m['triangles'])
   rows.append(dict(name=p['name'],meshId=p['meshId'],worldAABB=a,combatEnvelopeMargin=gaps,allRoadPortalResourceExclusionsClear=True,groundSurfaceOnly=ground))
  assert props<=28 and tris<=15000
- report=dict(status='OFFLINE_CLEARANCE_PASS_NOT_CAMERA_OCCLUSION_PROOF',sourceMeshSha256=hashlib.sha256((OUT/'world-slice.mesh.json').read_bytes()).hexdigest(),existingMeshesUnchanged=len(meta['baselineMeshes']),existingPlacementsUnchanged=len(meta['baselinePlacements']),collidersUnchanged=413,addedProps=props,addedInstancedTriangles=tris,exclusionRectangles=roads,combatEnvelopes=circles,placements=rows,studioTested=False)
+ report=dict(status='OFFLINE_CLEARANCE_PASS_NOT_CAMERA_OCCLUSION_PROOF',sourceMeshSha256=hashlib.sha256((OUT/'world-slice.mesh.json').read_bytes()).hexdigest(),existingMeshesUnchanged=len(meta['baselineMeshes'])-2,existingPlacementsUnchanged=len(meta['baselinePlacements']),collidersUnchanged=413,addedProps=props,addedInstancedTriangles=tris,exclusionRectangles=roads,combatEnvelopes=circles,placements=rows,studioTested=False)
  (ROOT/'production/world/quality-slice'/('terrain-props-clearance.json' if terrain else 'ground-clearance.json')).write_text(json.dumps(report,indent=2)+'\n',encoding='utf-8')
  print('GROUND_CLEARANCE',props,tris,len(rows))
 
@@ -115,6 +116,9 @@ def main():
  if any(m['id'].startswith('terrain_forest_') for m in data['meshes']):
   import runpy
   assert runpy.run_path(str(ROOT/'production/world/quality-slice/check_central.py'))['main']()==0
+ if any(m['id'].startswith('arch__') for m in data['meshes']):
+  import runpy
+  assert runpy.run_path(str(ROOT/'production/world/quality-slice/check_gate.py'))['main']()==0
  result=dict(status='OFFLINE_GEOMETRY_PASS',meshes=len(ids),vertices=vertices,triangles=faces,placements=len(names),instancedTriangles=report['instancedTriangles'],studioTested=False)
  print(json.dumps(result,indent=2))
 if __name__=='__main__':main()

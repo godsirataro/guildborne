@@ -1,0 +1,157 @@
+{
+  "status": "BLENDER_COMPARISON_NOT_STUDIO",
+  "views": [
+    {
+      "revision": "before",
+      "view": "overview",
+      "cameraWorld": [
+        105,
+        94,
+        1545
+      ],
+      "targetWorld": [
+        0,
+        4,
+        1410
+      ],
+      "lensMm": 35,
+      "source": "production/world/quality-slice/gate-before.blend",
+      "sourceSha256": "c7d9fdaa9dd00f802198204b144dbab2eb9b995f48f56fd2db031e1d86b4dc99",
+      "image": "gate-overview-before.png",
+      "sha256": "6c26a1726e442ddeb9c66fbedaf8ceb63421df6efd1205488722f44d46e2bab4"
+    },
+    {
+      "revision": "before",
+      "view": "arch",
+      "cameraWorld": [
+        40,
+        22,
+        1435
+      ],
+      "targetWorld": [
+        0,
+        7,
+        1380
+      ],
+      "lensMm": 35,
+      "source": "production/world/quality-slice/gate-before.blend",
+      "sourceSha256": "c7d9fdaa9dd00f802198204b144dbab2eb9b995f48f56fd2db031e1d86b4dc99",
+      "image": "gate-arch-before.png",
+      "sha256": "d2664fea267be55bf3eb8bad701a92947fc521bc3685706992e84d64570d0714"
+    },
+    {
+      "revision": "before",
+      "view": "reverse",
+      "cameraWorld": [
+        -35,
+        22,
+        1325
+      ],
+      "targetWorld": [
+        0,
+        16,
+        1380
+      ],
+      "lensMm": 35,
+      "source": "production/world/quality-slice/gate-before.blend",
+      "sourceSha256": "c7d9fdaa9dd00f802198204b144dbab2eb9b995f48f56fd2db031e1d86b4dc99",
+      "image": "gate-reverse-before.png",
+      "sha256": "fad370404be1364c2bf04a66f21b65436fd5bbe6b05f2171b32ce5c4cfe905ee"
+    },
+    {
+      "revision": "before",
+      "view": "identity",
+      "cameraWorld": [
+        40,
+        25,
+        1440
+      ],
+      "targetWorld": [
+        0,
+        14,
+        1380
+      ],
+      "lensMm": 35,
+      "source": "production/world/quality-slice/gate-before.blend",
+      "sourceSha256": "c7d9fdaa9dd00f802198204b144dbab2eb9b995f48f56fd2db031e1d86b4dc99",
+      "image": "gate-identity-before.png",
+      "sha256": "1013ecce473e3ba67b20e76a1d0711d563c95eb9833d277ff60ba7c9d055e579"
+    },
+    {
+      "revision": "after",
+      "view": "overview",
+      "cameraWorld": [
+        105,
+        94,
+        1545
+      ],
+      "targetWorld": [
+        0,
+        4,
+        1410
+      ],
+      "lensMm": 35,
+      "source": "assets/production/world-slice/woodland-threshold.blend",
+      "sourceSha256": "6b080f8456c96fc0d64c18b3267db18080fc35ed60ed1ad6ce9d50b908bfb565",
+      "image": "gate-overview-after.png",
+      "sha256": "5124c9a1594d18d554b0ca7acf20311239aecf5a7321bbd6b865328484f69812"
+    },
+    {
+      "revision": "after",
+      "view": "arch",
+      "cameraWorld": [
+        40,
+        22,
+        1435
+      ],
+      "targetWorld": [
+        0,
+        7,
+        1380
+      ],
+      "lensMm": 35,
+      "source": "assets/production/world-slice/woodland-threshold.blend",
+      "sourceSha256": "6b080f8456c96fc0d64c18b3267db18080fc35ed60ed1ad6ce9d50b908bfb565",
+      "image": "gate-arch-after.png",
+      "sha256": "d2f057466f11d28628ae4c1b7515e9e127bc8a629df35c25af2525d6d127d707"
+    },
+    {
+      "revision": "after",
+      "view": "reverse",
+      "cameraWorld": [
+        -35,
+        22,
+        1325
+      ],
+      "targetWorld": [
+        0,
+        16,
+        1380
+      ],
+      "lensMm": 35,
+      "source": "assets/production/world-slice/woodland-threshold.blend",
+      "sourceSha256": "6b080f8456c96fc0d64c18b3267db18080fc35ed60ed1ad6ce9d50b908bfb565",
+      "image": "gate-reverse-after.png",
+      "sha256": "7be90811d70c9ab0b8051a960dfbd93680ae88863576b9751e1aa175f58480c2"
+    },
+    {
+      "revision": "after",
+      "view": "identity",
+      "cameraWorld": [
+        40,
+        25,
+        1440
+      ],
+      "targetWorld": [
+        0,
+        14,
+        1380
+      ],
+      "lensMm": 35,
+      "source": "assets/production/world-slice/woodland-threshold.blend",
+      "sourceSha256": "6b080f8456c96fc0d64c18b3267db18080fc35ed60ed1ad6ce9d50b908bfb565",
+      "image": "gate-identity-after.png",
+      "sha256": "9867e2aec41bcb80d51953f66715ab552e9496b46f1f818ddb39877556465625"
+    }
+  ]
+}

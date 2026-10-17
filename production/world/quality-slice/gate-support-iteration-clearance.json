@@ -1,0 +1,213 @@
+{
+  "status": "OFFLINE_GATE_FAIL",
+  "baseline": "ba1aaa1",
+  "sourceMeshSha256": "824fc9dfd0151db3158d05a75ca64c73ec08cda73bfcace8f3a0ef4a709d6016",
+  "checkerSha256": "71f868348c4ff51cae049d7dba1f5422dc99400180120db8cfdc05de2c2a6775",
+  "preservedMeshes": 35,
+  "preservedPlacements": 116,
+  "preservedColliders": 413,
+  "archChunks": [
+    {
+      "meshId": "arch__000",
+      "originalTriangles": 2000,
+      "addedTriangles": 0
+    },
+    {
+      "meshId": "arch__001",
+      "originalTriangles": 948,
+      "addedTriangles": 300
+    }
+  ],
+  "addedTriangles": 300,
+  "oldMasonryProjectionSamples": 1488,
+  "attachmentSamples": [
+    {
+      "localXY": [
+        -8.95,
+        8
+      ],
+      "back": 1.2,
+      "front": 1.6,
+      "oldSurfaceInsideRelief": true
+    },
+    {
+      "localXY": [
+        8.95,
+        8
+      ],
+      "back": 1.2,
+      "front": 1.6,
+      "oldSurfaceInsideRelief": true
+    },
+    {
+      "localXY": [
+        3,
+        23.7
+      ],
+      "back": 0.95,
+      "front": 1.61,
+      "oldSurfaceInsideRelief": true
+    }
+  ],
+  "visibility": [
+    {
+      "camera": [
+        105,
+        94,
+        1545
+      ],
+      "samples": 824,
+      "baselineArchOccluded": [
+        98,
+        119,
+        120,
+        158,
+        180,
+        203,
+        371,
+        372,
+        373,
+        374,
+        375,
+        384,
+        385,
+        386,
+        387,
+        388,
+        397,
+        398,
+        403,
+        413,
+        414,
+        419,
+        430,
+        431,
+        448,
+        465,
+        466,
+        483
+      ],
+      "addedGeometryIntersections": [
+        371,
+        384,
+        403
+      ],
+      "newlyOccluded": []
+    },
+    {
+      "camera": [
+        40,
+        12,
+        1510
+      ],
+      "samples": 824,
+      "baselineArchOccluded": [
+        97,
+        118,
+        119,
+        201,
+        202,
+        203,
+        358,
+        369,
+        370,
+        383,
+        384,
+        385,
+        399,
+        400,
+        417,
+        418,
+        420,
+        421,
+        438,
+        439,
+        440,
+        441,
+        459,
+        460,
+        461,
+        479,
+        480,
+        481
+      ],
+      "addedGeometryIntersections": [
+        369,
+        370,
+        384,
+        400,
+        420,
+        440,
+        441,
+        460,
+        461,
+        480,
+        481
+      ],
+      "newlyOccluded": []
+    },
+    {
+      "camera": [
+        40,
+        22,
+        1435
+      ],
+      "samples": 824,
+      "baselineArchOccluded": [
+        78,
+        99,
+        120,
+        158,
+        180,
+        203,
+        365,
+        366,
+        367,
+        368,
+        376,
+        379,
+        380,
+        381,
+        382,
+        389,
+        394,
+        395,
+        396,
+        403,
+        411,
+        412,
+        413,
+        429,
+        430,
+        447,
+        448,
+        465,
+        466,
+        483
+      ],
+      "addedGeometryIntersections": [
+        78,
+        158,
+        448,
+        466
+      ],
+      "newlyOccluded": []
+    }
+  ],
+  "errors": [
+    "Relief outside old masonry projection 28",
+    "Relief outside old masonry projection 29",
+    "Relief outside old masonry projection 30",
+    "Relief outside old masonry projection 30",
+    "Relief outside old masonry projection 30",
+    "Relief outside old masonry projection 31",
+    "Relief outside old masonry projection 32",
+    "Relief outside old masonry projection 33",
+    "Relief outside old masonry projection 34",
+    "Relief outside old masonry projection 35",
+    "Relief outside old masonry projection 35",
+    "Relief outside old masonry projection 35"
+  ],
+  "studioTested": false,
+  "limits": "Source append-only geometry and finite projection/sightline samples. Not exact volume containment, all-camera, runtime appearance/physics or human art acceptance."
+}

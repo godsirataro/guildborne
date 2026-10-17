@@ -1,9 +1,9 @@
 {
   "status": "OFFLINE_TERRAIN_CLEARANCE_PASS",
-  "sourceMeshSha256": "011091586afb5416cb2c205b2a3db3e6ca36e4e82a79abe5489b24e6385e825d",
+  "sourceMeshSha256": "9baaf8de0faf3ff7f4a4f2c32ea692e48aa9dbb021f609e3530029ed7844ddc7",
   "baselineCommit": "768ae4e07a519fbc86a9586e5364f9dfb149f2d6",
-  "checkerSha256": "7d71ca59f661215f1e09725dbaf18cdd6e288157f79d2385261cf0f4ad179ac9",
-  "baselineMeshesPreserved": 27,
+  "checkerSha256": "e7ebb04d616f72f45dfad8670f5d8bf9d73069176338903a4954b8ecbcdf847a",
+  "baselineMeshesPreserved": 25,
   "baselinePlacementsPreserved": 102,
   "removedPatchMeshes": [
     "ground_court__000",

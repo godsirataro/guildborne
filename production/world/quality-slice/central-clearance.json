@@ -1,9 +1,9 @@
 {
   "status": "OFFLINE_CENTRAL_PASS",
   "baseline": "9b79d5c",
-  "sourceMeshSha256": "011091586afb5416cb2c205b2a3db3e6ca36e4e82a79abe5489b24e6385e825d",
-  "checkerSha256": "f3b926f8661acbef296dc15b08ebd941e21c740d6099efef4da403a4cb7163ef",
-  "preservedMeshes": 35,
+  "sourceMeshSha256": "9baaf8de0faf3ff7f4a4f2c32ea692e48aa9dbb021f609e3530029ed7844ddc7",
+  "checkerSha256": "40eaa669e77e4087c506d8274ecc63100472f15164362ee213c6856fe3663bcc",
+  "preservedMeshes": 33,
   "preservedPlacements": 116,
   "preservedColliders": 413,
   "revisedMeshes": [

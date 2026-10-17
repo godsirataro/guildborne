@@ -1,9 +1,9 @@
 {
   "status": "OFFLINE_ARRIVAL_PASS",
   "baseline": "3b5e161",
-  "sourceMeshSha256": "011091586afb5416cb2c205b2a3db3e6ca36e4e82a79abe5489b24e6385e825d",
-  "checkerSha256": "ac7cde5ce1251bb9eab5052bbfe2470962ed78cb8d8dba7f39c257a3c6dca6d8",
-  "retainedMeshes": 32,
+  "sourceMeshSha256": "9baaf8de0faf3ff7f4a4f2c32ea692e48aa9dbb021f609e3530029ed7844ddc7",
+  "checkerSha256": "245c6433f2a0e4f69eed175459c86f890beceed559a5bfe88ab2cb6e328cd4f4",
+  "retainedMeshes": 30,
   "retainedPlacements": 115,
   "retainedColliders": 413,
   "revisedMeshes": [

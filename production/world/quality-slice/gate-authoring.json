@@ -1,0 +1,37 @@
+{
+  "status": "ORIGINAL_GATE_DETAIL_BLENDER_EXPORTED_NOT_STUDIO_TESTED",
+  "baseline": "ba1aaa16b97c74a4f663ccdb2d72f0d2d9510a09",
+  "sourceMeshSha256": "9baaf8de0faf3ff7f4a4f2c32ea692e48aa9dbb021f609e3530029ed7844ddc7",
+  "recipe": "production/world/quality-slice/gate_recipe.py",
+  "recipeSha256": "915144816cf5cd0e63439fba953ca8b051a1f2b497269cf7dbf00536d97bc875",
+  "provenance": "Original carved pine/leaf keystone and asymmetric pier relief geometry authored locally. Existing reviewed CC0 arch and ivy geometry retained; pine language reuses original arrival charter motif. No third-party download/generator/font/paid asset/upload.",
+  "chosenResources": [
+    "arch__000",
+    "arch__001"
+  ],
+  "sourceArchTopologyPreserved": true,
+  "preservedOtherMeshes": 35,
+  "preservedPlacements": 116,
+  "preservedColliders": 413,
+  "addedTriangles": 300,
+  "addedVertices": 182,
+  "totalResources": 37,
+  "totalVertices": 32321,
+  "totalUniqueTriangles": 45267,
+  "totalInstancedTriangles": 94465,
+  "addedPlacements": 0,
+  "budget": {
+    "addedTriangles": 400,
+    "trianglesPerChunk": 2000
+  },
+  "actualArchChunks": [
+    2000,
+    1248
+  ],
+  "localCrownMaxY": 28.5,
+  "priorLocalMaxY": 25,
+  "footprintUnchanged": true,
+  "runtimeIds": null,
+  "studioTested": false,
+  "humanApproved": false
+}
