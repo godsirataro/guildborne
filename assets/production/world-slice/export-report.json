@@ -331,13 +331,31 @@
       "materials": 1,
       "chunks": 3,
       "height": 12.999999046325684
+    },
+    {
+      "id": "ground_court",
+      "authorship": "Original Guildborne ground surface; palette references existing native Island",
+      "vertices": 37,
+      "triangles": 60,
+      "materials": 3,
+      "chunks": 1,
+      "height": 0.02
+    },
+    {
+      "id": "ground_leaf",
+      "authorship": "Original Guildborne ground surface; palette references existing native Island",
+      "vertices": 37,
+      "triangles": 60,
+      "materials": 3,
+      "chunks": 1,
+      "height": 0.02
     }
   ],
-  "uniqueMeshChunks": 27,
-  "placements": 85,
-  "authoredObjects": 72,
-  "uniqueTriangles": 37074,
-  "instancedTriangles": 76994,
+  "uniqueMeshChunks": 29,
+  "placements": 112,
+  "authoredObjects": 99,
+  "uniqueTriangles": 37194,
+  "instancedTriangles": 85934,
   "runtimeIds": null,
   "studioTested": false,
   "humanApproved": false,
@@ -347,8 +365,8 @@
       "sha256": "722572d1611325952965878af99bac9774079e854cd4bc0fd764640b98566513"
     },
     "collision.json": {
-      "bytes": 213913,
-      "sha256": "d70f38eb9a89528bf8cdfc69c87fd8c808ab5da90fc7891608d4d6f233911345"
+      "bytes": 223971,
+      "sha256": "0327a8014f56b4860303630382a545931c9d72e606e38a9dc500dec25b470f2c"
     },
     "intake.json": {
       "bytes": 7929,
@@ -367,20 +385,20 @@
       "sha256": "83d8959f9fc56353ed571fbe2dc52e4bcd64508e2399501cd45ac2ce3df0bf8c"
     },
     "woodland-threshold.blend": {
-      "bytes": 1020036,
-      "sha256": "e5cf5dd9a48373634e1e7fe96db3446754918d33b01a02473a701faa104c1523"
+      "bytes": 1026720,
+      "sha256": "89712f4eccdda04bb15cab51a1d8d3064901dd426cbbc6a3573bf915c70bbbc9"
     },
     "woodland-threshold.glb": {
-      "bytes": 2308568,
-      "sha256": "f4eeb04d27dc6aeded014df89d70111b9b0eab1de9280ecb1ef7f9ba0918c9a9"
+      "bytes": 2317652,
+      "sha256": "ab713dfc7ed669252904e4c03abc6e68ec1392db821518f69dd99f1b5d6060d2"
     },
     "woodland-threshold.png": {
-      "bytes": 2166929,
-      "sha256": "ddcb143c608c518417e6f52576319f32bf29c5cf2dcf2a34fa9bab6809ebed98"
+      "bytes": 2220804,
+      "sha256": "35597c14101072f2993ee1e3ea62c453be973a51ba3903702f2faf494507c03b"
     },
     "world-slice.mesh.json": {
-      "bytes": 1383057,
-      "sha256": "634a1067f4291d324f09b7b8d7cdcbb2aea748e251701ce6f57dfbc00c37a26d"
+      "bytes": 1390373,
+      "sha256": "8b4c7aa687d4b265b2e3d7da7c7548aef64f889fd093b9d1219eee094eab1911"
     }
   }
 }

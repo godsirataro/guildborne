@@ -1,0 +1,162 @@
+{
+  "status": "OFFLINE_SAMPLED_VISIBILITY_PASS",
+  "sourceMeshSha256": "8b4c7aa687d4b265b2e3d7da7c7548aef64f889fd093b9d1219eee094eab1911",
+  "authoringMetadataSha256": "784e26e1abef925c877e9f6efc35f19ecbd426f68aaa2883ea5676f8ebdf1ccc",
+  "checkerSha256": "8e3b135c2e7822b2323c3f2321b7d9a3ffa6efde292ec4c4b635187a4ac8724a",
+  "camera": [
+    105.0,
+    94.0,
+    1545.0
+  ],
+  "gridSpacingStuds": 5,
+  "telegraphSampleHeight": 0.09,
+  "addedProps": 17,
+  "testedTriangles": 8340,
+  "anchors": [
+    {
+      "name": "Arrival",
+      "target": [
+        0,
+        4,
+        1505
+      ],
+      "hit": null
+    },
+    {
+      "name": "Fallback",
+      "target": [
+        0,
+        4,
+        1495
+      ],
+      "hit": null
+    },
+    {
+      "name": "ReturnGate",
+      "target": [
+        0,
+        7,
+        1517
+      ],
+      "hit": null
+    },
+    {
+      "name": "Wood",
+      "target": [
+        -35,
+        4,
+        1455
+      ],
+      "hit": null
+    },
+    {
+      "name": "Herbs",
+      "target": [
+        35,
+        4,
+        1455
+      ],
+      "hit": null
+    },
+    {
+      "name": "Scout",
+      "target": [
+        -60,
+        4,
+        1410
+      ],
+      "hit": null
+    },
+    {
+      "name": "Archer",
+      "target": [
+        60,
+        4,
+        1410
+      ],
+      "hit": null
+    },
+    {
+      "name": "Boar",
+      "target": [
+        0,
+        4,
+        1410
+      ],
+      "hit": null
+    },
+    {
+      "name": "Captain",
+      "target": [
+        0,
+        8,
+        1330
+      ],
+      "hit": null
+    }
+  ],
+  "grids": [
+    {
+      "name": "boar",
+      "centerXZ": [
+        0,
+        1410
+      ],
+      "radius": 53,
+      "samples": 349,
+      "occluded": 0,
+      "hits": []
+    },
+    {
+      "name": "captain",
+      "centerXZ": [
+        0,
+        1330
+      ],
+      "radius": 42,
+      "samples": 216,
+      "occluded": 0,
+      "hits": []
+    },
+    {
+      "name": "scout",
+      "centerXZ": [
+        -60,
+        1410
+      ],
+      "radius": 32,
+      "samples": 125,
+      "occluded": 0,
+      "hits": []
+    },
+    {
+      "name": "archer",
+      "centerXZ": [
+        60,
+        1410
+      ],
+      "radius": 32,
+      "samples": 125,
+      "occluded": 0,
+      "hits": []
+    }
+  ],
+  "studioTested": false,
+  "method": "Double-sided Moller-Trumbore finite segment intersection; nearest added-prop hit",
+  "limits": [
+    "One fixed camera; no other viewpoints or animated poses tested",
+    "Finite sampling cannot prove visibility between grid points",
+    "Excludes baseline geometry, overlays, shadows, transparency and UI",
+    "Sample heights approximate native Island/BossRise/RootAscent, not runtime raycasts",
+    "Envelope grids are conservative authoring samples, not executed attack footprints"
+  ],
+  "sourceContracts": [
+    "src/server/Services/AdventureMapKit.luau",
+    "src/server/Services/RegionalWorld.luau",
+    "src/shared/Config/City.luau",
+    "src/shared/Data/Expansion.luau",
+    "src/server/Config/AdventureEnemyProfiles.luau",
+    "src/server/Systems/AdventurePatterns.luau",
+    "src/shared/Data/AdventureTelegraph.luau"
+  ]
+}
