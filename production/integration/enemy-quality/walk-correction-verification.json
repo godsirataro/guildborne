@@ -1,0 +1,107 @@
+{
+  "status": "PASS_NUMERICAL_SOURCE_CORRECTION",
+  "baselineCommit": "967dc71",
+  "sourceHashes": {
+    "Atlas_Monsters.png": "b970ed1359ce749fd81a8395d58ff5f3044d843213e17fb94b97892d417c0af9",
+    "License.txt": "de990ef6fc68cffd7fd1ae342c4d0c823b541b8848d8f76bca5d3339f4de6f6e",
+    "Monkroose.gltf": "4e984e22bef1a49da0ff92154f5747d3e61997637937532bc066867f08e8e719",
+    "Tribal.gltf": "ffe686b0f0e7a2fb968ea9829358f059df903d2a60c9a94bd3516b1c3d42b7c4"
+  },
+  "actors": [
+    {
+      "id": "greenwood_scout",
+      "changedFrames": [
+        25,
+        26,
+        27,
+        28,
+        29,
+        30
+      ],
+      "changedBone": "LowerArm.R",
+      "footVertices": 445,
+      "maxFootTrajectoryErrorStud": 0.0,
+      "oldEndpointRotationDegrees": 6.899063579910217,
+      "newEndpointRotationDegrees": 0.0,
+      "newMaxVertexEndpointErrorStud": 8.988438573702099e-07,
+      "oldAngularStepsDegrees": {
+        "0->1": 0.31739092517597417,
+        "23->24": 1.733453334012512,
+        "24->25": 1.9687468520775102,
+        "25->26": 1.7795527483862723,
+        "26->27": 1.2600525289032822,
+        "27->28": 0.6342604948376489,
+        "28->29": 3.3755984671119785,
+        "29->30": 3.4090224626150327
+      },
+      "newAngularStepsDegrees": {
+        "0->1": 0.31739092517597417,
+        "23->24": 1.733453334012512,
+        "24->25": 0.7879483003743847,
+        "25->26": 1.4470178446778776,
+        "26->27": 2.4032415162198277,
+        "27->28": 2.6502337309144735,
+        "28->29": 2.15382211278307,
+        "29->30": 0.9299814102647858
+      },
+      "maxFinalSixAngularStepDegrees": 2.6502337309144735,
+      "firstAngularStepDegrees": 0.31739092517597417,
+      "boundaryAngularStepMagnitudeDifferenceDegrees": 0.6125904850888115,
+      "motionReviewRecommendation": "Endpoint position is closed, but final and first angular step magnitudes differ. Review repeated loops for residual speed change; this numerical pass does not assert tangent continuity or visual acceptance.",
+      "oldMinGeometryYStud": -0.11319508254255446,
+      "newMinGeometryYStud": -0.11319508254255446,
+      "blenderBoundsSamples": 49,
+      "maxBlenderBoundsErrorStud": 1.63937349206833e-06,
+      "weightedMeshSha256": "551cb55ee4f15ada14d8936483c75be5bd2a613e0336e0cb9be23c075a7be486"
+    },
+    {
+      "id": "forest_captain",
+      "changedFrames": [
+        25,
+        26,
+        27,
+        28,
+        29,
+        30
+      ],
+      "changedBone": "LowerArm.R",
+      "footVertices": 438,
+      "maxFootTrajectoryErrorStud": 0.0,
+      "oldEndpointRotationDegrees": 6.899060785622139,
+      "newEndpointRotationDegrees": 3.4150945850063763e-06,
+      "newMaxVertexEndpointErrorStud": 1.6673811063940778e-06,
+      "oldAngularStepsDegrees": {
+        "0->1": 0.31738226778742656,
+        "23->24": 1.733451932125549,
+        "24->25": 1.9687461875429144,
+        "25->26": 1.7795369161592156,
+        "26->27": 1.2600697024514282,
+        "27->28": 0.6342581613513689,
+        "28->29": 3.3755848769830266,
+        "29->30": 3.409039266267207
+      },
+      "newAngularStepsDegrees": {
+        "0->1": 0.31738226778742656,
+        "23->24": 1.733451932125549,
+        "24->25": 0.7876813667288659,
+        "25->26": 1.4470737471390505,
+        "26->27": 2.4031900363077945,
+        "27->28": 2.6501135882256586,
+        "28->29": 2.1537054980342893,
+        "29->30": 0.9299280670632726
+      },
+      "maxFinalSixAngularStepDegrees": 2.6501135882256586,
+      "firstAngularStepDegrees": 0.31738226778742656,
+      "boundaryAngularStepMagnitudeDifferenceDegrees": 0.6125457992758461,
+      "motionReviewRecommendation": "Endpoint position is closed, but final and first angular step magnitudes differ. Review repeated loops for residual speed change; this numerical pass does not assert tangent continuity or visual acceptance.",
+      "oldMinGeometryYStud": -0.19786974983844174,
+      "newMinGeometryYStud": -0.19786974983844174,
+      "blenderBoundsSamples": 49,
+      "maxBlenderBoundsErrorStud": 2.1780554826378307e-06,
+      "weightedMeshSha256": "74b7d89ade3eedc6604710a4604e3178dd34098c591066587a2960064d22eac0"
+    }
+  ],
+  "studioTested": false,
+  "groundingAccepted": false,
+  "visualLoopAccepted": false
+}

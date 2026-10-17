@@ -1,0 +1,45 @@
+14:48:58 | INFO: Data are loaded, start creating Blender stuff
+14:48:58 | INFO: Blender create Mesh node Cube.102
+14:48:59 | INFO: glTF import finished in 0.30s
+C:\Work\MySelf\Guildborne-enemy-quality\tools\blender_enemy_slice.py:193: DeprecationWarning: 'World.use_nodes' is expected to be removed in Blender 6.0
+  scene.world = bpy.data.worlds.new('EnemyReviewWorld'); scene.world.use_nodes = True
+00:08.797  render           | Saved: 'C:\Work\MySelf\Guildborne-enemy-quality\assets\production\enemy-slice\review\greenwood_scout\Idle-000.png'
+00:11.032  render           | Saved: 'C:\Work\MySelf\Guildborne-enemy-quality\assets\production\enemy-slice\review\greenwood_scout\Idle-015.png'
+00:13.313  render           | Saved: 'C:\Work\MySelf\Guildborne-enemy-quality\assets\production\enemy-slice\review\greenwood_scout\Idle-030.png'
+00:15.453  render           | Saved: 'C:\Work\MySelf\Guildborne-enemy-quality\assets\production\enemy-slice\review\greenwood_scout\Walk-000.png'
+00:17.766  render           | Saved: 'C:\Work\MySelf\Guildborne-enemy-quality\assets\production\enemy-slice\review\greenwood_scout\Walk-015.png'
+00:19.969  render           | Saved: 'C:\Work\MySelf\Guildborne-enemy-quality\assets\production\enemy-slice\review\greenwood_scout\Walk-030.png'
+00:22.110  render           | Saved: 'C:\Work\MySelf\Guildborne-enemy-quality\assets\production\enemy-slice\review\greenwood_scout\Weapon-000.png'
+00:24.157  render           | Saved: 'C:\Work\MySelf\Guildborne-enemy-quality\assets\production\enemy-slice\review\greenwood_scout\Weapon-013.png'
+00:26.219  render           | Saved: 'C:\Work\MySelf\Guildborne-enemy-quality\assets\production\enemy-slice\review\greenwood_scout\Weapon-026.png'
+00:28.532  render           | Saved: 'C:\Work\MySelf\Guildborne-enemy-quality\assets\production\enemy-slice\review\greenwood_scout\HitReact-000.png'
+00:30.828  render           | Saved: 'C:\Work\MySelf\Guildborne-enemy-quality\assets\production\enemy-slice\review\greenwood_scout\HitReact-009.png'
+00:33.047  render           | Saved: 'C:\Work\MySelf\Guildborne-enemy-quality\assets\production\enemy-slice\review\greenwood_scout\HitReact-018.png'
+00:36.000  render           | Saved: 'C:\Work\MySelf\Guildborne-enemy-quality\assets\production\enemy-slice\review\greenwood_scout\Death-000.png'
+00:38.985  render           | Saved: 'C:\Work\MySelf\Guildborne-enemy-quality\assets\production\enemy-slice\review\greenwood_scout\Death-011.png'
+00:41.860  render           | Saved: 'C:\Work\MySelf\Guildborne-enemy-quality\assets\production\enemy-slice\review\greenwood_scout\Death-023.png'
+Info: Saved as "source-review.blend"
+ENEMY_BLENDER_EXPORTED greenwood_scout 4792 6620
+14:49:35 | INFO: Data are loaded, start creating Blender stuff
+14:49:35 | INFO: Blender create Mesh node Cube.110
+14:49:36 | INFO: glTF import finished in 0.21s
+00:45.703  render           | Saved: 'C:\Work\MySelf\Guildborne-enemy-quality\assets\production\enemy-slice\review\forest_captain\Idle-000.png'
+00:48.125  render           | Saved: 'C:\Work\MySelf\Guildborne-enemy-quality\assets\production\enemy-slice\review\forest_captain\Idle-015.png'
+00:51.000  render           | Saved: 'C:\Work\MySelf\Guildborne-enemy-quality\assets\production\enemy-slice\review\forest_captain\Idle-030.png'
+00:53.938  render           | Saved: 'C:\Work\MySelf\Guildborne-enemy-quality\assets\production\enemy-slice\review\forest_captain\Walk-000.png'
+00:56.782  render           | Saved: 'C:\Work\MySelf\Guildborne-enemy-quality\assets\production\enemy-slice\review\forest_captain\Walk-015.png'
+01:00.453  render           | Saved: 'C:\Work\MySelf\Guildborne-enemy-quality\assets\production\enemy-slice\review\forest_captain\Walk-030.png'
+01:03.313  render           | Saved: 'C:\Work\MySelf\Guildborne-enemy-quality\assets\production\enemy-slice\review\forest_captain\Weapon-000.png'
+01:06.094  render           | Saved: 'C:\Work\MySelf\Guildborne-enemy-quality\assets\production\enemy-slice\review\forest_captain\Weapon-013.png'
+01:09.032  render           | Saved: 'C:\Work\MySelf\Guildborne-enemy-quality\assets\production\enemy-slice\review\forest_captain\Weapon-026.png'
+01:11.985  render           | Saved: 'C:\Work\MySelf\Guildborne-enemy-quality\assets\production\enemy-slice\review\forest_captain\HitReact-000.png'
+01:14.891  render           | Saved: 'C:\Work\MySelf\Guildborne-enemy-quality\assets\production\enemy-slice\review\forest_captain\HitReact-009.png'
+01:17.953  render           | Saved: 'C:\Work\MySelf\Guildborne-enemy-quality\assets\production\enemy-slice\review\forest_captain\HitReact-018.png'
+01:20.594  render           | Saved: 'C:\Work\MySelf\Guildborne-enemy-quality\assets\production\enemy-slice\review\forest_captain\Death-000.png'
+01:23.172  render           | Saved: 'C:\Work\MySelf\Guildborne-enemy-quality\assets\production\enemy-slice\review\forest_captain\Death-011.png'
+01:25.672  render           | Saved: 'C:\Work\MySelf\Guildborne-enemy-quality\assets\production\enemy-slice\review\forest_captain\Death-023.png'
+Info: Saved as "source-review.blend"
+ENEMY_BLENDER_EXPORTED forest_captain 3495 5824
+Blender 5.2.1 LTS (hash 9e2066aef7ef built 2026-08-25 02:38:20)
+
+Blender quit

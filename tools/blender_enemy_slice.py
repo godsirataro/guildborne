@@ -4,8 +4,8 @@ Imports reviewed CC0 glTF only. Exports real weighted geometry and sampled sourc
 actions for local Studio review; never uploads or assigns Roblox asset IDs.
 """
 from pathlib import Path
-import bpy, json, math, hashlib
-from mathutils import Matrix, Vector
+import bpy, json, math, hashlib, sys
+from mathutils import Matrix, Vector, Quaternion
 
 ROOT = Path(__file__).resolve().parents[1]
 OUT = ROOT / 'assets/production/enemy-slice'
@@ -37,6 +37,43 @@ def select_action(rig, action):
 def aim(obj, point):
     obj.rotation_euler = (Vector(point)-obj.location).to_track_quat('-Z', 'Y').to_euler()
 
+def correct_walk(rig, source):
+    """Author only the right forearm seam on a copy; preserve the CC0 action."""
+    select_action(rig, source)
+    bone = rig.pose.bones['LowerArm.R']
+    assert bone.rotation_mode == 'QUATERNION'
+    samples = {}
+    for frame in (0, 1, 23, 24):
+        bpy.context.scene.frame_set(frame)
+        samples[frame] = bone.rotation_quaternion.copy().normalized()
+    start, end = samples[24], samples[0]
+    # Spherical Bezier controls preserve the incoming/outgoing one-frame
+    # angular tangents. Six intervals / three is the cubic control distance.
+    def power(q, factor):
+        q = q.normalized()
+        if q.w < 0: q.negate()
+        return Quaternion(q.axis, q.angle * factor)
+    a = start @ power(samples[23].conjugated() @ start, 2)
+    b = end @ power(end.conjugated() @ samples[1], -2)
+    authored = source.copy()
+    authored.name = 'Guildborne_Walk_ForearmLoop'
+    authored.use_fake_user = True
+    source.use_fake_user = True
+    select_action(rig, authored)
+    for frame in range(25, 31):
+        t = (frame - 24) / 6
+        p, q, r = start.slerp(a, t), a.slerp(b, t), b.slerp(end, t)
+        rotation = p.slerp(q, t).slerp(q.slerp(r, t), t).normalized()
+        bpy.context.scene.frame_set(frame)
+        bone.rotation_quaternion = end if frame == 30 else rotation
+        bone.keyframe_insert(data_path='rotation_quaternion', frame=frame, group=bone.name)
+    # Source uses LINEAR channels; retain that sampling convention in the copy.
+    channelbag = authored.layers[0].strips[0].channelbag(rig.animation_data.action_slot)
+    for curve in channelbag.fcurves:
+        if curve.data_path == 'pose.bones["LowerArm.R"].rotation_quaternion':
+            for key in curve.keyframe_points: key.interpolation = 'LINEAR'
+    return authored
+
 def build(asset):
     bpy.ops.wm.read_factory_settings(use_empty=True)
     bpy.context.scene.render.fps = FPS
@@ -56,6 +93,8 @@ def build(asset):
     indices = {b.name:i+1 for i,b in enumerate(bones)}
     actions = {a.name:a for a in bpy.data.actions}
     assert all(name in actions for name in CLIPS), list(actions)
+    source_walk = actions['Walk']
+    actions['Walk'] = correct_walk(rig, actions['Walk'])
     select_action(rig, actions['Idle'])
     scene.frame_set(0)
     # Bind geometry is original topology, never an evaluated pose baked into rest.
@@ -106,15 +145,35 @@ def build(asset):
         frames = []
         bounds = []
         for frame in range(round(duration*FPS)+1):
+            source_transforms = []
+            if name == 'Walk':
+                # Keep untouched exported channels byte-identical. Recomputing
+                # child-local matrices under the corrected parent introduces
+                # sub-microstud inverse-matrix roundoff in finger descendants.
+                select_action(rig, source_walk)
+                scene.frame_set(frame); bpy.context.view_layer.update()
+                for b in bones:
+                    p = rig.pose.bones[b.name]
+                    rest = b.parent.matrix_local.inverted() @ b.matrix_local if b.parent else world(rig.matrix_world @ b.matrix_local)
+                    pose = rig.pose.bones[b.parent.name].matrix.inverted() @ p.matrix if b.parent else world(rig.matrix_world @ p.matrix)
+                    source_transforms.append(cf(rest.inverted() @ pose, scale))
+                select_action(rig, action)
             scene.frame_set(frame); bpy.context.view_layer.update()
             transforms = []
-            for b in bones:
+            for bone_index, b in enumerate(bones):
                 p = rig.pose.bones[b.name]
                 rest = b.parent.matrix_local.inverted() @ b.matrix_local if b.parent else world(rig.matrix_world @ b.matrix_local)
                 pose = rig.pose.bones[b.parent.name].matrix.inverted() @ p.matrix if b.parent else world(rig.matrix_world @ p.matrix)
-                transforms.append(cf(rest.inverted() @ pose,scale))
+                value = cf(rest.inverted() @ pose,scale)
+                if name == 'Walk':
+                    original = source_transforms[bone_index]
+                    # Do not hide a real unowned change behind canonicalization.
+                    unchanged = 3 if b.name == 'LowerArm.R' and frame > 24 else 12
+                    assert max(abs(value[i]-original[i]) for i in range(unchanged)) < .000002, (frame, b.name, 'unexpected unowned pose change')
+                    value = original[:3] + value[3:] if b.name == 'LowerArm.R' and frame > 24 else original
+                transforms.append(value)
             frames.append(transforms)
-            if frame in (0,round(duration*FPS/2),round(duration*FPS)):
+            if name == 'Walk' or frame in (0,round(duration*FPS/2),round(duration*FPS)):
                 evaluated_points = []
                 graph = bpy.context.evaluated_depsgraph_get()
                 for obj in meshes:
@@ -164,7 +223,7 @@ def build(asset):
     for label,offset,power,size in [('Key',(-2,-3,4),500,3),('Rim',(2,2,3),700,2)]:
         bpy.ops.object.light_add(type='AREA',location=center+Vector(offset)*height)
         light=bpy.context.object; light.name=label; light.data.energy=power*height*height; light.data.shape='DISK'; light.data.size=size*height; aim(light,center)
-    for name in ('Idle','Walk','Weapon','HitReact','Death'):
+    for name in (() if '--export-only' in sys.argv else ('Idle','Walk','Weapon','HitReact','Death')):
         select_action(rig,actions[name])
         for fraction in (0,.5,1):
             frame=round(clips[name]['seconds']*FPS*fraction)
