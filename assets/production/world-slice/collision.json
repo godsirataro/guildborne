@@ -1,6 +1,6 @@
 {
   "schemaVersion": 1,
-  "sourceMeshSha256": "4e0a917e99744fd88740949c55bd549ddedc7844eb03a2df0cdb59a6e50b8a17",
+  "sourceMeshSha256": "842e1a5e19fdf849117bf17e09485fa532d842022c0186cf60c27bbf09e0d320",
   "expectedArtNames": [
     "Caravan_Stable_stable__000",
     "Caravan_Stable_stable__001",
@@ -109,7 +109,14 @@
     "terrain_arrival_east_terrain_arrival_east__000",
     "terrain_forest_east_terrain_forest_east__000",
     "terrain_boss_floor_terrain_boss_floor__000",
-    "terrain_embankments_terrain_embankments__000"
+    "terrain_embankments_terrain_embankments__000",
+    "Rooted_Foundation_silhouette_rooted_cliff__000",
+    "West_Arrival_RockGrove_silhouette_fern_rocks__000",
+    "East_Arrival_RockGrove_silhouette_fern_rocks__000",
+    "West_Forest_RockGrove_silhouette_fern_rocks__000",
+    "East_Forest_RockGrove_silhouette_fern_rocks__000",
+    "West_Arrival_Waymarker_silhouette_ruined_waymarker__000",
+    "East_Arrival_Waymarker_silhouette_ruined_waymarker__000"
   ],
   "expectedArt": [
     {
@@ -2271,9 +2278,149 @@
         0.0,
         1.0
       ]
+    },
+    {
+      "name": "Rooted_Foundation_silhouette_rooted_cliff__000",
+      "meshId": "silhouette_rooted_cliff__000",
+      "position": [
+        0.00292,
+        -16.54557,
+        1410.50281
+      ],
+      "rotation": [
+        1.0,
+        0.0,
+        0.0,
+        0,
+        1.0,
+        -0.0,
+        -0.0,
+        0.0,
+        1.0
+      ]
+    },
+    {
+      "name": "West_Arrival_RockGrove_silhouette_fern_rocks__000",
+      "meshId": "silhouette_fern_rocks__000",
+      "position": [
+        -99.84602,
+        4.5,
+        1480.75
+      ],
+      "rotation": [
+        1.0,
+        0.0,
+        0.0,
+        0,
+        1.0,
+        -0.0,
+        -0.0,
+        0.0,
+        1.0
+      ]
+    },
+    {
+      "name": "East_Arrival_RockGrove_silhouette_fern_rocks__000",
+      "meshId": "silhouette_fern_rocks__000",
+      "position": [
+        100.11182,
+        4.5,
+        1479.24255
+      ],
+      "rotation": [
+        -0.93969262,
+        0.0,
+        0.34202014,
+        0,
+        1.0,
+        -0.0,
+        -0.34202014,
+        -0.0,
+        -0.93969262
+      ]
+    },
+    {
+      "name": "West_Forest_RockGrove_silhouette_fern_rocks__000",
+      "meshId": "silhouette_fern_rocks__000",
+      "position": [
+        -99.32648,
+        4.5,
+        1340.36414
+      ],
+      "rotation": [
+        0.64278761,
+        0.0,
+        0.76604444,
+        0,
+        1.0,
+        -0.0,
+        -0.76604444,
+        0.0,
+        0.64278761
+      ]
+    },
+    {
+      "name": "East_Forest_RockGrove_silhouette_fern_rocks__000",
+      "meshId": "silhouette_fern_rocks__000",
+      "position": [
+        99.39995,
+        4.5,
+        1339.52441
+      ],
+      "rotation": [
+        -0.76604444,
+        -0.0,
+        -0.64278761,
+        0,
+        1.0,
+        -0.0,
+        0.64278761,
+        -0.0,
+        -0.76604444
+      ]
+    },
+    {
+      "name": "West_Arrival_Waymarker_silhouette_ruined_waymarker__000",
+      "meshId": "silhouette_ruined_waymarker__000",
+      "position": [
+        -76.03161,
+        5.6,
+        1485.99536
+      ],
+      "rotation": [
+        1.0,
+        0.0,
+        0.0,
+        0,
+        1.0,
+        -0.0,
+        -0.0,
+        0.0,
+        1.0
+      ]
+    },
+    {
+      "name": "East_Arrival_Waymarker_silhouette_ruined_waymarker__000",
+      "meshId": "silhouette_ruined_waymarker__000",
+      "position": [
+        76.03161,
+        5.6,
+        1486.00464
+      ],
+      "rotation": [
+        -1.0,
+        0.0,
+        0.0,
+        0,
+        1.0,
+        -0.0,
+        -0.0,
+        -0.0,
+        -1.0
+      ]
     }
   ],
-  "minArtPlacements": 108,
+  "minArtPlacements": 115,
   "colliders": [
     {
       "name": "Caravan_Stable_SourceSurface_0_0",

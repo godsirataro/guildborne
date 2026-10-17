@@ -1,0 +1,122 @@
+{
+  "utc": "2026-10-17T08:33:45.687783+00:00",
+  "status": "CLOSED_LOCAL_ARTIFACTS_NOT_STUDIO_ACCEPTANCE",
+  "sourceMeshSha256": "842e1a5e19fdf849117bf17e09485fa532d842022c0186cf60c27bbf09e0d320",
+  "allExportHashesMatch": true,
+  "allCurrentRenderHashesMatch": true,
+  "allOwnedBlenderProcessesExited": true,
+  "files": {
+    "assets/production/world-slice/woodland-threshold.blend": {
+      "bytes": 1443616,
+      "sha256": "b09548d794d9058f3a09ca313779a07f29d490fb5c6a3f2866705dfe48013a40"
+    },
+    "assets/production/world-slice/woodland-threshold.glb": {
+      "bytes": 2564424,
+      "sha256": "ad10b656d8d9c955774f8c34953f0f09c4d1ecd3471a4e7cdeac3f3fe6b9a8b8"
+    },
+    "assets/production/world-slice/woodland-threshold.png": {
+      "bytes": 2255614,
+      "sha256": "158d00e3dbfcf67359a3c49c77539e0340bf1c4815c591be8d3800dcdf71a39c"
+    },
+    "assets/production/world-slice/world-slice.mesh.json": {
+      "bytes": 1512786,
+      "sha256": "842e1a5e19fdf849117bf17e09485fa532d842022c0186cf60c27bbf09e0d320"
+    },
+    "assets/production/world-slice/collision.json": {
+      "bytes": 225789,
+      "sha256": "9ff7500c6ff8efe53f9265a669ab175046a2c3215566907772d15eb54fcedf30"
+    },
+    "assets/production/world-slice/export-report.json": {
+      "bytes": 11560,
+      "sha256": "67d1b57c1b5a0e72cec0dccbf99b5f8eaffd59123b57904deb76fd39261fb1a9"
+    },
+    "src/server/Services/WorldQualityAssets.luau": {
+      "bytes": 119824,
+      "sha256": "7a99821291f2812d57ffb4c0cdf454c21b15fb7108a661933e412f7273ef9e19"
+    },
+    "tools/blender_world_slice.py": {
+      "bytes": 18758,
+      "sha256": "c6106f0eb06ce087763d49925eefb72dc0bc1c009e80113811c26e8da950ccfd"
+    },
+    "tools/verify_world_slice.py": {
+      "bytes": 7887,
+      "sha256": "32d9c38983bf29ebf449921d25162151b857866d4df0f056eb18ac83accb2869"
+    },
+    "assets/production/world-slice/blender-silhouette-comparison.log": {
+      "bytes": 1244,
+      "sha256": "fdaee1631f1fd3a0d3be26f5df3f5bd78e43b30942207f0b120001103275a738"
+    },
+    "assets/production/world-slice/blender-silhouette.log": {
+      "bytes": 9343,
+      "sha256": "5ddfbe6958f7d6fc68cc0eeecef10580d4ca289e717b5c3ee165586c027c97ee"
+    },
+    "production/world/quality-slice/silhouette-arrival-after.png": {
+      "bytes": 1154434,
+      "sha256": "ca736d6065795a6e2d096caa292626422b4dcaacd308a1eed639750d90bf6b4f"
+    },
+    "production/world/quality-slice/silhouette-arrival-before.png": {
+      "bytes": 1150364,
+      "sha256": "1241f112dae1076284d672b3bebc5f4dc0c72569f46a9d59033563c70b152fd8"
+    },
+    "production/world/quality-slice/silhouette-foundation-after.png": {
+      "bytes": 1025079,
+      "sha256": "da74cbc6e6b1293be694c76bf82b05b202325fc569323210413b39538021f6ae"
+    },
+    "production/world/quality-slice/silhouette-foundation-before.png": {
+      "bytes": 1013776,
+      "sha256": "f1ca0c2f5204fc9469f7ea9099649535e4e837cdbd7e3f5dee6ecd3871b9d6b8"
+    },
+    "production/world/quality-slice/silhouette-overview-after.png": {
+      "bytes": 1238920,
+      "sha256": "b192e4d370e738e70c1102412de72dc85764717319c89e7afe17fe6c0b551dac"
+    },
+    "production/world/quality-slice/silhouette-overview-before.png": {
+      "bytes": 1237646,
+      "sha256": "6ce6649f6e634da6a14ed1ddbb202962703fc0e730e6de520acf315ab99f9310"
+    },
+    "production/world/quality-slice/silhouette-before.blend": {
+      "bytes": 1396516,
+      "sha256": "46e69e294a24df33e9924b4e40e71f82b64c56d7e5388a5372ea76b7a07bd582"
+    },
+    "production/world/quality-slice/silhouette-renders.json": {
+      "bytes": 3189,
+      "sha256": "f643619800c1354e954d9890e750b1690aa34f5608f05b7c31173598cd7246b0"
+    },
+    "production/world/quality-slice/silhouette_recipe.py": {
+      "bytes": 5536,
+      "sha256": "eb88f4c258c654f762db51c4b232a1455e98179a49a6dac90f10d2a447daadeb"
+    },
+    "production/world/quality-slice/render_silhouette_comparison.py": {
+      "bytes": 3338,
+      "sha256": "adb77b19e425c29edb03802206b98d2730421df511d659e3e260af0b64ef9228"
+    },
+    "production/world/quality-slice/check_silhouette.py": {
+      "bytes": 8042,
+      "sha256": "898228e837a3ba38d09b6ad0a8fe7fa24135808f01c2ba14d22af7a81bcc900c"
+    },
+    "production/world/quality-slice/check_terrain_composition.py": {
+      "bytes": 11779,
+      "sha256": "09ea6b1074010a374df7b9db3010aa6d45a1a35a51123b1783c902145cafe68a"
+    },
+    "production/world/quality-slice/terrain-clearance.json": {
+      "bytes": 4095,
+      "sha256": "c2a770b75d9a0cee7c76150befa807830b8d7e79d9f03d8be41f664fe3c943af"
+    },
+    "production/world/quality-slice/terrain-props-clearance.json": {
+      "bytes": 9693,
+      "sha256": "7a3148dbde292f1da301a09b5a8a112d427697659f6ad0dd25bbe6ac76c566a7"
+    },
+    "production/world/quality-slice/silhouette-clearance.json": {
+      "bytes": 3066,
+      "sha256": "cb6635547d8fb06d51016f88a25b2705d37fe2d3e15fecbf804e6e94efbdbdb2"
+    },
+    "production/world/quality-slice/silhouette-authoring.json": {
+      "bytes": 951,
+      "sha256": "d93a4b03b565386f645ecc6f53990d30946be0a7471c48fbe1fb0a905c0bd674"
+    },
+    "production/world/quality-slice/silhouette-checks.json": {
+      "bytes": 8244,
+      "sha256": "c27b3878be4f43996cee26daf22b4cd9fd19443206bea995822db6c49d626b21"
+    }
+  }
+}

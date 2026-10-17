@@ -1,0 +1,119 @@
+{
+  "status": "BLENDER_COMPARISON_NOT_STUDIO",
+  "views": [
+    {
+      "revision": "before",
+      "view": "overview",
+      "cameraWorld": [
+        105,
+        94,
+        1545
+      ],
+      "targetWorld": [
+        0,
+        4,
+        1410
+      ],
+      "lensMm": 35,
+      "source": "production/world/quality-slice/silhouette-before.blend",
+      "sourceSha256": "46e69e294a24df33e9924b4e40e71f82b64c56d7e5388a5372ea76b7a07bd582",
+      "image": "silhouette-overview-before.png",
+      "sha256": "6ce6649f6e634da6a14ed1ddbb202962703fc0e730e6de520acf315ab99f9310"
+    },
+    {
+      "revision": "before",
+      "view": "arrival",
+      "cameraWorld": [
+        75,
+        32,
+        1530
+      ],
+      "targetWorld": [
+        -10,
+        8,
+        1470
+      ],
+      "lensMm": 35,
+      "source": "production/world/quality-slice/silhouette-before.blend",
+      "sourceSha256": "46e69e294a24df33e9924b4e40e71f82b64c56d7e5388a5372ea76b7a07bd582",
+      "image": "silhouette-arrival-before.png",
+      "sha256": "1241f112dae1076284d672b3bebc5f4dc0c72569f46a9d59033563c70b152fd8"
+    },
+    {
+      "revision": "before",
+      "view": "foundation",
+      "cameraWorld": [
+        210,
+        100,
+        1640
+      ],
+      "targetWorld": [
+        0,
+        -8,
+        1410
+      ],
+      "lensMm": 35,
+      "source": "production/world/quality-slice/silhouette-before.blend",
+      "sourceSha256": "46e69e294a24df33e9924b4e40e71f82b64c56d7e5388a5372ea76b7a07bd582",
+      "image": "silhouette-foundation-before.png",
+      "sha256": "f1ca0c2f5204fc9469f7ea9099649535e4e837cdbd7e3f5dee6ecd3871b9d6b8"
+    },
+    {
+      "revision": "after",
+      "view": "overview",
+      "cameraWorld": [
+        105,
+        94,
+        1545
+      ],
+      "targetWorld": [
+        0,
+        4,
+        1410
+      ],
+      "lensMm": 35,
+      "source": "assets/production/world-slice/woodland-threshold.blend",
+      "sourceSha256": "b09548d794d9058f3a09ca313779a07f29d490fb5c6a3f2866705dfe48013a40",
+      "image": "silhouette-overview-after.png",
+      "sha256": "b192e4d370e738e70c1102412de72dc85764717319c89e7afe17fe6c0b551dac"
+    },
+    {
+      "revision": "after",
+      "view": "arrival",
+      "cameraWorld": [
+        75,
+        32,
+        1530
+      ],
+      "targetWorld": [
+        -10,
+        8,
+        1470
+      ],
+      "lensMm": 35,
+      "source": "assets/production/world-slice/woodland-threshold.blend",
+      "sourceSha256": "b09548d794d9058f3a09ca313779a07f29d490fb5c6a3f2866705dfe48013a40",
+      "image": "silhouette-arrival-after.png",
+      "sha256": "ca736d6065795a6e2d096caa292626422b4dcaacd308a1eed639750d90bf6b4f"
+    },
+    {
+      "revision": "after",
+      "view": "foundation",
+      "cameraWorld": [
+        210,
+        100,
+        1640
+      ],
+      "targetWorld": [
+        0,
+        -8,
+        1410
+      ],
+      "lensMm": 35,
+      "source": "assets/production/world-slice/woodland-threshold.blend",
+      "sourceSha256": "b09548d794d9058f3a09ca313779a07f29d490fb5c6a3f2866705dfe48013a40",
+      "image": "silhouette-foundation-after.png",
+      "sha256": "da74cbc6e6b1293be694c76bf82b05b202325fc569323210413b39538021f6ae"
+    }
+  ]
+}

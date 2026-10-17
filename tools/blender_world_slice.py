@@ -114,7 +114,9 @@ for record in records:
 # Original connected terrain surface recipe; all native collision remains unchanged.
 import runpy
 terrain_resources=runpy.run_path(str(ROOT/'production/world/quality-slice/terrain_recipe.py'))['make_terrain']()
-for authored in terrain_resources:
+silhouette_recipe=runpy.run_path(str(ROOT/'production/world/quality-slice/silhouette_recipe.py'))
+silhouette_resources=silhouette_recipe['make_silhouette']()
+for authored in terrain_resources+silhouette_resources:
  asset=authored['id'];coords=[[round(x,5),round(y-2,5),round(z-1410,5)] for x,y,z in authored['vertices']]
  verts=[Vector((x,-z,y)) for x,y,z in coords]
  faces=authored['triangles'];palette=authored['colors'];bands=authored['faceColors']
@@ -130,7 +132,7 @@ for authored in terrain_resources:
  mid=asset+'__000'
  meshes.append(dict(id=mid,vertices=coords,triangles=[[i+1 for i in f] for f in faces],colors=palette,faceColors=bands,bounds={'min':[min(v[i] for v in coords) for i in range(3)],'max':[max(v[i] for v in coords) for i in range(3)]}))
  records.append(dict(id=asset,chunks=[mid]));structural[asset]=[]
- metrics.append(dict(id=asset,authorship='Original Guildborne terrain skin; existing native heights and protected routes',vertices=len(verts),triangles=len(faces),materials=len(palette),chunks=1))
+ metrics.append(dict(id=asset,authorship='Original Guildborne authored surface/rock geometry; existing native gameplay retained',vertices=len(verts),triangles=len(faces),materials=len(palette),chunks=1))
 library.hide_render=True;library.hide_viewport=True
 by_id={r['id']:r for r in records}
 def terrain_height(world_z):return 2 if world_z>=1380 else 6 if world_z<=1355 else 2+(1380-world_z)*.16
@@ -205,6 +207,7 @@ for side,label in [(-1,'West'),(1,'East')]:
  for i,(x,wz) in enumerate(((82,1468),(100,1460),(87,1440),(100,1435),(82,1340),(100,1344))):
   place('bush',f'GroundEdge_{label}_Bush_{i}',side*x,1410-wz,z=0)
 for authored in terrain_resources:place(authored['id'],authored['id'],0,0,z=0)
+for asset,name,x,wz,yaw in silhouette_recipe['PLACEMENTS']:place(asset,name,x,1410-wz,yaw,z=0)
 # Reusable library and real composed GLB; preview base/lights do not enter game geometry.
 packet=dict(schemaVersion=1,coordinateSystem='RobloxYUp',units='studs',pivot='asset XZ centered; minY=0; chunks share asset pivot',previewWorldOrigin=[0,2,1410],meshes=meshes,placements=placements,runtimeImported=False,compositionOnly=True)
 (OUT/'world-slice.mesh.json').write_text(json.dumps(packet,separators=(',',':'))+'\n',encoding='utf-8')

@@ -1,8 +1,8 @@
 {
   "status": "OFFLINE_TERRAIN_CLEARANCE_PASS",
-  "sourceMeshSha256": "4e0a917e99744fd88740949c55bd549ddedc7844eb03a2df0cdb59a6e50b8a17",
+  "sourceMeshSha256": "842e1a5e19fdf849117bf17e09485fa532d842022c0186cf60c27bbf09e0d320",
   "baselineCommit": "768ae4e07a519fbc86a9586e5364f9dfb149f2d6",
-  "checkerSha256": "1e423bf1f29523537b4b8056e208aa207ea76054eb8898177dc1605d9bf3d329",
+  "checkerSha256": "09ea6b1074010a374df7b9db3010aa6d45a1a35a51123b1783c902145cafe68a",
   "baselineMeshesPreserved": 27,
   "baselinePlacementsPreserved": 102,
   "removedPatchMeshes": [

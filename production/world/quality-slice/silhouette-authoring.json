@@ -1,0 +1,25 @@
+{
+  "status": "ORIGINAL_AUTHORED_GEOMETRY_NOT_STUDIO_TESTED",
+  "baselineCommit": "9909de1",
+  "sourceMeshSha256": "842e1a5e19fdf849117bf17e09485fa532d842022c0186cf60c27bbf09e0d320",
+  "recipe": "production/world/quality-slice/silhouette_recipe.py",
+  "recipeSha256": "eb88f4c258c654f762db51c4b232a1455e98179a49a6dac90f10d2a447daadeb",
+  "authorship": "Original Guildborne geometric composition authored in this repository; no newly imported third-party geometry, textures, generators, fonts or symbols. Existing CC0 assets unchanged.",
+  "newResources": [
+    "silhouette_rooted_cliff__000",
+    "silhouette_fern_rocks__000",
+    "silhouette_ruined_waymarker__000"
+  ],
+  "addedUniqueTriangles": 796,
+  "addedInstancedTriangles": 1734,
+  "addedVertices": 485,
+  "addedPlacements": 7,
+  "budget": {
+    "resources": 3,
+    "placements": 10,
+    "instancedTriangles": 6000
+  },
+  "runtimeIds": null,
+  "studioTested": false,
+  "humanApproved": false
+}

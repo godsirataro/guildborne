@@ -334,7 +334,7 @@
     },
     {
       "id": "terrain_arrival_west",
-      "authorship": "Original Guildborne terrain skin; existing native heights and protected routes",
+      "authorship": "Original Guildborne authored surface/rock geometry; existing native gameplay retained",
       "vertices": 317,
       "triangles": 556,
       "materials": 52,
@@ -342,7 +342,7 @@
     },
     {
       "id": "terrain_forest_west",
-      "authorship": "Original Guildborne terrain skin; existing native heights and protected routes",
+      "authorship": "Original Guildborne authored surface/rock geometry; existing native gameplay retained",
       "vertices": 421,
       "triangles": 684,
       "materials": 52,
@@ -350,7 +350,7 @@
     },
     {
       "id": "terrain_arrival_east",
-      "authorship": "Original Guildborne terrain skin; existing native heights and protected routes",
+      "authorship": "Original Guildborne authored surface/rock geometry; existing native gameplay retained",
       "vertices": 317,
       "triangles": 556,
       "materials": 52,
@@ -358,7 +358,7 @@
     },
     {
       "id": "terrain_forest_east",
-      "authorship": "Original Guildborne terrain skin; existing native heights and protected routes",
+      "authorship": "Original Guildborne authored surface/rock geometry; existing native gameplay retained",
       "vertices": 421,
       "triangles": 684,
       "materials": 52,
@@ -366,7 +366,7 @@
     },
     {
       "id": "terrain_boss_floor",
-      "authorship": "Original Guildborne terrain skin; existing native heights and protected routes",
+      "authorship": "Original Guildborne authored surface/rock geometry; existing native gameplay retained",
       "vertices": 174,
       "triangles": 276,
       "materials": 52,
@@ -374,18 +374,42 @@
     },
     {
       "id": "terrain_embankments",
-      "authorship": "Original Guildborne terrain skin; existing native heights and protected routes",
+      "authorship": "Original Guildborne authored surface/rock geometry; existing native gameplay retained",
       "vertices": 576,
       "triangles": 798,
       "materials": 52,
       "chunks": 1
+    },
+    {
+      "id": "silhouette_rooted_cliff",
+      "authorship": "Original Guildborne authored surface/rock geometry; existing native gameplay retained",
+      "vertices": 187,
+      "triangles": 320,
+      "materials": 11,
+      "chunks": 1
+    },
+    {
+      "id": "silhouette_fern_rocks",
+      "authorship": "Original Guildborne authored surface/rock geometry; existing native gameplay retained",
+      "vertices": 153,
+      "triangles": 231,
+      "materials": 11,
+      "chunks": 1
+    },
+    {
+      "id": "silhouette_ruined_waymarker",
+      "authorship": "Original Guildborne authored surface/rock geometry; existing native gameplay retained",
+      "vertices": 145,
+      "triangles": 245,
+      "materials": 11,
+      "chunks": 1
     }
   ],
-  "uniqueMeshChunks": 33,
-  "placements": 108,
-  "authoredObjects": 95,
-  "uniqueTriangles": 40628,
-  "instancedTriangles": 88888,
+  "uniqueMeshChunks": 36,
+  "placements": 115,
+  "authoredObjects": 102,
+  "uniqueTriangles": 41424,
+  "instancedTriangles": 90622,
   "runtimeIds": null,
   "studioTested": false,
   "humanApproved": false,
@@ -395,8 +419,8 @@
       "sha256": "722572d1611325952965878af99bac9774079e854cd4bc0fd764640b98566513"
     },
     "collision.json": {
-      "bytes": 222672,
-      "sha256": "ad552e65519213c12645de8c35c2bb560d660a1ac204ae4f477f691a7c3e994f"
+      "bytes": 225789,
+      "sha256": "9ff7500c6ff8efe53f9265a669ab175046a2c3215566907772d15eb54fcedf30"
     },
     "intake.json": {
       "bytes": 7929,
@@ -415,20 +439,20 @@
       "sha256": "83d8959f9fc56353ed571fbe2dc52e4bcd64508e2399501cd45ac2ce3df0bf8c"
     },
     "woodland-threshold.blend": {
-      "bytes": 1396516,
-      "sha256": "46e69e294a24df33e9924b4e40e71f82b64c56d7e5388a5372ea76b7a07bd582"
+      "bytes": 1443616,
+      "sha256": "b09548d794d9058f3a09ca313779a07f29d490fb5c6a3f2866705dfe48013a40"
     },
     "woodland-threshold.glb": {
-      "bytes": 2502540,
-      "sha256": "3ef9e8956677e898b778dfdc8a31ba2b267144ff93ccf6448d700aa8a60e015b"
+      "bytes": 2564424,
+      "sha256": "ad10b656d8d9c955774f8c34953f0f09c4d1ecd3471a4e7cdeac3f3fe6b9a8b8"
     },
     "woodland-threshold.png": {
-      "bytes": 2238786,
-      "sha256": "36172b7cd694e64c9487c44f000a09f359deb2ff680c73d5f7ffd17dea274f3c"
+      "bytes": 2255614,
+      "sha256": "158d00e3dbfcf67359a3c49c77539e0340bf1c4815c591be8d3800dcdf71a39c"
     },
     "world-slice.mesh.json": {
-      "bytes": 1487689,
-      "sha256": "4e0a917e99744fd88740949c55bd549ddedc7844eb03a2df0cdb59a6e50b8a17"
+      "bytes": 1512786,
+      "sha256": "842e1a5e19fdf849117bf17e09485fa532d842022c0186cf60c27bbf09e0d320"
     }
   }
 }

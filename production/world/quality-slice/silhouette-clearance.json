@@ -1,0 +1,161 @@
+{
+  "status": "OFFLINE_SILHOUETTE_PASS",
+  "sourceMeshSha256": "842e1a5e19fdf849117bf17e09485fa532d842022c0186cf60c27bbf09e0d320",
+  "checkerSha256": "898228e837a3ba38d09b6ad0a8fe7fa24135808f01c2ba14d22af7a81bcc900c",
+  "baseline": "9909de1",
+  "retainedMeshes": 33,
+  "retainedPlacements": 108,
+  "retainedColliders": 413,
+  "addedResources": 3,
+  "addedPlacements": 7,
+  "addedInstancedTriangles": 1734,
+  "foundationVolumes": [
+    [
+      -118,
+      118,
+      -35,
+      1.9,
+      1292,
+      1508
+    ],
+    [
+      -14,
+      14,
+      -15,
+      1.9,
+      1500,
+      1526
+    ],
+    [
+      -62,
+      -18,
+      -13,
+      1.8,
+      1500,
+      1520
+    ]
+  ],
+  "placements": [
+    {
+      "name": "Rooted_Foundation_silhouette_rooted_cliff__000",
+      "worldMin": [
+        -115.53616,
+        -34.99115,
+        1295.00573
+      ],
+      "worldMax": [
+        115.542,
+        1.9,
+        1526.0
+      ],
+      "triangles": 320
+    },
+    {
+      "name": "West_Arrival_RockGrove_silhouette_fern_rocks__000",
+      "worldMin": [
+        -105.49203,
+        2.0,
+        1475.95265
+      ],
+      "worldMax": [
+        -94.2,
+        7.0,
+        1485.54735
+      ],
+      "triangles": 231
+    },
+    {
+      "name": "East_Arrival_RockGrove_silhouette_fern_rocks__000",
+      "worldMin": [
+        95.233823084,
+        2.0,
+        1474.6520202439467
+      ],
+      "worldMax": [
+        104.788414850581,
+        7.0,
+        1485.1943600207776
+      ],
+      "triangles": 231
+    },
+    {
+      "name": "West_Forest_RockGrove_silhouette_fern_rocks__000",
+      "worldMin": [
+        -105.7602867696987,
+        2.0,
+        1335.868751762947
+      ],
+      "worldMax": [
+        -93.9902457977847,
+        7.0,
+        1344.1316091675408
+      ],
+      "triangles": 231
+    },
+    {
+      "name": "East_Forest_RockGrove_silhouette_fern_rocks__000",
+      "worldMin": [
+        93.8216945478963,
+        2.0,
+        1335.5332394883012
+      ],
+      "worldMax": [
+        106.0783966245408,
+        7.0,
+        1344.3182078945017
+      ],
+      "triangles": 231
+    },
+    {
+      "name": "West_Arrival_Waymarker_silhouette_ruined_waymarker__000",
+      "worldMin": [
+        -78.85349,
+        2.0,
+        1483.49327
+      ],
+      "worldMax": [
+        -73.20973,
+        9.2,
+        1488.49735
+      ],
+      "triangles": 245
+    },
+    {
+      "name": "East_Arrival_Waymarker_silhouette_ruined_waymarker__000",
+      "worldMin": [
+        73.20973,
+        2.0,
+        1483.50265
+      ],
+      "worldMax": [
+        78.85349,
+        9.2,
+        1488.50673
+      ],
+      "triangles": 245
+    }
+  ],
+  "visibility": [
+    {
+      "camera": [
+        105,
+        94,
+        1545
+      ],
+      "samples": 824,
+      "occluded": []
+    },
+    {
+      "camera": [
+        75,
+        32,
+        1530
+      ],
+      "samples": 824,
+      "occluded": []
+    }
+  ],
+  "errors": [],
+  "studioTested": false,
+  "limits": "Finite added-geometry sightlines only; no all-camera, dynamic telegraph, runtime collision or human art acceptance."
+}

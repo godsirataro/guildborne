@@ -15,7 +15,7 @@ def verify_ground(data):
  assert len(collision['colliders'])==413 and digest(collision['colliders'])==meta['baselineCollidersSha256']
  terrain=any(mid.startswith('terrain_') for mid in lookup)
  if terrain:
-  assert all(mid.startswith('terrain_') for mid in set(lookup)-set(meta['baselineMeshes']))
+  assert all(mid.startswith(('terrain_','silhouette_')) for mid in set(lookup)-set(meta['baselineMeshes']))
  else:assert set(lookup)-set(meta['baselineMeshes'])==set(meta['originalMeshes'])
  def bounds(p):
   m=lookup[p['meshId']];f=p['cframe'];points=[]
@@ -33,7 +33,7 @@ def verify_ground(data):
    a=bounds(p);building.append([a[0]-2,a[1]+2,a[2]-2,a[3]+2])
  rows=[];props=tris=0
  for p in data['placements']:
-  if p['name'] in meta['baselinePlacements'] or p['meshId'].startswith('terrain_'):continue
+  if p['name'] in meta['baselinePlacements'] or p['meshId'].startswith(('terrain_','silhouette_')):continue
   a=bounds(p);ground=p['meshId'] in meta['originalMeshes'];m=lookup[p['meshId']]
   assert -110<=a[0]<=a[1]<=110 and 1300<=a[2]<=a[3]<=1500,('Native Island bounds',p['name'],a)
   assert all(not overlaps(a,b) for b in roads.values()),('Road/resource/portal exclusion',p['name'],a)
@@ -105,6 +105,9 @@ def main():
  if any(m['id'].startswith('terrain_') for m in data['meshes']):
   import runpy
   assert runpy.run_path(str(ROOT/'production/world/quality-slice/check_terrain_composition.py'))['main']()==0
+ if any(m['id'].startswith('silhouette_') for m in data['meshes']):
+  import runpy
+  assert runpy.run_path(str(ROOT/'production/world/quality-slice/check_silhouette.py'))['main']()==0
  result=dict(status='OFFLINE_GEOMETRY_PASS',meshes=len(ids),vertices=vertices,triangles=faces,placements=len(names),instancedTriangles=report['instancedTriangles'],studioTested=False)
  print(json.dumps(result,indent=2))
 if __name__=='__main__':main()

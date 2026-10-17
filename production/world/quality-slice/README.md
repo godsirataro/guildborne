@@ -6,7 +6,7 @@ Delivered: 15 real CC0 source FBXs, an editable Blender 5.2.1 composition, actua
 
 `assets/production/world-slice/woodland-threshold.png` is the final inspected render. The first render exposed white Ruins foliage diffuse materials; final art intentionally replaces those with a face-based leaf/bark palette. This is authored derivative color, not a claim to preserve an unavailable texture. Village material colors remain imported. No source fonts used. Preview ground/water are excluded from GLB and mesh JSON, which contain actual source meshes only.
 
-`woodland-threshold.blend` contains reusable library, authored composition and separately named preview-only stage. `woodland-threshold.glb` contains the composition. `world-slice.mesh.json` conforms to controller schemaVersion 1: 33 chunks, 29,678 exported vertices, 40,628 unique triangles, 108 placements, 88,888 instanced triangles. Each chunk <=2,000 triangles; resources reused across placements. See IMPORT_CONTRACT.md for pivot compensation and actual Greenwood world offset. Geometry is NONCOLLIDING opt-in preview presentation; controller must inspect terrain height, native-art overlap and telegraph readability before runtime adoption.
+`woodland-threshold.blend` contains reusable library, authored composition and separately named preview-only stage. `woodland-threshold.glb` contains the composition. `world-slice.mesh.json` conforms to controller schemaVersion 1: 36 chunks, 30,163 exported vertices, 41,424 unique triangles, 115 placements, 90,622 instanced triangles. Each chunk <=2,000 triangles; resources reused across placements. See IMPORT_CONTRACT.md for pivot compensation and actual Greenwood world offset. Geometry is NONCOLLIDING opt-in preview presentation; controller must inspect terrain height, native-art overlap and telegraph readability before runtime adoption.
 
 ## Reproduction
 
@@ -75,6 +75,10 @@ Independent review found an eastern tree blocked archer-area samples despite pas
 
 The final Blender render was inspected and the background process exited. ground-checks.json preserves raw outputs, closed process log hashes and matching export hashes: offline geometry, visibility, controller schema validation, 28 contracts, 19 mocked lifecycle checks, Python compile and generated Luau compile/analyze passed. The previous 894-test suite result remains historical; no new whole-game suite run is claimed. New ground geometry still needs centered-importer Studio visual, allocation, traversal and device testing plus human approval. API and server collision behavior are unchanged.
 
-## Current connected terrain composition
+## Previous connected terrain composition (retained geometry)
 
 Source SHA256: 4e0a917e99744fd88740949c55bd549ddedc7844eb03a2df0cdb59a6e50b8a17. Six original terrain meshes replace the two patch resources and ten patch placements. See TERRAIN_COMPOSITION.md for paired perspective renders, provenance, exact budgets and pending Studio gates. The 27 retained source meshes, 102 retained placements and all 413 colliders are unchanged. This is a surface and embankment treatment of existing native heights, not new walkable topography.
+
+## Current cliff silhouette and arrival edge groups
+
+Source SHA256: 842e1a5e19fdf849117bf17e09485fa532d842022c0186cf60c27bbf09e0d320. Three original resources add a deep faceted rock foundation, four grouped rock/fern placements and two ruined waymarkers. All 33 prior meshes, 108 prior placements and 413 colliders remain exact. See SILHOUETTE_COMPOSITION.md for actual paired Blender renders and evidence. The geometry is presentation-only; it adds no walkable land or gameplay routes.

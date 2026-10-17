@@ -25,7 +25,7 @@ Server disables/restores CanCollide, CanQuery and CanTouch only for direct Green
 
 Controller client integration owns imported art validation and local decoration visibility after successful import, restoring LocalTransparencyModifier on cleanup. Import beneath GuildborneWorld or use explicit handle references; do not rely on the historical workspace.QualityArt_DatasetN path matching GuildborneWorld.QualitySourceArt. Collision initialization does not certify client art readiness. Controller must gate preview readiness on both collision success and actual local import success.
 
-Current source SHA256 is 4e0a917e99744fd88740949c55bd549ddedc7844eb03a2df0cdb59a6e50b8a17. The connected terrain export has 33 chunks and 108 expected art placements. Collider geometry is unchanged; import the new JSON together with its regenerated WorldQualityAssets module and collision.json. Rebuild controller metadata and hash gates from this revision. Studio behavior remains pending controller verification.
+Current source SHA256 is 842e1a5e19fdf849117bf17e09485fa532d842022c0186cf60c27bbf09e0d320. The silhouette export has 36 chunks and 115 expected art placements. Collider geometry is unchanged; import the new JSON together with its regenerated WorldQualityAssets module and collision.json. Rebuild controller metadata and hash gates from this revision. Studio behavior remains pending controller verification.
 
 ## Explicit chunk centering correction
 
@@ -38,3 +38,7 @@ The two original flat surface resources ground_court__000 and ground_leaf__000 a
 ## Current terrain import
 
 The six terrain_* resources replace ground_court/ground_leaf. Apply the existing centered importer and regenerated WorldQualityAssets/collision.json as one revision. Ground tops are native Island Y2.02 and BossRise Y6.02, with protected road/resource cutouts. Existing side faces receive noncolliding skins displaced 0.02 studs outward and ending below the native walking top. Terrain contributes 3,554 triangles; total 88,888 instanced triangles, 40,628 unique triangles, 29,678 vertices. All 413 collider records and server API are unchanged. Actual allocation, surface rendering/telegraphs, five-hero traversal and device performance for this source remain pending controller testing.
+
+## Cliff silhouette additions
+
+Three silhouette_* resources add seven expectedArt placements. rooted_cliff extends down to Y-35 and outward within its reviewed main bounds, plus separately bounded landing/apron undersides. It does not add walkable ground; retain CanCollide=false, CanTouch=false and CanQuery=false on all presentation meshes. Four fern/rock groups and two stone waymarkers use supported off-route footprints. Preserve the centered importer and apply regenerated collision.json/WorldQualityAssets with this exact mesh source. Total 41,424 unique triangles, 90,622 instanced triangles and 30,163 vertices. No server API or 413 collider changes. Studio acceptance for this source remains pending.
