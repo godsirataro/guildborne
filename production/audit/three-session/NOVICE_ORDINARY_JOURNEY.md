@@ -123,3 +123,31 @@ mobile inputs, multiplayer, every class's full solo trial, or the later
 quest-to-Greenwood-and-five-hero combat journey. Roof-corrected source and 14px
 tracker commits were integrated on disk during this run but are not the place
 version used for this onboarding evidence.
+
+## Post-novice campaign: first companion and city supply delivery
+
+Continued the same isolated Memory Play session through ordinary mouse/keyboard
+inputs, with read-only attribute observations. At FounderTable near (-23,2,-12),
+R completed meet_founder (E instead opened nearby hero inspection). Saved the
+existing equipped Warrior party, selected the companion with T and issued G
+Regroup. Guild CampaignJourney showed all three chapter-one objectives checked.
+Clicked CampaignClaim: player Mage XP550/Level12 and Warrior Level12; UI advanced
+to The Empty Table, guild chapter 2/12, and 15 Gold was visible.
+
+Visited Tavern, Hall and Workshop gold markers with R. Enabled objective then
+became SupplyPickup in City. Initial direct west/north navigation encountered the
+Hall wall and left the island edge; recovery returned the player to the guild.
+This is not evidence of a seamless or well-signposted path. The actual successful
+walk used the south Hall exit near (0,4,23), east to x62, north across the bridge
+at x64 to z-65, then west along IslandPromenade to the Central City portal.
+Pressed E: CurrentZone became City, player (0,3.698,-720), Warrior approximately
+(0.117,3.699,-716). Companion travel succeeded without teleport/profile injection.
+
+A west-first city approach hit a building at z-730. Returned to central x0,
+walked north to z-789, then west to x-98. Waited for Warrior to follow into range,
+pressed R at SupplyPickup (-100,1.2,-790): enabled prompt changed to
+SupplyDelivery (-100,1.2,-835). Walked north to (-97.901,3.698,-833.807), waited
+for the companion, pressed R: enabled prompt changed to Guild TeamTable
+(-23,2,-12). This verifies actual city supply collection/delivery and companion
+proximity gating. Chapter-two recruitment/reward and Greenwood combat are still
+pending. Active Memory session is preserved at the delivery location.
