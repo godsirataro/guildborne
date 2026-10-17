@@ -1,13 +1,13 @@
 # Four-session production control — current checkpoint 2026-10-17
 
 Verdict: IN PROGRESS. This checkpoint supersedes historical status tables below.
-Controller branch codex/three-session-integration, checkpoint source 84d02e8.
+Controller branch codex/three-session-integration, checkpoint source cadf0ec.
 Single shared ledger: C:/Work/MySelf/Guildborne/build/agentic/four-session-v3.sqlite3.
 No main merge, new PR, publishing, spending or production DataStore writes.
 
 | Stream | Verified delivery | Current work / remaining gate |
 | --- | --- | --- |
-| S13 Map | Local import 85 art placements / 413 server colliders; optimized mesh fits Studio memory budget | ACTIVE: corrected 634a mesh still has visible stable/sawmill roof holes in actual Studio; targeted importer/geometry diagnosis |
+| S13 Map | Local import 85 art placements / 413 server colliders; optimized mesh fits Studio memory budget | Roof displacement fixed by centered importer in actual Studio; ACTIVE authored ground/edge composition preserving routes/colliders |
 | S14 GUI | Native tracker layering observed EN/TH; 14px source improvement integrated | ACTIVE: real-anchor Hall/bridge/road waypoint guidance; final reference-level art and device review pending |
 | S15 Combat/VFX | Accepted-action timing, cancellation and five-class timing contracts integrated; actual Mage/Warrior Studio probes | Imported audio IDs remain unbound; final visual/audio quality and wider class/device acceptance pending |
 | S17 NPC | Stationary NPC schedules and bounded interaction presentation integrated; actual reduced/far/cleanup and Borin contact evidence | Full NPC/quest roster and multiplayer/city-host interaction acceptance pending |
@@ -24,11 +24,17 @@ Player Mage Lv16/XP753 reached Woodland Debt after two-companion Greenwood escor
 No XP, position, profile or quest completion was injected. Repeated attempts and
 pathfinding/input mistakes are recorded; this is not first-attempt UX acceptance.
 
-Actual latest art rejection: [OPTIMIZED_WORLD_STUDIO.md](OPTIMIZED_WORLD_STUDIO.md).
+Actual art diagnosis and subsequent correction: [OPTIMIZED_WORLD_STUDIO.md](OPTIMIZED_WORLD_STUDIO.md).
 Candidate923f93bb imported in second instance a7b4b3ce-3996-4a25-9480-912e61bffc22;
-mesh634a loaded5.006s but visible roofs still fail. Original earned session
+mesh634a initially loaded5.006s with displaced roofs; cadf0ec importer correction loaded4.198s and aligned roofs in the same view. Original earned session
 remains active in a6d25956-416f-4c3b-96bd-8a471f6f9819 using older mesh/tracker.
 Do not conflate these candidates or relabel prior probes as new-candidate passes.
+Fresh reproducible build with centered importer: build/Guildborne_QualityPreview.rbxlx,
+SHA256 c1c6a52c1fc72fda63b3d843ab424dbe37edeca5ec2333eec1d3cdb4e3074a58.
+Build succeeded; this exact exported file has not yet been opened for acceptance.
+S15 is auditing enemy coordinate conventions; S17 identified six city-host
+interaction stamps missing from CivicCityWorld and awaits explicit registered
+file scope. No claim that these six hosts or all NPC quests are complete.
 
 Remaining whole-goal gates include beautiful custom original GUI/runtime art,
 world connectivity/content beyond this starter slice, actual imported audio,
