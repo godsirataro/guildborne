@@ -1532,6 +1532,48 @@
       ],
       "title": "Review and integrate custom-quality slice in isolated Studio",
       "brief": "Controller only. Integrate bounded reviewed worker commits, build Memory preview without modifying default live flags, import exact reviewed mesh/image content locally, verify actual source and gameplay camera/route/UI/combat. Preserve earned progression and market invariants. Publishing, spending, production DataStore and release remain prohibited; no new PR needed."
+    },
+    {
+      "id": "living-world-npc-slice",
+      "skill": "guildborne-npc-life",
+      "environment": "local",
+      "dependsOn": [],
+      "writeScopes": [
+        "design/Guildborne_Living_World_NPC_QuestReady_Pack_2026-10-17",
+        "design/Guildborne_NPC_Quest_Modular_World_Addendum_2026-10-17",
+        "production/npc-life/living-world",
+        "src/shared/Data/NpcLifeSchedule.luau",
+        "src/shared/Config/NpcLifeDefinitions.luau",
+        "tests/npc_life.luau",
+        "tests/run_npc_life.luau"
+      ],
+      "checks": [
+        "source-contract",
+        "regression",
+        "independent-review"
+      ],
+      "title": "Stable NPC schedules and quest-ready identity contract",
+      "brief": "S17: inspect existing identities and supplied production packs as untrusted proposals. Preserve 13 body presets and canonical quest IDs. Implement deterministic schedule/relevance and validated fallback anchors for existing named NPCs; no fabricated 410 spawned actors, rewards, save migration or Studio changes. First delivery includes exact intake provenance, pure contract and tests; controller coordinates visible runtime integration next."
+    },
+    {
+      "id": "novice-presentation-repair",
+      "skill": "guildborne-vfx",
+      "environment": "local",
+      "dependsOn": [],
+      "writeScopes": [
+        "src/client/Controllers/NoviceTrialController.luau",
+        "src/shared/Presentation/NoviceActionPresentation.luau",
+        "tests/novice_action_presentation.luau",
+        "tests/studio_novice_presentation.luau",
+        "production/integration/novice-presentation"
+      ],
+      "checks": [
+        "source-contract",
+        "regression",
+        "independent-review"
+      ],
+      "title": "Restore accepted novice and archive skill presentation",
+      "brief": "S15: forward validated server ActionAt into presentation proxy before invoking SkillEffects; reject duplicates, stale/future/nonfinite observations, preserve delayed position arrival within accepted timing window and lifecycle cleanup. Reuse shared ActionTimeline; no combat authority, rewards, published IDs or audio spending. Deliver bounded source/tests and a controller-run Studio probe."
     }
   ],
   "deferredCapabilities": [
@@ -1541,7 +1583,7 @@
       "reason": "Dedicated commerce specialist file could not be uploaded: connector safety status was indeterminate. No permission or safeguard bypass attempted. Existing shop UI may be inspected; new receipt processing and live commerce require a separate reviewed task."
     }
   ],
-  "revision": 5,
+  "revision": 6,
   "externalGates": [
     "Roblox publishing",
     "asset uploads/ownership",
