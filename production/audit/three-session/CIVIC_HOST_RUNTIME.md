@@ -1,0 +1,11 @@
+# Civic host real-prompt fixture — 2026-10-17
+
+S17 source2869fda integrated as a12e0d4 after independent review. Exact patched CivicCityWorld copied into a uniquely named server review ModuleScript on disposable Memory Studio68487ea4-e619-421d-876a-e3801768d464; fixture imports that copy rather than the cached pre-patch module. This tests the real production callback in disposable city geometry, not ordinary earned travel or the running world's original cached hosts.
+
+Completed 12 real keyboard-E cases: Crownford, Sylvaris, Deepforge, Astralis, Crosshaven and Ironroot, each at8studs accepted and24studs rejected. Fixture-only engine prompt range40 allows actual Triggered input beyond the unchanged14stud application guard. Verify required exactly one real signal in every case. Accepted callbacks set GreetingAt and NpcInteractUntil from one server timestamp with12second interval, NpcInteractor matches actual player, and the correct FriendlyNPC panel callback fired. Rejected callbacks preserved all attributes and did not open a panel. Identity/root checks passed.
+
+Initial fast attempt passed near Crownford but failed the far-case assertion because no Triggered event arrived. This was not counted as rejection proof. Destroy ran in a finalizer, removing geometry and restoring the disposable player. Fresh fixture run used replication waits and camera framing toward each host; all12 cases passed. Construction's first client camera lookup briefly preceded host replication; the later framed run succeeded. No signals were synthesized and no hint attributes manually written.
+
+Final cleanup verified CivicHostPromptFixture absent, player unanchored, original pivot restored; camera type/CFrame restored. Earned a6d25956 session untouched. Exact14stud boundary, no-character case, multiple real clients, visual expiration/last-speaker behavior and quest travel remain separate acceptance work.
+
+Combined controller baseline after civic and narrow-GUI helper integration completed exit0:897tests,381strict Luau files, build/compile/sourcemap checks passed. Raw output retained at build/controller-civic-compass-baseline.log. This local baseline is separate from the12Studio prompt cases and does not prove multiplayer.

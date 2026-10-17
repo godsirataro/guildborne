@@ -11,3 +11,7 @@ Preserved earned Memory client a6d25956 received only two current presentation m
 Read-only search of loaded image/decal/texture/mesh/sound/animation properties found no203785492 reference on earned client. Earlier fresh-client Output contained asset-type warnings for that ID and Roblox CorePackages FoundationProvider warnings; runtime origin remains unresolved, no guessed ID replacement.
 
 No publishing, uploads, spending or production writes. Current ledger is four-session-v4.sqlite3 after all v3 leases were released at the plan boundary. S15 and S17 proceed in their exclusive scopes while root retains Studio.
+
+## Narrow unavailable helper correction
+
+S14 follow-up8fe889c integrated3a6be61. Native Studio fixture390x844 using exact updated beacon source and the exact added Thai dictionary entry showed See quest / ดูภารกิจ; both helper and instruction TextFits=true, card visible. Fixture and temporary modules destroyed. This closes the measured English-helper truncation; unsupported320x280 behavior remains unchanged. Existing full-HUD compass evidence above remains applicable because this patch only changes unavailable-helper selection/localization.
