@@ -1,3 +1,45 @@
+# Four-session production control — current checkpoint 2026-10-17
+
+Verdict: IN PROGRESS. This checkpoint supersedes historical status tables below.
+Controller branch codex/three-session-integration, checkpoint source 84d02e8.
+Single shared ledger: C:/Work/MySelf/Guildborne/build/agentic/four-session-v3.sqlite3.
+No main merge, new PR, publishing, spending or production DataStore writes.
+
+| Stream | Verified delivery | Current work / remaining gate |
+| --- | --- | --- |
+| S13 Map | Local import 85 art placements / 413 server colliders; optimized mesh fits Studio memory budget | ACTIVE: corrected 634a mesh still has visible stable/sawmill roof holes in actual Studio; targeted importer/geometry diagnosis |
+| S14 GUI | Native tracker layering observed EN/TH; 14px source improvement integrated | ACTIVE: real-anchor Hall/bridge/road waypoint guidance; final reference-level art and device review pending |
+| S15 Combat/VFX | Accepted-action timing, cancellation and five-class timing contracts integrated; actual Mage/Warrior Studio probes | Imported audio IDs remain unbound; final visual/audio quality and wider class/device acceptance pending |
+| S17 NPC | Stationary NPC schedules and bounded interaction presentation integrated; actual reduced/far/cleanup and Borin contact evidence | Full NPC/quest roster and multiplayer/city-host interaction acceptance pending |
+| Controller | Six novice chapters plus guild chapters1-3 via ordinary inputs; two companions reached Greenwood, combat/order/quest reward loop passed | Preserve earned Memory session; inspect new roof/navigation candidates, continue visual and full-scope acceptance |
+
+Fresh tools/validate.ps1 completed exit0: 894 tests passed; Rojo build,
+compilation, repository and built-place boundary checks passed, 380 strict Luau
+files. Nine existing GUI test Services UnknownGlobal warnings remain. This does
+not certify runtime visuals, multiplayer or devices. Raw local log:
+build/controller-baseline-latest.log, SHA256 beb8037a6620d43e6cc321ce73806a37356c7d6e71b82e6bd9a8e2fe51a0f6af.
+
+Actual earned journey evidence: [NOVICE_ORDINARY_JOURNEY.md](NOVICE_ORDINARY_JOURNEY.md).
+Player Mage Lv16/XP753 reached Woodland Debt after two-companion Greenwood escort.
+No XP, position, profile or quest completion was injected. Repeated attempts and
+pathfinding/input mistakes are recorded; this is not first-attempt UX acceptance.
+
+Actual latest art rejection: [OPTIMIZED_WORLD_STUDIO.md](OPTIMIZED_WORLD_STUDIO.md).
+Candidate923f93bb imported in second instance a7b4b3ce-3996-4a25-9480-912e61bffc22;
+mesh634a loaded5.006s but visible roofs still fail. Original earned session
+remains active in a6d25956-416f-4c3b-96bd-8a471f6f9819 using older mesh/tracker.
+Do not conflate these candidates or relabel prior probes as new-candidate passes.
+
+Remaining whole-goal gates include beautiful custom original GUI/runtime art,
+world connectivity/content beyond this starter slice, actual imported audio,
+full game acceptance, multiplayer/device/performance and human art/UAT review.
+Goal remains active; last account quota check had36% remaining, stop new work
+near5% as authorized. No completion percentage is inferred from passing tests.
+
+---
+
+# Historical checkpoints (superseded status, retained evidence)
+
 # Three-session production control
 
 Checkpoint: 2026-10-16, Asia/Bangkok. VERDICT: AT_RISK. This is a delivery dashboard, not whole-game acceptance.
