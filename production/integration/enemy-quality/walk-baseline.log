@@ -1,0 +1,921 @@
+PASS companion intent accepts only bounded actor IDs and server-derived actions
+PASS v2 preview Hall and point boundaries preserve maximums
+PASS v2 status allocation rejects invalid keys overspend and nonfinite points
+PASS v2 gates require sequential solo trials and earned Hall
+PASS v2 respec preview conserves budgets repeatedly and rejects unsafe contexts
+PASS v2 migration report never mutates saves or demotes legacy promotions
+PASS v2 migration preserves high Halls and quarantines unknown builds
+PASS enemy field guide preserves existing camp and all ten floor combat values
+PASS exact catalogs and references
+PASS Thai translation coverage and interpolation preserve every placeholder
+PASS language preference persists without changing progression and rejects unsupported input
+PASS v1 profile without optional language remains valid and projects English
+PASS recruitment projection uses authoritative starting level for legacy and Novice
+PASS duplicate item, quest, and adventurer IDs rejected
+PASS dangling reward and equipment references rejected
+PASS default profile is valid and independently allocated
+PASS malformed payloads and forged reward fields rejected
+PASS sparse oversized and duplicate party validation
+PASS invalid quest and never-started completion rejected
+PASS early completion and wrong run rejected without mutation
+PASS duplicate completion and exact request replay cannot duplicate rewards
+PASS request ID payload conflict and stale revision rejected
+PASS unowned nonexistent and incompatible equipment rejected
+PASS Gold never negative and invalid Hall upgrade has no effects
+PASS complete onboarding, eight obtainable items, Hall and rejoin
+PASS active quest and reward snapshot survive rejoin
+PASS full inventory blocks all reward components atomically
+PASS failed load never writes defaults
+PASS unknown acquisition retries same token without changing epoch
+PASS failed save exposes no candidate and blocks further spending
+PASS write committed with lost response recovers without duplicate reward
+PASS server crash after uncertain commit restores committed value
+PASS two servers, lease takeover and stale writer after release
+PASS closing during save preserves committed progression
+PASS archive failure retains evidence and successful retry drains once
+PASS corrupt and future-version data preserved without reset
+PASS explicit migration is additive and repeatable
+PASS semantic replay survives recent-result eviction
+PASS rerun UpdateAsync callback produces one reward and one committed event batch
+PASS analytics failure cannot strand a committed save
+PASS partial-fill item capacity rejection does not consume Gold or XP
+PASS repeated completed runs use repeat rewards and never duplicate first-clear weapon
+PASS audit capacity pauses admission without destroying history
+PASS lease safety margin blocks mutation before expiry and heartbeat restores admission
+PASS owned weapon shortens only the next expedition and snapshots party
+PASS deterministic adversarial command sequence preserves profile invariants
+PASS five-member roster and active snapshot survive commit and rejoin
+PASS hero presentation follows only committed owned members and equipped weapons
+PASS legacy content snapshots remain valid with additive class expansion
+PASS boss slam locks footprint and allows escape before impact
+PASS boss recovery and pending cast cannot be bypassed
+PASS half-health phase alternates pulse and slam with fixed boss origin
+PASS boss circle boundary and height are bounded
+PASS leash or death cancellation cannot release a stale attack
+PASS stalled boss attack expires once and preserves recovery
+PASS boss impact tolerates bounded scheduler jitter
+PASS dead boss cannot release even without explicit cancellation
+PASS regional patterns lock target and release once after windup
+PASS regional phases alternate only at half health and have distinct shapes
+PASS regional footprints enforce facing side range height and ring safe center
+PASS regional death cancellation and stalled server never release stale damage
+PASS regional patterns reject invalid geometry time and unsupported templates
+PASS regional brain excludes other owners hidden dead and high targets
+PASS regional approach is bounded and leash cancels committed patterns
+PASS regional ranged spacing and basic cooldown stay deterministic
+PASS regional support heals valid wounded ally once without mutating health
+PASS regional boss windup cancels without target and releases only at due time
+PASS regional threat and taunt select only visible owned targets within detection
+PASS regional slow affects approach retreat and leash until its server deadline
+PASS regional death captures immutable members and one stable reward ticket
+PASS regional reward pending survives switching encounters and cannot respawn on uncertainty
+PASS regional lifecycle rejects invalid owner party time and unknown encounters atomically
+PASS regional lifecycle contains exactly the twelve configured encounter slots
+PASS regional reward adapter saves real domain candidate once across repeated callbacks
+PASS regional reward adapter preserves exact command through before and after write uncertainty
+PASS regional reward adapter waits for busy profile and rejects cross-session replay
+PASS regional reward adapter keeps unknown exceptions pending and never refreshes their revision
+PASS regional supply quests stay disabled outside the owned offline build
+PASS six regional supply quests count exact accepted node commits and retain gathered materials
+PASS regional contracts fail closed outside enabled combat and stay out of NPC offers
+PASS regional contract chain counts accepted matching commits and survives uncertain rewards without duplicates
+PASS six civic envoys have localized quests and synchronized public directions
+PASS civic tasks require prior community work; regional ones remain preview-gated
+PASS all six civic tasks commit exact one-time rewards through write outages and rejoin
+PASS civic gathering counts only accepted named nodes and deliveries cannot overspend
+PASS regional companion evasion escapes all authored footprint shapes and holds through windup
+PASS regional evasion respects blocked terrain overlapping warnings and body margin
+PASS regional guide statistics and rewards match all twelve runtime definitions
+PASS fifteen named templates validate and explicitly select only matching class visuals
+PASS hero appearance choice is stable class bound and covers three variants
+PASS keyboard and gamepad map to the same bounded combat intents
+PASS companion orders accept only action and owned actor selector fields
+PASS combat hints follow current input and touch remains uncluttered
+PASS combat HUD separates selection actions health and orders across safe areas
+PASS audio bindings reject blank malformed zero and unsafe IDs
+PASS audio voice admission is bounded expires and releases without aliasing
+PASS audio invalid or backwards time cannot bypass rate and lifetime bounds
+PASS combat cue projection covers healing guard ranged frost and melee
+PASS audio feedback only reveals committed deltas once and ignores stale snapshots
+PASS audio feedback keeps uncertain saves and passive errors silent
+PASS music starts quietly crossfades and retires the previous voice
+PASS music rapid retargeting never exceeds two voices or unit gain
+PASS music reverses a crossfade without restarting its retained track
+PASS music same route updates do not restart an in-progress fade
+PASS music rejects malformed and backwards clocks and resets cleanly
+PASS music shipped config has no live assets and every mapped motif exists
+PASS land requires quest then payment then materials; opening is stable
+PASS verified payment is retained while quest eligibility is unavailable
+PASS land rejects malformed and excess contributions without spending
+PASS unconfigured purchases stay disabled and invalid state fails validation
+PASS land catalog rejects ambiguous products and vacuous unlock conditions
+PASS permanent pass catalog excludes zero IDs and rejects cross-category collisions
+PASS verified land ownership survives locked quests without opening or spending
+PASS permanent ownership commits exactly once and survives close/rejoin
+PASS ownership lost-response recovery never duplicates grant or audit
+PASS ownership write outage leaves no local entitlement and recovers pending candidate
+PASS client cannot submit entitlement grants and unconfigured service stays disabled
+PASS restore requires positive platform ownership and disabled mode makes no calls
+PASS restore rechecks session after yielding verification and cannot grant next session
+PASS restore serializes concurrent checks and releases busy after exceptions
+PASS ownership cannot commit after lease loss or while closing
+PASS quest-locked land never reaches platform prompt; explicit unlock is required
+PASS prompt allows only configured server keys and never accepts client prices or IDs
+PASS disabled remote request and unsafe guild location never query platform
+PASS prompt serializes open dialog and cancellation enables another after cooldown
+PASS already-owned platform pass restores durably instead of prompting
+PASS prompt rechecks revision and guild location after ownership yields
+PASS platform errors release prompt lock and never guess ownership
+PASS profile busy closing and expiring lease block purchase prompt
+PASS prompt discarded session cannot clear a newer session's open dialog
+PASS false ownership on restore never revokes saved permanent rights
+PASS island building needs owned footprint and preserves reserved arrival area
+PASS island relocation excludes exactly the owned moving footprint
+PASS island edit cannot sever the portal route to an existing hall
+PASS island rejects nonfinite inputs and diagonal-only access
+PASS island route clearance rejects passages too narrow for the configured actor
+PASS v6 to v7 migration adds only empty land state and leaves input unchanged
+PASS land unlock uses committed quest state and normal request replay protection
+PASS payment grants are not accepted as client protocol commands
+PASS land material receipt replay and rejoin preserve exactly one inventory debit
+PASS uncertain land material commits recover without premature or duplicate delivery
+PASS land building relocation persists identity level inventory and replay across rejoin
+PASS uncertain land building movement reconciles without losing the existing building
+PASS land projection exposes requirements but never payment references
+PASS island access mode is owner-scoped validated and save-atomic
+PASS building storage preserves identity upgrades materials and rejoin
+PASS stored buildings cannot bypass locked terrain overlap or ownership
+PASS uncertain storage and restoration never lose or duplicate a building
+PASS storage schema rejects duplicate ownership invalid levels and malformed entries
+PASS fine placement survives storage restoration save uncertainty and reload
+PASS layout switching reuses owned buildings and stores extras without material changes
+PASS stale layouts cannot recreate dismantled buildings and deletion is replay safe
+PASS layout apply rechecks land permission and rejects invalid geometry atomically
+PASS layout requests accept only a bounded slot and no client building payload
+PASS layout save apply and delete recover uncertain commits without premature changes
+PASS layout schema bounds slots positions and excludes embedded entitlements
+PASS theme quest rights require claimed quest and never accept client payment proof
+PASS theme application preserves upgrades identity storage layouts and materials on rejoin
+PASS theme unlock and apply wait for durable commit and reconcile retries
+PASS trusted theme adapter rejects unconfigured products and duplicate payment references
+PASS theme schema rejects unowned appearance and forged-shaped ownership records
+PASS theme projection exposes boolean ownership without purchase references
+PASS Hall theme uses owned rights and preserves level placement layouts and materials
+PASS uncertain Hall theme changes reconcile without early presentation state
+PASS Hall appearance schema rejects unknown unowned and non-string selections
+PASS Hall uses a reserved upgrade-sized footprint and blocks utility overlaps
+PASS Hall west land respects purchase gates other footprints and entrance routes
+PASS Hall move and upgrade preserve level position identity and rejoin
+PASS Hall movement waits through uncertain persistence before changing its saved location
+PASS layouts capture Hall location atomically with utilities and preserve older slots
+PASS Hall schema and preview reject overlap invalid grid and malformed layout metadata
+PASS new starter edits cannot close a Hall entrance while old save geometry remains loadable
+PASS furniture crafting charges once and preserves ownership through storage and rejoin
+PASS furniture cannot bypass land ownership paths building collisions or collection authority
+PASS furniture uncertainty resolves craft place and store without material or identity duplication
+PASS furniture limits costs and malformed stored records fail closed
+PASS applying building layouts respects furniture that remains in place
+PASS furniture layouts restore owned identities store extras and reject recycled references
+PASS furniture layout save uncertainty keeps committed layout and ownership together
+PASS full furniture collection validates every footprint and shared routes without redundant searches
+PASS furniture themes preserve owned identity through storage layouts and rejoin
+PASS furniture theme uncertainty and invalid saved appearance fail closed
+PASS paid land placement preserves legacy coordinates and requires opened land
+PASS paid land footprints cannot cross a locked neighboring plot or block access
+PASS paid land moves preserve ownership and reject overlap
+PASS client land projection and server opened state agree on build preview
+PASS two stud placement accepts exact quarters and preserves overlap and access lanes
+PASS placement protocol allows bounded quarter grid but keeps other quantities integral
+PASS island visits default private and require trusted friendship for friends mode
+PASS visit ticket rechecks capacity combat portal and safe destination
+PASS policy change departure and re-registration invalidate pending visits
+PASS visit tickets cannot be changed replayed or used after expiry
+PASS only the visited owner can kick and a kicked guest cannot immediately re-enter
+PASS visitor removal protocol never accepts a caller-supplied owner
+PASS AI and damage cannot cross camp safe boundary in either direction
+PASS camp geometry rejects all edges and foreign session or absent authority
+PASS friendly recovery targeting remains available outside combat
+PASS regional damage requires server activation and excludes arrival docks and other regions
+PASS old UI timer cannot unlock a newer pending request
+PASS late and duplicate UI responses cannot overwrite the latest selection
+PASS current late response recovers timeout without resubmitting a mutation
+PASS market invalid-request errors preserve only a safe correlation ID
+PASS earned Hall permit stays tracked after the final campaign and clears after upgrade
+PASS Novice tracker follows ordered lessons trial choice and founding before legacy tutorial
+PASS quest tracker respects prerequisite receipts before suggesting content
+PASS quest tracker item progress follows current inventory, not stale event count
+PASS quest tracker pin falls back after completion or an unknown selection
+PASS quest tracker guides existing onboarding but explicit active pin wins
+PASS quest tracker empty or completed states do not invent rewards
+PASS island directory prioritizes own island and open capacity without mutating input
+PASS island filters are literal searchable presentation not friendship authorization
+PASS island identity projects only earned preset ids and valid Hall levels
+PASS all island identity combinations have fixed EN TH labels and native symbols
+PASS player guild founder handshake grants no authority before canonical activation
+PASS player guild membership slot rejects simultaneous guild invitations
+PASS player guild partial joins survive record cloning and repeated phases
+PASS player guild invitation targets expiry revoked officers and capacity are enforced
+PASS player guild role capabilities do not conflate commanders and officers
+PASS player guild revocation precedes slot clearing and stale activation cannot restore rights
+PASS player guild officer cannot revoke peers or master while members can leave
+PASS player guild leadership requires recipient consent and rejects replaced expired offers
+PASS player guild pending join can be abandoned without activating or leaking the slot
+PASS player guild consumed generations cannot rejoin using delayed old proofs
+PASS player guild failed invitation reservation can be cancelled before a member exists
+PASS player guild recovery advances only the durable handshake phase
+PASS player guild failed reads never clear a membership reservation
+PASS player guild recovery finishes revocation without touching a newer guild
+PASS player guild inconsistent active records are quarantined without inventing authority
+PASS player guild pending projection exposes only its owner's public phase
+PASS player guild roster excludes internal records and rejects nonmembers
+PASS player guild roster transfer consent is visible only to the current recipient
+PASS player guild persisted schema accepts each legitimate founder phase and cancellation
+PASS player guild persisted schema rejects malformed or contradictory authority
+PASS player guild schema stays valid across repeated joins leadership changes and removals
+PASS player guild join retries every uncertain write without duplicate membership
+PASS player guild unfinished operation cannot replay after membership was removed
+PASS player guild operation identity cannot be reused with another invitation
+PASS player guild expired invitation retains reservation for explicit safe cancellation
+PASS player guild revocation racing join activation never grants canonical authority
+PASS player guild concurrent cancellation protects a subsequent guild reservation
+PASS player guild invalid join intents are rejected before storage access
+PASS player guild cancellation recovers every write at each unfinished join stage
+PASS player guild cancellation fences an accept already past the journal read
+PASS player guild cancellation wins against delayed completion of active membership
+PASS player guild old cancellation preserves a newer same-guild membership
+PASS player guild completed join cannot be undone by cancellation
+PASS player guild cancellation handles missing reads and invalid callers without writes
+PASS player guild leave and kick recover every uncertain durable write
+PASS player guild removal validates current role and actor incarnation before revoking
+PASS player guild removal operation identity cannot change its actor or target
+PASS player guild removal completes its written revocation after actor loses privileges
+PASS player guild delayed removal never deletes a newer rejoined member
+PASS player guild removal rejects malformed input before touching storage
+PASS player guild creation retries all six writes without duplicate guilds or slots
+PASS player guild creation cannot overwrite another founder at the same guild key
+PASS player guild creation journal pins identity and rejects parallel second founding
+PASS player guild delayed founder replay cannot steal a newer membership reservation
+PASS player guild immutable origin survives legitimate leadership transfer during finalization
+PASS player guild creation schema rejects malformed origin and generation fences safely
+PASS player guild generations and counters stop before leaving their persisted range
+PASS player guild journal schema validates every coordinator phase and logical key
+PASS player guild removal keys distinguish delimiter-bearing guild and operation IDs
+PASS player guild journal schema rejects unknown phases malformed proof and overflows
+PASS player guild validated store drives founder join cancellation and removal end to end
+PASS player guild store keeps before and after write failures uncertain and retryable
+PASS player guild store reruns callbacks on current copies and discards stale candidates
+PASS player guild store rejects invalid mutations without changing persisted records
+PASS player guild store never treats unavailable or corrupted records as missing
+PASS player guild physical key collisions cannot read or replace another logical record
+PASS journal item progress reflects stock but claimed quests stay complete
+PASS journal available filter excludes locked and accepted tasks
+PASS journal ready filter is an active subset and event progress is bounded
+PASS NPC quest suggestions respect location and prerequisite receipts
+PASS NPC marker prioritizes ready then available then active deterministically
+PASS NPC turn-in availability follows current inventory and isolates players
+PASS NPC marker clears completed content and missing snapshots
+PASS NPC dialogue lists every usable quest in stable priority order
+PASS earned Hall directions choose the nearest city guild portal and completed campaigns invent no NPC
+PASS combat quest routes use catalog events and loaded markers, then return for turn-in
+PASS regional quest guidance routes eight quests through portals then back to the NPC
+PASS city waypoint uses planar arrival threshold and rounded distance
+PASS city waypoint arrow matches camera-local cardinal directions
+PASS city quest navigation names resolve to current NPC stations
+PASS tavern candidate costs follow every rank and exact gold boundary without mutations
+PASS tavern readiness blocks roster, starting-weapon capacity, expeditions and recovery
+PASS tavern upgrade readiness follows Hall, material and maximum-level gates
+PASS tavern novice readiness matches server gates without restricting legacy recruitment
+PASS tavern candidate level uses public projection and never invents a level
+PASS crafting readiness matches authoritative outcome for every recipe and capacity boundary
+PASS crafting materials expose exact shortage and retain stable sorted labels
+PASS crafting novice readiness matches server action gate and preserves legacy
+PASS crafting live location refusal updates without changing materials or bypassing owned forge
+PASS Novice six chapters grant free Hall1 and one level10 hero for all 25 class pairs
+PASS Novice objectives enforce order and both caravan branches have identical progression
+PASS Novice trial receipts cannot bypass lessons level class or Hall gates
+PASS Novice schema rejects corrupt skipped unknown legacy or missing story state
+PASS Novice preview order is flexible and capacity failures leave disposable candidate uncommitted
+PASS Novice objective and trial action names cannot enter through the public protocol
+PASS Novice locks all guild economy actions until founding and preserves legacy access
+PASS Novice new recruitment starts level10 while legacy recruitment stays level1
+PASS Novice receipt adapter resolves a lost write acknowledgment through the real data service
+PASS Novice committed receipts and rewards survive lost responses replay and reconnect
+PASS all five solo trials require every class lesson before stable completion receipt
+PASS solo trial rejects foreign duplicate conflicting and unmeasured combat evidence
+PASS trial death timeout assist escape and event flood invalidate the run permanently
+PASS trial start requires eligible level10 classless solo profile and bounded identity
+PASS trial victory before lessons fails without awarding a class receipt
+PASS all five trial simulations earn lessons from real combat callbacks and produce one stable receipt
+PASS trial combat uses range cooldown real restored health and fresh server samples
+PASS committed trial warning deals normal damage when not dodged and isolation failure stops combat
+PASS trial input explains range and cooldown without damage or progress on rejected attacks
+PASS Novice receipt adapter freezes payload and accepts one result
+PASS Novice receipt retries preflight but never rebases an uncertain transaction
+PASS Novice receipt rejects a changed session and validates branch observations
+PASS Novice manager bounds arenas and releases slots on cancellation or session loss
+PASS Novice manager retains pending victory and notifies once on receipt acceptance
+PASS Novice manager rejects a mismatched receipt without writing
+PASS Novice input accepts only owner attack intents with finite monotonic clocks
+PASS Novice input budget is bounded and foreign spam cannot consume owner tokens
+PASS All eight course lessons produce objective receipts through shared combat without profile grants
+PASS Course combat eligibility rejects skipped repeated foreign-class and assisted lessons
+PASS archive recollections distinguish saved choices without rewriting them
+PASS unknown history uses neutral copy and never invents a chosen branch
+PASS civic work loops close with stationary roots and finite bounded joints
+PASS civic work reduced motion and invalid inputs return no animated joints
+PASS six civic professions have distinct peak poses
+PASS ending storyboard is bounded and rests at both endpoints
+PASS ending reduced motion disables every moving channel without suppressing completion
+PASS ending storyboard rejects nonfinite times and keeps scene-specific motions distinct
+PASS completed previews name their own milestone and only the actual finale is final
+PASS empty campaign does not claim a completed journey
+PASS Campaign tracker prioritizes current ordered objective and every objective has bilingual guidance
+PASS Campaign Hall permits gate novice upgrades including unselected future arcs
+PASS Campaign view exposes ordered bilingual guidance and blocks busy capacity level and expedition claims
+PASS Chapter01 all five guaranteed choices and both allocations reach level20 without duplicate founder or paid gates
+PASS Chapter01 rejects skipped repeated invalid choices and legacy or unfounded access
+PASS Chapter01 receipt copies source and rejects client-shaped extra fields
+PASS Chapter01 invalid persisted fields permits and missing recruit cannot validate
+PASS Chapter01 capacity and running expedition failures discard the entire candidate
+PASS Chapter01 state and grants remain valid in the full optional schema8 profile
+PASS Campaign objective remains private and claim payloads cannot contain rewards
+PASS Campaign private receipts and rewards survive lost acknowledgments replay and reconnect
+PASS Staged continuation accepts every old Chapter01 checkpoint without rewriting it
+PASS Ironveil Hall gates prevent observations and claims even with excess character level
+PASS Ironveil minimum economy reaches Hall4 and level35 without side quests or lost XP
+PASS Ironveil validation rejects forged permits and missing prior identity or recruit
+PASS Staged Ironveil keeps full profiles valid for all five first classes through Hall4
+PASS Staged campaign UI and tracker present Hall gates before blocked Ironveil objectives
+PASS Ashen composition preserves all Chapter01-02 checkpoints and definitions
+PASS Ashen all classes and route choices reach Hall7 level50 with earned resources only
+PASS Ashen refuses skipped objectives forged choices premature Hall permits and repeated rewards
+PASS Ashen metadata presents every objective and Hall gate bilingually
+PASS Tower composition preserves every previous campaign definition and checkpoint
+PASS Tower all root classes and oath-door routes reach Hall11 level70 without extra rewards
+PASS Tower rejects premature permits skipped objectives replay and invalid choices without effects
+PASS Tower bilingual metadata and Hall tracker expose gates for all six quests
+PASS Tower saved midpoint and shield lesson survive full profile reload without duplicate rewards
+PASS Crosshaven preserves the completed Tower checkpoint when composing the next arc
+PASS Crosshaven five roots and eight story routes reach Hall14 level85 with guaranteed supplies
+PASS Crosshaven gates ordered evidence invalid choices repeated claims and unselected Hall15
+PASS Crosshaven supplies bilingual guidance and valid deterministic rewards for every objective
+PASS Archive Heart preserves the completed Crosshaven record and earlier chapter definitions
+PASS Archive Heart ninety class choice routes reach level100 Hall17 with guaranteed upgrades
+PASS Archive Heart rejects skipped backup invalid endings replay and unselected Hall18 without spending
+PASS Archive Heart uses existing rewards and bilingual guidance for all eighteen objectives
+PASS Archive encounters admit the exact chapter class Hall and prior evidence without profile mutation
+PASS Five root classes finish three distinct warden warnings and all keeper rescue seal combat phases
+PASS Archive warnings are immutable and hits or late world samples cannot grant a safe dodge
+PASS Archive phases enforce proximity fresh samples time windows and core immunity
+PASS Archive hit IDs deduplicate conflicts cooldown and bounded event memory
+PASS Archive cancellation death arena bounds and expiry never yield a completion receipt
+PASS Archive native-combat bridge completes all five roots with real CombatDamage basic events
+PASS Archive bridge shields cores and rejects stale distant invalid or premature attacks
+PASS Archive support skills do not invent damage and hostile skills obey server ranges
+PASS Tower guard mend and combined training complete through correctly timed distinct actions
+PASS Tower training rejects wrong role target duplicate and expired actions
+PASS Tower training cannot win by fast-forwarding or leaving and respects defeat and stale sessions
+PASS Tower training snapshots config and invalid clocks cannot change private state
+PASS Tower training two missed cues fail once without granting successes
+PASS Ledger guardian all five real class abilities win with two dodges and preserve saved profiles
+PASS Ledger guardian rejects wrong class checkpoint level Hall and active expeditions
+PASS Ledger receipts require measured skill two dodges and victory with isolation and live health
+PASS Tower private court fits Ashen navigation without extending surface combat
+PASS Court annex does not connect the void or alter original regions and city bounds
+PASS Escort walks the complete ordered route at capped server speed
+PASS Escort waits for its owner and resumes without skipping distance
+PASS Escort arrival waits until the owner also reaches the safe exit
+PASS Escort fails on defeat or sustained obstruction and cancels stale sessions
+PASS Escort isolates mutable input and snapshots and rejects malformed routes
+PASS Ironveil sequence rejects skips replay spam and backward clocks without granting completion
+PASS shutter preparation gives the centre start time to reach the first lane without awarding blocks
+PASS Ironveil protection requires three timely correct shutter blocks
+PASS Ironveil protection cannot credit late input or catch-up skips and clears stale encounters
+PASS All ten borrowed Class2 paths use their real ability and win without changing saved builds
+PASS Borrowed path admission rejects wrong class stage Hall level or active expeditions
+PASS All fourteen borrowed Class3 paths use their real ability and win without changing saved builds
+PASS Borrowed mastery admission rejects wrong class stage Hall level or active expeditions
+PASS profile rules preserve every legacy Hall and isolate all Novice caps
+PASS schema8 Novice starts Hall0 and validates classless XP without loosening schema7
+PASS schema7 to8 migration copies records and retains old XP levels and Hall rights
+PASS every XP producer and Hall projection honors the profile ruleset
+PASS opt-in schema8 survives uncertain saves replays and rejoin without changing XP
+PASS combat stats derive class level and compatible equipped weapon
+PASS physical damage predictable and attack monotonic
+PASS defense mitigates with positive minimum
+PASS invalid negative nonfinite stats and levels rejected
+PASS healing cap and separate healing telemetry
+PASS ability cooldown authoritative and invalid cast does not consume
+PASS target validates owner allegiance active state and nil
+PASS attack range and attack interval checked on server
+PASS Knight threat and temporary taunt override expire
+PASS Priest picks meaningful largest deficit skips full downed foreign distant
+PASS enemy death latched once only and duplicate reward rejected
+PASS invalid ability and another class ability rejected
+PASS downed hero cannot attack cast or receive combat healing
+PASS dead enemy cannot attack or receive additional damage
+PASS combat references resolve and bad configs fail startup
+PASS forged combat damage heal health stats and reward intents rejected
+PASS combat reward commits Gold XP audit once and survives rejoin
+PASS uncertain combat save reconciles without double Gold XP
+PASS reward capacity and foreign membership reject atomically
+PASS regional reward catalog covers art profiles with bounded existing item definitions
+PASS regional rewards commit once with items and do not advance Goblin tasks
+PASS regional reward uncertainty reconciles exactly once before and after writes
+PASS unknown regional rewards and inventory overflow never partially award
+PASS combat sight blocks damage healing and selection without consuming cooldowns
+PASS v1 migration preserves populated heroes inventory active quest receipts and audit
+PASS actual load migrates v1 atomically and preserves legacy active snapshot
+PASS corrupt v1 and unexpected character data never get replaced
+PASS all five starter choices have matching class path skill and kit references
+PASS class selection idempotent replay and second-choice rejection survive rejoin
+PASS failed class save exposes no choice and uncertain commit reconciles exactly
+PASS forged character definition tier race XP and skill references fail schema
+PASS solo player combat reward levels only player and commits once
+PASS hero-only reward does not give passive player XP
+PASS player plus five heroes eligible without consuming a party slot
+PASS invalid unselected duplicate and overflowing player rewards are atomic
+PASS selected player can rest every hero without unlocking empty expeditions
+PASS player participation requires actual damage or combat healing and matching owner
+PASS expired taunt cannot grant a new player participation credit
+PASS companion effects never grant player participation
+PASS combat intent rejects client authority fields and bounds spam
+PASS v2 migration preserves selected class all ownership and active expedition
+PASS unexpected legacy equipment cannot be silently overwritten
+PASS three slots contribute identical projected and combat stats
+PASS player kit is a fallback and never becomes a sellable inventory instance
+PASS transfer removes old assignment replaces destination and retains every item
+PASS unowned actor item incompatible class and invalid slot leave data unchanged
+PASS all classes have compatible armor and accessory choices
+PASS schema rejects duplicate cross-actor ownership and wrong slot
+PASS full inventory purchase fails atomically without spending or sequence advance
+PASS purchase price authority no-negative Gold and duplicate purchase receipt
+PASS sale requires unequip and cannot duplicate Gold after retries
+PASS expedition snapshot remains immutable through away-hero equipment transfer
+PASS transfer uncertain save never exposes partial assignment and exact rejoin persists
+PASS uncertain purchase and sale preserve exact Gold and instance conservation
+PASS status level budgets soft caps and malformed allocation boundaries
+PASS status allocation is offline-gated and level-derived separately per actor
+PASS status copied profile validation rejects corrupt spends without modifying legacy saves
+PASS status uncertain writes and reset replays retain exact per-entity budget on rejoin
+PASS status edits cannot change expedition snapshots or unavailable heroes
+PASS status bonuses use identical projected and combat totals with no allocation baseline drift
+PASS Wisdom changes actual healing and timed guard without bypassing cooldown ownership or expiry
+PASS offline class advancement refunds existing SP and AP once without granting a new budget
+PASS shared XP projection banks excess XP and respects the supplied content rules
+PASS advancement readiness preserves every path gate without mutation
+PASS skill preview agrees with authoritative prerequisite and point gates
+PASS skill preview preserves branch conflict order and never spends
+PASS three skill slots follow server unlocks including prestige holes
+PASS slot casting rejects locked arts and preserves global cooldown across slots
+PASS v3 migration adds expansion without changing prior data and rejects collisions
+PASS gathering cooldown capacity and replay persist without duplicated resources
+PASS building boundary overlap reserved path and foreign IDs reject without cost
+PASS move rotate dismantle refunds half once and preserves main access
+PASS construction missing materials and uncertain saves never expose partial base
+PASS UAT catalog has thirty useful items and ten valid recipes with unchanged trade allowlist
+PASS all seven new recipes enforce gates exact costs bound output and replay safety
+PASS new gear purchase gates and uncertain crafting recovery preserve ownership
+PASS warehouse raises gathering cap and forge consumes exact recipe atomically
+PASS full equipment crafting rolls back recipe and instance sequence
+PASS promotion boundaries 29 30 69 70 and global Hall cap
+PASS all five classes have two gated Class 2 branches and matching Class 3 arts
+PASS skill prerequisites points branch exclusion and reset conserve builds
+PASS hero build is independent and bonuses match projected combat stats
+PASS race choice persists exactly once with bounded tradeoffs
+PASS tower only accepts server completion and never skips uncleared floors
+PASS ten tower floors unlock checkpoint and first-clear repeat rewards differ
+PASS tower failure retry and active rejoin retain clear history without rewards
+PASS uncertain tower completion reconciles first-clear exactly once
+PASS special Epic Legendary and Secret paths require their actual milestones
+PASS schema rejects forged points path race overlap and tower progress
+PASS group prestige support excludes distant foreign and downed actors
+PASS all expanded arts enforce targets cooldowns and meaningful effects
+PASS regional gathering keeps per-profile cooldown and capacity atomic
+PASS regional gathering does not expose inventory before uncertain save resolves
+PASS regional herbs satisfy gathering quests once without replacing home discovery
+PASS Ironveil and Ashen gather nodes preserve original resource discovery gates
+PASS forty quests preserve originals and validate all journal prerequisites
+PASS friendly Orc event quests count only accepted committed gathering
+PASS friendly Orc delivery rewards consume once through uncertain save and rejoin
+PASS friendly Orc quest indicators follow their own prerequisites and turn-ins
+PASS new event quests track committed actions only and rewards cannot replay
+PASS craft objectives and existing state goals are save-atomic without rebuilding
+PASS roster skill and Tower guidance responds to successful owned actions
+PASS legacy active expedition snapshots survive the UAT content version
+PASS v4 migration preserves levels and safely raises legacy Hall floor
+PASS Hall cap banks XP then unlocks exactly five levels per upgrade
+PASS housing capacity is bounded by both Hall and Quarters with occupied dismantle rejected
+PASS tavern odds total 100 percent and top rank weight improves
+PASS all fifteen offline templates keep named identity class stats and matching appearance when hired
+PASS named candidate and hire survive uncertain writes replay and rejoin without rerolling
+PASS duplicate-class hires keep distinct IDs equipment skills and party assignments
+PASS uncertain scouting commits one charged candidate and never rerolls on retry
+PASS main side NPC journal is one-time and tracks only accepted server events
+PASS dispatch excludes field party duplicate IDs and already assigned heroes
+PASS dispatch survives offline rejoin with hidden outcome and immutable reward
+PASS dispatch rewards reject capacity atomically and recover uncertain writes
+PASS death requires one Elixir and revival retains hero identity gear XP and rank
+PASS injured hero heals only after server recovery deadline
+PASS dispatch roster gear cannot move while away and returns after resolution
+PASS private purchase receipt survives uncertain save and rejoin without duplicate Elixir
+PASS each city has a bilingual nonreward welcome guide within its bounds
+PASS six civic routes require their own claimed envoy charter and preserve earned state
+PASS civic arrival fallbacks are distinct safe-city bounds separated from combat regions
+PASS remembered guild portal returns only to fixed city stops and preserves the default fallback
+PASS district return stop cannot be provided by a client travel request
+PASS city destination allowlist accepts city and personal guild
+PASS unknown and future travel destinations reject
+PASS travel protocol rejects arbitrary transforms and foreign identity
+PASS guild to city preserves selected companions and all progression
+PASS city to guild preserves companions and progression
+PASS city bounds suppress combat acquisition even with foreign origins
+PASS travel prohibits downed dead combat and tower states
+PASS travel fallback resolves separate supported spawn candidate
+PASS city district IDs unique and bilingual navigation resolves
+PASS warp throttle rejects burst and isolates players
+PASS distant and nonfinite portal claims reject
+PASS travel never adds foreign companions
+PASS city delivery retains actor and Hall caps
+PASS Greenwood travel preserves profile and remains a safe traversal zone
+PASS Greenwood primary and fallback landings are distinct and in regional bounds
+PASS all regional routes preserve profiles and keep unique safe arrival bounds
+PASS market valid sell reserves owned material immediately
+PASS market valid buy reserves spendable Gold
+PASS market unowned quantities reject before ticket
+PASS market insufficient Gold rejects before ticket
+PASS market rejects invalid price 0
+PASS market rejects invalid price -1
+PASS market rejects invalid price 0.5
+PASS market rejects invalid price inf
+PASS market rejects invalid price -inf
+PASS market rejects invalid price nan
+PASS market rejects invalid price 100001
+PASS market rejects invalid quantity 0
+PASS market rejects invalid quantity -1
+PASS market rejects invalid quantity 0.5
+PASS market rejects invalid quantity inf
+PASS market rejects invalid quantity nan
+PASS market rejects invalid quantity 1001
+PASS market value ceiling before multiplication exceeds configured limit
+PASS market unknown item and all existing bound gear rejected
+PASS market rejects equipped item identity and forged owner result
+PASS market duplicate create is durable beyond response cache
+PASS market reused create identity rejects changed payload
+PASS market crossing maker price seller fee and buyer price improvement
+PASS market noncrossing orders remain active
+PASS market lowest ask first regardless of time
+PASS market highest bid first regardless of time
+PASS market equal price uses durable acceptance sequence
+PASS market multiple partial fills conserve original remaining and filled
+PASS market complete fill removes remaining escrow
+PASS market fee is cumulative ceil not ceil per fill
+PASS market 10000 Gold costs 500 fee
+PASS market fee configuration zero and snapshot
+PASS market cancellation returns once and never charges unfilled fee
+PASS market partial cancellation returns only remaining items
+PASS market Gold cancellation returns exact reserve
+PASS market foreign cancellation rejected
+PASS market self trade never creates volume or fees
+PASS market immediate buy unit guard prevents catastrophic fill
+PASS market immediate sell minimum guard and empty remainder refund
+PASS market immediate partial fill cancels unmatched remainder
+PASS market open-order limit spans item reservations
+PASS market cancelled order releases slot
+PASS market missing stale duplicated cache and messages do not authorize fills
+PASS market three workers interleave CAS callback without overfill
+PASS market callback rerun burns fee exactly once
+PASS market cancel racing fill preserves ownership
+PASS market crash after admission before reserve never debits
+PASS market uncertain profile reservation recovers without double debit
+PASS market durable reservation survives market store outage
+PASS market crash after fill before settlement replay recovers
+PASS market crash after claim profile commit before ack does not duplicate
+PASS market offline seller mailbox then online owner collection
+PASS market duplicate claim after newer claim watermark harmless
+PASS market full wallet leaves claim pending
+PASS market expiry without lease or notifications returns remaining reserve
+PASS market tombstone excludes late deposit after abort
+PASS market source refund cannot reverse accepted outcome
+PASS market invalid state transition rejected
+PASS market retention capacity closes BEFORE reservation
+PASS market thin and empty book has absent prices and explicit guide
+PASS market reference rejects single extreme trade
+PASS market robust reference ignores isolated extreme in diverse sample
+PASS market split wash pair cannot meet diversity reference threshold
+PASS market OHLC volume and five required periods
+PASS market 24h high low volume ignore older trades
+PASS market order book projection hides identities and foreign history
+PASS market v5 migration preserves every existing field and unlock
+PASS market migration rejects conflicting field instead of reset
+PASS market transfers are not Gold faucets or sinks
+PASS market deterministic 90-operation adversarial sequence conserves assets
+PASS market remote rate bucket is bounded and refills
+PASS market remote rejects forged identities and result fields
+PASS market offline reservation recovered by foreign worker without profile write
+PASS market Thai localization covers primary navigation and confirmations
+PASS hardening numeric epoch starts at one and server controls identity
+PASS hardening v1 market migration preserves escrow and claims
+PASS hardening old v1 worker cannot overwrite migrated book
+PASS hardening closing rejects admission before profile debit
+PASS hardening close cancels all remaining orders preserving quantity
+PASS hardening closing returns item escrow exactly once
+PASS hardening closing returns Gold escrow exactly once
+PASS hardening offline claim blocks reconciliation without loss
+PASS hardening archive prohibited before reconciliation
+PASS hardening rollover archives and new generation accepts orders
+PASS hardening stale order replay after archive rejected
+PASS hardening late old deposit fenced even after receipt pruning
+PASS hardening profile compaction keeps fixed claim watermark
+PASS hardening duplicate old claim after compaction creates no value
+PASS hardening old reservation after profile compaction fenced
+PASS hardening unconfirmed accepted source prevents archival
+PASS hardening stale rollover command cannot close new generation
+PASS hardening replay safety window before archival
+PASS hardening 30 day candles cross epoch boundary without raw replay
+PASS hardening all five candle windows rebuild after pruning
+PASS hardening archive does not double-count before StartEpoch
+PASS hardening thin reference fallback after boundary is explicit
+PASS hardening archive old candles expire without deleting pending claims
+PASS hardening per player order cap
+PASS hardening per item and partitioned global cap includes admission tickets
+PASS hardening hot item capacity does not block another item
+PASS hardening concurrent callback replays allocate unique sequence
+PASS hardening two workers race same remaining fill
+PASS hardening cancellation races fill under epoch fence
+PASS hardening durable before fault recovers without duplicates
+PASS hardening durable after fault recovers without duplicates
+PASS hardening MemoryStore total loss and dropped duplicated messages harmless
+PASS hardening recovery worker crash restart and duplicate run
+PASS hardening pending claim age and backlog metrics
+PASS hardening audit Gold corruption fails loudly
+PASS hardening audit item escrow corruption fails loudly
+PASS hardening audit claim corruption fails loudly
+PASS hardening audit conservation and fees succeed
+PASS hardening READ_ONLY rejects creates but allows cancellation settlement
+PASS hardening PAUSED rejects mutation retains readable data
+PASS hardening market pause does not lock normal profile service
+PASS hardening circuit breaker threshold bounded cooldown
+PASS hardening profile save budgets protected before market maintenance
+PASS hardening namespace public disable staging prod separation
+PASS hardening operator commands absent from client protocol
+PASS hardening operator unknown commands fail
+PASS hardening index rebuild read-only operator preserves balances
+PASS hardening recovery assist has no mint capability
+PASS hardening invariant mismatch latches circuit PAUSED without auto restart
+PASS hardening 24 hour aggregates survive epoch rollover
+PASS hardening archived reference snapshot expires to explicit guide
+PASS hardening schema v6 stays v6 with bounded floor extension
+PASS hardening crash after SELL profile reserve resumes through session refresh
+PASS hardening crash after BUY profile reserve resumes through session refresh
+PASS hardening claim credit committed before acknowledgment resumes once
+PASS hardening session departure forbids claim on foreign owner
+PASS hardening close during uncertain prepared reserve compensates exactly once
+PASS hardening automatic recovery advances closed epoch without leases
+PASS hardening private acceptance names isolate both profile and market roots
+PASS hardening throttled response unblocks UI without reflecting oversized identity
+PHASE45_LOAD orders=5000 cycles=2500 epochs=63 seconds=87.851 ordersPerSecond=56.91 pairP50Ms=33.029 pairP95Ms=62.543 pairMaxMs=155.066 invariantViolations=0 fixedKeys=1
+PASS hardening 5000 order sustained deterministic multi-epoch load conserves every step
+PASS appearance catalog retains all planned original IDs and no imported assets
+PASS appearance canonicalizes documented head aliases without changing client selection
+PASS appearance wire requires version one full bounded shape
+PASS appearance wire rejects arbitrary Roblox numeric IDs and injected instances
+PASS appearance wire rejects unbounded nested slots and metatables
+PASS appearance revision rejects negative fractional infinity NaN and overflow
+PASS appearance wire rejects unknown action arguments and empty actor IDs
+PASS appearance rejects unknown cosmetic race and Wizard pseudo race
+PASS appearance rejects a cross-race body preset
+PASS appearance rejects cross-race skin palettes
+PASS appearance rejects unknown skin and hair color configuration IDs
+PASS appearance rejects unknown canonical asset IDs
+PASS appearance rejects wrong slot asset even if starter owns it
+PASS appearance rejects cross-race hair without ancestry mutation
+PASS appearance fit families do not grant universal garment fit
+PASS appearance refuses unverified exact preset fit
+PASS appearance refuses assets outside authenticated starter entitlements
+PASS appearance production policy refuses all planned assets
+PASS appearance placeholder flag alone does not grant asset availability
+PASS appearance rejects duplicate dedicated hair beard and race feature channels
+PASS appearance existing weapon ownership stays outside cosmetic slot
+PASS appearance rejects foreign actor IDs and preserves every gameplay field
+PASS appearance stale actor revision and exhaustion fail without mutation
+PASS appearance dead injured dispatched and fighting actors remain unavailable
+PASS appearance Standard golden path changes only appearance and emits one receipt
+PASS appearance Heavy tint clothing removal and rigid choices preserve gameplay
+PASS appearance independent heroes retain names templates and equipped inventory
+PASS appearance migration is opt-in idempotent and preserves legacy save exactly
+PASS appearance migration maps only existing legacy ancestry without rewriting it
+PASS appearance migration refuses malformed extension before partial mutation
+PASS appearance schema rejects corrupted stored selection and noncanonical alias
+PASS appearance read returns an independent default without opting actor in
+PASS appearance dispatcher changes no gameplay even if injury healing is due
+PASS appearance active expedition heroes cannot change their saved visual identity
+PASS appearance durable commit replay increments revisions only once
+PASS appearance uncertain pre-write failure retains old local state and retry commits once
+PASS appearance uncertain post-write replay and restart retain exact durable choice
+PASS appearance storage callback replay cannot duplicate receipt or revisions
+PASS appearance request conflicts stale profile and actor revisions cannot overwrite selection
+PASS appearance rejected ownership and storage rollback preserve all profile data
+PASS appearance lease loss cannot commit over a newer owner
+PASS appearance committed storage survives post-commit notification failures
+PASS mentor presentation follows saved proof and current party dispatch eligibility
+PASS mentor ephemeral projection exposes only actor path phase and no receipt authority
+PASS mentor eligibility and lifecycle messages have friendly English and Thai text
+PASS hero mentor all ten paths require real effects and solo victory
+PASS hero trial rejects ownership path level condition job and first-clear bypass
+PASS hero trial timeout bounds and unfinished runs never issue receipts
+PASS hero high attack builds and lethal cast event order remain finishable
+PASS healer needs actual restoration and guardian needs a guarded received hit
+PASS first lethal art counts cast event emitted after enemy defeat
+PASS mentor choice can be retrained but another hero or path cannot spend proof
+PASS hero proof commits only matching hero snapshot and path without touching player
+PASS optional mentor proof validates with flags off and preserves legacy earned builds
+PASS mentor integration preserves already earned hero promotion to Class3
+PASS public protocol accepts only start cancel and rejects private mentor receipt
+PASS hero receipt adapter fences start session and freezes uncertain command
+PASS hero proof transaction recovers uncertain saves and replay once
+PASS human party six-owner cap retains five companions per owner and rejects seventh
+PASS final slot competing accepts are fenced then capacity checked
+PASS request replay cannot recreate an invite or alter another incarnation
+PASS bounded replay eviction still rejects old revisions and ineligible recovery remains usable
+PASS leadership permissions readiness resets and snapshot isolation
+PASS invite ownership expiry and bounded inbox reject abuse
+PASS disconnect transfers leader retains slot during grace and fences old session
+PASS canonical Studio user ids supported and malformed action arguments rejected
+PASS runtime fences live players disabled mode profile state and stale removal
+PASS Human Party wire contract is separate from five NPC companions
+PASS Human Party wire rejects authority fields and malformed revision
+PASS Human Party readiness accepts only explicit booleans
+PASS balanced tactics retains existing targeting while defensive bounds protection
+PASS manual overrides supersede presets without modifying health stats or cooldowns
+PASS tactical decisions preserve engagement leash and focus validity
+PASS formation offsets separate five same-role heroes and place ranged behind tanks
+PASS tactics protocol has no client position target skill or stat authority
+PASS tactic feedback has English and Thai explanations
+PASS product analytics rejects arbitrary identifiers names fields and numeric hazards
+PASS session funnel handles independent milestones replay rejoin and bounded clocks
+PASS only effective player outcomes and accepted bounded orders count
+PASS provider failures mutation and missing contract cannot leak or change delivery
+PASS product defers yielding providers bounds pending work and snapshots inputs
+PASS scheduler failures release product capacity without calling providers
+PASS session lifecycle has bounded storage and invalid clocks fail closed
+PASS shared actors preserve local IDs but have unique threat keys across owners
+PASS shared support credits only effective hero healing and rejects friendly damage and enemy heals
+PASS explicit mode fails closed for unregistered clones stale selections and copied token fields
+PASS encounter generation and owner registration tokens cannot cross boundaries
+PASS identity mutations invalidate registration and malformed identity never registers
+PASS explicit membership does not bypass range sight or hostile space
+PASS membership revoked inside spatial validation cannot survive to effect mutation
+PASS registry bounds encounters owners allies enemies and releases capacity on cleanup
+PASS legacy idless enemy damage still applies to a hero while explicit mode rejects it
+PASS private token accessors expose only current encounter and owner generation
+PASS legacy targeting and damage preserve owner restrictions and local threat IDs
+PASS shared allocations conserve all budgets across solo party and outsiders
+PASS canonical input order does not change allocations and seed rotates remainder
+PASS signed Studio owner IDs conserve rewards while zero is rejected
+PASS v2 frozen actor roster divides owner XP without multiplying rewards
+PASS v2 rejects missing player duplicate unsafe oversized and sparse actor rosters
+PASS v2 repository isolates versions and conflicts on frozen roster change
+PASS maximum v2 records fit guarded bucket capacity and roundtrip
+PASS snapshot validation rejects sparse duplicate unknown and unsafe numeric input
+PASS repository prepares once across instances conflicts and returns deep copies
+PASS uncertain after commit is recoverable without issuing another allocation
+PASS capacity fails closed never evicts existing settlements and namespaces isolate
+PASS atomic callback retries use the latest bucket without duplicate entries
+PASS malformed storage and read failures cannot manufacture settlements
+PASS metatable views cyclic graphs and oversized records fail before copying
+PASS two six and seven owners share exactly one enemy step with private owned actor slices
+PASS fixture bounds support 96 allied actors and reject a seventeenth owner
+PASS join idempotence replacement and exact-session leave invalidate old actors only
+PASS mentor detach and fresh attachment never revive stale actor objects
+PASS yielding enemy callback fences reentry and revokes old effects after replacement
+PASS callbacks are once per stamp failures consumed and reentrant ticks rejected
+PASS owner callback suspended across mentor detach cannot heal through stale membership
+PASS close during suspended callback revokes all and prevents remaining owner steps
+PASS malformed rosters rejected without detaching a valid current session
+PASS participation solo and six plus outsider require actual owned effects
+PASS healing requires recorded encounter wounds and tanking credits recipient owner
+PASS replays invalid actors foreign encounters and nonfinite events give no credit
+PASS activity expiry and late chip damage cannot qualify idle owners
+PASS death departure and rejoin preserve bounded earned contribution
+PASS freeze is stable detached and clocks fail closed
+PASS ledger caps owner admission without displacing earned participants
+PASS rejoining without effective action does not renew departed eligibility
+PASS detached actor wounds release capacity without transferring wound credit
+PASS expired wounds and neutral recovery cannot renew healer eligibility
+PASS negative Studio owner IDs remain explicit registered authorities
+PASS atomic claim uses frozen recipients and durable receipt, public protocol rejects
+PASS durable claim survives recent32 eviction and fresh session epoch
+PASS adapter recreation and pre/post commit exceptions deliver once
+PASS adapter handles thrown commit response and retains immutable command across uncertainty
+PASS unknown pre-commit result resolves after unrelated revision without blocking other claims
+PASS public request IDs cannot poison fresh private claim attempts
+PASS yielded repository Read cannot submit into unrelated pending save
+PASS adapter bounds and exact-session cleanup do not cancel replacement work
+PASS crash after uncertain write resolves receipt under new owner epoch
+PASS two recipients remain independent when one inventory is full
+PASS missing frozen actor, XP cap, wallet and receipt capacity reject entire allocation
+PASS optional extension absent valid and malformed receipts rejected even without activation
+PASS lease and session states precede durable success and yielded Read fences replacement
+PASS frozen hero XP is independent of current party and audit saturation is atomic
+PASS equipment uses bounded sequence ids and byte capacity rejects before commit
+PASS prepare precedes registration and all phases are opaque consume-once capabilities
+PASS registered domain-down actors remain in support until session retirement
+PASS two owners share targeting but retain own lists and effect-time boundary checks
+PASS new prepare invalidates old phase and commands before fresh attachment
+PASS mixed registrations and duplicate actor rosters fail closed
+PASS once-only enemy callback stays fenced through yield errors and scene closure
+PASS prepared identity mutation and scene replacement invalidate capabilities
+PASS running owner phase cannot reattach actors through reentry or yielded preparation
+PASS malformed enemy elements reject without invoking the enemy callback
+PASS sixteen owners remain bounded at96 support and six own actors
+PASS authoritative sinks and predicates cannot yield across combat mutation
+PASS group heal primary and secondary stay inside owning six while singles can share
+PASS two owners repeated local IDs share exactly one enemy tick
+PASS save states retain incarnation and follower validity without enabling inactive Active
+PASS session epoch and roster replacements preserve HP and cooldown but retire proofs
+PASS old player removal cannot detach replacement and character change is fresh
+PASS mentor death and boundary exits revoke while preserving other owner
+PASS enemy callback fault closes proof and never silently falls back
+PASS manual callback cannot create incarnation before spent cooldown is published
+PASS seven owners and full six actor rosters remain bounded and close releases all
+PASS shared reward sinks freeze conserved roster once and never perform IO
+PASS departure keeps earned frozen roster while stale actor cannot earn more
+PASS new owner registration preserves first credited actor roster
+PASS neutral recovery prevents healer credit and empty eligibility creates no settlement
+PASS unknown preparation never delivers early and retries the immutable snapshot
+PASS blocked recipient does not starve others and scene close retains deliveries
+PASS conflicting prepared allocation fails closed and invalid roster cannot redistribute
+PASS only exact registered basic enemy death finalizes and worker is single flight
+PASS coordinator supplies trusted roster and leaves before registry revocation
+PASS single enemy legitimate death completes after corpse cleanup without weakening membership
+PASS local travel requires active unbusy session and explicit individual presence
+PASS local travel preserves novice mentor downed combat and tower refusals
+PASS local return is bound to exact connection epoch token and character
+PASS repeated entry cannot replace saved return and absent return is rejected
+PASS legacy travel rules and cooldown remain unchanged
+PASS actual travel adapter enters and returns original transform and respawn once
+PASS actual travel adapter blocked destination and injected gate do not move or snapshot
+PASS actual travel adapter recovers falling same connection and clears replacement snapshot
+PASS actual travel adapter remove and ordinary travel never retain lab return
+PASS actual travel adapter blocked saved transform falls back and respawn returns
+PASS actual travel adapter scene closed gate rejects entry but permits safe exit
+PASS actual adapter fault recovery ignores stale domain combat but waits for active session
+PASS new character heartbeat cannot consume return before delayed spawn settle callback
+PASS spawn settle callback during Saving retains authorized recovery until Active
+PASS default trial and lesson reject negative zero malformed owners
+PASS negative identity requires every local environment fence and exact current owner
+PASS local trial keeps solo progression and exact receipt ownership
+PASS negative practice combat produces real hit receipt and input remains owner bound
+PASS Launch flag cannot enable a published or persistent environment
+PASS Release prevents future entry and new objectives but allows recovery and earned claims
+PASS Player Class2 needs completed mentor story and hero proof is never borrowed
+PASS Policy preserves legacy advancement and elevated earned levels without global recapping
+PASS Validation catalog cannot substitute active rewards or choice semantics
+PASS Full historical campaign checkpoints remain valid under a two-chapter launch
+PASS daily UTC boundary and rollback cannot duplicate claims
+PASS skipped days preserve cycle and day seven repeats without reset
+PASS full inventory leaves daily receipt and state unchanged
+PASS season uses persisted chapter count and claims each track once
+PASS reward validation rejects injected fields and malformed receipts
+PASS additive migration and projection preserve isolation
+PASS disabled rewards make no changes
+PASS launch daily uncertain commits recover exactly once before and after write
+PASS launch daily callback replay and simulated crash retain one award
+PASS launch corrupt receipts reject load without resetting data
+PASS launch projection exposes display rewards without stored claim receipts
+PASS release projection derives actor-specific gates and retains the full catalog
+PASS historical story progress beyond active release displays completion without mutation
+PASS release UI suppresses new future quest offers across journal NPC and tracker
+PASS release UI retains earned future quest turn-in and claimed history
+PASS release availability does not change unrestricted previews
+
+890 tests passed.
+Building project 'Guildborne'
+Built project to Guildborne.rbxlx
+Created sourcemap at build/sourcemap.json
+[INFO] Loading definitions file: @roblox - C:\Work\MySelf\Guildborne-enemy-quality\.tools\luau-lsp\globalTypes.d.luau
+[WARN] client does not allow didChangeWatchedFiles registration - automatic updating on sourcemap changes disabled
+tests/gui/behavior.luau(81,12): UnknownGlobal: Unknown global 'Services'; consider assigning to it first
+tests/gui/behavior.luau(82,15): UnknownGlobal: Unknown global 'Services'; consider assigning to it first
+tests/gui/behavior.luau(84,9): UnknownGlobal: Unknown global 'Services'; consider assigning to it first
+tests/gui/behavior.luau(93,13): UnknownGlobal: Unknown global 'Services'; consider assigning to it first
+tests/gui/behavior.luau(111,16): UnknownGlobal: Unknown global 'Services'; consider assigning to it first
+tests/gui/behavior.luau(118,2): UnknownGlobal: Unknown global 'Services'; consider assigning to it first
+tests/gui/behavior.luau(120,2): UnknownGlobal: Unknown global 'Services'; consider assigning to it first
+tests/gui/behavior.luau(120,40): UnknownGlobal: Unknown global 'Services'; consider assigning to it first
+tests/gui/behavior.luau(122,2): UnknownGlobal: Unknown global 'Services'; consider assigning to it first
+Compiled 6 KLOC into 541 KB bytecode (read 0.01s, parse 0.01s, compile 0.02s)
+Compiled 9 KLOC into 1445 KB bytecode (read 0.01s, parse 0.03s, compile 0.07s)
+Compiled 8 KLOC into 877 KB bytecode (read 0.01s, parse 0.02s, compile 0.04s)
+Compiled 5 KLOC into 505 KB bytecode (read 0.01s, parse 0.01s, compile 0.02s)
+Compiled 6 KLOC into 2898 KB bytecode (read 0.01s, parse 0.05s, compile 0.13s)
+Compiled 5 KLOC into 581 KB bytecode (read 0.01s, parse 0.01s, compile 0.02s)
+Compiled 4 KLOC into 415 KB bytecode (read 0.01s, parse 0.01s, compile 0.02s)
+Compiled 3 KLOC into 325 KB bytecode (read 0.01s, parse 0.01s, compile 0.01s)
+Compiled 1 KLOC into 134 KB bytecode (read 0.00s, parse 0.00s, compile 0.01s)
+PASS: 43 design/evidence documents, JSON/TOML, Rojo paths,
+      488 local links, 1 JSON fixture(s), 370 strict Luau files.
+PASS: built-place boundaries and exact runtime sourcemap coverage.
+Roblox runtime behavior and external link availability are not checked here.
+PASS: all automated checks. Studio/staging acceptance is separate.
