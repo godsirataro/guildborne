@@ -1,13 +1,13 @@
 --!strict
 -- Read-only directions from public geometry and the projected quest state.
 return function(city:any,rules:any,waypoint:any,resolveMarker:any?)
- return function(quest:any,catalog:any,x:number,z:number,context:any?):any
+ local function destination(quest:any,catalog:any,x:number,z:number,context:any?):any
   local region=city.region(x,z);local inCity=city.contains(x,z)
   local owned=context and context.island and context.playerId==context.island.ownerId
   local inGuild=owned and context.inGuild==true
   local function pointTarget(point:any,name:string,kind:string,final:boolean):any
    if not point then return nil end
-   return {name=name,x=point.x,z=point.z,zone=point.zone or "Guild",kind=kind,final=final}
+   return {name=name,x=point.x,y=point.y,z=point.z,anchor=point.anchor,zone=point.zone or "Guild",kind=kind,final=final}
   end
   if not region and not inCity and not inGuild then return nil end
   if quest and quest.kind=="CampaignComplete" then return nil end
@@ -83,5 +83,92 @@ return function(city:any,rules:any,waypoint:any,resolveMarker:any?)
   local name=if quest and type(quest.npc)=="string" then quest.npc else "City Herald"
   local npc=waypoint.NPCs[name];if not npc then return nil end
   return {name=name,x=npc.X,z=npc.Z,zone="City",kind="NPC",final=true}
+ end
+ local function distance(a:any,b:any):number return math.sqrt((a.x-b.x)^2+(a.z-b.z)^2)end
+ local function roadStep(start:any,target:any,roads:any):any
+  if not roads or #roads==0 then return nil end
+  local nodes:{any}={};local adjacency:{any}={};local memberships:{any}={}
+  local function add(point:any,road:number):number
+   for i,p in ipairs(nodes)do if distance(p,point)<.01 then memberships[i][road]=true;return i end end
+   table.insert(nodes,point);table.insert(adjacency,{});table.insert(memberships,{[road]=true});return #nodes
+  end
+  local function project(p:any,r:any):any
+   local dx,dz=r.b.x-r.a.x,r.b.z-r.a.z;local length=dx*dx+dz*dz
+   if length<.01 then return nil end
+   local t=math.clamp(((p.x-r.a.x)*dx+(p.z-r.a.z)*dz)/length,0,1)
+   return {x=r.a.x+t*dx,z=r.a.z+t*dz,y=r.y,anchor=r.anchor}
+  end
+  for i,r in ipairs(roads)do add(r.a,i);add(r.b,i)end
+  for i,a in ipairs(roads)do for j=i+1,#roads do
+   local b=roads[j];local ax,az=a.b.x-a.a.x,a.b.z-a.a.z;local bx,bz=b.b.x-b.a.x,b.b.z-b.a.z
+   local cross=ax*bz-az*bx
+   if math.abs(cross)>.001 then
+    local dx,dz=b.a.x-a.a.x,b.a.z-a.a.z
+    local t=(dx*bz-dz*bx)/cross;local u=(dx*az-dz*ax)/cross
+    if t>=0 and t<=1 and u>=0 and u<=1 then
+     local point={x=a.a.x+t*ax,z=a.a.z+t*az,y=a.y,anchor=a.anchor};add(point,i);add(point,j)
+    end
+   else
+    for _,p in ipairs({a.a,a.b,b.a,b.b})do
+     local pa,pb=project(p,a),project(p,b)
+     if pa and pb and distance(p,pa)<.01 and distance(p,pb)<.01 then add(p,i);add(p,j)end
+    end
+   end
+  end end
+  local function nearest(p:any):number?
+   local best:any=nil;local index=0;local cost=math.huge
+   for i,r in ipairs(roads)do local q=project(p,r)
+    if q then local d=distance(p,q);if d<=r.width/2 and d<cost then cost=d;best=q;index=i end end
+   end
+   return if best then add(best,index) else nil
+  end
+  local first,last=nearest(start),nearest(target);if not first or not last then return nil end
+  for i=1,#nodes do for j=i+1,#nodes do
+   for road in pairs(memberships[i])do if memberships[j][road]then
+    adjacency[i][j]=distance(nodes[i],nodes[j]);adjacency[j][i]=adjacency[i][j];break
+   end end
+  end end
+  local costs:{[number]:number}={[first]=0};local previous:{[number]:number}={};local visited:{[number]:boolean}={}
+  for _=1,#nodes do
+   local current:number?=nil;local cost=math.huge
+   for i=1,#nodes do if not visited[i] and (costs[i] or math.huge)<cost then current=i;cost=costs[i] end end
+   if not current then break end
+   if current==last then break end
+   visited[current]=true
+   for neighbor,length in pairs(adjacency[current])do
+    if cost+length<(costs[neighbor] or math.huge)then costs[neighbor]=cost+length;previous[neighbor]=current end
+   end
+  end
+  if not costs[last]then return nil end
+  local path={last};local cursor=last
+  while cursor~=first do cursor=previous[cursor];if not cursor then return nil end;table.insert(path,1,cursor)end
+  for _,id in ipairs(path)do if distance(start,nodes[id])>3 then return nodes[id] end end
+  if not target.anchor then target=table.clone(target);target.anchor=nodes[last].anchor;target.y=nodes[last].y end
+  return target
+ end
+ return function(quest:any,catalog:any,x:number,z:number,context:any?):any
+  local target=destination(quest,catalog,x,z,context)
+  if not target or not context or not context.authored then return target end
+  local start={x=x,z=z};local nextPoint:any=nil;local label="Continue to destination"
+  if target.zone=="City" then
+   nextPoint=roadStep(start,target,context.roads);label="Follow the city road"
+  elseif target.zone=="Guild" and context.island and context.island.ownerId==context.playerId then
+   local island=context.island
+   if not island.supported then return nil end
+   if island.insideHall then nextPoint=island.hallApproach or island.threshold;label="Leave the Hall"
+   elseif target.name=="Central City" then
+    if not island.legs then return nil end
+    for _,leg in ipairs(island.legs)do
+     if not leg.reached then nextPoint=leg.point;label=leg.label;break end
+    end
+    if not nextPoint then nextPoint=target;label="Follow the promenade" end
+   else return nil end -- Unsupported local objective paths need authored corridors.
+  else return nil end -- Regional/civic authored routing is a separate acceptance slice.
+  if not nextPoint then return nil end
+  if context.clearSegment and not context.clearSegment(nextPoint) then return nil end
+  local result=table.clone(target)
+  result.x=nextPoint.x;result.y=nextPoint.y;result.z=nextPoint.z;result.anchor=nextPoint.anchor
+  result.final=distance(nextPoint,target)<.01 and target.final;result.stepLabel=label;result.destinationName=target.name
+  return result
  end
 end

@@ -1,6 +1,48 @@
 --!strict
 local W=require("../src/shared/Data/CityWaypoint")
 return function(test: any,eq: any)
+ test("authored city route follows connected streets and courtyard instead of diagonal NPC heading",function()
+  local city=require("../src/shared/Config/City");local route=require("../src/shared/Data/QuestRoute")(city,{},W)
+  local function road(name:string,x1:number,z1:number,x2:number,z2:number,width:number):any
+   return {a={x=x1,z=z1,y=.55,anchor=name},b={x=x2,z=z2,y=.55,anchor=name},width=width,y=.55,anchor=name}
+  end
+  local context:any={authored=true,roads={road("GrandAvenue",0,-680,0,-1530,32),road("TavernApproach",0,-820,-205,-820,32),road("GuildMarketAvenue",-350,-1100,350,-1100,32),road("Courtyard",0,-1010,0,-1190,180)}}
+  local quest={kind="Active",npc="City Herald",ready=true};local catalog={Journal={}}
+  local point=route(quest,catalog,-140,-820,context)
+  eq(point.x,0);eq(point.z,-820);eq(point.final,false);eq(point.stepLabel,"Follow the city road")
+  local x,z=-140,-820;local arrived=false
+  for _=1,12 do
+   point=route(quest,catalog,x,z,context);assert(point,"connected authored route disappeared")
+   if point.final then eq(point.x,W.NPCs["City Herald"].X);eq(point.z,W.NPCs["City Herald"].Z);arrived=true;break end
+   assert(point.x~=x or point.z~=z,"route failed to advance");x,z=point.x,point.z
+  end
+  eq(arrived,true)
+  context.roads={context.roads[2],context.roads[3]};eq(route(quest,catalog,-140,-820,context),nil)
+  context.roads={};eq(route(quest,catalog,0,-1100,context),nil)
+ end)
+ test("authored island exit respects rotated Hall egress bridge stages missing anchors and blocked legs",function()
+  local city=require("../src/shared/Config/City");local route=require("../src/shared/Data/QuestRoute")(city,{},W)
+  local quest={kind="Active",id="q",npc="City Herald",ready=true};local catalog={Journal={q={NPC="City Herald"}}}
+  local island:any={ownerId=9,supported=true,insideHall=true,hallApproach={x=325,z=14,anchor="MovedHallThreshold"},threshold={x=338,z=14,anchor="MovedHallThreshold"},exit={x=-44,z=-65},legs={
+   {point={x=280,z=4,anchor="MainPath"},reached=false,label="Follow the island path"},
+   {point={x=344,z=4,anchor="ReservedAccess"},reached=false,label="Reach your island bridge"},
+   {point={x=344,z=-36,anchor="IslandBridge"},reached=false,label="Reach your island bridge"},
+   {point={x=344,z=-65,anchor="IslandPromenade"},reached=false,label="Cross the bridge"},
+  }}
+  local context:any={authored=true,playerId=9,inGuild=true,island=island}
+  local point=route(quest,catalog,325,9,context);eq(point.x,325);eq(point.z,14);eq(point.stepLabel,"Leave the Hall")
+  island.hallApproach=nil;point=route(quest,catalog,325,14,context);eq(point.x,338);eq(point.z,14)
+  island.threshold=nil;eq(route(quest,catalog,325,14,context),nil)
+  island.insideHall=false
+  for i,leg in ipairs(island.legs)do
+   point=route(quest,catalog,280,23,context);eq(point.anchor,leg.point.anchor);eq(point.final,false)
+   island.legs[i].reached=true
+  end
+  point=route(quest,catalog,344,-65,context);eq(point.x,-44);eq(point.stepLabel,"Follow the promenade")
+  context.clearSegment=function()return false end;eq(route(quest,catalog,344,-65,context),nil)
+  context.clearSegment=nil;island.legs=nil;eq(route(quest,catalog,280,23,context),nil)
+  island.supported=false;eq(route(quest,catalog,280,23,context),nil)
+ end)
  test("owned island route follows live Hall and exit anchors without routing to a foreign owner",function()
   local city=require("../src/shared/Config/City");local route=require("../src/shared/Data/QuestRoute")(city,{},W)
   local context:any={playerId=7,inGuild=true,island={ownerId=7,hall={x=293,z=-14},exit={x=-44,z=-65}}}

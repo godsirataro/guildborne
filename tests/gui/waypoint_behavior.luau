@@ -1,0 +1,98 @@
+--!nocheck
+-- Actual WaypointBeacon source, simulated state and callbacks only; no rendered pixels.
+local UI=getfenv().UI
+local Beacon=require(UI.Components.WaypointBeacon)
+local Locale=require(game.ReplicatedStorage.Shared.Config.Localization)
+local CombatLayout=require(game.ReplicatedStorage.Shared.Data.CombatHudLayout)
+local passed=0
+local function test(name,run) run();passed+=1;print("PASS waypoint GUI "..name) end
+local function fixture(width,height)
+ local gui=Instance.new("ScreenGui");gui.AbsoluteSize={X=width or 796,Y=height or 617}
+ local api=Beacon(gui)
+ return {gui=gui,api=api,card=gui:FindFirstChild("NextWaypoint"),marker=gui:FindFirstChild("WaypointBeacon")}
+end
+local function target()
+ local world=Instance.new("Folder");local anchor=Instance.new("Part")
+ anchor.Position=Vector3.new(10,20,30);anchor.Parent=world
+ return {anchor=anchor,x=14,y=25,z=36,name="Guild",destinationName="Guild",stepLabel="Next waypoint"}
+end
+test("inactive and unavailable routes show no false anchored marker",function()
+ local f=fixture();f.api.update(nil,nil,false,"en")
+ assert(not f.card.Visible and not f.marker.Enabled and f.marker.Adornee==nil)
+ f.api.update(nil,nil,true,"en")
+ assert(f.card.Visible and not f.marker.Enabled and f.marker.Adornee==nil)
+ assert(f.card:FindFirstChild("NextInstruction").Text==Locale.translate("en","Route unavailable"))
+ assert(f.card:FindFirstChild("NextDistance").Text=="");f.api.destroy()
+end)
+test("actual anchor receives world-relative coordinates and live labels",function()
+ local f=fixture();local t=target();f.api.update(t,42,false,"en")
+ assert(f.card.Visible and f.marker.Enabled and f.marker.Adornee==t.anchor)
+ local offset=f.marker.StudsOffsetWorldSpace
+ assert(offset.X==4 and offset.Y==8.5 and offset.Z==6)
+ assert(f.card:FindFirstChild("FinalDestination").Text==Locale.translate("en","Guild"))
+ assert(f.card:FindFirstChild("NextDistance").Text==Locale.translate("en","{distance} studs",{distance=42}))
+ assert(t.anchor.Position.X==10 and t.anchor.Position.Y==20 and #t.anchor.Parent:GetChildren()==1,"Presentation cannot mutate or create world parts")
+ f.api.destroy()
+end)
+test("replacement missing and removed anchors never retain previous marker",function()
+ local f=fixture();local first=target();f.api.update(first,12,false,"en")
+ local next=target();next.x=21;f.api.update(next,8,false,"en")
+ assert(f.marker.Adornee==next.anchor and f.marker.Adornee~=first.anchor and f.marker.StudsOffsetWorldSpace.X==11)
+ next.anchor=nil;f.api.update(next,nil,false,"en")
+ assert(not f.marker.Enabled and f.marker.Adornee==nil and f.card:FindFirstChild("NextDistance").Text=="")
+ next=target();next.anchor.Parent=nil;f.api.update(next,3,false,"en")
+ assert(not f.marker.Enabled and f.marker.Adornee==nil)
+ f.api.update(first,12,false,"en");f.api.update(first,12,true,"en")
+ assert(not f.marker.Enabled and f.marker.Adornee==nil)
+ f.api.update(nil,nil,false,"en");assert(not f.card.Visible);f.api.destroy()
+end)
+test("Thai instructions and distances use actual localization",function()
+ local f=fixture();local t=target();f.api.update(t,0,false,"th")
+ assert(f.card:FindFirstChild("NextInstruction").Text==Locale.translate("th","Next waypoint"))
+ assert(f.card:FindFirstChild("FinalDestination").Text==Locale.translate("th","Guild"))
+ assert(f.card:FindFirstChild("NextDistance").Text==Locale.translate("th","{distance} studs",{distance=0}))
+ f.api.update(nil,nil,true,"th")
+ assert(f.card:FindFirstChild("NextInstruction").Text==Locale.translate("th","Route unavailable"))
+ f.api.destroy()
+end)
+test("narrow short and desktop states avoid actual combat roster and map button",function()
+ local f=fixture()
+ local function separate(a,b)
+  return a.x+a.w<=b.x or b.x+b.w<=a.x or a.y+a.h<=b.y or b.y+b.h<=a.y
+ end
+ for _,size in ipairs({{320,280},{390,844},{599,449},{600,400},{796,400},{600,450},{796,617},{1366,768}}) do
+  local w,h=size[1],size[2];f.gui.AbsoluteSize={X=w,Y=h};f.gui:GetPropertyChangedSignal("AbsoluteSize"):Fire()
+  local p,s=f.card.Position,f.card.Size;local bw,bh=s[1]*w+s[2],s[3]*h+s[4]
+  local x=p[1]*w+p[2]-bw*f.card.AnchorPoint.X;local y=p[3]*h+p[4]-bh*f.card.AnchorPoint.Y
+  assert(x>=0 and y>=58 and x+bw<=w and y+bh<=h)
+  assert(f.card:FindFirstChild("FinalDestination").Visible==(h>=450))
+  assert(f.card:FindFirstChild("NextDistance").Visible==(h>=450))
+  assert(f.card:FindFirstChild("NextInstruction").TextSize==(if w<600 or h<450 then 13 else 15))
+  local layout=CombatLayout(w,h)
+  local beacon={x=x,y=y,w=bw,h=bh}
+  local roster={x=8,y=64,w=layout.selectionWidth,h=layout.selectionHeight}
+  local mapButton={x=w-138,y=60,w=130,h=48}
+  assert(separate(beacon,roster),"Waypoint overlaps actual combat roster at "..w.."x"..h)
+  assert(separate(beacon,mapButton),"Waypoint overlaps map button at "..w.."x"..h)
+ end
+ f.api.destroy()
+end)
+test("explicit destroy stops resize and later updates with idempotent cleanup",function()
+ local f=fixture();f.api.update(target(),5,false,"en")
+ local size=f.card.Size;local instruction=f.card:FindFirstChild("NextInstruction").Text
+ f.api.destroy();f.api.destroy()
+ assert(f.card.destroyed and f.marker.destroyed)
+ f.gui.AbsoluteSize={X=320,Y=280};f.gui:GetPropertyChangedSignal("AbsoluteSize"):Fire()
+ f.api.update(nil,nil,true,"th")
+ assert(f.card.Size==size and f.card:FindFirstChild("NextInstruction").Text==instruction)
+ f.gui:Destroy()
+end)
+test("GUI destruction stops resize and late route updates",function()
+ local f=fixture();f.api.update(target(),5,false,"en")
+ local size=f.card.Size;local instruction=f.card:FindFirstChild("NextInstruction").Text
+ f.gui:Destroy();assert(f.card.destroyed and f.marker.destroyed)
+ f.gui.AbsoluteSize={X=320,Y=280};f.gui:GetPropertyChangedSignal("AbsoluteSize"):Fire()
+ f.api.update(nil,nil,true,"th");f.api.destroy()
+ assert(f.card.Size==size and f.card:FindFirstChild("NextInstruction").Text==instruction)
+end)
+print(passed.." waypoint GUI behavior tests passed (simulation only).")
