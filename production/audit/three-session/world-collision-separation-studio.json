@@ -1,0 +1,16 @@
+{
+  "date":"2026-10-17",
+  "studioId":"04084a7d-b461-47ee-bc6a-9592dd718ff3",
+  "sourceCommit":"a107d58",
+  "setup":"Stopped isolated Memory launch preview, replaced WorldQualitySlice with exact checked-out source and verified equality, then started Play. Independent art loader disabled; collision bootstrap disabled. Server probe invoked actual module directly after normal Greenwood bootstrap.",
+  "status":"PASS_SERVER_COLLISION_LIFECYCLE",
+  "colliders":413,
+  "nativeDecorations":48,
+  "noClientArt":true,
+  "idempotent":true,
+  "physicsRestored":true,
+  "transparencyUnchanged":true,
+  "walkingTested":false,
+  "combinedClientArtTested":false,
+  "notes":"Repeated init returned same handle. All 48 native decoration transparency values stayed unchanged while collision/query/touch were disabled. Repeated destroy removed owned collision folder and restored original physics values. This does not prove traversal or complete client/server bootstrap integration."
+}
