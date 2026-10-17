@@ -151,3 +151,33 @@ for the companion, pressed R: enabled prompt changed to Guild TeamTable
 (-23,2,-12). This verifies actual city supply collection/delivery and companion
 proximity gating. Chapter-two recruitment/reward and Greenwood combat are still
 pending. Active Memory session is preserved at the delivery location.
+
+## Chapter two claimed; two companions reached Greenwood
+
+Returned through City's Guild portal with ordinary movement/E. Used R at the
+TeamTable. All chapter-two objectives checked; chose Priest and confirmed the
+free recruitment through two CampaignClaim clicks. Player Mage and founder
+Warrior became Level14, player XP650. New Priest h:1 is Level10 with
+apprentice_staff. Initial Add-to-party click targeted a button below the viewport
+(y1079) and did not select it. Scrolled the actual UI down eight wheel steps,
+clicked Add to party at visible y341, scrolled back, observed Selected:2/5, and
+saved. Server now has Priest h:1, PartySlot2, Following, CombatHealth51. This was
+an input/scroll issue, not established hero-spawn failure.
+
+Walked the east bridge route again, E traveled City, then walked the central
+street from z-720 to Greenwood portal near z-1450. E set CurrentZone=Greenwood
+and player root (0,5.078,1505). Both Warrior and Priest followed. Walked to first
+tracks near (0,5.078,1480.739), pressed R; second tracks near
+(-28.767,5.058,1451.882), pressed R. Actual campaign advanced to focus_escort.
+
+Focus acceptance remains unresolved. Selected Warrior through Actor2 and sent
+Focus/Regroup through actual HUD buttons/keys near ScoutCamp; model order attrs
+change and InCombat=true, enemies take damage and respawn, but campaign stays
+focus_escort (DeliveryProblem=OK). One exact server read-only LOS ray from
+Warrior root+1 (-59.148,6.05,1422.879) to living scout root+1
+(-49.012,6,1436.311) returned no collision using production ray parameters.
+Other attempts occurred while scout was dead and cannot prove a failure.
+Target.active/hostile-space/runtime focus evidence still needs diagnosis; no
+server combat gate was weakened, no quest progress injected. Actor.focus is a
+valid projection of focusTarget in HeroService.CompanionEvidence; a field rename
+is not justified. Preserve live Memory session near (-53.11,5.048,1422.901).
