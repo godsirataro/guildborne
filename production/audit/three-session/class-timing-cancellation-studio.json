@@ -1,0 +1,21 @@
+{
+  "date":"2026-10-17",
+  "sourceCommit":"7b678c4",
+  "studioId":"a6d25956-416f-4c3b-96bd-8a471f6f9819",
+  "setup":"Stopped optimized isolated Memory launch preview, patched exact SkillEffects and ActionTimeline sources and verified both equality checks in Edit, then started Play with existing world/image loaders enabled.",
+  "probe":"tests/studio_action_cancellation.luau",
+  "status":"PASS_LOCAL_VFX_CANCELLATION",
+  "ability":"power_strike",
+  "replacement":true,
+  "death":true,
+  "streamRemoval":true,
+  "cancel":true,
+  "humanoidDeath":true,
+  "duplicateAndStale":true,
+  "nonfiniteAndFuture":true,
+  "expiredWarriorMarkers":true,
+  "acceptedHighLow":true,
+  "cleanup":true,
+  "serverDamageTested":false,
+  "limitations":"Warrior/Mage cancellation fixture and accepted Warrior High/Low checks; not full five-class visual matrix, real five-hero allocation, physical devices or server combat acceptance. Separate deterministic marker tests passed for five classes and five actor cursors."
+}
