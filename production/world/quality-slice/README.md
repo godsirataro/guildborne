@@ -6,7 +6,7 @@ Delivered: 15 real CC0 source FBXs, an editable Blender 5.2.1 composition, actua
 
 `assets/production/world-slice/woodland-threshold.png` is the final inspected render. The first render exposed white Ruins foliage diffuse materials; final art intentionally replaces those with a face-based leaf/bark palette. This is authored derivative color, not a claim to preserve an unavailable texture. Village material colors remain imported. No source fonts used. Preview ground/water are excluded from GLB and mesh JSON, which contain actual source meshes only.
 
-`woodland-threshold.blend` contains reusable library, authored composition and separately named preview-only stage. `woodland-threshold.glb` contains the composition. `world-slice.mesh.json` conforms to controller schemaVersion 1: 29 chunks, 27,526 exported vertices, 37,194 unique triangles, 112 placements, 85,934 instanced triangles. Each chunk <=2,000 triangles; resources reused across placements. See IMPORT_CONTRACT.md for pivot compensation and actual Greenwood world offset. Geometry is NONCOLLIDING opt-in preview presentation; controller must inspect terrain height, native-art overlap and telegraph readability before runtime adoption.
+`woodland-threshold.blend` contains reusable library, authored composition and separately named preview-only stage. `woodland-threshold.glb` contains the composition. `world-slice.mesh.json` conforms to controller schemaVersion 1: 33 chunks, 29,678 exported vertices, 40,628 unique triangles, 108 placements, 88,888 instanced triangles. Each chunk <=2,000 triangles; resources reused across placements. See IMPORT_CONTRACT.md for pivot compensation and actual Greenwood world offset. Geometry is NONCOLLIDING opt-in preview presentation; controller must inspect terrain height, native-art overlap and telegraph readability before runtime adoption.
 
 ## Reproduction
 
@@ -65,7 +65,7 @@ The paired roof-json-before.png / roof-json-after.png reconstruct baseline 0e3b0
 
 Actual Blender export/render and JSON reconstruction completed. roof-checks.json records passing offline/schema/hash checks, 28 geometry contracts, 19 mocked server lifecycle checks and generated Luau compile/analyze. Independent read-only review confirmed face offsets, unchanged originals/colliders and matching manifests. Studio visual/memory/traversal acceptance for hash 634a1067 remains pending; controller must reimport the current mesh with WorldQualityAssets/collision.json and rebuild its metadata hash gates.
 
-## Current ground and edge composition
+## Historical ground and edge composition (superseded surfaces)
 
 Source SHA256: 8b4c7aa687d4b265b2e3d7da7c7548aef64f889fd093b9d1219eee094eab1911. Adds two original irregular surface meshes (37 vertices / 60 triangles each), ten surface placements at Y2.02, and 17 reused edge props (five trees, twelve bushes). Three face-color bands blend authored earth colors toward native grass; these are constant face colors, not textures or a smooth vertex gradient. Original authorship is recorded separately in ground-authoring.json; the fifteen reviewed CC0 source assets retain their original provenance.
 
@@ -74,3 +74,7 @@ The addition costs 8,940 instanced triangles against the 15,000 ceiling, with 17
 Independent review found an eastern tree blocked archer-area samples despite passing planar clearance. That tree was removed. The final check_ground_visibility.py and ground-visibility.json report zero added-prop occlusions for nine anchor rays and 815 combat-envelope samples from camera (105,94,1545). This is a finite single-camera incremental check, not proof for all viewpoints or existing art.
 
 The final Blender render was inspected and the background process exited. ground-checks.json preserves raw outputs, closed process log hashes and matching export hashes: offline geometry, visibility, controller schema validation, 28 contracts, 19 mocked lifecycle checks, Python compile and generated Luau compile/analyze passed. The previous 894-test suite result remains historical; no new whole-game suite run is claimed. New ground geometry still needs centered-importer Studio visual, allocation, traversal and device testing plus human approval. API and server collision behavior are unchanged.
+
+## Current connected terrain composition
+
+Source SHA256: 4e0a917e99744fd88740949c55bd549ddedc7844eb03a2df0cdb59a6e50b8a17. Six original terrain meshes replace the two patch resources and ten patch placements. See TERRAIN_COMPOSITION.md for paired perspective renders, provenance, exact budgets and pending Studio gates. The 27 retained source meshes, 102 retained placements and all 413 colliders are unchanged. This is a surface and embankment treatment of existing native heights, not new walkable topography.

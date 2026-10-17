@@ -1,0 +1,24 @@
+{
+  "status": "ORIGINAL_AUTHORED_GEOMETRY_NOT_STUDIO_TESTED",
+  "baselineCommit": "768ae4e07a519fbc86a9586e5364f9dfb149f2d6",
+  "sourceMeshSha256": "4e0a917e99744fd88740949c55bd549ddedc7844eb03a2df0cdb59a6e50b8a17",
+  "recipe": "production/world/quality-slice/terrain_recipe.py",
+  "recipeSha256": "201367ed41e826919d3310b7f3053e164cac407030f68139b00a4382124b7fbb",
+  "authorship": "Original programmatic Guildborne terrain surface composition; no third-party terrain geometry, texture, provider or new catalog asset used.",
+  "nativeSupport": "Existing AdventureMapKit Greenwood Island, BossRise and existing road/resource exclusions",
+  "removedLogicalIds": [
+    "ground_court",
+    "ground_leaf"
+  ],
+  "originalMeshes": [
+    "terrain_arrival_west__000",
+    "terrain_forest_west__000",
+    "terrain_arrival_east__000",
+    "terrain_forest_east__000",
+    "terrain_boss_floor__000",
+    "terrain_embankments__000"
+  ],
+  "runtimeIds": null,
+  "studioTested": false,
+  "humanApproved": false
+}

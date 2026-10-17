@@ -1,0 +1,119 @@
+{
+  "status": "BLENDER_COMPARISON_NOT_STUDIO",
+  "views": [
+    {
+      "revision": "before",
+      "view": "overview",
+      "cameraWorld": [
+        105,
+        94,
+        1545
+      ],
+      "targetWorld": [
+        0,
+        4,
+        1410
+      ],
+      "lensMm": 35,
+      "source": "production/world/quality-slice/terrain-before.blend",
+      "sourceSha256": "89712f4eccdda04bb15cab51a1d8d3064901dd426cbbc6a3573bf915c70bbbc9",
+      "image": "terrain-overview-before.png",
+      "sha256": "43753f8fda35590a9c7f9a1cb20c281e19375b4d82164ab6c86d2a9fec402314"
+    },
+    {
+      "revision": "before",
+      "view": "arrival",
+      "cameraWorld": [
+        75,
+        32,
+        1530
+      ],
+      "targetWorld": [
+        -10,
+        8,
+        1470
+      ],
+      "lensMm": 35,
+      "source": "production/world/quality-slice/terrain-before.blend",
+      "sourceSha256": "89712f4eccdda04bb15cab51a1d8d3064901dd426cbbc6a3573bf915c70bbbc9",
+      "image": "terrain-arrival-before.png",
+      "sha256": "4b68dc6861500a477f6466dc823be3384f818725844fb75ffd24ae1ba5918fcd"
+    },
+    {
+      "revision": "before",
+      "view": "boss",
+      "cameraWorld": [
+        18,
+        48,
+        1370
+      ],
+      "targetWorld": [
+        0,
+        6,
+        1325
+      ],
+      "lensMm": 35,
+      "source": "production/world/quality-slice/terrain-before.blend",
+      "sourceSha256": "89712f4eccdda04bb15cab51a1d8d3064901dd426cbbc6a3573bf915c70bbbc9",
+      "image": "terrain-boss-before.png",
+      "sha256": "84be385249aba5029278c1135e3ab7eb9a61f04a33d432c3a3f5831f1a1a8146"
+    },
+    {
+      "revision": "after",
+      "view": "overview",
+      "cameraWorld": [
+        105,
+        94,
+        1545
+      ],
+      "targetWorld": [
+        0,
+        4,
+        1410
+      ],
+      "lensMm": 35,
+      "source": "assets/production/world-slice/woodland-threshold.blend",
+      "sourceSha256": "46e69e294a24df33e9924b4e40e71f82b64c56d7e5388a5372ea76b7a07bd582",
+      "image": "terrain-overview-after.png",
+      "sha256": "02e9c8503f3254b2b8633d3ff05251db913c21426344acac6d1294092607418b"
+    },
+    {
+      "revision": "after",
+      "view": "arrival",
+      "cameraWorld": [
+        75,
+        32,
+        1530
+      ],
+      "targetWorld": [
+        -10,
+        8,
+        1470
+      ],
+      "lensMm": 35,
+      "source": "assets/production/world-slice/woodland-threshold.blend",
+      "sourceSha256": "46e69e294a24df33e9924b4e40e71f82b64c56d7e5388a5372ea76b7a07bd582",
+      "image": "terrain-arrival-after.png",
+      "sha256": "aa4e722a4c98d4ca1a72edbab30ad70f8a7c001d9484fca8156e60b1ebc6581b"
+    },
+    {
+      "revision": "after",
+      "view": "boss",
+      "cameraWorld": [
+        18,
+        48,
+        1370
+      ],
+      "targetWorld": [
+        0,
+        6,
+        1325
+      ],
+      "lensMm": 35,
+      "source": "assets/production/world-slice/woodland-threshold.blend",
+      "sourceSha256": "46e69e294a24df33e9924b4e40e71f82b64c56d7e5388a5372ea76b7a07bd582",
+      "image": "terrain-boss-after.png",
+      "sha256": "3327bbb6a73b2aaccce3b7b3c5d9c52d80ec8112984cadf001e350eb5fbcf425"
+    }
+  ]
+}

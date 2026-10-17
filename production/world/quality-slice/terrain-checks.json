@@ -1,0 +1,84 @@
+{
+  "utc": "2026-10-17T07:33:44.960276+00:00",
+  "status": "LOCAL_REVIEW_ONLY",
+  "studioTested": false,
+  "checks": [
+    {
+      "command": [
+        "python",
+        "-m",
+        "py_compile",
+        "tools/blender_world_slice.py",
+        "tools/verify_world_slice.py",
+        "production\\world\\quality-slice\\terrain_recipe.py",
+        "production\\world\\quality-slice\\render_terrain_comparison.py",
+        "production\\world\\quality-slice\\check_terrain_composition.py"
+      ],
+      "exitCode": 0,
+      "stdoutBase64": "",
+      "stderrBase64": ""
+    },
+    {
+      "command": [
+        "python",
+        "tools/verify_world_slice.py"
+      ],
+      "exitCode": 0,
+      "stdoutBase64": "R1JPVU5EX0NMRUFSQU5DRSAxNyA4MzQwIDE3DQp7DQogICJzdGF0dXMiOiAiT0ZGTElORV9URVJSQUlOX0NMRUFSQU5DRV9QQVNTIiwNCiAgInNvdXJjZU1lc2hTaGEyNTYiOiAiNGUwYTkxN2U5OTc0NGZkODg3NDA5NDljNTViZDU0OWRkZWRjNzg0NGViMDNhMmRmMGNkYjU5YTZlNTBiOGExNyIsDQogICJuZXdNZXNoZXMiOiA2LA0KICAibmV3UGxhY2VtZW50cyI6IDYsDQogICJpbnN0YW50aWF0ZWRUZXJyYWluVHJpYW5nbGVzIjogMzU1NCwNCiAgInRyaWFuZ2xlQ2xhc3NlcyI6IHsNCiAgICAiaXNsYW5kU3VyZmFjZVRyaWFuZ2xlcyI6IDI0ODAsDQogICAgImJvc3NTdXJmYWNlVHJpYW5nbGVzIjogMjc2LA0KICAgICJib3NzV2FsbFRyaWFuZ2xlcyI6IDIxNiwNCiAgICAiaXNsYW5kU2tpcnRUcmlhbmdsZXMiOiA1ODINCiAgfSwNCiAgImVycm9yQ291bnQiOiAwLA0KICAiZXJyb3JzIjogW10NCn0NCnsNCiAgInN0YXR1cyI6ICJPRkZMSU5FX0dFT01FVFJZX1BBU1MiLA0KICAibWVzaGVzIjogMzMsDQogICJ2ZXJ0aWNlcyI6IDI5Njc4LA0KICAidHJpYW5nbGVzIjogNDA2MjgsDQogICJwbGFjZW1lbnRzIjogMTA4LA0KICAiaW5zdGFuY2VkVHJpYW5nbGVzIjogODg4ODgsDQogICJzdHVkaW9UZXN0ZWQiOiBmYWxzZQ0KfQ0K",
+      "stderrBase64": ""
+    },
+    {
+      "command": [
+        "python",
+        "production\\world\\quality-slice\\check_terrain_composition.py",
+        "--self-test"
+      ],
+      "exitCode": 0,
+      "stdoutBase64": "VHJpYW5nbGUgY2xpcHBpbmcgc2VsZi10ZXN0cyBwYXNzZWQ7IG5vIHJlcG9ydCB3cml0dGVuDQo=",
+      "stderrBase64": ""
+    },
+    {
+      "command": [
+        "python",
+        "C:/Work/MySelf/Guildborne-controller/tools/import_quality_meshes.py",
+        "assets/production/world-slice/world-slice.mesh.json"
+      ],
+      "exitCode": 0,
+      "stdoutBase64": "ew0KICAibWVzaGVzIjogMzMsDQogICJ2ZXJ0aWNlcyI6IDI5Njc4LA0KICAidHJpYW5nbGVzIjogNDA2MjgsDQogICJwbGFjZW1lbnRzIjogMTA4LA0KICAic291cmNlU2hhMjU2IjogIjRlMGE5MTdlOTk3NDRmZDg4NzQwOTQ5YzU1YmQ1NDlkZGVkYzc4NDRlYjAzYTJkZjBjZGI1OWE2ZTUwYjhhMTciDQp9DQo=",
+      "stderrBase64": ""
+    },
+    {
+      "command": [
+        "C:\\Work\\MySelf\\Guildborne\\.tools\\luau\\luau.exe",
+        "build/world_quality_harness.luau"
+      ],
+      "exitCode": 0,
+      "stdoutBase64": "d29ybGRfcXVhbGl0eTogMjggY29udHJhY3QgY2hlY2tzIHBhc3NlZDsgU3R1ZGlvIGxpZmVjeWNsZSBOT1RfUlVODQp3b3JsZF9xdWFsaXR5OiAxOSBtb2NrZWQgc2VydmVyIGxpZmVjeWNsZSBjaGVja3MgcGFzc2VkOyBTdHVkaW8gcGh5c2ljcyBOT1RfUlVODQo=",
+      "stderrBase64": ""
+    },
+    {
+      "command": [
+        "C:\\Work\\MySelf\\Guildborne\\.tools\\luau\\luau-compile.exe",
+        "--null",
+        "src/server/Services/WorldQualityAssets.luau"
+      ],
+      "exitCode": 0,
+      "stdoutBase64": "Q29tcGlsZWQgMCBLTE9DIGludG8gMTMyIEtCIGJ5dGVjb2RlIChyZWFkIDAuMDBzLCBwYXJzZSAwLjAwcywgY29tcGlsZSAwLjAxcykNCg==",
+      "stderrBase64": ""
+    },
+    {
+      "command": [
+        "C:\\Work\\MySelf\\Guildborne\\.tools\\luau-lsp\\luau-lsp.exe",
+        "analyze",
+        "--platform=roblox",
+        "--sourcemap=build/sourcemap.json",
+        "--definitions=C:\\Work\\MySelf\\Guildborne\\.tools\\luau-lsp\\globalTypes.d.luau",
+        "src/server/Services/WorldQualityAssets.luau"
+      ],
+      "exitCode": 0,
+      "stdoutBase64": "",
+      "stderrBase64": "W0lORk9dIExvYWRpbmcgZGVmaW5pdGlvbnMgZmlsZTogQHJvYmxveCAtIEM6XFdvcmtcTXlTZWxmXEd1aWxkYm9ybmVcLnRvb2xzXGx1YXUtbHNwXGdsb2JhbFR5cGVzLmQubHVhdQ0KW1dBUk5dIGNsaWVudCBkb2VzIG5vdCBhbGxvdyBkaWRDaGFuZ2VXYXRjaGVkRmlsZXMgcmVnaXN0cmF0aW9uIC0gYXV0b21hdGljIHVwZGF0aW5nIG9uIHNvdXJjZW1hcCBjaGFuZ2VzIGRpc2FibGVkDQo="
+    }
+  ],
+  "sourceSha256": "4e0a917e99744fd88740949c55bd549ddedc7844eb03a2df0cdb59a6e50b8a17"
+}

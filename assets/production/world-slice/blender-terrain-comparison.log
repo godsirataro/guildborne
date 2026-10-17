@@ -1,0 +1,14 @@
+00:02.562  blend            | Read blend: "C:\Work\MySelf\Guildborne-world-runtime\production\world\quality-slice\terrain-before.blend"
+C:\Work\MySelf\Guildborne-world-runtime\production\world\quality-slice\render_terrain_comparison.py:29: DeprecationWarning: 'Material.use_nodes' is expected to be removed in Blender 6.0
+  mat=bpy.data.materials.new(name);mat.use_nodes=True
+00:13.750  render           | Saved: 'C:\Work\MySelf\Guildborne-world-runtime\production\world\quality-slice\terrain-overview-before.png'
+00:24.234  render           | Saved: 'C:\Work\MySelf\Guildborne-world-runtime\production\world\quality-slice\terrain-arrival-before.png'
+00:36.891  render           | Saved: 'C:\Work\MySelf\Guildborne-world-runtime\production\world\quality-slice\terrain-boss-before.png'
+00:36.906  blend            | Read blend: "C:\Work\MySelf\Guildborne-world-runtime\assets\production\world-slice\woodland-threshold.blend"
+00:48.469  render           | Saved: 'C:\Work\MySelf\Guildborne-world-runtime\production\world\quality-slice\terrain-overview-after.png'
+00:59.937  render           | Saved: 'C:\Work\MySelf\Guildborne-world-runtime\production\world\quality-slice\terrain-arrival-after.png'
+01:14.219  render           | Saved: 'C:\Work\MySelf\Guildborne-world-runtime\production\world\quality-slice\terrain-boss-after.png'
+TERRAIN_COMPARISONS_COMPLETE 6
+Blender 5.2.1 LTS (hash 9e2066aef7ef built 2026-08-25 02:38:20)
+
+Blender quit
