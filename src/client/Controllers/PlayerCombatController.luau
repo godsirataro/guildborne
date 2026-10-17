@@ -177,7 +177,7 @@ return function()
 		local compact=layout.compact
 		-- Short viewports use a two-column pad; tall ones retain a narrow side rail.
 		buttons.AnchorPoint=Vector2.new(1,if layout.topAligned then 0 else .5)
-		buttons.Position=if layout.topAligned then UDim2.new(1,-8,0,64) else UDim2.new(1,-8,.5,0)
+		buttons.Position=if layout.topAligned then UDim2.new(1,-8,0,layout.padTop) else UDim2.new(1,-8,.5,0)
 		buttons.Size=UDim2.fromOffset(layout.padWidth,layout.padHeight)
 		local controls={basic,skills[1],skills[2],skills[3]}
 		for index,b in ipairs(controls) do

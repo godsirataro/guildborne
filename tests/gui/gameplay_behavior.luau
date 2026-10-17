@@ -209,4 +209,20 @@ test("six tall party cards reserve separate name health and control regions",fun
  end
  assert(layoutFor(390,759).cardHeight==44,"Short portraits retain compact roster")
 end)
+test("portrait combat pad clears map while compact and centered layouts stay unchanged",function()
+ local layoutFor=require(game.ReplicatedStorage.Shared.Data.CombatHudLayout)
+ for _,size in ipairs({{390,844},{320,760},{360,640},{390,570},{499,760}}) do
+  local w,h=size[1],size[2];local layout=layoutFor(w,h)
+  assert(layout.portrait and not layout.compact and layout.topAligned)
+  assert(layout.padTop==116 and layout.padTop>=60+48+8,"Map must clear attack by 8px")
+  assert(layout.padTop+layout.padHeight<=h-layout.ordersBottom-44,"Pad must clear orders")
+ end
+ for _,size in ipairs({{796,400},{844,390},{390,449},{390,569},{600,319}}) do
+  local layout=layoutFor(size[1],size[2])
+  assert(layout.compact and layout.topAligned and layout.padTop==64)
+  assert(layout.padHeight==108,"Compact skill pad geometry changed")
+ end
+ local desktop=layoutFor(1366,768)
+ assert(not desktop.topAligned and desktop.padTop==64 and desktop.padHeight==232)
+end)
 print(passed.." gameplay GUI behavior tests passed (simulation only).")

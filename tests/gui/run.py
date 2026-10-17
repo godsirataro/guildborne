@@ -1,5 +1,6 @@
 """Run real GUI Luau source in a narrow engine simulation; no Roblox acceptance claim."""
 from pathlib import Path
+import argparse
 import subprocess
 import tempfile
 
@@ -36,6 +37,9 @@ def quote(text):
     return f"[{mark}[{text}]{mark}]"
 
 def main():
+    parser = argparse.ArgumentParser(description=__doc__)
+    parser.add_argument("--suite", choices=("all", "gameplay"), default="all")
+    args = parser.parse_args()
     prefix = (ROOT / "tests/gui/runtime.luau").read_text(encoding="utf-8")
     code = "local Runtime=(function()\n" + prefix + "\nend)()\n"
     code += "local env,connections=Runtime.environment()\nsetmetatable(env,{__index=getfenv()})\nlocal modules,cache={},{}\nlocal tree={}\n"
@@ -62,11 +66,10 @@ env.require=function(target)
  cache[target]=fn();return cache[target]
 end
 '''
-    code += "local run=assert(loadstring(" + quote((ROOT/"tests/gui/behavior.luau").read_text(encoding="utf-8")) + "));setfenv(run,env);run()\n"
-    code += "local gameplay=assert(loadstring(" + quote((ROOT/"tests/gui/gameplay_behavior.luau").read_text(encoding="utf-8")) + "));setfenv(gameplay,env);gameplay()\n"
-    code += "local waypoint=assert(loadstring(" + quote((ROOT/"tests/gui/waypoint_behavior.luau").read_text(encoding="utf-8")) + "));setfenv(waypoint,env);waypoint()\n"
-    code += "local tracker=assert(loadstring(" + quote((ROOT/"tests/gui/tracker_polish.luau").read_text(encoding="utf-8")) + "));setfenv(tracker,env);tracker()\n"
-    code += "local menu=assert(loadstring(" + quote((ROOT/"tests/gui/menu_lifecycle.luau").read_text(encoding="utf-8")) + "));setfenv(menu,env);menu()\n"
+    suites = ["gameplay_behavior"] if args.suite == "gameplay" else [
+        "behavior", "gameplay_behavior", "waypoint_behavior", "tracker_polish", "menu_lifecycle"]
+    for suite in suites:
+        code += "do local run=assert(loadstring(" + quote((ROOT/f"tests/gui/{suite}.luau").read_text(encoding="utf-8")) + "));setfenv(run,env);run() end\n"
     with tempfile.TemporaryDirectory(prefix="guildborne-gui-tests-") as folder:
         entry = Path(folder)/"run.luau"
         entry.write_text(code, encoding="utf-8")

@@ -14,7 +14,7 @@ return function(width: number,height: number): any
         cardHeight=if tallCards then 68 else 44,cardStride=if tallCards then 74 else 48,
         cardWidth=if tallCards then tallWidth elseif collapsed then 96 elseif dense then 90 else 138,selectionWidth=if tallCards then tallWidth elseif collapsed then 96 elseif compact then 282 else 138,
         selectionHeight=if tallCards then 438 elseif collapsed or dense then 92 elseif compact then 140 else 284,
-        padWidth=padWidth,padHeight=if compact then 108 else 232,
+        padWidth=padWidth,padHeight=if compact then 108 else 232,padTop=if portrait then 116 else 64,
         buttonWidth=if compact then (padWidth-8)/2 else 116,
         healthBottom=if portrait then 112 else 8,healthHeight=if portrait then 52 else 44,
         healthScale=if portrait or collapsed then .9 else .46,ordersBottom=if portrait then 168 else 56}

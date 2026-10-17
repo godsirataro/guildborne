@@ -88,7 +88,7 @@ test("waypoint placement avoids actual combat regions or hides when no safe card
   local beacon={x=x,y=y,w=bw,h=bh}
   local roster={x=8,y=64,w=layout.selectionWidth,h=layout.selectionHeight}
   local mapButton={x=w-138,y=60,w=130,h=48}
-  local pad={x=w-8-layout.padWidth,y=if layout.topAligned then 64 else h*.5-layout.padHeight*.5,w=layout.padWidth,h=layout.padHeight}
+  local pad={x=w-8-layout.padWidth,y=if layout.topAligned then layout.padTop else h*.5-layout.padHeight*.5,w=layout.padWidth,h=layout.padHeight}
   local health={x=w*(1-layout.healthScale)/2,y=h-layout.healthBottom-layout.healthHeight,w=w*layout.healthScale,h=layout.healthHeight}
   local ordersWidth=math.min(w*.9,360)
   local orders={x=(w-ordersWidth)/2,y=h-layout.ordersBottom-44,w=ordersWidth,h=44}

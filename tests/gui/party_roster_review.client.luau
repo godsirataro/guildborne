@@ -71,14 +71,14 @@ local function render()
  info.Text=string.format("SIMULATED %d × %d • %.0f%% display scale\nEN/TH logs TextFits • scaled canvas ≠ device proof",size.X,size.Y,scale.Scale*100)
  top.Position=UDim2.fromOffset(8,8);top.Size=UDim2.fromOffset(size.X-16,44)
  map.Position=UDim2.fromOffset(size.X-138,60);map.Size=UDim2.fromOffset(130,48)
- local padY=if layout.topAligned then 64 else (size.Y-layout.padHeight)/2
+ local padY=if layout.topAligned then layout.padTop else (size.Y-layout.padHeight)/2
  pad.Position=UDim2.fromOffset(size.X-8-layout.padWidth,padY);pad.Size=UDim2.fromOffset(layout.padWidth,layout.padHeight)
  for i,button in ipairs(skills) do button.Size=UDim2.fromOffset(layout.buttonWidth,52);button.Position=UDim2.fromOffset(0,(i-1)*60) end
  local ordersWidth=math.min(size.X*.9,360)
  orders.Position=UDim2.fromOffset((size.X-ordersWidth)/2,size.Y-layout.ordersBottom-44);orders.Size=UDim2.fromOffset(ordersWidth,44)
  selectedHealth.Position=UDim2.fromOffset(size.X*(1-layout.healthScale)/2,size.Y-layout.healthBottom-layout.healthHeight);selectedHealth.Size=UDim2.fromOffset(size.X*layout.healthScale,layout.healthHeight)
  refreshHealth()
- -- Show, rather than conceal, the existing concurrent map/pad reservation conflict.
+ -- Keep the concurrent reservations visible so a future overlap stays detectable.
  local mapPadOverlap=padY<108 and padY+layout.padHeight>60
  map.Text=if mapPadOverlap then "Map / skill overlap\nconcurrent reservations" else "Map reservation"
  map.TextColor3=if mapPadOverlap then Color3.fromRGB(255,160,140) else Theme.Colors.Text
