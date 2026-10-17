@@ -4,6 +4,7 @@ local Shared=game.ReplicatedStorage.Shared
 local Civic=require(Shared.Config.CivicCities)
 local City=require(Shared.Config.City)
 local Locale=require(Shared.Config.Localization)
+local BorinMotion=require(Shared.Presentation.BorinWorkMotion)
 local Content=require(script.Parent.Parent.Config.Content)
 local Kit=require(script.Parent.ArtKit)
 local V=Vector3.new
@@ -54,7 +55,13 @@ return function(parent:Instance,town:Instance,intent:any,open:any):any
   host:SetAttribute("NpcId",hostId);host:SetAttribute("WorkMotionIdentity",castOrder[index]);host:SetAttribute("CivicHost",id)
   local root=assert(host.PrimaryPart);Kit.Label(root,speaker.name,speaker.nameTh,6)
   local talk=Instance.new("ProximityPrompt");talk.ActionText="Talk / พูดคุย";talk.ObjectText=speaker.name.." / "..speaker.nameTh;talk.MaxActivationDistance=10;talk.RequiresLineOfSight=false;talk.Parent=root
-  talk.Triggered:Connect(function(player)local c=player.Character;if c and(c:GetPivot().Position-root.Position).Magnitude<=14 then host:SetAttribute("GreetingAt",workspace:GetServerTimeNow());open(player,"FriendlyNPC:"..hostId)end end)
+  talk.Triggered:Connect(function(player)local c=player.Character;if c and(c:GetPivot().Position-root.Position).Magnitude<=14 then
+   local now=workspace:GetServerTimeNow()
+   host:SetAttribute("GreetingAt",now)
+   host:SetAttribute("NpcInteractUntil",now+BorinMotion.InteractSeconds)
+   host:SetAttribute("NpcInteractor",player.UserId)
+   open(player,"FriendlyNPC:"..hostId)
+  end end)
   game:GetService("CollectionService"):AddTag(host,"GuildborneFriendlyNPC")
   local spawn=Instance.new("SpawnLocation");spawn.Name=(City.Destinations :: any)[id].Spawn;spawn.Position=V(d.X,.5,d.Z+108);spawn.Size=V(6,1,6);spawn.Anchored=true;spawn.Transparency=1;spawn.CanCollide=false;spawn.CanQuery=false;spawn.CanTouch=false;spawn.Enabled=false;spawn.Neutral=true;spawn.Duration=0;spawn.Parent=model
   regions[id]={model=model,spawn=spawn,entry=entry,exit=exit,guild=guild}
