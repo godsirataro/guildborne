@@ -5,6 +5,12 @@ local M = {Cycle=2, InteractSeconds=12, RecoverSeconds=.6, FadeSeconds=.25, Cull
 export type State = {mode:string, weight:number, clock:number, lastTime:number?, contactIndex:number}
 local function finite(n:number):boolean return n==n and math.abs(n)<math.huge end
 function M.new():State return {mode="Idle",weight=0,clock=0,lastTime=nil,contactIndex=-1} end
+-- Generic civic activity blend only; it never owns a pose or advances Borin's strike clock.
+function M.activityWeight(weight:number,dt:number,working:boolean,suspended:boolean):number
+ if suspended or not finite(weight) or not finite(dt) then return 0 end
+ local bounded=math.clamp(weight,0,1);local elapsed=math.clamp(dt,0,.1)
+ return if working then math.min(1,bounded+elapsed/M.RecoverSeconds) else math.max(0,bounded-elapsed/M.FadeSeconds)
+end
 function M.lift(clock:number):number
  if not finite(clock) or clock<0 then return 0 end
  local phase=(clock%M.Cycle)/M.Cycle
@@ -12,7 +18,7 @@ function M.lift(clock:number):number
  elseif phase<.60 then return .10*math.sin((phase-.50)/.10*math.pi/2) end
  local u=(phase-.60)/.40;return .10+.90*u*u*(3-2*u)
 end
-function M.step(s:State,now:number,interactUntil:number?,visible:boolean,reduced:boolean,moving:boolean):any
+function M.step(s:State,now:number,interactUntil:number?,visible:boolean,reduced:boolean,moving:boolean,workEnabled:boolean?):any
  if not finite(now) then return {mode="Idle",weight=0,lift=0,contact=false} end
  local gap=if s.lastTime then now-s.lastTime else 0
  local dt=math.clamp(gap,0,.1);s.lastTime=now
@@ -21,6 +27,9 @@ function M.step(s:State,now:number,interactUntil:number?,visible:boolean,reduced
   s.mode="Idle";s.weight=0;s.clock=0;s.contactIndex=-1
  elseif interacting then
   s.mode="Interact";s.weight=math.max(0,s.weight-dt/M.FadeSeconds)
+ elseif workEnabled==false then
+  s.mode="Idle";s.weight=math.max(0,s.weight-dt/M.FadeSeconds);s.contactIndex=-1
+  if s.weight==0 then s.clock=0 end -- Keep the last pose while fading, then reset.
  else
   if s.mode=="Interact" or s.mode=="Idle" then s.mode="Recover";s.clock=0;s.contactIndex=-1 end
   if s.mode=="Recover" then
