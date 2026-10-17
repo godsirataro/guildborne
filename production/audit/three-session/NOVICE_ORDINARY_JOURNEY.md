@@ -41,3 +41,25 @@ PASS for ordinary-input chapter-two transition, including the real basic-attack
 lesson. No combat hit, objective or progression was injected by the test. This
 still does not certify every combat class, damage amount, rewards persistence,
 later chapters or the complete Map + GUI + five-hero journey.
+
+## Chapters three and four continuation
+
+Walked to CaravanTracks, chose Rescue the travelers with E, then walked to the
+remaining supplies prompt and completed its fallback action. Clicked the active
+100 XP claim button; UI advanced to Chapter 4, The Crossroads Keeper.
+
+Walked to the keeper prompt and entered its normal training encounter. First
+attempt failed: PlayerHealth=0, EnemyHealth=16, TrialStatus=Failed and
+TrialProblem=TrialDefeated; no victory objective granted. A second attempt's
+lateral movement drifted outside basic-attack range and displayed Move closer
+to your target; left that attempt. Third attempt used ordinary F at approximately
+1.15-second intervals and Q every six intervals, without positional or combat
+state mutation. Actual arena replicated PlayerHealth=21, EnemyHealth=0,
+TrialStatus=Won, ReceiptDelivered=true and Defeat the opponent 1/1.
+
+Clicked Leave trial, walked to Free the captive and Inspect the false guild
+crest prompts, pressed E at each, then clicked the active 100 XP claim. UI
+advanced to Chapter 5 / 6, Before the Oath, offering five class-training
+objectives and a 50 XP claim. This confirms the observed fail/retry/win and
+chapter advancement path. It does not certify moving-combat dodge proficiency,
+all class trials, numeric saved XP, physical devices or multiplayer.
