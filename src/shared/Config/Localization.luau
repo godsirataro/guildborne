@@ -3,6 +3,7 @@
 local thai: { [string]: string } = {
 	["Next waypoint"] = "จุดนำทางถัดไป",
 	["Destination direction — follow paths"] = "ทิศทางจุดหมาย — เดินตามทาง",
+	["Bearing only\nUse paths"] = "ทิศทางเท่านั้น\nเดินตามทาง",
 	["Route unavailable"] = "ยังนำทางไม่ได้",
 	["Follow the quest instructions"] = "ทำตามคำแนะนำของเควส",
 	["Leave the Hall"] = "ออกทางประตูหอกิลด์",

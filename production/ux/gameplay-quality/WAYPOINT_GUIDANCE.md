@@ -1,5 +1,7 @@
 # Authored next-waypoint guidance
 
+Followup: COMPASS_CARD_FIX.md supersedes the external y216 compass placement described below and records the explicit 320x280 unsupported card layout.
+
 Status: local implementation and source review complete; Studio journey acceptance pending.
 
 Quest navigation now presents a native gold/azure anchored beacon and English/Thai next-step card. The route uses the owned Hall's actual rotated Threshold, island access path, bridge approach and promenade. City routing follows a graph extracted from road centerlines and courtyard connectors. Each next segment is checked for collidable obstructions; absent anchors, disconnected roads and unsupported routes display unavailable guidance. No movement, teleport, currency or quest authority is added.

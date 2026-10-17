@@ -55,13 +55,19 @@ test("Thai instructions and distances use actual localization",function()
  assert(f.card:FindFirstChild("NextInstruction").Text==Locale.translate("th","Route unavailable"))
  f.api.destroy()
 end)
-test("narrow short and desktop states avoid actual combat roster and map button",function()
+test("waypoint placement avoids actual combat regions or hides when no safe card space exists",function()
  local f=fixture()
+ f.api.update(target(),12,false,"en")
  local function separate(a,b)
   return a.x+a.w<=b.x or b.x+b.w<=a.x or a.y+a.h<=b.y or b.y+b.h<=a.y
  end
- for _,size in ipairs({{320,280},{390,844},{599,449},{600,400},{796,400},{600,450},{796,617},{1366,768}}) do
+ for _,size in ipairs({{320,280},{390,844},{599,449},{500,600},{500,640},{599,570},{600,400},{796,400},{600,450},{796,674},{796,617},{1366,768}}) do
   local w,h=size[1],size[2];f.gui.AbsoluteSize={X=w,Y=h};f.gui:GetPropertyChangedSignal("AbsoluteSize"):Fire()
+  if f.card:GetAttribute("LayoutUnavailable")==true then
+   assert(not f.card.Visible,"Unavailable card layout must not cover existing controls")
+   continue
+  end
+  assert(f.card.Visible,"An active route must return when safe layout space exists")
   local p,s=f.card.Position,f.card.Size;local bw,bh=s[1]*w+s[2],s[3]*h+s[4]
   local x=p[1]*w+p[2]-bw*f.card.AnchorPoint.X;local y=p[3]*h+p[4]-bh*f.card.AnchorPoint.Y
   assert(x>=0 and y>=58 and x+bw<=w and y+bh<=h)
@@ -72,9 +78,27 @@ test("narrow short and desktop states avoid actual combat roster and map button"
   local beacon={x=x,y=y,w=bw,h=bh}
   local roster={x=8,y=64,w=layout.selectionWidth,h=layout.selectionHeight}
   local mapButton={x=w-138,y=60,w=130,h=48}
+  local pad={x=w-8-layout.padWidth,y=if layout.topAligned then 64 else h*.5-layout.padHeight*.5,w=layout.padWidth,h=layout.padHeight}
+  local health={x=w*(1-layout.healthScale)/2,y=h-layout.healthBottom-layout.healthHeight,w=w*layout.healthScale,h=layout.healthHeight}
+  local ordersWidth=math.min(w*.9,360)
+  local orders={x=(w-ordersWidth)/2,y=h-layout.ordersBottom-44,w=ordersWidth,h=44}
   assert(separate(beacon,roster),"Waypoint overlaps actual combat roster at "..w.."x"..h)
   assert(separate(beacon,mapButton),"Waypoint overlaps map button at "..w.."x"..h)
+  assert(separate(beacon,pad),"Waypoint overlaps combat skill pad at "..w.."x"..h)
+  assert(separate(beacon,health),"Waypoint overlaps actor health at "..w.."x"..h)
+  assert(separate(beacon,orders),"Waypoint overlaps companion orders at "..w.."x"..h)
  end
+ f.api.destroy()
+end)
+test("no-space layout hides only card and restores route visibility on resize",function()
+ local f=fixture(320,280);f.api.update(target(),12,false,"en")
+ assert(f.card:GetAttribute("LayoutUnavailable")==true and not f.card.Visible)
+ assert(f.marker.Enabled,"Authored world marker remains valid when card has no safe screen space")
+ f.gui.AbsoluteSize={X=796,Y=674};f.gui:GetPropertyChangedSignal("AbsoluteSize"):Fire()
+ assert(f.card:GetAttribute("LayoutUnavailable")==false and f.card.Visible)
+ f.api.update(nil,nil,false,"en")
+ f.gui.AbsoluteSize={X=1366,Y=768};f.gui:GetPropertyChangedSignal("AbsoluteSize"):Fire()
+ assert(not f.card.Visible and not f.marker.Enabled,"Resize cannot resurrect an inactive route")
  f.api.destroy()
 end)
 test("explicit destroy stops resize and later updates with idempotent cleanup",function()
@@ -104,13 +128,49 @@ test("destination hints cannot claim a safe next waypoint or retain a world beac
   assert(f.card.Visible and not f.marker.Enabled and f.marker.Adornee==nil)
   assert(f.card:FindFirstChild("NextInstruction").Text==Locale.translate(language,"Destination direction — follow paths"))
  end
- for _,viewport in ipairs({{360,640},{600,400},{796,617},{1280,720}})do
+ for _,viewport in ipairs({{360,640},{600,400},{796,400},{796,674},{1280,720}})do
   f.gui.AbsoluteSize={X=viewport[1],Y=viewport[2]};f.gui:GetPropertyChangedSignal("AbsoluteSize"):Fire()
-  local p=f.api.directionPosition();local arrowY=p[3]*viewport[2]+p[4]
-  local bottom=f.card.Position[3]*viewport[2]+f.card.Position[4]+f.card.Size[4]
-  assert(arrowY>=bottom+8 and arrowY+40<=viewport[2],"Compass must clear card text and remain on screen")
+  f.api.update(t,12,false,"en",146)
+  local hintKey=if viewport[1]<600 then "Bearing only\nUse paths" else "Destination direction — follow paths"
+  assert(f.card:FindFirstChild("NextInstruction").Text==Locale.translate("en",hintKey))
+  local compass=assert(f.card:FindFirstChild("DestinationCompass"))
+  assert(compass.Parent==f.card and compass.Visible and compass.Rotation==146)
+  assert(not f.marker.Enabled and f.marker.Adornee==nil,"Destination hint must never create a world beacon")
+  local cw,ch=f.card.Size[2],f.card.Size[4]
+  local p,s=compass.Position,compass.Size
+  local aw,ah=s[1]*cw+s[2],s[3]*ch+s[4]
+  local x=p[1]*cw+p[2]-aw*compass.AnchorPoint.X
+  local y=p[3]*ch+p[4]-ah*compass.AnchorPoint.Y
+  local radius=math.sqrt(aw*aw+ah*ah)/2
+  local centerX,centerY=x+aw/2,y+ah/2
+  assert(centerX-radius>=0 and centerX+radius<=cw and centerY-radius>=0 and centerY+radius<=ch,"Rotated compass must remain entirely inside card")
+  for _,name in ipairs({"NextInstruction","FinalDestination","NextDistance"})do
+   local label=f.card:FindFirstChild(name)
+   local textRight=label.Position[1]*cw+label.Position[2]+label.Size[1]*cw+label.Size[2]
+   assert(textRight<=centerX-radius,"Text must reserve the rotating compass lane")
+  end
+  f.api.update(t,12,false,"th",146)
+  assert(f.card:FindFirstChild("NextInstruction").Text==Locale.translate("th",hintKey))
  end
  t.guidance=nil;f.api.update(t,12,false,"en");assert(f.marker.Enabled)
+ assert(not f.card:FindFirstChild("DestinationCompass").Visible)
+ for _,name in ipairs({"NextInstruction","FinalDestination","NextDistance"}) do
+  assert(f.card:FindFirstChild(name).Size[2]==-20,"Authored route must regain unused compass text lane")
+ end
+ f.api.destroy()
+end)
+test("destination compass hides stale directions for missing nonfinite inactive and unavailable states",function()
+ local f=fixture();local t=target();t.guidance="destination"
+ for _,heading in ipairs({math.huge,-math.huge,0/0}) do
+  f.api.update(t,12,false,"en",146);assert(f.card:FindFirstChild("DestinationCompass").Visible)
+  f.api.update(t,12,false,"en",heading);assert(not f.card:FindFirstChild("DestinationCompass").Visible)
+ end
+ f.api.update(t,12,false,"en",146);f.api.update(t,12,false,"en",nil)
+ assert(not f.card:FindFirstChild("DestinationCompass").Visible)
+ f.api.update(t,12,false,"en",146);f.api.update(nil,nil,false,"en",146)
+ assert(not f.card.Visible and not f.card:FindFirstChild("DestinationCompass").Visible)
+ f.api.update(t,12,false,"en",146);f.api.update(t,12,true,"en",146)
+ assert(not f.card:FindFirstChild("DestinationCompass").Visible and not f.marker.Enabled)
  f.api.destroy()
 end)
 test("default global ordering keeps card copy above its fill and marker uses native bars",function()
