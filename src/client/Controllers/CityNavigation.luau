@@ -6,6 +6,7 @@ local Civic=require(game.ReplicatedStorage.Shared.Config.CivicCities)
 local Locale=require(game.ReplicatedStorage.Shared.Config.Localization)
 local Art=require(game.ReplicatedStorage.Shared.Config.Art)
 local MenuRouter=require(script.Parent.Parent.UI.MenuRouter)
+local MenuGate=require(script.Parent.Parent.UI.Components.GameplayMenuGate)
 local Waypoint=require(game.ReplicatedStorage.Shared.Data.CityWaypoint)
 local QuestTarget=require(game.ReplicatedStorage.Shared.Data.QuestTracker)
 local Rules=require(game.ReplicatedStorage.Shared.Data.Expansion)
@@ -153,10 +154,7 @@ local districtSymbols={Plaza="plaza",Guild="guild_home",Market="exchange",Tavern
 return function()
 	local player=Players.LocalPlayer;local language="en"
 	local function menuBlocking():boolean
-		if MenuRouter.isBlocking() or player.PlayerGui:GetAttribute("GuildborneMenuOpen")==true then return true end
-		local main=player.PlayerGui:FindFirstChild("GuildborneUI")
-		local management=main and main:FindFirstChild("ManagementPanel")
-		return main~=nil and main:IsA("ScreenGui") and main.Enabled and management~=nil and management:IsA("GuiObject") and management.Visible
+		return MenuGate.blocked(player.PlayerGui,MenuRouter.isBlocking())
 	end
 	local selected: any=nil;local snapshot: any=nil;local arrivedUntil=0;local mapRegion:string?=nil
 	local mapCivic:string?=nil;local mapGuild=false
@@ -239,11 +237,14 @@ return function()
 		for key,node in pairs(nodes) do node.Text=Locale.translate(language,key) end
 	end
 	local function show()
-		future=false;panel.Visible=not panel.Visible;refresh()
+		if not MenuGate.toggleMap(panel,player.PlayerGui,MenuRouter.isBlocking()) then return end
+		future=false;refresh()
 		if panel.Visible and mapRegion then scroll.CanvasPosition=Vector2.new(0,math.max(0,regionalMap.AbsoluteSize.Y*.71-scroll.AbsoluteSize.Y*.5)) end
 	end
 	connect(toggle.Activated,show);connect(close.Activated,function() panel.Visible=false end)
-	connect(Input.InputBegan,function(key,processed) if not processed and key.KeyCode==Enum.KeyCode.N and toggle.Visible then show() end end)
+	connect(Input.InputBegan,function(key,processed)
+		if not processed and not Input:GetFocusedTextBox() and key.KeyCode==Enum.KeyCode.N and (panel.Visible or toggle.Visible) then show() end
+	end)
 	connect((game.ReplicatedStorage:WaitForChild("GuildborneRemotes"):WaitForChild("State") :: RemoteEvent).OnClientEvent,function(view)
 		snapshot=view
 		if view.data then language=view.data.language or "en" end

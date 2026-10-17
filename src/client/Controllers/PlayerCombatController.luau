@@ -9,6 +9,7 @@ local Localization=require(Replicated.Shared.Config.Localization)
 local Bindings=require(Replicated.Shared.Config.CombatBindings)
 local City=require(Replicated.Shared.Config.City)
 local MenuRouter=require(script.Parent.Parent.UI.MenuRouter)
+local MenuGate=require(script.Parent.Parent.UI.Components.GameplayMenuGate)
 local MakePortrait=require(script.Parent.Parent.UI.ActorPortrait)
 local Layout=require(Replicated.Shared.Data.CombatHudLayout)
 local Chrome=require(script.Parent.Parent.UI.Components.CombatChrome)
@@ -16,6 +17,8 @@ return function()
 	local connections: {RBXScriptConnection}={}
 	local function connect(signal: RBXScriptSignal,callback: any) table.insert(connections,signal:Connect(callback)) end
 	local player=Players.LocalPlayer
+	local playerGui=player:WaitForChild("PlayerGui")
+	local function menuOpen():boolean return MenuGate.blocked(playerGui,MenuRouter.isBlocking()) end
 	local remotes=Replicated:WaitForChild("GuildborneRemotes")
 	local remote=remotes:WaitForChild("CombatIntent") :: RemoteEvent
 	local language="en"
@@ -68,12 +71,13 @@ return function()
 		local chrome=Chrome.actor(card);table.insert(cardChrome,chrome)
 		table.insert(cardLabels,chrome.name)
 		connect(card.Activated,function()
+			if menuOpen() or Input:GetFocusedTextBox() then return end
 			local id=card:GetAttribute("ActorId");if type(id)=="string" then selectedId=id end
 		end)
 		table.insert(cards,card)
 	end
 	local function cycle()
-		if MenuRouter.isBlocking() or Input:GetFocusedTextBox() then return end
+		if menuOpen() or Input:GetFocusedTextBox() then return end
 		local ids={"player"};for _,model in ipairs(members()) do table.insert(ids,tostring(model:GetAttribute("AdventurerId"))) end
 		selectedId=ids[(table.find(ids,selectedId) or 1)%#ids+1]
 	end
@@ -84,9 +88,6 @@ return function()
 	connect(player.CharacterRemoving,function() selectedId="player" end)
 	local buttons=Instance.new("Frame"); buttons.Name="CombatButtons"; buttons.AnchorPoint=Vector2.new(1,.5)
 	buttons.Position=UDim2.new(1,-8,.5,0); buttons.Size=UDim2.fromOffset(116,112); buttons.BackgroundTransparency=1; buttons.Parent=gui
-	local function menuOpen(): boolean
-		return MenuRouter.isBlocking()
-	end
 	local function send(action: string)
 		if menuOpen() or Input:GetFocusedTextBox() or player:GetAttribute("NoviceTrialHUDActive")==true then return end
 		local c=selected()
