@@ -44,13 +44,7 @@ for record in records:
     points=[(o.matrix_world@o.data.vertices[i].co-center)*scale for i in tri.vertices]
     if (points[1]-points[0]).cross(points[2]-points[0]).length/2>15:
      structural[record['id']].append(points)
-   # Source contains inconsistent/open wall and roof shells. A thin inward shell
-   # gives real back surfaces instead of relying on a double-sided render flag.
-   modifier=o.modifiers.new('Source_Surface_Thickness','SOLIDIFY');modifier.thickness=.003;modifier.offset=-1
-   evaluated=o.evaluated_get(bpy.context.evaluated_depsgraph_get())
-   fixed=bpy.data.meshes.new_from_object(evaluated,depsgraph=bpy.context.evaluated_depsgraph_get())
-   o.modifiers.clear();o.data=fixed
- vertices=[];triangles=[];colors=[];face_colors=[]
+ vertices=[];triangles=[];colors=[];face_colors=[];selective_backs=0
  for o in objects:
   offset=len(vertices);matrix=o.matrix_world.copy()
   for v in o.data.vertices:
@@ -75,6 +69,10 @@ for record in records:
    elif record['id']=='stag':rgb=[.49,.51,.42]
    if rgb not in colors:colors.append(rgb)
    triangles.append(indices);face_colors.append(colors.index(rgb)+1)
+   # Back only large structural roof/wall surfaces, sharing original vertices.
+   # No blanket shell or rim tessellation; silhouette and source colliders stay exact.
+   if record['id'] in ('stable','house','sawmill') and (b-a).cross(c-a).length/2>15:
+    triangles.append(list(reversed(indices)));face_colors.append(colors.index(rgb)+1);selective_backs+=1
  assert triangles
  # Keep original material colors, with roughness unified for a coherent matte miniature look.
  material_list=[]
@@ -95,15 +93,17 @@ for record in records:
   for tri in triangles[start:start+2000]:
    face=[]
    for idx in tri:
-    if idx not in remap:
-     remap[idx]=len(coords)+1;v=vertices[idx];coords.append([round(v.x,5),round(v.z,5),round(-v.y,5)])
-    face.append(remap[idx])
+    v=vertices[idx];key=(round(v.x,5),round(v.z,5),round(-v.y,5))
+    # Merge identical exported positions only; per-face colors/normals preserve seams.
+    if key not in remap:
+     remap[key]=len(coords)+1;coords.append(list(key))
+    face.append(remap[key])
    faces.append(face)
   mid=record['id']+f'__{start//2000:03d}';chunk_ids.append(mid)
   bounds={'min':[min(v[i] for v in coords) for i in range(3)],'max':[max(v[i] for v in coords) for i in range(3)]}
   meshes.append(dict(id=mid,vertices=coords,triangles=faces,colors=colors,faceColors=face_colors[start:start+2000],bounds=bounds))
  record['chunks']=chunk_ids
- metrics.append(dict(id=record['id'],sourceBounds=[list(low),list(high)],scale=scale,vertices=len(vertices),triangles=len(triangles),materials=len(colors),chunks=len(chunk_ids),height=max(v.z for v in vertices)))
+ metrics.append(dict(id=record['id'],sourceBounds=[list(low),list(high)],scale=scale,vertices=len(vertices),triangles=len(triangles),selectiveBackTriangles=selective_backs,materials=len(colors),chunks=len(chunk_ids),height=max(v.z for v in vertices)))
  print('ASSET',record['id'],metrics[-1],flush=True)
  for o in imported:bpy.data.objects.remove(o,do_unlink=True)
 library.hide_render=True;library.hide_viewport=True
