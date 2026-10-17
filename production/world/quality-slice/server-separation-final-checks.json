@@ -1,0 +1,41 @@
+{
+  "status": "LOCAL_REVIEW_ONLY",
+  "reason": "Explicit any annotation fixes heterogeneous test callback inference after initial analyzer failure",
+  "studioTested": false,
+  "checks": [
+    {
+      "command": [
+        "C:\\Work\\MySelf\\Guildborne\\.tools\\luau\\luau.exe",
+        "build/world_quality_harness.luau"
+      ],
+      "exitCode": 0,
+      "stdoutBase64": "d29ybGRfcXVhbGl0eTogMjggY29udHJhY3QgY2hlY2tzIHBhc3NlZDsgU3R1ZGlvIGxpZmVjeWNsZSBOT1RfUlVODQp3b3JsZF9xdWFsaXR5OiAxOSBtb2NrZWQgc2VydmVyIGxpZmVjeWNsZSBjaGVja3MgcGFzc2VkOyBTdHVkaW8gcGh5c2ljcyBOT1RfUlVODQo=",
+      "stderrBase64": ""
+    },
+    {
+      "command": [
+        "C:\\Work\\MySelf\\Guildborne\\.tools\\luau-lsp\\luau-lsp.exe",
+        "analyze",
+        "--platform=roblox",
+        "--sourcemap=build/sourcemap.json",
+        "--definitions=C:\\Work\\MySelf\\Guildborne\\.tools\\luau-lsp\\globalTypes.d.luau",
+        "src/server/Services/WorldQualitySlice.luau",
+        "tests/world_quality.luau"
+      ],
+      "exitCode": 0,
+      "stdoutBase64": "",
+      "stderrBase64": "W0lORk9dIExvYWRpbmcgZGVmaW5pdGlvbnMgZmlsZTogQHJvYmxveCAtIEM6XFdvcmtcTXlTZWxmXEd1aWxkYm9ybmVcLnRvb2xzXGx1YXUtbHNwXGdsb2JhbFR5cGVzLmQubHVhdQ0KW1dBUk5dIGNsaWVudCBkb2VzIG5vdCBhbGxvdyBkaWRDaGFuZ2VXYXRjaGVkRmlsZXMgcmVnaXN0cmF0aW9uIC0gYXV0b21hdGljIHVwZGF0aW5nIG9uIHNvdXJjZW1hcCBjaGFuZ2VzIGRpc2FibGVkDQo="
+    },
+    {
+      "command": [
+        "C:\\Work\\MySelf\\Guildborne\\.tools\\luau\\luau-compile.exe",
+        "--null",
+        "src/server/Services/WorldQualitySlice.luau",
+        "tests/world_quality.luau"
+      ],
+      "exitCode": 0,
+      "stdoutBase64": "Q29tcGlsZWQgMCBLTE9DIGludG8gMTIgS0IgYnl0ZWNvZGUgKHJlYWQgMC4wMHMsIHBhcnNlIDAuMDBzLCBjb21waWxlIDAuMDBzKQ0K",
+      "stderrBase64": ""
+    }
+  ]
+}

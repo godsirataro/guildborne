@@ -38,3 +38,11 @@ Fresh local checks and raw stdout/stderr are in playable-checks.json (REVIEW onl
 Final independent read-only review reconfirmed all 413 colliders within physical geometry bounds, all 103 expected placements matching current JSON, and continuous split ArrivalStreet coverage. Runtime MeshPart size or vertex alterations still require importer receipt and Studio inspection. No blocker found in that bounded source review.
 
 Final local validation: 890 existing suite tests and 28 standalone world contract checks passed; new Luau modules compile and analyze; Rojo build plus repository/place boundary validation passed (372 strict Luau files). No live runtime acceptance is implied.
+
+## Server/client integration correction
+
+The earlier v2 API incorrectly required client-imported art to exist on the server. The server module now owns only generated collision and native decoration physics; client visibility belongs to controller preview integration. See IMPORT_CONTRACT.md for the replacement API, including recursively frozen reviewedArt metadata. Exports and generated collision data are unchanged. Fresh checks are in server-separation-checks.json. The 19 lifecycle checks execute the actual service source with fake Roblox Instances/services; they prove control flow, not Studio physics. The earlier v2 requirement to import before invoking the server module is superseded.
+
+To reproduce mocked lifecycle checks, embed the current WorldQualitySlice source as a Luau long string in build/world_quality_harness.luau and call the function returned by require("../tests/world_quality") with that string. Run the generated file with Luau CLI. No source rewriting or production dependency injection is used.
+
+Final separation checks: 894 existing suite tests, 28 geometry contracts and 19 mocked lifecycle checks passed. Changed Luau files compile and analyze. Initial analyzer failure from heterogeneous test callback inference is preserved in the first receipt; explicit parameter annotations and passing reruns are preserved in server-separation-final-checks.json. Independent read-only review found no blockers. No Studio or Blender mutation occurred.
