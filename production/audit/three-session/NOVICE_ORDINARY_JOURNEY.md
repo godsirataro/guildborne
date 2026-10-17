@@ -85,3 +85,18 @@ goals: three basic hits, defeat a 700-health Sentinel and dodge one warning.
 Left that trial without claiming completion. Class selection and chapter six
 remain pending. Introduction completion is not full solo-trial acceptance or
 five-class visual-quality acceptance.
+
+## Mage solo trial and first-class confirmation
+
+Selected Mage through its existing course prompt and entered the full solo
+trial. Early attempts failed or were left; one recorded failure had enemy HP76
+and player HP0 despite meeting skill/dodge counters. A later attempt used only
+ordinary Q/F presses and lateral A/D movement triggered by the visible committed
+warning. Faster observation/input cadence reduced missed warning windows.
+No health, enemy position, damage, cooldown, objective or receipt was injected.
+
+Actual successful arena attributes: Mage, TrialStatus=Won, ReceiptDelivered=true,
+EnemyHealth=0/700, PlayerHealth=36/47; Sentinel defeated1/1, Skill hits3/3,
+Warnings dodged1/1. Left trial and opened Guild menu, which showed Trial passed:
+Mage. Clicked Choose this class, then the explicit Confirm first class button.
+This is isolated Memory first-class selection, not a production save change.
