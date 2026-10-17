@@ -136,3 +136,21 @@ for i,f in ipairs(party) do
 	assert(f.count()==(if i==3 then 0 else 1),"One actor cancellation leaked into another")
 end
 print("PASS class markers: absolute timing, late skips, finite/boundary checks, callback grace, cancellation, exactly-once and five-actor isolation")
+
+-- Already-scheduled release may execute late: flight uses only the remaining
+-- .30 impact window. This is distinct from observing a new cast after release.
+for _,callbackAt in ipairs({.20,.30,.31}) do
+	local clock=0
+	local callback
+	local flights={}
+	assert(T.scheduleMarker(0,.12,function() return clock end,function(_,fn) callback=fn end,function() return true end,function()
+		local remaining=T.markerDelay(0,clock,.30)
+		if remaining and remaining>0 then table.insert(flights,remaining) end
+	end))
+	clock=callbackAt;assert(callback)()
+	if callbackAt==.20 then
+		assert(#flights==1 and math.abs(flights[1]-.10)<1e-10,"Delayed release failed to shorten flight")
+	else assert(#flights==0,"Projectile started at/after impact") end
+end
+assert(not markerFixture(0,.20,.12).accepted,"Late initial observation replayed release")
+print("PASS fireball flight window: delayed release shortens flight; no projectile at/after impact or expired initial release")

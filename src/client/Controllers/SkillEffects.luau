@@ -41,7 +41,7 @@ return function()
 	local function reduced(): boolean return Input.TouchEnabled or low() end
 	local colors=Config.Palette
 	local white=Config.Core
-	local function make(size: Vector3,cf: CFrame,color: Color3,shape: Enum.PartType,duration: number,goal: any,alpha: number?,bucket: string?): Part?
+	local function make(size: Vector3,cf: CFrame,color: Color3,shape: Enum.PartType,duration: number,goal: any,alpha: number?,bucket: string?,easing: Enum.EasingStyle?): Part?
 		local cap=if Input.TouchEnabled then Config.Budget.Touch else Config.Budget.Desktop
 		if bucket=="Primary" then if primaryCount>=Config.Budget.Primary then return nil end;primaryCount+=1
 		elseif bucket=="Telegraph" then if criticalCount>=Config.Budget.Telegraph then return nil end;criticalCount+=1
@@ -49,7 +49,7 @@ return function()
 		local p=Instance.new("Part");p.Name="GuildborneSkillEffect";p.Size=size;p.CFrame=cf;p.Shape=shape;p.Color=color;p.Material=if color==white then Enum.Material.Neon else Enum.Material.SmoothPlastic;p.Transparency=alpha or .22
 		p:SetAttribute("VFXBucket",bucket or "Detail")
 		p.Anchored=true;p.CanCollide=false;p.CanTouch=false;p.CanQuery=false;p.CastShadow=false;p.Parent=workspace
-		Tween:Create(p,TweenInfo.new(duration,Enum.EasingStyle.Quad,Enum.EasingDirection.Out),goal):Play();Debris:AddItem(p,duration+.05)
+		Tween:Create(p,TweenInfo.new(duration,easing or Enum.EasingStyle.Quad,Enum.EasingDirection.Out),goal):Play();Debris:AddItem(p,duration+.05)
 		task.delay(duration+.05,function() if bucket=="Primary" then primaryCount=math.max(0,primaryCount-1) elseif bucket=="Telegraph" then criticalCount=math.max(0,criticalCount-1) else count=math.max(0,count-1) end end);return p
 	end
 	local function line(a: Vector3,b: Vector3,width: number,color: Color3,duration: number,bucket: string?)
@@ -201,9 +201,90 @@ return function()
 			if timed then atMarker(model,if class=="Archer" then .26 else .3,impact) else later(model,.18,impact) end
 		end
 	end
+	local function fireballCast(model: Model,aim: CFrame,target: Vector3)
+		local stamp=model:GetAttribute("ActionAt") :: number
+		local generation=generations[model]
+		local parts: {Part}={};local connections: {RBXScriptConnection}={};local closed=false
+		local small=reduced();local source=aim.Position+V(0,.5,0)+aim.LookVector*1.4
+		local function close()
+			if closed then return end;closed=true
+			for _,connection in ipairs(connections) do connection:Disconnect() end
+			for _,part in ipairs(parts) do part:Destroy() end
+			table.clear(connections);table.clear(parts)
+		end
+		local function current(): boolean
+			local camera=workspace.CurrentCamera
+			return not closed and alive(model) and generations[model]==generation and model:GetAttribute("ActionAt")==stamp
+				and camera~=nil and (camera.CFrame.Position-source).Magnitude<=Config.Distance.Cull
+		end
+		local function invalidate() if not current() then close() end end
+		table.insert(connections,model:GetAttributeChangedSignal("ActionAt"):Connect(invalidate))
+		table.insert(connections,model:GetAttributeChangedSignal("CombatHealth"):Connect(invalidate))
+		table.insert(connections,model.AncestryChanged:Connect(invalidate))
+		local humanoid=model:FindFirstChildOfClass("Humanoid")
+		if humanoid then table.insert(connections,humanoid.Died:Connect(close)) end
+		-- Absolute expiry also removes listeners when later markers are skipped.
+		task.delay(math.max(0,stamp+.85-workspace:GetServerTimeNow()),close)
+		local function visual(stage: string,size: Vector3,cf: CFrame,color: Color3,duration: number,goal: any,alpha: number?,linear: boolean?): Part?
+			if not current() then close();return nil end
+			local part=make(size,cf,color,Enum.PartType.Ball,duration,goal,alpha,nil,if linear then Enum.EasingStyle.Linear else nil)
+			if part then
+				part:SetAttribute("VFXFamily","Mage.Fireball");part:SetAttribute("VFXStage",stage)
+				table.insert(parts,part)
+			end
+			return part
+		end
+		local charge=Timeline.markerDelay(stamp,workspace:GetServerTimeNow(),.12)
+		if charge and charge>0 then
+			-- Open spokes draw inward without covering the caster in a filled seal.
+			local focus=source
+			for i=1,(if small then 6 else 8) do
+				local angle=i*math.pi*2/(if small then 6 else 8)
+				local at=focus+aim.RightVector*math.cos(angle)*1.25+aim.UpVector*math.sin(angle)*1.25
+				visual("Charge",V(.18,.18,.18),CFrame.new(at),Config.Fire,charge,{Position=focus,Size=V(.06,.06,.06),Transparency=1},.25)
+			end
+			visual("Charge",V(.15,.15,.15),CFrame.new(focus),white,charge,{Size=V(.45,.45,.45),Transparency=.35},.25)
+		end
+		atMarker(model,.12,function()
+			-- A delayed callback uses only the remaining accepted flight window.
+			local flight=Timeline.markerDelay(stamp,workspace:GetServerTimeNow(),.30)
+			if not current() then close();return end
+			if not flight or flight<=0 or (target-source).Magnitude<.1 then return end
+			local orb=visual("Travel",V(.9,.9,.9),CFrame.lookAt(source,target),Config.Fire,flight,{Position=target,Size=V(.65,.65,.65),Transparency=.4},.25,true)
+			visual("Travel",V(.35,.35,.35),CFrame.new(source),white,flight,{Position=target,Size=V(.2,.2,.2),Transparency=.6},.1,true)
+			if orb then
+				local a=Instance.new("Attachment");a.Position=V(0,.22,0);a.Parent=orb
+				local b=Instance.new("Attachment");b.Position=V(0,-.22,0);b.Parent=orb
+				local trail=Instance.new("Trail");trail.Attachment0=a;trail.Attachment1=b;trail.Lifetime=.08;trail.FaceCamera=true
+				trail.Color=ColorSequence.new(white,Config.Fire);trail.WidthScale=NumberSequence.new(.7,0);trail.Transparency=NumberSequence.new(.35,1);trail.Parent=orb
+				local embers=Instance.new("ParticleEmitter");embers.Texture=Config.FireTexture;embers.Rate=0;embers.LockedToPart=true
+				embers.Color=ColorSequence.new(white,Config.Fire);embers.LightEmission=.35;embers.Lifetime=NumberRange.new(.08,.14)
+				embers.Speed=NumberRange.new(0,.4);embers.Size=NumberSequence.new(.75,0);embers.Transparency=NumberSequence.new(.4,1);embers.Parent=orb;embers:Emit(if small then 3 else 5)
+			end
+		end)
+		atMarker(model,.30,function()
+			if not current() then close();return end
+			-- Short core and outward embers leave the target and boss warnings clear.
+			visual("Impact",V(.35,.35,.35),CFrame.new(target),white,.10,{Size=V(1.2,1.2,1.2),Transparency=1},.25)
+			local countSpokes=if small then 4 else 6
+			for i=1,countSpokes do
+				local angle=i*math.pi*2/countSpokes
+				local direction=V(math.cos(angle),.25,math.sin(angle))
+				visual("Impact",V(.2,.2,.2),CFrame.new(target+direction*.45),Config.Fire,.28,{Position=target+direction*2.8,Size=V(.06,.06,.06),Transparency=1},.15)
+			end
+			local anchor=visual("Impact",V(.05,.05,.05),CFrame.new(target),Config.Fire,.4,{Transparency=1},1)
+			if anchor then
+				local fire=Instance.new("ParticleEmitter");fire.Texture=Config.FireTexture;fire.Rate=0;fire.LightEmission=.35
+				fire.Color=ColorSequence.new(white,Config.Fire);fire.Lifetime=NumberRange.new(.12,.28);fire.Speed=NumberRange.new(2,4);fire.Drag=7
+				fire.SpreadAngle=Vector2.new(100,100);fire.Size=NumberSequence.new(.85,0);fire.Transparency=NumberSequence.new(.3,1);fire.Parent=anchor;fire:Emit(if small then 4 else 6)
+			end
+		end)
+	end
 	local function classCast(model: Model,class: string,effect: string,aim: CFrame,target: Vector3,color: Color3): boolean
 		local origin=aim.Position;local floor=CFrame.new(target-V(0,2.4,0))
-		if class=="Mage" and (effect=="Magic" or effect=="Area") then
+		if class=="Mage" and effect=="Magic" then
+			fireballCast(model,aim,target);return true
+		elseif class=="Mage" and effect=="Area" then
 			-- A vertical casting seal contracts into a comet before the impact crown.
 			if beforeMarker(model,.12) then
 			arc(aim*CFrame.new(0,.5,-1.8)*CFrame.Angles(math.pi/2,0,0),1.7,color,0,math.pi*2,.22)
@@ -212,25 +293,11 @@ return function()
 			atMarker(model,.12,function()
 				missile(origin+V(0,.5,0),target,color,.18)
 				local orb=make(V(1.55,1.55,1.55),CFrame.new(origin+V(0,.5,0)),color,Enum.PartType.Ball,.18,{Position=target,Size=V(1.1,1.1,1.1),Transparency=.18})
-				if orb and effect=="Magic" then
-					local embers=Instance.new("ParticleEmitter");embers.Texture=Config.FireTexture;embers.Rate=0;embers.Color=ColorSequence.new(Config.Core,Config.Fire);embers.LightEmission=.55
-					embers.Lifetime=NumberRange.new(.16,.22);embers.LockedToPart=true;embers.Speed=NumberRange.new(0,.5);embers.Size=NumberSequence.new(1.6,.4);embers.Transparency=NumberSequence.new(.3,1);embers.SpreadAngle=Vector2.new(40,40);embers.Parent=orb;embers:Emit(if reduced() then 3 else 5)
-				end
 				if orb then local a=Instance.new("Attachment");a.Position=V(0,.3,0);a.Parent=orb;local b=Instance.new("Attachment");b.Position=V(0,-.3,0);b.Parent=orb
 					local trail=Instance.new("Trail");trail.Attachment0=a;trail.Attachment1=b;trail.Color=ColorSequence.new(white,color);trail.Transparency=NumberSequence.new(.3,1);trail.Lifetime=.12;trail.FaceCamera=true;trail.Parent=orb end
 			end)
 			atMarker(model,.3,function()
 				burst(target,color,true);arc(floor,if effect=="Area" then 4.8 else 2.5,color,0,math.pi*2,.48)
-				if effect=="Magic" then
-					local anchor=make(V(.05,.05,.05),CFrame.new(target),color,Enum.PartType.Ball,.6,{Transparency=1},1)
-					if anchor then
-						local fire=Instance.new("ParticleEmitter");fire.Texture=Config.FireTexture;fire.Rate=0;fire.Color=ColorSequence.new(Config.Core,Config.Fire);fire.LightEmission=.5
-						fire.Lifetime=NumberRange.new(.2,.35);fire.Speed=NumberRange.new(2,5);fire.Drag=6;fire.SpreadAngle=Vector2.new(90,90);fire.Size=NumberSequence.new(1.1,0);fire.Transparency=NumberSequence.new(.2,1);fire.Parent=anchor;fire:Emit(if reduced() then 4 else 6)
-						local smoke=Instance.new("ParticleEmitter");smoke.Texture=Config.SmokeTexture;smoke.Rate=0;smoke.Color=ColorSequence.new(Color3.fromRGB(100,84,72));smoke.Lifetime=NumberRange.new(.3,.5);smoke.Speed=NumberRange.new(1,2);smoke.Size=NumberSequence.new(.5,1.2);smoke.Transparency=NumberSequence.new(.7,1);smoke.Parent=anchor;smoke:Emit(2)
-					end
-				end
-				if effect=="Magic" then for i=1,3 do local offset=V((i-2)*.5,.3,(i%2)*.5)
-					make(V(.3,.3,.3),CFrame.new(target+offset),Color3.fromRGB(92,76,64),Enum.PartType.Ball,.4,{Position=target+offset+V(0,1,0),Size=V(.7,.7,.7),Transparency=1},.72) end end
 				if effect=="Area" then for i=1,4 do local a=i*math.pi/2;local p=target+V(math.cos(a)*3,-2,math.sin(a)*3)
 					make(V(.3,.3,.3),CFrame.new(p)*CFrame.Angles(0,a,.2),color,Enum.PartType.Block,.4,{Position=p+V(0,2,0),Size=V(.15,4,.15),Transparency=1}) end end
 			end);return true
