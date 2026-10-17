@@ -28,12 +28,35 @@ function Chrome.actor(card:TextButton)
  local rim=Chrome.surface(card)
  local bar=Chrome.health(card)
  local rail=Instance.new("Frame");rail.Name="SelectedActorRail";rail.Size=UDim2.new(0,3,1,-10);rail.Position=UDim2.fromOffset(0,5)
- rail.BorderSizePixel=0;rail.BackgroundColor3=C.Gold;rail.Parent=card
+ rail.BorderSizePixel=0;rail.BackgroundColor3=C.Gold;rail.ZIndex=4;rail.Active=false;rail.Parent=card
+ local ribbon=Instance.new("Frame");ribbon.Name="SelectedActorRibbon";ribbon.Size=UDim2.new(1,-8,0,2);ribbon.Position=UDim2.fromOffset(4,1)
+ ribbon.BorderSizePixel=0;ribbon.BackgroundColor3=C.Primary;ribbon.ZIndex=4;ribbon.Active=false;ribbon.Parent=card
+ local frame=Instance.new("Frame");frame.Name="PortraitMount";frame.BackgroundColor3=C.Background;frame.BorderSizePixel=0;frame.ZIndex=2;frame.Active=false;frame.Parent=card
+ local portraitRim=Instance.new("UIStroke");portraitRim.Color=C.GoldShadow;portraitRim.Thickness=1;portraitRim.Parent=frame
  local number=Instance.new("TextLabel");number.Name="ActorSlot";number.BackgroundColor3=C.Background;number.BorderSizePixel=0
- number.Position=UDim2.fromOffset(3,3);number.Size=UDim2.fromOffset(15,15);number.Font=Theme.Fonts.Body;number.TextSize=10;number.TextColor3=C.Gold;number.ZIndex=3;number.Parent=card
- return {update=function(chosen:boolean,slot:number,health:any,maximum:any)
+ number.Size=UDim2.fromOffset(12,12);number.Font=Theme.Fonts.Body;number.TextSize=10;number.TextColor3=C.Gold;number.ZIndex=5;number.Parent=card
+ local gem=Instance.new("Frame");gem.Name="SelectedActorGem";gem.Size=UDim2.fromOffset(5,5);gem.Rotation=45
+ gem.BackgroundColor3=C.Focus;gem.BorderSizePixel=0;gem.ZIndex=5;gem.Active=false;gem.Parent=card
+ local gemRim=Instance.new("UIStroke");gemRim.Color=C.Gold;gemRim.Thickness=1;gemRim.Parent=gem
+ local name=Instance.new("TextLabel");name.Name="ActorLabel";name.BackgroundTransparency=1;name.TextColor3=C.Text
+ name.Font=Theme.Fonts.Body;name.TextXAlignment=Enum.TextXAlignment.Left;name.TextWrapped=false;name.TextTruncate=Enum.TextTruncate.AtEnd;name.ZIndex=4;name.Parent=card
+ local healthText=Instance.new("TextLabel");healthText.Name="ActorHealth";healthText.BackgroundTransparency=1;healthText.TextColor3=C.Muted
+ healthText.Font=Theme.Fonts.Body;healthText.TextSize=10;healthText.TextXAlignment=Enum.TextXAlignment.Left;healthText.TextTruncate=Enum.TextTruncate.AtEnd;healthText.ZIndex=4;healthText.Parent=card
+ local function layout(width:number,height:number)
+  local large=height>44;local portraitSize=if large then 48 else if width<110 then 26 else 32
+  frame.Position=UDim2.fromOffset(3,2);frame.Size=UDim2.fromOffset(portraitSize+2,portraitSize+2)
+  number.Position=UDim2.fromOffset(4,portraitSize-9);gem.Position=UDim2.fromOffset(portraitSize-1,portraitSize-2)
+  name.Position=UDim2.fromOffset(portraitSize+9,if large then 7 else 2)
+  name.Size=UDim2.new(1,-portraitSize-14,0,if large then 22 else 19);name.TextSize=if width<110 then 12 else 13
+  healthText.Position=UDim2.fromOffset(portraitSize+9,if large then 30 else 21)
+  healthText.Size=UDim2.new(1,-portraitSize-14,0,if large then 16 else 13)
+ end
+ layout(138,44)
+ return {name=name,layout=layout,update=function(chosen:boolean,slot:number,health:any,maximum:any)
   rim.Color=if chosen then C.Gold else C.GoldShadow;rim.Thickness=if chosen then 2 else 1
-  rail.Visible=chosen;number.Text=tostring(slot);bar.update(health,maximum)
+  portraitRim.Color=if chosen then C.GoldLight else C.GoldShadow
+  rail.Visible=chosen;ribbon.Visible=chosen;gem.Visible=chosen;number.Text=tostring(slot);bar.update(health,maximum)
+  healthText.Text=tostring(health or "–").." HP"
   card:SetAttribute("SelectedActor",chosen)
  end}
 end

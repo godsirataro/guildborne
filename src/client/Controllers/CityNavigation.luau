@@ -111,6 +111,19 @@ local function navigationContext(player:Player,x:number,z:number):any
  -- CampaignWorld marks the current objective on its owner model and enables only
  -- outstanding actionable markers (tour/track progress and delivery choices included).
  local campaign=workspace:FindFirstChild("GuildCampaign_"..player.UserId)
+ local encounterScene=workspace:FindFirstChild("RegionalEncounter_"..player.UserId.."_Greenwood")
+ if encounterScene and encounterScene:GetAttribute("AdventureSceneOwner")==player.UserId then
+  local actors=encounterScene:FindFirstChild("EncounterArt")
+  local area=world:FindFirstChild("Greenwood");local markers=area and area:FindFirstChild("EncounterMarkers")
+  context.encounters={}
+  if actors and markers then for _,actor in ipairs(actors:GetChildren())do
+   local id=actor:GetAttribute("EncounterId");local marker=actor:GetAttribute("EncounterMarker");local health=actor:GetAttribute("CombatHealth")
+   local point=if type(marker)=="string"then markers:FindFirstChild(marker)else nil
+   if actor:IsA("Model") and actor:GetAttribute("OwnerUserId")==player.UserId and type(id)=="string" and type(health)=="number" and health>0 and point and point:IsA("BasePart")then
+    context.encounters[id]={ownerId=player.UserId,marker=marker,region="Greenwood",alive=true,point={x=point.Position.X,y=point.Position.Y,z=point.Position.Z,zone="Greenwood"}}
+   end
+  end end
+ end
  if campaign and campaign:GetAttribute("CampaignOwner")==player.UserId then
   local best:any=nil;local distance=math.huge
   for _,part in ipairs(campaign:GetChildren())do
@@ -139,6 +152,12 @@ local Symbol=require(script.Parent.Parent.UI.SymbolIcon)
 local districtSymbols={Plaza="plaza",Guild="guild_home",Market="exchange",Tavern="tavern",Tower="tower",Warp="portal"}
 return function()
 	local player=Players.LocalPlayer;local language="en"
+	local function menuBlocking():boolean
+		if MenuRouter.isBlocking() or player.PlayerGui:GetAttribute("GuildborneMenuOpen")==true then return true end
+		local main=player.PlayerGui:FindFirstChild("GuildborneUI")
+		local management=main and main:FindFirstChild("ManagementPanel")
+		return main~=nil and main:IsA("ScreenGui") and main.Enabled and management~=nil and management:IsA("GuiObject") and management.Visible
+	end
 	local selected: any=nil;local snapshot: any=nil;local arrivedUntil=0;local mapRegion:string?=nil
 	local mapCivic:string?=nil;local mapGuild=false
 	local connections: {RBXScriptConnection}={}
@@ -253,8 +272,8 @@ return function()
 		if root then for _,id in ipairs(Civic.Order)do if Civic.contains(id,root.Position.X,root.Position.Z)then civic=id;break end end end
 		if civic~=mapCivic then mapCivic=civic;if not (selected and selected.quest)then selected=nil end;scroll.CanvasPosition=Vector2.zero;refresh()end
 		if region~=mapRegion then mapRegion=region;scroll.CanvasPosition=if region then Vector2.new(0,math.max(0,mapHeight*.71-scroll.AbsoluteSize.Y*.5)) else Vector2.zero;refresh() end
-		toggle.Visible=(district~=nil or region~=nil or civic~=nil or inGuild) and (not MenuRouter.isBlocking() or panel.Visible)
-		banner.Visible=(toggle.Visible or ((region~=nil or civic~=nil or (selected and selected.quest)) and not MenuRouter.isBlocking())) and not panel.Visible
+		toggle.Visible=(district~=nil or region~=nil or civic~=nil or inGuild) and (not menuBlocking() or panel.Visible)
+		banner.Visible=(toggle.Visible or ((region~=nil or civic~=nil or (selected and selected.quest)) and not menuBlocking())) and not panel.Visible
 		local fightingRegion=region and root and player:GetAttribute("RegionalCombatEnabled")==region and City.regionCombat(region,root.Position.X,root.Position.Y,root.Position.Z)
 		banner.Text=if region then Locale.translate(language,region)..(if fightingRegion then "" else " · "..Locale.translate(language,"Safe zone")) elseif district then Locale.translate(language,district).." · "..Locale.translate(language,"Safe zone") else ""
 		if civic then banner.Text=Locale.translate(language,civic).." · "..Locale.translate(language,"Safe zone")end
@@ -286,13 +305,13 @@ return function()
 			end
 		elseif not district and not region and not civic and selected and not selected.quest then selected=nil end
 		if banner.Visible and os.clock()<arrivedUntil then banner.Text=Locale.translate(language,"Destination reached") end
-		local showRoute=selected and selected.quest and not panel.Visible and not MenuRouter.isBlocking()
+		local showRoute=selected and selected.quest and not panel.Visible and not menuBlocking()
 		if showRoute then
 			local heading=if direction.Visible then direction.Rotation else nil
 			banner.Visible=false;direction.Visible=false
 			local distance=if root and target then math.floor((Vector2.new(root.Position.X,root.Position.Z)-Vector2.new(target.x,target.z)).Magnitude+.5)else nil
 			beacon.update(target,distance,target==nil,language,heading)
-		else beacon.update(nil,nil,false,language)end
+		else beacon.update(nil,nil,false,language);if selected and selected.quest then direction.Visible=false;if menuBlocking()then banner.Visible=false end end end
 		if root then marker.Position=point(root.Position.X,root.Position.Z);marker.Visible=district~=nil end
 		if root and region then regionalMarker.Position=regionalPoint(region,root.Position.X,root.Position.Z);regionalMarker.Visible=true else regionalMarker.Visible=false end
 		if root and civic then civicMap.update(civic,language,root.Position.X,root.Position.Z)end

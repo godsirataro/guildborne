@@ -65,10 +65,8 @@ return function()
 		card.TextColor3=Art.UI.Text;card.BackgroundColor3=Art.UI.Card;card.Parent=selection
 		Instance.new("UICorner",card)
 		card.Text="";table.insert(portraits,MakePortrait(card))
-		table.insert(cardChrome,Chrome.actor(card))
-		local label=Instance.new("TextLabel");label.Name="ActorLabel";label.BackgroundTransparency=1
-		label.Position=UDim2.fromOffset(44,0);label.Size=UDim2.new(1,-47,1,0);label.TextColor3=Art.UI.Text
-		label.Font=Enum.Font.GothamMedium;label.TextSize=11;label.TextWrapped=true;label.Parent=card;table.insert(cardLabels,label)
+		local chrome=Chrome.actor(card);table.insert(cardChrome,chrome)
+		table.insert(cardLabels,chrome.name)
 		connect(card.Activated,function()
 			local id=card:GetAttribute("ActorId");if type(id)=="string" then selectedId=id end
 		end)
@@ -214,18 +212,15 @@ return function()
 			card.Visible=actor~=nil and (not layout.collapsed or id==selectedId);card:SetAttribute("ActorId",id)
 			card.BackgroundColor3=if id==selectedId then Art.UI.Button else Art.UI.Card
 			cardChrome[index].update(id==selectedId,index,actor and actor:GetAttribute("CombatHealth"),actor and actor:GetAttribute("CombatMaxHealth"))
-			-- Preserve two readable lines even in the three-column short-screen roster.
+			-- Separate identity and health lanes keep the compact roster hierarchy stable.
 			local narrow=layout.cardWidth<110
 			local portrait=card:FindFirstChildWhichIsA("ViewportFrame")
 			local portraitSize=if layout.cardHeight>44 then 48 else if narrow then 26 else 32
 			if portrait then portrait.Size=UDim2.fromOffset(portraitSize,portraitSize);portrait.Position=UDim2.fromOffset(4,3) end
-			cardLabels[index].Position=UDim2.fromOffset(portraitSize+9,2)
-			cardLabels[index].Size=UDim2.new(1,-portraitSize-14,1,-11)
-			cardLabels[index].TextSize=if layout.cardHeight>44 then 13 else 11
-			cardLabels[index].TextTruncate=Enum.TextTruncate.AtEnd
+			cardChrome[index].layout(layout.cardWidth,layout.cardHeight)
+			if portrait then portrait.ZIndex=3 end
 			if visible and card.Visible then portraits[index].update(actor) end
 			cardLabels[index].Text=(if index==1 then (if layout.cardHeight>44 then player.DisplayName else T("Player")) else T(heroNames[tostring(id)] or tostring(actor and actor:GetAttribute("ClassId") or "")))
-				.."\n"..tostring(actor and actor:GetAttribute("CombatHealth") or "–").." HP"
 		end
 		basic.Text=T("Attack")..Bindings.hint("Basic",inputMode)
 		local alive=c~=nil and c:GetAttribute("ClassId")~=nil and (c:GetAttribute("CombatHealth") or 0)>0

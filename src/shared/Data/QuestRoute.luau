@@ -13,7 +13,16 @@ return function(city:any,rules:any,waypoint:any,resolveMarker:any?)
   if quest and quest.kind=="CampaignComplete" then return nil end
   local campaign=context and context.campaign
   local objective=if quest and quest.kind=="Campaign" and campaign and campaign.ownerId==context.playerId and campaign.objective==quest.objective then campaign.point else nil
-  local needsIsland=quest and quest.kind=="Campaign" and (quest.focus=="UpgradeGuildHall" or (objective and objective.zone=="Guild"))
+  -- ChapterOne/CampaignWorld victory bindings; these objectives have no R prompt.
+  local combatObjectives={protect_companion={id="greenwood_archer",marker="ArcherCamp"},defeat_forest_guardian={id="forest_captain",marker="ForestCaptain"}}
+  local combat=quest and quest.kind=="Campaign" and combatObjectives[quest.objective]
+  if not objective and combat and campaign and campaign.ownerId==context.playerId and campaign.objective==quest.objective then
+   local encounter=context.encounters and context.encounters[combat.id]
+   if encounter and encounter.ownerId==context.playerId and encounter.marker==combat.marker and encounter.region=="Greenwood" and encounter.alive==true then objective=encounter.point end
+  end
+  -- ChapterOne's registrar belongs to the player's island. Its streamed marker
+  -- is required for the final leg, but not for directions to the city guild gate.
+  local needsIsland=quest and quest.kind=="Campaign" and (quest.focus=="UpgradeGuildHall" or quest.objective=="return_forest_evidence" or (objective and objective.zone=="Guild"))
   local def=quest and quest.id and catalog.Journal[quest.id]
   local nodeId=def and def.Event and def.Event:match("^Gather:(.+)$")
   local node=nodeId and rules.Nodes and rules.Nodes[nodeId]
@@ -46,7 +55,7 @@ return function(city:any,rules:any,waypoint:any,resolveMarker:any?)
    end
    if best then return {name=best.Name,x=best.X,z=best.Z,zone="City",kind="Portal",final=false}end
   end
-  if quest and quest.kind=="Campaign" and quest.focus~="UpgradeGuildHall" then
+  if quest and quest.kind=="Campaign" and not needsIsland then
    if not objective then return nil end -- Menu/order objectives have no world destination.
    if objective.zone==(region or "City") then return pointTarget(objective,quest.name,"Objective",true) end
    if inCity and city.Regions[objective.zone] then

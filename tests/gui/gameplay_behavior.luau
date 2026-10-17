@@ -160,4 +160,29 @@ test("tracker placement reserves gold and menu regions across compact and wide b
   gui:Destroy()
  end
 end)
+test("party identity health and portrait ornament keep separate bounded lanes",function()
+ local Chrome=require(UI.Components.CombatChrome)
+ for _,size in ipairs({{90,44},{96,44},{138,44},{184,60}}) do
+  local w,h=size[1],size[2];local card=Instance.new("TextButton");card.Size=UDim2.fromOffset(w,h)
+  local chrome=Chrome.actor(card);chrome.layout(w,h)
+  local name=chrome.name;local hp=find(card,"ActorHealth");local mount=find(card,"PortraitMount")
+  for _,text in ipairs({"Player","นักผจญภัยแห่งรุ่งอรุณ"}) do
+   name.Text=text;chrome.update(true,6,127,200)
+   assert(name.Text==text and hp.Text=="127 HP" and not name.TextWrapped)
+   assert(name.TextSize==(if w<110 then 12 else 13) and hp.TextSize==10)
+   assert(name.ZIndex>mount.ZIndex and hp.ZIndex>mount.ZIndex)
+   assert(name.Position[2]>mount.Position[2]+mount.Size[2])
+   assert(name.Position[4]+name.Size[4]<=hp.Position[4])
+   assert(hp.Position[4]+hp.Size[4]<=h-8)
+   assert(name.Position[2]+name.Size[1]*w+name.Size[2]<=w-4)
+  end
+  assert(find(card,"SelectedActorGem").Visible and find(card,"SelectedActorRibbon").Visible)
+  assert(find(card,"ActorSlot").Text=="6" and find(card,"CurrentHealth").Size[1]==127/200)
+  chrome.update(false,1,0,200)
+  assert(not find(card,"SelectedActorGem").Visible and not find(card,"SelectedActorRail").Visible)
+  assert(hp.Text=="0 HP" and find(card,"CurrentHealth").Size[1]==0)
+  chrome.update(false,1,nil,nil);assert(not find(card,"HealthTrack").Visible and hp.Text=="– HP")
+  card:Destroy()
+ end
+end)
 print(passed.." gameplay GUI behavior tests passed (simulation only).")

@@ -1,6 +1,38 @@
 --!strict
 local W=require("../src/shared/Data/CityWaypoint")
 return function(test: any,eq: any)
+ test("forest evidence return keeps city guild portal route when island Registrar is not streamed",function()
+  local city=require("../src/shared/Config/City");local route=require("../src/shared/Data/QuestRoute")(city,{},W)
+  local arrival=city.Destinations.City;local gate=city.GuildPortalStops.Arrival
+  local context:any={authored=true,roads={{a={x=gate.X,z=gate.Z},b={x=arrival.X,z=arrival.Z},width=32,y=.55,anchor="GrandAvenue"}}}
+  local quest={kind="Campaign",objective="return_forest_evidence",name="Return evidence"}
+  local forest=city.Destinations.Greenwood
+  local target=route(quest,{Journal={}},forest.X,forest.Z,context)
+  eq(target.name,"Central City");eq(target.guidance,"destination")
+  target=route(quest,{Journal={}},arrival.X,arrival.Z,context)
+  eq(target.name,gate.Name);eq(target.x,gate.X);eq(target.z,gate.Z);eq(target.guidance,nil)
+  context.roads={};eq(route(quest,{Journal={}},arrival.X,arrival.Z,context),nil)
+  context.playerId=9;context.inGuild=true;context.island={ownerId=9}
+  eq(route(quest,{Journal={}},280,23,context),nil)
+ end)
+ test("chapter one combat objectives use only matching living owned streamed encounter markers",function()
+  local city=require("../src/shared/Config/City");local route=require("../src/shared/Data/QuestRoute")(city,{},W)
+  local config=require("../src/server/Config/ChapterOne")
+  local chapter=config.Chapters[5];eq(chapter.Objectives[2],"protect_companion");eq(chapter.Objectives[3],"defeat_forest_guardian")
+  for _,binding in ipairs({{objective="protect_companion",id="greenwood_archer",marker="ArcherCamp"},{objective="defeat_forest_guardian",id="forest_captain",marker="ForestCaptain"}})do
+   local entry:any={ownerId=19,marker=binding.marker,region="Greenwood",alive=true,point={x=61,z=1409,zone="Greenwood"}}
+   local context:any={authored=true,playerId=19,campaign={ownerId=19,objective=binding.objective},encounters={[binding.id]=entry}}
+   local quest={kind="Campaign",objective=binding.objective,name="Combat objective"}
+   local target=route(quest,{Journal={}},0,1505,context)
+   eq(target.x,61);eq(target.guidance,"destination");eq(target.anchor,nil)
+   entry.point={x=17,z=1335,zone="Greenwood"};eq(route(quest,{Journal={}},0,1505,context).x,17)
+   entry.alive=false;eq(route(quest,{Journal={}},0,1505,context),nil);entry.alive=true
+   entry.ownerId=20;eq(route(quest,{Journal={}},0,1505,context),nil);entry.ownerId=19
+   entry.marker="WrongCamp";eq(route(quest,{Journal={}},0,1505,context),nil);entry.marker=binding.marker
+   context.campaign.objective="disable_false_crest";eq(route(quest,{Journal={}},0,1505,context),nil);context.campaign.objective=binding.objective
+   context.encounters={};eq(route(quest,{Journal={}},0,1505,context),nil)
+  end
+ end)
  test("authored mode retains explicitly labeled regional island and civic destination hints",function()
   local city=require("../src/shared/Config/City");local loaded=true
   local route=require("../src/shared/Data/QuestRoute")(city,{},W,function()return if loaded then {x=20,z=1400}else nil end)
