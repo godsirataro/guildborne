@@ -40,7 +40,8 @@ return function(gui: ScreenGui)
 		heading.Visible = wide; icon.Visible = wide
 		objective.Position = if wide then UDim2.fromOffset(42, 32) else UDim2.fromOffset(6, 3)
 		objective.Size = if wide then UDim2.new(1, -54, 0, 48) else UDim2.new(1, -12, 1, -8)
-		objective.TextSize = if wide then 15 else 12
+		-- Keep two readable lines on medium screens without squeezing phone controls.
+		objective.TextSize = if wide then 15 elseif right - left >= 200 then 14 else 12
 	end
 	local connection = gui:GetPropertyChangedSignal("AbsoluteSize"):Connect(resize)
 	button.Destroying:Connect(function() connection:Disconnect() end); resize()
