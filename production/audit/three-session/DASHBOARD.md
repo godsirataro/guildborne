@@ -1,5 +1,15 @@
 # Current four-session checkpoint — 2026-10-18
 
+## Latest goal checkpoint (supersedes statuses below)
+
+Latest continuation: compact fixture dependency repair independently reviewed; repaired full baseline 30314 PASSED (902 tests, 382 strict Luau files, build and repository checks), 47 GUI simulation cases passed. Actual 320x240 native source-copy fixture passed Map/four skills/six actor cycles/all six scrolled orders; cleanup confirmed. See COMPACT_NATIVE_RUNTIME_20261018.md. Earlier baseline failure below is preserved as history and is resolved. Long actor names truncate at this minimum size; physical touch/gamepad and final visual approval remain unproven. Quota remains 6%.
+
+Goal ACTIVE; full-game scope and exact continuation are recorded in GOAL_CHECKPOINT.md. Latest account reading: 6% remaining; stop initiating work near 5%. All four streams have delivered their latest bounded assignments and are idle. Controller HEAD 3301015 integrates compact HUD; last pushed f1893d1. S13 gate is integrated and Studio-inspected, S15 Fireball and S17 attention are integrated; full art/world/gameplay/device/human gates remain open.
+
+Combined validation process 54243 finished FAILED: 902 tests and Rojo build passed, then luau-lsp found two unsupported require paths at tests/gui/party_roster_review.client.luau:4 and :5. Next: resolve fixture type-check, verify compact native controls/scrolling, record evidence, commit/push and refresh quota. No claim of whole-game completion or compact Studio acceptance.
+
+## Earlier checkpoint
+
 ACTIVE, incomplete. Controller `938f779` pushed; clean checkout before this dashboard update. Fresh account usage 90% used / 10% remaining; stop initiating work near 5%. Shared ledger remains `four-session-v4.sqlite3`. No PR, merge, publishing, spending or production DataStore changes.
 
 | Stream | Latest integrated evidence | Live next assignment / remaining gates |

@@ -1,8 +1,8 @@
 --!strict
 -- Disposable native fixture. All identities, health and portraits are simulated.
 local Players=game:GetService("Players")
-local Chrome=require(script.Parent.UI.Components.CombatChrome)
-local Theme=require(script.Parent.UI.DesignSystem.Theme)
+local Chrome=require(game.StarterPlayer.StarterPlayerScripts.Client.UI.Components.CombatChrome)
+local Theme=require(game.StarterPlayer.StarterPlayerScripts.Client.UI.DesignSystem.Theme)
 local Layout=require(game.ReplicatedStorage.Shared.Data.CombatHudLayout)
 local gui=Instance.new("ScreenGui")
 gui.Name="PartyRosterReview";gui.ResetOnSpawn=false;gui.ScreenInsets=Enum.ScreenInsets.CoreUISafeInsets;gui.Parent=Players.LocalPlayer:WaitForChild("PlayerGui")

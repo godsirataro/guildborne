@@ -1,4 +1,18 @@
-# Controller goal checkpoint — 2026-10-17
+# Controller goal checkpoint — 2026-10-18
+
+## Latest user-requested goal update — 2026-10-18
+
+Continuation completed: fixture require-path repair independently accepted; repaired full baseline 30314 exited 0 (902 tests, 382 strict files, build and repository checks), plus 47 GUI cases passed. Actual source-copy Studio fixture at 320x240/scale1 accepted Map, four skills, six actor cycles and all six horizontally scrolled orders. Cleanup independently confirmed. See COMPACT_NATIVE_RUNTIME_20261018.md and raw receipts. This supersedes the failed-baseline next action below; the original failed log is retained. Current quota remains 6%. Next work must address remaining real-game/visual acceptance, not repeat these completed fixture checks. Full-world and human/device gates remain incomplete.
+
+App Goal verified ACTIVE. Full target remains an original, visually polished Guildborne game: connected open-world cities, monsters/progression through level 100, tower, reference-informed native Roblox GUI, player plus up to five companions, server-authoritative combat and rewards, animation/VFX/audio, and NPC/quest integration. Coordinate S13 Map, S14 GUI, S15 Animation/VFX and S17 NPC (01a1482e-53c1-7a10-a97d-ce48148318b9). A starter gameplay slice is an intermediate acceptance gate, not completion of this full goal.
+
+Latest actual account reading: 94% used / 6% remaining. Continue only bounded integration/verification and preserve handoff; stop initiating work at approximately 5% remaining. No reset or spending authorized. Reviewed commits and normal pushes are allowed; no new PR, merge, force-push, Roblox publication or production DataStore writes.
+
+Current controller HEAD 3301015 includes S14 compact HUD delivery 33dae8cc; last pushed checkpoint f1893d1. S13 gate delivery 12a7b5a was integrated as 95b7aa2 and inspected in Studio; S15 Fireball and S17 attention deliveries are integrated. All four workers have delivered their latest bounded work and are idle. Do not infer full-world, final-art, ordinary combat, physical-device or human acceptance.
+
+Immediate continuation: full baseline process 54243 has FINISHED WITH FAILURE, not running. 902 tests and Rojo build passed, but luau-lsp rejected tests/gui/party_roster_review.client.luau lines 4 and 5 (unsupported require paths). Fix/review the fixture resolution, rerun relevant validation, and perform native compact HUD checks (Map/Attack, all six actor choices and scrolling to the final order). Preserve the failed raw log at build/controller-compact-full-20261018.log. Do not claim the compact fixture has passed Studio yet. Record results, commit/push reviewed changes and refresh quota before another wave.
+
+Shared ledger: C:/Work/MySelf/Guildborne/build/agentic/four-session-v4.sqlite3. Check current leases before every write. Controller retains exclusive Studio ownership; do not overwrite user changes or reuse historical Memory progress as a persistent save. Historical checkpoints below are superseded where they conflict with this section.
 
 ## User goal reminder — 2026-10-17 (latest)
 

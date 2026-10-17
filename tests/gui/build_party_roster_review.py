@@ -17,9 +17,9 @@ project = {"name": "GuildbornePartyRosterReview", "tree": {
         "Data": {"CombatHudLayout": source("src/shared/Data/CombatHudLayout.luau")}}},
     "StarterPlayer": {"$className": "StarterPlayer", "StarterPlayerScripts": {
         "$className": "StarterPlayerScripts", "Review": source("tests/gui/party_roster_review.client.luau"),
-        "UI": {"DesignSystem": {"Theme": source("src/client/UI/DesignSystem/Theme.luau")},
+        "Client": {"UI": {"DesignSystem": {"Theme": source("src/client/UI/DesignSystem/Theme.luau")},
                "Components": {name: source(f"src/client/UI/Components/{name}.luau")
-                              for name in ("CombatChrome", "QualityAsset")}}}},
+                              for name in ("CombatChrome", "QualityAsset")}}}}},
     "Workspace": {"$className": "Workspace"}}}
 path = out / "review.project.json"
 def folders(node):

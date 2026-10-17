@@ -1,0 +1,278 @@
+[
+  {
+    "stage": "install",
+    "result": {
+      "content": [
+        {
+          "type": "text",
+          "text": "Synthetic compact fixture installed; source-copy only, no server/profile changes"
+        }
+      ],
+      "isError": false
+    }
+  },
+  {
+    "stage": "320x240",
+    "result": {
+      "content": [
+        {
+          "type": "text",
+          "text": "{\"scale\":1,\"regions\":[{\"visible\":true,\"size\":[96,44],\"name\":\"MapReservation\",\"pos\":[8,246]},{\"visible\":true,\"size\":[96,44],\"name\":\"CycleActor\",\"pos\":[8,194]},{\"visible\":true,\"size\":[192,44],\"name\":\"OrdersReservation\",\"pos\":[120,262]},{\"visible\":true,\"size\":[192,108],\"name\":\"CombatPadReservation\",\"pos\":[120,146]}],\"canvas\":\"0, 0\",\"size\":[320,240]}"
+        }
+      ],
+      "isError": false
+    }
+  },
+  {
+    "stage": "cycle-visible-0",
+    "result": {
+      "content": [
+        {
+          "type": "text",
+          "text": "[\"Actor1\"]"
+        }
+      ],
+      "isError": false
+    }
+  },
+  {
+    "stage": "cycle-visible-1",
+    "result": {
+      "content": [
+        {
+          "type": "text",
+          "text": "[\"Actor2\"]"
+        }
+      ],
+      "isError": false
+    }
+  },
+  {
+    "stage": "cycle-visible-2",
+    "result": {
+      "content": [
+        {
+          "type": "text",
+          "text": "[\"Actor3\"]"
+        }
+      ],
+      "isError": false
+    }
+  },
+  {
+    "stage": "cycle-visible-3",
+    "result": {
+      "content": [
+        {
+          "type": "text",
+          "text": "[\"Actor4\"]"
+        }
+      ],
+      "isError": false
+    }
+  },
+  {
+    "stage": "cycle-visible-4",
+    "result": {
+      "content": [
+        {
+          "type": "text",
+          "text": "[\"Actor5\"]"
+        }
+      ],
+      "isError": false
+    }
+  },
+  {
+    "stage": "cycle-visible-5",
+    "result": {
+      "content": [
+        {
+          "type": "text",
+          "text": "[\"Actor6\"]"
+        }
+      ],
+      "isError": false
+    }
+  },
+  {
+    "stage": "click-MapReservation",
+    "result": {
+      "content": [
+        {
+          "type": "text",
+          "text": "Success"
+        }
+      ],
+      "isError": false
+    }
+  },
+  {
+    "stage": "click-CombatPadReservation.SyntheticSkill1",
+    "result": {
+      "content": [
+        {
+          "type": "text",
+          "text": "Success"
+        }
+      ],
+      "isError": false
+    }
+  },
+  {
+    "stage": "click-CombatPadReservation.SyntheticSkill2",
+    "result": {
+      "content": [
+        {
+          "type": "text",
+          "text": "Success"
+        }
+      ],
+      "isError": false
+    }
+  },
+  {
+    "stage": "click-CombatPadReservation.SyntheticSkill3",
+    "result": {
+      "content": [
+        {
+          "type": "text",
+          "text": "Success"
+        }
+      ],
+      "isError": false
+    }
+  },
+  {
+    "stage": "click-CombatPadReservation.SyntheticSkill4",
+    "result": {
+      "content": [
+        {
+          "type": "text",
+          "text": "Success"
+        }
+      ],
+      "isError": false
+    }
+  },
+  {
+    "stage": "click-OrdersReservation.Order1",
+    "result": {
+      "content": [
+        {
+          "type": "text",
+          "text": "Success"
+        }
+      ],
+      "isError": false
+    }
+  },
+  {
+    "stage": "order4",
+    "result": {
+      "content": [
+        {
+          "type": "text",
+          "text": "Success"
+        }
+      ],
+      "isError": false
+    }
+  },
+  {
+    "stage": "scroll-end",
+    "result": {
+      "content": [
+        {
+          "type": "text",
+          "text": "Success"
+        }
+      ],
+      "isError": false
+    }
+  },
+  {
+    "stage": "order6",
+    "result": {
+      "content": [
+        {
+          "type": "text",
+          "text": "Success"
+        }
+      ],
+      "isError": false
+    }
+  },
+  {
+    "stage": "order5",
+    "result": {
+      "content": [
+        {
+          "type": "text",
+          "text": "Success"
+        }
+      ],
+      "isError": false
+    }
+  },
+  {
+    "stage": "scroll-back",
+    "result": {
+      "content": [
+        {
+          "type": "text",
+          "text": "Success"
+        }
+      ],
+      "isError": false
+    }
+  },
+  {
+    "stage": "activation-audit",
+    "result": {
+      "content": [
+        {
+          "type": "text",
+          "text": "{\"canvas\":\"168, 0\",\"buttons\":[{\"activations\":1,\"name\":\"MapReservation\",\"pos\":\"8, 246\"},{\"activations\":6,\"name\":\"CycleActor\",\"pos\":\"8, 194\"},{\"activations\":1,\"name\":\"Order1\",\"pos\":\"-48, 262\"},{\"name\":\"Order2\",\"pos\":\"62, 262\"},{\"name\":\"Order3\",\"pos\":\"172, 262\"},{\"activations\":1,\"name\":\"Order4\",\"pos\":\"282, 262\"},{\"activations\":1,\"name\":\"Order5\",\"pos\":\"392, 262\"},{\"activations\":1,\"name\":\"Order6\",\"pos\":\"502, 262\"},{\"activations\":1,\"name\":\"SyntheticSkill1\",\"pos\":\"120, 146\"},{\"activations\":1,\"name\":\"SyntheticSkill2\",\"pos\":\"220, 146\"},{\"activations\":1,\"name\":\"SyntheticSkill3\",\"pos\":\"120, 202\"},{\"activations\":1,\"name\":\"SyntheticSkill4\",\"pos\":\"220, 202\"},{\"name\":\"Actor1\",\"pos\":\"8, 146\"},{\"name\":\"Actor2\",\"pos\":\"8, 146\"},{\"name\":\"Actor3\",\"pos\":\"8, 146\"},{\"name\":\"Actor4\",\"pos\":\"8, 146\"},{\"name\":\"Actor5\",\"pos\":\"8, 146\"},{\"name\":\"Actor6\",\"pos\":\"8, 146\"}]}"
+        }
+      ],
+      "isError": false
+    }
+  },
+  {
+    "stage": "final-activation-audit",
+    "result": {
+      "content": [
+        {
+          "type": "text",
+          "text": "{\"canvas\":\"68, 0\",\"buttons\":[{\"name\":\"MapReservation\",\"activations\":1},{\"name\":\"CycleActor\",\"activations\":6},{\"name\":\"Order1\",\"activations\":1},{\"name\":\"Order2\",\"activations\":1},{\"name\":\"Order3\",\"activations\":1},{\"name\":\"Order4\",\"activations\":1},{\"name\":\"Order5\",\"activations\":1},{\"name\":\"Order6\",\"activations\":1},{\"name\":\"SyntheticSkill1\",\"activations\":1},{\"name\":\"SyntheticSkill2\",\"activations\":1},{\"name\":\"SyntheticSkill3\",\"activations\":1},{\"name\":\"SyntheticSkill4\",\"activations\":1}],\"scale\":1,\"healthVisible\":false,\"size\":\"320, 240\"}"
+        }
+      ],
+      "isError": false
+    }
+  },
+  {
+    "stage": "cleanup",
+    "result": {
+      "content": [
+        {
+          "type": "text",
+          "text": "Removed synthetic GUI and source-copy module folder"
+        }
+      ],
+      "isError": false
+    }
+  },
+  {
+    "stage": "independent-cleanup-check",
+    "result": {
+      "content": [
+        {
+          "type": "text",
+          "text": "{\"moduleAbsent\":true,\"guiAbsent\":true}"
+        }
+      ],
+      "isError": false
+    }
+  }
+]
