@@ -137,3 +137,42 @@ far-culling and Destroy restoration assertion it now requires Work weight > .99
 and an actually non-rest C0. It returns to near work before Destroy. Both probe
 entry paths reject non-Studio or nonzero PlaceId/GameId before creating fixtures.
 These checks are compiled locally; actual execution remains Controller-owned.
+
+## Six civic host shared hints — source candidate
+
+The next scoped patch adds `NpcInteractUntil` and `NpcInteractor` inside the
+existing CivicCityWorld Talk distance guard. `GreetingAt` already existed; all
+three now use one server timestamp. The existing open callback, 14-stud check,
+NpcId, WorkMotionIdentity and stationary root are preserved. No animator, reward,
+save or quest-station binding changes. This closes the source-side six-host hint
+omission; shared-client behavior is still pending actual multiplayer evidence.
+
+`tests/studio_civic_host_interaction.luau` is an isolated server fixture returning
+Prepare/Verify/Destroy. It invokes the actual CivicCityWorld builder, observes
+the real prompt signal and records its actual open callback. It never invokes a
+copied handler or manually sets the tested interaction attributes. Geometry is
+temporarily moved 50,000 studs away; the chosen player's original pivot and root
+anchoring are saved. Studio and PlaceId/GameId zero are required.
+
+Controller procedure (actual input, not a simulated signal):
+
+1. Load the fixture in the verified isolated candidate and call it with the test
+   Player. Retain the returned handle for cleanup even if a later assertion fails.
+2. Call `handle.Prepare()`, focus that player's game window, press/release E once,
+   then call `handle.Verify()`. Repeat for twelve cases, six near/eight-stud and
+   six far/24-stud triggers, alternating for each host.
+3. The disposable prompt alone has its engine radius expanded to 40 studs so far
+   input can reach the application's unchanged 14-stud guard. Verify demands one
+   observed real Triggered event: absence of input cannot pass rejection. Near
+   cases require the right open callback, timestamp/deadline and player; far cases
+   require unchanged hints and no open callback. Root and identity are checked.
+4. Call `handle.Destroy()` after success OR failure. It disconnects observers,
+   destroys the disposable geometry and restores the same character's pivot and
+   original anchoring. An additional Prepare reports completion/counts only.
+
+This is not travel/progression, an actual quest journey, or two-client visual
+acceptance. Observer animation, second-speaker replacement, expiry/departure and
+distance recovery still require the Controller's separate multiplayer run.
+Independent read-only review found no actionable issue in this bounded patch.
+Scoped compilation/type analysis and seven Borin/eight NPC contract tests passed;
+the new twelve-case Studio fixture was NOT_RUN by S17.
