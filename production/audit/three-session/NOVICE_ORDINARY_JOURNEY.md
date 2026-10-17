@@ -221,3 +221,13 @@ Ordinary W/A movement followed the route toward Forest Captain. Player reached (
 Clicked the actual Guild menu and CampaignClaim buttons. Native GUI showed A Home with a Name, chapter6/12, Lv20,728Gold. Current objective: return_forest_evidence. No direct remotes, combat result writes, quest observation calls or reward shortcuts were used.
 
 The management menu screenshot exposed compass overlap over its objective and tab row. S14 received exact reproduction and owns the fix. This journey proves same-session ordinary combat/reward progression; it does not prove latest asset rendering, clean first-time usability, persistence, multiplayer or physical-device acceptance.
+
+## Return journey, guild recognition and Hall 2
+
+Continued ordinary S movement down the Greenwood path, then E near the actual Central City portal at (0,7,1517). Server-authorized travel arrived in City at (0,3.698,-720). The compass became unavailable here, although the Guild Zone Warp exists at (0,6,-680). S14 received this intermediate routing gap. Ordinary S movement and E used that portal, arriving on the owned island at approximately (0,3.998,23); compass guidance resumed toward the Registrar.
+
+W movement and R delivered forest evidence. Subsequent ordinary A/S/W/D positioning and R selected the motto and crest markers and registered recognition. The server objective became absent with the reward prompt. Actual Guild menu/CampaignClaim advanced to Unequal Weight, chapter7/12 Lv20. This chapter is gated by Hall level2.
+
+Scrolled the native management panel to the Hall upgrade. It displayed 80Gold and sufficient earned materials: Timber14/6,IronOre6/6,IronIngot1/1,Herb3/2. An instance-path click failed because the generic Frame path did not resolve that button; the first screenshot-coordinate attempt also did not activate it. Read back actual AbsolutePosition (32,436), size(728,52), then clicked its actual center (390,462) through mouse input. Upgrade succeeded: GUI HallLv2,Gold768->688; objective changed to inspect all three ore scales. No currencies/materials were injected and no direct upgrade command was called. Extra regional respawn combat while returning means Gold768 is not solely the prior chapter reward.
+
+Keep this Memory Play session alive at approximately (-0.4065,3.998,-5.4217), Guild, Hall2, playerLv20, chapter7. This tests the earned Hall gate and native upgrade path, not persistence after Stop, live economy, higher Hall caps or physical-device usability. Chapter7 navigation currently remains unavailable on the island; its target is the Ironveil scales and requires further inspection.
