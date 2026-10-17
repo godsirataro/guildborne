@@ -148,12 +148,24 @@ return function(city:any,rules:any,waypoint:any,resolveMarker:any?)
  end
  return function(quest:any,catalog:any,x:number,z:number,context:any?):any
   local target=destination(quest,catalog,x,z,context)
+  if context and context.civic then
+   local exit=context.civic.exit
+   if not quest or quest.kind=="CampaignComplete" or not exit then return nil end
+   target={x=exit.x,y=exit.y,z=exit.z,name="Central City",zone=context.civic.id,kind="Portal",final=false}
+  end
+  if target and (type(target.x)~="number" or type(target.z)~="number" or target.x~=target.x or target.z~=target.z or math.abs(target.x)==math.huge or math.abs(target.z)==math.huge)then return nil end
   if not target or not context or not context.authored then return target end
+  local function destinationHint():any
+   local hint=table.clone(target)
+   hint.anchor=nil;hint.guidance="destination";hint.stepLabel="Destination direction — follow paths";hint.destinationName=target.name
+   return hint
+  end
   local start={x=x,z=z};local nextPoint:any=nil;local label="Continue to destination"
   if target.zone=="City" then
    nextPoint=roadStep(start,target,context.roads);label="Follow the city road"
   elseif target.zone=="Guild" and context.island and context.island.ownerId==context.playerId then
    local island=context.island
+   if target.name~="Central City" then return destinationHint() end
    if not island.supported then return nil end
    if island.insideHall then nextPoint=island.hallApproach or island.threshold;label="Leave the Hall"
    elseif target.name=="Central City" then
@@ -162,8 +174,10 @@ return function(city:any,rules:any,waypoint:any,resolveMarker:any?)
      if not leg.reached then nextPoint=leg.point;label=leg.label;break end
     end
     if not nextPoint then nextPoint=target;label="Follow the promenade" end
-   else return nil end -- Unsupported local objective paths need authored corridors.
-  else return nil end -- Regional/civic authored routing is a separate acceptance slice.
+   else return nil end
+  elseif city.Regions[target.zone] or (context.civic and context.civic.id==target.zone) then
+   return destinationHint() -- Direction only: no claim of an authored safe next leg.
+  else return nil end
   if not nextPoint then return nil end
   if context.clearSegment and not context.clearSegment(nextPoint) then return nil end
   local result=table.clone(target)

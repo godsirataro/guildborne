@@ -95,4 +95,34 @@ test("GUI destruction stops resize and late route updates",function()
  f.api.update(nil,nil,true,"th");f.api.destroy()
  assert(f.card.Size==size and f.card:FindFirstChild("NextInstruction").Text==instruction)
 end)
+test("destination hints cannot claim a safe next waypoint or retain a world beacon",function()
+ local f=fixture();local t=target();f.api.update(t,12,false,"en")
+ assert(f.marker.Enabled)
+ t.guidance="destination";t.stepLabel="Next waypoint"
+ for _,language in ipairs({"en","th"})do
+  f.api.update(t,12,false,language)
+  assert(f.card.Visible and not f.marker.Enabled and f.marker.Adornee==nil)
+  assert(f.card:FindFirstChild("NextInstruction").Text==Locale.translate(language,"Destination direction — follow paths"))
+ end
+ for _,viewport in ipairs({{360,640},{600,400},{796,617},{1280,720}})do
+  f.gui.AbsoluteSize={X=viewport[1],Y=viewport[2]};f.gui:GetPropertyChangedSignal("AbsoluteSize"):Fire()
+  local p=f.api.directionPosition();local arrowY=p[3]*viewport[2]+p[4]
+  local bottom=f.card.Position[3]*viewport[2]+f.card.Position[4]+f.card.Size[4]
+  assert(arrowY>=bottom+8 and arrowY+40<=viewport[2],"Compass must clear card text and remain on screen")
+ end
+ t.guidance=nil;f.api.update(t,12,false,"en");assert(f.marker.Enabled)
+ f.api.destroy()
+end)
+test("default global ordering keeps card copy above its fill and marker uses native bars",function()
+ local f=fixture();f.api.update(target(),12,false,"en")
+ for _,name in ipairs({"NextInstruction","FinalDestination","NextDistance"})do
+  assert(f.card:FindFirstChild(name).ZIndex>f.card.ZIndex,"Global ordering requires labels above card fill")
+ end
+ for index=1,2 do
+  local bar=f.marker:FindFirstChild("GroundPointer"..index)
+  assert(bar and bar.ClassName=="Frame" and bar.Size[2]>0 and bar.Size[4]>0)
+ end
+ assert(f.marker:FindFirstChild("GroundPointer")==nil,"No font-dependent pointer")
+ f.api.destroy()
+end)
 print(passed.." waypoint GUI behavior tests passed (simulation only).")

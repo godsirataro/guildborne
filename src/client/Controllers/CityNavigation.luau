@@ -14,6 +14,14 @@ local IslandLayout=require(game.ReplicatedStorage.Shared.Config.GuildIslandLayou
 local function navigationContext(player:Player,x:number,z:number):any
  local context:any={playerId=player.UserId,inGuild=false,authored=true,roads={}}
  local world=workspace:FindFirstChild("GuildborneWorld");if not world then return context end
+ for _,id in ipairs(Civic.Order)do if Civic.contains(id,x,z)then
+  local area=world:FindFirstChild(id);local exit=area and area:FindFirstChild("Central City")
+  context.civic={id=id}
+  if exit and exit:IsA("BasePart") and exit:GetAttribute("TravelDestination")=="City"then
+   context.civic.exit={x=exit.Position.X,y=exit.Position.Y-exit.Size.Y/2,z=exit.Position.Z}
+  end
+  break
+ end end
  local owned:Instance?=nil
  for _,model in ipairs(world:GetChildren())do
   if model.Name=="PersonalGuild" and model:IsA("Model") and model:GetAttribute("OwnerUserId")==player.UserId then owned=model;break end
@@ -243,7 +251,7 @@ return function()
 		if (inGuild==true)~=mapGuild then mapGuild=inGuild==true;refresh()end
 		local civic:string?=nil
 		if root then for _,id in ipairs(Civic.Order)do if Civic.contains(id,root.Position.X,root.Position.Z)then civic=id;break end end end
-		if civic~=mapCivic then mapCivic=civic;selected=nil;scroll.CanvasPosition=Vector2.zero;refresh()end
+		if civic~=mapCivic then mapCivic=civic;if not (selected and selected.quest)then selected=nil end;scroll.CanvasPosition=Vector2.zero;refresh()end
 		if region~=mapRegion then mapRegion=region;scroll.CanvasPosition=if region then Vector2.new(0,math.max(0,mapHeight*.71-scroll.AbsoluteSize.Y*.5)) else Vector2.zero;refresh() end
 		toggle.Visible=(district~=nil or region~=nil or civic~=nil or inGuild) and (not MenuRouter.isBlocking() or panel.Visible)
 		banner.Visible=(toggle.Visible or ((region~=nil or civic~=nil or (selected and selected.quest)) and not MenuRouter.isBlocking())) and not panel.Visible
@@ -279,8 +287,9 @@ return function()
 		elseif not district and not region and not civic and selected and not selected.quest then selected=nil end
 		if banner.Visible and os.clock()<arrivedUntil then banner.Text=Locale.translate(language,"Destination reached") end
 		local showRoute=selected and selected.quest and not panel.Visible and not MenuRouter.isBlocking()
+		direction.Position=if target and target.guidance=="destination" then beacon.directionPosition() else UDim2.new(1,-90,0,180)
 		if showRoute then
-			banner.Visible=false;direction.Visible=false
+			banner.Visible=false;direction.Visible=target~=nil and target.guidance=="destination" and direction.Visible
 			local distance=if root and target then math.floor((Vector2.new(root.Position.X,root.Position.Z)-Vector2.new(target.x,target.z)).Magnitude+.5)else nil
 			beacon.update(target,distance,target==nil,language)
 		else beacon.update(nil,nil,false,language)end

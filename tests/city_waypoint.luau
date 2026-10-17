@@ -1,6 +1,26 @@
 --!strict
 local W=require("../src/shared/Data/CityWaypoint")
 return function(test: any,eq: any)
+ test("authored mode retains explicitly labeled regional island and civic destination hints",function()
+  local city=require("../src/shared/Config/City");local loaded=true
+  local route=require("../src/shared/Data/QuestRoute")(city,{},W,function()return if loaded then {x=20,z=1400}else nil end)
+  local context:any={authored=true}
+  local catalog:any={Journal={enemy={Event="Defeat:scout"}},RegionalCombatAvailable=true,Bestiary={Regions={{Id="Greenwood",Entries={{Id="scout",Name="Scout",Marker="Scout",QuestEvent="Defeat:scout"}}}}}}
+  local quest:any={kind="Active",id="enemy",npc="Mira",ready=false}
+  local hint=route(quest,catalog,0,1505,context)
+  eq(hint.kind,"Enemy");eq(hint.x,20);eq(hint.guidance,"destination");eq(hint.anchor,nil)
+  eq(hint.stepLabel,"Destination direction — follow paths")
+  loaded=false;eq(route(quest,catalog,0,1505,context),nil);loaded=true
+  quest.ready=true;hint=route(quest,catalog,0,1505,context);eq(hint.name,"Central City");eq(hint.guidance,"destination")
+  context.playerId=9;context.inGuild=true;context.island={ownerId=9,hall={x=281,z=-13,anchor="RealHall"}}
+  local hall={kind="Campaign",focus="UpgradeGuildHall"}
+  hint=route(hall,catalog,280,23,context);eq(hint.name,"Guild Hall");eq(hint.guidance,"destination");eq(hint.anchor,nil)
+  context.island.hall=nil;eq(route(hall,catalog,280,23,context),nil)
+  context.civic={id="Aurenvale",exit={x=1700,z=88}}
+  hint=route(quest,catalog,1700,108,context);eq(hint.zone,"Aurenvale");eq(hint.guidance,"destination");eq(hint.anchor,nil)
+  context.civic.exit=nil;eq(route(quest,catalog,1700,108,context),nil)
+  context.civic.exit={x=math.huge,z=88};eq(route(quest,catalog,1700,108,context),nil)
+ end)
  test("authored city route follows connected streets and courtyard instead of diagonal NPC heading",function()
   local city=require("../src/shared/Config/City");local route=require("../src/shared/Data/QuestRoute")(city,{},W)
   local function road(name:string,x1:number,z1:number,x2:number,z2:number,width:number):any
