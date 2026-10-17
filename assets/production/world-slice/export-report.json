@@ -333,29 +333,59 @@
       "height": 12.999999046325684
     },
     {
-      "id": "ground_court",
-      "authorship": "Original Guildborne ground surface; palette references existing native Island",
-      "vertices": 37,
-      "triangles": 60,
-      "materials": 3,
-      "chunks": 1,
-      "height": 0.02
+      "id": "terrain_arrival_west",
+      "authorship": "Original Guildborne terrain skin; existing native heights and protected routes",
+      "vertices": 317,
+      "triangles": 556,
+      "materials": 52,
+      "chunks": 1
     },
     {
-      "id": "ground_leaf",
-      "authorship": "Original Guildborne ground surface; palette references existing native Island",
-      "vertices": 37,
-      "triangles": 60,
-      "materials": 3,
-      "chunks": 1,
-      "height": 0.02
+      "id": "terrain_forest_west",
+      "authorship": "Original Guildborne terrain skin; existing native heights and protected routes",
+      "vertices": 421,
+      "triangles": 684,
+      "materials": 52,
+      "chunks": 1
+    },
+    {
+      "id": "terrain_arrival_east",
+      "authorship": "Original Guildborne terrain skin; existing native heights and protected routes",
+      "vertices": 317,
+      "triangles": 556,
+      "materials": 52,
+      "chunks": 1
+    },
+    {
+      "id": "terrain_forest_east",
+      "authorship": "Original Guildborne terrain skin; existing native heights and protected routes",
+      "vertices": 421,
+      "triangles": 684,
+      "materials": 52,
+      "chunks": 1
+    },
+    {
+      "id": "terrain_boss_floor",
+      "authorship": "Original Guildborne terrain skin; existing native heights and protected routes",
+      "vertices": 174,
+      "triangles": 276,
+      "materials": 52,
+      "chunks": 1
+    },
+    {
+      "id": "terrain_embankments",
+      "authorship": "Original Guildborne terrain skin; existing native heights and protected routes",
+      "vertices": 576,
+      "triangles": 798,
+      "materials": 52,
+      "chunks": 1
     }
   ],
-  "uniqueMeshChunks": 29,
-  "placements": 112,
-  "authoredObjects": 99,
-  "uniqueTriangles": 37194,
-  "instancedTriangles": 85934,
+  "uniqueMeshChunks": 33,
+  "placements": 108,
+  "authoredObjects": 95,
+  "uniqueTriangles": 40628,
+  "instancedTriangles": 88888,
   "runtimeIds": null,
   "studioTested": false,
   "humanApproved": false,
@@ -365,8 +395,8 @@
       "sha256": "722572d1611325952965878af99bac9774079e854cd4bc0fd764640b98566513"
     },
     "collision.json": {
-      "bytes": 223971,
-      "sha256": "0327a8014f56b4860303630382a545931c9d72e606e38a9dc500dec25b470f2c"
+      "bytes": 222672,
+      "sha256": "ad552e65519213c12645de8c35c2bb560d660a1ac204ae4f477f691a7c3e994f"
     },
     "intake.json": {
       "bytes": 7929,
@@ -385,20 +415,20 @@
       "sha256": "83d8959f9fc56353ed571fbe2dc52e4bcd64508e2399501cd45ac2ce3df0bf8c"
     },
     "woodland-threshold.blend": {
-      "bytes": 1026720,
-      "sha256": "89712f4eccdda04bb15cab51a1d8d3064901dd426cbbc6a3573bf915c70bbbc9"
+      "bytes": 1396516,
+      "sha256": "46e69e294a24df33e9924b4e40e71f82b64c56d7e5388a5372ea76b7a07bd582"
     },
     "woodland-threshold.glb": {
-      "bytes": 2317652,
-      "sha256": "ab713dfc7ed669252904e4c03abc6e68ec1392db821518f69dd99f1b5d6060d2"
+      "bytes": 2502540,
+      "sha256": "3ef9e8956677e898b778dfdc8a31ba2b267144ff93ccf6448d700aa8a60e015b"
     },
     "woodland-threshold.png": {
-      "bytes": 2220804,
-      "sha256": "35597c14101072f2993ee1e3ea62c453be973a51ba3903702f2faf494507c03b"
+      "bytes": 2238786,
+      "sha256": "36172b7cd694e64c9487c44f000a09f359deb2ff680c73d5f7ffd17dea274f3c"
     },
     "world-slice.mesh.json": {
-      "bytes": 1390373,
-      "sha256": "8b4c7aa687d4b265b2e3d7da7c7548aef64f889fd093b9d1219eee094eab1911"
+      "bytes": 1487689,
+      "sha256": "4e0a917e99744fd88740949c55bd549ddedc7844eb03a2df0cdb59a6e50b8a17"
     }
   }
 }

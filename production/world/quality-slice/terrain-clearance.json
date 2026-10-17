@@ -1,0 +1,191 @@
+{
+  "status": "OFFLINE_TERRAIN_CLEARANCE_PASS",
+  "sourceMeshSha256": "4e0a917e99744fd88740949c55bd549ddedc7844eb03a2df0cdb59a6e50b8a17",
+  "baselineCommit": "768ae4e07a519fbc86a9586e5364f9dfb149f2d6",
+  "checkerSha256": "1e423bf1f29523537b4b8056e208aa207ea76054eb8898177dc1605d9bf3d329",
+  "baselineMeshesPreserved": 27,
+  "baselinePlacementsPreserved": 102,
+  "removedPatchMeshes": [
+    "ground_court__000",
+    "ground_leaf__000"
+  ],
+  "removedPatchPlacements": [
+    "GroundCourt_0_ground_court__000",
+    "GroundCourt_1_ground_court__000",
+    "GroundCourt_2_ground_court__000",
+    "GroundCourt_3_ground_court__000",
+    "GroundCourt_4_ground_court__000",
+    "GroundCourt_5_ground_court__000",
+    "GroundLeaf_0_ground_leaf__000",
+    "GroundLeaf_1_ground_leaf__000",
+    "GroundLeaf_2_ground_leaf__000",
+    "GroundLeaf_3_ground_leaf__000"
+  ],
+  "baselineCollidersSha256": "8157adbb1ccde2feb89c1fa3ce2eb982c29a0bb99acb80f3689ccb41522e04cf",
+  "newMeshes": 6,
+  "newPlacements": 6,
+  "instantiatedTerrainTriangles": 3554,
+  "triangleClasses": {
+    "islandSurfaceTriangles": 2480,
+    "bossSurfaceTriangles": 276,
+    "bossWallTriangles": 216,
+    "islandSkirtTriangles": 582
+  },
+  "surfaceExclusions": {
+    "center": [
+      -12,
+      12,
+      1317,
+      1512
+    ],
+    "landing": [
+      -18,
+      18,
+      1496,
+      1530
+    ],
+    "westLoop": [
+      -72,
+      -48,
+      1362,
+      1458
+    ],
+    "eastLoop": [
+      48,
+      72,
+      1362,
+      1458
+    ],
+    "southCross": [
+      -72,
+      72,
+      1438,
+      1462
+    ],
+    "northCross": [
+      -72,
+      72,
+      1363,
+      1387
+    ],
+    "wood": [
+      -41,
+      -29,
+      1449,
+      1461
+    ],
+    "herbs": [
+      29,
+      41,
+      1449,
+      1461
+    ]
+  },
+  "placements": [
+    {
+      "name": "terrain_arrival_west_terrain_arrival_west__000",
+      "meshId": "terrain_arrival_west__000",
+      "triangles": 556,
+      "worldMin": [
+        -110.0,
+        2.02,
+        1462.0
+      ],
+      "worldMax": [
+        -12.0,
+        2.02,
+        1500.0
+      ],
+      "errors": 0
+    },
+    {
+      "name": "terrain_forest_west_terrain_forest_west__000",
+      "meshId": "terrain_forest_west__000",
+      "triangles": 684,
+      "worldMin": [
+        -110.0,
+        2.02,
+        1300.0
+      ],
+      "worldMax": [
+        0.0,
+        2.02,
+        1462.0
+      ],
+      "errors": 0
+    },
+    {
+      "name": "terrain_arrival_east_terrain_arrival_east__000",
+      "meshId": "terrain_arrival_east__000",
+      "triangles": 556,
+      "worldMin": [
+        12.0,
+        2.02,
+        1462.0
+      ],
+      "worldMax": [
+        110.0,
+        2.02,
+        1500.0
+      ],
+      "errors": 0
+    },
+    {
+      "name": "terrain_forest_east_terrain_forest_east__000",
+      "meshId": "terrain_forest_east__000",
+      "triangles": 684,
+      "worldMin": [
+        0.0,
+        2.02,
+        1300.0
+      ],
+      "worldMax": [
+        110.0,
+        2.02,
+        1462.0
+      ],
+      "errors": 0
+    },
+    {
+      "name": "terrain_boss_floor_terrain_boss_floor__000",
+      "meshId": "terrain_boss_floor__000",
+      "triangles": 276,
+      "worldMin": [
+        -48.0,
+        6.02,
+        1305.0
+      ],
+      "worldMax": [
+        48.0,
+        6.02,
+        1355.0
+      ],
+      "errors": 0
+    },
+    {
+      "name": "terrain_embankments_terrain_embankments__000",
+      "meshId": "terrain_embankments__000",
+      "triangles": 798,
+      "worldMin": [
+        -110.02,
+        -1.98,
+        1299.98
+      ],
+      "worldMax": [
+        110.02,
+        5.98,
+        1500.02
+      ],
+      "errors": 0
+    }
+  ],
+  "errorCount": 0,
+  "errors": [],
+  "limits": [
+    "Offline triangle geometry only; no Studio physics, rendering or human art acceptance",
+    "Road exclusions apply to horizontal surfaces; vertical skins lie below native walking surfaces",
+    "No camera visibility, color contrast or dynamic telegraph rasterization proof",
+    "Support follows static AdventureMapKit native planes; runtime terrain mutations are not tested"
+  ],
+  "studioTested": false
+}

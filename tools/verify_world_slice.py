@@ -13,7 +13,10 @@ def verify_ground(data):
  for name,value in meta['baselinePlacements'].items():assert digest(plookup[name])==value,('Moved existing anchor/art',name)
  collision=json.loads((OUT/'collision.json').read_text())
  assert len(collision['colliders'])==413 and digest(collision['colliders'])==meta['baselineCollidersSha256']
- assert set(lookup)-set(meta['baselineMeshes'])==set(meta['originalMeshes'])
+ terrain=any(mid.startswith('terrain_') for mid in lookup)
+ if terrain:
+  assert all(mid.startswith('terrain_') for mid in set(lookup)-set(meta['baselineMeshes']))
+ else:assert set(lookup)-set(meta['baselineMeshes'])==set(meta['originalMeshes'])
  def bounds(p):
   m=lookup[p['meshId']];f=p['cframe'];points=[]
   for x in (m['bounds']['min'][0],m['bounds']['max'][0]):
@@ -30,7 +33,7 @@ def verify_ground(data):
    a=bounds(p);building.append([a[0]-2,a[1]+2,a[2]-2,a[3]+2])
  rows=[];props=tris=0
  for p in data['placements']:
-  if p['name'] in meta['baselinePlacements']:continue
+  if p['name'] in meta['baselinePlacements'] or p['meshId'].startswith('terrain_'):continue
   a=bounds(p);ground=p['meshId'] in meta['originalMeshes'];m=lookup[p['meshId']]
   assert -110<=a[0]<=a[1]<=110 and 1300<=a[2]<=a[3]<=1500,('Native Island bounds',p['name'],a)
   assert all(not overlaps(a,b) for b in roads.values()),('Road/resource/portal exclusion',p['name'],a)
@@ -50,7 +53,7 @@ def verify_ground(data):
   rows.append(dict(name=p['name'],meshId=p['meshId'],worldAABB=a,combatEnvelopeMargin=gaps,allRoadPortalResourceExclusionsClear=True,groundSurfaceOnly=ground))
  assert props<=28 and tris<=15000
  report=dict(status='OFFLINE_CLEARANCE_PASS_NOT_CAMERA_OCCLUSION_PROOF',sourceMeshSha256=hashlib.sha256((OUT/'world-slice.mesh.json').read_bytes()).hexdigest(),existingMeshesUnchanged=len(meta['baselineMeshes']),existingPlacementsUnchanged=len(meta['baselinePlacements']),collidersUnchanged=413,addedProps=props,addedInstancedTriangles=tris,exclusionRectangles=roads,combatEnvelopes=circles,placements=rows,studioTested=False)
- (ROOT/'production/world/quality-slice/ground-clearance.json').write_text(json.dumps(report,indent=2)+'\n',encoding='utf-8')
+ (ROOT/'production/world/quality-slice'/('terrain-props-clearance.json' if terrain else 'ground-clearance.json')).write_text(json.dumps(report,indent=2)+'\n',encoding='utf-8')
  print('GROUND_CLEARANCE',props,tris,len(rows))
 
 def main():
@@ -99,6 +102,9 @@ def main():
   assert hashlib.sha256((OUT/name).read_bytes()).hexdigest()==report['files'][name]['sha256']
  assert report['uniqueTriangles']==faces and report['studioTested'] is False
  verify_ground(data)
+ if any(m['id'].startswith('terrain_') for m in data['meshes']):
+  import runpy
+  assert runpy.run_path(str(ROOT/'production/world/quality-slice/check_terrain_composition.py'))['main']()==0
  result=dict(status='OFFLINE_GEOMETRY_PASS',meshes=len(ids),vertices=vertices,triangles=faces,placements=len(names),instancedTriangles=report['instancedTriangles'],studioTested=False)
  print(json.dumps(result,indent=2))
 if __name__=='__main__':main()
