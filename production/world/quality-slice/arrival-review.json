@@ -1,0 +1,16 @@
+{
+  "status": "INDEPENDENT_REVIEW_NO_BLOCKERS_FOR_LOCAL_INTEGRATION",
+  "reviewer": "world_mesh_review",
+  "scope": "Read-only source and actual matched Blender image inspection; no Studio or Blender mutation",
+  "findings": [
+    "Arrival validation now runs when either terrain_arrival_* or arrival_* exists; sign omission bypass fixed.",
+    "Pairwise triangle clipping appropriate for winding and bbox pruning; reviewer checked identical/touching/partial areas 0.5, 0, 0.28125.",
+    "Matched low camera shows continuous soil to lane/building fronts; sign readable outside road."
+  ],
+  "limits": [
+    "Flat ground",
+    "Visible faceted color variation",
+    "Straight cross-path edges elsewhere",
+    "Not full art or Studio acceptance"
+  ]
+}

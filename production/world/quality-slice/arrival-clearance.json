@@ -1,0 +1,104 @@
+{
+  "status": "OFFLINE_ARRIVAL_PASS",
+  "baseline": "3b5e161",
+  "sourceMeshSha256": "5185eb847a9ffd2e6caffbe123573f10f4ec91758de732faff8f4cba967d9495",
+  "checkerSha256": "a0ab8199be06f5a0a359a5bffafb95a1b4676a1ffac8cbc0e07134c0d8420fbc",
+  "retainedMeshes": 34,
+  "retainedPlacements": 115,
+  "retainedColliders": 413,
+  "revisedMeshes": [
+    "terrain_arrival_east__000",
+    "terrain_arrival_west__000"
+  ],
+  "addedResources": 1,
+  "addedPlacements": 1,
+  "surfaceTriangles": 3220,
+  "surfaceArea": 8815.999999999989,
+  "supportFootprints": [
+    [
+      -110,
+      110,
+      1462,
+      1500
+    ],
+    [
+      -62,
+      -18,
+      1500,
+      1520
+    ],
+    [
+      -14,
+      14,
+      1500,
+      1526
+    ]
+  ],
+  "placements": [
+    {
+      "name": "terrain_arrival_west_terrain_arrival_west__000",
+      "worldMin": [
+        -110.0,
+        2.02,
+        1462.0
+      ],
+      "worldMax": [
+        -9.0,
+        2.02,
+        1526.0
+      ],
+      "triangles": 1804
+    },
+    {
+      "name": "terrain_arrival_east_terrain_arrival_east__000",
+      "worldMin": [
+        9.0,
+        2.02,
+        1462.0
+      ],
+      "worldMax": [
+        110.0,
+        2.02,
+        1526.0
+      ],
+      "triangles": 1416
+    },
+    {
+      "name": "Arrival_Forest_Charter_arrival_charter_sign__000",
+      "worldMin": [
+        -16.6,
+        2.0,
+        1489.6
+      ],
+      "worldMax": [
+        -11.4,
+        10.6,
+        1490.45
+      ],
+      "triangles": 147
+    }
+  ],
+  "visibility": [
+    {
+      "camera": [
+        40,
+        12,
+        1510
+      ],
+      "samples": 824,
+      "occluded": []
+    },
+    {
+      "camera": [
+        105,
+        94,
+        1545
+      ],
+      "samples": 824,
+      "occluded": []
+    }
+  ],
+  "errors": [],
+  "studioTested": false,
+  "limits": "Source geometry and finite sign sightlines only; no all-camera, dynamic telegraph, runtime collision or human art acceptance."
+}

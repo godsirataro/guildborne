@@ -335,9 +335,9 @@
     {
       "id": "terrain_arrival_west",
       "authorship": "Original Guildborne authored surface/rock geometry; existing native gameplay retained",
-      "vertices": 317,
-      "triangles": 556,
-      "materials": 52,
+      "vertices": 984,
+      "triangles": 1804,
+      "materials": 99,
       "chunks": 1
     },
     {
@@ -351,9 +351,9 @@
     {
       "id": "terrain_arrival_east",
       "authorship": "Original Guildborne authored surface/rock geometry; existing native gameplay retained",
-      "vertices": 317,
-      "triangles": 556,
-      "materials": 52,
+      "vertices": 779,
+      "triangles": 1416,
+      "materials": 99,
       "chunks": 1
     },
     {
@@ -403,13 +403,21 @@
       "triangles": 245,
       "materials": 11,
       "chunks": 1
+    },
+    {
+      "id": "arrival_charter_sign",
+      "authorship": "Original Guildborne authored surface/rock geometry; existing native gameplay retained",
+      "vertices": 103,
+      "triangles": 147,
+      "materials": 8,
+      "chunks": 1
     }
   ],
-  "uniqueMeshChunks": 36,
-  "placements": 115,
-  "authoredObjects": 102,
-  "uniqueTriangles": 41424,
-  "instancedTriangles": 90622,
+  "uniqueMeshChunks": 37,
+  "placements": 116,
+  "authoredObjects": 103,
+  "uniqueTriangles": 43679,
+  "instancedTriangles": 92877,
   "runtimeIds": null,
   "studioTested": false,
   "humanApproved": false,
@@ -419,8 +427,8 @@
       "sha256": "722572d1611325952965878af99bac9774079e854cd4bc0fd764640b98566513"
     },
     "collision.json": {
-      "bytes": 225789,
-      "sha256": "9ff7500c6ff8efe53f9265a669ab175046a2c3215566907772d15eb54fcedf30"
+      "bytes": 226210,
+      "sha256": "f9c8e8b714cbc355805bbd369f5e47d9a94b0869200e61fe11495e4e74bdab38"
     },
     "intake.json": {
       "bytes": 7929,
@@ -439,20 +447,20 @@
       "sha256": "83d8959f9fc56353ed571fbe2dc52e4bcd64508e2399501cd45ac2ce3df0bf8c"
     },
     "woodland-threshold.blend": {
-      "bytes": 1443616,
-      "sha256": "b09548d794d9058f3a09ca313779a07f29d490fb5c6a3f2866705dfe48013a40"
+      "bytes": 1600518,
+      "sha256": "c6e7b961a4716c0caef3489eaa9648c75449105cb7dfd8573d4004b6dc2195c0"
     },
     "woodland-threshold.glb": {
-      "bytes": 2564424,
-      "sha256": "ad10b656d8d9c955774f8c34953f0f09c4d1ecd3471a4e7cdeac3f3fe6b9a8b8"
+      "bytes": 2846320,
+      "sha256": "f85b570d30ee914af77032ee8491f137a1b478ebecc6be6f5b7dc2f42379015b"
     },
     "woodland-threshold.png": {
-      "bytes": 2255614,
-      "sha256": "158d00e3dbfcf67359a3c49c77539e0340bf1c4815c591be8d3800dcdf71a39c"
+      "bytes": 2260409,
+      "sha256": "2f62d76f3005897431cc5746d2cc2a8e0c7c1ae97faf1c21beb6512e8018a1f9"
     },
     "world-slice.mesh.json": {
-      "bytes": 1512786,
-      "sha256": "842e1a5e19fdf849117bf17e09485fa532d842022c0186cf60c27bbf09e0d320"
+      "bytes": 1588889,
+      "sha256": "5185eb847a9ffd2e6caffbe123573f10f4ec91758de732faff8f4cba967d9495"
     }
   }
 }

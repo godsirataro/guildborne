@@ -1,0 +1,35 @@
+{
+  "status": "ORIGINAL_AUTHORED_GEOMETRY_BLENDER_VALIDATED_NOT_STUDIO_TESTED",
+  "baselineCommit": "3b5e161082e79826d097a2c8cd55d069843b3c31",
+  "sourceMeshSha256": "5185eb847a9ffd2e6caffbe123573f10f4ec91758de732faff8f4cba967d9495",
+  "recipe": "production/world/quality-slice/arrival_recipe.py",
+  "recipeSha256": "34e7c047dea07fd4ab4852d9489b0e2c0124a796f1625e53674d9cde4617ff49",
+  "authorship": "Original Guildborne surface palette and carved geometric pine sign authored in repository. No new third-party assets, textures, fonts, generators or uploads. Existing CC0 source assets unchanged.",
+  "revisedResources": [
+    "terrain_arrival_west__000",
+    "terrain_arrival_east__000"
+  ],
+  "newResources": [
+    "arrival_charter_sign__000"
+  ],
+  "preservedMeshes": 34,
+  "preservedPlacements": 115,
+  "preservedColliders": 413,
+  "netAddedUniqueTriangles": 2255,
+  "netAddedInstancedTriangles": 2255,
+  "netAddedVertices": 1232,
+  "addedPlacements": 1,
+  "totalResources": 37,
+  "totalPlacements": 116,
+  "totalUniqueTriangles": 43679,
+  "totalInstancedTriangles": 92877,
+  "budget": {
+    "coatingTriangles": 4000,
+    "signTriangles": 200,
+    "resources": 37,
+    "placements": 116
+  },
+  "runtimeIds": null,
+  "studioTested": false,
+  "humanApproved": false
+}

@@ -116,7 +116,10 @@ import runpy
 terrain_resources=runpy.run_path(str(ROOT/'production/world/quality-slice/terrain_recipe.py'))['make_terrain']()
 silhouette_recipe=runpy.run_path(str(ROOT/'production/world/quality-slice/silhouette_recipe.py'))
 silhouette_resources=silhouette_recipe['make_silhouette']()
-for authored in terrain_resources+silhouette_resources:
+arrival_resources=runpy.run_path(str(ROOT/'production/world/quality-slice/arrival_recipe.py'))['make_arrival']()
+arrival_by_id={m['id']:m for m in arrival_resources}
+terrain_resources=[arrival_by_id.get(m['id'],m) for m in terrain_resources]
+for authored in terrain_resources+silhouette_resources+[arrival_by_id['arrival_charter_sign']]:
  asset=authored['id'];coords=[[round(x,5),round(y-2,5),round(z-1410,5)] for x,y,z in authored['vertices']]
  verts=[Vector((x,-z,y)) for x,y,z in coords]
  faces=authored['triangles'];palette=authored['colors'];bands=authored['faceColors']
@@ -208,6 +211,7 @@ for side,label in [(-1,'West'),(1,'East')]:
   place('bush',f'GroundEdge_{label}_Bush_{i}',side*x,1410-wz,z=0)
 for authored in terrain_resources:place(authored['id'],authored['id'],0,0,z=0)
 for asset,name,x,wz,yaw in silhouette_recipe['PLACEMENTS']:place(asset,name,x,1410-wz,yaw,z=0)
+place('arrival_charter_sign','Arrival_Forest_Charter',-14,1410-1490,0,z=0)
 # Reusable library and real composed GLB; preview base/lights do not enter game geometry.
 packet=dict(schemaVersion=1,coordinateSystem='RobloxYUp',units='studs',pivot='asset XZ centered; minY=0; chunks share asset pivot',previewWorldOrigin=[0,2,1410],meshes=meshes,placements=placements,runtimeImported=False,compositionOnly=True)
 (OUT/'world-slice.mesh.json').write_text(json.dumps(packet,separators=(',',':'))+'\n',encoding='utf-8')

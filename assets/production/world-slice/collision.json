@@ -1,6 +1,6 @@
 {
   "schemaVersion": 1,
-  "sourceMeshSha256": "842e1a5e19fdf849117bf17e09485fa532d842022c0186cf60c27bbf09e0d320",
+  "sourceMeshSha256": "5185eb847a9ffd2e6caffbe123573f10f4ec91758de732faff8f4cba967d9495",
   "expectedArtNames": [
     "Caravan_Stable_stable__000",
     "Caravan_Stable_stable__001",
@@ -116,7 +116,8 @@
     "West_Forest_RockGrove_silhouette_fern_rocks__000",
     "East_Forest_RockGrove_silhouette_fern_rocks__000",
     "West_Arrival_Waymarker_silhouette_ruined_waymarker__000",
-    "East_Arrival_Waymarker_silhouette_ruined_waymarker__000"
+    "East_Arrival_Waymarker_silhouette_ruined_waymarker__000",
+    "Arrival_Forest_Charter_arrival_charter_sign__000"
   ],
   "expectedArt": [
     {
@@ -2163,9 +2164,9 @@
       "name": "terrain_arrival_west_terrain_arrival_west__000",
       "meshId": "terrain_arrival_west__000",
       "position": [
-        -61.0,
+        -59.5,
         2.02,
-        1481.0
+        1494.0
       ],
       "rotation": [
         1.0,
@@ -2203,9 +2204,9 @@
       "name": "terrain_arrival_east_terrain_arrival_east__000",
       "meshId": "terrain_arrival_east__000",
       "position": [
-        61.0,
+        59.5,
         2.02,
-        1481.0
+        1494.0
       ],
       "rotation": [
         1.0,
@@ -2418,9 +2419,29 @@
         -0.0,
         -1.0
       ]
+    },
+    {
+      "name": "Arrival_Forest_Charter_arrival_charter_sign__000",
+      "meshId": "arrival_charter_sign__000",
+      "position": [
+        -14.0,
+        6.3,
+        1490.02502
+      ],
+      "rotation": [
+        1.0,
+        0.0,
+        0.0,
+        0,
+        1.0,
+        -0.0,
+        -0.0,
+        0.0,
+        1.0
+      ]
     }
   ],
-  "minArtPlacements": 115,
+  "minArtPlacements": 116,
   "colliders": [
     {
       "name": "Caravan_Stable_SourceSurface_0_0",

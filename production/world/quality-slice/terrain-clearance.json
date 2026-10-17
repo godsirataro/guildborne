@@ -1,8 +1,8 @@
 {
   "status": "OFFLINE_TERRAIN_CLEARANCE_PASS",
-  "sourceMeshSha256": "842e1a5e19fdf849117bf17e09485fa532d842022c0186cf60c27bbf09e0d320",
+  "sourceMeshSha256": "5185eb847a9ffd2e6caffbe123573f10f4ec91758de732faff8f4cba967d9495",
   "baselineCommit": "768ae4e07a519fbc86a9586e5364f9dfb149f2d6",
-  "checkerSha256": "09ea6b1074010a374df7b9db3010aa6d45a1a35a51123b1783c902145cafe68a",
+  "checkerSha256": "6872caaf3b8616c4fb333d21ec1832614b81bb9fc5207951125c611c4494523a",
   "baselineMeshesPreserved": 27,
   "baselinePlacementsPreserved": 102,
   "removedPatchMeshes": [
@@ -22,11 +22,11 @@
     "GroundLeaf_3_ground_leaf__000"
   ],
   "baselineCollidersSha256": "8157adbb1ccde2feb89c1fa3ce2eb982c29a0bb99acb80f3689ccb41522e04cf",
-  "newMeshes": 6,
-  "newPlacements": 6,
-  "instantiatedTerrainTriangles": 3554,
+  "newMeshes": 4,
+  "newPlacements": 4,
+  "instantiatedTerrainTriangles": 2442,
   "triangleClasses": {
-    "islandSurfaceTriangles": 2480,
+    "islandSurfaceTriangles": 1368,
     "bossSurfaceTriangles": 276,
     "bossWallTriangles": 216,
     "islandSkirtTriangles": 582
@@ -83,22 +83,6 @@
   },
   "placements": [
     {
-      "name": "terrain_arrival_west_terrain_arrival_west__000",
-      "meshId": "terrain_arrival_west__000",
-      "triangles": 556,
-      "worldMin": [
-        -110.0,
-        2.02,
-        1462.0
-      ],
-      "worldMax": [
-        -12.0,
-        2.02,
-        1500.0
-      ],
-      "errors": 0
-    },
-    {
       "name": "terrain_forest_west_terrain_forest_west__000",
       "meshId": "terrain_forest_west__000",
       "triangles": 684,
@@ -111,22 +95,6 @@
         0.0,
         2.02,
         1462.0
-      ],
-      "errors": 0
-    },
-    {
-      "name": "terrain_arrival_east_terrain_arrival_east__000",
-      "meshId": "terrain_arrival_east__000",
-      "triangles": 556,
-      "worldMin": [
-        12.0,
-        2.02,
-        1462.0
-      ],
-      "worldMax": [
-        110.0,
-        2.02,
-        1500.0
       ],
       "errors": 0
     },

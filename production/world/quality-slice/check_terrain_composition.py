@@ -101,9 +101,10 @@ def main():
     check(collision["sourceMeshSha256"]==hashlib.sha256(raw).hexdigest(), "Collision source hash stale")
     old_ids = {m["id"] for m in old["meshes"]}
     old_names = {p["name"] for p in old["placements"]}
-    # Separate silhouette additions are independently audited by check_silhouette.py.
-    new_meshes = [m for m in data["meshes"] if m["id"] not in old_ids and not m["id"].startswith("silhouette_")]
-    new_placements = [p for p in data["placements"] if p["name"] not in old_names and not p["meshId"].startswith("silhouette_")]
+    # Silhouette additions are audited by check_silhouette.py; revised arrival
+    # surfaces and the sign by check_arrival.py, with apron/landing support.
+    new_meshes = [m for m in data["meshes"] if m["id"] not in old_ids and not m["id"].startswith(("silhouette_", "arrival_", "terrain_arrival_"))]
+    new_placements = [p for p in data["placements"] if p["name"] not in old_names and not p["meshId"].startswith(("silhouette_", "arrival_", "terrain_arrival_"))]
     check(1<=len(new_meshes)<=6, "New terrain mesh count outside 1..6")
     check(1<=len(new_placements)<=12, "New placement count outside 1..12")
     check(all(m["id"].startswith("terrain_") for m in new_meshes), "Non-terrain mesh added")
