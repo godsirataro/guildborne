@@ -32,7 +32,8 @@ return function(test:any,eq:any)
         c=copy(config);c.NearExit=math.huge;eq(make(c,entries,catalog),nil)
     end)
     test("daily boundaries wrap while every actor stays accessible at its anchor",function()
-        for _,row in ipairs({{0,"Rest"},{21599,"Rest"},{21600,"Work"},{64799,"Work"},{64800,"Social"},{79199,"Social"},{79200,"Rest"},{86400,"Rest"},{108000,"Work"}}) do
+        local boundaries:{{any}}={{0,"Rest"},{21599,"Rest"},{21600,"Work"},{64799,"Work"},{64800,"Social"},{79199,"Social"},{79200,"Rest"},{86400,"Rest"},{108000,"Work"}}
+        for _,row in ipairs(boundaries) do
             local s=assert(life.sample("borga",row[1],200));eq(s.activity,row[2]);eq(s.accessible,true);eq(s.anchor.x,entries.borga.x);eq(s.routeEnabled,false)
         end
     end)
@@ -42,13 +43,15 @@ return function(test:any,eq:any)
             for index=1,count do
                 local c=copy(config);c[field][index]=nil;eq(make(c,entries,catalog),nil)
             end
-            for _,key in ipairs({0,count+1,1.5,"extra"}) do
+            local extraKeys:{any}={0,count+1,1.5,"extra"}
+            for _,key in ipairs(extraKeys) do
                 local c=copy(config);c[field][key]=c[field][1];eq(make(c,entries,catalog),nil)
             end
         end
         local c=copy(config);c.Ids[2]=c.Ids[1];eq(make(c,entries,catalog),nil)
         c=copy(config);c.Version=nil;eq(make(c,entries,catalog),nil)
-        for _,version in ipairs({0,2,"1",math.huge}) do
+        local versions:{any}={0,2,"1",math.huge}
+        for _,version in ipairs(versions) do
             c=copy(config);c.Version=version;eq(make(c,entries,catalog),nil)
         end
     end)
