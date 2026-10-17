@@ -1,0 +1,2 @@
+# Preserve original intake bytes independently of repository newline policy.
+* -text whitespace=cr-at-eol
