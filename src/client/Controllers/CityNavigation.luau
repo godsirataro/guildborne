@@ -140,6 +140,24 @@ local function navigationContext(player:Player,x:number,z:number):any
   end
   context.campaign={ownerId=player.UserId,objective=campaign:GetAttribute("Objective"),point=best}
  end
+ -- Chapter02's private mine overlaps the surface in X/Z. Preserve actual floor
+ -- height and only owner-scoped, server-enabled prompt anchors for route resolution.
+ local mine=world:FindFirstChild("IronveilMine_"..player.UserId) or workspace:FindFirstChild("IronveilMine_"..player.UserId)
+ if mine and mine:IsA("Model") and mine:GetAttribute("CampaignOwner")==player.UserId then
+  local floor=mine:FindFirstChild("MineWalkableFloor")
+  local root=player.Character and player.Character:FindFirstChild("HumanoidRootPart")
+  if floor and floor:IsA("BasePart") and root and root:IsA("BasePart") then
+   local anchors:any={}
+   for _,part in ipairs(mine:GetChildren())do if part:IsA("BasePart")then
+    local prompt=part:FindFirstChild("Ironveil_"..part.Name)
+    if prompt and prompt:IsA("ProximityPrompt") and prompt.Enabled then
+     anchors[part.Name]={x=part.Position.X,y=part.Position.Y+part.Size.Y/2,z=part.Position.Z,zone="Ironveil",anchor=part}
+    end
+   end end
+   context.ironveil={ownerId=player.UserId,playerY=root.Position.Y,anchors=anchors,
+    floor={x=floor.Position.X,z=floor.Position.Z,y=floor.Position.Y+floor.Size.Y/2,width=floor.Size.X,depth=floor.Size.Z}}
+  end
+ end
  return context
 end
 local QuestRoute=require(game.ReplicatedStorage.Shared.Data.QuestRoute)(City,Rules,Waypoint,function(region:string,marker:string):any

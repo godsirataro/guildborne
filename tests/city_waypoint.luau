@@ -1,6 +1,30 @@
 --!strict
 local W=require("../src/shared/Data/CityWaypoint")
 return function(test: any,eq: any)
+ test("Ironveil chapter7 routes through own surface entrance before enabled interior objectives",function()
+  local city=require("../src/shared/Config/City");local route=require("../src/shared/Data/QuestRoute")(city,{},W)
+  local anchors:any={MineEntrance={x=500,y=2.3,z=1498,zone="Ironveil"},MineExit={x=500,y=100.3,z=1502,zone="Ironveil"},
+   inspect_ironveil_scales_scale_1={x=431,y=100.3,z=1464,zone="Ironveil"},inspect_ironveil_scales_scale_2={x=445,y=100.3,z=1464,zone="Ironveil"},
+   interview_carrier_carrier={x=431,y=100.3,z=1473,zone="Ironveil"},MineReception={x=500,y=100.3,z=1492,zone="Ironveil"}}
+  local context:any={playerId=7,inGuild=true,island={ownerId=7,exit={x=-44,z=-65}},ironveil={ownerId=7,playerY=4,anchors=anchors,floor={x=500,y=100,z=1400,width=230,depth=230}}}
+  local quest:any={kind="Campaign",objective="inspect_ironveil_scales",name="Inspect scales"};local catalog={Journal={}}
+  eq(route(quest,catalog,0,23,context).name,"Central City")
+  context.inGuild=false;eq(route(quest,catalog,0,-1100,context).name,"Ironveil")
+  eq(route(quest,catalog,0,1505,context).name,"Central City")
+  local target=route(quest,catalog,500,1505,context);eq(target.name,"Ironveil");eq(target.final,false);eq(target.z,1498)
+  context.ironveil.playerY=103;target=route(quest,catalog,432,1464,context);eq(target.x,431);eq(target.final,true)
+  anchors.inspect_ironveil_scales_scale_1=nil;eq(route(quest,catalog,432,1464,context).x,445)
+  anchors.inspect_ironveil_scales_scale_2=nil;eq(route(quest,catalog,432,1464,context),nil) -- Exit stays enabled, never selected.
+  quest.objective="interview_carrier";eq(route(quest,catalog,432,1464,context).z,1473)
+  quest.objective="enter_ironveil";eq(route(quest,catalog,500,1502,context).z,1492)
+  context.ironveil.playerY=183;eq(route(quest,catalog,500,1502,context),nil) -- Another owner's vertical slot.
+  context.ironveil.playerY=4;anchors.MineEntrance=nil;eq(route(quest,catalog,500,1505,context),nil)
+  context.ironveil.ownerId=8;eq(route(quest,catalog,500,1505,context),nil)
+  context.ironveil=nil;eq(route(quest,catalog,500,1505,context),nil)
+  eq(route(quest,catalog,0,-1100,context).name,"Ironveil")
+  eq(route(quest,catalog,0,1505,context).name,"Central City")
+  context.inGuild=true;eq(route(quest,catalog,0,23,context).name,"Central City")
+ end)
  test("forest evidence return keeps city guild portal route when island Registrar is not streamed",function()
   local city=require("../src/shared/Config/City");local route=require("../src/shared/Data/QuestRoute")(city,{},W)
   local arrival=city.Destinations.City;local gate=city.GuildPortalStops.Arrival

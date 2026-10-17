@@ -1,6 +1,8 @@
 --!strict
 -- Read-only directions from public geometry and the projected quest state.
 return function(city:any,rules:any,waypoint:any,resolveMarker:any?)
+ -- Explicit Chapter02 marker names authored by IronveilWorld, not inferred labels.
+ local mineObjectives={inspect_ironveil_scales={"inspect_ironveil_scales_scale_1","inspect_ironveil_scales_scale_2","inspect_ironveil_scales_scale_3"},interview_carrier={"interview_carrier_carrier"},enter_ironveil={"MineReception"}}
  local function destination(quest:any,catalog:any,x:number,z:number,context:any?):any
   local region=city.region(x,z);local inCity=city.contains(x,z)
   local owned=context and context.island and context.playerId==context.island.ownerId
@@ -11,6 +13,35 @@ return function(city:any,rules:any,waypoint:any,resolveMarker:any?)
   end
   if not region and not inCity and not inGuild then return nil end
   if quest and quest.kind=="CampaignComplete" then return nil end
+  local mineNames=quest and quest.kind=="Campaign" and quest.objective and mineObjectives[quest.objective]
+  if mineNames then
+   -- Public travel legs do not depend on streaming the distant private mine.
+   if inGuild then return pointTarget(context.island.exit,"Central City","Portal",false) end
+   if inCity then return {name="Ironveil",x=0,z=city.Regions.Ironveil.CityGateZ,zone="City",kind="Portal",final=false} end
+   if region and region~="Ironveil" then local landing=city.Destinations[region];return {name="Central City",x=landing.X,z=landing.Z+12,zone=region,kind="Portal",final=false} end
+   local mine=context and context.ironveil
+   if not mine or mine.ownerId~=context.playerId or not mine.floor or not mine.anchors then return nil end
+   local floor=mine.floor;local y=mine.playerY
+   if type(y)~="number" or y~=y then return nil end
+   local inside=math.abs(x-floor.x)<=floor.width/2 and math.abs(z-floor.z)<=floor.depth/2 and y>=floor.y and y<=floor.y+20
+   if region=="Ironveil" then
+    if not inside then
+     -- Other vertical slots and falling characters are not the surface route.
+     if y<1 or y>35 then return nil end
+     return pointTarget(mine.anchors.MineEntrance,"Ironveil","Portal",false)
+    end
+    local best=nil;local distance=math.huge
+    for _,name in ipairs(mineNames)do
+     local point=mine.anchors[name]
+     if point and point.y>=floor.y and point.y<=floor.y+20 then
+      local squared=(x-point.x)^2+(z-point.z)^2
+      if squared<distance then distance=squared;best=point end
+     end
+    end
+    return pointTarget(best,quest.name,"Objective",true)
+   end
+   return nil
+  end
   local campaign=context and context.campaign
   local objective=if quest and quest.kind=="Campaign" and campaign and campaign.ownerId==context.playerId and campaign.objective==quest.objective then campaign.point else nil
   -- ChapterOne/CampaignWorld victory bindings; these objectives have no R prompt.
