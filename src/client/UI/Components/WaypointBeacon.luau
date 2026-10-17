@@ -101,6 +101,9 @@ return function(gui: ScreenGui)
 		marker.Enabled = false; marker.Adornee = nil :: any; compass.Visible = false
 		if not cardWanted then resize(); return end
 		local T = function(key: string, values: any?) return Locale.translate(language, key, values) end
+		if target and target.kind=="Instruction" then
+			step.Text=target.name;destination.Text="";distanceLabel.Text="";resize();return
+		end
 		if unavailable then
 			step.Text = T("Route unavailable")
 			destination.Text = T(if gui.AbsoluteSize.X < 600 then "See quest" else "Follow the quest instructions")

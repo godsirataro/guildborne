@@ -1,6 +1,47 @@
 --!strict
 local W=require("../src/shared/Data/CityWaypoint")
 return function(test: any,eq: any)
+ test("remaining mine objectives respect activities and never invent puzzle progress",function()
+  local city=require("../src/shared/Config/City");local rules=require("../src/shared/Data/Expansion")
+  local route=require("../src/shared/Data/QuestRoute")(city,rules,W)
+  local mine:any={ownerId=7,playerY=103,floor={x=500,y=100,z=1400,width=230,depth=230},anchors={}}
+  local context:any={playerId=7,ironveil=mine};local catalog={Journal={}}
+  local mappings={read_mine_signal="read_mine_signal_signal_2",choose_safe_shaft="choose_safe_shaft_signal_3",rescue_miner="rescue_miner_trapped_miner",
+   inspect_shoring="inspect_shoring_support_2",protect_engineer="protect_engineer_engineer",repair_shoring="repair_shoring_support_3",collect_reagent="collect_reagent_reagent",
+   compare_mine_seals="compare_mine_seals_seal_2",choose_joint_review="Review_council",operate_mine_mechanism="operate_mine_mechanism_mechanism_2",
+   protect_mine_worker="protect_mine_worker_protected_worker",return_mine_key="return_mine_key_arena_entry",meet_class_mentor="meet_class_mentor_mentor",
+   complete_borrowed_path="Borrowed_berserker",submit_ironveil_evidence="submit_ironveil_evidence_mentor"}
+  for objective,marker in pairs(mappings)do
+   mine.anchors={[marker]={x=510,y=100.3,z=1450,zone="Ironveil"}}
+   local target=route({kind="Campaign",objective=objective,name=objective},catalog,500,1500,context)
+   eq(target.x,510);eq(target.name,objective)
+   if objective=="read_mine_signal" or objective=="repair_shoring" or objective=="choose_joint_review" then eq(target.kind,"ObjectiveArea");eq(target.final,false)end
+  end
+  local quest:any={kind="Campaign",objective="rescue_miner",name="Escort"}
+  mine.escortStatus="Active";mine.escortPosition={x=520,y=103,z=1460,zone="Ironveil"}
+  eq(route(quest,catalog,500,1500,context).x,520)
+  mine.escortReason="MeetAtExit";mine.escortExit={x=530,y=100,z=1470,zone="Ironveil"};eq(route(quest,catalog,500,1500,context).x,530)
+  mine.escortStatus="Failed";eq(route(quest,catalog,500,1500,context),nil)
+  quest.objective="protect_engineer";mine.protectionStatus="Active"
+  eq(route(quest,catalog,500,1500,context).kind,"Instruction")
+  mine.warning={x=540,y=100,z=1460,zone="Ironveil"};mine.warningLive=true;eq(route(quest,catalog,500,1500,context).kind,"Warning")
+  mine.warningLive=false;eq(route(quest,catalog,500,1500,context).kind,"Instruction")
+  quest.objective="complete_borrowed_path";mine.trial=true;mine.playerY=128;eq(route(quest,catalog,500,1400,context).kind,"Instruction")
+  mine.trial=false;eq(route(quest,catalog,500,1400,context),nil)
+  quest.objective="defeat_mine_warden";mine.playerY=103;mine.anchors.MineExit={x=500,y=100.3,z=1502,zone="Ironveil"}
+  eq(route(quest,catalog,500,1500,context).kind,"Portal")
+  mine.playerY=4;eq(route(quest,catalog,500,1500,context),nil)
+  mine.guardian={ownerId=7,alive=true,marker="QuarryGuardian",point={x=540,y=3,z=1350,zone="Ironveil"}}
+  eq(route(quest,catalog,500,1500,context).kind,"Enemy")
+  mine.guardian.ownerId=8;eq(route(quest,catalog,500,1500,context),nil)
+  mine.guardian.ownerId=7;mine.guardian.alive=false;eq(route(quest,catalog,500,1500,context),nil)
+  quest.objective="unknown";eq(route(quest,catalog,500,1500,context),nil)
+ end)
+ test("ready campaign has instruction without fabricated travel coordinates",function()
+  local route=require("../src/shared/Data/QuestRoute")(require("../src/shared/Config/City"),{},W)
+  local result=route({kind="Campaign",ready=true,name="รับรางวัลบทนี้ในเมนูกิลด์"},{Journal={}},9000,9000)
+  eq(result.kind,"Instruction");eq(result.name,"รับรางวัลบทนี้ในเมนูกิลด์");eq(result.x,nil);eq(result.anchor,nil)
+ end)
  test("Ironveil chapter7 routes through own surface entrance before enabled interior objectives",function()
   local city=require("../src/shared/Config/City");local route=require("../src/shared/Data/QuestRoute")(city,{},W)
   local anchors:any={MineEntrance={x=500,y=2.3,z=1498,zone="Ironveil"},MineExit={x=500,y=100.3,z=1502,zone="Ironveil"},

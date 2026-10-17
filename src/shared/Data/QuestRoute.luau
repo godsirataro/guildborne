@@ -3,7 +3,28 @@
 return function(city:any,rules:any,waypoint:any,resolveMarker:any?)
  -- Explicit Chapter02 marker names authored by IronveilWorld, not inferred labels.
  local mineObjectives={inspect_ironveil_scales={"inspect_ironveil_scales_scale_1","inspect_ironveil_scales_scale_2","inspect_ironveil_scales_scale_3"},interview_carrier={"interview_carrier_carrier"},enter_ironveil={"MineReception"}}
+ mineObjectives.read_mine_signal={"read_mine_signal_signal_1","read_mine_signal_signal_2","read_mine_signal_signal_3"}
+ mineObjectives.choose_safe_shaft={"choose_safe_shaft_signal_1","choose_safe_shaft_signal_2","choose_safe_shaft_signal_3"}
+ mineObjectives.rescue_miner={"rescue_miner_trapped_miner"}
+ mineObjectives.inspect_shoring={"inspect_shoring_support_1","inspect_shoring_support_2","inspect_shoring_support_3"}
+ mineObjectives.protect_engineer={"protect_engineer_engineer"}
+ mineObjectives.repair_shoring={"repair_shoring_support_1","repair_shoring_support_2","repair_shoring_support_3"}
+ mineObjectives.collect_reagent={"collect_reagent_reagent"}
+ mineObjectives.compare_mine_seals={"compare_mine_seals_seal_1","compare_mine_seals_seal_2"}
+ mineObjectives.choose_joint_review={"Review_workers","Review_council"}
+ mineObjectives.operate_mine_mechanism={"operate_mine_mechanism_mechanism_1","operate_mine_mechanism_mechanism_2","operate_mine_mechanism_mechanism_3"}
+ mineObjectives.protect_mine_worker={"protect_mine_worker_protected_worker"}
+ mineObjectives.defeat_mine_warden={}
+ mineObjectives.return_mine_key={"return_mine_key_arena_entry"}
+ mineObjectives.meet_class_mentor={"meet_class_mentor_mentor"}
+ mineObjectives.submit_ironveil_evidence={"submit_ironveil_evidence_mentor"}
+ mineObjectives.complete_borrowed_path={}
+ for id,path in pairs(rules.Paths or {})do if path.Tier==2 then table.insert(mineObjectives.complete_borrowed_path,"Borrowed_"..id)end end
+ table.sort(mineObjectives.complete_borrowed_path)
+ local areas={read_mine_signal=true,choose_safe_shaft=true,repair_shoring=true,choose_joint_review=true,operate_mine_mechanism=true,complete_borrowed_path=true}
+ local function instruction(quest:any):any return {kind="Instruction",name=quest.name} end
  local function destination(quest:any,catalog:any,x:number,z:number,context:any?):any
+  if quest and quest.kind=="Campaign" and quest.ready==true then return instruction(quest) end
   local region=city.region(x,z);local inCity=city.contains(x,z)
   local owned=context and context.island and context.playerId==context.island.ownerId
   local inGuild=owned and context.inGuild==true
@@ -23,12 +44,27 @@ return function(city:any,rules:any,waypoint:any,resolveMarker:any?)
    if not mine or mine.ownerId~=context.playerId or not mine.floor or not mine.anchors then return nil end
    local floor=mine.floor;local y=mine.playerY
    if type(y)~="number" or y~=y then return nil end
+   if quest.objective=="complete_borrowed_path" and mine.trial==true then return instruction(quest) end
    local inside=math.abs(x-floor.x)<=floor.width/2 and math.abs(z-floor.z)<=floor.depth/2 and y>=floor.y and y<=floor.y+20
    if region=="Ironveil" then
+    if quest.objective=="defeat_mine_warden" then
+     if inside then return pointTarget(mine.anchors.MineExit,"Ironveil","Portal",false)end
+     if y<1 or y>35 then return nil end
+     local enemy=mine.guardian
+     if enemy and enemy.ownerId==context.playerId and enemy.alive==true and enemy.marker=="QuarryGuardian" then return pointTarget(enemy.point,quest.name,"Enemy",true)end
+     return nil
+    end
     if not inside then
      -- Other vertical slots and falling characters are not the surface route.
      if y<1 or y>35 then return nil end
      return pointTarget(mine.anchors.MineEntrance,"Ironveil","Portal",false)
+    end
+    if quest.objective=="rescue_miner" and mine.escortStatus and mine.escortStatus~="Failed" and mine.escortStatus~="Cancelled" then
+     local point=if mine.escortReason=="MeetAtExit" then mine.escortExit else mine.escortPosition
+     return if point then pointTarget(point,quest.name,"Escort",false) else instruction(quest)
+    end
+    if (quest.objective=="protect_engineer" or quest.objective=="protect_mine_worker") and mine.protectionStatus=="Active" then
+     return if mine.warning and mine.warningLive then pointTarget(mine.warning,quest.name,"Warning",false) else instruction(quest)
     end
     local best=nil;local distance=math.huge
     for _,name in ipairs(mineNames)do
@@ -38,7 +74,7 @@ return function(city:any,rules:any,waypoint:any,resolveMarker:any?)
       if squared<distance then distance=squared;best=point end
      end
     end
-    return pointTarget(best,quest.name,"Objective",true)
+    return pointTarget(best,quest.name,if areas[quest.objective] then "ObjectiveArea" else "Objective",not areas[quest.objective])
    end
    return nil
   end
@@ -188,6 +224,7 @@ return function(city:any,rules:any,waypoint:any,resolveMarker:any?)
  end
  return function(quest:any,catalog:any,x:number,z:number,context:any?):any
   local target=destination(quest,catalog,x,z,context)
+  if target and target.kind=="Instruction" then return target end
   if context and context.civic then
    local exit=context.civic.exit
    if not quest or quest.kind=="CampaignComplete" or not exit then return nil end

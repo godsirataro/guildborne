@@ -156,6 +156,32 @@ local function navigationContext(player:Player,x:number,z:number):any
    end end
    context.ironveil={ownerId=player.UserId,playerY=root.Position.Y,anchors=anchors,
     floor={x=floor.Position.X,z=floor.Position.Z,y=floor.Position.Y+floor.Size.Y/2,width=floor.Size.X,depth=floor.Size.Z}}
+   local state=context.ironveil
+   local function vectorPoint(value:any):any
+    return if typeof(value)=="Vector3" then {x=value.X,y=value.Y,z=value.Z,zone="Ironveil"} else nil
+   end
+   state.escortStatus=mine:GetAttribute("EscortStatus")
+   state.escortPosition=vectorPoint(mine:GetAttribute("EscortPosition"));state.escortExit=vectorPoint(mine:GetAttribute("EscortExit"))
+   local miner=mine:FindFirstChild("miner",true)
+   state.escortReason=miner and miner:GetAttribute("EscortReason")
+   state.protectionStatus=mine:GetAttribute("ProtectionStatus")
+   state.warning=vectorPoint(mine:GetAttribute("ProtectionWarningPosition"))
+   local impact=mine:GetAttribute("ProtectionImpactAt")
+   state.warningLive=mine:GetAttribute("ProtectionWarningBlocked")==false and type(impact)=="number" and impact>workspace:GetServerTimeNow()
+   local trial=workspace:FindFirstChild("NoviceTrial_"..player.UserId)
+   state.trial=trial~=nil and trial:GetAttribute("OwnerUserId")==player.UserId and trial:GetAttribute("NoviceTrialArena")==true
+   local encounter=workspace:FindFirstChild("RegionalEncounter_"..player.UserId.."_Ironveil")
+   local actors=encounter and encounter:FindFirstChild("EncounterArt")
+   local region=world:FindFirstChild("Ironveil");local markers=region and region:FindFirstChild("EncounterMarkers")
+   local marker=markers and markers:FindFirstChild("QuarryGuardian")
+   if encounter and encounter:GetAttribute("AdventureSceneOwner")==player.UserId and actors and marker and marker:IsA("BasePart")then
+    for _,actor in ipairs(actors:GetChildren())do
+     local health=actor:GetAttribute("CombatHealth")
+     if actor:IsA("Model") and actor:GetAttribute("OwnerUserId")==player.UserId and actor:GetAttribute("EncounterId")=="quarry_guardian" and actor:GetAttribute("EncounterMarker")=="QuarryGuardian" and type(health)=="number" and health>0 then
+      state.guardian={ownerId=player.UserId,alive=true,marker="QuarryGuardian",point=vectorPoint(marker.Position)};break
+     end
+    end
+   end
   end
  end
  return context
@@ -328,7 +354,7 @@ return function()
 		if showRoute then
 			local heading=if direction.Visible then direction.Rotation else nil
 			banner.Visible=false;direction.Visible=false
-			local distance=if root and target then math.floor((Vector2.new(root.Position.X,root.Position.Z)-Vector2.new(target.x,target.z)).Magnitude+.5)else nil
+			local distance=if root and target and target.x then math.floor((Vector2.new(root.Position.X,root.Position.Z)-Vector2.new(target.x,target.z)).Magnitude+.5)else nil
 			beacon.update(target,distance,target==nil,language,heading)
 		else beacon.update(nil,nil,false,language);if selected and selected.quest then direction.Visible=false;if menuBlocking()then banner.Visible=false end end end
 		if root then marker.Position=point(root.Position.X,root.Position.Z);marker.Visible=district~=nil end
