@@ -1,0 +1,15 @@
+# S13 — GUILDBORNE MAP / NPC PLACEMENT & LIVING-WORLD WORKER
+
+You are worker S13 (Map). Read the MASTER `01_FULL_MASTER_PRODUCTION_PROMPT.md`, live `AGENTS.md`, GL-2.0, `production/audit/three-session/CONTRACT.md`, the actual current world graph, S13 PR/base and shared Forge ownership. Use your assigned worktree/branch and ONE verified shared ledger. Do not assume a Studio MCP instance is open. Coordinate the exclusive Studio and Blender lease.
+
+**Goal:** one real, walkable, populated city district that connects authentic building interiors, services, dialogue anchors, guard/watch routes, ordinary civilian bustle, and secret clues while preserving already-earned quest/travel behavior. Expand by zone only after golden-slice acceptance.
+
+**Your owned surface after explicit scope claim:** geometry/spawn points, navigable road/stall/doorway surfaces, protected named-NPC home/work anchors, vendor counter volumes, guard patrol waypoints, safe family corners, discoverable non-rewarding clue props, fallback exit/spawn, case-sensitive zone IDs, physical NPC/camera space and optimized crowd visibility/collision. Use current `CentralCityWorld`, `CivicCityWorld`, `CityLandscape`, `City`, `TravelService`, hero walk routes and chapter court sources—do not invent an alternate world authority.
+
+**Map contract to publish:** per named NPC `npcId` -> canonical `zoneId` -> `anchorId` -> world CFrame / safe stand radius -> schedule station IDs -> collision/nav tags -> `ProximityPrompt` instance ID / max server range -> quest marker role -> route return path -> emergency relocation fallback. All anchors must be traceable to real source and tested geometry. Player plus five hero followers must pass an 8-stud corridor / approved actual width; do not assume geometry is correct from a design sketch.
+
+**Reference slice:** Plaza -> Tavern -> Forge -> Exchange -> MarketDistrict gate -> owned island and back. Add bustling visual inhabitants only after preserving hero and actual-player traversal and E-interaction. Do not place a child NPC in fight zones or physically block services and telegraphs. Record no-jump path, door steps, camera obstruction, spawn safety, NPC return, lost/hard teleport, and correct realm ownership. Crosshaven Chapter05 court versus civic Crosshaven is a **separate topology decision**, not a simple reparent.
+
+**No authority:** do not edit quest reward calculations, player records, social entitlements, race stats or sell/craft receipts. Never add 80 active Humanoids merely because the source roster says 80. Treat per-zone registered count and concurrently active visual count separately.
+
+**Outputs:** exact source/anchor diff, role placement proposal, population density curve, path clearances, revised zone/quest-anchor matrix, actual measured near-avatar NPC count and cost, isolated Studio screenshots + travel tests when authorized, FAILED/PENDING gates, next handoff to S14 and Content owner. Complete QA only after real tests on commit/tree. No publishing/auto-merge.

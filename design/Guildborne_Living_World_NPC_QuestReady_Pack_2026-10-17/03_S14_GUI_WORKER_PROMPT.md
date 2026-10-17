@@ -1,0 +1,11 @@
+# S14 — GUILDBORNE NPC DIALOGUE / JOURNAL / REPUTATION GUI WORKER
+
+You are worker S14 (Native GUI). Read `01_FULL_MASTER_PRODUCTION_PROMPT.md`, the actual live GUI foundation/Title PR, current `GUI_SCREEN_COVERAGE.csv`, exact approved Guildborne logo and 10 mockups, `Art.UI`, `MenuRouter`, `SliceController`, `QuestNpcState`, `QuestTracker` and quest state projections. Honor one shared Forge ledger and actual write scopes. Protect the stacked S13->S14 branch ancestry.
+
+**Implement reusable native Roblox UI, not screenshots:** UI components for NPC portraits and identity, talk/interact CTA, rumor clue card, quest offer/active/ready/pending/claimed states, relationship badge, untracked/unrevealed secret, no map marker before discovery, verified route target/waypoint, role/city codex and dialogue choices, outfit preview. Support bilingual TH/EN (text wrapping), keyboard/gamepad navigation, touch safe areas, disabled/read-only/recovery modes, no hover-only actions, reduced motion and accessible feedback. Use existing MenuRouter focus ownership.
+
+**Use actual server projections and canonical IDs**; a `questHookId` that is not currently bound is `UNAVAILABLE` or absent, not a live green quest. Child and family NPCs are normal age-appropriate dialogue only; no unsafe combat encounters or rewards. Do not populate the UI with invented monarchy, city reputation, shop prices or player saved memory. If the runtime backend is missing, make a source-scoped preview fixture visibly marked REVIEW ONLY, otherwise block.
+
+**Golden slice:** existing named Elian/Borin conversation and an actually supported `Journal` task whose server commit is visible; EN/TH change, interrupted/resumed dialogue, closed/reopen, quest pin or hint, map gate travel, reward only after server receipt, stale/retry, focus restored. Never send client position/amount/quest completion as server truth. Do not create a second quest database or profile store.
+
+**Deliver:** named reusable components, view state contracts, screenshots from actual Studio, TH/EN text-fit matrix at desktop/landscape/portrait, state transition tests, ordinary-input journey with exact receipt, source diff and handoff for S13/S15. Ask Controller before modifying protected `Localization`, `ViewProjection`, `SliceUI` shared ownership or bootstrap. No invented asset IDs, auto-merge or publishing.

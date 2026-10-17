@@ -1,0 +1,16 @@
+area,current_source,observed_gap,next_owner,acceptance
+Central City,FriendlyCityNpcs and CentralCityWorld,24 city-builder actors include six external hosts; no generalized daily-life population,Controller and S17,New runtime integration pending
+Six civic cities,CivicCityWorld and CivicCities,Hosts dialogue-only; no registered journal stations; wider population proposed,S13 and content,Routes and services need current Studio verification
+Novice,NoviceCourseWorld and NoviceChapter,Existing main story; optional discovery remains proposal,Content and S13,No new secret implementation
+Greenwood,RegionalWorld and ChapterOne,Regional availability gated; no approved secret anchors,S13 and content,No new secret implementation
+Ironveil,IronveilWorld and ChapterTwo,Main story preview; population and secret routes require mapping,S13 and content,No new secret implementation
+Ashen,AshenWorld and ChapterThree,Main story preview; no approved secret bindings,S13 and content,No new secret implementation
+Tower,TowerWorld and ChapterFour,Ten combat floors; hidden archive is MAIN not optional secret,Content,Preserve canonical story IDs
+Crosshaven Chapter Five,CrosshavenWorld and ChapterFive,Physical court distinct from civic Crosshaven,Controller and S13,Topology decision pending
+Archive Heart,ArchiveHeartWorld and ChapterSix,Main actors are outside FriendlyNpcs registry,Content and S13,No blanket stable-ID assertion
+Personal guild island,GuildLandWorld and GuildHallWorld,Owned heroes and visitors differ from public residents,Controller,Preserve ownership and saves
+War territory and events,GL2 scope,No approved living-world anchors in this slice,Controller,Design only
+Appearance,AppearanceCatalog and AppearanceAssetRegistry,13planned presets; only two Human placeholder families render,Character specialist,Real imports cages and fits pending
+NPC presentation,FriendlyNpcAnimator and BorinWorkMotion,Generic full-loop scan; only Borin supports sustained dialogue interruption,S15 and Controller,Preserve single pose owner
+Quest authority,SettlementService and CityWorld,Legacy display aliases need compatible stable-ID bridge,Controller and S17,No reward or schema edits
+UI,QuestNpcState QuestRoute and SliceUI,No new reputation or secret state is server-backed,S14,Do not show fabricated actions

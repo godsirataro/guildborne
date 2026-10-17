@@ -1,0 +1,198 @@
+{
+  "schemaVersion": 1,
+  "date": "2026-10-17",
+  "status": "PROPOSAL_NOT_RUNTIME",
+  "disclaimer": "410 is source roster target only; live Humanoid count needs profiler acceptance; region counts are not fixed. Named existing NPC presence must be reconciled against role quotas.",
+  "cityRegistryTotalProposal": 410,
+  "cityPlans": [
+    {
+      "zoneId": "City",
+      "title": "Central City",
+      "status": "DESIGN_ONLY_PROPOSED_BUDGET",
+      "registeredResidentsTarget": 80,
+      "nearbyVisibleActiveExperiment": {
+        "min": 15,
+        "max": 30,
+        "NOT_AN_ENGINE_LIMIT": true
+      },
+      "cohortRoleCountsProposed": {
+        "civilian": 20,
+        "trade": 18,
+        "artisan": 8,
+        "civic": 11,
+        "specialist": 8,
+        "visitor": 5,
+        "children": 4,
+        "story": 6
+      },
+      "loreDirectionProposal": "Mixed intercity hub, civic envoys and guild services",
+      "actualLivePopulation": null,
+      "serverFPSMeasured": false,
+      "mobileDeviceProfiled": false,
+      "forgeOwner": "S13 + content + controller",
+      "humanApproved": false
+    },
+    {
+      "zoneId": "Crownford",
+      "title": "Crownford",
+      "status": "DESIGN_ONLY_PROPOSED_BUDGET",
+      "registeredResidentsTarget": 55,
+      "nearbyVisibleActiveExperiment": {
+        "min": 10,
+        "max": 20,
+        "NOT_AN_ENGINE_LIMIT": true
+      },
+      "cohortRoleCountsProposed": {
+        "civilian": 14,
+        "trade": 11,
+        "artisan": 8,
+        "civic": 10,
+        "specialist": 5,
+        "visitor": 2,
+        "children": 3,
+        "story": 2
+      },
+      "loreDirectionProposal": "Charter, civic archives, public clock and trade",
+      "actualLivePopulation": null,
+      "serverFPSMeasured": false,
+      "mobileDeviceProfiled": false,
+      "forgeOwner": "S13 + content + controller",
+      "humanApproved": false
+    },
+    {
+      "zoneId": "Sylvaris",
+      "title": "Sylvaris",
+      "status": "DESIGN_ONLY_PROPOSED_BUDGET",
+      "registeredResidentsTarget": 55,
+      "nearbyVisibleActiveExperiment": {
+        "min": 10,
+        "max": 20,
+        "NOT_AN_ENGINE_LIMIT": true
+      },
+      "cohortRoleCountsProposed": {
+        "civilian": 14,
+        "trade": 10,
+        "artisan": 10,
+        "civic": 7,
+        "specialist": 5,
+        "visitor": 4,
+        "children": 3,
+        "story": 2
+      },
+      "loreDirectionProposal": "Gardens, agroforestry and open community promenade",
+      "actualLivePopulation": null,
+      "serverFPSMeasured": false,
+      "mobileDeviceProfiled": false,
+      "forgeOwner": "S13 + content + controller",
+      "humanApproved": false
+    },
+    {
+      "zoneId": "Deepforge",
+      "title": "Deepforge",
+      "status": "DESIGN_ONLY_PROPOSED_BUDGET",
+      "registeredResidentsTarget": 55,
+      "nearbyVisibleActiveExperiment": {
+        "min": 10,
+        "max": 20,
+        "NOT_AN_ENGINE_LIMIT": true
+      },
+      "cohortRoleCountsProposed": {
+        "civilian": 12,
+        "trade": 10,
+        "artisan": 13,
+        "civic": 10,
+        "specialist": 4,
+        "visitor": 2,
+        "children": 2,
+        "story": 2
+      },
+      "loreDirectionProposal": "Metalworking, shift industry, unions/community and apprentices",
+      "actualLivePopulation": null,
+      "serverFPSMeasured": false,
+      "mobileDeviceProfiled": false,
+      "forgeOwner": "S13 + content + controller",
+      "humanApproved": false
+    },
+    {
+      "zoneId": "Astralis",
+      "title": "Astralis",
+      "status": "DESIGN_ONLY_PROPOSED_BUDGET",
+      "registeredResidentsTarget": 55,
+      "nearbyVisibleActiveExperiment": {
+        "min": 10,
+        "max": 20,
+        "NOT_AN_ENGINE_LIMIT": true
+      },
+      "cohortRoleCountsProposed": {
+        "civilian": 12,
+        "trade": 10,
+        "artisan": 8,
+        "civic": 9,
+        "specialist": 10,
+        "visitor": 2,
+        "children": 2,
+        "story": 2
+      },
+      "loreDirectionProposal": "Research, star charts and observatory services",
+      "actualLivePopulation": null,
+      "serverFPSMeasured": false,
+      "mobileDeviceProfiled": false,
+      "forgeOwner": "S13 + content + controller",
+      "humanApproved": false
+    },
+    {
+      "zoneId": "Crosshaven",
+      "title": "Crosshaven",
+      "status": "DESIGN_ONLY_PROPOSED_BUDGET",
+      "registeredResidentsTarget": 55,
+      "nearbyVisibleActiveExperiment": {
+        "min": 10,
+        "max": 20,
+        "NOT_AN_ENGINE_LIMIT": true
+      },
+      "cohortRoleCountsProposed": {
+        "civilian": 12,
+        "trade": 14,
+        "artisan": 8,
+        "civic": 7,
+        "specialist": 5,
+        "visitor": 5,
+        "children": 2,
+        "story": 2
+      },
+      "loreDirectionProposal": "Mixed harbor culture, shelter and reconciliatory city court",
+      "actualLivePopulation": null,
+      "serverFPSMeasured": false,
+      "mobileDeviceProfiled": false,
+      "forgeOwner": "S13 + content + controller",
+      "humanApproved": false
+    },
+    {
+      "zoneId": "Ironroot",
+      "title": "Ironroot",
+      "status": "DESIGN_ONLY_PROPOSED_BUDGET",
+      "registeredResidentsTarget": 55,
+      "nearbyVisibleActiveExperiment": {
+        "min": 10,
+        "max": 20,
+        "NOT_AN_ENGINE_LIMIT": true
+      },
+      "cohortRoleCountsProposed": {
+        "civilian": 15,
+        "trade": 10,
+        "artisan": 10,
+        "civic": 7,
+        "specialist": 5,
+        "visitor": 3,
+        "children": 3,
+        "story": 2
+      },
+      "loreDirectionProposal": "Cooperative crafts, open table and community celebrations",
+      "actualLivePopulation": null,
+      "serverFPSMeasured": false,
+      "mobileDeviceProfiled": false,
+      "forgeOwner": "S13 + content + controller",
+      "humanApproved": false
+    }
+  ]
+}
