@@ -8,6 +8,8 @@ local MenuRouter=require(script.Parent.Parent.UI.MenuRouter)
 local Colors=require(game.ReplicatedStorage.Shared.Config.Art).UI
 local Audio=require(script.Parent.AudioController)
 local AudioConfig=require(game.ReplicatedStorage.Shared.Config.AudioConfig)
+local Timeline=require(game.ReplicatedStorage.Shared.Presentation.ActionTimeline)
+local Presentation=require(game.ReplicatedStorage.Shared.Presentation.NoviceActionPresentation)
 return function()
  local player=Players.LocalPlayer
  local gui=Instance.new("ScreenGui");gui.Name="NoviceTrialHUD";gui.ResetOnSpawn=false;gui.DisplayOrder=60
@@ -24,11 +26,12 @@ return function()
   label.Size=UDim2.new(1,-16,0,if i==3 then 48 elseif i==4 then 38 elseif i==2 then 32 else 22);label.Parent=panel;table.insert(labels,label)
  end
  local arena:Model?=nil
- local presented:Model?=nil;local proxy:Model?=nil;local lastAction:any=nil;local lastWarning:any=nil
+ local presented:Model?=nil;local proxy:Model?=nil;local lastWarning:any=nil
+ local actionCursor=Presentation(Timeline.accept)
  local effect=require(script.Parent.SkillEffects)()
  local function clearPresentation()
   if proxy then proxy:Destroy();proxy=nil end
-  presented=nil;lastAction=nil;lastWarning=nil
+  presented=nil;actionCursor.reset();lastWarning=nil
  end
  local buttons:{TextButton}={}
  local function send(action:string)
@@ -71,12 +74,15 @@ return function()
    root.CanCollide=false;root.CanQuery=false;root.CanTouch=false;root.Parent=m;m.PrimaryPart=root;m.Parent=workspace;proxy=m
   end
   local stamp=current:GetAttribute("ActionAt")
-  if stamp and stamp~=lastAction then
-   lastAction=stamp
-   local origin=current:GetAttribute("ActionOriginPosition");local target=current:GetAttribute("ActionTargetPosition")
-   if type(stamp)=="number"and workspace:GetServerTimeNow()-stamp<.6 and typeof(origin)=="Vector3"and typeof(target)=="Vector3"and proxy and proxy.PrimaryPart then
+  -- A cleared server event cancels delayed presentation without replaying its
+  -- timestamp if it is observed again. Arena replacement resets the cursor.
+  if stamp==nil and proxy then proxy:SetAttribute("ActionAt",nil) end
+  local origin=current:GetAttribute("ActionOriginPosition");local target=current:GetAttribute("ActionTargetPosition")
+  if typeof(origin)=="Vector3"and typeof(target)=="Vector3"and proxy and proxy.PrimaryPart then
+   if actionCursor.observe(stamp,workspace:GetServerTimeNow(),true) then
     proxy.PrimaryPart.CFrame=if (target-origin).Magnitude>.01 then CFrame.lookAt(origin,target)else CFrame.new(origin)
     for _,key in ipairs({"ClassId","ActionEffect","ActionAbilityId","ActionTargetPosition"})do proxy:SetAttribute(key,current:GetAttribute(key))end
+    proxy:SetAttribute("ActionAt",stamp)
     effect(proxy);Audio.Play(AudioConfig.actionCue(tostring(current:GetAttribute("ClassId")),tostring(current:GetAttribute("ActionEffect"))),origin)
    end
   end

@@ -1,0 +1,3 @@
+PASS action timeline: finite input, phase boundaries, skipped frames, replay and stale observations
+PASS action observation: missing, duplicate, reordered, expired and future rejected; replacement accepted
+PASS Power Strike server contract: accepted/recovered casts, cooldown, invalid ability/target, death; no rejected side effects
