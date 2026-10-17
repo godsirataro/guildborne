@@ -25,3 +25,19 @@ The button's reward label was observed; exact numeric profile XP was not read.
 No class trial, Greenwood traversal, five-hero combat, full quest chain,
 multiplayer, saved persistence or device acceptance follows from this result.
 The earlier decorative/animation fixtures were not used to complete objectives.
+
+## Chapter two continuation
+
+In the same uninterrupted Play session, closed the Guild menu, walked to the
+active Practice a basic attack prompt around (-4435,3,90), and pressed E.
+Normal game flow entered the training arena. Pressed F once; actual trial HUD
+reported Basic hits 1/1 and chapter objective advanced to Dodge the area attack.
+Clicked Leave trial to return to the course. Moved clear of its visible warning;
+the Rescue the practice captive prompt became enabled at (-4420,3,86).
+Walked into range, pressed E, then reopened the Guild menu. Claim 100 XP was
+active. Clicking it advanced the UI to Chapter 3 / 6, The Caravan's Debt.
+
+PASS for ordinary-input chapter-two transition, including the real basic-attack
+lesson. No combat hit, objective or progression was injected by the test. This
+still does not certify every combat class, damage amount, rewards persistence,
+later chapters or the complete Map + GUI + five-hero journey.
