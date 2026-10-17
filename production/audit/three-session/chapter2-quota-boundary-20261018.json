@@ -1,0 +1,161 @@
+[
+  {
+    "stage": "wait-visible-warning",
+    "result": {
+      "content": [
+        {
+          "type": "text",
+          "text": "{\"objective\":\"dodge_area\",\"warningVisible\":true}"
+        }
+      ],
+      "isError": false
+    }
+  },
+  {
+    "stage": "dodge-input",
+    "args": {
+      "studio_id": "62789207-389b-45dc-95a0-c5bffd63cd0b",
+      "datamodel_type": "Client",
+      "actions": [
+        {
+          "action": "keyDown",
+          "key_code": "A"
+        },
+        {
+          "action": "wait",
+          "wait_time_ms": 700
+        },
+        {
+          "action": "keyUp",
+          "key_code": "A"
+        },
+        {
+          "action": "wait",
+          "wait_time_ms": 1000
+        }
+      ]
+    },
+    "result": {
+      "content": [
+        {
+          "type": "text",
+          "text": "Success"
+        }
+      ],
+      "isError": false
+    }
+  },
+  {
+    "stage": "dodge-read",
+    "result": {
+      "content": [
+        {
+          "type": "text",
+          "text": "{\"position\":\"-4451.04443359375, 2.998046875, 94.8609619140625\",\"course\":{\"DeliveryProblem\":\"OK\",\"OwnerUserId\":11732987790,\"Objective\":\"rescue_dummy\",\"ObjectiveText\":\"Rescue the practice captive\",\"CoursePrototype\":true,\"Depth\":450,\"Width\":300}}"
+        }
+      ],
+      "isError": false
+    }
+  },
+  {
+    "stage": "rescue-input",
+    "args": {
+      "studio_id": "62789207-389b-45dc-95a0-c5bffd63cd0b",
+      "datamodel_type": "Client",
+      "actions": [
+        {
+          "action": "keyDown",
+          "key_code": "D"
+        },
+        {
+          "action": "wait",
+          "wait_time_ms": 1700
+        },
+        {
+          "action": "keyUp",
+          "key_code": "D"
+        },
+        {
+          "action": "keyDown",
+          "key_code": "W"
+        },
+        {
+          "action": "wait",
+          "wait_time_ms": 400
+        },
+        {
+          "action": "keyUp",
+          "key_code": "W"
+        },
+        {
+          "action": "keyPress",
+          "key_code": "E"
+        },
+        {
+          "action": "wait",
+          "wait_time_ms": 250
+        }
+      ]
+    },
+    "result": {
+      "content": [
+        {
+          "type": "text",
+          "text": "Success"
+        }
+      ],
+      "isError": false
+    }
+  },
+  {
+    "stage": "rescue-ready",
+    "result": {
+      "content": [
+        {
+          "type": "text",
+          "text": "[{\"text\":\"A Borrowed Weapon\",\"name\":\"TextLabel\",\"active\":false},{\"text\":\"Chapter 2 / 6\",\"name\":\"TextLabel\",\"active\":false},{\"text\":\"Claim 100 XP\",\"name\":\"NoviceClaim\",\"active\":true},{\"text\":\"✓ Practice a basic attack\",\"name\":\"Objective_practice_attack\",\"active\":false},{\"text\":\"✓ Dodge the area attack\",\"name\":\"Objective_dodge_area\",\"active\":false},{\"text\":\"✓ Rescue the practice captive\",\"name\":\"Objective_rescue_dummy\",\"active\":false}]"
+        }
+      ],
+      "isError": false
+    }
+  },
+  {
+    "stage": "claim-input",
+    "args": {
+      "studio_id": "62789207-389b-45dc-95a0-c5bffd63cd0b",
+      "datamodel_type": "Client",
+      "actions": [
+        {
+          "action": "mouseButtonClick",
+          "mouse_button": "left",
+          "instance_path": "LocalPlayer.PlayerGui.GuildborneUI.ManagementPanel.Content.NoviceJourney.NoviceClaim"
+        },
+        {
+          "action": "wait",
+          "wait_time_ms": 250
+        }
+      ]
+    },
+    "result": {
+      "content": [
+        {
+          "type": "text",
+          "text": "Success"
+        }
+      ],
+      "isError": false
+    }
+  },
+  {
+    "stage": "chapter3-ui",
+    "result": {
+      "content": [
+        {
+          "type": "text",
+          "text": "{\"ui\":[{\"text\":\"The Caravan's Debt\",\"name\":\"TextLabel\",\"active\":false},{\"text\":\"Chapter 3 / 6\",\"name\":\"TextLabel\",\"active\":false},{\"text\":\"Claim 100 XP\",\"name\":\"NoviceClaim\",\"active\":false},{\"text\":\"○ Follow the caravan tracks\",\"name\":\"Objective_follow_tracks\",\"active\":false},{\"text\":\"○ Choose who or what to rescue\",\"name\":\"Objective_caravan_choice\",\"active\":false},{\"text\":\"○ Help recover what was left behind\",\"name\":\"Objective_caravan_fallback\",\"active\":false}],\"zone\":\"Guild\",\"position\":\"-4423.552734375, 2.9980251789093018, 88.52818298339844\"}"
+        }
+      ],
+      "isError": false
+    }
+  }
+]
