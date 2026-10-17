@@ -198,12 +198,12 @@ test("six tall party cards reserve separate name health and control regions",fun
    local name=chrome.name;local hp=find(card,"ActorHealth")
    for _,text in ipairs({"Rowan of the Silver Forest","โรแวนผู้พิทักษ์พงไพร"}) do
     name.Text=text;chrome.update(i==6,i,18,160)
-    assert(name.Text==text and name.TextWrapped and name.TextSize==13)
+    assert(name.Text==text and name.TextWrapped and name.TextSize==15 and name.Size[4]==36)
     assert(name.Position[4]+name.Size[4]<=hp.Position[4])
     assert(hp.Position[4]+hp.Size[4]<=layout.cardHeight-8 and hp.TextSize==12)
     assert(find(card,"SelectedActorGem").Visible==(i==6))
    end
-   chrome.layout(138,44);assert(not name.TextWrapped and hp.TextSize==10)
+   chrome.layout(138,44);assert(not name.TextWrapped and name.TextSize==13 and hp.TextSize==10)
    card:Destroy()
   end
  end

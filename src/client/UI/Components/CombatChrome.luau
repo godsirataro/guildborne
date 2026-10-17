@@ -49,7 +49,7 @@ function Chrome.actor(card:TextButton)
   number.Position=UDim2.fromOffset(4,portraitSize-9);gem.Position=UDim2.fromOffset(portraitSize-1,portraitSize-2)
   name.TextWrapped=tall
   name.Position=UDim2.fromOffset(portraitSize+9,if tall then 4 elseif large then 7 else 2)
-  name.Size=UDim2.new(1,-portraitSize-14,0,if tall then 34 elseif large then 22 else 19);name.TextSize=if width<110 then 12 else 13
+  name.Size=UDim2.new(1,-portraitSize-14,0,if tall then 36 elseif large then 22 else 19);name.TextSize=if tall then 15 elseif width<110 then 12 else 13
   healthText.TextSize=if tall then 12 else 10
   healthText.Position=UDim2.fromOffset(portraitSize+9,if tall then 42 elseif large then 30 else 21)
   healthText.Size=UDim2.new(1,-portraitSize-14,0,if large then 16 else 13)
