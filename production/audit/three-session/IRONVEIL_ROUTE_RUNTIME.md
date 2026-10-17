@@ -19,3 +19,7 @@ Ordinary W/A movement reached scale3 at approximately(461.338,102.998,1466.489);
 Fresh actual State event then projected ready=true / Claim chapter rewards in the Guild menu, with claimed=6, hallPermit=2, objectives inspect_ironveil_scales=true, interview_carrier=true, enter_ironveil=true; Hall2 and688Gold unchanged. Chapter7 reward has NOT been claimed yet. Route-unavailable after ready state is expected from no physical objective, but its wording merits UI polish. Intermediate owned-companion ray blocking also briefly suppressed island guidance; do not claim continuously available authored-route UI.
 
 This extends evidence to ordinary island→city→surface→mine travel and all three chapter7 objectives/retargeting on the earned server. No injected profile/quest/reward/position. Client navigation still uses review5 source copies, not a fresh combined whole-build. Current earned character remains by mine reception, menu closed, chapter7 ready for GUI reward.
+
+## Ordinary chapter reward claimed
+
+Actual Guild menu button, scroll-up and CampaignClaim click accepted chapter7 reward. Fresh State: claimed7, level22,XP1053,Hall2,748Gold, nextobjective read_mine_signal / Read the three-symbol safety signal. Player still by mine reception; Management open. No reward/profile injection. Chapter8 onward route expansion is being implemented separately, not yet accepted.
