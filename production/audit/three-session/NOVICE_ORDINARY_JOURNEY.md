@@ -207,3 +207,17 @@ Current Play still uses the earlier optimized roof mesh and 12px tracker.
 Navigation review found direct destination arrows can suggest wall/void paths;
 S14 has been assigned native next-waypoint guidance within its existing exclusive
 scope, with real Hall/bridge/road anchors and subsequent controller walk testing.
+
+## Woodland Debt and Quiet Wolves completed — chapter 6 / level 20
+
+The same earned Memory session a6d25956 continued without profile, reward or position injection. Earlier continuation completed CutTimber, Workers allocation and DeliverWorkers through ordinary movement/R, then native CampaignClaim advanced to chapter5 / level18. Current client navigation review modules carry the corrected compass; the original server and earlier art build remain unchanged.
+
+From (-47.1466,5.0580,1443.2112), ordinary D then S input moved to (25.4335,5.0580,1457.1324), near FalseCrest at (30,2.2,1460). R advanced to protect_companion. The compass then showed Route unavailable despite an authored Greenwood Archer encounter; this gap was sent to S14.
+
+Ordinary W/D movement reached (54.7948,5.0480,1412.8060). Real R/F/Q actions and living Warrior/Priest companions fought Greenwood Archer (105HP). Actual encounter became Dead, CombatHealth0, RewardState Rewarded; server campaign advanced to defeat_forest_guardian.
+
+Ordinary W/A movement followed the route toward Forest Captain. Player reached (4.3265,9.0780,1342.1714); actual boss at approximately (2.7749,6.0800,1339.5227). R/F/Q and subsequent F/Q inputs with the companions defeated the650HP boss. Server readback showed health0, Dead, Rewarded, BossPhase2 and campaign objective absent with Claim chapter rewards text. Both companions remained alive.
+
+Clicked the actual Guild menu and CampaignClaim buttons. Native GUI showed A Home with a Name, chapter6/12, Lv20,728Gold. Current objective: return_forest_evidence. No direct remotes, combat result writes, quest observation calls or reward shortcuts were used.
+
+The management menu screenshot exposed compass overlap over its objective and tab row. S14 received exact reproduction and owns the fix. This journey proves same-session ordinary combat/reward progression; it does not prove latest asset rendering, clean first-time usability, persistence, multiplayer or physical-device acceptance.
