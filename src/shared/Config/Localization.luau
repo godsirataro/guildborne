@@ -1,6 +1,16 @@
 --!strict
 -- English source strings are stable keys; placeholders are shared by both languages.
 local thai: { [string]: string } = {
+	["Next waypoint"] = "จุดนำทางถัดไป",
+	["Route unavailable"] = "ยังนำทางไม่ได้",
+	["Follow the quest instructions"] = "ทำตามคำแนะนำของเควส",
+	["Leave the Hall"] = "ออกทางประตูหอกิลด์",
+	["Follow the island path"] = "ตามทางเดินบนเกาะ",
+	["Reach your island bridge"] = "ไปทางเข้าสะพานของคุณ",
+	["Cross the bridge"] = "ข้ามสะพาน",
+	["Follow the promenade"] = "ตามทางเดินไปประตูเมือง",
+	["Follow the city road"] = "ตามถนนหลักในเมือง",
+	["Continue to destination"] = "เดินต่อไปยังจุดหมาย",
 	["Main quests"]="เควสหลัก",
 	["Side quests"]="เควสรอง",
 	["NPC quests"]="เควส NPC",

@@ -11,8 +11,9 @@ MODULES += [f"src/client/UI/Components/{name}.luau" for name in
 MODULES += ["src/client/UI/SymbolIcon.luau", "src/shared/Data/UISymbols.luau"]
 MODULES += ["src/client/UI/TitleView.luau", "src/shared/Config/Localization.luau"]
 MODULES += ["src/shared/Data/JournalViewState.luau", "src/client/UI/EmptyState.luau",
+            "src/shared/Data/CombatHudLayout.luau",
             "src/client/UI/QuestTrackerView.luau", "src/client/UI/Components/QualityAsset.luau",
-            "src/client/UI/Components/JournalPane.luau"]
+            "src/client/UI/Components/JournalPane.luau", "src/client/UI/Components/WaypointBeacon.luau"]
 # Only Title orchestration dependencies are stubbed; component source and Title are real.
 STUBS = {
     "MenuRouter": "return {register=function() end,focusCurrent=function() Services.FocusCalls=(Services.FocusCalls or 0)+1 end}",
@@ -62,6 +63,7 @@ end
 '''
     code += "local run=assert(loadstring(" + quote((ROOT/"tests/gui/behavior.luau").read_text(encoding="utf-8")) + "));setfenv(run,env);run()\n"
     code += "local gameplay=assert(loadstring(" + quote((ROOT/"tests/gui/gameplay_behavior.luau").read_text(encoding="utf-8")) + "));setfenv(gameplay,env);gameplay()\n"
+    code += "local waypoint=assert(loadstring(" + quote((ROOT/"tests/gui/waypoint_behavior.luau").read_text(encoding="utf-8")) + "));setfenv(waypoint,env);waypoint()\n"
     with tempfile.TemporaryDirectory(prefix="guildborne-gui-tests-") as folder:
         entry = Path(folder)/"run.luau"
         entry.write_text(code, encoding="utf-8")

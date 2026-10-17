@@ -12,7 +12,7 @@ local Rules=require(game.ReplicatedStorage.Shared.Data.Expansion)
 local IslandLayout=require(game.ReplicatedStorage.Shared.Config.GuildIslandLayout)
 -- Read the replicated owner and real anchors each tick: islands and Hall stations can move.
 local function navigationContext(player:Player,x:number,z:number):any
- local context:any={playerId=player.UserId,inGuild=false}
+ local context:any={playerId=player.UserId,inGuild=false,authored=true,roads={}}
  local world=workspace:FindFirstChild("GuildborneWorld");if not world then return context end
  local owned:Instance?=nil
  for _,model in ipairs(world:GetChildren())do
@@ -35,17 +35,70 @@ local function navigationContext(player:Player,x:number,z:number):any
  local link=zone and zone:FindFirstChild("IslandLink_"..player.UserId)
  context.inGuild=spawnPart~=nil and (onIsland(x,z) or planarContains(zone and zone:FindFirstChild("IslandPromenade")) or planarContains(link and link:FindFirstChild("IslandBridge")))
  local function position(part:Instance?):any
-  return if part and part:IsA("BasePart") then {x=part.Position.X,z=part.Position.Z,zone="Guild"} else nil
+  return if part and part:IsA("BasePart") then {x=part.Position.X,y=part.Position.Y+part.Size.Y/2,z=part.Position.Z,anchor=part,zone="Guild"} else nil
  end
  local env=owned and owned:FindFirstChild("Environment");local gameplay=env and env:FindFirstChild("Gameplay")
  local exit=zone and zone:FindFirstChild("Central City")
  context.island={ownerId=player.UserId,hall=position(gameplay and gameplay:FindFirstChild("Guild Hall")),exit=if exit and exit:GetAttribute("TravelDestination")=="City" then position(exit) else nil}
+ if context.island.exit and exit and exit:IsA("BasePart")then context.island.exit.y=exit.Position.Y-exit.Size.Y/2 end
  local bridge=link and link:FindFirstChild("IslandBridge")
  local promenade=zone and zone:FindFirstChild("IslandPromenade")
- -- Reach the owner's bridge before following the shared promenade, rather than
- -- sending an arrow diagonally across the gap between island and city portal.
- if context.inGuild and not planarContains(promenade) then
-  context.island.exit=if context.island.exit and bridge and bridge:IsA("BasePart") and promenade and promenade:IsA("BasePart") then {x=bridge.Position.X,z=promenade.Position.Z,zone="Guild"} else nil
+ local expansion=env and env:FindFirstChild("Expansion")
+ local access=expansion and expansion:FindFirstChild("ReservedAccess")
+ local ground=expansion and expansion:FindFirstChild("BuildGround")
+ local main=gameplay and gameplay:FindFirstChild("MainPath")
+ local buildings=env and env:FindFirstChild("Buildings")
+ if buildings then for _,building in ipairs(buildings:GetChildren())do
+  if building.Name=="GuildHallLv1" or building.Name=="GuildHallLv2" then
+   local foundation=building:FindFirstChild("Foundation");local threshold=building:FindFirstChild("Threshold")
+   context.island.insideHall=planarContains(foundation)
+   if threshold and threshold:IsA("BasePart") then
+    local p=threshold.CFrame:PointToWorldSpace(Vector3.new(0,0,threshold.Size.Z/2+3))
+    context.island.threshold={x=p.X,y=threshold.Position.Y+threshold.Size.Y/2,z=p.Z,anchor=threshold}
+    local localRoot=threshold.CFrame:PointToObjectSpace(Vector3.new(x,threshold.Position.Y,z))
+    context.island.insideHall=context.island.insideHall or (math.abs(localRoot.X)<=threshold.Size.X/2 and localRoot.Z>=-threshold.Size.Z/2 and localRoot.Z<threshold.Size.Z/2+2)
+    if math.abs(localRoot.X)>2 then
+     local center=threshold.CFrame:PointToWorldSpace(Vector3.new(0,0,localRoot.Z))
+     context.island.hallApproach={x=center.X,y=threshold.Position.Y+threshold.Size.Y/2,z=center.Z,anchor=threshold}
+    end
+   end
+  end
+ end end
+ local nature=env and env:FindFirstChild("Nature")
+ context.island.supported=planarContains(nature and nature:FindFirstChild("Ground")) or planarContains(ground) or planarContains(bridge) or planarContains(promenade)
+ if bridge and bridge:IsA("BasePart") and promenade and promenade:IsA("BasePart") and access and access:IsA("BasePart") and ground and ground:IsA("BasePart") and main and main:IsA("BasePart") then
+  local onPromenade=planarContains(promenade);local onBridge=planarContains(bridge)
+  local aligned=planarContains(ground) and math.abs(x-bridge.Position.X)<3
+  local eastbound=math.abs(z-access.Position.Z)<3 and x>=main.Position.X-3
+  local near=bridge.CFrame:PointToWorldSpace(Vector3.new(0,0,bridge.Size.Z/2-2))
+  local function point(px:number,pz:number,part:BasePart):any return {x=px,y=part.Position.Y+part.Size.Y/2,z=pz,anchor=part}end
+  context.island.legs={
+   {point=point(main.Position.X,access.Position.Z,main),reached=onPromenade or onBridge or aligned or eastbound,label="Follow the island path"},
+   {point=point(bridge.Position.X,access.Position.Z,access),reached=onPromenade or onBridge or aligned,label="Reach your island bridge"},
+   {point=point(near.X,near.Z,bridge),reached=onPromenade or onBridge,label="Reach your island bridge"},
+   {point=point(bridge.Position.X,promenade.Position.Z,promenade),reached=onPromenade,label="Cross the bridge"},
+  }
+ end
+ local town=world:FindFirstChild("City");local roads=town and town:FindFirstChild("Roads")
+ local function road(part:BasePart,width:number,length:number)
+  local a=part.CFrame:PointToWorldSpace(Vector3.new(0,0,-length/2));local b=part.CFrame:PointToWorldSpace(Vector3.new(0,0,length/2))
+  local y=part.Position.Y+part.Size.Y/2
+  table.insert(context.roads,{a={x=a.X,z=a.Z,y=y,anchor=part},b={x=b.X,z=b.Z,y=y,anchor=part},width=width,y=y,anchor=part})
+ end
+ if roads then for _,part in ipairs(roads:GetChildren())do
+  if part:IsA("BasePart") then local width=part:GetAttribute("RouteWidth");if type(width)=="number"then road(part,width,part.Size.Z-width)end end
+ end end
+ -- Courtyards are authored walkable connectors; ray checks reject occupied legs.
+ if town then for _,district in ipairs(town:GetChildren())do
+  local courtyard=district:FindFirstChild("Courtyard")
+  if courtyard and courtyard:IsA("BasePart")then road(courtyard,courtyard.Size.X,courtyard.Size.Z)end
+ end end
+ context.clearSegment=function(target:any):boolean
+  local character=player.Character;local root=character and character:FindFirstChild("HumanoidRootPart")
+  if not character or not root or not root:IsA("BasePart")then return false end
+  local params=RaycastParams.new();params.FilterType=Enum.RaycastFilterType.Exclude;params.FilterDescendantsInstances={character};params.RespectCanCollide=true
+  local start=Vector3.new(x,root.Position.Y,z);local finish=Vector3.new(target.x,root.Position.Y,target.z)
+  return workspace:Raycast(start,finish-start,params)==nil
  end
  -- CampaignWorld marks the current objective on its owner model and enables only
  -- outstanding actionable markers (tour/track progress and delivery choices included).
@@ -59,7 +112,7 @@ local function navigationContext(player:Player,x:number,z:number):any
      local p=part.Position;local targetZone=if City.contains(p.X,p.Z) then "City" else City.region(p.X,p.Z)
      if not targetZone and onIsland(p.X,p.Z) then targetZone="Guild" end
      local squared=(x-p.X)^2+(z-p.Z)^2
-     if targetZone and squared<distance then distance=squared;best={x=p.X,z=p.Z,zone=targetZone}end
+     if targetZone and squared<distance then distance=squared;best={x=p.X,y=p.Y+part.Size.Y/2,z=p.Z,zone=targetZone,anchor=part}end
     end
    end
   end
@@ -83,6 +136,7 @@ return function()
 	local connections: {RBXScriptConnection}={}
 	local function connect(signal: RBXScriptSignal,callback: any) table.insert(connections,signal:Connect(callback)) end
 	local gui=Instance.new("ScreenGui");gui.Name="CityNavigation";gui.ResetOnSpawn=false;gui.ScreenInsets=Enum.ScreenInsets.CoreUISafeInsets;gui.DisplayOrder=20;gui.Parent=player:WaitForChild("PlayerGui")
+	local beacon=require(script.Parent.Parent.UI.Components.WaypointBeacon)(gui)
 	local function label(parent: Instance,key: string,size: UDim2,pos: UDim2): TextLabel
 		local t=Instance.new("TextLabel");t.Size=size;t.Position=pos;t.Text=key;t.TextSize=16;t.TextWrapped=true;t.Font=Enum.Font.GothamMedium;t.BackgroundColor3=Art.UI.Background;t.TextColor3=Art.UI.Text;t.BorderSizePixel=0;t.Parent=parent;return t
 	end
@@ -170,7 +224,7 @@ return function()
 		refresh()
 	end)
 	refresh()
-	gui.Destroying:Connect(function() for _,connection in ipairs(connections) do connection:Disconnect() end;table.clear(connections) end)
+	gui.Destroying:Connect(function() beacon.destroy();for _,connection in ipairs(connections) do connection:Disconnect() end;table.clear(connections) end)
 	task.spawn(function() while gui.Parent do
 		task.wait(.2);if not gui.Parent then break end
 		local root=player.Character and player.Character:FindFirstChild("HumanoidRootPart") :: BasePart?
@@ -198,12 +252,13 @@ return function()
 		if civic then banner.Text=Locale.translate(language,civic).." · "..Locale.translate(language,"Safe zone")end
 		if inGuild then banner.Text=Locale.translate(language,"Personal Guild") end
 		direction.Visible=false
-		local target=selected
+		-- A quest selection is an intent, not a renderable destination. During
+		-- respawn or before the first snapshot, keep it pinned but unresolved.
+		local target=if selected and selected.quest then nil else selected
 		if selected and selected.quest and root and snapshot and snapshot.data then
 			local pin=player.PlayerGui:GetAttribute("GuildbornePinnedQuest")
 			local quest=QuestTarget(snapshot.data,snapshot.catalog,if type(pin)=="string" then pin else nil)
 			target=QuestRoute(quest,snapshot.catalog,root.Position.X,root.Position.Z,context)
-			if civic then local d=(Civic.Definitions :: any)[civic];target={name="Central City",x=d.X-58,z=d.Z+88,zone=civic,kind="Portal",final=false}end
 			if not target then banner.Text=Locale.translate(language,"Quest route unavailable. Keep tracking and follow the objective instructions.") end
 		end
 		if root and (district or region or civic or inGuild) and target and target.x then
@@ -223,6 +278,12 @@ return function()
 			end
 		elseif not district and not region and not civic and selected and not selected.quest then selected=nil end
 		if banner.Visible and os.clock()<arrivedUntil then banner.Text=Locale.translate(language,"Destination reached") end
+		local showRoute=selected and selected.quest and not panel.Visible and not MenuRouter.isBlocking()
+		if showRoute then
+			banner.Visible=false;direction.Visible=false
+			local distance=if root and target then math.floor((Vector2.new(root.Position.X,root.Position.Z)-Vector2.new(target.x,target.z)).Magnitude+.5)else nil
+			beacon.update(target,distance,target==nil,language)
+		else beacon.update(nil,nil,false,language)end
 		if root then marker.Position=point(root.Position.X,root.Position.Z);marker.Visible=district~=nil end
 		if root and region then regionalMarker.Position=regionalPoint(region,root.Position.X,root.Position.Z);regionalMarker.Visible=true else regionalMarker.Visible=false end
 		if root and civic then civicMap.update(civic,language,root.Position.X,root.Position.Z)end
