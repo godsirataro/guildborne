@@ -131,3 +131,9 @@ accepted the bounded ten-Central/six-local coverage for this write scope; shared
 host interaction remains a follow-up in CivicCityWorld, not a passed feature.
 Current full Roblox-aware analysis exits 0 with nine pre-existing GUI `Services`
 warnings. Final full-regression receipts are delivered with the source commit.
+
+Controller review strengthened the client probe: before each reduced-motion,
+far-culling and Destroy restoration assertion it now requires Work weight > .99
+and an actually non-rest C0. It returns to near work before Destroy. Both probe
+entry paths reject non-Studio or nonzero PlaceId/GameId before creating fixtures.
+These checks are compiled locally; actual execution remains Controller-owned.

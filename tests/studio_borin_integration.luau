@@ -30,6 +30,12 @@ local function clientFixture(animator:any):any
    repeat if check()then return end;task.wait(.05) until os.clock()>deadline
    error("stationary fixture timed out: "..label)
   end
+  local function waitForActivePose(label:string)
+   waitFor(function()
+    return model:GetAttribute("NpcLifeActivity")=="Work"
+     and (model:GetAttribute("NpcLifeWorkWeight") or 0)>.99 and motor.C0~=originalMotor
+   end,label)
+  end
   waitFor(function()return (model:GetAttribute("NpcLifeWorkWeight") or 0)>.99 end,"day work")
   dialogue.Visible=true
   waitFor(function()return model:GetAttribute("NpcLifeActivity")=="Interact" and (model:GetAttribute("NpcLifeWorkWeight") or 1)<.01 end,"visible dialogue pauses work")
@@ -37,14 +43,19 @@ local function clientFixture(animator:any):any
   waitFor(function()return model:GetAttribute("NpcLifeActivity")=="Work" and (model:GetAttribute("NpcLifeWorkWeight") or 0)>.99 end,"dialogue close resumes")
   Lighting.ClockTime=23
   waitFor(function()return model:GetAttribute("NpcLifeActivity")=="Rest" and (model:GetAttribute("NpcLifeWorkWeight") or 1)<.01 end,"night rests")
-  Lighting.ClockTime=10.5;workspace:SetAttribute(Motion.ReducedMotionAttribute,true)
+  Lighting.ClockTime=10.5
+  waitForActivePose("active work before reduced motion")
+  workspace:SetAttribute(Motion.ReducedMotionAttribute,true)
   waitFor(function()return motor.C0==originalMotor end,"reduced motion restores joints")
   workspace:SetAttribute(Motion.ReducedMotionAttribute,false)
+  waitForActivePose("active work before far culling")
   camera.CFrame=CFrame.lookAt(root.Position+Vector3.new(0,4,300),root.Position)
   waitFor(function()return model:GetAttribute("NpcLifeTier")=="Far" and motor.C0==originalMotor end,"far restores joints")
+  camera.CFrame=CFrame.lookAt(root.Position+Vector3.new(0,4,12),root.Position)
+  waitForActivePose("active near work before destroy")
   assert(root.CFrame==originalRoot,"stationary NPC moved")
   controller.Destroy();controller=nil;assert(motor.C0==originalMotor,"destroy did not restore")
-  result={status="PASS_CLIENT_FIXTURE_ONLY",npcId="cartographer_nyra",dialogueFixture=true,rootPreserved=true,restored=true,questJourneyTested=false,multiplayerTested=false}
+  result={status="PASS_CLIENT_FIXTURE_ONLY",npcId="cartographer_nyra",dialogueFixture=true,rootPreserved=true,restored=true,activeRestorePreconditions=3,questJourneyTested=false,multiplayerTested=false}
  end)
  if controller then controller.Destroy()end
  model:Destroy();screen:Destroy();added:Destroy();removed:Destroy()
@@ -54,6 +65,8 @@ local function clientFixture(animator:any):any
  return result
 end
 return function(options:any?):any
+ assert(game:GetService("RunService"):IsStudio(),"fixture requires Roblox Studio")
+ assert(game.PlaceId==0 and game.GameId==0,"fixture requires an unpublished isolated PlaceId=0/GameId=0 candidate")
  if options and options.animator then return clientFixture(options.animator)end
  local Shared=game.ReplicatedStorage.Shared
  local B=require(Shared.Presentation.BorinPresentation)
