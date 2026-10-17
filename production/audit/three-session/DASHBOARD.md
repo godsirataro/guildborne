@@ -1,3 +1,21 @@
+# Four-session production control — 2026-10-18
+
+IN PROGRESS. Source f7a673d pushed on codex/three-session-integration; single shared ledger four-session-v4.sqlite3. Fresh quota:86%used/14%remaining. Stop starting work near5%, noreset. No new PR, merge, publishing, spending or production DataStore mutation.
+
+| Stream | Verified delivery | Current work / unmet acceptance |
+| --- | --- | --- |
+| S13 Map | Arrival9b79d5c integrated4b04c96; exact5185eb…d9495 imported116placements, collisionhashmatched. Actual low/overview Studio views inspected;11GUIstatesrestored. | New centralcourt/arch composition wave confirmed actively running today. Blenderonly. Rectangular grass/crosspaths, sparsecenter, flatground and facetedcolors still need improvement; Lv100 connectedworld remains incomplete. |
+| S14 GUI | Party/tracker5804ea2 and menuguardc029 integrated. Actual Management blocks inputs, closing restores them. Root Ironveilroutes41ff1c8 includes instruction-only ready state. | Idle delivered. Actual chapter7/8 routes and claiminstruction passed; laterprotection/guardian/trial runtime, allfiveheroes and physicalmobile/art acceptance pending. |
+| S15 Combat/VFX | Fireball03b0610 integrated85da735. Actual clientfixture Charge9/Travel2/Impact8, cancellation/expiry/Low/distance passed; cleanupzero. Prior Walk331frame fixtures passed. | Idle delivered. Ordinarycombat visualquality, feet/motion smoothness, realaudio and deviceperformance remain pending. |
+| S17 NPC | Attentione3479f3 integrated6504c8b; actual clienthintfixture PASS with rootpreserved/cleanup. Prior12real civicprompt cases passed. | Idle delivered. Actualmodularkit naturalness, accepted-speaker multiplayerreplacement, fullNPC roster/art remain pending. |
+| Controller | Ordinaryplay reached Lv22/Hall2 with2heroes; chapters1–7 rewardsclaimed; chapter8 signal/choice/escort finished and ready. | HistoricalMemoryevidence only: allStudio processes nowclosed. No persistentearnedprofileclaim. Currentfullcombinedbaseline runninghandle21730; do notrestart or claimpass untilterminal. |
+
+Current build939a0471…7b9da contains116placementMap, fullIronveilroutes, NPCattention, Fireball andmenuguard. PriorStudio3c89 confirmedMemory,PlaceId/GameId0, actualartimport andvisuals. Startupasset203785492 attributedtoinstalledRojoaudio-preloaddefect; no guessedgameassetreplacement. CorePackageswarnings separate.
+
+Evidence: ARRIVAL_WORLD_REVIEW.md, IRONVEIL_ROUTE_RUNTIME.md, MENU_GUARD_RUNTIME.md, FIREBALL_RUNTIME.md, NPC_ATTENTION_RUNTIME.md, ROJO_ASSET_WARNING.md, GOAL_CHECKPOINT.md. Puretests, sourcecopies, wholebuildstartup, ordinarygameplay, device andhumanapproval remain distinct. No overallcompletionpercentage inferred.
+
+## Historical snapshots below — superseded
+
 # Four-session production control — latest verified checkpoint 2026-10-17
 
 IN PROGRESS. Controller source53d43f0 is pushed on codex/three-session-integration. Canonical shared ledger is four-session-v4.sqlite3 under C:/Work/MySelf/Guildborne/build/agentic; v3 below is retired history. Goal remains active, last account check25% remaining, stop starting work near5%. No new PR/merge/publishing/spending/production DataStore changes.
