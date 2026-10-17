@@ -225,4 +225,28 @@ test("portrait combat pad clears map while compact and centered layouts stay unc
  local desktop=layoutFor(1366,768)
  assert(not desktop.topAligned and desktop.padTop==64 and desktop.padHeight==232)
 end)
+test("shared HUD rectangles retain all essential controls without collisions at mode boundaries",function()
+ local layoutFor=require(game.ReplicatedStorage.Shared.Data.CombatHudLayout)
+ local function separate(a,b) return a.x+a.w<=b.x or b.x+b.w<=a.x or a.y+a.h<=b.y or b.y+b.h<=a.y end
+ for _,w in ipairs({320,390,499,500,599,600,687,688,796,900,1366}) do
+  for _,h in ipairs({240,279,280,319,320,359,360,400,449,450,569,570,639,640,759,760,844}) do
+   local layout=layoutFor(w,h)
+   local regions={layout.rosterRect,layout.padRect,layout.ordersRect,layout.mapRect}
+   if layout.showHealth then table.insert(regions,layout.healthRect) end
+   for i,a in ipairs(regions) do
+    assert(a.x>=0 and a.y>=60 and a.x+a.w<=w and a.y+a.h<=h,"HUD outside "..w.."x"..h)
+    for j=i+1,#regions do assert(separate(a,regions[j]),"HUD overlap "..i.."/"..j.." at "..w.."x"..h) end
+   end
+   assert(layout.mapRect.h>=44 and layout.mapRect.w>=44 and layout.buttonWidth>=44)
+   assert(layout.ordersRect.h==44 and layout.ordersRect.w>=106 and layout.ordersRect.w<=360)
+   if layout.collapsed then assert(layout.selectionHeight==92,"Actor and cycle must both fit") end
+   assert(layout.showHealth==(not layout.short or h>=280))
+   assert(layout.showWorldLabels==not layout.compact,"Floating labels must not cover compact commands")
+  end
+ end
+ local tiny=layoutFor(320,240)
+ assert(tiny.mapRect.x==8 and tiny.mapRect.y==164 and tiny.ordersRect.y==180 and not tiny.showHealth)
+ local landscape=layoutFor(796,400)
+ assert(landscape.mapRect.x==358 and landscape.mapRect.y==64)
+end)
 print(passed.." gameplay GUI behavior tests passed (simulation only).")

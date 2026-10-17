@@ -86,16 +86,11 @@ test("waypoint placement avoids actual combat regions or hides when no safe card
   assert(f.card:FindFirstChild("NextInstruction").TextSize==(if w<600 or h<450 then 13 else 15))
   local layout=CombatLayout(w,h)
   local beacon={x=x,y=y,w=bw,h=bh}
-  local roster={x=8,y=64,w=layout.selectionWidth,h=layout.selectionHeight}
-  local mapButton={x=w-138,y=60,w=130,h=48}
-  local pad={x=w-8-layout.padWidth,y=if layout.topAligned then layout.padTop else h*.5-layout.padHeight*.5,w=layout.padWidth,h=layout.padHeight}
-  local health={x=w*(1-layout.healthScale)/2,y=h-layout.healthBottom-layout.healthHeight,w=w*layout.healthScale,h=layout.healthHeight}
-  local ordersWidth=math.min(w*.9,360)
-  local orders={x=(w-ordersWidth)/2,y=h-layout.ordersBottom-44,w=ordersWidth,h=44}
+  local roster,mapButton,pad,health,orders=layout.rosterRect,layout.mapRect,layout.padRect,layout.healthRect,layout.ordersRect
   assert(separate(beacon,roster),"Waypoint overlaps actual combat roster at "..w.."x"..h)
   assert(separate(beacon,mapButton),"Waypoint overlaps map button at "..w.."x"..h)
   assert(separate(beacon,pad),"Waypoint overlaps combat skill pad at "..w.."x"..h)
-  assert(separate(beacon,health),"Waypoint overlaps actor health at "..w.."x"..h)
+  assert(not layout.showHealth or separate(beacon,health),"Waypoint overlaps actor health at "..w.."x"..h)
   assert(separate(beacon,orders),"Waypoint overlaps companion orders at "..w.."x"..h)
  end
  f.api.destroy()

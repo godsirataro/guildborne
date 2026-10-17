@@ -176,21 +176,22 @@ return function()
 		local layout=Layout(viewport.X,viewport.Y)
 		local compact=layout.compact
 		-- Short viewports use a two-column pad; tall ones retain a narrow side rail.
-		buttons.AnchorPoint=Vector2.new(1,if layout.topAligned then 0 else .5)
-		buttons.Position=if layout.topAligned then UDim2.new(1,-8,0,layout.padTop) else UDim2.new(1,-8,.5,0)
+		buttons.AnchorPoint=Vector2.zero
+		buttons.Position=UDim2.fromOffset(layout.padRect.x,layout.padRect.y)
 		buttons.Size=UDim2.fromOffset(layout.padWidth,layout.padHeight)
 		local controls={basic,skills[1],skills[2],skills[3]}
 		for index,b in ipairs(controls) do
 			b.Size=UDim2.fromOffset(layout.buttonWidth,52)
 			b.Position=if compact then UDim2.fromOffset(((index-1)%2)*(layout.buttonWidth+8),math.floor((index-1)/2)*56) else UDim2.fromOffset(0,(index-1)*60)
 		end
-		health.Position=UDim2.new(.5,0,1,-layout.healthBottom)
-		health.Size=UDim2.new(layout.healthScale,0,0,layout.healthHeight)
+		health.AnchorPoint=Vector2.zero
+		health.Position=UDim2.fromOffset(layout.healthRect.x,layout.healthRect.y)
+		health.Size=UDim2.fromOffset(layout.healthRect.w,layout.healthRect.h)
 		local playerRoot=player.Character and player.Character:FindFirstChild("HumanoidRootPart") :: BasePart?
 		local regional=player:GetAttribute("RegionalCombatEnabled")
 		local inCity=playerRoot~=nil and (City.contains(playerRoot.Position.X,playerRoot.Position.Z) or
 			(City.region(playerRoot.Position.X,playerRoot.Position.Z)~=nil and not (type(regional)=="string" and City.regionCombat(regional,playerRoot.Position.X,playerRoot.Position.Y,playerRoot.Position.Z))))
-		local visible=not menuOpen() and player:GetAttribute("NoviceTrialHUDActive")~=true and workspace:FindFirstChild("NoviceCourse_"..player.UserId)==nil; health.Visible=visible; buttons.Visible=visible and not inCity and c~=nil and c:GetAttribute("ClassId")~=nil
+		local visible=not menuOpen() and player:GetAttribute("NoviceTrialHUDActive")~=true and workspace:FindFirstChild("NoviceCourse_"..player.UserId)==nil; health.Visible=visible and layout.showHealth; buttons.Visible=visible and not inCity and c~=nil and c:GetAttribute("ClassId")~=nil
 		selection.Visible=visible
 		local grid=layout.grid
 		selection.Size=UDim2.fromOffset(layout.selectionWidth,layout.selectionHeight)
@@ -198,7 +199,9 @@ return function()
 		local inputMode=Bindings.mode(Input:GetLastInputType().Name)
 		nextActor.Visible=layout.collapsed and #party>0
 		nextActor.Text=T("Next hero")..Bindings.hint("Cycle",inputMode)
-		orders.Position=UDim2.new(.5,0,1,-layout.ordersBottom)
+		orders.AnchorPoint=Vector2.zero
+		orders.Position=UDim2.fromOffset(layout.ordersRect.x,layout.ordersRect.y)
+		orders.Size=UDim2.fromOffset(layout.ordersRect.w,layout.ordersRect.h)
 		orders.Visible=visible and not inCity and selectedId~="player" and c~=nil
 		for _,b in ipairs(orderButtons) do
 			b.Text=T(b.Name)..Bindings.hint(b.Name,inputMode)

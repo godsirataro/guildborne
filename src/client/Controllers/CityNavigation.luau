@@ -11,6 +11,7 @@ local Waypoint=require(game.ReplicatedStorage.Shared.Data.CityWaypoint)
 local QuestTarget=require(game.ReplicatedStorage.Shared.Data.QuestTracker)
 local Rules=require(game.ReplicatedStorage.Shared.Data.Expansion)
 local IslandLayout=require(game.ReplicatedStorage.Shared.Config.GuildIslandLayout)
+local CombatLayout=require(game.ReplicatedStorage.Shared.Data.CombatHudLayout)
 -- Read the replicated owner and real anchors each tick: islands and Hall stations can move.
 local function navigationContext(player:Player,x:number,z:number):any
  local context:any={playerId=player.UserId,inGuild=false,authored=true,roads={}}
@@ -210,6 +211,12 @@ return function()
 		local t=Instance.new("TextLabel");t.Size=size;t.Position=pos;t.Text=key;t.TextSize=16;t.TextWrapped=true;t.Font=Enum.Font.GothamMedium;t.BackgroundColor3=Art.UI.Background;t.TextColor3=Art.UI.Text;t.BorderSizePixel=0;t.Parent=parent;return t
 	end
 	local toggle=Instance.new("TextButton");toggle.Name="CityMapButton";toggle.Size=UDim2.fromOffset(130,48);toggle.Position=UDim2.new(1,-138,0,60);toggle.BackgroundColor3=Art.UI.Background;toggle.TextColor3=Art.UI.Accent;toggle.TextSize=16;toggle.Parent=gui
+	local function placeMapButton()
+		local layout=CombatLayout(gui.AbsoluteSize.X,gui.AbsoluteSize.Y);local rect=layout.mapRect
+		toggle.Position=UDim2.fromOffset(rect.x,rect.y);toggle.Size=UDim2.fromOffset(rect.w,rect.h)
+		toggle.TextWrapped=true;toggle.TextSize=if layout.compact then 14 else 16
+	end
+	connect(gui:GetPropertyChangedSignal("AbsoluteSize"),placeMapButton);placeMapButton()
 	local banner=label(gui,"",UDim2.new(0,130,0,64),UDim2.new(1,-138,0,112));banner.Name="DistrictName";banner.TextSize=14
 	local direction=label(gui,"↑",UDim2.fromOffset(40,40),UDim2.new(1,-90,0,180));direction.Name="WaypointDirection";direction.TextSize=30;direction.BackgroundTransparency=1;direction.TextColor3=Art.UI.Accent;direction.Visible=false
 	local panel=Instance.new("Frame");panel.Name="CityMap";panel.AnchorPoint=Vector2.new(.5,.5);panel.Position=UDim2.fromScale(.5,.5);panel.Size=UDim2.fromScale(.94,.78);panel.BackgroundColor3=Art.UI.Background;panel.Visible=false;panel.Parent=gui
@@ -357,6 +364,9 @@ return function()
 			local distance=if root and target and target.x then math.floor((Vector2.new(root.Position.X,root.Position.Z)-Vector2.new(target.x,target.z)).Magnitude+.5)else nil
 			beacon.update(target,distance,target==nil,language,heading)
 		else beacon.update(nil,nil,false,language);if selected and selected.quest then direction.Visible=false;if menuBlocking()then banner.Visible=false end end end
+		-- Compact controls own these pixels. Fold only floating location text and
+		-- its arrow; destination state, map access and quest-beacon routing remain.
+		if not CombatLayout(gui.AbsoluteSize.X,gui.AbsoluteSize.Y).showWorldLabels then banner.Visible=false;direction.Visible=false end
 		if root then marker.Position=point(root.Position.X,root.Position.Z);marker.Visible=district~=nil end
 		if root and region then regionalMarker.Position=regionalPoint(region,root.Position.X,root.Position.Z);regionalMarker.Visible=true else regionalMarker.Visible=false end
 		if root and civic then civicMap.update(civic,language,root.Position.X,root.Position.Z)end

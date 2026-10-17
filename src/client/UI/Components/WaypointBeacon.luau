@@ -51,20 +51,15 @@ return function(gui: ScreenGui)
 		local narrow = gui.AbsoluteSize.X < 600 or short
 		card.AnchorPoint = if narrow then Vector2.new(1, 0) else Vector2.new(.5, 0)
 		local combat = CombatLayout(gui.AbsoluteSize.X, gui.AbsoluteSize.Y)
-		local padBottom = if combat.topAligned then combat.padTop + combat.padHeight else gui.AbsoluteSize.Y / 2 + combat.padHeight / 2
+		local padBottom = combat.padRect.y + combat.padRect.h
 		local cardY = math.max(112, padBottom + 8)
 		card.Position = if narrow then UDim2.new(1, -8, 0, cardY) else UDim2.new(.5, 0, 0, 66)
 		card.Size = UDim2.fromOffset(if narrow and gui.AbsoluteSize.X < 600 then 130 else 260, if short then 56 else 96)
 		local w, h = gui.AbsoluteSize.X, gui.AbsoluteSize.Y
 		local bw, bh = if narrow and gui.AbsoluteSize.X < 600 then 130 else 260, if short then 56 else 96
 		local rosterRight = 8 + combat.selectionWidth
-		local blocked = {
-			{x=8,y=64,w=combat.selectionWidth,h=combat.selectionHeight},
-			{x=w-138,y=60,w=130,h=48},
-			{x=w-8-combat.padWidth,y=padBottom-combat.padHeight,w=combat.padWidth,h=combat.padHeight},
-			{x=w*(1-combat.healthScale)/2,y=h-combat.healthBottom-combat.healthHeight,w=w*combat.healthScale,h=combat.healthHeight},
-			{x=(w-math.min(w*.9,360))/2,y=h-combat.ordersBottom-44,w=math.min(w*.9,360),h=44},
-		}
+		local blocked = {combat.rosterRect,combat.mapRect,combat.padRect,combat.ordersRect}
+		if combat.showHealth then table.insert(blocked,combat.healthRect) end
 		local candidates = {
 			{x=if narrow then w-8-bw else (w-bw)/2,y=if narrow then cardY else 66},
 			{x=rosterRight+8,y=112},
