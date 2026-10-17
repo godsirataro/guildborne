@@ -100,3 +100,26 @@ EnemyHealth=0/700, PlayerHealth=36/47; Sentinel defeated1/1, Skill hits3/3,
 Warnings dodged1/1. Left trial and opened Guild menu, which showed Trial passed:
 Mage. Clicked Choose this class, then the explicit Confirm first class button.
 This is isolated Memory first-class selection, not a production save change.
+
+## Chapter six completed: guild and first companion
+
+Walked to Clear the abandoned Hall alone and entered its normal Mage encounter.
+Used Q/F and reactive A/D warning movement. Actual result: Hall Sentinel health
+0/360, player HP47/47, TrialStatus=Won and ReceiptDelivered=true. Left trial,
+walked to Register your personal guild and pressed E. Guild UI offered the
+free level-10 companion choice. Kept Warrior, clicked Found guild with Warrior,
+then Confirm free guild founding.
+
+Actual post-confirmation state: CurrentZone=Guild, character position near
+(0,4,23), UI 0 Gold / Hall Lv1 and Personal Guild / Hall Lv1. Replicated actual
+player model: ClassId=Mage, Level10, XP450, WeaponId=mage_staff. Owned Warrior:
+Level10, WeaponId=training_sword, PartySlot1, HeroState=Following. Other owned
+class models were Available at level1; these are not claimed as an active
+five-hero party. No production persistence or currency writes were performed.
+
+This completes the observed six-chapter ordinary-input onboarding route in this
+single unsaved Memory session. It does not certify rejoin/save persistence,
+mobile inputs, multiplayer, every class's full solo trial, or the later
+quest-to-Greenwood-and-five-hero combat journey. Roof-corrected source and 14px
+tracker commits were integrated on disk during this run but are not the place
+version used for this onboarding evidence.
