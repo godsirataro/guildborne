@@ -1,0 +1,158 @@
+{
+  "status": "LOCAL_REVIEW_ONLY",
+  "utc": "2026-10-17T18:37:43.043133+00:00",
+  "blenderExportExitCode": 0,
+  "blenderInitialComparisonExitCode": 0,
+  "blenderFinalAfterComparisonExitCode": 0,
+  "failedArgumentInvocationExitCode": 1,
+  "artifacts": {
+    "assets/production/world-slice/collision.json": {
+      "bytes": 226210,
+      "sha256": "62803990c066afd9584bdf88c5f44cad70be82a4097146e1688ff36129ea150a"
+    },
+    "assets/production/world-slice/export-report.json": {
+      "bytes": 11819,
+      "sha256": "ec01aa180aaf75b7b63b78f0a6d65af55756cfdd2fe2740d5c687fa17cb1f071"
+    },
+    "assets/production/world-slice/woodland-threshold.blend": {
+      "bytes": 2087335,
+      "sha256": "c7d9fdaa9dd00f802198204b144dbab2eb9b995f48f56fd2db031e1d86b4dc99"
+    },
+    "assets/production/world-slice/woodland-threshold.glb": {
+      "bytes": 3261088,
+      "sha256": "02582edb02b9aefb0b6c19fa792a66743c3a9af4c9a86a6ce23f17d5ec5a2bea"
+    },
+    "assets/production/world-slice/woodland-threshold.png": {
+      "bytes": 2269544,
+      "sha256": "6555cd76bd92877cc82c8c304917b23da5cbd0fed39775c084c145e955dabff6"
+    },
+    "assets/production/world-slice/world-slice.mesh.json": {
+      "bytes": 1635839,
+      "sha256": "011091586afb5416cb2c205b2a3db3e6ca36e4e82a79abe5489b24e6385e825d"
+    },
+    "production/world/quality-slice/CENTRAL_HANDOFF.md": {
+      "bytes": 3872,
+      "sha256": "945fe87b4791c979ee4856cd95cf2217f9c4347bd462a394583ed94470137247"
+    },
+    "production/world/quality-slice/arrival-clearance.json": {
+      "bytes": 1934,
+      "sha256": "201bff4c51d3ee2ba426173c93caf2fe93282ffe9ce93c1466de537574d009b5"
+    },
+    "production/world/quality-slice/central-arch-after.png": {
+      "bytes": 1135385,
+      "sha256": "adb8299877ff293d02aa8889aad695d685cd972a91df604ea2dc7885166a3174"
+    },
+    "production/world/quality-slice/central-arch-before.png": {
+      "bytes": 1123617,
+      "sha256": "f7138704f6077e9ba2962b10a73ec10ae81266809cf39089adb05d8b3fabcaaf"
+    },
+    "production/world/quality-slice/central-authoring.json": {
+      "bytes": 1264,
+      "sha256": "d341a6c64d5e9adc823c9bc8a644470b154227448b9039c687a024ea5781da62"
+    },
+    "production/world/quality-slice/central-before.blend": {
+      "bytes": 1600518,
+      "sha256": "c6e7b961a4716c0caef3489eaa9648c75449105cb7dfd8573d4004b6dc2195c0"
+    },
+    "production/world/quality-slice/central-checks.json": {
+      "bytes": 12923,
+      "sha256": "7778edef25aeecd4020a3ad1a96d9196a46dc960be02d840960c877109392368"
+    },
+    "production/world/quality-slice/central-clearance.json": {
+      "bytes": 1407,
+      "sha256": "97154a9b7d3b0db130c6a4692b1be8e5a8673f0371212165adc3102321208bd6"
+    },
+    "production/world/quality-slice/central-export.log": {
+      "bytes": 9446,
+      "sha256": "f821681acfc5eb26010e8b95b1c244e68e080e126f8c73814e650a210abe28b0"
+    },
+    "production/world/quality-slice/central-initial-checks.json": {
+      "bytes": 12923,
+      "sha256": "ca1f4d604263442b1113bf35c1ee6e91c0f5d9868d76f37744e115ab9b7e6598"
+    },
+    "production/world/quality-slice/central-initial-export.log": {
+      "bytes": 9446,
+      "sha256": "33174536536e26dced7b43a5b98be24d4f605aacbcb6413f54cb078cd397a36f"
+    },
+    "production/world/quality-slice/central-initial-render.log": {
+      "bytes": 936,
+      "sha256": "9973e8913233bb5b4c9bea1e8197e0460d5a4da8cd3cafdec730aaca25db38d9"
+    },
+    "production/world/quality-slice/central-overview-after.png": {
+      "bytes": 1250286,
+      "sha256": "a0a20fc04c386f633321bf37ccf9a7a91b8e7b19af6a1b06f72b7c6d51215a3d"
+    },
+    "production/world/quality-slice/central-overview-before.png": {
+      "bytes": 1239553,
+      "sha256": "3f775565d3d53800e5700d2fa19e7b2f103e53f894a8ab6669ba918cacacb128"
+    },
+    "production/world/quality-slice/central-render-argument-error.log": {
+      "bytes": 710,
+      "sha256": "a311641da80b16bb203f7537d3244f2472f0978a7cae9ea5e68997af8591756d"
+    },
+    "production/world/quality-slice/central-render.log": {
+      "bytes": 525,
+      "sha256": "04b7ce8b0a5308967210953ff77268d6691bb12e0e2803356819f5302ad9d5b0"
+    },
+    "production/world/quality-slice/central-renders.json": {
+      "bytes": 2105,
+      "sha256": "a9cc60bce4cb981e652981c0892dee655d10f27828a28f951e8671c9c5236c90"
+    },
+    "production/world/quality-slice/central-review.json": {
+      "bytes": 830,
+      "sha256": "d5395077f183e6a178da203d0de49917d40e8d564ef2b02741b9b382a4c5fd7d"
+    },
+    "production/world/quality-slice/central-unquantized-export.log": {
+      "bytes": 9446,
+      "sha256": "16b26349a7571454a65d18393704ac61f6d45e2c6bd2c6ec737953da881a5a94"
+    },
+    "production/world/quality-slice/central_recipe.py": {
+      "bytes": 3727,
+      "sha256": "21c83a742e08900e67c6eaeda2530283b5ebdbc369ee276e47688c6350d45a78"
+    },
+    "production/world/quality-slice/check_arrival.py": {
+      "bytes": 8336,
+      "sha256": "ac7cde5ce1251bb9eab5052bbfe2470962ed78cb8d8dba7f39c257a3c6dca6d8"
+    },
+    "production/world/quality-slice/check_central.py": {
+      "bytes": 4663,
+      "sha256": "f3b926f8661acbef296dc15b08ebd941e21c740d6099efef4da403a4cb7163ef"
+    },
+    "production/world/quality-slice/check_silhouette.py": {
+      "bytes": 8361,
+      "sha256": "6d9ffbdb93842d611e5967a6f09cec87a63ffabbe1455e505c2fe3bfb2a9881d"
+    },
+    "production/world/quality-slice/check_terrain_composition.py": {
+      "bytes": 11955,
+      "sha256": "7d71ca59f661215f1e09725dbaf18cdd6e288157f79d2385261cf0f4ad179ac9"
+    },
+    "production/world/quality-slice/render_central_comparison.py": {
+      "bytes": 3271,
+      "sha256": "6196e0e7304d37999065db94d6eb74bcb066db89b60dae807231fa61c46c9d50"
+    },
+    "production/world/quality-slice/silhouette-clearance.json": {
+      "bytes": 3066,
+      "sha256": "800d17bc0a95b5fbcedb76e001d5abf906775d7b0d10cd29597a87f61fb54ef3"
+    },
+    "production/world/quality-slice/terrain-clearance.json": {
+      "bytes": 2861,
+      "sha256": "efc215e68292167dabacfa9a4a82f32790c6be2d0fcf57c4a34b0b1f6f5d93ea"
+    },
+    "production/world/quality-slice/terrain-props-clearance.json": {
+      "bytes": 9693,
+      "sha256": "823561b4ce900f40390a14c3e189e26cd6cddfe13294e5c2e36bf04049acd9d5"
+    },
+    "src/server/Services/WorldQualityAssets.luau": {
+      "bytes": 120063,
+      "sha256": "12a18eeb38930f7698cd573cf3ce3922844cec70bfb93eb7996a39ec77d83417"
+    },
+    "tools/blender_world_slice.py": {
+      "bytes": 19289,
+      "sha256": "04a0ee2feeaec8e71dcc1da583782b7cd6f108b8c476ed31cb72a45b02286d7b"
+    },
+    "tools/verify_world_slice.py": {
+      "bytes": 8376,
+      "sha256": "131e5a4c240e248693154c0aa72c4dadb481f1b3d6bc918a4c8ad0a5c877681b"
+    }
+  }
+}

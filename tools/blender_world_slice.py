@@ -118,6 +118,8 @@ silhouette_recipe=runpy.run_path(str(ROOT/'production/world/quality-slice/silhou
 silhouette_resources=silhouette_recipe['make_silhouette']()
 arrival_resources=runpy.run_path(str(ROOT/'production/world/quality-slice/arrival_recipe.py'))['make_arrival']()
 arrival_by_id={m['id']:m for m in arrival_resources}
+central_resources=runpy.run_path(str(ROOT/'production/world/quality-slice/central_recipe.py'))['make_central']()
+arrival_by_id.update({m['id']:m for m in central_resources})
 terrain_resources=[arrival_by_id.get(m['id'],m) for m in terrain_resources]
 for authored in terrain_resources+silhouette_resources+[arrival_by_id['arrival_charter_sign']]:
  asset=authored['id'];coords=[[round(x,5),round(y-2,5),round(z-1410,5)] for x,y,z in authored['vertices']]

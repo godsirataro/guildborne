@@ -1,8 +1,8 @@
 {
   "status": "OFFLINE_TERRAIN_CLEARANCE_PASS",
-  "sourceMeshSha256": "5185eb847a9ffd2e6caffbe123573f10f4ec91758de732faff8f4cba967d9495",
+  "sourceMeshSha256": "011091586afb5416cb2c205b2a3db3e6ca36e4e82a79abe5489b24e6385e825d",
   "baselineCommit": "768ae4e07a519fbc86a9586e5364f9dfb149f2d6",
-  "checkerSha256": "6872caaf3b8616c4fb333d21ec1832614b81bb9fc5207951125c611c4494523a",
+  "checkerSha256": "7d71ca59f661215f1e09725dbaf18cdd6e288157f79d2385261cf0f4ad179ac9",
   "baselineMeshesPreserved": 27,
   "baselinePlacementsPreserved": 102,
   "removedPatchMeshes": [
@@ -22,11 +22,11 @@
     "GroundLeaf_3_ground_leaf__000"
   ],
   "baselineCollidersSha256": "8157adbb1ccde2feb89c1fa3ce2eb982c29a0bb99acb80f3689ccb41522e04cf",
-  "newMeshes": 4,
-  "newPlacements": 4,
-  "instantiatedTerrainTriangles": 2442,
+  "newMeshes": 2,
+  "newPlacements": 2,
+  "instantiatedTerrainTriangles": 1074,
   "triangleClasses": {
-    "islandSurfaceTriangles": 1368,
+    "islandSurfaceTriangles": 0,
     "bossSurfaceTriangles": 276,
     "bossWallTriangles": 216,
     "islandSkirtTriangles": 582
@@ -82,38 +82,6 @@
     ]
   },
   "placements": [
-    {
-      "name": "terrain_forest_west_terrain_forest_west__000",
-      "meshId": "terrain_forest_west__000",
-      "triangles": 684,
-      "worldMin": [
-        -110.0,
-        2.02,
-        1300.0
-      ],
-      "worldMax": [
-        0.0,
-        2.02,
-        1462.0
-      ],
-      "errors": 0
-    },
-    {
-      "name": "terrain_forest_east_terrain_forest_east__000",
-      "meshId": "terrain_forest_east__000",
-      "triangles": 684,
-      "worldMin": [
-        0.0,
-        2.02,
-        1300.0
-      ],
-      "worldMax": [
-        110.0,
-        2.02,
-        1462.0
-      ],
-      "errors": 0
-    },
     {
       "name": "terrain_boss_floor_terrain_boss_floor__000",
       "meshId": "terrain_boss_floor__000",

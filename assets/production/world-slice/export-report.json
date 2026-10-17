@@ -343,9 +343,9 @@
     {
       "id": "terrain_forest_west",
       "authorship": "Original Guildborne authored surface/rock geometry; existing native gameplay retained",
-      "vertices": 421,
-      "triangles": 684,
-      "materials": 52,
+      "vertices": 793,
+      "triangles": 1328,
+      "materials": 273,
       "chunks": 1
     },
     {
@@ -359,9 +359,9 @@
     {
       "id": "terrain_forest_east",
       "authorship": "Original Guildborne authored surface/rock geometry; existing native gameplay retained",
-      "vertices": 421,
-      "triangles": 684,
-      "materials": 52,
+      "vertices": 793,
+      "triangles": 1328,
+      "materials": 269,
       "chunks": 1
     },
     {
@@ -416,8 +416,8 @@
   "uniqueMeshChunks": 37,
   "placements": 116,
   "authoredObjects": 103,
-  "uniqueTriangles": 43679,
-  "instancedTriangles": 92877,
+  "uniqueTriangles": 44967,
+  "instancedTriangles": 94165,
   "runtimeIds": null,
   "studioTested": false,
   "humanApproved": false,
@@ -428,7 +428,7 @@
     },
     "collision.json": {
       "bytes": 226210,
-      "sha256": "f9c8e8b714cbc355805bbd369f5e47d9a94b0869200e61fe11495e4e74bdab38"
+      "sha256": "62803990c066afd9584bdf88c5f44cad70be82a4097146e1688ff36129ea150a"
     },
     "intake.json": {
       "bytes": 7929,
@@ -447,20 +447,20 @@
       "sha256": "83d8959f9fc56353ed571fbe2dc52e4bcd64508e2399501cd45ac2ce3df0bf8c"
     },
     "woodland-threshold.blend": {
-      "bytes": 1600518,
-      "sha256": "c6e7b961a4716c0caef3489eaa9648c75449105cb7dfd8573d4004b6dc2195c0"
+      "bytes": 2087335,
+      "sha256": "c7d9fdaa9dd00f802198204b144dbab2eb9b995f48f56fd2db031e1d86b4dc99"
     },
     "woodland-threshold.glb": {
-      "bytes": 2846320,
-      "sha256": "f85b570d30ee914af77032ee8491f137a1b478ebecc6be6f5b7dc2f42379015b"
+      "bytes": 3261088,
+      "sha256": "02582edb02b9aefb0b6c19fa792a66743c3a9af4c9a86a6ce23f17d5ec5a2bea"
     },
     "woodland-threshold.png": {
-      "bytes": 2260409,
-      "sha256": "2f62d76f3005897431cc5746d2cc2a8e0c7c1ae97faf1c21beb6512e8018a1f9"
+      "bytes": 2269544,
+      "sha256": "6555cd76bd92877cc82c8c304917b23da5cbd0fed39775c084c145e955dabff6"
     },
     "world-slice.mesh.json": {
-      "bytes": 1588889,
-      "sha256": "5185eb847a9ffd2e6caffbe123573f10f4ec91758de732faff8f4cba967d9495"
+      "bytes": 1635839,
+      "sha256": "011091586afb5416cb2c205b2a3db3e6ca36e4e82a79abe5489b24e6385e825d"
     }
   }
 }

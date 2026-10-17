@@ -1,6 +1,6 @@
 {
   "schemaVersion": 1,
-  "sourceMeshSha256": "5185eb847a9ffd2e6caffbe123573f10f4ec91758de732faff8f4cba967d9495",
+  "sourceMeshSha256": "011091586afb5416cb2c205b2a3db3e6ca36e4e82a79abe5489b24e6385e825d",
   "expectedArtNames": [
     "Caravan_Stable_stable__000",
     "Caravan_Stable_stable__001",
@@ -2184,7 +2184,7 @@
       "name": "terrain_forest_west_terrain_forest_west__000",
       "meshId": "terrain_forest_west__000",
       "position": [
-        -55.0,
+        -59.5,
         2.02,
         1381.0
       ],
@@ -2224,7 +2224,7 @@
       "name": "terrain_forest_east_terrain_forest_east__000",
       "meshId": "terrain_forest_east__000",
       "position": [
-        55.0,
+        59.5,
         2.02,
         1381.0
       ],

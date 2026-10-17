@@ -112,6 +112,9 @@ def main():
  if any(m['id'].startswith(('terrain_arrival_','arrival_')) for m in data['meshes']):
   import runpy
   assert runpy.run_path(str(ROOT/'production/world/quality-slice/check_arrival.py'))['main']()==0
+ if any(m['id'].startswith('terrain_forest_') for m in data['meshes']):
+  import runpy
+  assert runpy.run_path(str(ROOT/'production/world/quality-slice/check_central.py'))['main']()==0
  result=dict(status='OFFLINE_GEOMETRY_PASS',meshes=len(ids),vertices=vertices,triangles=faces,placements=len(names),instancedTriangles=report['instancedTriangles'],studioTested=False)
  print(json.dumps(result,indent=2))
 if __name__=='__main__':main()

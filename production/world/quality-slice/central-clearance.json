@@ -1,0 +1,83 @@
+{
+  "status": "OFFLINE_CENTRAL_PASS",
+  "baseline": "9b79d5c",
+  "sourceMeshSha256": "011091586afb5416cb2c205b2a3db3e6ca36e4e82a79abe5489b24e6385e825d",
+  "checkerSha256": "f3b926f8661acbef296dc15b08ebd941e21c740d6099efef4da403a4cb7163ef",
+  "preservedMeshes": 35,
+  "preservedPlacements": 116,
+  "preservedColliders": 413,
+  "revisedMeshes": [
+    {
+      "meshId": "terrain_forest_west__000",
+      "triangles": 1328,
+      "vertices": 793
+    },
+    {
+      "meshId": "terrain_forest_east__000",
+      "triangles": 1328,
+      "vertices": 793
+    }
+  ],
+  "surfaceTriangles": 2656,
+  "surfaceArea": 22346.0,
+  "expectedArea": 22346.0,
+  "exclusions": [
+    [
+      -9,
+      9,
+      1300,
+      1462
+    ],
+    [
+      -69,
+      -51,
+      1365,
+      1455
+    ],
+    [
+      51,
+      69,
+      1365,
+      1455
+    ],
+    [
+      -69,
+      69,
+      1441,
+      1459
+    ],
+    [
+      -69,
+      69,
+      1366,
+      1384
+    ],
+    [
+      -48,
+      48,
+      1305,
+      1355
+    ],
+    [
+      -10,
+      10,
+      1355,
+      1380
+    ],
+    [
+      -41,
+      -29,
+      1449,
+      1461
+    ],
+    [
+      29,
+      41,
+      1449,
+      1461
+    ]
+  ],
+  "errors": [],
+  "studioTested": false,
+  "limits": "Flat source surfaces only. No new raised geometry; existing sightlines unchanged geometrically. Runtime appearance, telegraph contrast, physics and human art approval not tested."
+}

@@ -1,0 +1,38 @@
+{
+  "status": "ORIGINAL_SOURCE_BLENDER_VALIDATED_NOT_STUDIO_TESTED",
+  "baseline": "9b79d5cde9fced226f795afe01c3bac442985eb5",
+  "sourceMeshSha256": "011091586afb5416cb2c205b2a3db3e6ca36e4e82a79abe5489b24e6385e825d",
+  "recipe": "production/world/quality-slice/central_recipe.py",
+  "recipeSha256": "21c83a742e08900e67c6eaeda2530283b5ebdbc369ee276e47688c6350d45a78",
+  "provenance": "Original ground composition. Existing reviewed CC0 intake/arch/ivy assets inspected and reused unchanged; no external generators, downloads, fonts, paid assets or uploads.",
+  "revisedResources": [
+    "terrain_forest_west__000",
+    "terrain_forest_east__000"
+  ],
+  "preservedMeshes": 35,
+  "preservedPlacements": 116,
+  "preservedColliders": 413,
+  "totalResources": 37,
+  "totalVertices": 32139,
+  "totalUniqueTriangles": 44967,
+  "totalInstancedTriangles": 94165,
+  "netAddedTriangles": 1288,
+  "netAddedVertices": 744,
+  "addedPlacements": 0,
+  "budget": {
+    "trianglesPerRevisedResource": 2000,
+    "palettePerRevisedResource": 320,
+    "totalRevisedTriangles": 4000
+  },
+  "actual": {
+    "revisedTriangles": 2656,
+    "paletteCounts": [
+      273,
+      269
+    ],
+    "surfaceArea": 22346
+  },
+  "runtimeIds": null,
+  "studioTested": false,
+  "humanApproved": false
+}

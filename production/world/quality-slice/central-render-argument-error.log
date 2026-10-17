@@ -1,0 +1,9 @@
+00:02.094  blend            | Read blend: "C:\Work\MySelf\Guildborne-world-runtime\assets\production\world-slice\woodland-threshold.blend"
+00:12.641  render           | Saved: 'C:\Work\MySelf\Guildborne-world-runtime\production\world\quality-slice\central-overview-after.png'
+00:23.922  render           | Saved: 'C:\Work\MySelf\Guildborne-world-runtime\production\world\quality-slice\central-arch-after.png'
+TERRAIN_COMPARISONS_COMPLETE 4
+00:23.953  reports          | ERROR Cannot read file "C:\Work\MySelf\Guildborne-world-runtime\--after-only": No such file or directory
+Blender 5.2.1 LTS (hash 9e2066aef7ef built 2026-08-25 02:38:20)
+unknown argument, loading as file: --after-only
+
+Blender quit

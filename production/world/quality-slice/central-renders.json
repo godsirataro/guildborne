@@ -1,0 +1,81 @@
+{
+  "status": "BLENDER_COMPARISON_NOT_STUDIO",
+  "views": [
+    {
+      "revision": "before",
+      "view": "overview",
+      "cameraWorld": [
+        105,
+        94,
+        1545
+      ],
+      "targetWorld": [
+        0,
+        4,
+        1410
+      ],
+      "lensMm": 35,
+      "source": "production/world/quality-slice/central-before.blend",
+      "sourceSha256": "c6e7b961a4716c0caef3489eaa9648c75449105cb7dfd8573d4004b6dc2195c0",
+      "image": "central-overview-before.png",
+      "sha256": "3f775565d3d53800e5700d2fa19e7b2f103e53f894a8ab6669ba918cacacb128"
+    },
+    {
+      "revision": "before",
+      "view": "arch",
+      "cameraWorld": [
+        40,
+        22,
+        1435
+      ],
+      "targetWorld": [
+        0,
+        7,
+        1380
+      ],
+      "lensMm": 35,
+      "source": "production/world/quality-slice/central-before.blend",
+      "sourceSha256": "c6e7b961a4716c0caef3489eaa9648c75449105cb7dfd8573d4004b6dc2195c0",
+      "image": "central-arch-before.png",
+      "sha256": "f7138704f6077e9ba2962b10a73ec10ae81266809cf39089adb05d8b3fabcaaf"
+    },
+    {
+      "revision": "after",
+      "view": "overview",
+      "cameraWorld": [
+        105,
+        94,
+        1545
+      ],
+      "targetWorld": [
+        0,
+        4,
+        1410
+      ],
+      "lensMm": 35,
+      "source": "assets/production/world-slice/woodland-threshold.blend",
+      "sourceSha256": "c7d9fdaa9dd00f802198204b144dbab2eb9b995f48f56fd2db031e1d86b4dc99",
+      "image": "central-overview-after.png",
+      "sha256": "a0a20fc04c386f633321bf37ccf9a7a91b8e7b19af6a1b06f72b7c6d51215a3d"
+    },
+    {
+      "revision": "after",
+      "view": "arch",
+      "cameraWorld": [
+        40,
+        22,
+        1435
+      ],
+      "targetWorld": [
+        0,
+        7,
+        1380
+      ],
+      "lensMm": 35,
+      "source": "assets/production/world-slice/woodland-threshold.blend",
+      "sourceSha256": "c7d9fdaa9dd00f802198204b144dbab2eb9b995f48f56fd2db031e1d86b4dc99",
+      "image": "central-arch-after.png",
+      "sha256": "adb8299877ff293d02aa8889aad695d685cd972a91df604ea2dc7885166a3174"
+    }
+  ]
+}
