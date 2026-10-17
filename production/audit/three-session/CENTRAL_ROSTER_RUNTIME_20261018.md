@@ -25,3 +25,11 @@ Actual tool screenshots: `central_116_runtime_arch` at (40,22,1435) looking at (
 The irregular shoulders and worn forecourt visibly connect the arch approach better. Roblox daylight still reveals strong triangle color facets, flat sparse ground, a generic arch silhouette and an obvious isolated platform edge. This is incremental visual progress, not completed world art. Ordinary traversal/hero behavior at the revised boundary and combat telegraph contrast remain unverified in this wave.
 
 Usage after this wave: 90% used / 10% remaining. Goal remains ACTIVE and full-game acceptance remains incomplete.
+
+## Additional actual server geometry checks
+
+Eight downward raycasts at street/shoulder/arrival samples hit the native island or expected collision parts with upward normals, at Y2 or street Y2.08. Four real PathfindingService computations (AgentRadius2, AgentHeight5, jumping enabled) succeeded: street through gate 22 waypoints, west shoulder to street 8, east shoulder to street 8, arrival to forecourt 25. None required a jump. Path objects were destroyed. These are actual server geometry/path computations, not avatar walking, hero locomotion or combat-clearance acceptance.
+
+## Next bounded worker wave
+
+Controller released world and GUI scopes before dispatching the next tasks through the connected thread tool. S13 is assigned an original woodland-gate identity pass within existing placement/collision boundaries, with Blender before/after evidence. S14 is assigned improved tall-card glyph readability and surrounding-HUD fixture coverage. Both must claim the shared v4 ledger, review independently, commit locally and release; Studio remains controller-owned. Both received the current 10% remaining usage observation and 5% stop threshold. No completion of these new assignments is claimed here.
