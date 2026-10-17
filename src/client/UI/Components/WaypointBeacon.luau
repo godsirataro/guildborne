@@ -51,7 +51,7 @@ return function(gui: ScreenGui)
 		local narrow = gui.AbsoluteSize.X < 600 or short
 		card.AnchorPoint = if narrow then Vector2.new(1, 0) else Vector2.new(.5, 0)
 		local combat = CombatLayout(gui.AbsoluteSize.X, gui.AbsoluteSize.Y)
-		local padBottom = if combat.topAligned then 64 + combat.padHeight else gui.AbsoluteSize.Y / 2 + combat.padHeight / 2
+		local padBottom = if combat.topAligned then combat.padTop + combat.padHeight else gui.AbsoluteSize.Y / 2 + combat.padHeight / 2
 		local cardY = math.max(112, padBottom + 8)
 		card.Position = if narrow then UDim2.new(1, -8, 0, cardY) else UDim2.new(.5, 0, 0, 66)
 		card.Size = UDim2.fromOffset(if narrow and gui.AbsoluteSize.X < 600 then 130 else 260, if short then 56 else 96)

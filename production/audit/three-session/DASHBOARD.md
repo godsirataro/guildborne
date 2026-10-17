@@ -1,3 +1,19 @@
+# Current four-session checkpoint — 2026-10-18
+
+ACTIVE, incomplete. Controller `938f779` pushed; clean checkout before this dashboard update. Fresh account usage 90% used / 10% remaining; stop initiating work near 5%. Shared ledger remains `four-session-v4.sqlite3`. No PR, merge, publishing, spending or production DataStore changes.
+
+| Stream | Latest integrated evidence | Live next assignment / remaining gates |
+| --- | --- | --- |
+| S13 Map | Central surfaces `ba1aaa1` integrated `014adb2`; actual Studio imported 116 placements, matching art/collision hash `011091…e825d`, 44,967 unique triangles. Actual arch/overview inspected. Four server-computed paths pass without jumps. | Native thread turn `01a14b2e-bcdb-73c1-a951-edd1b1bc5527` confirmed active: original woodland-gate identity in existing footprint. Still no complete Lv100 world, final art, ordinary boundary traversal or mobile performance acceptance. |
+| S14 GUI | Six-actor hierarchy `b9d0029` integrated `9ab3aa3`. 45 local GUI cases; native fixed-canvas EN/TH fit observations and six real fixture clicks passed. Dummy portraits and synthetic state explicitly identified. | Native thread turn `01a14b2e-c10e-7d22-8735-8850f90c7095` confirmed active: larger tall-card glyphs and surrounding-HUD fixture coverage. Full live five-hero integration, physical mobile and final visual acceptance pending. |
+| S15 Combat/VFX | Fireball `03b0610` integrated `85da735`; documented actual client cancellation/expiry/detail fixtures. | Delivered/idle; ordinary combat visual quality, natural contact, imported audio and device cost remain open. |
+| S17 NPC | Attention `e3479f3` integrated `6504c8b`; actual synthetic attention fixture and historical civic prompt checks. Native cast fixture lifecycle passed. | Delivered/idle; full NPC roster, multiplayer replacement, naturalness and art acceptance remain open. |
+| Controller | Latest combined candidate `4161584e…f930d9` running in isolated Memory Studio `f0806b7e-820e-4851-95b8-31a8d226533f`. Mine geometry/cast fixtures passed within documented limits. | Replacing stale callback-only mine probe with an isolated native-prompt fixture; no real profile/progression edits. Historical earned chapter8-ready Memory session closed and cannot be resumed as persisted evidence. |
+
+Full baseline **902 tests / 382 strict files** completed before the latest central/roster changes; it is no longer running. Latest changes have focused checks and actual Studio evidence, not a claimed fresh 902-test run. See [baseline](BASELINE_20261018.md), [central/roster runtime](CENTRAL_ROSTER_RUNTIME_20261018.md), [mine fixtures](IRONVEIL_FIXTURES_20261018.md), and [goal checkpoint](GOAL_CHECKPOINT_20261018.md). Human art/UAT, physical-device, multiplayer and full-world gates remain separate. No overall completion percentage inferred.
+
+## Superseded checkpoint retained below
+
 # Four-session production control — 2026-10-18
 
 IN PROGRESS. Source f7a673d pushed on codex/three-session-integration; single shared ledger four-session-v4.sqlite3. Fresh quota:86%used/14%remaining. Stop starting work near5%, noreset. No new PR, merge, publishing, spending or production DataStore mutation.

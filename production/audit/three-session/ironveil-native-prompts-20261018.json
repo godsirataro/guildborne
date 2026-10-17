@@ -1,0 +1,450 @@
+{
+  "scope": "SYNTHETIC_NATIVE_PROMPTS_NOT_ORDINARY_PROGRESSION",
+  "studio": "f0806b7e-820e-4851-95b8-31a8d226533f",
+  "observations": [
+    {
+      "step": "construct",
+      "result": {
+        "content": [
+          {
+            "type": "text",
+            "text": "{\"invalidated\":false,\"ordinaryProgression\":false,\"retries\":0,\"enabledSelected\":false,\"choices\":[],\"level\":35,\"failed\":false,\"avatarDelta\":0,\"objectives\":[],\"destroyed\":false,\"forbiddenWorldCalls\":0,\"pending\":false,\"receipts\":[],\"zoneUnchanged\":true,\"minePresent\":true,\"receiptAttempts\":0,\"claimed\":6,\"profileWrites\":0,\"notifications\":0,\"characterUnchanged\":true,\"promptCount\":49,\"synthetic\":true}"
+          }
+        ],
+        "isError": false
+      }
+    },
+    {
+      "step": "inspect_ironveil_scales_scale_1",
+      "result": {
+        "content": [
+          {
+            "type": "text",
+            "text": "{\"invalidated\":false,\"ordinaryProgression\":false,\"retries\":0,\"enabledSelected\":false,\"choices\":[],\"selected\":\"inspect_ironveil_scales_scale_1\",\"failed\":false,\"avatarDelta\":0,\"objectives\":[],\"destroyed\":false,\"minePresent\":true,\"forbiddenWorldCalls\":0,\"pending\":false,\"receipts\":[],\"zoneUnchanged\":true,\"level\":35,\"receiptAttempts\":0,\"claimed\":6,\"profileWrites\":0,\"notifications\":0,\"characterUnchanged\":true,\"promptCount\":49,\"synthetic\":true}"
+          }
+        ],
+        "isError": false
+      }
+    },
+    {
+      "step": "inspect_ironveil_scales_scale_2",
+      "result": {
+        "content": [
+          {
+            "type": "text",
+            "text": "{\"invalidated\":false,\"ordinaryProgression\":false,\"retries\":0,\"enabledSelected\":false,\"choices\":[],\"selected\":\"inspect_ironveil_scales_scale_2\",\"failed\":false,\"avatarDelta\":0,\"objectives\":[],\"destroyed\":false,\"minePresent\":true,\"forbiddenWorldCalls\":0,\"pending\":false,\"receipts\":[],\"zoneUnchanged\":true,\"level\":35,\"receiptAttempts\":0,\"claimed\":6,\"profileWrites\":0,\"notifications\":0,\"characterUnchanged\":true,\"promptCount\":49,\"synthetic\":true}"
+          }
+        ],
+        "isError": false
+      }
+    },
+    {
+      "step": "inspect_ironveil_scales_scale_3",
+      "result": {
+        "content": [
+          {
+            "type": "text",
+            "text": "{\"invalidated\":false,\"ordinaryProgression\":false,\"retries\":1,\"enabledSelected\":false,\"choices\":[],\"selected\":\"inspect_ironveil_scales_scale_3\",\"failed\":false,\"avatarDelta\":0,\"objectives\":{\"inspect_ironveil_scales\":true},\"destroyed\":false,\"minePresent\":true,\"forbiddenWorldCalls\":0,\"pending\":false,\"receipts\":{\"1\":{\"args\":{\"objective\":\"inspect_ironveil_scales\"},\"owner\":11732987790,\"action\":\"CampaignObjective\",\"requestId\":\"ironveil:8f1efc90-9ed7-49cb-ac24-9b4c7d70db16\"}},\"zoneUnchanged\":true,\"level\":35,\"receiptAttempts\":2,\"claimed\":6,\"profileWrites\":0,\"notifications\":1,\"characterUnchanged\":true,\"promptCount\":49,\"synthetic\":true}"
+          }
+        ],
+        "isError": false
+      }
+    },
+    {
+      "step": "interview_carrier_carrier",
+      "result": {
+        "content": [
+          {
+            "type": "text",
+            "text": "{\"invalidated\":false,\"ordinaryProgression\":false,\"retries\":1,\"enabledSelected\":false,\"choices\":[],\"selected\":\"interview_carrier_carrier\",\"failed\":false,\"avatarDelta\":0,\"objectives\":{\"inspect_ironveil_scales\":true,\"interview_carrier\":true},\"destroyed\":false,\"minePresent\":true,\"forbiddenWorldCalls\":0,\"pending\":false,\"receipts\":{\"1\":{\"args\":{\"objective\":\"inspect_ironveil_scales\"},\"owner\":11732987790,\"action\":\"CampaignObjective\",\"requestId\":\"ironveil:8f1efc90-9ed7-49cb-ac24-9b4c7d70db16\"},\"2\":{\"args\":{\"objective\":\"interview_carrier\"},\"owner\":11732987790,\"action\":\"CampaignObjective\",\"requestId\":\"ironveil:0c8d7a4f-9397-4cd7-825b-7e6cafb38b44\"}},\"zoneUnchanged\":true,\"level\":35,\"receiptAttempts\":3,\"claimed\":6,\"profileWrites\":0,\"notifications\":2,\"characterUnchanged\":true,\"promptCount\":49,\"synthetic\":true}"
+          }
+        ],
+        "isError": false
+      }
+    },
+    {
+      "step": "MineReception",
+      "result": {
+        "content": [
+          {
+            "type": "text",
+            "text": "{\"invalidated\":false,\"ordinaryProgression\":false,\"retries\":1,\"enabledSelected\":false,\"choices\":[],\"selected\":\"MineReception\",\"failed\":false,\"avatarDelta\":0,\"objectives\":{\"inspect_ironveil_scales\":true,\"enter_ironveil\":true,\"interview_carrier\":true},\"destroyed\":false,\"minePresent\":true,\"forbiddenWorldCalls\":0,\"pending\":false,\"receipts\":{\"1\":{\"args\":{\"objective\":\"inspect_ironveil_scales\"},\"owner\":11732987790,\"action\":\"CampaignObjective\",\"requestId\":\"ironveil:8f1efc90-9ed7-49cb-ac24-9b4c7d70db16\"},\"3\":{\"args\":{\"objective\":\"enter_ironveil\"},\"owner\":11732987790,\"action\":\"CampaignObjective\",\"requestId\":\"ironveil:7944db48-3a6d-45a6-868e-c7a769e8787d\"},\"2\":{\"args\":{\"objective\":\"interview_carrier\"},\"owner\":11732987790,\"action\":\"CampaignObjective\",\"requestId\":\"ironveil:0c8d7a4f-9397-4cd7-825b-7e6cafb38b44\"}},\"zoneUnchanged\":true,\"level\":35,\"receiptAttempts\":4,\"claimed\":6,\"profileWrites\":0,\"notifications\":3,\"characterUnchanged\":true,\"promptCount\":49,\"synthetic\":true}"
+          }
+        ],
+        "isError": false
+      }
+    },
+    {
+      "step": "read_mine_signal_signal_2",
+      "result": {
+        "content": [
+          {
+            "type": "text",
+            "text": "{\"receiptCount\":3,\"marker\":\"read_mine_signal_signal_2\",\"avatarDelta\":0,\"failed\":false,\"objectives\":[]}"
+          }
+        ],
+        "isError": false
+      }
+    },
+    {
+      "step": "read_mine_signal_signal_1",
+      "result": {
+        "content": [
+          {
+            "type": "text",
+            "text": "{\"receiptCount\":3,\"marker\":\"read_mine_signal_signal_1\",\"avatarDelta\":0,\"failed\":false,\"objectives\":[]}"
+          }
+        ],
+        "isError": false
+      }
+    },
+    {
+      "step": "read_mine_signal_signal_2",
+      "result": {
+        "content": [
+          {
+            "type": "text",
+            "text": "{\"receiptCount\":3,\"marker\":\"read_mine_signal_signal_2\",\"avatarDelta\":0,\"failed\":false,\"objectives\":[]}"
+          }
+        ],
+        "isError": false
+      }
+    },
+    {
+      "step": "read_mine_signal_signal_3",
+      "result": {
+        "content": [
+          {
+            "type": "text",
+            "text": "{\"receiptCount\":4,\"marker\":\"read_mine_signal_signal_3\",\"avatarDelta\":0,\"failed\":false,\"objectives\":{\"read_mine_signal\":true}}"
+          }
+        ],
+        "isError": false
+      }
+    },
+    {
+      "step": "choose_safe_shaft_signal_1",
+      "result": {
+        "content": [
+          {
+            "type": "text",
+            "text": "{\"receiptCount\":4,\"marker\":\"choose_safe_shaft_signal_1\",\"avatarDelta\":0,\"failed\":false,\"objectives\":{\"read_mine_signal\":true}}"
+          }
+        ],
+        "isError": false
+      }
+    },
+    {
+      "step": "choose_safe_shaft_signal_2",
+      "result": {
+        "content": [
+          {
+            "type": "text",
+            "text": "{\"receiptCount\":5,\"marker\":\"choose_safe_shaft_signal_2\",\"avatarDelta\":0,\"failed\":false,\"objectives\":{\"read_mine_signal\":true,\"choose_safe_shaft\":true}}"
+          }
+        ],
+        "isError": false
+      }
+    },
+    {
+      "step": "stage",
+      "result": {
+        "content": [
+          {
+            "type": "text",
+            "text": "{\"syntheticStage\":8,\"syntheticDone\":[]}"
+          }
+        ],
+        "isError": false
+      }
+    },
+    {
+      "step": "inspect_shoring_support_1",
+      "result": {
+        "content": [
+          {
+            "type": "text",
+            "text": "{\"receiptCount\":5,\"avatarDelta\":0,\"choices\":[],\"marker\":\"inspect_shoring_support_1\",\"failed\":false,\"objectives\":[]}"
+          }
+        ],
+        "isError": false
+      }
+    },
+    {
+      "step": "inspect_shoring_support_2",
+      "result": {
+        "content": [
+          {
+            "type": "text",
+            "text": "{\"receiptCount\":5,\"avatarDelta\":0,\"choices\":[],\"marker\":\"inspect_shoring_support_2\",\"failed\":false,\"objectives\":[]}"
+          }
+        ],
+        "isError": false
+      }
+    },
+    {
+      "step": "inspect_shoring_support_3",
+      "result": {
+        "content": [
+          {
+            "type": "text",
+            "text": "{\"receiptCount\":6,\"avatarDelta\":0,\"choices\":[],\"marker\":\"inspect_shoring_support_3\",\"failed\":false,\"objectives\":{\"inspect_shoring\":true}}"
+          }
+        ],
+        "isError": false
+      }
+    },
+    {
+      "step": "stage",
+      "result": {
+        "content": [
+          {
+            "type": "text",
+            "text": "{\"syntheticStage\":8,\"syntheticDone\":{\"inspect_shoring\":true,\"protect_engineer\":true}}"
+          }
+        ],
+        "isError": false
+      }
+    },
+    {
+      "step": "repair_shoring_support_1",
+      "result": {
+        "content": [
+          {
+            "type": "text",
+            "text": "{\"receiptCount\":6,\"avatarDelta\":0,\"choices\":[],\"marker\":\"repair_shoring_support_1\",\"failed\":false,\"objectives\":{\"inspect_shoring\":true,\"protect_engineer\":true}}"
+          }
+        ],
+        "isError": false
+      }
+    },
+    {
+      "step": "repair_shoring_support_2",
+      "result": {
+        "content": [
+          {
+            "type": "text",
+            "text": "{\"receiptCount\":6,\"avatarDelta\":0,\"choices\":[],\"marker\":\"repair_shoring_support_2\",\"failed\":false,\"objectives\":{\"inspect_shoring\":true,\"protect_engineer\":true}}"
+          }
+        ],
+        "isError": false
+      }
+    },
+    {
+      "step": "repair_shoring_support_1",
+      "result": {
+        "content": [
+          {
+            "type": "text",
+            "text": "{\"receiptCount\":6,\"avatarDelta\":0,\"choices\":[],\"marker\":\"repair_shoring_support_1\",\"failed\":false,\"objectives\":{\"inspect_shoring\":true,\"protect_engineer\":true}}"
+          }
+        ],
+        "isError": false
+      }
+    },
+    {
+      "step": "repair_shoring_support_3",
+      "result": {
+        "content": [
+          {
+            "type": "text",
+            "text": "{\"receiptCount\":7,\"avatarDelta\":0,\"choices\":[],\"marker\":\"repair_shoring_support_3\",\"failed\":false,\"objectives\":{\"protect_engineer\":true,\"inspect_shoring\":true,\"repair_shoring\":true}}"
+          }
+        ],
+        "isError": false
+      }
+    },
+    {
+      "step": "stage",
+      "result": {
+        "content": [
+          {
+            "type": "text",
+            "text": "{\"syntheticStage\":9,\"syntheticDone\":[]}"
+          }
+        ],
+        "isError": false
+      }
+    },
+    {
+      "step": "collect_reagent_reagent",
+      "result": {
+        "content": [
+          {
+            "type": "text",
+            "text": "{\"receiptCount\":8,\"avatarDelta\":0,\"choices\":[],\"marker\":\"collect_reagent_reagent\",\"failed\":false,\"objectives\":{\"collect_reagent\":true}}"
+          }
+        ],
+        "isError": false
+      }
+    },
+    {
+      "step": "compare_mine_seals_seal_1",
+      "result": {
+        "content": [
+          {
+            "type": "text",
+            "text": "{\"receiptCount\":8,\"avatarDelta\":0,\"choices\":[],\"marker\":\"compare_mine_seals_seal_1\",\"failed\":false,\"objectives\":{\"collect_reagent\":true}}"
+          }
+        ],
+        "isError": false
+      }
+    },
+    {
+      "step": "compare_mine_seals_seal_2",
+      "result": {
+        "content": [
+          {
+            "type": "text",
+            "text": "{\"receiptCount\":9,\"avatarDelta\":0,\"choices\":[],\"marker\":\"compare_mine_seals_seal_2\",\"failed\":false,\"objectives\":{\"compare_mine_seals\":true,\"collect_reagent\":true}}"
+          }
+        ],
+        "isError": false
+      }
+    },
+    {
+      "step": "Review_council",
+      "result": {
+        "content": [
+          {
+            "type": "text",
+            "text": "{\"receiptCount\":10,\"avatarDelta\":0,\"choices\":{\"choose_joint_review\":\"council\"},\"marker\":\"Review_council\",\"failed\":false,\"objectives\":{\"compare_mine_seals\":true,\"choose_joint_review\":true,\"collect_reagent\":true}}"
+          }
+        ],
+        "isError": false
+      }
+    },
+    {
+      "step": "Review_council",
+      "result": {
+        "content": [
+          {
+            "type": "text",
+            "text": "{\"receiptCount\":10,\"avatarDelta\":0,\"choices\":{\"choose_joint_review\":\"council\"},\"marker\":\"Review_council\",\"failed\":false,\"objectives\":{\"compare_mine_seals\":true,\"choose_joint_review\":true,\"collect_reagent\":true}}"
+          }
+        ],
+        "isError": false
+      }
+    },
+    {
+      "step": "stage",
+      "result": {
+        "content": [
+          {
+            "type": "text",
+            "text": "{\"syntheticStage\":10,\"syntheticDone\":[]}"
+          }
+        ],
+        "isError": false
+      }
+    },
+    {
+      "step": "operate_mine_mechanism_mechanism_1",
+      "result": {
+        "content": [
+          {
+            "type": "text",
+            "text": "{\"receiptCount\":10,\"avatarDelta\":0,\"choices\":[],\"marker\":\"operate_mine_mechanism_mechanism_1\",\"failed\":false,\"objectives\":[]}"
+          }
+        ],
+        "isError": false
+      }
+    },
+    {
+      "step": "operate_mine_mechanism_mechanism_2",
+      "result": {
+        "content": [
+          {
+            "type": "text",
+            "text": "{\"receiptCount\":10,\"avatarDelta\":0,\"choices\":[],\"marker\":\"operate_mine_mechanism_mechanism_2\",\"failed\":false,\"objectives\":[]}"
+          }
+        ],
+        "isError": false
+      }
+    },
+    {
+      "step": "operate_mine_mechanism_mechanism_3",
+      "result": {
+        "content": [
+          {
+            "type": "text",
+            "text": "{\"receiptCount\":11,\"avatarDelta\":0,\"choices\":[],\"marker\":\"operate_mine_mechanism_mechanism_3\",\"failed\":false,\"objectives\":{\"operate_mine_mechanism\":true}}"
+          }
+        ],
+        "isError": false
+      }
+    },
+    {
+      "step": "stage",
+      "result": {
+        "content": [
+          {
+            "type": "text",
+            "text": "{\"syntheticStage\":11,\"syntheticDone\":[]}"
+          }
+        ],
+        "isError": false
+      }
+    },
+    {
+      "step": "meet_class_mentor_mentor",
+      "result": {
+        "content": [
+          {
+            "type": "text",
+            "text": "{\"receiptCount\":12,\"avatarDelta\":0,\"choices\":[],\"marker\":\"meet_class_mentor_mentor\",\"failed\":false,\"objectives\":{\"meet_class_mentor\":true}}"
+          }
+        ],
+        "isError": false
+      }
+    },
+    {
+      "step": "submit_ironveil_evidence_mentor",
+      "result": {
+        "content": [
+          {
+            "type": "text",
+            "text": "{\"receiptCount\":12,\"avatarDelta\":0,\"choices\":[],\"marker\":\"submit_ironveil_evidence_mentor\",\"failed\":false,\"objectives\":{\"meet_class_mentor\":true}}"
+          }
+        ],
+        "isError": false
+      }
+    },
+    {
+      "step": "stage",
+      "result": {
+        "content": [
+          {
+            "type": "text",
+            "text": "{\"syntheticStage\":11,\"syntheticDone\":{\"meet_class_mentor\":true,\"complete_borrowed_path\":true}}"
+          }
+        ],
+        "isError": false
+      }
+    },
+    {
+      "step": "submit_ironveil_evidence_mentor",
+      "result": {
+        "content": [
+          {
+            "type": "text",
+            "text": "{\"receiptCount\":13,\"avatarDelta\":0,\"choices\":[],\"marker\":\"submit_ironveil_evidence_mentor\",\"failed\":false,\"objectives\":{\"submit_ironveil_evidence\":true,\"meet_class_mentor\":true,\"complete_borrowed_path\":true}}"
+          }
+        ],
+        "isError": false
+      }
+    },
+    {
+      "step": "invalidate_destroy",
+      "result": {
+        "content": [
+          {
+            "type": "text",
+            "text": "{\"invalidated\":true,\"ordinaryProgression\":false,\"retries\":1,\"enabledSelected\":false,\"choices\":[],\"level\":35,\"failed\":false,\"avatarDelta\":0,\"objectives\":{\"submit_ironveil_evidence\":true,\"meet_class_mentor\":true,\"complete_borrowed_path\":true},\"destroyed\":true,\"forbiddenWorldCalls\":0,\"pending\":false,\"receipts\":{\"1\":{\"args\":{\"objective\":\"inspect_ironveil_scales\"},\"owner\":11732987790,\"action\":\"CampaignObjective\",\"requestId\":\"ironveil:8f1efc90-9ed7-49cb-ac24-9b4c7d70db16\"},\"3\":{\"args\":{\"objective\":\"enter_ironveil\"},\"owner\":11732987790,\"action\":\"CampaignObjective\",\"requestId\":\"ironveil:7944db48-3a6d-45a6-868e-c7a769e8787d\"},\"2\":{\"args\":{\"objective\":\"interview_carrier\"},\"owner\":11732987790,\"action\":\"CampaignObjective\",\"requestId\":\"ironveil:0c8d7a4f-9397-4cd7-825b-7e6cafb38b44\"},\"5\":{\"args\":{\"objective\":\"choose_safe_shaft\"},\"owner\":11732987790,\"action\":\"CampaignObjective\",\"requestId\":\"ironveil:390a20a7-4cb7-454c-b8b6-23b9aa030725\"},\"4\":{\"args\":{\"objective\":\"read_mine_signal\"},\"owner\":11732987790,\"action\":\"CampaignObjective\",\"requestId\":\"ironveil:59bba6a0-453a-4e41-8624-954b1900b563\"},\"7\":{\"args\":{\"objective\":\"repair_shoring\"},\"owner\":11732987790,\"action\":\"CampaignObjective\",\"requestId\":\"ironveil:c6654aae-e8bf-40af-bba0-a4ccb4302470\"},\"6\":{\"args\":{\"objective\":\"inspect_shoring\"},\"owner\":11732987790,\"action\":\"CampaignObjective\",\"requestId\":\"ironveil:cbda6668-2a8b-49d2-b3fd-c7ee9fb6b5f6\"},\"9\":{\"args\":{\"objective\":\"compare_mine_seals\"},\"owner\":11732987790,\"action\":\"CampaignObjective\",\"requestId\":\"ironveil:4395b8df-42e5-408b-8599-356b67c15566\"},\"8\":{\"args\":{\"objective\":\"collect_reagent\"},\"owner\":11732987790,\"action\":\"CampaignObjective\",\"requestId\":\"ironveil:c947429d-6b3f-4c9c-943b-eb8e3f8caa3c\"},\"13\":{\"args\":{\"objective\":\"submit_ironveil_evidence\"},\"owner\":11732987790,\"action\":\"CampaignObjective\",\"requestId\":\"ironveil:254bcbe7-3d53-404e-9b4a-5008e40bad68\"},\"12\":{\"args\":{\"objective\":\"meet_class_mentor\"},\"owner\":11732987790,\"action\":\"CampaignObjective\",\"requestId\":\"ironveil:5651c8f9-921c-4575-bd3e-a38f7a16f5c9\"},\"11\":{\"args\":{\"objective\":\"operate_mine_mechanism\"},\"owner\":11732987790,\"action\":\"CampaignObjective\",\"requestId\":\"ironveil:9f4e713d-8c68-4b8c-8d18-dbb2beeb3544\"},\"10\":{\"args\":{\"objective\":\"choose_joint_review\",\"choice\":\"council\"},\"owner\":11732987790,\"action\":\"CampaignObjective\",\"requestId\":\"ironveil:55f1394e-5940-479d-8483-5722ec694b80\"}},\"zoneUnchanged\":true,\"minePresent\":false,\"receiptAttempts\":14,\"claimed\":11,\"profileWrites\":0,\"notifications\":13,\"characterUnchanged\":true,\"promptCount\":0,\"synthetic\":true}"
+          }
+        ],
+        "isError": false
+      }
+    }
+  ]
+}
