@@ -1,36 +1,18 @@
 {
   "schemaVersion": 1,
-  "sourceMeshSha256": "a6fed50575aa16a4572c8904bc312af9a0de64aa6332b9d532b548fbf9463d7d",
+  "sourceMeshSha256": "b570f259106d314de6ca73562967afdebaec7fb322f1f6e4970ee01424601d79",
   "expectedArtNames": [
     "Caravan_Stable_stable__000",
     "Caravan_Stable_stable__001",
     "Caravan_Stable_stable__002",
     "Caravan_Stable_stable__003",
-    "Caravan_Stable_stable__004",
-    "Caravan_Stable_stable__005",
-    "Caravan_Stable_stable__006",
-    "Caravan_Stable_stable__007",
-    "Caravan_Stable_stable__008",
-    "Caravan_Stable_stable__009",
-    "Caravan_Stable_stable__010",
     "Gatekeepers_House_house__000",
     "Gatekeepers_House_house__001",
     "Gatekeepers_House_house__002",
     "Gatekeepers_House_house__003",
-    "Gatekeepers_House_house__004",
-    "Gatekeepers_House_house__005",
-    "Gatekeepers_House_house__006",
-    "Gatekeepers_House_house__007",
-    "Gatekeepers_House_house__008",
-    "Gatekeepers_House_house__009",
-    "Gatekeepers_House_house__010",
     "Woodcutters_Lodge_sawmill__000",
     "Woodcutters_Lodge_sawmill__001",
     "Woodcutters_Lodge_sawmill__002",
-    "Woodcutters_Lodge_sawmill__003",
-    "Woodcutters_Lodge_sawmill__004",
-    "Woodcutters_Lodge_sawmill__005",
-    "Woodcutters_Lodge_sawmill__006",
     "Arrival_Cart_cart__000",
     "Arrival_Cart_cart__001",
     "Timber_Cart_cart__000",
@@ -172,148 +154,8 @@
       "meshId": "stable__003",
       "position": [
         -40.4922,
-        14.89706,
-        1490.15564
-      ],
-      "rotation": [
-        0.0,
-        0.0,
-        1.0,
-        0,
-        1.0,
-        -0.0,
-        -1.0,
-        0.0,
-        0.0
-      ]
-    },
-    {
-      "name": "Caravan_Stable_stable__004",
-      "meshId": "stable__004",
-      "position": [
-        -40.24026,
-        14.89001,
-        1490.46155
-      ],
-      "rotation": [
-        0.0,
-        0.0,
-        1.0,
-        0,
-        1.0,
-        -0.0,
-        -1.0,
-        0.0,
-        0.0
-      ]
-    },
-    {
-      "name": "Caravan_Stable_stable__005",
-      "meshId": "stable__005",
-      "position": [
-        -40.38683,
-        17.03699,
+        19.98848,
         1474.24756
-      ],
-      "rotation": [
-        0.0,
-        0.0,
-        1.0,
-        0,
-        1.0,
-        -0.0,
-        -1.0,
-        0.0,
-        0.0
-      ]
-    },
-    {
-      "name": "Caravan_Stable_stable__006",
-      "meshId": "stable__006",
-      "position": [
-        -40.00048,
-        16.66996,
-        1488.19263
-      ],
-      "rotation": [
-        0.0,
-        0.0,
-        1.0,
-        0,
-        1.0,
-        -0.0,
-        -1.0,
-        0.0,
-        0.0
-      ]
-    },
-    {
-      "name": "Caravan_Stable_stable__007",
-      "meshId": "stable__007",
-      "position": [
-        -46.78138,
-        17.94479,
-        1499.47974
-      ],
-      "rotation": [
-        0.0,
-        0.0,
-        1.0,
-        0,
-        1.0,
-        -0.0,
-        -1.0,
-        0.0,
-        0.0
-      ]
-    },
-    {
-      "name": "Caravan_Stable_stable__008",
-      "meshId": "stable__008",
-      "position": [
-        -39.28111,
-        14.92931,
-        1494.91138
-      ],
-      "rotation": [
-        0.0,
-        0.0,
-        1.0,
-        0,
-        1.0,
-        -0.0,
-        -1.0,
-        0.0,
-        0.0
-      ]
-    },
-    {
-      "name": "Caravan_Stable_stable__009",
-      "meshId": "stable__009",
-      "position": [
-        -40.24026,
-        20.13891,
-        1473.46021
-      ],
-      "rotation": [
-        0.0,
-        0.0,
-        1.0,
-        0,
-        1.0,
-        -0.0,
-        -1.0,
-        0.0,
-        0.0
-      ]
-    },
-    {
-      "name": "Caravan_Stable_stable__010",
-      "meshId": "stable__010",
-      "position": [
-        -39.97471,
-        14.51064,
-        1475.22583
       ],
       "rotation": [
         0.0,
@@ -391,149 +233,9 @@
       "name": "Gatekeepers_House_house__003",
       "meshId": "house__003",
       "position": [
-        35.9996,
-        17.99422,
-        1476.88599
-      ],
-      "rotation": [
-        0.0,
-        -0.0,
-        -1.0,
-        0,
-        1.0,
-        -0.0,
-        1.0,
-        0.0,
-        0.0
-      ]
-    },
-    {
-      "name": "Gatekeepers_House_house__004",
-      "meshId": "house__004",
-      "position": [
-        35.93859,
-        22.46626,
-        1478.37524
-      ],
-      "rotation": [
-        0.0,
-        -0.0,
-        -1.0,
-        0,
-        1.0,
-        -0.0,
-        1.0,
-        0.0,
-        0.0
-      ]
-    },
-    {
-      "name": "Gatekeepers_House_house__005",
-      "meshId": "house__005",
-      "position": [
-        35.58663,
-        17.53108,
-        1478.37524
-      ],
-      "rotation": [
-        0.0,
-        -0.0,
-        -1.0,
-        0,
-        1.0,
-        -0.0,
-        1.0,
-        0.0,
-        0.0
-      ]
-    },
-    {
-      "name": "Gatekeepers_House_house__006",
-      "meshId": "house__006",
-      "position": [
-        35.73364,
-        17.00092,
-        1476.4762
-      ],
-      "rotation": [
-        0.0,
-        -0.0,
-        -1.0,
-        0,
-        1.0,
-        -0.0,
-        1.0,
-        0.0,
-        0.0
-      ]
-    },
-    {
-      "name": "Gatekeepers_House_house__007",
-      "meshId": "house__007",
-      "position": [
-        36.02483,
-        17.49322,
-        1476.8009
-      ],
-      "rotation": [
-        0.0,
-        -0.0,
-        -1.0,
-        0,
-        1.0,
-        -0.0,
-        1.0,
-        0.0,
-        0.0
-      ]
-    },
-    {
-      "name": "Gatekeepers_House_house__008",
-      "meshId": "house__008",
-      "position": [
-        35.79821,
-        26.54946,
-        1478.37524
-      ],
-      "rotation": [
-        0.0,
-        -0.0,
-        -1.0,
-        0,
-        1.0,
-        -0.0,
-        1.0,
-        0.0,
-        0.0
-      ]
-    },
-    {
-      "name": "Gatekeepers_House_house__009",
-      "meshId": "house__009",
-      "position": [
-        35.73342,
-        16.56459,
-        1477.79895
-      ],
-      "rotation": [
-        0.0,
-        -0.0,
-        -1.0,
-        0,
-        1.0,
-        -0.0,
-        1.0,
-        0.0,
-        0.0
-      ]
-    },
-    {
-      "name": "Gatekeepers_House_house__010",
-      "meshId": "house__010",
-      "position": [
-        36.60054,
-        17.00092,
-        1477.02161
+        35.94191,
+        16.68979,
+        1469.17261
       ],
       "rotation": [
         0.0,
@@ -591,89 +293,9 @@
       "name": "Woodcutters_Lodge_sawmill__002",
       "meshId": "sawmill__002",
       "position": [
-        -89.9996,
-        16.0857,
-        1391.91895
-      ],
-      "rotation": [
-        0.0,
-        0.0,
-        1.0,
-        0,
-        1.0,
-        -0.0,
-        -1.0,
-        0.0,
-        0.0
-      ]
-    },
-    {
-      "name": "Woodcutters_Lodge_sawmill__003",
-      "meshId": "sawmill__003",
-      "position": [
-        -87.61003,
-        9.27612,
-        1388.60901
-      ],
-      "rotation": [
-        0.0,
-        0.0,
-        1.0,
-        0,
-        1.0,
-        -0.0,
-        -1.0,
-        0.0,
-        0.0
-      ]
-    },
-    {
-      "name": "Woodcutters_Lodge_sawmill__004",
-      "meshId": "sawmill__004",
-      "position": [
-        -89.84219,
-        15.81986,
-        1390.00195
-      ],
-      "rotation": [
-        0.0,
-        0.0,
-        1.0,
-        0,
-        1.0,
-        -0.0,
-        -1.0,
-        0.0,
-        0.0
-      ]
-    },
-    {
-      "name": "Woodcutters_Lodge_sawmill__005",
-      "meshId": "sawmill__005",
-      "position": [
-        -89.38418,
-        15.513,
-        1395.64355
-      ],
-      "rotation": [
-        0.0,
-        0.0,
-        1.0,
-        0,
-        1.0,
-        -0.0,
-        -1.0,
-        0.0,
-        0.0
-      ]
-    },
-    {
-      "name": "Woodcutters_Lodge_sawmill__006",
-      "meshId": "sawmill__006",
-      "position": [
-        -89.76615,
-        20.95682,
-        1398.77234
+        -89.81461,
+        20.93617,
+        1398.90747
       ],
       "rotation": [
         0.0,
@@ -2168,7 +1790,7 @@
       ]
     }
   ],
-  "minArtPlacements": 103,
+  "minArtPlacements": 85,
   "colliders": [
     {
       "name": "Caravan_Stable_SourceSurface_0_0",

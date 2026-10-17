@@ -1,0 +1,97 @@
+{
+  "utc": "2026-10-17T05:17:12.773438+00:00",
+  "status": "LOCAL_REVIEW_ONLY",
+  "studioTested": false,
+  "collidersExactlyUnchanged": true,
+  "allExportHashesMatch": true,
+  "checks": [
+    {
+      "command": [
+        "python",
+        "-m",
+        "py_compile",
+        "tools/blender_world_slice.py"
+      ],
+      "exitCode": 0,
+      "stdoutBase64": "",
+      "stderrBase64": ""
+    },
+    {
+      "command": [
+        "python",
+        "tools/verify_world_slice.py"
+      ],
+      "exitCode": 0,
+      "stdoutBase64": "ew0KICAic3RhdHVzIjogIk9GRkxJTkVfR0VPTUVUUllfUEFTUyIsDQogICJtZXNoZXMiOiAyNywNCiAgInZlcnRpY2VzIjogMjcwMjEsDQogICJ0cmlhbmdsZXMiOiAzNzA3NCwNCiAgInBsYWNlbWVudHMiOiA4NSwNCiAgImluc3RhbmNlZFRyaWFuZ2xlcyI6IDc2OTk0LA0KICAic3R1ZGlvVGVzdGVkIjogZmFsc2UNCn0NCg==",
+      "stderrBase64": ""
+    },
+    {
+      "command": [
+        "python",
+        "C:/Work/MySelf/Guildborne-controller/tools/import_quality_meshes.py",
+        "assets/production/world-slice/world-slice.mesh.json"
+      ],
+      "exitCode": 0,
+      "stdoutBase64": "ew0KICAibWVzaGVzIjogMjcsDQogICJ2ZXJ0aWNlcyI6IDI3MDIxLA0KICAidHJpYW5nbGVzIjogMzcwNzQsDQogICJwbGFjZW1lbnRzIjogODUsDQogICJzb3VyY2VTaGEyNTYiOiAiYjU3MGYyNTkxMDZkMzE0ZGU2Y2E3MzU2Mjk2N2FmZGViYWVjN2ZiMzIyZjFmNmU0OTcwZWUwMTQyNDYwMWQ3OSINCn0NCg==",
+      "stderrBase64": ""
+    },
+    {
+      "command": [
+        "C:\\Work\\MySelf\\Guildborne\\.tools\\luau\\luau.exe",
+        "build/world_quality_harness.luau"
+      ],
+      "exitCode": 0,
+      "stdoutBase64": "d29ybGRfcXVhbGl0eTogMjggY29udHJhY3QgY2hlY2tzIHBhc3NlZDsgU3R1ZGlvIGxpZmVjeWNsZSBOT1RfUlVODQp3b3JsZF9xdWFsaXR5OiAxOSBtb2NrZWQgc2VydmVyIGxpZmVjeWNsZSBjaGVja3MgcGFzc2VkOyBTdHVkaW8gcGh5c2ljcyBOT1RfUlVODQo=",
+      "stderrBase64": ""
+    },
+    {
+      "command": [
+        "C:\\Work\\MySelf\\Guildborne\\.tools\\luau\\luau-compile.exe",
+        "--null",
+        "src/server/Services/WorldQualityAssets.luau"
+      ],
+      "exitCode": 0,
+      "stdoutBase64": "Q29tcGlsZWQgMCBLTE9DIGludG8gMTI3IEtCIGJ5dGVjb2RlIChyZWFkIDAuMDBzLCBwYXJzZSAwLjAwcywgY29tcGlsZSAwLjAwcykNCg==",
+      "stderrBase64": ""
+    },
+    {
+      "command": [
+        "C:\\Work\\MySelf\\Guildborne\\.tools\\luau-lsp\\luau-lsp.exe",
+        "analyze",
+        "--platform=roblox",
+        "--sourcemap=build/sourcemap.json",
+        "--definitions=C:\\Work\\MySelf\\Guildborne\\.tools\\luau-lsp\\globalTypes.d.luau",
+        "src/server/Services/WorldQualityAssets.luau"
+      ],
+      "exitCode": 0,
+      "stdoutBase64": "",
+      "stderrBase64": "W0lORk9dIExvYWRpbmcgZGVmaW5pdGlvbnMgZmlsZTogQHJvYmxveCAtIEM6XFdvcmtcTXlTZWxmXEd1aWxkYm9ybmVcLnRvb2xzXGx1YXUtbHNwXGdsb2JhbFR5cGVzLmQubHVhdQ0KW1dBUk5dIGNsaWVudCBkb2VzIG5vdCBhbGxvdyBkaWRDaGFuZ2VXYXRjaGVkRmlsZXMgcmVnaXN0cmF0aW9uIC0gYXV0b21hdGljIHVwZGF0aW5nIG9uIHNvdXJjZW1hcCBjaGFuZ2VzIGRpc2FibGVkDQo="
+    }
+  ],
+  "closedBackgroundBlenderLogs": {
+    "assets/production/world-slice/blender-budget.log": {
+      "bytes": 8335,
+      "sha256": "ec0b8db0752f5e69e934c05273e0bc43e4fa3bcb5ff0c0d25833ff046d497af7"
+    },
+    "assets/production/world-slice/blender-final.log": {
+      "bytes": 7672,
+      "sha256": "d6b332f02d9233d70b0b20f7eb91f94d8a32e64355827fb4ed7ae7c3139fd9d7"
+    },
+    "assets/production/world-slice/blender-playable-final.log": {
+      "bytes": 7680,
+      "sha256": "3ac076c0a34c2e6ac8b70977e41b54a65daebf9c3e01db8f91619fe48ac5606a"
+    },
+    "assets/production/world-slice/blender-playable.log": {
+      "bytes": 7681,
+      "sha256": "1af8ef58fcd812b0856d8cffbda6bdb37e44a120da02a7928e3a5c7090101861"
+    },
+    "assets/production/world-slice/blender-run.log": {
+      "bytes": 7434,
+      "sha256": "7244e627956ef4f79ae11ea4d7bd9f6f8cbebef46d9ed4f784226abeb0caab6e"
+    },
+    "assets/production/world-slice/orientation-audit.log": {
+      "bytes": 1179,
+      "sha256": "3a0a8ebb27927b17514938c338b11760b19cc65530aa2e2a76abc0e240fdafaa"
+    }
+  }
+}

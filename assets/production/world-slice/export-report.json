@@ -17,10 +17,11 @@
         ]
       ],
       "scale": 12.048716905656505,
-      "vertices": 12752,
-      "triangles": 21996,
+      "vertices": 6376,
+      "triangles": 6330,
+      "selectiveBackTriangles": 84,
       "materials": 8,
-      "chunks": 11,
+      "chunks": 4,
       "height": 30.0
     },
     {
@@ -38,10 +39,11 @@
         ]
       ],
       "scale": 9.84508679460224,
-      "vertices": 12006,
-      "triangles": 20670,
+      "vertices": 6003,
+      "triangles": 7228,
+      "selectiveBackTriangles": 66,
       "materials": 9,
-      "chunks": 11,
+      "chunks": 4,
       "height": 32.0
     },
     {
@@ -59,10 +61,11 @@
         ]
       ],
       "scale": 9.78175882085676,
-      "vertices": 7182,
-      "triangles": 12590,
+      "vertices": 3591,
+      "triangles": 4392,
+      "selectiveBackTriangles": 57,
       "materials": 10,
-      "chunks": 7,
+      "chunks": 3,
       "height": 28.0
     },
     {
@@ -82,6 +85,7 @@
       "scale": 8.79335089176725,
       "vertices": 1532,
       "triangles": 2660,
+      "selectiveBackTriangles": 0,
       "materials": 5,
       "chunks": 2,
       "height": 7.000000476837158
@@ -103,6 +107,7 @@
       "scale": 15.336443354436572,
       "vertices": 112,
       "triangles": 208,
+      "selectiveBackTriangles": 0,
       "materials": 1,
       "chunks": 1,
       "height": 5.0
@@ -124,6 +129,7 @@
       "scale": 14.68214275507559,
       "vertices": 678,
       "triangles": 1312,
+      "selectiveBackTriangles": 0,
       "materials": 3,
       "chunks": 1,
       "height": 3.0
@@ -145,6 +151,7 @@
       "scale": 36.283427512205364,
       "vertices": 408,
       "triangles": 506,
+      "selectiveBackTriangles": 0,
       "materials": 2,
       "chunks": 1,
       "height": 1.6285464763641357
@@ -166,6 +173,7 @@
       "scale": 7.0767045442735625,
       "vertices": 1546,
       "triangles": 2948,
+      "selectiveBackTriangles": 0,
       "materials": 3,
       "chunks": 2,
       "height": 25.0
@@ -187,6 +195,7 @@
       "scale": 4.015289752230148,
       "vertices": 1048,
       "triangles": 1826,
+      "selectiveBackTriangles": 0,
       "materials": 3,
       "chunks": 1,
       "height": 16.0
@@ -208,6 +217,7 @@
       "scale": 6.978716190280929,
       "vertices": 1016,
       "triangles": 1888,
+      "selectiveBackTriangles": 0,
       "materials": 2,
       "chunks": 1,
       "height": 3.0921196937561035
@@ -229,6 +239,7 @@
       "scale": 2.9849582720818493,
       "vertices": 668,
       "triangles": 1238,
+      "selectiveBackTriangles": 0,
       "materials": 2,
       "chunks": 1,
       "height": 12.0
@@ -250,6 +261,7 @@
       "scale": 10.821995367772088,
       "vertices": 515,
       "triangles": 804,
+      "selectiveBackTriangles": 0,
       "materials": 3,
       "chunks": 1,
       "height": 30.0
@@ -271,6 +283,7 @@
       "scale": 12.965664063641348,
       "vertices": 878,
       "triangles": 1332,
+      "selectiveBackTriangles": 0,
       "materials": 3,
       "chunks": 1,
       "height": 38.0
@@ -292,6 +305,7 @@
       "scale": 3.3663695941100826,
       "vertices": 255,
       "triangles": 360,
+      "selectiveBackTriangles": 0,
       "materials": 1,
       "chunks": 1,
       "height": 3.999999761581421
@@ -313,16 +327,17 @@
       "scale": 2.8055859312828293,
       "vertices": 2061,
       "triangles": 4042,
+      "selectiveBackTriangles": 0,
       "materials": 1,
       "chunks": 3,
       "height": 12.999999046325684
     }
   ],
-  "uniqueMeshChunks": 45,
-  "placements": 103,
+  "uniqueMeshChunks": 27,
+  "placements": 85,
   "authoredObjects": 72,
-  "uniqueTriangles": 74380,
-  "instancedTriangles": 114300,
+  "uniqueTriangles": 37074,
+  "instancedTriangles": 76994,
   "runtimeIds": null,
   "studioTested": false,
   "humanApproved": false,
@@ -332,8 +347,8 @@
       "sha256": "722572d1611325952965878af99bac9774079e854cd4bc0fd764640b98566513"
     },
     "collision.json": {
-      "bytes": 220655,
-      "sha256": "f884975fcfaa960c5bc3e98eaf4818e6eef41f822318a8f43644cedcbc7b471d"
+      "bytes": 213909,
+      "sha256": "7e86eb9492b236e5583ad435fa65b6c0da626562168db1ce79b34e530194cbaa"
     },
     "intake.json": {
       "bytes": 7929,
@@ -352,20 +367,20 @@
       "sha256": "83d8959f9fc56353ed571fbe2dc52e4bcd64508e2399501cd45ac2ce3df0bf8c"
     },
     "woodland-threshold.blend": {
-      "bytes": 1745561,
-      "sha256": "8fe97a06c4334eb7aee869cfeddcbd6c38b3f1bda4b7de144acfa94239d61994"
+      "bytes": 1010626,
+      "sha256": "a8f35106d0e3f027ae923231a76cbee05ff6bd074ab8bc9581f54052da4e5cfa"
     },
     "woodland-threshold.glb": {
-      "bytes": 4635880,
-      "sha256": "51b0cb9eaf861452673af6b24df87c0cf398677eeff50e8fa8ba3f4d698e9788"
+      "bytes": 2292408,
+      "sha256": "1fe6309e835ece452ef8b13fe188cc380bdc43835d81f815af6c380ac0d81d7d"
     },
     "woodland-threshold.png": {
-      "bytes": 2166998,
-      "sha256": "70041d06fdb0e65936367223b9bd8b9c37fe50eb03e1783d0deab161bbcd9dc6"
+      "bytes": 2167231,
+      "sha256": "fafad7b5a2fe78998dfd207dac6fdf36034dfde66cd3ffc78f2633269a9e6098"
     },
     "world-slice.mesh.json": {
-      "bytes": 3032314,
-      "sha256": "a6fed50575aa16a4572c8904bc312af9a0de64aa6332b9d532b548fbf9463d7d"
+      "bytes": 1369781,
+      "sha256": "b570f259106d314de6ca73562967afdebaec7fb322f1f6e4970ee01424601d79"
     }
   }
 }

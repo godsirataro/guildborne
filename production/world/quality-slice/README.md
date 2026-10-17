@@ -6,7 +6,7 @@ Delivered: 15 real CC0 source FBXs, an editable Blender 5.2.1 composition, actua
 
 `assets/production/world-slice/woodland-threshold.png` is the final inspected render. The first render exposed white Ruins foliage diffuse materials; final art intentionally replaces those with a face-based leaf/bark palette. This is authored derivative color, not a claim to preserve an unavailable texture. Village material colors remain imported. No source fonts used. Preview ground/water are excluded from GLB and mesh JSON, which contain actual source meshes only.
 
-`woodland-threshold.blend` contains reusable library, authored composition and separately named preview-only stage. `woodland-threshold.glb` contains the composition. `world-slice.mesh.json` conforms to controller schemaVersion 1: 45 chunks, 62,912 exported vertices, 74,380 unique triangles, 103 placements, 114,300 instanced triangles. Each chunk <=2,000 triangles; resources reused across placements. See IMPORT_CONTRACT.md for pivot compensation and actual Greenwood world offset. Geometry is NONCOLLIDING opt-in preview presentation; controller must inspect terrain height, native-art overlap and telegraph readability before runtime adoption.
+`woodland-threshold.blend` contains reusable library, authored composition and separately named preview-only stage. `woodland-threshold.glb` contains the composition. `world-slice.mesh.json` conforms to controller schemaVersion 1: 27 chunks, 27,021 exported vertices, 37,074 unique triangles, 85 placements, 76,994 instanced triangles. Each chunk <=2,000 triangles; resources reused across placements. See IMPORT_CONTRACT.md for pivot compensation and actual Greenwood world offset. Geometry is NONCOLLIDING opt-in preview presentation; controller must inspect terrain height, native-art overlap and telegraph readability before runtime adoption.
 
 ## Reproduction
 
@@ -23,7 +23,7 @@ Offline validator checks finite coordinates, budgets, indices, face colors, nond
 
 Blender export/render process exited before handoff; no owned Blender process remains. Source/render is ready for controller import review. Studio import, source-world overlap, five-hero traversal with this art, physical-device performance and human visual approval remain NOT_RUN. WORLDGRAPH.md records all-world topology and remaining content gates without inventing level bands or declaring Lv1–100 complete.
 
-## Playable revision v2
+## Historical playable revision v2 (superseded geometry below)
 
 The source orientation audit found inconsistent building face normals (stable 125, house 14, sawmill 2). Blender recalculates normals and evaluates a thin inward solidify shell before export, producing actual back surfaces. This is verified export geometry, not yet proof of corrected Studio appearance.
 
@@ -46,3 +46,11 @@ The earlier v2 API incorrectly required client-imported art to exist on the serv
 To reproduce mocked lifecycle checks, embed the current WorldQualitySlice source as a Luau long string in build/world_quality_harness.luau and call the function returned by require("../tests/world_quality") with that string. Run the generated file with Luau CLI. No source rewriting or production dependency injection is used.
 
 Final separation checks: 894 existing suite tests, 28 geometry contracts and 19 mocked lifecycle checks passed. Changed Luau files compile and analyze. Initial analyzer failure from heterogeneous test callback inference is preserved in the first receipt; explicit parameter annotations and passing reruns are preserved in server-separation-final-checks.json. Independent read-only review found no blockers. No Studio or Blender mutation occurred.
+
+## Geometry budget correction
+
+Controller reported v2 failing at Fixed mesh budget unavailable after 7.39 seconds. This worker did not execute that Studio test. Blanket Solidify on stable/house/sawmill accounted for all 37,513 extra triangles versus the first export. This revision removes that blanket shell, retains corrected normals and original source silhouettes, and adds only 207 reversed large structural faces (stable 84, house 66, sawmill 57). These reuse original vertices; no full shell or rim geometry is generated. Identical exported vertex positions are shared within each chunk; colors and normals remain per face.
+
+Current export is 27 chunks / 27,021 vertices / 37,074 unique triangles / 85 placements / 76,994 instanced triangles. Compared with the first successful controller import, unique vertex count is 15 lower, triangle count is 207 higher (+0.56%), and chunk count is unchanged. This does not guarantee EditableMesh allocation; controller must measure the complete combined preview. Chunk placement count changes with building chunks; all authored objects remain. All 413 collider records exactly equal the previous revision. collision.json, WorldQualityAssets, expectedArt and source hash were regenerated together.
+
+Actual Blender export/render completed, final composition image inspected, and independent read-only checks found no blockers. budget-checks.json preserves raw validation output and closed Blender log hashes. Offline mesh/schema/hash checks, 28 geometry contracts, 19 mocked lifecycle checks, and generated Luau compile/analyze passed. The 894-test baseline passed in the preceding server separation commit; no gameplay behavior changes in this export. Studio memory, backface rendering and traversal remain pending for this new geometry.
