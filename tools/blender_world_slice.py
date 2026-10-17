@@ -69,10 +69,15 @@ for record in records:
    elif record['id']=='stag':rgb=[.49,.51,.42]
    if rgb not in colors:colors.append(rgb)
    triangles.append(indices);face_colors.append(colors.index(rgb)+1)
-   # Back only large structural roof/wall surfaces, sharing original vertices.
+   # Back only large structural roof/wall surfaces with a bounded inward offset.
    # No blanket shell or rim tessellation; silhouette and source colliders stay exact.
    if record['id'] in ('stable','house','sawmill') and (b-a).cross(c-a).length/2>15:
-    triangles.append(list(reversed(indices)));face_colors.append(colors.index(rgb)+1);selective_backs+=1
+    # Coincident reversed faces sharing topology are ambiguous to mesh conversion.
+    # Give only these structural backs their own vertices, 0.02 studs inward.
+    normal=(b-a).cross(c-a).normalized();back=[]
+    for point in (c,b,a):
+     back.append(len(vertices));vertices.append(point-normal*.02)
+    triangles.append(back);face_colors.append(colors.index(rgb)+1);selective_backs+=1
  assert triangles
  # Keep original material colors, with roughness unified for a coherent matte miniature look.
  material_list=[]

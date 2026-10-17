@@ -1,0 +1,9 @@
+00:04.875  blend            | Read blend: "C:\Work\MySelf\Guildborne-world-runtime\assets\production\world-slice\woodland-threshold.blend"
+C:\Work\MySelf\Guildborne-world-runtime\production\world\quality-slice\roof_diagnostic.py:16: DeprecationWarning: 'Material.use_nodes' is expected to be removed in Blender 6.0
+  mat=bpy.data.materials.new(m['id']+str(index));mat.use_nodes=True
+C:\Work\MySelf\Guildborne-world-runtime\production\world\quality-slice\roof_diagnostic.py:28: DeprecationWarning: 'Material.use_nodes' is expected to be removed in Blender 6.0
+  if not mat.use_nodes:continue
+00:21.812  render           | Saved: 'C:\Work\MySelf\Guildborne-world-runtime\production\world\quality-slice\roof-json-cull.png'
+Blender 5.2.1 LTS (hash 9e2066aef7ef built 2026-08-25 02:38:20)
+
+Blender quit

@@ -1,0 +1,72 @@
+{
+  "utc": "2026-10-17T05:31:28.326045+00:00",
+  "status": "LOCAL_REVIEW_ONLY",
+  "studioTested": false,
+  "collidersExactlyUnchanged": true,
+  "allExportHashesMatch": true,
+  "checks": [
+    {
+      "command": [
+        "python",
+        "-m",
+        "py_compile",
+        "tools/blender_world_slice.py",
+        "production/world/quality-slice/roof_diagnostic.py"
+      ],
+      "exitCode": 0,
+      "stdoutBase64": "",
+      "stderrBase64": ""
+    },
+    {
+      "command": [
+        "python",
+        "tools/verify_world_slice.py"
+      ],
+      "exitCode": 0,
+      "stdoutBase64": "ew0KICAic3RhdHVzIjogIk9GRkxJTkVfR0VPTUVUUllfUEFTUyIsDQogICJtZXNoZXMiOiAyNywNCiAgInZlcnRpY2VzIjogMjc0NTIsDQogICJ0cmlhbmdsZXMiOiAzNzA3NCwNCiAgInBsYWNlbWVudHMiOiA4NSwNCiAgImluc3RhbmNlZFRyaWFuZ2xlcyI6IDc2OTk0LA0KICAic3R1ZGlvVGVzdGVkIjogZmFsc2UNCn0NCg==",
+      "stderrBase64": ""
+    },
+    {
+      "command": [
+        "python",
+        "C:/Work/MySelf/Guildborne-controller/tools/import_quality_meshes.py",
+        "assets/production/world-slice/world-slice.mesh.json"
+      ],
+      "exitCode": 0,
+      "stdoutBase64": "ew0KICAibWVzaGVzIjogMjcsDQogICJ2ZXJ0aWNlcyI6IDI3NDUyLA0KICAidHJpYW5nbGVzIjogMzcwNzQsDQogICJwbGFjZW1lbnRzIjogODUsDQogICJzb3VyY2VTaGEyNTYiOiAiNjM0YTEwNjdmNDI5MWQzMjRmMDliN2I4ZDdjZGNiYjJhZWE3NDhlMjUxNzAxY2U2ZjU3ZGZiYzAwYzM3YTI2ZCINCn0NCg==",
+      "stderrBase64": ""
+    },
+    {
+      "command": [
+        "C:\\Work\\MySelf\\Guildborne\\.tools\\luau\\luau.exe",
+        "build/world_quality_harness.luau"
+      ],
+      "exitCode": 0,
+      "stdoutBase64": "d29ybGRfcXVhbGl0eTogMjggY29udHJhY3QgY2hlY2tzIHBhc3NlZDsgU3R1ZGlvIGxpZmVjeWNsZSBOT1RfUlVODQp3b3JsZF9xdWFsaXR5OiAxOSBtb2NrZWQgc2VydmVyIGxpZmVjeWNsZSBjaGVja3MgcGFzc2VkOyBTdHVkaW8gcGh5c2ljcyBOT1RfUlVODQo=",
+      "stderrBase64": ""
+    },
+    {
+      "command": [
+        "C:\\Work\\MySelf\\Guildborne\\.tools\\luau\\luau-compile.exe",
+        "--null",
+        "src/server/Services/WorldQualityAssets.luau"
+      ],
+      "exitCode": 0,
+      "stdoutBase64": "Q29tcGlsZWQgMCBLTE9DIGludG8gMTI3IEtCIGJ5dGVjb2RlIChyZWFkIDAuMDBzLCBwYXJzZSAwLjAwcywgY29tcGlsZSAwLjAxcykNCg==",
+      "stderrBase64": ""
+    },
+    {
+      "command": [
+        "C:\\Work\\MySelf\\Guildborne\\.tools\\luau-lsp\\luau-lsp.exe",
+        "analyze",
+        "--platform=roblox",
+        "--sourcemap=build/sourcemap.json",
+        "--definitions=C:\\Work\\MySelf\\Guildborne\\.tools\\luau-lsp\\globalTypes.d.luau",
+        "src/server/Services/WorldQualityAssets.luau"
+      ],
+      "exitCode": 0,
+      "stdoutBase64": "",
+      "stderrBase64": "W0lORk9dIExvYWRpbmcgZGVmaW5pdGlvbnMgZmlsZTogQHJvYmxveCAtIEM6XFdvcmtcTXlTZWxmXEd1aWxkYm9ybmVcLnRvb2xzXGx1YXUtbHNwXGdsb2JhbFR5cGVzLmQubHVhdQ0KW1dBUk5dIGNsaWVudCBkb2VzIG5vdCBhbGxvdyBkaWRDaGFuZ2VXYXRjaGVkRmlsZXMgcmVnaXN0cmF0aW9uIC0gYXV0b21hdGljIHVwZGF0aW5nIG9uIHNvdXJjZW1hcCBjaGFuZ2VzIGRpc2FibGVkDQo="
+    }
+  ]
+}
