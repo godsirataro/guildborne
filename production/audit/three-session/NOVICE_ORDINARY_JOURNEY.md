@@ -63,3 +63,25 @@ advanced to Chapter 5 / 6, Before the Oath, offering five class-training
 objectives and a 50 XP claim. This confirms the observed fail/retry/win and
 chapter advancement path. It does not certify moving-combat dodge proficiency,
 all class trials, numeric saved XP, physical devices or multiplayer.
+
+## Five class introductions
+
+Continued by walking to Five Disciplines and entering each class introduction
+using E, pressing Q, then Leave trial. Each actual arena returned Skills used
+1/1, TrialStatus=Won and ReceiptDelivered=true:
+
+| Class | Ability | Target health after accepted action |
+| --- | --- | --- |
+| Priest | Heal | 700/700 |
+| Mage | Fireball | 654/700 |
+| Archer | Piercing Shot | 668/700 |
+| Knight | Taunt | 700/700 |
+| Warrior | Power Strike | 668/700 |
+
+These were ordinary-input introductions; non-damage actions correctly did not
+reduce dummy health. Clicked active Claim 50 XP; UI advanced to Chapter 6 / 6,
+The Right to Found a Guild. Entered the Warrior solo trial to inspect its actual
+goals: three basic hits, defeat a 700-health Sentinel and dodge one warning.
+Left that trial without claiming completion. Class selection and chapter six
+remain pending. Introduction completion is not full solo-trial acceptance or
+five-class visual-quality acceptance.
