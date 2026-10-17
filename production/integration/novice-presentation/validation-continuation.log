@@ -1,0 +1,26 @@
+PASS novice presentation cursor: delayed payload, duplicate/reordered, invalid/future/expired, cancellation and lifecycle isolation
+[INFO] Loading definitions file: @roblox - .tools/luau-lsp/globalTypes.d.luau
+[WARN] client does not allow didChangeWatchedFiles registration - automatic updating on sourcemap changes disabled
+tests/gui/behavior.luau(81,12): UnknownGlobal: Unknown global 'Services'; consider assigning to it first
+tests/gui/behavior.luau(82,15): UnknownGlobal: Unknown global 'Services'; consider assigning to it first
+tests/gui/behavior.luau(84,9): UnknownGlobal: Unknown global 'Services'; consider assigning to it first
+tests/gui/behavior.luau(93,13): UnknownGlobal: Unknown global 'Services'; consider assigning to it first
+tests/gui/behavior.luau(111,16): UnknownGlobal: Unknown global 'Services'; consider assigning to it first
+tests/gui/behavior.luau(118,2): UnknownGlobal: Unknown global 'Services'; consider assigning to it first
+tests/gui/behavior.luau(120,2): UnknownGlobal: Unknown global 'Services'; consider assigning to it first
+tests/gui/behavior.luau(120,40): UnknownGlobal: Unknown global 'Services'; consider assigning to it first
+tests/gui/behavior.luau(122,2): UnknownGlobal: Unknown global 'Services'; consider assigning to it first
+Compiled 6 KLOC into 525 KB bytecode (read 0.01s, parse 0.02s, compile 0.03s)
+Compiled 9 KLOC into 1459 KB bytecode (read 0.01s, parse 0.05s, compile 0.16s)
+Compiled 8 KLOC into 1025 KB bytecode (read 0.02s, parse 0.04s, compile 0.07s)
+Compiled 5 KLOC into 465 KB bytecode (read 0.01s, parse 0.01s, compile 0.02s)
+Compiled 6 KLOC into 2889 KB bytecode (read 0.01s, parse 0.08s, compile 0.26s)
+Compiled 5 KLOC into 618 KB bytecode (read 0.01s, parse 0.01s, compile 0.03s)
+Compiled 4 KLOC into 430 KB bytecode (read 0.01s, parse 0.01s, compile 0.02s)
+Compiled 3 KLOC into 323 KB bytecode (read 0.01s, parse 0.01s, compile 0.02s)
+Compiled 1 KLOC into 191 KB bytecode (read 0.01s, parse 0.01s, compile 0.01s)
+PASS: 43 design/evidence documents, JSON/TOML, Rojo paths,
+      488 local links, 1 JSON fixture(s), 378 strict Luau files.
+PASS: built-place boundaries and exact runtime sourcemap coverage.
+Roblox runtime behavior and external link availability are not checked here.
+PASS remaining baseline checks after test fixture type annotation correction.

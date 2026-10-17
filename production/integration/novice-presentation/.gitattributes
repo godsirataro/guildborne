@@ -1,0 +1,2 @@
+# Preserve raw local verification output, including Windows line endings.
+*.log -text whitespace=cr-at-eol
