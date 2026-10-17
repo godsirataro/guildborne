@@ -287,11 +287,11 @@ return function()
 		elseif not district and not region and not civic and selected and not selected.quest then selected=nil end
 		if banner.Visible and os.clock()<arrivedUntil then banner.Text=Locale.translate(language,"Destination reached") end
 		local showRoute=selected and selected.quest and not panel.Visible and not MenuRouter.isBlocking()
-		direction.Position=if target and target.guidance=="destination" then beacon.directionPosition() else UDim2.new(1,-90,0,180)
 		if showRoute then
-			banner.Visible=false;direction.Visible=target~=nil and target.guidance=="destination" and direction.Visible
+			local heading=if direction.Visible then direction.Rotation else nil
+			banner.Visible=false;direction.Visible=false
 			local distance=if root and target then math.floor((Vector2.new(root.Position.X,root.Position.Z)-Vector2.new(target.x,target.z)).Magnitude+.5)else nil
-			beacon.update(target,distance,target==nil,language)
+			beacon.update(target,distance,target==nil,language,heading)
 		else beacon.update(nil,nil,false,language)end
 		if root then marker.Position=point(root.Position.X,root.Position.Z);marker.Visible=district~=nil end
 		if root and region then regionalMarker.Position=regionalPoint(region,root.Position.X,root.Position.Z);regionalMarker.Visible=true else regionalMarker.Visible=false end
