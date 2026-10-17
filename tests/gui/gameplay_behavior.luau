@@ -118,4 +118,44 @@ test("tracker resize responds before destruction and disconnects afterwards",fun
  gui.AbsoluteSize={X=1366,Y=768};gui:GetPropertyChangedSignal("AbsoluteSize"):Fire()
  assert(tracker.button.Position==position);gui:Destroy()
 end)
+test("796x617 tracker root outranks later HUD subtree with explicit local content layers",function()
+ local gui=Instance.new("ScreenGui");gui.AbsoluteSize={X=796,Y=617};gui.ZIndexBehavior=Enum.ZIndexBehavior.Sibling
+ local tracker=Tracker(gui)
+ local laterHud=Instance.new("Frame");laterHud.ZIndex=1;laterHud.Parent=gui
+ local hudBorder=Instance.new("ImageLabel");hudBorder.ZIndex=3;hudBorder.Parent=laterHud
+ assert(tracker.button.Parent==gui and tracker.button.ZIndex==5 and tracker.button.ZIndex>laterHud.ZIndex)
+ assert(tracker.button.ZIndex<10,"Tracker stays below the management modal contract")
+ local border=find(tracker.button,"Quality_panelBorder")
+ local objective=find(tracker.button,"TrackerObjective")
+ local heading=find(tracker.button,"TrackerHeading")
+ local icon=find(tracker.button,"Quality_questIcon")
+ local progress=find(tracker.button,"TrackedProgress")
+ assert(border.ZIndex==1 and objective.ZIndex>border.ZIndex and heading.ZIndex>border.ZIndex)
+ assert(icon.ZIndex>border.ZIndex and progress.ZIndex>border.ZIndex)
+ assert(not heading.Visible and tracker.button.Size[4]==44)
+ gui:Destroy()
+end)
+test("tracker placement reserves gold and menu regions across compact and wide boundaries",function()
+ -- Resolve assigned UDim2 geometry only: this does not simulate engine rendering.
+ local function pixels(value,w,h) return value[1]*w+value[2],value[3]*h+value[4] end
+ for _,size in ipairs({{320,280},{360,640},{390,844},{796,617},{899,617},{900,559},{900,560},{1366,768}}) do
+  local w,h=size[1],size[2]
+  local gui=Instance.new("ScreenGui");gui.AbsoluteSize={X=w,Y=h};local tracker=Tracker(gui)
+  local bw,bh=pixels(tracker.button.Size,w,h)
+  local x,y=pixels(tracker.button.Position,w,h)
+  x-=tracker.button.AnchorPoint.X*bw;y-=tracker.button.AnchorPoint.Y*bh
+  assert(bw>=44 and bh>=44 and x>=0 and y>=0 and x+bw<=w and y+bh<=h)
+  local wide=w>=900 and h>=560
+  assert(find(tracker.button,"TrackerHeading").Visible==wide)
+  if wide then
+   assert(y>=58 and bw==300 and bh==96,"Expanded tracker must sit below top bar")
+  else
+   local goldRight=8+12+.3*(w-16)-8
+   local menuLeft=8+(w-16)-100
+   assert(x>=goldRight+8-.001 and x+bw<=menuLeft-8+.001,"Compact tracker overlaps HUD controls")
+   assert(y==10 and bh==44 and y+bh<=58)
+  end
+  gui:Destroy()
+ end
+end)
 print(passed.." gameplay GUI behavior tests passed (simulation only).")

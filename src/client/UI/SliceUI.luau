@@ -83,7 +83,9 @@ return function(send: any)
 		return frame
 	end
 
-	local hud = Instance.new("Frame"); hud.Size = UDim2.new(1, -16, 0, 52); hud.Position = UDim2.fromOffset(8, 6)
+	-- Sibling roots: HUD 1, tracker 5, management 10, title 20, notices 30.
+	-- Decorative descendants must not determine overlay order.
+	local hud = Instance.new("Frame"); hud.ZIndex = 1; hud.Size = UDim2.new(1, -16, 0, 52); hud.Position = UDim2.fromOffset(8, 6)
 	hud.BackgroundColor3 = colors.Background; hud.Parent = gui; corner(hud)
 	QualityAsset.create(hud,"panelBorder").ZIndex=3
 	local gold = Instance.new("TextLabel"); gold.Size = UDim2.new(1, -114, 1, 0); gold.Position = UDim2.fromOffset(12, 0)
@@ -93,7 +95,7 @@ return function(send: any)
 	toggle.Text = "Explore"; toggle.TextSize = 16; toggle.Font = Enum.Font.GothamMedium; toggle.TextColor3 = colors.Text; toggle.BackgroundColor3 = colors.Button; toggle.Parent = hud; corner(toggle)
 	gold.Size=UDim2.new(.3,-8,1,0);gold.TextSize=15
 	local trackerView=MakeTracker(gui);local tracker=trackerView.button
-	local panel = Instance.new("Frame"); panel.Name = "ManagementPanel"
+	local panel = Instance.new("Frame"); panel.Name = "ManagementPanel"; panel.ZIndex = 10
 	panel.AnchorPoint = Vector2.new(0.5, 0); panel.Position = UDim2.new(0.5, 0, 0, 64)
 	panel.Size = UDim2.new(1, -16, 1, -72); panel.BackgroundColor3 = colors.Background; panel.Parent = gui; corner(panel)
 	QualityAsset.create(panel,"panelBorder").ZIndex=3
