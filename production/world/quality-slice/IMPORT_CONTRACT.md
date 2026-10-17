@@ -26,3 +26,7 @@ Server disables/restores CanCollide, CanQuery and CanTouch only for direct Green
 Controller client integration owns imported art validation and local decoration visibility after successful import, restoring LocalTransparencyModifier on cleanup. Import beneath GuildborneWorld or use explicit handle references; do not rely on the historical workspace.QualityArt_DatasetN path matching GuildborneWorld.QualitySourceArt. Collision initialization does not certify client art readiness. Controller must gate preview readiness on both collision success and actual local import success.
 
 Source SHA256 remains 634a1067f4291d324f09b7b8d7cdcbb2aea748e251701ce6f57dfbc00c37a26d. The budget-corrected export has 27 chunks and 85 expected art placements. Collider geometry is unchanged; import the new JSON together with its regenerated WorldQualityAssets module and collision.json. Rebuild controller metadata and hash gates from this revision. Studio behavior remains pending controller verification.
+
+## Explicit chunk centering correction
+
+The runtime importer must subtract each chunk original bounds center from vertices before AddVertex, retain that original center separately, and apply placement * originalCenter exactly once. Do not rely on implicit CreateMeshPartAsync recentering. The original shared-pivot JSON and center-adjusted expectedArt remain unchanged. See IMPORTER_CENTER_FIX.md for the precise controller-owned change and diagnostic evidence.

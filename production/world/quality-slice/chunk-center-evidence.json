@@ -1,0 +1,22 @@
+{
+  "studioTested": false,
+  "ownedBlenderProcessExited": true,
+  "files": {
+    "production/world/quality-slice/roof-extra-center.png": {
+      "bytes": 1175325,
+      "sha256": "eb7fa040b2010045e0cdda402c13451333eaeb449972cf259c8da1fd149bc1dc"
+    },
+    "production/world/quality-slice/roof-extra-center.log": {
+      "bytes": 810,
+      "sha256": "f9045e5f4eb22d8a410927ac61f2f9be63659a1ae9fc91ac74c4928ee0022c7f"
+    },
+    "production/world/quality-slice/roof_diagnostic.py": {
+      "bytes": 3247,
+      "sha256": "a755843c0bce3c3eb645381d21ea70cd057273d9c3dba2e6e9b2a1cdf90e8f91"
+    },
+    "production/world/quality-slice/chunk-center-checks.json": {
+      "bytes": 4338,
+      "sha256": "984a2656e73039d5101bd53851e475103d8a4f5802b000b5b2dacbf94a071110"
+    }
+  }
+}

@@ -24,6 +24,10 @@ if '--json' in sys.argv:
   obj=bpy.data.objects.new(p['name'],models[p['meshId']]);scene.collection.objects.link(obj)
   cf=p['cframe'];rotation=basis@Matrix((cf[3:6],cf[6:9],cf[9:12]))@basis.transposed()
   obj.rotation_euler=rotation.to_euler();obj.location=(cf[0],1410-cf[2],cf[1]-2)
+  if '--extra-center' in sys.argv:
+   m=next(m for m in packet['meshes'] if m['id']==p['meshId'])
+   center=Vector([(a+b)/2 for a,b in zip(m['bounds']['min'],m['bounds']['max'])])
+   obj.location+=rotation@(basis@center)
 for mat in bpy.data.materials:
  if not mat.use_nodes:continue
  nodes=mat.node_tree.nodes;links=mat.node_tree.links
@@ -36,5 +40,5 @@ scene.camera.location=(105,-135,92)
 scene.camera.rotation_euler=(Vector((0,0,6))-scene.camera.location).to_track_quat('-Z','Y').to_euler()
 scene.camera.data.type='PERSP';scene.camera.data.lens=24
 scene.render.resolution_x=1000;scene.render.resolution_y=1000;scene.cycles.samples=24
-scene.render.filepath=str(root/'production/world/quality-slice'/('roof-json-before.png' if '--baseline' in sys.argv else 'roof-json-after.png' if '--json' in sys.argv else 'roof-source-cull.png'))
+scene.render.filepath=str(root/'production/world/quality-slice'/('roof-extra-center.png' if '--extra-center' in sys.argv else 'roof-json-before.png' if '--baseline' in sys.argv else 'roof-json-after.png' if '--json' in sys.argv else 'roof-source-cull.png'))
 bpy.ops.render.render(write_still=True)
