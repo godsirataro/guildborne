@@ -3,15 +3,28 @@ from pathlib import Path
 import argparse
 import hashlib
 import json
+import re
 import subprocess
 import build_integration_preview
 import import_quality_meshes
 
 ROOT=Path(__file__).resolve().parents[1]
 
+def world_contract(sources):
+    manifest=json.loads((ROOT/'assets/production/world-slice/collision.json').read_text())
+    module=(ROOT/'src/server/Services/WorldQualityAssets.luau').read_text()
+    match=re.search(r'\["sourceMeshSha256"\]="([0-9a-f]{64})"',module)
+    if not match or match.group(1)!=manifest['sourceMeshSha256']:
+        raise ValueError('World collision source and manifest disagree')
+    matches=[i for i,p in enumerate(sources,1) if hashlib.sha256(p.read_bytes()).hexdigest()==match.group(1)]
+    if len(matches)!=1:
+        raise ValueError('World preview requires exactly one matching reviewed mesh dataset')
+    return f'Dataset{matches[0]}',manifest
+
 def build(sources, launch=False, shared_combat=False, world=False, images=None, enemies=None, bind_enemies=False):
     if bind_enemies and not enemies:
         raise ValueError('Enemy binding requires reviewed enemy datasets')
+    world_data=world_contract(sources) if world else None
     build_integration_preview.build(launch, shared_combat)
     variant='launch' if launch else 'integration'
     out=ROOT/'build'
@@ -21,6 +34,14 @@ def build(sources, launch=False, shared_combat=False, world=False, images=None, 
     folder={'$className':'Folder','$attributes':{'IsolatedMemory':True,'EnableWorldSlice':world,'BindEnemies':bind_enemies}}
     source_root=ROOT/'production/integration/quality-slice'
     entries=base['entries']
+    if world_data:
+        dataset,manifest=world_data
+        folder['$attributes'].update(WorldDataset=dataset,WorldSourceSha256=manifest['sourceMeshSha256'])
+        contract_path=out/'quality-world-contract.luau'
+        contract_json=json.dumps({'expectedArt':manifest['expectedArt'],'sourceMeshSha256':manifest['sourceMeshSha256']})
+        contract_path.write_text('return game:GetService("HttpService"):JSONDecode('+json.dumps(contract_json)+')\n',encoding='utf-8')
+        folder['WorldArtContract']={'$path':str(contract_path)}
+        entries.append(dict(path=['ReplicatedStorage','QualityPreviewAssets','WorldArtContract'],className='ModuleScript',source=contract_path.read_text()))
     for name in ['NativeAssetPreview','NativeImagePreview']+(['NativeEnemyPreview','EnemyBindingPreview'] if enemies else []):
         native=source_root/(name+'.luau')
         folder[name]={'$path':str(native)}
