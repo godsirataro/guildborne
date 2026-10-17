@@ -1,0 +1,11 @@
+# Ironveil chapter-7 routing checkpoint — 2026-10-17
+
+Reviewed source integrated as 0edd88a. Only CityNavigation, QuestRoute and city_waypoint tests changed. Existing server marker names, owner attributes, enabled prompts and floor geometry are consumed without changing combat, quest or reward authority.
+
+The public Guild/City/other-region travel legs no longer depend on streaming the private mine. Private Ironveil guidance requires the actual owner's model and floor; Y distinguishes surface, own interior and other vertical slots. Explicit scale/carrier/reception marker names prevent always-enabled MineExit from winning nearest-objective selection. Completed/disabled scales retarget to remaining enabled scales. Unstreamed private geometry stays unavailable.
+
+Independent review approved after public-leg ordering and localized entrance-name corrections. Final focused existing city_waypoint suite: 15 PASS (build/ironveil-route-focused.log); final scoped LSP passed. Earlier full suite started before final corrections, and its observation handle was unavailable to root; no final-source full-baseline claim.
+
+Actual earned Studio a6d25956-416f-4c3b-96bd-8a471f6f9819: client-only review5 navigation/route source copies installed, preserving review3 beacon and review4 menu gate. Ordinary N and Guide to quest objective click selected current server snapshot objective inspect_ironveil_scales, chapter7/claimed6/Hall2. Initially route unavailable: read-only ray inspection found the owned Warrior HumanoidRootPart between player and first island path point. Ordinary S held1second moved player from(-0.4065,3.998,-5.4217) to(-0.4084,3.998,11.2159); actual card then displayed Follow the island path / Central City / 7 studs. No profile/reward/position injection. Navigation selected and map closed.
+
+This proves actual current snapshot and initial island route rendering only. Full ordinary city-to-mine traversal, scale completion/retargeting, carrier/reception interactions and source-composed whole-build acceptance remain pending. Transient companion obstruction can currently suppress authored path guidance; preserve this observed limitation for followup rather than treating a pure-route test as end-to-end acceptance.
