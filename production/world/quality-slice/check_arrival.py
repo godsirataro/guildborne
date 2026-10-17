@@ -78,6 +78,7 @@ def main():
                 surface_area+=area;surface_count+=1
         else:
             signtri=tri
+            check(len(tri)<=200,'Carved sign triangle budget')
             check(-17<=lo[0]<=hi[0]<=-11 and 1488<=lo[2]<=hi[2]<=1492 and abs(lo[1]-2)<1e-5 and hi[1]<=12,'Sign bounds/support')
             for op in prior['placements']:
                 if op['meshId'].split('__')[0] not in ('stable','house','sawmill'):continue

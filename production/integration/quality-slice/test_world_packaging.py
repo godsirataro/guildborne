@@ -15,7 +15,7 @@ class WorldPairingTests(unittest.TestCase):
         source=ROOT/'assets/production/world-slice/world-slice.mesh.json'
         name,manifest=preview.world_contract([source])
         self.assertEqual(name,'Dataset1')
-        self.assertEqual(len(manifest['expectedArt']),115)
+        self.assertEqual(len(manifest['expectedArt']),116)
 
     def test_missing_duplicate_and_unrelated_pair(self):
         source=ROOT/'assets/production/world-slice/world-slice.mesh.json'
