@@ -133,6 +133,7 @@ test("796x617 tracker root outranks later HUD subtree with explicit local conten
  assert(border.ZIndex==1 and objective.ZIndex>border.ZIndex and heading.ZIndex>border.ZIndex)
  assert(icon.ZIndex>border.ZIndex and progress.ZIndex>border.ZIndex)
  assert(not heading.Visible and tracker.button.Size[4]==44)
+ assert(objective.TextSize==14,"Medium-width quest copy must not use phone-size text")
  gui:Destroy()
 end)
 test("tracker placement reserves gold and menu regions across compact and wide boundaries",function()
@@ -154,6 +155,7 @@ test("tracker placement reserves gold and menu regions across compact and wide b
    local menuLeft=8+(w-16)-100
    assert(x>=goldRight+8-.001 and x+bw<=menuLeft-8+.001,"Compact tracker overlaps HUD controls")
    assert(y==10 and bh==44 and y+bh<=58)
+   assert(find(tracker.button,"TrackerObjective").TextSize==(if bw>=200 then 14 else 12))
   end
   gui:Destroy()
  end

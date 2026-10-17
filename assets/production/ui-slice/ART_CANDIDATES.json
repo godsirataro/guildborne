@@ -1,0 +1,33 @@
+{
+  "schemaVersion": 1,
+  "status": "GENERATED_SOURCE_NOT_BOUND",
+  "candidates": [
+    {
+      "key": "guildborneGoldFrameV1",
+      "path": "assets/production/ui-slice/guildborne-gold-frame-v1-source.png",
+      "generator": "built-in image_gen",
+      "generatedAtDate": "2026-10-17",
+      "originalOutput": "C:/Users/godsi/.codex/generated_images/01a1430e-6325-7ad3-b8d5-2c01ebc6b5b7/exec-b697a6f3-2a67-4d47-a869-97c97e6f3d1c.png",
+      "reference": "design/guildborne-gui-production/03_REFERENCES/01_BRAND_UI_KIT.png",
+      "referenceSha256": "94026d40fdea2713c4c918e80a5cd35cba4d18bbf2f30702649f9e4c8d687590",
+      "sourceSha256": "243f99ed23a72477d9a3f0ea803ab65826981c45346b6610cad1974dc0c3cb98",
+      "bytes": 582453,
+      "width": 1254,
+      "height": 1254,
+      "requestedWidth": 512,
+      "requestedHeight": 512,
+      "mode": "RGBA",
+      "alphaRange": [0, 255],
+      "centralSampleBounds": [320, 320, 934, 934],
+      "centralAlphaRange": [0, 1],
+      "alphaAbove16Bounds": [15, 22, 1240, 1232],
+      "proposedSourceSliceCenter": [320, 320, 934, 934],
+      "pixelEditsAfterGeneration": false,
+      "provenance": "Generated original Guildborne component using the user-provided visual reference; no external paid API or third-party source asset.",
+      "runtimeAssetId": null,
+      "uploaded": false,
+      "binding": "Excluded from runtime manifest.images: source exceeds local binder 1024 dimension and one-million-pixel budget.",
+      "acceptance": "Local visual inspection only; exact-size export, alpha fringe, native 9-slice and human visual review pending."
+    }
+  ]
+}

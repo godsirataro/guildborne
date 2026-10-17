@@ -1,0 +1,26 @@
+PASS disabled and pending independently guard activation
+PASS external destruction disconnects callbacks
+PASS invalid and disabled tab selections preserve selected tab
+PASS missing and rejected logo IDs preserve live wordmark
+PASS logo loading toggles fallback without hiding subtitle
+PASS panel remains native when no uploaded slice is available
+PASS valid slice uses nested decoration and preserves supplied slice center
+PASS title waits for active profile and enters once on repeated Continue
+PASS title recovery hands off once and cleans preview
+PASS Title Tab delegates focus and releases input outside visible menu
+PASS Title scene remains intentional without heroes and bounds decorative geometry
+PASS short Title reserves room for controls and uses single-line localized actions
+PASS 12 simulated GUI behavior cases; Studio/device acceptance remains pending
+PASS gameplay GUI accept dispatches canonical intent and disabled busy guards remain closed
+PASS gameplay GUI prerequisite and release locks never dispatch acceptance
+PASS gameplay GUI incomplete claim and busy ready claim stay disabled
+PASS gameplay GUI ready claim uses server stock and never mutates inventory locally
+PASS gameplay GUI claimed tasks expose no accept or claim controls
+PASS gameplay GUI empty category renders real empty-state and stale callbacks disconnect
+PASS gameplay GUI narrow journal selection and back change list-detail state
+PASS gameplay GUI asset key and slice metadata exist at parenting without runtime IDs
+PASS gameplay GUI tracker maps progress ready state availability and missing data
+PASS gameplay GUI tracker resize responds before destruction and disconnects afterwards
+PASS gameplay GUI 796x617 tracker root outranks later HUD subtree with explicit local content layers
+PASS gameplay GUI tracker placement reserves gold and menu regions across compact and wide boundaries
+12 gameplay GUI behavior tests passed (simulation only).
