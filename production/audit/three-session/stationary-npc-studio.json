@@ -1,0 +1,14 @@
+{
+  "date":"2026-10-17",
+  "studioId":"a6d25956-416f-4c3b-96bd-8a471f6f9819",
+  "runtimeCommit":"1026161",
+  "probeCommit":"e77437c",
+  "setup":"Patched five exact runtime modules into stopped unsaved Memory optimized preview and verified equality. Injected exact corrected ControllerNpcProbe module, then Play. Normal bootstrap and art loaders remained enabled.",
+  "actualBootstrap":{"stableNpcIds":16,"clock":10.5,"initialFarActivity":"Work","initialFarWeight":0},
+  "actualNyra":{"nearDay":{"activity":"Work","weight":1},"nearNight":{"activity":"Rest","weight":0},"clockAndCameraRestored":true},
+  "serverProbe":{"status":"PASS_NATIVE_FIXTURE_ONLY","contactSamples":3,"maxContactError":2.6656007889869218e-7,"rootPreserved":true,"restored":true,"importedArt":false},
+  "clientProbe":{"status":"PASS_CLIENT_FIXTURE_ONLY","npcId":"cartographer_nyra","dialogueFixture":true,"activeRestorePreconditions":3,"rootPreserved":true,"restored":true},
+  "questJourneyTested":false,
+  "multiplayerTested":false,
+  "limitations":"Actual Nyra observation changed local Lighting.ClockTime and camera only; normal world still has its existing fixed clock. Dialogue interruption/recovery and reduced-motion/far/destruction checks used a disposable actor with actual animator and three verified active-pose preconditions. Server contact used original native Borin fixture. Does not certify imported characters, real conversation journey, all cities, or network interaction coverage."
+}
