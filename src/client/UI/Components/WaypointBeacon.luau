@@ -8,11 +8,11 @@ return function(gui: ScreenGui)
 	card.BackgroundColor3 = C.Background; card.BackgroundTransparency = .08; card.BorderSizePixel = 0; card.Visible = false; card.Parent = gui
 	local rim = Instance.new("UIStroke"); rim.Color = C.Gold; rim.Thickness = 1; rim.Parent = card
 	local rail = Instance.new("Frame"); rail.Size = UDim2.new(0, 3, 1, -12); rail.Position = UDim2.fromOffset(0, 6)
-	rail.BackgroundColor3 = C.Focus; rail.BorderSizePixel = 0; rail.Parent = card
+	rail.BackgroundColor3 = C.Focus; rail.BorderSizePixel = 0; rail.ZIndex = 6; rail.Parent = card
 	local function text(name: string, size: number, color: Color3): TextLabel
 		local label = Instance.new("TextLabel"); label.Name = name; label.BackgroundTransparency = 1; label.TextColor3 = color
 		label.Font = Theme.Fonts.Body; label.TextSize = size; label.TextWrapped = true; label.TextTruncate = Enum.TextTruncate.AtEnd
-		label.TextXAlignment = Enum.TextXAlignment.Left; label.ZIndex = 2; label.Parent = card; return label
+		label.TextXAlignment = Enum.TextXAlignment.Left; label.ZIndex = 6; label.Parent = card; return label
 	end
 	local step = text("NextInstruction", 15, C.Text)
 	local destination = text("FinalDestination", 12, C.Gold)
@@ -25,9 +25,13 @@ return function(gui: ScreenGui)
 	local outline = Instance.new("UIStroke"); outline.Color = C.Gold; outline.Thickness = 2; outline.Parent = diamond
 	local gem = Instance.new("Frame"); gem.Name = "AzureCenter"; gem.AnchorPoint = Vector2.new(.5, .5)
 	gem.Position = UDim2.fromScale(.5, .5); gem.Size = UDim2.fromOffset(9, 9); gem.BackgroundColor3 = C.Focus; gem.BorderSizePixel = 0; gem.Parent = diamond
-	local chevron = Instance.new("TextLabel"); chevron.Name = "GroundPointer"; chevron.BackgroundTransparency = 1
-	chevron.Size = UDim2.fromScale(1, .45); chevron.Position = UDim2.fromScale(0, .5); chevron.Text = "⌄"; chevron.TextSize = 32
-	chevron.TextColor3 = C.Gold; chevron.Font = Theme.Fonts.Body; chevron.Parent = marker
+	-- Native bars form a downward chevron without relying on font glyph coverage.
+	for index, rotation in ipairs({45, -45}) do
+		local bar = Instance.new("Frame"); bar.Name = "GroundPointer" .. index
+		bar.AnchorPoint = Vector2.new(.5, .5); bar.Position = UDim2.fromOffset(if index == 1 then 21 else 31, 47)
+		bar.Size = UDim2.fromOffset(16, 3); bar.Rotation = rotation
+		bar.BackgroundColor3 = C.Gold; bar.BorderSizePixel = 0; bar.Parent = marker
+	end
 	local function resize()
 		local short = gui.AbsoluteSize.Y < 450
 		-- Short landscape uses the right column: the compact actor roster occupies
@@ -56,14 +60,16 @@ return function(gui: ScreenGui)
 		if unavailable then
 			step.Text = T("Route unavailable"); destination.Text = T("Follow the quest instructions"); distanceLabel.Text = ""; return
 		end
-		step.Text = T(target.stepLabel or "Next waypoint")
+		local destinationHint = target.guidance == "destination"
+		step.Text = T(if destinationHint then "Destination direction — follow paths" else target.stepLabel or "Next waypoint")
 		destination.Text = T(target.destinationName or target.name)
 		distanceLabel.Text = if distance then T("{distance} studs", {distance = distance}) else ""
 		local anchor = target.anchor
-		if anchor and anchor.Parent and type(target.y) == "number" then
+		if not destinationHint and anchor and anchor.Parent and type(target.y) == "number" then
 			marker.Adornee = anchor
 			marker.StudsOffsetWorldSpace = Vector3.new(target.x, target.y + 3.5, target.z) - anchor.Position
 			marker.Enabled = true
 		end
-	end, destroy = function() lifetime:Disconnect(); destroy() end}
+	end, directionPosition = function(): UDim2 return UDim2.new(1, -90, 0, 216) end,
+	destroy = function() lifetime:Disconnect(); destroy() end}
 end
