@@ -1,0 +1,20 @@
+{
+  "date": "2026-10-17",
+  "studioId": "04084a7d-b461-47ee-bc6a-9592dd718ff3",
+  "placeId": 0,
+  "gameId": 0,
+  "persistence": "Memory",
+  "sourceCommit": "b763d19",
+  "setup": "Stopped isolated launch preview; replaced NoviceTrialController and NoviceActionPresentation with exact checked-out sources, verified equality in Edit, disabled independent QualityPreview art loader, started Play. Existing normal bootstrap created one controller HUD.",
+  "probe": "tests/studio_novice_presentation.luau",
+  "status": "PASS_LOCAL_EXISTING_NOVICE_CONTROLLER",
+  "arenas": [
+    {"kind":"NoviceTrial","forwarded":4,"actualVFX":true,"delayedMetadata":true,"nilCancelled":true,"removalCancelled":true},
+    {"kind":"ArchiveEncounter","forwarded":4,"actualVFX":true,"delayedMetadata":true,"nilCancelled":true,"removalCancelled":true}
+  ],
+  "syntheticPresentationAttributes": true,
+  "serverCombatTested": false,
+  "rewardsTested": false,
+  "deviceTested": false,
+  "notes": "Probe exercised actual existing controller and Mage VFX, rejected duplicate/stale/future/invalid timestamps, removed owned fixtures and restored camera and quality. No remotes invoked. This test does not certify the complete built candidate or the world art loader."
+}
