@@ -30,6 +30,9 @@ return function(town:Instance,open:(Player,string)->(),prompt:(BasePart,string,(
         local billboard=label.Parent :: BillboardGui;billboard.Size=UDim2.fromOffset(240,70)
         prompt(root,"Talk",function(player)
             model:SetAttribute("GreetingAt",workspace:GetServerTimeNow())
+            -- Bounded presentation hint only; quest authority remains in SettlementService.
+            model:SetAttribute("NpcInteractUntil",workspace:GetServerTimeNow()+BorinMotion.InteractSeconds)
+            model:SetAttribute("NpcInteractor",player.UserId)
             if id=="smith_borin" then
                 model:SetAttribute("BorinInteractUntil",workspace:GetServerTimeNow()+BorinMotion.InteractSeconds)
                 model:SetAttribute("BorinInteractor",player.UserId)

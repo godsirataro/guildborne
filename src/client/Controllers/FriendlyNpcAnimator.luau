@@ -2,17 +2,19 @@
 local CollectionService=game:GetService("CollectionService")
 local RunService=game:GetService("RunService")
 local Players=game:GetService("Players")
+local Lighting=game:GetService("Lighting")
 local Motion=require(game.ReplicatedStorage.Shared.Config.VFXConfig)
 local Work=require(game.ReplicatedStorage.Shared.Presentation.CivicWorkMotion)
 local BorinMotion=require(game.ReplicatedStorage.Shared.Presentation.BorinWorkMotion)
 local Borin=require(game.ReplicatedStorage.Shared.Presentation.BorinPresentation)
 local Audio=require(script.Parent.AudioController)
-local function localBorinDialogueOpen(root:BasePart):boolean
+local Life=assert(require(game.ReplicatedStorage.Shared.Data.NpcLifeSchedule)(require(game.ReplicatedStorage.Shared.Config.NpcLifeDefinitions),require(game.ReplicatedStorage.Shared.Config.FriendlyNpcs),{Journal={}}))
+local function localDialogueOpen(root:BasePart,id:string):boolean
     local player=Players.LocalPlayer
     local characterRoot=player.Character and player.Character:FindFirstChild("HumanoidRootPart")
     if not characterRoot or not characterRoot:IsA("BasePart") or (characterRoot.Position-root.Position).Magnitude>14 then return false end
     local gui=player:FindFirstChild("PlayerGui")
-    local dialogue=gui and gui:FindFirstChild("FriendlyDialogue_smith_borin",true)
+    local dialogue=gui and gui:FindFirstChild("FriendlyDialogue_"..id,true)
     local cursor:Instance?=dialogue
     if not cursor then return false end
     while cursor and cursor~=gui do
@@ -22,10 +24,20 @@ local function localBorinDialogueOpen(root:BasePart):boolean
     end
     return true
 end
-type Actor={model:Model,motors:{[Motor6D]:CFrame},added:RBXScriptConnection?,removing:RBXScriptConnection?,destroying:RBXScriptConnection?,borin:BorinMotion.State?,flashUntil:number?}
+type Actor={model:Model,motors:{[Motor6D]:CFrame},added:RBXScriptConnection?,removing:RBXScriptConnection?,destroying:RBXScriptConnection?,borin:BorinMotion.State?,flashUntil:number?,id:string?,nextSample:number,tier:string?,activity:string,interactUntil:number?,localDialogueUntil:number?,weight:number,restored:boolean,lastTime:number?}
 return function(collectionProvider:any?)
     local Collection=collectionProvider or CollectionService
     local actors:{[Instance]:Actor}={}
+    local function attribute(actor:Actor,name:string,value:any)
+        if actor.model:GetAttribute(name)~=value then actor.model:SetAttribute(name,value) end
+    end
+    local function restore(actor:Actor)
+        if actor.restored then return end
+        for motor,base in pairs(actor.motors)do if motor.Parent then motor.C0=base end end
+        local flash=actor.model:FindFirstChild("BorinContactFlash",true)
+        if flash and flash:IsA("PointLight") then flash.Enabled=false end
+        actor.flashUntil=nil;actor.restored=true
+    end
     local function remove(instance:Instance)
         local actor=actors[instance];if not actor then return end
         actors[instance]=nil
@@ -38,10 +50,10 @@ return function(collectionProvider:any?)
     end
     local function add(instance:Instance)
         if not instance:IsA("Model")or actors[instance]then return end
-        local actor:Actor={model=instance,motors={}}
+        local actor:Actor={model=instance,motors={},id=Life.resolve(instance:GetAttribute("NpcId")),nextSample=0,activity="Work",weight=0,restored=false}
         if instance:GetAttribute("NpcId")=="smith_borin" then actor.borin=BorinMotion.new() end
         local function joint(v:Instance)
-            if v:IsA("Motor6D")and not actor.motors[v]then actor.motors[v]=v.C0 end
+            if v:IsA("Motor6D")and not actor.motors[v]then actor.motors[v]=v.C0;actor.restored=false end
         end
         actors[instance]=actor
         actor.added=instance.DescendantAdded:Connect(joint)
@@ -58,26 +70,48 @@ return function(collectionProvider:any?)
         local camera=workspace.CurrentCamera;if not camera then return end
         local now=workspace:GetServerTimeNow()
         for _,actor in pairs(actors) do
+            local dt=if actor.lastTime then now-actor.lastTime else 0;actor.lastTime=now
             local root=actor.model.PrimaryPart
             if not root or not actor.model:IsDescendantOf(workspace) then
-                for motor,base in pairs(actor.motors)do if motor.Parent then motor.C0=base end end
-                if actor.borin then Borin.apply(actor.model,actor.motors,BorinMotion.step(actor.borin,now,nil,false,false,false)) end
+                restore(actor);actor.weight=0;actor.nextSample=0
+                if actor.borin then BorinMotion.step(actor.borin,now,nil,false,false,false) end
                 continue
             end
-            if actor.borin then
-                local distance=(root.Position-camera.CFrame.Position).Magnitude
-                local rawUntil=actor.model:GetAttribute("BorinInteractUntil")
-                local untilTime:number?=if type(rawUntil)=="number" then rawUntil else nil
-                local interactorId=actor.model:GetAttribute("BorinInteractor")
+            local distance=(root.Position-camera.CFrame.Position).Magnitude
+            local reduced=workspace:GetAttribute(Motion.ReducedMotionAttribute)==true
+            local moving=actor.model:GetAttribute("EscortMoving")==true
+            -- Day phase uses the world's existing clock; interaction deadlines use server time.
+            -- Near dialogue scans are capped at ten per second, and far actors do no GUI scans.
+            if now>=actor.nextSample or (actor.tier=="Far" and distance<=140) then
+                local sample=if actor.id then Life.sample(actor.id,Lighting.ClockTime*3600,distance,actor.tier) else nil
+                actor.tier=if sample then sample.tier elseif distance>160 then "Far" else "Near"
+                actor.activity=if sample then sample.activity else "Work"
+                actor.nextSample=now+(if sample then sample.updateSeconds else .1)
+                local rawUntil=actor.model:GetAttribute(if actor.borin then "BorinInteractUntil" else "NpcInteractUntil")
+                local untilTime:number?=if type(rawUntil)=="number" and rawUntil==rawUntil and rawUntil<math.huge then math.min(rawUntil,now+BorinMotion.InteractSeconds) else nil
+                local interactorId=actor.model:GetAttribute(if actor.borin then "BorinInteractor" else "NpcInteractor")
                 local interactor=if type(interactorId)=="number" then Players:GetPlayerByUserId(interactorId) else nil
                 local interactorRoot=interactor and interactor.Character and interactor.Character:FindFirstChild("HumanoidRootPart")
-                if interactorRoot and interactorRoot:IsA("BasePart") and (interactorRoot.Position-root.Position).Magnitude>14 then untilTime=nil end
-                -- Existing visible local dialogue extends presentation only; no new remote or reward path.
-                if localBorinDialogueOpen(root) then untilTime=math.max(if type(untilTime)=="number" then untilTime else 0,now+.2) end
-                local sample=BorinMotion.step(actor.borin,now,untilTime,distance<=BorinMotion.CullDistance,workspace:GetAttribute(Motion.ReducedMotionAttribute)==true,actor.model:GetAttribute("EscortMoving")==true)
-                actor.model:SetAttribute("BorinLocalPresentationState",sample.mode)
-                actor.model:SetAttribute("BorinLocalWorkClock",sample.clock or 0)
-                actor.model:SetAttribute("BorinLocalWorkWeight",sample.weight)
+                -- A streamed-out character cannot extend this absolute server deadline.
+                -- A departed player or a known distant root cancels the shared hint.
+                if not interactor or (interactorRoot and interactorRoot:IsA("BasePart") and (interactorRoot.Position-root.Position).Magnitude>14) then untilTime=nil end
+                if actor.id and actor.tier~="Far" and localDialogueOpen(root,actor.id) then
+                    actor.localDialogueUntil=now+.2;actor.nextSample=now+.1
+                end
+                if actor.localDialogueUntil then untilTime=math.max(untilTime or 0,actor.localDialogueUntil) end
+                actor.interactUntil=untilTime
+                attribute(actor,"NpcLifeScheduledActivity",actor.activity)
+                attribute(actor,"NpcLifeTier",actor.tier)
+            end
+            if actor.borin then
+                local sample=BorinMotion.step(actor.borin,now,actor.interactUntil,distance<=BorinMotion.CullDistance,reduced,moving,actor.activity=="Work")
+                attribute(actor,"BorinLocalPresentationState",sample.mode)
+                attribute(actor,"BorinLocalWorkClock",sample.clock or 0)
+                attribute(actor,"BorinLocalWorkWeight",sample.weight)
+                attribute(actor,"NpcLifeWorkWeight",sample.weight)
+                attribute(actor,"NpcLifeActivity",if sample.mode=="Idle" then actor.activity else sample.mode)
+                if distance>BorinMotion.CullDistance or reduced or moving then restore(actor);continue end
+                actor.restored=false
                 if actor.model:GetAttribute("DetailedBorinPreview")==true then
                     Borin.apply(actor.model,actor.motors,{weight=0})
                     actor.flashUntil=nil
@@ -93,17 +127,23 @@ return function(collectionProvider:any?)
                 if flash and flash:IsA("PointLight") then flash.Enabled=sample.mode=="Work" and distance<=BorinMotion.DetailDistance and now<(actor.flashUntil or 0) end
                 continue -- Borin adapter is this actor's only pose owner.
             end
-            if (root.Position-camera.CFrame.Position).Magnitude>160 then
-                for motor,base in pairs(actor.motors) do motor.C0=base end
+            if actor.tier=="Far" or distance>160 or reduced then
+                restore(actor);actor.weight=0;attribute(actor,"NpcLifeWorkWeight",0)
+                attribute(actor,"NpcLifeActivity",actor.activity)
                 continue
             end
+            actor.restored=false
+            local interacting=actor.interactUntil~=nil and actor.interactUntil>now
+            actor.weight=BorinMotion.activityWeight(actor.weight,dt,actor.activity=="Work" and not interacting,moving)
+            attribute(actor,"NpcLifeWorkWeight",actor.weight)
+            attribute(actor,"NpcLifeActivity",if interacting then "Interact" elseif actor.activity=="Work" and actor.weight<1 and not moving then "Recover" else actor.activity)
             local at=actor.model:GetAttribute("GreetingAt")
             local elapsed=if type(at)=="number" then now-at else 10
             local wave=if elapsed>=0 and elapsed<1.8 then math.sin(math.pi*elapsed/1.8) else 0
-            local idle=if workspace:GetAttribute(Motion.ReducedMotionAttribute) then 0 else 1
-            local walk=if actor.model:GetAttribute("EscortMoving")==true then math.sin(now*8)*.38 else 0
+            local idle=1
+            local walk=if moving then math.sin(now*8)*.38 else 0
             local identity=actor.model:GetAttribute("WorkMotionIdentity")
-            local work=Work.sample(if type(identity)=="string"then identity else actor.model.Name,now,idle==0 or actor.model:GetAttribute("EscortMoving")==true)
+            local work=Work.sample(if type(identity)=="string"then identity else actor.model.Name,now,moving)
             for motor,base in pairs(actor.motors) do
                 local name=motor.Name
                 local offset=CFrame.identity
@@ -116,7 +156,7 @@ return function(collectionProvider:any?)
                 elseif name=="RightLowerArm" then offset=CFrame.Angles(0,0,.2*wave*math.sin(elapsed*16)) end
                 local angles=work[name]
                 if angles then
-                    local weight=1-wave
+                    local weight=(1-wave)*actor.weight
                     offset=offset*CFrame.Angles(angles[1]*weight,angles[2]*weight,angles[3]*weight)
                 end
                 motor.C0=base*offset

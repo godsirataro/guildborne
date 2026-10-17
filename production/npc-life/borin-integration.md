@@ -77,3 +77,57 @@ approval remain separate pending acceptance.
 Coordinator verifies the exact isolated Studio session, runs the native probe
 and actual Borin quest journey, and reviews the separate detailed-art adapter.
 Independent reviewer inspects this candidate and evidence before task acceptance.
+
+## S17 stationary daily activity integration — 2026-10-17
+
+This extends the same animator to consume `NpcLifeSchedule` for the sixteen
+existing FriendlyNpcs identities. It does not add actors, relocate roots, change
+prompts/quest aliases or implement home/work walking. Earlier evidence above
+belongs to its original revision; new Studio checks remain NOT_RUN by S17.
+
+The existing world clock (`Lighting.ClockTime`, currently initialized to 10.5 by
+WorldService) supplies the daily activity phase. No new day/night cycle is added.
+Server-time seconds separately govern interaction deadlines and animation; these
+clock domains must never be compared directly. The client uses an empty Journal
+for this presentation projection; real hooks and rewards remain server-owned.
+
+Ten Central City NPC prompts now stamp bounded `NpcInteractUntil`/`NpcInteractor`
+attributes after the existing prompt's proximity validation. Borin's legacy
+attributes and sole contact/pose owner remain. Six civic hosts are outside the
+server-builder write scope: they use their actual local dialogue visibility and
+existing `WorkMotionIdentity` gestures, not a new replicated interaction claim.
+This is explicitly not sixteen server interaction hooks or multiplayer proof.
+
+Local nearby `FriendlyDialogue_<NpcId>` visibility suspends work while the panel
+and its ancestors are visible/enabled. Dialogue discovery is sampled at bounded
+cadence, not recursively scanned each frame. Work fades out over .25 seconds
+and returns over .6 seconds. Far/reduced-motion actors restore native joints;
+restoration is skipped once already done, while streaming additions invalidate
+that cache. Root motion and quest accessibility remain untouched. The one
+existing RenderStepped loop still iterates the tracked actor set: this is not a
+generalized population scheduler or measured support for 410 visible rigs.
+
+### Controller-only probe
+
+Keep the no-argument `tests/studio_borin_integration.luau` call for the existing
+server native hammer/contact probe. The optional client form accepts
+`{animator = require(actualClient.Controllers.FriendlyNpcAnimator)}`. It creates
+an untagged disposable Nyra fixture and an injected collection provider, so the
+normal animator cannot acquire a second ownership of that fixture. It checks
+day work, nearby visible dialogue pause, close/recovery, night rest, reduced
+motion, far restoration and unchanged root. It restores its camera/Lighting/
+reduced-motion settings and destroys temporary GUI/models/connections on exit.
+
+Run only in the Controller's verified isolated Memory candidate. The dialogue
+panel is a fixture, not an earned gameplay interaction. `PASS_CLIENT_FIXTURE_ONLY`
+does not pass quest acceptance, multiplayer, persistence, device or art quality.
+Follow with actual Nyra/Borin dialogue and the `borin_castings` gameplay route.
+S17 authored/compiled this probe but has not executed it in Studio.
+
+Separate read-only review checked clock separation, fades, cleanup and sole pose
+ownership; seven Borin lifecycle tests and eight NPC contract tests passed.
+Reviewer flagged missing replicated hints for the six hosts. Controller explicitly
+accepted the bounded ten-Central/six-local coverage for this write scope; shared
+host interaction remains a follow-up in CivicCityWorld, not a passed feature.
+Current full Roblox-aware analysis exits 0 with nine pre-existing GUI `Services`
+warnings. Final full-regression receipts are delivered with the source commit.
