@@ -181,3 +181,29 @@ Target.active/hostile-space/runtime focus evidence still needs diagnosis; no
 server combat gate was weakened, no quest progress injected. Actor.focus is a
 valid projection of focusTarget in HeroService.CompanionEvidence; a field rename
 is not justified. Preserve live Memory session near (-53.11,5.048,1422.901).
+
+## Greenwood escort completed and chapter-three reward claimed
+
+Continued real HUD Focus inputs while observing the server objective. A Focus
+input against a live target advanced focus_escort to regroup_escort. Regroup
+inputs during the next active fight advanced to finish_escort. Earlier accepted
+orders were insufficient evidence of a selected live target or active fight;
+no source bug was established and no combat/campaign gates were changed.
+
+Issued ordinary player/Warrior Q/F actions and kept both companions nearby.
+Observed actual Warrior DamageDealt663 and Priest DamageDealt759 cumulatively
+across the repeated fights (not a single-kill damage claim). Scout health reached
+zero. R from the earlier position did not finish; moved south approximately
+7 studs to the actual EscortFinish marker and pressed R. Server campaign
+Objective became nil with text Claim chapter rewards in the Guild menu.
+Clicked native CampaignClaim: UI advanced to Woodland Debt, chapter4/12 Lv16.
+Actual player Level16 XP753, MaxHealth65, DamageDealt63 and AbilityCount1.
+
+This verifies the real same-session guild UI/party -> travel/map -> two-companion
+regional fight/orders -> objective submission -> server reward -> GUI update
+journey. Repeated scout kills were involved; this is not a clean first-attempt
+UX acceptance, multiplayer/save/mobile acceptance, or latest-art acceptance.
+Current Play still uses the earlier optimized roof mesh and 12px tracker.
+Navigation review found direct destination arrows can suggest wall/void paths;
+S14 has been assigned native next-waypoint guidance within its existing exclusive
+scope, with real Hall/bridge/road anchors and subsequent controller walk testing.
