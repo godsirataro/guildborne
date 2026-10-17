@@ -28,9 +28,14 @@ return function()
 	end
 	local function atMarker(model: Model,at: number,callback: () -> ())
 		local stamp=model:GetAttribute("ActionAt")
-		local age=if typeof(stamp)=="number" then workspace:GetServerTimeNow()-stamp else 0
-		if age<0 or age>at then return end
-		later(model,at-age,callback)
+		local generation=generations[model]
+		Timeline.scheduleMarker(stamp,at,function() return workspace:GetServerTimeNow() end,
+			function(seconds,run) task.delay(seconds,run) end,
+			function() return alive(model) and generations[model]==generation and model:GetAttribute("ActionAt")==stamp end,callback)
+	end
+	local function beforeMarker(model: Model,at: number): boolean
+		local remaining=Timeline.markerDelay(model:GetAttribute("ActionAt"),workspace:GetServerTimeNow(),at)
+		return remaining~=nil and remaining>0
 	end
 	local function low(): boolean return workspace:GetAttribute(Config.QualityAttribute)=="Low" end
 	local function reduced(): boolean return Input.TouchEnabled or low() end
@@ -153,22 +158,33 @@ return function()
 		end
 	end
 	-- Three-object fallback retains a caster/target connection when detail is saturated.
-	local function compact(model: Model,class: string,effect: string,aim: CFrame,target: Vector3,color: Color3)
+	local function compact(model: Model,class: string,effect: string,aim: CFrame,target: Vector3,color: Color3,timed: boolean)
 		local source=aim.Position+V(0,.6,0)
 		local length=(target-source).Magnitude
+		local function start(at: number,callback: () -> ())
+			if timed then atMarker(model,at,callback) else callback() end
+		end
 		if effect=="Heal" then
+			start(.12,function()
 			local a=make(V(.04,.04,.04),CFrame.new(source),color,Enum.PartType.Ball,.48,{Transparency=1},1,"Primary")
 			local b=make(V(.25,.25,.25),CFrame.new(target),white,Enum.PartType.Ball,.48,{Position=target+V(0,1.5,0),Transparency=1},.3,"Primary")
 			if a and b then
 				local x=Instance.new("Attachment");x.Parent=a;local y=Instance.new("Attachment");y.Parent=b
 				local beam=Instance.new("Beam");beam.Attachment0=x;beam.Attachment1=y;beam.Width0=.08;beam.Width1=.12;beam.Color=ColorSequence.new(color);beam.Transparency=NumberSequence.new(.5);beam.FaceCamera=true;beam.Parent=a
 			end
-			make(V(.12,1.2,.12),CFrame.new(target),color,Enum.PartType.Block,.48,{Position=target+V(0,1.5,0),Transparency=1},.2,"Primary")
+			end)
+			start(.32,function()
+				make(V(.12,1.2,.12),CFrame.new(target),color,Enum.PartType.Block,.48,{Position=target+V(0,1.5,0),Transparency=1},.2,"Primary")
+			end)
 		elseif class=="Knight" then
 			local shield=aim*CFrame.new(0,0,-1.7)
+			start(.12,function()
 			make(V(1.8,2.3,.1),shield,color,Enum.PartType.Block,.4,{Size=V(2,2.6,.05),Transparency=1},.65,"Primary")
 			make(V(.1,1.4,.1),shield,white,Enum.PartType.Block,.4,{Transparency=1},.3,"Primary")
+			end)
+			start(.24,function()
 			make(V(.15,.6,.15),CFrame.new(target+V(0,2.7,0)),color,Enum.PartType.Block,.4,{Position=target+V(0,3.1,0),Transparency=1},.2,"Primary")
+			end)
 		elseif class=="Warrior" then
 			local cf=aim*CFrame.new(0,.3,-2)*CFrame.Angles(0,0,-.6)
 			atMarker(model,Timeline.Release,function()
@@ -176,19 +192,24 @@ return function()
 			end)
 			atMarker(model,Timeline.Contact,function() make(V(.15,1.3,.15),CFrame.new(target)*CFrame.Angles(0,0,.7),white,Enum.PartType.Block,.18,{Size=V(.04,2,.04),Transparency=1},.2,"Primary") end)
 		else
-			if length>.1 then make(if class=="Archer" then V(.12,.12,2.4) else V(.85,.85,.85),CFrame.lookAt(source,target),color,if class=="Mage" then Enum.PartType.Ball else Enum.PartType.Block,.18,{Position=target,Transparency=.35},.15,"Primary") end
-			later(model,.18,function()
-				make(V(.3,.3,.3),CFrame.new(target),white,Enum.PartType.Ball,.18,{Size=V(.7,.7,.7),Transparency=1},.25,"Primary")
+			start(.12,function()
+			if length>.1 then make(if class=="Archer" then V(.12,.12,2.4) else V(.85,.85,.85),CFrame.lookAt(source,target),color,if class=="Mage" then Enum.PartType.Ball else Enum.PartType.Block,if timed and class=="Archer" then .14 else .18,{Position=target,Transparency=.35},.15,"Primary") end
 			end)
+			local function impact()
+				make(V(.3,.3,.3),CFrame.new(target),white,Enum.PartType.Ball,.18,{Size=V(.7,.7,.7),Transparency=1},.25,"Primary")
+			end
+			if timed then atMarker(model,if class=="Archer" then .26 else .3,impact) else later(model,.18,impact) end
 		end
 	end
 	local function classCast(model: Model,class: string,effect: string,aim: CFrame,target: Vector3,color: Color3): boolean
 		local origin=aim.Position;local floor=CFrame.new(target-V(0,2.4,0))
 		if class=="Mage" and (effect=="Magic" or effect=="Area") then
 			-- A vertical casting seal contracts into a comet before the impact crown.
+			if beforeMarker(model,.12) then
 			arc(aim*CFrame.new(0,.5,-1.8)*CFrame.Angles(math.pi/2,0,0),1.7,color,0,math.pi*2,.22)
 			make(V(.15,.15,.15),aim*CFrame.new(0,.5,-1.8),white,Enum.PartType.Ball,.12,{Size=V(.9,.9,.9),Transparency=.3})
-			later(model,.12,function()
+			end
+			atMarker(model,.12,function()
 				missile(origin+V(0,.5,0),target,color,.18)
 				local orb=make(V(1.55,1.55,1.55),CFrame.new(origin+V(0,.5,0)),color,Enum.PartType.Ball,.18,{Position=target,Size=V(1.1,1.1,1.1),Transparency=.18})
 				if orb and effect=="Magic" then
@@ -198,7 +219,7 @@ return function()
 				if orb then local a=Instance.new("Attachment");a.Position=V(0,.3,0);a.Parent=orb;local b=Instance.new("Attachment");b.Position=V(0,-.3,0);b.Parent=orb
 					local trail=Instance.new("Trail");trail.Attachment0=a;trail.Attachment1=b;trail.Color=ColorSequence.new(white,color);trail.Transparency=NumberSequence.new(.3,1);trail.Lifetime=.12;trail.FaceCamera=true;trail.Parent=orb end
 			end)
-			later(model,.3,function()
+			atMarker(model,.3,function()
 				burst(target,color,true);arc(floor,if effect=="Area" then 4.8 else 2.5,color,0,math.pi*2,.48)
 				if effect=="Magic" then
 					local anchor=make(V(.05,.05,.05),CFrame.new(target),color,Enum.PartType.Ball,.6,{Transparency=1},1)
@@ -215,42 +236,49 @@ return function()
 			end);return true
 		elseif class=="Archer" and (effect=="Physical" or effect=="Area") then
 			local bow=aim*CFrame.new(-.6,.5,-1.4)
+			if beforeMarker(model,.12) then
 			arc(bow*CFrame.Angles(math.pi/2,0,math.pi/2),1.1,color,-1.2,2.4,.2)
 			line(bow:PointToWorldSpace(V(0,-1,0)),bow:PointToWorldSpace(V(0,1,0)),.06,white,.18)
-			later(model,.12,function() missile(origin+V(0,.5,0),target,color,.14) end)
-			later(model,.26,function()
+			end
+			atMarker(model,.12,function() missile(origin+V(0,.5,0),target,color,.14) end)
+			atMarker(model,.26,function()
 				burst(target,color,false)
-				if effect=="Area" then
-					for i=1,(if reduced() then 3 else 5) do
-						local a=i*2.399;local p=target+V(math.cos(a)*2.3,0,math.sin(a)*2.3)
-						later(model,(i-1)*.035,function() missile(p+V(-2,8,1),p,color,.16) end)
-						later(model,.16+(i-1)*.035,function() burst(p,color,false) end)
-					end
-				else line(target-aim.LookVector*1.5,target+aim.LookVector*2.5,.2,white,.22) end
-			end);return true
+				if effect~="Area" then line(target-aim.LookVector*1.5,target+aim.LookVector*2.5,.2,white,.22) end
+			end)
+			-- Schedule each absolute volley marker at admission. A late initial
+			-- impact must not discard later arrows or restart their relative clocks.
+			if effect=="Area" then
+				for i=1,(if reduced() then 3 else 5) do
+					local a=i*2.399;local p=target+V(math.cos(a)*2.3,0,math.sin(a)*2.3)
+					atMarker(model,.26+(i-1)*.035,function() missile(p+V(-2,8,1),p,color,.16) end)
+					atMarker(model,.42+(i-1)*.035,function() burst(p,color,false) end)
+				end
+			end;return true
 		elseif class=="Knight" and (effect=="Guard" or effect=="Taunt") then
 			local cf=aim*CFrame.new(0,0,-2)
 			local vertices={V(-1.4,1.7,0),V(1.4,1.7,0),V(1.7,0,0),V(0,-2.2,0),V(-1.7,0,0)}
+			if beforeMarker(model,.12) then
 			for i,p in ipairs(vertices) do line(cf:PointToWorldSpace(p),cf:PointToWorldSpace(vertices[i%#vertices+1]),.18,color,.6) end
-			later(model,.12,function()
+			end
+			atMarker(model,.12,function()
 				make(V(2.6,3.2,.12),cf,color,Enum.PartType.Block,.5,{Size=V(3,3.8,.05),Transparency=1},.66)
 				line(cf:PointToWorldSpace(V(0,1.2,0)),cf:PointToWorldSpace(V(0,-1.4,0)),.18,white,.5)
 				line(cf:PointToWorldSpace(V(-.8,.4,0)),cf:PointToWorldSpace(V(.8,.4,0)),.18,white,.5)
 				pulse(origin-V(0,2.5,0),Config.Gold)
 			end)
-			if effect=="Taunt" then later(model,.24,function()
+			if effect=="Taunt" then atMarker(model,.24,function()
 				local crown=target+V(0,2.5,0);line(crown,crown+V(0,1,0),.2,color,.5)
 				make(V(.25,.25,.25),CFrame.new(crown-V(0,.4,0)),white,Enum.PartType.Ball,.5,{Transparency=1})
 			end) end;return true
 		elseif class=="Priest" and effect=="Heal" then
-			arc(CFrame.new(origin-V(0,2.5,0)),2,color,0,math.pi*2,.2)
-			later(model,.12,function()
+			if beforeMarker(model,.12) then arc(CFrame.new(origin-V(0,2.5,0)),2,color,0,math.pi*2,.2) end
+			atMarker(model,.12,function()
 				arc(floor,3.4,color,0,math.pi*2,.7)
 				for i=1,4 do local a=i*math.pi/2;local p=target+V(math.cos(a)*2,-2,math.sin(a)*2)
 					make(V(.22,.8,.22),CFrame.new(p),color,Enum.PartType.Block,.65,{Position=p+V(0,4,0),Size=V(.05,1.5,.05),Transparency=1}) end
 				line(target-V(0,.9,0),target+V(0,1.2,0),.22,white,.6);line(target-V(.8,0,0),target+V(.8,0,0),.22,white,.6)
 			end)
-			later(model,.32,function() arc(CFrame.new(target+V(0,2.5,0)),1.2,color,0,math.pi*2,.5) end);return true
+			atMarker(model,.32,function() arc(CFrame.new(target+V(0,2.5,0)),1.2,color,0,math.pi*2,.5) end);return true
 		end
 		return false
 	end
@@ -302,7 +330,7 @@ return function()
 		generations[model]=(generations[model] or 0)+1
 		local cap=if Input.TouchEnabled then Config.Budget.Touch else Config.Budget.Desktop
 		if skill and (low() or distance>Config.Distance.Detail or now<detailedUntil or count>cap-12) then
-			compact(model,class,effect,aim,target,color);return
+			compact(model,class,effect,aim,target,color,identity==nil);return
 		end
 		if skill then detailedUntil=now+.75 end
 		-- Stable semantic ID is intentionally presentation-only, never sent as a combat command.

@@ -51,3 +51,88 @@ actor.health=0;rejected("power_strike",106,"Downed");actor.health=100
 assert(abilities.cast(actor,"power_strike",target,{},106))
 assert(hits==2 and events==2)
 print("PASS Power Strike server contract: accepted/recovered casts, cooldown, invalid ability/target, death; no rejected side effects")
+
+-- Exercise the actual injected presentation scheduler, not a second implementation.
+local function markerFixture(stamp, observed, marker)
+	local now,live,emitted=observed,true,0
+	local queue={}
+	local scheduled=T.scheduleMarker(stamp,marker,function() return now end,function(delay,callback)
+		table.insert(queue,{due=now+delay,callback=callback,delay=delay})
+	end,function() return live end,function() emitted+=1 end)
+	return {
+		accepted=scheduled,queue=queue,
+		at=function(value) now=value end,
+		cancel=function() live=false end,
+		count=function() return emitted end,
+	}
+end
+local timings={Mage={.12,.30},Archer={.12,.26},Knight={.12,.24},Priest={.12,.32},Warrior={.10,.24}}
+for class,markers in pairs(timings) do
+	for _,marker in ipairs(markers) do
+		local f=markerFixture(10,10.05,marker)
+		assert(f.accepted and #f.queue==1,class.." did not schedule")
+		assert(math.abs(f.queue[1].due-(10+marker))<1e-10,class.." latency shifted absolute marker")
+		f.at(10+marker);f.queue[1].callback();f.queue[1].callback()
+		assert(f.count()==1,class.." callback was not exactly once")
+	end
+	assert(not markerFixture(10,10.2,markers[1]).accepted,class.." replayed late release")
+	assert(markerFixture(10,10.2,markers[2]).accepted,class.." lost upcoming contact")
+	for _,marker in ipairs(markers) do assert(not markerFixture(10,10.5,marker).accepted,class.." replayed expired stage") end
+end
+assert(T.markerDelay(0,0,0)==0,"Exact zero marker rejected")
+assert(T.markerDelay(0,.25,.25)==0,"Exact boundary must be immediately eligible")
+assert(T.markerDelay(100,100.12,.12)==0,"Nonzero clock rounding rejected exact marker")
+assert(T.markerDelay(0,T.Duration,T.Duration)==0,"Exact final marker rejected")
+assert(T.markerDelay(0,T.Duration+.001,T.Duration)==nil)
+local invalidMarkerStamps: {any}={false,"stamp",0/0,math.huge,-math.huge,11}
+for _,stamp in ipairs(invalidMarkerStamps) do
+	assert(T.markerDelay(stamp,10,.24)==nil,"Invalid/future timestamp accepted")
+	local f=markerFixture(stamp,10,.24)
+	assert(not f.accepted and #f.queue==0,"Invalid timestamp queued work")
+end
+assert(T.markerDelay(nil,10,.24)==nil)
+for _,invalid in ipairs({0/0,math.huge,-math.huge}) do
+	assert(T.markerDelay(10,invalid,.24)==nil and T.markerDelay(10,10,invalid)==nil)
+end
+assert(T.markerDelay(10,10,-.01)==nil and T.markerDelay(10,10,T.Duration+.01)==nil)
+-- Volley submarkers remain on the original action clock even when observed late.
+for _,observed in ipairs({.3,.5}) do
+	local queued,skipped=0,0
+	for n=0,4 do
+		for _,marker in ipairs({.26+n*.035,.42+n*.035}) do
+			local f=markerFixture(0,observed,marker)
+			if marker>=observed then
+				queued+=1
+				assert(f.accepted and #f.queue==1,"Archer Area lost future submarker")
+				assert(math.abs(f.queue[1].due-marker)<1e-10,"Archer Area submarker shifted by latency")
+				f.at(marker);f.queue[1].callback();assert(f.count()==1)
+			else
+				skipped+=1
+				assert(not f.accepted and #f.queue==0,"Archer Area replayed elapsed submarker")
+			end
+		end
+	end
+	assert(queued>0 and skipped>0,"Volley fixture must exercise both retained and elapsed stages")
+end
+local exact=markerFixture(0,.25,.25)
+assert(exact.accepted and exact.queue[1].delay==0)
+exact.queue[1].callback();assert(exact.count()==1)
+local cancelled=markerFixture(10,10.05,.3)
+cancelled.cancel();cancelled.at(10.3);cancelled.queue[1].callback()
+assert(cancelled.count()==0,"Cancelled actor emitted stage")
+for _,callbackTime in ipairs({10.29,10.501,0/0,math.huge,-math.huge}) do
+	local f=markerFixture(10,10.05,.3)
+	f.at(callbackTime);f.queue[1].callback()
+	assert(f.count()==0,"Early, late or nonfinite callback emitted stage")
+end
+local grace=markerFixture(0,0,.25)
+grace.at(.45);grace.queue[1].callback();assert(grace.count()==1,"Exact callback grace boundary rejected")
+-- Five independent actor guards/queues: cancelling one must not suppress peers.
+local party={}
+for i=1,5 do party[i]=markerFixture(10,10.05,.3) end
+party[3].cancel()
+for i,f in ipairs(party) do
+	f.at(10.3);f.queue[1].callback()
+	assert(f.count()==(if i==3 then 0 else 1),"One actor cancellation leaked into another")
+end
+print("PASS class markers: absolute timing, late skips, finite/boundary checks, callback grace, cancellation, exactly-once and five-actor isolation")
