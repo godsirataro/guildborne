@@ -1,4 +1,20 @@
-# Four-session production control — current checkpoint 2026-10-17
+# Four-session production control — latest verified checkpoint 2026-10-17
+
+IN PROGRESS. Controller source53d43f0 is pushed on codex/three-session-integration. Canonical shared ledger is four-session-v4.sqlite3 under C:/Work/MySelf/Guildborne/build/agentic; v3 below is retired history. Goal remains active, last account check25% remaining, stop starting work near5%. No new PR/merge/publishing/spending/production DataStore changes.
+
+| Stream | Latest verified result | Active work / remaining gates |
+| --- | --- | --- |
+| S13 Map | Reviewed terrain9909de1 imported in isolated Studio:108placements,40628unique triangles,matching collision | Active foundation/rock/waymarker composition; Blender renders inspected but delivery and Studio import pending. Full connected Lv100 world and final player-eye art pending |
+| S14 GUI | Compass9337ae2 avoids Attack overlap; narrow helper8fe889c fits native390x844 EN/TH text | Active reference-informed tracker/hero polish, chapter5 encounter directions, City return fallback, Management-menu occlusion fix.320x280 unsupported; physical devices and final art pending |
+| S15 Combat/VFX | Walk9da9d61 integrated fab41b2; independent review; two actual331-frame preview runs and cleanup | Idle/released Blender. Continuous-motion/feet quality, residual angular-speed seam, wider combat and imported audio pending |
+| S17 NPC | Civic2869fda integrated;12real prompt cases across6hosts at8/24studs passed,fixture removed | Idle/released. Boundary/multi-client/lifecycle visual and full NPC roster remain pending |
+| Controller | Ordinary novice/classes, guild chapters1–6,two-companion combat,rewards and return travel; earned Hall2 upgrade | Preserve earned Studio a6d25956 at chapter7,level20,Hall2. Review incoming visual deliveries and test integrated runtime |
+
+Current integrated baseline after Walk source:897tests,381strictfiles,build/compile/sourcemap passed (raw build/controller-walk-integrated-baseline.log; nine existing Services test warnings). Studio role validation and regenerated98adapters verification passed. No claim of device/multiplayer/human acceptance.
+
+Evidence: [ordinary journey](NOVICE_ORDINARY_JOURNEY.md), [Walk runtime](WALK_RUNTIME.md), [civic prompts](CIVIC_HOST_RUNTIME.md), [terrain/compass runtime](TERRAIN_COMPASS_RUNTIME.md), and [resumption details](GOAL_CHECKPOINT.md). Earned gameplay uses an older art build and client-only navigation review modules; fresh isolated art tests must remain separate.
+
+## Earlier controller checkpoint — superseded
 
 Verdict: IN PROGRESS. This checkpoint supersedes historical status tables below.
 Controller branch codex/three-session-integration, checkpoint source cadf0ec.
