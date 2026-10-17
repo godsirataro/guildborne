@@ -66,5 +66,26 @@ test("generic activity fade recovers without strike clock and bounds suspension 
  equal(M.activityWeight(1,0/0,true,false),0);equal(M.activityWeight(0,math.huge,true,false),0)
  equal(M.activityWeight(.5,-1,true,false),.5)
 end)
+test("speaker attention turns toward each front side without overshoot or rear seam twitch",function()
+ local right,left=0,0
+ for _=1,120 do right=M.lookYaw(right,1/60,10,-1);left=M.lookYaw(left,1/60,-10,-1) end
+ assert(right<-.9 and left>.9 and math.abs(right)<=math.rad(55))
+ assert(math.abs(left+right)<1e-10)
+ local rear=M.lookYaw(right,1/60,10,1);assert(rear>right and rear<0)
+ local switched=M.lookYaw(right,1/60,-10,-1);assert(switched>right and switched<0)
+end)
+test("speaker expiry or missing target releases smoothly and bounded frames cannot snap",function()
+ local yaw=.8
+ local first=M.lookYaw(yaw,1/60,nil,nil);assert(first>0 and first<yaw)
+ for _=1,180 do yaw=M.lookYaw(yaw,1/60,nil,nil) end;equal(yaw,0)
+ assert(M.lookYaw(0,100,10,-1)>-math.rad(55))
+ equal(M.lookYaw(.4,-1,10,-1),.4)
+ equal(M.lookYaw(0/0,.1,10,-1),0);equal(M.lookYaw(.4,math.huge,10,-1),0)
+ assert(M.lookYaw(.4,.1,math.huge,-1)<.4)
+ local a,b=0,0
+ for _=1,60 do a=M.lookYaw(a,1/60,3,-5) end
+ for _=1,30 do b=M.lookYaw(b,1/30,3,-5) end
+ assert(math.abs(a-b)<1e-10)
+end)
 print(string.format("%d Borin presentation tests passed (pure lifecycle only).",count))
 return true

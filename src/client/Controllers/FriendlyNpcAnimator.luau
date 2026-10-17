@@ -24,7 +24,7 @@ local function localDialogueOpen(root:BasePart,id:string):boolean
     end
     return true
 end
-type Actor={model:Model,motors:{[Motor6D]:CFrame},added:RBXScriptConnection?,removing:RBXScriptConnection?,destroying:RBXScriptConnection?,borin:BorinMotion.State?,flashUntil:number?,id:string?,nextSample:number,tier:string?,activity:string,interactUntil:number?,localDialogueUntil:number?,weight:number,restored:boolean,lastTime:number?}
+type Actor={model:Model,motors:{[Motor6D]:CFrame},added:RBXScriptConnection?,removing:RBXScriptConnection?,destroying:RBXScriptConnection?,borin:BorinMotion.State?,flashUntil:number?,id:string?,nextSample:number,tier:string?,activity:string,interactUntil:number?,localDialogueUntil:number?,weight:number,restored:boolean,lastTime:number?,lookYaw:number,lookRoot:BasePart?,lookUntil:number?,lookUserId:number?}
 return function(collectionProvider:any?)
     local Collection=collectionProvider or CollectionService
     local actors:{[Instance]:Actor}={}
@@ -32,6 +32,7 @@ return function(collectionProvider:any?)
         if actor.model:GetAttribute(name)~=value then actor.model:SetAttribute(name,value) end
     end
     local function restore(actor:Actor)
+        actor.lookYaw=0;actor.lookRoot=nil;actor.lookUntil=nil;actor.lookUserId=nil
         if actor.restored then return end
         for motor,base in pairs(actor.motors)do if motor.Parent then motor.C0=base end end
         local flash=actor.model:FindFirstChild("BorinContactFlash",true)
@@ -50,7 +51,7 @@ return function(collectionProvider:any?)
     end
     local function add(instance:Instance)
         if not instance:IsA("Model")or actors[instance]then return end
-        local actor:Actor={model=instance,motors={},id=Life.resolve(instance:GetAttribute("NpcId")),nextSample=0,activity="Work",weight=0,restored=false}
+        local actor:Actor={model=instance,motors={},id=Life.resolve(instance:GetAttribute("NpcId")),nextSample=0,activity="Work",weight=0,restored=false,lookYaw=0}
         if instance:GetAttribute("NpcId")=="smith_borin" then actor.borin=BorinMotion.new() end
         local function joint(v:Instance)
             if v:IsA("Motor6D")and not actor.motors[v]then actor.motors[v]=v.C0;actor.restored=false end
@@ -95,6 +96,11 @@ return function(collectionProvider:any?)
                 -- A streamed-out character cannot extend this absolute server deadline.
                 -- A departed player or a known distant root cancels the shared hint.
                 if not interactor or (interactorRoot and interactorRoot:IsA("BasePart") and (interactorRoot.Position-root.Position).Magnitude>14) then untilTime=nil end
+                -- Attention uses only the latest server-accepted speaker, never a
+                -- stale local dialogue panel or a missing/streamed-out character.
+                actor.lookRoot=if untilTime and untilTime>now and interactorRoot and interactorRoot:IsA("BasePart") then interactorRoot else nil
+                actor.lookUntil=untilTime
+                actor.lookUserId=if interactor then interactor.UserId else nil
                 if actor.id and actor.tier~="Far" and localDialogueOpen(root,actor.id) then
                     actor.localDialogueUntil=now+.2;actor.nextSample=now+.1
                 end
@@ -103,6 +109,14 @@ return function(collectionProvider:any?)
                 attribute(actor,"NpcLifeScheduledActivity",actor.activity)
                 attribute(actor,"NpcLifeTier",actor.tier)
             end
+            local lookRoot=actor.lookRoot
+            local localTarget:Vector3?=nil
+            if not reduced and not moving and actor.lookUntil and actor.lookUntil>now
+                and actor.model:GetAttribute(if actor.borin then "BorinInteractor" else "NpcInteractor")==actor.lookUserId
+                and lookRoot and lookRoot:IsDescendantOf(workspace) and (lookRoot.Position-root.Position).Magnitude<=14 then
+                localTarget=root.CFrame:PointToObjectSpace(lookRoot.Position)
+            end
+            actor.lookYaw=BorinMotion.lookYaw(actor.lookYaw,dt,if localTarget then localTarget.X else nil,if localTarget then localTarget.Z else nil)
             if actor.borin then
                 local sample=BorinMotion.step(actor.borin,now,actor.interactUntil,distance<=BorinMotion.CullDistance,reduced,moving,actor.activity=="Work")
                 attribute(actor,"BorinLocalPresentationState",sample.mode)
@@ -118,6 +132,10 @@ return function(collectionProvider:any?)
                     continue -- Isolated authored-mesh adapter owns that preview's pose/effects.
                 end
                 local contact=Borin.apply(actor.model,actor.motors,sample)
+                -- Neck only: preserve the forge arm solve, tool contact and feet.
+                for motor,base in pairs(actor.motors) do
+                    if motor.Name=="Head" and motor.Parent then motor.C0=base*CFrame.Angles(0,actor.lookYaw,0) end
+                end
                 if contact and distance<=BorinMotion.DetailDistance then
                     actor.flashUntil=now+.1
                     local target=actor.model:FindFirstChild("BorinContactTarget",true)
@@ -148,7 +166,7 @@ return function(collectionProvider:any?)
                 local name=motor.Name
                 local offset=CFrame.identity
                 if name=="UpperTorso" then offset=CFrame.Angles(0,0,idle*.012*math.sin(now*2))
-                elseif name=="Head" then offset=CFrame.Angles(0,idle*.035*math.sin(now*.8),0)
+                elseif name=="Head" then offset=CFrame.Angles(0,idle*.035*math.sin(now*.8)+actor.lookYaw,0)
                 elseif name=="LeftUpperArm" then offset=CFrame.Angles(walk,0,0)
                 elseif name=="LeftUpperLeg" then offset=CFrame.Angles(-walk,0,0)
                 elseif name=="RightUpperLeg" then offset=CFrame.Angles(walk,0,0)

@@ -12,10 +12,13 @@ local function clientFixture(animator:any):any
  local model=Instance.new("Model");model.Name="S17StationaryFixture";model:SetAttribute("NpcId","cartographer_nyra")
  model:SetAttribute("WorkMotionIdentity","cartographer_nyra")
  local root=Instance.new("Part");root.Name="HumanoidRootPart";root.Anchored=true;root.CanCollide=false;root.Transparency=1
- root.CFrame=characterRoot.CFrame*CFrame.new(3,0,0);root.Parent=model;model.PrimaryPart=root
+ root.CFrame=characterRoot.CFrame*CFrame.new(3,0,4);root.Parent=model;model.PrimaryPart=root
  local arm=Instance.new("Part");arm.Name="RightUpperArm";arm.CanCollide=false;arm.Massless=true;arm.Parent=model
  local motor=Instance.new("Motor6D");motor.Name="RightUpperArm";motor.Part0=root;motor.Part1=arm;motor.C0=CFrame.new(1,0,0);motor.Parent=root
  local originalRoot=root.CFrame;local originalMotor=motor.C0
+ local head=Instance.new("Part");head.Name="Head";head.CanCollide=false;head.Massless=true;head.Parent=model
+ local neck=Instance.new("Motor6D");neck.Name="Head";neck.Part0=root;neck.Part1=head;neck.C0=CFrame.new(0,2,0);neck.Parent=root
+ local originalNeck=neck.C0
  local screen=Instance.new("ScreenGui");screen.Name="S17DialogueFixture";screen.Parent=gui
  local dialogue=Instance.new("Frame");dialogue.Name="FriendlyDialogue_cartographer_nyra";dialogue.Visible=false;dialogue.Parent=screen
  local added=Instance.new("BindableEvent");local removed=Instance.new("BindableEvent")
@@ -37,6 +40,19 @@ local function clientFixture(animator:any):any
    end,label)
   end
   waitFor(function()return (model:GetAttribute("NpcLifeWorkWeight") or 0)>.99 end,"day work")
+  local function yaw():number local _,y,_=(originalNeck:Inverse()*neck.C0):ToOrientation();return y end
+  local function attention()
+   -- Synthetic client presentation hints only, NOT proof of a server acceptance.
+   model:SetAttribute("NpcInteractor",player.UserId);model:SetAttribute("NpcInteractUntil",workspace:GetServerTimeNow()+12)
+   waitFor(function()return yaw()>.3 end,"head faces front-left accepted-hint fixture")
+  end
+  attention()
+  dialogue.Visible=true
+  model:SetAttribute("NpcInteractor",-987654321)
+  waitFor(function()return math.abs(yaw())<.04 end,"stale local panel cannot override newer speaker")
+  dialogue.Visible=false;attention()
+  model:SetAttribute("NpcInteractUntil",workspace:GetServerTimeNow()-1)
+  waitFor(function()return math.abs(yaw())<.04 end,"expired hint releases head")
   dialogue.Visible=true
   waitFor(function()return model:GetAttribute("NpcLifeActivity")=="Interact" and (model:GetAttribute("NpcLifeWorkWeight") or 1)<.01 end,"visible dialogue pauses work")
   dialogue.Visible=false
@@ -53,9 +69,10 @@ local function clientFixture(animator:any):any
   waitFor(function()return model:GetAttribute("NpcLifeTier")=="Far" and motor.C0==originalMotor end,"far restores joints")
   camera.CFrame=CFrame.lookAt(root.Position+Vector3.new(0,4,12),root.Position)
   waitForActivePose("active near work before destroy")
+  attention()
   assert(root.CFrame==originalRoot,"stationary NPC moved")
-  controller.Destroy();controller=nil;assert(motor.C0==originalMotor,"destroy did not restore")
-  result={status="PASS_CLIENT_FIXTURE_ONLY",npcId="cartographer_nyra",dialogueFixture=true,rootPreserved=true,restored=true,activeRestorePreconditions=3,questJourneyTested=false,multiplayerTested=false}
+  controller.Destroy();controller=nil;assert(motor.C0==originalMotor and neck.C0==originalNeck,"destroy did not restore")
+  result={status="PASS_CLIENT_FIXTURE_ONLY",npcId="cartographer_nyra",dialogueFixture=true,attentionHintFixture=true,rootPreserved=true,restored=true,activeRestorePreconditions=3,questJourneyTested=false,multiplayerTested=false}
  end)
  if controller then controller.Destroy()end
  model:Destroy();screen:Destroy();added:Destroy();removed:Destroy()

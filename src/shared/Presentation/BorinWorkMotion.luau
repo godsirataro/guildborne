@@ -5,6 +5,18 @@ local M = {Cycle=2, InteractSeconds=12, RecoverSeconds=.6, FadeSeconds=.25, Cull
 export type State = {mode:string, weight:number, clock:number, lastTime:number?, contactIndex:number}
 local function finite(n:number):boolean return n==n and math.abs(n)<math.huge end
 function M.new():State return {mode="Idle",weight=0,clock=0,lastTime=nil,contactIndex=-1} end
+-- Head-only attention in root-local space (-Z forward). Behind/absent speakers
+-- release toward neutral instead of flipping at the atan2 seam. No root motion.
+function M.lookYaw(yaw:number,dt:number,x:number?,z:number?):number
+ if not finite(yaw) or not finite(dt) then return 0 end
+ local limit=math.rad(55);local target=0
+ if x and z and finite(x) and finite(z) and z<-.05 then
+  target=math.clamp(math.atan2(-x,-z),-limit,limit)
+ end
+ local current=math.clamp(yaw,-limit,limit)
+ local value=current+(target-current)*(1-math.exp(-math.clamp(dt,0,.1)/.18))
+ return if math.abs(value)<1e-5 then 0 else value
+end
 -- Generic civic activity blend only; it never owns a pose or advances Borin's strike clock.
 function M.activityWeight(weight:number,dt:number,working:boolean,suspended:boolean):number
  if suspended or not finite(weight) or not finite(dt) then return 0 end

@@ -176,3 +176,24 @@ distance recovery still require the Controller's separate multiplayer run.
 Independent read-only review found no actionable issue in this bounded patch.
 Scoped compilation/type analysis and seven Borin/eight NPC contract tests passed;
 the new twelve-case Studio fixture was NOT_RUN by S17.
+# Bounded speaker attention — source candidate (2026-10-17)
+
+Fresh inspection found work fade/recovery and bounded server hints already implemented,
+but neither generic civic actors nor Borin turned their head toward the speaker.
+FriendlyNpcAnimator now uses its existing single pose owner to add head-only yaw.
+Only the latest server-stamped interactor with a present root within 14 studs and
+an unexpired shared deadline can supply a target. Local dialogue visibility cannot
+select a different speaker. Targets in the front hemisphere are limited to 55 degrees;
+rear, missing, distant or expired targets ease toward neutral without an atan2 seam flip.
+The exponential blend clamps elapsed time after stalls. Reduced motion, far culling,
+stream removal and Destroy preserve existing bind-pose restoration. No root/leg changes,
+tool-arm solve changes, new bodies, assets, identities, rewards or save writes.
+
+Two additional pure tests cover direction, rear/seam behavior, speaker switch smoothing,
+expiry/missing target decay, frame-rate equivalence and invalid/stalled time. The existing
+client Studio fixture now includes a head motor and synthetic shared hints to check
+attention, a stale local panel against a newer unknown speaker, expiry and active-head
+Destroy restoration. This is explicitly a client hint fixture, not proof of server
+acceptance or multiplayer. It remains NOT_RUN by S17; Controller owns actual runtime
+verification, including visual naturalness on the real modular kit, tool/foot contact,
+two-client last-speaker behavior, streaming and expiry after real accepted input.
