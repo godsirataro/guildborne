@@ -57,7 +57,7 @@ Bind Borin authored presentation to existing authoritative NPC and quest. Work/i
 
 Environment: local; skill: guildborne-npc-life
 
-Write scopes: src/server/Services/FriendlyCityNpcs.luau, src/client/Controllers/FriendlyNpcAnimator.luau, src/shared/Presentation/BorinWorkMotion.luau, src/shared/Presentation/BorinPresentation.luau, tests/borin_presentation.luau, tests/studio_borin_integration.luau, production/npc-life/borin-integration.md
+Write scopes: src/server/Services/CivicCityWorld.luau, tests/studio_civic_host_interaction.luau, src/server/Services/FriendlyCityNpcs.luau, src/client/Controllers/FriendlyNpcAnimator.luau, src/shared/Presentation/BorinWorkMotion.luau, src/shared/Presentation/BorinPresentation.luau, tests/borin_presentation.luau, tests/studio_borin_integration.luau, production/npc-life/borin-integration.md
 
 Required checks: source-contract, regression, independent-review
 

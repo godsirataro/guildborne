@@ -18,7 +18,7 @@
     ".claude/agents/market-engineer.md": "d24244ea90c8d487cce3b0c76916986726af0ce225ef487099b44ba78298a590",
     ".claude/agents/narrative-designer.md": "004c4e492ae1798df75e503955b152df0033e5fb64dfed6537734fd88eb4de56",
     ".claude/agents/narrative-lead.md": "092e41a165e35abf22a486632e20e09cbd43bf4f37213b3ca0cd55ae7f0e3849",
-    ".claude/agents/npc-designer.md": "0392d75c148980a65945d8cd9de83017652c6fcd8d48923ed4886e4a00f3bc78",
+    ".claude/agents/npc-designer.md": "465692ba6cc0da95dfe5c50ca76461a997535dad2f016fea261ae7f58d9013b3",
     ".claude/agents/performance-engineer.md": "9ab3cde2dc9f5d889fb9ecc3075a7ed9bd29ed9dc68d38da22eb9f43aed6d66d",
     ".claude/agents/producer.md": "ee651c42d1cd788d456e2141206c26ea0c933a5dc770c1539b0d02df2346a538",
     ".claude/agents/qa-engineer.md": "01aa14eb19f339719352fa290d30806d0864e2a92132b89916602b6106553c23",
@@ -82,7 +82,7 @@
     ".codex/agents/market-engineer.toml": "80779e69b882d25d873c0fe5c5f429a1f4b98111f6c1216d289242b82dc54999",
     ".codex/agents/narrative-designer.toml": "62eac999c1b0a3f0f8e9560037eace9c23522bfdd9028adaacaddd30d4d6352b",
     ".codex/agents/narrative-lead.toml": "7e5652f5aaa5ec9d3d4368961c1df846efa0108b71570136d6f273eb284dba6c",
-    ".codex/agents/npc-designer.toml": "1b61212be84331cc852695d128457c4e63a58c75f77c66f3271d9a5c56f18336",
+    ".codex/agents/npc-designer.toml": "88b36a1367b285ab507e739477a2d6df3a6b97f1e9a7ea7a3a401a6fceacc2f2",
     ".codex/agents/performance-engineer.toml": "0acb0400175767b1549a1dc3b30b865b1f862a1c8882fef71d8e420e0af0e4f5",
     ".codex/agents/producer.toml": "b319d928e5a131319061f0df825a90fbe98f689f2806d87451b25e44e67d22f1",
     ".codex/agents/qa-engineer.toml": "ab8d16b9890ec02ac261658c4440378f3bbce4dfe7207856372bcf36c70362ec",
@@ -134,11 +134,11 @@
       ".agents/skills/guildborne-war-territory/SKILL.md": "82ad7a43eed0c84aee078c803fcceaac8401fb87a6b82c176847fa8e6ded247d",
       ".agents/skills/guildborne-world/SKILL.md": "ace43994879321dd5197ba01d7944ea072496cb230985b51c5e50c1a71c7c4e1",
       "AGENTS.md": "a593dfabad72ff1fe02d59a8e25630c3eb555d22965588f4840ecbd3365b454c",
-      "production/plan.json": "0752d82a3531265edb1a1508e07134ba8a69df0cfe893b48aa71bc170c8fc0e0",
+      "production/plan.json": "ae47583eb53bc419f793502a031ca42fd1116b98befd6836c6e4ce76b9e6c3e0",
       "production/studio/studio.json": "c6675c5e2591f1b152982e6eea4921a7d12a140810fc0e2b13df064d50747982",
       "tools/agentic/studio.py": "9bf0a3e2ce4230648eb4f8d4af8e7250527510d17a23f0080c0dfd3548a7a7c5"
     },
-    "planSha256": "3f733e70b664fa1a86fae1b88206eb668c49542dfa63dca518054384c3aa4376",
+    "planSha256": "e9bf8f4d97200a8f258a5aa737c723bb4024a0f8eba44180221260a9bd9d87eb",
     "specSha256": "34dd4fc491b37fa92ebb850244e3da74911337e43eeaf426bd4dba559f80dea7"
   }
 }
