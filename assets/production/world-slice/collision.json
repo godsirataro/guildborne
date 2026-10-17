@@ -1,6 +1,6 @@
 {
   "schemaVersion": 1,
-  "sourceMeshSha256": "b570f259106d314de6ca73562967afdebaec7fb322f1f6e4970ee01424601d79",
+  "sourceMeshSha256": "634a1067f4291d324f09b7b8d7cdcbb2aea748e251701ce6f57dfbc00c37a26d",
   "expectedArtNames": [
     "Caravan_Stable_stable__000",
     "Caravan_Stable_stable__001",
@@ -253,7 +253,7 @@
       "name": "Woodcutters_Lodge_sawmill__000",
       "meshId": "sawmill__000",
       "position": [
-        -90.0,
+        -90.00001,
         16.08289,
         1391.48706
       ],

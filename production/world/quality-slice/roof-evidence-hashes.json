@@ -1,0 +1,46 @@
+{
+  "ownedBlenderProcessesExited": true,
+  "studioTested": false,
+  "files": {
+    "production/world/quality-slice/roof-diagnostic.log": {
+      "bytes": 562,
+      "sha256": "24dec618a63bb7aae2d260ce522a7bfbe838cd873c9fd64dbb42dc87e8b8d402"
+    },
+    "production/world/quality-slice/roof-json-after.log": {
+      "bytes": 808,
+      "sha256": "2cdd11efdd64ad42a1c0a44a2a9d34ebf10bc7a737c9055da412184b165ff937"
+    },
+    "production/world/quality-slice/roof-json-before.log": {
+      "bytes": 809,
+      "sha256": "4f751e86d345bed0805f603cf832efae275a4aee6071769c6702061a31dba502"
+    },
+    "production/world/quality-slice/roof-json-diagnostic.log": {
+      "bytes": 809,
+      "sha256": "6753633576c9c843375b3b44f10b5ceeddc6773c33a714c2ae8d5c5a41f668e9"
+    },
+    "production/world/quality-slice/roof-json-offset.log": {
+      "bytes": 807,
+      "sha256": "66c8a0860b56c4bf7650eb08d938b5ce6b9d6967a2e577a2d796cf46a22415ae"
+    },
+    "production/world/quality-slice/roof-cull-before.png": {
+      "bytes": 1518757,
+      "sha256": "e2b625e025b10fd6031dc8ea97b94fa0b9d02721695d44e59cd96425f0669bac"
+    },
+    "production/world/quality-slice/roof-json-after.png": {
+      "bytes": 1148980,
+      "sha256": "d5624e5b8b69790043a9cb1e958353587b2f24096a9ab3a126baae549f3bc513"
+    },
+    "production/world/quality-slice/roof-json-before.png": {
+      "bytes": 1157637,
+      "sha256": "a683c2a2090bdfc0bc6a8a66a0f7de53a5baf4d668939d7f8144b7a297c88942"
+    },
+    "production/world/quality-slice/roof-json-cull.png": {
+      "bytes": 1510657,
+      "sha256": "d4a07cfebb124971953198a45078f970b5c7d10f7fa54464beaa864113d248a3"
+    },
+    "assets/production/world-slice/blender-roof.log": {
+      "bytes": 8111,
+      "sha256": "823a18b07cf37d3e79277147b9a16ae09cf1322923e22bc74ef2e9ca67e08fb9"
+    }
+  }
+}
