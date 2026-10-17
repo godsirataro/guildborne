@@ -111,6 +111,33 @@ for record in records:
  metrics.append(dict(id=record['id'],sourceBounds=[list(low),list(high)],scale=scale,vertices=len(vertices),triangles=len(triangles),selectiveBackTriangles=selective_backs,materials=len(colors),chunks=len(chunk_ids),height=max(v.z for v in vertices)))
  print('ASSET',record['id'],metrics[-1],flush=True)
  for o in imported:bpy.data.objects.remove(o,do_unlink=True)
+# Two original, shallow ground surfaces: no imported texture, terrain or collision.
+# Constant per-corner vertex colors form three irregular bands around each clearing.
+for asset,rx,ry,earth in [('ground_court',13,9,(.46,.39,.28)),('ground_leaf',14,10,(.34,.36,.23))]:
+ outline=[1,.64,.94,.73,1,.72,.93,.66,1,.72,.88,.67]
+ verts=[Vector((0,0,.02))]
+ for factor in (.35,.70,1):
+  for i,radius in enumerate(outline):
+   theta=2*math.pi*i/12;verts.append(Vector((math.cos(theta)*rx*radius*factor,math.sin(theta)*ry*radius*factor,.02)))
+ faces=[];bands=[]
+ for i in range(12):faces.append([0,1+i,1+(i+1)%12]);bands.append(1)
+ for ring in range(2):
+  for i in range(12):
+   a=1+ring*12+i;b=1+ring*12+(i+1)%12;c=a+12;d=b+12
+   faces.extend([[a,c,d],[a,d,b]]);bands.extend([ring+2,ring+2])
+ grass=(74/255,117/255,72/255)
+ palette=[list(earth),[(a+b)/2 for a,b in zip(earth,grass)],list(grass)]
+ mesh=bpy.data.meshes.new(asset);mesh.from_pydata(verts,[],faces);mesh.update()
+ for index,rgb in enumerate(palette):
+  mat=bpy.data.materials.new(asset+str(index));mat.use_nodes=True
+  linear=[v/12.92 if v<=.04045 else ((v+.055)/1.055)**2.4 for v in rgb]
+  mat.node_tree.nodes['Principled BSDF'].inputs['Base Color'].default_value=(*linear,1);mat.node_tree.nodes['Principled BSDF'].inputs['Roughness'].default_value=1;mesh.materials.append(mat)
+ for poly,band in zip(mesh.polygons,bands):poly.material_index=band-1
+ template=bpy.data.objects.new(asset,mesh);library.objects.link(template);templates[asset]=template
+ mid=asset+'__000';coords=[[round(v.x,5),round(v.z,5),round(-v.y,5)] for v in verts]
+ meshes.append(dict(id=mid,vertices=coords,triangles=[[i+1 for i in f] for f in faces],colors=palette,faceColors=bands,bounds={'min':[min(v[i] for v in coords) for i in range(3)],'max':[max(v[i] for v in coords) for i in range(3)]}))
+ records.append(dict(id=asset,chunks=[mid]));structural[asset]=[]
+ metrics.append(dict(id=asset,authorship='Original Guildborne ground surface; palette references existing native Island',vertices=len(verts),triangles=len(faces),materials=3,chunks=1,height=.02))
 library.hide_render=True;library.hide_viewport=True
 by_id={r['id']:r for r in records}
 def terrain_height(world_z):return 2 if world_z>=1380 else 6 if world_z<=1355 else 2+(1380-world_z)*.16
@@ -175,6 +202,19 @@ for i,(x,y,yaw) in enumerate([(-20,-67,0),(20,-64,0),(-20,-54,0),(20,-51,0),(-20
 trees=[(-48,58),(-34,73),(-25,96),(-46,100),(-59,84),(36,83),(49,64),(31,108),(54,103),(60,82),(-59,40),(56,42),(-62,-7),(62,4)]
 for i,(x,y) in enumerate(trees):place('tree_a' if i%2==0 else 'tree_b',f'Greenwood_Tree_{i}',x,y,(i*73)%360)
 for i,(x,y) in enumerate([(-18,48),(19,53),(-28,60),(27,78),(-19,85),(20,94),(-45,44),(45,24),(-52,-24),(51,-48),(-25,-70),(24,-66)]):place('bush',f'Undergrowth_{i}',x,y,i*37)
+# Authored groups frame inhabited courts and the two outer woodland edges.
+# All additions remain outside combat envelopes/roads and on native Island Y2.
+# Avoid terrain_height here: BossRise is elevated only within its X footprint.
+for side,label in [(-1,'West'),(1,'East')]:
+ for i,wz in enumerate((1480,1448,1322)):
+  if side==1 and wz==1448:continue # review-camera rays to archer telegraphs must stay clear
+  place('tree_a',f'GroundEdge_{label}_Tree_{i}',side*94,1410-wz,z=0)
+ for i,(x,wz) in enumerate(((82,1468),(100,1460),(87,1440),(100,1435),(82,1340),(100,1344))):
+  place('bush',f'GroundEdge_{label}_Bush_{i}',side*x,1410-wz,z=0)
+for i,(x,wz) in enumerate(((-27,1480),(30,1486),(-88,1482),(88,1482),(-88,1452),(88,1452))):
+ place('ground_court',f'GroundCourt_{i}',x,1410-wz,z=0)
+for i,(x,wz) in enumerate(((-88,1325),(88,1325),(-70,1330),(70,1330))):
+ place('ground_leaf',f'GroundLeaf_{i}',x,1410-wz,z=0)
 # Reusable library and real composed GLB; preview base/lights do not enter game geometry.
 packet=dict(schemaVersion=1,coordinateSystem='RobloxYUp',units='studs',pivot='asset XZ centered; minY=0; chunks share asset pivot',previewWorldOrigin=[0,2,1410],meshes=meshes,placements=placements,runtimeImported=False,compositionOnly=True)
 (OUT/'world-slice.mesh.json').write_text(json.dumps(packet,separators=(',',':'))+'\n',encoding='utf-8')
@@ -205,7 +245,9 @@ def stage_cube(name,location,scale,rgb,bevel=0):
  mat.node_tree.nodes['Principled BSDF'].inputs['Roughness'].default_value=.9;o.data.materials.append(mat)
  if bevel:m=o.modifiers.new('Soft display edge','BEVEL');m.width=bevel;m.segments=3
  return o
-stage_cube('PREVIEW_ONLY_Ground',(-12,0,-2),(205,245,4),(.13,.21,.12),3)
+stage_cube('PREVIEW_ONLY_Ground',(0,10,-2),(220,200,4),(.06848,.17789,.06480))
+stage_cube('PREVIEW_ONLY_Landing',(0,-103,-2),(28,26,4),(.175,.078,.032))
+stage_cube('PREVIEW_ONLY_StableApron',(-40,-100,-.1),(44,20,.2),(.06848,.17789,.06480))
 stage_cube('PREVIEW_ONLY_BossCourt',(0,80,2),(96,50,4),(.13,.21,.12))
 stage_cube('PREVIEW_ONLY_Stream',(0,65,.04),(135,8,.08),(.045,.24,.26))
 world=bpy.data.worlds.new('Woodland_Morning');scene.world=world;world.use_nodes=True

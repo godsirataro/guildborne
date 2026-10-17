@@ -25,8 +25,12 @@ Server disables/restores CanCollide, CanQuery and CanTouch only for direct Green
 
 Controller client integration owns imported art validation and local decoration visibility after successful import, restoring LocalTransparencyModifier on cleanup. Import beneath GuildborneWorld or use explicit handle references; do not rely on the historical workspace.QualityArt_DatasetN path matching GuildborneWorld.QualitySourceArt. Collision initialization does not certify client art readiness. Controller must gate preview readiness on both collision success and actual local import success.
 
-Source SHA256 remains 634a1067f4291d324f09b7b8d7cdcbb2aea748e251701ce6f57dfbc00c37a26d. The budget-corrected export has 27 chunks and 85 expected art placements. Collider geometry is unchanged; import the new JSON together with its regenerated WorldQualityAssets module and collision.json. Rebuild controller metadata and hash gates from this revision. Studio behavior remains pending controller verification.
+Current source SHA256 is 8b4c7aa687d4b265b2e3d7da7c7548aef64f889fd093b9d1219eee094eab1911. The ground-composition export has 29 chunks and 112 expected art placements. Collider geometry is unchanged; import the new JSON together with its regenerated WorldQualityAssets module and collision.json. Rebuild controller metadata and hash gates from this revision. Studio behavior remains pending controller verification.
 
 ## Explicit chunk centering correction
 
 The runtime importer must subtract each chunk original bounds center from vertices before AddVertex, retain that original center separately, and apply placement * originalCenter exactly once. Do not rely on implicit CreateMeshPartAsync recentering. The original shared-pivot JSON and center-adjusted expectedArt remain unchanged. See IMPORTER_CENTER_FIX.md for the precise controller-owned change and diagnostic evidence.
+
+## Ground composition import
+
+The two original flat surface resources ground_court__000 and ground_leaf__000 are noncolliding presentation at world Y2.02. Preserve this 0.02-stud ground offset and the explicit original-center compensation above. Ten surface placements and seventeen props add 8,940 instanced triangles; total 85,934. Existing collider geometry and module API are unchanged. The new flat meshes require actual Studio visual/allocation verification; offline clearance and single-camera sampled visibility do not establish runtime acceptance.

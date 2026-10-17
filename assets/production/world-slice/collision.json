@@ -1,6 +1,6 @@
 {
   "schemaVersion": 1,
-  "sourceMeshSha256": "634a1067f4291d324f09b7b8d7cdcbb2aea748e251701ce6f57dfbc00c37a26d",
+  "sourceMeshSha256": "8b4c7aa687d4b265b2e3d7da7c7548aef64f889fd093b9d1219eee094eab1911",
   "expectedArtNames": [
     "Caravan_Stable_stable__000",
     "Caravan_Stable_stable__001",
@@ -86,7 +86,34 @@
     "Undergrowth_8_bush__000",
     "Undergrowth_9_bush__000",
     "Undergrowth_10_bush__000",
-    "Undergrowth_11_bush__000"
+    "Undergrowth_11_bush__000",
+    "GroundEdge_West_Tree_0_tree_a__000",
+    "GroundEdge_West_Tree_1_tree_a__000",
+    "GroundEdge_West_Tree_2_tree_a__000",
+    "GroundEdge_West_Bush_0_bush__000",
+    "GroundEdge_West_Bush_1_bush__000",
+    "GroundEdge_West_Bush_2_bush__000",
+    "GroundEdge_West_Bush_3_bush__000",
+    "GroundEdge_West_Bush_4_bush__000",
+    "GroundEdge_West_Bush_5_bush__000",
+    "GroundEdge_East_Tree_0_tree_a__000",
+    "GroundEdge_East_Tree_2_tree_a__000",
+    "GroundEdge_East_Bush_0_bush__000",
+    "GroundEdge_East_Bush_1_bush__000",
+    "GroundEdge_East_Bush_2_bush__000",
+    "GroundEdge_East_Bush_3_bush__000",
+    "GroundEdge_East_Bush_4_bush__000",
+    "GroundEdge_East_Bush_5_bush__000",
+    "GroundCourt_0_ground_court__000",
+    "GroundCourt_1_ground_court__000",
+    "GroundCourt_2_ground_court__000",
+    "GroundCourt_3_ground_court__000",
+    "GroundCourt_4_ground_court__000",
+    "GroundCourt_5_ground_court__000",
+    "GroundLeaf_0_ground_leaf__000",
+    "GroundLeaf_1_ground_leaf__000",
+    "GroundLeaf_2_ground_leaf__000",
+    "GroundLeaf_3_ground_leaf__000"
   ],
   "expectedArt": [
     {
@@ -1788,9 +1815,549 @@
         0.0,
         0.68199836
       ]
+    },
+    {
+      "name": "GroundEdge_West_Tree_0_tree_a__000",
+      "meshId": "tree_a__000",
+      "position": [
+        -94.0,
+        17.0,
+        1480.0
+      ],
+      "rotation": [
+        1.0,
+        0.0,
+        0.0,
+        0,
+        1.0,
+        -0.0,
+        -0.0,
+        0.0,
+        1.0
+      ]
+    },
+    {
+      "name": "GroundEdge_West_Tree_1_tree_a__000",
+      "meshId": "tree_a__000",
+      "position": [
+        -94.0,
+        17.0,
+        1448.0
+      ],
+      "rotation": [
+        1.0,
+        0.0,
+        0.0,
+        0,
+        1.0,
+        -0.0,
+        -0.0,
+        0.0,
+        1.0
+      ]
+    },
+    {
+      "name": "GroundEdge_West_Tree_2_tree_a__000",
+      "meshId": "tree_a__000",
+      "position": [
+        -94.0,
+        17.0,
+        1322.0
+      ],
+      "rotation": [
+        1.0,
+        0.0,
+        0.0,
+        0,
+        1.0,
+        -0.0,
+        -0.0,
+        0.0,
+        1.0
+      ]
+    },
+    {
+      "name": "GroundEdge_West_Bush_0_bush__000",
+      "meshId": "bush__000",
+      "position": [
+        -82.0,
+        4.0,
+        1468.0
+      ],
+      "rotation": [
+        1.0,
+        0.0,
+        0.0,
+        0,
+        1.0,
+        -0.0,
+        -0.0,
+        0.0,
+        1.0
+      ]
+    },
+    {
+      "name": "GroundEdge_West_Bush_1_bush__000",
+      "meshId": "bush__000",
+      "position": [
+        -100.0,
+        4.0,
+        1460.0
+      ],
+      "rotation": [
+        1.0,
+        0.0,
+        0.0,
+        0,
+        1.0,
+        -0.0,
+        -0.0,
+        0.0,
+        1.0
+      ]
+    },
+    {
+      "name": "GroundEdge_West_Bush_2_bush__000",
+      "meshId": "bush__000",
+      "position": [
+        -87.0,
+        4.0,
+        1440.0
+      ],
+      "rotation": [
+        1.0,
+        0.0,
+        0.0,
+        0,
+        1.0,
+        -0.0,
+        -0.0,
+        0.0,
+        1.0
+      ]
+    },
+    {
+      "name": "GroundEdge_West_Bush_3_bush__000",
+      "meshId": "bush__000",
+      "position": [
+        -100.0,
+        4.0,
+        1435.0
+      ],
+      "rotation": [
+        1.0,
+        0.0,
+        0.0,
+        0,
+        1.0,
+        -0.0,
+        -0.0,
+        0.0,
+        1.0
+      ]
+    },
+    {
+      "name": "GroundEdge_West_Bush_4_bush__000",
+      "meshId": "bush__000",
+      "position": [
+        -82.0,
+        4.0,
+        1340.0
+      ],
+      "rotation": [
+        1.0,
+        0.0,
+        0.0,
+        0,
+        1.0,
+        -0.0,
+        -0.0,
+        0.0,
+        1.0
+      ]
+    },
+    {
+      "name": "GroundEdge_West_Bush_5_bush__000",
+      "meshId": "bush__000",
+      "position": [
+        -100.0,
+        4.0,
+        1344.0
+      ],
+      "rotation": [
+        1.0,
+        0.0,
+        0.0,
+        0,
+        1.0,
+        -0.0,
+        -0.0,
+        0.0,
+        1.0
+      ]
+    },
+    {
+      "name": "GroundEdge_East_Tree_0_tree_a__000",
+      "meshId": "tree_a__000",
+      "position": [
+        94.0,
+        17.0,
+        1480.0
+      ],
+      "rotation": [
+        1.0,
+        0.0,
+        0.0,
+        0,
+        1.0,
+        -0.0,
+        -0.0,
+        0.0,
+        1.0
+      ]
+    },
+    {
+      "name": "GroundEdge_East_Tree_2_tree_a__000",
+      "meshId": "tree_a__000",
+      "position": [
+        94.0,
+        17.0,
+        1322.0
+      ],
+      "rotation": [
+        1.0,
+        0.0,
+        0.0,
+        0,
+        1.0,
+        -0.0,
+        -0.0,
+        0.0,
+        1.0
+      ]
+    },
+    {
+      "name": "GroundEdge_East_Bush_0_bush__000",
+      "meshId": "bush__000",
+      "position": [
+        82.0,
+        4.0,
+        1468.0
+      ],
+      "rotation": [
+        1.0,
+        0.0,
+        0.0,
+        0,
+        1.0,
+        -0.0,
+        -0.0,
+        0.0,
+        1.0
+      ]
+    },
+    {
+      "name": "GroundEdge_East_Bush_1_bush__000",
+      "meshId": "bush__000",
+      "position": [
+        100.0,
+        4.0,
+        1460.0
+      ],
+      "rotation": [
+        1.0,
+        0.0,
+        0.0,
+        0,
+        1.0,
+        -0.0,
+        -0.0,
+        0.0,
+        1.0
+      ]
+    },
+    {
+      "name": "GroundEdge_East_Bush_2_bush__000",
+      "meshId": "bush__000",
+      "position": [
+        87.0,
+        4.0,
+        1440.0
+      ],
+      "rotation": [
+        1.0,
+        0.0,
+        0.0,
+        0,
+        1.0,
+        -0.0,
+        -0.0,
+        0.0,
+        1.0
+      ]
+    },
+    {
+      "name": "GroundEdge_East_Bush_3_bush__000",
+      "meshId": "bush__000",
+      "position": [
+        100.0,
+        4.0,
+        1435.0
+      ],
+      "rotation": [
+        1.0,
+        0.0,
+        0.0,
+        0,
+        1.0,
+        -0.0,
+        -0.0,
+        0.0,
+        1.0
+      ]
+    },
+    {
+      "name": "GroundEdge_East_Bush_4_bush__000",
+      "meshId": "bush__000",
+      "position": [
+        82.0,
+        4.0,
+        1340.0
+      ],
+      "rotation": [
+        1.0,
+        0.0,
+        0.0,
+        0,
+        1.0,
+        -0.0,
+        -0.0,
+        0.0,
+        1.0
+      ]
+    },
+    {
+      "name": "GroundEdge_East_Bush_5_bush__000",
+      "meshId": "bush__000",
+      "position": [
+        100.0,
+        4.0,
+        1344.0
+      ],
+      "rotation": [
+        1.0,
+        0.0,
+        0.0,
+        0,
+        1.0,
+        -0.0,
+        -0.0,
+        0.0,
+        1.0
+      ]
+    },
+    {
+      "name": "GroundCourt_0_ground_court__000",
+      "meshId": "ground_court__000",
+      "position": [
+        -26.545,
+        2.02,
+        1480.0
+      ],
+      "rotation": [
+        1.0,
+        0.0,
+        0.0,
+        0,
+        1.0,
+        -0.0,
+        -0.0,
+        0.0,
+        1.0
+      ]
+    },
+    {
+      "name": "GroundCourt_1_ground_court__000",
+      "meshId": "ground_court__000",
+      "position": [
+        30.455,
+        2.02,
+        1486.0
+      ],
+      "rotation": [
+        1.0,
+        0.0,
+        0.0,
+        0,
+        1.0,
+        -0.0,
+        -0.0,
+        0.0,
+        1.0
+      ]
+    },
+    {
+      "name": "GroundCourt_2_ground_court__000",
+      "meshId": "ground_court__000",
+      "position": [
+        -87.545,
+        2.02,
+        1482.0
+      ],
+      "rotation": [
+        1.0,
+        0.0,
+        0.0,
+        0,
+        1.0,
+        -0.0,
+        -0.0,
+        0.0,
+        1.0
+      ]
+    },
+    {
+      "name": "GroundCourt_3_ground_court__000",
+      "meshId": "ground_court__000",
+      "position": [
+        88.455,
+        2.02,
+        1482.0
+      ],
+      "rotation": [
+        1.0,
+        0.0,
+        0.0,
+        0,
+        1.0,
+        -0.0,
+        -0.0,
+        0.0,
+        1.0
+      ]
+    },
+    {
+      "name": "GroundCourt_4_ground_court__000",
+      "meshId": "ground_court__000",
+      "position": [
+        -87.545,
+        2.02,
+        1452.0
+      ],
+      "rotation": [
+        1.0,
+        0.0,
+        0.0,
+        0,
+        1.0,
+        -0.0,
+        -0.0,
+        0.0,
+        1.0
+      ]
+    },
+    {
+      "name": "GroundCourt_5_ground_court__000",
+      "meshId": "ground_court__000",
+      "position": [
+        88.455,
+        2.02,
+        1452.0
+      ],
+      "rotation": [
+        1.0,
+        0.0,
+        0.0,
+        0,
+        1.0,
+        -0.0,
+        -0.0,
+        0.0,
+        1.0
+      ]
+    },
+    {
+      "name": "GroundLeaf_0_ground_leaf__000",
+      "meshId": "ground_leaf__000",
+      "position": [
+        -87.51,
+        2.02,
+        1325.0
+      ],
+      "rotation": [
+        1.0,
+        0.0,
+        0.0,
+        0,
+        1.0,
+        -0.0,
+        -0.0,
+        0.0,
+        1.0
+      ]
+    },
+    {
+      "name": "GroundLeaf_1_ground_leaf__000",
+      "meshId": "ground_leaf__000",
+      "position": [
+        88.49,
+        2.02,
+        1325.0
+      ],
+      "rotation": [
+        1.0,
+        0.0,
+        0.0,
+        0,
+        1.0,
+        -0.0,
+        -0.0,
+        0.0,
+        1.0
+      ]
+    },
+    {
+      "name": "GroundLeaf_2_ground_leaf__000",
+      "meshId": "ground_leaf__000",
+      "position": [
+        -69.51,
+        2.02,
+        1330.0
+      ],
+      "rotation": [
+        1.0,
+        0.0,
+        0.0,
+        0,
+        1.0,
+        -0.0,
+        -0.0,
+        0.0,
+        1.0
+      ]
+    },
+    {
+      "name": "GroundLeaf_3_ground_leaf__000",
+      "meshId": "ground_leaf__000",
+      "position": [
+        70.49,
+        2.02,
+        1330.0
+      ],
+      "rotation": [
+        1.0,
+        0.0,
+        0.0,
+        0,
+        1.0,
+        -0.0,
+        -0.0,
+        0.0,
+        1.0
+      ]
     }
   ],
-  "minArtPlacements": 85,
+  "minArtPlacements": 112,
   "colliders": [
     {
       "name": "Caravan_Stable_SourceSurface_0_0",

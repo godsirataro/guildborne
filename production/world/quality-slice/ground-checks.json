@@ -1,0 +1,99 @@
+{
+  "utc": "2026-10-17T06:55:56.841748+00:00",
+  "status": "LOCAL_REVIEW_ONLY",
+  "studioTested": false,
+  "checks": [
+    {
+      "command": [
+        "python",
+        "-m",
+        "py_compile",
+        "tools/blender_world_slice.py",
+        "tools/verify_world_slice.py",
+        "production\\world\\quality-slice\\check_ground_visibility.py"
+      ],
+      "exitCode": 0,
+      "stdoutBase64": "",
+      "stderrBase64": ""
+    },
+    {
+      "command": [
+        "python",
+        "tools/verify_world_slice.py"
+      ],
+      "exitCode": 0,
+      "stdoutBase64": "R1JPVU5EX0NMRUFSQU5DRSAxNyA4OTQwIDI3DQp7DQogICJzdGF0dXMiOiAiT0ZGTElORV9HRU9NRVRSWV9QQVNTIiwNCiAgIm1lc2hlcyI6IDI5LA0KICAidmVydGljZXMiOiAyNzUyNiwNCiAgInRyaWFuZ2xlcyI6IDM3MTk0LA0KICAicGxhY2VtZW50cyI6IDExMiwNCiAgImluc3RhbmNlZFRyaWFuZ2xlcyI6IDg1OTM0LA0KICAic3R1ZGlvVGVzdGVkIjogZmFsc2UNCn0NCg==",
+      "stderrBase64": ""
+    },
+    {
+      "command": [
+        "python",
+        "production\\world\\quality-slice\\check_ground_visibility.py"
+      ],
+      "exitCode": 0,
+      "stdoutBase64": "ew0KICAic3RhdHVzIjogIk9GRkxJTkVfU0FNUExFRF9WSVNJQklMSVRZX1BBU1MiLA0KICAic291cmNlTWVzaFNoYTI1NiI6ICI4YjRjN2FhNjg3ZDRiMjY1YjJlM2Q3ZGE3Yzc1NDhhZWY2NGY4ODlmZDA5M2I5ZDEyMTllZWUwOTRlYWIxOTExIiwNCiAgImFkZGVkUHJvcHMiOiAxNywNCiAgImFuY2hvck9jY2x1c2lvbnMiOiAwLA0KICAiZ3JpZHMiOiBbDQogICAgew0KICAgICAgIm5hbWUiOiAiYm9hciIsDQogICAgICAic2FtcGxlcyI6IDM0OSwNCiAgICAgICJvY2NsdWRlZCI6IDANCiAgICB9LA0KICAgIHsNCiAgICAgICJuYW1lIjogImNhcHRhaW4iLA0KICAgICAgInNhbXBsZXMiOiAyMTYsDQogICAgICAib2NjbHVkZWQiOiAwDQogICAgfSwNCiAgICB7DQogICAgICAibmFtZSI6ICJzY291dCIsDQogICAgICAic2FtcGxlcyI6IDEyNSwNCiAgICAgICJvY2NsdWRlZCI6IDANCiAgICB9LA0KICAgIHsNCiAgICAgICJuYW1lIjogImFyY2hlciIsDQogICAgICAic2FtcGxlcyI6IDEyNSwNCiAgICAgICJvY2NsdWRlZCI6IDANCiAgICB9DQogIF0NCn0NCg==",
+      "stderrBase64": ""
+    },
+    {
+      "command": [
+        "python",
+        "C:/Work/MySelf/Guildborne-controller/tools/import_quality_meshes.py",
+        "assets/production/world-slice/world-slice.mesh.json"
+      ],
+      "exitCode": 0,
+      "stdoutBase64": "ew0KICAibWVzaGVzIjogMjksDQogICJ2ZXJ0aWNlcyI6IDI3NTI2LA0KICAidHJpYW5nbGVzIjogMzcxOTQsDQogICJwbGFjZW1lbnRzIjogMTEyLA0KICAic291cmNlU2hhMjU2IjogIjhiNGM3YWE2ODdkNGIyNjViMmUzZDdkYTdjNzU0OGFlZjY0Zjg4OWZkMDkzYjlkMTIxOWVlZTA5NGVhYjE5MTEiDQp9DQo=",
+      "stderrBase64": ""
+    },
+    {
+      "command": [
+        "C:\\Work\\MySelf\\Guildborne\\.tools\\luau\\luau.exe",
+        "build/world_quality_harness.luau"
+      ],
+      "exitCode": 0,
+      "stdoutBase64": "d29ybGRfcXVhbGl0eTogMjggY29udHJhY3QgY2hlY2tzIHBhc3NlZDsgU3R1ZGlvIGxpZmVjeWNsZSBOT1RfUlVODQp3b3JsZF9xdWFsaXR5OiAxOSBtb2NrZWQgc2VydmVyIGxpZmVjeWNsZSBjaGVja3MgcGFzc2VkOyBTdHVkaW8gcGh5c2ljcyBOT1RfUlVODQo=",
+      "stderrBase64": ""
+    },
+    {
+      "command": [
+        "C:\\Work\\MySelf\\Guildborne\\.tools\\luau\\luau-compile.exe",
+        "--null",
+        "src/server/Services/WorldQualityAssets.luau"
+      ],
+      "exitCode": 0,
+      "stdoutBase64": "Q29tcGlsZWQgMCBLTE9DIGludG8gMTMzIEtCIGJ5dGVjb2RlIChyZWFkIDAuMDBzLCBwYXJzZSAwLjAwcywgY29tcGlsZSAwLjAxcykNCg==",
+      "stderrBase64": ""
+    },
+    {
+      "command": [
+        "C:\\Work\\MySelf\\Guildborne\\.tools\\luau-lsp\\luau-lsp.exe",
+        "analyze",
+        "--platform=roblox",
+        "--sourcemap=build/sourcemap.json",
+        "--definitions=C:\\Work\\MySelf\\Guildborne\\.tools\\luau-lsp\\globalTypes.d.luau",
+        "src/server/Services/WorldQualityAssets.luau"
+      ],
+      "exitCode": 0,
+      "stdoutBase64": "",
+      "stderrBase64": "W0lORk9dIExvYWRpbmcgZGVmaW5pdGlvbnMgZmlsZTogQHJvYmxveCAtIEM6XFdvcmtcTXlTZWxmXEd1aWxkYm9ybmVcLnRvb2xzXGx1YXUtbHNwXGdsb2JhbFR5cGVzLmQubHVhdQ0KW1dBUk5dIGNsaWVudCBkb2VzIG5vdCBhbGxvdyBkaWRDaGFuZ2VXYXRjaGVkRmlsZXMgcmVnaXN0cmF0aW9uIC0gYXV0b21hdGljIHVwZGF0aW5nIG9uIHNvdXJjZW1hcCBjaGFuZ2VzIGRpc2FibGVkDQo="
+    }
+  ],
+  "exportHashChecks": {
+    ".gitattributes": true,
+    "collision.json": true,
+    "intake.json": true,
+    "ruins-LICENSE.txt": true,
+    "source-orientation-audit.json": true,
+    "village-LICENSE.txt": true,
+    "woodland-threshold.blend": true,
+    "woodland-threshold.glb": true,
+    "woodland-threshold.png": true,
+    "world-slice.mesh.json": true
+  },
+  "closedLogs": {
+    "blender-ground-clearance.log": "e1ee0f9b26cd6ddf4a37d7f3753ce52975835ea34667e22337f9d384eaa101fa",
+    "blender-ground-final.log": "8d543dab6b0dcede57de87b47431a655febf58678c699d2fe238fb810e4a25bc",
+    "blender-ground-render.log": "b4b509c2749b81f557ac209aceca94d52358907f219424dbc1679352e24c6602",
+    "blender-ground.log": "77513b5176cdc8064a726710a1d349c16afb91fb5c8d06a3969a21765ac159ad"
+  },
+  "sourceSha256": "8b4c7aa687d4b265b2e3d7da7c7548aef64f889fd093b9d1219eee094eab1911"
+}

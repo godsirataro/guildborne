@@ -1,0 +1,630 @@
+{
+  "status": "OFFLINE_CLEARANCE_PASS_NOT_CAMERA_OCCLUSION_PROOF",
+  "sourceMeshSha256": "8b4c7aa687d4b265b2e3d7da7c7548aef64f889fd093b9d1219eee094eab1911",
+  "existingMeshesUnchanged": 27,
+  "existingPlacementsUnchanged": 85,
+  "collidersUnchanged": 413,
+  "addedProps": 17,
+  "addedInstancedTriangles": 8940,
+  "exclusionRectangles": {
+    "center": [
+      -12,
+      12,
+      1317,
+      1512
+    ],
+    "landing": [
+      -18,
+      18,
+      1496,
+      1530
+    ],
+    "westLoop": [
+      -72,
+      -48,
+      1362,
+      1458
+    ],
+    "eastLoop": [
+      48,
+      72,
+      1362,
+      1458
+    ],
+    "southCross": [
+      -72,
+      72,
+      1438,
+      1462
+    ],
+    "northCross": [
+      -72,
+      72,
+      1363,
+      1387
+    ],
+    "bossCourt": [
+      -51,
+      51,
+      1302,
+      1358
+    ],
+    "wood": [
+      -41,
+      -29,
+      1449,
+      1461
+    ],
+    "herbs": [
+      29,
+      41,
+      1449,
+      1461
+    ]
+  },
+  "combatEnvelopes": {
+    "boar": [
+      0,
+      1410,
+      53
+    ],
+    "captain": [
+      0,
+      1330,
+      42
+    ],
+    "scout": [
+      -60,
+      1410,
+      32
+    ],
+    "archer": [
+      60,
+      1410,
+      32
+    ]
+  },
+  "placements": [
+    {
+      "name": "GroundEdge_West_Tree_0_tree_a__000",
+      "meshId": "tree_a__000",
+      "worldAABB": [
+        -105.1953,
+        -82.8047,
+        1468.82535,
+        1491.17465,
+        2.0,
+        32.0
+      ],
+      "combatEnvelopeMargin": {
+        "boar": 48.57283172538072,
+        "captain": 119.64496943831108,
+        "scout": 31.091014770032892,
+        "archer": 122.4461205233479
+      },
+      "allRoadPortalResourceExclusionsClear": true,
+      "groundSurfaceOnly": false
+    },
+    {
+      "name": "GroundEdge_West_Tree_1_tree_a__000",
+      "meshId": "tree_a__000",
+      "worldAABB": [
+        -105.1953,
+        -82.8047,
+        1436.82535,
+        1459.17465,
+        2.0,
+        32.0
+      ],
+      "combatEnvelopeMargin": {
+        "boar": 34.041471407097106,
+        "captain": 93.16017810254806,
+        "scout": 3.2087168853467816,
+        "archer": 113.30238038212761
+      },
+      "allRoadPortalResourceExclusionsClear": true,
+      "groundSurfaceOnly": false
+    },
+    {
+      "name": "GroundEdge_West_Tree_2_tree_a__000",
+      "meshId": "tree_a__000",
+      "worldAABB": [
+        -105.1953,
+        -82.8047,
+        1310.82535,
+        1333.17465,
+        2.0,
+        32.0
+      ],
+      "combatEnvelopeMargin": {
+        "boar": 59.95464906196872,
+        "captain": 40.8047,
+        "scout": 48.13855966207848,
+        "archer": 130.15830766480178
+      },
+      "allRoadPortalResourceExclusionsClear": true,
+      "groundSurfaceOnly": false
+    },
+    {
+      "name": "GroundEdge_West_Bush_0_bush__000",
+      "meshId": "bush__000",
+      "worldAABB": [
+        -85.48249,
+        -78.51751,
+        1464.52393,
+        1471.47607,
+        2.0,
+        6.0
+      ],
+      "combatEnvelopeMargin": {
+        "boar": 42.592145698509185,
+        "captain": 113.76163558220946,
+        "scout": 25.58261125760977,
+        "archer": 116.86221656029784
+      },
+      "allRoadPortalResourceExclusionsClear": true,
+      "groundSurfaceOnly": false
+    },
+    {
+      "name": "GroundEdge_West_Bush_1_bush__000",
+      "meshId": "bush__000",
+      "worldAABB": [
+        -103.48249,
+        -96.51751,
+        1456.52393,
+        1463.47607,
+        2.0,
+        6.0
+      ],
+      "combatEnvelopeMargin": {
+        "boar": 54.14525560772631,
+        "captain": 117.13495718805788,
+        "scout": 27.143931212297737,
+        "archer": 131.28566072758812
+      },
+      "allRoadPortalResourceExclusionsClear": true,
+      "groundSurfaceOnly": false
+    },
+    {
+      "name": "GroundEdge_West_Bush_2_bush__000",
+      "meshId": "bush__000",
+      "worldAABB": [
+        -90.48249,
+        -83.51751,
+        1436.52393,
+        1443.47607,
+        2.0,
+        6.0
+      ],
+      "combatEnvelopeMargin": {
+        "boar": 34.62815380484176,
+        "captain": 93.36071120988177,
+        "scout": 3.4484433966430075,
+        "archer": 113.94791721448104
+      },
+      "allRoadPortalResourceExclusionsClear": true,
+      "groundSurfaceOnly": false
+    },
+    {
+      "name": "GroundEdge_West_Bush_3_bush__000",
+      "meshId": "bush__000",
+      "worldAABB": [
+        -103.48249,
+        -96.51751,
+        1431.52393,
+        1438.47607,
+        2.0,
+        6.0
+      ],
+      "combatEnvelopeMargin": {
+        "boar": 45.88836786622076,
+        "captain": 98.08118395860672,
+        "scout": 10.38877326893293,
+        "archer": 125.99053927132792
+      },
+      "allRoadPortalResourceExclusionsClear": true,
+      "groundSurfaceOnly": false
+    },
+    {
+      "name": "GroundEdge_West_Bush_4_bush__000",
+      "meshId": "bush__000",
+      "worldAABB": [
+        -85.48249,
+        -78.51751,
+        1336.52393,
+        1343.47607,
+        2.0,
+        6.0
+      ],
+      "combatEnvelopeMargin": {
+        "boar": 49.90982770972367,
+        "captain": 36.7880767581301,
+        "scout": 37.05310593481664,
+        "archer": 121.6637037144589
+      },
+      "allRoadPortalResourceExclusionsClear": true,
+      "groundSurfaceOnly": false
+    },
+    {
+      "name": "GroundEdge_West_Bush_5_bush__000",
+      "meshId": "bush__000",
+      "worldAABB": [
+        -103.48249,
+        -96.51751,
+        1340.52393,
+        1347.47607,
+        2.0,
+        6.0
+      ],
+      "combatEnvelopeMargin": {
+        "boar": 61.99944156057893,
+        "captain": 55.08956091797408,
+        "scout": 40.40697728289041,
+        "archer": 136.5436820508114
+      },
+      "allRoadPortalResourceExclusionsClear": true,
+      "groundSurfaceOnly": false
+    },
+    {
+      "name": "GroundEdge_East_Tree_0_tree_a__000",
+      "meshId": "tree_a__000",
+      "worldAABB": [
+        82.8047,
+        105.1953,
+        1468.82535,
+        1491.17465,
+        2.0,
+        32.0
+      ],
+      "combatEnvelopeMargin": {
+        "boar": 48.57283172538072,
+        "captain": 119.64496943831108,
+        "scout": 122.4461205233479,
+        "archer": 31.091014770032892
+      },
+      "allRoadPortalResourceExclusionsClear": true,
+      "groundSurfaceOnly": false
+    },
+    {
+      "name": "GroundEdge_East_Tree_2_tree_a__000",
+      "meshId": "tree_a__000",
+      "worldAABB": [
+        82.8047,
+        105.1953,
+        1310.82535,
+        1333.17465,
+        2.0,
+        32.0
+      ],
+      "combatEnvelopeMargin": {
+        "boar": 59.95464906196872,
+        "captain": 40.8047,
+        "scout": 130.15830766480178,
+        "archer": 48.13855966207848
+      },
+      "allRoadPortalResourceExclusionsClear": true,
+      "groundSurfaceOnly": false
+    },
+    {
+      "name": "GroundEdge_East_Bush_0_bush__000",
+      "meshId": "bush__000",
+      "worldAABB": [
+        78.51751,
+        85.48249,
+        1464.52393,
+        1471.47607,
+        2.0,
+        6.0
+      ],
+      "combatEnvelopeMargin": {
+        "boar": 42.592145698509185,
+        "captain": 113.76163558220946,
+        "scout": 116.86221656029784,
+        "archer": 25.58261125760977
+      },
+      "allRoadPortalResourceExclusionsClear": true,
+      "groundSurfaceOnly": false
+    },
+    {
+      "name": "GroundEdge_East_Bush_1_bush__000",
+      "meshId": "bush__000",
+      "worldAABB": [
+        96.51751,
+        103.48249,
+        1456.52393,
+        1463.47607,
+        2.0,
+        6.0
+      ],
+      "combatEnvelopeMargin": {
+        "boar": 54.14525560772631,
+        "captain": 117.13495718805788,
+        "scout": 131.28566072758812,
+        "archer": 27.143931212297737
+      },
+      "allRoadPortalResourceExclusionsClear": true,
+      "groundSurfaceOnly": false
+    },
+    {
+      "name": "GroundEdge_East_Bush_2_bush__000",
+      "meshId": "bush__000",
+      "worldAABB": [
+        83.51751,
+        90.48249,
+        1436.52393,
+        1443.47607,
+        2.0,
+        6.0
+      ],
+      "combatEnvelopeMargin": {
+        "boar": 34.62815380484176,
+        "captain": 93.36071120988177,
+        "scout": 113.94791721448104,
+        "archer": 3.4484433966430075
+      },
+      "allRoadPortalResourceExclusionsClear": true,
+      "groundSurfaceOnly": false
+    },
+    {
+      "name": "GroundEdge_East_Bush_3_bush__000",
+      "meshId": "bush__000",
+      "worldAABB": [
+        96.51751,
+        103.48249,
+        1431.52393,
+        1438.47607,
+        2.0,
+        6.0
+      ],
+      "combatEnvelopeMargin": {
+        "boar": 45.88836786622076,
+        "captain": 98.08118395860672,
+        "scout": 125.99053927132792,
+        "archer": 10.38877326893293
+      },
+      "allRoadPortalResourceExclusionsClear": true,
+      "groundSurfaceOnly": false
+    },
+    {
+      "name": "GroundEdge_East_Bush_4_bush__000",
+      "meshId": "bush__000",
+      "worldAABB": [
+        78.51751,
+        85.48249,
+        1336.52393,
+        1343.47607,
+        2.0,
+        6.0
+      ],
+      "combatEnvelopeMargin": {
+        "boar": 49.90982770972367,
+        "captain": 36.7880767581301,
+        "scout": 121.6637037144589,
+        "archer": 37.05310593481664
+      },
+      "allRoadPortalResourceExclusionsClear": true,
+      "groundSurfaceOnly": false
+    },
+    {
+      "name": "GroundEdge_East_Bush_5_bush__000",
+      "meshId": "bush__000",
+      "worldAABB": [
+        96.51751,
+        103.48249,
+        1340.52393,
+        1347.47607,
+        2.0,
+        6.0
+      ],
+      "combatEnvelopeMargin": {
+        "boar": 61.99944156057893,
+        "captain": 55.08956091797408,
+        "scout": 136.5436820508114,
+        "archer": 40.40697728289041
+      },
+      "allRoadPortalResourceExclusionsClear": true,
+      "groundSurfaceOnly": false
+    },
+    {
+      "name": "GroundCourt_0_ground_court__000",
+      "meshId": "ground_court__000",
+      "worldAABB": [
+        -39.09,
+        -14.0,
+        1472.20577,
+        1487.79423,
+        2.02,
+        2.02
+      ],
+      "combatEnvelopeMargin": {
+        "boar": 10.761726931544942,
+        "captain": 100.89325043994523,
+        "scout": 33.626107010037586,
+        "archer": 64.67242534090528
+      },
+      "allRoadPortalResourceExclusionsClear": true,
+      "groundSurfaceOnly": true
+    },
+    {
+      "name": "GroundCourt_1_ground_court__000",
+      "meshId": "ground_court__000",
+      "worldAABB": [
+        17.91,
+        43.0,
+        1478.20577,
+        1493.79423,
+        2.02,
+        2.02
+      ],
+      "combatEnvelopeMargin": {
+        "boar": 17.518048479044737,
+        "captain": 107.28401910885475,
+        "scout": 71.54706737176531,
+        "archer": 38.29243957420246
+      },
+      "allRoadPortalResourceExclusionsClear": true,
+      "groundSurfaceOnly": true
+    },
+    {
+      "name": "GroundCourt_2_ground_court__000",
+      "meshId": "ground_court__000",
+      "worldAABB": [
+        -100.09,
+        -75.0,
+        1474.20577,
+        1489.79423,
+        2.02,
+        2.02
+      ],
+      "combatEnvelopeMargin": {
+        "boar": 45.72882507805359,
+        "captain": 120.54323763630683,
+        "scout": 33.93467146572358,
+        "archer": 117.49040404418238
+      },
+      "allRoadPortalResourceExclusionsClear": true,
+      "groundSurfaceOnly": true
+    },
+    {
+      "name": "GroundCourt_3_ground_court__000",
+      "meshId": "ground_court__000",
+      "worldAABB": [
+        75.91,
+        101.0,
+        1474.20577,
+        1489.79423,
+        2.02,
+        2.02
+      ],
+      "combatEnvelopeMargin": {
+        "boar": 46.42187385728003,
+        "captain": 120.96512572109688,
+        "scout": 118.31270405821627,
+        "archer": 34.147630352816904
+      },
+      "allRoadPortalResourceExclusionsClear": true,
+      "groundSurfaceOnly": true
+    },
+    {
+      "name": "GroundCourt_4_ground_court__000",
+      "meshId": "ground_court__000",
+      "worldAABB": [
+        -100.09,
+        -75.0,
+        1444.20577,
+        1459.79423,
+        2.02,
+        2.02
+      ],
+      "combatEnvelopeMargin": {
+        "boar": 29.432000468828264,
+        "captain": 94.63073556595128,
+        "scout": 5.350163336897232,
+        "archer": 107.26605724760395
+      },
+      "allRoadPortalResourceExclusionsClear": true,
+      "groundSurfaceOnly": true
+    },
+    {
+      "name": "GroundCourt_5_ground_court__000",
+      "meshId": "ground_court__000",
+      "worldAABB": [
+        75.91,
+        101.0,
+        1444.20577,
+        1459.79423,
+        2.02,
+        2.02
+      ],
+      "combatEnvelopeMargin": {
+        "boar": 30.26081191829023,
+        "captain": 95.13236671658848,
+        "scout": 108.14835996647588,
+        "archer": 5.724830036633719
+      },
+      "allRoadPortalResourceExclusionsClear": true,
+      "groundSurfaceOnly": true
+    },
+    {
+      "name": "GroundLeaf_0_ground_leaf__000",
+      "meshId": "ground_leaf__000",
+      "worldAABB": [
+        -101.02,
+        -74.0,
+        1316.33975,
+        1333.66025,
+        2.02,
+        2.02
+      ],
+      "combatEnvelopeMargin": {
+        "boar": 53.319130122770076,
+        "captain": 32.0,
+        "scout": 45.61286897198502,
+        "archer": 122.21983474917394
+      },
+      "allRoadPortalResourceExclusionsClear": true,
+      "groundSurfaceOnly": true
+    },
+    {
+      "name": "GroundLeaf_1_ground_leaf__000",
+      "meshId": "ground_leaf__000",
+      "worldAABB": [
+        74.98,
+        102.0,
+        1316.33975,
+        1333.66025,
+        2.02,
+        2.02
+      ],
+      "combatEnvelopeMargin": {
+        "boar": 54.003541203375676,
+        "captain": 32.980000000000004,
+        "scout": 123.07210526094795,
+        "archer": 45.79561575090537
+      },
+      "allRoadPortalResourceExclusionsClear": true,
+      "groundSurfaceOnly": true
+    },
+    {
+      "name": "GroundLeaf_2_ground_leaf__000",
+      "meshId": "ground_leaf__000",
+      "worldAABB": [
+        -83.02,
+        -56.0,
+        1321.33975,
+        1338.66025,
+        2.02,
+        2.02
+      ],
+      "combatEnvelopeMargin": {
+        "boar": 37.69377007304588,
+        "captain": 14.0,
+        "scout": 39.339750000000095,
+        "archer": 104.18134942077242
+      },
+      "allRoadPortalResourceExclusionsClear": true,
+      "groundSurfaceOnly": true
+    },
+    {
+      "name": "GroundLeaf_3_ground_leaf__000",
+      "meshId": "ground_leaf__000",
+      "worldAABB": [
+        56.980000000000004,
+        84.0,
+        1321.33975,
+        1338.66025,
+        2.02,
+        2.02
+      ],
+      "combatEnvelopeMargin": {
+        "boar": 38.302137598538806,
+        "captain": 14.980000000000004,
+        "scout": 105.01708043182978,
+        "archer": 39.339750000000095
+      },
+      "allRoadPortalResourceExclusionsClear": true,
+      "groundSurfaceOnly": true
+    }
+  ],
+  "studioTested": false
+}

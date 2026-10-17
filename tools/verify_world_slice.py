@@ -2,6 +2,57 @@
 from pathlib import Path
 import json,math,hashlib,struct
 ROOT=Path(__file__).resolve().parents[1];OUT=ROOT/'assets/production/world-slice'
+
+def verify_ground(data):
+ path=ROOT/'production/world/quality-slice/ground-authoring.json'
+ if not path.exists():return
+ meta=json.loads(path.read_text(encoding='utf-8'))
+ def digest(v):return hashlib.sha256(json.dumps(v,sort_keys=True,separators=(',',':')).encode()).hexdigest()
+ lookup={m['id']:m for m in data['meshes']};plookup={p['name']:p for p in data['placements']}
+ for mid,value in meta['baselineMeshes'].items():assert digest(lookup[mid])==value,('Changed prior mesh',mid)
+ for name,value in meta['baselinePlacements'].items():assert digest(plookup[name])==value,('Moved existing anchor/art',name)
+ collision=json.loads((OUT/'collision.json').read_text())
+ assert len(collision['colliders'])==413 and digest(collision['colliders'])==meta['baselineCollidersSha256']
+ assert set(lookup)-set(meta['baselineMeshes'])==set(meta['originalMeshes'])
+ def bounds(p):
+  m=lookup[p['meshId']];f=p['cframe'];points=[]
+  for x in (m['bounds']['min'][0],m['bounds']['max'][0]):
+   for y in (m['bounds']['min'][1],m['bounds']['max'][1]):
+    for z in (m['bounds']['min'][2],m['bounds']['max'][2]):
+     points.append([f[0]+f[3]*x+f[4]*y+f[5]*z,f[1]+f[6]*x+f[7]*y+f[8]*z,f[2]+f[9]*x+f[10]*y+f[11]*z])
+  return [min(v[0] for v in points),max(v[0] for v in points),min(v[2] for v in points),max(v[2] for v in points),min(v[1] for v in points),max(v[1] for v in points)]
+ roads={'center':[-12,12,1317,1512],'landing':[-18,18,1496,1530],'westLoop':[-72,-48,1362,1458],'eastLoop':[48,72,1362,1458],'southCross':[-72,72,1438,1462],'northCross':[-72,72,1363,1387],'bossCourt':[-51,51,1302,1358],'wood':[-41,-29,1449,1461],'herbs':[29,41,1449,1461]}
+ circles={'boar':[0,1410,53],'captain':[0,1330,42],'scout':[-60,1410,32],'archer':[60,1410,32]}
+ def overlaps(a,b):return a[0]<b[1] and a[1]>b[0] and a[2]<b[3] and a[3]>b[2]
+ building=[]
+ for p in data['placements']:
+  if p['meshId'].split('__')[0] in ('stable','house','sawmill'):
+   a=bounds(p);building.append([a[0]-2,a[1]+2,a[2]-2,a[3]+2])
+ rows=[];props=tris=0
+ for p in data['placements']:
+  if p['name'] in meta['baselinePlacements']:continue
+  a=bounds(p);ground=p['meshId'] in meta['originalMeshes'];m=lookup[p['meshId']]
+  assert -110<=a[0]<=a[1]<=110 and 1300<=a[2]<=a[3]<=1500,('Native Island bounds',p['name'],a)
+  assert all(not overlaps(a,b) for b in roads.values()),('Road/resource/portal exclusion',p['name'],a)
+  gaps={}
+  for name,(x,z,radius) in circles.items():
+   dx=max(a[0]-x,0,x-a[1]);dz=max(a[2]-z,0,z-a[3]);gaps[name]=math.hypot(dx,dz)-radius
+   assert gaps[name]>=0,('Combat envelope',p['name'],name,gaps[name])
+  if ground:
+   assert abs(a[4]-2.02)<1e-5 and abs(a[5]-2.02)<1e-5,('Ground overlay height',p['name'])
+   for face in m['triangles']:
+    av,bv,cv=[m['vertices'][i-1] for i in face];u=[bv[i]-av[i] for i in range(3)];v=[cv[i]-av[i] for i in range(3)]
+    assert u[2]*v[0]-u[0]*v[2]>0,('Ground must face upward',p['name'])
+  else:
+   props+=1;assert a[4]==2,('Floating decoration',p['name'])
+   assert all(not overlaps(a,b) for b in building),('Building clearance',p['name'])
+  tris+=len(m['triangles'])
+  rows.append(dict(name=p['name'],meshId=p['meshId'],worldAABB=a,combatEnvelopeMargin=gaps,allRoadPortalResourceExclusionsClear=True,groundSurfaceOnly=ground))
+ assert props<=28 and tris<=15000
+ report=dict(status='OFFLINE_CLEARANCE_PASS_NOT_CAMERA_OCCLUSION_PROOF',sourceMeshSha256=hashlib.sha256((OUT/'world-slice.mesh.json').read_bytes()).hexdigest(),existingMeshesUnchanged=len(meta['baselineMeshes']),existingPlacementsUnchanged=len(meta['baselinePlacements']),collidersUnchanged=413,addedProps=props,addedInstancedTriangles=tris,exclusionRectangles=roads,combatEnvelopes=circles,placements=rows,studioTested=False)
+ (ROOT/'production/world/quality-slice/ground-clearance.json').write_text(json.dumps(report,indent=2)+'\n',encoding='utf-8')
+ print('GROUND_CLEARANCE',props,tris,len(rows))
+
 def main():
  data=json.loads((OUT/'world-slice.mesh.json').read_text());report=json.loads((OUT/'export-report.json').read_text())
  assert data['schemaVersion']==1 and data['previewWorldOrigin']==[0,2,1410]
@@ -47,6 +98,7 @@ def main():
  for name in ['world-slice.mesh.json','woodland-threshold.blend','woodland-threshold.glb','woodland-threshold.png']:
   assert hashlib.sha256((OUT/name).read_bytes()).hexdigest()==report['files'][name]['sha256']
  assert report['uniqueTriangles']==faces and report['studioTested'] is False
+ verify_ground(data)
  result=dict(status='OFFLINE_GEOMETRY_PASS',meshes=len(ids),vertices=vertices,triangles=faces,placements=len(names),instancedTriangles=report['instancedTriangles'],studioTested=False)
  print(json.dumps(result,indent=2))
 if __name__=='__main__':main()
