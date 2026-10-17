@@ -1,0 +1,443 @@
+[
+  {
+    "stage": "edit-source-verification",
+    "result": {
+      "content": [
+        {
+          "type": "text",
+          "text": "{\"isolated\":true,\"placeId\":0,\"checks\":[{\"match\":true,\"path\":\"StarterPlayer/StarterPlayerScripts/Client/Controllers/CityNavigation\"},{\"match\":true,\"path\":\"StarterPlayer/StarterPlayerScripts/Client/Controllers/PlayerCombatController\"},{\"match\":true,\"path\":\"StarterPlayer/StarterPlayerScripts/Client/UI/Components/WaypointBeacon\"},{\"match\":true,\"path\":\"ServerScriptService/Server/Config/Runtime\"},{\"match\":true,\"path\":\"ReplicatedStorage/Shared/Data/CombatHudLayout\"}],\"gameId\":0}"
+        }
+      ],
+      "isError": false
+    }
+  },
+  {
+    "stage": "runtime-startup",
+    "result": {
+      "content": [
+        {
+          "type": "text",
+          "text": "{\"viewport\":\"796, 674\",\"assets\":{\"WorldDataset\":\"Dataset1\",\"IsolatedMemory\":true,\"WorldCollisionSourceSha256\":\"9baaf8de0faf3ff7f4a4f2c32ea692e48aa9dbb021f609e3530029ed7844ddc7\",\"WorldSourceSha256\":\"9baaf8de0faf3ff7f4a4f2c32ea692e48aa9dbb021f609e3530029ed7844ddc7\",\"BindEnemies\":true,\"EnemyBindingState\":\"READY_LOCAL_ONLY\",\"EnableWorldSlice\":true,\"WorldCollisionReady\":true},\"dataset\":{\"LoadSeconds\":4.523797199995897,\"Triangles\":45267,\"Placements\":116,\"PreviewState\":\"READY_LOCAL_ONLY\",\"SourceSha256\":\"9baaf8de0faf3ff7f4a4f2c32ea692e48aa9dbb021f609e3530029ed7844ddc7\"},\"buttons\":[{\"text\":\"\",\"path\":\"Players.iswhlaedev.PlayerGui.Chat.Frame.ChatBarParentFrame.Frame.BoxFrame.Frame.MessageMode\"},{\"text\":\"All\",\"path\":\"Players.iswhlaedev.PlayerGui.Chat.Frame.ChannelsBarParentFrame.Frame.ScrollingBase.ScrollerSizer.ScrollerFrame.Frame_All.BackgroundFrame.UnselectedFrame.TextButton\"},{\"text\":\"All\",\"path\":\"Players.iswhlaedev.PlayerGui.Chat.Frame.ChannelsBarParentFrame.Frame.ScrollingBase.ScrollerSizer.ScrollerFrame.Frame_All.BackgroundFrame.SelectedFrame.TextButton\"},{\"text\":\"\",\"path\":\"Players.iswhlaedev.PlayerGui.Chat.Frame.ChannelsBarParentFrame.Frame.ScrollingBase.ScrollerSizer.ScrollerFrame.Frame_All.BackgroundFrame.TextButton\"},{\"text\":\"System\",\"path\":\"Players.iswhlaedev.PlayerGui.Chat.Frame.ChannelsBarParentFrame.Frame.ScrollingBase.ScrollerSizer.ScrollerFrame.Frame_System.BackgroundFrame.UnselectedFrame.TextButton\"},{\"text\":\"System\",\"path\":\"Players.iswhlaedev.PlayerGui.Chat.Frame.ChannelsBarParentFrame.Frame.ScrollingBase.ScrollerSizer.ScrollerFrame.Frame_System.BackgroundFrame.SelectedFrame.TextButton\"},{\"text\":\"\",\"path\":\"Players.iswhlaedev.PlayerGui.Chat.Frame.ChannelsBarParentFrame.Frame.ScrollingBase.ScrollerSizer.ScrollerFrame.Frame_System.BackgroundFrame.TextButton\"},{\"text\":\"\",\"path\":\"Players.iswhlaedev.PlayerGui.Chat.Frame.ChannelsBarParentFrame.Frame.Frame.LeaveConfirmationFrame.TextButton\"},{\"text\":\"Confirm\",\"path\":\"Players.iswhlaedev.PlayerGui.Chat.Frame.ChannelsBarParentFrame.Frame.Frame.LeaveConfirmationFrame.TextButton\"},{\"text\":\"Cancel\",\"path\":\"Players.iswhlaedev.PlayerGui.Chat.Frame.ChannelsBarParentFrame.Frame.Frame.LeaveConfirmationFrame.TextButton\"},{\"text\":\"Guild menu\",\"path\":\"Players.iswhlaedev.PlayerGui.GuildborneUI.Frame.TextButton\"},{\"text\":\"Guild\",\"path\":\"Players.iswhlaedev.PlayerGui.GuildborneUI.ManagementPanel.Frame.GuildTab\"},{\"text\":\"NPC heroes\",\"path\":\"Players.iswhlaedev.PlayerGui.GuildborneUI.ManagementPanel.Frame.PartyTab\"},{\"text\":\"Quests\",\"path\":\"Players.iswhlaedev.PlayerGui.GuildborneUI.ManagementPanel.Frame.QuestsTab\"},{\"text\":\"Inventory\",\"path\":\"Players.iswhlaedev.PlayerGui.GuildborneUI.ManagementPanel.Frame.InventoryTab\"},{\"text\":\"Daily and season rewards\",\"path\":\"Players.iswhlaedev.PlayerGui.GuildborneUI.ManagementPanel.Content.LaunchRewardsNavigation\"},{\"text\":\"Claim 100 XP\",\"path\":\"Players.iswhlaedev.PlayerGui.GuildborneUI.ManagementPanel.Content.NoviceJourney.NoviceClaim\"},{\"text\":\"Human Party\",\"path\":\"Players.iswhlaedev.PlayerGui.GuildborneUI.ManagementPanel.Content.Frame.OpenHumanParty\"},{\"text\":\"Begin adventure\",\"path\":\"Players.iswhlaedev.PlayerGui.GuildborneUI.TitleScreen.TitleShell.TitleContent.TitleColumns.EntryRail.EntryControls.Continue\"},{\"text\":\"Language: EN\",\"path\":\"Players.iswhlaedev.PlayerGui.GuildborneUI.TitleScreen.TitleShell.TitleContent.TitleColumns.EntryRail.EntryControls.Language\"},{\"text\":\"Settings\",\"path\":\"Players.iswhlaedev.PlayerGui.GuildborneUI.TitleScreen.TitleShell.TitleContent.TitleColumns.EntryRail.EntryControls.Settings\"},{\"text\":\"VFX quality: Auto\",\"path\":\"Players.iswhlaedev.PlayerGui.GuildborneUI.TitleScreen.TitleShell.TitleContent.TitleColumns.EntryRail.EntryControls.PresentationSettings.VFXQuality\"},{\"text\":\"Idle motion: Full\",\"path\":\"Players.iswhlaedev.PlayerGui.GuildborneUI.TitleScreen.TitleShell.TitleContent.TitleColumns.EntryRail.EntryControls.PresentationSettings.IdleMotion\"},{\"text\":\"Audio: On\",\"path\":\"Players.iswhlaedev.PlayerGui.GuildborneUI.TitleScreen.TitleShell.TitleContent.TitleColumns.EntryRail.EntryControls.PresentationSettings.AudioMute\"},{\"text\":\"Audio volume: 75%\",\"path\":\"Players.iswhlaedev.PlayerGui.GuildborneUI.TitleScreen.TitleShell.TitleContent.TitleColumns.EntryRail.EntryControls.PresentationSettings.AudioMaster\"},{\"text\":\"UI sounds: 70%\",\"path\":\"Players.iswhlaedev.PlayerGui.GuildborneUI.TitleScreen.TitleShell.TitleContent.TitleColumns.EntryRail.EntryControls.PresentationSettings.AudioUI\"},{\"text\":\"Combat sounds: 80%\",\"path\":\"Players.iswhlaedev.PlayerGui.GuildborneUI.TitleScreen.TitleShell.TitleContent.TitleColumns.EntryRail.EntryControls.PresentationSettings.AudioCombat\"},{\"text\":\"Music volume: 45%\",\"path\":\"Players.iswhlaedev.PlayerGui.GuildborneUI.TitleScreen.TitleShell.TitleContent.TitleColumns.EntryRail.EntryControls.PresentationSettings.AudioMusic\"},{\"text\":\"Credits\",\"path\":\"Players.iswhlaedev.PlayerGui.GuildborneUI.TitleScreen.TitleShell.TitleContent.TitleColumns.EntryRail.EntryControls.Credits\"},{\"text\":\"\",\"path\":\"Players.iswhlaedev.PlayerGui.GuildbornePlayerCombatUI.CompanionSelection.Actor1\"},{\"text\":\"Attack [F]\",\"path\":\"Players.iswhlaedev.PlayerGui.GuildbornePlayerCombatUI.CombatButtons.BasicAttack\"},{\"text\":\"Starter skill\",\"path\":\"Players.iswhlaedev.PlayerGui.GuildbornePlayerCombatUI.CombatButtons.Skill1\"},{\"text\":\"Unlock path art\",\"path\":\"Players.iswhlaedev.PlayerGui.GuildbornePlayerCombatUI.CombatButtons.Skill2\"},{\"text\":\"Unlock master art\",\"path\":\"Players.iswhlaedev.PlayerGui.GuildbornePlayerCombatUI.CombatButtons.Skill3\"},{\"text\":\"Focus [R]\",\"path\":\"Players.iswhlaedev.PlayerGui.GuildbornePlayerCombatUI.CompanionOrders.Focus\"},{\"text\":\"Regroup [G]\",\"path\":\"Players.iswhlaedev.PlayerGui.GuildbornePlayerCombatUI.CompanionOrders.Regroup\"},{\"text\":\"Retreat [H]\",\"path\":\"Players.iswhlaedev.PlayerGui.GuildbornePlayerCombatUI.CompanionOrders.Retreat\"},{\"text\":\"Hold [K]\",\"path\":\"Players.iswhlaedev.PlayerGui.GuildbornePlayerCombatUI.CompanionOrders.Hold\"},{\"text\":\"Balanced\",\"path\":\"Players.iswhlaedev.PlayerGui.GuildbornePlayerCombatUI.CompanionOrders.TacticBalanced\"},{\"text\":\"Defensive\",\"path\":\"Players.iswhlaedev.PlayerGui.GuildbornePlayerCombatUI.CompanionOrders.TacticDefensive\"},{\"text\":\"Button\",\"path\":\"Players.iswhlaedev.PlayerGui.NoviceTrialHUD.LeaveTrial\"},{\"text\":\"Button\",\"path\":\"Players.iswhlaedev.PlayerGui.NoviceTrialHUD.TrialBasic\"},{\"text\":\"Button\",\"path\":\"Players.iswhlaedev.PlayerGui.NoviceTrialHUD.TrialAbility\"},{\"text\":\"×\",\"path\":\"Players.iswhlaedev.PlayerGui.CityNavigation.CityMap.CloseMap\"},{\"text\":\"Central Plaza\",\"path\":\"Players.iswhlaedev.PlayerGui.CityNavigation.CityMap.MapScroll.DistrictMap.Guide_Plaza\"},{\"text\":\"Guild District\",\"path\":\"Players.iswhlaedev.PlayerGui.CityNavigation.CityMap.MapScroll.DistrictMap.Guide_Guild\"},{\"text\":\"Market / Craft District\",\"path\":\"Players.iswhlaedev.PlayerGui.CityNavigation.CityMap.MapScroll.DistrictMap.Guide_Market\"},{\"text\":\"Tavern District\",\"path\":\"Players.iswhlaedev.PlayerGui.CityNavigation.CityMap.MapScroll.DistrictMap.Guide_Tavern\"},{\"text\":\"Tower Gate\",\"path\":\"Players.iswhlaedev.PlayerGui.CityNavigation.CityMap.MapScroll.DistrictMap.Guide_Tower\"},{\"text\":\"Guild Zone Warp\",\"path\":\"Players.iswhlaedev.PlayerGui.CityNavigation.CityMap.MapScroll.DistrictMap.Guide_Warp\"},{\"text\":\"Civic landmark\",\"path\":\"Players.iswhlaedev.PlayerGui.CityNavigation.CityMap.MapScroll.CivicMap.CivicGuide_1\"},{\"text\":\"Central City\",\"path\":\"Players.iswhlaedev.PlayerGui.CityNavigation.CityMap.MapScroll.CivicMap.CivicGuide_2\"},{\"text\":\"Guild Zone Warp\",\"path\":\"Players.iswhlaedev.PlayerGui.CityNavigation.CityMap.MapScroll.CivicMap.CivicGuide_3\"},{\"text\":\"Welcome guide\",\"path\":\"Players.iswhlaedev.PlayerGui.CityNavigation.CityMap.MapScroll.CivicMap.CivicGuide_4\"},{\"text\":\"Market\",\"path\":\"Players.iswhlaedev.PlayerGui.CityNavigation.CityMap.MapScroll.CivicMap.CivicGuide_5\"},{\"text\":\"Tavern\",\"path\":\"Players.iswhlaedev.PlayerGui.CityNavigation.CityMap.MapScroll.CivicMap.CivicGuide_6\"},{\"text\":\"Guide to quest objective\",\"path\":\"Players.iswhlaedev.PlayerGui.CityNavigation.CityMap.GuideQuestNPC\"},{\"text\":\"Clear route\",\"path\":\"Players.iswhlaedev.PlayerGui.CityNavigation.CityMap.ClearWaypoint\"},{\"text\":\"×\",\"path\":\"Players.iswhlaedev.PlayerGui.GuildborneMarket.Exchange.Close\"},{\"text\":\"Browse\",\"path\":\"Players.iswhlaedev.PlayerGui.GuildborneMarket.Exchange.Frame.Browse\"},{\"text\":\"Search\",\"path\":\"Players.iswhlaedev.PlayerGui.GuildborneMarket.Exchange.Frame.Search\"},{\"text\":\"My Orders\",\"path\":\"Players.iswhlaedev.PlayerGui.GuildborneMarket.Exchange.Frame.My Orders\"},{\"text\":\"History\",\"path\":\"Players.iswhlaedev.PlayerGui.GuildborneMarket.Exchange.Frame.History\"}]}"
+        }
+      ],
+      "isError": false
+    }
+  },
+  {
+    "stage": "ordinary-courier-input",
+    "args": {
+      "studio_id": "62789207-389b-45dc-95a0-c5bffd63cd0b",
+      "datamodel_type": "Client",
+      "actions": [
+        {
+          "action": "keyDown",
+          "key_code": "W"
+        },
+        {
+          "action": "wait",
+          "wait_time_ms": 3800
+        },
+        {
+          "action": "keyUp",
+          "key_code": "W"
+        },
+        {
+          "action": "keyDown",
+          "key_code": "A"
+        },
+        {
+          "action": "wait",
+          "wait_time_ms": 3800
+        },
+        {
+          "action": "keyUp",
+          "key_code": "A"
+        },
+        {
+          "action": "keyPress",
+          "key_code": "E"
+        },
+        {
+          "action": "wait",
+          "wait_time_ms": 300
+        }
+      ]
+    },
+    "result": {
+      "content": [
+        {
+          "type": "text",
+          "text": "Success"
+        }
+      ],
+      "isError": false
+    }
+  },
+  {
+    "stage": "courier-server-read",
+    "result": {
+      "content": [
+        {
+          "type": "text",
+          "text": "{\"course\":{\"DeliveryProblem\":\"OK\",\"OwnerUserId\":11732987790,\"ObjectiveText\":\"Follow the training path\",\"Objective\":\"walk_route\",\"CoursePrototype\":true,\"Depth\":450,\"Width\":300},\"position\":\"-4560.986328125, 2.998046875, 153.00457763671875\"}"
+        }
+      ],
+      "isError": false
+    }
+  },
+  {
+    "stage": "ordinary-path-input",
+    "args": {
+      "studio_id": "62789207-389b-45dc-95a0-c5bffd63cd0b",
+      "datamodel_type": "Client",
+      "actions": [
+        {
+          "action": "keyDown",
+          "key_code": "D"
+        },
+        {
+          "action": "wait",
+          "wait_time_ms": 3700
+        },
+        {
+          "action": "keyUp",
+          "key_code": "D"
+        },
+        {
+          "action": "wait",
+          "wait_time_ms": 600
+        }
+      ]
+    },
+    "result": {
+      "content": [
+        {
+          "type": "text",
+          "text": "Success"
+        }
+      ],
+      "isError": false
+    }
+  },
+  {
+    "stage": "path-server-read",
+    "result": {
+      "content": [
+        {
+          "type": "text",
+          "text": "{\"course\":{\"DeliveryProblem\":\"OK\",\"OwnerUserId\":11732987790,\"ObjectiveText\":\"Move clear of the warning\",\"Objective\":\"dodge_warning\",\"CoursePrototype\":true,\"Depth\":450,\"Width\":300},\"parts\":[{\"name\":\"DodgeWarning\",\"position\":\"-4435, 0.10000000149011612, 99\"},{\"name\":\"KeeperWarning\",\"position\":\"-4435, 0.12999999523162842, -40\"},{\"name\":\"CourierPathMarker\",\"position\":\"-4500, 0.11999999731779099, 153\"},{\"name\":\"PracticeWarning\",\"position\":\"-4504.1015625, 0.11999999731779099, 153.0023193359375\"}],\"position\":\"-4501.83349609375, 2.998046875, 153.0023193359375\"}"
+        }
+      ],
+      "isError": false
+    }
+  },
+  {
+    "stage": "ordinary-dodge-help",
+    "args": {
+      "studio_id": "62789207-389b-45dc-95a0-c5bffd63cd0b",
+      "datamodel_type": "Client",
+      "actions": [
+        {
+          "action": "keyDown",
+          "key_code": "A"
+        },
+        {
+          "action": "wait",
+          "wait_time_ms": 3600
+        },
+        {
+          "action": "keyUp",
+          "key_code": "A"
+        },
+        {
+          "action": "wait",
+          "wait_time_ms": 700
+        },
+        {
+          "action": "keyPress",
+          "key_code": "E"
+        },
+        {
+          "action": "wait",
+          "wait_time_ms": 250
+        }
+      ]
+    },
+    "result": {
+      "content": [
+        {
+          "type": "text",
+          "text": "Success"
+        }
+      ],
+      "isError": false
+    }
+  },
+  {
+    "stage": "help-server-read",
+    "result": {
+      "content": [
+        {
+          "type": "text",
+          "text": "{\"course\":{\"DeliveryProblem\":\"OK\",\"OwnerUserId\":11732987790,\"ObjectiveText\":\"Move clear of the warning\",\"Objective\":\"dodge_warning\",\"CoursePrototype\":true,\"Depth\":450,\"Width\":300},\"position\":\"-4559.6533203125, 2.998046875, 153.00006103515625\"}"
+        }
+      ],
+      "isError": false
+    }
+  },
+  {
+    "stage": "return-warning",
+    "args": {
+      "studio_id": "62789207-389b-45dc-95a0-c5bffd63cd0b",
+      "datamodel_type": "Client",
+      "actions": [
+        {
+          "action": "keyDown",
+          "key_code": "D"
+        },
+        {
+          "action": "wait",
+          "wait_time_ms": 3500
+        },
+        {
+          "action": "keyUp",
+          "key_code": "D"
+        }
+      ]
+    },
+    "result": {
+      "content": [
+        {
+          "type": "text",
+          "text": "Success"
+        }
+      ],
+      "isError": false
+    }
+  },
+  {
+    "stage": "bounded-dodge-server-read",
+    "result": {
+      "content": [
+        {
+          "type": "text",
+          "text": "{\"course\":{\"DeliveryProblem\":\"OK\",\"OwnerUserId\":11732987790,\"ObjectiveText\":\"Help the courier\",\"Objective\":\"help_courier\",\"CoursePrototype\":true,\"Depth\":450,\"Width\":300},\"position\":\"-4503.43310546875, 2.998046875, 152.997802734375\"}"
+        }
+      ],
+      "isError": false
+    }
+  },
+  {
+    "stage": "help-courier-input",
+    "args": {
+      "studio_id": "62789207-389b-45dc-95a0-c5bffd63cd0b",
+      "datamodel_type": "Client",
+      "actions": [
+        {
+          "action": "keyDown",
+          "key_code": "A"
+        },
+        {
+          "action": "wait",
+          "wait_time_ms": 3500
+        },
+        {
+          "action": "keyUp",
+          "key_code": "A"
+        },
+        {
+          "action": "keyPress",
+          "key_code": "E"
+        },
+        {
+          "action": "wait",
+          "wait_time_ms": 250
+        }
+      ]
+    },
+    "result": {
+      "content": [
+        {
+          "type": "text",
+          "text": "Success"
+        }
+      ],
+      "isError": false
+    }
+  },
+  {
+    "stage": "ordinary-chapter1-ready",
+    "result": {
+      "content": [
+        {
+          "type": "text",
+          "text": "[{\"text\":\"The Unmarked\",\"name\":\"TextLabel\",\"active\":false},{\"text\":\"Chapter 1 / 6\",\"name\":\"TextLabel\",\"active\":false},{\"text\":\"Claim 100 XP\",\"name\":\"NoviceClaim\",\"active\":true},{\"text\":\"✓ Meet the courier\",\"name\":\"Objective_meet_courier\",\"active\":false},{\"text\":\"✓ Follow the training path\",\"name\":\"Objective_walk_route\",\"active\":false},{\"text\":\"✓ Move clear of the warning\",\"name\":\"Objective_dodge_warning\",\"active\":false},{\"text\":\"✓ Help the courier\",\"name\":\"Objective_help_courier\",\"active\":false}]"
+        }
+      ],
+      "isError": false
+    }
+  },
+  {
+    "stage": "claim-chapter1",
+    "args": {
+      "studio_id": "62789207-389b-45dc-95a0-c5bffd63cd0b",
+      "datamodel_type": "Client",
+      "actions": [
+        {
+          "action": "mouseButtonClick",
+          "mouse_button": "left",
+          "instance_path": "LocalPlayer.PlayerGui.GuildborneUI.ManagementPanel.Content.NoviceJourney.NoviceClaim"
+        },
+        {
+          "action": "wait",
+          "wait_time_ms": 350
+        }
+      ]
+    },
+    "result": {
+      "content": [
+        {
+          "type": "text",
+          "text": "Success"
+        }
+      ],
+      "isError": false
+    }
+  },
+  {
+    "stage": "chapter2-ui",
+    "result": {
+      "content": [
+        {
+          "type": "text",
+          "text": "[{\"text\":\"A Borrowed Weapon\",\"name\":\"TextLabel\",\"active\":false},{\"text\":\"Chapter 2 / 6\",\"name\":\"TextLabel\",\"active\":false},{\"text\":\"Claim 100 XP\",\"name\":\"NoviceClaim\",\"active\":false},{\"text\":\"○ Practice a basic attack\",\"name\":\"Objective_practice_attack\",\"active\":false},{\"text\":\"○ Dodge the area attack\",\"name\":\"Objective_dodge_area\",\"active\":false},{\"text\":\"○ Rescue the practice captive\",\"name\":\"Objective_rescue_dummy\",\"active\":false}]"
+        }
+      ],
+      "isError": false
+    }
+  },
+  {
+    "stage": "walk-to-basic-practice",
+    "args": {
+      "studio_id": "62789207-389b-45dc-95a0-c5bffd63cd0b",
+      "datamodel_type": "Client",
+      "actions": [
+        {
+          "action": "keyDown",
+          "key_code": "D"
+        },
+        {
+          "action": "wait",
+          "wait_time_ms": 7500
+        },
+        {
+          "action": "keyUp",
+          "key_code": "D"
+        },
+        {
+          "action": "keyDown",
+          "key_code": "W"
+        },
+        {
+          "action": "wait",
+          "wait_time_ms": 3800
+        },
+        {
+          "action": "keyUp",
+          "key_code": "W"
+        },
+        {
+          "action": "keyPress",
+          "key_code": "E"
+        },
+        {
+          "action": "wait",
+          "wait_time_ms": 300
+        }
+      ]
+    },
+    "result": {
+      "content": [
+        {
+          "type": "text",
+          "text": "Success"
+        }
+      ],
+      "isError": false
+    }
+  },
+  {
+    "stage": "practice-enter-read",
+    "result": {
+      "content": [
+        {
+          "type": "text",
+          "text": "{\"trial\":true,\"labels\":[{\"visible\":true,\"text\":\"Warrior · Ready\",\"name\":\"DisplayTitle\"},{\"visible\":true,\"text\":\"HP 36/36 · Training dummy 120/120\",\"name\":\"DisplayHealth\"},{\"visible\":true,\"text\":\"Basic hits 0/1\",\"name\":\"DisplayGoals\"},{\"visible\":true,\"text\":\"Use F/Q or the buttons. Dodge orange warnings.\",\"name\":\"DisplayHint\"},{\"visible\":true,\"text\":\"Leave trial\",\"name\":\"LeaveTrial\"},{\"visible\":true,\"text\":\"F · Basic Attack\",\"name\":\"TrialBasic\"},{\"visible\":true,\"text\":\"Q · Power Strike\",\"name\":\"TrialAbility\"}],\"combat\":true,\"position\":\"-4500, 27.998023986816406, 654\"}"
+        }
+      ],
+      "isError": false
+    }
+  },
+  {
+    "stage": "ordinary-basic-attack",
+    "args": {
+      "studio_id": "62789207-389b-45dc-95a0-c5bffd63cd0b",
+      "datamodel_type": "Client",
+      "actions": [
+        {
+          "action": "keyPress",
+          "key_code": "F"
+        },
+        {
+          "action": "wait",
+          "wait_time_ms": 400
+        }
+      ]
+    },
+    "result": {
+      "content": [
+        {
+          "type": "text",
+          "text": "Success"
+        }
+      ],
+      "isError": false
+    }
+  },
+  {
+    "stage": "basic-attack-ui",
+    "result": {
+      "content": [
+        {
+          "type": "text",
+          "text": "sabuiltin_Assistant.rbxm.Assistant.Packages._Index.AssistantUI.AssistantUI.Tools.ExecuteLuauTool:116: sabuiltin_Assistant.rbxm.Assistant.Packages._Index.AssistantUI.AssistantUI.Util.CommandExecution:54: DisplayGoals is not a valid member of ScreenGui \"Players.iswhlaedev.PlayerGui.NoviceTrialHUD\""
+        }
+      ],
+      "isError": true
+    }
+  },
+  {
+    "stage": "corrected-basic-attack-ui",
+    "result": {
+      "content": [
+        {
+          "type": "text",
+          "text": "{\"trialGoals\":\"Basic hits 1/1\",\"trialHealth\":\"HP 36/36 · Training dummy 110/120\",\"padVisible\":false,\"ordersVisible\":false,\"viewport\":\"796, 674\",\"padPosition\":\"672, 192\",\"combatEnabled\":true,\"padSize\":\"116, 232\"}"
+        }
+      ],
+      "isError": false
+    }
+  },
+  {
+    "stage": "leave-trial-handoff",
+    "result": {
+      "content": [
+        {
+          "type": "text",
+          "text": "{\"course\":{\"DeliveryProblem\":\"OK\",\"OwnerUserId\":11732987790,\"Objective\":\"dodge_area\",\"ObjectiveText\":\"Dodge the area attack\",\"CoursePrototype\":true,\"Depth\":450,\"Width\":300},\"zone\":\"Guild\",\"position\":\"-4439.5830078125, 2.998046875, 94.86054229736328\"}"
+        }
+      ],
+      "isError": false
+    }
+  }
+]

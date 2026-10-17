@@ -2,6 +2,8 @@
 
 ## Latest goal checkpoint (supersedes statuses below)
 
+Latest combined Play: source 976c12e pushed; candidate 24fc77b0…9586e in Studio 62789207-389b-45dc-95a0-c5bffd63cd0b has 116 placements and matching art/collision ready. Fresh ordinary chapter-one reward and chapter-two basic hit verified; current dodge_area objective remains pending. Preserve this Memory session. Starter area is still visually sparse. See COMBINED_ORDINARY_20261018.md. Quota 6%, goal ACTIVE.
+
 Latest continuation: compact fixture dependency repair independently reviewed; repaired full baseline 30314 PASSED (902 tests, 382 strict Luau files, build and repository checks), 47 GUI simulation cases passed. Actual 320x240 native source-copy fixture passed Map/four skills/six actor cycles/all six scrolled orders; cleanup confirmed. See COMPACT_NATIVE_RUNTIME_20261018.md. Earlier baseline failure below is preserved as history and is resolved. Long actor names truncate at this minimum size; physical touch/gamepad and final visual approval remain unproven. Quota remains 6%.
 
 Goal ACTIVE; full-game scope and exact continuation are recorded in GOAL_CHECKPOINT.md. Latest account reading: 6% remaining; stop initiating work near 5%. All four streams have delivered their latest bounded assignments and are idle. Controller HEAD 3301015 integrates compact HUD; last pushed f1893d1. S13 gate is integrated and Studio-inspected, S15 Fireball and S17 attention are integrated; full art/world/gameplay/device/human gates remain open.
