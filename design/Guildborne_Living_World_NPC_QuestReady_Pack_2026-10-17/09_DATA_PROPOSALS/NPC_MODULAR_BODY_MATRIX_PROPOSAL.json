@@ -1,0 +1,311 @@
+{
+  "status": "SOURCE_CATALOG_NOT_GAME_ACCEPTANCE",
+  "existingBodyCount": 13,
+  "conditionalExpansionOnlyAfterApproval": "17-21 total true meshes may be proposed after benchmarking",
+  "plannedBodies": [
+    {
+      "bodyPresetId": "CHR_BDY_HUMAN_SLIM_V01",
+      "raceId": "HUMAN",
+      "status": "CATALOG_PLANNED_NOT_ALL_IMPORTED",
+      "fitReview": {
+        "baseBody": false,
+        "rigging": false,
+        "head": false,
+        "hair": false,
+        "props": false,
+        "layeredGarments": false,
+        "combatAnimation": false,
+        "ageAppropriate": false,
+        "mobile": false
+      },
+      "actualRuntimeImportId": null,
+      "npcContexts": [
+        "TownNPC",
+        "StoryNPC",
+        "CivicNPC"
+      ],
+      "gameplayAppearanceAuthority": "cosmetic_only"
+    },
+    {
+      "bodyPresetId": "CHR_BDY_HUMAN_STANDARD_V01",
+      "raceId": "HUMAN",
+      "status": "CATALOG_PLANNED_NOT_ALL_IMPORTED",
+      "fitReview": {
+        "baseBody": false,
+        "rigging": false,
+        "head": false,
+        "hair": false,
+        "props": false,
+        "layeredGarments": false,
+        "combatAnimation": false,
+        "ageAppropriate": false,
+        "mobile": false
+      },
+      "actualRuntimeImportId": null,
+      "npcContexts": [
+        "TownNPC",
+        "StoryNPC",
+        "CivicNPC"
+      ],
+      "gameplayAppearanceAuthority": "cosmetic_only"
+    },
+    {
+      "bodyPresetId": "CHR_BDY_HUMAN_ATHLETIC_V01",
+      "raceId": "HUMAN",
+      "status": "CATALOG_PLANNED_NOT_ALL_IMPORTED",
+      "fitReview": {
+        "baseBody": false,
+        "rigging": false,
+        "head": false,
+        "hair": false,
+        "props": false,
+        "layeredGarments": false,
+        "combatAnimation": false,
+        "ageAppropriate": false,
+        "mobile": false
+      },
+      "actualRuntimeImportId": null,
+      "npcContexts": [
+        "TownNPC",
+        "StoryNPC",
+        "CivicNPC"
+      ],
+      "gameplayAppearanceAuthority": "cosmetic_only"
+    },
+    {
+      "bodyPresetId": "CHR_BDY_HUMAN_HEAVY_V01",
+      "raceId": "HUMAN",
+      "status": "CATALOG_PLANNED_NOT_ALL_IMPORTED",
+      "fitReview": {
+        "baseBody": false,
+        "rigging": false,
+        "head": false,
+        "hair": false,
+        "props": false,
+        "layeredGarments": false,
+        "combatAnimation": false,
+        "ageAppropriate": false,
+        "mobile": false
+      },
+      "actualRuntimeImportId": null,
+      "npcContexts": [
+        "TownNPC",
+        "StoryNPC",
+        "CivicNPC"
+      ],
+      "gameplayAppearanceAuthority": "cosmetic_only"
+    },
+    {
+      "bodyPresetId": "CHR_BDY_ELF_GRACEFUL_V01",
+      "raceId": "ELF",
+      "status": "CATALOG_PLANNED_NOT_ALL_IMPORTED",
+      "fitReview": {
+        "baseBody": false,
+        "rigging": false,
+        "head": false,
+        "hair": false,
+        "props": false,
+        "layeredGarments": false,
+        "combatAnimation": false,
+        "ageAppropriate": false,
+        "mobile": false
+      },
+      "actualRuntimeImportId": null,
+      "npcContexts": [
+        "TownNPC",
+        "StoryNPC",
+        "CivicNPC"
+      ],
+      "gameplayAppearanceAuthority": "cosmetic_only"
+    },
+    {
+      "bodyPresetId": "CHR_BDY_ELF_RANGER_V01",
+      "raceId": "ELF",
+      "status": "CATALOG_PLANNED_NOT_ALL_IMPORTED",
+      "fitReview": {
+        "baseBody": false,
+        "rigging": false,
+        "head": false,
+        "hair": false,
+        "props": false,
+        "layeredGarments": false,
+        "combatAnimation": false,
+        "ageAppropriate": false,
+        "mobile": false
+      },
+      "actualRuntimeImportId": null,
+      "npcContexts": [
+        "TownNPC",
+        "StoryNPC",
+        "CivicNPC"
+      ],
+      "gameplayAppearanceAuthority": "cosmetic_only"
+    },
+    {
+      "bodyPresetId": "CHR_BDY_ELF_STURDY_V01",
+      "raceId": "ELF",
+      "status": "CATALOG_PLANNED_NOT_ALL_IMPORTED",
+      "fitReview": {
+        "baseBody": false,
+        "rigging": false,
+        "head": false,
+        "hair": false,
+        "props": false,
+        "layeredGarments": false,
+        "combatAnimation": false,
+        "ageAppropriate": false,
+        "mobile": false
+      },
+      "actualRuntimeImportId": null,
+      "npcContexts": [
+        "TownNPC",
+        "StoryNPC",
+        "CivicNPC"
+      ],
+      "gameplayAppearanceAuthority": "cosmetic_only"
+    },
+    {
+      "bodyPresetId": "CHR_BDY_ORC_LEAN_V01",
+      "raceId": "ORC",
+      "status": "CATALOG_PLANNED_NOT_ALL_IMPORTED",
+      "fitReview": {
+        "baseBody": false,
+        "rigging": false,
+        "head": false,
+        "hair": false,
+        "props": false,
+        "layeredGarments": false,
+        "combatAnimation": false,
+        "ageAppropriate": false,
+        "mobile": false
+      },
+      "actualRuntimeImportId": null,
+      "npcContexts": [
+        "TownNPC",
+        "StoryNPC",
+        "CivicNPC"
+      ],
+      "gameplayAppearanceAuthority": "cosmetic_only"
+    },
+    {
+      "bodyPresetId": "CHR_BDY_ORC_STANDARD_V01",
+      "raceId": "ORC",
+      "status": "CATALOG_PLANNED_NOT_ALL_IMPORTED",
+      "fitReview": {
+        "baseBody": false,
+        "rigging": false,
+        "head": false,
+        "hair": false,
+        "props": false,
+        "layeredGarments": false,
+        "combatAnimation": false,
+        "ageAppropriate": false,
+        "mobile": false
+      },
+      "actualRuntimeImportId": null,
+      "npcContexts": [
+        "TownNPC",
+        "StoryNPC",
+        "CivicNPC"
+      ],
+      "gameplayAppearanceAuthority": "cosmetic_only"
+    },
+    {
+      "bodyPresetId": "CHR_BDY_ORC_HEAVY_V01",
+      "raceId": "ORC",
+      "status": "CATALOG_PLANNED_NOT_ALL_IMPORTED",
+      "fitReview": {
+        "baseBody": false,
+        "rigging": false,
+        "head": false,
+        "hair": false,
+        "props": false,
+        "layeredGarments": false,
+        "combatAnimation": false,
+        "ageAppropriate": false,
+        "mobile": false
+      },
+      "actualRuntimeImportId": null,
+      "npcContexts": [
+        "TownNPC",
+        "StoryNPC",
+        "CivicNPC"
+      ],
+      "gameplayAppearanceAuthority": "cosmetic_only"
+    },
+    {
+      "bodyPresetId": "CHR_BDY_DWARF_COMPACT_V01",
+      "raceId": "DWARF",
+      "status": "CATALOG_PLANNED_NOT_ALL_IMPORTED",
+      "fitReview": {
+        "baseBody": false,
+        "rigging": false,
+        "head": false,
+        "hair": false,
+        "props": false,
+        "layeredGarments": false,
+        "combatAnimation": false,
+        "ageAppropriate": false,
+        "mobile": false
+      },
+      "actualRuntimeImportId": null,
+      "npcContexts": [
+        "TownNPC",
+        "StoryNPC",
+        "CivicNPC"
+      ],
+      "gameplayAppearanceAuthority": "cosmetic_only"
+    },
+    {
+      "bodyPresetId": "CHR_BDY_DWARF_BROAD_V01",
+      "raceId": "DWARF",
+      "status": "CATALOG_PLANNED_NOT_ALL_IMPORTED",
+      "fitReview": {
+        "baseBody": false,
+        "rigging": false,
+        "head": false,
+        "hair": false,
+        "props": false,
+        "layeredGarments": false,
+        "combatAnimation": false,
+        "ageAppropriate": false,
+        "mobile": false
+      },
+      "actualRuntimeImportId": null,
+      "npcContexts": [
+        "TownNPC",
+        "StoryNPC",
+        "CivicNPC"
+      ],
+      "gameplayAppearanceAuthority": "cosmetic_only"
+    },
+    {
+      "bodyPresetId": "CHR_BDY_DWARF_STOUT_V01",
+      "raceId": "DWARF",
+      "status": "CATALOG_PLANNED_NOT_ALL_IMPORTED",
+      "fitReview": {
+        "baseBody": false,
+        "rigging": false,
+        "head": false,
+        "hair": false,
+        "props": false,
+        "layeredGarments": false,
+        "combatAnimation": false,
+        "ageAppropriate": false,
+        "mobile": false
+      },
+      "actualRuntimeImportId": null,
+      "npcContexts": [
+        "TownNPC",
+        "StoryNPC",
+        "CivicNPC"
+      ],
+      "gameplayAppearanceAuthority": "cosmetic_only"
+    }
+  ],
+  "prohibitedClaims": [
+    "imported for all races",
+    "all costumes fit",
+    "all races have finished rigging"
+  ]
+}

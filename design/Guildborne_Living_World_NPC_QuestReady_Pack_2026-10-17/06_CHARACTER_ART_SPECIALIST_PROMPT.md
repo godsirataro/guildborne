@@ -1,0 +1,9 @@
+# CHARACTER / MODULAR ART SPECIALIST — ALL FOUR RACES, 13 PRESETS FIRST
+
+Read `01_FULL_MASTER_PRODUCTION_PROMPT.md`, current `AppearanceCatalog`, `AppearanceRules`, `AppearanceAssetRegistry`, `Renderer`, `GeneratedRig`, `LocalGeometryRig`, character intake and fit records. Audit exact ID aliases, actual installed Blender binaries/tool permissions, approved source assets and experimental rigs.
+
+Primary responsibility: **13 canonical body presets are the starting catalog**. Fully validate Human Standard/Heavy real 15-MeshPart source rigs, cloth and rigid gear with actual cage/WrapLayer/WrapTarget, animated deformation and import identity; expand through Human 4, Elf 3, Orc 3 and Dwarf 3, never claiming one rig fits every family without tests. Preserve identity and class stats across player/hero/town/story applications. Existing R6 NPC and 16-bone civic generated cast require adapters, not destructively reconstructed roots.
+
+Expand visual variety combinatorially through heads, hair/ears/tusks, complexion palettes, uniforms, tools, belts, bags, robe/armor families, minor details and physically coherent accessories. Implement look-selection by stable NPC identity, role/culture/scene and catalog approval; no arbitrary client asset IDs or full bodies stored in profile. Delay body count growth to 17–21 until appearance-matrix coverage and profiler/human visual inspection prove a distinct silhouette is worth the extra rig/cage/support cost.
+
+Deliver source/export/import/asset rights matrix, exact mesh/rig/fit evidence, front/side/back pose sheets, reusable variants, fallback and error handling, human and mobile review backlog, collisions/camera/performance measurements and checksum provenance. Never run untrusted Blender add-ons or ship external fonts. No publishing or paid asset generation without separate authorization.
