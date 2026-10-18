@@ -46,6 +46,28 @@ Generated output, import, Studio acceptance, hardware and human review are disti
 
 ## Forge tasks (these scopes apply only after a valid task claim)
 
+### class3-proof-ui: Class3 native actor path and proof readiness
+
+Phase D after domain/trial interface lock; serialize Localization and native UI owners. Existing native class selection shows selected actor/path, proof readiness, trial/saving/retry/refusal in Thai/English. Server policy remains authoritative; no invented earned proof or fake success. Identify further exact UI path needs before editing.
+
+Environment: local; skill: guildborne-ux-native
+
+Write scopes: src/server/Systems/ViewProjection.luau, src/client/UI/ExpansionView.luau, src/shared/Config/Localization.luau, tests/class3_ui.luau, tests/run_class3_ui.luau, production/ux/class3-proof
+
+Required checks: source-contract, regression, independent-review
+
+Dependencies: audit, registry-reconciliation, class3-proof-domain, class3-proof-trials
+
+Path rule server-authority: Reuse actual services; server owns combat/inventory/currency/allocation/rewards/guild/build/escrow. Preserve fencing/receipts/saves/disabled flags. No production cloud writes or commerce activation.
+
+Path rule native-client: Native Roblox UI/presentation only. Send intent, never damage/value/rewards. Coordinate actual UI/Controller modules, EN/TH states and cleanup.
+
+Path rule shared-contracts: Shared definitions are client-safe. Preserve IDs/earned ancestry and progression separately from cosmetic IDs. Reconcile Novice 10/35/70 and Hall contracts.
+
+Path rule tooling: Use reviewed bounded local commands/tests. Studio/Forge planners do not launch models; paid/model subprocess, MCP mutation and installation require actual authorization/capability.
+
+Path rule production-evidence: Reconcile latest goals/registries/scopes. One shared ledger, claim before writes, immediate lease check and preserved raw receipts. Different reviewer validates evidence; local checks cannot replace hardware/cloud/human gates.
+
 ### gameplay-ui-quality: Art-directed native HUD and Journal journey
 
 Build readable custom fantasy HUD, selected player and five-hero context, real cooldowns and Journal/quest navigation. Reuse server snapshots and existing actions. Review licensed borders/icons before selected export; no fake IDs, no framework migration, no baked UI text. Resolve owned-island quest navigation with actual anchors and unavailable states. Studio remains coordinator-owned.

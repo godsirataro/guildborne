@@ -7,7 +7,10 @@
       "id": "continuous-world-travel",
       "skill": "guildborne-luau",
       "environment": "local",
-      "dependsOn": ["audit", "registry-reconciliation"],
+      "dependsOn": [
+        "audit",
+        "registry-reconciliation"
+      ],
       "writeScopes": [
         "src/server/Services/TravelService.luau",
         "src/server/Systems/TravelRules.luau",
@@ -17,7 +20,11 @@
         "tests/run_continuous_world_travel.luau",
         "production/world/continuous-travel"
       ],
-      "checks": ["source-contract", "regression", "independent-review"],
+      "checks": [
+        "source-contract",
+        "regression",
+        "independent-review"
+      ],
       "title": "Authoritative continuous City to Greenwood travel",
       "brief": "Implement the first continuous walking connection toward the required connected cities and Lv1-100 world using existing TravelService, TravelRules and HeroService. Consume a controller-integrated corridor descriptor supplied by world-quality-slice. Preserve avatar position on ordinary crossings; update server-owned zone and respawn state without portal teleportation or boundary snap-back. Preserve session ownership, novice/release eligibility, tower restrictions, charter checks, private guild/course/campaign isolation, optional shared-local travel and safe recovery. Handle bidirectional crossings, hysteresis, death, character replacement, disconnect and companion continuity without duplicating combat ownership or rewards. Reuse existing regional combat synchronization; no competing service. Controller owns WorldService, Bootstrap and main test-runner integration. Deliver focused boundary, gate, respawn, recovery and companion regression evidence. Local acceptance does not certify ordinary Studio traversal, streaming, multiplayer or the full world."
     },
@@ -34,7 +41,11 @@
         "tests/studio_novice_road_probe.luau",
         "production/world/novice-entry"
       ],
-      "checks": ["source-contract", "regression", "independent-review"],
+      "checks": [
+        "source-contract",
+        "regression",
+        "independent-review"
+      ],
       "title": "Original novice entrance and courier courtyard art",
       "brief": "S13 owns the original first-view Crown Road art source and generated runtime module. Replace the blockout entrance and courier-camp composition with authored fantasy geometry while preserving every route marker, per-owner slot spacing, atomic runtime model, supported walk surfaces and interaction clearances. Reuse existing native art/sync workflow; no copied competitor assets or asset IDs. Deliver before/after views, part/collision budget and probe compatible with the actual NoviceCourse_<id> model. Controller owns Studio acceptance; no progression/service changes or unrelated Greenwood edits in this wave."
     },
@@ -1609,6 +1620,168 @@
       ],
       "title": "Restore accepted novice and archive skill presentation",
       "brief": "S15: forward validated server ActionAt into presentation proxy before invoking SkillEffects; reject duplicates, stale/future/nonfinite observations, preserve delayed position arrival within accepted timing window and lifecycle cleanup. Reuse shared ActionTimeline; no combat authority, rewards, published IDs or audio spending. Deliver bounded source/tests and a controller-run Studio probe."
+    },
+    {
+      "environment": "local",
+      "dependsOn": [
+        "audit",
+        "registry-reconciliation"
+      ],
+      "checks": [
+        "source-contract",
+        "regression",
+        "independent-review"
+      ],
+      "id": "class3-proof-domain",
+      "skill": "guildborne-progression",
+      "title": "Class3 optional earned proof domain",
+      "writeScopes": [
+        "src/shared/Data/Expansion.luau",
+        "src/server/Services/ExpansionService.luau",
+        "src/server/Systems/ExpansionSchema.luau",
+        "src/server/Systems/Class3Proof.luau",
+        "tests/expansion.luau",
+        "tests/latest_progression_gates.luau",
+        "tests/class3_proof.luau",
+        "tests/run_class3_proof.luau",
+        "production/progression"
+      ],
+      "brief": "Phase A only. Implement CLASS3_EARNED_PROOF_CONTRACT.md with optional proof schema, pure validation/atomic candidate hooks and injected advancement policy. Preserve all legacy earned classes, absent-policy behavior, Class2 proofs and canonical IDs. No runtime activation, new rewards, persistence service or release changes. Lock interfaces before trial/controller consumers."
+    },
+    {
+      "environment": "local",
+      "dependsOn": [
+        "audit",
+        "registry-reconciliation",
+        "class3-proof-domain"
+      ],
+      "checks": [
+        "source-contract",
+        "regression",
+        "independent-review"
+      ],
+      "id": "class3-proof-trials",
+      "skill": "guildborne-progression",
+      "title": "Class3 trusted existing trial receipts",
+      "writeScopes": [
+        "src/server/Systems/BorrowedPathSession.luau",
+        "src/server/Systems/HeroMentorTrial.luau",
+        "src/server/Services/BorrowedPathFactory.luau",
+        "src/server/Services/CrosshavenWorld.luau",
+        "src/server/Services/HeroMentorWorld.luau",
+        "src/server/Services/HeroMentorReceiptAdapter.luau",
+        "src/server/Services/Class3ProofReceiptAdapter.luau",
+        "tests/borrowed_mastery.luau",
+        "tests/hero_mentor.luau",
+        "tests/class3_trial_receipts.luau",
+        "tests/run_class3_trial_receipts.luau",
+        "production/progression-trials"
+      ],
+      "brief": "Dispatch only after Phase A reviewed interface lock. Reuse existing Sela/player and HeroMentor/owned hero actual trials. Preserve story-only compatibility and Class2. Bind actor/path/trial before real combat; session/snapshot fence private receipt; freeze uncertain command identity; no replay reward or guessed ack. Implement existing accepted Class3 contract, no new quests or server rewards."
+    },
+    {
+      "environment": "local",
+      "dependsOn": [
+        "audit",
+        "registry-reconciliation",
+        "class3-proof-domain",
+        "class3-proof-trials",
+        "class3-proof-ui"
+      ],
+      "checks": [
+        "source-contract",
+        "regression",
+        "independent-review"
+      ],
+      "id": "class3-proof-integration",
+      "skill": "guildborne-director",
+      "title": "Class3 private transaction integration",
+      "writeScopes": [
+        "src/server/Services/PlayerDataService.luau",
+        "src/server/Services/CampaignService.luau",
+        "src/server/ServerBootstrap.server.luau",
+        "src/shared/Network/Protocol.luau",
+        "tests/run.luau",
+        "tests/class3_transaction_integration.luau",
+        "tests/run_class3_transaction_integration.luau",
+        "production/integration/class3-proof"
+      ],
+      "brief": "Controller Phase C after reviewed A/B. Compose private proof and optional campaign objective atomically through existing execute/save pipeline. Public clients submit bounded start/cancel intent only. Preserve launch restrictions and legacy/profile/economy fencing. Enable policy only when producers and UI integrated; no default Runtime/ReleaseContent changes. Native earned evidence separate."
+    },
+    {
+      "environment": "local",
+      "dependsOn": [
+        "audit",
+        "registry-reconciliation",
+        "class3-proof-domain",
+        "class3-proof-trials"
+      ],
+      "checks": [
+        "source-contract",
+        "regression",
+        "independent-review"
+      ],
+      "id": "class3-proof-ui",
+      "skill": "guildborne-ux-native",
+      "title": "Class3 native actor path and proof readiness",
+      "writeScopes": [
+        "src/server/Systems/ViewProjection.luau",
+        "src/client/UI/ExpansionView.luau",
+        "src/shared/Config/Localization.luau",
+        "tests/class3_ui.luau",
+        "tests/run_class3_ui.luau",
+        "production/ux/class3-proof"
+      ],
+      "brief": "Phase D after domain/trial interface lock; serialize Localization and native UI owners. Existing native class selection shows selected actor/path, proof readiness, trial/saving/retry/refusal in Thai/English. Server policy remains authoritative; no invented earned proof or fake success. Identify further exact UI path needs before editing."
+    },
+    {
+      "environment": "local",
+      "dependsOn": [
+        "audit",
+        "registry-reconciliation"
+      ],
+      "checks": [
+        "source-contract",
+        "regression",
+        "independent-review"
+      ],
+      "id": "combat-cue-lifecycle",
+      "skill": "guildborne-audio",
+      "title": "Authoritative client cue admission and cancellation",
+      "writeScopes": [
+        "src/client/Controllers/CombatController.luau",
+        "src/client/Controllers/AudioController.luau",
+        "src/shared/Presentation/CombatCueEvents.luau",
+        "tests/combat_cue_events.luau",
+        "tests/run_combat_cue_events.luau",
+        "production/integration/enemy-quality/combat_cue_probe.luau",
+        "production/integration/enemy-quality/COMBAT_CUE_REVIEW.md"
+      ],
+      "brief": "Implement reviewed S15 finite/monotonic event admission, target-ready action TTL, cancellable actor-owned warning cue lifecycle. Preserve Play/PlayFor API and authoritative combat choreography. Regional release is not hit confirmation. No AudioConfig ID fabrication or uploads; unbound sound means silent dispatch evidence only. Coordinate HUD owner; no EnemyAnimator/SkillEffects redesign."
+    },
+    {
+      "environment": "local",
+      "dependsOn": [
+        "audit",
+        "registry-reconciliation"
+      ],
+      "checks": [
+        "source-contract",
+        "regression",
+        "independent-review"
+      ],
+      "id": "controller-registry",
+      "skill": "guildborne-director",
+      "title": "Controller registry and evidence administration",
+      "writeScopes": [
+        "production/plan.json",
+        "production/studio",
+        "production/design/integration",
+        "production/integration/quality-slice",
+        ".codex/agents",
+        ".claude/agents"
+      ],
+      "brief": "Single controller only. Reconcile task scopes and generated role adapters with actual modules, preserve raw evidence and current full goal. Plan changes require all old writers stopped/released and one new shared ledger with fresh reviewed prerequisite evidence. Never reset active ledger or infer Studio/device acceptance. No runtime changes."
     }
   ],
   "deferredCapabilities": [

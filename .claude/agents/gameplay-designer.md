@@ -46,6 +46,44 @@ Generated output, import, Studio acceptance, hardware and human review are disti
 
 ## Forge tasks (these scopes apply only after a valid task claim)
 
+### class3-proof-domain: Class3 optional earned proof domain
+
+Phase A only. Implement CLASS3_EARNED_PROOF_CONTRACT.md with optional proof schema, pure validation/atomic candidate hooks and injected advancement policy. Preserve all legacy earned classes, absent-policy behavior, Class2 proofs and canonical IDs. No runtime activation, new rewards, persistence service or release changes. Lock interfaces before trial/controller consumers.
+
+Environment: local; skill: guildborne-progression
+
+Write scopes: src/shared/Data/Expansion.luau, src/server/Services/ExpansionService.luau, src/server/Systems/ExpansionSchema.luau, src/server/Systems/Class3Proof.luau, tests/expansion.luau, tests/latest_progression_gates.luau, tests/class3_proof.luau, tests/run_class3_proof.luau, production/progression
+
+Required checks: source-contract, regression, independent-review
+
+Dependencies: audit, registry-reconciliation
+
+Path rule server-authority: Reuse actual services; server owns combat/inventory/currency/allocation/rewards/guild/build/escrow. Preserve fencing/receipts/saves/disabled flags. No production cloud writes or commerce activation.
+
+Path rule shared-contracts: Shared definitions are client-safe. Preserve IDs/earned ancestry and progression separately from cosmetic IDs. Reconcile Novice 10/35/70 and Hall contracts.
+
+Path rule tooling: Use reviewed bounded local commands/tests. Studio/Forge planners do not launch models; paid/model subprocess, MCP mutation and installation require actual authorization/capability.
+
+Path rule production-evidence: Reconcile latest goals/registries/scopes. One shared ledger, claim before writes, immediate lease check and preserved raw receipts. Different reviewer validates evidence; local checks cannot replace hardware/cloud/human gates.
+
+### class3-proof-trials: Class3 trusted existing trial receipts
+
+Dispatch only after Phase A reviewed interface lock. Reuse existing Sela/player and HeroMentor/owned hero actual trials. Preserve story-only compatibility and Class2. Bind actor/path/trial before real combat; session/snapshot fence private receipt; freeze uncertain command identity; no replay reward or guessed ack. Implement existing accepted Class3 contract, no new quests or server rewards.
+
+Environment: local; skill: guildborne-progression
+
+Write scopes: src/server/Systems/BorrowedPathSession.luau, src/server/Systems/HeroMentorTrial.luau, src/server/Services/BorrowedPathFactory.luau, src/server/Services/CrosshavenWorld.luau, src/server/Services/HeroMentorWorld.luau, src/server/Services/HeroMentorReceiptAdapter.luau, src/server/Services/Class3ProofReceiptAdapter.luau, tests/borrowed_mastery.luau, tests/hero_mentor.luau, tests/class3_trial_receipts.luau, tests/run_class3_trial_receipts.luau, production/progression-trials
+
+Required checks: source-contract, regression, independent-review
+
+Dependencies: audit, registry-reconciliation, class3-proof-domain
+
+Path rule server-authority: Reuse actual services; server owns combat/inventory/currency/allocation/rewards/guild/build/escrow. Preserve fencing/receipts/saves/disabled flags. No production cloud writes or commerce activation.
+
+Path rule tooling: Use reviewed bounded local commands/tests. Studio/Forge planners do not launch models; paid/model subprocess, MCP mutation and installation require actual authorization/capability.
+
+Path rule production-evidence: Reconcile latest goals/registries/scopes. One shared ledger, claim before writes, immediate lease check and preserved raw receipts. Different reviewer validates evidence; local checks cannot replace hardware/cloud/human gates.
+
 ### launch-content: Launch Content
 
 Implement existing release policy plus genuine per-hero/per-path Class2 mentor trial with server-owned combat observations, private transactional receipts, optional backward-compatible proof, native UI and lifecycle cleanup. Preserve legacy earned progress. No cloud activation.

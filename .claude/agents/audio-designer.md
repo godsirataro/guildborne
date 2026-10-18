@@ -49,6 +49,26 @@ Path rule asset-lifecycle: Keep modular owned source/export hashes, manifests, f
 
 Path rule production-evidence: Reconcile latest goals/registries/scopes. One shared ledger, claim before writes, immediate lease check and preserved raw receipts. Different reviewer validates evidence; local checks cannot replace hardware/cloud/human gates.
 
+### combat-cue-lifecycle: Authoritative client cue admission and cancellation
+
+Implement reviewed S15 finite/monotonic event admission, target-ready action TTL, cancellable actor-owned warning cue lifecycle. Preserve Play/PlayFor API and authoritative combat choreography. Regional release is not hit confirmation. No AudioConfig ID fabrication or uploads; unbound sound means silent dispatch evidence only. Coordinate HUD owner; no EnemyAnimator/SkillEffects redesign.
+
+Environment: local; skill: guildborne-audio
+
+Write scopes: src/client/Controllers/CombatController.luau, src/client/Controllers/AudioController.luau, src/shared/Presentation/CombatCueEvents.luau, tests/combat_cue_events.luau, tests/run_combat_cue_events.luau, production/integration/enemy-quality/combat_cue_probe.luau, production/integration/enemy-quality/COMBAT_CUE_REVIEW.md
+
+Required checks: source-contract, regression, independent-review
+
+Dependencies: audit, registry-reconciliation
+
+Path rule native-client: Native Roblox UI/presentation only. Send intent, never damage/value/rewards. Coordinate actual UI/Controller modules, EN/TH states and cleanup.
+
+Path rule shared-contracts: Shared definitions are client-safe. Preserve IDs/earned ancestry and progression separately from cosmetic IDs. Reconcile Novice 10/35/70 and Hall contracts.
+
+Path rule tooling: Use reviewed bounded local commands/tests. Studio/Forge planners do not launch models; paid/model subprocess, MCP mutation and installation require actual authorization/capability.
+
+Path rule production-evidence: Reconcile latest goals/registries/scopes. One shared ledger, claim before writes, immediate lease check and preserved raw receipts. Different reviewer validates evidence; local checks cannot replace hardware/cloud/human gates.
+
 ## Evidence gates
 
 audio-validation (audio): Record owned/licensed masters, required provider authorization, cue IDs and actual sync/mix/listening. Missing provider or files leaves pending.

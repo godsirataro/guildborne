@@ -100,6 +100,42 @@ Dependencies: none
 
 Path rule production-evidence: Reconcile latest goals/registries/scopes. One shared ledger, claim before writes, immediate lease check and preserved raw receipts. Different reviewer validates evidence; local checks cannot replace hardware/cloud/human gates.
 
+### class3-proof-integration: Class3 private transaction integration
+
+Controller Phase C after reviewed A/B. Compose private proof and optional campaign objective atomically through existing execute/save pipeline. Public clients submit bounded start/cancel intent only. Preserve launch restrictions and legacy/profile/economy fencing. Enable policy only when producers and UI integrated; no default Runtime/ReleaseContent changes. Native earned evidence separate.
+
+Environment: local; skill: guildborne-director
+
+Write scopes: src/server/Services/PlayerDataService.luau, src/server/Services/CampaignService.luau, src/server/ServerBootstrap.server.luau, src/shared/Network/Protocol.luau, tests/run.luau, tests/class3_transaction_integration.luau, tests/run_class3_transaction_integration.luau, production/integration/class3-proof
+
+Required checks: source-contract, regression, independent-review
+
+Dependencies: audit, registry-reconciliation, class3-proof-domain, class3-proof-trials, class3-proof-ui
+
+Path rule server-authority: Reuse actual services; server owns combat/inventory/currency/allocation/rewards/guild/build/escrow. Preserve fencing/receipts/saves/disabled flags. No production cloud writes or commerce activation.
+
+Path rule shared-contracts: Shared definitions are client-safe. Preserve IDs/earned ancestry and progression separately from cosmetic IDs. Reconcile Novice 10/35/70 and Hall contracts.
+
+Path rule tooling: Use reviewed bounded local commands/tests. Studio/Forge planners do not launch models; paid/model subprocess, MCP mutation and installation require actual authorization/capability.
+
+Path rule production-evidence: Reconcile latest goals/registries/scopes. One shared ledger, claim before writes, immediate lease check and preserved raw receipts. Different reviewer validates evidence; local checks cannot replace hardware/cloud/human gates.
+
+### controller-registry: Controller registry and evidence administration
+
+Single controller only. Reconcile task scopes and generated role adapters with actual modules, preserve raw evidence and current full goal. Plan changes require all old writers stopped/released and one new shared ledger with fresh reviewed prerequisite evidence. Never reset active ledger or infer Studio/device acceptance. No runtime changes.
+
+Environment: local; skill: guildborne-director
+
+Write scopes: production/plan.json, production/studio, production/design/integration, production/integration/quality-slice, .codex/agents, .claude/agents
+
+Required checks: source-contract, regression, independent-review
+
+Dependencies: audit, registry-reconciliation
+
+Path rule production-evidence: Reconcile latest goals/registries/scopes. One shared ledger, claim before writes, immediate lease check and preserved raw receipts. Different reviewer validates evidence; local checks cannot replace hardware/cloud/human gates.
+
+Path rule agent-instructions: Generate Codex agents from canonical Studio spec/existing skills with inherited model/permissions, no arbitrary hooks. Use actual authorized host delegation or sequential work; planners do not start workers.
+
 ### ecosystem-adoption: Adapt AI ecosystem to existing GL2 production
 
 Map supplied NEONSHIFT ecosystem concepts to existing Guildborne GL2/RPG roles and pipelines. Verify actual tool access and optional host skills, wire CI contract checks, preserve game source and release gates.
