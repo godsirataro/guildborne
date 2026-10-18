@@ -3,6 +3,7 @@
 local Players=game:GetService("Players");local Run=game:GetService("RunService")
 local Http=game:GetService("HttpService")
 local Locale=require(game.ReplicatedStorage.Shared.Config.Localization)
+local NpcMotion=require(game.ReplicatedStorage.Shared.Presentation.BorinWorkMotion)
 local Art=require(script.Parent.NoviceRoadArt)
 local Arena=require(script.Parent.NoviceTrialArena)
 local LessonFactory=require(script.Parent.NoviceLessonFactory)
@@ -61,6 +62,8 @@ return function(deps:any)
    game:GetService("CollectionService"):AddTag(actor,"GuildborneFriendlyNPC");return actor
   end
   local courierActor=cast("courier",V(courier.Position.X,origin.Y,courier.Position.Z))
+  -- Reuse the existing letter gesture without adopting the marshal's identity.
+  courierActor:SetAttribute("WorkMotionIdentity","marshal_elian")
   local prompt=Instance.new("ProximityPrompt");prompt.Name="CourierInteraction";prompt.KeyboardKeyCode=Enum.KeyCode.E;prompt.MaxActivationDistance=12;prompt.RequiresLineOfSight=false;prompt.Parent=courier
   local board=Instance.new("BillboardGui");board.Size=UDim2.fromOffset(220,58);board.StudsOffset=V(0,5,0);board.MaxDistance=100;board.AlwaysOnTop=true;board.Parent=courier
   local label=Instance.new("TextLabel");label.Size=UDim2.fromScale(1,1);label.TextWrapped=true;label.Font=Enum.Font.GothamMedium;label.TextSize=15;label.BackgroundColor3=Color3.fromRGB(15,21,35);label.TextColor3=Color3.fromRGB(245,236,216);label.Parent=board
@@ -117,9 +120,18 @@ return function(deps:any)
   action("clear_abandoned_hall","HallForecourt","Lesson");action("register_guild","HallInterior","Interact")
   table.insert(e.connections,prompt.Triggered:Connect(function(who)
    local r=root(player);local s=profile(player)
-   if who~=player or not r or not s or (r.Position-courier.Position).Magnitude>12 then return end
+   if who~=player or not r or not s or s.state~="Active"or e.pending or (r.Position-courier.Position).Magnitude>12 then return end
    local id=nextObjective(s.record.data)
-   if id=="meet_courier"or id=="help_courier"then courierActor:SetAttribute("GreetingAt",workspace:GetServerTimeNow());observe(player,e,id)end
+   if id=="meet_courier"or id=="help_courier"then
+    observe(player,e,id)
+    if e.pending then
+     -- Presentation follows a queued observation, not a reward/commit assertion.
+     local now=workspace:GetServerTimeNow()
+     courierActor:SetAttribute("GreetingAt",now)
+     courierActor:SetAttribute("NpcInteractUntil",now+NpcMotion.InteractSeconds)
+     courierActor:SetAttribute("NpcInteractor",player.UserId)
+    end
+   end
   end))
   local function spawn(character:Model)
    task.delay(1,function()
