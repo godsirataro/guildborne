@@ -50,7 +50,7 @@ return function(test:any,eq:any)
   function player:GetAttribute(key:string)return self.attributes[key]end
   local town=model();local forest=model();local geometry=model();local plotModel=model()
   local plots={[player]={model=plotModel,origin=v(0,0,0),spawn="home"}}
-  local config:any={Destinations={City={X=0,Y=5,Z=0,FallbackX=0,FallbackZ=1},Greenwood={X=100,Y=5,Z=0,FallbackX=100,FallbackZ=1},Guild={X=-100,Y=5,Z=0,FallbackX=-100,FallbackZ=1}},Regions={},GuildPortalStops={},contains=function(x:number,z:number)return x>=-10 and x<=10 and math.abs(z)<=10 end,region=function(x:number,z:number)return if x>=90 and x<=110 and math.abs(z)<=10 then "Greenwood" else nil end,
+  local config:any={Destinations={City={X=0,Y=5,Z=0,FallbackX=0,FallbackZ=1},Greenwood={X=100,Y=5,Z=0,FallbackX=100,FallbackZ=1},Guild={X=-100,Y=5,Z=0,FallbackX=-100,FallbackZ=1}},Regions={Greenwood={X=100,Z=0,HalfWidth=10,Back=10,Front=10}},GuildPortalStops={},contains=function(x:number,z:number)return x>=-10 and x<=10 and math.abs(z)<=10 end,region=function(x:number,z:number)return if x>=90 and x<=110 and math.abs(z)<=10 then "Greenwood" else nil end,
    walkingContains=function(volume:any,position:any)return City.walkingContains(volume,position)end}
   local step:any;local now=0
   local world:any={}
@@ -77,7 +77,7 @@ return function(test:any,eq:any)
   local service=Service(city,plots,heroes,localTravel,platform,if disabled then nil else walking)
   f.service=service;f.player=player;f.root=root;f.character=character;f.humanoid=humanoid;f.plotModel=plotModel;f.route=route;f.v=v;f.cf=cf;f.plots=plots;f.town=town;f.forest=forest;f.box=box
   function f.resetCounters()f.moves=0;f.velocities=0;f.heroMoves=0 end
-  f.config=config
+  f.config=config;f.city=city;f.walking=walking;f.civic=platform.Civic
   function f.step(x:number?,y:number?,z:number?)if x then root.Position=v(x,y or 5,z or 0)end;now+=.5;step(.5)end
   function f.follow():boolean return service.CanFollowWalking(player,root.Position) end
   function f.source(zone:string)assert(service.Travel(player,zone));f.step();f.resetCounters()end
@@ -305,6 +305,7 @@ return function(test:any,eq:any)
    local f=adapter()
    f.config.contains=function(x:number,z:number)return math.abs(x)<=10 and z>=-680 and z<=-620 end
    f.config.region=function(x:number,z:number)return if math.abs(x)<=10 and z>=1480 and z<=1528 then "Greenwood"else nil end
+   f.config.Regions.Greenwood={X=0,Z=1504,HalfWidth=10,Back=24,Front=24}
    f.config.Destinations.City={X=0,Y=5,Z=-650,FallbackX=0,FallbackZ=-649}
    local function box(x:number,z:number,w:number,d:number):any return {cframe=f.cf(x,5,z),size=f.v(w,8,d)}end
    f.route.entries={City=box(0,-650,20,40),Greenwood=box(0,1510,20,40)}
@@ -328,6 +329,119 @@ return function(test:any,eq:any)
    end
    eq(f.character:GetAttribute("WalkingRouteContext"),"city_greenwood_west|Greenwood|City")
    eq(f.follow(),true);eq(f.moves,0);eq(f.velocities,0);eq(f.heroMoves,0)
+  end
+ end)
+ local function secondRoute(f:any):any
+  f.config.Regions.Greenwood.HalfWidth=30
+  f.config.Regions.Ironveil={X=200,Z=0,HalfWidth=10,Back=10,Front=10}
+  f.config.Destinations.Ironveil={X=200,Y=5,Z=0,FallbackX=200,FallbackZ=1}
+  f.config.region=function(x:number,z:number):string?
+   if math.abs(z)>10 then return nil end
+   return if x>=70 and x<=130 then "Greenwood"else if x>=190 and x<=210 then "Ironveil"else nil
+  end
+  f.city.regions.Ironveil={model=table.clone(f.forest),spawn="ironveil"}
+  local route={id="greenwood_ironveil_south",fromZone="Greenwood",toZone="Ironveil",geometry=table.clone(f.route.geometry),
+   volumes={f.box(155,100)},entries={Greenwood=f.box(122,10),Ironveil=f.box(200,10)},
+   safeRecovery={Greenwood=f.cf(120,5,0),Ironveil=f.cf(200,5,0)},isReady=function()return true end}
+  table.insert(f.walking.Routes,route);return route
+ end
+ test("two supplied reviewed edges chain through shared zone without stationary readmission",function()
+  local f=adapter();secondRoute(f);f.step(0)
+  for _,x in ipairs({25,50,75,100})do f.step(x)end
+  for _=1,4 do f.step(100);eq(f.character:GetAttribute("WalkingRouteContext"),nil);eq(f.player.attributes.CurrentZone,"Greenwood")end
+  f.step(108);f.step(122);eq(f.character:GetAttribute("WalkingRouteContext"),"greenwood_ironveil_south|Greenwood|Ironveil")
+  for _,x in ipairs({140,165,190,200})do f.step(x)end
+  eq(f.player.attributes.CurrentZone,"Ironveil");eq(f.player.RespawnLocation,"ironveil")
+  f.step(198);eq(f.character:GetAttribute("WalkingRouteContext"),"greenwood_ironveil_south|Ironveil|Greenwood")
+  for _,x in ipairs({175,150,125})do f.step(x)end
+  eq(f.player.attributes.CurrentZone,"Greenwood");eq(f.player.RespawnLocation,"forest")
+  f.step(108);f.step(100);eq(f.character:GetAttribute("WalkingRouteContext"),"city_greenwood_west|Greenwood|City")
+  for _,x in ipairs({75,50,25,0})do f.step(x)end
+  eq(f.player.attributes.CurrentZone,"City");eq(f.moves,0);eq(f.heroMoves,0);eq(f.velocities,0)
+ end)
+ test("known second edge still requires descriptor and controller eligibility",function()
+  local f=adapter();secondRoute(f)
+  f.walking.Gate=function(_p:any,_s:any,_from:string,to:string)return if to=="Ironveil"then "InvalidZone"else nil end
+  f.step(0);for _,x in ipairs({25,50,75,100,108,122})do f.step(x)end
+  eq(f.player.attributes.CurrentZone,"Greenwood");eq(f.player.RespawnLocation,"forest");eq(f.follow(),false)
+  eq(f.root.Position.X,120);eq(f.character:GetAttribute("WalkingRouteContext"),nil)
+  local g=adapter();secondRoute(g);table.remove(g.walking.Routes,2);g.source("Greenwood");g.step(108);g.step(122)
+  eq(g.follow(),false);eq(g.player.attributes.CurrentZone,"Greenwood");eq(g.moves,0)
+ end)
+ test("unknown duplicate and mismatched route registries fail closed independent of order",function()
+  for _,mode in ipairs({"unknown","duplicate","reverseDuplicate","wrongPair","sparse"})do
+   for _,reverse in ipairs({false,true})do
+    local f=adapter();local second=secondRoute(f)
+    if mode=="unknown"then second.id="unknown"
+    elseif mode=="duplicate"then f.walking.Routes[2]=f.route
+    elseif mode=="reverseDuplicate"then second.id=f.route.id;second.fromZone="Greenwood";second.toZone="City"
+    elseif mode=="wrongPair"then second.toZone="Guild"
+    else f.walking.Routes[4]=second end
+    if reverse then f.walking.Routes[1],f.walking.Routes[2]=f.walking.Routes[2],f.walking.Routes[1]end
+    f.step(0);eq(f.follow(),false);eq(f.character:GetAttribute("WalkingRouteContext"),nil);eq(f.moves,0)
+   end
+  end
+ end)
+ test("overlapping shared-zone entries reject both orders including just-arrived stationary actor",function()
+  for _,reverse in ipairs({false,true})do
+   local f=adapter();local second=secondRoute(f);second.entries.Greenwood=f.box(100,10)
+   if reverse then f.walking.Routes={second,f.route}end
+   f.step(0);for _,x in ipairs({25,50,75,100})do f.step(x)end
+   for _,x in ipairs({100,100,102,98})do
+    f.step(x);eq(f.follow(),false);eq(f.character:GetAttribute("WalkingRouteContext"),nil)
+    eq(f.player.attributes.CurrentZone,"Greenwood");eq(f.player.RespawnLocation,"forest")
+   end
+   eq(f.moves,0);eq(f.heroMoves,0)
+  end
+ end)
+ test("walking surface resolver supports canonical civic models and excludes private pockets",function()
+  local civic=require("../src/shared/Config/CivicCities");local rules:any=require("../src/server/Systems/TravelRules")(City)
+  local city:any={town={},spawn="city",regions={Ironveil={model={},spawn="iron"}},civicRegions={}}
+  eq(rules.walkingZone(city,civic,"City").model,city.town)
+  eq(rules.walkingZone(city,civic,"Ironveil").spawn,"iron")
+  for _,id in ipairs(civic.Order)do
+   local d=(civic.Definitions :: any)[id];local region={model={},spawn=id};city.civicRegions[id]=region
+   eq(rules.walkingZone(city,civic,id),region);eq(rules.walkingSurface(civic,id,{X=d.X,Y=5,Z=d.Z}),true)
+   eq(rules.walkingSurface(civic,id,{X=d.X,Y=100,Z=d.Z}),false)
+   city.civicRegions[id]=nil;eq(rules.walkingZone(city,civic,id),nil)
+  end
+  eq(rules.walkingZone(city,civic,"Guild"),nil);eq(rules.walkingZone(city,civic,"Unknown"),nil)
+  eq(rules.walkingSurface(civic,"Ironveil",{X=500,Y=5,Z=1400}),true)
+  eq(rules.walkingSurface(civic,"Ironveil",{X=500,Y=100,Z=1400}),false)
+  eq(rules.walkingSurface(civic,"Ashen",{X=2000,Y=5,Z=1400}),false) -- Private annex excluded even at surface height.
+  eq(rules.walkingContext("city_crownford","City","Crownford"),nil) -- Resolver does not approve civic routes.
+ end)
+ test("elevated mine cannot admit or follow even with injected overlapping route volumes",function()
+  local f=adapter();local second=secondRoute(f);f.source("Ironveil")
+  second.entries.Ironveil={cframe=f.cf(200,100,0),size=f.v(10,20,12)}
+  second.volumes={{cframe=f.cf(155,100,0),size=f.v(110,20,12)}}
+  f.step(200,100);f.step(200,100);eq(f.follow(),false)
+  eq(f.character:GetAttribute("WalkingRouteContext"),nil);eq(f.player.attributes.CurrentZone,"Ironveil")
+  eq(f.moves,0);eq(f.heroMoves,0)
+ end)
+ test("removing or duplicating an admitted descriptor revokes following and recovers source",function()
+  for _,duplicate in ipairs({false,true})do
+   local f=adapter();secondRoute(f);f.source("Greenwood");f.step(108);f.step(122);f.step(140);eq(f.follow(),true)
+   if duplicate then table.insert(f.walking.Routes,f.walking.Routes[2])else table.remove(f.walking.Routes,2)end
+   eq(f.follow(),false);f.step(145)
+   eq(f.player.attributes.CurrentZone,"Greenwood");eq(f.root.Position.X,120);eq(f.character:GetAttribute("WalkingRouteContext"),nil)
+   eq(f.moves,1);eq(f.heroMoves,1)
+  end
+ end)
+ test("jump into ambiguous entries cannot seed subsequent unique entry admission",function()
+  for _,arrived in ipairs({false,true})do
+   for _,reverse in ipairs({false,true})do
+    local f=adapter();local second=secondRoute(f)
+    if arrived then f.step(0);for _,x in ipairs({25,50,75,100})do f.step(x)end else f.source("Greenwood")end
+    f.config.Regions.Greenwood.HalfWidth=100
+    f.route.entries.Greenwood=f.box(160,20);f.route.volumes={f.box(85,170)}
+    second.entries.Greenwood=f.box(160,10)
+    if reverse then f.walking.Routes={second,f.route}end
+    f.step(160);eq(f.follow(),false) -- 60-stud jump into ambiguity.
+    f.step(168);eq(f.follow(),false) -- Only first entry now; prior jump must not count.
+    eq(f.character:GetAttribute("WalkingRouteContext"),nil);eq(f.player.attributes.CurrentZone,"Greenwood")
+    eq(f.moves,0);eq(f.heroMoves,0)
+   end
   end
  end)
 end

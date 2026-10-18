@@ -1,10 +1,39 @@
 --!strict
 return function(config: any)
 	local R={}
+ -- Identity readiness only. No geometry, activation or eligibility is granted here.
+ local walkingPairs:{[string]:{string}}={city_greenwood_west={"City","Greenwood"},greenwood_ironveil_south={"Greenwood","Ironveil"}}
  function R.walkingContext(routeId:any,from:any,to:any):string?
-  if routeId~="city_greenwood_west" then return nil end
-  if not ((from=="City" and to=="Greenwood") or (from=="Greenwood" and to=="City")) then return nil end
+  local pair=if type(routeId)=="string" then walkingPairs[routeId] else nil
+  if not pair or not ((from==pair[1] and to==pair[2])or(from==pair[2] and to==pair[1]))then return nil end
   return routeId.."|"..from.."|"..to
+ end
+ function R.walkingRoutesValid(routes:any):boolean
+  if type(routes)~="table" or #routes>16 then return false end
+  local count=0;local ids={};local pairsSeen={}
+  for key,route in pairs(routes)do
+   if type(key)~="number" or key%1~=0 or key<1 or key>#routes or type(route)~="table"
+    or not R.walkingContext(route.id,route.fromZone,route.toZone)then return false end
+   local pair=if route.fromZone<route.toZone then route.fromZone.."|"..route.toZone else route.toZone.."|"..route.fromZone
+   if ids[route.id]or pairsSeen[pair]then return false end
+   ids[route.id]=true;pairsSeen[pair]=true;count+=1
+  end
+  return count==#routes
+ end
+ function R.walkingZone(city:any,civic:any,zone:string):any
+  if not config.Destinations[zone]then return nil end
+  if zone=="City"then return {model=city.town,spawn=city.spawn}end
+  if config.Regions[zone]then return city.regions and city.regions[zone]end
+  if civic.Definitions[zone]then return city.civicRegions and city.civicRegions[zone]end
+  return nil -- Guild plots and private campaign pockets are never surface zones.
+ end
+ function R.walkingSurface(civic:any,zone:string,position:Vector3):boolean
+  local x,y,z=position.X,position.Y,position.Z
+  if x~=x or y~=y or z~=z or math.abs(x)==math.huge or math.abs(z)==math.huge or y<0 or y>35 then return false end
+  if zone=="City"then return config.contains(x,z)end
+  local d=config.Regions[zone]
+  if d then return x>=d.X-d.HalfWidth and x<=d.X+d.HalfWidth and z>=d.Z-d.Back and z<=d.Z+d.Front end
+  return civic.Definitions[zone]~=nil and civic.contains(zone,x,z)
  end
  -- Trusted integration hooks still fail closed on exceptions or accidental yields.
  function R.walkingCall(callback:any,...:any):(boolean,any)

@@ -1,5 +1,53 @@
 # City–Greenwood continuous travel source candidate
 
+## Multi-route source readiness (base 89d993f)
+
+This follow-up changes only existing TravelRules/TravelService and focused tests.
+The controller still supplies only City–Greenwood and its gate still rejects
+other pairs. No new physical connection, runtime edge or release flag is enabled.
+
+TravelRules privately registers exactly `city_greenwood_west` (City/Greenwood)
+and the proposed `greenwood_ironveil_south` (Greenwood/Ironveil). Recognizing an
+identity does not create a route: a server-supplied reviewed descriptor, live
+geometry, valid actor and controller gate remain necessary. Both directions use
+the same ID. Unknown/mismatched pairs, duplicate IDs/unordered pairs and sparse
+or non-array collections fail closed; the descriptor list is capped at 16. A
+removed descriptor immediately loses follower eligibility and recovers on the
+next sampler tick. Multiple eligible entries/continuations reject admission
+before any route gate or selection, regardless of descriptor order. Author
+separated entry areas; overlap is not a routing priority mechanism. Ambiguity
+also discards the admission sample and arrival latch, so an unchecked jump
+through overlapping entries cannot seed admission at the next unique entry.
+
+Walking surface lookup reuses City/Regions/CivicCities and the existing
+city.regions/city.civicRegions models and spawns. Civic resolution alone approves
+no civic route ID. Only regional surface rectangles are included, never private
+annexes; walking endpoint/segment positions are bounded to Y=0..35. This surface
+ceiling excludes existing private mine/court slots beginning at Y=100; future
+high-elevation public routes require an explicitly reviewed bounds change.
+Ordinary portal/private activity behavior and Config.region are unchanged.
+
+Local synthetic tests cover two-edge round trips with no pivot/reset, stationary
+arrival suppression, denied second gate, absent geometry descriptor, list and
+overlap rejection in both orders, civic model/spawn lookup, elevated mine denial,
+route revocation and all previous straight/hairpin/lifecycle regressions.
+These are source readiness tests, not surveyed Greenwood–Ironveil connectivity.
+
+### Proposed S14 consumption contract (not implemented here)
+
+Keep the atomic `routeId|fromZone|toZone` display grammar and existing exact
+City–Greenwood values. Any future client whitelist must match the explicit
+approved ID/pair set, find matching server route metadata/navigation nodes and
+fail closed on unknown IDs, wrong pairs, duplicate route models or incomplete
+streamed endpoints. Display follows the admitted attribute, not nearest geometry.
+TravelRules remains server-only; do not replicate or client-require this module.
+Controller/S14 must separately assign the client registry/labels and wiring before
+any additional route is activated. The current UI only knows City–Greenwood.
+
+Controller reported PASS_NATIVE_FIXTURE for the earlier local-direction fix
+integrated as 8b38847: bounded synthetic five-hero continuity only. That result
+does not validate this follow-up or any new edge; prior failed evidence remains.
+
 Base: fa9ea00. Shared v6 audit/registry gates accepted by the controller before
 implementation. This is one optional walking seam, not completion of the connected
 Lv1–100 world or Studio acceptance. No release flags, profiles or rewards changed.
@@ -23,7 +71,7 @@ WorldService/Bootstrap wiring and must call
 - Optional `Notify(player,code)` is rate-limited to once per two seconds per player.
   All supplied callbacks run synchronously through a fail-closed no-yield wrapper.
 - Descriptor fields are `id/fromZone/toZone/geometry/volumes/entries/safeRecovery/
-  isReady`. Only City↔Greenwood is supported in this increment. Geometry lives under
+  isReady`. Only City↔Greenwood geometry is integrated. Geometry lives under
   GuildborneWorld and its readiness is controller-validated. OBBs are
   `{cframe=CFrame,size=Vector3}`, with finite positive dimensions, X/Z ≤4096 and
   Y ≤128; volumes are a bounded list of 1–128 segments. Entries are keyed City and
@@ -39,8 +87,9 @@ WorldService/Bootstrap wiring and must call
 
 Admitted transit publishes ONE presentation-only character attribute:
 `WalkingRouteContext="city_greenwood_west|City|Greenwood"`, or
-`"city_greenwood_west|Greenwood|City"` for the reverse direction. Only this known
-route ID and these direction pairs are accepted; nil means no admitted transit.
+`"city_greenwood_west|Greenwood|City"` for the reverse direction. Exact registered
+route ID/direction pairs are required; nil means no admitted transit. The
+additional source-ready pair above remains inactive without integration.
 The server never reads the attribute to authorize movement, gates or following.
 It is set once after admission and cleared on commit, return to source, recovery
 start (even if recovery is blocked), death/missing character, session/character
