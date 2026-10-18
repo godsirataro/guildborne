@@ -1,7 +1,7 @@
 --!strict
 -- Generated original static art templates; no live AI, rewards or encounter bindings.
 local V=Vector3.new
-type Piece={name:string,size:Vector3,position:Vector3,rotation:Vector3,color:Color3,bone:string}
+type Piece={name:string,size:Vector3,position:Vector3,rotation:Vector3,color:Color3,bone:string,shape:string?,material:Enum.Material?}
 type Asset={id:string,region:string,role:string,rig:string,parts:{Piece}}
 local definitions: {Asset}={
 	{id="greenwood_scout",region="Greenwood",role="Melee",rig="Humanoid",parts={
@@ -363,10 +363,109 @@ local definitions: {Asset}={
 		{name="SplitTabard",size=V(0.9,2.4,0.3),position=V(0.525,2.325,-0.75),rotation=V(0,0,10),color=Color3.fromRGB(112,87,159),bone="LowerTorso"},
 	}},
 }
+-- Original Ironveil native armor, selected explicitly; other definitions stay intact.
+local function quarryParts(asset:Asset):{Piece}
+    local guardian=asset.id=="quarry_guardian"
+    local scale=if guardian then 1.6 else .95
+    local byName:{[string]:Piece}={}
+    for _,part in ipairs(asset.parts) do byName[part.name]=part end
+    local parts:{Piece}={}
+    -- Keep these first and exact: EnemyArticulation derives its five sockets here.
+    for _,name in ipairs({"Head","LeftUpperArm","RightUpperArm","LeftUpperLeg","RightUpperLeg"}) do
+        table.insert(parts,table.clone(byName[name]))
+    end
+    local stone=Color3.fromRGB(99,106,108)
+    local iron=Color3.fromRGB(60,69,76)
+    local edge=Color3.fromRGB(143,152,151)
+    local rust=Color3.fromRGB(137,91,55)
+    local cloth=Color3.fromRGB(71,63,48)
+    local amber=Color3.fromRGB(209,150,60)
+    for _,name in ipairs({"Waist","Chest","Belt","LeftEye","RightEye","LeftLowerArm","RightLowerArm","LeftHand","RightHand","LeftLowerLeg","RightLowerLeg","LeftBoot","RightBoot"}) do
+        local p=table.clone(byName[name])
+        p.material=if guardian then Enum.Material.Slate else Enum.Material.Fabric
+        p.color=if name:find("Eye") then amber elseif guardian then stone else cloth
+        table.insert(parts,p)
+    end
+    local function add(name:string,bone:string,size:Vector3,pos:Vector3,color:Color3,shape:string?,rotation:Vector3?,material:Enum.Material?)
+        table.insert(parts,{name=name,bone=bone,size=size*scale,position=pos*scale,color=color,
+            rotation=rotation or V(0,0,0),shape=shape,material=material or Enum.Material.Metal})
+    end
+    local surface=if guardian then stone else iron
+    local surfaceMaterial=if guardian then Enum.Material.Slate else Enum.Material.Metal
+    add("BreastSlab","UpperTorso",V(1.55,.83,.25),V(0,3.24,-.59),surface,"Wedge",V(0,180,0),surfaceMaterial)
+    add("AbdomenPlate","UpperTorso",V(1.14,.40,.20),V(0,2.65,-.55),iron)
+    add("BackHarness","UpperTorso",V(1.36,.94,.17),V(0,3.18,.61),iron)
+    add("WaistClasp","LowerTorso",V(.42,.30,.12),V(0,2.40,-.64),rust)
+    add("Apron","LowerTorso",V(.78,.94,.13),V(0,1.85,-.59),if guardian then iron else cloth,nil,nil,if guardian then Enum.Material.Metal else Enum.Material.Fabric)
+    add("ApronHem","LowerTorso",V(.82,.13,.17),V(0,1.35,-.60),rust)
+    add("Collar","UpperTorso",V(1.35,.20,.95),V(0,3.78,0),iron)
+    for _,side in ipairs({-1,1}) do
+        local prefix=if side<0 then "Left" else "Right"
+        local arm=byName[prefix.."UpperArm"].position/scale
+        local leg=byName[prefix.."UpperLeg"].position/scale
+        add("ShoulderSlab",prefix.."LowerArm",V(if guardian then 1.22 else .86,.36,1.10),arm+V(0,.38,0),surface,"Wedge",V(0,if side<0 then 180 else 0,side*12),surfaceMaterial)
+        -- Bind shoulder dressing to the arm group without introducing another
+        -- UpperArm candidate that could change pivot discovery.
+        add("ShoulderStrap",prefix.."LowerArm",V(.16,.44,1.16),arm+V(side*.25,.37,0),rust)
+        add("ElbowRivet",prefix.."LowerArm",V(.13,.26,.26),arm+V(side*.33,-.55,0),edge,"Cylinder")
+        add("ForearmPlate",prefix.."LowerArm",V(.58,.56,.20),arm+V(0,-.77,-.43),surface,"Wedge",V(0,180,0),surfaceMaterial)
+        add("KnucklePlate",prefix.."Hand",V(.62,.18,.19),byName[prefix.."Hand"].position/scale+V(0,.05,-.44),iron)
+        add("KneeShield",prefix.."LowerLeg",V(.67,.40,.20),leg+V(0,-.50,-.40),edge,"Wedge",V(0,180,0))
+        add("ShinRidge",prefix.."LowerLeg",V(.17,.64,.18),leg+V(0,-1.07,-.43),rust)
+        add("ToePlate",prefix.."Foot",V(.70,.20,.42),byName[prefix.."Boot"].position/scale+V(0,.04,-.41),iron,"Wedge",V(0,180,0))
+        add("ChestRivet","UpperTorso",V(.16,.16,.10),V(side*.57,3.41,-.76),rust,"Ball")
+        add("HipToolLoop","LowerTorso",V(.20,.36,.28),V(side*.72,2.23,0),iron)
+    end
+    local head=byName.Head.position/scale
+    add("BrowShelf","Head",V(1.48,.19,.30),head+V(0,.31,-.55),iron)
+    add("HeadCap","Head",V(1.43,.30,1.23),head+V(0,.65,0),surface,"Wedge",nil,surfaceMaterial)
+    add("JawPlate","Head",V(.86,.28,.25),head+V(0,-.45,-.54),iron)
+    for _,side in ipairs({-1,1}) do
+        add("TemplePlate","Head",V(.22,.68,.76),head+V(side*.66,0,.06),surface,"Wedge",V(0,side*15,0),surfaceMaterial)
+        add("VisorRim","Head",V(.38,.25,.12),head+V(side*.32,.10,-.63),rust)
+    end
+    local hand=byName.RightHand.position/scale
+    local weapon=hand+V(.04,0,-.18)
+    add(if guardian then "HammerHaft" else "PickHaft","RightHand",V(2.45,.14,.14),weapon+V(0,.14,0),rust,"Cylinder",V(0,0,90),Enum.Material.Wood)
+    add("WeaponGrip","RightHand",V(.48,.23,.23),weapon,cloth,"Cylinder",V(0,0,90),Enum.Material.Fabric)
+    add("WeaponPommel","RightHand",V(.26,.20,.26),weapon+V(0,-1.12,0),iron)
+    add("WeaponSocket","RightHand",V(.32,.35,.30),weapon+V(0,1.25,0),rust)
+    if guardian then
+        add("HammerHead","RightHand",V(1.70,.70,.75),weapon+V(0,1.39,0),stone,nil,nil,Enum.Material.Slate)
+        for _,side in ipairs({-1,1}) do
+            add("HammerFace","RightHand",V(.24,.86,.91),weapon+V(side*.92,1.39,0),edge)
+            add("HammerBevel","RightHand",V(.26,.22,.91),weapon+V(side*.92,1.93,0),iron,"Wedge")
+            add("HammerClamp","RightHand",V(.16,.77,.82),weapon+V(side*.49,1.39,0),rust)
+        end
+        add("CoreHousing","UpperTorso",V(.70,.78,.16),V(0,3.22,-.80),iron)
+        add("CoreSlit","UpperTorso",V(.10,.48,.035),V(0,3.22,-.90),amber,nil,nil,Enum.Material.Neon)
+    else
+        add("PickCrossbar","RightHand",V(1.18,.20,.26),weapon+V(0,1.39,0),iron)
+        add("PickPoint","RightHand",V(.65,.27,.22),weapon+V(.80,1.34,0),edge,"Wedge",V(0,0,-90))
+        add("PickAdze","RightHand",V(.42,.37,.48),weapon+V(-.72,1.36,0),edge,"Wedge",V(0,0,90))
+        add("HelmetLampHousing","Head",V(.32,.32,.19),head+V(0,.40,-.72),iron)
+        add("HelmetLamp","Head",V(.19,.19,.035),head+V(0,.40,-.83),amber,nil,nil,Enum.Material.Neon)
+        add("SalvagePouch","LowerTorso",V(.46,.54,.33),V(-.85,2.03,.22),cloth,nil,nil,Enum.Material.Fabric)
+        add("SparePlate","UpperTorso",V(.60,.72,.17),V(.37,3.24,.79),rust,nil,V(0,0,18))
+    end
+    assert(#parts<=90,"Quarry art part budget exceeded")
+    return parts
+end
 return function(): Folder
 	local folder=Instance.new("Folder");folder.Name="AdventureEnemyKit"
 	for _,a in ipairs(definitions) do local m=Instance.new("Model");m.Name=a.id;m.WorldPivot=CFrame.identity;m.Parent=folder;m:SetAttribute("TemplateOnly",true);m:SetAttribute("Region",a.region);m:SetAttribute("VisualRole",a.role);m:SetAttribute("RigType",a.rig)
-		for _,v in ipairs(a.parts) do local p=Instance.new("Part");p.Name=v.name;p.Size=v.size;p.CFrame=CFrame.new(v.position)*CFrame.Angles(math.rad(v.rotation.X),math.rad(v.rotation.Y),math.rad(v.rotation.Z));p.Color=v.color;p.Material=Enum.Material.SmoothPlastic;p:SetAttribute("BindBone",v.bone);p.Anchored=true;p.CanCollide=false;p.CanTouch=false;p.CanQuery=false;p.Parent=m end
+		local selected=a.id=="quarry_raider" or a.id=="quarry_guardian"
+		local art=if selected then quarryParts(a) else a.parts
+		if selected then m:SetAttribute("EnemyVisualStyle","IronveilForgedV1");m:SetAttribute("EnemyVisualPartCount",#art) end
+		for _,v in ipairs(art) do
+			local p:BasePart
+			if v.shape=="Wedge" then p=Instance.new("WedgePart") else
+				local part=Instance.new("Part")
+				if v.shape=="Cylinder" then part.Shape=Enum.PartType.Cylinder elseif v.shape=="Ball" then part.Shape=Enum.PartType.Ball end
+				p=part
+			end
+			p.Name=v.name;p.Size=v.size;p.CFrame=CFrame.new(v.position)*CFrame.Angles(math.rad(v.rotation.X),math.rad(v.rotation.Y),math.rad(v.rotation.Z));p.Color=v.color;p.Material=v.material or Enum.Material.SmoothPlastic;p:SetAttribute("BindBone",v.bone);p.Anchored=true;p.CanCollide=false;p.CanTouch=false;p.CanQuery=false;p.Parent=m
+		end
 	end
 	return folder
 end

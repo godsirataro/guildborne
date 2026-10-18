@@ -42,6 +42,34 @@ local function towerPose(role: string,name: string,swing: number,breath: number,
     end
     return CFrame.new(shift)*CFrame.Angles(x,y,z)
 end
+local function ironveilPose(boss: boolean,name: string,swing: number,breath: number,age: number,warning: number?,pattern: string,hitAge: number): CFrame
+    local left=name:find("Left")~=nil;local sign=if left then -1 else 1
+    local charge=if warning then math.sin(math.clamp(warning/.35,0,1)*math.pi/2) else 0
+    local follow=if age>=0 and age<.5 and not warning then (1-age/.5)^2 else 0
+    local fault=pattern=="Fault Line"
+    local x,y,z=0,0,0;local shift=Vector3.zero
+    if name:find("Shoulder") then
+        x=(if left then -.12 else -.22)+swing*(if left then -.3 else .2)
+        z=sign*(if boss then .16 else .09)
+        if boss then
+            if left then x-=.4*charge+.12*follow;z-=.2*charge
+            else
+                x-=(if fault then .95 else 1.85)*charge;x+=.65*follow
+                y=(if fault then -.65 else -.12)*charge+.35*follow;z-=.2*follow
+            end
+        elseif not left then x+=.5*follow;y=.6*follow;z-=.5*follow
+        else x-=.25*follow end
+    elseif name:find("Hip") then
+        x=swing*(if left then 1 else -1)-.10*charge;z=sign*(if boss then .055 else .025)
+    elseif name=="RootJoint" then
+        x=(if boss then .04 else .02)+.14*charge-.16*follow
+        y=(if fault then -.3 else -.08)*charge+.3*follow
+        z=swing*(if boss then .035 else .05)
+        shift=Vector3.new(0,breath-.06*charge,0)
+    elseif name=="Neck" then x=-.06*charge+.08*follow;y=-.1*follow end
+    if hitAge>=0 and hitAge<.18 and (name=="RootJoint" or name=="Neck") then x+=math.sin(hitAge/.18*math.pi)*.1 end
+    return CFrame.new(shift)*CFrame.Angles(x,y,z)
+end
 return function(animationTag: string?)
     local tag=animationTag or "GuildborneAnimatedEnemy"
     local rigs: {[Model]: any}={}
@@ -88,7 +116,10 @@ return function(animationTag: string?)
             local moving=state=="Approach" or state=="ReturnToLeader"
             local role=tostring(model:GetAttribute("VisualRole"))
             local tower=role=="Echo Guard" or role=="Echo Archer" or role=="Spire Warden"
-            r.phase+=math.min(dt,.1)*(if moving then (if tower and role=="Spire Warden" then 6.5 else 9) else 1.7)
+            local encounter=model:GetAttribute("EncounterId")
+            local ironveil=model:GetAttribute("EnemyVisualStyle")=="IronveilForgedV1" and (encounter=="quarry_raider" or encounter=="quarry_guardian")
+            local guardian=ironveil and encounter=="quarry_guardian"
+            r.phase+=math.min(dt,.1)*(if moving then (if guardian then 5.5 elseif ironveil then 8 elseif tower and role=="Spire Warden" then 6.5 else 9) else 1.7)
             local swing=if moving then math.sin(r.phase)*.4 elseif workspace:GetAttribute(Config.ReducedMotionAttribute) then 0 else math.sin(r.phase)*.025
             local actionAt=math.max(number(model,"EnemyActionAt"),number(model,"BossImpactAt"))
             if tower then
@@ -101,6 +132,18 @@ return function(animationTag: string?)
             if type(telegraph)=="number" and telegraph>0 and now>=telegraph and now-telegraph<number(model,"TelegraphDuration") then
                 if tower then warning=now-telegraph else age=math.min(.1,now-telegraph) end
             end
+            if ironveil then
+                -- Regional warning clocks are distinct from Tower's circular marker.
+                -- Confirmed hit events begin follow-through immediately, never a new windup.
+                local basic,impact=number(model,"EnemyActionAt"),number(model,"RegionalImpactAt")
+                actionAt=math.max(if basic<=now then basic else 0,if impact<=now then impact else 0)
+                age=if actionAt>0 then now-actionAt else -1
+                local started,untilAt=number(model,"RegionalTelegraphAt"),number(model,"RegionalTelegraphUntil")
+                warning=if guardian and state=="Windup" and started>0 and started<=now and untilAt>now and untilAt>started then now-started else nil
+                r.moveBlend=(r.moveBlend or 0)+((if moving then 1 else 0)-(r.moveBlend or 0))*(1-math.exp(-math.min(dt,.1)*10))
+                swing=math.sin(r.phase)*r.moveBlend*(if guardian then .22 else .34)
+                if warning then swing*=.2 end
+            end
             if tower then
                 r.moveBlend=(r.moveBlend or 0)+((if moving then 1 else 0)-(r.moveBlend or 0))*(1-math.exp(-math.min(dt,.1)*12))
                 swing=math.sin(r.phase)*r.moveBlend*(if role=="Spire Warden" then .23 else .34)
@@ -109,6 +152,11 @@ return function(animationTag: string?)
             for j in pairs(r.joints) do
                 if not j.Parent then r.joints[j]=nil;continue end
                 local name=jointNames[j.Name]or j.Name:gsub(" ","")
+                if ironveil then
+                    local breath=if workspace:GetAttribute(Config.ReducedMotionAttribute) then 0 else math.sin(r.phase)*.008
+                    j.Transform=ironveilPose(guardian,name,swing,breath,age,warning,tostring(model:GetAttribute("TelegraphName")),now-number(model,"DamageCueAt"))
+                    continue
+                end
                 if tower then
                     local breath=if workspace:GetAttribute(Config.ReducedMotionAttribute) then 0 else math.sin(r.phase)*.012
                     j.Transform=towerPose(role,name,swing,breath,if actionAt>0 then age else -1,warning,now-number(model,"DamageCueAt"))
