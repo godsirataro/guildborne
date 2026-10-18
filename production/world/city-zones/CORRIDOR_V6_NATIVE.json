@@ -1,0 +1,25 @@
+{
+  "candidateSha256": "65849a2edec7af16a0f061c7414169bb1258c2a97cd4b224af604afc47f5dcca",
+  "sourceCommit": "05cc819",
+  "studioId": "155918dd-6441-494e-9cf3-3506c00476f7",
+  "identity": "384 exact source readbacks; source-synced disposable, not whole built-place identity",
+  "pathProbe": {
+    "content": [
+      {
+        "type": "text",
+        "text": "{\"routes\":{\"37\":{\"ok\":true,\"error\":\"Enum.PathStatus.Success\",\"index\":37,\"waypoints\":9},\"35\":{\"ok\":true,\"error\":\"Enum.PathStatus.Success\",\"index\":35,\"waypoints\":9},\"39\":{\"ok\":true,\"error\":\"Enum.PathStatus.Success\",\"index\":39,\"waypoints\":4},\"29\":{\"ok\":true,\"error\":\"Enum.PathStatus.Success\",\"index\":29,\"waypoints\":11},\"1\":{\"ok\":true,\"error\":\"Enum.PathStatus.Success\",\"index\":1,\"waypoints\":10},\"3\":{\"ok\":true,\"error\":\"Enum.PathStatus.Success\",\"index\":3,\"waypoints\":5},\"2\":{\"ok\":true,\"error\":\"Enum.PathStatus.Success\",\"index\":2,\"waypoints\":10},\"5\":{\"ok\":true,\"error\":\"Enum.PathStatus.Success\",\"index\":5,\"waypoints\":11},\"4\":{\"ok\":true,\"error\":\"Enum.PathStatus.Success\",\"index\":4,\"waypoints\":11},\"7\":{\"ok\":true,\"error\":\"Enum.PathStatus.Success\",\"index\":7,\"waypoints\":10},\"6\":{\"ok\":true,\"error\":\"Enum.PathStatus.Success\",\"index\":6,\"waypoints\":11},\"9\":{\"ok\":true,\"error\":\"Enum.PathStatus.Success\",\"index\":9,\"waypoints\":10},\"8\":{\"ok\":true,\"error\":\"Enum.PathStatus.Success\",\"index\":8,\"waypoints\":10},\"27\":{\"ok\":true,\"error\":\"Enum.PathStatus.Success\",\"index\":27,\"waypoints\":11},\"17\":{\"ok\":true,\"error\":\"Enum.PathStatus.Success\",\"index\":17,\"waypoints\":11},\"13\":{\"ok\":true,\"error\":\"Enum.PathStatus.Success\",\"index\":13,\"waypoints\":10},\"21\":{\"ok\":true,\"error\":\"Enum.PathStatus.Success\",\"index\":21,\"waypoints\":11},\"11\":{\"ok\":true,\"error\":\"Enum.PathStatus.Success\",\"index\":11,\"waypoints\":10},\"23\":{\"ok\":true,\"error\":\"Enum.PathStatus.Success\",\"index\":23,\"waypoints\":11},\"36\":{\"ok\":true,\"error\":\"Enum.PathStatus.Success\",\"index\":36,\"waypoints\":9},\"34\":{\"ok\":true,\"error\":\"Enum.PathStatus.Success\",\"index\":34,\"waypoints\":11},\"28\":{\"ok\":true,\"error\":\"Enum.PathStatus.Success\",\"index\":28,\"waypoints\":11},\"38\":{\"ok\":true,\"error\":\"Enum.PathStatus.Success\",\"index\":38,\"waypoints\":4},\"33\":{\"ok\":true,\"error\":\"Enum.PathStatus.Success\",\"index\":33,\"waypoints\":11},\"32\":{\"ok\":true,\"error\":\"Enum.PathStatus.Success\",\"index\":32,\"waypoints\":11},\"31\":{\"ok\":true,\"error\":\"Enum.PathStatus.Success\",\"index\":31,\"waypoints\":11},\"30\":{\"ok\":true,\"error\":\"Enum.PathStatus.Success\",\"index\":30,\"waypoints\":11},\"15\":{\"ok\":true,\"error\":\"Enum.PathStatus.Success\",\"index\":15,\"waypoints\":10},\"18\":{\"ok\":true,\"error\":\"Enum.PathStatus.Success\",\"index\":18,\"waypoints\":11},\"19\":{\"ok\":true,\"error\":\"Enum.PathStatus.Success\",\"index\":19,\"waypoints\":11},\"25\":{\"ok\":true,\"error\":\"Enum.PathStatus.Success\",\"index\":25,\"waypoints\":11},\"14\":{\"ok\":true,\"error\":\"Enum.PathStatus.Success\",\"index\":14,\"waypoints\":10},\"24\":{\"ok\":true,\"error\":\"Enum.PathStatus.Success\",\"index\":24,\"waypoints\":11},\"16\":{\"ok\":true,\"error\":\"Enum.PathStatus.Success\",\"index\":16,\"waypoints\":10},\"26\":{\"ok\":true,\"error\":\"Enum.PathStatus.Success\",\"index\":26,\"waypoints\":11},\"20\":{\"ok\":true,\"error\":\"Enum.PathStatus.Success\",\"index\":20,\"waypoints\":11},\"12\":{\"ok\":true,\"error\":\"Enum.PathStatus.Success\",\"index\":12,\"waypoints\":10},\"22\":{\"ok\":true,\"error\":\"Enum.PathStatus.Success\",\"index\":22,\"waypoints\":11},\"10\":{\"ok\":true,\"error\":\"Enum.PathStatus.Success\",\"index\":10,\"waypoints\":10}},\"total\":39,\"scope\":\"ENGINE_PATHS_ONLY_NOT_PLAYER_OR_FIVE_HERO_ACCEPTANCE\",\"passed\":39,\"colliders\":148}"
+      }
+    ],
+    "isError": false
+  },
+  "readinessTimingAttempt": {
+    "content": [
+      {
+        "type": "text",
+        "text": "sabuiltin_Assistant.rbxm.Assistant.Packages._Index.AssistantUI.AssistantUI.Tools.ExecuteLuauTool:116: sabuiltin_Assistant.rbxm.Assistant.Packages._Index.AssistantUI.AssistantUI.Util.CommandExecution:54: ServerScriptService.Server.Services.WorldQualitySlice:22: Unowned quality collision already exists"
+      }
+    ],
+    "isError": true
+  },
+  "acceptance": "Engine pathfinding only; actual player/five-hero traversal, art import, GUI and performance remain pending"
+}
