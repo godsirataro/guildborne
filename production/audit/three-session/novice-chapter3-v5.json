@@ -1,0 +1,41 @@
+{
+  "studio": "def49833-7515-4dc3-8740-9fe5e947164c",
+  "candidateSource": "4e32013",
+  "scope": "ordinary input chapter3 rescue branch and fallback",
+  "tracks": {
+    "content": [
+      {
+        "type": "text",
+        "text": "{\"pos\":\"-4561.45556640625, 2.9980251789093018, 54.52923583984375\",\"objectives\":{\"1\":{\"name\":\"Objective_follow_tracks\",\"text\":\"✓ Follow the caravan tracks\"},\"3\":{\"name\":\"Objective_caravan_fallback\",\"text\":\"○ Help recover what was left behind\"},\"2\":{\"name\":\"Objective_caravan_choice\",\"text\":\"○ Choose who or what to rescue\"}}}"
+      }
+    ],
+    "isError": false
+  },
+  "rescueChoice": {
+    "content": [
+      {
+        "type": "text",
+        "text": "{\"pos\":\"-4577.6533203125, 2.9980251789093018, 28.59929847717285\",\"objectives\":{\"1\":{\"name\":\"Objective_follow_tracks\",\"text\":\"✓ Follow the caravan tracks\"},\"3\":{\"name\":\"Objective_caravan_fallback\",\"text\":\"○ Help recover what was left behind\"},\"2\":{\"name\":\"Objective_caravan_choice\",\"text\":\"✓ Choose who or what to rescue\"}}}"
+      }
+    ],
+    "isError": false
+  },
+  "fallback": {
+    "content": [
+      {
+        "type": "text",
+        "text": "{\"pos\":\"-4549.35888671875, 2.99802565574646, 28.6015625\",\"objectives\":{\"1\":{\"name\":\"Objective_follow_tracks\",\"text\":\"✓ Follow the caravan tracks\"},\"3\":{\"name\":\"Objective_caravan_fallback\",\"text\":\"✓ Help recover what was left behind\"},\"2\":{\"name\":\"Objective_caravan_choice\",\"text\":\"✓ Choose who or what to rescue\"}}}"
+      }
+    ],
+    "isError": false
+  },
+  "claim": {
+    "content": [
+      {
+        "type": "text",
+        "text": "{\"chapter\":\"Chapter 4 / 6\",\"title\":\"The Crossroads Keeper\",\"pos\":\"-4549.35888671875, 2.99802565574646, 28.6015625\"}"
+      }
+    ],
+    "isError": false
+  }
+}

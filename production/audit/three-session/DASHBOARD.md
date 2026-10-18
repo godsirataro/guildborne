@@ -2,6 +2,8 @@
 
 ## Latest goal checkpoint (supersedes statuses below)
 
+Latest ordinary continuation: newdef49833 completedChapter3 via tracks→rescue-first nativeE→suppliesfallbackE→nativeGUIclaim, nowChapter4 TheCrossroadsKeeper at(-4549.3589,2.9980,28.6016). Preserveearnedstate; no injections. See NOVICE_CHAPTER3_V5.md. S13/S14 currentturns confirmedactive; newcorridor not yetinrunningcandidate. Quota90%remaining, GoalACTIVE.
+
 Latest ordinary combined gameplay: newdef49833 session completedChapter2 using nativeinputs: Fdummy120→110/hits1of1, actualwarningdodge, captiveE, newGUIclaim→Chapter3. Position(-4425.4551,2.9980,89.6619), managementopen; preserveit separately fromolder627892Chapter3. See NOVICE_CHAPTER2_V5.md. No independentlymeasuredBasicvisual/contact/audio claim. Rootenemyquality lease released aftere263114; S13/S14 current turns confirmedinProgress. GoalACTIVE.
 
 Latest Tower integration: ef4868b, native private-source cosmetic probe and front gallery passed after fixture camera repair; original failedgallery retained.40profilecombinations/three roles/cleanup verified, not actualTowercombat. Fresh fullbaseline81361 exit0:902tests/383strictfiles, rawarchived. See TOWER_NATIVE_V5.md. S13 nextnovicecorridor art dispatched in Guildborne-regional-art (name notwithstanding bounded novice task); S14 Ashen/Tower navigation dispatched in Guildborne-campaign-nav, bothbaseef4868b. Root novice/UIleases released beforedispatch. city-zones remains dependency-blocked; no plan bypass or claimed regionalart delivery. S15 complete/released; rootenemyquality holdsintegration. Lastquota91%remaining. GoalACTIVE.
