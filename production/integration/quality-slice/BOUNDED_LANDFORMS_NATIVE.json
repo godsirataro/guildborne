@@ -1,0 +1,9 @@
+{
+  "content": [
+    {
+      "type": "text",
+      "text": "{\"worldCollisionReady\":true,\"QualityArt_Dataset1\":116,\"datasets\":{\"1\":{\"name\":\"Dataset1\",\"attributes\":{\"LoadSeconds\":5.6550579000031579,\"Triangles\":45267,\"Placements\":116,\"PreviewState\":\"READY_LOCAL_ONLY\",\"SourceSha256\":\"9baaf8de0faf3ff7f4a4f2c32ea692e48aa9dbb021f609e3530029ed7844ddc7\"}},\"2\":{\"name\":\"Dataset2\",\"attributes\":{\"LoadSeconds\":0.5657088000007207,\"Triangles\":5364,\"Placements\":63,\"PreviewState\":\"READY_LOCAL_ONLY\",\"SourceSha256\":\"88bd14ea6272fb1c51baebb220e1845b0949ceaabe23d8e8175c3b39b6d35bee\"}}}}"
+    }
+  ],
+  "isError": false
+}
