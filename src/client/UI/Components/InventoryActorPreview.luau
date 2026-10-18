@@ -18,7 +18,10 @@ local function descendants(root: Instance, limit: number): {Instance}?
 end
 
 local function visual(instance: Instance): boolean
-	return instance:IsA("Model") or instance:IsA("Folder") or instance:IsA("Accessory")
+	-- Humanoid.Status inherits Model but is engine state, not visual geometry.
+	-- It is non-archivable; treating every Model subclass as artwork rejects
+	-- otherwise complete player characters before the snapshot can be built.
+	return instance.ClassName == "Model" or instance:IsA("Folder") or instance:IsA("Accessory")
 		or instance:IsA("BasePart") or instance:IsA("DataModelMesh")
 		or instance:IsA("Decal") or instance:IsA("SurfaceAppearance")
 		or instance:IsA("Attachment") or instance:IsA("Clothing")

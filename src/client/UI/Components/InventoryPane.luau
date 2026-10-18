@@ -44,26 +44,36 @@ return function(parent: Instance, model: any): Frame
 	local destroyed = false
 	local previewHandle: any = nil
 	local renderedWidth = -1
+	local drawing = false
+	local drawPending = false
+	local cancelled = {}
 	local layoutConnections: {RBXScriptConnection} = {}
 	local function fitRoot()
-		if destroyed then return end
+		if destroyed or drawing then return end
 		local bottom = 0
 		for _, child in ipairs(root:GetChildren()) do
 			if child:IsA("GuiObject") then bottom = math.max(bottom, child.Position.Y.Offset + child.Size.Y.Offset) end
 		end
 		root.Size = UDim2.new(1, 0, 0, bottom + 12)
 	end
-	local draw: () -> ()
-	draw = function()
-		if destroyed then return end
+	local function clearLayout()
 		for _, connection in ipairs(layoutConnections) do connection:Disconnect() end
 		table.clear(layoutConnections)
 		if previewHandle then previewHandle.destroy(); previewHandle = nil end
+	end
+	local function alive()
+		if destroyed then error(cancelled, 0) end
+	end
+	local draw: () -> ()
+	local function drawPass()
+		alive()
+		clearLayout()
 		for _, child in ipairs(root:GetChildren()) do child:Destroy() end
 		renderedWidth = math.floor(root.AbsoluteSize.X)
 		local w = math.max(220, renderedWidth)
 		local phone, desktop = w < 600, w >= 900
-		label(root, "InventoryHeading", model.title or T("Inventory"), 4, 0, w * .55, 30, true)
+		local heading = label(root, "InventoryHeading", model.title or T("Inventory"), 4, 0, w * .55, 30, true)
+		if phone then heading.TextSize = 18 end
 		local capacity = label(root, "Capacity", model.capacity or "", math.floor(w * .55), 0, math.floor(w * .45) - 4, 30)
 		capacity.TextXAlignment = Enum.TextXAlignment.Right
 		local actors = strip(root, "ActorSelection", 4, 34, w - 8)
@@ -90,10 +100,11 @@ return function(parent: Instance, model: any): Frame
 			local stageHeight = if desktop then 200 else if phone then 160 else 120
 			local stage = frame(body, "ActorStage", 0, 44, bw, stageHeight)
 			previewHandle = Preview(stage, {actorId = model.actorId, data = model.data, T = T})
+			alive()
 			local row = 44 + stageHeight + 4
 			label(body, "ActorStats", model.stats or "", 0, row, bw, 48); row += 52
 			for _, slot in ipairs(model.slots or {}) do
-				local tile = Slot(body, slot, T); tile.Position = UDim2.fromOffset(0, row)
+				local tile = Slot(body, slot, T); alive(); tile.Position = UDim2.fromOffset(0, row)
 				row += tile.Size.Y.Offset + 8
 			end
 			for _, hint in ipairs({model.weaponHint or "", model.expeditionHint or ""}) do
@@ -125,7 +136,7 @@ return function(parent: Instance, model: any): Frame
 				add(action(body, itemAction.name, itemAction.label, 0, 0, bw, itemAction.callback, false, model.busy or itemAction.enabled == false)); row += 52
 			end
 			if selected.definitionId then
-				local art = AssetImage.item(body, selected.definitionId)
+				local art = AssetImage.item(body, selected.definitionId); alive()
 				if art then add(art); row += 84 end
 			end
 			for _, key in ipairs({"description", "binding", "stats", "comparison", "assignment"}) do
@@ -170,7 +181,7 @@ return function(parent: Instance, model: any): Frame
 				local tile = action(grid, "Item_" .. tostring(item.id), "", 0, 0, cellWidth, item.onSelect, item.selected, model.busy)
 				tile.LayoutOrder = index; tile:SetAttribute("ItemId", tostring(item.id))
 				local padding = tile:FindFirstChildOfClass("UIPadding"); if padding then padding:Destroy() end
-				if item.definitionId then local art = AssetImage.item(tile, item.definitionId); if art then art.Position = UDim2.fromOffset(math.max(0, (cellWidth - 80) / 2), 4) end end
+				if item.definitionId then local art = AssetImage.item(tile, item.definitionId); alive(); if art then art.Position = UDim2.fromOffset(math.max(0, (cellWidth - 80) / 2), 4) end end
 				local itemLabel = label(tile, "ItemLabel", item.name or "", 6, 84, cellWidth - 12, cellHeight - 88)
 				itemLabel.TextSize = if phone then 13 else 14; itemLabel.TextTruncate = Enum.TextTruncate.AtEnd
 				if item.quantity then local quantity = label(tile, "Quantity", tostring(item.quantity), cellWidth - 44, 3, 38, 22); quantity.TextXAlignment = Enum.TextXAlignment.Right end
@@ -219,14 +230,36 @@ return function(parent: Instance, model: any): Frame
 		end
 		layer(root, 20)
 	end
+	-- Asset-backed constructors may yield while their modules initialize. A size
+	-- notification during that yield must request a later pass, never start a
+	-- second writer in the same pane. Coalesce requests to the latest width/page.
+	draw = function()
+		if destroyed then return end
+		drawPending = true
+		if drawing then return end
+		drawing = true
+		repeat
+			drawPending = false
+			local ok, failure = pcall(drawPass)
+			if not ok or destroyed then
+				clearLayout()
+				drawing = false; drawPending = false
+				if not destroyed and failure ~= cancelled then
+					for _, child in ipairs(root:GetChildren()) do child:Destroy() end
+					error(failure, 0)
+				end
+				return
+			end
+		until not drawPending
+		drawing = false
+		fitRoot()
+	end
 	local sizeConnection = root:GetPropertyChangedSignal("AbsoluteSize"):Connect(function()
 		if math.floor(root.AbsoluteSize.X) ~= renderedWidth then draw() end
 	end)
 	root.Destroying:Connect(function()
-		destroyed = true; sizeConnection:Disconnect()
-		for _, connection in ipairs(layoutConnections) do connection:Disconnect() end
-		table.clear(layoutConnections)
-		if previewHandle then previewHandle.destroy(); previewHandle = nil end
+		destroyed = true; drawPending = false; sizeConnection:Disconnect()
+		clearLayout()
 	end)
 	draw()
 	return root

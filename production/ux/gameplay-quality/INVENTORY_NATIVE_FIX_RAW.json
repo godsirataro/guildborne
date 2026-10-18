@@ -1,0 +1,283 @@
+{
+  "studioId": "803f427b-0082-4f62-8e09-4ddb616aa01b",
+  "date": "2026-10-19",
+  "scope": "Disposable InventoryReview Client; synthetic action fixture, no full-game acceptance",
+  "portraitDiagnostics": {
+    "content": [
+      {
+        "type": "text",
+        "text": "{\"ok\":true,\"non\":{\"1\":{\"class\":\"Sound\",\"path\":\"Workspace.iswhlaedev.HumanoidRootPart.Climbing\"},\"3\":{\"class\":\"Sound\",\"path\":\"Workspace.iswhlaedev.HumanoidRootPart.GettingUp\"},\"2\":{\"class\":\"Sound\",\"path\":\"Workspace.iswhlaedev.HumanoidRootPart.Died\"},\"5\":{\"class\":\"Sound\",\"path\":\"Workspace.iswhlaedev.HumanoidRootPart.Jumping\"},\"4\":{\"class\":\"Sound\",\"path\":\"Workspace.iswhlaedev.HumanoidRootPart.Swimming\"},\"7\":{\"class\":\"Sound\",\"path\":\"Workspace.iswhlaedev.HumanoidRootPart.Splash\"},\"6\":{\"class\":\"Sound\",\"path\":\"Workspace.iswhlaedev.HumanoidRootPart.Landing\"},\"9\":{\"class\":\"Sound\",\"path\":\"Workspace.iswhlaedev.HumanoidRootPart.Running\"},\"8\":{\"class\":\"Sound\",\"path\":\"Workspace.iswhlaedev.HumanoidRootPart.FreeFalling\"},\"10\":{\"class\":\"Status\",\"path\":\"Workspace.iswhlaedev.Humanoid.Status\"}},\"error\":\"nil\",\"stages\":{\"22\":{\"size\":\"3.8096699714660645, 5.495295524597168, 2.0069096088409424\",\"bounds\":\"-4.34959698, 3.22114611, -10.9096403, 1, 0, 0, 0, 1, 0, 0, 0, 1\"},\"21\":{\"name\":\"Pal Hair\",\"clone\":true},\"20\":{\"name\":\"RightFoot\",\"clone\":true},\"19\":{\"name\":\"RightHand\",\"clone\":true},\"18\":{\"name\":\"LowerTorso\",\"clone\":true},\"9\":{\"name\":\"LeftUpperLeg\",\"clone\":true},\"1\":{\"name\":\"HumanoidRootPart\",\"clone\":true},\"15\":{\"name\":\"Pants\",\"clone\":true},\"3\":{\"name\":\"RightLowerArm\",\"clone\":true},\"2\":{\"name\":\"LeftLowerArm\",\"clone\":true},\"5\":{\"name\":\"RightUpperArm\",\"clone\":true},\"4\":{\"name\":\"LeftUpperArm\",\"clone\":true},\"7\":{\"name\":\"Shirt\",\"clone\":true},\"6\":{\"name\":\"Head\",\"clone\":true},\"14\":{\"name\":\"Humanoid\",\"clone\":true},\"8\":{\"name\":\"LeftLowerLeg\",\"clone\":true},\"16\":{\"name\":\"Body Colors\",\"clone\":true},\"17\":{\"name\":\"UpperTorso\",\"clone\":true},\"13\":{\"name\":\"LeftFoot\",\"clone\":true},\"12\":{\"name\":\"RightUpperLeg\",\"clone\":true},\"11\":{\"name\":\"RightLowerLeg\",\"clone\":true},\"10\":{\"name\":\"LeftHand\",\"clone\":true}}}"
+      }
+    ],
+    "isError": false
+  },
+  "firstFixedSource": {
+    "content": [
+      {
+        "type": "text",
+        "text": "{\"paneBytes\":14807,\"paneMatch\":true,\"previewMatch\":true}"
+      }
+    ],
+    "isError": false
+  },
+  "firstFixedInitial": {
+    "content": [
+      {
+        "type": "text",
+        "text": "{\"buttons\":{\"30\":{\"text\":\"HallLocked\",\"name\":\"ModeHallLocked\",\"path\":\"Players.iswhlaedev.PlayerGui.InventoryReview.Frame.ScrollingFrame.ModeHallLocked\"},\"21\":{\"text\":\"TH\",\"name\":\"LanguageTH\",\"path\":\"Players.iswhlaedev.PlayerGui.InventoryReview.Frame.ScrollingFrame.LanguageTH\"},\"22\":{\"text\":\"1:1 / Fit\",\"name\":\"FitToggle\",\"path\":\"Players.iswhlaedev.PlayerGui.InventoryReview.Frame.ScrollingFrame.FitToggle\"},\"27\":{\"text\":\"Incompatible\",\"name\":\"ModeIncompatible\",\"path\":\"Players.iswhlaedev.PlayerGui.InventoryReview.Frame.ScrollingFrame.ModeIncompatible\"},\"26\":{\"text\":\"Empty\",\"name\":\"ModeEmpty\",\"path\":\"Players.iswhlaedev.PlayerGui.InventoryReview.Frame.ScrollingFrame.ModeEmpty\"},\"25\":{\"text\":\"Busy\",\"name\":\"ModeBusy\",\"path\":\"Players.iswhlaedev.PlayerGui.InventoryReview.Frame.ScrollingFrame.ModeBusy\"},\"24\":{\"text\":\"Owned\",\"name\":\"ModeOwned\",\"path\":\"Players.iswhlaedev.PlayerGui.InventoryReview.Frame.ScrollingFrame.ModeOwned\"},\"23\":{\"text\":\"Log TextFits / rects\",\"name\":\"ReportNow\",\"path\":\"Players.iswhlaedev.PlayerGui.InventoryReview.Frame.ScrollingFrame.ReportNow\"},\"28\":{\"text\":\"LongCopy\",\"name\":\"ModeLongCopy\",\"path\":\"Players.iswhlaedev.PlayerGui.InventoryReview.Frame.ScrollingFrame.ModeLongCopy\"},\"29\":{\"text\":\"Capacity\",\"name\":\"ModeCapacity\",\"path\":\"Players.iswhlaedev.PlayerGui.InventoryReview.Frame.ScrollingFrame.ModeCapacity\"},\"20\":{\"text\":\"EN\",\"name\":\"LanguageEN\",\"path\":\"Players.iswhlaedev.PlayerGui.InventoryReview.Frame.ScrollingFrame.LanguageEN\"},\"19\":{\"text\":\"320×568\",\"name\":\"Size320\",\"path\":\"Players.iswhlaedev.PlayerGui.InventoryReview.Frame.ScrollingFrame.Size320\"},\"18\":{\"text\":\"1366×768\",\"name\":\"Size1366\",\"path\":\"Players.iswhlaedev.PlayerGui.InventoryReview.Frame.ScrollingFrame.Size1366\"},\"9\":{\"text\":\"Sort: Name\",\"name\":\"Sort\",\"path\":\"Players.iswhlaedev.PlayerGui.InventoryReview.Frame.FixtureViewport.SimulatedSafeArea.ManagementPanel.InventoryScroll.InventoryPane.InventoryTools.Sort\"},\"1\":{\"text\":\"Your character\",\"name\":\"Actor_player\",\"path\":\"Players.iswhlaedev.PlayerGui.InventoryReview.Frame.FixtureViewport.SimulatedSafeArea.ManagementPanel.InventoryScroll.InventoryPane.ActorSelection.Actor_player\"},\"15\":{\"text\":\"\",\"name\":\"Item_material:timber\",\"path\":\"Players.iswhlaedev.PlayerGui.InventoryReview.Frame.FixtureViewport.SimulatedSafeArea.ManagementPanel.InventoryScroll.InventoryPane.ItemGrid.Item_material:timber\"},\"3\":{\"text\":\"All\",\"name\":\"Filter_All\",\"path\":\"Players.iswhlaedev.PlayerGui.InventoryReview.Frame.FixtureViewport.SimulatedSafeArea.ManagementPanel.InventoryScroll.InventoryPane.ItemCategories.Filter_All\"},\"2\":{\"text\":\"Rowan · Warrior [F]\",\"name\":\"Actor_a:Warrior\",\"path\":\"Players.iswhlaedev.PlayerGui.InventoryReview.Frame.FixtureViewport.SimulatedSafeArea.ManagementPanel.InventoryScroll.InventoryPane.ActorSelection.Actor_a:Warrior\"},\"5\":{\"text\":\"Armor\",\"name\":\"Filter_Armor\",\"path\":\"Players.iswhlaedev.PlayerGui.InventoryReview.Frame.FixtureViewport.SimulatedSafeArea.ManagementPanel.InventoryScroll.InventoryPane.ItemCategories.Filter_Armor\"},\"4\":{\"text\":\"Weapon\",\"name\":\"Filter_Weapon\",\"path\":\"Players.iswhlaedev.PlayerGui.InventoryReview.Frame.FixtureViewport.SimulatedSafeArea.ManagementPanel.InventoryScroll.InventoryPane.ItemCategories.Filter_Weapon\"},\"7\":{\"text\":\"Material\",\"name\":\"Filter_Material\",\"path\":\"Players.iswhlaedev.PlayerGui.InventoryReview.Frame.FixtureViewport.SimulatedSafeArea.ManagementPanel.InventoryScroll.InventoryPane.ItemCategories.Filter_Material\"},\"6\":{\"text\":\"Accessory\",\"name\":\"Filter_Accessory\",\"path\":\"Players.iswhlaedev.PlayerGui.InventoryReview.Frame.FixtureViewport.SimulatedSafeArea.ManagementPanel.InventoryScroll.InventoryPane.ItemCategories.Filter_Accessory\"},\"14\":{\"text\":\"\",\"name\":\"Item_spareSword\",\"path\":\"Players.iswhlaedev.PlayerGui.InventoryReview.Frame.FixtureViewport.SimulatedSafeArea.ManagementPanel.InventoryScroll.InventoryPane.ItemGrid.Item_spareSword\"},\"8\":{\"text\":\"Shop\",\"name\":\"Shop\",\"path\":\"Players.iswhlaedev.PlayerGui.InventoryReview.Frame.FixtureViewport.SimulatedSafeArea.ManagementPanel.InventoryScroll.InventoryPane.InventoryTools.Shop\"},\"16\":{\"text\":\"Unequip\",\"name\":\"Unequip_weapon\",\"path\":\"Players.iswhlaedev.PlayerGui.InventoryReview.Frame.FixtureViewport.SimulatedSafeArea.ManagementPanel.InventoryScroll.InventoryPane.SelectedActorLoadout.Content.EquipmentSlot_weapon.Unequip_weapon\"},\"17\":{\"text\":\"796×675\",\"name\":\"Size796\",\"path\":\"Players.iswhlaedev.PlayerGui.InventoryReview.Frame.ScrollingFrame.Size796\"},\"13\":{\"text\":\"\",\"name\":\"Item_rowanSword\",\"path\":\"Players.iswhlaedev.PlayerGui.InventoryReview.Frame.FixtureViewport.SimulatedSafeArea.ManagementPanel.InventoryScroll.InventoryPane.ItemGrid.Item_rowanSword\"},\"12\":{\"text\":\"\",\"name\":\"Item_playerSword\",\"path\":\"Players.iswhlaedev.PlayerGui.InventoryReview.Frame.FixtureViewport.SimulatedSafeArea.ManagementPanel.InventoryScroll.InventoryPane.ItemGrid.Item_playerSword\"},\"11\":{\"text\":\"\",\"name\":\"Item_vest\",\"path\":\"Players.iswhlaedev.PlayerGui.InventoryReview.Frame.FixtureViewport.SimulatedSafeArea.ManagementPanel.InventoryScroll.InventoryPane.ItemGrid.Item_vest\"},\"10\":{\"text\":\"Compatible\",\"name\":\"Compatible\",\"path\":\"Players.iswhlaedev.PlayerGui.InventoryReview.Frame.FixtureViewport.SimulatedSafeArea.ManagementPanel.InventoryScroll.InventoryPane.InventoryTools.Compatible\"}},\"portrait\":{\"models\":1,\"fallback\":false,\"scripts\":0,\"parts\":17},\"panes\":{\"1\":{\"ActorSelection\":1,\"ItemGrid\":1,\"ItemCategories\":1,\"InventoryHeading\":1,\"SelectedActorLoadout\":1,\"Capacity\":1,\"InventoryTools\":1}}}"
+      }
+    ],
+    "isError": false
+  },
+  "saleFirst": {
+    "content": [
+      {
+        "type": "text",
+        "text": "{\"notice\":\"Owned | en | 796x675 | 1:1 · scroll outer viewport to inspect\\nRecorded intents: 0 · No intents recorded\\nPlayer = actual local avatar; Rowan = unavailable model fallback. Fit is not breakpoint/device evidence.\",\"text\":\"Confirm sale · 10 Gold\"}"
+      }
+    ],
+    "isError": false
+  },
+  "saleConfirmed": {
+    "content": [
+      {
+        "type": "text",
+        "text": "Owned | en | 796x675 | 1:1 · scroll outer viewport to inspect\nRecorded intents: 1 · SellEquipment {\"instanceId\":\"spareSword\"}\nPlayer = actual local avatar; Rowan = unavailable model fallback. Fit is not breakpoint/device evidence."
+      }
+    ],
+    "isError": false
+  },
+  "matrixBeforeHeadingFix": [
+    {
+      "size": "320",
+      "lang": "EN",
+      "result": {
+        "content": [
+          {
+            "type": "text",
+            "text": "{\"notice\":\"Owned | en | 320x568 | 1:1 · scroll outer viewport to inspect\\nRecorded intents: 1 · SellEquipment {\\\"instanceId\\\":\\\"spareSword\\\"}\\nPlayer = actual local avatar; Rowan = unavailable model fallback. Fit is not breakpoint/device evidence.\",\"notFit\":{\"1\":{\"name\":\"InventoryHeading\",\"text\":\"Shared inventory\"}},\"counts\":{\"View_Details\":1,\"Capacity\":1,\"ActorSelection\":1,\"ItemGrid\":1,\"ItemCategories\":1,\"InventoryHeading\":1,\"View_Loadout\":1,\"InventoryTools\":1,\"View_Items\":1},\"width\":280}"
+          }
+        ],
+        "isError": false
+      }
+    },
+    {
+      "size": "320",
+      "lang": "TH",
+      "result": {
+        "content": [
+          {
+            "type": "text",
+            "text": "{\"notice\":\"Owned | th | 320x568 | 1:1 · scroll outer viewport to inspect\\nRecorded intents: 1 · SellEquipment {\\\"instanceId\\\":\\\"spareSword\\\"}\\nPlayer = actual local avatar; Rowan = unavailable model fallback. Fit is not breakpoint/device evidence.\",\"notFit\":[],\"counts\":{\"View_Details\":1,\"Capacity\":1,\"ActorSelection\":1,\"ItemGrid\":1,\"ItemCategories\":1,\"InventoryHeading\":1,\"View_Loadout\":1,\"InventoryTools\":1,\"View_Items\":1},\"width\":280}"
+          }
+        ],
+        "isError": false
+      }
+    },
+    {
+      "size": "796",
+      "lang": "EN",
+      "result": {
+        "content": [
+          {
+            "type": "text",
+            "text": "{\"notice\":\"Owned | en | 796x675 | 1:1 · scroll outer viewport to inspect\\nRecorded intents: 1 · SellEquipment {\\\"instanceId\\\":\\\"spareSword\\\"}\\nPlayer = actual local avatar; Rowan = unavailable model fallback. Fit is not breakpoint/device evidence.\",\"notFit\":[],\"counts\":{\"ActorSelection\":1,\"ItemGrid\":1,\"ItemCategories\":1,\"InventoryHeading\":1,\"SelectedActorLoadout\":1,\"Capacity\":1,\"InventoryTools\":1},\"width\":756}"
+          }
+        ],
+        "isError": false
+      }
+    },
+    {
+      "size": "796",
+      "lang": "TH",
+      "result": {
+        "content": [
+          {
+            "type": "text",
+            "text": "{\"notice\":\"Owned | th | 796x675 | 1:1 · scroll outer viewport to inspect\\nRecorded intents: 1 · SellEquipment {\\\"instanceId\\\":\\\"spareSword\\\"}\\nPlayer = actual local avatar; Rowan = unavailable model fallback. Fit is not breakpoint/device evidence.\",\"notFit\":[],\"counts\":{\"ActorSelection\":1,\"ItemGrid\":1,\"ItemCategories\":1,\"InventoryHeading\":1,\"SelectedActorLoadout\":1,\"Capacity\":1,\"InventoryTools\":1},\"width\":756}"
+          }
+        ],
+        "isError": false
+      }
+    },
+    {
+      "size": "1366",
+      "lang": "EN",
+      "result": {
+        "content": [
+          {
+            "type": "text",
+            "text": "{\"notice\":\"Owned | en | 1366x768 | 1:1 · scroll outer viewport to inspect\\nRecorded intents: 1 · SellEquipment {\\\"instanceId\\\":\\\"spareSword\\\"}\\nPlayer = actual local avatar; Rowan = unavailable model fallback. Fit is not breakpoint/device evidence.\",\"notFit\":[],\"counts\":{\"ActorSelection\":1,\"ItemGrid\":1,\"ItemCategories\":1,\"InventoryHeading\":1,\"SelectedActorLoadout\":1,\"Capacity\":1,\"SelectedItemDetails\":1,\"InventoryTools\":1},\"width\":976}"
+          }
+        ],
+        "isError": false
+      }
+    },
+    {
+      "size": "1366",
+      "lang": "TH",
+      "result": {
+        "content": [
+          {
+            "type": "text",
+            "text": "{\"notice\":\"Owned | th | 1366x768 | 1:1 · scroll outer viewport to inspect\\nRecorded intents: 1 · SellEquipment {\\\"instanceId\\\":\\\"spareSword\\\"}\\nPlayer = actual local avatar; Rowan = unavailable model fallback. Fit is not breakpoint/device evidence.\",\"notFit\":[],\"counts\":{\"ActorSelection\":1,\"ItemGrid\":1,\"ItemCategories\":1,\"InventoryHeading\":1,\"SelectedActorLoadout\":1,\"Capacity\":1,\"SelectedItemDetails\":1,\"InventoryTools\":1},\"width\":976}"
+          }
+        ],
+        "isError": false
+      }
+    }
+  ],
+  "finalSource": {
+    "content": [
+      {
+        "type": "text",
+        "text": "{\"paneBytes\":14866,\"paneMatch\":true,\"previewMatch\":true}"
+      }
+    ],
+    "isError": false
+  },
+  "finalMatrix": [
+    {
+      "size": "320",
+      "lang": "EN",
+      "click": {
+        "content": [
+          {
+            "type": "text",
+            "text": "Success"
+          }
+        ],
+        "isError": false
+      },
+      "result": {
+        "content": [
+          {
+            "type": "text",
+            "text": "{\"notice\":\"Owned | en | 320x568 | 1:1 · scroll outer viewport to inspect\\nRecorded intents: 0 · No intents recorded\\nPlayer = actual local avatar; Rowan = unavailable model fallback. Fit is not breakpoint/device evidence.\",\"notFit\":[],\"counts\":{\"View_Details\":1,\"Capacity\":1,\"ActorSelection\":1,\"ItemGrid\":1,\"ItemCategories\":1,\"InventoryHeading\":1,\"View_Loadout\":1,\"InventoryTools\":1,\"View_Items\":1},\"width\":280}"
+          }
+        ],
+        "isError": false
+      }
+    },
+    {
+      "size": "320",
+      "lang": "TH",
+      "click": {
+        "content": [
+          {
+            "type": "text",
+            "text": "Success"
+          }
+        ],
+        "isError": false
+      },
+      "result": {
+        "content": [
+          {
+            "type": "text",
+            "text": "{\"notice\":\"Owned | th | 320x568 | 1:1 · scroll outer viewport to inspect\\nRecorded intents: 0 · No intents recorded\\nPlayer = actual local avatar; Rowan = unavailable model fallback. Fit is not breakpoint/device evidence.\",\"notFit\":[],\"counts\":{\"View_Details\":1,\"Capacity\":1,\"ActorSelection\":1,\"ItemGrid\":1,\"ItemCategories\":1,\"InventoryHeading\":1,\"View_Loadout\":1,\"InventoryTools\":1,\"View_Items\":1},\"width\":280}"
+          }
+        ],
+        "isError": false
+      }
+    },
+    {
+      "size": "796",
+      "lang": "EN",
+      "click": {
+        "content": [
+          {
+            "type": "text",
+            "text": "Success"
+          }
+        ],
+        "isError": false
+      },
+      "result": {
+        "content": [
+          {
+            "type": "text",
+            "text": "{\"notice\":\"Owned | en | 796x675 | 1:1 · scroll outer viewport to inspect\\nRecorded intents: 0 · No intents recorded\\nPlayer = actual local avatar; Rowan = unavailable model fallback. Fit is not breakpoint/device evidence.\",\"notFit\":[],\"counts\":{\"ActorSelection\":1,\"ItemGrid\":1,\"ItemCategories\":1,\"InventoryHeading\":1,\"SelectedActorLoadout\":1,\"Capacity\":1,\"InventoryTools\":1},\"width\":756}"
+          }
+        ],
+        "isError": false
+      }
+    },
+    {
+      "size": "796",
+      "lang": "TH",
+      "click": {
+        "content": [
+          {
+            "type": "text",
+            "text": "Success"
+          }
+        ],
+        "isError": false
+      },
+      "result": {
+        "content": [
+          {
+            "type": "text",
+            "text": "{\"notice\":\"Owned | th | 796x675 | 1:1 · scroll outer viewport to inspect\\nRecorded intents: 0 · No intents recorded\\nPlayer = actual local avatar; Rowan = unavailable model fallback. Fit is not breakpoint/device evidence.\",\"notFit\":[],\"counts\":{\"ActorSelection\":1,\"ItemGrid\":1,\"ItemCategories\":1,\"InventoryHeading\":1,\"SelectedActorLoadout\":1,\"Capacity\":1,\"InventoryTools\":1},\"width\":756}"
+          }
+        ],
+        "isError": false
+      }
+    },
+    {
+      "size": "1366",
+      "lang": "EN",
+      "click": {
+        "content": [
+          {
+            "type": "text",
+            "text": "Success"
+          }
+        ],
+        "isError": false
+      },
+      "result": {
+        "content": [
+          {
+            "type": "text",
+            "text": "{\"notice\":\"Owned | en | 1366x768 | 1:1 · scroll outer viewport to inspect\\nRecorded intents: 0 · No intents recorded\\nPlayer = actual local avatar; Rowan = unavailable model fallback. Fit is not breakpoint/device evidence.\",\"notFit\":[],\"counts\":{\"ActorSelection\":1,\"ItemGrid\":1,\"ItemCategories\":1,\"InventoryHeading\":1,\"SelectedActorLoadout\":1,\"Capacity\":1,\"SelectedItemDetails\":1,\"InventoryTools\":1},\"width\":976}"
+          }
+        ],
+        "isError": false
+      }
+    },
+    {
+      "size": "1366",
+      "lang": "TH",
+      "click": {
+        "content": [
+          {
+            "type": "text",
+            "text": "Success"
+          }
+        ],
+        "isError": false
+      },
+      "result": {
+        "content": [
+          {
+            "type": "text",
+            "text": "{\"notice\":\"Owned | th | 1366x768 | 1:1 · scroll outer viewport to inspect\\nRecorded intents: 0 · No intents recorded\\nPlayer = actual local avatar; Rowan = unavailable model fallback. Fit is not breakpoint/device evidence.\",\"notFit\":[],\"counts\":{\"ActorSelection\":1,\"ItemGrid\":1,\"ItemCategories\":1,\"InventoryHeading\":1,\"SelectedActorLoadout\":1,\"Capacity\":1,\"SelectedItemDetails\":1,\"InventoryTools\":1},\"width\":976}"
+          }
+        ],
+        "isError": false
+      }
+    }
+  ],
+  "finalRegression": {
+    "content": [
+      {
+        "type": "text",
+        "text": "{\"1\":{\"statusArchivable\":false,\"rootArchivable\":false,\"statusIsModel\":true,\"parts\":17,\"case\":\"actual_player\"},\"3\":{\"pass\":true,\"case\":\"incomplete_visual_fallback\"},\"2\":{\"pass\":true,\"case\":\"owned_hero\"},\"5\":{\"pass\":true,\"case\":\"missing_hero_fallback\"},\"4\":{\"pass\":true,\"case\":\"foreign_hero_fallback\"},\"6\":{\"pass\":true,\"case\":\"resize_and_cleanup\"}}"
+      }
+    ],
+    "isError": false
+  },
+  "endState": "Play stopped; get_studio_state confirmed Edit"
+}
