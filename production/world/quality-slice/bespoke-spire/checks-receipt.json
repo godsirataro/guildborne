@@ -1,0 +1,35 @@
+{
+  "status": "OFFLINE_CHECKS_ONLY",
+  "inputs": {
+    "assets/production/world-slice/bespoke-spire/scenery.mesh.json": "148ba821817101a0372d851f557d4c7593a594295814f0e20da194924adfb3ae",
+    "production/world/quality-slice/bespoke-spire/recipe.py": "1c1806b9620034613a053e63a874dec7dbcdb035df3ad261dbb622570acab1d6",
+    "production/world/quality-slice/bespoke-spire/validate_geometry.py": "b59b6f49c5147dd04d926fc66fd08c703816c6c75e0e072b983a477a51aaf536",
+    "production/world/quality-slice/bespoke-spire/verify_architecture.py": "c4d930a1ddb91e0e84811188a6be7cbf19878c2292a211cafb57327d44489a97",
+    "production/world/quality-slice/continuous-corridor/ground.json": "398a440048136c1e81f39f0ac0f40c72b3ecdfb442777a47c490bf678daa7b35"
+  },
+  "inputsUnchanged": true,
+  "results": [
+    {
+      "command": [
+        "C:\\Users\\godsi\\AppData\\Local\\Programs\\Python\\Python314\\python.exe",
+        "C:\\Work\\MySelf\\Guildborne-city-greenwood\\production\\world\\quality-slice\\bespoke-spire\\validate_geometry.py"
+      ],
+      "exitCode": 0,
+      "seconds": 5.3589595000084955,
+      "stdoutSha256": "ca80ed9d76f2fc27717ba49e6abbb04ce23a977f386f8b9831d3891f87599e73",
+      "stderrSha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "command": [
+        "C:\\Users\\godsi\\AppData\\Local\\Programs\\Python\\Python314\\python.exe",
+        "C:\\Work\\MySelf\\Guildborne-city-greenwood\\production\\world\\quality-slice\\bespoke-spire\\verify_architecture.py"
+      ],
+      "exitCode": 0,
+      "seconds": 12.087045499996748,
+      "stdoutSha256": "ae0fab2358d3c364de8406fab86e6e2f5a1fc5942cfd7465167dcd9bddfb92e5",
+      "stderrSha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    }
+  ],
+  "studioTested": false,
+  "humanApproved": false
+}

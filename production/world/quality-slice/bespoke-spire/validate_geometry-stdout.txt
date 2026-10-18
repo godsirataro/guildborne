@@ -1,0 +1,18 @@
+{
+  "status": "PASS",
+  "scope": "OFFLINE_TRIANGLE_GEOMETRY_NOT_STUDIO",
+  "lockedInputs": 58,
+  "exactRetainedPlacements": 57,
+  "newArtPhysicsDisabled": true,
+  "schema": {
+    "meshes": 20,
+    "vertices": 26348,
+    "triangles": 11330,
+    "placements": 72
+  },
+  "instanceTriangles": 40006,
+  "intersectionsTested": 1148,
+  "maxSurfaceDelta": -0.034999999999965725,
+  "violations": [],
+  "violationCount": 0
+}

@@ -1,0 +1,25 @@
+{
+  "command": [
+    "C:/Program Files/Blender Foundation/Blender 5.2/blender.exe",
+    "--background",
+    "--disable-autoexec",
+    "--python-exit-code",
+    "2",
+    "--python",
+    "C:\\Work\\MySelf\\Guildborne-city-greenwood\\production\\world\\quality-slice\\bespoke-spire\\render_compare.py",
+    "--",
+    "--variant",
+    "before"
+  ],
+  "exitCode": 0,
+  "seconds": 47.67615579999983,
+  "inputHashes": {
+    "assets/production/world-slice/coast-composition/scenery.mesh.json": "79e3c3ea39f702ee77d6765ea41d0dffbdbc9cd4a1c674faa1a01832e82f807f",
+    "production/world/quality-slice/bespoke-spire/render_compare.py": "ba6d606007927861bea2bcca659ff0480560eb425f56dd314fa0810ba15cfcc1",
+    "production/world/quality-slice/bespoke-spire/cameras.json": "f685f89ee2e2403c5caba31bcae4fb487231c51ce38221a6db611af476170bc9",
+    "production/world/quality-slice/continuous-corridor/ground.json": "398a440048136c1e81f39f0ac0f40c72b3ecdfb442777a47c490bf678daa7b35"
+  },
+  "inputsUnchanged": true,
+  "stdoutSha256": "b99cc456a499f0a20fa585afd5fb70b375729809c2250ced9760e551b63135f9",
+  "stderrSha256": "81a2ef31730548ab6363dc1c3bac0dafd9f1ff339667bb3c1c07083b60ef1691"
+}

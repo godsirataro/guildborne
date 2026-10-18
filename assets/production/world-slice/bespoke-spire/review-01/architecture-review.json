@@ -1,0 +1,1353 @@
+{
+  "status": "FAIL",
+  "scope": "OFFLINE_ARCHITECTURE_NOT_STUDIO",
+  "packetSha256": "02d4bb6d7d77bac482f2a3bf0e201eece4aa22e0af5341bae957f5ec3cd8be45",
+  "sourceSha256": "79e3c3ea39f702ee77d6765ea41d0dffbdbc9cd4a1c674faa1a01832e82f807f",
+  "sidecarSha256": "93b107c7a00de26befe36afe0e0c5825d811156d905246ddaa97b5da66b2d99d",
+  "retiredBeaconExplicitlyReplaced": true,
+  "exactRetainedCoastMeshes": 16,
+  "exactRetainedCoastPlacements": 66,
+  "uniqueTriangles": 10946,
+  "instancedTriangles": 39622,
+  "placements": 72,
+  "maximumResourceExtent": 1972.4689249133571,
+  "apertureProbes": [
+    {
+      "height": 46,
+      "axis": "x",
+      "hits": 0
+    },
+    {
+      "height": 46,
+      "axis": "z",
+      "hits": 0
+    },
+    {
+      "height": 50,
+      "axis": "x",
+      "hits": 0
+    },
+    {
+      "height": 50,
+      "axis": "z",
+      "hits": 0
+    },
+    {
+      "height": 57,
+      "axis": "x",
+      "hits": 0
+    },
+    {
+      "height": 57,
+      "axis": "z",
+      "hits": 0
+    },
+    {
+      "height": 85,
+      "axis": "x",
+      "hits": 0
+    },
+    {
+      "height": 85,
+      "axis": "z",
+      "hits": 0
+    },
+    {
+      "height": 91,
+      "axis": "x",
+      "hits": 0
+    },
+    {
+      "height": 91,
+      "axis": "z",
+      "hits": 0
+    },
+    {
+      "height": 98,
+      "axis": "x",
+      "hits": 0
+    },
+    {
+      "height": 98,
+      "axis": "z",
+      "hits": 0
+    }
+  ],
+  "solidWallControls": [
+    {
+      "height": 30,
+      "hits": 4
+    },
+    {
+      "height": 70,
+      "hits": 4
+    }
+  ],
+  "closedSolidReview": {
+    "status": "PASS",
+    "solids": 445,
+    "independentCentroidNormals": true,
+    "edgeClosure": true,
+    "sidecarMatchesEveryExportedFace": true,
+    "minSignedVolume": 0.48000000000000176,
+    "minOutwardDot": 0.2399999999999655
+  },
+  "foundationReview": {
+    "status": "FAIL",
+    "primaryFootingSamples": [
+      {
+        "x": -9.9,
+        "z": -9.9,
+        "bottom": -12.586278317220575,
+        "terrain": -6.355174498948472,
+        "top": 1.799999999999983
+      },
+      {
+        "x": -9.9,
+        "z": -5,
+        "bottom": -12.586278317220575,
+        "terrain": -4.6700888513133805,
+        "top": 1.799999999999983
+      },
+      {
+        "x": -9.9,
+        "z": 0,
+        "bottom": -12.586278317220575,
+        "terrain": -2.9506137006654143,
+        "top": 1.799999999999983
+      },
+      {
+        "x": -9.9,
+        "z": 5,
+        "bottom": -12.586278317220575,
+        "terrain": -1.2311385500173913,
+        "top": 1.799999999999983
+      },
+      {
+        "x": -9.9,
+        "z": 9.9,
+        "bottom": -12.586278317220575,
+        "terrain": 0.2418783298908096,
+        "top": 1.799999999999983
+      },
+      {
+        "x": -5,
+        "z": -9.9,
+        "bottom": -12.586278317220575,
+        "terrain": -7.460899033801283,
+        "top": 1.799999999999983
+      },
+      {
+        "x": -5,
+        "z": -5,
+        "bottom": -12.586278317220575,
+        "terrain": -5.775813386166206,
+        "top": 1.799999999999983
+      },
+      {
+        "x": -5,
+        "z": 0,
+        "bottom": -12.586278317220575,
+        "terrain": -4.056338235518183,
+        "top": 1.799999999999983
+      },
+      {
+        "x": -5,
+        "z": 5,
+        "bottom": -12.586278317220575,
+        "terrain": -2.3368630848701457,
+        "top": 1.799999999999983
+      },
+      {
+        "x": -5,
+        "z": 9.9,
+        "bottom": -12.586278317220575,
+        "terrain": -0.7634870260410338,
+        "top": 1.799999999999983
+      },
+      {
+        "x": 0,
+        "z": -9.9,
+        "bottom": -12.586278317220575,
+        "terrain": -8.589189375487763,
+        "top": 1.799999999999983
+      },
+      {
+        "x": 0,
+        "z": -5,
+        "bottom": -12.586278317220575,
+        "terrain": -6.904103727852743,
+        "top": 1.799999999999983
+      },
+      {
+        "x": 0,
+        "z": 0,
+        "bottom": -12.586278317220575,
+        "terrain": -5.236452474057728,
+        "top": 1.799999999999983
+      },
+      {
+        "x": 0,
+        "z": 5,
+        "bottom": -12.586278317220575,
+        "terrain": -3.6568070389196947,
+        "top": 1.799999999999983
+      },
+      {
+        "x": 0,
+        "z": 9.9,
+        "bottom": -12.586278317220575,
+        "terrain": -2.108754512484424,
+        "top": 1.799999999999983
+      },
+      {
+        "x": 5,
+        "z": -9.9,
+        "bottom": -12.586278317220575,
+        "terrain": -9.7174797171743,
+        "top": 1.799999999999983
+      },
+      {
+        "x": 5,
+        "z": -5,
+        "bottom": -12.586278317220575,
+        "terrain": -8.161365395639166,
+        "top": 1.799999999999983
+      },
+      {
+        "x": 5,
+        "z": 0,
+        "bottom": -12.586278317220575,
+        "terrain": -6.581719960501118,
+        "top": 1.799999999999983
+      },
+      {
+        "x": 5,
+        "z": 5,
+        "bottom": -12.586278317220575,
+        "terrain": -5.0020745253630565,
+        "top": 1.799999999999983
+      },
+      {
+        "x": 5,
+        "z": 9.9,
+        "bottom": -12.586278317220575,
+        "terrain": -3.454021998927786,
+        "top": 1.799999999999983
+      },
+      {
+        "x": 9.9,
+        "z": -9.9,
+        "bottom": -12.586278317220575,
+        "terrain": -11.027780058788963,
+        "top": 1.799999999999983
+      },
+      {
+        "x": 9.9,
+        "z": -5,
+        "bottom": -12.586278317220575,
+        "terrain": -9.479727532353678,
+        "top": 1.799999999999983
+      },
+      {
+        "x": 9.9,
+        "z": 0,
+        "bottom": -12.586278317220575,
+        "terrain": -7.900082097215616,
+        "top": 1.799999999999983
+      },
+      {
+        "x": 9.9,
+        "z": 5,
+        "bottom": -12.586278317220575,
+        "terrain": -6.320436662077597,
+        "top": 1.799999999999983
+      },
+      {
+        "x": 9.9,
+        "z": 9.9,
+        "bottom": -12.586278317220575,
+        "terrain": -4.772384135642298,
+        "top": 1.799999999999983
+      }
+    ],
+    "outerSupports": [
+      {
+        "kind": "outer_buttress",
+        "side": 0,
+        "x": -8.8,
+        "z": 11.8,
+        "gap": 3.090592848870031
+      },
+      {
+        "kind": "outer_buttress",
+        "side": 0,
+        "x": -8.8,
+        "z": 12.5,
+        "gap": 3.0925149903117983
+      },
+      {
+        "kind": "outer_buttress",
+        "side": 0,
+        "x": -8.8,
+        "z": 13.2,
+        "gap": 3.0944289644479426
+      },
+      {
+        "kind": "outer_buttress",
+        "side": 0,
+        "x": -7.8,
+        "z": 11.8,
+        "gap": 3.092984842532772
+      },
+      {
+        "kind": "outer_buttress",
+        "side": 0,
+        "x": -7.8,
+        "z": 12.5,
+        "gap": 3.0949571257274613
+      },
+      {
+        "kind": "outer_buttress",
+        "side": 0,
+        "x": -7.8,
+        "z": 13.2,
+        "gap": 3.0969294089221506
+      },
+      {
+        "kind": "outer_buttress",
+        "side": 0,
+        "x": -6.8,
+        "z": 11.8,
+        "gap": 3.0965184836814075
+      },
+      {
+        "kind": "outer_buttress",
+        "side": 0,
+        "x": -6.8,
+        "z": 12.5,
+        "gap": 3.098490766876097
+      },
+      {
+        "kind": "outer_buttress",
+        "side": 0,
+        "x": -6.8,
+        "z": 13.2,
+        "gap": 3.1004630500708146
+      },
+      {
+        "kind": "outer_buttress",
+        "side": 0,
+        "x": 6.8,
+        "z": 11.8,
+        "gap": 6.638053028694927
+      },
+      {
+        "kind": "outer_buttress",
+        "side": 0,
+        "x": 6.8,
+        "z": 12.5,
+        "gap": 6.4169026677756165
+      },
+      {
+        "kind": "outer_buttress",
+        "side": 0,
+        "x": 6.8,
+        "z": 13.2,
+        "gap": 6.195752306856278
+      },
+      {
+        "kind": "outer_buttress",
+        "side": 0,
+        "x": 7.8,
+        "z": 11.8,
+        "gap": 6.907106525983593
+      },
+      {
+        "kind": "outer_buttress",
+        "side": 0,
+        "x": 7.8,
+        "z": 12.5,
+        "gap": 6.685956165064297
+      },
+      {
+        "kind": "outer_buttress",
+        "side": 0,
+        "x": 7.8,
+        "z": 13.2,
+        "gap": 6.464805804144973
+      },
+      {
+        "kind": "outer_buttress",
+        "side": 0,
+        "x": 8.8,
+        "z": 11.8,
+        "gap": 7.176160023272274
+      },
+      {
+        "kind": "outer_buttress",
+        "side": 0,
+        "x": 8.8,
+        "z": 12.5,
+        "gap": 6.955009662352936
+      },
+      {
+        "kind": "outer_buttress",
+        "side": 0,
+        "x": 8.8,
+        "z": 13.2,
+        "gap": 6.73385930143364
+      },
+      {
+        "kind": "outer_buttress",
+        "side": 1,
+        "x": -8.8,
+        "z": 11.8,
+        "gap": 8.931107776221154
+      },
+      {
+        "kind": "outer_buttress",
+        "side": 1,
+        "x": -8.8,
+        "z": 12.5,
+        "gap": 9.119445224323243
+      },
+      {
+        "kind": "outer_buttress",
+        "side": 1,
+        "x": -8.8,
+        "z": 13.2,
+        "gap": 9.30778267242529
+      },
+      {
+        "kind": "outer_buttress",
+        "side": 1,
+        "x": -7.8,
+        "z": 11.8,
+        "gap": 9.247036863248766
+      },
+      {
+        "kind": "outer_buttress",
+        "side": 1,
+        "x": -7.8,
+        "z": 12.5,
+        "gap": 9.435374311350785
+      },
+      {
+        "kind": "outer_buttress",
+        "side": 1,
+        "x": -7.8,
+        "z": 13.2,
+        "gap": 9.623711759452902
+      },
+      {
+        "kind": "outer_buttress",
+        "side": 1,
+        "x": -6.8,
+        "z": 11.8,
+        "gap": 9.562965950276364
+      },
+      {
+        "kind": "outer_buttress",
+        "side": 1,
+        "x": -6.8,
+        "z": 12.5,
+        "gap": 9.751303398378397
+      },
+      {
+        "kind": "outer_buttress",
+        "side": 1,
+        "x": -6.8,
+        "z": 13.2,
+        "gap": 9.9396408464805
+      },
+      {
+        "kind": "outer_buttress",
+        "side": 1,
+        "x": 6.8,
+        "z": 11.8,
+        "gap": 13.859601533851873
+      },
+      {
+        "kind": "outer_buttress",
+        "side": 1,
+        "x": 6.8,
+        "z": 12.5,
+        "gap": 14.047938981953905
+      },
+      {
+        "kind": "outer_buttress",
+        "side": 1,
+        "x": 6.8,
+        "z": 13.2,
+        "gap": 14.23627643005598
+      },
+      {
+        "kind": "outer_buttress",
+        "side": 1,
+        "x": 7.8,
+        "z": 11.8,
+        "gap": 14.175530620879499
+      },
+      {
+        "kind": "outer_buttress",
+        "side": 1,
+        "x": 7.8,
+        "z": 12.5,
+        "gap": 14.363868068981517
+      },
+      {
+        "kind": "outer_buttress",
+        "side": 1,
+        "x": 7.8,
+        "z": 13.2,
+        "gap": 14.552205517083607
+      },
+      {
+        "kind": "outer_buttress",
+        "side": 1,
+        "x": 8.8,
+        "z": 11.8,
+        "gap": 14.491459707907097
+      },
+      {
+        "kind": "outer_buttress",
+        "side": 1,
+        "x": 8.8,
+        "z": 12.5,
+        "gap": 14.67979715600913
+      },
+      {
+        "kind": "outer_buttress",
+        "side": 1,
+        "x": 8.8,
+        "z": 13.2,
+        "gap": 14.868134604111233
+      },
+      {
+        "kind": "outer_buttress",
+        "side": 2,
+        "x": -8.8,
+        "z": 11.8,
+        "gap": 14.632086477123877
+      },
+      {
+        "kind": "outer_buttress",
+        "side": 2,
+        "x": -8.8,
+        "z": 12.5,
+        "gap": 14.85323683804316
+      },
+      {
+        "kind": "outer_buttress",
+        "side": 2,
+        "x": -8.8,
+        "z": 13.2,
+        "gap": 15.074387198962512
+      },
+      {
+        "kind": "outer_buttress",
+        "side": 2,
+        "x": -7.8,
+        "z": 11.8,
+        "gap": 14.363032979835197
+      },
+      {
+        "kind": "outer_buttress",
+        "side": 2,
+        "x": -7.8,
+        "z": 12.5,
+        "gap": 14.584183340754478
+      },
+      {
+        "kind": "outer_buttress",
+        "side": 2,
+        "x": -7.8,
+        "z": 13.2,
+        "gap": 14.805333701673831
+      },
+      {
+        "kind": "outer_buttress",
+        "side": 2,
+        "x": -6.8,
+        "z": 11.8,
+        "gap": 14.09397948254653
+      },
+      {
+        "kind": "outer_buttress",
+        "side": 2,
+        "x": -6.8,
+        "z": 12.5,
+        "gap": 14.317791318518402
+      },
+      {
+        "kind": "outer_buttress",
+        "side": 2,
+        "x": -6.8,
+        "z": 13.2,
+        "gap": 14.558517839609124
+      },
+      {
+        "kind": "outer_buttress",
+        "side": 2,
+        "x": 6.8,
+        "z": 11.8,
+        "gap": -0.2540942938915691
+      },
+      {
+        "kind": "outer_buttress",
+        "side": 2,
+        "x": 6.8,
+        "z": 12.5,
+        "gap": -0.013367772800847888
+      },
+      {
+        "kind": "outer_buttress",
+        "side": 2,
+        "x": 6.8,
+        "z": 13.2,
+        "gap": 11.489568110221768
+      },
+      {
+        "kind": "outer_buttress",
+        "side": 2,
+        "x": 7.8,
+        "z": 11.8,
+        "gap": -0.4797523622288651
+      },
+      {
+        "kind": "outer_buttress",
+        "side": 2,
+        "x": 7.8,
+        "z": 12.5,
+        "gap": -0.23902584113818648
+      },
+      {
+        "kind": "outer_buttress",
+        "side": 2,
+        "x": 7.8,
+        "z": 13.2,
+        "gap": 11.263910041884472
+      },
+      {
+        "kind": "outer_buttress",
+        "side": 2,
+        "x": 8.8,
+        "z": 11.8,
+        "gap": -0.705410430566161
+      },
+      {
+        "kind": "outer_buttress",
+        "side": 2,
+        "x": 8.8,
+        "z": 12.5,
+        "gap": -0.4646839094754398
+      },
+      {
+        "kind": "outer_buttress",
+        "side": 2,
+        "x": 8.8,
+        "z": 13.2,
+        "gap": 11.038251973547162
+      },
+      {
+        "kind": "outer_buttress",
+        "side": 3,
+        "x": -8.8,
+        "z": 11.8,
+        "gap": 8.848139635964998
+      },
+      {
+        "kind": "outer_buttress",
+        "side": 3,
+        "x": -8.8,
+        "z": 12.5,
+        "gap": 8.69017898812892
+      },
+      {
+        "kind": "outer_buttress",
+        "side": 3,
+        "x": -8.8,
+        "z": 13.2,
+        "gap": 8.532218340292786
+      },
+      {
+        "kind": "outer_buttress",
+        "side": 3,
+        "x": -7.8,
+        "z": 11.8,
+        "gap": 8.504244605835382
+      },
+      {
+        "kind": "outer_buttress",
+        "side": 3,
+        "x": -7.8,
+        "z": 12.5,
+        "gap": 8.346283957999304
+      },
+      {
+        "kind": "outer_buttress",
+        "side": 3,
+        "x": -7.8,
+        "z": 13.2,
+        "gap": 8.188323310163199
+      },
+      {
+        "kind": "outer_buttress",
+        "side": 3,
+        "x": -6.8,
+        "z": 11.8,
+        "gap": 8.16034957570578
+      },
+      {
+        "kind": "outer_buttress",
+        "side": 3,
+        "x": -6.8,
+        "z": 12.5,
+        "gap": 8.002388927869703
+      },
+      {
+        "kind": "outer_buttress",
+        "side": 3,
+        "x": -6.8,
+        "z": 13.2,
+        "gap": 7.844428280033554
+      },
+      {
+        "kind": "outer_buttress",
+        "side": 3,
+        "x": 6.8,
+        "z": 11.8,
+        "gap": 3.483377165943196
+      },
+      {
+        "kind": "outer_buttress",
+        "side": 3,
+        "x": 6.8,
+        "z": 12.5,
+        "gap": 3.3254165181071045
+      },
+      {
+        "kind": "outer_buttress",
+        "side": 3,
+        "x": 6.8,
+        "z": 13.2,
+        "gap": 3.1674558702709703
+      },
+      {
+        "kind": "outer_buttress",
+        "side": 3,
+        "x": 7.8,
+        "z": 11.8,
+        "gap": 3.1394821358136085
+      },
+      {
+        "kind": "outer_buttress",
+        "side": 3,
+        "x": 7.8,
+        "z": 12.5,
+        "gap": 2.999270351822773
+      },
+      {
+        "kind": "outer_buttress",
+        "side": 3,
+        "x": 7.8,
+        "z": 13.2,
+        "gap": 2.9911092793062295
+      },
+      {
+        "kind": "outer_buttress",
+        "side": 3,
+        "x": 8.8,
+        "z": 11.8,
+        "gap": 3.0210213115893367
+      },
+      {
+        "kind": "outer_buttress",
+        "side": 3,
+        "x": 8.8,
+        "z": 12.5,
+        "gap": 3.0128602390727792
+      },
+      {
+        "kind": "outer_buttress",
+        "side": 3,
+        "x": 8.8,
+        "z": 13.2,
+        "gap": 3.00469916655625
+      },
+      {
+        "kind": "fallen_stone",
+        "solid": 439,
+        "x": -556.9106984232259,
+        "z": 470.35204327657107,
+        "gap": -0.48445234286346306
+      },
+      {
+        "kind": "fallen_stone",
+        "solid": 439,
+        "x": -556.5147186257614,
+        "z": 468.4852813742386,
+        "gap": -0.8000000000000398
+      },
+      {
+        "kind": "fallen_stone",
+        "solid": 439,
+        "x": -554.6479567234289,
+        "z": 468.08930157677406,
+        "gap": -1.5849164392781887
+      },
+      {
+        "kind": "fallen_stone",
+        "solid": 439,
+        "x": -556.118738828297,
+        "z": 466.6185194719061,
+        "gap": -1.1155476571366023
+      },
+      {
+        "kind": "fallen_stone",
+        "solid": 439,
+        "x": -558.3814805280939,
+        "z": 468.88126117170304,
+        "gap": -0.015083560721862455
+      },
+      {
+        "kind": "fallen_stone",
+        "solid": 441,
+        "x": -561.9170144340266,
+        "z": 471.0025815152627,
+        "gap": -0.015083560721862455
+      },
+      {
+        "kind": "fallen_stone",
+        "solid": 441,
+        "x": -560.4462323291586,
+        "z": 472.4733636201307,
+        "gap": -0.4844523428634204
+      },
+      {
+        "kind": "fallen_stone",
+        "solid": 441,
+        "x": -560.0502525316941,
+        "z": 470.6066017177982,
+        "gap": -0.8000000000000256
+      },
+      {
+        "kind": "fallen_stone",
+        "solid": 441,
+        "x": -558.1834906293617,
+        "z": 470.2106219203337,
+        "gap": -1.5849164392781603
+      },
+      {
+        "kind": "fallen_stone",
+        "solid": 441,
+        "x": -559.6542727342297,
+        "z": 468.7398398154657,
+        "gap": -1.115547657136574
+      },
+      {
+        "kind": "fallen_stone",
+        "solid": 443,
+        "x": -566.7253405460951,
+        "z": 471.5682669402119,
+        "gap": -1.1155476571366023
+      },
+      {
+        "kind": "fallen_stone",
+        "solid": 443,
+        "x": -567.1213203435597,
+        "z": 473.4350288425444,
+        "gap": -0.7999999999999972
+      },
+      {
+        "kind": "fallen_stone",
+        "solid": 443,
+        "x": -568.9880822458921,
+        "z": 473.83100864000886,
+        "gap": -0.015083560721862455
+      },
+      {
+        "kind": "fallen_stone",
+        "solid": 443,
+        "x": -567.5173001410242,
+        "z": 475.3017907448769,
+        "gap": -0.48445234286343464
+      },
+      {
+        "kind": "fallen_stone",
+        "solid": 443,
+        "x": -565.2545584412272,
+        "z": 473.03904904507993,
+        "gap": -1.5849164392781319
+      }
+    ],
+    "unsupported": [
+      {
+        "kind": "outer_buttress",
+        "side": 0,
+        "x": -8.8,
+        "z": 11.8,
+        "gap": 3.090592848870031
+      },
+      {
+        "kind": "outer_buttress",
+        "side": 0,
+        "x": -8.8,
+        "z": 12.5,
+        "gap": 3.0925149903117983
+      },
+      {
+        "kind": "outer_buttress",
+        "side": 0,
+        "x": -8.8,
+        "z": 13.2,
+        "gap": 3.0944289644479426
+      },
+      {
+        "kind": "outer_buttress",
+        "side": 0,
+        "x": -7.8,
+        "z": 11.8,
+        "gap": 3.092984842532772
+      },
+      {
+        "kind": "outer_buttress",
+        "side": 0,
+        "x": -7.8,
+        "z": 12.5,
+        "gap": 3.0949571257274613
+      },
+      {
+        "kind": "outer_buttress",
+        "side": 0,
+        "x": -7.8,
+        "z": 13.2,
+        "gap": 3.0969294089221506
+      },
+      {
+        "kind": "outer_buttress",
+        "side": 0,
+        "x": -6.8,
+        "z": 11.8,
+        "gap": 3.0965184836814075
+      },
+      {
+        "kind": "outer_buttress",
+        "side": 0,
+        "x": -6.8,
+        "z": 12.5,
+        "gap": 3.098490766876097
+      },
+      {
+        "kind": "outer_buttress",
+        "side": 0,
+        "x": -6.8,
+        "z": 13.2,
+        "gap": 3.1004630500708146
+      },
+      {
+        "kind": "outer_buttress",
+        "side": 0,
+        "x": 6.8,
+        "z": 11.8,
+        "gap": 6.638053028694927
+      },
+      {
+        "kind": "outer_buttress",
+        "side": 0,
+        "x": 6.8,
+        "z": 12.5,
+        "gap": 6.4169026677756165
+      },
+      {
+        "kind": "outer_buttress",
+        "side": 0,
+        "x": 6.8,
+        "z": 13.2,
+        "gap": 6.195752306856278
+      },
+      {
+        "kind": "outer_buttress",
+        "side": 0,
+        "x": 7.8,
+        "z": 11.8,
+        "gap": 6.907106525983593
+      },
+      {
+        "kind": "outer_buttress",
+        "side": 0,
+        "x": 7.8,
+        "z": 12.5,
+        "gap": 6.685956165064297
+      },
+      {
+        "kind": "outer_buttress",
+        "side": 0,
+        "x": 7.8,
+        "z": 13.2,
+        "gap": 6.464805804144973
+      },
+      {
+        "kind": "outer_buttress",
+        "side": 0,
+        "x": 8.8,
+        "z": 11.8,
+        "gap": 7.176160023272274
+      },
+      {
+        "kind": "outer_buttress",
+        "side": 0,
+        "x": 8.8,
+        "z": 12.5,
+        "gap": 6.955009662352936
+      },
+      {
+        "kind": "outer_buttress",
+        "side": 0,
+        "x": 8.8,
+        "z": 13.2,
+        "gap": 6.73385930143364
+      },
+      {
+        "kind": "outer_buttress",
+        "side": 1,
+        "x": -8.8,
+        "z": 11.8,
+        "gap": 8.931107776221154
+      },
+      {
+        "kind": "outer_buttress",
+        "side": 1,
+        "x": -8.8,
+        "z": 12.5,
+        "gap": 9.119445224323243
+      },
+      {
+        "kind": "outer_buttress",
+        "side": 1,
+        "x": -8.8,
+        "z": 13.2,
+        "gap": 9.30778267242529
+      },
+      {
+        "kind": "outer_buttress",
+        "side": 1,
+        "x": -7.8,
+        "z": 11.8,
+        "gap": 9.247036863248766
+      },
+      {
+        "kind": "outer_buttress",
+        "side": 1,
+        "x": -7.8,
+        "z": 12.5,
+        "gap": 9.435374311350785
+      },
+      {
+        "kind": "outer_buttress",
+        "side": 1,
+        "x": -7.8,
+        "z": 13.2,
+        "gap": 9.623711759452902
+      },
+      {
+        "kind": "outer_buttress",
+        "side": 1,
+        "x": -6.8,
+        "z": 11.8,
+        "gap": 9.562965950276364
+      },
+      {
+        "kind": "outer_buttress",
+        "side": 1,
+        "x": -6.8,
+        "z": 12.5,
+        "gap": 9.751303398378397
+      },
+      {
+        "kind": "outer_buttress",
+        "side": 1,
+        "x": -6.8,
+        "z": 13.2,
+        "gap": 9.9396408464805
+      },
+      {
+        "kind": "outer_buttress",
+        "side": 1,
+        "x": 6.8,
+        "z": 11.8,
+        "gap": 13.859601533851873
+      },
+      {
+        "kind": "outer_buttress",
+        "side": 1,
+        "x": 6.8,
+        "z": 12.5,
+        "gap": 14.047938981953905
+      },
+      {
+        "kind": "outer_buttress",
+        "side": 1,
+        "x": 6.8,
+        "z": 13.2,
+        "gap": 14.23627643005598
+      },
+      {
+        "kind": "outer_buttress",
+        "side": 1,
+        "x": 7.8,
+        "z": 11.8,
+        "gap": 14.175530620879499
+      },
+      {
+        "kind": "outer_buttress",
+        "side": 1,
+        "x": 7.8,
+        "z": 12.5,
+        "gap": 14.363868068981517
+      },
+      {
+        "kind": "outer_buttress",
+        "side": 1,
+        "x": 7.8,
+        "z": 13.2,
+        "gap": 14.552205517083607
+      },
+      {
+        "kind": "outer_buttress",
+        "side": 1,
+        "x": 8.8,
+        "z": 11.8,
+        "gap": 14.491459707907097
+      },
+      {
+        "kind": "outer_buttress",
+        "side": 1,
+        "x": 8.8,
+        "z": 12.5,
+        "gap": 14.67979715600913
+      },
+      {
+        "kind": "outer_buttress",
+        "side": 1,
+        "x": 8.8,
+        "z": 13.2,
+        "gap": 14.868134604111233
+      },
+      {
+        "kind": "outer_buttress",
+        "side": 2,
+        "x": -8.8,
+        "z": 11.8,
+        "gap": 14.632086477123877
+      },
+      {
+        "kind": "outer_buttress",
+        "side": 2,
+        "x": -8.8,
+        "z": 12.5,
+        "gap": 14.85323683804316
+      },
+      {
+        "kind": "outer_buttress",
+        "side": 2,
+        "x": -8.8,
+        "z": 13.2,
+        "gap": 15.074387198962512
+      },
+      {
+        "kind": "outer_buttress",
+        "side": 2,
+        "x": -7.8,
+        "z": 11.8,
+        "gap": 14.363032979835197
+      },
+      {
+        "kind": "outer_buttress",
+        "side": 2,
+        "x": -7.8,
+        "z": 12.5,
+        "gap": 14.584183340754478
+      },
+      {
+        "kind": "outer_buttress",
+        "side": 2,
+        "x": -7.8,
+        "z": 13.2,
+        "gap": 14.805333701673831
+      },
+      {
+        "kind": "outer_buttress",
+        "side": 2,
+        "x": -6.8,
+        "z": 11.8,
+        "gap": 14.09397948254653
+      },
+      {
+        "kind": "outer_buttress",
+        "side": 2,
+        "x": -6.8,
+        "z": 12.5,
+        "gap": 14.317791318518402
+      },
+      {
+        "kind": "outer_buttress",
+        "side": 2,
+        "x": -6.8,
+        "z": 13.2,
+        "gap": 14.558517839609124
+      },
+      {
+        "kind": "outer_buttress",
+        "side": 2,
+        "x": 6.8,
+        "z": 13.2,
+        "gap": 11.489568110221768
+      },
+      {
+        "kind": "outer_buttress",
+        "side": 2,
+        "x": 7.8,
+        "z": 13.2,
+        "gap": 11.263910041884472
+      },
+      {
+        "kind": "outer_buttress",
+        "side": 2,
+        "x": 8.8,
+        "z": 13.2,
+        "gap": 11.038251973547162
+      },
+      {
+        "kind": "outer_buttress",
+        "side": 3,
+        "x": -8.8,
+        "z": 11.8,
+        "gap": 8.848139635964998
+      },
+      {
+        "kind": "outer_buttress",
+        "side": 3,
+        "x": -8.8,
+        "z": 12.5,
+        "gap": 8.69017898812892
+      },
+      {
+        "kind": "outer_buttress",
+        "side": 3,
+        "x": -8.8,
+        "z": 13.2,
+        "gap": 8.532218340292786
+      },
+      {
+        "kind": "outer_buttress",
+        "side": 3,
+        "x": -7.8,
+        "z": 11.8,
+        "gap": 8.504244605835382
+      },
+      {
+        "kind": "outer_buttress",
+        "side": 3,
+        "x": -7.8,
+        "z": 12.5,
+        "gap": 8.346283957999304
+      },
+      {
+        "kind": "outer_buttress",
+        "side": 3,
+        "x": -7.8,
+        "z": 13.2,
+        "gap": 8.188323310163199
+      },
+      {
+        "kind": "outer_buttress",
+        "side": 3,
+        "x": -6.8,
+        "z": 11.8,
+        "gap": 8.16034957570578
+      },
+      {
+        "kind": "outer_buttress",
+        "side": 3,
+        "x": -6.8,
+        "z": 12.5,
+        "gap": 8.002388927869703
+      },
+      {
+        "kind": "outer_buttress",
+        "side": 3,
+        "x": -6.8,
+        "z": 13.2,
+        "gap": 7.844428280033554
+      },
+      {
+        "kind": "outer_buttress",
+        "side": 3,
+        "x": 6.8,
+        "z": 11.8,
+        "gap": 3.483377165943196
+      },
+      {
+        "kind": "outer_buttress",
+        "side": 3,
+        "x": 6.8,
+        "z": 12.5,
+        "gap": 3.3254165181071045
+      },
+      {
+        "kind": "outer_buttress",
+        "side": 3,
+        "x": 6.8,
+        "z": 13.2,
+        "gap": 3.1674558702709703
+      },
+      {
+        "kind": "outer_buttress",
+        "side": 3,
+        "x": 7.8,
+        "z": 11.8,
+        "gap": 3.1394821358136085
+      },
+      {
+        "kind": "outer_buttress",
+        "side": 3,
+        "x": 7.8,
+        "z": 12.5,
+        "gap": 2.999270351822773
+      },
+      {
+        "kind": "outer_buttress",
+        "side": 3,
+        "x": 7.8,
+        "z": 13.2,
+        "gap": 2.9911092793062295
+      },
+      {
+        "kind": "outer_buttress",
+        "side": 3,
+        "x": 8.8,
+        "z": 11.8,
+        "gap": 3.0210213115893367
+      },
+      {
+        "kind": "outer_buttress",
+        "side": 3,
+        "x": 8.8,
+        "z": 12.5,
+        "gap": 3.0128602390727792
+      },
+      {
+        "kind": "outer_buttress",
+        "side": 3,
+        "x": 8.8,
+        "z": 13.2,
+        "gap": 3.00469916655625
+      }
+    ],
+    "scope": "25 primary footing plus72 outer buttress and15 fallen-stone terrain rays"
+  },
+  "artReview": "PENDING_RENDER",
+  "humanApproved": false
+}

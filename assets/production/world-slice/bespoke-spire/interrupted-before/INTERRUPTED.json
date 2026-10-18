@@ -1,0 +1,16 @@
+{
+  "status": "INTERRUPTED_NO_EXIT_RECEIPT",
+  "blenderProcessPresentAtResume": false,
+  "completedImages": [
+    "native_road_eye.png"
+  ],
+  "expectedImages": 5,
+  "rawFilesPreserved": true,
+  "sha256": {
+    "blender-stderr.txt": "81a2ef31730548ab6363dc1c3bac0dafd9f1ff339667bb3c1c07083b60ef1691",
+    "blender-stdout.txt": "3075406c539196db01361768b264f4adad3baac358b5bd69cc15cc6bf9572acf",
+    "landforms.blend": "d64e9bbab72433cf9ad3a98c36791e507f9a12d2b0290ed0ee618d72ce2ecc65",
+    "native_road_eye.png": "f6b972d262353900a7f95ceaf4dcd526e7604a7ecdb2f8793e1db04c7c46836b",
+    "recipe-at-resume.py": "67dcb58f043efe8f2f6429a4957e5809b3ec525253aa179e8f2054cd4c95d35c"
+  }
+}

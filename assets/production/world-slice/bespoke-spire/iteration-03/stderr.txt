@@ -1,0 +1,11 @@
+Traceback (most recent call last):
+  File "C:\Work\MySelf\Guildborne-city-greenwood\production\world\quality-slice\bespoke-spire\recipe.py", line 179, in <module>
+    if __name__=='__main__':main()
+                            ~~~~^^
+  File "C:\Work\MySelf\Guildborne-city-greenwood\production\world\quality-slice\bespoke-spire\recipe.py", line 123, in main
+    prism([[-9,102.3],[-3.8,102.3],[-3.8,top-4],[-5.5,top-2],[-6.6,top],[-9,top-.8]],6.6,9.5,2,r)
+    ~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Work\MySelf\Guildborne-city-greenwood\production\world\quality-slice\bespoke-spire\recipe.py", line 51, in prism
+    assert sum(normal[k]*((a[k]+b[k]+c[k])/3-center[k]) for k in range(3))>1e-9
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+AssertionError

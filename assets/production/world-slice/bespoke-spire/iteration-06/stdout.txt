@@ -1,0 +1,76 @@
+{
+  "sourceSha256": "79e3c3ea39f702ee77d6765ea41d0dffbdbc9cd4a1c674faa1a01832e82f807f",
+  "packetSha256": "148ba821817101a0372d851f557d4c7593a594295814f0e20da194924adfb3ae",
+  "retiredMesh": "landforms_ruined_beacon__000",
+  "retiredMeshPreserved": false,
+  "allOtherResourcesAndPlacementsExact": true,
+  "retainedOriginalProps": 57,
+  "uniqueTriangles": 11330,
+  "instancedTriangles": 40006,
+  "placements": 72,
+  "spireTriangles": 5724,
+  "spireBounds": {
+    "min": [
+      -580.8391918985786,
+      -12.58627831722058,
+      444.1608081014213
+    ],
+    "max": [
+      -549.1608081014214,
+      119.5,
+      475.8391918985787
+    ]
+  },
+  "foundationSamples": [
+    {
+      "x": -565.0,
+      "z": 474.14213562373095,
+      "groundY": -6.366998195127707
+    },
+    {
+      "x": -557.9289321881345,
+      "z": 467.0710678118655,
+      "groundY": -2.9280478938316534
+    },
+    {
+      "x": -550.857864376269,
+      "z": 460.0,
+      "groundY": 0.24168520866816096
+    },
+    {
+      "x": -572.0710678118655,
+      "z": 467.0710678118655,
+      "groundY": -8.62357887850079
+    },
+    {
+      "x": -565.0,
+      "z": 460.0,
+      "groundY": -5.2364524740577325
+    },
+    {
+      "x": -557.9289321881345,
+      "z": 452.9289321881345,
+      "groundY": -2.0771616037816236
+    },
+    {
+      "x": -579.142135623731,
+      "z": 460.0,
+      "groundY": -11.08627831722058
+    },
+    {
+      "x": -572.0710678118655,
+      "z": 452.9289321881345,
+      "groundY": -7.926987446944521
+    },
+    {
+      "x": -565.0,
+      "z": 445.85786437626905,
+      "groundY": -4.76769657666841
+    }
+  ],
+  "foundationBottom": -12.58627831722058,
+  "closedSolids": 477,
+  "outwardSolidFaceCheck": true,
+  "zeroAreaFaces": 0,
+  "groundAndNodesUnmodified": true
+}

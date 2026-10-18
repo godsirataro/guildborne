@@ -1,0 +1,12 @@
+{
+  "kind": "TOOL_OUTPUT_TRANSCRIPTION_NOT_ORIGINAL_RAW_RECEIPT",
+  "reason": "Verifier added fixed source-hash assertion after initial successful check. run_checks was rerun; initial receipt file was overwritten. Raw stdout/stderr hashes are identical across both observed runs. Final checks-receipt.json is the retained authoritative invocation.",
+  "initialVerifierSha256": "91754c73e385b6e6a3be5ab03669b0048dba66e171680822ba59f25709f90a40",
+  "initialGeometrySeconds": 8.36349479999626,
+  "initialArchitectureSeconds": 11.569620700000087,
+  "initialExitCodes": [
+    0,
+    0
+  ],
+  "packetSha256": "148ba821817101a0372d851f557d4c7593a594295814f0e20da194924adfb3ae"
+}

@@ -1,0 +1,21 @@
+{
+  "status": "FILE_GENERATED_NOT_STUDIO",
+  "origin": "Original deterministic Guildborne masonry geometry authored in recipe.py",
+  "license": "Original architecture; retained original Guildborne fern-rock and reviewed Quaternius CC0 bush reused in two deliberate placements",
+  "source": "assets\\production\\world-slice\\coast-composition\\scenery.mesh.json",
+  "sourceSha256": "79e3c3ea39f702ee77d6765ea41d0dffbdbc9cd4a1c674faa1a01832e82f807f",
+  "packetSha256": "02d4bb6d7d77bac482f2a3bf0e201eece4aa22e0af5341bae957f5ec3cd8be45",
+  "runtimeIds": null,
+  "studioTested": false,
+  "humanApproved": false,
+  "design": "Stepped ashlar base, buttress fins, two tiers of true arched apertures, asymmetrical fractured watch crown and three deliberate mossed fallen stones.",
+  "envelopeException": "Buried support bottom follows terrain; visible spire kept within previous landmark envelope.",
+  "reusedAccentResources": [
+    "silhouette_fern_rocks__000",
+    "bush__000"
+  ],
+  "licenseFiles": [
+    "assets/production/world-slice/village-LICENSE.txt",
+    "assets/production/world-slice/ruins-LICENSE.txt"
+  ]
+}

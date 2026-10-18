@@ -1,0 +1,24 @@
+{
+  "status": "BLENDER_RENDERED_NOT_STUDIO",
+  "groundPath": "C:\\Work\\MySelf\\Guildborne-city-greenwood\\production\\world\\quality-slice\\continuous-corridor\\ground.json",
+  "groundSha256": "398a440048136c1e81f39f0ac0f40c72b3ecdfb442777a47c490bf678daa7b35",
+  "sourceSha256": "ba6d606007927861bea2bcca659ff0480560eb425f56dd314fa0810ba15cfcc1",
+  "packetSha256": "79e3c3ea39f702ee77d6765ea41d0dffbdbc9cd4a1c674faa1a01832e82f807f",
+  "cameraSha256": "2cfac2dcedd3e484775fe24ee5c248684858aaa29c270f1d0d174d508289d26d",
+  "groundParts": 444,
+  "views": [
+    "native_road_eye",
+    "spire_reveal",
+    "close_front",
+    "close_side",
+    "base_detail"
+  ],
+  "context": "City bounds and Greenwood landing are explicitly schematic reference boxes; omitted game geometry is not claimed imported",
+  "hashes": {
+    "base_detail.png": "701a9fd3c742482bcc9132114a5b6cab49f638b9ab4ba94e64a564ef66cbeba4",
+    "close_front.png": "fc0bb1ea4ff3e984fcd70571389bb06d8fbbf4dfe357a325f2332f5c3ff947c8",
+    "close_side.png": "178a4cfdcad370bd03659f5fa347254535ecaf645017f80566bfbcf9c252dbde",
+    "native_road_eye.png": "9f09f91a692195fca7ce6dce6b6abc38126cc157d3b42458f301a99a0447795f",
+    "spire_reveal.png": "83ebcd436b16b2b35d691e9c4b1db4fc7ca443ef2995ccf0bc8bcd7d0ecc0db1"
+  }
+}
