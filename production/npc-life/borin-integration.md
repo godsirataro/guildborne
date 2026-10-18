@@ -178,6 +178,33 @@ Scoped compilation/type analysis and seven Borin/eight NPC contract tests passed
 the new twelve-case Studio fixture was NOT_RUN by S17.
 ## Deepforge contact adapter — source candidate (2026-10-18)
 
+### Durn-specific client probe follow-up
+
+Invoke `studio_borin_integration({animator=require(actualFriendlyNpcAnimatorModule),
+npcId="host_deepforge"})` from the client in the isolated candidate. This now selects
+a Durn-specific fixture instead of Nyra. The actual world Durn must be streamed in,
+farther than CullDistance from the current camera, with BorinLocalWorkWeight zero
+before cloning; otherwise it fails before creating fixtures. This prevents taking
+an animated C0 as the bind pose. Close the ordinary Durn dialogue before running.
+
+The fixture clones that actual native model, removes all inherited tags while
+unparented, disables cloned prompts and places only the disposable clone near the
+stationary player. It never moves the player or original NPC, and writes no profile.
+One actual animator uses isolated collection signals. A unique camera render binding
+after the normal camera priority holds near/far views and is unbound on cleanup;
+original camera type/CFrame, Lighting.ClockTime and reduced motion are restored.
+
+Checks include an observed animated hammer contact within .025 studs (minimum
+observed error, not a maximum-error certificate), generic deadline AND speaker
+selection against conflicting legacy hints, zero work/contact while paused,
+recovery, active-arm preconditions before reduced/far/removal/Destroy restoration,
+duplicate discovery, and a quiet interval proving no remaining pose writer after
+removal/Destroy. All cloned instances and custom signals are destroyed on success
+or protected-run failure. Collection removal simulates the animator event contract;
+it does not prove real network streaming. Synthetic hints do not prove ordinary
+interaction or multiplayer. New client fixture remains NOT_RUN by S17; local
+compile/type review only. Prior server contact evidence does not certify this probe.
+
 Foreman Durn retains `host_deepforge`, its dialogue/prompt and civic quest binding.
 `BorinWorkMotion.usesForge` selects the existing forge presentation from either
 original smith identity or the explicit `WorkMotionIdentity=smith_borin` capability.
