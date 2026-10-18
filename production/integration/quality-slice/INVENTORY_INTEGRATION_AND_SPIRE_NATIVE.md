@@ -36,8 +36,11 @@ Close camera(-565,62,360)->(-565,55,460); road camera(-320,11,-250)->
 but uniform stone, sparse base accents and broad bare surroundings remain.
 No local PNG archive or human art approval claimed.
 
-Synthetic party fixture is RUNNING at this checkpoint; no new traversal PASS
-is claimed. Earlier COAST_PARTY_RAW applies to prior coast packet only.
+Synthetic party fixture subsequently completed PASS_NATIVE_FIXTURE:1487 samples,
+79 segments, max separation24.0295658, max sampled displacement3.8814807,
+rewardCalls0 and final City. Raw receipt SPIRE_PARTY_RAW.json. Play stopped after
+capture. This is synthetic eligibility and the pre-Inventory game source;
+it does not establish earned/full-game Inventory acceptance.
 
 Rebuilt combined Inventory+spire candidate separately after integration:
 c7527e912c6093be3483709d168d34414916cdf49c400498f0f8fbf4aed7cc2f,
