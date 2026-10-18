@@ -1,0 +1,9 @@
+{
+  "content": [
+    {
+      "type": "text",
+      "text": "{\"duplicates\":{\"ActorSelection\":2,\"ItemGrid\":2,\"ItemCategories\":2,\"InventoryHeading\":2,\"SelectedActorLoadout\":2,\"Capacity\":2,\"InventoryTools\":2},\"nonArchivable\":{\"1\":{\"name\":\"Climbing\",\"class\":\"Sound\"},\"3\":{\"name\":\"GettingUp\",\"class\":\"Sound\"},\"2\":{\"name\":\"Died\",\"class\":\"Sound\"},\"5\":{\"name\":\"Jumping\",\"class\":\"Sound\"},\"4\":{\"name\":\"Swimming\",\"class\":\"Sound\"},\"7\":{\"name\":\"Splash\",\"class\":\"Sound\"},\"6\":{\"name\":\"Landing\",\"class\":\"Sound\"},\"9\":{\"name\":\"Running\",\"class\":\"Sound\"},\"8\":{\"name\":\"FreeFalling\",\"class\":\"Sound\"},\"10\":{\"name\":\"Status\",\"class\":\"Status\"}}}"
+    }
+  ],
+  "isError": false
+}
