@@ -77,7 +77,8 @@ return function(test:any,eq:any)
   local service=Service(city,plots,heroes,localTravel,platform,if disabled then nil else walking)
   f.service=service;f.player=player;f.root=root;f.character=character;f.humanoid=humanoid;f.plotModel=plotModel;f.route=route;f.v=v;f.cf=cf;f.plots=plots;f.town=town;f.forest=forest;f.box=box
   function f.resetCounters()f.moves=0;f.velocities=0;f.heroMoves=0 end
-  function f.step(x:number?,y:number?)if x then root.Position=v(x,y or 5,0)end;now+=.5;step(.5)end
+  f.config=config
+  function f.step(x:number?,y:number?,z:number?)if x then root.Position=v(x,y or 5,z or 0)end;now+=.5;step(.5)end
   function f.follow():boolean return service.CanFollowWalking(player,root.Position) end
   function f.source(zone:string)assert(service.Travel(player,zone));f.step();f.resetCounters()end
   f.source("City")
@@ -297,6 +298,36 @@ return function(test:any,eq:any)
     end
     f.step(origin+sign*87);eq(f.follow(),true);eq(f.moves,0);eq(f.heroMoves,0)
    end
+  end
+ end)
+ test("hairpin Greenwood approach uses local incoming direction not entry-center axis",function()
+  for _,immediate in ipairs({false,true})do
+   local f=adapter()
+   f.config.contains=function(x:number,z:number)return math.abs(x)<=10 and z>=-680 and z<=-620 end
+   f.config.region=function(x:number,z:number)return if math.abs(x)<=10 and z>=1480 and z<=1528 then "Greenwood"else nil end
+   f.config.Destinations.City={X=0,Y=5,Z=-650,FallbackX=0,FallbackZ=-649}
+   local function box(x:number,z:number,w:number,d:number):any return {cframe=f.cf(x,5,z),size=f.v(w,8,d)}end
+   f.route.entries={City=box(0,-650,20,40),Greenwood=box(0,1510,20,40)}
+   f.route.volumes={box(25,-650,70,20),box(50,450,20,2220),box(25,1550,70,20),box(0,1525,20,70)}
+   f.route.safeRecovery.City=f.cf(0,5,-650);f.route.safeRecovery.Greenwood=f.cf(0,5,1505)
+   f.source("City");f.step(0,5,-650);eq(f.follow(),true)
+   f.step(25,5,-650);f.step(50,5,-650)
+   for z=-625,1550,25 do f.step(50,5,z)end
+   f.step(25,5,1550);f.step(0,5,1550)
+   -- Actual endpoint shape: incoming -Z is opposite the global City→Greenwood axis.
+   f.step(0,5,1526);eq(f.player.attributes.CurrentZone,"Greenwood")
+   eq(f.character:GetAttribute("WalkingRouteContext"),nil)
+   if immediate then
+    f.step(0,5,1534) -- Turn back immediately beyond the entry and zone edge.
+   else
+    for _,z in ipairs({1518,1515.38,1510,1505,1505,1505})do
+     f.step(0,5,z);eq(f.player.attributes.CurrentZone,"Greenwood")
+     eq(f.character:GetAttribute("WalkingRouteContext"),nil);eq(f.follow(),false)
+    end
+    f.step(0,5,1513)
+   end
+   eq(f.character:GetAttribute("WalkingRouteContext"),"city_greenwood_west|Greenwood|City")
+   eq(f.follow(),true);eq(f.moves,0);eq(f.velocities,0);eq(f.heroMoves,0)
   end
  end)
 end

@@ -64,8 +64,12 @@ the OBB union so bends do not authorize straight shortcuts through private plots
 
 After arrival, an identity-bound sample and return-motion latch prevent stationary
 or sub-two-stud oscillation from publishing a reverse route. Readmission requires
-at least two studs of net horizontal motion toward the opposite entry, projected
-along the entry-center axis from the furthest observed destination-side point.
+at least two studs of net horizontal motion back along the local incoming
+segment, projected from the furthest observed destination-side point. The axis
+is the reverse of the last validated horizontal step over 0.1 studs; idle/tiny
+steps retain that direction. It never derives direction from distant entry
+centers, which can point the wrong way on a hairpin approach. No measured
+horizontal approach means no directional return grant from the arrival latch.
 This is a displacement threshold, not a timer or accumulated jitter.
 An immediate turnaround inside the entry is supported without leaving it first;
 if subsequent samples cross its edge, arrival continuity is retained only while
@@ -106,6 +110,12 @@ Controller owns main-runner integration; this change does not edit tests/run.lua
 
 Independent review found a source-floor recovery-filter issue; corrected by
 including both source and surviving route geometry, with a dedicated regression.
+Controller subsequently reported a native fixture failure after 7edd0dc: outbound
+nodes completed, but continued Greenwood landing movement falsely published a
+reverse context at Z=1515.38. The local-axis regression models the reported final
+approach Z=1550→1526→1505 and both immediate and post-landing return. This local
+regression does not supersede the retained failed native fixture or establish
+that a new native run passes.
 Scoped compile/type checks and recorded test runs are local command evidence,
 not real physics, networking, prompt traversal or progression acceptance.
 

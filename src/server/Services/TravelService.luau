@@ -192,6 +192,11 @@ return function(city: any,plots: any,heroes: any,localTravel:any?,platform:any?,
   for _,volume in ipairs(route.volumes)do if Config.walkingContains(volume,position)then return true end end
   return false
  end
+ local function localReturnAxis(delta:Vector3):Vector3?
+  local length=math.sqrt(delta.X*delta.X+delta.Z*delta.Z)
+  -- Keep the last meaningful validated horizontal approach through idle samples.
+  return if length>.1 and length<math.huge then V(-delta.X/length,0,-delta.Z/length)else nil
+ end
  local function inZone(zone:string,position:Vector3):boolean
   return if zone=="City"then Config.contains(position.X,position.Z)else Config.region(position.X,position.Z)==zone
  end
@@ -260,6 +265,7 @@ return function(city: any,plots: any,heroes: any,localTravel:any?,platform:any?,
     local position=snapshot.position+delta*fraction
     if not routeContains(route,position)then return recoverWalking(player,snapshot,"TravelUnavailable")end
    end
+   snapshot.returnAxis=localReturnAxis(delta)or snapshot.returnAxis
    snapshot.position=root.Position;snapshot.at=now()
    if Config.walkingContains(route.entries[snapshot.to],root.Position) and inZone(snapshot.to,root.Position)then
     local region=city.regions and city.regions[snapshot.to]
@@ -269,10 +275,8 @@ return function(city: any,plots: any,heroes: any,localTravel:any?,platform:any?,
     zones[player]=snapshot.to;player:SetAttribute("CurrentZone",snapshot.to);player.RespawnLocation=spawn
     clearWalking(player)
     -- Keep an identity-bound arrival sample: standing/jitter is not a return trip.
-    local axis=route.entries[snapshot.from].cframe.Position-route.entries[snapshot.to].cframe.Position
-    local length=math.sqrt(axis.X*axis.X+axis.Z*axis.Z)
     local arrival={session=session,epoch=session.epoch,token=session.token,character=c,position=root.Position,at=now(),route=route,zone=snapshot.to,
-     axis=if length>0 then V(axis.X/length,0,axis.Z/length)else V(0,0,0),progress=0}
+     axis=snapshot.returnAxis or V(0,0,0),progress=0}
     walkingArrivals[player]=arrival;walkingSamples[player]=arrival
    end
    return true
@@ -325,6 +329,7 @@ return function(city: any,plots: any,heroes: any,localTravel:any?,platform:any?,
       end
       if arrival and arrival.route==route and not returnMotion then return true end
       if not Rules.walkingIdentity(candidate,walkingSession(player),player.Character)then return true end
+      candidate.returnAxis=localReturnAxis(root.Position-previous.position)
       walkingArrivals[player]=nil
       walkingStops[player]=candidate
       -- Atomic presentation hint only; never consulted by authority or eligibility.
