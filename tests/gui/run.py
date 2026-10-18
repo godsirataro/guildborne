@@ -11,6 +11,8 @@ MODULES += [f"src/client/UI/Components/{name}.luau" for name in
             ("GuildborneButton", "GuildbornePanel", "HeaderBar", "TabBar", "TitleKeyboardFocus", "RegalOrnament", "TitleVista")]
 MODULES += ["src/client/UI/SymbolIcon.luau", "src/shared/Data/UISymbols.luau"]
 MODULES += ["src/client/UI/TitleView.luau", "src/shared/Config/Localization.luau"]
+MODULES += ["src/client/UI/NoviceJourneyView.luau", "src/client/UI/Components/NoviceChapterCard.luau",
+            "src/shared/Data/NoviceJourneyViewState.luau", "src/server/Config/NoviceChapter.luau"]
 MODULES += ["src/shared/Data/JournalViewState.luau", "src/client/UI/EmptyState.luau",
             "src/shared/Data/CombatHudLayout.luau",
             "src/client/UI/QuestTrackerView.luau", "src/client/UI/Components/QualityAsset.luau",
@@ -38,7 +40,7 @@ def quote(text):
 
 def main():
     parser = argparse.ArgumentParser(description=__doc__)
-    parser.add_argument("--suite", choices=("all", "gameplay"), default="all")
+    parser.add_argument("--suite", choices=("all", "gameplay", "novice"), default="all")
     args = parser.parse_args()
     prefix = (ROOT / "tests/gui/runtime.luau").read_text(encoding="utf-8")
     code = "local Runtime=(function()\n" + prefix + "\nend)()\n"
@@ -58,6 +60,7 @@ end
         code += f"modules[node({quote('src/client/UI/'+name)})]={quote(stub)}\n"
     code += '''env.game={ReplicatedStorage={Shared=node("src/shared")},GetService=function(_,name) return env.Services[name] end}
 env.UI=node("src/client/UI")
+env.NoviceConfig=node("src/server/Config/NoviceChapter")
 env.require=function(target)
  if cache[target] then return cache[target] end
  assert(modules[target],"Unmapped module")
@@ -66,8 +69,8 @@ env.require=function(target)
  cache[target]=fn();return cache[target]
 end
 '''
-    suites = ["gameplay_behavior"] if args.suite == "gameplay" else [
-        "behavior", "gameplay_behavior", "waypoint_behavior", "tracker_polish", "menu_lifecycle"]
+    suites = ["novice_chapter"] if args.suite == "novice" else ["gameplay_behavior"] if args.suite == "gameplay" else [
+        "behavior", "gameplay_behavior", "waypoint_behavior", "tracker_polish", "menu_lifecycle", "novice_chapter"]
     for suite in suites:
         code += "do local run=assert(loadstring(" + quote((ROOT/f"tests/gui/{suite}.luau").read_text(encoding="utf-8")) + "));setfenv(run,env);run() end\n"
     with tempfile.TemporaryDirectory(prefix="guildborne-gui-tests-") as folder:
