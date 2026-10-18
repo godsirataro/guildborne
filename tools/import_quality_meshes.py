@@ -8,6 +8,8 @@ import re
 from pathlib import Path
 
 ID = re.compile(r"^[A-Za-z0-9_-]{1,100}$")
+# Observed CreateMeshPartAsync limit in the native corridor import failure.
+MAX_MESH_EXTENT = 2048
 
 def reject_constant(value):
     raise ValueError(f"Non-finite JSON: {value}")
@@ -34,6 +36,7 @@ def validate(data):
     if not isinstance(placements, list) or not 1 <= len(placements) <= 1000:
         raise ValueError("Placement count outside local preview budget")
     ids, total_faces, total_vertices = set(), 0, 0
+    extents = {}
     for mesh in meshes:
         key = mesh.get("id")
         if not isinstance(key, str) or not ID.fullmatch(key) or key in ids:
@@ -50,6 +53,10 @@ def validate(data):
             raise ValueError("Every face requires a color")
         for vertex in vertices:
             numbers(vertex, 3, 10000)
+        size = [max(v[axis] for v in vertices)-min(v[axis] for v in vertices) for axis in range(3)]
+        if max(size) > MAX_MESH_EXTENT:
+            raise ValueError(f"Mesh {key} exceeds {MAX_MESH_EXTENT}-stud native extents; spatially partition it")
+        extents[key] = size
         for color in colors:
             numbers(color, 3, 1)
             if min(color) < 0:
@@ -89,6 +96,8 @@ def validate(data):
         numbers(scale, 3, 100)
         if min(scale) < 0.01:
             raise ValueError("Scale must be positive and bounded")
+        if any(size*factor > MAX_MESH_EXTENT for size, factor in zip(extents[placement['meshId']], scale)):
+            raise ValueError(f"Placement {name} exceeds {MAX_MESH_EXTENT}-stud scaled native extents")
     return dict(meshes=len(meshes), vertices=total_vertices, triangles=total_faces, placements=len(placements))
 
 def validate_enemy(data):

@@ -21,11 +21,11 @@ def world_contract(sources):
         raise ValueError('World preview requires exactly one matching reviewed mesh dataset')
     return f'Dataset{matches[0]}',manifest
 
-def build(sources, launch=False, shared_combat=False, world=False, images=None, enemies=None, bind_enemies=False):
+def build(sources, launch=False, shared_combat=False, world=False, images=None, enemies=None, bind_enemies=False, continuous_world=False):
     if bind_enemies and not enemies:
         raise ValueError('Enemy binding requires reviewed enemy datasets')
     world_data=world_contract(sources) if world else None
-    build_integration_preview.build(launch, shared_combat)
+    build_integration_preview.build(launch, shared_combat, continuous_world)
     variant='launch' if launch else 'integration'
     out=ROOT/'build'
     project=json.loads((out/f'{variant}-preview.project.json').read_text())
@@ -98,7 +98,7 @@ def build(sources, launch=False, shared_combat=False, world=False, images=None, 
         if isinstance(node,dict) and '$attributes' in node:
             attributes.append({'path':['ReplicatedStorage','QualityPreviewAssets',name],'values':node['$attributes']})
     (sync/'sources.json').write_text(json.dumps({'mode':'VERIFY_BUILT_PLACE_ONLY_NOT_SOURCE_SYNC','candidateSha256':digest,'attributes':attributes,'entries':entries}),encoding='utf-8')
-    receipt={'status':'BUILT_NOT_STUDIO_TESTED','persistence':'Memory','candidate':str(candidate),'sha256':digest,'launch':launch,'sharedCombat':shared_combat,'worldSlice':world,'bindEnemies':bind_enemies,'art':reports,'enemies':enemy_reports,'images':image_report,'runtimeAssetsUploaded':False}
+    receipt={'status':'BUILT_NOT_STUDIO_TESTED','persistence':'Memory','candidate':str(candidate),'sha256':digest,'launch':launch,'sharedCombat':shared_combat,'continuousWorld':continuous_world,'worldSlice':world,'bindEnemies':bind_enemies,'art':reports,'enemies':enemy_reports,'images':image_report,'runtimeAssetsUploaded':False}
     (out/'quality-preview-build.json').write_text(json.dumps(receipt,indent=2)+'\n',encoding='utf-8')
     print(json.dumps(receipt,indent=2))
     return receipt
@@ -108,9 +108,10 @@ if __name__=='__main__':
     parser.add_argument('--mesh',type=Path,action='append',default=[])
     parser.add_argument('--launch',action='store_true')
     parser.add_argument('--shared-combat',action='store_true')
+    parser.add_argument('--continuous-world',action='store_true',help='Opt-in local Memory City-Greenwood walking; requires --launch')
     parser.add_argument('--world',action='store_true')
     parser.add_argument('--images',type=Path)
     parser.add_argument('--enemy',type=Path,action='append',default=[])
     parser.add_argument('--bind-enemies',action='store_true')
     args=parser.parse_args()
-    build(args.mesh,args.launch,args.shared_combat,args.world,args.images,args.enemy,args.bind_enemies)
+    build(args.mesh,args.launch,args.shared_combat,args.world,args.images,args.enemy,args.bind_enemies,args.continuous_world)
