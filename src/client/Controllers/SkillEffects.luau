@@ -111,6 +111,67 @@ return function()
 				{CFrame=cf+travel*1.12,Size=V(.04,.03,length),Transparency=1},.65)
 		end
 	end
+	local function warriorBasic(model: Model,aim: CFrame,target: Vector3,color: Color3)
+		local stamp=model:GetAttribute("ActionAt") :: number
+		local generation=generations[model]
+		local objects: {Instance}={};local connections: {RBXScriptConnection}={};local closed=false
+		local function close()
+			if closed then return end;closed=true
+			for _,connection in ipairs(connections) do connection:Disconnect() end
+			for _,object in ipairs(objects) do object:Destroy() end
+			table.clear(connections);table.clear(objects)
+		end
+		local function current(): boolean
+			return not closed and alive(model) and generations[model]==generation and model:GetAttribute("ActionAt")==stamp
+		end
+		local function invalidate() if not current() then close() end end
+		table.insert(connections,model:GetAttributeChangedSignal("ActionAt"):Connect(invalidate))
+		table.insert(connections,model:GetAttributeChangedSignal("CombatHealth"):Connect(invalidate))
+		table.insert(connections,model.AncestryChanged:Connect(invalidate))
+		local humanoid=model:FindFirstChildOfClass("Humanoid")
+		if humanoid then table.insert(connections,humanoid.Died:Connect(close)) end
+		-- Covers skipped markers too; no active cosmetic survives the action window.
+		task.delay(math.max(0,stamp+Timeline.Duration-workspace:GetServerTimeNow()),close)
+		local function visual(stage: string,size: Vector3,cf: CFrame,tint: Color3,shape: Enum.PartType,duration: number,goal: any): Part?
+			if not current() then close();return nil end
+			local part=make(size,cf,tint,shape,duration,goal)
+			if part then
+				part:SetAttribute("VFXFamily","Warrior.Basic");part:SetAttribute("VFXStage",stage)
+				table.insert(objects,part)
+			end
+			return part
+		end
+		atMarker(model,Timeline.Release,function()
+			if not current() then close();return end
+			-- A stalled release must not begin another swing after contact.
+			local remaining=Timeline.markerDelay(stamp,workspace:GetServerTimeNow(),Timeline.Contact)
+			if not remaining or remaining<=0 then return end
+			local hand=model:FindFirstChild("RightHand") or model:FindFirstChild("Right Arm")
+			if hand and hand:IsA("BasePart") and not hand:FindFirstChild("GuildborneCastTrail") then
+				local a=Instance.new("Attachment");a.Position=V(0,-.6,0);a.Parent=hand;table.insert(objects,a)
+				local b=Instance.new("Attachment");b.Position=V(0,-2.8,0);b.Parent=hand;table.insert(objects,b)
+				local trail=Instance.new("Trail");trail.Name="GuildborneCastTrail";trail.Attachment0=a;trail.Attachment1=b
+				trail.FaceCamera=true;trail.Lifetime=.16;trail.LightEmission=.45;trail.Color=ColorSequence.new(white,color)
+				trail.Transparency=NumberSequence.new(.2,1);trail.Parent=hand;table.insert(objects,trail)
+				task.delay(remaining,function() if trail.Parent then trail.Enabled=false end end)
+			end
+			local plane=aim*CFrame.Angles(.2,0,-.55);local n=if reduced() then 8 else 12
+			for i=1,n do
+				local a=-math.pi*.85+math.pi*1.35*(i-1)/n;local b=-math.pi*.85+math.pi*1.35*i/n
+				local start=plane:PointToWorldSpace(V(math.cos(a)*2.8,0,math.sin(a)*2.8))
+				local finish=plane:PointToWorldSpace(V(math.cos(b)*2.8,0,math.sin(b)*2.8));local length=(finish-start).Magnitude
+				local width=.09+math.sin(i/n*math.pi)*.17
+				visual("Release",V(width,width,length),CFrame.lookAt((start+finish)/2,finish),color,Enum.PartType.Block,.26,{Size=V(.02,.02,length),Transparency=1})
+			end
+		end)
+		atMarker(model,Timeline.Contact,function()
+			visual("Contact",V(.6,.6,.6),CFrame.new(target),white,Enum.PartType.Ball,.18,{Size=V(.8,.8,.8),Transparency=1})
+			for i=1,3 do
+				local angle=i*2.399;local direction=V(math.cos(angle),.3+(i%3)*.25,math.sin(angle))
+				visual("Contact",V(.12,.12,.8),CFrame.lookAt(target,target+direction),color,Enum.PartType.Block,.35,{Position=target+direction*2,Transparency=1})
+			end
+		end)
+	end
 	local function warriorCast(model: Model,aim: CFrame,target: Vector3,color: Color3,wide: boolean)
 		local hand=model:FindFirstChild("RightHand") or model:FindFirstChild("Right Arm")
 		local charge=if hand and hand:IsA("BasePart") then hand.Position else aim.Position+aim.RightVector
@@ -402,6 +463,7 @@ return function()
 		if skill then detailedUntil=now+.75 end
 		-- Stable semantic ID is intentionally presentation-only, never sent as a combat command.
 		if effectId=="Mage.Fireball" then color=Config.Fire end
+		if class=="Warrior" and effect=="Basic" then warriorBasic(model,aim,target,color);return end
 		if identity then pathCast(model,identity,aim,target);return end
 		if skill and classCast(model,class,effect,aim,target,color) then return end
 		if class=="Warrior" and skill and (effect=="Physical" or effect=="Area") then

@@ -154,3 +154,19 @@ for _,callbackAt in ipairs({.20,.30,.31}) do
 end
 assert(not markerFixture(0,.20,.12).accepted,"Late initial observation replayed release")
 print("PASS fireball flight window: delayed release shortens flight; no projectile at/after impact or expired initial release")
+
+-- Basic uses the same absolute markers even when its first observation is late.
+for _,case in ipairs({{age=0,release=true,contact=true},{age=.15,release=false,contact=true},{age=.30,release=false,contact=false}}) do
+	assert(markerFixture(0,case.age,T.Release).accepted==case.release)
+	assert(markerFixture(0,case.age,T.Contact).accepted==case.contact)
+end
+for _,callbackAt in ipairs({.15,.24,.25}) do
+	local now=0;local run;local swings=0
+	assert(T.scheduleMarker(0,T.Release,function() return now end,function(_,fn) run=fn end,function() return true end,function()
+		local remaining=T.markerDelay(0,now,T.Contact)
+		if remaining and remaining>0 then swings+=1 end
+	end))
+	now=callbackAt;assert(run)();assert(run)()
+	assert(swings==(if callbackAt<T.Contact then 1 else 0),"Basic replayed a release at/after contact")
+end
+print("PASS Basic marker windows: fresh, .15/.30 observations; stalled release skips at/after contact")
