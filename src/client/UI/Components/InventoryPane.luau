@@ -161,7 +161,8 @@ return function(parent: Instance, model: any): Frame
 			local grid = Instance.new("ScrollingFrame"); grid.Name = "ItemGrid"; grid.BorderSizePixel = 0; grid.BackgroundColor3 = C.Background
 			grid.Position = UDim2.fromOffset(x, gridTop); grid.Size = UDim2.fromOffset(width, 294)
 			grid.ScrollBarThickness = 4; grid.ScrollBarImageColor3 = C.Gold; grid.ScrollingDirection = Enum.ScrollingDirection.Y; grid.Parent = root
-			local layout = Instance.new("UIGridLayout"); layout.CellSize = UDim2.fromOffset(cellWidth, 138); layout.CellPadding = UDim2.fromOffset(8, 8); layout.SortOrder = Enum.SortOrder.LayoutOrder; layout.Parent = grid
+			local cellHeight = if phone then 116 else 138
+			local layout = Instance.new("UIGridLayout"); layout.CellSize = UDim2.fromOffset(cellWidth, cellHeight); layout.CellPadding = UDim2.fromOffset(8, 8); layout.SortOrder = Enum.SortOrder.LayoutOrder; layout.Parent = grid
 			local start = (page - 1) * 24 + 1
 			local count = 0
 			for index = start, math.min(#items, start + 23) do
@@ -170,10 +171,11 @@ return function(parent: Instance, model: any): Frame
 				tile.LayoutOrder = index; tile:SetAttribute("ItemId", tostring(item.id))
 				local padding = tile:FindFirstChildOfClass("UIPadding"); if padding then padding:Destroy() end
 				if item.definitionId then local art = AssetImage.item(tile, item.definitionId); if art then art.Position = UDim2.fromOffset(math.max(0, (cellWidth - 80) / 2), 4) end end
-				label(tile, "ItemLabel", item.name or "", 6, 84, cellWidth - 12, 48)
+				local itemLabel = label(tile, "ItemLabel", item.name or "", 6, 84, cellWidth - 12, cellHeight - 88)
+				itemLabel.TextSize = if phone then 13 else 14; itemLabel.TextTruncate = Enum.TextTruncate.AtEnd
 				if item.quantity then local quantity = label(tile, "Quantity", tostring(item.quantity), cellWidth - 44, 3, 38, 22); quantity.TextXAlignment = Enum.TextXAlignment.Right end
 			end
-			grid.CanvasSize = UDim2.fromOffset(0, math.ceil(count / columns) * 146)
+			grid.CanvasSize = UDim2.fromOffset(0, math.ceil(count / columns) * (cellHeight + 8))
 			if #items == 0 then label(root, "EmptyInventory", model.emptyText or T("No items match this filter."), x + 12, gridTop + 20, width - 24, 70) end
 			local bottom = 114 + 294
 			if #items > 24 then
@@ -190,8 +192,9 @@ return function(parent: Instance, model: any): Frame
 			if model.view == "Loadout" then height = loadout(4, y, w - 8)
 			elseif model.view == "Details" and selected then height = details(4, y, w - 8)
 			else
-				label(root, "SelectedActorSummary", model.actorName or "", 4, y, w - 8, 32, true)
-				height = 36 + inventory(4, y + 36, w - 8)
+				-- The actor strip already identifies the selection. Keep the first
+				-- complete item row inside the 320x568 management content viewport.
+				height = inventory(4, y, w - 8)
 			end
 		elseif desktop then
 			local left = math.floor(w * .25); local center = math.floor(w * .43); local right = w - left - center - 24

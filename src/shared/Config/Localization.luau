@@ -1,6 +1,20 @@
 --!strict
 -- English source strings are stable keys; placeholders are shared by both languages.
 local thai: { [string]: string } = {
+	["Owned"] = "ของที่มี",
+	["Shop"] = "ร้านค้า",
+	["Compatible"] = "สวมใส่ได้",
+	["All classes"] = "ทุกอาชีพ",
+	["Items"] = "ไอเทม",
+	["Loadout"] = "อุปกรณ์",
+	["Details"] = "รายละเอียด",
+	["Unequip"] = "ถอดอุปกรณ์",
+	["Quantity: {count}"] = "จำนวน: {count}",
+	["Your inventory is empty."] = "ยังไม่มีอุปกรณ์ในกระเป๋า",
+	["No matching items."] = "ไม่มีไอเทมตรงตามตัวกรอง",
+	["Actor preview unavailable"] = "ยังแสดงภาพตัวละครนี้ไม่ได้",
+	["Select an item to inspect its details."] = "เลือกไอเทมเพื่อดูรายละเอียด",
+	["No items match this filter."] = "ไม่มีไอเทมตรงตามตัวกรองนี้",
 	["Next waypoint"] = "จุดนำทางถัดไป",
 	["Destination direction — follow paths"] = "ทิศทางจุดหมาย — เดินตามทาง",
 	["Bearing only\nUse paths"] = "ทิศทางเท่านั้น\nเดินตามทาง",
