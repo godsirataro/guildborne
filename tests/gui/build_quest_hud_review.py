@@ -51,7 +51,16 @@ subprocess.run([str(Path(rojo).resolve()), 'build', str(path), '--output', str(p
 items = ET.parse(place).getroot().findall('.//Item')
 assert sum(item.get('class') == 'LocalScript' for item in items) == 1
 assert not any(item.get('class') in {'Script', 'RemoteEvent', 'RemoteFunction', 'UnreliableRemoteEvent'} for item in items)
-baseline = (ROOT / 'tests/gui/quest_tracker_before.luau').read_bytes()
-assert baseline == subprocess.check_output(['git', 'show', '3279e6d:src/client/UI/QuestTrackerView.luau'], cwd=ROOT)
+historical = subprocess.check_output(['git', 'show', '3279e6d:src/client/UI/QuestTrackerView.luau'], cwd=ROOT)
+original_imports = ('local Theme = require(script.Parent.DesignSystem.Theme)\n'
+                    'local Asset = require(script.Parent.Components.QualityAsset)')
+mapped_imports = ('-- Same baseline dependencies, explicitly mapped for the full-project analyzer.\n'
+                  'local Theme = require(game.StarterPlayer.StarterPlayerScripts.Client.UI.DesignSystem.Theme)\n'
+                  'local Asset = require(game.StarterPlayer.StarterPlayerScripts.Client.UI.Components.QualityAsset)')
+historical_text = historical.decode('utf-8').replace('\r\n', '\n')
+assert historical_text.count(original_imports) == 1
+baseline = (ROOT / 'tests/gui/quest_tracker_before.luau').read_text(encoding='utf-8')
+assert baseline == historical_text.replace(original_imports, mapped_imports, 1)
 print(json.dumps({'place': str(place), 'sha256': hashlib.sha256(place.read_bytes()).hexdigest(),
-                  'baseline_sha256': hashlib.sha256(baseline).hexdigest(), 'status': 'BUILT_STUDIO_NOT_RUN'}))
+                  'historical_sha256': hashlib.sha256(historical).hexdigest(),
+                  'baseline_sha256': hashlib.sha256(baseline.encode('utf-8')).hexdigest(), 'status': 'BUILT_STUDIO_NOT_RUN'}))

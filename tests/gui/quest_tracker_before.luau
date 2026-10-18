@@ -1,6 +1,7 @@
 --!strict
-local Theme = require(script.Parent.DesignSystem.Theme)
-local Asset = require(script.Parent.Components.QualityAsset)
+-- Same baseline dependencies, explicitly mapped for the full-project analyzer.
+local Theme = require(game.StarterPlayer.StarterPlayerScripts.Client.UI.DesignSystem.Theme)
+local Asset = require(game.StarterPlayer.StarterPlayerScripts.Client.UI.Components.QualityAsset)
 local C = Theme.Colors
 return function(gui: ScreenGui)
 	local button = Instance.new("TextButton"); button.Name = "QuestTracker"; button.Text = ""

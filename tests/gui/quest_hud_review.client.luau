@@ -9,6 +9,7 @@ local Beacon=require(game.StarterPlayer.StarterPlayerScripts.Client.UI.Component
 local Layout=require(game.ReplicatedStorage.Shared.Data.CombatHudLayout)
 local Theme=require(game.StarterPlayer.StarterPlayerScripts.Client.UI.DesignSystem.Theme)
 local gui=Instance.new("ScreenGui");gui.Name="QuestHudReview";gui.ResetOnSpawn=false;gui.ScreenInsets=Enum.ScreenInsets.CoreUISafeInsets
+gui.ZIndexBehavior=Enum.ZIndexBehavior.Sibling -- match the real SliceUI root
 gui.Parent=game:GetService("Players").LocalPlayer:WaitForChild("PlayerGui")
 local host=Instance.new("Frame");host.Size=UDim2.fromScale(1,1);host.BackgroundColor3=Theme.Colors.Background;host.Parent=gui
 local viewport=Instance.new("ScrollingFrame");viewport.Name="FixtureViewport";viewport.Position=UDim2.fromOffset(0,184);viewport.Size=UDim2.new(1,0,1,-184)

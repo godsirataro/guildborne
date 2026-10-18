@@ -22,6 +22,36 @@ checkpoint records the expanded user scope without falsely completing/replacing
 the unfinished goal. Resume from this scope and the latest verified evidence.
 
 Latest continuation corrections:
+- Combined baseline retry session8475 FINISHED exit0:912tests/384strict files,
+  compile/build/boundaries passed. No baseline process running now. See
+  COMBINED_ART_V5.md for initial failure, fixture corrections, native limitations.
+  Independent review approved3fixture fixes. RebuiltHUD hash194e74d39c259a94c4e8a308825e067d213a65af451c4f54f65e4e776f4505cb
+  has not replaced the running fixture.320TH visible objective fits and click works.
+- Combined art source now c8fbe65: S15 0837413 -> d09f473, S13 e9bf955 ->
+  ca0dc07, S14 13bce10 -> c8fbe65. All three independently reviewed, workers
+  terminal and leases released before controller claimed integration scopes.
+  Root currently holds enemy-quality-slice 63694a5422894de081eef7089591c4c6,
+  novice-entry-art 36da9c80e8d6403da80df8c829bf83b6 and gameplay-ui-quality
+  eb6aa00015b647b18d626e7adbf86f94, in addition to quality-slice-integration.
+- Exact Ironveil client probe passed on disposable155918dd: 63/65 art parts,
+  six motors/carriers each, ten unaffected templates, profile/pattern cases,
+  warning cancellation and cosmetic lifecycle. Zero tagged actors after cleanup,
+  source-copy folder removed, camera Custom and root unchanged. No combat or
+  visual approval. Raw combined-art-native-v5.json preserves actual output.
+- HUD fixture7d1529ee-a64a-4046-ba8b-37e27fc2885f (process55584) is running;
+  initial candidate129308bcec606a01999947e1d727473d58313d2147081cadcccccd5f5da3e3aa.
+  Found fixture Global stacking hid tracker children; changed fixture to production
+  Sibling in source and client. Actual796EN and320TH displayed;320 objective fits,
+  native tracker click increments1. Synthetic reservations are not full gameplay.
+- Initial combined baseline log controller-combined-art-v5-baseline.log:912 tests
+  passed/build passed, analyzer FAILED on two historical-fixture require paths.
+  Corrected explicit paths to identical runtime modules. Retry shell session8475
+  is running; do not restart merely because observation times out. Native HUD
+  stacking fix was made during retry; record this timing rather than clean-HEAD
+  formal evidence. Ground645 native visuals/walks remain pending.
+- Forge requires new shared v6 ledger after any plan fingerprint amendment.
+  Preserve v5; no SQL acceptance copying. Finish/release controller scopes before
+  amendment, freshly record/review audit+registry at new plan before dependent work.
 - New native progress: class confirmation, Hall Sentinel victory (360 to 0;
   player 3/57), Hall registration and two-step free founding all succeeded.
   Preserved def49833 is now The First Guest, guild chapter 1/12, Hall Lv1,

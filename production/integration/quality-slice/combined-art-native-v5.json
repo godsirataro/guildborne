@@ -1,0 +1,29 @@
+{
+  "nativeIronveil": {
+    "content": [
+      {
+        "type": "text",
+        "text": "{\"actors\":{\"1\":{\"carriers\":6,\"root\":{\"1\":-4505,\"3\":177.80810546875,\"2\":10010.7333984375,\"5\":0,\"4\":1,\"7\":0,\"6\":0,\"9\":0,\"8\":1,\"12\":1,\"11\":0,\"10\":0},\"parts\":63,\"id\":\"quarry_raider\",\"motors\":6},\"2\":{\"carriers\":6,\"root\":{\"1\":-4495,\"3\":177.80810546875,\"2\":10010.7333984375,\"5\":0,\"4\":1,\"7\":0,\"6\":0,\"9\":0,\"8\":1,\"12\":1,\"11\":0,\"10\":0},\"parts\":65,\"id\":\"quarry_guardian\",\"motors\":6}},\"visualApproval\":false,\"patternCases\":2,\"status\":\"PASS_LOCAL_IRONVEIL_COSMETICS\",\"serverCombatTested\":false,\"profileCases\":2,\"unchangedTemplates\":10}"
+      }
+    ],
+    "isError": false
+  },
+  "cleanup": {
+    "content": [
+      {
+        "type": "text",
+        "text": "{\"modulesRemoved\":true,\"remainingActors\":0,\"root\":\"-4500, 2.9980251789093018, 165.73402404785156\",\"camera\":\"Custom\"}"
+      }
+    ],
+    "isError": false
+  },
+  "compact320": {
+    "content": [
+      {
+        "type": "text",
+        "text": "{\"trackerSize\":\"92, 50\",\"mode\":\"AFTER current source · Progress · TH · 320x568 · 100% 1:1 (scroll) · long=false · route unavailable=true\\nSynthetic state; reservation blocks only; Studio acceptance NOT_RUN until observed\",\"rows\":[{\"visible\":false,\"text\":\"ภารกิจที่ติดตาม\",\"fits\":false,\"size\":\"28, 14\"},{\"visible\":true,\"text\":\"สำรวจเส้นทาง 1/3\",\"fits\":true,\"size\":\"80, 38\"}],\"activated\":1,\"stacking\":\"Sibling\"}"
+      }
+    ],
+    "isError": false
+  }
+}
