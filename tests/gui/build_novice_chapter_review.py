@@ -28,6 +28,7 @@ project = {"name": "GuildborneNoviceChapterReview", "tree": {
     "StarterPlayer": {"$className": "StarterPlayer", "StarterPlayerScripts": {
         "$className": "StarterPlayerScripts", "Review": source("tests/gui/novice_chapter_review.client.luau"),
         "Client": {"UI": {"NoviceJourneyView": source("src/client/UI/NoviceJourneyView.luau"),
+            "ScrollRetention": source("src/client/UI/ScrollRetention.luau"),
             "DesignSystem": {"Theme": source("src/client/UI/DesignSystem/Theme.luau")},
             "Components": {name: source(f"src/client/UI/Components/{name}.luau") for name in
                            ("NoviceChapterCard", "GuildborneButton", "RegalOrnament")}}}}},

@@ -8,6 +8,7 @@ local Locale=require(game.ReplicatedStorage.Shared.Config.Localization)
 local loadFixtureModule:any=require
 local Config=loadFixtureModule(game:GetService("ReplicatedStorage"):WaitForChild("PreviewNoviceConfig"))
 local Theme=require(game.StarterPlayer.StarterPlayerScripts.Client.UI.DesignSystem.Theme)
+local RetainScroll=require(game.StarterPlayer.StarterPlayerScripts.Client.UI.ScrollRetention)
 local gui=Instance.new("ScreenGui");gui.Name="NoviceChapterReview";gui.ScreenInsets=Enum.ScreenInsets.CoreUISafeInsets;gui.ResetOnSpawn=false;gui.Parent=player:WaitForChild("PlayerGui")
 local host=Instance.new("Frame");host.Size=UDim2.fromScale(1,1);host.BackgroundColor3=Theme.Colors.Background;host.Parent=gui
 local sizes={Vector2.new(728,490),Vector2.new(390,640),Vector2.new(240,500)}
@@ -23,6 +24,7 @@ local scroll=Instance.new("ScrollingFrame");scroll.Name="Content";scroll.Size=UD
 local back=Instance.new("TextButton");back.Name="ReturnToGuildMenu";back.Size=UDim2.new(1,-16,0,52);back.Position=UDim2.fromOffset(8,12);back.Text="Guild menu / เมนูกิลด์";back.TextSize=17;back.TextColor3=Theme.Colors.Text;back.BackgroundColor3=Theme.Colors.Primary;back.Visible=false;back.Parent=canvas
 back.Activated:Connect(function()back.Visible=false;scroll.Visible=true end)
 local redraw:()->()
+local retainScroll=RetainScroll(scroll)
 local draw=Draw({scroll=scroll,T=function(s:string,p:any?)return Locale.translate(language,s,p)end,
  render=function()redraw()end,
  explore=function()scroll.Visible=false;back.Visible=true;print("SYNTHETIC_EXPLORE",modes[modeIndex])end,
@@ -64,6 +66,7 @@ local function prepare()
 end
 redraw=function()
  generation+=1;local observationGeneration=generation
+ retainScroll(false)
  scroll:ClearAllChildren();scroll.Visible=true;back.Visible=false
  draw(data,catalog,modes[modeIndex]=="Busy")
  local size=sizes[widthIndex];canvas.Size=UDim2.fromOffset(size.X,size.Y)

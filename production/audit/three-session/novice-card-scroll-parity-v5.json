@@ -1,0 +1,13 @@
+{
+  "scope": "two exact source copies into isolated Edit fixture then fresh Play; not reopened rebuilt file",
+  "candidateBuild": "f4975a42942b7b29b435d8a569799217662b3fd35786ff216e827a845217beb2",
+  "observation": {
+    "content": [
+      {
+        "type": "text",
+        "text": "{\"state\":\"SIMULATED • Foundation • th • 240×500 • 100% scale\\nLong copy: true • scroll for actions • no server requests\",\"button\":\"ตั้งกิลด์พร้อมอัศวิน\",\"scroll\":361}"
+      }
+    ],
+    "isError": false
+  }
+}

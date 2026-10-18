@@ -2,6 +2,8 @@
 
 ## Latest goal checkpoint (supersedes statuses below)
 
+Latest integration: S13 89da9f3 accepted by two independent reviews and integrated6481f8b; coherent408parts/61colliders/15markers and matched Blender renders. S14 bde2f31+0b5e481 integrated941f1e4/3ab6609; controller57GUIcases pass. Native isolated card preview EN initial and TH240long/Foundation inspected, five hero choices and two-step synthetic founding exercised; fixture ScrollRetention parity repaired and verified (see NOVICE_CARD_NATIVE_V5.md). Whole-game baseline currently running handle65171, log build/controller-novice-v5-baseline.log: do not claim completion. Preserved earnedStudio627892 unchanged; GUI fixture f1affd20 running. S15 now actively implements original Tower enemy presentation in Guildborne-tower-enemy from332bce6; no Blender/Studio use. Fresh quota92%remaining, GoalACTIVE. Next: collect baseline, build combined candidate, actual Map paths/traversal/courier and GUI integrated acceptance. Full-game gates remain open.
+
 Fresh controller observation: quota 5% used / 95% remaining; Goal ACTIVE. S13 and S14 latest turns are confirmed inProgress. S13 Blender before/after entry renders inspected: improved roof/timber/banner silhouette, but visibly open gable ends sent back for correction before delivery. S14 native chapter fixture exists; controller reviewer flagged relative fixture requires for full-baseline compatibility and worker notified. S17 courier and S15 Basic are integrated through bd0f976, with limited native fixture evidence documented separately. Preserved Studio627892 is confirmed Play; no restart or runtime edits made. See ../CONTROLLER_GOAL_CHECKPOINT.md for full destination and continuation limits.
 
 

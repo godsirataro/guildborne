@@ -1,0 +1,161 @@
+{
+  "studio": "f1affd20-99ba-48a9-9573-e60f50ddeab7",
+  "source": "3ab6609",
+  "candidateSha256": "146d17aa0c3e322153152d304adffe41de628bddaa6e72de7b0ae9f5677c6dc4",
+  "scope": "isolated native GUI fixture; synthetic state and intents, no server rewards",
+  "observations": [
+    {
+      "case": "thai240long",
+      "result": {
+        "content": [
+          {
+            "type": "text",
+            "text": "{\"state\":\"SIMULATED • Incomplete • th • 240×500 • 100% scale\\nLong copy: true • scroll for actions • no server requests\",\"notFit\":[],\"textCount\":19,\"canvas\":[240,689]}"
+          }
+        ],
+        "isError": false
+      }
+    },
+    {
+      "case": "thai240foundationlong",
+      "result": {
+        "content": [
+          {
+            "type": "text",
+            "text": "{\"state\":\"SIMULATED • Foundation • th • 240×500 • 100% scale\\nLong copy: true • scroll for actions • no server requests\",\"notFit\":[],\"heroes\":[{\"text\":\"✓ นักรบ\",\"name\":\"NoviceHero_Warrior\",\"fits\":true},{\"text\":\"อัศวิน\",\"name\":\"NoviceHero_Knight\",\"fits\":true},{\"text\":\"นักธนู\",\"name\":\"NoviceHero_Archer\",\"fits\":true},{\"text\":\"จอมเวท\",\"name\":\"NoviceHero_Mage\",\"fits\":true},{\"text\":\"นักบวช\",\"name\":\"NoviceHero_Priest\",\"fits\":true}],\"canvas\":[240,861]}"
+          }
+        ],
+        "isError": false
+      }
+    },
+    {
+      "case": "nativeHeroClicksAndFirstConfirmation",
+      "result": {
+        "content": [
+          {
+            "type": "text",
+            "text": "{\"scroll\":0,\"button\":\"ตั้งกิลด์พร้อมอัศวิน\"}"
+          }
+        ],
+        "isError": false
+      }
+    },
+    {
+      "case": "nativeSecondConfirmation",
+      "result": {
+        "content": [
+          {
+            "type": "text",
+            "text": "{\"scroll\":0,\"button\":\"ตั้งกิลด์พร้อมอัศวิน\"}"
+          }
+        ],
+        "isError": false
+      }
+    },
+    {
+      "case": "clickArcher",
+      "result": {
+        "content": [
+          {
+            "type": "text",
+            "text": "{\"button\":\"ตั้งกิลด์พร้อมอัศวิน\",\"scroll\":361}"
+          }
+        ],
+        "isError": false
+      }
+    },
+    {
+      "case": "clickMage",
+      "result": {
+        "content": [
+          {
+            "type": "text",
+            "text": "{\"button\":\"ตั้งกิลด์พร้อมจอมเวท\",\"scroll\":0}"
+          }
+        ],
+        "isError": false
+      }
+    },
+    {
+      "case": "clickPriest",
+      "result": {
+        "content": [
+          {
+            "type": "text",
+            "text": "{\"button\":\"ตั้งกิลด์พร้อมจอมเวท\",\"scroll\":361}"
+          }
+        ],
+        "isError": false
+      }
+    },
+    {
+      "case": "clickWarrior",
+      "result": {
+        "content": [
+          {
+            "type": "text",
+            "text": "{\"button\":\"ตั้งกิลด์พร้อมนักรบ\",\"scroll\":0}"
+          }
+        ],
+        "isError": false
+      }
+    },
+    {
+      "case": "settledClickArcher",
+      "result": {
+        "content": [
+          {
+            "type": "text",
+            "text": "{\"button\":\"ตั้งกิลด์พร้อมนักธนู\",\"scroll\":0}"
+          }
+        ],
+        "isError": false
+      }
+    },
+    {
+      "case": "settledClickPriest",
+      "result": {
+        "content": [
+          {
+            "type": "text",
+            "text": "{\"button\":\"ตั้งกิลด์พร้อมนักบวช\",\"scroll\":0}"
+          }
+        ],
+        "isError": false
+      }
+    },
+    {
+      "case": "settledClickFound",
+      "result": {
+        "content": [
+          {
+            "type": "text",
+            "text": "{\"button\":\"ยืนยันตั้งกิลด์ฟรี\",\"scroll\":0}"
+          }
+        ],
+        "isError": false
+      }
+    },
+    {
+      "case": "settledClickFound",
+      "result": {
+        "content": [
+          {
+            "type": "text",
+            "text": "{\"button\":\"ยืนยันตั้งกิลด์ฟรี\",\"id\":\"Priest\",\"action\":\"FoundNoviceGuild\",\"scroll\":361}"
+          }
+        ],
+        "isError": false
+      }
+    }
+  ],
+  "console": {
+    "content": [
+      {
+        "type": "text",
+        "text": "NOVICE_NATIVE_OBSERVATION Incomplete en 728, 490 0.9387755393981934 text 25 notFit 0 canvas 683.428589, 744.448975\n[Roblox][CorePackages.Packages._Index.UIBlox.UIBlox.Logger] [UIBlox - Warning] - FoundationProvider not found. Please ensure that the FoundationProvider is present in the component tree.\nCorePackages.Packages._Index.UIBlox.UIBlox.App.Style.AppStyleProvider:178 function AppStyleProvider\nCorePackages.Packages._Index.ReactReconciler.ReactReconciler.ReactFiberHooks.new:3196 function renderWithHooks\nCorePackages.Packages._Index.ReactReconciler.ReactReconciler.ReactFiberBeginWork.new:209 function renderWithHooks\nCorePackages.Packages._Index.ReactReconciler.ReactReconciler.ReactFiberBeginWork.new:1577 function mountIndeterminateComponent\nCorePackages.Packages._Index.ReactReconciler.ReactReconciler.ReactFiberBeginWork.new:3485 function beginWork\nCorePackages.Packages._Index.ReactReconciler.ReactReconciler.ReactFiberWorkLoop.new:255\nCorePackages.Packages._Index.ReactReconciler.ReactReconciler.ReactFiberWorkLoop.new:1977\nCorePackages.Packages._Index.ReactReconciler.ReactReconciler.ReactFiberWorkLoop.new:1953\nCorePackages.Packages._Index.ReactReconciler.ReactReconciler.ReactFiberWorkLoop.new:1896\nCorePackages.Packages._Index.ReactReconciler.ReactReconciler.ReactFiberWorkLoop.new:915\nCorePackages.Packages._Index.ReactReconciler.ReactReconciler.ReactFiberWorkLoop.new:860\nCorePackages.Packages._Index.Scheduler.Scheduler.Scheduler:320\nCorePackages.Packages._Index.Scheduler.Scheduler.Scheduler:268\nCorePackages.Packages._Index.Scheduler.Scheduler.forks.SchedulerHostConfig.default:260 function doWork\nCorePackages.Packages._Index.Scheduler.Scheduler.forks.SchedulerHostConfig.default:296 function performWorkUntilDeadline\n\n[Roblox][CorePackages.Packages._Index.UIBlox.UIBlox.Logger] [UIBlox - Warning] - FoundationProvider not found. Please ensure that the FoundationProvider is present in the component tree.\nCorePackages.Packages._Index.UIBlox.UIBlox.App.Style.AppStyleProvider:178 function AppStyleProvider\nCorePackages.Packages._Index.ReactReconciler.ReactReconciler.ReactFiberHooks.new:3196 function renderWithHooks\nCorePackages.Packages._Index.ReactReconciler.ReactReconciler.ReactFiberBeginWork.new:209 function renderWithHooks\nCorePackages.Packages._Index.ReactReconciler.ReactReconciler.ReactFiberBeginWork.new:1577 function mountIndeterminateComponent\nCorePackages.Packages._Index.ReactReconciler.ReactReconciler.ReactFiberBeginWork.new:3485 function beginWork\nCorePackages.Packages._Index.ReactReconciler.ReactReconciler.ReactFiberWorkLoop.new:255\nCorePackages.Packages._Index.ReactReconciler.ReactReconciler.ReactFiberWorkLoop.new:1977\nCorePackages.Packages._Index.ReactReconciler.ReactReconciler.ReactFiberWorkLoop.new:1953\nCorePackages.Packages._Index.ReactReconciler.ReactReconciler.ReactFiberWorkLoop.new:1896\nCorePackages.Packages._Index.ReactReconciler.ReactReconciler.ReactFiberWorkLoop.new:915\nCorePackages.Packages._Index.ReactReconciler.ReactReconciler.ReactFiberWorkLoop.new:860\nCorePackages.Packages._Index.Scheduler.Scheduler.Scheduler:320\nCorePackages.Packages._Index.Scheduler.Scheduler.Scheduler:268\nCorePackages.Packages._Index.Scheduler.Scheduler.forks.SchedulerHostConfig.default:260 function doWork\nCorePackages.Packages._Index.Scheduler.Scheduler.forks.SchedulerHostConfig.default:296 function performWorkUntilDeadline\n\n[Roblox][CorePackages.Packages._Index.UIBlox.UIBlox.Logger] [UIBlox - Warning] - FoundationProvider not found. Please ensure that the FoundationProvider is present in the component tree.\nCorePackages.Packages._Index.UIBlox.UIBlox.App.Style.AppStyleProvider:178 function AppStyleProvider\nCorePackages.Packages._Index.ReactReconciler.ReactReconciler.ReactFiberHooks.new:3196 function renderWithHooks\nCorePackages.Packages._Index.ReactReconciler.ReactReconciler.ReactFiberBeginWork.new:209 function renderWithHooks\nCorePackages.Packages._Index.ReactReconciler.ReactReconciler.ReactFiberBeginWork.new:1577 function mountIndeterminateComponent\nCorePackages.Packages._Index.ReactReconciler.ReactReconciler.ReactFiberBeginWork.new:3485 function beginWork\nCorePackages.Packages._Index.ReactReconciler.ReactReconciler.ReactFiberWorkLoop.new:255\nCorePackages.Packages._Index.ReactReconciler.ReactReconciler.ReactFiberWorkLoop.new:1977\nCorePackages.Packages._Index.ReactReconciler.ReactReconciler.ReactFiberWorkLoop.new:1953\nCorePackages.Packages._Index.ReactReconciler.ReactReconciler.ReactFiberWorkLoop.new:1896\nCorePackages.Packages._Index.ReactReconciler.ReactReconciler.ReactFiberWorkLoop.new:915\nCorePackages.Packages._Index.ReactReconciler.ReactReconciler.ReactFiberWorkLoop.new:860\nCorePackages.Packages._Index.Scheduler.Scheduler.Scheduler:320\nCorePackages.Packages._Index.Scheduler.Scheduler.Scheduler:268\nCorePackages.Packages._Index.Scheduler.Scheduler.forks.SchedulerHostConfig.default:260 function doWork\nCorePackages.Packages._Index.Scheduler.Scheduler.forks.SchedulerHostConfig.default:296 function performWorkUntilDeadline\n\n[Roblox][CorePackages.Packages._Index.UIBlox.UIBlox.Logger] [UIBlox - Warning] - FoundationProvider not found. Please ensure that the FoundationProvider is present in the component tree.\nCorePackages.Packages._Index.UIBlox.UIBlox.App.Style.AppStyleProvider:178 function AppStyleProvider\nCorePackages.Packages._Index.ReactReconciler.ReactReconciler.ReactFiberHooks.new:3196 function renderWithHooks\nCorePackages.Packages._Index.ReactReconciler.ReactReconciler.ReactFiberBeginWork.new:209 function renderWithHooks\nCorePackages.Packages._Index.ReactReconciler.ReactReconciler.ReactFiberBeginWork.new:1577 function mountIndeterminateComponent\nCorePackages.Packages._Index.ReactReconciler.ReactReconciler.ReactFiberBeginWork.new:3485 function beginWork\nCorePackages.Packages._Index.ReactReconciler.ReactReconciler.ReactFiberWorkLoop.new:255\nCorePackages.Packages._Index.ReactReconciler.ReactReconciler.ReactFiberWorkLoop.new:1977\nCorePackages.Packages._Index.ReactReconciler.ReactReconciler.ReactFiberWorkLoop.new:1953\nCorePackages.Packages._Index.ReactReconciler.ReactReconciler.ReactFiberWorkLoop.new:1896\nCorePackages.Packages._Index.ReactReconciler.ReactReconciler.ReactFiberWorkLoop.new:915\nCorePackages.Packages._Index.ReactReconciler.ReactReconciler.ReactFiberWorkLoop.new:860\nCorePackages.Packages._Index.Scheduler.Scheduler.Scheduler:320\nCorePackages.Packages._Index.Scheduler.Scheduler.Scheduler:268\nCorePackages.Packages._Index.Scheduler.Scheduler.forks.SchedulerHostConfig.default:260 function doWork\nCorePackages.Packages._Index.Scheduler.Scheduler.forks.SchedulerHostConfig.default:296 function performWorkUntilDeadline\n\n[Roblox][CorePackages.Packages._Index.UIBlox.UIBlox.Logger] [UIBlox - Warning] - FoundationProvider not found. Please ensure that the FoundationProvider is present in the component tree.\nCorePackages.Packages._Index.UIBlox.UIBlox.App.Style.AppStyleProvider:178 function AppStyleProvider\nCorePackages.Packages._Index.ReactReconciler.ReactReconciler.ReactFiberHooks.new:3196 function renderWithHooks\nCorePackages.Packages._Index.ReactReconciler.ReactReconciler.ReactFiberBeginWork.new:209 function renderWithHooks\nCorePackages.Packages._Index.ReactReconciler.ReactReconciler.ReactFiberBeginWork.new:1577 function mountIndeterminateComponent\nCorePackages.Packages._Index.ReactReconciler.ReactReconciler.ReactFiberBeginWork.new:3485 function beginWork\nCorePackages.Packages._Index.ReactReconciler.ReactReconciler.ReactFiberWorkLoop.new:255\nCorePackages.Packages._Index.ReactReconciler.ReactReconciler.ReactFiberWorkLoop.new:1977\nCorePackages.Packages._Index.ReactReconciler.ReactReconciler.ReactFiberWorkLoop.new:1953\nCorePackages.Packages._Index.ReactReconciler.ReactReconciler.ReactFiberWorkLoop.new:1896\nCorePackages.Packages._Index.ReactReconciler.ReactReconciler.ReactFiberWorkLoop.new:915\nCorePackages.Packages._Index.ReactReconciler.ReactReconciler.ReactFiberWorkLoop.new:860\nCorePackages.Packages._Index.Scheduler.Scheduler.Scheduler:320\nCorePackages.Packages._Index.Scheduler.Scheduler.Scheduler:268\nCorePackages.Packages._Index.Scheduler.Scheduler.forks.SchedulerHostConfig.default:260 function doWork\nCorePackages.Packages._Index.Scheduler.Scheduler.forks.SchedulerHostConfig.default:296 function performWorkUntilDeadline\n\nNOVICE_NATIVE_OBSERVATION Incomplete en 728, 490 0.4065934121608734 text 19 notFit 0 canvas 296, 225.659363\nContentId: rbxassetid://203785492 failed due to: Asset type does not match requested type\nContentId: rbxassetid://203785492 failed due to: Asset type does not match requested type\nContentId: rbxassetid://203785492 failed due to: Asset type does not match requested type\nNOVICE_NATIVE_OBSERVATION Incomplete en 728, 490 0.9714285731315613 text 19 notFit 0 canvas 707.200012, 539.142883\nNOVICE_NATIVE_OBSERVATION Incomplete th 728, 490 0.9714285731315613 text 19 notFit 0 canvas 707.200012, 539.142883\nNOVICE_NATIVE_OBSERVATION Incomplete th 240, 500 0.9520000219345093 text 19 notFit 0 canvas 228.480011, 544.375977\nNOVICE_NATIVE_OBSERVATION Incomplete th 240, 500 0.9520000219345093 text 19 notFit 0 canvas 228.480011, 650.175964\nNOVICE_NATIVE_OBSERVATION Incomplete th 240, 500 1 text 19 notFit 0 canvas 240, 689\nNOVICE_NATIVE_OBSERVATION Foundation th 240, 500 1 text 23 notFit 0 canvas 240, 861\nNOVICE_NATIVE_OBSERVATION Foundation th 240, 500 1 text 23 notFit 0 canvas 240, 861\nNOVICE_NATIVE_OBSERVATION Foundation th 240, 500 1 text 23 notFit 0 canvas 240, 861\nNOVICE_NATIVE_OBSERVATION Foundation th 240, 500 1 text 23 notFit 0 canvas 240, 861\nNOVICE_NATIVE_OBSERVATION Foundation th 240, 500 1 text 23 notFit 0 canvas 240, 861\nNOVICE_NATIVE_OBSERVATION Foundation th 240, 500 1 text 23 notFit 0 canvas 240, 861\nNOVICE_NATIVE_OBSERVATION Foundation th 240, 500 1 text 23 notFit 0 canvas 240, 861\nSYNTHETIC_NOVICE_INTENT FoundNoviceGuild Priest"
+      }
+    ],
+    "isError": false
+  }
+}
