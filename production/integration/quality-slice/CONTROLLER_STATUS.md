@@ -3,7 +3,7 @@
 Goal ACTIVE: full Guildborne cities/level100/tower/quests/player+fiveheroes,
 custom native UI and animation/VFX. Starter acceptance remains intermediate.
 Reviewed commits/normal push allowed; no PR/merge/publish/spend/production data.
-Last quota85% remaining; check again between waves, stop new waves near5%.
+Last fresh quota82% remaining; check again between waves, stop new waves near5%.
 
 Shared ledger remains C:/Work/MySelf/Guildborne/build/agentic/four-session-v5.sqlite3.
 Audit was independently ACCEPTED at d33444b using actual recorded inventory,
@@ -43,3 +43,7 @@ guild founded. Preserve older62789207 Chapter3 separately.155918dd is disposable
 See NOVICE_CHAPTER5_V5.md, DURN_CLIENT_V5.md in prior audit directory, and
 SETTLEMENT_NATIVE_V5.md. No full baseline is currently running; latest actual
 formal baseline is d33444b before the595part integration.
+
+Fresh native thread snapshots confirm S13 ground repair, S14 compact HUD and S15
+regional enemy turns are all inProgress. Dispatch is not delivery. Root worktree
+is clean after this checkpoint; no baseline process is running.
