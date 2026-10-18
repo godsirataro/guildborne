@@ -34,7 +34,7 @@ return function(test:any,eq:any)
    return frame
   end
   local function model():any
-   return {Parent=true,attributes={},GetAttribute=function(self:any,k:string)return self.attributes[k]end,IsA=function(_self:any,k:string)return k=="Model"end}
+   return {Parent=true,attributes={},GetAttribute=function(self:any,k:string)return self.attributes[k]end,SetAttribute=function(self:any,k:string,value:any)self.attributes[k]=value end,IsA=function(_self:any,k:string)return k=="Model"end}
   end
   local f:any={moves=0,velocities=0,heroMoves=0,blocked=false,headBlocked=false,ready=true,session={state="Active",record={},epoch=1,token="a"}}
   local backing:any={Position=v(0,5,0)}
@@ -67,7 +67,7 @@ return function(test:any,eq:any)
   local platform={Config=config,Civic={Definitions={}},Rules=require("../src/server/Systems/TravelRules")(config),Vector3={new=v,zero=v(0,0,0)},CFrame={new=cf,lookAt=function(a:any,_b:any)return cf(a)end},
    RaycastParams={new=function()return {}end},OverlapParams={new=function()return {}end},Enum={RaycastFilterType={Include=1}},Workspace=world,RunService={Heartbeat={Connect=function(_self:any,callback:any)step=callback end}},Now=function()return now end}
   local function box(x:number,width:number):any return {cframe=cf(x,5,0),size=v(width,8,12)}end
-  local route={id="city_greenwood",fromZone="City",toZone="Greenwood",geometry=geometry,volumes={box(50,110)},entries={City=box(0,10),Greenwood=box(100,10)},safeRecovery={City=cf(0,5,0),Greenwood=cf(100,5,0)},isReady=function()return f.ready end}
+  local route={id="city_greenwood_west",fromZone="City",toZone="Greenwood",geometry=geometry,volumes={box(50,110)},entries={City=box(0,10),Greenwood=box(100,10)},safeRecovery={City=cf(0,5,0),Greenwood=cf(100,5,0)},isReady=function()return f.ready end}
   local walking={Routes={route},Session=function(_p:any)return f.session end,Gate=function(_p:any,_s:any,from:string,to:string)
    f.lastGate={from,to};if f.gateThrow then error("fixture gate failure") end;if f.gateYield then coroutine.yield() end;return f.gate
   end}
@@ -193,6 +193,46 @@ return function(test:any,eq:any)
    if reason=="busy" then f.session.busy=true else f.gate=reason end
    f.step(100);eq(f.player.attributes.CurrentZone,"City");eq(f.player.RespawnLocation,"city")
    eq(f.root.Position.X,0);eq(f.moves,1);eq(f.heroMoves,1);eq(f.follow(),false)
+  end
+ end)
+ test("walking display uses only canonical unambiguous route and direction strings",function()
+  local rules=require("../src/server/Systems/TravelRules")(City)
+  eq(rules.walkingContext("city_greenwood_west","City","Greenwood"),"city_greenwood_west|City|Greenwood")
+  eq(rules.walkingContext("city_greenwood_west","Greenwood","City"),"city_greenwood_west|Greenwood|City")
+  for _,id in ipairs({"unknown","city_greenwood_west|City","city_greenwood"})do eq(rules.walkingContext(id,"City","Greenwood"),nil)end
+  eq(rules.walkingContext("city_greenwood_west","City|Guild","Greenwood"),nil)
+  eq(rules.walkingContext("city_greenwood_west","City","City"),nil)
+  local f=adapter();eq(f.character:GetAttribute("WalkingRouteContext"),nil)
+  f.character:SetAttribute("WalkingRouteContext","city_greenwood_west|City|Greenwood")
+  eq(f.follow(),false) -- A presentation attribute never grants admission.
+  f.step(0);eq(f.character:GetAttribute("WalkingRouteContext"),"city_greenwood_west|City|Greenwood")
+  f.character:SetAttribute("WalkingRouteContext","untrusted|Guild|City")
+  for _,x in ipairs({25,50,75,100})do f.step(x)end
+  eq(f.player.attributes.CurrentZone,"Greenwood");eq(f.character:GetAttribute("WalkingRouteContext"),nil)
+  f.step(100);f.step(100);eq(f.character:GetAttribute("WalkingRouteContext"),"city_greenwood_west|Greenwood|City")
+ end)
+ test("walking display clears every successful exit and immediately on blocked recovery",function()
+  for _,mode in ipairs({"remove","portal","visit","local","respawn","death","recovery","cancel"})do
+   local f=adapter();f.step(0);assert(f.character:GetAttribute("WalkingRouteContext"))
+   if mode=="remove"then f.service.Remove(f.player)
+   elseif mode=="portal"then assert(f.service.Travel(f.player,"Guild"))
+   elseif mode=="visit"then assert(f.service.Visit(f.player,f.v(-100,5,0)))
+   elseif mode=="local"then assert(f.service.EnterLocal(f.player))
+   elseif mode=="respawn"then f.service.Respawn(f.player)
+   elseif mode=="death"then f.humanoid.Health=0;f.step()
+   elseif mode=="cancel"then f.step(-8) -- Supported source zone, outside entry/corridor.
+   else f.step(25);f.blocked=true;f.step(90);eq(f.moves,0)end
+   eq(f.character:GetAttribute("WalkingRouteContext"),nil)
+  end
+ end)
+ test("walking replacement clears both old and new character without moving either",function()
+  for _,mode in ipairs({"replacement","missing","session"})do
+   local f=adapter();f.step(0);f.step(25);local old=f.character
+   local replacement=table.clone(old);replacement.attributes={WalkingRouteContext="stale"}
+   if mode=="replacement"then f.player.Character=replacement elseif mode=="missing"then f.player.Character=nil else f.session.token="replacement-token"end
+   f.step();eq(old:GetAttribute("WalkingRouteContext"),nil)
+   if mode=="replacement"then eq(replacement:GetAttribute("WalkingRouteContext"),nil)end
+   eq(f.moves,0);eq(f.heroMoves,0)
   end
  end)
  test("normal walking admits on first entry sample without stopping inside the entry",function()

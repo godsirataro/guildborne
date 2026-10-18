@@ -18,7 +18,15 @@ return function(city: any,plots: any,heroes: any,localTravel:any?,platform:any?,
  local S={};local buckets: {[Player]: any}={};local zones: {[Player]: string}={}
  local walkingStops:{[Player]:any}={};local walkingSamples:{[Player]:any}={}
  local walkingNotified:{[Player]:number}={}
- local function clearWalking(player:Player)walkingStops[player]=nil;walkingSamples[player]=nil end
+ local function clearWalkingDisplay(player:Player)
+  if not walking then return end
+  local old=walkingStops[player];local character=player.Character
+  if old and old.character then old.character:SetAttribute("WalkingRouteContext",nil)end
+  if character and (not old or character~=old.character)then character:SetAttribute("WalkingRouteContext",nil)end
+ end
+ local function clearWalking(player:Player)
+  clearWalkingDisplay(player);walkingStops[player]=nil;walkingSamples[player]=nil
+ end
 	local function alive(player: Player): boolean
 		local c=player.Character;local h=c and c:FindFirstChildOfClass("Humanoid")
 		return h~=nil and h.Health>0 and c~=nil and c:FindFirstChild("HumanoidRootPart")~=nil
@@ -171,7 +179,7 @@ return function(city: any,plots: any,heroes: any,localTravel:any?,platform:any?,
   return if ok then session else nil
  end
  local function routeReady(route:any):boolean
-  if type(route)~="table" or type(route.id)~="string" or route.id==""
+  if type(route)~="table" or Rules.walkingContext(route.id,route.fromZone,route.toZone)==nil
    or not ((route.fromZone=="City" and route.toZone=="Greenwood") or (route.fromZone=="Greenwood" and route.toZone=="City"))
    or not route.geometry or not route.geometry.Parent or type(route.volumes)~="table"
    or #route.volumes==0 or #route.volumes>128 or type(route.entries)~="table" or type(route.safeRecovery)~="table" then return false end
@@ -196,6 +204,7 @@ return function(city: any,plots: any,heroes: any,localTravel:any?,platform:any?,
   return reason
  end
  local function recoverWalking(player:Player,snapshot:any,reason:string):boolean
+  clearWalkingDisplay(player)
   snapshot.recovering=true
   local session=walkingSession(player);local c=player.Character
   if not Rules.walkingIdentity(snapshot,session,c) then clearWalking(player);return true end
@@ -286,6 +295,8 @@ return function(city: any,plots: any,heroes: any,localTravel:any?,platform:any?,
       end
       if not Rules.walkingIdentity(candidate,walkingSession(player),player.Character)then return true end
       walkingStops[player]=candidate
+      -- Atomic presentation hint only; never consulted by authority or eligibility.
+      if c then c:SetAttribute("WalkingRouteContext",Rules.walkingContext(route.id,zone,to))end
      end
      return true
     end

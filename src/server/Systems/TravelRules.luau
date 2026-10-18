@@ -1,6 +1,11 @@
 --!strict
 return function(config: any)
 	local R={}
+ function R.walkingContext(routeId:any,from:any,to:any):string?
+  if routeId~="city_greenwood_west" then return nil end
+  if not ((from=="City" and to=="Greenwood") or (from=="Greenwood" and to=="City")) then return nil end
+  return routeId.."|"..from.."|"..to
+ end
  -- Trusted integration hooks still fail closed on exceptions or accidental yields.
  function R.walkingCall(callback:any,...:any):(boolean,any)
   if type(callback)~="function" then return false,nil end

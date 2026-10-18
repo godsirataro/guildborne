@@ -37,6 +37,18 @@ WorldService/Bootstrap wiring and must call
 
 ## Behavior and authority
 
+Admitted transit publishes ONE presentation-only character attribute:
+`WalkingRouteContext="city_greenwood_west|City|Greenwood"`, or
+`"city_greenwood_west|Greenwood|City"` for the reverse direction. Only this known
+route ID and these direction pairs are accepted; nil means no admitted transit.
+The server never reads the attribute to authorize movement, gates or following.
+It is set once after admission and cleared on commit, return to source, recovery
+start (even if recovery is blocked), death/missing character, session/character
+replacement, successful portal/visit/local travel, respawn and Remove. Cleanup
+clears both the old snapshot character and the current character when different.
+UI must treat it as an atomic display value, not synthesize it from CurrentZone
+or use it as an action capability. Ordinary callers without walking stay unchanged.
+
 Two consecutive samples of the same session/epoch/token/character are required;
 only the latest sample must be inside source entry. The previous sample may be
 on the approach, so walking does not require a pause. A regression traverses a
