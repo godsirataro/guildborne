@@ -1,11 +1,20 @@
 """Build the real novice presentation with synthetic state and no server bootstrap."""
 from pathlib import Path
+import argparse
 import hashlib
 import json
 import subprocess
+import shutil
 import xml.etree.ElementTree as ET
 
 ROOT = Path(__file__).resolve().parents[2]
+parser = argparse.ArgumentParser(description=__doc__)
+parser.add_argument("--rojo", type=Path, help="Existing Rojo executable; no tools are installed.")
+args = parser.parse_args()
+local_rojo = ROOT / ".tools/rojo/rojo.exe"
+rojo = args.rojo or (local_rojo if local_rojo.is_file() else shutil.which("rojo"))
+if not rojo or not Path(rojo).is_file():
+    parser.error("Rojo is unavailable. Pass --rojo with an existing executable path.")
 out = ROOT / "build/novice-chapter-review"
 out.mkdir(parents=True, exist_ok=True)
 def source(path):
@@ -33,7 +42,7 @@ folders(project["tree"])
 path = out / "review.project.json"
 path.write_text(json.dumps(project, indent=2), encoding="utf-8")
 place = out / "GuildborneNoviceChapterReview.rbxlx"
-subprocess.run([str(ROOT / ".tools/rojo/rojo.exe"), "build", str(path), "--output", str(place)], check=True)
+subprocess.run([str(Path(rojo).resolve()), "build", str(path), "--output", str(place)], check=True)
 items = ET.parse(place).getroot().findall(".//Item")
 assert not any(item.get("class") in {"Script", "RemoteEvent", "RemoteFunction", "UnreliableRemoteEvent"} for item in items)
 assert sum(item.get("class") == "LocalScript" for item in items) == 1

@@ -1,10 +1,13 @@
 --!strict
 -- Disposable native presentation fixture. No remotes, profile mutation or rewards.
 local player=game:GetService("Players").LocalPlayer
-local Draw=require(script.Parent.Client.UI.Components.NoviceChapterCard)
+local Draw=require(game.StarterPlayer.StarterPlayerScripts.Client.UI.Components.NoviceChapterCard)
 local Locale=require(game.ReplicatedStorage.Shared.Config.Localization)
-local Config=require(game.ReplicatedStorage.PreviewNoviceConfig)
-local Theme=require(script.Parent.Client.UI.DesignSystem.Theme)
+-- The isolated builder supplies this server catalog as a read-only replicated
+-- fixture module. It intentionally is not a dependency in the live DataModel.
+local loadFixtureModule:any=require
+local Config=loadFixtureModule(game:GetService("ReplicatedStorage"):WaitForChild("PreviewNoviceConfig"))
+local Theme=require(game.StarterPlayer.StarterPlayerScripts.Client.UI.DesignSystem.Theme)
 local gui=Instance.new("ScreenGui");gui.Name="NoviceChapterReview";gui.ScreenInsets=Enum.ScreenInsets.CoreUISafeInsets;gui.ResetOnSpawn=false;gui.Parent=player:WaitForChild("PlayerGui")
 local host=Instance.new("Frame");host.Size=UDim2.fromScale(1,1);host.BackgroundColor3=Theme.Colors.Background;host.Parent=gui
 local sizes={Vector2.new(728,490),Vector2.new(390,640),Vector2.new(240,500)}

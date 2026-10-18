@@ -24,7 +24,7 @@ NoviceJourneyView, server/config, trial controller, quest rules, IDs and reward 
 ## Verification performed
 
 - `python tests/gui/run.py`: **57 cases passed**, comprising previous 47 and 10 novice cases. They cover objective-before-action hierarchy, actual rewards/partial progress, ready versus eligible, busy and duplicate guards, server-confirmed advancement, original two-click class/founding confirmation, companion-change reset, class and founding inventory-full gates, trial-class change reset, responsive text properties, destruction cleanup and unavailable data. This simulation does not render fonts or AutoSize.
-- Scoped luau-lsp passed for NoviceChapterCard and SliceUI using the default-project sourcemap, and the native fixture using its isolated sourcemap. Initial sourcemap generation needed creation of the fresh worktree's build directory; the successful rerun is the reported check.
+- Scoped luau-lsp passed for NoviceChapterCard, SliceUI and the final native fixture using the default-project sourcemap; the fixture also passed with its isolated sourcemap before the portability follow-up. Initial sourcemap generation needed creation of the fresh worktree's build directory; the successful rerun is the reported check. Fixture UI requires now use canonical StarterPlayer module paths. Only the builder-provided PreviewNoviceConfig uses a dynamic loader: that read-only replica of the server catalog intentionally does not exist in the live DataModel.
 - Rojo preview build passed. XML assertions confirmed one LocalScript and no server Script or RemoteEvent/RemoteFunction/UnreliableRemoteEvent.
 - `git diff --check` passed. No full game baseline was repeated.
 - Independent source review found no production blocker. Its fixture observation-generation correction was applied: stale delayed callbacks cannot label newer rendered contents with an earlier size/state. Reviewer-requested foundation capacity and class-change regressions were added and passed.
@@ -33,9 +33,9 @@ NoviceJourneyView, server/config, trial controller, quest rules, IDs and reward 
 
 Output: `C:/Work/MySelf/Guildborne-novice-ui/build/novice-chapter-review/GuildborneNoviceChapterReview.rbxlx`
 
-SHA256: `c83a8c701e46034d0268a64d2ec288d601bddf7f4ee62fe7cbfb4420aba596af`.
+SHA256: `146d17aa0c3e322153152d304adffe41de628bddaa6e72de7b0ae9f5677c6dc4`.
 
-Rebuild with `python tests/gui/build_novice_chapter_review.py`. Open locally and Play. Toolbar provides EN/TH, ten state presets, chapters 1–5 (chapter 6 through Trial/Class/Foundation presets), widths 728/390/240, synthetic long-copy toggle and 1:1/Fit. The canvas uses explicit scaling; it is not physical-device proof. Scroll the native content to actions. Explore offers a local Guild menu return control.
+Rebuild with `python tests/gui/build_novice_chapter_review.py --rojo C:/Work/MySelf/Guildborne-controller/.tools/rojo/rojo.exe` (explicit existing-binary override tested). The helper also accepts a local `.tools` binary or existing Rojo on PATH, and fails with an explanatory error when none is available. No binary is copied or installed; a clean worktree can use the explicit path. Open locally and Play. Toolbar provides EN/TH, ten state presets, chapters 1–5 (chapter 6 through Trial/Class/Foundation presets), widths 728/390/240, synthetic long-copy toggle and 1:1/Fit. The canvas uses explicit scaling; it is not physical-device proof. Scroll the native content to actions. Explore offers a local Guild menu return control.
 
 The fixture uses the actual adapter, original view/state and a cloned catalog. Long copy is clearly synthetic; all intents are captured as attributes/logs without remotes or profile writes. Claim intentionally remains pending until changing a fixture state, since no server exists to respond. `NOVICE_NATIVE_OBSERVATION` / `NOVICE_TEXT_NOT_FIT` logs are emitted only when the controller actually runs it; no observations are claimed in this packet.
 
