@@ -451,12 +451,106 @@ local function quarryParts(asset:Asset):{Piece}
     assert(#parts<=90,"Quarry art part budget exceeded")
     return parts
 end
+-- Original Greenwood dressing, authored around the existing humanoid sockets.
+local function greenwoodParts(asset:Asset):{Piece}
+    local captain=asset.id=="forest_captain"
+    local scale=if captain then 1.45 else .82
+    local byName:{[string]:Piece}={}
+    for _,p in ipairs(asset.parts) do byName[p.name]=p end
+    local parts:{Piece}={}
+    for _,name in ipairs({"Head","LeftUpperArm","RightUpperArm","LeftUpperLeg","RightUpperLeg"}) do
+        table.insert(parts,table.clone(byName[name]))
+    end
+    local leather=Color3.fromRGB(87,59,39)
+    local leaf=Color3.fromRGB(62,93,53)
+    local lightLeaf=Color3.fromRGB(105,128,65)
+    local bark=Color3.fromRGB(91,76,48)
+    local iron=Color3.fromRGB(107,124,119)
+    local brass=Color3.fromRGB(174,140,69)
+    local linen=Color3.fromRGB(183,171,128)
+    for _,name in ipairs({"Waist","Chest","Belt","LeftEye","RightEye","LeftLowerArm","RightLowerArm","LeftHand","RightHand","LeftLowerLeg","RightLowerLeg","LeftBoot","RightBoot","Nose"}) do
+        local p=table.clone(byName[name])
+        if name=="Chest" or name:find("Boot") then p.color=leather;p.material=Enum.Material.Leather
+        elseif name=="Waist" then p.color=leaf;p.material=Enum.Material.Fabric end
+        table.insert(parts,p)
+    end
+    for _,p in ipairs(asset.parts) do if p.name=="PointedEar" then table.insert(parts,table.clone(p)) end end
+    local function add(name:string,bone:string,size:Vector3,pos:Vector3,color:Color3,shape:string?,rotation:Vector3?,material:Enum.Material?)
+        table.insert(parts,{name=name,bone=bone,size=size*scale,position=pos*scale,color=color,
+            rotation=rotation or V(0,0,0),shape=shape,material=material or Enum.Material.Leather})
+    end
+    add("LeatherBreast","UpperTorso",V(1.52,.76,.16),V(0,3.24,-.54),leather,"Wedge",V(0,180,0))
+    add("CrossStrap","UpperTorso",V(.18,1.04,.13),V(0,3.24,-.66),bark,nil,V(0,0,-27))
+    add("StrapClasp","UpperTorso",V(.27,.24,.08),V(.08,3.30,-.75),brass,nil,nil,Enum.Material.Metal)
+    add("BackYoke","UpperTorso",V(1.38,.57,.18),V(0,3.42,.56),leather)
+    add("BeltClasp","LowerTorso",V(.34,.26,.12),V(0,2.35,-.53),brass,nil,nil,Enum.Material.Metal)
+    for _,side in ipairs({-1,1}) do
+        local prefix=if side<0 then "Left" else "Right"
+        local arm=byName[prefix.."UpperArm"].position/scale
+        local leg=byName[prefix.."UpperLeg"].position/scale
+        -- LowerArm shares the rigid arm group without adding a socket candidate.
+        add(prefix.."MantleBase",prefix.."LowerArm",V(.93,.23,.91),arm+V(0,.38,0),bark,"Wedge",V(0,side*12,side*14),Enum.Material.Wood)
+        for layer=1,2 do
+            add(prefix.."MantleLeaf"..layer,prefix.."LowerArm",V(.88,.13,.64),arm+V(side*.12*layer,.48-.15*layer,-.25*layer),if layer==1 then leaf else lightLeaf,"Wedge",V(12,180,side*18),Enum.Material.Fabric)
+        end
+        add(prefix.."BootCuff",prefix.."LowerLeg",V(.65,.18,.70),leg+V(0,-.72,0),leather)
+        add(prefix.."ShinStrap",prefix.."LowerLeg",V(.64,.10,.70),leg+V(0,-1.03,0),linen,nil,nil,Enum.Material.Fabric)
+        add(prefix.."HipLeaf","LowerTorso",V(.57,.62,.15),V(side*.46,2.02,-.51),leaf,"Wedge",V(0,180,side*12),Enum.Material.Fabric)
+    end
+    local hand=byName.RightHand.position/scale
+    local sword=hand+V(.13,0,-.31)
+    add("SwordGrip","RightHand",V(.17,.61,.17),sword,leather)
+    for i=1,3 do add("SwordWrap"..i,"RightHand",V(.20,.07,.20),sword+V(0,-.24+i*.12,0),linen,nil,V(0,0,12),Enum.Material.Fabric) end
+    add("SwordPommel","RightHand",V(.27,.18,.25),sword+V(0,-.38,0),brass,nil,nil,Enum.Material.Metal)
+    add("SwordGuard","RightHand",V(.83,.13,.26),sword+V(0,.36,0),brass,nil,V(0,0,-5),Enum.Material.Metal)
+    add("SwordBlade","RightHand",V(.29,1.43,.10),sword+V(0,1.13,0),iron,nil,nil,Enum.Material.Metal)
+    add("SwordFuller","RightHand",V(.045,1.22,.025),sword+V(0,1.13,-.064),bark,nil,nil,Enum.Material.Metal)
+    add("SwordTip","RightHand",V(.29,.38,.10),sword+V(0,2.03,0),iron,"Wedge",V(0,90,0),Enum.Material.Metal)
+    local head=byName.Head.position/scale
+    if captain then
+        add("BrowCirclet","Head",V(1.39,.15,.20),head+V(0,.42,-.56),brass,nil,nil,Enum.Material.Metal)
+        for _,side in ipairs({-1,1}) do
+            add("AntlerRoot","Head",V(.22,.72,.25),head+V(side*.65,.91,.05),bark,nil,V(0,0,-side*22),Enum.Material.Wood)
+            add("AntlerBeam","Head",V(.17,.91,.20),head+V(side*.94,1.60,.05),linen,nil,V(0,0,-side*24),Enum.Material.Wood)
+            add("AntlerFork","Head",V(.13,.57,.16),head+V(side*.74,1.65,.05),linen,nil,V(0,0,side*28),Enum.Material.Wood)
+            add("AntlerTine","Head",V(.12,.46,.14),head+V(side*1.30,1.92,.05),linen,nil,V(0,0,-side*42),Enum.Material.Wood)
+            add("MantleRim",if side<0 then "LeftLowerArm" else "RightLowerArm",V(.17,.20,1.02),V(side*1.52,3.60,0),brass,nil,V(0,0,side*14),Enum.Material.Metal)
+        end
+        local shield=byName.LeftHand.position/scale+V(-.22,.20,-.57)
+        add("ShieldBack","LeftHand",V(1.42,1.78,.21),shield,bark,nil,nil,Enum.Material.Wood)
+        for i=-1,1 do add("ShieldBark"..(i+2),"LeftHand",V(.43,1.70-.14*math.abs(i),.14),shield+V(i*.44,0,-.17),if i==0 then bark else leather,nil,V(0,0,i*4),Enum.Material.Wood) end
+        for _,side in ipairs({-1,1}) do
+            add("ShieldRim","LeftHand",V(.12,1.77,.15),shield+V(side*.73,0,-.20),brass,nil,nil,Enum.Material.Metal)
+            add("ShieldCrestBranch","LeftHand",V(.12,.51,.07),shield+V(side*.18,.15,-.30),brass,nil,V(0,0,-side*38),Enum.Material.Metal)
+        end
+        add("ShieldCrestTrunk","LeftHand",V(.13,.87,.08),shield+V(0,0,-.31),brass,nil,nil,Enum.Material.Metal)
+        add("ShieldCrestSeed","LeftHand",V(.24,.24,.09),shield+V(0,.49,-.31),lightLeaf,nil,V(0,0,45),Enum.Material.Metal)
+        add("CaptainGorget","UpperTorso",V(1.18,.22,.91),V(0,3.77,0),brass,nil,nil,Enum.Material.Metal)
+        add("CaptainCrest","UpperTorso",V(.28,.42,.12),V(0,3.20,-.79),lightLeaf,"Wedge",V(0,180,0),Enum.Material.Metal)
+    else
+        add("HoodCrown","Head",V(1.48,.29,1.32),head+V(0,.65,.08),leaf,"Wedge",V(0,180,0),Enum.Material.Fabric)
+        add("HoodBack","Head",V(1.44,.99,.20),head+V(0,.12,.62),leaf,nil,nil,Enum.Material.Fabric)
+        for _,side in ipairs({-1,1}) do
+            add("HoodCheek","Head",V(.21,.83,.91),head+V(side*.72,.10,.07),leaf,"Wedge",V(0,side*12,0),Enum.Material.Fabric)
+            add("HoodLeaf","Head",V(.50,.12,.61),head+V(side*.42,.83,-.11),lightLeaf,"Wedge",V(0,180,side*18),Enum.Material.Fabric)
+        end
+        add("ScoutBracer","LeftLowerArm",V(.65,.57,.20),byName.LeftLowerArm.position/scale+V(0,0,-.36),bark,"Wedge",V(0,180,0),Enum.Material.Wood)
+        add("BracerBinding","LeftLowerArm",V(.69,.12,.23),byName.LeftLowerArm.position/scale+V(0,0,-.39),linen,nil,nil,Enum.Material.Fabric)
+        add("ScoutPouch","LowerTorso",V(.44,.52,.34),V(.79,2.12,.13),leather)
+        add("PouchFlap","LowerTorso",V(.47,.20,.10),V(.79,2.32,-.09),bark,"Wedge",V(0,180,0))
+        add("PouchStud","LowerTorso",V(.10,.10,.06),V(.79,2.27,-.16),brass,nil,nil,Enum.Material.Metal)
+    end
+    assert(#parts<=90,"Greenwood art part budget exceeded")
+    return parts
+end
 return function(): Folder
 	local folder=Instance.new("Folder");folder.Name="AdventureEnemyKit"
 	for _,a in ipairs(definitions) do local m=Instance.new("Model");m.Name=a.id;m.WorldPivot=CFrame.identity;m.Parent=folder;m:SetAttribute("TemplateOnly",true);m:SetAttribute("Region",a.region);m:SetAttribute("VisualRole",a.role);m:SetAttribute("RigType",a.rig)
 		local selected=a.id=="quarry_raider" or a.id=="quarry_guardian"
-		local art=if selected then quarryParts(a) else a.parts
+		local greenwood=a.id=="greenwood_scout" or a.id=="forest_captain"
+		local art=if selected then quarryParts(a) elseif greenwood then greenwoodParts(a) else a.parts
 		if selected then m:SetAttribute("EnemyVisualStyle","IronveilForgedV1");m:SetAttribute("EnemyVisualPartCount",#art) end
+		if greenwood then m:SetAttribute("EnemyVisualStyle","GreenwoodForgedV1");m:SetAttribute("EnemyVisualPartCount",#art) end
 		for _,v in ipairs(art) do
 			local p:BasePart
 			if v.shape=="Wedge" then p=Instance.new("WedgePart") else

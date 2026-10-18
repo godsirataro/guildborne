@@ -70,6 +70,40 @@ local function ironveilPose(boss: boolean,name: string,swing: number,breath: num
     if hitAge>=0 and hitAge<.18 and (name=="RootJoint" or name=="Neck") then x+=math.sin(hitAge/.18*math.pi)*.1 end
     return CFrame.new(shift)*CFrame.Angles(x,y,z)
 end
+-- Greenwood receives confirmed strikes after damage; never replay a cast windup.
+-- Only the current regional warning is allowed to anticipate an attack.
+local function greenwoodPose(captain: boolean,name: string,swing: number,breath: number,age: number,warning: number?,pattern: string,hitAge: number): CFrame
+    local left=name:find("Left")~=nil;local sign=if left then -1 else 1
+    local charge=if warning then math.sin(math.clamp(warning/.3,0,1)*math.pi/2) else 0
+    local follow=if not warning and age>=0 and age<.48 then (1-age/.48)^2 else 0
+    local roots=pattern=="Root Burst"
+    local x,y,z=0,0,0;local shift=Vector3.zero
+    if name:find("Shoulder") then
+        x=(if left and captain then -.32 else -.16)+swing*(if left then -.25 else .3)
+        z=sign*(if captain then .12 else .06)
+        if left then
+            x-=(if roots then .7 else .35)*charge+.15*follow
+            y=-.15*charge;z-=.10*charge
+        else
+            x-=(if roots then .75 else 1.35)*charge
+            y=(if roots then -.1 else -.65)*charge+.75*follow
+            z+=(if roots then .35 else .22)*charge-.45*follow
+            x+=.55*follow
+        end
+    elseif name:find("Hip") then
+        x=swing*(if left then 1 else -1)-(if roots then .16 else .06)*charge
+        z=sign*((if captain then .045 else .02)+(if roots then .045 else .015)*charge)
+    elseif name=="RootJoint" then
+        x=.025+(if roots then .22 else .1)*charge-.12*follow
+        y=(if roots then 0 else -.4)*charge+.38*follow
+        z=swing*(if captain then .025 else .04)
+        shift=Vector3.new(0,breath-(if roots then .12 else .035)*charge,0)
+    elseif name=="Neck" then
+        x=(if roots then .12 else -.05)*charge+.06*follow;y=.12*charge-.12*follow
+    end
+    if hitAge>=0 and hitAge<.18 and (name=="RootJoint" or name=="Neck") then x+=math.sin(hitAge/.18*math.pi)*.1 end
+    return CFrame.new(shift)*CFrame.Angles(x,y,z)
+end
 return function(animationTag: string?)
     local tag=animationTag or "GuildborneAnimatedEnemy"
     local rigs: {[Model]: any}={}
@@ -119,7 +153,9 @@ return function(animationTag: string?)
             local encounter=model:GetAttribute("EncounterId")
             local ironveil=model:GetAttribute("EnemyVisualStyle")=="IronveilForgedV1" and (encounter=="quarry_raider" or encounter=="quarry_guardian")
             local guardian=ironveil and encounter=="quarry_guardian"
-            r.phase+=math.min(dt,.1)*(if moving then (if guardian then 5.5 elseif ironveil then 8 elseif tower and role=="Spire Warden" then 6.5 else 9) else 1.7)
+            local greenwood=model:GetAttribute("EnemyVisualStyle")=="GreenwoodForgedV1" and (encounter=="greenwood_scout" or encounter=="forest_captain")
+            local captain=greenwood and encounter=="forest_captain"
+            r.phase+=math.min(dt,.1)*(if moving then (if captain then 6 elseif greenwood then 9 elseif guardian then 5.5 elseif ironveil then 8 elseif tower and role=="Spire Warden" then 6.5 else 9) else 1.7)
             local swing=if moving then math.sin(r.phase)*.4 elseif workspace:GetAttribute(Config.ReducedMotionAttribute) then 0 else math.sin(r.phase)*.025
             local actionAt=math.max(number(model,"EnemyActionAt"),number(model,"BossImpactAt"))
             if tower then
@@ -149,9 +185,26 @@ return function(animationTag: string?)
                 swing=math.sin(r.phase)*r.moveBlend*(if role=="Spire Warden" then .23 else .34)
                 if warning then swing*=.25 end
             end
+            if greenwood then
+                local basic,impact=number(model,"EnemyActionAt"),number(model,"RegionalImpactAt")
+                actionAt=math.max(if basic>0 and basic<=now then basic else 0,if impact>0 and impact<=now then impact else 0)
+                age=if actionAt>0 then now-actionAt else -1
+                local started,untilAt=number(model,"RegionalTelegraphAt"),number(model,"RegionalTelegraphUntil")
+                local pattern=model:GetAttribute("TelegraphName")
+                warning=if captain and state=="Windup" and (pattern=="Antler Cleave" or pattern=="Root Burst")
+                    and started>0 and started<=now and untilAt>now and untilAt>started then now-started else nil
+                r.moveBlend=(r.moveBlend or 0)+((if moving then 1 else 0)-(r.moveBlend or 0))*(1-math.exp(-math.min(dt,.1)*10))
+                swing=math.sin(r.phase)*r.moveBlend*(if captain then .23 else .34)
+                if warning then swing*=.15 end
+            end
             for j in pairs(r.joints) do
                 if not j.Parent then r.joints[j]=nil;continue end
                 local name=jointNames[j.Name]or j.Name:gsub(" ","")
+                if greenwood then
+                    local breath=if workspace:GetAttribute(Config.ReducedMotionAttribute) then 0 else math.sin(r.phase)*.008
+                    j.Transform=greenwoodPose(captain,name,swing,breath,age,warning,tostring(model:GetAttribute("TelegraphName")),now-number(model,"DamageCueAt"))
+                    continue
+                end
                 if ironveil then
                     local breath=if workspace:GetAttribute(Config.ReducedMotionAttribute) then 0 else math.sin(r.phase)*.008
                     j.Transform=ironveilPose(guardian,name,swing,breath,age,warning,tostring(model:GetAttribute("TelegraphName")),now-number(model,"DamageCueAt"))
