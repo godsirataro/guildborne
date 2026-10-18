@@ -44,6 +44,8 @@ return function(target: Model | number): any
    if p.Transparency<1 then visible+=1 end
    local cf=pivot:ToObjectSpace(p.CFrame)
    for _,x in ipairs({-1,1}) do for _,y in ipairs({-1,1}) do for _,z in ipairs({-1,1}) do
+    -- A wedge omits these two bounding-box corners; check all six real vertices.
+    if p:IsA("WedgePart") and y>0 and z<0 then continue end
     local corner=cf:PointToWorldSpace(V(x*p.Size.X/2,y*p.Size.Y/2,z*p.Size.Z/2))
     assert(math.abs(corner.X)<=150.001 and math.abs(corner.Z)<=225.001,"Art exceeds owner plot: "..p.Name)
    end end end

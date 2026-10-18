@@ -22,6 +22,11 @@ checkpoint records the expanded user scope without falsely completing/replacing
 the unfinished goal. Resume from this scope and the latest verified evidence.
 
 Latest continuation corrections:
+- Ground645 native repair check now passed25 engine paths/61colliders/15markers.
+  Ordinary arrival/courier/training/caravan walks show no prior dashed seam in
+  inspected captures. Fixed probe's false-positive box-corner treatment ofWedges;
+  original failure preserved. See GROUND645_NATIVE_V5.md/rawJSON. Final art and
+  eight-owner/device/dynamic-combat acceptance remain pending. Latest quota79%.
 - Combined baseline retry session8475 FINISHED exit0:912tests/384strict files,
   compile/build/boundaries passed. No baseline process running now. See
   COMBINED_ART_V5.md for initial failure, fixture corrections, native limitations.
