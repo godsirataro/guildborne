@@ -71,11 +71,11 @@ Deliver changed paths, assumptions, tests actually run, evidence hashes, unresol
 
 ### city-zones: City, guild zone and adventure-map quality
 
-Improve existing modular world. Validated plaza/tavern/guild/market/tower/portal routes and private building zones come before decorative expansion.
+Improve and verify existing modular city and adventure maps toward all connected cities and Lv1-100 coverage. Preserve plaza, tavern, guild, market, tower, portal and private building routes. Begin with the integrated Central City to Greenwood walking seam after geometry and authoritative travel handoffs. Verify actual bidirectional traversal, five followers, safe-zone transitions, respawn/recovery, existing portal/charter behavior and streaming. Record exact candidate identity and remaining coverage; the first seam does not complete this task. Own named map-kit modules and production/world/city-zones only. World-quality-slice owns regional composition; continuous-world-travel owns transport logic; controller owns integration.
 
 Environment: studio; skill: guildborne-world
 
-Write scopes: src/server/Services/CityInteriorKit.luau, src/server/Services/AdventureMapKit.luau, src/server/Services/AdventurePropKit.luau, production/world
+Write scopes: src/server/Services/CityInteriorKit.luau, src/server/Services/AdventureMapKit.luau, src/server/Services/AdventurePropKit.luau, production/world/city-zones
 
 Required checks: routes, followers, safe-zone, travel, streaming
 

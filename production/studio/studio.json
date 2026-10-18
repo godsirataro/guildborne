@@ -403,6 +403,7 @@
     }
   ],
   "taskRoles": {
+    "continuous-world-travel": "engineering-lead",
     "audit": "technical-director",
     "research": "tools-engineer",
     "registry-reconciliation": "asset-curator",

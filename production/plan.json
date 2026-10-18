@@ -4,6 +4,24 @@
   "status": "CONTINUING_LATEST_GOALS_NOT_FULL_GAME_COMPLETE",
   "tasks": [
     {
+      "id": "continuous-world-travel",
+      "skill": "guildborne-luau",
+      "environment": "local",
+      "dependsOn": ["audit", "registry-reconciliation"],
+      "writeScopes": [
+        "src/server/Services/TravelService.luau",
+        "src/server/Systems/TravelRules.luau",
+        "src/shared/Config/City.luau",
+        "src/server/Services/HeroService.luau",
+        "tests/continuous_world_travel.luau",
+        "tests/run_continuous_world_travel.luau",
+        "production/world/continuous-travel"
+      ],
+      "checks": ["source-contract", "regression", "independent-review"],
+      "title": "Authoritative continuous City to Greenwood travel",
+      "brief": "Implement the first continuous walking connection toward the required connected cities and Lv1-100 world using existing TravelService, TravelRules and HeroService. Consume a controller-integrated corridor descriptor supplied by world-quality-slice. Preserve avatar position on ordinary crossings; update server-owned zone and respawn state without portal teleportation or boundary snap-back. Preserve session ownership, novice/release eligibility, tower restrictions, charter checks, private guild/course/campaign isolation, optional shared-local travel and safe recovery. Handle bidirectional crossings, hysteresis, death, character replacement, disconnect and companion continuity without duplicating combat ownership or rewards. Reuse existing regional combat synchronization; no competing service. Controller owns WorldService, Bootstrap and main test-runner integration. Deliver focused boundary, gate, respawn, recovery and companion regression evidence. Local acceptance does not certify ordinary Studio traversal, streaming, multiplayer or the full world."
+    },
+    {
       "id": "novice-entry-art",
       "skill": "guildborne-world",
       "environment": "local",
@@ -454,7 +472,7 @@
         "src/server/Services/CityInteriorKit.luau",
         "src/server/Services/AdventureMapKit.luau",
         "src/server/Services/AdventurePropKit.luau",
-        "production/world"
+        "production/world/city-zones"
       ],
       "checks": [
         "routes",
@@ -464,7 +482,7 @@
         "streaming"
       ],
       "title": "City, guild zone and adventure-map quality",
-      "brief": "Improve existing modular world. Validated plaza/tavern/guild/market/tower/portal routes and private building zones come before decorative expansion."
+      "brief": "Improve and verify existing modular city and adventure maps toward all connected cities and Lv1-100 coverage. Preserve plaza, tavern, guild, market, tower, portal and private building routes. Begin with the integrated Central City to Greenwood walking seam after geometry and authoritative travel handoffs. Verify actual bidirectional traversal, five followers, safe-zone transitions, respawn/recovery, existing portal/charter behavior and streaming. Record exact candidate identity and remaining coverage; the first seam does not complete this task. Own named map-kit modules and production/world/city-zones only. World-quality-slice owns regional composition; continuous-world-travel owns transport logic; controller owns integration."
     },
     {
       "id": "monsters",

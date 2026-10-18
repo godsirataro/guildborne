@@ -85,7 +85,25 @@ Generated output, import, Studio acceptance, hardware and human review are disti
 
 ## Forge tasks (these scopes apply only after a valid task claim)
 
-No directly assigned Forge task. Coordination and review do not authorize writing. Obtain an explicitly scoped task before implementation.
+### continuous-world-travel: Authoritative continuous City to Greenwood travel
+
+Implement the first continuous walking connection toward the required connected cities and Lv1-100 world using existing TravelService, TravelRules and HeroService. Consume a controller-integrated corridor descriptor supplied by world-quality-slice. Preserve avatar position on ordinary crossings; update server-owned zone and respawn state without portal teleportation or boundary snap-back. Preserve session ownership, novice/release eligibility, tower restrictions, charter checks, private guild/course/campaign isolation, optional shared-local travel and safe recovery. Handle bidirectional crossings, hysteresis, death, character replacement, disconnect and companion continuity without duplicating combat ownership or rewards. Reuse existing regional combat synchronization; no competing service. Controller owns WorldService, Bootstrap and main test-runner integration. Deliver focused boundary, gate, respawn, recovery and companion regression evidence. Local acceptance does not certify ordinary Studio traversal, streaming, multiplayer or the full world.
+
+Environment: local; skill: guildborne-luau
+
+Write scopes: src/server/Services/TravelService.luau, src/server/Systems/TravelRules.luau, src/shared/Config/City.luau, src/server/Services/HeroService.luau, tests/continuous_world_travel.luau, tests/run_continuous_world_travel.luau, production/world/continuous-travel
+
+Required checks: source-contract, regression, independent-review
+
+Dependencies: audit, registry-reconciliation
+
+Path rule server-authority: Reuse actual services; server owns combat/inventory/currency/allocation/rewards/guild/build/escrow. Preserve fencing/receipts/saves/disabled flags. No production cloud writes or commerce activation.
+
+Path rule shared-contracts: Shared definitions are client-safe. Preserve IDs/earned ancestry and progression separately from cosmetic IDs. Reconcile Novice 10/35/70 and Hall contracts.
+
+Path rule tooling: Use reviewed bounded local commands/tests. Studio/Forge planners do not launch models; paid/model subprocess, MCP mutation and installation require actual authorization/capability.
+
+Path rule production-evidence: Reconcile latest goals/registries/scopes. One shared ledger, claim before writes, immediate lease check and preserved raw receipts. Different reviewer validates evidence; local checks cannot replace hardware/cloud/human gates.
 
 ## Evidence gates
 
