@@ -1,6 +1,7 @@
 # City–Greenwood walking integration contract
 
-Status: agreed implementation interface, not implemented/Studio accepted.
+Status: server walking implementation integrated at ac8cd25; geometry and GUI
+follow-ups pending. Not Studio accepted.
 Full objective remains all connected cities/Lv1-100/tower/party and custom art.
 
 Shared ledger: C:/Work/MySelf/Guildborne/build/agentic/four-session-v6.sqlite3.
@@ -78,4 +79,44 @@ combat transitions, graphics/performance and fullworld completion remain pending
 
 Earned Studio def49833 is preserved at The First Guest/HallLv1.62789207 Chapter3
 also preserved. Disposable155918dd and7d1529ee stopped. No baseline process live.
-Latest measured quota79%remaining; stop new waves near5%, no reset requested.
+Latest measured quota75%remaining; stop new waves near5%, no reset requested.
+
+## Integration checkpoint, 2026-10-18
+
+Root scaffold011fb22 uses explicit ContinuousWorldCandidate plus launchEnabled;
+build with `python tools/build_integration_preview.py --launch --continuous-world`
+only after geometry dependencies are integrated. Ordinary launch does not enable
+the new seam. Canonical staging Runtime is unchanged. Bootstrap eligibility was
+executed with frozen profile dependencies:23cases passed. Recursive private-arena
+lookup covers nested TowerLesson models. Optional runtime flag uses the existing
+explicit dynamic-field pattern following independent review.
+
+S17 source6bbead1 integrated asac8cd25. Root reran17actual-service platform groups
+successfully and added the suite to tests/run.luau. Combined baseline completed
+with exit0:929tests, Rojo build, analysis/compile,384strict files and built-place
+boundaries passed; existing lint warnings remain. Raw log is
+build/controller-walking-v6-baseline.log. Local tests do not prove physics or
+five-follower behavior. Documentation changed during the run; this is ordinary
+local validation, not a clean-commit Forge acceptance packet.
+
+S17 follow-up projection: single character attribute WalkingRouteContext is
+exactly city_greenwood_west|City|Greenwood or the reverse zone pair, nil outside
+admitted transit. Clear immediately on recovery, including blocked recovery,
+and every completion/travel/death/replacement cleanup. Presentation only; server
+authorization never consumes this attribute. Follow-up implementation pending.
+
+S13 geometry metadata agreed: NavigationNodes folder containing ordered
+Vector3Value nodes001..038 with Index, generated from the same floor centerline.
+Model attributes RouteId,FromZone,ToZone,WalkWidth=24,
+NavigationPointKind=FloorCenter,NavigationBelowFloor=4,NavigationAboveFloor=14.
+Final source and names require handoff verification. S14 assigned fresh worktree
+and v6gameplay-ui-quality for read-only consumption of these contracts: actual
+curve navigation, neutral transit name, Walk instructions, no false quest claim,
+and clearing stale markers on geometry/context loss.
+
+Full objective and goal-tool text limitation: [MASTER_GOAL.md](MASTER_GOAL.md).
+
+Controller visually inspected S13 cliffbridge.png: corridor is still sparse and
+flat with an exposed floating strip and repeated scenery. Functional route art
+is not final visual acceptance. Broader terrain/coast, landmarks and authored
+transitions remain required after the native seam is proven.
