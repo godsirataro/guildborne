@@ -29,10 +29,40 @@ return function()
  local presented:Model?=nil;local proxy:Model?=nil;local lastWarning:any=nil
  local actionCursor=Presentation(Timeline.accept)
  local effect=require(script.Parent.SkillEffects)()
+ local carrier:Part?=nil;local boundHand:BasePart?=nil;local boundCharacter:Model?=nil;local boundStamp:number?=nil
+ local function clearCarrier()
+  if carrier then carrier:Destroy();carrier=nil end
+ end
+ local function cancelAction()
+  -- Only the local presentation proxy owns these attributes/attachments.
+  if proxy then proxy:SetAttribute("ActionAt",nil) end
+  clearCarrier();boundHand=nil;boundCharacter=nil;boundStamp=nil
+ end
  local function clearPresentation()
+  cancelAction()
   if proxy then proxy:Destroy();proxy=nil end
   presented=nil;actionCursor.reset();lastWarning=nil
  end
+ local function live(character:Model?):boolean
+  local humanoid=if character then character:FindFirstChildOfClass("Humanoid") else nil
+  return character~=nil and character:IsDescendantOf(workspace) and humanoid~=nil and humanoid.Health>0
+ end
+ local handTracking=Run.PreRender:Connect(function()
+  local character=boundCharacter;local stamp=boundStamp
+  if not character or not stamp then return end
+  local current=presented;local visual=proxy
+  local hand=boundHand
+  if not current or not current:IsDescendantOf(workspace) or not visual or not visual.Parent
+   or current:GetAttribute("ActionAt")~=stamp or visual:GetAttribute("ActionAt")~=stamp
+   or player.Character~=character or not live(character)
+   or (hand~=nil and (not hand:IsDescendantOf(character) or (character:FindFirstChild("RightHand") or character:FindFirstChild("Right Arm"))~=hand)) then
+   cancelAction();return
+  end
+  -- Carrier lifetime is separate from spell lifetime (e.g. Fireball's tail).
+  -- Never replay/rebind an event when a hand appears after initial observation.
+  if workspace:GetServerTimeNow()-stamp>=Timeline.Duration then clearCarrier()
+  elseif carrier and hand then carrier.CFrame=hand.CFrame end
+ end)
  local buttons:{TextButton}={}
  local function send(action:string)
   local current=arena;if not current or (action~="Return"and current:GetAttribute("TrialStatus")~="Active")or MenuRouter.isBlocking()or Input:GetFocusedTextBox()then return end
@@ -76,14 +106,31 @@ return function()
   local stamp=current:GetAttribute("ActionAt")
   -- A cleared server event cancels delayed presentation without replaying its
   -- timestamp if it is observed again. Arena replacement resets the cursor.
-  if stamp==nil and proxy then proxy:SetAttribute("ActionAt",nil) end
+  if stamp==nil and proxy then cancelAction() end
   local origin=current:GetAttribute("ActionOriginPosition");local target=current:GetAttribute("ActionTargetPosition")
   if typeof(origin)=="Vector3"and typeof(target)=="Vector3"and proxy and proxy.PrimaryPart then
    if actionCursor.observe(stamp,workspace:GetServerTimeNow(),true) then
-    proxy.PrimaryPart.CFrame=if (target-origin).Magnitude>.01 then CFrame.lookAt(origin,target)else CFrame.new(origin)
-    for _,key in ipairs({"ClassId","ActionEffect","ActionAbilityId","ActionTargetPosition"})do proxy:SetAttribute(key,current:GetAttribute(key))end
-    proxy:SetAttribute("ActionAt",stamp)
-    effect(proxy);Audio.Play(AudioConfig.actionCue(tostring(current:GetAttribute("ClassId")),tostring(current:GetAttribute("ActionEffect"))),origin)
+    cancelAction()
+    local character=player.Character
+    -- Consume accepted events even while dead/missing, so respawn cannot replay
+    -- an earlier body action. A missing hand on a live body uses normal VFX fallback.
+    if live(character) and character then
+     boundCharacter=character;boundStamp=stamp :: number
+     proxy.PrimaryPart.CFrame=if (target-origin).Magnitude>.01 then CFrame.lookAt(origin,target)else CFrame.new(origin)
+     for _,key in ipairs({"ClassId","ActionEffect","ActionAbilityId","ActionTargetPosition"})do proxy:SetAttribute(key,current:GetAttribute(key))end
+     local class=current:GetAttribute("ClassId")
+     if class=="Warrior" or class=="Knight" then
+      local hand=character:FindFirstChild("RightHand") or character:FindFirstChild("Right Arm")
+      if hand and hand:IsA("BasePart") then
+       boundHand=hand
+       local p=Instance.new("Part");p.Name="RightHand";p.Size=Vector3.one*.1;p.Transparency=1
+       p.Anchored=true;p.CanCollide=false;p.CanTouch=false;p.CanQuery=false;p.CastShadow=false
+       p.CFrame=hand.CFrame;p.Parent=proxy;carrier=p
+      end
+     end
+     proxy:SetAttribute("ActionAt",stamp)
+     effect(proxy);Audio.Play(AudioConfig.actionCue(tostring(current:GetAttribute("ClassId")),tostring(current:GetAttribute("ActionEffect"))),origin)
+    end
    end
   end
   local warning=current:GetAttribute("WarningToken")
@@ -100,5 +147,5 @@ return function()
    button.Text=key.." · "..tostring(current:GetAttribute(action.."Label")or "")..(if waitFor>.05 then string.format(" · %.1fs",waitFor)else "")
   end
  end)
- gui.Destroying:Connect(function()connection:Disconnect();keyboard:Disconnect();clearPresentation();player:SetAttribute("NoviceTrialHUDActive",false)end)
+ gui.Destroying:Connect(function()connection:Disconnect();keyboard:Disconnect();handTracking:Disconnect();clearPresentation();player:SetAttribute("NoviceTrialHUDActive",false)end)
 end
