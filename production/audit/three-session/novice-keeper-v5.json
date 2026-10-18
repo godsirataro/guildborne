@@ -1,0 +1,49 @@
+{
+  "studio": "def49833-7515-4dc3-8740-9fe5e947164c",
+  "candidate": "25a379166e2a8d89f006331422db510327fb0659516e2c888ae6fe6a086d4d7a",
+  "start": {
+    "content": [
+      {
+        "type": "text",
+        "text": "{\"goals\":\"Defeat the opponent 0/1\",\"pos\":\"-4500, 27.998023986816406, 654\",\"title\":\"Warrior · Ready\",\"health\":\"HP 48/48 · Crossroads Keeper 240/240\",\"hint\":\"Use F/Q or the buttons. Dodge orange warnings.\"}"
+      }
+    ],
+    "isError": false
+  },
+  "combat1": {
+    "content": [
+      {
+        "type": "text",
+        "text": "{\"health\":\"HP 39/48 · Crossroads Keeper 100/240\",\"goals\":\"Defeat the opponent 0/1\",\"title\":\"Warrior · Training\",\"hint\":\"Use F/Q or the buttons. Dodge orange warnings.\"}"
+      }
+    ],
+    "isError": false
+  },
+  "combat2": {
+    "content": [
+      {
+        "type": "text",
+        "text": "{\"health\":\"HP 3/48 · Crossroads Keeper 0/240\",\"goals\":\"Defeat the opponent 1/1\",\"title\":\"Warrior · Lesson complete\",\"hint\":\"Leave training to continue your journey.\"}"
+      }
+    ],
+    "isError": false
+  },
+  "objectives": {
+    "content": [
+      {
+        "type": "text",
+        "text": "{\"pos\":\"-4417.73046875, 2.9980251789093018, -33.61174774169922\",\"objectives\":{\"1\":{\"name\":\"Objective_defeat_keeper\",\"text\":\"✓ Defeat the Crossroads Keeper\"},\"3\":{\"name\":\"Objective_inspect_false_crest\",\"text\":\"✓ Inspect the false guild crest\"},\"2\":{\"name\":\"Objective_free_captive\",\"text\":\"✓ Free the captive\"}}}"
+      }
+    ],
+    "isError": false
+  },
+  "claim": {
+    "content": [
+      {
+        "type": "text",
+        "text": "{\"chapter\":\"Chapter 5 / 6\",\"title\":\"Before the Oath\",\"pos\":\"-4417.73046875, 2.9980251789093018, -33.61174774169922\"}"
+      }
+    ],
+    "isError": false
+  }
+}

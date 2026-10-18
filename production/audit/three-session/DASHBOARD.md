@@ -2,6 +2,8 @@
 
 ## Latest goal checkpoint (supersedes statuses below)
 
+Latest ordinary candidate progress: CrossroadsKeeper240→0 through real F/Q, player48→3; captive/crest nativeE and GUIclaim passed, nowChapter5 BeforetheOath at(-4417.7305,2.9980,-33.6117). See NOVICE_KEEPER_V5.md; no no-hit, Tower or detailedcombatvisual claim. S15 next bounded novice proxy hand-effects task dispatched in Guildborne-novice-handfx from39fdec4; S13/S14 continue active. GoalACTIVE.
+
 Latest ordinary continuation: newdef49833 completedChapter3 via tracks→rescue-first nativeE→suppliesfallbackE→nativeGUIclaim, nowChapter4 TheCrossroadsKeeper at(-4549.3589,2.9980,28.6016). Preserveearnedstate; no injections. See NOVICE_CHAPTER3_V5.md. S13/S14 currentturns confirmedactive; newcorridor not yetinrunningcandidate. Quota90%remaining, GoalACTIVE.
 
 Latest ordinary combined gameplay: newdef49833 session completedChapter2 using nativeinputs: Fdummy120→110/hits1of1, actualwarningdodge, captiveE, newGUIclaim→Chapter3. Position(-4425.4551,2.9980,89.6619), managementopen; preserveit separately fromolder627892Chapter3. See NOVICE_CHAPTER2_V5.md. No independentlymeasuredBasicvisual/contact/audio claim. Rootenemyquality lease released aftere263114; S13/S14 current turns confirmedinProgress. GoalACTIVE.
