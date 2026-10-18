@@ -1,5 +1,51 @@
 # Current controller continuation — 2026-10-18
 
+## User goal checkpoint (authoritative scope)
+
+Coordinate S13 Map, S14 GUI, S15 Animation/VFX and S17 NPC/Quest/Character
+through completion of the full Guildborne game: connected open-world cities,
+monster and quest progression through level 100, tower content, player plus up
+to five heroes, polished original native Roblox GUI informed by located user
+references, and coherent server-authorized combat, animation, VFX and SFX.
+Inspect and curate existing Catalog-94 and other local assets; use verified
+Blender, Rojo and Studio capabilities where useful. Track exclusive ownership,
+review actual deliveries, integrate tested commits and normal-push without PRs.
+No merge, force-push, publishing, spending or production DataStore mutation.
+Continue dependency-ready parallel work until complete or actual account quota
+reaches about 5% remaining; check between bounded waves and preserve handoffs.
+Do not treat a starter slice, file generation or local tests as full completion.
+Studio, device, multiplayer and human visual acceptance remain distinct gates.
+
+The goal API still shows ACTIVE but its saved objective says starter-world slice.
+Its exposed update operation can change only status, not objective text. This
+checkpoint records the expanded user scope without falsely completing/replacing
+the unfinished goal. Resume from this scope and the latest verified evidence.
+
+Latest continuation corrections:
+- New native progress: class confirmation, Hall Sentinel victory (360 to 0;
+  player 3/57), Hall registration and two-step free founding all succeeded.
+  Preserved def49833 is now The First Guest, guild chapter 1/12, Hall Lv1,
+  Warrior level10/450XP, near (0,4,23). See NOVICE_FOUNDATION_V5.md and raw JSON.
+  The class-confirmation-pending snapshot below is superseded by this result.
+- Fresh quota now 80% remaining. S15 delivered reviewed 0837413 and released
+  enemy-quality-slice; integration/native presentation validation remain pending.
+- Full Warrior retry succeeded through ordinary native input: Sentinel 700 to 0,
+  player 57 to 3, basic 3/3, dodge 1/1, victory 1/1. LeaveTrial returned to the
+  Chapter 6 menu, "Trial passed: Warrior". Class confirmation remains pending.
+  Keep the earlier failed attempt as historical evidence; no guild founded yet.
+- S13, S14 and S15 were instructed to finish, review, commit and release their
+  current wave, then stop new waves before a coordinated scope/plan amendment.
+- Next world milestone is actual City-to-Greenwood walking in both directions.
+  TravelService currently snaps players back outside bounded zones. Roads alone
+  cannot satisfy continuity: reconcile travel/zone authority, encounter handoff,
+  companions, respawn, safe ground and fall recovery under legitimate scopes.
+- S15 selected quarry_raider/quarry_guardian after inspecting Catalog-94 assets;
+  custom native mining equipment and silhouettes are in progress. Delivery and
+  native acceptance are still pending; no new runtime asset IDs or Blender claim.
+
+The older wave snapshot below is retained for provenance; corrections above
+take precedence where progress has advanced.
+
 Goal ACTIVE: full Guildborne cities/level100/tower/quests/player+fiveheroes,
 custom native UI and animation/VFX. Starter acceptance remains intermediate.
 Reviewed commits/normal push allowed; no PR/merge/publish/spend/production data.
