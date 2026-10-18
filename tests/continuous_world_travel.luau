@@ -87,7 +87,7 @@ return function(test:any,eq:any)
   local f=adapter();f.step(0);eq(f.follow(),true)
   for _,x in ipairs({25,50,75})do f.step(x);eq(f.player.attributes.CurrentZone,"City");eq(f.player.RespawnLocation,"city")end
   f.step(100);eq(f.player.attributes.CurrentZone,"Greenwood");eq(f.player.RespawnLocation,"forest")
-  f.step(100);f.step(100);for _,x in ipairs({75,50,25,0})do f.step(x)end
+  f.step(100);f.step(98);for _,x in ipairs({75,50,25,0})do f.step(x)end
   eq(f.player.attributes.CurrentZone,"City");eq(f.player.RespawnLocation,"city")
   eq(f.moves,0);eq(f.velocities,0);eq(f.heroMoves,0)
  end)
@@ -209,7 +209,7 @@ return function(test:any,eq:any)
   f.character:SetAttribute("WalkingRouteContext","untrusted|Guild|City")
   for _,x in ipairs({25,50,75,100})do f.step(x)end
   eq(f.player.attributes.CurrentZone,"Greenwood");eq(f.character:GetAttribute("WalkingRouteContext"),nil)
-  f.step(100);f.step(100);eq(f.character:GetAttribute("WalkingRouteContext"),"city_greenwood_west|Greenwood|City")
+  f.step(100);f.step(98);eq(f.character:GetAttribute("WalkingRouteContext"),"city_greenwood_west|Greenwood|City")
  end)
  test("walking display clears every successful exit and immediately on blocked recovery",function()
   for _,mode in ipairs({"remove","portal","visit","local","respawn","death","recovery","cancel"})do
@@ -243,11 +243,60 @@ return function(test:any,eq:any)
   for _,x in ipairs({35,60,85,100})do f.step(x)end
   eq(f.player.attributes.CurrentZone,"Greenwood");eq(f.moves,0);eq(f.heroMoves,0);eq(f.velocities,0)
  end)
+ test("arrival stays unadmitted while stationary or jittering and permits immediate purposeful return",function()
+  for _,reverse in ipairs({false,true})do
+   local f=adapter();local destination=if reverse then "City"else "Greenwood"
+   if reverse then f.source("Greenwood")end
+   local origin=if reverse then 100 else 0;local target=100-origin;local sign=if reverse then -1 else 1
+   f.step(origin)
+   for _,distance in ipairs({25,50,75,100})do f.step(origin+sign*distance)end
+   for _,offset in ipairs({0,0,.4,-.4,.3,-.3,0,0,0})do
+    f.step(target+offset);eq(f.character:GetAttribute("WalkingRouteContext"),nil)
+    eq(f.follow(),false);eq(f.player.attributes.CurrentZone,destination)
+   end
+   f.step(target-sign*3);eq(f.follow(),true)
+   eq(f.character:GetAttribute("WalkingRouteContext"),"city_greenwood_west|"..destination.."|"..(if reverse then "Greenwood"else "City"))
+   eq(f.moves,0);eq(f.velocities,0);eq(f.heroMoves,0)
+   -- Recreate arrival, then turn immediately on the next sample without entry exit.
+   for _,distance in ipairs({25,50,75,100})do f.step(target-sign*distance)end
+   eq(f.character:GetAttribute("WalkingRouteContext"),nil)
+   f.route.entries[if reverse then "Greenwood"else "City"]=f.box(origin,30)
+   f.step(origin+sign*8);eq(f.follow(),true);eq(f.moves,0) -- Immediate WalkSpeed 16 turnaround.
+  end
+ end)
  test("nonfinite admitted root movement cannot commit or reach segment interpolation",function()
   for _,bad in ipairs({0/0,math.huge,-math.huge})do
    local f=adapter();f.step(0);f.step(25);f.step(bad)
    eq(f.player.attributes.CurrentZone,"City");eq(f.player.RespawnLocation,"city");eq(f.follow(),false)
    eq(f.root.Position.X,0);eq(f.moves,1)
+  end
+ end)
+ test("arrival at corridor-facing entry edge permits immediate normal-speed reversal across edge",function()
+  for _,reverse in ipairs({false,true})do
+   local f=adapter();if reverse then f.source("Greenwood")end
+   local origin=if reverse then 100 else 0;local sign=if reverse then -1 else 1
+   f.step(origin)
+   for _,distance in ipairs({25,50,75,95})do f.step(origin+sign*distance)end
+   eq(f.character:GetAttribute("WalkingRouteContext"),nil)
+   f.step(origin+sign*87);eq(f.follow(),true)
+   eq(f.moves,0);eq(f.heroMoves,0);eq(f.velocities,0)
+   for _,distance in ipairs({62,37,12,0})do f.step(origin+sign*distance)end
+   eq(f.player.attributes.CurrentZone,if reverse then "Greenwood"else "City");eq(f.moves,0)
+  end
+ end)
+ test("boundary jitter and slow turnaround retain validated arrival continuity",function()
+  for _,reverse in ipairs({false,true})do
+   for _,offsets in ipairs({{.4,.2,.4,3},{1,2}})do
+    local f=adapter();if reverse then f.source("Greenwood")end
+    local origin=if reverse then 100 else 0;local sign=if reverse then -1 else 1
+    f.step(origin);for _,d in ipairs({25,50,75,95})do f.step(origin+sign*d)end
+    for _,offset in ipairs(offsets)do
+     f.step(origin+sign*(95-offset))
+     eq(f.follow(),offset>=2)
+     if offset<2 then eq(f.character:GetAttribute("WalkingRouteContext"),nil)end
+    end
+    f.step(origin+sign*87);eq(f.follow(),true);eq(f.moves,0);eq(f.heroMoves,0)
+   end
   end
  end)
 end

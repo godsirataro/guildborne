@@ -62,6 +62,18 @@ limits require route entries wide enough for normal walking and are not a genera
 movement anti-cheat. Short traversed segments are checked every ≤2 studs through
 the OBB union so bends do not authorize straight shortcuts through private plots.
 
+After arrival, an identity-bound sample and return-motion latch prevent stationary
+or sub-two-stud oscillation from publishing a reverse route. Readmission requires
+at least two studs of net horizontal motion toward the opposite entry, projected
+along the entry-center axis from the furthest observed destination-side point.
+This is a displacement threshold, not a timer or accumulated jitter.
+An immediate turnaround inside the entry is supported without leaving it first;
+if subsequent samples cross its edge, arrival continuity is retained only while
+every observed corridor segment, identity, gate, distance and time bound validates.
+Leaving the route discards that continuity. The normal
+entry overlap/sampling requirements above still apply. Lifecycle
+cleanup discards the latch, and session/character replacements cannot reuse it.
+
 The source CurrentZone and respawn remain latched throughout transit. At the
 destination entry, live identity and gates are rechecked, then only the tracked
 zone, CurrentZone attribute and respawn change. There is no player pivot, velocity

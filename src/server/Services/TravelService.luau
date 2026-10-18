@@ -18,6 +18,7 @@ return function(city: any,plots: any,heroes: any,localTravel:any?,platform:any?,
  local S={};local buckets: {[Player]: any}={};local zones: {[Player]: string}={}
  local walkingStops:{[Player]:any}={};local walkingSamples:{[Player]:any}={}
  local walkingNotified:{[Player]:number}={}
+ local walkingArrivals:{[Player]:any}={}
  local function clearWalkingDisplay(player:Player)
   if not walking then return end
   local old=walkingStops[player];local character=player.Character
@@ -25,7 +26,7 @@ return function(city: any,plots: any,heroes: any,localTravel:any?,platform:any?,
   if character and (not old or character~=old.character)then character:SetAttribute("WalkingRouteContext",nil)end
  end
  local function clearWalking(player:Player)
-  clearWalkingDisplay(player);walkingStops[player]=nil;walkingSamples[player]=nil
+  clearWalkingDisplay(player);walkingStops[player]=nil;walkingSamples[player]=nil;walkingArrivals[player]=nil
  end
 	local function alive(player: Player): boolean
 		local c=player.Character;local h=c and c:FindFirstChildOfClass("Humanoid")
@@ -267,6 +268,12 @@ return function(city: any,plots: any,heroes: any,localTravel:any?,platform:any?,
     -- No yields, player pivot, velocity reset, follower reset or persistence write.
     zones[player]=snapshot.to;player:SetAttribute("CurrentZone",snapshot.to);player.RespawnLocation=spawn
     clearWalking(player)
+    -- Keep an identity-bound arrival sample: standing/jitter is not a return trip.
+    local axis=route.entries[snapshot.from].cframe.Position-route.entries[snapshot.to].cframe.Position
+    local length=math.sqrt(axis.X*axis.X+axis.Z*axis.Z)
+    local arrival={session=session,epoch=session.epoch,token=session.token,character=c,position=root.Position,at=now(),route=route,zone=snapshot.to,
+     axis=if length>0 then V(axis.X/length,0,axis.Z/length)else V(0,0,0),progress=0}
+    walkingArrivals[player]=arrival;walkingSamples[player]=arrival
    end
    return true
   end
@@ -276,15 +283,29 @@ return function(city: any,plots: any,heroes: any,localTravel:any?,platform:any?,
   local sample={session=session,epoch=session and session.epoch,token=session and session.token,character=c,position=root.Position,at=now()}
   walkingSamples[player]=sample
   if not session then return false end
+  local arrival=walkingArrivals[player]
+  if arrival and (not Rules.walkingIdentity(arrival,session,c) or arrival.zone~=zone or not routeContains(arrival.route,root.Position))then
+   walkingArrivals[player]=nil;arrival=nil
+  end
   for _,route in ipairs(walking.Routes or {})do
    if routeReady(route) and (zone==route.fromZone or zone==route.toZone)then
     local to=if zone==route.fromZone then route.toZone else route.fromZone
     local atEntry=Config.walkingContains(route.entries[zone],root.Position) and inZone(zone,root.Position)
     local unauthorized=routeContains(route,root.Position) and not inZone(zone,root.Position)
-    if atEntry or unauthorized then
+    local returnMotion=false
+    if arrival and arrival.route==route then
+     local offset=root.Position-arrival.position
+     local progress=offset.X*arrival.axis.X+offset.Z*arrival.axis.Z
+     arrival.progress=math.min(arrival.progress,progress)
+     returnMotion=progress-arrival.progress>=2
+    end
+    -- An immediate turnaround may cross the entry edge between samples.
+    local returning=arrival and arrival.route==route and previous and Rules.walkingIdentity(previous,session,c)
+     and routeContains(route,root.Position)
+    if atEntry or unauthorized or returning then
      local candidate={session=session,epoch=session.epoch,token=session.token,character=c,route=route,from=zone,to=to,position=root.Position,at=now()}
      local problem=gate(player,session,zone,to)
-     if unauthorized or problem then
+     if (unauthorized and not returning) or problem then
       walkingStops[player]=candidate;return recoverWalking(player,candidate,problem or "VisitStation")
      end
      -- Need two samples of this same actor; a remote jump cannot create admission.
@@ -293,7 +314,18 @@ return function(city: any,plots: any,heroes: any,localTravel:any?,platform:any?,
       if distance~=distance or distance>35 or now()-previous.at>2 then
        walkingStops[player]=candidate;return recoverWalking(player,candidate,"VisitStation")
       end
+      if returning then
+       local delta=root.Position-previous.position
+       for i=0,math.ceil(distance/2)do
+        local position=previous.position+delta*(if distance==0 then 0 else math.min(1,i/math.ceil(distance/2)))
+        if not routeContains(route,position)then
+         walkingStops[player]=candidate;return recoverWalking(player,candidate,"VisitStation")
+        end
+       end
+      end
+      if arrival and arrival.route==route and not returnMotion then return true end
       if not Rules.walkingIdentity(candidate,walkingSession(player),player.Character)then return true end
+      walkingArrivals[player]=nil
       walkingStops[player]=candidate
       -- Atomic presentation hint only; never consulted by authority or eligibility.
       if c then c:SetAttribute("WalkingRouteContext",Rules.walkingContext(route.id,zone,to))end
