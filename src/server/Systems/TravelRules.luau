@@ -1,6 +1,26 @@
 --!strict
 return function(config: any)
 	local R={}
+ -- Trusted integration hooks still fail closed on exceptions or accidental yields.
+ function R.walkingCall(callback:any,...:any):(boolean,any)
+  if type(callback)~="function" then return false,nil end
+  local thread=coroutine.create(callback);local ok,value=coroutine.resume(thread,...)
+  if coroutine.status(thread)~="dead" then coroutine.close(thread);return false,nil end
+  return ok,value
+ end
+ function R.walkingIdentity(snapshot:any,session:any,character:any):boolean
+  return snapshot~=nil and session~=nil and snapshot.session==session and snapshot.epoch==session.epoch
+   and snapshot.token==session.token and snapshot.character==character and not session.closing
+ end
+ function R.walkingProblem(session:any,alive:boolean,downed:boolean,inCombat:boolean,tower:boolean):string?
+  if not session or session.state~="Active" or session.closing or not session.record then return "ActorNotReady"end
+  if session.busy then return "SavePending"end
+  if not alive then return "ActorNotReady"end
+  if downed then return "Downed"end
+  if inCombat then return "ReturnToGuild"end
+  if tower then return "FinishExpedition"end
+  return nil
+ end
 	function R.localCurrent(snapshot:any,session:any):boolean
 		return snapshot~=nil and session~=nil and snapshot.session==session and snapshot.epoch==session.epoch and snapshot.token==session.token
 			and not session.closing and session.state=="Active" and session.record~=nil and not session.busy

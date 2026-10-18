@@ -1,5 +1,5 @@
 --!strict
-return function(city: any,plots: any,heroes: any,localTravel:any?,platform:any?)
+return function(city: any,plots: any,heroes: any,localTravel:any?,platform:any?,walking:any?)
 	local Config=if platform then platform.Config else require(game.ReplicatedStorage.Shared.Config.City)
 	local Civic=if platform then platform.Civic else require(game.ReplicatedStorage.Shared.Config.CivicCities)
 	local Rules=if platform then platform.Rules else require(script.Parent.Parent.Systems.TravelRules)(Config)
@@ -16,6 +16,9 @@ return function(city: any,plots: any,heroes: any,localTravel:any?,platform:any?)
 	local localRespawnReady:{[Player]:Model?}={}
 	local returnStops:{[Player]:string}={}
  local S={};local buckets: {[Player]: any}={};local zones: {[Player]: string}={}
+ local walkingStops:{[Player]:any}={};local walkingSamples:{[Player]:any}={}
+ local walkingNotified:{[Player]:number}={}
+ local function clearWalking(player:Player)walkingStops[player]=nil;walkingSamples[player]=nil end
 	local function alive(player: Player): boolean
 		local c=player.Character;local h=c and c:FindFirstChildOfClass("Humanoid")
 		return h~=nil and h.Health>0 and c~=nil and c:FindFirstChild("HumanoidRootPart")~=nil
@@ -88,15 +91,17 @@ return function(city: any,plots: any,heroes: any,localTravel:any?,platform:any?)
  end
 	function S.Travel(player: Player,zone: string): boolean
 		local target=destination(player,zone);if not target then return false end
+  clearWalking(player)
   localStops[player]=nil;localRespawnReady[player]=nil
   if zone=="Guild"then rememberCityStop(player)end
 		return arrive(player,zone,target)
 	end
 	-- Only the server visit adapter supplies a checked landing. Respawn stays at home.
-	function S.Visit(player:Player,target:Vector3):boolean rememberCityStop(player);local ok=arrive(player,"Guild",target);if ok then localStops[player]=nil;localRespawnReady[player]=nil end;return ok end
-	local function safeLocal(target:Vector3,geometry:Instance):boolean
-		local params=RaycastParams.new();params.FilterType=Enum.RaycastFilterType.Include;params.FilterDescendantsInstances={geometry};params.RespectCanCollide=true;params.CollisionGroup="GuildborneCharacters"
-		local overlap=OverlapParams.new();overlap.FilterType=Enum.RaycastFilterType.Include;overlap.FilterDescendantsInstances={geometry};overlap.RespectCanCollide=true;overlap.CollisionGroup="GuildborneCharacters"
+	function S.Visit(player:Player,target:Vector3):boolean rememberCityStop(player);local ok=arrive(player,"Guild",target);if ok then clearWalking(player);localStops[player]=nil;localRespawnReady[player]=nil end;return ok end
+	local function safeLocal(target:Vector3,geometry:Instance,extra:Instance?):boolean
+  local geometryList={geometry};if extra and extra~=geometry then table.insert(geometryList,extra)end
+		local params=RaycastParams.new();params.FilterType=Enum.RaycastFilterType.Include;params.FilterDescendantsInstances=geometryList;params.RespectCanCollide=true;params.CollisionGroup="GuildborneCharacters"
+		local overlap=OverlapParams.new();overlap.FilterType=Enum.RaycastFilterType.Include;overlap.FilterDescendantsInstances=geometryList;overlap.RespectCanCollide=true;overlap.CollisionGroup="GuildborneCharacters"
 		local hit=workspace:Raycast(target+V(0,3,0),V(0,-10,0),params)
 		return hit~=nil and target.Y-hit.Position.Y>=2 and target.Y-hit.Position.Y<=6 and #workspace:GetPartBoundsInBox(CFrame.new(target),V(4,5,4),overlap)==0
 	end
@@ -122,6 +127,7 @@ return function(city: any,plots: any,heroes: any,localTravel:any?,platform:any?)
 		-- No yields between the final identity check and movement.
 		if localTravel.Session(player)~=session or player.Character~=c then return false,"ActorNotReady"end
 		localRespawnReady[player]=nil
+  clearWalking(player)
 		localStops[player]={session=session,epoch=session.epoch,token=session.token,character=c,zone=zones[player]or "Guild",transform=c:GetPivot(),spawn=player.RespawnLocation,stop=returnStops[player]}
 		player:SetAttribute("CurrentZone","SharedLocalCandidate");if localTravel.Spawn then player.RespawnLocation=localTravel.Spawn end
 		moveLocal(player,CFrame.lookAt(target,target+V(0,0,-1)));return true,"OK"
@@ -149,6 +155,7 @@ return function(city: any,plots: any,heroes: any,localTravel:any?,platform:any?)
 	end
 	function S.ReturnLocal(player:Player):(boolean,string)return returnLocal(player,false)end
 	function S.Respawn(player: Player)
+  clearWalking(player)
 		if localStops[player]then
 			-- World calls this only after its CharacterAdded spawn-settle wait.
 			-- Heartbeat must not consume the return snapshot before that final pivot.
@@ -157,7 +164,135 @@ return function(city: any,plots: any,heroes: any,localTravel:any?,platform:any?)
 		end
 		S.Travel(player,zones[player] or "Guild")
 	end
-	function S.Remove(player: Player) localStops[player]=nil;localRespawnReady[player]=nil;zones[player]=nil;buckets[player]=nil;returnStops[player]=nil end
+	function S.Remove(player: Player) clearWalking(player);walkingNotified[player]=nil;localStops[player]=nil;localRespawnReady[player]=nil;zones[player]=nil;buckets[player]=nil;returnStops[player]=nil end
+ local function walkingSession(player:Player):any
+  if not walking then return nil end
+  local ok,session=Rules.walkingCall(walking.Session,player)
+  return if ok then session else nil
+ end
+ local function routeReady(route:any):boolean
+  if type(route)~="table" or type(route.id)~="string" or route.id==""
+   or not ((route.fromZone=="City" and route.toZone=="Greenwood") or (route.fromZone=="Greenwood" and route.toZone=="City"))
+   or not route.geometry or not route.geometry.Parent or type(route.volumes)~="table"
+   or #route.volumes==0 or #route.volumes>128 or type(route.entries)~="table" or type(route.safeRecovery)~="table" then return false end
+  local ok,ready=Rules.walkingCall(route.isReady)
+  return ok and ready==true
+ end
+ local function routeContains(route:any,position:Vector3):boolean
+  if Config.walkingContains(route.entries.City,position) or Config.walkingContains(route.entries.Greenwood,position) then return true end
+  for _,volume in ipairs(route.volumes)do if Config.walkingContains(volume,position)then return true end end
+  return false
+ end
+ local function inZone(zone:string,position:Vector3):boolean
+  return if zone=="City"then Config.contains(position.X,position.Z)else Config.region(position.X,position.Z)==zone
+ end
+ local function gate(player:Player,session:any,from:string,to:string):string?
+  local c=player.Character;local plot=plots[player]
+  local problem=Rules.walkingProblem(session,alive(player),c~=nil and(c:GetAttribute("CombatHealth")or 1)<=0,
+   plot~=nil and plot.model:GetAttribute("InCombat")==true,plot~=nil and plot.model:GetAttribute("TowerState")~=nil)
+  if problem then return problem end
+  local ok,reason=Rules.walkingCall(walking.Gate,player,session,from,to)
+  if not ok or (reason~=nil and type(reason)~="string") then return "TravelUnavailable"end
+  return reason
+ end
+ local function recoverWalking(player:Player,snapshot:any,reason:string):boolean
+  snapshot.recovering=true
+  local session=walkingSession(player);local c=player.Character
+  if not Rules.walkingIdentity(snapshot,session,c) then clearWalking(player);return true end
+  if walking.Notify and now()>=(walkingNotified[player]or 0)then
+   walkingNotified[player]=now()+2;Rules.walkingCall(walking.Notify,player,reason)
+  end
+  local target=snapshot.route.safeRecovery[snapshot.from]
+  -- Recovery is exceptional; never guess a landing or use another owner's plot.
+  if not alive(player) or not target then return true end
+  local region=city.regions and city.regions[snapshot.from]
+  local sourceGeometry=if snapshot.from=="City"then city.town else region and region.model
+  local routeGeometry=if snapshot.route.geometry.Parent then snapshot.route.geometry else nil
+  local geometry=sourceGeometry or routeGeometry
+  local supported,valid=pcall(function()return geometry~=nil and inZone(snapshot.from,target.Position) and safeLocal(target.Position,geometry,routeGeometry)end)
+  if not supported or not valid or not Rules.walkingIdentity(snapshot,walkingSession(player),player.Character)then return true end
+  local root=c and c:FindFirstChild("HumanoidRootPart") :: BasePart?
+  if not root then return true end
+  local recoveryDistance=(root.Position-target.Position).Magnitude
+  if recoveryDistance~=recoveryDistance or recoveryDistance>.1 then moveLocal(player,target)end
+  clearWalking(player)
+  return true
+ end
+ function S.CanFollowWalking(player:Player,position:Vector3):boolean
+  local snapshot=walkingStops[player]
+  if not snapshot or snapshot.recovering or localStops[player] then return false end
+  local session=walkingSession(player)
+  return Rules.walkingIdentity(snapshot,session,player.Character) and session.state=="Active"
+   and routeReady(snapshot.route) and routeContains(snapshot.route,position)
+ end
+ local function walkingTick(player:Player,c:Model?,root:BasePart?):boolean
+  if not walking then return false end
+  local snapshot=walkingStops[player];local session=walkingSession(player)
+  if not root or not alive(player)then clearWalking(player);return false end
+  if snapshot then
+   if not Rules.walkingIdentity(snapshot,session,c)then clearWalking(player);return true end
+   if snapshot.recovering then return recoverWalking(player,snapshot,"TravelUnavailable")end
+   local route=snapshot.route
+   if not routeReady(route)then return recoverWalking(player,snapshot,"TravelUnavailable")end
+   local problem=gate(player,session,snapshot.from,snapshot.to)
+   if problem then return recoverWalking(player,snapshot,problem)end
+   if not Rules.walkingIdentity(snapshot,walkingSession(player),player.Character)then clearWalking(player);return true end
+   local delta=root.Position-snapshot.position
+   if delta.Magnitude~=delta.Magnitude or delta.Magnitude>35 or now()-snapshot.at>2 then return recoverWalking(player,snapshot,"TravelUnavailable")end
+   if not routeContains(route,root.Position) and inZone(snapshot.from,root.Position) then
+    local region=city.regions and city.regions[snapshot.from]
+    local geometry=if snapshot.from=="City"then city.town else region and region.model
+    if geometry and safeLocal(root.Position,geometry)then clearWalking(player);return false end
+   end
+   -- Sample the short observed segment, not a broad rectangle across bends/islands.
+   for i=0,math.ceil(delta.Magnitude/2)do
+    local fraction=if delta.Magnitude==0 then 0 else math.min(1,i/math.ceil(delta.Magnitude/2))
+    local position=snapshot.position+delta*fraction
+    if not routeContains(route,position)then return recoverWalking(player,snapshot,"TravelUnavailable")end
+   end
+   snapshot.position=root.Position;snapshot.at=now()
+   if Config.walkingContains(route.entries[snapshot.to],root.Position) and inZone(snapshot.to,root.Position)then
+    local region=city.regions and city.regions[snapshot.to]
+    local spawn=if snapshot.to=="City"then city.spawn else region and region.spawn
+    if not spawn then return recoverWalking(player,snapshot,"TravelUnavailable")end
+    -- No yields, player pivot, velocity reset, follower reset or persistence write.
+    zones[player]=snapshot.to;player:SetAttribute("CurrentZone",snapshot.to);player.RespawnLocation=spawn
+    clearWalking(player)
+   end
+   return true
+  end
+  local zone=zones[player]or "Guild"
+  if zone~="City" and zone~="Greenwood" then return false end
+  local previous=walkingSamples[player]
+  local sample={session=session,epoch=session and session.epoch,token=session and session.token,character=c,position=root.Position,at=now()}
+  walkingSamples[player]=sample
+  if not session then return false end
+  for _,route in ipairs(walking.Routes or {})do
+   if routeReady(route) and (zone==route.fromZone or zone==route.toZone)then
+    local to=if zone==route.fromZone then route.toZone else route.fromZone
+    local atEntry=Config.walkingContains(route.entries[zone],root.Position) and inZone(zone,root.Position)
+    local unauthorized=routeContains(route,root.Position) and not inZone(zone,root.Position)
+    if atEntry or unauthorized then
+     local candidate={session=session,epoch=session.epoch,token=session.token,character=c,route=route,from=zone,to=to,position=root.Position,at=now()}
+     local problem=gate(player,session,zone,to)
+     if unauthorized or problem then
+      walkingStops[player]=candidate;return recoverWalking(player,candidate,problem or "VisitStation")
+     end
+     -- Need two samples of this same actor; a remote jump cannot create admission.
+     if previous and Rules.walkingIdentity(previous,session,c)then
+      local distance=(root.Position-previous.position).Magnitude
+      if distance~=distance or distance>35 or now()-previous.at>2 then
+       walkingStops[player]=candidate;return recoverWalking(player,candidate,"VisitStation")
+      end
+      if not Rules.walkingIdentity(candidate,walkingSession(player),player.Character)then return true end
+      walkingStops[player]=candidate
+     end
+     return true
+    end
+   end
+  end
+  return false
+ end
 	local elapsed=0
 	RunService.Heartbeat:Connect(function(dt)
 		elapsed+=dt;if elapsed<.5 then return end;elapsed=0
@@ -171,6 +306,7 @@ return function(city: any,plots: any,heroes: any,localTravel:any?,platform:any?)
 					and(root.Position.Y< -15 or c~=snapshot.character or not localTravel.Contains(root.Position)or(localTravel.Recover and localTravel.Recover()))then returnLocal(player,true)end
 				continue
 			end
+   if walkingTick(player,c,root)then continue end
 			if root and alive(player) then
 				local zone=zones[player] or "Guild"
 					if root.Position.Y< -15 or (Config.Regions[zone] and Config.region(root.Position.X,root.Position.Z)~=zone) or ((Civic.Definitions :: any)[zone] and not Civic.contains(zone,root.Position.X,root.Position.Z)) then S.Travel(player,zone) end

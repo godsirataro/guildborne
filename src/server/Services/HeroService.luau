@@ -58,6 +58,11 @@ return function(templates: Folder, onOpen: (Player,string) -> (), reward: any,to
 	local sessions: { [Player]: any } = {}
 	local destroyed=false
 	local service = {}
+ local walkingContext:any=nil
+ function service.SetWalkingContext(predicate:any?)
+  assert(predicate==nil or type(predicate)=="function","walking context must be a server predicate")
+  walkingContext=predicate
+ end
 	function service.Add(player: Player, plot: Model, origin: Vector3)
 		if destroyed then return end
 		local folder=Instance.new("Folder"); folder.Name="Heroes"; folder.Parent=plot
@@ -199,7 +204,8 @@ return function(templates: Folder, onOpen: (Player,string) -> (), reward: any,to
 			local character=player.Character; local root=character and character:FindFirstChild("HumanoidRootPart") :: BasePart?
 			local humanoid=character and character:FindFirstChildOfClass("Humanoid")
 			local inCity=root~=nil and City.contains(root.Position.X,root.Position.Z)
-			local inWorld=root~=nil and (inCity or City.region(root.Position.X,root.Position.Z)~=nil or (root.Position.Z>=-80 and root.Position.Z<118 and root.Position.X>=-70))
+			local inWorld=root~=nil and (inCity or City.region(root.Position.X,root.Position.Z)~=nil or (root.Position.Z>=-80 and root.Position.Z<118 and root.Position.X>=-70)
+    or (walkingContext~=nil and walkingContext(player,root.Position)==true))
 			local physical=root~=nil and humanoid~=nil and humanoid.Health>0
 			local valid=physical and s.active==true and inWorld
 			local claimed=false

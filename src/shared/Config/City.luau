@@ -75,4 +75,18 @@ end
 function City.allowsCombat(x: number,y: number,z: number,originX: number,originY: number): boolean
 	return not City.contains(x,z) and math.abs(x-originX)<39 and z>48 and z<117 and y-originY> -3 and y-originY<=24
 end
+-- Public corridor geometry only; membership never grants server travel eligibility.
+function City.walkingContains(volume:any,position:any):boolean
+ local function finite(n:any):boolean return type(n)=="number" and n==n and math.abs(n)<math.huge end
+ local ok,inside=pcall(function()
+  local size=volume.size
+  if not finite(size.X) or not finite(size.Y) or not finite(size.Z)
+   or size.X<=0 or size.Y<=0 or size.Z<=0 or size.X>4096 or size.Y>128 or size.Z>4096 then return false end
+  if not finite(position.X) or not finite(position.Y) or not finite(position.Z) then return false end
+  local p=volume.cframe:PointToObjectSpace(position)
+  return finite(p.X) and finite(p.Y) and finite(p.Z)
+   and math.abs(p.X)<=size.X/2 and math.abs(p.Y)<=size.Y/2 and math.abs(p.Z)<=size.Z/2
+ end)
+ return ok and inside==true
+end
 return City
