@@ -1,0 +1,9 @@
+{
+  "content": [
+    {
+      "type": "text",
+      "text": "{\"actors\":{\"1\":{\"carriers\":6,\"root\":{\"1\":-5,\"3\":12.07407283782959,\"2\":9490.443359375,\"5\":0,\"4\":1,\"7\":0,\"6\":0,\"9\":0,\"8\":1,\"12\":1,\"11\":0,\"10\":0},\"parts\":58,\"id\":\"greenwood_scout\",\"motors\":6},\"2\":{\"carriers\":6,\"root\":{\"1\":5,\"3\":12.07407283782959,\"2\":9490.443359375,\"5\":0,\"4\":1,\"7\":0,\"6\":0,\"9\":0,\"8\":1,\"12\":1,\"11\":0,\"10\":0},\"parts\":70,\"id\":\"forest_captain\",\"motors\":6}},\"visualApproval\":false,\"patternCases\":2,\"status\":\"PASS_LOCAL_GREENWOOD_COSMETICS\",\"serverCombatTested\":false,\"profileCases\":2,\"unchangedTemplates\":10}"
+    }
+  ],
+  "isError": false
+}

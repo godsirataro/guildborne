@@ -1,0 +1,9 @@
+{
+  "content": [
+    {
+      "type": "text",
+      "text": "{\"corridorArt\":false,\"worldCollisionReady\":true,\"datasets\":{\"1\":{\"name\":\"Dataset1\",\"attributes\":{\"LoadSeconds\":5.75352670000575,\"Triangles\":45267,\"Placements\":116,\"PreviewState\":\"READY_LOCAL_ONLY\",\"SourceSha256\":\"9baaf8de0faf3ff7f4a4f2c32ea692e48aa9dbb021f609e3530029ed7844ddc7\"}},\"2\":{\"name\":\"Dataset2\",\"attributes\":{\"LoadSeconds\":0.30594949999067469,\"SourceSha256\":\"cb3171b25c6bd52a24e8a1baa6af5c82c42b0c41127f255e6cb918fcf57da136\",\"PreviewError\":\"ReplicatedStorage.QualityPreviewAssets.NativeAssetPreview:90: Mesh extents size too large. Maximum is (2048, 2048, 2048).\",\"PreviewState\":\"FAILED\"}}}}"
+    }
+  ],
+  "isError": false
+}
