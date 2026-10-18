@@ -11,6 +11,13 @@ return function(model: Model,legacyGoblin: boolean?)
     local center=root.CFrame
     local pivots={Torso=V(0,0,0),Head=V(0,1.2,0),LeftArm=V(-1,1,0),RightArm=V(1,1,0),LeftLeg=V(-.45,-.4,0),RightLeg=V(.45,-.4,0)}
     local regional=model:GetAttribute("EncounterId")~=nil
+    local tower=not regional and not legacyGoblin and model:GetAttribute("EnemyVisualStyle")=="SpireForgedV2"
+    if tower then
+        local role=model:GetAttribute("VisualRole")
+        local width=if role=="Spire Warden" then 1.10 elseif role=="Echo Archer" then .86 else 1
+        -- Authored sockets relative to the existing root at height 2.
+        pivots={Torso=V(0,-.3,0),Head=V(0,1.10,0),LeftArm=V(-(.85*width+.21),.94,0),RightArm=V(.85*width+.21,.94,0),LeftLeg=V(-.47,-.30,0),RightLeg=V(.47,-.30,0)}
+    end
     local function boundGroup(bone:string):string
         if bone=="Head" then return "Head" end
         local side=if bone:find("Left") then "Left" else "Right"
@@ -49,6 +56,9 @@ return function(model: Model,legacyGoblin: boolean?)
         elseif name=="Head" or name=="Nose" or name=="Eye" or name=="PointedEar" or name=="Helm" or name=="Brow" or name=="HoodPeak" or name:find("Crown") then group="Head"
         elseif name:find("Hammer") or name:find("Sword") then group="RightArm"
         elseif name:find("Shield") or name:find("Bow") then group="LeftArm" end
+        -- Only recognized explicit groups override the existing fallback rules.
+        local authored=p:GetAttribute("EnemyVisualLimb")
+        if tower and type(authored)=="string" and (authored=="Torso" or authored=="Head" or authored=="LeftArm" or authored=="RightArm" or authored=="LeftLeg" or authored=="RightLeg") then group=authored end
         p.Anchored=false;p.Massless=true;p.CanCollide=false;p.CanQuery=false;p.CanTouch=false
         local weld=Instance.new("WeldConstraint");weld.Name="EnemyArtWeld";weld.Part0=carriers[group];weld.Part1=p;weld.Parent=p
         p:SetAttribute("EnemyLimb",group)
