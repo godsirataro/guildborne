@@ -4,6 +4,23 @@
   "status": "CONTINUING_LATEST_GOALS_NOT_FULL_GAME_COMPLETE",
   "tasks": [
     {
+      "id": "novice-entry-art",
+      "skill": "guildborne-world",
+      "environment": "local",
+      "dependsOn": [],
+      "writeScopes": [
+        "review/NoviceRoadKit.luau",
+        "src/server/Services/NoviceRoadArt.luau",
+        "tools/sync_novice_road_art.py",
+        "tools/blender_crown_road.py",
+        "tests/studio_novice_road_probe.luau",
+        "production/world/novice-entry"
+      ],
+      "checks": ["source-contract", "regression", "independent-review"],
+      "title": "Original novice entrance and courier courtyard art",
+      "brief": "S13 owns the original first-view Crown Road art source and generated runtime module. Replace the blockout entrance and courier-camp composition with authored fantasy geometry while preserving every route marker, per-owner slot spacing, atomic runtime model, supported walk surfaces and interaction clearances. Reuse existing native art/sync workflow; no copied competitor assets or asset IDs. Deliver before/after views, part/collision budget and probe compatible with the actual NoviceCourse_<id> model. Controller owns Studio acceptance; no progression/service changes or unrelated Greenwood edits in this wave."
+    },
+    {
       "id": "audit",
       "skill": "guildborne-director",
       "environment": "local",

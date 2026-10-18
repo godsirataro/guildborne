@@ -32,7 +32,7 @@
     ".claude/agents/ui-artist.md": "ddf56ca4d49a9bec265e8736c4f9eeaee258449089c006c2a3bf9a5cf2c2f1e1",
     ".claude/agents/ui-designer.md": "9bcbd7f012e0adb789134f7cb244affc17f5e6fd800cfad956823d4021220ba1",
     ".claude/agents/vfx-artist.md": "4533c8693ed418ec55ecc9a7b5f11bf72ba83f1b5050ef7d1e7232d30201b1e2",
-    ".claude/agents/world-builder.md": "efb8d5a3dabc0d3e07d39467fab576eec8fc053f12b9af513504964c123ac4bd",
+    ".claude/agents/world-builder.md": "54ed7b3d89dcd277d2f8caf564dad15997db17771079278185288fdf4ed544cc",
     ".claude/skills/guildborne-adopt/SKILL.md": "82d6401ceb6c9b7f4cbc041e7d8d8d2be4458a4add598234f7f48e075c773770",
     ".claude/skills/guildborne-animation/SKILL.md": "3f053749c51217ec9c18ac214d607f2b3c6b4731f68354a138244bc89f040e03",
     ".claude/skills/guildborne-architecture/SKILL.md": "f66bef6101128eeee5e9e121bdab7103e71ecd90480f480fcdddc0f127096a6b",
@@ -96,8 +96,8 @@
     ".codex/agents/ui-artist.toml": "2c964f88eb549a08ad72def6f054f5dde7ef47fc47765c3d3b7f4bfd5d8fafc7",
     ".codex/agents/ui-designer.toml": "fd20e63eb4ac31a1dc191d71c8b2a33831378127ef17ebaedbf48ca8db461291",
     ".codex/agents/vfx-artist.toml": "c39e0eb15a7e90ca6be361043ed0a1050717cb15f7456041d73e074fe1ac70bf",
-    ".codex/agents/world-builder.toml": "563ede3a19823ee820621918478a893ceb3289effc29d8d912f5ae9e77e3d3b7",
-    "production/studio/catalog.json": "a4d29b47e56945174a39d6f0ecef32b415b98e3feed9a3d13c4452e19c08db03"
+    ".codex/agents/world-builder.toml": "884a7f4cb42cc3c04e74b7de5ab8db34672f0875fc814acab946f100e066dd81",
+    "production/studio/catalog.json": "1155440761d2c2321dfde84b7374b9eaf11f834ebc931bbd0e61f3ebed073266"
   },
   "schemaVersion": 1,
   "sources": {
@@ -134,11 +134,11 @@
       ".agents/skills/guildborne-war-territory/SKILL.md": "82ad7a43eed0c84aee078c803fcceaac8401fb87a6b82c176847fa8e6ded247d",
       ".agents/skills/guildborne-world/SKILL.md": "ace43994879321dd5197ba01d7944ea072496cb230985b51c5e50c1a71c7c4e1",
       "AGENTS.md": "a593dfabad72ff1fe02d59a8e25630c3eb555d22965588f4840ecbd3365b454c",
-      "production/plan.json": "ae47583eb53bc419f793502a031ca42fd1116b98befd6836c6e4ce76b9e6c3e0",
-      "production/studio/studio.json": "c6675c5e2591f1b152982e6eea4921a7d12a140810fc0e2b13df064d50747982",
+      "production/plan.json": "18a912e7afe3356e3af978c473117e0d565af6734fc40d9cf2c065773e1362e4",
+      "production/studio/studio.json": "066721e0e0eb73bfa438b1cd44f9ad35af05523c70cf9ae11f65e26c9ea28c7d",
       "tools/agentic/studio.py": "9bf0a3e2ce4230648eb4f8d4af8e7250527510d17a23f0080c0dfd3548a7a7c5"
     },
-    "planSha256": "e9bf8f4d97200a8f258a5aa737c723bb4024a0f8eba44180221260a9bd9d87eb",
-    "specSha256": "34dd4fc491b37fa92ebb850244e3da74911337e43eeaf426bd4dba559f80dea7"
+    "planSha256": "5a89a1cca152a3da311b5ae0eda122941b61a8fae0f9c5b9f473d9f1fc4426e3",
+    "specSha256": "e83190abf2eb767981a0b8c19cc04a2543b9300c07ddaaa3bb3717a6416cbac0"
   }
 }

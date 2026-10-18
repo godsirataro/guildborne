@@ -103,6 +103,24 @@ Path rule native-client: Native Roblox UI/presentation only. Send intent, never 
 
 Path rule production-evidence: Reconcile latest goals/registries/scopes. One shared ledger, claim before writes, immediate lease check and preserved raw receipts. Different reviewer validates evidence; local checks cannot replace hardware/cloud/human gates.
 
+### novice-entry-art: Original novice entrance and courier courtyard art
+
+S13 owns the original first-view Crown Road art source and generated runtime module. Replace the blockout entrance and courier-camp composition with authored fantasy geometry while preserving every route marker, per-owner slot spacing, atomic runtime model, supported walk surfaces and interaction clearances. Reuse existing native art/sync workflow; no copied competitor assets or asset IDs. Deliver before/after views, part/collision budget and probe compatible with the actual NoviceCourse_<id> model. Controller owns Studio acceptance; no progression/service changes or unrelated Greenwood edits in this wave.
+
+Environment: local; skill: guildborne-world
+
+Write scopes: review/NoviceRoadKit.luau, src/server/Services/NoviceRoadArt.luau, tools/sync_novice_road_art.py, tools/blender_crown_road.py, tests/studio_novice_road_probe.luau, production/world/novice-entry
+
+Required checks: source-contract, regression, independent-review
+
+Dependencies: none
+
+Path rule server-authority: Reuse actual services; server owns combat/inventory/currency/allocation/rewards/guild/build/escrow. Preserve fencing/receipts/saves/disabled flags. No production cloud writes or commerce activation.
+
+Path rule tooling: Use reviewed bounded local commands/tests. Studio/Forge planners do not launch models; paid/model subprocess, MCP mutation and installation require actual authorization/capability.
+
+Path rule production-evidence: Reconcile latest goals/registries/scopes. One shared ledger, claim before writes, immediate lease check and preserved raw receipts. Different reviewer validates evidence; local checks cannot replace hardware/cloud/human gates.
+
 ### p1-city-services: Functional city tavern and trusted crafting station
 
 Add interior Tavern/Crafting anchors and authorize only CraftItem at the registered city forge. Preserve private plot and all economy/progression gates. Author central-city natural landscape from a shared reproducible geometry recipe; preserve travel/service routes and keep Blender preview separate from Studio acceptance.
