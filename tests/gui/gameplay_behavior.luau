@@ -132,7 +132,7 @@ test("796x617 tracker root outranks later HUD subtree with explicit local conten
  local progress=find(tracker.button,"TrackedProgress")
  assert(border.ZIndex==1 and objective.ZIndex>border.ZIndex and heading.ZIndex>border.ZIndex)
  assert(icon.ZIndex>border.ZIndex and progress.ZIndex>border.ZIndex)
- assert(not heading.Visible and tracker.button.Size[4]==44)
+ assert(heading.Visible and tracker.button.Size[4]==50)
  assert(objective.TextSize==14,"Medium-width quest copy must not use phone-size text")
  gui:Destroy()
 end)
@@ -147,15 +147,15 @@ test("tracker placement reserves gold and menu regions across compact and wide b
   x-=tracker.button.AnchorPoint.X*bw;y-=tracker.button.AnchorPoint.Y*bh
   assert(bw>=44 and bh>=44 and x>=0 and y>=0 and x+bw<=w and y+bh<=h)
   local wide=w>=900 and h>=560
-  assert(find(tracker.button,"TrackerHeading").Visible==wide)
+  assert(find(tracker.button,"TrackerHeading").Visible==(wide or bw>=210))
   if wide then
    assert(y>=58 and bw==300 and bh==96,"Expanded tracker must sit below top bar")
   else
    local goldRight=8+12+.3*(w-16)-8
    local menuLeft=8+(w-16)-100
    assert(x>=goldRight+8-.001 and x+bw<=menuLeft-8+.001,"Compact tracker overlaps HUD controls")
-   assert(y==10 and bh==44 and y+bh<=58)
-   assert(find(tracker.button,"TrackerObjective").TextSize==(if bw>=200 then 14 else 12))
+   assert(y==7 and bh==50 and y+bh<=58)
+   assert(find(tracker.button,"TrackerObjective").TextSize==(if bw<170 then 13 else 14))
   end
   gui:Destroy()
  end

@@ -54,20 +54,32 @@ return function(gui: ScreenGui)
 	track.ZIndex = 2
 	local fill = Instance.new("Frame"); fill.BorderSizePixel = 0; fill.BackgroundColor3 = C.Gold; fill.Parent = track
 	fill.ZIndex = 2
+	-- A compact quest clasp, not a scaled-down desktop card: fabric behind the
+	-- seal, a fine rule below the heading, and a native chevron for opening details.
+	local rule = plate("CompactHeadingRule", UDim2.fromOffset(42, 14), UDim2.new(1, -64, 0, 1), C.GoldShadow, 2)
+	local openUpper = plate("OpenQuestUpper", UDim2.new(1, -12, .5, -3), UDim2.fromOffset(7, 2), C.Gold, 3)
+	local openLower = plate("OpenQuestLower", UDim2.new(1, -12, .5, 2), UDim2.fromOffset(7, 2), C.Gold, 3)
+	openUpper.Rotation = 45; openLower.Rotation = -45
+	local disabledBar = plate("QuestDisabledMark", UDim2.fromOffset(15, 23), UDim2.fromOffset(12, 2), C.Muted, 4)
 	local wide = false
+	local compactHeading, micro = false, false
 	local ready, enabledState, hovered, focused = false, false, false, false
 	local function refreshDecoration()
 		local emphasized = enabledState and (hovered or focused)
-		stroke.Color = if focused and enabledState or ready then C.Focus else C.Gold
+		stroke.Color = if not enabledState then C.Border elseif focused or ready then C.Focus else C.Gold
 		stroke.Thickness = if emphasized then 2 else 1
 		stroke.Transparency = if emphasized or ready then 0 else .3
 		button.BackgroundColor3 = if emphasized then C.Surface else C.Background
-		ribbon.Visible = wide; seal.Visible = wide
-		for _, cap in ipairs(clasps) do cap.Visible = wide end
-		icon.Visible = wide and not ready
-		nativeStem.Visible = wide and not ready and not icon.IsLoaded; nativeDot.Visible = nativeStem.Visible
-		checkLeft.Visible = wide and ready; checkRight.Visible = checkLeft.Visible
-		sealRim.Color = if ready then C.Focus else C.Gold
+		ribbon.Visible = true; seal.Visible = true
+		for _, cap in ipairs(clasps) do cap.Visible = wide or compactHeading end
+		icon.Visible = not micro and not ready and enabledState
+		nativeStem.Visible = enabledState and not ready and (micro or not icon.IsLoaded); nativeDot.Visible = nativeStem.Visible
+		checkLeft.Visible = ready; checkRight.Visible = checkLeft.Visible
+		disabledBar.Visible = not enabledState and not ready
+		sealRim.Color = if not enabledState then C.Muted elseif ready then C.Focus else C.Gold
+		objective.TextColor3 = if enabledState then C.Text else C.Muted
+		heading.TextColor3 = if not enabledState then C.Muted elseif ready then C.Focus else C.Gold
+		rule.Visible = compactHeading; openUpper.Visible = compactHeading and enabledState; openLower.Visible = openUpper.Visible
 	end
 	local function resize()
 		wide = gui.AbsoluteSize.X >= 900 and gui.AbsoluteSize.Y >= 560
@@ -76,14 +88,41 @@ return function(gui: ScreenGui)
 		-- menu occupies [w-108,w-12]. Reserve eight pixels on both sides.
 		local left = math.max(width * .32, width * .3 + 15.2)
 		local right = math.min(width * .72 - 12, width - 116)
+		local compactWidth = math.max(48, right - left)
+		compactHeading = not wide and compactWidth >= 210
+		micro = not wide and compactWidth < 170
 		button.AnchorPoint = if wide then Vector2.new(1, 0) else Vector2.zero
-		button.Position = if wide then UDim2.new(1, -8, 0, 70) else UDim2.fromOffset(left, 10)
-		button.Size = if wide then UDim2.fromOffset(300, 96) else UDim2.fromOffset(math.max(44, right - left), 44)
-		heading.Visible = wide; icon.Visible = wide
-		objective.Position = if wide then UDim2.fromOffset(42, 32) else UDim2.fromOffset(6, 3)
-		objective.Size = if wide then UDim2.new(1, -54, 0, 48) else UDim2.new(1, -12, 1, -8)
-		-- Keep two readable lines on medium screens without squeezing phone controls.
-		objective.TextSize = if wide then 15 elseif right - left >= 200 then 14 else 12
+		button.Position = if wide then UDim2.new(1, -8, 0, 70) else UDim2.fromOffset(left, 7)
+		button.Size = if wide then UDim2.fromOffset(300, 96) else UDim2.fromOffset(compactWidth, 50)
+		heading.Visible = wide or compactHeading
+		heading.Position = if wide then UDim2.fromOffset(42, 10) else UDim2.fromOffset(42, 0)
+		heading.Size = if wide then UDim2.new(1, -54, 0, 20) else UDim2.new(1, -64, 0, 14)
+		heading.TextTruncate = Enum.TextTruncate.AtEnd
+		objective.Position = if wide then UDim2.fromOffset(42, 32) elseif compactHeading then UDim2.fromOffset(42, 15) elseif micro then UDim2.fromOffset(6, 7) else UDim2.fromOffset(34, 5)
+		objective.Size = if wide then UDim2.new(1, -54, 0, 48) elseif compactHeading then UDim2.new(1, -64, 0, 32) elseif micro then UDim2.new(1, -12, 0, 38) else UDim2.new(1, -42, 0, 40)
+		objective.TextSize = if wide then 15 elseif micro then 13 else 14
+		-- Phone minimum retains both objective lines. A small crest interrupts the
+		-- top engraving instead of consuming the already narrow text column.
+		local sx, sy = if micro then 10 elseif wide or compactHeading then 22 else 16, if micro then 2 else 24
+		local sealSize = if micro then 8 elseif wide then 26 elseif compactHeading then 22 else 18
+		seal.Position = UDim2.fromOffset(sx, sy); seal.Size = UDim2.fromOffset(sealSize, sealSize)
+		sealRim.Thickness = if wide then 2 else 1
+		ribbon.Position = if wide then UDim2.fromOffset(4, 4) else UDim2.fromOffset(3, 3)
+		ribbon.Size = if wide then UDim2.new(1, -8, 0, 28) elseif micro then UDim2.new(1, -6, 0, 3) else UDim2.fromOffset(if compactHeading then 32 else 26, 42)
+		ribbon.BackgroundTransparency = if wide then .25 else .05
+		nativeStem.Position = UDim2.fromOffset(sx - (if micro then 1 else 2), sy - (if micro then 3 else 10))
+		nativeStem.Size = UDim2.fromOffset(if micro then 2 else 4, if micro then 4 else 12)
+		nativeDot.Position = UDim2.fromOffset(sx - (if micro then 1 else 2), sy + (if micro then 3 else 5))
+		nativeDot.Size = UDim2.fromOffset(if micro then 2 else 4, if micro then 2 else 4)
+		checkLeft.Position = UDim2.fromOffset(sx - (if micro then 2 else 5), sy + 1)
+		checkRight.Position = UDim2.fromOffset(sx + (if micro then 1 else 2), sy - 1)
+		checkLeft.Size = UDim2.fromOffset(if micro then 4 else 9, if micro then 1 else 3)
+		checkRight.Size = UDim2.fromOffset(if micro then 7 else 15, if micro then 1 else 3)
+		disabledBar.Position = UDim2.fromOffset(sx - (if micro then 3 else 6), sy)
+		disabledBar.Size = UDim2.fromOffset(if micro then 6 else 12, if micro then 1 else 2)
+		icon.Position = UDim2.fromOffset(sx-8, sy-11); icon.Size = UDim2.fromOffset(16, 22)
+		track.Position = if wide then UDim2.new(0, 12, 1, -10) else UDim2.new(0, if compactHeading then 42 else 6, 1, -3)
+		track.Size = if wide then UDim2.new(1, -24, 0, 3) else UDim2.new(1, if compactHeading then -64 else -12, 0, 2)
 		refreshDecoration()
 	end
 	local connections: {RBXScriptConnection} = {}
