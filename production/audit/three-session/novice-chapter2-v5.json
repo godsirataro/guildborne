@@ -1,0 +1,51 @@
+{
+  "studio": "def49833-7515-4dc3-8740-9fe5e947164c",
+  "candidateSource": "4e32013",
+  "candidateSha256": "25a379166e2a8d89f006331422db510327fb0659516e2c888ae6fe6a086d4d7a",
+  "scope": "ordinary native keyboard/mouse chapter2; server-driven state observations",
+  "start": {
+    "content": [
+      {
+        "type": "text",
+        "text": "{\"hud\":[{\"text\":\"Warrior · Ready\",\"name\":\"DisplayTitle\",\"path\":\"Players.iswhlaedev.PlayerGui.NoviceTrialHUD.Status.DisplayTitle\"},{\"text\":\"HP 36/36 · Training dummy 120/120\",\"name\":\"DisplayHealth\",\"path\":\"Players.iswhlaedev.PlayerGui.NoviceTrialHUD.Status.DisplayHealth\"},{\"text\":\"Basic hits 0/1\",\"name\":\"DisplayGoals\",\"path\":\"Players.iswhlaedev.PlayerGui.NoviceTrialHUD.Status.DisplayGoals\"},{\"text\":\"Use F/Q or the buttons. Dodge orange warnings.\",\"name\":\"DisplayHint\",\"path\":\"Players.iswhlaedev.PlayerGui.NoviceTrialHUD.Status.DisplayHint\"},{\"text\":\"Leave trial\",\"name\":\"LeaveTrial\",\"path\":\"Players.iswhlaedev.PlayerGui.NoviceTrialHUD.LeaveTrial\"},{\"text\":\"F · Basic Attack\",\"name\":\"TrialBasic\",\"path\":\"Players.iswhlaedev.PlayerGui.NoviceTrialHUD.TrialBasic\"},{\"text\":\"Q · Power Strike\",\"name\":\"TrialAbility\",\"path\":\"Players.iswhlaedev.PlayerGui.NoviceTrialHUD.TrialAbility\"}],\"pos\":\"-4500, 27.998023986816406, 654\"}"
+      }
+    ],
+    "isError": false
+  },
+  "basic": {
+    "content": [
+      {
+        "type": "text",
+        "text": "{\"goals\":\"Basic hits 1/1\",\"health\":\"HP 36/36 · Training dummy 110/120\",\"hint\":\"Leave training to continue your journey.\"}"
+      }
+    ],
+    "isError": false
+  },
+  "dodge": {
+    "content": [
+      {
+        "type": "text",
+        "text": "{\"objectives\":{\"1\":{\"name\":\"Objective_practice_attack\",\"text\":\"✓ Practice a basic attack\"},\"3\":{\"name\":\"Objective_rescue_dummy\",\"text\":\"○ Rescue the practice captive\"},\"2\":{\"name\":\"Objective_dodge_area\",\"text\":\"✓ Dodge the area attack\"}},\"pos\":\"-4437.3876953125, 2.99802565574646, 105.96021270751953\"}"
+      }
+    ],
+    "isError": false
+  },
+  "rescue": {
+    "content": [
+      {
+        "type": "text",
+        "text": "{\"objectives\":{\"1\":{\"name\":\"Objective_practice_attack\",\"text\":\"✓ Practice a basic attack\"},\"3\":{\"name\":\"Objective_rescue_dummy\",\"text\":\"✓ Rescue the practice captive\"},\"2\":{\"name\":\"Objective_dodge_area\",\"text\":\"✓ Dodge the area attack\"}},\"pos\":\"-4425.455078125, 2.9980251789093018, 89.66190338134766\"}"
+      }
+    ],
+    "isError": false
+  },
+  "claim": {
+    "content": [
+      {
+        "type": "text",
+        "text": "{\"chapter\":\"Chapter 3 / 6\",\"title\":\"The Caravan's Debt\",\"pos\":\"-4425.455078125, 2.9980251789093018, 89.66190338134766\"}"
+      }
+    ],
+    "isError": false
+  }
+}
