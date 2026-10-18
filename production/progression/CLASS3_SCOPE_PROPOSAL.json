@@ -1,0 +1,178 @@
+{
+  "status": "PROPOSED_NOT_REGISTERED",
+  "sourceCommit": "7403f60",
+  "currentLedger": "C:/Work/MySelf/Guildborne/build/agentic/four-session-v6.sqlite3",
+  "migrationConditions": [
+    "Confirm every ACTIVE/REVIEW worker is terminal and explicitly released; do not steal expired leases.",
+    "Preserve v6 ledger and raw evidence. Register one shared v7 ledger only after canonical plan/adapters validate.",
+    "Fresh audit/registry evidence must be independently accepted; no copying acceptance based only on old status.",
+    "No worker writes new scopes until fresh shared lease and explicit dependency-ready assignment.",
+    "Record the controller administrative bootstrap explicitly; a future v7 task cannot retroactively authorize its creation.",
+    "Reconcile new scopes against every retained task; serialize overlaps using shared leases.",
+    "C integrates and activates after reviewed A, B and D. Confirm any additional selector paths before D dispatch."
+  ],
+  "tasks": [
+    {
+      "environment": "local",
+      "dependsOn": [
+        "audit",
+        "registry-reconciliation"
+      ],
+      "checks": [
+        "source-contract",
+        "regression",
+        "independent-review"
+      ],
+      "id": "class3-proof-domain",
+      "skill": "guildborne-progression",
+      "title": "Class3 optional earned proof domain",
+      "writeScopes": [
+        "src/shared/Data/Expansion.luau",
+        "src/server/Services/ExpansionService.luau",
+        "src/server/Systems/ExpansionSchema.luau",
+        "src/server/Systems/Class3Proof.luau",
+        "tests/expansion.luau",
+        "tests/latest_progression_gates.luau",
+        "tests/class3_proof.luau",
+        "tests/run_class3_proof.luau",
+        "production/progression"
+      ],
+      "brief": "Phase A only. Implement CLASS3_EARNED_PROOF_CONTRACT.md with optional proof schema, pure validation/atomic candidate hooks and injected advancement policy. Preserve all legacy earned classes, absent-policy behavior, Class2 proofs and canonical IDs. No runtime activation, new rewards, persistence service or release changes. Lock interfaces before trial/controller consumers."
+    },
+    {
+      "environment": "local",
+      "dependsOn": [
+        "audit",
+        "registry-reconciliation",
+        "class3-proof-domain"
+      ],
+      "checks": [
+        "source-contract",
+        "regression",
+        "independent-review"
+      ],
+      "id": "class3-proof-trials",
+      "skill": "guildborne-progression",
+      "title": "Class3 trusted existing trial receipts",
+      "writeScopes": [
+        "src/server/Systems/BorrowedPathSession.luau",
+        "src/server/Systems/HeroMentorTrial.luau",
+        "src/server/Services/BorrowedPathFactory.luau",
+        "src/server/Services/CrosshavenWorld.luau",
+        "src/server/Services/HeroMentorWorld.luau",
+        "src/server/Services/HeroMentorReceiptAdapter.luau",
+        "src/server/Services/Class3ProofReceiptAdapter.luau",
+        "tests/borrowed_mastery.luau",
+        "tests/hero_mentor.luau",
+        "tests/class3_trial_receipts.luau",
+        "tests/run_class3_trial_receipts.luau",
+        "production/progression-trials"
+      ],
+      "brief": "Dispatch only after Phase A reviewed interface lock. Reuse existing Sela/player and HeroMentor/owned hero actual trials. Preserve story-only compatibility and Class2. Bind actor/path/trial before real combat; session/snapshot fence private receipt; freeze uncertain command identity; no replay reward or guessed ack. Implement existing accepted Class3 contract, no new quests or server rewards."
+    },
+    {
+      "environment": "local",
+      "dependsOn": [
+        "audit",
+        "registry-reconciliation",
+        "class3-proof-domain",
+        "class3-proof-trials",
+        "class3-proof-ui"
+      ],
+      "checks": [
+        "source-contract",
+        "regression",
+        "independent-review"
+      ],
+      "id": "class3-proof-integration",
+      "skill": "guildborne-director",
+      "title": "Class3 private transaction integration",
+      "writeScopes": [
+        "src/server/Services/PlayerDataService.luau",
+        "src/server/Services/CampaignService.luau",
+        "src/server/ServerBootstrap.server.luau",
+        "src/shared/Network/Protocol.luau",
+        "tests/run.luau",
+        "tests/class3_transaction_integration.luau",
+        "tests/run_class3_transaction_integration.luau",
+        "production/integration/class3-proof"
+      ],
+      "brief": "Controller Phase C after reviewed A/B. Compose private proof and optional campaign objective atomically through existing execute/save pipeline. Public clients submit bounded start/cancel intent only. Preserve launch restrictions and legacy/profile/economy fencing. Enable policy only when producers and UI integrated; no default Runtime/ReleaseContent changes. Native earned evidence separate."
+    },
+    {
+      "environment": "local",
+      "dependsOn": [
+        "audit",
+        "registry-reconciliation",
+        "class3-proof-domain",
+        "class3-proof-trials"
+      ],
+      "checks": [
+        "source-contract",
+        "regression",
+        "independent-review"
+      ],
+      "id": "class3-proof-ui",
+      "skill": "guildborne-ux-native",
+      "title": "Class3 native actor path and proof readiness",
+      "writeScopes": [
+        "src/server/Systems/ViewProjection.luau",
+        "src/client/UI/ExpansionView.luau",
+        "src/shared/Config/Localization.luau",
+        "tests/class3_ui.luau",
+        "tests/run_class3_ui.luau",
+        "production/ux/class3-proof"
+      ],
+      "brief": "Phase D after domain/trial interface lock; serialize Localization and native UI owners. Existing native class selection shows selected actor/path, proof readiness, trial/saving/retry/refusal in Thai/English. Server policy remains authoritative; no invented earned proof or fake success. Identify further exact UI path needs before editing."
+    },
+    {
+      "environment": "local",
+      "dependsOn": [
+        "audit",
+        "registry-reconciliation"
+      ],
+      "checks": [
+        "source-contract",
+        "regression",
+        "independent-review"
+      ],
+      "id": "combat-cue-lifecycle",
+      "skill": "guildborne-audio",
+      "title": "Authoritative client cue admission and cancellation",
+      "writeScopes": [
+        "src/client/Controllers/CombatController.luau",
+        "src/client/Controllers/AudioController.luau",
+        "src/shared/Presentation/CombatCueEvents.luau",
+        "tests/combat_cue_events.luau",
+        "tests/run_combat_cue_events.luau",
+        "production/integration/enemy-quality/combat_cue_probe.luau",
+        "production/integration/enemy-quality/COMBAT_CUE_REVIEW.md"
+      ],
+      "brief": "Implement reviewed S15 finite/monotonic event admission, target-ready action TTL, cancellable actor-owned warning cue lifecycle. Preserve Play/PlayFor API and authoritative combat choreography. Regional release is not hit confirmation. No AudioConfig ID fabrication or uploads; unbound sound means silent dispatch evidence only. Coordinate HUD owner; no EnemyAnimator/SkillEffects redesign."
+    },
+    {
+      "environment": "local",
+      "dependsOn": [
+        "audit",
+        "registry-reconciliation"
+      ],
+      "checks": [
+        "source-contract",
+        "regression",
+        "independent-review"
+      ],
+      "id": "controller-registry",
+      "skill": "guildborne-director",
+      "title": "Controller registry and evidence administration",
+      "writeScopes": [
+        "production/plan.json",
+        "production/studio",
+        "production/design/integration",
+        "production/integration/quality-slice",
+        ".codex/agents",
+        ".claude/agents"
+      ],
+      "brief": "Single controller only. Reconcile task scopes and generated role adapters with actual modules, preserve raw evidence and current full goal. Plan changes require all old writers stopped/released and one new shared ledger with fresh reviewed prerequisite evidence. Never reset active ledger or infer Studio/device acceptance. No runtime changes."
+    }
+  ]
+}
