@@ -1,0 +1,24 @@
+{
+  "scope": "OFFLINE_LANDFORM_PROFILE",
+  "landformBounds": [
+    [
+      -715.9279791627638,
+      21.657807267108325
+    ],
+    [
+      -75.99996402404823,
+      119.76888429983987
+    ],
+    [
+      -664.0,
+      1666.2995133930144
+    ]
+  ],
+  "maxCrosssectionWidth": 615.9426151925154,
+  "crosssectionsOver300Studs": 55,
+  "crosssections": 75,
+  "beaconOutwardShellAssertions": 60,
+  "beaconUpwardCrownAssertions": 10,
+  "walkableNewLandscape": false,
+  "packetSha256": "cb3171b25c6bd52a24e8a1baa6af5c82c42b0c41127f255e6cb918fcf57da136"
+}

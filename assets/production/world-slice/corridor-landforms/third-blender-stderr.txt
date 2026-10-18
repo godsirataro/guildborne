@@ -1,0 +1,4 @@
+C:\Work\MySelf\Guildborne-city-greenwood\production\world\quality-slice\corridor-landforms\landform_recipe.py:207: DeprecationWarning: 'Material.use_nodes' is expected to be removed in Blender 6.0
+  result.use_nodes=True;shader=result.node_tree.nodes.get('Principled BSDF')
+C:\Work\MySelf\Guildborne-city-greenwood\production\world\quality-slice\corridor-landforms\landform_recipe.py:241: DeprecationWarning: 'World.use_nodes' is expected to be removed in Blender 6.0
+  scene.world.use_nodes=True;scene.world.node_tree.nodes['Background'].inputs[0].default_value=(.42,.53,.65,1)

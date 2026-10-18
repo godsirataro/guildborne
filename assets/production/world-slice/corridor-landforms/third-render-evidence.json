@@ -1,0 +1,36 @@
+{
+  "status": "BLENDER_RENDERED_NOT_STUDIO",
+  "groundPath": "C:\\Work\\MySelf\\Guildborne-city-greenwood\\production\\world\\quality-slice\\continuous-corridor\\ground.json",
+  "groundSha256": "398a440048136c1e81f39f0ac0f40c72b3ecdfb442777a47c490bf678daa7b35",
+  "sourceSha256": "3d86eea0e74dc4a31c5b6714a8f805c91b29ddda2b6a7e59cde8536623b471d1",
+  "groundParts": 444,
+  "views": [
+    "overview",
+    "citygate",
+    "cliffbridge",
+    "ridge",
+    "woodland",
+    "forestarrival"
+  ],
+  "context": "City bounds and Greenwood landing are explicitly schematic reference boxes; omitted game geometry is not claimed imported",
+  "hashes": {
+    "citygate.png": "4de1b44d791eb8ad04911d044b5ad0ba59d443d2352440beff1a1b4228575614",
+    "cliffbridge.png": "aafb0b69d0e765ce7b107ede412ebd61941f3d8af8ec1600fb1e2259b3cea1f7",
+    "forestarrival.png": "daa76de593ce7cf0b37536669ed14478e671a1de4c54bf6311012b8dc36e8850",
+    "initial-citygate.png": "bbe9c9890fe622b1624792cbb99a9fe18bded59341bbd2718d3311f3fad368ad",
+    "initial-cliffbridge.png": "7ab5de5350fedb669044354d080a48de1222a7c2f83a2f4613b4f1ad80da84ce",
+    "initial-forestarrival.png": "19a15de7325cf9fb5245198b24f072b6acbebb1e090415bd350eca82e31ed8f3",
+    "initial-overview.png": "c6a9c160c269ca78601cb2231271ae0d7411146fb2f759c56c01a75a772a01a5",
+    "initial-ridge.png": "c72d74338551b745774b1c833bd5b2e907f255c42df79e2f46dad58eda7b9bda",
+    "initial-woodland.png": "520bfb01b22dd5a0b24e74cd8492e777aee09be3734f4b86408e09a02e27d545",
+    "overview.png": "38fdad121259508ea4de4870e2e629f0e5d18b75728020ddeebe4211f79dffd4",
+    "ridge.png": "dd596aba8f32e9082ddbca5210870336fe86e195ae48b68ed71f52fc3aa0e946",
+    "second-citygate.png": "035af9f5926793146df657318e0517bcfb83064b6cb418d21602f0f351edc3b7",
+    "second-cliffbridge.png": "1e4a7de78fbf01f3101bf7de53d4f7588e56f20a8dce6affaf733ac4ad45a0c5",
+    "second-forestarrival.png": "48cec22e87b3837f2e01730dd1c3c9a68daae80f3efa078f59c04cb0ded25556",
+    "second-overview.png": "302929a2d1c1aaa0fc249ee4512f78b6a25420d8b4ae66ca607b30b79fa826da",
+    "second-ridge.png": "ee7ef29193a10263ff66c800212149aa4f1b12de80f1a7ed02638655aa297bd6",
+    "second-woodland.png": "8c9381b63b01b87c4a0830d05d871fc17b02acb551b5a4ac66db68529fdd30f5",
+    "woodland.png": "e5183ac8715544943c01a6041a991bc07020038ce4d41e3fdf7eb8cd0976487e"
+  }
+}

@@ -1,0 +1,24 @@
+{
+  "status": "BLENDER_RENDERED_NOT_STUDIO",
+  "groundPath": "C:\\Work\\MySelf\\Guildborne-city-greenwood\\production\\world\\quality-slice\\continuous-corridor\\ground.json",
+  "groundSha256": "398a440048136c1e81f39f0ac0f40c72b3ecdfb442777a47c490bf678daa7b35",
+  "sourceSha256": "a2919986ae9de1f7021274388eef73acc3c36e93854ac0286f08ee5117affbc4",
+  "groundParts": 444,
+  "views": [
+    "overview",
+    "citygate",
+    "cliffbridge",
+    "ridge",
+    "woodland",
+    "forestarrival"
+  ],
+  "context": "City bounds and Greenwood landing are explicitly schematic reference boxes; omitted game geometry is not claimed imported",
+  "hashes": {
+    "citygate.png": "bbe9c9890fe622b1624792cbb99a9fe18bded59341bbd2718d3311f3fad368ad",
+    "cliffbridge.png": "7ab5de5350fedb669044354d080a48de1222a7c2f83a2f4613b4f1ad80da84ce",
+    "forestarrival.png": "19a15de7325cf9fb5245198b24f072b6acbebb1e090415bd350eca82e31ed8f3",
+    "overview.png": "c6a9c160c269ca78601cb2231271ae0d7411146fb2f759c56c01a75a772a01a5",
+    "ridge.png": "c72d74338551b745774b1c833bd5b2e907f255c42df79e2f46dad58eda7b9bda",
+    "woodland.png": "520bfb01b22dd5a0b24e74cd8492e777aee09be3734f4b86408e09a02e27d545"
+  }
+}

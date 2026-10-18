@@ -1,0 +1,18 @@
+{
+  "status": "FILE_GENERATED_NOT_STUDIO",
+  "source": "assets\\production\\world-slice\\continuous-corridor\\scenery.mesh.json",
+  "sourceSha256": "05270148a2a1f3983b0fa1afb26abc288004a674c144233ccd0cacfe6cf79f24",
+  "groundSha256": "398a440048136c1e81f39f0ac0f40c72b3ecdfb442777a47c490bf678daa7b35",
+  "groundParts": 444,
+  "unchangedSceneryPlacements": 57,
+  "author": "Original Guildborne procedural landforms and beacon; reviewed existing art retained exactly",
+  "collisions": "None on all new landforms; native approved ground remains separate",
+  "uniqueTriangles": 5364,
+  "instanceTriangles": 33449,
+  "meshes": 11,
+  "placements": 61,
+  "maxChunkTriangles": 1332,
+  "runtimeIds": null,
+  "studioTested": false,
+  "humanApproved": false
+}
