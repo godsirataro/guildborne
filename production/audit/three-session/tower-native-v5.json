@@ -1,0 +1,58 @@
+{
+  "source": "ef4868b",
+  "scope": "exact source-copy isolated Client cosmetics; no authoritative Tower combat",
+  "firstPass": {
+    "content": [
+      {
+        "type": "text",
+        "text": "{\"status\":\"PASS_LOCAL_TOWER_COSMETIC_PROBE\",\"authoritativeCombatTested\":false,\"gallery\":{\"roles\":{\"1\":{\"scale\":1,\"role\":\"Echo Guard\",\"pivot\":{\"1\":-4564.08935546875,\"3\":146.18247985839845,\"2\":10005.8515625,\"5\":0,\"4\":1,\"7\":0,\"6\":0,\"9\":0,\"8\":1,\"12\":1,\"11\":0,\"10\":0}},\"3\":{\"scale\":1.600000023841858,\"role\":\"Spire Warden\",\"pivot\":{\"1\":-4548.08935546875,\"3\":146.18247985839845,\"2\":10007.0517578125,\"5\":0,\"4\":1,\"7\":0,\"6\":0,\"9\":0,\"8\":1,\"12\":1,\"11\":0,\"10\":0}},\"2\":{\"scale\":1,\"role\":\"Echo Archer\",\"pivot\":{\"1\":-4556.08935546875,\"3\":146.18247985839845,\"2\":10005.8515625,\"5\":0,\"4\":1,\"7\":0,\"6\":0,\"9\":0,\"8\":1,\"12\":1,\"11\":0,\"10\":0}}},\"camera\":{\"1\":-4541.08935546875,\"3\":173.18247985839845,\"2\":10015.8515625,\"5\":-0.13585929572582246,\"4\":0.8741573095321655,\"7\":0,\"6\":0.4662523865699768,\"9\":0.27975142002105715,\"8\":0.9600724577903748,\"12\":0.8392543196678162,\"11\":-0.24454674124717713,\"10\":-0.4856429100036621}},\"roles\":{\"1\":{\"carriers\":6,\"role\":\"Echo Guard\",\"welds\":60,\"motors\":6,\"parts\":60},\"3\":{\"carriers\":6,\"role\":\"Spire Warden\",\"welds\":63,\"motors\":6,\"parts\":63},\"2\":{\"carriers\":6,\"role\":\"Echo Archer\",\"welds\":63,\"motors\":6,\"parts\":63}},\"visualApproval\":false,\"profileCases\":40,\"physicalDeviceTested\":false}"
+      }
+    ],
+    "isError": false
+  },
+  "failedGallery": {
+    "content": [
+      {
+        "type": "text",
+        "text": "{\"GalleryResult\":\"\\\"AssistantCommand:198: AssistantCommand:136: Approach indistinguishable from idle\\\\nAssistantCommand:136\\\\nAssistantCommand:112\\\\nAssistantCommand:1\\\\n\\\"\",\"GalleryState\":\"FAILED\"}"
+      }
+    ],
+    "isError": false
+  },
+  "correctedGallery": {
+    "content": [
+      {
+        "type": "text",
+        "text": "{\"GalleryResult\":\"{\\\"gallery\\\":{\\\"roles\\\":[{\\\"scale\\\":1,\\\"role\\\":\\\"Echo Guard\\\",\\\"pivot\\\":[-4564.08935546875,10005.8515625,146.1824951171875,1,0,0,0,1,0,0,0,1]},{\\\"scale\\\":1,\\\"role\\\":\\\"Echo Archer\\\",\\\"pivot\\\":[-4556.08935546875,10005.8515625,146.1824951171875,1,0,0,0,1,0,0,0,1]},{\\\"scale\\\":1.600000023841858,\\\"role\\\":\\\"Spire Warden\\\",\\\"pivot\\\":[-4548.08935546875,10007.0517578125,146.1824951171875,1,0,0,0,1,0,0,0,1]}],\\\"camera\\\":[-4541.08935546875,10015.8515625,173.1824951171875,0.8741573095321655,-0.13585929572582246,0.4662523865699768,0,0.9600724577903748,0.27975142002105715,-0.4856429100036621,-0.24454674124717713,0.8392543196678162]},\\\"authoritativeCombatTested\\\":false,\\\"roles\\\":[{\\\"carriers\\\":6,\\\"role\\\":\\\"Echo Guard\\\",\\\"welds\\\":60,\\\"motors\\\":6,\\\"parts\\\":60},{\\\"carriers\\\":6,\\\"role\\\":\\\"Echo Archer\\\",\\\"welds\\\":63,\\\"motors\\\":6,\\\"parts\\\":63},{\\\"carriers\\\":6,\\\"role\\\":\\\"Spire Warden\\\",\\\"welds\\\":63,\\\"motors\\\":6,\\\"parts\\\":63}],\\\"status\\\":\\\"PASS_LOCAL_TOWER_COSMETIC_PROBE\\\",\\\"visualApproval\\\":false,\\\"profileCases\\\":40,\\\"physicalDeviceTested\\\":false}\",\"GalleryState\":\"PASS\"}"
+      }
+    ],
+    "isError": false
+  },
+  "frontGallery": {
+    "content": [
+      {
+        "type": "text",
+        "text": "{\"state\":\"PASS\",\"result\":\"{\\\"gallery\\\":{\\\"roles\\\":[{\\\"scale\\\":1,\\\"role\\\":\\\"Echo Guard\\\",\\\"pivot\\\":[-4564.08935546875,10005.8515625,146.18247985839845,1,0,0,0,1,0,0,0,1]},{\\\"scale\\\":1,\\\"role\\\":\\\"Echo Archer\\\",\\\"pivot\\\":[-4556.08935546875,10005.8515625,146.18247985839845,1,0,0,0,1,0,0,0,1]},{\\\"scale\\\":1.600000023841858,\\\"role\\\":\\\"Spire Warden\\\",\\\"pivot\\\":[-4548.08935546875,10007.0517578125,146.18247985839845,1,0,0,0,1,0,0,0,1]}],\\\"camera\\\":[-4560.08935546875,10010.8515625,123.18247985839844,-0.9852117896080017,0.028936121612787248,-0.1688801348209381,0,0.9856366515159607,0.1688801348209381,0.1713411808013916,0.16638270020484925,-0.9710607528686523]},\\\"authoritativeCombatTested\\\":false,\\\"roles\\\":[{\\\"carriers\\\":6,\\\"role\\\":\\\"Echo Guard\\\",\\\"welds\\\":60,\\\"motors\\\":6,\\\"parts\\\":60},{\\\"carriers\\\":6,\\\"role\\\":\\\"Echo Archer\\\",\\\"welds\\\":63,\\\"motors\\\":6,\\\"parts\\\":63},{\\\"carriers\\\":6,\\\"role\\\":\\\"Spire Warden\\\",\\\"welds\\\":63,\\\"motors\\\":6,\\\"parts\\\":63}],\\\"status\\\":\\\"PASS_LOCAL_TOWER_COSMETIC_PROBE\\\",\\\"visualApproval\\\":false,\\\"profileCases\\\":40,\\\"physicalDeviceTested\\\":false}\",\"actors\":0}"
+      }
+    ],
+    "isError": false
+  },
+  "cleanup": {
+    "content": [
+      {
+        "type": "text",
+        "text": "{\"actors\":0,\"chapter\":\"Chapter 2 / 6\",\"pos\":[-4556.08935546875,2.9980251789093019,148.59730529785157],\"panel\":true,\"moduleAbsent\":true}"
+      }
+    ],
+    "isError": false
+  },
+  "independentCleanup": {
+    "content": [
+      {
+        "type": "text",
+        "text": "{\"fixtureAbsent\":true,\"remainingActors\":0}"
+      }
+    ],
+    "isError": false
+  }
+}

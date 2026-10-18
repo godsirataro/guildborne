@@ -26,6 +26,8 @@ local oldType,oldFrame,oldFocus=camera.CameraType,camera.CFrame,camera.Focus
 local oldReduced=workspace:GetAttribute(vfx.ReducedMotionAttribute)
 local frame=oldFrame+Vector3.new(0,10000,0)
 local center=frame:PointToWorldSpace(Vector3.new(0,0,-15))
+local cameraBinding="TowerProbeCamera_"..game:GetService("HttpService"):GenerateGUID(false)
+local galleryFrame=CFrame.lookAt(center+Vector3.new(-4,7,-23),center+Vector3.new(0,3,0))
 assert(#workspace:GetPartBoundsInRadius(center,50)==0,"Fixture space must be empty")
 local actors={}
 local animator=nil
@@ -109,8 +111,14 @@ local function fixture(role,index)
     return m,{role=role,parts=parts,carriers=carriers,motors=joints,welds=welds}
 end
 local ok,outcome=xpcall(function()
-    camera.CameraType=Enum.CameraType.Scriptable
-    camera.CFrame=CFrame.lookAt(center+Vector3.new(15,12,27),center+Vector3.new(0,3,0));camera.Focus=CFrame.new(center)
+    local function holdCamera()
+        camera.CameraType=Enum.CameraType.Scriptable
+        camera.CFrame=galleryFrame;camera.Focus=CFrame.new(center)
+    end
+    holdCamera()
+    -- The live game's camera also updates every frame; keep private elevated
+    -- fixtures within the real animator's culling radius while this probe runs.
+    Run:BindToRenderStep(cameraBinding,Enum.RenderPriority.Last.Value+1,holdCamera)
     workspace:SetAttribute(vfx.ReducedMotionAttribute,true)
     -- Frozen gameplay expectations: no appearance or animation inputs participate.
     for floor=1,10 do
@@ -131,6 +139,7 @@ local ok,outcome=xpcall(function()
     for index,role in ipairs({"Echo Guard","Echo Archer","Spire Warden"}) do
         local m,report=fixture(role,index);local root=m.PrimaryPart;local cf,size=root.CFrame,root.Size
         tick();local idle=snapshot(m)
+        assert((root.Position-camera.CFrame.Position).Magnitude<90,"INCONCLUSIVE: fixture camera escaped culling radius")
         m:SetAttribute("CombatState","Approach");task.wait(.18);tick();local moving=snapshot(m)
         assert(changed(idle,moving),"Approach indistinguishable from idle")
         clear(m);task.wait(.9);tick() -- allow the approved eased gait to settle
@@ -191,6 +200,7 @@ local ok,outcome=xpcall(function()
         authoritativeCombatTested=false,physicalDeviceTested=false,visualApproval=false}
 end,debug.traceback)
 if animator then animator.Destroy() end
+Run:UnbindFromRenderStep(cameraBinding)
 for _,m in ipairs(actors) do Tags:RemoveTag(m,tag);m:Destroy() end
 workspace:SetAttribute(vfx.ReducedMotionAttribute,oldReduced)
 camera.CameraType=oldType;camera.CFrame=oldFrame;camera.Focus=oldFocus
