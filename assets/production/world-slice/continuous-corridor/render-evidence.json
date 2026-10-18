@@ -1,0 +1,28 @@
+{
+  "status": "BLENDER_RENDERED_NOT_STUDIO",
+  "groundPath": "production/world/quality-slice/continuous-corridor/ground.json",
+  "groundSha256": "398a440048136c1e81f39f0ac0f40c72b3ecdfb442777a47c490bf678daa7b35",
+  "sourceSha256": "6303527f5d6076808a026a62dfd60df7b481a5562c2d8263febee58ce26951e1",
+  "groundParts": 444,
+  "views": [
+    "overview",
+    "citygate",
+    "cliffbridge",
+    "forestarrival"
+  ],
+  "context": "City bounds and Greenwood landing are explicitly schematic reference boxes; omitted game geometry is not claimed imported",
+  "hashes": {
+    "citygate.png": "dacb7e7c61fb391ef2b32f74810bffc588180d316a6262aaa08bfe3a814d6ee9",
+    "cliffbridge.png": "fc7841ef374cce1ad37fbdcedfd4af7830ec316a10ea8c4863b4cdb76ad52a25",
+    "forestarrival.png": "7a9d047d76c7d1f2a017ded9a85eae36d67c76433dd8b06957067187e9b34173",
+    "initial-citygate.png": "d865ce95f1e92900197e9bf29486b6b81664af2b02b22d97f380a8b0fe1b6b08",
+    "initial-cliffbridge.png": "ce2b4b5b3577f910e990c843a3a1db1b13adb0b252a625f7dd7c0fcd418ab05c",
+    "initial-forestarrival.png": "1680a5b24661f72e80edc4d1c6fcb45f7895022abeaee273522e9543bba7e568",
+    "initial-overview.png": "d0154f2e36fb53ed37fdce6736f926f01ac0caff714d2f4e9d24ad47c2d58d81",
+    "overview.png": "6f86c2c518deadeff7f9833426f606a2285545bb220019b89978fbccd308e615",
+    "second-citygate.png": "7a614efb98e4d8615d58863ccf182798c0c647d72015f9525f531ec25d0a4dfc",
+    "second-cliffbridge.png": "37366664cd80c9231b5e1f85308b41d87c04f7fe2932be235fe08cae59519677",
+    "second-forestarrival.png": "a725c097531ee837f0cc4bfa3ccef2ff781c1d5cc4e39e7fa907e5319891061c",
+    "second-overview.png": "9625b076c5f3b052d004eeb14745a7fa48753b8ff80332820f34cdfef7bf920c"
+  }
+}

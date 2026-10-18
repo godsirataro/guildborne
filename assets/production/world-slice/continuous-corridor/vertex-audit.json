@@ -1,0 +1,19 @@
+{
+  "status": "OFFLINE_VERTEX_AUDIT_ONLY",
+  "verticesChecked": 21401,
+  "minSceneryVertexLaneDistance": 13.999999999999984,
+  "skirtExcludedFromLaneDistance": "Below-ground tapered original skirt only",
+  "privateWestBufferViolations": [],
+  "finite": true,
+  "exactReviewedMeshes": [
+    "tree_a__000",
+    "tree_b__000",
+    "bush__000",
+    "silhouette_fern_rocks__000",
+    "silhouette_ruined_waymarker__000"
+  ],
+  "placements": 58,
+  "instanceTriangles": 31641,
+  "packetSha256": "05270148a2a1f3983b0fa1afb26abc288004a674c144233ccd0cacfe6cf79f24",
+  "studioTested": false
+}

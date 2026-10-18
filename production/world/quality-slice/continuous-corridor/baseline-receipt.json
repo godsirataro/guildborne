@@ -1,0 +1,10 @@
+{
+  "command": [
+    "pwsh",
+    "-NoProfile",
+    "-File",
+    "tools/validate.ps1"
+  ],
+  "exitCode": 0,
+  "evidence": "LOCAL_BASELINE_NOT_STUDIO"
+}

@@ -26,9 +26,12 @@ return function(parent: Instance): any
 	local result: any={folder=folder,disabledDecorationPhysics=0,colliders=0,sourceMeshSha256=data.sourceMeshSha256}
 	result.reviewedArt=immutableCopy({sourceMeshSha256=data.sourceMeshSha256,expectedArt=data.expectedArt})
 	local destroyed=false
+	local corridorCleanup: (() -> ())? = nil
+	local corridor: any = nil
 	function result.destroy()
 		if destroyed then return end
 		destroyed=true
+		if corridorCleanup then corridorCleanup() end
 		for _,old in ipairs(changed) do
 			local p=old.part
 			if p.Parent then
@@ -37,6 +40,87 @@ return function(parent: Instance): any
 		end
 		folder:Destroy()
 		active[parent]=nil
+	end
+	-- Explicit controller opt-in; existing preview initialization never opens the city.
+	function result.buildContinuousCorridor(): any
+		assert(not destroyed, "Destroyed preview handle")
+		if corridor then return corridor end
+		local spec=Quality.ContinuousCorridor
+		Quality.validateCorridor(spec)
+		local town=parent:FindFirstChild("City")
+		assert(town and town:IsA("Folder"), "Missing existing City")
+		assert(not parent:FindFirstChild("CityGreenwoodCorridor"), "Unowned corridor exists")
+		local wall: Model? = nil
+		for _,child in ipairs(town:GetChildren()) do
+			if child:IsA("Model") and child.Name=="CityWall" and (child:GetPivot().Position-Vector3.new(0,0,-625)).Magnitude<.01 then
+				assert(wall==nil,"Ambiguous south wall");wall=child
+			end
+		end
+		assert(wall,"Expected existing south wall")
+		local kit=game:GetService("ServerStorage"):FindFirstChild("CityKit")
+		local archSource=kit and kit:FindFirstChild("CityArch")
+		assert(archSource and archSource:IsA("Model"),"Missing original CityArch template")
+		local geometry=Instance.new("Model");geometry.Name="CityGreenwoodCorridor"
+		geometry:SetAttribute("LocalPreviewOnly",true)
+		local gate: Model? = nil
+		local expected: {any} = {}
+		local floorParts: {BasePart}={}
+		local released=false
+		local function cleanup()
+			if released then return end
+			released=true
+			if wall and wall.Parent==nil then
+				if town.Parent then wall.Parent=town else wall:Destroy() end
+			end
+			geometry:Destroy();corridor=nil;corridorCleanup=nil
+		end
+		local success,err=pcall(function()
+			local arch=archSource:Clone();gate=arch;arch.Parent=geometry;arch.Name="ContinuousSouthGate"
+			arch:PivotTo(CFrame.new(0,0,-625))
+			for _,p in ipairs(arch:GetDescendants()) do if p:IsA("BasePart") then
+				table.insert(expected,{part=p,parent=p.Parent,size=p.Size,cframe=p.CFrame,query=p.CanQuery,collide=p.CanCollide})
+			end end
+			assert(#expected==5,"Unexpected original gate structure")
+			for _,def in ipairs(spec.parts) do
+				local part=Instance.new("WedgePart");part.Name=def.name;part.Anchored=true
+				part.Size=Vector3.new(table.unpack(def.size));part.CFrame=CFrame.new(table.unpack(def.cframe))
+				part.Color=Color3.new(table.unpack(def.color));part.Material=if def.collision then Enum.Material.Ground else Enum.Material.Grass
+				part.CanCollide=def.collision;part.CanQuery=def.collision;part.CanTouch=false;part.CastShadow=false
+				part.TopSurface=Enum.SurfaceType.Smooth;part.BottomSurface=Enum.SurfaceType.Smooth;part.Parent=geometry
+				if def.collision then
+					table.insert(floorParts,part)
+					table.insert(expected,{part=part,parent=geometry,size=part.Size,cframe=part.CFrame,query=true,collide=true})
+				end
+			end
+			geometry:SetAttribute("RouteId",spec.id);geometry:SetAttribute("FromZone","City");geometry:SetAttribute("ToZone","Greenwood")
+			geometry:SetAttribute("WalkWidth",24);geometry:SetAttribute("NavigationPointKind","FloorCenter")
+			geometry:SetAttribute("NavigationBelowFloor",4);geometry:SetAttribute("NavigationAboveFloor",14)
+			local navigation=Instance.new("Folder");navigation.Name="NavigationNodes";navigation.Parent=geometry
+			for i,point in ipairs(spec.centerline) do
+				local value=Instance.new("Vector3Value");value.Name=string.format("%03d",i);value.Value=Vector3.new(table.unpack(point))
+				value:SetAttribute("Index",i);value.Parent=navigation
+			end
+			local function box(def: any): any return {cframe=CFrame.new(table.unpack(def.cframe)),size=Vector3.new(table.unpack(def.size))} end
+			local volumes={};for _,def in ipairs(spec.volumes) do table.insert(volumes,box(def)) end
+			local route: any={id=spec.id,fromZone="City",toZone="Greenwood",geometry=geometry,volumes=volumes,
+				entries={City=box(spec.entries.City),Greenwood=box(spec.entries.Greenwood)},
+				safeRecovery={City=CFrame.new(0,5,-720),Greenwood=CFrame.new(0,7,1505)}}
+			function route.isReady(): boolean
+				if destroyed or released or geometry.Parent~=parent or not gate or gate.Parent~=geometry or not wall or wall.Parent~=nil then return false end
+				for _,value in ipairs(expected) do
+					local part=value.part
+					if part.Parent~=value.parent or not part.Anchored or part.CanCollide~=value.collide or part.CanQuery~=value.query
+						or part.Size~=value.size or part.CFrame~=value.cframe then return false end
+				end
+				return #floorParts==spec.colliderCount
+			end
+			geometry.Parent=parent
+			local ownedWall=wall :: Model
+			ownedWall.Parent=nil
+			corridorCleanup=cleanup;corridor=route
+		end)
+		if not success then cleanup();error(tostring(err)) end
+		return corridor
 	end
 	local ok,problem=pcall(function()
 		folder:SetAttribute("LocalPreviewOnly",true)

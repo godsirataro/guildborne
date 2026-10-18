@@ -1,0 +1,146 @@
+{
+  "id": "city_greenwood_west",
+  "fromZone": "City",
+  "toZone": "Greenwood",
+  "status": "PROPOSED_ENGINEERING_AGREEMENT_REQUIRED",
+  "groundContainer": "GuildborneWorld/CityGreenwoodCorridor",
+  "width": 24,
+  "shoulderWidth": 84,
+  "centerline": [
+    [
+      0,
+      0.55,
+      -664
+    ],
+    [
+      0,
+      0.55,
+      -625
+    ],
+    [
+      0,
+      0.55,
+      -605
+    ],
+    [
+      -180,
+      2,
+      -480
+    ],
+    [
+      -320,
+      5,
+      -250
+    ],
+    [
+      -340,
+      6,
+      180
+    ],
+    [
+      -260,
+      4,
+      550
+    ],
+    [
+      -260,
+      5,
+      1100
+    ],
+    [
+      -180,
+      2,
+      1550
+    ],
+    [
+      0,
+      2,
+      1550
+    ],
+    [
+      0,
+      2,
+      1526
+    ]
+  ],
+  "entryVolumes": {
+    "City": {
+      "min": [
+        -14,
+        -2,
+        -670
+      ],
+      "max": [
+        14,
+        14,
+        -630
+      ]
+    },
+    "Greenwood": {
+      "min": [
+        -14,
+        0,
+        1493
+      ],
+      "max": [
+        14,
+        15,
+        1528
+      ]
+    }
+  },
+  "safeExistingLandingRefs": {
+    "City": "City.Destinations.City",
+    "Greenwood": "City.Destinations.Greenwood"
+  },
+  "zoneThresholds": {
+    "cityExitZ": -620,
+    "greenwoodArrivalZ": 1528,
+    "hysteresisStuds": 6,
+    "verticalBelow": 4,
+    "verticalAbove": 14
+  },
+  "isReady": "Controller must require built ground + gate open + authoritative eligibility; descriptor alone is not readiness",
+  "privateExclusion": {
+    "minX": -104,
+    "minZ": -72,
+    "maxZ": 118,
+    "eastwardSlots": true
+  },
+  "seamNotes": [
+    "City joins GrandAvenue at Z-664, keeps existing Guild Zone Warp at Z-680. Replace south wall X0 Z-625 with original CityArch only in explicit preview activation.",
+    "24-stud corridor ends at Greenwood Landing edge Z1526. Existing return portal has9-stud throat between solid posts at X+-5 Z1517; preserve anchor/physics. Companion traversal through this throat remains a native gate.",
+    "Do not enlarge Greenwood region over private belt. Corridor occupancy is swept centerline width/height plus two entry volumes; controller owns travel eligibility and transition semantics."
+  ],
+  "safeRecovery": {
+    "City": [
+      0,
+      5,
+      -720
+    ],
+    "Greenwood": [
+      0,
+      7,
+      1505
+    ]
+  },
+  "api": "handle.buildContinuousCorridor() -> {id,fromZone,toZone,geometry,volumes,entries,safeRecovery,isReady}",
+  "navigationMetadata": {
+    "folder": "NavigationNodes",
+    "className": "Vector3Value",
+    "names": "001..038",
+    "value": "exact ground.walkCenterline floor centers",
+    "attributes": [
+      "Index"
+    ],
+    "modelAttributes": {
+      "RouteId": "city_greenwood_west",
+      "FromZone": "City",
+      "ToZone": "Greenwood",
+      "WalkWidth": 24,
+      "NavigationPointKind": "FloorCenter",
+      "NavigationBelowFloor": 4,
+      "NavigationAboveFloor": 14
+    }
+  }
+}

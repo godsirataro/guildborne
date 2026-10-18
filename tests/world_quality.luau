@@ -39,6 +39,22 @@ for _,c in ipairs(actual.colliders)do found[c.name]=c end
 assert(found.ArrivalStreet and found.ForestRoad and found.StoneCrossingDeck and found.StableApron);count+=1
 assert(found.ArrivalStreet.cframe[2]+found.ArrivalStreet.size[2]/2==2.08);count+=1
 assert(found.ForestRoad.cframe[2]+found.ForestRoad.size[2]/2==6.08);count+=1
+assert(Q.validateCorridor(Q.ContinuousCorridor));count+=1
+local function clone(value: any): any
+ if type(value)~="table" then return value end
+ local copy={};for k,v in pairs(value) do copy[k]=clone(v) end;return copy
+end
+local function rejectCorridor(change: (any)->())
+ local spec=clone(Q.ContinuousCorridor);change(spec);assert(not pcall(Q.validateCorridor,spec));count+=1
+end
+rejectCorridor(function(d)d.parts[1].cframe[1]=0/0 end)
+rejectCorridor(function(d)d.parts[1].cframe[4]=2 end)
+rejectCorridor(function(d)d.parts[1].size[1]=0 end)
+rejectCorridor(function(d)d.parts[1].cframe[3]=0;d.parts[1].cframe[1]=0 end)
+rejectCorridor(function(d)d.parts[1].collision=false end)
+rejectCorridor(function(d)d.volumes[1].size[3]=2000 end)
+rejectCorridor(function(d)d.entries.Greenwood=nil end)
+assert(#Q.ContinuousCorridor.parts==444 and Q.ContinuousCorridor.colliderCount==148);count+=1
 print("world_quality: "..count.." contract checks passed; Studio lifecycle NOT_RUN")
 
 -- Optional CLI source-injection harness: execute the actual service with fake
@@ -46,14 +62,28 @@ print("world_quality: "..count.." contract checks passed; Studio lifecycle NOT_R
 return function(source: string)
  local passed=0
  local function check(ok: boolean) assert(ok);passed+=1 end
+ local function vec(x: number?,y: number?,z: number?): any
+  local a={X=x or 0,Y=y or 0,Z=z or 0}
+  return setmetatable(a,{__sub=function(u: any,v: any): any return {Magnitude=math.sqrt((u.X-v.X)^2+(u.Y-v.Y)^2+(u.Z-v.Z)^2)} end})
+ end
+ local function frame(x: number?,y: number?,z: number?,...: any): any return {Position=vec(x,y,z)} end
  local function fixture(): any
   local nodes: {any}={}
-  local state: any={server=true,studio=true,created=0,failAt=0}
+  local state: any={server=true,studio=true,created=0,failAt=0,failPivot=false}
   local function node(class: string, name: string, parent: any): any
    local n: any={ClassName=class,Name=name,Parent=parent,Transparency=.35,CanCollide=true,CanQuery=false,CanTouch=true,attributes={}}
    function n:IsA(kind: string): boolean return self.ClassName==kind or (kind=="BasePart" and (self.ClassName=="Part" or self.ClassName=="WedgePart")) end
    function n:GetChildren(): {any} local children={};for _,v in ipairs(nodes)do if v.Parent==self then table.insert(children,v)end end;return children end
    function n:FindFirstChild(name: string): any for _,v in ipairs(self:GetChildren())do if v.Name==name then return v end end;return nil end
+   function n:GetPivot(): any return n.pivot or frame() end
+   function n:PivotTo(value: any) assert(not state.failPivot,"Injected pivot failure");n.pivot=value end
+   function n:GetDescendants(): {any}
+    local result={};for _,child in ipairs(n:GetChildren())do table.insert(result,child);for _,desc in ipairs(child:GetDescendants())do table.insert(result,desc)end end;return result
+   end
+   function n:Clone(): any
+    local copy=node(n.ClassName,n.Name,nil);copy.Anchored=n.Anchored
+    for _,child in ipairs(n:GetChildren())do local cloneChild=child:Clone();cloneChild.Parent=copy end;return copy
+   end
    function n:SetAttribute(key: string,value: any) self.attributes[key]=value end
    function n:Destroy() for _,v in ipairs(self:GetChildren())do v:Destroy()end;self.Parent=nil;self.destroyed=true end
    table.insert(nodes,n);return n
@@ -66,14 +96,17 @@ return function(source: string)
   local nested=node("Model","Other",region);local nestedTrunk=node("Part","Trunk",nested)
   local mesh=node("MeshPart","Trunk",region)
   local runtime: any={StudioPersistence="Memory",AllowedDataStoreUniverses={}}
+  local town=node("Folder","City",world);local wall=node("Model","CityWall",town);wall:PivotTo(frame(0,0,-625))
+  local storage=node("Folder","ServerStorage",{});local kit=node("Folder","CityKit",storage);local arch=node("Model","CityArch",kit)
+  for i=1,5 do local piece=node("Part","Gate"..i,arch);piece.Anchored=true end
   local rs={IsServer=function()return state.server end,IsStudio=function()return state.studio end}
-  local fakeGame: any={PlaceId=0,GameId=0,ReplicatedStorage={Shared={Config={WorldQuality="quality"}}},GetService=function()return rs end}
+  local fakeGame: any={PlaceId=0,GameId=0,ReplicatedStorage={Shared={Config={WorldQuality="quality"}}},GetService=function(_self: any,name: string): any return if name=="ServerStorage" then storage else rs end}
   local env: any=setmetatable({game=fakeGame,script={Parent={WorldQualityAssets="data",Parent={Config={Runtime="runtime"}}}},
    require=function(key: string): any if key=="quality" then return Q elseif key=="data" then return actual else return runtime end end,
    Instance={new=function(class: string): any state.created+=1;assert(state.created~=state.failAt,"Injected allocation failure");return node(class,class,nil) end},
-   Vector3={new=function(...: any): any return {...} end},CFrame={new=function(...: any): any return {...} end}}, {__index=getfenv()})
+   Vector3={new=vec},CFrame={new=frame},Color3={new=function(...: any): any return {...} end},Enum={Material={Ground="Ground",Grass="Grass"},SurfaceType={Smooth="Smooth"}}}, {__index=getfenv()})
   local chunk=assert(loadstring(source));setfenv(chunk,env)
-  return {init=chunk(),world=world,region=region,trunk=trunk,canopy=canopy,terrain=terrain,nested=nestedTrunk,mesh=mesh,state=state,runtime=runtime,game=fakeGame,node=node}
+  return {init=chunk(),world=world,region=region,trunk=trunk,canopy=canopy,terrain=terrain,nested=nestedTrunk,mesh=mesh,state=state,runtime=runtime,game=fakeGame,node=node,wall=wall,town=town,nodes=nodes}
  end
  local f=fixture()
  local h=f.init(f.world) -- no imported art folder exists anywhere
@@ -100,5 +133,33 @@ return function(source: string)
  local broken=fixture();broken.state.failAt=4
  check(not pcall(broken.init,broken.world) and broken.region:FindFirstChild("WorldQualityCollision")==nil and broken.trunk.CanCollide)
  broken.state.failAt=0;local recovered=broken.init(broken.world);check(recovered.colliders==413);recovered.destroy()
+ local c=fixture();local handle=c.init(c.world)
+ check(c.wall.Parent==c.town and c.world:FindFirstChild("CityGreenwoodCorridor")==nil)
+ local route=handle.buildContinuousCorridor();check(route.id=="city_greenwood_west" and route.isReady())
+ check(route.geometry.Parent==c.world and c.wall.Parent==nil and #route.volumes==37)
+ check(handle.buildContinuousCorridor()==route)
+ local navigation=route.geometry:FindFirstChild("NavigationNodes");check(#navigation:GetChildren()==38)
+ for i,point in ipairs(Q.ContinuousCorridor.centerline) do
+  local value=navigation:FindFirstChild(string.format("%03d",i));check(value.Value.X==point[1] and value.Value.Y==point[2] and value.Value.Z==point[3] and value.attributes.Index==i)
+ end
+ check(route.geometry.attributes.RouteId=="city_greenwood_west" and route.geometry.attributes.WalkWidth==24)
+ local road=route.geometry:FindFirstChild("Road_000");road.CanCollide=false;check(not route.isReady());road.CanCollide=true
+ road.CanQuery=false;check(not route.isReady());road.CanQuery=true
+ local oldFrame=road.CFrame;road.CFrame=frame(100,100,100);check(not route.isReady());road.CFrame=oldFrame
+ local oldSize=road.Size;road.Size=vec(1,1,1);check(not route.isReady());road.Size=oldSize
+ local gate=route.geometry:FindFirstChild("ContinuousSouthGate");local pier=gate:GetChildren()[1];pier.Parent=nil;check(not route.isReady());pier.Parent=gate
+ check(route.isReady())
+ handle.destroy();check(c.wall.Parent==c.town and not route.isReady() and c.world:FindFirstChild("CityGreenwoodCorridor")==nil)
+ check(not pcall(handle.buildContinuousCorridor))
+ local failed=fixture();local pending=failed.init(failed.world);failed.state.failAt=failed.state.created+10
+ check(not pcall(pending.buildContinuousCorridor));check(failed.wall.Parent==failed.town and failed.world:FindFirstChild("CityGreenwoodCorridor")==nil)
+ failed.state.failAt=0;check(pending.buildContinuousCorridor().isReady());pending.destroy()
+ local pivot=fixture();local pivotHandle=pivot.init(pivot.world);pivot.state.failPivot=true
+ check(not pcall(pivotHandle.buildContinuousCorridor));check(pivot.wall.Parent==pivot.town)
+ for _,node in ipairs(pivot.nodes)do if node.Name=="ContinuousSouthGate" then check(node.destroyed==true)end end
+ pivot.state.failPivot=false;check(pivotHandle.buildContinuousCorridor().isReady());pivotHandle.destroy()
+ local removed=fixture();local removing=removed.init(removed.world);removing.buildContinuousCorridor();removed.town.Parent=nil;removing.destroy();check(removed.wall.destroyed==true)
+ local occupied=fixture();local owner=occupied.init(occupied.world);occupied.node("Model","CityGreenwoodCorridor",occupied.world)
+ check(not pcall(owner.buildContinuousCorridor) and occupied.wall.Parent==occupied.town);owner.destroy()
  print("world_quality: "..passed.." mocked server lifecycle checks passed; Studio physics NOT_RUN")
 end

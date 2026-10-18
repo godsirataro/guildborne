@@ -1,0 +1,24 @@
+{
+  "status": "FILE_GENERATED_ONLY",
+  "source": "assets\\production\\world-slice\\world-slice.mesh.json",
+  "sourceSha256": "9baaf8de0faf3ff7f4a4f2c32ea692e48aa9dbb021f609e3530029ed7844ddc7",
+  "routeLength": 2567.4748352614656,
+  "intake": "assets/production/world-slice/intake.json",
+  "licenses": [
+    "assets/production/world-slice/village-LICENSE.txt",
+    "assets/production/world-slice/ruins-LICENSE.txt"
+  ],
+  "originalRecipes": [
+    "production/world/quality-slice/silhouette_recipe.py",
+    "production\\world\\quality-slice\\continuous-corridor\\art_recipe.py"
+  ],
+  "meshReuse": "Five exact reviewed mesh records; unchanged vertices, triangles and colors. Bridge, lookout and cliff are original recipe geometry.",
+  "meshCount": 8,
+  "placementCount": 58,
+  "instanceTriangles": 31641,
+  "runtimeIds": null,
+  "studioTested": false,
+  "humanApproved": false,
+  "descriptorSha256": "d30ff18b9dfeecd1502fb611636b8f1e8cf9bdc7000032996c6009f4675dbaf1",
+  "metadataRevision": "Entry OBB extended over unchanged existing Greenwood landing; navigation metadata added. Centerline, ground and art geometry unchanged."
+}

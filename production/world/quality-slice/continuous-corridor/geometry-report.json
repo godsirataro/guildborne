@@ -1,0 +1,31 @@
+{
+  "evidence": "OFFLINE_SOURCE_GEOMETRY_NOT_STUDIO",
+  "parts": 444,
+  "colliders": 148,
+  "sections": 38,
+  "roadTriangles": 74,
+  "allTopTriangles": 222,
+  "roadArea3D": 61620.35055736123,
+  "roadProjectedArea": 61619.39604627519,
+  "maximumRoadPairOverlapArea": 0,
+  "maximumAllTopPairProjectedOverlapArea": 0,
+  "maximumNativeVertexReconstructionError": 2.343731030072664e-13,
+  "minimumNativeDimension": 0.1109400392449802,
+  "maximumSegmentLength": 78.5715584414512,
+  "maximumCenterlineSlope": 0.011141720290623111,
+  "privateBeltNearestSampleX": -288.04535638472123,
+  "seams": "Exact shared cross-section vertices; city Z-664 and Greenwood Z1526 butt joins. Native float/path verification pending.",
+  "basis": "Columns X=cross(Y,Z), Y=altitude, Z=foot-endpoint; determinant+1. Offset center down upward normal; either signed broad X face reconstructs original triangle.",
+  "bounds": {
+    "min": [
+      -382.2091825999674,
+      0.35000000000000003,
+      -664.0
+    ],
+    "max": [
+      15.0,
+      6.0,
+      1592.0
+    ]
+  }
+}

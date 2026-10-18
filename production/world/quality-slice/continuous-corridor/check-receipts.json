@@ -1,0 +1,52 @@
+[
+  {
+    "name": "lifecycle",
+    "command": [
+      "C:\\Work\\MySelf\\Guildborne-city-greenwood\\.tools\\luau\\luau.exe",
+      "C:\\Work\\MySelf\\Guildborne-city-greenwood\\tests\\_corridor_lifecycle.luau"
+    ],
+    "exitCode": 0,
+    "stdoutSha256": "5a2fb0d681950a7a9abcf8b0f0e7a53195c4cca9661770fe305154f2da2342a4",
+    "stderrSha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+  },
+  {
+    "name": "compile",
+    "command": [
+      "C:\\Work\\MySelf\\Guildborne-city-greenwood\\.tools\\luau\\luau-compile.exe",
+      "--null",
+      "src/server/Services/WorldQualitySlice.luau",
+      "src/shared/Config/WorldQuality.luau",
+      "tests/world_quality.luau"
+    ],
+    "exitCode": 0,
+    "stdoutSha256": "518232c18ed7cc67dffa81948afd32f5321f625fe2ebf8b9eff4f9cb69808992",
+    "stderrSha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+  },
+  {
+    "name": "types",
+    "command": [
+      "C:\\Work\\MySelf\\Guildborne-city-greenwood\\.tools\\luau-lsp\\luau-lsp.exe",
+      "analyze",
+      "--platform=roblox",
+      "--sourcemap=build/sourcemap.json",
+      "--definitions=C:\\Work\\MySelf\\Guildborne-city-greenwood\\.tools\\luau-lsp\\globalTypes.d.luau",
+      "src/server/Services/WorldQualitySlice.luau",
+      "src/shared/Config/WorldQuality.luau",
+      "tests/world_quality.luau"
+    ],
+    "exitCode": 0,
+    "stdoutSha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "stderrSha256": "43b554b157bf1d1ece29d34ace3a3666b6084ad48c37dd1872eec5b6b072a70e"
+  },
+  {
+    "name": "diff",
+    "command": [
+      "git",
+      "diff",
+      "--check"
+    ],
+    "exitCode": 0,
+    "stdoutSha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "stderrSha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+  }
+]
