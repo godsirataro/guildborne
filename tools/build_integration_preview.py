@@ -11,7 +11,9 @@ import argparse
 ROOT = Path(__file__).resolve().parents[1]
 
 
-def build(launch=False, shared_combat=False, continuous_world=False):
+def build(launch=False, shared_combat=False, continuous_world=False, full_campaign=False):
+    if full_campaign and (launch or shared_combat or continuous_world):
+        raise ValueError("Full campaign is a separate Memory candidate; do not combine with launch fixtures")
     if shared_combat and not launch:
         raise ValueError("Shared combat fixture requires --launch")
     if continuous_world and not launch:
@@ -19,13 +21,20 @@ def build(launch=False, shared_combat=False, continuous_world=False):
     runtime = ROOT / "src/server/Config/Runtime.luau"
     before = hashlib.sha256(runtime.read_bytes()).hexdigest()
     project = json.loads((ROOT / "default.project.json").read_text())
-    variant = "launch" if launch else "integration"
+    variant = "full-campaign" if full_campaign else "launch" if launch else "integration"
     project["name"] = "Guildborne_LaunchPreview" if launch else "Guildborne_IntegrationPreview"
     if continuous_world:
         project["name"] = "Guildborne_ContinuousWorldPreview"
     out = ROOT / "build"
     out.mkdir(exist_ok=True)
     runtime_path = ROOT / "offline/Runtime.luau"
+    if full_campaign:
+        project["name"] = "Guildborne_FullCampaignPreview"
+        runtime_path = ROOT / "offline/ArchiveHeartRuntime.luau"
+        full_runtime = runtime_path.read_text(encoding="utf-8")
+        for flag in ("NoviceJourney", "IronveilJourney", "AshenJourney", "TowerJourney", "CrosshavenJourney", "ArchiveHeartJourney"):
+            assert full_runtime.count(flag + "=true") == 1, f"Full campaign runtime missing {flag}"
+        assert "LaunchCandidate" not in full_runtime, "Full campaign must not enable the Lv35 release selection"
     if launch:
         base_runtime = runtime_path.read_text()
         for flag in ("NoviceJourney=false", "IronveilJourney=false"):
@@ -102,6 +111,7 @@ def build(launch=False, shared_combat=False, continuous_world=False):
     receipt["variant"] = variant
     receipt["sharedCombatCandidate"] = shared_combat
     receipt["continuousWorldCandidate"] = continuous_world
+    receipt["fullCampaignCandidate"] = full_campaign
     receipt["runtimeSha256"] = hashlib.sha256(runtime_path.read_bytes()).hexdigest()
     (out / f"{variant}-preview-build.json").write_text(json.dumps(receipt, indent=2) + "\n")
     # Read-only localhost transfer data for the already-open local preview. The
@@ -138,5 +148,6 @@ if __name__ == "__main__":
     parser.add_argument("--launch", action="store_true")
     parser.add_argument("--shared-combat", action="store_true", help="Opt-in local Memory combat/reward lab; no public route or cloud persistence")
     parser.add_argument("--continuous-world", action="store_true", help="Opt-in local Memory City-Greenwood walking candidate")
+    parser.add_argument("--full-campaign", action="store_true", help="Separate existing Chapter00-06 Memory runtime; incompatible with launch fixtures")
     args = parser.parse_args()
-    build(args.launch, args.shared_combat, args.continuous_world)
+    build(args.launch, args.shared_combat, args.continuous_world, args.full_campaign)
