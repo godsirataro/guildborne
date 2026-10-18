@@ -39,6 +39,148 @@ return function():Model
  for i=1,3 do part("SupplyCrate",V(-83,2,141+i*6),V(4,4,4),wood)end
  marker("Arrival",V(0,3,214),"Crown Road · Chapter 00")
  marker("CourierCamp",V(-65,3,153),"01 · Courier camp")
+ -- Preserve every native collision proxy. Entry art changes visibility only.
+ local hidden={CityGateTower=true,GateLintel=true,GateBanner=true,BannerCrest=true,CourierPlaza=true,CourierCanopy=true,CanopyPost=true,CourierTable=true,SupplyCrate=true,TreeCanopy=true,TreeCrown=true}
+ for _,p in ipairs(model:GetChildren())do
+  if p:IsA("BasePart")and hidden[p.Name]then p.Transparency=1 end
+ end
+ local slate=Color3.fromRGB(48,67,83)
+ local pale=Color3.fromRGB(172,166,143)
+ local darkWood=Color3.fromRGB(66,47,35)
+ local function decor(name:string,pos:Vector3,size:Vector3,color:Color3,material:Enum.Material?):Part
+  local p=part("Entry_"..name,pos,size,color,false)
+  p.Material=material or Enum.Material.SmoothPlastic
+  return p
+ end
+ local function roof(name:string,x:number,z:number,width:number,depth:number,eave:number,rise:number)
+  local angle=math.atan(rise/(width/2))
+  local length=math.sqrt(width*width/4+rise*rise)
+  for _,side in ipairs({-1,1})do
+   local p=decor(name,V(x+side*width/4,eave+rise/2,z),V(length,.55,depth),slate,Enum.Material.Slate)
+   p.CFrame=CFrame.new(p.Position)*CFrame.Angles(0,0,-side*angle)
+   -- Three offset rows give the roof a restrained layered silhouette.
+   for row=0,2 do
+    local fraction=(row+.5)/3
+    local tile=decor(name.."Course",V(x+side*(width/2*fraction+.45*math.sin(angle)),eave+rise*(1-fraction)+.45*math.cos(angle),z),V(length/3+.12,.18,depth+.15),slate,Enum.Material.Slate)
+    tile.CFrame=CFrame.new(tile.Position)*CFrame.Angles(0,0,-side*angle)
+   end
+  end
+  decor(name.."Ridge",V(x,eave+rise+.4,z),V(.7,.65,depth+.5),darkWood,Enum.Material.Wood)
+ end
+ local function gable(x:number,z:number,width:number,base:number,rise:number)
+  -- Local WedgePart rises toward +Z. Rotate that high edge toward the ridge.
+  for _,side in ipairs({-1,1})do
+   local p=Instance.new("WedgePart");p.Name="Entry_GableInfill"
+   p.Size=V(.35,rise,width/2);p.CFrame=CFrame.new(x+side*width/4,base+rise/2,z)*CFrame.Angles(0,-side*math.pi/2,0)
+   p.Color=pale;p.Material=Enum.Material.Plaster;p.Anchored=true
+   p.CanCollide=false;p.CanQuery=false;p.CanTouch=false
+   p.TopSurface=Enum.SurfaceType.Smooth;p.BottomSurface=Enum.SurfaceType.Smooth
+   p:SetAttribute("Stage",stage);p.Parent=model
+  end
+ end
+ -- The gate opening retains its native 20-stud width and 20-stud headroom.
+ for _,x in ipairs({-15,15})do
+  decor("TowerCore",V(x,12,195),V(9.6,24,11.7),pale,Enum.Material.Slate)
+  for row=0,7 do
+   for col=0,2 do
+    decor("TowerStone",V(x-3.05+col*3.05,1.5+row*3,201),V(2.9,2.82,.35),if (row+col)%3==0 then stone else pale,Enum.Material.Slate)
+   end
+  end
+  for _,z in ipairs({189.1,200.9})do
+   for _,side in ipairs({-1,1})do decor("CornerTimber",V(x+side*4.5,13,z),V(.65,22,.65),darkWood,Enum.Material.Wood)end
+  end
+  decor("TowerBelt",V(x,17,195),V(9.6,.65,12),darkWood,Enum.Material.Wood)
+  roof("TowerRoof",x,195,9.6,15,24,5)
+  for _,z in ipairs({187.85,202.15})do gable(x,z,9.2,24.05,4.8)end
+  decor("TowerKingpost",V(x,26.6,202.3),V(.5,4.8,.5),wood,Enum.Material.Wood)
+  for _,side in ipairs({-1,1})do
+   local rafter=decor("TowerGableRafter",V(x+side*2.3,26.6,202.3),V(math.sqrt(4.6*4.6+4.6*4.6),.4,.5),wood,Enum.Material.Wood)
+   rafter.CFrame=CFrame.new(rafter.Position)*CFrame.Angles(0,0,-side*math.pi/4)
+  end
+  decor("TowerCloth",V(x,13,201.35),V(3.7,8,.14),navy,Enum.Material.Fabric)
+  decor("ClothHem",V(x,9,201.46),V(3.7,.25,.12),gold)
+  decor("ClothStem",V(x,13,201.47),V(.18,3.8,.12),gold)
+  for j=0,2 do
+   local crest=decor("ClothLeaf",V(x,12+j*1.1,201.5),V(.8,.8,.12),gold)
+   crest.CFrame=CFrame.new(crest.Position)*CFrame.Angles(0,0,math.pi/4)
+  end
+ end
+ decor("GateBeam",V(0,22,195),V(21.8,3.8,11.8),darkWood,Enum.Material.Wood)
+ decor("GateFrontBeam",V(0,22,201),V(21.8,1.3,.45),wood,Enum.Material.Wood)
+ decor("GateCrest",V(0,22,201.3),V(3,3,.3),navy,Enum.Material.Fabric)
+ local crest=decor("GateStar",V(0,22,201.5),V(1.3,1.3,.15),gold)
+ crest.CFrame=CFrame.new(crest.Position)*CFrame.Angles(0,0,math.pi/4)
+ roof("GateConnectingRoof",0,195,20,13,24.1,3)
+ for _,z in ipairs({188.75,201.25})do gable(0,z,19.2,24.15,2.8)end
+ decor("GateKingpost",V(0,25.65,201.55),V(.55,2.9,.55),wood,Enum.Material.Wood)
+ for _,side in ipairs({-1,1})do
+  local rafter=decor("GateGableTimber",V(side*5,25.6,201.55),V(math.sqrt(109),.5,.55),wood,Enum.Material.Wood)
+  rafter.CFrame=CFrame.new(rafter.Position)*CFrame.Angles(0,0,-side*math.atan(.3))
+ end
+ -- Elliptical ground treatment has no collision and stays below .18 studs.
+ local court=decor("CourierCourt",V(-65,.09,150),V(.14,48,36),sand,Enum.Material.Sand)
+ court.Shape=Enum.PartType.Cylinder;court.CFrame=CFrame.new(court.Position)*CFrame.Angles(0,0,math.pi/2)
+ -- Open-sided courier shelter; no new furniture on the east approach at Z150.
+ for _,x in ipairs({-79,-51})do for _,z in ipairs({140,160})do
+  decor("ShelterFoot",V(x,.5,z),V(1.6,1,1.6),pale,Enum.Material.Slate)
+  decor("ShelterPost",V(x,5,z),V(1.1,10,1.1),darkWood,Enum.Material.Wood)
+ end end
+ for _,z in ipairs({140,160})do decor("ShelterCrossBeam",V(-65,10,z),V(31,1,1.2),wood,Enum.Material.Wood)end
+ for _,x in ipairs({-79,-51})do decor("ShelterSideBeam",V(x,10,150),V(1.2,1,23),wood,Enum.Material.Wood)end
+ roof("ShelterRoof",-65,150,34,26,10.6,5)
+ for _,z in ipairs({140,160})do for _,side in ipairs({-1,1})do
+  local brace=decor("ShelterBrace",V(-65+side*12.5,9.4,z),V(3.4,.55,.6),wood,Enum.Material.Wood)
+  brace.CFrame=CFrame.new(brace.Position)*CFrame.Angles(0,0,side*math.pi/5)
+ end end
+ for _,side in ipairs({-1,1})do
+  local rafter=decor("ShelterGable",V(-65+side*8.5,13.1,163),V(math.sqrt(314),.6,.6),wood,Enum.Material.Wood)
+  rafter.CFrame=CFrame.new(rafter.Position)*CFrame.Angles(0,0,-side*math.atan(5/17))
+ end
+ for _,x in ipairs({-77,-53})do
+  decor("ShelterCloth",V(x,8.7,161.2),V(3,2.6,.16),navy,Enum.Material.Fabric)
+  decor("ShelterHem",V(x,7.4,161.3),V(3,.18,.12),gold)
+ end
+ decor("CounterBody",V(-65,1.8,142),V(13.9,3.6,2.9),darkWood,Enum.Material.Wood)
+ decor("CounterTop",V(-65,3.95,142),V(14,.25,3),wood,Enum.Material.Wood)
+ for i=0,2 do
+  decor("CourierLetters",V(-68+i*1.6,4.13+i*.06,142),V(1.25,.1,.85),Color3.fromRGB(224,210,170))
+  decor("LetterSeal",V(-68+i*1.6,4.2+i*.06,142),V(.2,.04,.2),gold)
+ end
+ for i=1,3 do
+  local z=141+i*6
+  decor("SupplyBox",V(-83,2,z),V(3.9,3.9,3.9),wood,Enum.Material.Wood)
+  for _,side in ipairs({-1,1})do decor("CrateBand",V(-83+side*1.2,2,z+2),V(.24,4,.15),darkWood,Enum.Material.Wood)end
+ end
+ -- Low courtyard pavers stay well outside the first dodge exercise envelope.
+ for row=0,3 do for col=0,5 do
+  decor("CourtPaver",V(-77+col*5,.11,164+row*2.8),V(4.4,.14,2.3),if (row+col)%2==0 then pale else sand,Enum.Material.Slate)
+ end end
+ stage="Landscape"
+ -- Native spherical crowns replace box foliage at the eight original anchors.
+ for _,pos in ipairs({V(-120,0,180),V(120,0,170),V(-115,0,100),V(120,0,35),V(-120,0,-35),V(120,0,-115),V(-100,0,-190),V(100,0,-190)})do
+  local trunk=decor("TreeBark",pos+V(0,5,0),V(10,3.3,3.3),darkWood,Enum.Material.Wood)
+  trunk.Shape=Enum.PartType.Cylinder;trunk.CFrame=CFrame.new(trunk.Position)*CFrame.Angles(0,0,math.pi/2)
+  for _,side in ipairs({-1,1})do
+   local branch=decor("TreeBranch",pos+V(side*2.3,9.5,0),V(6,.9,.9),darkWood,Enum.Material.Wood)
+   branch.CFrame=CFrame.new(branch.Position)*CFrame.Angles(0,0,side*.65)
+  end
+  for i=0,4 do
+   local angle=i*math.pi*2/5
+   local crown=decor("LeafCluster",pos+V(math.cos(angle)*4.5,13+i%2*2,math.sin(angle)*4.5),V(11,10,11),if i%2==0 then Color3.fromRGB(56,104,67)else Color3.fromRGB(76,123,74),Enum.Material.Grass)
+   crown.Shape=Enum.PartType.Ball
+  end
+  local top=decor("TreeTop",pos+V(0,20,0),V(10,11,10),Color3.fromRGB(85,132,78),Enum.Material.Grass);top.Shape=Enum.PartType.Ball
+ end
+ for _,pos in ipairs({V(-38,0,210),V(38,0,210),V(-97,0,169),V(102,0,190)})do
+  for i=0,2 do
+   local rock=decor("ArrivalRock",pos+V(i*1.5,1+i*.25,math.sin(i*2)*1.8),V(3,2+i*.5,2.6),pale,Enum.Material.Slate)
+   rock.Shape=Enum.PartType.Ball
+  end
+  for i=0,1 do
+   local shrub=decor("ArrivalPlant",pos+V(-2-i*2,1.7,2+i),V(4,3.4,3.6),Color3.fromRGB(58,105,70),Enum.Material.Grass)
+   shrub.Shape=Enum.PartType.Ball
+  end
+ end
  stage="TrainingYard"
  part("TrainingCourt",V(65,.04,90),V(56,.08,42),sand,false)
  for _,x in ipairs({50,65,80})do

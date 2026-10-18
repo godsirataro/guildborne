@@ -1,0 +1,4 @@
+C:\Work\MySelf\Guildborne-novice-entry\production\world\novice-entry\render_geometry.py:20: DeprecationWarning: 'Material.use_nodes' is expected to be removed in Blender 6.0
+  mat=bpy.data.materials.new(part['material']+'_'+str(len(materials)));mat.use_nodes=True
+C:\Work\MySelf\Guildborne-novice-entry\production\world\novice-entry\render_geometry.py:35: DeprecationWarning: 'World.use_nodes' is expected to be removed in Blender 6.0
+  scene.world=bpy.data.worlds.new('SourcePreviewSky');scene.world.use_nodes=True

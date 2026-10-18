@@ -1,6 +1,10 @@
 """Export the original Roblox Chapter 00 planning geometry as an editable Blender scene."""
 from pathlib import Path
 import bpy,json
+import sys, runpy
+if '--geometry' in sys.argv:
+ runpy.run_path(str(Path(__file__).resolve().parents[1]/'production/world/novice-entry/render_geometry.py'),run_name='__main__')
+ raise SystemExit(0)
 from mathutils import Vector
 ROOT=Path(__file__).resolve().parents[1];OUT=ROOT/'assets/uat01/crown-road'
 data=json.loads((OUT/'geometry.json').read_text(encoding='utf-8'))

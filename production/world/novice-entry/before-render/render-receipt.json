@@ -1,0 +1,49 @@
+{
+  "evidence": "BLENDER_SOURCE_PREVIEW_NOT_STUDIO",
+  "input": "C:\\Work\\MySelf\\Guildborne-novice-entry\\production\\world\\novice-entry\\before.json",
+  "views": {
+    "entry": [
+      [
+        30,
+        22,
+        244
+      ],
+      [
+        -15,
+        10,
+        165
+      ]
+    ],
+    "courier": [
+      [
+        -34,
+        18,
+        182
+      ],
+      [
+        -65,
+        6,
+        149
+      ]
+    ],
+    "overview": [
+      [
+        220,
+        250,
+        350
+      ],
+      [
+        0,
+        0,
+        100
+      ]
+    ]
+  },
+  "resolution": [
+    1440,
+    900
+  ],
+  "lensMm": 32,
+  "runtimeActorsIncluded": false,
+  "visibleParts": 104
+}

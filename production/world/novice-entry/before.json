@@ -1,0 +1,4647 @@
+{
+  "evidence": "OFFLINE_SOURCE_GEOMETRY_NOT_STUDIO",
+  "streaming": "ModelStreamingMode.Persistent",
+  "parts": [
+    {
+      "name": "Island",
+      "className": "Part",
+      "stage": "Landscape",
+      "marker": false,
+      "shape": "Block",
+      "material": "Plastic",
+      "transparency": 0.0,
+      "collision": true,
+      "query": true,
+      "touch": false,
+      "anchored": true,
+      "position": [
+        0.0,
+        -3.0,
+        0.0
+      ],
+      "size": [
+        300.0,
+        6.0,
+        450.0
+      ],
+      "color": [
+        0.3254901960784314,
+        0.4666666666666667,
+        0.30980392156862746
+      ],
+      "rotation": [
+        1.0,
+        0.0,
+        0.0,
+        0.0,
+        1.0,
+        0.0,
+        0.0,
+        0.0,
+        1.0
+      ]
+    },
+    {
+      "name": "MainRoad",
+      "className": "Part",
+      "stage": "Landscape",
+      "marker": false,
+      "shape": "Block",
+      "material": "Plastic",
+      "transparency": 0.0,
+      "collision": false,
+      "query": false,
+      "touch": false,
+      "anchored": true,
+      "position": [
+        0.0,
+        0.025,
+        10.0
+      ],
+      "size": [
+        20.0,
+        0.05,
+        408.0
+      ],
+      "color": [
+        0.7450980392156863,
+        0.6784313725490196,
+        0.5215686274509804
+      ],
+      "rotation": [
+        1.0,
+        0.0,
+        0.0,
+        0.0,
+        1.0,
+        0.0,
+        0.0,
+        0.0,
+        1.0
+      ]
+    },
+    {
+      "name": "CrossPath",
+      "className": "Part",
+      "stage": "Landscape",
+      "marker": false,
+      "shape": "Block",
+      "material": "Plastic",
+      "transparency": 0.0,
+      "collision": false,
+      "query": false,
+      "touch": false,
+      "anchored": true,
+      "position": [
+        0.0,
+        0.03,
+        150.0
+      ],
+      "size": [
+        160.0,
+        0.06,
+        14.0
+      ],
+      "color": [
+        0.7450980392156863,
+        0.6784313725490196,
+        0.5215686274509804
+      ],
+      "rotation": [
+        1.0,
+        0.0,
+        0.0,
+        0.0,
+        1.0,
+        0.0,
+        0.0,
+        0.0,
+        1.0
+      ]
+    },
+    {
+      "name": "CrossPath",
+      "className": "Part",
+      "stage": "Landscape",
+      "marker": false,
+      "shape": "Block",
+      "material": "Plastic",
+      "transparency": 0.0,
+      "collision": false,
+      "query": false,
+      "touch": false,
+      "anchored": true,
+      "position": [
+        0.0,
+        0.03,
+        90.0
+      ],
+      "size": [
+        160.0,
+        0.06,
+        14.0
+      ],
+      "color": [
+        0.7450980392156863,
+        0.6784313725490196,
+        0.5215686274509804
+      ],
+      "rotation": [
+        1.0,
+        0.0,
+        0.0,
+        0.0,
+        1.0,
+        0.0,
+        0.0,
+        0.0,
+        1.0
+      ]
+    },
+    {
+      "name": "CrossPath",
+      "className": "Part",
+      "stage": "Landscape",
+      "marker": false,
+      "shape": "Block",
+      "material": "Plastic",
+      "transparency": 0.0,
+      "collision": false,
+      "query": false,
+      "touch": false,
+      "anchored": true,
+      "position": [
+        0.0,
+        0.03,
+        25.0
+      ],
+      "size": [
+        160.0,
+        0.06,
+        14.0
+      ],
+      "color": [
+        0.7450980392156863,
+        0.6784313725490196,
+        0.5215686274509804
+      ],
+      "rotation": [
+        1.0,
+        0.0,
+        0.0,
+        0.0,
+        1.0,
+        0.0,
+        0.0,
+        0.0,
+        1.0
+      ]
+    },
+    {
+      "name": "CrossPath",
+      "className": "Part",
+      "stage": "Landscape",
+      "marker": false,
+      "shape": "Block",
+      "material": "Plastic",
+      "transparency": 0.0,
+      "collision": false,
+      "query": false,
+      "touch": false,
+      "anchored": true,
+      "position": [
+        0.0,
+        0.03,
+        -40.0
+      ],
+      "size": [
+        160.0,
+        0.06,
+        14.0
+      ],
+      "color": [
+        0.7450980392156863,
+        0.6784313725490196,
+        0.5215686274509804
+      ],
+      "rotation": [
+        1.0,
+        0.0,
+        0.0,
+        0.0,
+        1.0,
+        0.0,
+        0.0,
+        0.0,
+        1.0
+      ]
+    },
+    {
+      "name": "CrossPath",
+      "className": "Part",
+      "stage": "Landscape",
+      "marker": false,
+      "shape": "Block",
+      "material": "Plastic",
+      "transparency": 0.0,
+      "collision": false,
+      "query": false,
+      "touch": false,
+      "anchored": true,
+      "position": [
+        0.0,
+        0.03,
+        -105.0
+      ],
+      "size": [
+        160.0,
+        0.06,
+        14.0
+      ],
+      "color": [
+        0.7450980392156863,
+        0.6784313725490196,
+        0.5215686274509804
+      ],
+      "rotation": [
+        1.0,
+        0.0,
+        0.0,
+        0.0,
+        1.0,
+        0.0,
+        0.0,
+        0.0,
+        1.0
+      ]
+    },
+    {
+      "name": "CoastEdge",
+      "className": "Part",
+      "stage": "Landscape",
+      "marker": false,
+      "shape": "Block",
+      "material": "Plastic",
+      "transparency": 0.0,
+      "collision": true,
+      "query": true,
+      "touch": false,
+      "anchored": true,
+      "position": [
+        -145.0,
+        -1.0,
+        0.0
+      ],
+      "size": [
+        10.0,
+        4.0,
+        450.0
+      ],
+      "color": [
+        0.8392156862745098,
+        0.796078431372549,
+        0.6823529411764706
+      ],
+      "rotation": [
+        1.0,
+        0.0,
+        0.0,
+        0.0,
+        1.0,
+        0.0,
+        0.0,
+        0.0,
+        1.0
+      ]
+    },
+    {
+      "name": "CoastEdge",
+      "className": "Part",
+      "stage": "Landscape",
+      "marker": false,
+      "shape": "Block",
+      "material": "Plastic",
+      "transparency": 0.0,
+      "collision": true,
+      "query": true,
+      "touch": false,
+      "anchored": true,
+      "position": [
+        145.0,
+        -1.0,
+        0.0
+      ],
+      "size": [
+        10.0,
+        4.0,
+        450.0
+      ],
+      "color": [
+        0.8392156862745098,
+        0.796078431372549,
+        0.6823529411764706
+      ],
+      "rotation": [
+        1.0,
+        0.0,
+        0.0,
+        0.0,
+        1.0,
+        0.0,
+        0.0,
+        0.0,
+        1.0
+      ]
+    },
+    {
+      "name": "TreeTrunk",
+      "className": "Part",
+      "stage": "Landscape",
+      "marker": false,
+      "shape": "Block",
+      "material": "Plastic",
+      "transparency": 0.0,
+      "collision": true,
+      "query": true,
+      "touch": false,
+      "anchored": true,
+      "position": [
+        -120.0,
+        5.0,
+        180.0
+      ],
+      "size": [
+        3.0,
+        10.0,
+        3.0
+      ],
+      "color": [
+        0.4117647058823529,
+        0.27450980392156865,
+        0.1803921568627451
+      ],
+      "rotation": [
+        1.0,
+        0.0,
+        0.0,
+        0.0,
+        1.0,
+        0.0,
+        0.0,
+        0.0,
+        1.0
+      ]
+    },
+    {
+      "name": "TreeCanopy",
+      "className": "Part",
+      "stage": "Landscape",
+      "marker": false,
+      "shape": "Block",
+      "material": "Plastic",
+      "transparency": 0.0,
+      "collision": false,
+      "query": false,
+      "touch": false,
+      "anchored": true,
+      "position": [
+        -120.0,
+        12.0,
+        180.0
+      ],
+      "size": [
+        16.0,
+        12.0,
+        16.0
+      ],
+      "color": [
+        0.1843137254901961,
+        0.4117647058823529,
+        0.2823529411764706
+      ],
+      "rotation": [
+        1.0,
+        0.0,
+        0.0,
+        0.0,
+        1.0,
+        0.0,
+        0.0,
+        0.0,
+        1.0
+      ]
+    },
+    {
+      "name": "TreeCrown",
+      "className": "Part",
+      "stage": "Landscape",
+      "marker": false,
+      "shape": "Block",
+      "material": "Plastic",
+      "transparency": 0.0,
+      "collision": false,
+      "query": false,
+      "touch": false,
+      "anchored": true,
+      "position": [
+        -120.0,
+        20.0,
+        180.0
+      ],
+      "size": [
+        11.0,
+        8.0,
+        11.0
+      ],
+      "color": [
+        0.2549019607843137,
+        0.5254901960784314,
+        0.3215686274509804
+      ],
+      "rotation": [
+        1.0,
+        0.0,
+        0.0,
+        0.0,
+        1.0,
+        0.0,
+        0.0,
+        0.0,
+        1.0
+      ]
+    },
+    {
+      "name": "TreeTrunk",
+      "className": "Part",
+      "stage": "Landscape",
+      "marker": false,
+      "shape": "Block",
+      "material": "Plastic",
+      "transparency": 0.0,
+      "collision": true,
+      "query": true,
+      "touch": false,
+      "anchored": true,
+      "position": [
+        120.0,
+        5.0,
+        170.0
+      ],
+      "size": [
+        3.0,
+        10.0,
+        3.0
+      ],
+      "color": [
+        0.4117647058823529,
+        0.27450980392156865,
+        0.1803921568627451
+      ],
+      "rotation": [
+        1.0,
+        0.0,
+        0.0,
+        0.0,
+        1.0,
+        0.0,
+        0.0,
+        0.0,
+        1.0
+      ]
+    },
+    {
+      "name": "TreeCanopy",
+      "className": "Part",
+      "stage": "Landscape",
+      "marker": false,
+      "shape": "Block",
+      "material": "Plastic",
+      "transparency": 0.0,
+      "collision": false,
+      "query": false,
+      "touch": false,
+      "anchored": true,
+      "position": [
+        120.0,
+        12.0,
+        170.0
+      ],
+      "size": [
+        16.0,
+        12.0,
+        16.0
+      ],
+      "color": [
+        0.1843137254901961,
+        0.4117647058823529,
+        0.2823529411764706
+      ],
+      "rotation": [
+        1.0,
+        0.0,
+        0.0,
+        0.0,
+        1.0,
+        0.0,
+        0.0,
+        0.0,
+        1.0
+      ]
+    },
+    {
+      "name": "TreeCrown",
+      "className": "Part",
+      "stage": "Landscape",
+      "marker": false,
+      "shape": "Block",
+      "material": "Plastic",
+      "transparency": 0.0,
+      "collision": false,
+      "query": false,
+      "touch": false,
+      "anchored": true,
+      "position": [
+        120.0,
+        20.0,
+        170.0
+      ],
+      "size": [
+        11.0,
+        8.0,
+        11.0
+      ],
+      "color": [
+        0.2549019607843137,
+        0.5254901960784314,
+        0.3215686274509804
+      ],
+      "rotation": [
+        1.0,
+        0.0,
+        0.0,
+        0.0,
+        1.0,
+        0.0,
+        0.0,
+        0.0,
+        1.0
+      ]
+    },
+    {
+      "name": "TreeTrunk",
+      "className": "Part",
+      "stage": "Landscape",
+      "marker": false,
+      "shape": "Block",
+      "material": "Plastic",
+      "transparency": 0.0,
+      "collision": true,
+      "query": true,
+      "touch": false,
+      "anchored": true,
+      "position": [
+        -115.0,
+        5.0,
+        100.0
+      ],
+      "size": [
+        3.0,
+        10.0,
+        3.0
+      ],
+      "color": [
+        0.4117647058823529,
+        0.27450980392156865,
+        0.1803921568627451
+      ],
+      "rotation": [
+        1.0,
+        0.0,
+        0.0,
+        0.0,
+        1.0,
+        0.0,
+        0.0,
+        0.0,
+        1.0
+      ]
+    },
+    {
+      "name": "TreeCanopy",
+      "className": "Part",
+      "stage": "Landscape",
+      "marker": false,
+      "shape": "Block",
+      "material": "Plastic",
+      "transparency": 0.0,
+      "collision": false,
+      "query": false,
+      "touch": false,
+      "anchored": true,
+      "position": [
+        -115.0,
+        12.0,
+        100.0
+      ],
+      "size": [
+        16.0,
+        12.0,
+        16.0
+      ],
+      "color": [
+        0.1843137254901961,
+        0.4117647058823529,
+        0.2823529411764706
+      ],
+      "rotation": [
+        1.0,
+        0.0,
+        0.0,
+        0.0,
+        1.0,
+        0.0,
+        0.0,
+        0.0,
+        1.0
+      ]
+    },
+    {
+      "name": "TreeCrown",
+      "className": "Part",
+      "stage": "Landscape",
+      "marker": false,
+      "shape": "Block",
+      "material": "Plastic",
+      "transparency": 0.0,
+      "collision": false,
+      "query": false,
+      "touch": false,
+      "anchored": true,
+      "position": [
+        -115.0,
+        20.0,
+        100.0
+      ],
+      "size": [
+        11.0,
+        8.0,
+        11.0
+      ],
+      "color": [
+        0.2549019607843137,
+        0.5254901960784314,
+        0.3215686274509804
+      ],
+      "rotation": [
+        1.0,
+        0.0,
+        0.0,
+        0.0,
+        1.0,
+        0.0,
+        0.0,
+        0.0,
+        1.0
+      ]
+    },
+    {
+      "name": "TreeTrunk",
+      "className": "Part",
+      "stage": "Landscape",
+      "marker": false,
+      "shape": "Block",
+      "material": "Plastic",
+      "transparency": 0.0,
+      "collision": true,
+      "query": true,
+      "touch": false,
+      "anchored": true,
+      "position": [
+        120.0,
+        5.0,
+        35.0
+      ],
+      "size": [
+        3.0,
+        10.0,
+        3.0
+      ],
+      "color": [
+        0.4117647058823529,
+        0.27450980392156865,
+        0.1803921568627451
+      ],
+      "rotation": [
+        1.0,
+        0.0,
+        0.0,
+        0.0,
+        1.0,
+        0.0,
+        0.0,
+        0.0,
+        1.0
+      ]
+    },
+    {
+      "name": "TreeCanopy",
+      "className": "Part",
+      "stage": "Landscape",
+      "marker": false,
+      "shape": "Block",
+      "material": "Plastic",
+      "transparency": 0.0,
+      "collision": false,
+      "query": false,
+      "touch": false,
+      "anchored": true,
+      "position": [
+        120.0,
+        12.0,
+        35.0
+      ],
+      "size": [
+        16.0,
+        12.0,
+        16.0
+      ],
+      "color": [
+        0.1843137254901961,
+        0.4117647058823529,
+        0.2823529411764706
+      ],
+      "rotation": [
+        1.0,
+        0.0,
+        0.0,
+        0.0,
+        1.0,
+        0.0,
+        0.0,
+        0.0,
+        1.0
+      ]
+    },
+    {
+      "name": "TreeCrown",
+      "className": "Part",
+      "stage": "Landscape",
+      "marker": false,
+      "shape": "Block",
+      "material": "Plastic",
+      "transparency": 0.0,
+      "collision": false,
+      "query": false,
+      "touch": false,
+      "anchored": true,
+      "position": [
+        120.0,
+        20.0,
+        35.0
+      ],
+      "size": [
+        11.0,
+        8.0,
+        11.0
+      ],
+      "color": [
+        0.2549019607843137,
+        0.5254901960784314,
+        0.3215686274509804
+      ],
+      "rotation": [
+        1.0,
+        0.0,
+        0.0,
+        0.0,
+        1.0,
+        0.0,
+        0.0,
+        0.0,
+        1.0
+      ]
+    },
+    {
+      "name": "TreeTrunk",
+      "className": "Part",
+      "stage": "Landscape",
+      "marker": false,
+      "shape": "Block",
+      "material": "Plastic",
+      "transparency": 0.0,
+      "collision": true,
+      "query": true,
+      "touch": false,
+      "anchored": true,
+      "position": [
+        -120.0,
+        5.0,
+        -35.0
+      ],
+      "size": [
+        3.0,
+        10.0,
+        3.0
+      ],
+      "color": [
+        0.4117647058823529,
+        0.27450980392156865,
+        0.1803921568627451
+      ],
+      "rotation": [
+        1.0,
+        0.0,
+        0.0,
+        0.0,
+        1.0,
+        0.0,
+        0.0,
+        0.0,
+        1.0
+      ]
+    },
+    {
+      "name": "TreeCanopy",
+      "className": "Part",
+      "stage": "Landscape",
+      "marker": false,
+      "shape": "Block",
+      "material": "Plastic",
+      "transparency": 0.0,
+      "collision": false,
+      "query": false,
+      "touch": false,
+      "anchored": true,
+      "position": [
+        -120.0,
+        12.0,
+        -35.0
+      ],
+      "size": [
+        16.0,
+        12.0,
+        16.0
+      ],
+      "color": [
+        0.1843137254901961,
+        0.4117647058823529,
+        0.2823529411764706
+      ],
+      "rotation": [
+        1.0,
+        0.0,
+        0.0,
+        0.0,
+        1.0,
+        0.0,
+        0.0,
+        0.0,
+        1.0
+      ]
+    },
+    {
+      "name": "TreeCrown",
+      "className": "Part",
+      "stage": "Landscape",
+      "marker": false,
+      "shape": "Block",
+      "material": "Plastic",
+      "transparency": 0.0,
+      "collision": false,
+      "query": false,
+      "touch": false,
+      "anchored": true,
+      "position": [
+        -120.0,
+        20.0,
+        -35.0
+      ],
+      "size": [
+        11.0,
+        8.0,
+        11.0
+      ],
+      "color": [
+        0.2549019607843137,
+        0.5254901960784314,
+        0.3215686274509804
+      ],
+      "rotation": [
+        1.0,
+        0.0,
+        0.0,
+        0.0,
+        1.0,
+        0.0,
+        0.0,
+        0.0,
+        1.0
+      ]
+    },
+    {
+      "name": "TreeTrunk",
+      "className": "Part",
+      "stage": "Landscape",
+      "marker": false,
+      "shape": "Block",
+      "material": "Plastic",
+      "transparency": 0.0,
+      "collision": true,
+      "query": true,
+      "touch": false,
+      "anchored": true,
+      "position": [
+        120.0,
+        5.0,
+        -115.0
+      ],
+      "size": [
+        3.0,
+        10.0,
+        3.0
+      ],
+      "color": [
+        0.4117647058823529,
+        0.27450980392156865,
+        0.1803921568627451
+      ],
+      "rotation": [
+        1.0,
+        0.0,
+        0.0,
+        0.0,
+        1.0,
+        0.0,
+        0.0,
+        0.0,
+        1.0
+      ]
+    },
+    {
+      "name": "TreeCanopy",
+      "className": "Part",
+      "stage": "Landscape",
+      "marker": false,
+      "shape": "Block",
+      "material": "Plastic",
+      "transparency": 0.0,
+      "collision": false,
+      "query": false,
+      "touch": false,
+      "anchored": true,
+      "position": [
+        120.0,
+        12.0,
+        -115.0
+      ],
+      "size": [
+        16.0,
+        12.0,
+        16.0
+      ],
+      "color": [
+        0.1843137254901961,
+        0.4117647058823529,
+        0.2823529411764706
+      ],
+      "rotation": [
+        1.0,
+        0.0,
+        0.0,
+        0.0,
+        1.0,
+        0.0,
+        0.0,
+        0.0,
+        1.0
+      ]
+    },
+    {
+      "name": "TreeCrown",
+      "className": "Part",
+      "stage": "Landscape",
+      "marker": false,
+      "shape": "Block",
+      "material": "Plastic",
+      "transparency": 0.0,
+      "collision": false,
+      "query": false,
+      "touch": false,
+      "anchored": true,
+      "position": [
+        120.0,
+        20.0,
+        -115.0
+      ],
+      "size": [
+        11.0,
+        8.0,
+        11.0
+      ],
+      "color": [
+        0.2549019607843137,
+        0.5254901960784314,
+        0.3215686274509804
+      ],
+      "rotation": [
+        1.0,
+        0.0,
+        0.0,
+        0.0,
+        1.0,
+        0.0,
+        0.0,
+        0.0,
+        1.0
+      ]
+    },
+    {
+      "name": "TreeTrunk",
+      "className": "Part",
+      "stage": "Landscape",
+      "marker": false,
+      "shape": "Block",
+      "material": "Plastic",
+      "transparency": 0.0,
+      "collision": true,
+      "query": true,
+      "touch": false,
+      "anchored": true,
+      "position": [
+        -100.0,
+        5.0,
+        -190.0
+      ],
+      "size": [
+        3.0,
+        10.0,
+        3.0
+      ],
+      "color": [
+        0.4117647058823529,
+        0.27450980392156865,
+        0.1803921568627451
+      ],
+      "rotation": [
+        1.0,
+        0.0,
+        0.0,
+        0.0,
+        1.0,
+        0.0,
+        0.0,
+        0.0,
+        1.0
+      ]
+    },
+    {
+      "name": "TreeCanopy",
+      "className": "Part",
+      "stage": "Landscape",
+      "marker": false,
+      "shape": "Block",
+      "material": "Plastic",
+      "transparency": 0.0,
+      "collision": false,
+      "query": false,
+      "touch": false,
+      "anchored": true,
+      "position": [
+        -100.0,
+        12.0,
+        -190.0
+      ],
+      "size": [
+        16.0,
+        12.0,
+        16.0
+      ],
+      "color": [
+        0.1843137254901961,
+        0.4117647058823529,
+        0.2823529411764706
+      ],
+      "rotation": [
+        1.0,
+        0.0,
+        0.0,
+        0.0,
+        1.0,
+        0.0,
+        0.0,
+        0.0,
+        1.0
+      ]
+    },
+    {
+      "name": "TreeCrown",
+      "className": "Part",
+      "stage": "Landscape",
+      "marker": false,
+      "shape": "Block",
+      "material": "Plastic",
+      "transparency": 0.0,
+      "collision": false,
+      "query": false,
+      "touch": false,
+      "anchored": true,
+      "position": [
+        -100.0,
+        20.0,
+        -190.0
+      ],
+      "size": [
+        11.0,
+        8.0,
+        11.0
+      ],
+      "color": [
+        0.2549019607843137,
+        0.5254901960784314,
+        0.3215686274509804
+      ],
+      "rotation": [
+        1.0,
+        0.0,
+        0.0,
+        0.0,
+        1.0,
+        0.0,
+        0.0,
+        0.0,
+        1.0
+      ]
+    },
+    {
+      "name": "TreeTrunk",
+      "className": "Part",
+      "stage": "Landscape",
+      "marker": false,
+      "shape": "Block",
+      "material": "Plastic",
+      "transparency": 0.0,
+      "collision": true,
+      "query": true,
+      "touch": false,
+      "anchored": true,
+      "position": [
+        100.0,
+        5.0,
+        -190.0
+      ],
+      "size": [
+        3.0,
+        10.0,
+        3.0
+      ],
+      "color": [
+        0.4117647058823529,
+        0.27450980392156865,
+        0.1803921568627451
+      ],
+      "rotation": [
+        1.0,
+        0.0,
+        0.0,
+        0.0,
+        1.0,
+        0.0,
+        0.0,
+        0.0,
+        1.0
+      ]
+    },
+    {
+      "name": "TreeCanopy",
+      "className": "Part",
+      "stage": "Landscape",
+      "marker": false,
+      "shape": "Block",
+      "material": "Plastic",
+      "transparency": 0.0,
+      "collision": false,
+      "query": false,
+      "touch": false,
+      "anchored": true,
+      "position": [
+        100.0,
+        12.0,
+        -190.0
+      ],
+      "size": [
+        16.0,
+        12.0,
+        16.0
+      ],
+      "color": [
+        0.1843137254901961,
+        0.4117647058823529,
+        0.2823529411764706
+      ],
+      "rotation": [
+        1.0,
+        0.0,
+        0.0,
+        0.0,
+        1.0,
+        0.0,
+        0.0,
+        0.0,
+        1.0
+      ]
+    },
+    {
+      "name": "TreeCrown",
+      "className": "Part",
+      "stage": "Landscape",
+      "marker": false,
+      "shape": "Block",
+      "material": "Plastic",
+      "transparency": 0.0,
+      "collision": false,
+      "query": false,
+      "touch": false,
+      "anchored": true,
+      "position": [
+        100.0,
+        20.0,
+        -190.0
+      ],
+      "size": [
+        11.0,
+        8.0,
+        11.0
+      ],
+      "color": [
+        0.2549019607843137,
+        0.5254901960784314,
+        0.3215686274509804
+      ],
+      "rotation": [
+        1.0,
+        0.0,
+        0.0,
+        0.0,
+        1.0,
+        0.0,
+        0.0,
+        0.0,
+        1.0
+      ]
+    },
+    {
+      "name": "CityGateTower",
+      "className": "Part",
+      "stage": "CourierCamp",
+      "marker": false,
+      "shape": "Block",
+      "material": "Plastic",
+      "transparency": 0.0,
+      "collision": true,
+      "query": true,
+      "touch": false,
+      "anchored": true,
+      "position": [
+        -15.0,
+        12.0,
+        195.0
+      ],
+      "size": [
+        10.0,
+        24.0,
+        12.0
+      ],
+      "color": [
+        0.8392156862745098,
+        0.796078431372549,
+        0.6823529411764706
+      ],
+      "rotation": [
+        1.0,
+        0.0,
+        0.0,
+        0.0,
+        1.0,
+        0.0,
+        0.0,
+        0.0,
+        1.0
+      ]
+    },
+    {
+      "name": "GateBanner",
+      "className": "Part",
+      "stage": "CourierCamp",
+      "marker": false,
+      "shape": "Block",
+      "material": "Plastic",
+      "transparency": 0.0,
+      "collision": false,
+      "query": false,
+      "touch": false,
+      "anchored": true,
+      "position": [
+        -15.0,
+        12.0,
+        201.1
+      ],
+      "size": [
+        4.0,
+        9.0,
+        0.2
+      ],
+      "color": [
+        0.12549019607843137,
+        0.2235294117647059,
+        0.3254901960784314
+      ],
+      "rotation": [
+        1.0,
+        0.0,
+        0.0,
+        0.0,
+        1.0,
+        0.0,
+        0.0,
+        0.0,
+        1.0
+      ]
+    },
+    {
+      "name": "BannerCrest",
+      "className": "Part",
+      "stage": "CourierCamp",
+      "marker": false,
+      "shape": "Block",
+      "material": "Plastic",
+      "transparency": 0.0,
+      "collision": false,
+      "query": false,
+      "touch": false,
+      "anchored": true,
+      "position": [
+        -15.0,
+        14.0,
+        201.3
+      ],
+      "size": [
+        2.0,
+        2.0,
+        0.2
+      ],
+      "color": [
+        0.8313725490196079,
+        0.6470588235294118,
+        0.2549019607843137
+      ],
+      "rotation": [
+        1.0,
+        0.0,
+        0.0,
+        0.0,
+        1.0,
+        0.0,
+        0.0,
+        0.0,
+        1.0
+      ]
+    },
+    {
+      "name": "CityGateTower",
+      "className": "Part",
+      "stage": "CourierCamp",
+      "marker": false,
+      "shape": "Block",
+      "material": "Plastic",
+      "transparency": 0.0,
+      "collision": true,
+      "query": true,
+      "touch": false,
+      "anchored": true,
+      "position": [
+        15.0,
+        12.0,
+        195.0
+      ],
+      "size": [
+        10.0,
+        24.0,
+        12.0
+      ],
+      "color": [
+        0.8392156862745098,
+        0.796078431372549,
+        0.6823529411764706
+      ],
+      "rotation": [
+        1.0,
+        0.0,
+        0.0,
+        0.0,
+        1.0,
+        0.0,
+        0.0,
+        0.0,
+        1.0
+      ]
+    },
+    {
+      "name": "GateBanner",
+      "className": "Part",
+      "stage": "CourierCamp",
+      "marker": false,
+      "shape": "Block",
+      "material": "Plastic",
+      "transparency": 0.0,
+      "collision": false,
+      "query": false,
+      "touch": false,
+      "anchored": true,
+      "position": [
+        15.0,
+        12.0,
+        201.1
+      ],
+      "size": [
+        4.0,
+        9.0,
+        0.2
+      ],
+      "color": [
+        0.12549019607843137,
+        0.2235294117647059,
+        0.3254901960784314
+      ],
+      "rotation": [
+        1.0,
+        0.0,
+        0.0,
+        0.0,
+        1.0,
+        0.0,
+        0.0,
+        0.0,
+        1.0
+      ]
+    },
+    {
+      "name": "BannerCrest",
+      "className": "Part",
+      "stage": "CourierCamp",
+      "marker": false,
+      "shape": "Block",
+      "material": "Plastic",
+      "transparency": 0.0,
+      "collision": false,
+      "query": false,
+      "touch": false,
+      "anchored": true,
+      "position": [
+        15.0,
+        14.0,
+        201.3
+      ],
+      "size": [
+        2.0,
+        2.0,
+        0.2
+      ],
+      "color": [
+        0.8313725490196079,
+        0.6470588235294118,
+        0.2549019607843137
+      ],
+      "rotation": [
+        1.0,
+        0.0,
+        0.0,
+        0.0,
+        1.0,
+        0.0,
+        0.0,
+        0.0,
+        1.0
+      ]
+    },
+    {
+      "name": "GateLintel",
+      "className": "Part",
+      "stage": "CourierCamp",
+      "marker": false,
+      "shape": "Block",
+      "material": "Plastic",
+      "transparency": 0.0,
+      "collision": true,
+      "query": true,
+      "touch": false,
+      "anchored": true,
+      "position": [
+        0.0,
+        22.0,
+        195.0
+      ],
+      "size": [
+        22.0,
+        4.0,
+        12.0
+      ],
+      "color": [
+        0.8392156862745098,
+        0.796078431372549,
+        0.6823529411764706
+      ],
+      "rotation": [
+        1.0,
+        0.0,
+        0.0,
+        0.0,
+        1.0,
+        0.0,
+        0.0,
+        0.0,
+        1.0
+      ]
+    },
+    {
+      "name": "CourierPlaza",
+      "className": "Part",
+      "stage": "CourierCamp",
+      "marker": false,
+      "shape": "Block",
+      "material": "Plastic",
+      "transparency": 0.0,
+      "collision": false,
+      "query": false,
+      "touch": false,
+      "anchored": true,
+      "position": [
+        -65.0,
+        0.04,
+        150.0
+      ],
+      "size": [
+        48.0,
+        0.08,
+        36.0
+      ],
+      "color": [
+        0.7450980392156863,
+        0.6784313725490196,
+        0.5215686274509804
+      ],
+      "rotation": [
+        1.0,
+        0.0,
+        0.0,
+        0.0,
+        1.0,
+        0.0,
+        0.0,
+        0.0,
+        1.0
+      ]
+    },
+    {
+      "name": "CanopyPost",
+      "className": "Part",
+      "stage": "CourierCamp",
+      "marker": false,
+      "shape": "Block",
+      "material": "Plastic",
+      "transparency": 0.0,
+      "collision": true,
+      "query": true,
+      "touch": false,
+      "anchored": true,
+      "position": [
+        -79.0,
+        5.0,
+        140.0
+      ],
+      "size": [
+        1.0,
+        10.0,
+        1.0
+      ],
+      "color": [
+        0.4117647058823529,
+        0.27450980392156865,
+        0.1803921568627451
+      ],
+      "rotation": [
+        1.0,
+        0.0,
+        0.0,
+        0.0,
+        1.0,
+        0.0,
+        0.0,
+        0.0,
+        1.0
+      ]
+    },
+    {
+      "name": "CanopyPost",
+      "className": "Part",
+      "stage": "CourierCamp",
+      "marker": false,
+      "shape": "Block",
+      "material": "Plastic",
+      "transparency": 0.0,
+      "collision": true,
+      "query": true,
+      "touch": false,
+      "anchored": true,
+      "position": [
+        -79.0,
+        5.0,
+        160.0
+      ],
+      "size": [
+        1.0,
+        10.0,
+        1.0
+      ],
+      "color": [
+        0.4117647058823529,
+        0.27450980392156865,
+        0.1803921568627451
+      ],
+      "rotation": [
+        1.0,
+        0.0,
+        0.0,
+        0.0,
+        1.0,
+        0.0,
+        0.0,
+        0.0,
+        1.0
+      ]
+    },
+    {
+      "name": "CanopyPost",
+      "className": "Part",
+      "stage": "CourierCamp",
+      "marker": false,
+      "shape": "Block",
+      "material": "Plastic",
+      "transparency": 0.0,
+      "collision": true,
+      "query": true,
+      "touch": false,
+      "anchored": true,
+      "position": [
+        -51.0,
+        5.0,
+        140.0
+      ],
+      "size": [
+        1.0,
+        10.0,
+        1.0
+      ],
+      "color": [
+        0.4117647058823529,
+        0.27450980392156865,
+        0.1803921568627451
+      ],
+      "rotation": [
+        1.0,
+        0.0,
+        0.0,
+        0.0,
+        1.0,
+        0.0,
+        0.0,
+        0.0,
+        1.0
+      ]
+    },
+    {
+      "name": "CanopyPost",
+      "className": "Part",
+      "stage": "CourierCamp",
+      "marker": false,
+      "shape": "Block",
+      "material": "Plastic",
+      "transparency": 0.0,
+      "collision": true,
+      "query": true,
+      "touch": false,
+      "anchored": true,
+      "position": [
+        -51.0,
+        5.0,
+        160.0
+      ],
+      "size": [
+        1.0,
+        10.0,
+        1.0
+      ],
+      "color": [
+        0.4117647058823529,
+        0.27450980392156865,
+        0.1803921568627451
+      ],
+      "rotation": [
+        1.0,
+        0.0,
+        0.0,
+        0.0,
+        1.0,
+        0.0,
+        0.0,
+        0.0,
+        1.0
+      ]
+    },
+    {
+      "name": "CourierCanopy",
+      "className": "Part",
+      "stage": "CourierCamp",
+      "marker": false,
+      "shape": "Block",
+      "material": "Plastic",
+      "transparency": 0.0,
+      "collision": true,
+      "query": true,
+      "touch": false,
+      "anchored": true,
+      "position": [
+        -65.0,
+        10.5,
+        150.0
+      ],
+      "size": [
+        32.0,
+        1.0,
+        24.0
+      ],
+      "color": [
+        0.12549019607843137,
+        0.2235294117647059,
+        0.3254901960784314
+      ],
+      "rotation": [
+        1.0,
+        0.0,
+        0.0,
+        0.0,
+        1.0,
+        0.0,
+        0.0,
+        0.0,
+        1.0
+      ]
+    },
+    {
+      "name": "CourierTable",
+      "className": "Part",
+      "stage": "CourierCamp",
+      "marker": false,
+      "shape": "Block",
+      "material": "Plastic",
+      "transparency": 0.0,
+      "collision": true,
+      "query": true,
+      "touch": false,
+      "anchored": true,
+      "position": [
+        -65.0,
+        2.0,
+        142.0
+      ],
+      "size": [
+        14.0,
+        4.0,
+        3.0
+      ],
+      "color": [
+        0.4117647058823529,
+        0.27450980392156865,
+        0.1803921568627451
+      ],
+      "rotation": [
+        1.0,
+        0.0,
+        0.0,
+        0.0,
+        1.0,
+        0.0,
+        0.0,
+        0.0,
+        1.0
+      ]
+    },
+    {
+      "name": "SupplyCrate",
+      "className": "Part",
+      "stage": "CourierCamp",
+      "marker": false,
+      "shape": "Block",
+      "material": "Plastic",
+      "transparency": 0.0,
+      "collision": true,
+      "query": true,
+      "touch": false,
+      "anchored": true,
+      "position": [
+        -83.0,
+        2.0,
+        147.0
+      ],
+      "size": [
+        4.0,
+        4.0,
+        4.0
+      ],
+      "color": [
+        0.4117647058823529,
+        0.27450980392156865,
+        0.1803921568627451
+      ],
+      "rotation": [
+        1.0,
+        0.0,
+        0.0,
+        0.0,
+        1.0,
+        0.0,
+        0.0,
+        0.0,
+        1.0
+      ]
+    },
+    {
+      "name": "SupplyCrate",
+      "className": "Part",
+      "stage": "CourierCamp",
+      "marker": false,
+      "shape": "Block",
+      "material": "Plastic",
+      "transparency": 0.0,
+      "collision": true,
+      "query": true,
+      "touch": false,
+      "anchored": true,
+      "position": [
+        -83.0,
+        2.0,
+        153.0
+      ],
+      "size": [
+        4.0,
+        4.0,
+        4.0
+      ],
+      "color": [
+        0.4117647058823529,
+        0.27450980392156865,
+        0.1803921568627451
+      ],
+      "rotation": [
+        1.0,
+        0.0,
+        0.0,
+        0.0,
+        1.0,
+        0.0,
+        0.0,
+        0.0,
+        1.0
+      ]
+    },
+    {
+      "name": "SupplyCrate",
+      "className": "Part",
+      "stage": "CourierCamp",
+      "marker": false,
+      "shape": "Block",
+      "material": "Plastic",
+      "transparency": 0.0,
+      "collision": true,
+      "query": true,
+      "touch": false,
+      "anchored": true,
+      "position": [
+        -83.0,
+        2.0,
+        159.0
+      ],
+      "size": [
+        4.0,
+        4.0,
+        4.0
+      ],
+      "color": [
+        0.4117647058823529,
+        0.27450980392156865,
+        0.1803921568627451
+      ],
+      "rotation": [
+        1.0,
+        0.0,
+        0.0,
+        0.0,
+        1.0,
+        0.0,
+        0.0,
+        0.0,
+        1.0
+      ]
+    },
+    {
+      "name": "Arrival",
+      "className": "Part",
+      "stage": "CourierCamp",
+      "marker": true,
+      "shape": "Block",
+      "material": "Plastic",
+      "transparency": 1.0,
+      "collision": false,
+      "query": false,
+      "touch": false,
+      "anchored": true,
+      "position": [
+        0.0,
+        3.0,
+        214.0
+      ],
+      "size": [
+        1.0,
+        0.1,
+        1.0
+      ],
+      "color": [
+        0.8313725490196079,
+        0.6470588235294118,
+        0.2549019607843137
+      ],
+      "rotation": [
+        1.0,
+        0.0,
+        0.0,
+        0.0,
+        1.0,
+        0.0,
+        0.0,
+        0.0,
+        1.0
+      ]
+    },
+    {
+      "name": "CourierCamp",
+      "className": "Part",
+      "stage": "CourierCamp",
+      "marker": true,
+      "shape": "Block",
+      "material": "Plastic",
+      "transparency": 1.0,
+      "collision": false,
+      "query": false,
+      "touch": false,
+      "anchored": true,
+      "position": [
+        -65.0,
+        3.0,
+        153.0
+      ],
+      "size": [
+        1.0,
+        0.1,
+        1.0
+      ],
+      "color": [
+        0.8313725490196079,
+        0.6470588235294118,
+        0.2549019607843137
+      ],
+      "rotation": [
+        1.0,
+        0.0,
+        0.0,
+        0.0,
+        1.0,
+        0.0,
+        0.0,
+        0.0,
+        1.0
+      ]
+    },
+    {
+      "name": "TrainingCourt",
+      "className": "Part",
+      "stage": "TrainingYard",
+      "marker": false,
+      "shape": "Block",
+      "material": "Plastic",
+      "transparency": 0.0,
+      "collision": false,
+      "query": false,
+      "touch": false,
+      "anchored": true,
+      "position": [
+        65.0,
+        0.04,
+        90.0
+      ],
+      "size": [
+        56.0,
+        0.08,
+        42.0
+      ],
+      "color": [
+        0.7450980392156863,
+        0.6784313725490196,
+        0.5215686274509804
+      ],
+      "rotation": [
+        1.0,
+        0.0,
+        0.0,
+        0.0,
+        1.0,
+        0.0,
+        0.0,
+        0.0,
+        1.0
+      ]
+    },
+    {
+      "name": "DummyPost",
+      "className": "Part",
+      "stage": "TrainingYard",
+      "marker": false,
+      "shape": "Block",
+      "material": "Plastic",
+      "transparency": 0.0,
+      "collision": true,
+      "query": true,
+      "touch": false,
+      "anchored": true,
+      "position": [
+        50.0,
+        3.0,
+        80.0
+      ],
+      "size": [
+        1.0,
+        6.0,
+        1.0
+      ],
+      "color": [
+        0.4117647058823529,
+        0.27450980392156865,
+        0.1803921568627451
+      ],
+      "rotation": [
+        1.0,
+        0.0,
+        0.0,
+        0.0,
+        1.0,
+        0.0,
+        0.0,
+        0.0,
+        1.0
+      ]
+    },
+    {
+      "name": "DummyArms",
+      "className": "Part",
+      "stage": "TrainingYard",
+      "marker": false,
+      "shape": "Block",
+      "material": "Plastic",
+      "transparency": 0.0,
+      "collision": true,
+      "query": true,
+      "touch": false,
+      "anchored": true,
+      "position": [
+        50.0,
+        4.0,
+        80.0
+      ],
+      "size": [
+        6.0,
+        1.0,
+        1.0
+      ],
+      "color": [
+        0.4117647058823529,
+        0.27450980392156865,
+        0.1803921568627451
+      ],
+      "rotation": [
+        1.0,
+        0.0,
+        0.0,
+        0.0,
+        1.0,
+        0.0,
+        0.0,
+        0.0,
+        1.0
+      ]
+    },
+    {
+      "name": "DummyHead",
+      "className": "Part",
+      "stage": "TrainingYard",
+      "marker": false,
+      "shape": "Block",
+      "material": "Plastic",
+      "transparency": 0.0,
+      "collision": true,
+      "query": true,
+      "touch": false,
+      "anchored": true,
+      "position": [
+        50.0,
+        7.0,
+        80.0
+      ],
+      "size": [
+        2.0,
+        2.0,
+        2.0
+      ],
+      "color": [
+        0.8313725490196079,
+        0.6470588235294118,
+        0.2549019607843137
+      ],
+      "rotation": [
+        1.0,
+        0.0,
+        0.0,
+        0.0,
+        1.0,
+        0.0,
+        0.0,
+        0.0,
+        1.0
+      ]
+    },
+    {
+      "name": "DummyPost",
+      "className": "Part",
+      "stage": "TrainingYard",
+      "marker": false,
+      "shape": "Block",
+      "material": "Plastic",
+      "transparency": 0.0,
+      "collision": true,
+      "query": true,
+      "touch": false,
+      "anchored": true,
+      "position": [
+        65.0,
+        3.0,
+        80.0
+      ],
+      "size": [
+        1.0,
+        6.0,
+        1.0
+      ],
+      "color": [
+        0.4117647058823529,
+        0.27450980392156865,
+        0.1803921568627451
+      ],
+      "rotation": [
+        1.0,
+        0.0,
+        0.0,
+        0.0,
+        1.0,
+        0.0,
+        0.0,
+        0.0,
+        1.0
+      ]
+    },
+    {
+      "name": "DummyArms",
+      "className": "Part",
+      "stage": "TrainingYard",
+      "marker": false,
+      "shape": "Block",
+      "material": "Plastic",
+      "transparency": 0.0,
+      "collision": true,
+      "query": true,
+      "touch": false,
+      "anchored": true,
+      "position": [
+        65.0,
+        4.0,
+        80.0
+      ],
+      "size": [
+        6.0,
+        1.0,
+        1.0
+      ],
+      "color": [
+        0.4117647058823529,
+        0.27450980392156865,
+        0.1803921568627451
+      ],
+      "rotation": [
+        1.0,
+        0.0,
+        0.0,
+        0.0,
+        1.0,
+        0.0,
+        0.0,
+        0.0,
+        1.0
+      ]
+    },
+    {
+      "name": "DummyHead",
+      "className": "Part",
+      "stage": "TrainingYard",
+      "marker": false,
+      "shape": "Block",
+      "material": "Plastic",
+      "transparency": 0.0,
+      "collision": true,
+      "query": true,
+      "touch": false,
+      "anchored": true,
+      "position": [
+        65.0,
+        7.0,
+        80.0
+      ],
+      "size": [
+        2.0,
+        2.0,
+        2.0
+      ],
+      "color": [
+        0.8313725490196079,
+        0.6470588235294118,
+        0.2549019607843137
+      ],
+      "rotation": [
+        1.0,
+        0.0,
+        0.0,
+        0.0,
+        1.0,
+        0.0,
+        0.0,
+        0.0,
+        1.0
+      ]
+    },
+    {
+      "name": "DummyPost",
+      "className": "Part",
+      "stage": "TrainingYard",
+      "marker": false,
+      "shape": "Block",
+      "material": "Plastic",
+      "transparency": 0.0,
+      "collision": true,
+      "query": true,
+      "touch": false,
+      "anchored": true,
+      "position": [
+        80.0,
+        3.0,
+        80.0
+      ],
+      "size": [
+        1.0,
+        6.0,
+        1.0
+      ],
+      "color": [
+        0.4117647058823529,
+        0.27450980392156865,
+        0.1803921568627451
+      ],
+      "rotation": [
+        1.0,
+        0.0,
+        0.0,
+        0.0,
+        1.0,
+        0.0,
+        0.0,
+        0.0,
+        1.0
+      ]
+    },
+    {
+      "name": "DummyArms",
+      "className": "Part",
+      "stage": "TrainingYard",
+      "marker": false,
+      "shape": "Block",
+      "material": "Plastic",
+      "transparency": 0.0,
+      "collision": true,
+      "query": true,
+      "touch": false,
+      "anchored": true,
+      "position": [
+        80.0,
+        4.0,
+        80.0
+      ],
+      "size": [
+        6.0,
+        1.0,
+        1.0
+      ],
+      "color": [
+        0.4117647058823529,
+        0.27450980392156865,
+        0.1803921568627451
+      ],
+      "rotation": [
+        1.0,
+        0.0,
+        0.0,
+        0.0,
+        1.0,
+        0.0,
+        0.0,
+        0.0,
+        1.0
+      ]
+    },
+    {
+      "name": "DummyHead",
+      "className": "Part",
+      "stage": "TrainingYard",
+      "marker": false,
+      "shape": "Block",
+      "material": "Plastic",
+      "transparency": 0.0,
+      "collision": true,
+      "query": true,
+      "touch": false,
+      "anchored": true,
+      "position": [
+        80.0,
+        7.0,
+        80.0
+      ],
+      "size": [
+        2.0,
+        2.0,
+        2.0
+      ],
+      "color": [
+        0.8313725490196079,
+        0.6470588235294118,
+        0.2549019607843137
+      ],
+      "rotation": [
+        1.0,
+        0.0,
+        0.0,
+        0.0,
+        1.0,
+        0.0,
+        0.0,
+        0.0,
+        1.0
+      ]
+    },
+    {
+      "name": "DodgeWarning",
+      "className": "Part",
+      "stage": "TrainingYard",
+      "marker": false,
+      "shape": "Block",
+      "material": "Plastic",
+      "transparency": 0.0,
+      "collision": false,
+      "query": false,
+      "touch": false,
+      "anchored": true,
+      "position": [
+        65.0,
+        0.1,
+        99.0
+      ],
+      "size": [
+        12.0,
+        0.1,
+        12.0
+      ],
+      "color": [
+        0.8117647058823529,
+        0.37254901960784315,
+        0.21568627450980393
+      ],
+      "rotation": [
+        1.0,
+        0.0,
+        0.0,
+        0.0,
+        1.0,
+        0.0,
+        0.0,
+        0.0,
+        1.0
+      ]
+    },
+    {
+      "name": "TrainingYard",
+      "className": "Part",
+      "stage": "TrainingYard",
+      "marker": true,
+      "shape": "Block",
+      "material": "Plastic",
+      "transparency": 1.0,
+      "collision": false,
+      "query": false,
+      "touch": false,
+      "anchored": true,
+      "position": [
+        65.0,
+        3.0,
+        90.0
+      ],
+      "size": [
+        1.0,
+        0.1,
+        1.0
+      ],
+      "color": [
+        0.8313725490196079,
+        0.6470588235294118,
+        0.2549019607843137
+      ],
+      "rotation": [
+        1.0,
+        0.0,
+        0.0,
+        0.0,
+        1.0,
+        0.0,
+        0.0,
+        0.0,
+        1.0
+      ]
+    },
+    {
+      "name": "CaravanCourt",
+      "className": "Part",
+      "stage": "CaravanBend",
+      "marker": false,
+      "shape": "Block",
+      "material": "Plastic",
+      "transparency": 0.0,
+      "collision": false,
+      "query": false,
+      "touch": false,
+      "anchored": true,
+      "position": [
+        -65.0,
+        0.04,
+        25.0
+      ],
+      "size": [
+        60.0,
+        0.08,
+        48.0
+      ],
+      "color": [
+        0.7450980392156863,
+        0.6784313725490196,
+        0.5215686274509804
+      ],
+      "rotation": [
+        1.0,
+        0.0,
+        0.0,
+        0.0,
+        1.0,
+        0.0,
+        0.0,
+        0.0,
+        1.0
+      ]
+    },
+    {
+      "name": "CartBed",
+      "className": "Part",
+      "stage": "CaravanBend",
+      "marker": false,
+      "shape": "Block",
+      "material": "Plastic",
+      "transparency": 0.0,
+      "collision": true,
+      "query": true,
+      "touch": false,
+      "anchored": true,
+      "position": [
+        -65.0,
+        2.0,
+        16.0
+      ],
+      "size": [
+        9.0,
+        1.0,
+        14.0
+      ],
+      "color": [
+        0.4117647058823529,
+        0.27450980392156865,
+        0.1803921568627451
+      ],
+      "rotation": [
+        1.0,
+        0.0,
+        0.0,
+        0.0,
+        1.0,
+        0.0,
+        0.0,
+        0.0,
+        1.0
+      ]
+    },
+    {
+      "name": "CartWheel",
+      "className": "Part",
+      "stage": "CaravanBend",
+      "marker": false,
+      "shape": "Block",
+      "material": "Plastic",
+      "transparency": 0.0,
+      "collision": true,
+      "query": true,
+      "touch": false,
+      "anchored": true,
+      "position": [
+        -71.0,
+        2.0,
+        11.0
+      ],
+      "size": [
+        1.0,
+        4.0,
+        4.0
+      ],
+      "color": [
+        0.22745098039215686,
+        0.22745098039215686,
+        0.2196078431372549
+      ],
+      "rotation": [
+        1.0,
+        0.0,
+        0.0,
+        0.0,
+        1.0,
+        0.0,
+        0.0,
+        0.0,
+        1.0
+      ]
+    },
+    {
+      "name": "CartWheel",
+      "className": "Part",
+      "stage": "CaravanBend",
+      "marker": false,
+      "shape": "Block",
+      "material": "Plastic",
+      "transparency": 0.0,
+      "collision": true,
+      "query": true,
+      "touch": false,
+      "anchored": true,
+      "position": [
+        -71.0,
+        2.0,
+        21.0
+      ],
+      "size": [
+        1.0,
+        4.0,
+        4.0
+      ],
+      "color": [
+        0.22745098039215686,
+        0.22745098039215686,
+        0.2196078431372549
+      ],
+      "rotation": [
+        1.0,
+        0.0,
+        0.0,
+        0.0,
+        1.0,
+        0.0,
+        0.0,
+        0.0,
+        1.0
+      ]
+    },
+    {
+      "name": "CartWheel",
+      "className": "Part",
+      "stage": "CaravanBend",
+      "marker": false,
+      "shape": "Block",
+      "material": "Plastic",
+      "transparency": 0.0,
+      "collision": true,
+      "query": true,
+      "touch": false,
+      "anchored": true,
+      "position": [
+        -59.0,
+        2.0,
+        11.0
+      ],
+      "size": [
+        1.0,
+        4.0,
+        4.0
+      ],
+      "color": [
+        0.22745098039215686,
+        0.22745098039215686,
+        0.2196078431372549
+      ],
+      "rotation": [
+        1.0,
+        0.0,
+        0.0,
+        0.0,
+        1.0,
+        0.0,
+        0.0,
+        0.0,
+        1.0
+      ]
+    },
+    {
+      "name": "CartWheel",
+      "className": "Part",
+      "stage": "CaravanBend",
+      "marker": false,
+      "shape": "Block",
+      "material": "Plastic",
+      "transparency": 0.0,
+      "collision": true,
+      "query": true,
+      "touch": false,
+      "anchored": true,
+      "position": [
+        -59.0,
+        2.0,
+        21.0
+      ],
+      "size": [
+        1.0,
+        4.0,
+        4.0
+      ],
+      "color": [
+        0.22745098039215686,
+        0.22745098039215686,
+        0.2196078431372549
+      ],
+      "rotation": [
+        1.0,
+        0.0,
+        0.0,
+        0.0,
+        1.0,
+        0.0,
+        0.0,
+        0.0,
+        1.0
+      ]
+    },
+    {
+      "name": "CartCrates",
+      "className": "Part",
+      "stage": "CaravanBend",
+      "marker": false,
+      "shape": "Block",
+      "material": "Plastic",
+      "transparency": 0.0,
+      "collision": true,
+      "query": true,
+      "touch": false,
+      "anchored": true,
+      "position": [
+        -65.0,
+        4.0,
+        16.0
+      ],
+      "size": [
+        6.0,
+        3.0,
+        10.0
+      ],
+      "color": [
+        0.8313725490196079,
+        0.6470588235294118,
+        0.2549019607843137
+      ],
+      "rotation": [
+        1.0,
+        0.0,
+        0.0,
+        0.0,
+        1.0,
+        0.0,
+        0.0,
+        0.0,
+        1.0
+      ]
+    },
+    {
+      "name": "RescuePath",
+      "className": "Part",
+      "stage": "CaravanBend",
+      "marker": false,
+      "shape": "Block",
+      "material": "Plastic",
+      "transparency": 0.0,
+      "collision": false,
+      "query": false,
+      "touch": false,
+      "anchored": true,
+      "position": [
+        -84.0,
+        0.08,
+        25.0
+      ],
+      "size": [
+        10.0,
+        0.08,
+        40.0
+      ],
+      "color": [
+        0.807843137254902,
+        0.7490196078431373,
+        0.5764705882352941
+      ],
+      "rotation": [
+        1.0,
+        0.0,
+        0.0,
+        0.0,
+        1.0,
+        0.0,
+        0.0,
+        0.0,
+        1.0
+      ]
+    },
+    {
+      "name": "RescuePath",
+      "className": "Part",
+      "stage": "CaravanBend",
+      "marker": false,
+      "shape": "Block",
+      "material": "Plastic",
+      "transparency": 0.0,
+      "collision": false,
+      "query": false,
+      "touch": false,
+      "anchored": true,
+      "position": [
+        -46.0,
+        0.08,
+        25.0
+      ],
+      "size": [
+        10.0,
+        0.08,
+        40.0
+      ],
+      "color": [
+        0.807843137254902,
+        0.7490196078431373,
+        0.5764705882352941
+      ],
+      "rotation": [
+        1.0,
+        0.0,
+        0.0,
+        0.0,
+        1.0,
+        0.0,
+        0.0,
+        0.0,
+        1.0
+      ]
+    },
+    {
+      "name": "RescueRejoin",
+      "className": "Part",
+      "stage": "CaravanBend",
+      "marker": false,
+      "shape": "Block",
+      "material": "Plastic",
+      "transparency": 0.0,
+      "collision": false,
+      "query": false,
+      "touch": false,
+      "anchored": true,
+      "position": [
+        -65.0,
+        0.12,
+        4.0
+      ],
+      "size": [
+        48.0,
+        0.08,
+        10.0
+      ],
+      "color": [
+        0.7450980392156863,
+        0.6784313725490196,
+        0.5215686274509804
+      ],
+      "rotation": [
+        1.0,
+        0.0,
+        0.0,
+        0.0,
+        1.0,
+        0.0,
+        0.0,
+        0.0,
+        1.0
+      ]
+    },
+    {
+      "name": "CaravanRescue",
+      "className": "Part",
+      "stage": "CaravanBend",
+      "marker": true,
+      "shape": "Block",
+      "material": "Plastic",
+      "transparency": 1.0,
+      "collision": false,
+      "query": false,
+      "touch": false,
+      "anchored": true,
+      "position": [
+        -84.0,
+        3.0,
+        25.0
+      ],
+      "size": [
+        1.0,
+        0.1,
+        1.0
+      ],
+      "color": [
+        0.8313725490196079,
+        0.6470588235294118,
+        0.2549019607843137
+      ],
+      "rotation": [
+        1.0,
+        0.0,
+        0.0,
+        0.0,
+        1.0,
+        0.0,
+        0.0,
+        0.0,
+        1.0
+      ]
+    },
+    {
+      "name": "CaravanSupplies",
+      "className": "Part",
+      "stage": "CaravanBend",
+      "marker": true,
+      "shape": "Block",
+      "material": "Plastic",
+      "transparency": 1.0,
+      "collision": false,
+      "query": false,
+      "touch": false,
+      "anchored": true,
+      "position": [
+        -46.0,
+        3.0,
+        25.0
+      ],
+      "size": [
+        1.0,
+        0.1,
+        1.0
+      ],
+      "color": [
+        0.8313725490196079,
+        0.6470588235294118,
+        0.2549019607843137
+      ],
+      "rotation": [
+        1.0,
+        0.0,
+        0.0,
+        0.0,
+        1.0,
+        0.0,
+        0.0,
+        0.0,
+        1.0
+      ]
+    },
+    {
+      "name": "CaravanRejoin",
+      "className": "Part",
+      "stage": "CaravanBend",
+      "marker": true,
+      "shape": "Block",
+      "material": "Plastic",
+      "transparency": 1.0,
+      "collision": false,
+      "query": false,
+      "touch": false,
+      "anchored": true,
+      "position": [
+        -65.0,
+        3.0,
+        4.0
+      ],
+      "size": [
+        1.0,
+        0.1,
+        1.0
+      ],
+      "color": [
+        0.8313725490196079,
+        0.6470588235294118,
+        0.2549019607843137
+      ],
+      "rotation": [
+        1.0,
+        0.0,
+        0.0,
+        0.0,
+        1.0,
+        0.0,
+        0.0,
+        0.0,
+        1.0
+      ]
+    },
+    {
+      "name": "KeeperCourt",
+      "className": "Part",
+      "stage": "CrossroadsKeeper",
+      "marker": false,
+      "shape": "Block",
+      "material": "Plastic",
+      "transparency": 0.0,
+      "collision": false,
+      "query": false,
+      "touch": false,
+      "anchored": true,
+      "position": [
+        65.0,
+        0.05,
+        -40.0
+      ],
+      "size": [
+        56.0,
+        0.1,
+        50.0
+      ],
+      "color": [
+        0.7450980392156863,
+        0.6784313725490196,
+        0.5215686274509804
+      ],
+      "rotation": [
+        1.0,
+        0.0,
+        0.0,
+        0.0,
+        1.0,
+        0.0,
+        0.0,
+        0.0,
+        1.0
+      ]
+    },
+    {
+      "name": "BrokenPillar",
+      "className": "Part",
+      "stage": "CrossroadsKeeper",
+      "marker": false,
+      "shape": "Block",
+      "material": "Plastic",
+      "transparency": 0.0,
+      "collision": true,
+      "query": true,
+      "touch": false,
+      "anchored": true,
+      "position": [
+        43.0,
+        6.0,
+        -56.0
+      ],
+      "size": [
+        4.0,
+        12.0,
+        4.0
+      ],
+      "color": [
+        0.8392156862745098,
+        0.796078431372549,
+        0.6823529411764706
+      ],
+      "rotation": [
+        1.0,
+        0.0,
+        0.0,
+        0.0,
+        1.0,
+        0.0,
+        0.0,
+        0.0,
+        1.0
+      ]
+    },
+    {
+      "name": "BrokenArch",
+      "className": "Part",
+      "stage": "CrossroadsKeeper",
+      "marker": false,
+      "shape": "Block",
+      "material": "Plastic",
+      "transparency": 0.0,
+      "collision": true,
+      "query": true,
+      "touch": false,
+      "anchored": true,
+      "position": [
+        47.0,
+        12.0,
+        -56.0
+      ],
+      "size": [
+        12.0,
+        2.0,
+        4.0
+      ],
+      "color": [
+        0.8392156862745098,
+        0.796078431372549,
+        0.6823529411764706
+      ],
+      "rotation": [
+        1.0,
+        0.0,
+        0.0,
+        0.0,
+        1.0,
+        0.0,
+        0.0,
+        0.0,
+        1.0
+      ]
+    },
+    {
+      "name": "BrokenPillar",
+      "className": "Part",
+      "stage": "CrossroadsKeeper",
+      "marker": false,
+      "shape": "Block",
+      "material": "Plastic",
+      "transparency": 0.0,
+      "collision": true,
+      "query": true,
+      "touch": false,
+      "anchored": true,
+      "position": [
+        87.0,
+        6.0,
+        -56.0
+      ],
+      "size": [
+        4.0,
+        12.0,
+        4.0
+      ],
+      "color": [
+        0.8392156862745098,
+        0.796078431372549,
+        0.6823529411764706
+      ],
+      "rotation": [
+        1.0,
+        0.0,
+        0.0,
+        0.0,
+        1.0,
+        0.0,
+        0.0,
+        0.0,
+        1.0
+      ]
+    },
+    {
+      "name": "BrokenArch",
+      "className": "Part",
+      "stage": "CrossroadsKeeper",
+      "marker": false,
+      "shape": "Block",
+      "material": "Plastic",
+      "transparency": 0.0,
+      "collision": true,
+      "query": true,
+      "touch": false,
+      "anchored": true,
+      "position": [
+        83.0,
+        12.0,
+        -56.0
+      ],
+      "size": [
+        12.0,
+        2.0,
+        4.0
+      ],
+      "color": [
+        0.8392156862745098,
+        0.796078431372549,
+        0.6823529411764706
+      ],
+      "rotation": [
+        1.0,
+        0.0,
+        0.0,
+        0.0,
+        1.0,
+        0.0,
+        0.0,
+        0.0,
+        1.0
+      ]
+    },
+    {
+      "name": "KeeperWarning",
+      "className": "Part",
+      "stage": "CrossroadsKeeper",
+      "marker": false,
+      "shape": "Block",
+      "material": "Plastic",
+      "transparency": 0.0,
+      "collision": false,
+      "query": false,
+      "touch": false,
+      "anchored": true,
+      "position": [
+        65.0,
+        0.13,
+        -40.0
+      ],
+      "size": [
+        18.0,
+        0.06,
+        9.0
+      ],
+      "color": [
+        0.807843137254902,
+        0.4,
+        0.25098039215686274
+      ],
+      "rotation": [
+        1.0,
+        0.0,
+        0.0,
+        0.0,
+        1.0,
+        0.0,
+        0.0,
+        0.0,
+        1.0
+      ]
+    },
+    {
+      "name": "CrestPlinth",
+      "className": "Part",
+      "stage": "CrossroadsKeeper",
+      "marker": false,
+      "shape": "Block",
+      "material": "Plastic",
+      "transparency": 0.0,
+      "collision": true,
+      "query": true,
+      "touch": false,
+      "anchored": true,
+      "position": [
+        86.0,
+        1.5,
+        -30.0
+      ],
+      "size": [
+        6.0,
+        3.0,
+        6.0
+      ],
+      "color": [
+        0.8392156862745098,
+        0.796078431372549,
+        0.6823529411764706
+      ],
+      "rotation": [
+        1.0,
+        0.0,
+        0.0,
+        0.0,
+        1.0,
+        0.0,
+        0.0,
+        0.0,
+        1.0
+      ]
+    },
+    {
+      "name": "CrossroadsKeeper",
+      "className": "Part",
+      "stage": "CrossroadsKeeper",
+      "marker": true,
+      "shape": "Block",
+      "material": "Plastic",
+      "transparency": 1.0,
+      "collision": false,
+      "query": false,
+      "touch": false,
+      "anchored": true,
+      "position": [
+        65.0,
+        3.0,
+        -40.0
+      ],
+      "size": [
+        1.0,
+        0.1,
+        1.0
+      ],
+      "color": [
+        0.8313725490196079,
+        0.6470588235294118,
+        0.2549019607843137
+      ],
+      "rotation": [
+        1.0,
+        0.0,
+        0.0,
+        0.0,
+        1.0,
+        0.0,
+        0.0,
+        0.0,
+        1.0
+      ]
+    },
+    {
+      "name": "DisciplineCourt",
+      "className": "Part",
+      "stage": "FiveDisciplines",
+      "marker": false,
+      "shape": "Block",
+      "material": "Plastic",
+      "transparency": 0.0,
+      "collision": false,
+      "query": false,
+      "touch": false,
+      "anchored": true,
+      "position": [
+        -65.0,
+        0.05,
+        -105.0
+      ],
+      "size": [
+        80.0,
+        0.1,
+        40.0
+      ],
+      "color": [
+        0.7450980392156863,
+        0.6784313725490196,
+        0.5215686274509804
+      ],
+      "rotation": [
+        1.0,
+        0.0,
+        0.0,
+        0.0,
+        1.0,
+        0.0,
+        0.0,
+        0.0,
+        1.0
+      ]
+    },
+    {
+      "name": "WarriorTrainingPad",
+      "className": "Part",
+      "stage": "FiveDisciplines",
+      "marker": false,
+      "shape": "Block",
+      "material": "Plastic",
+      "transparency": 0.0,
+      "collision": true,
+      "query": true,
+      "touch": false,
+      "anchored": true,
+      "position": [
+        -97.0,
+        0.2,
+        -113.0
+      ],
+      "size": [
+        12.0,
+        0.4,
+        12.0
+      ],
+      "color": [
+        0.7607843137254902,
+        0.25882352941176473,
+        0.23921568627450981
+      ],
+      "rotation": [
+        1.0,
+        0.0,
+        0.0,
+        0.0,
+        1.0,
+        0.0,
+        0.0,
+        0.0,
+        1.0
+      ]
+    },
+    {
+      "name": "WarriorStandard",
+      "className": "Part",
+      "stage": "FiveDisciplines",
+      "marker": false,
+      "shape": "Block",
+      "material": "Plastic",
+      "transparency": 0.0,
+      "collision": true,
+      "query": true,
+      "touch": false,
+      "anchored": true,
+      "position": [
+        -97.0,
+        5.0,
+        -122.0
+      ],
+      "size": [
+        1.0,
+        10.0,
+        1.0
+      ],
+      "color": [
+        0.4117647058823529,
+        0.27450980392156865,
+        0.1803921568627451
+      ],
+      "rotation": [
+        1.0,
+        0.0,
+        0.0,
+        0.0,
+        1.0,
+        0.0,
+        0.0,
+        0.0,
+        1.0
+      ]
+    },
+    {
+      "name": "WarriorPennant",
+      "className": "Part",
+      "stage": "FiveDisciplines",
+      "marker": false,
+      "shape": "Block",
+      "material": "Plastic",
+      "transparency": 0.0,
+      "collision": false,
+      "query": false,
+      "touch": false,
+      "anchored": true,
+      "position": [
+        -95.0,
+        8.0,
+        -122.0
+      ],
+      "size": [
+        4.0,
+        4.0,
+        0.2
+      ],
+      "color": [
+        0.7607843137254902,
+        0.25882352941176473,
+        0.23921568627450981
+      ],
+      "rotation": [
+        1.0,
+        0.0,
+        0.0,
+        0.0,
+        1.0,
+        0.0,
+        0.0,
+        0.0,
+        1.0
+      ]
+    },
+    {
+      "name": "Discipline_Warrior",
+      "className": "Part",
+      "stage": "FiveDisciplines",
+      "marker": true,
+      "shape": "Block",
+      "material": "Plastic",
+      "transparency": 1.0,
+      "collision": false,
+      "query": false,
+      "touch": false,
+      "anchored": true,
+      "position": [
+        -97.0,
+        3.0,
+        -113.0
+      ],
+      "size": [
+        1.0,
+        0.1,
+        1.0
+      ],
+      "color": [
+        0.8313725490196079,
+        0.6470588235294118,
+        0.2549019607843137
+      ],
+      "rotation": [
+        1.0,
+        0.0,
+        0.0,
+        0.0,
+        1.0,
+        0.0,
+        0.0,
+        0.0,
+        1.0
+      ]
+    },
+    {
+      "name": "KnightTrainingPad",
+      "className": "Part",
+      "stage": "FiveDisciplines",
+      "marker": false,
+      "shape": "Block",
+      "material": "Plastic",
+      "transparency": 0.0,
+      "collision": true,
+      "query": true,
+      "touch": false,
+      "anchored": true,
+      "position": [
+        -81.0,
+        0.2,
+        -113.0
+      ],
+      "size": [
+        12.0,
+        0.4,
+        12.0
+      ],
+      "color": [
+        0.8313725490196079,
+        0.6470588235294118,
+        0.2549019607843137
+      ],
+      "rotation": [
+        1.0,
+        0.0,
+        0.0,
+        0.0,
+        1.0,
+        0.0,
+        0.0,
+        0.0,
+        1.0
+      ]
+    },
+    {
+      "name": "KnightStandard",
+      "className": "Part",
+      "stage": "FiveDisciplines",
+      "marker": false,
+      "shape": "Block",
+      "material": "Plastic",
+      "transparency": 0.0,
+      "collision": true,
+      "query": true,
+      "touch": false,
+      "anchored": true,
+      "position": [
+        -81.0,
+        5.0,
+        -122.0
+      ],
+      "size": [
+        1.0,
+        10.0,
+        1.0
+      ],
+      "color": [
+        0.4117647058823529,
+        0.27450980392156865,
+        0.1803921568627451
+      ],
+      "rotation": [
+        1.0,
+        0.0,
+        0.0,
+        0.0,
+        1.0,
+        0.0,
+        0.0,
+        0.0,
+        1.0
+      ]
+    },
+    {
+      "name": "KnightPennant",
+      "className": "Part",
+      "stage": "FiveDisciplines",
+      "marker": false,
+      "shape": "Block",
+      "material": "Plastic",
+      "transparency": 0.0,
+      "collision": false,
+      "query": false,
+      "touch": false,
+      "anchored": true,
+      "position": [
+        -79.0,
+        8.0,
+        -122.0
+      ],
+      "size": [
+        4.0,
+        4.0,
+        0.2
+      ],
+      "color": [
+        0.8313725490196079,
+        0.6470588235294118,
+        0.2549019607843137
+      ],
+      "rotation": [
+        1.0,
+        0.0,
+        0.0,
+        0.0,
+        1.0,
+        0.0,
+        0.0,
+        0.0,
+        1.0
+      ]
+    },
+    {
+      "name": "Discipline_Knight",
+      "className": "Part",
+      "stage": "FiveDisciplines",
+      "marker": true,
+      "shape": "Block",
+      "material": "Plastic",
+      "transparency": 1.0,
+      "collision": false,
+      "query": false,
+      "touch": false,
+      "anchored": true,
+      "position": [
+        -81.0,
+        3.0,
+        -113.0
+      ],
+      "size": [
+        1.0,
+        0.1,
+        1.0
+      ],
+      "color": [
+        0.8313725490196079,
+        0.6470588235294118,
+        0.2549019607843137
+      ],
+      "rotation": [
+        1.0,
+        0.0,
+        0.0,
+        0.0,
+        1.0,
+        0.0,
+        0.0,
+        0.0,
+        1.0
+      ]
+    },
+    {
+      "name": "ArcherTrainingPad",
+      "className": "Part",
+      "stage": "FiveDisciplines",
+      "marker": false,
+      "shape": "Block",
+      "material": "Plastic",
+      "transparency": 0.0,
+      "collision": true,
+      "query": true,
+      "touch": false,
+      "anchored": true,
+      "position": [
+        -65.0,
+        0.2,
+        -113.0
+      ],
+      "size": [
+        12.0,
+        0.4,
+        12.0
+      ],
+      "color": [
+        0.21176470588235294,
+        0.5725490196078431,
+        0.3568627450980392
+      ],
+      "rotation": [
+        1.0,
+        0.0,
+        0.0,
+        0.0,
+        1.0,
+        0.0,
+        0.0,
+        0.0,
+        1.0
+      ]
+    },
+    {
+      "name": "ArcherStandard",
+      "className": "Part",
+      "stage": "FiveDisciplines",
+      "marker": false,
+      "shape": "Block",
+      "material": "Plastic",
+      "transparency": 0.0,
+      "collision": true,
+      "query": true,
+      "touch": false,
+      "anchored": true,
+      "position": [
+        -65.0,
+        5.0,
+        -122.0
+      ],
+      "size": [
+        1.0,
+        10.0,
+        1.0
+      ],
+      "color": [
+        0.4117647058823529,
+        0.27450980392156865,
+        0.1803921568627451
+      ],
+      "rotation": [
+        1.0,
+        0.0,
+        0.0,
+        0.0,
+        1.0,
+        0.0,
+        0.0,
+        0.0,
+        1.0
+      ]
+    },
+    {
+      "name": "ArcherPennant",
+      "className": "Part",
+      "stage": "FiveDisciplines",
+      "marker": false,
+      "shape": "Block",
+      "material": "Plastic",
+      "transparency": 0.0,
+      "collision": false,
+      "query": false,
+      "touch": false,
+      "anchored": true,
+      "position": [
+        -63.0,
+        8.0,
+        -122.0
+      ],
+      "size": [
+        4.0,
+        4.0,
+        0.2
+      ],
+      "color": [
+        0.21176470588235294,
+        0.5725490196078431,
+        0.3568627450980392
+      ],
+      "rotation": [
+        1.0,
+        0.0,
+        0.0,
+        0.0,
+        1.0,
+        0.0,
+        0.0,
+        0.0,
+        1.0
+      ]
+    },
+    {
+      "name": "Discipline_Archer",
+      "className": "Part",
+      "stage": "FiveDisciplines",
+      "marker": true,
+      "shape": "Block",
+      "material": "Plastic",
+      "transparency": 1.0,
+      "collision": false,
+      "query": false,
+      "touch": false,
+      "anchored": true,
+      "position": [
+        -65.0,
+        3.0,
+        -113.0
+      ],
+      "size": [
+        1.0,
+        0.1,
+        1.0
+      ],
+      "color": [
+        0.8313725490196079,
+        0.6470588235294118,
+        0.2549019607843137
+      ],
+      "rotation": [
+        1.0,
+        0.0,
+        0.0,
+        0.0,
+        1.0,
+        0.0,
+        0.0,
+        0.0,
+        1.0
+      ]
+    },
+    {
+      "name": "MageTrainingPad",
+      "className": "Part",
+      "stage": "FiveDisciplines",
+      "marker": false,
+      "shape": "Block",
+      "material": "Plastic",
+      "transparency": 0.0,
+      "collision": true,
+      "query": true,
+      "touch": false,
+      "anchored": true,
+      "position": [
+        -49.0,
+        0.2,
+        -113.0
+      ],
+      "size": [
+        12.0,
+        0.4,
+        12.0
+      ],
+      "color": [
+        0.5686274509803921,
+        0.3568627450980392,
+        0.7450980392156863
+      ],
+      "rotation": [
+        1.0,
+        0.0,
+        0.0,
+        0.0,
+        1.0,
+        0.0,
+        0.0,
+        0.0,
+        1.0
+      ]
+    },
+    {
+      "name": "MageStandard",
+      "className": "Part",
+      "stage": "FiveDisciplines",
+      "marker": false,
+      "shape": "Block",
+      "material": "Plastic",
+      "transparency": 0.0,
+      "collision": true,
+      "query": true,
+      "touch": false,
+      "anchored": true,
+      "position": [
+        -49.0,
+        5.0,
+        -122.0
+      ],
+      "size": [
+        1.0,
+        10.0,
+        1.0
+      ],
+      "color": [
+        0.4117647058823529,
+        0.27450980392156865,
+        0.1803921568627451
+      ],
+      "rotation": [
+        1.0,
+        0.0,
+        0.0,
+        0.0,
+        1.0,
+        0.0,
+        0.0,
+        0.0,
+        1.0
+      ]
+    },
+    {
+      "name": "MagePennant",
+      "className": "Part",
+      "stage": "FiveDisciplines",
+      "marker": false,
+      "shape": "Block",
+      "material": "Plastic",
+      "transparency": 0.0,
+      "collision": false,
+      "query": false,
+      "touch": false,
+      "anchored": true,
+      "position": [
+        -47.0,
+        8.0,
+        -122.0
+      ],
+      "size": [
+        4.0,
+        4.0,
+        0.2
+      ],
+      "color": [
+        0.5686274509803921,
+        0.3568627450980392,
+        0.7450980392156863
+      ],
+      "rotation": [
+        1.0,
+        0.0,
+        0.0,
+        0.0,
+        1.0,
+        0.0,
+        0.0,
+        0.0,
+        1.0
+      ]
+    },
+    {
+      "name": "Discipline_Mage",
+      "className": "Part",
+      "stage": "FiveDisciplines",
+      "marker": true,
+      "shape": "Block",
+      "material": "Plastic",
+      "transparency": 1.0,
+      "collision": false,
+      "query": false,
+      "touch": false,
+      "anchored": true,
+      "position": [
+        -49.0,
+        3.0,
+        -113.0
+      ],
+      "size": [
+        1.0,
+        0.1,
+        1.0
+      ],
+      "color": [
+        0.8313725490196079,
+        0.6470588235294118,
+        0.2549019607843137
+      ],
+      "rotation": [
+        1.0,
+        0.0,
+        0.0,
+        0.0,
+        1.0,
+        0.0,
+        0.0,
+        0.0,
+        1.0
+      ]
+    },
+    {
+      "name": "PriestTrainingPad",
+      "className": "Part",
+      "stage": "FiveDisciplines",
+      "marker": false,
+      "shape": "Block",
+      "material": "Plastic",
+      "transparency": 0.0,
+      "collision": true,
+      "query": true,
+      "touch": false,
+      "anchored": true,
+      "position": [
+        -33.0,
+        0.2,
+        -113.0
+      ],
+      "size": [
+        12.0,
+        0.4,
+        12.0
+      ],
+      "color": [
+        0.9098039215686274,
+        0.8901960784313725,
+        0.8196078431372549
+      ],
+      "rotation": [
+        1.0,
+        0.0,
+        0.0,
+        0.0,
+        1.0,
+        0.0,
+        0.0,
+        0.0,
+        1.0
+      ]
+    },
+    {
+      "name": "PriestStandard",
+      "className": "Part",
+      "stage": "FiveDisciplines",
+      "marker": false,
+      "shape": "Block",
+      "material": "Plastic",
+      "transparency": 0.0,
+      "collision": true,
+      "query": true,
+      "touch": false,
+      "anchored": true,
+      "position": [
+        -33.0,
+        5.0,
+        -122.0
+      ],
+      "size": [
+        1.0,
+        10.0,
+        1.0
+      ],
+      "color": [
+        0.4117647058823529,
+        0.27450980392156865,
+        0.1803921568627451
+      ],
+      "rotation": [
+        1.0,
+        0.0,
+        0.0,
+        0.0,
+        1.0,
+        0.0,
+        0.0,
+        0.0,
+        1.0
+      ]
+    },
+    {
+      "name": "PriestPennant",
+      "className": "Part",
+      "stage": "FiveDisciplines",
+      "marker": false,
+      "shape": "Block",
+      "material": "Plastic",
+      "transparency": 0.0,
+      "collision": false,
+      "query": false,
+      "touch": false,
+      "anchored": true,
+      "position": [
+        -31.0,
+        8.0,
+        -122.0
+      ],
+      "size": [
+        4.0,
+        4.0,
+        0.2
+      ],
+      "color": [
+        0.9098039215686274,
+        0.8901960784313725,
+        0.8196078431372549
+      ],
+      "rotation": [
+        1.0,
+        0.0,
+        0.0,
+        0.0,
+        1.0,
+        0.0,
+        0.0,
+        0.0,
+        1.0
+      ]
+    },
+    {
+      "name": "Discipline_Priest",
+      "className": "Part",
+      "stage": "FiveDisciplines",
+      "marker": true,
+      "shape": "Block",
+      "material": "Plastic",
+      "transparency": 1.0,
+      "collision": false,
+      "query": false,
+      "touch": false,
+      "anchored": true,
+      "position": [
+        -33.0,
+        3.0,
+        -113.0
+      ],
+      "size": [
+        1.0,
+        0.1,
+        1.0
+      ],
+      "color": [
+        0.8313725490196079,
+        0.6470588235294118,
+        0.2549019607843137
+      ],
+      "rotation": [
+        1.0,
+        0.0,
+        0.0,
+        0.0,
+        1.0,
+        0.0,
+        0.0,
+        0.0,
+        1.0
+      ]
+    },
+    {
+      "name": "FiveDisciplines",
+      "className": "Part",
+      "stage": "FiveDisciplines",
+      "marker": true,
+      "shape": "Block",
+      "material": "Plastic",
+      "transparency": 1.0,
+      "collision": false,
+      "query": false,
+      "touch": false,
+      "anchored": true,
+      "position": [
+        -65.0,
+        3.0,
+        -98.0
+      ],
+      "size": [
+        1.0,
+        0.1,
+        1.0
+      ],
+      "color": [
+        0.8313725490196079,
+        0.6470588235294118,
+        0.2549019607843137
+      ],
+      "rotation": [
+        1.0,
+        0.0,
+        0.0,
+        0.0,
+        1.0,
+        0.0,
+        0.0,
+        0.0,
+        1.0
+      ]
+    },
+    {
+      "name": "HallForecourt",
+      "className": "Part",
+      "stage": "AbandonedHall",
+      "marker": false,
+      "shape": "Block",
+      "material": "Plastic",
+      "transparency": 0.0,
+      "collision": false,
+      "query": false,
+      "touch": false,
+      "anchored": true,
+      "position": [
+        0.0,
+        0.04,
+        -168.0
+      ],
+      "size": [
+        74.0,
+        0.08,
+        74.0
+      ],
+      "color": [
+        0.7450980392156863,
+        0.6784313725490196,
+        0.5215686274509804
+      ],
+      "rotation": [
+        1.0,
+        0.0,
+        0.0,
+        0.0,
+        1.0,
+        0.0,
+        0.0,
+        0.0,
+        1.0
+      ]
+    },
+    {
+      "name": "HallFloor",
+      "className": "Part",
+      "stage": "AbandonedHall",
+      "marker": false,
+      "shape": "Block",
+      "material": "Plastic",
+      "transparency": 0.0,
+      "collision": true,
+      "query": true,
+      "touch": false,
+      "anchored": true,
+      "position": [
+        0.0,
+        0.2,
+        -191.0
+      ],
+      "size": [
+        44.0,
+        0.4,
+        34.0
+      ],
+      "color": [
+        0.8392156862745098,
+        0.796078431372549,
+        0.6823529411764706
+      ],
+      "rotation": [
+        1.0,
+        0.0,
+        0.0,
+        0.0,
+        1.0,
+        0.0,
+        0.0,
+        0.0,
+        1.0
+      ]
+    },
+    {
+      "name": "HallRear",
+      "className": "Part",
+      "stage": "AbandonedHall",
+      "marker": false,
+      "shape": "Block",
+      "material": "Plastic",
+      "transparency": 0.0,
+      "collision": true,
+      "query": true,
+      "touch": false,
+      "anchored": true,
+      "position": [
+        0.0,
+        8.0,
+        -207.0
+      ],
+      "size": [
+        44.0,
+        16.0,
+        2.0
+      ],
+      "color": [
+        0.8392156862745098,
+        0.796078431372549,
+        0.6823529411764706
+      ],
+      "rotation": [
+        1.0,
+        0.0,
+        0.0,
+        0.0,
+        1.0,
+        0.0,
+        0.0,
+        0.0,
+        1.0
+      ]
+    },
+    {
+      "name": "HallSide",
+      "className": "Part",
+      "stage": "AbandonedHall",
+      "marker": false,
+      "shape": "Block",
+      "material": "Plastic",
+      "transparency": 0.0,
+      "collision": true,
+      "query": true,
+      "touch": false,
+      "anchored": true,
+      "position": [
+        -21.0,
+        8.0,
+        -191.0
+      ],
+      "size": [
+        2.0,
+        16.0,
+        34.0
+      ],
+      "color": [
+        0.8392156862745098,
+        0.796078431372549,
+        0.6823529411764706
+      ],
+      "rotation": [
+        1.0,
+        0.0,
+        0.0,
+        0.0,
+        1.0,
+        0.0,
+        0.0,
+        0.0,
+        1.0
+      ]
+    },
+    {
+      "name": "HallSide",
+      "className": "Part",
+      "stage": "AbandonedHall",
+      "marker": false,
+      "shape": "Block",
+      "material": "Plastic",
+      "transparency": 0.0,
+      "collision": true,
+      "query": true,
+      "touch": false,
+      "anchored": true,
+      "position": [
+        21.0,
+        8.0,
+        -191.0
+      ],
+      "size": [
+        2.0,
+        16.0,
+        34.0
+      ],
+      "color": [
+        0.8392156862745098,
+        0.796078431372549,
+        0.6823529411764706
+      ],
+      "rotation": [
+        1.0,
+        0.0,
+        0.0,
+        0.0,
+        1.0,
+        0.0,
+        0.0,
+        0.0,
+        1.0
+      ]
+    },
+    {
+      "name": "HallFront",
+      "className": "Part",
+      "stage": "AbandonedHall",
+      "marker": false,
+      "shape": "Block",
+      "material": "Plastic",
+      "transparency": 0.0,
+      "collision": true,
+      "query": true,
+      "touch": false,
+      "anchored": true,
+      "position": [
+        -14.0,
+        8.0,
+        -175.0
+      ],
+      "size": [
+        16.0,
+        16.0,
+        2.0
+      ],
+      "color": [
+        0.8392156862745098,
+        0.796078431372549,
+        0.6823529411764706
+      ],
+      "rotation": [
+        1.0,
+        0.0,
+        0.0,
+        0.0,
+        1.0,
+        0.0,
+        0.0,
+        0.0,
+        1.0
+      ]
+    },
+    {
+      "name": "HallFront",
+      "className": "Part",
+      "stage": "AbandonedHall",
+      "marker": false,
+      "shape": "Block",
+      "material": "Plastic",
+      "transparency": 0.0,
+      "collision": true,
+      "query": true,
+      "touch": false,
+      "anchored": true,
+      "position": [
+        14.0,
+        8.0,
+        -175.0
+      ],
+      "size": [
+        16.0,
+        16.0,
+        2.0
+      ],
+      "color": [
+        0.8392156862745098,
+        0.796078431372549,
+        0.6823529411764706
+      ],
+      "rotation": [
+        1.0,
+        0.0,
+        0.0,
+        0.0,
+        1.0,
+        0.0,
+        0.0,
+        0.0,
+        1.0
+      ]
+    },
+    {
+      "name": "HallDoorLintel",
+      "className": "Part",
+      "stage": "AbandonedHall",
+      "marker": false,
+      "shape": "Block",
+      "material": "Plastic",
+      "transparency": 0.0,
+      "collision": true,
+      "query": true,
+      "touch": false,
+      "anchored": true,
+      "position": [
+        0.0,
+        14.0,
+        -175.0
+      ],
+      "size": [
+        12.0,
+        4.0,
+        2.0
+      ],
+      "color": [
+        0.8392156862745098,
+        0.796078431372549,
+        0.6823529411764706
+      ],
+      "rotation": [
+        1.0,
+        0.0,
+        0.0,
+        0.0,
+        1.0,
+        0.0,
+        0.0,
+        0.0,
+        1.0
+      ]
+    },
+    {
+      "name": "HallRoof",
+      "className": "Part",
+      "stage": "AbandonedHall",
+      "marker": false,
+      "shape": "Block",
+      "material": "Plastic",
+      "transparency": 0.0,
+      "collision": true,
+      "query": true,
+      "touch": false,
+      "anchored": true,
+      "position": [
+        0.0,
+        17.0,
+        -191.0
+      ],
+      "size": [
+        48.0,
+        2.0,
+        38.0
+      ],
+      "color": [
+        0.12549019607843137,
+        0.2235294117647059,
+        0.3254901960784314
+      ],
+      "rotation": [
+        1.0,
+        0.0,
+        0.0,
+        0.0,
+        1.0,
+        0.0,
+        0.0,
+        0.0,
+        1.0
+      ]
+    },
+    {
+      "name": "HallBanner",
+      "className": "Part",
+      "stage": "AbandonedHall",
+      "marker": false,
+      "shape": "Block",
+      "material": "Plastic",
+      "transparency": 0.0,
+      "collision": false,
+      "query": false,
+      "touch": false,
+      "anchored": true,
+      "position": [
+        0.0,
+        12.0,
+        -173.8
+      ],
+      "size": [
+        4.0,
+        3.0,
+        0.2
+      ],
+      "color": [
+        0.8313725490196079,
+        0.6470588235294118,
+        0.2549019607843137
+      ],
+      "rotation": [
+        1.0,
+        0.0,
+        0.0,
+        0.0,
+        1.0,
+        0.0,
+        0.0,
+        0.0,
+        1.0
+      ]
+    },
+    {
+      "name": "HallForecourt",
+      "className": "Part",
+      "stage": "AbandonedHall",
+      "marker": true,
+      "shape": "Block",
+      "material": "Plastic",
+      "transparency": 1.0,
+      "collision": false,
+      "query": false,
+      "touch": false,
+      "anchored": true,
+      "position": [
+        0.0,
+        3.0,
+        -157.0
+      ],
+      "size": [
+        1.0,
+        0.1,
+        1.0
+      ],
+      "color": [
+        0.8313725490196079,
+        0.6470588235294118,
+        0.2549019607843137
+      ],
+      "rotation": [
+        1.0,
+        0.0,
+        0.0,
+        0.0,
+        1.0,
+        0.0,
+        0.0,
+        0.0,
+        1.0
+      ]
+    },
+    {
+      "name": "HallInterior",
+      "className": "Part",
+      "stage": "AbandonedHall",
+      "marker": true,
+      "shape": "Block",
+      "material": "Plastic",
+      "transparency": 1.0,
+      "collision": false,
+      "query": false,
+      "touch": false,
+      "anchored": true,
+      "position": [
+        0.0,
+        3.0,
+        -192.0
+      ],
+      "size": [
+        1.0,
+        0.1,
+        1.0
+      ],
+      "color": [
+        0.8313725490196079,
+        0.6470588235294118,
+        0.2549019607843137
+      ],
+      "rotation": [
+        1.0,
+        0.0,
+        0.0,
+        0.0,
+        1.0,
+        0.0,
+        0.0,
+        0.0,
+        1.0
+      ]
+    }
+  ]
+}
