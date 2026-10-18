@@ -4,7 +4,7 @@ from pathlib import Path
 import bpy
 from mathutils import Matrix,Vector
 
-parser=argparse.ArgumentParser();parser.add_argument('--geometry',type=Path,required=True);parser.add_argument('--output',type=Path,required=True);args=parser.parse_args(sys.argv[sys.argv.index('--')+1:])
+parser=argparse.ArgumentParser();parser.add_argument('--geometry',type=Path,required=True);parser.add_argument('--output',type=Path,required=True);parser.add_argument('--view-set',choices=('entry','corridor'),default='entry');args=parser.parse_args(sys.argv[sys.argv.index('--')+1:])
 args.geometry=args.geometry.resolve();args.output=args.output.resolve()
 args.output.mkdir(parents=True,exist_ok=True)
 data=json.loads(args.geometry.read_text())
@@ -44,6 +44,8 @@ scene.render.engine='CYCLES';scene.cycles.samples=24;scene.cycles.use_denoising=
 scene.render.resolution_x=1440;scene.render.resolution_y=900;scene.render.resolution_percentage=100
 scene.render.image_settings.file_format='PNG';scene.view_settings.view_transform='Standard'
 views={'entry':((30,22,244),(-15,10,165)),'courier':((-34,18,182),(-65,6,149)),'overview':((220,250,350),(0,0,100))}
+if args.view_set=='corridor':
+ views={'arrival-player':((0,6,180),(3,5,85)),'training-player':((8,6,109),(66,5,82)),'caravan-player':((-9,6,54),(-65,5,20)),'corridor-overview':((190,155,215),(0,2,90))}
 for name,(eye,target) in views.items():
  camera.location=conversion@Vector(eye);camera.rotation_euler=(conversion@Vector(target)-camera.location).to_track_quat('-Z','Y').to_euler()
  scene.render.filepath=str(args.output/(name+'.png'));bpy.ops.render.render(write_still=True)

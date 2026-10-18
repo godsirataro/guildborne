@@ -66,27 +66,77 @@ return function(target: Model | number): any
   end
  end
  assert(markerCount==15,"Expected exactly 15 authored route markers")
+ assert(parts<=650,"Authored art exceeds 650-part budget")
+ assert(colliders==61,"Authored art must preserve all 61 baseline colliders")
  for name in pairs(expected) do assert(markers[name],"Missing marker: "..name) end
+ local function staticWarning(name: string, position: Vector3, size: Vector3, color: Color3)
+  local p=root:FindFirstChild(name)
+  assert(p and p:IsA("BasePart"),"Missing static warning: "..name)
+  local cf=pivot:ToObjectSpace(p.CFrame)
+  local _,angle=cf.Rotation:ToAxisAngle()
+  assert((cf.Position-position).Magnitude<0.001 and math.abs(angle)<0.001,"Moved static warning: "..name)
+  assert((p.Size-size).Magnitude<0.001 and p.Transparency==0,"Changed visible warning footprint: "..name)
+  assert(p.Color==color and not p.CanCollide,"Changed warning appearance/collision: "..name)
+ end
+ staticWarning("DodgeWarning",V(65,.1,99),V(12,.1,12),Color3.fromRGB(207,95,55))
+ staticWarning("KeeperWarning",V(65,.13,-40),V(18,.06,9),Color3.fromRGB(206,102,64))
  local navigation=game:GetService("PathfindingService")
  local routes={}
- local function route(name: string, destination: Vector3)
+ local function route(name: string, destination: Vector3, origin: Vector3?)
+  local start=origin or markers.Arrival.Position
   local path=navigation:CreatePath({AgentRadius=2,AgentHeight=5,AgentCanJump=false,WaypointSpacing=6})
-  path:ComputeAsync(markers.Arrival.Position,destination)
+  path:ComputeAsync(start,destination)
   assert(path.Status==Enum.PathStatus.Success,"No walk route: "..name)
   local points=path:GetWaypoints()
   assert(#points>0,"Empty walk route: "..name)
-  local distance=0;local last=markers.Arrival.Position
+  local distance=0;local last=start
   for _,point in ipairs(points) do
    assert(point.Action~=Enum.PathWaypointAction.Jump,"Jump required: "..name)
    distance+=(point.Position-last).Magnitude;last=point.Position
   end
   assert(distance<700,"Route exceeds 700 studs: "..name)
-  table.insert(routes,{name=name,studs=distance,waypoints=#points})
+  local localStart=pivot:PointToObjectSpace(start)
+  local localEnd=pivot:PointToObjectSpace(destination)
+  table.insert(routes,{name=name,studs=distance,waypoints=#points,
+   from={localStart.X,localStart.Y,localStart.Z},to={localEnd.X,localEnd.Y,localEnd.Z}})
  end
  for name,p in pairs(markers) do if name~="Arrival" then route(name,p.Position) end end
  local approach=pivot:PointToWorldSpace(V(-65,3,150))
  route("CourierApproach",approach)
+ -- Connected corridor checks supplement, rather than replace, the Arrival fan-out.
+ local captiveApproach=pivot:PointToWorldSpace(V(80,3,89))
+ local tracksApproach=pivot:PointToWorldSpace(V(-65,3,53))
+ route("CourierToTraining",markers.TrainingYard.Position,approach)
+ route("TrainingToPracticeCaptiveApproach",captiveApproach,markers.TrainingYard.Position)
+ route("TrainingToCaravanTracks",tracksApproach,markers.TrainingYard.Position)
+ route("TracksToRescue",markers.CaravanRescue.Position,tracksApproach)
+ route("TracksToSupplies",markers.CaravanSupplies.Position,tracksApproach)
+ route("RescueToRejoin",markers.CaravanRejoin.Position,markers.CaravanRescue.Position)
+ route("SuppliesToRejoin",markers.CaravanRejoin.Position,markers.CaravanSupplies.Position)
+ local runtimeAnchors={}
  if runtime then
+  local function runtimeMarker(name: string, position: Vector3)
+   local p=root:FindFirstChild(name)
+   assert(p and p:IsA("BasePart"),"Missing runtime marker: "..name)
+   assert((pivot:PointToObjectSpace(p.Position)-position).Magnitude<0.001,"Moved runtime marker: "..name)
+   assert(not p.CanCollide and p.Anchored,"Changed runtime marker physics: "..name)
+   table.insert(runtimeAnchors,{name=name,kind="marker",position={position.X,position.Y,position.Z}})
+  end
+  runtimeMarker("PracticeCaptive",V(80,3,86))
+  runtimeMarker("CaravanTracks",V(-65,.12,53))
+  -- These exact direct-child actor names and pivots are authored by NoviceCourseWorld.
+  -- Do not assert anchoring of animated NPC body parts or route through actor centers.
+  local function actorAnchor(name: string, position: Vector3)
+   local actor=root:FindFirstChild(name)
+   assert(actor and actor:IsA("Model"),"Missing corridor actor: "..name)
+   assert(actor:GetAttribute("OwnerUserId")==root:GetAttribute("OwnerUserId"),"Actor ownership mismatch: "..name)
+   assert((pivot:PointToObjectSpace(actor:GetPivot().Position)-position).Magnitude<0.01,"Moved corridor actor pivot: "..name)
+   table.insert(runtimeAnchors,{name=name,kind="actor",position={position.X,position.Y,position.Z}})
+  end
+  actorAnchor("CaravanHelper",V(-79,0,31))
+  actorAnchor("dwarf_traveler",V(-87,0,25))
+  route("RescueToHelperApproach",pivot:PointToWorldSpace(V(-79,3,35)),markers.CaravanRescue.Position)
+  route("RescueToTravelerApproach",pivot:PointToWorldSpace(V(-87,3,29)),markers.CaravanRescue.Position)
   local courier=root:FindFirstChild("Courier")
   assert(courier and courier:IsA("BasePart"),"Missing runtime courier prompt host")
   assert((pivot:PointToObjectSpace(courier.Position)-V(-65,3,149)).Magnitude<0.001,"Moved courier host")
@@ -103,7 +153,7 @@ return function(target: Model | number): any
  return {
   model=root:GetFullName(),ownerUserId=root:GetAttribute("OwnerUserId"),runtime=runtime,
   parts=parts,colliders=colliders,visibleParts=visible,markerCount=markerCount,
-  routes=routes,width=300,depth=450,gameplayBound=false,
+  routes=routes,runtimeAnchors=runtimeAnchors,artBudget=650,colliderBudget=61,width=300,depth=450,gameplayBound=false,
   scope="Static Stage-tagged art and read-only navigation; no NPC physics or quest receipt acceptance",
   geometryJSON=game:GetService("HttpService"):JSONEncode(geometry),
  }

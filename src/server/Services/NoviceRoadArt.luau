@@ -233,5 +233,111 @@ return function():Model
  part("HallBanner",V(0,12,-173.8),V(4,3,.2),gold,false)
  marker("HallForecourt",V(0,3,-157),"06 · Clear and restore the Hall")
  marker("HallInterior",V(0,3,-192),"Future guild registration")
+ -- Connected corridor dressing. Native routes, warning surfaces and collision
+ -- proxies remain untouched; every addition is presentation-only.
+ local function corridor(name:string,pos:Vector3,size:Vector3,color:Color3,material:Enum.Material?):Part
+  local p=part("Corridor_"..name,pos,size,color,false)
+  p.Material=material or Enum.Material.SmoothPlastic;return p
+ end
+ local moss=Color3.fromRGB(67,103,64)
+ local earth=Color3.fromRGB(120,115,85)
+ stage="Landscape"
+ -- Repeated woodland shoulders connect the three destinations without filling
+ -- their interior maneuver spaces. All silhouettes sit inside the native coast.
+ for group,anchor in ipairs({V(-126,0,124),V(127,0,126),V(-129,0,57),V(124,0,71),V(-125,0,1),V(128,0,7)})do
+  local x=anchor.X;local z=anchor.Z;local lift=(group%3)*2
+  local mound=corridor("WoodlandBank",V(x+ (if x<0 then -8 else 8),1.5,z),V(21,5,28),moss,Enum.Material.Grass)
+  mound.Shape=Enum.PartType.Ball
+  local rock=corridor("BankStone",V(x,1.4,z+8),V(7,4,6),earth,Enum.Material.Slate);rock.Shape=Enum.PartType.Ball
+  local trunk=corridor("WoodlandTrunk",V(x,6+lift/2,z),V(12+lift,2.7,2.7),darkWood,Enum.Material.Wood)
+  trunk.Shape=Enum.PartType.Cylinder;trunk.CFrame=CFrame.new(trunk.Position)*CFrame.Angles(0,0,math.pi/2)
+  for i=0,2 do
+   local theta=i*math.pi*2/3
+   local leaves=corridor("WoodlandCrown",V(x+math.cos(theta)*4,15+lift+i,z+math.sin(theta)*4),V(11+group%3,10+lift,11+i%2),if i==1 then Color3.fromRGB(83,125,75)else moss,Enum.Material.Grass)
+   leaves.Shape=Enum.PartType.Ball
+  end
+  for i=0,2 do
+   local shrub=corridor("WoodlandUnderstory",V(x+(if x<0 then 9 else -9),1.8,z-8+i*6),V(5.5,4,5.5),moss,Enum.Material.Grass)
+   shrub.Shape=Enum.PartType.Ball
+  end
+  -- A staggered outer ridge sits behind the trees, wholly within native land.
+  local side=if x<0 then -1 else 1
+  for layer=0,2 do
+   local height=5+(group+layer)%4*3
+   local bank=corridor("OuterRidge",V(side*(139+layer*1.3),height/2-.5,z-7+layer*5),V(10-layer, height,12+group%3*2),if layer==1 then earth else moss,if layer==1 then Enum.Material.Slate else Enum.Material.Grass)
+   bank.Shape=Enum.PartType.Ball
+  end
+  if group==2 or group==3 or group==5 then
+   for sapling=0,1 do
+    local sx=side*(135+sapling*4);local sz=z-5+sapling*7
+    local stem=corridor("BackgroundSapling",V(sx,4,sz),V(8,1.2,1.2),darkWood,Enum.Material.Wood)
+    stem.Shape=Enum.PartType.Cylinder;stem.CFrame=CFrame.new(stem.Position)*CFrame.Angles(0,0,math.pi/2)
+    for tier=0,1 do
+     local leaf=corridor("SaplingCrown",V(sx,8+tier*3,sz),V(6-tier,6,6-tier),Color3.fromRGB(52,89,62),Enum.Material.Grass)
+     leaf.Shape=Enum.PartType.Ball
+    end
+   end
+  end
+ end
+ -- Shallow irregular shoulders overlap the visual road edge, stop short of
+ -- native crossings and add no collision to the central walking corridor.
+ for _,z in ipairs({58,67,103,111})do for _,side in ipairs({-1,1})do
+  local shoulder=corridor("RoadShoulder",V(side*17,.09,z),V(.16,15,7),Color3.fromRGB(159,151,111),Enum.Material.Sand)
+  shoulder.Shape=Enum.PartType.Cylinder;shoulder.CFrame=CFrame.new(shoulder.Position)*CFrame.Angles(0,0,math.pi/2)
+ end end
+ -- Court edge tones frame the yard without painting over the dodge warning.
+ stage="TrainingYard"
+ for _,x in ipairs({42,53,65,77,88})do
+  local patch=corridor("TrainingApron",V(x,.1,65),V(.16,13,9),sand,Enum.Material.Sand)
+  patch.Shape=Enum.PartType.Cylinder;patch.CFrame=CFrame.new(patch.Position)*CFrame.Angles(0,0,math.pi/2)
+ end
+ for _,x in ipairs({43,87})do
+  corridor("TrainingStandard",V(x,6,63),V(.8,12,.8),darkWood,Enum.Material.Wood)
+  corridor("TrainingCloth",V(x+2,9,63),V(4,5,.18),navy,Enum.Material.Fabric)
+  corridor("TrainingHem",V(x+2,6.6,63.14),V(4,.25,.15),gold)
+  local badge=corridor("TrainingBadge",V(x+2,9,63.18),V(1.2,1.2,.12),gold)
+  badge.CFrame=CFrame.new(badge.Position)*CFrame.Angles(0,0,math.pi/4)
+ end
+ for _,x in ipairs({58,72})do corridor("GearRackPost",V(x,3,61),V(.7,6,.8),wood,Enum.Material.Wood)end
+ corridor("GearRackBeam",V(65,5.4,61),V(15,.6,.9),wood,Enum.Material.Wood)
+ for i=0,3 do
+  local shaft=corridor("TrainingSpear",V(60+i*3.2,3.3,61.6),V(.2,6.4,.2),darkWood,Enum.Material.Wood)
+  shaft.CFrame=CFrame.new(shaft.Position)*CFrame.Angles(0,0,.08)
+  local head=corridor("TrainingSpearTip",V(59.74+i*3.2,6.6,61.6),V(.55,.8,.25),pale,Enum.Material.Metal)
+  head.CFrame=CFrame.new(head.Position)*CFrame.Angles(0,0,math.pi/4)
+ end
+ for _,x in ipairs({52,78})do
+  local shield=corridor("PracticeShield",V(x,2,62),V(.5,4,4),wood,Enum.Material.Wood)
+  shield.Shape=Enum.PartType.Cylinder;shield.CFrame=CFrame.new(shield.Position)*CFrame.Angles(0,math.pi/2,0)
+  corridor("ShieldStripe",V(x,2,62.3),V(.45,3.5,.12),gold)
+ end
+ -- Weathered covers stay inside the existing cart collision boxes.
+ stage="CaravanBend"
+ for _,p in ipairs(model:GetChildren())do
+  if p:IsA("BasePart")and (p.Name=="CartBed"or p.Name=="CartWheel"or p.Name=="CartCrates")then p.Transparency=1 end
+ end
+ local cartX=-65;local cartZ=16
+ corridor("CartDetailBed",V(cartX,2,cartZ),V(9,1,14),wood,Enum.Material.Wood)
+ corridor("CartDetailCargo",V(cartX,4,cartZ),V(5.9,2.9,9.9),wood,Enum.Material.Wood)
+ for _,side in ipairs({-1,1})do
+  for row=0,3 do corridor("CartDetailSlat",V(cartX+side*2.96,2.9+row*.7,cartZ),V(.08,.5,9.9),darkWood,Enum.Material.Wood)end
+  for _,z in ipairs({11,21})do
+   local wheel=corridor("CartDetailWheel",V(cartX+side*6,2,z),V(.9,4,4),darkWood,Enum.Material.Wood)
+   wheel.Shape=Enum.PartType.Cylinder
+   local hub=corridor("CartDetailHub",V(cartX+side*6.44,2,z),V(.1,1,1),pale,Enum.Material.Metal);hub.Shape=Enum.PartType.Cylinder
+  end
+ end
+ -- A small dropped load on the west verge connects woodland and rescue story.
+ for i=0,2 do
+  corridor("SupplyBundle",V(-112+i*2.2,.9,47+i%2*2),V(1.9,1.8,3),Color3.fromRGB(169,149,106),Enum.Material.Fabric)
+  corridor("BundleBinding",V(-112+i*2.2,1.82,47+i%2*2),V(.22,.12,3.05),darkWood)
+ end
+ corridor("CaravanStandard",V(-101,5.5,55),V(.6,11,.6),wood,Enum.Material.Wood)
+ corridor("CaravanCloth",V(-99.3,8,55),V(3.4,4.4,.15),navy,Enum.Material.Fabric)
+ corridor("CaravanClothHem",V(-99.3,5.9,55.1),V(3.4,.2,.12),gold)
+ for _,z in ipairs({43,50,57})do
+  local patch=corridor("CaravanVerge",V(-110,.09,z),V(.16,22,10),Color3.fromRGB(151,139,101),Enum.Material.Sand)
+  patch.Shape=Enum.PartType.Cylinder;patch.CFrame=CFrame.new(patch.Position)*CFrame.Angles(0,0,math.pi/2)
+ end
  model.WorldPivot=CFrame.identity;return model
 end
