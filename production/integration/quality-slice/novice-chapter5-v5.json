@@ -1,0 +1,119 @@
+{
+  "knightStart": {
+    "content": [
+      {
+        "type": "text",
+        "text": "{\"root\":\"-4500, 27.998024, 654, 1, -1.03916186e-07, -3.36647951e-16, 1.03916186e-07, 1, -9.86278059e-10, 4.39138196e-16, 9.86278059e-10, 1\",\"text\":{\"TrialBasic\":\"F · Basic Attack\",\"TrialAbility\":\"Q · Taunt\",\"DisplayGoals\":\"Skills used 0/1\",\"DisplayTitle\":\"Knight · Ready\",\"LeaveTrial\":\"Leave trial\",\"DisplayHealth\":\"HP 64/64 · Training dummy 700/700\",\"DisplayHint\":\"Use F/Q or the buttons. Dodge orange warnings.\"},\"hud\":true}"
+      }
+    ],
+    "isError": false
+  },
+  "knightComplete": {
+    "content": [
+      {
+        "type": "text",
+        "text": "{\"DisplayTitle\":\"Knight · Lesson complete\",\"DisplayGoals\":\"Skills used 1/1\",\"DisplayHealth\":\"HP 64/64 · Training dummy 700/700\",\"DisplayHint\":\"Leave training to continue your journey.\"}"
+      }
+    ],
+    "isError": false
+  },
+  "warriorComplete": {
+    "content": [
+      {
+        "type": "text",
+        "text": "{\"root\":\"-4500, 27.998024, 654, 1, 3.0531556e-08, 8.82869958e-16, -3.0531556e-08, 1, 2.89705981e-10, -8.74024764e-16, -2.89705981e-10, 1\",\"text\":{\"DisplayTitle\":\"Warrior · Lesson complete\",\"DisplayGoals\":\"Skills used 1/1\",\"DisplayHealth\":\"HP 54/54 · Training dummy 668/700\",\"DisplayHint\":\"Leave training to continue your journey.\"}}"
+      }
+    ],
+    "isError": false
+  },
+  "archerComplete": {
+    "content": [
+      {
+        "type": "text",
+        "text": "{\"DisplayTitle\":\"Archer · Lesson complete\",\"DisplayGoals\":\"Skills used 1/1\",\"DisplayHealth\":\"HP 46/46 · Training dummy 668/700\",\"DisplayHint\":\"Leave training to continue your journey.\"}"
+      }
+    ],
+    "isError": false
+  },
+  "mageComplete": {
+    "content": [
+      {
+        "type": "text",
+        "text": "{\"DisplayTitle\":\"Mage · Lesson complete\",\"DisplayGoals\":\"Skills used 1/1\",\"DisplayHealth\":\"HP 44/44 · Training dummy 654/700\",\"DisplayHint\":\"Leave training to continue your journey.\"}"
+      }
+    ],
+    "isError": false
+  },
+  "priestComplete": {
+    "content": [
+      {
+        "type": "text",
+        "text": "{\"DisplayTitle\":\"Priest · Lesson complete\",\"DisplayGoals\":\"Skills used 1/1\",\"DisplayHealth\":\"HP 48/48 · Training dummy 700/700\",\"DisplayHint\":\"Leave training to continue your journey.\"}"
+      }
+    ],
+    "isError": false
+  },
+  "disciplineObjectives": {
+    "content": [
+      {
+        "type": "text",
+        "text": "{\"root\":\"-4537.30127, 2.99802518, -105.141228, -3.1735307e-15, 2.20530421e-08, -1, 4.52355708e-09, 1, 2.20530421e-08, 1, -4.52355708e-09, -3.27328873e-15\",\"text\":{\"Objective_try_Mage\":\"✓ Try Mage training\",\"ChapterTitle\":\"Before the Oath\",\"Objective_try_Archer\":\"✓ Try Archer training\",\"Objective_try_Knight\":\"✓ Try Knight training\",\"Objective_try_Priest\":\"✓ Try Priest training\",\"NoviceClaim\":\"Claim 50 XP\",\"Objective_try_Warrior\":\"✓ Try Warrior training\",\"ObjectiveCount\":\"OBJECTIVES  5 / 5\",\"ChapterNumber\":\"Chapter 5 / 6\"},\"visible\":true}"
+      }
+    ],
+    "isError": false
+  },
+  "chapter6Reached": {
+    "content": [
+      {
+        "type": "text",
+        "text": "{\"root\":\"-4537.30127, 2.99802518, -105.141228, -4.50557797e-14, 1.181862e-07, -1, 2.42476546e-08, 1, 1.181862e-07, 1, -2.42476546e-08, -4.79215192e-14\",\"text\":{\"Objective_try_Mage\":\"✓ Try Mage training\",\"ChapterTitle\":\"Before the Oath\",\"Objective_try_Archer\":\"✓ Try Archer training\",\"Objective_try_Knight\":\"✓ Try Knight training\",\"Objective_try_Priest\":\"✓ Try Priest training\",\"NoviceClaim\":\"Waiting for the server…\",\"Objective_try_Warrior\":\"✓ Try Warrior training\",\"ObjectiveCount\":\"OBJECTIVES  5 / 5\",\"ChapterNumber\":\"Chapter 5 / 6\"},\"visible\":true}"
+      }
+    ],
+    "isError": false
+  },
+  "chapter6Confirmed": {
+    "content": [
+      {
+        "type": "text",
+        "text": "{\"root\":\"-4537.30127, 2.99802518, -105.141228, -9.08880989e-14, -3.74394133e-08, -1, -7.68268116e-09, 1, -3.74394133e-08, 1, 7.68268116e-09, -9.1175731e-14\",\"text\":{\"23\":{\"name\":\"TextLabel\",\"text\":\"Session only · Action completed.\"},\"22\":{\"name\":\"OpenHumanParty\",\"text\":\"Human Party\"},\"21\":{\"name\":\"TextLabel\",\"text\":\"Play with other players\"},\"20\":{\"name\":\"NoviceExplore\",\"text\":\"Explore\"},\"19\":{\"name\":\"ExploreContext\",\"text\":\"Explore to continue. Open Guild menu to return to this chapter.\"},\"18\":{\"name\":\"TextLabel\",\"text\":\"Complete a solo class trial to choose that class.\"},\"9\":{\"name\":\"ChapterTitle\",\"text\":\"The Right to Found a Guild\"},\"1\":{\"name\":\"TextLabel\",\"text\":\"Complete a solo class trial to choose that class.\"},\"15\":{\"name\":\"ChapterStep5\",\"text\":\"✓ 5\"},\"3\":{\"name\":\"PartyTab\",\"text\":\"NPC heroes\"},\"2\":{\"name\":\"GuildTab\",\"text\":\"Guild\"},\"5\":{\"name\":\"InventoryTab\",\"text\":\"Inventory\"},\"4\":{\"name\":\"QuestsTab\",\"text\":\"Quests\"},\"7\":{\"name\":\"ChronicleHeading\",\"text\":\"THE FIRST CHRONICLE\"},\"6\":{\"name\":\"LaunchRewardsNavigation\",\"text\":\"Daily and season rewards\"},\"14\":{\"name\":\"ChapterStep4\",\"text\":\"✓ 4\"},\"8\":{\"name\":\"ChapterNumber\",\"text\":\"Chapter 6 / 6\"},\"16\":{\"name\":\"ChapterStep6\",\"text\":\"6\"},\"17\":{\"name\":\"ChapterState\",\"text\":\"Your next steps\"},\"13\":{\"name\":\"ChapterStep3\",\"text\":\"✓ 3\"},\"12\":{\"name\":\"ChapterStep2\",\"text\":\"✓ 2\"},\"11\":{\"name\":\"ChapterStep1\",\"text\":\"✓ 1\"},\"10\":{\"name\":\"ChapterStory\",\"text\":\"Pass your class trial and prepare a home for your company. A guild begins with the people beside you.\"}},\"visible\":true}"
+      }
+    ],
+    "isError": false
+  },
+  "warriorTrialStart": {
+    "content": [
+      {
+        "type": "text",
+        "text": "{\"root\":\"-4500, 27.998024, 854, 1, -4.94467223e-09, 6.81796473e-17, 4.94467223e-09, 1, -1.01403497e-10, -6.76782435e-17, 1.01403497e-10, 1\",\"text\":{\"TrialBasic\":\"F · Basic Attack\",\"TrialAbility\":\"Q · Power Strike\",\"DisplayGoals\":\"Basic hits 0/3 · Sentinel defeated 0/1 · Warnings dodged 0/1\",\"DisplayTitle\":\"Warrior · Ready\",\"LeaveTrial\":\"Leave trial\",\"DisplayHealth\":\"HP 57/57 · Sentinel 700/700\",\"DisplayHint\":\"Use F/Q or the buttons. Dodge orange warnings.\"}}"
+      }
+    ],
+    "isError": false
+  },
+  "warriorTrialCombat1": {
+    "content": [
+      {
+        "type": "text",
+        "text": "{\"DisplayTitle\":\"Warrior · Training\",\"DisplayGoals\":\"Basic hits 3/3 · Sentinel defeated 0/1 · Warnings dodged 1/1\",\"DisplayHealth\":\"HP 57/57 · Sentinel 598/700\",\"DisplayHint\":\"Move closer to your target.\"}"
+      }
+    ],
+    "isError": false
+  },
+  "warriorTrialCombat2": {
+    "content": [
+      {
+        "type": "text",
+        "text": "{\"DisplayTitle\":\"Warrior · Training\",\"DisplayGoals\":\"Basic hits 3/3 · Sentinel defeated 0/1 · Warnings dodged 1/1\",\"DisplayHealth\":\"HP 39/57 · Sentinel 496/700\",\"DisplayHint\":\"Move closer to your target.\"}"
+      }
+    ],
+    "isError": false
+  },
+  "warriorTrialCombat3": {
+    "content": [
+      {
+        "type": "text",
+        "text": "{\"DisplayTitle\":\"Warrior · Try again\",\"DisplayGoals\":\"Basic hits 3/3 · Sentinel defeated 0/1 · Warnings dodged 1/1\",\"DisplayHealth\":\"HP 0/57 · Sentinel 496/700\",\"DisplayHint\":\"Try again when you are ready.\"}"
+      }
+    ],
+    "isError": false
+  }
+}
