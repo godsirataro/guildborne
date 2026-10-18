@@ -1,0 +1,20 @@
+{
+  "course": {
+    "content": [
+      {
+        "type": "text",
+        "text": "{\"objective\":\"follow_tracks\",\"model\":\"NoviceCourse_11732987790\",\"colliders\":61,\"mode\":\"Enum.ModelStreamingMode.Atomic\",\"markers\":[{\"name\":\"Arrival\",\"position\":[-4500,3,214]},{\"name\":\"CaravanRejoin\",\"position\":[-4565,3,4]},{\"name\":\"CaravanRescue\",\"position\":[-4584,3,25]},{\"name\":\"CaravanSupplies\",\"position\":[-4546,3,25]},{\"name\":\"CourierCamp\",\"position\":[-4565,3,153]},{\"name\":\"CrossroadsKeeper\",\"position\":[-4435,3,-40]},{\"name\":\"Discipline_Archer\",\"position\":[-4565,3,-113]},{\"name\":\"Discipline_Knight\",\"position\":[-4581,3,-113]},{\"name\":\"Discipline_Mage\",\"position\":[-4549,3,-113]},{\"name\":\"Discipline_Priest\",\"position\":[-4533,3,-113]},{\"name\":\"Discipline_Warrior\",\"position\":[-4597,3,-113]},{\"name\":\"FiveDisciplines\",\"position\":[-4565,3,-98]},{\"name\":\"HallForecourt\",\"position\":[-4500,3,-157]},{\"name\":\"HallInterior\",\"position\":[-4500,3,-192]},{\"name\":\"TrainingYard\",\"position\":[-4435,3,90]}],\"parts\":321}"
+      }
+    ],
+    "isError": false
+  },
+  "paths": {
+    "content": [
+      {
+        "type": "text",
+        "text": "[{\"ok\":true,\"name\":\"arrival-courier\",\"waypoints\":26,\"status\":\"Enum.PathStatus.Success\",\"jumps\":0},{\"ok\":true,\"name\":\"courier-training\",\"waypoints\":38,\"status\":\"Enum.PathStatus.Success\",\"jumps\":0},{\"ok\":true,\"name\":\"training-rescue\",\"waypoints\":45,\"status\":\"Enum.PathStatus.Success\",\"jumps\":0}]"
+      }
+    ],
+    "isError": false
+  }
+}

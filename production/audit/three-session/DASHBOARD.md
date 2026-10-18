@@ -2,6 +2,8 @@
 
 ## Latest goal checkpoint (supersedes statuses below)
 
+RESUMED at99% actual remaining quota; GoalACTIVE, reset not redeemed bycontroller. New shared v5 ledger after allv4writers stopped. Coordinator9ae9662 pushed; S13noviceentryart/S14nativechaptercard/S15BasicVFXtiming/S17courierinteraction now dispatched to separate9ae9662worktrees with exclusive scopes. See RESUMED_NOVICE_WAVE_V5.md. Current earned Studio627892 remains chapter3follow_tracks; beforeart/course/threeenginepaths captured. Pending worker implementations and review; do not count dispatch as completed art.
+
 QUOTA BOUNDARY — 5% remaining verified; no new work waves. Goal ACTIVE/incomplete. Ordinary chapter-two dodge/rescue/reward passed, current preserved Memory is chapter three in Studio 62789207-389b-45dc-95a0-c5bffd63cd0b. QUOTA_BOUNDARY_20261018.md records exact state and first-vista art root cause: novice blockout has a separate unassigned art scope, not covered by the Greenwood 116 placements. Full quality/device/human acceptance remains open.
 
 Latest combined Play: source 976c12e pushed; candidate 24fc77b0…9586e in Studio 62789207-389b-45dc-95a0-c5bffd63cd0b has 116 placements and matching art/collision ready. Fresh ordinary chapter-one reward and chapter-two basic hit verified; current dodge_area objective remains pending. Preserve this Memory session. Starter area is still visually sparse. See COMBINED_ORDINARY_20261018.md. Quota 6%, goal ACTIVE.
