@@ -1,6 +1,30 @@
 --!strict
 -- Read-only directions from public geometry and the projected quest state.
 return function(city:any,rules:any,waypoint:any,resolveMarker:any?)
+ -- Exact action-part suffixes authored by AshenWorld and TowerWorld. The client
+ -- never derives a marker from translated text or infers a puzzle answer.
+ local ashenObjectives={
+  follow_ashen_supplies={"supply_trace_1","supply_trace_2","supply_trace_3"},help_ashen_gatekeeper={"gatekeeper"},request_ashen_charter={"permit_ledger"},
+  preserve_hearth_traces={"memory_1","memory_2","memory_3"},arrange_hearth_memories={"memory_1","memory_2","memory_3"},meet_hearth_survivor={"survivor"},
+  secure_bridge_supports={"support_1","support_2","support_3"},choose_bridge_route={"sheltered_route","direct_route"},escort_bridgewright={"bridgewright"},
+  question_ashen_witness={"testimony_1","testimony_2","testimony_3"},verify_ashen_testimony={"witness"},choose_witness_route={"trust_route","guard_route"},
+  tune_ashen_bells={"tuning_1","tuning_2","tuning_3"},survive_bell_wave={},send_ashen_dispatch={"courier"},
+  break_ashen_bindings={"binding_1","binding_2","binding_3"},protect_ashen_survivor={"civilian"},defeat_ashen_warden={},
+ }
+ local towerObjectives={
+  reach_tower_checkpoint_five={"checkpoint_1","checkpoint_2","checkpoint_3","checkpoint_4","checkpoint_5"},
+  finish_tower_orientation={"checkpoint_6","checkpoint_7","checkpoint_8","checkpoint_9","checkpoint_10"},
+  collect_tower_chart={"route_chart"},confirm_tower_charter={"council"},try_guardian_guard={"guard_trial"},try_guardian_roles={"mend_trial"},
+  read_guardian_rules={"rule_1","rule_2","rule_3"},complete_guardian_defense={"defense_trial"},find_hidden_archive={"hidden_exit"},
+  solve_archive_sequence={"sequence_1","sequence_2","sequence_3"},recover_archive_chart={"archive_record"},
+  read_guild_memories={"caravan_memory","timber_memory","guild_memory"},rescue_memory_echo={"help_memory"},renew_tower_oath={"oath_courage","oath_compassion"},
+  read_twin_door_clues={"door_clue_1","door_clue_2","door_clue_3"},choose_tower_door={"sun_door","moon_door"},
+  follow_tower_bypass={"bypass_left","bypass_right","bypass_record"},complete_records_guardian={"records_guardian"},
+  copy_first_ledger={"copy_ledger"},earn_three_city_seals={"city_seal_1","city_seal_2","city_seal_3"},
+ }
+ local surfaceEncounters={survive_bell_wave={id="rune_caster",marker="CasterCourt"},defeat_ashen_warden={id="arcane_warden",marker="ArcaneWarden"}}
+ local lessonRoles={try_guardian_guard="Guard",try_guardian_roles="Mend",complete_guardian_defense="Combined"}
+ local function finite(value:any):boolean return type(value)=="number" and value==value and math.abs(value)<math.huge end
  -- Explicit Chapter02 marker names authored by IronveilWorld, not inferred labels.
  local mineObjectives={inspect_ironveil_scales={"inspect_ironveil_scales_scale_1","inspect_ironveil_scales_scale_2","inspect_ironveil_scales_scale_3"},interview_carrier={"interview_carrier_carrier"},enter_ironveil={"MineReception"}}
  mineObjectives.read_mine_signal={"read_mine_signal_signal_1","read_mine_signal_signal_2","read_mine_signal_signal_3"}
@@ -34,6 +58,83 @@ return function(city:any,rules:any,waypoint:any,resolveMarker:any?)
   end
   if not region and not inCity and not inGuild then return nil end
   if quest and quest.kind=="CampaignComplete" then return nil end
+  if quest and quest.kind=="Campaign" and quest.focus=="UpgradeGuildHall" and region=="Ashen" and context then
+   for _,key in ipairs({"ashen","tower"})do
+    local court=context[key];local floor=court and court.floor
+    if floor and court.ownerId==context.playerId and finite(court.playerY) and court.playerY>=floor.y and court.playerY<=floor.y+20
+     and math.abs(x-floor.x)<=floor.width/2 and math.abs(z-floor.z)<=floor.depth/2 then
+     local p=court.anchors and court.anchors.CourtExit
+     if p and finite(p.y) and p.y>=floor.y and p.y<=floor.y+20 then return pointTarget(p,"Ashen","Portal",false) end
+     return nil
+    end
+   end
+   local y=context.playerY;local area=city.Regions.Ashen
+   if y~=nil and (not finite(y) or y<1 or y>35 or math.abs(x-area.X)>area.HalfWidth or z<area.Z-area.Back or z>area.Z+area.Front)then return nil end
+  end
+  local id=quest and quest.kind=="Campaign" and quest.objective
+  local courtNames=id and (ashenObjectives[id] or towerObjectives[id])
+  if courtNames then
+   -- Known public travel legs remain useful before a private court streams in.
+   if inGuild then return pointTarget(context.island.exit,"Central City","Portal",false) end
+   if inCity then return {name="Ashen",x=0,z=city.Regions.Ashen.CityGateZ,zone="City",kind="Portal",final=false} end
+   if region and region~="Ashen" then local landing=city.Destinations[region];return {name="Central City",x=landing.X,z=landing.Z+12,zone=region,kind="Portal",final=false} end
+   local court=context and (if ashenObjectives[id] then context.ashen else context.tower)
+   if not court or court.ownerId~=context.playerId or not court.floor or not court.anchors then return nil end
+   local floor=court.floor;local y=court.playerY
+   if not finite(y) then return nil end
+   local function inCourt(point:any):boolean
+    return point~=nil and finite(point.x) and finite(point.y) and finite(point.z)
+     and math.abs(point.x-floor.x)<=floor.width/2 and math.abs(point.z-floor.z)<=floor.depth/2 and point.y>=floor.y and point.y<=floor.y+20
+   end
+   local inside=inCourt({x=x,y=y,z=z})
+   local area=city.Regions.Ashen
+   -- City.region also covers Tower's annex. A low/falling annex avatar is never
+   -- on the surface or another owner's elevated court.
+   local surface=math.abs(x-area.X)<=area.HalfWidth and z>=area.Z-area.Back and z<=area.Z+area.Front and y>=1 and y<=35
+   if id=="complete_records_guardian" and court.trial==true then return instruction(quest) end
+   local combat=surfaceEncounters[id]
+   if combat then
+    if inside then return if inCourt(court.anchors.CourtExit) then pointTarget(court.anchors.CourtExit,"Ashen","Portal",false) else nil end
+    if not surface then return nil end
+    local enemy=court.encounters and court.encounters[combat.id]
+    if enemy and enemy.ownerId==context.playerId and enemy.alive==true and enemy.marker==combat.marker then
+     local p=enemy.point
+     if p and finite(p.y) and p.y>=1 and p.y<=35 then return pointTarget(p,quest.name,"Enemy",true) end
+    end
+    return nil
+   end
+   if not inside then
+    if not surface then return nil end
+    local p=court.anchors.CourtEntrance
+    if p and finite(p.y) and p.y>=1 and p.y<=35 and math.abs(p.x-area.X)<=area.HalfWidth and p.z>=area.Z-area.Back and p.z<=area.Z+area.Front then
+     return pointTarget(p,"Ashen","Portal",false)
+    end
+    return nil
+   end
+   local escortActor=if id=="help_ashen_gatekeeper"then "gatekeeper"elseif id=="escort_bridgewright"then "bridgewright"else nil
+   if (escortActor or id=="rescue_memory_echo") and court.escortStatus and court.escortStatus~="Failed" and court.escortStatus~="Cancelled" then
+    if not escortActor then return instruction(quest) end -- Tower exposes no authoritative route/exit.
+    local reason=court.escortReasons and court.escortReasons[escortActor]
+    local p=if reason=="MeetAtExit" then court.escortExit else court.escortPosition
+    return if inCourt(p) then pointTarget(p,quest.name,"Escort",false) else instruction(quest)
+   end
+   if id=="protect_ashen_survivor" and court.protectionStatus=="Active" then
+    return if court.warningLive and inCourt(court.warning) then pointTarget(court.warning,quest.name,"Warning",false) else instruction(quest)
+   end
+   if lessonRoles[id] and court.lessonRole==lessonRoles[id] and (court.lessonStatus=="Active" or court.lessonStatus=="Completed") then return instruction(quest) end
+   local best=nil;local distance=math.huge
+   for _,suffix in ipairs(courtNames)do
+    local p=court.anchors[id.."_"..suffix]
+    if inCourt(p) then
+     local squared=(x-p.x)^2+(z-p.z)^2
+     if squared<distance then best=p;distance=squared end
+    end
+   end
+   -- Several valid markers describe an area, never a preferred story choice or
+   -- a claimed next puzzle step. Enabled prompts retain server-owned progress.
+   local multiple=#courtNames>1
+   return pointTarget(best,quest.name,if multiple then "ObjectiveArea" else "Objective",not multiple)
+  end
   local mineNames=quest and quest.kind=="Campaign" and quest.objective and mineObjectives[quest.objective]
   if mineNames then
    -- Public travel legs do not depend on streaming the distant private mine.
@@ -116,8 +217,8 @@ return function(city:any,rules:any,waypoint:any,resolveMarker:any?)
   end
   if inCity and needsIsland then
    local best=nil;local distance=math.huge
-   for _,id in ipairs({"Arrival","GuildDistrict","MarketDistrict","TowerDistrict"})do
-    local stop=city.GuildPortalStops and city.GuildPortalStops[id]
+   for _,stopId in ipairs({"Arrival","GuildDistrict","MarketDistrict","TowerDistrict"})do
+    local stop=city.GuildPortalStops and city.GuildPortalStops[stopId]
     if stop then local squared=(x-stop.X)^2+(z-stop.Z)^2;if squared<distance then distance=squared;best=stop end end
    end
    if best then return {name=best.Name,x=best.X,z=best.Z,zone="City",kind="Portal",final=false}end

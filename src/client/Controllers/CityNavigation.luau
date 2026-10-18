@@ -12,9 +12,12 @@ local QuestTarget=require(game.ReplicatedStorage.Shared.Data.QuestTracker)
 local Rules=require(game.ReplicatedStorage.Shared.Data.Expansion)
 local IslandLayout=require(game.ReplicatedStorage.Shared.Config.GuildIslandLayout)
 local CombatLayout=require(game.ReplicatedStorage.Shared.Data.CombatHudLayout)
+local CampaignRouteContext=require(script.Parent.Parent.UI.Components.CampaignRouteContext)
 -- Read the replicated owner and real anchors each tick: islands and Hall stations can move.
 local function navigationContext(player:Player,x:number,z:number):any
  local context:any={playerId=player.UserId,inGuild=false,authored=true,roads={}}
+ local playerRoot=player.Character and player.Character:FindFirstChild("HumanoidRootPart")
+ if playerRoot and playerRoot:IsA("BasePart") then context.playerY=playerRoot.Position.Y end
  local world=workspace:FindFirstChild("GuildborneWorld");if not world then return context end
  for _,id in ipairs(Civic.Order)do if Civic.contains(id,x,z)then
   local area=world:FindFirstChild(id);local exit=area and area:FindFirstChild("Central City")
@@ -184,6 +187,11 @@ local function navigationContext(player:Player,x:number,z:number):any
     end
    end
   end
+ end
+ local root=player.Character and player.Character:FindFirstChild("HumanoidRootPart")
+ if root and root:IsA("BasePart") then
+  local courts=CampaignRouteContext(workspace,player.UserId,root.Position)
+  context.ashen=courts.ashen;context.tower=courts.tower;context.playerY=root.Position.Y
  end
  return context
 end

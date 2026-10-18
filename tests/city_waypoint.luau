@@ -1,6 +1,142 @@
 --!strict
 local W=require("../src/shared/Data/CityWaypoint")
 return function(test: any,eq: any)
+ local function laterFixture(tower:boolean):any
+  local x=if tower then 2000 else 1000
+  return {ownerId=7,playerY=103,floor={x=x,y=100,z=1400,width=if tower then 330 else 230,depth=if tower then 330 else 230},anchors={
+   CourtEntrance={x=1000,y=2.3,z=1498,zone="Ashen"},CourtExit={x=x,y=100.3,z=1502,zone="Ashen"}}}
+ end
+ local laterRoute=require("../src/shared/Data/QuestRoute")(require("../src/shared/Config/City"),{},W)
+ local catalog={Journal={}}
+ test("later campaign public legs survive unstreamed courts and ready claims never travel",function()
+  for _,id in ipairs({"follow_ashen_supplies","collect_tower_chart"})do
+   local q:any={kind="Campaign",objective=id,name=id}
+   eq(laterRoute(q,catalog,0,-1100).name,"Ashen")
+   eq(laterRoute(q,catalog,0,1505).name,"Central City")
+   eq(laterRoute(q,catalog,1000,1505),nil)
+   local context={playerId=7,inGuild=true,island={ownerId=7,exit={x=-44,z=-65}}}
+   eq(laterRoute(q,catalog,0,23,context).name,"Central City")
+   q.ready=true;local target=laterRoute(q,catalog,9000,9000);eq(target.kind,"Instruction");eq(target.x,nil)
+  end
+ end)
+ test("later courts require owner floor enabled anchors and correct vertical slot",function()
+  for _,tower in ipairs({false,true})do
+   local c=laterFixture(tower);local x=c.floor.x;local context:any={playerId=7,ashen=if not tower then c else nil,tower=if tower then c else nil}
+   local id=if tower then "collect_tower_chart"else "request_ashen_charter"
+   local name=id..(if tower then "_route_chart"else "_permit_ledger")
+   local q={kind="Campaign",objective=id,name=id}
+   c.anchors[name]={x=x+15,y=100.3,z=1450,zone="Ashen"}
+   eq(laterRoute(q,catalog,x,1450,context).x,x+15)
+   c.playerY=4;eq(laterRoute(q,catalog,1000,1505,context).z,1498)
+   if tower then eq(laterRoute(q,catalog,2000,1450,context),nil)end -- Annex is not surface.
+   c.playerY=183;eq(laterRoute(q,catalog,x,1450,context),nil)
+   c.playerY=103;c.ownerId=8;eq(laterRoute(q,catalog,x,1450,context),nil)
+   c.ownerId=7;c.anchors[name].y=180;eq(laterRoute(q,catalog,x,1450,context),nil)
+   c.anchors[name]=nil;eq(laterRoute(q,catalog,x,1450,context),nil)
+   c.playerY=4;c.anchors.CourtEntrance=nil;eq(laterRoute(q,catalog,1000,1505,context),nil)
+   c.playerY=0/0;eq(laterRoute(q,catalog,x,1450,context),nil)
+   c.floor=nil;eq(laterRoute(q,catalog,x,1450,context),nil)
+  end
+ end)
+ test("all Chapter03 and04 prompt objectives map only to authored action names",function()
+  local cases:{{tower:boolean,config:any,markers:{[string]:string}}}={
+   {tower=false,config=require("../src/server/Config/ChapterThree"),markers={
+    follow_ashen_supplies="supply_trace_2",help_ashen_gatekeeper="gatekeeper",request_ashen_charter="permit_ledger",preserve_hearth_traces="memory_2",arrange_hearth_memories="memory_3",meet_hearth_survivor="survivor",
+    secure_bridge_supports="support_1",choose_bridge_route="direct_route",escort_bridgewright="bridgewright",question_ashen_witness="testimony_3",verify_ashen_testimony="witness",choose_witness_route="guard_route",tune_ashen_bells="tuning_2",send_ashen_dispatch="courier",break_ashen_bindings="binding_1",protect_ashen_survivor="civilian"}},
+   {tower=true,config=require("../src/server/Config/ChapterFour"),markers={
+    reach_tower_checkpoint_five="checkpoint_5",finish_tower_orientation="checkpoint_10",collect_tower_chart="route_chart",confirm_tower_charter="council",try_guardian_guard="guard_trial",try_guardian_roles="mend_trial",read_guardian_rules="rule_2",complete_guardian_defense="defense_trial",find_hidden_archive="hidden_exit",solve_archive_sequence="sequence_3",recover_archive_chart="archive_record",read_guild_memories="guild_memory",rescue_memory_echo="help_memory",renew_tower_oath="oath_compassion",read_twin_door_clues="door_clue_2",choose_tower_door="moon_door",follow_tower_bypass="bypass_record",complete_records_guardian="records_guardian",copy_first_ledger="copy_ledger",earn_three_city_seals="city_seal_3"}},
+  }
+  local count=0
+  for _,case in ipairs(cases)do
+   local c=laterFixture(case.tower);local x=c.floor.x;local context:any={playerId=7,ashen=if not case.tower then c else nil,tower=if case.tower then c else nil}
+   for _,chapter in ipairs(case.config.Chapters)do for _,id in ipairs(chapter.Objectives)do
+    if id=="survive_bell_wave" or id=="defeat_ashen_warden"then continue end
+    local suffix=assert(case.markers[id],"uncovered canonical objective "..id)
+    c.anchors={[id.."_"..suffix]={x=x+10,y=100.3,z=1450,zone="Ashen"}}
+    local target=laterRoute({kind="Campaign",objective=id,name=id},catalog,x,1450,context)
+    eq(target.x,x+10);eq(target.name,id);count+=1
+    c.anchors={};eq(laterRoute({kind="Campaign",objective=id,name=id},catalog,x,1450,context),nil)
+   end end
+  end
+  eq(count,36)
+ end)
+ test("later choices and sequences are nonfinal areas never selected answers",function()
+  local choices:any={{tower=false,objective="choose_bridge_route",suffix="sheltered_route"},{tower=false,objective="choose_witness_route",suffix="trust_route"},{tower=false,objective="arrange_hearth_memories",suffix="memory_1"},{tower=false,objective="tune_ashen_bells",suffix="tuning_2"},{tower=true,objective="renew_tower_oath",suffix="oath_courage"},{tower=true,objective="choose_tower_door",suffix="sun_door"},{tower=true,objective="solve_archive_sequence",suffix="sequence_3"},{tower=true,objective="reach_tower_checkpoint_five",suffix="checkpoint_1"}}
+  for _,case in ipairs(choices)do
+   local c=laterFixture(case.tower);local context:any={playerId=7,ashen=if not case.tower then c else nil,tower=if case.tower then c else nil}
+   c.anchors[case.objective.."_"..case.suffix]={x=c.floor.x+10,y=100.3,z=1450,zone="Ashen"}
+   local target=laterRoute({kind="Campaign",objective=case.objective,name="Read the choices"},catalog,c.floor.x,1450,context)
+   eq(target.kind,"ObjectiveArea");eq(target.final,false);eq(target.name,"Read the choices")
+  end
+ end)
+ test("Tower bypass follows only supplied enabled branch then the record",function()
+  local c=laterFixture(true);local context={playerId=7,tower=c};local q={kind="Campaign",objective="follow_tower_bypass",name="Bypass"}
+  for i,suffix in ipairs({"left","right","record"})do
+   c.anchors={["follow_tower_bypass_bypass_"..suffix]={x=2000+i,y=100.3,z=1450,zone="Ashen"}}
+   local target=laterRoute(q,catalog,2000,1450,context);eq(target.x,2000+i);eq(target.final,false)
+  end
+  c.anchors={unrelated={x=2000,y=100.3,z=1450,zone="Ashen"}};eq(laterRoute(q,catalog,2000,1450,context),nil)
+ end)
+ test("Ashen combat exits court then requires real owned living surface encounter",function()
+  local c=laterFixture(false);local context={playerId=7,ashen=c}
+  for _,case in ipairs({{"survive_bell_wave","rune_caster","CasterCourt"},{"defeat_ashen_warden","arcane_warden","ArcaneWarden"}})do
+   local q={kind="Campaign",objective=case[1],name="Battle"};c.playerY=103
+   eq(laterRoute(q,catalog,1000,1450,context).z,1502)
+   c.playerY=4;eq(laterRoute(q,catalog,1000,1450,context),nil)
+   local enemy:any={ownerId=7,alive=true,marker=case[3],point={x=1010,y=3,z=1400,zone="Ashen"}}
+   c.encounters={[case[2]]=enemy};eq(laterRoute(q,catalog,1000,1450,context).kind,"Enemy")
+   enemy.ownerId=8;eq(laterRoute(q,catalog,1000,1450,context),nil)
+   enemy.ownerId=7;enemy.alive=false;eq(laterRoute(q,catalog,1000,1450,context),nil)
+   enemy.alive=true;enemy.marker="Wrong";eq(laterRoute(q,catalog,1000,1450,context),nil)
+   enemy.marker=case[3];enemy.point.y=103;eq(laterRoute(q,catalog,1000,1450,context),nil)
+   c.playerY=183;eq(laterRoute(q,catalog,1000,1450,context),nil)
+  end
+ end)
+ test("Ashen escorts and protection use current replicated positions and warning lifetime",function()
+  local c=laterFixture(false);local context={playerId=7,ashen=c}
+  local q:any={kind="Campaign",objective="escort_bridgewright",name="Escort"}
+  c.escortStatus="Active";eq(laterRoute(q,catalog,1000,1450,context).kind,"Instruction")
+  c.escortPosition={x=1020,y=100,z=1460,zone="Ashen"};c.escortExit={x=1030,y=100,z=1460,zone="Ashen"}
+  c.escortReasons={gatekeeper="MeetAtExit"};eq(laterRoute(q,catalog,1000,1450,context).x,1020)
+  c.escortReasons.bridgewright="MeetAtExit";eq(laterRoute(q,catalog,1000,1450,context).x,1030)
+  c.escortExit.y=180;eq(laterRoute(q,catalog,1000,1450,context).kind,"Instruction")
+  c.escortStatus="Failed";eq(laterRoute(q,catalog,1000,1450,context),nil)
+  q.objective="protect_ashen_survivor";c.protectionStatus="Active";eq(laterRoute(q,catalog,1000,1450,context).kind,"Instruction")
+  c.warning={x=1030,y=100.3,z=1460,zone="Ashen"};c.warningLive=true;eq(laterRoute(q,catalog,1000,1450,context).kind,"Warning")
+  c.warningLive=false;eq(laterRoute(q,catalog,1000,1450,context).kind,"Instruction")
+ end)
+ test("Tower activities remain instruction only and failed lessons permit retry",function()
+  local c=laterFixture(true);local context={playerId=7,tower=c};local q:any={kind="Campaign",objective="rescue_memory_echo",name="Help echo"}
+  c.escortStatus="Active";eq(laterRoute(q,catalog,2000,1450,context).kind,"Instruction")
+  c.escortStatus="Cancelled";eq(laterRoute(q,catalog,2000,1450,context),nil)
+  for _,case in ipairs({{"try_guardian_guard","Guard","guard_trial"},{"try_guardian_roles","Mend","mend_trial"},{"complete_guardian_defense","Combined","defense_trial"}})do
+   q.objective=case[1];c.lessonStatus="Active";c.lessonRole=case[2];eq(laterRoute(q,catalog,2000,1450,context).kind,"Instruction")
+   c.lessonStatus="Failed";c.anchors={[case[1].."_"..case[3]]={x=2010,y=100.3,z=1450,zone="Ashen"}}
+   eq(laterRoute(q,catalog,2000,1450,context).kind,"Objective")
+  end
+  q.objective="complete_records_guardian";c.trial=true;c.playerY=135
+  eq(laterRoute(q,catalog,2000,1300,context).kind,"Instruction")
+  c.trial=false;eq(laterRoute(q,catalog,2000,1300,context),nil)
+  q.objective="unknown_later_objective";c.playerY=103;eq(laterRoute(q,catalog,2000,1450,context),nil)
+ end)
+ test("authored later court guidance is bearing only without a fabricated safe path",function()
+  local c=laterFixture(true);c.anchors.collect_tower_chart_route_chart={x=2010,y=100.3,z=1450,zone="Ashen",anchor="synthetic"}
+  local target=laterRoute({kind="Campaign",objective="collect_tower_chart",name="Chart"},catalog,2000,1450,{playerId=7,tower=c,authored=true})
+  eq(target.guidance,"destination");eq(target.anchor,nil);eq(target.destinationName,"Chart")
+ end)
+ test("earned Hall directions exit owned courts before returning from Ashen surface",function()
+  local q={kind="Campaign",focus="UpgradeGuildHall",name="Upgrade Hall"}
+  eq(laterRoute(q,catalog,1000,1450,{playerId=7,playerY=103}),nil)
+  eq(laterRoute(q,catalog,2000,1450,{playerId=7,playerY=103}),nil)
+  for _,tower in ipairs({false,true})do
+   local c=laterFixture(tower);local context:any={playerId=7,playerY=103,ashen=if not tower then c else nil,tower=if tower then c else nil}
+   local target=laterRoute(q,catalog,c.floor.x,1450,context);eq(target.name,"Ashen");eq(target.x,c.floor.x);eq(target.y,100.3)
+   c.anchors.CourtExit=nil;eq(laterRoute(q,catalog,c.floor.x,1450,context),nil)
+   c.ownerId=8;eq(laterRoute(q,catalog,c.floor.x,1450,context),nil)
+   c.playerY=4;context.playerY=4;eq(laterRoute(q,catalog,1000,1505,context).name,"Central City")
+   eq(laterRoute(q,catalog,2000,1450,context),nil)
+  end
+ end)
  test("remaining mine objectives respect activities and never invent puzzle progress",function()
   local city=require("../src/shared/Config/City");local rules=require("../src/shared/Data/Expansion")
   local route=require("../src/shared/Data/QuestRoute")(city,rules,W)
