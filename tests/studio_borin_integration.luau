@@ -88,17 +88,23 @@ return function(options:any?):any
  local Shared=game.ReplicatedStorage.Shared
  local B=require(Shared.Presentation.BorinPresentation)
  local Motion=require(Shared.Presentation.BorinWorkMotion)
+ local npcId=if options and options.npcId then options.npcId else "smith_borin"
+ assert(npcId=="smith_borin" or npcId=="host_deepforge","unsupported native fixture identity")
  local kit=require(game.ServerScriptService.Server.Services.CityCharacterKit)(true,"smith_borin")
  local model=assert(kit:FindFirstChild("smith_borin")) :: Model
- model:SetAttribute("NpcId","smith_borin");model.Parent=workspace;kit:Destroy()
+ model.Name=npcId;model:SetAttribute("NpcId",npcId)
+ if npcId=="host_deepforge" then model:SetAttribute("WorkMotionIdentity","smith_borin") end
+ model.Parent=workspace;kit:Destroy()
  local result:any=nil
  local ok,err=pcall(function()
   local root=assert(model.PrimaryPart);local original=root.CFrame
+  local designId=model:GetAttribute("DesignId")
   assert(B.attach(model));assert(B.attach(model));assert(#model:GetChildren()>0)
   local stations=0;for _,child in ipairs(model:GetChildren()) do if child.Name=="BorinWorkstation" then stations+=1 end end;assert(stations==1)
   local motors:{[Motor6D]:CFrame}={};for _,v in ipairs(model:GetDescendants()) do if v:IsA("Motor6D") then motors[v]=v.C0 end end
   local target=model:FindFirstChild("BorinContactTarget",true) :: Attachment
   local tip=model:FindFirstChild("BorinHammerContact",true) :: Attachment
+  local tips=0;for _,v in ipairs(model:GetDescendants())do if v.Name=="BorinHammerContact" then tips+=1 end end;assert(tips==1)
   local maximum=0
   for _,clock in ipairs({1,3,5}) do
    assert(B.apply(model,motors,{weight=1,lift=Motion.lift(clock),contact=true}))
@@ -107,7 +113,9 @@ return function(options:any?):any
   end
   B.apply(model,motors,{weight=0});for m,base in pairs(motors) do assert(m.C0==base) end
   for _,v in ipairs(assert(model:FindFirstChild("BorinWorkstation")):GetDescendants()) do if v:IsA("BasePart") then assert(not v.CanCollide and not v.CanTouch and not v.CanQuery and v.Massless) end end
-  result={status="PASS_NATIVE_FIXTURE_ONLY",contactSamples=3,maxContactError=maximum,rootPreserved=true,restored=true,importedArt=false,questJourneyTested=false}
+  assert(model.Name==npcId and model:GetAttribute("NpcId")==npcId and model:GetAttribute("DesignId")==designId)
+  assert(model:GetAttribute("BorinInteractUntil")==nil and model:GetAttribute("BorinInteractor")==nil,"attach wrote legacy interaction hints")
+  result={status="PASS_NATIVE_FIXTURE_ONLY",npcId=npcId,contactSamples=3,maxContactError=maximum,rootPreserved=true,restored=true,importedArt=false,questJourneyTested=false}
  end)
  model:Destroy();if not ok then error(err) end
  return result

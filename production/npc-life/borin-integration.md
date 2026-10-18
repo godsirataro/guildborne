@@ -176,6 +176,49 @@ distance recovery still require the Controller's separate multiplayer run.
 Independent read-only review found no actionable issue in this bounded patch.
 Scoped compilation/type analysis and seven Borin/eight NPC contract tests passed;
 the new twelve-case Studio fixture was NOT_RUN by S17.
+## Deepforge contact adapter — source candidate (2026-10-18)
+
+Foreman Durn retains `host_deepforge`, its dialogue/prompt and civic quest binding.
+`BorinWorkMotion.usesForge` selects the existing forge presentation from either
+original smith identity or the explicit `WorkMotionIdentity=smith_borin` capability.
+The separate `interactionAttributes` policy selects legacy Borin hints ONLY for
+`smith_borin`; Durn uses `NpcInteractUntil` and `NpcInteractor`, including the
+latest-speaker head-attention guard. No alias becomes an NPC identity.
+
+CivicCityWorld attaches the existing native workstation to Durn's existing smith
+kit after placement/identity assignment and before tagging it for the single
+FriendlyNpcAnimator pose owner. The same arm/contact solver and lifecycle now run
+for Durn. Generic work does not run a second time. The root, feet, prompt callback,
+timing, culling/reduced-motion restore, economy and quests are unchanged. Workstation
+and hammer attachment remain model-owned; repeated attach is idempotent, animator
+cleanup restores joints/disables flash, and model destruction removes native props.
+
+Local checks: 10 pure presentation tests (including both identity namespaces with
+conflicting unused deadlines), 8 NPC-life tests, scoped compile/type analysis.
+These do not establish actual native contact or ordinary interaction acceptance.
+
+Controller Studio checklist, isolated unpublished Memory candidate:
+
+- Run `studio_borin_integration()` for the original smith, and separately
+  `studio_borin_integration({npcId="host_deepforge"})` for the same native kit with
+  Durn identity/capability. Each measures three contact samples, exact root and
+  identity preservation, joint restoration, one workstation/tip after reattach,
+  noncolliding native props and no legacy interaction hint writes. Both remain
+  NOT_RUN by S17. This fixture is not the actual civic builder.
+- Run existing `studio_civic_host_interaction` against actual builder with real E
+  input. It now also checks Durn has exactly one workstation on reattach, other
+  hosts have none, and all civic hosts retain no legacy Borin hints. Near/far
+  callback tests still check the real panel and shared stamps. Always Destroy.
+- On actual Durn, observe active forge contact first, then ordinary accepted talk:
+  work fades, contacts stop, head attention follows the shared stamped speaker,
+  and expiration/closing dialogue recovers work. Confirm competing legacy hints
+  cannot extend Durn's interaction in an isolated presentation fixture. Verify
+  reduced motion, far culling, untag/stream removal and controller Destroy from
+  an active pose restore joints/disable flash; reload creates only one pose owner.
+- Check workstation placement/ground clearance, hammer grip and tongs visually in
+  Deepforge. Original smith must retain legacy behavior. Native fit, multiplayer
+  speaker/expiry behavior and human art acceptance remain separate pending gates.
+
 # Bounded speaker attention — source candidate (2026-10-17)
 
 Fresh inspection found work fade/recovery and bounded server hints already implemented,

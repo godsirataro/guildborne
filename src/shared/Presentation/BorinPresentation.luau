@@ -1,6 +1,7 @@
 --!strict
 -- Native contact substitute on the existing CityCharacterKit. No mesh/animation IDs.
 local M={}
+local Motion=require(script.Parent.BorinWorkMotion)
 local V=Vector3.new
 local STRIKE_HAND=V(1.05,2.04,-.28)
 local function part(parent:Instance,name:string,size:Vector3,cf:CFrame,color:Color3,root:BasePart):Part
@@ -10,7 +11,7 @@ local function part(parent:Instance,name:string,size:Vector3,cf:CFrame,color:Col
  local w=Instance.new("WeldConstraint");w.Part0=root;w.Part1=p;w.Parent=p;return p
 end
 function M.attach(model:Model):boolean
- if model:GetAttribute("NpcId")~="smith_borin" or not model.PrimaryPart then return false end
+ if not Motion.usesForge(model:GetAttribute("NpcId"),model:GetAttribute("WorkMotionIdentity")) or not model.PrimaryPart then return false end
  if model:FindFirstChild("BorinWorkstation") then return true end
  local head=model:FindFirstChild("HammerHead")
  local hand=model:FindFirstChild("RightHand",true)

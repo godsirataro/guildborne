@@ -87,5 +87,19 @@ test("speaker expiry or missing target releases smoothly and bounded frames cann
  for _=1,30 do b=M.lookYaw(b,1/30,3,-5) end
  assert(math.abs(a-b)<1e-10)
 end)
+test("forge capability is independent of original and civic interaction namespaces",function()
+ for _,case in ipairs({{id="smith_borin",motion="",deadline="BorinInteractUntil",speaker="BorinInteractor"},{id="host_deepforge",motion="smith_borin",deadline="NpcInteractUntil",speaker="NpcInteractor"}})do
+  assert(M.usesForge(case.id,case.motion))
+  local deadline,speaker=M.interactionAttributes(case.id);equal(deadline,case.deadline);equal(speaker,case.speaker)
+  local hints:any={BorinInteractUntil=999,NpcInteractUntil=999}
+  hints[deadline]=3
+  local s=M.new();advance(s,0,1)
+  local talking=advance(s,1.02,1.4,hints[deadline]);equal(talking.mode,"Interact");equal(talking.weight,0)
+  local resumed=advance(s,3.02,3.9,hints[deadline]);equal(resumed.mode,"Work");equal(resumed.weight,1)
+ end
+ assert(not M.usesForge("host_deepforge",nil))
+ assert(not M.usesForge("host_central","marshal_elian"))
+ assert(not M.usesForge(nil,nil))
+end)
 print(string.format("%d Borin presentation tests passed (pure lifecycle only).",count))
 return true

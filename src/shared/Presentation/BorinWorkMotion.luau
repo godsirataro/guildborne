@@ -5,6 +5,14 @@ local M = {Cycle=2, InteractSeconds=12, RecoverSeconds=.6, FadeSeconds=.25, Cull
 export type State = {mode:string, weight:number, clock:number, lastTime:number?, contactIndex:number}
 local function finite(n:number):boolean return n==n and math.abs(n)<math.huge end
 function M.new():State return {mode="Idle",weight=0,clock=0,lastTime=nil,contactIndex=-1} end
+-- Presentation capability never substitutes an NPC's dialogue/quest identity.
+function M.usesForge(npcId:any,workIdentity:any):boolean
+ return npcId=="smith_borin" or workIdentity=="smith_borin"
+end
+function M.interactionAttributes(npcId:any):(string,string)
+ if npcId=="smith_borin" then return "BorinInteractUntil","BorinInteractor" end
+ return "NpcInteractUntil","NpcInteractor"
+end
 -- Head-only attention in root-local space (-Z forward). Behind/absent speakers
 -- release toward neutral instead of flipping at the atan2 seam. No root motion.
 function M.lookYaw(yaw:number,dt:number,x:number?,z:number?):number

@@ -52,7 +52,7 @@ return function(collectionProvider:any?)
     local function add(instance:Instance)
         if not instance:IsA("Model")or actors[instance]then return end
         local actor:Actor={model=instance,motors={},id=Life.resolve(instance:GetAttribute("NpcId")),nextSample=0,activity="Work",weight=0,restored=false,lookYaw=0}
-        if instance:GetAttribute("NpcId")=="smith_borin" then actor.borin=BorinMotion.new() end
+        if BorinMotion.usesForge(instance:GetAttribute("NpcId"),instance:GetAttribute("WorkMotionIdentity")) then actor.borin=BorinMotion.new() end
         local function joint(v:Instance)
             if v:IsA("Motor6D")and not actor.motors[v]then actor.motors[v]=v.C0;actor.restored=false end
         end
@@ -81,6 +81,7 @@ return function(collectionProvider:any?)
             local distance=(root.Position-camera.CFrame.Position).Magnitude
             local reduced=workspace:GetAttribute(Motion.ReducedMotionAttribute)==true
             local moving=actor.model:GetAttribute("EscortMoving")==true
+            local deadlineAttribute,speakerAttribute=BorinMotion.interactionAttributes(actor.model:GetAttribute("NpcId"))
             -- Day phase uses the world's existing clock; interaction deadlines use server time.
             -- Near dialogue scans are capped at ten per second, and far actors do no GUI scans.
             if now>=actor.nextSample or (actor.tier=="Far" and distance<=140) then
@@ -88,9 +89,9 @@ return function(collectionProvider:any?)
                 actor.tier=if sample then sample.tier elseif distance>160 then "Far" else "Near"
                 actor.activity=if sample then sample.activity else "Work"
                 actor.nextSample=now+(if sample then sample.updateSeconds else .1)
-                local rawUntil=actor.model:GetAttribute(if actor.borin then "BorinInteractUntil" else "NpcInteractUntil")
+                local rawUntil=actor.model:GetAttribute(deadlineAttribute)
                 local untilTime:number?=if type(rawUntil)=="number" and rawUntil==rawUntil and rawUntil<math.huge then math.min(rawUntil,now+BorinMotion.InteractSeconds) else nil
-                local interactorId=actor.model:GetAttribute(if actor.borin then "BorinInteractor" else "NpcInteractor")
+                local interactorId=actor.model:GetAttribute(speakerAttribute)
                 local interactor=if type(interactorId)=="number" then Players:GetPlayerByUserId(interactorId) else nil
                 local interactorRoot=interactor and interactor.Character and interactor.Character:FindFirstChild("HumanoidRootPart")
                 -- A streamed-out character cannot extend this absolute server deadline.
@@ -112,7 +113,7 @@ return function(collectionProvider:any?)
             local lookRoot=actor.lookRoot
             local localTarget:Vector3?=nil
             if not reduced and not moving and actor.lookUntil and actor.lookUntil>now
-                and actor.model:GetAttribute(if actor.borin then "BorinInteractor" else "NpcInteractor")==actor.lookUserId
+                and actor.model:GetAttribute(speakerAttribute)==actor.lookUserId
                 and lookRoot and lookRoot:IsDescendantOf(workspace) and (lookRoot.Position-root.Position).Magnitude<=14 then
                 localTarget=root.CFrame:PointToObjectSpace(lookRoot.Position)
             end

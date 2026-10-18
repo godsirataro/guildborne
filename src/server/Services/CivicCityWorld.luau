@@ -5,6 +5,7 @@ local Civic=require(Shared.Config.CivicCities)
 local City=require(Shared.Config.City)
 local Locale=require(Shared.Config.Localization)
 local BorinMotion=require(Shared.Presentation.BorinWorkMotion)
+local BorinPresentation=require(Shared.Presentation.BorinPresentation)
 local Content=require(script.Parent.Parent.Config.Content)
 local Kit=require(script.Parent.ArtKit)
 local V=Vector3.new
@@ -53,6 +54,7 @@ return function(parent:Instance,town:Instance,intent:any,open:any):any
   local host=cast:FindFirstChild(castOrder[index]) :: Model;host.Name=hostId;host.Parent=model
   host:PivotTo(CFrame.lookAt(V(speaker.x,0,speaker.z),V(d.X,0,d.Z+108)))
   host:SetAttribute("NpcId",hostId);host:SetAttribute("WorkMotionIdentity",castOrder[index]);host:SetAttribute("CivicHost",id)
+  if BorinMotion.usesForge(hostId,castOrder[index]) then BorinPresentation.attach(host) end
   local root=assert(host.PrimaryPart);Kit.Label(root,speaker.name,speaker.nameTh,6)
   local talk=Instance.new("ProximityPrompt");talk.ActionText="Talk / พูดคุย";talk.ObjectText=speaker.name.." / "..speaker.nameTh;talk.MaxActivationDistance=10;talk.RequiresLineOfSight=false;talk.Parent=root
   talk.Triggered:Connect(function(player)local c=player.Character;if c and(c:GetPivot().Position-root.Position).Magnitude<=14 then

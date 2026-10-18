@@ -34,6 +34,11 @@ return function(player:Player):any
    local root=assert(model.PrimaryPart)
    local prompt=assert(root:FindFirstChildOfClass("ProximityPrompt"))
    assert(model:GetAttribute("NpcId")==id and model:GetAttribute("CivicHost")==cityId)
+   if id=="host_deepforge" then
+    assert(model:FindFirstChild("BorinWorkstation") and model:FindFirstChild("BorinHammerContact",true),"actual Durn builder omitted forge adapter")
+    assert(require(Shared.Presentation.BorinPresentation).attach(model),"reattach failed")
+    local stations=0;for _,child in ipairs(model:GetChildren())do if child.Name=="BorinWorkstation" then stations+=1 end end;assert(stations==1)
+   else assert(not model:FindFirstChild("BorinWorkstation"),"non-forge host gained workstation") end
    table.insert(hosts,{id=id,model=model,root=root,prompt=prompt,pivot=model:GetPivot(),motion=model:GetAttribute("WorkMotionIdentity")})
    table.insert(connections,prompt.Triggered:Connect(function(who)
     table.insert(observed,{player=who,prompt=prompt})
@@ -61,6 +66,7 @@ return function(player:Player):any
  function S.Verify():any
   assert(not destroyed and active,"Prepare required")
   local a=active;local host=a.host
+  assert(host.model:GetAttribute("BorinInteractUntil")==nil and host.model:GetAttribute("BorinInteractor")==nil,"civic host received legacy Borin hints")
   assert(#observed==a.observed+1,"one real Triggered event required; absent input is not rejection proof")
   assert(observed[#observed].player==player and observed[#observed].prompt==host.prompt,"wrong trigger source")
   assert(host.model:GetPivot()==host.pivot,"host moved")
