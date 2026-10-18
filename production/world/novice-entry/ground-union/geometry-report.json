@@ -1,0 +1,17 @@
+{
+  "evidence": "OFFLINE_CAPTURED_NATIVE_GEOMETRY_NOT_STUDIO",
+  "parts": 645,
+  "visible": 582,
+  "colliders": 61,
+  "markers": 15,
+  "wedges": 82,
+  "eightOwnerParts": 5160,
+  "nativeTopArea": 17820.82568627367,
+  "nativePairwiseOverlapArea": 2.410196486835048e-10,
+  "nativeIntersectionWithIntendedArea": 17820.825686273998,
+  "centralLaneCoveredArea": 5304.000000000007,
+  "topY": 0.045,
+  "bottomY": 0.015,
+  "unchangedOtherParts": 563,
+  "studioVisualGate": "PENDING"
+}

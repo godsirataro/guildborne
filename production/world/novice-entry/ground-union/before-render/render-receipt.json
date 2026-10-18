@@ -1,0 +1,61 @@
+{
+  "evidence": "BLENDER_SOURCE_PREVIEW_NOT_STUDIO",
+  "input": "C:\\Work\\MySelf\\Guildborne-regional-art\\production\\world\\novice-entry\\ground-union\\before.json",
+  "views": {
+    "arrival-player": [
+      [
+        0,
+        6,
+        180
+      ],
+      [
+        3,
+        5,
+        85
+      ]
+    ],
+    "training-player": [
+      [
+        8,
+        6,
+        109
+      ],
+      [
+        66,
+        5,
+        82
+      ]
+    ],
+    "caravan-player": [
+      [
+        -9,
+        6,
+        54
+      ],
+      [
+        -65,
+        5,
+        20
+      ]
+    ],
+    "corridor-overview": [
+      [
+        190,
+        155,
+        215
+      ],
+      [
+        0,
+        2,
+        90
+      ]
+    ]
+  },
+  "resolution": [
+    1440,
+    900
+  ],
+  "lensMm": 32,
+  "runtimeActorsIncluded": false,
+  "visibleParts": 532
+}

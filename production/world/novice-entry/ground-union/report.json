@@ -1,0 +1,43 @@
+{
+  "status": "OFFLINE_UNION_PASS_NOT_STUDIO",
+  "sourceSha256": "7b159903d20b67eb1184ae602e47e7d3c38447952ed55f796888de62a4a7c207",
+  "sourcePieces": 32,
+  "sourceSummedArea": 30161.618157912773,
+  "exactPolygonUnionArea": 18143.244682490782,
+  "simplifiedArea": 17820.82568627367,
+  "intersectionArea": 17676.3132435378,
+  "coverageLostArea": 466.9314389529827,
+  "coverageAddedArea": 144.51244273587145,
+  "originalBoundaryVertices": 115,
+  "simplifiedVertices": 43,
+  "triangles": 41,
+  "maxNativeWedges": 82,
+  "pairwiseTriangleOverlapArea": 0,
+  "triangleArea": 17820.825686273674,
+  "connectedBoundaryCount": 1,
+  "holes": 0,
+  "protectedSamples": 345,
+  "protectedAllCovered": true,
+  "boundarySampleStep": 0.1,
+  "bidirectionalSampleError": [
+    1.9410485510456348,
+    1.8607850273070843
+  ],
+  "conservativeBoundaryDistanceUpperBound": 1.9910485510456348,
+  "centralLaneRectangle": [
+    -12,
+    12,
+    -5,
+    216
+  ],
+  "centralLaneCoveredArea": 5304.000000000001,
+  "minimumDecomposedWedgeDimension": 0.6583505442232442,
+  "triangleWinding": "CCW in XZ; geometric normal points negative Y",
+  "boundsXZ": [
+    -127.86341,
+    100.85906947986305,
+    -7.411904,
+    223.8314695990756
+  ],
+  "limits": "Exact area arithmetic up to floating point for 16-segment projected ellipses. Simplification changes footprint; boundary bound is sample distance plus Lipschitz allowance. Full central lane rectangle covered; other protected route/marker checks are finite samples. No Studio evidence."
+}
