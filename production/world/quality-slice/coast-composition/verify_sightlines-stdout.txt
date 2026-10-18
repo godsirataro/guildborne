@@ -1,0 +1,291 @@
+{
+  "status": "OFFLINE_RAY_TEST_NOT_STUDIO",
+  "packetSha256": "79e3c3ea39f702ee77d6765ea41d0dffbdbc9cd4a1c674faa1a01832e82f807f",
+  "groundSha256": "398a440048136c1e81f39f0ac0f40c72b3ecdfb442777a47c490bf678daa7b35",
+  "scriptSha256": "93a1dfc8f012925b0220c7a8aefec4e4598579584c82dff3493c2e6ea1e2e24d",
+  "triangleCount": 37243,
+  "samples": [
+    {
+      "routeDistance": 750,
+      "eye": [
+        -329.412879243228,
+        11.4706439621614,
+        -47.62309627059736
+      ],
+      "angleFromForwardDegrees": 22.232943317616538,
+      "targets": [
+        {
+          "target": [
+            -565,
+            35,
+            460
+          ],
+          "blocker": null
+        },
+        {
+          "target": [
+            -565,
+            65,
+            460
+          ],
+          "blocker": null
+        },
+        {
+          "target": [
+            -565,
+            100,
+            460
+          ],
+          "blocker": null
+        }
+      ]
+    },
+    {
+      "routeDistance": 800,
+      "eye": [
+        -331.7359492108514,
+        11.586797460542572,
+        2.322908033305829
+      ],
+      "angleFromForwardDegrees": 24.343550852703704,
+      "targets": [
+        {
+          "target": [
+            -565,
+            35,
+            460
+          ],
+          "blocker": null
+        },
+        {
+          "target": [
+            -565,
+            65,
+            460
+          ],
+          "blocker": null
+        },
+        {
+          "target": [
+            -565,
+            100,
+            460
+          ],
+          "blocker": null
+        }
+      ]
+    },
+    {
+      "routeDistance": 850,
+      "eye": [
+        -334.05901917847484,
+        11.702950958923743,
+        52.26891233720905
+      ],
+      "angleFromForwardDegrees": 26.864437654025703,
+      "targets": [
+        {
+          "target": [
+            -565,
+            35,
+            460
+          ],
+          "blocker": null
+        },
+        {
+          "target": [
+            -565,
+            65,
+            460
+          ],
+          "blocker": null
+        },
+        {
+          "target": [
+            -565,
+            100,
+            460
+          ],
+          "blocker": null
+        }
+      ]
+    },
+    {
+      "routeDistance": 900,
+      "eye": [
+        -336.3820891460983,
+        11.819104457304913,
+        102.21491664111235
+      ],
+      "angleFromForwardDegrees": 29.914808620965058,
+      "targets": [
+        {
+          "target": [
+            -565,
+            35,
+            460
+          ],
+          "blocker": null
+        },
+        {
+          "target": [
+            -565,
+            65,
+            460
+          ],
+          "blocker": null
+        },
+        {
+          "target": [
+            -565,
+            100,
+            460
+          ],
+          "blocker": null
+        }
+      ]
+    },
+    {
+      "routeDistance": 950,
+      "eye": [
+        -338.70515911372166,
+        11.935257955686083,
+        152.16092094501565
+      ],
+      "angleFromForwardDegrees": 33.656887441893076,
+      "targets": [
+        {
+          "target": [
+            -565,
+            35,
+            460
+          ],
+          "blocker": null
+        },
+        {
+          "target": [
+            -565,
+            65,
+            460
+          ],
+          "blocker": null
+        },
+        {
+          "target": [
+            -565,
+            100,
+            460
+          ],
+          "blocker": null
+        }
+      ]
+    },
+    {
+      "routeDistance": 1000,
+      "eye": [
+        -335.3230310290442,
+        11.883075775726105,
+        201.63098149067054
+      ],
+      "angleFromForwardDegrees": 53.835942901658754,
+      "targets": [
+        {
+          "target": [
+            -565,
+            35,
+            460
+          ],
+          "blocker": null
+        },
+        {
+          "target": [
+            -565,
+            65,
+            460
+          ],
+          "blocker": null
+        },
+        {
+          "target": [
+            -565,
+            100,
+            460
+          ],
+          "blocker": null
+        }
+      ]
+    },
+    {
+      "routeDistance": 1050,
+      "eye": [
+        -324.75639140266725,
+        11.61890978506668,
+        250.5016897626639
+      ],
+      "angleFromForwardDegrees": 61.11124346919415,
+      "targets": [
+        {
+          "target": [
+            -565,
+            35,
+            460
+          ],
+          "blocker": null
+        },
+        {
+          "target": [
+            -565,
+            65,
+            460
+          ],
+          "blocker": null
+        },
+        {
+          "target": [
+            -565,
+            100,
+            460
+          ],
+          "blocker": null
+        }
+      ]
+    },
+    {
+      "routeDistance": 1100,
+      "eye": [
+        -314.18975177629034,
+        11.35474379440726,
+        299.3723980346573
+      ],
+      "angleFromForwardDegrees": 69.56355739020755,
+      "targets": [
+        {
+          "target": [
+            -565,
+            35,
+            460
+          ],
+          "blocker": null
+        },
+        {
+          "target": [
+            -565,
+            65,
+            460
+          ],
+          "blocker": null
+        },
+        {
+          "target": [
+            -565,
+            100,
+            460
+          ],
+          "blocker": null
+        }
+      ]
+    }
+  ],
+  "allRaysClear": true,
+  "limitations": "Two-sided exact exported geometry rays; target beacon excluded. Clear line of sight does not prove forward camera framing or visual prominence. No unsupplied game geometry included."
+}

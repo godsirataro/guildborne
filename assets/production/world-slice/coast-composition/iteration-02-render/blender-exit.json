@@ -1,0 +1,18 @@
+{
+  "command": [
+    "C:/Program Files/Blender Foundation/Blender 5.2/blender.exe",
+    "--background",
+    "--disable-autoexec",
+    "--python-exit-code",
+    "2",
+    "--python",
+    "C:\\Work\\MySelf\\Guildborne-city-greenwood\\production\\world\\quality-slice\\coast-composition\\render_compare.py",
+    "--",
+    "--variant",
+    "after"
+  ],
+  "exitCode": 0,
+  "seconds": 110.51019040000392,
+  "stdoutSha256": "70a114e6933ef83910b242a8ec98bf0392af8a5ecab0a1f36e00646180770fb8",
+  "stderrSha256": "5c1472cadc3226b74b4ab6044491b424d6eb912ecc88e27e18a05dfc2ee61c72"
+}

@@ -1,0 +1,17 @@
+{
+  "status": "FILE_GENERATED_NOT_STUDIO",
+  "source": "assets\\production\\world-slice\\corridor-landforms-bounded\\scenery.mesh.json",
+  "sourceSha256": "88bd14ea6272fb1c51baebb220e1845b0949ceaabe23d8e8175c3b39b6d35bee",
+  "packetSha256": "7e54438f3941fab5585a3659572be34240fc09d9ba8e39dcaf5a5aeaf0a0e08e",
+  "author": "Original Guildborne deterministic sculpt and coastal geometry",
+  "retainedPlacements": 57,
+  "beaconUnchanged": true,
+  "runtimeIds": null,
+  "studioTested": false,
+  "humanApproved": false,
+  "uniqueTriangles": 5654,
+  "instancedTriangles": 33739,
+  "placements": 67,
+  "groundUnchanged": true,
+  "description": "Lowered western sight fan, stepped ravine, curved bay with shore shelves and headlands; no added scatter"
+}

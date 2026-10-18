@@ -1,0 +1,4 @@
+{
+  "status": "ITERATION_REJECTED_VISUAL_AND_RECEIPT_INPUT_RACE",
+  "reason": "Thin perimeter banks read as walls. Author changed packet during rendering from78e1c6fc to0990bb91; raw render receipt computes packet hash at end and is not accepted as exact input evidence. Raw logs, images and receipt retained unchanged. Final candidate must be rerendered under an unchanged-input check."
+}

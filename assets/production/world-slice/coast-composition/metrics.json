@@ -1,0 +1,362 @@
+{
+  "resources": {
+    "tree_a__000": {
+      "bounds": {
+        "min": [
+          -11.1953,
+          0.0,
+          -11.17465
+        ],
+        "max": [
+          11.1953,
+          30.0,
+          11.17465
+        ]
+      },
+      "extents": [
+        22.3906,
+        30.0,
+        22.3493
+      ],
+      "triangles": 804
+    },
+    "tree_b__000": {
+      "bounds": {
+        "min": [
+          -17.98237,
+          0.0,
+          -14.4956
+        ],
+        "max": [
+          17.98237,
+          38.0,
+          14.4956
+        ]
+      },
+      "extents": [
+        35.96474,
+        38.0,
+        28.9912
+      ],
+      "triangles": 1332
+    },
+    "bush__000": {
+      "bounds": {
+        "min": [
+          -3.48249,
+          0.0,
+          -3.47607
+        ],
+        "max": [
+          3.48249,
+          4.0,
+          3.47607
+        ]
+      },
+      "extents": [
+        6.96498,
+        4.0,
+        6.95214
+      ],
+      "triangles": 360
+    },
+    "silhouette_fern_rocks__000": {
+      "bounds": {
+        "min": [
+          -5.49203,
+          0,
+          -4.04735
+        ],
+        "max": [
+          5.8,
+          5,
+          5.54735
+        ]
+      },
+      "extents": [
+        11.29203,
+        5,
+        9.5947
+      ],
+      "triangles": 231
+    },
+    "silhouette_ruined_waymarker__000": {
+      "bounds": {
+        "min": [
+          -2.85349,
+          0.0,
+          -2.50673
+        ],
+        "max": [
+          2.79027,
+          7.2,
+          2.49735
+        ]
+      },
+      "extents": [
+        5.64376,
+        7.2,
+        5.00408
+      ],
+      "triangles": 245
+    },
+    "corridor_bridge_rails": {
+      "bounds": {
+        "min": [
+          -16.0,
+          -12.0,
+          -65.0
+        ],
+        "max": [
+          16.0,
+          4.35,
+          65.0
+        ]
+      },
+      "extents": [
+        32.0,
+        16.35,
+        130.0
+      ],
+      "triangles": 240
+    },
+    "corridor_lookout_pier": {
+      "bounds": {
+        "min": [
+          -3.0,
+          -10.0,
+          -3.0
+        ],
+        "max": [
+          3.0,
+          5.9,
+          3.0
+        ]
+      },
+      "extents": [
+        6.0,
+        15.9,
+        6.0
+      ],
+      "triangles": 48
+    },
+    "landforms_west__000__bounded_000": {
+      "bounds": {
+        "min": [
+          -715.9279791627638,
+          -82.5560610633845,
+          -664.0
+        ],
+        "max": [
+          -14.999999999999998,
+          50.68194942303934,
+          530.3270578339418
+        ]
+      },
+      "extents": [
+        700.9279791627638,
+        133.23801048642383,
+        1194.3270578339418
+      ],
+      "triangles": 508
+    },
+    "landforms_west__000__bounded_001": {
+      "bounds": {
+        "min": [
+          -668.3171052588507,
+          -112.65702777549131,
+          493.7358491363275
+        ],
+        "max": [
+          14.0,
+          66.48868054022776,
+          1666.2995133930144
+        ]
+      },
+      "extents": [
+        682.3171052588507,
+        179.14570831571908,
+        1172.563664256687
+      ],
+      "triangles": 508
+    },
+    "landforms_east__000__bounded_000": {
+      "bounds": {
+        "min": [
+          -297.7908174000326,
+          -75.98719170203509,
+          -664.0
+        ],
+        "max": [
+          15.879152476728327,
+          34.178663014608134,
+          462.59298405231885
+        ]
+      },
+      "extents": [
+        313.66996987676094,
+        110.16585471664322,
+        1126.5929840523188
+      ],
+      "triangles": 507
+    },
+    "landforms_east__000__bounded_001": {
+      "bounds": {
+        "min": [
+          -242.9486050515256,
+          -75.99160300029496,
+          420.3891339252537
+        ],
+        "max": [
+          21.657807267108325,
+          35.536354405662294,
+          1536.0
+        ]
+      },
+      "extents": [
+        264.60641231863394,
+        111.52795740595725,
+        1115.6108660747464
+      ],
+      "triangles": 507
+    },
+    "landforms_ruined_beacon__000": {
+      "bounds": {
+        "min": [
+          -583.0,
+          -12,
+          442.88098270668723
+        ],
+        "max": [
+          -547.0,
+          119.76888429983987,
+          477.11901729331277
+        ]
+      },
+      "extents": [
+        36.0,
+        131.76888429983987,
+        34.23803458662553
+      ],
+      "triangles": 70
+    },
+    "coast_bay_water": {
+      "bounds": {
+        "min": [
+          -1470,
+          -12.6,
+          -90
+        ],
+        "max": [
+          350,
+          -12.6,
+          1840
+        ]
+      },
+      "extents": [
+        1820,
+        0.0,
+        1930
+      ],
+      "triangles": 26
+    },
+    "coast_headland_banks__bounded_000": {
+      "bounds": {
+        "min": [
+          -1904.3594430145656,
+          -40,
+          -90
+        ],
+        "max": [
+          -1104,
+          69.36908481086667,
+          1110
+        ]
+      },
+      "extents": [
+        800.3594430145656,
+        109.36908481086667,
+        1200
+      ],
+      "triangles": 72
+    },
+    "coast_headland_banks__bounded_001": {
+      "bounds": {
+        "min": [
+          -1632.4689249133571,
+          -40,
+          920
+        ],
+        "max": [
+          340,
+          14,
+          2270
+        ]
+      },
+      "extents": [
+        1972.4689249133571,
+        54,
+        1350
+      ],
+      "triangles": 73
+    },
+    "coast_headland_banks__bounded_002": {
+      "bounds": {
+        "min": [
+          -198,
+          -45,
+          -90
+        ],
+        "max": [
+          787.5638803173657,
+          14.228003633503908,
+          1110
+        ]
+      },
+      "extents": [
+        985.5638803173657,
+        59.22800363350391,
+        1200
+      ],
+      "triangles": 72
+    },
+    "coast_headland_banks__bounded_003": {
+      "bounds": {
+        "min": [
+          -535,
+          -40,
+          920
+        ],
+        "max": [
+          910.000355115163,
+          78.0,
+          2270
+        ]
+      },
+      "extents": [
+        1445.000355115163,
+        118.0,
+        1350
+      ],
+      "triangles": 73
+    }
+  },
+  "placements": 67,
+  "limitStuds": 2000,
+  "nativeLimitStuds": 2048,
+  "minimumMarginStuds": 75.53107508664289,
+  "status": "FILE_GENERATED_NOT_STUDIO",
+  "source": "assets\\production\\world-slice\\corridor-landforms-bounded\\scenery.mesh.json",
+  "sourceSha256": "88bd14ea6272fb1c51baebb220e1845b0949ceaabe23d8e8175c3b39b6d35bee",
+  "packetSha256": "79e3c3ea39f702ee77d6765ea41d0dffbdbc9cd4a1c674faa1a01832e82f807f",
+  "author": "Original Guildborne deterministic sculpt and coastal geometry",
+  "retainedPlacements": 57,
+  "beaconUnchanged": true,
+  "runtimeIds": null,
+  "studioTested": false,
+  "humanApproved": false,
+  "uniqueTriangles": 5676,
+  "instancedTriangles": 33761,
+  "groundUnchanged": true,
+  "description": "Lowered western sight fan, stepped ravine, curved bay with shore shelves and headlands; no added scatter"
+}
