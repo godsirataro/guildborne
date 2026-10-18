@@ -1,6 +1,10 @@
 -- LOCAL CLIENT, unsaved isolated Studio, after normal bootstrap (one existing HUD).
 -- Synthetic arena attributes only; no remotes, character writes, pose edits or teleport.
 -- Controller must run this; compilation alone is NOT_RUN. Keep player input idle.
+-- Previous PreRender:Wait sampling failed twice (~.229stud/.222rad); ordering was
+-- not guaranteed. This revision samples after a deferred end-of-resumption barrier.
+-- Controller reported original-production diagnostic PASS; this revised probe itself
+-- remains NOT_RUN until executed. No production metadata or priority changes required.
 assert(game:GetService("RunService"):IsStudio() and game.PlaceId==0 and game.GameId==0,"Local unsaved Studio required")
 local player=assert(game.Players.LocalPlayer,"Run on CLIENT")
 local character=assert(player.Character,"Real character required")
@@ -28,11 +32,25 @@ for _,child in ipairs(character:GetDescendants()) do originalDescendants[child]=
 local initialHand=hand.CFrame
 local motionObserved=false
 local maxPositionError,maxRotationError=0,0
+local maxPrePositionError,maxPreRotationError=0,0
+local Run=game:GetService("RunService")
+local callbackError:string?=nil
+local active:any=nil
+local collections={}
+local frameSequence=0
+local completion:BindableEvent?=nil
+local simulationEpoch=0
+local epochConnection:RBXScriptConnection?=nil
 local arena:Model?=nil
 local proxies={}
 local function waitFor(predicate,label,timeout)
     local untilTime=os.clock()+(timeout or 1)
-    repeat if predicate() then return end;task.wait() until os.clock()>untilTime
+    repeat
+        assert(not callbackError,callbackError)
+        if predicate() then return end
+        task.wait()
+    until os.clock()>untilTime
+    assert(not callbackError,callbackError)
     error(label)
 end
 local function proxy()
@@ -48,18 +66,59 @@ local function sameCharacter()
         assert(character:GetAttribute(name)==characterAttributes[name],"Actual character attribute changed during isolated probe: "..name)
     end
 end
-local function sample(carrier)
-    sameCharacter()
-    -- Existing controller's PreRender connection precedes this probe observer.
-    game:GetService("RunService").PreRender:Wait()
-    local delta=hand.CFrame:ToObjectSpace(carrier.CFrame)
+local function snapshot(carrier)
+    local handFrame,carrierFrame=hand.CFrame,carrier.CFrame
+    local delta=handFrame:ToObjectSpace(carrierFrame)
     local _,angle=delta:ToAxisAngle()
-    maxPositionError=math.max(maxPositionError,delta.Position.Magnitude)
-    maxRotationError=math.max(maxRotationError,math.abs(angle))
-    assert(delta.Position.Magnitude<.03 and math.abs(angle)<.03,"Carrier did not follow sampled real hand")
-    local change=initialHand:ToObjectSpace(hand.CFrame)
+    local change=initialHand:ToObjectSpace(handFrame)
     local _,rotation=change:ToAxisAngle()
     motionObserved=motionObserved or change.Position.Magnitude>.001 or math.abs(rotation)>.001
+    return {sequence=frameSequence,simulationEpoch=simulationEpoch,serverTime=workspace:GetServerTimeNow(),positionErrorStud=delta.Position.Magnitude,
+        rotationErrorRadians=math.abs(angle),handCFrame={handFrame:GetComponents()},carrierCFrame={carrierFrame:GetComponents()}}
+end
+local function sample(carrier)
+    sameCharacter()
+    assert(active and active.carrier==carrier,"No active collector for carrier")
+    local collection=active
+    while #collection.samples<3 do
+        assert(#collection.samples<120,"Render sample budget exceeded")
+        Run.PreRender:Wait()
+        frameSequence+=1
+        local before=snapshot(carrier)
+        assert(before.serverTime-collection.stamp>=.10 and before.serverTime-collection.stamp<=.30,
+            "INCONCLUSIVE_RENDER_WINDOW: need three paired samples within .10-.30s")
+        local event=Instance.new("BindableEvent");completion=event
+        task.defer(function()
+            local success,problem=xpcall(function()
+                sameCharacter()
+                assert(active==collection and carrier.Parent and carrier.Parent:GetAttribute("ActionAt")==collection.stamp,"INCONCLUSIVE_SAMPLE_IDENTITY_CHANGED")
+                local after=snapshot(carrier)
+                assert(before.simulationEpoch==after.simulationEpoch,"INCONCLUSIVE_SIMULATION_ADVANCED: deferred pair crossed a simulation step")
+                assert(after.serverTime-collection.stamp<=.30,"INCONCLUSIVE_RENDER_WINDOW: deferred sample exceeded .30s")
+                local previous=collection.samples[#collection.samples]
+                if previous then
+                    local priorFrame=CFrame.new(table.unpack(previous.after.handCFrame))
+                    local currentFrame=CFrame.new(table.unpack(after.handCFrame))
+                    local movement=priorFrame:ToObjectSpace(currentFrame)
+                    local _,rotation=movement:ToAxisAngle()
+                    collection.sampledMotion=collection.sampledMotion or movement.Position.Magnitude>.001 or math.abs(rotation)>.001
+                end
+                table.insert(collection.samples,{before=before,after=after})
+                maxPrePositionError=math.max(maxPrePositionError,before.positionErrorStud)
+                maxPreRotationError=math.max(maxPreRotationError,before.rotationErrorRadians)
+                maxPositionError=math.max(maxPositionError,after.positionErrorStud)
+                maxRotationError=math.max(maxRotationError,after.rotationErrorRadians)
+                assert(after.positionErrorStud<.03 and after.rotationErrorRadians<.03,string.format(
+                    "Carrier deferred mismatch epoch=%d time=%.6f age=%.6f pre=%.6fstud/%.6frad post=%.6fstud/%.6frad",
+                    after.simulationEpoch,after.serverTime,after.serverTime-collection.stamp,before.positionErrorStud,before.rotationErrorRadians,after.positionErrorStud,after.rotationErrorRadians))
+            end,debug.traceback)
+            if not success then callbackError=tostring(problem) end
+            event:Fire() -- completion is signaled on both success and failure
+        end)
+        event.Event:Wait();event:Destroy();completion=nil
+        assert(not callbackError,callbackError)
+    end
+    assert(collection.sampledMotion,"INCONCLUSIVE_NO_HAND_MOTION: no movement between the three deferred hand samples")
 end
 local function fresh(effect)
     sameCharacter()
@@ -74,7 +133,8 @@ local function fresh(effect)
     local carrier=assert(p:FindFirstChild("RightHand"))
     assert(carrier:IsA("BasePart") and carrier.Parent==p and carrier~=hand,"Carrier must be proxy-owned")
     assert(carrier.Anchored and not carrier.CanCollide and not carrier.CanQuery and not carrier.CanTouch and carrier.Transparency==1,"Carrier physical/invisibility contract")
-    sample(carrier)
+    active={carrier=carrier,stamp=stamp,effect=effect,samples={}}
+    table.insert(collections,active)
     return p,carrier,stamp
 end
 local function observeTrail(carrier,stamp)
@@ -87,6 +147,7 @@ local function observeTrail(carrier,stamp)
     end
 end
 local ok,outcome=xpcall(function()
+    epochConnection=Run.PostSimulation:Connect(function() simulationEpoch+=1 end)
     workspace:SetAttribute(config.QualityAttribute,"High")
     arena=Instance.new("Model");arena.Name="NoviceTrial_"..player.UserId
     arena:SetAttribute("NoviceTrialArena",true);arena:SetAttribute("OwnerUserId",player.UserId)
@@ -114,18 +175,28 @@ local ok,outcome=xpcall(function()
             waitFor(function() return carrier.Parent==nil and p.Parent==nil end,"Arena removal retained carrier/proxy",.4)
         end
         assert(not carrier:FindFirstChildWhichIsA("Trail"),"Destroyed carrier retained trail")
+        active=nil
         task.wait(.8) -- new casts must not enter shared detail fallback
     end
     assert(maxPositionError<.03 and maxRotationError<.03,"Hand-follow sample mismatch")
     sameCharacter()
     waitFor(function() return proxy()==nil end,"Owned proxy survived final arena cleanup",.4)
     for _,p in ipairs(proxies) do assert(not p:FindFirstChild("RightHand"),"Carrier survived final cleanup") end
+    local diagnostics={};local pairedSamples=0
+    for _,collection in ipairs(collections) do
+        pairedSamples+=#collection.samples
+        table.insert(diagnostics,{stamp=collection.stamp,effect=collection.effect,samples=collection.samples,count=#collection.samples,movementWithinSamples=collection.sampledMotion})
+    end
     return {status="PASS_LOCAL_HAND_CARRIER",sampledHand=hand.Name,actualHandMovementObserved=motionObserved,
         maxPositionErrorStud=maxPositionError,maxRotationErrorRadians=maxRotationError,
+        maxPrePositionErrorStud=maxPrePositionError,maxPreRotationErrorRadians=maxPreRotationError,
+        samplingBarrier="PreRender.Wait + task.defer + BindableEvent",pairedSampleCount=pairedSamples,renderDiagnostics=diagnostics,
         physicalCastTested=true,basicCastTested=true,realDeathRespawnTested=false,otherRigTypeTested=false,
         serverCombatTested=false,characterMutatedByProbe=false,rootStationarityChecked=true,
         characterAttributesChecked=attributeNames,replicationTested=false,carrierExpiryPreservedEvent=true}
 end,debug.traceback)
+if completion then completion:Destroy() end
+if epochConnection then epochConnection:Disconnect() end
 if arena then arena:Destroy() end
 task.wait(.2)
 for _,p in ipairs(proxies) do p:Destroy() end
