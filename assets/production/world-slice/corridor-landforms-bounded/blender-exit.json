@@ -1,0 +1,16 @@
+{
+  "command": [
+    "C:/Program Files/Blender Foundation/Blender 5.2/blender.exe",
+    "--background",
+    "--disable-autoexec",
+    "--python-exit-code",
+    "2",
+    "--python",
+    "C:\\Work\\MySelf\\Guildborne-city-greenwood\\production\\world\\quality-slice\\mesh-extents\\render_bounded.py"
+  ],
+  "exitCode": 0,
+  "seconds": 91.13441650000459,
+  "packetSha256": "88bd14ea6272fb1c51baebb220e1845b0949ceaabe23d8e8175c3b39b6d35bee",
+  "stdoutSha256": "e5c9008d700324c12ce07828468d3614dbfd87ffb8a9c497b0f74e7d1ffd1352",
+  "stderrSha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+}

@@ -1,0 +1,22 @@
+{
+  "status": "FILE_GENERATED_NOT_STUDIO",
+  "source": "assets/production/world-slice/corridor-landforms/scenery.mesh.json",
+  "sourceSha256": "cb3171b25c6bd52a24e8a1baa6af5c82c42b0c41127f255e6cb918fcf57da136",
+  "groundSha256": "398a440048136c1e81f39f0ac0f40c72b3ecdfb442777a47c490bf678daa7b35",
+  "groundParts": 444,
+  "unchangedSceneryPlacements": 57,
+  "author": "Original Guildborne procedural landforms and beacon; reviewed existing art retained exactly",
+  "collisions": "None on all new landforms; native approved ground remains separate",
+  "uniqueTriangles": 5364,
+  "instanceTriangles": 33449,
+  "meshes": 13,
+  "placements": 63,
+  "maxChunkTriangles": 1332,
+  "runtimeIds": null,
+  "studioTested": false,
+  "humanApproved": false,
+  "derivation": "Lossless spatial partition of west/east resources; exact coordinates, winding, colors and transforms retained",
+  "packetSha256": "88bd14ea6272fb1c51baebb220e1845b0949ceaabe23d8e8175c3b39b6d35bee",
+  "spatialLimitStuds": 2000,
+  "maxResourceExtent": 1990
+}

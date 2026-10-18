@@ -1,0 +1,863 @@
+{
+  "resources": {
+    "tree_a__000": {
+      "bounds": {
+        "min": [
+          -11.1953,
+          0.0,
+          -11.17465
+        ],
+        "max": [
+          11.1953,
+          30.0,
+          11.17465
+        ]
+      },
+      "extents": [
+        22.3906,
+        30.0,
+        22.3493
+      ],
+      "triangles": 804
+    },
+    "tree_b__000": {
+      "bounds": {
+        "min": [
+          -17.98237,
+          0.0,
+          -14.4956
+        ],
+        "max": [
+          17.98237,
+          38.0,
+          14.4956
+        ]
+      },
+      "extents": [
+        35.96474,
+        38.0,
+        28.9912
+      ],
+      "triangles": 1332
+    },
+    "bush__000": {
+      "bounds": {
+        "min": [
+          -3.48249,
+          0.0,
+          -3.47607
+        ],
+        "max": [
+          3.48249,
+          4.0,
+          3.47607
+        ]
+      },
+      "extents": [
+        6.96498,
+        4.0,
+        6.95214
+      ],
+      "triangles": 360
+    },
+    "silhouette_fern_rocks__000": {
+      "bounds": {
+        "min": [
+          -5.49203,
+          0,
+          -4.04735
+        ],
+        "max": [
+          5.8,
+          5,
+          5.54735
+        ]
+      },
+      "extents": [
+        11.29203,
+        5,
+        9.5947
+      ],
+      "triangles": 231
+    },
+    "silhouette_ruined_waymarker__000": {
+      "bounds": {
+        "min": [
+          -2.85349,
+          0.0,
+          -2.50673
+        ],
+        "max": [
+          2.79027,
+          7.2,
+          2.49735
+        ]
+      },
+      "extents": [
+        5.64376,
+        7.2,
+        5.00408
+      ],
+      "triangles": 245
+    },
+    "corridor_bridge_rails": {
+      "bounds": {
+        "min": [
+          -16.0,
+          -12.0,
+          -65.0
+        ],
+        "max": [
+          16.0,
+          4.35,
+          65.0
+        ]
+      },
+      "extents": [
+        32.0,
+        16.35,
+        130.0
+      ],
+      "triangles": 240
+    },
+    "corridor_lookout_pier": {
+      "bounds": {
+        "min": [
+          -3.0,
+          -10.0,
+          -3.0
+        ],
+        "max": [
+          3.0,
+          5.9,
+          3.0
+        ]
+      },
+      "extents": [
+        6.0,
+        15.9,
+        6.0
+      ],
+      "triangles": 48
+    },
+    "landforms_west__000__bounded_000": {
+      "bounds": {
+        "min": [
+          -715.9279791627638,
+          -75.97811701880282,
+          -664.0
+        ],
+        "max": [
+          -14.999999999999998,
+          87.95162684990068,
+          530.3270578339418
+        ]
+      },
+      "extents": [
+        700.9279791627638,
+        163.9297438687035,
+        1194.3270578339418
+      ],
+      "triangles": 508
+    },
+    "landforms_west__000__bounded_001": {
+      "bounds": {
+        "min": [
+          -668.3171052588507,
+          -75.99996402404823,
+          493.7358491363275
+        ],
+        "max": [
+          14.0,
+          67.20535770470175,
+          1666.2995133930144
+        ]
+      },
+      "extents": [
+        682.3171052588507,
+        143.20532172875,
+        1172.563664256687
+      ],
+      "triangles": 508
+    },
+    "landforms_east__000__bounded_000": {
+      "bounds": {
+        "min": [
+          -297.7908174000326,
+          -75.98719170203509,
+          -664.0
+        ],
+        "max": [
+          15.879152476728327,
+          34.178663014608134,
+          462.59298405231885
+        ]
+      },
+      "extents": [
+        313.66996987676094,
+        110.16585471664322,
+        1126.5929840523188
+      ],
+      "triangles": 507
+    },
+    "landforms_east__000__bounded_001": {
+      "bounds": {
+        "min": [
+          -242.9486050515256,
+          -75.99160300029496,
+          420.3891339252537
+        ],
+        "max": [
+          21.657807267108325,
+          35.536354405662294,
+          1536.0
+        ]
+      },
+      "extents": [
+        264.60641231863394,
+        111.52795740595725,
+        1115.6108660747464
+      ],
+      "triangles": 507
+    },
+    "landforms_ruined_beacon__000": {
+      "bounds": {
+        "min": [
+          -583.0,
+          -12,
+          442.88098270668723
+        ],
+        "max": [
+          -547.0,
+          119.76888429983987,
+          477.11901729331277
+        ]
+      },
+      "extents": [
+        36.0,
+        131.76888429983987,
+        34.23803458662553
+      ],
+      "triangles": 70
+    },
+    "landforms_coastal_water__000": {
+      "bounds": {
+        "min": [
+          -1500,
+          -12.6,
+          -90
+        ],
+        "max": [
+          200,
+          -12.6,
+          1900
+        ]
+      },
+      "extents": [
+        1700,
+        0.0,
+        1990
+      ],
+      "triangles": 4
+    }
+  },
+  "placements": [
+    {
+      "name": "CorridorScenery_000",
+      "meshId": "tree_b__000",
+      "extents": [
+        23.377081,
+        24.7,
+        18.84428
+      ]
+    },
+    {
+      "name": "CorridorScenery_001",
+      "meshId": "silhouette_fern_rocks__000",
+      "extents": [
+        9.033624000000001,
+        4.0,
+        7.67576
+      ]
+    },
+    {
+      "name": "CorridorScenery_002",
+      "meshId": "tree_a__000",
+      "extents": [
+        17.91248,
+        24.0,
+        17.87944
+      ]
+    },
+    {
+      "name": "CorridorScenery_003",
+      "meshId": "bush__000",
+      "extents": [
+        5.5719840000000005,
+        3.2,
+        5.561712
+      ]
+    },
+    {
+      "name": "CorridorScenery_004",
+      "meshId": "tree_a__000",
+      "extents": [
+        17.91248,
+        24.0,
+        17.87944
+      ]
+    },
+    {
+      "name": "CorridorScenery_005",
+      "meshId": "silhouette_fern_rocks__000",
+      "extents": [
+        9.033624000000001,
+        4.0,
+        7.67576
+      ]
+    },
+    {
+      "name": "CorridorScenery_006",
+      "meshId": "tree_b__000",
+      "extents": [
+        23.377081,
+        24.7,
+        18.84428
+      ]
+    },
+    {
+      "name": "CorridorScenery_007",
+      "meshId": "bush__000",
+      "extents": [
+        5.5719840000000005,
+        3.2,
+        5.561712
+      ]
+    },
+    {
+      "name": "CorridorScenery_008",
+      "meshId": "tree_a__000",
+      "extents": [
+        17.91248,
+        24.0,
+        17.87944
+      ]
+    },
+    {
+      "name": "CorridorScenery_009",
+      "meshId": "silhouette_fern_rocks__000",
+      "extents": [
+        9.033624000000001,
+        4.0,
+        7.67576
+      ]
+    },
+    {
+      "name": "CorridorScenery_010",
+      "meshId": "tree_a__000",
+      "extents": [
+        17.91248,
+        24.0,
+        17.87944
+      ]
+    },
+    {
+      "name": "CorridorScenery_011",
+      "meshId": "bush__000",
+      "extents": [
+        5.5719840000000005,
+        3.2,
+        5.561712
+      ]
+    },
+    {
+      "name": "CorridorScenery_012",
+      "meshId": "tree_b__000",
+      "extents": [
+        23.377081,
+        24.7,
+        18.84428
+      ]
+    },
+    {
+      "name": "CorridorScenery_013",
+      "meshId": "bush__000",
+      "extents": [
+        5.5719840000000005,
+        3.2,
+        5.561712
+      ]
+    },
+    {
+      "name": "CorridorScenery_014",
+      "meshId": "tree_a__000",
+      "extents": [
+        17.91248,
+        24.0,
+        17.87944
+      ]
+    },
+    {
+      "name": "CorridorScenery_015",
+      "meshId": "silhouette_fern_rocks__000",
+      "extents": [
+        9.033624000000001,
+        4.0,
+        7.67576
+      ]
+    },
+    {
+      "name": "CorridorScenery_016",
+      "meshId": "tree_a__000",
+      "extents": [
+        17.91248,
+        24.0,
+        17.87944
+      ]
+    },
+    {
+      "name": "CorridorScenery_017",
+      "meshId": "bush__000",
+      "extents": [
+        5.5719840000000005,
+        3.2,
+        5.561712
+      ]
+    },
+    {
+      "name": "CorridorScenery_018",
+      "meshId": "tree_b__000",
+      "extents": [
+        23.377081,
+        24.7,
+        18.84428
+      ]
+    },
+    {
+      "name": "CorridorScenery_019",
+      "meshId": "silhouette_fern_rocks__000",
+      "extents": [
+        9.033624000000001,
+        4.0,
+        7.67576
+      ]
+    },
+    {
+      "name": "CorridorScenery_020",
+      "meshId": "tree_a__000",
+      "extents": [
+        17.91248,
+        24.0,
+        17.87944
+      ]
+    },
+    {
+      "name": "CorridorScenery_021",
+      "meshId": "bush__000",
+      "extents": [
+        5.5719840000000005,
+        3.2,
+        5.561712
+      ]
+    },
+    {
+      "name": "CorridorScenery_022",
+      "meshId": "tree_a__000",
+      "extents": [
+        17.91248,
+        24.0,
+        17.87944
+      ]
+    },
+    {
+      "name": "CorridorScenery_023",
+      "meshId": "silhouette_fern_rocks__000",
+      "extents": [
+        9.033624000000001,
+        4.0,
+        7.67576
+      ]
+    },
+    {
+      "name": "CorridorScenery_024",
+      "meshId": "tree_b__000",
+      "extents": [
+        23.377081,
+        24.7,
+        18.84428
+      ]
+    },
+    {
+      "name": "CorridorScenery_025",
+      "meshId": "bush__000",
+      "extents": [
+        5.5719840000000005,
+        3.2,
+        5.561712
+      ]
+    },
+    {
+      "name": "CorridorScenery_026",
+      "meshId": "tree_a__000",
+      "extents": [
+        17.91248,
+        24.0,
+        17.87944
+      ]
+    },
+    {
+      "name": "CorridorScenery_027",
+      "meshId": "silhouette_fern_rocks__000",
+      "extents": [
+        9.033624000000001,
+        4.0,
+        7.67576
+      ]
+    },
+    {
+      "name": "CorridorScenery_028",
+      "meshId": "tree_a__000",
+      "extents": [
+        17.91248,
+        24.0,
+        17.87944
+      ]
+    },
+    {
+      "name": "CorridorScenery_029",
+      "meshId": "bush__000",
+      "extents": [
+        5.5719840000000005,
+        3.2,
+        5.561712
+      ]
+    },
+    {
+      "name": "CorridorScenery_030",
+      "meshId": "tree_b__000",
+      "extents": [
+        23.377081,
+        24.7,
+        18.84428
+      ]
+    },
+    {
+      "name": "CorridorScenery_031",
+      "meshId": "silhouette_fern_rocks__000",
+      "extents": [
+        9.033624000000001,
+        4.0,
+        7.67576
+      ]
+    },
+    {
+      "name": "CorridorScenery_032",
+      "meshId": "tree_a__000",
+      "extents": [
+        17.91248,
+        24.0,
+        17.87944
+      ]
+    },
+    {
+      "name": "CorridorScenery_033",
+      "meshId": "bush__000",
+      "extents": [
+        5.5719840000000005,
+        3.2,
+        5.561712
+      ]
+    },
+    {
+      "name": "CorridorScenery_034",
+      "meshId": "tree_a__000",
+      "extents": [
+        17.91248,
+        24.0,
+        17.87944
+      ]
+    },
+    {
+      "name": "CorridorScenery_035",
+      "meshId": "silhouette_fern_rocks__000",
+      "extents": [
+        9.033624000000001,
+        4.0,
+        7.67576
+      ]
+    },
+    {
+      "name": "CorridorScenery_036",
+      "meshId": "tree_b__000",
+      "extents": [
+        23.377081,
+        24.7,
+        18.84428
+      ]
+    },
+    {
+      "name": "CorridorScenery_037",
+      "meshId": "bush__000",
+      "extents": [
+        5.5719840000000005,
+        3.2,
+        5.561712
+      ]
+    },
+    {
+      "name": "CorridorScenery_038",
+      "meshId": "tree_a__000",
+      "extents": [
+        17.91248,
+        24.0,
+        17.87944
+      ]
+    },
+    {
+      "name": "CorridorScenery_039",
+      "meshId": "silhouette_fern_rocks__000",
+      "extents": [
+        9.033624000000001,
+        4.0,
+        7.67576
+      ]
+    },
+    {
+      "name": "CorridorScenery_040",
+      "meshId": "tree_a__000",
+      "extents": [
+        17.91248,
+        24.0,
+        17.87944
+      ]
+    },
+    {
+      "name": "CorridorScenery_041",
+      "meshId": "bush__000",
+      "extents": [
+        5.5719840000000005,
+        3.2,
+        5.561712
+      ]
+    },
+    {
+      "name": "CorridorScenery_042",
+      "meshId": "silhouette_ruined_waymarker__000",
+      "extents": [
+        5.64376,
+        7.2,
+        5.00408
+      ]
+    },
+    {
+      "name": "CorridorScenery_043",
+      "meshId": "silhouette_ruined_waymarker__000",
+      "extents": [
+        5.64376,
+        7.2,
+        5.00408
+      ]
+    },
+    {
+      "name": "CorridorScenery_044",
+      "meshId": "silhouette_ruined_waymarker__000",
+      "extents": [
+        5.64376,
+        7.2,
+        5.00408
+      ]
+    },
+    {
+      "name": "CorridorScenery_045",
+      "meshId": "silhouette_ruined_waymarker__000",
+      "extents": [
+        5.64376,
+        7.2,
+        5.00408
+      ]
+    },
+    {
+      "name": "CorridorScenery_046",
+      "meshId": "silhouette_ruined_waymarker__000",
+      "extents": [
+        5.64376,
+        7.2,
+        5.00408
+      ]
+    },
+    {
+      "name": "CorridorScenery_047",
+      "meshId": "silhouette_ruined_waymarker__000",
+      "extents": [
+        5.64376,
+        7.2,
+        5.00408
+      ]
+    },
+    {
+      "name": "CorridorScenery_048",
+      "meshId": "silhouette_ruined_waymarker__000",
+      "extents": [
+        5.64376,
+        7.2,
+        5.00408
+      ]
+    },
+    {
+      "name": "CorridorScenery_049",
+      "meshId": "silhouette_ruined_waymarker__000",
+      "extents": [
+        5.64376,
+        7.2,
+        5.00408
+      ]
+    },
+    {
+      "name": "CorridorScenery_050",
+      "meshId": "tree_a__000",
+      "extents": [
+        15.673419999999998,
+        21.0,
+        15.644509999999999
+      ]
+    },
+    {
+      "name": "CorridorScenery_051",
+      "meshId": "tree_a__000",
+      "extents": [
+        12.31483,
+        16.5,
+        12.292115
+      ]
+    },
+    {
+      "name": "CorridorScenery_052",
+      "meshId": "bush__000",
+      "extents": [
+        4.8754859999999995,
+        2.8,
+        4.866498
+      ]
+    },
+    {
+      "name": "CorridorScenery_053",
+      "meshId": "silhouette_fern_rocks__000",
+      "extents": [
+        7.904421,
+        3.5,
+        6.716289999999999
+      ]
+    },
+    {
+      "name": "Corridor_OriginalCliffBridge",
+      "meshId": "corridor_bridge_rails",
+      "extents": [
+        32.0,
+        16.35,
+        130.0
+      ]
+    },
+    {
+      "name": "Corridor_LookoutPier_0",
+      "meshId": "corridor_lookout_pier",
+      "extents": [
+        6.0,
+        15.9,
+        6.0
+      ]
+    },
+    {
+      "name": "Corridor_LookoutPier_1",
+      "meshId": "corridor_lookout_pier",
+      "extents": [
+        6.0,
+        15.9,
+        6.0
+      ]
+    },
+    {
+      "name": "landforms_west__000__bounded_000",
+      "meshId": "landforms_west__000__bounded_000",
+      "extents": [
+        700.9279791627638,
+        163.9297438687035,
+        1194.3270578339418
+      ]
+    },
+    {
+      "name": "landforms_west__000__bounded_001",
+      "meshId": "landforms_west__000__bounded_001",
+      "extents": [
+        682.3171052588507,
+        143.20532172875,
+        1172.563664256687
+      ]
+    },
+    {
+      "name": "landforms_east__000__bounded_000",
+      "meshId": "landforms_east__000__bounded_000",
+      "extents": [
+        313.66996987676094,
+        110.16585471664322,
+        1126.5929840523188
+      ]
+    },
+    {
+      "name": "landforms_east__000__bounded_001",
+      "meshId": "landforms_east__000__bounded_001",
+      "extents": [
+        264.60641231863394,
+        111.52795740595725,
+        1115.6108660747464
+      ]
+    },
+    {
+      "name": "landforms_ruined_beacon__000",
+      "meshId": "landforms_ruined_beacon__000",
+      "extents": [
+        36.0,
+        131.76888429983987,
+        34.23803458662553
+      ]
+    },
+    {
+      "name": "landforms_coastal_water__000",
+      "meshId": "landforms_coastal_water__000",
+      "extents": [
+        1700,
+        0.0,
+        1990
+      ]
+    }
+  ],
+  "limitStuds": 2000,
+  "nativeLimitStuds": 2048,
+  "minimumMarginStuds": 58,
+  "status": "OFFLINE_PASS_NOT_STUDIO",
+  "sourceSha256": "cb3171b25c6bd52a24e8a1baa6af5c82c42b0c41127f255e6cb918fcf57da136",
+  "outputSha256": "88bd14ea6272fb1c51baebb220e1845b0949ceaabe23d8e8175c3b39b6d35bee",
+  "negativeControl": "('landforms_west__000', 'resource extents', [729.9279791627638, 163.9515908739489, 2330.2995133930144])",
+  "exactResourceFaceCounters": true,
+  "exactPlacedFaceCounters": true,
+  "metadataPreserved": true,
+  "retainedSceneryPlacements": 57,
+  "waterResourceUnchanged": true,
+  "localImporterSchemaPassed": true,
+  "uniqueTriangles": 5364,
+  "instanceTriangles": 33449,
+  "meshCount": 13,
+  "placementCount": 63,
+  "splitResources": {
+    "landforms_west__000": [
+      "landforms_west__000__bounded_000",
+      "landforms_west__000__bounded_001"
+    ],
+    "landforms_east__000": [
+      "landforms_east__000__bounded_000",
+      "landforms_east__000__bounded_001"
+    ]
+  },
+  "runtimeIds": null,
+  "studioTested": false,
+  "humanApproved": false
+}

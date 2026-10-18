@@ -1,0 +1,11 @@
+{
+  "command": [
+    "python",
+    "C:\\Work\\MySelf\\Guildborne-city-greenwood\\production\\world\\quality-slice\\mesh-extents\\validate_geometry.py"
+  ],
+  "exitCode": 0,
+  "seconds": 3.8000555000035092,
+  "packetSha256": "88bd14ea6272fb1c51baebb220e1845b0949ceaabe23d8e8175c3b39b6d35bee",
+  "stdoutSha256": "a04940d242bef30b84dec6b9c79e4f1c0d96723ccd919cf936001325ec6b9cb2",
+  "stderrSha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+}

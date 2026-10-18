@@ -1,0 +1,32 @@
+{
+  "baseCommit": "df276a4843c376a145c79e4b92c48c61efd3028a",
+  "status": "REVIEWED_LOCAL_FIX_NATIVE_RETRY_PENDING",
+  "studioImported": false,
+  "humanApproved": false,
+  "sha256": {
+    "assets/production/world-slice/corridor-landforms-bounded/.gitattributes": "50524bc54be6323af4266e11f2ca0b4d574bad39253c8c5293eca7d3173fa822",
+    "assets/production/world-slice/corridor-landforms-bounded/blender-exit.json": "75031477705b4a568c164f2dea57727dd37e6e94ad4a027a52d125a6d003c0d8",
+    "assets/production/world-slice/corridor-landforms-bounded/blender-stderr.txt": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "assets/production/world-slice/corridor-landforms-bounded/blender-stdout.txt": "e5c9008d700324c12ce07828468d3614dbfd87ffb8a9c497b0f74e7d1ffd1352",
+    "assets/production/world-slice/corridor-landforms-bounded/citygate.png": "3d04dbeb029583d078bcd7c43adb0c57729a3fa12915e43e4fd788ad02f4e7dc",
+    "assets/production/world-slice/corridor-landforms-bounded/cliffbridge.png": "b381b51ea132e49df30fe8a45d384e3dd49982a84ce0b30b2988ee2aaf2044c2",
+    "assets/production/world-slice/corridor-landforms-bounded/forestarrival.png": "5d9976211fbcef2dd6eea55eb710c30f3f73ca64d71c22846be863d9af7a39ce",
+    "assets/production/world-slice/corridor-landforms-bounded/landforms.blend": "9bc73b64ee4e5da5021fac191076fe179ff73b21d898db08f38cee6a5a8985f8",
+    "assets/production/world-slice/corridor-landforms-bounded/overview.png": "a339cdd9cb7e805f3fa3c9307ae5ee38e2082a8c4088440db46bdd0aaa33a613",
+    "assets/production/world-slice/corridor-landforms-bounded/provenance.json": "50399a1621f5f9d91242316cf5c1628984a0b28c9cc04f930861499ad2372854",
+    "assets/production/world-slice/corridor-landforms-bounded/render-evidence.json": "ef79993183be2536548b43b87e5888259b1b5fb42e1bd11d357ec95165a0ebb8",
+    "assets/production/world-slice/corridor-landforms-bounded/ridge.png": "f8aa4d2d07a29d820e1f00620b889a43332248db54d2470c2c96a52b36ccc79a",
+    "assets/production/world-slice/corridor-landforms-bounded/scenery.mesh.json": "88bd14ea6272fb1c51baebb220e1845b0949ceaabe23d8e8175c3b39b6d35bee",
+    "assets/production/world-slice/corridor-landforms-bounded/woodland.png": "a415dd57563fda40d056bd36ff5af4dc6518b2bf4052491d8118fc507ed4fd30",
+    "production/world/quality-slice/mesh-extents/.gitattributes": "50524bc54be6323af4266e11f2ca0b4d574bad39253c8c5293eca7d3173fa822",
+    "production/world/quality-slice/mesh-extents/bounds-proof.json": "43ed1527f3220b1f5bd5639a16b1f4edf9623b014caaffbdc33b95b9cf19d772",
+    "production/world/quality-slice/mesh-extents/geometry-receipt.json": "2f861f89b888f4691c8ee73c6463f99a9cf55a7f408b0abc5506f9b9681bbc4a",
+    "production/world/quality-slice/mesh-extents/geometry-stderr.txt": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "production/world/quality-slice/mesh-extents/geometry-stdout.txt": "a04940d242bef30b84dec6b9c79e4f1c0d96723ccd919cf936001325ec6b9cb2",
+    "production/world/quality-slice/mesh-extents/HANDOFF.md": "afe7c1b0675c907d5c6bdffe685c51174e121ebb6edb70af142f39332bb24900",
+    "production/world/quality-slice/mesh-extents/independent-geometry.json": "d76c772316052fffc2df5c16272b7165750954a978efd7b2f1e803df781d2ca7",
+    "production/world/quality-slice/mesh-extents/partition.py": "3576f08db23d3145106c678aa92c12f8c02791d115103204546905af42216243",
+    "production/world/quality-slice/mesh-extents/render_bounded.py": "3a9490283337154728fc7e71f5fedc5523b992ea75e91dd355f427a24333d8e4",
+    "production/world/quality-slice/mesh-extents/validate_geometry.py": "181b625bf16983684a95bb507b29d12f1c3ecab05b21b5f73be0c84f289246b5"
+  }
+}
