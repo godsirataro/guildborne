@@ -122,7 +122,7 @@ return function(send: any)
 	status.TextWrapped = true; status.TextXAlignment = Enum.TextXAlignment.Left; status.Parent = panel
 	local compactLayout = false
 	local function responsiveLayout(inRender: boolean?)
-		local compact = panel.AbsoluteSize.Y < 390 or tab=="Journal"
+		local compact = panel.AbsoluteSize.Y < 390 or tab=="Journal" or tab=="Inventory"
 		local changed = compactLayout ~= compact
 		compactLayout = compact
 		tutorial.Visible = not compact
@@ -443,7 +443,7 @@ return function(send: any)
 		gold.Text = if data then T("{gold} Gold · Hall Lv{level}", { gold = data.gold, level = data.hallLevel }) else T("Guildborne · Loading")
 		tutorial.Text = T(if tracked and (tracked.kind=="Novice"or tracked.kind=="Campaign"or tracked.kind=="CampaignComplete")then tracked.name elseif data then tutorialText[data.progression.tutorialStep] or "Choose your next guild task." else "Preparing your Personal Guild…")
 		local noviceGuidanceOnHud=tab=="Guild" and snapshot and snapshot.status=="Active" and data and data.progression.novice and data.progression.novice.claimed<6 and tracked and tracked.kind=="Novice"
-		if compactLayout and tab~="Journal" and not noviceGuidanceOnHud then text(scroll, tutorial.Text, 14) end
+		if compactLayout and tab~="Journal" and tab~="Inventory" and not noviceGuidanceOnHud then text(scroll, tutorial.Text, 14) end
 		local saveLabel = if busy then "Saving…" elseif snapshot and snapshot.status == "Active" then (if string.find(snapshot.mode, "memory") then "Session only" else "Saved") else (snapshot and snapshot.status or "Loading")
 		status.Text = T(saveLabel) .. " · " .. T(notice)
 		if not snapshot or not data then
