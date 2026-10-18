@@ -11,14 +11,18 @@ import argparse
 ROOT = Path(__file__).resolve().parents[1]
 
 
-def build(launch=False, shared_combat=False):
+def build(launch=False, shared_combat=False, continuous_world=False):
     if shared_combat and not launch:
         raise ValueError("Shared combat fixture requires --launch")
+    if continuous_world and not launch:
+        raise ValueError("Continuous world fixture requires --launch")
     runtime = ROOT / "src/server/Config/Runtime.luau"
     before = hashlib.sha256(runtime.read_bytes()).hexdigest()
     project = json.loads((ROOT / "default.project.json").read_text())
     variant = "launch" if launch else "integration"
     project["name"] = "Guildborne_LaunchPreview" if launch else "Guildborne_IntegrationPreview"
+    if continuous_world:
+        project["name"] = "Guildborne_ContinuousWorldPreview"
     out = ROOT / "build"
     out.mkdir(exist_ok=True)
     runtime_path = ROOT / "offline/Runtime.luau"
@@ -30,6 +34,8 @@ def build(launch=False, shared_combat=False):
         candidate_runtime = base_runtime.replace('NoviceJourney=false', 'LaunchCandidate=true,\n    NoviceJourney=true').replace('IronveilJourney=false','IronveilJourney=true')
         if shared_combat:
             candidate_runtime = candidate_runtime.replace('LaunchCandidate=true,', 'LaunchCandidate=true,\n    SharedCombatCandidate=true,')
+        if continuous_world:
+            candidate_runtime = candidate_runtime.replace('LaunchCandidate=true,', 'LaunchCandidate=true,\n    ContinuousWorldCandidate=true,')
         runtime_path = out / "LaunchRuntime.luau"
         runtime_path.write_text(candidate_runtime, encoding="utf-8")
     project.pop("servePlaceIds", None)
@@ -95,6 +101,7 @@ def build(launch=False, shared_combat=False):
                            for p in sorted((ROOT / "src").rglob("*.luau"))}}
     receipt["variant"] = variant
     receipt["sharedCombatCandidate"] = shared_combat
+    receipt["continuousWorldCandidate"] = continuous_world
     receipt["runtimeSha256"] = hashlib.sha256(runtime_path.read_bytes()).hexdigest()
     (out / f"{variant}-preview-build.json").write_text(json.dumps(receipt, indent=2) + "\n")
     # Read-only localhost transfer data for the already-open local preview. The
@@ -130,5 +137,6 @@ if __name__ == "__main__":
     parser = argparse.ArgumentParser()
     parser.add_argument("--launch", action="store_true")
     parser.add_argument("--shared-combat", action="store_true", help="Opt-in local Memory combat/reward lab; no public route or cloud persistence")
+    parser.add_argument("--continuous-world", action="store_true", help="Opt-in local Memory City-Greenwood walking candidate")
     args = parser.parse_args()
-    build(args.launch, args.shared_combat)
+    build(args.launch, args.shared_combat, args.continuous_world)

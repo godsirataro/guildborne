@@ -210,6 +210,30 @@ if sharedLabEnabled then
 		}
 	end
 end
+-- BEGIN continuous walking eligibility: read-only, synchronous server policy.
+local function walkingSession(player:Player):any?
+	if player.Parent~=Players or Players:GetPlayerByUserId(player.UserId)~=player then return nil end
+	return Data.Sessions[player.UserId]
+end
+local function walkingGate(player:Player,session:any,fromZone:string,toZone:string):string?
+	if not session or walkingSession(player)~=session or session.closing or session.state~="Active" or not session.record or not session.record.data then return "ActorNotReady" end
+	if session.busy then return "SavePending" end
+	if not ((fromZone=="City" and toZone=="Greenwood") or (fromZone=="Greenwood" and toZone=="City")) then return "InvalidZone" end
+	local data=session.record.data
+	local problem=Content.NoviceActionProblem(data,"TravelZone");if problem then return problem end
+	problem=Release.problem(data,"TravelZone",{zone=toZone});if problem then return problem end
+	if data.expansion.tower.active then return "FinishExpedition" end
+	local charter=Content.CivicTravel and Content.CivicTravel[toZone]
+	if charter and (not data.settlement.journal[charter] or data.settlement.journal[charter].state~="Claimed") then return "CivicRouteLocked" end
+	if sharedMentorActive(player) then return "HeroMentorActive" end
+	-- These are server-owned active arena models, not client HUD attributes.
+	for _,prefix in ipairs({"NoviceTrial_","TowerLesson_","ArchiveEncounter_"}) do
+		local arena=workspace:FindFirstChild(prefix..player.UserId,true)
+		if arena and arena:GetAttribute("OwnerUserId")==player.UserId then return "FinishExpedition" end
+	end
+	return nil
+end
+-- END continuous walking eligibility.
 local World:any = require(script.Parent.Services.WorldService).new(function(player: Player, tab: string)
 	if Network then Network.Send(player, nil, nil, nil, tab) end
 end, function(player: Player, deathId: string, members: {string},encounterId:string?): boolean
@@ -253,7 +277,10 @@ end, function(player:Player)
 		if outcome=="Committed" then if Network then Network.Send(player) end;Data.FlushAudit(player.UserId);if campaignWorld then campaignWorld.Victory(player,ticket)end;if ironveilWorld then ironveilWorld.Victory(player,ticket)end;if ashenWorld then ashenWorld.Victory(player,ticket)end end
 		return outcome
 	end
-end,Release,observeProduct,sharedCandidateFactory)
+end,Release,observeProduct,sharedCandidateFactory,if launchEnabled and (Runtime :: any).ContinuousWorldCandidate==true then {
+	Session=walkingSession,Gate=walkingGate,
+	Notify=function(player:Player,code:string)if Network then Network.Send(player,code)end end,
+} else nil)
 local closing = false
 local sharedPumpBusy=false
 local function pumpSharedRewards()

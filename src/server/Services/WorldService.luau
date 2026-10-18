@@ -11,7 +11,7 @@ local LandWorld=require(script.Parent.GuildLandWorld)
 local HallWorld=require(script.Parent.GuildHallWorld)
 local World = {}
 
-function World.new(onOpen: (Player, string) -> (), reward: any, towerResult: any, intent: any,regionalRewardFactory:any?,release:any?,combatObserver:any?,sharedCandidateFactory:any?)
+function World.new(onOpen: (Player, string) -> (), reward: any, towerResult: any, intent: any,regionalRewardFactory:any?,release:any?,combatObserver:any?,sharedCandidateFactory:any?,walkingPolicy:any?)
 	local folder = Instance.new("Folder"); folder.Name = "GuildborneWorld"; folder.Parent = workspace
 	local templates = Kit.Build(); templates.Parent = ServerStorage
 	-- Only a trusted server caller supplies this opt-in factory. The scene lives
@@ -34,6 +34,14 @@ function World.new(onOpen: (Player, string) -> (), reward: any, towerResult: any
 	city.civicRegions=civic.regions
 	for _,portal in ipairs(civic.portals)do table.insert(city.portals,portal)end
 	for _,portal in ipairs(civic.guildPortals)do table.insert(city.guildAccessPortals,portal)end
+	local walking:any=nil
+	if walkingPolicy then
+		-- The quality initializer independently enforces unsaved Studio/Memory.
+		local quality=require(script.Parent.WorldQualitySlice)(folder)
+		local route=quality.buildContinuousCorridor()
+		assert(route.geometry:IsDescendantOf(folder) and route.isReady(),"Walking corridor is not ready")
+		walking={Routes={route},Session=walkingPolicy.Session,Gate=walkingPolicy.Gate,Notify=walkingPolicy.Notify}
+	end
 	local plots: { [Player]: any } = {}
 	local occupied: { [number]: boolean } = {}
 	local service = {}
@@ -49,7 +57,8 @@ function World.new(onOpen: (Player, string) -> (), reward: any, towerResult: any
 			Recover=function():boolean return not scene.plot.Parent or scene.plot:GetAttribute("Status")=="Faulted" or scene.plot:GetAttribute("Status")=="Closed" end,
 			Contains=function(position:Vector3):boolean local p=position-scene.origin;return math.abs(p.X)<=48 and p.Z>=2 and p.Z<=148 and p.Y> -15 and p.Y<50 end}
 	end
-	local travel=require(script.Parent.TravelService)(city,plots,heroes,localTravel)
+	local travel=require(script.Parent.TravelService)(city,plots,heroes,localTravel,nil,walking)
+	if walking then heroes.SetWalkingContext(travel.CanFollowWalking)end
 	local function localPrompt(anchor:BasePart,enter:boolean,owner:Player?)
 		local prompt=Instance.new("ProximityPrompt");prompt.Name=if enter then "EnterLocalShared"else "ReturnLocalShared"
 		prompt.ActionText=if enter then "Enter test / เข้าทดสอบ"else "Return / กลับ"
