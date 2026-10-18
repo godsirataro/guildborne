@@ -1,0 +1,30 @@
+{
+  "first": {
+    "content": [
+      {
+        "type": "text",
+        "text": "sabuiltin_Assistant.rbxm.Assistant.Packages._Index.AssistantUI.AssistantUI.Tools.ExecuteLuauTool:116: sabuiltin_Assistant.rbxm.Assistant.Packages._Index.AssistantUI.AssistantUI.Util.CommandExecution:54: AssistantCommand:134: AssistantCommand:59: Carrier did not follow sampled real hand\nAssistantCommand:59 function sample\nAssistantCommand:77 function fresh\nAssistantCommand:97\nAssistantCommand:89\n"
+      }
+    ],
+    "isError": true
+  },
+  "diagnostic": {
+    "content": [
+      {
+        "type": "text",
+        "text": "sabuiltin_Assistant.rbxm.Assistant.Packages._Index.AssistantUI.AssistantUI.Tools.ExecuteLuauTool:116: sabuiltin_Assistant.rbxm.Assistant.Packages._Index.AssistantUI.AssistantUI.Util.CommandExecution:54: AssistantCommand:134: AssistantCommand:59: Carrier mismatch pos=0.228706 rot=0.222022 age=0.102130\nAssistantCommand:59 function sample\nAssistantCommand:77 function fresh\nAssistantCommand:97\nAssistantCommand:89\n"
+      }
+    ],
+    "isError": true
+  },
+  "candidate": {
+    "source": "ddcb63b",
+    "sha256": "fce080d7c50a9af7f3c2286cf3ddc31f9d98230574e1889745128f18b9e7c005",
+    "studio": "a302325a-c09b-419d-bdcf-b8eb6888459b"
+  },
+  "cleanup": {
+    "separateReadback": true,
+    "leftovers": 0,
+    "rootUnchanged": true
+  }
+}

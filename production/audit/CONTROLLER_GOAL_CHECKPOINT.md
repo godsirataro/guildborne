@@ -23,14 +23,25 @@ Continue dependency-ready waves until the intended work is complete or fresh
 account usage reports approximately 5% remaining. Check usage between waves;
 stop new work at that threshold and preserve a handoff. Do not consume a reset.
 
-## Resume checkpoint — refreshed 2026-10-18
+## Latest continuation — 2026-10-18
+
+Controller1bf9339 integrates corridor, hand effects, Ashen/Tower navigation and
+Durn forge contact. Fresh full baseline:912tests/384strictfiles. Native evidence:
+25course paths,12synthetic navigation cases,3Durn contact samples,15moving-hand
+paired samples after fixing probe scheduling. See three-session/DASHBOARD.md
+and CORRIDOR_HAND_V5.md / CAMPAIGN_DURN_V5.md for exact candidate identities.
+S13 continues grid/edge art correction; S17 extends Durn client lifecycle probe.
+S14/S15 deliveries are integrated. Audit/registry evidence and independent
+acceptance are next to unlock city-zones legitimately. Goal remains full-game.
+
+## Previous resume checkpoint — retained context
 
 - Goal tool remains ACTIVE. Its older starter-slice wording is an intermediate
   milestone; the full-game destination above is the controlling scope. The tool
   supports status updates only and cannot rewrite an unfinished objective.
 - Controller branch: codex/three-session-integration; source checkpoint 39fdec4.
 - Shared ledger: C:/Work/MySelf/Guildborne/build/agentic/four-session-v5.sqlite3.
-- Fresh account reading: 12% used / 88% remaining. Stop new waves near 5%.
+- Fresh account reading: 15% used / 85% remaining. Stop new waves near 5%.
 - S13 (01a14151-b69f-7273-9be0-428bc513a42e): entry art integrated 6481f8b;
   next corridor composition assigned in Guildborne-regional-art, bounded to
   novice-entry-art despite directory name. Blender ownership belongs to S13.

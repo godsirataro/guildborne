@@ -1,0 +1,9 @@
+{
+  "content": [
+    {
+      "type": "text",
+      "text": "{\"rootStationarityChecked\":true,\"actualHandMovementObserved\":true,\"maxPositionErrorStud\":0,\"sampledHand\":\"RightHand\",\"characterAttributesChecked\":{\"1\":\"ActionAt\",\"3\":\"CombatHealth\",\"2\":\"ClassId\"},\"otherRigTypeTested\":false,\"carrierExpiryPreservedEvent\":true,\"realDeathRespawnTested\":false,\"characterMutatedByProbe\":false,\"maxRotationErrorRadians\":0.0006905339541845024,\"basicCastTested\":true,\"status\":\"PASS_LOCAL_HAND_CARRIER\",\"serverCombatTested\":false,\"replicationTested\":false,\"physicalCastTested\":true}"
+    }
+  ],
+  "isError": false
+}

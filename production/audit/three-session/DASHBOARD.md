@@ -2,6 +2,8 @@
 
 ## Latest goal checkpoint (supersedes statuses below)
 
+Controller1bf9339: corridor564parts integrated73da20a;25enginepaths passed. Handtrackerddcb63b native sampling failure resolved by reviewed probe1bf9339:15paired moving-hand samples PASS; original failures retained. S14 Ashen/Tower routing integrated916454b; isolated12/0 native collector fixture passed. S17 Durn contact integrated3bddf9e;3nativecontacts/rootrestore pass, actualworld workstation confirmed; Durn client lifecycle fixture in progress. Fresh fullbaseline57661 exit0:912tests/384strictfiles. NewMemory candidate770e8f1f…e02d1c in155918dd; preserve earnedChapter5def49833 andChapter3 62789207. S13 improving remaining flatgrid, S17 clientprobe active, S14/S15 latest deliverables finished. Next audit/registry evidence and independentacceptance unlock legitimate regionalcity scope; do not treat novicepolish as fullworld completion. See CORRIDOR_HAND_V5.md and CAMPAIGN_DURN_V5.md. GoalACTIVE.
+
 Latest ordinary candidate progress: CrossroadsKeeper240→0 through real F/Q, player48→3; captive/crest nativeE and GUIclaim passed, nowChapter5 BeforetheOath at(-4417.7305,2.9980,-33.6117). See NOVICE_KEEPER_V5.md; no no-hit, Tower or detailedcombatvisual claim. S15 next bounded novice proxy hand-effects task dispatched in Guildborne-novice-handfx from39fdec4; S13/S14 continue active. GoalACTIVE.
 
 Latest ordinary continuation: newdef49833 completedChapter3 via tracks→rescue-first nativeE→suppliesfallbackE→nativeGUIclaim, nowChapter4 TheCrossroadsKeeper at(-4549.3589,2.9980,28.6016). Preserveearnedstate; no injections. See NOVICE_CHAPTER3_V5.md. S13/S14 currentturns confirmedactive; newcorridor not yetinrunningcandidate. Quota90%remaining, GoalACTIVE.
