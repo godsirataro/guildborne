@@ -1,0 +1,113 @@
+{
+  "source": "4e32013",
+  "candidateSha256": "25a379166e2a8d89f006331422db510327fb0659516e2c888ae6fe6a086d4d7a",
+  "studio": "def49833-7515-4dc3-8740-9fe5e947164c",
+  "startup": {
+    "content": [
+      {
+        "type": "text",
+        "text": "{\"position\":[-4500,2.9980251789093019,214],\"guis\":[{\"name\":\"Chat\",\"class\":\"ScreenGui\"},{\"name\":\"BubbleChat\",\"class\":\"ScreenGui\"},{\"name\":\"GuildborneUI\",\"class\":\"ScreenGui\"},{\"name\":\"QuestNPCMarker\",\"class\":\"BillboardGui\"},{\"name\":\"QuestNPCMarker\",\"class\":\"BillboardGui\"},{\"name\":\"QuestNPCMarker\",\"class\":\"BillboardGui\"},{\"name\":\"QuestNPCMarker\",\"class\":\"BillboardGui\"},{\"name\":\"QuestNPCMarker\",\"class\":\"BillboardGui\"},{\"name\":\"QuestNPCMarker\",\"class\":\"BillboardGui\"},{\"name\":\"QuestNPCMarker\",\"class\":\"BillboardGui\"},{\"name\":\"QuestNPCMarker\",\"class\":\"BillboardGui\"},{\"name\":\"QuestNPCMarker\",\"class\":\"BillboardGui\"},{\"name\":\"QuestNPCMarker\",\"class\":\"BillboardGui\"},{\"name\":\"QuestNPCMarker\",\"class\":\"BillboardGui\"},{\"name\":\"QuestNPCMarker\",\"class\":\"BillboardGui\"},{\"name\":\"ResourceCooldown\",\"class\":\"BillboardGui\"},{\"name\":\"ResourceCooldown\",\"class\":\"BillboardGui\"},{\"name\":\"ResourceCooldown\",\"class\":\"BillboardGui\"},{\"name\":\"ResourceCooldown\",\"class\":\"BillboardGui\"},{\"name\":\"ResourceCooldown\",\"class\":\"BillboardGui\"},{\"name\":\"ResourceCooldown\",\"class\":\"BillboardGui\"},{\"name\":\"GuildborneCombatUI\",\"class\":\"ScreenGui\"},{\"name\":\"GuildbornePlayerCombatUI\",\"class\":\"ScreenGui\"},{\"name\":\"NoviceTrialHUD\",\"class\":\"ScreenGui\"},{\"name\":\"CityNavigation\",\"class\":\"ScreenGui\"},{\"name\":\"CampaignDirections\",\"class\":\"ScreenGui\"},{\"name\":\"IslandVisitNotice\",\"class\":\"ScreenGui\"},{\"name\":\"GuildborneMarket\",\"class\":\"ScreenGui\"},{\"name\":\"Freecam\",\"class\":\"ScreenGui\"},{\"name\":\"ResourceCooldown\",\"class\":\"BillboardGui\"},{\"name\":\"ResourceCooldown\",\"class\":\"BillboardGui\"},{\"name\":\"ResourceCooldown\",\"class\":\"BillboardGui\"},{\"name\":\"ResourceCooldown\",\"class\":\"BillboardGui\"}],\"attributes\":{\"WorldDataset\":\"Dataset1\",\"IsolatedMemory\":true,\"WorldCollisionSourceSha256\":\"9baaf8de0faf3ff7f4a4f2c32ea692e48aa9dbb021f609e3530029ed7844ddc7\",\"WorldSourceSha256\":\"9baaf8de0faf3ff7f4a4f2c32ea692e48aa9dbb021f609e3530029ed7844ddc7\",\"BindEnemies\":true,\"EnemyBindingState\":\"READY_LOCAL_ONLY\",\"EnableWorldSlice\":true,\"WorldCollisionReady\":true},\"user\":11732987790}"
+      }
+    ],
+    "isError": false
+  },
+  "paths": {
+    "content": [
+      {
+        "type": "text",
+        "text": "{\"visibleParts\":360,\"ownerUserId\":11732987790,\"scope\":\"Static Stage-tagged art and read-only navigation; no NPC physics or quest receipt acceptance\",\"width\":300,\"runtime\":true,\"gameplayBound\":false,\"markerCount\":15,\"model\":\"Workspace.NoviceCourse_11732987790\",\"routes\":[{\"waypoints\":39,\"name\":\"CaravanRejoin\",\"studs\":226.60798478126527},{\"waypoints\":36,\"name\":\"CaravanRescue\",\"studs\":210.08927202224732},{\"waypoints\":34,\"name\":\"CaravanSupplies\",\"studs\":197.5173466205597},{\"waypoints\":18,\"name\":\"CourierApproach\",\"studs\":99.3071608543396},{\"waypoints\":18,\"name\":\"CourierCamp\",\"studs\":98.37703084945679},{\"waypoints\":12,\"name\":\"CourierPathMarker\",\"studs\":64},{\"waypoints\":46,\"name\":\"CrossroadsKeeper\",\"studs\":268.38015353679659},{\"waypoints\":57,\"name\":\"Discipline_Archer\",\"studs\":336.39766335487368},{\"waypoints\":58,\"name\":\"Discipline_Knight\",\"studs\":340.7042212486267},{\"waypoints\":57,\"name\":\"Discipline_Mage\",\"studs\":333.65087258815768},{\"waypoints\":56,\"name\":\"Discipline_Priest\",\"studs\":331.66092443466189},{\"waypoints\":59,\"name\":\"Discipline_Warrior\",\"studs\":346.9151997566223},{\"waypoints\":55,\"name\":\"FiveDisciplines\",\"studs\":321.76755237579348},{\"waypoints\":63,\"name\":\"HallForecourt\",\"studs\":374.0068516731262},{\"waypoints\":69,\"name\":\"HallInterior\",\"studs\":409.0105528831482},{\"waypoints\":25,\"name\":\"TrainingYard\",\"studs\":143.63614225387574}],\"depth\":450,\"colliders\":61,\"parts\":408}"
+      }
+    ],
+    "isError": false
+  },
+  "courierBefore": {
+    "content": [
+      {
+        "type": "text",
+        "text": "{\"actors\":[{\"attrs\":{\"OwnerUserId\":11732987790,\"WorkMotionIdentity\":\"marshal_elian\",\"NpcLifeWorkWeight\":1,\"ClassId\":\"Human\",\"FriendlyNPC\":true,\"NpcLifeTier\":\"Near\",\"NpcLifeActivity\":\"Work\",\"DesignId\":\"npc.novice.courier\",\"NpcLifeScheduledActivity\":\"Work\",\"RecruitmentBound\":false},\"name\":\"courier\",\"alias\":\"marshal_elian\"}],\"distance\":12.553167343139649,\"key\":\"E\",\"pos\":[-4555.98388671875,2.9980251789093019,157.73451232910157]}"
+      }
+    ],
+    "isError": false
+  },
+  "outsideReach": {
+    "content": [
+      {
+        "type": "text",
+        "text": "{\"RecruitmentBound\":false,\"WorkMotionIdentity\":\"marshal_elian\",\"DesignId\":\"npc.novice.courier\",\"ClassId\":\"Human\",\"OwnerUserId\":11732987790,\"FriendlyNPC\":true}"
+      }
+    ],
+    "isError": false
+  },
+  "accepted": {
+    "content": [
+      {
+        "type": "text",
+        "text": "{\"attrs\":{\"NpcInteractor\":11732987790,\"RecruitmentBound\":false,\"WorkMotionIdentity\":\"marshal_elian\",\"ClassId\":\"Human\",\"FriendlyNPC\":true,\"GreetingAt\":1792301584.888668,\"NpcInteractUntil\":1792301596.888668,\"DesignId\":\"npc.novice.courier\",\"OwnerUserId\":11732987790},\"distance\":9.103239059448243,\"pos\":[-4555.98583984375,2.998046875,150.2703857421875]}"
+      }
+    ],
+    "isError": false
+  },
+  "meet": {
+    "content": [
+      {
+        "type": "text",
+        "text": "{\"actor\":{\"NpcInteractor\":11732987790,\"OwnerUserId\":11732987790,\"WorkMotionIdentity\":\"marshal_elian\",\"NpcLifeWorkWeight\":1,\"ClassId\":\"Human\",\"FriendlyNPC\":true,\"GreetingAt\":1792301584.888668,\"NpcLifeTier\":\"Near\",\"NpcInteractUntil\":1792301596.888668,\"NpcLifeActivity\":\"Work\",\"DesignId\":\"npc.novice.courier\",\"NpcLifeScheduledActivity\":\"Work\",\"RecruitmentBound\":false},\"labels\":[{\"name\":\"ChapterNumber\",\"text\":\"Chapter 1 / 6\"},{\"name\":\"ChapterTitle\",\"text\":\"The Unmarked\"},{\"name\":\"Objective_meet_courier\",\"text\":\"✓ Meet the courier\"},{\"name\":\"Objective_walk_route\",\"text\":\"○ Follow the training path\"},{\"name\":\"Objective_dodge_warning\",\"text\":\"○ Move clear of the warning\"},{\"name\":\"Objective_help_courier\",\"text\":\"○ Help the courier\"}]}"
+      }
+    ],
+    "isError": false
+  },
+  "walk": {
+    "content": [
+      {
+        "type": "text",
+        "text": "{\"objectives\":[{\"name\":\"Objective_meet_courier\",\"text\":\"✓ Meet the courier\"},{\"name\":\"Objective_walk_route\",\"text\":\"✓ Follow the training path\"},{\"name\":\"Objective_dodge_warning\",\"text\":\"○ Move clear of the warning\"},{\"name\":\"Objective_help_courier\",\"text\":\"○ Help the courier\"}],\"pos\":[-4500.001953125,2.9980251789093019,150.27078247070313]}"
+      }
+    ],
+    "isError": false
+  },
+  "unsuccessfulDodgeAttempt": {
+    "content": [
+      {
+        "type": "text",
+        "text": "{\"objectives\":[{\"name\":\"Objective_meet_courier\",\"text\":\"✓ Meet the courier\"},{\"name\":\"Objective_walk_route\",\"text\":\"✓ Follow the training path\"},{\"name\":\"Objective_dodge_warning\",\"text\":\"○ Move clear of the warning\"},{\"name\":\"Objective_help_courier\",\"text\":\"○ Help the courier\"}],\"pos\":[-4480.2744140625,2.99802565574646,150.26632690429688]}"
+      }
+    ],
+    "isError": false
+  },
+  "anotherUnsuccessfulDodge": {
+    "content": [
+      {
+        "type": "text",
+        "text": "{\"objectives\":[{\"name\":\"Objective_meet_courier\",\"text\":\"✓ Meet the courier\"},{\"name\":\"Objective_walk_route\",\"text\":\"✓ Follow the training path\"},{\"name\":\"Objective_dodge_warning\",\"text\":\"○ Move clear of the warning\"},{\"name\":\"Objective_help_courier\",\"text\":\"○ Help the courier\"}],\"pos\":[-4482.9404296875,2.99802565574646,150.2616729736328]}"
+      }
+    ],
+    "isError": false
+  },
+  "successfulDodge": {
+    "content": [
+      {
+        "type": "text",
+        "text": "{\"pos\":[-4493.37451171875,2.9980251789093019,137.9952392578125],\"text\":\"✓ Move clear of the warning\"}"
+      }
+    ],
+    "isError": false
+  },
+  "ready": {
+    "content": [
+      {
+        "type": "text",
+        "text": "{\"claim\":\"Claim 100 XP\",\"objectives\":[{\"name\":\"Objective_meet_courier\",\"text\":\"✓ Meet the courier\"},{\"name\":\"Objective_walk_route\",\"text\":\"✓ Follow the training path\"},{\"name\":\"Objective_dodge_warning\",\"text\":\"✓ Move clear of the warning\"},{\"name\":\"Objective_help_courier\",\"text\":\"✓ Help the courier\"}],\"pos\":[-4556.08935546875,2.9980251789093019,148.59730529785157]}"
+      }
+    ],
+    "isError": false
+  },
+  "claimed": {
+    "content": [
+      {
+        "type": "text",
+        "text": "{\"panel\":true,\"labels\":[{\"name\":\"ChapterNumber\",\"text\":\"Chapter 2 / 6\"},{\"name\":\"ChapterTitle\",\"text\":\"A Borrowed Weapon\"},{\"name\":\"Objective_practice_attack\",\"text\":\"○ Practice a basic attack\"},{\"name\":\"Objective_dodge_area\",\"text\":\"○ Dodge the area attack\"},{\"name\":\"Objective_rescue_dummy\",\"text\":\"○ Rescue the practice captive\"}]}"
+      }
+    ],
+    "isError": false
+  }
+}
