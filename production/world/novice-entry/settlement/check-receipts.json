@@ -1,0 +1,82 @@
+[
+  {
+    "name": "sync",
+    "command": [
+      "C:\\Users\\godsi\\AppData\\Local\\Programs\\Python\\Python314\\python.exe",
+      "tools/sync_novice_road_art.py",
+      "--check"
+    ],
+    "cwd": "C:\\Work\\MySelf\\Guildborne-regional-art",
+    "startedUtc": "2026-10-18T06:24:50.945380+00:00",
+    "exitCode": 0,
+    "stdout": "sync.stdout.txt",
+    "stderr": "sync.stderr.txt",
+    "stdoutSha256": "55a7c238890efccb3ff8e37bf15d4c263b31b8f55839073a0dff0c5f62c5520e",
+    "stderrSha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+  },
+  {
+    "name": "geometry",
+    "command": [
+      "C:\\Users\\godsi\\AppData\\Local\\Programs\\Python\\Python314\\python.exe",
+      "C:\\Work\\MySelf\\Guildborne-regional-art\\production\\world\\novice-entry\\settlement\\check_geometry.py"
+    ],
+    "cwd": "C:\\Work\\MySelf\\Guildborne-regional-art",
+    "startedUtc": "2026-10-18T06:24:51.138611+00:00",
+    "exitCode": 0,
+    "stdout": "geometry.stdout.txt",
+    "stderr": "geometry.stderr.txt",
+    "stdoutSha256": "7b3c0792238b394e427ccda9b230fbbae3441c0a638d5fb622cf78c9afa175d9",
+    "stderrSha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+  },
+  {
+    "name": "compile",
+    "command": [
+      "C:\\Work\\MySelf\\Guildborne\\.tools\\luau\\luau-compile.exe",
+      "--null",
+      "review/NoviceRoadKit.luau",
+      "src/server/Services/NoviceRoadArt.luau",
+      "tests/studio_novice_road_probe.luau"
+    ],
+    "cwd": "C:\\Work\\MySelf\\Guildborne-regional-art",
+    "startedUtc": "2026-10-18T06:24:51.290778+00:00",
+    "exitCode": 0,
+    "stdout": "compile.stdout.txt",
+    "stderr": "compile.stderr.txt",
+    "stdoutSha256": "712387a003cbfff6efa6fc374985b9f172a828f77b0d2325742e4cb336508476",
+    "stderrSha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+  },
+  {
+    "name": "types",
+    "command": [
+      "C:\\Work\\MySelf\\Guildborne\\.tools\\luau-lsp\\luau-lsp.exe",
+      "analyze",
+      "--platform=roblox",
+      "--definitions=C:\\Work\\MySelf\\Guildborne\\.tools\\luau-lsp\\globalTypes.d.luau",
+      "review/NoviceRoadKit.luau",
+      "src/server/Services/NoviceRoadArt.luau",
+      "tests/studio_novice_road_probe.luau"
+    ],
+    "cwd": "C:\\Work\\MySelf\\Guildborne-regional-art",
+    "startedUtc": "2026-10-18T06:24:51.344160+00:00",
+    "exitCode": 0,
+    "stdout": "types.stdout.txt",
+    "stderr": "types.stderr.txt",
+    "stdoutSha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "stderrSha256": "4b6aa98381540b019fd959153d4a78243d7ab7bc02af3522d2149d527dc17fef"
+  },
+  {
+    "name": "diff",
+    "command": [
+      "git",
+      "diff",
+      "--check"
+    ],
+    "cwd": "C:\\Work\\MySelf\\Guildborne-regional-art",
+    "startedUtc": "2026-10-18T06:24:54.947085+00:00",
+    "exitCode": 0,
+    "stdout": "diff.stdout.txt",
+    "stderr": "diff.stderr.txt",
+    "stdoutSha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "stderrSha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+  }
+]

@@ -246,8 +246,6 @@ return function():Model
  -- their interior maneuver spaces. All silhouettes sit inside the native coast.
  for group,anchor in ipairs({V(-126,0,124),V(127,0,126),V(-129,0,57),V(124,0,71),V(-125,0,1),V(128,0,7)})do
   local x=anchor.X;local z=anchor.Z;local lift=(group%3)*2
-  local mound=corridor("WoodlandBank",V(x+ (if x<0 then -8 else 8),1.5,z),V(21,5,28),moss,Enum.Material.Grass)
-  mound.Shape=Enum.PartType.Ball
   local rock=corridor("BankStone",V(x,1.4,z+8),V(7,4,6),earth,Enum.Material.Slate);rock.Shape=Enum.PartType.Ball
   local trunk=corridor("WoodlandTrunk",V(x,6+lift/2,z),V(12+lift,2.7,2.7),darkWood,Enum.Material.Wood)
   trunk.Shape=Enum.PartType.Cylinder;trunk.CFrame=CFrame.new(trunk.Position)*CFrame.Angles(0,0,math.pi/2)
@@ -262,11 +260,6 @@ return function():Model
   end
   -- A staggered outer ridge sits behind the trees, wholly within native land.
   local side=if x<0 then -1 else 1
-  for layer=0,2 do
-   local height=5+(group+layer)%4*3
-   local bank=corridor("OuterRidge",V(side*(139+layer*1.3),height/2-.5,z-7+layer*5),V(10-layer, height,12+group%3*2),if layer==1 then earth else moss,if layer==1 then Enum.Material.Slate else Enum.Material.Grass)
-   bank.Shape=Enum.PartType.Ball
-  end
   if group==2 or group==3 or group==5 then
    for sapling=0,1 do
     local sx=side*(135+sapling*4);local sz=z-5+sapling*7
@@ -279,18 +272,7 @@ return function():Model
    end
   end
  end
- -- Shallow irregular shoulders overlap the visual road edge, stop short of
- -- native crossings and add no collision to the central walking corridor.
- for _,z in ipairs({58,67,103,111})do for _,side in ipairs({-1,1})do
-  local shoulder=corridor("RoadShoulder",V(side*17,.09,z),V(.16,15,7),Color3.fromRGB(159,151,111),Enum.Material.Sand)
-  shoulder.Shape=Enum.PartType.Cylinder;shoulder.CFrame=CFrame.new(shoulder.Position)*CFrame.Angles(0,0,math.pi/2)
- end end
- -- Court edge tones frame the yard without painting over the dodge warning.
  stage="TrainingYard"
- for _,x in ipairs({42,53,65,77,88})do
-  local patch=corridor("TrainingApron",V(x,.1,65),V(.16,13,9),sand,Enum.Material.Sand)
-  patch.Shape=Enum.PartType.Cylinder;patch.CFrame=CFrame.new(patch.Position)*CFrame.Angles(0,0,math.pi/2)
- end
  for _,x in ipairs({43,87})do
   corridor("TrainingStandard",V(x,6,63),V(.8,12,.8),darkWood,Enum.Material.Wood)
   corridor("TrainingCloth",V(x+2,9,63),V(4,5,.18),navy,Enum.Material.Fabric)
@@ -335,9 +317,75 @@ return function():Model
  corridor("CaravanStandard",V(-101,5.5,55),V(.6,11,.6),wood,Enum.Material.Wood)
  corridor("CaravanCloth",V(-99.3,8,55),V(3.4,4.4,.15),navy,Enum.Material.Fabric)
  corridor("CaravanClothHem",V(-99.3,5.9,55.1),V(3.4,.2,.12),gold)
- for _,z in ipairs({43,50,57})do
-  local patch=corridor("CaravanVerge",V(-110,.09,z),V(.16,22,10),Color3.fromRGB(151,139,101),Enum.Material.Sand)
-  patch.Shape=Enum.PartType.Cylinder;patch.CFrame=CFrame.new(patch.Position)*CFrame.Angles(0,0,math.pi/2)
+ -- Replace the northern grid with one connected settlement road and purposeful
+ -- branches. These thin coatings are below the original warning bottom (.05).
+ local function settlement(name:string,pos:Vector3,size:Vector3,color:Color3,material:Enum.Material?):Part
+  local p=part("Settlement_"..name,pos,size,color,false);p.Material=material or Enum.Material.SmoothPlastic;return p
  end
+ for _,p in ipairs(model:GetChildren())do
+  if p:IsA("BasePart")then
+   if p.Name=="MainRoad"or p.Name=="TrainingCourt"or p.Name=="CaravanCourt"or p.Name=="RescuePath"or p.Name=="RescueRejoin"or (p.Name=="CrossPath"and p.Position.Z>=25)then p.Transparency=1 end
+  end
+ end
+ stage="Landscape"
+ settlement("SouthMainRoad",V(0,.025,-99.5),V(20,.05,189),sand,Enum.Material.Plastic)
+ local groundLayer=0
+ local function groundHeight():number
+  groundLayer+=1
+  local top=.006+groundLayer*.001
+  assert(top<=.044,"Settlement ground must remain below warning surfaces")
+  return top-.005
+ end
+ local function clearing(name:string,x:number,z:number,width:number,depth:number)
+  local p=settlement(name,V(x,groundHeight(),z),V(.01,width,depth),sand,Enum.Material.Sand)
+  p.Shape=Enum.PartType.Cylinder;p.CFrame=CFrame.new(p.Position)*CFrame.Angles(0,0,math.pi/2)
+ end
+ local function road(ax:number,az:number,bx:number,bz:number,width:number)
+  local dx=bx-ax;local dz=bz-az;local length=math.sqrt(dx*dx+dz*dz)
+  local p=settlement("ConnectedRoad",V((ax+bx)/2,groundHeight(),(az+bz)/2),V(width,.01,length),sand,Enum.Material.Sand)
+  p.CFrame=CFrame.new(p.Position)*CFrame.Angles(0,if dz==0 then math.pi/2 else math.atan(dx/dz),0)
+  clearing("RoadJoin",ax,az,width,width)
+ end
+ road(0,208,-2,173,30);road(-2,173,1,139,30)
+ road(1,139,2,108,30);road(2,108,-2,73,30)
+ road(-2,73,1,43,30);road(1,43,0,14,28);road(0,14,0,-5,28)
+ stage="CourierCamp"
+ road(0,150,-30,147,22);road(-30,147,-65,150,22)
+ stage="TrainingYard"
+ road(0,90,32,94,22);road(32,94,65,90,24)
+ clearing("TrainingClearing",65,90,74,66)
+ clearing("TrainingEquipmentApron",65,64,58,34)
+ stage="CaravanBend"
+ road(0,25,-31,29,22);road(-31,29,-65,25,24)
+ clearing("CaravanClearing",-65,25,80,68)
+ clearing("WagonApron",-108,28,43,55)
+ road(-65,25,-108,28,20)
+ -- Overlapping outer banks form a continuous wooded backdrop rather than six
+ -- isolated humps. All higher silhouettes remain on the outer woodland edge.
+ stage="Landscape"
+ for _,side in ipairs({-1,1})do
+  for i=0,5 do
+   local z=3+i*25;local height=7+(i%3)*2
+   local bank=settlement("ForestScreen",V(side*(138+(i%2)),height/2-1,z),V(20,height,if i==5 then 24 else 36),moss,Enum.Material.Grass)
+   bank.Shape=Enum.PartType.Ball
+  end
+ end
+ local function shelter(name:string,x:number,z:number,postWidth:number,postDepth:number,rise:number)
+  for _,side in ipairs({-1,1})do for _,endSide in ipairs({-1,1})do
+   settlement(name.."Post",V(x+side*postWidth/2,4.75,z+endSide*postDepth/2),V(.9,9.5,.9),darkWood,Enum.Material.Wood)
+  end end
+  for _,endSide in ipairs({-1,1})do settlement(name.."CrossBeam",V(x,9.5,z+endSide*postDepth/2),V(postWidth+2,1,1),wood,Enum.Material.Wood)end
+  local half=postWidth/2+2;local angle=math.atan(rise/half)
+  for _,side in ipairs({-1,1})do
+   local roofPanel=settlement(name.."Roof",V(x+side*half/2,10+rise/2,z),V(math.sqrt(half*half+rise*rise),.4,postDepth+5),slate,Enum.Material.Slate)
+   roofPanel.CFrame=CFrame.new(roofPanel.Position)*CFrame.Angles(0,0,-side*angle)
+   settlement(name.."Eave",V(x+side*half,10,z),V(.6,.6,postDepth+5),wood,Enum.Material.Wood)
+  end
+  settlement(name.."Ridge",V(x,10+rise,z),V(.6,.7,postDepth+6),darkWood,Enum.Material.Wood)
+  settlement(name.."Cloth",V(x,8.2,z+postDepth/2+.6),V(5,2,.15),navy,Enum.Material.Fabric)
+  settlement(name.."Hem",V(x,7.2,z+postDepth/2+.7),V(5,.2,.12),gold)
+ end
+ stage="TrainingYard";shelter("TrainingShelter",65,59.5,44,11,4)
+ stage="CaravanBend";shelter("WagonWaystation",-111,27,16,24,3)
  model.WorldPivot=CFrame.identity;return model
 end
