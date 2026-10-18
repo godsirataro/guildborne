@@ -35,10 +35,18 @@ approval. Do not claim 100% while required evidence or content is missing.
 
 Current engineering contract: [CONTINUOUS_WORLD_V6.md](CONTINUOUS_WORLD_V6.md).
 Shared ledger: C:/Work/MySelf/Guildborne/build/agentic/four-session-v6.sqlite3.
-Next integration gate: S13 corridor geometry + S17 authoritative walking and
-hero continuity + controller eligibility/bootstrap + S14 navigation presentation.
-Root scaffold is locally checked but uncommitted; combined runtime acceptance
-is pending. S17 reports focused local tests, not Studio acceptance.
+Current checkpoint: City–Greenwood geometry and authoritative walking are
+integrated. Native synthetic five-companion round trips passed before and after
+bounded landform import; these do not prove earned eligibility or full gameplay.
+Landform import passed, while native art review still requires improvements.
+S15 native cosmetic checks passed; actual authoritative combat acceptance remains
+pending. S14 Inventory redesign and S13 coastal composition are in progress.
+Multi-route readiness is integrated with 944 local tests passing; Bootstrap still
+activates only the current edge. Prior native passes do not accept this new source.
+See [MULTIROUTE_READINESS_V6.md](MULTIROUTE_READINESS_V6.md) and
+[next-wave checkpoint](../../integration/quality-slice/NEXT_WAVE.md) for evidence
+and ownership. Next gates are reviewed Inventory/landform/combat harness delivery,
+native regression on current source, and surveyed geometry for the next edge.
 Preserve earned Studio sessions and serialize interactive Studio/Blender ownership.
 
 ## Goal-tool limitation
