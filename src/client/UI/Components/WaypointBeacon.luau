@@ -105,7 +105,7 @@ return function(gui: ScreenGui)
 			distanceLabel.Text = ""; resize(); return
 		end
 		local destinationHint = target.guidance == "destination"
-		if destinationHint and heading and heading == heading and math.abs(heading) < math.huge then
+  if (destinationHint or target.guidance == "walking") and heading and heading == heading and math.abs(heading) < math.huge then
 			compass.Rotation = heading; compass.Visible = true
 		end
 		step.Text = T(if destinationHint then (if gui.AbsoluteSize.X < 600 then "Bearing only\nUse paths" else "Destination direction — follow paths") else target.stepLabel or "Next waypoint")

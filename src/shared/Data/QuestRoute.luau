@@ -326,6 +326,29 @@ return function(city:any,rules:any,waypoint:any,resolveMarker:any?)
  return function(quest:any,catalog:any,x:number,z:number,context:any?):any
   local target=destination(quest,catalog,x,z,context)
   if target and target.kind=="Instruction" then return target end
+  -- The server's single transit projection selects direction. Geometry alone
+  -- never changes the player's zone or implies admission/completion.
+  local walking=context and context.walking
+  if walking and walking.present then
+   if not walking.transit or not walking.route or not walking.nextPoint or not quest or quest.kind=="CampaignComplete" then return nil end
+   local origin=city.Destinations.City
+   local known=destination(quest,catalog,origin.X,origin.Z,context)
+   if not known then return nil end
+   if known.kind=="Instruction" then return known end
+   local p=walking.nextPoint
+   return {x=p.x,y=p.y,z=p.z,name="City–Greenwood route",zone="WalkingRoute",kind="Walk",final=false,
+    stepLabel="Follow the walking path",destinationName=walking.transit.toZone,guidance="walking"}
+  end
+  -- A streamed endpoint is ordinary approach guidance, not transit admission.
+  if target and walking and walking.route and target.kind=="Portal" then
+   local points=walking.route.points
+   local endpoint=if target.zone=="City" and target.name=="Greenwood" then points[1]
+    elseif target.zone=="Greenwood" and target.name=="Central City" then points[#points] else nil
+   if endpoint then
+    target=table.clone(target);target.x=endpoint.x;target.y=endpoint.y;target.z=endpoint.z
+    target.kind="Walk";target.final=false;target.stepLabel="Reach the walking path"
+   end
+  end
   if context and context.civic then
    local exit=context.civic.exit
    if not quest or quest.kind=="CampaignComplete" or not exit then return nil end
@@ -338,7 +361,7 @@ return function(city:any,rules:any,waypoint:any,resolveMarker:any?)
    hint.anchor=nil;hint.guidance="destination";hint.stepLabel="Destination direction — follow paths";hint.destinationName=target.name
    return hint
   end
-  local start={x=x,z=z};local nextPoint:any=nil;local label="Continue to destination"
+  local start={x=x,z=z};local nextPoint:any=nil;local label=target.stepLabel or "Continue to destination"
   if target.zone=="City" then
    nextPoint=roadStep(start,target,context.roads);label="Follow the city road"
   elseif target.zone=="Guild" and context.island and context.island.ownerId==context.playerId then

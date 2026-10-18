@@ -205,4 +205,19 @@ test("narrow unavailable helper uses concise localized copy and keeps guidance d
  end
  f.api.destroy()
 end)
+test("walking compass preserves bilingual walk instructions and clears on lost geometry",function()
+ for _,size in ipairs({{796,674},{320,568}})do
+  local f=fixture(size[1],size[2])
+  for _,language in ipairs({"en","th"})do
+   local t={x=-120,y=2,z=200,guidance="walking",kind="Walk",final=false,name="City–Greenwood route",stepLabel="Follow the walking path",destinationName="Greenwood"}
+   f.api.update(t,45,false,language,90)
+   assert(f.card:FindFirstChild("DestinationCompass").Visible)
+   assert(f.card:FindFirstChild("NextInstruction").Text==Locale.translate(language,"Follow the walking path"))
+   assert(not f.marker.Enabled,"Floor-center nodes are not BasePart adornments")
+   f.api.update(nil,nil,true,language,nil)
+   assert(not f.card:FindFirstChild("DestinationCompass").Visible and not f.marker.Enabled)
+  end
+  f.api.destroy()
+ end
+end)
 print(passed.." waypoint GUI behavior tests passed (simulation only).")
