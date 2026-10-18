@@ -24,9 +24,9 @@ revocation, civic model/spawn lookup and elevated private-mine exclusion.
 Existing source-zone/respawn latch and local incoming-direction hairpin behavior
 remain. Surface resolution is bounded vertically; private portals remain separate.
 
-Full controller baseline is running as exec session 44744, raw log
-build/controller-multiroute-v6-baseline.log. Inspect terminal outcome before
-claiming whole-source local checks. Earlier native party passes belong to earlier
+Full controller baseline exec session 44744 completed exit 0: 944 tests,
+385 strict Luau files, 43 design/evidence documents and 488 local links. Raw log:
+build/controller-multiroute-v6-baseline.log. Earlier native party passes belong to earlier
 source and must not be promoted to this revision. Native regression is queued
 after S14 releases ux-system's exclusive Studio environment lease. No root Studio
 mutation while S14 holds it. Earned sessions remain preserved.
