@@ -84,10 +84,25 @@ for _,language in ipairs({"en","th"})do
      assert(bottom(find(root,"View_Items"))<=categories.Position.Y.Offset,"view tabs overlap categories")
      assert(grid.Position.Y.Offset+grid:FindFirstChildOfClass("UIGridLayout").CellSize.Y.Offset<=380,"first complete phone row below fold")
      local picker=find(root,"CategoryPicker");assert(picker and picker.Size.Y.Offset>=48)
-     assert(picker.Text==Locale.translate(language,"All").."  "..utf8.char(0x25BE),"picker glyph encoding")
+     assert(picker.Text==Locale.translate(language,"All"),"picker must retain full localized label only")
+     local chevron=find(picker,"CategoryChevron")
+     assert(chevron and chevron:IsA("Frame") and chevron.Rotation==0,"closed native chevron")
+     assert(not chevron.Active and not chevron.Selectable,"decoration intercepts picker")
+     local padding=picker:FindFirstChildOfClass("UIPadding")
+     assert(padding.PaddingLeft.Offset==8 and padding.PaddingRight.Offset==36,"reserve chevron text space locally")
+     local center=picker.Size.X.Offset-padding.PaddingRight.Offset+chevron.Position.X.Offset
+     assert(center-chevron.Size.X.Offset/2>picker.Size.X.Offset-padding.PaddingRight.Offset)
+     assert(center+chevron.Size.X.Offset/2<picker.Size.X.Offset,"chevron exceeds button")
+     assert(find(chevron,"Stroke1").Rotation==45 and find(chevron,"Stroke2").Rotation==-45)
+     for _,stroke in ipairs(chevron:GetChildren())do
+      assert(stroke:IsA("Frame") and stroke.Size.X.Offset==9 and stroke.Size.Y.Offset==2 and stroke.BackgroundTransparency==0)
+      assert(not stroke.Active and not stroke.Selectable)
+     end
      local closedGridY=grid.Position.Y.Offset
      picker.Activated:Fire();categories=find(root,"ItemCategories");grid=find(root,"ItemGrid")
-     assert(find(root,"CategoryPicker").Text==Locale.translate(language,"All").."  "..utf8.char(0x25B4),"open picker glyph encoding")
+     assert(find(root,"CategoryPicker").Text==Locale.translate(language,"All"),"expanded picker full label")
+     assert(find(root,"CategoryChevron").Rotation==180,"expanded native chevron must point up")
+     assert(find(root,"CategoryChevron")~=chevron,"chevron not rebuilt with picker state")
      assert(grid.Position.Y.Offset>closedGridY,"expanded categories overlay grid")
     else
      local stage=find(root,"ActorStage");assert(stage)
@@ -111,6 +126,7 @@ for _,language in ipairs({"en","th"})do
     find(root,"Filter_Material").Activated:Fire();assert(calls.filter=="Material")
     if width<600 then
      assert(not find(root,"Filter_Material"),"phone selection did not collapse")
+     assert(find(root,"CategoryChevron").Rotation==0,"selection did not restore downward chevron")
      find(root,"View_Loadout").Activated:Fire();assert(calls.view=="Loadout")
     end
     root:Destroy()

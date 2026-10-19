@@ -172,9 +172,25 @@ return function(parent: Instance, model: any): Frame
 			if phone then
 				local selectedLabel = T("All")
 				for _, filter in ipairs(entries) do if filter.selected then selectedLabel = filter.label; break end end
-				category("CategoryPicker", selectedLabel .. (if categoryOpen then "  \u{25B4}" else "  \u{25BE}"), 0, 0, width, function()
+				local picker = category("CategoryPicker", selectedLabel, 0, 0, width, function()
 					categoryOpen = not categoryOpen; draw()
 				end, categoryOpen)
+				local padding = picker:FindFirstChildOfClass("UIPadding") :: UIPadding
+				padding.PaddingRight = UDim.new(0, 36)
+				-- Frame strokes avoid font-dependent glyphs. UIPadding ends the content
+				-- 36px from the right; +16 places the chevron center 20px from that edge.
+				local chevron = frame(picker, "CategoryChevron", 0, 0, 16, 16)
+				chevron.AnchorPoint = Vector2.new(.5, .5)
+				chevron.Position = UDim2.new(1, 16, .5, 0)
+				chevron.Rotation = if categoryOpen then 180 else 0
+				chevron.Active = false; chevron.Selectable = false
+				for i, angle in ipairs({45, -45}) do
+					local stroke = frame(chevron, "Stroke" .. i, if i == 1 then 5 else 11, 8, 9, 2)
+					stroke.AnchorPoint = Vector2.new(.5, .5); stroke.Rotation = angle
+					stroke.BackgroundTransparency = 0; stroke.BorderSizePixel = 0
+					stroke.BackgroundColor3 = if model.busy then C.Muted else C.GoldLight
+					stroke.Active = false; stroke.Selectable = false
+				end
 				if categoryOpen then
 					for i, filter in ipairs(entries) do
 						category("Filter_" .. tostring(filter.id), filter.label, 0, i * 52, width, function()
