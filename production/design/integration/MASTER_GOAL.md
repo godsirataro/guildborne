@@ -22,24 +22,38 @@ before trying ForgeGUI. Forge remains deferred; no new provider calls or purchas
 The original local_tools.py wrapper is not a ForgeGUI clone.
 
 Continue dependency-ready work until complete or measured Codex remaining usage
-reaches approximately5%. Latest account measurement:26%used,74%remaining.
+reaches approximately5%. Latest account measurement:30%used,70%remaining.
 Check between bounded waves, preserve progress and stop new waves at threshold.
 Do not redeem resets. The historical Oct19 11:00 shutdown was already fulfilled;
 it is not recurring and must not be silently scheduled again.
 
 ## Canonical coordination
 Integration checkout: C:/Work/MySelf/Guildborne-controller.
-Shared ledger: C:/Work/MySelf/Guildborne/build/agentic/four-session-v9.sqlite3.
-Plan revision8,76tasks,98generated adapters. Scope migration6c5be3b added only the
-existing item generator/data paths and existing CivicWorkMotion/test paths.
-Old v8 writers stopped/released before migration; no accepted statuses copied.
-Fresh v9 audit bb19332446694c42a5c84658ed08b173 and registry run
-559468c633fc4be39a52bbefd6f2aef9 independently accepted by local-cli-v9-review.
+Shared ledger: C:/Work/MySelf/Guildborne/build/agentic/four-session-v10.sqlite3.
+Plan revision9,76tasks,98generated adapters. Scope migration2e3639b assigns
+CentralCityWorld, FriendlyNpcAnimator, new CityResidentRoute and two standalone
+test files exclusively to living-world-npc-slice. Removed overlapping old scopes.
+All old v9 writers stopped/released; no accepted statuses copied.
+Fresh v10 audit eb360df9cf194132a768db9fccab8c75 and registry run
+f69f5248c07f47d698143a51b920a6a3 independently accepted by local-cli-v10-review.
 Registry664rows/402filehashes, no status/ID promotion. Never use old tokens.
 Claim before writes and serialize Studio/Blender. Plan changes require allwriters
 released, exclusive registry ownership and fresh shared-ledger prerequisite proof.
 
 ## Reviewed integration and current evidence
+Latest runtime4374c8f includes S14 ore/timber26ff63b integrated176a5cb and S13
+facade06d289d integrated4374c8f. Native packet8284514 and scope2e3639b are pushed.
+[Refinement evidence](../../integration/quality-slice/native-refinement-20261020/README.md)
+passed separate toolchain review:26manifest files match working/Git bytes,
+437native source comparisons/seven attribute sets match, allsix datasets load,
+one player entered/exited the door, Borin dialogue paused work. Partial91-sample
+observer is explicitly disclosed. Native80px gallery confirms ore/timber change.
+This does not certify five heroes, full building/art polish or ordinary Inventory.
+Full970-test baseline2d8f0081902442afb592a86d8345a2ba passed on4374c8f; fresh
+970-test prerequisite runeb360df9cf194132a768db9fccab8c75 passed on2e3639b.
+Existing console/analyzer warnings remain recorded. Studios are stopped in Edit.
+
+Earlier wave9 evidence remains valid for its recorded source:
 Current committed integration e34a2e7 includes:
 - 390a64b: S13 Borin workshop apron,8meshes/2056triangles.
 - 7ceabcb: S17 stationary occupation gestures for Borga/Mogra/Rukk/Ghar.
@@ -83,32 +97,39 @@ retains map/quest8pxclearance and original named Borin motion/dialogue/cull chec
 Older two-chapter and coast evidence remain historical, linked in those reports.
 
 ## Active next work
-- S13 owns world-quality-slice (s13-smith-facade): separate Blacksmith-only facade
-  candidate, original stone/timber/louvres/gable details,<=3000triangles; no shared
-  CityKit/collider/anchor edits. Thinwall reserve exception is restricted to above
-  verified actor/workstation height; keep door/road/working area clear.
-- S14 delivered reviewed ore/timber refinement26ff63b66bce8b49d43ecbb41127e57e3a259996,
-  basee34a2e7; lease released. Not integrated/native-retaken yet. Other28definitions
-  and constructor/palette preserved. Next integrate under controller runtime lease.
-- S17 read-only next-life proposal: one existing nonquest R6 Adventurer nearTavern
-  walks to board and back. Need exactscope reconciliation and S13 corridor check.
-  Do not enable all16identityroutes or repurpose player-owned EscortActor.
-  Candidate route(-110,-830)→(-110,-808)→(-180,-808)→(-180,-818)andback
-  is only a proposal; no walking-population implementation accepted.
-- S15 earned-evidence audit complete; no new write assignment.
+- S13 next world-quality-slice: additive Blacksmith west gable and east apex gap
+  closure in one bounded packet, target<=256triangles. Preserve all28 prior mesh
+  packets, shared CityKit, colliders and anchors. CentralCityWorld belongs to S17.
+- S14 next gameplay-ui-quality: replace full-width empty navy HUD header with
+  compact native Gold/Hall plaque and separate Guild menu control, clear center;
+  retain real data, focus/toggle,44px targets, EN/TH and responsive clearances.
+  Ore/timber native refinement is closed for this bounded wave; human art remains.
+- S17 next living-world-npc-slice: existing nonquest R6 Adventurer only, route
+  (-110,-830)→(-110,-828)→(-184,-828) then reverse, look at board(-190,-830).
+  Old proposed northern route intersects furniture and is rejected. GroundY0.7
+  plus measured rig foot offset. Include CanQuery=false/CanCollide=false visible
+  furniture and all nearby player/hero bounds;<=3stud/s,<=0.1s bounded steps,
+  <=90deg/s turns, blocked wait/no teleport. Keep all16 named quest routes off.
+  Exclusive server/client paths migrated; standalone runner plus baseline required.
+- S15 next enemy-quality-slice evidence-only: bounded party joint/VFX observer
+  under production/integration/enemy-quality, no runtime redesign. Observe actual
+  Character and Mage joints in PostSimulation, event tuples, frame gaps and effect
+  lifetimes. Zero changes in the old observer are not a proven source bug.
 
-Root currently uses controller-registry for checkpoint/evidence only; quality
-integration lease was released after stopping Play. Check fresh ledger/status
-before integration. S13 may still be active; never migrate its ledger underneath it.
+These are authorized next assignments, not delivered/accepted implementations.
+Root uses controller-registry for checkpoint, then releases before claiming
+quality-slice-integration for Studio. Every worker must claim shared v10 before
+writing and base its checkout on the dispatched reviewed checkpoint. No oldtokens.
 
 ## Tool state
-Studio009b513b-7757-44d1-8c74-76ae16c72ed8 is stopped in Edit on
+Studio04aacb0e-6d2d-4e50-b5f1-0de9e5910e46 is stopped in Edit on
 build/Guildborne_QualityPreview.rbxlx, buildSHA
-e8dce841fbb50e69346c4da97a1c988a0e45a5f0c02c0203b7f98a3fa8d25937.
+492f52b38f896bd7da5d5f47035ed9c161eb5cb7a15bf6a44f99b64b59073701.
 The earlier saved Guildborne_Connected.rbxl instance9407ebd0 remains Edit.
 Both are controller-owned review contexts; re-list before mutations.
-The new hidden preview process was19104; old visible process57024. Never rely on
-stale PIDs for closing. Native captures work; desktop panels previously ghosted.
+The new hidden preview process is49468; owned stopped old preview19104 was closed.
+Old visible process57024 remains. Never rely on stale PIDs for closing. Native
+captures work; desktop panels previously ghosted. No earned Memory player remains.
 
 Rojo7.7.0 metadata at127.0.0.1:34872 responds (session838854dc-c4d3-4cfe-a6f0-e033fab29092);
 this confirms server reachability, NOT Studio plugin live sync. Reconnect remains

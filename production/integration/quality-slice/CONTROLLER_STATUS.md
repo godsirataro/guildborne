@@ -1,5 +1,12 @@
 # Current refinement checkpoint — 2026-10-20
 
+Plan9/shared v10 prerequisites independently ACCEPTED after migration2e3639b:
+audit eb360df9cf194132a768db9fccab8c75, registry f69f5248c07f47d698143a51b920a6a3.
+No acceptance copying. All26 refinement packet entries independently verified
+against working/Git bytes. Current pushed checkpoint2e3639b; full goal ACTIVE,
+latestquota70%remaining. See MASTER_GOAL.md for exact next4assignments; dispatch
+requires actual claims and never establishes delivery. All old v9 tokens obsolete.
+
 Reviewed candidates integrated176a5cb and4374c8f; full970-test baseline passed
 on4374c8f. New Studio04aacb0e-6d2d-4e50-b5f1-0de9e5910e46 loaded allsix datasets
 and437matching source checks. Native facade/material inspection and single-player
