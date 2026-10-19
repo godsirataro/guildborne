@@ -1,0 +1,9 @@
+{
+  "content": [
+    {
+      "type": "text",
+      "text": "{\"place\":0,\"universe\":0,\"bootstraps\":{\"1\":{\"path\":\"StarterPlayer.StarterPlayerScripts.Client.ClientBootstrap\",\"disabled\":true,\"class\":\"LocalScript\"},\"2\":{\"path\":\"ServerScriptService.Server.ServerBootstrap\",\"disabled\":true,\"class\":\"Script\"}},\"runtime\":{\"AshenJourney\":true,\"IronveilJourney\":true,\"CrosshavenJourney\":true,\"AuditPageSize\":32,\"RetryBaseSeconds\":0.5,\"TowerJourney\":true,\"AllowedDataStoreUniverses\":[],\"VerboseStudioLogs\":true,\"PermanentPassesEnabled\":false,\"NoviceJourney\":true,\"HeartbeatSeconds\":50,\"LeaseSeconds\":180,\"FullConnectedWorldCandidate\":true,\"StudioPersistence\":\"Memory\",\"PrivateAcceptance\":{\"Enabled\":false,\"RunId\":\"\",\"UserIds\":[]},\"RobloxAnalyticsEnabled\":false,\"ArchiveHeartJourney\":true,\"MaxAttempts\":3,\"LeaseSafetySeconds\":30}}"
+    }
+  ],
+  "isError": false
+}

@@ -1,0 +1,16 @@
+{
+  "expected": 444,
+  "actual": 507,
+  "mismatches": [
+    {
+      "path": [
+        "ReplicatedStorage",
+        "PartyPoseProbe"
+      ],
+      "className": "ModuleScript",
+      "length": 18566,
+      "adler32": 1762985272
+    }
+  ],
+  "method": "normalizedUTF8 length/Adler32; late post-capture source check; one exact observer module installed afterPlay"
+}

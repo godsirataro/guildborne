@@ -1,0 +1,9 @@
+{
+  "content": [
+    {
+      "type": "text",
+      "text": "{\"rewardCallbacks\":44,\"commands\":[{\"at\":1792444862.063439,\"action\":\"Ability1\",\"reason\":\"NoTarget\",\"actorId\":\"player\",\"accepted\":false},{\"at\":1792444874.129738,\"action\":\"Ability1\",\"reason\":\"NoTarget\",\"actorId\":\"player\",\"accepted\":false},{\"at\":1792444882.479039,\"action\":\"Ability1\",\"reason\":\"NoTarget\",\"actorId\":\"a:Mage\",\"accepted\":false}],\"startZone\":\"Guild\",\"roster\":[\"Knight\",\"Warrior\",\"Archer\",\"Mage\",\"Priest\"],\"scope\":\"SYNTHETIC_PARTY_PRESENTATION_NOT_EARNED\",\"notifications\":[],\"status\":\"READY_SYNTHETIC\",\"profileWrites\":0}"
+    }
+  ],
+  "isError": false
+}

@@ -1,3 +1,37 @@
+# Current full-connected and native checkpoint — 2026-10-20
+
+Full goal remains ACTIVE; ForgeGUI deferred. Latest account measurement43%used,
+57%remaining. No new shutdown scheduled. Shared plan9/v10 ledger remains canonical.
+Full-connected Memory preview1d92e78 exposes36 campaign chapters with the two existing
+roads; fresh Novice Ashen admission rejects. This does not complete the Lv100 journey.
+See [full-world audit](FULL_WORLD_GAP_AUDIT_20261020.md) for missing road/city/enemy gates.
+
+S13 roof67c8239 integrated7c9a5dd; S17 resident2cb55cd integrated7257cda;
+S14 HUD1483e54 integrated3395707; S15 observer49d0d8b integratedf3c5396.
+Immutable full baseline61a726ed9e62475ab8c2d536589bb7fe atefac81c passed970tests.
+Earlier test-typing failure and successful rerun both retained in
+[native wave10](native-wave10-20261020/README.md), independently reviewed thena6ee187.
+Native roof holes close; one resident performs its route, keeps measured foot support,
+pauses for a visible nonqueryable blocker and restores reduced-motion joints.
+Native HUD found TextWrapped ordering disables TextScaled; S14 owns the scoped fix.
+
+[Synthetic party R1](native-party-r1-20261020/README.md) records five real companions,
+three AI Mage Fireballs with corresponding client joint motion and three rejected
+manual inputs. VFX discovery cap makes full coverage inconclusive. Full manual skill,
+five-hero road, earned journey, visual/device/performance acceptance remain pending.
+Both controller Plays stopped; current party Studioab3a8d65-356b-443e-bb73-879cba0fdfbf
+is Edit, owned PID48576. Original user Studio remains untouched.
+
+Next: integrate/retest S14 scaling fix; fresh synthetic Hold-order combat capture;
+verify player plus five heroes over both existing roads. S13 authorized scoped third
+Ironveil–Ashen geometry and a NEW shorebank-cut variant preserving original datasets;
+runtime/server/client admission wiring remains separately owned and not yet enabled.
+No new PR/merge, publication, provider call or production persistence.
+
+The earlier checkpoints below are historical.
+
+---
+
 # Current refinement checkpoint — 2026-10-20
 
 Plan9/shared v10 prerequisites independently ACCEPTED after migration2e3639b:
