@@ -1,0 +1,2002 @@
+[
+  {
+    "attrs": {
+      "TrialStatus": "Active",
+      "OwnerUserId": 11732987790,
+      "ReturnLabel": "Leave trial",
+      "PlayerHealth": 57,
+      "AbilityLabel": "Power Strike",
+      "DisplayHealth": "HP 57/57 · Hall Sentinel 360/360",
+      "BasicLabel": "Basic Attack",
+      "NextBasicAt": 0,
+      "EnemyHealth": 360,
+      "NextAbilityAt": 0,
+      "NoviceTrialArena": true,
+      "DisplayTitle": "Warrior · Ready",
+      "DisplayGoals": "Defeat the opponent 0/1",
+      "ClassId": "Warrior",
+      "DisplayHint": "Use F/Q or the buttons. Dodge orange warnings."
+    },
+    "warning": {
+      "x": -4500,
+      "alpha": 1,
+      "z": 650
+    },
+    "time": 1792437398.211373,
+    "origin": {
+      "y": 25,
+      "x": -4500,
+      "z": 650
+    },
+    "p": {
+      "y": 27.998023986816406,
+      "x": -4500,
+      "z": 654
+    }
+  },
+  {
+    "attrs": {
+      "PlayerHealth": 57,
+      "AbilityLabel": "Power Strike",
+      "DisplayHealth": "HP 57/57 · Hall Sentinel 309/360",
+      "ActionAt": 1792437398.423732,
+      "DisplayHint": "Use F/Q or the buttons. Dodge orange warnings.",
+      "OwnerUserId": 11732987790,
+      "ReturnLabel": "Leave trial",
+      "ActionEffect": "Basic",
+      "DisplayGoals": "Defeat the opponent 0/1",
+      "NextBasicAt": 1792437399.5236273,
+      "ActionTargetPosition": null,
+      "EnemyHealth": 309,
+      "TrialStatus": "Active",
+      "NextAbilityAt": 1792437404.3236904,
+      "NoviceTrialArena": true,
+      "DisplayTitle": "Warrior · Training",
+      "ActionOriginPosition": null,
+      "ClassId": "Warrior",
+      "BasicLabel": "Basic Attack"
+    },
+    "warning": {
+      "x": -4500,
+      "alpha": 1,
+      "z": 650
+    },
+    "time": 1792437398.775421,
+    "origin": {
+      "y": 25,
+      "x": -4500,
+      "z": 650
+    },
+    "p": {
+      "y": 27.998023986816406,
+      "x": -4500,
+      "z": 654
+    }
+  },
+  {
+    "attrs": {
+      "PlayerHealth": 57,
+      "AbilityLabel": "Power Strike",
+      "DisplayHealth": "HP 57/57 · Hall Sentinel 309/360",
+      "ActionAt": 1792437398.423732,
+      "DisplayHint": "Use F/Q or the buttons. Dodge orange warnings.",
+      "OwnerUserId": 11732987790,
+      "ReturnLabel": "Leave trial",
+      "ActionEffect": "Basic",
+      "DisplayGoals": "Defeat the opponent 0/1",
+      "NextBasicAt": 1792437399.5236273,
+      "ActionTargetPosition": null,
+      "EnemyHealth": 309,
+      "TrialStatus": "Active",
+      "NextAbilityAt": 1792437404.323691,
+      "NoviceTrialArena": true,
+      "DisplayTitle": "Warrior · Training",
+      "ActionOriginPosition": null,
+      "ClassId": "Warrior",
+      "BasicLabel": "Basic Attack"
+    },
+    "warning": {
+      "x": -4500,
+      "alpha": 1,
+      "z": 650
+    },
+    "time": 1792437399.110094,
+    "origin": {
+      "y": 25,
+      "x": -4500,
+      "z": 650
+    },
+    "p": {
+      "y": 27.998023986816406,
+      "x": -4500,
+      "z": 654
+    }
+  },
+  {
+    "attrs": {
+      "PlayerHealth": 57,
+      "AbilityLabel": "Power Strike",
+      "DisplayHealth": "HP 57/57 · Hall Sentinel 309/360",
+      "ActionAt": 1792437398.423732,
+      "DisplayHint": "Use F/Q or the buttons. Dodge orange warnings.",
+      "OwnerUserId": 11732987790,
+      "ReturnLabel": "Leave trial",
+      "ActionEffect": "Basic",
+      "DisplayGoals": "Defeat the opponent 0/1",
+      "NextBasicAt": 1792437399.5236282,
+      "ActionTargetPosition": null,
+      "EnemyHealth": 309,
+      "TrialStatus": "Active",
+      "NextAbilityAt": 1792437404.323691,
+      "NoviceTrialArena": true,
+      "DisplayTitle": "Warrior · Training",
+      "ActionOriginPosition": null,
+      "ClassId": "Warrior",
+      "BasicLabel": "Basic Attack"
+    },
+    "warning": {
+      "x": -4500,
+      "alpha": 1,
+      "z": 650
+    },
+    "time": 1792437399.443323,
+    "origin": {
+      "y": 25,
+      "x": -4500,
+      "z": 650
+    },
+    "p": {
+      "y": 27.998023986816406,
+      "x": -4500,
+      "z": 654
+    }
+  },
+  {
+    "attrs": {
+      "PlayerHealth": 57,
+      "AbilityLabel": "Power Strike",
+      "DisplayHealth": "HP 57/57 · Hall Sentinel 309/360",
+      "ActionAt": 1792437398.423732,
+      "DisplayHint": "Use F/Q or the buttons. Dodge orange warnings.",
+      "OwnerUserId": 11732987790,
+      "ReturnLabel": "Leave trial",
+      "ActionEffect": "Basic",
+      "DisplayGoals": "Defeat the opponent 0/1",
+      "NextBasicAt": 0,
+      "ActionTargetPosition": null,
+      "EnemyHealth": 309,
+      "TrialStatus": "Active",
+      "NextAbilityAt": 1792437404.323691,
+      "NoviceTrialArena": true,
+      "DisplayTitle": "Warrior · Training",
+      "ActionOriginPosition": null,
+      "ClassId": "Warrior",
+      "BasicLabel": "Basic Attack"
+    },
+    "warning": {
+      "x": -4500,
+      "alpha": 1,
+      "z": 650
+    },
+    "time": 1792437399.760244,
+    "origin": {
+      "y": 25,
+      "x": -4500,
+      "z": 650
+    },
+    "p": {
+      "y": 27.998023986816406,
+      "x": -4500,
+      "z": 654
+    }
+  },
+  {
+    "attrs": {
+      "PlayerHealth": 57,
+      "AbilityLabel": "Power Strike",
+      "DisplayHealth": "HP 57/57 · Hall Sentinel 292/360",
+      "ActionAt": 1792437399.873113,
+      "DisplayHint": "Use F/Q or the buttons. Dodge orange warnings.",
+      "OwnerUserId": 11732987790,
+      "ReturnLabel": "Leave trial",
+      "ActionEffect": "Basic",
+      "DisplayGoals": "Defeat the opponent 0/1",
+      "NextBasicAt": 1792437400.9730275,
+      "ActionTargetPosition": null,
+      "EnemyHealth": 292,
+      "TrialStatus": "Active",
+      "NextAbilityAt": 1792437404.3236911,
+      "NoviceTrialArena": true,
+      "DisplayTitle": "Warrior · Training",
+      "ActionOriginPosition": null,
+      "ClassId": "Warrior",
+      "BasicLabel": "Basic Attack"
+    },
+    "warning": {
+      "x": -4500,
+      "alpha": 1,
+      "z": 650
+    },
+    "time": 1792437400.246467,
+    "origin": {
+      "y": 25,
+      "x": -4500,
+      "z": 650
+    },
+    "p": {
+      "y": 27.998023986816406,
+      "x": -4500,
+      "z": 654
+    }
+  },
+  {
+    "attrs": {
+      "PlayerHealth": 57,
+      "AbilityLabel": "Power Strike",
+      "DisplayHealth": "HP 57/57 · Hall Sentinel 292/360",
+      "ActionAt": 1792437399.873113,
+      "DisplayHint": "Use F/Q or the buttons. Dodge orange warnings.",
+      "ActionTargetPosition": null,
+      "OwnerUserId": 11732987790,
+      "ReturnLabel": "Leave trial",
+      "ActionEffect": "Basic",
+      "DisplayGoals": "Defeat the opponent 0/1",
+      "NextBasicAt": 1792437400.9730268,
+      "EnemyHealth": 292,
+      "WarningToken": 2179.0058145000003,
+      "TrialStatus": "Active",
+      "NextAbilityAt": 1792437404.3236907,
+      "NoviceTrialArena": true,
+      "DisplayTitle": "Warrior · Training",
+      "ActionOriginPosition": null,
+      "ClassId": "Warrior",
+      "BasicLabel": "Basic Attack"
+    },
+    "warning": {
+      "x": -4500,
+      "alpha": 0.3499999940395355,
+      "z": 654
+    },
+    "time": 1792437400.559398,
+    "origin": {
+      "y": 25,
+      "x": -4500,
+      "z": 650
+    },
+    "p": {
+      "y": 27.998023986816406,
+      "x": -4500,
+      "z": 654
+    }
+  },
+  {
+    "attrs": {
+      "PlayerHealth": 57,
+      "AbilityLabel": "Power Strike",
+      "DisplayHealth": "HP 57/57 · Hall Sentinel 292/360",
+      "ActionAt": 1792437399.873113,
+      "DisplayHint": "Use F/Q or the buttons. Dodge orange warnings.",
+      "ActionTargetPosition": null,
+      "OwnerUserId": 11732987790,
+      "ReturnLabel": "Leave trial",
+      "ActionEffect": "Basic",
+      "DisplayGoals": "Defeat the opponent 0/1",
+      "NextBasicAt": 0,
+      "EnemyHealth": 292,
+      "WarningToken": 2179.0058145000003,
+      "TrialStatus": "Active",
+      "NextAbilityAt": 1792437404.3236907,
+      "NoviceTrialArena": true,
+      "DisplayTitle": "Warrior · Training",
+      "ActionOriginPosition": null,
+      "ClassId": "Warrior",
+      "BasicLabel": "Basic Attack"
+    },
+    "warning": {
+      "x": -4500,
+      "alpha": 0.3499999940395355,
+      "z": 654
+    },
+    "time": 1792437401.192991,
+    "origin": {
+      "y": 25,
+      "x": -4500,
+      "z": 650
+    },
+    "p": {
+      "y": 27.998023986816406,
+      "x": -4500,
+      "z": 646.8458862304688
+    }
+  },
+  {
+    "attrs": {
+      "PlayerHealth": 57,
+      "AbilityLabel": "Power Strike",
+      "DisplayHealth": "HP 57/57 · Hall Sentinel 275/360",
+      "ActionAt": 1792437401.290234,
+      "DisplayHint": "Use F/Q or the buttons. Dodge orange warnings.",
+      "OwnerUserId": 11732987790,
+      "ReturnLabel": "Leave trial",
+      "ActionEffect": "Basic",
+      "DisplayGoals": "Defeat the opponent 0/1",
+      "NextBasicAt": 1792437402.3901236,
+      "ActionTargetPosition": null,
+      "EnemyHealth": 275,
+      "TrialStatus": "Active",
+      "NextAbilityAt": 1792437404.323691,
+      "NoviceTrialArena": true,
+      "DisplayTitle": "Warrior · Training",
+      "ActionOriginPosition": null,
+      "ClassId": "Warrior",
+      "BasicLabel": "Basic Attack"
+    },
+    "warning": {
+      "x": -4500,
+      "alpha": 1,
+      "z": 654
+    },
+    "time": 1792437401.657772,
+    "origin": {
+      "y": 25,
+      "x": -4500,
+      "z": 650
+    },
+    "p": {
+      "y": 27.998023986816406,
+      "x": -4500,
+      "z": 646.8458862304688
+    }
+  },
+  {
+    "attrs": {
+      "PlayerHealth": 57,
+      "AbilityLabel": "Power Strike",
+      "DisplayHealth": "HP 57/57 · Hall Sentinel 275/360",
+      "ActionAt": 1792437401.290234,
+      "DisplayHint": "Use F/Q or the buttons. Dodge orange warnings.",
+      "OwnerUserId": 11732987790,
+      "ReturnLabel": "Leave trial",
+      "ActionEffect": "Basic",
+      "DisplayGoals": "Defeat the opponent 0/1",
+      "NextBasicAt": 1792437402.3901234,
+      "ActionTargetPosition": null,
+      "EnemyHealth": 275,
+      "TrialStatus": "Active",
+      "NextAbilityAt": 1792437404.3236904,
+      "NoviceTrialArena": true,
+      "DisplayTitle": "Warrior · Training",
+      "ActionOriginPosition": null,
+      "ClassId": "Warrior",
+      "BasicLabel": "Basic Attack"
+    },
+    "warning": {
+      "x": -4500,
+      "alpha": 1,
+      "z": 654
+    },
+    "time": 1792437401.97603,
+    "origin": {
+      "y": 25,
+      "x": -4500,
+      "z": 650
+    },
+    "p": {
+      "y": 27.998023986816406,
+      "x": -4500,
+      "z": 646.8458862304688
+    }
+  },
+  {
+    "attrs": {
+      "PlayerHealth": 57,
+      "AbilityLabel": "Power Strike",
+      "DisplayHealth": "HP 57/57 · Hall Sentinel 275/360",
+      "ActionAt": 1792437401.290234,
+      "DisplayHint": "Use F/Q or the buttons. Dodge orange warnings.",
+      "OwnerUserId": 11732987790,
+      "ReturnLabel": "Leave trial",
+      "ActionEffect": "Basic",
+      "DisplayGoals": "Defeat the opponent 0/1",
+      "NextBasicAt": 1792437402.3901234,
+      "ActionTargetPosition": null,
+      "EnemyHealth": 275,
+      "TrialStatus": "Active",
+      "NextAbilityAt": 1792437404.323691,
+      "NoviceTrialArena": true,
+      "DisplayTitle": "Warrior · Training",
+      "ActionOriginPosition": null,
+      "ClassId": "Warrior",
+      "BasicLabel": "Basic Attack"
+    },
+    "warning": {
+      "x": -4500,
+      "alpha": 1,
+      "z": 654
+    },
+    "time": 1792437402.27481,
+    "origin": {
+      "y": 25,
+      "x": -4500,
+      "z": 650
+    },
+    "p": {
+      "y": 27.998023986816406,
+      "x": -4500,
+      "z": 646.8458862304688
+    }
+  },
+  {
+    "attrs": {
+      "PlayerHealth": 57,
+      "AbilityLabel": "Power Strike",
+      "DisplayHealth": "HP 57/57 · Hall Sentinel 275/360",
+      "ActionAt": 1792437401.290234,
+      "DisplayHint": "Use F/Q or the buttons. Dodge orange warnings.",
+      "OwnerUserId": 11732987790,
+      "ReturnLabel": "Leave trial",
+      "ActionEffect": "Basic",
+      "DisplayGoals": "Defeat the opponent 0/1",
+      "NextBasicAt": 0,
+      "ActionTargetPosition": null,
+      "EnemyHealth": 275,
+      "TrialStatus": "Active",
+      "NextAbilityAt": 1792437404.3236911,
+      "NoviceTrialArena": true,
+      "DisplayTitle": "Warrior · Training",
+      "ActionOriginPosition": null,
+      "ClassId": "Warrior",
+      "BasicLabel": "Basic Attack"
+    },
+    "warning": {
+      "x": -4500,
+      "alpha": 1,
+      "z": 654
+    },
+    "time": 1792437402.592523,
+    "origin": {
+      "y": 25,
+      "x": -4500,
+      "z": 650
+    },
+    "p": {
+      "y": 27.998023986816406,
+      "x": -4500,
+      "z": 646.8458862304688
+    }
+  },
+  {
+    "attrs": {
+      "PlayerHealth": 57,
+      "AbilityLabel": "Power Strike",
+      "DisplayHealth": "HP 57/57 · Hall Sentinel 258/360",
+      "ActionAt": 1792437402.70589,
+      "DisplayHint": "Use F/Q or the buttons. Dodge orange warnings.",
+      "OwnerUserId": 11732987790,
+      "ReturnLabel": "Leave trial",
+      "ActionEffect": "Basic",
+      "DisplayGoals": "Defeat the opponent 0/1",
+      "NextBasicAt": 1792437403.8057802,
+      "ActionTargetPosition": null,
+      "EnemyHealth": 258,
+      "TrialStatus": "Active",
+      "NextAbilityAt": 1792437404.3236907,
+      "NoviceTrialArena": true,
+      "DisplayTitle": "Warrior · Training",
+      "ActionOriginPosition": null,
+      "ClassId": "Warrior",
+      "BasicLabel": "Basic Attack"
+    },
+    "warning": {
+      "x": -4500,
+      "alpha": 1,
+      "z": 654
+    },
+    "time": 1792437403.078145,
+    "origin": {
+      "y": 25,
+      "x": -4500,
+      "z": 650
+    },
+    "p": {
+      "y": 27.998023986816406,
+      "x": -4500,
+      "z": 646.8458862304688
+    }
+  },
+  {
+    "attrs": {
+      "PlayerHealth": 57,
+      "AbilityLabel": "Power Strike",
+      "DisplayHealth": "HP 57/57 · Hall Sentinel 258/360",
+      "ActionAt": 1792437402.70589,
+      "DisplayHint": "Use F/Q or the buttons. Dodge orange warnings.",
+      "OwnerUserId": 11732987790,
+      "ReturnLabel": "Leave trial",
+      "ActionEffect": "Basic",
+      "DisplayGoals": "Defeat the opponent 0/1",
+      "NextBasicAt": 1792437403.8057804,
+      "ActionTargetPosition": null,
+      "EnemyHealth": 258,
+      "TrialStatus": "Active",
+      "NextAbilityAt": 1792437404.3236911,
+      "NoviceTrialArena": true,
+      "DisplayTitle": "Warrior · Training",
+      "ActionOriginPosition": null,
+      "ClassId": "Warrior",
+      "BasicLabel": "Basic Attack"
+    },
+    "warning": {
+      "x": -4500,
+      "alpha": 1,
+      "z": 654
+    },
+    "time": 1792437403.395168,
+    "origin": {
+      "y": 25,
+      "x": -4500,
+      "z": 650
+    },
+    "p": {
+      "y": 27.998023986816406,
+      "x": -4500,
+      "z": 646.8458862304688
+    }
+  },
+  {
+    "attrs": {
+      "PlayerHealth": 57,
+      "AbilityLabel": "Power Strike",
+      "DisplayHealth": "HP 57/57 · Hall Sentinel 258/360",
+      "ActionAt": 1792437402.70589,
+      "DisplayHint": "Use F/Q or the buttons. Dodge orange warnings.",
+      "OwnerUserId": 11732987790,
+      "ReturnLabel": "Leave trial",
+      "ActionEffect": "Basic",
+      "DisplayGoals": "Defeat the opponent 0/1",
+      "NextBasicAt": 1792437403.8057806,
+      "ActionTargetPosition": null,
+      "EnemyHealth": 258,
+      "TrialStatus": "Active",
+      "NextAbilityAt": 1792437404.3236907,
+      "NoviceTrialArena": true,
+      "DisplayTitle": "Warrior · Training",
+      "ActionOriginPosition": null,
+      "ClassId": "Warrior",
+      "BasicLabel": "Basic Attack"
+    },
+    "warning": {
+      "x": -4500,
+      "alpha": 1,
+      "z": 654
+    },
+    "time": 1792437403.711878,
+    "origin": {
+      "y": 25,
+      "x": -4500,
+      "z": 650
+    },
+    "p": {
+      "y": 27.998023986816406,
+      "x": -4500,
+      "z": 646.8458862304688
+    }
+  },
+  {
+    "attrs": {
+      "PlayerHealth": 57,
+      "AbilityLabel": "Power Strike",
+      "DisplayHealth": "HP 57/57 · Hall Sentinel 258/360",
+      "ActionAt": 1792437402.70589,
+      "DisplayHint": "Use F/Q or the buttons. Dodge orange warnings.",
+      "OwnerUserId": 11732987790,
+      "ReturnLabel": "Leave trial",
+      "ActionEffect": "Basic",
+      "DisplayGoals": "Defeat the opponent 0/1",
+      "NextBasicAt": 0,
+      "ActionTargetPosition": null,
+      "EnemyHealth": 258,
+      "TrialStatus": "Active",
+      "NextAbilityAt": 1792437404.32369,
+      "NoviceTrialArena": true,
+      "DisplayTitle": "Warrior · Training",
+      "ActionOriginPosition": null,
+      "ClassId": "Warrior",
+      "BasicLabel": "Basic Attack"
+    },
+    "warning": {
+      "x": -4500,
+      "alpha": 1,
+      "z": 654
+    },
+    "time": 1792437404.010061,
+    "origin": {
+      "y": 25,
+      "x": -4500,
+      "z": 650
+    },
+    "p": {
+      "y": 27.998023986816406,
+      "x": -4500,
+      "z": 646.8458862304688
+    }
+  },
+  {
+    "attrs": {
+      "PlayerHealth": 57,
+      "AbilityLabel": "Power Strike",
+      "DisplayHealth": "HP 57/57 · Hall Sentinel 241/360",
+      "ActionAt": 1792437404.123224,
+      "DisplayHint": "Use F/Q or the buttons. Dodge orange warnings.",
+      "OwnerUserId": 11732987790,
+      "ReturnLabel": "Leave trial",
+      "ActionEffect": "Basic",
+      "DisplayGoals": "Defeat the opponent 0/1",
+      "NextBasicAt": 1792437405.2231383,
+      "ActionTargetPosition": null,
+      "EnemyHealth": 241,
+      "TrialStatus": "Active",
+      "NextAbilityAt": 0,
+      "NoviceTrialArena": true,
+      "DisplayTitle": "Warrior · Training",
+      "ActionOriginPosition": null,
+      "ClassId": "Warrior",
+      "BasicLabel": "Basic Attack"
+    },
+    "warning": {
+      "x": -4500,
+      "alpha": 1,
+      "z": 654
+    },
+    "time": 1792437404.477317,
+    "origin": {
+      "y": 25,
+      "x": -4500,
+      "z": 650
+    },
+    "p": {
+      "y": 27.998023986816406,
+      "x": -4500,
+      "z": 646.8458862304688
+    }
+  },
+  {
+    "attrs": {
+      "PlayerHealth": 57,
+      "AbilityLabel": "Power Strike",
+      "DisplayHealth": "HP 57/57 · Hall Sentinel 207/360",
+      "ActionAt": 1792437404.574108,
+      "DisplayHint": "Use F/Q or the buttons. Dodge orange warnings.",
+      "ActionTargetPosition": null,
+      "OwnerUserId": 11732987790,
+      "ReturnLabel": "Leave trial",
+      "ActionEffect": "Physical",
+      "DisplayGoals": "Defeat the opponent 0/1",
+      "NextBasicAt": 1792437405.2231386,
+      "EnemyHealth": 207,
+      "ActionAbilityId": "power_strike",
+      "TrialStatus": "Active",
+      "NextAbilityAt": 1792437410.5739558,
+      "NoviceTrialArena": true,
+      "DisplayTitle": "Warrior · Training",
+      "ActionOriginPosition": null,
+      "ClassId": "Warrior",
+      "BasicLabel": "Basic Attack"
+    },
+    "warning": {
+      "x": -4500,
+      "alpha": 1,
+      "z": 654
+    },
+    "time": 1792437404.964128,
+    "origin": {
+      "y": 25,
+      "x": -4500,
+      "z": 650
+    },
+    "p": {
+      "y": 27.998023986816406,
+      "x": -4500,
+      "z": 646.8458862304688
+    }
+  },
+  {
+    "attrs": {
+      "PlayerHealth": 57,
+      "AbilityLabel": "Power Strike",
+      "DisplayHealth": "HP 57/57 · Hall Sentinel 207/360",
+      "ActionAt": 1792437404.574108,
+      "DisplayHint": "Use F/Q or the buttons. Dodge orange warnings.",
+      "ActionTargetPosition": null,
+      "OwnerUserId": 11732987790,
+      "ReturnLabel": "Leave trial",
+      "ActionEffect": "Physical",
+      "DisplayGoals": "Defeat the opponent 0/1",
+      "NextBasicAt": 1792437405.223139,
+      "EnemyHealth": 207,
+      "ActionAbilityId": "power_strike",
+      "TrialStatus": "Active",
+      "NextAbilityAt": 1792437410.5739558,
+      "NoviceTrialArena": true,
+      "DisplayTitle": "Warrior · Training",
+      "ActionOriginPosition": null,
+      "ClassId": "Warrior",
+      "BasicLabel": "Basic Attack"
+    },
+    "warning": {
+      "x": -4500,
+      "alpha": 1,
+      "z": 654
+    },
+    "time": 1792437405.278244,
+    "origin": {
+      "y": 25,
+      "x": -4500,
+      "z": 650
+    },
+    "p": {
+      "y": 27.998023986816406,
+      "x": -4500,
+      "z": 646.8458862304688
+    }
+  },
+  {
+    "attrs": {
+      "PlayerHealth": 57,
+      "AbilityLabel": "Power Strike",
+      "DisplayHealth": "HP 57/57 · Hall Sentinel 190/360",
+      "ActionAt": 1792437405.37335,
+      "DisplayHint": "Use F/Q or the buttons. Dodge orange warnings.",
+      "ActionTargetPosition": null,
+      "OwnerUserId": 11732987790,
+      "ReturnLabel": "Leave trial",
+      "ActionEffect": "Basic",
+      "DisplayGoals": "Defeat the opponent 0/1",
+      "NextBasicAt": 1792437406.4732418,
+      "EnemyHealth": 190,
+      "WarningToken": 2184.1062530000017,
+      "TrialStatus": "Active",
+      "NextAbilityAt": 1792437410.5739555,
+      "NoviceTrialArena": true,
+      "DisplayTitle": "Warrior · Training",
+      "ActionOriginPosition": null,
+      "ClassId": "Warrior",
+      "BasicLabel": "Basic Attack"
+    },
+    "warning": {
+      "x": -4500,
+      "alpha": 0.3499999940395355,
+      "z": 646.8458862304688
+    },
+    "time": 1792437405.763521,
+    "origin": {
+      "y": 25,
+      "x": -4500,
+      "z": 650
+    },
+    "p": {
+      "y": 27.998023986816406,
+      "x": -4500,
+      "z": 646.8458862304688
+    }
+  },
+  {
+    "attrs": {
+      "PlayerHealth": 57,
+      "AbilityLabel": "Power Strike",
+      "DisplayHealth": "HP 57/57 · Hall Sentinel 190/360",
+      "ActionAt": 1792437405.37335,
+      "DisplayHint": "Use F/Q or the buttons. Dodge orange warnings.",
+      "ActionTargetPosition": null,
+      "OwnerUserId": 11732987790,
+      "ReturnLabel": "Leave trial",
+      "ActionEffect": "Basic",
+      "DisplayGoals": "Defeat the opponent 0/1",
+      "NextBasicAt": 1792437406.4732416,
+      "EnemyHealth": 190,
+      "WarningToken": 2184.1062530000017,
+      "TrialStatus": "Active",
+      "NextAbilityAt": 1792437410.573956,
+      "NoviceTrialArena": true,
+      "DisplayTitle": "Warrior · Training",
+      "ActionOriginPosition": null,
+      "ClassId": "Warrior",
+      "BasicLabel": "Basic Attack"
+    },
+    "warning": {
+      "x": -4500,
+      "alpha": 0.3499999940395355,
+      "z": 646.8458862304688
+    },
+    "time": 1792437406.328178,
+    "origin": {
+      "y": 25,
+      "x": -4500,
+      "z": 650
+    },
+    "p": {
+      "y": 27.998023986816406,
+      "x": -4500,
+      "z": 653.1759643554688
+    }
+  },
+  {
+    "attrs": {
+      "PlayerHealth": 57,
+      "AbilityLabel": "Power Strike",
+      "DisplayHealth": "HP 57/57 · Hall Sentinel 190/360",
+      "ActionAt": 1792437405.37335,
+      "DisplayHint": "Use F/Q or the buttons. Dodge orange warnings.",
+      "ActionTargetPosition": null,
+      "OwnerUserId": 11732987790,
+      "ReturnLabel": "Leave trial",
+      "ActionEffect": "Basic",
+      "DisplayGoals": "Defeat the opponent 0/1",
+      "NextBasicAt": 0,
+      "EnemyHealth": 190,
+      "WarningToken": 2184.1062530000017,
+      "TrialStatus": "Active",
+      "NextAbilityAt": 1792437410.5739558,
+      "NoviceTrialArena": true,
+      "DisplayTitle": "Warrior · Training",
+      "ActionOriginPosition": null,
+      "ClassId": "Warrior",
+      "BasicLabel": "Basic Attack"
+    },
+    "warning": {
+      "x": -4500,
+      "alpha": 0.3499999940395355,
+      "z": 646.8458862304688
+    },
+    "time": 1792437406.645674,
+    "origin": {
+      "y": 25,
+      "x": -4500,
+      "z": 650
+    },
+    "p": {
+      "y": 27.998023986816406,
+      "x": -4500,
+      "z": 653.1759643554688
+    }
+  },
+  {
+    "attrs": {
+      "PlayerHealth": 57,
+      "AbilityLabel": "Power Strike",
+      "DisplayHealth": "HP 57/57 · Hall Sentinel 173/360",
+      "ActionAt": 1792437406.756337,
+      "DisplayHint": "Use F/Q or the buttons. Dodge orange warnings.",
+      "OwnerUserId": 11732987790,
+      "ReturnLabel": "Leave trial",
+      "ActionEffect": "Basic",
+      "DisplayGoals": "Defeat the opponent 0/1",
+      "NextBasicAt": 1792437407.8562162,
+      "ActionTargetPosition": null,
+      "EnemyHealth": 173,
+      "TrialStatus": "Active",
+      "NextAbilityAt": 1792437410.5739565,
+      "NoviceTrialArena": true,
+      "DisplayTitle": "Warrior · Training",
+      "ActionOriginPosition": null,
+      "ClassId": "Warrior",
+      "BasicLabel": "Basic Attack"
+    },
+    "warning": {
+      "x": -4500,
+      "alpha": 1,
+      "z": 646.8458862304688
+    },
+    "time": 1792437407.112506,
+    "origin": {
+      "y": 25,
+      "x": -4500,
+      "z": 650
+    },
+    "p": {
+      "y": 27.998023986816406,
+      "x": -4500,
+      "z": 653.1759643554688
+    }
+  },
+  {
+    "attrs": {
+      "PlayerHealth": 57,
+      "AbilityLabel": "Power Strike",
+      "DisplayHealth": "HP 57/57 · Hall Sentinel 173/360",
+      "ActionAt": 1792437406.756337,
+      "DisplayHint": "Use F/Q or the buttons. Dodge orange warnings.",
+      "OwnerUserId": 11732987790,
+      "ReturnLabel": "Leave trial",
+      "ActionEffect": "Basic",
+      "DisplayGoals": "Defeat the opponent 0/1",
+      "NextBasicAt": 1792437407.8562167,
+      "ActionTargetPosition": null,
+      "EnemyHealth": 173,
+      "TrialStatus": "Active",
+      "NextAbilityAt": 1792437410.5739555,
+      "NoviceTrialArena": true,
+      "DisplayTitle": "Warrior · Training",
+      "ActionOriginPosition": null,
+      "ClassId": "Warrior",
+      "BasicLabel": "Basic Attack"
+    },
+    "warning": {
+      "x": -4500,
+      "alpha": 1,
+      "z": 646.8458862304688
+    },
+    "time": 1792437407.429271,
+    "origin": {
+      "y": 25,
+      "x": -4500,
+      "z": 650
+    },
+    "p": {
+      "y": 27.998023986816406,
+      "x": -4500,
+      "z": 653.1759643554688
+    }
+  },
+  {
+    "attrs": {
+      "PlayerHealth": 57,
+      "AbilityLabel": "Power Strike",
+      "DisplayHealth": "HP 57/57 · Hall Sentinel 173/360",
+      "ActionAt": 1792437406.756337,
+      "DisplayHint": "Use F/Q or the buttons. Dodge orange warnings.",
+      "OwnerUserId": 11732987790,
+      "ReturnLabel": "Leave trial",
+      "ActionEffect": "Basic",
+      "DisplayGoals": "Defeat the opponent 0/1",
+      "NextBasicAt": 1792437407.8562164,
+      "ActionTargetPosition": null,
+      "EnemyHealth": 173,
+      "TrialStatus": "Active",
+      "NextAbilityAt": 1792437410.573956,
+      "NoviceTrialArena": true,
+      "DisplayTitle": "Warrior · Training",
+      "ActionOriginPosition": null,
+      "ClassId": "Warrior",
+      "BasicLabel": "Basic Attack"
+    },
+    "warning": {
+      "x": -4500,
+      "alpha": 1,
+      "z": 646.8458862304688
+    },
+    "time": 1792437407.744776,
+    "origin": {
+      "y": 25,
+      "x": -4500,
+      "z": 650
+    },
+    "p": {
+      "y": 27.998023986816406,
+      "x": -4500,
+      "z": 653.1759643554688
+    }
+  },
+  {
+    "attrs": {
+      "PlayerHealth": 57,
+      "AbilityLabel": "Power Strike",
+      "DisplayHealth": "HP 57/57 · Hall Sentinel 173/360",
+      "ActionAt": 1792437406.756337,
+      "DisplayHint": "Use F/Q or the buttons. Dodge orange warnings.",
+      "OwnerUserId": 11732987790,
+      "ReturnLabel": "Leave trial",
+      "ActionEffect": "Basic",
+      "DisplayGoals": "Defeat the opponent 0/1",
+      "NextBasicAt": 0,
+      "ActionTargetPosition": null,
+      "EnemyHealth": 173,
+      "TrialStatus": "Active",
+      "NextAbilityAt": 1792437410.5739555,
+      "NoviceTrialArena": true,
+      "DisplayTitle": "Warrior · Training",
+      "ActionOriginPosition": null,
+      "ClassId": "Warrior",
+      "BasicLabel": "Basic Attack"
+    },
+    "warning": {
+      "x": -4500,
+      "alpha": 1,
+      "z": 646.8458862304688
+    },
+    "time": 1792437408.059078,
+    "origin": {
+      "y": 25,
+      "x": -4500,
+      "z": 650
+    },
+    "p": {
+      "y": 27.998023986816406,
+      "x": -4500,
+      "z": 653.1759643554688
+    }
+  },
+  {
+    "attrs": {
+      "PlayerHealth": 57,
+      "AbilityLabel": "Power Strike",
+      "DisplayHealth": "HP 57/57 · Hall Sentinel 156/360",
+      "ActionAt": 1792437408.156332,
+      "DisplayHint": "Use F/Q or the buttons. Dodge orange warnings.",
+      "OwnerUserId": 11732987790,
+      "ReturnLabel": "Leave trial",
+      "ActionEffect": "Basic",
+      "DisplayGoals": "Defeat the opponent 0/1",
+      "NextBasicAt": 1792437409.2562358,
+      "ActionTargetPosition": null,
+      "EnemyHealth": 156,
+      "TrialStatus": "Active",
+      "NextAbilityAt": 1792437410.5739558,
+      "NoviceTrialArena": true,
+      "DisplayTitle": "Warrior · Training",
+      "ActionOriginPosition": null,
+      "ClassId": "Warrior",
+      "BasicLabel": "Basic Attack"
+    },
+    "warning": {
+      "x": -4500,
+      "alpha": 1,
+      "z": 646.8458862304688
+    },
+    "time": 1792437408.541679,
+    "origin": {
+      "y": 25,
+      "x": -4500,
+      "z": 650
+    },
+    "p": {
+      "y": 27.998023986816406,
+      "x": -4500,
+      "z": 653.1759643554688
+    }
+  },
+  {
+    "attrs": {
+      "PlayerHealth": 57,
+      "AbilityLabel": "Power Strike",
+      "DisplayHealth": "HP 57/57 · Hall Sentinel 156/360",
+      "ActionAt": 1792437408.156332,
+      "DisplayHint": "Use F/Q or the buttons. Dodge orange warnings.",
+      "OwnerUserId": 11732987790,
+      "ReturnLabel": "Leave trial",
+      "ActionEffect": "Basic",
+      "DisplayGoals": "Defeat the opponent 0/1",
+      "NextBasicAt": 1792437409.2562354,
+      "ActionTargetPosition": null,
+      "EnemyHealth": 156,
+      "TrialStatus": "Active",
+      "NextAbilityAt": 1792437410.573956,
+      "NoviceTrialArena": true,
+      "DisplayTitle": "Warrior · Training",
+      "ActionOriginPosition": null,
+      "ClassId": "Warrior",
+      "BasicLabel": "Basic Attack"
+    },
+    "warning": {
+      "x": -4500,
+      "alpha": 1,
+      "z": 646.8458862304688
+    },
+    "time": 1792437408.841912,
+    "origin": {
+      "y": 25,
+      "x": -4500,
+      "z": 650
+    },
+    "p": {
+      "y": 27.998023986816406,
+      "x": -4500,
+      "z": 653.1759643554688
+    }
+  },
+  {
+    "attrs": {
+      "PlayerHealth": 57,
+      "AbilityLabel": "Power Strike",
+      "DisplayHealth": "HP 57/57 · Hall Sentinel 156/360",
+      "ActionAt": 1792437408.156332,
+      "DisplayHint": "Use F/Q or the buttons. Dodge orange warnings.",
+      "OwnerUserId": 11732987790,
+      "ReturnLabel": "Leave trial",
+      "ActionEffect": "Basic",
+      "DisplayGoals": "Defeat the opponent 0/1",
+      "NextBasicAt": 1792437409.2562358,
+      "ActionTargetPosition": null,
+      "EnemyHealth": 156,
+      "TrialStatus": "Active",
+      "NextAbilityAt": 1792437410.5739572,
+      "NoviceTrialArena": true,
+      "DisplayTitle": "Warrior · Training",
+      "ActionOriginPosition": null,
+      "ClassId": "Warrior",
+      "BasicLabel": "Basic Attack"
+    },
+    "warning": {
+      "x": -4500,
+      "alpha": 1,
+      "z": 646.8458862304688
+    },
+    "time": 1792437409.158797,
+    "origin": {
+      "y": 25,
+      "x": -4500,
+      "z": 650
+    },
+    "p": {
+      "y": 27.998023986816406,
+      "x": -4500,
+      "z": 653.1759643554688
+    }
+  },
+  {
+    "attrs": {
+      "PlayerHealth": 57,
+      "AbilityLabel": "Power Strike",
+      "DisplayHealth": "HP 57/57 · Hall Sentinel 156/360",
+      "ActionAt": 1792437408.156332,
+      "DisplayHint": "Use F/Q or the buttons. Dodge orange warnings.",
+      "OwnerUserId": 11732987790,
+      "ReturnLabel": "Leave trial",
+      "ActionEffect": "Basic",
+      "DisplayGoals": "Defeat the opponent 0/1",
+      "NextBasicAt": 0,
+      "ActionTargetPosition": null,
+      "EnemyHealth": 156,
+      "TrialStatus": "Active",
+      "NextAbilityAt": 1792437410.573956,
+      "NoviceTrialArena": true,
+      "DisplayTitle": "Warrior · Training",
+      "ActionOriginPosition": null,
+      "ClassId": "Warrior",
+      "BasicLabel": "Basic Attack"
+    },
+    "warning": {
+      "x": -4500,
+      "alpha": 1,
+      "z": 646.8458862304688
+    },
+    "time": 1792437409.474857,
+    "origin": {
+      "y": 25,
+      "x": -4500,
+      "z": 650
+    },
+    "p": {
+      "y": 27.998023986816406,
+      "x": -4500,
+      "z": 653.1759643554688
+    }
+  },
+  {
+    "attrs": {
+      "PlayerHealth": 57,
+      "AbilityLabel": "Power Strike",
+      "DisplayHealth": "HP 57/57 · Hall Sentinel 139/360",
+      "ActionAt": 1792437409.57223,
+      "DisplayHint": "Use F/Q or the buttons. Dodge orange warnings.",
+      "OwnerUserId": 11732987790,
+      "ReturnLabel": "Leave trial",
+      "ActionEffect": "Basic",
+      "DisplayGoals": "Defeat the opponent 0/1",
+      "NextBasicAt": 1792437410.672143,
+      "ActionTargetPosition": null,
+      "EnemyHealth": 139,
+      "TrialStatus": "Active",
+      "NextAbilityAt": 1792437410.5739558,
+      "NoviceTrialArena": true,
+      "DisplayTitle": "Warrior · Training",
+      "ActionOriginPosition": null,
+      "ClassId": "Warrior",
+      "BasicLabel": "Basic Attack"
+    },
+    "warning": {
+      "x": -4500,
+      "alpha": 1,
+      "z": 646.8458862304688
+    },
+    "time": 1792437409.958453,
+    "origin": {
+      "y": 25,
+      "x": -4500,
+      "z": 650
+    },
+    "p": {
+      "y": 27.998023986816406,
+      "x": -4500,
+      "z": 653.1759643554688
+    }
+  },
+  {
+    "attrs": {
+      "PlayerHealth": 57,
+      "AbilityLabel": "Power Strike",
+      "DisplayHealth": "HP 57/57 · Hall Sentinel 139/360",
+      "ActionAt": 1792437409.57223,
+      "DisplayHint": "Use F/Q or the buttons. Dodge orange warnings.",
+      "OwnerUserId": 11732987790,
+      "ReturnLabel": "Leave trial",
+      "ActionEffect": "Basic",
+      "DisplayGoals": "Defeat the opponent 0/1",
+      "NextBasicAt": 1792437410.6721425,
+      "ActionTargetPosition": null,
+      "EnemyHealth": 139,
+      "TrialStatus": "Active",
+      "NextAbilityAt": 1792437410.5739558,
+      "NoviceTrialArena": true,
+      "DisplayTitle": "Warrior · Training",
+      "ActionOriginPosition": null,
+      "ClassId": "Warrior",
+      "BasicLabel": "Basic Attack"
+    },
+    "warning": {
+      "x": -4500,
+      "alpha": 1,
+      "z": 646.8458862304688
+    },
+    "time": 1792437410.275337,
+    "origin": {
+      "y": 25,
+      "x": -4500,
+      "z": 650
+    },
+    "p": {
+      "y": 27.998023986816406,
+      "x": -4500,
+      "z": 653.1759643554688
+    }
+  },
+  {
+    "attrs": {
+      "PlayerHealth": 57,
+      "AbilityLabel": "Power Strike",
+      "DisplayHealth": "HP 57/57 · Hall Sentinel 139/360",
+      "ActionAt": 1792437409.57223,
+      "DisplayHint": "Use F/Q or the buttons. Dodge orange warnings.",
+      "ActionTargetPosition": null,
+      "OwnerUserId": 11732987790,
+      "ReturnLabel": "Leave trial",
+      "ActionEffect": "Basic",
+      "DisplayGoals": "Defeat the opponent 0/1",
+      "NextBasicAt": 1792437410.672143,
+      "EnemyHealth": 139,
+      "WarningToken": 2189.155703100001,
+      "TrialStatus": "Active",
+      "NextAbilityAt": 1792437410.5739565,
+      "NoviceTrialArena": true,
+      "DisplayTitle": "Warrior · Training",
+      "ActionOriginPosition": null,
+      "ClassId": "Warrior",
+      "BasicLabel": "Basic Attack"
+    },
+    "warning": {
+      "x": -4500,
+      "alpha": 0.3499999940395355,
+      "z": 653.1759643554688
+    },
+    "time": 1792437410.575793,
+    "origin": {
+      "y": 25,
+      "x": -4500,
+      "z": 650
+    },
+    "p": {
+      "y": 27.998023986816406,
+      "x": -4500,
+      "z": 653.1759643554688
+    }
+  },
+  {
+    "attrs": {
+      "PlayerHealth": 57,
+      "AbilityLabel": "Power Strike",
+      "DisplayHealth": "HP 57/57 · Hall Sentinel 139/360",
+      "ActionAt": 1792437409.57223,
+      "DisplayHint": "Use F/Q or the buttons. Dodge orange warnings.",
+      "ActionTargetPosition": null,
+      "OwnerUserId": 11732987790,
+      "ReturnLabel": "Leave trial",
+      "ActionEffect": "Basic",
+      "DisplayGoals": "Defeat the opponent 0/1",
+      "NextBasicAt": 0,
+      "EnemyHealth": 139,
+      "WarningToken": 2189.155703100001,
+      "TrialStatus": "Active",
+      "NextAbilityAt": 0,
+      "NoviceTrialArena": true,
+      "DisplayTitle": "Warrior · Training",
+      "ActionOriginPosition": null,
+      "ClassId": "Warrior",
+      "BasicLabel": "Basic Attack"
+    },
+    "warning": {
+      "x": -4500,
+      "alpha": 0.3499999940395355,
+      "z": 653.1759643554688
+    },
+    "time": 1792437411.224968,
+    "origin": {
+      "y": 25,
+      "x": -4500,
+      "z": 650
+    },
+    "p": {
+      "y": 27.998023986816406,
+      "x": -4500.00048828125,
+      "z": 646.8467407226562
+    }
+  },
+  {
+    "attrs": {
+      "PlayerHealth": 57,
+      "AbilityLabel": "Power Strike",
+      "DisplayHealth": "HP 57/57 · Hall Sentinel 88/360",
+      "ActionAt": 1792437411.439532,
+      "DisplayHint": "Use F/Q or the buttons. Dodge orange warnings.",
+      "ActionTargetPosition": null,
+      "OwnerUserId": 11732987790,
+      "ReturnLabel": "Leave trial",
+      "ActionEffect": "Basic",
+      "DisplayGoals": "Defeat the opponent 0/1",
+      "NextBasicAt": 1792437412.539407,
+      "EnemyHealth": 88,
+      "WarningToken": 2189.155703100001,
+      "TrialStatus": "Active",
+      "NextAbilityAt": 1792437417.3227654,
+      "NoviceTrialArena": true,
+      "DisplayTitle": "Warrior · Training",
+      "ActionOriginPosition": null,
+      "ClassId": "Warrior",
+      "BasicLabel": "Basic Attack"
+    },
+    "warning": {
+      "x": -4500,
+      "alpha": 0.3499999940395355,
+      "z": 653.1759643554688
+    },
+    "time": 1792437411.825618,
+    "origin": {
+      "y": 25,
+      "x": -4500,
+      "z": 650
+    },
+    "p": {
+      "y": 27.998023986816406,
+      "x": -4500.00048828125,
+      "z": 646.8467407226562
+    }
+  },
+  {
+    "attrs": {
+      "PlayerHealth": 57,
+      "AbilityLabel": "Power Strike",
+      "DisplayHealth": "HP 57/57 · Hall Sentinel 88/360",
+      "ActionAt": 1792437411.439532,
+      "DisplayHint": "Use F/Q or the buttons. Dodge orange warnings.",
+      "OwnerUserId": 11732987790,
+      "ReturnLabel": "Leave trial",
+      "ActionEffect": "Basic",
+      "DisplayGoals": "Defeat the opponent 0/1",
+      "NextBasicAt": 1792437412.5394073,
+      "ActionTargetPosition": null,
+      "EnemyHealth": 88,
+      "TrialStatus": "Active",
+      "NextAbilityAt": 1792437417.3227649,
+      "NoviceTrialArena": true,
+      "DisplayTitle": "Warrior · Training",
+      "ActionOriginPosition": null,
+      "ClassId": "Warrior",
+      "BasicLabel": "Basic Attack"
+    },
+    "warning": {
+      "x": -4500,
+      "alpha": 1,
+      "z": 653.1759643554688
+    },
+    "time": 1792437412.143435,
+    "origin": {
+      "y": 25,
+      "x": -4500,
+      "z": 650
+    },
+    "p": {
+      "y": 27.998023986816406,
+      "x": -4500.00048828125,
+      "z": 646.8467407226562
+    }
+  },
+  {
+    "attrs": {
+      "PlayerHealth": 57,
+      "AbilityLabel": "Power Strike",
+      "DisplayHealth": "HP 57/57 · Hall Sentinel 88/360",
+      "ActionAt": 1792437411.439532,
+      "DisplayHint": "Use F/Q or the buttons. Dodge orange warnings.",
+      "OwnerUserId": 11732987790,
+      "ReturnLabel": "Leave trial",
+      "ActionEffect": "Basic",
+      "DisplayGoals": "Defeat the opponent 0/1",
+      "NextBasicAt": 1792437412.5394065,
+      "ActionTargetPosition": null,
+      "EnemyHealth": 88,
+      "TrialStatus": "Active",
+      "NextAbilityAt": 1792437417.322765,
+      "NoviceTrialArena": true,
+      "DisplayTitle": "Warrior · Training",
+      "ActionOriginPosition": null,
+      "ClassId": "Warrior",
+      "BasicLabel": "Basic Attack"
+    },
+    "warning": {
+      "x": -4500,
+      "alpha": 1,
+      "z": 653.1759643554688
+    },
+    "time": 1792437412.441293,
+    "origin": {
+      "y": 25,
+      "x": -4500,
+      "z": 650
+    },
+    "p": {
+      "y": 27.998023986816406,
+      "x": -4500.00048828125,
+      "z": 646.8467407226562
+    }
+  },
+  {
+    "attrs": {
+      "PlayerHealth": 57,
+      "AbilityLabel": "Power Strike",
+      "DisplayHealth": "HP 57/57 · Hall Sentinel 88/360",
+      "ActionAt": 1792437411.439532,
+      "DisplayHint": "Use F/Q or the buttons. Dodge orange warnings.",
+      "OwnerUserId": 11732987790,
+      "ReturnLabel": "Leave trial",
+      "ActionEffect": "Basic",
+      "DisplayGoals": "Defeat the opponent 0/1",
+      "NextBasicAt": 0,
+      "ActionTargetPosition": null,
+      "EnemyHealth": 88,
+      "TrialStatus": "Active",
+      "NextAbilityAt": 1792437417.322765,
+      "NoviceTrialArena": true,
+      "DisplayTitle": "Warrior · Training",
+      "ActionOriginPosition": null,
+      "ClassId": "Warrior",
+      "BasicLabel": "Basic Attack"
+    },
+    "warning": {
+      "x": -4500,
+      "alpha": 1,
+      "z": 653.1759643554688
+    },
+    "time": 1792437412.774822,
+    "origin": {
+      "y": 25,
+      "x": -4500,
+      "z": 650
+    },
+    "p": {
+      "y": 27.998023986816406,
+      "x": -4500.00048828125,
+      "z": 646.8467407226562
+    }
+  },
+  {
+    "attrs": {
+      "PlayerHealth": 57,
+      "AbilityLabel": "Power Strike",
+      "DisplayHealth": "HP 57/57 · Hall Sentinel 71/360",
+      "ActionAt": 1792437412.872352,
+      "DisplayHint": "Use F/Q or the buttons. Dodge orange warnings.",
+      "OwnerUserId": 11732987790,
+      "ReturnLabel": "Leave trial",
+      "ActionEffect": "Basic",
+      "DisplayGoals": "Defeat the opponent 0/1",
+      "NextBasicAt": 1792437413.9722323,
+      "ActionTargetPosition": null,
+      "EnemyHealth": 71,
+      "TrialStatus": "Active",
+      "NextAbilityAt": 1792437417.3227649,
+      "NoviceTrialArena": true,
+      "DisplayTitle": "Warrior · Training",
+      "ActionOriginPosition": null,
+      "ClassId": "Warrior",
+      "BasicLabel": "Basic Attack"
+    },
+    "warning": {
+      "x": -4500,
+      "alpha": 1,
+      "z": 653.1759643554688
+    },
+    "time": 1792437413.245368,
+    "origin": {
+      "y": 25,
+      "x": -4500,
+      "z": 650
+    },
+    "p": {
+      "y": 27.998023986816406,
+      "x": -4500.00048828125,
+      "z": 646.8467407226562
+    }
+  },
+  {
+    "attrs": {
+      "PlayerHealth": 57,
+      "AbilityLabel": "Power Strike",
+      "DisplayHealth": "HP 57/57 · Hall Sentinel 71/360",
+      "ActionAt": 1792437412.872352,
+      "DisplayHint": "Use F/Q or the buttons. Dodge orange warnings.",
+      "OwnerUserId": 11732987790,
+      "ReturnLabel": "Leave trial",
+      "ActionEffect": "Basic",
+      "DisplayGoals": "Defeat the opponent 0/1",
+      "NextBasicAt": 1792437413.9722319,
+      "ActionTargetPosition": null,
+      "EnemyHealth": 71,
+      "TrialStatus": "Active",
+      "NextAbilityAt": 1792437417.322765,
+      "NoviceTrialArena": true,
+      "DisplayTitle": "Warrior · Training",
+      "ActionOriginPosition": null,
+      "ClassId": "Warrior",
+      "BasicLabel": "Basic Attack"
+    },
+    "warning": {
+      "x": -4500,
+      "alpha": 1,
+      "z": 653.1759643554688
+    },
+    "time": 1792437413.56044,
+    "origin": {
+      "y": 25,
+      "x": -4500,
+      "z": 650
+    },
+    "p": {
+      "y": 27.998023986816406,
+      "x": -4500.00048828125,
+      "z": 646.8467407226562
+    }
+  },
+  {
+    "attrs": {
+      "PlayerHealth": 57,
+      "AbilityLabel": "Power Strike",
+      "DisplayHealth": "HP 57/57 · Hall Sentinel 71/360",
+      "ActionAt": 1792437412.872352,
+      "DisplayHint": "Use F/Q or the buttons. Dodge orange warnings.",
+      "OwnerUserId": 11732987790,
+      "ReturnLabel": "Leave trial",
+      "ActionEffect": "Basic",
+      "DisplayGoals": "Defeat the opponent 0/1",
+      "NextBasicAt": 1792437413.9722316,
+      "ActionTargetPosition": null,
+      "EnemyHealth": 71,
+      "TrialStatus": "Active",
+      "NextAbilityAt": 1792437417.322765,
+      "NoviceTrialArena": true,
+      "DisplayTitle": "Warrior · Training",
+      "ActionOriginPosition": null,
+      "ClassId": "Warrior",
+      "BasicLabel": "Basic Attack"
+    },
+    "warning": {
+      "x": -4500,
+      "alpha": 1,
+      "z": 653.1759643554688
+    },
+    "time": 1792437413.877425,
+    "origin": {
+      "y": 25,
+      "x": -4500,
+      "z": 650
+    },
+    "p": {
+      "y": 27.998023986816406,
+      "x": -4500.00048828125,
+      "z": 646.8467407226562
+    }
+  },
+  {
+    "attrs": {
+      "PlayerHealth": 57,
+      "AbilityLabel": "Power Strike",
+      "DisplayHealth": "HP 57/57 · Hall Sentinel 71/360",
+      "ActionAt": 1792437412.872352,
+      "DisplayHint": "Use F/Q or the buttons. Dodge orange warnings.",
+      "OwnerUserId": 11732987790,
+      "ReturnLabel": "Leave trial",
+      "ActionEffect": "Basic",
+      "DisplayGoals": "Defeat the opponent 0/1",
+      "NextBasicAt": 0,
+      "ActionTargetPosition": null,
+      "EnemyHealth": 71,
+      "TrialStatus": "Active",
+      "NextAbilityAt": 1792437417.3227656,
+      "NoviceTrialArena": true,
+      "DisplayTitle": "Warrior · Training",
+      "ActionOriginPosition": null,
+      "ClassId": "Warrior",
+      "BasicLabel": "Basic Attack"
+    },
+    "warning": {
+      "x": -4500,
+      "alpha": 1,
+      "z": 653.1759643554688
+    },
+    "time": 1792437414.177258,
+    "origin": {
+      "y": 25,
+      "x": -4500,
+      "z": 650
+    },
+    "p": {
+      "y": 27.998023986816406,
+      "x": -4500.00048828125,
+      "z": 646.8467407226562
+    }
+  },
+  {
+    "attrs": {
+      "PlayerHealth": 57,
+      "AbilityLabel": "Power Strike",
+      "DisplayHealth": "HP 57/57 · Hall Sentinel 54/360",
+      "ActionAt": 1792437414.272525,
+      "DisplayHint": "Use F/Q or the buttons. Dodge orange warnings.",
+      "OwnerUserId": 11732987790,
+      "ReturnLabel": "Leave trial",
+      "ActionEffect": "Basic",
+      "DisplayGoals": "Defeat the opponent 0/1",
+      "NextBasicAt": 1792437415.3724456,
+      "ActionTargetPosition": null,
+      "EnemyHealth": 54,
+      "TrialStatus": "Active",
+      "NextAbilityAt": 1792437417.3227656,
+      "NoviceTrialArena": true,
+      "DisplayTitle": "Warrior · Training",
+      "ActionOriginPosition": null,
+      "ClassId": "Warrior",
+      "BasicLabel": "Basic Attack"
+    },
+    "warning": {
+      "x": -4500,
+      "alpha": 1,
+      "z": 653.1759643554688
+    },
+    "time": 1792437414.66552,
+    "origin": {
+      "y": 25,
+      "x": -4500,
+      "z": 650
+    },
+    "p": {
+      "y": 27.998023986816406,
+      "x": -4500.00048828125,
+      "z": 646.8467407226562
+    }
+  },
+  {
+    "attrs": {
+      "PlayerHealth": 57,
+      "AbilityLabel": "Power Strike",
+      "DisplayHealth": "HP 57/57 · Hall Sentinel 54/360",
+      "ActionAt": 1792437414.272525,
+      "DisplayHint": "Use F/Q or the buttons. Dodge orange warnings.",
+      "OwnerUserId": 11732987790,
+      "ReturnLabel": "Leave trial",
+      "ActionEffect": "Basic",
+      "DisplayGoals": "Defeat the opponent 0/1",
+      "NextBasicAt": 1792437415.3724458,
+      "ActionTargetPosition": null,
+      "EnemyHealth": 54,
+      "TrialStatus": "Active",
+      "NextAbilityAt": 1792437417.3227656,
+      "NoviceTrialArena": true,
+      "DisplayTitle": "Warrior · Training",
+      "ActionOriginPosition": null,
+      "ClassId": "Warrior",
+      "BasicLabel": "Basic Attack"
+    },
+    "warning": {
+      "x": -4500,
+      "alpha": 1,
+      "z": 653.1759643554688
+    },
+    "time": 1792437414.96178,
+    "origin": {
+      "y": 25,
+      "x": -4500,
+      "z": 650
+    },
+    "p": {
+      "y": 27.998023986816406,
+      "x": -4500.00048828125,
+      "z": 646.8467407226562
+    }
+  },
+  {
+    "attrs": {
+      "PlayerHealth": 57,
+      "AbilityLabel": "Power Strike",
+      "DisplayHealth": "HP 57/57 · Hall Sentinel 54/360",
+      "ActionAt": 1792437414.272525,
+      "DisplayHint": "Use F/Q or the buttons. Dodge orange warnings.",
+      "OwnerUserId": 11732987790,
+      "ReturnLabel": "Leave trial",
+      "ActionEffect": "Basic",
+      "DisplayGoals": "Defeat the opponent 0/1",
+      "NextBasicAt": 1792437415.3724468,
+      "ActionTargetPosition": null,
+      "EnemyHealth": 54,
+      "TrialStatus": "Active",
+      "NextAbilityAt": 1792437417.3227663,
+      "NoviceTrialArena": true,
+      "DisplayTitle": "Warrior · Training",
+      "ActionOriginPosition": null,
+      "ClassId": "Warrior",
+      "BasicLabel": "Basic Attack"
+    },
+    "warning": {
+      "x": -4500,
+      "alpha": 1,
+      "z": 653.1759643554688
+    },
+    "time": 1792437415.277719,
+    "origin": {
+      "y": 25,
+      "x": -4500,
+      "z": 650
+    },
+    "p": {
+      "y": 27.998023986816406,
+      "x": -4500.00048828125,
+      "z": 646.8467407226562
+    }
+  },
+  {
+    "attrs": {
+      "PlayerHealth": 57,
+      "AbilityLabel": "Power Strike",
+      "DisplayHealth": "HP 57/57 · Hall Sentinel 54/360",
+      "ActionAt": 1792437414.272525,
+      "DisplayHint": "Use F/Q or the buttons. Dodge orange warnings.",
+      "OwnerUserId": 11732987790,
+      "ReturnLabel": "Leave trial",
+      "ActionEffect": "Basic",
+      "DisplayGoals": "Defeat the opponent 0/1",
+      "NextBasicAt": 0,
+      "ActionTargetPosition": null,
+      "EnemyHealth": 54,
+      "TrialStatus": "Active",
+      "NextAbilityAt": 1792437417.3227649,
+      "NoviceTrialArena": true,
+      "DisplayTitle": "Warrior · Training",
+      "ActionOriginPosition": null,
+      "ClassId": "Warrior",
+      "BasicLabel": "Basic Attack"
+    },
+    "warning": {
+      "x": -4500,
+      "alpha": 1,
+      "z": 653.1759643554688
+    },
+    "time": 1792437415.594693,
+    "origin": {
+      "y": 25,
+      "x": -4500,
+      "z": 650
+    },
+    "p": {
+      "y": 27.998023986816406,
+      "x": -4500.00048828125,
+      "z": 646.8467407226562
+    }
+  },
+  {
+    "attrs": {
+      "PlayerHealth": 57,
+      "AbilityLabel": "Power Strike",
+      "DisplayHealth": "HP 57/57 · Hall Sentinel 37/360",
+      "ActionAt": 1792437415.689532,
+      "DisplayHint": "Use F/Q or the buttons. Dodge orange warnings.",
+      "ActionTargetPosition": null,
+      "OwnerUserId": 11732987790,
+      "ReturnLabel": "Leave trial",
+      "ActionEffect": "Basic",
+      "DisplayGoals": "Defeat the opponent 0/1",
+      "NextBasicAt": 1792437416.7894487,
+      "EnemyHealth": 37,
+      "WarningToken": 2194.3216582999994,
+      "TrialStatus": "Active",
+      "NextAbilityAt": 1792437417.3227654,
+      "NoviceTrialArena": true,
+      "DisplayTitle": "Warrior · Training",
+      "ActionOriginPosition": null,
+      "ClassId": "Warrior",
+      "BasicLabel": "Basic Attack"
+    },
+    "warning": {
+      "x": -4500.00048828125,
+      "alpha": 0.3499999940395355,
+      "z": 646.8467407226562
+    },
+    "time": 1792437416.060189,
+    "origin": {
+      "y": 25,
+      "x": -4500,
+      "z": 650
+    },
+    "p": {
+      "y": 27.998023986816406,
+      "x": -4500.00048828125,
+      "z": 646.8467407226562
+    }
+  },
+  {
+    "attrs": {
+      "PlayerHealth": 57,
+      "AbilityLabel": "Power Strike",
+      "DisplayHealth": "HP 57/57 · Hall Sentinel 37/360",
+      "ActionAt": 1792437415.689532,
+      "DisplayHint": "Use F/Q or the buttons. Dodge orange warnings.",
+      "ActionTargetPosition": null,
+      "OwnerUserId": 11732987790,
+      "ReturnLabel": "Leave trial",
+      "ActionEffect": "Basic",
+      "DisplayGoals": "Defeat the opponent 0/1",
+      "NextBasicAt": 1792437416.789449,
+      "EnemyHealth": 37,
+      "WarningToken": 2194.3216582999994,
+      "TrialStatus": "Active",
+      "NextAbilityAt": 1792437417.3227656,
+      "NoviceTrialArena": true,
+      "DisplayTitle": "Warrior · Training",
+      "ActionOriginPosition": null,
+      "ClassId": "Warrior",
+      "BasicLabel": "Basic Attack"
+    },
+    "warning": {
+      "x": -4500.00048828125,
+      "alpha": 0.3499999940395355,
+      "z": 646.8467407226562
+    },
+    "time": 1792437416.628082,
+    "origin": {
+      "y": 25,
+      "x": -4500,
+      "z": 650
+    },
+    "p": {
+      "y": 27.998023986816406,
+      "x": -4500,
+      "z": 653.176025390625
+    }
+  },
+  {
+    "attrs": {
+      "PlayerHealth": 57,
+      "AbilityLabel": "Power Strike",
+      "DisplayHealth": "HP 57/57 · Hall Sentinel 37/360",
+      "ActionAt": 1792437415.689532,
+      "DisplayHint": "Use F/Q or the buttons. Dodge orange warnings.",
+      "ActionTargetPosition": null,
+      "OwnerUserId": 11732987790,
+      "ReturnLabel": "Leave trial",
+      "ActionEffect": "Basic",
+      "DisplayGoals": "Defeat the opponent 0/1",
+      "NextBasicAt": 0,
+      "EnemyHealth": 37,
+      "WarningToken": 2194.3216582999994,
+      "TrialStatus": "Active",
+      "NextAbilityAt": 1792437417.3227646,
+      "NoviceTrialArena": true,
+      "DisplayTitle": "Warrior · Training",
+      "ActionOriginPosition": null,
+      "ClassId": "Warrior",
+      "BasicLabel": "Basic Attack"
+    },
+    "warning": {
+      "x": -4500.00048828125,
+      "alpha": 0.3499999940395355,
+      "z": 646.8467407226562
+    },
+    "time": 1792437416.944385,
+    "origin": {
+      "y": 25,
+      "x": -4500,
+      "z": 650
+    },
+    "p": {
+      "y": 27.998023986816406,
+      "x": -4500,
+      "z": 653.176025390625
+    }
+  },
+  {
+    "attrs": {
+      "PlayerHealth": 57,
+      "AbilityLabel": "Power Strike",
+      "DisplayHealth": "HP 57/57 · Hall Sentinel 20/360",
+      "ActionAt": 1792437417.039412,
+      "DisplayHint": "Use F/Q or the buttons. Dodge orange warnings.",
+      "OwnerUserId": 11732987790,
+      "ReturnLabel": "Leave trial",
+      "ActionEffect": "Basic",
+      "DisplayGoals": "Defeat the opponent 0/1",
+      "NextBasicAt": 1792437418.1393,
+      "ActionTargetPosition": null,
+      "EnemyHealth": 20,
+      "TrialStatus": "Active",
+      "NextAbilityAt": 0,
+      "NoviceTrialArena": true,
+      "DisplayTitle": "Warrior · Training",
+      "ActionOriginPosition": null,
+      "ClassId": "Warrior",
+      "BasicLabel": "Basic Attack"
+    },
+    "warning": {
+      "x": -4500.00048828125,
+      "alpha": 1,
+      "z": 646.8467407226562
+    },
+    "time": 1792437417.41189,
+    "origin": {
+      "y": 25,
+      "x": -4500,
+      "z": 650
+    },
+    "p": {
+      "y": 27.998023986816406,
+      "x": -4500,
+      "z": 653.176025390625
+    }
+  },
+  {
+    "attrs": {
+      "PlayerHealth": 57,
+      "AbilityLabel": "Power Strike",
+      "DisplayHealth": "HP 57/57 · Hall Sentinel 0/360",
+      "ActionAt": 1792437417.506287,
+      "DisplayHint": "Leave training to continue your journey.",
+      "ReceiptDelivered": true,
+      "ActionTargetPosition": null,
+      "OwnerUserId": 11732987790,
+      "ReturnLabel": "Leave trial",
+      "ActionEffect": "Physical",
+      "DisplayGoals": "Defeat the opponent 1/1",
+      "NextBasicAt": 1792437418.1393008,
+      "EnemyHealth": 0,
+      "ActionAbilityId": "power_strike",
+      "TrialStatus": "Won",
+      "NextAbilityAt": 1792437423.5061853,
+      "NoviceTrialArena": true,
+      "DisplayTitle": "Warrior · Lesson complete",
+      "ActionOriginPosition": null,
+      "ClassId": "Warrior",
+      "BasicLabel": "Basic Attack"
+    },
+    "warning": {
+      "x": -4500.00048828125,
+      "alpha": 1,
+      "z": 646.8467407226562
+    },
+    "time": 1792437417.878191,
+    "origin": {
+      "y": 25,
+      "x": -4500,
+      "z": 650
+    },
+    "p": {
+      "y": 27.998023986816406,
+      "x": -4500,
+      "z": 653.176025390625
+    }
+  }
+]

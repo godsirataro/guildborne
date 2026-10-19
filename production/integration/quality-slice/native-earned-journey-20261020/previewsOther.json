@@ -1,0 +1,50 @@
+[
+  {
+    "cls": "Knight",
+    "raw": {
+      "content": [
+        {
+          "type": "text",
+          "text": "{\"PlayerHealth\":64,\"ClassId\":\"Knight\",\"TrialStatus\":\"Won\",\"ActionAt\":1792437145.983875,\"DisplayHint\":\"Leave training to continue your journey.\",\"ReceiptDelivered\":true,\"ActionTargetPosition\":null,\"OwnerUserId\":11732987790,\"ReturnLabel\":\"Leave trial\",\"ActionEffect\":\"Taunt\",\"DisplayGoals\":\"Skills used 1/1\",\"NextBasicAt\":0,\"EnemyHealth\":700,\"ActionAbilityId\":\"taunt\",\"DisplayHealth\":\"HP 64/64 · Training dummy 700/700\",\"NextAbilityAt\":1792437154.9837099,\"NoviceTrialArena\":true,\"DisplayTitle\":\"Knight · Lesson complete\",\"ActionOriginPosition\":null,\"AbilityLabel\":\"Taunt\",\"BasicLabel\":\"Basic Attack\"}"
+        }
+      ],
+      "isError": false
+    }
+  },
+  {
+    "cls": "Archer",
+    "raw": {
+      "content": [
+        {
+          "type": "text",
+          "text": "{\"PlayerHealth\":46,\"ClassId\":\"Archer\",\"TrialStatus\":\"Won\",\"ActionAt\":1792437149.617247,\"DisplayHint\":\"Leave training to continue your journey.\",\"ReceiptDelivered\":true,\"ActionTargetPosition\":null,\"OwnerUserId\":11732987790,\"ReturnLabel\":\"Leave trial\",\"ActionEffect\":\"Physical\",\"DisplayGoals\":\"Skills used 1/1\",\"NextBasicAt\":0,\"EnemyHealth\":668,\"ActionAbilityId\":\"piercing_shot\",\"DisplayHealth\":\"HP 46/46 · Training dummy 668/700\",\"NextAbilityAt\":1792437156.6170943,\"NoviceTrialArena\":true,\"DisplayTitle\":\"Archer · Lesson complete\",\"ActionOriginPosition\":null,\"AbilityLabel\":\"Piercing Shot\",\"BasicLabel\":\"Basic Attack\"}"
+        }
+      ],
+      "isError": false
+    }
+  },
+  {
+    "cls": "Mage",
+    "raw": {
+      "content": [
+        {
+          "type": "text",
+          "text": "{\"PlayerHealth\":44,\"ClassId\":\"Mage\",\"TrialStatus\":\"Won\",\"ActionAt\":1792437153.266581,\"DisplayHint\":\"Leave training to continue your journey.\",\"ReceiptDelivered\":true,\"ActionTargetPosition\":null,\"OwnerUserId\":11732987790,\"ReturnLabel\":\"Leave trial\",\"ActionEffect\":\"Magic\",\"DisplayGoals\":\"Skills used 1/1\",\"NextBasicAt\":0,\"EnemyHealth\":654,\"ActionAbilityId\":\"fireball\",\"DisplayHealth\":\"HP 44/44 · Training dummy 654/700\",\"NextAbilityAt\":1792437161.2664254,\"NoviceTrialArena\":true,\"DisplayTitle\":\"Mage · Lesson complete\",\"ActionOriginPosition\":null,\"AbilityLabel\":\"Fireball\",\"BasicLabel\":\"Basic Attack\"}"
+        }
+      ],
+      "isError": false
+    }
+  },
+  {
+    "cls": "Priest",
+    "raw": {
+      "content": [
+        {
+          "type": "text",
+          "text": "{\"PlayerHealth\":48,\"ClassId\":\"Priest\",\"TrialStatus\":\"Won\",\"ActionAt\":1792437158.065716,\"DisplayHint\":\"Leave training to continue your journey.\",\"ReceiptDelivered\":true,\"ActionTargetPosition\":null,\"OwnerUserId\":11732987790,\"ReturnLabel\":\"Leave trial\",\"ActionEffect\":\"Heal\",\"DisplayGoals\":\"Skills used 1/1\",\"NextBasicAt\":0,\"EnemyHealth\":700,\"ActionAbilityId\":\"heal\",\"DisplayHealth\":\"HP 48/48 · Training dummy 700/700\",\"NextAbilityAt\":1792437163.0655587,\"NoviceTrialArena\":true,\"DisplayTitle\":\"Priest · Lesson complete\",\"ActionOriginPosition\":null,\"AbilityLabel\":\"Heal\",\"BasicLabel\":\"Basic Attack\"}"
+        }
+      ],
+      "isError": false
+    }
+  }
+]

@@ -1,0 +1,62 @@
+[
+  {
+    "p": {
+      "y": 4,
+      "x": -13,
+      "z": 79
+    },
+    "target": "Goblin1",
+    "ability": 0,
+    "rewards": 3,
+    "hp": 57,
+    "damage": 14
+  },
+  {
+    "p": {
+      "y": 4,
+      "x": -0.3430206775665283,
+      "z": 56.07060623168945
+    },
+    "target": "Goblin1",
+    "ability": 0,
+    "rewards": 3,
+    "hp": 57,
+    "damage": 14
+  },
+  {
+    "p": {
+      "y": 4,
+      "x": 3.576908588409424,
+      "z": 56.580326080322266
+    },
+    "target": "Goblin1",
+    "ability": 0,
+    "rewards": 3,
+    "hp": 48,
+    "damage": 28
+  },
+  {
+    "p": {
+      "y": 4,
+      "x": 13,
+      "z": 85
+    },
+    "target": "Goblin2",
+    "ability": 0,
+    "rewards": 3,
+    "hp": 39,
+    "damage": 42
+  },
+  {
+    "p": {
+      "y": 4,
+      "x": 6.54138708114624,
+      "z": 66.9189682006836
+    },
+    "target": "Goblin2",
+    "ability": 0,
+    "rewards": 4,
+    "hp": 30,
+    "damage": 42
+  }
+]

@@ -1,0 +1,9 @@
+{
+  "content": [
+    {
+      "type": "text",
+      "text": "{\"TrialProblem\":\"TrialDefeated\",\"PlayerHealth\":0,\"ClassId\":\"Warrior\",\"TrialStatus\":\"Failed\",\"ActionAt\":1792436894.17632,\"DisplayHint\":\"Try again when you are ready.\",\"OwnerUserId\":11732987790,\"ReturnLabel\":\"Leave trial\",\"ActionEffect\":\"Basic\",\"DisplayGoals\":\"Defeat the opponent 0/1\",\"NextBasicAt\":0,\"ActionTargetPosition\":null,\"EnemyHealth\":30,\"DisplayHealth\":\"HP 0/48 · Crossroads Keeper 30/240\",\"NextAbilityAt\":0,\"NoviceTrialArena\":true,\"DisplayTitle\":\"Warrior · Try again\",\"ActionOriginPosition\":null,\"AbilityLabel\":\"Power Strike\",\"BasicLabel\":\"Basic Attack\"}"
+    }
+  ],
+  "isError": false
+}

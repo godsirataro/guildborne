@@ -1,0 +1,9 @@
+{
+  "content": [
+    {
+      "type": "text",
+      "text": "{\"PlayerHealth\":54,\"ClassId\":\"Warrior\",\"TrialStatus\":\"Won\",\"ActionAt\":1792437106.901452,\"DisplayHint\":\"Leave training to continue your journey.\",\"ReceiptDelivered\":true,\"ActionTargetPosition\":null,\"OwnerUserId\":11732987790,\"ReturnLabel\":\"Leave trial\",\"ActionEffect\":\"Physical\",\"DisplayGoals\":\"Skills used 1/1\",\"NextBasicAt\":0,\"EnemyHealth\":668,\"ActionAbilityId\":\"power_strike\",\"DisplayHealth\":\"HP 54/54 · Training dummy 668/700\",\"NextAbilityAt\":1792437112.9012809,\"NoviceTrialArena\":true,\"DisplayTitle\":\"Warrior · Lesson complete\",\"ActionOriginPosition\":null,\"AbilityLabel\":\"Power Strike\",\"BasicLabel\":\"Basic Attack\"}"
+    }
+  ],
+  "isError": false
+}

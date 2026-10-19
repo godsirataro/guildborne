@@ -1,0 +1,9 @@
+{
+  "content": [
+    {
+      "type": "text",
+      "text": "{\"revision\":25,\"gold\":0,\"party\":{\"adventurerIds\":[]},\"hall\":0,\"novice\":{\"trialClass\":\"Warrior\",\"version\":1,\"claimed\":5,\"objectives\":[],\"branch\":\"rescue\"},\"character\":{\"equipmentSlots\":{\"weapon\":\"novice:class:1\"},\"stats\":{\"Attack\":17,\"Defense\":4,\"Health\":57,\"WeaponBonus\":2},\"definitionVersion\":1,\"classId\":\"Warrior\",\"xp\":450,\"raceId\":\"Human\",\"appearance\":{\"hairColorId\":\"HAIR_DARK_BROWN\",\"bodyPresetId\":\"HUMAN_STANDARD\",\"raceFeatures\":[],\"raceId\":\"HUMAN\",\"outfitSlots\":{\"INNER_TOP\":\"CLO_TUNIC_TRAVELER_01\",\"INNER_BOTTOM\":\"CLO_TROUSERS_TRAVELER_01\"},\"appearanceVersion\":1,\"hairAssetId\":\"ACC_HAIR_HUMAN_01\",\"skinPaletteId\":\"SKIN_HUMAN_03\",\"headPresetId\":\"CHR_HEAD_HUMAN_01\"},\"classPathId\":\"warrior:1\",\"tier\":1,\"appearanceEnabled\":false,\"level\":10,\"appearanceRevision\":0,\"skillId\":\"power_strike\"}}"
+    }
+  ],
+  "isError": false
+}

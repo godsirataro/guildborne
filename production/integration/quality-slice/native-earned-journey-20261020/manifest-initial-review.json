@@ -1,0 +1,460 @@
+{
+  "status": "REVIEW_ONLY",
+  "files": [
+    {
+      "path": ".gitattributes",
+      "bytes": 25,
+      "sha256": "27fac0bc37662981cc8a17896e59d12e1faba2eea961c2eeec7f1abae2472800"
+    },
+    {
+      "path": "README.md",
+      "bytes": 4335,
+      "sha256": "76d5131ca2c244870e3732573d14ba6dc0bfe0bfaf64b5e938e41a0199a35d01"
+    },
+    {
+      "path": "camp-server-0001.json",
+      "bytes": 44579,
+      "sha256": "a0db600a8447d4b92694499d342257f1ebec0c2c58b102ee5e72dc6b07c53fcd"
+    },
+    {
+      "path": "camp-server-0021.json",
+      "bytes": 44533,
+      "sha256": "06bdb2f3f4f1a734acb07900b46c4f341e72919ac601b97509c86179ddc0cd3b"
+    },
+    {
+      "path": "camp-server-0041.json",
+      "bytes": 44530,
+      "sha256": "72a2b4589ccb1cde68cbf863a18b2ac0b59cc8e40517fed28fb7d47f71fd6e75"
+    },
+    {
+      "path": "camp-server-0061.json",
+      "bytes": 45313,
+      "sha256": "5cee0f534cfd5e32c3314dbb56d745af8bb2af3a70cb7b7737f1b377ed48056c"
+    },
+    {
+      "path": "camp-server-0081.json",
+      "bytes": 54447,
+      "sha256": "27545a2cddb2d9f35967b1c0818dd67ea801d576c3b0334d6f9653f03e47729a"
+    },
+    {
+      "path": "camp-server-0101.json",
+      "bytes": 54199,
+      "sha256": "f20fbfe0d8019e51caaf33dc26921190771c6fe5239a69e44c98cd459eadd4b1"
+    },
+    {
+      "path": "camp-server-0121.json",
+      "bytes": 54209,
+      "sha256": "83c736a23708c8345a652b43fc5b528406d34f32ac55f5922bf13ac7f1268b43"
+    },
+    {
+      "path": "camp-server-0141.json",
+      "bytes": 55171,
+      "sha256": "689aade76618c122f95628dd8bf7ae9d74743f000ea9cac7142fcde4a7fbcadb"
+    },
+    {
+      "path": "camp-server-0161.json",
+      "bytes": 53817,
+      "sha256": "3a87e1b0b154fe901a7b9d53a0168fbdca945461ba8c95e3b399e0864db5a14e"
+    },
+    {
+      "path": "camp-server-0181.json",
+      "bytes": 50961,
+      "sha256": "3d957e11922f08802a6c2137aacd52f518e3407a81ff4915c6795736fe929787"
+    },
+    {
+      "path": "camp-server-0201.json",
+      "bytes": 50820,
+      "sha256": "57b4bf0e57989c1e2a2aaff03ab3ac8ada88b4de4ac616c728a3b08a69baf238"
+    },
+    {
+      "path": "camp-server-0221.json",
+      "bytes": 51230,
+      "sha256": "93ad1de6f02655de8a91acec0e7fb5811949403b2fb320263dd88bd2aacd4c0c"
+    },
+    {
+      "path": "camp-server-0241.json",
+      "bytes": 50313,
+      "sha256": "f3e7d48e6eedb6ae2ba7d633cd6dfa7fc9d9d69735d6add626c444a1550bf0a2"
+    },
+    {
+      "path": "camp-server-0261.json",
+      "bytes": 45640,
+      "sha256": "fc4148df6016161a67d7334a3b389c4bf06a4af66fbaa783e950a2424f8a040c"
+    },
+    {
+      "path": "camp-server-0281.json",
+      "bytes": 45956,
+      "sha256": "772b9b77a851433d1d04b89d3ca53ceecce45641edbab81a04848b65d182033e"
+    },
+    {
+      "path": "camp-server-0301.json",
+      "bytes": 50047,
+      "sha256": "fb3c5ea172a6e071efa17d107efc358bc66549261dd3219dd82cb3a0540a332e"
+    },
+    {
+      "path": "camp-server-0321.json",
+      "bytes": 54872,
+      "sha256": "90bb54fc77128260dc825d0b5afb4d710a1531fd38cfe743f0cda80e32c74ea5"
+    },
+    {
+      "path": "camp-server-0341.json",
+      "bytes": 58257,
+      "sha256": "5f5f535958fad2790cafe1be32194b1f3ad9d3b83767b22459fbb0c3e0458b93"
+    },
+    {
+      "path": "camp-server-0361.json",
+      "bytes": 58537,
+      "sha256": "fece1bc92c141df83612408d180dcc54dc36839d76c3138f98e8ae81c62d1ae2"
+    },
+    {
+      "path": "camp-server-0381.json",
+      "bytes": 59832,
+      "sha256": "523b35b848ac92fb37dda8a29109f17ff40a03d1e76b25dae8dfc00736d8bd26"
+    },
+    {
+      "path": "camp-server-0401.json",
+      "bytes": 67626,
+      "sha256": "5a4f1499678eeea1f91842fb2517bc71ca29406f78d3e80a463adb247773503b"
+    },
+    {
+      "path": "camp-server-0421.json",
+      "bytes": 65241,
+      "sha256": "16853f101a4ecdaf729e060d6e220460b5fd5aa4ce9197e0b769ee0bcc59f564"
+    },
+    {
+      "path": "camp-server-0441.json",
+      "bytes": 62963,
+      "sha256": "83366697994b843cee08b420f72da7098e0f5dea4c46ff925936b1e0a47b4092"
+    },
+    {
+      "path": "camp-server-0461.json",
+      "bytes": 64763,
+      "sha256": "18ae284352225bb4e31ddd6bdb87749fbe5c7857666afc67eb6d4188375cbdb2"
+    },
+    {
+      "path": "camp-server-0481.json",
+      "bytes": 65178,
+      "sha256": "7899db3bb64548ebf5d47d31f0bf7003151bae7d7122e79dd656877c6f834de0"
+    },
+    {
+      "path": "camp-server-0501.json",
+      "bytes": 64611,
+      "sha256": "3eb88f03274ec54cc9eda8019327305e2a630a6880c509296c827af07084b79b"
+    },
+    {
+      "path": "camp-server-0521.json",
+      "bytes": 63564,
+      "sha256": "635f7914efdceab52420900169e1b4cb96db62e1b899f00db9bf4c9c81ec47a8"
+    },
+    {
+      "path": "camp-server-0541.json",
+      "bytes": 62733,
+      "sha256": "815466bc6e3075346cdaf7632060017e66571533f77ce16e8d39d3d36bc9e41e"
+    },
+    {
+      "path": "camp-server-0561.json",
+      "bytes": 68536,
+      "sha256": "553db9bfd08d1157850433f04d0fa1565819bbdfc1eaef1e8e8768a3820034e5"
+    },
+    {
+      "path": "camp-server-0581.json",
+      "bytes": 70450,
+      "sha256": "206764c98297d23467a9de2715575adac6d7d14edf16809e99af28876468754e"
+    },
+    {
+      "path": "camp-server-0601.json",
+      "bytes": 70452,
+      "sha256": "10d3c60bfb5a499dcac56623427ae50e4e98cbfa9773d3114285567310157bc5"
+    },
+    {
+      "path": "camp-server-0621.json",
+      "bytes": 70452,
+      "sha256": "06c2e2ffd702c2af919ade5f4740fca01a9b387cd4404bcb5f17540115ce17bb"
+    },
+    {
+      "path": "camp-server-0641.json",
+      "bytes": 70453,
+      "sha256": "68aeb5031a05ebf9f2048fccc3d66510151fe019c49ebad23e591b5ce6d745c0"
+    },
+    {
+      "path": "camp-server-0661.json",
+      "bytes": 70453,
+      "sha256": "677fb8bbc065852d30e2bba1497bb5862e111b1d59569663614882ca7e271abc"
+    },
+    {
+      "path": "camp-server-0681.json",
+      "bytes": 70675,
+      "sha256": "b02c3d62206f2d25338930e3b11f050c391a0746e06c68eb0c0bad897b392705"
+    },
+    {
+      "path": "camp-server-0701.json",
+      "bytes": 71445,
+      "sha256": "d34ec79fa9bc07b068a619ea24a74407c113c6de0c91942829bef9c869400753"
+    },
+    {
+      "path": "camp-server-0721.json",
+      "bytes": 72794,
+      "sha256": "6bbebced9cbb9fab654355a8ef872df7f0cd48c7ca71001d3c977a680cc4829d"
+    },
+    {
+      "path": "camp-server-0741.json",
+      "bytes": 73176,
+      "sha256": "200a14a000e9517f1215792f1e7626d3bb76074c8dde6d64c3ed9f3b4ec1d6e9"
+    },
+    {
+      "path": "camp-server-0761.json",
+      "bytes": 73710,
+      "sha256": "e387f9299149c7a8b6faca6d141b15367a1c8d58decb9d93347fcb824a4583f5"
+    },
+    {
+      "path": "camp-server-0781.json",
+      "bytes": 68876,
+      "sha256": "7fb17255a1b043442e40b0d5aacb04c163e0a015597a3137a02c141006b171ab"
+    },
+    {
+      "path": "camp-server-0801.json",
+      "bytes": 65075,
+      "sha256": "9d478d51ae2c45cf695daf03643ecfd6be5aa059205a3ae94dd38f03dc960738"
+    },
+    {
+      "path": "camp-server-0821.json",
+      "bytes": 64144,
+      "sha256": "db9e9794d28f0bc3cf23b756cf632c5faf6c7578a804f2409c2b75aba38e555a"
+    },
+    {
+      "path": "camp-server-0841.json",
+      "bytes": 63391,
+      "sha256": "a2b7128dcccb1ccf1c9560da198ff072669b070d53cb2861febc4bc3c24e229a"
+    },
+    {
+      "path": "camp-server-0861.json",
+      "bytes": 63332,
+      "sha256": "ac79452e0786882564dc16ee967df6b1f05c86a5503cadf8e13372d1fc974b67"
+    },
+    {
+      "path": "camp-server-0881.json",
+      "bytes": 63334,
+      "sha256": "24714a5a586498fe48b200466da732ef5bb682dd277f064d9723bffd673a75f9"
+    },
+    {
+      "path": "camp-server-0901.json",
+      "bytes": 63331,
+      "sha256": "4847f4e1b310a6827c321404a97734f3d7156febb6c2ed7d993bb551d9a0ae4c"
+    },
+    {
+      "path": "camp-server-0921.json",
+      "bytes": 69519,
+      "sha256": "88c93c613cfa4ec1ea6d1dd1af5ab8c7c754c75f70d7450f67868ce939f88a3c"
+    },
+    {
+      "path": "camp-server-0941.json",
+      "bytes": 72172,
+      "sha256": "2e9d4ac02cf65341f13eac975aaf200a415191b0257e7cff0f3d56eb2c793758"
+    },
+    {
+      "path": "camp-server-0961.json",
+      "bytes": 72172,
+      "sha256": "ebceca0edc41ce01b808a10c35455184c357e2c4acfbc2ea24066785efe27f58"
+    },
+    {
+      "path": "camp-server-0981.json",
+      "bytes": 72172,
+      "sha256": "68a2b239a784a188ed12360032357d8ca7f5e794886d94a42868010983635d2c"
+    },
+    {
+      "path": "camp-server-1001.json",
+      "bytes": 72171,
+      "sha256": "4e4a49158424d78a44ae898a793b700a15ae449b100e45b1d293ce287105dc6e"
+    },
+    {
+      "path": "camp-server-1021.json",
+      "bytes": 72173,
+      "sha256": "920fb5b177d0a17a8c98eed405df4179519073efd85d39219393b5af113fbefd"
+    },
+    {
+      "path": "camp-server-1041.json",
+      "bytes": 72172,
+      "sha256": "9af4d1bda1d9ed71ae187d1c1ecf2d9963d5417dfb03647b014bb03efbd826ef"
+    },
+    {
+      "path": "camp-server-1061.json",
+      "bytes": 72171,
+      "sha256": "a35637f5ce25d92d4d73795ae5ed1c7d16490cb312d74edb98d8e8fcb15e7006"
+    },
+    {
+      "path": "camp-server-1081.json",
+      "bytes": 72170,
+      "sha256": "41d157975cc6707e7523af5700960b78ccca8c5a84ac6034ae0e5ec3ea407dd6"
+    },
+    {
+      "path": "camp-server-1101.json",
+      "bytes": 72349,
+      "sha256": "ccf34e9db6b85ed7756af1607df668ebff3613dd4b40ba82f9d88db2722710b0"
+    },
+    {
+      "path": "camp-server-1121.json",
+      "bytes": 73994,
+      "sha256": "23ed3424e18825cc607ad7b5bdb16e332a6c5fbc3efdfad03d6c35e27c0dbe01"
+    },
+    {
+      "path": "camp-server-1141.json",
+      "bytes": 73973,
+      "sha256": "03bca9951826386c5ad1eacbf0e66dcaa1e019a1d2583d61a5afed6860b4ad3b"
+    },
+    {
+      "path": "camp-server-1161.json",
+      "bytes": 74215,
+      "sha256": "42844ced859b052bff52237485fd3630e7ef01fbcadd860a1628945c9ac5a949"
+    },
+    {
+      "path": "camp-server-1181.json",
+      "bytes": 73248,
+      "sha256": "1c5fab02cff82b0876199fbd08cfe6f061b8cece525ebfbb4e62a0650b9009fd"
+    },
+    {
+      "path": "chapter3Earned.json",
+      "bytes": 787,
+      "sha256": "c27fa5a1bef71e6aa2f4a252fa0563f3d9ea09341f11f0d7a1e400d1beffa6c2"
+    },
+    {
+      "path": "chapter4Earned.json",
+      "bytes": 787,
+      "sha256": "470f23d4863e4cdc15b1f6502931aa24942944b3ea57c0748476b88e0c66467d"
+    },
+    {
+      "path": "chapter5Earned.json",
+      "bytes": 788,
+      "sha256": "c73c793de6932d9a7c582186754a9bcd20c1ce5d0c751dec8328cd496c502c92"
+    },
+    {
+      "path": "class1Earned.json",
+      "bytes": 999,
+      "sha256": "b163ea8c564a601102abc627048e3c99ef956e6651e66274f1241ccb3699560b"
+    },
+    {
+      "path": "earnedCampCapture.png",
+      "bytes": 361237,
+      "sha256": "ceb2a808964101e861ae91b2fcab594abe4e57de7d58007139d8249a02bf8fd4"
+    },
+    {
+      "path": "earnedCampFinalCapture.png",
+      "bytes": 586833,
+      "sha256": "a43ec81db8b75d6ecf52c1d2f915b9f995bc003a6076540ad3199cd3b5f62b14"
+    },
+    {
+      "path": "earnedCampFinalRewards.json",
+      "bytes": 148,
+      "sha256": "174725864718f25eca5d7fea84d9742fc49c25dfad053efb16539ac5d612714d"
+    },
+    {
+      "path": "earnedCampInputCodes.json",
+      "bytes": 244,
+      "sha256": "b78a58458282b67d0ed17aec6293be9d250cc26626c3fdfa3afa9950792179b5"
+    },
+    {
+      "path": "earnedCampRetryRewards.json",
+      "bytes": 148,
+      "sha256": "174725864718f25eca5d7fea84d9742fc49c25dfad053efb16539ac5d612714d"
+    },
+    {
+      "path": "earnedCampRetryTrace.json",
+      "bytes": 904,
+      "sha256": "a17737badb61659b5372e6c8cca79d3ab0de2bbd9b7091dcafe3e42124bc9a62"
+    },
+    {
+      "path": "earnedCampRewards.json",
+      "bytes": 2042,
+      "sha256": "80c79513b5186d82528ca6ae8d1ffb77d52261ec854aafe6d4380116e1efdf5e"
+    },
+    {
+      "path": "earnedCampServerProbe.json",
+      "bytes": 113241,
+      "sha256": "644f2b15f156a4f5396d648b34d4d6f1235dc08153bd65abd0d493708ec2dd57"
+    },
+    {
+      "path": "earnedCampServerSummary.json",
+      "bytes": 7023,
+      "sha256": "a42b550f5547e4f8c18fae85cc2dcd30a5704eff5e9abef83cd63b22cea50fc3"
+    },
+    {
+      "path": "earnedCampSkillTrace.json",
+      "bytes": 744,
+      "sha256": "3f4471b7ecbbbfc7eb54da7ab920a39d8413c28b2b300db3ddf43e5a6bb9f4ed"
+    },
+    {
+      "path": "earnedCampVisualProbe.json",
+      "bytes": 39255,
+      "sha256": "8725b1ac3a22a1ddffd31e4d4cf4457da99770f1cb0db4ed601c387c759eb56d"
+    },
+    {
+      "path": "earnedCueProbe.json",
+      "bytes": 28511,
+      "sha256": "a9f1cde6fe13c3abb31c6b4ed3087d50925c54842787a90dfe36a2a9ab7b4716"
+    },
+    {
+      "path": "earnedJourneySafety.json",
+      "bytes": 763,
+      "sha256": "7593e9bda92faca93b78a2533b0c12203f96e00d22f42ec7860e433fe0bfe1f3"
+    },
+    {
+      "path": "guildFoundedEarned.json",
+      "bytes": 2042,
+      "sha256": "ff34aa459952f7c74fac15328580c8f547e16bb9c87418ec60b904ea2b69bf14"
+    },
+    {
+      "path": "hallSentinelTrace.json",
+      "bytes": 53814,
+      "sha256": "10f2e5bed32a6149f26f3e866421e819f726b4b2acfb215a51e850d10fd965f7"
+    },
+    {
+      "path": "journeyState1.json",
+      "bytes": 826,
+      "sha256": "42a23154d0e36e16d5422a0ff2031eb40590383609c0cb2cbe817a26866bf92e"
+    },
+    {
+      "path": "keeperAttempt1.json",
+      "bytes": 720,
+      "sha256": "81dd972ad03150ca3e60350da59eb97467546e5601e9ae87a7b1721640cde759"
+    },
+    {
+      "path": "keeperAttempt2Trace.json",
+      "bytes": 43121,
+      "sha256": "5325e1f39f173725e8aeddfc4f6b4512ff95a7e0a1752207a22bf7dac583fe57"
+    },
+    {
+      "path": "nextTrialBasic.json",
+      "bytes": 799,
+      "sha256": "a8266fab70af855651e8578bbd9aeb7e7c8f8dd551833267911bac79e70f4a5a"
+    },
+    {
+      "path": "oct20nextSources.json",
+      "bytes": 46754,
+      "sha256": "472d84cd3e8a640329e1ba1c7f38f01795a9b803203e51c4d1aba7330ef91f7c"
+    },
+    {
+      "path": "previewWarrior.json",
+      "bytes": 776,
+      "sha256": "d77928224e72bf25652d896b9fdcfafc8a431ed09286c0e009a2d3e708e572ca"
+    },
+    {
+      "path": "previewsOther.json",
+      "bytes": 3342,
+      "sha256": "cf25c899bdb777a2765c3f3d2bad0f9c64643a367a4828619143832fa86e677a"
+    },
+    {
+      "path": "source-checksums.json",
+      "bytes": 43197,
+      "sha256": "758586c218e9e8ede0c8b8167d31b66fd2a03c050b7ee82833333929417e497a"
+    },
+    {
+      "path": "warriorTrialRetryTrace.json",
+      "bytes": 115597,
+      "sha256": "932871974c848dbae8b8a657f6acc46e72da40f507fab2806fdd01f5b936d178"
+    },
+    {
+      "path": "warriorTrialTrace.json",
+      "bytes": 113067,
+      "sha256": "bd301d40e83109c49c23a4d9e5d99b9c269447a5dcd10bf254ccb1830f94bb32"
+    }
+  ]
+}

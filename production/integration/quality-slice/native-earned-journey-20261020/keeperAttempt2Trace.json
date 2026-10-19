@@ -1,0 +1,1504 @@
+[
+  {
+    "attrs": {
+      "TrialStatus": "Active",
+      "OwnerUserId": 11732987790,
+      "ReturnLabel": "Leave trial",
+      "PlayerHealth": 48,
+      "AbilityLabel": "Power Strike",
+      "DisplayHealth": "HP 48/48 · Crossroads Keeper 240/240",
+      "BasicLabel": "Basic Attack",
+      "NextBasicAt": 0,
+      "EnemyHealth": 240,
+      "NextAbilityAt": 0,
+      "NoviceTrialArena": true,
+      "DisplayTitle": "Warrior · Ready",
+      "DisplayGoals": "Defeat the opponent 0/1",
+      "ClassId": "Warrior",
+      "DisplayHint": "Use F/Q or the buttons. Dodge orange warnings."
+    },
+    "warning": {
+      "x": -4500,
+      "alpha": 1,
+      "z": 650
+    },
+    "time": 1792436932.798859,
+    "p": {
+      "y": 27.998023986816406,
+      "x": -4500,
+      "z": 654
+    }
+  },
+  {
+    "attrs": {
+      "PlayerHealth": 48,
+      "AbilityLabel": "Power Strike",
+      "DisplayHealth": "HP 48/48 · Crossroads Keeper 198/240",
+      "ActionAt": 1792436933.008477,
+      "DisplayHint": "Use F/Q or the buttons. Dodge orange warnings.",
+      "OwnerUserId": 11732987790,
+      "ReturnLabel": "Leave trial",
+      "ActionEffect": "Basic",
+      "DisplayGoals": "Defeat the opponent 0/1",
+      "NextBasicAt": 1792436934.1083784,
+      "ActionTargetPosition": null,
+      "EnemyHealth": 198,
+      "TrialStatus": "Active",
+      "NextAbilityAt": 1792436938.9081933,
+      "NoviceTrialArena": true,
+      "DisplayTitle": "Warrior · Training",
+      "ActionOriginPosition": null,
+      "ClassId": "Warrior",
+      "BasicLabel": "Basic Attack"
+    },
+    "warning": {
+      "x": -4500,
+      "alpha": 1,
+      "z": 650
+    },
+    "time": 1792436933.365224,
+    "p": {
+      "y": 27.998023986816406,
+      "x": -4500,
+      "z": 654
+    }
+  },
+  {
+    "attrs": {
+      "PlayerHealth": 48,
+      "AbilityLabel": "Power Strike",
+      "DisplayHealth": "HP 48/48 · Crossroads Keeper 198/240",
+      "ActionAt": 1792436933.008477,
+      "DisplayHint": "Use F/Q or the buttons. Dodge orange warnings.",
+      "OwnerUserId": 11732987790,
+      "ReturnLabel": "Leave trial",
+      "ActionEffect": "Basic",
+      "DisplayGoals": "Defeat the opponent 0/1",
+      "NextBasicAt": 1792436934.108379,
+      "ActionTargetPosition": null,
+      "EnemyHealth": 198,
+      "TrialStatus": "Active",
+      "NextAbilityAt": 1792436938.9081933,
+      "NoviceTrialArena": true,
+      "DisplayTitle": "Warrior · Training",
+      "ActionOriginPosition": null,
+      "ClassId": "Warrior",
+      "BasicLabel": "Basic Attack"
+    },
+    "warning": {
+      "x": -4500,
+      "alpha": 1,
+      "z": 650
+    },
+    "time": 1792436933.666816,
+    "p": {
+      "y": 27.998023986816406,
+      "x": -4500,
+      "z": 654
+    }
+  },
+  {
+    "attrs": {
+      "PlayerHealth": 48,
+      "AbilityLabel": "Power Strike",
+      "DisplayHealth": "HP 48/48 · Crossroads Keeper 198/240",
+      "ActionAt": 1792436933.008477,
+      "DisplayHint": "Use F/Q or the buttons. Dodge orange warnings.",
+      "OwnerUserId": 11732987790,
+      "ReturnLabel": "Leave trial",
+      "ActionEffect": "Basic",
+      "DisplayGoals": "Defeat the opponent 0/1",
+      "NextBasicAt": 1792436934.108379,
+      "ActionTargetPosition": null,
+      "EnemyHealth": 198,
+      "TrialStatus": "Active",
+      "NextAbilityAt": 1792436938.908193,
+      "NoviceTrialArena": true,
+      "DisplayTitle": "Warrior · Training",
+      "ActionOriginPosition": null,
+      "ClassId": "Warrior",
+      "BasicLabel": "Basic Attack"
+    },
+    "warning": {
+      "x": -4500,
+      "alpha": 1,
+      "z": 650
+    },
+    "time": 1792436933.967029,
+    "p": {
+      "y": 27.998023986816406,
+      "x": -4500,
+      "z": 654
+    }
+  },
+  {
+    "attrs": {
+      "PlayerHealth": 48,
+      "AbilityLabel": "Power Strike",
+      "DisplayHealth": "HP 48/48 · Crossroads Keeper 198/240",
+      "ActionAt": 1792436933.008477,
+      "DisplayHint": "Use F/Q or the buttons. Dodge orange warnings.",
+      "OwnerUserId": 11732987790,
+      "ReturnLabel": "Leave trial",
+      "ActionEffect": "Basic",
+      "DisplayGoals": "Defeat the opponent 0/1",
+      "NextBasicAt": 0,
+      "ActionTargetPosition": null,
+      "EnemyHealth": 198,
+      "TrialStatus": "Active",
+      "NextAbilityAt": 1792436938.9081933,
+      "NoviceTrialArena": true,
+      "DisplayTitle": "Warrior · Training",
+      "ActionOriginPosition": null,
+      "ClassId": "Warrior",
+      "BasicLabel": "Basic Attack"
+    },
+    "warning": {
+      "x": -4500,
+      "alpha": 1,
+      "z": 650
+    },
+    "time": 1792436934.265413,
+    "p": {
+      "y": 27.998023986816406,
+      "x": -4500,
+      "z": 654
+    }
+  },
+  {
+    "attrs": {
+      "PlayerHealth": 48,
+      "AbilityLabel": "Power Strike",
+      "DisplayHealth": "HP 48/48 · Crossroads Keeper 184/240",
+      "ActionAt": 1792436934.35792,
+      "DisplayHint": "Use F/Q or the buttons. Dodge orange warnings.",
+      "OwnerUserId": 11732987790,
+      "ReturnLabel": "Leave trial",
+      "ActionEffect": "Basic",
+      "DisplayGoals": "Defeat the opponent 0/1",
+      "NextBasicAt": 1792436935.4578288,
+      "ActionTargetPosition": null,
+      "EnemyHealth": 184,
+      "TrialStatus": "Active",
+      "NextAbilityAt": 1792436938.9081933,
+      "NoviceTrialArena": true,
+      "DisplayTitle": "Warrior · Training",
+      "ActionOriginPosition": null,
+      "ClassId": "Warrior",
+      "BasicLabel": "Basic Attack"
+    },
+    "warning": {
+      "x": -4500,
+      "alpha": 1,
+      "z": 650
+    },
+    "time": 1792436934.715943,
+    "p": {
+      "y": 27.998023986816406,
+      "x": -4500,
+      "z": 654
+    }
+  },
+  {
+    "attrs": {
+      "PlayerHealth": 48,
+      "AbilityLabel": "Power Strike",
+      "DisplayHealth": "HP 48/48 · Crossroads Keeper 184/240",
+      "ActionAt": 1792436934.35792,
+      "DisplayHint": "Use F/Q or the buttons. Dodge orange warnings.",
+      "ActionTargetPosition": null,
+      "OwnerUserId": 11732987790,
+      "ReturnLabel": "Leave trial",
+      "ActionEffect": "Basic",
+      "DisplayGoals": "Defeat the opponent 0/1",
+      "NextBasicAt": 1792436935.4578297,
+      "EnemyHealth": 184,
+      "WarningToken": 1713.5567188999994,
+      "TrialStatus": "Active",
+      "NextAbilityAt": 1792436938.9081929,
+      "NoviceTrialArena": true,
+      "DisplayTitle": "Warrior · Training",
+      "ActionOriginPosition": null,
+      "ClassId": "Warrior",
+      "BasicLabel": "Basic Attack"
+    },
+    "warning": {
+      "x": -4500,
+      "alpha": 0.3499999940395355,
+      "z": 654
+    },
+    "time": 1792436935.032743,
+    "p": {
+      "y": 27.998023986816406,
+      "x": -4500,
+      "z": 654
+    }
+  },
+  {
+    "attrs": {
+      "PlayerHealth": 48,
+      "AbilityLabel": "Power Strike",
+      "DisplayHealth": "HP 48/48 · Crossroads Keeper 184/240",
+      "ActionAt": 1792436934.35792,
+      "DisplayHint": "Use F/Q or the buttons. Dodge orange warnings.",
+      "ActionTargetPosition": null,
+      "OwnerUserId": 11732987790,
+      "ReturnLabel": "Leave trial",
+      "ActionEffect": "Basic",
+      "DisplayGoals": "Defeat the opponent 0/1",
+      "NextBasicAt": 0,
+      "EnemyHealth": 184,
+      "WarningToken": 1713.5567188999994,
+      "TrialStatus": "Active",
+      "NextAbilityAt": 1792436938.9081924,
+      "NoviceTrialArena": true,
+      "DisplayTitle": "Warrior · Training",
+      "ActionOriginPosition": null,
+      "ClassId": "Warrior",
+      "BasicLabel": "Basic Attack"
+    },
+    "warning": {
+      "x": -4500,
+      "alpha": 0.3499999940395355,
+      "z": 654
+    },
+    "time": 1792436935.732335,
+    "p": {
+      "y": 27.998023986816406,
+      "x": -4500,
+      "z": 646.7725830078125
+    }
+  },
+  {
+    "attrs": {
+      "PlayerHealth": 48,
+      "AbilityLabel": "Power Strike",
+      "DisplayHealth": "HP 48/48 · Crossroads Keeper 170/240",
+      "ActionAt": 1792436935.841387,
+      "DisplayHint": "Use F/Q or the buttons. Dodge orange warnings.",
+      "OwnerUserId": 11732987790,
+      "ReturnLabel": "Leave trial",
+      "ActionEffect": "Basic",
+      "DisplayGoals": "Defeat the opponent 0/1",
+      "NextBasicAt": 1792436936.94128,
+      "ActionTargetPosition": null,
+      "EnemyHealth": 170,
+      "TrialStatus": "Active",
+      "NextAbilityAt": 1792436938.9081938,
+      "NoviceTrialArena": true,
+      "DisplayTitle": "Warrior · Training",
+      "ActionOriginPosition": null,
+      "ClassId": "Warrior",
+      "BasicLabel": "Basic Attack"
+    },
+    "warning": {
+      "x": -4500,
+      "alpha": 1,
+      "z": 654
+    },
+    "time": 1792436936.232819,
+    "p": {
+      "y": 27.998023986816406,
+      "x": -4500,
+      "z": 646.7725830078125
+    }
+  },
+  {
+    "attrs": {
+      "PlayerHealth": 48,
+      "AbilityLabel": "Power Strike",
+      "DisplayHealth": "HP 48/48 · Crossroads Keeper 170/240",
+      "ActionAt": 1792436935.841387,
+      "DisplayHint": "Use F/Q or the buttons. Dodge orange warnings.",
+      "OwnerUserId": 11732987790,
+      "ReturnLabel": "Leave trial",
+      "ActionEffect": "Basic",
+      "DisplayGoals": "Defeat the opponent 0/1",
+      "NextBasicAt": 1792436936.9412804,
+      "ActionTargetPosition": null,
+      "EnemyHealth": 170,
+      "TrialStatus": "Active",
+      "NextAbilityAt": 1792436938.9081945,
+      "NoviceTrialArena": true,
+      "DisplayTitle": "Warrior · Training",
+      "ActionOriginPosition": null,
+      "ClassId": "Warrior",
+      "BasicLabel": "Basic Attack"
+    },
+    "warning": {
+      "x": -4500,
+      "alpha": 1,
+      "z": 654
+    },
+    "time": 1792436936.547923,
+    "p": {
+      "y": 27.998023986816406,
+      "x": -4500,
+      "z": 646.7725830078125
+    }
+  },
+  {
+    "attrs": {
+      "PlayerHealth": 48,
+      "AbilityLabel": "Power Strike",
+      "DisplayHealth": "HP 48/48 · Crossroads Keeper 170/240",
+      "ActionAt": 1792436935.841387,
+      "DisplayHint": "Use F/Q or the buttons. Dodge orange warnings.",
+      "OwnerUserId": 11732987790,
+      "ReturnLabel": "Leave trial",
+      "ActionEffect": "Basic",
+      "DisplayGoals": "Defeat the opponent 0/1",
+      "NextBasicAt": 1792436936.9412806,
+      "ActionTargetPosition": null,
+      "EnemyHealth": 170,
+      "TrialStatus": "Active",
+      "NextAbilityAt": 1792436938.9081936,
+      "NoviceTrialArena": true,
+      "DisplayTitle": "Warrior · Training",
+      "ActionOriginPosition": null,
+      "ClassId": "Warrior",
+      "BasicLabel": "Basic Attack"
+    },
+    "warning": {
+      "x": -4500,
+      "alpha": 1,
+      "z": 654
+    },
+    "time": 1792436936.865329,
+    "p": {
+      "y": 27.998023986816406,
+      "x": -4500,
+      "z": 646.7725830078125
+    }
+  },
+  {
+    "attrs": {
+      "PlayerHealth": 48,
+      "AbilityLabel": "Power Strike",
+      "DisplayHealth": "HP 48/48 · Crossroads Keeper 170/240",
+      "ActionAt": 1792436935.841387,
+      "DisplayHint": "Use F/Q or the buttons. Dodge orange warnings.",
+      "OwnerUserId": 11732987790,
+      "ReturnLabel": "Leave trial",
+      "ActionEffect": "Basic",
+      "DisplayGoals": "Defeat the opponent 0/1",
+      "NextBasicAt": 0,
+      "ActionTargetPosition": null,
+      "EnemyHealth": 170,
+      "TrialStatus": "Active",
+      "NextAbilityAt": 1792436938.9081929,
+      "NoviceTrialArena": true,
+      "DisplayTitle": "Warrior · Training",
+      "ActionOriginPosition": null,
+      "ClassId": "Warrior",
+      "BasicLabel": "Basic Attack"
+    },
+    "warning": {
+      "x": -4500,
+      "alpha": 1,
+      "z": 654
+    },
+    "time": 1792436937.16501,
+    "p": {
+      "y": 27.998023986816406,
+      "x": -4500,
+      "z": 646.7725830078125
+    }
+  },
+  {
+    "attrs": {
+      "PlayerHealth": 48,
+      "AbilityLabel": "Power Strike",
+      "DisplayHealth": "HP 48/48 · Crossroads Keeper 156/240",
+      "ActionAt": 1792436937.258559,
+      "DisplayHint": "Use F/Q or the buttons. Dodge orange warnings.",
+      "OwnerUserId": 11732987790,
+      "ReturnLabel": "Leave trial",
+      "ActionEffect": "Basic",
+      "DisplayGoals": "Defeat the opponent 0/1",
+      "NextBasicAt": 1792436938.3584576,
+      "ActionTargetPosition": null,
+      "EnemyHealth": 156,
+      "TrialStatus": "Active",
+      "NextAbilityAt": 1792436938.9081933,
+      "NoviceTrialArena": true,
+      "DisplayTitle": "Warrior · Training",
+      "ActionOriginPosition": null,
+      "ClassId": "Warrior",
+      "BasicLabel": "Basic Attack"
+    },
+    "warning": {
+      "x": -4500,
+      "alpha": 1,
+      "z": 654
+    },
+    "time": 1792436937.632353,
+    "p": {
+      "y": 27.998023986816406,
+      "x": -4500,
+      "z": 646.7725830078125
+    }
+  },
+  {
+    "attrs": {
+      "PlayerHealth": 48,
+      "AbilityLabel": "Power Strike",
+      "DisplayHealth": "HP 48/48 · Crossroads Keeper 156/240",
+      "ActionAt": 1792436937.258559,
+      "DisplayHint": "Use F/Q or the buttons. Dodge orange warnings.",
+      "OwnerUserId": 11732987790,
+      "ReturnLabel": "Leave trial",
+      "ActionEffect": "Basic",
+      "DisplayGoals": "Defeat the opponent 0/1",
+      "NextBasicAt": 1792436938.3584576,
+      "ActionTargetPosition": null,
+      "EnemyHealth": 156,
+      "TrialStatus": "Active",
+      "NextAbilityAt": 1792436938.9081936,
+      "NoviceTrialArena": true,
+      "DisplayTitle": "Warrior · Training",
+      "ActionOriginPosition": null,
+      "ClassId": "Warrior",
+      "BasicLabel": "Basic Attack"
+    },
+    "warning": {
+      "x": -4500,
+      "alpha": 1,
+      "z": 654
+    },
+    "time": 1792436937.932347,
+    "p": {
+      "y": 27.998023986816406,
+      "x": -4500,
+      "z": 646.7725830078125
+    }
+  },
+  {
+    "attrs": {
+      "PlayerHealth": 48,
+      "AbilityLabel": "Power Strike",
+      "DisplayHealth": "HP 48/48 · Crossroads Keeper 156/240",
+      "ActionAt": 1792436937.258559,
+      "DisplayHint": "Use F/Q or the buttons. Dodge orange warnings.",
+      "OwnerUserId": 11732987790,
+      "ReturnLabel": "Leave trial",
+      "ActionEffect": "Basic",
+      "DisplayGoals": "Defeat the opponent 0/1",
+      "NextBasicAt": 1792436938.3584573,
+      "ActionTargetPosition": null,
+      "EnemyHealth": 156,
+      "TrialStatus": "Active",
+      "NextAbilityAt": 1792436938.9081929,
+      "NoviceTrialArena": true,
+      "DisplayTitle": "Warrior · Training",
+      "ActionOriginPosition": null,
+      "ClassId": "Warrior",
+      "BasicLabel": "Basic Attack"
+    },
+    "warning": {
+      "x": -4500,
+      "alpha": 1,
+      "z": 654
+    },
+    "time": 1792436938.231388,
+    "p": {
+      "y": 27.998023986816406,
+      "x": -4500,
+      "z": 646.7725830078125
+    }
+  },
+  {
+    "attrs": {
+      "PlayerHealth": 48,
+      "AbilityLabel": "Power Strike",
+      "DisplayHealth": "HP 48/48 · Crossroads Keeper 156/240",
+      "ActionAt": 1792436937.258559,
+      "DisplayHint": "Use F/Q or the buttons. Dodge orange warnings.",
+      "OwnerUserId": 11732987790,
+      "ReturnLabel": "Leave trial",
+      "ActionEffect": "Basic",
+      "DisplayGoals": "Defeat the opponent 0/1",
+      "NextBasicAt": 0,
+      "ActionTargetPosition": null,
+      "EnemyHealth": 156,
+      "TrialStatus": "Active",
+      "NextAbilityAt": 1792436938.9081926,
+      "NoviceTrialArena": true,
+      "DisplayTitle": "Warrior · Training",
+      "ActionOriginPosition": null,
+      "ClassId": "Warrior",
+      "BasicLabel": "Basic Attack"
+    },
+    "warning": {
+      "x": -4500,
+      "alpha": 1,
+      "z": 654
+    },
+    "time": 1792436938.531294,
+    "p": {
+      "y": 27.998023986816406,
+      "x": -4500,
+      "z": 646.7725830078125
+    }
+  },
+  {
+    "attrs": {
+      "PlayerHealth": 48,
+      "AbilityLabel": "Power Strike",
+      "DisplayHealth": "HP 48/48 · Crossroads Keeper 142/240",
+      "ActionAt": 1792436938.624312,
+      "DisplayHint": "Use F/Q or the buttons. Dodge orange warnings.",
+      "OwnerUserId": 11732987790,
+      "ReturnLabel": "Leave trial",
+      "ActionEffect": "Basic",
+      "DisplayGoals": "Defeat the opponent 0/1",
+      "NextBasicAt": 1792436939.7242494,
+      "ActionTargetPosition": null,
+      "EnemyHealth": 142,
+      "TrialStatus": "Active",
+      "NextAbilityAt": 0,
+      "NoviceTrialArena": true,
+      "DisplayTitle": "Warrior · Training",
+      "ActionOriginPosition": null,
+      "ClassId": "Warrior",
+      "BasicLabel": "Basic Attack"
+    },
+    "warning": {
+      "x": -4500,
+      "alpha": 1,
+      "z": 654
+    },
+    "time": 1792436938.999508,
+    "p": {
+      "y": 27.998023986816406,
+      "x": -4500,
+      "z": 646.7725830078125
+    }
+  },
+  {
+    "attrs": {
+      "PlayerHealth": 48,
+      "AbilityLabel": "Power Strike",
+      "DisplayHealth": "HP 48/48 · Crossroads Keeper 114/240",
+      "ActionAt": 1792436939.091548,
+      "DisplayHint": "Use F/Q or the buttons. Dodge orange warnings.",
+      "ActionTargetPosition": null,
+      "OwnerUserId": 11732987790,
+      "ReturnLabel": "Leave trial",
+      "ActionEffect": "Physical",
+      "DisplayGoals": "Defeat the opponent 0/1",
+      "NextBasicAt": 1792436939.7242498,
+      "EnemyHealth": 114,
+      "ActionAbilityId": "power_strike",
+      "TrialStatus": "Active",
+      "NextAbilityAt": 1792436945.091448,
+      "NoviceTrialArena": true,
+      "DisplayTitle": "Warrior · Training",
+      "ActionOriginPosition": null,
+      "ClassId": "Warrior",
+      "BasicLabel": "Basic Attack"
+    },
+    "warning": {
+      "x": -4500,
+      "alpha": 1,
+      "z": 654
+    },
+    "time": 1792436939.483485,
+    "p": {
+      "y": 27.998023986816406,
+      "x": -4500,
+      "z": 646.7725830078125
+    }
+  },
+  {
+    "attrs": {
+      "PlayerHealth": 48,
+      "AbilityLabel": "Power Strike",
+      "DisplayHealth": "HP 48/48 · Crossroads Keeper 114/240",
+      "ActionAt": 1792436939.091548,
+      "DisplayHint": "Use F/Q or the buttons. Dodge orange warnings.",
+      "ActionTargetPosition": null,
+      "OwnerUserId": 11732987790,
+      "ReturnLabel": "Leave trial",
+      "ActionEffect": "Physical",
+      "DisplayGoals": "Defeat the opponent 0/1",
+      "NextBasicAt": 0,
+      "EnemyHealth": 114,
+      "ActionAbilityId": "power_strike",
+      "TrialStatus": "Active",
+      "NextAbilityAt": 1792436945.0914474,
+      "NoviceTrialArena": true,
+      "DisplayTitle": "Warrior · Training",
+      "ActionOriginPosition": null,
+      "ClassId": "Warrior",
+      "BasicLabel": "Basic Attack"
+    },
+    "warning": {
+      "x": -4500,
+      "alpha": 1,
+      "z": 654
+    },
+    "time": 1792436939.780859,
+    "p": {
+      "y": 27.998023986816406,
+      "x": -4500,
+      "z": 646.7725830078125
+    }
+  },
+  {
+    "attrs": {
+      "PlayerHealth": 48,
+      "AbilityLabel": "Power Strike",
+      "DisplayHealth": "HP 48/48 · Crossroads Keeper 100/240",
+      "ActionAt": 1792436939.874967,
+      "DisplayHint": "Use F/Q or the buttons. Dodge orange warnings.",
+      "ActionTargetPosition": null,
+      "OwnerUserId": 11732987790,
+      "ReturnLabel": "Leave trial",
+      "ActionEffect": "Basic",
+      "DisplayGoals": "Defeat the opponent 0/1",
+      "NextBasicAt": 1792436940.9748807,
+      "EnemyHealth": 100,
+      "WarningToken": 1718.5734250000023,
+      "TrialStatus": "Active",
+      "NextAbilityAt": 1792436945.091448,
+      "NoviceTrialArena": true,
+      "DisplayTitle": "Warrior · Training",
+      "ActionOriginPosition": null,
+      "ClassId": "Warrior",
+      "BasicLabel": "Basic Attack"
+    },
+    "warning": {
+      "x": -4500,
+      "alpha": 0.3499999940395355,
+      "z": 646.7725830078125
+    },
+    "time": 1792436940.249042,
+    "p": {
+      "y": 27.998023986816406,
+      "x": -4500,
+      "z": 646.7725830078125
+    }
+  },
+  {
+    "attrs": {
+      "PlayerHealth": 48,
+      "AbilityLabel": "Power Strike",
+      "DisplayHealth": "HP 48/48 · Crossroads Keeper 100/240",
+      "ActionAt": 1792436939.874967,
+      "DisplayHint": "Use F/Q or the buttons. Dodge orange warnings.",
+      "ActionTargetPosition": null,
+      "OwnerUserId": 11732987790,
+      "ReturnLabel": "Leave trial",
+      "ActionEffect": "Basic",
+      "DisplayGoals": "Defeat the opponent 0/1",
+      "NextBasicAt": 1792436940.9748807,
+      "EnemyHealth": 100,
+      "WarningToken": 1718.5734250000023,
+      "TrialStatus": "Active",
+      "NextAbilityAt": 1792436945.0914478,
+      "NoviceTrialArena": true,
+      "DisplayTitle": "Warrior · Training",
+      "ActionOriginPosition": null,
+      "ClassId": "Warrior",
+      "BasicLabel": "Basic Attack"
+    },
+    "warning": {
+      "x": -4500,
+      "alpha": 0.3499999940395355,
+      "z": 646.7725830078125
+    },
+    "time": 1792436940.848112,
+    "p": {
+      "y": 27.998023986816406,
+      "x": -4500,
+      "z": 653.2398071289062
+    }
+  },
+  {
+    "attrs": {
+      "PlayerHealth": 48,
+      "AbilityLabel": "Power Strike",
+      "DisplayHealth": "HP 48/48 · Crossroads Keeper 100/240",
+      "ActionAt": 1792436939.874967,
+      "DisplayHint": "Use F/Q or the buttons. Dodge orange warnings.",
+      "ActionTargetPosition": null,
+      "OwnerUserId": 11732987790,
+      "ReturnLabel": "Leave trial",
+      "ActionEffect": "Basic",
+      "DisplayGoals": "Defeat the opponent 0/1",
+      "NextBasicAt": 0,
+      "EnemyHealth": 100,
+      "WarningToken": 1718.5734250000023,
+      "TrialStatus": "Active",
+      "NextAbilityAt": 1792436945.0914474,
+      "NoviceTrialArena": true,
+      "DisplayTitle": "Warrior · Training",
+      "ActionOriginPosition": null,
+      "ClassId": "Warrior",
+      "BasicLabel": "Basic Attack"
+    },
+    "warning": {
+      "x": -4500,
+      "alpha": 0.3499999940395355,
+      "z": 646.7725830078125
+    },
+    "time": 1792436941.148408,
+    "p": {
+      "y": 27.998023986816406,
+      "x": -4500,
+      "z": 653.2398071289062
+    }
+  },
+  {
+    "attrs": {
+      "PlayerHealth": 48,
+      "AbilityLabel": "Power Strike",
+      "DisplayHealth": "HP 48/48 · Crossroads Keeper 86/240",
+      "ActionAt": 1792436941.242297,
+      "DisplayHint": "Use F/Q or the buttons. Dodge orange warnings.",
+      "OwnerUserId": 11732987790,
+      "ReturnLabel": "Leave trial",
+      "ActionEffect": "Basic",
+      "DisplayGoals": "Defeat the opponent 0/1",
+      "NextBasicAt": 1792436942.3421948,
+      "ActionTargetPosition": null,
+      "EnemyHealth": 86,
+      "TrialStatus": "Active",
+      "NextAbilityAt": 1792436945.091448,
+      "NoviceTrialArena": true,
+      "DisplayTitle": "Warrior · Training",
+      "ActionOriginPosition": null,
+      "ClassId": "Warrior",
+      "BasicLabel": "Basic Attack"
+    },
+    "warning": {
+      "x": -4500,
+      "alpha": 1,
+      "z": 646.7725830078125
+    },
+    "time": 1792436941.632627,
+    "p": {
+      "y": 27.998023986816406,
+      "x": -4500,
+      "z": 653.2398071289062
+    }
+  },
+  {
+    "attrs": {
+      "PlayerHealth": 48,
+      "AbilityLabel": "Power Strike",
+      "DisplayHealth": "HP 48/48 · Crossroads Keeper 86/240",
+      "ActionAt": 1792436941.242297,
+      "DisplayHint": "Use F/Q or the buttons. Dodge orange warnings.",
+      "OwnerUserId": 11732987790,
+      "ReturnLabel": "Leave trial",
+      "ActionEffect": "Basic",
+      "DisplayGoals": "Defeat the opponent 0/1",
+      "NextBasicAt": 1792436942.3421948,
+      "ActionTargetPosition": null,
+      "EnemyHealth": 86,
+      "TrialStatus": "Active",
+      "NextAbilityAt": 1792436945.0914483,
+      "NoviceTrialArena": true,
+      "DisplayTitle": "Warrior · Training",
+      "ActionOriginPosition": null,
+      "ClassId": "Warrior",
+      "BasicLabel": "Basic Attack"
+    },
+    "warning": {
+      "x": -4500,
+      "alpha": 1,
+      "z": 646.7725830078125
+    },
+    "time": 1792436941.929553,
+    "p": {
+      "y": 27.998023986816406,
+      "x": -4500,
+      "z": 653.2398071289062
+    }
+  },
+  {
+    "attrs": {
+      "PlayerHealth": 48,
+      "AbilityLabel": "Power Strike",
+      "DisplayHealth": "HP 48/48 · Crossroads Keeper 86/240",
+      "ActionAt": 1792436941.242297,
+      "DisplayHint": "Use F/Q or the buttons. Dodge orange warnings.",
+      "OwnerUserId": 11732987790,
+      "ReturnLabel": "Leave trial",
+      "ActionEffect": "Basic",
+      "DisplayGoals": "Defeat the opponent 0/1",
+      "NextBasicAt": 1792436942.342195,
+      "ActionTargetPosition": null,
+      "EnemyHealth": 86,
+      "TrialStatus": "Active",
+      "NextAbilityAt": 1792436945.0914483,
+      "NoviceTrialArena": true,
+      "DisplayTitle": "Warrior · Training",
+      "ActionOriginPosition": null,
+      "ClassId": "Warrior",
+      "BasicLabel": "Basic Attack"
+    },
+    "warning": {
+      "x": -4500,
+      "alpha": 1,
+      "z": 646.7725830078125
+    },
+    "time": 1792436942.24681,
+    "p": {
+      "y": 27.998023986816406,
+      "x": -4500,
+      "z": 653.2398071289062
+    }
+  },
+  {
+    "attrs": {
+      "PlayerHealth": 48,
+      "AbilityLabel": "Power Strike",
+      "DisplayHealth": "HP 48/48 · Crossroads Keeper 86/240",
+      "ActionAt": 1792436941.242297,
+      "DisplayHint": "Use F/Q or the buttons. Dodge orange warnings.",
+      "OwnerUserId": 11732987790,
+      "ReturnLabel": "Leave trial",
+      "ActionEffect": "Basic",
+      "DisplayGoals": "Defeat the opponent 0/1",
+      "NextBasicAt": 0,
+      "ActionTargetPosition": null,
+      "EnemyHealth": 86,
+      "TrialStatus": "Active",
+      "NextAbilityAt": 1792436945.0914474,
+      "NoviceTrialArena": true,
+      "DisplayTitle": "Warrior · Training",
+      "ActionOriginPosition": null,
+      "ClassId": "Warrior",
+      "BasicLabel": "Basic Attack"
+    },
+    "warning": {
+      "x": -4500,
+      "alpha": 1,
+      "z": 646.7725830078125
+    },
+    "time": 1792436942.546946,
+    "p": {
+      "y": 27.998023986816406,
+      "x": -4500,
+      "z": 653.2398071289062
+    }
+  },
+  {
+    "attrs": {
+      "PlayerHealth": 48,
+      "AbilityLabel": "Power Strike",
+      "DisplayHealth": "HP 48/48 · Crossroads Keeper 72/240",
+      "ActionAt": 1792436942.641838,
+      "DisplayHint": "Use F/Q or the buttons. Dodge orange warnings.",
+      "OwnerUserId": 11732987790,
+      "ReturnLabel": "Leave trial",
+      "ActionEffect": "Basic",
+      "DisplayGoals": "Defeat the opponent 0/1",
+      "NextBasicAt": 1792436943.7417529,
+      "ActionTargetPosition": null,
+      "EnemyHealth": 72,
+      "TrialStatus": "Active",
+      "NextAbilityAt": 1792436945.0914478,
+      "NoviceTrialArena": true,
+      "DisplayTitle": "Warrior · Training",
+      "ActionOriginPosition": null,
+      "ClassId": "Warrior",
+      "BasicLabel": "Basic Attack"
+    },
+    "warning": {
+      "x": -4500,
+      "alpha": 1,
+      "z": 646.7725830078125
+    },
+    "time": 1792436943.013171,
+    "p": {
+      "y": 27.998023986816406,
+      "x": -4500,
+      "z": 653.2398071289062
+    }
+  },
+  {
+    "attrs": {
+      "PlayerHealth": 48,
+      "AbilityLabel": "Power Strike",
+      "DisplayHealth": "HP 48/48 · Crossroads Keeper 72/240",
+      "ActionAt": 1792436942.641838,
+      "DisplayHint": "Use F/Q or the buttons. Dodge orange warnings.",
+      "OwnerUserId": 11732987790,
+      "ReturnLabel": "Leave trial",
+      "ActionEffect": "Basic",
+      "DisplayGoals": "Defeat the opponent 0/1",
+      "NextBasicAt": 1792436943.7417536,
+      "ActionTargetPosition": null,
+      "EnemyHealth": 72,
+      "TrialStatus": "Active",
+      "NextAbilityAt": 1792436945.091448,
+      "NoviceTrialArena": true,
+      "DisplayTitle": "Warrior · Training",
+      "ActionOriginPosition": null,
+      "ClassId": "Warrior",
+      "BasicLabel": "Basic Attack"
+    },
+    "warning": {
+      "x": -4500,
+      "alpha": 1,
+      "z": 646.7725830078125
+    },
+    "time": 1792436943.312871,
+    "p": {
+      "y": 27.998023986816406,
+      "x": -4500,
+      "z": 653.2398071289062
+    }
+  },
+  {
+    "attrs": {
+      "PlayerHealth": 48,
+      "AbilityLabel": "Power Strike",
+      "DisplayHealth": "HP 48/48 · Crossroads Keeper 72/240",
+      "ActionAt": 1792436942.641838,
+      "DisplayHint": "Use F/Q or the buttons. Dodge orange warnings.",
+      "OwnerUserId": 11732987790,
+      "ReturnLabel": "Leave trial",
+      "ActionEffect": "Basic",
+      "DisplayGoals": "Defeat the opponent 0/1",
+      "NextBasicAt": 1792436943.741753,
+      "ActionTargetPosition": null,
+      "EnemyHealth": 72,
+      "TrialStatus": "Active",
+      "NextAbilityAt": 1792436945.0914485,
+      "NoviceTrialArena": true,
+      "DisplayTitle": "Warrior · Training",
+      "ActionOriginPosition": null,
+      "ClassId": "Warrior",
+      "BasicLabel": "Basic Attack"
+    },
+    "warning": {
+      "x": -4500,
+      "alpha": 1,
+      "z": 646.7725830078125
+    },
+    "time": 1792436943.629523,
+    "p": {
+      "y": 27.998023986816406,
+      "x": -4500,
+      "z": 653.2398071289062
+    }
+  },
+  {
+    "attrs": {
+      "PlayerHealth": 48,
+      "AbilityLabel": "Power Strike",
+      "DisplayHealth": "HP 48/48 · Crossroads Keeper 72/240",
+      "ActionAt": 1792436942.641838,
+      "DisplayHint": "Use F/Q or the buttons. Dodge orange warnings.",
+      "OwnerUserId": 11732987790,
+      "ReturnLabel": "Leave trial",
+      "ActionEffect": "Basic",
+      "DisplayGoals": "Defeat the opponent 0/1",
+      "NextBasicAt": 0,
+      "ActionTargetPosition": null,
+      "EnemyHealth": 72,
+      "TrialStatus": "Active",
+      "NextAbilityAt": 1792436945.0914478,
+      "NoviceTrialArena": true,
+      "DisplayTitle": "Warrior · Training",
+      "ActionOriginPosition": null,
+      "ClassId": "Warrior",
+      "BasicLabel": "Basic Attack"
+    },
+    "warning": {
+      "x": -4500,
+      "alpha": 1,
+      "z": 646.7725830078125
+    },
+    "time": 1792436943.929969,
+    "p": {
+      "y": 27.998023986816406,
+      "x": -4500,
+      "z": 653.2398071289062
+    }
+  },
+  {
+    "attrs": {
+      "PlayerHealth": 48,
+      "AbilityLabel": "Power Strike",
+      "DisplayHealth": "HP 48/48 · Crossroads Keeper 58/240",
+      "ActionAt": 1792436944.025277,
+      "DisplayHint": "Use F/Q or the buttons. Dodge orange warnings.",
+      "OwnerUserId": 11732987790,
+      "ReturnLabel": "Leave trial",
+      "ActionEffect": "Basic",
+      "DisplayGoals": "Defeat the opponent 0/1",
+      "NextBasicAt": 1792436945.1251915,
+      "ActionTargetPosition": null,
+      "EnemyHealth": 58,
+      "TrialStatus": "Active",
+      "NextAbilityAt": 1792436945.091448,
+      "NoviceTrialArena": true,
+      "DisplayTitle": "Warrior · Training",
+      "ActionOriginPosition": null,
+      "ClassId": "Warrior",
+      "BasicLabel": "Basic Attack"
+    },
+    "warning": {
+      "x": -4500,
+      "alpha": 1,
+      "z": 646.7725830078125
+    },
+    "time": 1792436944.416918,
+    "p": {
+      "y": 27.998023986816406,
+      "x": -4500,
+      "z": 653.2398071289062
+    }
+  },
+  {
+    "attrs": {
+      "PlayerHealth": 48,
+      "AbilityLabel": "Power Strike",
+      "DisplayHealth": "HP 48/48 · Crossroads Keeper 58/240",
+      "ActionAt": 1792436944.025277,
+      "DisplayHint": "Use F/Q or the buttons. Dodge orange warnings.",
+      "OwnerUserId": 11732987790,
+      "ReturnLabel": "Leave trial",
+      "ActionEffect": "Basic",
+      "DisplayGoals": "Defeat the opponent 0/1",
+      "NextBasicAt": 1792436945.1251915,
+      "ActionTargetPosition": null,
+      "EnemyHealth": 58,
+      "TrialStatus": "Active",
+      "NextAbilityAt": 1792436945.0914476,
+      "NoviceTrialArena": true,
+      "DisplayTitle": "Warrior · Training",
+      "ActionOriginPosition": null,
+      "ClassId": "Warrior",
+      "BasicLabel": "Basic Attack"
+    },
+    "warning": {
+      "x": -4500,
+      "alpha": 1,
+      "z": 646.7725830078125
+    },
+    "time": 1792436944.730399,
+    "p": {
+      "y": 27.998023986816406,
+      "x": -4500,
+      "z": 653.2398071289062
+    }
+  },
+  {
+    "attrs": {
+      "PlayerHealth": 48,
+      "AbilityLabel": "Power Strike",
+      "DisplayHealth": "HP 48/48 · Crossroads Keeper 58/240",
+      "ActionAt": 1792436944.025277,
+      "DisplayHint": "Use F/Q or the buttons. Dodge orange warnings.",
+      "OwnerUserId": 11732987790,
+      "ReturnLabel": "Leave trial",
+      "ActionEffect": "Basic",
+      "DisplayGoals": "Defeat the opponent 0/1",
+      "NextBasicAt": 1792436945.125192,
+      "ActionTargetPosition": null,
+      "EnemyHealth": 58,
+      "TrialStatus": "Active",
+      "NextAbilityAt": 1792436945.0914474,
+      "NoviceTrialArena": true,
+      "DisplayTitle": "Warrior · Training",
+      "ActionOriginPosition": null,
+      "ClassId": "Warrior",
+      "BasicLabel": "Basic Attack"
+    },
+    "warning": {
+      "x": -4500,
+      "alpha": 1,
+      "z": 646.7725830078125
+    },
+    "time": 1792436945.046804,
+    "p": {
+      "y": 27.998023986816406,
+      "x": -4500,
+      "z": 653.2398071289062
+    }
+  },
+  {
+    "attrs": {
+      "PlayerHealth": 48,
+      "AbilityLabel": "Power Strike",
+      "DisplayHealth": "HP 48/48 · Crossroads Keeper 58/240",
+      "ActionAt": 1792436944.025277,
+      "DisplayHint": "Use F/Q or the buttons. Dodge orange warnings.",
+      "ActionTargetPosition": null,
+      "OwnerUserId": 11732987790,
+      "ReturnLabel": "Leave trial",
+      "ActionEffect": "Basic",
+      "DisplayGoals": "Defeat the opponent 0/1",
+      "NextBasicAt": 0,
+      "EnemyHealth": 58,
+      "WarningToken": 1723.7073357000008,
+      "TrialStatus": "Active",
+      "NextAbilityAt": 0,
+      "NoviceTrialArena": true,
+      "DisplayTitle": "Warrior · Training",
+      "ActionOriginPosition": null,
+      "ClassId": "Warrior",
+      "BasicLabel": "Basic Attack"
+    },
+    "warning": {
+      "x": -4500,
+      "alpha": 0.3499999940395355,
+      "z": 653.2398071289062
+    },
+    "time": 1792436945.362657,
+    "p": {
+      "y": 27.998023986816406,
+      "x": -4500,
+      "z": 653.2398071289062
+    }
+  },
+  {
+    "attrs": {
+      "PlayerHealth": 48,
+      "AbilityLabel": "Power Strike",
+      "DisplayHealth": "HP 48/48 · Crossroads Keeper 58/240",
+      "ActionAt": 1792436944.025277,
+      "DisplayHint": "Use F/Q or the buttons. Dodge orange warnings.",
+      "ActionTargetPosition": null,
+      "OwnerUserId": 11732987790,
+      "ReturnLabel": "Leave trial",
+      "ActionEffect": "Basic",
+      "DisplayGoals": "Defeat the opponent 0/1",
+      "NextBasicAt": 0,
+      "EnemyHealth": 58,
+      "WarningToken": 1723.7073357000008,
+      "TrialStatus": "Active",
+      "NextAbilityAt": 0,
+      "NoviceTrialArena": true,
+      "DisplayTitle": "Warrior · Training",
+      "ActionOriginPosition": null,
+      "ClassId": "Warrior",
+      "BasicLabel": "Basic Attack"
+    },
+    "warning": {
+      "x": -4500,
+      "alpha": 0.3499999940395355,
+      "z": 653.2398071289062
+    },
+    "time": 1792436945.948218,
+    "p": {
+      "y": 27.998023986816406,
+      "x": -4500.00048828125,
+      "z": 646.7733764648438
+    }
+  },
+  {
+    "attrs": {
+      "PlayerHealth": 48,
+      "AbilityLabel": "Power Strike",
+      "DisplayHealth": "HP 48/48 · Crossroads Keeper 16/240",
+      "ActionAt": 1792436946.158927,
+      "DisplayHint": "Use F/Q or the buttons. Dodge orange warnings.",
+      "OwnerUserId": 11732987790,
+      "ReturnLabel": "Leave trial",
+      "ActionEffect": "Basic",
+      "DisplayGoals": "Defeat the opponent 0/1",
+      "NextBasicAt": 1792436947.2588196,
+      "ActionTargetPosition": null,
+      "EnemyHealth": 16,
+      "TrialStatus": "Active",
+      "NextAbilityAt": 1792436952.042201,
+      "NoviceTrialArena": true,
+      "DisplayTitle": "Warrior · Training",
+      "ActionOriginPosition": null,
+      "ClassId": "Warrior",
+      "BasicLabel": "Basic Attack"
+    },
+    "warning": {
+      "x": -4500,
+      "alpha": 1,
+      "z": 653.2398071289062
+    },
+    "time": 1792436946.530006,
+    "p": {
+      "y": 27.998023986816406,
+      "x": -4500.00048828125,
+      "z": 646.7733764648438
+    }
+  },
+  {
+    "attrs": {
+      "PlayerHealth": 48,
+      "AbilityLabel": "Power Strike",
+      "DisplayHealth": "HP 48/48 · Crossroads Keeper 16/240",
+      "ActionAt": 1792436946.158927,
+      "DisplayHint": "Use F/Q or the buttons. Dodge orange warnings.",
+      "OwnerUserId": 11732987790,
+      "ReturnLabel": "Leave trial",
+      "ActionEffect": "Basic",
+      "DisplayGoals": "Defeat the opponent 0/1",
+      "NextBasicAt": 1792436947.2588193,
+      "ActionTargetPosition": null,
+      "EnemyHealth": 16,
+      "TrialStatus": "Active",
+      "NextAbilityAt": 1792436952.0422008,
+      "NoviceTrialArena": true,
+      "DisplayTitle": "Warrior · Training",
+      "ActionOriginPosition": null,
+      "ClassId": "Warrior",
+      "BasicLabel": "Basic Attack"
+    },
+    "warning": {
+      "x": -4500,
+      "alpha": 1,
+      "z": 653.2398071289062
+    },
+    "time": 1792436946.847346,
+    "p": {
+      "y": 27.998023986816406,
+      "x": -4500.00048828125,
+      "z": 646.7733764648438
+    }
+  },
+  {
+    "attrs": {
+      "PlayerHealth": 48,
+      "AbilityLabel": "Power Strike",
+      "DisplayHealth": "HP 48/48 · Crossroads Keeper 16/240",
+      "ActionAt": 1792436946.158927,
+      "DisplayHint": "Use F/Q or the buttons. Dodge orange warnings.",
+      "OwnerUserId": 11732987790,
+      "ReturnLabel": "Leave trial",
+      "ActionEffect": "Basic",
+      "DisplayGoals": "Defeat the opponent 0/1",
+      "NextBasicAt": 1792436947.2588198,
+      "ActionTargetPosition": null,
+      "EnemyHealth": 16,
+      "TrialStatus": "Active",
+      "NextAbilityAt": 1792436952.0422018,
+      "NoviceTrialArena": true,
+      "DisplayTitle": "Warrior · Training",
+      "ActionOriginPosition": null,
+      "ClassId": "Warrior",
+      "BasicLabel": "Basic Attack"
+    },
+    "warning": {
+      "x": -4500,
+      "alpha": 1,
+      "z": 653.2398071289062
+    },
+    "time": 1792436947.145201,
+    "p": {
+      "y": 27.998023986816406,
+      "x": -4500.00048828125,
+      "z": 646.7733764648438
+    }
+  },
+  {
+    "attrs": {
+      "PlayerHealth": 48,
+      "AbilityLabel": "Power Strike",
+      "DisplayHealth": "HP 48/48 · Crossroads Keeper 16/240",
+      "ActionAt": 1792436946.158927,
+      "DisplayHint": "Use F/Q or the buttons. Dodge orange warnings.",
+      "OwnerUserId": 11732987790,
+      "ReturnLabel": "Leave trial",
+      "ActionEffect": "Basic",
+      "DisplayGoals": "Defeat the opponent 0/1",
+      "NextBasicAt": 0,
+      "ActionTargetPosition": null,
+      "EnemyHealth": 16,
+      "TrialStatus": "Active",
+      "NextAbilityAt": 1792436952.0422013,
+      "NoviceTrialArena": true,
+      "DisplayTitle": "Warrior · Training",
+      "ActionOriginPosition": null,
+      "ClassId": "Warrior",
+      "BasicLabel": "Basic Attack"
+    },
+    "warning": {
+      "x": -4500,
+      "alpha": 1,
+      "z": 653.2398071289062
+    },
+    "time": 1792436947.44475,
+    "p": {
+      "y": 27.998023986816406,
+      "x": -4500.00048828125,
+      "z": 646.7733764648438
+    }
+  },
+  {
+    "attrs": {
+      "PlayerHealth": 48,
+      "AbilityLabel": "Power Strike",
+      "DisplayHealth": "HP 48/48 · Crossroads Keeper 2/240",
+      "ActionAt": 1792436947.541625,
+      "DisplayHint": "Use F/Q or the buttons. Dodge orange warnings.",
+      "OwnerUserId": 11732987790,
+      "ReturnLabel": "Leave trial",
+      "ActionEffect": "Basic",
+      "DisplayGoals": "Defeat the opponent 0/1",
+      "NextBasicAt": 1792436948.6415133,
+      "ActionTargetPosition": null,
+      "EnemyHealth": 2,
+      "TrialStatus": "Active",
+      "NextAbilityAt": 1792436952.0422013,
+      "NoviceTrialArena": true,
+      "DisplayTitle": "Warrior · Training",
+      "ActionOriginPosition": null,
+      "ClassId": "Warrior",
+      "BasicLabel": "Basic Attack"
+    },
+    "warning": {
+      "x": -4500,
+      "alpha": 1,
+      "z": 653.2398071289062
+    },
+    "time": 1792436947.912626,
+    "p": {
+      "y": 27.998023986816406,
+      "x": -4500.00048828125,
+      "z": 646.7733764648438
+    }
+  },
+  {
+    "attrs": {
+      "PlayerHealth": 48,
+      "AbilityLabel": "Power Strike",
+      "DisplayHealth": "HP 48/48 · Crossroads Keeper 2/240",
+      "ActionAt": 1792436947.541625,
+      "DisplayHint": "Use F/Q or the buttons. Dodge orange warnings.",
+      "OwnerUserId": 11732987790,
+      "ReturnLabel": "Leave trial",
+      "ActionEffect": "Basic",
+      "DisplayGoals": "Defeat the opponent 0/1",
+      "NextBasicAt": 1792436948.6415133,
+      "ActionTargetPosition": null,
+      "EnemyHealth": 2,
+      "TrialStatus": "Active",
+      "NextAbilityAt": 1792436952.042201,
+      "NoviceTrialArena": true,
+      "DisplayTitle": "Warrior · Training",
+      "ActionOriginPosition": null,
+      "ClassId": "Warrior",
+      "BasicLabel": "Basic Attack"
+    },
+    "warning": {
+      "x": -4500,
+      "alpha": 1,
+      "z": 653.2398071289062
+    },
+    "time": 1792436948.211379,
+    "p": {
+      "y": 27.998023986816406,
+      "x": -4500.00048828125,
+      "z": 646.7733764648438
+    }
+  },
+  {
+    "attrs": {
+      "PlayerHealth": 48,
+      "AbilityLabel": "Power Strike",
+      "DisplayHealth": "HP 48/48 · Crossroads Keeper 2/240",
+      "ActionAt": 1792436947.541625,
+      "DisplayHint": "Use F/Q or the buttons. Dodge orange warnings.",
+      "OwnerUserId": 11732987790,
+      "ReturnLabel": "Leave trial",
+      "ActionEffect": "Basic",
+      "DisplayGoals": "Defeat the opponent 0/1",
+      "NextBasicAt": 1792436948.6415126,
+      "ActionTargetPosition": null,
+      "EnemyHealth": 2,
+      "TrialStatus": "Active",
+      "NextAbilityAt": 1792436952.0422015,
+      "NoviceTrialArena": true,
+      "DisplayTitle": "Warrior · Training",
+      "ActionOriginPosition": null,
+      "ClassId": "Warrior",
+      "BasicLabel": "Basic Attack"
+    },
+    "warning": {
+      "x": -4500,
+      "alpha": 1,
+      "z": 653.2398071289062
+    },
+    "time": 1792436948.511913,
+    "p": {
+      "y": 27.998023986816406,
+      "x": -4500.00048828125,
+      "z": 646.7733764648438
+    }
+  },
+  {
+    "attrs": {
+      "PlayerHealth": 48,
+      "AbilityLabel": "Power Strike",
+      "DisplayHealth": "HP 48/48 · Crossroads Keeper 2/240",
+      "ActionAt": 1792436947.541625,
+      "DisplayHint": "Use F/Q or the buttons. Dodge orange warnings.",
+      "OwnerUserId": 11732987790,
+      "ReturnLabel": "Leave trial",
+      "ActionEffect": "Basic",
+      "DisplayGoals": "Defeat the opponent 0/1",
+      "NextBasicAt": 0,
+      "ActionTargetPosition": null,
+      "EnemyHealth": 2,
+      "TrialStatus": "Active",
+      "NextAbilityAt": 1792436952.042201,
+      "NoviceTrialArena": true,
+      "DisplayTitle": "Warrior · Training",
+      "ActionOriginPosition": null,
+      "ClassId": "Warrior",
+      "BasicLabel": "Basic Attack"
+    },
+    "warning": {
+      "x": -4500,
+      "alpha": 1,
+      "z": 653.2398071289062
+    },
+    "time": 1792436948.811313,
+    "p": {
+      "y": 27.998023986816406,
+      "x": -4500.00048828125,
+      "z": 646.7733764648438
+    }
+  },
+  {
+    "attrs": {
+      "PlayerHealth": 48,
+      "AbilityLabel": "Power Strike",
+      "DisplayHealth": "HP 48/48 · Crossroads Keeper 0/240",
+      "ActionAt": 1792436948.909282,
+      "DisplayHint": "Leave training to continue your journey.",
+      "ActionTargetPosition": null,
+      "OwnerUserId": 11732987790,
+      "ReturnLabel": "Leave trial",
+      "ActionEffect": "Basic",
+      "DisplayGoals": "Defeat the opponent 1/1",
+      "NextBasicAt": 1792436950.0091996,
+      "EnemyHealth": 0,
+      "ReceiptDelivered": true,
+      "TrialStatus": "Won",
+      "NextAbilityAt": 1792436952.0422015,
+      "NoviceTrialArena": true,
+      "DisplayTitle": "Warrior · Lesson complete",
+      "ActionOriginPosition": null,
+      "ClassId": "Warrior",
+      "BasicLabel": "Basic Attack"
+    },
+    "warning": {
+      "x": -4500,
+      "alpha": 1,
+      "z": 653.2398071289062
+    },
+    "time": 1792436949.278009,
+    "p": {
+      "y": 27.998023986816406,
+      "x": -4500.00048828125,
+      "z": 646.7733764648438
+    }
+  }
+]

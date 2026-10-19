@@ -1,0 +1,9 @@
+{
+  "content": [
+    {
+      "type": "text",
+      "text": "{\"revision\":17,\"gold\":0,\"party\":{\"adventurerIds\":[]},\"hall\":0,\"novice\":{\"branch\":\"rescue\",\"claimed\":4,\"version\":1,\"objectives\":[]},\"character\":{\"equipmentSlots\":[],\"definitionVersion\":1,\"appearanceEnabled\":false,\"raceId\":\"Human\",\"tier\":1,\"appearance\":{\"hairColorId\":\"HAIR_DARK_BROWN\",\"bodyPresetId\":\"HUMAN_STANDARD\",\"raceFeatures\":[],\"raceId\":\"HUMAN\",\"outfitSlots\":{\"INNER_TOP\":\"CLO_TUNIC_TRAVELER_01\",\"INNER_BOTTOM\":\"CLO_TROUSERS_TRAVELER_01\"},\"appearanceVersion\":1,\"hairAssetId\":\"ACC_HAIR_HUMAN_01\",\"skinPaletteId\":\"SKIN_HUMAN_03\",\"headPresetId\":\"CHR_HEAD_HUMAN_01\"},\"level\":9,\"appearanceRevision\":0,\"xp\":400}}"
+    }
+  ],
+  "isError": false
+}
