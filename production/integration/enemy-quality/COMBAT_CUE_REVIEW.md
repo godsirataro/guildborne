@@ -18,7 +18,7 @@ Exact working-file SHA256 at review (raw bytes, before Git LF normalization):
 
 | File | SHA256 |
 | --- | --- |
-| src/client/Controllers/CombatController.luau | ae4f36256f6bbc01c3468329e390bdab556d9bc7135fef8cbef16eb5a9abfb83 |
+| src/client/Controllers/CombatController.luau | 162bf26107520c392fcc5a9c9b7292b0b0523e65ade1eb3cd1cc710f4dedf4ab |
 | src/client/Controllers/AudioController.luau | 51333f0929e9b61d72c051f0e6405d33861870120d566cacbffc607da1338226 |
 | src/shared/Presentation/CombatCueEvents.luau | c9522d042d26da68cba664e2dbc0f619ad49ba4bbcfa4789cd25b051ee002e49 |
 
@@ -26,8 +26,10 @@ Exact working-file SHA256 at review (raw bytes, before Git LF normalization):
 
 Six pure selector groups passed locally. Mapped Roblox type analysis of the runtime modules and compilation of the six runtime/test/probe files passed. Immutable committed-source check receipts are composed separately under ignored build/agentic/evidence; check their actual outcomes rather than treating this report as a run receipt. The independent-review command verifies hashes of the files that received the above semantic review; the command itself is not a semantic reviewer. Overall task stays REVIEW pending a different coordinator reviewer.
 
-`combat_cue_probe.luau` contains 16 native client cases and is compile-only until executed by the exclusive Studio owner. Follow the installation/Memory guards in its header: exact isolated client tree and Shared, disabled normal bootstraps before Play, unsaved PlaceId/GameId zero, no existing world/client singleton. Stop Play after capture to dispose module-scope MenuRouter listeners.
+`combat_cue_probe.luau` contains 17 native client cases and is compile-only until executed by the exclusive Studio owner. Follow the installation/Memory guards in its header: exact isolated client tree and Shared, disabled normal bootstraps before Play, unsaved PlaceId/GameId zero, no existing world/client singleton. Stop Play after capture to dispose module-scope MenuRouter listeners.
 
 The probe observes actual SkillEffects instances and delegates real AudioController calls, but its warning-stop recorder is synthetic because unbound audio returns nil. It does not establish audible playback, real Sound.Ended/budget cleanup, real server damage, earned progression, five-companion load, physical-device performance or human art acceptance. Regional impact VFX, priority audio mixing, final class cue identity and imported audio remain separate follow-up work. No server authority, balance, progression, SkillEffects, EnemyAnimator or HUD layout redesign is included.
 
 Additional baseline: tests/run.luau passed 944 tests and Rojo build passed. Full src/tests analysis exposed an invalid-input test table inference issue, fixed with an explicit {any} annotation. Existing tests/gui fragments still report UnknownGlobal (Services/UI/NoviceConfig) and ImplicitReturn diagnostics; full baseline therefore is not PASS. Those fragments are outside this seven-file task. Focused recorded analysis now includes both new test files as well as runtime modules.
+
+Coordinator source review additionally found raw ActionAt/FeedbackAt arithmetic in the retained HUD. Both display checks now use Cue.recent, rejecting malformed, nonfinite, future and expired values without arithmetic errors. Independent agent rereview of this final controller change: PASS. This is a timestamp guard, not a layout change; valid regional warning countdown is preserved.

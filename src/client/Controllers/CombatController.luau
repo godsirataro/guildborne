@@ -165,8 +165,8 @@ return function()
 				end
 				e.lastHealth=hp
 				local state=tostring(m:GetAttribute("CombatState") or "Idle")
-				local feedback=if workspace:GetServerTimeNow()-(m:GetAttribute("FeedbackAt") or 0)<.8 then tostring(m:GetAttribute("Feedback") or "") else ""
-				local action=if workspace:GetServerTimeNow()-(m:GetAttribute("ActionAt") or 0)<.8 then T(tostring(m:GetAttribute("Action") or "")) else T(if state=="Windup" then tostring(m:GetAttribute("TelegraphName") or state) else state)
+				local feedback=if Cue.recent(m:GetAttribute("FeedbackAt"),now,.8) then tostring(m:GetAttribute("Feedback") or "") else ""
+				local action=if Cue.recent(m:GetAttribute("ActionAt"),now,.8) then T(tostring(m:GetAttribute("Action") or "")) else T(if state=="Windup" then tostring(m:GetAttribute("TelegraphName") or state) else state)
 				if state=="Windup" and Cue.finite(regionalUntil) then action..=string.format(" · %.1fs",math.max(0,regionalUntil-workspace:GetServerTimeNow())) end
 				local phase=m:GetAttribute("BossPhase")
 				e.label.Text=T(if hero then m.Name elseif m:GetAttribute("GuildbornePlayer") then "Your character" else tostring(m:GetAttribute("EnemyTitle") or "Goblin Scout")).."  "..hp.."/"..max.."\n"..(if phase then T("Phase").." "..tostring(phase).." · " else "")..action.." "..feedback
