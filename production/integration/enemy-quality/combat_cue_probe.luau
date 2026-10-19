@@ -33,15 +33,43 @@ local audio=require(tree.Controllers.AudioController)
 local config=require(RS.Shared.Config.AudioConfig)
 assert(next(config.AssetIds)==nil,"Probe requires unchanged unbound AudioConfig IDs")
 local original={Play=audio.Play,PlayFor=audio.PlayFor,PlayOwned=audio.PlayOwned}
-local camera=assert(workspace.CurrentCamera)
-local oldType,oldFrame,oldFocus=camera.CameraType,camera.CFrame,camera.Focus
-local center=camera.CFrame.Position+Vector3.new(0,10000,0)
+local oldCamera=assert(workspace.CurrentCamera)
+local center=oldCamera.CFrame.Position+Vector3.new(0,10000,0)
 assert(#workspace:GetPartBoundsInRadius(center,40)==0,"Empty isolated space required")
+local camera=Instance.new("Camera");camera.Name="CombatCueProbeCamera"
 local actors,requests,stops,effects={},{},{},{}
 local controller,connection,createdRemotes,createdState=nil,nil,nil,nil
 local cases={}
+local probeConnections,waits,cameraEvents={},{},{}
+local interference=false;local inconclusive=false;local firstStamp=nil
 local function now() return workspace:GetServerTimeNow() end
-local function settle() task.wait(.14) end
+local function watch(signal,callback)
+    local c=signal:Connect(callback);table.insert(probeConnections,c);return c
+end
+local function cameraFault(reason)
+    interference=true
+    if #cameraEvents<64 then table.insert(cameraEvents,{reason=reason,time=now()}) end
+end
+local function inspectCamera()
+    if workspace.CurrentCamera~=camera then cameraFault("CurrentCamera identity") end
+    if camera.CameraType~=Enum.CameraType.Scriptable then cameraFault("CameraType") end
+    if not camera:IsDescendantOf(workspace) then cameraFault("Camera removed") end
+    for _,m in ipairs(actors) do
+        if m:IsDescendantOf(workspace) and m.PrimaryPart and (camera.CFrame.Position-m.PrimaryPart.Position).Magnitude>40 then cameraFault("Actor distance: "..m.Name) end
+    end
+end
+local function requireCondition(condition,reason)
+    if not condition then inconclusive=true;error("INCONCLUSIVE: "..reason,2) end
+end
+local function measuredWait(seconds,label,maximum)
+    local started=now();local clockStarted=os.clock();task.wait(seconds)
+    local elapsed=now()-started
+    table.insert(waits,{label=label,requested=seconds,serverElapsed=elapsed,localElapsed=os.clock()-clockStarted})
+    inspectCamera()
+    requireCondition(not interference,"Camera interference; see cameraEvents")
+    requireCondition(elapsed>=seconds-.001 and elapsed<=maximum,"Scheduler wait outside bound: "..label)
+end
+local function settle() measuredWait(.14,"settle",.25) end
 local function count(key)
     local n=0;for _,v in ipairs(requests) do if not key or v.key==key then n+=1 end end;return n
 end
@@ -51,6 +79,7 @@ local function actor(name)
     m:SetAttribute("GuildborneEnemy",true);m:SetAttribute("OwnerUserId",player.UserId)
     m:SetAttribute("CombatHealth",100);m:SetAttribute("CombatMaxHealth",100);m:SetAttribute("CombatState","Idle")
     m:SetAttribute("ClassId","Archer");m:SetAttribute("ActionEffect","Basic")
+    watch(p:GetPropertyChangedSignal("CFrame"),function() cameraFault("Fixture root moved: "..m.Name) end)
     table.insert(actors,m);m.Parent=workspace;return m
 end
 local function record(method,key,owner)
@@ -61,6 +90,7 @@ local function warning(m,seconds)
     local stamp=now();m:SetAttribute("TelegraphName","Antler Cleave")
     m:SetAttribute("RegionalTelegraphAt",stamp);m:SetAttribute("RegionalTelegraphUntil",stamp+(seconds or 2))
     m:SetAttribute("CombatState","Windup");settle()
+    requireCondition(now()>=stamp and now()<stamp+(seconds or 2),"Warning expired before admission assertion")
     assert(#requests==before+1 and requests[#requests].method=="PlayOwned" and requests[#requests].owner==m,"Warning request absent")
     return #requests
 end
@@ -70,6 +100,14 @@ local function stopped(index,label)
 end
 local ok,err=xpcall(function()
     camera.CameraType=Enum.CameraType.Scriptable;camera.CFrame=CFrame.lookAt(center+Vector3.new(0,7,16),center);camera.Focus=CFrame.new(center)
+    camera.Parent=workspace;workspace.CurrentCamera=camera
+    -- Latch every property notification, including changes restored before the
+    -- next poll. Never recapture or move a camera to hide interference.
+    watch(workspace:GetPropertyChangedSignal("CurrentCamera"),function() cameraFault("CurrentCamera changed signal") end)
+    watch(camera:GetPropertyChangedSignal("CameraType"),function() cameraFault("CameraType changed signal") end)
+    watch(camera:GetPropertyChangedSignal("CFrame"),function() cameraFault("Camera CFrame changed signal") end)
+    watch(camera.AncestryChanged,function() cameraFault("Camera ancestry changed signal") end)
+    watch(Run.Heartbeat,inspectCamera);watch(Run.PreRender,inspectCamera)
     audio.Start()
     local initial=actor("CueFixture")
     assert(original.Play("enemy_warning",center)==false and original.PlayFor(initial,"enemy_warning",center)==false,"Boolean API changed/unexpected loaded sound")
@@ -89,11 +127,17 @@ local ok,err=xpcall(function()
     if not state then state=Instance.new("RemoteEvent");state.Name="State";state.Parent=remotes;createdState=state end
     assert(state:IsA("RemoteEvent"),"State must be a RemoteEvent; no event will be fired")
     connection=workspace.DescendantAdded:Connect(function(v) if v:IsA("BasePart") and (v.Name=="GuildborneSkillEffect" or v.Name=="GuildborneBossTelegraph") then table.insert(effects,v) end end)
-    controller=require(tree.Controllers.CombatController)();settle()
-    initial:SetAttribute("ActionAt",now());local before=count();settle()
-    assert(count()==before and #effects==0,"Missing target consumed/emitted action")
+    controller=require(tree.Controllers.CombatController)()
+    measuredWait(.5,"fixed-startup-stabilization",1.5) -- exactly once, before any action stamp
+    firstStamp=now();initial:SetAttribute("ActionAt",firstStamp);local before=count();settle()
+    requireCondition(now()-firstStamp>=0 and now()-firstStamp<.62-.25,"Insufficient original TTL for target-ready observation")
+    assert(count()==before,"Missing target emitted cue")
+    assert(#effects==0,"Missing target emitted VFX")
     initial:SetAttribute("ActionTargetPosition",center+Vector3.new(0,0,-5));settle()
-    assert(count()==before+1 and requests[#requests].key=="bow_release" and #effects>0,"Ready target did not admit same timestamp with actual VFX")
+    requireCondition(now()-firstStamp>=0 and now()-firstStamp<.62,"Original action TTL expired before target-ready assertion")
+    assert(count()==before+1,"Ready target cue count mismatch")
+    assert(requests[#requests].key=="bow_release","Ready target cue key mismatch")
+    assert(#effects>0,"Ready target produced no actual VFX")
     settle();assert(count()==before+1,"Duplicate action replayed")
     table.insert(cases,"pending-target-then-ready-actual-VFX-and-single-cue")
     initial:SetAttribute("ActionAt",now()+100);before=count();settle();assert(count()==before,"Future action admitted")
@@ -119,7 +163,7 @@ local ok,err=xpcall(function()
     assert(healthBar.Enabled and healthLabel.Text:find("97/100",1,true) and healthLabel.Text:find("Fixture recovery",1,true),"Valid HUD timestamps did not recover")
     table.insert(cases,"malformed-action-feedback-stamps-keep-HUD-live-and-recover")
     initial:SetAttribute("ActionTargetPosition",nil);initial:SetAttribute("ActionAt",now());before=count()
-    task.wait(.75);initial:SetAttribute("ActionTargetPosition",center+Vector3.new(0,0,-5));settle()
+    measuredWait(.75,"expire-pending-target",.95);initial:SetAttribute("ActionTargetPosition",center+Vector3.new(0,0,-5));settle()
     assert(count()==before,"Late target revived expired action")
     table.insert(cases,"target-readiness-does-not-renew-TTL")
     initial:SetAttribute("ActionTargetPosition",nil)
@@ -130,7 +174,7 @@ local ok,err=xpcall(function()
     -- the test cannot pass merely because the polling loop saw the nil value.
     local nilObserved=false
     local clearObserver
-    clearObserver=initial:GetAttributeChangedSignal("ActionAt"):Connect(function()
+    clearObserver=watch(initial:GetAttributeChangedSignal("ActionAt"),function()
         if initial:GetAttribute("ActionAt")==nil then
             nilObserved=true;clearObserver:Disconnect()
             initial:SetAttribute("ActionAt",cancelledStamp)
@@ -179,14 +223,51 @@ local ok,err=xpcall(function()
     settle();assert(count()==before,"Expired warning admitted")
     initial:SetAttribute("CombatState","Idle");settle()
     table.insert(cases,"future-expired-warning-rejected")
-    index=warning(initial,.35);task.wait(.5);stopped(index,"warning-expiry")
+    index=warning(initial,.35);measuredWait(.5,"warning-expiry",.7);stopped(index,"warning-expiry")
     initial:SetAttribute("CombatState","Idle");settle()
     index=warning(initial);initial.Parent=nil;settle();stopped(index,"warning-removal")
     local last=actor("DestroyFixture");settle();index=warning(last)
     controller.Destroy();controller=nil;settle();stopped(index,"warning-controller-destroy")
     assert(not gui:FindFirstChild("GuildborneCombatUI"),"Combat UI leaked after Destroy")
+    inspectCamera();requireCondition(not interference,"Camera interference before completion")
 end,debug.traceback)
+-- Capture BEFORE cleanup; serialization never dereferences arbitrary objects or
+-- forwards nonfinite numbers/Roblox datatypes to JSONEncode.
+local function safe(value)
+    local kind=typeof(value)
+    if kind=="number" then return if value==value and math.abs(value)<math.huge then value else tostring(value) end
+    if kind=="string" or kind=="boolean" then return value end
+    if kind=="nil" then return "nil" end
+    if kind=="Instance" then return value.Name end
+    if kind=="table" then local result={};for k,v in pairs(value) do result[k]=safe(v) end;return result end
+    return tostring(value)
+end
+if not ok then
+    local diagnosticOK,diagnosticError=pcall(function()
+        local actorRecords={}
+        for _,m in ipairs(actors) do
+            local root=m.PrimaryPart
+            table.insert(actorRecords,{name=m.Name,attributes=safe(m:GetAttributes()),inWorkspace=m:IsDescendantOf(workspace),
+                root=if root then {name=root.Name,position=tostring(root.Position),cameraDistance=(camera.CFrame.Position-root.Position).Magnitude,
+                    actualCameraDistance=if workspace.CurrentCamera then (workspace.CurrentCamera.CFrame.Position-root.Position).Magnitude else "nil"} else "nil",
+                targetReady=typeof(m:GetAttribute("ActionTargetPosition"))=="Vector3",hasPrimaryPart=root~=nil})
+        end
+        local requestRecords={}
+        for _,r in ipairs(requests) do table.insert(requestRecords,{method=r.method,key=r.key,owner=if r.owner then r.owner.Name else "nil",time=r.time}) end
+        print("CLIENT_CUE_PROBE_FAILURE",game:GetService("HttpService"):JSONEncode(safe({
+            status=if inconclusive or interference or tostring(err):lower():find("inconclusive",1,true) then "INCONCLUSIVE" else "FAIL",
+            error=tostring(err),requests=requestRecords,actors=actorRecords,originalStamp=firstStamp,
+            originalStampAge=if firstStamp then now()-firstStamp else "not-started",actionTTL=.62,waits=waits,
+            camera={ownedName=camera.Name,currentName=if workspace.CurrentCamera then workspace.CurrentCamera.Name else "nil",sameIdentity=workspace.CurrentCamera==camera,
+                type=camera.CameraType.Name,position=tostring(camera.CFrame.Position),distanceToCenter=(camera.CFrame.Position-center).Magnitude,
+                actualType=if workspace.CurrentCamera then workspace.CurrentCamera.CameraType.Name else "nil",
+                actualPosition=if workspace.CurrentCamera then tostring(workspace.CurrentCamera.CFrame.Position) else "nil",events=cameraEvents},
+            VFXCount=#effects,completedCases=cases,audibleAcceptance=false,serverCombatTested=false})))
+    end)
+    if not diagnosticOK then print("CLIENT_CUE_PROBE_DIAGNOSTIC_ERROR",tostring(diagnosticError),tostring(err)) end
+end
 -- Always restore methods before audio destruction, even after assertion failures.
+for _,c in ipairs(probeConnections) do c:Disconnect() end
 if controller then pcall(controller.Destroy) end
 local leftover=gui:FindFirstChild("GuildborneCombatUI");if leftover then leftover:Destroy() end
 audio.Play=original.Play;audio.PlayFor=original.PlayFor;audio.PlayOwned=original.PlayOwned
@@ -196,6 +277,6 @@ for _,m in ipairs(actors) do m:Destroy() end
 for _,v in ipairs(effects) do v:Destroy() end
 if createdState then createdState:Destroy() end
 if createdRemotes then createdRemotes:Destroy() end
-camera.CameraType=oldType;camera.CFrame=oldFrame;camera.Focus=oldFocus
+workspace.CurrentCamera=oldCamera;camera:Destroy()
 assert(ok,err)
 print("PASS_CLIENT_CUE_REQUEST_LIFECYCLE",game:GetService("HttpService"):JSONEncode({cases=cases,requests=#requests,observedVFX=#effects,audibleAcceptance=false,serverCombatTested=false,syntheticAttributes=true,syntheticStopRecorder=true,stopPlayRequired=true}))
