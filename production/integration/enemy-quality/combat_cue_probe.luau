@@ -33,10 +33,10 @@ local audio=require(tree.Controllers.AudioController)
 local config=require(RS.Shared.Config.AudioConfig)
 assert(next(config.AssetIds)==nil,"Probe requires unchanged unbound AudioConfig IDs")
 local original={Play=audio.Play,PlayFor=audio.PlayFor,PlayOwned=audio.PlayOwned}
-local oldCamera=assert(workspace.CurrentCamera)
-local center=oldCamera.CFrame.Position+Vector3.new(0,10000,0)
+local camera=assert(workspace.CurrentCamera)
+local oldType,oldFrame,oldFocus=camera.CameraType,camera.CFrame,camera.Focus
+local center=camera.CFrame.Position+Vector3.new(0,10000,0)
 assert(#workspace:GetPartBoundsInRadius(center,40)==0,"Empty isolated space required")
-local camera=Instance.new("Camera");camera.Name="CombatCueProbeCamera"
 local actors,requests,stops,effects={},{},{},{}
 local controller,connection,createdRemotes,createdState=nil,nil,nil,nil
 local cases={}
@@ -100,7 +100,8 @@ local function stopped(index,label)
 end
 local ok,err=xpcall(function()
     camera.CameraType=Enum.CameraType.Scriptable;camera.CFrame=CFrame.lookAt(center+Vector3.new(0,7,16),center);camera.Focus=CFrame.new(center)
-    camera.Parent=workspace;workspace.CurrentCamera=camera
+    -- Reuse the original camera: assigning CurrentCamera can destroy other
+    -- Cameras parented directly to Workspace. Never swap camera references.
     -- Latch every property notification, including changes restored before the
     -- next poll. Never recapture or move a camera to hide interference.
     watch(workspace:GetPropertyChangedSignal("CurrentCamera"),function() cameraFault("CurrentCamera changed signal") end)
@@ -277,6 +278,23 @@ for _,m in ipairs(actors) do m:Destroy() end
 for _,v in ipairs(effects) do v:Destroy() end
 if createdState then createdState:Destroy() end
 if createdRemotes then createdRemotes:Destroy() end
-workspace.CurrentCamera=oldCamera;camera:Destroy()
+-- Restore only properties we changed; never swap CurrentCamera or destroy a
+-- camera we do not own. Each restoration is attempted even if another fails.
+local cameraCleanupErrors={}
+for _,restore in ipairs({
+    function() camera.CameraType=oldType end,
+    function() camera.CFrame=oldFrame end,
+    function() camera.Focus=oldFocus end,
+}) do
+    local restored,restoreError=pcall(restore)
+    if not restored then table.insert(cameraCleanupErrors,tostring(restoreError)) end
+end
+if workspace.CurrentCamera~=camera or not camera:IsDescendantOf(workspace) then
+    table.insert(cameraCleanupErrors,"Original camera identity/ancestry changed externally; reference not reassigned")
+end
+if #cameraCleanupErrors>0 then
+    print("CLIENT_CUE_PROBE_CAMERA_CLEANUP_INCONCLUSIVE",game:GetService("HttpService"):JSONEncode(cameraCleanupErrors))
+    ok=false;err=tostring(err).."; INCONCLUSIVE: original camera restoration failed"
+end
 assert(ok,err)
 print("PASS_CLIENT_CUE_REQUEST_LIFECYCLE",game:GetService("HttpService"):JSONEncode({cases=cases,requests=#requests,observedVFX=#effects,audibleAcceptance=false,serverCombatTested=false,syntheticAttributes=true,syntheticStopRecorder=true,stopPlayRequired=true}))
