@@ -1,0 +1,413 @@
+{
+  "status": "PASS_OFFLINE_DOCKING_REGRESSION_NATIVE_RETEST_PENDING",
+  "candidateSha256": "85b0866cf5ed468ef323f52c5e33f825fcb89155d1a91c2753d593271ccdeb70",
+  "baselineGroundSha256": "4a2c026106c7cbb9cfaf532cbcaf059efef7ff1ca0731998b9a846f7dea510c2",
+  "historicalNativeReportSha256": "e0bbec467ba1543ceecc142ec740a2bfeeb8ba2fa0695409d5ee235e7d1f322a",
+  "reviewedSourceHashes": {
+    "src/shared/Config/WorldQuality.luau": "74e63b707167278c119eb69c4e7311bb9af7e716bc6ae5a4328b399127167c37",
+    "tests/world_quality.luau": "76d9e323cc645cf9c95f0fa0a0bc54bb974ec0663b012c4b9b84b78eefea5c79",
+    "src/server/Services/WorldQualitySlice.luau": "2120fee176b1f5b6bf1779539c9e0899a85d5efd468d38e104cdc270ab892653",
+    "src/server/Services/AdventureMapKit.luau": "978724afd99c499757601d56634ecf0b00ff21921fbec8b12a617c0fed1fe4c7",
+    "src/shared/Config/City.luau": "f78e3df184b45f430575425e1e294f00f94031014b2e5e682d0549890f47e985",
+    "production/world/quality-slice/ironveil-dock/studio_probe.luau": "e9417d43cf8806f486e0aafc91d95bf4de30d841c3589008a4bf5b35dc3fa7a3"
+  },
+  "nativeRecordedRegression": [
+    {
+      "along": 0,
+      "position": [
+        391.2699890136719,
+        2.0999999046325684,
+        1511.4296875
+      ],
+      "nativeHit": null
+    },
+    {
+      "along": -0.001,
+      "position": [
+        391.26898193359375,
+        2.0999999046325684,
+        1511.4298095703125
+      ],
+      "nativeHit": "Workspace.GuildborneWorld.GreenwoodIronveilCorridor.Road_096"
+    },
+    {
+      "along": 0.001,
+      "position": [
+        391.27099609375,
+        2.0999999046325684,
+        1511.4295654296875
+      ],
+      "nativeHit": null
+    }
+  ],
+  "physicalIsland": {
+    "x": [
+      380,
+      620
+    ],
+    "z": [
+      1290,
+      1510
+    ],
+    "topY": 2
+  },
+  "surfaceTolerance": 0,
+  "results": {
+    "float64": {
+      "old": {
+        "samples": 6734,
+        "unsupported": 267,
+        "firstFailures": [
+          {
+            "along": -5,
+            "offset": -12.0,
+            "position": [
+              386.35575963953005,
+              2.1,
+              1512.4787624464577
+            ],
+            "supported": false,
+            "island": false
+          },
+          {
+            "along": -2,
+            "offset": -12.0,
+            "position": [
+              389.33741084355086,
+              2.1,
+              1512.1474678682332
+            ],
+            "supported": false,
+            "island": false
+          },
+          {
+            "along": -0.1,
+            "offset": -12.0,
+            "position": [
+              391.22578993943074,
+              2.1,
+              1511.937647968691
+            ],
+            "supported": false,
+            "island": false
+          },
+          {
+            "along": -0.01,
+            "offset": -12.0,
+            "position": [
+              391.3152394755514,
+              2.1,
+              1511.9277091313443
+            ],
+            "supported": false,
+            "island": false
+          },
+          {
+            "along": -0.001,
+            "offset": -12.0,
+            "position": [
+              391.32418442916344,
+              2.1,
+              1511.9267152476095
+            ],
+            "supported": false,
+            "island": false
+          },
+          {
+            "along": 0,
+            "offset": -11.85,
+            "position": [
+              391.3086135839869,
+              2.1,
+              1511.7775222558823
+            ],
+            "supported": false,
+            "island": false
+          },
+          {
+            "along": 0,
+            "offset": -11.8,
+            "position": [
+              391.3030920076832,
+              2.1,
+              1511.7278280691487
+            ],
+            "supported": false,
+            "island": false
+          },
+          {
+            "along": 0,
+            "offset": -11.75,
+            "position": [
+              391.2975704313794,
+              2.1,
+              1511.678133882415
+            ],
+            "supported": false,
+            "island": false
+          }
+        ],
+        "allSamplesOnIsland": false,
+        "minimumIslandInteriorMargin": -2.478762446457722,
+        "bandCorners": [
+          [
+            386.35575963953005,
+            2.1,
+            1512.4787624464577
+          ],
+          [
+            383.7054030137338,
+            2.1,
+            1488.6255528142908
+          ],
+          [
+            401.2640156596343,
+            2.1,
+            1510.822289555335
+          ],
+          [
+            398.6136590338381,
+            2.1,
+            1486.969079923168
+          ]
+        ],
+        "continuousBandIslandContained": false,
+        "seamTips": [
+          [
+            391.3251783128981,
+            2.1,
+            1511.9266048160835
+          ],
+          [
+            388.6748216871019,
+            2.1,
+            1488.0733951839165
+          ]
+        ]
+      },
+      "new": {
+        "samples": 6734,
+        "unsupported": 0,
+        "firstFailures": [],
+        "allSamplesOnIsland": true,
+        "minimumIslandInteriorMargin": 2.3412779774873798,
+        "bandCorners": [
+          [
+            387.04081822850355,
+            2.1,
+            1507.6587220225126
+          ],
+          [
+            383.095242533175,
+            2.1,
+            1483.985267850541
+          ],
+          [
+            401.83672708598573,
+            2.1,
+            1505.1927372129321
+          ],
+          [
+            397.89115139065717,
+            2.1,
+            1481.5192830409605
+          ]
+        ],
+        "continuousBandIslandContained": true,
+        "seamTips": [
+          [
+            391.9727878476643,
+            2.1,
+            1506.8367270859858
+          ],
+          [
+            388.0272121523357,
+            2.1,
+            1483.1632729140142
+          ]
+        ]
+      }
+    },
+    "float32": {
+      "old": {
+        "samples": 6734,
+        "unsupported": 274,
+        "firstFailures": [
+          {
+            "along": -0.001,
+            "offset": -12.0,
+            "position": [
+              391.3241882324219,
+              2.0999999046325684,
+              1511.9267578125
+            ],
+            "supported": false,
+            "island": false
+          },
+          {
+            "along": 0,
+            "offset": -12.0,
+            "position": [
+              391.3251953125,
+              2.0999999046325684,
+              1511.9266357421875
+            ],
+            "supported": false,
+            "island": false
+          },
+          {
+            "along": 0,
+            "offset": -11.95,
+            "position": [
+              391.3196716308594,
+              2.0999999046325684,
+              1511.876953125
+            ],
+            "supported": false,
+            "island": false
+          },
+          {
+            "along": 0,
+            "offset": -11.9,
+            "position": [
+              391.31414794921875,
+              2.0999999046325684,
+              1511.8272705078125
+            ],
+            "supported": false,
+            "island": false
+          },
+          {
+            "along": 0,
+            "offset": -11.85,
+            "position": [
+              391.3086242675781,
+              2.0999999046325684,
+              1511.7774658203125
+            ],
+            "supported": false,
+            "island": false
+          },
+          {
+            "along": 0,
+            "offset": -11.8,
+            "position": [
+              391.3031005859375,
+              2.0999999046325684,
+              1511.727783203125
+            ],
+            "supported": false,
+            "island": false
+          },
+          {
+            "along": 0,
+            "offset": -11.75,
+            "position": [
+              391.2975769042969,
+              2.0999999046325684,
+              1511.6781005859375
+            ],
+            "supported": false,
+            "island": false
+          },
+          {
+            "along": 0,
+            "offset": -11.7,
+            "position": [
+              391.29205322265625,
+              2.0999999046325684,
+              1511.62841796875
+            ],
+            "supported": false,
+            "island": false
+          }
+        ],
+        "allSamplesOnIsland": false,
+        "minimumIslandInteriorMargin": -2.478759765625,
+        "bandCorners": [
+          [
+            386.35577392578125,
+            2.0999999046325684,
+            1512.478759765625
+          ],
+          [
+            383.70538330078125,
+            2.0999999046325684,
+            1488.6256103515625
+          ],
+          [
+            401.2640380859375,
+            2.0999999046325684,
+            1510.822265625
+          ],
+          [
+            398.6136474609375,
+            2.0999999046325684,
+            1486.9691162109375
+          ]
+        ],
+        "continuousBandIslandContained": false,
+        "seamTips": [
+          [
+            391.3251953125,
+            2.0999999046325684,
+            1511.9266357421875
+          ],
+          [
+            388.6748046875,
+            2.0999999046325684,
+            1488.0733642578125
+          ]
+        ]
+      },
+      "new": {
+        "samples": 6734,
+        "unsupported": 0,
+        "firstFailures": [],
+        "allSamplesOnIsland": true,
+        "minimumIslandInteriorMargin": 2.34130859375,
+        "bandCorners": [
+          [
+            387.04083251953125,
+            2.0999999046325684,
+            1507.65869140625
+          ],
+          [
+            383.0952453613281,
+            2.0999999046325684,
+            1483.9852294921875
+          ],
+          [
+            401.83673095703125,
+            2.0999999046325684,
+            1505.1927490234375
+          ],
+          [
+            397.8911437988281,
+            2.0999999046325684,
+            1481.519287109375
+          ]
+        ],
+        "continuousBandIslandContained": true,
+        "seamTips": [
+          [
+            391.9727783203125,
+            2.0999999046325684,
+            1506.836669921875
+          ],
+          [
+            388.0272216796875,
+            2.0999999046325684,
+            1483.163330078125
+          ]
+        ]
+      }
+    }
+  },
+  "limits": [
+    "Float32 arithmetic here is a source stress model, not Roblox implementation parity",
+    "Existing engine failure remains failed historical evidence",
+    "Requires fresh exact native floor rays, bidirectional paths and party traversal",
+    "No new geometry, controller activation, Blender or Studio executed by reviewer"
+  ]
+}

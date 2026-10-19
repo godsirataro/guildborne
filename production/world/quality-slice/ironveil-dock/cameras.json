@@ -1,0 +1,61 @@
+{
+  "samples": 20,
+  "resolution": [
+    1280,
+    720
+  ],
+  "views": [
+    {
+      "name": "woodland_departure",
+      "eye": [
+        75,
+        10,
+        1506
+      ],
+      "target": [
+        185,
+        5,
+        1510
+      ]
+    },
+    {
+      "name": "quarry_arrival",
+      "eye": [
+        275,
+        10,
+        1510
+      ],
+      "target": [
+        410,
+        6,
+        1495
+      ]
+    },
+    {
+      "name": "overview",
+      "eye": [
+        245,
+        165,
+        1730
+      ],
+      "target": [
+        245,
+        1,
+        1460
+      ]
+    },
+    {
+      "name": "ironveil_dock_close",
+      "eye": [
+        425,
+        27,
+        1538
+      ],
+      "target": [
+        382,
+        2.1,
+        1495
+      ]
+    }
+  ]
+}

@@ -1,0 +1,10 @@
+{
+  "command": [
+    "python",
+    "production\\world\\quality-slice\\ironveil-dock\\verify_geometry.py"
+  ],
+  "exitCode": 0,
+  "sourceSha256": "2fc2cb726ae6f6186d704d796fab00b0b798761670205cf759c3897c1d2c1811",
+  "stdoutSha256": "6514397f871c4b18f05b291e2f00d4179d4e53ce5e2bc42c81f274e2e2b615d9",
+  "stderrSha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+}

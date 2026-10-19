@@ -23,16 +23,16 @@
     "min": [
       109.48613342675412,
       0.8,
-      1483.221203886986
+      1478.911576037688
     ],
     "max": [
-      381.9877674693472,
+      382.95918177149645,
       1.85,
       1528.0
     ]
   },
-  "retainingSkirtSignedVolume": 8744.335293785743,
-  "groundSha256": "4a2c026106c7cbb9cfaf532cbcaf059efef7ff1ca0731998b9a846f7dea510c2",
+  "retainingSkirtSignedVolume": 10862.229068109466,
+  "groundSha256": "85b0866cf5ed468ef323f52c5e33f825fcb89155d1a91c2753d593271ccdeb70",
   "licenses": [
     "assets/production/world-slice/village-LICENSE.txt",
     "assets/production/world-slice/ruins-LICENSE.txt"

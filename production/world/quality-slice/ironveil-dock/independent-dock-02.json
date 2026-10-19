@@ -1,0 +1,14 @@
+{
+  "command": [
+    "python",
+    "production\\world\\quality-slice\\ironveil-dock\\independent_dock_verify.py",
+    "--candidate",
+    "production/world/quality-slice/greenwood-ironveil/ground.json"
+  ],
+  "startUtc": "2026-10-19T01:39:57.443628+00:00",
+  "endUtc": "2026-10-19T01:39:58.105465+00:00",
+  "exitCode": 0,
+  "sourceSha256": "735cf9ac3a48e7c3757c481d60905f366e5b1bdf89ae2b15c107677fca5485a5",
+  "stdoutSha256": "405c1f3771394d2d0bf102146437fb046de8a801dad479adfbc9d0838b91e4dd",
+  "stderrSha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+}

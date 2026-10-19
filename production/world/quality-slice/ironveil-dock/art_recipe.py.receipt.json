@@ -1,0 +1,10 @@
+{
+  "command": [
+    "python",
+    "production\\world\\quality-slice\\greenwood-ironveil\\art_recipe.py"
+  ],
+  "exitCode": 0,
+  "sourceSha256": "79a5b5cffa4c3be57f7482b8bd8df9ebe5d15c5089a2a1978373707a41b63a70",
+  "stdoutSha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+  "stderrSha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+}

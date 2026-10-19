@@ -1,0 +1,123 @@
+{
+  "status": "PASS",
+  "scope": "OFFLINE_NATIVE_GEOMETRY_AND_FULL_PROJECTED_PROP_BOUNDS_NOT_STUDIO",
+  "failures": [],
+  "structural": [
+    {
+      "meshId": "gi_original_retaining_skirt",
+      "roadIntrusionAboveFloor": 0
+    },
+    {
+      "meshId": "gi_original_stone_edges",
+      "roadIntrusionAboveFloor": 0.0
+    },
+    {
+      "meshId": "gi_original_open_arches",
+      "roadIntrusionAboveFloor": 0
+    },
+    {
+      "meshId": "gi_original_woodland_rails",
+      "roadIntrusionAboveFloor": 0.0
+    }
+  ],
+  "outwardClosedBoxSolids": 165,
+  "minimumNativeDimension": 0.4,
+  "nativeRoadTriangles": 36,
+  "roadArea": 7712.53513263131,
+  "props": [
+    {
+      "name": "GI_Scenery_000",
+      "area": 8.541555432486348,
+      "supportedArea": 8.5415554325009,
+      "roadOverlap": 0.0,
+      "passCheck": true
+    },
+    {
+      "name": "GI_Scenery_001",
+      "area": 13.272095929511124,
+      "supportedArea": 13.272095929511124,
+      "roadOverlap": 0.0,
+      "passCheck": true
+    },
+    {
+      "name": "GI_Scenery_002",
+      "area": 13.838495004994911,
+      "supportedArea": 13.83849500498036,
+      "roadOverlap": 0.0,
+      "passCheck": true
+    },
+    {
+      "name": "GI_Scenery_003",
+      "area": 6.992066918654018,
+      "supportedArea": 6.992066918654018,
+      "roadOverlap": 0.0,
+      "passCheck": true
+    },
+    {
+      "name": "GI_Scenery_004",
+      "area": 14.041335775225889,
+      "supportedArea": 14.041335775254993,
+      "roadOverlap": 0.0,
+      "passCheck": true
+    },
+    {
+      "name": "GI_Scenery_005",
+      "area": 7.747442569147097,
+      "supportedArea": 7.747442569205305,
+      "roadOverlap": 0.0,
+      "passCheck": true
+    },
+    {
+      "name": "GI_Scenery_006",
+      "area": 15.644821650814265,
+      "supportedArea": 15.644821650785161,
+      "roadOverlap": 0.0,
+      "passCheck": true
+    },
+    {
+      "name": "GI_Scenery_007",
+      "area": 3.4798149307025596,
+      "supportedArea": 3.4798149307025596,
+      "roadOverlap": 0.0,
+      "passCheck": true
+    },
+    {
+      "name": "GI_Scenery_008",
+      "area": 3.479814930644352,
+      "supportedArea": 3.479814930644352,
+      "roadOverlap": 0.0,
+      "passCheck": true
+    },
+    {
+      "name": "GI_Scenery_009",
+      "area": 8.28227968752617,
+      "supportedArea": 8.28227968752617,
+      "roadOverlap": 0.0,
+      "passCheck": true
+    },
+    {
+      "name": "GI_Scenery_010",
+      "area": 4.5850057927309535,
+      "supportedArea": 4.5850057927309535,
+      "roadOverlap": 0.0,
+      "passCheck": true
+    },
+    {
+      "name": "GI_Scenery_011",
+      "area": 17.33498243856593,
+      "supportedArea": 17.334982438595034,
+      "roadOverlap": 0.0,
+      "passCheck": true
+    },
+    {
+      "name": "GI_Scenery_012",
+      "area": 15.886027429194655,
+      "supportedArea": 15.886027429194655,
+      "roadOverlap": 0.0,
+      "passCheck": true
+    }
+  ],
+  "groundSha256": "85b0866cf5ed468ef323f52c5e33f825fcb89155d1a91c2753d593271ccdeb70",
+  "runtimeDescriptorSha256": "9f1c8d3eb5bf109f94bfec504915b52548ec1e484a31be50dc8fabebf3843d5e",
+  "packetSha256": "b885085377b3e56faf9f6a0fe072d0db4672f6b87c5241c6d61ff34c70a65539"
+}

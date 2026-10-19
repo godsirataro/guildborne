@@ -1,0 +1,49 @@
+{
+  "resources": 10,
+  "placements": 17,
+  "uniqueTriangles": 5752,
+  "instancedTriangles": 7618,
+  "originalSkirtTriangles": 68,
+  "structuralTriangles": 1980,
+  "structuralBounds": {
+    "gi_original_stone_edges": {
+      "min": [
+        109.25297347706068,
+        1.8999999999999997,
+        1484.7459744488626
+      ],
+      "max": [
+        380.95586126458994,
+        5.9,
+        1526.6
+      ]
+    },
+    "gi_original_open_arches": {
+      "min": [
+        109.65922002926858,
+        -10.600000000000001,
+        1483.8175341277902
+      ],
+      "max": [
+        382.04420732970226,
+        1.4000000000000021,
+        1527.4
+      ]
+    },
+    "gi_original_woodland_rails": {
+      "min": [
+        116.615728246653,
+        1.9,
+        1490.9538157449997
+      ],
+      "max": [
+        194.00060404580495,
+        6.1,
+        1525.5
+      ]
+    }
+  },
+  "decorativeRailDisclaimer": "Noncolliding rails do not prevent falls; below-deck piers do not prove terrain footings",
+  "roadParts": 108,
+  "roadColliders": 36
+}

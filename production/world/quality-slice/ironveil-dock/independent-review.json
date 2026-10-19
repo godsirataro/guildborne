@@ -1,0 +1,78 @@
+{
+  "status": "READY_FOR_NATIVE_DOCKING_RETEST",
+  "reviewer": "ironveil_review independent agent",
+  "proof": "independent-dock-02.stdout.txt",
+  "receipt": "independent-dock-02.json",
+  "proofSha256": "405c1f3771394d2d0bf102146437fb046de8a801dad479adfbc9d0838b91e4dd",
+  "boundSourceHashes": {
+    "src/shared/Config/WorldQuality.luau": "74e63b707167278c119eb69c4e7311bb9af7e716bc6ae5a4328b399127167c37",
+    "tests/world_quality.luau": "76d9e323cc645cf9c95f0fa0a0bc54bb974ec0663b012c4b9b84b78eefea5c79",
+    "src/server/Services/WorldQualitySlice.luau": "2120fee176b1f5b6bf1779539c9e0899a85d5efd468d38e104cdc270ab892653",
+    "src/server/Services/AdventureMapKit.luau": "978724afd99c499757601d56634ecf0b00ff21921fbec8b12a617c0fed1fe4c7",
+    "src/shared/Config/City.luau": "f78e3df184b45f430575425e1e294f00f94031014b2e5e682d0549890f47e985",
+    "production/world/quality-slice/ironveil-dock/studio_probe.luau": "e9417d43cf8806f486e0aafc91d95bf4de30d841c3589008a4bf5b35dc3fa7a3"
+  },
+  "groundSha256": "85b0866cf5ed468ef323f52c5e33f825fcb89155d1a91c2753d593271ccdeb70",
+  "artPacketSha256": "b885085377b3e56faf9f6a0fe072d0db4672f6b87c5241c6d61ff34c70a65539",
+  "nativeHistoricalReportSha256": "e0bbec467ba1543ceecc142ec740a2bfeeb8ba2fa0695409d5ee235e7d1f322a",
+  "sourceRegression": {
+    "oldFloat64Unsupported": 267,
+    "oldFloat32Unsupported": 274,
+    "newUnsupported": 0,
+    "samplesPerPrecision": 6734,
+    "continuousBand": {
+      "along": [
+        -5,
+        10
+      ],
+      "lateral": [
+        -12,
+        12
+      ]
+    },
+    "minimumIslandMargin": 2.3412779774873798,
+    "expandedSurfaceTolerance": 0
+  },
+  "retention": {
+    "WorldQualitySliceUnchanged": true,
+    "AdventureMapKitUnchanged": true,
+    "CityRegionConfigUnchanged": true,
+    "westGeneratedSpecUnchanged": true,
+    "historicalNativeFailureUnchanged": true
+  },
+  "sourceReview": [
+    "Identity-specific validator requires terminal physical docking with actual Island bounds and full-width corners, preserving west/private-belt/Y constraints.",
+    "Ironveil entry follows new Z1495 endpoint; safe recovery remains400,7,1500.",
+    "Probe preserves30original route-only rays and adds84collidable-world docking rays with exact positions, hit instance and surface height;22bidirectional path probes remain.",
+    "Original route-only misses must stay visible even if new Island-support rays pass. The0.02vertical classification tolerance distinguishes floorY2/2.1 and does not expand planar support."
+  ],
+  "renderEvidence": {
+    "after": {
+      "receiptSha256": "ac2886207ea98138c8003e2f59378f065bff81a1291528626a5bc2c47c2594f5",
+      "imageHashes": {
+        "ironveil_dock_close.png": "552668a5360e8b3174a76f65097aa8e87880bfff645e6314cab1ecef5c3173eb",
+        "overview.png": "5105d6dca897f2bd2bf36cc8ce1366215f36fdaa2d2d0e9e5a880e2963840151",
+        "quarry_arrival.png": "8b9e37fd86c6778e810ac13519d4611fe4087caec7608412cb08df36e9e8cca4",
+        "woodland_departure.png": "e3f63817fe9df72fcc8c44853fcd477a5de93f154e9fd4a37b3d62a2db0fbae8"
+      }
+    }
+  },
+  "visualReview": {
+    "inspected": [
+      "after/ironveil_dock_close.png"
+    ],
+    "observations": [
+      "Close view shows full walk surface docked over the actual native Island.",
+      "Road/island0.1stud height step remains visibly present and requires engine traversal validation.",
+      "Decorative outer shoulder may overhang; shoulders/rails are noncolliding and are not accepted walking or fall-barrier surfaces.",
+      "No historical matched close camera exists; this is inspection of the corrected docking image, not an invented before/after close pair."
+    ],
+    "highFidelityAccepted": false
+  },
+  "limitations": [
+    "Float32 source arithmetic is a stress model, not exact engine parity.",
+    "Fresh native support rays, paths and five-companion traversal remain pending.",
+    "Parent baseline was still running during review; no baseline result invented here.",
+    "No Studio, Blender execution, activation, release or gameplay acceptance by reviewer."
+  ]
+}

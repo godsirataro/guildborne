@@ -1,0 +1,92 @@
+"""Offline docking regression; actual historical native failure stays authoritative.
+
+No author helpers imported. No epsilon expands physical surfaces. Float32 is a
+source arithmetic stress model, not a replacement for Roblox engine raycasts.
+Print-only: caller retains each stdout/stderr/exit receipt without overwriting.
+"""
+import argparse,hashlib,json,math,struct,subprocess
+from pathlib import Path
+
+ROOT=Path(__file__).resolve().parents[4]
+OLD='production/world/quality-slice/greenwood-ironveil/ground.json'
+NATIVE='production/integration/quality-slice/SECOND_EDGE_NATIVE_01.json'
+def sha(data):return hashlib.sha256(data).hexdigest()
+def oldbytes(path):return subprocess.check_output(['git','show','27d2c13:'+path],cwd=ROOT)
+def f32(x):return struct.unpack('f',struct.pack('f',x))[0]
+def transform(v,p,rounder):
+    r=list(map(rounder,p['rotation']));c=list(map(rounder,p['position']))
+    return [rounder(c[k]+sum(rounder(r[3*k+j]*v[j]) for j in range(3))) for k in range(3)]
+def wedge_tops(g,rounder):
+    out=[]
+    for p in g['parts']:
+        if not p['collision']:continue
+        x,y,z=[rounder(rounder(v)/2) for v in p['size']]
+        faces=[[transform([xx,yy,zz],p,rounder) for yy,zz in [(-y,-z),(-y,z),(y,z)]] for xx in (-x,x)]
+        out.append(max(faces,key=lambda t:sum(v[1] for v in t)))
+    return out
+def inside(p,t):
+    # Exact signs; no point-in-triangle tolerance extends the collider cap.
+    signs=[(b[0]-a[0])*(p[2]-a[2])-(b[2]-a[2])*(p[0]-a[0]) for a,b in zip(t,t[1:]+t[:1])]
+    return min(signs)>=0 or max(signs)<=0
+def island(p):return 380<=p[0]<=620 and 1290<=p[2]<=1510
+def query(p,tops):return island(p) or any(inside(p,t) for t in tops)
+def frame(g,rounder):
+    a,b=g['walkCenterline'][-2:];a=list(map(rounder,a));b=list(map(rounder,b))
+    dx,dz=rounder(b[0]-a[0]),rounder(b[2]-a[2]);length=rounder(math.sqrt(rounder(dx*dx)+rounder(dz*dz)))
+    ux,uz=rounder(dx/length),rounder(dz/length)
+    return b,(ux,uz),(uz,-ux)
+def point(frame,along,offset,rounder):
+    b,(ux,uz),(nx,nz)=frame
+    return [rounder(b[0]+rounder(ux*along)+rounder(nx*offset)),b[1],rounder(b[2]+rounder(uz*along)+rounder(nz*offset))]
+def survey(g,rounder):
+    f=frame(g,rounder);tops=wedge_tops(g,rounder)
+    samples=[];fail=[]
+    # Dense full width: both exact 12-stud edges, original ±11.5 probes,
+    # before cap, cap and tiny outward steps, then ten studs into destination.
+    alongs=[-5,-2,-1,-.1,-.01,-.001,0,.001,.01,.1,1,2,5,10]
+    offsets=[i/20 for i in range(-240,241)]
+    for along in alongs:
+        for offset in offsets:
+            p=point(f,along,offset,rounder);ok=query(p,tops)
+            row=dict(along=along,offset=offset,position=p,supported=ok,island=island(p))
+            samples.append(row)
+            if not ok:fail.append(row)
+    margin=min(min(p['position'][0]-380,620-p['position'][0],p['position'][2]-1290,1510-p['position'][2]) for p in samples)
+    # Continuous proof: this rectangular docking band is affine in along/offset.
+    # Its four extreme corners contained strictly in convex Island implies all
+    # intermediate values are inside, not only the finite sample grid.
+    corners=[point(f,a,o,rounder) for a in (-5,10) for o in (-12,12)]
+    return dict(samples=len(samples),unsupported=len(fail),firstFailures=fail[:8],allSamplesOnIsland=all(p['island'] for p in samples),minimumIslandInteriorMargin=margin,bandCorners=corners,continuousBandIslandContained=all(island(p) for p in corners),seamTips=[point(f,0,o,rounder) for o in (-12,12)])
+def main():
+    ap=argparse.ArgumentParser();ap.add_argument('--candidate',required=True);args=ap.parse_args()
+    candidate=ROOT/args.candidate;raw=candidate.read_bytes();g=json.loads(raw)
+    oldraw=oldbytes(OLD);old=json.loads(oldraw)
+    historic=(ROOT/NATIVE).read_bytes();assert historic.replace(b'\r\n',b'\n')==oldbytes(NATIVE).replace(b'\r\n',b'\n')
+    native=json.loads(historic)
+    probe=json.loads(native['probe']['content'][0]['text']);end=json.loads(native['endpoint']['content'][0]['text'])
+    assert probe['rays']['28']==dict(ok=False,expectedY=2.0999999046325685,index=10,offset=-11.5)
+    assert 'hit' not in end['1'] and 'hit' not in end['5'] and end['5']['along']==.001
+    assert 'hit' in end['2'] and end['2']['along']==-.001
+    assert old['walkCenterline'][-1]==[390,2.1,1500] and g['walkCenterline'][-1]==[390,2.1,1495]
+    assert len(g['walkCenterline'])==10 and sum(p['collision'] for p in g['parts'])==36
+    # Derive the physical destination support from untouched native source;
+    # region authorization bounds (Z1536) must NEVER substitute for this Island.
+    kit=(ROOT/'src/server/Services/AdventureMapKit.luau').read_text()
+    block=kit.split('{id="Ironveil",parts={')[1].split('},markers={')[0]
+    assert '{name="Island",size=V(240,4,220),pos=V(0,0,0)' in block
+    city=(ROOT/'src/shared/Config/City.luau').read_text();assert 'Ironveil={X=500,Z=1400,HalfWidth=122' in city
+    results={}
+    for label,rounder in [('float64',float),('float32',f32)]:
+        previous=survey(old,rounder);current=survey(g,rounder)
+        assert previous['unsupported']>0 and not previous['continuousBandIslandContained'],('old regression unexpectedly passes',label)
+        assert current['unsupported']==0 and current['allSamplesOnIsland'] and current['continuousBandIslandContained'],('new docking unsupported',label,current)
+        assert current['minimumIslandInteriorMargin']>2,('insufficient physical overlap',label)
+        results[label]=dict(old=previous,new=current)
+    # The exact recorded failure position is outside the Island; at +.001 it
+    # remains outside. This proof retains measured misses rather than inventing
+    # engine agreement from this numerical source model.
+    recorded=[dict(along=end[k]['along'],position=[float(v) for v in end[k]['p'].split(',')],nativeHit=end[k].get('hit')) for k in ('1','2','5')]
+    assert not island(recorded[0]['position']) and not island(recorded[2]['position'])
+    assert raw==candidate.read_bytes() and historic==(ROOT/NATIVE).read_bytes()
+    print(json.dumps(dict(status='PASS_OFFLINE_DOCKING_REGRESSION_NATIVE_RETEST_PENDING',candidateSha256=sha(raw),baselineGroundSha256=sha(oldraw),historicalNativeReportSha256=sha(historic),nativeRecordedRegression=recorded,physicalIsland=dict(x=[380,620],z=[1290,1510],topY=2),surfaceTolerance=0,results=results,limits=['Float32 arithmetic here is a source stress model, not Roblox implementation parity','Existing engine failure remains failed historical evidence','Requires fresh exact native floor rays, bidirectional paths and party traversal','No new geometry, controller activation, Blender or Studio executed by reviewer']),indent=2))
+if __name__=='__main__':main()

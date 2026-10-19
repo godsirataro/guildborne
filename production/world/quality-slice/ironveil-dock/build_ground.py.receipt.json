@@ -1,0 +1,10 @@
+{
+  "command": [
+    "python",
+    "production\\world\\quality-slice\\greenwood-ironveil\\build_ground.py"
+  ],
+  "exitCode": 0,
+  "sourceSha256": "6d15577d331d7626e78f481773104554a2ae6681a3eb0aeda379418db0076052",
+  "stdoutSha256": "a4fae3451ebc4f9f0e56a1412cd9a16fea14773e7fc7f3ea251d21380fcd0fc7",
+  "stderrSha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+}

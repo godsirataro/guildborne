@@ -1,3 +1,5 @@
+> Historical pre-dock-repair handoff. Current geometry and review evidence are in ../ironveil-dock/HANDOFF.md and ../ironveil-dock/manifest.json. The original manifest, raw logs and renders describe the pre-repair revision and are retained unchanged.
+
 # Greenwood to Ironveil: second physical route candidate
 
 Base9588cb6, branch codex/greenwood-ironveil-route, fresh worktree. No Bootstrap, WorldService, TravelService or TravelRules edits. Controller owns activation, gate integration and all Studio access. No publishing, production DataStore calls, uploads, push or PR.

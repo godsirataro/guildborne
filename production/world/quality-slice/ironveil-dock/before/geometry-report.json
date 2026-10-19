@@ -1,0 +1,31 @@
+{
+  "evidence": "OFFLINE_SOURCE_GEOMETRY_NOT_STUDIO",
+  "parts": 108,
+  "colliders": 36,
+  "sections": 10,
+  "roadTriangles": 18,
+  "allTopTriangles": 54,
+  "roadArea3D": 7696.033054876956,
+  "roadProjectedArea": 7696.033054876956,
+  "maximumRoadPairOverlapArea": 0,
+  "maximumAllTopPairProjectedOverlapArea": 0,
+  "maximumNativeVertexReconstructionError": 2.343715252673756e-13,
+  "minimumNativeDimension": 0.4,
+  "maximumSegmentLength": 40.0,
+  "maximumCenterlineSlope": 0.0,
+  "privateBeltVertices": 0,
+  "seams": "Exact shared cross-section vertices. Endpoint floors overlap existing region floors; native float/path verification pending.",
+  "basis": "Columns X=cross(Y,Z), Y=altitude, Z=foot-endpoint; determinant+1. Offset center down upward normal; either signed broad X face reconstructs original triangle.",
+  "bounds": {
+    "min": [
+      70.0,
+      1.9000000000000001,
+      1482.1100927758748
+    ],
+    "max": [
+      391.9877674693472,
+      2.1,
+      1528.0
+    ]
+  }
+}

@@ -1,0 +1,14 @@
+{
+  "command": [
+    ".tools/luau/luau-compile.exe",
+    "--null",
+    "production/world/quality-slice/ironveil-dock/studio_probe.luau"
+  ],
+  "exitCode": 0,
+  "seconds": 0.020632100000511855,
+  "inputHashes": {
+    "production/world/quality-slice/ironveil-dock/studio_probe.luau": "e9417d43cf8806f486e0aafc91d95bf4de30d841c3589008a4bf5b35dc3fa7a3"
+  },
+  "stdoutSha256": "2723306fad2de3b1d615abef3a2cfc91a04791ae0dfd82f2b85f8519823d056e",
+  "stderrSha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+}

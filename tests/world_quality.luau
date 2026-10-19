@@ -81,6 +81,32 @@ rejectSouth(function(d)d.safeRecovery=nil end)
 rejectSouth(function(d)d.safeRecovery.Ironveil[2]=100 end)
 rejectSouth(function(d)d.safeRecovery.Greenwood[1]=0 end)
 rejectSouth(function(d)d.safeRecovery.City={0,7,1500} end)
+-- Static full-width docking regression. The native Island is defined by
+-- AdventureMapKit Ironveil size(240,4,220), translated to(500,0,1400):
+-- X380..620, Z1290..1510, floor2. This is source math, not Studio raycasting.
+local function dockSupported(points: any): boolean
+ local last=points[#points];local previous=points[#points-1]
+ local dx,dz=last[1]-previous[1],last[3]-previous[3]
+ local length=math.sqrt(dx*dx+dz*dz)
+ if length<=0 or last[2]<2 or last[2]>2.2 then return false end
+ -- A straight cross-section is convex; both ends bound the entire 24-stud span.
+ for _,lateral in ipairs({-12,12}) do
+  local x=last[1]-dz/length*lateral
+  local z=last[3]+dx/length*lateral
+  if x<380 or x>620 or z<1290 or z>1510 then return false end
+ end
+ return true
+end
+assert(dockSupported(Q.GreenwoodIronveilCorridor.centerline),"Terminal road width leaves native Ironveil support");count+=1
+local oldDock=clone(Q.GreenwoodIronveilCorridor.centerline)
+oldDock[#oldDock][3]=1500
+assert(not dockSupported(oldDock),"Original endpoint must reproduce unsupported outer edge");count+=1
+local dock=Q.GreenwoodIronveilCorridor
+assert(dock.centerline[#dock.centerline][1]==390 and dock.centerline[#dock.centerline][3]==1495);count+=1
+assert(dock.entries.Ironveil.cframe[3]==1495 and dock.entries.Ironveil.size[1]==24 and dock.entries.Ironveil.size[3]==24);count+=1
+assert(dock.safeRecovery.Ironveil[1]==400 and dock.safeRecovery.Ironveil[2]==7 and dock.safeRecovery.Ironveil[3]==1500);count+=1
+rejectSouth(function(d)d.entries.Ironveil.cframe[3]=1500 end)
+rejectSouth(function(d)d.centerline[#d.centerline][3]=1500 end)
 print("world_quality: "..count.." contract checks passed; Studio lifecycle NOT_RUN")
 
 -- Optional CLI source-injection harness: execute the actual service with fake
@@ -196,6 +222,8 @@ return function(source: string)
  check(south.ownedModel==south.geometry and second.wall.Parent==second.town)
  check(secondHandle.buildGreenwoodIronveilCorridor()==south)
  check(south.entries.Greenwood~=nil and south.entries.Ironveil~=nil and south.safeRecovery.Greenwood~=nil and south.safeRecovery.Ironveil~=nil)
+ check(south.entries.Ironveil.cframe.Position.Z==1495 and south.entries.Ironveil.size.X==24 and south.entries.Ironveil.size.Z==24)
+ check(south.safeRecovery.Ironveil.Position.X==400 and south.safeRecovery.Ironveil.Position.Y==7 and south.safeRecovery.Ironveil.Position.Z==1500)
  local southNodes=south.geometry:FindFirstChild("NavigationNodes")
  check(#southNodes:GetChildren()==#Q.GreenwoodIronveilCorridor.centerline)
  for i,point in ipairs(Q.GreenwoodIronveilCorridor.centerline) do

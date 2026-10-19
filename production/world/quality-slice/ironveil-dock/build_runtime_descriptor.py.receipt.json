@@ -1,0 +1,10 @@
+{
+  "command": [
+    "python",
+    "production\\world\\quality-slice\\greenwood-ironveil\\build_runtime_descriptor.py"
+  ],
+  "exitCode": 0,
+  "sourceSha256": "75107ca923ba15dec05c69d457c55ea38a037151230bfb28a56a9743ee2dd28b",
+  "stdoutSha256": "74d3f6ffce1a4267a453ba288e9ac107b665269c23ec2a5a08242647b61345b0",
+  "stderrSha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+}

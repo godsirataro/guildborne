@@ -1,0 +1,363 @@
+{
+  "status": "REVIEW_CANDIDATE_NATIVE_RETEST_PENDING",
+  "baseCommit": "27d2c13ea4de1d9a2764a6cbef142be6918ff432",
+  "files": {
+    "assets/production/world-slice/greenwood-ironveil/metrics.json": {
+      "sha256": "76c52197708c4f671c418b6df4d2f6e70016b485b8adbbd1b539849a660cae01",
+      "bytes": 1053
+    },
+    "assets/production/world-slice/greenwood-ironveil/provenance.json": {
+      "sha256": "69a11f23b0518f63903541d41319e044223e519ac5d959409a9431dc4d8fe164",
+      "bytes": 1397
+    },
+    "assets/production/world-slice/greenwood-ironveil/scenery.mesh.json": {
+      "sha256": "b885085377b3e56faf9f6a0fe072d0db4672f6b87c5241c6d61ff34c70a65539",
+      "bytes": 796804
+    },
+    "assets/production/world-slice/greenwood-ironveil/structural-solids.json": {
+      "sha256": "21e05e722752046680c09d8cc9444abad99bd7407a58a000a9a19531c6217478",
+      "bytes": 43110
+    },
+    "assets/production/world-slice/ironveil-dock/.gitattributes": {
+      "sha256": "50524bc54be6323af4266e11f2ca0b4d574bad39253c8c5293eca7d3173fa822",
+      "bytes": 43
+    },
+    "assets/production/world-slice/ironveil-dock/after/blender-exit.json": {
+      "sha256": "ac2886207ea98138c8003e2f59378f065bff81a1291528626a5bc2c47c2594f5",
+      "bytes": 1729
+    },
+    "assets/production/world-slice/ironveil-dock/after/blender-stderr.txt": {
+      "sha256": "ee046967f1e060c938e8cd7e8cdf74277b1022c87e055a77eecba3b45f078e74",
+      "bytes": 567
+    },
+    "assets/production/world-slice/ironveil-dock/after/blender-stdout.txt": {
+      "sha256": "cdeaf422a78ef0ef19721ee0424ea0c35f215702f6dd1f421bfe2573a8c045e3",
+      "bytes": 707
+    },
+    "assets/production/world-slice/ironveil-dock/after/ironveil_dock_close.png": {
+      "sha256": "552668a5360e8b3174a76f65097aa8e87880bfff645e6314cab1ecef5c3173eb",
+      "bytes": 963793
+    },
+    "assets/production/world-slice/ironveil-dock/after/landforms.blend": {
+      "sha256": "63a83b86de234f26d0ffc0df1b3b9a9e0b097f6192aa51eec63296a7a6845953",
+      "bytes": 2323207
+    },
+    "assets/production/world-slice/ironveil-dock/after/overview.png": {
+      "sha256": "5105d6dca897f2bd2bf36cc8ce1366215f36fdaa2d2d0e9e5a880e2963840151",
+      "bytes": 1016930
+    },
+    "assets/production/world-slice/ironveil-dock/after/quarry_arrival.png": {
+      "sha256": "8b9e37fd86c6778e810ac13519d4611fe4087caec7608412cb08df36e9e8cca4",
+      "bytes": 936135
+    },
+    "assets/production/world-slice/ironveil-dock/after/render-evidence.json": {
+      "sha256": "821080abc220d0602baf886ce19f28138daa46d6d4e1508584297df4086b8263",
+      "bytes": 1192
+    },
+    "assets/production/world-slice/ironveil-dock/after/woodland_departure.png": {
+      "sha256": "e3f63817fe9df72fcc8c44853fcd477a5de93f154e9fd4a37b3d62a2db0fbae8",
+      "bytes": 948666
+    },
+    "assets/production/world-slice/ironveil-dock/before/metrics.json": {
+      "sha256": "b2139626b81f07386766d9f97d427d15001e55e9d7e96757a6133551d0f28aac",
+      "bytes": 1083
+    },
+    "assets/production/world-slice/ironveil-dock/before/provenance.json": {
+      "sha256": "dc82e17ff75b2b72351e219b67e19f294eb57d7f62d45beb748d17e98957929e",
+      "bytes": 1395
+    },
+    "assets/production/world-slice/ironveil-dock/before/scenery.mesh.json": {
+      "sha256": "70690b5109f823a72fd14cd137cfabc3ac0cce29e2ec100cd670eb2c1788dc8e",
+      "bytes": 797270
+    },
+    "assets/production/world-slice/ironveil-dock/before/structural-solids.json": {
+      "sha256": "dac6514a6bc0ea7ed1c3e516aa254c2679edb056797cc029d994f5b2c9407d48",
+      "bytes": 43077
+    },
+    "production/integration/quality-slice/SECOND_EDGE_NATIVE_01.json": {
+      "sha256": "e0bbec467ba1543ceecc142ec740a2bfeeb8ba2fa0695409d5ee235e7d1f322a",
+      "bytes": 7172
+    },
+    "production/world/quality-slice/greenwood-ironveil/art_recipe.py": {
+      "sha256": "79a5b5cffa4c3be57f7482b8bd8df9ebe5d15c5089a2a1978373707a41b63a70",
+      "bytes": 5953
+    },
+    "production/world/quality-slice/greenwood-ironveil/build_ground.py": {
+      "sha256": "6d15577d331d7626e78f481773104554a2ae6681a3eb0aeda379418db0076052",
+      "bytes": 7419
+    },
+    "production/world/quality-slice/greenwood-ironveil/build_runtime_descriptor.py": {
+      "sha256": "75107ca923ba15dec05c69d457c55ea38a037151230bfb28a56a9743ee2dd28b",
+      "bytes": 1294
+    },
+    "production/world/quality-slice/greenwood-ironveil/descriptor.json": {
+      "sha256": "47d879fd9e9d2d2d4c5966d784cbcf2353b10137ca1a2e3fe8cbf21c3158a749",
+      "bytes": 2021
+    },
+    "production/world/quality-slice/greenwood-ironveil/embed_spec.py": {
+      "sha256": "e62e822883c55d26a0afa7a364c3515f74bcd2e218d65d0c1b654579a2797f80",
+      "bytes": 1065
+    },
+    "production/world/quality-slice/greenwood-ironveil/geometry-report.json": {
+      "sha256": "8e77ec437e5612b9e1bcbe3ceeb61e4736f4eb6a2b7308ec1daff229803116ea",
+      "bytes": 989
+    },
+    "production/world/quality-slice/greenwood-ironveil/ground.json": {
+      "sha256": "85b0866cf5ed468ef323f52c5e33f825fcb89155d1a91c2753d593271ccdeb70",
+      "bytes": 103947
+    },
+    "production/world/quality-slice/greenwood-ironveil/HANDOFF.md": {
+      "sha256": "f0a040412418371be3e0efd6bbc3a8b04f722e24001f801db4d7d5e000c45f45",
+      "bytes": 7746
+    },
+    "production/world/quality-slice/greenwood-ironveil/runtime-descriptor.json": {
+      "sha256": "9f1c8d3eb5bf109f94bfec504915b52548ec1e484a31be50dc8fabebf3843d5e",
+      "bytes": 65352
+    },
+    "production/world/quality-slice/greenwood-ironveil/structure_recipe.py": {
+      "sha256": "7c6a5cf94591a7a73ad967ea703c40523bf2b7f7a32333f04687ab1e5541ca3c",
+      "bytes": 3604
+    },
+    "production/world/quality-slice/ironveil-dock/.gitattributes": {
+      "sha256": "50524bc54be6323af4266e11f2ca0b4d574bad39253c8c5293eca7d3173fa822",
+      "bytes": 43
+    },
+    "production/world/quality-slice/ironveil-dock/art_recipe.py.receipt.json": {
+      "sha256": "fde7addd72aee61830ee637e7e43da79182842bce8bad9950f025a83202d08d6",
+      "bytes": 396
+    },
+    "production/world/quality-slice/ironveil-dock/art_recipe.py.stderr.txt": {
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "bytes": 0
+    },
+    "production/world/quality-slice/ironveil-dock/art_recipe.py.stdout.txt": {
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "bytes": 0
+    },
+    "production/world/quality-slice/ironveil-dock/before/art_recipe.py": {
+      "sha256": "b7efce6694cf23cbd7b2cf9a9f816228b4f2e58efee0a8359bafd86141178f86",
+      "bytes": 5788
+    },
+    "production/world/quality-slice/ironveil-dock/before/descriptor.json": {
+      "sha256": "5d60c597f7b90fbdd76c42191c75d144a714464c01ebd9c08d1c45bbdb1509dc",
+      "bytes": 1917
+    },
+    "production/world/quality-slice/ironveil-dock/before/geometry-report.json": {
+      "sha256": "1f39893c63a0d90ca79861a78ab939112b681243c8f2fbca7e03902cba300978",
+      "bytes": 989
+    },
+    "production/world/quality-slice/ironveil-dock/before/ground.json": {
+      "sha256": "4a2c026106c7cbb9cfaf532cbcaf059efef7ff1ca0731998b9a846f7dea510c2",
+      "bytes": 104234
+    },
+    "production/world/quality-slice/ironveil-dock/before/runtime-descriptor.json": {
+      "sha256": "a2f4c47c2b1438f9df981b3b6716349c13b0bb08f89b15c8d5952001d7bc908e",
+      "bytes": 65696
+    },
+    "production/world/quality-slice/ironveil-dock/build_ground.py.receipt.json": {
+      "sha256": "4c39bc7a4d815adcdbb7f8ec7a883d4f7dd14a03b494f929f28feb7e7513a817",
+      "bytes": 398
+    },
+    "production/world/quality-slice/ironveil-dock/build_ground.py.stderr.txt": {
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "bytes": 0
+    },
+    "production/world/quality-slice/ironveil-dock/build_ground.py.stdout.txt": {
+      "sha256": "a4fae3451ebc4f9f0e56a1412cd9a16fea14773e7fc7f3ea251d21380fcd0fc7",
+      "bytes": 1020
+    },
+    "production/world/quality-slice/ironveil-dock/build_runtime_descriptor.py.receipt.json": {
+      "sha256": "8e6655dcc056d35cb712e7264b6f00bf0f785456a87eb22605f24ed790a4c40a",
+      "bytes": 410
+    },
+    "production/world/quality-slice/ironveil-dock/build_runtime_descriptor.py.stderr.txt": {
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "bytes": 0
+    },
+    "production/world/quality-slice/ironveil-dock/build_runtime_descriptor.py.stdout.txt": {
+      "sha256": "74d3f6ffce1a4267a453ba288e9ac107b665269c23ec2a5a08242647b61345b0",
+      "bytes": 60
+    },
+    "production/world/quality-slice/ironveil-dock/cameras.json": {
+      "sha256": "25873494bae7e22778d6a7b3bac1e9b4c09dd8c86024c19522fdb81034cf6b76",
+      "bytes": 824
+    },
+    "production/world/quality-slice/ironveil-dock/checks-final01/baseline.stderr.txt": {
+      "sha256": "d0f6cbdbc6405d31ea0b92b2cf36b08934c8c1885c6c181c08fc8bd2f0603a2c",
+      "bytes": 1898
+    },
+    "production/world/quality-slice/ironveil-dock/checks-final01/baseline.stdout.txt": {
+      "sha256": "86c57f4344beae1510f7df74ff8ae560a6848148eb21062d332e1a45f18e445f",
+      "bytes": 74526
+    },
+    "production/world/quality-slice/ironveil-dock/checks-final01/contract.stderr.txt": {
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "bytes": 0
+    },
+    "production/world/quality-slice/ironveil-dock/checks-final01/contract.stdout.txt": {
+      "sha256": "c9003fe73898e4d895f958df79f9bb68ecd04bd1b19367557ec6f15b31aea357",
+      "bytes": 68
+    },
+    "production/world/quality-slice/ironveil-dock/checks-final01/lifecycle.stderr.txt": {
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "bytes": 0
+    },
+    "production/world/quality-slice/ironveil-dock/checks-final01/lifecycle.stdout.txt": {
+      "sha256": "3ec87ddc1569ddeb157cc01294fda5991d068d8677f6e6d04929aeb22fa0a853",
+      "bytes": 150
+    },
+    "production/world/quality-slice/ironveil-dock/checks-final01/receipts.json": {
+      "sha256": "7cf1d4343942774f950d02924cf3c9cf6b88af2e66feaaa56195bcbd31050c43",
+      "bytes": 1958
+    },
+    "production/world/quality-slice/ironveil-dock/checks-probe01/receipt.json": {
+      "sha256": "587330d236fce0683ba7ec2feac4ff9ccd24b927b25735f45ab5b8fdd2a309a7",
+      "bytes": 527
+    },
+    "production/world/quality-slice/ironveil-dock/checks-probe01/stderr.txt": {
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "bytes": 0
+    },
+    "production/world/quality-slice/ironveil-dock/checks-probe01/stdout.txt": {
+      "sha256": "2723306fad2de3b1d615abef3a2cfc91a04791ae0dfd82f2b85f8519823d056e",
+      "bytes": 77
+    },
+    "production/world/quality-slice/ironveil-dock/checks-scoped02/compile.stderr.txt": {
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "bytes": 0
+    },
+    "production/world/quality-slice/ironveil-dock/checks-scoped02/compile.stdout.txt": {
+      "sha256": "c6213c8604c8744c0199c81bfe4708023c3ebc2c2f251e7058e720dd3d809ef8",
+      "bytes": 79
+    },
+    "production/world/quality-slice/ironveil-dock/checks-scoped02/contract.stderr.txt": {
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "bytes": 0
+    },
+    "production/world/quality-slice/ironveil-dock/checks-scoped02/contract.stdout.txt": {
+      "sha256": "c9003fe73898e4d895f958df79f9bb68ecd04bd1b19367557ec6f15b31aea357",
+      "bytes": 68
+    },
+    "production/world/quality-slice/ironveil-dock/checks-scoped02/lifecycle.stderr.txt": {
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "bytes": 0
+    },
+    "production/world/quality-slice/ironveil-dock/checks-scoped02/lifecycle.stdout.txt": {
+      "sha256": "3ec87ddc1569ddeb157cc01294fda5991d068d8677f6e6d04929aeb22fa0a853",
+      "bytes": 150
+    },
+    "production/world/quality-slice/ironveil-dock/checks-scoped02/receipts.json": {
+      "sha256": "64ec111c1f3dafe9cc467530dcfdb2ab35645e5e19fd7cf0ecaeb26b1746ef03",
+      "bytes": 2807
+    },
+    "production/world/quality-slice/ironveil-dock/checks-scoped02/types.stderr.txt": {
+      "sha256": "a2beba231bb8bb45dbc7da32ae667163d19b31c995af5e0328be4c2db9b0eb83",
+      "bytes": 235
+    },
+    "production/world/quality-slice/ironveil-dock/checks-scoped02/types.stdout.txt": {
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "bytes": 0
+    },
+    "production/world/quality-slice/ironveil-dock/context.json": {
+      "sha256": "9c5d991b68b84f6cdb08d53322e084eae32b02634801354962fd161a87611f5f",
+      "bytes": 2259
+    },
+    "production/world/quality-slice/ironveil-dock/HANDOFF.md": {
+      "sha256": "c983c651f87741db21a78757fbe67cda28698fee9c664beb552a756e03e150ec",
+      "bytes": 4548
+    },
+    "production/world/quality-slice/ironveil-dock/independent-dock-01-source.txt": {
+      "sha256": "d6bca5d14b916c23cfda74001919a86c35206fa2b096bd8248f450a9bc606198",
+      "bytes": 6710
+    },
+    "production/world/quality-slice/ironveil-dock/independent-dock-01.json": {
+      "sha256": "d78140fa10d482f49852e779b6d8994b1fc7a3b4ac37f1fd73bfa58a63f8bbdc",
+      "bytes": 592
+    },
+    "production/world/quality-slice/ironveil-dock/independent-dock-01.stderr.txt": {
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "bytes": 0
+    },
+    "production/world/quality-slice/ironveil-dock/independent-dock-01.stdout.txt": {
+      "sha256": "6b0201a4486c7470339dfaae35da2bb9d7332c426141ac148a507839a4950dcc",
+      "bytes": 10201
+    },
+    "production/world/quality-slice/ironveil-dock/independent-dock-02-source.txt": {
+      "sha256": "735cf9ac3a48e7c3757c481d60905f366e5b1bdf89ae2b15c107677fca5485a5",
+      "bytes": 7643
+    },
+    "production/world/quality-slice/ironveil-dock/independent-dock-02.json": {
+      "sha256": "89bbb42954ec552fe9a3b73a967b3b69c0632df4c6d4d644b2fb2dfca866c7ce",
+      "bytes": 592
+    },
+    "production/world/quality-slice/ironveil-dock/independent-dock-02.stderr.txt": {
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "bytes": 0
+    },
+    "production/world/quality-slice/ironveil-dock/independent-dock-02.stdout.txt": {
+      "sha256": "405c1f3771394d2d0bf102146437fb046de8a801dad479adfbc9d0838b91e4dd",
+      "bytes": 10927
+    },
+    "production/world/quality-slice/ironveil-dock/independent-review.json": {
+      "sha256": "3c9c9f587c8e45d6b4e8759a3fc62450dea003a691cafbe26087c7cde034dbb9",
+      "bytes": 4050
+    },
+    "production/world/quality-slice/ironveil-dock/independent_dock_verify.py": {
+      "sha256": "735cf9ac3a48e7c3757c481d60905f366e5b1bdf89ae2b15c107677fca5485a5",
+      "bytes": 7643
+    },
+    "production/world/quality-slice/ironveil-dock/offline-geometry.json": {
+      "sha256": "6514397f871c4b18f05b291e2f00d4179d4e53ce5e2bc42c81f274e2e2b615d9",
+      "bytes": 3274
+    },
+    "production/world/quality-slice/ironveil-dock/render_compare.py": {
+      "sha256": "338eb0fe56deec8a35b72ecc900e2b5a8d31513cccfd2286b5533c2dfce9c73c",
+      "bytes": 5899
+    },
+    "production/world/quality-slice/ironveil-dock/run_checks.py": {
+      "sha256": "26ebf7370955e41a8c2239137f2ca7e9daa1e70351acb71ffbedadae851009e3",
+      "bytes": 2052
+    },
+    "production/world/quality-slice/ironveil-dock/run_render.py": {
+      "sha256": "b3afdf19b09c536ea6f830f274923b3633b702ea734b2a6a96d7ae07e623f700",
+      "bytes": 1884
+    },
+    "production/world/quality-slice/ironveil-dock/run_scoped_checks.py": {
+      "sha256": "92a8c1285f786d2465bda32298bc2abef905c96eeebad80694e7eb943441ab1d",
+      "bytes": 2286
+    },
+    "production/world/quality-slice/ironveil-dock/studio_probe.luau": {
+      "sha256": "e9417d43cf8806f486e0aafc91d95bf4de30d841c3589008a4bf5b35dc3fa7a3",
+      "bytes": 4442
+    },
+    "production/world/quality-slice/ironveil-dock/verify.receipt.json": {
+      "sha256": "ef05300ea496dd25a6ac017ceec88e19ce33ba8b8aba2afc275b16602fac83a5",
+      "bytes": 396
+    },
+    "production/world/quality-slice/ironveil-dock/verify.stderr.txt": {
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "bytes": 0
+    },
+    "production/world/quality-slice/ironveil-dock/verify.stdout.txt": {
+      "sha256": "6514397f871c4b18f05b291e2f00d4179d4e53ce5e2bc42c81f274e2e2b615d9",
+      "bytes": 3274
+    },
+    "production/world/quality-slice/ironveil-dock/verify_geometry.py": {
+      "sha256": "2fc2cb726ae6f6186d704d796fab00b0b798761670205cf759c3897c1d2c1811",
+      "bytes": 4457
+    },
+    "src/server/Services/WorldQualitySlice.luau": {
+      "sha256": "2120fee176b1f5b6bf1779539c9e0899a85d5efd468d38e104cdc270ab892653",
+      "bytes": 12395
+    },
+    "src/shared/Config/WorldQuality.luau": {
+      "sha256": "74e63b707167278c119eb69c4e7311bb9af7e716bc6ae5a4328b399127167c37",
+      "bytes": 194366
+    },
+    "tests/world_quality.luau": {
+      "sha256": "76d9e323cc645cf9c95f0fa0a0bc54bb974ec0663b012c4b9b84b78eefea5c79",
+      "bytes": 19586
+    }
+  },
+  "nativeRetestExecuted": false
+}

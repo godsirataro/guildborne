@@ -1,0 +1,29 @@
+{
+  "command": [
+    "C:/Program Files/Blender Foundation/Blender 5.2/blender.exe",
+    "--background",
+    "--disable-autoexec",
+    "--python-exit-code",
+    "2",
+    "--python",
+    "C:\\Work\\MySelf\\Guildborne-ironveil-dock\\production\\world\\quality-slice\\ironveil-dock\\render_compare.py",
+    "--",
+    "--variant",
+    "after"
+  ],
+  "exitCode": 0,
+  "seconds": 39.58969889999935,
+  "inputHashes": {
+    "production/world/quality-slice/ironveil-dock/run_render.py": "b3afdf19b09c536ea6f830f274923b3633b702ea734b2a6a96d7ae07e623f700",
+    "production/world/quality-slice/greenwood-ironveil/descriptor.json": "47d879fd9e9d2d2d4c5966d784cbcf2353b10137ca1a2e3fe8cbf21c3158a749",
+    "assets/production/world-slice/world-slice.mesh.json": "9baaf8de0faf3ff7f4a4f2c32ea692e48aa9dbb021f609e3530029ed7844ddc7",
+    "production/world/quality-slice/ironveil-dock/context.json": "9c5d991b68b84f6cdb08d53322e084eae32b02634801354962fd161a87611f5f",
+    "assets/production/world-slice/greenwood-ironveil/scenery.mesh.json": "b885085377b3e56faf9f6a0fe072d0db4672f6b87c5241c6d61ff34c70a65539",
+    "production/world/quality-slice/ironveil-dock/render_compare.py": "338eb0fe56deec8a35b72ecc900e2b5a8d31513cccfd2286b5533c2dfce9c73c",
+    "production/world/quality-slice/ironveil-dock/cameras.json": "25873494bae7e22778d6a7b3bac1e9b4c09dd8c86024c19522fdb81034cf6b76",
+    "production/world/quality-slice/greenwood-ironveil/ground.json": "85b0866cf5ed468ef323f52c5e33f825fcb89155d1a91c2753d593271ccdeb70"
+  },
+  "inputsUnchanged": true,
+  "stdoutSha256": "cdeaf422a78ef0ef19721ee0424ea0c35f215702f6dd1f421bfe2573a8c045e3",
+  "stderrSha256": "ee046967f1e060c938e8cd7e8cdf74277b1022c87e055a77eecba3b45f078e74"
+}

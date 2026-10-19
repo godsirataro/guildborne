@@ -20,6 +20,9 @@ def main():
       ('cart__000',317,1523.2,.5,math.pi/2),('cart__001',317,1523.2,.5,math.pi/2),
       ('silhouette_fern_rocks__000',350,1489.6,.4,.1),('silhouette_ruined_waymarker__000',365,1518.2,.75,-.2)]
     for i,(mid,x,z,scale,yaw) in enumerate(specs):
+        # Preserve east props relative to the surveyed final approach centerline.
+        if x>300:
+            z+=(ground['walkCenterline'][-1][2]-1500)*(x-300)/90
         c,s=math.cos(yaw),math.sin(yaw)
         placements.append(dict(name=f'GI_Scenery_{i:03d}',meshId=mid,cframe=[x,1.9,z,c,0,s,0,1,0,-s,0,c],scale=[scale]*3,collision=False,query=False,touch=False))
     # Solid stone retaining body, top deliberately below the native shoulders.

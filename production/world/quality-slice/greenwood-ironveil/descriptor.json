@@ -30,7 +30,7 @@
     [
       390,
       2.1,
-      1500
+      1495
     ]
   ],
   "entryVolumes": {
@@ -50,12 +50,12 @@
       "min": [
         378,
         0,
-        1488
+        1483
       ],
       "max": [
         402,
         15,
-        1512
+        1507
       ]
     }
   },
@@ -88,6 +88,7 @@
     "Road is physical beyond Greenwood native island Z1500, independent of non-colliding reviewed terrain.",
     "Existing west Greenwood entry X+-14 remains disjoint.",
     "Road floor Y2.10 clears reviewed Greenwood terrain Y2.02 by0.08 and native Ironveil island Y2 by0.10; tiny native step requires engine check. Safe recovery uses existing physical region floors.",
-    "No City wall changes, private mine Y100, progression gate or route activation."
+    "No City wall changes, private mine Y100, progression gate or route activation.",
+    "Dock repair: endpoint Z1495 keeps both full-width lane edges inside physical Ironveil island Z1290..1510; prior endpoint Z1500 failed native outer-edge support. Native revalidation pending."
   ]
 }

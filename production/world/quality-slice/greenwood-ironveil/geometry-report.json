@@ -5,11 +5,11 @@
   "sections": 10,
   "roadTriangles": 18,
   "allTopTriangles": 54,
-  "roadArea3D": 7696.033054876956,
-  "roadProjectedArea": 7696.033054876956,
+  "roadArea3D": 7712.53513263134,
+  "roadProjectedArea": 7712.53513263134,
   "maximumRoadPairOverlapArea": 0,
   "maximumAllTopPairProjectedOverlapArea": 0,
-  "maximumNativeVertexReconstructionError": 2.343715252673756e-13,
+  "maximumNativeVertexReconstructionError": 2.3437142008433856e-13,
   "minimumNativeDimension": 0.4,
   "maximumSegmentLength": 40.0,
   "maximumCenterlineSlope": 0.0,
@@ -20,10 +20,10 @@
     "min": [
       70.0,
       1.9000000000000001,
-      1482.1100927758748
+      1477.2449093710213
     ],
     "max": [
-      391.9877674693472,
+      392.95918177149645,
       2.1,
       1528.0
     ]
