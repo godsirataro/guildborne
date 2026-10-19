@@ -1,0 +1,20 @@
+{
+  "status": "BLENDER_RENDERED_NOT_STUDIO",
+  "groundPath": "C:\\Work\\MySelf\\Guildborne-coast-props\\production\\world\\quality-slice\\continuous-corridor\\ground.json",
+  "groundSha256": "398a440048136c1e81f39f0ac0f40c72b3ecdfb442777a47c490bf678daa7b35",
+  "sourceSha256": "cc6ce5bdb67574e64984a7c642fe88928e1b4a3112e92019b91c158423f6e246",
+  "packetSha256": "f31077a0847a4a5db7a5918a411ee9b9ba22cdb0ac18ec686bc18859e10fc4e9",
+  "cameraSha256": "f1589c152a1d0190ca0996442223f89be5d26fa568fdf4d6b2a1cfc4fe8e22a7",
+  "groundParts": 444,
+  "views": [
+    "native_road_eye",
+    "spire_reveal",
+    "bridge_forward"
+  ],
+  "context": "City bounds and Greenwood landing are explicitly schematic reference boxes; omitted game geometry is not claimed imported",
+  "hashes": {
+    "bridge_forward.png": "3f31ae124a75de20e69e54d3bb276a8f960893c964458695c48a04fc34cafb41",
+    "native_road_eye.png": "f8474a6a5d6783d64afad5d2f1da6e606bef3bced3cbffd1ab5f2e6fe6698ad1",
+    "spire_reveal.png": "8f318a6eb0ce75fba6f7f11f3050b02e00ab9cd6b64da5c6c058027ae9f85e59"
+  }
+}

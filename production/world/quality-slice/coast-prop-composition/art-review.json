@@ -1,0 +1,60 @@
+{
+  "status": "READY_FOR_NATIVE_COMPARISON_WITH_REMAINING_GAPS",
+  "reviewer": "coast_six_review",
+  "scope": "Independent visual inspection of six actual Blender PNGs in three matched views; not Studio or human approval",
+  "packetSha256": "f31077a0847a4a5db7a5918a411ee9b9ba22cdb0ac18ec686bc18859e10fc4e9",
+  "matchedBeforeAfterVerified": true,
+  "evidence": {
+    "before": {
+      "images": {
+        "bridge_forward.png": "6e5af86bf0417aa4a984d038f7d82796c30d3bc716baea071de76f86bcc72b03",
+        "native_road_eye.png": "ced4d12d2e5f9a2ad750c6eed267ae8ed1fed2130a027b9406b5f3a23b189f60",
+        "spire_reveal.png": "099f0594764d706b2fa968d3ef835966da5ad9d1bfb44f22b891daa5dae8e1c7"
+      },
+      "exitReceiptSha256": "5469bab4b6e9c0ca3fea351a243f743d32e6187a56db73c688b1dbab933ab40b",
+      "renderEvidenceSha256": "561328ca7aaff1e5ff98918d49943ab5f276ce210e5bb86d424d4ac14ff56c94"
+    },
+    "after": {
+      "images": {
+        "bridge_forward.png": "3f31ae124a75de20e69e54d3bb276a8f960893c964458695c48a04fc34cafb41",
+        "native_road_eye.png": "f8474a6a5d6783d64afad5d2f1da6e606bef3bced3cbffd1ab5f2e6fe6698ad1",
+        "spire_reveal.png": "8f318a6eb0ce75fba6f7f11f3050b02e00ab9cd6b64da5c6c058027ae9f85e59"
+      },
+      "exitReceiptSha256": "f1419dacb133716585aec00a245678e7427114ea03ca3523b9055795c404a51d",
+      "renderEvidenceSha256": "027c8de36f22da407de0adb41de3128d4a8261e2d2a5da04b865c27a7c75132a"
+    }
+  },
+  "findings": [
+    {
+      "view": "native_road_eye",
+      "result": "Improved bounded composition",
+      "observation": "Final moved tree, rock and bush now form a visible left foreground cluster of unequal heights. Right side remains open and tower silhouette is clear. This corrects the first after render in which the moved cluster was off-frame and the road became barer."
+    },
+    {
+      "view": "spire_reveal",
+      "result": "Improved local foreground scale",
+      "observation": "Marker, rock and bush form a low cluster at the far end of the bridge. Marker rises above rail; rail partially occludes rock. Tower silhouette remains unobstructed."
+    },
+    {
+      "view": "bridge_forward",
+      "result": "Readable asymmetric bridge exit",
+      "observation": "Low cluster appears to the right at bridge exit and leaves the center walking corridor visually open. Existing distant trees remain repetitive."
+    }
+  ],
+  "remainingGaps": [
+    "Broad road and shore still sparse; this six-transform revision does not complete environmental polish.",
+    "Two entry tree crowns partly overlap; no detached roots observed at these camera resolutions.",
+    "Bridge rail hides part of the rock cluster; native camera evaluation remains necessary.",
+    "Three selected images do not establish all traversal angles or game playability."
+  ],
+  "geometryReference": "independent-review-04.json",
+  "humanApproved": false,
+  "studioAcceptance": "PENDING_CONTROLLER",
+  "history": [
+    "Initial independent-review.json FAIL used a whole-tree-canopy rectangle with ground-shoulder-only coverage; initial verifier source preserved. This was a verifier support-model limitation, not a detached trunk finding.",
+    "Report02 adds exact polygon subtraction, landform surfaces and a structural tree-root footprint. It passed the original packet but found excessive burial.",
+    "Report03 passed height-corrected packet7dfb; no corresponding rendered after claimed.",
+    "First rendered packet19d8 entry composition was visually rejected and archived by author; final packetf310 uses revised entry XZ and report04.",
+    "Initial report01/02 have tool-return outputs but no separately retained raw subprocess receipt. Reports03/04 retain actual raw streams and exit receipts."
+  ]
+}

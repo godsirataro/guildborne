@@ -1,0 +1,25 @@
+{
+  "command": [
+    "C:/Program Files/Blender Foundation/Blender 5.2/blender.exe",
+    "--background",
+    "--disable-autoexec",
+    "--python-exit-code",
+    "2",
+    "--python",
+    "C:\\Work\\MySelf\\Guildborne-coast-props\\production\\world\\quality-slice\\coast-prop-composition\\render_compare.py",
+    "--",
+    "--variant",
+    "before"
+  ],
+  "exitCode": 0,
+  "seconds": 34.52272780000203,
+  "inputHashes": {
+    "assets/production/world-slice/bespoke-spire/scenery.mesh.json": "148ba821817101a0372d851f557d4c7593a594295814f0e20da194924adfb3ae",
+    "production/world/quality-slice/coast-prop-composition/render_compare.py": "cc6ce5bdb67574e64984a7c642fe88928e1b4a3112e92019b91c158423f6e246",
+    "production/world/quality-slice/coast-prop-composition/cameras.json": "f1589c152a1d0190ca0996442223f89be5d26fa568fdf4d6b2a1cfc4fe8e22a7",
+    "production/world/quality-slice/continuous-corridor/ground.json": "398a440048136c1e81f39f0ac0f40c72b3ecdfb442777a47c490bf678daa7b35"
+  },
+  "inputsUnchanged": true,
+  "stdoutSha256": "73da2f01a90181fa0bcef58684280b6e829122638e4c967e1e1efc250e41d993",
+  "stderrSha256": "0f36ad64a2741478217d3e325f1bd9bf18f0562923cee1ba06eb3096c4d48f07"
+}

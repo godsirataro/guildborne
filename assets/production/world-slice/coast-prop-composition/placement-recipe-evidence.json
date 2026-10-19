@@ -1,0 +1,181 @@
+{
+  "status": "GENERATED_NOT_STUDIO",
+  "sourceSha256": "148ba821817101a0372d851f557d4c7593a594295814f0e20da194924adfb3ae",
+  "translations": [
+    {
+      "name": "CorridorScenery_007",
+      "before": [
+        -343.762228927287,
+        4.88929935167848,
+        -212.62342956400747
+      ],
+      "after": [
+        -294,
+        4.83661619810177,
+        -178
+      ],
+      "footprintXZ": [
+        -296.9147990919983,
+        -291.1465434377384,
+        -180.9822304259394,
+        -175.18856382906137
+      ],
+      "footprintMethod": "conservative full geometry rectangle",
+      "terrainMin": 4.95661619810177,
+      "terrainMax": 4.9711128631157235,
+      "clippedTerrainPolygons": 2,
+      "basalPlane": 4.83661619810177,
+      "burialRange": [
+        0.12,
+        0.13449666501395352
+      ]
+    },
+    {
+      "name": "CorridorScenery_009",
+      "before": [
+        -303.8649664446832,
+        5.092060416920031,
+        -123.39186993863218
+      ],
+      "after": [
+        -302,
+        4.819420488272844,
+        -184
+      ],
+      "footprintXZ": [
+        -305.65268661429303,
+        -297.6331302648473,
+        -188.37739992928775,
+        -179.7669091026115
+      ],
+      "footprintMethod": "conservative full geometry rectangle",
+      "terrainMin": 4.9394204882728445,
+      "terrainMax": 4.961197925083429,
+      "clippedTerrainPolygons": 1,
+      "basalPlane": 4.819420488272844,
+      "burialRange": [
+        0.12,
+        0.1417774368105843
+      ]
+    },
+    {
+      "name": "CorridorScenery_010",
+      "before": [
+        -358.214652548561,
+        5.262298502614854,
+        -52.559024456834315
+      ],
+      "after": [
+        -289,
+        4.862654855634417,
+        -168
+      ],
+      "footprintXZ": [
+        -289.21941433013325,
+        -286.52304932018444,
+        -169.73143311010745,
+        -167.09575542245605
+      ],
+      "footprintMethod": "basal trunk rectangle",
+      "terrainMin": 4.982654855634417,
+      "terrainMax": 4.989062134133548,
+      "clippedTerrainPolygons": 1,
+      "basalPlane": 4.862654855634417,
+      "burialRange": [
+        0.12,
+        0.12640727849913158
+      ]
+    },
+    {
+      "name": "CorridorScenery_013",
+      "before": [
+        -333.6780945138114,
+        5.104374571853359,
+        313.34002564273436
+      ],
+      "after": [
+        -357,
+        5.667426383343187,
+        179
+      ],
+      "footprintXZ": [
+        -359.742807785959,
+        -354.1417696131438,
+        176.14382155219778,
+        181.71778681738274
+      ],
+      "footprintMethod": "conservative full geometry rectangle",
+      "terrainMin": 5.787426383343187,
+      "terrainMax": 5.8,
+      "clippedTerrainPolygons": 2,
+      "basalPlane": 5.667426383343187,
+      "burialRange": [
+        0.12,
+        0.13257361665681244
+      ]
+    },
+    {
+      "name": "CorridorScenery_015",
+      "before": [
+        -272.22642502295446,
+        4.643238416565787,
+        389.35157149972343
+      ],
+      "after": [
+        -370,
+        5.640750506189227,
+        169
+      ],
+      "footprintXZ": [
+        -374.7865691930522,
+        -365.12666580431494,
+        165.6833947192742,
+        173.38283649021403
+      ],
+      "footprintMethod": "conservative full geometry rectangle",
+      "terrainMin": 5.760750506189227,
+      "terrainMax": 5.78009192489741,
+      "clippedTerrainPolygons": 2,
+      "basalPlane": 5.640750506189227,
+      "burialRange": [
+        0.12,
+        0.13934141870818262
+      ]
+    },
+    {
+      "name": "CorridorScenery_044",
+      "before": [
+        -353.4695940396691,
+        5.524505620209293,
+        60.654650102299286
+      ],
+      "after": [
+        -360,
+        5.612742190418937,
+        155
+      ],
+      "footprintXZ": [
+        -362.38226027359354,
+        -357.4165992784689,
+        152.43001387330065,
+        157.80740462016064
+      ],
+      "footprintMethod": "conservative full geometry rectangle",
+      "terrainMin": 5.7327421904189375,
+      "terrainMax": 5.745974880093838,
+      "clippedTerrainPolygons": 1,
+      "basalPlane": 5.612742190418937,
+      "burialRange": [
+        0.12,
+        0.13323268967490065
+      ]
+    }
+  ],
+  "unchangedPlacements": 66,
+  "original57Exact": 51,
+  "meshesUnchanged": true,
+  "uniqueTriangles": 11330,
+  "instanceTriangles": 40006,
+  "groundParts": 444,
+  "limitations": "Footprint-wide basal-plane embedding; independent component support, clearance and sightline review required. Not native acceptance."
+}

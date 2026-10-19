@@ -1,0 +1,267 @@
+{
+  "status": "PASS",
+  "scope": "INDEPENDENT_OFFLINE_GEOMETRY_NOT_STUDIO_OR_HUMAN_ART",
+  "packetSha256": "f31077a0847a4a5db7a5918a411ee9b9ba22cdb0ac18ec686bc18859e10fc4e9",
+  "sourceSha256": "148ba821817101a0372d851f557d4c7593a594295814f0e20da194924adfb3ae",
+  "verifierSha256": "6b4c9337940f64dbd32cf3a36795a4cf79e4d9d49d1ad41bcc097ee0b7cfc714",
+  "exactRetainedMeshes": 20,
+  "exactRetainedPlacements": 66,
+  "originalPropsRetainedExactly": 51,
+  "originalPropTransformExceptions": [
+    "CorridorScenery_007",
+    "CorridorScenery_009",
+    "CorridorScenery_010",
+    "CorridorScenery_013",
+    "CorridorScenery_015",
+    "CorridorScenery_044"
+  ],
+  "uniqueTriangles": 11330,
+  "instancedTriangles": 40006,
+  "placements": 72,
+  "groundParts": 444,
+  "navigationNodes": 38,
+  "protectedInputHashes": 58,
+  "footprintSupport": [
+    {
+      "name": "CorridorScenery_007",
+      "method": "Conservative full mesh bounding rectangle at basal plane; exact terrain triangle clipping and polygon subtraction coverage",
+      "bottom": 4.83661619810177,
+      "rectangleArea": 33.41935010634188,
+      "coveredArea": 33.41935010634188,
+      "terrainMin": 4.95661619810177,
+      "terrainMax": 4.9711128631157235,
+      "maximumGap": -0.1200000000000001,
+      "maximumBurial": 0.13449666501395363,
+      "status": "PASS"
+    },
+    {
+      "name": "CorridorScenery_009",
+      "method": "Conservative full mesh bounding rectangle at basal plane; exact terrain triangle clipping and polygon subtraction coverage",
+      "bottom": 4.819420488272844,
+      "rectangleArea": 69.05231638091209,
+      "coveredArea": 69.05231638091209,
+      "terrainMin": 4.9394204882728445,
+      "terrainMax": 4.961197925083429,
+      "maximumGap": -0.1200000000000001,
+      "maximumBurial": 0.1417774368105844,
+      "status": "PASS"
+    },
+    {
+      "name": "CorridorScenery_010",
+      "method": "Tree basal trunk vertices bounding rectangle, excludes canopy; exact terrain triangle clipping and polygon subtraction coverage",
+      "bottom": 4.862654855634417,
+      "rectangleArea": 7.1067490944915335,
+      "coveredArea": 7.1067490944915335,
+      "terrainMin": 4.982654855634418,
+      "terrainMax": 4.989062134133548,
+      "maximumGap": -0.120000000000001,
+      "maximumBurial": 0.1264072784991317,
+      "status": "PASS"
+    },
+    {
+      "name": "CorridorScenery_013",
+      "method": "Conservative full mesh bounding rectangle at basal plane; exact terrain triangle clipping and polygon subtraction coverage",
+      "bottom": 5.667426383343187,
+      "rectangleArea": 31.219992224250745,
+      "coveredArea": 31.219992224250745,
+      "terrainMin": 5.787426383343187,
+      "terrainMax": 5.8,
+      "maximumGap": -0.1200000000000001,
+      "maximumBurial": 0.13257361665681255,
+      "status": "PASS"
+    },
+    {
+      "name": "CorridorScenery_015",
+      "method": "Conservative full mesh bounding rectangle at basal plane; exact terrain triangle clipping and polygon subtraction coverage",
+      "bottom": 5.640750506189227,
+      "rectangleArea": 74.37586365448806,
+      "coveredArea": 74.37586365448806,
+      "terrainMin": 5.760750506189227,
+      "terrainMax": 5.780091924897411,
+      "maximumGap": -0.1200000000000001,
+      "maximumBurial": 0.13934141870818362,
+      "status": "PASS"
+    },
+    {
+      "name": "CorridorScenery_044",
+      "method": "Conservative full mesh bounding rectangle at basal plane; exact terrain triangle clipping and polygon subtraction coverage",
+      "bottom": 5.612742190418937,
+      "rectangleArea": 26.702299487231357,
+      "coveredArea": 26.702299487231357,
+      "terrainMin": 5.7327421904189375,
+      "terrainMax": 5.745974880093838,
+      "maximumGap": -0.1200000000000001,
+      "maximumBurial": 0.13323268967490076,
+      "status": "PASS"
+    }
+  ],
+  "roadTriangleIntersections": 0,
+  "sightlineScope": "18 segment rays against changed props only; unchanged geometry baseline preserved, does not certify every screen pixel unobstructed",
+  "sightlineRays": [
+    {
+      "camera": "native_road_eye",
+      "target": [
+        -570,
+        40,
+        460
+      ],
+      "changedPropHits": []
+    },
+    {
+      "camera": "native_road_eye",
+      "target": [
+        -570,
+        65,
+        460
+      ],
+      "changedPropHits": []
+    },
+    {
+      "camera": "native_road_eye",
+      "target": [
+        -570,
+        95,
+        460
+      ],
+      "changedPropHits": []
+    },
+    {
+      "camera": "native_road_eye",
+      "target": [
+        -565,
+        40,
+        460
+      ],
+      "changedPropHits": []
+    },
+    {
+      "camera": "native_road_eye",
+      "target": [
+        -565,
+        65,
+        460
+      ],
+      "changedPropHits": []
+    },
+    {
+      "camera": "native_road_eye",
+      "target": [
+        -565,
+        95,
+        460
+      ],
+      "changedPropHits": []
+    },
+    {
+      "camera": "native_road_eye",
+      "target": [
+        -560,
+        40,
+        460
+      ],
+      "changedPropHits": []
+    },
+    {
+      "camera": "native_road_eye",
+      "target": [
+        -560,
+        65,
+        460
+      ],
+      "changedPropHits": []
+    },
+    {
+      "camera": "native_road_eye",
+      "target": [
+        -560,
+        95,
+        460
+      ],
+      "changedPropHits": []
+    },
+    {
+      "camera": "spire_reveal",
+      "target": [
+        -570,
+        40,
+        460
+      ],
+      "changedPropHits": []
+    },
+    {
+      "camera": "spire_reveal",
+      "target": [
+        -570,
+        65,
+        460
+      ],
+      "changedPropHits": []
+    },
+    {
+      "camera": "spire_reveal",
+      "target": [
+        -570,
+        95,
+        460
+      ],
+      "changedPropHits": []
+    },
+    {
+      "camera": "spire_reveal",
+      "target": [
+        -565,
+        40,
+        460
+      ],
+      "changedPropHits": []
+    },
+    {
+      "camera": "spire_reveal",
+      "target": [
+        -565,
+        65,
+        460
+      ],
+      "changedPropHits": []
+    },
+    {
+      "camera": "spire_reveal",
+      "target": [
+        -565,
+        95,
+        460
+      ],
+      "changedPropHits": []
+    },
+    {
+      "camera": "spire_reveal",
+      "target": [
+        -560,
+        40,
+        460
+      ],
+      "changedPropHits": []
+    },
+    {
+      "camera": "spire_reveal",
+      "target": [
+        -560,
+        65,
+        460
+      ],
+      "changedPropHits": []
+    },
+    {
+      "camera": "spire_reveal",
+      "target": [
+        -560,
+        95,
+        460
+      ],
+      "changedPropHits": []
+    }
+  ],
+  "issues": [],
+  "studio": "PENDING_CONTROLLER",
+  "humanApproval": false
+}

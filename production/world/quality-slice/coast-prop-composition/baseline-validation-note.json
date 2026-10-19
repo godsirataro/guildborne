@@ -1,0 +1,18 @@
+{
+  "scope": "LOCAL_BASELINE_NOT_STUDIO",
+  "baseCommit": "957f434",
+  "command": "powershell -NoProfile -ExecutionPolicy Bypass -File tools/validate.ps1",
+  "observedExitCode": 0,
+  "evidenceOrigin": "Actual parent exec session28095 returned BASELINE_EXIT=0; log copied byte-for-byte. This note is not a record_check.py receipt.",
+  "logSha256": "e71b4692a908126507f4a9f059621a1b806028ad5c1002a726ff817e51cd9c1c",
+  "pinnedTools": "Reused existing .tools junction; no setup or downloads run",
+  "preflight": {
+    "forgeDoctor": "git/python present; Blender absent from PATH, explicit known executable used by render runner",
+    "forgeValidate": "PASS 76 tasks/31 skills",
+    "studioValidate": "PASS 33roles/76tasks/10workflows",
+    "studioVerify": "FAIL Generated manifest or source metadata is stale at base957f434; outside art scope",
+    "characterContract": "PASS 89planned assets/15required bodyparts",
+    "reconciliation": "502assets/73screens/89kitassets/402hashes/0missingReferences; not UAT",
+    "forgePlan": "76tasks"
+  }
+}

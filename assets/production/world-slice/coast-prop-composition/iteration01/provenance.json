@@ -1,0 +1,16 @@
+{
+  "origin": "Existing reviewed Guildborne bespoke-spire packet, six translations only",
+  "license": "Retains existing original Guildborne geometry and reviewed Quaternius CC0 vegetation",
+  "sourceProvenance": "assets/production/world-slice/bespoke-spire/provenance.json",
+  "licenseFiles": [
+    "assets/production/world-slice/village-LICENSE.txt",
+    "assets/production/world-slice/ruins-LICENSE.txt"
+  ],
+  "source": "assets/production/world-slice/bespoke-spire/scenery.mesh.json",
+  "sourceSha256": "148ba821817101a0372d851f557d4c7593a594295814f0e20da194924adfb3ae",
+  "recipe": "production/world/quality-slice/coast-prop-composition/recipe.py",
+  "runtimeAssetIds": null,
+  "downloads": false,
+  "newMeshes": false,
+  "packetSha256": "19d8048a151d846a4a5482f34e4f25dca0e145fc15bdd8bdd762918b94130025"
+}
