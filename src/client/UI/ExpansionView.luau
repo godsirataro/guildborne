@@ -10,16 +10,25 @@ return function(ui: any)
 	local drawFurniture=require(script.Parent.FurnitureView)(ui)
 	local drawStatus=require(script.Parent.StatusPointView)(ui)
 	local actorId="player";local confirm: string?=nil;local layoutSlot=1
+	local selectedClass3:string?=nil;local selectionContext:string?=nil
 	local T,card,text,button=ui.T,ui.card,ui.text,ui.button
+	local function class3Reason(problem:string):string
+		local aliases={ClassTrialLocked="Class3LevelLocked",HeroMentorUnavailable="Class3TrialUnavailable",HeroMentorRequired="Class3ProofRequired",VisitStation="Class3VisitMentor",ActorNotReady="Class3ActorNotReady",TrialLessonsIncomplete="Class3LessonsIncomplete",SavePending="Class3SavePending",ReceiptHistoryUnavailable="Class3ReceiptHistoryUnavailable"}
+		return T(aliases[problem] or problem)
+	end
 	local function costs(values: any,catalog: any): string
 		local ids={};for id in pairs(values) do table.insert(ids,id) end;table.sort(ids)
 		local out={};for _,id in ipairs(ids) do table.insert(out,T(catalog.Items[id].Name).." ×"..values[id]) end;return table.concat(out," · ")
 	end
 	return function(tab: string,data: any,catalog: any,busy: boolean)
+		local requestBusy=busy
+		local class3Session=data.class3Session
+		busy=busy or class3Session~=nil
+		if class3Session then confirm=nil end
 		if tab=="Furniture" then drawFurniture(data,catalog,busy);return end
 		local e=data.expansion
 		local head=card(ui.scroll,tab)
-		button(head,"Back to Guild",not busy,function() ui.navigate("Guild") end)
+		button(head,"Back to Guild",not requestBusy,function() ui.navigate("Guild") end)
 		if tab=="Layouts" then
 			button(head,"Back to Base",not busy,function()ui.navigate("Base")end)
 			local layout=e.layouts and e.layouts[tostring(layoutSlot)]
@@ -108,13 +117,23 @@ return function(ui: any)
 			end
 		elseif tab=="Skills" or tab=="Status" then
 			local actors={"player"};local ids={};for id in pairs(data.adventurers) do table.insert(ids,id) end;table.sort(ids);for _,id in ipairs(ids) do table.insert(actors,id) end
-			local a=Rules.actor(data,actorId);if not a then actorId="player";a=data.character end
-			button(head,(if actorId=="player" then T("Your character") else T(a.name).." · "..T(a.classId).." ["..a.rank.."] · "..actorId),not busy,function() actorId=actors[(table.find(actors,actorId) or 0)%#actors+1];confirm=nil;ui.render(true) end).Name="SkillActor"
+			local a=Rules.actor(data,actorId);if not a then actorId="player";a=data.character;confirm=nil;selectedClass3=nil end
+			button(head,(if actorId=="player" then T("Your character") else T(a.name).." · "..T(a.classId).." ["..a.rank.."] · "..actorId),not requestBusy,function() actorId=actors[(table.find(actors,actorId) or 0)%#actors+1];confirm=nil;selectedClass3=nil;ui.render(true) end).Name="SkillActor"
+			if class3Session then
+				local activeActor=Rules.actor(data,class3Session.actorId);local activePath=Rules.Paths[class3Session.pathId]
+				local sessionCard=card(ui.scroll,"Class3Qualification");sessionCard.Name="Class3Session"
+				text(sessionCard,(if class3Session.actorId=="player" then T("Your character") elseif activeActor then T(activeActor.name) else T("Class3ActorUnavailable")).." · "..T(if activePath then activePath.Name else "Class3PathUnavailable"),16)
+				text(sessionCard,T(if class3Session.status=="Saving" then "Class3Saving" elseif class3Session.status=="Active" then "Class3Active" else "Class3Stopped"),15)
+				if class3Session.problem then text(sessionCard,class3Reason(class3Session.problem),15)end
+				button(sessionCard,"Class3Cancel",not requestBusy and class3Session.status=="Active",function()ui.act("CancelClass3Trial",{})end).Name="CancelClass3Trial"
+			end
 			if not a.classId then text(head,"Select a class in Guild");return end
 			ClassBadge(head,a.classId,T)
 			if tab=="Status" then drawStatus(data,catalog,actorId,busy);return end
-			if catalog.StatusAllocationAvailable then button(head,"Status points",not busy,function()ui.navigate("Status")end).Name="OpenStatus" end
+			if catalog.StatusAllocationAvailable then button(head,"Status points",not requestBusy,function()ui.navigate("Status")end).Name="OpenStatus" end
 			local build=Rules.build(data,actorId)
+			local context=actorId..":"..tostring(a.classId)..":"..tostring(build.tier)..":"..tostring(build.path)
+			if selectionContext~=context then selectionContext=context;selectedClass3=nil;confirm=nil end
 			local mentorSession=data.heroMentorSession
 			local skillBlocked=busy or mentorSession~=nil or (e.tower.active ~= nil and e.tower.active.state == "Fighting")
 			text(head,T(a.classId).." · "..T(if build.path then Rules.Paths[build.path].Name else "Class 1").." · Lv"..a.level,18)
@@ -133,7 +152,7 @@ return function(ui: any)
 			end
 			local loadout=card(ui.scroll,"Skill loadout")
 			for _,id in ipairs(Rules.allowedSkills(build,catalog.Character.Classes[a.classId].SkillId)) do
-				button(loadout,T(if Rules.Abilities[id] then Rules.Abilities[id].Name else "Starter skill")..(if build.equipped==id then " ✓" else ""),not busy,function() ui.act("EquipSkill",{actorId=actorId,skillId=id}) end)
+				button(loadout,T(if Rules.Abilities[id] then Rules.Abilities[id].Name else "Starter skill")..(if build.equipped==id then " ✓" else ""),not skillBlocked,function() ui.act("EquipSkill",{actorId=actorId,skillId=id}) end)
 			end
 			if not catalog.StatusAllocationAvailable then button(loadout,if confirm=="reset" then "Confirm reset · 10 Gold" else "Reset skills · 10 Gold",not busy,function() if confirm=="reset" then confirm=nil;ui.act("ResetSkills",{actorId=actorId}) else confirm="reset";ui.render() end end) end
 			local mentorActor=data.heroMentor and data.heroMentor[actorId]
@@ -162,6 +181,31 @@ return function(ui: any)
 				button(advancement,"Open required expeditions",not busy,function()ui.navigate("Quests")end).Name="OpenAdvancementQuests"
 			end
 			local pathIds={};for id,path in pairs(Rules.Paths) do if path.Class==a.classId and path.Tier==build.tier+1 and (not path.Parent or path.Parent==build.path) then table.insert(pathIds,id) end end;table.sort(pathIds)
+			local class3Actor=data.class3Proofs and data.class3Proofs[actorId]
+			if selectedClass3 and (not table.find(pathIds,selectedClass3) or not class3Actor or not class3Actor[selectedClass3])then selectedClass3=nil;confirm=nil end
+			if confirm and Rules.Paths[confirm] and not table.find(pathIds,confirm)then confirm=nil end
+			if class3Actor and build.tier==2 then
+				local trialCard=card(ui.scroll,"Class3Qualification");trialCard.Name="Class3Qualification"
+				text(trialCard,"Class3ProofIsNotPromotion",15)
+				text(trialCard,if actorId=="player" then "Class3PlayerLesson" else "Class3HeroLesson",15)
+				text(trialCard,if actorId=="player" then "Class3PlayerStation" else "Class3HeroStation",15)
+				local shown=0
+				for _,id in ipairs(pathIds)do
+					local state=class3Actor[id];local path=Rules.Paths[id]
+					if path.Tier==3 and state then
+						shown+=1
+						button(trialCard,T(path.Name)..(if selectedClass3==id then " ✓" else ""),not requestBusy and class3Session==nil,function()selectedClass3=id;confirm=nil;ui.render()end).Name="SelectClass3_"..id
+						text(trialCard,T(path.Name).." · "..T(if state.proven==true then "Class3ProofSaved" else "Class3ProofMissing"),14)
+					end
+				end
+				if selectedClass3 then
+					local state=class3Actor[selectedClass3];local release=data.releaseAdvancementProblems and data.releaseAdvancementProblems[actorId]
+					local problem=(release and release[selectedClass3]) or state.trialProblem
+					if problem then text(trialCard,class3Reason(problem),15)end
+					local chosen=selectedClass3;local chosenActor=actorId
+					button(trialCard,"Class3Start",not skillBlocked and not problem and state.proven~=true,function()confirm=nil;ui.act("StartClass3Trial",{actorId=chosenActor,pathId=chosen})end).Name="StartClass3Trial"
+				else text(trialCard,if shown==0 then "Class3NoPaths" else "Class3ChoosePath",15)end
+			end
 			for _,id in ipairs(pathIds) do
 				local path=Rules.Paths[id];text(advancement,T(path.Name).." · "..T(path.Prestige or "Standard").." · "..T("Tower floor").." "..path.Floor,16)
 				local art=Rules.Abilities[path.Skill]
@@ -174,12 +218,14 @@ return function(ui: any)
 				local releaseProblems=data.releaseAdvancementProblems and data.releaseAdvancementProblems[actorId]
 				local releaseProblem=releaseProblems and releaseProblems[id]
 				local mentorProblem=mentorActor and mentorActor[id] and mentorActor[id].advanceProblem
-				local problem=releaseProblem or mentorProblem or Rules.advanceProblem(data,a,build,id)
+				local class3Problem=class3Actor and class3Actor[id] and class3Actor[id].advanceProblem
+				local problem=releaseProblem or class3Problem or mentorProblem or Rules.advanceProblem(data,a,build,id)
 				local reasons={AdvancementLocked="Complete the listed level, quest and Tower requirements.",QuartersRequired="Build Hero Quarters first.",SecretUndiscovered="Gather wood, stone, ore and herbs to reveal this path."}
 				reasons.ReleaseContentUnavailable="Available after the Lv1–35 preview."
 				reasons.ClassMentorRequired="Complete the Class2 mentor chapter first."
 				reasons.HeroMentorRequired="Complete this hero's mentor trial for this path."
-				local label=if skillBlocked then T("Unavailable") elseif problem then T(reasons[problem] or problem) else T(if confirm==id then "Confirm class" else "Advance")..": "..T(path.Name)
+				if problem or skillBlocked then if confirm==id then confirm=nil end end
+				local label=if skillBlocked then T("Unavailable") elseif problem then (if class3Actor and class3Actor[id] then class3Reason(problem) else T(reasons[problem] or problem)) else T(if confirm==id then "Confirm class" else "Advance")..": "..T(path.Name)
 				button(advancement,label,not skillBlocked and problem==nil,function() if confirm==id then confirm=nil;ui.act("AdvanceClass",{actorId=actorId,pathId=id}) else confirm=id;ui.render() end end).Name="Advance_"..id
 			end
 			if actorId=="player" then

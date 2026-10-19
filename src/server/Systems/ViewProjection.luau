@@ -1,5 +1,5 @@
 --!strict
-return function(content: any, progression: any, util: any, expansion: any?, bestiary: any?, land: any?,noviceChapter:any?,campaignChapter:any?,permanentPasses:any?,appearance:any?,launch:any?)
+return function(content: any, progression: any, util: any, expansion: any?, bestiary: any?, land: any?,noviceChapter:any?,campaignChapter:any?,permanentPasses:any?,appearance:any?,launch:any?,class3:any?)
 	local catalog = { HeroTemplates=util.copy(content.HeroTemplates),Bestiary=if bestiary then util.copy(bestiary) else nil, Tavern=util.copy(content.Tavern),HallUpgrades=util.copy(content.HallUpgrades),Journal=util.copy(content.Journal),JournalOrder=util.copy(content.JournalOrder),Dispatch=util.copy(content.Dispatch),DispatchOrder=util.copy(content.DispatchOrder),ElixirProductId=content.Elixir.DeveloperProductId,ElixirGold=content.Elixir.Gold,RosterLimit=content.Limits.Roster,
 		Expansion=if expansion then {Buildings=expansion.Buildings,BuildingOrder=expansion.BuildingOrder,Nodes=expansion.Nodes,Paths=expansion.Paths,Skills=expansion.Skills,SkillOrder=expansion.SkillOrder,Abilities=expansion.Abilities,Recipes=expansion.Recipes,Races=expansion.Races} else nil, Items = util.copy(content.Items), ItemOrder = util.copy(content.ItemOrder),
 		Adventurers = util.copy(content.Adventurers), AdventurerOrder = util.copy(content.AdventurerOrder),
@@ -38,8 +38,38 @@ return function(content: any, progression: any, util: any, expansion: any?, best
 			progression = util.copy(data.progression), quests = util.copy(data.quests), language = data.settings.language or "en" }
 		view.data.settlement.purchases=nil
 		view.data.recruitmentLevel=content:LevelFromXP(content.RecruitmentStartingXP(data),content.ProfileLevelCap(data))
-		if view.data.expansion then for _,build in pairs(view.data.expansion.actors)do build.mentorProof=nil end end
+		if view.data.expansion then for _,build in pairs(view.data.expansion.actors)do build.mentorProof=nil;build.class3Proof=nil end end
 		if launch and launch.Mentor then view.data.heroMentor=launch.Mentor.presentation(data) end
+		-- Derived qualification only: world admission still checks live anchor/session state.
+		-- Never copy a policy return table or a saved proof into the public view.
+		if class3 and class3.Proof and expansion and expansion.usesNoviceProgression(data) then
+			local proof=class3.Proof
+			local actors={player=data.character};for actorId,actor in pairs(data.adventurers)do actors[actorId]=actor end
+			local readiness={}
+			for actorId,actor in pairs(actors)do
+				local build=expansion.build(data,actorId)
+				local parent=build.path and expansion.Paths[build.path]
+				if build.tier==2 and parent and parent.Tier==2 and parent.Class==actor.classId then
+					local paths={}
+					for pathId,path in pairs(expansion.Paths)do
+						if path.Tier==3 and path.Class==actor.classId and (not path.Parent or path.Parent==build.path) then
+							local releaseProblem=if launch and launch.Release and launch.Release.Enabled then launch.Release.problem(data,"AdvanceClass",{actorId=actorId,pathId=pathId}) else nil
+							local trialProblem=releaseProblem or proof.problem(data,actorId,pathId)
+							if not trialProblem then
+								if actorId=="player" and class3.PlayerProblem then trialProblem=class3.PlayerProblem(data,pathId)
+								elseif actorId~="player" and class3.Trial then trialProblem=class3.Trial.class3Problem(data,actorId,pathId)end
+							end
+							local advanceProblem=releaseProblem or proof.advanceProblem(data,actorId,pathId)
+							paths[pathId]={proven=proof.hasProof(data,actorId,pathId)==true,
+								trialProblem=if type(trialProblem)=="string" then trialProblem elseif trialProblem~=nil then "Class3TrialUnavailable" else nil,
+								advanceProblem=if type(advanceProblem)=="string" then advanceProblem elseif advanceProblem~=nil then "Class3ProofRequired" else nil}
+						end
+					end
+					readiness[actorId]=paths
+				end
+			end
+			view.data.class3Proofs=readiness
+		end
 		if catalog.ReleaseContent and expansion then
 			local actors={player=data.character};for id,actor in pairs(data.adventurers)do actors[id]=actor end
 			local problems={}

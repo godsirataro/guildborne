@@ -1364,4 +1364,37 @@ for key,values in pairs(tacticalMessages)do englishCodes[key]=values[1];thai[key
 thai["Recruitment level unavailable."]="ยังไม่มีข้อมูลเลเวลเริ่มต้นของฮีโร่"
 thai["Use your guild workshop or the city forge. A placed Blacksmith on your island is required."]="ใช้โรงงานกิลด์หรือโรงตีเหล็กในเมือง โดยต้องวางโรงตีเหล็กบนเกาะของคุณก่อน"
 thai["Visit your guild workshop or the city forge to craft."]="ไปที่โรงงานกิลด์หรือโรงตีเหล็กในเมืองเพื่อคราฟต์"
+local class3Messages={
+ Class3Qualification={"Class 3 qualification","การทดสอบคุณสมบัติคลาส 3"},
+ Class3ProofIsNotPromotion={"Saved proof qualifies this actor for this path. Class advancement is a separate choice below.","หลักฐานที่บันทึกใช้กับตัวละครและสายนี้เท่านั้น การเลื่อนคลาสต้องเลือกยืนยันแยกด้านล่าง"},
+ Class3PlayerLesson={"Use the selected borrowed art to deal damage or heal; a Guard art must reduce an incoming hit. Dodge twice and win.","ใช้สกิลยืมของสายที่เลือกให้เกิดความเสียหายหรือฟื้นฟูจริง หากเป็นสกิลป้องกันต้องลดความเสียหายจากการโจมตี หลบสองครั้งและชนะ"},
+ Class3HeroLesson={"This hero must produce the selected ability's effect, face three retaliations, and win.","ฮีโร่ตัวนี้ต้องแสดงผลจริงของสกิลที่เลือก เผชิญการตอบโต้สามครั้ง และชนะ"},
+ Class3PlayerStation={"Visit Sela's mastery station in Crosshaven to begin.","ไปยังจุดทดสอบความชำนาญของเซลาที่ครอสเฮเวนเพื่อเริ่ม"},
+ Class3HeroStation={"Begin hero qualification on your own guild island.","เริ่มทดสอบคุณสมบัติฮีโร่บนเกาะกิลด์ของคุณ"},
+ Class3ChoosePath={"Select the path this actor will qualify for.","เลือกสายที่จะให้ตัวละครนี้ทดสอบคุณสมบัติ"},
+ Class3NoPaths={"No Class 3 trial paths are available for this actor.","ยังไม่มีสายทดสอบคลาส 3 สำหรับตัวละครนี้"},
+ Class3ProofSaved={"Proof saved for this actor and path","บันทึกหลักฐานสำหรับตัวละครและสายนี้แล้ว"},
+ Class3ProofMissing={"Proof not yet saved","ยังไม่ได้บันทึกหลักฐาน"},
+ Class3Start={"Begin selected Class 3 trial","เริ่มทดสอบคลาส 3 สายที่เลือก"},
+ Class3Cancel={"Cancel Class 3 trial","ยกเลิกการทดสอบคลาส 3"},
+ Class3Active={"Trial in progress. Build changes are unavailable until it ends.","กำลังทดสอบ ยังเปลี่ยนการจัดตัวละครไม่ได้จนกว่าจะสิ้นสุด"},
+ Class3Saving={"Saving the trial result. Proof is not confirmed yet. The server retries pending delivery automatically; wait before changing builds or advancing.","กำลังบันทึกผลทดสอบ ยังไม่ยืนยันหลักฐาน เซิร์ฟเวอร์จะลองส่งผลที่ค้างโดยอัตโนมัติ กรุณารอก่อนเปลี่ยนการจัดตัวละครหรือเลื่อนคลาส"},
+ Class3Stopped={"Trial stopped. Review the reason before starting again.","การทดสอบหยุดแล้ว ตรวจสาเหตุก่อนเริ่มใหม่"},
+ Class3ActorUnavailable={"Trial actor unavailable","ไม่พบตัวละครที่กำลังทดสอบ"},
+ Class3PathUnavailable={"Trial path unavailable","ไม่พบสายที่กำลังทดสอบ"},
+ Class3LevelLocked={"Your character needs level 70, Guild Hall 11, and the required story access for this mastery lesson.","ตัวละครของคุณต้องมีเลเวล 70 หอกิลด์ระดับ 11 และความคืบหน้าเนื้อเรื่องที่กำหนดสำหรับบททดสอบนี้"},
+ ReturnToCrosshaven={"Return to Crosshaven to begin the player mastery lesson.","กลับไปครอสเฮเวนเพื่อเริ่มบททดสอบความชำนาญของตัวละครคุณ"},
+ Class3SavePending={"The trial result is awaiting save confirmation. If profile recovery is offered, use Retry save; do not start another trial to recover this result.","ผลทดสอบกำลังรอยืนยันการบันทึก หากมีตัวเลือกกู้คืนโปรไฟล์ ให้ใช้ลองบันทึกอีกครั้ง อย่าเริ่มทดสอบใหม่เพื่อกู้คืนผลนี้"},
+ Class3ReceiptHistoryUnavailable={"The exact delivery history is unavailable. This result cannot be retried or confirmed. Check saved proof separately; profile recovery cannot recreate this receipt.","ไม่มีประวัติการส่งผลที่ตรงกัน จึงลองส่งหรือยืนยันผลนี้ไม่ได้ ตรวจหลักฐานที่บันทึกแยกต่างหาก การกู้คืนโปรไฟล์ไม่สามารถสร้างใบรับผลนี้ขึ้นใหม่"},
+ Class3VisitMentor={"Visit the appropriate Class 3 mentor station first.","ไปยังจุดผู้ฝึกคลาส 3 ที่ตรงกับตัวละครก่อน"},
+ Class3ActorNotReady={"The actor or trial context is no longer ready. Return to the mentor when ready.","ตัวละครหรือสถานะการทดสอบยังไม่พร้อม กลับไปหาผู้ฝึกเมื่อพร้อม"},
+ Class3LessonsIncomplete={"Complete the selected ability's real effect and all combat lessons before winning.","แสดงผลจริงของสกิลที่เลือกและทำบททดสอบการต่อสู้ให้ครบก่อนชนะ"},
+ Class3ProofRequired={"Save proof for this actor and selected Class 3 path first.","บันทึกหลักฐานของตัวละครและสายคลาส 3 ที่เลือกก่อน"},
+ Class3TrialUnavailable={"Class 3 qualification is unavailable for this actor or session.","การทดสอบคุณสมบัติคลาส 3 ยังไม่พร้อมสำหรับตัวละครหรือเซสชันนี้"},
+ Class3ActorChanged={"The actor's build changed. This trial result cannot be applied.","การจัดตัวละครเปลี่ยนไป จึงใช้ผลทดสอบนี้ไม่ได้"},
+ Class3AlreadyProven={"This trial identity is already proven; it cannot create another completion.","มีหลักฐานของการทดสอบนี้แล้ว จึงสร้างผลสำเร็จซ้ำไม่ได้"},
+ Class3CampaignUnavailable={"The story objective cannot accept this trial result now.","เป้าหมายเนื้อเรื่องยังรับผลทดสอบนี้ไม่ได้"},
+ ReceiptHistoryUnavailable={"The exact delivery history is unavailable. This result cannot be retried or confirmed. Check saved proof separately; saving again cannot recreate it.","ไม่มีประวัติการส่งผลที่ตรงกัน จึงลองส่งหรือยืนยันผลนี้ไม่ได้ ตรวจหลักฐานที่บันทึกแยกต่างหาก การบันทึกซ้ำไม่สามารถสร้างผลนี้ขึ้นใหม่"},
+}
+for key,values in pairs(class3Messages)do englishCodes[key]=values[1];thai[key]=values[2]end
 return Localization
