@@ -82,10 +82,10 @@ return function(collectionProvider:any?)
             local reduced=workspace:GetAttribute(Motion.ReducedMotionAttribute)==true
             local moving=actor.model:GetAttribute("EscortMoving")==true
             local deadlineAttribute,speakerAttribute=BorinMotion.interactionAttributes(actor.model:GetAttribute("NpcId"))
-            -- Day phase uses the world's existing clock; interaction deadlines use server time.
+            -- Day phase uses the world's existing clock; short work bouts and interaction deadlines use server time.
             -- Near dialogue scans are capped at ten per second, and far actors do no GUI scans.
             if now>=actor.nextSample or (actor.tier=="Far" and distance<=140) then
-                local sample=if actor.id then Life.sample(actor.id,Lighting.ClockTime*3600,distance,actor.tier) else nil
+                local sample=if actor.id then Life.sample(actor.id,Lighting.ClockTime*3600,distance,actor.tier,nil,now) else nil
                 actor.tier=if sample then sample.tier elseif distance>160 then "Far" else "Near"
                 actor.activity=if sample then sample.activity else "Work"
                 actor.nextSample=now+(if sample then sample.updateSeconds else .1)

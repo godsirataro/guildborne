@@ -87,6 +87,58 @@ return function(test:any,eq:any)
         for index,id in ipairs(before.questIds) do eq(after.questIds[index],id) end
         eq(assert(snapshot.sample("smith_borin",.6,0,nil,0)).activity,"Rest")
     end)
+    test("stationary routines alternate at fixed daylight and preserve quest access",function()
+        for _,id in ipairs(config.Ids) do
+            local r=config.Routines[id];local period=r.work+r.pause
+            local start=(period-r.offset)%period
+            for _,distance in ipairs({0,100,1000}) do
+                local work=assert(life.sample(id,37800,distance,nil,nil,start))
+                local pause=assert(life.sample(id,37800,distance,nil,nil,start+r.work))
+                eq(work.activity,"Work");eq(pause.activity,"Social");eq(pause.scheduledActivity,"Work")
+                eq(pause.accessible,true);eq(pause.routeEnabled,false)
+                eq(pause.anchor.x,work.anchor.x);eq(pause.anchor.z,work.anchor.z)
+                eq(#pause.questIds,#work.questIds);eq(pause.poseOwner,work.poseOwner)
+                for i,q in ipairs(work.questIds) do eq(pause.questIds[i],q) end
+                eq(assert(life.sample(id,37800,distance,nil,nil,start+period)).activity,"Work")
+            end
+        end
+        -- Neighbours do not all stop together at the same server timestamp.
+        eq(assert(life.sample("marshal_elian",37800,0,nil,nil,0)).activity,"Work")
+        eq(assert(life.sample("harbormaster_sela",37800,0,nil,nil,0)).activity,"Social")
+    end)
+    test("routine pause boundaries retain interaction recovery and daily precedence",function()
+        eq(assert(life.sample("marshal_elian",37800,0,nil,nil,15.999)).activity,"Work")
+        eq(assert(life.sample("marshal_elian",37800,0,nil,nil,16)).activity,"Social")
+        eq(assert(life.sample("marshal_elian",37800,0,nil,nil,24)).activity,"Work")
+        eq(assert(life.sample("marshal_elian",37800,0,nil,37801,16)).activity,"Interact")
+        eq(assert(life.sample("marshal_elian",37801,0,nil,37801,17)).activity,"Recover")
+        eq(assert(life.sample("marshal_elian",37802,0,nil,37801,18)).activity,"Social")
+        eq(assert(life.sample("marshal_elian",0,0,nil,nil,0)).activity,"Rest")
+        eq(assert(life.sample("marshal_elian",64800,0,nil,nil,0)).activity,"Social")
+        eq(assert(life.sample("marshal_elian",37800,0)).activity,"Work")
+        for _,bad in ipairs({-1,math.huge,0/0,"0",false}) do
+            eq(life.sample("marshal_elian",37800,0,nil,nil,bad),nil)
+        end
+    end)
+    test("routine definitions reject malformed partial or unknown entries and snapshot inputs",function()
+        local c=copy(config);c.Routines=nil
+        local legacy=assert(make(c,entries,catalog))
+        eq(assert(legacy.sample("marshal_elian",37800,0,nil,nil,16)).activity,"Work")
+        c=copy(config);c.Routines.marshal_elian=nil;eq(make(c,entries,catalog),nil)
+        c=copy(config);c.Routines.unknown={work=16,pause=8,offset=0};eq(make(c,entries,catalog),nil)
+        for _,field in ipairs({"work","pause","offset"}) do
+            for _,bad in ipairs({math.huge,0/0,-1,"8",false}) do
+                c=copy(config);c.Routines.marshal_elian[field]=bad;eq(make(c,entries,catalog),nil)
+            end
+            c=copy(config);c.Routines.marshal_elian[field]=nil;eq(make(c,entries,catalog),nil)
+        end
+        c=copy(config);c.Routines.marshal_elian.work=7;eq(make(c,entries,catalog),nil)
+        c=copy(config);c.Routines.marshal_elian.pause=31;eq(make(c,entries,catalog),nil)
+        c=copy(config);c.Routines.marshal_elian.offset=24;eq(make(c,entries,catalog),nil)
+        c=copy(config);c.Routines.marshal_elian.destination="elsewhere";eq(make(c,entries,catalog),nil)
+        c=copy(config);local snapshot=assert(make(c,entries,catalog));c.Routines.marshal_elian.work=120
+        eq(assert(snapshot.sample("marshal_elian",37800,0,nil,nil,16)).activity,"Social")
+    end)
     test("bad samples fail closed and projections cannot change registry",function()
         for _,n in ipairs({-1,math.huge,-math.huge,0/0}) do
             eq(life.sample("borga",n,0),nil);eq(life.sample("borga",0,n),nil);eq(life.sample("borga",0,0,nil,n),nil)

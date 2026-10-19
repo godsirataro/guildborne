@@ -12,4 +12,25 @@ return table.freeze({
         table.freeze({start=79200,activity="Rest"}),
     }),
     NearEnter=50, NearExit=65, FarEnter=160, FarExit=140,
+    -- Short stationary work bouts followed by an attentive pause. Offsets keep
+    -- nearby residents from stopping together; the caller supplies server time.
+    -- Pauses never close a service or move an actor away from a quest anchor.
+    Routines=table.freeze({
+        borga=table.freeze({work=32,pause=8,offset=0}),
+        mogra=table.freeze({work=16,pause=8,offset=4}),
+        rukk=table.freeze({work=16,pause=8,offset=12}),
+        ghar=table.freeze({work=24,pause=8,offset=20}),
+        marshal_elian=table.freeze({work=16,pause=8,offset=0}),
+        arborist_vaela=table.freeze({work=24,pause=8,offset=8}),
+        smith_borin=table.freeze({work=24,pause=8,offset=16}),
+        cartographer_nyra=table.freeze({work=16,pause=8,offset=8}),
+        harbormaster_sela=table.freeze({work=16,pause=8,offset=16}),
+        steward_roka=table.freeze({work=24,pause=8,offset=24}),
+        host_crownford=table.freeze({work=16,pause=8,offset=12}),
+        host_sylvaris=table.freeze({work=24,pause=8,offset=20}),
+        host_deepforge=table.freeze({work=24,pause=8,offset=4}),
+        host_astralis=table.freeze({work=16,pause=8,offset=20}),
+        host_crosshaven=table.freeze({work=16,pause=8,offset=4}),
+        host_ironroot=table.freeze({work=24,pause=8,offset=12}),
+    }),
 })

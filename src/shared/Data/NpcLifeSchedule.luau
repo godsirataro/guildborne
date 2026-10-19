@@ -29,11 +29,24 @@ return function(config:any,entries:any,catalog:any):(any?,string?)
             or not ({Work=true,Rest=true,Social=true})[p.activity] then return nil,"InvalidDefinitions" end
         phases[i]={start=p.start,activity=p.activity};last=p.start
     end
-    local records:any={};local aliases:any={}
+    local records:any={};local aliases:any={};local routines:any={}
     for _,id in ipairs(config.Ids) do
         local e=entries[id]
         if type(id)~="string" or records[id] or type(e)~="table" or type(e.name)~="string" or e.name=="" or not finite(e.x) or not finite(e.z) then return nil,"InvalidIdentityOrAnchor" end
         records[id]={id=id,name=e.name,x=e.x,z=e.z,hooks={}}
+    end
+    if config.Routines~=nil then
+        if type(config.Routines)~="table" then return nil,"InvalidRoutines" end
+        local count=0
+        for id,r in pairs(config.Routines) do
+            if not records[id] or type(r)~="table" or not finite(r.work) or not finite(r.pause) or not finite(r.offset)
+                or r.work<8 or r.work>120 or r.pause<2 or r.pause>30 or r.offset<0 or r.offset>=r.work+r.pause then
+                return nil,"InvalidRoutines"
+            end
+            for key in pairs(r) do if key~="work" and key~="pause" and key~="offset" then return nil,"InvalidRoutines" end end
+            routines[id]={work=r.work,pause=r.pause,offset=r.offset};count+=1
+        end
+        if count~=#config.Ids then return nil,"InvalidRoutines" end
     end
     for id,r in pairs(records) do
         if aliases[r.name] or (records[r.name] and r.name~=id) then return nil,"DuplicateAlias" end
@@ -54,15 +67,23 @@ return function(config:any,entries:any,catalog:any):(any?,string?)
         if type(identity)~="string" then return nil end
         return if records[identity] then identity else aliases[identity]
     end
-    function S.sample(identity:any,now:any,distance:any,previousTier:any?,interactUntil:any?):(any?,string?)
+    function S.sample(identity:any,now:any,distance:any,previousTier:any?,interactUntil:any?,routineClock:any?):(any?,string?)
         local id=S.resolve(identity)
         if not id then return nil,"UnknownNpc" end
         if not finite(now) or now<0 or not finite(distance) or distance<0
             or (interactUntil~=nil and (not finite(interactUntil) or interactUntil<0))
+            or (routineClock~=nil and (not finite(routineClock) or routineClock<0))
             or (previousTier~=nil and previousTier~="Near" and previousTier~="Mid" and previousTier~="Far") then return nil,"InvalidSample" end
         local r=records[id];local timeOfDay=now%day;local activity=phases[1].activity
         for _,p in ipairs(phases) do if timeOfDay>=p.start then activity=p.activity end end
         local scheduled=activity
+        local routine=routines[id]
+        -- Day/night and short work bouts use separate clocks. A fixed Lighting
+        -- clock must not freeze the work/pause cycle. No local timers or RNG.
+        if activity=="Work" and routineClock~=nil and routine then
+            local period=routine.work+routine.pause
+            if (routineClock%period+routine.offset)%period>=routine.work then activity="Social" end
+        end
         if interactUntil~=nil then
             if now<interactUntil then activity="Interact"
             elseif now-interactUntil<recovery then activity="Recover" end
