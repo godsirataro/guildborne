@@ -1,0 +1,206 @@
+{
+  "base": "cf6f2e00046985d1a62f00caf1b4ae6efe90b359",
+  "status": "READY_FOR_NATIVE_CLOSURE_REVIEW",
+  "files": [
+    {
+      "path": "assets/production/world-slice/blacksmith-roof-closure/.gitattributes",
+      "size": 29,
+      "sha256": "730a35ae3d558080083c3103d9ac8100c3f6561678092abe341701dfa331eb1d"
+    },
+    {
+      "path": "assets/production/world-slice/blacksmith-roof-closure/after/01_west_gable_full.png",
+      "size": 1530836,
+      "sha256": "49bcf556d2385c2297aac90363e3e4e93a732dd578a656910937db19e1faff57"
+    },
+    {
+      "path": "assets/production/world-slice/blacksmith-roof-closure/after/02_interior_west_skyhole.png",
+      "size": 1338160,
+      "sha256": "8cff04ed22514a6d9d642ac51e95a4019c214257c5f52ebe16b2fc0eabb36d09"
+    },
+    {
+      "path": "assets/production/world-slice/blacksmith-roof-closure/after/03_east_apex_closeup.png",
+      "size": 1465804,
+      "sha256": "87f3c06ee7fe8693d259f3507dcfb70653834658962c9d1a6f3fd8f3623c8a01"
+    },
+    {
+      "path": "assets/production/world-slice/blacksmith-roof-closure/after/render-evidence.json",
+      "size": 1726,
+      "sha256": "ce63552adc486407fdcf274e23640f07a339c70bed7761f3a4cd211b5ff67604"
+    },
+    {
+      "path": "assets/production/world-slice/blacksmith-roof-closure/after/source.blend",
+      "size": 371845,
+      "sha256": "c579389fc5e08f21ac4bfc18195b0a9c115ed61c2a4c0efe7acf0fefa8d9e84b"
+    },
+    {
+      "path": "assets/production/world-slice/blacksmith-roof-closure/before/01_west_gable_full.png",
+      "size": 1502171,
+      "sha256": "e4f3aaa0afada5bc9cfff46613ad3e20bf7c7c509a9ce306ae433879f2692c14"
+    },
+    {
+      "path": "assets/production/world-slice/blacksmith-roof-closure/before/02_interior_west_skyhole.png",
+      "size": 1390083,
+      "sha256": "9893df0495bd8d6a6d6793dc3cce6a29b76ff5d04848ceb09ac278a34f7583bb"
+    },
+    {
+      "path": "assets/production/world-slice/blacksmith-roof-closure/before/03_east_apex_closeup.png",
+      "size": 1467526,
+      "sha256": "85e42fb77773f7cd081e542cb7bb96c74d835f712cfc09640a65fa2fc591a935"
+    },
+    {
+      "path": "assets/production/world-slice/blacksmith-roof-closure/before/render-evidence.json",
+      "size": 1728,
+      "sha256": "7aeee23898e3de048235da34183f804ca32893eb502881e28ffe459de8969612"
+    },
+    {
+      "path": "assets/production/world-slice/blacksmith-roof-closure/before/source.blend",
+      "size": 369845,
+      "sha256": "c479d836af25c7a1134a108c774683061e369ecd9c288c1d6be313bc466fdf2c"
+    },
+    {
+      "path": "assets/production/world-slice/blacksmith-roof-closure/metrics.json",
+      "size": 96,
+      "sha256": "46445fa9ef0ffb92107888890413d2e8ef6337332cd7be4fe3a8c81037933185"
+    },
+    {
+      "path": "assets/production/world-slice/blacksmith-roof-closure/provenance.json",
+      "size": 1165,
+      "sha256": "86ed8d10b2ca9a425d8afb8632672279cc130eb54402620a9d4210702eaf819c"
+    },
+    {
+      "path": "assets/production/world-slice/blacksmith-roof-closure/scenery.mesh.json",
+      "size": 15651,
+      "sha256": "821b419df0f43fb3d3702be9d11948a703af6c97d2947a315d334a217f2bdae6"
+    },
+    {
+      "path": "assets/production/world-slice/blacksmith-roof-closure/solids.json",
+      "size": 1708,
+      "sha256": "80e742c5d2a845c8386100d0a463dfb8f17d09dd2e92a5ec0f5de3c59ea2c0da"
+    },
+    {
+      "path": "production/world/quality-slice/blacksmith-roof-closure/.gitattributes",
+      "size": 29,
+      "sha256": "730a35ae3d558080083c3103d9ac8100c3f6561678092abe341701dfa331eb1d"
+    },
+    {
+      "path": "production/world/quality-slice/blacksmith-roof-closure/after.exit.txt",
+      "size": 3,
+      "sha256": "13bf7b3039c63bf5a50491fa3cfd8eb4e699d1ba1436315aef9cbe5711530354"
+    },
+    {
+      "path": "production/world/quality-slice/blacksmith-roof-closure/after.stderr.log",
+      "size": 836,
+      "sha256": "65088df775b4638583accfc79b08babd435a559cdbc6ae44f0fe61cf02d6365d"
+    },
+    {
+      "path": "production/world/quality-slice/blacksmith-roof-closure/after.stdout.log",
+      "size": 594,
+      "sha256": "6eec4f55214fb8ba4cb4d9e60d1a954e6381400105d9fde9797addb50e2479c9"
+    },
+    {
+      "path": "production/world/quality-slice/blacksmith-roof-closure/before.exit.txt",
+      "size": 3,
+      "sha256": "13bf7b3039c63bf5a50491fa3cfd8eb4e699d1ba1436315aef9cbe5711530354"
+    },
+    {
+      "path": "production/world/quality-slice/blacksmith-roof-closure/before.stderr.log",
+      "size": 836,
+      "sha256": "65088df775b4638583accfc79b08babd435a559cdbc6ae44f0fe61cf02d6365d"
+    },
+    {
+      "path": "production/world/quality-slice/blacksmith-roof-closure/before.stdout.log",
+      "size": 597,
+      "sha256": "1deb20e1606bee08c7b25f9935b9d83de555aa7ec4408f910468ed2f1a030274"
+    },
+    {
+      "path": "production/world/quality-slice/blacksmith-roof-closure/build.py",
+      "size": 4677,
+      "sha256": "03362ca9e9147011daefe3d3b893374f8f3e96d1faa64870a45f09c548200faa"
+    },
+    {
+      "path": "production/world/quality-slice/blacksmith-roof-closure/cameras.json",
+      "size": 689,
+      "sha256": "a0978d858b44432af42a56ced18a5a45f30cb9b88eb2b2173a2006d6022479c0"
+    },
+    {
+      "path": "production/world/quality-slice/blacksmith-roof-closure/geometry-bounds.json",
+      "size": 1276,
+      "sha256": "4c454ce78a03956b6e1d6ea974daa52f65fbd7f9045549bd197ea840e3bdbedb"
+    },
+    {
+      "path": "production/world/quality-slice/blacksmith-roof-closure/HANDOFF.md",
+      "size": 4343,
+      "sha256": "43b3646e94fe1a8d88244a540afd4df91d4b2ccdef28d189ff2c05936a3e3bc5"
+    },
+    {
+      "path": "production/world/quality-slice/blacksmith-roof-closure/independent-01.exit.json",
+      "size": 15,
+      "sha256": "f468f8bf84d59a390a40e5d5ac0291111e0e6eeb79821864810ae628cbd3507e"
+    },
+    {
+      "path": "production/world/quality-slice/blacksmith-roof-closure/independent-01.stderr.txt",
+      "size": 657,
+      "sha256": "063cdb95aec3817798b6ac1243d3ec111f831ecd24133a993e78a26d0a184601"
+    },
+    {
+      "path": "production/world/quality-slice/blacksmith-roof-closure/independent-01.stdout.txt",
+      "size": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "path": "production/world/quality-slice/blacksmith-roof-closure/independent-02.exit.json",
+      "size": 15,
+      "sha256": "f468f8bf84d59a390a40e5d5ac0291111e0e6eeb79821864810ae628cbd3507e"
+    },
+    {
+      "path": "production/world/quality-slice/blacksmith-roof-closure/independent-02.stderr.txt",
+      "size": 613,
+      "sha256": "510c528ef0cfb27217f1b69c81af0d25995d9916b5a250c231f4e59b8c85c341"
+    },
+    {
+      "path": "production/world/quality-slice/blacksmith-roof-closure/independent-02.stdout.txt",
+      "size": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "path": "production/world/quality-slice/blacksmith-roof-closure/independent-03.exit.json",
+      "size": 15,
+      "sha256": "47b8b6b49d4695fe6e036bd916538aff4f46773e212ca0d429db80f3963e2cfe"
+    },
+    {
+      "path": "production/world/quality-slice/blacksmith-roof-closure/independent-03.stderr.txt",
+      "size": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "path": "production/world/quality-slice/blacksmith-roof-closure/independent-03.stdout.txt",
+      "size": 6001,
+      "sha256": "e0c511f62f381125321bf93e1d1f6d2c7bc24895ba7132d43d3a5f8e7b7088de"
+    },
+    {
+      "path": "production/world/quality-slice/blacksmith-roof-closure/independent-review.json",
+      "size": 6508,
+      "sha256": "84579575ef9d8b87c70414ba390964700ba219108d9cf160abdff5fff9507424"
+    },
+    {
+      "path": "production/world/quality-slice/blacksmith-roof-closure/independent-visual-review.md",
+      "size": 2555,
+      "sha256": "b7e6aa05e2eb694b339ebd62be02025fe46c1656f32822b4fee5abf532ea97de"
+    },
+    {
+      "path": "production/world/quality-slice/blacksmith-roof-closure/render.py",
+      "size": 10795,
+      "sha256": "7832b16f28750763cadab2d1ae92598ce13bfcfb75d384a37eb8e292e94884fb"
+    },
+    {
+      "path": "production/world/quality-slice/blacksmith-roof-closure/source-survey.json",
+      "size": 168136,
+      "sha256": "eb21939e0b68d2f10bb676b4481a44dcb5d4528cbef92aa11faaef3073ac0b66"
+    },
+    {
+      "path": "production/world/quality-slice/blacksmith-roof-closure/verify.py",
+      "size": 10997,
+      "sha256": "907b1183184f4c4aa170253b1cd73f3b1a6defe1520ee16eaadeb34c508d0219"
+    }
+  ]
+}

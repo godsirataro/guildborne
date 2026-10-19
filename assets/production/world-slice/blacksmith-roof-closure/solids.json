@@ -1,0 +1,93 @@
+[
+  {
+    "name": "west_closed_gable",
+    "meshId": "smith_roof_west_cap_00",
+    "firstVertex": 1,
+    "vertexCount": 6,
+    "firstTriangle": 1,
+    "triangleCount": 8,
+    "center": [
+      349.75,
+      24.066666666666666,
+      -1000.0
+    ]
+  },
+  {
+    "name": "left",
+    "meshId": "smith_roof_west_timber_00",
+    "firstVertex": 1,
+    "vertexCount": 8,
+    "firstTriangle": 1,
+    "triangleCount": 12,
+    "center": [
+      349.36,
+      25.575,
+      -1013.0
+    ]
+  },
+  {
+    "name": "right",
+    "meshId": "smith_roof_west_timber_00",
+    "firstVertex": 9,
+    "vertexCount": 8,
+    "firstTriangle": 13,
+    "triangleCount": 12,
+    "center": [
+      349.36,
+      25.575,
+      -987.0
+    ]
+  },
+  {
+    "name": "kingpost",
+    "meshId": "smith_roof_west_timber_00",
+    "firstVertex": 17,
+    "vertexCount": 8,
+    "firstTriangle": 25,
+    "triangleCount": 12,
+    "center": [
+      349.36,
+      25.575,
+      -1000.0
+    ]
+  },
+  {
+    "name": "tie_beam",
+    "meshId": "smith_roof_west_timber_00",
+    "firstVertex": 25,
+    "vertexCount": 8,
+    "firstTriangle": 37,
+    "triangleCount": 12,
+    "center": [
+      349.36,
+      21.25,
+      -1000.0
+    ]
+  },
+  {
+    "name": "east_roof_band_-1",
+    "meshId": "smith_roof_east_seam_00",
+    "firstVertex": 1,
+    "vertexCount": 8,
+    "firstTriangle": 1,
+    "triangleCount": 12,
+    "center": [
+      390.07500000000005,
+      25.369239226823776,
+      -1013.5
+    ]
+  },
+  {
+    "name": "east_roof_band_1",
+    "meshId": "smith_roof_east_seam_00",
+    "firstVertex": 9,
+    "vertexCount": 8,
+    "firstTriangle": 13,
+    "triangleCount": 12,
+    "center": [
+      390.07500000000005,
+      25.369239226823776,
+      -986.5
+    ]
+  }
+]

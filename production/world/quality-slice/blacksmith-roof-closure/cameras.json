@@ -1,0 +1,50 @@
+{
+  "status": "MATCHED_OFFLINE_COMPARISON_NOT_NATIVE_CAPTURE",
+  "resolution": [
+    1600,
+    900
+  ],
+  "samples": 24,
+  "lens": 32,
+  "views": [
+    {
+      "name": "01_west_gable_full",
+      "eye": [
+        285,
+        24,
+        -995
+      ],
+      "target": [
+        350,
+        19,
+        -1000
+      ]
+    },
+    {
+      "name": "02_interior_west_skyhole",
+      "eye": [
+        380,
+        12,
+        -999
+      ],
+      "target": [
+        349,
+        26,
+        -1000
+      ]
+    },
+    {
+      "name": "03_east_apex_closeup",
+      "eye": [
+        412,
+        29,
+        -999
+      ],
+      "target": [
+        390,
+        30,
+        -1000
+      ]
+    }
+  ]
+}

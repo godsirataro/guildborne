@@ -1,0 +1,25 @@
+{
+  "status": "BLENDER_RENDERED_NOT_NATIVE",
+  "variant": "after",
+  "nativePartCount": 297,
+  "cameraSha256": "a0978d858b44432af42a56ced18a5a45f30cb9b88eb2b2173a2006d6022479c0",
+  "packetSha256": "821b419df0f43fb3d3702be9d11948a703af6c97d2947a315d334a217f2bdae6",
+  "packetIncluded": true,
+  "existingFacadeIncluded": true,
+  "existingFacadeSha256": "1e803ebb0bfa131c7c0d2113ce50eb3227fcc82fea1aa9ab56ab94156135cf51",
+  "existingApronIncluded": true,
+  "existingApronSha256": "d08edc14a62bd2fc9e1a3fb0e5a6b205df9532358567e19d93a3e22b356bb46f",
+  "surveySha256": "eb21939e0b68d2f10bb676b4481a44dcb5d4528cbef92aa11faaef3073ac0b66",
+  "rendererSha256": "7832b16f28750763cadab2d1ae92598ce13bfcfb75d384a37eb8e292e94884fb",
+  "context": "Literal CityKit Blacksmith and Alchemy shells/interiors with actual pivots, roof rotations, palette, banners; chimney, sign boards, market stalls, ground, market courtyard, five roads, bounded east walls; existing city-smith-apron AND blacksmith-facade packets in BOTH variants; landscape centers within X160..455/Z-1130..-880.",
+  "omissions": [
+    "Actors/companions/NPCs and GUI labels omitted; no population proof",
+    "Distant city buildings, roads, monuments, island scenery and landscape outside bounded context omitted",
+    "Native materials, Roblox lighting/shadows and physical collision not reproduced; Blender comparison only"
+  ],
+  "images": {
+    "01_west_gable_full.png": "49bcf556d2385c2297aac90363e3e4e93a732dd578a656910937db19e1faff57",
+    "02_interior_west_skyhole.png": "8cff04ed22514a6d9d642ac51e95a4019c214257c5f52ebe16b2fc0eabb36d09",
+    "03_east_apex_closeup.png": "87f3c06ee7fe8693d259f3507dcfb70653834658962c9d1a6f3fd8f3623c8a01"
+  }
+}

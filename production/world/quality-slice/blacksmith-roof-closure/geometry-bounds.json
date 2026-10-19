@@ -1,0 +1,61 @@
+{
+  "status": "SOURCE_DERIVED_NOT_NATIVE",
+  "coordinateSystem": "RobloxYUp",
+  "roof": {
+    "underRidgeY": 30.457076616241284,
+    "slope": 0.36397023426620234,
+    "verticalThickness": 1.2770133269710944,
+    "xBounds": [
+      346,
+      394
+    ],
+    "nativeCenterY": 26,
+    "localHalfWidth": 16,
+    "halfThickness": 0.6
+  },
+  "west": {
+    "wallBounds": [
+      [
+        349.5,
+        1,
+        -1028
+      ],
+      [
+        350.5,
+        21,
+        -972
+      ]
+    ],
+    "capX": [
+      349.45,
+      350.05
+    ],
+    "baseY": 20.8,
+    "apexY": 30.6,
+    "halfSpan": 28,
+    "wallVerticalOverlap": 0.2,
+    "trimX": [
+      349.24,
+      349.48
+    ]
+  },
+  "east": {
+    "oldGableX": [
+      389.95,
+      390.45
+    ],
+    "oldApexY": 29.6,
+    "oldBaseY": 20.85,
+    "halfSpan": 27,
+    "newX": [
+      389.8,
+      390.35
+    ],
+    "oldGableVerticalOverlap": 0.15,
+    "roofVerticalOverlap": 0.12,
+    "frontRecessX": 0.1,
+    "backExtensionX": 0.15
+  },
+  "support": "West cap overlaps native wall and both roof OBBs; west trim overlaps cap. East bands overlap old gable and matching roof OBB.",
+  "scope": "Additive packet only; native door and previous packets unchanged. Closed decorative noncolliding solids, not weather/collision authority."
+}

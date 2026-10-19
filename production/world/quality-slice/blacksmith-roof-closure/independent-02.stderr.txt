@@ -1,0 +1,8 @@
+Traceback (most recent call last):
+  File "C:\Work\MySelf\Guildborne-smith-roof\production\world\quality-slice\blacksmith-roof-closure\verify.py", line 124, in <module>
+    if __name__=='__main__':main()
+                            ~~~~^^
+  File "C:\Work\MySelf\Guildborne-smith-roof\production\world\quality-slice\blacksmith-roof-closure\verify.py", line 60, in main
+    assert not(high[0]>389 and high[2]>-1008 and low[2]<-992 and low[1]<20.8-1e-6),('doorway',s['name'])
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+AssertionError: ('doorway', 'east_roof_band_-1')

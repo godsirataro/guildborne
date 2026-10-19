@@ -1,0 +1,17 @@
+{
+  "status": "ORIGINAL_FILE_GENERATED_NOT_NATIVE",
+  "origin": "Original Guildborne closed west gable, timber bracing, and additive east roof seam bands; no external assets/providers.",
+  "recipe": "production/world/quality-slice/blacksmith-roof-closure/build.py",
+  "recipeSha256": "03362ca9e9147011daefe3d3b893374f8f3e96d1faa64870a45f09c548200faa",
+  "helper": "production/world/quality-slice/ironveil-ore-yard/build.py",
+  "helperSha256": "5ab3711f35c92131017e7be1d35c3e0c0915661c25df677897fba06d98f5bc75",
+  "sourceHashes": {
+    "src/server/Services/CityKit.luau": "42c2fc8944530f774cfd4601e891d599e97aad84dc4f2be11c0a8bcb4eaaa4ed",
+    "src/server/Services/CentralCityWorld.luau": "812bb8f8db03fadf46c60b89706f106edde57386cba7d7a3bc676c84896df5b0",
+    "production/world/quality-slice/blacksmith-facade/build.py": "3c3dcadb18fff8c8533547a0c5cd572cf17f9dc9c8adbd428f7765b87b844750",
+    "assets/production/world-slice/blacksmith-facade/scenery.mesh.json": "1e803ebb0bfa131c7c0d2113ce50eb3227fcc82fea1aa9ab56ab94156135cf51"
+  },
+  "packetSha256": "821b419df0f43fb3d3702be9d11948a703af6c97d2947a315d334a217f2bdae6",
+  "runtimeIds": null,
+  "downloads": false
+}

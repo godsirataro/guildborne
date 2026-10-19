@@ -1,0 +1,8 @@
+Traceback (most recent call last):
+  File "C:\Work\MySelf\Guildborne-smith-roof\production\world\quality-slice\blacksmith-roof-closure\verify.py", line 124, in <module>
+    if __name__=='__main__':main()
+                            ~~~~^^
+  File "C:\Work\MySelf\Guildborne-smith-roof\production\world\quality-slice\blacksmith-roof-closure\verify.py", line 44, in main
+    for v in world:assert 349<=v[0]<=391 and -1029<=v[2]<=-971 and 20.79<=v[1]<=33,('unsafe_vertex',p['name'],v)
+                          ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+AssertionError: ('unsafe_vertex', 'smith_roof_east_seam_00', [389.8, 20.7, -1027.0])
