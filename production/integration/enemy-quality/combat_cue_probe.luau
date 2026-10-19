@@ -243,7 +243,7 @@ local ok,err=xpcall(function()
     script:SetAttribute("ProbeStatus","READY");print("READY_CLIENT_CUE_PROBE",script:GetFullName())
     while not armedAt and now()-readyAt<60 do pause(.05,"manual arm wait") end
     condition(armedAt~=nil and armedAt-readyAt<=60,"Manual arm deadline expired")
-    condition(covered(armedAt-1,armedAt),"Manual arm requires preceding 1s Heartbeats with gaps <= .15s")
+    observe(1,"Manual arm preceding 1s Heartbeats",armedAt-1)
     condition(not interference,"Camera changed during READY")
     script:SetAttribute("ProbeStatus","RUNNING")
 
