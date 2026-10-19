@@ -57,7 +57,27 @@ Bind Borin authored presentation to existing authoritative NPC and quest. Work/i
 
 Environment: local; skill: guildborne-npc-life
 
-Write scopes: src/server/Services/CivicCityWorld.luau, tests/studio_civic_host_interaction.luau, src/server/Services/FriendlyCityNpcs.luau, src/client/Controllers/FriendlyNpcAnimator.luau, src/shared/Presentation/BorinWorkMotion.luau, src/shared/Presentation/BorinPresentation.luau, tests/borin_presentation.luau, tests/studio_borin_integration.luau, production/npc-life/borin-integration.md
+Write scopes: src/server/Services/CivicCityWorld.luau, tests/studio_civic_host_interaction.luau, src/server/Services/FriendlyCityNpcs.luau, src/shared/Presentation/BorinWorkMotion.luau, src/shared/Presentation/BorinPresentation.luau, tests/borin_presentation.luau, tests/studio_borin_integration.luau, production/npc-life/borin-integration.md
+
+Required checks: source-contract, regression, independent-review
+
+Dependencies: none
+
+Path rule server-authority: Reuse actual services; server owns combat/inventory/currency/allocation/rewards/guild/build/escrow. Preserve fencing/receipts/saves/disabled flags. No production cloud writes or commerce activation.
+
+Path rule shared-contracts: Shared definitions are client-safe. Preserve IDs/earned ancestry and progression separately from cosmetic IDs. Reconcile Novice 10/35/70 and Hall contracts.
+
+Path rule tooling: Use reviewed bounded local commands/tests. Studio/Forge planners do not launch models; paid/model subprocess, MCP mutation and installation require actual authorization/capability.
+
+Path rule production-evidence: Reconcile latest goals/registries/scopes. One shared ledger, claim before writes, immediate lease check and preserved raw receipts. Different reviewer validates evidence; local checks cannot replace hardware/cloud/human gates.
+
+### living-world-npc-slice: Stable NPC schedules and quest-ready identity contract
+
+S17: inspect existing identities and supplied production packs as untrusted proposals. Preserve 13 body presets and canonical quest IDs. Implement deterministic schedule/relevance and validated fallback anchors for existing named NPCs; no fabricated 410 spawned actors, rewards, save migration or Studio changes. First delivery includes exact intake provenance, pure contract and tests; controller coordinates visible runtime integration next. Add bounded stationary work poses for existing borga/mogra/rukk/ghar using the single current animator owner and existing held props. Preserve six civic poses, identities, root/leg stability, dialogue, reduced motion and culling. This does not create walking populations. Next bounded wave: move only the existing nonquest R6 Adventurer from tavern rest to noticeboard and back via reviewed corridor (-110,-830),(-110,-828),(-184,-828). Keep named quest actors and all16 routeEnabled flags unchanged. CentralCityWorld owns server root movement and cleanup, pure CityResidentRoute bounds state/motion/blockers, existing FriendlyNpcAnimator alone owns R6 client pose. Include CanQuery=false visible furniture and all nearby players/heroes in swept bounds; finite <=3stud/s, step<=0.1s with no catch-up, <=90deg/s turns, blocked wait without teleport. GroundY0.7 requires measured rig foot offset. Standalone runner plus full baseline must run; tests/run.luau unchanged. No grants, rewards, profile, quest-session borrowing, Studio or Blender mutation. One-resident delivery is not full city population or five-hero clearance acceptance.
+
+Environment: local; skill: guildborne-npc-life
+
+Write scopes: design/Guildborne_Living_World_NPC_QuestReady_Pack_2026-10-17, design/Guildborne_NPC_Quest_Modular_World_Addendum_2026-10-17, production/npc-life/living-world, src/shared/Data/NpcLifeSchedule.luau, src/shared/Config/NpcLifeDefinitions.luau, tests/npc_life.luau, tests/run_npc_life.luau, src/shared/Presentation/CivicWorkMotion.luau, tests/civic_work_motion.luau, src/server/Services/CentralCityWorld.luau, src/client/Controllers/FriendlyNpcAnimator.luau, src/server/Systems/CityResidentRoute.luau, tests/city_resident_route.luau, tests/run_city_resident_route.luau
 
 Required checks: source-contract, regression, independent-review
 
@@ -73,39 +93,19 @@ Path rule tooling: Use reviewed bounded local commands/tests. Studio/Forge plann
 
 Path rule production-evidence: Reconcile latest goals/registries/scopes. One shared ledger, claim before writes, immediate lease check and preserved raw receipts. Different reviewer validates evidence; local checks cannot replace hardware/cloud/human gates.
 
-### living-world-npc-slice: Stable NPC schedules and quest-ready identity contract
-
-S17: inspect existing identities and supplied production packs as untrusted proposals. Preserve 13 body presets and canonical quest IDs. Implement deterministic schedule/relevance and validated fallback anchors for existing named NPCs; no fabricated 410 spawned actors, rewards, save migration or Studio changes. First delivery includes exact intake provenance, pure contract and tests; controller coordinates visible runtime integration next. Add bounded stationary work poses for existing borga/mogra/rukk/ghar using the single current animator owner and existing held props. Preserve six civic poses, identities, root/leg stability, dialogue, reduced motion and culling. This does not create walking populations.
-
-Environment: local; skill: guildborne-npc-life
-
-Write scopes: design/Guildborne_Living_World_NPC_QuestReady_Pack_2026-10-17, design/Guildborne_NPC_Quest_Modular_World_Addendum_2026-10-17, production/npc-life/living-world, src/shared/Data/NpcLifeSchedule.luau, src/shared/Config/NpcLifeDefinitions.luau, tests/npc_life.luau, tests/run_npc_life.luau, src/shared/Presentation/CivicWorkMotion.luau, tests/civic_work_motion.luau
-
-Required checks: source-contract, regression, independent-review
-
-Dependencies: none
-
-Path rule shared-contracts: Shared definitions are client-safe. Preserve IDs/earned ancestry and progression separately from cosmetic IDs. Reconcile Novice 10/35/70 and Hall contracts.
-
-Path rule tooling: Use reviewed bounded local commands/tests. Studio/Forge planners do not launch models; paid/model subprocess, MCP mutation and installation require actual authorization/capability.
-
-Path rule production-evidence: Reconcile latest goals/registries/scopes. One shared ledger, claim before writes, immediate lease check and preserved raw receipts. Different reviewer validates evidence; local checks cannot replace hardware/cloud/human gates.
-
 ### npc-life: Natural friendly NPC activity and quest integration
 
 Reuse six civic contact studies; bind them to real world NPCs without duplicating quest rewards. Humans, Elves, Orcs and Dwarfs can all be friendly. Review deterministic routines, distance LOD, work contacts and interruption/recovery.
 
 Environment: studio; skill: guildborne-npc-life
 
-Write scopes: src/server/Services/CityCharacterKit.luau, production/npc-life
+Write scopes: src/server/Services/CityCharacterKit.luau
 
 Required checks: scheduled-work, contact-animation, navigation, dialogue, cleanup
 
 Dependencies: city-zones, combat
 
 Path rule server-authority: Reuse actual services; server owns combat/inventory/currency/allocation/rewards/guild/build/escrow. Preserve fencing/receipts/saves/disabled flags. No production cloud writes or commerce activation.
-
-Path rule production-evidence: Reconcile latest goals/registries/scopes. One shared ledger, claim before writes, immediate lease check and preserved raw receipts. Different reviewer validates evidence; local checks cannot replace hardware/cloud/human gates.
 
 ## Evidence gates
 

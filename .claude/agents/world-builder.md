@@ -127,7 +127,7 @@ Add interior Tavern/Crafting anchors and authorize only CraftItem at the registe
 
 Environment: local; skill: guildborne-world
 
-Write scopes: src/server/Services/CentralCityWorld.luau, src/server/Services/CityWorld.luau, src/server/Services/WorldService.luau, src/server/Services/ExpansionWorld.luau, src/server/Services/CityLandscape.luau, src/server/Services/CityLandscapeData.luau, tools/build_city_landscape.py, tools/render_city_landscape.py, tools/verify_city_landscape.py, assets/uat01/city-landscape, production/world/central-city-landscape.md
+Write scopes: src/server/Services/CityWorld.luau, src/server/Services/WorldService.luau, src/server/Services/ExpansionWorld.luau, src/server/Services/CityLandscape.luau, src/server/Services/CityLandscapeData.luau, tools/build_city_landscape.py, tools/render_city_landscape.py, tools/verify_city_landscape.py, assets/uat01/city-landscape, production/world/central-city-landscape.md
 
 Required checks: source-contract, regression, independent-review
 
@@ -165,7 +165,7 @@ Use reviewed local CC0 Catalog town/ruins assets, real Blender mesh processing a
 
 Environment: blender; skill: guildborne-world
 
-Write scopes: assets/production/world-slice, production/world/quality-slice, tools/blender_world_slice.py, tools/build_world_slice.py, tools/verify_world_slice.py, src/server/Services/WorldQualitySlice.luau, src/server/Services/WorldQualityAssets.luau, src/server/Services/CentralCityWorld.luau, src/server/Services/CityWorld.luau, src/server/Services/RegionalWorld.luau, src/server/Services/AdventureScene.luau, src/shared/Config/WorldQuality.luau, tests/world_quality.luau
+Write scopes: assets/production/world-slice, production/world/quality-slice, tools/blender_world_slice.py, tools/build_world_slice.py, tools/verify_world_slice.py, src/server/Services/WorldQualitySlice.luau, src/server/Services/WorldQualityAssets.luau, src/server/Services/CityWorld.luau, src/server/Services/RegionalWorld.luau, src/server/Services/AdventureScene.luau, src/shared/Config/WorldQuality.luau, tests/world_quality.luau
 
 Required checks: source-contract, regression, independent-review
 
