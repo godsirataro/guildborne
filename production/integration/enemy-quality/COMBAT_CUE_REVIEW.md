@@ -51,3 +51,23 @@ Independent controller review blocked `096c63f`: assigning Workspace.CurrentCame
 Reference: https://create.roblox.com/docs/reference/engine/classes/Camera (official Roblox documentation). Native execution remains pending.
 
 Independent agent enemy_export_review reviewed this correction: PASS scoped static review, 17 cases and original TTL checks retained, no native execution. Reviewed raw probe SHA256: `1bf23857b833019edb910106b10653c582f35ba39b93a3cdf0bdc57629e76354`.
+
+## Native inconclusive 02 and event-time revision
+
+Controller native run 02 on its integrated candidate reported INCONCLUSIVE, not a 17-case PASS. Original ActionAt was `1792372234.812784`; the recorded bow_release request occurred at `1792372235.092979` (age about `.280195`, inside `.62`). The second requested `.14` wait resumed after `.854905`, so the assertion reader saw age `1.021952`. Camera identity stayed the same and Scriptable, distance was approximately `17.464`, and the camera event log was empty. Two VFX were observed, but that recorder did not retain their individual timestamps; no historical VFX timestamps are inferred here.
+
+Controller retains raw `production/integration/quality-slice/COMBAT_CUE_NATIVE_INCONCLUSIVE_02.json`, SHA256 `29346c636108e02ce09f90774d1c7d6b1ae099751875c1ea47b3177089256854`. Failure01 and inconclusive02 remain separate immutable observations. Run02 demonstrates that assertion wake time must not substitute for recorded event time. It does not establish all 17 cases or explain failure01 conclusively.
+
+The approved follow-up is probe-only: a manual READY/start gate, recorded event identity and timestamps, and separate result collection and negative-window coverage. No runtime timing change, source timestamp renewal, automatic start fallback or silent retry is authorized. The controller owns the next native run. Earlier compile receipts and static reviews describe earlier source revisions, not native acceptance of this revision.
+
+### Running the revised probe
+
+1. Install the isolated candidate using the unchanged guards, start Play, and wait for `READY_CLIENT_CUE_PROBE` / `CombatCueProbe.ProbeStatus == "READY"`.
+2. After at least one second of stable frames, the Studio owner explicitly sets the **client LocalScript** `CombatCueProbe` attribute `StartRequested` to `true`. Do not preset it before READY. The probe has a single 60-second arm deadline and requires the preceding one second of Heartbeat observations with no gap above .15 seconds. Missing start or coverage is INCONCLUSIVE, with no automatic fallback or retry.
+3. Capture full stdout and the compact JSON `ProbeReport` attribute plus `ProbeStatus`. The full stdout contains event records, readiness changes, waits and Heartbeat observations. Stop Play after capture even on failure.
+
+Positive records are correlated by case, actor instance/ID, cue and original source timestamp, and checked against the unchanged original event TTL. Result collection is bounded separately (two seconds); a late assertion reader may use a timely recorded event. Missing evidence with an observation gap remains inconclusive. The first VFX case starts with no preceding casts, checks zero VFX before readiness, and requires a recorded first-cast VFX timestamp after readiness and within the original .62-second window. Later VFX records are observational and are not proof of an independently identified actor effect.
+
+Negative observations require Heartbeat coverage across both recorded interval boundaries. Nil restoration and reparenting reserve enough original TTL for a covered live polling interval; duplicate checks use a retrospective covered interval after the recorded first request, entirely within the original TTL. A late reader does not move those intervals past expiry. All unexpected/unmatched requests fail the case, and all 17 cases must complete before PASS. Cancellation receipts retain their originating warning identity; delayed disposal with missing coverage is inconclusive.
+
+Independent agent `enemy_export_review` rereviewed the final revision: PASS scoped static review, no remaining blocker found. Raw probe SHA256: `bb1663e679309ff65d6846f8f7ad53a344affeb6f5c0d13f7e9387aa48091d53`. Root additionally reviewed request matching, first-VFX readiness, negative live-window margins and compact terminal-report handling. Local compilation is not a Studio result; native run03 remains pending.
