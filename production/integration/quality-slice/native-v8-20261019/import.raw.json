@@ -1,0 +1,9 @@
+{
+  "content": [
+    {
+      "type": "text",
+      "text": "{\"attributes\":{\"IsolatedMemory\":true,\"WorldCollisionSourceSha256\":\"9baaf8de0faf3ff7f4a4f2c32ea692e48aa9dbb021f609e3530029ed7844ddc7\",\"WorldSourceSha256\":\"9baaf8de0faf3ff7f4a4f2c32ea692e48aa9dbb021f609e3530029ed7844ddc7\",\"BindEnemies\":false,\"WorldDataset\":\"Dataset1\",\"EnableWorldSlice\":true,\"WorldCollisionReady\":true},\"datasets\":[{\"name\":\"Dataset1\",\"attributes\":{\"LoadSeconds\":4.586688600000343,\"Triangles\":45267,\"Placements\":116,\"PreviewState\":\"READY_LOCAL_ONLY\",\"SourceSha256\":\"9baaf8de0faf3ff7f4a4f2c32ea692e48aa9dbb021f609e3530029ed7844ddc7\"}},{\"name\":\"Dataset2\",\"attributes\":{\"LoadSeconds\":1.003611500000261,\"Triangles\":11330,\"Placements\":72,\"PreviewState\":\"READY_LOCAL_ONLY\",\"SourceSha256\":\"f31077a0847a4a5db7a5918a411ee9b9ba22cdb0ac18ec686bc18859e10fc4e9\"}},{\"name\":\"Dataset3\",\"attributes\":{\"LoadSeconds\":0.2846519000013359,\"Triangles\":5752,\"Placements\":17,\"PreviewState\":\"READY_LOCAL_ONLY\",\"SourceSha256\":\"b885085377b3e56faf9f6a0fe072d0db4672f6b87c5241c6d61ff34c70a65539\"}},{\"name\":\"Dataset4\",\"attributes\":{\"LoadSeconds\":0.4010978000005707,\"PreviewError\":\"ReplicatedStorage.QualityPreviewAssets.NativeAssetPreview:90: ReplicatedStorage.QualityPreviewAssets.NativeAssetPreview:62: Fixed mesh budget unavailable\",\"PreviewState\":\"FAILED\",\"SourceSha256\":\"4e65f4e254ae58bed6c5825d68948dc8689eb10332fb2763bdae37f86e371d20\"}}]}"
+    }
+  ],
+  "isError": false
+}

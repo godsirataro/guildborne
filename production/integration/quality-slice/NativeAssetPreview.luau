@@ -59,9 +59,11 @@ function Preview.create(data: any, parent: Instance, onAllocated: ((any) -> ())?
 			end
 			-- Compact completed topology before allocating the next source chunk.
 			-- Dynamic meshes reserve much more client memory than fixed-size meshes.
-			local fixed = assert(AssetService:CreateEditableMeshAsync(Content.fromObject(mesh), {FixedSize=true}), "Fixed mesh budget unavailable")
+			mesh:RemoveUnused()
+			local fixed = assert(AssetService:CreateEditableMeshAsync(Content.fromObject(mesh), {FixedSize=true}), "Fixed mesh budget unavailable: " .. def.id)
 			table.insert(meshes, fixed)
 			assert(not closed, "Preview construction cancelled")
+			assert(fixed.FixedSize and #fixed:GetVertices() == #def.vertices and #fixed:GetFaces() == #def.triangles, "Fixed mesh topology mismatch: " .. def.id)
 			mesh:Destroy()
 			mesh = fixed
 			assert(mesh:GetCenter().Magnitude < 0.0001, "Imported chunk is not centered")

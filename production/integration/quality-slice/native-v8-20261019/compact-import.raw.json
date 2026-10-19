@@ -1,0 +1,9 @@
+{
+  "content": [
+    {
+      "type": "text",
+      "text": "{\"Dataset4\":{\"LoadSeconds\":0.40128399999957767,\"PreviewError\":\"ReplicatedStorage.QualityPreviewAssets.NativeAssetPreview:92: ReplicatedStorage.QualityPreviewAssets.NativeAssetPreview:63: Fixed mesh budget unavailable: cart__000\",\"PreviewState\":\"FAILED\",\"SourceSha256\":\"4e65f4e254ae58bed6c5825d68948dc8689eb10332fb2763bdae37f86e371d20\"},\"Dataset2\":{\"LoadSeconds\":1.0518931999977213,\"Triangles\":11330,\"Placements\":72,\"PreviewState\":\"READY_LOCAL_ONLY\",\"SourceSha256\":\"f31077a0847a4a5db7a5918a411ee9b9ba22cdb0ac18ec686bc18859e10fc4e9\"},\"Dataset1\":{\"LoadSeconds\":4.623207900000125,\"Triangles\":45267,\"Placements\":116,\"PreviewState\":\"READY_LOCAL_ONLY\",\"SourceSha256\":\"9baaf8de0faf3ff7f4a4f2c32ea692e48aa9dbb021f609e3530029ed7844ddc7\"},\"Dataset3\":{\"LoadSeconds\":0.2835546999995131,\"Triangles\":5752,\"Placements\":17,\"PreviewState\":\"READY_LOCAL_ONLY\",\"SourceSha256\":\"b885085377b3e56faf9f6a0fe072d0db4672f6b87c5241c6d61ff34c70a65539\"}}"
+    }
+  ],
+  "isError": false
+}
