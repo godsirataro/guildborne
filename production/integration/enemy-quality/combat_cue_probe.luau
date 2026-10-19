@@ -54,16 +54,44 @@ local function inspect()
         if m:IsDescendantOf(workspace) and m.PrimaryPart and (camera.CFrame.Position-m.PrimaryPart.Position).Magnitude>40 then fault("Actor distance: "..m.Name) end
     end
 end
-local function covered(a,b)
-    local previous=nil;local reached=false
-    for _,t in ipairs(heartbeats) do
-        if t<=a then previous=t
+-- BEGIN COVERAGE_HELPERS
+-- Pure snapshots distinguish an unpublished endpoint from an actual sample gap.
+local function coverage(samples,a,b)
+    local d={reason="end_sample_pending",a=a,b=b,sampleCount=#samples,
+        lastRecorded=samples[#samples],maxWindowGap=0}
+    local previous=nil;local lastSeen=nil
+    for _,t in ipairs(samples) do
+        if lastSeen and t<lastSeen then d.reason="clock_regression";return d end
+        lastSeen=t
+        if t<=a then previous=t;d.predecessor=t
         elseif previous then
-            if t-previous>.15 then return false end
-            previous=t;if t>=b then reached=true;break end
-        else return false end
+            local gap=t-previous;d.maxWindowGap=math.max(d.maxWindowGap,gap)
+            if gap>.15 then d.reason="gap";d.gapStart=previous;d.gapEnd=t;return d end
+            previous=t
+            if t>=b then d.reason="covered";d.successor=t;return d end
+        else d.reason="no_start_sample";return d end
     end
-    return previous~=nil and reached
+    if not previous then d.reason="no_start_sample" end
+    return d
+end
+-- Wait for recorder publication, never manufacture a Heartbeat timestamp or
+-- move the original [a,b]. Reading completed evidence after a late wake is OK.
+local function awaitCoverage(a,b,read,clock,wait)
+    local started=clock();local deadline=started+2
+    while true do
+        local d=read(a,b);local current=clock()
+        d.publicationWaitSeconds=current-started
+        if current<started then d.reason="clock_regression";return d end
+        if d.reason~="end_sample_pending" then return d end
+        if current>=deadline then d.reason="end_sample_timeout";return d end
+        wait(math.min(.01,deadline-current))
+    end
+end
+-- END COVERAGE_HELPERS
+local coverageDiagnostic=nil
+local function covered(a,b)
+    coverageDiagnostic=coverage(heartbeats,a,b)
+    return coverageDiagnostic.reason=="covered"
 end
 local function pause(seconds,label)
     local start=now();task.wait(seconds)
@@ -75,7 +103,11 @@ end
 local function observe(seconds,label,started)
     local start=started or now()
     if now()<start+seconds then pause(start+seconds-now(),label) end
-    condition(covered(start,start+seconds),"Heartbeat gap during negative window: "..label)
+    coverageDiagnostic=awaitCoverage(start,start+seconds,
+        function(a,b) return coverage(heartbeats,a,b) end,now,
+        function(secondsToWait) pause(secondsToWait,"recorder publication: "..label) end)
+    coverageDiagnostic.label=label
+    condition(coverageDiagnostic.reason=="covered","Heartbeat coverage "..coverageDiagnostic.reason..": "..label)
     return start,start+seconds
 end
 local function actor(name)
@@ -318,7 +350,7 @@ local function safe(value)
 end
 local report={status=if ok then "PASS" elseif inconclusive or interference then "INCONCLUSIVE" else "FAIL",error=if ok then "" else tostring(err),
     cases=cases,requests=safe(requests),disposals=safe(disposals),vfx=safe(vfxRecords),readiness=safe(mutations),waits=waits,heartbeats=heartbeats,
-    originalStamp=firstStamp,actionTTL=.62,cameraEvents=cameraEvents,actors={},audibleAcceptance=false,serverCombatTested=false,syntheticStopRecorder=true,stopPlayRequired=true}
+    originalStamp=firstStamp,actionTTL=.62,coverage=coverageDiagnostic,cameraEvents=cameraEvents,actors={},audibleAcceptance=false,serverCombatTested=false,syntheticStopRecorder=true,stopPlayRequired=true}
 for _,m in ipairs(actors) do
     local root=m.PrimaryPart
     table.insert(report.actors,{name=m.Name,id=m:GetAttribute("ProbeActorId"),attributes=safe(m:GetAttributes()),inWorkspace=m:IsDescendantOf(workspace),root=if root then tostring(root.Position) else "nil",
@@ -330,7 +362,7 @@ local function output(prefix)
     local maximumGap=0
     for i=2,#heartbeats do maximumGap=math.max(maximumGap,heartbeats[i]-heartbeats[i-1]) end
     local summary={status=report.status,cases=cases,requestCount=#requests,disposalCount=#disposals,VFXCount=#vfxRecords,
-        heartbeatCount=#heartbeats,maximumHeartbeatGap=maximumGap,waitCount=#waits,actionTTL=.62,
+        heartbeatCount=#heartbeats,maximumHeartbeatGap=maximumGap,waitCount=#waits,actionTTL=.62,coverage=coverageDiagnostic,
         error=string.sub(report.error or "",1,2000),cleanupErrors=report.cleanupErrors or {},
         audibleAcceptance=false,serverCombatTested=false,stopPlayRequired=true}
     local http=game:GetService("HttpService")
