@@ -68,6 +68,21 @@ return function(test:any,eq:any)
    eq(assert(sim.receipt(at)).action,"CampaignObjective")
   end
  end)
+ test("Injected Class3 policy preserves LegacyTier2 story-only mastery for every path",function()
+  local count=0
+  for pathId,path in pairs(expansion.Paths)do if path.Tier==3 then
+   local d=qualified(pathId);d.progression.ruleset=content.ProgressionRulesets.Legacy
+   eq(proof.problem(d,"player",pathId),nil)
+   local before=util.copy(d);local sim=simulate(d,pathId,function()return d end)
+   local at=win(sim,pathId,false);local result=assert(sim.receipt(at))
+   eq(result.action,"CampaignObjective");eq(result.args,{objective="complete_borrowed_mastery"});eq(d,before)
+   eq(d.expansion.actors.player.class3Proof,nil);count+=1
+   d.progression.campaign.claimed=30;d.progression.campaign.objectives={}
+   local s=makeSession(expansion,util,makeTrial,pathId,true,proof)
+   eq(select(2,s.start(d,1,path.Class,"repeat",100)),"WrongObjective")
+  end end
+  eq(count,14)
+ end)
  test("Class3 player admission refuses foreign identity premature repeat and unqualified repeated lesson",function()
   local s=makeSession(expansion,util,makeTrial,"warlord",true,proof);local d=qualified("warlord")
   eq(select(2,s.start(d,2,"Warrior","x",100)),"InvalidTrial")

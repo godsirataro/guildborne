@@ -75,12 +75,13 @@ return function(expansion:any,util:any,makeTrial:any,pathId:string,mastery:boole
   local campaign=data.progression and data.progression.campaign
   if classId~=path.Class or data.character.classId~=classId then return nil,"InvalidClassPath"end
   if type(runId)~="string"or #runId<1 or #runId>55 or not runId:match("^[%w_:%-]+$")or not util.integer(userId,1,9007199254740991)or type(now)~="number"or now~=now or now<0 or now==math.huge then return nil,"InvalidTrial"end
-  local repeatProof=proof~=nil and storyComplete(campaign)
+  local proofEnabled=proof~=nil and expansion.usesNoviceProgression(data)
+  local repeatProof=proofEnabled and storyComplete(campaign)
   if not repeatProof and (not campaign or campaign.claimed~=(if mastery then 24 else 11) or not campaign.objectives[mentor] or campaign.objectives[objective]) then return nil,"WrongObjective"end
   if data.character.level<(if mastery then 70 else 35) or data.personalGuild.buildings.guildHall<(if mastery then 11 else 4) then return nil,"ClassTrialLocked"end
   if data.quests.active or data.expansion.tower.active then return nil,"FinishExpedition"end
   local captured=nil
-  if proof then
+  if proofEnabled then
    if not data.profile or data.profile.userId~=userId then return nil,"InvalidTrial" end
    local problem=proof.problem(data,"player",pathId)
    if repeatProof and problem then return nil,problem end

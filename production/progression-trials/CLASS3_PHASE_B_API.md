@@ -13,6 +13,9 @@ combined proof/objective. Tier1, earned Tier3 and Tier2 without prerequisites
 retain the existing story-only receipt. After mastery is already observed or the
 campaign has advanced beyond chapter index24, eligible Tier2 repeat produces
 actor_mastery proof only. No reward or chapter-claim call occurs here.
+Legacy rulesets always retain story-only admission and completion, including
+otherwise-qualified Tier2 builds. Injecting the proof dependency does not opt
+legacy profiles into proof capture or new repeat qualification.
 
 The selected path must belong to the player's class. Class3 capture binds
 profile.userId, actor/path/trial and copied actor/build before combat. IDs for
