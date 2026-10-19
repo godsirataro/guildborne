@@ -1,0 +1,56 @@
+{
+  "status": "PASS",
+  "evidence": "LOCAL APPROXIMATION NOT STUDIO",
+  "baseline": "e34a2e7",
+  "sourceSha256": "dd0cb8ead2e2ace8a7938d85395f7ab5622d8f3ae89a04a8b5f67a13f0e08afe",
+  "changedDefinitions": [
+    "iron_ore",
+    "timber"
+  ],
+  "frozenDefinitionsAndResolvedColors": 28,
+  "entirePaletteUnchanged": true,
+  "constructorUnchanged": true,
+  "runtimePiecesMatchedToKit": 272,
+  "frustumCheckedItems": 30,
+  "camera": {
+    "pixels": [
+      80,
+      80
+    ],
+    "verticalFov": 35,
+    "direction": [
+      1,
+      0.4,
+      -3
+    ],
+    "sphereFitMargin": 1.12
+  },
+  "smallPreview": "48px Lanczos downsample of the 80px CPU image; not a native 48px render",
+  "limitations": "Source geometry with approximate lighting; not Roblox pixels, device QA, asset import or human approval.",
+  "materials": {
+    "iron_ore": {
+      "before": {
+        "parts": 11,
+        "maximumFrustumFraction": 0.656310888278994,
+        "coveredPixels": 1124
+      },
+      "after": {
+        "parts": 8,
+        "maximumFrustumFraction": 0.607784489389518,
+        "coveredPixels": 1359
+      }
+    },
+    "timber": {
+      "before": {
+        "parts": 16,
+        "maximumFrustumFraction": 0.6777488583900646,
+        "coveredPixels": 1396
+      },
+      "after": {
+        "parts": 15,
+        "maximumFrustumFraction": 0.7630313908484364,
+        "coveredPixels": 1174
+      }
+    }
+  }
+}

@@ -1,5 +1,19 @@
 # Original inventory display kit
 
+## Ore and timber refinement — 2026-10-20
+
+The subsequent native gallery review found ore too close to stone and timber
+ends too gear-like. Only `iron_ore` and `timber` are revised in this follow-up:
+ore has a darker narrow host and broad exposed silver veins; two bundled timber
+logs use convex hexagonal bodies instead of overlapping rotated square prisms.
+The kit now has 272 parts across 30 items (ore 8, timber 15). The other 28
+definitions, entire palette and constructor are unchanged from `e34a2e7`.
+
+Local evidence is in `assets/production/ui-slice/material-refinement-v9` and
+`production/ux/gameplay-quality/material_refinement_probe.py`. Native Studio
+retake and human art review are pending for this follow-up. Historical native
+gallery results and Blender exports do not validate these new shapes.
+
 ## Native material portrait revision — 2026-10-20
 
 The generator, `kit.json`, and runtime `ItemVisuals.luau` now contain revised

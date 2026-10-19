@@ -73,10 +73,15 @@ def rock(p,scale,offset):
     wedge(p,'RockFront',v([.95,.59,.43]),at([-.17,-.13,-.51]),'stone',(0,180,14))
     wedge(p,'RockChip',v([.62,.47,.62]),at([-.72,-.37,.04]),'rockShade',(0,-28,18))
 p=asset('stone');rock(p,1,[0,0,0])
-p=asset('iron_ore');rock(p,1,[0,0,0])
-for x,y,angle in [(-.39,.2,-28),(.1,.04,22),(.47,-.23,-15)]:
-    wedge(p,'IronVein',[.08,.56,.29],[x,y,-.64],'ironVein',(0,90,0))
-    box(p,'IronGlint',[.08,.36,.05],[x-.05,y+.04,-.79],'steel',angle)
+p=asset('iron_ore')
+# Dark, narrow host and broad exposed metal distinguish ore from plain stone.
+box(p,'OreHost',[.9,.88,.7],[0,-.12,.02],'dark',-13)
+wedge(p,'OreHostCrown',[.92,.66,.72],[-.12,.53,.02],'rockShade',(0,22,-8))
+wedge(p,'OreHostShard',[.62,.72,.65],[.55,-.2,.03],'dark',(0,0,-90))
+for x,y,angle in [(-.22,.1,-22),(.22,-.12,18)]:
+    box(p,'MetalVein',[.43,.62,.08],[x,y,-.335],'ironVein',angle)
+    box(p,'MetalRidge',[.08,.44,.04],[x-.07,y+.02,-.385],'steel',angle)
+wedge(p,'ExposedMetalTip',[.07,.3,.3],[-.24,.44,-.35],'steel',(0,90,0))
 p=asset('iron_ingot')
 box(p,'IngotBase',[1.85,.24,.92],[0,-.27,0],'rockShade')
 box(p,'IngotCrown',[1.45,.42,.62],[0,.06,0],'steel')
@@ -85,13 +90,18 @@ for side in (-1,1):
     wedge(p,'SlopedSide',[1.45,.42,.15],[0,.06,side*.385],'ironVein',(0,180 if side==1 else 0,0))
 box(p,'MintMark',[.28,.025,.22],[.15,.283,0],'rockShade',0)
 p=asset('timber')
-# Two overlapping square prisms form a faceted log/cut silhouette.
-for x,y in [(-.37,-.27),(.37,-.27),(0,.39)]:
-    for angle in (0,45):
-        box(p,'Bark',[.55,.55,1.52],[x,y,0],'wood',angle)
-        box(p,'CutEnd',[.45,.45,.025],[x,y,-.775],'cutWood',angle)
-    box(p,'Heartwood',[.15,.15,.03],[x,y,-.795],'wood',45)
-box(p,'BundleTie',[1.38,.12,.16],[0,-.05,-.22],'leather',-8)
+# A rectangular core plus four triangular side quarters makes a convex hexagon.
+# Two bundled logs leave room for cut faces and heartwood within 16 native parts.
+for x,y in [(-.37,-.13),(.37,.13)]:
+    box(p,'BarkCore',[.44,.68,1.52],[x,y,0],'wood')
+    for side in (-1,1):
+        for half in (-1,1):
+            wedge(p,'BarkBevel',[1.52,.34,.16],
+                  [x+side*.3,y+half*.17,0],'wood',
+                  (180 if half==-1 else 0,-side*90,0))
+    box(p,'CutEnd',[.40,.54,.025],[x,y,-.775],'cutWood')
+    box(p,'Heartwood',[.10,.25,.03],[x,y,-.795],'wood',8)
+box(p,'BundleTie',[1.48,.12,.12],[0,0,-.16],'leather',19)
 p=asset('herb')
 box(p,'Stem',[.075,1.65,.075],[0,-.04,0],'leaf',-7)
 # Four triangular quarters make a pointed leaf with a visible central fold.
