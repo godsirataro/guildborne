@@ -1,0 +1,9 @@
+{
+  "content": [
+    {
+      "type": "text",
+      "text": "{\"dialogue\":\"Players.iswhlaedev.PlayerGui.GuildborneUI.ManagementPanel.Content.FriendlyDialogue_smith_borin\",\"visible\":true,\"texts\":[{\"visible\":true,\"x\":562,\"name\":\"TextLabel\",\"h\":20,\"text\":\"Smith Borin · Deepforge envoy\",\"w\":948,\"y\":220},{\"visible\":true,\"x\":682,\"name\":\"TextLabel\",\"h\":36,\"text\":\"Deepforge's best work is work that lasts. Rukk has the patience of a fine smith already. Practise two ingots in your guild forge; they remain yours, and every sound casting is one less wasted load of ore.\",\"w\":828,\"y\":250},{\"visible\":true,\"x\":562,\"name\":\"TextLabel\",\"h\":16,\"text\":\"Complete From Ore to Iron first\",\"w\":948,\"y\":368},{\"visible\":true,\"x\":562,\"name\":\"CloseDialogue\",\"h\":52,\"text\":\"See you soon\",\"w\":948,\"y\":394}]}"
+    }
+  ],
+  "isError": false
+}

@@ -1,0 +1,9 @@
+{
+  "content": [
+    {
+      "type": "text",
+      "text": "[{\"visible\":true,\"path\":\"Players.iswhlaedev.PlayerGui.GuildborneUI.QuestTracker\",\"name\":\"QuestTracker\",\"h\":96,\"y\":70,\"w\":300,\"x\":1630},{\"visible\":false,\"path\":\"Players.iswhlaedev.PlayerGui.CityNavigation.NextWaypoint\",\"name\":\"NextWaypoint\",\"h\":96,\"y\":66,\"w\":260,\"x\":908},{\"visible\":true,\"path\":\"Players.iswhlaedev.PlayerGui.CityNavigation.WaypointDirection\",\"name\":\"WaypointDirection\",\"h\":40,\"y\":180,\"w\":40,\"x\":1986},{\"visible\":false,\"path\":\"Players.iswhlaedev.PlayerGui.CityNavigation.CityMap\",\"name\":\"CityMap\",\"h\":650,\"y\":113.5,\"w\":650,\"x\":713},{\"visible\":true,\"path\":\"Players.iswhlaedev.PlayerGui.CityNavigation.CityMap.ClearWaypoint\",\"name\":\"ClearWaypoint\",\"h\":44,\"y\":163.5,\"w\":150.5,\"x\":1204.5}]"
+    }
+  ],
+  "isError": false
+}

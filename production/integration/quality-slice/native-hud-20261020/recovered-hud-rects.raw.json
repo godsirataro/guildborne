@@ -1,0 +1,9 @@
+{
+  "content": [
+    {
+      "type": "text",
+      "text": "{\"viewport\":\"2076, 935\",\"rects\":[{\"y\":70,\"x\":1630,\"name\":\"QuestTracker\",\"visible\":true,\"text\":[{\"visible\":true,\"text\":\"Tracked quest [J]\",\"name\":\"TrackerHeading\",\"fits\":true},{\"visible\":true,\"text\":\"Meet the courier\",\"name\":\"TrackerObjective\",\"fits\":true}],\"w\":300,\"h\":96},{\"y\":60,\"x\":1938,\"name\":\"CityMapButton\",\"visible\":true,\"text\":[],\"w\":130,\"h\":48},{\"y\":112,\"x\":1938,\"name\":\"DistrictName\",\"visible\":true,\"text\":[],\"w\":130,\"h\":64}]}"
+    }
+  ],
+  "isError": false
+}

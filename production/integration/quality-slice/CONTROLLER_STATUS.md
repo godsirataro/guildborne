@@ -1,3 +1,11 @@
+# Latest bounded closeout — 2026-10-20
+
+Runtime checkpoint1f8d0c4 passed full968-test baseline and independent S14 review. [Native HUD/NPC closeout](native-hud-20261020/README.md) records fixed map/quest clearance, actual clicks, named Borin work/pause, dialogue and cull-return evidence. Studio fe0ad064-622d-4adb-9e68-0b233ad44457 is stopped in Edit. Rojo server listens, but plugin reconnect is pending after restart. Full game/art/device gates remain open; ForgeGUI deferred. Measured Codex quota87% remaining.
+
+The older checkpoint below is historical; use this entry and [MASTER_GOAL.md](../../design/integration/MASTER_GOAL.md) on continuation.
+
+---
+
 # Current checkpoint — 2026-10-20
 
 The current full scope and continuation state are in [MASTER_GOAL.md](../../design/integration/MASTER_GOAL.md). The older report below is historical and its quota, lease, process and source identities must not be reused as live facts.

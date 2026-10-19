@@ -1,0 +1,9 @@
+{
+  "content": [
+    {
+      "type": "text",
+      "text": "{\"map\":false,\"camera\":\"360, 8.03326321, -945.925903, 1, 0, 0, 0, 0.965925932, 0.258819073, 0, -0.258819073, 0.965925932\",\"visibleQuest\":[{\"name\":\"ChapterNumber\",\"text\":\"Chapter 1 / 6\"},{\"name\":\"ChapterTitle\",\"text\":\"The Unmarked\"},{\"name\":\"ChapterStory\",\"text\":\"A courier needs help along the training path. Learn to read danger, then lend a hand.\"},{\"name\":\"ChapterStep1\",\"text\":\"1\"},{\"name\":\"ChapterStep2\",\"text\":\"2\"},{\"name\":\"ChapterStep3\",\"text\":\"3\"},{\"name\":\"ChapterStep4\",\"text\":\"4\"},{\"name\":\"ChapterStep5\",\"text\":\"5\"},{\"name\":\"ChapterStep6\",\"text\":\"6\"},{\"name\":\"ChapterState\",\"text\":\"Your next steps\"},{\"name\":\"ObjectiveCount\",\"text\":\"OBJECTIVES  0 / 4\"},{\"name\":\"ChapterReward\",\"text\":\"On completion  ·  100 XP\"},{\"name\":\"ChapterHeading\",\"text\":\"YOUR JOURNEY\"}],\"player\":\"360, 3.29802537, -958, 1, 0, 0, 0, 1, 0, 0, 0, 1\",\"tracker\":false}"
+    }
+  ],
+  "isError": false
+}

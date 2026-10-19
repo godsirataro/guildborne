@@ -1,0 +1,9 @@
+{
+  "content": [
+    {
+      "type": "text",
+      "text": "{\"runtime\":{\"AshenJourney\":false,\"IronveilJourney\":true,\"CrosshavenJourney\":false,\"AuditPageSize\":32,\"RetryBaseSeconds\":0.5,\"TowerJourney\":false,\"AllowedDataStoreUniverses\":[],\"VerboseStudioLogs\":true,\"PermanentPassesEnabled\":false,\"NoviceJourney\":true,\"HeartbeatSeconds\":50,\"RobloxAnalyticsEnabled\":false,\"StudioPersistence\":\"Memory\",\"MaxAttempts\":3,\"LeaseSafetySeconds\":30,\"ArchiveHeartJourney\":false,\"ContinuousWorldCandidate\":true,\"LeaseSeconds\":180,\"PrivateAcceptance\":{\"Enabled\":false,\"RunId\":\"\",\"UserIds\":[]},\"LaunchCandidate\":true},\"gameId\":0,\"place\":0,\"datasets\":[{\"name\":\"Dataset1\",\"attributes\":{\"SourceSha256\":\"9baaf8de0faf3ff7f4a4f2c32ea692e48aa9dbb021f609e3530029ed7844ddc7\"}},{\"name\":\"Dataset2\",\"attributes\":{\"SourceSha256\":\"8743e160609a44e48b80e81b9ff0fe21b043bfb7e69fa216f2d164149c7f6760\"}},{\"name\":\"Dataset3\",\"attributes\":{\"SourceSha256\":\"b885085377b3e56faf9f6a0fe072d0db4672f6b87c5241c6d61ff34c70a65539\"}},{\"name\":\"Dataset4\",\"attributes\":{\"SourceSha256\":\"4e65f4e254ae58bed6c5825d68948dc8689eb10332fb2763bdae37f86e371d20\"}}],\"quality\":{\"IsolatedMemory\":true,\"WorldSourceSha256\":\"9baaf8de0faf3ff7f4a4f2c32ea692e48aa9dbb021f609e3530029ed7844ddc7\",\"BindEnemies\":false,\"EnableWorldSlice\":true,\"WorldDataset\":\"Dataset1\"}}"
+    }
+  ],
+  "isError": false
+}

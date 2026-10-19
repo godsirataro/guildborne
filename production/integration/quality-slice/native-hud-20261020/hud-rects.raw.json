@@ -1,0 +1,9 @@
+{
+  "content": [
+    {
+      "type": "text",
+      "text": "{\"rects\":[{\"y\":70,\"x\":764,\"name\":\"QuestTracker\",\"visible\":true,\"w\":300,\"h\":96},{\"y\":60,\"x\":1072,\"name\":\"CityMapButton\",\"visible\":true,\"w\":130,\"h\":48},{\"y\":112,\"x\":1072,\"name\":\"DistrictName\",\"visible\":true,\"w\":130,\"h\":64}],\"borin\":{\"path\":\"Workspace.GuildborneWorld.City.FriendlyOrcs.smith_borin\",\"attributes\":{\"NpcId\":\"smith_borin\",\"RecruitmentBound\":false,\"NpcLifeActivity\":\"Work\",\"NpcLifeWorkWeight\":1,\"HomeCity\":\"Deepforge\",\"BorinLocalWorkClock\":0.999748945236206,\"FriendlyNPC\":true,\"BorinLocalPresentationState\":\"Work\",\"BorinLocalWorkWeight\":1,\"NpcLifeTier\":\"Near\",\"NpcLifeScheduledActivity\":\"Work\",\"RaceId\":\"Dwarf\",\"BorinPresentation\":\"NATIVE_CONTACT_SUBSTITUTE_NOT_IMPORTED_ART\",\"DesignId\":\"npc.city.smith_borin\",\"CityAmbience\":true},\"position\":\"370, 0.3000015318393707, -958\"},\"npcs\":[]}"
+    }
+  ],
+  "isError": false
+}

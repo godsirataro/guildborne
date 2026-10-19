@@ -28,7 +28,7 @@ an unreviewed service implementation. Recheck actual tool availability when resu
 
 Continue dependency-ready work until the outcome is complete or measured Codex
 remaining usage reaches approximately 5%. Latest account measurement this wave:
-11% used, 89% remaining. Check between bounded waves; preserve work and stop new
+13% used, 87% remaining. Check between bounded waves; preserve work and stop new
 waves at the threshold. Do not redeem resets.
 
 ## Current checkpoint and acceptance
@@ -63,18 +63,24 @@ recorded 97 samples over 48.92 seconds with work/pause transitions. It does not
 prove earned travel, all-joint animation quality or a populated walking city.
 The first-wave and post-integration packets received independent bounded review.
 
-S14 is now addressing the observed City Map card overlap with the quest panel at
-1210 x 834. Require responsive layout checks, independent review and a fresh native
-check before closing that defect. S13 and S17 released their completed bounded
-leases. S15 audited server-authoritative reward/cue routes; audible effects and
-the full combat/hero journey still need acceptance.
+S14 HUD repair 276d732 is integrated as 1f8d0c4. Full baseline again passed968 tests
+on unchanged source (run38ebd847dec247a9b0ea5b566f85808f). Native1210x834 and
+2076x935 rects confirm8px map/quest clearance; recovered wide screenshot and actual
+map/journal clicks are archived in [HUD/NPC closeout](../../integration/quality-slice/native-hud-20261020/README.md).
+Borin now has bounded named-joint work/pause, real dialogue across routine changes
+and assisted cull-return diagnostics. Final art/audio/device/fullNPC acceptance
+remain open. Native900x640 beacon fallback is still pending; its simulated test
+passes. S13/S14/S17 completed bounded leases are released; S15 audit is complete.
 
 ## Tool and evidence state
 
-Studio 93fd1ca5-0be3-465c-a439-eb9ee254e9c0 was verified in Edit after stopping Play.
-Rojo serves the quality preview on 127.0.0.1:34872. Blender's reviewed read-only
-bridge on 127.0.0.1:19877 answered; interactive unsaved scene was preserved.
-These are timestamped observations; recheck before reuse.
+Studio was saved and restarted after blank3D/ghosted desktop captures. Current
+visible Studio fe0ad064-622d-4adb-9e68-0b233ad44457 is stopped in Edit; its reopened
+433 sources match the candidate and native3D captures recovered. Desktop capture
+still showed ghosted panels. Rojo server127.0.0.1:34872 is listening, but the new
+Studio plugin is NOT connected; reconnect remains pending. Saved-source equality
+is not live-sync evidence. Blender's last verified read-only bridge remains
+127.0.0.1:19877; interactive unsaved scene was preserved. Recheck before reuse.
 
 Rojo source changes synchronized, but regenerated project attributes did not
 refresh automatically. The recorded Dataset2 source hash was explicitly asserted
