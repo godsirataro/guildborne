@@ -1,0 +1,5 @@
+*.json -text whitespace=cr-at-eol
+*.txt -text -whitespace
+*.luau -text -whitespace
+*.zst binary
+*.png binary

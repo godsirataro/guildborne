@@ -1,0 +1,9 @@
+{
+  "content": [
+    {
+      "type": "text",
+      "text": "{\"rewardCallbacks\":0,\"commands\":[{\"at\":1792446532.266604,\"action\":\"Basic\",\"reason\":\"EnterCamp\",\"actorId\":\"a:Knight\",\"accepted\":false},{\"at\":1792446533.649798,\"action\":\"Basic\",\"reason\":\"EnterCamp\",\"actorId\":\"a:Warrior\",\"accepted\":false},{\"at\":1792446535.050207,\"action\":\"Basic\",\"reason\":\"EnterCamp\",\"actorId\":\"a:Archer\",\"accepted\":false},{\"at\":1792446536.416231,\"action\":\"Basic\",\"reason\":\"EnterCamp\",\"actorId\":\"a:Mage\",\"accepted\":false},{\"at\":1792446537.799826,\"action\":\"Basic\",\"reason\":\"EnterCamp\",\"actorId\":\"a:Priest\",\"accepted\":false},{\"at\":1792446545.499504,\"action\":\"Hold\",\"reason\":\"OK\",\"actorId\":\"a:Knight\",\"accepted\":true},{\"at\":1792446546.399595,\"action\":\"Hold\",\"reason\":\"OK\",\"actorId\":\"a:Warrior\",\"accepted\":true},{\"at\":1792446547.316177,\"action\":\"Hold\",\"reason\":\"OK\",\"actorId\":\"a:Archer\",\"accepted\":true},{\"at\":1792446548.215897,\"action\":\"Hold\",\"reason\":\"OK\",\"actorId\":\"a:Mage\",\"accepted\":true},{\"at\":1792446549.09937,\"action\":\"Hold\",\"reason\":\"OK\",\"actorId\":\"a:Priest\",\"accepted\":true}],\"startZone\":\"Guild\",\"roster\":[\"Knight\",\"Warrior\",\"Archer\",\"Mage\",\"Priest\"],\"scope\":\"SYNTHETIC_PARTY_PRESENTATION_NOT_EARNED\",\"notifications\":[],\"status\":\"READY_SYNTHETIC\",\"profileWrites\":0}"
+    }
+  ],
+  "isError": false
+}

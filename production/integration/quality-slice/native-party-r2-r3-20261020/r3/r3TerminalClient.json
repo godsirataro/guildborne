@@ -1,0 +1,9 @@
+{
+  "content": [
+    {
+      "type": "text",
+      "text": "{\"attribution\":\"VFX_UNASSIGNED\",\"requestedDuration\":8,\"startedAt\":1792447992.598251,\"deadline\":1792448000.598251,\"status\":\"OBSERVATIONS_ONLY\",\"runId\":\"party-native-20261020-r3\",\"cleanupErrors\":[],\"side\":\"client\",\"ownerUserId\":11732987790,\"stopOvershoot\":0.01552581787109375,\"collection\":{\"clockRegression\":false,\"reason\":\"duration\",\"maxGap\":0.02730584144592285,\"startedAt\":1792447992.598251,\"invalidTimes\":0,\"dropped\":0,\"attempted\":1236,\"capacity\":4000,\"frameCount\":481,\"count\":1236,\"complete\":true,\"finishedAt\":1792448000.613777,\"overflow\":false,\"gapLimit\":0.15,\"lastTime\":1792448000.613777,\"stopped\":true,\"gapCount\":0},\"actorCounts\":{\"party-native-20261020-r3:client:entity:2\":{\"basicDelta\":0,\"healthDrops\":1,\"abilityDelta\":1,\"damageDealtDelta\":27,\"counterResets\":0,\"healingDelta\":0,\"damageStampChanges\":1,\"actionChanges\":1,\"counterUnknownSamples\":0},\"party-native-20261020-r3:client:entity:1\":{\"basicDelta\":0,\"healthDrops\":2,\"abilityDelta\":1,\"damageDealtDelta\":35,\"counterResets\":0,\"healingDelta\":0,\"damageStampChanges\":3,\"actionChanges\":1,\"counterUnknownSamples\":0}},\"captureIssues\":[],\"automaticAcceptance\":false,\"memory\":\"CONTROLLER_ATTESTATION_ONLY\",\"discoveryOverflow\":false,\"jointCount\":21,\"stoppedAt\":1792448000.613777,\"entityCount\":2,\"vfxCount\":85,\"samplePhase\":\"PostSimulation\"}"
+    }
+  ],
+  "isError": false
+}

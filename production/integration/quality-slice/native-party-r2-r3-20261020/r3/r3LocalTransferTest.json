@@ -1,0 +1,9 @@
+{
+  "content": [
+    {
+      "type": "text",
+      "text": "{\"ok\":true,\"result\":{\"StatusMessage\":\"OK\",\"Success\":true,\"StatusCode\":200,\"Headers\":{\"connection\":\"keep-alive\",\"content-type\":\"application/json\",\"date\":\"Mon, 19 Oct 2026 22:14:33 GMT\",\"transfer-encoding\":\"chunked\",\"keep-alive\":\"timeout=5\"},\"Body\":\"{\\\"side\\\":\\\"server\\\",\\\"offset\\\":0,\\\"count\\\":200,\\\"compressed\\\":442990,\\\"rawLength\\\":1427048,\\\"sha256\\\":\\\"ae93dfb9a2a18ea64434c2a7edb180d0126ea64bc4d643e9eb3ba2a4ffb739c0\\\",\\\"rawSha256\\\":\\\"d7539184fff214648d06f2af12f977f2e8e9f5ed62019719e6fddb33cb8d7971\\\"}\"},\"httpRestored\":true}"
+    }
+  ],
+  "isError": false
+}

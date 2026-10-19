@@ -1,0 +1,9 @@
+{
+  "content": [
+    {
+      "type": "text",
+      "text": "{\"report\":\"{\\\"rewardCallbacks\\\":0,\\\"commands\\\":[{\\\"at\\\":1792447988.074904,\\\"action\\\":\\\"Hold\\\",\\\"reason\\\":\\\"OK\\\",\\\"actorId\\\":\\\"a:Knight\\\",\\\"accepted\\\":true},{\\\"at\\\":1792447988.791549,\\\"action\\\":\\\"Hold\\\",\\\"reason\\\":\\\"OK\\\",\\\"actorId\\\":\\\"a:Warrior\\\",\\\"accepted\\\":true},{\\\"at\\\":1792447989.525261,\\\"action\\\":\\\"Hold\\\",\\\"reason\\\":\\\"OK\\\",\\\"actorId\\\":\\\"a:Archer\\\",\\\"accepted\\\":true},{\\\"at\\\":1792447990.242383,\\\"action\\\":\\\"Hold\\\",\\\"reason\\\":\\\"OK\\\",\\\"actorId\\\":\\\"a:Mage\\\",\\\"accepted\\\":true},{\\\"at\\\":1792447990.976265,\\\"action\\\":\\\"Hold\\\",\\\"reason\\\":\\\"OK\\\",\\\"actorId\\\":\\\"a:Priest\\\",\\\"accepted\\\":true},{\\\"at\\\":1792447991.708059,\\\"action\\\":\\\"Regroup\\\",\\\"reason\\\":\\\"OK\\\",\\\"actorId\\\":\\\"a:Mage\\\",\\\"accepted\\\":true}],\\\"startZone\\\":\\\"Guild\\\",\\\"roster\\\":[\\\"Knight\\\",\\\"Warrior\\\",\\\"Archer\\\",\\\"Mage\\\",\\\"Priest\\\"],\\\"scope\\\":\\\"SYNTHETIC_PARTY_PRESENTATION_NOT_EARNED\\\",\\\"notifications\\\":[],\\\"status\\\":\\\"READY_SYNTHETIC\\\",\\\"profileWrites\\\":0}\",\"playerHealth\":57}"
+    }
+  ],
+  "isError": false
+}

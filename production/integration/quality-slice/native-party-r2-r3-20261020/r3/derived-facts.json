@@ -1,0 +1,217 @@
+{
+  "server": {
+    "rows": 984,
+    "actors": {
+      "a:Mage": {
+        "samples": 480,
+        "actions": [
+          {
+            "actionAt": 1792447995.326595,
+            "firstObservation": {
+              "observedAt": 1792447995.327366,
+              "ability": "fireball",
+              "effect": "Magic",
+              "damageDealtCounter": 35,
+              "health": 47
+            },
+            "lastObservation": {
+              "observedAt": 1792448000.525485,
+              "ability": "fireball",
+              "effect": "Magic",
+              "damageDealtCounter": 35,
+              "health": 25
+            }
+          }
+        ],
+        "last": {
+          "AbilityCount": 1,
+          "CombatHealth": 25,
+          "Action": "Fireball",
+          "GuildborneHero": true,
+          "ClassId": "Mage",
+          "CombatMaxHealth": 47,
+          "CombatState": "Regroup",
+          "ActionAt": 1792447995.326595,
+          "OwnerUserId": 11732987790,
+          "ActionEffect": "Magic",
+          "DamageDealt": 35,
+          "DamageCue": "melee_hit",
+          "FeedbackAt": 1792447999.276227,
+          "DamageCueAt": 1792447999.276213,
+          "AdventurerId": "a:Mage",
+          "ActionAbilityId": "fireball",
+          "BasicAttackCount": 0,
+          "Feedback": "-11",
+          "ActionTargetPosition": [
+            -7.916905403137207,
+            3,
+            73.9032974243164
+          ],
+          "HeroState": "Following"
+        }
+      },
+      "player": {
+        "samples": 480,
+        "actions": [
+          {
+            "actionAt": 1792447994.592724,
+            "firstObservation": {
+              "observedAt": 1792447994.593437,
+              "ability": "power_strike",
+              "effect": "Physical",
+              "damageDealtCounter": 27,
+              "health": 48
+            },
+            "lastObservation": {
+              "observedAt": 1792448000.525485,
+              "ability": "power_strike",
+              "effect": "Physical",
+              "damageDealtCounter": 27,
+              "health": 48
+            }
+          }
+        ],
+        "last": {
+          "AbilityCount": 1,
+          "CombatHealth": 48,
+          "Action": "Power Strike",
+          "ActionTargetPosition": [
+            -7.916905403137207,
+            3,
+            73.9032974243164
+          ],
+          "ClassId": "Warrior",
+          "CombatMaxHealth": 57,
+          "GuildbornePlayer": true,
+          "CombatState": "Attack",
+          "ActionAt": 1792447994.592724,
+          "OwnerUserId": 11732987790,
+          "ActionEffect": "Physical",
+          "DamageDealt": 27,
+          "DamageCue": "melee_hit",
+          "FeedbackAt": 1792447994.276024,
+          "DamageCueAt": 1792447994.276007,
+          "ActionAbilityId": "power_strike",
+          "BasicAttackCount": 0,
+          "Feedback": "-9"
+        }
+      }
+    }
+  },
+  "client": {
+    "rows": 1236,
+    "actors": {
+      "a:Mage": {
+        "samples": 480,
+        "actions": [
+          {
+            "actionAt": 1792447995.326595,
+            "firstObservation": {
+              "observedAt": 1792447995.344247,
+              "ability": "fireball",
+              "effect": "Magic",
+              "damageDealtCounter": 35,
+              "health": 47
+            },
+            "lastObservation": {
+              "observedAt": 1792448000.596028,
+              "ability": "fireball",
+              "effect": "Magic",
+              "damageDealtCounter": 35,
+              "health": 25
+            }
+          }
+        ],
+        "last": {
+          "AbilityCount": 1,
+          "CombatHealth": 25,
+          "Action": "Fireball",
+          "GuildborneHero": true,
+          "ClassId": "Mage",
+          "CombatMaxHealth": 47,
+          "CombatState": "Regroup",
+          "ActionAt": 1792447995.326595,
+          "OwnerUserId": 11732987790,
+          "ActionEffect": "Magic",
+          "DamageDealt": 35,
+          "DamageCue": "melee_hit",
+          "FeedbackAt": 1792447999.276227,
+          "DamageCueAt": 1792447999.276213,
+          "AdventurerId": "a:Mage",
+          "ActionAbilityId": "fireball",
+          "BasicAttackCount": 0,
+          "Feedback": "-11",
+          "ActionTargetPosition": [
+            -7.916905403137207,
+            3,
+            73.9032974243164
+          ],
+          "HeroState": "Following"
+        }
+      },
+      "player": {
+        "samples": 480,
+        "actions": [
+          {
+            "actionAt": 1792447994.592724,
+            "firstObservation": {
+              "observedAt": 1792447994.627953,
+              "ability": "power_strike",
+              "effect": "Physical",
+              "damageDealtCounter": 27,
+              "health": 48
+            },
+            "lastObservation": {
+              "observedAt": 1792448000.596028,
+              "ability": "power_strike",
+              "effect": "Physical",
+              "damageDealtCounter": 27,
+              "health": 48
+            }
+          }
+        ],
+        "last": {
+          "AbilityCount": 1,
+          "CombatHealth": 48,
+          "Action": "Power Strike",
+          "ActionTargetPosition": [
+            -7.916905403137207,
+            3,
+            73.9032974243164
+          ],
+          "ClassId": "Warrior",
+          "CombatMaxHealth": 57,
+          "GuildbornePlayer": true,
+          "CombatState": "Attack",
+          "ActionAt": 1792447994.592724,
+          "OwnerUserId": 11732987790,
+          "ActionEffect": "Physical",
+          "DamageDealt": 27,
+          "DamageCue": "melee_hit",
+          "FeedbackAt": 1792447994.276024,
+          "DamageCueAt": 1792447994.276007,
+          "ActionAbilityId": "power_strike",
+          "BasicAttackCount": 0,
+          "Feedback": "-9"
+        }
+      }
+    }
+  },
+  "vfx": {
+    "added": 85,
+    "removed": 82,
+    "readinessFamilies": {
+      "nil/nil": 66,
+      "Mage.Fireball/Charge": 9,
+      "Mage.Fireball/Travel": 2,
+      "Mage.Fireball/Impact": 8
+    },
+    "minLife": 0.06525182723999023,
+    "maxLife": 0.6650559902191162,
+    "unremoved": [
+      "party-native-20261020-r3:client:vfx:83",
+      "party-native-20261020-r3:client:vfx:84",
+      "party-native-20261020-r3:client:vfx:85"
+    ]
+  }
+}

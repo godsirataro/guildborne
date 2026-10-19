@@ -1,0 +1,9 @@
+{
+  "content": [
+    {
+      "type": "text",
+      "text": "{\"attribution\":\"VFX_UNASSIGNED\",\"requestedDuration\":8,\"startedAt\":1792447992.528877,\"deadline\":1792448000.528877,\"status\":\"OBSERVATIONS_ONLY\",\"runId\":\"party-native-20261020-r3\",\"cleanupErrors\":[],\"side\":\"server\",\"ownerUserId\":11732987790,\"collection\":{\"dropped\":0,\"count\":3,\"attempted\":3,\"capacity\":4000,\"stopped\":false,\"frameCount\":0,\"complete\":false,\"maxGap\":0,\"invalidTimes\":0,\"startedAt\":1792447992.528877,\"overflow\":false,\"lastTime\":1792447992.550281,\"gapLimit\":0.15,\"clockRegression\":false,\"gapCount\":0},\"captureIssues\":[\"zero_frames\",\"zero_joints\"],\"automaticAcceptance\":false,\"memory\":\"VERIFIED_REAL_RUNTIME\",\"discoveryOverflow\":false,\"jointCount\":0,\"actorCounts\":{\"party-native-20261020-r3:server:entity:1\":{\"basicDelta\":0,\"healthDrops\":0,\"abilityDelta\":0,\"damageDealtDelta\":0,\"counterResets\":0,\"healingDelta\":0,\"damageStampChanges\":0,\"actionChanges\":0,\"counterUnknownSamples\":0},\"party-native-20261020-r3:server:entity:2\":{\"basicDelta\":0,\"healthDrops\":0,\"abilityDelta\":0,\"damageDealtDelta\":0,\"counterResets\":0,\"healingDelta\":0,\"damageStampChanges\":0,\"actionChanges\":0,\"counterUnknownSamples\":0}},\"entityCount\":2,\"vfxCount\":0,\"samplePhase\":\"Heartbeat\"}"
+    }
+  ],
+  "isError": false
+}

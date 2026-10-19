@@ -1,0 +1,9 @@
+{
+  "expected": 444,
+  "actual": 444,
+  "mismatches": [],
+  "extra": [],
+  "method": "normalizedUTF8 length/Adler32",
+  "timing": "post-capture Stop Play Edit",
+  "httpEnabled": false
+}

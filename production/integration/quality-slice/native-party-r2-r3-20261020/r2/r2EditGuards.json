@@ -1,0 +1,9 @@
+{
+  "content": [
+    {
+      "type": "text",
+      "text": "{\"placeId\":0,\"bootstraps\":[{\"disabled\":true,\"path\":\"StarterPlayer.StarterPlayerScripts.Client.ClientBootstrap\"},{\"disabled\":true,\"path\":\"ServerScriptService.Server.ServerBootstrap\"}],\"gameId\":0}"
+    }
+  ],
+  "isError": false
+}
