@@ -5,6 +5,158 @@ local Art=require(game.ReplicatedStorage.Shared.Config.Art)
 local Kit=require(script.Parent.ArtKit)
 local V=Vector3.new
 local C=Art.Palette
+local ResidentRoute=require(script.Parent.Parent.Systems.CityResidentRoute)
+-- One nonquest resident, owned by this world builder. No escort/session receipts.
+local function startResident(town:Folder,model:Model)
+	local root=model.PrimaryPart
+	if not root then return end
+	local groundY=.7
+	local function bounds(part:BasePart):any
+		local cf,size=part.CFrame,part.Size*.5
+		local r,u,l=cf.RightVector,cf.UpVector,cf.LookVector
+		local h=V(math.abs(r.X)*size.X+math.abs(u.X)*size.Y+math.abs(l.X)*size.Z,
+			math.abs(r.Y)*size.X+math.abs(u.Y)*size.Y+math.abs(l.Y)*size.Z,
+			math.abs(r.Z)*size.X+math.abs(u.Z)*size.Y+math.abs(l.Z)*size.Z)
+		local p=cf.Position
+		return {minX=p.X-h.X,maxX=p.X+h.X,minY=p.Y-h.Y,maxY=p.Y+h.Y,minZ=p.Z-h.Z,maxZ=p.Z+h.Z}
+	end
+	local footBottom=math.huge
+	local left,right=model:FindFirstChild("Left Leg"),model:FindFirstChild("Right Leg")
+	if not left or not left:IsA("BasePart") or not right or not right:IsA("BasePart") then return end
+	for _,p in ipairs(model:GetDescendants()) do
+		if p:IsA("BasePart") and (p==left or p==right or p.Name=="Boot") then footBottom=math.min(footBottom,bounds(p).minY) end
+	end
+	local footOffset=root.Position.Y-footBottom
+	if footOffset~=footOffset or footOffset<1 or footOffset>6 then return end
+	local bodyTop=footBottom
+	for _,p in ipairs(model:GetDescendants()) do
+		if p:IsA("BasePart") then
+			local b=bounds(p)
+			bodyTop=math.max(bodyTop,b.maxY)
+			local x=math.max(math.abs(b.minX-root.Position.X),math.abs(b.maxX-root.Position.X))
+			local z=math.max(math.abs(b.minZ-root.Position.Z),math.abs(b.maxZ-root.Position.Z))
+			-- Reserve .5 studs for the bounded local gait. A changed rig needs review.
+			if x~=x or z~=z or math.sqrt(x*x+z*z)+.5>3 then return end
+		end
+	end
+	local bodyHeight=bodyTop-footBottom+.1
+	if bodyHeight~=bodyHeight or bodyHeight<=0 or bodyHeight>20 then return end
+	local rootY=groundY+footOffset
+	local route=assert(ResidentRoute.new({{x=-110,z=-830},{x=-110,z=-828},{x=-184,z=-828}},0,{x=-190,z=-830}))
+	-- Explicit presentation capability: never impersonate a hero or a quest NPC.
+	model:SetAttribute("CityResidentRoute",true)
+	model:SetAttribute("CityResidentGroundY",groundY)
+	model:SetAttribute("CityResidentDistance",0)
+	model:PivotTo(CFrame.new(-110,rootY,-830))
+	game:GetService("CollectionService"):AddTag(model,"GuildborneFriendlyNPC")
+	local parts:{[BasePart]:boolean}={}
+	local heroes:{[Model]:boolean}={}
+	local connections:{RBXScriptConnection}={}
+	local dead=false
+	local function addPart(p:Instance) if p:IsA("BasePart") and not p:IsDescendantOf(model) then parts[p]=true end end
+	local function addHero(p:Instance)
+		if p:IsA("Model") and p:GetAttribute("GuildborneHero")==true then heroes[p]=true end
+	end
+	for _,p in ipairs(town:GetDescendants()) do addPart(p) end
+	for _,p in ipairs(workspace:GetDescendants()) do addHero(p) end
+	table.insert(connections,town.DescendantAdded:Connect(addPart))
+	table.insert(connections,town.DescendantRemoving:Connect(function(p) if p:IsA("BasePart") then parts[p]=nil end end))
+	table.insert(connections,workspace.DescendantAdded:Connect(addHero))
+	table.insert(connections,workspace.DescendantRemoving:Connect(function(p) if p:IsA("Model") then heroes[p]=nil end end))
+	local function stop()
+		if dead then return end;dead=true;route.destroy()
+		for _,connection in ipairs(connections) do connection:Disconnect() end
+		table.clear(connections);table.clear(parts);table.clear(heroes)
+		if model.Parent then model:SetAttribute("EscortMoving",false);model:SetAttribute("CityResidentStatus","Stopped") end
+	end
+	table.insert(connections,model.Destroying:Connect(stop))
+	table.insert(connections,town.Destroying:Connect(stop))
+	local elapsed=0
+	local travelled=0
+	table.insert(connections,game:GetService("RunService").Heartbeat:Connect(function(dt:number)
+		if dead then return end
+		if not model:IsDescendantOf(town) or not town:IsDescendantOf(workspace) or root.Parent==nil then stop();return end
+		if dt~=dt or dt<0 or dt==math.huge then return end
+		elapsed+=dt;if elapsed<.1 then return end
+		-- Discard stall debt. A late tick may never jump across a player or furniture.
+		local step=math.min(elapsed,.1);elapsed=0
+		local before=route.snapshot();local nextState=route.propose(step)
+		local players=game:GetService("Players"):GetPlayers()
+		local nearby=false
+		for _,player in ipairs(players) do
+			local p=player.Character and player.Character:FindFirstChild("HumanoidRootPart")
+			if p and p:IsA("BasePart") and (p.Position-root.Position).Magnitude<=160 then nearby=true;break end
+		end
+		if not nearby then
+			local state=route.step(step,false,false)
+			model:SetAttribute("EscortMoving",false)
+			model:SetAttribute("CityResidentStatus",state.status)
+			model:SetAttribute("CityResidentReason",state.reason)
+			return -- Far residents do no furniture or character bounds work.
+		end
+		local boxes={};local supportedFrom=false;local supportedTo=false;local valid=#players<=100
+		local scanned=0
+		-- Direct bounds include visible CanQuery=false/CanCollide=false furniture.
+		-- Floors are support only when flat and at the reviewed .7 surface.
+		for part in pairs(parts) do
+			scanned+=1;if scanned>16384 then valid=false;break end
+			if not part.Parent then parts[part]=nil;continue end
+			if part.Transparency>=1 and not part.CanCollide then continue end
+			local b=bounds(part)
+			for _,value in pairs(b) do
+				if value~=value or math.abs(value)>1e6 then valid=false;break end
+			end
+			if not valid then break end
+			if b.maxX< -188 or b.minX> -106 or b.maxZ< -834 or b.minZ> -824 then continue end
+			if math.abs(part.CFrame.UpVector.Y)> .9999 and math.abs(b.maxY-groundY)<=.025 then
+				local function supports(point:any):boolean
+					local localPoint=part.CFrame:PointToObjectSpace(V(point.x,groundY,point.z))
+					return math.abs(localPoint.X)<=part.Size.X*.5-.6 and math.abs(localPoint.Z)<=part.Size.Z*.5-.6
+				end
+				supportedFrom=supportedFrom or supports(before);supportedTo=supportedTo or supports(nextState)
+			elseif b.maxY>groundY+.025 then table.insert(boxes,b) end
+			if #boxes>400 then valid=false;break end
+		end
+		local function body(actor:Model)
+			local p=actor.PrimaryPart or actor:FindFirstChild("HumanoidRootPart")
+			if not p or not p:IsA("BasePart") then valid=false;return end
+			-- Character geometry may be noncollidable and nonqueryable. GetBoundingBox
+			-- reads all parts rather than relying on overlap-query eligibility.
+			local cf,size=actor:GetBoundingBox();local r,u,l=cf.RightVector,cf.UpVector,cf.LookVector
+			local h=V(math.abs(r.X)*size.X+math.abs(u.X)*size.Y+math.abs(l.X)*size.Z,
+				math.abs(r.Y)*size.X+math.abs(u.Y)*size.Y+math.abs(l.Y)*size.Z,
+				math.abs(r.Z)*size.X+math.abs(u.Z)*size.Y+math.abs(l.Z)*size.Z)*.5
+			local margin=1
+			-- Filter using the complete bound, not root distance: a remote root can
+			-- still own a limb/accessory that reaches this sweep.
+			if cf.X~=cf.X or cf.Y~=cf.Y or cf.Z~=cf.Z or h.X~=h.X or h.Y~=h.Y or h.Z~=h.Z
+				or math.abs(cf.X)>1e6 or math.abs(cf.Y)>1e6 or math.abs(cf.Z)>1e6
+				or h.Magnitude==math.huge or h.Magnitude>100 then valid=false;return end
+			if cf.X+h.X+margin<math.min(before.x,nextState.x)-3 or cf.X-h.X-margin>math.max(before.x,nextState.x)+3
+				or cf.Z+h.Z+margin<math.min(before.z,nextState.z)-3 or cf.Z-h.Z-margin>math.max(before.z,nextState.z)+3 then return end
+			table.insert(boxes,{minX=cf.X-h.X-margin,maxX=cf.X+h.X+margin,minY=cf.Y-h.Y,maxY=cf.Y+h.Y,minZ=cf.Z-h.Z-margin,maxZ=cf.Z+h.Z+margin})
+		end
+		if nearby then
+			for _,player in ipairs(players) do if player.Character then body(player.Character) end end
+			local count=0
+			for hero in pairs(heroes) do
+				count+=1;if count>500 then valid=false;break end
+				if hero:IsDescendantOf(workspace) then body(hero) else heroes[hero]=nil end
+			end
+		end
+		local blocked,reason=ResidentRoute.sweptBlocked(before,nextState,3,groundY+.026,groundY+bodyHeight,boxes)
+		local clear=valid and supportedFrom and supportedTo and not blocked
+		local state=route.step(step,nearby,clear)
+		local dx,dz=state.x-before.x,state.z-before.z
+		local distance=math.sqrt(dx*dx+dz*dz)
+		if clear and nearby then model:PivotTo(CFrame.new(state.x,rootY,state.z)*CFrame.Angles(0,state.yaw,0)) end
+		model:SetAttribute("EscortMoving",distance>0)
+		travelled+=distance
+		model:SetAttribute("CityResidentDistance",travelled)
+		model:SetAttribute("CityResidentStatus",state.status)
+		model:SetAttribute("CityResidentReason",if not valid then "InvalidGeometry" elseif not supportedFrom or not supportedTo then "UnsupportedGround" elseif blocked then reason else state.reason)
+	end))
+end
 return function(town: Folder,templates: Folder,open: any,prompt: any): any
 	local modular=require(script.Parent.CityKit).Build();modular.Parent=game.ServerStorage
 	local interiors=require(script.Parent.CityInteriorKit)();interiors.Parent=modular
@@ -154,6 +306,7 @@ return function(town: Folder,templates: Folder,open: any,prompt: any): any
 		sign(town,"Central Plaza",V(-24,4,z));sign(town,if z< -1100 then "Tower Gate" else "Guild Zone Warp",V(24,4,z))
 	end
 	local rig=require(script.Parent.HeroRig)
+	local resident:Model?=nil
 	for _,def in ipairs(({{name="Mira",class="Priest",x=250,z=-1030,tab="Journal"},{name="City Herald",class="Knight",x=-45,z=-1080,tab="Journal"},
 		{name="Expedition Master",class="Archer",x=-175,z=-840,tab="Dispatch"},{name="City Guard",class="Knight",x=-23,z=-1525},
 		{name="City Guard",class="Knight",x=23,z=-1525},{name="Merchant",class="Warrior",x=330,z=-1050},
@@ -164,6 +317,7 @@ return function(town: Folder,templates: Folder,open: any,prompt: any): any
 		for _,part in ipairs(m:GetDescendants()) do if part:IsA("BasePart") then part.CanCollide=false;part.CanTouch=false;part.CanQuery=false end end
 		(m.PrimaryPart :: BasePart).Anchored=true
 		local root=m.PrimaryPart :: BasePart;Kit.Label(root,def.name,Locale.translate("th",def.name),5)
+		if def.name=="Adventurer" and not def.tab then resident=m end
 		if def.tab then
 			if def.tab=="Journal" then root:SetAttribute("QuestNPC",def.name);game:GetService("CollectionService"):AddTag(root,"GuildborneQuestNPC") end
 			prompt(root,"Talk",function(player) open(player,if def.tab=="Journal" then "JournalNPC:"..def.name else def.tab) end);S.npcs[def.name]=root
@@ -171,5 +325,6 @@ return function(town: Folder,templates: Folder,open: any,prompt: any): any
 	end
 	for name,root in pairs(require(script.Parent.FriendlyCityNpcs)(town,open,prompt)) do S.npcs[name]=root end
 	require(script.Parent.CityLandscape)(town)
+	if resident then startResident(town,resident) end
 	return S
 end

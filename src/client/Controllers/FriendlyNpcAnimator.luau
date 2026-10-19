@@ -24,7 +24,70 @@ local function localDialogueOpen(root:BasePart,id:string):boolean
     end
     return true
 end
-type Actor={model:Model,motors:{[Motor6D]:CFrame},added:RBXScriptConnection?,removing:RBXScriptConnection?,destroying:RBXScriptConnection?,borin:BorinMotion.State?,flashUntil:number?,id:string?,nextSample:number,tier:string?,activity:string,interactUntil:number?,localDialogueUntil:number?,weight:number,restored:boolean,lastTime:number?,lookYaw:number,lookRoot:BasePart?,lookUntil:number?,lookUserId:number?}
+type Actor={model:Model,residentDistance:number?,motors:{[Motor6D]:CFrame},feet:{[Motor6D]:{Vector3}}?,added:RBXScriptConnection?,removing:RBXScriptConnection?,destroying:RBXScriptConnection?,borin:BorinMotion.State?,flashUntil:number?,id:string?,nextSample:number,tier:string?,activity:string,interactUntil:number?,localDialogueUntil:number?,weight:number,restored:boolean,lastTime:number?,lookYaw:number,lookRoot:BasePart?,lookUntil:number?,lookUserId:number?}
+-- R6-only adapter for the one existing resident. Root motion remains server owned.
+local function residentPose(actor:Actor,dt:number):boolean
+    local distance=actor.model:GetAttribute("CityResidentDistance")
+    local ground=actor.model:GetAttribute("CityResidentGroundY")
+    if type(distance)~="number" or distance~=distance or distance<0 or distance==math.huge
+        or type(ground)~="number" or ground~=ground or math.abs(ground)>1e6 then return false end
+    if not actor.feet then
+        local feet:{[Motor6D]:{Vector3}}={}
+        for motor in pairs(actor.motors) do
+            if motor.Name~="Left Hip" and motor.Name~="Right Hip" then continue end
+            local leg=motor.Part1;if not leg then return false end
+            local parts={leg}
+            for _,weld in ipairs(actor.model:GetDescendants()) do
+                if weld:IsA("WeldConstraint") and weld.Part0==leg and weld.Part1 then table.insert(parts,weld.Part1) end
+            end
+            local corners={}
+            for _,part in ipairs(parts) do
+                local relative=leg.CFrame:ToObjectSpace(part.CFrame)
+                for _,x in ipairs({-1,1}) do for _,y in ipairs({-1,1}) do for _,z in ipairs({-1,1}) do
+                    table.insert(corners,relative:PointToWorldSpace(part.Size*Vector3.new(x,y,z)*.5))
+                end end end
+            end
+            feet[motor]=corners
+        end
+        actor.feet=feet
+    end
+    -- Distance, rather than elapsed time, prevents running in place while blocked.
+    local moving=actor.model:GetAttribute("EscortMoving")==true
+    -- Interpolate only already-observed travel; never extrapolate into a blocker.
+    local previous=actor.residentDistance
+    local shown=distance
+    if moving and type(previous)=="number" and previous==previous and previous>=0 and previous<=distance
+        and dt==dt and dt>=0 and dt<math.huge then
+        shown=math.min(distance,previous+math.min(dt,.1)*3)
+    end
+    actor.residentDistance=shown
+    local wave=if moving then math.sin(shown*math.pi) else 0
+    local solved:{[Motor6D]:CFrame}={}
+    local feet=actor.feet
+    if not feet then return false end
+    for motor,base in pairs(actor.motors) do
+        local sign=if motor.Name=="Left Hip" or motor.Name=="Right Shoulder" then 1 else -1
+        local angle=wave*sign*.22
+        local offset=CFrame.identity
+        local corners=feet[motor]
+        if corners then
+            if not motor.Part0 or not motor.Part1 then return false end
+            offset=CFrame.Angles(angle,0,0)
+            local cf=motor.Part0.CFrame*base*offset*motor.C1:Inverse()
+            local bottom=math.huge
+            for _,corner in ipairs(corners) do bottom=math.min(bottom,cf:PointToWorldSpace(corner).Y) end
+            local correction=ground+math.max(0,wave*sign)*.08-bottom
+            if correction~=correction or math.abs(correction)>.5 then return false end
+            local shift=motor.Part0.CFrame:VectorToObjectSpace(Vector3.new(0,correction,0))
+            solved[motor]=CFrame.new(shift)*base*offset
+        else
+            if motor.Name=="Left Shoulder" or motor.Name=="Right Shoulder" then offset=CFrame.Angles(angle,0,0) end
+            solved[motor]=base*offset
+        end
+    end
+    for motor,cf in pairs(solved) do if motor.Parent then motor.C0=cf end end
+    return true
+end
 return function(collectionProvider:any?)
     local Collection=collectionProvider or CollectionService
     local actors:{[Instance]:Actor}={}
@@ -54,11 +117,13 @@ return function(collectionProvider:any?)
         local actor:Actor={model=instance,motors={},id=Life.resolve(instance:GetAttribute("NpcId")),nextSample=0,activity="Work",weight=0,restored=false,lookYaw=0}
         if BorinMotion.usesForge(instance:GetAttribute("NpcId"),instance:GetAttribute("WorkMotionIdentity")) then actor.borin=BorinMotion.new() end
         local function joint(v:Instance)
+            actor.feet=nil
             if v:IsA("Motor6D")and not actor.motors[v]then actor.motors[v]=v.C0;actor.restored=false end
         end
         actors[instance]=actor
         actor.added=instance.DescendantAdded:Connect(joint)
         actor.removing=instance.DescendantRemoving:Connect(function(v)
+            actor.feet=nil
             if v:IsA("Motor6D")then local base=actor.motors[v];if base then v.C0=base;actor.motors[v]=nil end end
         end)
         for _,v in ipairs(instance:GetDescendants())do joint(v)end
@@ -81,6 +146,12 @@ return function(collectionProvider:any?)
             local distance=(root.Position-camera.CFrame.Position).Magnitude
             local reduced=workspace:GetAttribute(Motion.ReducedMotionAttribute)==true
             local moving=actor.model:GetAttribute("EscortMoving")==true
+            if actor.model:GetAttribute("CityResidentRoute")==true then
+                if distance>160 or reduced or not residentPose(actor,dt) then
+                    actor.residentDistance=nil;restore(actor)
+                else actor.restored=false end
+                continue
+            end
             local deadlineAttribute,speakerAttribute=BorinMotion.interactionAttributes(actor.model:GetAttribute("NpcId"))
             -- Day phase uses the world's existing clock; short work bouts and interaction deadlines use server time.
             -- Near dialogue scans are capped at ten per second, and far actors do no GUI scans.
