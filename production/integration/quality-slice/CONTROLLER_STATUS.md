@@ -1,3 +1,11 @@
+# Current checkpoint — 2026-10-20
+
+The current full scope and continuation state are in [MASTER_GOAL.md](../../design/integration/MASTER_GOAL.md). The older report below is historical and its quota, lease, process and source identities must not be reused as live facts.
+
+Reviewed integration is b6a866f. Full baseline passed 968 tests plus build/analyze/compile/boundary checks. Native evidence: [earned two-chapter route](native-20261020/README.md) and [post-integration observations](native-post-20261020/README.md). S14 is repairing the City Map/quest-panel overlap found at 1210 x 834. ForgeGUI generation is deferred per the latest user instruction. Full art, world and game acceptance remain open.
+
+---
+
 # Current controller continuation — 2026-10-18
 
 ## User goal checkpoint (authoritative scope)

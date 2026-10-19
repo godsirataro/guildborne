@@ -1,0 +1,97 @@
+{
+  "schemaVersion": 1,
+  "sourceCommit": "d47961a",
+  "baselineCommit": "b6a866f39fd42badc86e715157441b976a4b8eb0",
+  "files": [
+    {
+      "path": ".gitattributes",
+      "sha256": "705fd4d6451a31d36b3df7de96f83f30ac976c9b4a6d1e51671d8e2f33e2d0da",
+      "bytes": 8
+    },
+    {
+      "path": "README.md",
+      "sha256": "cbb7b98f2f1d37dd575b8ccbbb9e17fe391cdb7fd27c6d8fdb2f37b4d098bec4",
+      "bytes": 3428
+    },
+    {
+      "path": "baseline-failed.invocation.json",
+      "sha256": "ffac89a2a8c129054972778446f3681cc8f0e10e8032367a4ec9d4d17970be36",
+      "bytes": 997
+    },
+    {
+      "path": "baseline-failed.stderr.txt",
+      "sha256": "2d718c59217e60aee5d7b4bb222978df7539f4ca4a7efd4cd64dca5432452857",
+      "bytes": 2797
+    },
+    {
+      "path": "baseline-failed.stdout.txt",
+      "sha256": "824e2e8e696d5c773b4a23877477a72f3d84684f53b6f6acdd9b3f5cc02ae429",
+      "bytes": 74726
+    },
+    {
+      "path": "baseline-pass.invocation.json",
+      "sha256": "4477bdd500970a9822988a635d54b143780424dadb37ebf97f535bc760640af5",
+      "bytes": 996
+    },
+    {
+      "path": "baseline-pass.result.json",
+      "sha256": "d20c4cff5191047711000680380ab69071c4bb3e516d6c57dfed68fdbb731163",
+      "bytes": 1758
+    },
+    {
+      "path": "baseline-pass.stderr.txt",
+      "sha256": "34b9c8b58f6623e07530260b3f2b417cb1b65e85e6900ee8aeb9ce33e7c9953a",
+      "bytes": 1895
+    },
+    {
+      "path": "baseline-pass.stdout.txt",
+      "sha256": "97cf0154a1a314e59aceb16db4fb1dd463ae411f395050eb84fb7ff31a003533",
+      "bytes": 75858
+    },
+    {
+      "path": "build-receipt.json",
+      "sha256": "197ac57dd7adf2b187e1247bd2b165c6163b56ab8b3f25e555b44eb3557bb7bc",
+      "bytes": 1703
+    },
+    {
+      "path": "coast-quarry-reverse.png",
+      "sha256": "c3850a90f5807eec4e571764ccb437b5b3228ecc10d51d3bf041a01afad88048",
+      "bytes": 129239
+    },
+    {
+      "path": "inventory-en-after.png",
+      "sha256": "8ee363018881d9e7bfe82a2e86c5ac19ca0015e3a59d218718d468be6a3114aa",
+      "bytes": 216576
+    },
+    {
+      "path": "inventory.raw.json",
+      "sha256": "ae6a0dbcbdc4e72f79f8ec2482ca60fa5fe96fc7be7d41d5b6acc390d9de5f2f",
+      "bytes": 1369
+    },
+    {
+      "path": "npc-48s.raw.json",
+      "sha256": "cd64c3cad0e5ebe809c2fc479b3e1693b65912e56e65acfd4a779a44a50c6e2b",
+      "bytes": 79251
+    },
+    {
+      "path": "npc-summary.json",
+      "sha256": "8a7de21ad131b8687af353b33efbb23d05dbcf9cf4b843b2001e6c5929989aab",
+      "bytes": 4203
+    },
+    {
+      "path": "source-checksums.raw.json",
+      "sha256": "20224c45f8188356c666ff3167fd8e6ec716069d7c5b482fec80ea3919ecb3b8",
+      "bytes": 46321
+    },
+    {
+      "path": "source-expected.json",
+      "sha256": "53516f59a1649ea4f272fe4ce859f96cefced33e9c2b3df8491b8da864b9fd3b",
+      "bytes": 58820
+    },
+    {
+      "path": "stopped.raw.json",
+      "sha256": "2a40348153521a53d613a95b46111de11e0796537f953bd5b2af04224487407f",
+      "bytes": 194
+    }
+  ]
+}

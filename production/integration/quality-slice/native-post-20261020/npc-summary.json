@@ -1,0 +1,197 @@
+{
+  "sampleCount": 97,
+  "duration": 48.920578956604004,
+  "actors": {
+    "harbormaster_sela": {
+      "transitions": [
+        {
+          "at": 0.0,
+          "activity": "Social",
+          "weight": 0
+        },
+        {
+          "at": 3.556,
+          "activity": "Recover",
+          "weight": 0.35469174385070795
+        },
+        {
+          "at": 4.072,
+          "activity": "Work",
+          "weight": 1
+        },
+        {
+          "at": 19.872,
+          "activity": "Social",
+          "weight": 0.062119483947753906
+        },
+        {
+          "at": 27.521,
+          "activity": "Recover",
+          "weight": 0.4200351238250733
+        },
+        {
+          "at": 28.035,
+          "activity": "Work",
+          "weight": 1
+        },
+        {
+          "at": 41.305,
+          "activity": "Recover",
+          "weight": 0.22251009941101074
+        },
+        {
+          "at": 41.806,
+          "activity": "Work",
+          "weight": 1
+        },
+        {
+          "at": 43.355,
+          "activity": "Social",
+          "weight": 0.3974924087524414
+        }
+      ],
+      "uniqueRootCount": 1,
+      "uniqueFirstMotorC0Count": 66,
+      "tiers": [
+        "Mid"
+      ]
+    },
+    "smith_borin": {
+      "transitions": [
+        {
+          "at": 0.0,
+          "activity": "Social",
+          "weight": 0
+        },
+        {
+          "at": 3.556,
+          "activity": "Recover",
+          "weight": 0.4197768370310465
+        },
+        {
+          "at": 4.072,
+          "activity": "Work",
+          "weight": 1
+        },
+        {
+          "at": 27.521,
+          "activity": "Social",
+          "weight": 0.061435699462890625
+        },
+        {
+          "at": 35.686,
+          "activity": "Recover",
+          "weight": 0.7224051157633463
+        },
+        {
+          "at": 36.2,
+          "activity": "Work",
+          "weight": 1
+        },
+        {
+          "at": 41.305,
+          "activity": "Recover",
+          "weight": 0.22251009941101074
+        },
+        {
+          "at": 41.806,
+          "activity": "Work",
+          "weight": 1
+        }
+      ],
+      "uniqueRootCount": 1,
+      "uniqueFirstMotorC0Count": 1,
+      "tiers": [
+        "Near"
+      ]
+    },
+    "rukk": {
+      "transitions": [
+        {
+          "at": 0.0,
+          "activity": "Social",
+          "weight": 0
+        },
+        {
+          "at": 7.653,
+          "activity": "Recover",
+          "weight": 0.3037118911743164
+        },
+        {
+          "at": 8.169,
+          "activity": "Work",
+          "weight": 1
+        },
+        {
+          "at": 23.421,
+          "activity": "Social",
+          "weight": 0.13313579559326172
+        },
+        {
+          "at": 31.601,
+          "activity": "Recover",
+          "weight": 0.41672666867574054
+        },
+        {
+          "at": 32.101,
+          "activity": "Work",
+          "weight": 1
+        },
+        {
+          "at": 41.305,
+          "activity": "Recover",
+          "weight": 0.22251009941101074
+        },
+        {
+          "at": 41.806,
+          "activity": "Work",
+          "weight": 1
+        },
+        {
+          "at": 47.404,
+          "activity": "Social",
+          "weight": 0.46838855743408203
+        }
+      ],
+      "uniqueRootCount": 1,
+      "uniqueFirstMotorC0Count": 1,
+      "tiers": [
+        "Mid"
+      ]
+    },
+    "arborist_vaela": {
+      "transitions": [
+        {
+          "at": 0.0,
+          "activity": "Work",
+          "weight": 0
+        },
+        {
+          "at": 8.169,
+          "activity": "Social",
+          "weight": 0
+        },
+        {
+          "at": 13.27,
+          "activity": "Work",
+          "weight": 0
+        },
+        {
+          "at": 38.233,
+          "activity": "Social",
+          "weight": 0
+        },
+        {
+          "at": 48.42,
+          "activity": "Work",
+          "weight": 0
+        }
+      ],
+      "uniqueRootCount": 1,
+      "uniqueFirstMotorC0Count": 1,
+      "tiers": [
+        "Far"
+      ]
+    }
+  }
+}

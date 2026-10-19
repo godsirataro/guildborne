@@ -1,0 +1,9 @@
+{
+  "content": [
+    {
+      "type": "text",
+      "text": "{\"panes\":{\"1\":{\"path\":\"Players.iswhlaedev.PlayerGui.GuildborneUI.ManagementPanel.Content.InventoryPane\",\"tiles\":{\"1\":{\"quantityAbove\":true,\"quantity\":\"0\",\"active\":true,\"quantityZ\":26,\"id\":\"material:herb\",\"selected\":true,\"cornersAbove\":true,\"artMaxZ\":24},\"3\":{\"quantityAbove\":true,\"quantity\":\"0\",\"active\":true,\"quantityZ\":26,\"id\":\"material:iron_ore\",\"selected\":false,\"cornersAbove\":true,\"artMaxZ\":24},\"2\":{\"quantityAbove\":true,\"quantity\":\"0\",\"active\":true,\"quantityZ\":26,\"id\":\"material:iron_ingot\",\"selected\":false,\"cornersAbove\":true,\"artMaxZ\":24},\"5\":{\"quantityAbove\":true,\"quantity\":\"0\",\"active\":true,\"quantityZ\":26,\"id\":\"material:timber\",\"selected\":false,\"cornersAbove\":true,\"artMaxZ\":24},\"4\":{\"quantityAbove\":true,\"quantity\":\"0\",\"active\":true,\"quantityZ\":26,\"id\":\"material:stone\",\"selected\":false,\"cornersAbove\":true,\"artMaxZ\":24}},\"sections\":{\"ItemGrid\":1,\"ItemCategories\":1,\"InventoryHeading\":1,\"SelectedActorLoadout\":1,\"Capacity\":1,\"SelectedItemDetails\":1,\"InventoryTools\":1},\"portraits\":{\"1\":{\"stageMaxZ\":24,\"viewportZ\":25,\"height\":200,\"stageBelow\":true,\"stageVisible\":true,\"width\":220}},\"ordering\":\"Sibling\"}}}"
+    }
+  ],
+  "isError": false
+}
