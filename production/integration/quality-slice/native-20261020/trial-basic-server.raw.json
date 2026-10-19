@@ -1,0 +1,9 @@
+{
+  "content": [
+    {
+      "type": "text",
+      "text": "{\"PlayerHealth\":36,\"ClassId\":\"Warrior\",\"TrialStatus\":\"Won\",\"ActionAt\":1792432309.088716,\"DisplayHint\":\"ออกจากสนามฝึกเพื่อเดินทางต่อ\",\"ReceiptDelivered\":true,\"OwnerUserId\":11732987790,\"ReturnLabel\":\"ออกจากสนามฝึก\",\"ActionEffect\":\"Basic\",\"DisplayGoals\":\"โจมตีพื้นฐาน 1/1\",\"NextBasicAt\":1792432310.1885586,\"ActionTargetPosition\":null,\"EnemyHealth\":110,\"DisplayHealth\":\"HP 36/36 · หุ่นฝึก 110/120\",\"NextAbilityAt\":0,\"NoviceTrialArena\":true,\"DisplayTitle\":\"นักรบ · ผ่านบทฝึกแล้ว\",\"ActionOriginPosition\":null,\"AbilityLabel\":\"ฟันหนัก\",\"BasicLabel\":\"โจมตีปกติ\"}"
+    }
+  ],
+  "isError": false
+}

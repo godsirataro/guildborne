@@ -1,0 +1,55 @@
+{
+  "status": "REVIEW_NATIVE_OBSERVATIONS_NOT_FULL_ACCEPTANCE",
+  "files": [
+    {
+      "path": "build-receipt.json",
+      "bytes": 1703,
+      "sha256": "d15c64fcc3dbe22468187f55abdc46f3a97cda12298cdbe3f848a5058935c29e"
+    },
+    {
+      "path": "coast-repaired-approach.png",
+      "bytes": 177270,
+      "sha256": "f9f9c82319613fab495734c8b52e70aeaea828a6754a63ff49b4125979afc167"
+    },
+    {
+      "path": "import.raw.json",
+      "bytes": 13483,
+      "sha256": "9c476b761e9b300b2d3a86e625c370b0907c85038795bb080cfafad68c6fdc0d"
+    },
+    {
+      "path": "inventory-novice-th.png",
+      "bytes": 184518,
+      "sha256": "718db057e0d4f1160ba665a6fda3b876a70ecec61d3c8cbf74d77eb5be09cc7b"
+    },
+    {
+      "path": "quest-console.raw.json",
+      "bytes": 10533,
+      "sha256": "e1bbac6c8d76d4fa64d9093e60ef5a7b43e5a44f3e873e1847e3919ea557c3cd"
+    },
+    {
+      "path": "quest-final.raw.json",
+      "bytes": 1021,
+      "sha256": "34626c3a913fc0c150a3a1239cc417a07aa2e2fe48d9eaaeb96f4e848d93d935"
+    },
+    {
+      "path": "README.md",
+      "bytes": 5665,
+      "sha256": "89c80be396b3be2a4c64761ea0af36ba50acec8c91d1f642e0b141e0fe6dd478"
+    },
+    {
+      "path": "source-checksums.raw.json",
+      "bytes": 46322,
+      "sha256": "b8d48d1a44bf8bd10b0318ade7ff328afcd04dbcc1b3d66ff4ba5c31f02ee24f"
+    },
+    {
+      "path": "source-expected.json",
+      "bytes": 58821,
+      "sha256": "217e6e1f7203b752804e14c9b64bed1edc4dbcb5913ad9273d71435754332ee6"
+    },
+    {
+      "path": "trial-basic-server.raw.json",
+      "bytes": 897,
+      "sha256": "15c0698aafb2cb3d6c6d16b81dffcf9fa614532a4c5f1a0acaca17c350738532"
+    }
+  ]
+}

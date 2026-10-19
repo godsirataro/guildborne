@@ -1,0 +1,56 @@
+{
+  "status": "BUILT_NOT_STUDIO_TESTED",
+  "persistence": "Memory",
+  "candidate": "C:\\Work\\MySelf\\Guildborne-controller\\build\\Guildborne_QualityPreview.rbxlx",
+  "sha256": "3733b0ea90c18a28c07cedc455ebce417e97cd584f6ec2bafe518bb438dacb46",
+  "launch": true,
+  "sharedCombat": false,
+  "continuousWorld": true,
+  "worldSlice": true,
+  "bindEnemies": false,
+  "art": [
+    {
+      "dataset": "Dataset1",
+      "meshes": 37,
+      "vertices": 32321,
+      "triangles": 45267,
+      "placements": 116,
+      "sourceSha256": "9baaf8de0faf3ff7f4a4f2c32ea692e48aa9dbb021f609e3530029ed7844ddc7",
+      "chunks": 14,
+      "status": "PACKAGED_LOCAL_PREVIEW_NOT_IMPORTED"
+    },
+    {
+      "dataset": "Dataset2",
+      "meshes": 20,
+      "vertices": 26675,
+      "triangles": 11439,
+      "placements": 72,
+      "sourceSha256": "0a2dd8468029be8c7e9f829666be1413bd9d450b12a25f45beaec2c230480296",
+      "chunks": 13,
+      "status": "PACKAGED_LOCAL_PREVIEW_NOT_IMPORTED"
+    },
+    {
+      "dataset": "Dataset3",
+      "meshes": 10,
+      "vertices": 3531,
+      "triangles": 5752,
+      "placements": 17,
+      "sourceSha256": "b885085377b3e56faf9f6a0fe072d0db4672f6b87c5241c6d61ff34c70a65539",
+      "chunks": 2,
+      "status": "PACKAGED_LOCAL_PREVIEW_NOT_IMPORTED"
+    },
+    {
+      "dataset": "Dataset4",
+      "meshes": 13,
+      "vertices": 6617,
+      "triangles": 10933,
+      "placements": 13,
+      "sourceSha256": "4e65f4e254ae58bed6c5825d68948dc8689eb10332fb2763bdae37f86e371d20",
+      "chunks": 4,
+      "status": "PACKAGED_LOCAL_PREVIEW_NOT_IMPORTED"
+    }
+  ],
+  "enemies": [],
+  "images": null,
+  "runtimeAssetsUploaded": false
+}
