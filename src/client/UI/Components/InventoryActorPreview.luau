@@ -4,6 +4,54 @@ local Players = game:GetService("Players")
 local Theme = require(script.Parent.Parent.DesignSystem.Theme)
 local LIMIT = 512
 
+-- Original native stage: the compass is scenery, never actor or equipment data.
+-- Every shape stays below the transparent viewport; no image or font is needed.
+local function portraitStage(parent: Frame): Frame
+	local stage = Instance.new("Frame")
+	stage.Name = "PortraitStage"; stage.Size = UDim2.fromScale(1, 1)
+	stage.BackgroundTransparency = 1; stage.Active = false; stage.Selectable = false
+	stage.Visible = false; stage.ZIndex = 1; stage.Parent = parent
+	local function shape(host: Instance, name: string, position: UDim2, size: UDim2, color: Color3, transparency: number): Frame
+		local item = Instance.new("Frame")
+		item.Name = name; item.AnchorPoint = Vector2.new(.5, .5)
+		item.Position = position; item.Size = size; item.BackgroundColor3 = color
+		item.BackgroundTransparency = transparency; item.BorderSizePixel = 0
+		item.Active = false; item.Selectable = false; item.ZIndex = 1; item.Parent = host
+		return item
+	end
+	local function outline(item: Frame, transparency: number)
+		local stroke = Instance.new("UIStroke")
+		stroke.Color = Theme.Colors.Gold; stroke.Transparency = transparency
+		stroke.Thickness = 1; stroke.Parent = item
+	end
+	local function round(item: Frame)
+		local corner = Instance.new("UICorner"); corner.CornerRadius = UDim.new(.5, 0); corner.Parent = item
+	end
+	local compass = shape(stage, "CompassSilhouette", UDim2.fromScale(.5, .44), UDim2.fromScale(.72, .72), Theme.Colors.Background, 1)
+	local aspect = Instance.new("UIAspectRatioConstraint")
+	aspect.AspectRatio = 1; aspect.AspectType = Enum.AspectType.FitWithinMaxSize; aspect.Parent = compass
+	local ring = shape(compass, "CompassRing", UDim2.fromScale(.5, .5), UDim2.fromScale(.8, .8), Theme.Colors.Background, 1)
+	round(ring); outline(ring, .83)
+	for index = 0, 3 do
+		local spoke = shape(compass, "CompassAxis" .. index, UDim2.fromScale(.5, .5), UDim2.new(1, 0, 0, 1), Theme.Colors.Gold, .85)
+		spoke.Rotation = index * 45
+	end
+	for index = 0, 3 do
+		local angle = math.rad(index * 90)
+		local point = shape(compass, "CompassPoint" .. index, UDim2.fromScale(.5 + math.cos(angle) * .4, .5 + math.sin(angle) * .4), UDim2.fromScale(.045, .045), Theme.Colors.Gold, .63)
+		point.Rotation = 45
+	end
+	local seal = shape(compass, "CompassSeal", UDim2.fromScale(.5, .5), UDim2.fromScale(.16, .16), Theme.Colors.Background, 1)
+	seal.Rotation = 45; outline(seal, .8)
+	local base = shape(stage, "PodiumDepth", UDim2.fromScale(.5, .905), UDim2.fromScale(.76, .095), Theme.Colors.Background, .08)
+	round(base)
+	local top = shape(stage, "PodiumTop", UDim2.fromScale(.5, .87), UDim2.fromScale(.76, .09), Theme.Colors.Surface, .08)
+	round(top); outline(top, .48)
+	local inset = shape(stage, "PodiumInset", UDim2.fromScale(.5, .87), UDim2.fromScale(.64, .055), Theme.Colors.Background, .5)
+	round(inset); outline(inset, .82)
+	return stage
+end
+
 local function descendants(root: Instance, limit: number): {Instance}?
 	local result: {Instance} = {}
 	local pending = {root}
@@ -93,13 +141,16 @@ return function(parent: Instance, options: any)
 	backdrop.Name = "PortraitBackdrop"
 	backdrop.Color = ColorSequence.new(Theme.Colors.Surface, Theme.Colors.Background)
 	backdrop.Rotation = 90; backdrop.Parent = frame
+	local stage = portraitStage(frame)
 	local viewport = Instance.new("ViewportFrame")
 	viewport.Name = "ActorViewport"; viewport.Size = UDim2.fromScale(1, 1)
+	viewport.ZIndex = 2
 	viewport.BackgroundTransparency = 1; viewport.BorderSizePixel = 0
 	viewport.Ambient = Color3.fromRGB(185, 185, 205); viewport.LightColor = Color3.fromRGB(255, 235, 202)
 	viewport.LightDirection = Vector3.new(-1, -1, -1); viewport.Parent = frame
 	local fallback = Instance.new("TextLabel")
 	fallback.Name = "PreviewUnavailable"; fallback.Size = UDim2.new(1, -16, 1, -16); fallback.Position = UDim2.fromOffset(8, 8)
+	fallback.ZIndex = 3
 	fallback.BackgroundTransparency = 1; fallback.TextWrapped = true; fallback.TextSize = 14
 	fallback.Font = Theme.Fonts.Body; fallback.TextColor3 = Theme.Colors.Muted
 	fallback.Text = options.T("Actor preview unavailable"); fallback.Parent = frame
@@ -113,7 +164,7 @@ return function(parent: Instance, options: any)
 	local bounds = Vector3.zero
 	local function clear()
 		if copy then copy:Destroy(); copy = nil end
-		lastSource = nil; lastSignature = nil; fallback.Visible = true
+		lastSource = nil; lastSignature = nil; fallback.Visible = true; stage.Visible = false
 	end
 	local function fit()
 		if not copy then return end
@@ -195,7 +246,7 @@ return function(parent: Instance, options: any)
 		candidate:PivotTo(CFrame.new(-box.Position) * candidate:GetPivot())
 		candidate:SetAttribute("GuildborneHero", nil); candidate:SetAttribute("OwnerUserId", nil)
 		candidate.Parent = world; copy = candidate; bounds = size
-		lastSource = source; lastSignature = key; fallback.Visible = false; fit()
+		lastSource = source; lastSignature = key; fallback.Visible = false; stage.Visible = true; fit()
 	end
 	local resized = viewport:GetPropertyChangedSignal("AbsoluteSize"):Connect(fit)
 	local destroying: RBXScriptConnection? = nil

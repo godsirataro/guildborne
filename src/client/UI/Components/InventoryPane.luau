@@ -35,6 +35,64 @@ local function strip(parent: Instance, name: string, x: number, y: number, w: nu
 	return result
 end
 
+-- Storage cells have their own quiet surface; burgundy remains an action color.
+-- These callbacks select an item only. The existing detail view owns all intents.
+local function storageTile(parent: Instance, item: any, width: number, height: number, busy: boolean?): TextButton
+	local tile = Instance.new("TextButton")
+	tile.Name = "Item_" .. tostring(item.id); tile.Text = ""; tile.AutoButtonColor = false
+	tile.Size = UDim2.fromOffset(width, height); tile.BorderSizePixel = 0
+	tile.Active = busy ~= true; tile.Selectable = busy ~= true; tile.Parent = parent
+	tile:SetAttribute("Selected", item.selected == true); tile:SetAttribute("Disabled", busy == true)
+	local rim = Instance.new("UIStroke"); rim.Name = "StorageRim"
+	rim.ApplyStrokeMode = Enum.ApplyStrokeMode.Border; rim.Thickness = 1; rim.Parent = tile
+	local corners = frame(tile, "SelectedCorners", 0, 0, width, height)
+	corners.Active = false; corners.Selectable = false
+	for i, point in ipairs({Vector2.new(0, 0), Vector2.new(1, 0), Vector2.new(0, 1), Vector2.new(1, 1)}) do
+		for j, size in ipairs({Vector2.new(10, 2), Vector2.new(2, 10)}) do
+			local bar = frame(corners, "Corner" .. i .. "_" .. j, 0, 0, size.X, size.Y)
+			bar.AnchorPoint = point; bar.Position = UDim2.new(point.X, if point.X == 0 then 2 else -2, point.Y, if point.Y == 0 then 2 else -2)
+			bar.BackgroundColor3 = if busy then C.GoldShadow else C.Gold; bar.BackgroundTransparency = 0
+			bar.BorderSizePixel = 0; bar.Active = false; bar.Selectable = false; bar.ZIndex = 3
+		end
+	end
+	corners.Visible = item.selected == true
+	local shelf = frame(tile, "ItemCaptionShelf", 5, 83, width - 10, height - 88)
+	shelf.BackgroundColor3 = C.Surface; shelf.BackgroundTransparency = .45
+	shelf.BorderSizePixel = 0; shelf.Active = false; shelf.Selectable = false
+	local hovered, focused, pressed, dead = false, false, false, false
+	local connections: {RBXScriptConnection} = {}
+	local function refresh()
+		if dead then return end
+		local enabled = busy ~= true
+		tile.BackgroundColor3 = if enabled and pressed then C.Background else if enabled and (hovered or focused) then C.Surface else C.Background:Lerp(C.Surface, .35)
+		rim.Color = if enabled and focused then C.Focus else C.GoldShadow
+		rim.Thickness = if enabled and focused then 2 else 1
+		rim.Transparency = if busy then .6 else .15
+	end
+	local function connect(signal: RBXScriptSignal, callback: any)
+		table.insert(connections, signal:Connect(callback))
+	end
+	connect(tile.MouseEnter, function() hovered = true; refresh() end)
+	connect(tile.MouseLeave, function() hovered = false; pressed = false; refresh() end)
+	connect(tile.SelectionGained, function() focused = true; refresh() end)
+	connect(tile.SelectionLost, function() focused = false; pressed = false; refresh() end)
+	connect(tile.InputBegan, function(input: InputObject)
+		if input.UserInputType == Enum.UserInputType.MouseButton1 or input.UserInputType == Enum.UserInputType.Touch or input.KeyCode == Enum.KeyCode.ButtonA then pressed = true; refresh() end
+	end)
+	connect(tile.InputEnded, function() pressed = false; refresh() end)
+	connect(tile.Activated, function()
+		if dead or busy or not tile.Active then return end
+		if item.onSelect then item.onSelect() end
+	end)
+	connect(tile.Destroying, function()
+		dead = true
+		for _, connection in ipairs(connections) do connection:Disconnect() end
+		table.clear(connections)
+	end)
+	refresh()
+	return tile
+end
+
 return function(parent: Instance, model: any): Frame
 	local root = Instance.new("Frame"); root.Name = "InventoryPane"; root.BackgroundTransparency = 1
 	root.Size = UDim2.new(1, 0, 0, 600); root.Parent = parent
@@ -234,13 +292,19 @@ return function(parent: Instance, model: any): Frame
 			local count = 0
 			for index = start, math.min(#items, start + 23) do
 				local item = items[index]; count += 1
-				local tile = action(grid, "Item_" .. tostring(item.id), "", 0, 0, cellWidth, item.onSelect, item.selected, model.busy)
+				local tile = storageTile(grid, item, cellWidth, cellHeight, model.busy)
 				tile.LayoutOrder = index; tile:SetAttribute("ItemId", tostring(item.id))
-				local padding = tile:FindFirstChildOfClass("UIPadding"); if padding then padding:Destroy() end
 				if item.definitionId then local art = AssetImage.item(tile, item.definitionId); alive(); if art then art.Position = UDim2.fromOffset(math.max(0, (cellWidth - 80) / 2), 4) end end
 				local itemLabel = label(tile, "ItemLabel", item.name or "", 6, 84, cellWidth - 12, cellHeight - 88)
 				itemLabel.TextSize = if phone then 13 else 14; itemLabel.TextTruncate = Enum.TextTruncate.AtEnd
-				if item.quantity then local quantity = label(tile, "Quantity", tostring(item.quantity), cellWidth - 44, 3, 38, 22); quantity.TextXAlignment = Enum.TextXAlignment.Right end
+				itemLabel.TextColor3 = if model.busy then C.Muted else C.Text
+				if item.quantity then
+					local quantity = label(tile, "Quantity", tostring(item.quantity), cellWidth - 48, 5, 42, 22)
+					quantity.BackgroundColor3 = C.Background; quantity.BackgroundTransparency = .08
+					quantity.TextXAlignment = Enum.TextXAlignment.Center; quantity.TextSize = 13; quantity.ZIndex = 3
+					local edge = Instance.new("UIStroke"); edge.ApplyStrokeMode = Enum.ApplyStrokeMode.Border
+					edge.Color = C.GoldShadow; edge.Transparency = .3; edge.Parent = quantity
+				end
 			end
 			grid.CanvasSize = UDim2.fromOffset(0, math.ceil(count / columns) * (cellHeight + 8))
 			if #items == 0 then label(root, "EmptyInventory", model.emptyText or T("No items match this filter."), x + 12, gridTop + 20, width - 24, 70) end

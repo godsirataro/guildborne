@@ -22,7 +22,7 @@ local function make(width,view,busy,language,actorCount)
  for i=1,actorCount or 1 do table.insert(model.actors,{id=if i==1 then "player" else "hero"..i,name=T("Your character").." "..i,selected=i==1,onSelect=function()calls.actor=i end})end
  model.filters={}
  for _,kind in ipairs({"All","Weapon","Armor","Accessory","Material"})do table.insert(model.filters,{id=kind,label=T(kind),selected=kind=="All",onSelect=function()calls.filter=kind end})end
- for i=1,30 do table.insert(model.items,{id=tostring(i),name="Sword "..i,definitionId="training_sword",selected=i==1,onSelect=function()calls.item=i end})end
+ for i=1,30 do table.insert(model.items,{id=tostring(i),name="Sword "..i,definitionId="training_sword",quantity=if i==2 then 123 else nil,selected=i==1,onSelect=function()calls.item=i end})end
  local root=Pane(parent,model);root.AbsoluteSize={X=width,Y=700};root:GetPropertyChangedSignal("AbsoluteSize"):Fire()
  return root,calls
 end
@@ -56,6 +56,37 @@ test("Thai headings and new controls retain live localized text",function()
  local root=make(288,"Details",false,"th")
  assert(find(root,"View_Details").Text=="รายละเอียด" and find(root,"ItemName").Font==Enum.Font.GothamMedium)
  assert(Locale.translate("th","Actor preview unavailable")~="Actor preview unavailable");root:Destroy()
+end)
+test("storage focus hover and press never select before activation; busy and stale tiles cannot dispatch",function()
+ local root,calls=make(744)
+ local selected=find(root,"Item_1");local tile=find(root,"Item_2")
+ assert(find(selected,"SelectedCorners").Visible and not find(tile,"SelectedCorners").Visible)
+ assert(not find(tile,"ButtonBevel") and not find(tile,"SelectedMark"),"storage must not retain action decoration")
+ tile.MouseEnter:Fire();tile.SelectionGained:Fire()
+ assert(find(tile,"StorageRim").Thickness==2 and calls.item==nil)
+ tile.InputBegan:Fire({UserInputType=Enum.UserInputType.Touch});tile.InputEnded:Fire()
+ assert(calls.item==nil and not find(tile,"SelectedCorners").Visible,"focus or press invented selection")
+ tile.Activated:Fire();assert(calls.item==2)
+ tile.SelectionLost:Fire();tile.MouseLeave:Fire();assert(find(tile,"StorageRim").Thickness==1)
+ local quantity=find(tile,"Quantity");assert(quantity.Text=="123" and quantity.BackgroundTransparency<1)
+ root:Destroy();calls.item=nil;tile.Activated:Fire();tile.SelectionGained:Fire();assert(calls.item==nil)
+ root,calls=make(280,"Items",true)
+ tile=find(root,"Item_2");assert(not tile.Active and not tile.Selectable)
+ tile.MouseEnter:Fire();tile.SelectionGained:Fire();tile.Activated:Fire()
+ assert(calls.item==nil and find(tile,"StorageRim").Thickness==1);root:Destroy()
+end)
+test("paging destroys storage callbacks and decorative corners never become hit targets",function()
+ local root,calls=make(744)
+ local old=find(root,"Item_2")
+ local function passive(node)
+  for _,child in ipairs(node:GetChildren())do
+   if child:IsA("Frame")then assert(child.Active==false and child.Selectable==false,"interactive storage corner");passive(child)end
+  end
+ end
+ passive(find(root,"Item_1"):FindFirstChild("SelectedCorners"))
+ find(root,"NextItems").Activated:Fire()
+ old.Activated:Fire();assert(calls.item==nil)
+ find(root,"Item_25").Activated:Fire();assert(calls.item==25);root:Destroy()
 end)
 local function bottom(node)return node.Position.Y.Offset+node.Size.Y.Offset end
 local function inside(child,parent)
