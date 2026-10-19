@@ -18,6 +18,7 @@ with tempfile.TemporaryDirectory(prefix="guildborne-world-check-") as directory:
         raise SystemExit(result.returncode)
     cross = (root / "src/server/Services/CrosshavenWorld.luau").read_text(encoding="utf-8")
     delivery = cross[cross.index('   if e.pending and not e.deliveryBusy'):cross.index('   local data=s.record.data;local id=nextId(data)')]
+    before_delivery = cross[cross.index('   if e.trial and e.trialCharacter~=player.Character'):cross.index('   if e.trial and e.trialProof and not e.pending')]
     api = cross[cross.index(' function S.Intent(player:Player'):cross.index(' function S.Destroy()')]
     stop = cross[cross.index(' local function stopActivity(e:any)'):cross.index(' function S.Remove(player:Player)')]
     repeat_line = next(line for line in cross.splitlines() if 'marker("RepeatMastery"' in line)
@@ -26,6 +27,7 @@ with tempfile.TemporaryDirectory(prefix="guildborne-world-check-") as directory:
     cross_fixture = Path(__file__).with_name("world-crosshaven-host.luau").read_text(encoding="utf-8")
     cross_fixture = cross_fixture.replace('-- CROSS_STOP', stop).replace('-- CROSS_API', api)
     cross_fixture = cross_fixture.replace('-- CROSS_DELIVERY', delivery)
+    cross_fixture = cross_fixture.replace('-- CROSS_PRE_DELIVERY', before_delivery)
     cross_fixture = cross_fixture.replace('-- CROSS_REPEAT', 'local repeatCallback=' + repeat_callback.group(1))
     target.write_text(cross_fixture, encoding="utf-8")
     raise SystemExit(subprocess.run([sys.argv[1], str(target)], check=False).returncode)

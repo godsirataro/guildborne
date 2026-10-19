@@ -21,6 +21,7 @@ local function fixture()
  -- CROSS_API
  local function tick()
   for player,e in pairs(entries)do
+   -- CROSS_PRE_DELIVERY
    -- CROSS_DELIVERY
   end
  end
@@ -52,5 +53,14 @@ end)
 test("Crosshaven authored repeat refusal uses Class3 notification channel",function()
  local f=fixture();f.startReason="ReturnToCrosshaven";f.repeatCallback({})
  eq(#f.notices,1);eq(f.notices[1].proof,true);eq(f.notices[1].code,"ReturnToCrosshaven")
+end)
+test("Crosshaven replacement before delivery is silent while same-character guard loss notifies",function()
+ for _,replaced in ipairs({false,true})do
+  local f=fixture();f.valid=false
+  if replaced then f.player.Character={}end
+  f.deliver=function()error("Invalid run must not deliver")end
+  f.tick();eq(f.world.Active(f.player),false)
+  if replaced then eq(#f.notices,0)else eq(#f.notices,1);eq(f.notices[1].code,"ActorNotReady")end
+ end
 end)
 print(count.." source-extracted Crosshaven callback checks passed; not full world or Studio acceptance")

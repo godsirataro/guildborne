@@ -115,7 +115,7 @@ return function(deps:any):any
   for player,e in pairs(entries)do
    if e.busy then continue end
    local session=deps.Data.Sessions[player.UserId];local root=e.character:FindFirstChild("HumanoidRootPart");local hum=e.character:FindFirstChildOfClass("Humanoid")
-   if not session or (e.run.proof and not e.guard()) or session.epoch~=e.epoch or session.token~=e.token or session.closing or session.state=="LeaseLost" or player.Character~=e.character or not root or not root:IsA("BasePart") or not hum or hum.Health<=0 or (root.Position-e.origin).Magnitude>40 or not e.hero.Parent then finish(player,"HeroMentorCancelled",session~=e.startFence.session or (session~=nil and (session.epoch~=e.epoch or session.token~=e.token)));continue end
+   if not session or (e.run.proof and not e.guard()) or session.epoch~=e.epoch or session.token~=e.token or session.closing or session.state=="LeaseLost" or player.Character~=e.character or not root or not root:IsA("BasePart") or not hum or hum.Health<=0 or (root.Position-e.origin).Magnitude>40 or not e.hero.Parent then finish(player,"HeroMentorCancelled",player.Character~=e.character or session~=e.startFence.session or (session~=nil and (session.epoch~=e.epoch or session.token~=e.token)));continue end
    if not e.delivery and not deps.Trial.matches(session.record.data,e.run)then finish(player,"HeroChanged");continue end
    if not e.delivery then
     local position=e.hero:GetPivot().Position-e.origin

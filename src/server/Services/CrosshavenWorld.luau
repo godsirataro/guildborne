@@ -260,6 +260,7 @@ return function(deps:any)
   for player,e in pairs(entries)do
    local s=session(player)
    if not s or s~=e.session or s.epoch~=e.epoch or s.token~=e.token or player.Parent~=Players then S.Remove(player);continue end
+   if e.trial and e.trialCharacter~=player.Character then stopActivity(e);continue end
    if e.trial and e.trialGuard and not e.trialGuard()then local proof=e.trialProof==true;stopActivity(e);e.pending=nil;e.trialGuard=nil;if proof then notify(player,true,"ActorNotReady")end;continue end
    if e.trial and e.trialProof and not e.pending then
     local state=e.trial.Snapshot()

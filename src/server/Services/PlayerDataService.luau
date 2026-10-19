@@ -168,7 +168,7 @@ return function(deps: any)
 		end
 		if command.revision ~= session.record.revision then return "StaleRevision", nil end
 		local epoch,token=session.epoch,session.token
-		local function class3Fence():boolean return Service.Sessions[userId]==session and session.epoch==epoch and session.token==token and session.state~="LeaseLost" end
+		local function class3Fence():boolean return Service.Sessions[userId]==session and session.epoch==epoch and session.token==token and (session :: any).state~="LeaseLost" end
 		local now = deps.Now()
 		local candidate, result, events
 		if serverApply then candidate, result, events = serverApply(session.record)

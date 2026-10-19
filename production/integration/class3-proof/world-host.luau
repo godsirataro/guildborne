@@ -104,4 +104,9 @@ test("world physical guard loss during delivery notifies but replaced character 
   if mode=="replacement"then eq(#f.notices,before)else eq(#f.notices,before+1);eq(f.notices[#f.notices].code,"ActorNotReady");eq(f.notices[#f.notices].state,nil)end
  end
 end)
+test("world replacement character before delivery clears old run without notification",function()
+ local f=fixture();eq(f.start(true),"OK");local before=#f.notices
+ f.player.Character=object("Model");f.tick()
+ eq(f.world.Active(f.player),false);eq(#f.notices,before)
+end)
 print(count.." source-loaded hero world checks passed; no Studio acceptance")
