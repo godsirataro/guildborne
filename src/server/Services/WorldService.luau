@@ -38,11 +38,17 @@ function World.new(onOpen: (Player, string) -> (), reward: any, towerResult: any
 	if walkingPolicy then
 		-- The quality initializer independently enforces unsaved Studio/Memory.
 		local quality=require(script.Parent.WorldQualitySlice)(folder)
-		local routes={quality.buildContinuousCorridor(),quality.buildGreenwoodIronveilCorridor()}
-		for _,route in ipairs(routes) do
-			assert(route.geometry:IsDescendantOf(folder) and route.isReady(),"Walking corridor is not ready: "..route.id)
-		end
+		-- BEGIN REVIEWED WALKING INITIALIZER
+		local ready,routes=pcall(function()
+			local descriptors={quality.buildContinuousCorridor(),quality.buildGreenwoodIronveilCorridor()}
+			for _,route in ipairs(descriptors) do
+				assert(route.geometry:IsDescendantOf(folder) and route.isReady(),"Walking corridor is not ready: "..route.id)
+			end
+			return descriptors
+		end)
+		if not ready then quality.destroy();error(tostring(routes)) end
 		walking={Routes=routes,Session=walkingPolicy.Session,Gate=walkingPolicy.Gate,Notify=walkingPolicy.Notify}
+		-- END REVIEWED WALKING INITIALIZER
 	end
 	local plots: { [Player]: any } = {}
 	local occupied: { [number]: boolean } = {}

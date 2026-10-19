@@ -4,8 +4,10 @@ Source worker8f4abfe, integrated9ac4dbf. Candidate SHA256
 fffc4e9644f82690e2e2a25975fcd1dc8e424ebf1a461f2ea63de09cf02382d1.
 Actual Studio4cdfbab5-4ec5-4871-bd09-987cf0ab07e1, unsaved PlaceId/GameId0.
 One enabled isolated InventoryReview LocalScript, no gameplay server/remotes.
-An initial loading-time count reported1 Script/0 LocalScripts; Play was stopped
-and exact script path/source inspected before restarting the actual fixture.
+An initial count using IsA('Script') before IsA('LocalScript') reported1/0;
+the subsequent exact ClassName/path/source inspection showed the fixture
+LocalScript. That initial classification is not evidence of a server script.
+Play was stopped for inspection before restarting the actual fixture.
 
 Mouse-driven 18 combinations: EN/TH x320/796/1366 nominal canvas x0/1/6 actors.
 All cases reported zero non-fitting pane text, including offscreen descendants.
