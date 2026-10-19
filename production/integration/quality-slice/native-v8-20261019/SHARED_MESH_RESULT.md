@@ -18,5 +18,9 @@ Actual player view sees the authored receiving building, but elevated approach
 cameras are occluded by large coast geometry. At500,48,1535 the camera lies in
 coast_headland_banks__bounded_003's bounding box (position187.50018,19,1595,
 size1445,118,1350). A bounding box alone does not prove triangle intersection;
-source review is pending. Both actual screenshots retained. Do not hide the
+subsequent independent triangle review confirmed real intersections: triangle26
+crosses eye410,28,1450 to weighhouse436,8,1468 at t0.37852; triangle32 crosses
+eye500,48,1535 to that weighhouse at t0.15311. Source scenery.mesh.json SHA256
+f31077a0847a4a5db7a5918a411ee9b9ba22cdb0ac18ec686bc18859e10fc4e9.
+S13 owns the bounded coast/Ironveil repair. Both actual screenshots retained. Do not hide the
 coast dataset and label combined visuals accepted. Play stopped after capture.

@@ -1,0 +1,9 @@
+{
+  "content": [
+    {
+      "type": "text",
+      "text": "{\"status\":\"PASS\",\"report\":\"{\\\"coverage\\\":{\\\"a\\\":1792380856.750018,\\\"label\\\":\\\"destroy actor registration\\\",\\\"predecessor\\\":1792380856.732637,\\\"successor\\\":1792380856.899992,\\\"reason\\\":\\\"covered\\\",\\\"maxWindowGap\\\":0.018571138381958009,\\\"lastRecorded\\\":1792380856.899992,\\\"sampleCount\\\":1094,\\\"publicationWaitSeconds\\\":0.015668153762817384,\\\"b\\\":1792380856.890018},\\\"requestCount\\\":15,\\\"heartbeatCount\\\":1096,\\\"maximumHeartbeatGap\\\":0.022351980209350587,\\\"actionTTL\\\":0.62,\\\"cases\\\":[\\\"pending-target-then-ready-actual-VFX-and-single-cue\\\",\\\"duplicate-future-stale-and-valid-recovery\\\",\\\"malformed-action-feedback-stamps-keep-HUD-live-and-recover\\\",\\\"target-readiness-does-not-renew-TTL\\\",\\\"nil-clear-consumes-pending-before-next-poll\\\",\\\"same-model-reparent-retains-action-highwater\\\",\\\"release-vs-damage-heal-future-damage\\\",\\\"damage-stamp-before-lethal-HP-emits-one-defeat\\\",\\\"warning-cancel\\\",\\\"warning-death\\\",\\\"warning-identity-replacement\\\",\\\"warning-end-replacement\\\",\\\"warning-owner-loss\\\",\\\"future-expired-warning-rejected\\\",\\\"warning-expiry\\\",\\\"warning-removal\\\",\\\"warning-controller-destroy\\\"],\\\"VFXCount\\\":24,\\\"stopPlayRequired\\\":true,\\\"status\\\":\\\"PASS\\\",\\\"waitCount\\\":300,\\\"audibleAcceptance\\\":false,\\\"disposalCount\\\":8,\\\"serverCombatTested\\\":false,\\\"error\\\":\\\"\\\",\\\"cleanupErrors\\\":[]}\"}"
+    }
+  ],
+  "isError": false
+}

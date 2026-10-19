@@ -1,0 +1,9 @@
+{
+  "content": [
+    {
+      "type": "text",
+      "text": "{\"readyAt\":1792380702.990532,\"elapsed\":2.0499075000006998,\"samples\":123,\"maxGap\":0.01820860000225366,\"cameraType\":\"Custom\",\"status\":\"READY_FOR_NATIVE_UI_ENABLE\",\"events\":{\"1\":{\"health\":100,\"rootY\":3.4980251789093019,\"elapsed\":0.015679299998737407,\"cameraType\":\"Custom\",\"reason\":\"stable\"}},\"stableSeconds\":2.0170379000010145,\"rootPosition\":\"0.6358532905578613, 3.4980251789093018, -3.066957473754883\"}"
+    }
+  ],
+  "isError": false
+}
