@@ -1,0 +1,267 @@
+{
+  "candidate": "fffc4e9644f82690e2e2a25975fcd1dc8e424ebf1a461f2ea63de09cf02382d1",
+  "studio": "4cdfbab5-4ec5-4871-bd09-987cf0ab07e1",
+  "cases": [
+    {
+      "size": 320,
+      "lang": "EN",
+      "actors": 0,
+      "result": {
+        "content": [
+          {
+            "type": "text",
+            "text": "{\"notice\":\"Actors0 | en | 320x568 | 1:1 · scroll outer viewport to inspect\\nRecorded intents: 0 · No intents recorded\\nPlayer = actual local avatar; Rowan = unavailable model fallback. Fit is not breakpoint/device evidence.\",\"notFit\":[],\"viewports\":{\"1\":{\"name\":\"ItemPreview\",\"size\":\"80, 80\"},\"3\":{\"name\":\"ItemPreview\",\"size\":\"80, 80\"},\"2\":{\"name\":\"ItemPreview\",\"size\":\"80, 80\"},\"5\":{\"name\":\"ItemPreview\",\"size\":\"80, 80\"},\"4\":{\"name\":\"ItemPreview\",\"size\":\"80, 80\"},\"6\":{\"name\":\"ItemPreview\",\"size\":\"80, 80\"}},\"pane\":\"280, 514\"}"
+          }
+        ],
+        "isError": false
+      }
+    },
+    {
+      "size": 320,
+      "lang": "EN",
+      "actors": 1,
+      "result": {
+        "content": [
+          {
+            "type": "text",
+            "text": "{\"notice\":\"Actors1 | en | 320x568 | 1:1 · scroll outer viewport to inspect\\nRecorded intents: 0 · No intents recorded\\nPlayer = actual local avatar; Rowan = unavailable model fallback. Fit is not breakpoint/device evidence.\",\"notFit\":[],\"viewports\":{\"1\":{\"name\":\"ItemPreview\",\"size\":\"80, 80\"},\"3\":{\"name\":\"ItemPreview\",\"size\":\"80, 80\"},\"2\":{\"name\":\"ItemPreview\",\"size\":\"80, 80\"},\"5\":{\"name\":\"ItemPreview\",\"size\":\"80, 80\"},\"4\":{\"name\":\"ItemPreview\",\"size\":\"80, 80\"}},\"pane\":\"280, 514\"}"
+          }
+        ],
+        "isError": false
+      }
+    },
+    {
+      "size": 320,
+      "lang": "EN",
+      "actors": 6,
+      "result": {
+        "content": [
+          {
+            "type": "text",
+            "text": "{\"notice\":\"Actors6 | en | 320x568 | 1:1 · scroll outer viewport to inspect\\nRecorded intents: 0 · No intents recorded\\nPlayer = actual local avatar; Rowan = unavailable model fallback. Fit is not breakpoint/device evidence.\",\"notFit\":[],\"viewports\":{\"1\":{\"name\":\"ItemPreview\",\"size\":\"80, 80\"},\"3\":{\"name\":\"ItemPreview\",\"size\":\"80, 80\"},\"2\":{\"name\":\"ItemPreview\",\"size\":\"80, 80\"},\"5\":{\"name\":\"ItemPreview\",\"size\":\"80, 80\"},\"4\":{\"name\":\"ItemPreview\",\"size\":\"80, 80\"}},\"pane\":\"280, 570\"}"
+          }
+        ],
+        "isError": false
+      }
+    },
+    {
+      "size": 320,
+      "lang": "TH",
+      "actors": 0,
+      "result": {
+        "content": [
+          {
+            "type": "text",
+            "text": "{\"notice\":\"Actors0 | th | 320x568 | 1:1 · scroll outer viewport to inspect\\nRecorded intents: 0 · No intents recorded\\nPlayer = actual local avatar; Rowan = unavailable model fallback. Fit is not breakpoint/device evidence.\",\"notFit\":[],\"viewports\":{\"1\":{\"name\":\"ItemPreview\",\"size\":\"80, 80\"},\"3\":{\"name\":\"ItemPreview\",\"size\":\"80, 80\"},\"2\":{\"name\":\"ItemPreview\",\"size\":\"80, 80\"},\"5\":{\"name\":\"ItemPreview\",\"size\":\"80, 80\"},\"4\":{\"name\":\"ItemPreview\",\"size\":\"80, 80\"},\"6\":{\"name\":\"ItemPreview\",\"size\":\"80, 80\"}},\"pane\":\"280, 514\"}"
+          }
+        ],
+        "isError": false
+      }
+    },
+    {
+      "size": 320,
+      "lang": "TH",
+      "actors": 1,
+      "result": {
+        "content": [
+          {
+            "type": "text",
+            "text": "{\"notice\":\"Actors1 | th | 320x568 | 1:1 · scroll outer viewport to inspect\\nRecorded intents: 0 · No intents recorded\\nPlayer = actual local avatar; Rowan = unavailable model fallback. Fit is not breakpoint/device evidence.\",\"notFit\":[],\"viewports\":{\"1\":{\"name\":\"ItemPreview\",\"size\":\"80, 80\"},\"3\":{\"name\":\"ItemPreview\",\"size\":\"80, 80\"},\"2\":{\"name\":\"ItemPreview\",\"size\":\"80, 80\"},\"5\":{\"name\":\"ItemPreview\",\"size\":\"80, 80\"},\"4\":{\"name\":\"ItemPreview\",\"size\":\"80, 80\"}},\"pane\":\"280, 514\"}"
+          }
+        ],
+        "isError": false
+      }
+    },
+    {
+      "size": 320,
+      "lang": "TH",
+      "actors": 6,
+      "result": {
+        "content": [
+          {
+            "type": "text",
+            "text": "{\"notice\":\"Actors6 | th | 320x568 | 1:1 · scroll outer viewport to inspect\\nRecorded intents: 0 · No intents recorded\\nPlayer = actual local avatar; Rowan = unavailable model fallback. Fit is not breakpoint/device evidence.\",\"notFit\":[],\"viewports\":{\"1\":{\"name\":\"ItemPreview\",\"size\":\"80, 80\"},\"3\":{\"name\":\"ItemPreview\",\"size\":\"80, 80\"},\"2\":{\"name\":\"ItemPreview\",\"size\":\"80, 80\"},\"5\":{\"name\":\"ItemPreview\",\"size\":\"80, 80\"},\"4\":{\"name\":\"ItemPreview\",\"size\":\"80, 80\"}},\"pane\":\"280, 570\"}"
+          }
+        ],
+        "isError": false
+      }
+    },
+    {
+      "size": 796,
+      "lang": "EN",
+      "actors": 0,
+      "result": {
+        "content": [
+          {
+            "type": "text",
+            "text": "{\"notice\":\"Actors0 | en | 796x675 | 1:1 · scroll outer viewport to inspect\\nRecorded intents: 0 · No intents recorded\\nPlayer = actual local avatar; Rowan = unavailable model fallback. Fit is not breakpoint/device evidence.\",\"notFit\":[],\"viewports\":{\"1\":{\"name\":\"ItemPreview\",\"size\":\"80, 80\"},\"3\":{\"name\":\"ItemPreview\",\"size\":\"80, 80\"},\"2\":{\"name\":\"ItemPreview\",\"size\":\"80, 80\"},\"5\":{\"name\":\"ItemPreview\",\"size\":\"80, 80\"},\"4\":{\"name\":\"ItemPreview\",\"size\":\"80, 80\"},\"7\":{\"name\":\"ActorViewport\",\"size\":\"233, 180\"},\"6\":{\"name\":\"ItemPreview\",\"size\":\"80, 80\"}},\"pane\":\"756, 510\"}"
+          }
+        ],
+        "isError": false
+      }
+    },
+    {
+      "size": 796,
+      "lang": "EN",
+      "actors": 1,
+      "result": {
+        "content": [
+          {
+            "type": "text",
+            "text": "{\"notice\":\"Actors1 | en | 796x675 | 1:1 · scroll outer viewport to inspect\\nRecorded intents: 0 · No intents recorded\\nPlayer = actual local avatar; Rowan = unavailable model fallback. Fit is not breakpoint/device evidence.\",\"notFit\":[],\"viewports\":{\"1\":{\"name\":\"ItemPreview\",\"size\":\"80, 80\"},\"3\":{\"name\":\"ItemPreview\",\"size\":\"80, 80\"},\"2\":{\"name\":\"ItemPreview\",\"size\":\"80, 80\"},\"5\":{\"name\":\"ItemPreview\",\"size\":\"80, 80\"},\"4\":{\"name\":\"ItemPreview\",\"size\":\"80, 80\"},\"7\":{\"name\":\"ItemPreview\",\"size\":\"48, 48\"},\"6\":{\"name\":\"ActorViewport\",\"size\":\"233, 180\"}},\"pane\":\"756, 664\"}"
+          }
+        ],
+        "isError": false
+      }
+    },
+    {
+      "size": 796,
+      "lang": "EN",
+      "actors": 6,
+      "result": {
+        "content": [
+          {
+            "type": "text",
+            "text": "{\"notice\":\"Actors6 | en | 796x675 | 1:1 · scroll outer viewport to inspect\\nRecorded intents: 0 · No intents recorded\\nPlayer = actual local avatar; Rowan = unavailable model fallback. Fit is not breakpoint/device evidence.\",\"notFit\":[],\"viewports\":{\"1\":{\"name\":\"ItemPreview\",\"size\":\"80, 80\"},\"3\":{\"name\":\"ItemPreview\",\"size\":\"80, 80\"},\"2\":{\"name\":\"ItemPreview\",\"size\":\"80, 80\"},\"5\":{\"name\":\"ItemPreview\",\"size\":\"80, 80\"},\"4\":{\"name\":\"ItemPreview\",\"size\":\"80, 80\"},\"7\":{\"name\":\"ItemPreview\",\"size\":\"48, 48\"},\"6\":{\"name\":\"ActorViewport\",\"size\":\"233, 180\"}},\"pane\":\"756, 720\"}"
+          }
+        ],
+        "isError": false
+      }
+    },
+    {
+      "size": 796,
+      "lang": "TH",
+      "actors": 0,
+      "result": {
+        "content": [
+          {
+            "type": "text",
+            "text": "{\"notice\":\"Actors0 | th | 796x675 | 1:1 · scroll outer viewport to inspect\\nRecorded intents: 0 · No intents recorded\\nPlayer = actual local avatar; Rowan = unavailable model fallback. Fit is not breakpoint/device evidence.\",\"notFit\":[],\"viewports\":{\"1\":{\"name\":\"ItemPreview\",\"size\":\"80, 80\"},\"3\":{\"name\":\"ItemPreview\",\"size\":\"80, 80\"},\"2\":{\"name\":\"ItemPreview\",\"size\":\"80, 80\"},\"5\":{\"name\":\"ItemPreview\",\"size\":\"80, 80\"},\"4\":{\"name\":\"ItemPreview\",\"size\":\"80, 80\"},\"7\":{\"name\":\"ActorViewport\",\"size\":\"233, 180\"},\"6\":{\"name\":\"ItemPreview\",\"size\":\"80, 80\"}},\"pane\":\"756, 510\"}"
+          }
+        ],
+        "isError": false
+      }
+    },
+    {
+      "size": 796,
+      "lang": "TH",
+      "actors": 1,
+      "result": {
+        "content": [
+          {
+            "type": "text",
+            "text": "{\"notice\":\"Actors1 | th | 796x675 | 1:1 · scroll outer viewport to inspect\\nRecorded intents: 0 · No intents recorded\\nPlayer = actual local avatar; Rowan = unavailable model fallback. Fit is not breakpoint/device evidence.\",\"notFit\":[],\"viewports\":{\"1\":{\"name\":\"ItemPreview\",\"size\":\"80, 80\"},\"3\":{\"name\":\"ItemPreview\",\"size\":\"80, 80\"},\"2\":{\"name\":\"ItemPreview\",\"size\":\"80, 80\"},\"5\":{\"name\":\"ItemPreview\",\"size\":\"80, 80\"},\"4\":{\"name\":\"ItemPreview\",\"size\":\"80, 80\"},\"7\":{\"name\":\"ItemPreview\",\"size\":\"48, 48\"},\"6\":{\"name\":\"ActorViewport\",\"size\":\"233, 180\"}},\"pane\":\"756, 664\"}"
+          }
+        ],
+        "isError": false
+      }
+    },
+    {
+      "size": 796,
+      "lang": "TH",
+      "actors": 6,
+      "result": {
+        "content": [
+          {
+            "type": "text",
+            "text": "{\"notice\":\"Actors6 | th | 796x675 | 1:1 · scroll outer viewport to inspect\\nRecorded intents: 0 · No intents recorded\\nPlayer = actual local avatar; Rowan = unavailable model fallback. Fit is not breakpoint/device evidence.\",\"notFit\":[],\"viewports\":{\"1\":{\"name\":\"ItemPreview\",\"size\":\"80, 80\"},\"3\":{\"name\":\"ItemPreview\",\"size\":\"80, 80\"},\"2\":{\"name\":\"ItemPreview\",\"size\":\"80, 80\"},\"5\":{\"name\":\"ItemPreview\",\"size\":\"80, 80\"},\"4\":{\"name\":\"ItemPreview\",\"size\":\"80, 80\"},\"7\":{\"name\":\"ItemPreview\",\"size\":\"48, 48\"},\"6\":{\"name\":\"ActorViewport\",\"size\":\"233, 180\"}},\"pane\":\"756, 720\"}"
+          }
+        ],
+        "isError": false
+      }
+    },
+    {
+      "size": 1366,
+      "lang": "EN",
+      "actors": 0,
+      "result": {
+        "content": [
+          {
+            "type": "text",
+            "text": "{\"notice\":\"Actors0 | en | 1366x768 | 1:1 · scroll outer viewport to inspect\\nRecorded intents: 0 · No intents recorded\\nPlayer = actual local avatar; Rowan = unavailable model fallback. Fit is not breakpoint/device evidence.\",\"notFit\":[],\"viewports\":{\"1\":{\"name\":\"ActorViewport\",\"size\":\"220, 200\"},\"8\":{\"name\":\"ItemPreview\",\"size\":\"80, 80\"},\"3\":{\"name\":\"ItemPreview\",\"size\":\"80, 80\"},\"2\":{\"name\":\"ItemPreview\",\"size\":\"80, 80\"},\"5\":{\"name\":\"ItemPreview\",\"size\":\"80, 80\"},\"4\":{\"name\":\"ItemPreview\",\"size\":\"80, 80\"},\"7\":{\"name\":\"ItemPreview\",\"size\":\"80, 80\"},\"6\":{\"name\":\"ItemPreview\",\"size\":\"80, 80\"}},\"pane\":\"976, 614\"}"
+          }
+        ],
+        "isError": false
+      }
+    },
+    {
+      "size": 1366,
+      "lang": "EN",
+      "actors": 1,
+      "result": {
+        "content": [
+          {
+            "type": "text",
+            "text": "{\"notice\":\"Actors1 | en | 1366x768 | 1:1 · scroll outer viewport to inspect\\nRecorded intents: 0 · No intents recorded\\nPlayer = actual local avatar; Rowan = unavailable model fallback. Fit is not breakpoint/device evidence.\",\"notFit\":[],\"viewports\":{\"1\":{\"name\":\"ActorViewport\",\"size\":\"220, 200\"},\"8\":{\"name\":\"ItemPreview\",\"size\":\"80, 80\"},\"3\":{\"name\":\"ItemPreview\",\"size\":\"80, 80\"},\"2\":{\"name\":\"ItemPreview\",\"size\":\"48, 48\"},\"5\":{\"name\":\"ItemPreview\",\"size\":\"80, 80\"},\"4\":{\"name\":\"ItemPreview\",\"size\":\"80, 80\"},\"7\":{\"name\":\"ItemPreview\",\"size\":\"80, 80\"},\"6\":{\"name\":\"ItemPreview\",\"size\":\"80, 80\"}},\"pane\":\"976, 702\"}"
+          }
+        ],
+        "isError": false
+      }
+    },
+    {
+      "size": 1366,
+      "lang": "EN",
+      "actors": 6,
+      "result": {
+        "content": [
+          {
+            "type": "text",
+            "text": "{\"notice\":\"Actors6 | en | 1366x768 | 1:1 · scroll outer viewport to inspect\\nRecorded intents: 0 · No intents recorded\\nPlayer = actual local avatar; Rowan = unavailable model fallback. Fit is not breakpoint/device evidence.\",\"notFit\":[],\"viewports\":{\"1\":{\"name\":\"ActorViewport\",\"size\":\"220, 200\"},\"8\":{\"name\":\"ItemPreview\",\"size\":\"80, 80\"},\"3\":{\"name\":\"ItemPreview\",\"size\":\"80, 80\"},\"2\":{\"name\":\"ItemPreview\",\"size\":\"48, 48\"},\"5\":{\"name\":\"ItemPreview\",\"size\":\"80, 80\"},\"4\":{\"name\":\"ItemPreview\",\"size\":\"80, 80\"},\"7\":{\"name\":\"ItemPreview\",\"size\":\"80, 80\"},\"6\":{\"name\":\"ItemPreview\",\"size\":\"80, 80\"}},\"pane\":\"976, 758\"}"
+          }
+        ],
+        "isError": false
+      }
+    },
+    {
+      "size": 1366,
+      "lang": "TH",
+      "actors": 0,
+      "result": {
+        "content": [
+          {
+            "type": "text",
+            "text": "{\"notice\":\"Actors0 | th | 1366x768 | 1:1 · scroll outer viewport to inspect\\nRecorded intents: 0 · No intents recorded\\nPlayer = actual local avatar; Rowan = unavailable model fallback. Fit is not breakpoint/device evidence.\",\"notFit\":[],\"viewports\":{\"1\":{\"name\":\"ActorViewport\",\"size\":\"220, 200\"},\"8\":{\"name\":\"ItemPreview\",\"size\":\"80, 80\"},\"3\":{\"name\":\"ItemPreview\",\"size\":\"80, 80\"},\"2\":{\"name\":\"ItemPreview\",\"size\":\"80, 80\"},\"5\":{\"name\":\"ItemPreview\",\"size\":\"80, 80\"},\"4\":{\"name\":\"ItemPreview\",\"size\":\"80, 80\"},\"7\":{\"name\":\"ItemPreview\",\"size\":\"80, 80\"},\"6\":{\"name\":\"ItemPreview\",\"size\":\"80, 80\"}},\"pane\":\"976, 614\"}"
+          }
+        ],
+        "isError": false
+      }
+    },
+    {
+      "size": 1366,
+      "lang": "TH",
+      "actors": 1,
+      "result": {
+        "content": [
+          {
+            "type": "text",
+            "text": "{\"notice\":\"Actors1 | th | 1366x768 | 1:1 · scroll outer viewport to inspect\\nRecorded intents: 0 · No intents recorded\\nPlayer = actual local avatar; Rowan = unavailable model fallback. Fit is not breakpoint/device evidence.\",\"notFit\":[],\"viewports\":{\"1\":{\"name\":\"ActorViewport\",\"size\":\"220, 200\"},\"8\":{\"name\":\"ItemPreview\",\"size\":\"80, 80\"},\"3\":{\"name\":\"ItemPreview\",\"size\":\"80, 80\"},\"2\":{\"name\":\"ItemPreview\",\"size\":\"48, 48\"},\"5\":{\"name\":\"ItemPreview\",\"size\":\"80, 80\"},\"4\":{\"name\":\"ItemPreview\",\"size\":\"80, 80\"},\"7\":{\"name\":\"ItemPreview\",\"size\":\"80, 80\"},\"6\":{\"name\":\"ItemPreview\",\"size\":\"80, 80\"}},\"pane\":\"976, 684\"}"
+          }
+        ],
+        "isError": false
+      }
+    },
+    {
+      "size": 1366,
+      "lang": "TH",
+      "actors": 6,
+      "result": {
+        "content": [
+          {
+            "type": "text",
+            "text": "{\"notice\":\"Actors6 | th | 1366x768 | 1:1 · scroll outer viewport to inspect\\nRecorded intents: 0 · No intents recorded\\nPlayer = actual local avatar; Rowan = unavailable model fallback. Fit is not breakpoint/device evidence.\",\"notFit\":[],\"viewports\":{\"1\":{\"name\":\"ActorViewport\",\"size\":\"220, 200\"},\"8\":{\"name\":\"ItemPreview\",\"size\":\"80, 80\"},\"3\":{\"name\":\"ItemPreview\",\"size\":\"80, 80\"},\"2\":{\"name\":\"ItemPreview\",\"size\":\"48, 48\"},\"5\":{\"name\":\"ItemPreview\",\"size\":\"80, 80\"},\"4\":{\"name\":\"ItemPreview\",\"size\":\"80, 80\"},\"7\":{\"name\":\"ItemPreview\",\"size\":\"80, 80\"},\"6\":{\"name\":\"ItemPreview\",\"size\":\"80, 80\"}},\"pane\":\"976, 740\"}"
+          }
+        ],
+        "isError": false
+      }
+    }
+  ],
+  "sixthActor": {
+    "content": [
+      {
+        "type": "text",
+        "text": "{\"1\":{\"text\":\"คลังร่วม\",\"name\":\"InventoryHeading\",\"fits\":true},\"3\":{\"text\":\"Companion 5 · นักรบ [F]\",\"name\":\"ActorName\",\"fits\":true},\"2\":{\"text\":\"อุปกรณ์: 5/50\",\"name\":\"Capacity\",\"fits\":true},\"5\":{\"text\":\"พลังชีวิต 58 / โจมตี 16 / ป้องกัน 3\",\"name\":\"ActorStats\",\"fits\":true},\"4\":{\"text\":\"ยังแสดงภาพตัวละครนี้ไม่ได้\",\"name\":\"PreviewUnavailable\",\"fits\":true},\"7\":{\"text\":\"เกราะ\\nว่าง\",\"name\":\"EquipmentName\",\"fits\":true},\"6\":{\"text\":\"อาวุธ\\nว่าง\",\"name\":\"EquipmentName\",\"fits\":true},\"9\":{\"text\":\"ยังไม่ได้ใส่อาวุธ เลือกอาวุธที่ใช้ได้จากคลังอุปกรณ์\",\"name\":\"LoadoutHint\",\"fits\":true},\"8\":{\"text\":\"เครื่องประดับ\\nว่าง\",\"name\":\"EquipmentName\",\"fits\":true}}"
+      }
+    ],
+    "isError": false
+  }
+}

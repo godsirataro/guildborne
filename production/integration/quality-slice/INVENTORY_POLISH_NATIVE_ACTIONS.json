@@ -1,0 +1,30 @@
+{
+  "saleFirst": {
+    "content": [
+      {
+        "type": "text",
+        "text": "{\"notice\":\"Actors1 | th | 796x675 | 1:1 · scroll outer viewport to inspect\\nRecorded intents: 0 · No intents recorded\\nPlayer = actual local avatar; Rowan = unavailable model fallback. Fit is not breakpoint/device evidence.\",\"button\":\"ยืนยันขาย · 10 ทอง\"}"
+      }
+    ],
+    "isError": false
+  },
+  "saleSecond": {
+    "content": [
+      {
+        "type": "text",
+        "text": "Actors1 | th | 796x675 | 1:1 · scroll outer viewport to inspect\nRecorded intents: 1 · SellEquipment {\"instanceId\":\"spareSword\"}\nPlayer = actual local avatar; Rowan = unavailable model fallback. Fit is not breakpoint/device evidence."
+      }
+    ],
+    "isError": false
+  },
+  "busy": {
+    "content": [
+      {
+        "type": "text",
+        "text": "{\"notice\":\"Busy | th | 320x568 | 1:1 · scroll outer viewport to inspect\\nRecorded intents: 1 · SellEquipment {\\\"instanceId\\\":\\\"spareSword\\\"}\\nPlayer = actual local avatar; Rowan = unavailable model fallback. Fit is not breakpoint/device evidence.\",\"text\":\"ทั้งหมด  ▾\",\"selectable\":false,\"active\":false}"
+      }
+    ],
+    "isError": false
+  },
+  "note": "Synthetic fixture records intents only; no economy mutation, no actual server sale."
+}
