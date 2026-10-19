@@ -18,6 +18,16 @@ local ashenEnabled=ironveilEnabled and Runtime.AshenJourney==true and not launch
 local towerEnabled=ashenEnabled and Runtime.TowerJourney==true
 local crosshavenEnabled=towerEnabled and Runtime.CrosshavenJourney==true
 local archiveHeartEnabled=crosshavenEnabled and Runtime.ArchiveHeartJourney==true
+-- BEGIN full connected candidate gate: separate from the bounded Lv35 release.
+local function fullConnectedCandidate(runtime:any,context:any,fullRoute:boolean,launch:boolean):boolean
+ return runtime.FullConnectedWorldCandidate==true and fullRoute and not launch
+  and context.isStudio==true and context.placeId==0 and context.gameId==0
+  and runtime.StudioPersistence=="Memory" and type(runtime.AllowedDataStoreUniverses)=="table"
+  and next(runtime.AllowedDataStoreUniverses)==nil
+end
+-- END full connected candidate gate.
+local fullConnectedEnabled=fullConnectedCandidate(Runtime,{isStudio=RunService:IsStudio(),placeId=game.PlaceId,gameId=game.GameId},archiveHeartEnabled,launchEnabled)
+local continuousWorldEnabled=(launchEnabled and (Runtime :: any).ContinuousWorldCandidate==true) or fullConnectedEnabled
 -- BEGIN Class3 candidate gate (default absent/off; local Memory acceptance only).
 local function class3Candidate(runtime:any,context:any,fullRoute:boolean,launch:boolean):boolean
  return runtime.Class3ProofCandidate==true and fullRoute and not launch and context.isStudio==true
@@ -295,7 +305,7 @@ end, function(player:Player)
 		if outcome=="Committed" then if Network then Network.Send(player) end;Data.FlushAudit(player.UserId);if campaignWorld then campaignWorld.Victory(player,ticket)end;if ironveilWorld then ironveilWorld.Victory(player,ticket)end;if ashenWorld then ashenWorld.Victory(player,ticket)end end
 		return outcome
 	end
-end,Release,observeProduct,sharedCandidateFactory,if launchEnabled and (Runtime :: any).ContinuousWorldCandidate==true then {
+end,Release,observeProduct,sharedCandidateFactory,if continuousWorldEnabled then {
 	Session=walkingSession,Gate=walkingGate,
 	Notify=function(player:Player,code:string)if Network then Network.Send(player,code)end end,
 } else nil)

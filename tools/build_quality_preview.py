@@ -21,19 +21,34 @@ def world_contract(sources):
         raise ValueError('World preview requires exactly one matching reviewed mesh dataset')
     return f'Dataset{matches[0]}',manifest
 
-def build(sources, launch=False, shared_combat=False, world=False, images=None, enemies=None, bind_enemies=False, continuous_world=False):
+def build(sources, launch=False, shared_combat=False, world=False, images=None, enemies=None, bind_enemies=False, continuous_world=False, full_connected=False):
+    if full_connected and (launch or shared_combat or continuous_world):
+        raise ValueError('Full connected Memory preview is separate from launch/shared/continuous launch fixtures')
     if bind_enemies and not enemies:
         raise ValueError('Enemy binding requires reviewed enemy datasets')
     world_data=world_contract(sources) if world else None
-    build_integration_preview.build(launch, shared_combat, continuous_world)
-    variant='launch' if launch else 'integration'
+    build_integration_preview.build(launch, shared_combat, continuous_world, full_campaign=full_connected)
+    variant='full-campaign' if full_connected else 'launch' if launch else 'integration'
     out=ROOT/'build'
     project=json.loads((out/f'{variant}-preview.project.json').read_text())
     base=json.loads((out/f'{variant}-sync/sources.json').read_text())
-    project['name']='Guildborne_QualityPreview'
+    project['name']='Guildborne_FullConnectedQualityPreview' if full_connected else 'Guildborne_QualityPreview'
     folder={'$className':'Folder','$attributes':{'IsolatedMemory':True,'EnableWorldSlice':world,'BindEnemies':bind_enemies}}
     source_root=ROOT/'production/integration/quality-slice'
     entries=base['entries']
+    if full_connected:
+        # Keep the existing full-campaign builder and default staging Runtime intact.
+        runtime_node=project['tree']['ServerScriptService']['Server']['Config']['Runtime']
+        original=Path(runtime_node['$path']).read_text(encoding='utf-8-sig')
+        assert 'FullConnectedWorldCandidate' not in original and 'LaunchCandidate' not in original
+        assert original.count('return {')==1
+        connected=original.replace('return {','return {\n    FullConnectedWorldCandidate=true,',1)
+        runtime_path=out/'FullConnectedRuntime.luau'
+        runtime_path.write_text(connected,encoding='utf-8')
+        runtime_node['$path']=str(runtime_path)
+        matches=[e for e in entries if e['path']==['ServerScriptService','Server','Config','Runtime']]
+        assert len(matches)==1
+        matches[0]['source']=connected
     if world_data:
         dataset,manifest=world_data
         folder['$attributes'].update(WorldDataset=dataset,WorldSourceSha256=manifest['sourceMeshSha256'])
@@ -89,7 +104,7 @@ def build(sources, launch=False, shared_combat=False, world=False, images=None, 
         entries.append(dict(path=prefix+[name],className='LocalScript' if '.client.' in filename else 'Script',source=path.read_text(encoding='utf-8-sig')))
     project_path=out/'quality-preview.project.json'
     project_path.write_text(json.dumps(project,indent=2)+'\n',encoding='utf-8')
-    candidate=out/'Guildborne_QualityPreview.rbxlx'
+    candidate=out/(project['name']+'.rbxlx')
     subprocess.run([str(ROOT/'.tools/rojo/rojo.exe'),'build',str(project_path),'--output',str(candidate)],cwd=ROOT,check=True)
     digest=hashlib.sha256(candidate.read_bytes()).hexdigest()
     sync=out/'quality-sync';sync.mkdir(exist_ok=True)
@@ -98,7 +113,7 @@ def build(sources, launch=False, shared_combat=False, world=False, images=None, 
         if isinstance(node,dict) and '$attributes' in node:
             attributes.append({'path':['ReplicatedStorage','QualityPreviewAssets',name],'values':node['$attributes']})
     (sync/'sources.json').write_text(json.dumps({'mode':'VERIFY_BUILT_PLACE_ONLY_NOT_SOURCE_SYNC','candidateSha256':digest,'attributes':attributes,'entries':entries}),encoding='utf-8')
-    receipt={'status':'BUILT_NOT_STUDIO_TESTED','persistence':'Memory','candidate':str(candidate),'sha256':digest,'launch':launch,'sharedCombat':shared_combat,'continuousWorld':continuous_world,'worldSlice':world,'bindEnemies':bind_enemies,'art':reports,'enemies':enemy_reports,'images':image_report,'runtimeAssetsUploaded':False}
+    receipt={'status':'BUILT_NOT_STUDIO_TESTED','persistence':'Memory','candidate':str(candidate),'sha256':digest,'launch':launch,'sharedCombat':shared_combat,'continuousWorld':continuous_world or full_connected,'fullConnectedWorld':full_connected,'worldSlice':world,'bindEnemies':bind_enemies,'art':reports,'enemies':enemy_reports,'images':image_report,'runtimeAssetsUploaded':False}
     (out/'quality-preview-build.json').write_text(json.dumps(receipt,indent=2)+'\n',encoding='utf-8')
     print(json.dumps(receipt,indent=2))
     return receipt
@@ -109,9 +124,10 @@ if __name__=='__main__':
     parser.add_argument('--launch',action='store_true')
     parser.add_argument('--shared-combat',action='store_true')
     parser.add_argument('--continuous-world',action='store_true',help='Opt-in local Memory City-Greenwood walking; requires --launch')
+    parser.add_argument('--full-connected-world',action='store_true',help='Separate full-campaign Memory preview with existing continuous routes; incompatible with launch flags')
     parser.add_argument('--world',action='store_true')
     parser.add_argument('--images',type=Path)
     parser.add_argument('--enemy',type=Path,action='append',default=[])
     parser.add_argument('--bind-enemies',action='store_true')
     args=parser.parse_args()
-    build(args.mesh,args.launch,args.shared_combat,args.world,args.images,args.enemy,args.bind_enemies,args.continuous_world)
+    build(args.mesh,args.launch,args.shared_combat,args.world,args.images,args.enemy,args.bind_enemies,args.continuous_world,args.full_connected_world)

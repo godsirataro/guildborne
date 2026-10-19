@@ -1,0 +1,9 @@
+{
+  "content": [
+    {
+      "type": "text",
+      "text": "{\"character\":{\"equipmentSlots\":[],\"definitionVersion\":1,\"appearanceEnabled\":false,\"raceId\":\"Human\",\"tier\":1,\"appearance\":{\"hairColorId\":\"HAIR_DARK_BROWN\",\"bodyPresetId\":\"HUMAN_STANDARD\",\"raceFeatures\":[],\"raceId\":\"HUMAN\",\"outfitSlots\":{\"INNER_TOP\":\"CLO_TUNIC_TRAVELER_01\",\"INNER_BOTTOM\":\"CLO_TROUSERS_TRAVELER_01\"},\"appearanceVersion\":1,\"hairAssetId\":\"ACC_HAIR_HUMAN_01\",\"skinPaletteId\":\"SKIN_HUMAN_03\",\"headPresetId\":\"CHR_HEAD_HUMAN_01\"},\"level\":1,\"appearanceRevision\":0,\"xp\":0},\"revision\":0,\"order\":[],\"chapterKeys\":{\"Chapters\":\"table\",\"Version\":\"number\",\"Choices\":\"table\",\"ObjectiveLabels\":\"table\",\"Guidance\":\"table\"},\"status\":\"Active\",\"mode\":\"Studio memory · not saved after Stop\",\"regionalCombat\":true}"
+    }
+  ],
+  "isError": false
+}
