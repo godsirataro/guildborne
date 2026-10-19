@@ -70,6 +70,7 @@ return function(content: any,util: any,rules: any,landPlacement:any?,themes:any?
 				local proved=rules.Paths[proof.pathId];assert(proved and proved.Tier==2 and proved.Class==actor.classId)
 				assert(type(proof.trialId)=="string" and #proof.trialId>0 and #proof.trialId<=48 and proof.trialId:match("^[%w_:%-]+$"))
 			end
+			if build.class3Proof~=nil then assert(rules.validClass3Proof(data,id,build.class3Proof)) end
 			for skill,value in pairs(build.skills) do
 				local def=rules.Skills[skill];assert(def and value==true and (def.Tier or 1)<=build.tier and (not def.Requires or build.skills[def.Requires]))
 			end

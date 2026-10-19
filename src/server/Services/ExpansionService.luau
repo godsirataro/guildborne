@@ -1,6 +1,6 @@
 --!strict
 -- Candidate-only mutations. Spatial authorization is checked by the world gateway.
-return function(content: any,util: any,economy: any,rules: any,landPlacement:any?,themes:any?,mentor:any?)
+return function(content: any,util: any,economy: any,rules: any,landPlacement:any?,themes:any?,mentor:any?,class3:any?)
 	local S: any={}
 	local function xp(data: any,actor: any,amount: number): string?
 		if actor.xp+amount>content.Limits.XP then return "XPCap" end
@@ -159,6 +159,9 @@ return function(content: any,util: any,economy: any,rules: any,landPlacement:any
 					local gate=mentor.problem(data,a.actorId,a.pathId);if gate then return gate end
 				end
 				local path=rules.Paths[a.pathId]
+				if class3 and path.Tier==3 and rules.usesNoviceProgression(data) then
+					local gate=class3.advanceProblem(data,a.actorId,a.pathId);if gate then return gate end
+				end
 				build.path=a.pathId;build.tier=path.Tier;build.equipped=nil
 				if content.StatusAllocationAvailable or rules.usesNoviceProgression(data) then build.skills={};actor.statusAllocations=nil end
 				if a.actorId=="player" then actor.tier=build.tier;actor.classPathId=a.pathId end

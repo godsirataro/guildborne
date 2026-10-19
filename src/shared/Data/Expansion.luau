@@ -78,6 +78,19 @@ E.RecipeOrder={"iron_ingot","guardian_plate","vitality_charm","watchblade","oath
 function E.new(): any return {buildings={},nextBuilding=1,gatherReady={},gathered={},actors={},tower={highest=0,checkpoint=0,nextRun=1},raceChosen=false} end
 function E.actor(data: any,id: string): any return if id=="player" then data.character else data.adventurers[id] end
 function E.build(data: any,id: string): any return data.expansion and data.expansion.actors[id] or {tier=1,skills={}} end
+-- Durable identity only: current level, party and story state must not erase earned proof.
+function E.validClass3Proof(data:any,actorId:any,proof:any):boolean
+ if type(actorId)~="string" or type(proof)~="table" then return false end
+ for key in pairs(proof)do
+  if key~="version" and key~="actorId" and key~="pathId" and key~="trialId" and key~="sourceKind" then return false end
+ end
+ local actor=E.actor(data,actorId)
+ local path=if type(proof.pathId)=="string" then E.Paths[proof.pathId] else nil
+ return actor~=nil and proof.version==1 and proof.actorId==actorId
+  and path~=nil and path.Tier==3 and path.Class==actor.classId
+  and type(proof.trialId)=="string" and #proof.trialId>0 and #proof.trialId<=48 and proof.trialId:match("^[%w_:%-]+$")~=nil
+  and (proof.sourceKind=="actor_mastery" or (proof.sourceKind=="crosshaven_mastery" and actorId=="player"))
+end
 function E.spent(build: any): number local n=0;for id in pairs(build.skills) do n+=E.Skills[id].Cost end;return n end
 function E.learnProblem(build: any,level: number,id: string): string?
 	local node=E.Skills[id];if not node then return "InvalidSkill" end
