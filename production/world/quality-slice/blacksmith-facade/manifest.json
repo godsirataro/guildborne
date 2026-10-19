@@ -1,0 +1,195 @@
+{
+  "status": "OFFLINE_REVIEW_ONLY",
+  "files": [
+    {
+      "path": "assets/production/world-slice/blacksmith-facade/.gitattributes",
+      "size": 29,
+      "sha256": "730a35ae3d558080083c3103d9ac8100c3f6561678092abe341701dfa331eb1d"
+    },
+    {
+      "path": "assets/production/world-slice/blacksmith-facade/after/01_native_like_smith_wall.png",
+      "size": 1590300,
+      "sha256": "5af55354a315854857db591ea86fd2520a2eefd635949f9c0139de3e53d8625d"
+    },
+    {
+      "path": "assets/production/world-slice/blacksmith-facade/after/02_west_apron_approach.png",
+      "size": 1633416,
+      "sha256": "52a7e94dbf644cd55d353030b82857c88154195961e46d0d78cf7a13caa3c40b"
+    },
+    {
+      "path": "assets/production/world-slice/blacksmith-facade/after/03_workshop_overview.png",
+      "size": 1727365,
+      "sha256": "e90a1cdb180615de29ca2bf943c56911c2c00838c82b03210d31011738aee89a"
+    },
+    {
+      "path": "assets/production/world-slice/blacksmith-facade/after/04_east_entry.png",
+      "size": 1619174,
+      "sha256": "914e45bc82c74dc10df18bdfb5f8a53228d753c35af45b92b810ed50a9f03712"
+    },
+    {
+      "path": "assets/production/world-slice/blacksmith-facade/after/render-evidence.json",
+      "size": 1672,
+      "sha256": "3fbf4759ea520e1faf37de7fdd71f7fdd551c85335295ebfb1f694f62e3de984"
+    },
+    {
+      "path": "assets/production/world-slice/blacksmith-facade/after/source.blend",
+      "size": 371947,
+      "sha256": "82976c7efa6943bb9bafda384049ea9955a05b5965dab31bceb68741ed71d09d"
+    },
+    {
+      "path": "assets/production/world-slice/blacksmith-facade/before/01_native_like_smith_wall.png",
+      "size": 1513665,
+      "sha256": "30a2f3f64d729eb7d4ddbc9cb7004cd5ef00ad826a0e1f5d09936d347bd561b5"
+    },
+    {
+      "path": "assets/production/world-slice/blacksmith-facade/before/02_west_apron_approach.png",
+      "size": 1566158,
+      "sha256": "e95cbfb99733e45485f1be619ccb5679c985b1928141f5ad146b59014794b0b1"
+    },
+    {
+      "path": "assets/production/world-slice/blacksmith-facade/before/03_workshop_overview.png",
+      "size": 1666111,
+      "sha256": "b0a57ee3cf667ac4803f96b15990d592b0d92e3abd16a557082b8055f74e829d"
+    },
+    {
+      "path": "assets/production/world-slice/blacksmith-facade/before/04_east_entry.png",
+      "size": 1570616,
+      "sha256": "18ed3c0beba257f79ee3bd4f886835a3e6214f4b479fbbcec4e981aa63b8c0d9"
+    },
+    {
+      "path": "assets/production/world-slice/blacksmith-facade/before/render-evidence.json",
+      "size": 1674,
+      "sha256": "4cc459009d59aa6e317d12c4623a6ed578cafd47d4914e81682964ac79fb054a"
+    },
+    {
+      "path": "assets/production/world-slice/blacksmith-facade/before/source.blend",
+      "size": 362883,
+      "sha256": "a4cd52c1fe37a5256d3e5968938c13716265d0c5153bf9a5d640923d6978d2e0"
+    },
+    {
+      "path": "assets/production/world-slice/blacksmith-facade/metrics.json",
+      "size": 78,
+      "sha256": "7db6bc6449e8acedfefef37daf97f5a7913c30f138d4dddfdf19cecd7ba8f9fb"
+    },
+    {
+      "path": "assets/production/world-slice/blacksmith-facade/provenance.json",
+      "size": 606,
+      "sha256": "9c88bab204e1f65473ffee2ac8751d781a431003fc938afd9fa2cf86782e2dc3"
+    },
+    {
+      "path": "assets/production/world-slice/blacksmith-facade/scenery.mesh.json",
+      "size": 256625,
+      "sha256": "1e803ebb0bfa131c7c0d2113ce50eb3227fcc82fea1aa9ab56ab94156135cf51"
+    },
+    {
+      "path": "assets/production/world-slice/blacksmith-facade/solids.json",
+      "size": 37374,
+      "sha256": "358f574d139ae7b615dc060cb2795f65f1ff6181042405d6a90043fe6a199251"
+    },
+    {
+      "path": "production/world/quality-slice/blacksmith-facade/.gitattributes",
+      "size": 29,
+      "sha256": "730a35ae3d558080083c3103d9ac8100c3f6561678092abe341701dfa331eb1d"
+    },
+    {
+      "path": "production/world/quality-slice/blacksmith-facade/actor-bound.json",
+      "size": 5610,
+      "sha256": "70593d9e973250ca136bd8a15c1684b10b6d191c8d61766a2436e1dabc0551ec"
+    },
+    {
+      "path": "production/world/quality-slice/blacksmith-facade/after.exit.txt",
+      "size": 3,
+      "sha256": "13bf7b3039c63bf5a50491fa3cfd8eb4e699d1ba1436315aef9cbe5711530354"
+    },
+    {
+      "path": "production/world/quality-slice/blacksmith-facade/after.stderr.log",
+      "size": 840,
+      "sha256": "fb03004743c43c237db2bd54c62557c2d56b0198069aad4d564a50dcb4d1ffd9"
+    },
+    {
+      "path": "production/world/quality-slice/blacksmith-facade/after.stdout.log",
+      "size": 761,
+      "sha256": "f6345e4744725af435a174322f13f9475333913afc36d02aae07f5be4127f09a"
+    },
+    {
+      "path": "production/world/quality-slice/blacksmith-facade/before.exit.txt",
+      "size": 3,
+      "sha256": "13bf7b3039c63bf5a50491fa3cfd8eb4e699d1ba1436315aef9cbe5711530354"
+    },
+    {
+      "path": "production/world/quality-slice/blacksmith-facade/before.stderr.log",
+      "size": 840,
+      "sha256": "fb03004743c43c237db2bd54c62557c2d56b0198069aad4d564a50dcb4d1ffd9"
+    },
+    {
+      "path": "production/world/quality-slice/blacksmith-facade/before.stdout.log",
+      "size": 765,
+      "sha256": "0f01f56be05abb35470b09b20a041744625525dabf9e3e6257c798418bc932cc"
+    },
+    {
+      "path": "production/world/quality-slice/blacksmith-facade/build.py",
+      "size": 6971,
+      "sha256": "3c3dcadb18fff8c8533547a0c5cd572cf17f9dc9c8adbd428f7765b87b844750"
+    },
+    {
+      "path": "production/world/quality-slice/blacksmith-facade/cameras.json",
+      "size": 858,
+      "sha256": "3fc0184ac7bf7a245ef6ea4267bffbcc6a6aade44b78cff7bb901da567c3aab2"
+    },
+    {
+      "path": "production/world/quality-slice/blacksmith-facade/HANDOFF.md",
+      "size": 5894,
+      "sha256": "3181dec6fb052ed8fcc39f4a461ced2df9082992dac133f608e5458986fabd13"
+    },
+    {
+      "path": "production/world/quality-slice/blacksmith-facade/independent-01.exit.json",
+      "size": 15,
+      "sha256": "47b8b6b49d4695fe6e036bd916538aff4f46773e212ca0d429db80f3963e2cfe"
+    },
+    {
+      "path": "production/world/quality-slice/blacksmith-facade/independent-01.stderr.txt",
+      "size": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "path": "production/world/quality-slice/blacksmith-facade/independent-01.stdout.txt",
+      "size": 21085,
+      "sha256": "fe56781ae377f649bb3848b35400c2cc4d8cbf97f4c00622a27a85c77f2157aa"
+    },
+    {
+      "path": "production/world/quality-slice/blacksmith-facade/independent-actor-review.json",
+      "size": 1147,
+      "sha256": "09262dd6df7ced8b947366feae358de37c12c6d60a7776cff1985d8d59c4ef40"
+    },
+    {
+      "path": "production/world/quality-slice/blacksmith-facade/independent-review.json",
+      "size": 25096,
+      "sha256": "ada27a96f76879f6914f1b2f8e2ceccb8ec88dd8f39af99f847eca09fb3812db"
+    },
+    {
+      "path": "production/world/quality-slice/blacksmith-facade/independent-visual-review.md",
+      "size": 3209,
+      "sha256": "491524c6c28f3d6158196c4a94bb80545fca708a19d904e24ebcd41fdb42b2a6"
+    },
+    {
+      "path": "production/world/quality-slice/blacksmith-facade/render.py",
+      "size": 10508,
+      "sha256": "79b137ee5062984e77be79411aa3157934dc407f3c14a2558ed0c229e8fd1782"
+    },
+    {
+      "path": "production/world/quality-slice/blacksmith-facade/source-survey.json",
+      "size": 167971,
+      "sha256": "c2796ddb12acb18559c65a92798f407b2398fd21b101d30c26c64513775d4053"
+    },
+    {
+      "path": "production/world/quality-slice/blacksmith-facade/verify.py",
+      "size": 8322,
+      "sha256": "c0ef1a325197aa2e5df111aad6e114be9aaac4b790a9b5ce8e918e1125a52c12"
+    },
+    {
+      "path": "production/world/quality-slice/blacksmith-facade/visual-review.json",
+      "size": 1284,
+      "sha256": "0c803b97662ae4fcb11186dbe955a0e5410c97b226a90b171eb7f6585392af0d"
+    }
+  ]
+}

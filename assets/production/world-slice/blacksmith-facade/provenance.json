@@ -1,0 +1,10 @@
+{
+  "status": "ORIGINAL_FILE_GENERATED_NOT_NATIVE",
+  "recipe": "production/world/quality-slice/blacksmith-facade/build.py",
+  "recipeSha256": "3c3dcadb18fff8c8533547a0c5cd572cf17f9dc9c8adbd428f7765b87b844750",
+  "helper": "production/world/quality-slice/ironveil-ore-yard/build.py",
+  "helperSha256": "5ab3711f35c92131017e7be1d35c3e0c0915661c25df677897fba06d98f5bc75",
+  "packetSha256": "1e803ebb0bfa131c7c0d2113ce50eb3227fcc82fea1aa9ab56ab94156135cf51",
+  "origin": "Original Guildborne thin facade facing and shuttered vents; no new third-party assets/textures/fonts/providers.",
+  "runtimeIds": null
+}

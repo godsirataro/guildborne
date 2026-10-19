@@ -1,0 +1,63 @@
+{
+  "status": "MATCHED_OFFLINE_COMPARISON_NOT_NATIVE_CAPTURE",
+  "resolution": [
+    1600,
+    900
+  ],
+  "samples": 24,
+  "lens": 32,
+  "views": [
+    {
+      "name": "01_native_like_smith_wall",
+      "eye": [
+        365,
+        12,
+        -921
+      ],
+      "target": [
+        370,
+        13,
+        -982
+      ]
+    },
+    {
+      "name": "02_west_apron_approach",
+      "eye": [
+        325,
+        12,
+        -939
+      ],
+      "target": [
+        369,
+        7,
+        -969
+      ]
+    },
+    {
+      "name": "03_workshop_overview",
+      "eye": [
+        420,
+        62,
+        -903
+      ],
+      "target": [
+        361,
+        5,
+        -988
+      ]
+    },
+    {
+      "name": "04_east_entry",
+      "eye": [
+        434,
+        12,
+        -961
+      ],
+      "target": [
+        385,
+        6,
+        -991
+      ]
+    }
+  ]
+}

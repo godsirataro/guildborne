@@ -1,0 +1,24 @@
+{
+  "status": "BLENDER_RENDERED_NOT_NATIVE",
+  "variant": "before",
+  "nativePartCount": 297,
+  "cameraSha256": "3fc0184ac7bf7a245ef6ea4267bffbcc6a6aade44b78cff7bb901da567c3aab2",
+  "packetSha256": "1e803ebb0bfa131c7c0d2113ce50eb3227fcc82fea1aa9ab56ab94156135cf51",
+  "packetIncluded": false,
+  "existingApronIncluded": true,
+  "existingApronSha256": "d08edc14a62bd2fc9e1a3fb0e5a6b205df9532358567e19d93a3e22b356bb46f",
+  "surveySha256": "c2796ddb12acb18559c65a92798f407b2398fd21b101d30c26c64513775d4053",
+  "rendererSha256": "79b137ee5062984e77be79411aa3157934dc407f3c14a2558ed0c229e8fd1782",
+  "context": "Literal CityKit Blacksmith and Alchemy shells/interiors with actual pivots, roof rotations, palette, banners; chimney, sign boards, market stalls, ground, market courtyard, five roads, bounded east walls; existing city-smith-apron packet in BOTH variants; landscape centers within X160..455/Z-1130..-880.",
+  "omissions": [
+    "Actors/companions/NPCs and GUI labels omitted; no population proof",
+    "Distant city buildings, roads, monuments, island scenery and landscape outside bounded context omitted",
+    "Native materials, Roblox lighting/shadows and physical collision not reproduced; Blender comparison only"
+  ],
+  "images": {
+    "01_native_like_smith_wall.png": "30a2f3f64d729eb7d4ddbc9cb7004cd5ef00ad826a0e1f5d09936d347bd561b5",
+    "02_west_apron_approach.png": "e95cbfb99733e45485f1be619ccb5679c985b1928141f5ad146b59014794b0b1",
+    "03_workshop_overview.png": "b0a57ee3cf667ac4803f96b15990d592b0d92e3abd16a557082b8055f74e829d",
+    "04_east_entry.png": "18ed3c0beba257f79ee3bd4f886835a3e6214f4b479fbbcec4e981aa63b8c0d9"
+  }
+}

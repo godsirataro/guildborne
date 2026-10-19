@@ -1,0 +1,19 @@
+{
+  "status": "BLENDER_REVIEW_ONLY_NATIVE_PENDING",
+  "packetSHA256": "1e803ebb0bfa131c7c0d2113ce50eb3227fcc82fea1aa9ab56ab94156135cf51",
+  "matchedPairs": 4,
+  "beforeExit": 0,
+  "afterExit": 0,
+  "observations": {
+    "01_native_like_smith_wall": "Upper plaster panels, timber braces and louvres break up the blank wall; lower central wall remains plain.",
+    "02_west_apron_approach": "New facade frames the existing shelter and toolbench; footing covers the selected wall base. Unmodified side wall and its base gap remain visible.",
+    "03_workshop_overview": "Building gains a distinct facade while its broad original roof remains plain. Existing apron arrangement and approach are retained.",
+    "04_east_entry": "Stone jambs and pale gable infill define the entry. Existing doorway threshold gap is retained; roof junction requires native close inspection."
+  },
+  "limitations": [
+    "Source-reconstructed context uses Blender colors and lighting, not native Roblox rendering.",
+    "Dynamic actors, UI and workstation animation are omitted; images do not establish player or companion traversal.",
+    "Native shadows, clipping, roof junction, Borin work and dialogue, Rukk and five-companion approach remain pending.",
+    "Human art acceptance remains pending."
+  ]
+}

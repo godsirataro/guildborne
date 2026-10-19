@@ -1,0 +1,2017 @@
+[
+  {
+    "name": "north_course0_0",
+    "meshId": "smith_facade_footing_00",
+    "firstVertex": 1,
+    "vertexCount": 8,
+    "firstTriangle": 1,
+    "triangleCount": 12,
+    "center": [
+      351.0,
+      0.66,
+      -971.5
+    ]
+  },
+  {
+    "name": "north_course0_1",
+    "meshId": "smith_facade_footing_00",
+    "firstVertex": 9,
+    "vertexCount": 8,
+    "firstTriangle": 13,
+    "triangleCount": 12,
+    "center": [
+      355.0,
+      0.66,
+      -971.5
+    ]
+  },
+  {
+    "name": "north_course0_2",
+    "meshId": "smith_facade_footing_00",
+    "firstVertex": 17,
+    "vertexCount": 8,
+    "firstTriangle": 25,
+    "triangleCount": 12,
+    "center": [
+      359.0,
+      0.66,
+      -971.5
+    ]
+  },
+  {
+    "name": "north_course0_3",
+    "meshId": "smith_facade_footing_00",
+    "firstVertex": 25,
+    "vertexCount": 8,
+    "firstTriangle": 37,
+    "triangleCount": 12,
+    "center": [
+      363.0,
+      0.66,
+      -971.5
+    ]
+  },
+  {
+    "name": "north_course0_4",
+    "meshId": "smith_facade_footing_00",
+    "firstVertex": 33,
+    "vertexCount": 8,
+    "firstTriangle": 49,
+    "triangleCount": 12,
+    "center": [
+      367.0,
+      0.66,
+      -971.5
+    ]
+  },
+  {
+    "name": "north_course0_5",
+    "meshId": "smith_facade_footing_00",
+    "firstVertex": 41,
+    "vertexCount": 8,
+    "firstTriangle": 61,
+    "triangleCount": 12,
+    "center": [
+      371.0,
+      0.66,
+      -971.5
+    ]
+  },
+  {
+    "name": "north_course0_6",
+    "meshId": "smith_facade_footing_00",
+    "firstVertex": 49,
+    "vertexCount": 8,
+    "firstTriangle": 73,
+    "triangleCount": 12,
+    "center": [
+      375.0,
+      0.66,
+      -971.5
+    ]
+  },
+  {
+    "name": "north_course0_7",
+    "meshId": "smith_facade_footing_00",
+    "firstVertex": 57,
+    "vertexCount": 8,
+    "firstTriangle": 85,
+    "triangleCount": 12,
+    "center": [
+      379.0,
+      0.66,
+      -971.5
+    ]
+  },
+  {
+    "name": "north_course0_8",
+    "meshId": "smith_facade_footing_00",
+    "firstVertex": 65,
+    "vertexCount": 8,
+    "firstTriangle": 97,
+    "triangleCount": 12,
+    "center": [
+      383.0,
+      0.66,
+      -971.5
+    ]
+  },
+  {
+    "name": "north_course0_9",
+    "meshId": "smith_facade_footing_00",
+    "firstVertex": 73,
+    "vertexCount": 8,
+    "firstTriangle": 109,
+    "triangleCount": 12,
+    "center": [
+      387.0,
+      0.66,
+      -971.5
+    ]
+  },
+  {
+    "name": "east_course0_-1028.5_0",
+    "meshId": "smith_facade_footing_00",
+    "firstVertex": 81,
+    "vertexCount": 8,
+    "firstTriangle": 121,
+    "triangleCount": 12,
+    "center": [
+      390.55,
+      0.66,
+      -1026.48
+    ]
+  },
+  {
+    "name": "east_course0_-1028.5_1",
+    "meshId": "smith_facade_footing_00",
+    "firstVertex": 89,
+    "vertexCount": 8,
+    "firstTriangle": 133,
+    "triangleCount": 12,
+    "center": [
+      390.55,
+      0.66,
+      -1022.4399999999998
+    ]
+  },
+  {
+    "name": "east_course0_-1028.5_2",
+    "meshId": "smith_facade_footing_00",
+    "firstVertex": 97,
+    "vertexCount": 8,
+    "firstTriangle": 145,
+    "triangleCount": 12,
+    "center": [
+      390.55,
+      0.66,
+      -1018.4
+    ]
+  },
+  {
+    "name": "east_course0_-1028.5_3",
+    "meshId": "smith_facade_footing_00",
+    "firstVertex": 105,
+    "vertexCount": 8,
+    "firstTriangle": 157,
+    "triangleCount": 12,
+    "center": [
+      390.55,
+      0.66,
+      -1014.36
+    ]
+  },
+  {
+    "name": "east_course0_-1028.5_4",
+    "meshId": "smith_facade_footing_00",
+    "firstVertex": 113,
+    "vertexCount": 8,
+    "firstTriangle": 169,
+    "triangleCount": 12,
+    "center": [
+      390.55,
+      0.66,
+      -1010.3199999999999
+    ]
+  },
+  {
+    "name": "east_course0_-991.7_0",
+    "meshId": "smith_facade_footing_00",
+    "firstVertex": 121,
+    "vertexCount": 8,
+    "firstTriangle": 181,
+    "triangleCount": 12,
+    "center": [
+      390.55,
+      0.66,
+      -989.72
+    ]
+  },
+  {
+    "name": "east_course0_-991.7_1",
+    "meshId": "smith_facade_footing_00",
+    "firstVertex": 129,
+    "vertexCount": 8,
+    "firstTriangle": 193,
+    "triangleCount": 12,
+    "center": [
+      390.55,
+      0.66,
+      -985.76
+    ]
+  },
+  {
+    "name": "east_course0_-991.7_2",
+    "meshId": "smith_facade_footing_00",
+    "firstVertex": 137,
+    "vertexCount": 8,
+    "firstTriangle": 205,
+    "triangleCount": 12,
+    "center": [
+      390.55,
+      0.66,
+      -981.8
+    ]
+  },
+  {
+    "name": "east_course0_-991.7_3",
+    "meshId": "smith_facade_footing_00",
+    "firstVertex": 145,
+    "vertexCount": 8,
+    "firstTriangle": 217,
+    "triangleCount": 12,
+    "center": [
+      390.55,
+      0.66,
+      -977.84
+    ]
+  },
+  {
+    "name": "east_course0_-991.7_4",
+    "meshId": "smith_facade_footing_00",
+    "firstVertex": 153,
+    "vertexCount": 8,
+    "firstTriangle": 229,
+    "triangleCount": 12,
+    "center": [
+      390.55,
+      0.66,
+      -973.88
+    ]
+  },
+  {
+    "name": "north_course1_0",
+    "meshId": "smith_facade_footing_00",
+    "firstVertex": 161,
+    "vertexCount": 8,
+    "firstTriangle": 241,
+    "triangleCount": 12,
+    "center": [
+      351.0,
+      1.41,
+      -971.5
+    ]
+  },
+  {
+    "name": "north_course1_1",
+    "meshId": "smith_facade_footing_00",
+    "firstVertex": 169,
+    "vertexCount": 8,
+    "firstTriangle": 253,
+    "triangleCount": 12,
+    "center": [
+      355.0,
+      1.41,
+      -971.5
+    ]
+  },
+  {
+    "name": "north_course1_2",
+    "meshId": "smith_facade_footing_00",
+    "firstVertex": 177,
+    "vertexCount": 8,
+    "firstTriangle": 265,
+    "triangleCount": 12,
+    "center": [
+      359.0,
+      1.41,
+      -971.5
+    ]
+  },
+  {
+    "name": "north_course1_3",
+    "meshId": "smith_facade_footing_00",
+    "firstVertex": 185,
+    "vertexCount": 8,
+    "firstTriangle": 277,
+    "triangleCount": 12,
+    "center": [
+      363.0,
+      1.41,
+      -971.5
+    ]
+  },
+  {
+    "name": "north_course1_4",
+    "meshId": "smith_facade_footing_00",
+    "firstVertex": 193,
+    "vertexCount": 8,
+    "firstTriangle": 289,
+    "triangleCount": 12,
+    "center": [
+      367.0,
+      1.41,
+      -971.5
+    ]
+  },
+  {
+    "name": "north_course1_5",
+    "meshId": "smith_facade_footing_00",
+    "firstVertex": 201,
+    "vertexCount": 8,
+    "firstTriangle": 301,
+    "triangleCount": 12,
+    "center": [
+      371.0,
+      1.41,
+      -971.5
+    ]
+  },
+  {
+    "name": "north_course1_6",
+    "meshId": "smith_facade_footing_00",
+    "firstVertex": 209,
+    "vertexCount": 8,
+    "firstTriangle": 313,
+    "triangleCount": 12,
+    "center": [
+      375.0,
+      1.41,
+      -971.5
+    ]
+  },
+  {
+    "name": "north_course1_7",
+    "meshId": "smith_facade_footing_00",
+    "firstVertex": 217,
+    "vertexCount": 8,
+    "firstTriangle": 325,
+    "triangleCount": 12,
+    "center": [
+      379.0,
+      1.41,
+      -971.5
+    ]
+  },
+  {
+    "name": "north_course1_8",
+    "meshId": "smith_facade_footing_00",
+    "firstVertex": 225,
+    "vertexCount": 8,
+    "firstTriangle": 337,
+    "triangleCount": 12,
+    "center": [
+      383.0,
+      1.41,
+      -971.5
+    ]
+  },
+  {
+    "name": "north_course1_9",
+    "meshId": "smith_facade_footing_00",
+    "firstVertex": 233,
+    "vertexCount": 8,
+    "firstTriangle": 349,
+    "triangleCount": 12,
+    "center": [
+      387.0,
+      1.41,
+      -971.5
+    ]
+  },
+  {
+    "name": "east_course1_-1028.5_0",
+    "meshId": "smith_facade_footing_00",
+    "firstVertex": 241,
+    "vertexCount": 8,
+    "firstTriangle": 361,
+    "triangleCount": 12,
+    "center": [
+      390.55,
+      1.41,
+      -1026.48
+    ]
+  },
+  {
+    "name": "east_course1_-1028.5_1",
+    "meshId": "smith_facade_footing_00",
+    "firstVertex": 249,
+    "vertexCount": 8,
+    "firstTriangle": 373,
+    "triangleCount": 12,
+    "center": [
+      390.55,
+      1.41,
+      -1022.4399999999998
+    ]
+  },
+  {
+    "name": "east_course1_-1028.5_2",
+    "meshId": "smith_facade_footing_00",
+    "firstVertex": 257,
+    "vertexCount": 8,
+    "firstTriangle": 385,
+    "triangleCount": 12,
+    "center": [
+      390.55,
+      1.41,
+      -1018.4
+    ]
+  },
+  {
+    "name": "east_course1_-1028.5_3",
+    "meshId": "smith_facade_footing_00",
+    "firstVertex": 265,
+    "vertexCount": 8,
+    "firstTriangle": 397,
+    "triangleCount": 12,
+    "center": [
+      390.55,
+      1.41,
+      -1014.36
+    ]
+  },
+  {
+    "name": "east_course1_-1028.5_4",
+    "meshId": "smith_facade_footing_00",
+    "firstVertex": 273,
+    "vertexCount": 8,
+    "firstTriangle": 409,
+    "triangleCount": 12,
+    "center": [
+      390.55,
+      1.41,
+      -1010.3199999999999
+    ]
+  },
+  {
+    "name": "east_course1_-991.7_0",
+    "meshId": "smith_facade_footing_00",
+    "firstVertex": 281,
+    "vertexCount": 8,
+    "firstTriangle": 421,
+    "triangleCount": 12,
+    "center": [
+      390.55,
+      1.41,
+      -989.72
+    ]
+  },
+  {
+    "name": "east_course1_-991.7_1",
+    "meshId": "smith_facade_footing_00",
+    "firstVertex": 289,
+    "vertexCount": 8,
+    "firstTriangle": 433,
+    "triangleCount": 12,
+    "center": [
+      390.55,
+      1.41,
+      -985.76
+    ]
+  },
+  {
+    "name": "east_course1_-991.7_2",
+    "meshId": "smith_facade_footing_00",
+    "firstVertex": 297,
+    "vertexCount": 8,
+    "firstTriangle": 445,
+    "triangleCount": 12,
+    "center": [
+      390.55,
+      1.41,
+      -981.8
+    ]
+  },
+  {
+    "name": "east_course1_-991.7_3",
+    "meshId": "smith_facade_footing_00",
+    "firstVertex": 305,
+    "vertexCount": 8,
+    "firstTriangle": 457,
+    "triangleCount": 12,
+    "center": [
+      390.55,
+      1.41,
+      -977.84
+    ]
+  },
+  {
+    "name": "east_course1_-991.7_4",
+    "meshId": "smith_facade_footing_00",
+    "firstVertex": 313,
+    "vertexCount": 8,
+    "firstTriangle": 469,
+    "triangleCount": 12,
+    "center": [
+      390.55,
+      1.41,
+      -973.88
+    ]
+  },
+  {
+    "name": "quoin350.9_0",
+    "meshId": "smith_facade_pilasters_00",
+    "firstVertex": 1,
+    "vertexCount": 8,
+    "firstTriangle": 1,
+    "triangleCount": 12,
+    "center": [
+      350.9,
+      2.55,
+      -971.32
+    ]
+  },
+  {
+    "name": "quoin350.9_1",
+    "meshId": "smith_facade_pilasters_00",
+    "firstVertex": 9,
+    "vertexCount": 8,
+    "firstTriangle": 13,
+    "triangleCount": 12,
+    "center": [
+      350.9,
+      4.05,
+      -971.32
+    ]
+  },
+  {
+    "name": "quoin350.9_2",
+    "meshId": "smith_facade_pilasters_00",
+    "firstVertex": 17,
+    "vertexCount": 8,
+    "firstTriangle": 25,
+    "triangleCount": 12,
+    "center": [
+      350.9,
+      5.55,
+      -971.32
+    ]
+  },
+  {
+    "name": "quoin350.9_3",
+    "meshId": "smith_facade_pilasters_00",
+    "firstVertex": 25,
+    "vertexCount": 8,
+    "firstTriangle": 37,
+    "triangleCount": 12,
+    "center": [
+      350.9,
+      7.05,
+      -971.32
+    ]
+  },
+  {
+    "name": "quoin350.9_4",
+    "meshId": "smith_facade_pilasters_00",
+    "firstVertex": 33,
+    "vertexCount": 8,
+    "firstTriangle": 49,
+    "triangleCount": 12,
+    "center": [
+      350.9,
+      8.55,
+      -971.32
+    ]
+  },
+  {
+    "name": "quoin350.9_5",
+    "meshId": "smith_facade_pilasters_00",
+    "firstVertex": 41,
+    "vertexCount": 8,
+    "firstTriangle": 61,
+    "triangleCount": 12,
+    "center": [
+      350.9,
+      10.05,
+      -971.32
+    ]
+  },
+  {
+    "name": "quoin350.9_6",
+    "meshId": "smith_facade_pilasters_00",
+    "firstVertex": 49,
+    "vertexCount": 8,
+    "firstTriangle": 73,
+    "triangleCount": 12,
+    "center": [
+      350.9,
+      11.55,
+      -971.32
+    ]
+  },
+  {
+    "name": "quoin350.9_7",
+    "meshId": "smith_facade_pilasters_00",
+    "firstVertex": 57,
+    "vertexCount": 8,
+    "firstTriangle": 85,
+    "triangleCount": 12,
+    "center": [
+      350.9,
+      13.05,
+      -971.32
+    ]
+  },
+  {
+    "name": "quoin350.9_8",
+    "meshId": "smith_facade_pilasters_00",
+    "firstVertex": 65,
+    "vertexCount": 8,
+    "firstTriangle": 97,
+    "triangleCount": 12,
+    "center": [
+      350.9,
+      14.55,
+      -971.32
+    ]
+  },
+  {
+    "name": "quoin350.9_9",
+    "meshId": "smith_facade_pilasters_00",
+    "firstVertex": 73,
+    "vertexCount": 8,
+    "firstTriangle": 109,
+    "triangleCount": 12,
+    "center": [
+      350.9,
+      16.05,
+      -971.32
+    ]
+  },
+  {
+    "name": "quoin350.9_10",
+    "meshId": "smith_facade_pilasters_00",
+    "firstVertex": 81,
+    "vertexCount": 8,
+    "firstTriangle": 121,
+    "triangleCount": 12,
+    "center": [
+      350.9,
+      17.55,
+      -971.32
+    ]
+  },
+  {
+    "name": "quoin350.9_11",
+    "meshId": "smith_facade_pilasters_00",
+    "firstVertex": 89,
+    "vertexCount": 8,
+    "firstTriangle": 133,
+    "triangleCount": 12,
+    "center": [
+      350.9,
+      19.05,
+      -971.32
+    ]
+  },
+  {
+    "name": "capital350.9",
+    "meshId": "smith_facade_pilasters_00",
+    "firstVertex": 97,
+    "vertexCount": 8,
+    "firstTriangle": 145,
+    "triangleCount": 12,
+    "center": [
+      350.9,
+      20.5,
+      -971.32
+    ]
+  },
+  {
+    "name": "quoin389.1_0",
+    "meshId": "smith_facade_pilasters_00",
+    "firstVertex": 105,
+    "vertexCount": 8,
+    "firstTriangle": 157,
+    "triangleCount": 12,
+    "center": [
+      389.1,
+      2.55,
+      -971.32
+    ]
+  },
+  {
+    "name": "quoin389.1_1",
+    "meshId": "smith_facade_pilasters_00",
+    "firstVertex": 113,
+    "vertexCount": 8,
+    "firstTriangle": 169,
+    "triangleCount": 12,
+    "center": [
+      389.1,
+      4.05,
+      -971.32
+    ]
+  },
+  {
+    "name": "quoin389.1_2",
+    "meshId": "smith_facade_pilasters_00",
+    "firstVertex": 121,
+    "vertexCount": 8,
+    "firstTriangle": 181,
+    "triangleCount": 12,
+    "center": [
+      389.1,
+      5.55,
+      -971.32
+    ]
+  },
+  {
+    "name": "quoin389.1_3",
+    "meshId": "smith_facade_pilasters_00",
+    "firstVertex": 129,
+    "vertexCount": 8,
+    "firstTriangle": 193,
+    "triangleCount": 12,
+    "center": [
+      389.1,
+      7.05,
+      -971.32
+    ]
+  },
+  {
+    "name": "quoin389.1_4",
+    "meshId": "smith_facade_pilasters_00",
+    "firstVertex": 137,
+    "vertexCount": 8,
+    "firstTriangle": 205,
+    "triangleCount": 12,
+    "center": [
+      389.1,
+      8.55,
+      -971.32
+    ]
+  },
+  {
+    "name": "quoin389.1_5",
+    "meshId": "smith_facade_pilasters_00",
+    "firstVertex": 145,
+    "vertexCount": 8,
+    "firstTriangle": 217,
+    "triangleCount": 12,
+    "center": [
+      389.1,
+      10.05,
+      -971.32
+    ]
+  },
+  {
+    "name": "quoin389.1_6",
+    "meshId": "smith_facade_pilasters_00",
+    "firstVertex": 153,
+    "vertexCount": 8,
+    "firstTriangle": 229,
+    "triangleCount": 12,
+    "center": [
+      389.1,
+      11.55,
+      -971.32
+    ]
+  },
+  {
+    "name": "quoin389.1_7",
+    "meshId": "smith_facade_pilasters_00",
+    "firstVertex": 161,
+    "vertexCount": 8,
+    "firstTriangle": 241,
+    "triangleCount": 12,
+    "center": [
+      389.1,
+      13.05,
+      -971.32
+    ]
+  },
+  {
+    "name": "quoin389.1_8",
+    "meshId": "smith_facade_pilasters_00",
+    "firstVertex": 169,
+    "vertexCount": 8,
+    "firstTriangle": 253,
+    "triangleCount": 12,
+    "center": [
+      389.1,
+      14.55,
+      -971.32
+    ]
+  },
+  {
+    "name": "quoin389.1_9",
+    "meshId": "smith_facade_pilasters_00",
+    "firstVertex": 177,
+    "vertexCount": 8,
+    "firstTriangle": 265,
+    "triangleCount": 12,
+    "center": [
+      389.1,
+      16.05,
+      -971.32
+    ]
+  },
+  {
+    "name": "quoin389.1_10",
+    "meshId": "smith_facade_pilasters_00",
+    "firstVertex": 185,
+    "vertexCount": 8,
+    "firstTriangle": 277,
+    "triangleCount": 12,
+    "center": [
+      389.1,
+      17.55,
+      -971.32
+    ]
+  },
+  {
+    "name": "quoin389.1_11",
+    "meshId": "smith_facade_pilasters_00",
+    "firstVertex": 193,
+    "vertexCount": 8,
+    "firstTriangle": 289,
+    "triangleCount": 12,
+    "center": [
+      389.1,
+      19.05,
+      -971.32
+    ]
+  },
+  {
+    "name": "capital389.1",
+    "meshId": "smith_facade_pilasters_00",
+    "firstVertex": 201,
+    "vertexCount": 8,
+    "firstTriangle": 301,
+    "triangleCount": 12,
+    "center": [
+      389.1,
+      20.5,
+      -971.32
+    ]
+  },
+  {
+    "name": "plaster359.6",
+    "meshId": "smith_facade_upper_panels_00",
+    "firstVertex": 1,
+    "vertexCount": 8,
+    "firstTriangle": 1,
+    "triangleCount": 12,
+    "center": [
+      359.6,
+      15.2,
+      -971.43
+    ]
+  },
+  {
+    "name": "rail359.6_9.75",
+    "meshId": "smith_facade_upper_timber_00",
+    "firstVertex": 1,
+    "vertexCount": 8,
+    "firstTriangle": 1,
+    "triangleCount": 12,
+    "center": [
+      359.6,
+      9.75,
+      -971.3
+    ]
+  },
+  {
+    "name": "rail359.6_20.55",
+    "meshId": "smith_facade_upper_timber_00",
+    "firstVertex": 9,
+    "vertexCount": 8,
+    "firstTriangle": 13,
+    "triangleCount": 12,
+    "center": [
+      359.6,
+      20.55,
+      -971.3
+    ]
+  },
+  {
+    "name": "plaster380.4",
+    "meshId": "smith_facade_upper_panels_00",
+    "firstVertex": 9,
+    "vertexCount": 8,
+    "firstTriangle": 13,
+    "triangleCount": 12,
+    "center": [
+      380.4,
+      15.2,
+      -971.43
+    ]
+  },
+  {
+    "name": "rail380.4_9.75",
+    "meshId": "smith_facade_upper_timber_00",
+    "firstVertex": 17,
+    "vertexCount": 8,
+    "firstTriangle": 25,
+    "triangleCount": 12,
+    "center": [
+      380.4,
+      9.75,
+      -971.3
+    ]
+  },
+  {
+    "name": "rail380.4_20.55",
+    "meshId": "smith_facade_upper_timber_00",
+    "firstVertex": 25,
+    "vertexCount": 8,
+    "firstTriangle": 37,
+    "triangleCount": 12,
+    "center": [
+      380.4,
+      20.55,
+      -971.3
+    ]
+  },
+  {
+    "name": "upperpost351.3",
+    "meshId": "smith_facade_upper_timber_00",
+    "firstVertex": 33,
+    "vertexCount": 8,
+    "firstTriangle": 49,
+    "triangleCount": 12,
+    "center": [
+      351.3,
+      15.1,
+      -971.3
+    ]
+  },
+  {
+    "name": "upperpost367.9",
+    "meshId": "smith_facade_upper_timber_00",
+    "firstVertex": 41,
+    "vertexCount": 8,
+    "firstTriangle": 61,
+    "triangleCount": 12,
+    "center": [
+      367.9,
+      15.1,
+      -971.3
+    ]
+  },
+  {
+    "name": "upperpost372.1",
+    "meshId": "smith_facade_upper_timber_00",
+    "firstVertex": 49,
+    "vertexCount": 8,
+    "firstTriangle": 73,
+    "triangleCount": 12,
+    "center": [
+      372.1,
+      15.1,
+      -971.3
+    ]
+  },
+  {
+    "name": "upperpost388.7",
+    "meshId": "smith_facade_upper_timber_00",
+    "firstVertex": 57,
+    "vertexCount": 8,
+    "firstTriangle": 85,
+    "triangleCount": 12,
+    "center": [
+      388.7,
+      15.1,
+      -971.3
+    ]
+  },
+  {
+    "name": "diagonal351.6",
+    "meshId": "smith_facade_upper_timber_00",
+    "firstVertex": 65,
+    "vertexCount": 8,
+    "firstTriangle": 97,
+    "triangleCount": 12,
+    "center": [
+      354.0,
+      15.0,
+      -971.3
+    ]
+  },
+  {
+    "name": "diagonal383.6",
+    "meshId": "smith_facade_upper_timber_00",
+    "firstVertex": 73,
+    "vertexCount": 8,
+    "firstTriangle": 109,
+    "triangleCount": 12,
+    "center": [
+      386.0,
+      15.0,
+      -971.3
+    ]
+  },
+  {
+    "name": "darkvent360.8",
+    "meshId": "smith_facade_vents_00",
+    "firstVertex": 1,
+    "vertexCount": 8,
+    "firstTriangle": 1,
+    "triangleCount": 12,
+    "center": [
+      360.8,
+      15.1,
+      -971.27
+    ]
+  },
+  {
+    "name": "ventstile360.8-3.4",
+    "meshId": "smith_facade_vents_00",
+    "firstVertex": 9,
+    "vertexCount": 8,
+    "firstTriangle": 13,
+    "triangleCount": 12,
+    "center": [
+      357.40000000000003,
+      15.100000000000001,
+      -971.19
+    ]
+  },
+  {
+    "name": "ventstile360.80",
+    "meshId": "smith_facade_vents_00",
+    "firstVertex": 17,
+    "vertexCount": 8,
+    "firstTriangle": 25,
+    "triangleCount": 12,
+    "center": [
+      360.8,
+      15.100000000000001,
+      -971.19
+    ]
+  },
+  {
+    "name": "ventstile360.83.4",
+    "meshId": "smith_facade_vents_00",
+    "firstVertex": 25,
+    "vertexCount": 8,
+    "firstTriangle": 37,
+    "triangleCount": 12,
+    "center": [
+      364.2,
+      15.100000000000001,
+      -971.19
+    ]
+  },
+  {
+    "name": "ventframe360.812.1",
+    "meshId": "smith_facade_vents_00",
+    "firstVertex": 33,
+    "vertexCount": 8,
+    "firstTriangle": 49,
+    "triangleCount": 12,
+    "center": [
+      360.8,
+      12.1,
+      -971.19
+    ]
+  },
+  {
+    "name": "ventframe360.818.1",
+    "meshId": "smith_facade_vents_00",
+    "firstVertex": 41,
+    "vertexCount": 8,
+    "firstTriangle": 61,
+    "triangleCount": 12,
+    "center": [
+      360.8,
+      18.1,
+      -971.19
+    ]
+  },
+  {
+    "name": "louvre360.80-1.7",
+    "meshId": "smith_facade_vents_00",
+    "firstVertex": 49,
+    "vertexCount": 8,
+    "firstTriangle": 73,
+    "triangleCount": 12,
+    "center": [
+      359.1,
+      12.48,
+      -971.15
+    ]
+  },
+  {
+    "name": "louvre360.801.7",
+    "meshId": "smith_facade_vents_00",
+    "firstVertex": 57,
+    "vertexCount": 8,
+    "firstTriangle": 85,
+    "triangleCount": 12,
+    "center": [
+      362.5,
+      12.48,
+      -971.15
+    ]
+  },
+  {
+    "name": "louvre360.81-1.7",
+    "meshId": "smith_facade_vents_00",
+    "firstVertex": 65,
+    "vertexCount": 8,
+    "firstTriangle": 97,
+    "triangleCount": 12,
+    "center": [
+      359.1,
+      13.13,
+      -971.15
+    ]
+  },
+  {
+    "name": "louvre360.811.7",
+    "meshId": "smith_facade_vents_00",
+    "firstVertex": 73,
+    "vertexCount": 8,
+    "firstTriangle": 109,
+    "triangleCount": 12,
+    "center": [
+      362.5,
+      13.13,
+      -971.15
+    ]
+  },
+  {
+    "name": "louvre360.82-1.7",
+    "meshId": "smith_facade_vents_00",
+    "firstVertex": 81,
+    "vertexCount": 8,
+    "firstTriangle": 121,
+    "triangleCount": 12,
+    "center": [
+      359.1,
+      13.780000000000001,
+      -971.15
+    ]
+  },
+  {
+    "name": "louvre360.821.7",
+    "meshId": "smith_facade_vents_00",
+    "firstVertex": 89,
+    "vertexCount": 8,
+    "firstTriangle": 133,
+    "triangleCount": 12,
+    "center": [
+      362.5,
+      13.780000000000001,
+      -971.15
+    ]
+  },
+  {
+    "name": "louvre360.83-1.7",
+    "meshId": "smith_facade_vents_00",
+    "firstVertex": 97,
+    "vertexCount": 8,
+    "firstTriangle": 145,
+    "triangleCount": 12,
+    "center": [
+      359.1,
+      14.43,
+      -971.15
+    ]
+  },
+  {
+    "name": "louvre360.831.7",
+    "meshId": "smith_facade_vents_00",
+    "firstVertex": 105,
+    "vertexCount": 8,
+    "firstTriangle": 157,
+    "triangleCount": 12,
+    "center": [
+      362.5,
+      14.43,
+      -971.15
+    ]
+  },
+  {
+    "name": "louvre360.84-1.7",
+    "meshId": "smith_facade_vents_00",
+    "firstVertex": 113,
+    "vertexCount": 8,
+    "firstTriangle": 169,
+    "triangleCount": 12,
+    "center": [
+      359.1,
+      15.08,
+      -971.15
+    ]
+  },
+  {
+    "name": "louvre360.841.7",
+    "meshId": "smith_facade_vents_00",
+    "firstVertex": 121,
+    "vertexCount": 8,
+    "firstTriangle": 181,
+    "triangleCount": 12,
+    "center": [
+      362.5,
+      15.08,
+      -971.15
+    ]
+  },
+  {
+    "name": "louvre360.85-1.7",
+    "meshId": "smith_facade_vents_00",
+    "firstVertex": 129,
+    "vertexCount": 8,
+    "firstTriangle": 193,
+    "triangleCount": 12,
+    "center": [
+      359.1,
+      15.73,
+      -971.15
+    ]
+  },
+  {
+    "name": "louvre360.851.7",
+    "meshId": "smith_facade_vents_00",
+    "firstVertex": 137,
+    "vertexCount": 8,
+    "firstTriangle": 205,
+    "triangleCount": 12,
+    "center": [
+      362.5,
+      15.73,
+      -971.15
+    ]
+  },
+  {
+    "name": "louvre360.86-1.7",
+    "meshId": "smith_facade_vents_00",
+    "firstVertex": 145,
+    "vertexCount": 8,
+    "firstTriangle": 217,
+    "triangleCount": 12,
+    "center": [
+      359.1,
+      16.380000000000003,
+      -971.15
+    ]
+  },
+  {
+    "name": "louvre360.861.7",
+    "meshId": "smith_facade_vents_00",
+    "firstVertex": 153,
+    "vertexCount": 8,
+    "firstTriangle": 229,
+    "triangleCount": 12,
+    "center": [
+      362.5,
+      16.380000000000003,
+      -971.15
+    ]
+  },
+  {
+    "name": "louvre360.87-1.7",
+    "meshId": "smith_facade_vents_00",
+    "firstVertex": 161,
+    "vertexCount": 8,
+    "firstTriangle": 241,
+    "triangleCount": 12,
+    "center": [
+      359.1,
+      17.03,
+      -971.15
+    ]
+  },
+  {
+    "name": "louvre360.871.7",
+    "meshId": "smith_facade_vents_00",
+    "firstVertex": 169,
+    "vertexCount": 8,
+    "firstTriangle": 253,
+    "triangleCount": 12,
+    "center": [
+      362.5,
+      17.03,
+      -971.15
+    ]
+  },
+  {
+    "name": "louvre360.88-1.7",
+    "meshId": "smith_facade_vents_00",
+    "firstVertex": 177,
+    "vertexCount": 8,
+    "firstTriangle": 265,
+    "triangleCount": 12,
+    "center": [
+      359.1,
+      17.68,
+      -971.15
+    ]
+  },
+  {
+    "name": "louvre360.881.7",
+    "meshId": "smith_facade_vents_00",
+    "firstVertex": 185,
+    "vertexCount": 8,
+    "firstTriangle": 277,
+    "triangleCount": 12,
+    "center": [
+      362.5,
+      17.68,
+      -971.15
+    ]
+  },
+  {
+    "name": "darkvent379.2",
+    "meshId": "smith_facade_vents_00",
+    "firstVertex": 193,
+    "vertexCount": 8,
+    "firstTriangle": 289,
+    "triangleCount": 12,
+    "center": [
+      379.2,
+      15.1,
+      -971.27
+    ]
+  },
+  {
+    "name": "ventstile379.2-3.4",
+    "meshId": "smith_facade_vents_00",
+    "firstVertex": 201,
+    "vertexCount": 8,
+    "firstTriangle": 301,
+    "triangleCount": 12,
+    "center": [
+      375.8,
+      15.100000000000001,
+      -971.19
+    ]
+  },
+  {
+    "name": "ventstile379.20",
+    "meshId": "smith_facade_vents_00",
+    "firstVertex": 209,
+    "vertexCount": 8,
+    "firstTriangle": 313,
+    "triangleCount": 12,
+    "center": [
+      379.2,
+      15.100000000000001,
+      -971.19
+    ]
+  },
+  {
+    "name": "ventstile379.23.4",
+    "meshId": "smith_facade_vents_00",
+    "firstVertex": 217,
+    "vertexCount": 8,
+    "firstTriangle": 325,
+    "triangleCount": 12,
+    "center": [
+      382.59999999999997,
+      15.100000000000001,
+      -971.19
+    ]
+  },
+  {
+    "name": "ventframe379.212.1",
+    "meshId": "smith_facade_vents_00",
+    "firstVertex": 225,
+    "vertexCount": 8,
+    "firstTriangle": 337,
+    "triangleCount": 12,
+    "center": [
+      379.2,
+      12.1,
+      -971.19
+    ]
+  },
+  {
+    "name": "ventframe379.218.1",
+    "meshId": "smith_facade_vents_00",
+    "firstVertex": 233,
+    "vertexCount": 8,
+    "firstTriangle": 349,
+    "triangleCount": 12,
+    "center": [
+      379.2,
+      18.1,
+      -971.19
+    ]
+  },
+  {
+    "name": "louvre379.20-1.7",
+    "meshId": "smith_facade_vents_00",
+    "firstVertex": 241,
+    "vertexCount": 8,
+    "firstTriangle": 361,
+    "triangleCount": 12,
+    "center": [
+      377.5,
+      12.48,
+      -971.15
+    ]
+  },
+  {
+    "name": "louvre379.201.7",
+    "meshId": "smith_facade_vents_00",
+    "firstVertex": 249,
+    "vertexCount": 8,
+    "firstTriangle": 373,
+    "triangleCount": 12,
+    "center": [
+      380.9,
+      12.48,
+      -971.15
+    ]
+  },
+  {
+    "name": "louvre379.21-1.7",
+    "meshId": "smith_facade_vents_00",
+    "firstVertex": 257,
+    "vertexCount": 8,
+    "firstTriangle": 385,
+    "triangleCount": 12,
+    "center": [
+      377.5,
+      13.13,
+      -971.15
+    ]
+  },
+  {
+    "name": "louvre379.211.7",
+    "meshId": "smith_facade_vents_00",
+    "firstVertex": 265,
+    "vertexCount": 8,
+    "firstTriangle": 397,
+    "triangleCount": 12,
+    "center": [
+      380.9,
+      13.13,
+      -971.15
+    ]
+  },
+  {
+    "name": "louvre379.22-1.7",
+    "meshId": "smith_facade_vents_00",
+    "firstVertex": 273,
+    "vertexCount": 8,
+    "firstTriangle": 409,
+    "triangleCount": 12,
+    "center": [
+      377.5,
+      13.780000000000001,
+      -971.15
+    ]
+  },
+  {
+    "name": "louvre379.221.7",
+    "meshId": "smith_facade_vents_00",
+    "firstVertex": 281,
+    "vertexCount": 8,
+    "firstTriangle": 421,
+    "triangleCount": 12,
+    "center": [
+      380.9,
+      13.780000000000001,
+      -971.15
+    ]
+  },
+  {
+    "name": "louvre379.23-1.7",
+    "meshId": "smith_facade_vents_00",
+    "firstVertex": 289,
+    "vertexCount": 8,
+    "firstTriangle": 433,
+    "triangleCount": 12,
+    "center": [
+      377.5,
+      14.43,
+      -971.15
+    ]
+  },
+  {
+    "name": "louvre379.231.7",
+    "meshId": "smith_facade_vents_00",
+    "firstVertex": 297,
+    "vertexCount": 8,
+    "firstTriangle": 445,
+    "triangleCount": 12,
+    "center": [
+      380.9,
+      14.43,
+      -971.15
+    ]
+  },
+  {
+    "name": "louvre379.24-1.7",
+    "meshId": "smith_facade_vents_00",
+    "firstVertex": 305,
+    "vertexCount": 8,
+    "firstTriangle": 457,
+    "triangleCount": 12,
+    "center": [
+      377.5,
+      15.08,
+      -971.15
+    ]
+  },
+  {
+    "name": "louvre379.241.7",
+    "meshId": "smith_facade_vents_00",
+    "firstVertex": 313,
+    "vertexCount": 8,
+    "firstTriangle": 469,
+    "triangleCount": 12,
+    "center": [
+      380.9,
+      15.08,
+      -971.15
+    ]
+  },
+  {
+    "name": "louvre379.25-1.7",
+    "meshId": "smith_facade_vents_00",
+    "firstVertex": 321,
+    "vertexCount": 8,
+    "firstTriangle": 481,
+    "triangleCount": 12,
+    "center": [
+      377.5,
+      15.73,
+      -971.15
+    ]
+  },
+  {
+    "name": "louvre379.251.7",
+    "meshId": "smith_facade_vents_00",
+    "firstVertex": 329,
+    "vertexCount": 8,
+    "firstTriangle": 493,
+    "triangleCount": 12,
+    "center": [
+      380.9,
+      15.73,
+      -971.15
+    ]
+  },
+  {
+    "name": "louvre379.26-1.7",
+    "meshId": "smith_facade_vents_00",
+    "firstVertex": 337,
+    "vertexCount": 8,
+    "firstTriangle": 505,
+    "triangleCount": 12,
+    "center": [
+      377.5,
+      16.380000000000003,
+      -971.15
+    ]
+  },
+  {
+    "name": "louvre379.261.7",
+    "meshId": "smith_facade_vents_00",
+    "firstVertex": 345,
+    "vertexCount": 8,
+    "firstTriangle": 517,
+    "triangleCount": 12,
+    "center": [
+      380.9,
+      16.380000000000003,
+      -971.15
+    ]
+  },
+  {
+    "name": "louvre379.27-1.7",
+    "meshId": "smith_facade_vents_00",
+    "firstVertex": 353,
+    "vertexCount": 8,
+    "firstTriangle": 529,
+    "triangleCount": 12,
+    "center": [
+      377.5,
+      17.03,
+      -971.15
+    ]
+  },
+  {
+    "name": "louvre379.271.7",
+    "meshId": "smith_facade_vents_00",
+    "firstVertex": 361,
+    "vertexCount": 8,
+    "firstTriangle": 541,
+    "triangleCount": 12,
+    "center": [
+      380.9,
+      17.03,
+      -971.15
+    ]
+  },
+  {
+    "name": "louvre379.28-1.7",
+    "meshId": "smith_facade_vents_00",
+    "firstVertex": 369,
+    "vertexCount": 8,
+    "firstTriangle": 553,
+    "triangleCount": 12,
+    "center": [
+      377.5,
+      17.68,
+      -971.15
+    ]
+  },
+  {
+    "name": "louvre379.281.7",
+    "meshId": "smith_facade_vents_00",
+    "firstVertex": 377,
+    "vertexCount": 8,
+    "firstTriangle": 565,
+    "triangleCount": 12,
+    "center": [
+      380.9,
+      17.68,
+      -971.15
+    ]
+  },
+  {
+    "name": "jamb-1009.15_0",
+    "meshId": "smith_facade_doorstone_00",
+    "firstVertex": 1,
+    "vertexCount": 8,
+    "firstTriangle": 1,
+    "triangleCount": 12,
+    "center": [
+      390.45,
+      2.55,
+      -1009.15
+    ]
+  },
+  {
+    "name": "jamb-1009.15_1",
+    "meshId": "smith_facade_doorstone_00",
+    "firstVertex": 9,
+    "vertexCount": 8,
+    "firstTriangle": 13,
+    "triangleCount": 12,
+    "center": [
+      390.45,
+      4.05,
+      -1009.15
+    ]
+  },
+  {
+    "name": "jamb-1009.15_2",
+    "meshId": "smith_facade_doorstone_00",
+    "firstVertex": 17,
+    "vertexCount": 8,
+    "firstTriangle": 25,
+    "triangleCount": 12,
+    "center": [
+      390.45,
+      5.55,
+      -1009.15
+    ]
+  },
+  {
+    "name": "jamb-1009.15_3",
+    "meshId": "smith_facade_doorstone_00",
+    "firstVertex": 25,
+    "vertexCount": 8,
+    "firstTriangle": 37,
+    "triangleCount": 12,
+    "center": [
+      390.45,
+      7.05,
+      -1009.15
+    ]
+  },
+  {
+    "name": "jamb-1009.15_4",
+    "meshId": "smith_facade_doorstone_00",
+    "firstVertex": 33,
+    "vertexCount": 8,
+    "firstTriangle": 49,
+    "triangleCount": 12,
+    "center": [
+      390.45,
+      8.55,
+      -1009.15
+    ]
+  },
+  {
+    "name": "jamb-1009.15_5",
+    "meshId": "smith_facade_doorstone_00",
+    "firstVertex": 41,
+    "vertexCount": 8,
+    "firstTriangle": 61,
+    "triangleCount": 12,
+    "center": [
+      390.45,
+      10.05,
+      -1009.15
+    ]
+  },
+  {
+    "name": "jamb-1009.15_6",
+    "meshId": "smith_facade_doorstone_00",
+    "firstVertex": 49,
+    "vertexCount": 8,
+    "firstTriangle": 73,
+    "triangleCount": 12,
+    "center": [
+      390.45,
+      11.55,
+      -1009.15
+    ]
+  },
+  {
+    "name": "jamb-1009.15_7",
+    "meshId": "smith_facade_doorstone_00",
+    "firstVertex": 57,
+    "vertexCount": 8,
+    "firstTriangle": 85,
+    "triangleCount": 12,
+    "center": [
+      390.45,
+      13.05,
+      -1009.15
+    ]
+  },
+  {
+    "name": "jamb-1009.15_8",
+    "meshId": "smith_facade_doorstone_00",
+    "firstVertex": 65,
+    "vertexCount": 8,
+    "firstTriangle": 97,
+    "triangleCount": 12,
+    "center": [
+      390.45,
+      14.55,
+      -1009.15
+    ]
+  },
+  {
+    "name": "jamb-1009.15_9",
+    "meshId": "smith_facade_doorstone_00",
+    "firstVertex": 73,
+    "vertexCount": 8,
+    "firstTriangle": 109,
+    "triangleCount": 12,
+    "center": [
+      390.45,
+      16.05,
+      -1009.15
+    ]
+  },
+  {
+    "name": "jamb-1009.15_10",
+    "meshId": "smith_facade_doorstone_00",
+    "firstVertex": 81,
+    "vertexCount": 8,
+    "firstTriangle": 121,
+    "triangleCount": 12,
+    "center": [
+      390.45,
+      17.55,
+      -1009.15
+    ]
+  },
+  {
+    "name": "jamb-1009.15_11",
+    "meshId": "smith_facade_doorstone_00",
+    "firstVertex": 89,
+    "vertexCount": 8,
+    "firstTriangle": 133,
+    "triangleCount": 12,
+    "center": [
+      390.45,
+      19.05,
+      -1009.15
+    ]
+  },
+  {
+    "name": "jamb-990.85_0",
+    "meshId": "smith_facade_doorstone_00",
+    "firstVertex": 97,
+    "vertexCount": 8,
+    "firstTriangle": 145,
+    "triangleCount": 12,
+    "center": [
+      390.45,
+      2.55,
+      -990.85
+    ]
+  },
+  {
+    "name": "jamb-990.85_1",
+    "meshId": "smith_facade_doorstone_00",
+    "firstVertex": 105,
+    "vertexCount": 8,
+    "firstTriangle": 157,
+    "triangleCount": 12,
+    "center": [
+      390.45,
+      4.05,
+      -990.85
+    ]
+  },
+  {
+    "name": "jamb-990.85_2",
+    "meshId": "smith_facade_doorstone_00",
+    "firstVertex": 113,
+    "vertexCount": 8,
+    "firstTriangle": 169,
+    "triangleCount": 12,
+    "center": [
+      390.45,
+      5.55,
+      -990.85
+    ]
+  },
+  {
+    "name": "jamb-990.85_3",
+    "meshId": "smith_facade_doorstone_00",
+    "firstVertex": 121,
+    "vertexCount": 8,
+    "firstTriangle": 181,
+    "triangleCount": 12,
+    "center": [
+      390.45,
+      7.05,
+      -990.85
+    ]
+  },
+  {
+    "name": "jamb-990.85_4",
+    "meshId": "smith_facade_doorstone_00",
+    "firstVertex": 129,
+    "vertexCount": 8,
+    "firstTriangle": 193,
+    "triangleCount": 12,
+    "center": [
+      390.45,
+      8.55,
+      -990.85
+    ]
+  },
+  {
+    "name": "jamb-990.85_5",
+    "meshId": "smith_facade_doorstone_00",
+    "firstVertex": 137,
+    "vertexCount": 8,
+    "firstTriangle": 205,
+    "triangleCount": 12,
+    "center": [
+      390.45,
+      10.05,
+      -990.85
+    ]
+  },
+  {
+    "name": "jamb-990.85_6",
+    "meshId": "smith_facade_doorstone_00",
+    "firstVertex": 145,
+    "vertexCount": 8,
+    "firstTriangle": 217,
+    "triangleCount": 12,
+    "center": [
+      390.45,
+      11.55,
+      -990.85
+    ]
+  },
+  {
+    "name": "jamb-990.85_7",
+    "meshId": "smith_facade_doorstone_00",
+    "firstVertex": 153,
+    "vertexCount": 8,
+    "firstTriangle": 229,
+    "triangleCount": 12,
+    "center": [
+      390.45,
+      13.05,
+      -990.85
+    ]
+  },
+  {
+    "name": "jamb-990.85_8",
+    "meshId": "smith_facade_doorstone_00",
+    "firstVertex": 161,
+    "vertexCount": 8,
+    "firstTriangle": 241,
+    "triangleCount": 12,
+    "center": [
+      390.45,
+      14.55,
+      -990.85
+    ]
+  },
+  {
+    "name": "jamb-990.85_9",
+    "meshId": "smith_facade_doorstone_00",
+    "firstVertex": 169,
+    "vertexCount": 8,
+    "firstTriangle": 253,
+    "triangleCount": 12,
+    "center": [
+      390.45,
+      16.05,
+      -990.85
+    ]
+  },
+  {
+    "name": "jamb-990.85_10",
+    "meshId": "smith_facade_doorstone_00",
+    "firstVertex": 177,
+    "vertexCount": 8,
+    "firstTriangle": 265,
+    "triangleCount": 12,
+    "center": [
+      390.45,
+      17.55,
+      -990.85
+    ]
+  },
+  {
+    "name": "jamb-990.85_11",
+    "meshId": "smith_facade_doorstone_00",
+    "firstVertex": 185,
+    "vertexCount": 8,
+    "firstTriangle": 277,
+    "triangleCount": 12,
+    "center": [
+      390.45,
+      19.05,
+      -990.85
+    ]
+  },
+  {
+    "name": "door_crown",
+    "meshId": "smith_facade_doorstone_00",
+    "firstVertex": 193,
+    "vertexCount": 8,
+    "firstTriangle": 289,
+    "triangleCount": 12,
+    "center": [
+      390.45,
+      21.2,
+      -1000.0
+    ]
+  },
+  {
+    "name": "east_gable",
+    "meshId": "smith_facade_gable_00",
+    "firstVertex": 1,
+    "vertexCount": 6,
+    "firstTriangle": 1,
+    "triangleCount": 8,
+    "center": [
+      390.2,
+      23.76666666666667,
+      -1000.0
+    ]
+  },
+  {
+    "name": "gablebeam0",
+    "meshId": "smith_facade_gable_timber_00",
+    "firstVertex": 1,
+    "vertexCount": 8,
+    "firstTriangle": 1,
+    "triangleCount": 12,
+    "center": [
+      390.5,
+      25.35,
+      -1012.5
+    ]
+  },
+  {
+    "name": "gablebeam1",
+    "meshId": "smith_facade_gable_timber_00",
+    "firstVertex": 9,
+    "vertexCount": 8,
+    "firstTriangle": 13,
+    "triangleCount": 12,
+    "center": [
+      390.5,
+      25.35,
+      -987.5
+    ]
+  },
+  {
+    "name": "gablebeam2",
+    "meshId": "smith_facade_gable_timber_00",
+    "firstVertex": 17,
+    "vertexCount": 8,
+    "firstTriangle": 25,
+    "triangleCount": 12,
+    "center": [
+      390.5,
+      25.4,
+      -1000.0
+    ]
+  }
+]

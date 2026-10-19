@@ -1,0 +1,19 @@
+{
+  "status": "PASS_SOURCE_BOUND_CONDITIONAL_ON_CURRENT_ROOT_PLACEMENT",
+  "partsChecked": 32,
+  "actorBoundSHA256": "70593d9e973250ca136bd8a15c1684b10b6d191c8d61766a2436e1dabc0551ec",
+  "sourceHashes": {
+    "src/server/Services/CityCharacterKit.luau": "6ca15d0efb9f4011b4493102270091785b45c0f8d00b58b6d712dcb6dd9fa37f",
+    "src/server/Services/FriendlyCityNpcs.luau": "eb469dcd730f8b9866f5021b8efef4bdb36fe80ede4ec77a5eb1f203c27ba8fa",
+    "src/shared/Presentation/BorinPresentation.luau": "118897d279b64ab094cb3938dd3ded96a32a212417a4ddab2197bf179e9e7ad9",
+    "src/shared/Presentation/BorinWorkMotion.luau": "13038916d0680aff07c1fa4772d12ffe6eac70fcc7924899de8c2b74a92889c9"
+  },
+  "maxWorldY": 7.096163435887316,
+  "skinY": 9.5,
+  "margin": 2.4038365641126838,
+  "method": "Independent line parser and iterative parent walk check every part including duplicate ForgeTongs names; triangle inequality bounds arbitrary joint rotation.",
+  "limitations": [
+    "Root bound1 depends on current flatgrass/fallback placement; future root motion or terrain changes invalidate it.",
+    "Source-bound evidence, not a Studio actor measurement."
+  ]
+}

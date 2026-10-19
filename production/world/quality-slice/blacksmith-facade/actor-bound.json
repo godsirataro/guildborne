@@ -1,0 +1,214 @@
+{
+  "status": "CONSERVATIVE_SOURCE_BOUND_NOT_STUDIO_MEASUREMENT",
+  "method": "Ancestor segment-length sum + part/bone offset norm + half part diagonal; allows arbitrary joint rotation. Root fallbackY1 is above current grassY0.3.",
+  "parts": [
+    {
+      "name": "Waist",
+      "bone": "LowerTorso",
+      "chain": 1.677,
+      "relativeRadius": 2.8962295417820156
+    },
+    {
+      "name": "Chest",
+      "bone": "UpperTorso",
+      "chain": 2.184,
+      "relativeRadius": 3.690119197976851
+    },
+    {
+      "name": "Belt",
+      "bone": "LowerTorso",
+      "chain": 1.677,
+      "relativeRadius": 2.881241308096566
+    },
+    {
+      "name": "Head",
+      "bone": "Head",
+      "chain": 2.925,
+      "relativeRadius": 4.474677604464472
+    },
+    {
+      "name": "LeftEye",
+      "bone": "Head",
+      "chain": 2.925,
+      "relativeRadius": 3.917440841678272
+    },
+    {
+      "name": "LeftUpperArm",
+      "bone": "LeftUpperArm",
+      "chain": 3.5892366348768454,
+      "relativeRadius": 4.48565488306793
+    },
+    {
+      "name": "LeftLowerArm",
+      "bone": "LeftLowerArm",
+      "chain": 4.224295687249143,
+      "relativeRadius": 4.959880775286472
+    },
+    {
+      "name": "LeftHand",
+      "bone": "LeftHand",
+      "chain": 4.732530042640432,
+      "relativeRadius": 5.318831070899079
+    },
+    {
+      "name": "LeftUpperLeg",
+      "bone": "LeftUpperLeg",
+      "chain": 2.2434000000000003,
+      "relativeRadius": 3.227978292499017
+    },
+    {
+      "name": "LeftLowerLeg",
+      "bone": "LeftLowerLeg",
+      "chain": 3.0234000000000005,
+      "relativeRadius": 3.9076513521172327
+    },
+    {
+      "name": "LeftBoot",
+      "bone": "LeftFoot",
+      "chain": 3.6474000000000006,
+      "relativeRadius": 4.58040167392449
+    },
+    {
+      "name": "RightEye",
+      "bone": "Head",
+      "chain": 2.925,
+      "relativeRadius": 3.917440841678272
+    },
+    {
+      "name": "RightUpperArm",
+      "bone": "RightUpperArm",
+      "chain": 3.5892366348768454,
+      "relativeRadius": 4.48565488306793
+    },
+    {
+      "name": "RightLowerArm",
+      "bone": "RightLowerArm",
+      "chain": 4.224295687249143,
+      "relativeRadius": 4.959880775286472
+    },
+    {
+      "name": "RightHand",
+      "bone": "RightHand",
+      "chain": 4.732530042640432,
+      "relativeRadius": 5.318831070899079
+    },
+    {
+      "name": "RightUpperLeg",
+      "bone": "RightUpperLeg",
+      "chain": 2.2434000000000003,
+      "relativeRadius": 3.227978292499017
+    },
+    {
+      "name": "RightLowerLeg",
+      "bone": "RightLowerLeg",
+      "chain": 3.0234000000000005,
+      "relativeRadius": 3.9076513521172327
+    },
+    {
+      "name": "RightBoot",
+      "bone": "RightFoot",
+      "chain": 3.6474000000000006,
+      "relativeRadius": 4.58040167392449
+    },
+    {
+      "name": "HairCap",
+      "bone": "Head",
+      "chain": 2.925,
+      "relativeRadius": 4.956200615085561
+    },
+    {
+      "name": "LeftBrow",
+      "bone": "Head",
+      "chain": 2.925,
+      "relativeRadius": 4.088688462768449
+    },
+    {
+      "name": "LeftEar",
+      "bone": "Head",
+      "chain": 2.925,
+      "relativeRadius": 4.115784617547352
+    },
+    {
+      "name": "RightBrow",
+      "bone": "Head",
+      "chain": 2.925,
+      "relativeRadius": 4.088688462768449
+    },
+    {
+      "name": "RightEar",
+      "bone": "Head",
+      "chain": 2.925,
+      "relativeRadius": 4.115784617547352
+    },
+    {
+      "name": "Mouth",
+      "bone": "Head",
+      "chain": 2.925,
+      "relativeRadius": 3.7930817285274414
+    },
+    {
+      "name": "Beard",
+      "bone": "Head",
+      "chain": 2.925,
+      "relativeRadius": 4.374654975574912
+    },
+    {
+      "name": "BeardTip",
+      "bone": "Head",
+      "chain": 2.925,
+      "relativeRadius": 4.085949380291353
+    },
+    {
+      "name": "HeatApron",
+      "bone": "UpperTorso",
+      "chain": 2.184,
+      "relativeRadius": 4.105401544260905
+    },
+    {
+      "name": "ApronPocket",
+      "bone": "UpperTorso",
+      "chain": 2.184,
+      "relativeRadius": 3.637682546602838
+    },
+    {
+      "name": "HammerHandle",
+      "bone": "RightHand",
+      "chain": 4.732530042640432,
+      "relativeRadius": 5.851942642914701
+    },
+    {
+      "name": "HammerHead",
+      "bone": "RightHand",
+      "chain": 4.732530042640432,
+      "relativeRadius": 6.096163435887317
+    },
+    {
+      "name": "ForgeTongs",
+      "bone": "LeftHand",
+      "chain": 4.732530042640432,
+      "relativeRadius": 5.808341817053232
+    },
+    {
+      "name": "ForgeTongs",
+      "bone": "LeftHand",
+      "chain": 4.732530042640432,
+      "relativeRadius": 5.815670926771182
+    }
+  ],
+  "rootMaximumY": 1,
+  "actorMaximumWorldY": 7.096163435887317,
+  "workstationMaximumWorldY": 3.524,
+  "skinMinimumY": 9.5,
+  "margin": 2.403836564112683,
+  "sourceHashes": {
+    "src/server/Services/CityCharacterKit.luau": "6ca15d0efb9f4011b4493102270091785b45c0f8d00b58b6d712dcb6dd9fa37f",
+    "src/server/Services/FriendlyCityNpcs.luau": "eb469dcd730f8b9866f5021b8efef4bdb36fe80ede4ec77a5eb1f203c27ba8fa",
+    "src/shared/Presentation/BorinPresentation.luau": "118897d279b64ab094cb3938dd3ded96a32a212417a4ddab2197bf179e9e7ad9",
+    "src/shared/Presentation/BorinWorkMotion.luau": "13038916d0680aff07c1fa4772d12ffe6eac70fcc7924899de8c2b74a92889c9"
+  },
+  "limitations": [
+    "Current native Borin only; future rig or root-motion changes invalidate this bound.",
+    "Workstation maximum uses root-welded contactY: STRIKE_HAND.Y + HammerHead bottom minus bind RightHand boneY.",
+    "No change to old broad XZ validator: this wave has separately approved 3D wall-skin/footing exceptions."
+  ]
+}
