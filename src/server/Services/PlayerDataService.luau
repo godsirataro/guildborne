@@ -72,6 +72,7 @@ return function(deps: any)
 		local reason = "StorageUnavailable"
 		local success, record = attempt(deps.Store, "p:" .. tostring(userId), function(current: any)
 			reason = "StorageUnavailable"
+			if pending.class3Fence and not pending.class3Fence() then reason="SessionChanged";return nil end
 			if not owned(current, session) then reason = "LeaseLost"; return nil end
 			local now = deps.Now()
 			if current.session.leaseExpiresAt <= now then reason = "LeaseLost"; return nil end
@@ -86,7 +87,10 @@ return function(deps: any)
 					return current
 				end
 			end
-			if current.revision ~= pending.command.revision then reason = "RevisionConflict"; return nil end
+			if current.revision ~= pending.command.revision then
+				if pending.class3Fence then reason="ReceiptHistoryUnavailable";return current end
+				reason = "RevisionConflict"; return nil
+			end
 			if #current.audit.outbox + #pending.events > deps.Content.Limits.Audit then reason = "AuditBacklog"; return nil end
 			local nextRecord = util.copy(current)
 			nextRecord.data = util.copy(pending.candidate.data)
@@ -112,8 +116,13 @@ return function(deps: any)
 			local valid
 			valid, reason = deps.Schema.validate(nextRecord, userId)
 			if not valid then return nil end
+			if pending.class3Fence and not pending.class3Fence() then reason="SessionChanged";return nil end
 			return nextRecord
 		end, userId)
+		if pending.class3Fence and not pending.class3Fence() then session.pending=nil;return "SessionChanged",nil end
+		if success and record and reason=="ReceiptHistoryUnavailable" then
+			adopt(session,record);session.pending=nil;return reason,nil
+		end
 		if not success then
 			session.state = "Degraded"; session.problem = "SavePending"
 			pcall(deps.Log, "profile_save_failed", { action = pending.command.action, reason = "SavePending" })
@@ -158,13 +167,16 @@ return function(deps: any)
 			end
 		end
 		if command.revision ~= session.record.revision then return "StaleRevision", nil end
+		local epoch,token=session.epoch,session.token
+		local function class3Fence():boolean return Service.Sessions[userId]==session and session.epoch==epoch and session.token==token and session.state~="LeaseLost" end
 		local now = deps.Now()
 		local candidate, result, events
 		if serverApply then candidate, result, events = serverApply(session.record)
 		else candidate, result, events = deps.Commands.apply(session.record, command, now) end
+		if command.action=="Class3Proof" and not class3Fence() then return "SessionChanged",nil end
 		if not candidate then return result.code, nil end
 		if #session.record.audit.outbox + #events > deps.Content.Limits.Audit then return "AuditBacklog", nil end
-		session.pending = { id = operationId, command = util.copy(command), candidate = candidate, result = result, events = events, now = now }
+		session.pending = { id = operationId, command = util.copy(command), candidate = candidate, result = result, events = events, now = now, class3Fence=if command.action=="Class3Proof" then class3Fence else nil }
 		session.busy = true; session.state = "Saving"
 		local status, outcome = commit(userId, session)
 		session.busy = false
@@ -190,6 +202,25 @@ return function(deps: any)
 	function Service.CommitHeroMentor(userId:number,command:any):(string,any)
 		if not deps.HeroMentor or type(command)~="table" or command.action~="HeroMentorProof" or type(command.requestId)~="string" or #command.requestId>64 or type(command.args)~="table" then return "InvalidAction",nil end
 		return execute(userId,command,function(record:any)return deps.HeroMentor.commit(record,command)end)
+	end
+	-- Private exact envelope; public Protocol never admits proof receipts.
+	function Service.CommitClass3Proof(userId:number,command:any):(string,any)
+		if not deps.Class3Proof or type(command)~="table" or command.action~="Class3Proof" then return "InvalidAction",nil end
+		for key in pairs(command)do
+			if key~="version" and key~="owner" and key~="requestId" and key~="action" and key~="revision" and key~="args" then return "InvalidReceipt",nil end
+		end
+		local a=command.args
+		if command.version~=1 or not util.integer(userId,1,9007199254740991) or command.owner~=userId
+			or not util.integer(command.revision,0,1000000000) or type(a)~="table" then return "InvalidReceipt",nil end
+		for key in pairs(a)do
+			if key~="actorId" and key~="pathId" and key~="trialId" and key~="sourceKind" and key~="expectedActor" and key~="expectedBuild" and key~="storyObjective" then return "InvalidReceipt",nil end
+		end
+		if type(a.trialId)~="string" or #a.trialId<1 or #a.trialId>48 or not a.trialId:match("^[%w_:%-]+$")
+			or command.requestId~="class3:"..a.trialId or type(a.actorId)~="string" or #a.actorId<1 or #a.actorId>64
+			or type(a.pathId)~="string" or #a.pathId<1 or #a.pathId>48 or type(a.expectedActor)~="table" or type(a.expectedBuild)~="table"
+			or not ((a.sourceKind=="actor_mastery" and a.storyObjective==nil) or (a.sourceKind=="crosshaven_mastery" and a.actorId=="player" and a.storyObjective=="complete_borrowed_mastery")) then return "InvalidReceipt",nil end
+		local fixed=util.copy(command)
+		return execute(userId,fixed,function(record:any)return deps.Class3Proof.apply(record,fixed)end)
 	end
 	function Service.CommitCampaign(userId:number,command:any):(string,any)
 		if not deps.Campaign or type(command)~="table"or command.action~="CampaignObjective"then return "InvalidAction",nil end
@@ -250,7 +281,8 @@ return function(deps: any)
 		if session.pending then
 			local code = commit(userId, session)
 			session.busy = false
-			return code
+			-- Retired Class3 uncertainty refreshed the authoritative record without a write.
+			return if code=="ReceiptHistoryUnavailable" then "OK" else code
 		end
 		local reason = "StorageUnavailable"
 		local success, record = attempt(deps.Store, "p:" .. tostring(userId), function(current: any)

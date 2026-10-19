@@ -7,6 +7,7 @@ local schemas: { [string]: { [string]: string } } = {
 	HumanPartyKick={targetUserId="id",partyRevision="revision"},HumanPartyTransferLeader={targetUserId="id",partyRevision="revision"},
 	HumanPartySetReady={ready="boolean",partyRevision="revision"},
 	StartHeroMentor={actorId="id",pathId="id"},CancelHeroMentor={},
+	StartClass3Trial={actorId="id",pathId="id"},CancelClass3Trial={},
 	ClaimDailyReward={},ClaimSeasonReward={seasonId="id",tier="integer",track="id"},
 	RequestPermanentPass={kind="id",key="id"},
 	ClaimNoviceChapter={chapterId="id"},FoundNoviceGuild={heroClass="id"},

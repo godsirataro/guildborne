@@ -18,6 +18,13 @@ local ashenEnabled=ironveilEnabled and Runtime.AshenJourney==true and not launch
 local towerEnabled=ashenEnabled and Runtime.TowerJourney==true
 local crosshavenEnabled=towerEnabled and Runtime.CrosshavenJourney==true
 local archiveHeartEnabled=crosshavenEnabled and Runtime.ArchiveHeartJourney==true
+-- BEGIN Class3 candidate gate (default absent/off; local Memory acceptance only).
+local function class3Candidate(runtime:any,context:any,fullRoute:boolean,launch:boolean):boolean
+ return runtime.Class3ProofCandidate==true and fullRoute and not launch and context.isStudio==true
+  and context.placeId==0 and context.gameId==0 and runtime.StudioPersistence=="Memory"
+end
+-- END Class3 candidate gate.
+local class3Enabled=class3Candidate(Runtime,{isStudio=RunService:IsStudio(),placeId=game.PlaceId,gameId=game.GameId},crosshavenEnabled,launchEnabled)
 Content.RegionalCombatAvailable=RunService:IsStudio() and game.PlaceId==0 and game.GameId==0 and Runtime.StudioPersistence=="Memory"
 Content.StatusAllocationAvailable=Content.RegionalCombatAvailable
 Content.RecruitmentTemplatesAvailable=Content.RegionalCombatAvailable
@@ -94,8 +101,17 @@ require(script.Parent.Systems.CombatValidator)(Content,CombatConfig,require(scri
 Util.freeze(CombatConfig)
 local CombatRewards=require(script.Parent.Systems.CombatRewards)(Content,CombatConfig,Util,Economy,require(script.Parent.Config.AdventureRewards))
 local Progression = require(script.Parent.Systems.Progression)(Content, Gear)
-local HeroMentor=if launchEnabled then require(script.Parent.Systems.HeroMentorTrial)(Expansion,Util) else nil
-local ExpansionService=require(script.Parent.Services.ExpansionService)(Content,Util,Economy,Expansion,LandPlacement,BuildingThemes,HeroMentor)
+local Class3Proof=if class3Enabled then require(script.Parent.Systems.Class3Proof)(Expansion,Util,Campaign) else nil
+local HeroTrials=if launchEnabled or class3Enabled then require(script.Parent.Systems.HeroMentorTrial)(Expansion,Util,Class3Proof) else nil
+local HeroMentor=if launchEnabled then HeroTrials else nil
+local ExpansionService=require(script.Parent.Services.ExpansionService)(Content,Util,Economy,Expansion,LandPlacement,BuildingThemes,HeroMentor,Class3Proof)
+local function class3PlayerProblem(data:any,_pathId:string):string?
+ if data.character.level<70 or data.personalGuild.buildings.guildHall<11 then return "ClassTrialLocked"end
+ if data.quests.active or data.expansion.tower.active then return "FinishExpedition"end
+ local c=data.progression.campaign
+ if not c or c.claimed<24 or (c.claimed==24 and not c.objectives.complete_borrowed_mastery and not c.objectives.meet_crosshaven_mentor) then return "WrongObjective"end
+ return nil
+end
 local Commands = require(script.Parent.Systems.Commands)({ Release=Release,LaunchRewards=if launchEnabled then LaunchRewards else nil,Appearance=Appearance,Content=Content,Campaign=Campaign,NoviceStory=NoviceStory, Status=require(script.Parent.Services.StatusPointService)(Content,StatusPoints,Expansion), GuildLand=require(script.Parent.Services.GuildLandService)(GuildLand), Dispatch=require(script.Parent.Services.DispatchService)(Content,Economy,Util), Settlement=require(script.Parent.Services.SettlementService)(Content,Economy,Util), Expansion=ExpansionService, Protocol = Protocol, Util = Util, Progression = Progression,
 	Equipment = require(script.Parent.Services.EquipmentService)(Content, Economy, Gear),
 	Character = require(script.Parent.Systems.PlayerCharacter)(Content),
@@ -130,7 +146,7 @@ else
 	end
 end
 local sharedClaims=if sharedLabEnabled then require(script.Parent.Systems.SharedPvEClaims).new(Content,Util,Economy)else nil
-local Data = require(script.Parent.Services.PlayerDataService)({ SharedPvEClaims=sharedClaims,HeroMentor=HeroMentor,PermanentEntitlements=PermanentEntitlements,Campaign=Campaign,NoviceStory=NoviceStory,MarketEscrow=MarketEscrow, Util = Util, Content = Content, Config = Runtime, CombatRewards = CombatRewards, Expansion=ExpansionService,
+local Data = require(script.Parent.Services.PlayerDataService)({ Class3Proof=Class3Proof,SharedPvEClaims=sharedClaims,HeroMentor=HeroMentor,PermanentEntitlements=PermanentEntitlements,Campaign=Campaign,NoviceStory=NoviceStory,MarketEscrow=MarketEscrow, Util = Util, Content = Content, Config = Runtime, CombatRewards = CombatRewards, Expansion=ExpansionService,
 	Schema = Schema, Protocol = Protocol, Commands = Commands, Store = store, AuditStore = auditStore,
 	Now = os.time, Wait = task.wait, Jitter = function() return math.random() * 0.15 end, Log = log,
 	OnCommitted = function(userId: number, events: any)
@@ -140,7 +156,7 @@ local Data = require(script.Parent.Services.PlayerDataService)({ SharedPvEClaims
 local bestiary=require(script.Parent.Systems.EnemyProfiles)(CombatConfig).catalog(Content)
 bestiary.Regions=require(script.Parent.Systems.AdventureFieldGuide)(require(script.Parent.Config.AdventureEncounters),require(script.Parent.Config.AdventureEnemyProfiles),require(script.Parent.Config.AdventureRewards),require(script.Parent.Systems.AdventureStats),require(Shared.Config.City).RegionOrder)
 bestiary.RegionalCombatAvailable=RunService:IsStudio() and game.PlaceId==0 and game.GameId==0 and Runtime.StudioPersistence=="Memory"
-local Project = require(script.Parent.Systems.ViewProjection)(Content, Progression, Util, Expansion, bestiary,{rules=GuildLand,catalog=require(script.Parent.Config.GuildLand)},if noviceEnabled then NoviceChapter else nil,if noviceEnabled then CampaignChapter else nil,{Enabled=Runtime.PermanentPassesEnabled,Catalog=PermanentPassCatalog,Offers=PermanentPassOffers},{Service=Appearance,Policy=AppearancePolicy},{Release=Release,Mentor=HeroMentor,Rewards=if launchEnabled then LaunchRewards else nil})
+local Project = require(script.Parent.Systems.ViewProjection)(Content, Progression, Util, Expansion, bestiary,{rules=GuildLand,catalog=require(script.Parent.Config.GuildLand)},if noviceEnabled then NoviceChapter else nil,if noviceEnabled then CampaignChapter else nil,{Enabled=Runtime.PermanentPassesEnabled,Catalog=PermanentPassCatalog,Offers=PermanentPassOffers},{Service=Appearance,Policy=AppearancePolicy},{Release=Release,Mentor=HeroMentor,Rewards=if launchEnabled then LaunchRewards else nil},if Class3Proof then {Proof=Class3Proof,Trial=HeroTrials,PlayerProblem=class3PlayerProblem} else nil)
 local Network: any
 local PermanentPassRuntime:any
 local campaignWorld:any
@@ -314,6 +330,29 @@ local function load(player: Player): string
 	if code=="OK" and player.Parent==Players then HumanParty.Add(player) end
 	return code
 end
+-- BEGIN Class3 routing helpers. Error mapping is one-to-one except named lifecycle aliases.
+local function class3Code(code:string?):string?
+ if not code or code=="OK" then return code end
+ local aliases={HeroMentorStarted="Class3Started",HeroMentorSaving="Class3SavePending",HeroMentorComplete="Class3Complete",HeroMentorCancelled="Class3Cancelled",HeroMentorFailed="Class3Failed",HeroChanged="Class3ActorChanged",HeroMentorUnavailable="Class3TrialUnavailable",ClassTrialLocked="Class3LevelLocked",HeroMentorActive="Class3Busy"}
+ if aliases[code] then return aliases[code]end
+ if code:sub(1,6)=="Class3" or code=="ReturnToCrosshaven" then return code end
+ return "Class3"..code
+end
+-- END Class3 routing helpers.
+local mentorWorld:any=nil
+local function class3Notify(player:Player,code:string?)Network.Send(player,class3Code(code))end
+local function makeClass3Receipt(userId:number,receipt:any,fence:any,guard:any):any
+ return require(script.Parent.Services.Class3ProofReceiptAdapter)(Data,userId,receipt,Util,fence,guard)
+end
+local function trialAdmission(player:Player,hero:boolean):string?
+ if hero and crosshavenWorld and crosshavenWorld.Active(player) then return "HeroMentorActive"end
+ if not hero and mentorWorld and mentorWorld.Active(player) then return "HeroMentorActive"end
+ local context=World.CampaignContext(player)
+ if context and context.model:GetAttribute("InCombat") then return "FinishExpedition"end
+ local reward=World.SharedRewardState()
+ if reward and (reward.status=="PendingPreparation" or reward.status=="PendingDelivery")then return "SavePending"end
+ return nil
+end
 Network = require(script.Parent.Services.NetworkService)({ HumanParty=HumanParty,Content=Content, Data = Data, Protocol = Protocol, Project = Project,
 	Mode = mode, World = World, Load = load, Log = log,PermanentPassRequest=function(player:Player,packet:any):string
 		return if PermanentPassRuntime then PermanentPassRuntime.Request(player,packet) else "PurchaseUnavailable"
@@ -337,8 +376,10 @@ if noviceEnabled then
   MakeReceipt=function(userId:number,receipt:any)return require(script.Parent.Services.NoviceReceiptAdapter)(Data,userId,receipt,Util,NoviceChapter,Content,CampaignChapter)end,
   Notify=function(player:Player)Network.Send(player)end})end
  if crosshavenEnabled then crosshavenWorld=require(script.Parent.Services.CrosshavenWorld)({Data=Data,Config=CampaignChapter,World=World,
+  Class3Proof=Class3Proof,MakeClass3Receipt=if Class3Proof then makeClass3Receipt else nil,Class3Notify=class3Notify,
+  AdmissionProblem=if Class3Proof then function(player:Player)return trialAdmission(player,false)end else nil,
   MakeReceipt=function(userId:number,receipt:any)return require(script.Parent.Services.NoviceReceiptAdapter)(Data,userId,receipt,Util,NoviceChapter,Content,CampaignChapter)end,
-  Notify=function(player:Player)Network.Send(player)end})end
+  Notify=function(player:Player,code:string?)Network.Send(player,code)end})end
  if archiveHeartEnabled then archiveHeartWorld=require(script.Parent.Services.ArchiveHeartWorld)({Data=Data,Config=CampaignChapter,World=World,
   MakeReceipt=function(userId:number,receipt:any)return require(script.Parent.Services.NoviceReceiptAdapter)(Data,userId,receipt,Util,NoviceChapter,Content,CampaignChapter)end,
   Notify=function(player:Player)Network.Send(player)end})end
@@ -352,19 +393,42 @@ if noviceEnabled then
  end
 end
 
-if HeroMentor then
- local mentorWorld=require(script.Parent.Services.HeroMentorWorld)({Data=Data,World=World,Trial=HeroMentor,
+if HeroTrials then
+ mentorWorld=require(script.Parent.Services.HeroMentorWorld)({Data=Data,World=World,Trial=HeroTrials,
+  Class3Proof=Class3Proof,MakeClass3Receipt=if Class3Proof then makeClass3Receipt else nil,Class3Notify=class3Notify,
+  AdmissionProblem=if Class3Proof then function(player:Player)return trialAdmission(player,true)end else nil,
   Notify=function(player:Player,code:string?)Network.Send(player,code)end,
   MakeReceipt=function(userId:number,receipt:any,epoch:any,token:any)return require(script.Parent.Services.HeroMentorReceiptAdapter)(Data,userId,receipt,Util,epoch,token)end})
- sharedMentorActive=mentorWorld.Active
- World.HeroMentorIntent=mentorWorld.Intent
- World.HeroMentorState=mentorWorld.State
+ sharedMentorActive=function(player:Player):boolean return mentorWorld.Active(player) or (class3Enabled and crosshavenWorld~=nil and crosshavenWorld.Active(player))end
+ World.HeroMentorIntent=if launchEnabled then mentorWorld.Intent else nil
+ World.HeroMentorState=if launchEnabled then mentorWorld.State else nil
  local validate,remove=World.ValidateIntent,World.Remove
  World.ValidateIntent=function(player:Player,action:string,args:any):string?
-  if mentorWorld.Active(player) and not ({GetState=true,RetrySave=true,CancelHeroMentor=true})[action]then return "HeroMentorActive"end
+  local proofState=if class3Enabled then (mentorWorld.Class3State(player) or (crosshavenWorld and crosshavenWorld.Class3State(player))) else nil
+  if proofState and not ({GetState=true,RetrySave=true,CancelClass3Trial=true})[action] then return "Class3Busy"end
+  if class3Enabled and crosshavenWorld and crosshavenWorld.Active(player) and not ({GetState=true,RetrySave=true})[action] and not proofState then return "Class3Busy"end
+  if mentorWorld.Active(player) and not proofState and not ({GetState=true,RetrySave=true,CancelHeroMentor=true})[action]then return "HeroMentorActive"end
   return validate(player,action,args)
  end
  World.Remove=function(player:Player)mentorWorld.Remove(player);remove(player)end
+end
+World.Class3Code=class3Code
+if class3Enabled then
+ World.Class3State=function(player:Player):any? return mentorWorld.Class3State(player) or (crosshavenWorld and crosshavenWorld.Class3State(player))end
+ World.Class3Intent=function(player:Player,action:string,args:any):string
+  if action=="CancelClass3Trial"then
+   if mentorWorld.Class3State(player) then return mentorWorld.Intent(player,action,args)end
+   if crosshavenWorld and crosshavenWorld.Class3State(player) then return crosshavenWorld.Intent(player,action,args)end
+   return "InvalidAction"
+  end
+  if action~="StartClass3Trial"then return "InvalidAction"end
+  local s=Data.Sessions[player.UserId]
+  if not s or s.state~="Active" or s.busy or s.closing then return "ProfileNotReady"end
+  local problem=Release.problem(s.record.data,"AdvanceClass",args);if problem then return problem end
+  if not Expansion.usesNoviceProgression(s.record.data)then return "Class3TrialUnavailable"end
+  if args.actorId=="player"then return if crosshavenWorld then crosshavenWorld.Intent(player,action,args) else "Class3TrialUnavailable"end
+  return mentorWorld.Intent(player,action,args)
+ end
 end
 
 require(script.Parent.Services.PurchaseService)(Content,Data,Network)

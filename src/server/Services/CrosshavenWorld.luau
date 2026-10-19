@@ -12,11 +12,16 @@ return function(deps:any)
  assert(not deps.Class3Proof or deps.MakeClass3Receipt,"Class3 receipt adapter required")
  local clock=deps.Now or os.clock;local heartbeatSource=deps.Heartbeat or Run.Heartbeat
  local S={};local entries:{[Player]:any}={};local occupied={}
+ local function notify(player:Player,isProof:boolean,code:string?)
+  if player.Parent~=Players then return end
+  if isProof then if deps.Class3Notify then deps.Class3Notify(player,code)end else deps.Notify(player,code)end
+ end
  local function session(player:Player):any?
   local s=deps.Data.Sessions[player.UserId];local d=s and s.record and s.record.data
   if not s or s.closing or not d or not d.progression.campaign then return nil end
   local claimed=d.progression.campaign.claimed
-  local repeatAccess=deps.Class3Proof and claimed>=30 and require(Shared.Data.Expansion).build(d,"player").tier==2
+  local expansion=require(Shared.Data.Expansion)
+  local repeatAccess=deps.Class3Proof and expansion.usesNoviceProgression(d) and claimed>=30 and expansion.build(d,"player").tier==2
   return if claimed>=24 and (claimed<30 or repeatAccess) and d.personalGuild.buildings.guildHall>=11 then s else nil
  end
  local function nextId(data:any):string?
@@ -42,6 +47,7 @@ return function(deps:any)
   e.pendingObjective=id
  end
  local function stopActivity(e:any)
+  e.trialProof=nil;e.deliveryProblem=nil
   if e.trialToken then e.trialToken=nil;e.pending=nil;e.pendingObjective=nil end
   if e.escort then e.escort.Destroy();e.escort=nil end
   if e.lesson then e.lesson.Destroy();e.lesson=nil end
@@ -131,6 +137,7 @@ return function(deps:any)
   objective("rift_refuge","mentor","meet_crosshaven_mentor",nil,{"Sela · prepare for the rift","Sela · เตรียมตัวเข้ารอยแยก"})
   local function startMastery(data:any,selectedPath:string?):string
    if e.trial or e.pending then return "HeroMentorActive" end
+   if deps.AdmissionProblem then local problem=deps.AdmissionProblem(player);if problem then return problem end end
    local live=current(player,e);local character=player.Character;local r=root(player)
    if not live or not character or not r then return "ActorNotReady" end
    if (r.Position-at("rift_refuge","mastery_trial")).Magnitude>9 then return "ReturnToCrosshaven" end
@@ -167,6 +174,8 @@ return function(deps:any)
    local trialId=Http:GenerateGUID(false)
    local admitted,reason=options.Create(data,player.UserId,data.character.classId,trialId,os.clock())
    if not admitted then e.trialToken=nil;return reason end
+   -- Same eligibility latch as BorrowedPathSession: legacy/ineligible first-story stays story-only.
+   e.trialProof=deps.Class3Proof~=nil and expansion.usesNoviceProgression(data) and deps.Class3Proof.problem(data,"player",pathId)==nil
    e.trialGuard=guard;e.trialPath=pathId;e.trialCharacter=character
    e.trial=require(script.Parent.NoviceTrialArena)(player,data,data.character.classId,trialId,art.origin+V(0,32,0),function(receipt:any)
     if not guard()then return false end
@@ -175,16 +184,19 @@ return function(deps:any)
     if receipt.action=="Class3Proof"then
      e.pending=deps.MakeClass3Receipt(player.UserId,receipt,fence,guard);e.pendingObjective="complete_borrowed_mastery"
     else observe(player,e,"complete_borrowed_mastery",nil,receipt) end
+    if e.pending and e.trialProof then notify(player,true,"Class3Saving")end
     return false
-   end,function()if entries[player]==e and e.trialToken==trialToken then stopActivity(e)end end,options)
+   end,function()if entries[player]==e and e.trialToken==trialToken then local proof=e.trialProof==true;stopActivity(e);if proof then notify(player,true,"Class3Cancelled")end end end,options)
+   if e.trialProof then notify(player,true,"Class3Active")end
    return "OK"
   end
   e.startMastery=startMastery
   objective("rift_refuge","mastery_trial","complete_borrowed_mastery",function(data:any)local code=startMastery(data);if code~="OK"then deps.Notify(player,code)end end)
   if deps.Class3Proof then
-   marker("RepeatMastery",nil,at("rift_refuge","mastery_trial"),{"Sela · repeat mastery training","Sela · ฝึกความชำนาญอีกครั้ง"},function(data:any)local code=startMastery(data);if code~="OK"then deps.Notify(player,code)end end,function(data:any)
+   marker("RepeatMastery",nil,at("rift_refuge","mastery_trial"),{"Sela · repeat mastery training","Sela · ฝึกความชำนาญอีกครั้ง"},function(data:any)local code=startMastery(data);if code~="OK"then notify(player,true,code)end end,function(data:any)
     local campaign=data.progression.campaign
-    return require(Shared.Data.Expansion).build(data,"player").tier==2 and (campaign.claimed>24 or campaign.objectives.complete_borrowed_mastery==true)
+    local expansion=require(Shared.Data.Expansion)
+    return expansion.usesNoviceProgression(data) and expansion.build(data,"player").tier==2 and (campaign.claimed>24 or campaign.objectives.complete_borrowed_mastery==true)
    end)
   end
   local function route(scene:string,points:{string}):{Vector3}
@@ -248,18 +260,32 @@ return function(deps:any)
   for player,e in pairs(entries)do
    local s=session(player)
    if not s or s~=e.session or s.epoch~=e.epoch or s.token~=e.token or player.Parent~=Players then S.Remove(player);continue end
-   if e.trial and e.trialGuard and not e.trialGuard()then stopActivity(e);e.pending=nil;e.trialGuard=nil;continue end
-   if e.pending and clock()>=(e.deliveryAt or 0)then
-    e.deliveryAt=clock()+.5;local delivery=e.pending;local outcome,problem=delivery()
+   if e.trial and e.trialGuard and not e.trialGuard()then local proof=e.trialProof==true;stopActivity(e);e.pending=nil;e.trialGuard=nil;if proof then notify(player,true,"ActorNotReady")end;continue end
+   if e.trial and e.trialProof and not e.pending then
+    local state=e.trial.Snapshot()
+    if state.status=="Failed" or state.status=="Cancelled"then
+     local problem=state.problem or (if state.status=="Failed"then "Class3Failed"else "Class3Cancelled")
+     stopActivity(e);notify(player,true,problem);continue
+    end
+   end
+   if e.pending and not e.deliveryBusy and clock()>=(e.deliveryAt or 0)then
+    e.deliveryAt=clock()+.5;local delivery=e.pending;e.deliveryBusy=true
+    local ok,outcome,problem=pcall(delivery);e.deliveryBusy=false
     if entries[player]~=e or e.pending~=delivery then continue end
     local live=deps.Data.Sessions[player.UserId]
     if live~=e.session or live.epoch~=e.epoch or live.token~=e.token then S.Remove(player);continue end
-    if e.trial and e.trialGuard and not e.trialGuard()then stopActivity(e);continue end
+    if e.trial and e.trialCharacter~=player.Character then stopActivity(e);continue end
+    if e.trial and e.trialGuard and not e.trialGuard()then local proof=e.trialProof==true;stopActivity(e);if proof then notify(player,true,"ActorNotReady")end;continue end
+    if not ok then outcome="Retry";problem="CommitUnavailable"end
     e.art.model:SetAttribute("DeliveryProblem",problem)
     if outcome=="Committed"then
+     local proof=e.trialProof==true
      if e.pendingObjective=="complete_borrowed_mastery"then e.trialDelivery="Committed";if e.trial then e.trial.Destroy();e.trial=nil end;e.trialToken=nil end
-     e.pending=nil;deps.Notify(player);deps.Data.FlushAudit(player.UserId)
-    elseif outcome=="Rejected"then e.puzzles[e.pendingObjective]=nil;e.sets[e.pendingObjective]=nil;stopActivity(e);e.pending=nil end
+     e.pending=nil;e.trialProof=nil;e.deliveryProblem=nil;notify(player,proof,if proof then "Class3Complete"else nil);deps.Data.FlushAudit(player.UserId)
+    elseif outcome=="Rejected"then
+     local proof=e.trialProof==true;e.puzzles[e.pendingObjective]=nil;e.sets[e.pendingObjective]=nil;stopActivity(e);e.pending=nil
+     notify(player,proof,if type(problem)=="string"then problem else "InvalidReceipt")
+    elseif e.deliveryProblem~=problem then e.deliveryProblem=problem;if e.trialProof then notify(player,true,if type(problem)=="string"then problem else "SavePending")end end
    end
    if entries[player]~=e then continue end
    local data=s.record.data;local id=nextId(data);local th=data.settings.language=="th";local index=if th then 2 else 1
@@ -300,19 +326,26 @@ return function(deps:any)
  end)
  function S.Intent(player:Player,action:string,args:any):string
   if not deps.Class3Proof then return "Class3TrialUnavailable"end
-  local e=entries[player];local live=e and current(player,e)
-  if not live then return "ProfileNotReady"end
+  local e=entries[player]
   if action=="CancelClass3Trial"then
+   if not e or not e.trialProof then return "InvalidAction"end
    if e.pending then return "SavePending"end
    stopActivity(e)
+   notify(player,true,"Class3Cancelled")
    return "OK"
   end
+  local live=e and current(player,e)
+  if not live then return "ProfileNotReady"end
   if action~="StartClass3Trial" or type(args)~="table" or args.actorId~="player" or type(args.pathId)~="string"then return "InvalidAction"end
   return e.startMastery(live.record.data,args.pathId)
  end
  function S.State(player:Player):any?
   local e=entries[player];if not e or not e.trial then return nil end
   return {actorId="player",pathId=e.trialPath,status=if e.pending then "Saving" else e.trial.Snapshot().status}
+ end
+ function S.Class3State(player:Player):any?
+  local e=entries[player];if not e or not e.trial or not e.trialProof then return nil end
+  return {actorId="player",pathId=e.trialPath,status=if e.pending then "Saving" else "Active",problem=e.deliveryProblem}
  end
  function S.Active(player:Player):boolean local e=entries[player];return e~=nil and (e.trial~=nil or e.pending~=nil)end
  function S.Destroy()heartbeat:Disconnect();for player in pairs(entries)do S.Remove(player)end end

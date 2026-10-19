@@ -20,6 +20,13 @@ return function(deps: any)
 		view.islands=if deps.World.IslandDirectory then deps.World.IslandDirectory(player) else {}
 		view.islandVisitors=if deps.World.IslandVisitors then deps.World.IslandVisitors(player) else {}
 		if view.data and deps.World.HeroMentorState then view.data.heroMentorSession=deps.World.HeroMentorState(player) end
+		if view.data and deps.World.Class3State then
+			local trial=deps.World.Class3State(player)
+			if trial then
+				view.data.class3Session={actorId=trial.actorId,pathId=trial.pathId,status=trial.status,
+					problem=if trial.problem and deps.World.Class3Code then deps.World.Class3Code(trial.problem) else nil}
+			end
+		end
 		state:FireClient(player, view)
 	end
 	function Network.Remove(player: Player) buckets[player] = nil; combatBuckets[player] = nil end
@@ -59,7 +66,7 @@ return function(deps: any)
 			if gate then Network.Send(player,gate,nil,packet.requestId);return end
 		end
 		local spatial=deps.World.ValidateIntent(player,packet.action,packet.args)
-		if spatial then Network.Send(player,spatial,nil,packet.requestId);return end
+		if spatial then Network.Send(player,if (packet.action=="StartClass3Trial" or packet.action=="CancelClass3Trial") and deps.World.Class3Code then deps.World.Class3Code(spatial) else spatial,nil,packet.requestId);return end
 		local code, result
 		if packet.action == "GetState" then Network.Send(player, nil, nil, packet.requestId); return
 		elseif packet.action == "RetryLoad" then
@@ -69,6 +76,10 @@ return function(deps: any)
 		elseif packet.action=="StartHeroMentor" or packet.action=="CancelHeroMentor" then
 			local handler=deps.World.HeroMentorIntent
 			code=if handler then handler(player,packet.action,packet.args) else "HeroMentorUnavailable"
+		elseif packet.action=="StartClass3Trial" or packet.action=="CancelClass3Trial" then
+			local handler=deps.World.Class3Intent
+			code=if handler then handler(player,packet.action,packet.args) else "Class3TrialUnavailable"
+			if deps.World.Class3Code then code=deps.World.Class3Code(code) end
 		elseif packet.action=="RequestPermanentPass" then
 			local ok,response=pcall(deps.PermanentPassRequest,player,packet)
 			code=if ok then response else "PurchaseUnavailable"
