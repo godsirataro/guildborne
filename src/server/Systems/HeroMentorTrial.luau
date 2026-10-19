@@ -1,7 +1,8 @@
 --!strict
 -- Temporary, server-owned hero combat. No client observations and no profile mutations.
-return function(rules:any,util:any)
+return function(rules:any,util:any,class3:any?)
  local S={}
+ local wonRuns=setmetatable({}, {__mode="k"})
  local function id(v:any):boolean return type(v)=="string" and #v>0 and #v<=48 and v:match("^[%w_:%-]+$")~=nil end
  function S.problem(data:any,actorId:string,pathId:string):string?
   local hero=data.adventurers[actorId];local path=rules.Paths[pathId]
@@ -41,11 +42,36 @@ return function(rules:any,util:any)
   if not id(runId) or not util.integer(owner,1,9007199254740991) or type(now)~="number" or now~=now or now<0 or now==math.huge then return nil,"InvalidTrial"end
   return {id=runId,owner=owner,actorId=actorId,pathId=pathId,hero=util.copy(data.adventurers[actorId]),build=util.copy(rules.build(data,actorId)),startedAt=now,expiresAt=now+180,status="Active"},nil
  end
+ function S.class3ActivityProblem(data:any,actorId:string):string?
+  local hero=data.adventurers[actorId]
+  if actorId=="player" or not hero then return "HeroUnavailable" end
+  if hero.condition and hero.condition~="Healthy" then return "HeroUnavailable" end
+  for _,job in pairs(data.settlement.jobs)do if table.find(job.members,actorId)then return "HeroUnavailable"end end
+  if data.quests.active or data.expansion.tower.active then return "FinishExpedition"end
+  if not table.find(data.party.adventurerIds,actorId)then return "PartyRequired"end
+  return nil
+ end
+ function S.class3Problem(data:any,actorId:string,pathId:string):string?
+  if not class3 then return "Class3TrialUnavailable" end
+  local activity=S.class3ActivityProblem(data,actorId);if activity then return activity end
+  if not rules.usesNoviceProgression(data) then return "Class3TrialUnavailable" end
+  return class3.problem(data,actorId,pathId)
+ end
+ function S.startClass3(data:any,owner:number,actorId:string,pathId:string,runId:string,now:number):(any?,string?)
+  local problem=S.class3Problem(data,actorId,pathId);if problem then return nil,problem end
+  if owner~=data.profile.userId or not id(runId) or type(now)~="number" or now~=now or now<0 or now==math.huge then return nil,"InvalidTrial"end
+  local proof,err=class3.capture(data,actorId,pathId,runId,"actor_mastery");if not proof then return nil,err end
+  return {id=runId,owner=proof.owner,actorId=actorId,pathId=pathId,hero=util.copy(proof.expectedActor),build=util.copy(proof.expectedBuild),proof=proof,startedAt=now,expiresAt=now+180,status="Active"},nil
+ end
  function S.matches(data:any,run:any):boolean
-  return S.problem(data,run.actorId,run.pathId)==nil and util.equal(data.adventurers[run.actorId],run.hero) and util.equal(rules.build(data,run.actorId),run.build)
+  return (if run.proof then data.profile.userId==run.owner and S.class3Problem(data,run.actorId,run.pathId)==nil else S.problem(data,run.actorId,run.pathId)==nil) and util.equal(data.adventurers[run.actorId],run.hero) and util.equal(rules.build(data,run.actorId),run.build)
  end
  function S.receipt(run:any):any?
   if run.status~="Won" then return nil end
+  if run.proof then
+   if not class3 or not wonRuns[run] then return nil end
+   local proof=util.copy(run.proof);proof.status="Won";return class3.receipt(proof)
+  end
   return {owner=run.owner,requestId="mentor:"..run.id,action="HeroMentorProof",args={actorId=run.actorId,pathId=run.pathId,trialId=run.id,hero=util.copy(run.hero),build=util.copy(run.build)}}
  end
  function S.commit(record:any,command:any):(any,any,any)
@@ -99,6 +125,8 @@ return function(rules:any,util:any)
    -- Cast emits its success event after damage. Evaluate only after the whole step.
    if actor.health<=0 then run.status="Failed"
    elseif victory then run.status=if used and effect and hits>=3 then "Won" else "Failed"end
+   local outcome=run.status :: string
+   if outcome=="Won" then wonRuns[run]=true end
    return run.status
   end
   function C.snapshot():any return {status=run.status,heroHealth=actor.health,enemyHealth=enemy.health,skill=skill,used=used,effect=effect,hits=hits}end

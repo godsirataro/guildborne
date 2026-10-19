@@ -37,10 +37,14 @@ return function(deps:any):any
  function S.State(player:Player):any? return deps.Trial.sessionView(entries[player])end
  function S.Active(player:Player):boolean return entries[player]~=nil end
  function S.Intent(player:Player,action:string,args:any):string
-  if action=="CancelHeroMentor"then
+  if action=="CancelHeroMentor" or action=="CancelClass3Trial"then
    if entries[player] and entries[player].delivery then return "SavePending"end
    finish(player,"HeroMentorCancelled");return "OK"
   end
+  local isClass3=action=="StartClass3Trial"
+  if action~="StartHeroMentor" and not isClass3 then return "InvalidAction"end
+  if isClass3 and (not deps.Class3Proof or not deps.MakeClass3Receipt)then return "Class3TrialUnavailable"end
+  if type(args)~="table" or type(args.actorId)~="string" or type(args.pathId)~="string" then return "InvalidTrial"end
   if entries[player]then return "HeroMentorActive"end
   local session=deps.Data.Sessions[player.UserId]
   if not session or session.state~="Active" or session.busy or session.closing then return "ProfileNotReady"end
@@ -49,12 +53,21 @@ return function(deps:any):any
   local humanoid=character and character:FindFirstChildOfClass("Humanoid")
   if not context or not character or not root or not root:IsA("BasePart") or not humanoid or humanoid.Health<=0 then return "ActorNotReady"end
   if player:GetAttribute("CurrentZone")~="Guild" or (root.Position-context.origin).Magnitude>165 or context.model:GetAttribute("InCombat") then return "ReturnToGuild"end
-  local run,problem=deps.Trial.start(data,player.UserId,args.actorId,args.pathId,Http:GenerateGUID(false),os.clock());if not run then return problem end
+  local start=if isClass3 then deps.Trial.startClass3 else deps.Trial.start
+  local run,problem=start(data,player.UserId,args.actorId,args.pathId,Http:GenerateGUID(false),os.clock());if not run then return problem end
   local acquired,heroModel=pcall(deps.World.BeginHeroMentor,player,args.actorId)
   if not acquired then deps.World.EndHeroMentor(player);return "HeroMentorUnavailable"end
   if not heroModel then return "HeroUnavailable"end
-  local e:any={run=run,epoch=session.epoch,token=session.token,character=character,returnTo=character:GetPivot(),origin=context.origin+V(0,50,0),hero=heroModel,heroParent=heroModel.Parent,heroReturn=heroModel:GetPivot(),heroAnchored=true,nextDelivery=0}
+  local e:any={run=run,startFence={session=session,epoch=session.epoch,token=session.token},epoch=session.epoch,token=session.token,character=character,returnTo=character:GetPivot(),origin=context.origin+V(0,50,0),hero=heroModel,heroParent=heroModel.Parent,heroReturn=heroModel:GetPivot(),heroAnchored=true,nextDelivery=0}
   entries[player]=e
+  e.guard=function():boolean
+   local current=deps.Data.Sessions[player.UserId]
+   local hum=e.character:FindFirstChildOfClass("Humanoid");local r=e.character:FindFirstChild("HumanoidRootPart")
+   return entries[player]==e and current==e.startFence.session and current.epoch==e.epoch and current.token==e.token
+    and not current.closing and current.state~="LeaseLost" and player.Character==e.character and e.character.Parent~=nil
+    and hum~=nil and hum.Health>0 and r~=nil and r:IsA("BasePart") and (r.Position-e.origin).Magnitude<=40
+    and e.hero.Parent~=nil and player:GetAttribute("CurrentZone")=="Guild"
+  end
   local ok=pcall(function()
    local model=Instance.new("Model");e.model=model;model.Name="HeroMentor_"..player.UserId;model:SetAttribute("ActorId",run.actorId);model:SetAttribute("PathId",run.pathId);model.Parent=workspace
    local function part(name:string,size:Vector3,pos:Vector3,color:Color3):Part
@@ -90,7 +103,7 @@ return function(deps:any):any
   for player,e in pairs(entries)do
    if e.busy then continue end
    local session=deps.Data.Sessions[player.UserId];local root=e.character:FindFirstChild("HumanoidRootPart");local hum=e.character:FindFirstChildOfClass("Humanoid")
-   if not session or session.epoch~=e.epoch or session.token~=e.token or session.closing or session.state=="LeaseLost" or player.Character~=e.character or not root or not root:IsA("BasePart") or not hum or hum.Health<=0 or (root.Position-e.origin).Magnitude>40 or not e.hero.Parent then finish(player,"HeroMentorCancelled");continue end
+   if not session or (e.run.proof and not e.guard()) or session.epoch~=e.epoch or session.token~=e.token or session.closing or session.state=="LeaseLost" or player.Character~=e.character or not root or not root:IsA("BasePart") or not hum or hum.Health<=0 or (root.Position-e.origin).Magnitude>40 or not e.hero.Parent then finish(player,"HeroMentorCancelled");continue end
    if not e.delivery and not deps.Trial.matches(session.record.data,e.run)then finish(player,"HeroChanged");continue end
    if not e.delivery then
     local position=e.hero:GetPivot().Position-e.origin
@@ -101,7 +114,11 @@ return function(deps:any):any
     local snap=e.combat.snapshot();e.hero:SetAttribute("CombatHealth",snap.heroHealth);e.hero:SetAttribute("CombatMaxHealth",e.combat.actor.stats.MaxHealth);e.enemy:SetAttribute("CombatHealth",snap.enemyHealth);e.patient:SetAttribute("CombatHealth",e.combat.patient.health);e.model:SetAttribute("Status",state);e.model:SetAttribute("HeroHealth",snap.heroHealth);e.model:SetAttribute("EnemyHealth",snap.enemyHealth);e.model:SetAttribute("ArtEffectProven",snap.effect)
     e.label.Text="Hero mentor / ฝึกฮีโร่ · "..e.run.hero.name.."\nHP "..math.ceil(snap.heroHealth).." · Construct "..snap.enemyHealth.." · "..state.."\nSkills → Cancel / ยกเลิก"
     if state=="Failed"then finish(player,"HeroMentorFailed");continue end
-    if state=="Won"then e.delivery=deps.MakeReceipt(player.UserId,deps.Trial.receipt(e.run),e.epoch,e.token);e.model:SetAttribute("Status","Saving");e.label.Text="Saving hero trial / กำลังบันทึกผลฝึก";deps.Notify(player,"HeroMentorSaving")end
+    if state=="Won"then
+     local receipt=deps.Trial.receipt(e.run);if not receipt then finish(player,"HeroMentorFailed");continue end
+     if e.run.proof then
+      e.delivery=deps.MakeClass3Receipt(player.UserId,receipt,e.startFence,function()return e.guard() and deps.Trial.class3ActivityProblem(session.record.data,e.run.actorId)==nil end)
+     else e.delivery=deps.MakeReceipt(player.UserId,receipt,e.epoch,e.token)end;e.model:SetAttribute("Status","Saving");e.label.Text="Saving hero trial / กำลังบันทึกผลฝึก";deps.Notify(player,"HeroMentorSaving")end
    end
    if e.delivery and os.clock()>=e.nextDelivery then
     e.nextDelivery=os.clock()+.5;e.busy=true
@@ -110,7 +127,7 @@ return function(deps:any):any
      -- A yield may outlive cancel, replacement session, respawn or a new trial.
      local current=deps.Data.Sessions[player.UserId]
      if entries[player]~=e then return end
-     if not current or current.epoch~=e.epoch or current.token~=e.token or player.Character~=e.character then finish(player,"HeroMentorCancelled");return end
+     if not current or (e.run.proof and not e.guard()) or current.epoch~=e.epoch or current.token~=e.token or player.Character~=e.character then finish(player,"HeroMentorCancelled");return end
      if ok and outcome=="Committed"then finish(player,"HeroMentorComplete")elseif ok and outcome=="Rejected"then finish(player,"HeroChanged")end
     end)
    end

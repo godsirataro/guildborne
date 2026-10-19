@@ -9,13 +9,15 @@ local makePuzzle=require(script.Parent.Parent.Systems.IronveilPuzzle)
 local makeLesson=require(script.Parent.TowerLessonArena)
 local makeEscort=require(script.Parent.EscortActor)
 return function(deps:any)
+ assert(not deps.Class3Proof or deps.MakeClass3Receipt,"Class3 receipt adapter required")
  local clock=deps.Now or os.clock;local heartbeatSource=deps.Heartbeat or Run.Heartbeat
  local S={};local entries:{[Player]:any}={};local occupied={}
  local function session(player:Player):any?
   local s=deps.Data.Sessions[player.UserId];local d=s and s.record and s.record.data
   if not s or s.closing or not d or not d.progression.campaign then return nil end
   local claimed=d.progression.campaign.claimed
-  return if claimed>=24 and claimed<30 and d.personalGuild.buildings.guildHall>=11 then s else nil
+  local repeatAccess=deps.Class3Proof and claimed>=30 and require(Shared.Data.Expansion).build(d,"player").tier==2
+  return if claimed>=24 and (claimed<30 or repeatAccess) and d.personalGuild.buildings.guildHall>=11 then s else nil
  end
  local function nextId(data:any):string?
   local state=data.progression.campaign;local def=deps.Config.Chapters[state.claimed+1]
@@ -27,7 +29,7 @@ return function(deps:any)
  end
  local function current(player:Player,e:any):any?
   local s=session(player)
-  return if entries[player]==e and s and s.epoch==e.epoch and s.token==e.token and s.state=="Active"and not s.busy then s else nil
+  return if entries[player]==e and s==e.session and s and s.epoch==e.epoch and s.token==e.token and s.state=="Active"and not s.busy then s else nil
  end
  local function ready(player:Player,e:any,id:string):boolean
   local s=current(player,e);if not s or e.pending or not root(player)or nextId(s.record.data)~=id then return false end
@@ -40,6 +42,7 @@ return function(deps:any)
   e.pendingObjective=id
  end
  local function stopActivity(e:any)
+  if e.trialToken then e.trialToken=nil;e.pending=nil;e.pendingObjective=nil end
   if e.escort then e.escort.Destroy();e.escort=nil end
   if e.lesson then e.lesson.Destroy();e.lesson=nil end
   if e.trial then e.trial.Destroy();e.trial=nil end
@@ -54,10 +57,10 @@ return function(deps:any)
  function S.Update(player:Player)
   local s=session(player);local old=entries[player]
   if not s then S.Remove(player);return end
-  if old then if old.epoch==s.epoch and old.token==s.token then return else S.Remove(player)end end
+  if old then if old.session==s and old.epoch==s.epoch and old.token==s.token then return else S.Remove(player)end end
   local slot=nil;for i=1,8 do if not occupied[i]then slot=i;break end end;if not slot then return end
   occupied[slot]=true
-  local art=makeArt(player.UserId,slot);local e:any={slot=slot,art=art,epoch=s.epoch,token=s.token,connections={},markers={},notes={},sets={},puzzles={}}
+  local art=makeArt(player.UserId,slot);local e:any={slot=slot,art=art,session=s,epoch=s.epoch,token=s.token,objective=nextId(s.record.data),connections={},markers={},notes={},sets={},puzzles={}}
   entries[player]=e
   local actors=makeCast(true);actors.Parent=art.model;e.actors={}
   local offsets={marshal_elian=V(-108,0,112),arborist_vaela=V(-108,0,-98),smith_borin=V(-80,0,-140),cartographer_nyra=V(54,0,6),harbormaster_sela=V(-108,0,90),steward_roka=V(-80,0,28)}
@@ -126,8 +129,13 @@ return function(deps:any)
   end)
   marker("CourtExit",nil,art.exit.Position,{"Return to the central city","กลับเมืองรวม"},function()stopActivity(e);deps.World.IntentCommitted(player,"TravelZone",{zone="City"})end)
   objective("rift_refuge","mentor","meet_crosshaven_mentor",nil,{"Sela · prepare for the rift","Sela · เตรียมตัวเข้ารอยแยก"})
-  objective("rift_refuge","mastery_trial","complete_borrowed_mastery",function(data:any)
-   if e.trial then return end;e.trialDelivery=nil
+  local function startMastery(data:any,selectedPath:string?):string
+   if e.trial or e.pending then return "HeroMentorActive" end
+   local live=current(player,e);local character=player.Character;local r=root(player)
+   if not live or not character or not r then return "ActorNotReady" end
+   if (r.Position-at("rift_refuge","mastery_trial")).Magnitude>9 then return "ReturnToCrosshaven" end
+   if data.quests.active or data.expansion.tower.active then return "FinishExpedition" end
+   e.trialDelivery=nil
    local expansion=require(Shared.Data.Expansion);local build=expansion.build(data,"player")
    local defaults={Warrior="warlord",Knight="fortress",Archer="beastwarden",Mage="archmage",Priest="high_priest"}
    local pathId=defaults[data.character.classId]
@@ -135,11 +143,50 @@ return function(deps:any)
     local path=expansion.Paths[build.path]
     if path.Tier==3 then pathId=build.path else for id,p in pairs(expansion.Paths)do if p.Parent==build.path then pathId=id;break end end end
    end
-   e.trial=require(script.Parent.NoviceTrialArena)(player,data,data.character.classId,Http:GenerateGUID(false),art.origin+V(0,32,0),function(receipt:any)
+   pathId=selectedPath or pathId
+   local path=pathId and expansion.Paths[pathId]
+   if not path or path.Tier~=3 or path.Class~=data.character.classId then return "InvalidClassPath"end
+   if selectedPath then local problem=deps.Class3Proof.problem(data,"player",pathId);if problem then return problem end end
+   local fence={session=live,epoch=live.epoch,token=live.token};local trialToken={}
+   e.trialToken=trialToken
+   local function guard():boolean
+    local now=deps.Data.Sessions[player.UserId]
+    local liveRoot=root(player)
+    return entries[player]==e and e.trialToken==trialToken and now==fence.session and now.epoch==fence.epoch and now.token==fence.token
+     and not now.closing and player.Parent==Players and player.Character==character and liveRoot~=nil
+     and not now.record.data.quests.active and not now.record.data.expansion.tower.active
+     and (not e.trial or (liveRoot.Position-(art.origin+V(0,32,0))).Magnitude<=50)
+   end
+   local function currentData():any?
+    if not guard()then return nil end
+    local now=deps.Data.Sessions[player.UserId]
+    return if now.state=="Active" and not now.busy then now.record.data else nil
+   end
+   local options=require(script.Parent.BorrowedPathFactory)(pathId,true,deps.Class3Proof,if deps.Class3Proof then currentData else nil)
+   -- Check admission before constructing an arena (which otherwise asserts on refusal).
+   local trialId=Http:GenerateGUID(false)
+   local admitted,reason=options.Create(data,player.UserId,data.character.classId,trialId,os.clock())
+   if not admitted then e.trialToken=nil;return reason end
+   e.trialGuard=guard;e.trialPath=pathId;e.trialCharacter=character
+   e.trial=require(script.Parent.NoviceTrialArena)(player,data,data.character.classId,trialId,art.origin+V(0,32,0),function(receipt:any)
+    if not guard()then return false end
     if e.trialDelivery=="Committed"then return true end
-    observe(player,e,"complete_borrowed_mastery",nil,receipt);return false
-   end,function()if e.trial then e.trial.Destroy();e.trial=nil end end,require(script.Parent.BorrowedPathFactory)(pathId,true))
-  end)
+    if e.pending then return false end
+    if receipt.action=="Class3Proof"then
+     e.pending=deps.MakeClass3Receipt(player.UserId,receipt,fence,guard);e.pendingObjective="complete_borrowed_mastery"
+    else observe(player,e,"complete_borrowed_mastery",nil,receipt) end
+    return false
+   end,function()if entries[player]==e and e.trialToken==trialToken then stopActivity(e)end end,options)
+   return "OK"
+  end
+  e.startMastery=startMastery
+  objective("rift_refuge","mastery_trial","complete_borrowed_mastery",function(data:any)local code=startMastery(data);if code~="OK"then deps.Notify(player,code)end end)
+  if deps.Class3Proof then
+   marker("RepeatMastery",nil,at("rift_refuge","mastery_trial"),{"Sela · repeat mastery training","Sela · ฝึกความชำนาญอีกครั้ง"},function(data:any)local code=startMastery(data);if code~="OK"then deps.Notify(player,code)end end,function(data:any)
+    local campaign=data.progression.campaign
+    return require(Shared.Data.Expansion).build(data,"player").tier==2 and (campaign.claimed>24 or campaign.objectives.complete_borrowed_mastery==true)
+   end)
+  end
   local function route(scene:string,points:{string}):{Vector3}
    local values={};for _,point in ipairs(points)do local p=at(scene,point);table.insert(values,V(p.X,art.origin.Y,p.Z))end;return values
   end
@@ -200,17 +247,23 @@ return function(deps:any)
   elapsed+=dt;if elapsed<.2 then return end;elapsed=0
   for player,e in pairs(entries)do
    local s=session(player)
-   if not s or s.epoch~=e.epoch or s.token~=e.token or player.Parent~=Players then S.Remove(player);continue end
+   if not s or s~=e.session or s.epoch~=e.epoch or s.token~=e.token or player.Parent~=Players then S.Remove(player);continue end
+   if e.trial and e.trialGuard and not e.trialGuard()then stopActivity(e);e.pending=nil;e.trialGuard=nil;continue end
    if e.pending and clock()>=(e.deliveryAt or 0)then
-    e.deliveryAt=clock()+.5;local outcome,problem=e.pending();e.art.model:SetAttribute("DeliveryProblem",problem)
+    e.deliveryAt=clock()+.5;local delivery=e.pending;local outcome,problem=delivery()
+    if entries[player]~=e or e.pending~=delivery then continue end
+    local live=deps.Data.Sessions[player.UserId]
+    if live~=e.session or live.epoch~=e.epoch or live.token~=e.token then S.Remove(player);continue end
+    if e.trial and e.trialGuard and not e.trialGuard()then stopActivity(e);continue end
+    e.art.model:SetAttribute("DeliveryProblem",problem)
     if outcome=="Committed"then
-     if e.pendingObjective=="complete_borrowed_mastery"then e.trialDelivery="Committed"end
+     if e.pendingObjective=="complete_borrowed_mastery"then e.trialDelivery="Committed";if e.trial then e.trial.Destroy();e.trial=nil end;e.trialToken=nil end
      e.pending=nil;deps.Notify(player);deps.Data.FlushAudit(player.UserId)
     elseif outcome=="Rejected"then e.puzzles[e.pendingObjective]=nil;e.sets[e.pendingObjective]=nil;stopActivity(e);e.pending=nil end
    end
    if entries[player]~=e then continue end
    local data=s.record.data;local id=nextId(data);local th=data.settings.language=="th";local index=if th then 2 else 1
-   if e.objective~=id then
+   if e.objective~=id and not (e.trial and e.pending) then
     -- The private campaign receipt is committed; restore the avatar from training.
     if e.trial and e.trialDelivery=="Committed"then
      e.trial.Destroy();e.trial=nil
@@ -245,6 +298,23 @@ return function(deps:any)
    for _,n in ipairs(e.notes)do local copy=if type(n.copy)=="function"then n.copy(data)else n.copy;n.board.Enabled=id~=nil and table.find(n.ids,id)~=nil;n.label.Text=copy[index]end
   end
  end)
+ function S.Intent(player:Player,action:string,args:any):string
+  if not deps.Class3Proof then return "Class3TrialUnavailable"end
+  local e=entries[player];local live=e and current(player,e)
+  if not live then return "ProfileNotReady"end
+  if action=="CancelClass3Trial"then
+   if e.pending then return "SavePending"end
+   stopActivity(e)
+   return "OK"
+  end
+  if action~="StartClass3Trial" or type(args)~="table" or args.actorId~="player" or type(args.pathId)~="string"then return "InvalidAction"end
+  return e.startMastery(live.record.data,args.pathId)
+ end
+ function S.State(player:Player):any?
+  local e=entries[player];if not e or not e.trial then return nil end
+  return {actorId="player",pathId=e.trialPath,status=if e.pending then "Saving" else e.trial.Snapshot().status}
+ end
+ function S.Active(player:Player):boolean local e=entries[player];return e~=nil and (e.trial~=nil or e.pending~=nil)end
  function S.Destroy()heartbeat:Disconnect();for player in pairs(entries)do S.Remove(player)end end
  return S
 end

@@ -147,6 +147,59 @@ return function(test:any,eq:any,harness:any?)
   local deliver=adapter(data,1,T.receipt(run),U,1,"a");eq(deliver(),"Retry");data.Sessions[1].record.revision=6;eq(deliver(),"Committed");eq(commands[1],commands[2])
   deliver=adapter(data,1,T.receipt(run),U,1,"a");data.Sessions[1].token="b";eq(deliver(),"Rejected");eq(#commands,2)
  end)
+ local proof=require("../src/server/Systems/Class3Proof")(E,U)
+ local T3=require("../src/server/Systems/HeroMentorTrial")(E,U,proof)
+ local function class3Fixture(pathId:string):any
+  local path=E.Paths[pathId];local r=fixture(path.Class);local d=r.data
+  d.adventurers["h:1"].level=70;d.adventurers["h:1"].xp=3450
+  d.personalGuild.buildings.guildHall=11;d.expansion.tower.highest=10
+  d.expansion.actors["h:1"]={tier=2,path=path.Parent or ({commander="berserker",rune_knight="guardian",bard="cleric",shadow_dancer="ranger"})[pathId],skills={}}
+  d.expansion.buildings["b:1"]={kind="quarters",x=6,z=-4,rotation=0}
+  d.expansion.gathered={wood=true,stone=true,ore=true,herbs=true}
+  return r
+ end
+ local function class3Combat(r:any,pathId:string):(any,any)
+  local run=assert(T3.startClass3(r.data,1,"h:1",pathId,"class3-run",0))
+  local st=stats.hero(run.hero.classId,70,nil,nil,nil,G.extras(r.data,run.hero))
+  return run,T3.combat(run,{stats=st,Stats=stats,config=config,Targeting=require("../src/server/Systems/CombatTargeting"),Damage=require("../src/server/Systems/CombatDamage"),Abilities=require("../src/server/Systems/CombatAbilities")})
+ end
+ test("hero Class3 fourteen paths earn private proof only from actual effect and victory",function()
+  local count=0
+  for pathId,path in pairs(E.Paths)do if path.Tier~=3 then continue end
+   local r=class3Fixture(pathId);local before=U.copy(r);local run,sim=class3Combat(r,pathId)
+   eq(T3.receipt(run),nil)
+   for tick=0,1790 do if sim.step(tick/10,{x=0,y=0,z=4})~="Active" then break end end
+   eq(run.status,"Won");eq(sim.snapshot().used,true);eq(sim.snapshot().effect,true);assert(sim.snapshot().hits>=3)
+   local receipt=assert(T3.receipt(run));eq(receipt.action,"Class3Proof");eq(receipt.owner,1);eq(receipt.args.actorId,"h:1");eq(receipt.args.pathId,pathId);eq(receipt.args.storyObjective,nil)
+   eq(receipt.args.sourceKind,"actor_mastery");eq(r,before)
+   local saved,result=proof.apply(r,receipt);eq(result.code,"OK");eq(saved.data.character,r.data.character);eq(saved.data.progression,r.data.progression)
+   eq(saved.data.adventurers,r.data.adventurers);eq(saved.data.currencies,r.data.currencies);count+=1
+  end
+  eq(count,14)
+ end)
+ test("hero Class3 owner activity and immutable actor identity fence admission and delivery",function()
+  local r=class3Fixture("warlord");local d=r.data
+  eq(select(2,T3.startClass3(d,2,"h:1","warlord","trial",0)),"InvalidTrial")
+  eq(T.class3Problem(d,"h:1","warlord"),"Class3TrialUnavailable")
+  eq(T3.class3Problem(d,"player","warlord"),"HeroUnavailable")
+  eq(T3.class3Problem(d,"h:2","warlord"),"HeroUnavailable")
+  local run=assert(T3.startClass3(d,1,"h:1","warlord","trial",0));eq(T3.matches(d,run),true)
+  d.adventurers["h:1"].xp+=1;eq(T3.matches(d,run),false);d.adventurers["h:1"].xp-=1
+  d.profile.userId=2;eq(T3.matches(d,run),false);d.profile.userId=1
+  d.adventurers["h:1"].level=69;eq(T3.class3Problem(d,"h:1","warlord"),"AdvancementLocked");d.adventurers["h:1"].level=70
+  d.party.adventurerIds={};eq(T3.class3Problem(d,"h:1","warlord"),"PartyRequired");d.party.adventurerIds={"h:1"}
+  d.settlement.jobs.job={members={"h:1"}};eq(T3.matches(d,run),false);d.settlement.jobs={}
+  d.quests.active={};eq(T3.matches(d,run),false);d.quests.active=nil
+  d.expansion.tower.active={};eq(T3.matches(d,run),false);d.expansion.tower.active=nil
+  d.adventurers["h:1"].condition="Dead";eq(T3.matches(d,run),false)
+ end)
+ test("hero Class3 synthetic Won timeout death and bounds cannot manufacture proof",function()
+  local r=class3Fixture("warlord");local run,sim=class3Combat(r,"warlord")
+  run.status="Won";eq(T3.receipt(run),nil)
+  run,sim=class3Combat(r,"warlord");eq(sim.step(180,{x=0,y=0,z=4}),"Failed");eq(T3.receipt(run),nil)
+  run,sim=class3Combat(r,"warlord");sim.actor.health=0;eq(sim.step(0,{x=0,y=0,z=4}),"Failed");eq(T3.receipt(run),nil)
+  run,sim=class3Combat(r,"warlord");eq(sim.step(0,{x=41,y=0,z=4}),"Failed");eq(T3.receipt(run),nil)
+ end)
  if harness then
   test("hero proof transaction recovers uncertain saves and replay once",function()
    for _,mode in ipairs({"before","after"})do
