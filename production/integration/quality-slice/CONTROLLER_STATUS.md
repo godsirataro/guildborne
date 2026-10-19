@@ -13,9 +13,12 @@ and437matching source checks. Native facade/material inspection and single-playe
 door traversal recorded in [refinement evidence](native-refinement-20261020/README.md).
 Play stopped, temporary fixtures removed. Front facade improved; west/far roof
 opening, plain side wall, full-party navigation and full art acceptance remain open.
-S13/S14/S17 writers released. S17 corrected Adventurer route proposal awaits
-exclusive scope migration; original route intersects tavern furniture. ForgeGUI
-remains deferred. The full goal stays ACTIVE; no new shutdown is scheduled.
+All prior writers released before the completed scope migration. Fresh03:36 local
+inspection confirms active v10 claims: S13 s13-smith-roof, S14 s14-native-header-v10,
+S15 s15-party-pose, S17 s17-resident-route, root controller-native-v10. Allfour
+native thread handles are active. Corrected Adventurer route is assigned; the
+original proposal intersected tavern furniture. ForgeGUI remains deferred.
+The full goal stays ACTIVE; no new shutdown is scheduled.
 
 The earlier checkpoint below is historical.
 
