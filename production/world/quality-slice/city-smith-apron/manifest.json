@@ -1,0 +1,162 @@
+{
+  "status": "REVIEW_ONLY_NATIVE_PENDING",
+  "base": "6e6f4c376b3f3596141389165db2e8e171e80034",
+  "files": {
+    "assets/production/world-slice/city-smith-apron/.gitattributes": {
+      "sha256": "730a35ae3d558080083c3103d9ac8100c3f6561678092abe341701dfa331eb1d",
+      "bytes": 29
+    },
+    "assets/production/world-slice/city-smith-apron/after/01_native_like_smith_wall.png": {
+      "sha256": "e82e0bc02ee30be2a19bab2e6f7bb37345d95da844a4e0e17dbab09d7feac704",
+      "bytes": 1376126
+    },
+    "assets/production/world-slice/city-smith-apron/after/02_west_apron_approach.png": {
+      "sha256": "5acf5f73cb80f80e96384d4d70f158cb180e625594b013dec20aea70875e9c37",
+      "bytes": 1566158
+    },
+    "assets/production/world-slice/city-smith-apron/after/03_workshop_overview.png": {
+      "sha256": "c6f292f1386bbebec1da5e20470af22656eec0400ecd07198db1e6de52964b99",
+      "bytes": 1666111
+    },
+    "assets/production/world-slice/city-smith-apron/after/04_east_entry.png": {
+      "sha256": "d73691867120864ef3a02b102d58f60ef1917b03ac3f901926a885723fdbfded",
+      "bytes": 1570616
+    },
+    "assets/production/world-slice/city-smith-apron/after/render-evidence.json": {
+      "sha256": "7f43c306550ad67155d99f7726787ca2fd96de49a72cf5620f09a62cde88f0c9",
+      "bytes": 1493
+    },
+    "assets/production/world-slice/city-smith-apron/after/source.blend": {
+      "sha256": "bcc68bd10893f297746bfea570d383fd4354bbe81aa76c092e6ae948997334c9",
+      "bytes": 365582
+    },
+    "assets/production/world-slice/city-smith-apron/before/01_native_like_smith_wall.png": {
+      "sha256": "342d343c18944dd65b90274ea686b4efaf1df6e6c0c0e5ff062be0bbb4fb8114",
+      "bytes": 1355994
+    },
+    "assets/production/world-slice/city-smith-apron/before/02_west_apron_approach.png": {
+      "sha256": "71b0d5f55e66ff7d7107529457f0230b5fce84ea66902fea2b6833b8110c7fb8",
+      "bytes": 1453751
+    },
+    "assets/production/world-slice/city-smith-apron/before/03_workshop_overview.png": {
+      "sha256": "3bf88708de5a10568968f9dc1b5ade5b20c992754d43f65ee3da6cd0f79c256b",
+      "bytes": 1600792
+    },
+    "assets/production/world-slice/city-smith-apron/before/04_east_entry.png": {
+      "sha256": "146b06fb163246988499f7b5fc610e4cde7bc5442fd284313ee688220755f759",
+      "bytes": 1528324
+    },
+    "assets/production/world-slice/city-smith-apron/before/render-evidence.json": {
+      "sha256": "fcaa61f08e8c3fbdf57bd065567c05fe18a829bcc934398b5116876f6cb5bd99",
+      "bytes": 1495
+    },
+    "assets/production/world-slice/city-smith-apron/before/source.blend": {
+      "sha256": "1175e4fcac0cbeaeb918ed34b1ea8e3388f3ccd8be02034f21462eb578d31ce2",
+      "bytes": 315311
+    },
+    "assets/production/world-slice/city-smith-apron/metrics.json": {
+      "sha256": "7c53b0021aa5a5dfa72a910c4efcd2d8cf4642b6babf2235706676019a28a487",
+      "bytes": 78
+    },
+    "assets/production/world-slice/city-smith-apron/provenance.json": {
+      "sha256": "5199594dcab3a40f68d2389ae0d25bfa8d8d85fafe80f9ca1111fc5c589871f5",
+      "bytes": 592
+    },
+    "assets/production/world-slice/city-smith-apron/scenery.mesh.json": {
+      "sha256": "d08edc14a62bd2fc9e1a3fb0e5a6b205df9532358567e19d93a3e22b356bb46f",
+      "bytes": 280452
+    },
+    "assets/production/world-slice/city-smith-apron/solids.json": {
+      "sha256": "56cd98757518d8546552d4ef28aa919edf7c342d7935ff0da23a3b66938f1483",
+      "bytes": 35130
+    },
+    "production/world/quality-slice/city-smith-apron/.gitattributes": {
+      "sha256": "730a35ae3d558080083c3103d9ac8100c3f6561678092abe341701dfa331eb1d",
+      "bytes": 29
+    },
+    "production/world/quality-slice/city-smith-apron/after.exit.txt": {
+      "sha256": "13bf7b3039c63bf5a50491fa3cfd8eb4e699d1ba1436315aef9cbe5711530354",
+      "bytes": 3
+    },
+    "production/world/quality-slice/city-smith-apron/after.stderr.log": {
+      "sha256": "28759d916626b680107c8310199f2fff705cd71bd25901b4afa81641c700125c",
+      "bytes": 838
+    },
+    "production/world/quality-slice/city-smith-apron/after.stdout.log": {
+      "sha256": "7b14797ff4d0554694fef764210d7a135e37fc87eec1cf75af3e854711e565c8",
+      "bytes": 757
+    },
+    "production/world/quality-slice/city-smith-apron/before.exit.txt": {
+      "sha256": "13bf7b3039c63bf5a50491fa3cfd8eb4e699d1ba1436315aef9cbe5711530354",
+      "bytes": 3
+    },
+    "production/world/quality-slice/city-smith-apron/before.stderr.log": {
+      "sha256": "28759d916626b680107c8310199f2fff705cd71bd25901b4afa81641c700125c",
+      "bytes": 838
+    },
+    "production/world/quality-slice/city-smith-apron/before.stdout.log": {
+      "sha256": "69653490b40b4e1e68f3f5eec8a4a8c5985027295ce3b3db879c6debb901d61c",
+      "bytes": 761
+    },
+    "production/world/quality-slice/city-smith-apron/build.py": {
+      "sha256": "a36d1c022260b619dad7f43ed2f4ec05d7d0ce88c37d23e830e2fe1c2ae699f2",
+      "bytes": 6177
+    },
+    "production/world/quality-slice/city-smith-apron/cameras.json": {
+      "sha256": "9e74f417d0da4dddb7ba6269ed7c7734c83e317c3664d624828ce397ac7499d1",
+      "bytes": 492
+    },
+    "production/world/quality-slice/city-smith-apron/HANDOFF.md": {
+      "sha256": "6c77d453197182ef398214752de03783994175b92853d47fe6ecd438c7133c9c",
+      "bytes": 4713
+    },
+    "production/world/quality-slice/city-smith-apron/independent-01.exit.json": {
+      "sha256": "f468f8bf84d59a390a40e5d5ac0291111e0e6eeb79821864810ae628cbd3507e",
+      "bytes": 15
+    },
+    "production/world/quality-slice/city-smith-apron/independent-01.stderr.txt": {
+      "sha256": "4643b7048ea157c17030aa43942f78081234560c1ae7c898ded0a489d0d22806",
+      "bytes": 1502
+    },
+    "production/world/quality-slice/city-smith-apron/independent-01.stdout.txt": {
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "bytes": 0
+    },
+    "production/world/quality-slice/city-smith-apron/independent-02.exit.json": {
+      "sha256": "47b8b6b49d4695fe6e036bd916538aff4f46773e212ca0d429db80f3963e2cfe",
+      "bytes": 15
+    },
+    "production/world/quality-slice/city-smith-apron/independent-02.stderr.txt": {
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "bytes": 0
+    },
+    "production/world/quality-slice/city-smith-apron/independent-02.stdout.txt": {
+      "sha256": "db0ee93fe03d6d09cc3b43a718774ab4aeeaeb3e0a347e14c3f6fefade79d83b",
+      "bytes": 14125
+    },
+    "production/world/quality-slice/city-smith-apron/independent-review.json": {
+      "sha256": "ae2ef0b5c40dc2bdab74c35c4ca7d0d56d5a2119261aef803307ee9afad63be1",
+      "bytes": 16868
+    },
+    "production/world/quality-slice/city-smith-apron/independent-visual-review.md": {
+      "sha256": "5e4b6fbc5056a743d79840ab98e95ae36c0b5d487b368b74e032e3ae653f7552",
+      "bytes": 2879
+    },
+    "production/world/quality-slice/city-smith-apron/render.py": {
+      "sha256": "9476da35a27637f6907c40b4eed60e62b86e35263ba8d4be7c0596fcc1f883f2",
+      "bytes": 10144
+    },
+    "production/world/quality-slice/city-smith-apron/source-survey.json": {
+      "sha256": "1c4732d0c90ee51ed1acc4b0334f009189d02ef158ff35492ba76f22ce493cdc",
+      "bytes": 167779
+    },
+    "production/world/quality-slice/city-smith-apron/verify.py": {
+      "sha256": "766abdf258aba99a63c8b988f580fa090f01a506b8730b258c1485f4ac7a39e4",
+      "bytes": 6641
+    },
+    "production/world/quality-slice/city-smith-apron/visual-review.json": {
+      "sha256": "5d14d2475a32bd3c1b9bf9797f972427fac36c4068e2206801631aee10fb8842",
+      "bytes": 693
+    }
+  }
+}

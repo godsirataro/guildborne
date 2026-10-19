@@ -1,0 +1,17 @@
+{
+  "status": "OFFLINE_VISUAL_REVIEW_NATIVE_PENDING",
+  "viewsInspected": [
+    "01_native_like_smith_wall",
+    "02_west_apron_approach",
+    "03_workshop_overview",
+    "04_east_entry"
+  ],
+  "observation": "West shelter has supported workbench, visible tool rail and contrasting canvas silhouette; east rack/barrels/wheel forms a separate supplies cluster. Central area and east doorway stay clear.",
+  "limitations": [
+    "01 is too closely cropped to showcase both flanks; use02/03 for composition.",
+    "Existing large blank wall and floating native foundation remain unchanged.",
+    "Static art only, no populated-city or animation proof."
+  ],
+  "beforeExit": 0,
+  "afterExit": 0
+}

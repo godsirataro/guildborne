@@ -1,0 +1,8 @@
+Traceback (most recent call last):
+  File "C:\Work\MySelf\Guildborne-coast-ironveil-fix\production\world\quality-slice\city-smith-apron\verify.py", line 78, in <module>
+    if __name__=='__main__':main()
+                            ~~~~^^
+  File "C:\Work\MySelf\Guildborne-coast-ironveil-fix\production\world\quality-slice\city-smith-apron\verify.py", line 70, in main
+    assert len(reached)==len(records),('unsupported_solids',[s['name'] for i,s in enumerate(records) if i not in reached])
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^
+AssertionError: ('unsupported_solids', ['smith_apron_workbench_00/plank0', 'smith_apron_workbench_00/plank1', 'smith_apron_workbench_00/plank2', 'smith_apron_workbench_00/plank3', 'smith_apron_workbench_00/backrack', 'smith_apron_workbench_00/rackpost347.2', 'smith_apron_workbench_00/rackpost352.8', 'smith_apron_tools_00/handle0', 'smith_apron_tools_00/hammerhead0', 'smith_apron_tools_00/hook0', 'smith_apron_tools_00/handle1', 'smith_apron_tools_00/hammerhead1', 'smith_apron_tools_00/hook1', 'smith_apron_tools_00/handle2', 'smith_apron_tools_00/hammerhead2', 'smith_apron_tools_00/hook2', 'smith_apron_tools_00/handle3', 'smith_apron_tools_00/hammerhead3', 'smith_apron_tools_00/hook3', 'smith_apron_tools_00/vicebase', 'smith_apron_tools_00/vicejaw351.05', 'smith_apron_tools_00/vicejaw351.75', 'smith_apron_tools_00/vicescrew', 'smith_apron_tools_00/vicecrank', 'smith_apron_tools_00/ingot0', 'smith_apron_tools_00/ingot1', 'smith_apron_tools_00/ingot2'])

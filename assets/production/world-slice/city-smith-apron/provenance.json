@@ -1,0 +1,10 @@
+{
+  "status": "ORIGINAL_FILE_GENERATED_NOT_NATIVE",
+  "recipe": "production/world/quality-slice/city-smith-apron/build.py",
+  "recipeSha256": "a36d1c022260b619dad7f43ed2f4ec05d7d0ce88c37d23e830e2fe1c2ae699f2",
+  "helper": "production/world/quality-slice/ironveil-ore-yard/build.py",
+  "helperSha256": "5ab3711f35c92131017e7be1d35c3e0c0915661c25df677897fba06d98f5bc75",
+  "packetSha256": "d08edc14a62bd2fc9e1a3fb0e5a6b205df9532358567e19d93a3e22b356bb46f",
+  "origin": "Original Guildborne workshop geometry; no new third-party asset intake, texture, font or provider.",
+  "runtimeIds": null
+}
