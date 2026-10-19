@@ -88,7 +88,11 @@ end
 return function(parent: Instance, options: any)
 	local frame = Instance.new("Frame")
 	frame.Name = "InventoryActorPreview"; frame.Size = UDim2.fromScale(1, 1)
-	frame.BackgroundTransparency = 1; frame.ClipsDescendants = true; frame.Parent = parent
+	frame.BackgroundColor3 = Color3.new(1, 1, 1); frame.ClipsDescendants = true; frame.Parent = parent
+	local backdrop = Instance.new("UIGradient")
+	backdrop.Name = "PortraitBackdrop"
+	backdrop.Color = ColorSequence.new(Theme.Colors.Surface, Theme.Colors.Background)
+	backdrop.Rotation = 90; backdrop.Parent = frame
 	local viewport = Instance.new("ViewportFrame")
 	viewport.Name = "ActorViewport"; viewport.Size = UDim2.fromScale(1, 1)
 	viewport.BackgroundTransparency = 1; viewport.BorderSizePixel = 0

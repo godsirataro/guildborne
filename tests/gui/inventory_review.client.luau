@@ -16,7 +16,7 @@ local notice = Instance.new("TextLabel"); notice.Name = "FixtureNotice"; notice.
 notice.Size = UDim2.new(1, -12, 0, 64); notice.BackgroundTransparency = 1; notice.Font = Theme.Fonts.Body
 notice.TextSize = 12; notice.TextColor3 = Theme.Colors.Text; notice.TextWrapped = true; notice.Parent = host
 local sizes = {Vector2.new(796, 675), Vector2.new(1366, 768), Vector2.new(320, 568)}
-local modes = {"Owned", "Busy", "Empty", "Incompatible", "LongCopy", "Capacity", "HallLocked"}
+local modes = {"Owned", "Busy", "Empty", "Incompatible", "LongCopy", "Capacity", "HallLocked", "Actors0", "Actors1", "Actors6"}
 local sizeIndex, modeIndex, generation, count = 1, 1, 0, 0
 local language, fit, lastAction = "en", false, "No intents recorded"
 local canvas: Frame? = nil
@@ -51,6 +51,14 @@ local function state(): (any, any)
 		catalog.Items.training_sword.Name = if language == "th" then "ดาบฝึกหัดสำหรับการตรวจสอบชื่ออุปกรณ์ที่ยาวมากเป็นพิเศษ" else "Training sword with an intentionally extended inspection name"
 		catalog.Items.training_sword.Description = string.rep(if language == "th" then "ข้อความทดสอบรายละเอียดอุปกรณ์ที่ยาวเพื่อวัดการขยายความสูงและการเลื่อนอ่าน " else "Long synthetic item description to inspect wrapping, height growth and scrolling. ", 12)
 	end
+	-- Explicit presentation-count fixtures; synthetic roster never creates live heroes.
+	if mode == "Actors0" then data.character.classId = nil; data.character.equipmentSlots = {}; data.adventurers = {} end
+	if mode == "Actors1" then data.adventurers = {} end
+	if mode == "Actors6" then
+		for i = 2, 5 do
+			data.adventurers["fixtureHero" .. i] = {name = "Companion " .. i, classId = "Warrior", rank = "F", equipmentSlots = {}, stats = {Health = 58, Attack = 16, Defense = 3}}
+		end
+	end
 	return data, catalog
 end
 local function visible(object: GuiObject): boolean
@@ -78,7 +86,10 @@ local function report()
 		elseif object:IsA("Model") then models += 1
 		elseif object:IsA("BasePart") then parts += 1 end
 	end
-	print("INVENTORY_REVIEW " .. Http:JSONEncode({generation = generation, mode = modes[modeIndex], language = language, nominal = tostring(sizes[sizeIndex]), fit = fit, textCount = textCount, textNotFit = failed, clonedScripts = scripts, displayModels = models, displayParts = parts, intents = count, note = "TextFits does not prove visibility or full game acceptance"}))
+	local data = state()
+	local actorCount = if data.character.classId then 1 else 0
+	for _ in pairs(data.adventurers) do actorCount += 1 end
+	print("INVENTORY_REVIEW " .. Http:JSONEncode({generation = generation, actorCount = actorCount, mode = modes[modeIndex], language = language, nominal = tostring(sizes[sizeIndex]), fit = fit, textCount = textCount, textNotFit = failed, clonedScripts = scripts, displayModels = models, displayParts = parts, intents = count, note = "TextFits does not prove visibility or full game acceptance"}))
 end
 local render: (boolean?) -> ()
 render = function(reset: boolean?)

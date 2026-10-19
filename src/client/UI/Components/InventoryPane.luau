@@ -39,6 +39,7 @@ return function(parent: Instance, model: any): Frame
 	local root = Instance.new("Frame"); root.Name = "InventoryPane"; root.BackgroundTransparency = 1
 	root.Size = UDim2.new(1, 0, 0, 600); root.Parent = parent
 	local T = model.T or function(text: string): string return text end
+	local categoryOpen = false
 	local page = 1
 	for i, item in ipairs(model.items or {}) do if item.selected then page = math.ceil(i / 24); break end end
 	local destroyed = false
@@ -76,14 +77,17 @@ return function(parent: Instance, model: any): Frame
 		if phone then heading.TextSize = 18 end
 		local capacity = label(root, "Capacity", model.capacity or "", math.floor(w * .55), 0, math.floor(w * .45) - 4, 30)
 		capacity.TextXAlignment = Enum.TextXAlignment.Right
-		local actors = strip(root, "ActorSelection", 4, 34, w - 8)
-		local actorX = 0
-		for _, actor in ipairs(model.actors or {}) do
-			action(actors, "Actor_" .. tostring(actor.id), actor.name, actorX, 0, if phone then 146 else 166, actor.onSelect, actor.selected, model.busy)
-			actorX += if phone then 152 else 172
+		local y = 38
+		if #(model.actors or {}) > 1 then
+			local actors = strip(root, "ActorSelection", 4, 34, w - 8)
+			local actorX = 0
+			for _, actor in ipairs(model.actors) do
+				action(actors, "Actor_" .. tostring(actor.id), actor.name, actorX, 0, if phone then 146 else 166, actor.onSelect, actor.selected, model.busy)
+				actorX += if phone then 152 else 172
+			end
+			actors.CanvasSize = UDim2.fromOffset(actorX, 48)
+			y = 94
 		end
-		actors.CanvasSize = UDim2.fromOffset(actorX, 48)
-		local y = 94
 		local selected = model.selected or model.details
 		if phone then
 			for i, view in ipairs({"Items", "Loadout", "Details"}) do
@@ -97,7 +101,7 @@ return function(parent: Instance, model: any): Frame
 			local body = shell:FindFirstChild("Content") :: Frame
 			local bw = width - 24
 			label(body, "ActorName", model.actorName or "", 0, 0, bw, 44, true)
-			local stageHeight = if desktop then 200 else if phone then 160 else 120
+			local stageHeight = if desktop then 200 else if phone then 160 else 180
 			local stage = frame(body, "ActorStage", 0, 44, bw, stageHeight)
 			previewHandle = Preview(stage, {actorId = model.actorId, data = model.data, T = T})
 			alive()
@@ -153,19 +157,55 @@ return function(parent: Instance, model: any): Frame
 			shell.Size = UDim2.fromOffset(width, row + 24); return row + 24
 		end
 		local function inventory(x: number, top: number, width: number): number
-			local filters = strip(root, "ItemCategories", x, top, width)
-			local fx = 0
-			for _, filter in ipairs(model.filters or {}) do
-				action(filters, "Filter_" .. tostring(filter.id), filter.label, fx, 0, 124, filter.onSelect, filter.selected, model.busy); fx += 130
+			local entries = model.filters or {}
+			local categoryHeight = 48
+			local filters = frame(root, "ItemCategories", x, top, width, categoryHeight)
+			local function category(name: string, text: string, bx: number, by: number, bw: number, callback: any, selectedFilter: boolean?)
+				local handle = Button.create(filters, {name = name, text = text, size = UDim2.fromOffset(bw, 48), quiet = true, onActivated = function()
+					if destroyed or model.busy then return end
+					callback()
+				end})
+				handle.button.Position = UDim2.fromOffset(bx, by); handle.button.TextSize = 16
+				handle.setSelected(selectedFilter == true); handle.setDisabled(model.busy == true)
+				return handle.button
 			end
-			filters.CanvasSize = UDim2.fromOffset(fx, 48)
-			local controls = strip(root, "InventoryTools", x, top + 56, width)
+			if phone then
+				local selectedLabel = T("All")
+				for _, filter in ipairs(entries) do if filter.selected then selectedLabel = filter.label; break end end
+				category("CategoryPicker", selectedLabel .. (if categoryOpen then "  \u{25B4}" else "  \u{25BE}"), 0, 0, width, function()
+					categoryOpen = not categoryOpen; draw()
+				end, categoryOpen)
+				if categoryOpen then
+					for i, filter in ipairs(entries) do
+						category("Filter_" .. tostring(filter.id), filter.label, 0, i * 52, width, function()
+							categoryOpen = false; draw()
+							if not destroyed and filter.onSelect then filter.onSelect() end
+						end, filter.selected)
+					end
+					categoryHeight += #entries * 52
+				end
+			else
+				-- Conservative whole-glyph allowance works for both English and Thai.
+				-- At the production desktop cap the center pane is still narrow.
+				local widest = 0
+				for _, filter in ipairs(entries) do widest = math.max(widest, (utf8.len(filter.label) or #filter.label) * 16 + 24) end
+				local columns = if #entries > 0 and width >= #entries * widest + (#entries - 1) * 4 then #entries else 3
+				local tabWidth = math.floor((width - (columns - 1) * 4) / columns)
+				local rows = math.max(1, math.ceil(#entries / columns))
+				categoryHeight = rows * 52 - 4
+				for i, filter in ipairs(entries) do
+					category("Filter_" .. tostring(filter.id), filter.label, ((i - 1) % columns) * (tabWidth + 4), math.floor((i - 1) / columns) * 52, tabWidth, filter.onSelect or function() end, filter.selected)
+				end
+			end
+			filters.Size = UDim2.fromOffset(width, categoryHeight)
+			local controls = strip(root, "InventoryTools", x, top + categoryHeight + 8, width)
 			local cx = 0
 			for _, tool in ipairs({{name = "Shop", text = model.shopLabel, callback = model.onShop}, {name = "Sort", text = model.sortLabel, callback = model.onSort}, {name = "Compatible", text = model.compatibleLabel, callback = model.onCompatible}}) do
 				if tool.callback then action(controls, tool.name, tool.text or T(tool.name), cx, 0, 140, tool.callback, false, model.busy); cx += 146 end
 			end
 			controls.CanvasSize = UDim2.fromOffset(cx, 48)
-			local gridTop = top + 114
+			local gridOffset = categoryHeight + 66
+			local gridTop = top + gridOffset
 			local items = model.items or {}
 			local columns = math.max(2, math.floor(width / 116))
 			local cellWidth = math.floor((width - (columns - 1) * 8) / columns)
@@ -188,12 +228,12 @@ return function(parent: Instance, model: any): Frame
 			end
 			grid.CanvasSize = UDim2.fromOffset(0, math.ceil(count / columns) * (cellHeight + 8))
 			if #items == 0 then label(root, "EmptyInventory", model.emptyText or T("No items match this filter."), x + 12, gridTop + 20, width - 24, 70) end
-			local bottom = 114 + 294
+			local bottom = gridOffset + 294
 			if #items > 24 then
 				local pages = math.ceil(#items / 24)
-				action(root, "PreviousItems", "‹", x, top + bottom + 6, 52, function() page -= 1; draw() end, false, page == 1)
+				action(root, "PreviousItems", "\u{2039}", x, top + bottom + 6, 52, function() page -= 1; draw() end, false, page == 1)
 				local pageLabel = label(root, "ItemPage", tostring(page) .. " / " .. tostring(pages), x + 58, top + bottom + 6, width - 116, 48); pageLabel.TextXAlignment = Enum.TextXAlignment.Center
-				action(root, "NextItems", "›", x + width - 52, top + bottom + 6, 52, function() page += 1; draw() end, false, page == pages)
+				action(root, "NextItems", "\u{203A}", x + width - 52, top + bottom + 6, 52, function() page += 1; draw() end, false, page == pages)
 				bottom += 60
 			end
 			return bottom
@@ -203,8 +243,8 @@ return function(parent: Instance, model: any): Frame
 			if model.view == "Loadout" then height = loadout(4, y, w - 8)
 			elseif model.view == "Details" and selected then height = details(4, y, w - 8)
 			else
-				-- The actor strip already identifies the selection. Keep the first
-				-- complete item row inside the 320x568 management content viewport.
+				-- Keep the first complete item row visible on phone while the
+				-- category picker is collapsed, even with the companion selector.
 				height = inventory(4, y, w - 8)
 			end
 		elseif desktop then

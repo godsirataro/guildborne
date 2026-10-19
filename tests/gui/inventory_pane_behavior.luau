@@ -8,7 +8,7 @@ local function find(root,name)
  if root.Name==name then return root end
  for _,c in ipairs(root:GetChildren())do local hit=find(c,name);if hit then return hit end end
 end
-local function make(width,view,busy,language)
+local function make(width,view,busy,language,actorCount)
  local parent=Instance.new("Frame")
  local calls={}
  local T=function(key)return Locale.translate(language or "en",key)end
@@ -18,15 +18,19 @@ local function make(width,view,busy,language)
  filters={{id="All",label="All",selected=true,onSelect=function()calls.filter=true end}},items={},shopLabel="Shop",sortLabel="Sort: Name",compatibleLabel="Compatible",onShop=function()calls.shop=true end,onSort=function()end,onCompatible=function()end,
  onView=function(v)calls.view=v end,onBack=function()calls.back=true end,
  selected={name="Training Sword",definitionId="training_sword",description="Actual item description",binding="Account bound",stats="HP0 Attack5 Defense0",actions={{name="Assign_one",label="Equip",enabled=not busy,callback=function()calls.assign=true end}}}}
+ model.actors={}
+ for i=1,actorCount or 1 do table.insert(model.actors,{id=if i==1 then "player" else "hero"..i,name=T("Your character").." "..i,selected=i==1,onSelect=function()calls.actor=i end})end
+ model.filters={}
+ for _,kind in ipairs({"All","Weapon","Armor","Accessory","Material"})do table.insert(model.filters,{id=kind,label=T(kind),selected=kind=="All",onSelect=function()calls.filter=kind end})end
  for i=1,30 do table.insert(model.items,{id=tostring(i),name="Sword "..i,definitionId="training_sword",selected=i==1,onSelect=function()calls.item=i end})end
  local root=Pane(parent,model);root.AbsoluteSize={X=width,Y=700};root:GetPropertyChangedSignal("AbsoluteSize"):Fire()
  return root,calls
 end
 test("medium first viewport exposes actual actor and grid then selected details in place",function()
  local root,calls=make(744)
- assert(find(root,"SelectedActorLoadout") and find(root,"ItemGrid").Position.Y.Offset==208)
+ assert(find(root,"SelectedActorLoadout") and find(root,"ItemGrid").Position.Y.Offset<208)
  assert(not find(root,"SelectedItemDetails"));find(root,"Item_1").Activated:Fire();assert(calls.item==1);root:Destroy()
- root,calls=make(744,"Details");assert(not find(root,"ItemGrid") and find(root,"SelectedItemDetails").Position.Y.Offset==94)
+ root,calls=make(744,"Details");assert(not find(root,"ItemGrid") and find(root,"SelectedItemDetails").Position.Y.Offset==38)
  find(root,"BackToItems").Activated:Fire();assert(calls.back);find(root,"Assign_one").Activated:Fire();assert(calls.assign);root:Destroy()
 end)
 test("desktop has three panes and phone switches real view without squeezing columns",function()
@@ -43,6 +47,7 @@ test("busy native controls cannot dispatch and destroyed controls remain inert",
 end)
 test("paging limits item previews and reaches every item",function()
  local root,calls=make(744)
+ assert(find(root,"NextItems").Text==utf8.char(0x203A) and find(root,"PreviousItems").Text==utf8.char(0x2039),"pager glyph encoding")
  assert(find(root,"Item_24") and not find(root,"Item_25"))
  find(root,"NextItems").Activated:Fire();assert(find(root,"Item_25") and find(root,"Item_30") and not find(root,"Item_1"))
  find(root,"Item_30").Activated:Fire();assert(calls.item==30);root:Destroy()
@@ -51,5 +56,80 @@ test("Thai headings and new controls retain live localized text",function()
  local root=make(288,"Details",false,"th")
  assert(find(root,"View_Details").Text=="รายละเอียด" and find(root,"ItemName").Font==Enum.Font.GothamMedium)
  assert(Locale.translate("th","Actor preview unavailable")~="Actor preview unavailable");root:Destroy()
+end)
+local function bottom(node)return node.Position.Y.Offset+node.Size.Y.Offset end
+local function inside(child,parent)
+ assert(child.Position.X.Offset>=0 and child.Position.Y.Offset>=0,"negative child origin")
+ assert(child.Position.X.Offset+child.Size.X.Offset<=parent.Size.X.Offset+1,"category cropped horizontally")
+ assert(bottom(child)<=parent.Size.Y.Offset+1,"category cropped vertically")
+end
+local function unique(root)
+ local seen={};for _,child in ipairs(root:GetChildren())do assert(not seen[child.Name],"duplicate "..child.Name);seen[child.Name]=true end
+end
+for _,language in ipairs({"en","th"})do
+ for _,actorCount in ipairs({0,1,6})do
+  for _,width in ipairs({280,744,968})do
+   test("density matrix "..language.." actors="..actorCount.." width="..width,function()
+    local root,calls=make(width,"Items",false,language,actorCount)
+    unique(root)
+    local actors=find(root,"ActorSelection")
+    assert((actors~=nil)==(actorCount>1),"unnecessary actor selector retains empty space")
+    if actors then
+     local last=find(actors,"Actor_hero6");assert(last and actors.CanvasSize.X.Offset>=last.Position.X.Offset+last.Size.X.Offset)
+     last.Activated:Fire();assert(calls.actor==6,"last hero unreachable")
+    end
+    local categories=find(root,"ItemCategories")
+    local grid=find(root,"ItemGrid")
+    if width<600 then
+     assert(bottom(find(root,"View_Items"))<=categories.Position.Y.Offset,"view tabs overlap categories")
+     assert(grid.Position.Y.Offset+grid:FindFirstChildOfClass("UIGridLayout").CellSize.Y.Offset<=380,"first complete phone row below fold")
+     local picker=find(root,"CategoryPicker");assert(picker and picker.Size.Y.Offset>=48)
+     assert(picker.Text==Locale.translate(language,"All").."  "..utf8.char(0x25BE),"picker glyph encoding")
+     local closedGridY=grid.Position.Y.Offset
+     picker.Activated:Fire();categories=find(root,"ItemCategories");grid=find(root,"ItemGrid")
+     assert(find(root,"CategoryPicker").Text==Locale.translate(language,"All").."  "..utf8.char(0x25B4),"open picker glyph encoding")
+     assert(grid.Position.Y.Offset>closedGridY,"expanded categories overlay grid")
+    else
+     local stage=find(root,"ActorStage");assert(stage)
+     if width<900 then assert(stage.Size.Y.Offset>=180,"medium portrait too small")end
+     assert(find(root,"SelectedActorLoadout").Position.Y.Offset==categories.Position.Y.Offset,"actor stage moves grid start")
+     if actorCount<=1 then assert(categories.Position.Y.Offset<=38,"empty header gap retained")end
+    end
+    local tools=find(root,"InventoryTools");assert(tools.Position.Y.Offset>=bottom(categories),"categories overlap tools")
+    assert(grid.Position.Y.Offset>=bottom(tools),"tools overlap grid")
+    local boxes={}
+    for _,kind in ipairs({"All","Weapon","Armor","Accessory","Material"})do
+     local button=find(root,"Filter_"..kind);assert(button and button.Text==Locale.translate(language,kind))
+     assert(button.TextSize>=15 and button.Size.Y.Offset>=48,"category unreadable or untappable")
+     inside(button,categories)
+     for _,other in ipairs(boxes)do
+      assert(button.Position.X.Offset>=other.Position.X.Offset+other.Size.X.Offset or other.Position.X.Offset>=button.Position.X.Offset+button.Size.X.Offset or button.Position.Y.Offset>=bottom(other) or other.Position.Y.Offset>=bottom(button),"category overlap")
+     end
+     table.insert(boxes,button)
+    end
+    -- Check bounds before callbacks; a phone selection intentionally closes its menu.
+    find(root,"Filter_Material").Activated:Fire();assert(calls.filter=="Material")
+    if width<600 then
+     assert(not find(root,"Filter_Material"),"phone selection did not collapse")
+     find(root,"View_Loadout").Activated:Fire();assert(calls.view=="Loadout")
+    end
+    root:Destroy()
+    if width<600 then
+     root=make(width,"Loadout",false,language,actorCount)
+     assert(find(root,"SelectedActorLoadout") and find(root,"SimulatedPreview"),"actor view lost")
+     root:Destroy()
+    end
+   end)
+  end
+ end
+end
+test("busy phone picker and category controls cannot dispatch",function()
+ local root,calls=make(280,"Items",true,"th",6)
+ find(root,"CategoryPicker").Activated:Fire()
+ assert(not find(root,"Filter_Material") and not calls.filter)
+ root:Destroy()
+ local medium,mediumCalls=make(744,"Items",true,"en",6)
+ find(medium,"Filter_Material").Activated:Fire();find(medium,"Actor_hero6").Activated:Fire()
+ assert(not mediumCalls.filter and not mediumCalls.actor);medium:Destroy()
 end)
 print("SUMMARY "..passed.." inventory pane simulations passed")

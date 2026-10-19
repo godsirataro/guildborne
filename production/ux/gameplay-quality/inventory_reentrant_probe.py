@@ -64,7 +64,7 @@ local names={}
 for _,child in ipairs(root:GetChildren())do
  assert(not names[child.Name],"duplicate pane child: "..child.Name);names[child.Name]=true
 end
-assert(#root:GetChildren()==7 and names.ItemGrid and names.SelectedActorLoadout)
+assert(#root:GetChildren()==6 and names.ItemGrid and names.SelectedActorLoadout and not names.ActorSelection)
 assert(root:FindFirstChild("InventoryHeading").Size.X.Offset==744*.55,"latest width lost")
 root:Destroy();assert(disposed==2)
 print("PASS yielded draw coalesces three resizes without duplicate children and uses latest width")

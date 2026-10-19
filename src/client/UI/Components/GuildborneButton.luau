@@ -1,7 +1,7 @@
 --!strict
 local Theme = require(script.Parent.Parent.DesignSystem.Theme)
 local Ornament = require(script.Parent.RegalOrnament)
-export type Options = { name: string?, text: string?, size: UDim2?, primary: boolean?, onActivated: (() -> ())? }
+export type Options = { name: string?, text: string?, size: UDim2?, primary: boolean?, quiet: boolean?, onActivated: (() -> ())? }
 export type Handle = { button: TextButton, setDisabled: (boolean) -> (), setPending: (boolean) -> (), setSelected: (boolean) -> (), destroy: () -> () }
 local Button = {}
 function Button.create(parent: Instance, options: Options?): Handle
@@ -15,11 +15,12 @@ function Button.create(parent: Instance, options: Options?): Handle
 	local gradient = Instance.new("UIGradient")
 	gradient.Color = ColorSequence.new(Color3.new(1, 1, 1), Color3.fromRGB(182, 177, 177)); gradient.Rotation = 90; gradient.Parent = button
 	local padding = Instance.new("UIPadding")
-	padding.PaddingLeft = UDim.new(0, if opts.primary then 30 else 18); padding.PaddingRight = padding.PaddingLeft; padding.Parent = button
+	padding.PaddingLeft = UDim.new(0, if opts.quiet then 8 else if opts.primary then 30 else 18); padding.PaddingRight = padding.PaddingLeft; padding.Parent = button
 	local corner = Instance.new("UICorner"); corner.CornerRadius = UDim.new(0, 2); corner.Parent = button
 	local border = Instance.new("UIStroke")
 	border.ApplyStrokeMode = Enum.ApplyStrokeMode.Border; border.Parent = button
 	local inset = Instance.new("Frame")
+	inset.Visible = opts.quiet ~= true
 	inset.Name = "ButtonBevel"; inset.BackgroundTransparency = 1; inset.Position = UDim2.fromOffset(4, 4)
 	inset.Size = UDim2.new(1, -8, 1, -8); inset.Active = false; inset.Parent = button
 	local innerRim = Instance.new("UIStroke"); innerRim.Color = Theme.Colors.GoldShadow; innerRim.Parent = inset
