@@ -23,7 +23,7 @@ local function node(path)local c=tree;for p in path:gmatch("[^/]+")do if not c[p
 '''
 for p in paths:code+='modules[node('+q(p[:-5])+')]='+q((ROOT/p).read_text(encoding='utf-8-sig'))+'\n'
 code+='modules[node("src/client/UI/ItemViewport")]=[[return function(parent) local v=Instance.new("Frame");v.Size=UDim2.fromOffset(80,80);v.Parent=parent;return v end]]\n'
-code+='modules[node("src/client/UI/Components/InventoryActorPreview")]=[[return function(parent) local v=Instance.new("Frame");v.Name="SimulatedPreview";v.Size=UDim2.fromScale(1,1);v.Parent=parent;return {destroy=function()v:Destroy()end}end]]\n'
+code+='modules[node("src/client/UI/Components/InventoryActorPreview")]=[[return function(parent) local v=Instance.new("Frame");v.Name="SimulatedPreview";v.Size=UDim2.fromScale(1,1);v.Parent=parent;local host=Instance.new("Frame");host.Name="InventoryActorPreview";host.Parent=v;local stage=Instance.new("Frame");stage.Name="PortraitStage";stage.Parent=host;local compass=Instance.new("Frame");compass.Parent=stage;local axis=Instance.new("Frame");axis.Name="SimulatedCompassAxis";axis.Parent=compass;local viewport=Instance.new("ViewportFrame");viewport.Name="ActorViewport";viewport.Parent=host;local fallback=Instance.new("TextLabel");fallback.Name="PreviewUnavailable";fallback.Parent=host;return {destroy=function()v:Destroy()end}end]]\n'
 code+='env.game={ReplicatedStorage={Shared=node("src/shared")}}\nenv.UI=node("src/client/UI")\n'
 code+=r'''
 env.require=function(target)if cache[target]then return cache[target]end;assert(modules[target],"unmapped module");local fn=assert(loadstring(modules[target]));setfenv(fn,setmetatable({script=target},{__index=env}));cache[target]=fn();return cache[target]end

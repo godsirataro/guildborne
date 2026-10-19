@@ -349,6 +349,36 @@ return function(parent: Instance, model: any): Frame
 			for _, child in ipairs(node:GetChildren()) do layer(child, if child:IsA("GuiObject") then z + 1 else z) end
 		end
 		layer(root, 20)
+		-- Depth alone is not painter order: decorative grandchildren must stay
+		-- behind the actor, while count plates must stay above nested item art.
+		local function flatLayer(node: Instance, z: number)
+			if node:IsA("GuiObject") then node.ZIndex = z end
+			for _, child in ipairs(node:GetChildren()) do flatLayer(child, z) end
+		end
+		local function highestLayer(node: Instance): number
+			local z = if node:IsA("GuiObject") then node.ZIndex else 0
+			for _, child in ipairs(node:GetChildren()) do z = math.max(z, highestLayer(child)) end
+			return z
+		end
+		local function orderArtwork(node: Instance)
+			if node.Name == "InventoryActorPreview" then
+				local viewport = node:FindFirstChild("ActorViewport")
+				local stage = node:FindFirstChild("PortraitStage")
+				if viewport and viewport:IsA("GuiObject") and stage then flatLayer(stage, viewport.ZIndex - 1) end
+				local fallback = node:FindFirstChild("PreviewUnavailable")
+				if viewport and viewport:IsA("GuiObject") and fallback and fallback:IsA("GuiObject") then fallback.ZIndex = viewport.ZIndex + 1 end
+			end
+			local artwork = node:FindFirstChild("ItemArtwork")
+			if artwork and node:GetAttribute("ItemId") ~= nil then
+				local top = highestLayer(artwork)
+				local corners = node:FindFirstChild("SelectedCorners")
+				if corners then flatLayer(corners, top + 1) end
+				local quantity = node:FindFirstChild("Quantity")
+				if quantity then flatLayer(quantity, top + 2) end
+			end
+			for _, child in ipairs(node:GetChildren()) do orderArtwork(child) end
+		end
+		orderArtwork(root)
 	end
 	-- Asset-backed constructors may yield while their modules initialize. A size
 	-- notification during that yield must request a later pass, never start a

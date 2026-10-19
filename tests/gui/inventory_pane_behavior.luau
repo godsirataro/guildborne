@@ -88,6 +88,27 @@ test("paging destroys storage callbacks and decorative corners never become hit 
  old.Activated:Fire();assert(calls.item==nil)
  find(root,"Item_25").Activated:Fire();assert(calls.item==25);root:Destroy()
 end)
+test("pane painter order keeps nested stage behind avatar and quantity above item artwork",function()
+ local function visit(node,fn)fn(node);for _,child in ipairs(node:GetChildren())do visit(child,fn)end end
+ for _,width in ipairs({280,744,968})do
+  local root=make(width,if width<600 then "Loadout" else "Items")
+  local preview=find(root,"InventoryActorPreview");local viewport=find(preview,"ActorViewport")
+  visit(find(preview,"PortraitStage"),function(node)
+   if node:IsA("GuiObject")then assert(node.ZIndex<viewport.ZIndex,"decoration paints over avatar")end
+  end)
+  assert(find(preview,"PreviewUnavailable").ZIndex>viewport.ZIndex)
+  root:Destroy()
+  root=make(width,"Items")
+  local tile=find(root,"Item_2");local quantity=find(tile,"Quantity")
+  local art=find(tile,"ItemArtwork");local top=0
+  visit(art,function(node)if node:IsA("GuiObject")then top=math.max(top,node.ZIndex)end end)
+  assert(quantity.ZIndex>top,"item artwork covers quantity plate")
+  visit(find(tile,"SelectedCorners"),function(node)
+   if node:IsA("GuiObject")then assert(node.ZIndex>top,"artwork covers selected corners")end
+  end)
+  root:Destroy()
+ end
+end)
 local function bottom(node)return node.Position.Y.Offset+node.Size.Y.Offset end
 local function inside(child,parent)
  assert(child.Position.X.Offset>=0 and child.Position.Y.Offset>=0,"negative child origin")
