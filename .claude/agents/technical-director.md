@@ -106,7 +106,7 @@ Controller Phase C after reviewed A/B. Compose private proof and optional campai
 
 Environment: local; skill: guildborne-director
 
-Write scopes: src/server/Services/PlayerDataService.luau, src/server/Services/CampaignService.luau, src/server/ServerBootstrap.server.luau, src/shared/Network/Protocol.luau, tests/run.luau, tests/class3_transaction_integration.luau, tests/run_class3_transaction_integration.luau, production/integration/class3-proof
+Write scopes: src/server/Services/PlayerDataService.luau, src/server/Services/CampaignService.luau, src/server/ServerBootstrap.server.luau, src/shared/Network/Protocol.luau, tests/run.luau, tests/class3_transaction_integration.luau, tests/run_class3_transaction_integration.luau, production/integration/class3-proof, src/server/Services/NetworkService.luau, src/server/Services/HeroMentorWorld.luau, src/server/Services/CrosshavenWorld.luau, src/shared/Config/Localization.luau
 
 Required checks: source-contract, regression, independent-review
 

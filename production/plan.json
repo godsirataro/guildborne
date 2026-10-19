@@ -1704,7 +1704,11 @@
         "tests/run.luau",
         "tests/class3_transaction_integration.luau",
         "tests/run_class3_transaction_integration.luau",
-        "production/integration/class3-proof"
+        "production/integration/class3-proof",
+        "src/server/Services/NetworkService.luau",
+        "src/server/Services/HeroMentorWorld.luau",
+        "src/server/Services/CrosshavenWorld.luau",
+        "src/shared/Config/Localization.luau"
       ],
       "brief": "Controller Phase C after reviewed A/B. Compose private proof and optional campaign objective atomically through existing execute/save pipeline. Public clients submit bounded start/cancel intent only. Preserve launch restrictions and legacy/profile/economy fencing. Enable policy only when producers and UI integrated; no default Runtime/ReleaseContent changes. Native earned evidence separate."
     },
@@ -1791,7 +1795,7 @@
       "reason": "Dedicated commerce specialist file could not be uploaded: connector safety status was indeterminate. No permission or safeguard bypass attempted. Existing shop UI may be inspected; new receipt processing and live commerce require a separate reviewed task."
     }
   ],
-  "revision": 6,
+  "revision": 7,
   "externalGates": [
     "Roblox publishing",
     "asset uploads/ownership",

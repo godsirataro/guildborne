@@ -27,7 +27,7 @@
     ".claude/agents/release-lead.md": "a8da11aef502862b2a9b5cc015c02bd9d5179d1105a199210bb0a38418e4073d",
     ".claude/agents/rigging-artist.md": "c640257dd44954865fc63927c09e37ce550e810c1dd50b74294eeaaa51a46ed7",
     ".claude/agents/systems-engineer.md": "77b952eccfccb3b7abd0b1a9e7cc919015cd1a6199ebe0cf47d82f06d4c12457",
-    ".claude/agents/technical-director.md": "5b2c56f3da6a01b5da9120fb3b3f131bdf4ba020372d958df4d44a01a87380c3",
+    ".claude/agents/technical-director.md": "4aa05df512f3f9afe5db8d2135fa602105d5835c4ded2454a4ef5e80fc939068",
     ".claude/agents/tools-engineer.md": "cf62b23c42f9d3d9e4a250516341aaf43787e97114a4682be0eae3eddef83272",
     ".claude/agents/ui-artist.md": "ddf56ca4d49a9bec265e8736c4f9eeaee258449089c006c2a3bf9a5cf2c2f1e1",
     ".claude/agents/ui-designer.md": "30c5922a91d1d3085e003f089d13eeedc8efa139af77d18cef40380a8e230577",
@@ -91,7 +91,7 @@
     ".codex/agents/release-lead.toml": "2780f9e304c255c12cff542f2c5673cb39debe3cd44525e3ac51ba36e925251b",
     ".codex/agents/rigging-artist.toml": "2b7068c6b2958914ed58a7ccebf4b81473a2676dc66ddc4ed665f086f50f1abb",
     ".codex/agents/systems-engineer.toml": "cf23a3273194ccde074812dabae3a34a0dd7206b45b59fb70042515929f08762",
-    ".codex/agents/technical-director.toml": "db274a36e8a8902ed03cca5f0c9cb47a600cc1bf7978047c261429f1ab49c623",
+    ".codex/agents/technical-director.toml": "a3e11422465f917ed6036ae230f62d61ea58c6265360d443ebbdea942cec290b",
     ".codex/agents/tools-engineer.toml": "a50fa31555059899ff10f98146020038a5b087ec4e90160934040d6855e3fd39",
     ".codex/agents/ui-artist.toml": "2c964f88eb549a08ad72def6f054f5dde7ef47fc47765c3d3b7f4bfd5d8fafc7",
     ".codex/agents/ui-designer.toml": "82e8b566c46fff17f05fae4d55e4ed8328e845e79dc103fffbf3b2cbede1b13b",
@@ -134,11 +134,11 @@
       ".agents/skills/guildborne-war-territory/SKILL.md": "82ad7a43eed0c84aee078c803fcceaac8401fb87a6b82c176847fa8e6ded247d",
       ".agents/skills/guildborne-world/SKILL.md": "ace43994879321dd5197ba01d7944ea072496cb230985b51c5e50c1a71c7c4e1",
       "AGENTS.md": "a593dfabad72ff1fe02d59a8e25630c3eb555d22965588f4840ecbd3365b454c",
-      "production/plan.json": "f28a8f86e741864b7973655e9a18565719f02edc910578f46efae3374254e0ce",
+      "production/plan.json": "f62b60ad670b5b9cbb30facc7ca9f499a5cd0ddf94bbd33b167a94d00833dee8",
       "production/studio/studio.json": "ed21a3cd7c6cb882d29a0ff9b6cb4e3b7d9d3a0659b033293ea33ec007e9838a",
       "tools/agentic/studio.py": "9bf0a3e2ce4230648eb4f8d4af8e7250527510d17a23f0080c0dfd3548a7a7c5"
     },
-    "planSha256": "a9623d2b23b698cc974b5a5e36e7453cf77844a55a6db9fb6b1eb31440118041",
+    "planSha256": "8c7405e84427cf64ae4e455187d23cfabfb8019213b399b2031aa3f1e224d09a",
     "specSha256": "18a814ad18087bac4be152ef0f8cd158ef4a2adede4351b0f8d2da552c75b2f8"
   }
 }
