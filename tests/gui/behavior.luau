@@ -176,7 +176,9 @@ test("short Title reserves room for controls and uses single-line localized acti
   h.update({status="Active",data={language=language,progression={novice={claimed=0}}}})
   for _,name in ipairs({"Continue","Language","Settings","Credits"}) do
    local button=find(parent,name)
-   assert(button.TextScaled and not button.TextWrapped)
+    -- Roblox enables wrapping when scaling is enabled; single-line appearance
+    -- is governed by the actual available size, not an impossible false flag.
+    assert(button.TextScaled and button.TextWrapped)
   end
   assert(find(parent,"Language").Text==(if language=="en" then "Language: EN" else "ภาษา: ไทย"))
  end

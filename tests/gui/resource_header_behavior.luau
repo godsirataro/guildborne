@@ -25,6 +25,43 @@ end
 local function overlap(a,b)
  return a.x<b.x+b.w and b.x<a.x+a.w and a.y<b.y+b.h and b.y<a.y+a.h
 end
+
+test("text property simulation follows the native observed coupling on repeated writes",function()
+ for _,class in ipairs({"TextLabel","TextButton","TextBox"}) do
+  local label=Instance.new(class)
+  for _=1,3 do
+   label.TextScaled=true
+   assert(label.TextScaled and label.TextWrapped,"Scaling must enable wrapping")
+   label.TextWrapped=false
+   assert(not label.TextScaled and not label.TextWrapped,"Disabling wrap must disable scaling")
+   label.TextWrapped=true
+   assert(not label.TextScaled,"Wrapping alone must not enable scaling")
+   label.TextScaled=true
+   label.TextScaled=false
+   assert(label.TextWrapped,"Disabling scale must preserve wrapping")
+  end
+  label:Destroy()
+ end
+end)
+
+test("all resource labels keep native fitting and explicit hierarchy through updates",function()
+ local gui,header=fixture(320,640)
+ local root=assert(gui:FindFirstChild("ResourceHeader"))
+ local plaque=assert(root:FindFirstChild("ResourcePlaque"))
+ for _,copy in ipairs({{nil,"","กำลังโหลด"},{"0","Gold · Hall Lv0","Loading"},
+  {"9007199254740991","ทอง · หอกิลด์ 20","กำลังโหลด"}}) do
+  header.update(copy[1],copy[2],copy[3])
+  for name,maximum in pairs({GoldValue=22,ResourceCaption=13,ResourceLoading=16}) do
+   local label=assert(plaque:FindFirstChild(name))
+   local constraint=assert(label:FindFirstChild("UITextSizeConstraint"))
+   assert(label.TextScaled and label.TextWrapped,name.." lost native scaling")
+   assert(label.TextSize==maximum and constraint.MaxTextSize==maximum,name.." lost explicit fallback size")
+  end
+ end
+ assert(plaque:FindFirstChild("GoldValue").Size[4]==24)
+ assert(plaque:FindFirstChild("ResourceCaption").Size[4]==16,"Caption geometry changed")
+ header.destroy();gui:Destroy()
+end)
 test("header lanes fit and clear existing HUD across breakpoints",function()
  local count=0
  for _,w in ipairs({320,390,600,796,844,899,900,945,1210,1920}) do

@@ -32,7 +32,10 @@ function Header.new(gui: ScreenGui)
 	local function label(name: string, color: Color3, minimum: number, maximum: number): TextLabel
 		local text = Instance.new("TextLabel"); text.Name = name; text.BackgroundTransparency = 1
 		text.Font = Theme.Fonts.Body; text.TextColor3 = color; text.TextXAlignment = Enum.TextXAlignment.Left
-		text.TextScaled = true; text.TextWrapped = false; text.Text = ""; text.Parent = plaque
+		-- Native Roblox disables TextScaled when TextWrapped is set false later.
+		-- Set an explicit fallback size and keep the coupled fitting flags enabled.
+		text.TextSize = maximum; text.TextWrapped = true; text.TextScaled = true
+		text.Text = ""; text.Parent = plaque
 		local size = Instance.new("UITextSizeConstraint"); size.MinTextSize = minimum; size.MaxTextSize = maximum; size.Parent = text
 		return text
 	end
