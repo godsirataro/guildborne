@@ -1,0 +1,473 @@
+{
+  "status": "REVIEWED_SCENERY_CANDIDATE_NATIVE_PENDING",
+  "baseCommit": "ccd40f063b3111d38fde5a18ac70b732b4d102ce",
+  "adminDependency": "f7924799eaaefae3199d336052842197e7d3b238",
+  "files": {
+    "assets/production/world-slice/ironveil-ore-yard/.gitattributes": {
+      "sha256": "50524bc54be6323af4266e11f2ca0b4d574bad39253c8c5293eca7d3173fa822",
+      "bytes": 43
+    },
+    "assets/production/world-slice/ironveil-ore-yard/after/approach.png": {
+      "sha256": "0f3d3b61daa8ad4ee672031ab181e58be91afe89c4f68c5c56a55d1130cf377c",
+      "bytes": 1527385
+    },
+    "assets/production/world-slice/ironveil-ore-yard/after/blender-exit.json": {
+      "sha256": "d3f96c5dabb03697dba7e94226a049c29d1bfcd8960b747b9fa23468b01b2177",
+      "bytes": 1592
+    },
+    "assets/production/world-slice/ironveil-ore-yard/after/blender-stderr.txt": {
+      "sha256": "b12e4627a861701896f06bf4b928158da4a0e25fef409c47008d422d3fcd9c7d",
+      "bytes": 815
+    },
+    "assets/production/world-slice/ironveil-ore-yard/after/blender-stdout.txt": {
+      "sha256": "6130de45e9c193761e6c806e43bd8fc0c10bf8c9bb781b018a34f6cf5e76a8e5",
+      "bytes": 697
+    },
+    "assets/production/world-slice/ironveil-ore-yard/after/player_arrival.png": {
+      "sha256": "431c60a57a28cb66345b68d720edb497b4269720d801769010663c834c96f211",
+      "bytes": 1631834
+    },
+    "assets/production/world-slice/ironveil-ore-yard/after/render-evidence.json": {
+      "sha256": "1608956495c5228b89ed9d25043f526d42110f713c670a636942814585b128ad",
+      "bytes": 1001
+    },
+    "assets/production/world-slice/ironveil-ore-yard/after/reverse.png": {
+      "sha256": "40f96bd434fb067d499e953d54a175c556acf24b3f9424bc2acc7ca12f38b992",
+      "bytes": 1568562
+    },
+    "assets/production/world-slice/ironveil-ore-yard/after/skyline.png": {
+      "sha256": "8732b2e10930a5ad968781065d8682dd5b3bb0584a78a7f32c74a416d31e1055",
+      "bytes": 1596832
+    },
+    "assets/production/world-slice/ironveil-ore-yard/after/source.blend": {
+      "sha256": "01a3400c6693557d33beeb343e88bf64d55c59aa08edbe25e2bcf18af558472f",
+      "bytes": 721437
+    },
+    "assets/production/world-slice/ironveil-ore-yard/before/approach.png": {
+      "sha256": "1342111352b25d26499d591260f76e3810d23171a4e648ecbd6dd0400a9a128e",
+      "bytes": 1403772
+    },
+    "assets/production/world-slice/ironveil-ore-yard/before/blender-exit.json": {
+      "sha256": "9e31244cc4b52924d6b75a3d090b7c28df321270da33cbb819cf6676bac55504",
+      "bytes": 1593
+    },
+    "assets/production/world-slice/ironveil-ore-yard/before/blender-stderr.txt": {
+      "sha256": "b12e4627a861701896f06bf4b928158da4a0e25fef409c47008d422d3fcd9c7d",
+      "bytes": 815
+    },
+    "assets/production/world-slice/ironveil-ore-yard/before/blender-stdout.txt": {
+      "sha256": "8b6c48cbf0ca750652f91c79fea735889912dd45b5b2cfae847374a2eeddf6e4",
+      "bytes": 701
+    },
+    "assets/production/world-slice/ironveil-ore-yard/before/player_arrival.png": {
+      "sha256": "938c2e3eb59f032e02f6db11180cea54ba14590ea41c14c961349433d14c5a5e",
+      "bytes": 1409258
+    },
+    "assets/production/world-slice/ironveil-ore-yard/before/render-evidence.json": {
+      "sha256": "8e75370611e697181c52356ba3e0f62c014feae76e92896fd40bb1b31ee8b698",
+      "bytes": 1002
+    },
+    "assets/production/world-slice/ironveil-ore-yard/before/reverse.png": {
+      "sha256": "c993d898ed7fc07c9d6e87d7310b1879b17aba777aef7011bbef26207cf229c7",
+      "bytes": 1429404
+    },
+    "assets/production/world-slice/ironveil-ore-yard/before/skyline.png": {
+      "sha256": "ecfcc058746ba9522b3be164ef39abe83f1ecd12c3241478c67c0a047555d3c4",
+      "bytes": 1468795
+    },
+    "assets/production/world-slice/ironveil-ore-yard/before/source.blend": {
+      "sha256": "641189fe96371cf634e3ef603ecff649cdf8c9585639064f9284ee8e3ff679af",
+      "bytes": 443951
+    },
+    "assets/production/world-slice/ironveil-ore-yard/build-receipt.json": {
+      "sha256": "0de61b97dc08bad78c84701071312e57f502143beb0a903d910070eb49d7f1ae",
+      "bytes": 390
+    },
+    "assets/production/world-slice/ironveil-ore-yard/build.stderr.txt": {
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "bytes": 0
+    },
+    "assets/production/world-slice/ironveil-ore-yard/build.stdout.txt": {
+      "sha256": "f78d8e9de834f8f60b3184a9f48055d3d818e62f8c4703c84b6ef781a7374b08",
+      "bytes": 161
+    },
+    "assets/production/world-slice/ironveil-ore-yard/iteration-01/build.py": {
+      "sha256": "ee2905633561ad06e6285938ccf1e9535eb8b031ac874206eec9ec0100ad05e3",
+      "bytes": 11141
+    },
+    "assets/production/world-slice/ironveil-ore-yard/iteration-01/composition.json": {
+      "sha256": "eb8eec5bb49ab42a7efb16114ea47752c6e9491d57b03e50fb186929d6cdd1be",
+      "bytes": 921
+    },
+    "assets/production/world-slice/ironveil-ore-yard/iteration-01/metrics.json": {
+      "sha256": "fb2c6b67c969d9a1d3056e305de6587957f53a794386c60942e01291d53412b6",
+      "bytes": 158
+    },
+    "assets/production/world-slice/ironveil-ore-yard/iteration-01/provenance.json": {
+      "sha256": "3bf708e81c3bb3956e6a89637d70dff31f7c9659a48c2f58fcdd97fd4f911530",
+      "bytes": 1019
+    },
+    "assets/production/world-slice/ironveil-ore-yard/iteration-01/scenery.mesh.json": {
+      "sha256": "8fed9a1173794a80914baadb9e5bfa803ad2c9532d1d81905d7a6218dd5d9d98",
+      "bytes": 1312241
+    },
+    "assets/production/world-slice/ironveil-ore-yard/iteration-01/solids.json": {
+      "sha256": "42d8cc7169f02a7e0d64dfe5cc80020c398ad99869524b02eb0b0bc1831e198a",
+      "bytes": 97970
+    },
+    "assets/production/world-slice/ironveil-ore-yard/iteration-01/STATUS.json": {
+      "sha256": "685e9aa472762317544ee5b1a312745ddf79d0e1b7488e2e692fb92e96038796",
+      "bytes": 258
+    },
+    "assets/production/world-slice/ironveil-ore-yard/iteration-02/after/approach.png": {
+      "sha256": "a87cc9b28ba82a0a45b4636490af05548579a458db2174121d75c4753fff9b07",
+      "bytes": 1502282
+    },
+    "assets/production/world-slice/ironveil-ore-yard/iteration-02/after/blender-exit.json": {
+      "sha256": "91cd37fe3961e3c440d7ac615241b73a5c83a4f0e2bc79d997cc0b45d9440c27",
+      "bytes": 1593
+    },
+    "assets/production/world-slice/ironveil-ore-yard/iteration-02/after/blender-stderr.txt": {
+      "sha256": "b12e4627a861701896f06bf4b928158da4a0e25fef409c47008d422d3fcd9c7d",
+      "bytes": 815
+    },
+    "assets/production/world-slice/ironveil-ore-yard/iteration-02/after/blender-stdout.txt": {
+      "sha256": "fbb58f4ed5779e56c025761f8875a40754a7e8963f3c2537c05426686bbd471a",
+      "bytes": 697
+    },
+    "assets/production/world-slice/ironveil-ore-yard/iteration-02/after/player_arrival.png": {
+      "sha256": "f1a0fb08268189d4bee2829cb70cf3e8e2d42008d2d42b1524a208c2280d0991",
+      "bytes": 1607291
+    },
+    "assets/production/world-slice/ironveil-ore-yard/iteration-02/after/render-evidence.json": {
+      "sha256": "b0751e8021691f4c63c654473bc72eebedb447074246345ab5c6f406e97a3593",
+      "bytes": 1001
+    },
+    "assets/production/world-slice/ironveil-ore-yard/iteration-02/after/reverse.png": {
+      "sha256": "6d4e1feda04d42e8a26254a9cdf5b10b94e858c0463eec4c660266c8446dfb66",
+      "bytes": 1544509
+    },
+    "assets/production/world-slice/ironveil-ore-yard/iteration-02/after/skyline.png": {
+      "sha256": "21c67ca5d1e02ac7640fc4306d8b5f28b188bb407c66fb8207213c81e6427b60",
+      "bytes": 1569683
+    },
+    "assets/production/world-slice/ironveil-ore-yard/iteration-02/after/source.blend": {
+      "sha256": "a383138457da56d4702c48320b06fbadcb977fd973c493b96571ca9d94ef3acf",
+      "bytes": 678047
+    },
+    "assets/production/world-slice/ironveil-ore-yard/iteration-02/before/approach.png": {
+      "sha256": "772224163dc770f90d9d48a7108187492198d9b26f6063f5f938a9ca0d7431d0",
+      "bytes": 1403772
+    },
+    "assets/production/world-slice/ironveil-ore-yard/iteration-02/before/blender-exit.json": {
+      "sha256": "32a12eba8f05089e028f9354ff2eb482eb8ca4cfc398807d99ae5590b6e48df3",
+      "bytes": 1595
+    },
+    "assets/production/world-slice/ironveil-ore-yard/iteration-02/before/blender-stderr.txt": {
+      "sha256": "b12e4627a861701896f06bf4b928158da4a0e25fef409c47008d422d3fcd9c7d",
+      "bytes": 815
+    },
+    "assets/production/world-slice/ironveil-ore-yard/iteration-02/before/blender-stdout.txt": {
+      "sha256": "134f4bee46dab01e89b6591ef8a8fcaa5a8b86477779ecc198d8af4ae865ddd4",
+      "bytes": 701
+    },
+    "assets/production/world-slice/ironveil-ore-yard/iteration-02/before/player_arrival.png": {
+      "sha256": "ea4dd051786e7085e80a33ed82e68ad484814b1c31cb340d017cd3b996ef56e7",
+      "bytes": 1409258
+    },
+    "assets/production/world-slice/ironveil-ore-yard/iteration-02/before/render-evidence.json": {
+      "sha256": "11a5c28090e3ab2c675566cda4a2c51099f8583efe6f3c1ce62b73e90d1e2469",
+      "bytes": 1002
+    },
+    "assets/production/world-slice/ironveil-ore-yard/iteration-02/before/reverse.png": {
+      "sha256": "5e5cd242f9c97d355ef8e72cf7d9f80203558986be711dff256d3a59c0649d3f",
+      "bytes": 1429404
+    },
+    "assets/production/world-slice/ironveil-ore-yard/iteration-02/before/skyline.png": {
+      "sha256": "fa94acf130c4449e045b41c7e4ce45684c793ecc1ff5778252f7dfb6475bb875",
+      "bytes": 1468795
+    },
+    "assets/production/world-slice/ironveil-ore-yard/iteration-02/before/source.blend": {
+      "sha256": "03a95f16159e9f3dd0df3629fb996afd5c1205ea642f57d6225e370edb8c8418",
+      "bytes": 443952
+    },
+    "assets/production/world-slice/ironveil-ore-yard/iteration-02/build-receipt.json": {
+      "sha256": "0244f68652981110e317a72d5458c685c706dd4ce657be1768dfa44f00a0de61",
+      "bytes": 390
+    },
+    "assets/production/world-slice/ironveil-ore-yard/iteration-02/build.py": {
+      "sha256": "8e5132d1e46426d378db6110378a2c1571db93295de32cda061cffeada610281",
+      "bytes": 11112
+    },
+    "assets/production/world-slice/ironveil-ore-yard/iteration-02/build.stderr.txt": {
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "bytes": 0
+    },
+    "assets/production/world-slice/ironveil-ore-yard/iteration-02/build.stdout.txt": {
+      "sha256": "1c9284881b268992d629e8a1e54ca83173591dc9ec789a69aeddeebed2921d28",
+      "bytes": 158
+    },
+    "assets/production/world-slice/ironveil-ore-yard/iteration-02/cameras.json": {
+      "sha256": "2d908039f0b048ed576cadc74f5996504311cba82fa989663becae324fa76ba0",
+      "bytes": 817
+    },
+    "assets/production/world-slice/ironveil-ore-yard/iteration-02/composition.json": {
+      "sha256": "eb8eec5bb49ab42a7efb16114ea47752c6e9491d57b03e50fb186929d6cdd1be",
+      "bytes": 921
+    },
+    "assets/production/world-slice/ironveil-ore-yard/iteration-02/metrics.json": {
+      "sha256": "1c9284881b268992d629e8a1e54ca83173591dc9ec789a69aeddeebed2921d28",
+      "bytes": 158
+    },
+    "assets/production/world-slice/ironveil-ore-yard/iteration-02/provenance.json": {
+      "sha256": "81d4633f7823ec8da52398499338bf839be5d58f4fe5d8ecef7e3ae087a20a9b",
+      "bytes": 984
+    },
+    "assets/production/world-slice/ironveil-ore-yard/iteration-02/render.py": {
+      "sha256": "a1cb48de60c3804acefdb74630614c461c90bc167b6d57d88b5eddbcb1085056",
+      "bytes": 5137
+    },
+    "assets/production/world-slice/ironveil-ore-yard/iteration-02/run_render.py": {
+      "sha256": "8ca79e907ab880632ad338260926c3be01774d48e707ff8daf314af32b03fb6a",
+      "bytes": 1659
+    },
+    "assets/production/world-slice/ironveil-ore-yard/iteration-02/scenery.mesh.json": {
+      "sha256": "0ea4a4cf3589233566f2f9b4c1f8419260b778a7f5ecef584f7e9f3261bb5397",
+      "bytes": 1280778
+    },
+    "assets/production/world-slice/ironveil-ore-yard/iteration-02/solids.json": {
+      "sha256": "851a3d1ddd6829c4237e65c083bd1066b34189b6c7d428a69eee1d10d88c862f",
+      "bytes": 97970
+    },
+    "assets/production/world-slice/ironveil-ore-yard/iteration-02/STATUS.json": {
+      "sha256": "04d724ddf12ad65dab067f7037149345a9e1657da2ebdc969bb8ef1d3de1f2ff",
+      "bytes": 185
+    },
+    "assets/production/world-slice/ironveil-ore-yard/metrics.json": {
+      "sha256": "f78d8e9de834f8f60b3184a9f48055d3d818e62f8c4703c84b6ef781a7374b08",
+      "bytes": 161
+    },
+    "assets/production/world-slice/ironveil-ore-yard/provenance.json": {
+      "sha256": "0a20739bd96ed630aa22ad0367958ee311bc7a05d083c273aced77425196c8bf",
+      "bytes": 984
+    },
+    "assets/production/world-slice/ironveil-ore-yard/scenery.mesh.json": {
+      "sha256": "4e65f4e254ae58bed6c5825d68948dc8689eb10332fb2763bdae37f86e371d20",
+      "bytes": 1516812
+    },
+    "assets/production/world-slice/ironveil-ore-yard/solids.json": {
+      "sha256": "5ebbab0a85ed9edd44ddb2483c1073cacc5712b4f62e46600df1e3cf1f8ee7a5",
+      "bytes": 121176
+    },
+    "production/world/quality-slice/ironveil-ore-yard/.gitattributes": {
+      "sha256": "50524bc54be6323af4266e11f2ca0b4d574bad39253c8c5293eca7d3173fa822",
+      "bytes": 43
+    },
+    "production/world/quality-slice/ironveil-ore-yard/build.py": {
+      "sha256": "5ab3711f35c92131017e7be1d35c3e0c0915661c25df677897fba06d98f5bc75",
+      "bytes": 14203
+    },
+    "production/world/quality-slice/ironveil-ore-yard/cameras.json": {
+      "sha256": "2d908039f0b048ed576cadc74f5996504311cba82fa989663becae324fa76ba0",
+      "bytes": 817
+    },
+    "production/world/quality-slice/ironveil-ore-yard/check_scope.py": {
+      "sha256": "afd3021dad813454d5bbd1820c813921eb98f4a44f098ba69fe3c5ae692d889c",
+      "bytes": 1719
+    },
+    "production/world/quality-slice/ironveil-ore-yard/checks-final01/receipts.json": {
+      "sha256": "0ddc99b20987e7ce73c664047212ecdbcf02559092a117f52c6fd0da49e3a276",
+      "bytes": 2373
+    },
+    "production/world/quality-slice/ironveil-ore-yard/checks-final01/scope.stderr.txt": {
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "bytes": 0
+    },
+    "production/world/quality-slice/ironveil-ore-yard/checks-final01/scope.stdout.txt": {
+      "sha256": "19cdbc18e38688d5bf2e94c8f51b970bf61b9e089a5e68c0ee897cd2ada26594",
+      "bytes": 746
+    },
+    "production/world/quality-slice/ironveil-ore-yard/checks-final01/syntax.stderr.txt": {
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "bytes": 0
+    },
+    "production/world/quality-slice/ironveil-ore-yard/checks-final01/syntax.stdout.txt": {
+      "sha256": "b1ab08bee61ed113d048c96148e358121d5fed6b4e60f25d16b0200634fedf3f",
+      "bytes": 24
+    },
+    "production/world/quality-slice/ironveil-ore-yard/checks-final01/whitespace.stderr.txt": {
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "bytes": 0
+    },
+    "production/world/quality-slice/ironveil-ore-yard/checks-final01/whitespace.stdout.txt": {
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "bytes": 0
+    },
+    "production/world/quality-slice/ironveil-ore-yard/checks-geometry04/receipt.json": {
+      "sha256": "b0cdbb074d76978d9f0f52b80ac1c540bad2ebb9a9031d1eaade821abfa539ae",
+      "bytes": 417
+    },
+    "production/world/quality-slice/ironveil-ore-yard/checks-geometry04/stderr.txt": {
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "bytes": 0
+    },
+    "production/world/quality-slice/ironveil-ore-yard/checks-geometry04/stdout.txt": {
+      "sha256": "449099ad224f47675b3e93c91a0bc32fc4face8776b37e33b3c0112d64313a27",
+      "bytes": 578667
+    },
+    "production/world/quality-slice/ironveil-ore-yard/checks-preflight01/adapters.stderr.txt": {
+      "sha256": "29f3fdf9b8d983dc644dd9c3d932374722c4371104d10f0d9bb0643da3bd2c47",
+      "bytes": 89
+    },
+    "production/world/quality-slice/ironveil-ore-yard/checks-preflight01/adapters.stdout.txt": {
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "bytes": 0
+    },
+    "production/world/quality-slice/ironveil-ore-yard/checks-preflight01/forge.stderr.txt": {
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "bytes": 0
+    },
+    "production/world/quality-slice/ironveil-ore-yard/checks-preflight01/forge.stdout.txt": {
+      "sha256": "425e920e88765646aada4e6f5561609e562e4d39ae0c56f8c634cc70305a5e87",
+      "bytes": 88
+    },
+    "production/world/quality-slice/ironveil-ore-yard/checks-preflight01/receipts.json": {
+      "sha256": "d0b94af927698c1bf03055e95200b3033204e9e1a5996682f8015ab1e8533722",
+      "bytes": 1482
+    },
+    "production/world/quality-slice/ironveil-ore-yard/checks-preflight01/studio.stderr.txt": {
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "bytes": 0
+    },
+    "production/world/quality-slice/ironveil-ore-yard/checks-preflight01/studio.stdout.txt": {
+      "sha256": "c114f88d1de9271b0ed02127334ac62b7bb81a83c89ddb8a3c941c3e732946f0",
+      "bytes": 90
+    },
+    "production/world/quality-slice/ironveil-ore-yard/checks-preflight02/adapters.stderr.txt": {
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "bytes": 0
+    },
+    "production/world/quality-slice/ironveil-ore-yard/checks-preflight02/adapters.stdout.txt": {
+      "sha256": "30bdcea6ce0f919e099ba206d16ce5b1bae48fcf1aef0b462a4bdc41394dacc9",
+      "bytes": 113
+    },
+    "production/world/quality-slice/ironveil-ore-yard/checks-preflight02/forge.stderr.txt": {
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "bytes": 0
+    },
+    "production/world/quality-slice/ironveil-ore-yard/checks-preflight02/forge.stdout.txt": {
+      "sha256": "425e920e88765646aada4e6f5561609e562e4d39ae0c56f8c634cc70305a5e87",
+      "bytes": 88
+    },
+    "production/world/quality-slice/ironveil-ore-yard/checks-preflight02/receipts.json": {
+      "sha256": "98cef658e4c85b8e3abd6e554ab5e8963d966a6fec468545577b35488f671c16",
+      "bytes": 2158
+    },
+    "production/world/quality-slice/ironveil-ore-yard/checks-preflight02/studio.stderr.txt": {
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "bytes": 0
+    },
+    "production/world/quality-slice/ironveil-ore-yard/checks-preflight02/studio.stdout.txt": {
+      "sha256": "c114f88d1de9271b0ed02127334ac62b7bb81a83c89ddb8a3c941c3e732946f0",
+      "bytes": 90
+    },
+    "production/world/quality-slice/ironveil-ore-yard/composition.json": {
+      "sha256": "50cd6944a80988627f329fb844e7c109c8cb15cd27b91c3db6d9698406794f50",
+      "bytes": 1710
+    },
+    "production/world/quality-slice/ironveil-ore-yard/HANDOFF.md": {
+      "sha256": "7263acd7df8d891f2570bb63e595ac0547888d98e09215d189c66de530878db3",
+      "bytes": 4833
+    },
+    "production/world/quality-slice/ironveil-ore-yard/independent-01-source.txt": {
+      "sha256": "8b5e52c937b33be36284fabca2aed19aac1b0d5fa718caf39ab3d160a091158b",
+      "bytes": 9330
+    },
+    "production/world/quality-slice/ironveil-ore-yard/independent-01.json": {
+      "sha256": "087ae2cacdcbe424b30f503ba3a23cb29d21f26f36cd90164a24281a8a8f4f30",
+      "bytes": 384
+    },
+    "production/world/quality-slice/ironveil-ore-yard/independent-01.stderr.txt": {
+      "sha256": "7ac5dd9d7e69cc93fd02646a5c1188a9bb86b92c3d3dabc087f1b8ad524044c9",
+      "bytes": 771
+    },
+    "production/world/quality-slice/ironveil-ore-yard/independent-01.stdout.txt": {
+      "sha256": "b60d22c9d52d392ded18487fa245a084bca2cafa68e2654c3158bbc256c10528",
+      "bytes": 467039
+    },
+    "production/world/quality-slice/ironveil-ore-yard/independent-02-source.txt": {
+      "sha256": "8b5e52c937b33be36284fabca2aed19aac1b0d5fa718caf39ab3d160a091158b",
+      "bytes": 9330
+    },
+    "production/world/quality-slice/ironveil-ore-yard/independent-02.json": {
+      "sha256": "10a25202159cd1c5b91610b125cc363050d42c7a90252a5bbe96329a77e397b3",
+      "bytes": 384
+    },
+    "production/world/quality-slice/ironveil-ore-yard/independent-02.stderr.txt": {
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "bytes": 0
+    },
+    "production/world/quality-slice/ironveil-ore-yard/independent-02.stdout.txt": {
+      "sha256": "4bab75b8b889516672f7d0a73c3a658506662c47ba45aaa1a1b15947cb084873",
+      "bytes": 466597
+    },
+    "production/world/quality-slice/ironveil-ore-yard/independent-03-source.txt": {
+      "sha256": "28f6964038e3d203dd9c0ade734f45b5a0c0e0af0a168cdc1d5dd09b2ffabf5d",
+      "bytes": 9567
+    },
+    "production/world/quality-slice/ironveil-ore-yard/independent-03.json": {
+      "sha256": "e88c3446c3790d96481957cd9066d1e72ba3c41804ddebb90e65a4c993e4c34f",
+      "bytes": 384
+    },
+    "production/world/quality-slice/ironveil-ore-yard/independent-03.stderr.txt": {
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "bytes": 0
+    },
+    "production/world/quality-slice/ironveil-ore-yard/independent-03.stdout.txt": {
+      "sha256": "e305da0a410be07ba8d1270bc1675ddc41e3ea9371e0ce0892091eb9ba3d84a5",
+      "bytes": 578667
+    },
+    "production/world/quality-slice/ironveil-ore-yard/independent-final.json": {
+      "sha256": "efbfa47b5c704c1896e3e996b9dae9a153ec5b349526f7f43bfbbda20f1a457f",
+      "bytes": 5564
+    },
+    "production/world/quality-slice/ironveil-ore-yard/independent-visual-01.json": {
+      "sha256": "cce8086a8d3d69e8275156f11bfa7a6157306c050f9977b70abce85d3c2c03d9",
+      "bytes": 1176
+    },
+    "production/world/quality-slice/ironveil-ore-yard/parent-visual-01.json": {
+      "sha256": "aefc28a06bbece07ed0d307e3cf1c303d0fed30e89f8359bdb564c7f0febae35",
+      "bytes": 806
+    },
+    "production/world/quality-slice/ironveil-ore-yard/parent-visual-final.json": {
+      "sha256": "ca7e09eda04ab293b74c3ec8858e7cd1f355e0e4135886fb35465d9fe03157ad",
+      "bytes": 1397
+    },
+    "production/world/quality-slice/ironveil-ore-yard/render.py": {
+      "sha256": "a1cb48de60c3804acefdb74630614c461c90bc167b6d57d88b5eddbcb1085056",
+      "bytes": 5137
+    },
+    "production/world/quality-slice/ironveil-ore-yard/run_checks.py": {
+      "sha256": "b4a0c8c2affed992b7a5e7a32a0dfee108f2fc5fc4bb662f2fa387b634a301d3",
+      "bytes": 2025
+    },
+    "production/world/quality-slice/ironveil-ore-yard/run_render.py": {
+      "sha256": "8ca79e907ab880632ad338260926c3be01774d48e707ff8daf314af32b03fb6a",
+      "bytes": 1659
+    },
+    "production/world/quality-slice/ironveil-ore-yard/source-survey.json": {
+      "sha256": "3cb55364cbd6e2a40d7b160286ecd851b67de975a5c630590cf398822ab5ac1b",
+      "bytes": 21680
+    },
+    "production/world/quality-slice/ironveil-ore-yard/survey.py": {
+      "sha256": "d56b844dd114c3ab0777b091221c1f2cf7f78bed3ea67d218b269a58d01f865b",
+      "bytes": 3328
+    },
+    "production/world/quality-slice/ironveil-ore-yard/verify.py": {
+      "sha256": "28f6964038e3d203dd9c0ade734f45b5a0c0e0af0a168cdc1d5dd09b2ffabf5d",
+      "bytes": 9567
+    }
+  },
+  "studioTested": false,
+  "humanApproved": false
+}

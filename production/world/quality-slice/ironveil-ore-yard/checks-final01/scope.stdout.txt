@@ -1,0 +1,18 @@
+{
+  "scope": "AUTHORIZED_ART_DIRECTORIES_PLUS_EXACT_APPROVED_ADMIN_DEPENDENCY",
+  "baseCommit": "ccd40f063b3111d38fde5a18ac70b732b4d102ce",
+  "adminDependency": "f7924799eaaefae3199d336052842197e7d3b238",
+  "unexpected": [],
+  "protectedFilesUnchanged": [
+    "src/shared/Config/WorldQuality.luau",
+    "src/server/Services/WorldQualitySlice.luau",
+    "src/server/Services/WorldService.luau",
+    "src/server/Services/AdventureMapKit.luau",
+    "src/server/Services/RegionalWorld.luau",
+    "src/shared/Config/City.luau",
+    "production/world/quality-slice/greenwood-ironveil/ground.json",
+    "production/integration/quality-slice/SECOND_EDGE_NATIVE_01.json"
+  ],
+  "changedFiles": 110,
+  "nativeDockRetestExecuted": false
+}

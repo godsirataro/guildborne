@@ -1,0 +1,121 @@
+"""Independent ore-yard source review. Print-only, never engine acceptance.
+
+Full convex solid footprints include every roof vertex. No author helpers or
+placement-center clearance approximations. Protected radii come from survey.
+"""
+import json,math,hashlib,argparse,subprocess
+from pathlib import Path
+from collections import Counter
+ROOT=Path(__file__).resolve().parents[4];HERE=Path(__file__).resolve().parent
+ASSET=ROOT/'assets/production/world-slice/ironveil-ore-yard'
+def load(p):return json.loads(p.read_text())
+def sha(p):return hashlib.sha256(p.read_bytes()).hexdigest()
+def cross2(a,b,c):return (b[0]-a[0])*(c[1]-a[1])-(b[1]-a[1])*(c[0]-a[0])
+def hull(vs):
+    pts=sorted(set((v[0],v[2]) for v in vs));a=[];b=[]
+    for p in pts:
+        while len(a)>1 and cross2(a[-2],a[-1],p)<=0:a.pop()
+        a.append(p)
+    for p in reversed(pts):
+        while len(b)>1 and cross2(b[-2],b[-1],p)<=0:b.pop()
+        b.append(p)
+    return a[:-1]+b[:-1]
+def inside(p,poly):return all(cross2(a,b,p)>=0 for a,b in zip(poly,poly[1:]+poly[:1]))
+def pointseg(p,a,b):
+    dx,dz=b[0]-a[0],b[1]-a[1];den=dx*dx+dz*dz
+    t=max(0,min(1,((p[0]-a[0])*dx+(p[1]-a[1])*dz)/den)) if den else 0
+    return math.hypot(p[0]-a[0]-t*dx,p[1]-a[1]-t*dz)
+def distance(poly,p):return 0 if inside(p,poly) else min(pointseg(p,a,b) for a,b in zip(poly,poly[1:]+poly[:1]))
+def lane_distance(poly,a,b):
+    if inside(a,poly) or inside(b,poly):return 0
+    for p,q in zip(poly,poly[1:]+poly[:1]):
+        if cross2(a,b,p)*cross2(a,b,q)<0 and cross2(p,q,a)*cross2(p,q,b)<0:return 0
+    return min([distance(poly,a),distance(poly,b)]+[pointseg(p,a,b) for p in poly])
+def transform(v,p):
+    f=p['cframe'];s=p['scale'];return [f[k]+sum(f[3+3*k+j]*v[j]*s[j] for j in range(3)) for k in range(3)]
+def cross(a,b):return [a[1]*b[2]-a[2]*b[1],a[2]*b[0]-a[0]*b[2],a[0]*b[1]-a[1]*b[0]]
+def sub(a,b):return [a[i]-b[i] for i in range(3)]
+def main():
+    ap=argparse.ArgumentParser();ap.add_argument('--packet',default=str(ASSET/'scenery.mesh.json'));ap.add_argument('--solids',default=str(ASSET/'solids.json'));args=ap.parse_args()
+    packetpath=Path(args.packet);solidpath=Path(args.solids)
+    paths=[packetpath,solidpath,HERE/'source-survey.json',ASSET/'provenance.json',HERE/'composition.json']
+    hashes={str(p.relative_to(ROOT)):sha(p) for p in paths};data=load(packetpath);solids=load(solidpath);survey=load(paths[2]);provenance=load(paths[3])
+    assert data['schemaVersion']==1 and data['coordinateSystem']=='RobloxYUp' and data['units']=='studs'
+    assert data['runtimeImported'] is False and data.get('runtimeIds') is None
+    assert len(survey['nativeParts'])==45
+    for name,h in survey['sourceHashes'].items():assert sha(ROOT/name)==h,('source survey drift',name)
+    assert survey['protectedLane']['width']==24
+    assert {a['id']:a['clearRadius'] for a in survey['protectedAnchors']}=={'stone':10,'ore':10,'spawn':10,'returnPortal':12,'mineEntrance':10}
+    assert survey['encounterExclusionRadii']=={'RaiderCamp':30,'StoneGuard':24,'ShamanCamp':30,'QuarryGuardian':32}
+    meshes={m['id']:m for m in data['meshes']};assert len(meshes)==len(data['meshes'])
+    reviewedpath=ROOT/provenance['reviewedSource'];assert sha(reviewedpath)==provenance['reviewedSourceSha256']
+    reviewed={m['id']:m for m in load(reviewedpath)['meshes']}
+    assert sha(ROOT/provenance['originalRecipe'])==provenance['recipeSha256']
+    assert provenance['sourceSurveySha256']==sha(HERE/'source-survey.json') and provenance['runtimeIds'] is None
+    for path in provenance['licenses']:assert (ROOT/path).is_file()
+    triangles=sum(len(m['triangles']) for m in meshes.values());assert triangles<=30000
+    assert len(data['placements'])<=120
+    assert sum(len(meshes[p['meshId']]['triangles']) for p in data['placements'])<=50000
+    for m in meshes.values():
+        assert 0<len(m['triangles'])<=2000,m['id']
+        assert all(len(v)==3 and all(math.isfinite(n) for n in v) for v in m['vertices'])
+        assert len(m['faceColors'])==len(m['triangles'])
+        assert all(len(c)==3 and all(math.isfinite(n) and 0<=n<=1 for n in c) for c in m['colors'])
+        assert all(1<=c<=len(m['colors']) for c in m['faceColors'])
+        assert all(len(t)==3 and len(set(t))==3 and all(1<=i<=len(m['vertices']) for i in t) for t in m['triangles'])
+        assert max(max(v[k] for v in m['vertices'])-min(v[k] for v in m['vertices']) for k in range(3))<=2048
+    bymesh={mid:[] for mid in meshes};covered={mid:[] for mid in meshes}
+    for s in solids:
+        mid=s['meshId'];bymesh[mid].append(s);covered[mid].extend(range(s['firstTriangle']-1,s['firstTriangle']-1+s['triangleCount']))
+    for mid,m in meshes.items():
+        if mid in provenance['reviewedMeshIds']:
+            assert m==reviewed[mid],('reviewed mesh changed',mid)
+            bymesh[mid]=[dict(name=mid,firstTriangle=1,triangleCount=len(m['triangles']),reviewed=True)]
+        else:assert sorted(covered[mid])==list(range(len(m['triangles']))),('unreviewed mesh faces',mid)
+    floors=[p for p in survey['nativeParts'] if p['name'] in ('Island','Landing','MidTerrace','UpperTerrace')]
+    def contained(poly,floor):
+        c=floor['position'];sz=floor['size'];return all(c[0]-sz[0]/2<=x<=c[0]+sz[0]/2 and c[2]-sz[2]/2<=z<=c[2]+sz[2]/2 for x,z in poly)
+    anchors=[(a['id'],(a['position'][0],a['position'][2]),a['clearRadius']) for a in survey['protectedAnchors']]
+    for marker in survey['encounterMarkers']:
+        if marker['name'] in survey['encounterExclusionRadii']:
+            anchors.append((marker['name'],(marker['position'][0],marker['position'][2]),survey['encounterExclusionRadii'][marker['name']]))
+    assert len(anchors)==9
+    lane=survey['protectedLane']['points'];lane=[(p[0],p[2]) for p in lane]
+    failures=[];records=[];names=set();normal_faces=0
+    for p in data['placements']:
+        assert p['name'] not in names;names.add(p['name'])
+        assert all(p.get(flag) is False for flag in ('collision','query','touch'))
+        assert len(p['cframe'])==12 and len(p['scale'])==3 and all(math.isfinite(v) for v in p['cframe']+p['scale']) and min(p['scale'])>0
+        f=p['cframe'];basis=[f[3:6],f[6:9],f[9:12]]
+        for i in range(3):
+            for j in range(3):assert abs(sum(basis[i][k]*basis[j][k] for k in range(3))-(i==j))<1e-6
+        assert abs(sum(basis[0][k]*cross(basis[1],basis[2])[k] for k in range(3))-1)<1e-6
+        m=meshes[p['meshId']];world=[transform(v,p) for v in m['vertices']]
+        assert all(370<=v[0]<=630 and -30<=v[1]<=40 and 1280<=v[2]<=1540 for v in world),('Outside approved scenery envelope',p['name'])
+        for s in bymesh[p['meshId']]:
+            faces=m['triangles'][s['firstTriangle']-1:s['firstTriangle']-1+s['triangleCount']]
+            ids=sorted(set(i for t in faces for i in t));vs=[world[i-1] for i in ids]
+            center=[sum(v[k] for v in vs)/len(vs) for k in range(3)];edges=Counter();volume=0
+            for face in faces:
+                if s.get('reviewed'):continue
+                a,b,c=[world[i-1] for i in face];normal=cross(sub(b,a),sub(c,a));centroid=[(a[k]+b[k]+c[k])/3 for k in range(3)]
+                assert sum(normal[k]*(centroid[k]-center[k]) for k in range(3))>1e-9,('inward/nonconvex face',s['name'])
+                volume+=sum(sub(a,center)[k]*cross(sub(b,center),sub(c,center))[k] for k in range(3))/6
+                for a,b in zip(face,face[1:]+face[:1]):edges[tuple(sorted((a,b)))]+=1
+                normal_faces+=1
+            if not s.get('reviewed'):assert volume>0 and set(edges.values())=={2},('open solid',s['name'])
+            poly=hull(vs);ymax=max(v[1] for v in vs);ymin=min(v[1] for v in vs)
+            supported=[q for q in floors if contained(poly,q)]
+            below=ymax<=1.7 or any(ymax<q['position'][1]+q['size'][1]/2 for q in supported)
+            if not below and not supported:failures.append(dict(solid=s['name'],reason='Full footprint lacks native rectangular floor coverage'))
+            distances={name:distance(poly,pos)-radius for name,pos,radius in anchors}
+            route=min(lane_distance(poly,a,b) for a,b in zip(lane,lane[1:]))-12
+            if not below:
+                for name,margin in distances.items():
+                    if margin<0:failures.append(dict(solid=s['name'],reason='Protected full footprint overlap',protected=name,margin=margin))
+                if route<0:failures.append(dict(solid=s['name'],reason='24-wide lane footprint overlap',margin=route))
+            records.append(dict(name=s['name'],placement=p['name'],bounds={'min':[min(v[k] for v in vs) for k in range(3)],'max':[max(v[k] for v in vs) for k in range(3)]},fullFootprint=poly,belowNativeWalkSurface=below,nativeFloorCoverage=[q['name'] for q in supported],laneMargin=route,anchorMargins=distances))
+    assert hashes=={str(p.relative_to(ROOT)):sha(p) for p in paths},'Inputs mutated during review'
+    print(json.dumps(dict(status='PASS_SOURCE_ONLY' if not failures else 'FAIL',inputHashes=hashes,uniqueTriangles=triangles,resources=len(meshes),placements=len(data['placements']),convexSolids=len(records),outwardFaces=normal_faces,failures=failures,fullFootprintRecords=records,provenance=provenance,limits=['No Studio import/path/device/party evidence','Below-floor exemption requires the entire solid beneath one actual native rectangular walk surface or≤1.7globalunderfloor; not center tests','Roof footprints included; protected radii not reduced','Visual quality and provenance semantic review remain separate']),indent=2))
+    assert not failures,failures[:12]
+if __name__=='__main__':main()

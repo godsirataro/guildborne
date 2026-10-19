@@ -1,0 +1,4981 @@
+[
+  {
+    "name": "house_course_0_0_1459",
+    "meshId": "oreyard_masonry_00",
+    "firstVertex": 1,
+    "vertexCount": 8,
+    "firstTriangle": 1,
+    "triangleCount": 12,
+    "center": [
+      426.0,
+      2.5,
+      1459.0
+    ]
+  },
+  {
+    "name": "house_course_0_0_1477",
+    "meshId": "oreyard_masonry_00",
+    "firstVertex": 9,
+    "vertexCount": 8,
+    "firstTriangle": 13,
+    "triangleCount": 12,
+    "center": [
+      426.0,
+      2.5,
+      1477.0
+    ]
+  },
+  {
+    "name": "house_course_0_1_1459",
+    "meshId": "oreyard_masonry_00",
+    "firstVertex": 17,
+    "vertexCount": 8,
+    "firstTriangle": 25,
+    "triangleCount": 12,
+    "center": [
+      430.0,
+      2.5,
+      1459.0
+    ]
+  },
+  {
+    "name": "house_course_0_1_1477",
+    "meshId": "oreyard_masonry_00",
+    "firstVertex": 25,
+    "vertexCount": 8,
+    "firstTriangle": 37,
+    "triangleCount": 12,
+    "center": [
+      430.0,
+      2.5,
+      1477.0
+    ]
+  },
+  {
+    "name": "house_course_0_2_1459",
+    "meshId": "oreyard_masonry_00",
+    "firstVertex": 33,
+    "vertexCount": 8,
+    "firstTriangle": 49,
+    "triangleCount": 12,
+    "center": [
+      434.0,
+      2.5,
+      1459.0
+    ]
+  },
+  {
+    "name": "house_course_0_2_1477",
+    "meshId": "oreyard_masonry_00",
+    "firstVertex": 41,
+    "vertexCount": 8,
+    "firstTriangle": 61,
+    "triangleCount": 12,
+    "center": [
+      434.0,
+      2.5,
+      1477.0
+    ]
+  },
+  {
+    "name": "house_course_0_3_1459",
+    "meshId": "oreyard_masonry_00",
+    "firstVertex": 49,
+    "vertexCount": 8,
+    "firstTriangle": 73,
+    "triangleCount": 12,
+    "center": [
+      438.0,
+      2.5,
+      1459.0
+    ]
+  },
+  {
+    "name": "house_course_0_3_1477",
+    "meshId": "oreyard_masonry_00",
+    "firstVertex": 57,
+    "vertexCount": 8,
+    "firstTriangle": 85,
+    "triangleCount": 12,
+    "center": [
+      438.0,
+      2.5,
+      1477.0
+    ]
+  },
+  {
+    "name": "house_course_0_4_1459",
+    "meshId": "oreyard_masonry_00",
+    "firstVertex": 65,
+    "vertexCount": 8,
+    "firstTriangle": 97,
+    "triangleCount": 12,
+    "center": [
+      442.0,
+      2.5,
+      1459.0
+    ]
+  },
+  {
+    "name": "house_course_0_4_1477",
+    "meshId": "oreyard_masonry_00",
+    "firstVertex": 73,
+    "vertexCount": 8,
+    "firstTriangle": 109,
+    "triangleCount": 12,
+    "center": [
+      442.0,
+      2.5,
+      1477.0
+    ]
+  },
+  {
+    "name": "house_course_0_5_1459",
+    "meshId": "oreyard_masonry_00",
+    "firstVertex": 81,
+    "vertexCount": 8,
+    "firstTriangle": 121,
+    "triangleCount": 12,
+    "center": [
+      446.0,
+      2.5,
+      1459.0
+    ]
+  },
+  {
+    "name": "house_course_0_5_1477",
+    "meshId": "oreyard_masonry_00",
+    "firstVertex": 89,
+    "vertexCount": 8,
+    "firstTriangle": 133,
+    "triangleCount": 12,
+    "center": [
+      446.0,
+      2.5,
+      1477.0
+    ]
+  },
+  {
+    "name": "house_course_1_0_1459",
+    "meshId": "oreyard_masonry_00",
+    "firstVertex": 97,
+    "vertexCount": 8,
+    "firstTriangle": 145,
+    "triangleCount": 12,
+    "center": [
+      426.0,
+      3.5,
+      1459.0
+    ]
+  },
+  {
+    "name": "house_course_1_0_1477",
+    "meshId": "oreyard_masonry_00",
+    "firstVertex": 105,
+    "vertexCount": 8,
+    "firstTriangle": 157,
+    "triangleCount": 12,
+    "center": [
+      426.0,
+      3.5,
+      1477.0
+    ]
+  },
+  {
+    "name": "house_course_1_1_1459",
+    "meshId": "oreyard_masonry_00",
+    "firstVertex": 113,
+    "vertexCount": 8,
+    "firstTriangle": 169,
+    "triangleCount": 12,
+    "center": [
+      430.0,
+      3.5,
+      1459.0
+    ]
+  },
+  {
+    "name": "house_course_1_1_1477",
+    "meshId": "oreyard_masonry_00",
+    "firstVertex": 121,
+    "vertexCount": 8,
+    "firstTriangle": 181,
+    "triangleCount": 12,
+    "center": [
+      430.0,
+      3.5,
+      1477.0
+    ]
+  },
+  {
+    "name": "house_course_1_2_1459",
+    "meshId": "oreyard_masonry_00",
+    "firstVertex": 129,
+    "vertexCount": 8,
+    "firstTriangle": 193,
+    "triangleCount": 12,
+    "center": [
+      434.0,
+      3.5,
+      1459.0
+    ]
+  },
+  {
+    "name": "house_course_1_2_1477",
+    "meshId": "oreyard_masonry_00",
+    "firstVertex": 137,
+    "vertexCount": 8,
+    "firstTriangle": 205,
+    "triangleCount": 12,
+    "center": [
+      434.0,
+      3.5,
+      1477.0
+    ]
+  },
+  {
+    "name": "house_course_1_3_1459",
+    "meshId": "oreyard_masonry_00",
+    "firstVertex": 145,
+    "vertexCount": 8,
+    "firstTriangle": 217,
+    "triangleCount": 12,
+    "center": [
+      438.0,
+      3.5,
+      1459.0
+    ]
+  },
+  {
+    "name": "house_course_1_3_1477",
+    "meshId": "oreyard_masonry_00",
+    "firstVertex": 153,
+    "vertexCount": 8,
+    "firstTriangle": 229,
+    "triangleCount": 12,
+    "center": [
+      438.0,
+      3.5,
+      1477.0
+    ]
+  },
+  {
+    "name": "house_course_1_4_1459",
+    "meshId": "oreyard_masonry_00",
+    "firstVertex": 161,
+    "vertexCount": 8,
+    "firstTriangle": 241,
+    "triangleCount": 12,
+    "center": [
+      442.0,
+      3.5,
+      1459.0
+    ]
+  },
+  {
+    "name": "house_course_1_4_1477",
+    "meshId": "oreyard_masonry_00",
+    "firstVertex": 169,
+    "vertexCount": 8,
+    "firstTriangle": 253,
+    "triangleCount": 12,
+    "center": [
+      442.0,
+      3.5,
+      1477.0
+    ]
+  },
+  {
+    "name": "house_course_1_5_1459",
+    "meshId": "oreyard_masonry_00",
+    "firstVertex": 177,
+    "vertexCount": 8,
+    "firstTriangle": 265,
+    "triangleCount": 12,
+    "center": [
+      446.0,
+      3.5,
+      1459.0
+    ]
+  },
+  {
+    "name": "house_course_1_5_1477",
+    "meshId": "oreyard_masonry_00",
+    "firstVertex": 185,
+    "vertexCount": 8,
+    "firstTriangle": 277,
+    "triangleCount": 12,
+    "center": [
+      446.0,
+      3.5,
+      1477.0
+    ]
+  },
+  {
+    "name": "house_course_2_0_1459",
+    "meshId": "oreyard_masonry_00",
+    "firstVertex": 193,
+    "vertexCount": 8,
+    "firstTriangle": 289,
+    "triangleCount": 12,
+    "center": [
+      426.0,
+      4.5,
+      1459.0
+    ]
+  },
+  {
+    "name": "house_course_2_0_1477",
+    "meshId": "oreyard_masonry_00",
+    "firstVertex": 201,
+    "vertexCount": 8,
+    "firstTriangle": 301,
+    "triangleCount": 12,
+    "center": [
+      426.0,
+      4.5,
+      1477.0
+    ]
+  },
+  {
+    "name": "house_course_2_1_1459",
+    "meshId": "oreyard_masonry_00",
+    "firstVertex": 209,
+    "vertexCount": 8,
+    "firstTriangle": 313,
+    "triangleCount": 12,
+    "center": [
+      430.0,
+      4.5,
+      1459.0
+    ]
+  },
+  {
+    "name": "house_course_2_1_1477",
+    "meshId": "oreyard_masonry_00",
+    "firstVertex": 217,
+    "vertexCount": 8,
+    "firstTriangle": 325,
+    "triangleCount": 12,
+    "center": [
+      430.0,
+      4.5,
+      1477.0
+    ]
+  },
+  {
+    "name": "house_course_2_2_1459",
+    "meshId": "oreyard_masonry_00",
+    "firstVertex": 225,
+    "vertexCount": 8,
+    "firstTriangle": 337,
+    "triangleCount": 12,
+    "center": [
+      434.0,
+      4.5,
+      1459.0
+    ]
+  },
+  {
+    "name": "house_course_2_2_1477",
+    "meshId": "oreyard_masonry_00",
+    "firstVertex": 233,
+    "vertexCount": 8,
+    "firstTriangle": 349,
+    "triangleCount": 12,
+    "center": [
+      434.0,
+      4.5,
+      1477.0
+    ]
+  },
+  {
+    "name": "house_course_2_3_1459",
+    "meshId": "oreyard_masonry_00",
+    "firstVertex": 241,
+    "vertexCount": 8,
+    "firstTriangle": 361,
+    "triangleCount": 12,
+    "center": [
+      438.0,
+      4.5,
+      1459.0
+    ]
+  },
+  {
+    "name": "house_course_2_3_1477",
+    "meshId": "oreyard_masonry_00",
+    "firstVertex": 249,
+    "vertexCount": 8,
+    "firstTriangle": 373,
+    "triangleCount": 12,
+    "center": [
+      438.0,
+      4.5,
+      1477.0
+    ]
+  },
+  {
+    "name": "house_course_2_4_1459",
+    "meshId": "oreyard_masonry_00",
+    "firstVertex": 257,
+    "vertexCount": 8,
+    "firstTriangle": 385,
+    "triangleCount": 12,
+    "center": [
+      442.0,
+      4.5,
+      1459.0
+    ]
+  },
+  {
+    "name": "house_course_2_4_1477",
+    "meshId": "oreyard_masonry_00",
+    "firstVertex": 265,
+    "vertexCount": 8,
+    "firstTriangle": 397,
+    "triangleCount": 12,
+    "center": [
+      442.0,
+      4.5,
+      1477.0
+    ]
+  },
+  {
+    "name": "house_course_2_5_1459",
+    "meshId": "oreyard_masonry_00",
+    "firstVertex": 273,
+    "vertexCount": 8,
+    "firstTriangle": 409,
+    "triangleCount": 12,
+    "center": [
+      446.0,
+      4.5,
+      1459.0
+    ]
+  },
+  {
+    "name": "house_course_2_5_1477",
+    "meshId": "oreyard_masonry_00",
+    "firstVertex": 281,
+    "vertexCount": 8,
+    "firstTriangle": 421,
+    "triangleCount": 12,
+    "center": [
+      446.0,
+      4.5,
+      1477.0
+    ]
+  },
+  {
+    "name": "endwall425.5",
+    "meshId": "oreyard_house_00",
+    "firstVertex": 1,
+    "vertexCount": 8,
+    "firstTriangle": 1,
+    "triangleCount": 12,
+    "center": [
+      425.5,
+      9.0,
+      1468.0
+    ]
+  },
+  {
+    "name": "endwall446.5",
+    "meshId": "oreyard_house_00",
+    "firstVertex": 9,
+    "vertexCount": 8,
+    "firstTriangle": 13,
+    "triangleCount": 12,
+    "center": [
+      446.5,
+      9.0,
+      1468.0
+    ]
+  },
+  {
+    "name": "backwall",
+    "meshId": "oreyard_house_00",
+    "firstVertex": 17,
+    "vertexCount": 8,
+    "firstTriangle": 25,
+    "triangleCount": 12,
+    "center": [
+      436.0,
+      9.0,
+      1459.0
+    ]
+  },
+  {
+    "name": "frontpanel427.2",
+    "meshId": "oreyard_house_00",
+    "firstVertex": 25,
+    "vertexCount": 8,
+    "firstTriangle": 37,
+    "triangleCount": 12,
+    "center": [
+      427.2,
+      8.0,
+      1477.0
+    ]
+  },
+  {
+    "name": "frontpanel436",
+    "meshId": "oreyard_house_00",
+    "firstVertex": 33,
+    "vertexCount": 8,
+    "firstTriangle": 49,
+    "triangleCount": 12,
+    "center": [
+      436.0,
+      8.0,
+      1477.0
+    ]
+  },
+  {
+    "name": "frontpanel444.8",
+    "meshId": "oreyard_house_00",
+    "firstVertex": 41,
+    "vertexCount": 8,
+    "firstTriangle": 61,
+    "triangleCount": 12,
+    "center": [
+      444.8,
+      8.0,
+      1477.0
+    ]
+  },
+  {
+    "name": "window_sill431.6",
+    "meshId": "oreyard_house_00",
+    "firstVertex": 49,
+    "vertexCount": 8,
+    "firstTriangle": 73,
+    "triangleCount": 12,
+    "center": [
+      431.6,
+      5.5,
+      1477.3
+    ]
+  },
+  {
+    "name": "window_top431.6",
+    "meshId": "oreyard_house_00",
+    "firstVertex": 57,
+    "vertexCount": 8,
+    "firstTriangle": 85,
+    "triangleCount": 12,
+    "center": [
+      431.6,
+      12.5,
+      1477.0
+    ]
+  },
+  {
+    "name": "window_dark431.6",
+    "meshId": "oreyard_timber_00",
+    "firstVertex": 1,
+    "vertexCount": 8,
+    "firstTriangle": 1,
+    "triangleCount": 12,
+    "center": [
+      431.6,
+      8.5,
+      1476.55
+    ]
+  },
+  {
+    "name": "window_bar431.6_-2.1",
+    "meshId": "oreyard_timber_00",
+    "firstVertex": 9,
+    "vertexCount": 8,
+    "firstTriangle": 13,
+    "triangleCount": 12,
+    "center": [
+      429.5,
+      8.5,
+      1477.6
+    ]
+  },
+  {
+    "name": "window_bar431.6_0",
+    "meshId": "oreyard_timber_00",
+    "firstVertex": 17,
+    "vertexCount": 8,
+    "firstTriangle": 25,
+    "triangleCount": 12,
+    "center": [
+      431.6,
+      8.5,
+      1477.6
+    ]
+  },
+  {
+    "name": "window_bar431.6_2.1",
+    "meshId": "oreyard_timber_00",
+    "firstVertex": 25,
+    "vertexCount": 8,
+    "firstTriangle": 37,
+    "triangleCount": 12,
+    "center": [
+      433.70000000000005,
+      8.5,
+      1477.6
+    ]
+  },
+  {
+    "name": "window_cross431.6",
+    "meshId": "oreyard_timber_00",
+    "firstVertex": 33,
+    "vertexCount": 8,
+    "firstTriangle": 49,
+    "triangleCount": 12,
+    "center": [
+      431.6,
+      8.5,
+      1477.6
+    ]
+  },
+  {
+    "name": "window_sill440.4",
+    "meshId": "oreyard_house_00",
+    "firstVertex": 65,
+    "vertexCount": 8,
+    "firstTriangle": 97,
+    "triangleCount": 12,
+    "center": [
+      440.4,
+      5.5,
+      1477.3
+    ]
+  },
+  {
+    "name": "window_top440.4",
+    "meshId": "oreyard_house_00",
+    "firstVertex": 73,
+    "vertexCount": 8,
+    "firstTriangle": 109,
+    "triangleCount": 12,
+    "center": [
+      440.4,
+      12.5,
+      1477.0
+    ]
+  },
+  {
+    "name": "window_dark440.4",
+    "meshId": "oreyard_timber_00",
+    "firstVertex": 41,
+    "vertexCount": 8,
+    "firstTriangle": 61,
+    "triangleCount": 12,
+    "center": [
+      440.4,
+      8.5,
+      1476.55
+    ]
+  },
+  {
+    "name": "window_bar440.4_-2.1",
+    "meshId": "oreyard_timber_00",
+    "firstVertex": 49,
+    "vertexCount": 8,
+    "firstTriangle": 73,
+    "triangleCount": 12,
+    "center": [
+      438.29999999999995,
+      8.5,
+      1477.6
+    ]
+  },
+  {
+    "name": "window_bar440.4_0",
+    "meshId": "oreyard_timber_00",
+    "firstVertex": 57,
+    "vertexCount": 8,
+    "firstTriangle": 85,
+    "triangleCount": 12,
+    "center": [
+      440.4,
+      8.5,
+      1477.6
+    ]
+  },
+  {
+    "name": "window_bar440.4_2.1",
+    "meshId": "oreyard_timber_00",
+    "firstVertex": 65,
+    "vertexCount": 8,
+    "firstTriangle": 97,
+    "triangleCount": 12,
+    "center": [
+      442.5,
+      8.5,
+      1477.6
+    ]
+  },
+  {
+    "name": "window_cross440.4",
+    "meshId": "oreyard_timber_00",
+    "firstVertex": 73,
+    "vertexCount": 8,
+    "firstTriangle": 109,
+    "triangleCount": 12,
+    "center": [
+      440.4,
+      8.5,
+      1477.6
+    ]
+  },
+  {
+    "name": "post425_1459",
+    "meshId": "oreyard_timber_00",
+    "firstVertex": 81,
+    "vertexCount": 8,
+    "firstTriangle": 121,
+    "triangleCount": 12,
+    "center": [
+      425.0,
+      8.5,
+      1459.0
+    ]
+  },
+  {
+    "name": "post425_1477",
+    "meshId": "oreyard_timber_00",
+    "firstVertex": 89,
+    "vertexCount": 8,
+    "firstTriangle": 133,
+    "triangleCount": 12,
+    "center": [
+      425.0,
+      8.5,
+      1477.0
+    ]
+  },
+  {
+    "name": "post436_1459",
+    "meshId": "oreyard_timber_00",
+    "firstVertex": 97,
+    "vertexCount": 8,
+    "firstTriangle": 145,
+    "triangleCount": 12,
+    "center": [
+      436.0,
+      8.5,
+      1459.0
+    ]
+  },
+  {
+    "name": "post436_1477",
+    "meshId": "oreyard_timber_00",
+    "firstVertex": 105,
+    "vertexCount": 8,
+    "firstTriangle": 157,
+    "triangleCount": 12,
+    "center": [
+      436.0,
+      8.5,
+      1477.0
+    ]
+  },
+  {
+    "name": "post447_1459",
+    "meshId": "oreyard_timber_00",
+    "firstVertex": 113,
+    "vertexCount": 8,
+    "firstTriangle": 169,
+    "triangleCount": 12,
+    "center": [
+      447.0,
+      8.5,
+      1459.0
+    ]
+  },
+  {
+    "name": "post447_1477",
+    "meshId": "oreyard_timber_00",
+    "firstVertex": 121,
+    "vertexCount": 8,
+    "firstTriangle": 181,
+    "triangleCount": 12,
+    "center": [
+      447.0,
+      8.5,
+      1477.0
+    ]
+  },
+  {
+    "name": "longbeam4_1459",
+    "meshId": "oreyard_timber_00",
+    "firstVertex": 129,
+    "vertexCount": 8,
+    "firstTriangle": 193,
+    "triangleCount": 12,
+    "center": [
+      436.0,
+      4.0,
+      1459.0
+    ]
+  },
+  {
+    "name": "longbeam4_1477",
+    "meshId": "oreyard_timber_00",
+    "firstVertex": 137,
+    "vertexCount": 8,
+    "firstTriangle": 205,
+    "triangleCount": 12,
+    "center": [
+      436.0,
+      4.0,
+      1477.0
+    ]
+  },
+  {
+    "name": "longbeam13.7_1459",
+    "meshId": "oreyard_timber_00",
+    "firstVertex": 145,
+    "vertexCount": 8,
+    "firstTriangle": 217,
+    "triangleCount": 12,
+    "center": [
+      436.0,
+      13.7,
+      1459.0
+    ]
+  },
+  {
+    "name": "longbeam13.7_1477",
+    "meshId": "oreyard_timber_00",
+    "firstVertex": 153,
+    "vertexCount": 8,
+    "firstTriangle": 229,
+    "triangleCount": 12,
+    "center": [
+      436.0,
+      13.7,
+      1477.0
+    ]
+  },
+  {
+    "name": "endbrace425",
+    "meshId": "oreyard_timber_00",
+    "firstVertex": 161,
+    "vertexCount": 8,
+    "firstTriangle": 241,
+    "triangleCount": 12,
+    "center": [
+      425.0,
+      8.8,
+      1468.0
+    ]
+  },
+  {
+    "name": "gable425",
+    "meshId": "oreyard_house_00",
+    "firstVertex": 81,
+    "vertexCount": 6,
+    "firstTriangle": 121,
+    "triangleCount": 8,
+    "center": [
+      425.0,
+      17.0,
+      1468.0
+    ]
+  },
+  {
+    "name": "rafter425_1458",
+    "meshId": "oreyard_timber_00",
+    "firstVertex": 169,
+    "vertexCount": 8,
+    "firstTriangle": 253,
+    "triangleCount": 12,
+    "center": [
+      425.0,
+      18.75,
+      1463.0
+    ]
+  },
+  {
+    "name": "rafter425_1478",
+    "meshId": "oreyard_timber_00",
+    "firstVertex": 177,
+    "vertexCount": 8,
+    "firstTriangle": 265,
+    "triangleCount": 12,
+    "center": [
+      425.0,
+      18.75,
+      1473.0
+    ]
+  },
+  {
+    "name": "king425",
+    "meshId": "oreyard_timber_00",
+    "firstVertex": 185,
+    "vertexCount": 8,
+    "firstTriangle": 277,
+    "triangleCount": 12,
+    "center": [
+      425.0,
+      18.7,
+      1468.0
+    ]
+  },
+  {
+    "name": "endbrace447",
+    "meshId": "oreyard_timber_00",
+    "firstVertex": 193,
+    "vertexCount": 8,
+    "firstTriangle": 289,
+    "triangleCount": 12,
+    "center": [
+      447.0,
+      8.8,
+      1468.0
+    ]
+  },
+  {
+    "name": "gable447",
+    "meshId": "oreyard_house_00",
+    "firstVertex": 87,
+    "vertexCount": 6,
+    "firstTriangle": 129,
+    "triangleCount": 8,
+    "center": [
+      447.0,
+      17.0,
+      1468.0
+    ]
+  },
+  {
+    "name": "rafter447_1458",
+    "meshId": "oreyard_timber_00",
+    "firstVertex": 201,
+    "vertexCount": 8,
+    "firstTriangle": 301,
+    "triangleCount": 12,
+    "center": [
+      447.0,
+      18.75,
+      1463.0
+    ]
+  },
+  {
+    "name": "rafter447_1478",
+    "meshId": "oreyard_timber_00",
+    "firstVertex": 209,
+    "vertexCount": 8,
+    "firstTriangle": 313,
+    "triangleCount": 12,
+    "center": [
+      447.0,
+      18.75,
+      1473.0
+    ]
+  },
+  {
+    "name": "king447",
+    "meshId": "oreyard_timber_00",
+    "firstVertex": 217,
+    "vertexCount": 8,
+    "firstTriangle": 325,
+    "triangleCount": 12,
+    "center": [
+      447.0,
+      18.7,
+      1468.0
+    ]
+  },
+  {
+    "name": "tile-1_0_0",
+    "meshId": "oreyard_slate_00",
+    "firstVertex": 1,
+    "vertexCount": 8,
+    "firstTriangle": 1,
+    "triangleCount": 12,
+    "center": [
+      424.95,
+      22.31750000000004,
+      1467.075
+    ]
+  },
+  {
+    "name": "tile-1_0_1",
+    "meshId": "oreyard_slate_00",
+    "firstVertex": 9,
+    "vertexCount": 8,
+    "firstTriangle": 13,
+    "triangleCount": 12,
+    "center": [
+      427.4,
+      22.31750000000004,
+      1467.075
+    ]
+  },
+  {
+    "name": "tile-1_0_2",
+    "meshId": "oreyard_slate_00",
+    "firstVertex": 17,
+    "vertexCount": 8,
+    "firstTriangle": 25,
+    "triangleCount": 12,
+    "center": [
+      429.84999999999997,
+      22.31750000000004,
+      1467.075
+    ]
+  },
+  {
+    "name": "tile-1_0_3",
+    "meshId": "oreyard_slate_00",
+    "firstVertex": 25,
+    "vertexCount": 8,
+    "firstTriangle": 37,
+    "triangleCount": 12,
+    "center": [
+      432.3,
+      22.31750000000004,
+      1467.075
+    ]
+  },
+  {
+    "name": "tile-1_0_4",
+    "meshId": "oreyard_slate_00",
+    "firstVertex": 33,
+    "vertexCount": 8,
+    "firstTriangle": 49,
+    "triangleCount": 12,
+    "center": [
+      434.75,
+      22.31750000000004,
+      1467.075
+    ]
+  },
+  {
+    "name": "tile-1_0_5",
+    "meshId": "oreyard_slate_00",
+    "firstVertex": 41,
+    "vertexCount": 8,
+    "firstTriangle": 61,
+    "triangleCount": 12,
+    "center": [
+      437.2,
+      22.31750000000004,
+      1467.075
+    ]
+  },
+  {
+    "name": "tile-1_0_6",
+    "meshId": "oreyard_slate_00",
+    "firstVertex": 49,
+    "vertexCount": 8,
+    "firstTriangle": 73,
+    "triangleCount": 12,
+    "center": [
+      439.65,
+      22.31750000000004,
+      1467.075
+    ]
+  },
+  {
+    "name": "tile-1_0_7",
+    "meshId": "oreyard_slate_00",
+    "firstVertex": 57,
+    "vertexCount": 8,
+    "firstTriangle": 85,
+    "triangleCount": 12,
+    "center": [
+      442.09999999999997,
+      22.31750000000004,
+      1467.075
+    ]
+  },
+  {
+    "name": "tile-1_0_8",
+    "meshId": "oreyard_slate_00",
+    "firstVertex": 65,
+    "vertexCount": 8,
+    "firstTriangle": 97,
+    "triangleCount": 12,
+    "center": [
+      444.55,
+      22.31750000000004,
+      1467.075
+    ]
+  },
+  {
+    "name": "tile-1_0_9",
+    "meshId": "oreyard_slate_00",
+    "firstVertex": 73,
+    "vertexCount": 8,
+    "firstTriangle": 109,
+    "triangleCount": 12,
+    "center": [
+      447.0,
+      22.31750000000004,
+      1467.075
+    ]
+  },
+  {
+    "name": "tile-1_1_0",
+    "meshId": "oreyard_slate_00",
+    "firstVertex": 81,
+    "vertexCount": 8,
+    "firstTriangle": 121,
+    "triangleCount": 12,
+    "center": [
+      424.95,
+      20.7875,
+      1465.375
+    ]
+  },
+  {
+    "name": "tile-1_1_1",
+    "meshId": "oreyard_slate_00",
+    "firstVertex": 89,
+    "vertexCount": 8,
+    "firstTriangle": 133,
+    "triangleCount": 12,
+    "center": [
+      427.4,
+      20.7875,
+      1465.375
+    ]
+  },
+  {
+    "name": "tile-1_1_2",
+    "meshId": "oreyard_slate_00",
+    "firstVertex": 97,
+    "vertexCount": 8,
+    "firstTriangle": 145,
+    "triangleCount": 12,
+    "center": [
+      429.84999999999997,
+      20.7875,
+      1465.375
+    ]
+  },
+  {
+    "name": "tile-1_1_3",
+    "meshId": "oreyard_slate_00",
+    "firstVertex": 105,
+    "vertexCount": 8,
+    "firstTriangle": 157,
+    "triangleCount": 12,
+    "center": [
+      432.3,
+      20.7875,
+      1465.375
+    ]
+  },
+  {
+    "name": "tile-1_1_4",
+    "meshId": "oreyard_slate_00",
+    "firstVertex": 113,
+    "vertexCount": 8,
+    "firstTriangle": 169,
+    "triangleCount": 12,
+    "center": [
+      434.75,
+      20.7875,
+      1465.375
+    ]
+  },
+  {
+    "name": "tile-1_1_5",
+    "meshId": "oreyard_slate_00",
+    "firstVertex": 121,
+    "vertexCount": 8,
+    "firstTriangle": 181,
+    "triangleCount": 12,
+    "center": [
+      437.2,
+      20.7875,
+      1465.375
+    ]
+  },
+  {
+    "name": "tile-1_1_6",
+    "meshId": "oreyard_slate_00",
+    "firstVertex": 129,
+    "vertexCount": 8,
+    "firstTriangle": 193,
+    "triangleCount": 12,
+    "center": [
+      439.65,
+      20.7875,
+      1465.375
+    ]
+  },
+  {
+    "name": "tile-1_1_7",
+    "meshId": "oreyard_slate_00",
+    "firstVertex": 137,
+    "vertexCount": 8,
+    "firstTriangle": 205,
+    "triangleCount": 12,
+    "center": [
+      442.09999999999997,
+      20.7875,
+      1465.375
+    ]
+  },
+  {
+    "name": "tile-1_1_8",
+    "meshId": "oreyard_slate_00",
+    "firstVertex": 145,
+    "vertexCount": 8,
+    "firstTriangle": 217,
+    "triangleCount": 12,
+    "center": [
+      444.55,
+      20.7875,
+      1465.375
+    ]
+  },
+  {
+    "name": "tile-1_1_9",
+    "meshId": "oreyard_slate_00",
+    "firstVertex": 153,
+    "vertexCount": 8,
+    "firstTriangle": 229,
+    "triangleCount": 12,
+    "center": [
+      447.0,
+      20.7875,
+      1465.375
+    ]
+  },
+  {
+    "name": "tile-1_2_0",
+    "meshId": "oreyard_slate_00",
+    "firstVertex": 161,
+    "vertexCount": 8,
+    "firstTriangle": 241,
+    "triangleCount": 12,
+    "center": [
+      424.95,
+      19.257499999999958,
+      1463.675
+    ]
+  },
+  {
+    "name": "tile-1_2_1",
+    "meshId": "oreyard_slate_00",
+    "firstVertex": 169,
+    "vertexCount": 8,
+    "firstTriangle": 253,
+    "triangleCount": 12,
+    "center": [
+      427.4,
+      19.257499999999958,
+      1463.675
+    ]
+  },
+  {
+    "name": "tile-1_2_2",
+    "meshId": "oreyard_slate_00",
+    "firstVertex": 177,
+    "vertexCount": 8,
+    "firstTriangle": 265,
+    "triangleCount": 12,
+    "center": [
+      429.84999999999997,
+      19.257499999999958,
+      1463.675
+    ]
+  },
+  {
+    "name": "tile-1_2_3",
+    "meshId": "oreyard_slate_00",
+    "firstVertex": 185,
+    "vertexCount": 8,
+    "firstTriangle": 277,
+    "triangleCount": 12,
+    "center": [
+      432.3,
+      19.257499999999958,
+      1463.675
+    ]
+  },
+  {
+    "name": "tile-1_2_4",
+    "meshId": "oreyard_slate_00",
+    "firstVertex": 193,
+    "vertexCount": 8,
+    "firstTriangle": 289,
+    "triangleCount": 12,
+    "center": [
+      434.75,
+      19.257499999999958,
+      1463.675
+    ]
+  },
+  {
+    "name": "tile-1_2_5",
+    "meshId": "oreyard_slate_00",
+    "firstVertex": 201,
+    "vertexCount": 8,
+    "firstTriangle": 301,
+    "triangleCount": 12,
+    "center": [
+      437.2,
+      19.257499999999958,
+      1463.675
+    ]
+  },
+  {
+    "name": "tile-1_2_6",
+    "meshId": "oreyard_slate_00",
+    "firstVertex": 209,
+    "vertexCount": 8,
+    "firstTriangle": 313,
+    "triangleCount": 12,
+    "center": [
+      439.65,
+      19.257499999999958,
+      1463.675
+    ]
+  },
+  {
+    "name": "tile-1_2_7",
+    "meshId": "oreyard_slate_00",
+    "firstVertex": 217,
+    "vertexCount": 8,
+    "firstTriangle": 325,
+    "triangleCount": 12,
+    "center": [
+      442.09999999999997,
+      19.257499999999958,
+      1463.675
+    ]
+  },
+  {
+    "name": "tile-1_2_8",
+    "meshId": "oreyard_slate_00",
+    "firstVertex": 225,
+    "vertexCount": 8,
+    "firstTriangle": 337,
+    "triangleCount": 12,
+    "center": [
+      444.55,
+      19.257499999999958,
+      1463.675
+    ]
+  },
+  {
+    "name": "tile-1_2_9",
+    "meshId": "oreyard_slate_00",
+    "firstVertex": 233,
+    "vertexCount": 8,
+    "firstTriangle": 349,
+    "triangleCount": 12,
+    "center": [
+      447.0,
+      19.257499999999958,
+      1463.675
+    ]
+  },
+  {
+    "name": "tile-1_3_0",
+    "meshId": "oreyard_slate_00",
+    "firstVertex": 241,
+    "vertexCount": 8,
+    "firstTriangle": 361,
+    "triangleCount": 12,
+    "center": [
+      424.95,
+      17.72750000000002,
+      1461.975
+    ]
+  },
+  {
+    "name": "tile-1_3_1",
+    "meshId": "oreyard_slate_00",
+    "firstVertex": 249,
+    "vertexCount": 8,
+    "firstTriangle": 373,
+    "triangleCount": 12,
+    "center": [
+      427.4,
+      17.72750000000002,
+      1461.975
+    ]
+  },
+  {
+    "name": "tile-1_3_2",
+    "meshId": "oreyard_slate_00",
+    "firstVertex": 257,
+    "vertexCount": 8,
+    "firstTriangle": 385,
+    "triangleCount": 12,
+    "center": [
+      429.84999999999997,
+      17.72750000000002,
+      1461.975
+    ]
+  },
+  {
+    "name": "tile-1_3_3",
+    "meshId": "oreyard_slate_00",
+    "firstVertex": 265,
+    "vertexCount": 8,
+    "firstTriangle": 397,
+    "triangleCount": 12,
+    "center": [
+      432.3,
+      17.72750000000002,
+      1461.975
+    ]
+  },
+  {
+    "name": "tile-1_3_4",
+    "meshId": "oreyard_slate_00",
+    "firstVertex": 273,
+    "vertexCount": 8,
+    "firstTriangle": 409,
+    "triangleCount": 12,
+    "center": [
+      434.75,
+      17.72750000000002,
+      1461.975
+    ]
+  },
+  {
+    "name": "tile-1_3_5",
+    "meshId": "oreyard_slate_00",
+    "firstVertex": 281,
+    "vertexCount": 8,
+    "firstTriangle": 421,
+    "triangleCount": 12,
+    "center": [
+      437.2,
+      17.72750000000002,
+      1461.975
+    ]
+  },
+  {
+    "name": "tile-1_3_6",
+    "meshId": "oreyard_slate_00",
+    "firstVertex": 289,
+    "vertexCount": 8,
+    "firstTriangle": 433,
+    "triangleCount": 12,
+    "center": [
+      439.65,
+      17.72750000000002,
+      1461.975
+    ]
+  },
+  {
+    "name": "tile-1_3_7",
+    "meshId": "oreyard_slate_00",
+    "firstVertex": 297,
+    "vertexCount": 8,
+    "firstTriangle": 445,
+    "triangleCount": 12,
+    "center": [
+      442.09999999999997,
+      17.72750000000002,
+      1461.975
+    ]
+  },
+  {
+    "name": "tile-1_3_8",
+    "meshId": "oreyard_slate_00",
+    "firstVertex": 305,
+    "vertexCount": 8,
+    "firstTriangle": 457,
+    "triangleCount": 12,
+    "center": [
+      444.55,
+      17.72750000000002,
+      1461.975
+    ]
+  },
+  {
+    "name": "tile-1_3_9",
+    "meshId": "oreyard_slate_00",
+    "firstVertex": 313,
+    "vertexCount": 8,
+    "firstTriangle": 469,
+    "triangleCount": 12,
+    "center": [
+      447.0,
+      17.72750000000002,
+      1461.975
+    ]
+  },
+  {
+    "name": "tile-1_4_0",
+    "meshId": "oreyard_slate_00",
+    "firstVertex": 321,
+    "vertexCount": 8,
+    "firstTriangle": 481,
+    "triangleCount": 12,
+    "center": [
+      424.95,
+      16.19749999999998,
+      1460.275
+    ]
+  },
+  {
+    "name": "tile-1_4_1",
+    "meshId": "oreyard_slate_00",
+    "firstVertex": 329,
+    "vertexCount": 8,
+    "firstTriangle": 493,
+    "triangleCount": 12,
+    "center": [
+      427.4,
+      16.19749999999998,
+      1460.275
+    ]
+  },
+  {
+    "name": "tile-1_4_2",
+    "meshId": "oreyard_slate_00",
+    "firstVertex": 337,
+    "vertexCount": 8,
+    "firstTriangle": 505,
+    "triangleCount": 12,
+    "center": [
+      429.84999999999997,
+      16.19749999999998,
+      1460.275
+    ]
+  },
+  {
+    "name": "tile-1_4_3",
+    "meshId": "oreyard_slate_00",
+    "firstVertex": 345,
+    "vertexCount": 8,
+    "firstTriangle": 517,
+    "triangleCount": 12,
+    "center": [
+      432.3,
+      16.19749999999998,
+      1460.275
+    ]
+  },
+  {
+    "name": "tile-1_4_4",
+    "meshId": "oreyard_slate_00",
+    "firstVertex": 353,
+    "vertexCount": 8,
+    "firstTriangle": 529,
+    "triangleCount": 12,
+    "center": [
+      434.75,
+      16.19749999999998,
+      1460.275
+    ]
+  },
+  {
+    "name": "tile-1_4_5",
+    "meshId": "oreyard_slate_00",
+    "firstVertex": 361,
+    "vertexCount": 8,
+    "firstTriangle": 541,
+    "triangleCount": 12,
+    "center": [
+      437.2,
+      16.19749999999998,
+      1460.275
+    ]
+  },
+  {
+    "name": "tile-1_4_6",
+    "meshId": "oreyard_slate_00",
+    "firstVertex": 369,
+    "vertexCount": 8,
+    "firstTriangle": 553,
+    "triangleCount": 12,
+    "center": [
+      439.65,
+      16.19749999999998,
+      1460.275
+    ]
+  },
+  {
+    "name": "tile-1_4_7",
+    "meshId": "oreyard_slate_00",
+    "firstVertex": 377,
+    "vertexCount": 8,
+    "firstTriangle": 565,
+    "triangleCount": 12,
+    "center": [
+      442.09999999999997,
+      16.19749999999998,
+      1460.275
+    ]
+  },
+  {
+    "name": "tile-1_4_8",
+    "meshId": "oreyard_slate_00",
+    "firstVertex": 385,
+    "vertexCount": 8,
+    "firstTriangle": 577,
+    "triangleCount": 12,
+    "center": [
+      444.55,
+      16.19749999999998,
+      1460.275
+    ]
+  },
+  {
+    "name": "tile-1_4_9",
+    "meshId": "oreyard_slate_00",
+    "firstVertex": 393,
+    "vertexCount": 8,
+    "firstTriangle": 589,
+    "triangleCount": 12,
+    "center": [
+      447.0,
+      16.19749999999998,
+      1460.275
+    ]
+  },
+  {
+    "name": "tile-1_5_0",
+    "meshId": "oreyard_slate_00",
+    "firstVertex": 401,
+    "vertexCount": 8,
+    "firstTriangle": 601,
+    "triangleCount": 12,
+    "center": [
+      424.95,
+      14.667500000000041,
+      1458.575
+    ]
+  },
+  {
+    "name": "tile-1_5_1",
+    "meshId": "oreyard_slate_00",
+    "firstVertex": 409,
+    "vertexCount": 8,
+    "firstTriangle": 613,
+    "triangleCount": 12,
+    "center": [
+      427.4,
+      14.667500000000041,
+      1458.575
+    ]
+  },
+  {
+    "name": "tile-1_5_2",
+    "meshId": "oreyard_slate_00",
+    "firstVertex": 417,
+    "vertexCount": 8,
+    "firstTriangle": 625,
+    "triangleCount": 12,
+    "center": [
+      429.84999999999997,
+      14.667500000000041,
+      1458.575
+    ]
+  },
+  {
+    "name": "tile-1_5_3",
+    "meshId": "oreyard_slate_00",
+    "firstVertex": 425,
+    "vertexCount": 8,
+    "firstTriangle": 637,
+    "triangleCount": 12,
+    "center": [
+      432.3,
+      14.667500000000041,
+      1458.575
+    ]
+  },
+  {
+    "name": "tile-1_5_4",
+    "meshId": "oreyard_slate_00",
+    "firstVertex": 433,
+    "vertexCount": 8,
+    "firstTriangle": 649,
+    "triangleCount": 12,
+    "center": [
+      434.75,
+      14.667500000000041,
+      1458.575
+    ]
+  },
+  {
+    "name": "tile-1_5_5",
+    "meshId": "oreyard_slate_00",
+    "firstVertex": 441,
+    "vertexCount": 8,
+    "firstTriangle": 661,
+    "triangleCount": 12,
+    "center": [
+      437.2,
+      14.667500000000041,
+      1458.575
+    ]
+  },
+  {
+    "name": "tile-1_5_6",
+    "meshId": "oreyard_slate_00",
+    "firstVertex": 449,
+    "vertexCount": 8,
+    "firstTriangle": 673,
+    "triangleCount": 12,
+    "center": [
+      439.65,
+      14.667500000000041,
+      1458.575
+    ]
+  },
+  {
+    "name": "tile-1_5_7",
+    "meshId": "oreyard_slate_00",
+    "firstVertex": 457,
+    "vertexCount": 8,
+    "firstTriangle": 685,
+    "triangleCount": 12,
+    "center": [
+      442.09999999999997,
+      14.667500000000041,
+      1458.575
+    ]
+  },
+  {
+    "name": "tile-1_5_8",
+    "meshId": "oreyard_slate_00",
+    "firstVertex": 465,
+    "vertexCount": 8,
+    "firstTriangle": 697,
+    "triangleCount": 12,
+    "center": [
+      444.55,
+      14.667500000000041,
+      1458.575
+    ]
+  },
+  {
+    "name": "tile-1_5_9",
+    "meshId": "oreyard_slate_00",
+    "firstVertex": 473,
+    "vertexCount": 8,
+    "firstTriangle": 709,
+    "triangleCount": 12,
+    "center": [
+      447.0,
+      14.667500000000041,
+      1458.575
+    ]
+  },
+  {
+    "name": "tile1_0_0",
+    "meshId": "oreyard_slate_00",
+    "firstVertex": 481,
+    "vertexCount": 8,
+    "firstTriangle": 721,
+    "triangleCount": 12,
+    "center": [
+      424.95,
+      22.31750000000004,
+      1468.925
+    ]
+  },
+  {
+    "name": "tile1_0_1",
+    "meshId": "oreyard_slate_00",
+    "firstVertex": 489,
+    "vertexCount": 8,
+    "firstTriangle": 733,
+    "triangleCount": 12,
+    "center": [
+      427.4,
+      22.31750000000004,
+      1468.925
+    ]
+  },
+  {
+    "name": "tile1_0_2",
+    "meshId": "oreyard_slate_00",
+    "firstVertex": 497,
+    "vertexCount": 8,
+    "firstTriangle": 745,
+    "triangleCount": 12,
+    "center": [
+      429.84999999999997,
+      22.31750000000004,
+      1468.925
+    ]
+  },
+  {
+    "name": "tile1_0_3",
+    "meshId": "oreyard_slate_00",
+    "firstVertex": 505,
+    "vertexCount": 8,
+    "firstTriangle": 757,
+    "triangleCount": 12,
+    "center": [
+      432.3,
+      22.31750000000004,
+      1468.925
+    ]
+  },
+  {
+    "name": "tile1_0_4",
+    "meshId": "oreyard_slate_00",
+    "firstVertex": 513,
+    "vertexCount": 8,
+    "firstTriangle": 769,
+    "triangleCount": 12,
+    "center": [
+      434.75,
+      22.31750000000004,
+      1468.925
+    ]
+  },
+  {
+    "name": "tile1_0_5",
+    "meshId": "oreyard_slate_00",
+    "firstVertex": 521,
+    "vertexCount": 8,
+    "firstTriangle": 781,
+    "triangleCount": 12,
+    "center": [
+      437.2,
+      22.31750000000004,
+      1468.925
+    ]
+  },
+  {
+    "name": "tile1_0_6",
+    "meshId": "oreyard_slate_00",
+    "firstVertex": 529,
+    "vertexCount": 8,
+    "firstTriangle": 793,
+    "triangleCount": 12,
+    "center": [
+      439.65,
+      22.31750000000004,
+      1468.925
+    ]
+  },
+  {
+    "name": "tile1_0_7",
+    "meshId": "oreyard_slate_00",
+    "firstVertex": 537,
+    "vertexCount": 8,
+    "firstTriangle": 805,
+    "triangleCount": 12,
+    "center": [
+      442.09999999999997,
+      22.31750000000004,
+      1468.925
+    ]
+  },
+  {
+    "name": "tile1_0_8",
+    "meshId": "oreyard_slate_00",
+    "firstVertex": 545,
+    "vertexCount": 8,
+    "firstTriangle": 817,
+    "triangleCount": 12,
+    "center": [
+      444.55,
+      22.31750000000004,
+      1468.925
+    ]
+  },
+  {
+    "name": "tile1_0_9",
+    "meshId": "oreyard_slate_00",
+    "firstVertex": 553,
+    "vertexCount": 8,
+    "firstTriangle": 829,
+    "triangleCount": 12,
+    "center": [
+      447.0,
+      22.31750000000004,
+      1468.925
+    ]
+  },
+  {
+    "name": "tile1_1_0",
+    "meshId": "oreyard_slate_00",
+    "firstVertex": 561,
+    "vertexCount": 8,
+    "firstTriangle": 841,
+    "triangleCount": 12,
+    "center": [
+      424.95,
+      20.7875,
+      1470.625
+    ]
+  },
+  {
+    "name": "tile1_1_1",
+    "meshId": "oreyard_slate_00",
+    "firstVertex": 569,
+    "vertexCount": 8,
+    "firstTriangle": 853,
+    "triangleCount": 12,
+    "center": [
+      427.4,
+      20.7875,
+      1470.625
+    ]
+  },
+  {
+    "name": "tile1_1_2",
+    "meshId": "oreyard_slate_00",
+    "firstVertex": 577,
+    "vertexCount": 8,
+    "firstTriangle": 865,
+    "triangleCount": 12,
+    "center": [
+      429.84999999999997,
+      20.7875,
+      1470.625
+    ]
+  },
+  {
+    "name": "tile1_1_3",
+    "meshId": "oreyard_slate_00",
+    "firstVertex": 585,
+    "vertexCount": 8,
+    "firstTriangle": 877,
+    "triangleCount": 12,
+    "center": [
+      432.3,
+      20.7875,
+      1470.625
+    ]
+  },
+  {
+    "name": "tile1_1_4",
+    "meshId": "oreyard_slate_00",
+    "firstVertex": 593,
+    "vertexCount": 8,
+    "firstTriangle": 889,
+    "triangleCount": 12,
+    "center": [
+      434.75,
+      20.7875,
+      1470.625
+    ]
+  },
+  {
+    "name": "tile1_1_5",
+    "meshId": "oreyard_slate_00",
+    "firstVertex": 601,
+    "vertexCount": 8,
+    "firstTriangle": 901,
+    "triangleCount": 12,
+    "center": [
+      437.2,
+      20.7875,
+      1470.625
+    ]
+  },
+  {
+    "name": "tile1_1_6",
+    "meshId": "oreyard_slate_00",
+    "firstVertex": 609,
+    "vertexCount": 8,
+    "firstTriangle": 913,
+    "triangleCount": 12,
+    "center": [
+      439.65,
+      20.7875,
+      1470.625
+    ]
+  },
+  {
+    "name": "tile1_1_7",
+    "meshId": "oreyard_slate_00",
+    "firstVertex": 617,
+    "vertexCount": 8,
+    "firstTriangle": 925,
+    "triangleCount": 12,
+    "center": [
+      442.09999999999997,
+      20.7875,
+      1470.625
+    ]
+  },
+  {
+    "name": "tile1_1_8",
+    "meshId": "oreyard_slate_00",
+    "firstVertex": 625,
+    "vertexCount": 8,
+    "firstTriangle": 937,
+    "triangleCount": 12,
+    "center": [
+      444.55,
+      20.7875,
+      1470.625
+    ]
+  },
+  {
+    "name": "tile1_1_9",
+    "meshId": "oreyard_slate_00",
+    "firstVertex": 633,
+    "vertexCount": 8,
+    "firstTriangle": 949,
+    "triangleCount": 12,
+    "center": [
+      447.0,
+      20.7875,
+      1470.625
+    ]
+  },
+  {
+    "name": "tile1_2_0",
+    "meshId": "oreyard_slate_00",
+    "firstVertex": 641,
+    "vertexCount": 8,
+    "firstTriangle": 961,
+    "triangleCount": 12,
+    "center": [
+      424.95,
+      19.257499999999958,
+      1472.325
+    ]
+  },
+  {
+    "name": "tile1_2_1",
+    "meshId": "oreyard_slate_00",
+    "firstVertex": 649,
+    "vertexCount": 8,
+    "firstTriangle": 973,
+    "triangleCount": 12,
+    "center": [
+      427.4,
+      19.257499999999958,
+      1472.325
+    ]
+  },
+  {
+    "name": "tile1_2_2",
+    "meshId": "oreyard_slate_00",
+    "firstVertex": 657,
+    "vertexCount": 8,
+    "firstTriangle": 985,
+    "triangleCount": 12,
+    "center": [
+      429.84999999999997,
+      19.257499999999958,
+      1472.325
+    ]
+  },
+  {
+    "name": "tile1_2_3",
+    "meshId": "oreyard_slate_00",
+    "firstVertex": 665,
+    "vertexCount": 8,
+    "firstTriangle": 997,
+    "triangleCount": 12,
+    "center": [
+      432.3,
+      19.257499999999958,
+      1472.325
+    ]
+  },
+  {
+    "name": "tile1_2_4",
+    "meshId": "oreyard_slate_00",
+    "firstVertex": 673,
+    "vertexCount": 8,
+    "firstTriangle": 1009,
+    "triangleCount": 12,
+    "center": [
+      434.75,
+      19.257499999999958,
+      1472.325
+    ]
+  },
+  {
+    "name": "tile1_2_5",
+    "meshId": "oreyard_slate_00",
+    "firstVertex": 681,
+    "vertexCount": 8,
+    "firstTriangle": 1021,
+    "triangleCount": 12,
+    "center": [
+      437.2,
+      19.257499999999958,
+      1472.325
+    ]
+  },
+  {
+    "name": "tile1_2_6",
+    "meshId": "oreyard_slate_00",
+    "firstVertex": 689,
+    "vertexCount": 8,
+    "firstTriangle": 1033,
+    "triangleCount": 12,
+    "center": [
+      439.65,
+      19.257499999999958,
+      1472.325
+    ]
+  },
+  {
+    "name": "tile1_2_7",
+    "meshId": "oreyard_slate_00",
+    "firstVertex": 697,
+    "vertexCount": 8,
+    "firstTriangle": 1045,
+    "triangleCount": 12,
+    "center": [
+      442.09999999999997,
+      19.257499999999958,
+      1472.325
+    ]
+  },
+  {
+    "name": "tile1_2_8",
+    "meshId": "oreyard_slate_00",
+    "firstVertex": 705,
+    "vertexCount": 8,
+    "firstTriangle": 1057,
+    "triangleCount": 12,
+    "center": [
+      444.55,
+      19.257499999999958,
+      1472.325
+    ]
+  },
+  {
+    "name": "tile1_2_9",
+    "meshId": "oreyard_slate_00",
+    "firstVertex": 713,
+    "vertexCount": 8,
+    "firstTriangle": 1069,
+    "triangleCount": 12,
+    "center": [
+      447.0,
+      19.257499999999958,
+      1472.325
+    ]
+  },
+  {
+    "name": "tile1_3_0",
+    "meshId": "oreyard_slate_00",
+    "firstVertex": 721,
+    "vertexCount": 8,
+    "firstTriangle": 1081,
+    "triangleCount": 12,
+    "center": [
+      424.95,
+      17.72750000000002,
+      1474.025
+    ]
+  },
+  {
+    "name": "tile1_3_1",
+    "meshId": "oreyard_slate_00",
+    "firstVertex": 729,
+    "vertexCount": 8,
+    "firstTriangle": 1093,
+    "triangleCount": 12,
+    "center": [
+      427.4,
+      17.72750000000002,
+      1474.025
+    ]
+  },
+  {
+    "name": "tile1_3_2",
+    "meshId": "oreyard_slate_00",
+    "firstVertex": 737,
+    "vertexCount": 8,
+    "firstTriangle": 1105,
+    "triangleCount": 12,
+    "center": [
+      429.84999999999997,
+      17.72750000000002,
+      1474.025
+    ]
+  },
+  {
+    "name": "tile1_3_3",
+    "meshId": "oreyard_slate_00",
+    "firstVertex": 745,
+    "vertexCount": 8,
+    "firstTriangle": 1117,
+    "triangleCount": 12,
+    "center": [
+      432.3,
+      17.72750000000002,
+      1474.025
+    ]
+  },
+  {
+    "name": "tile1_3_4",
+    "meshId": "oreyard_slate_00",
+    "firstVertex": 753,
+    "vertexCount": 8,
+    "firstTriangle": 1129,
+    "triangleCount": 12,
+    "center": [
+      434.75,
+      17.72750000000002,
+      1474.025
+    ]
+  },
+  {
+    "name": "tile1_3_5",
+    "meshId": "oreyard_slate_00",
+    "firstVertex": 761,
+    "vertexCount": 8,
+    "firstTriangle": 1141,
+    "triangleCount": 12,
+    "center": [
+      437.2,
+      17.72750000000002,
+      1474.025
+    ]
+  },
+  {
+    "name": "tile1_3_6",
+    "meshId": "oreyard_slate_00",
+    "firstVertex": 769,
+    "vertexCount": 8,
+    "firstTriangle": 1153,
+    "triangleCount": 12,
+    "center": [
+      439.65,
+      17.72750000000002,
+      1474.025
+    ]
+  },
+  {
+    "name": "tile1_3_7",
+    "meshId": "oreyard_slate_00",
+    "firstVertex": 777,
+    "vertexCount": 8,
+    "firstTriangle": 1165,
+    "triangleCount": 12,
+    "center": [
+      442.09999999999997,
+      17.72750000000002,
+      1474.025
+    ]
+  },
+  {
+    "name": "tile1_3_8",
+    "meshId": "oreyard_slate_00",
+    "firstVertex": 785,
+    "vertexCount": 8,
+    "firstTriangle": 1177,
+    "triangleCount": 12,
+    "center": [
+      444.55,
+      17.72750000000002,
+      1474.025
+    ]
+  },
+  {
+    "name": "tile1_3_9",
+    "meshId": "oreyard_slate_00",
+    "firstVertex": 793,
+    "vertexCount": 8,
+    "firstTriangle": 1189,
+    "triangleCount": 12,
+    "center": [
+      447.0,
+      17.72750000000002,
+      1474.025
+    ]
+  },
+  {
+    "name": "tile1_4_0",
+    "meshId": "oreyard_slate_00",
+    "firstVertex": 801,
+    "vertexCount": 8,
+    "firstTriangle": 1201,
+    "triangleCount": 12,
+    "center": [
+      424.95,
+      16.19749999999998,
+      1475.725
+    ]
+  },
+  {
+    "name": "tile1_4_1",
+    "meshId": "oreyard_slate_00",
+    "firstVertex": 809,
+    "vertexCount": 8,
+    "firstTriangle": 1213,
+    "triangleCount": 12,
+    "center": [
+      427.4,
+      16.19749999999998,
+      1475.725
+    ]
+  },
+  {
+    "name": "tile1_4_2",
+    "meshId": "oreyard_slate_00",
+    "firstVertex": 817,
+    "vertexCount": 8,
+    "firstTriangle": 1225,
+    "triangleCount": 12,
+    "center": [
+      429.84999999999997,
+      16.19749999999998,
+      1475.725
+    ]
+  },
+  {
+    "name": "tile1_4_3",
+    "meshId": "oreyard_slate_00",
+    "firstVertex": 825,
+    "vertexCount": 8,
+    "firstTriangle": 1237,
+    "triangleCount": 12,
+    "center": [
+      432.3,
+      16.19749999999998,
+      1475.725
+    ]
+  },
+  {
+    "name": "tile1_4_4",
+    "meshId": "oreyard_slate_00",
+    "firstVertex": 833,
+    "vertexCount": 8,
+    "firstTriangle": 1249,
+    "triangleCount": 12,
+    "center": [
+      434.75,
+      16.19749999999998,
+      1475.725
+    ]
+  },
+  {
+    "name": "tile1_4_5",
+    "meshId": "oreyard_slate_00",
+    "firstVertex": 841,
+    "vertexCount": 8,
+    "firstTriangle": 1261,
+    "triangleCount": 12,
+    "center": [
+      437.2,
+      16.19749999999998,
+      1475.725
+    ]
+  },
+  {
+    "name": "tile1_4_6",
+    "meshId": "oreyard_slate_00",
+    "firstVertex": 849,
+    "vertexCount": 8,
+    "firstTriangle": 1273,
+    "triangleCount": 12,
+    "center": [
+      439.65,
+      16.19749999999998,
+      1475.725
+    ]
+  },
+  {
+    "name": "tile1_4_7",
+    "meshId": "oreyard_slate_00",
+    "firstVertex": 857,
+    "vertexCount": 8,
+    "firstTriangle": 1285,
+    "triangleCount": 12,
+    "center": [
+      442.09999999999997,
+      16.19749999999998,
+      1475.725
+    ]
+  },
+  {
+    "name": "tile1_4_8",
+    "meshId": "oreyard_slate_00",
+    "firstVertex": 865,
+    "vertexCount": 8,
+    "firstTriangle": 1297,
+    "triangleCount": 12,
+    "center": [
+      444.55,
+      16.19749999999998,
+      1475.725
+    ]
+  },
+  {
+    "name": "tile1_4_9",
+    "meshId": "oreyard_slate_00",
+    "firstVertex": 873,
+    "vertexCount": 8,
+    "firstTriangle": 1309,
+    "triangleCount": 12,
+    "center": [
+      447.0,
+      16.19749999999998,
+      1475.725
+    ]
+  },
+  {
+    "name": "tile1_5_0",
+    "meshId": "oreyard_slate_00",
+    "firstVertex": 881,
+    "vertexCount": 8,
+    "firstTriangle": 1321,
+    "triangleCount": 12,
+    "center": [
+      424.95,
+      14.667500000000041,
+      1477.425
+    ]
+  },
+  {
+    "name": "tile1_5_1",
+    "meshId": "oreyard_slate_00",
+    "firstVertex": 889,
+    "vertexCount": 8,
+    "firstTriangle": 1333,
+    "triangleCount": 12,
+    "center": [
+      427.4,
+      14.667500000000041,
+      1477.425
+    ]
+  },
+  {
+    "name": "tile1_5_2",
+    "meshId": "oreyard_slate_00",
+    "firstVertex": 897,
+    "vertexCount": 8,
+    "firstTriangle": 1345,
+    "triangleCount": 12,
+    "center": [
+      429.84999999999997,
+      14.667500000000041,
+      1477.425
+    ]
+  },
+  {
+    "name": "tile1_5_3",
+    "meshId": "oreyard_slate_00",
+    "firstVertex": 905,
+    "vertexCount": 8,
+    "firstTriangle": 1357,
+    "triangleCount": 12,
+    "center": [
+      432.3,
+      14.667500000000041,
+      1477.425
+    ]
+  },
+  {
+    "name": "tile1_5_4",
+    "meshId": "oreyard_slate_00",
+    "firstVertex": 913,
+    "vertexCount": 8,
+    "firstTriangle": 1369,
+    "triangleCount": 12,
+    "center": [
+      434.75,
+      14.667500000000041,
+      1477.425
+    ]
+  },
+  {
+    "name": "tile1_5_5",
+    "meshId": "oreyard_slate_00",
+    "firstVertex": 921,
+    "vertexCount": 8,
+    "firstTriangle": 1381,
+    "triangleCount": 12,
+    "center": [
+      437.2,
+      14.667500000000041,
+      1477.425
+    ]
+  },
+  {
+    "name": "tile1_5_6",
+    "meshId": "oreyard_slate_00",
+    "firstVertex": 929,
+    "vertexCount": 8,
+    "firstTriangle": 1393,
+    "triangleCount": 12,
+    "center": [
+      439.65,
+      14.667500000000041,
+      1477.425
+    ]
+  },
+  {
+    "name": "tile1_5_7",
+    "meshId": "oreyard_slate_00",
+    "firstVertex": 937,
+    "vertexCount": 8,
+    "firstTriangle": 1405,
+    "triangleCount": 12,
+    "center": [
+      442.09999999999997,
+      14.667500000000041,
+      1477.425
+    ]
+  },
+  {
+    "name": "tile1_5_8",
+    "meshId": "oreyard_slate_00",
+    "firstVertex": 945,
+    "vertexCount": 8,
+    "firstTriangle": 1417,
+    "triangleCount": 12,
+    "center": [
+      444.55,
+      14.667500000000041,
+      1477.425
+    ]
+  },
+  {
+    "name": "tile1_5_9",
+    "meshId": "oreyard_slate_00",
+    "firstVertex": 953,
+    "vertexCount": 8,
+    "firstTriangle": 1429,
+    "triangleCount": 12,
+    "center": [
+      447.0,
+      14.667500000000041,
+      1477.425
+    ]
+  },
+  {
+    "name": "ridge0",
+    "meshId": "oreyard_slate_00",
+    "firstVertex": 961,
+    "vertexCount": 8,
+    "firstTriangle": 1441,
+    "triangleCount": 12,
+    "center": [
+      424.8,
+      23.5,
+      1468.0
+    ]
+  },
+  {
+    "name": "ridge1",
+    "meshId": "oreyard_slate_00",
+    "firstVertex": 969,
+    "vertexCount": 8,
+    "firstTriangle": 1453,
+    "triangleCount": 12,
+    "center": [
+      427.15000000000003,
+      23.5,
+      1468.0
+    ]
+  },
+  {
+    "name": "ridge2",
+    "meshId": "oreyard_slate_00",
+    "firstVertex": 977,
+    "vertexCount": 8,
+    "firstTriangle": 1465,
+    "triangleCount": 12,
+    "center": [
+      429.5,
+      23.5,
+      1468.0
+    ]
+  },
+  {
+    "name": "ridge3",
+    "meshId": "oreyard_slate_00",
+    "firstVertex": 985,
+    "vertexCount": 8,
+    "firstTriangle": 1477,
+    "triangleCount": 12,
+    "center": [
+      431.85,
+      23.5,
+      1468.0
+    ]
+  },
+  {
+    "name": "ridge4",
+    "meshId": "oreyard_slate_00",
+    "firstVertex": 993,
+    "vertexCount": 8,
+    "firstTriangle": 1489,
+    "triangleCount": 12,
+    "center": [
+      434.2,
+      23.5,
+      1468.0
+    ]
+  },
+  {
+    "name": "ridge5",
+    "meshId": "oreyard_slate_00",
+    "firstVertex": 1001,
+    "vertexCount": 8,
+    "firstTriangle": 1501,
+    "triangleCount": 12,
+    "center": [
+      436.55,
+      23.5,
+      1468.0
+    ]
+  },
+  {
+    "name": "ridge6",
+    "meshId": "oreyard_slate_00",
+    "firstVertex": 1009,
+    "vertexCount": 8,
+    "firstTriangle": 1513,
+    "triangleCount": 12,
+    "center": [
+      438.90000000000003,
+      23.5,
+      1468.0
+    ]
+  },
+  {
+    "name": "ridge7",
+    "meshId": "oreyard_slate_00",
+    "firstVertex": 1017,
+    "vertexCount": 8,
+    "firstTriangle": 1525,
+    "triangleCount": 12,
+    "center": [
+      441.25,
+      23.5,
+      1468.0
+    ]
+  },
+  {
+    "name": "ridge8",
+    "meshId": "oreyard_slate_00",
+    "firstVertex": 1025,
+    "vertexCount": 8,
+    "firstTriangle": 1537,
+    "triangleCount": 12,
+    "center": [
+      443.6,
+      23.5,
+      1468.0
+    ]
+  },
+  {
+    "name": "ridge9",
+    "meshId": "oreyard_slate_00",
+    "firstVertex": 1033,
+    "vertexCount": 8,
+    "firstTriangle": 1549,
+    "triangleCount": 12,
+    "center": [
+      445.95,
+      23.5,
+      1468.0
+    ]
+  },
+  {
+    "name": "chimney0",
+    "meshId": "oreyard_masonry_00",
+    "firstVertex": 289,
+    "vertexCount": 8,
+    "firstTriangle": 433,
+    "triangleCount": 12,
+    "center": [
+      428.0,
+      17.4,
+      1463.0
+    ]
+  },
+  {
+    "name": "chimney1",
+    "meshId": "oreyard_masonry_00",
+    "firstVertex": 297,
+    "vertexCount": 8,
+    "firstTriangle": 445,
+    "triangleCount": 12,
+    "center": [
+      428.0,
+      18.4,
+      1463.0
+    ]
+  },
+  {
+    "name": "chimney2",
+    "meshId": "oreyard_masonry_00",
+    "firstVertex": 305,
+    "vertexCount": 8,
+    "firstTriangle": 457,
+    "triangleCount": 12,
+    "center": [
+      428.0,
+      19.4,
+      1463.0
+    ]
+  },
+  {
+    "name": "chimney3",
+    "meshId": "oreyard_masonry_00",
+    "firstVertex": 313,
+    "vertexCount": 8,
+    "firstTriangle": 469,
+    "triangleCount": 12,
+    "center": [
+      428.0,
+      20.4,
+      1463.0
+    ]
+  },
+  {
+    "name": "chimney4",
+    "meshId": "oreyard_masonry_00",
+    "firstVertex": 321,
+    "vertexCount": 8,
+    "firstTriangle": 481,
+    "triangleCount": 12,
+    "center": [
+      428.0,
+      21.4,
+      1463.0
+    ]
+  },
+  {
+    "name": "chimney5",
+    "meshId": "oreyard_masonry_00",
+    "firstVertex": 329,
+    "vertexCount": 8,
+    "firstTriangle": 493,
+    "triangleCount": 12,
+    "center": [
+      428.0,
+      22.4,
+      1463.0
+    ]
+  },
+  {
+    "name": "chimney6",
+    "meshId": "oreyard_masonry_00",
+    "firstVertex": 337,
+    "vertexCount": 8,
+    "firstTriangle": 505,
+    "triangleCount": 12,
+    "center": [
+      428.0,
+      23.4,
+      1463.0
+    ]
+  },
+  {
+    "name": "chimney7",
+    "meshId": "oreyard_masonry_00",
+    "firstVertex": 345,
+    "vertexCount": 8,
+    "firstTriangle": 517,
+    "triangleCount": 12,
+    "center": [
+      428.0,
+      24.4,
+      1463.0
+    ]
+  },
+  {
+    "name": "chimney8",
+    "meshId": "oreyard_masonry_00",
+    "firstVertex": 353,
+    "vertexCount": 8,
+    "firstTriangle": 529,
+    "triangleCount": 12,
+    "center": [
+      428.0,
+      25.4,
+      1463.0
+    ]
+  },
+  {
+    "name": "chimney9",
+    "meshId": "oreyard_masonry_00",
+    "firstVertex": 361,
+    "vertexCount": 8,
+    "firstTriangle": 541,
+    "triangleCount": 12,
+    "center": [
+      428.0,
+      26.4,
+      1463.0
+    ]
+  },
+  {
+    "name": "chimney_cap",
+    "meshId": "oreyard_copper_00",
+    "firstVertex": 1,
+    "vertexCount": 8,
+    "firstTriangle": 1,
+    "triangleCount": 12,
+    "center": [
+      428.0,
+      27.1,
+      1463.0
+    ]
+  },
+  {
+    "name": "balance_stand",
+    "meshId": "oreyard_copper_00",
+    "firstVertex": 9,
+    "vertexCount": 8,
+    "firstTriangle": 13,
+    "triangleCount": 12,
+    "center": [
+      443.0,
+      9.0,
+      1478.0
+    ]
+  },
+  {
+    "name": "balance_arm",
+    "meshId": "oreyard_copper_00",
+    "firstVertex": 17,
+    "vertexCount": 8,
+    "firstTriangle": 25,
+    "triangleCount": 12,
+    "center": [
+      443.0,
+      11.5,
+      1478.0
+    ]
+  },
+  {
+    "name": "chain440.3",
+    "meshId": "oreyard_copper_00",
+    "firstVertex": 25,
+    "vertexCount": 16,
+    "firstTriangle": 37,
+    "triangleCount": 28,
+    "center": [
+      440.3,
+      9.700000000000001,
+      1478.0
+    ]
+  },
+  {
+    "name": "pan440.3",
+    "meshId": "oreyard_copper_00",
+    "firstVertex": 41,
+    "vertexCount": 24,
+    "firstTriangle": 65,
+    "triangleCount": 44,
+    "center": [
+      440.3,
+      8.0,
+      1478.0
+    ]
+  },
+  {
+    "name": "chain445.7",
+    "meshId": "oreyard_copper_00",
+    "firstVertex": 65,
+    "vertexCount": 16,
+    "firstTriangle": 109,
+    "triangleCount": 28,
+    "center": [
+      445.7,
+      10.1,
+      1478.0
+    ]
+  },
+  {
+    "name": "pan445.7",
+    "meshId": "oreyard_copper_00",
+    "firstVertex": 81,
+    "vertexCount": 24,
+    "firstTriangle": 137,
+    "triangleCount": 44,
+    "center": [
+      445.7,
+      8.399999999999999,
+      1478.0
+    ]
+  },
+  {
+    "name": "counter",
+    "meshId": "oreyard_timber_00",
+    "firstVertex": 225,
+    "vertexCount": 8,
+    "firstTriangle": 337,
+    "triangleCount": 12,
+    "center": [
+      441.8,
+      5.2,
+      1477.9
+    ]
+  },
+  {
+    "name": "bin_base0",
+    "meshId": "oreyard_bins_00",
+    "firstVertex": 1,
+    "vertexCount": 8,
+    "firstTriangle": 1,
+    "triangleCount": 12,
+    "center": [
+      552.0,
+      2.25,
+      1470.0
+    ]
+  },
+  {
+    "name": "binrail0_-1_0",
+    "meshId": "oreyard_bins_00",
+    "firstVertex": 9,
+    "vertexCount": 8,
+    "firstTriangle": 13,
+    "triangleCount": 12,
+    "center": [
+      548.5,
+      2.8,
+      1470.0
+    ]
+  },
+  {
+    "name": "binrail0_-1_1",
+    "meshId": "oreyard_bins_00",
+    "firstVertex": 17,
+    "vertexCount": 8,
+    "firstTriangle": 25,
+    "triangleCount": 12,
+    "center": [
+      548.5,
+      3.5999999999999996,
+      1470.0
+    ]
+  },
+  {
+    "name": "binrail0_-1_2",
+    "meshId": "oreyard_bins_00",
+    "firstVertex": 25,
+    "vertexCount": 8,
+    "firstTriangle": 37,
+    "triangleCount": 12,
+    "center": [
+      548.5,
+      4.4,
+      1470.0
+    ]
+  },
+  {
+    "name": "binrail0_-1_3",
+    "meshId": "oreyard_bins_00",
+    "firstVertex": 33,
+    "vertexCount": 8,
+    "firstTriangle": 49,
+    "triangleCount": 12,
+    "center": [
+      548.5,
+      5.2,
+      1470.0
+    ]
+  },
+  {
+    "name": "binrail0_1_0",
+    "meshId": "oreyard_bins_00",
+    "firstVertex": 41,
+    "vertexCount": 8,
+    "firstTriangle": 61,
+    "triangleCount": 12,
+    "center": [
+      555.5,
+      2.8,
+      1470.0
+    ]
+  },
+  {
+    "name": "binrail0_1_1",
+    "meshId": "oreyard_bins_00",
+    "firstVertex": 49,
+    "vertexCount": 8,
+    "firstTriangle": 73,
+    "triangleCount": 12,
+    "center": [
+      555.5,
+      3.5999999999999996,
+      1470.0
+    ]
+  },
+  {
+    "name": "binrail0_1_2",
+    "meshId": "oreyard_bins_00",
+    "firstVertex": 57,
+    "vertexCount": 8,
+    "firstTriangle": 85,
+    "triangleCount": 12,
+    "center": [
+      555.5,
+      4.4,
+      1470.0
+    ]
+  },
+  {
+    "name": "binrail0_1_3",
+    "meshId": "oreyard_bins_00",
+    "firstVertex": 65,
+    "vertexCount": 8,
+    "firstTriangle": 97,
+    "triangleCount": 12,
+    "center": [
+      555.5,
+      5.2,
+      1470.0
+    ]
+  },
+  {
+    "name": "binback0",
+    "meshId": "oreyard_bins_00",
+    "firstVertex": 73,
+    "vertexCount": 8,
+    "firstTriangle": 109,
+    "triangleCount": 12,
+    "center": [
+      552.0,
+      3.8,
+      1464.7
+    ]
+  },
+  {
+    "name": "ore0_0",
+    "meshId": "oreyard_ore_00",
+    "firstVertex": 1,
+    "vertexCount": 21,
+    "firstTriangle": 1,
+    "triangleCount": 38,
+    "center": [
+      552.4370960343025,
+      4.404759966139737,
+      1468.0915800060127
+    ]
+  },
+  {
+    "name": "ore0_1",
+    "meshId": "oreyard_ore_00",
+    "firstVertex": 22,
+    "vertexCount": 21,
+    "firstTriangle": 39,
+    "triangleCount": 38,
+    "center": [
+      552.834955104979,
+      3.626270776225606,
+      1470.800095329636
+    ]
+  },
+  {
+    "name": "ore0_2",
+    "meshId": "oreyard_ore_00",
+    "firstVertex": 43,
+    "vertexCount": 21,
+    "firstTriangle": 77,
+    "triangleCount": 38,
+    "center": [
+      551.8976109882638,
+      3.7538958570512255,
+      1469.5420537887696
+    ]
+  },
+  {
+    "name": "ore0_3",
+    "meshId": "oreyard_ore_00",
+    "firstVertex": 64,
+    "vertexCount": 21,
+    "firstTriangle": 115,
+    "triangleCount": 38,
+    "center": [
+      552.5277893819405,
+      3.599228944970818,
+      1468.1537706364481
+    ]
+  },
+  {
+    "name": "ore0_4",
+    "meshId": "oreyard_ore_00",
+    "firstVertex": 85,
+    "vertexCount": 21,
+    "firstTriangle": 153,
+    "triangleCount": 38,
+    "center": [
+      551.7272590972929,
+      3.8183024320215693,
+      1466.8811536302617
+    ]
+  },
+  {
+    "name": "ore0_5",
+    "meshId": "oreyard_ore_00",
+    "firstVertex": 106,
+    "vertexCount": 21,
+    "firstTriangle": 191,
+    "triangleCount": 38,
+    "center": [
+      551.934162618682,
+      4.319888539399014,
+      1468.318901003749
+    ]
+  },
+  {
+    "name": "ore0_6",
+    "meshId": "oreyard_ore_00",
+    "firstVertex": 127,
+    "vertexCount": 21,
+    "firstTriangle": 229,
+    "triangleCount": 38,
+    "center": [
+      551.3946732216012,
+      4.210714074519875,
+      1467.9201374620789
+    ]
+  },
+  {
+    "name": "bin_base1",
+    "meshId": "oreyard_bins_00",
+    "firstVertex": 81,
+    "vertexCount": 8,
+    "firstTriangle": 121,
+    "triangleCount": 12,
+    "center": [
+      563.0,
+      2.25,
+      1470.0
+    ]
+  },
+  {
+    "name": "binrail1_-1_0",
+    "meshId": "oreyard_bins_00",
+    "firstVertex": 89,
+    "vertexCount": 8,
+    "firstTriangle": 133,
+    "triangleCount": 12,
+    "center": [
+      559.5,
+      2.8,
+      1470.0
+    ]
+  },
+  {
+    "name": "binrail1_-1_1",
+    "meshId": "oreyard_bins_00",
+    "firstVertex": 97,
+    "vertexCount": 8,
+    "firstTriangle": 145,
+    "triangleCount": 12,
+    "center": [
+      559.5,
+      3.5999999999999996,
+      1470.0
+    ]
+  },
+  {
+    "name": "binrail1_-1_2",
+    "meshId": "oreyard_bins_00",
+    "firstVertex": 105,
+    "vertexCount": 8,
+    "firstTriangle": 157,
+    "triangleCount": 12,
+    "center": [
+      559.5,
+      4.4,
+      1470.0
+    ]
+  },
+  {
+    "name": "binrail1_-1_3",
+    "meshId": "oreyard_bins_00",
+    "firstVertex": 113,
+    "vertexCount": 8,
+    "firstTriangle": 169,
+    "triangleCount": 12,
+    "center": [
+      559.5,
+      5.2,
+      1470.0
+    ]
+  },
+  {
+    "name": "binrail1_1_0",
+    "meshId": "oreyard_bins_00",
+    "firstVertex": 121,
+    "vertexCount": 8,
+    "firstTriangle": 181,
+    "triangleCount": 12,
+    "center": [
+      566.5,
+      2.8,
+      1470.0
+    ]
+  },
+  {
+    "name": "binrail1_1_1",
+    "meshId": "oreyard_bins_00",
+    "firstVertex": 129,
+    "vertexCount": 8,
+    "firstTriangle": 193,
+    "triangleCount": 12,
+    "center": [
+      566.5,
+      3.5999999999999996,
+      1470.0
+    ]
+  },
+  {
+    "name": "binrail1_1_2",
+    "meshId": "oreyard_bins_00",
+    "firstVertex": 137,
+    "vertexCount": 8,
+    "firstTriangle": 205,
+    "triangleCount": 12,
+    "center": [
+      566.5,
+      4.4,
+      1470.0
+    ]
+  },
+  {
+    "name": "binrail1_1_3",
+    "meshId": "oreyard_bins_00",
+    "firstVertex": 145,
+    "vertexCount": 8,
+    "firstTriangle": 217,
+    "triangleCount": 12,
+    "center": [
+      566.5,
+      5.2,
+      1470.0
+    ]
+  },
+  {
+    "name": "binback1",
+    "meshId": "oreyard_bins_00",
+    "firstVertex": 153,
+    "vertexCount": 8,
+    "firstTriangle": 229,
+    "triangleCount": 12,
+    "center": [
+      563.0,
+      3.8,
+      1464.7
+    ]
+  },
+  {
+    "name": "ore1_0",
+    "meshId": "oreyard_ore_00",
+    "firstVertex": 148,
+    "vertexCount": 21,
+    "firstTriangle": 267,
+    "triangleCount": 38,
+    "center": [
+      563.1827520138781,
+      3.810153222779299,
+      1467.1862381882531
+    ]
+  },
+  {
+    "name": "ore1_1",
+    "meshId": "oreyard_ore_00",
+    "firstVertex": 169,
+    "vertexCount": 21,
+    "firstTriangle": 305,
+    "triangleCount": 38,
+    "center": [
+      562.7008789507263,
+      4.269214664177094,
+      1468.473712700033
+    ]
+  },
+  {
+    "name": "ore1_2",
+    "meshId": "oreyard_ore_00",
+    "firstVertex": 190,
+    "vertexCount": 21,
+    "firstTriangle": 343,
+    "triangleCount": 38,
+    "center": [
+      561.3296722343289,
+      4.120290296648638,
+      1469.4028360283417
+    ]
+  },
+  {
+    "name": "ore1_3",
+    "meshId": "oreyard_ore_00",
+    "firstVertex": 211,
+    "vertexCount": 21,
+    "firstTriangle": 381,
+    "triangleCount": 38,
+    "center": [
+      561.1258754302368,
+      3.541828790012288,
+      1468.576011794333
+    ]
+  },
+  {
+    "name": "ore1_4",
+    "meshId": "oreyard_ore_00",
+    "firstVertex": 232,
+    "vertexCount": 21,
+    "firstTriangle": 419,
+    "triangleCount": 38,
+    "center": [
+      564.6362585977218,
+      4.257141177211918,
+      1470.8411319839038
+    ]
+  },
+  {
+    "name": "ore1_5",
+    "meshId": "oreyard_ore_00",
+    "firstVertex": 253,
+    "vertexCount": 21,
+    "firstTriangle": 457,
+    "triangleCount": 38,
+    "center": [
+      564.803472259731,
+      4.396061282262698,
+      1466.8188172164282
+    ]
+  },
+  {
+    "name": "ore1_6",
+    "meshId": "oreyard_ore_00",
+    "firstVertex": 274,
+    "vertexCount": 21,
+    "firstTriangle": 495,
+    "triangleCount": 38,
+    "center": [
+      562.8369433208313,
+      3.8343267520510076,
+      1467.280251337778
+    ]
+  },
+  {
+    "name": "bin_base2",
+    "meshId": "oreyard_bins_00",
+    "firstVertex": 161,
+    "vertexCount": 8,
+    "firstTriangle": 241,
+    "triangleCount": 12,
+    "center": [
+      572.0,
+      2.25,
+      1470.0
+    ]
+  },
+  {
+    "name": "binrail2_-1_0",
+    "meshId": "oreyard_bins_00",
+    "firstVertex": 169,
+    "vertexCount": 8,
+    "firstTriangle": 253,
+    "triangleCount": 12,
+    "center": [
+      569.5,
+      2.8,
+      1470.0
+    ]
+  },
+  {
+    "name": "binrail2_-1_1",
+    "meshId": "oreyard_bins_00",
+    "firstVertex": 177,
+    "vertexCount": 8,
+    "firstTriangle": 265,
+    "triangleCount": 12,
+    "center": [
+      569.5,
+      3.5999999999999996,
+      1470.0
+    ]
+  },
+  {
+    "name": "binrail2_-1_2",
+    "meshId": "oreyard_bins_00",
+    "firstVertex": 185,
+    "vertexCount": 8,
+    "firstTriangle": 277,
+    "triangleCount": 12,
+    "center": [
+      569.5,
+      4.4,
+      1470.0
+    ]
+  },
+  {
+    "name": "binrail2_-1_3",
+    "meshId": "oreyard_bins_00",
+    "firstVertex": 193,
+    "vertexCount": 8,
+    "firstTriangle": 289,
+    "triangleCount": 12,
+    "center": [
+      569.5,
+      5.2,
+      1470.0
+    ]
+  },
+  {
+    "name": "binrail2_1_0",
+    "meshId": "oreyard_bins_00",
+    "firstVertex": 201,
+    "vertexCount": 8,
+    "firstTriangle": 301,
+    "triangleCount": 12,
+    "center": [
+      574.5,
+      2.8,
+      1470.0
+    ]
+  },
+  {
+    "name": "binrail2_1_1",
+    "meshId": "oreyard_bins_00",
+    "firstVertex": 209,
+    "vertexCount": 8,
+    "firstTriangle": 313,
+    "triangleCount": 12,
+    "center": [
+      574.5,
+      3.5999999999999996,
+      1470.0
+    ]
+  },
+  {
+    "name": "binrail2_1_2",
+    "meshId": "oreyard_bins_00",
+    "firstVertex": 217,
+    "vertexCount": 8,
+    "firstTriangle": 325,
+    "triangleCount": 12,
+    "center": [
+      574.5,
+      4.4,
+      1470.0
+    ]
+  },
+  {
+    "name": "binrail2_1_3",
+    "meshId": "oreyard_bins_00",
+    "firstVertex": 225,
+    "vertexCount": 8,
+    "firstTriangle": 337,
+    "triangleCount": 12,
+    "center": [
+      574.5,
+      5.2,
+      1470.0
+    ]
+  },
+  {
+    "name": "binback2",
+    "meshId": "oreyard_bins_00",
+    "firstVertex": 233,
+    "vertexCount": 8,
+    "firstTriangle": 349,
+    "triangleCount": 12,
+    "center": [
+      572.0,
+      3.8,
+      1464.7
+    ]
+  },
+  {
+    "name": "ore2_0",
+    "meshId": "oreyard_ore_00",
+    "firstVertex": 295,
+    "vertexCount": 21,
+    "firstTriangle": 533,
+    "triangleCount": 38,
+    "center": [
+      571.8375895976033,
+      3.9323982327172864,
+      1469.9424522450086
+    ]
+  },
+  {
+    "name": "ore2_1",
+    "meshId": "oreyard_ore_00",
+    "firstVertex": 316,
+    "vertexCount": 21,
+    "firstTriangle": 571,
+    "triangleCount": 38,
+    "center": [
+      571.4504222809671,
+      3.7562197627113405,
+      1466.1281815470238
+    ]
+  },
+  {
+    "name": "ore2_2",
+    "meshId": "oreyard_ore_00",
+    "firstVertex": 337,
+    "vertexCount": 21,
+    "firstTriangle": 609,
+    "triangleCount": 38,
+    "center": [
+      571.6797415037192,
+      4.183758134671458,
+      1466.6342173523149
+    ]
+  },
+  {
+    "name": "ore2_3",
+    "meshId": "oreyard_ore_00",
+    "firstVertex": 358,
+    "vertexCount": 21,
+    "firstTriangle": 647,
+    "triangleCount": 38,
+    "center": [
+      573.0208230312122,
+      4.324352681704991,
+      1467.1082404476401
+    ]
+  },
+  {
+    "name": "ore2_4",
+    "meshId": "oreyard_ore_00",
+    "firstVertex": 379,
+    "vertexCount": 21,
+    "firstTriangle": 685,
+    "triangleCount": 38,
+    "center": [
+      573.1004941258459,
+      4.326412760247653,
+      1466.6448082892948
+    ]
+  },
+  {
+    "name": "ore2_5",
+    "meshId": "oreyard_ore_00",
+    "firstVertex": 400,
+    "vertexCount": 21,
+    "firstTriangle": 723,
+    "triangleCount": 38,
+    "center": [
+      572.0932264102287,
+      3.634990290630545,
+      1469.7610199016603
+    ]
+  },
+  {
+    "name": "ore2_6",
+    "meshId": "oreyard_ore_00",
+    "firstVertex": 421,
+    "vertexCount": 21,
+    "firstTriangle": 761,
+    "triangleCount": 38,
+    "center": [
+      571.8000426631279,
+      4.161503617109689,
+      1467.1383526744198
+    ]
+  },
+  {
+    "name": "bayrail472",
+    "meshId": "oreyard_bins_00",
+    "firstVertex": 241,
+    "vertexCount": 8,
+    "firstTriangle": 361,
+    "triangleCount": 12,
+    "center": [
+      472.0,
+      2.35,
+      1472.0
+    ]
+  },
+  {
+    "name": "bayrail484",
+    "meshId": "oreyard_bins_00",
+    "firstVertex": 249,
+    "vertexCount": 8,
+    "firstTriangle": 373,
+    "triangleCount": 12,
+    "center": [
+      484.0,
+      2.35,
+      1472.0
+    ]
+  },
+  {
+    "name": "frontstone393_0",
+    "meshId": "oreyard_retaining_00",
+    "firstVertex": 1,
+    "vertexCount": 8,
+    "firstTriangle": 1,
+    "triangleCount": 12,
+    "center": [
+      393.0,
+      2.65,
+      1450.45
+    ]
+  },
+  {
+    "name": "frontstone399.4_0",
+    "meshId": "oreyard_retaining_00",
+    "firstVertex": 9,
+    "vertexCount": 8,
+    "firstTriangle": 13,
+    "triangleCount": 12,
+    "center": [
+      399.4,
+      2.65,
+      1450.45
+    ]
+  },
+  {
+    "name": "frontstone405.79999999999995_0",
+    "meshId": "oreyard_retaining_00",
+    "firstVertex": 17,
+    "vertexCount": 8,
+    "firstTriangle": 25,
+    "triangleCount": 12,
+    "center": [
+      405.79999999999995,
+      2.65,
+      1450.45
+    ]
+  },
+  {
+    "name": "frontstone412.19999999999993_0",
+    "meshId": "oreyard_retaining_00",
+    "firstVertex": 25,
+    "vertexCount": 8,
+    "firstTriangle": 37,
+    "triangleCount": 12,
+    "center": [
+      412.19999999999993,
+      2.65,
+      1450.45
+    ]
+  },
+  {
+    "name": "frontstone393_1",
+    "meshId": "oreyard_retaining_00",
+    "firstVertex": 33,
+    "vertexCount": 8,
+    "firstTriangle": 49,
+    "triangleCount": 12,
+    "center": [
+      393.0,
+      3.65,
+      1450.45
+    ]
+  },
+  {
+    "name": "frontstone399.4_1",
+    "meshId": "oreyard_retaining_00",
+    "firstVertex": 41,
+    "vertexCount": 8,
+    "firstTriangle": 61,
+    "triangleCount": 12,
+    "center": [
+      399.4,
+      3.65,
+      1450.45
+    ]
+  },
+  {
+    "name": "frontstone405.79999999999995_1",
+    "meshId": "oreyard_retaining_00",
+    "firstVertex": 49,
+    "vertexCount": 8,
+    "firstTriangle": 73,
+    "triangleCount": 12,
+    "center": [
+      405.79999999999995,
+      3.65,
+      1450.45
+    ]
+  },
+  {
+    "name": "frontstone412.19999999999993_1",
+    "meshId": "oreyard_retaining_00",
+    "firstVertex": 57,
+    "vertexCount": 8,
+    "firstTriangle": 85,
+    "triangleCount": 12,
+    "center": [
+      412.19999999999993,
+      3.65,
+      1450.45
+    ]
+  },
+  {
+    "name": "frontstone393_2",
+    "meshId": "oreyard_retaining_00",
+    "firstVertex": 65,
+    "vertexCount": 8,
+    "firstTriangle": 97,
+    "triangleCount": 12,
+    "center": [
+      393.0,
+      4.65,
+      1450.45
+    ]
+  },
+  {
+    "name": "frontstone399.4_2",
+    "meshId": "oreyard_retaining_00",
+    "firstVertex": 73,
+    "vertexCount": 8,
+    "firstTriangle": 109,
+    "triangleCount": 12,
+    "center": [
+      399.4,
+      4.65,
+      1450.45
+    ]
+  },
+  {
+    "name": "frontstone405.79999999999995_2",
+    "meshId": "oreyard_retaining_00",
+    "firstVertex": 81,
+    "vertexCount": 8,
+    "firstTriangle": 121,
+    "triangleCount": 12,
+    "center": [
+      405.79999999999995,
+      4.65,
+      1450.45
+    ]
+  },
+  {
+    "name": "frontstone412.19999999999993_2",
+    "meshId": "oreyard_retaining_00",
+    "firstVertex": 89,
+    "vertexCount": 8,
+    "firstTriangle": 133,
+    "triangleCount": 12,
+    "center": [
+      412.19999999999993,
+      4.65,
+      1450.45
+    ]
+  },
+  {
+    "name": "frontstone478_0",
+    "meshId": "oreyard_retaining_00",
+    "firstVertex": 97,
+    "vertexCount": 8,
+    "firstTriangle": 145,
+    "triangleCount": 12,
+    "center": [
+      478.0,
+      2.65,
+      1450.45
+    ]
+  },
+  {
+    "name": "frontstone484.4_0",
+    "meshId": "oreyard_retaining_00",
+    "firstVertex": 105,
+    "vertexCount": 8,
+    "firstTriangle": 157,
+    "triangleCount": 12,
+    "center": [
+      484.4,
+      2.65,
+      1450.45
+    ]
+  },
+  {
+    "name": "frontstone478_1",
+    "meshId": "oreyard_retaining_00",
+    "firstVertex": 113,
+    "vertexCount": 8,
+    "firstTriangle": 169,
+    "triangleCount": 12,
+    "center": [
+      478.0,
+      3.65,
+      1450.45
+    ]
+  },
+  {
+    "name": "frontstone484.4_1",
+    "meshId": "oreyard_retaining_00",
+    "firstVertex": 121,
+    "vertexCount": 8,
+    "firstTriangle": 181,
+    "triangleCount": 12,
+    "center": [
+      484.4,
+      3.65,
+      1450.45
+    ]
+  },
+  {
+    "name": "frontstone478_2",
+    "meshId": "oreyard_retaining_00",
+    "firstVertex": 129,
+    "vertexCount": 8,
+    "firstTriangle": 193,
+    "triangleCount": 12,
+    "center": [
+      478.0,
+      4.65,
+      1450.45
+    ]
+  },
+  {
+    "name": "frontstone484.4_2",
+    "meshId": "oreyard_retaining_00",
+    "firstVertex": 137,
+    "vertexCount": 8,
+    "firstTriangle": 205,
+    "triangleCount": 12,
+    "center": [
+      484.4,
+      4.65,
+      1450.45
+    ]
+  },
+  {
+    "name": "frontstone516_0",
+    "meshId": "oreyard_retaining_00",
+    "firstVertex": 145,
+    "vertexCount": 8,
+    "firstTriangle": 217,
+    "triangleCount": 12,
+    "center": [
+      516.0,
+      2.65,
+      1450.45
+    ]
+  },
+  {
+    "name": "frontstone522.4_0",
+    "meshId": "oreyard_retaining_00",
+    "firstVertex": 153,
+    "vertexCount": 8,
+    "firstTriangle": 229,
+    "triangleCount": 12,
+    "center": [
+      522.4,
+      2.65,
+      1450.45
+    ]
+  },
+  {
+    "name": "frontstone528.8_0",
+    "meshId": "oreyard_retaining_00",
+    "firstVertex": 161,
+    "vertexCount": 8,
+    "firstTriangle": 241,
+    "triangleCount": 12,
+    "center": [
+      528.8,
+      2.65,
+      1450.45
+    ]
+  },
+  {
+    "name": "frontstone535.1999999999999_0",
+    "meshId": "oreyard_retaining_00",
+    "firstVertex": 169,
+    "vertexCount": 8,
+    "firstTriangle": 253,
+    "triangleCount": 12,
+    "center": [
+      535.1999999999999,
+      2.65,
+      1450.45
+    ]
+  },
+  {
+    "name": "frontstone541.5999999999999_0",
+    "meshId": "oreyard_retaining_00",
+    "firstVertex": 177,
+    "vertexCount": 8,
+    "firstTriangle": 265,
+    "triangleCount": 12,
+    "center": [
+      541.5999999999999,
+      2.65,
+      1450.45
+    ]
+  },
+  {
+    "name": "frontstone547.9999999999999_0",
+    "meshId": "oreyard_retaining_00",
+    "firstVertex": 185,
+    "vertexCount": 8,
+    "firstTriangle": 277,
+    "triangleCount": 12,
+    "center": [
+      547.9999999999999,
+      2.65,
+      1450.45
+    ]
+  },
+  {
+    "name": "frontstone554.3999999999999_0",
+    "meshId": "oreyard_retaining_00",
+    "firstVertex": 193,
+    "vertexCount": 8,
+    "firstTriangle": 289,
+    "triangleCount": 12,
+    "center": [
+      554.3999999999999,
+      2.65,
+      1450.45
+    ]
+  },
+  {
+    "name": "frontstone560.7999999999998_0",
+    "meshId": "oreyard_retaining_00",
+    "firstVertex": 201,
+    "vertexCount": 8,
+    "firstTriangle": 301,
+    "triangleCount": 12,
+    "center": [
+      560.7999999999998,
+      2.65,
+      1450.45
+    ]
+  },
+  {
+    "name": "frontstone567.1999999999998_0",
+    "meshId": "oreyard_retaining_00",
+    "firstVertex": 209,
+    "vertexCount": 8,
+    "firstTriangle": 313,
+    "triangleCount": 12,
+    "center": [
+      567.1999999999998,
+      2.65,
+      1450.45
+    ]
+  },
+  {
+    "name": "frontstone573.5999999999998_0",
+    "meshId": "oreyard_retaining_00",
+    "firstVertex": 217,
+    "vertexCount": 8,
+    "firstTriangle": 325,
+    "triangleCount": 12,
+    "center": [
+      573.5999999999998,
+      2.65,
+      1450.45
+    ]
+  },
+  {
+    "name": "frontstone579.9999999999998_0",
+    "meshId": "oreyard_retaining_00",
+    "firstVertex": 225,
+    "vertexCount": 8,
+    "firstTriangle": 337,
+    "triangleCount": 12,
+    "center": [
+      579.9999999999998,
+      2.65,
+      1450.45
+    ]
+  },
+  {
+    "name": "frontstone586.3999999999997_0",
+    "meshId": "oreyard_retaining_00",
+    "firstVertex": 233,
+    "vertexCount": 8,
+    "firstTriangle": 349,
+    "triangleCount": 12,
+    "center": [
+      586.3999999999997,
+      2.65,
+      1450.45
+    ]
+  },
+  {
+    "name": "frontstone592.7999999999997_0",
+    "meshId": "oreyard_retaining_00",
+    "firstVertex": 241,
+    "vertexCount": 8,
+    "firstTriangle": 361,
+    "triangleCount": 12,
+    "center": [
+      592.7999999999997,
+      2.65,
+      1450.45
+    ]
+  },
+  {
+    "name": "frontstone599.1999999999997_0",
+    "meshId": "oreyard_retaining_00",
+    "firstVertex": 249,
+    "vertexCount": 8,
+    "firstTriangle": 373,
+    "triangleCount": 12,
+    "center": [
+      599.1999999999997,
+      2.65,
+      1450.45
+    ]
+  },
+  {
+    "name": "frontstone605.5999999999997_0",
+    "meshId": "oreyard_retaining_00",
+    "firstVertex": 257,
+    "vertexCount": 8,
+    "firstTriangle": 385,
+    "triangleCount": 12,
+    "center": [
+      605.5999999999997,
+      2.65,
+      1450.45
+    ]
+  },
+  {
+    "name": "frontstone516_1",
+    "meshId": "oreyard_retaining_00",
+    "firstVertex": 265,
+    "vertexCount": 8,
+    "firstTriangle": 397,
+    "triangleCount": 12,
+    "center": [
+      516.0,
+      3.65,
+      1450.45
+    ]
+  },
+  {
+    "name": "frontstone522.4_1",
+    "meshId": "oreyard_retaining_00",
+    "firstVertex": 273,
+    "vertexCount": 8,
+    "firstTriangle": 409,
+    "triangleCount": 12,
+    "center": [
+      522.4,
+      3.65,
+      1450.45
+    ]
+  },
+  {
+    "name": "frontstone528.8_1",
+    "meshId": "oreyard_retaining_00",
+    "firstVertex": 281,
+    "vertexCount": 8,
+    "firstTriangle": 421,
+    "triangleCount": 12,
+    "center": [
+      528.8,
+      3.65,
+      1450.45
+    ]
+  },
+  {
+    "name": "frontstone535.1999999999999_1",
+    "meshId": "oreyard_retaining_00",
+    "firstVertex": 289,
+    "vertexCount": 8,
+    "firstTriangle": 433,
+    "triangleCount": 12,
+    "center": [
+      535.1999999999999,
+      3.65,
+      1450.45
+    ]
+  },
+  {
+    "name": "frontstone541.5999999999999_1",
+    "meshId": "oreyard_retaining_00",
+    "firstVertex": 297,
+    "vertexCount": 8,
+    "firstTriangle": 445,
+    "triangleCount": 12,
+    "center": [
+      541.5999999999999,
+      3.65,
+      1450.45
+    ]
+  },
+  {
+    "name": "frontstone547.9999999999999_1",
+    "meshId": "oreyard_retaining_00",
+    "firstVertex": 305,
+    "vertexCount": 8,
+    "firstTriangle": 457,
+    "triangleCount": 12,
+    "center": [
+      547.9999999999999,
+      3.65,
+      1450.45
+    ]
+  },
+  {
+    "name": "frontstone554.3999999999999_1",
+    "meshId": "oreyard_retaining_00",
+    "firstVertex": 313,
+    "vertexCount": 8,
+    "firstTriangle": 469,
+    "triangleCount": 12,
+    "center": [
+      554.3999999999999,
+      3.65,
+      1450.45
+    ]
+  },
+  {
+    "name": "frontstone560.7999999999998_1",
+    "meshId": "oreyard_retaining_00",
+    "firstVertex": 321,
+    "vertexCount": 8,
+    "firstTriangle": 481,
+    "triangleCount": 12,
+    "center": [
+      560.7999999999998,
+      3.65,
+      1450.45
+    ]
+  },
+  {
+    "name": "frontstone567.1999999999998_1",
+    "meshId": "oreyard_retaining_00",
+    "firstVertex": 329,
+    "vertexCount": 8,
+    "firstTriangle": 493,
+    "triangleCount": 12,
+    "center": [
+      567.1999999999998,
+      3.65,
+      1450.45
+    ]
+  },
+  {
+    "name": "frontstone573.5999999999998_1",
+    "meshId": "oreyard_retaining_00",
+    "firstVertex": 337,
+    "vertexCount": 8,
+    "firstTriangle": 505,
+    "triangleCount": 12,
+    "center": [
+      573.5999999999998,
+      3.65,
+      1450.45
+    ]
+  },
+  {
+    "name": "frontstone579.9999999999998_1",
+    "meshId": "oreyard_retaining_00",
+    "firstVertex": 345,
+    "vertexCount": 8,
+    "firstTriangle": 517,
+    "triangleCount": 12,
+    "center": [
+      579.9999999999998,
+      3.65,
+      1450.45
+    ]
+  },
+  {
+    "name": "frontstone586.3999999999997_1",
+    "meshId": "oreyard_retaining_00",
+    "firstVertex": 353,
+    "vertexCount": 8,
+    "firstTriangle": 529,
+    "triangleCount": 12,
+    "center": [
+      586.3999999999997,
+      3.65,
+      1450.45
+    ]
+  },
+  {
+    "name": "frontstone592.7999999999997_1",
+    "meshId": "oreyard_retaining_00",
+    "firstVertex": 361,
+    "vertexCount": 8,
+    "firstTriangle": 541,
+    "triangleCount": 12,
+    "center": [
+      592.7999999999997,
+      3.65,
+      1450.45
+    ]
+  },
+  {
+    "name": "frontstone599.1999999999997_1",
+    "meshId": "oreyard_retaining_00",
+    "firstVertex": 369,
+    "vertexCount": 8,
+    "firstTriangle": 553,
+    "triangleCount": 12,
+    "center": [
+      599.1999999999997,
+      3.65,
+      1450.45
+    ]
+  },
+  {
+    "name": "frontstone605.5999999999997_1",
+    "meshId": "oreyard_retaining_00",
+    "firstVertex": 377,
+    "vertexCount": 8,
+    "firstTriangle": 565,
+    "triangleCount": 12,
+    "center": [
+      605.5999999999997,
+      3.65,
+      1450.45
+    ]
+  },
+  {
+    "name": "frontstone516_2",
+    "meshId": "oreyard_retaining_00",
+    "firstVertex": 385,
+    "vertexCount": 8,
+    "firstTriangle": 577,
+    "triangleCount": 12,
+    "center": [
+      516.0,
+      4.65,
+      1450.45
+    ]
+  },
+  {
+    "name": "frontstone522.4_2",
+    "meshId": "oreyard_retaining_00",
+    "firstVertex": 393,
+    "vertexCount": 8,
+    "firstTriangle": 589,
+    "triangleCount": 12,
+    "center": [
+      522.4,
+      4.65,
+      1450.45
+    ]
+  },
+  {
+    "name": "frontstone528.8_2",
+    "meshId": "oreyard_retaining_00",
+    "firstVertex": 401,
+    "vertexCount": 8,
+    "firstTriangle": 601,
+    "triangleCount": 12,
+    "center": [
+      528.8,
+      4.65,
+      1450.45
+    ]
+  },
+  {
+    "name": "frontstone535.1999999999999_2",
+    "meshId": "oreyard_retaining_00",
+    "firstVertex": 409,
+    "vertexCount": 8,
+    "firstTriangle": 613,
+    "triangleCount": 12,
+    "center": [
+      535.1999999999999,
+      4.65,
+      1450.45
+    ]
+  },
+  {
+    "name": "frontstone541.5999999999999_2",
+    "meshId": "oreyard_retaining_00",
+    "firstVertex": 417,
+    "vertexCount": 8,
+    "firstTriangle": 625,
+    "triangleCount": 12,
+    "center": [
+      541.5999999999999,
+      4.65,
+      1450.45
+    ]
+  },
+  {
+    "name": "frontstone547.9999999999999_2",
+    "meshId": "oreyard_retaining_00",
+    "firstVertex": 425,
+    "vertexCount": 8,
+    "firstTriangle": 637,
+    "triangleCount": 12,
+    "center": [
+      547.9999999999999,
+      4.65,
+      1450.45
+    ]
+  },
+  {
+    "name": "frontstone554.3999999999999_2",
+    "meshId": "oreyard_retaining_00",
+    "firstVertex": 433,
+    "vertexCount": 8,
+    "firstTriangle": 649,
+    "triangleCount": 12,
+    "center": [
+      554.3999999999999,
+      4.65,
+      1450.45
+    ]
+  },
+  {
+    "name": "frontstone560.7999999999998_2",
+    "meshId": "oreyard_retaining_00",
+    "firstVertex": 441,
+    "vertexCount": 8,
+    "firstTriangle": 661,
+    "triangleCount": 12,
+    "center": [
+      560.7999999999998,
+      4.65,
+      1450.45
+    ]
+  },
+  {
+    "name": "frontstone567.1999999999998_2",
+    "meshId": "oreyard_retaining_00",
+    "firstVertex": 449,
+    "vertexCount": 8,
+    "firstTriangle": 673,
+    "triangleCount": 12,
+    "center": [
+      567.1999999999998,
+      4.65,
+      1450.45
+    ]
+  },
+  {
+    "name": "frontstone573.5999999999998_2",
+    "meshId": "oreyard_retaining_00",
+    "firstVertex": 457,
+    "vertexCount": 8,
+    "firstTriangle": 685,
+    "triangleCount": 12,
+    "center": [
+      573.5999999999998,
+      4.65,
+      1450.45
+    ]
+  },
+  {
+    "name": "frontstone579.9999999999998_2",
+    "meshId": "oreyard_retaining_00",
+    "firstVertex": 465,
+    "vertexCount": 8,
+    "firstTriangle": 697,
+    "triangleCount": 12,
+    "center": [
+      579.9999999999998,
+      4.65,
+      1450.45
+    ]
+  },
+  {
+    "name": "frontstone586.3999999999997_2",
+    "meshId": "oreyard_retaining_00",
+    "firstVertex": 473,
+    "vertexCount": 8,
+    "firstTriangle": 709,
+    "triangleCount": 12,
+    "center": [
+      586.3999999999997,
+      4.65,
+      1450.45
+    ]
+  },
+  {
+    "name": "frontstone592.7999999999997_2",
+    "meshId": "oreyard_retaining_00",
+    "firstVertex": 481,
+    "vertexCount": 8,
+    "firstTriangle": 721,
+    "triangleCount": 12,
+    "center": [
+      592.7999999999997,
+      4.65,
+      1450.45
+    ]
+  },
+  {
+    "name": "frontstone599.1999999999997_2",
+    "meshId": "oreyard_retaining_00",
+    "firstVertex": 489,
+    "vertexCount": 8,
+    "firstTriangle": 733,
+    "triangleCount": 12,
+    "center": [
+      599.1999999999997,
+      4.65,
+      1450.45
+    ]
+  },
+  {
+    "name": "frontstone605.5999999999997_2",
+    "meshId": "oreyard_retaining_00",
+    "firstVertex": 497,
+    "vertexCount": 8,
+    "firstTriangle": 745,
+    "triangleCount": 12,
+    "center": [
+      605.5999999999997,
+      4.65,
+      1450.45
+    ]
+  },
+  {
+    "name": "edge-1_0",
+    "meshId": "oreyard_cliff_00",
+    "firstVertex": 1,
+    "vertexCount": 21,
+    "firstTriangle": 1,
+    "triangleCount": 38,
+    "center": [
+      381.09410500386406,
+      -8.65,
+      1303.0576024873458
+    ]
+  },
+  {
+    "name": "edge-1_1",
+    "meshId": "oreyard_cliff_00",
+    "firstVertex": 22,
+    "vertexCount": 21,
+    "firstTriangle": 39,
+    "triangleCount": 38,
+    "center": [
+      381.1525890598062,
+      -9.616666666666665,
+      1320.935060335106
+    ]
+  },
+  {
+    "name": "edge-1_2",
+    "meshId": "oreyard_cliff_00",
+    "firstVertex": 43,
+    "vertexCount": 21,
+    "firstTriangle": 77,
+    "triangleCount": 38,
+    "center": [
+      381.31082169532914,
+      -10.583333333333334,
+      1338.7999892333155
+    ]
+  },
+  {
+    "name": "edge-1_3",
+    "meshId": "oreyard_cliff_00",
+    "firstVertex": 64,
+    "vertexCount": 21,
+    "firstTriangle": 115,
+    "triangleCount": 38,
+    "center": [
+      381.1879545796618,
+      -8.65,
+      1357.1210711765177
+    ]
+  },
+  {
+    "name": "edge-1_4",
+    "meshId": "oreyard_cliff_00",
+    "firstVertex": 85,
+    "vertexCount": 21,
+    "firstTriangle": 153,
+    "triangleCount": 38,
+    "center": [
+      381.25744930442056,
+      -9.616666666666665,
+      1374.6923460828034
+    ]
+  },
+  {
+    "name": "edge-1_5",
+    "meshId": "oreyard_cliff_00",
+    "firstVertex": 106,
+    "vertexCount": 21,
+    "firstTriangle": 191,
+    "triangleCount": 38,
+    "center": [
+      381.3233327698843,
+      -10.583333333333334,
+      1393.0515179871268
+    ]
+  },
+  {
+    "name": "edge-1_6",
+    "meshId": "oreyard_cliff_00",
+    "firstVertex": 127,
+    "vertexCount": 21,
+    "firstTriangle": 229,
+    "triangleCount": 38,
+    "center": [
+      381.1632359373293,
+      -8.65,
+      1411.2618572588963
+    ]
+  },
+  {
+    "name": "edge-1_7",
+    "meshId": "oreyard_cliff_00",
+    "firstVertex": 148,
+    "vertexCount": 21,
+    "firstTriangle": 267,
+    "triangleCount": 38,
+    "center": [
+      381.18058615585346,
+      -9.616666666666665,
+      1428.7469080483338
+    ]
+  },
+  {
+    "name": "edge-1_8",
+    "meshId": "oreyard_cliff_00",
+    "firstVertex": 169,
+    "vertexCount": 21,
+    "firstTriangle": 305,
+    "triangleCount": 38,
+    "center": [
+      381.2992611111228,
+      -10.583333333333334,
+      1446.7339676749016
+    ]
+  },
+  {
+    "name": "edge-1_9",
+    "meshId": "oreyard_cliff_00",
+    "firstVertex": 190,
+    "vertexCount": 21,
+    "firstTriangle": 343,
+    "triangleCount": 38,
+    "center": [
+      381.0900623677708,
+      -8.65,
+      1465.1089149363734
+    ]
+  },
+  {
+    "name": "edge-1_10",
+    "meshId": "oreyard_cliff_00",
+    "firstVertex": 211,
+    "vertexCount": 21,
+    "firstTriangle": 381,
+    "triangleCount": 38,
+    "center": [
+      381.26272162883896,
+      -9.616666666666665,
+      1483.171372255582
+    ]
+  },
+  {
+    "name": "edge-1_11",
+    "meshId": "oreyard_cliff_00",
+    "firstVertex": 232,
+    "vertexCount": 21,
+    "firstTriangle": 419,
+    "triangleCount": 38,
+    "center": [
+      381.3099247919338,
+      -10.583333333333334,
+      1501.3071819923327
+    ]
+  },
+  {
+    "name": "edge1_0",
+    "meshId": "oreyard_cliff_00",
+    "firstVertex": 253,
+    "vertexCount": 21,
+    "firstTriangle": 457,
+    "triangleCount": 38,
+    "center": [
+      619.0388511254359,
+      -8.65,
+      1303.3115045542843
+    ]
+  },
+  {
+    "name": "edge1_1",
+    "meshId": "oreyard_cliff_00",
+    "firstVertex": 274,
+    "vertexCount": 21,
+    "firstTriangle": 495,
+    "triangleCount": 38,
+    "center": [
+      619.1503798003886,
+      -9.616666666666665,
+      1321.1649796541046
+    ]
+  },
+  {
+    "name": "edge1_2",
+    "meshId": "oreyard_cliff_00",
+    "firstVertex": 295,
+    "vertexCount": 21,
+    "firstTriangle": 533,
+    "triangleCount": 38,
+    "center": [
+      619.0699773985076,
+      -10.583333333333334,
+      1338.692417877682
+    ]
+  },
+  {
+    "name": "edge1_3",
+    "meshId": "oreyard_cliff_00",
+    "firstVertex": 316,
+    "vertexCount": 21,
+    "firstTriangle": 571,
+    "triangleCount": 38,
+    "center": [
+      619.1796378508485,
+      -8.65,
+      1356.7460499633928
+    ]
+  },
+  {
+    "name": "edge1_4",
+    "meshId": "oreyard_cliff_00",
+    "firstVertex": 337,
+    "vertexCount": 21,
+    "firstTriangle": 609,
+    "triangleCount": 38,
+    "center": [
+      619.0125572220744,
+      -9.616666666666665,
+      1374.8933977209306
+    ]
+  },
+  {
+    "name": "edge1_5",
+    "meshId": "oreyard_cliff_00",
+    "firstVertex": 358,
+    "vertexCount": 21,
+    "firstTriangle": 647,
+    "triangleCount": 38,
+    "center": [
+      619.127471243956,
+      -10.583333333333334,
+      1392.8952014121012
+    ]
+  },
+  {
+    "name": "edge1_6",
+    "meshId": "oreyard_cliff_00",
+    "firstVertex": 379,
+    "vertexCount": 21,
+    "firstTriangle": 685,
+    "triangleCount": 38,
+    "center": [
+      619.1897886061195,
+      -8.65,
+      1410.7530944042342
+    ]
+  },
+  {
+    "name": "edge1_7",
+    "meshId": "oreyard_cliff_00",
+    "firstVertex": 400,
+    "vertexCount": 21,
+    "firstTriangle": 723,
+    "triangleCount": 38,
+    "center": [
+      619.1261253209767,
+      -9.616666666666665,
+      1428.8740715787626
+    ]
+  },
+  {
+    "name": "edge1_8",
+    "meshId": "oreyard_cliff_00",
+    "firstVertex": 421,
+    "vertexCount": 21,
+    "firstTriangle": 761,
+    "triangleCount": 38,
+    "center": [
+      619.132091371697,
+      -10.583333333333334,
+      1447.4077806759615
+    ]
+  },
+  {
+    "name": "edge1_9",
+    "meshId": "oreyard_cliff_00",
+    "firstVertex": 442,
+    "vertexCount": 21,
+    "firstTriangle": 799,
+    "triangleCount": 38,
+    "center": [
+      619.1981938008378,
+      -8.65,
+      1464.5935198290044
+    ]
+  },
+  {
+    "name": "edge1_10",
+    "meshId": "oreyard_cliff_00",
+    "firstVertex": 463,
+    "vertexCount": 21,
+    "firstTriangle": 837,
+    "triangleCount": 38,
+    "center": [
+      619.0893905272121,
+      -9.616666666666665,
+      1482.7839971151675
+    ]
+  },
+  {
+    "name": "edge1_11",
+    "meshId": "oreyard_cliff_00",
+    "firstVertex": 484,
+    "vertexCount": 21,
+    "firstTriangle": 875,
+    "triangleCount": 38,
+    "center": [
+      619.2082762389346,
+      -10.583333333333334,
+      1501.143105957966
+    ]
+  },
+  {
+    "name": "south0",
+    "meshId": "oreyard_cliff_00",
+    "firstVertex": 505,
+    "vertexCount": 21,
+    "firstTriangle": 913,
+    "triangleCount": 38,
+    "center": [
+      397.7081841831752,
+      -10.583333333333334,
+      1507.8600445155107
+    ]
+  },
+  {
+    "name": "south1",
+    "meshId": "oreyard_cliff_00",
+    "firstVertex": 526,
+    "vertexCount": 21,
+    "firstTriangle": 951,
+    "triangleCount": 38,
+    "center": [
+      417.3833160318257,
+      -10.583333333333334,
+      1507.9271397634725
+    ]
+  },
+  {
+    "name": "south2",
+    "meshId": "oreyard_cliff_00",
+    "firstVertex": 547,
+    "vertexCount": 21,
+    "firstTriangle": 989,
+    "triangleCount": 38,
+    "center": [
+      437.5144208145078,
+      -10.583333333333334,
+      1507.8621943641463
+    ]
+  },
+  {
+    "name": "south3",
+    "meshId": "oreyard_cliff_00",
+    "firstVertex": 568,
+    "vertexCount": 21,
+    "firstTriangle": 1027,
+    "triangleCount": 38,
+    "center": [
+      457.32836695421855,
+      -10.583333333333334,
+      1508.1359939603888
+    ]
+  },
+  {
+    "name": "south4",
+    "meshId": "oreyard_cliff_00",
+    "firstVertex": 589,
+    "vertexCount": 21,
+    "firstTriangle": 1065,
+    "triangleCount": 38,
+    "center": [
+      477.458584650793,
+      -10.583333333333334,
+      1508.1190648864872
+    ]
+  },
+  {
+    "name": "south5",
+    "meshId": "oreyard_cliff_00",
+    "firstVertex": 610,
+    "vertexCount": 21,
+    "firstTriangle": 1103,
+    "triangleCount": 38,
+    "center": [
+      497.1987521826674,
+      -10.583333333333334,
+      1508.0218519289265
+    ]
+  },
+  {
+    "name": "south6",
+    "meshId": "oreyard_cliff_00",
+    "firstVertex": 631,
+    "vertexCount": 21,
+    "firstTriangle": 1141,
+    "triangleCount": 38,
+    "center": [
+      517.14633703057,
+      -10.583333333333334,
+      1508.056738171534
+    ]
+  },
+  {
+    "name": "south7",
+    "meshId": "oreyard_cliff_00",
+    "firstVertex": 652,
+    "vertexCount": 21,
+    "firstTriangle": 1179,
+    "triangleCount": 38,
+    "center": [
+      537.2354063916337,
+      -10.583333333333334,
+      1508.0592028785609
+    ]
+  },
+  {
+    "name": "south8",
+    "meshId": "oreyard_cliff_00",
+    "firstVertex": 673,
+    "vertexCount": 21,
+    "firstTriangle": 1217,
+    "triangleCount": 38,
+    "center": [
+      557.3353787221491,
+      -10.583333333333334,
+      1508.0822886956366
+    ]
+  },
+  {
+    "name": "south9",
+    "meshId": "oreyard_cliff_00",
+    "firstVertex": 694,
+    "vertexCount": 21,
+    "firstTriangle": 1255,
+    "triangleCount": 38,
+    "center": [
+      577.0674180725706,
+      -10.583333333333334,
+      1507.8116544995657
+    ]
+  },
+  {
+    "name": "south10",
+    "meshId": "oreyard_cliff_00",
+    "firstVertex": 715,
+    "vertexCount": 21,
+    "firstTriangle": 1293,
+    "triangleCount": 38,
+    "center": [
+      597.706357694641,
+      -10.583333333333334,
+      1508.0501527464007
+    ]
+  },
+  {
+    "name": "north0",
+    "meshId": "oreyard_cliff_00",
+    "firstVertex": 736,
+    "vertexCount": 21,
+    "firstTriangle": 1331,
+    "triangleCount": 38,
+    "center": [
+      405.664657840112,
+      -9.616666666666665,
+      1291.9561466026137
+    ]
+  },
+  {
+    "name": "north1",
+    "meshId": "oreyard_cliff_00",
+    "firstVertex": 757,
+    "vertexCount": 21,
+    "firstTriangle": 1369,
+    "triangleCount": 38,
+    "center": [
+      427.291515659935,
+      -9.616666666666665,
+      1292.0137027339133
+    ]
+  },
+  {
+    "name": "north2",
+    "meshId": "oreyard_cliff_00",
+    "firstVertex": 778,
+    "vertexCount": 21,
+    "firstTriangle": 1407,
+    "triangleCount": 38,
+    "center": [
+      449.02279046156866,
+      -9.616666666666665,
+      1292.0624286484617
+    ]
+  },
+  {
+    "name": "north3",
+    "meshId": "oreyard_cliff_00",
+    "firstVertex": 799,
+    "vertexCount": 21,
+    "firstTriangle": 1445,
+    "triangleCount": 38,
+    "center": [
+      471.2003570023776,
+      -9.616666666666665,
+      1292.0321250699512
+    ]
+  },
+  {
+    "name": "north6",
+    "meshId": "oreyard_cliff_00",
+    "firstVertex": 820,
+    "vertexCount": 21,
+    "firstTriangle": 1483,
+    "triangleCount": 38,
+    "center": [
+      537.0824134147899,
+      -9.616666666666665,
+      1292.1066661359769
+    ]
+  },
+  {
+    "name": "north7",
+    "meshId": "oreyard_cliff_00",
+    "firstVertex": 841,
+    "vertexCount": 21,
+    "firstTriangle": 1521,
+    "triangleCount": 38,
+    "center": [
+      559.2219669571743,
+      -9.616666666666665,
+      1292.020708092306
+    ]
+  },
+  {
+    "name": "north8",
+    "meshId": "oreyard_cliff_00",
+    "firstVertex": 862,
+    "vertexCount": 21,
+    "firstTriangle": 1559,
+    "triangleCount": 38,
+    "center": [
+      581.2347580303506,
+      -9.616666666666665,
+      1291.9514371299028
+    ]
+  },
+  {
+    "name": "north9",
+    "meshId": "oreyard_cliff_00",
+    "firstVertex": 883,
+    "vertexCount": 21,
+    "firstTriangle": 1597,
+    "triangleCount": 38,
+    "center": [
+      603.2219877862533,
+      -9.616666666666665,
+      1291.9977890907317
+    ]
+  }
+]

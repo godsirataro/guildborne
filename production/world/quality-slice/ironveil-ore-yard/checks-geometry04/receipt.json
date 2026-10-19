@@ -1,0 +1,11 @@
+{
+  "command": [
+    "python",
+    "production\\world\\quality-slice\\ironveil-ore-yard\\verify.py"
+  ],
+  "exitCode": 0,
+  "seconds": 0.46479379999800585,
+  "verifierSha256": "28f6964038e3d203dd9c0ade734f45b5a0c0e0af0a168cdc1d5dd09b2ffabf5d",
+  "stdoutSha256": "449099ad224f47675b3e93c91a0bc32fc4face8776b37e33b3c0112d64313a27",
+  "stderrSha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+}

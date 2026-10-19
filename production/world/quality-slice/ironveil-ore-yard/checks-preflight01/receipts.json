@@ -1,0 +1,45 @@
+{
+  "scope": "LOCAL_SCOPED_CHECKS_NOT_STUDIO",
+  "inputHashes": {
+    "production/world/quality-slice/ironveil-ore-yard/run_checks.py": "1a8a815d4e125c9ab3e5dbd76e9dc980c6ef90f459fc20615806a6f0c95936b1",
+    "production/world/quality-slice/ironveil-ore-yard/survey.py": "d56b844dd114c3ab0777b091221c1f2cf7f78bed3ea67d218b269a58d01f865b"
+  },
+  "checks": [
+    {
+      "name": "forge",
+      "command": [
+        "python",
+        "tools/agentic/forge.py",
+        "validate"
+      ],
+      "exitCode": 0,
+      "seconds": 0.40806390000216197,
+      "stdoutSha256": "425e920e88765646aada4e6f5561609e562e4d39ae0c56f8c634cc70305a5e87",
+      "stderrSha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "name": "studio",
+      "command": [
+        "python",
+        "tools/agentic/studio.py",
+        "validate"
+      ],
+      "exitCode": 0,
+      "seconds": 0.9866933000012068,
+      "stdoutSha256": "c114f88d1de9271b0ed02127334ac62b7bb81a83c89ddb8a3c941c3e732946f0",
+      "stderrSha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "name": "adapters",
+      "command": [
+        "python",
+        "tools/agentic/studio.py",
+        "verify"
+      ],
+      "exitCode": 1,
+      "seconds": 1.5070220999987214,
+      "stdoutSha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "stderrSha256": "29f3fdf9b8d983dc644dd9c3d932374722c4371104d10f0d9bb0643da3bd2c47"
+    }
+  ]
+}

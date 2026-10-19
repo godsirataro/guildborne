@@ -1,0 +1,23 @@
+{
+  "status": "FILE_GENERATED_NOT_STUDIO",
+  "originalRecipe": "production/world/quality-slice/ironveil-ore-yard/build.py",
+  "recipeSha256": "8e5132d1e46426d378db6110378a2c1571db93295de32cda061cffeada610281",
+  "reviewedSource": "assets/production/world-slice/world-slice.mesh.json",
+  "reviewedSourceSha256": "9baaf8de0faf3ff7f4a4f2c32ea692e48aa9dbb021f609e3530029ed7844ddc7",
+  "reviewedMeshIds": [
+    "cart__000",
+    "cart__001",
+    "silhouette_ruined_waymarker__000"
+  ],
+  "licenses": [
+    "assets/production/world-slice/village-LICENSE.txt",
+    "assets/production/world-slice/ruins-LICENSE.txt"
+  ],
+  "sourceSurveySha256": "3cb55364cbd6e2a40d7b160286ecd851b67de975a5c630590cf398822ab5ac1b",
+  "runtimeIds": null,
+  "notes": [
+    "All visual materials are exported vertex face colors; no external textures/fonts.",
+    "Decorative noncollision package, no navigation/gameplay activation.",
+    "Bedrock skirt does not create walkable floor."
+  ]
+}

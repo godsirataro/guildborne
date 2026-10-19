@@ -1,0 +1,10 @@
+{
+  "command": [
+    "python",
+    "production\\world\\quality-slice\\ironveil-ore-yard\\build.py"
+  ],
+  "exitCode": 0,
+  "sourceSha256": "5ab3711f35c92131017e7be1d35c3e0c0915661c25df677897fba06d98f5bc75",
+  "stdoutSha256": "f78d8e9de834f8f60b3184a9f48055d3d818e62f8c4703c84b6ef781a7374b08",
+  "stderrSha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+}

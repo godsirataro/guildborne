@@ -1,0 +1,15 @@
+{
+  "status": "BLENDER_RENDERED_NOT_NATIVE",
+  "variant": "before",
+  "nativeParts": 45,
+  "cameraSha256": "2d908039f0b048ed576cadc74f5996504311cba82fa989663becae324fa76ba0",
+  "packetSha256": "0ea4a4cf3589233566f2f9b4c1f8419260b778a7f5ecef584f7e9f3261bb5397",
+  "surveySha256": "3cb55364cbd6e2a40d7b160286ecd851b67de975a5c630590cf398822ab5ac1b",
+  "context": "All45 literal native Ironveil map parts with actual source colors/yaws/wedges; existing bridge and public portal frame/mine marker. Dynamic actors, private pockets, generated resource art and GUI excluded; anchors protected by full survey keepouts.",
+  "images": {
+    "approach.png": "772224163dc770f90d9d48a7108187492198d9b26f6063f5f938a9ca0d7431d0",
+    "player_arrival.png": "ea4dd051786e7085e80a33ed82e68ad484814b1c31cb340d017cd3b996ef56e7",
+    "reverse.png": "5e5cd242f9c97d355ef8e72cf7d9f80203558986be711dff256d3a59c0649d3f",
+    "skyline.png": "fa94acf130c4449e045b41c7e4ce45684c793ecc1ff5778252f7dfb6475bb875"
+  }
+}

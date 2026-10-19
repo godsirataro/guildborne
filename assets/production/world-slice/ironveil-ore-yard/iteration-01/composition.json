@@ -1,0 +1,49 @@
+{
+  "weighhouse": {
+    "center": [
+      436,
+      2,
+      1468
+    ],
+    "bounds": {
+      "min": [
+        423.5,
+        2,
+        1457.5
+      ],
+      "max": [
+        448.5,
+        28,
+        1479.1
+      ]
+    }
+  },
+  "cartBay": {
+    "min": [
+      471,
+      2,
+      1464
+    ],
+    "max": [
+      485,
+      9,
+      1480
+    ]
+  },
+  "oreBins": {
+    "min": [
+      548,
+      2,
+      1462
+    ],
+    "max": [
+      575,
+      10,
+      1478
+    ]
+  },
+  "protectedGeometry": "source-survey.json; immutable fullwidth lane and all source interaction/encounter keepouts",
+  "visualIntent": "Slate-roof timber weighhouse with copper hanging balance, ordered receiving bays, tiered irregular rock and retaining stone; original quarry gantry remains skyline destination",
+  "status": "FOOTPRINT_FROZEN_PENDING_FULL_GEOMETRY_REVIEW",
+  "runtimeIds": null
+}

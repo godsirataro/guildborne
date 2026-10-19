@@ -1,0 +1,83 @@
+{
+  "status": "READY_FOR_NATIVE_ART_REVIEW",
+  "reviewer": "yard_closeout_review",
+  "reviewedUtc": "2026-10-19T03:03:42.484122+00:00",
+  "scope": "Independent bounded scenery review; no native, device, human, or full-city art acceptance",
+  "geometry": {
+    "status": "PASS_SOURCE_ONLY",
+    "resources": 13,
+    "placements": 13,
+    "convexSolids": 477,
+    "uniqueTriangles": 10933,
+    "failures": [],
+    "receipt": "checks-geometry04/receipt.json"
+  },
+  "visual": {
+    "inspectedViews": [
+      "approach",
+      "player_arrival",
+      "skyline",
+      "reverse"
+    ],
+    "variants": [
+      "before",
+      "after"
+    ],
+    "resolved": [
+      "The large dark void below the weighhouse is closed by continuous stone foundation in arrival, approach and reverse views.",
+      "Approach now shows a timber loading door and loft window, replacing the blank gable; protected crystal stays in its original position.",
+      "Cargo hoist, cart and crate turn the guide timbers into an identifiable loading bay.",
+      "Fourteen irregular cliff ridges materially change the mine side-wall silhouette while the central ascent and original gantry remain readable.",
+      "Slate roof, timber framing, stone plinth and balance create a distinct authored receiving-yard focal point."
+    ],
+    "limitations": [
+      "Native terraces and upper quarry remain broad flat gray surfaces; this is not a finished full-city high-fidelity environment.",
+      "Protected yellow crystal still partially occludes the building in approach.",
+      "Fixed reverse view is dominated by the rear gable and occludes much of the bridge; retained unchanged for honest comparison.",
+      "Surrounding floating-island void and native gantry are unchanged.",
+      "Render context omits dynamic actors, private pockets, generated resource art and GUI."
+    ]
+  },
+  "provenance": "Inspected both local Quaternius CC0 license files; original recipe and unchanged reviewed mesh resources bound by source verification; no external textures/fonts or runtime IDs.",
+  "evidenceNotes": [
+    "Both final Blender receipts exit 0 and all input, image and raw stream hashes match current files.",
+    "Blender stderr contains use_nodes deprecation warnings; not warning-free.",
+    "Independent-03 composition hash became stale; fresh checks-geometry04 binds the current composition and geometry. Historical receipts remain unchanged."
+  ],
+  "imageHashes": {
+    "before": {
+      "approach.png": "1342111352b25d26499d591260f76e3810d23171a4e648ecbd6dd0400a9a128e",
+      "player_arrival.png": "938c2e3eb59f032e02f6db11180cea54ba14590ea41c14c961349433d14c5a5e",
+      "reverse.png": "c993d898ed7fc07c9d6e87d7310b1879b17aba777aef7011bbef26207cf229c7",
+      "skyline.png": "ecfcc058746ba9522b3be164ef39abe83f1ecd12c3241478c67c0a047555d3c4"
+    },
+    "after": {
+      "approach.png": "0f3d3b61daa8ad4ee672031ab181e58be91afe89c4f68c5c56a55d1130cf377c",
+      "player_arrival.png": "431c60a57a28cb66345b68d720edb497b4269720d801769010663c834c96f211",
+      "reverse.png": "40f96bd434fb067d499e953d54a175c556acf24b3f9424bc2acc7ca12f38b992",
+      "skyline.png": "8732b2e10930a5ad968781065d8682dd5b3bb0584a78a7f32c74a416d31e1055"
+    }
+  },
+  "inputHashes": {
+    "assets/production/world-slice/ironveil-ore-yard/scenery.mesh.json": "4e65f4e254ae58bed6c5825d68948dc8689eb10332fb2763bdae37f86e371d20",
+    "assets/production/world-slice/ironveil-ore-yard/solids.json": "5ebbab0a85ed9edd44ddb2483c1073cacc5712b4f62e46600df1e3cf1f8ee7a5",
+    "assets/production/world-slice/ironveil-ore-yard/provenance.json": "0a20739bd96ed630aa22ad0367958ee311bc7a05d083c273aced77425196c8bf",
+    "production/world/quality-slice/ironveil-ore-yard/composition.json": "50cd6944a80988627f329fb844e7c109c8cb15cd27b91c3db6d9698406794f50",
+    "production/world/quality-slice/ironveil-ore-yard/cameras.json": "2d908039f0b048ed576cadc74f5996504311cba82fa989663becae324fa76ba0",
+    "production/world/quality-slice/ironveil-ore-yard/verify.py": "28f6964038e3d203dd9c0ade734f45b5a0c0e0af0a168cdc1d5dd09b2ffabf5d",
+    "production/world/quality-slice/ironveil-ore-yard/checks-geometry04/receipt.json": "b0cdbb074d76978d9f0f52b80ac1c540bad2ebb9a9031d1eaade821abfa539ae",
+    "production/world/quality-slice/ironveil-ore-yard/checks-geometry04/stdout.txt": "449099ad224f47675b3e93c91a0bc32fc4face8776b37e33b3c0112d64313a27",
+    "production/world/quality-slice/ironveil-ore-yard/checks-geometry04/stderr.txt": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "assets/production/world-slice/ironveil-ore-yard/before/blender-exit.json": "9e31244cc4b52924d6b75a3d090b7c28df321270da33cbb819cf6676bac55504",
+    "assets/production/world-slice/ironveil-ore-yard/before/render-evidence.json": "8e75370611e697181c52356ba3e0f62c014feae76e92896fd40bb1b31ee8b698",
+    "assets/production/world-slice/ironveil-ore-yard/before/source.blend": "641189fe96371cf634e3ef603ecff649cdf8c9585639064f9284ee8e3ff679af",
+    "assets/production/world-slice/ironveil-ore-yard/after/blender-exit.json": "d3f96c5dabb03697dba7e94226a049c29d1bfcd8960b747b9fa23468b01b2177",
+    "assets/production/world-slice/ironveil-ore-yard/after/render-evidence.json": "1608956495c5228b89ed9d25043f526d42110f713c670a636942814585b128ad",
+    "assets/production/world-slice/ironveil-ore-yard/after/source.blend": "01a3400c6693557d33beeb343e88bf64d55c59aa08edbe25e2bcf18af558472f"
+  },
+  "studioAccepted": false,
+  "humanApproved": false,
+  "highFidelityCityAccepted": false,
+  "dockNativeRetest": "PENDING_ROOT_STUDIO",
+  "runtimeIds": null
+}

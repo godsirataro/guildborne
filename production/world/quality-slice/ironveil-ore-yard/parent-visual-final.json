@@ -1,0 +1,21 @@
+{
+  "status": "READY_FOR_NATIVE_ART_REVIEW_BOUNDED_PACKAGE",
+  "viewedImages": {
+    "assets/production/world-slice/ironveil-ore-yard/after/approach.png": "0f3d3b61daa8ad4ee672031ab181e58be91afe89c4f68c5c56a55d1130cf377c",
+    "assets/production/world-slice/ironveil-ore-yard/after/player_arrival.png": "431c60a57a28cb66345b68d720edb497b4269720d801769010663c834c96f211",
+    "assets/production/world-slice/ironveil-ore-yard/after/skyline.png": "8732b2e10930a5ad968781065d8682dd5b3bb0584a78a7f32c74a416d31e1055",
+    "assets/production/world-slice/ironveil-ore-yard/after/reverse.png": "40f96bd434fb067d499e953d54a175c556acf24b3f9424bc2acc7ca12f38b992"
+  },
+  "observations": [
+    "Full masonry perimeter now meets the native ground; earlier floating void is closed.",
+    "West loading door and loft window are readable in unchanged approach camera; existing foreground crystal is preserved.",
+    "Hoist and sorting equipment provide a cargo-work purpose for cart bay.",
+    "Above-floor fractured rock sides materially change the quarry silhouette while retaining the original gantry and open encounter areas."
+  ],
+  "limits": [
+    "Large native terrace planes remain visually simple; this is not full-city high-fidelity acceptance.",
+    "Native import, actual gameplay occlusion, companion traversal and performance remain pending."
+  ],
+  "studioTested": false,
+  "humanApproved": false
+}

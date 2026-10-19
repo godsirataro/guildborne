@@ -1,0 +1,27 @@
+{
+  "command": [
+    "C:/Program Files/Blender Foundation/Blender 5.2/blender.exe",
+    "--background",
+    "--disable-autoexec",
+    "--python-exit-code",
+    "2",
+    "--python",
+    "C:\\Work\\MySelf\\Guildborne-ironveil-yard\\production\\world\\quality-slice\\ironveil-ore-yard\\render.py",
+    "--",
+    "before"
+  ],
+  "exitCode": 0,
+  "seconds": 55.6058778000006,
+  "inputHashes": {
+    "production/world/quality-slice/ironveil-ore-yard/render.py": "a1cb48de60c3804acefdb74630614c461c90bc167b6d57d88b5eddbcb1085056",
+    "production/world/quality-slice/ironveil-ore-yard/run_render.py": "8ca79e907ab880632ad338260926c3be01774d48e707ff8daf314af32b03fb6a",
+    "production/world/quality-slice/ironveil-ore-yard/cameras.json": "2d908039f0b048ed576cadc74f5996504311cba82fa989663becae324fa76ba0",
+    "production/world/quality-slice/ironveil-ore-yard/source-survey.json": "3cb55364cbd6e2a40d7b160286ecd851b67de975a5c630590cf398822ab5ac1b",
+    "assets/production/world-slice/ironveil-ore-yard/scenery.mesh.json": "4e65f4e254ae58bed6c5825d68948dc8689eb10332fb2763bdae37f86e371d20",
+    "assets/production/world-slice/greenwood-ironveil/scenery.mesh.json": "b885085377b3e56faf9f6a0fe072d0db4672f6b87c5241c6d61ff34c70a65539",
+    "production/world/quality-slice/greenwood-ironveil/ground.json": "85b0866cf5ed468ef323f52c5e33f825fcb89155d1a91c2753d593271ccdeb70"
+  },
+  "inputsUnchanged": true,
+  "stdoutSha256": "8b6c48cbf0ca750652f91c79fea735889912dd45b5b2cfae847374a2eeddf6e4",
+  "stderrSha256": "b12e4627a861701896f06bf4b928158da4a0e25fef409c47008d422d3fcd9c7d"
+}

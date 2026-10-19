@@ -1,0 +1,8 @@
+Traceback (most recent call last):
+  File "C:\Work\MySelf\Guildborne-ironveil-yard\production\world\quality-slice\ironveil-ore-yard\verify.py", line 119, in <module>
+    if __name__=='__main__':main()
+                            ~~~~^^
+  File "C:\Work\MySelf\Guildborne-ironveil-yard\production\world\quality-slice\ironveil-ore-yard\verify.py", line 118, in main
+    assert not failures,failures[:12]
+           ^^^^^^^^^^^^
+AssertionError: [{'solid': 'frontstone515_0', 'reason': '24-wide lane footprint overlap', 'margin': -0.009999999999990905}, {'solid': 'frontstone515_1', 'reason': '24-wide lane footprint overlap', 'margin': -0.009999999999990905}, {'solid': 'frontstone515_2', 'reason': '24-wide lane footprint overlap', 'margin': -0.009999999999990905}]

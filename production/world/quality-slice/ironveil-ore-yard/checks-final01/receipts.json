@@ -1,0 +1,50 @@
+{
+  "scope": "LOCAL_SCOPED_CHECKS_NOT_STUDIO",
+  "inputHashes": {
+    "production/world/quality-slice/ironveil-ore-yard/build.py": "5ab3711f35c92131017e7be1d35c3e0c0915661c25df677897fba06d98f5bc75",
+    "production/world/quality-slice/ironveil-ore-yard/check_scope.py": "afd3021dad813454d5bbd1820c813921eb98f4a44f098ba69fe3c5ae692d889c",
+    "production/world/quality-slice/ironveil-ore-yard/render.py": "a1cb48de60c3804acefdb74630614c461c90bc167b6d57d88b5eddbcb1085056",
+    "production/world/quality-slice/ironveil-ore-yard/run_checks.py": "b4a0c8c2affed992b7a5e7a32a0dfee108f2fc5fc4bb662f2fa387b634a301d3",
+    "production/world/quality-slice/ironveil-ore-yard/run_render.py": "8ca79e907ab880632ad338260926c3be01774d48e707ff8daf314af32b03fb6a",
+    "production/world/quality-slice/ironveil-ore-yard/survey.py": "d56b844dd114c3ab0777b091221c1f2cf7f78bed3ea67d218b269a58d01f865b",
+    "production/world/quality-slice/ironveil-ore-yard/verify.py": "28f6964038e3d203dd9c0ade734f45b5a0c0e0af0a168cdc1d5dd09b2ffabf5d"
+  },
+  "inputsUnchanged": true,
+  "checks": [
+    {
+      "name": "syntax",
+      "command": [
+        "python",
+        "-c",
+        "from pathlib import Path; p=Path('production/world/quality-slice/ironveil-ore-yard'); files=list(p.glob('*.py')); [compile(f.read_bytes(),str(f),'exec') for f in files]; print('Python syntax:',len(files),'files')"
+      ],
+      "exitCode": 0,
+      "seconds": 0.37458110000079614,
+      "stdoutSha256": "b1ab08bee61ed113d048c96148e358121d5fed6b4e60f25d16b0200634fedf3f",
+      "stderrSha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "name": "whitespace",
+      "command": [
+        "git",
+        "diff",
+        "--check"
+      ],
+      "exitCode": 0,
+      "seconds": 0.12300309999773162,
+      "stdoutSha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "stderrSha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "name": "scope",
+      "command": [
+        "python",
+        "production/world/quality-slice/ironveil-ore-yard/check_scope.py"
+      ],
+      "exitCode": 0,
+      "seconds": 2.1843282999980147,
+      "stdoutSha256": "19cdbc18e38688d5bf2e94c8f51b970bf61b9e089a5e68c0ee897cd2ada26594",
+      "stderrSha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    }
+  ]
+}

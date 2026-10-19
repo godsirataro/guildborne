@@ -1,0 +1,18 @@
+{
+  "status": "ART_ITERATION_REQUIRED",
+  "reviewer": "ironveil_review",
+  "inspectedViews": ["approach", "player_arrival", "skyline", "reverse"],
+  "variants": ["before", "after"],
+  "positive": [
+    "Weighhouse pitched slate roof, timber frame, hanging balance and ordered cart bay create a recognizable new focal point.",
+    "All four fixed views preserve the broad approach and ascent readability."
+  ],
+  "findings": [
+    "Skyline remains dominated by featureless native terrace slabs, flat QuarryWall faces and sparse quarry context; this is not yet a coherent finished ore yard.",
+    "Existing crystal partially occludes weighhouse in approach view; avoid relocating protected native geometry to improve the camera.",
+    "Author proposes layered rock cladding at existing side walls. A footprint crossing higher-terrace boundaries cannot use the higher terrace floor as its sole grounding height."
+  ],
+  "requiredNextIteration": "Grounded layered rock cladding with varied silhouette/palette inside approved bounds and full interaction/lane/leash clearances, followed by the same four matched views.",
+  "highFidelityAccepted": false,
+  "studioAccepted": false
+}

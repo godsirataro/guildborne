@@ -1,0 +1,50 @@
+{
+  "scope": "LOCAL_SCOPED_CHECKS_NOT_STUDIO",
+  "inputHashes": {
+    "production/world/quality-slice/ironveil-ore-yard/build.py": "ee2905633561ad06e6285938ccf1e9535eb8b031ac874206eec9ec0100ad05e3",
+    "production/world/quality-slice/ironveil-ore-yard/check_scope.py": "afd3021dad813454d5bbd1820c813921eb98f4a44f098ba69fe3c5ae692d889c",
+    "production/world/quality-slice/ironveil-ore-yard/render.py": "a1cb48de60c3804acefdb74630614c461c90bc167b6d57d88b5eddbcb1085056",
+    "production/world/quality-slice/ironveil-ore-yard/run_checks.py": "1a8a815d4e125c9ab3e5dbd76e9dc980c6ef90f459fc20615806a6f0c95936b1",
+    "production/world/quality-slice/ironveil-ore-yard/run_render.py": "8ca79e907ab880632ad338260926c3be01774d48e707ff8daf314af32b03fb6a",
+    "production/world/quality-slice/ironveil-ore-yard/survey.py": "d56b844dd114c3ab0777b091221c1f2cf7f78bed3ea67d218b269a58d01f865b",
+    "production/world/quality-slice/ironveil-ore-yard/verify.py": "8b5e52c937b33be36284fabca2aed19aac1b0d5fa718caf39ab3d160a091158b"
+  },
+  "checks": [
+    {
+      "name": "forge",
+      "command": [
+        "python",
+        "tools/agentic/forge.py",
+        "validate"
+      ],
+      "exitCode": 0,
+      "seconds": 0.2182183000004443,
+      "stdoutSha256": "425e920e88765646aada4e6f5561609e562e4d39ae0c56f8c634cc70305a5e87",
+      "stderrSha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "name": "studio",
+      "command": [
+        "python",
+        "tools/agentic/studio.py",
+        "validate"
+      ],
+      "exitCode": 0,
+      "seconds": 1.0171623999995063,
+      "stdoutSha256": "c114f88d1de9271b0ed02127334ac62b7bb81a83c89ddb8a3c941c3e732946f0",
+      "stderrSha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "name": "adapters",
+      "command": [
+        "python",
+        "tools/agentic/studio.py",
+        "verify"
+      ],
+      "exitCode": 0,
+      "seconds": 1.433466499998758,
+      "stdoutSha256": "30bdcea6ce0f919e099ba206d16ce5b1bae48fcf1aef0b462a4bdc41394dacc9",
+      "stderrSha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    }
+  ]
+}
