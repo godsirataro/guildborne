@@ -1,0 +1,9 @@
+{
+  "content": [
+    {
+      "type": "text",
+      "text": "{\"datasets\":{\"Dataset2\":{\"LoadSeconds\":0.9833704000047874,\"Triangles\":11595,\"Placements\":72,\"PreviewState\":\"READY_LOCAL_ONLY\",\"SourceSha256\":\"8743e160609a44e48b80e81b9ff0fe21b043bfb7e69fa216f2d164149c7f6760\"},\"Dataset7\":{\"LoadSeconds\":0.048262299998896199,\"Triangles\":80,\"Placements\":3,\"PreviewState\":\"READY_LOCAL_ONLY\",\"SourceSha256\":\"821b419df0f43fb3d3702be9d11948a703af6c97d2947a315d334a217f2bdae6\"},\"Dataset3\":{\"LoadSeconds\":0.20201580000139075,\"Triangles\":5752,\"Placements\":17,\"PreviewState\":\"READY_LOCAL_ONLY\",\"SourceSha256\":\"b885085377b3e56faf9f6a0fe072d0db4672f6b87c5241c6d61ff34c70a65539\"},\"Dataset5\":{\"LoadSeconds\":0.13254410000081408,\"Triangles\":2056,\"Placements\":8,\"PreviewState\":\"READY_LOCAL_ONLY\",\"SourceSha256\":\"d08edc14a62bd2fc9e1a3fb0e5a6b205df9532358567e19d93a3e22b356bb46f\"},\"Dataset6\":{\"LoadSeconds\":0.15141949999815552,\"Triangles\":1856,\"Placements\":8,\"PreviewState\":\"READY_LOCAL_ONLY\",\"SourceSha256\":\"1e803ebb0bfa131c7c0d2113ce50eb3227fcc82fea1aa9ab56ab94156135cf51\"},\"Dataset1\":{\"LoadSeconds\":4.4372491000031009,\"Triangles\":45267,\"Placements\":116,\"PreviewState\":\"READY_LOCAL_ONLY\",\"SourceSha256\":\"9baaf8de0faf3ff7f4a4f2c32ea692e48aa9dbb021f609e3530029ed7844ddc7\"},\"Dataset4\":{\"LoadSeconds\":0.41633030000230067,\"Triangles\":10933,\"Placements\":13,\"PreviewState\":\"READY_LOCAL_ONLY\",\"SourceSha256\":\"4e65f4e254ae58bed6c5825d68948dc8689eb10332fb2763bdae37f86e371d20\"}},\"player\":11732987790,\"gui\":true,\"position\":\"-4500, 2.9980251789093018, 214\"}"
+    }
+  ],
+  "isError": false
+}

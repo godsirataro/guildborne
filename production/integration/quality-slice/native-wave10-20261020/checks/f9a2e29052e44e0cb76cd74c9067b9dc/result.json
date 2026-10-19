@@ -1,0 +1,44 @@
+{
+  "schemaVersion": 3,
+  "buildCommit": "af28e545a96d9e4352f749b7e1ce774cb9277a4d",
+  "sourceTree": "362659759636c7f99793b964de146160341fc7bc",
+  "status": "FAIL",
+  "sourceUnchanged": true,
+  "invocation": {
+    "tool": "C:\\Users\\godsi\\AppData\\Local\\Programs\\Python\\Python314\\python.EXE",
+    "argv": [
+      "C:\\Users\\godsi\\AppData\\Local\\Programs\\Python\\Python314\\python.EXE",
+      "-c",
+      "import subprocess,sys; cmds=[['python','tools/agentic/forge.py',x] for x in ['doctor','validate','plan']]+[['python','tools/agentic/studio.py',x] for x in ['validate','verify']]+[['powershell.exe','-NoProfile','-ExecutionPolicy','Bypass','-File','tools/validate.ps1']]; [subprocess.run(c,check=True) for c in cmds]; print('Fresh inventory, baseline, boundaries and generated adapter validation; no Studio/device acceptance')"
+    ],
+    "runId": "f9a2e29052e44e0cb76cd74c9067b9dc",
+    "buildCommit": "af28e545a96d9e4352f749b7e1ce774cb9277a4d",
+    "exitCode": 1,
+    "seconds": 108.11140729999897,
+    "recordPath": "build/agentic/checks/f9a2e29052e44e0cb76cd74c9067b9dc/invocation.json",
+    "recordSha256": "c36bc8f27623c5fc37e7fc44b11319fa7ba284e28cc9043593df592341797f7c",
+    "logs": [
+      "build/agentic/checks/f9a2e29052e44e0cb76cd74c9067b9dc/invocation.json",
+      "build/agentic/checks/f9a2e29052e44e0cb76cd74c9067b9dc/stdout.txt",
+      "build/agentic/checks/f9a2e29052e44e0cb76cd74c9067b9dc/stderr.txt"
+    ]
+  },
+  "artifacts": [
+    {
+      "path": "build/agentic/checks/f9a2e29052e44e0cb76cd74c9067b9dc/invocation.json",
+      "sha256": "c36bc8f27623c5fc37e7fc44b11319fa7ba284e28cc9043593df592341797f7c",
+      "bytes": 1366
+    },
+    {
+      "path": "build/agentic/checks/f9a2e29052e44e0cb76cd74c9067b9dc/stdout.txt",
+      "sha256": "b5b61f574ab567eac27732136f84c173573786e7caf41b50dca1010588d5a379",
+      "bytes": 75598
+    },
+    {
+      "path": "build/agentic/checks/f9a2e29052e44e0cb76cd74c9067b9dc/stderr.txt",
+      "sha256": "da16ab3aefd7317cb83481c2e7c51e6b2a579f6753d2239d79d116f30270afcc",
+      "bytes": 4569
+    }
+  ],
+  "humanApproved": false
+}

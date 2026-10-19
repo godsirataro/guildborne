@@ -1,0 +1,9 @@
+{
+  "content": [
+    {
+      "type": "text",
+      "text": "{\"rows\":{\"1\":{\"scaled\":false,\"bounds\":{\"1\":7,\"2\":12},\"variant\":\"old\",\"text\":\"0\",\"fits\":true,\"textSize\":8,\"wrapped\":false},\"3\":{\"scaled\":false,\"bounds\":{\"1\":78,\"2\":12},\"variant\":\"old\",\"text\":\"ทอง · หอกิลด์ Lv17\",\"fits\":true,\"textSize\":8,\"wrapped\":false},\"2\":{\"scaled\":false,\"bounds\":{\"1\":112,\"2\":12},\"variant\":\"old\",\"text\":\"9999999999999999\",\"fits\":true,\"textSize\":8,\"wrapped\":false},\"5\":{\"scaled\":true,\"bounds\":{\"1\":192,\"2\":22},\"variant\":\"proposed\",\"text\":\"9999999999999999\",\"fits\":true,\"textSize\":22,\"wrapped\":true},\"4\":{\"scaled\":true,\"bounds\":{\"1\":13,\"2\":22},\"variant\":\"proposed\",\"text\":\"0\",\"fits\":true,\"textSize\":22,\"wrapped\":true},\"6\":{\"scaled\":true,\"bounds\":{\"1\":138,\"2\":22},\"variant\":\"proposed\",\"text\":\"ทอง · หอกิลด์ Lv17\",\"fits\":true,\"textSize\":22,\"wrapped\":true}},\"done\":true}"
+    }
+  ],
+  "isError": false
+}

@@ -1,0 +1,42 @@
+[INFO] Loading definitions file: @roblox - C:\Work\MySelf\Guildborne-controller\.tools\luau-lsp\globalTypes.d.luau
+[WARN] client does not allow didChangeWatchedFiles registration - automatic updating on sourcemap changes disabled
+tests/gui/behavior.luau(81,12): UnknownGlobal: Unknown global 'Services'; consider assigning to it first
+tests/gui/behavior.luau(82,15): UnknownGlobal: Unknown global 'Services'; consider assigning to it first
+tests/gui/behavior.luau(84,9): UnknownGlobal: Unknown global 'Services'; consider assigning to it first
+tests/gui/behavior.luau(93,13): UnknownGlobal: Unknown global 'Services'; consider assigning to it first
+tests/gui/behavior.luau(111,16): UnknownGlobal: Unknown global 'Services'; consider assigning to it first
+tests/gui/behavior.luau(118,2): UnknownGlobal: Unknown global 'Services'; consider assigning to it first
+tests/gui/behavior.luau(120,2): UnknownGlobal: Unknown global 'Services'; consider assigning to it first
+tests/gui/behavior.luau(120,40): UnknownGlobal: Unknown global 'Services'; consider assigning to it first
+tests/gui/behavior.luau(122,2): UnknownGlobal: Unknown global 'Services'; consider assigning to it first
+tests/gui/inventory_pane_behavior.luau(3,20): UnknownGlobal: Unknown global 'UI'; consider assigning to it first
+tests/gui/inventory_pane_behavior.luau(9,2): ImplicitReturn: Function 'find' can implicitly return no values even though there's an explicit return at line 8; add explicit return to silence
+tests/gui/novice_chapter.luau(3,20): UnknownGlobal: Unknown global 'UI'; consider assigning to it first
+tests/gui/novice_chapter.luau(4,22): UnknownGlobal: Unknown global 'NoviceConfig'; consider assigning to it first
+tests/gui/novice_chapter.luau(11,2): ImplicitReturn: Function 'find' can implicitly return no values even though there's an explicit return at line 9; add explicit return to silence
+tests/studio_quality_slice.luau(12,30): TypeError: Expected this to be 'boolean', but got 'string'
+tests/studio_quality_slice.luau(12,37): TypeError: Expected this to be 'boolean', but got 'number'
+tests/studio_quality_slice.luau(18,31): TypeError: Expected this to be 'number', but got 'string'
+tests/studio_quality_slice.luau(21,31): TypeError: Expected this to be 'boolean', but got 'string'
+tests/studio_quality_slice.luau(21,38): TypeError: Expected this to be 'boolean', but got 'number'
+tests/studio_quality_slice.luau(23,69): TypeError: Expected this to be exactly '{string}', but got '{boolean}'
+caused by:
+  Property '[indexer value]' is not compatible.
+Expected this to be exactly 'string', but got 'boolean'
+tests/studio_quality_slice.luau(23,81): TypeError: Expected this to be '{string}', but got 'boolean'
+tests/studio_quality_slice.luau(23,87): TypeError: Expected this to be '{string}', but got 'string'
+Validation failed (1): C:\Work\MySelf\Guildborne-controller\.tools\luau-lsp\luau-lsp.exe
+At C:\Work\MySelf\Guildborne-controller\tools\validate.ps1:8 char:36
++ ... ODE -ne 0) { throw "Validation failed ($LASTEXITCODE): $Executable" }
++                  ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+    + CategoryInfo          : OperationStopped: (Validation fail...sp\luau-lsp.exe:String) [], RuntimeException
+    + FullyQualifiedErrorId : Validation failed (1): C:\Work\MySelf\Guildborne-controller\.tools\luau-lsp\luau-lsp.exe
+ 
+Traceback (most recent call last):
+  File "<string>", line 1, in <module>
+    import subprocess,sys; cmds=[['python','tools/agentic/forge.py',x] for x in ['doctor','validate','plan']]+[['python','tools/agentic/studio.py',x] for x in ['validate','verify']]+[['powershell.exe','-NoProfile','-ExecutionPolicy','Bypass','-File','tools/validate.ps1']]; [subprocess.run(c,check=True) for c in cmds]; print('Fresh inventory, baseline, boundaries and generated adapter validation; no Studio/device acceptance')
+                                                                                                                                                                                                                                                                                   ~~~~~~~~~~~~~~^^^^^^^^^^^^^^
+  File "C:\Users\godsi\AppData\Local\Programs\Python\Python314\Lib\subprocess.py", line 577, in run
+    raise CalledProcessError(retcode, process.args,
+                             output=stdout, stderr=stderr)
+subprocess.CalledProcessError: Command '['powershell.exe', '-NoProfile', '-ExecutionPolicy', 'Bypass', '-File', 'tools/validate.ps1']' returned non-zero exit status 1.

@@ -1,0 +1,9 @@
+{
+  "content": [
+    {
+      "type": "text",
+      "text": "{\"dataset\":{\"LoadSeconds\":0.048262299998896199,\"Triangles\":80,\"Placements\":3,\"PreviewState\":\"READY_LOCAL_ONLY\",\"SourceSha256\":\"821b419df0f43fb3d3702be9d11948a703af6c97d2947a315d334a217f2bdae6\"},\"art\":{\"1\":{\"touch\":false,\"name\":\"smith_roof_west_cap_00\",\"query\":false,\"collide\":false,\"class\":\"MeshPart\",\"position\":{\"1\":349.75,\"3\":-1000,\"2\":25.700000762939454}},\"3\":{\"touch\":false,\"name\":\"smith_roof_east_seam_00\",\"query\":false,\"collide\":false,\"class\":\"MeshPart\",\"position\":{\"1\":390.07501220703127,\"3\":-1000,\"2\":25.638538360595704}},\"2\":{\"touch\":false,\"name\":\"smith_roof_west_timber_00\",\"query\":false,\"collide\":false,\"class\":\"MeshPart\",\"position\":{\"1\":349.3599853515625,\"3\":-1000,\"2\":25.56591033935547}}}}"
+    }
+  ],
+  "isError": false
+}

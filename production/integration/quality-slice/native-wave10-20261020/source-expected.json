@@ -1,0 +1,5045 @@
+{
+  "entries": [
+    {
+      "path": [
+        "StarterPlayer",
+        "StarterPlayerScripts",
+        "Client",
+        "ClientBootstrap"
+      ],
+      "className": "LocalScript",
+      "length": 1217,
+      "adler32": 4256286252
+    },
+    {
+      "path": [
+        "StarterPlayer",
+        "StarterPlayerScripts",
+        "Client",
+        "Controllers",
+        "ActionPose"
+      ],
+      "className": "ModuleScript",
+      "length": 2413,
+      "adler32": 3260489815
+    },
+    {
+      "path": [
+        "StarterPlayer",
+        "StarterPlayerScripts",
+        "Client",
+        "Controllers",
+        "AppearancePreviewController"
+      ],
+      "className": "ModuleScript",
+      "length": 5161,
+      "adler32": 3354837178
+    },
+    {
+      "path": [
+        "StarterPlayer",
+        "StarterPlayerScripts",
+        "Client",
+        "Controllers",
+        "ArchiveHeartEffects"
+      ],
+      "className": "ModuleScript",
+      "length": 4769,
+      "adler32": 169302267
+    },
+    {
+      "path": [
+        "StarterPlayer",
+        "StarterPlayerScripts",
+        "Client",
+        "Controllers",
+        "AudioController"
+      ],
+      "className": "ModuleScript",
+      "length": 6628,
+      "adler32": 2158953128
+    },
+    {
+      "path": [
+        "StarterPlayer",
+        "StarterPlayerScripts",
+        "Client",
+        "Controllers",
+        "CampaignDirections"
+      ],
+      "className": "ModuleScript",
+      "length": 4087,
+      "adler32": 566406930
+    },
+    {
+      "path": [
+        "StarterPlayer",
+        "StarterPlayerScripts",
+        "Client",
+        "Controllers",
+        "CampaignVisibility"
+      ],
+      "className": "ModuleScript",
+      "length": 877,
+      "adler32": 3525065259
+    },
+    {
+      "path": [
+        "StarterPlayer",
+        "StarterPlayerScripts",
+        "Client",
+        "Controllers",
+        "CityNavigation"
+      ],
+      "className": "ModuleScript",
+      "length": 32431,
+      "adler32": 218552363
+    },
+    {
+      "path": [
+        "StarterPlayer",
+        "StarterPlayerScripts",
+        "Client",
+        "Controllers",
+        "CombatController"
+      ],
+      "className": "ModuleScript",
+      "length": 13544,
+      "adler32": 1708200160
+    },
+    {
+      "path": [
+        "StarterPlayer",
+        "StarterPlayerScripts",
+        "Client",
+        "Controllers",
+        "CompanionOcclusion"
+      ],
+      "className": "ModuleScript",
+      "length": 4097,
+      "adler32": 1488141969
+    },
+    {
+      "path": [
+        "StarterPlayer",
+        "StarterPlayerScripts",
+        "Client",
+        "Controllers",
+        "EnemyAnimator"
+      ],
+      "className": "ModuleScript",
+      "length": 14801,
+      "adler32": 2186741391
+    },
+    {
+      "path": [
+        "StarterPlayer",
+        "StarterPlayerScripts",
+        "Client",
+        "Controllers",
+        "FootstepAudio"
+      ],
+      "className": "ModuleScript",
+      "length": 1409,
+      "adler32": 1865081789
+    },
+    {
+      "path": [
+        "StarterPlayer",
+        "StarterPlayerScripts",
+        "Client",
+        "Controllers",
+        "FriendlyNpcAnimator"
+      ],
+      "className": "ModuleScript",
+      "length": 17104,
+      "adler32": 4155161979
+    },
+    {
+      "path": [
+        "StarterPlayer",
+        "StarterPlayerScripts",
+        "Client",
+        "Controllers",
+        "HeroAnimator"
+      ],
+      "className": "ModuleScript",
+      "length": 3874,
+      "adler32": 306588963
+    },
+    {
+      "path": [
+        "StarterPlayer",
+        "StarterPlayerScripts",
+        "Client",
+        "Controllers",
+        "IslandVisitNotice"
+      ],
+      "className": "ModuleScript",
+      "length": 2719,
+      "adler32": 2464790410
+    },
+    {
+      "path": [
+        "StarterPlayer",
+        "StarterPlayerScripts",
+        "Client",
+        "Controllers",
+        "MineActivityEffects"
+      ],
+      "className": "ModuleScript",
+      "length": 5889,
+      "adler32": 2642862425
+    },
+    {
+      "path": [
+        "StarterPlayer",
+        "StarterPlayerScripts",
+        "Client",
+        "Controllers",
+        "MusicController"
+      ],
+      "className": "ModuleScript",
+      "length": 2283,
+      "adler32": 175911422
+    },
+    {
+      "path": [
+        "StarterPlayer",
+        "StarterPlayerScripts",
+        "Client",
+        "Controllers",
+        "NoviceTrialController"
+      ],
+      "className": "ModuleScript",
+      "length": 10255,
+      "adler32": 2187794761
+    },
+    {
+      "path": [
+        "StarterPlayer",
+        "StarterPlayerScripts",
+        "Client",
+        "Controllers",
+        "PathSkillEffects"
+      ],
+      "className": "ModuleScript",
+      "length": 3616,
+      "adler32": 1147827097
+    },
+    {
+      "path": [
+        "StarterPlayer",
+        "StarterPlayerScripts",
+        "Client",
+        "Controllers",
+        "PlayerCombatController"
+      ],
+      "className": "ModuleScript",
+      "length": 17133,
+      "adler32": 2685416052
+    },
+    {
+      "path": [
+        "StarterPlayer",
+        "StarterPlayerScripts",
+        "Client",
+        "Controllers",
+        "PortalEffects"
+      ],
+      "className": "ModuleScript",
+      "length": 5380,
+      "adler32": 2164942386
+    },
+    {
+      "path": [
+        "StarterPlayer",
+        "StarterPlayerScripts",
+        "Client",
+        "Controllers",
+        "QuestNpcMarkers"
+      ],
+      "className": "ModuleScript",
+      "length": 2512,
+      "adler32": 821784265
+    },
+    {
+      "path": [
+        "StarterPlayer",
+        "StarterPlayerScripts",
+        "Client",
+        "Controllers",
+        "RegionalEncounterVisibility"
+      ],
+      "className": "ModuleScript",
+      "length": 744,
+      "adler32": 2608790244
+    },
+    {
+      "path": [
+        "StarterPlayer",
+        "StarterPlayerScripts",
+        "Client",
+        "Controllers",
+        "ResourceNodeMarkers"
+      ],
+      "className": "ModuleScript",
+      "length": 4660,
+      "adler32": 3878521479
+    },
+    {
+      "path": [
+        "StarterPlayer",
+        "StarterPlayerScripts",
+        "Client",
+        "Controllers",
+        "SkillEffects"
+      ],
+      "className": "ModuleScript",
+      "length": 33897,
+      "adler32": 1553299743
+    },
+    {
+      "path": [
+        "StarterPlayer",
+        "StarterPlayerScripts",
+        "Client",
+        "Controllers",
+        "SliceController"
+      ],
+      "className": "ModuleScript",
+      "length": 12834,
+      "adler32": 3901608277
+    },
+    {
+      "path": [
+        "StarterPlayer",
+        "StarterPlayerScripts",
+        "Client",
+        "Controllers",
+        "TowerLessonEffects"
+      ],
+      "className": "ModuleScript",
+      "length": 5123,
+      "adler32": 1593169119
+    },
+    {
+      "path": [
+        "StarterPlayer",
+        "StarterPlayerScripts",
+        "Client",
+        "UI",
+        "ActorPortrait"
+      ],
+      "className": "ModuleScript",
+      "length": 3050,
+      "adler32": 3691251793
+    },
+    {
+      "path": [
+        "StarterPlayer",
+        "StarterPlayerScripts",
+        "Client",
+        "UI",
+        "ArchiveEndingPlayback"
+      ],
+      "className": "ModuleScript",
+      "length": 2997,
+      "adler32": 2379160727
+    },
+    {
+      "path": [
+        "StarterPlayer",
+        "StarterPlayerScripts",
+        "Client",
+        "UI",
+        "ArchiveEndingView"
+      ],
+      "className": "ModuleScript",
+      "length": 2989,
+      "adler32": 2350282153
+    },
+    {
+      "path": [
+        "StarterPlayer",
+        "StarterPlayerScripts",
+        "Client",
+        "UI",
+        "AssetImage"
+      ],
+      "className": "ModuleScript",
+      "length": 1995,
+      "adler32": 3281236493
+    },
+    {
+      "path": [
+        "StarterPlayer",
+        "StarterPlayerScripts",
+        "Client",
+        "UI",
+        "BestiaryView"
+      ],
+      "className": "ModuleScript",
+      "length": 3734,
+      "adler32": 2732850228
+    },
+    {
+      "path": [
+        "StarterPlayer",
+        "StarterPlayerScripts",
+        "Client",
+        "UI",
+        "BuildingThemesView"
+      ],
+      "className": "ModuleScript",
+      "length": 5093,
+      "adler32": 2513333461
+    },
+    {
+      "path": [
+        "StarterPlayer",
+        "StarterPlayerScripts",
+        "Client",
+        "UI",
+        "BuildView"
+      ],
+      "className": "ModuleScript",
+      "length": 8192,
+      "adler32": 938547424
+    },
+    {
+      "path": [
+        "StarterPlayer",
+        "StarterPlayerScripts",
+        "Client",
+        "UI",
+        "CampaignView"
+      ],
+      "className": "ModuleScript",
+      "length": 6718,
+      "adler32": 151182306
+    },
+    {
+      "path": [
+        "StarterPlayer",
+        "StarterPlayerScripts",
+        "Client",
+        "UI",
+        "CharacterCustomizationUI"
+      ],
+      "className": "ModuleScript",
+      "length": 33882,
+      "adler32": 411724168
+    },
+    {
+      "path": [
+        "StarterPlayer",
+        "StarterPlayerScripts",
+        "Client",
+        "UI",
+        "CivicMapView"
+      ],
+      "className": "ModuleScript",
+      "length": 2331,
+      "adler32": 704062238
+    },
+    {
+      "path": [
+        "StarterPlayer",
+        "StarterPlayerScripts",
+        "Client",
+        "UI",
+        "ClassBadge"
+      ],
+      "className": "ModuleScript",
+      "length": 1013,
+      "adler32": 46619624
+    },
+    {
+      "path": [
+        "StarterPlayer",
+        "StarterPlayerScripts",
+        "Client",
+        "UI",
+        "CompanyPreview"
+      ],
+      "className": "ModuleScript",
+      "length": 3926,
+      "adler32": 1711484651
+    },
+    {
+      "path": [
+        "StarterPlayer",
+        "StarterPlayerScripts",
+        "Client",
+        "UI",
+        "Components",
+        "CampaignRouteContext"
+      ],
+      "className": "ModuleScript",
+      "length": 4100,
+      "adler32": 955888901
+    },
+    {
+      "path": [
+        "StarterPlayer",
+        "StarterPlayerScripts",
+        "Client",
+        "UI",
+        "Components",
+        "CombatChrome"
+      ],
+      "className": "ModuleScript",
+      "length": 6710,
+      "adler32": 853163909
+    },
+    {
+      "path": [
+        "StarterPlayer",
+        "StarterPlayerScripts",
+        "Client",
+        "UI",
+        "Components",
+        "EquipmentSlot"
+      ],
+      "className": "ModuleScript",
+      "length": 3764,
+      "adler32": 348114543
+    },
+    {
+      "path": [
+        "StarterPlayer",
+        "StarterPlayerScripts",
+        "Client",
+        "UI",
+        "Components",
+        "GameplayMenuGate"
+      ],
+      "className": "ModuleScript",
+      "length": 974,
+      "adler32": 3834468358
+    },
+    {
+      "path": [
+        "StarterPlayer",
+        "StarterPlayerScripts",
+        "Client",
+        "UI",
+        "Components",
+        "GuildborneButton"
+      ],
+      "className": "ModuleScript",
+      "length": 5755,
+      "adler32": 1620417446
+    },
+    {
+      "path": [
+        "StarterPlayer",
+        "StarterPlayerScripts",
+        "Client",
+        "UI",
+        "Components",
+        "GuildbornePanel"
+      ],
+      "className": "ModuleScript",
+      "length": 3172,
+      "adler32": 1158422914
+    },
+    {
+      "path": [
+        "StarterPlayer",
+        "StarterPlayerScripts",
+        "Client",
+        "UI",
+        "Components",
+        "HeaderBar"
+      ],
+      "className": "ModuleScript",
+      "length": 4435,
+      "adler32": 2862600565
+    },
+    {
+      "path": [
+        "StarterPlayer",
+        "StarterPlayerScripts",
+        "Client",
+        "UI",
+        "Components",
+        "InventoryActorPreview"
+      ],
+      "className": "ModuleScript",
+      "length": 13228,
+      "adler32": 550060313
+    },
+    {
+      "path": [
+        "StarterPlayer",
+        "StarterPlayerScripts",
+        "Client",
+        "UI",
+        "Components",
+        "InventoryPane"
+      ],
+      "className": "ModuleScript",
+      "length": 22805,
+      "adler32": 545846173
+    },
+    {
+      "path": [
+        "StarterPlayer",
+        "StarterPlayerScripts",
+        "Client",
+        "UI",
+        "Components",
+        "JournalPane"
+      ],
+      "className": "ModuleScript",
+      "length": 8243,
+      "adler32": 1010474164
+    },
+    {
+      "path": [
+        "StarterPlayer",
+        "StarterPlayerScripts",
+        "Client",
+        "UI",
+        "Components",
+        "NoviceChapterCard"
+      ],
+      "className": "ModuleScript",
+      "length": 11307,
+      "adler32": 3993963973
+    },
+    {
+      "path": [
+        "StarterPlayer",
+        "StarterPlayerScripts",
+        "Client",
+        "UI",
+        "Components",
+        "QualityAsset"
+      ],
+      "className": "ModuleScript",
+      "length": 1127,
+      "adler32": 127038635
+    },
+    {
+      "path": [
+        "StarterPlayer",
+        "StarterPlayerScripts",
+        "Client",
+        "UI",
+        "Components",
+        "RegalOrnament"
+      ],
+      "className": "ModuleScript",
+      "length": 3754,
+      "adler32": 3743922087
+    },
+    {
+      "path": [
+        "StarterPlayer",
+        "StarterPlayerScripts",
+        "Client",
+        "UI",
+        "Components",
+        "ResourceHeader"
+      ],
+      "className": "ModuleScript",
+      "length": 4916,
+      "adler32": 3641926084
+    },
+    {
+      "path": [
+        "StarterPlayer",
+        "StarterPlayerScripts",
+        "Client",
+        "UI",
+        "Components",
+        "TabBar"
+      ],
+      "className": "ModuleScript",
+      "length": 1796,
+      "adler32": 3498992899
+    },
+    {
+      "path": [
+        "StarterPlayer",
+        "StarterPlayerScripts",
+        "Client",
+        "UI",
+        "Components",
+        "TitleKeyboardFocus"
+      ],
+      "className": "ModuleScript",
+      "length": 1898,
+      "adler32": 547526415
+    },
+    {
+      "path": [
+        "StarterPlayer",
+        "StarterPlayerScripts",
+        "Client",
+        "UI",
+        "Components",
+        "TitleVista"
+      ],
+      "className": "ModuleScript",
+      "length": 7373,
+      "adler32": 2748407674
+    },
+    {
+      "path": [
+        "StarterPlayer",
+        "StarterPlayerScripts",
+        "Client",
+        "UI",
+        "Components",
+        "WalkingRouteContext"
+      ],
+      "className": "ModuleScript",
+      "length": 6038,
+      "adler32": 1181958657
+    },
+    {
+      "path": [
+        "StarterPlayer",
+        "StarterPlayerScripts",
+        "Client",
+        "UI",
+        "Components",
+        "WaypointBeacon"
+      ],
+      "className": "ModuleScript",
+      "length": 8233,
+      "adler32": 1721019048
+    },
+    {
+      "path": [
+        "StarterPlayer",
+        "StarterPlayerScripts",
+        "Client",
+        "UI",
+        "CosmeticPreview"
+      ],
+      "className": "ModuleScript",
+      "length": 3988,
+      "adler32": 2435992890
+    },
+    {
+      "path": [
+        "StarterPlayer",
+        "StarterPlayerScripts",
+        "Client",
+        "UI",
+        "DesignSystem",
+        "Theme"
+      ],
+      "className": "ModuleScript",
+      "length": 716,
+      "adler32": 1879306117
+    },
+    {
+      "path": [
+        "StarterPlayer",
+        "StarterPlayerScripts",
+        "Client",
+        "UI",
+        "EmptyState"
+      ],
+      "className": "ModuleScript",
+      "length": 2784,
+      "adler32": 1916980589
+    },
+    {
+      "path": [
+        "StarterPlayer",
+        "StarterPlayerScripts",
+        "Client",
+        "UI",
+        "ExpansionView"
+      ],
+      "className": "ModuleScript",
+      "length": 21943,
+      "adler32": 1638942536
+    },
+    {
+      "path": [
+        "StarterPlayer",
+        "StarterPlayerScripts",
+        "Client",
+        "UI",
+        "FurnitureView"
+      ],
+      "className": "ModuleScript",
+      "length": 3350,
+      "adler32": 2067355428
+    },
+    {
+      "path": [
+        "StarterPlayer",
+        "StarterPlayerScripts",
+        "Client",
+        "UI",
+        "GuildLandView"
+      ],
+      "className": "ModuleScript",
+      "length": 3663,
+      "adler32": 3620322395
+    },
+    {
+      "path": [
+        "StarterPlayer",
+        "StarterPlayerScripts",
+        "Client",
+        "UI",
+        "HumanPartyView"
+      ],
+      "className": "ModuleScript",
+      "length": 6076,
+      "adler32": 617902878
+    },
+    {
+      "path": [
+        "StarterPlayer",
+        "StarterPlayerScripts",
+        "Client",
+        "UI",
+        "InventoryView"
+      ],
+      "className": "ModuleScript",
+      "length": 8602,
+      "adler32": 1853092794
+    },
+    {
+      "path": [
+        "StarterPlayer",
+        "StarterPlayerScripts",
+        "Client",
+        "UI",
+        "IslandDirectoryView"
+      ],
+      "className": "ModuleScript",
+      "length": 5135,
+      "adler32": 3024653849
+    },
+    {
+      "path": [
+        "StarterPlayer",
+        "StarterPlayerScripts",
+        "Client",
+        "UI",
+        "ItemViewport"
+      ],
+      "className": "ModuleScript",
+      "length": 920,
+      "adler32": 2452308398
+    },
+    {
+      "path": [
+        "StarterPlayer",
+        "StarterPlayerScripts",
+        "Client",
+        "UI",
+        "LaunchRewardsView"
+      ],
+      "className": "ModuleScript",
+      "length": 3224,
+      "adler32": 1772324450
+    },
+    {
+      "path": [
+        "StarterPlayer",
+        "StarterPlayerScripts",
+        "Client",
+        "UI",
+        "MarketView"
+      ],
+      "className": "ModuleScript",
+      "length": 15554,
+      "adler32": 2132645215
+    },
+    {
+      "path": [
+        "StarterPlayer",
+        "StarterPlayerScripts",
+        "Client",
+        "UI",
+        "MenuRouter"
+      ],
+      "className": "ModuleScript",
+      "length": 7095,
+      "adler32": 3672364003
+    },
+    {
+      "path": [
+        "StarterPlayer",
+        "StarterPlayerScripts",
+        "Client",
+        "UI",
+        "NoviceJourneyView"
+      ],
+      "className": "ModuleScript",
+      "length": 3507,
+      "adler32": 682147201
+    },
+    {
+      "path": [
+        "StarterPlayer",
+        "StarterPlayerScripts",
+        "Client",
+        "UI",
+        "PlayerGuildRosterView"
+      ],
+      "className": "ModuleScript",
+      "length": 5810,
+      "adler32": 1822462144
+    },
+    {
+      "path": [
+        "StarterPlayer",
+        "StarterPlayerScripts",
+        "Client",
+        "UI",
+        "QuestTrackerView"
+      ],
+      "className": "ModuleScript",
+      "length": 10985,
+      "adler32": 3999082394
+    },
+    {
+      "path": [
+        "StarterPlayer",
+        "StarterPlayerScripts",
+        "Client",
+        "UI",
+        "ScrollRetention"
+      ],
+      "className": "ModuleScript",
+      "length": 814,
+      "adler32": 1647321041
+    },
+    {
+      "path": [
+        "StarterPlayer",
+        "StarterPlayerScripts",
+        "Client",
+        "UI",
+        "SettingsControls"
+      ],
+      "className": "ModuleScript",
+      "length": 3555,
+      "adler32": 3733834297
+    },
+    {
+      "path": [
+        "StarterPlayer",
+        "StarterPlayerScripts",
+        "Client",
+        "UI",
+        "SettlementView"
+      ],
+      "className": "ModuleScript",
+      "length": 9955,
+      "adler32": 1747917005
+    },
+    {
+      "path": [
+        "StarterPlayer",
+        "StarterPlayerScripts",
+        "Client",
+        "UI",
+        "SkillAvailability"
+      ],
+      "className": "ModuleScript",
+      "length": 836,
+      "adler32": 3262914914
+    },
+    {
+      "path": [
+        "StarterPlayer",
+        "StarterPlayerScripts",
+        "Client",
+        "UI",
+        "SkillTreeView"
+      ],
+      "className": "ModuleScript",
+      "length": 2907,
+      "adler32": 2570699265
+    },
+    {
+      "path": [
+        "StarterPlayer",
+        "StarterPlayerScripts",
+        "Client",
+        "UI",
+        "SliceUI"
+      ],
+      "className": "ModuleScript",
+      "length": 45182,
+      "adler32": 2516642016
+    },
+    {
+      "path": [
+        "StarterPlayer",
+        "StarterPlayerScripts",
+        "Client",
+        "UI",
+        "StatusPointView"
+      ],
+      "className": "ModuleScript",
+      "length": 4222,
+      "adler32": 4084959650
+    },
+    {
+      "path": [
+        "StarterPlayer",
+        "StarterPlayerScripts",
+        "Client",
+        "UI",
+        "SymbolIcon"
+      ],
+      "className": "ModuleScript",
+      "length": 1729,
+      "adler32": 2501390120
+    },
+    {
+      "path": [
+        "StarterPlayer",
+        "StarterPlayerScripts",
+        "Client",
+        "UI",
+        "TitleView"
+      ],
+      "className": "ModuleScript",
+      "length": 11145,
+      "adler32": 3754581546
+    },
+    {
+      "path": [
+        "ServerScriptService",
+        "Server",
+        "Config",
+        "AdventureEncounters"
+      ],
+      "className": "ModuleScript",
+      "length": 1255,
+      "adler32": 2593098706
+    },
+    {
+      "path": [
+        "ServerScriptService",
+        "Server",
+        "Config",
+        "AdventureEnemyProfiles"
+      ],
+      "className": "ModuleScript",
+      "length": 1176,
+      "adler32": 2167703391
+    },
+    {
+      "path": [
+        "ServerScriptService",
+        "Server",
+        "Config",
+        "AdventureRewards"
+      ],
+      "className": "ModuleScript",
+      "length": 1046,
+      "adler32": 842754169
+    },
+    {
+      "path": [
+        "ServerScriptService",
+        "Server",
+        "Config",
+        "ArchiveHeartCourtLayout"
+      ],
+      "className": "ModuleScript",
+      "length": 350,
+      "adler32": 1535142416
+    },
+    {
+      "path": [
+        "ServerScriptService",
+        "Server",
+        "Config",
+        "ArchiveHeartEncounters"
+      ],
+      "className": "ModuleScript",
+      "length": 844,
+      "adler32": 4181794188
+    },
+    {
+      "path": [
+        "ServerScriptService",
+        "Server",
+        "Config",
+        "AshenCourtLayout"
+      ],
+      "className": "ModuleScript",
+      "length": 430,
+      "adler32": 2328069490
+    },
+    {
+      "path": [
+        "ServerScriptService",
+        "Server",
+        "Config",
+        "CampaignSequence"
+      ],
+      "className": "ModuleScript",
+      "length": 949,
+      "adler32": 992498387
+    },
+    {
+      "path": [
+        "ServerScriptService",
+        "Server",
+        "Config",
+        "ChapterFive"
+      ],
+      "className": "ModuleScript",
+      "length": 11857,
+      "adler32": 4250477008
+    },
+    {
+      "path": [
+        "ServerScriptService",
+        "Server",
+        "Config",
+        "ChapterFour"
+      ],
+      "className": "ModuleScript",
+      "length": 11748,
+      "adler32": 352168815
+    },
+    {
+      "path": [
+        "ServerScriptService",
+        "Server",
+        "Config",
+        "ChapterOne"
+      ],
+      "className": "ModuleScript",
+      "length": 10005,
+      "adler32": 1488414144
+    },
+    {
+      "path": [
+        "ServerScriptService",
+        "Server",
+        "Config",
+        "ChapterSix"
+      ],
+      "className": "ModuleScript",
+      "length": 11736,
+      "adler32": 4084586153
+    },
+    {
+      "path": [
+        "ServerScriptService",
+        "Server",
+        "Config",
+        "ChapterThree"
+      ],
+      "className": "ModuleScript",
+      "length": 9661,
+      "adler32": 2969776125
+    },
+    {
+      "path": [
+        "ServerScriptService",
+        "Server",
+        "Config",
+        "ChapterTwo"
+      ],
+      "className": "ModuleScript",
+      "length": 9470,
+      "adler32": 2639684531
+    },
+    {
+      "path": [
+        "ServerScriptService",
+        "Server",
+        "Config",
+        "Combat"
+      ],
+      "className": "ModuleScript",
+      "length": 1514,
+      "adler32": 3697852642
+    },
+    {
+      "path": [
+        "ServerScriptService",
+        "Server",
+        "Config",
+        "Content"
+      ],
+      "className": "ModuleScript",
+      "length": 25737,
+      "adler32": 4223366497
+    },
+    {
+      "path": [
+        "ServerScriptService",
+        "Server",
+        "Config",
+        "CrosshavenCourtLayout"
+      ],
+      "className": "ModuleScript",
+      "length": 428,
+      "adler32": 3668870651
+    },
+    {
+      "path": [
+        "ServerScriptService",
+        "Server",
+        "Config",
+        "CrosshavenWards"
+      ],
+      "className": "ModuleScript",
+      "length": 754,
+      "adler32": 2864017612
+    },
+    {
+      "path": [
+        "ServerScriptService",
+        "Server",
+        "Config",
+        "GuildLand"
+      ],
+      "className": "ModuleScript",
+      "length": 437,
+      "adler32": 3835665480
+    },
+    {
+      "path": [
+        "ServerScriptService",
+        "Server",
+        "Config",
+        "IronveilMineLayout"
+      ],
+      "className": "ModuleScript",
+      "length": 524,
+      "adler32": 3561793408
+    },
+    {
+      "path": [
+        "ServerScriptService",
+        "Server",
+        "Config",
+        "IronveilTasks"
+      ],
+      "className": "ModuleScript",
+      "length": 1259,
+      "adler32": 1617331972
+    },
+    {
+      "path": [
+        "ServerScriptService",
+        "Server",
+        "Config",
+        "LaunchRewards"
+      ],
+      "className": "ModuleScript",
+      "length": 1006,
+      "adler32": 2485540589
+    },
+    {
+      "path": [
+        "ServerScriptService",
+        "Server",
+        "Config",
+        "Market"
+      ],
+      "className": "ModuleScript",
+      "length": 1096,
+      "adler32": 1382240684
+    },
+    {
+      "path": [
+        "ServerScriptService",
+        "Server",
+        "Config",
+        "NoviceChapter"
+      ],
+      "className": "ModuleScript",
+      "length": 3216,
+      "adler32": 861356154
+    },
+    {
+      "path": [
+        "ServerScriptService",
+        "Server",
+        "Config",
+        "NoviceLessons"
+      ],
+      "className": "ModuleScript",
+      "length": 799,
+      "adler32": 1155799284
+    },
+    {
+      "path": [
+        "ServerScriptService",
+        "Server",
+        "Config",
+        "NoviceTrials"
+      ],
+      "className": "ModuleScript",
+      "length": 796,
+      "adler32": 3156893842
+    },
+    {
+      "path": [
+        "ServerScriptService",
+        "Server",
+        "Config",
+        "ReleaseContent"
+      ],
+      "className": "ModuleScript",
+      "length": 680,
+      "adler32": 134086095
+    },
+    {
+      "path": [
+        "ServerScriptService",
+        "Server",
+        "Config",
+        "Runtime"
+      ],
+      "className": "ModuleScript",
+      "length": 669,
+      "adler32": 3717850962
+    },
+    {
+      "path": [
+        "ServerScriptService",
+        "Server",
+        "Config",
+        "TowerCourtLayout"
+      ],
+      "className": "ModuleScript",
+      "length": 426,
+      "adler32": 3871704262
+    },
+    {
+      "path": [
+        "ServerScriptService",
+        "Server",
+        "Config",
+        "TowerGuardian"
+      ],
+      "className": "ModuleScript",
+      "length": 267,
+      "adler32": 1102404899
+    },
+    {
+      "path": [
+        "ServerScriptService",
+        "Server",
+        "Config",
+        "TowerLessons"
+      ],
+      "className": "ModuleScript",
+      "length": 810,
+      "adler32": 4069037205
+    },
+    {
+      "path": [
+        "ServerScriptService",
+        "Server",
+        "Persistence",
+        "MarketCloud"
+      ],
+      "className": "ModuleScript",
+      "length": 4615,
+      "adler32": 1883320399
+    },
+    {
+      "path": [
+        "ServerScriptService",
+        "Server",
+        "Persistence",
+        "MemoryStore"
+      ],
+      "className": "ModuleScript",
+      "length": 500,
+      "adler32": 4147358537
+    },
+    {
+      "path": [
+        "ServerScriptService",
+        "Server",
+        "Persistence",
+        "RobloxStore"
+      ],
+      "className": "ModuleScript",
+      "length": 1256,
+      "adler32": 3194793462
+    },
+    {
+      "path": [
+        "ServerScriptService",
+        "Server",
+        "ServerBootstrap"
+      ],
+      "className": "Script",
+      "length": 38443,
+      "adler32": 1510106046
+    },
+    {
+      "path": [
+        "ServerScriptService",
+        "Server",
+        "Services",
+        "AdventureCombatBridge"
+      ],
+      "className": "ModuleScript",
+      "length": 5901,
+      "adler32": 812621615
+    },
+    {
+      "path": [
+        "ServerScriptService",
+        "Server",
+        "Services",
+        "AdventureEncounterPreview"
+      ],
+      "className": "ModuleScript",
+      "length": 5720,
+      "adler32": 1448497793
+    },
+    {
+      "path": [
+        "ServerScriptService",
+        "Server",
+        "Services",
+        "AdventureEncounterSession"
+      ],
+      "className": "ModuleScript",
+      "length": 3559,
+      "adler32": 3967652023
+    },
+    {
+      "path": [
+        "ServerScriptService",
+        "Server",
+        "Services",
+        "AdventureEnemyKit"
+      ],
+      "className": "ModuleScript",
+      "length": 64294,
+      "adler32": 2401531793
+    },
+    {
+      "path": [
+        "ServerScriptService",
+        "Server",
+        "Services",
+        "AdventureLocomotion"
+      ],
+      "className": "ModuleScript",
+      "length": 2707,
+      "adler32": 832927639
+    },
+    {
+      "path": [
+        "ServerScriptService",
+        "Server",
+        "Services",
+        "AdventureMapKit"
+      ],
+      "className": "ModuleScript",
+      "length": 20241,
+      "adler32": 1811390580
+    },
+    {
+      "path": [
+        "ServerScriptService",
+        "Server",
+        "Services",
+        "AdventureNavigation"
+      ],
+      "className": "ModuleScript",
+      "length": 2263,
+      "adler32": 1491068618
+    },
+    {
+      "path": [
+        "ServerScriptService",
+        "Server",
+        "Services",
+        "AdventurePropKit"
+      ],
+      "className": "ModuleScript",
+      "length": 41453,
+      "adler32": 954396490
+    },
+    {
+      "path": [
+        "ServerScriptService",
+        "Server",
+        "Services",
+        "AdventureRewardAdapter"
+      ],
+      "className": "ModuleScript",
+      "length": 3052,
+      "adler32": 1144387784
+    },
+    {
+      "path": [
+        "ServerScriptService",
+        "Server",
+        "Services",
+        "AdventurerService"
+      ],
+      "className": "ModuleScript",
+      "length": 1257,
+      "adler32": 7580996
+    },
+    {
+      "path": [
+        "ServerScriptService",
+        "Server",
+        "Services",
+        "AdventureScene"
+      ],
+      "className": "ModuleScript",
+      "length": 2024,
+      "adler32": 3372658869
+    },
+    {
+      "path": [
+        "ServerScriptService",
+        "Server",
+        "Services",
+        "AnalyticsAdapter"
+      ],
+      "className": "ModuleScript",
+      "length": 1688,
+      "adler32": 1133395955
+    },
+    {
+      "path": [
+        "ServerScriptService",
+        "Server",
+        "Services",
+        "ArchiveHeartArena"
+      ],
+      "className": "ModuleScript",
+      "length": 13273,
+      "adler32": 4075152477
+    },
+    {
+      "path": [
+        "ServerScriptService",
+        "Server",
+        "Services",
+        "ArchiveHeartBossKit"
+      ],
+      "className": "ModuleScript",
+      "length": 19517,
+      "adler32": 4145442997
+    },
+    {
+      "path": [
+        "ServerScriptService",
+        "Server",
+        "Services",
+        "ArchiveHeartCourtArt"
+      ],
+      "className": "ModuleScript",
+      "length": 2196,
+      "adler32": 184611851
+    },
+    {
+      "path": [
+        "ServerScriptService",
+        "Server",
+        "Services",
+        "ArchiveHeartStoryKit"
+      ],
+      "className": "ModuleScript",
+      "length": 111459,
+      "adler32": 2929769232
+    },
+    {
+      "path": [
+        "ServerScriptService",
+        "Server",
+        "Services",
+        "ArchiveHeartWorld"
+      ],
+      "className": "ModuleScript",
+      "length": 24190,
+      "adler32": 2458153549
+    },
+    {
+      "path": [
+        "ServerScriptService",
+        "Server",
+        "Services",
+        "ArtKit"
+      ],
+      "className": "ModuleScript",
+      "length": 11037,
+      "adler32": 3836339821
+    },
+    {
+      "path": [
+        "ServerScriptService",
+        "Server",
+        "Services",
+        "AshenCharacterKit"
+      ],
+      "className": "ModuleScript",
+      "length": 25441,
+      "adler32": 1707045886
+    },
+    {
+      "path": [
+        "ServerScriptService",
+        "Server",
+        "Services",
+        "AshenCourtArt"
+      ],
+      "className": "ModuleScript",
+      "length": 2350,
+      "adler32": 813181431
+    },
+    {
+      "path": [
+        "ServerScriptService",
+        "Server",
+        "Services",
+        "AshenStoryKit"
+      ],
+      "className": "ModuleScript",
+      "length": 69607,
+      "adler32": 4171220702
+    },
+    {
+      "path": [
+        "ServerScriptService",
+        "Server",
+        "Services",
+        "AshenWorld"
+      ],
+      "className": "ModuleScript",
+      "length": 21742,
+      "adler32": 469723851
+    },
+    {
+      "path": [
+        "ServerScriptService",
+        "Server",
+        "Services",
+        "BorrowedPathFactory"
+      ],
+      "className": "ModuleScript",
+      "length": 1475,
+      "adler32": 2054430818
+    },
+    {
+      "path": [
+        "ServerScriptService",
+        "Server",
+        "Services",
+        "CampaignService"
+      ],
+      "className": "ModuleScript",
+      "length": 7752,
+      "adler32": 3240749648
+    },
+    {
+      "path": [
+        "ServerScriptService",
+        "Server",
+        "Services",
+        "CampaignWorld"
+      ],
+      "className": "ModuleScript",
+      "length": 13101,
+      "adler32": 1839485956
+    },
+    {
+      "path": [
+        "ServerScriptService",
+        "Server",
+        "Services",
+        "CentralCityWorld"
+      ],
+      "className": "ModuleScript",
+      "length": 20045,
+      "adler32": 2392116439
+    },
+    {
+      "path": [
+        "ServerScriptService",
+        "Server",
+        "Services",
+        "CharacterAppearance",
+        "AppearanceAssetRegistry"
+      ],
+      "className": "ModuleScript",
+      "length": 1539,
+      "adler32": 1433998945
+    },
+    {
+      "path": [
+        "ServerScriptService",
+        "Server",
+        "Services",
+        "CharacterAppearance",
+        "AppearanceService"
+      ],
+      "className": "ModuleScript",
+      "length": 4035,
+      "adler32": 2120451713
+    },
+    {
+      "path": [
+        "ServerScriptService",
+        "Server",
+        "Services",
+        "CharacterAppearance",
+        "PreviewPolicy"
+      ],
+      "className": "ModuleScript",
+      "length": 807,
+      "adler32": 3454601092
+    },
+    {
+      "path": [
+        "ServerScriptService",
+        "Server",
+        "Services",
+        "CharacterAppearance",
+        "RigAssemblyService"
+      ],
+      "className": "ModuleScript",
+      "length": 287,
+      "adler32": 4094847613
+    },
+    {
+      "path": [
+        "ServerScriptService",
+        "Server",
+        "Services",
+        "CityCharacterKit"
+      ],
+      "className": "ModuleScript",
+      "length": 38775,
+      "adler32": 670619807
+    },
+    {
+      "path": [
+        "ServerScriptService",
+        "Server",
+        "Services",
+        "CityInteriorKit"
+      ],
+      "className": "ModuleScript",
+      "length": 54127,
+      "adler32": 1851405323
+    },
+    {
+      "path": [
+        "ServerScriptService",
+        "Server",
+        "Services",
+        "CityKit"
+      ],
+      "className": "ModuleScript",
+      "length": 2726,
+      "adler32": 151268740
+    },
+    {
+      "path": [
+        "ServerScriptService",
+        "Server",
+        "Services",
+        "CityLandscape"
+      ],
+      "className": "ModuleScript",
+      "length": 1500,
+      "adler32": 646902810
+    },
+    {
+      "path": [
+        "ServerScriptService",
+        "Server",
+        "Services",
+        "CityLandscapeData"
+      ],
+      "className": "ModuleScript",
+      "length": 308183,
+      "adler32": 2423742944
+    },
+    {
+      "path": [
+        "ServerScriptService",
+        "Server",
+        "Services",
+        "CityNpcAppearance"
+      ],
+      "className": "ModuleScript",
+      "length": 2973,
+      "adler32": 1245280444
+    },
+    {
+      "path": [
+        "ServerScriptService",
+        "Server",
+        "Services",
+        "CityWorld"
+      ],
+      "className": "ModuleScript",
+      "length": 5432,
+      "adler32": 2459260508
+    },
+    {
+      "path": [
+        "ServerScriptService",
+        "Server",
+        "Services",
+        "CivicCityWorld"
+      ],
+      "className": "ModuleScript",
+      "length": 6377,
+      "adler32": 4030811546
+    },
+    {
+      "path": [
+        "ServerScriptService",
+        "Server",
+        "Services",
+        "CivicDistrictKit"
+      ],
+      "className": "ModuleScript",
+      "length": 7975,
+      "adler32": 595888306
+    },
+    {
+      "path": [
+        "ServerScriptService",
+        "Server",
+        "Services",
+        "CivicLandmarkKit"
+      ],
+      "className": "ModuleScript",
+      "length": 66304,
+      "adler32": 2844725811
+    },
+    {
+      "path": [
+        "ServerScriptService",
+        "Server",
+        "Services",
+        "CivicServiceKit"
+      ],
+      "className": "ModuleScript",
+      "length": 1930,
+      "adler32": 1039645623
+    },
+    {
+      "path": [
+        "ServerScriptService",
+        "Server",
+        "Services",
+        "Class3ProofReceiptAdapter"
+      ],
+      "className": "ModuleScript",
+      "length": 4470,
+      "adler32": 709373672
+    },
+    {
+      "path": [
+        "ServerScriptService",
+        "Server",
+        "Services",
+        "CombatLineOfSight"
+      ],
+      "className": "ModuleScript",
+      "length": 711,
+      "adler32": 3138778687
+    },
+    {
+      "path": [
+        "ServerScriptService",
+        "Server",
+        "Services",
+        "CombatService"
+      ],
+      "className": "ModuleScript",
+      "length": 32549,
+      "adler32": 787659595
+    },
+    {
+      "path": [
+        "ServerScriptService",
+        "Server",
+        "Services",
+        "CosmeticVisualKit"
+      ],
+      "className": "ModuleScript",
+      "length": 77,
+      "adler32": 1296768074
+    },
+    {
+      "path": [
+        "ServerScriptService",
+        "Server",
+        "Services",
+        "CrosshavenCourtArt"
+      ],
+      "className": "ModuleScript",
+      "length": 2173,
+      "adler32": 1538779070
+    },
+    {
+      "path": [
+        "ServerScriptService",
+        "Server",
+        "Services",
+        "CrosshavenStoryKit"
+      ],
+      "className": "ModuleScript",
+      "length": 94888,
+      "adler32": 4100207702
+    },
+    {
+      "path": [
+        "ServerScriptService",
+        "Server",
+        "Services",
+        "CrosshavenWorld"
+      ],
+      "className": "ModuleScript",
+      "length": 29538,
+      "adler32": 1102857702
+    },
+    {
+      "path": [
+        "ServerScriptService",
+        "Server",
+        "Services",
+        "CrownfordServiceKit"
+      ],
+      "className": "ModuleScript",
+      "length": 1507,
+      "adler32": 762388117
+    },
+    {
+      "path": [
+        "ServerScriptService",
+        "Server",
+        "Services",
+        "DispatchService"
+      ],
+      "className": "ModuleScript",
+      "length": 3627,
+      "adler32": 2991056478
+    },
+    {
+      "path": [
+        "ServerScriptService",
+        "Server",
+        "Services",
+        "EconomyService"
+      ],
+      "className": "ModuleScript",
+      "length": 2246,
+      "adler32": 2277241936
+    },
+    {
+      "path": [
+        "ServerScriptService",
+        "Server",
+        "Services",
+        "EnemyAppearance"
+      ],
+      "className": "ModuleScript",
+      "length": 8746,
+      "adler32": 3845565155
+    },
+    {
+      "path": [
+        "ServerScriptService",
+        "Server",
+        "Services",
+        "EnemyArticulation"
+      ],
+      "className": "ModuleScript",
+      "length": 4995,
+      "adler32": 2976339925
+    },
+    {
+      "path": [
+        "ServerScriptService",
+        "Server",
+        "Services",
+        "EnemyService"
+      ],
+      "className": "ModuleScript",
+      "length": 2775,
+      "adler32": 301246787
+    },
+    {
+      "path": [
+        "ServerScriptService",
+        "Server",
+        "Services",
+        "EquipmentService"
+      ],
+      "className": "ModuleScript",
+      "length": 2670,
+      "adler32": 3789401271
+    },
+    {
+      "path": [
+        "ServerScriptService",
+        "Server",
+        "Services",
+        "EscortActor"
+      ],
+      "className": "ModuleScript",
+      "length": 3665,
+      "adler32": 4097581536
+    },
+    {
+      "path": [
+        "ServerScriptService",
+        "Server",
+        "Services",
+        "ExpansionService"
+      ],
+      "className": "ModuleScript",
+      "length": 13965,
+      "adler32": 1687223691
+    },
+    {
+      "path": [
+        "ServerScriptService",
+        "Server",
+        "Services",
+        "ExpansionWorld"
+      ],
+      "className": "ModuleScript",
+      "length": 9501,
+      "adler32": 3520477263
+    },
+    {
+      "path": [
+        "ServerScriptService",
+        "Server",
+        "Services",
+        "FriendlyCityNpcs"
+      ],
+      "className": "ModuleScript",
+      "length": 3012,
+      "adler32": 57403923
+    },
+    {
+      "path": [
+        "ServerScriptService",
+        "Server",
+        "Services",
+        "FriendlyNpcKit"
+      ],
+      "className": "ModuleScript",
+      "length": 27031,
+      "adler32": 1112360179
+    },
+    {
+      "path": [
+        "ServerScriptService",
+        "Server",
+        "Services",
+        "FurnitureWorld"
+      ],
+      "className": "ModuleScript",
+      "length": 1573,
+      "adler32": 3379825240
+    },
+    {
+      "path": [
+        "ServerScriptService",
+        "Server",
+        "Services",
+        "GuildHallWorld"
+      ],
+      "className": "ModuleScript",
+      "length": 1316,
+      "adler32": 1964165612
+    },
+    {
+      "path": [
+        "ServerScriptService",
+        "Server",
+        "Services",
+        "GuildIdentityWorld"
+      ],
+      "className": "ModuleScript",
+      "length": 3670,
+      "adler32": 2314928897
+    },
+    {
+      "path": [
+        "ServerScriptService",
+        "Server",
+        "Services",
+        "GuildLandService"
+      ],
+      "className": "ModuleScript",
+      "length": 1087,
+      "adler32": 1884580969
+    },
+    {
+      "path": [
+        "ServerScriptService",
+        "Server",
+        "Services",
+        "GuildLandWorld"
+      ],
+      "className": "ModuleScript",
+      "length": 3151,
+      "adler32": 486550570
+    },
+    {
+      "path": [
+        "ServerScriptService",
+        "Server",
+        "Services",
+        "HeroAppearance"
+      ],
+      "className": "ModuleScript",
+      "length": 2256,
+      "adler32": 3797147949
+    },
+    {
+      "path": [
+        "ServerScriptService",
+        "Server",
+        "Services",
+        "HeroMentorReceiptAdapter"
+      ],
+      "className": "ModuleScript",
+      "length": 2264,
+      "adler32": 1045702657
+    },
+    {
+      "path": [
+        "ServerScriptService",
+        "Server",
+        "Services",
+        "HeroMentorWorld"
+      ],
+      "className": "ModuleScript",
+      "length": 12472,
+      "adler32": 3329907996
+    },
+    {
+      "path": [
+        "ServerScriptService",
+        "Server",
+        "Services",
+        "HeroRig"
+      ],
+      "className": "ModuleScript",
+      "length": 7864,
+      "adler32": 2764945563
+    },
+    {
+      "path": [
+        "ServerScriptService",
+        "Server",
+        "Services",
+        "HeroService"
+      ],
+      "className": "ModuleScript",
+      "length": 20319,
+      "adler32": 1841475156
+    },
+    {
+      "path": [
+        "ServerScriptService",
+        "Server",
+        "Services",
+        "HeroVisualKit"
+      ],
+      "className": "ModuleScript",
+      "length": 74717,
+      "adler32": 14166300
+    },
+    {
+      "path": [
+        "ServerScriptService",
+        "Server",
+        "Services",
+        "HumanPartyRuntime"
+      ],
+      "className": "ModuleScript",
+      "length": 3670,
+      "adler32": 2113481189
+    },
+    {
+      "path": [
+        "ServerScriptService",
+        "Server",
+        "Services",
+        "IronveilCharacterKit"
+      ],
+      "className": "ModuleScript",
+      "length": 20998,
+      "adler32": 1932740661
+    },
+    {
+      "path": [
+        "ServerScriptService",
+        "Server",
+        "Services",
+        "IronveilMineArt"
+      ],
+      "className": "ModuleScript",
+      "length": 2352,
+      "adler32": 2236230253
+    },
+    {
+      "path": [
+        "ServerScriptService",
+        "Server",
+        "Services",
+        "IronveilStoryKit"
+      ],
+      "className": "ModuleScript",
+      "length": 79023,
+      "adler32": 3306420104
+    },
+    {
+      "path": [
+        "ServerScriptService",
+        "Server",
+        "Services",
+        "IronveilWorld"
+      ],
+      "className": "ModuleScript",
+      "length": 21371,
+      "adler32": 215841761
+    },
+    {
+      "path": [
+        "ServerScriptService",
+        "Server",
+        "Services",
+        "IslandScenery"
+      ],
+      "className": "ModuleScript",
+      "length": 6302,
+      "adler32": 3340121753
+    },
+    {
+      "path": [
+        "ServerScriptService",
+        "Server",
+        "Services",
+        "IslandVisits"
+      ],
+      "className": "ModuleScript",
+      "length": 9479,
+      "adler32": 3288638241
+    },
+    {
+      "path": [
+        "ServerScriptService",
+        "Server",
+        "Services",
+        "MarketRuntime"
+      ],
+      "className": "ModuleScript",
+      "length": 6891,
+      "adler32": 3342565721
+    },
+    {
+      "path": [
+        "ServerScriptService",
+        "Server",
+        "Services",
+        "MarketService"
+      ],
+      "className": "ModuleScript",
+      "length": 8340,
+      "adler32": 412491546
+    },
+    {
+      "path": [
+        "ServerScriptService",
+        "Server",
+        "Services",
+        "NetworkService"
+      ],
+      "className": "ModuleScript",
+      "length": 7106,
+      "adler32": 3430722193
+    },
+    {
+      "path": [
+        "ServerScriptService",
+        "Server",
+        "Services",
+        "NoviceCharacterKit"
+      ],
+      "className": "ModuleScript",
+      "length": 23827,
+      "adler32": 144601214
+    },
+    {
+      "path": [
+        "ServerScriptService",
+        "Server",
+        "Services",
+        "NoviceCourseWorld"
+      ],
+      "className": "ModuleScript",
+      "length": 15801,
+      "adler32": 4020155892
+    },
+    {
+      "path": [
+        "ServerScriptService",
+        "Server",
+        "Services",
+        "NoviceLessonFactory"
+      ],
+      "className": "ModuleScript",
+      "length": 1209,
+      "adler32": 566280406
+    },
+    {
+      "path": [
+        "ServerScriptService",
+        "Server",
+        "Services",
+        "NoviceReceiptAdapter"
+      ],
+      "className": "ModuleScript",
+      "length": 4015,
+      "adler32": 3567098762
+    },
+    {
+      "path": [
+        "ServerScriptService",
+        "Server",
+        "Services",
+        "NoviceRoadArt"
+      ],
+      "className": "ModuleScript",
+      "length": 29118,
+      "adler32": 2816324500
+    },
+    {
+      "path": [
+        "ServerScriptService",
+        "Server",
+        "Services",
+        "NoviceStoryService"
+      ],
+      "className": "ModuleScript",
+      "length": 7025,
+      "adler32": 1513998593
+    },
+    {
+      "path": [
+        "ServerScriptService",
+        "Server",
+        "Services",
+        "NoviceTrialArena"
+      ],
+      "className": "ModuleScript",
+      "length": 11754,
+      "adler32": 163891585
+    },
+    {
+      "path": [
+        "ServerScriptService",
+        "Server",
+        "Services",
+        "NoviceTrialArt"
+      ],
+      "className": "ModuleScript",
+      "length": 30993,
+      "adler32": 2178287210
+    },
+    {
+      "path": [
+        "ServerScriptService",
+        "Server",
+        "Services",
+        "NoviceTrialManager"
+      ],
+      "className": "ModuleScript",
+      "length": 3576,
+      "adler32": 1381174065
+    },
+    {
+      "path": [
+        "ServerScriptService",
+        "Server",
+        "Services",
+        "PartyService"
+      ],
+      "className": "ModuleScript",
+      "length": 949,
+      "adler32": 289425029
+    },
+    {
+      "path": [
+        "ServerScriptService",
+        "Server",
+        "Services",
+        "PermanentPassPrompt"
+      ],
+      "className": "ModuleScript",
+      "length": 2237,
+      "adler32": 83828491
+    },
+    {
+      "path": [
+        "ServerScriptService",
+        "Server",
+        "Services",
+        "PermanentPassRestore"
+      ],
+      "className": "ModuleScript",
+      "length": 1768,
+      "adler32": 3978193308
+    },
+    {
+      "path": [
+        "ServerScriptService",
+        "Server",
+        "Services",
+        "PermanentPassRuntime"
+      ],
+      "className": "ModuleScript",
+      "length": 2732,
+      "adler32": 2989744768
+    },
+    {
+      "path": [
+        "ServerScriptService",
+        "Server",
+        "Services",
+        "PersonalGuildService"
+      ],
+      "className": "ModuleScript",
+      "length": 1735,
+      "adler32": 4163332768
+    },
+    {
+      "path": [
+        "ServerScriptService",
+        "Server",
+        "Services",
+        "PlayerDataService"
+      ],
+      "className": "ModuleScript",
+      "length": 20159,
+      "adler32": 2478387632
+    },
+    {
+      "path": [
+        "ServerScriptService",
+        "Server",
+        "Services",
+        "PlayerGuildStoreKey"
+      ],
+      "className": "ModuleScript",
+      "length": 788,
+      "adler32": 358616773
+    },
+    {
+      "path": [
+        "ServerScriptService",
+        "Server",
+        "Services",
+        "PlayerGuildStoreProvider"
+      ],
+      "className": "ModuleScript",
+      "length": 804,
+      "adler32": 548806398
+    },
+    {
+      "path": [
+        "ServerScriptService",
+        "Server",
+        "Services",
+        "PurchaseService"
+      ],
+      "className": "ModuleScript",
+      "length": 896,
+      "adler32": 2906734781
+    },
+    {
+      "path": [
+        "ServerScriptService",
+        "Server",
+        "Services",
+        "QuestService"
+      ],
+      "className": "ModuleScript",
+      "length": 2899,
+      "adler32": 3402755416
+    },
+    {
+      "path": [
+        "ServerScriptService",
+        "Server",
+        "Services",
+        "RegionalCombat"
+      ],
+      "className": "ModuleScript",
+      "length": 3831,
+      "adler32": 312739225
+    },
+    {
+      "path": [
+        "ServerScriptService",
+        "Server",
+        "Services",
+        "RegionalEvasion"
+      ],
+      "className": "ModuleScript",
+      "length": 1661,
+      "adler32": 1142694100
+    },
+    {
+      "path": [
+        "ServerScriptService",
+        "Server",
+        "Services",
+        "RegionalWorld"
+      ],
+      "className": "ModuleScript",
+      "length": 5842,
+      "adler32": 2346180628
+    },
+    {
+      "path": [
+        "ServerScriptService",
+        "Server",
+        "Services",
+        "SettlementService"
+      ],
+      "className": "ModuleScript",
+      "length": 6859,
+      "adler32": 3182717711
+    },
+    {
+      "path": [
+        "ServerScriptService",
+        "Server",
+        "Services",
+        "SharedCombatCoordinator"
+      ],
+      "className": "ModuleScript",
+      "length": 11809,
+      "adler32": 3400102624
+    },
+    {
+      "path": [
+        "ServerScriptService",
+        "Server",
+        "Services",
+        "SharedCombatRewards"
+      ],
+      "className": "ModuleScript",
+      "length": 4588,
+      "adler32": 2251319131
+    },
+    {
+      "path": [
+        "ServerScriptService",
+        "Server",
+        "Services",
+        "SharedEncounterRuntime"
+      ],
+      "className": "ModuleScript",
+      "length": 6739,
+      "adler32": 1542941152
+    },
+    {
+      "path": [
+        "ServerScriptService",
+        "Server",
+        "Services",
+        "SharedPvERewardAdapter"
+      ],
+      "className": "ModuleScript",
+      "length": 5803,
+      "adler32": 3038643979
+    },
+    {
+      "path": [
+        "ServerScriptService",
+        "Server",
+        "Services",
+        "SharedPvESettlementStore"
+      ],
+      "className": "ModuleScript",
+      "length": 3871,
+      "adler32": 1721917077
+    },
+    {
+      "path": [
+        "ServerScriptService",
+        "Server",
+        "Services",
+        "StatusPointService"
+      ],
+      "className": "ModuleScript",
+      "length": 1903,
+      "adler32": 2254341155
+    },
+    {
+      "path": [
+        "ServerScriptService",
+        "Server",
+        "Services",
+        "TowerCharacterKit"
+      ],
+      "className": "ModuleScript",
+      "length": 26244,
+      "adler32": 795632428
+    },
+    {
+      "path": [
+        "ServerScriptService",
+        "Server",
+        "Services",
+        "TowerCourtArt"
+      ],
+      "className": "ModuleScript",
+      "length": 2158,
+      "adler32": 1236132252
+    },
+    {
+      "path": [
+        "ServerScriptService",
+        "Server",
+        "Services",
+        "TowerGuardianFactory"
+      ],
+      "className": "ModuleScript",
+      "length": 1026,
+      "adler32": 990215073
+    },
+    {
+      "path": [
+        "ServerScriptService",
+        "Server",
+        "Services",
+        "TowerLessonArena"
+      ],
+      "className": "ModuleScript",
+      "length": 8410,
+      "adler32": 1021238627
+    },
+    {
+      "path": [
+        "ServerScriptService",
+        "Server",
+        "Services",
+        "TowerStoryKit"
+      ],
+      "className": "ModuleScript",
+      "length": 124765,
+      "adler32": 3882086016
+    },
+    {
+      "path": [
+        "ServerScriptService",
+        "Server",
+        "Services",
+        "TowerWorld"
+      ],
+      "className": "ModuleScript",
+      "length": 22357,
+      "adler32": 925110685
+    },
+    {
+      "path": [
+        "ServerScriptService",
+        "Server",
+        "Services",
+        "TravelService"
+      ],
+      "className": "ModuleScript",
+      "length": 24818,
+      "adler32": 3251625571
+    },
+    {
+      "path": [
+        "ServerScriptService",
+        "Server",
+        "Services",
+        "WardrobeVisuals"
+      ],
+      "className": "ModuleScript",
+      "length": 2042,
+      "adler32": 250983699
+    },
+    {
+      "path": [
+        "ServerScriptService",
+        "Server",
+        "Services",
+        "WeaponVisuals"
+      ],
+      "className": "ModuleScript",
+      "length": 8056,
+      "adler32": 1697398307
+    },
+    {
+      "path": [
+        "ServerScriptService",
+        "Server",
+        "Services",
+        "WorldQualityAssets"
+      ],
+      "className": "ModuleScript",
+      "length": 120060,
+      "adler32": 2498425751
+    },
+    {
+      "path": [
+        "ServerScriptService",
+        "Server",
+        "Services",
+        "WorldQualitySlice"
+      ],
+      "className": "ModuleScript",
+      "length": 12395,
+      "adler32": 645388345
+    },
+    {
+      "path": [
+        "ServerScriptService",
+        "Server",
+        "Services",
+        "WorldService"
+      ],
+      "className": "ModuleScript",
+      "length": 18798,
+      "adler32": 593676816
+    },
+    {
+      "path": [
+        "ServerScriptService",
+        "Server",
+        "Systems",
+        "AdventureEnemyBrain"
+      ],
+      "className": "ModuleScript",
+      "length": 4256,
+      "adler32": 3064094835
+    },
+    {
+      "path": [
+        "ServerScriptService",
+        "Server",
+        "Systems",
+        "AdventureEvasion"
+      ],
+      "className": "ModuleScript",
+      "length": 1705,
+      "adler32": 2688292242
+    },
+    {
+      "path": [
+        "ServerScriptService",
+        "Server",
+        "Systems",
+        "AdventureFieldGuide"
+      ],
+      "className": "ModuleScript",
+      "length": 1932,
+      "adler32": 2844558898
+    },
+    {
+      "path": [
+        "ServerScriptService",
+        "Server",
+        "Systems",
+        "AdventureLifecycle"
+      ],
+      "className": "ModuleScript",
+      "length": 3448,
+      "adler32": 413763434
+    },
+    {
+      "path": [
+        "ServerScriptService",
+        "Server",
+        "Systems",
+        "AdventurePatterns"
+      ],
+      "className": "ModuleScript",
+      "length": 3508,
+      "adler32": 1948951254
+    },
+    {
+      "path": [
+        "ServerScriptService",
+        "Server",
+        "Systems",
+        "AdventureStats"
+      ],
+      "className": "ModuleScript",
+      "length": 570,
+      "adler32": 2675820385
+    },
+    {
+      "path": [
+        "ServerScriptService",
+        "Server",
+        "Systems",
+        "AnalyticsContract"
+      ],
+      "className": "ModuleScript",
+      "length": 957,
+      "adler32": 1003840641
+    },
+    {
+      "path": [
+        "ServerScriptService",
+        "Server",
+        "Systems",
+        "ArchiveHeartCombat"
+      ],
+      "className": "ModuleScript",
+      "length": 3765,
+      "adler32": 1234253249
+    },
+    {
+      "path": [
+        "ServerScriptService",
+        "Server",
+        "Systems",
+        "ArchiveHeartEncounter"
+      ],
+      "className": "ModuleScript",
+      "length": 6953,
+      "adler32": 778806542
+    },
+    {
+      "path": [
+        "ServerScriptService",
+        "Server",
+        "Systems",
+        "BorrowedPathSession"
+      ],
+      "className": "ModuleScript",
+      "length": 6986,
+      "adler32": 293712869
+    },
+    {
+      "path": [
+        "ServerScriptService",
+        "Server",
+        "Systems",
+        "BossPatterns"
+      ],
+      "className": "ModuleScript",
+      "length": 1510,
+      "adler32": 3949597532
+    },
+    {
+      "path": [
+        "ServerScriptService",
+        "Server",
+        "Systems",
+        "CityResidentRoute"
+      ],
+      "className": "ModuleScript",
+      "length": 5840,
+      "adler32": 1469805219
+    },
+    {
+      "path": [
+        "ServerScriptService",
+        "Server",
+        "Systems",
+        "Class3Proof"
+      ],
+      "className": "ModuleScript",
+      "length": 5237,
+      "adler32": 1025722654
+    },
+    {
+      "path": [
+        "ServerScriptService",
+        "Server",
+        "Systems",
+        "CombatAbilities"
+      ],
+      "className": "ModuleScript",
+      "length": 3086,
+      "adler32": 1111175816
+    },
+    {
+      "path": [
+        "ServerScriptService",
+        "Server",
+        "Systems",
+        "CombatDamage"
+      ],
+      "className": "ModuleScript",
+      "length": 1406,
+      "adler32": 4068530533
+    },
+    {
+      "path": [
+        "ServerScriptService",
+        "Server",
+        "Systems",
+        "CombatRewards"
+      ],
+      "className": "ModuleScript",
+      "length": 1858,
+      "adler32": 2315947691
+    },
+    {
+      "path": [
+        "ServerScriptService",
+        "Server",
+        "Systems",
+        "CombatSpace"
+      ],
+      "className": "ModuleScript",
+      "length": 1203,
+      "adler32": 2116917865
+    },
+    {
+      "path": [
+        "ServerScriptService",
+        "Server",
+        "Systems",
+        "CombatStats"
+      ],
+      "className": "ModuleScript",
+      "length": 1686,
+      "adler32": 477055790
+    },
+    {
+      "path": [
+        "ServerScriptService",
+        "Server",
+        "Systems",
+        "CombatTargeting"
+      ],
+      "className": "ModuleScript",
+      "length": 1887,
+      "adler32": 365986889
+    },
+    {
+      "path": [
+        "ServerScriptService",
+        "Server",
+        "Systems",
+        "CombatValidator"
+      ],
+      "className": "ModuleScript",
+      "length": 1614,
+      "adler32": 2380804711
+    },
+    {
+      "path": [
+        "ServerScriptService",
+        "Server",
+        "Systems",
+        "Commands"
+      ],
+      "className": "ModuleScript",
+      "length": 7904,
+      "adler32": 432994306
+    },
+    {
+      "path": [
+        "ServerScriptService",
+        "Server",
+        "Systems",
+        "ContentValidator"
+      ],
+      "className": "ModuleScript",
+      "length": 6505,
+      "adler32": 3285238939
+    },
+    {
+      "path": [
+        "ServerScriptService",
+        "Server",
+        "Systems",
+        "EnemyLifecycle"
+      ],
+      "className": "ModuleScript",
+      "length": 253,
+      "adler32": 1502370312
+    },
+    {
+      "path": [
+        "ServerScriptService",
+        "Server",
+        "Systems",
+        "EnemyProfiles"
+      ],
+      "className": "ModuleScript",
+      "length": 1530,
+      "adler32": 493221168
+    },
+    {
+      "path": [
+        "ServerScriptService",
+        "Server",
+        "Systems",
+        "EscortRun"
+      ],
+      "className": "ModuleScript",
+      "length": 3796,
+      "adler32": 1032338276
+    },
+    {
+      "path": [
+        "ServerScriptService",
+        "Server",
+        "Systems",
+        "ExpansionSchema"
+      ],
+      "className": "ModuleScript",
+      "length": 6040,
+      "adler32": 864286857
+    },
+    {
+      "path": [
+        "ServerScriptService",
+        "Server",
+        "Systems",
+        "HeroMentorTrial"
+      ],
+      "className": "ModuleScript",
+      "length": 9519,
+      "adler32": 387071957
+    },
+    {
+      "path": [
+        "ServerScriptService",
+        "Server",
+        "Systems",
+        "HeroPresentation"
+      ],
+      "className": "ModuleScript",
+      "length": 2535,
+      "adler32": 2112712401
+    },
+    {
+      "path": [
+        "ServerScriptService",
+        "Server",
+        "Systems",
+        "HeroTactics"
+      ],
+      "className": "ModuleScript",
+      "length": 2271,
+      "adler32": 3911463310
+    },
+    {
+      "path": [
+        "ServerScriptService",
+        "Server",
+        "Systems",
+        "HeroTemplateChoice"
+      ],
+      "className": "ModuleScript",
+      "length": 514,
+      "adler32": 4203196404
+    },
+    {
+      "path": [
+        "ServerScriptService",
+        "Server",
+        "Systems",
+        "HumanParty"
+      ],
+      "className": "ModuleScript",
+      "length": 9996,
+      "adler32": 3539602488
+    },
+    {
+      "path": [
+        "ServerScriptService",
+        "Server",
+        "Systems",
+        "IronveilProtection"
+      ],
+      "className": "ModuleScript",
+      "length": 2336,
+      "adler32": 3994043844
+    },
+    {
+      "path": [
+        "ServerScriptService",
+        "Server",
+        "Systems",
+        "IronveilPuzzle"
+      ],
+      "className": "ModuleScript",
+      "length": 1183,
+      "adler32": 1019520491
+    },
+    {
+      "path": [
+        "ServerScriptService",
+        "Server",
+        "Systems",
+        "LaunchRewards"
+      ],
+      "className": "ModuleScript",
+      "length": 5061,
+      "adler32": 3668507112
+    },
+    {
+      "path": [
+        "ServerScriptService",
+        "Server",
+        "Systems",
+        "MarketAcceptanceConfig"
+      ],
+      "className": "ModuleScript",
+      "length": 600,
+      "adler32": 63886944
+    },
+    {
+      "path": [
+        "ServerScriptService",
+        "Server",
+        "Systems",
+        "MarketBook"
+      ],
+      "className": "ModuleScript",
+      "length": 3760,
+      "adler32": 2816014285
+    },
+    {
+      "path": [
+        "ServerScriptService",
+        "Server",
+        "Systems",
+        "MarketData"
+      ],
+      "className": "ModuleScript",
+      "length": 5450,
+      "adler32": 296899438
+    },
+    {
+      "path": [
+        "ServerScriptService",
+        "Server",
+        "Systems",
+        "MarketEpochs"
+      ],
+      "className": "ModuleScript",
+      "length": 9501,
+      "adler32": 558998701
+    },
+    {
+      "path": [
+        "ServerScriptService",
+        "Server",
+        "Systems",
+        "MarketEscrow"
+      ],
+      "className": "ModuleScript",
+      "length": 4875,
+      "adler32": 1898664060
+    },
+    {
+      "path": [
+        "ServerScriptService",
+        "Server",
+        "Systems",
+        "MarketHealth"
+      ],
+      "className": "ModuleScript",
+      "length": 1046,
+      "adler32": 1013473280
+    },
+    {
+      "path": [
+        "ServerScriptService",
+        "Server",
+        "Systems",
+        "MarketMatching"
+      ],
+      "className": "ModuleScript",
+      "length": 2463,
+      "adler32": 265766294
+    },
+    {
+      "path": [
+        "ServerScriptService",
+        "Server",
+        "Systems",
+        "MarketNamespace"
+      ],
+      "className": "ModuleScript",
+      "length": 472,
+      "adler32": 1624615368
+    },
+    {
+      "path": [
+        "ServerScriptService",
+        "Server",
+        "Systems",
+        "MarketOrders"
+      ],
+      "className": "ModuleScript",
+      "length": 1312,
+      "adler32": 882883122
+    },
+    {
+      "path": [
+        "ServerScriptService",
+        "Server",
+        "Systems",
+        "MarketProtocol"
+      ],
+      "className": "ModuleScript",
+      "length": 1531,
+      "adler32": 1515784223
+    },
+    {
+      "path": [
+        "ServerScriptService",
+        "Server",
+        "Systems",
+        "MarketReconciliation"
+      ],
+      "className": "ModuleScript",
+      "length": 1559,
+      "adler32": 2619874399
+    },
+    {
+      "path": [
+        "ServerScriptService",
+        "Server",
+        "Systems",
+        "NoviceLessonSession"
+      ],
+      "className": "ModuleScript",
+      "length": 1864,
+      "adler32": 877633661
+    },
+    {
+      "path": [
+        "ServerScriptService",
+        "Server",
+        "Systems",
+        "NoviceTrialCombat"
+      ],
+      "className": "ModuleScript",
+      "length": 6040,
+      "adler32": 3757397125
+    },
+    {
+      "path": [
+        "ServerScriptService",
+        "Server",
+        "Systems",
+        "NoviceTrialInput"
+      ],
+      "className": "ModuleScript",
+      "length": 723,
+      "adler32": 3380084740
+    },
+    {
+      "path": [
+        "ServerScriptService",
+        "Server",
+        "Systems",
+        "NoviceTrialSession"
+      ],
+      "className": "ModuleScript",
+      "length": 4233,
+      "adler32": 1179313599
+    },
+    {
+      "path": [
+        "ServerScriptService",
+        "Server",
+        "Systems",
+        "OnboardingFunnel"
+      ],
+      "className": "ModuleScript",
+      "length": 2636,
+      "adler32": 2832444917
+    },
+    {
+      "path": [
+        "ServerScriptService",
+        "Server",
+        "Systems",
+        "PermanentEntitlements"
+      ],
+      "className": "ModuleScript",
+      "length": 1023,
+      "adler32": 4257246267
+    },
+    {
+      "path": [
+        "ServerScriptService",
+        "Server",
+        "Systems",
+        "PermanentPassCatalog"
+      ],
+      "className": "ModuleScript",
+      "length": 883,
+      "adler32": 239350494
+    },
+    {
+      "path": [
+        "ServerScriptService",
+        "Server",
+        "Systems",
+        "PermanentPassOffers"
+      ],
+      "className": "ModuleScript",
+      "length": 872,
+      "adler32": 3420206561
+    },
+    {
+      "path": [
+        "ServerScriptService",
+        "Server",
+        "Systems",
+        "PlayerCharacter"
+      ],
+      "className": "ModuleScript",
+      "length": 521,
+      "adler32": 2350035344
+    },
+    {
+      "path": [
+        "ServerScriptService",
+        "Server",
+        "Systems",
+        "PlayerCombatInput"
+      ],
+      "className": "ModuleScript",
+      "length": 1037,
+      "adler32": 2595513705
+    },
+    {
+      "path": [
+        "ServerScriptService",
+        "Server",
+        "Systems",
+        "PlayerGuildCancelCoordinator"
+      ],
+      "className": "ModuleScript",
+      "length": 5334,
+      "adler32": 2514183887
+    },
+    {
+      "path": [
+        "ServerScriptService",
+        "Server",
+        "Systems",
+        "PlayerGuildFounderCoordinator"
+      ],
+      "className": "ModuleScript",
+      "length": 4530,
+      "adler32": 1994018838
+    },
+    {
+      "path": [
+        "ServerScriptService",
+        "Server",
+        "Systems",
+        "PlayerGuildJoinCoordinator"
+      ],
+      "className": "ModuleScript",
+      "length": 4388,
+      "adler32": 3298892242
+    },
+    {
+      "path": [
+        "ServerScriptService",
+        "Server",
+        "Systems",
+        "PlayerGuildMembership"
+      ],
+      "className": "ModuleScript",
+      "length": 9644,
+      "adler32": 3299581780
+    },
+    {
+      "path": [
+        "ServerScriptService",
+        "Server",
+        "Systems",
+        "PlayerGuildRecovery"
+      ],
+      "className": "ModuleScript",
+      "length": 1615,
+      "adler32": 1779313330
+    },
+    {
+      "path": [
+        "ServerScriptService",
+        "Server",
+        "Systems",
+        "PlayerGuildRemovalCoordinator"
+      ],
+      "className": "ModuleScript",
+      "length": 4651,
+      "adler32": 4220481040
+    },
+    {
+      "path": [
+        "ServerScriptService",
+        "Server",
+        "Systems",
+        "PlayerGuildRoster"
+      ],
+      "className": "ModuleScript",
+      "length": 1866,
+      "adler32": 488546023
+    },
+    {
+      "path": [
+        "ServerScriptService",
+        "Server",
+        "Systems",
+        "PlayerGuildSchema"
+      ],
+      "className": "ModuleScript",
+      "length": 4898,
+      "adler32": 417507680
+    },
+    {
+      "path": [
+        "ServerScriptService",
+        "Server",
+        "Systems",
+        "PlayerGuildStore"
+      ],
+      "className": "ModuleScript",
+      "length": 4408,
+      "adler32": 32113799
+    },
+    {
+      "path": [
+        "ServerScriptService",
+        "Server",
+        "Systems",
+        "PlayerParticipation"
+      ],
+      "className": "ModuleScript",
+      "length": 720,
+      "adler32": 3005084236
+    },
+    {
+      "path": [
+        "ServerScriptService",
+        "Server",
+        "Systems",
+        "ProfileSchema"
+      ],
+      "className": "ModuleScript",
+      "length": 18099,
+      "adler32": 4244709940
+    },
+    {
+      "path": [
+        "ServerScriptService",
+        "Server",
+        "Systems",
+        "Progression"
+      ],
+      "className": "ModuleScript",
+      "length": 1419,
+      "adler32": 3250650257
+    },
+    {
+      "path": [
+        "ServerScriptService",
+        "Server",
+        "Systems",
+        "ProgressionV2Preview"
+      ],
+      "className": "ModuleScript",
+      "length": 5877,
+      "adler32": 3039144706
+    },
+    {
+      "path": [
+        "ServerScriptService",
+        "Server",
+        "Systems",
+        "RecipeValidator"
+      ],
+      "className": "ModuleScript",
+      "length": 902,
+      "adler32": 505492863
+    },
+    {
+      "path": [
+        "ServerScriptService",
+        "Server",
+        "Systems",
+        "ReleasePolicy"
+      ],
+      "className": "ModuleScript",
+      "length": 1953,
+      "adler32": 876525337
+    },
+    {
+      "path": [
+        "ServerScriptService",
+        "Server",
+        "Systems",
+        "SharedCombatPhases"
+      ],
+      "className": "ModuleScript",
+      "length": 9146,
+      "adler32": 2796935930
+    },
+    {
+      "path": [
+        "ServerScriptService",
+        "Server",
+        "Systems",
+        "SharedEncounterIdentity"
+      ],
+      "className": "ModuleScript",
+      "length": 5110,
+      "adler32": 888865032
+    },
+    {
+      "path": [
+        "ServerScriptService",
+        "Server",
+        "Systems",
+        "SharedEncounterParticipation"
+      ],
+      "className": "ModuleScript",
+      "length": 6048,
+      "adler32": 2502772166
+    },
+    {
+      "path": [
+        "ServerScriptService",
+        "Server",
+        "Systems",
+        "SharedPvEClaims"
+      ],
+      "className": "ModuleScript",
+      "length": 5808,
+      "adler32": 3061254274
+    },
+    {
+      "path": [
+        "ServerScriptService",
+        "Server",
+        "Systems",
+        "SharedPvESettlement"
+      ],
+      "className": "ModuleScript",
+      "length": 4259,
+      "adler32": 1274929500
+    },
+    {
+      "path": [
+        "ServerScriptService",
+        "Server",
+        "Systems",
+        "StudioTrialIdentity"
+      ],
+      "className": "ModuleScript",
+      "length": 807,
+      "adler32": 491921406
+    },
+    {
+      "path": [
+        "ServerScriptService",
+        "Server",
+        "Systems",
+        "TowerGuardianSession"
+      ],
+      "className": "ModuleScript",
+      "length": 1865,
+      "adler32": 182559943
+    },
+    {
+      "path": [
+        "ServerScriptService",
+        "Server",
+        "Systems",
+        "TowerLesson"
+      ],
+      "className": "ModuleScript",
+      "length": 4696,
+      "adler32": 3409938514
+    },
+    {
+      "path": [
+        "ServerScriptService",
+        "Server",
+        "Systems",
+        "TravelRules"
+      ],
+      "className": "ModuleScript",
+      "length": 5617,
+      "adler32": 1001839419
+    },
+    {
+      "path": [
+        "ServerScriptService",
+        "Server",
+        "Systems",
+        "ViewProjection"
+      ],
+      "className": "ModuleScript",
+      "length": 9431,
+      "adler32": 2794592661
+    },
+    {
+      "path": [
+        "ReplicatedStorage",
+        "Shared",
+        "Config",
+        "ArchiveEndings"
+      ],
+      "className": "ModuleScript",
+      "length": 1570,
+      "adler32": 125669564
+    },
+    {
+      "path": [
+        "ReplicatedStorage",
+        "Shared",
+        "Config",
+        "Art"
+      ],
+      "className": "ModuleScript",
+      "length": 1081,
+      "adler32": 473901186
+    },
+    {
+      "path": [
+        "ReplicatedStorage",
+        "Shared",
+        "Config",
+        "AudioConfig"
+      ],
+      "className": "ModuleScript",
+      "length": 2418,
+      "adler32": 3284681118
+    },
+    {
+      "path": [
+        "ReplicatedStorage",
+        "Shared",
+        "Config",
+        "BuildingThemes"
+      ],
+      "className": "ModuleScript",
+      "length": 1000,
+      "adler32": 1769288724
+    },
+    {
+      "path": [
+        "ReplicatedStorage",
+        "Shared",
+        "Config",
+        "City"
+      ],
+      "className": "ModuleScript",
+      "length": 4855,
+      "adler32": 1401636972
+    },
+    {
+      "path": [
+        "ReplicatedStorage",
+        "Shared",
+        "Config",
+        "CivicCities"
+      ],
+      "className": "ModuleScript",
+      "length": 1236,
+      "adler32": 1149096864
+    },
+    {
+      "path": [
+        "ReplicatedStorage",
+        "Shared",
+        "Config",
+        "ClassAdvancementCopy"
+      ],
+      "className": "ModuleScript",
+      "length": 713,
+      "adler32": 2476364088
+    },
+    {
+      "path": [
+        "ReplicatedStorage",
+        "Shared",
+        "Config",
+        "CombatBindings"
+      ],
+      "className": "ModuleScript",
+      "length": 1111,
+      "adler32": 849244883
+    },
+    {
+      "path": [
+        "ReplicatedStorage",
+        "Shared",
+        "Config",
+        "EnemyVisualAssets"
+      ],
+      "className": "ModuleScript",
+      "length": 4460,
+      "adler32": 779199891
+    },
+    {
+      "path": [
+        "ReplicatedStorage",
+        "Shared",
+        "Config",
+        "FriendlyNpcs"
+      ],
+      "className": "ModuleScript",
+      "length": 16656,
+      "adler32": 1194849112
+    },
+    {
+      "path": [
+        "ReplicatedStorage",
+        "Shared",
+        "Config",
+        "GuildIslandLayout"
+      ],
+      "className": "ModuleScript",
+      "length": 455,
+      "adler32": 1122604689
+    },
+    {
+      "path": [
+        "ReplicatedStorage",
+        "Shared",
+        "Config",
+        "Localization"
+      ],
+      "className": "ModuleScript",
+      "length": 185824,
+      "adler32": 1207078746
+    },
+    {
+      "path": [
+        "ReplicatedStorage",
+        "Shared",
+        "Config",
+        "MusicConfig"
+      ],
+      "className": "ModuleScript",
+      "length": 607,
+      "adler32": 1424875143
+    },
+    {
+      "path": [
+        "ReplicatedStorage",
+        "Shared",
+        "Config",
+        "NpcLifeDefinitions"
+      ],
+      "className": "ModuleScript",
+      "length": 2119,
+      "adler32": 234602498
+    },
+    {
+      "path": [
+        "ReplicatedStorage",
+        "Shared",
+        "Config",
+        "PathVFX"
+      ],
+      "className": "ModuleScript",
+      "length": 1628,
+      "adler32": 2997167484
+    },
+    {
+      "path": [
+        "ReplicatedStorage",
+        "Shared",
+        "Config",
+        "VFXConfig"
+      ],
+      "className": "ModuleScript",
+      "length": 1217,
+      "adler32": 639736659
+    },
+    {
+      "path": [
+        "ReplicatedStorage",
+        "Shared",
+        "Config",
+        "VisualAssets"
+      ],
+      "className": "ModuleScript",
+      "length": 865,
+      "adler32": 1280384780
+    },
+    {
+      "path": [
+        "ReplicatedStorage",
+        "Shared",
+        "Config",
+        "WorldQuality"
+      ],
+      "className": "ModuleScript",
+      "length": 194366,
+      "adler32": 3223738888
+    },
+    {
+      "path": [
+        "ReplicatedStorage",
+        "Shared",
+        "Data",
+        "AdventureTelegraph"
+      ],
+      "className": "ModuleScript",
+      "length": 2468,
+      "adler32": 2685675807
+    },
+    {
+      "path": [
+        "ReplicatedStorage",
+        "Shared",
+        "Data",
+        "AppearanceCatalog"
+      ],
+      "className": "ModuleScript",
+      "length": 48287,
+      "adler32": 4135043010
+    },
+    {
+      "path": [
+        "ReplicatedStorage",
+        "Shared",
+        "Data",
+        "AppearanceRules"
+      ],
+      "className": "ModuleScript",
+      "length": 5902,
+      "adler32": 2005021149
+    },
+    {
+      "path": [
+        "ReplicatedStorage",
+        "Shared",
+        "Data",
+        "ArchiveStoryMemory"
+      ],
+      "className": "ModuleScript",
+      "length": 4030,
+      "adler32": 1457501739
+    },
+    {
+      "path": [
+        "ReplicatedStorage",
+        "Shared",
+        "Data",
+        "AudioBudget"
+      ],
+      "className": "ModuleScript",
+      "length": 1292,
+      "adler32": 1168290519
+    },
+    {
+      "path": [
+        "ReplicatedStorage",
+        "Shared",
+        "Data",
+        "AudioFeedback"
+      ],
+      "className": "ModuleScript",
+      "length": 1377,
+      "adler32": 3094269341
+    },
+    {
+      "path": [
+        "ReplicatedStorage",
+        "Shared",
+        "Data",
+        "BuildingThemeRights"
+      ],
+      "className": "ModuleScript",
+      "length": 4108,
+      "adler32": 2993570796
+    },
+    {
+      "path": [
+        "ReplicatedStorage",
+        "Shared",
+        "Data",
+        "CampaignViewState"
+      ],
+      "className": "ModuleScript",
+      "length": 2247,
+      "adler32": 1637165830
+    },
+    {
+      "path": [
+        "ReplicatedStorage",
+        "Shared",
+        "Data",
+        "CityWaypoint"
+      ],
+      "className": "ModuleScript",
+      "length": 841,
+      "adler32": 4280422244
+    },
+    {
+      "path": [
+        "ReplicatedStorage",
+        "Shared",
+        "Data",
+        "CombatHudLayout"
+      ],
+      "className": "ModuleScript",
+      "length": 3871,
+      "adler32": 1603080672
+    },
+    {
+      "path": [
+        "ReplicatedStorage",
+        "Shared",
+        "Data",
+        "CosmeticVisuals"
+      ],
+      "className": "ModuleScript",
+      "length": 40561,
+      "adler32": 311901758
+    },
+    {
+      "path": [
+        "ReplicatedStorage",
+        "Shared",
+        "Data",
+        "CraftingViewState"
+      ],
+      "className": "ModuleScript",
+      "length": 2228,
+      "adler32": 208148408
+    },
+    {
+      "path": [
+        "ReplicatedStorage",
+        "Shared",
+        "Data",
+        "Equipment"
+      ],
+      "className": "ModuleScript",
+      "length": 3292,
+      "adler32": 386497615
+    },
+    {
+      "path": [
+        "ReplicatedStorage",
+        "Shared",
+        "Data",
+        "Expansion"
+      ],
+      "className": "ModuleScript",
+      "length": 12683,
+      "adler32": 1864112403
+    },
+    {
+      "path": [
+        "ReplicatedStorage",
+        "Shared",
+        "Data",
+        "GuildIdentitySummary"
+      ],
+      "className": "ModuleScript",
+      "length": 1483,
+      "adler32": 152659897
+    },
+    {
+      "path": [
+        "ReplicatedStorage",
+        "Shared",
+        "Data",
+        "GuildLand"
+      ],
+      "className": "ModuleScript",
+      "length": 6705,
+      "adler32": 1962911180
+    },
+    {
+      "path": [
+        "ReplicatedStorage",
+        "Shared",
+        "Data",
+        "IslandAccess"
+      ],
+      "className": "ModuleScript",
+      "length": 6378,
+      "adler32": 4248021611
+    },
+    {
+      "path": [
+        "ReplicatedStorage",
+        "Shared",
+        "Data",
+        "IslandDirectoryState"
+      ],
+      "className": "ModuleScript",
+      "length": 1022,
+      "adler32": 1770481696
+    },
+    {
+      "path": [
+        "ReplicatedStorage",
+        "Shared",
+        "Data",
+        "IslandPlacement"
+      ],
+      "className": "ModuleScript",
+      "length": 5382,
+      "adler32": 3481646474
+    },
+    {
+      "path": [
+        "ReplicatedStorage",
+        "Shared",
+        "Data",
+        "ItemVisuals"
+      ],
+      "className": "ModuleScript",
+      "length": 37237,
+      "adler32": 1733816029
+    },
+    {
+      "path": [
+        "ReplicatedStorage",
+        "Shared",
+        "Data",
+        "JournalViewState"
+      ],
+      "className": "ModuleScript",
+      "length": 1535,
+      "adler32": 3001295827
+    },
+    {
+      "path": [
+        "ReplicatedStorage",
+        "Shared",
+        "Data",
+        "LandBuildingPlacement"
+      ],
+      "className": "ModuleScript",
+      "length": 3758,
+      "adler32": 629009238
+    },
+    {
+      "path": [
+        "ReplicatedStorage",
+        "Shared",
+        "Data",
+        "MusicTransition"
+      ],
+      "className": "ModuleScript",
+      "length": 1362,
+      "adler32": 3112164139
+    },
+    {
+      "path": [
+        "ReplicatedStorage",
+        "Shared",
+        "Data",
+        "NoviceJourneyViewState"
+      ],
+      "className": "ModuleScript",
+      "length": 1477,
+      "adler32": 2403340462
+    },
+    {
+      "path": [
+        "ReplicatedStorage",
+        "Shared",
+        "Data",
+        "NpcLifeSchedule"
+      ],
+      "className": "ModuleScript",
+      "length": 6173,
+      "adler32": 4268951558
+    },
+    {
+      "path": [
+        "ReplicatedStorage",
+        "Shared",
+        "Data",
+        "QuestNpcState"
+      ],
+      "className": "ModuleScript",
+      "length": 1515,
+      "adler32": 2230457883
+    },
+    {
+      "path": [
+        "ReplicatedStorage",
+        "Shared",
+        "Data",
+        "QuestRoute"
+      ],
+      "className": "ModuleScript",
+      "length": 27739,
+      "adler32": 668559814
+    },
+    {
+      "path": [
+        "ReplicatedStorage",
+        "Shared",
+        "Data",
+        "QuestTracker"
+      ],
+      "className": "ModuleScript",
+      "length": 4468,
+      "adler32": 2926350364
+    },
+    {
+      "path": [
+        "ReplicatedStorage",
+        "Shared",
+        "Data",
+        "RequestWindow"
+      ],
+      "className": "ModuleScript",
+      "length": 916,
+      "adler32": 2823964873
+    },
+    {
+      "path": [
+        "ReplicatedStorage",
+        "Shared",
+        "Data",
+        "StatusPoints"
+      ],
+      "className": "ModuleScript",
+      "length": 1546,
+      "adler32": 3964862144
+    },
+    {
+      "path": [
+        "ReplicatedStorage",
+        "Shared",
+        "Data",
+        "TavernViewState"
+      ],
+      "className": "ModuleScript",
+      "length": 2027,
+      "adler32": 3305232697
+    },
+    {
+      "path": [
+        "ReplicatedStorage",
+        "Shared",
+        "Data",
+        "UISymbols"
+      ],
+      "className": "ModuleScript",
+      "length": 24784,
+      "adler32": 4170084182
+    },
+    {
+      "path": [
+        "ReplicatedStorage",
+        "Shared",
+        "Network",
+        "Protocol"
+      ],
+      "className": "ModuleScript",
+      "length": 7230,
+      "adler32": 1805567472
+    },
+    {
+      "path": [
+        "ReplicatedStorage",
+        "Shared",
+        "Presentation",
+        "ActionTimeline"
+      ],
+      "className": "ModuleScript",
+      "length": 2664,
+      "adler32": 1395561757
+    },
+    {
+      "path": [
+        "ReplicatedStorage",
+        "Shared",
+        "Presentation",
+        "ArchiveEndingKit"
+      ],
+      "className": "ModuleScript",
+      "length": 22383,
+      "adler32": 904240126
+    },
+    {
+      "path": [
+        "ReplicatedStorage",
+        "Shared",
+        "Presentation",
+        "ArchiveEndingMotion"
+      ],
+      "className": "ModuleScript",
+      "length": 790,
+      "adler32": 3509980960
+    },
+    {
+      "path": [
+        "ReplicatedStorage",
+        "Shared",
+        "Presentation",
+        "BorinPresentation"
+      ],
+      "className": "ModuleScript",
+      "length": 5009,
+      "adler32": 3571701747
+    },
+    {
+      "path": [
+        "ReplicatedStorage",
+        "Shared",
+        "Presentation",
+        "BorinWorkMotion"
+      ],
+      "className": "ModuleScript",
+      "length": 3761,
+      "adler32": 1974016748
+    },
+    {
+      "path": [
+        "ReplicatedStorage",
+        "Shared",
+        "Presentation",
+        "BuildingAppearance"
+      ],
+      "className": "ModuleScript",
+      "length": 4449,
+      "adler32": 2327722432
+    },
+    {
+      "path": [
+        "ReplicatedStorage",
+        "Shared",
+        "Presentation",
+        "CivicInstitutionArchitecture"
+      ],
+      "className": "ModuleScript",
+      "length": 507762,
+      "adler32": 3036175859
+    },
+    {
+      "path": [
+        "ReplicatedStorage",
+        "Shared",
+        "Presentation",
+        "CivicServiceArchitecture"
+      ],
+      "className": "ModuleScript",
+      "length": 497777,
+      "adler32": 2546652977
+    },
+    {
+      "path": [
+        "ReplicatedStorage",
+        "Shared",
+        "Presentation",
+        "CivicWorkMotion"
+      ],
+      "className": "ModuleScript",
+      "length": 2313,
+      "adler32": 548272353
+    },
+    {
+      "path": [
+        "ReplicatedStorage",
+        "Shared",
+        "Presentation",
+        "CombatCueEvents"
+      ],
+      "className": "ModuleScript",
+      "length": 2582,
+      "adler32": 410487153
+    },
+    {
+      "path": [
+        "ReplicatedStorage",
+        "Shared",
+        "Presentation",
+        "CrownfordArchitecture"
+      ],
+      "className": "ModuleScript",
+      "length": 94753,
+      "adler32": 1681870023
+    },
+    {
+      "path": [
+        "ReplicatedStorage",
+        "Shared",
+        "Presentation",
+        "FurnitureAppearance"
+      ],
+      "className": "ModuleScript",
+      "length": 1997,
+      "adler32": 3718425561
+    },
+    {
+      "path": [
+        "ReplicatedStorage",
+        "Shared",
+        "Presentation",
+        "FurnitureKit"
+      ],
+      "className": "ModuleScript",
+      "length": 33242,
+      "adler32": 3882743281
+    },
+    {
+      "path": [
+        "ReplicatedStorage",
+        "Shared",
+        "Presentation",
+        "HallAppearance"
+      ],
+      "className": "ModuleScript",
+      "length": 3812,
+      "adler32": 1610250810
+    },
+    {
+      "path": [
+        "ReplicatedStorage",
+        "Shared",
+        "Presentation",
+        "ModularAppearance",
+        "GeneratedGeometry"
+      ],
+      "className": "ModuleScript",
+      "length": 422786,
+      "adler32": 340025235
+    },
+    {
+      "path": [
+        "ReplicatedStorage",
+        "Shared",
+        "Presentation",
+        "ModularAppearance",
+        "GeneratedRig"
+      ],
+      "className": "ModuleScript",
+      "length": 103926,
+      "adler32": 1694225755
+    },
+    {
+      "path": [
+        "ReplicatedStorage",
+        "Shared",
+        "Presentation",
+        "ModularAppearance",
+        "LocalGeometryPreview"
+      ],
+      "className": "ModuleScript",
+      "length": 10157,
+      "adler32": 1722542463
+    },
+    {
+      "path": [
+        "ReplicatedStorage",
+        "Shared",
+        "Presentation",
+        "ModularAppearance",
+        "LocalGeometryRig"
+      ],
+      "className": "ModuleScript",
+      "length": 6983,
+      "adler32": 1605533585
+    },
+    {
+      "path": [
+        "ReplicatedStorage",
+        "Shared",
+        "Presentation",
+        "ModularAppearance",
+        "Renderer"
+      ],
+      "className": "ModuleScript",
+      "length": 11942,
+      "adler32": 1159842496
+    },
+    {
+      "path": [
+        "ReplicatedStorage",
+        "Shared",
+        "Presentation",
+        "ModularAppearance",
+        "Skeleton"
+      ],
+      "className": "ModuleScript",
+      "length": 2514,
+      "adler32": 1935544236
+    },
+    {
+      "path": [
+        "ReplicatedStorage",
+        "Shared",
+        "Presentation",
+        "NoviceActionPresentation"
+      ],
+      "className": "ModuleScript",
+      "length": 579,
+      "adler32": 2516107372
+    },
+    {
+      "path": [
+        "ReplicatedStorage",
+        "Shared",
+        "Types",
+        "Domain"
+      ],
+      "className": "ModuleScript",
+      "length": 1502,
+      "adler32": 932846816
+    },
+    {
+      "path": [
+        "ReplicatedStorage",
+        "Shared",
+        "Util",
+        "TableUtil"
+      ],
+      "className": "ModuleScript",
+      "length": 1063,
+      "adler32": 1317102565
+    },
+    {
+      "path": [
+        "ReplicatedStorage",
+        "QualityPreviewAssets",
+        "WorldArtContract"
+      ],
+      "className": "ModuleScript",
+      "length": 21996,
+      "adler32": 3182569811
+    },
+    {
+      "path": [
+        "ReplicatedStorage",
+        "QualityPreviewAssets",
+        "NativeAssetPreview"
+      ],
+      "className": "ModuleScript",
+      "length": 7108,
+      "adler32": 1841454159
+    },
+    {
+      "path": [
+        "ReplicatedStorage",
+        "QualityPreviewAssets",
+        "NativeImagePreview"
+      ],
+      "className": "ModuleScript",
+      "length": 2389,
+      "adler32": 2718571680
+    },
+    {
+      "path": [
+        "ReplicatedStorage",
+        "QualityPreviewAssets",
+        "Dataset1",
+        "Data"
+      ],
+      "className": "ModuleScript",
+      "length": 150,
+      "adler32": 2259301449
+    },
+    {
+      "path": [
+        "ReplicatedStorage",
+        "QualityPreviewAssets",
+        "Dataset1",
+        "Chunk1"
+      ],
+      "className": "ModuleScript",
+      "length": 120016,
+      "adler32": 3832302653
+    },
+    {
+      "path": [
+        "ReplicatedStorage",
+        "QualityPreviewAssets",
+        "Dataset1",
+        "Chunk2"
+      ],
+      "className": "ModuleScript",
+      "length": 120016,
+      "adler32": 963747469
+    },
+    {
+      "path": [
+        "ReplicatedStorage",
+        "QualityPreviewAssets",
+        "Dataset1",
+        "Chunk3"
+      ],
+      "className": "ModuleScript",
+      "length": 120016,
+      "adler32": 1276078353
+    },
+    {
+      "path": [
+        "ReplicatedStorage",
+        "QualityPreviewAssets",
+        "Dataset1",
+        "Chunk4"
+      ],
+      "className": "ModuleScript",
+      "length": 120016,
+      "adler32": 1459062750
+    },
+    {
+      "path": [
+        "ReplicatedStorage",
+        "QualityPreviewAssets",
+        "Dataset1",
+        "Chunk5"
+      ],
+      "className": "ModuleScript",
+      "length": 120016,
+      "adler32": 368909149
+    },
+    {
+      "path": [
+        "ReplicatedStorage",
+        "QualityPreviewAssets",
+        "Dataset1",
+        "Chunk6"
+      ],
+      "className": "ModuleScript",
+      "length": 120016,
+      "adler32": 140542335
+    },
+    {
+      "path": [
+        "ReplicatedStorage",
+        "QualityPreviewAssets",
+        "Dataset1",
+        "Chunk7"
+      ],
+      "className": "ModuleScript",
+      "length": 120016,
+      "adler32": 1902391897
+    },
+    {
+      "path": [
+        "ReplicatedStorage",
+        "QualityPreviewAssets",
+        "Dataset1",
+        "Chunk8"
+      ],
+      "className": "ModuleScript",
+      "length": 120016,
+      "adler32": 59205307
+    },
+    {
+      "path": [
+        "ReplicatedStorage",
+        "QualityPreviewAssets",
+        "Dataset1",
+        "Chunk9"
+      ],
+      "className": "ModuleScript",
+      "length": 120016,
+      "adler32": 1552836954
+    },
+    {
+      "path": [
+        "ReplicatedStorage",
+        "QualityPreviewAssets",
+        "Dataset1",
+        "Chunk10"
+      ],
+      "className": "ModuleScript",
+      "length": 120016,
+      "adler32": 460876098
+    },
+    {
+      "path": [
+        "ReplicatedStorage",
+        "QualityPreviewAssets",
+        "Dataset1",
+        "Chunk11"
+      ],
+      "className": "ModuleScript",
+      "length": 120016,
+      "adler32": 904348127
+    },
+    {
+      "path": [
+        "ReplicatedStorage",
+        "QualityPreviewAssets",
+        "Dataset1",
+        "Chunk12"
+      ],
+      "className": "ModuleScript",
+      "length": 120016,
+      "adler32": 2986965418
+    },
+    {
+      "path": [
+        "ReplicatedStorage",
+        "QualityPreviewAssets",
+        "Dataset1",
+        "Chunk13"
+      ],
+      "className": "ModuleScript",
+      "length": 120016,
+      "adler32": 626064502
+    },
+    {
+      "path": [
+        "ReplicatedStorage",
+        "QualityPreviewAssets",
+        "Dataset1",
+        "Chunk14"
+      ],
+      "className": "ModuleScript",
+      "length": 84081,
+      "adler32": 741589104
+    },
+    {
+      "path": [
+        "ReplicatedStorage",
+        "QualityPreviewAssets",
+        "Dataset2",
+        "Data"
+      ],
+      "className": "ModuleScript",
+      "length": 150,
+      "adler32": 2251109448
+    },
+    {
+      "path": [
+        "ReplicatedStorage",
+        "QualityPreviewAssets",
+        "Dataset2",
+        "Chunk1"
+      ],
+      "className": "ModuleScript",
+      "length": 120016,
+      "adler32": 910841648
+    },
+    {
+      "path": [
+        "ReplicatedStorage",
+        "QualityPreviewAssets",
+        "Dataset2",
+        "Chunk2"
+      ],
+      "className": "ModuleScript",
+      "length": 120016,
+      "adler32": 4157874241
+    },
+    {
+      "path": [
+        "ReplicatedStorage",
+        "QualityPreviewAssets",
+        "Dataset2",
+        "Chunk3"
+      ],
+      "className": "ModuleScript",
+      "length": 120016,
+      "adler32": 2232811535
+    },
+    {
+      "path": [
+        "ReplicatedStorage",
+        "QualityPreviewAssets",
+        "Dataset2",
+        "Chunk4"
+      ],
+      "className": "ModuleScript",
+      "length": 120016,
+      "adler32": 2633865923
+    },
+    {
+      "path": [
+        "ReplicatedStorage",
+        "QualityPreviewAssets",
+        "Dataset2",
+        "Chunk5"
+      ],
+      "className": "ModuleScript",
+      "length": 120016,
+      "adler32": 1489659692
+    },
+    {
+      "path": [
+        "ReplicatedStorage",
+        "QualityPreviewAssets",
+        "Dataset2",
+        "Chunk6"
+      ],
+      "className": "ModuleScript",
+      "length": 120016,
+      "adler32": 382157206
+    },
+    {
+      "path": [
+        "ReplicatedStorage",
+        "QualityPreviewAssets",
+        "Dataset2",
+        "Chunk7"
+      ],
+      "className": "ModuleScript",
+      "length": 120016,
+      "adler32": 432070046
+    },
+    {
+      "path": [
+        "ReplicatedStorage",
+        "QualityPreviewAssets",
+        "Dataset2",
+        "Chunk8"
+      ],
+      "className": "ModuleScript",
+      "length": 120016,
+      "adler32": 109921076
+    },
+    {
+      "path": [
+        "ReplicatedStorage",
+        "QualityPreviewAssets",
+        "Dataset2",
+        "Chunk9"
+      ],
+      "className": "ModuleScript",
+      "length": 120016,
+      "adler32": 1512182447
+    },
+    {
+      "path": [
+        "ReplicatedStorage",
+        "QualityPreviewAssets",
+        "Dataset2",
+        "Chunk10"
+      ],
+      "className": "ModuleScript",
+      "length": 120016,
+      "adler32": 3457794081
+    },
+    {
+      "path": [
+        "ReplicatedStorage",
+        "QualityPreviewAssets",
+        "Dataset2",
+        "Chunk11"
+      ],
+      "className": "ModuleScript",
+      "length": 120016,
+      "adler32": 2816002703
+    },
+    {
+      "path": [
+        "ReplicatedStorage",
+        "QualityPreviewAssets",
+        "Dataset2",
+        "Chunk12"
+      ],
+      "className": "ModuleScript",
+      "length": 120016,
+      "adler32": 2601120785
+    },
+    {
+      "path": [
+        "ReplicatedStorage",
+        "QualityPreviewAssets",
+        "Dataset2",
+        "Chunk13"
+      ],
+      "className": "ModuleScript",
+      "length": 72106,
+      "adler32": 68078354
+    },
+    {
+      "path": [
+        "ReplicatedStorage",
+        "QualityPreviewAssets",
+        "Dataset3",
+        "Data"
+      ],
+      "className": "ModuleScript",
+      "length": 149,
+      "adler32": 1698968598
+    },
+    {
+      "path": [
+        "ReplicatedStorage",
+        "QualityPreviewAssets",
+        "Dataset3",
+        "Chunk1"
+      ],
+      "className": "ModuleScript",
+      "length": 120016,
+      "adler32": 2337963042
+    },
+    {
+      "path": [
+        "ReplicatedStorage",
+        "QualityPreviewAssets",
+        "Dataset3",
+        "Chunk2"
+      ],
+      "className": "ModuleScript",
+      "length": 90583,
+      "adler32": 964331038
+    },
+    {
+      "path": [
+        "ReplicatedStorage",
+        "QualityPreviewAssets",
+        "Dataset4",
+        "Data"
+      ],
+      "className": "ModuleScript",
+      "length": 149,
+      "adler32": 1715352600
+    },
+    {
+      "path": [
+        "ReplicatedStorage",
+        "QualityPreviewAssets",
+        "Dataset4",
+        "Chunk1"
+      ],
+      "className": "ModuleScript",
+      "length": 120016,
+      "adler32": 2174526077
+    },
+    {
+      "path": [
+        "ReplicatedStorage",
+        "QualityPreviewAssets",
+        "Dataset4",
+        "Chunk2"
+      ],
+      "className": "ModuleScript",
+      "length": 120016,
+      "adler32": 3047898789
+    },
+    {
+      "path": [
+        "ReplicatedStorage",
+        "QualityPreviewAssets",
+        "Dataset4",
+        "Chunk3"
+      ],
+      "className": "ModuleScript",
+      "length": 120016,
+      "adler32": 2017651800
+    },
+    {
+      "path": [
+        "ReplicatedStorage",
+        "QualityPreviewAssets",
+        "Dataset4",
+        "Chunk4"
+      ],
+      "className": "ModuleScript",
+      "length": 49077,
+      "adler32": 2634191477
+    },
+    {
+      "path": [
+        "ReplicatedStorage",
+        "QualityPreviewAssets",
+        "Dataset5",
+        "Data"
+      ],
+      "className": "ModuleScript",
+      "length": 149,
+      "adler32": 1690776597
+    },
+    {
+      "path": [
+        "ReplicatedStorage",
+        "QualityPreviewAssets",
+        "Dataset5",
+        "Chunk1"
+      ],
+      "className": "ModuleScript",
+      "length": 79924,
+      "adler32": 4112249434
+    },
+    {
+      "path": [
+        "ReplicatedStorage",
+        "QualityPreviewAssets",
+        "Dataset6",
+        "Data"
+      ],
+      "className": "ModuleScript",
+      "length": 149,
+      "adler32": 1690776597
+    },
+    {
+      "path": [
+        "ReplicatedStorage",
+        "QualityPreviewAssets",
+        "Dataset6",
+        "Chunk1"
+      ],
+      "className": "ModuleScript",
+      "length": 72687,
+      "adler32": 1432227239
+    },
+    {
+      "path": [
+        "ReplicatedStorage",
+        "QualityPreviewAssets",
+        "Dataset7",
+        "Data"
+      ],
+      "className": "ModuleScript",
+      "length": 149,
+      "adler32": 1690776597
+    },
+    {
+      "path": [
+        "ReplicatedStorage",
+        "QualityPreviewAssets",
+        "Dataset7",
+        "Chunk1"
+      ],
+      "className": "ModuleScript",
+      "length": 4542,
+      "adler32": 2406824967
+    },
+    {
+      "path": [
+        "StarterPlayer",
+        "StarterPlayerScripts",
+        "QualityPreview"
+      ],
+      "className": "LocalScript",
+      "length": 5421,
+      "adler32": 768744704
+    },
+    {
+      "path": [
+        "ServerScriptService",
+        "QualityPreview"
+      ],
+      "className": "Script",
+      "length": 1610,
+      "adler32": 306656518
+    }
+  ],
+  "attributes": [
+    {
+      "path": [
+        "ReplicatedStorage",
+        "QualityPreviewAssets"
+      ],
+      "values": {
+        "IsolatedMemory": true,
+        "EnableWorldSlice": true,
+        "BindEnemies": false,
+        "WorldDataset": "Dataset1",
+        "WorldSourceSha256": "9baaf8de0faf3ff7f4a4f2c32ea692e48aa9dbb021f609e3530029ed7844ddc7"
+      }
+    },
+    {
+      "path": [
+        "ReplicatedStorage",
+        "QualityPreviewAssets",
+        "Dataset1"
+      ],
+      "values": {
+        "SourceSha256": "9baaf8de0faf3ff7f4a4f2c32ea692e48aa9dbb021f609e3530029ed7844ddc7"
+      }
+    },
+    {
+      "path": [
+        "ReplicatedStorage",
+        "QualityPreviewAssets",
+        "Dataset2"
+      ],
+      "values": {
+        "SourceSha256": "8743e160609a44e48b80e81b9ff0fe21b043bfb7e69fa216f2d164149c7f6760"
+      }
+    },
+    {
+      "path": [
+        "ReplicatedStorage",
+        "QualityPreviewAssets",
+        "Dataset3"
+      ],
+      "values": {
+        "SourceSha256": "b885085377b3e56faf9f6a0fe072d0db4672f6b87c5241c6d61ff34c70a65539"
+      }
+    },
+    {
+      "path": [
+        "ReplicatedStorage",
+        "QualityPreviewAssets",
+        "Dataset4"
+      ],
+      "values": {
+        "SourceSha256": "4e65f4e254ae58bed6c5825d68948dc8689eb10332fb2763bdae37f86e371d20"
+      }
+    },
+    {
+      "path": [
+        "ReplicatedStorage",
+        "QualityPreviewAssets",
+        "Dataset5"
+      ],
+      "values": {
+        "SourceSha256": "d08edc14a62bd2fc9e1a3fb0e5a6b205df9532358567e19d93a3e22b356bb46f"
+      }
+    },
+    {
+      "path": [
+        "ReplicatedStorage",
+        "QualityPreviewAssets",
+        "Dataset6"
+      ],
+      "values": {
+        "SourceSha256": "1e803ebb0bfa131c7c0d2113ce50eb3227fcc82fea1aa9ab56ab94156135cf51"
+      }
+    },
+    {
+      "path": [
+        "ReplicatedStorage",
+        "QualityPreviewAssets",
+        "Dataset7"
+      ],
+      "values": {
+        "SourceSha256": "821b419df0f43fb3d3702be9d11948a703af6c97d2947a315d334a217f2bdae6"
+      }
+    }
+  ]
+}
