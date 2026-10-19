@@ -1,0 +1,9 @@
+{
+  "content": [
+    {
+      "type": "text",
+      "text": "{\"ProbeReport\":\"{\\\"stopPlayRequired\\\":true,\\\"requestCount\\\":0,\\\"maximumHeartbeatGap\\\":1.3659570217132569,\\\"actionTTL\\\":0.62,\\\"cases\\\":[],\\\"heartbeatCount\\\":5,\\\"VFXCount\\\":0,\\\"audibleAcceptance\\\":false,\\\"status\\\":\\\"INCONCLUSIVE\\\",\\\"waitCount\\\":4,\\\"disposalCount\\\":0,\\\"serverCombatTested\\\":false,\\\"error\\\":\\\"Players.iswhlaedev.PlayerScripts.CombatCueProbe:212: INCONCLUSIVE: Camera interference\\\\nPlayers.iswhlaedev.PlayerScripts.CombatCueProbe:49 function pause\\\\nPlayers.iswhlaedev.PlayerScripts.CombatCueProbe:212\\\\nPlayers.iswhlaedev.PlayerScripts.CombatCueProbe:163\\\\n\\\",\\\"cleanupErrors\\\":[]}\",\"ProbeStatus\":\"INCONCLUSIVE\"}"
+    }
+  ],
+  "isError": false
+}
