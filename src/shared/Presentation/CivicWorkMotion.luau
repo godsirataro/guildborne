@@ -3,6 +3,12 @@
 local M={Duration=8}
 type Angles={number}
 local poses:{[string]:{[string]:Angles}}={
+ -- Existing FriendlyNpcKit props follow their bind bones. These are stationary
+ -- occupation gestures, not contact solves, forge strikes or new service actions.
+ borga={Head={-.06,.14,0},UpperTorso={0,.04,0},RightUpperArm={-.32,0,-.10},RightLowerArm={-.45,0,0},RightHand={0,.10,.08}},
+ mogra={Head={.28,-.20,0},UpperTorso={.025,-.04,0},LeftUpperArm={-.12,0,.08},LeftLowerArm={-.18,0,0},RightUpperArm={-.18,0,0}},
+ rukk={Head={.14,.18,0},RightUpperArm={-.38,0,-.08},RightLowerArm={-.25,0,0},RightHand={.06,0,0}},
+ ghar={Head={-.04,-.26,0},UpperTorso={0,-.04,0},LeftUpperArm={-.32,0,.08},LeftLowerArm={-.24,0,0},RightUpperArm={-.08,0,0}},
  marshal_elian={Head={.16,-.12,0},LeftUpperArm={-.48,0,-.10},LeftLowerArm={-.35,0,0},RightUpperArm={-.30,0,-.16},RightLowerArm={-.42,0,0}},
  arborist_vaela={Head={.20,-.16,0},UpperTorso={.06,0,0},LeftUpperArm={-.35,0,-.08},LeftLowerArm={-.25,0,0},RightUpperArm={-.42,-.22,.08},RightLowerArm={-.48,0,0}},
  smith_borin={Head={.12,.10,0},UpperTorso={.04,-.08,0},RightUpperArm={-.62,0,-.12},RightLowerArm={-.44,0,0},LeftUpperArm={-.22,0,.08}},
