@@ -75,7 +75,8 @@ Motion fixture suppresses/restores motion; settings-UI acceptance remains open.
 Only Ghar had relative shield-binding measurements. Art/clipping/fullgrip quality
 remain unapproved. Initial and final city relocations were explicitly synthetic;
 ordinary intervening navigation does not establish earned travel or five-hero lanes.
-Independent S17 raw-data audit passed; final packet review is in progress.
+Independent S17 raw-data audit and final toolchain packet review passed.
+All61 final manifest entries match Git blob bytes at0bfe46f.
 
 Earlier [HUD/Borin closeout](../../integration/quality-slice/native-hud-20261020/README.md)
 retains map/quest8pxclearance and original named Borin motion/dialogue/cull checks.
