@@ -3,7 +3,8 @@ local C=require("../src/shared/Presentation/CombatCueEvents")
 return function()
     local s=C.new()
     assert(C.ActionTTL==require("../src/shared/Presentation/ActionTimeline").Duration)
-    for _,bad in ipairs({false,"10",0/0,math.huge,-math.huge,0,-1}) do
+    local invalid: {any}={false,"10",0/0,math.huge,-math.huge,0,-1}
+    for _,bad in ipairs(invalid) do
         assert(not C.admit(s,"action",bad,10,1,true))
         C.discard(s,"action",bad,10)
     end
