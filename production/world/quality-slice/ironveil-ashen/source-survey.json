@@ -1,0 +1,50 @@
+{
+  "status": "SOURCE_ONLY_NOT_NATIVE",
+  "sourceHashes": {
+    "src/server/Services/AdventureMapKit.luau": "978724afd99c499757601d56634ecf0b00ff21921fbec8b12a617c0fed1fe4c7",
+    "src/server/Services/RegionalWorld.luau": "13e0ce9ed41893a6a46d46955ec4dafd8159a720df5d1ff89f91cd69ec7b6c09",
+    "src/shared/Config/City.luau": "f78e3df184b45f430575425e1e294f00f94031014b2e5e682d0549890f47e985",
+    "production/world/quality-slice/greenwood-ironveil/runtime-descriptor.json": "9f1c8d3eb5bf109f94bfec504915b52548ec1e484a31be50dc8fabebf3843d5e"
+  },
+  "floorY": 2,
+  "nativeFloorBounds": {
+    "Ironveil": [
+      380,
+      620,
+      1290,
+      1510
+    ],
+    "Ashen": [
+      890,
+      1110,
+      1290,
+      1510
+    ]
+  },
+  "combatUpperZExclusive": 1490,
+  "roadMinimumZ": 1493,
+  "returnPortals": [
+    [
+      500,
+      7,
+      1527
+    ],
+    [
+      1000,
+      7,
+      1527
+    ]
+  ],
+  "bankBlocker": "Reviewed separately: Dataset2 bank above lane nearX640..745. No claim of route readiness until replacement verified.",
+  "oldIronveilEntry": [
+    390,
+    7.5,
+    1495
+  ],
+  "newIronveilEntry": [
+    610,
+    7.5,
+    1506
+  ],
+  "minimumEntryXSeparation": 194
+}

@@ -1,0 +1,25 @@
+{
+  "status": "BLENDER_RENDERED_NOT_NATIVE",
+  "variant": "after",
+  "inputHashes": {
+    "production/world/quality-slice/greenwood-ironveil/ground.json": "85b0866cf5ed468ef323f52c5e33f825fcb89155d1a91c2753d593271ccdeb70",
+    "assets/production/world-slice/greenwood-ironveil/scenery.mesh.json": "b885085377b3e56faf9f6a0fe072d0db4672f6b87c5241c6d61ff34c70a65539",
+    "assets/production/world-slice/ironveil-ore-yard/scenery.mesh.json": "4e65f4e254ae58bed6c5825d68948dc8689eb10332fb2763bdae37f86e371d20",
+    "assets/production/world-slice/coast-prop-ashen-cut/scenery.mesh.json": "3c84bc3a213b8b6b6253cc95957c7a6af0c27d13f789c81f311c0b062a2aefc9",
+    "production/world/quality-slice/ironveil-ashen/ground.json": "bd02bb8543cfddea8e33eb543c81c8f135b0549ce8c5a1585151fec88ff74577"
+  },
+  "cameraSHA256": "9342bb289f3f678272b834a7498b6527bfc72e1f8a9d7a8d461ee15b97d36d3e",
+  "contextSHA256": "40a876387c25bcd0ad24be3251def1b7667d7cc97abf71b37ef3cf530d1a895a",
+  "rendererSHA256": "4dcf1c9fb4a8ce88235a4a0971caecb0a9749113134d2f7afaa433be50a375ac",
+  "nativeParts": 91,
+  "omissions": [
+    "Actors, dynamic resource art, GUI, private campaign pockets and distant city omitted",
+    "Roblox materials, lighting, physics and gameplay not reproduced"
+  ],
+  "images": {
+    "01_ironveil_departure.png": "46fcd401b0b064553382d4dc164446410576514ed14e61de8f9d6478d86166a1",
+    "02_ashen_arrival.png": "6c7bf286c83a242cc5c6005946cb9390b4ca214e7839ef30a0428c4d437b2054",
+    "03_corridor_overview.png": "a7654c1ff6dbd6ffe6085d29b1d512c3b87375fe6e4fd0cd2bd8ecb3c4ca5d84",
+    "04_bank_cut.png": "dd5f680ba21200d42f7c0c03a80add9f091d0f76d1d68ea7297200ccb20d719f"
+  }
+}

@@ -1,0 +1,101 @@
+{
+  "id": "ironveil_ashen_south",
+  "fromZone": "Ironveil",
+  "toZone": "Ashen",
+  "status": "SOURCE_CANDIDATE_NATIVE_ACCEPTANCE_PENDING",
+  "groundContainer": "GuildborneWorld/IronveilAshenCorridor",
+  "width": 24,
+  "shoulderWidth": 24,
+  "centerline": [
+    [
+      610,
+      2.1,
+      1505
+    ],
+    [
+      650,
+      2.1,
+      1505
+    ],
+    [
+      750,
+      2.1,
+      1505
+    ],
+    [
+      850,
+      2.1,
+      1505
+    ],
+    [
+      900,
+      2.1,
+      1505
+    ]
+  ],
+  "entryVolumes": {
+    "Ironveil": {
+      "min": [
+        596,
+        0,
+        1493
+      ],
+      "max": [
+        624,
+        15,
+        1519
+      ]
+    },
+    "Ashen": {
+      "min": [
+        886,
+        0,
+        1493
+      ],
+      "max": [
+        914,
+        15,
+        1519
+      ]
+    }
+  },
+  "safeRecovery": {
+    "Ironveil": [
+      600,
+      7,
+      1500
+    ],
+    "Ashen": [
+      900,
+      7,
+      1500
+    ]
+  },
+  "landingPads": {
+    "Ironveil": [
+      [
+        596,
+        1493
+      ],
+      [
+        624,
+        1519
+      ]
+    ],
+    "Ashen": [
+      [
+        886,
+        1493
+      ],
+      [
+        914,
+        1519
+      ]
+    ]
+  },
+  "seamNotes": [
+    "Native island floors endZ1510; explicit solid pads extend to1519. All walking floor top2.1, roadnorth1493 outside combatZ<1490.",
+    "Existing Dataset2 bank requires separately reviewed replacement; this geometry export alone is not visual readiness.",
+    "No existing portals, regional floors, two prior corridors, travel eligibility or activation changed."
+  ]
+}

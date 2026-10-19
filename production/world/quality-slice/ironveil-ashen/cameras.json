@@ -1,0 +1,9 @@
+{
+  "resolution": [1600,900], "samples": 24, "lens": 28,
+  "views": [
+    {"name":"01_ironveil_departure","eye":[589,14,1525],"target":[701,12,1505]},
+    {"name":"02_ashen_arrival","eye":[933,16,1545],"target":[832,4,1505]},
+    {"name":"03_corridor_overview","eye":[755,210,1740],"target":[755,0,1470]},
+    {"name":"04_bank_cut","eye":[680,42,1580],"target":[680,9,1505]}
+  ]
+}

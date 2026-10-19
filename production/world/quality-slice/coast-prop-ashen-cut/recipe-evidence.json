@@ -1,0 +1,2785 @@
+{
+  "status": "FILE_GENERATED_NOT_STUDIO_TESTED",
+  "sourceSha256": "8743e160609a44e48b80e81b9ff0fe21b043bfb7e69fa216f2d164149c7f6760",
+  "packetSha256": "3c84bc3a213b8b6b6253cc95957c7a6af0c27d13f789c81f311c0b062a2aefc9",
+  "changedMeshIds": [
+    "coast_headland_banks__bounded_003"
+  ],
+  "subtractXZ": [
+    636.0,
+    918.0,
+    1489.0,
+    1523.0
+  ],
+  "capFloorY": -40.0,
+  "capSegments": [
+    {
+      "a": [
+        668.7253474082858,
+        29.99509533840617,
+        1489.0
+      ],
+      "b": [
+        694.1464392894353,
+        25.574042706827214,
+        1489.0
+      ],
+      "axis": 2,
+      "bound": 1489.0,
+      "inwardSign": 1,
+      "outputFaces": [
+        350,
+        351,
+        352,
+        353,
+        354,
+        355,
+        356,
+        357
+      ]
+    },
+    {
+      "a": [
+        827.5674919210143,
+        -31.378947368421052,
+        1489.0
+      ],
+      "b": [
+        844.1464392894353,
+        -40.0,
+        1489.0
+      ],
+      "axis": 2,
+      "bound": 1489.0,
+      "inwardSign": 1,
+      "outputFaces": [
+        358
+      ]
+    },
+    {
+      "a": [
+        640.0,
+        32.92659514013185,
+        1489.0
+      ],
+      "b": [
+        668.7253474082858,
+        29.995095338406166,
+        1489.0
+      ],
+      "axis": 2,
+      "bound": 1489.0,
+      "inwardSign": 1,
+      "outputFaces": [
+        359,
+        360,
+        361,
+        362,
+        363,
+        364,
+        365,
+        366
+      ]
+    },
+    {
+      "a": [
+        694.1464392894353,
+        25.574042706827214,
+        1489.0
+      ],
+      "b": [
+        827.5674919210143,
+        -31.378947368421052,
+        1489.0
+      ],
+      "axis": 2,
+      "bound": 1489.0,
+      "inwardSign": 1,
+      "outputFaces": [
+        367,
+        368,
+        369,
+        370,
+        371,
+        372
+      ]
+    },
+    {
+      "a": [
+        677.7240213389422,
+        22.990159790001012,
+        1523.0
+      ],
+      "b": [
+        640.0,
+        26.83999873201867,
+        1523.0
+      ],
+      "axis": 2,
+      "bound": 1523.0,
+      "inwardSign": -1,
+      "outputFaces": [
+        373,
+        374,
+        375,
+        376,
+        377,
+        378,
+        379,
+        380
+      ]
+    },
+    {
+      "a": [
+        827.7240213389422,
+        -40.0,
+        1523.0
+      ],
+      "b": [
+        690.7240213389422,
+        18.480723142355515,
+        1523.0
+      ],
+      "axis": 2,
+      "bound": 1523.0,
+      "inwardSign": -1,
+      "outputFaces": [
+        381,
+        382,
+        383,
+        384,
+        385
+      ]
+    },
+    {
+      "a": [
+        681.9799129403424,
+        21.51387720878867,
+        1523.0
+      ],
+      "b": [
+        677.7240213389422,
+        22.990159790001012,
+        1523.0
+      ],
+      "axis": 2,
+      "bound": 1523.0,
+      "inwardSign": -1,
+      "outputFaces": [
+        386,
+        387,
+        388,
+        389,
+        390,
+        391
+      ]
+    },
+    {
+      "a": [
+        690.7240213389422,
+        18.480723142355515,
+        1523.0
+      ],
+      "b": [
+        681.9799129403424,
+        21.51387720878867,
+        1523.0
+      ],
+      "axis": 2,
+      "bound": 1523.0,
+      "inwardSign": -1,
+      "outputFaces": [
+        392,
+        393,
+        394,
+        395,
+        396,
+        397
+      ]
+    }
+  ],
+  "faceMap": [
+    {
+      "outputFace": 1,
+      "sourceFace": 1,
+      "capSegment": null
+    },
+    {
+      "outputFace": 2,
+      "sourceFace": 2,
+      "capSegment": null
+    },
+    {
+      "outputFace": 3,
+      "sourceFace": 3,
+      "capSegment": null
+    },
+    {
+      "outputFace": 4,
+      "sourceFace": 4,
+      "capSegment": null
+    },
+    {
+      "outputFace": 5,
+      "sourceFace": 5,
+      "capSegment": null
+    },
+    {
+      "outputFace": 6,
+      "sourceFace": 6,
+      "capSegment": null
+    },
+    {
+      "outputFace": 7,
+      "sourceFace": 7,
+      "capSegment": null
+    },
+    {
+      "outputFace": 8,
+      "sourceFace": 8,
+      "capSegment": null
+    },
+    {
+      "outputFace": 9,
+      "sourceFace": 9,
+      "capSegment": null
+    },
+    {
+      "outputFace": 10,
+      "sourceFace": 10,
+      "capSegment": null
+    },
+    {
+      "outputFace": 11,
+      "sourceFace": 11,
+      "capSegment": null
+    },
+    {
+      "outputFace": 12,
+      "sourceFace": 12,
+      "capSegment": null
+    },
+    {
+      "outputFace": 13,
+      "sourceFace": 13,
+      "capSegment": null
+    },
+    {
+      "outputFace": 14,
+      "sourceFace": 14,
+      "capSegment": null
+    },
+    {
+      "outputFace": 15,
+      "sourceFace": 15,
+      "capSegment": null
+    },
+    {
+      "outputFace": 16,
+      "sourceFace": 16,
+      "capSegment": null
+    },
+    {
+      "outputFace": 17,
+      "sourceFace": 17,
+      "capSegment": null
+    },
+    {
+      "outputFace": 18,
+      "sourceFace": 18,
+      "capSegment": null
+    },
+    {
+      "outputFace": 19,
+      "sourceFace": 19,
+      "capSegment": null
+    },
+    {
+      "outputFace": 20,
+      "sourceFace": 20,
+      "capSegment": null
+    },
+    {
+      "outputFace": 21,
+      "sourceFace": 21,
+      "capSegment": null
+    },
+    {
+      "outputFace": 22,
+      "sourceFace": 22,
+      "capSegment": null
+    },
+    {
+      "outputFace": 23,
+      "sourceFace": 23,
+      "capSegment": null
+    },
+    {
+      "outputFace": 24,
+      "sourceFace": 24,
+      "capSegment": null
+    },
+    {
+      "outputFace": 25,
+      "sourceFace": 25,
+      "capSegment": null
+    },
+    {
+      "outputFace": 26,
+      "sourceFace": 26,
+      "capSegment": null
+    },
+    {
+      "outputFace": 27,
+      "sourceFace": 27,
+      "capSegment": null
+    },
+    {
+      "outputFace": 28,
+      "sourceFace": 28,
+      "capSegment": null
+    },
+    {
+      "outputFace": 29,
+      "sourceFace": 29,
+      "capSegment": null
+    },
+    {
+      "outputFace": 30,
+      "sourceFace": 30,
+      "capSegment": null
+    },
+    {
+      "outputFace": 31,
+      "sourceFace": 31,
+      "capSegment": null
+    },
+    {
+      "outputFace": 32,
+      "sourceFace": 32,
+      "capSegment": null
+    },
+    {
+      "outputFace": 33,
+      "sourceFace": 33,
+      "capSegment": null
+    },
+    {
+      "outputFace": 34,
+      "sourceFace": 34,
+      "capSegment": null
+    },
+    {
+      "outputFace": 35,
+      "sourceFace": 35,
+      "capSegment": null
+    },
+    {
+      "outputFace": 36,
+      "sourceFace": 36,
+      "capSegment": null
+    },
+    {
+      "outputFace": 37,
+      "sourceFace": 37,
+      "capSegment": null
+    },
+    {
+      "outputFace": 38,
+      "sourceFace": 38,
+      "capSegment": null
+    },
+    {
+      "outputFace": 39,
+      "sourceFace": 39,
+      "capSegment": null
+    },
+    {
+      "outputFace": 40,
+      "sourceFace": 40,
+      "capSegment": null
+    },
+    {
+      "outputFace": 41,
+      "sourceFace": 41,
+      "capSegment": null
+    },
+    {
+      "outputFace": 42,
+      "sourceFace": 42,
+      "capSegment": null
+    },
+    {
+      "outputFace": 43,
+      "sourceFace": 43,
+      "capSegment": null
+    },
+    {
+      "outputFace": 44,
+      "sourceFace": 44,
+      "capSegment": null
+    },
+    {
+      "outputFace": 45,
+      "sourceFace": 45,
+      "capSegment": null
+    },
+    {
+      "outputFace": 46,
+      "sourceFace": 46,
+      "capSegment": null
+    },
+    {
+      "outputFace": 47,
+      "sourceFace": 47,
+      "capSegment": null
+    },
+    {
+      "outputFace": 48,
+      "sourceFace": 48,
+      "capSegment": null
+    },
+    {
+      "outputFace": 49,
+      "sourceFace": 49,
+      "capSegment": null
+    },
+    {
+      "outputFace": 50,
+      "sourceFace": 50,
+      "capSegment": null
+    },
+    {
+      "outputFace": 51,
+      "sourceFace": 51,
+      "capSegment": null
+    },
+    {
+      "outputFace": 52,
+      "sourceFace": 52,
+      "capSegment": null
+    },
+    {
+      "outputFace": 53,
+      "sourceFace": 53,
+      "capSegment": null
+    },
+    {
+      "outputFace": 54,
+      "sourceFace": 54,
+      "capSegment": null
+    },
+    {
+      "outputFace": 55,
+      "sourceFace": 55,
+      "capSegment": null
+    },
+    {
+      "outputFace": 56,
+      "sourceFace": 56,
+      "capSegment": null
+    },
+    {
+      "outputFace": 57,
+      "sourceFace": 57,
+      "capSegment": null
+    },
+    {
+      "outputFace": 58,
+      "sourceFace": 58,
+      "capSegment": null
+    },
+    {
+      "outputFace": 59,
+      "sourceFace": 58,
+      "capSegment": null
+    },
+    {
+      "outputFace": 60,
+      "sourceFace": 59,
+      "capSegment": null
+    },
+    {
+      "outputFace": 61,
+      "sourceFace": 60,
+      "capSegment": null
+    },
+    {
+      "outputFace": 62,
+      "sourceFace": 60,
+      "capSegment": null
+    },
+    {
+      "outputFace": 63,
+      "sourceFace": 61,
+      "capSegment": null
+    },
+    {
+      "outputFace": 64,
+      "sourceFace": 62,
+      "capSegment": null
+    },
+    {
+      "outputFace": 65,
+      "sourceFace": 63,
+      "capSegment": null
+    },
+    {
+      "outputFace": 66,
+      "sourceFace": 64,
+      "capSegment": null
+    },
+    {
+      "outputFace": 67,
+      "sourceFace": 65,
+      "capSegment": null
+    },
+    {
+      "outputFace": 68,
+      "sourceFace": 66,
+      "capSegment": null
+    },
+    {
+      "outputFace": 69,
+      "sourceFace": 67,
+      "capSegment": null
+    },
+    {
+      "outputFace": 70,
+      "sourceFace": 68,
+      "capSegment": null
+    },
+    {
+      "outputFace": 71,
+      "sourceFace": 69,
+      "capSegment": null
+    },
+    {
+      "outputFace": 72,
+      "sourceFace": 70,
+      "capSegment": null
+    },
+    {
+      "outputFace": 73,
+      "sourceFace": 71,
+      "capSegment": null
+    },
+    {
+      "outputFace": 74,
+      "sourceFace": 72,
+      "capSegment": null
+    },
+    {
+      "outputFace": 75,
+      "sourceFace": 73,
+      "capSegment": null
+    },
+    {
+      "outputFace": 76,
+      "sourceFace": 74,
+      "capSegment": null
+    },
+    {
+      "outputFace": 77,
+      "sourceFace": 75,
+      "capSegment": null
+    },
+    {
+      "outputFace": 78,
+      "sourceFace": 76,
+      "capSegment": null
+    },
+    {
+      "outputFace": 79,
+      "sourceFace": 77,
+      "capSegment": null
+    },
+    {
+      "outputFace": 80,
+      "sourceFace": 78,
+      "capSegment": null
+    },
+    {
+      "outputFace": 81,
+      "sourceFace": 79,
+      "capSegment": null
+    },
+    {
+      "outputFace": 82,
+      "sourceFace": 80,
+      "capSegment": null
+    },
+    {
+      "outputFace": 83,
+      "sourceFace": 81,
+      "capSegment": null
+    },
+    {
+      "outputFace": 84,
+      "sourceFace": 82,
+      "capSegment": null
+    },
+    {
+      "outputFace": 85,
+      "sourceFace": 83,
+      "capSegment": null
+    },
+    {
+      "outputFace": 86,
+      "sourceFace": 84,
+      "capSegment": null
+    },
+    {
+      "outputFace": 87,
+      "sourceFace": 85,
+      "capSegment": null
+    },
+    {
+      "outputFace": 88,
+      "sourceFace": 86,
+      "capSegment": null
+    },
+    {
+      "outputFace": 89,
+      "sourceFace": 87,
+      "capSegment": null
+    },
+    {
+      "outputFace": 90,
+      "sourceFace": 87,
+      "capSegment": null
+    },
+    {
+      "outputFace": 91,
+      "sourceFace": 88,
+      "capSegment": null
+    },
+    {
+      "outputFace": 92,
+      "sourceFace": 88,
+      "capSegment": null
+    },
+    {
+      "outputFace": 93,
+      "sourceFace": 89,
+      "capSegment": null
+    },
+    {
+      "outputFace": 94,
+      "sourceFace": 90,
+      "capSegment": null
+    },
+    {
+      "outputFace": 95,
+      "sourceFace": 91,
+      "capSegment": null
+    },
+    {
+      "outputFace": 96,
+      "sourceFace": 92,
+      "capSegment": null
+    },
+    {
+      "outputFace": 97,
+      "sourceFace": 93,
+      "capSegment": null
+    },
+    {
+      "outputFace": 98,
+      "sourceFace": 94,
+      "capSegment": null
+    },
+    {
+      "outputFace": 99,
+      "sourceFace": 95,
+      "capSegment": null
+    },
+    {
+      "outputFace": 100,
+      "sourceFace": 96,
+      "capSegment": null
+    },
+    {
+      "outputFace": 101,
+      "sourceFace": 97,
+      "capSegment": null
+    },
+    {
+      "outputFace": 102,
+      "sourceFace": 98,
+      "capSegment": null
+    },
+    {
+      "outputFace": 103,
+      "sourceFace": 99,
+      "capSegment": null
+    },
+    {
+      "outputFace": 104,
+      "sourceFace": 100,
+      "capSegment": null
+    },
+    {
+      "outputFace": 105,
+      "sourceFace": 101,
+      "capSegment": null
+    },
+    {
+      "outputFace": 106,
+      "sourceFace": 102,
+      "capSegment": null
+    },
+    {
+      "outputFace": 107,
+      "sourceFace": 103,
+      "capSegment": null
+    },
+    {
+      "outputFace": 108,
+      "sourceFace": 104,
+      "capSegment": null
+    },
+    {
+      "outputFace": 109,
+      "sourceFace": 105,
+      "capSegment": null
+    },
+    {
+      "outputFace": 110,
+      "sourceFace": 106,
+      "capSegment": null
+    },
+    {
+      "outputFace": 111,
+      "sourceFace": 107,
+      "capSegment": null
+    },
+    {
+      "outputFace": 112,
+      "sourceFace": 108,
+      "capSegment": null
+    },
+    {
+      "outputFace": 113,
+      "sourceFace": 109,
+      "capSegment": null
+    },
+    {
+      "outputFace": 114,
+      "sourceFace": 110,
+      "capSegment": null
+    },
+    {
+      "outputFace": 115,
+      "sourceFace": 111,
+      "capSegment": null
+    },
+    {
+      "outputFace": 116,
+      "sourceFace": 112,
+      "capSegment": null
+    },
+    {
+      "outputFace": 117,
+      "sourceFace": 113,
+      "capSegment": null
+    },
+    {
+      "outputFace": 118,
+      "sourceFace": 114,
+      "capSegment": null
+    },
+    {
+      "outputFace": 119,
+      "sourceFace": 115,
+      "capSegment": null
+    },
+    {
+      "outputFace": 120,
+      "sourceFace": 116,
+      "capSegment": null
+    },
+    {
+      "outputFace": 121,
+      "sourceFace": 117,
+      "capSegment": null
+    },
+    {
+      "outputFace": 122,
+      "sourceFace": 118,
+      "capSegment": null
+    },
+    {
+      "outputFace": 123,
+      "sourceFace": 119,
+      "capSegment": null
+    },
+    {
+      "outputFace": 124,
+      "sourceFace": 120,
+      "capSegment": null
+    },
+    {
+      "outputFace": 125,
+      "sourceFace": 121,
+      "capSegment": null
+    },
+    {
+      "outputFace": 126,
+      "sourceFace": 122,
+      "capSegment": null
+    },
+    {
+      "outputFace": 127,
+      "sourceFace": 123,
+      "capSegment": null
+    },
+    {
+      "outputFace": 128,
+      "sourceFace": 124,
+      "capSegment": null
+    },
+    {
+      "outputFace": 129,
+      "sourceFace": 125,
+      "capSegment": null
+    },
+    {
+      "outputFace": 130,
+      "sourceFace": 126,
+      "capSegment": null
+    },
+    {
+      "outputFace": 131,
+      "sourceFace": 127,
+      "capSegment": null
+    },
+    {
+      "outputFace": 132,
+      "sourceFace": 128,
+      "capSegment": null
+    },
+    {
+      "outputFace": 133,
+      "sourceFace": 129,
+      "capSegment": null
+    },
+    {
+      "outputFace": 134,
+      "sourceFace": 130,
+      "capSegment": null
+    },
+    {
+      "outputFace": 135,
+      "sourceFace": 131,
+      "capSegment": null
+    },
+    {
+      "outputFace": 136,
+      "sourceFace": 132,
+      "capSegment": null
+    },
+    {
+      "outputFace": 137,
+      "sourceFace": 133,
+      "capSegment": null
+    },
+    {
+      "outputFace": 138,
+      "sourceFace": 134,
+      "capSegment": null
+    },
+    {
+      "outputFace": 139,
+      "sourceFace": 135,
+      "capSegment": null
+    },
+    {
+      "outputFace": 140,
+      "sourceFace": 136,
+      "capSegment": null
+    },
+    {
+      "outputFace": 141,
+      "sourceFace": 137,
+      "capSegment": null
+    },
+    {
+      "outputFace": 142,
+      "sourceFace": 138,
+      "capSegment": null
+    },
+    {
+      "outputFace": 143,
+      "sourceFace": 139,
+      "capSegment": null
+    },
+    {
+      "outputFace": 144,
+      "sourceFace": 140,
+      "capSegment": null
+    },
+    {
+      "outputFace": 145,
+      "sourceFace": 141,
+      "capSegment": null
+    },
+    {
+      "outputFace": 146,
+      "sourceFace": 142,
+      "capSegment": null
+    },
+    {
+      "outputFace": 147,
+      "sourceFace": 143,
+      "capSegment": null
+    },
+    {
+      "outputFace": 148,
+      "sourceFace": 144,
+      "capSegment": null
+    },
+    {
+      "outputFace": 149,
+      "sourceFace": 145,
+      "capSegment": null
+    },
+    {
+      "outputFace": 150,
+      "sourceFace": 146,
+      "capSegment": null
+    },
+    {
+      "outputFace": 151,
+      "sourceFace": 147,
+      "capSegment": null
+    },
+    {
+      "outputFace": 152,
+      "sourceFace": 148,
+      "capSegment": null
+    },
+    {
+      "outputFace": 153,
+      "sourceFace": 149,
+      "capSegment": null
+    },
+    {
+      "outputFace": 154,
+      "sourceFace": 150,
+      "capSegment": null
+    },
+    {
+      "outputFace": 155,
+      "sourceFace": 151,
+      "capSegment": null
+    },
+    {
+      "outputFace": 156,
+      "sourceFace": 152,
+      "capSegment": null
+    },
+    {
+      "outputFace": 157,
+      "sourceFace": 153,
+      "capSegment": null
+    },
+    {
+      "outputFace": 158,
+      "sourceFace": 154,
+      "capSegment": null
+    },
+    {
+      "outputFace": 159,
+      "sourceFace": 155,
+      "capSegment": null
+    },
+    {
+      "outputFace": 160,
+      "sourceFace": 156,
+      "capSegment": null
+    },
+    {
+      "outputFace": 161,
+      "sourceFace": 157,
+      "capSegment": null
+    },
+    {
+      "outputFace": 162,
+      "sourceFace": 158,
+      "capSegment": null
+    },
+    {
+      "outputFace": 163,
+      "sourceFace": 159,
+      "capSegment": null
+    },
+    {
+      "outputFace": 164,
+      "sourceFace": 160,
+      "capSegment": null
+    },
+    {
+      "outputFace": 165,
+      "sourceFace": 161,
+      "capSegment": null
+    },
+    {
+      "outputFace": 166,
+      "sourceFace": 162,
+      "capSegment": null
+    },
+    {
+      "outputFace": 167,
+      "sourceFace": 163,
+      "capSegment": null
+    },
+    {
+      "outputFace": 168,
+      "sourceFace": 164,
+      "capSegment": null
+    },
+    {
+      "outputFace": 169,
+      "sourceFace": 165,
+      "capSegment": null
+    },
+    {
+      "outputFace": 170,
+      "sourceFace": 166,
+      "capSegment": null
+    },
+    {
+      "outputFace": 171,
+      "sourceFace": 167,
+      "capSegment": null
+    },
+    {
+      "outputFace": 172,
+      "sourceFace": 168,
+      "capSegment": null
+    },
+    {
+      "outputFace": 173,
+      "sourceFace": 169,
+      "capSegment": null
+    },
+    {
+      "outputFace": 174,
+      "sourceFace": 170,
+      "capSegment": null
+    },
+    {
+      "outputFace": 175,
+      "sourceFace": 171,
+      "capSegment": null
+    },
+    {
+      "outputFace": 176,
+      "sourceFace": 172,
+      "capSegment": null
+    },
+    {
+      "outputFace": 177,
+      "sourceFace": 173,
+      "capSegment": null
+    },
+    {
+      "outputFace": 178,
+      "sourceFace": 174,
+      "capSegment": null
+    },
+    {
+      "outputFace": 179,
+      "sourceFace": 175,
+      "capSegment": null
+    },
+    {
+      "outputFace": 180,
+      "sourceFace": 176,
+      "capSegment": null
+    },
+    {
+      "outputFace": 181,
+      "sourceFace": 177,
+      "capSegment": null
+    },
+    {
+      "outputFace": 182,
+      "sourceFace": 178,
+      "capSegment": null
+    },
+    {
+      "outputFace": 183,
+      "sourceFace": 179,
+      "capSegment": null
+    },
+    {
+      "outputFace": 184,
+      "sourceFace": 180,
+      "capSegment": null
+    },
+    {
+      "outputFace": 185,
+      "sourceFace": 181,
+      "capSegment": null
+    },
+    {
+      "outputFace": 186,
+      "sourceFace": 182,
+      "capSegment": null
+    },
+    {
+      "outputFace": 187,
+      "sourceFace": 183,
+      "capSegment": null
+    },
+    {
+      "outputFace": 188,
+      "sourceFace": 184,
+      "capSegment": null
+    },
+    {
+      "outputFace": 189,
+      "sourceFace": 185,
+      "capSegment": null
+    },
+    {
+      "outputFace": 190,
+      "sourceFace": 186,
+      "capSegment": null
+    },
+    {
+      "outputFace": 191,
+      "sourceFace": 187,
+      "capSegment": null
+    },
+    {
+      "outputFace": 192,
+      "sourceFace": 188,
+      "capSegment": null
+    },
+    {
+      "outputFace": 193,
+      "sourceFace": 189,
+      "capSegment": null
+    },
+    {
+      "outputFace": 194,
+      "sourceFace": 190,
+      "capSegment": null
+    },
+    {
+      "outputFace": 195,
+      "sourceFace": 191,
+      "capSegment": null
+    },
+    {
+      "outputFace": 196,
+      "sourceFace": 192,
+      "capSegment": null
+    },
+    {
+      "outputFace": 197,
+      "sourceFace": 193,
+      "capSegment": null
+    },
+    {
+      "outputFace": 198,
+      "sourceFace": 194,
+      "capSegment": null
+    },
+    {
+      "outputFace": 199,
+      "sourceFace": 195,
+      "capSegment": null
+    },
+    {
+      "outputFace": 200,
+      "sourceFace": 196,
+      "capSegment": null
+    },
+    {
+      "outputFace": 201,
+      "sourceFace": 197,
+      "capSegment": null
+    },
+    {
+      "outputFace": 202,
+      "sourceFace": 198,
+      "capSegment": null
+    },
+    {
+      "outputFace": 203,
+      "sourceFace": 199,
+      "capSegment": null
+    },
+    {
+      "outputFace": 204,
+      "sourceFace": 200,
+      "capSegment": null
+    },
+    {
+      "outputFace": 205,
+      "sourceFace": 201,
+      "capSegment": null
+    },
+    {
+      "outputFace": 206,
+      "sourceFace": 202,
+      "capSegment": null
+    },
+    {
+      "outputFace": 207,
+      "sourceFace": 203,
+      "capSegment": null
+    },
+    {
+      "outputFace": 208,
+      "sourceFace": 204,
+      "capSegment": null
+    },
+    {
+      "outputFace": 209,
+      "sourceFace": 205,
+      "capSegment": null
+    },
+    {
+      "outputFace": 210,
+      "sourceFace": 206,
+      "capSegment": null
+    },
+    {
+      "outputFace": 211,
+      "sourceFace": 207,
+      "capSegment": null
+    },
+    {
+      "outputFace": 212,
+      "sourceFace": 208,
+      "capSegment": null
+    },
+    {
+      "outputFace": 213,
+      "sourceFace": 209,
+      "capSegment": null
+    },
+    {
+      "outputFace": 214,
+      "sourceFace": 210,
+      "capSegment": null
+    },
+    {
+      "outputFace": 215,
+      "sourceFace": 211,
+      "capSegment": null
+    },
+    {
+      "outputFace": 216,
+      "sourceFace": 212,
+      "capSegment": null
+    },
+    {
+      "outputFace": 217,
+      "sourceFace": 213,
+      "capSegment": null
+    },
+    {
+      "outputFace": 218,
+      "sourceFace": 214,
+      "capSegment": null
+    },
+    {
+      "outputFace": 219,
+      "sourceFace": 215,
+      "capSegment": null
+    },
+    {
+      "outputFace": 220,
+      "sourceFace": 216,
+      "capSegment": null
+    },
+    {
+      "outputFace": 221,
+      "sourceFace": 217,
+      "capSegment": null
+    },
+    {
+      "outputFace": 222,
+      "sourceFace": 218,
+      "capSegment": null
+    },
+    {
+      "outputFace": 223,
+      "sourceFace": 219,
+      "capSegment": null
+    },
+    {
+      "outputFace": 224,
+      "sourceFace": 220,
+      "capSegment": null
+    },
+    {
+      "outputFace": 225,
+      "sourceFace": 221,
+      "capSegment": null
+    },
+    {
+      "outputFace": 226,
+      "sourceFace": 222,
+      "capSegment": null
+    },
+    {
+      "outputFace": 227,
+      "sourceFace": 223,
+      "capSegment": null
+    },
+    {
+      "outputFace": 228,
+      "sourceFace": 224,
+      "capSegment": null
+    },
+    {
+      "outputFace": 229,
+      "sourceFace": 225,
+      "capSegment": null
+    },
+    {
+      "outputFace": 230,
+      "sourceFace": 226,
+      "capSegment": null
+    },
+    {
+      "outputFace": 231,
+      "sourceFace": 227,
+      "capSegment": null
+    },
+    {
+      "outputFace": 232,
+      "sourceFace": 228,
+      "capSegment": null
+    },
+    {
+      "outputFace": 233,
+      "sourceFace": 229,
+      "capSegment": null
+    },
+    {
+      "outputFace": 234,
+      "sourceFace": 230,
+      "capSegment": null
+    },
+    {
+      "outputFace": 235,
+      "sourceFace": 231,
+      "capSegment": null
+    },
+    {
+      "outputFace": 236,
+      "sourceFace": 232,
+      "capSegment": null
+    },
+    {
+      "outputFace": 237,
+      "sourceFace": 233,
+      "capSegment": null
+    },
+    {
+      "outputFace": 238,
+      "sourceFace": 234,
+      "capSegment": null
+    },
+    {
+      "outputFace": 239,
+      "sourceFace": 235,
+      "capSegment": null
+    },
+    {
+      "outputFace": 240,
+      "sourceFace": 236,
+      "capSegment": null
+    },
+    {
+      "outputFace": 241,
+      "sourceFace": 237,
+      "capSegment": null
+    },
+    {
+      "outputFace": 242,
+      "sourceFace": 238,
+      "capSegment": null
+    },
+    {
+      "outputFace": 243,
+      "sourceFace": 239,
+      "capSegment": null
+    },
+    {
+      "outputFace": 244,
+      "sourceFace": 240,
+      "capSegment": null
+    },
+    {
+      "outputFace": 245,
+      "sourceFace": 241,
+      "capSegment": null
+    },
+    {
+      "outputFace": 246,
+      "sourceFace": 242,
+      "capSegment": null
+    },
+    {
+      "outputFace": 247,
+      "sourceFace": 243,
+      "capSegment": null
+    },
+    {
+      "outputFace": 248,
+      "sourceFace": 244,
+      "capSegment": null
+    },
+    {
+      "outputFace": 249,
+      "sourceFace": 245,
+      "capSegment": null
+    },
+    {
+      "outputFace": 250,
+      "sourceFace": 246,
+      "capSegment": null
+    },
+    {
+      "outputFace": 251,
+      "sourceFace": 247,
+      "capSegment": null
+    },
+    {
+      "outputFace": 252,
+      "sourceFace": 248,
+      "capSegment": null
+    },
+    {
+      "outputFace": 253,
+      "sourceFace": 249,
+      "capSegment": null
+    },
+    {
+      "outputFace": 254,
+      "sourceFace": 250,
+      "capSegment": null
+    },
+    {
+      "outputFace": 255,
+      "sourceFace": 251,
+      "capSegment": null
+    },
+    {
+      "outputFace": 256,
+      "sourceFace": 252,
+      "capSegment": null
+    },
+    {
+      "outputFace": 257,
+      "sourceFace": 253,
+      "capSegment": null
+    },
+    {
+      "outputFace": 258,
+      "sourceFace": 254,
+      "capSegment": null
+    },
+    {
+      "outputFace": 259,
+      "sourceFace": 255,
+      "capSegment": null
+    },
+    {
+      "outputFace": 260,
+      "sourceFace": 256,
+      "capSegment": null
+    },
+    {
+      "outputFace": 261,
+      "sourceFace": 257,
+      "capSegment": null
+    },
+    {
+      "outputFace": 262,
+      "sourceFace": 258,
+      "capSegment": null
+    },
+    {
+      "outputFace": 263,
+      "sourceFace": 259,
+      "capSegment": null
+    },
+    {
+      "outputFace": 264,
+      "sourceFace": 260,
+      "capSegment": null
+    },
+    {
+      "outputFace": 265,
+      "sourceFace": 261,
+      "capSegment": null
+    },
+    {
+      "outputFace": 266,
+      "sourceFace": 262,
+      "capSegment": null
+    },
+    {
+      "outputFace": 267,
+      "sourceFace": 263,
+      "capSegment": null
+    },
+    {
+      "outputFace": 268,
+      "sourceFace": 264,
+      "capSegment": null
+    },
+    {
+      "outputFace": 269,
+      "sourceFace": 265,
+      "capSegment": null
+    },
+    {
+      "outputFace": 270,
+      "sourceFace": 266,
+      "capSegment": null
+    },
+    {
+      "outputFace": 271,
+      "sourceFace": 267,
+      "capSegment": null
+    },
+    {
+      "outputFace": 272,
+      "sourceFace": 268,
+      "capSegment": null
+    },
+    {
+      "outputFace": 273,
+      "sourceFace": 269,
+      "capSegment": null
+    },
+    {
+      "outputFace": 274,
+      "sourceFace": 270,
+      "capSegment": null
+    },
+    {
+      "outputFace": 275,
+      "sourceFace": 271,
+      "capSegment": null
+    },
+    {
+      "outputFace": 276,
+      "sourceFace": 272,
+      "capSegment": null
+    },
+    {
+      "outputFace": 277,
+      "sourceFace": 272,
+      "capSegment": null
+    },
+    {
+      "outputFace": 278,
+      "sourceFace": 273,
+      "capSegment": null
+    },
+    {
+      "outputFace": 279,
+      "sourceFace": 274,
+      "capSegment": null
+    },
+    {
+      "outputFace": 280,
+      "sourceFace": 274,
+      "capSegment": null
+    },
+    {
+      "outputFace": 281,
+      "sourceFace": 275,
+      "capSegment": null
+    },
+    {
+      "outputFace": 282,
+      "sourceFace": 276,
+      "capSegment": null
+    },
+    {
+      "outputFace": 283,
+      "sourceFace": 276,
+      "capSegment": null
+    },
+    {
+      "outputFace": 284,
+      "sourceFace": 277,
+      "capSegment": null
+    },
+    {
+      "outputFace": 285,
+      "sourceFace": 278,
+      "capSegment": null
+    },
+    {
+      "outputFace": 286,
+      "sourceFace": 278,
+      "capSegment": null
+    },
+    {
+      "outputFace": 287,
+      "sourceFace": 279,
+      "capSegment": null
+    },
+    {
+      "outputFace": 288,
+      "sourceFace": 280,
+      "capSegment": null
+    },
+    {
+      "outputFace": 289,
+      "sourceFace": 281,
+      "capSegment": null
+    },
+    {
+      "outputFace": 290,
+      "sourceFace": 282,
+      "capSegment": null
+    },
+    {
+      "outputFace": 291,
+      "sourceFace": 283,
+      "capSegment": null
+    },
+    {
+      "outputFace": 292,
+      "sourceFace": 284,
+      "capSegment": null
+    },
+    {
+      "outputFace": 293,
+      "sourceFace": 285,
+      "capSegment": null
+    },
+    {
+      "outputFace": 294,
+      "sourceFace": 286,
+      "capSegment": null
+    },
+    {
+      "outputFace": 295,
+      "sourceFace": 287,
+      "capSegment": null
+    },
+    {
+      "outputFace": 296,
+      "sourceFace": 288,
+      "capSegment": null
+    },
+    {
+      "outputFace": 297,
+      "sourceFace": 289,
+      "capSegment": null
+    },
+    {
+      "outputFace": 298,
+      "sourceFace": 290,
+      "capSegment": null
+    },
+    {
+      "outputFace": 299,
+      "sourceFace": 291,
+      "capSegment": null
+    },
+    {
+      "outputFace": 300,
+      "sourceFace": 292,
+      "capSegment": null
+    },
+    {
+      "outputFace": 301,
+      "sourceFace": 293,
+      "capSegment": null
+    },
+    {
+      "outputFace": 302,
+      "sourceFace": 294,
+      "capSegment": null
+    },
+    {
+      "outputFace": 303,
+      "sourceFace": 295,
+      "capSegment": null
+    },
+    {
+      "outputFace": 304,
+      "sourceFace": 296,
+      "capSegment": null
+    },
+    {
+      "outputFace": 305,
+      "sourceFace": 297,
+      "capSegment": null
+    },
+    {
+      "outputFace": 306,
+      "sourceFace": 297,
+      "capSegment": null
+    },
+    {
+      "outputFace": 307,
+      "sourceFace": 298,
+      "capSegment": null
+    },
+    {
+      "outputFace": 308,
+      "sourceFace": 299,
+      "capSegment": null
+    },
+    {
+      "outputFace": 309,
+      "sourceFace": 299,
+      "capSegment": null
+    },
+    {
+      "outputFace": 310,
+      "sourceFace": 300,
+      "capSegment": null
+    },
+    {
+      "outputFace": 311,
+      "sourceFace": 301,
+      "capSegment": null
+    },
+    {
+      "outputFace": 312,
+      "sourceFace": 302,
+      "capSegment": null
+    },
+    {
+      "outputFace": 313,
+      "sourceFace": 302,
+      "capSegment": null
+    },
+    {
+      "outputFace": 314,
+      "sourceFace": 303,
+      "capSegment": null
+    },
+    {
+      "outputFace": 315,
+      "sourceFace": 304,
+      "capSegment": null
+    },
+    {
+      "outputFace": 316,
+      "sourceFace": 305,
+      "capSegment": null
+    },
+    {
+      "outputFace": 317,
+      "sourceFace": 306,
+      "capSegment": null
+    },
+    {
+      "outputFace": 318,
+      "sourceFace": 307,
+      "capSegment": null
+    },
+    {
+      "outputFace": 319,
+      "sourceFace": 308,
+      "capSegment": null
+    },
+    {
+      "outputFace": 320,
+      "sourceFace": 309,
+      "capSegment": null
+    },
+    {
+      "outputFace": 321,
+      "sourceFace": 310,
+      "capSegment": null
+    },
+    {
+      "outputFace": 322,
+      "sourceFace": 311,
+      "capSegment": null
+    },
+    {
+      "outputFace": 323,
+      "sourceFace": 312,
+      "capSegment": null
+    },
+    {
+      "outputFace": 324,
+      "sourceFace": 313,
+      "capSegment": null
+    },
+    {
+      "outputFace": 325,
+      "sourceFace": 314,
+      "capSegment": null
+    },
+    {
+      "outputFace": 326,
+      "sourceFace": 315,
+      "capSegment": null
+    },
+    {
+      "outputFace": 327,
+      "sourceFace": 316,
+      "capSegment": null
+    },
+    {
+      "outputFace": 328,
+      "sourceFace": 317,
+      "capSegment": null
+    },
+    {
+      "outputFace": 329,
+      "sourceFace": 318,
+      "capSegment": null
+    },
+    {
+      "outputFace": 330,
+      "sourceFace": 319,
+      "capSegment": null
+    },
+    {
+      "outputFace": 331,
+      "sourceFace": 320,
+      "capSegment": null
+    },
+    {
+      "outputFace": 332,
+      "sourceFace": 321,
+      "capSegment": null
+    },
+    {
+      "outputFace": 333,
+      "sourceFace": 322,
+      "capSegment": null
+    },
+    {
+      "outputFace": 334,
+      "sourceFace": 323,
+      "capSegment": null
+    },
+    {
+      "outputFace": 335,
+      "sourceFace": 324,
+      "capSegment": null
+    },
+    {
+      "outputFace": 336,
+      "sourceFace": 325,
+      "capSegment": null
+    },
+    {
+      "outputFace": 337,
+      "sourceFace": 326,
+      "capSegment": null
+    },
+    {
+      "outputFace": 338,
+      "sourceFace": 327,
+      "capSegment": null
+    },
+    {
+      "outputFace": 339,
+      "sourceFace": 328,
+      "capSegment": null
+    },
+    {
+      "outputFace": 340,
+      "sourceFace": 329,
+      "capSegment": null
+    },
+    {
+      "outputFace": 341,
+      "sourceFace": 330,
+      "capSegment": null
+    },
+    {
+      "outputFace": 342,
+      "sourceFace": 331,
+      "capSegment": null
+    },
+    {
+      "outputFace": 343,
+      "sourceFace": 332,
+      "capSegment": null
+    },
+    {
+      "outputFace": 344,
+      "sourceFace": 333,
+      "capSegment": null
+    },
+    {
+      "outputFace": 345,
+      "sourceFace": 334,
+      "capSegment": null
+    },
+    {
+      "outputFace": 346,
+      "sourceFace": 335,
+      "capSegment": null
+    },
+    {
+      "outputFace": 347,
+      "sourceFace": 336,
+      "capSegment": null
+    },
+    {
+      "outputFace": 348,
+      "sourceFace": 337,
+      "capSegment": null
+    },
+    {
+      "outputFace": 349,
+      "sourceFace": 338,
+      "capSegment": null
+    },
+    {
+      "outputFace": 350,
+      "sourceFace": null,
+      "capSegment": 0
+    },
+    {
+      "outputFace": 351,
+      "sourceFace": null,
+      "capSegment": 0
+    },
+    {
+      "outputFace": 352,
+      "sourceFace": null,
+      "capSegment": 0
+    },
+    {
+      "outputFace": 353,
+      "sourceFace": null,
+      "capSegment": 0
+    },
+    {
+      "outputFace": 354,
+      "sourceFace": null,
+      "capSegment": 0
+    },
+    {
+      "outputFace": 355,
+      "sourceFace": null,
+      "capSegment": 0
+    },
+    {
+      "outputFace": 356,
+      "sourceFace": null,
+      "capSegment": 0
+    },
+    {
+      "outputFace": 357,
+      "sourceFace": null,
+      "capSegment": 0
+    },
+    {
+      "outputFace": 358,
+      "sourceFace": null,
+      "capSegment": 1
+    },
+    {
+      "outputFace": 359,
+      "sourceFace": null,
+      "capSegment": 2
+    },
+    {
+      "outputFace": 360,
+      "sourceFace": null,
+      "capSegment": 2
+    },
+    {
+      "outputFace": 361,
+      "sourceFace": null,
+      "capSegment": 2
+    },
+    {
+      "outputFace": 362,
+      "sourceFace": null,
+      "capSegment": 2
+    },
+    {
+      "outputFace": 363,
+      "sourceFace": null,
+      "capSegment": 2
+    },
+    {
+      "outputFace": 364,
+      "sourceFace": null,
+      "capSegment": 2
+    },
+    {
+      "outputFace": 365,
+      "sourceFace": null,
+      "capSegment": 2
+    },
+    {
+      "outputFace": 366,
+      "sourceFace": null,
+      "capSegment": 2
+    },
+    {
+      "outputFace": 367,
+      "sourceFace": null,
+      "capSegment": 3
+    },
+    {
+      "outputFace": 368,
+      "sourceFace": null,
+      "capSegment": 3
+    },
+    {
+      "outputFace": 369,
+      "sourceFace": null,
+      "capSegment": 3
+    },
+    {
+      "outputFace": 370,
+      "sourceFace": null,
+      "capSegment": 3
+    },
+    {
+      "outputFace": 371,
+      "sourceFace": null,
+      "capSegment": 3
+    },
+    {
+      "outputFace": 372,
+      "sourceFace": null,
+      "capSegment": 3
+    },
+    {
+      "outputFace": 373,
+      "sourceFace": null,
+      "capSegment": 4
+    },
+    {
+      "outputFace": 374,
+      "sourceFace": null,
+      "capSegment": 4
+    },
+    {
+      "outputFace": 375,
+      "sourceFace": null,
+      "capSegment": 4
+    },
+    {
+      "outputFace": 376,
+      "sourceFace": null,
+      "capSegment": 4
+    },
+    {
+      "outputFace": 377,
+      "sourceFace": null,
+      "capSegment": 4
+    },
+    {
+      "outputFace": 378,
+      "sourceFace": null,
+      "capSegment": 4
+    },
+    {
+      "outputFace": 379,
+      "sourceFace": null,
+      "capSegment": 4
+    },
+    {
+      "outputFace": 380,
+      "sourceFace": null,
+      "capSegment": 4
+    },
+    {
+      "outputFace": 381,
+      "sourceFace": null,
+      "capSegment": 5
+    },
+    {
+      "outputFace": 382,
+      "sourceFace": null,
+      "capSegment": 5
+    },
+    {
+      "outputFace": 383,
+      "sourceFace": null,
+      "capSegment": 5
+    },
+    {
+      "outputFace": 384,
+      "sourceFace": null,
+      "capSegment": 5
+    },
+    {
+      "outputFace": 385,
+      "sourceFace": null,
+      "capSegment": 5
+    },
+    {
+      "outputFace": 386,
+      "sourceFace": null,
+      "capSegment": 6
+    },
+    {
+      "outputFace": 387,
+      "sourceFace": null,
+      "capSegment": 6
+    },
+    {
+      "outputFace": 388,
+      "sourceFace": null,
+      "capSegment": 6
+    },
+    {
+      "outputFace": 389,
+      "sourceFace": null,
+      "capSegment": 6
+    },
+    {
+      "outputFace": 390,
+      "sourceFace": null,
+      "capSegment": 6
+    },
+    {
+      "outputFace": 391,
+      "sourceFace": null,
+      "capSegment": 6
+    },
+    {
+      "outputFace": 392,
+      "sourceFace": null,
+      "capSegment": 7
+    },
+    {
+      "outputFace": 393,
+      "sourceFace": null,
+      "capSegment": 7
+    },
+    {
+      "outputFace": 394,
+      "sourceFace": null,
+      "capSegment": 7
+    },
+    {
+      "outputFace": 395,
+      "sourceFace": null,
+      "capSegment": 7
+    },
+    {
+      "outputFace": 396,
+      "sourceFace": null,
+      "capSegment": 7
+    },
+    {
+      "outputFace": 397,
+      "sourceFace": null,
+      "capSegment": 7
+    }
+  ],
+  "removedFaces": [
+    {
+      "sourceFace": 58,
+      "removedArea": 273.5404384715404,
+      "intersection": [
+        [
+          668.7253474082858,
+          29.99509533840617,
+          1489.0
+        ],
+        [
+          685.963408328842,
+          24.02998884199509,
+          1510
+        ],
+        [
+          694.1464392894353,
+          25.574042706827214,
+          1489.0
+        ]
+      ]
+    },
+    {
+      "sourceFace": 60,
+      "removedArea": 199.3532980146995,
+      "intersection": [
+        [
+          827.5674919210143,
+          -31.378947368421052,
+          1489.0
+        ],
+        [
+          835.963408328842,
+          -40,
+          1510
+        ],
+        [
+          844.1464392894353,
+          -40.0,
+          1489.0
+        ]
+      ]
+    },
+    {
+      "sourceFace": 64,
+      "removedArea": 803.8004389672546,
+      "intersection": [
+        [
+          640.0,
+          28.720679627644948,
+          1510.0
+        ],
+        [
+          685.963408328842,
+          24.02998884199509,
+          1510
+        ],
+        [
+          668.7253474082858,
+          29.995095338406166,
+          1489.0
+        ],
+        [
+          640.0,
+          32.92659514013185,
+          1489.0
+        ]
+      ]
+    },
+    {
+      "sourceFace": 65,
+      "removedArea": 3313.510288049967,
+      "intersection": [
+        [
+          694.1464392894353,
+          25.574042706827214,
+          1489.0
+        ],
+        [
+          685.963408328842,
+          24.02998884199509,
+          1510
+        ],
+        [
+          835.963408328842,
+          -40,
+          1510
+        ],
+        [
+          827.5674919210143,
+          -31.378947368421052,
+          1489.0
+        ]
+      ]
+    },
+    {
+      "sourceFace": 71,
+      "removedArea": 552.4274593851105,
+      "intersection": [
+        [
+          677.7240213389422,
+          22.990159790001012,
+          1523.0
+        ],
+        [
+          685.963408328842,
+          24.02998884199509,
+          1510
+        ],
+        [
+          640.0,
+          28.720679627644948,
+          1510.0
+        ],
+        [
+          640.0,
+          26.83999873201867,
+          1523.0
+        ]
+      ]
+    },
+    {
+      "sourceFace": 74,
+      "removedArea": 2090.201888556535,
+      "intersection": [
+        [
+          685.963408328842,
+          24.02998884199509,
+          1510
+        ],
+        [
+          690.7240213389422,
+          18.480723142355515,
+          1523.0
+        ],
+        [
+          827.7240213389422,
+          -40.0,
+          1523.0
+        ],
+        [
+          835.963408328842,
+          -40,
+          1510
+        ]
+      ]
+    },
+    {
+      "sourceFace": 87,
+      "removedArea": 30.432503199828037,
+      "intersection": [
+        [
+          685.963408328842,
+          24.02998884199509,
+          1510
+        ],
+        [
+          677.7240213389422,
+          22.990159790001012,
+          1523.0
+        ],
+        [
+          681.9799129403424,
+          21.51387720878867,
+          1523.0
+        ]
+      ]
+    },
+    {
+      "sourceFace": 88,
+      "removedArea": 62.52628867062367,
+      "intersection": [
+        [
+          685.963408328842,
+          24.02998884199509,
+          1510
+        ],
+        [
+          681.9799129403424,
+          21.51387720878867,
+          1523.0
+        ],
+        [
+          690.7240213389422,
+          18.480723142355515,
+          1523.0
+        ]
+      ]
+    },
+    {
+      "sourceFace": 271,
+      "removedArea": 205.8,
+      "intersection": [
+        [
+          640.0,
+          -14.0,
+          1489.0
+        ],
+        [
+          640.0,
+          -14,
+          1510.0
+        ],
+        [
+          640.0,
+          0.0,
+          1510.0
+        ],
+        [
+          640.0,
+          -8.4,
+          1489.0
+        ]
+      ]
+    },
+    {
+      "sourceFace": 272,
+      "removedArea": 88.19999999999999,
+      "intersection": [
+        [
+          640.0,
+          -8.399999999999999,
+          1489.0
+        ],
+        [
+          640.0,
+          0.0,
+          1510.0
+        ],
+        [
+          640.0,
+          0.0,
+          1489.0
+        ]
+      ]
+    },
+    {
+      "sourceFace": 273,
+      "removedArea": 176.4,
+      "intersection": [
+        [
+          640.0,
+          0.0,
+          1489.0
+        ],
+        [
+          640.0,
+          0.0,
+          1510.0
+        ],
+        [
+          640.0,
+          12.0,
+          1510.0
+        ],
+        [
+          640.0,
+          4.800000000000001,
+          1489.0
+        ]
+      ]
+    },
+    {
+      "sourceFace": 274,
+      "removedArea": 75.6,
+      "intersection": [
+        [
+          640.0,
+          4.800000000000001,
+          1489.0
+        ],
+        [
+          640.0,
+          12.0,
+          1510.0
+        ],
+        [
+          640.0,
+          12.0,
+          1489.0
+        ]
+      ]
+    },
+    {
+      "sourceFace": 275,
+      "removedArea": 205.8,
+      "intersection": [
+        [
+          640.0,
+          12.0,
+          1489.0
+        ],
+        [
+          640.0,
+          12.0,
+          1510.0
+        ],
+        [
+          640.0,
+          26.0,
+          1510.0
+        ],
+        [
+          640.0,
+          17.6,
+          1489.0
+        ]
+      ]
+    },
+    {
+      "sourceFace": 276,
+      "removedArea": 88.19999999999999,
+      "intersection": [
+        [
+          640.0,
+          17.6,
+          1489.0
+        ],
+        [
+          640.0,
+          26.0,
+          1510.0
+        ],
+        [
+          640.0,
+          26.0,
+          1489.0
+        ]
+      ]
+    },
+    {
+      "sourceFace": 277,
+      "removedArea": 39.993990526380756,
+      "intersection": [
+        [
+          640.0,
+          26.0,
+          1510.0
+        ],
+        [
+          640.0,
+          28.720679627644948,
+          1510.0
+        ],
+        [
+          640.0,
+          32.92659514013185,
+          1489.0
+        ],
+        [
+          640.0,
+          31.83832328907387,
+          1489.0
+        ]
+      ]
+    },
+    {
+      "sourceFace": 278,
+      "removedArea": 61.30239453527563,
+      "intersection": [
+        [
+          640.0,
+          26.0,
+          1489.0
+        ],
+        [
+          640.0,
+          26.0,
+          1510.0
+        ],
+        [
+          640.0,
+          31.83832328907387,
+          1489.0
+        ]
+      ]
+    },
+    {
+      "sourceFace": 297,
+      "removedArea": 47.32,
+      "intersection": [
+        [
+          640.0,
+          -14,
+          1510.0
+        ],
+        [
+          640.0,
+          -14.0,
+          1523.0
+        ],
+        [
+          640.0,
+          -6.72,
+          1523.0
+        ]
+      ]
+    },
+    {
+      "sourceFace": 298,
+      "removedArea": 134.68,
+      "intersection": [
+        [
+          640.0,
+          0.0,
+          1510.0
+        ],
+        [
+          640.0,
+          -14,
+          1510.0
+        ],
+        [
+          640.0,
+          -6.72,
+          1523.0
+        ],
+        [
+          640.0,
+          0.0,
+          1523.0
+        ]
+      ]
+    },
+    {
+      "sourceFace": 299,
+      "removedArea": 40.56000000000001,
+      "intersection": [
+        [
+          640.0,
+          0.0,
+          1510.0
+        ],
+        [
+          640.0,
+          0.0,
+          1523.0
+        ],
+        [
+          640.0,
+          6.240000000000001,
+          1523.0
+        ]
+      ]
+    },
+    {
+      "sourceFace": 300,
+      "removedArea": 115.44,
+      "intersection": [
+        [
+          640.0,
+          12.0,
+          1510.0
+        ],
+        [
+          640.0,
+          0.0,
+          1510.0
+        ],
+        [
+          640.0,
+          6.240000000000001,
+          1523.0
+        ],
+        [
+          640.0,
+          12.000000000000002,
+          1523.0
+        ]
+      ]
+    },
+    {
+      "sourceFace": 302,
+      "removedArea": 62.90412136842969,
+      "intersection": [
+        [
+          640.0,
+          12.0,
+          1510.0
+        ],
+        [
+          640.0,
+          11.999999999999998,
+          1523.0
+        ],
+        [
+          640.0,
+          21.677557133604566,
+          1523.0
+        ]
+      ]
+    },
+    {
+      "sourceFace": 303,
+      "removedArea": 119.09587863157032,
+      "intersection": [
+        [
+          640.0,
+          26.0,
+          1510.0
+        ],
+        [
+          640.0,
+          12.0,
+          1510.0
+        ],
+        [
+          640.0,
+          21.677557133604566,
+          1523.0
+        ],
+        [
+          640.0,
+          26.0,
+          1523.0
+        ]
+      ]
+    },
+    {
+      "sourceFace": 304,
+      "removedArea": 23.144409337813478,
+      "intersection": [
+        [
+          640.0,
+          26.0,
+          1510.0
+        ],
+        [
+          640.0,
+          26.0,
+          1523.0
+        ],
+        [
+          640.0,
+          26.839998732018664,
+          1523.0
+        ],
+        [
+          640.0,
+          28.720679627644948,
+          1510.0
+        ]
+      ]
+    }
+  ],
+  "retainedTriangleCount": 349,
+  "newTriangleCount": 397,
+  "oldTriangleCount": 338,
+  "bounds": {
+    "min": [
+      -535,
+      -40,
+      920
+    ],
+    "max": [
+      910.000355115163,
+      69.33879447455139,
+      2270
+    ]
+  },
+  "unchangedMeshRecordHashes": {
+    "tree_a__000": "bf3491ba2f2c1074f2d92ac5ebe5e5bb2a7f4d4e8259dd77334a0b11bb1e4c06",
+    "tree_b__000": "63e7b42d8cbf60bf765e2f450e8262a09aab7c9f227b76768f400fd88c2dfa2a",
+    "bush__000": "2f2bd950cb5f4fbd1954f6df5a78b5802df223d6dd1989bf87a38e2e91e7dacc",
+    "silhouette_fern_rocks__000": "2ccb76a2157f6fa0e684fe6ffe501201be1d3e59d5dd4e22c785dff9d9c1d1dc",
+    "silhouette_ruined_waymarker__000": "86f9bbde3ceaaf6f11bc53b8bd60e69884b627a622a91f3a67550af958ee2cb7",
+    "corridor_bridge_rails": "7171f28cace4c01aa7c35d6774840a790af58277e510893fa019691ef1a3daae",
+    "corridor_lookout_pier": "30d5e3aefd11c2069770da7efecfa26ab057f59d445e8958372b88622087162f",
+    "landforms_west__000__bounded_000": "131f89956a175f0af3de5a096ae3b8028bb9490fd6c9be5821357f9285184356",
+    "landforms_west__000__bounded_001": "80db3203b66dee8374e18380266ee38573eb0b263e0d94f3ad376bacf962cb1b",
+    "landforms_east__000__bounded_000": "e279e7f9931486859d8ee60dab20d0db001e2547c70086c528eb0fd16538182f",
+    "landforms_east__000__bounded_001": "7be0e1d0f4b2a90087d8463a416685995f3ffc7ca71a0adbdb9a146f3030e323",
+    "coast_bay_water": "96034e403bb9cfe0c37992aa78938c7ef84f9fdf59b1691d6c9acc47f4bebf9b",
+    "coast_headland_banks__bounded_000": "5207c4bf9c2f0ec1cf4c379c0b11b8dd0e915e5329df680997a8bd7ec714f830",
+    "coast_headland_banks__bounded_001": "08cf6da3d8b015f12ad905f195e7eafd04f8e2d59ede545115cb60cd3c43088f",
+    "coast_headland_banks__bounded_002": "9d5fe168d06b28992596ed79190ba495b494e6509ea03445df3e4a209b2afad6",
+    "bespoke_watch_spire__bounded_000": "53876a2613effbd499bc5691701914fda5e2e60236fdcbf529dd9e45cdf2f65a",
+    "bespoke_watch_spire__bounded_001": "e4848cd60fecd9255c1a79d8df0ef8a5367f3df131929957717a7c0f3062d7b8",
+    "bespoke_watch_spire__bounded_002": "d83348a90355a106fc5b17ab8097d0b27fcade9d7c8700d08bbdc5b71c2adb62",
+    "bespoke_watch_spire__bounded_003": "e85d0a13994a2de3d00d8d9a6f30e04a8dd13b08bc8bc9c5a1de71fc49fd5a17"
+  },
+  "placementsRecordSha256": "4f84bb869fafe2f5680affdad3f06ff738aad18bedf7c4ddab983abb8b463d99",
+  "placementsUnchanged": 72,
+  "closureScope": "New notch vertical faces only, down to existing bank minimum Y=-40. Original packet is open terrain, not globally watertight.",
+  "clearance": "Z1493..1519 lane/pad union plus 4stud shoulders; X636 overlaps prior city clearance through X640. Native collision authority unchanged.",
+  "actualRemovedBounds": {
+    "min": [
+      640.0,
+      -40,
+      1489.0
+    ],
+    "max": [
+      844.1464392894353,
+      32.92659514013185,
+      1523.0
+    ]
+  }
+}

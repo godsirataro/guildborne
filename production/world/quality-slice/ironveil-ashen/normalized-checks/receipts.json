@@ -1,0 +1,33 @@
+{
+  "status": "LOCAL_ONLY",
+  "inputs": {
+    "src/shared/Config/WorldQuality.luau": "fcdb5b54290613e3b09390cec687656e387d0e8c336fec200d3335ae01a99d23",
+    "src/server/Services/WorldQualitySlice.luau": "3f283b8046053493209a833716cdcec7aa67edbb2b23338442af12e3f347674d",
+    "tests/world_quality.luau": "9194937cc03a8a36a6193c7673f8fec472d4906cbee337c139df4a0dd80a1ff6"
+  },
+  "runs": [
+    {
+      "name": "compile",
+      "command": [
+        "C:\\Work\\MySelf\\Guildborne-ironveil-ashen\\.tools\\luau\\luau-compile.exe",
+        "--null",
+        "src/shared/Config/WorldQuality.luau",
+        "src/server/Services/WorldQualitySlice.luau",
+        "tests/world_quality.luau"
+      ],
+      "exitCode": 0,
+      "stdoutSHA256": "5e910a6b46f42cfde5e867d3f58e8364201702879c60b21bb6d727a38709705b",
+      "stderrSHA256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "name": "contracts",
+      "command": [
+        "C:\\Work\\MySelf\\Guildborne-ironveil-ashen\\.tools\\luau\\luau.exe",
+        "build/ironveil-ashen-source-check.luau"
+      ],
+      "exitCode": 0,
+      "stdoutSHA256": "c5eef6b8231a814d33ee3ea799e2a4cf612858b6f2f77fed31cbc8ec881bf9a6",
+      "stderrSHA256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    }
+  ]
+}

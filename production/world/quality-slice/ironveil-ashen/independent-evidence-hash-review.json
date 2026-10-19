@@ -1,0 +1,52 @@
+{
+  "status": "PASS_LOCAL_HASH_VERIFICATION",
+  "sourceChecks": {
+    "status": "LOCAL_SOURCE_CHECKS_NOT_STUDIO",
+    "inputs": {
+      "src/shared/Config/WorldQuality.luau": "fcdb5b54290613e3b09390cec687656e387d0e8c336fec200d3335ae01a99d23",
+      "src/server/Services/WorldQualitySlice.luau": "3f283b8046053493209a833716cdcec7aa67edbb2b23338442af12e3f347674d",
+      "tests/world_quality.luau": "365d747f930c788df4b16d707df7edbb6934328a772f41741b23158e1fb9d940"
+    },
+    "runs": [
+      {
+        "name": "compile",
+        "command": [
+          "C:\\Work\\MySelf\\Guildborne\\.tools\\luau\\luau-compile.exe",
+          "--null",
+          "src/shared/Config/WorldQuality.luau",
+          "src/server/Services/WorldQualitySlice.luau",
+          "tests/world_quality.luau"
+        ],
+        "exitCode": 0,
+        "stdoutSha256": "f8647d43cfb2890755d7b83df924a6771299423233a7770cf00060f04a6140c8",
+        "stderrSha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+      },
+      {
+        "name": "contracts",
+        "command": [
+          "C:\\Work\\MySelf\\Guildborne\\.tools\\luau\\luau.exe",
+          "C:\\Work\\MySelf\\Guildborne-ironveil-ashen\\build\\ironveil-ashen-source-check.luau"
+        ],
+        "exitCode": 0,
+        "stdoutSha256": "c5eef6b8231a814d33ee3ea799e2a4cf612858b6f2f77fed31cbc8ec881bf9a6",
+        "stderrSha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+      }
+    ]
+  },
+  "cameraSHA256": "9342bb289f3f678272b834a7498b6527bfc72e1f8a9d7a8d461ee15b97d36d3e",
+  "contextSHA256": "40a876387c25bcd0ad24be3251def1b7667d7cc97abf71b37ef3cf530d1a895a",
+  "rendererSHA256": "4dcf1c9fb4a8ce88235a4a0971caecb0a9749113134d2f7afaa433be50a375ac",
+  "beforeImages": {
+    "01_ironveil_departure.png": "f19d41b17f790a8cf16c8003180ca516b3c852d42955eb164c74eafd4e2ccd10",
+    "02_ashen_arrival.png": "75a85bcb5c487ed563c07aa1c8202db6272ab8b084b3a4f3fdf86d572022c652",
+    "03_corridor_overview.png": "4be3e3f48603eb2c78d866eb333778c6702c866e59be824dc5fa56b38012e9be",
+    "04_bank_cut.png": "eefd64ca45199332e870ceb7d30436a5b5ffb396b0dfb1dcdf6b2f8e5aba4d18"
+  },
+  "afterImages": {
+    "01_ironveil_departure.png": "46fcd401b0b064553382d4dc164446410576514ed14e61de8f9d6478d86166a1",
+    "02_ashen_arrival.png": "6c7bf286c83a242cc5c6005946cb9390b4ca214e7839ef30a0428c4d437b2054",
+    "03_corridor_overview.png": "a7654c1ff6dbd6ffe6085d29b1d512c3b87375fe6e4fd0cd2bd8ecb3c4ca5d84",
+    "04_bank_cut.png": "dd5f680ba21200d42f7c0c03a80add9f091d0f76d1d68ea7297200ccb20d719f"
+  },
+  "limits": "Recorded author subprocess exits and streams verified; this is not an independent native test execution."
+}

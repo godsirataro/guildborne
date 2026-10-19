@@ -1,0 +1,15 @@
+{
+  "origin": "Original Guildborne existing bank cut and quarry strata closure; all other reviewed packet geometry retained",
+  "source": "assets/production/world-slice/coast-prop-composition/scenery.mesh.json",
+  "sourceSha256": "8743e160609a44e48b80e81b9ff0fe21b043bfb7e69fa216f2d164149c7f6760",
+  "sourceProvenance": "assets/production/world-slice/coast-prop-composition/provenance.json",
+  "recipe": "production/world/quality-slice/coast-prop-ashen-cut/recipe.py",
+  "packetSha256": "3c84bc3a213b8b6b6253cc95957c7a6af0c27d13f789c81f311c0b062a2aefc9",
+  "runtimeAssetIds": null,
+  "studioTested": false,
+  "downloads": false,
+  "spending": false,
+  "license": "Retains source original Guildborne and reviewed CC0 provenance; new cut/caps original procedural geometry",
+  "replacementRequired": true,
+  "doNotLayerWithSource": true
+}

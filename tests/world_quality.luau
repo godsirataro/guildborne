@@ -107,6 +107,27 @@ assert(dock.entries.Ironveil.cframe[3]==1495 and dock.entries.Ironveil.size[1]==
 assert(dock.safeRecovery.Ironveil[1]==400 and dock.safeRecovery.Ironveil[2]==7 and dock.safeRecovery.Ironveil[3]==1500);count+=1
 rejectSouth(function(d)d.entries.Ironveil.cframe[3]=1500 end)
 rejectSouth(function(d)d.centerline[#d.centerline][3]=1500 end)
+assert(Q.validateCorridor(Q.IronveilAshenCorridor));count+=1
+local function rejectThird(change: (any)->())
+ local spec=clone(Q.IronveilAshenCorridor);change(spec);assert(not pcall(Q.validateCorridor,spec));count+=1
+end
+rejectThird(function(d)d.fromZone="Greenwood" end)
+rejectThird(function(d)d.parts[1].kind="WedgePart" end)
+rejectThird(function(d)d.parts[1].collision=false end)
+rejectThird(function(d)table.remove(d.parts,1);d.colliderCount-=1 end)
+rejectThird(function(d)d.parts[1].size[3]=17 end) -- missing landing extension
+rejectThird(function(d)d.parts[1].cframe[3]=1490 end) -- combat intrusion
+rejectThird(function(d)d.parts[1].cframe[4]=-1 end)
+rejectThird(function(d)d.parts[2].cframe[2]=100 end)
+rejectThird(function(d)d.centerline[1][3]=1495 end)
+rejectThird(function(d)d.volumes[1].size[1]=150 end)
+rejectThird(function(d)d.entries.Ironveil=clone(Q.GreenwoodIronveilCorridor.entries.Ironveil) end)
+rejectThird(function(d)d.entries.City=clone(d.entries.Ironveil) end)
+rejectThird(function(d)d.safeRecovery.Ashen={1000,100,1400} end)
+rejectThird(function(d)d.safeRecovery.Ashen=nil end)
+for _,p in ipairs(Q.IronveilAshenCorridor.parts) do
+ assert(p.cframe[3]-p.size[3]/2>=1493 and math.abs(p.cframe[2]+p.size[2]/2-2.1)<1e-6);count+=1
+end
 print("world_quality: "..count.." contract checks passed; Studio lifecycle NOT_RUN")
 
 -- Optional CLI source-injection harness: execute the actual service with fake
@@ -144,6 +165,7 @@ return function(source: string)
   local world=node("Folder","GuildborneWorld",{})
   local region=node("Model","Greenwood",world)
   node("Model","Ironveil",world)
+  node("Model","Ashen",world)
   local trunk=node("Part","Trunk",region)
   local canopy=node("Part","Canopy",region)
   local terrain=node("Part","Island",region);terrain.Color="ground";terrain.Material="grass"
@@ -261,5 +283,27 @@ return function(source: string)
  check(failure.world:FindFirstChild("GreenwoodIronveilCorridor")==nil)
  failure.state.failAt=0;check(failureHandle.buildGreenwoodIronveilCorridor().isReady());failureHandle.destroy()
  check(failure.wall.Parent==failure.town)
+ local third=fixture();local thirdHandle=third.init(third.world)
+ check(third.world:FindFirstChild("IronveilAshenCorridor")==nil)
+ local ia=thirdHandle.buildIronveilAshenCorridor();check(ia.isReady() and ia.id=="ironveil_ashen_south")
+ check(thirdHandle.buildIronveilAshenCorridor()==ia and third.wall.Parent==third.town)
+ check(#ia.geometry:GetChildren()==7 and ia.entries.Ashen~=nil and ia.entries.Greenwood==nil)
+ local pad=ia.geometry:FindFirstChild("Landing_Ashen")
+ local originalSize=pad.Size;pad.Size=vec(28,.4,17);check(not ia.isReady());pad.Size=originalSize
+ pad.CanQuery=false;check(not ia.isReady());pad.CanQuery=true;check(ia.isReady())
+ local ash=third.world:FindFirstChild("Ashen");ash.Parent=nil;check(not ia.isReady());ash.Parent=third.world
+ local gi=thirdHandle.buildGreenwoodIronveilCorridor();check(gi.isReady() and ia.isReady())
+ ia.destroy();ia.destroy();check(not ia.isReady() and gi.isReady())
+ local again=thirdHandle.buildIronveilAshenCorridor();check(again~=ia and again.isReady())
+ thirdHandle.destroy();check(not again.isReady() and not gi.isReady());check(not pcall(thirdHandle.buildIronveilAshenCorridor))
+ local missing=fixture();local mh=missing.init(missing.world);missing.world:FindFirstChild("Ashen"):Destroy()
+ check(not pcall(mh.buildIronveilAshenCorridor));mh.destroy()
+ local occupied=fixture();local oh=occupied.init(occupied.world)
+ local external=occupied.node("Model","IronveilAshenCorridor",occupied.world)
+ check(not pcall(oh.buildIronveilAshenCorridor) and not external.destroyed);oh.destroy()
+ local rollback=fixture();local rh=rollback.init(rollback.world);local retained=rh.buildGreenwoodIronveilCorridor()
+ rollback.state.failAt=rollback.state.created+4
+ check(not pcall(rh.buildIronveilAshenCorridor) and retained.isReady() and rollback.world:FindFirstChild("IronveilAshenCorridor")==nil)
+ rollback.state.failAt=0;check(rh.buildIronveilAshenCorridor().isReady());rh.destroy()
  print("world_quality: "..passed.." mocked server lifecycle checks passed; Studio physics NOT_RUN")
 end

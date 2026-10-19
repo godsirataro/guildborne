@@ -1,0 +1,11 @@
+# Independent runtime review
+
+Reviewed the actual diff from efac81c in WorldQuality.luau, WorldQualitySlice.luau and tests/world_quality.luau. No blocking defect found within the optional construction scope.
+
+The new strict descriptor validates five floor nodes, six exact Part colliders, four volumes, two entries and supported recovery positions. Existing two descriptors remain on their prior validation path. The server builder requires existing Ironveil/Ashen models, refuses an unowned name collision, rolls back failed construction, checks model/part/node identity and collision geometry in isReady, and provides idempotent cleanup without destroying the other corridor. It remains behind the existing standalone Studio/Memory preview initialization guard.
+
+The test diff covers descriptor mutations, missing region identity, changed size/query, coexistence and teardown with the old corridor, failed-construction cleanup, retry and unowned-model preservation. Verified recorded compiler exit0 and pure/mocked test exit0 against current source and raw-stream SHA256: 88 contract checks and 172 mocked lifecycle checks. These are author executions independently checked, not Studio physics. See independent-evidence-hash-review.json for exact source hashes and receipts.
+
+Independent geometric checks passed separately: exact floor partition/seams, supported recovery and entries, 24-stud width, 3-stud north combat margin, 194-stud separation from the prior Ironveil entry, all 29 existing mesh packets unchanged, and whole placed Dataset2 above-floor clearance including nonquery decorations. See independent-ground.json and independent-bank.json.
+
+This change does not register or activate third-route travel. TravelRules, ServerBootstrap walkingGate, WorldService descriptor initialization and the client WalkingRouteContext allowlist still require a coordinated follow-up. Preserve launch-content exclusion, session/busy/private-arena checks, per-destination charter admission and supported recovery. Surface Ashen travel must remain distinct from the private Ashen campaign readiness gate. Native party following, region combat transitions, respawn/revocation, chain traversal, streaming and device performance remain untested by this review. The 3-stud geometric margin is not a five-companion navigation result.

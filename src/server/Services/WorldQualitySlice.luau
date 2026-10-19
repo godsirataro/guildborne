@@ -30,11 +30,14 @@ return function(parent: Instance): any
 	local corridor: any = nil
 	local ironveilCorridor: any = nil
 	local ironveilCleanup: (() -> ())? = nil
+	local ashenCorridor: any = nil
+	local ashenCleanup: (() -> ())? = nil
 	function result.destroy()
 		if destroyed then return end
 		destroyed=true
 		if corridorCleanup then corridorCleanup() end
 		if ironveilCleanup then ironveilCleanup() end
+		if ashenCleanup then ashenCleanup() end
 		for _,old in ipairs(changed) do
 			local p=old.part
 			if p.Parent then
@@ -191,6 +194,73 @@ return function(parent: Instance): any
 		end)
 		if not success then cleanup();error(tostring(err)) end
 		return ironveilCorridor
+	end
+	-- Explicit third-route construction only; never registered or activated here.
+	function result.buildIronveilAshenCorridor(): any
+		assert(not destroyed, "Destroyed preview handle")
+		if ashenCorridor then return ashenCorridor end
+		local spec=Quality.IronveilAshenCorridor
+		Quality.validateCorridor(spec)
+		local ironveil=parent:FindFirstChild("Ironveil")
+		local ashen=parent:FindFirstChild("Ashen")
+		assert(ironveil and ironveil:IsA("Model") and ashen and ashen:IsA("Model"), "Missing corridor regions")
+		assert(not parent:FindFirstChild("IronveilAshenCorridor"), "Unowned corridor exists")
+		local geometry=Instance.new("Model");geometry.Name="IronveilAshenCorridor"
+		local released=false
+		local function cleanup()
+			if released then return end
+			released=true;geometry:Destroy();ashenCorridor=nil;ashenCleanup=nil
+		end
+		local success,err=pcall(function()
+			local expected: {any}={}
+			local nodes: {any}={}
+			local metadata={LocalPreviewOnly=true,RouteId=spec.id,FromZone=spec.fromZone,ToZone=spec.toZone,
+				WalkWidth=24,NavigationPointKind="FloorCenter",NavigationBelowFloor=4,NavigationAboveFloor=14}
+			for key,value in pairs(metadata) do geometry:SetAttribute(key,value) end
+			for _,def in ipairs(spec.parts) do
+				local part=Instance.new("Part");part.Name=def.name;part.Anchored=true
+				part.Size=Vector3.new(table.unpack(def.size));part.CFrame=CFrame.new(table.unpack(def.cframe))
+				part.Color=Color3.new(table.unpack(def.color));part.Material=if def.collision then Enum.Material.Ground else Enum.Material.Grass
+				part.CanCollide=def.collision;part.CanQuery=def.collision;part.CanTouch=false;part.CastShadow=false
+				part.TopSurface=Enum.SurfaceType.Smooth;part.BottomSurface=Enum.SurfaceType.Smooth;part.Parent=geometry
+				table.insert(expected,{part=part,name=part.Name,size=part.Size,cframe=part.CFrame,collision=def.collision})
+			end
+			local navigation=Instance.new("Folder");navigation.Name="NavigationNodes";navigation.Parent=geometry
+			for i,point in ipairs(spec.centerline) do
+				local value=Instance.new("Vector3Value");value.Name=string.format("%03d",i);value.Value=Vector3.new(table.unpack(point))
+				value:SetAttribute("Index",i);value.Parent=navigation
+				table.insert(nodes,{node=value,name=value.Name,value=value.Value,index=i})
+			end
+			local function box(def: any): any return {cframe=CFrame.new(table.unpack(def.cframe)),size=Vector3.new(table.unpack(def.size))} end
+			local volumes={};for _,def in ipairs(spec.volumes) do table.insert(volumes,box(def)) end
+			local route: any={id=spec.id,fromZone=spec.fromZone,toZone=spec.toZone,geometry=geometry,ownedModel=geometry,
+				volumes=volumes,entries={Ironveil=box(spec.entries.Ironveil),Ashen=box(spec.entries.Ashen)},
+				safeRecovery={Ironveil=CFrame.new(table.unpack(spec.safeRecovery.Ironveil)),Ashen=CFrame.new(table.unpack(spec.safeRecovery.Ashen))}}
+			function route.isReady(): boolean
+				if destroyed or released or geometry.Parent~=parent or geometry.Name~="IronveilAshenCorridor"
+					or parent:FindFirstChild("Ironveil")~=ironveil or parent:FindFirstChild("Ashen")~=ashen then return false end
+				if #geometry:GetChildren()~=#expected+1 or #geometry:GetDescendants()~=#expected+1+#nodes then return false end
+				for key,value in pairs(metadata) do if geometry:GetAttribute(key)~=value then return false end end
+				local colliders=0
+				for _,record in ipairs(expected) do
+					local part=record.part
+					if not part:IsA("Part") or part.Parent~=geometry or part.Name~=record.name or not part.Anchored or part.CanTouch
+						or part.CanCollide~=record.collision or part.CanQuery~=record.collision
+						or part.Size~=record.size or part.CFrame~=record.cframe then return false end
+					if record.collision then colliders+=1 end
+				end
+				if navigation.Parent~=geometry or navigation.Name~="NavigationNodes" or #navigation:GetChildren()~=#nodes then return false end
+				for _,record in ipairs(nodes) do
+					local node=record.node
+					if node.Parent~=navigation or node.Name~=record.name or node.Value~=record.value or node:GetAttribute("Index")~=record.index then return false end
+				end
+				return colliders==spec.colliderCount
+			end
+			route.destroy=cleanup
+			geometry.Parent=parent;ashenCleanup=cleanup;ashenCorridor=route
+		end)
+		if not success then cleanup();error(tostring(err)) end
+		return ashenCorridor
 	end
 	local ok,problem=pcall(function()
 		folder:SetAttribute("LocalPreviewOnly",true)

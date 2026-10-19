@@ -1,0 +1,664 @@
+{
+  "evidence": "OFFLINE_SOURCE_GEOMETRY_NOT_STUDIO",
+  "parts": [
+    {
+      "name": "Landing_Ironveil",
+      "className": "Part",
+      "position": [
+        610.0,
+        1.9,
+        1506.0
+      ],
+      "size": [
+        28,
+        0.4,
+        26
+      ],
+      "rotation": [
+        1,
+        0,
+        0,
+        0,
+        1,
+        0,
+        0,
+        0,
+        1
+      ],
+      "color": [
+        0.48,
+        0.47,
+        0.43
+      ],
+      "material": "Ground",
+      "collision": true,
+      "query": true,
+      "touch": false,
+      "anchored": true,
+      "castShadow": false
+    },
+    {
+      "name": "Road_0",
+      "className": "Part",
+      "position": [
+        637.0,
+        1.9,
+        1505.0
+      ],
+      "size": [
+        26,
+        0.4,
+        24
+      ],
+      "rotation": [
+        1,
+        0,
+        0,
+        0,
+        1,
+        0,
+        0,
+        0,
+        1
+      ],
+      "color": [
+        0.48,
+        0.47,
+        0.43
+      ],
+      "material": "Ground",
+      "collision": true,
+      "query": true,
+      "touch": false,
+      "anchored": true,
+      "castShadow": false
+    },
+    {
+      "name": "Road_1",
+      "className": "Part",
+      "position": [
+        700.0,
+        1.9,
+        1505.0
+      ],
+      "size": [
+        100,
+        0.4,
+        24
+      ],
+      "rotation": [
+        1,
+        0,
+        0,
+        0,
+        1,
+        0,
+        0,
+        0,
+        1
+      ],
+      "color": [
+        0.48,
+        0.47,
+        0.43
+      ],
+      "material": "Ground",
+      "collision": true,
+      "query": true,
+      "touch": false,
+      "anchored": true,
+      "castShadow": false
+    },
+    {
+      "name": "Road_2",
+      "className": "Part",
+      "position": [
+        800.0,
+        1.9,
+        1505.0
+      ],
+      "size": [
+        100,
+        0.4,
+        24
+      ],
+      "rotation": [
+        1,
+        0,
+        0,
+        0,
+        1,
+        0,
+        0,
+        0,
+        1
+      ],
+      "color": [
+        0.48,
+        0.47,
+        0.43
+      ],
+      "material": "Ground",
+      "collision": true,
+      "query": true,
+      "touch": false,
+      "anchored": true,
+      "castShadow": false
+    },
+    {
+      "name": "Road_3",
+      "className": "Part",
+      "position": [
+        868.0,
+        1.9,
+        1505.0
+      ],
+      "size": [
+        36,
+        0.4,
+        24
+      ],
+      "rotation": [
+        1,
+        0,
+        0,
+        0,
+        1,
+        0,
+        0,
+        0,
+        1
+      ],
+      "color": [
+        0.48,
+        0.47,
+        0.43
+      ],
+      "material": "Ground",
+      "collision": true,
+      "query": true,
+      "touch": false,
+      "anchored": true,
+      "castShadow": false
+    },
+    {
+      "name": "Landing_Ashen",
+      "className": "Part",
+      "position": [
+        900.0,
+        1.9,
+        1506.0
+      ],
+      "size": [
+        28,
+        0.4,
+        26
+      ],
+      "rotation": [
+        1,
+        0,
+        0,
+        0,
+        1,
+        0,
+        0,
+        0,
+        1
+      ],
+      "color": [
+        0.48,
+        0.47,
+        0.43
+      ],
+      "material": "Ground",
+      "collision": true,
+      "query": true,
+      "touch": false,
+      "anchored": true,
+      "castShadow": false
+    }
+  ],
+  "topTriangles": [
+    {
+      "vertices": [
+        [
+          596,
+          2.1,
+          1493
+        ],
+        [
+          596,
+          2.1,
+          1519
+        ],
+        [
+          624,
+          2.1,
+          1519
+        ]
+      ],
+      "collision": true,
+      "group": "Landing_Ironveil"
+    },
+    {
+      "vertices": [
+        [
+          596,
+          2.1,
+          1493
+        ],
+        [
+          624,
+          2.1,
+          1519
+        ],
+        [
+          624,
+          2.1,
+          1493
+        ]
+      ],
+      "collision": true,
+      "group": "Landing_Ironveil"
+    },
+    {
+      "vertices": [
+        [
+          624,
+          2.1,
+          1493
+        ],
+        [
+          624,
+          2.1,
+          1517
+        ],
+        [
+          650,
+          2.1,
+          1517
+        ]
+      ],
+      "collision": true,
+      "group": "Road_0"
+    },
+    {
+      "vertices": [
+        [
+          624,
+          2.1,
+          1493
+        ],
+        [
+          650,
+          2.1,
+          1517
+        ],
+        [
+          650,
+          2.1,
+          1493
+        ]
+      ],
+      "collision": true,
+      "group": "Road_0"
+    },
+    {
+      "vertices": [
+        [
+          650,
+          2.1,
+          1493
+        ],
+        [
+          650,
+          2.1,
+          1517
+        ],
+        [
+          750,
+          2.1,
+          1517
+        ]
+      ],
+      "collision": true,
+      "group": "Road_1"
+    },
+    {
+      "vertices": [
+        [
+          650,
+          2.1,
+          1493
+        ],
+        [
+          750,
+          2.1,
+          1517
+        ],
+        [
+          750,
+          2.1,
+          1493
+        ]
+      ],
+      "collision": true,
+      "group": "Road_1"
+    },
+    {
+      "vertices": [
+        [
+          750,
+          2.1,
+          1493
+        ],
+        [
+          750,
+          2.1,
+          1517
+        ],
+        [
+          850,
+          2.1,
+          1517
+        ]
+      ],
+      "collision": true,
+      "group": "Road_2"
+    },
+    {
+      "vertices": [
+        [
+          750,
+          2.1,
+          1493
+        ],
+        [
+          850,
+          2.1,
+          1517
+        ],
+        [
+          850,
+          2.1,
+          1493
+        ]
+      ],
+      "collision": true,
+      "group": "Road_2"
+    },
+    {
+      "vertices": [
+        [
+          850,
+          2.1,
+          1493
+        ],
+        [
+          850,
+          2.1,
+          1517
+        ],
+        [
+          886,
+          2.1,
+          1517
+        ]
+      ],
+      "collision": true,
+      "group": "Road_3"
+    },
+    {
+      "vertices": [
+        [
+          850,
+          2.1,
+          1493
+        ],
+        [
+          886,
+          2.1,
+          1517
+        ],
+        [
+          886,
+          2.1,
+          1493
+        ]
+      ],
+      "collision": true,
+      "group": "Road_3"
+    },
+    {
+      "vertices": [
+        [
+          886,
+          2.1,
+          1493
+        ],
+        [
+          886,
+          2.1,
+          1519
+        ],
+        [
+          914,
+          2.1,
+          1519
+        ]
+      ],
+      "collision": true,
+      "group": "Landing_Ashen"
+    },
+    {
+      "vertices": [
+        [
+          886,
+          2.1,
+          1493
+        ],
+        [
+          914,
+          2.1,
+          1519
+        ],
+        [
+          914,
+          2.1,
+          1493
+        ]
+      ],
+      "collision": true,
+      "group": "Landing_Ashen"
+    }
+  ],
+  "walkCenterline": [
+    [
+      610,
+      2.1,
+      1505
+    ],
+    [
+      650,
+      2.1,
+      1505
+    ],
+    [
+      750,
+      2.1,
+      1505
+    ],
+    [
+      850,
+      2.1,
+      1505
+    ],
+    [
+      900,
+      2.1,
+      1505
+    ]
+  ],
+  "crosssections": [
+    {
+      "center": [
+        610,
+        2.1,
+        1505
+      ],
+      "road": [
+        [
+          610,
+          2.1,
+          1493
+        ],
+        [
+          610,
+          2.1,
+          1517
+        ]
+      ],
+      "shoulder": [
+        [
+          610,
+          2.1,
+          1493
+        ],
+        [
+          610,
+          2.1,
+          1517
+        ]
+      ],
+      "shoulderWidth": 24
+    },
+    {
+      "center": [
+        650,
+        2.1,
+        1505
+      ],
+      "road": [
+        [
+          650,
+          2.1,
+          1493
+        ],
+        [
+          650,
+          2.1,
+          1517
+        ]
+      ],
+      "shoulder": [
+        [
+          650,
+          2.1,
+          1493
+        ],
+        [
+          650,
+          2.1,
+          1517
+        ]
+      ],
+      "shoulderWidth": 24
+    },
+    {
+      "center": [
+        750,
+        2.1,
+        1505
+      ],
+      "road": [
+        [
+          750,
+          2.1,
+          1493
+        ],
+        [
+          750,
+          2.1,
+          1517
+        ]
+      ],
+      "shoulder": [
+        [
+          750,
+          2.1,
+          1493
+        ],
+        [
+          750,
+          2.1,
+          1517
+        ]
+      ],
+      "shoulderWidth": 24
+    },
+    {
+      "center": [
+        850,
+        2.1,
+        1505
+      ],
+      "road": [
+        [
+          850,
+          2.1,
+          1493
+        ],
+        [
+          850,
+          2.1,
+          1517
+        ]
+      ],
+      "shoulder": [
+        [
+          850,
+          2.1,
+          1493
+        ],
+        [
+          850,
+          2.1,
+          1517
+        ]
+      ],
+      "shoulderWidth": 24
+    },
+    {
+      "center": [
+        900,
+        2.1,
+        1505
+      ],
+      "road": [
+        [
+          900,
+          2.1,
+          1493
+        ],
+        [
+          900,
+          2.1,
+          1517
+        ]
+      ],
+      "shoulder": [
+        [
+          900,
+          2.1,
+          1493
+        ],
+        [
+          900,
+          2.1,
+          1517
+        ]
+      ],
+      "shoulderWidth": 24
+    }
+  ]
+}

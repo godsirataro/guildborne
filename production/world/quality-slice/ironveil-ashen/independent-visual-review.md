@@ -1,0 +1,9 @@
+# Independent visual review
+
+Inspected all eight actual PNGs: before/after 01_ironveil_departure, 02_ashen_arrival, 03_corridor_overview and 04_bank_cut. Both recorded Blender executions exited 0. Independently verified every image and input hash, the 91-part source context hashes, and identical camera/context/renderer hashes across the pair. See independent-evidence-hash-review.json. This is a Blender comparison, not native Roblox acceptance.
+
+Before, the bank fills the departure/arrival views and occupies the intended connection in the overview. After, the cut exposes a clear sightline toward the opposite settlement and a continuous straight deck. The overview shows the deck meeting widened landing pads at both islands; the reviewed geometry checks establish actual floor coverage separately. The bank-cut image shows an opaque exposed cut face with broad horizontal color bands; no obvious sky slit appears through that visible face.
+
+Remaining visual limitations are substantial: the deck is thin, unrailed and reads as a floating bridge over a deep trench; broad flat cut faces and triangular color bands remain simple blockout art. The close bank-cut view has foreground terrain hiding much of the floor, so it cannot establish full-width clearance by sight alone. No global watertight claim is made for the original open bank surface; the independent geometry proof is limited to the new cut-edge caps.
+
+Actors, dynamic resource art, GUI, private campaign pockets and distant city are omitted. Roblox materials, lighting, physics and gameplay are not reproduced. No character-scale crossing, five-hero party behavior, native seam/collision/occlusion test or performance result is accepted here. The comparison supports the bounded clearance change, not final environmental polish or human art approval.
