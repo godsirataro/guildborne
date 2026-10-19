@@ -55,6 +55,32 @@ rejectCorridor(function(d)d.parts[1].collision=false end)
 rejectCorridor(function(d)d.volumes[1].size[3]=2000 end)
 rejectCorridor(function(d)d.entries.Greenwood=nil end)
 assert(#Q.ContinuousCorridor.parts==444 and Q.ContinuousCorridor.colliderCount==148);count+=1
+assert(Q.validateCorridor(Q.GreenwoodIronveilCorridor));count+=1
+local function rejectSouth(change: (any)->())
+ local spec=clone(Q.GreenwoodIronveilCorridor);change(spec);assert(not pcall(Q.validateCorridor,spec));count+=1
+end
+rejectSouth(function(d)d.id="invented" end)
+rejectSouth(function(d)d.fromZone="City" end)
+rejectSouth(function(d)d.toZone="Ashen" end)
+rejectSouth(function(d)d.id="city_greenwood_west";d.fromZone="City";d.toZone="Greenwood" end)
+rejectCorridor(function(d)d.id="greenwood_ironveil_south";d.fromZone="Greenwood";d.toZone="Ironveil" end)
+rejectSouth(function(d)d.parts[1].cframe[1]=0 end)
+rejectSouth(function(d)d.parts[1].cframe[2]=100 end)
+rejectSouth(function(d)d.parts[1].cframe[3]=1400 end)
+rejectSouth(function(d)d.parts[1].collision=not d.parts[1].collision end)
+rejectSouth(function(d)d.centerline[1][1]=0 end)
+rejectSouth(function(d)d.centerline[1][2]=100 end)
+rejectSouth(function(d)d.centerline[1][3]=1400 end)
+rejectSouth(function(d)d.volumes[1].size[1]=150 end) -- center still in bounds; corners escape
+rejectSouth(function(d)d.volumes[1].cframe[2]=20 end)
+rejectSouth(function(d)d.entries.Greenwood=clone(Q.ContinuousCorridor.entries.Greenwood) end)
+rejectSouth(function(d)d.entries.Ironveil=nil end)
+rejectSouth(function(d)d.entries.City=clone(d.entries.Greenwood) end)
+rejectSouth(function(d)d.entries.Greenwood.cframe[1]=81 end)
+rejectSouth(function(d)d.safeRecovery=nil end)
+rejectSouth(function(d)d.safeRecovery.Ironveil[2]=100 end)
+rejectSouth(function(d)d.safeRecovery.Greenwood[1]=0 end)
+rejectSouth(function(d)d.safeRecovery.City={0,7,1500} end)
 print("world_quality: "..count.." contract checks passed; Studio lifecycle NOT_RUN")
 
 -- Optional CLI source-injection harness: execute the actual service with fake
@@ -85,11 +111,13 @@ return function(source: string)
     for _,child in ipairs(n:GetChildren())do local cloneChild=child:Clone();cloneChild.Parent=copy end;return copy
    end
    function n:SetAttribute(key: string,value: any) self.attributes[key]=value end
+   function n:GetAttribute(key: string): any return self.attributes[key] end
    function n:Destroy() for _,v in ipairs(self:GetChildren())do v:Destroy()end;self.Parent=nil;self.destroyed=true end
    table.insert(nodes,n);return n
   end
   local world=node("Folder","GuildborneWorld",{})
   local region=node("Model","Greenwood",world)
+  node("Model","Ironveil",world)
   local trunk=node("Part","Trunk",region)
   local canopy=node("Part","Canopy",region)
   local terrain=node("Part","Island",region);terrain.Color="ground";terrain.Material="grass"
@@ -161,5 +189,49 @@ return function(source: string)
  local removed=fixture();local removing=removed.init(removed.world);removing.buildContinuousCorridor();removed.town.Parent=nil;removing.destroy();check(removed.wall.destroyed==true)
  local occupied=fixture();local owner=occupied.init(occupied.world);occupied.node("Model","CityGreenwoodCorridor",occupied.world)
  check(not pcall(owner.buildContinuousCorridor) and occupied.wall.Parent==occupied.town);owner.destroy()
+ -- The second edge must work without City or CityKit and never borrow west ownership.
+ local second=fixture();local secondHandle=second.init(second.world)
+ local south=secondHandle.buildGreenwoodIronveilCorridor()
+ check(south.id=="greenwood_ironveil_south" and south.fromZone=="Greenwood" and south.toZone=="Ironveil" and south.isReady())
+ check(south.ownedModel==south.geometry and second.wall.Parent==second.town)
+ check(secondHandle.buildGreenwoodIronveilCorridor()==south)
+ check(south.entries.Greenwood~=nil and south.entries.Ironveil~=nil and south.safeRecovery.Greenwood~=nil and south.safeRecovery.Ironveil~=nil)
+ local southNodes=south.geometry:FindFirstChild("NavigationNodes")
+ check(#southNodes:GetChildren()==#Q.GreenwoodIronveilCorridor.centerline)
+ for i,point in ipairs(Q.GreenwoodIronveilCorridor.centerline) do
+  local n=southNodes:FindFirstChild(string.format("%03d",i))
+  check(n.Value.X==point[1] and n.Value.Y==point[2] and n.Value.Z==point[3] and n:GetAttribute("Index")==i)
+ end
+ local function mutate(object: any,key: string,bad: any)
+  local before=object[key];object[key]=bad;check(not south.isReady());object[key]=before;check(south.isReady())
+ end
+ local southRoad=south.geometry:FindFirstChild(Q.GreenwoodIronveilCorridor.parts[1].name)
+ mutate(southRoad,"Name","Replacement");mutate(southRoad,"Parent",nil);mutate(southRoad,"Anchored",false)
+ mutate(southRoad,"CanCollide",not southRoad.CanCollide);mutate(southRoad,"CanQuery",not southRoad.CanQuery);mutate(southRoad,"CanTouch",true)
+ mutate(southRoad,"Size",vec(1,1,1));mutate(southRoad,"CFrame",frame(0,0,0))
+ mutate(south.geometry,"Name","Unexpected");mutate(south.geometry,"Parent",nil)
+ local node1=southNodes:GetChildren()[1]
+ mutate(node1,"Name","999");mutate(node1,"Value",vec(0,100,0));mutate(node1.attributes,"Index",99)
+ for key in pairs(south.geometry.attributes) do mutate(south.geometry.attributes,key,"Tampered") end
+ local unexpected=second.node("Part","InjectedCollider",south.geometry);check(not south.isReady());unexpected:Destroy();check(south.isReady())
+ local endpoint=second.world:FindFirstChild("Ironveil");mutate(endpoint,"Parent",nil)
+ local west=secondHandle.buildContinuousCorridor();check(west.isReady() and south.isReady() and second.wall.Parent==nil)
+ south.destroy();south.destroy();check(not south.isReady() and west.isReady() and second.wall.Parent==nil)
+ local rebuilt=secondHandle.buildGreenwoodIronveilCorridor();check(rebuilt~=south and rebuilt.isReady())
+ secondHandle.destroy();check(not rebuilt.isReady() and not west.isReady() and second.wall.Parent==second.town)
+ check(not pcall(secondHandle.buildGreenwoodIronveilCorridor))
+ local noCity=fixture();local noCityHandle=noCity.init(noCity.world);noCity.town.Parent=nil
+ local noCityRoute=noCityHandle.buildGreenwoodIronveilCorridor();check(noCityRoute.isReady());noCityHandle.destroy()
+ local absent=fixture();local absentHandle=absent.init(absent.world);absent.world:FindFirstChild("Ironveil"):Destroy()
+ check(not pcall(absentHandle.buildGreenwoodIronveilCorridor) and absent.world:FindFirstChild("GreenwoodIronveilCorridor")==nil);absentHandle.destroy()
+ local taken=fixture();local takenHandle=taken.init(taken.world)
+ local existingSouth=taken.node("Model","GreenwoodIronveilCorridor",taken.world)
+ check(not pcall(takenHandle.buildGreenwoodIronveilCorridor) and not existingSouth.destroyed);takenHandle.destroy()
+ local failure=fixture();local failureHandle=failure.init(failure.world);local other=failureHandle.buildContinuousCorridor()
+ failure.state.failAt=failure.state.created+4
+ check(not pcall(failureHandle.buildGreenwoodIronveilCorridor) and other.isReady() and failure.wall.Parent==nil)
+ check(failure.world:FindFirstChild("GreenwoodIronveilCorridor")==nil)
+ failure.state.failAt=0;check(failureHandle.buildGreenwoodIronveilCorridor().isReady());failureHandle.destroy()
+ check(failure.wall.Parent==failure.town)
  print("world_quality: "..passed.." mocked server lifecycle checks passed; Studio physics NOT_RUN")
 end

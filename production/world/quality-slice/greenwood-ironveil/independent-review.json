@@ -1,0 +1,95 @@
+{
+  "reviewer": "ironveil_review independent agent",
+  "status": "READY_FOR_NATIVE_ENGINEERING_COMPARISON_WITH_ART_GAPS",
+  "scope": "Source lifecycle review, independent geometric reconstruction, and visual inspection of six matched Blender renders",
+  "sourceGeometryEvidence": "independent-05-final.stdout.txt",
+  "sourceGeometryReceipt": "independent-05-final.json",
+  "sourceGeometry": {
+    "nativeWedgesReconstructed": 108,
+    "collidingRoadWedges": 36,
+    "fullWidthSamples": 9225,
+    "roadWidth": 24,
+    "positiveAreaRoadOverlap": 0,
+    "oldAndNewMeshLaneObstructions": 0,
+    "fullProjectedPropFootprintsSupported": 13,
+    "reviewedMeshResourcesUnchanged": 6,
+    "entryBoxesWithinMatchingRegions": true,
+    "existingWestEntryDisjoint": true,
+    "westGeneratedSpecAndBuilderUnchanged": true,
+    "originalWorldMeshAndNativeMapInputsUnchanged": true,
+    "closedOutwardStructuralSolids": 165,
+    "structuralTriangles": 1980,
+    "structuresWithinExisting36StudStrip": true,
+    "uniqueTriangles": 5752,
+    "instancedTriangles": 7618
+  },
+  "sourceLifecycleReview": {
+    "result": "PASS_SOURCE_REVIEW",
+    "observations": [
+      "Second builder owns only GreenwoodIronveilCorridor Model; cleanup destroys that model and clears only second-route references.",
+      "Second builder has no City wall/town access. Existing first-route builder is unchanged.",
+      "Readiness validates exact owned part instances, names, parents, dimensions, transforms, anchored/collision/query/touch flags, model and navigation metadata, child counts, endpoint region identity.",
+      "Failed construction cleanup and independent coexistence are exercised by actual service-source injection into mocked Instances.",
+      "Standalone Studio and Memory restrictions remain at existing handle initialization; no route activation or release-gate changes in this patch.",
+      "Import decorative packet into a separate sibling GreenwoodIronveilScenery container. Adding art beneath physical GreenwoodIronveilCorridor correctly invalidates its exact child/descendant readiness checks."
+    ],
+    "executedChecksReviewed": [
+      "checks-final01/receipts.json",
+      "checks-normalized02/receipts.json",
+      "line-ending-equivalence.json"
+    ],
+    "contractChecks": 60,
+    "mockedLifecycleChecks": 153,
+    "baselineExitCode": 0,
+    "note": "All raw receipt stream hashes and exact raw baseline snapshots verified independently; only CRLF-to-LF changed. Final LF contract/lifecycle/compile/types passed. These are local source/mocked tests, not engine traversal."
+  },
+  "visualInspection": {
+    "views": [
+      "woodland_departure",
+      "quarry_arrival",
+      "overview"
+    ],
+    "variants": [
+      "before",
+      "after"
+    ],
+    "positiveFindings": [
+      "All six final matched PNGs inspected. After views show a continuous readable route spanning the previously empty gap.",
+      "Timber rails on woodland side transition into stone parapets on quarry side; open arches and broad piers make the overview read as an intentional bridge rather than the earlier thin ribbon.",
+      "Waymarker and cart bays preserve visible prop silhouettes; no road obstruction is visible in the compared gameplay cameras.",
+      "Palette transitions from woodland earth toward quarry grey."
+    ],
+    "remainingArtGaps": [
+      "The causeway has clearer structural identity, but the broader scene still has empty surrounding void and no demonstrated terrain footings beneath piers.",
+      "Long road surface, repetitive clean stone blocks and sparse detail remain below high-fidelity environmental art quality.",
+      "Quarry context remains schematic block geometry; full native scene, NPCs, effects and endpoint integration are not represented by these Blender views.",
+      "Grass shoulders and decorative rail meshes are noncolliding; roadside bays and rails are not certified walkable surfaces or fall barriers."
+    ],
+    "beautifulCoherentWorldAccepted": false,
+    "highFidelityAccepted": false,
+    "humanArtApproved": false,
+    "imageHashes": {
+      "before/overview.png": "ea4d7d263e7cadc18a7798a00b8e150a9d68069f54432521ed975a5b61a9a029",
+      "before/quarry_arrival.png": "c6e2854bff1335c107c668fdcd05f19a15d9ae8728843b519747698179051c69",
+      "before/woodland_departure.png": "aac9c46180ce710f65b745554732e386aadbf76a38c71581fd4dc02ece1001e0",
+      "after/overview.png": "315563e7ce2a7a228ec9eab23fb328e75260d4be3753497cb9bbc695c89045d4",
+      "after/quarry_arrival.png": "2348ec8389f4da6785792744b185b494457c0360e262f7d56f9c0fe492051a1c",
+      "after/woodland_departure.png": "ce3be49a2ac0d645fa7a55f88cb34145624ef58667a1261cfbcc519225d17495"
+    }
+  },
+  "pending": [
+    "Controller-owned native import and source sync of this exact packet/spec.",
+    "Actual Roblox seam floats, engine pathfinding, player plus five companions, bidirectional entries/recovery and teardown.",
+    "Full runtime scene comparison, performance, physical devices, multiplayer and human acceptance.",
+    "Further environmental art work remains necessary; this is a reviewed second physical-route candidate with clearer causeway composition, not full-world or high-fidelity acceptance."
+  ],
+  "packetSha256": "70690b5109f823a72fd14cd137cfabc3ac0cce29e2ec100cd670eb2c1788dc8e",
+  "resolvedFindings": [
+    {
+      "finding": "All 2088 structural triangles in the rejected first structure version were inward-facing",
+      "evidence": "independent-03-finding.json",
+      "archive": "assets/production/world-slice/greenwood-ironveil/iteration-03",
+      "resolution": "Author corrected winding and removed nine curb solids for prop bays; final165solids/1980triangles are closed, outward and positive-volume. Final matched renders regenerated and hashes verified."
+    }
+  ]
+}

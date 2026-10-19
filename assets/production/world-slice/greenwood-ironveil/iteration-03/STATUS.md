@@ -1,0 +1,1 @@
+REJECTED: all2088 structural boxfaces inward; independent reviewer caught normals. Cart and markers also occluded by parapet. Both render variants and raw receipts retained; fix requires winding reversal and purposeful edge bays.

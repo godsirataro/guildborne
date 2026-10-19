@@ -1,0 +1,180 @@
+{
+  "status": "PASS_SOURCE_GEOMETRY_ONLY",
+  "inputHashes": {
+    "production\\world\\quality-slice\\greenwood-ironveil\\ground.json": "4a2c026106c7cbb9cfaf532cbcaf059efef7ff1ca0731998b9a846f7dea510c2",
+    "production\\world\\quality-slice\\greenwood-ironveil\\descriptor.json": "5d60c597f7b90fbdd76c42191c75d144a714464c01ebd9c08d1c45bbdb1509dc",
+    "production\\world\\quality-slice\\greenwood-ironveil\\runtime-descriptor.json": "a2f4c47c2b1438f9df981b3b6716349c13b0bb08f89b15c8d5952001d7bc908e",
+    "assets\\production\\world-slice\\world-slice.mesh.json": "9baaf8de0faf3ff7f4a4f2c32ea692e48aa9dbb021f609e3530029ed7844ddc7",
+    "src\\server\\Services\\AdventureMapKit.luau": "978724afd99c499757601d56634ecf0b00ff21921fbec8b12a617c0fed1fe4c7",
+    "src\\shared\\Config\\City.luau": "f78e3df184b45f430575425e1e294f00f94031014b2e5e682d0549890f47e985",
+    "src\\server\\Services\\WorldQualitySlice.luau": "2120fee176b1f5b6bf1779539c9e0899a85d5efd468d38e104cdc270ab892653",
+    "src\\shared\\Config\\WorldQuality.luau": "e5239a28064ea15fce2c986ae82f96fda268167e72eee2da2a3b6b4879205af5",
+    "assets\\production\\world-slice\\greenwood-ironveil\\scenery.mesh.json": "70690b5109f823a72fd14cd137cfabc3ac0cce29e2ec100cd670eb2c1788dc8e",
+    "assets\\production\\world-slice\\greenwood-ironveil\\structural-solids.json": "dac6514a6bc0ea7ed1c3e516aa254c2679edb056797cc029d994f5b2c9407d48"
+  },
+  "reconstructedWedges": 108,
+  "roadWedges": 36,
+  "floorSamples": 9225,
+  "roadArea": 7696.033054876959,
+  "maxRoadPairOverlap": 5.820766091346741e-11,
+  "fullPropFootprints": [
+    {
+      "name": "GI_Scenery_000",
+      "footprintArea": 8.541555432486348,
+      "supportedArea": 8.541555432471796,
+      "roadIntrusion": 0.0
+    },
+    {
+      "name": "GI_Scenery_001",
+      "footprintArea": 13.272095929525676,
+      "supportedArea": 13.27209592955478,
+      "roadIntrusion": 0.0
+    },
+    {
+      "name": "GI_Scenery_002",
+      "footprintArea": 13.838495004994911,
+      "supportedArea": 13.838495004994911,
+      "roadIntrusion": 0.0
+    },
+    {
+      "name": "GI_Scenery_003",
+      "footprintArea": 6.992066918654018,
+      "supportedArea": 6.992066918654018,
+      "roadIntrusion": 0.0
+    },
+    {
+      "name": "GI_Scenery_004",
+      "footprintArea": 14.041335775254993,
+      "supportedArea": 14.041335775225889,
+      "roadIntrusion": 0.0
+    },
+    {
+      "name": "GI_Scenery_005",
+      "footprintArea": 7.747442569117993,
+      "supportedArea": 7.747442569176201,
+      "roadIntrusion": 0.0
+    },
+    {
+      "name": "GI_Scenery_006",
+      "footprintArea": 15.644821650785161,
+      "supportedArea": 15.644821650814265,
+      "roadIntrusion": 0.0
+    },
+    {
+      "name": "GI_Scenery_007",
+      "footprintArea": 3.4798149307025596,
+      "supportedArea": 3.4798149307025596,
+      "roadIntrusion": 0.0
+    },
+    {
+      "name": "GI_Scenery_008",
+      "footprintArea": 3.479814930644352,
+      "supportedArea": 3.479814930644352,
+      "roadIntrusion": 0.0
+    },
+    {
+      "name": "GI_Scenery_009",
+      "footprintArea": 8.28227968752617,
+      "supportedArea": 8.282279687467963,
+      "roadIntrusion": 0.0
+    },
+    {
+      "name": "GI_Scenery_010",
+      "footprintArea": 4.5850057927309535,
+      "supportedArea": 4.5850057927309535,
+      "roadIntrusion": 0.0
+    },
+    {
+      "name": "GI_Scenery_011",
+      "footprintArea": 17.334982438595034,
+      "supportedArea": 17.33498243856593,
+      "roadIntrusion": 0.0
+    },
+    {
+      "name": "GI_Scenery_012",
+      "footprintArea": 15.886027429194655,
+      "supportedArea": 15.886027429194655,
+      "roadIntrusion": 0.0
+    }
+  ],
+  "originalStructures": [
+    {
+      "name": "GI_RetainingSkirt",
+      "triangles": 68,
+      "closedEdges": true,
+      "withinExistingStrip": true
+    },
+    {
+      "name": "gi_original_stone_edges",
+      "triangles": 684,
+      "closedEdges": true,
+      "withinExistingStrip": true
+    },
+    {
+      "name": "gi_original_open_arches",
+      "triangles": 960,
+      "closedEdges": true,
+      "withinExistingStrip": true
+    },
+    {
+      "name": "gi_original_woodland_rails",
+      "triangles": 336,
+      "closedEdges": true,
+      "withinExistingStrip": true
+    }
+  ],
+  "closedOutwardStructuralSolids": 165,
+  "verifiedCheckReceipts": [
+    "checks-final01/contract",
+    "checks-final01/lifecycle",
+    "checks-final01/baseline",
+    "checks-normalized02/contract",
+    "checks-normalized02/lifecycle",
+    "checks-normalized02/compile",
+    "checks-normalized02/types"
+  ],
+  "renderHashes": {},
+  "obstacleTriangles": 103307,
+  "verticalCandidates": 6582,
+  "obstructions": [],
+  "nativePieces": 102,
+  "retainedFiles": [
+    "assets/production/world-slice/world-slice.mesh.json",
+    "production/world/quality-slice/continuous-corridor/.gitattributes",
+    "production/world/quality-slice/continuous-corridor/ENGINEERING_CONTRACT.md",
+    "production/world/quality-slice/continuous-corridor/HANDOFF.md",
+    "production/world/quality-slice/continuous-corridor/art_recipe.py",
+    "production/world/quality-slice/continuous-corridor/baseline-receipt.json",
+    "production/world/quality-slice/continuous-corridor/baseline.stderr.txt",
+    "production/world/quality-slice/continuous-corridor/baseline.stdout.txt",
+    "production/world/quality-slice/continuous-corridor/build_ground.py",
+    "production/world/quality-slice/continuous-corridor/check-receipts.json",
+    "production/world/quality-slice/continuous-corridor/compile.stderr.txt",
+    "production/world/quality-slice/continuous-corridor/compile.stdout.txt",
+    "production/world/quality-slice/continuous-corridor/descriptor.json",
+    "production/world/quality-slice/continuous-corridor/diff.stderr.txt",
+    "production/world/quality-slice/continuous-corridor/diff.stdout.txt",
+    "production/world/quality-slice/continuous-corridor/embed_ground.py",
+    "production/world/quality-slice/continuous-corridor/geometry-report.json",
+    "production/world/quality-slice/continuous-corridor/ground.json",
+    "production/world/quality-slice/continuous-corridor/lifecycle.stderr.txt",
+    "production/world/quality-slice/continuous-corridor/lifecycle.stdout.txt",
+    "production/world/quality-slice/continuous-corridor/make_manifest.py",
+    "production/world/quality-slice/continuous-corridor/manifest.json",
+    "production/world/quality-slice/continuous-corridor/run_checks.py",
+    "production/world/quality-slice/continuous-corridor/runtime-descriptor.json",
+    "production/world/quality-slice/continuous-corridor/studio_probe.luau",
+    "production/world/quality-slice/continuous-corridor/types.stderr.txt",
+    "production/world/quality-slice/continuous-corridor/types.stdout.txt",
+    "src/server/Services/AdventureMapKit.luau",
+    "src/server/Services/WorldQualityAssets.luau",
+    "src/shared/Config/City.luau"
+  ],
+  "westSpecAndBuilderUnchanged": true,
+  "limitations": [
+    "No Roblox engine execution or PathfindingService proof",
+    "Visual review separate from source geometry",
+    "Conservative native bounding boxes; exact original mesh triangles",
+    "Geometry is source candidate; no activation, multiplayer, device or human acceptance"
+  ]
+}

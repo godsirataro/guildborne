@@ -1,0 +1,14 @@
+{
+  "exitCode": 0,
+  "elapsedSeconds": 0.21097150000059628,
+  "inputHashes": {
+    "production/world/quality-slice/greenwood-ironveil/verify_geometry.py": "12983db8ea8c7983145083084204c861dc9140cb70ebdf5d61606cb323d9307f",
+    "production/world/quality-slice/greenwood-ironveil/build_ground.py": "6d15577d331d7626e78f481773104554a2ae6681a3eb0aeda379418db0076052",
+    "production/world/quality-slice/greenwood-ironveil/ground.json": "4a2c026106c7cbb9cfaf532cbcaf059efef7ff1ca0731998b9a846f7dea510c2",
+    "production/world/quality-slice/greenwood-ironveil/runtime-descriptor.json": "a2f4c47c2b1438f9df981b3b6716349c13b0bb08f89b15c8d5952001d7bc908e",
+    "assets/production/world-slice/greenwood-ironveil/scenery.mesh.json": "c58ea2a67878c58acc5298aaa673dcaaa422acbf6e37ecd7d7aa545b7e3cb3d5"
+  },
+  "inputsUnchanged": true,
+  "stdoutSha256": "64ccdf400dc13164422c84429292d1bcd3f8c862bb820c868297a7ce57da61d0",
+  "stderrSha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+}

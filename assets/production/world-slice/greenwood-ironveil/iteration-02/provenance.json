@@ -1,0 +1,36 @@
+{
+  "status": "FILE_GENERATED_NOT_IMPORTED",
+  "source": "assets/production/world-slice/world-slice.mesh.json",
+  "sourceSha256": "9baaf8de0faf3ff7f4a4f2c32ea692e48aa9dbb021f609e3530029ed7844ddc7",
+  "unchangedReviewedMeshes": [
+    "bush__000",
+    "silhouette_fern_rocks__000",
+    "silhouette_ruined_waymarker__000",
+    "fence__000",
+    "cart__000",
+    "cart__001"
+  ],
+  "originalRecipe": "production/world/quality-slice/greenwood-ironveil/art_recipe.py",
+  "originalMesh": "gi_original_retaining_skirt",
+  "originalBounds": {
+    "min": [
+      109.48613342675412,
+      -2,
+      1483.221203886986
+    ],
+    "max": [
+      381.9877674693472,
+      1.85,
+      1528.0
+    ]
+  },
+  "retainingSkirtSignedVolume": 32062.56274388096,
+  "groundSha256": "4a2c026106c7cbb9cfaf532cbcaf059efef7ff1ca0731998b9a846f7dea510c2",
+  "licenses": [
+    "assets/production/world-slice/village-LICENSE.txt",
+    "assets/production/world-slice/ruins-LICENSE.txt"
+  ],
+  "runtimeIds": null,
+  "studioTested": false,
+  "humanApproved": false
+}

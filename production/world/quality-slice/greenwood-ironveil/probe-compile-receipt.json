@@ -1,0 +1,12 @@
+{
+  "scope": "SYNTAX_COMPILE_ONLY_NOT_NATIVE_RUN",
+  "command": [
+    ".tools/luau/luau-compile.exe",
+    "production\\world\\quality-slice\\greenwood-ironveil\\studio_probe.luau"
+  ],
+  "exitCode": 0,
+  "sourceSha256": "f2ed4a949b5bd6b402c92d5b7216710653f82b2fd986ff75ac7ed8c575077048",
+  "inputsUnchanged": true,
+  "stdoutSha256": "fb4dc87f0a257d3f569289531d640017f5af755717ababf1ee633f8154a5a3b0",
+  "stderrSha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+}

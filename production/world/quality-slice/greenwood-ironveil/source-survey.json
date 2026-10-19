@@ -1,0 +1,149 @@
+{
+  "scope": "READ_ONLY_SOURCE_SURVEY_NOT_STUDIO",
+  "route": "greenwood_ironveil_south",
+  "sourceHashes": {
+    "src/server/Services/AdventureMapKit.luau": "978724afd99c499757601d56634ecf0b00ff21921fbec8b12a617c0fed1fe4c7",
+    "src/server/Services/RegionalWorld.luau": "13e0ce9ed41893a6a46d46955ec4dafd8159a720df5d1ff89f91cd69ec7b6c09",
+    "src/shared/Config/City.luau": "f78e3df184b45f430575425e1e294f00f94031014b2e5e682d0549890f47e985",
+    "src/server/Services/WorldQualityAssets.luau": "a0951be5714ee9a5dfef58da35a3e78fac72dfc711adb744cdf95a9893e7398f",
+    "assets/production/world-slice/world-slice.mesh.json": "9baaf8de0faf3ff7f4a4f2c32ea692e48aa9dbb021f609e3530029ed7844ddc7"
+  },
+  "rejectedOriginalZ1490": "Width24 intersects reviewed East_Arrival_Waymarker and east vegetation",
+  "finalControlPoints": [
+    [
+      70,
+      2.1,
+      1506
+    ],
+    [
+      110,
+      2.1,
+      1506
+    ],
+    [
+      180,
+      2.1,
+      1510
+    ],
+    [
+      300,
+      2.1,
+      1510
+    ],
+    [
+      390,
+      2.1,
+      1500
+    ]
+  ],
+  "reviewedMeshBounds": {
+    "East_Arrival_Waymarker": {
+      "min": [
+        73.21,
+        2,
+        1483.503
+      ],
+      "max": [
+        78.853,
+        9.2,
+        1488.507
+      ]
+    },
+    "GroundEdge_East_Tree_0": {
+      "min": [
+        82.805,
+        2,
+        1468.825
+      ],
+      "max": [
+        105.195,
+        32,
+        1491.175
+      ]
+    },
+    "EastRockGrove": {
+      "min": [
+        95.234,
+        2,
+        1474.652
+      ],
+      "max": [
+        104.788,
+        7,
+        1485.194
+      ]
+    },
+    "GatekeeperHouseCombined": {
+      "min": [
+        19.165,
+        2.018,
+        1467.473
+      ],
+      "max": [
+        52.835,
+        34,
+        1488.929
+      ]
+    }
+  },
+  "ground": {
+    "GreenwoodEntry": "Reviewed decorative terrain_arrival_east Y2.02; native Island ends Z1500, so road must supply collision",
+    "IronveilEndpoint": "Native Island top Y2, center500,0,1400 size240,4,220",
+    "roadTop": 2.1,
+    "smallHeightOffsets": [
+      0.08,
+      0.1
+    ]
+  },
+  "nativeObstacles": {
+    "nearestGreenwoodTrunk": {
+      "center": [
+        85,
+        8,
+        1472
+      ],
+      "size": [
+        3,
+        12,
+        3
+      ]
+    },
+    "IronveilWestCrystalBase": {
+      "center": [
+        418,
+        3.5,
+        1480
+      ],
+      "size": [
+        7,
+        3,
+        7
+      ]
+    },
+    "IronveilWestQuarryWall": {
+      "center": [
+        394,
+        13,
+        1374
+      ],
+      "size": [
+        7,
+        15,
+        145
+      ]
+    },
+    "QuarryAscent": {
+      "center": [
+        500,
+        4,
+        1462.5
+      ],
+      "size": [
+        20,
+        4,
+        25
+      ]
+    }
+  },
+  "limits": "Rounded bounds for human-readable survey; independent verifier uses original vertices. Native engine pathfinding, import fidelity, physical device, party traversal and earned progression not established."
+}

@@ -1,0 +1,49 @@
+{
+  "scope": "LOCAL_SUBPROCESS_NOT_STUDIO",
+  "inputHashes": {
+    "src/server/Services/WorldQualitySlice.luau": "8ee5adee0b796a795529cb496cee602c1f140fc61fea1591115335900e01142c",
+    "src/shared/Config/WorldQuality.luau": "e5239a28064ea15fce2c986ae82f96fda268167e72eee2da2a3b6b4879205af5",
+    "tests/world_quality.luau": "fa04db270cdc20320e5a84e40309ce700b3a1e22d3d065b8d6af8c3daff47a89",
+    "production/world/quality-slice/greenwood-ironveil/run_checks.py": "26ebf7370955e41a8c2239137f2ca7e9daa1e70351acb71ffbedadae851009e3"
+  },
+  "inputsUnchanged": true,
+  "checks": [
+    {
+      "name": "contract",
+      "command": [
+        "C:\\Work\\MySelf\\Guildborne-greenwood-ironveil\\.tools\\luau\\luau.exe",
+        "tests/world_quality.luau"
+      ],
+      "exitCode": 0,
+      "seconds": 0.08806779999940773,
+      "stdoutSha256": "bc0c9fb75f260391cfa6fb274e45e6574c5269c0936035ef15a151a3da90f616",
+      "stderrSha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "name": "lifecycle",
+      "command": [
+        "C:\\Work\\MySelf\\Guildborne-greenwood-ironveil\\.tools\\luau\\luau.exe",
+        "C:\\Work\\MySelf\\Guildborne-greenwood-ironveil\\tests\\_ironveil_final_lifecycle.luau"
+      ],
+      "exitCode": 0,
+      "seconds": 0.675086300001567,
+      "stdoutSha256": "6647b6c2f4bcb1cf906eb8ad75775fd78bbef38b1f4ce32ade2603432badbb6f",
+      "stderrSha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "name": "baseline",
+      "command": [
+        "powershell",
+        "-NoProfile",
+        "-ExecutionPolicy",
+        "Bypass",
+        "-File",
+        "tools/validate.ps1"
+      ],
+      "exitCode": 0,
+      "seconds": 141.93956909999906,
+      "stdoutSha256": "732ed83e20235005c309f9e46d8057cfa5899e753483d148d0a3b7b1af873ac8",
+      "stderrSha256": "deaf65c7abccb6f131d40e652755d8aa32d087049eb5bbaf9172f95c24a2a6dc"
+    }
+  ]
+}

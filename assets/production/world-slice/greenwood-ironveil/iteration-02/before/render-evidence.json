@@ -1,0 +1,20 @@
+{
+  "status": "BLENDER_RENDERED_NOT_STUDIO",
+  "groundPath": "C:\\Work\\MySelf\\Guildborne-greenwood-ironveil\\production\\world\\quality-slice\\greenwood-ironveil\\ground.json",
+  "groundSha256": "4a2c026106c7cbb9cfaf532cbcaf059efef7ff1ca0731998b9a846f7dea510c2",
+  "sourceSha256": "d8b3b0a6f28f295b0e41797d7fff53b3dfe5e6a0545ba2c4889d8dd63cc632e2",
+  "packetSha256": "c58ea2a67878c58acc5298aaa673dcaaa422acbf6e37ecd7d7aa545b7e3cb3d5",
+  "cameraSha256": "46dcbf9738a753e25c0e7d53bb3156b304c207cc3563c14a98e6e1f8f24828f2",
+  "groundParts": 0,
+  "views": [
+    "woodland_departure",
+    "quarry_arrival",
+    "overview"
+  ],
+  "context": "Source-survey native boxes and exact reviewed local art; omitted geometry/NPCs/effects not claimed imported",
+  "hashes": {
+    "overview.png": "76ef4ce9223b2df64fc7a62f0ebd007c2c9b31313eaadc91a43418bf13ed30b6",
+    "quarry_arrival.png": "7104382ea98a482e3d48779e8b94b64352fea9aa4cf2bf8a784bd1196a71423d",
+    "woodland_departure.png": "dbd18f16123c43c327c084970cc62eeb81b49a1942390bc242f8b76396584092"
+  }
+}

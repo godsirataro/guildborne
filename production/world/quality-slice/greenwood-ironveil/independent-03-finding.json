@@ -1,0 +1,10 @@
+{
+  "status": "REJECTED_STRUCTURAL_WINDING",
+  "receipt": "independent-03.json",
+  "sourceSnapshot": "independent-03-source.txt",
+  "finding": "All 2088 triangular faces across 174 new structural solids point inward, not just the first reported curb.",
+  "method": "For each sidecar box, compute cross(b-a,c-a) dot ((a+b+c)/3-boxCenter). All values are negative. First curb yields approximately -8.34198053447 for all twelve faces.",
+  "impact": "Blender renders with double-sided materials can look plausible while native single-sided mesh faces disappear from exterior views.",
+  "requiredCorrection": "Correct structural triangle winding, retain rejected packet/render evidence, rerun independent normals/closure/lane/width review and regenerate matched renders.",
+  "geometryBeforeFailure": "Full 24-stud lane clipping, 13 prop footprints, 36-stud projected structural bounds and closed edge counts passed before the outward normal assertion. No acceptance is granted for this packet."
+}

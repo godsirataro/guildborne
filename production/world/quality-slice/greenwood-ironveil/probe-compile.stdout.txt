@@ -1,0 +1,477 @@
+Function 0 (??):
+   15:  table.sort(nodes,function(a,b)return (a:GetAttribute("Index") :: number)<(b:GetAttribute("Index") :: number)end)
+LOADK R5 K0 ['Index']
+NAMECALL R3 R0 K1 ['GetAttribute']
+CALLFB R3 2 1 [0]
+LOADK R6 K0 ['Index']
+NAMECALL R4 R1 K1 ['GetAttribute']
+CALLFB R4 2 1 [1]
+JUMPIFLT R3 R4 L0
+LOADB R2 0 +1
+L0: LOADB R2 1
+L1: RETURN R2 1
+
+Function 1 (??):
+   44:    local ok,err=pcall(function()path:ComputeAsync(a,b)end)
+GETUPVAL R0 U0
+GETUPVAL R2 U1
+GETUPVAL R3 U2
+NAMECALL R0 R0 K0 ['ComputeAsync']
+CALLFB R0 3 0 [0]
+RETURN R0 0
+
+Function 2 (??):
+REMARK builtin assert/2
+    5:  assert(game:GetService("RunService"):IsStudio() and game.PlaceId==0 and game.GameId==0,"Memory Studio preview only")
+GETIMPORT R2 1 [game]
+LOADK R4 K2 ['RunService']
+NAMECALL R2 R2 K3 ['GetService']
+CALLFB R2 2 1 [0]
+NAMECALL R2 R2 K4 ['IsStudio']
+CALLFB R2 1 1 [1]
+JUMPIFNOT R2 L1
+LOADB R2 0
+GETIMPORT R3 6 [game.PlaceId]
+JUMPXEQKN R3 K7 L1 NOT [0]
+GETIMPORT R3 9 [game.GameId]
+JUMPXEQKN R3 K7 L0 [0]
+LOADB R2 0 +1
+L0: LOADB R2 1
+L1: FASTCALL2K 1 R2 K10 L2 ['Memory Studio preview only']
+LOADK R3 K10 ['Memory Studio preview only']
+GETIMPORT R1 12 [assert]
+CALL R1 2 0
+    6:  local model=world:FindFirstChild("GreenwoodIronveilCorridor")
+L2: LOADK R3 K13 ['GreenwoodIronveilCorridor']
+NAMECALL R1 R0 K14 ['FindFirstChild']
+CALLFB R1 2 1 [2]
+REMARK builtin assert/2
+    7:  assert(model and model:IsA("Model"),"Missing explicitly activated second route")
+MOVE R3 R1
+JUMPIFNOT R3 L3
+LOADK R5 K15 ['Model']
+NAMECALL R3 R1 K16 ['IsA']
+CALLFB R3 2 1 [3]
+L3: FASTCALL2K 1 R3 K17 L4 ['Missing explicitly activated sec'...]
+LOADK R4 K17 ['Missing explicitly activated sec'...]
+GETIMPORT R2 12 [assert]
+CALL R2 2 0
+REMARK builtin assert/2
+    8:  assert(model:GetAttribute("RouteId")=="greenwood_ironveil_south","Wrong route identity")
+L4: LOADK R6 K18 ['RouteId']
+NAMECALL R4 R1 K19 ['GetAttribute']
+CALLFB R4 2 1 [4]
+JUMPXEQKS R4 K20 L5 ['greenwood_ironveil_south']
+LOADB R3 0 +1
+L5: LOADB R3 1
+L6: FASTCALL2K 1 R3 K21 L7 ['Wrong route identity']
+LOADK R4 K21 ['Wrong route identity']
+GETIMPORT R2 12 [assert]
+CALL R2 2 0
+REMARK builtin assert/2
+    9:  assert(model:GetAttribute("FromZone")=="Greenwood" and model:GetAttribute("ToZone")=="Ironveil","Wrong endpoint metadata")
+L7: LOADB R3 0
+LOADK R6 K22 ['FromZone']
+NAMECALL R4 R1 K19 ['GetAttribute']
+CALLFB R4 2 1 [5]
+JUMPXEQKS R4 K23 L9 NOT ['Greenwood']
+LOADK R6 K24 ['ToZone']
+NAMECALL R4 R1 K19 ['GetAttribute']
+CALLFB R4 2 1 [6]
+JUMPXEQKS R4 K25 L8 ['Ironveil']
+LOADB R3 0 +1
+L8: LOADB R3 1
+L9: FASTCALL2K 1 R3 K26 L10 ['Wrong endpoint metadata']
+LOADK R4 K26 ['Wrong endpoint metadata']
+GETIMPORT R2 12 [assert]
+CALL R2 2 0
+REMARK builtin assert/2
+   10:  assert(model:GetAttribute("WalkWidth")==24 and model:GetAttribute("NavigationPointKind")=="FloorCenter","Wrong navigation convention")
+L10: LOADB R3 0
+LOADK R6 K27 ['WalkWidth']
+NAMECALL R4 R1 K19 ['GetAttribute']
+CALLFB R4 2 1 [7]
+JUMPXEQKN R4 K28 L12 NOT [24]
+LOADK R6 K29 ['NavigationPointKind']
+NAMECALL R4 R1 K19 ['GetAttribute']
+CALLFB R4 2 1 [8]
+JUMPXEQKS R4 K30 L11 ['FloorCenter']
+LOADB R3 0 +1
+L11: LOADB R3 1
+L12: FASTCALL2K 1 R3 K31 L13 ['Wrong navigation convention']
+LOADK R4 K31 ['Wrong navigation convention']
+GETIMPORT R2 12 [assert]
+CALL R2 2 0
+REMARK builtin assert/2
+   11:  assert(model:GetAttribute("NavigationBelowFloor")==4 and model:GetAttribute("NavigationAboveFloor")==14,"Wrong height metadata")
+L13: LOADB R3 0
+LOADK R6 K32 ['NavigationBelowFloor']
+NAMECALL R4 R1 K19 ['GetAttribute']
+CALLFB R4 2 1 [9]
+JUMPXEQKN R4 K33 L15 NOT [4]
+LOADK R6 K34 ['NavigationAboveFloor']
+NAMECALL R4 R1 K19 ['GetAttribute']
+CALLFB R4 2 1 [10]
+JUMPXEQKN R4 K35 L14 [14]
+LOADB R3 0 +1
+L14: LOADB R3 1
+L15: FASTCALL2K 1 R3 K36 L16 ['Wrong height metadata']
+LOADK R4 K36 ['Wrong height metadata']
+GETIMPORT R2 12 [assert]
+CALL R2 2 0
+   12:  local folder=model:FindFirstChild("NavigationNodes");assert(folder,"Missing floor navigation")
+L16: LOADK R4 K37 ['NavigationNodes']
+NAMECALL R2 R1 K14 ['FindFirstChild']
+CALLFB R2 2 1 [11]
+REMARK builtin assert/2
+FASTCALL2K 1 R2 K38 L17 ['Missing floor navigation']
+MOVE R4 R2
+LOADK R5 K38 ['Missing floor navigation']
+GETIMPORT R3 12 [assert]
+CALL R3 2 0
+REMARK allocation: table hash 0
+   13:  local nodes={}
+L17: NEWTABLE R3 0 0
+   14:  for _,v in ipairs(folder:GetChildren())do if v:IsA("Vector3Value")then table.insert(nodes,v)end end
+GETIMPORT R4 40 [ipairs]
+NAMECALL R5 R2 K41 ['GetChildren']
+CALL R5 1 -1
+CALL R4 -1 3
+FORGPREP_INEXT R4 L19
+L18: LOADK R11 K42 ['Vector3Value']
+NAMECALL R9 R8 K16 ['IsA']
+CALLFB R9 2 1 [12]
+JUMPIFNOT R9 L19
+REMARK builtin table.insert/2
+FASTCALL2 52 R3 R8 L19
+MOVE R10 R3
+MOVE R11 R8
+GETIMPORT R9 45 [table.insert]
+CALL R9 2 0
+L19: FORGLOOP R4 L18 2 [inext]
+   15:  table.sort(nodes,function(a,b)return (a:GetAttribute("Index") :: number)<(b:GetAttribute("Index") :: number)end)
+GETIMPORT R4 47 [table.sort]
+MOVE R5 R3
+DUPCLOSURE R6 K48 []
+CALLFB R4 2 0 [13]
+REMARK builtin assert/2
+   16:  assert(#nodes==10,"Unexpected floor node count")
+LENGTH R6 R3
+JUMPXEQKN R6 K49 L20 [10]
+LOADB R5 0 +1
+L20: LOADB R5 1
+L21: FASTCALL2K 1 R5 K50 L22 ['Unexpected floor node count']
+LOADK R6 K50 ['Unexpected floor node count']
+GETIMPORT R4 12 [assert]
+CALL R4 2 0
+   17:  local colliders=0
+L22: LOADN R4 0
+   18:  for _,part in ipairs(model:GetChildren())do
+GETIMPORT R5 40 [ipairs]
+NAMECALL R6 R1 K41 ['GetChildren']
+CALL R6 1 -1
+CALL R5 -1 3
+FORGPREP_INEXT R5 L27
+   19:   if part:IsA("BasePart")and string.sub(part.Name,1,5)=="Road_"then
+L23: LOADK R12 K51 ['BasePart']
+NAMECALL R10 R9 K16 ['IsA']
+CALLFB R10 2 1 [14]
+JUMPIFNOT R10 L27
+REMARK builtin string.sub/3
+GETTABLEKS R11 R9 K52 ['Name']
+LOADN R12 1
+LOADN R13 5
+FASTCALL 45 L24
+GETIMPORT R10 55 [string.sub]
+CALL R10 3 1
+L24: JUMPXEQKS R10 K56 L27 NOT ['Road_']
+REMARK builtin assert/2
+   20:    assert(part.Anchored and part.CanCollide and part.CanQuery and not part.CanTouch,"Bad road flags")
+GETTABLEKS R11 R9 K57 ['Anchored']
+JUMPIFNOT R11 L25
+GETTABLEKS R11 R9 K58 ['CanCollide']
+JUMPIFNOT R11 L25
+GETTABLEKS R11 R9 K59 ['CanQuery']
+JUMPIFNOT R11 L25
+GETTABLEKS R12 R9 K60 ['CanTouch']
+NOT R11 R12
+L25: FASTCALL2K 1 R11 K61 L26 ['Bad road flags']
+LOADK R12 K61 ['Bad road flags']
+GETIMPORT R10 12 [assert]
+CALL R10 2 0
+   21:    colliders+=1
+L26: ADDK R4 R4 K62 [1]
+   18:  for _,part in ipairs(model:GetChildren())do
+L27: FORGLOOP R5 L23 2 [inext]
+REMARK builtin assert/2
+   24:  assert(colliders==36,"Unexpected collider count")
+JUMPXEQKN R4 K63 L28 [36]
+LOADB R6 0 +1
+L28: LOADB R6 1
+L29: FASTCALL2K 1 R6 K64 L30 ['Unexpected collider count']
+LOADK R7 K64 ['Unexpected collider count']
+GETIMPORT R5 12 [assert]
+CALL R5 2 0
+REMARK allocation: table hash 0
+   25:  local rays={};local params=RaycastParams.new();params.FilterType=Enum.RaycastFilterType.Include;params.FilterDescendantsInstances={model}
+L30: NEWTABLE R5 0 0
+GETIMPORT R6 67 [RaycastParams.new]
+CALLFB R6 0 1 [15]
+GETIMPORT R7 71 [Enum.RaycastFilterType.Include]
+SETTABLEKS R7 R6 K72 ['FilterType']
+REMARK allocation: table array 1
+NEWTABLE R7 0 1
+MOVE R8 R1
+SETLIST R7 R8 1 [1]
+SETTABLEKS R7 R6 K73 ['FilterDescendantsInstances']
+   26:  for i,v in ipairs(nodes)do
+GETIMPORT R7 40 [ipairs]
+MOVE R8 R3
+CALLFB R7 1 3 [16]
+FORGPREP_INEXT R7 L44
+REMARK builtin assert/2
+   27:   assert(v:GetAttribute("Index")==i,"Nonconsecutive navigation index")
+L31: LOADK R16 K74 ['Index']
+NAMECALL R14 R11 K19 ['GetAttribute']
+CALLFB R14 2 1 [17]
+JUMPIFEQ R14 R10 L32
+LOADB R13 0 +1
+L32: LOADB R13 1
+L33: FASTCALL2K 1 R13 K75 L34 ['Nonconsecutive navigation index']
+LOADK R14 K75 ['Nonconsecutive navigation index']
+GETIMPORT R12 12 [assert]
+CALL R12 2 0
+REMARK builtin math.min/2
+   28:   local tangent=(nodes[math.min(#nodes,i+1)].Value-nodes[math.max(1,i-1)].Value).Unit
+L34: LENGTH R15 R3
+ADDK R16 R10 K62 [1]
+FASTCALL2 19 R15 R16 L35
+GETIMPORT R14 78 [math.min]
+CALL R14 2 1
+L35: GETTABLE R13 R3 R14
+GETTABLEKS R13 R13 K79 ['Value']
+REMARK builtin math.max/2
+LOADN R16 1
+SUBK R17 R10 K62 [1]
+FASTCALL2 18 R16 R17 L36
+GETIMPORT R15 81 [math.max]
+CALL R15 2 1
+L36: GETTABLE R14 R3 R15
+GETTABLEKS R14 R14 K79 ['Value']
+SUB R12 R13 R14
+GETTABLEKS R12 R12 K82 ['Unit']
+   29:   local side=Vector3.new(tangent.Z,0,-tangent.X)
+GETIMPORT R13 84 [Vector3.new]
+GETTABLEKS R14 R12 K85 ['Z']
+LOADN R15 0
+GETTABLEKS R17 R12 K86 ['X']
+MINUS R16 R17
+CALLFB R13 3 1 [18]
+   30:   for _,offset in ipairs({-11.5,0,11.5})do
+GETIMPORT R14 40 [ipairs]
+REMARK allocation: table array 3
+NEWTABLE R15 0 3
+LOADK R17 K87 [-11.5]
+LOADN R18 0
+LOADK R19 K88 [11.5]
+SETLIST R15 R17 3 [1]
+CALLFB R14 1 3 [19]
+FORGPREP_INEXT R14 L43
+   31:    local position=v.Value+side*offset
+L37: GETTABLEKS R20 R11 K79 ['Value']
+MUL R21 R13 R18
+ADD R19 R20 R21
+   32:    local hit=workspace:Raycast(position+Vector3.new(0,4,0),Vector3.new(0,-8,0),params)
+GETIMPORT R20 90 [workspace]
+GETIMPORT R23 84 [Vector3.new]
+LOADN R24 0
+LOADN R25 4
+LOADN R26 0
+CALLFB R23 3 1 [20]
+ADD R22 R19 R23
+GETIMPORT R23 84 [Vector3.new]
+LOADN R24 0
+LOADN R25 -8
+LOADN R26 0
+CALLFB R23 3 1 [21]
+MOVE R24 R6
+NAMECALL R20 R20 K91 ['Raycast']
+CALLFB R20 4 1 [22]
+REMARK builtin table.insert/2
+REMARK allocation: table template 5
+   33:    table.insert(rays,{index=i,offset=offset,ok=hit~=nil and math.abs((hit :: RaycastResult).Position.Y-v.Value.Y)<0.02,expectedY=v.Value.Y,actualY=if hit then hit.Position.Y else nil})
+DUPTABLE R23 97
+SETTABLEKS R10 R23 K92 ['index']
+SETTABLEKS R18 R23 K93 ['offset']
+LOADB R24 0
+JUMPXEQKNIL R20 L40
+REMARK builtin math.abs/1
+GETTABLEKS R27 R20 K98 ['Position']
+GETTABLEKS R27 R27 K99 ['Y']
+GETTABLEKS R28 R11 K79 ['Value']
+GETTABLEKS R28 R28 K99 ['Y']
+SUB R26 R27 R28
+FASTCALL1 2 R26 L38
+GETIMPORT R25 101 [math.abs]
+CALL R25 1 1
+L38: LOADK R26 K102 [0.02]
+JUMPIFLT R25 R26 L39
+LOADB R24 0 +1
+L39: LOADB R24 1
+L40: SETTABLEKS R24 R23 K94 ['ok']
+GETTABLEKS R24 R11 K79 ['Value']
+GETTABLEKS R24 R24 K99 ['Y']
+SETTABLEKS R24 R23 K95 ['expectedY']
+JUMPIFNOT R20 L41
+GETTABLEKS R24 R20 K98 ['Position']
+GETTABLEKS R24 R24 K99 ['Y']
+JUMP L42
+L41: LOADNIL R24
+L42: SETTABLEKS R24 R23 K96 ['actualY']
+FASTCALL2 52 R5 R23 L43
+MOVE R22 R5
+GETIMPORT R21 45 [table.insert]
+CALL R21 2 0
+   30:   for _,offset in ipairs({-11.5,0,11.5})do
+L43: FORGLOOP R14 L37 2 [inext]
+   26:  for i,v in ipairs(nodes)do
+L44: FORGLOOP R7 L31 2 [inext]
+REMARK allocation: table array 1
+   36:  local points={Vector3.new(60,7,1495)}
+NEWTABLE R7 0 1
+GETIMPORT R8 84 [Vector3.new]
+LOADN R9 60
+LOADN R10 7
+LOADN R11 1495
+CALL R8 3 -1
+SETLIST R7 R8 -1 [1]
+   37:  for _,node in ipairs(nodes)do table.insert(points,node.Value+Vector3.new(0,3,0))end
+GETIMPORT R8 40 [ipairs]
+MOVE R9 R3
+CALLFB R8 1 3 [23]
+FORGPREP_INEXT R8 L46
+REMARK builtin table.insert/2
+L45: GETTABLEKS R16 R12 K79 ['Value']
+GETIMPORT R17 84 [Vector3.new]
+LOADN R18 0
+LOADN R19 3
+LOADN R20 0
+CALLFB R17 3 1 [24]
+ADD R15 R16 R17
+FASTCALL2 52 R7 R15 L46
+MOVE R14 R7
+GETIMPORT R13 45 [table.insert]
+CALL R13 2 0
+L46: FORGLOOP R8 L45 2 [inext]
+REMARK builtin table.insert/2+
+   38:  table.insert(points,Vector3.new(400,7,1500))
+MOVE R9 R7
+GETIMPORT R10 84 [Vector3.new]
+LOADN R11 400
+LOADN R12 7
+LOADN R13 1500
+CALL R10 3 -1
+FASTCALL 52 L47
+GETIMPORT R8 45 [table.insert]
+CALL R8 -1 0
+REMARK allocation: table hash 0
+   39:  local paths={}
+L47: NEWTABLE R8 0 0
+   40:  for direction=1,2 do
+LOADN R11 1
+LOADN R9 2
+LOADN R10 1
+FORNPREP R9 L61
+   41:   for i=1,#points-1 do
+L48: LOADN R14 1
+LENGTH R15 R7
+SUBK R12 R15 K62 [1]
+LOADN R13 1
+FORNPREP R12 L60
+   42:    local a,b=points[i],points[i+1];if direction==2 then a,b=b,a end
+L49: GETTABLE R15 R7 R14
+ADDK R17 R14 K62 [1]
+GETTABLE R16 R7 R17
+JUMPXEQKN R11 K103 L50 NOT [2]
+MOVE R17 R16
+MOVE R16 R15
+MOVE R15 R17
+   43:    local path=game:GetService("PathfindingService"):CreatePath({AgentRadius=2,AgentHeight=5,AgentCanJump=false,WaypointSpacing=8})
+L50: GETIMPORT R17 1 [game]
+LOADK R19 K104 ['PathfindingService']
+NAMECALL R17 R17 K3 ['GetService']
+CALLFB R17 2 1 [25]
+REMARK allocation: table template 4
+DUPTABLE R19 112
+NAMECALL R17 R17 K113 ['CreatePath']
+CALLFB R17 2 1 [26]
+REMARK allocation: closure with 3 upvalues
+   44:    local ok,err=pcall(function()path:ComputeAsync(a,b)end)
+NEWCLOSURE R19 P1
+CAPTURE VAL R17
+CAPTURE REF R15
+CAPTURE REF R16
+FASTPCALL pcall L51
+GETIMPORT R18 115 [pcall]
+CALL R18 1 2
+REMARK builtin table.insert/2
+REMARK allocation: table template 5
+   45:    table.insert(paths,{index=i,direction=direction,ok=ok and path.Status==Enum.PathStatus.Success,status=if ok then tostring(path.Status)else tostring(err),waypoints=if ok then #path:GetWaypoints()else 0})
+L51: DUPTABLE R22 119
+SETTABLEKS R14 R22 K92 ['index']
+SETTABLEKS R11 R22 K116 ['direction']
+MOVE R23 R18
+JUMPIFNOT R23 L53
+GETTABLEKS R24 R17 K120 ['Status']
+GETIMPORT R25 123 [Enum.PathStatus.Success]
+JUMPIFEQ R24 R25 L52
+LOADB R23 0 +1
+L52: LOADB R23 1
+L53: SETTABLEKS R23 R22 K94 ['ok']
+JUMPIFNOT R18 L55
+REMARK builtin tostring/1
+GETTABLEKS R24 R17 K120 ['Status']
+FASTCALL1 63 R24 L54
+GETIMPORT R23 125 [tostring]
+CALL R23 1 1
+L54: JUMP L56
+REMARK builtin tostring/1
+L55: FASTCALL1 63 R19 L56
+MOVE R24 R19
+GETIMPORT R23 125 [tostring]
+CALL R23 1 1
+L56: SETTABLEKS R23 R22 K117 ['status']
+JUMPIFNOT R18 L57
+NAMECALL R24 R17 K126 ['GetWaypoints']
+CALLFB R24 1 1 [27]
+LENGTH R23 R24
+JUMP L58
+L57: LOADN R23 0
+L58: SETTABLEKS R23 R22 K118 ['waypoints']
+FASTCALL2 52 R8 R22 L59
+MOVE R21 R8
+GETIMPORT R20 45 [table.insert]
+CALL R20 2 0
+   46:    path:Destroy()
+L59: NAMECALL R20 R17 K127 ['Destroy']
+CALLFB R20 1 0 [28]
+CLOSEUPVALS R15
+   41:   for i=1,#points-1 do
+FORNLOOP R12 L49
+   40:  for direction=1,2 do
+L60: FORNLOOP R9 L48
+REMARK allocation: table template 5
+   49:  return {scope="ENGINE_FLOOR_AND_PATHS_ONLY_NOT_ACTUAL_PLAYER_OR_PARTY_ACCEPTANCE",colliders=colliders,nodes=#nodes,rays=rays,paths=paths}
+L61: DUPTABLE R9 134
+SETTABLEKS R4 R9 K130 ['colliders']
+LENGTH R10 R3
+SETTABLEKS R10 R9 K131 ['nodes']
+SETTABLEKS R5 R9 K132 ['rays']
+SETTABLEKS R8 R9 K133 ['paths']
+RETURN R9 1
+
+Function 3 (??):
+    4: return function(world: Instance): any
+DUPCLOSURE R0 K0 []
+RETURN R0 1
+

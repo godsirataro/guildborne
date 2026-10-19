@@ -1,0 +1,2264 @@
+[
+  {
+    "meshId": "gi_original_stone_edges",
+    "name": "curb_0_-1",
+    "firstVertex": 1,
+    "vertices": 8,
+    "firstTriangle": 1,
+    "triangles": 12,
+    "center": [
+      114.42787342903884,
+      2.4,
+      1491.246500706106
+    ]
+  },
+  {
+    "meshId": "gi_original_stone_edges",
+    "name": "curb_0_1",
+    "firstVertex": 9,
+    "vertices": 8,
+    "firstTriangle": 13,
+    "triangles": 12,
+    "center": [
+      113.57212657096116,
+      2.4,
+      1521.2220707224656
+    ]
+  },
+  {
+    "meshId": "gi_original_stone_edges",
+    "name": "curb_1_-1",
+    "firstVertex": 17,
+    "vertices": 8,
+    "firstTriangle": 25,
+    "triangles": 12,
+    "center": [
+      123.8557468580777,
+      2.4,
+      1491.7672871264976
+    ]
+  },
+  {
+    "meshId": "gi_original_stone_edges",
+    "name": "curb_1_1",
+    "firstVertex": 25,
+    "vertices": 8,
+    "firstTriangle": 37,
+    "triangles": 12,
+    "center": [
+      122.1442531419223,
+      2.4,
+      1521.7184271592168
+    ]
+  },
+  {
+    "meshId": "gi_original_stone_edges",
+    "name": "curb_2_-1",
+    "firstVertex": 33,
+    "vertices": 8,
+    "firstTriangle": 49,
+    "triangles": 12,
+    "center": [
+      132.85574685807768,
+      2.4,
+      1492.2815728407832
+    ]
+  },
+  {
+    "meshId": "gi_original_stone_edges",
+    "name": "curb_2_1",
+    "firstVertex": 41,
+    "vertices": 8,
+    "firstTriangle": 61,
+    "triangles": 12,
+    "center": [
+      131.14425314192232,
+      2.4,
+      1522.2327128735024
+    ]
+  },
+  {
+    "meshId": "gi_original_stone_edges",
+    "name": "curb_3_-1",
+    "firstVertex": 49,
+    "vertices": 8,
+    "firstTriangle": 73,
+    "triangles": 12,
+    "center": [
+      141.85574685807768,
+      2.4,
+      1492.795858555069
+    ]
+  },
+  {
+    "meshId": "gi_original_stone_edges",
+    "name": "curb_3_1",
+    "firstVertex": 57,
+    "vertices": 8,
+    "firstTriangle": 85,
+    "triangles": 12,
+    "center": [
+      140.14425314192232,
+      2.4,
+      1522.746998587788
+    ]
+  },
+  {
+    "meshId": "gi_original_stone_edges",
+    "name": "curb_4_-1",
+    "firstVertex": 65,
+    "vertices": 8,
+    "firstTriangle": 97,
+    "triangles": 12,
+    "center": [
+      150.85574685807768,
+      2.4,
+      1493.3101442693546
+    ]
+  },
+  {
+    "meshId": "gi_original_stone_edges",
+    "name": "curb_4_1",
+    "firstVertex": 73,
+    "vertices": 8,
+    "firstTriangle": 109,
+    "triangles": 12,
+    "center": [
+      149.14425314192232,
+      2.4,
+      1523.2612843020738
+    ]
+  },
+  {
+    "meshId": "gi_original_stone_edges",
+    "name": "curb_5_-1",
+    "firstVertex": 81,
+    "vertices": 8,
+    "firstTriangle": 121,
+    "triangles": 12,
+    "center": [
+      159.85574685807768,
+      2.4,
+      1493.8244299836404
+    ]
+  },
+  {
+    "meshId": "gi_original_stone_edges",
+    "name": "curb_5_1",
+    "firstVertex": 89,
+    "vertices": 8,
+    "firstTriangle": 133,
+    "triangles": 12,
+    "center": [
+      158.14425314192232,
+      2.4,
+      1523.7755700163596
+    ]
+  },
+  {
+    "meshId": "gi_original_stone_edges",
+    "name": "curb_6_-1",
+    "firstVertex": 97,
+    "vertices": 8,
+    "firstTriangle": 145,
+    "triangles": 12,
+    "center": [
+      168.85574685807768,
+      2.4,
+      1494.338715697926
+    ]
+  },
+  {
+    "meshId": "gi_original_stone_edges",
+    "name": "curb_6_1",
+    "firstVertex": 105,
+    "vertices": 8,
+    "firstTriangle": 157,
+    "triangles": 12,
+    "center": [
+      167.14425314192232,
+      2.4,
+      1524.2898557306453
+    ]
+  },
+  {
+    "meshId": "gi_original_stone_edges",
+    "name": "curb_7_-1",
+    "firstVertex": 113,
+    "vertices": 8,
+    "firstTriangle": 169,
+    "triangles": 12,
+    "center": [
+      177.42787342903884,
+      2.4,
+      1494.806500706106
+    ]
+  },
+  {
+    "meshId": "gi_original_stone_edges",
+    "name": "curb_7_1",
+    "firstVertex": 121,
+    "vertices": 8,
+    "firstTriangle": 181,
+    "triangles": 12,
+    "center": [
+      176.57212657096116,
+      2.4,
+      1524.7820707224655
+    ]
+  },
+  {
+    "meshId": "gi_original_stone_edges",
+    "name": "curb_8_-1",
+    "firstVertex": 129,
+    "vertices": 8,
+    "firstTriangle": 193,
+    "triangles": 12,
+    "center": [
+      186.0,
+      2.4,
+      1495.0
+    ]
+  },
+  {
+    "meshId": "gi_original_stone_edges",
+    "name": "curb_8_1",
+    "firstVertex": 137,
+    "vertices": 8,
+    "firstTriangle": 205,
+    "triangles": 12,
+    "center": [
+      186.0,
+      2.4,
+      1525.0
+    ]
+  },
+  {
+    "meshId": "gi_original_stone_edges",
+    "name": "curb_9_-1",
+    "firstVertex": 145,
+    "vertices": 8,
+    "firstTriangle": 217,
+    "triangles": 12,
+    "center": [
+      195.0,
+      2.4,
+      1495.0
+    ]
+  },
+  {
+    "meshId": "gi_original_stone_edges",
+    "name": "curb_9_1",
+    "firstVertex": 153,
+    "vertices": 8,
+    "firstTriangle": 229,
+    "triangles": 12,
+    "center": [
+      195.0,
+      2.4,
+      1525.0
+    ]
+  },
+  {
+    "meshId": "gi_original_stone_edges",
+    "name": "curb_10_-1",
+    "firstVertex": 161,
+    "vertices": 8,
+    "firstTriangle": 241,
+    "triangles": 12,
+    "center": [
+      204.0,
+      3.25,
+      1495.0
+    ]
+  },
+  {
+    "meshId": "gi_original_stone_edges",
+    "name": "curb_10_1",
+    "firstVertex": 169,
+    "vertices": 8,
+    "firstTriangle": 253,
+    "triangles": 12,
+    "center": [
+      204.0,
+      3.25,
+      1525.0
+    ]
+  },
+  {
+    "meshId": "gi_original_stone_edges",
+    "name": "curb_11_-1",
+    "firstVertex": 177,
+    "vertices": 8,
+    "firstTriangle": 265,
+    "triangles": 12,
+    "center": [
+      213.0,
+      3.25,
+      1495.0
+    ]
+  },
+  {
+    "meshId": "gi_original_stone_edges",
+    "name": "curb_11_1",
+    "firstVertex": 185,
+    "vertices": 8,
+    "firstTriangle": 277,
+    "triangles": 12,
+    "center": [
+      213.0,
+      3.25,
+      1525.0
+    ]
+  },
+  {
+    "meshId": "gi_original_stone_edges",
+    "name": "curb_12_-1",
+    "firstVertex": 193,
+    "vertices": 8,
+    "firstTriangle": 289,
+    "triangles": 12,
+    "center": [
+      222.0,
+      3.25,
+      1495.0
+    ]
+  },
+  {
+    "meshId": "gi_original_stone_edges",
+    "name": "curb_12_1",
+    "firstVertex": 201,
+    "vertices": 8,
+    "firstTriangle": 301,
+    "triangles": 12,
+    "center": [
+      222.0,
+      3.25,
+      1525.0
+    ]
+  },
+  {
+    "meshId": "gi_original_stone_edges",
+    "name": "curb_13_-1",
+    "firstVertex": 209,
+    "vertices": 8,
+    "firstTriangle": 313,
+    "triangles": 12,
+    "center": [
+      231.0,
+      3.25,
+      1495.0
+    ]
+  },
+  {
+    "meshId": "gi_original_stone_edges",
+    "name": "curb_13_1",
+    "firstVertex": 217,
+    "vertices": 8,
+    "firstTriangle": 325,
+    "triangles": 12,
+    "center": [
+      231.0,
+      3.25,
+      1525.0
+    ]
+  },
+  {
+    "meshId": "gi_original_stone_edges",
+    "name": "curb_14_-1",
+    "firstVertex": 225,
+    "vertices": 8,
+    "firstTriangle": 337,
+    "triangles": 12,
+    "center": [
+      240.0,
+      3.25,
+      1495.0
+    ]
+  },
+  {
+    "meshId": "gi_original_stone_edges",
+    "name": "curb_14_1",
+    "firstVertex": 233,
+    "vertices": 8,
+    "firstTriangle": 349,
+    "triangles": 12,
+    "center": [
+      240.0,
+      3.25,
+      1525.0
+    ]
+  },
+  {
+    "meshId": "gi_original_stone_edges",
+    "name": "curb_15_-1",
+    "firstVertex": 241,
+    "vertices": 8,
+    "firstTriangle": 361,
+    "triangles": 12,
+    "center": [
+      249.0,
+      3.25,
+      1495.0
+    ]
+  },
+  {
+    "meshId": "gi_original_stone_edges",
+    "name": "curb_15_1",
+    "firstVertex": 249,
+    "vertices": 8,
+    "firstTriangle": 373,
+    "triangles": 12,
+    "center": [
+      249.0,
+      3.25,
+      1525.0
+    ]
+  },
+  {
+    "meshId": "gi_original_stone_edges",
+    "name": "curb_16_-1",
+    "firstVertex": 257,
+    "vertices": 8,
+    "firstTriangle": 385,
+    "triangles": 12,
+    "center": [
+      258.0,
+      3.25,
+      1495.0
+    ]
+  },
+  {
+    "meshId": "gi_original_stone_edges",
+    "name": "curb_16_1",
+    "firstVertex": 265,
+    "vertices": 8,
+    "firstTriangle": 397,
+    "triangles": 12,
+    "center": [
+      258.0,
+      3.25,
+      1525.0
+    ]
+  },
+  {
+    "meshId": "gi_original_stone_edges",
+    "name": "curb_17_-1",
+    "firstVertex": 273,
+    "vertices": 8,
+    "firstTriangle": 409,
+    "triangles": 12,
+    "center": [
+      267.0,
+      3.25,
+      1495.0
+    ]
+  },
+  {
+    "meshId": "gi_original_stone_edges",
+    "name": "curb_17_1",
+    "firstVertex": 281,
+    "vertices": 8,
+    "firstTriangle": 421,
+    "triangles": 12,
+    "center": [
+      267.0,
+      3.25,
+      1525.0
+    ]
+  },
+  {
+    "meshId": "gi_original_stone_edges",
+    "name": "curb_18_-1",
+    "firstVertex": 289,
+    "vertices": 8,
+    "firstTriangle": 433,
+    "triangles": 12,
+    "center": [
+      276.0,
+      3.25,
+      1495.0
+    ]
+  },
+  {
+    "meshId": "gi_original_stone_edges",
+    "name": "curb_18_1",
+    "firstVertex": 297,
+    "vertices": 8,
+    "firstTriangle": 445,
+    "triangles": 12,
+    "center": [
+      276.0,
+      3.25,
+      1525.0
+    ]
+  },
+  {
+    "meshId": "gi_original_stone_edges",
+    "name": "curb_19_-1",
+    "firstVertex": 305,
+    "vertices": 8,
+    "firstTriangle": 457,
+    "triangles": 12,
+    "center": [
+      285.0,
+      3.25,
+      1495.0
+    ]
+  },
+  {
+    "meshId": "gi_original_stone_edges",
+    "name": "curb_19_1",
+    "firstVertex": 313,
+    "vertices": 8,
+    "firstTriangle": 469,
+    "triangles": 12,
+    "center": [
+      285.0,
+      3.25,
+      1525.0
+    ]
+  },
+  {
+    "meshId": "gi_original_stone_edges",
+    "name": "curb_20_-1",
+    "firstVertex": 321,
+    "vertices": 8,
+    "firstTriangle": 481,
+    "triangles": 12,
+    "center": [
+      294.0,
+      3.25,
+      1495.0
+    ]
+  },
+  {
+    "meshId": "gi_original_stone_edges",
+    "name": "curb_20_1",
+    "firstVertex": 329,
+    "vertices": 8,
+    "firstTriangle": 493,
+    "triangles": 12,
+    "center": [
+      294.0,
+      3.25,
+      1525.0
+    ]
+  },
+  {
+    "meshId": "gi_original_stone_edges",
+    "name": "curb_21_-1",
+    "firstVertex": 337,
+    "vertices": 8,
+    "firstTriangle": 505,
+    "triangles": 12,
+    "center": [
+      302.1717635544387,
+      3.25,
+      1494.6458719899479
+    ]
+  },
+  {
+    "meshId": "gi_original_stone_edges",
+    "name": "curb_21_1",
+    "firstVertex": 345,
+    "vertices": 8,
+    "firstTriangle": 517,
+    "triangles": 12,
+    "center": [
+      303.8282364455613,
+      3.25,
+      1524.5541280100522
+    ]
+  },
+  {
+    "meshId": "gi_original_stone_edges",
+    "name": "curb_22_-1",
+    "firstVertex": 353,
+    "vertices": 8,
+    "firstTriangle": 529,
+    "triangles": 12,
+    "center": [
+      310.34352710887737,
+      3.25,
+      1493.7584106465624
+    ]
+  },
+  {
+    "meshId": "gi_original_stone_edges",
+    "name": "curb_22_1",
+    "firstVertex": 361,
+    "vertices": 8,
+    "firstTriangle": 541,
+    "triangles": 12,
+    "center": [
+      313.65647289112263,
+      3.25,
+      1523.574922686771
+    ]
+  },
+  {
+    "meshId": "gi_original_stone_edges",
+    "name": "curb_23_-1",
+    "firstVertex": 369,
+    "vertices": 8,
+    "firstTriangle": 553,
+    "triangles": 12,
+    "center": [
+      319.34352710887737,
+      3.25,
+      1492.7584106465624
+    ]
+  },
+  {
+    "meshId": "gi_original_stone_edges",
+    "name": "curb_23_1",
+    "firstVertex": 377,
+    "vertices": 8,
+    "firstTriangle": 565,
+    "triangles": 12,
+    "center": [
+      322.65647289112263,
+      3.25,
+      1522.574922686771
+    ]
+  },
+  {
+    "meshId": "gi_original_stone_edges",
+    "name": "curb_24_-1",
+    "firstVertex": 385,
+    "vertices": 8,
+    "firstTriangle": 577,
+    "triangles": 12,
+    "center": [
+      328.3435271088773,
+      3.25,
+      1491.7584106465624
+    ]
+  },
+  {
+    "meshId": "gi_original_stone_edges",
+    "name": "curb_24_1",
+    "firstVertex": 393,
+    "vertices": 8,
+    "firstTriangle": 589,
+    "triangles": 12,
+    "center": [
+      331.6564728911227,
+      3.25,
+      1521.574922686771
+    ]
+  },
+  {
+    "meshId": "gi_original_stone_edges",
+    "name": "curb_25_-1",
+    "firstVertex": 401,
+    "vertices": 8,
+    "firstTriangle": 601,
+    "triangles": 12,
+    "center": [
+      337.34352710887725,
+      3.25,
+      1490.7584106465624
+    ]
+  },
+  {
+    "meshId": "gi_original_stone_edges",
+    "name": "curb_25_1",
+    "firstVertex": 409,
+    "vertices": 8,
+    "firstTriangle": 613,
+    "triangles": 12,
+    "center": [
+      340.65647289112275,
+      3.25,
+      1520.574922686771
+    ]
+  },
+  {
+    "meshId": "gi_original_stone_edges",
+    "name": "curb_26_-1",
+    "firstVertex": 417,
+    "vertices": 8,
+    "firstTriangle": 625,
+    "triangles": 12,
+    "center": [
+      346.34352710887725,
+      3.25,
+      1489.7584106465624
+    ]
+  },
+  {
+    "meshId": "gi_original_stone_edges",
+    "name": "curb_26_1",
+    "firstVertex": 425,
+    "vertices": 8,
+    "firstTriangle": 637,
+    "triangles": 12,
+    "center": [
+      349.65647289112275,
+      3.25,
+      1519.574922686771
+    ]
+  },
+  {
+    "meshId": "gi_original_stone_edges",
+    "name": "curb_27_-1",
+    "firstVertex": 433,
+    "vertices": 8,
+    "firstTriangle": 649,
+    "triangles": 12,
+    "center": [
+      355.3435271088773,
+      3.25,
+      1488.7584106465622
+    ]
+  },
+  {
+    "meshId": "gi_original_stone_edges",
+    "name": "curb_27_1",
+    "firstVertex": 441,
+    "vertices": 8,
+    "firstTriangle": 661,
+    "triangles": 12,
+    "center": [
+      358.6564728911227,
+      3.25,
+      1518.5749226867708
+    ]
+  },
+  {
+    "meshId": "gi_original_stone_edges",
+    "name": "curb_28_-1",
+    "firstVertex": 449,
+    "vertices": 8,
+    "firstTriangle": 673,
+    "triangles": 12,
+    "center": [
+      364.34352710887737,
+      3.25,
+      1487.7584106465624
+    ]
+  },
+  {
+    "meshId": "gi_original_stone_edges",
+    "name": "curb_28_1",
+    "firstVertex": 457,
+    "vertices": 8,
+    "firstTriangle": 685,
+    "triangles": 12,
+    "center": [
+      367.65647289112263,
+      3.25,
+      1517.574922686771
+    ]
+  },
+  {
+    "meshId": "gi_original_stone_edges",
+    "name": "curb_29_-1",
+    "firstVertex": 465,
+    "vertices": 8,
+    "firstTriangle": 697,
+    "triangles": 12,
+    "center": [
+      373.34352710887737,
+      3.25,
+      1486.7584106465624
+    ]
+  },
+  {
+    "meshId": "gi_original_stone_edges",
+    "name": "curb_29_1",
+    "firstVertex": 473,
+    "vertices": 8,
+    "firstTriangle": 709,
+    "triangles": 12,
+    "center": [
+      376.65647289112263,
+      3.25,
+      1516.574922686771
+    ]
+  },
+  {
+    "meshId": "gi_original_stone_edges",
+    "name": "cap_112_-1",
+    "firstVertex": 481,
+    "vertices": 8,
+    "firstTriangle": 721,
+    "triangles": 12,
+    "center": [
+      112.8557468580777,
+      3.9,
+      1491.138715697926
+    ]
+  },
+  {
+    "meshId": "gi_original_stone_edges",
+    "name": "cap_112_1",
+    "firstVertex": 489,
+    "vertices": 8,
+    "firstTriangle": 733,
+    "triangles": 12,
+    "center": [
+      111.1442531419223,
+      3.9,
+      1521.0898557306452
+    ]
+  },
+  {
+    "meshId": "gi_original_stone_edges",
+    "name": "cap_198_-1",
+    "firstVertex": 497,
+    "vertices": 8,
+    "firstTriangle": 745,
+    "triangles": 12,
+    "center": [
+      198.0,
+      3.9,
+      1495.0
+    ]
+  },
+  {
+    "meshId": "gi_original_stone_edges",
+    "name": "cap_198_1",
+    "firstVertex": 505,
+    "vertices": 8,
+    "firstTriangle": 757,
+    "triangles": 12,
+    "center": [
+      198.0,
+      3.9,
+      1525.0
+    ]
+  },
+  {
+    "meshId": "gi_original_stone_edges",
+    "name": "cap_288_-1",
+    "firstVertex": 513,
+    "vertices": 8,
+    "firstTriangle": 769,
+    "triangles": 12,
+    "center": [
+      288.0,
+      3.9,
+      1495.0
+    ]
+  },
+  {
+    "meshId": "gi_original_stone_edges",
+    "name": "cap_288_1",
+    "firstVertex": 521,
+    "vertices": 8,
+    "firstTriangle": 781,
+    "triangles": 12,
+    "center": [
+      288.0,
+      3.9,
+      1525.0
+    ]
+  },
+  {
+    "meshId": "gi_original_stone_edges",
+    "name": "cap_377_-1",
+    "firstVertex": 529,
+    "vertices": 8,
+    "firstTriangle": 793,
+    "triangles": 12,
+    "center": [
+      375.34352710887737,
+      3.9,
+      1486.5361884243403
+    ]
+  },
+  {
+    "meshId": "gi_original_stone_edges",
+    "name": "cap_377_1",
+    "firstVertex": 537,
+    "vertices": 8,
+    "firstTriangle": 805,
+    "triangles": 12,
+    "center": [
+      378.65647289112263,
+      3.9,
+      1516.352700464549
+    ]
+  },
+  {
+    "meshId": "gi_original_open_arches",
+    "name": "arch_0_-1_0",
+    "firstVertex": 1,
+    "vertices": 8,
+    "firstTriangle": 1,
+    "triangles": 12,
+    "center": [
+      114.17787342903884,
+      -7.82237334478353,
+      1491.226500706106
+    ]
+  },
+  {
+    "meshId": "gi_original_open_arches",
+    "name": "arch_0_-1_1",
+    "firstVertex": 9,
+    "vertices": 8,
+    "firstTriangle": 13,
+    "triangles": 12,
+    "center": [
+      122.1057468580777,
+      -5.547373344783531,
+      1491.6672871264975
+    ]
+  },
+  {
+    "meshId": "gi_original_open_arches",
+    "name": "arch_0_-1_2",
+    "firstVertex": 17,
+    "vertices": 8,
+    "firstTriangle": 25,
+    "triangles": 12,
+    "center": [
+      129.60574685807768,
+      -3.507664145601209,
+      1492.0958585550688
+    ]
+  },
+  {
+    "meshId": "gi_original_open_arches",
+    "name": "arch_0_-1_3",
+    "firstVertex": 25,
+    "vertices": 8,
+    "firstTriangle": 37,
+    "triangles": 12,
+    "center": [
+      137.10574685807768,
+      -1.8422485583820132,
+      1492.5244299836404
+    ]
+  },
+  {
+    "meshId": "gi_original_open_arches",
+    "name": "arch_0_-1_4",
+    "firstVertex": 33,
+    "vertices": 8,
+    "firstTriangle": 49,
+    "triangles": 12,
+    "center": [
+      144.60574685807768,
+      -0.664621903165544,
+      1492.953001412212
+    ]
+  },
+  {
+    "meshId": "gi_original_open_arches",
+    "name": "arch_0_-1_5",
+    "firstVertex": 41,
+    "vertices": 8,
+    "firstTriangle": 61,
+    "triangles": 12,
+    "center": [
+      152.10574685807768,
+      -0.055037490384739485,
+      1493.3815728407833
+    ]
+  },
+  {
+    "meshId": "gi_original_open_arches",
+    "name": "arch_0_-1_6",
+    "firstVertex": 49,
+    "vertices": 8,
+    "firstTriangle": 73,
+    "triangles": 12,
+    "center": [
+      159.60574685807768,
+      -0.055037490384739485,
+      1493.8101442693546
+    ]
+  },
+  {
+    "meshId": "gi_original_open_arches",
+    "name": "arch_0_-1_7",
+    "firstVertex": 57,
+    "vertices": 8,
+    "firstTriangle": 85,
+    "triangles": 12,
+    "center": [
+      167.10574685807768,
+      -0.6646219031655431,
+      1494.2387156979262
+    ]
+  },
+  {
+    "meshId": "gi_original_open_arches",
+    "name": "arch_0_-1_8",
+    "firstVertex": 65,
+    "vertices": 8,
+    "firstTriangle": 97,
+    "triangles": 12,
+    "center": [
+      174.60574685807768,
+      -1.8422485583820123,
+      1494.6672871264975
+    ]
+  },
+  {
+    "meshId": "gi_original_open_arches",
+    "name": "arch_0_-1_9",
+    "firstVertex": 73,
+    "vertices": 8,
+    "firstTriangle": 109,
+    "triangles": 12,
+    "center": [
+      181.67787342903884,
+      -3.507664145601209,
+      1494.9407864203918
+    ]
+  },
+  {
+    "meshId": "gi_original_open_arches",
+    "name": "arch_0_-1_10",
+    "firstVertex": 81,
+    "vertices": 8,
+    "firstTriangle": 121,
+    "triangles": 12,
+    "center": [
+      188.75,
+      -5.54737334478353,
+      1495.0
+    ]
+  },
+  {
+    "meshId": "gi_original_open_arches",
+    "name": "arch_0_-1_11",
+    "firstVertex": 89,
+    "vertices": 8,
+    "firstTriangle": 133,
+    "triangles": 12,
+    "center": [
+      196.25,
+      -7.822373344783529,
+      1495.0
+    ]
+  },
+  {
+    "meshId": "gi_original_open_arches",
+    "name": "arch_0_1_0",
+    "firstVertex": 97,
+    "vertices": 8,
+    "firstTriangle": 145,
+    "triangles": 12,
+    "center": [
+      113.32212657096116,
+      -7.82237334478353,
+      1521.2020707224656
+    ]
+  },
+  {
+    "meshId": "gi_original_open_arches",
+    "name": "arch_0_1_1",
+    "firstVertex": 105,
+    "vertices": 8,
+    "firstTriangle": 157,
+    "triangles": 12,
+    "center": [
+      120.3942531419223,
+      -5.547373344783531,
+      1521.6184271592167
+    ]
+  },
+  {
+    "meshId": "gi_original_open_arches",
+    "name": "arch_0_1_2",
+    "firstVertex": 113,
+    "vertices": 8,
+    "firstTriangle": 169,
+    "triangles": 12,
+    "center": [
+      127.89425314192232,
+      -3.507664145601209,
+      1522.046998587788
+    ]
+  },
+  {
+    "meshId": "gi_original_open_arches",
+    "name": "arch_0_1_3",
+    "firstVertex": 121,
+    "vertices": 8,
+    "firstTriangle": 181,
+    "triangles": 12,
+    "center": [
+      135.39425314192232,
+      -1.8422485583820132,
+      1522.4755700163596
+    ]
+  },
+  {
+    "meshId": "gi_original_open_arches",
+    "name": "arch_0_1_4",
+    "firstVertex": 129,
+    "vertices": 8,
+    "firstTriangle": 193,
+    "triangles": 12,
+    "center": [
+      142.89425314192232,
+      -0.664621903165544,
+      1522.9041414449312
+    ]
+  },
+  {
+    "meshId": "gi_original_open_arches",
+    "name": "arch_0_1_5",
+    "firstVertex": 137,
+    "vertices": 8,
+    "firstTriangle": 205,
+    "triangles": 12,
+    "center": [
+      150.39425314192232,
+      -0.055037490384739485,
+      1523.3327128735025
+    ]
+  },
+  {
+    "meshId": "gi_original_open_arches",
+    "name": "arch_0_1_6",
+    "firstVertex": 145,
+    "vertices": 8,
+    "firstTriangle": 217,
+    "triangles": 12,
+    "center": [
+      157.89425314192232,
+      -0.055037490384739485,
+      1523.7612843020738
+    ]
+  },
+  {
+    "meshId": "gi_original_open_arches",
+    "name": "arch_0_1_7",
+    "firstVertex": 153,
+    "vertices": 8,
+    "firstTriangle": 229,
+    "triangles": 12,
+    "center": [
+      165.39425314192232,
+      -0.6646219031655431,
+      1524.1898557306454
+    ]
+  },
+  {
+    "meshId": "gi_original_open_arches",
+    "name": "arch_0_1_8",
+    "firstVertex": 161,
+    "vertices": 8,
+    "firstTriangle": 241,
+    "triangles": 12,
+    "center": [
+      172.89425314192232,
+      -1.8422485583820123,
+      1524.6184271592167
+    ]
+  },
+  {
+    "meshId": "gi_original_open_arches",
+    "name": "arch_0_1_9",
+    "firstVertex": 169,
+    "vertices": 8,
+    "firstTriangle": 253,
+    "triangles": 12,
+    "center": [
+      180.82212657096116,
+      -3.507664145601209,
+      1524.9163564367514
+    ]
+  },
+  {
+    "meshId": "gi_original_open_arches",
+    "name": "arch_0_1_10",
+    "firstVertex": 177,
+    "vertices": 8,
+    "firstTriangle": 265,
+    "triangles": 12,
+    "center": [
+      188.75,
+      -5.54737334478353,
+      1525.0
+    ]
+  },
+  {
+    "meshId": "gi_original_open_arches",
+    "name": "arch_0_1_11",
+    "firstVertex": 185,
+    "vertices": 8,
+    "firstTriangle": 277,
+    "triangles": 12,
+    "center": [
+      196.25,
+      -7.822373344783529,
+      1525.0
+    ]
+  },
+  {
+    "meshId": "gi_original_open_arches",
+    "name": "arch_1_-1_0",
+    "firstVertex": 193,
+    "vertices": 8,
+    "firstTriangle": 289,
+    "triangles": 12,
+    "center": [
+      203.75,
+      -7.82237334478353,
+      1495.0
+    ]
+  },
+  {
+    "meshId": "gi_original_open_arches",
+    "name": "arch_1_-1_1",
+    "firstVertex": 201,
+    "vertices": 8,
+    "firstTriangle": 301,
+    "triangles": 12,
+    "center": [
+      211.25,
+      -5.547373344783531,
+      1495.0
+    ]
+  },
+  {
+    "meshId": "gi_original_open_arches",
+    "name": "arch_1_-1_2",
+    "firstVertex": 209,
+    "vertices": 8,
+    "firstTriangle": 313,
+    "triangles": 12,
+    "center": [
+      218.75,
+      -3.507664145601209,
+      1495.0
+    ]
+  },
+  {
+    "meshId": "gi_original_open_arches",
+    "name": "arch_1_-1_3",
+    "firstVertex": 217,
+    "vertices": 8,
+    "firstTriangle": 325,
+    "triangles": 12,
+    "center": [
+      226.25,
+      -1.8422485583820132,
+      1495.0
+    ]
+  },
+  {
+    "meshId": "gi_original_open_arches",
+    "name": "arch_1_-1_4",
+    "firstVertex": 225,
+    "vertices": 8,
+    "firstTriangle": 337,
+    "triangles": 12,
+    "center": [
+      233.75,
+      -0.664621903165544,
+      1495.0
+    ]
+  },
+  {
+    "meshId": "gi_original_open_arches",
+    "name": "arch_1_-1_5",
+    "firstVertex": 233,
+    "vertices": 8,
+    "firstTriangle": 349,
+    "triangles": 12,
+    "center": [
+      241.25,
+      -0.055037490384739485,
+      1495.0
+    ]
+  },
+  {
+    "meshId": "gi_original_open_arches",
+    "name": "arch_1_-1_6",
+    "firstVertex": 241,
+    "vertices": 8,
+    "firstTriangle": 361,
+    "triangles": 12,
+    "center": [
+      248.75,
+      -0.055037490384739485,
+      1495.0
+    ]
+  },
+  {
+    "meshId": "gi_original_open_arches",
+    "name": "arch_1_-1_7",
+    "firstVertex": 249,
+    "vertices": 8,
+    "firstTriangle": 373,
+    "triangles": 12,
+    "center": [
+      256.25,
+      -0.6646219031655431,
+      1495.0
+    ]
+  },
+  {
+    "meshId": "gi_original_open_arches",
+    "name": "arch_1_-1_8",
+    "firstVertex": 257,
+    "vertices": 8,
+    "firstTriangle": 385,
+    "triangles": 12,
+    "center": [
+      263.75,
+      -1.8422485583820123,
+      1495.0
+    ]
+  },
+  {
+    "meshId": "gi_original_open_arches",
+    "name": "arch_1_-1_9",
+    "firstVertex": 265,
+    "vertices": 8,
+    "firstTriangle": 397,
+    "triangles": 12,
+    "center": [
+      271.25,
+      -3.507664145601209,
+      1495.0
+    ]
+  },
+  {
+    "meshId": "gi_original_open_arches",
+    "name": "arch_1_-1_10",
+    "firstVertex": 273,
+    "vertices": 8,
+    "firstTriangle": 409,
+    "triangles": 12,
+    "center": [
+      278.75,
+      -5.54737334478353,
+      1495.0
+    ]
+  },
+  {
+    "meshId": "gi_original_open_arches",
+    "name": "arch_1_-1_11",
+    "firstVertex": 281,
+    "vertices": 8,
+    "firstTriangle": 421,
+    "triangles": 12,
+    "center": [
+      286.25,
+      -7.822373344783529,
+      1495.0
+    ]
+  },
+  {
+    "meshId": "gi_original_open_arches",
+    "name": "arch_1_1_0",
+    "firstVertex": 289,
+    "vertices": 8,
+    "firstTriangle": 433,
+    "triangles": 12,
+    "center": [
+      203.75,
+      -7.82237334478353,
+      1525.0
+    ]
+  },
+  {
+    "meshId": "gi_original_open_arches",
+    "name": "arch_1_1_1",
+    "firstVertex": 297,
+    "vertices": 8,
+    "firstTriangle": 445,
+    "triangles": 12,
+    "center": [
+      211.25,
+      -5.547373344783531,
+      1525.0
+    ]
+  },
+  {
+    "meshId": "gi_original_open_arches",
+    "name": "arch_1_1_2",
+    "firstVertex": 305,
+    "vertices": 8,
+    "firstTriangle": 457,
+    "triangles": 12,
+    "center": [
+      218.75,
+      -3.507664145601209,
+      1525.0
+    ]
+  },
+  {
+    "meshId": "gi_original_open_arches",
+    "name": "arch_1_1_3",
+    "firstVertex": 313,
+    "vertices": 8,
+    "firstTriangle": 469,
+    "triangles": 12,
+    "center": [
+      226.25,
+      -1.8422485583820132,
+      1525.0
+    ]
+  },
+  {
+    "meshId": "gi_original_open_arches",
+    "name": "arch_1_1_4",
+    "firstVertex": 321,
+    "vertices": 8,
+    "firstTriangle": 481,
+    "triangles": 12,
+    "center": [
+      233.75,
+      -0.664621903165544,
+      1525.0
+    ]
+  },
+  {
+    "meshId": "gi_original_open_arches",
+    "name": "arch_1_1_5",
+    "firstVertex": 329,
+    "vertices": 8,
+    "firstTriangle": 493,
+    "triangles": 12,
+    "center": [
+      241.25,
+      -0.055037490384739485,
+      1525.0
+    ]
+  },
+  {
+    "meshId": "gi_original_open_arches",
+    "name": "arch_1_1_6",
+    "firstVertex": 337,
+    "vertices": 8,
+    "firstTriangle": 505,
+    "triangles": 12,
+    "center": [
+      248.75,
+      -0.055037490384739485,
+      1525.0
+    ]
+  },
+  {
+    "meshId": "gi_original_open_arches",
+    "name": "arch_1_1_7",
+    "firstVertex": 345,
+    "vertices": 8,
+    "firstTriangle": 517,
+    "triangles": 12,
+    "center": [
+      256.25,
+      -0.6646219031655431,
+      1525.0
+    ]
+  },
+  {
+    "meshId": "gi_original_open_arches",
+    "name": "arch_1_1_8",
+    "firstVertex": 353,
+    "vertices": 8,
+    "firstTriangle": 529,
+    "triangles": 12,
+    "center": [
+      263.75,
+      -1.8422485583820123,
+      1525.0
+    ]
+  },
+  {
+    "meshId": "gi_original_open_arches",
+    "name": "arch_1_1_9",
+    "firstVertex": 361,
+    "vertices": 8,
+    "firstTriangle": 541,
+    "triangles": 12,
+    "center": [
+      271.25,
+      -3.507664145601209,
+      1525.0
+    ]
+  },
+  {
+    "meshId": "gi_original_open_arches",
+    "name": "arch_1_1_10",
+    "firstVertex": 369,
+    "vertices": 8,
+    "firstTriangle": 553,
+    "triangles": 12,
+    "center": [
+      278.75,
+      -5.54737334478353,
+      1525.0
+    ]
+  },
+  {
+    "meshId": "gi_original_open_arches",
+    "name": "arch_1_1_11",
+    "firstVertex": 377,
+    "vertices": 8,
+    "firstTriangle": 565,
+    "triangles": 12,
+    "center": [
+      286.25,
+      -7.822373344783529,
+      1525.0
+    ]
+  },
+  {
+    "meshId": "gi_original_open_arches",
+    "name": "arch_2_-1_0",
+    "firstVertex": 385,
+    "vertices": 8,
+    "firstTriangle": 577,
+    "triangles": 12,
+    "center": [
+      293.75,
+      -7.82237334478353,
+      1495.0
+    ]
+  },
+  {
+    "meshId": "gi_original_open_arches",
+    "name": "arch_2_-1_1",
+    "firstVertex": 393,
+    "vertices": 8,
+    "firstTriangle": 589,
+    "triangles": 12,
+    "center": [
+      300.42176355443866,
+      -5.547373344783531,
+      1494.7680942121701
+    ]
+  },
+  {
+    "meshId": "gi_original_open_arches",
+    "name": "arch_2_-1_2",
+    "firstVertex": 401,
+    "vertices": 8,
+    "firstTriangle": 601,
+    "triangles": 12,
+    "center": [
+      307.0935271088773,
+      -3.507664145601209,
+      1494.1195217576733
+    ]
+  },
+  {
+    "meshId": "gi_original_open_arches",
+    "name": "arch_2_-1_3",
+    "firstVertex": 409,
+    "vertices": 8,
+    "firstTriangle": 613,
+    "triangles": 12,
+    "center": [
+      314.5935271088773,
+      -1.8422485583820132,
+      1493.2861884243403
+    ]
+  },
+  {
+    "meshId": "gi_original_open_arches",
+    "name": "arch_2_-1_4",
+    "firstVertex": 417,
+    "vertices": 8,
+    "firstTriangle": 625,
+    "triangles": 12,
+    "center": [
+      322.0935271088773,
+      -0.664621903165544,
+      1492.4528550910068
+    ]
+  },
+  {
+    "meshId": "gi_original_open_arches",
+    "name": "arch_2_-1_5",
+    "firstVertex": 425,
+    "vertices": 8,
+    "firstTriangle": 637,
+    "triangles": 12,
+    "center": [
+      329.5935271088773,
+      -0.055037490384739485,
+      1491.6195217576735
+    ]
+  },
+  {
+    "meshId": "gi_original_open_arches",
+    "name": "arch_2_-1_6",
+    "firstVertex": 433,
+    "vertices": 8,
+    "firstTriangle": 649,
+    "triangles": 12,
+    "center": [
+      337.09352710887725,
+      -0.055037490384739485,
+      1490.7861884243403
+    ]
+  },
+  {
+    "meshId": "gi_original_open_arches",
+    "name": "arch_2_-1_7",
+    "firstVertex": 441,
+    "vertices": 8,
+    "firstTriangle": 661,
+    "triangles": 12,
+    "center": [
+      344.59352710887725,
+      -0.6646219031655431,
+      1489.9528550910068
+    ]
+  },
+  {
+    "meshId": "gi_original_open_arches",
+    "name": "arch_2_-1_8",
+    "firstVertex": 449,
+    "vertices": 8,
+    "firstTriangle": 673,
+    "triangles": 12,
+    "center": [
+      352.09352710887725,
+      -1.8422485583820123,
+      1489.1195217576733
+    ]
+  },
+  {
+    "meshId": "gi_original_open_arches",
+    "name": "arch_2_-1_9",
+    "firstVertex": 457,
+    "vertices": 8,
+    "firstTriangle": 685,
+    "triangles": 12,
+    "center": [
+      359.5935271088773,
+      -3.507664145601209,
+      1488.2861884243403
+    ]
+  },
+  {
+    "meshId": "gi_original_open_arches",
+    "name": "arch_2_-1_10",
+    "firstVertex": 465,
+    "vertices": 8,
+    "firstTriangle": 697,
+    "triangles": 12,
+    "center": [
+      367.0935271088773,
+      -5.54737334478353,
+      1487.4528550910068
+    ]
+  },
+  {
+    "meshId": "gi_original_open_arches",
+    "name": "arch_2_-1_11",
+    "firstVertex": 473,
+    "vertices": 8,
+    "firstTriangle": 709,
+    "triangles": 12,
+    "center": [
+      374.5935271088773,
+      -7.822373344783529,
+      1486.6195217576733
+    ]
+  },
+  {
+    "meshId": "gi_original_open_arches",
+    "name": "arch_2_1_0",
+    "firstVertex": 481,
+    "vertices": 8,
+    "firstTriangle": 721,
+    "triangles": 12,
+    "center": [
+      293.75,
+      -7.82237334478353,
+      1525.0
+    ]
+  },
+  {
+    "meshId": "gi_original_open_arches",
+    "name": "arch_2_1_1",
+    "firstVertex": 489,
+    "vertices": 8,
+    "firstTriangle": 733,
+    "triangles": 12,
+    "center": [
+      302.07823644556134,
+      -5.547373344783531,
+      1524.6763502322742
+    ]
+  },
+  {
+    "meshId": "gi_original_open_arches",
+    "name": "arch_2_1_2",
+    "firstVertex": 497,
+    "vertices": 8,
+    "firstTriangle": 745,
+    "triangles": 12,
+    "center": [
+      310.4064728911227,
+      -3.507664145601209,
+      1523.936033797882
+    ]
+  },
+  {
+    "meshId": "gi_original_open_arches",
+    "name": "arch_2_1_3",
+    "firstVertex": 505,
+    "vertices": 8,
+    "firstTriangle": 757,
+    "triangles": 12,
+    "center": [
+      317.9064728911227,
+      -1.8422485583820132,
+      1523.102700464549
+    ]
+  },
+  {
+    "meshId": "gi_original_open_arches",
+    "name": "arch_2_1_4",
+    "firstVertex": 513,
+    "vertices": 8,
+    "firstTriangle": 769,
+    "triangles": 12,
+    "center": [
+      325.4064728911227,
+      -0.664621903165544,
+      1522.2693671312154
+    ]
+  },
+  {
+    "meshId": "gi_original_open_arches",
+    "name": "arch_2_1_5",
+    "firstVertex": 521,
+    "vertices": 8,
+    "firstTriangle": 781,
+    "triangles": 12,
+    "center": [
+      332.9064728911227,
+      -0.055037490384739485,
+      1521.4360337978821
+    ]
+  },
+  {
+    "meshId": "gi_original_open_arches",
+    "name": "arch_2_1_6",
+    "firstVertex": 529,
+    "vertices": 8,
+    "firstTriangle": 793,
+    "triangles": 12,
+    "center": [
+      340.40647289112275,
+      -0.055037490384739485,
+      1520.602700464549
+    ]
+  },
+  {
+    "meshId": "gi_original_open_arches",
+    "name": "arch_2_1_7",
+    "firstVertex": 537,
+    "vertices": 8,
+    "firstTriangle": 805,
+    "triangles": 12,
+    "center": [
+      347.90647289112275,
+      -0.6646219031655431,
+      1519.7693671312154
+    ]
+  },
+  {
+    "meshId": "gi_original_open_arches",
+    "name": "arch_2_1_8",
+    "firstVertex": 545,
+    "vertices": 8,
+    "firstTriangle": 817,
+    "triangles": 12,
+    "center": [
+      355.40647289112275,
+      -1.8422485583820123,
+      1518.936033797882
+    ]
+  },
+  {
+    "meshId": "gi_original_open_arches",
+    "name": "arch_2_1_9",
+    "firstVertex": 553,
+    "vertices": 8,
+    "firstTriangle": 829,
+    "triangles": 12,
+    "center": [
+      362.9064728911227,
+      -3.507664145601209,
+      1518.102700464549
+    ]
+  },
+  {
+    "meshId": "gi_original_open_arches",
+    "name": "arch_2_1_10",
+    "firstVertex": 561,
+    "vertices": 8,
+    "firstTriangle": 841,
+    "triangles": 12,
+    "center": [
+      370.4064728911227,
+      -5.54737334478353,
+      1517.2693671312154
+    ]
+  },
+  {
+    "meshId": "gi_original_open_arches",
+    "name": "arch_2_1_11",
+    "firstVertex": 569,
+    "vertices": 8,
+    "firstTriangle": 853,
+    "triangles": 12,
+    "center": [
+      377.9064728911227,
+      -7.822373344783529,
+      1516.436033797882
+    ]
+  },
+  {
+    "meshId": "gi_original_open_arches",
+    "name": "pier_112_-1",
+    "firstVertex": 577,
+    "vertices": 8,
+    "firstTriangle": 865,
+    "triangles": 12,
+    "center": [
+      112.42787342903884,
+      -4.6,
+      1491.126500706106
+    ]
+  },
+  {
+    "meshId": "gi_original_open_arches",
+    "name": "pier_112_1",
+    "firstVertex": 585,
+    "vertices": 8,
+    "firstTriangle": 877,
+    "triangles": 12,
+    "center": [
+      111.57212657096116,
+      -4.6,
+      1521.1020707224657
+    ]
+  },
+  {
+    "meshId": "gi_original_open_arches",
+    "name": "pier_200_-1",
+    "firstVertex": 593,
+    "vertices": 8,
+    "firstTriangle": 889,
+    "triangles": 12,
+    "center": [
+      200.0,
+      -4.6,
+      1495.0
+    ]
+  },
+  {
+    "meshId": "gi_original_open_arches",
+    "name": "pier_200_1",
+    "firstVertex": 601,
+    "vertices": 8,
+    "firstTriangle": 901,
+    "triangles": 12,
+    "center": [
+      200.0,
+      -4.6,
+      1525.0
+    ]
+  },
+  {
+    "meshId": "gi_original_open_arches",
+    "name": "pier_290_-1",
+    "firstVertex": 609,
+    "vertices": 8,
+    "firstTriangle": 913,
+    "triangles": 12,
+    "center": [
+      290.0,
+      -4.6,
+      1495.0
+    ]
+  },
+  {
+    "meshId": "gi_original_open_arches",
+    "name": "pier_290_1",
+    "firstVertex": 617,
+    "vertices": 8,
+    "firstTriangle": 925,
+    "triangles": 12,
+    "center": [
+      290.0,
+      -4.6,
+      1525.0
+    ]
+  },
+  {
+    "meshId": "gi_original_open_arches",
+    "name": "pier_378_-1",
+    "firstVertex": 625,
+    "vertices": 8,
+    "firstTriangle": 937,
+    "triangles": 12,
+    "center": [
+      376.3435271088773,
+      -4.6,
+      1486.425077313229
+    ]
+  },
+  {
+    "meshId": "gi_original_open_arches",
+    "name": "pier_378_1",
+    "firstVertex": 633,
+    "vertices": 8,
+    "firstTriangle": 949,
+    "triangles": 12,
+    "center": [
+      379.6564728911227,
+      -4.6,
+      1516.2415893534376
+    ]
+  },
+  {
+    "meshId": "gi_original_woodland_rails",
+    "name": "post_118_-1",
+    "firstVertex": 1,
+    "vertices": 8,
+    "firstTriangle": 1,
+    "triangles": 12,
+    "center": [
+      118.8557468580777,
+      4.0,
+      1491.4815728407832
+    ]
+  },
+  {
+    "meshId": "gi_original_woodland_rails",
+    "name": "post_130_-1",
+    "firstVertex": 9,
+    "vertices": 8,
+    "firstTriangle": 13,
+    "triangles": 12,
+    "center": [
+      130.85574685807768,
+      4.0,
+      1492.1672871264975
+    ]
+  },
+  {
+    "meshId": "gi_original_woodland_rails",
+    "name": "post_142_-1",
+    "firstVertex": 17,
+    "vertices": 8,
+    "firstTriangle": 25,
+    "triangles": 12,
+    "center": [
+      142.85574685807768,
+      4.0,
+      1492.8530014122118
+    ]
+  },
+  {
+    "meshId": "gi_original_woodland_rails",
+    "name": "post_154_-1",
+    "firstVertex": 25,
+    "vertices": 8,
+    "firstTriangle": 37,
+    "triangles": 12,
+    "center": [
+      154.85574685807768,
+      4.0,
+      1493.5387156979261
+    ]
+  },
+  {
+    "meshId": "gi_original_woodland_rails",
+    "name": "post_166_-1",
+    "firstVertex": 33,
+    "vertices": 8,
+    "firstTriangle": 49,
+    "triangles": 12,
+    "center": [
+      166.85574685807768,
+      4.0,
+      1494.2244299836404
+    ]
+  },
+  {
+    "meshId": "gi_original_woodland_rails",
+    "name": "post_178_-1",
+    "firstVertex": 41,
+    "vertices": 8,
+    "firstTriangle": 61,
+    "triangles": 12,
+    "center": [
+      178.85574685807768,
+      4.0,
+      1494.9101442693548
+    ]
+  },
+  {
+    "meshId": "gi_original_woodland_rails",
+    "name": "post_190_-1",
+    "firstVertex": 49,
+    "vertices": 8,
+    "firstTriangle": 73,
+    "triangles": 12,
+    "center": [
+      190.0,
+      4.0,
+      1495.0
+    ]
+  },
+  {
+    "meshId": "gi_original_woodland_rails",
+    "name": "rail_118_-1_3.6",
+    "firstVertex": 57,
+    "vertices": 8,
+    "firstTriangle": 85,
+    "triangles": 12,
+    "center": [
+      132.35574685807768,
+      3.6,
+      1492.2530014122117
+    ]
+  },
+  {
+    "meshId": "gi_original_woodland_rails",
+    "name": "rail_118_-1_5.5",
+    "firstVertex": 65,
+    "vertices": 8,
+    "firstTriangle": 97,
+    "triangles": 12,
+    "center": [
+      132.35574685807768,
+      5.5,
+      1492.2530014122117
+    ]
+  },
+  {
+    "meshId": "gi_original_woodland_rails",
+    "name": "rail_145_-1_3.6",
+    "firstVertex": 73,
+    "vertices": 8,
+    "firstTriangle": 109,
+    "triangles": 12,
+    "center": [
+      163.35574685807768,
+      3.6,
+      1494.0244299836404
+    ]
+  },
+  {
+    "meshId": "gi_original_woodland_rails",
+    "name": "rail_145_-1_5.5",
+    "firstVertex": 81,
+    "vertices": 8,
+    "firstTriangle": 121,
+    "triangles": 12,
+    "center": [
+      163.35574685807768,
+      5.5,
+      1494.0244299836404
+    ]
+  },
+  {
+    "meshId": "gi_original_woodland_rails",
+    "name": "rail_180_-1_3.6",
+    "firstVertex": 89,
+    "vertices": 8,
+    "firstTriangle": 133,
+    "triangles": 12,
+    "center": [
+      187.42787342903884,
+      3.6,
+      1495.0122149918202
+    ]
+  },
+  {
+    "meshId": "gi_original_woodland_rails",
+    "name": "rail_180_-1_5.5",
+    "firstVertex": 97,
+    "vertices": 8,
+    "firstTriangle": 145,
+    "triangles": 12,
+    "center": [
+      187.42787342903884,
+      5.5,
+      1495.0122149918202
+    ]
+  },
+  {
+    "meshId": "gi_original_woodland_rails",
+    "name": "post_118_1",
+    "firstVertex": 105,
+    "vertices": 8,
+    "firstTriangle": 157,
+    "triangles": 12,
+    "center": [
+      117.1442531419223,
+      4.0,
+      1521.4327128735024
+    ]
+  },
+  {
+    "meshId": "gi_original_woodland_rails",
+    "name": "post_130_1",
+    "firstVertex": 113,
+    "vertices": 8,
+    "firstTriangle": 169,
+    "triangles": 12,
+    "center": [
+      129.14425314192232,
+      4.0,
+      1522.1184271592167
+    ]
+  },
+  {
+    "meshId": "gi_original_woodland_rails",
+    "name": "post_142_1",
+    "firstVertex": 121,
+    "vertices": 8,
+    "firstTriangle": 181,
+    "triangles": 12,
+    "center": [
+      141.14425314192232,
+      4.0,
+      1522.804141444931
+    ]
+  },
+  {
+    "meshId": "gi_original_woodland_rails",
+    "name": "post_154_1",
+    "firstVertex": 129,
+    "vertices": 8,
+    "firstTriangle": 193,
+    "triangles": 12,
+    "center": [
+      153.14425314192232,
+      4.0,
+      1523.4898557306453
+    ]
+  },
+  {
+    "meshId": "gi_original_woodland_rails",
+    "name": "post_166_1",
+    "firstVertex": 137,
+    "vertices": 8,
+    "firstTriangle": 205,
+    "triangles": 12,
+    "center": [
+      165.14425314192232,
+      4.0,
+      1524.1755700163596
+    ]
+  },
+  {
+    "meshId": "gi_original_woodland_rails",
+    "name": "post_178_1",
+    "firstVertex": 145,
+    "vertices": 8,
+    "firstTriangle": 217,
+    "triangles": 12,
+    "center": [
+      177.14425314192232,
+      4.0,
+      1524.861284302074
+    ]
+  },
+  {
+    "meshId": "gi_original_woodland_rails",
+    "name": "post_190_1",
+    "firstVertex": 153,
+    "vertices": 8,
+    "firstTriangle": 229,
+    "triangles": 12,
+    "center": [
+      190.0,
+      4.0,
+      1525.0
+    ]
+  },
+  {
+    "meshId": "gi_original_woodland_rails",
+    "name": "rail_118_1_3.6",
+    "firstVertex": 161,
+    "vertices": 8,
+    "firstTriangle": 241,
+    "triangles": 12,
+    "center": [
+      130.64425314192232,
+      3.6,
+      1522.2041414449309
+    ]
+  },
+  {
+    "meshId": "gi_original_woodland_rails",
+    "name": "rail_118_1_5.5",
+    "firstVertex": 169,
+    "vertices": 8,
+    "firstTriangle": 253,
+    "triangles": 12,
+    "center": [
+      130.64425314192232,
+      5.5,
+      1522.2041414449309
+    ]
+  },
+  {
+    "meshId": "gi_original_woodland_rails",
+    "name": "rail_145_1_3.6",
+    "firstVertex": 177,
+    "vertices": 8,
+    "firstTriangle": 265,
+    "triangles": 12,
+    "center": [
+      161.64425314192232,
+      3.6,
+      1523.9755700163596
+    ]
+  },
+  {
+    "meshId": "gi_original_woodland_rails",
+    "name": "rail_145_1_5.5",
+    "firstVertex": 185,
+    "vertices": 8,
+    "firstTriangle": 277,
+    "triangles": 12,
+    "center": [
+      161.64425314192232,
+      5.5,
+      1523.9755700163596
+    ]
+  },
+  {
+    "meshId": "gi_original_woodland_rails",
+    "name": "rail_180_1_3.6",
+    "firstVertex": 193,
+    "vertices": 8,
+    "firstTriangle": 289,
+    "triangles": 12,
+    "center": [
+      186.57212657096116,
+      3.6,
+      1524.9877850081798
+    ]
+  },
+  {
+    "meshId": "gi_original_woodland_rails",
+    "name": "rail_180_1_5.5",
+    "firstVertex": 201,
+    "vertices": 8,
+    "firstTriangle": 301,
+    "triangles": 12,
+    "center": [
+      186.57212657096116,
+      5.5,
+      1524.9877850081798
+    ]
+  }
+]

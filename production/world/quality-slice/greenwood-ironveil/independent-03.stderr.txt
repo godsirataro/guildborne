@@ -1,0 +1,8 @@
+Traceback (most recent call last):
+  File "C:\Work\MySelf\Guildborne-greenwood-ironveil\production\world\quality-slice\greenwood-ironveil\independent_verify.py", line 221, in <module>
+    if __name__=='__main__':main()
+                            ~~~~^^
+  File "C:\Work\MySelf\Guildborne-greenwood-ironveil\production\world\quality-slice\greenwood-ironveil\independent_verify.py", line 160, in main
+    assert sum(normal[k]*(centroid[k]-solid['center'][k]) for k in range(3))>1e-8,('inward solid face',solid['name'])
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+AssertionError: ('inward solid face', 'curb_0_-1')

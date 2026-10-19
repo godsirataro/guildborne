@@ -1,0 +1,13 @@
+{
+  "command": [
+    "python",
+    "independent_verify.py",
+    "--skip-render"
+  ],
+  "startUtc": "2026-10-19T01:01:09.905512+00:00",
+  "endUtc": "2026-10-19T01:01:16.264036+00:00",
+  "exitCode": 0,
+  "verifierSha256": "c6b99ba76c38dabfbfa7fb8283180213b31bc5841b9e9afae7d2e96425be8798",
+  "stdoutSha256": "feb02bf7ee35696577fc278a55dded8bef7a5eab472f13d096c4d8b3a8ff47be",
+  "stderrSha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+}

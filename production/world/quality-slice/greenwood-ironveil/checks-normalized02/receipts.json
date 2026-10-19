@@ -1,0 +1,65 @@
+{
+  "scope": "LOCAL_SUBPROCESS_NOT_STUDIO",
+  "inputHashes": {
+    "src/server/Services/WorldQualitySlice.luau": "2120fee176b1f5b6bf1779539c9e0899a85d5efd468d38e104cdc270ab892653",
+    "src/shared/Config/WorldQuality.luau": "e5239a28064ea15fce2c986ae82f96fda268167e72eee2da2a3b6b4879205af5",
+    "tests/world_quality.luau": "81263c8a1f95837d21733a33342e81157f1793508a1f23abc89cfeab89340ce3",
+    "production/world/quality-slice/greenwood-ironveil/run_scoped_checks.py": "92a8c1285f786d2465bda32298bc2abef905c96eeebad80694e7eb943441ab1d"
+  },
+  "inputsUnchanged": true,
+  "checks": [
+    {
+      "name": "contract",
+      "command": [
+        "C:\\Work\\MySelf\\Guildborne-greenwood-ironveil\\.tools\\luau\\luau.exe",
+        "tests/world_quality.luau"
+      ],
+      "exitCode": 0,
+      "seconds": 0.06306540000150562,
+      "stdoutSha256": "bc0c9fb75f260391cfa6fb274e45e6574c5269c0936035ef15a151a3da90f616",
+      "stderrSha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "name": "lifecycle",
+      "command": [
+        "C:\\Work\\MySelf\\Guildborne-greenwood-ironveil\\.tools\\luau\\luau.exe",
+        "C:\\Work\\MySelf\\Guildborne-greenwood-ironveil\\tests\\_ironveil_final_lifecycle.luau"
+      ],
+      "exitCode": 0,
+      "seconds": 0.5326204000011785,
+      "stdoutSha256": "6647b6c2f4bcb1cf906eb8ad75775fd78bbef38b1f4ce32ade2603432badbb6f",
+      "stderrSha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "name": "compile",
+      "command": [
+        "C:\\Work\\MySelf\\Guildborne-greenwood-ironveil\\.tools\\luau\\luau-compile.exe",
+        "--null",
+        "src/server/Services/WorldQualitySlice.luau",
+        "src/shared/Config/WorldQuality.luau",
+        "tests/world_quality.luau"
+      ],
+      "exitCode": 0,
+      "seconds": 0.023373600000923034,
+      "stdoutSha256": "2dfeb98340af45dad7fe8d9617ec858df2a79399ca231cbe156fc1ae0f0d9640",
+      "stderrSha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "name": "types",
+      "command": [
+        "C:\\Work\\MySelf\\Guildborne-greenwood-ironveil\\.tools\\luau-lsp\\luau-lsp.exe",
+        "analyze",
+        "--platform=roblox",
+        "--sourcemap=build/sourcemap.json",
+        "--definitions=C:\\Work\\MySelf\\Guildborne-greenwood-ironveil\\.tools\\luau-lsp\\globalTypes.d.luau",
+        "src/server/Services/WorldQualitySlice.luau",
+        "src/shared/Config/WorldQuality.luau",
+        "tests/world_quality.luau"
+      ],
+      "exitCode": 0,
+      "seconds": 3.0563072999975702,
+      "stdoutSha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "stderrSha256": "7ecac0459dfe9174a89a33be2cf14f448001f29af0f3291e79ae4ab8e42fc70c"
+    }
+  ]
+}
