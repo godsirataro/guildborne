@@ -1,7 +1,7 @@
 # Guildborne master goal
 
 Updated 2026-10-19 at the user's explicit request to preserve the full goal.
-Status: ACTIVE. The starter slice and City–Greenwood seam are intermediate gates,
+Status: ACTIVE. The starter slice and Cityâ€“Greenwood seam are intermediate gates,
 not completion of the requested game.
 
 ## Requested outcome
@@ -34,43 +34,53 @@ import, Studio playtests, physical-device evidence and external human art/UAT
 approval. Do not claim 100% while required evidence or content is missing.
 
 Current engineering contract: [CONTINUOUS_WORLD_V6.md](CONTINUOUS_WORLD_V6.md).
-Shared ledger: C:/Work/MySelf/Guildborne/build/agentic/four-session-v7.sqlite3.
-V6 is historical. Registry957f434 contains76 tasks; fresh audit and registry
-reconciliation independently ACCEPTED. This does not migrate game acceptance.
-Current checkpoint: City–Greenwood geometry and authoritative walking are
-integrated. Native synthetic five-companion round trips passed before and after
-bounded landform import; these do not prove earned eligibility or full gameplay.
-Landform import passed, while native art review still requires improvements.
-S15 native cosmetic checks and four actual authoritative combat fixture scenarios
-passed; this does not accept earned rewards, normal input, full HUD or audio.
-See ../../integration/quality-slice/GREENWOOD_COMBAT_NATIVE.md and its raw reports.
-S14 Inventory redesign is integrated with twelve view and seven pane cases plus
-the full944-test baseline. Combined candidate normal Memory-game Thai Inventory
-rendering passed a bounded check (01ad90d): one pane, actual avatar and no visible
-TextFits failures at796x674. Equipment outcomes, other states, devices and final
-reference fidelity remain pending. S14 reviews artwork.
-S13 coast and bespoke watchspire are integrated and imported. The spire synthetic
-party test passed1487 samples/79 segments with five living companions and zero
-rewards. S13 now owns two composition adjustments; other cities and physical
-routes remain unfinished.
-Multi-route readiness is integrated with 944 local tests passing; Bootstrap still
-activates only the current edge. Prior walking/art passes do not accept this new
-source; the fresh combat fixture does cover its bounded combat scenarios.
-See [MULTIROUTE_READINESS_V6.md](MULTIROUTE_READINESS_V6.md) and
-[next-wave checkpoint](../../integration/quality-slice/NEXT_WAVE.md) for evidence
-and ownership. Next gates are Inventory art and authoritative equipment checks,
-composition review, next-edge geometry and earned connected gameplay. S15 owns
-combat-cue-lifecycle; S17 owns Class3 proof domain Phase A. Phase B depends on
-reviewed A, D on A/B, activation C on A/B/D. No new proof policy is activated.
-Earlier earned Memory Studio sessions ended with their host processes; historical
-evidence is retained but earned progress is not restored or currently live.
-Re-establish earned progression evidence and serialize Studio/Blender ownership.
-Reviewed integration checkpoint:957f434 pushed on codex/three-session-integration.
-Reviewed normal combined native evidence follows in01ad90d. Studio
-b8caf94f-9ab1-4969-80d4-9b53a54cc24b is stopped after that check. Bundled Rojo
-serves the current quality project on34872 (session14305); plugin sync remains
-unverified. The discovered Blender bridge belongs to NEONSHIFT, not Guildborne;
-the user's unsaved Blender scene remains untouched. Latest quota48% remaining.
+Shared ledger: C:/Work/MySelf/Guildborne/build/agentic/four-session-v8.sqlite3.
+V7 and earlier ledgers are historical. Canonical plan revision7 contains76 tasks.
+Fresh audit, registry and Class3 A/B/D are independently ACCEPTED on f387f05;
+this does not migrate native game acceptance. Full baseline953 tests plus
+build/type/compile/repository checks passed, with existing nonfatal diagnostics.
+Current pushed checkpoint ccd40f0 includes reviewed dock repair and native05.
+See [v8 checkpoint](../../integration/quality-slice/V8_CHECKPOINT.md).
+
+Current work: S17 owns Class3 transaction/world integration Phase C on v8,
+including precise refusal/session fences and the atomic private save pipeline.
+S15 owns the cue probe's fixed-window Heartbeat publication barrier. Neither
+worker may mutate Studio or default production activation flags. S13/S14 are
+preparing concrete next world/GUI art packages from actual references and assets.
+
+Cityâ€“Greenwood and Greenwoodâ€“Ironveil source routes are integrated. Prior
+synthetic five-companion route checks remain historical, not earned-game proof.
+Ironveil full-width dock support repair d974b81 integrated c3b81eb and passed
+independent geometry review; fresh engine rays/paths/party traversal are pending.
+Coast/watchspire imports and bounded synthetic traversal passed previously.
+All cities, monster progression through100 and tower completeness remain open.
+The latest dock render still shows prototype mine blocks and flat paving; the
+next art direction is an authored ore receiving yard and mine ascent.
+
+Native Inventory checks include actual Memory-game avatar and bounded EN/TH
+layout validation. Latest chevron and second-route guidance remain native pending.
+Authoritative equipment outcomes, reference fidelity and devices remain open.
+Class3 A/B/D are optional components until C is integrated and earned trials run.
+
+Combat native05 used unchanged candidate04 with native UI probe enable/start,
+resolving the MCP post-command camera reset. It remains INCONCLUSIVE on missing
+end-boundary Heartbeat coverage:0completed cases/requests/VFX, cleanupErrors empty.
+Reported maximum gap0.097789 seconds is below0.15; source diagnosis targets
+recorder publication ordering, not relaxed timing. Audio IDs remain unbound;
+silent cue dispatch is not audible acceptance. See native05/README.md.
+
+Studio Play sessions are stopped. Five retired controller-owned hidden fixture
+processes were closed after fresh Edit-state and exact command-line ownership
+checks. Retained instances: user/Rojo quality d600fdf8-a3eb-46f3-989d-09709b96574c,
+cue03 0395a6ba-b4b8-4fe2-8f79-64e2fbc6c65b, and cue04
+ a8fce3d2-d63d-4fa2-9c64-7c17e00bc0ab. Original earned Memory sessions are gone;
+re-establish earned progression rather than restoring guessed rewards.
+
+Blender read-only bridge127.0.0.1:19877 and actual scene discovery were verified;
+user's unsaved scene object identities and transforms remained unchanged. Rojo127.0.0.1:34872 is connected
+to user quality Studio, with actual source readback. Quality Dataset3 still needs
+a fresh build/project-server restart for the dock repair before native testing.
+Latest measured quota23% remaining. Stop new waves near5%, without resetting.
 
 ## Session identities
 
