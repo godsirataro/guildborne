@@ -1,0 +1,35 @@
+{
+  "status": "CONNECTION_VERIFIED_NOT_GAME_ACCEPTANCE",
+  "sourceCommit": "0c040cf",
+  "blenderPid": 33616,
+  "blenderPort": 19877,
+  "blenderMode": "read-only transient adapter",
+  "rojoPid": 47752,
+  "rojoPort": 34872,
+  "studioId": "d600fdf8-a3eb-46f3-989d-09709b96574c",
+  "placeId": 0,
+  "inventoryNormalizedSourceMatch": true,
+  "walkingNormalizedSourceMatch": true,
+  "files": [
+    {
+      "path": "result.json",
+      "sha256": "52c4c3409f7d2c8b48b220c9e92958169b91c86e11ca1a820d275fa57b57e21c",
+      "bytes": 3759
+    },
+    {
+      "path": "stderr.txt",
+      "sha256": "8d7866e2923efe47e010c9b2d544d4918dc93fff919e58eca9d5fad57a39b4e2",
+      "bytes": 10646
+    },
+    {
+      "path": "rojo-readback.json",
+      "sha256": "bd1d83d914692ea9b19a965739d3a1c664b4aebf59892815d8ce10ec88f456b4",
+      "bytes": 27333
+    },
+    {
+      "path": "rojo-manifest-final.json",
+      "sha256": "dcfbbcfcb834987a0747759843ba43ff2a9aa95016cdd1c9d935bec9ccc760f5",
+      "bytes": 529
+    }
+  ]
+}
