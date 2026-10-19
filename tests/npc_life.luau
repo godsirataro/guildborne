@@ -116,7 +116,8 @@ return function(test:any,eq:any)
         eq(assert(life.sample("marshal_elian",0,0,nil,nil,0)).activity,"Rest")
         eq(assert(life.sample("marshal_elian",64800,0,nil,nil,0)).activity,"Social")
         eq(assert(life.sample("marshal_elian",37800,0)).activity,"Work")
-        for _,bad in ipairs({-1,math.huge,0/0,"0",false}) do
+        local badValues:{any}={-1,math.huge,0/0,"0",false}
+        for _,bad in ipairs(badValues) do
             eq(life.sample("marshal_elian",37800,0,nil,nil,bad),nil)
         end
     end)
@@ -126,8 +127,9 @@ return function(test:any,eq:any)
         eq(assert(legacy.sample("marshal_elian",37800,0,nil,nil,16)).activity,"Work")
         c=copy(config);c.Routines.marshal_elian=nil;eq(make(c,entries,catalog),nil)
         c=copy(config);c.Routines.unknown={work=16,pause=8,offset=0};eq(make(c,entries,catalog),nil)
+        local badValues:{any}={math.huge,0/0,-1,"8",false}
         for _,field in ipairs({"work","pause","offset"}) do
-            for _,bad in ipairs({math.huge,0/0,-1,"8",false}) do
+            for _,bad in ipairs(badValues) do
                 c=copy(config);c.Routines.marshal_elian[field]=bad;eq(make(c,entries,catalog),nil)
             end
             c=copy(config);c.Routines.marshal_elian[field]=nil;eq(make(c,entries,catalog),nil)
