@@ -18,7 +18,7 @@
     ".claude/agents/market-engineer.md": "d24244ea90c8d487cce3b0c76916986726af0ce225ef487099b44ba78298a590",
     ".claude/agents/narrative-designer.md": "004c4e492ae1798df75e503955b152df0033e5fb64dfed6537734fd88eb4de56",
     ".claude/agents/narrative-lead.md": "092e41a165e35abf22a486632e20e09cbd43bf4f37213b3ca0cd55ae7f0e3849",
-    ".claude/agents/npc-designer.md": "465692ba6cc0da95dfe5c50ca76461a997535dad2f016fea261ae7f58d9013b3",
+    ".claude/agents/npc-designer.md": "5c79c60d1bf8921e0f9c2599baddee085b743a92b3654a794c7266dfebe22bfc",
     ".claude/agents/performance-engineer.md": "9ab3cde2dc9f5d889fb9ecc3075a7ed9bd29ed9dc68d38da22eb9f43aed6d66d",
     ".claude/agents/producer.md": "ee651c42d1cd788d456e2141206c26ea0c933a5dc770c1539b0d02df2346a538",
     ".claude/agents/qa-engineer.md": "01aa14eb19f339719352fa290d30806d0864e2a92132b89916602b6106553c23",
@@ -30,7 +30,7 @@
     ".claude/agents/technical-director.md": "4aa05df512f3f9afe5db8d2135fa602105d5835c4ded2454a4ef5e80fc939068",
     ".claude/agents/tools-engineer.md": "cf62b23c42f9d3d9e4a250516341aaf43787e97114a4682be0eae3eddef83272",
     ".claude/agents/ui-artist.md": "ddf56ca4d49a9bec265e8736c4f9eeaee258449089c006c2a3bf9a5cf2c2f1e1",
-    ".claude/agents/ui-designer.md": "30c5922a91d1d3085e003f089d13eeedc8efa139af77d18cef40380a8e230577",
+    ".claude/agents/ui-designer.md": "b96e6b9875d907359bd0bb793dd5ae116c573ad5b4965bd93e66ff16bb8d847e",
     ".claude/agents/vfx-artist.md": "4533c8693ed418ec55ecc9a7b5f11bf72ba83f1b5050ef7d1e7232d30201b1e2",
     ".claude/agents/world-builder.md": "47899ef3faad41f21e15dbc8958dea93e1fb35c304dcc39602c85241250deaf5",
     ".claude/skills/guildborne-adopt/SKILL.md": "82d6401ceb6c9b7f4cbc041e7d8d8d2be4458a4add598234f7f48e075c773770",
@@ -82,7 +82,7 @@
     ".codex/agents/market-engineer.toml": "80779e69b882d25d873c0fe5c5f429a1f4b98111f6c1216d289242b82dc54999",
     ".codex/agents/narrative-designer.toml": "62eac999c1b0a3f0f8e9560037eace9c23522bfdd9028adaacaddd30d4d6352b",
     ".codex/agents/narrative-lead.toml": "7e5652f5aaa5ec9d3d4368961c1df846efa0108b71570136d6f273eb284dba6c",
-    ".codex/agents/npc-designer.toml": "88b36a1367b285ab507e739477a2d6df3a6b97f1e9a7ea7a3a401a6fceacc2f2",
+    ".codex/agents/npc-designer.toml": "c6ecbd86d497909fd45ef9e96ef2f24850d79e6323b0743c288c6a97443f991f",
     ".codex/agents/performance-engineer.toml": "0acb0400175767b1549a1dc3b30b865b1f862a1c8882fef71d8e420e0af0e4f5",
     ".codex/agents/producer.toml": "b319d928e5a131319061f0df825a90fbe98f689f2806d87451b25e44e67d22f1",
     ".codex/agents/qa-engineer.toml": "ab8d16b9890ec02ac261658c4440378f3bbce4dfe7207856372bcf36c70362ec",
@@ -94,7 +94,7 @@
     ".codex/agents/technical-director.toml": "a3e11422465f917ed6036ae230f62d61ea58c6265360d443ebbdea942cec290b",
     ".codex/agents/tools-engineer.toml": "a50fa31555059899ff10f98146020038a5b087ec4e90160934040d6855e3fd39",
     ".codex/agents/ui-artist.toml": "2c964f88eb549a08ad72def6f054f5dde7ef47fc47765c3d3b7f4bfd5d8fafc7",
-    ".codex/agents/ui-designer.toml": "82e8b566c46fff17f05fae4d55e4ed8328e845e79dc103fffbf3b2cbede1b13b",
+    ".codex/agents/ui-designer.toml": "ff1497e38ac4f6d404f9c6d335cf185fc0d86b1be10d61e5a839ecd01aa20a69",
     ".codex/agents/vfx-artist.toml": "c39e0eb15a7e90ca6be361043ed0a1050717cb15f7456041d73e074fe1ac70bf",
     ".codex/agents/world-builder.toml": "af066d786f1613b760ace2f76ea6470868668582a79849b51475ccc53f32333f",
     "production/studio/catalog.json": "f00b06bde068d88f83fbedb9f5514cbbc5568f340d72187f74561747d3a9702c"
@@ -134,11 +134,11 @@
       ".agents/skills/guildborne-war-territory/SKILL.md": "82ad7a43eed0c84aee078c803fcceaac8401fb87a6b82c176847fa8e6ded247d",
       ".agents/skills/guildborne-world/SKILL.md": "ace43994879321dd5197ba01d7944ea072496cb230985b51c5e50c1a71c7c4e1",
       "AGENTS.md": "a593dfabad72ff1fe02d59a8e25630c3eb555d22965588f4840ecbd3365b454c",
-      "production/plan.json": "c26ed5b075410ae0b51d03e0d68be97287b52d806243aee4ecb5334ce6fbc425",
+      "production/plan.json": "1fab7998b0c8a74c5bffa965423c330405e15d34c42cad80760fe8ae7035fe4b",
       "production/studio/studio.json": "ed21a3cd7c6cb882d29a0ff9b6cb4e3b7d9d3a0659b033293ea33ec007e9838a",
       "tools/agentic/studio.py": "9bf0a3e2ce4230648eb4f8d4af8e7250527510d17a23f0080c0dfd3548a7a7c5"
     },
-    "planSha256": "8c7405e84427cf64ae4e455187d23cfabfb8019213b399b2031aa3f1e224d09a",
+    "planSha256": "3c1c47539c17a30ba099f4d18568988b706a2aa77acbb9aa75bc97e59a315e1f",
     "specSha256": "18a814ad18087bac4be152ef0f8cd158ef4a2adede4351b0f8d2da552c75b2f8"
   }
 }

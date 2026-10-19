@@ -1500,7 +1500,11 @@
         "tools/build_gameplay_ui_review.py",
         "tests/gui",
         "tests/city_waypoint.luau",
-        "tests/quest_tracker.luau"
+        "tests/quest_tracker.luau",
+        "tools/build_item_visuals.py",
+        "assets/uat01/item-kit/kit.json",
+        "assets/uat01/item-kit/README.md",
+        "src/shared/Data/ItemVisuals.luau"
       ],
       "checks": [
         "source-contract",
@@ -1508,7 +1512,7 @@
         "independent-review"
       ],
       "title": "Art-directed native HUD and Journal journey",
-      "brief": "Build readable custom fantasy HUD, selected player and five-hero context, real cooldowns and Journal/quest navigation. Reuse server snapshots and existing actions. Review licensed borders/icons before selected export; no fake IDs, no framework migration, no baked UI text. Resolve owned-island quest navigation with actual anchors and unavailable states. Studio remains coordinator-owned."
+      "brief": "Build readable custom fantasy HUD, selected player and five-hero context, real cooldowns and Journal/quest navigation. Reuse server snapshots and existing actions. Review licensed borders/icons before selected export; no fake IDs, no framework migration, no baked UI text. Resolve owned-island quest navigation with actual anchors and unavailable states. Studio remains coordinator-owned. Native material polish may change only five material geometries in the existing generator and generated kit/runtime output; preserve the other 25 item definitions, resolved colors, constructors and 16-part ceiling. Historical Blender exports remain unvalidated for changed geometry."
     },
     {
       "id": "enemy-quality-slice",
@@ -1591,7 +1595,9 @@
         "src/shared/Data/NpcLifeSchedule.luau",
         "src/shared/Config/NpcLifeDefinitions.luau",
         "tests/npc_life.luau",
-        "tests/run_npc_life.luau"
+        "tests/run_npc_life.luau",
+        "src/shared/Presentation/CivicWorkMotion.luau",
+        "tests/civic_work_motion.luau"
       ],
       "checks": [
         "source-contract",
@@ -1599,7 +1605,7 @@
         "independent-review"
       ],
       "title": "Stable NPC schedules and quest-ready identity contract",
-      "brief": "S17: inspect existing identities and supplied production packs as untrusted proposals. Preserve 13 body presets and canonical quest IDs. Implement deterministic schedule/relevance and validated fallback anchors for existing named NPCs; no fabricated 410 spawned actors, rewards, save migration or Studio changes. First delivery includes exact intake provenance, pure contract and tests; controller coordinates visible runtime integration next."
+      "brief": "S17: inspect existing identities and supplied production packs as untrusted proposals. Preserve 13 body presets and canonical quest IDs. Implement deterministic schedule/relevance and validated fallback anchors for existing named NPCs; no fabricated 410 spawned actors, rewards, save migration or Studio changes. First delivery includes exact intake provenance, pure contract and tests; controller coordinates visible runtime integration next. Add bounded stationary work poses for existing borga/mogra/rukk/ghar using the single current animator owner and existing held props. Preserve six civic poses, identities, root/leg stability, dialogue, reduced motion and culling. This does not create walking populations."
     },
     {
       "id": "novice-presentation-repair",
@@ -1795,7 +1801,7 @@
       "reason": "Dedicated commerce specialist file could not be uploaded: connector safety status was indeterminate. No permission or safeguard bypass attempted. Existing shop UI may be inspected; new receipt processing and live commerce require a separate reviewed task."
     }
   ],
-  "revision": 7,
+  "revision": 8,
   "externalGates": [
     "Roblox publishing",
     "asset uploads/ownership",

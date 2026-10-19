@@ -75,11 +75,11 @@ Path rule production-evidence: Reconcile latest goals/registries/scopes. One sha
 
 ### living-world-npc-slice: Stable NPC schedules and quest-ready identity contract
 
-S17: inspect existing identities and supplied production packs as untrusted proposals. Preserve 13 body presets and canonical quest IDs. Implement deterministic schedule/relevance and validated fallback anchors for existing named NPCs; no fabricated 410 spawned actors, rewards, save migration or Studio changes. First delivery includes exact intake provenance, pure contract and tests; controller coordinates visible runtime integration next.
+S17: inspect existing identities and supplied production packs as untrusted proposals. Preserve 13 body presets and canonical quest IDs. Implement deterministic schedule/relevance and validated fallback anchors for existing named NPCs; no fabricated 410 spawned actors, rewards, save migration or Studio changes. First delivery includes exact intake provenance, pure contract and tests; controller coordinates visible runtime integration next. Add bounded stationary work poses for existing borga/mogra/rukk/ghar using the single current animator owner and existing held props. Preserve six civic poses, identities, root/leg stability, dialogue, reduced motion and culling. This does not create walking populations.
 
 Environment: local; skill: guildborne-npc-life
 
-Write scopes: design/Guildborne_Living_World_NPC_QuestReady_Pack_2026-10-17, design/Guildborne_NPC_Quest_Modular_World_Addendum_2026-10-17, production/npc-life/living-world, src/shared/Data/NpcLifeSchedule.luau, src/shared/Config/NpcLifeDefinitions.luau, tests/npc_life.luau, tests/run_npc_life.luau
+Write scopes: design/Guildborne_Living_World_NPC_QuestReady_Pack_2026-10-17, design/Guildborne_NPC_Quest_Modular_World_Addendum_2026-10-17, production/npc-life/living-world, src/shared/Data/NpcLifeSchedule.luau, src/shared/Config/NpcLifeDefinitions.luau, tests/npc_life.luau, tests/run_npc_life.luau, src/shared/Presentation/CivicWorkMotion.luau, tests/civic_work_motion.luau
 
 Required checks: source-contract, regression, independent-review
 

@@ -70,11 +70,11 @@ Path rule production-evidence: Reconcile latest goals/registries/scopes. One sha
 
 ### gameplay-ui-quality: Art-directed native HUD and Journal journey
 
-Build readable custom fantasy HUD, selected player and five-hero context, real cooldowns and Journal/quest navigation. Reuse server snapshots and existing actions. Review licensed borders/icons before selected export; no fake IDs, no framework migration, no baked UI text. Resolve owned-island quest navigation with actual anchors and unavailable states. Studio remains coordinator-owned.
+Build readable custom fantasy HUD, selected player and five-hero context, real cooldowns and Journal/quest navigation. Reuse server snapshots and existing actions. Review licensed borders/icons before selected export; no fake IDs, no framework migration, no baked UI text. Resolve owned-island quest navigation with actual anchors and unavailable states. Studio remains coordinator-owned. Native material polish may change only five material geometries in the existing generator and generated kit/runtime output; preserve the other 25 item definitions, resolved colors, constructors and 16-part ceiling. Historical Blender exports remain unvalidated for changed geometry.
 
 Environment: local; skill: guildborne-ux-native
 
-Write scopes: src/client/UI/Components, src/client/UI/DesignSystem, src/client/UI/SliceUI.luau, src/client/UI/SettlementView.luau, src/client/UI/QuestTrackerView.luau, src/client/Controllers/PlayerCombatController.luau, src/client/Controllers/CityNavigation.luau, src/shared/Data/CombatHudLayout.luau, src/shared/Data/QuestRoute.luau, src/shared/Data/QuestTracker.luau, src/shared/Config/Localization.luau, assets/production/ui-slice, production/ux/gameplay-quality, tools/build_gameplay_ui_review.py, tests/gui, tests/city_waypoint.luau, tests/quest_tracker.luau
+Write scopes: src/client/UI/Components, src/client/UI/DesignSystem, src/client/UI/SliceUI.luau, src/client/UI/SettlementView.luau, src/client/UI/QuestTrackerView.luau, src/client/Controllers/PlayerCombatController.luau, src/client/Controllers/CityNavigation.luau, src/shared/Data/CombatHudLayout.luau, src/shared/Data/QuestRoute.luau, src/shared/Data/QuestTracker.luau, src/shared/Config/Localization.luau, assets/production/ui-slice, production/ux/gameplay-quality, tools/build_gameplay_ui_review.py, tests/gui, tests/city_waypoint.luau, tests/quest_tracker.luau, tools/build_item_visuals.py, assets/uat01/item-kit/kit.json, assets/uat01/item-kit/README.md, src/shared/Data/ItemVisuals.luau
 
 Required checks: source-contract, regression, independent-review
 
