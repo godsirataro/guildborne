@@ -4,6 +4,30 @@ Updated 2026-10-19 at the user's explicit request to preserve the full goal.
 Status: ACTIVE. The starter slice and Cityâ€“Greenwood seam are intermediate gates,
 not completion of the requested game.
 
+## Timed stop requested by the user
+
+On 2026-10-19 at 11:00 Asia/Bangkok, stop production, save all work and then
+invoke Windows `shutdown.exe /s /t 1000`. Prepare worker handoffs by10:55.
+App heartbeat `guildborne-11-00` is configured for one execution at11:00;
+this records scheduling, not successful saving or an executed shutdown.
+Verify application saves and preserve unfinished files before shutdown. Pause
+the thread goal at the requested stop; do not mark the game complete. All four
+sessions have received the deadline. No new long work waves before this stop.
+
+At10:05 the controller remains on pushed f792479. S15 fefe3d8 and S14
+aac6267 are source-reviewed, stopped and await integration/native validation.
+S17 C21a6acd has a newly reproduced pre-delivery respawn notification defect;
+the worker is finishing its immutable baseline before a separate narrow fix.
+S13's four revised Blender ore-yard images visibly fix the floating foundation
+and improve the cargo entrance; geometry/provenance review and final commit
+are pending. These images do not certify a finished city or a Studio import.
+
+After the recent process interruption, Studio d600 still answers in Edit,
+but local ports34872/19877 no longer listen. Blender now has PID36236; the
+earlier bridge/Rojo connection evidence below is historical until reattached.
+Latest account quota measurement:15% remaining. Continue only bounded closeout
+and reviewed integration before the timed stop or the5% quota threshold.
+
 ## Requested outcome
 
 Coordinate S13 Map, S14 GUI, S15 Animation/VFX and S17 NPC/Quest/Character
