@@ -11,11 +11,14 @@ R2 failed while player downed; R3 ordinary manual PowerStrike(+27) and
 Mage Fireball(+35) accepted and corresponding native joint motion verified.
 See native-party-r2-r3-20261020:22losslesspages,444post-Stop source matches,
 85VFX/82removals/3right-censored, no R3overflow. Attribution still unassigned.
-Purple bright rectangle in screenshot is NOT identified as Fireball; S15 is
-tracing object identity read-only before any art change. Overall art remains open.
+Purple bright rectangle is NOT identified as Fireball. S15 source candidate is
+Workspace.GuildborneWorld.PersonalGuild.Environment.Expansion.TowerPortal,
+Block6x9x1 Neon RGB132/113/207, slot0center(-27,5.5,34). Native projected-position
+confirmation is still required; do not modify Fireball from this inference.
 
 S13 e0a9667 integratedff81a48: optional thirdroad and replacement coast bank.
 Independent review verifies29originalpackets unchanged and full24studsupport.
+Third-road integration committed/pushedbbf8bf7 (native manual evidence1450ffe).
 Third-road server admission/client guidance integration passed973tests plus
 focused gate/cleanup/chaining/private-area checks. See third-road-integration-20261020.
 First strict-test typing failure and successful rerun are both retained.
@@ -28,13 +31,16 @@ Next work dispatched in existing sessions:
   authored bridge structure/abutments/edge treatment with full24studwalkclearance.
 - S17 owns next bounded resident activities in its existing living-world scopes,
   at most2 additional ambient residents; no quest NPC movement or rewards.
-- S14 read-only inspection of party UI/labels while root owns third-road UI lease.
+- S14 authorized next native companion-order layout wave frombbf8bf7 after root
+  released UI lease: visible accessible Hold alongsideFocus/Regroup/Retreat,
+  touch layouts320/390, presets reachable, no combat-semantic changes.
+  CombatController overlapping billboards are outside its scope and remain open.
 - S15 read-only identification of bright screenshot object; do not guess Fireball.
 
 Root and integration writer stopped before expired own leases were explicitly
 released/reclaimed. Current root quality lease addd05d979514a12876ee317dc7ef6b9;
-continuous travel512401d6e0894c648efffd16f9c96c4f; UI26b9a5a07c934ff09f0919c004610c45.
-The latter two may be released after source commit; query ledger before reuse.
+continuous travel and third-road UI leases explicitly RELEASED afterbbf8bf7.
+S14 may claim UI for its new wave; query ledger before any ownership action.
 Initial narrow-scope delegation correction is disclosed in third-road receipt.
 
 Next controller: fresh3-road full-connected build with reviewed Dataset2 variant,
