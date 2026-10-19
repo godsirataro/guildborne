@@ -1,0 +1,44 @@
+{
+  "schemaVersion": 3,
+  "buildCommit": "aea29a1ef7f30a10a36a2479bad2395538bb2bff",
+  "sourceTree": "72eddb93265710eb7693665258d3b4f12ba14b7e",
+  "status": "COMMAND_PASS_NOT_TASK_ACCEPTANCE",
+  "sourceUnchanged": true,
+  "invocation": {
+    "tool": "C:\\Users\\godsi\\AppData\\Local\\Programs\\Python\\Python314\\python.EXE",
+    "argv": [
+      "C:\\Users\\godsi\\AppData\\Local\\Programs\\Python\\Python314\\python.EXE",
+      "-c",
+      "import subprocess,sys; cmds=[['python','tools/agentic/forge.py',x] for x in ['doctor','validate','plan']]+[['python','tools/agentic/studio.py',x] for x in ['validate','verify']]+[['powershell.exe','-NoProfile','-ExecutionPolicy','Bypass','-File','tools/validate.ps1']]; [subprocess.run(c,check=True) for c in cmds]; print('Fresh inventory, baseline, boundaries and generated adapter validation; no Studio/device acceptance')"
+    ],
+    "runId": "99e7d0fadee94aef9e4e78dae48194b4",
+    "buildCommit": "aea29a1ef7f30a10a36a2479bad2395538bb2bff",
+    "exitCode": 0,
+    "seconds": 101.78285979999782,
+    "recordPath": "build/agentic/checks/99e7d0fadee94aef9e4e78dae48194b4/invocation.json",
+    "recordSha256": "e8b1288331836b04edd8893cfacd4749b220cf9260b2888bff7826ca3f776b4a",
+    "logs": [
+      "build/agentic/checks/99e7d0fadee94aef9e4e78dae48194b4/invocation.json",
+      "build/agentic/checks/99e7d0fadee94aef9e4e78dae48194b4/stdout.txt",
+      "build/agentic/checks/99e7d0fadee94aef9e4e78dae48194b4/stderr.txt"
+    ]
+  },
+  "artifacts": [
+    {
+      "path": "build/agentic/checks/99e7d0fadee94aef9e4e78dae48194b4/invocation.json",
+      "sha256": "e8b1288331836b04edd8893cfacd4749b220cf9260b2888bff7826ca3f776b4a",
+      "bytes": 1366
+    },
+    {
+      "path": "build/agentic/checks/99e7d0fadee94aef9e4e78dae48194b4/stdout.txt",
+      "sha256": "e72ddb24303562f22aacc5ea37586b79d6a6ad4b9f18654a5b3d9f52df9c7a6a",
+      "bytes": 76832
+    },
+    {
+      "path": "build/agentic/checks/99e7d0fadee94aef9e4e78dae48194b4/stderr.txt",
+      "sha256": "34b9c8b58f6623e07530260b3f2b417cb1b65e85e6900ee8aeb9ce33e7c9953a",
+      "bytes": 1895
+    }
+  ],
+  "humanApproved": false
+}

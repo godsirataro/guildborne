@@ -1,0 +1,9 @@
+{
+  "content": [
+    {
+      "type": "text",
+      "text": "{\"rows\":[{\"visible\":true,\"path\":\"Players.iswhlaedev.PlayerGui.GuildborneUI.ResourceHeader.ResourcePlaque.GoldValue\",\"text\":\"0\",\"scaled\":true,\"bounds\":[13,22],\"fits\":true,\"wrapped\":true,\"rect\":[212,24],\"size\":22},{\"visible\":true,\"path\":\"Players.iswhlaedev.PlayerGui.GuildborneUI.ResourceHeader.ResourcePlaque.ResourceCaption\",\"text\":\"ทอง · หอกิลด์ 0\",\"scaled\":true,\"bounds\":[68,13],\"fits\":true,\"wrapped\":true,\"rect\":[212,16],\"size\":13},{\"visible\":false,\"path\":\"Players.iswhlaedev.PlayerGui.GuildborneUI.ResourceHeader.ResourcePlaque.ResourceLoading\",\"text\":\"Guildborne · กำลังโหลด\",\"scaled\":true,\"bounds\":[146,16],\"fits\":true,\"wrapped\":true,\"rect\":[256,40],\"size\":16},{\"visible\":true,\"path\":\"Players.iswhlaedev.PlayerGui.GuildborneUI.ResourceHeader.GuildMenuToggle\",\"text\":\"เมนูกิลด์\",\"scaled\":false,\"bounds\":[42,16],\"fits\":true,\"wrapped\":true,\"rect\":[144,48],\"size\":16}],\"kind\":\"actual-native-Thai-header\"}"
+    }
+  ],
+  "isError": false
+}

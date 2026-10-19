@@ -1,0 +1,9 @@
+{
+  "content": [
+    {
+      "type": "text",
+      "text": "{\"cases\":[{\"rows\":[{\"visible\":true,\"text\":\"1234567890123456\",\"scaled\":true,\"bounds\":[115,14],\"name\":\"GoldValue\",\"fits\":true,\"wrapped\":true,\"rect\":[120,24],\"size\":22},{\"visible\":true,\"text\":\"ทอง · หอกิลด์ 17\",\"scaled\":true,\"bounds\":[71,13],\"name\":\"ResourceCaption\",\"fits\":true,\"wrapped\":true,\"rect\":[120,16],\"size\":13},{\"visible\":false,\"text\":\"Guildborne · กำลังโหลด\",\"scaled\":true,\"bounds\":[90,32],\"name\":\"ResourceLoading\",\"fits\":true,\"wrapped\":true,\"rect\":[120,40],\"size\":16},{\"visible\":true,\"text\":\"เมนูกิลด์\",\"scaled\":false,\"bounds\":[37,14],\"name\":\"GuildMenuToggle\",\"fits\":true,\"wrapped\":true,\"rect\":[96,48],\"size\":14}],\"width\":320},{\"rows\":[{\"visible\":true,\"text\":\"1234567890123456\",\"scaled\":true,\"bounds\":[115,14],\"name\":\"GoldValue\",\"fits\":true,\"wrapped\":true,\"rect\":[120,24],\"size\":22},{\"visible\":true,\"text\":\"ทอง · หอกิลด์ 17\",\"scaled\":true,\"bounds\":[71,13],\"name\":\"ResourceCaption\",\"fits\":true,\"wrapped\":true,\"rect\":[120,16],\"size\":13},{\"visible\":false,\"text\":\"Guildborne · กำลังโหลด\",\"scaled\":true,\"bounds\":[90,32],\"name\":\"ResourceLoading\",\"fits\":true,\"wrapped\":true,\"rect\":[120,40],\"size\":16},{\"visible\":true,\"text\":\"เมนูกิลด์\",\"scaled\":false,\"bounds\":[37,14],\"name\":\"GuildMenuToggle\",\"fits\":true,\"wrapped\":true,\"rect\":[96,48],\"size\":14}],\"width\":390}],\"kind\":\"synthetic-native-component-fixture-not-device-or-earned-currency\"}"
+    }
+  ],
+  "isError": false
+}

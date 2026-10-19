@@ -13,18 +13,24 @@ Earlier test-typing failure and successful rerun both retained in
 [native wave10](native-wave10-20261020/README.md), independently reviewed thena6ee187.
 Native roof holes close; one resident performs its route, keeps measured foot support,
 pauses for a visible nonqueryable blocker and restores reduced-motion joints.
-Native HUD found TextWrapped ordering disables TextScaled; S14 owns the scoped fix.
+Native HUD found TextWrapped ordering disables TextScaled. Corrected4382eeb is
+integratedaea29a1: actual Thai GoldValue22 and constrained320/390px native component
+fixtures fit, including16-digit display values. See native-header-retake-20261020.
+Same-source full baseline99e7d0fadee94aef9e4e78dae48194b4 passed970tests.
+Physical devices, full mobile flow and overall art remain open.
 
 [Synthetic party R1](native-party-r1-20261020/README.md) records five real companions,
 three AI Mage Fireballs with corresponding client joint motion and three rejected
 manual inputs. VFX discovery cap makes full coverage inconclusive. Full manual skill,
 five-hero road, earned journey, visual/device/performance acceptance remain pending.
-Both controller Plays stopped; current party Studioab3a8d65-356b-443e-bb73-879cba0fdfbf
-is Edit, owned PID48576. Original user Studio remains untouched.
+Both R1 and HUD retake Plays stopped and their disposable processes closed.
+Fresh party candidate r3 launched for manual Hold-order capture (owned PID34396).
+Original user Studio remains untouched.
 
-Next: integrate/retest S14 scaling fix; fresh synthetic Hold-order combat capture;
+Next: fresh synthetic Hold-order combat capture;
 verify player plus five heroes over both existing roads. S13 authorized scoped third
 Ironveil–Ashen geometry and a NEW shorebank-cut variant preserving original datasets;
+S13 delivered e0a9667, under independent controller review;
 runtime/server/client admission wiring remains separately owned and not yet enabled.
 No new PR/merge, publication, provider call or production persistence.
 

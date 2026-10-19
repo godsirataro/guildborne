@@ -1,0 +1,87 @@
+{
+  "status": "BUILT_NOT_STUDIO_TESTED",
+  "persistence": "Memory",
+  "candidate": "C:\\Work\\MySelf\\Guildborne-controller\\build\\Guildborne_FullConnectedQualityPreview.rbxlx",
+  "sha256": "ccadf1c9fcdc552833a7b19717d987ef3f444804d02fa41c7ac9be1b9b75bdff",
+  "launch": false,
+  "sharedCombat": false,
+  "continuousWorld": true,
+  "fullConnectedWorld": true,
+  "worldSlice": true,
+  "bindEnemies": false,
+  "art": [
+    {
+      "dataset": "Dataset1",
+      "meshes": 37,
+      "vertices": 32321,
+      "triangles": 45267,
+      "placements": 116,
+      "sourceSha256": "9baaf8de0faf3ff7f4a4f2c32ea692e48aa9dbb021f609e3530029ed7844ddc7",
+      "chunks": 14,
+      "status": "PACKAGED_LOCAL_PREVIEW_NOT_IMPORTED"
+    },
+    {
+      "dataset": "Dataset2",
+      "meshes": 20,
+      "vertices": 27143,
+      "triangles": 11595,
+      "placements": 72,
+      "sourceSha256": "8743e160609a44e48b80e81b9ff0fe21b043bfb7e69fa216f2d164149c7f6760",
+      "chunks": 13,
+      "status": "PACKAGED_LOCAL_PREVIEW_NOT_IMPORTED"
+    },
+    {
+      "dataset": "Dataset3",
+      "meshes": 10,
+      "vertices": 3531,
+      "triangles": 5752,
+      "placements": 17,
+      "sourceSha256": "b885085377b3e56faf9f6a0fe072d0db4672f6b87c5241c6d61ff34c70a65539",
+      "chunks": 2,
+      "status": "PACKAGED_LOCAL_PREVIEW_NOT_IMPORTED"
+    },
+    {
+      "dataset": "Dataset4",
+      "meshes": 13,
+      "vertices": 6617,
+      "triangles": 10933,
+      "placements": 13,
+      "sourceSha256": "4e65f4e254ae58bed6c5825d68948dc8689eb10332fb2763bdae37f86e371d20",
+      "chunks": 4,
+      "status": "PACKAGED_LOCAL_PREVIEW_NOT_IMPORTED"
+    },
+    {
+      "dataset": "Dataset5",
+      "meshes": 8,
+      "vertices": 1328,
+      "triangles": 2056,
+      "placements": 8,
+      "sourceSha256": "d08edc14a62bd2fc9e1a3fb0e5a6b205df9532358567e19d93a3e22b356bb46f",
+      "chunks": 1,
+      "status": "PACKAGED_LOCAL_PREVIEW_NOT_IMPORTED"
+    },
+    {
+      "dataset": "Dataset6",
+      "meshes": 8,
+      "vertices": 1238,
+      "triangles": 1856,
+      "placements": 8,
+      "sourceSha256": "1e803ebb0bfa131c7c0d2113ce50eb3227fcc82fea1aa9ab56ab94156135cf51",
+      "chunks": 1,
+      "status": "PACKAGED_LOCAL_PREVIEW_NOT_IMPORTED"
+    },
+    {
+      "dataset": "Dataset7",
+      "meshes": 3,
+      "vertices": 54,
+      "triangles": 80,
+      "placements": 3,
+      "sourceSha256": "821b419df0f43fb3d3702be9d11948a703af6c97d2947a315d334a217f2bdae6",
+      "chunks": 1,
+      "status": "PACKAGED_LOCAL_PREVIEW_NOT_IMPORTED"
+    }
+  ],
+  "enemies": [],
+  "images": null,
+  "runtimeAssetsUploaded": false
+}
