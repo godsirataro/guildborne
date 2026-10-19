@@ -218,6 +218,7 @@ return function()
 	end
 	local selected: any=nil;local snapshot: any=nil;local arrivedUntil=0;local mapRegion:string?=nil
 	local mapCivic:string?=nil;local mapGuild=false;local mapWalking=false
+	local walkingFrom="";local walkingTo=""
 	local connections: {RBXScriptConnection}={}
 	local function connect(signal: RBXScriptSignal,callback: any) table.insert(connections,signal:Connect(callback)) end
 	local gui=Instance.new("ScreenGui");gui.Name="CityNavigation";gui.ResetOnSpawn=false;gui.ScreenInsets=Enum.ScreenInsets.CoreUISafeInsets;gui.DisplayOrder=20;gui.Parent=player:WaitForChild("PlayerGui")
@@ -291,7 +292,7 @@ return function()
 		questGuide.Visible=not future;clear.Visible=not future
 		if mapCivic then hint.Text=Locale.translate(language,"Landmark and return portals. Gold dot: you.")end
 		if mapGuild then hint.Text=Locale.translate(language,"Guide to quest objective") end
-		if mapWalking then title.Text=Locale.translate(language,"City–Greenwood route");hint.Text=Locale.translate(language,"Walking route. Follow the path; quest progress is unchanged.")end
+		if mapWalking then title.Text=Locale.translate(language,walkingFrom).." > "..Locale.translate(language,walkingTo);hint.Text=Locale.translate(language,"Walking route. Follow the path; quest progress is unchanged.")end
 		map.Visible=not future and not mapGuild and mapRegion==nil and mapCivic==nil;regionalMap.Visible=not future and mapRegion~=nil
 		civicMap.frame.Visible=not future and mapCivic~=nil;civicMap.update(mapCivic,language)
 		if mapWalking then map.Visible=false;regionalMap.Visible=false;civicMap.frame.Visible=false end
@@ -336,7 +337,12 @@ return function()
 		local region=root and City.region(root.Position.X,root.Position.Z)
 		local context=if root then navigationContext(player,root.Position.X,root.Position.Z) else nil
 		local walking=context and context.walking and context.walking.transit~=nil
-		if (walking==true)~=mapWalking then mapWalking=walking==true;refresh()end
+		local transit=if walking then context.walking.transit else nil
+		local fromZone=if transit then transit.fromZone else ""
+		local toZone=if transit then transit.toZone else ""
+		if (walking==true)~=mapWalking or fromZone~=walkingFrom or toZone~=walkingTo then
+			mapWalking=walking==true;walkingFrom=fromZone;walkingTo=toZone;refresh()
+		end
 		local inGuild=context and context.inGuild==true
 		if (inGuild==true)~=mapGuild then mapGuild=inGuild==true;refresh()end
 		local civic:string?=nil
@@ -349,7 +355,9 @@ return function()
 		banner.Text=if region then Locale.translate(language,region)..(if fightingRegion then "" else " · "..Locale.translate(language,"Safe zone")) elseif district then Locale.translate(language,district).." · "..Locale.translate(language,"Safe zone") else ""
 		if civic then banner.Text=Locale.translate(language,civic).." · "..Locale.translate(language,"Safe zone")end
 		if inGuild then banner.Text=Locale.translate(language,"Personal Guild") end
-		if walking then banner.Text=Locale.translate(language,"City–Greenwood route") end
+		if transit then
+			banner.Text=Locale.translate(language,transit.fromZone).." > "..Locale.translate(language,transit.toZone)
+		end
 		direction.Visible=false
 		-- A quest selection is an intent, not a renderable destination. During
 		-- respawn or before the first snapshot, keep it pinned but unresolved.

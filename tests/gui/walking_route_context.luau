@@ -56,8 +56,8 @@ local function instance(name:string,class:string,attrs:any,children:any):any
  function o:IsA(c:string):boolean return class==c end
  function o:GetAttribute(k:string):any return self.attrs[k] end
  function o:GetChildren():any return self.children end
- function o:FindFirstChild(k:string):any for _,child in ipairs(self.children)do if child.Name==k then return child end end;return nil end
- function o:FindFirstChildOfClass(k:string):any for _,child in ipairs(self.children)do if child:IsA(k) then return child end end;return nil end
+ function o:FindFirstChild(k:string):any for _,rawChild in ipairs(self.children)do local child:any=rawChild;if child.Name==k then return child end end;return nil end
+ function o:FindFirstChildOfClass(k:string):any for _,rawChild in ipairs(self.children)do local child:any=rawChild;if child:IsA(k) then return child end end;return nil end
  return o
 end
 local function fixture(): (any,any,any,any)
@@ -84,7 +84,7 @@ test("collector rejects malformed names classes and partial ordering",function()
  world,char,_,folder=fixture();table.remove(folder.children,2);assert(not W.read(world,char).route)
  world,char,_,folder=fixture();folder.children[2]=instance("002","Part",{Index=2},{});assert(not W.read(world,char).route)
  local wrapper=instance("Workspace","Workspace",{},{select(1,fixture())})
- assert(W.read(wrapper,nil).route)
+ assert(W.read(wrapper,nil).routes.city_greenwood_west and not W.read(wrapper,nil).route)
 end)
 test("configured endpoint domains reject a consecutively streamed prefix",function()
  local world,char,_,folder=fixture()
@@ -95,4 +95,78 @@ test("configured endpoint domains reject a consecutively streamed prefix",functi
  assert(not W.read(world,char,city).route)
  assert(W.read(world,char,city).transit) -- Admission survives; guidance does not.
 end)
+local function twoRoutes(): (any,any,any,any)
+ local world,char=fixture()
+ local _,_,second,folder=fixture()
+ second.Name="GreenwoodIronveilCorridor"
+ second.attrs.RouteId="greenwood_ironveil_south";second.attrs.FromZone="Greenwood";second.attrs.ToZone="Ironveil"
+ table.insert(world.children,second)
+ return world,char,second,folder
+end
+test("second route exact tuple and both directions",function()
+ local r=route();r.routeId="greenwood_ironveil_south";r.fromZone="Greenwood";r.toZone="Ironveil"
+ local f=W.parse("greenwood_ironveil_south|Greenwood|Ironveil")
+ local b=W.parse("greenwood_ironveil_south|Ironveil|Greenwood")
+ assert(f and b and W.validate(r))
+ assert(W.next(r,f,0,4,30).index==2 and W.next(r,b,0,4,30).index==1)
+ assert(not W.next(r,forward,0,4,30))
+ assert(not W.next(route(),f,0,4,30))
+ assert(not W.parse("greenwood_ironveil_south|City|Ironveil"))
+ assert(not W.parse("city_greenwood_west|Greenwood|Ironveil"))
+end)
+test("two routes selected solely by exact server context",function()
+ local world,char=twoRoutes()
+ local read=W.read(world,char)
+ assert(read.routes.city_greenwood_west and read.routes.greenwood_ironveil_south)
+ assert(read.route==read.routes.city_greenwood_west)
+ char.attrs.WalkingRouteContext="greenwood_ironveil_south|Ironveil|Greenwood"
+ read=W.read(world,char);assert(read.route==read.routes.greenwood_ironveil_south)
+ char.attrs.WalkingRouteContext="greenwood_ironveil_south|City|Ironveil"
+ read=W.read(world,char);assert(not read.route and not read.transit and read.routes.city_greenwood_west)
+ char.attrs.WalkingRouteContext=nil
+ read=W.read(world,char);assert(not read.route and read.routes.greenwood_ironveil_south)
+end)
+test("malformed second route does not poison valid first",function()
+ local world,char,second,folder=twoRoutes()
+ folder.children[2].Name="bad"
+ local read=W.read(world,char)
+ assert(read.route and read.routes.city_greenwood_west and not read.routes.greenwood_ironveil_south)
+ char.attrs.WalkingRouteContext="greenwood_ironveil_south|Greenwood|Ironveil"
+ read=W.read(world,char);assert(read.transit and not read.route)
+ second.attrs.FromZone="City"
+ assert(not W.read(world,char).routes.greenwood_ironveil_south)
+end)
+test("duplicate model names or route identities fail only ambiguous identity",function()
+ for _,name in ipairs({"GreenwoodIronveilCorridor","DifferentName"}) do
+  local world,char=twoRoutes()
+  local duplicate=instance(name,"Model",{RouteId="greenwood_ironveil_south"},{})
+  table.insert(world.children,duplicate)
+  local read=W.read(world,char)
+  assert(read.routes.city_greenwood_west and not read.routes.greenwood_ironveil_south)
+ end
+ local world,char,second=twoRoutes()
+ second.attrs.RouteId="city_greenwood_west"
+ local read=W.read(world,char);assert(not read.routes.city_greenwood_west and not read.routes.greenwood_ironveil_south)
+end)
+test("second route endpoint domains reject prefix and reversed metadata",function()
+ local world,char,second,folder=twoRoutes()
+ char.attrs.WalkingRouteContext="greenwood_ironveil_south|Greenwood|Ironveil"
+ local city={contains=function()return false end,region=function(x:number,z:number)
+  return if x==0 and z==0 then "Greenwood" elseif x==-100 and z==200 then "Ironveil" else nil end}
+ assert(W.read(world,char,city).route)
+ table.remove(folder.children,4)
+ assert(not W.read(world,char,city).route)
+ assert(W.read(world,char,city).transit)
+ world,char,second=twoRoutes();second.attrs.FromZone="Ironveil";second.attrs.ToZone="Greenwood"
+ assert(not W.read(world,char,city).routes.greenwood_ironveil_south)
+end)
+test("duplicate node folders and second route streaming disappearance rejected",function()
+ local world,char,second,folder=twoRoutes()
+ table.insert(second.children,folder)
+ assert(not W.read(world,char).routes.greenwood_ironveil_south)
+ world,char=twoRoutes();char.attrs.WalkingRouteContext="greenwood_ironveil_south|Greenwood|Ironveil"
+ table.remove(world.children,2)
+ local read=W.read(world,char);assert(read.transit and not read.route and read.routes.city_greenwood_west)
+end)
+
 end
