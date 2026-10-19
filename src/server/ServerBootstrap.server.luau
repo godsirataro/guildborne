@@ -218,7 +218,9 @@ end
 local function walkingGate(player:Player,session:any,fromZone:string,toZone:string):string?
 	if not session or walkingSession(player)~=session or session.closing or session.state~="Active" or not session.record or not session.record.data then return "ActorNotReady" end
 	if session.busy then return "SavePending" end
-	if not ((fromZone=="City" and toZone=="Greenwood") or (fromZone=="Greenwood" and toZone=="City")) then return "InvalidZone" end
+	local permittedPair=(fromZone=="City" and toZone=="Greenwood") or (fromZone=="Greenwood" and toZone=="City")
+		or (fromZone=="Greenwood" and toZone=="Ironveil") or (fromZone=="Ironveil" and toZone=="Greenwood")
+	if not permittedPair then return "InvalidZone" end
 	local data=session.record.data
 	local problem=Content.NoviceActionProblem(data,"TravelZone");if problem then return problem end
 	problem=Release.problem(data,"TravelZone",{zone=toZone});if problem then return problem end
