@@ -40,8 +40,12 @@ return function(width: number,height: number): any
     -- Expanded quest card leaves the right-hand map/location column clear.
     -- Compact quest copy retains its lane between gold and the menu in the top bar.
     layout.trackerWide=width>=900 and height>=560
-    local trackerLeft=math.max(width*.32,width*.3+15.2)
-    local trackerRight=math.min(width*.72-12,width-116)
+    -- Header islands leave the world visible between real resources and the menu.
+    -- The compact quest clasp shares this band, so all three use one contract.
+    layout.resourceRect={x=8,y=6,w=if layout.trackerWide then 280 else math.clamp(width*.3,144,260),h=52}
+    layout.menuRect={x=width-8-(if layout.trackerWide then 144 else 96),y=8,w=if layout.trackerWide then 144 else 96,h=48}
+    local trackerLeft=math.max(width*.32,layout.resourceRect.x+layout.resourceRect.w+8)
+    local trackerRight=math.min(width*.72-12,layout.menuRect.x-8)
     layout.trackerRect=if layout.trackerWide then {x=map.x-8-300,y=70,w=300,h=96}
         else {x=trackerLeft,y=7,w=math.max(48,trackerRight-trackerLeft),h=50}
     layout.showHealth=not short or height>=280

@@ -8,7 +8,7 @@ ROOT = Path(__file__).resolve().parents[2]
 MODULES = ["src/shared/Config/Art.luau", "src/shared/Config/VisualAssets.luau",
            "src/client/UI/AssetImage.luau", "src/client/UI/DesignSystem/Theme.luau"]
 MODULES += [f"src/client/UI/Components/{name}.luau" for name in
-            ("GuildborneButton", "GuildbornePanel", "HeaderBar", "TabBar", "TitleKeyboardFocus", "RegalOrnament", "TitleVista")]
+            ("GuildborneButton", "GuildbornePanel", "HeaderBar", "TabBar", "TitleKeyboardFocus", "RegalOrnament", "TitleVista", "ResourceHeader")]
 MODULES += ["src/client/UI/SymbolIcon.luau", "src/shared/Data/UISymbols.luau"]
 MODULES += ["src/client/UI/TitleView.luau", "src/shared/Config/Localization.luau"]
 MODULES += ["src/client/UI/NoviceJourneyView.luau", "src/client/UI/Components/NoviceChapterCard.luau",
@@ -70,7 +70,7 @@ env.require=function(target)
 end
 '''
     suites = ["novice_chapter"] if args.suite == "novice" else ["gameplay_behavior"] if args.suite == "gameplay" else [
-        "behavior", "gameplay_behavior", "waypoint_behavior", "tracker_polish", "menu_lifecycle", "novice_chapter"]
+        "behavior", "gameplay_behavior", "waypoint_behavior", "tracker_polish", "menu_lifecycle", "novice_chapter", "resource_header_behavior"]
     for suite in suites:
         code += "do local run=assert(loadstring(" + quote((ROOT/f"tests/gui/{suite}.luau").read_text(encoding="utf-8")) + "));setfenv(run,env);run() end\n"
     with tempfile.TemporaryDirectory(prefix="guildborne-gui-tests-") as folder:

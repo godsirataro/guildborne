@@ -228,6 +228,7 @@ local thai: { [string]: string } = {
 	["Guild"] = "กิลด์", ["Party"] = "ทีม", ["Quests"] = "ภารกิจ", ["Inventory"] = "คลัง",
 	["Explore"] = "สำรวจ", ["Guild menu"] = "เมนูกิลด์", ["Welcome to Guildborne."] = "ยินดีต้อนรับสู่ Guildborne",
 	["Guildborne · Loading"] = "Guildborne · กำลังโหลด", ["{gold} Gold · Hall Lv{level}"] = "{gold} ทอง · หอกิลด์ {level}",
+	["Gold · Hall Lv{level}"] = "ทอง · หอกิลด์ {level}",
 	["Build. Trade. Conquer. Begin with your own small adventurer guild."] = "สร้าง แลกเปลี่ยน พิชิต เริ่มต้นด้วยกิลด์นักผจญภัยเล็ก ๆ ของคุณ",
 	["1 · Open Party and recruit Rowan the Warrior for free."] = "1 · เปิดทีม แล้วรับโรแวน นักรบเข้าร่วมฟรี",
 	["2 · In Party, select your Warrior and save your party."] = "2 · ในหน้าทีม เลือกนักรบแล้วบันทึกทีม",

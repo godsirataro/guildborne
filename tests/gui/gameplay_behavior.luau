@@ -151,8 +151,9 @@ test("tracker placement reserves gold and menu regions across compact and wide b
   if wide then
    assert(y>=58 and bw==300 and bh==96,"Expanded tracker must sit below top bar")
   else
-   local goldRight=8+12+.3*(w-16)-8
-   local menuLeft=8+(w-16)-100
+   local layout=require(game.ReplicatedStorage.Shared.Data.CombatHudLayout)(w,h)
+   local goldRight=layout.resourceRect.x+layout.resourceRect.w
+   local menuLeft=layout.menuRect.x
    assert(x>=goldRight+8-.001 and x+bw<=menuLeft-8+.001,"Compact tracker overlaps HUD controls")
    assert(y==7 and bh==50 and y+bh<=58)
    assert(find(tracker.button,"TrackerObjective").TextSize==(if bw<170 then 13 else 14))

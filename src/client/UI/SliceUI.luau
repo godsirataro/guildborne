@@ -9,6 +9,7 @@ local ClassBadge=require(script.Parent.ClassBadge)
 local ProjectTracker = require(game:GetService("ReplicatedStorage").Shared.Data.QuestTracker)
 local MakeTracker = require(script.Parent.QuestTrackerView)
 local QualityAsset = require(script.Parent.Components.QualityAsset)
+local ResourceHeader = require(script.Parent.Components.ResourceHeader)
 
 -- Legacy fixture callbacks return no value; the live controller additionally returns a request ID.
 return function(send: any)
@@ -85,15 +86,8 @@ return function(send: any)
 
 	-- Sibling roots: HUD 1, tracker 5, management 10, title 20, notices 30.
 	-- Decorative descendants must not determine overlay order.
-	local hud = Instance.new("Frame"); hud.ZIndex = 1; hud.Size = UDim2.new(1, -16, 0, 52); hud.Position = UDim2.fromOffset(8, 6)
-	hud.BackgroundColor3 = colors.Background; hud.Parent = gui; corner(hud)
-	QualityAsset.create(hud,"panelBorder").ZIndex=3
-	local gold = Instance.new("TextLabel"); gold.Size = UDim2.new(1, -114, 1, 0); gold.Position = UDim2.fromOffset(12, 0)
-	gold.BackgroundTransparency = 1; gold.Font = Enum.Font.GothamBold; gold.TextSize = 18; gold.TextXAlignment = Enum.TextXAlignment.Left
-	gold.TextColor3 = colors.Accent; gold.Text = T("Guildborne · Loading"); gold.TextWrapped = true; gold.Parent = hud
-	local toggle = Instance.new("TextButton"); toggle.Size = UDim2.fromOffset(96, 48); toggle.Position = UDim2.new(1, -100, 0, 2)
-	toggle.Text = "Explore"; toggle.TextSize = 16; toggle.Font = Enum.Font.GothamMedium; toggle.TextColor3 = colors.Text; toggle.BackgroundColor3 = colors.Button; toggle.Parent = hud; corner(toggle)
-	gold.Size=UDim2.new(.3,-8,1,0);gold.TextSize=15
+	local resourceHeader = ResourceHeader.new(gui)
+	local toggle = resourceHeader.button
 	local trackerView=MakeTracker(gui);local tracker=trackerView.button
 	local panel = Instance.new("Frame"); panel.Name = "ManagementPanel"; panel.ZIndex = 10
 	panel.AnchorPoint = Vector2.new(0.5, 0); panel.Position = UDim2.new(0.5, 0, 0, 64)
@@ -440,7 +434,8 @@ return function(send: any)
 		local trackerValue=if tracked then T(if tracked.kind=="Tutorial" then tracked.tab else tracked.name)..(if tracked.kind=="Active" then " "..tracked.progress.."/"..tracked.count else "") else T("Quest journal")..hint
 		trackerView.update(tracked,trackerTitle,trackerValue,not busy and snapshot~=nil and snapshot.status=="Active")
 		toggle.Text = T(if panel.Visible then "Explore" else "Guild menu")
-		gold.Text = if data then T("{gold} Gold · Hall Lv{level}", { gold = data.gold, level = data.hallLevel }) else T("Guildborne · Loading")
+		resourceHeader.update(if data then T("{gold}", {gold=data.gold}) else nil,
+			if data then T("Gold · Hall Lv{level}", {level=data.hallLevel}) else "", T("Guildborne · Loading"))
 		tutorial.Text = T(if tracked and (tracked.kind=="Novice"or tracked.kind=="Campaign"or tracked.kind=="CampaignComplete")then tracked.name elseif data then tutorialText[data.progression.tutorialStep] or "Choose your next guild task." else "Preparing your Personal Guild…")
 		local noviceGuidanceOnHud=tab=="Guild" and snapshot and snapshot.status=="Active" and data and data.progression.novice and data.progression.novice.claimed<6 and tracked and tracked.kind=="Novice"
 		if compactLayout and tab~="Journal" and tab~="Inventory" and not noviceGuidanceOnHud then text(scroll, tutorial.Text, 14) end
