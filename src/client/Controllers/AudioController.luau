@@ -20,19 +20,19 @@ local function mix()
     local master=if workspace:GetAttribute(Config.Attributes.Muted)==true then 0 else A.Level("Master")
     for key,group in pairs(groups) do group.Volume=master*A.Level(key) end
 end
-local function play(key: string,position: Vector3?,actor: Instance?): boolean
+local function play(key: string,position: Vector3?,actor: Instance?): (() -> ())?
     local cue=Config.Cues[key];local template=templates[key]
-    if not started or not cue or not template or not template.IsLoaded or not template.Parent then return false end
-    if workspace:GetAttribute(Config.Attributes.Muted)==true or A.Level("Master")*A.Level(cue.group)<=0 then return false end
+    if not started or not cue or not template or not template.IsLoaded or not template.Parent then return nil end
+    if workspace:GetAttribute(Config.Attributes.Muted)==true or A.Level("Master")*A.Level(cue.group)<=0 then return nil end
     if position then
-        if position.X~=position.X or position.Y~=position.Y or position.Z~=position.Z or position.Magnitude==math.huge then return false end
+        if position.X~=position.X or position.Y~=position.Y or position.Z~=position.Z or position.Magnitude==math.huge then return nil end
         local camera=workspace.CurrentCamera
-        if not camera or (camera.CFrame.Position-position).Magnitude>Config.MaxDistance then return false end
+        if not camera or (camera.CFrame.Position-position).Magnitude>Config.MaxDistance then return nil end
     end
     local duration=math.clamp(math.max(cue.duration,template.TimeLength)+.25,.1,10)
     local live=0;for _,container in pairs(voices) do if container.Parent then live+=1 end end
-    if live>=Config.MaxVoices then return false end -- expiry callbacks may run one frame after their deadline
-    local token=budget.Reserve(key,os.clock(),duration,cue.interval);if not token then return false end
+    if live>=Config.MaxVoices then return nil end -- expiry callbacks may run one frame after their deadline
+    local token=budget.Reserve(key,os.clock(),duration,cue.interval);if not token then return nil end
     local sound=template:Clone();sound.Name="GuildborneCue_"..key;sound.Looped=false
     local container: Instance=sound
     if position then
@@ -55,15 +55,19 @@ local function play(key: string,position: Vector3?,actor: Instance?): boolean
     finishes[token]=finish
     if actor then
         removed=actor.AncestryChanged:Connect(function() if not actor:IsDescendantOf(workspace) then finish() end end)
-        if not actor:IsDescendantOf(workspace) then finish();return false end
+        if not actor:IsDescendantOf(workspace) then finish();return nil end
     end
     ended=sound.Ended:Connect(finish);sound:Play();task.delay(duration,finish)
-    return true
+    return finish
 end
 function A.Play(key: string,position: Vector3?): boolean
-    return play(key,position,nil)
+    return play(key,position,nil)~=nil
 end
 function A.PlayFor(actor: Instance,key: string,position: Vector3?): boolean
+    return play(key,position,actor)~=nil
+end
+-- The returned idempotent disposer shares Ended, ancestry and Destroy cleanup.
+function A.PlayOwned(actor: Instance,key: string,position: Vector3?): (() -> ())?
     return play(key,position,actor)
 end
 local function unwatch(child: Instance)
