@@ -1,0 +1,602 @@
+{
+  "status": "PASS_OFFLINE_GEOMETRY_NATIVE_VISUAL_RETEST_PENDING",
+  "oldSHA256": "f31077a0847a4a5db7a5918a411ee9b9ba22cdb0ac18ec686bc18859e10fc4e9",
+  "newSHA256": "0a2dd8468029be8c7e9f829666be1413bd9d450b12a25f45beaec2c230480296",
+  "verifierSHA256": "be29e8a4b8ff9082e98d5394991a3a1f0455a035a76cd0740eb340dfb2470742",
+  "unchangedMeshes": 19,
+  "unchangedPlacements": 72,
+  "oldTargetTriangles": 73,
+  "newTargetTriangles": 182,
+  "allDatasetTrianglesChecked": 40115,
+  "protectedRectanglesXZ": [
+    [
+      370,
+      640,
+      1270,
+      1560
+    ],
+    [
+      56,
+      410,
+      1475,
+      1535
+    ]
+  ],
+  "intrusions": [],
+  "rays": [
+    {
+      "from": [
+        436,
+        100,
+        1468
+      ],
+      "to": [
+        436,
+        0,
+        1468
+      ],
+      "oldHits": [
+        {
+          "face1": 26,
+          "t": 0.7134810969733806
+        }
+      ],
+      "newDatasetHits": []
+    },
+    {
+      "from": [
+        500,
+        100,
+        1495
+      ],
+      "to": [
+        500,
+        0,
+        1495
+      ],
+      "oldHits": [
+        {
+          "face1": 27,
+          "t": 0.5398771437314478
+        }
+      ],
+      "newDatasetHits": []
+    },
+    {
+      "from": [
+        500,
+        100,
+        1450
+      ],
+      "to": [
+        500,
+        0,
+        1450
+      ],
+      "oldHits": [
+        {
+          "face1": 27,
+          "t": 0.4497503827495857
+        }
+      ],
+      "newDatasetHits": []
+    },
+    {
+      "from": [
+        410,
+        28,
+        1450
+      ],
+      "to": [
+        436,
+        8,
+        1468
+      ],
+      "oldHits": [
+        {
+          "face1": 26,
+          "t": 0.37852034353054775
+        }
+      ],
+      "newDatasetHits": []
+    },
+    {
+      "from": [
+        500,
+        48,
+        1535
+      ],
+      "to": [
+        436,
+        8,
+        1468
+      ],
+      "oldHits": [
+        {
+          "face1": 32,
+          "t": 0.15311283995698124
+        }
+      ],
+      "newDatasetHits": []
+    }
+  ],
+  "perOriginalFacePreservation": [
+    {
+      "oldFace1": 1,
+      "expectedArea": 6546.701762102715,
+      "actualArea": 6546.701762102709,
+      "outsideProbes": 171
+    },
+    {
+      "oldFace1": 2,
+      "expectedArea": 19881.668199053478,
+      "actualArea": 19881.66819905349,
+      "outsideProbes": 171
+    },
+    {
+      "oldFace1": 3,
+      "expectedArea": 15138.769223019253,
+      "actualArea": 15138.76922301925,
+      "outsideProbes": 171
+    },
+    {
+      "oldFace1": 4,
+      "expectedArea": 1547.651446547316,
+      "actualArea": 1547.651446547316,
+      "outsideProbes": 171
+    },
+    {
+      "oldFace1": 5,
+      "expectedArea": 5649.931723965506,
+      "actualArea": 5649.931723965503,
+      "outsideProbes": 171
+    },
+    {
+      "oldFace1": 6,
+      "expectedArea": 8879.905073925263,
+      "actualArea": 8879.905073925269,
+      "outsideProbes": 171
+    },
+    {
+      "oldFace1": 7,
+      "expectedArea": 21057.88393247116,
+      "actualArea": 21057.88393247115,
+      "outsideProbes": 171
+    },
+    {
+      "oldFace1": 8,
+      "expectedArea": 15764.510343261998,
+      "actualArea": 15764.510343262,
+      "outsideProbes": 171
+    },
+    {
+      "oldFace1": 9,
+      "expectedArea": 1709.8684159899556,
+      "actualArea": 1709.8684159899556,
+      "outsideProbes": 171
+    },
+    {
+      "oldFace1": 10,
+      "expectedArea": 5885.542865540908,
+      "actualArea": 5885.542865540906,
+      "outsideProbes": 165
+    },
+    {
+      "oldFace1": 11,
+      "expectedArea": 9227.293365897955,
+      "actualArea": 9227.293365897958,
+      "outsideProbes": 165
+    },
+    {
+      "oldFace1": 12,
+      "expectedArea": 23061.812932498106,
+      "actualArea": 23061.812932498106,
+      "outsideProbes": 171
+    },
+    {
+      "oldFace1": 13,
+      "expectedArea": 17219.78168898939,
+      "actualArea": 17219.78168898939,
+      "outsideProbes": 171
+    },
+    {
+      "oldFace1": 14,
+      "expectedArea": 1709.8684159899556,
+      "actualArea": 1709.8684159899556,
+      "outsideProbes": 171
+    },
+    {
+      "oldFace1": 15,
+      "expectedArea": 5689.78328626797,
+      "actualArea": 5689.783286267971,
+      "outsideProbes": 130
+    },
+    {
+      "oldFace1": 16,
+      "expectedArea": 7951.6599783182355,
+      "actualArea": 7951.659978318238,
+      "outsideProbes": 105
+    },
+    {
+      "oldFace1": 17,
+      "expectedArea": 18988.365366175116,
+      "actualArea": 18988.36536617511,
+      "outsideProbes": 132
+    },
+    {
+      "oldFace1": 18,
+      "expectedArea": 18271.332081022538,
+      "actualArea": 18271.332081022538,
+      "outsideProbes": 171
+    },
+    {
+      "oldFace1": 19,
+      "expectedArea": 1494.642538561342,
+      "actualArea": 1494.6425385613445,
+      "outsideProbes": 168
+    },
+    {
+      "oldFace1": 20,
+      "expectedArea": 1400.6664951006378,
+      "actualArea": 1400.6664951006385,
+      "outsideProbes": 31
+    },
+    {
+      "oldFace1": 21,
+      "expectedArea": 0.0,
+      "actualArea": 0,
+      "outsideProbes": 0
+    },
+    {
+      "oldFace1": 22,
+      "expectedArea": 14838.775320159537,
+      "actualArea": 14838.775320159544,
+      "outsideProbes": 115
+    },
+    {
+      "oldFace1": 23,
+      "expectedArea": 16318.94344292666,
+      "actualArea": 16318.94344292666,
+      "outsideProbes": 171
+    },
+    {
+      "oldFace1": 24,
+      "expectedArea": 1029.642637675592,
+      "actualArea": 1029.6426376755894,
+      "outsideProbes": 120
+    },
+    {
+      "oldFace1": 25,
+      "expectedArea": 3834.7622044985906,
+      "actualArea": 3834.7622044985887,
+      "outsideProbes": 120
+    },
+    {
+      "oldFace1": 26,
+      "expectedArea": 6.821210263296962e-13,
+      "actualArea": 0,
+      "outsideProbes": 0
+    },
+    {
+      "oldFace1": 27,
+      "expectedArea": 1318.9521931196468,
+      "actualArea": 1318.9521931196396,
+      "outsideProbes": 8
+    },
+    {
+      "oldFace1": 28,
+      "expectedArea": 15866.523597108877,
+      "actualArea": 15866.523597108877,
+      "outsideProbes": 171
+    },
+    {
+      "oldFace1": 29,
+      "expectedArea": 850.1557251141963,
+      "actualArea": 850.1557251141949,
+      "outsideProbes": 120
+    },
+    {
+      "oldFace1": 30,
+      "expectedArea": 3208.240969934583,
+      "actualArea": 3208.2409699345803,
+      "outsideProbes": 120
+    },
+    {
+      "oldFace1": 31,
+      "expectedArea": 3264.970443483304,
+      "actualArea": 3264.9704434833066,
+      "outsideProbes": 78
+    },
+    {
+      "oldFace1": 32,
+      "expectedArea": 8927.969863676408,
+      "actualArea": 8927.969863676404,
+      "outsideProbes": 91
+    },
+    {
+      "oldFace1": 33,
+      "expectedArea": 12605.07705508497,
+      "actualArea": 12605.07705508497,
+      "outsideProbes": 171
+    },
+    {
+      "oldFace1": 34,
+      "expectedArea": 1190.2180151598743,
+      "actualArea": 1190.2180151598757,
+      "outsideProbes": 168
+    },
+    {
+      "oldFace1": 35,
+      "expectedArea": 3738.3595226779335,
+      "actualArea": 3738.3595226779344,
+      "outsideProbes": 168
+    },
+    {
+      "oldFace1": 36,
+      "expectedArea": 5096.748346577462,
+      "actualArea": 5096.748346577465,
+      "outsideProbes": 162
+    },
+    {
+      "oldFace1": 37,
+      "expectedArea": 14388.883941267226,
+      "actualArea": 14388.883941267224,
+      "outsideProbes": 156
+    },
+    {
+      "oldFace1": 38,
+      "expectedArea": 12376.170515296828,
+      "actualArea": 12376.170515296832,
+      "outsideProbes": 171
+    },
+    {
+      "oldFace1": 39,
+      "expectedArea": 993.1767214348109,
+      "actualArea": 993.1767214348109,
+      "outsideProbes": 171
+    },
+    {
+      "oldFace1": 40,
+      "expectedArea": 3198.2842908061016,
+      "actualArea": 3198.2842908061016,
+      "outsideProbes": 171
+    },
+    {
+      "oldFace1": 41,
+      "expectedArea": 4419.259635783237,
+      "actualArea": 4419.259635783232,
+      "outsideProbes": 171
+    },
+    {
+      "oldFace1": 42,
+      "expectedArea": 12723.116948603847,
+      "actualArea": 12723.116948603842,
+      "outsideProbes": 171
+    },
+    {
+      "oldFace1": 43,
+      "expectedArea": 10153.024209588835,
+      "actualArea": 10153.024209588832,
+      "outsideProbes": 171
+    },
+    {
+      "oldFace1": 44,
+      "expectedArea": 993.1767214348109,
+      "actualArea": 993.1767214348109,
+      "outsideProbes": 171
+    },
+    {
+      "oldFace1": 45,
+      "expectedArea": 3024.9183347182693,
+      "actualArea": 3024.9183347182693,
+      "outsideProbes": 171
+    },
+    {
+      "oldFace1": 46,
+      "expectedArea": 4033.415437484956,
+      "actualArea": 4033.415437484956,
+      "outsideProbes": 171
+    },
+    {
+      "oldFace1": 47,
+      "expectedArea": 12283.997675823053,
+      "actualArea": 12283.997675823062,
+      "outsideProbes": 171
+    },
+    {
+      "oldFace1": 48,
+      "expectedArea": 10102.968526998773,
+      "actualArea": 10102.968526998773,
+      "outsideProbes": 171
+    },
+    {
+      "oldFace1": 49,
+      "expectedArea": 573.149195236284,
+      "actualArea": 573.1491952362882,
+      "outsideProbes": 171
+    },
+    {
+      "oldFace1": 50,
+      "expectedArea": 2092.7035523362333,
+      "actualArea": 2092.7035523362224,
+      "outsideProbes": 171
+    },
+    {
+      "oldFace1": 51,
+      "expectedArea": 2164.5623265229838,
+      "actualArea": 2164.56232652298,
+      "outsideProbes": 171
+    },
+    {
+      "oldFace1": 52,
+      "expectedArea": 6134.220703631766,
+      "actualArea": 6134.220703631753,
+      "outsideProbes": 171
+    },
+    {
+      "oldFace1": 53,
+      "expectedArea": 6934.400568741247,
+      "actualArea": 6934.400568741247,
+      "outsideProbes": 171
+    },
+    {
+      "oldFace1": 54,
+      "expectedArea": 573.149195236284,
+      "actualArea": 573.1491952362757,
+      "outsideProbes": 171
+    },
+    {
+      "oldFace1": 55,
+      "expectedArea": 2076.425959828325,
+      "actualArea": 2076.425959828326,
+      "outsideProbes": 171
+    },
+    {
+      "oldFace1": 56,
+      "expectedArea": 2114.8160689763213,
+      "actualArea": 2114.8160689763135,
+      "outsideProbes": 171
+    },
+    {
+      "oldFace1": 57,
+      "expectedArea": 5930.248406600536,
+      "actualArea": 5930.248406600536,
+      "outsideProbes": 171
+    },
+    {
+      "oldFace1": 58,
+      "expectedArea": 6921.022052898639,
+      "actualArea": 6921.0220528986465,
+      "outsideProbes": 171
+    },
+    {
+      "oldFace1": 59,
+      "expectedArea": 1560.0,
+      "actualArea": 1560.0,
+      "outsideProbes": 171
+    },
+    {
+      "oldFace1": 60,
+      "expectedArea": 10026.868903102304,
+      "actualArea": 10026.868903102304,
+      "outsideProbes": 171
+    },
+    {
+      "oldFace1": 61,
+      "expectedArea": 381.8131087325316,
+      "actualArea": 381.81310873252875,
+      "outsideProbes": 171
+    },
+    {
+      "oldFace1": 62,
+      "expectedArea": 2011.5953867515207,
+      "actualArea": 2011.5953867515132,
+      "outsideProbes": 171
+    },
+    {
+      "oldFace1": 63,
+      "expectedArea": 1018.6055419052068,
+      "actualArea": 1018.6055419051972,
+      "outsideProbes": 171
+    },
+    {
+      "oldFace1": 64,
+      "expectedArea": 3045.490563087167,
+      "actualArea": 3045.490563087171,
+      "outsideProbes": 171
+    },
+    {
+      "oldFace1": 65,
+      "expectedArea": 4118.966927047674,
+      "actualArea": 4118.966927047674,
+      "outsideProbes": 171
+    },
+    {
+      "oldFace1": 66,
+      "expectedArea": 12333.76433899541,
+      "actualArea": 12333.764338995412,
+      "outsideProbes": 171
+    },
+    {
+      "oldFace1": 67,
+      "expectedArea": 10514.82540780306,
+      "actualArea": 10514.825407803064,
+      "outsideProbes": 171
+    },
+    {
+      "oldFace1": 68,
+      "expectedArea": 643.9914595706996,
+      "actualArea": 643.9914595707011,
+      "outsideProbes": 171
+    },
+    {
+      "oldFace1": 69,
+      "expectedArea": 32574.3779679674,
+      "actualArea": 32574.377967967426,
+      "outsideProbes": 171
+    },
+    {
+      "oldFace1": 70,
+      "expectedArea": 1025.6095748383007,
+      "actualArea": 1025.609574838295,
+      "outsideProbes": 171
+    },
+    {
+      "oldFace1": 71,
+      "expectedArea": 63522.860910712996,
+      "actualArea": 63522.860910712974,
+      "outsideProbes": 171
+    },
+    {
+      "oldFace1": 72,
+      "expectedArea": 4169.2033111854835,
+      "actualArea": 4169.2033111854835,
+      "outsideProbes": 171
+    },
+    {
+      "oldFace1": 73,
+      "expectedArea": 73542.42925005945,
+      "actualArea": 73542.4292500595,
+      "outsideProbes": 171
+    }
+  ],
+  "limitations": [
+    "Offline math only; no Studio, collision, visual or device acceptance.",
+    "Existing Dataset2 unrelated geometry remains unchanged."
+  ],
+  "unchangedBelowFloorWaterOverlaps": [
+    [
+      "coast_bay_water",
+      19,
+      [
+        56,
+        410,
+        1475,
+        1535
+      ],
+      -12.6
+    ],
+    [
+      "coast_bay_water",
+      20,
+      [
+        56,
+        410,
+        1475,
+        1535
+      ],
+      -12.6
+    ],
+    [
+      "coast_bay_water",
+      21,
+      [
+        56,
+        410,
+        1475,
+        1535
+      ],
+      -12.6
+    ]
+  ]
+}

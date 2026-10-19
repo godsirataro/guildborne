@@ -1,16 +1,17 @@
 {
-  "origin": "Existing reviewed Guildborne bespoke-spire packet, six translations only",
+  "origin": "Existing coast composition with one decorative bank clipped against surveyed Ironveil and approach envelopes",
   "license": "Retains existing original Guildborne geometry and reviewed Quaternius CC0 vegetation",
-  "sourceProvenance": "assets/production/world-slice/bespoke-spire/provenance.json",
+  "sourceProvenance": "assets/production/world-slice/coast-ironveil-clearance/before.provenance.json",
   "licenseFiles": [
     "assets/production/world-slice/village-LICENSE.txt",
     "assets/production/world-slice/ruins-LICENSE.txt"
   ],
-  "source": "assets/production/world-slice/bespoke-spire/scenery.mesh.json",
-  "sourceSha256": "148ba821817101a0372d851f557d4c7593a594295814f0e20da194924adfb3ae",
-  "recipe": "production/world/quality-slice/coast-prop-composition/recipe.py",
-  "packetSha256": "f31077a0847a4a5db7a5918a411ee9b9ba22cdb0ac18ec686bc18859e10fc4e9",
+  "source": "assets/production/world-slice/coast-ironveil-clearance/before.mesh.json",
+  "sourceSha256": "f31077a0847a4a5db7a5918a411ee9b9ba22cdb0ac18ec686bc18859e10fc4e9",
+  "recipe": "production/world/quality-slice/coast-ironveil-clearance/recipe.py",
+  "packetSha256": "0a2dd8468029be8c7e9f829666be1413bd9d450b12a25f45beaec2c230480296",
   "runtimeAssetIds": null,
   "downloads": false,
-  "newMeshes": false
+  "newMeshes": false,
+  "modifiedMesh": "coast_headland_banks__bounded_003"
 }

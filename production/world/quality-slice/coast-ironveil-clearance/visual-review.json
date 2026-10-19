@@ -1,0 +1,15 @@
+{
+  "status": "OFFLINE_RENDER_REVIEW_NATIVE_PENDING",
+  "viewsInspected": [
+    "approach",
+    "player_arrival",
+    "skyline",
+    "reverse"
+  ],
+  "before": "Approach/skyline are filled by bank; arrival/reverse are under its dark underside.",
+  "after": "Building, terrace, portal frame and route are visible in matching views. Skyline shows straight exposed bank cut edges and underside outside reserved rectangle.",
+  "limitation": "Clearance repair only; open cut boundaries require native contextual art review and potential future retaining-cliff transition. No whole-world visual acceptance.",
+  "backgroundBeforeExit": 0,
+  "backgroundAfterExit": 0,
+  "interactiveBlenderUntouchedPID": 36236
+}

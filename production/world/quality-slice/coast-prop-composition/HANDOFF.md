@@ -1,3 +1,5 @@
+> Superseded for the current canonical Dataset2 packet by ../coast-ironveil-clearance/HANDOFF.md. The hashes/counts and six-translations-only claim below describe the historical pre-clearance packet.
+
 # Two roadside composition clusters â€” local review candidate
 
 Base: 957f434. Fresh branch codex/coast-prop-composition; previous worktrees preserved. Only the two new coast-prop-composition artifact directories change. Controller owns Studio/Rojo; no runtime activation, upload, push, PR, publish or DataStore operation.

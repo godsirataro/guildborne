@@ -1,0 +1,170 @@
+{
+  "status": "REVIEW_ONLY_NATIVE_PENDING",
+  "base": "1e670c0",
+  "files": {
+    "assets/production/world-slice/coast-ironveil-clearance/.gitattributes": {
+      "sha256": "730a35ae3d558080083c3103d9ac8100c3f6561678092abe341701dfa331eb1d",
+      "bytes": 29
+    },
+    "assets/production/world-slice/coast-ironveil-clearance/after/approach.png": {
+      "sha256": "68fa110d8c25d4408daf8fe8fe3d54de9169f221c17d7caf4fba9ef5ce559b33",
+      "bytes": 1015391
+    },
+    "assets/production/world-slice/coast-ironveil-clearance/after/player_arrival.png": {
+      "sha256": "de258088e811e00519ac4c1dbce4fc8ea56eeedda463d5799588dddd5dd5fafa",
+      "bytes": 1073621
+    },
+    "assets/production/world-slice/coast-ironveil-clearance/after/render-evidence.json": {
+      "sha256": "9ce0d88865b72da06cb8c9b937007a8d0efcef96cf3b59f8cb7862f2c5d6d027",
+      "bytes": 1042
+    },
+    "assets/production/world-slice/coast-ironveil-clearance/after/reverse.png": {
+      "sha256": "b0a136adc4a35149abb3d4c78dd469c29dc735ca03f910aacb2c791ca8fc3e53",
+      "bytes": 1047172
+    },
+    "assets/production/world-slice/coast-ironveil-clearance/after/skyline.png": {
+      "sha256": "7aaf4d2e9aa39abeef397b434a3353869715dc0fd105fb66dc7cbe2a60203314",
+      "bytes": 1059312
+    },
+    "assets/production/world-slice/coast-ironveil-clearance/after/source.blend": {
+      "sha256": "b70bb101652fe45751f18a29d0f5940cfa522d7ce1c22ad7a22cc04069b73925",
+      "bytes": 1074771
+    },
+    "assets/production/world-slice/coast-ironveil-clearance/before/approach.png": {
+      "sha256": "aeeac55b1f551b2e7bfea9dc1b83aaccfb4d46f00e1910499d21107bfa8d0b03",
+      "bytes": 877772
+    },
+    "assets/production/world-slice/coast-ironveil-clearance/before/player_arrival.png": {
+      "sha256": "8b57f956f0fccafb1906b8487d8c08490e9de7465679dc71d717b15fd8ac40c9",
+      "bytes": 955425
+    },
+    "assets/production/world-slice/coast-ironveil-clearance/before/render-evidence.json": {
+      "sha256": "89d1cb3990e106227e944ab24c49b60087597f534c9c284f1e825410671cc191",
+      "bytes": 1043
+    },
+    "assets/production/world-slice/coast-ironveil-clearance/before/reverse.png": {
+      "sha256": "157ec74b8dcbc7f9e8f60c6553a9933ebe44173feb3b7ff5d63b6fc9d7d5248c",
+      "bytes": 939302
+    },
+    "assets/production/world-slice/coast-ironveil-clearance/before/skyline.png": {
+      "sha256": "f976e6523b00e6b1bd443a232ae6b28b8b721d494b081c8e8de1e33dafa036bf",
+      "bytes": 902336
+    },
+    "assets/production/world-slice/coast-ironveil-clearance/before/source.blend": {
+      "sha256": "f085d8ae3bd06afd26f4c4cb37f1500d170d32e12b41c4fce59d0fe642fa4c7d",
+      "bytes": 1073096
+    },
+    "assets/production/world-slice/coast-ironveil-clearance/before.mesh.json": {
+      "sha256": "f31077a0847a4a5db7a5918a411ee9b9ba22cdb0ac18ec686bc18859e10fc4e9",
+      "bytes": 1481099
+    },
+    "assets/production/world-slice/coast-ironveil-clearance/before.provenance.json": {
+      "sha256": "061af165718dfb21caeed987dc2ee2c14d19fdf1effd994e307b757901bf2ff1",
+      "bytes": 828
+    },
+    "assets/production/world-slice/coast-prop-composition/provenance.json": {
+      "sha256": "3e4da6901bdb8b639efa093fe012764a1e251c357323325ab78bc4c902f7e4f3",
+      "bytes": 933
+    },
+    "assets/production/world-slice/coast-prop-composition/scenery.mesh.json": {
+      "sha256": "0a2dd8468029be8c7e9f829666be1413bd9d450b12a25f45beaec2c230480296",
+      "bytes": 1495840
+    },
+    "production/world/quality-slice/coast-ironveil-clearance/.gitattributes": {
+      "sha256": "730a35ae3d558080083c3103d9ac8100c3f6561678092abe341701dfa331eb1d",
+      "bytes": 29
+    },
+    "production/world/quality-slice/coast-ironveil-clearance/after.exit.txt": {
+      "sha256": "13bf7b3039c63bf5a50491fa3cfd8eb4e699d1ba1436315aef9cbe5711530354",
+      "bytes": 3
+    },
+    "production/world/quality-slice/coast-ironveil-clearance/after.stderr.log": {
+      "sha256": "10ebbef794f65312cd233360bf49ba7704585b40f59834c170f4451679664042",
+      "bytes": 839
+    },
+    "production/world/quality-slice/coast-ironveil-clearance/after.stdout.log": {
+      "sha256": "d7a651cfac9e1db48d519ff4fd70c43115df5573d3e476233c7c0acb7620f648",
+      "bytes": 745
+    },
+    "production/world/quality-slice/coast-ironveil-clearance/baseline-negative-exit.json": {
+      "sha256": "0e1aaa36419ab7a112ad23608524548d4aac28db536bb6ba0737fb82ccec29da",
+      "bytes": 86
+    },
+    "production/world/quality-slice/coast-ironveil-clearance/baseline-negative.stderr.txt": {
+      "sha256": "a82bbea0c385b9a0fade70ce2db7b91ca664fa5b9cd60f56f656120ebf30412a",
+      "bytes": 665
+    },
+    "production/world/quality-slice/coast-ironveil-clearance/baseline-negative.stdout.txt": {
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "bytes": 0
+    },
+    "production/world/quality-slice/coast-ironveil-clearance/before.exit.txt": {
+      "sha256": "13bf7b3039c63bf5a50491fa3cfd8eb4e699d1ba1436315aef9cbe5711530354",
+      "bytes": 3
+    },
+    "production/world/quality-slice/coast-ironveil-clearance/before.stderr.log": {
+      "sha256": "10ebbef794f65312cd233360bf49ba7704585b40f59834c170f4451679664042",
+      "bytes": 839
+    },
+    "production/world/quality-slice/coast-ironveil-clearance/before.stdout.log": {
+      "sha256": "a3fd8e3e630bf32d120e8e769bc0912565bf1feb32db275a0fe39b7285ad215f",
+      "bytes": 749
+    },
+    "production/world/quality-slice/coast-ironveil-clearance/cameras.json": {
+      "sha256": "fd51fdac31c1b01246db6ec1b1667701611e600d5b33a269b0d4e4b779ba3aea",
+      "bytes": 817
+    },
+    "production/world/quality-slice/coast-ironveil-clearance/HANDOFF.md": {
+      "sha256": "39945d365396bbad331e4e65d754399ab7cb5db87278b144749074ed0aff204b",
+      "bytes": 3056
+    },
+    "production/world/quality-slice/coast-ironveil-clearance/independent-final-exit.json": {
+      "sha256": "47b8b6b49d4695fe6e036bd916538aff4f46773e212ca0d429db80f3963e2cfe",
+      "bytes": 15
+    },
+    "production/world/quality-slice/coast-ironveil-clearance/independent-final.stderr.txt": {
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "bytes": 0
+    },
+    "production/world/quality-slice/coast-ironveil-clearance/independent-final.stdout.txt": {
+      "sha256": "dff46c5097d14b0ebd0bc546c2eed0bad69d1daf303becf140270415c4bb02b4",
+      "bytes": 898
+    },
+    "production/world/quality-slice/coast-ironveil-clearance/independent-review.json": {
+      "sha256": "1404dea50e425c924bd6ff20a4016c9b0fd4267e78a8ddb59b305ccb4b0257db",
+      "bytes": 12979
+    },
+    "production/world/quality-slice/coast-ironveil-clearance/independent-visual-review.md": {
+      "sha256": "d9191c735fc5e4cb08260b697dd50f0b5c56ec6b46853757e12fd61d3c7316a2",
+      "bytes": 1989
+    },
+    "production/world/quality-slice/coast-ironveil-clearance/recipe-evidence.json": {
+      "sha256": "2674ce4de9347b47c28f4fb09ee4956501809e744e28e836ba5faebe3592ffdd",
+      "bytes": 587
+    },
+    "production/world/quality-slice/coast-ironveil-clearance/recipe.py": {
+      "sha256": "8eef3f691d72561308e8c96d38a72981e7c8a22565bed7337a209d24ad31741c",
+      "bytes": 3830
+    },
+    "production/world/quality-slice/coast-ironveil-clearance/render.py": {
+      "sha256": "7577ee85e043dbd1bfe1e77339db3a2e236a8d2a1b2dade55b57e3f5c9335bb3",
+      "bytes": 5520
+    },
+    "production/world/quality-slice/coast-ironveil-clearance/source-survey.json": {
+      "sha256": "3cb55364cbd6e2a40d7b160286ecd851b67de975a5c630590cf398822ab5ac1b",
+      "bytes": 21680
+    },
+    "production/world/quality-slice/coast-ironveil-clearance/verify.py": {
+      "sha256": "be29e8a4b8ff9082e98d5394991a3a1f0455a035a76cd0740eb340dfb2470742",
+      "bytes": 7020
+    },
+    "production/world/quality-slice/coast-ironveil-clearance/visual-review.json": {
+      "sha256": "7d90106c903df4fcd742c86b0680074548220d98a37997700c815c53931427b2",
+      "bytes": 719
+    },
+    "production/world/quality-slice/coast-prop-composition/HANDOFF.md": {
+      "sha256": "e3b10e4a81e21592296e6f4b043526f94931286b186ecb5e9707ee604852135d",
+      "bytes": 5355
+    }
+  }
+}

@@ -1,0 +1,15 @@
+{
+  "status": "BLENDER_RENDERED_NOT_NATIVE",
+  "variant": "after",
+  "nativeParts": 45,
+  "cameraSha256": "fd51fdac31c1b01246db6ec1b1667701611e600d5b33a269b0d4e4b779ba3aea",
+  "packetSha256": "0a2dd8468029be8c7e9f829666be1413bd9d450b12a25f45beaec2c230480296",
+  "surveySha256": "3cb55364cbd6e2a40d7b160286ecd851b67de975a5c630590cf398822ab5ac1b",
+  "context": "Offline combined coast, ore yard, bridge and45 literal native Ironveil map parts with actual source colors/yaws/wedges; existing bridge and public portal frame/mine marker. Dynamic actors, private pockets, generated resource art and GUI excluded; anchors protected by full survey keepouts.",
+  "images": {
+    "approach.png": "68fa110d8c25d4408daf8fe8fe3d54de9169f221c17d7caf4fba9ef5ce559b33",
+    "player_arrival.png": "de258088e811e00519ac4c1dbce4fc8ea56eeedda463d5799588dddd5dd5fafa",
+    "reverse.png": "b0a136adc4a35149abb3d4c78dd469c29dc735ca03f910aacb2c791ca8fc3e53",
+    "skyline.png": "7aaf4d2e9aa39abeef397b434a3353869715dc0fd105fb66dc7cbe2a60203314"
+  }
+}

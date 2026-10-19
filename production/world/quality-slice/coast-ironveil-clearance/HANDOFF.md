@@ -1,0 +1,15 @@
+# Ironveil coast bank clearance
+
+Review candidate; native combined-scene visual and navigation retest pending.
+
+Dataset2's existing east bank crossed the surveyed Ironveil floor and ore yard. Its authored coastal section at Z1320 rises to Y78 and expands landward; this was a visual occluder despite disabled collision. Controller rays reproduced bank intersections above the weighhouse and public lane.
+
+The replacement remains `assets/production/world-slice/coast-prop-composition/scenery.mesh.json`, SHA256 `0a2dd8468029be8c7e9f829666be1413bd9d450b12a25f45beaec2c230480296`. Replace Dataset2; do not append both versions. All72 placements and19 other mesh resources remain exactly equal. Only `coast_headland_banks__bounded_003` changes, from73 to182 triangles. Total unique triangles11439; instanced40115. No source runtime, collision, travel, ground, ore-yard or bridge changes.
+
+The deterministic recipe subtracts X370..640/Z1270..1560 (city/yard/spawn/view envelope) and X56..410/Z1475..1535 (full second corridor and shoulders) from original triangle surfaces. Retained polygons stay in original face planes with matching colors/winding. This is a sharp decorative-surface exclusion, without new cliff caps; inspect cut boundaries in native combined context before accepting art. The chunk was already a partitioned surface, not a closed solid.
+
+Independent `verify.py` checks all40115 placed Dataset2 triangles. Protected envelopes have no remaining nonwater scenery intrusion. Three unchanged bay-water faces at Y−12.6 are explicitly allowed below the floor. All five historical rays hit the old bank and clear the repair; each original face's retained area, nonoverlap and11214 outside samples preserve the reviewed coast outside these envelopes. Negative baseline fails as intended. Raw logs and receipts are retained. These are offline geometric checks, not Studio pathfinding or companion acceptance.
+
+Run `python production/world/quality-slice/coast-ironveil-clearance/recipe.py` then `verify.py` from this repository. Recipe uses pinned commit1e670c0 and its original packet SHA; original bytes/provenance are archived under `assets/production/world-slice/coast-ironveil-clearance/`. Do not run the historical coast-prop-composition recipe as the final regeneration step: it recreates the uncut upstream bank. This repair supersedes the old packet hash, counts and six-translations-only description for the canonical Dataset2 file; historical evidence remains untouched.
+
+Before/after renders use identical cameras and native Ironveil survey from the accepted ore-yard source, existing ore yard, existing bridge, public portal and complete Dataset2. They are offline Blender images; dynamic actors, private pockets and GUI are absent. Studio owner should reload exact Dataset2 with the other datasets, inspect city/approach/remaining cut edges, repeat the reported sight rays and player-plus-five-companion paths in the authorized Memory test place. No upload, publish, DataStore write or live interactive Blender mutation was performed.

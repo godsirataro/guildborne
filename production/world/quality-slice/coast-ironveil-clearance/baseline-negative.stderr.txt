@@ -1,0 +1,8 @@
+Traceback (most recent call last):
+  File "C:\Work\MySelf\Guildborne-coast-ironveil-fix\production\world\quality-slice\coast-ironveil-clearance\verify.py", line 84, in <module>
+    if __name__=='__main__': main()
+                             ~~~~^^
+  File "C:\Work\MySelf\Guildborne-coast-ironveil-fix\production\world\quality-slice\coast-ironveil-clearance\verify.py", line 56, in main
+    actual=sum(area(t) for t in assigned[i]);assert abs(expected-actual)<max(1e-5,area(o)*1e-8),(i,expected,actual)
+                                                    ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+AssertionError: (9, 5885.542865540908, 6239.241355056587)

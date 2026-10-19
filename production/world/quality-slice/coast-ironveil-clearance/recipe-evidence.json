@@ -1,0 +1,26 @@
+{
+  "status": "FILE_GENERATED_NOT_STUDIO_TESTED",
+  "base": "1e670c0",
+  "sourceSha256": "f31077a0847a4a5db7a5918a411ee9b9ba22cdb0ac18ec686bc18859e10fc4e9",
+  "packetSha256": "0a2dd8468029be8c7e9f829666be1413bd9d450b12a25f45beaec2c230480296",
+  "target": "coast_headland_banks__bounded_003",
+  "subtractXZ": [
+    [
+      370,
+      640,
+      1270,
+      1560
+    ],
+    [
+      56,
+      410,
+      1475,
+      1535
+    ]
+  ],
+  "oldTriangles": 73,
+  "newTriangles": 182,
+  "placementsUnchanged": 72,
+  "otherMeshesUnchanged": 19,
+  "runtimeAssetIds": null
+}
