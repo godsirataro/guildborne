@@ -1,0 +1,25 @@
+{
+  "candidate": "14574e7194ed9832fa555bbc19f317df90a7552b74b22760dfa0cb2acbbb4720",
+  "sourceCommit": "ebc5d2a",
+  "normalFreshMemoryGame": true,
+  "render": {
+    "content": [
+      {
+        "type": "text",
+        "text": "{\"views\":{\"1\":{\"name\":\"ItemPreview\",\"size\":\"80, 80\"},\"3\":{\"name\":\"ItemPreview\",\"size\":\"80, 80\"},\"2\":{\"name\":\"ItemPreview\",\"size\":\"80, 80\"},\"5\":{\"name\":\"ItemPreview\",\"size\":\"80, 80\"},\"4\":{\"name\":\"ItemPreview\",\"size\":\"80, 80\"},\"6\":{\"name\":\"ActorViewport\",\"size\":\"233, 180\"}},\"bad\":[],\"panes\":1}"
+      }
+    ],
+    "isError": false
+  },
+  "sourceIdentity": {
+    "content": [
+      {
+        "type": "text",
+        "text": "{\"inventoryPaneExact\":true}"
+      }
+    ],
+    "isError": false
+  },
+  "capture": "normal_inventory_polish_th_two_route_candidate",
+  "limits": "Thai 796px actual fresh profile, no seeded inventory or sale/equip outcome; no physical device/human art acceptance"
+}
