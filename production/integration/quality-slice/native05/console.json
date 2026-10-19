@@ -1,0 +1,9 @@
+{
+  "content": [
+    {
+      "type": "text",
+      "text": "[TRUNCATED DUE TO LENGTH LIMIT]\nPlayers.iswhlaedev.PlayerScripts.CombatCueProbe:357: Players.iswhlaedev.PlayerScripts.CombatCueProbe:142: INCONCLUSIVE: Heartbeat gap during negative window: missing target\nPlayers.iswhlaedev.PlayerScripts.CombatCueProbe:49 function observe\nPlayers.iswhlaedev.PlayerScripts.CombatCueProbe:142\nPlayers.iswhlaedev.PlayerScripts.CombatCueProbe:163\n\nStack Begin\nScript 'Players.iswhlaedev.PlayerScripts.CombatCueProbe', Line 357\nStack End"
+    }
+  ],
+  "isError": false
+}

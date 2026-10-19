@@ -46,16 +46,18 @@ while os.clock() - started < 30 do
     elseif not stableSince then stableSince = current end
     if stableSince and current - stableSince >= 2 then
         assert(probe.Disabled and probe:GetAttribute("ProbeStatus") == nil)
-        report.status = "PROBE_ENABLED_ONCE"
+        report.status = "READY_FOR_NATIVE_UI_ENABLE"
         report.stableSeconds = current - stableSince
         report.elapsed = current - started
-        report.enabledAt = workspace:GetServerTimeNow()
+        report.readyAt = workspace:GetServerTimeNow()
         report.rootPosition = tostring(root.Position)
         report.cameraType = camera.CameraType.Name
-        probe.Disabled = false
+        assert(probe.Disabled, "Native UI enables after this call returns")
         return report
     end
 end
 report.elapsed = os.clock() - started
 report.reason = "No consecutive two-second stable client window; stop Play"
 return report
+
+

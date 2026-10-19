@@ -1,0 +1,9 @@
+{
+  "content": [
+    {
+      "type": "text",
+      "text": "{\"status\":\"INCONCLUSIVE\",\"camera\":\"Custom\",\"report\":\"{\\\"stopPlayRequired\\\":true,\\\"requestCount\\\":0,\\\"maximumHeartbeatGap\\\":0.09778904914855957,\\\"actionTTL\\\":0.62,\\\"cases\\\":[],\\\"heartbeatCount\\\":1377,\\\"VFXCount\\\":0,\\\"audibleAcceptance\\\":false,\\\"status\\\":\\\"INCONCLUSIVE\\\",\\\"waitCount\\\":383,\\\"disposalCount\\\":0,\\\"serverCombatTested\\\":false,\\\"error\\\":\\\"Players.iswhlaedev.PlayerScripts.CombatCueProbe:142: INCONCLUSIVE: Heartbeat gap during negative window: missing target\\\\nPlayers.iswhlaedev.PlayerScripts.CombatCueProbe:49 function observe\\\\nPlayers.iswhlaedev.PlayerScripts.CombatCueProbe:142\\\\nPlayers.iswhlaedev.PlayerScripts.CombatCueProbe:163\\\\n\\\",\\\"cleanupErrors\\\":[]}\"}"
+    }
+  ],
+  "isError": false
+}
