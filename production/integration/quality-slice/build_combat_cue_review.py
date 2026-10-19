@@ -25,10 +25,19 @@ for entry in sorted((ROOT / 'src/client').iterdir()):
             client[name]['$properties'] = {'Disabled': True}
 project = {'name': 'Guildborne_CombatCueReview', 'serveAddress': '127.0.0.1', 'tree': {
     '$className': 'DataModel',
+    'Workspace': {'$className': 'Workspace',
+        'ProbeSpawnFloor': {'$className': 'Part', '$properties': {
+            'Anchored': True, 'CanCollide': True, 'Size': [64, 1, 64],
+            'Position': [0, 0, 0]}},
+        'ProbeSpawn': {'$className': 'SpawnLocation', '$properties': {
+            'Anchored': True, 'CanCollide': True, 'Enabled': True,
+            'Neutral': True, 'Duration': 0, 'Size': [12, 1, 12],
+            'Position': [0, 1, 0]}}},
     'ReplicatedStorage': {'$className': 'ReplicatedStorage',
         'Shared': {'$path': str(ROOT / 'src/shared')}, 'CombatCueProbeClient': client},
     'StarterPlayer': {'$className': 'StarterPlayer', 'StarterPlayerScripts': {
-        '$className': 'StarterPlayerScripts', 'CombatCueProbe': {'$path': str(probe_copy)}}},
+        '$className': 'StarterPlayerScripts', 'CombatCueProbe': {
+            '$path': str(probe_copy), '$properties': {'Disabled': True}}}},
 }}
 project_path = out / 'review.project.json'
 project_path.write_text(json.dumps(project, indent=2), encoding='utf-8', newline='\n')
@@ -39,6 +48,8 @@ receipt = {'status': 'BUILT_NOT_STUDIO_TESTED',
     'candidateSha256': hashlib.sha256(place.read_bytes()).hexdigest(),
     'probeSha256': hashlib.sha256(probe.read_bytes()).hexdigest(),
     'noServerBootstrap': True, 'clientBootstrapDisabled': True,
+    'probeInitiallyDisabled': True, 'staticNeutralSpawn': True,
+    'requiresObservedClientWarmupAndManualProbeEnable': True,
     'runtime': str(runtime), 'project': str(project_path), 'place': str(place)}
 (out / 'build-receipt.json').write_text(json.dumps(receipt, indent=2), encoding='utf-8', newline='\n')
 print(json.dumps(receipt, indent=2))
