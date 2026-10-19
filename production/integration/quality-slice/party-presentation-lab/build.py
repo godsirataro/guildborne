@@ -1,0 +1,153 @@
+"""Copy the current quality project into a separate disposable party candidate.
+
+Never invokes the ordinary preview builders or writes their outputs. All input
+file identities are checked across the build; interrupted output is not accepted.
+"""
+from pathlib import Path
+import argparse, hashlib, json, os, subprocess, xml.etree.ElementTree as ET
+
+HERE = Path(__file__).resolve().parent
+ROOT = HERE.parents[3]
+
+def sha(path):
+    return hashlib.sha256(path.read_bytes()).hexdigest()
+
+def source_files(node):
+    found = set()
+    if isinstance(node, dict):
+        if "$path" in node:
+            p = Path(node["$path"])
+            if not p.is_absolute():
+                p = ROOT / p
+            if not p.exists():
+                raise ValueError(f"Missing input: {p}")
+            found.update(x for x in p.rglob("*") if x.is_file()) if p.is_dir() else found.add(p)
+        for value in node.values():
+            found.update(source_files(value))
+    return found
+
+def prepare(source, start):
+    project = json.loads(source.read_text(encoding="utf-8-sig"))
+    tree = project["tree"]
+    server = tree["ServerScriptService"]["Server"]
+    runtime = Path(server["Config"]["Runtime"]["$path"])
+    text = runtime.read_text()
+    assert 'StudioPersistence="Memory"' in text and 'AllowedDataStoreUniverses={}' in text
+    assert tree["ReplicatedStorage"]["QualityPreviewAssets"]["$attributes"]["IsolatedMemory"] is True
+    server["ServerBootstrap"].setdefault("$properties", {})["Disabled"] = True
+    scripts = tree["StarterPlayer"]["StarterPlayerScripts"]
+    scripts["Client"]["ClientBootstrap"] = {
+        "$path": str(ROOT / "src/client/ClientBootstrap.client.luau"),
+        "$properties": {"Disabled": True},
+    }
+    tree["ServerScriptService"]["PartyPresentationLab"] = {
+        "$path": str(HERE / "PartyPresentation.server.luau"), "$attributes": {"StartZone": start}}
+    scripts["PartyPresentationLab"] = {"$path": str(HERE / "PartyPresentation.client.luau")}
+    project["name"] = "Guildborne_PartyPresentationLab"
+    project.pop("servePlaceIds", None)
+    project["serveAddress"] = "127.0.0.1"
+    return project
+
+def snapshot(project, source):
+    # Re-enumerate every time, including new/removed children of source directories.
+    return {str(p): sha(p) for p in sorted(source_files(project) | {source, Path(__file__).resolve()})}
+
+def bounded_build(command, out, receipt):
+    process = None
+    with (out / "build.stdout.txt").open("wb") as stdout, (out / "build.stderr.txt").open("wb") as stderr:
+        try:
+            process = subprocess.Popen(command, cwd=ROOT, stdout=stdout, stderr=stderr)
+            receipt["pid"] = process.pid
+            receipt["exitCode"] = process.wait(timeout=120)
+        finally:
+            if process is not None and process.poll() is None:
+                cleanup = dict(treeTerminationAttempted=False, confirmedExited=False)
+                receipt["cleanup"] = cleanup
+                try:
+                    if os.name == "nt":
+                        cleanup["treeTerminationAttempted"] = True
+                        with (out / "cleanup.stdout.txt").open("wb") as co, (out / "cleanup.stderr.txt").open("wb") as ce:
+                            killed = subprocess.run(["taskkill", "/PID", str(process.pid), "/T", "/F"],
+                                                    stdout=co, stderr=ce, timeout=10)
+                        cleanup["taskkillExitCode"] = killed.returncode
+                    else:
+                        process.kill()
+                    process.wait(timeout=5)
+                    cleanup["confirmedExited"] = True
+                except Exception as error:
+                    cleanup["error"] = repr(error)
+                    # Never wait indefinitely, nor claim child-tree cleanup from
+                    # killing only the parent. Retain the unresolved tree result.
+                    try:
+                        process.kill()
+                        process.wait(timeout=5)
+                        cleanup["parentExited"] = True
+                    except Exception as fallback:
+                        cleanup["fallbackError"] = repr(fallback)
+
+def main():
+    parser = argparse.ArgumentParser()
+    parser.add_argument("--start-zone", choices=["Guild", "City"], default="Guild")
+    args = parser.parse_args()
+    source = ROOT / "build/quality-preview.project.json"
+    out = ROOT / "build/party-presentation-lab"
+    out.mkdir(parents=True, exist_ok=False)  # preserve ALL prior attempt evidence
+    target = out / "Guildborne_PartyPresentationLab.rbxlx"
+    receipt_path = out / "receipt.json"
+    project_path = out / "review.project.json"
+    command = [str(ROOT / ".tools/rojo/rojo.exe"), "build", str(project_path), "--output", str(target)]
+    receipt = dict(status="FAILED", command=command, exitCode=None, timeoutSeconds=120,
+                   inputHashes={}, inputsUnchanged=False, synthetic=True,
+                   startZone=args.start_zone, studioTested=False, profileWrites=0)
+    project = None
+    failure = None
+    try:
+        original = source.read_bytes()
+        project = prepare(source, args.start_zone)
+        receipt["inputHashes"] = snapshot(project, source)
+        project_path.write_text(json.dumps(project, indent=2) + "\n", encoding="utf-8")
+        bounded_build(command, out, receipt)
+        after = snapshot(project, source)
+        receipt["afterInputHashes"] = after
+        before = receipt["inputHashes"]
+        receipt["addedInputs"] = sorted(set(after) - set(before))
+        receipt["removedInputs"] = sorted(set(before) - set(after))
+        receipt["inputsUnchanged"] = before == after and source.read_bytes() == original
+        assert receipt["exitCode"] == 0 and receipt["inputsUnchanged"], "Build failed or input set/content changed"
+        doc = ET.parse(target)
+        bootstraps = []
+        for item in doc.iter("Item"):
+            props = item.find("Properties")
+            if props is None:
+                continue
+            name = next((p.text for p in props if p.attrib.get("name") == "Name"), None)
+            if name in ("ServerBootstrap", "ClientBootstrap"):
+                disabled = next((p.text for p in props if p.attrib.get("name") == "Disabled"), None)
+                bootstraps.append((name, disabled))
+        assert sorted(bootstraps) == [("ClientBootstrap", "true"), ("ServerBootstrap", "true")], bootstraps
+        receipt.update(status="BUILT_NOT_STUDIO_TESTED", candidate=str(target),
+                       candidateSha256=sha(target), disabledBootstraps=bootstraps,
+                       projectSha256=sha(project_path))
+    except BaseException as error:
+        failure = error
+        receipt["status"] = "FAILED"
+        receipt["error"] = repr(error)
+        # Capture changed file sets even after timeout/build failure where possible.
+        if project is not None:
+            try:
+                after = snapshot(project, source)
+                receipt["afterInputHashes"] = after
+                receipt["addedInputs"] = sorted(set(after) - set(receipt["inputHashes"]))
+                receipt["removedInputs"] = sorted(set(receipt["inputHashes"]) - set(after))
+                receipt["inputsUnchanged"] = bool(receipt["inputHashes"]) and receipt["inputHashes"] == after
+            except Exception as inventory_error:
+                receipt["inputInventoryError"] = repr(inventory_error)
+                receipt["inputsUnchanged"] = False
+    finally:
+        receipt_path.write_text(json.dumps(receipt, indent=2) + "\n", encoding="utf-8")
+    print(json.dumps({k: v for k, v in receipt.items() if k != "inputHashes"}, indent=2))
+    if failure is not None:
+        raise failure
+
+if __name__ == "__main__":
+    main()
