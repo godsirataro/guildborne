@@ -1,0 +1,62 @@
+[
+  {
+    "path": "src/server/ServerBootstrap.server.luau",
+    "bytes": 38606,
+    "sha256": "099c5cc3bc2ebf95f8bcc412f872244348c5cc2b62c7c04ed4a563b727b23aa1",
+    "normalizedUtf8Sha256": "099c5cc3bc2ebf95f8bcc412f872244348c5cc2b62c7c04ed4a563b727b23aa1"
+  },
+  {
+    "path": "src/server/Services/WorldService.luau",
+    "bytes": 18915,
+    "sha256": "02d37783772016bfe75058bf0b33d12dd7932f08fa4da073b55c230d323ce5cd",
+    "normalizedUtf8Sha256": "02d37783772016bfe75058bf0b33d12dd7932f08fa4da073b55c230d323ce5cd"
+  },
+  {
+    "path": "src/server/Systems/TravelRules.luau",
+    "bytes": 5659,
+    "sha256": "c84038885e42dcc935b6a93a9b0cd135810822daceef278207c3aa51c42c16f5",
+    "normalizedUtf8Sha256": "c84038885e42dcc935b6a93a9b0cd135810822daceef278207c3aa51c42c16f5"
+  },
+  {
+    "path": "src/client/UI/Components/WalkingRouteContext.luau",
+    "bytes": 6128,
+    "sha256": "a41fbe593c4d8d2e8fe6693dbfe602d7d6a2c81025c879e2c893a76071eb7cf8",
+    "normalizedUtf8Sha256": "a41fbe593c4d8d2e8fe6693dbfe602d7d6a2c81025c879e2c893a76071eb7cf8"
+  },
+  {
+    "path": "src/shared/Data/QuestRoute.luau",
+    "bytes": 28523,
+    "sha256": "52c55fd4cb035ccc2e6a8399da96f14b8d480f8b663a09d286db17097d219c8e",
+    "normalizedUtf8Sha256": "52c55fd4cb035ccc2e6a8399da96f14b8d480f8b663a09d286db17097d219c8e"
+  },
+  {
+    "path": "tests/continuous_world_travel.luau",
+    "bytes": 33166,
+    "sha256": "967bc26e4098cc16ddfe484f00e1a08ff97b45652684e886c34f41fc40d4ebc2",
+    "normalizedUtf8Sha256": "967bc26e4098cc16ddfe484f00e1a08ff97b45652684e886c34f41fc40d4ebc2"
+  },
+  {
+    "path": "tests/gui/walking_quest_routes.luau",
+    "bytes": 9074,
+    "sha256": "8ff2becd534692f90940cfccb2f656e9a28ab4f10c68731ec5b5e70e1bfec4a8",
+    "normalizedUtf8Sha256": "8ff2becd534692f90940cfccb2f656e9a28ab4f10c68731ec5b5e70e1bfec4a8"
+  },
+  {
+    "path": "tests/gui/walking_route_context.luau",
+    "bytes": 11770,
+    "sha256": "fe81a402d953f10da26580c600b76d31fb4022e6971efad5dc58b81bf05941d1",
+    "normalizedUtf8Sha256": "fe81a402d953f10da26580c600b76d31fb4022e6971efad5dc58b81bf05941d1"
+  },
+  {
+    "path": "production/integration/quality-slice/check_walking_initializer.py",
+    "bytes": 3050,
+    "sha256": "edea0fc954d7e85b9b93d6c8b38150bc00b0c687ca16e095f2bba31a9e940058",
+    "normalizedUtf8Sha256": "edea0fc954d7e85b9b93d6c8b38150bc00b0c687ca16e095f2bba31a9e940058"
+  },
+  {
+    "path": "production/integration/quality-slice/walking_gate_cases.luau",
+    "bytes": 3763,
+    "sha256": "d3b20ad69e498d14e870d6780da3b62ef6f165be014b7968951ba928f24bf95e",
+    "normalizedUtf8Sha256": "d3b20ad69e498d14e870d6780da3b62ef6f165be014b7968951ba928f24bf95e"
+  }
+]

@@ -1,3 +1,53 @@
+# Current third-road and manual-skill checkpoint — 2026-10-20
+
+Full goal ACTIVE; ForgeGUI deferred. Latest quota46%used/54%remaining.
+No new shutdown scheduled. Shared plan9/v10 ledger remains canonical.
+User's original Studio9407ebd0 remains untouched. Party Studioea5c5563 is Edit,
+owned PID34396; all controller Plays stopped and evidence saved.
+
+S14 corrected HUD4382eeb integratedaea29a1, actual Thai/native320/390px retake
+independently verified and pushed4708af0. Baseline99e7d0f passed970tests.
+R2 failed while player downed; R3 ordinary manual PowerStrike(+27) and
+Mage Fireball(+35) accepted and corresponding native joint motion verified.
+See native-party-r2-r3-20261020:22losslesspages,444post-Stop source matches,
+85VFX/82removals/3right-censored, no R3overflow. Attribution still unassigned.
+Purple bright rectangle in screenshot is NOT identified as Fireball; S15 is
+tracing object identity read-only before any art change. Overall art remains open.
+
+S13 e0a9667 integratedff81a48: optional thirdroad and replacement coast bank.
+Independent review verifies29originalpackets unchanged and full24studsupport.
+Third-road server admission/client guidance integration passed973tests plus
+focused gate/cleanup/chaining/private-area checks. See third-road-integration-20261020.
+First strict-test typing failure and successful rerun are both retained.
+This source integration still needs a freshly built native candidate with Dataset2
+REPLACED by coast-prop-ashen-cut, three-road traversal and five followers.
+No native third-road or earned100-level acceptance yet.
+
+Next work dispatched in existing sessions:
+- S13 owns NEW ironveil-ashen-causeway-art packet only, backgroundBlender exclusive:
+  authored bridge structure/abutments/edge treatment with full24studwalkclearance.
+- S17 owns next bounded resident activities in its existing living-world scopes,
+  at most2 additional ambient residents; no quest NPC movement or rewards.
+- S14 read-only inspection of party UI/labels while root owns third-road UI lease.
+- S15 read-only identification of bright screenshot object; do not guess Fireball.
+
+Root and integration writer stopped before expired own leases were explicitly
+released/reclaimed. Current root quality lease addd05d979514a12876ee317dc7ef6b9;
+continuous travel512401d6e0894c648efffd16f9c96c4f; UI26b9a5a07c934ff09f0919c004610c45.
+The latter two may be released after source commit; query ledger before reuse.
+Initial narrow-scope delegation correction is disclosed in third-road receipt.
+
+Next controller: fresh3-road full-connected build with reviewed Dataset2 variant,
+verify native source identity/guarded access; extend isolated party lab explicitly
+for third-edge synthetic inspection if needed. Existing lab enables only first2
+roads and cannot prove earned eligibility. Finish player+fivehero road tests,
+native object identification and evidence review before accepting art/provider work.
+No PR/merge/publish/provider call/spending/production persistence.
+
+Earlier checkpoints below are historical.
+
+---
+
 # Current full-connected and native checkpoint — 2026-10-20
 
 Full goal remains ACTIVE; ForgeGUI deferred. Latest account measurement43%used,

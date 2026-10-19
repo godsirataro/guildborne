@@ -1,4 +1,5 @@
-local function run(fromZone:string,toZone:string)
+local function run(fromZone:string,toZone:string,enabled:boolean?)
+local fullConnectedEnabled=enabled==true
 
 local Players={};local player={UserId=7,Parent=Players};local current=player
 function Players:GetPlayerByUserId(id) return if id==7 then current else nil end
@@ -20,6 +21,11 @@ local count=0
 local function check(expected)
  local actual=walkingGate(player,session,fromZone,toZone)
  assert(actual==expected,tostring(actual).." ~= "..tostring(expected));count+=1
+end
+if not fullConnectedEnabled and (fromZone=="Ashen" or toZone=="Ashen") then
+ check("InvalidZone")
+ print("PASS third edge remains unavailable without full connected candidate",fromZone,toZone)
+ return
 end
 check(nil)
 for _,pair in ipairs({{"City","Ironveil"},{"Ironveil","City"},{"Ironveil","Ironveil"},{"Ashen","Greenwood"}}) do
@@ -53,4 +59,6 @@ table.freeze(session.record);table.freeze(session);check(nil)
 print("PASS actual Bootstrap walking eligibility",fromZone,toZone,count,"cases; frozen profile unchanged")
 
 end
-for _,pair in ipairs({{"City","Greenwood"},{"Greenwood","City"},{"Greenwood","Ironveil"},{"Ironveil","Greenwood"}}) do run(pair[1],pair[2]) end
+for _,pair in ipairs({{"City","Greenwood"},{"Greenwood","City"},{"Greenwood","Ironveil"},{"Ironveil","Greenwood"},{"Ironveil","Ashen"},{"Ashen","Ironveil"}}) do
+ run(pair[1],pair[2]);run(pair[1],pair[2],false);run(pair[1],pair[2],true)
+end

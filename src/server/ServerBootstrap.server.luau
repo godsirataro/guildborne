@@ -246,6 +246,7 @@ local function walkingGate(player:Player,session:any,fromZone:string,toZone:stri
 	if session.busy then return "SavePending" end
 	local permittedPair=(fromZone=="City" and toZone=="Greenwood") or (fromZone=="Greenwood" and toZone=="City")
 		or (fromZone=="Greenwood" and toZone=="Ironveil") or (fromZone=="Ironveil" and toZone=="Greenwood")
+		or (fullConnectedEnabled and ((fromZone=="Ironveil" and toZone=="Ashen") or (fromZone=="Ashen" and toZone=="Ironveil")))
 	if not permittedPair then return "InvalidZone" end
 	local data=session.record.data
 	local problem=Content.NoviceActionProblem(data,"TravelZone");if problem then return problem end
@@ -306,7 +307,7 @@ end, function(player:Player)
 		return outcome
 	end
 end,Release,observeProduct,sharedCandidateFactory,if continuousWorldEnabled then {
-	Session=walkingSession,Gate=walkingGate,
+	Session=walkingSession,Gate=walkingGate,FullConnectedWorld=fullConnectedEnabled,
 	Notify=function(player:Player,code:string)if Network then Network.Send(player,code)end end,
 } else nil)
 local closing = false

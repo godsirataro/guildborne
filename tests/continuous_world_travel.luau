@@ -444,4 +444,55 @@ return function(test:any,eq:any)
    end
   end
  end)
+
+ local function thirdRoute(f:any):any
+  secondRoute(f)
+  f.config.Regions.Ironveil.HalfWidth=30
+  f.config.Regions.Ashen={X=300,Z=0,HalfWidth=10,Back=10,Front=10}
+  f.config.Destinations.Ashen={X=300,Y=5,Z=0,FallbackX=300,FallbackZ=1}
+  f.config.region=function(x:number,z:number):string?
+   if math.abs(z)>10 then return nil end
+   return if x>=70 and x<=130 then "Greenwood" elseif x>=170 and x<=230 then "Ironveil" elseif x>=290 and x<=310 then "Ashen" else nil
+  end
+  f.city.regions.Ashen={model=table.clone(f.forest),spawn="ashen"}
+  local route={id="ironveil_ashen_south",fromZone="Ironveil",toZone="Ashen",geometry=table.clone(f.route.geometry),
+   volumes={f.box(255,100)},entries={Ironveil=f.box(222,10),Ashen=f.box(300,10)},safeRecovery={Ironveil=f.cf(220,5,0),Ashen=f.cf(300,5,0)},isReady=function()return true end}
+  table.insert(f.walking.Routes,route);return route
+ end
+ test("three reviewed edges chain both ways with stationary arrival and unchanged movement",function()
+  local f=adapter();thirdRoute(f);f.step(0)
+  for _,x in ipairs({25,50,75,100,108,122,140,165,190,200})do f.step(x)end
+  for _=1,4 do f.step(200);eq(f.character:GetAttribute("WalkingRouteContext"),nil)end
+  f.step(208);f.step(222);eq(f.character:GetAttribute("WalkingRouteContext"),"ironveil_ashen_south|Ironveil|Ashen")
+  for _,x in ipairs({240,265,285})do f.step(x);eq(f.player.RespawnLocation,"ironveil")end
+  f.step(300);eq(f.player.attributes.CurrentZone,"Ashen");eq(f.player.RespawnLocation,"ashen")
+  f.step(298);eq(f.character:GetAttribute("WalkingRouteContext"),"ironveil_ashen_south|Ashen|Ironveil")
+  for _,x in ipairs({275,250,225})do f.step(x)end
+  eq(f.player.attributes.CurrentZone,"Ironveil");eq(f.player.RespawnLocation,"ironveil")
+  for _,x in ipairs({208,200,175,150,125,108,100,75,50,25,0})do f.step(x)end
+  eq(f.player.attributes.CurrentZone,"City");eq(f.player.RespawnLocation,"city")
+  eq(f.moves,0);eq(f.heroMoves,0);eq(f.velocities,0)
+ end)
+ test("third edge missing descriptor or gate never admits despite known identity",function()
+  for _,mode in ipairs({"missing","gate"})do
+   local f=adapter();thirdRoute(f)
+   if mode=="missing"then table.remove(f.walking.Routes,3)else f.gate="InvalidZone"end
+   f.source("Ironveil");f.step(208);f.step(222)
+   eq(f.follow(),false);eq(f.player.attributes.CurrentZone,"Ironveil");eq(f.character:GetAttribute("WalkingRouteContext"),nil)
+  end
+ end)
+ test("third transit revoked gate removed geometry session and respawn retain authority",function()
+  for _,mode in ipairs({"gate","geometry","session","respawn"})do
+   local f=adapter();local route=thirdRoute(f);f.source("Ironveil");f.step(208);f.step(222);f.step(240);eq(f.follow(),true)
+   if mode=="gate"then f.gate="FinishExpedition"
+   elseif mode=="geometry"then route.geometry.Parent=nil
+   elseif mode=="session"then f.session=table.clone(f.session)
+   else f.service.Respawn(f.player)end
+   f.step();eq(f.follow(),false);eq(f.player.attributes.CurrentZone,"Ironveil");eq(f.player.RespawnLocation,"ironveil")
+   eq(f.character:GetAttribute("WalkingRouteContext"),nil)
+   if mode=="session"then eq(f.moves,0);eq(f.root.Position.X,240)
+   elseif mode~="respawn"then eq(f.moves,1);eq(f.root.Position.X,220)end
+  end
+ end)
+
 end

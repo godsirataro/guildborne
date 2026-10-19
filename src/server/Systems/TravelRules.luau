@@ -2,7 +2,7 @@
 return function(config: any)
 	local R={}
  -- Identity readiness only. No geometry, activation or eligibility is granted here.
- local walkingPairs:{[string]:{string}}={city_greenwood_west={"City","Greenwood"},greenwood_ironveil_south={"Greenwood","Ironveil"}}
+ local walkingPairs:{[string]:{string}}={city_greenwood_west={"City","Greenwood"},greenwood_ironveil_south={"Greenwood","Ironveil"},ironveil_ashen_south={"Ironveil","Ashen"}}
  function R.walkingContext(routeId:any,from:any,to:any):string?
   local pair=if type(routeId)=="string" then walkingPairs[routeId] else nil
   if not pair or not ((from==pair[1] and to==pair[2])or(from==pair[2] and to==pair[1]))then return nil end

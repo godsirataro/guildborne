@@ -41,6 +41,7 @@ function World.new(onOpen: (Player, string) -> (), reward: any, towerResult: any
 		-- BEGIN REVIEWED WALKING INITIALIZER
 		local ready,routes=pcall(function()
 			local descriptors={quality.buildContinuousCorridor(),quality.buildGreenwoodIronveilCorridor()}
+			if walkingPolicy.FullConnectedWorld==true then table.insert(descriptors,quality.buildIronveilAshenCorridor()) end
 			for _,route in ipairs(descriptors) do
 				assert(route.geometry:IsDescendantOf(folder) and route.isReady(),"Walking corridor is not ready: "..route.id)
 			end

@@ -47,7 +47,7 @@ return function(city:any,rules:any,waypoint:any,resolveMarker:any?)
  table.sort(mineObjectives.complete_borrowed_path)
  local areas={read_mine_signal=true,choose_safe_shaft=true,repair_shoring=true,choose_joint_review=true,operate_mine_mechanism=true,complete_borrowed_path=true}
  local function instruction(quest:any):any return {kind="Instruction",name=quest.name} end
- local walkingPairs={city_greenwood_west={"City","Greenwood"},greenwood_ironveil_south={"Greenwood","Ironveil"}}
+ local walkingPairs={city_greenwood_west={"City","Greenwood"},greenwood_ironveil_south={"Greenwood","Ironveil"},ironveil_ashen_south={"Ironveil","Ashen"}}
  local function walkingEdge(context:any,fromZone:string,toZone:string):any
   local walking=context and context.walking
   if not walking or type(walking.routes)~="table" then return nil end
@@ -59,12 +59,20 @@ return function(city:any,rules:any,waypoint:any,resolveMarker:any?)
   end
   return nil
  end
- local function walkingApproach(context:any,fromZone:string,toZone:string):any
+ local function walkingApproach(context:any,fromZone:string,toZone:string,x:number,z:number):any
   local route=walkingEdge(context,fromZone,toZone)
   if not route then return nil end
   -- Ironveil's private mine overlaps the surface in X/Z. Do not offer a surface
   -- walking entrance from an elevated private floor or an unknown height.
   if route.routeId=="greenwood_ironveil_south" and (not finite(context.playerY) or context.playerY<1 or context.playerY>35)then return nil end
+   if route.routeId=="ironveil_ashen_south" then
+    -- City.region includes Ashen's private annex. Only actual public surface
+    -- coordinates may offer this entrance, even after falling below a court.
+    local area=city.Regions[fromZone]
+    if not area or not finite(context.playerY) or context.playerY<1 or context.playerY>35
+     or not finite(x) or not finite(z) or math.abs(x-area.X)>area.HalfWidth
+     or z<area.Z-area.Back or z>area.Z+area.Front then return nil end
+   end
   local point=if fromZone==route.fromZone then route.points[1] else route.points[#route.points]
   if not point or not finite(point.x) or not finite(point.y) or not finite(point.z) then return nil end
   return {name=if toZone=="City" then "Central City" else toZone,x=point.x,y=point.y,z=point.z,zone=fromZone,kind="Portal",final=false}
@@ -99,6 +107,10 @@ return function(city:any,rules:any,waypoint:any,resolveMarker:any?)
    -- Known public travel legs remain useful before a private court streams in.
    if inGuild then return pointTarget(context.island.exit,"Central City","Portal",false) end
    if inCity then return {name="Ashen",x=0,z=city.Regions.Ashen.CityGateZ,zone="City",kind="Portal",final=false} end
+   if region=="Ironveil" then
+    local approach=walkingApproach(context,"Ironveil","Ashen",x,z)
+    if approach then return approach end
+   end
    if region and region~="Ashen" then local landing=city.Destinations[region];return {name="Central City",x=landing.X,z=landing.Z+12,zone=region,kind="Portal",final=false} end
    local court=context and (if ashenObjectives[id] then context.ashen else context.tower)
    if not court or court.ownerId~=context.playerId or not court.floor or not court.anchors then return nil end
@@ -162,8 +174,8 @@ return function(city:any,rules:any,waypoint:any,resolveMarker:any?)
    -- Public travel legs do not depend on streaming the distant private mine.
    if inGuild then return pointTarget(context.island.exit,"Central City","Portal",false) end
    if inCity then return {name="Ironveil",x=0,z=city.Regions.Ironveil.CityGateZ,zone="City",kind="Portal",final=false} end
-   if region=="Greenwood" then
-    local approach=walkingApproach(context,"Greenwood","Ironveil")
+   if region=="Greenwood" or region=="Ashen" then
+    local approach=walkingApproach(context,region,"Ironveil",x,z)
     if approach then return approach end
    end
    if region and region~="Ironveil" then local landing=city.Destinations[region];return {name="Central City",x=landing.X,z=landing.Z+12,zone=region,kind="Portal",final=false} end
@@ -253,7 +265,7 @@ return function(city:any,rules:any,waypoint:any,resolveMarker:any?)
    if not objective then return nil end -- Menu/order objectives have no world destination.
    if objective.zone==(region or "City") then return pointTarget(objective,quest.name,"Objective",true) end
    if region then
-    local approach=walkingApproach(context,region,objective.zone)
+    local approach=walkingApproach(context,region,objective.zone,x,z)
     if approach then return approach end
    end
    if inCity and city.Regions[objective.zone] then
@@ -267,7 +279,7 @@ return function(city:any,rules:any,waypoint:any,resolveMarker:any?)
    elseif inCity then
     return {name=node.Region,x=0,z=city.Regions[node.Region].CityGateZ,zone="City",kind="Portal",final=false}
    elseif region then
-    local approach=walkingApproach(context,region,node.Region)
+    local approach=walkingApproach(context,region,node.Region,x,z)
     if approach then return approach end
    end
   end
@@ -282,7 +294,7 @@ return function(city:any,rules:any,waypoint:any,resolveMarker:any?)
       elseif inCity then
        return {name=area.Id,x=0,z=city.Regions[area.Id].CityGateZ,zone="City",kind="Portal",final=false}
       elseif region then
-       local approach=walkingApproach(context,region,area.Id)
+       local approach=walkingApproach(context,region,area.Id,x,z)
        if approach then return approach end
       end
      end
@@ -290,8 +302,8 @@ return function(city:any,rules:any,waypoint:any,resolveMarker:any?)
    end
   end
   if region then
-   if region=="Ironveil" then
-    local approach=walkingApproach(context,"Ironveil","Greenwood")
+   if region=="Ironveil" or region=="Ashen" then
+    local approach=walkingApproach(context,region,if region=="Ashen" then "Ironveil" else "Greenwood",x,z)
     if approach then return approach end
    end
    local landing=city.Destinations[region]
@@ -385,7 +397,7 @@ return function(city:any,rules:any,waypoint:any,resolveMarker:any?)
   end
   -- A streamed endpoint is ordinary approach guidance, not transit admission.
   if target and walking and target.kind=="Portal" then
-   local approach=walkingApproach(context,target.zone,if target.name=="Central City" then "City" else target.name)
+   local approach=walkingApproach(context,target.zone,if target.name=="Central City" then "City" else target.name,x,z)
    if approach then
     target=table.clone(target);target.x=approach.x;target.y=approach.y;target.z=approach.z
     target.kind="Walk";target.final=false;target.stepLabel="Reach the walking path"

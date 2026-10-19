@@ -4,6 +4,7 @@ local Walking = {}
 local DEFINITIONS:any = {
  city_greenwood_west={model="CityGreenwoodCorridor",fromZone="City",toZone="Greenwood"},
  greenwood_ironveil_south={model="GreenwoodIronveilCorridor",fromZone="Greenwood",toZone="Ironveil"},
+ ironveil_ashen_south={model="IronveilAshenCorridor",fromZone="Ironveil",toZone="Ashen"},
 }
 local function finite(n:any):boolean
  return type(n)=="number" and n==n and math.abs(n)<1000000

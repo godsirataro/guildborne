@@ -95,4 +95,53 @@ return function(test:any,eq:any)
   c=second();c.walking.nextPoint.y=0/0;eq(Route(chapter2,{Journal={}},300,1600,c),nil)
   c=second();eq(Route({kind="Campaign",objective="unknown",name="Unknown"},{Journal={}},300,1600,c),nil)
  end)
+
+ local function third():any
+  local c=second();c.walking.present=false
+  local r={routeId="ironveil_ashen_south",fromZone="Ironveil",toZone="Ashen",points={{x=610,y=2.1,z=1505},{x=900,y=2.1,z=1505}}}
+  c.walking.routes[r.routeId]=r;c.walking.route=r;c.walking.transit={routeId=r.routeId,fromZone="Ironveil",toZone="Ashen"}
+  c.walking.nextPoint={x=750,y=2.1,z=1505};return c
+ end
+ local chapter3={kind="Campaign",objective="follow_ashen_supplies",name="Ashen supplies"}
+ test("third road presents Chapter03 and tower approaches and Chapter02 return",function()
+  for _,objective in ipairs({"follow_ashen_supplies","reach_tower_checkpoint_five"})do
+   local c=third();local r=Route({kind="Campaign",objective=objective,name="Ashen"},{Journal={}},500,1505,c)
+   eq(r.kind,"Walk");eq(r.zone,"Ironveil");eq(r.name,"Ashen");eq(r.x,610);eq(r.final,false)
+  end
+  local returns:{any}={chapter2,{kind="Campaign",focus="UpgradeGuildHall",name="Hall"}}
+  for _,quest in ipairs(returns)do
+   local r=Route(quest,{Journal={}},1000,1505,third())
+   eq(r.kind,"Walk");eq(r.zone,"Ashen");eq(r.name,"Ironveil");eq(r.x,900);eq(r.final,false)
+  end
+ end)
+ test("third road rejects private floors unknown heights and low Ashen annex approaches",function()
+  for _,height in ipairs({0,36,100,0/0,math.huge})do
+   local c=third();c.playerY=height
+   eq(Route(chapter3,{Journal={}},500,1505,c).kind,"Portal")
+   eq(Route(chapter2,{Journal={}},1000,1505,c).kind,"Portal")
+  end
+  local c=third();c.playerY=nil;eq(Route(chapter3,{Journal={}},500,1505,c).kind,"Portal")
+  c=third();eq(City.region(2000,1400),"Ashen")
+  eq(Route(chapter2,{Journal={}},2000,1400,c).kind,"Portal")
+  c=third();c.walking.routes.ironveil_ashen_south=nil
+  eq(Route(chapter3,{Journal={}},500,1505,c).name,"Central City")
+ end)
+ test("third transit uses only exact server direction and clears missing route",function()
+  local c=third();c.walking.present=true
+  for _,pair in ipairs({{"Ironveil","Ashen"},{"Ashen","Ironveil"}})do
+   c.walking.transit.fromZone=pair[1];c.walking.transit.toZone=pair[2]
+   local r=Route(chapter3,{Journal={}},750,1505,c)
+   eq(r.kind,"Walk");eq(r.destinationName,pair[2]);eq(r.x,750);eq(r.final,false)
+  end
+  c.walking.transit.routeId="greenwood_ironveil_south";eq(Route(chapter3,{Journal={}},750,1505,c),nil)
+  c=third();c.walking.present=true;c.walking.routes.ironveil_ashen_south=nil
+  eq(Route(chapter3,{Journal={}},750,1505,c),nil)
+  eq(Route({kind="Campaign",ready=true,name="Claim"},{Journal={}},750,1505,c).kind,"Instruction")
+ end)
+ test("owned Ashen court exit keeps priority over third road Hall return",function()
+  local c=third();c.playerY=100;c.ashen={ownerId=7,playerY=100,floor={x=1000,y=95,z=1400,width=100,depth=100},anchors={CourtExit={x=1000,y=100,z=1405}}}
+  local r=Route({kind="Campaign",focus="UpgradeGuildHall",name="Hall"},{Journal={}},1000,1400,c)
+  eq(r.kind,"Portal");eq(r.x,1000);eq(r.y,100);eq(r.z,1405)
+ end)
+
 end

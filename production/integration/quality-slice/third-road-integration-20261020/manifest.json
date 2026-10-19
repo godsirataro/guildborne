@@ -1,0 +1,40 @@
+{
+  "schemaVersion": 1,
+  "files": [
+    {
+      "path": ".gitattributes",
+      "bytes": 58,
+      "sha256": "09518f741b318afc3a3cee29798b548a273535adf2cc19aa53e98a221f0f8bbb"
+    },
+    {
+      "path": "README.md",
+      "bytes": 2652,
+      "sha256": "fdef988e6dc9c79d6fb4f7f3d7843e582e7ff1ac5b766277a78c75bddc0e1be0"
+    },
+    {
+      "path": "source-hashes.json",
+      "bytes": 2638,
+      "sha256": "1129fdcbb9bfb3c408686f81ff204861cf103a0cdcd685875f7b978e8e42d6ab"
+    },
+    {
+      "path": "third-road-integration-baseline.stderr.txt",
+      "bytes": 3041,
+      "sha256": "8241b6055c028003e855e089c64c1c06b8b1c399cace81a08fa82f13a7a8cc49"
+    },
+    {
+      "path": "third-road-integration-baseline.stdout.txt",
+      "bytes": 75133,
+      "sha256": "be95980c3a8597710010ef11c055ee06c3d501a94db7e0c72ce31b5d3b0a3481"
+    },
+    {
+      "path": "third-road-integration-baseline2.stderr.txt",
+      "bytes": 2003,
+      "sha256": "2b278c05bca6d558b55ee9abc48e115dd275824d5dddb93ddbdbcdeea7ac29ae"
+    },
+    {
+      "path": "third-road-integration-baseline2.stdout.txt",
+      "bytes": 76266,
+      "sha256": "192fd249448cb7211989d3fa0b665dae5fc59f8ea37fd5bce2e492d7c753f516"
+    }
+  ]
+}

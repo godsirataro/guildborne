@@ -6,9 +6,9 @@ root = Path(__file__).resolve().parents[3]
 source = (root / 'src/server/Services/WorldService.luau').read_text(encoding='utf-8-sig')
 block = source.split('-- BEGIN REVIEWED WALKING INITIALIZER', 1)[1].split('-- END REVIEWED WALKING INITIALIZER', 1)[0]
 cases = r'''
-local function check(mode)
+local function check(mode,full)
     local folder={};local walking=nil
-    local walkingPolicy={Session={},Gate={},Notify={}}
+    local walkingPolicy={Session={},Gate={},Notify={},FullConnectedWorld=full}
     local made,destroyed=0,0
     local wallDetached=false
     local quality={}
@@ -26,21 +26,33 @@ local function check(mode)
         if mode=="second-error" then error("second construction failed") end
         return descriptor("greenwood_ironveil_south")
     end
+    quality.buildIronveilAshenCorridor=function()
+        assert(full==true,"Third builder called without exact opt-in")
+        if mode=="third-error" then error("third construction failed") end
+        local route=descriptor("ironveil_ashen_south")
+        if mode=="third-not-ready" then route.isReady=function()return false end end
+        if mode=="third-wrong-parent" then route.geometry.IsDescendantOf=function()return false end end
+        return route
+    end
     quality.destroy=function() destroyed+=1;wallDetached=false end
     local ok,problem=pcall(function()
 __ACTUAL_BLOCK__
     end)
     if mode=="success" then
-        assert(ok and destroyed==0 and made==2 and wallDetached)
-        assert(#walking.Routes==2 and walking.Routes[2].id=="greenwood_ironveil_south")
+        local expected=if full==true then 3 else 2
+        assert(ok and destroyed==0 and made==expected and wallDetached)
+        assert(#walking.Routes==expected and walking.Routes[2].id=="greenwood_ironveil_south")
+        if full==true then assert(walking.Routes[3].id=="ironveil_ashen_south") end
         assert(walking.Session==walkingPolicy.Session and walking.Gate==walkingPolicy.Gate and walking.Notify==walkingPolicy.Notify)
     else
         assert(not ok and destroyed==1 and not wallDetached and walking==nil,mode)
         assert(type(problem)=="string" and #problem>0)
     end
-    print("PASS actual WorldService initializer",mode)
+    print("PASS actual WorldService initializer",mode,tostring(full))
 end
-for _,mode in ipairs({"success","first-error","second-error","not-ready","wrong-parent"}) do check(mode) end
+for _,mode in ipairs({"success","first-error","second-error","not-ready","wrong-parent"}) do check(mode);check(mode,true) end
+for _,flag in ipairs({false,"true",1}) do check("success",flag) end
+for _,mode in ipairs({"third-error","third-not-ready","third-wrong-parent"}) do check(mode,true) end
 '''
 out = root / 'build/walking-initializer-check.luau'
 out.write_text(cases.replace('__ACTUAL_BLOCK__', block), encoding='utf-8')

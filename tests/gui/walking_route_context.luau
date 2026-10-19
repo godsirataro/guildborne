@@ -169,4 +169,34 @@ test("duplicate node folders and second route streaming disappearance rejected",
  local read=W.read(world,char);assert(read.transit and not read.route and read.routes.city_greenwood_west)
 end)
 
+
+local function threeRoutes(): (any,any,any,any)
+ local world,char=twoRoutes();local _,_,third,folder=fixture()
+ third.Name="IronveilAshenCorridor";third.attrs.RouteId="ironveil_ashen_south";third.attrs.FromZone="Ironveil";third.attrs.ToZone="Ashen"
+ table.insert(world.children,third);char.attrs.WalkingRouteContext="ironveil_ashen_south|Ironveil|Ashen"
+ return world,char,third,folder
+end
+test("third identity selects exact server context and both directions",function()
+ local world,char=threeRoutes();local read=W.read(world,char)
+ assert(read.routes.city_greenwood_west and read.routes.greenwood_ironveil_south and read.route==read.routes.ironveil_ashen_south)
+ for _,pair in ipairs({{"Ironveil","Ashen"},{"Ashen","Ironveil"}})do
+  char.attrs.WalkingRouteContext="ironveil_ashen_south|"..pair[1].."|"..pair[2]
+  read=W.read(world,char);assert(read.route and W.next(read.route,read.transit,0,4,30))
+ end
+ char.attrs.WalkingRouteContext="ironveil_ashen_south|Greenwood|Ashen";assert(not W.read(world,char).transit)
+ char.attrs.WalkingRouteContext=nil;assert(not W.read(world,char).route)
+end)
+test("third duplicate prefix metadata and streamed disappearance fail closed",function()
+ for _,mode in ipairs({"duplicate","prefix","metadata","missing"})do
+  local world,char,third,folder=threeRoutes()
+  local city={contains=function()return false end,region=function(x:number,z:number)return if x==0 and z==0 then "Ironveil" elseif x==-100 and z==200 then "Ashen" else nil end}
+  assert(W.read(world,char,city).route)
+  if mode=="duplicate" then table.insert(world.children,third)
+  elseif mode=="prefix" then table.remove(folder.children,4)
+  elseif mode=="metadata" then third.attrs.ToZone="Greenwood"
+  else table.remove(world.children,3)end
+  local read=W.read(world,char,city);assert(read.transit and not read.route and not read.routes.ironveil_ashen_south)
+ end
+end)
+
 end
