@@ -76,6 +76,31 @@
       54,
       67,
       84
+    ],
+    "rockLight": [
+      149,
+      161,
+      166
+    ],
+    "rockShade": [
+      83,
+      99,
+      112
+    ],
+    "ironVein": [
+      171,
+      181,
+      186
+    ],
+    "cutWood": [
+      180,
+      139,
+      88
+    ],
+    "leafLight": [
+      153,
+      185,
+      96
     ]
   },
   "assets": [
@@ -4466,61 +4491,103 @@
       "id": "stone",
       "parts": [
         {
-          "name": "Rock",
+          "name": "RockCore",
           "size": [
-            1.3,
-            1,
-            0.95
+            1.12,
+            0.64,
+            0.84
           ],
           "position": [
             0,
-            0,
+            -0.18,
             0
           ],
           "rotation": [
             0,
             0,
-            15
+            -8
           ],
           "color": "stone"
         },
         {
-          "name": "Rock",
+          "name": "RockCrown",
           "size": [
-            0.8,
-            0.7,
-            0.8
+            1.16,
+            0.65,
+            0.88
           ],
           "position": [
-            0.65,
-            -0.2,
-            0.1
+            -0.07,
+            0.42,
+            0.03
           ],
           "rotation": [
             0,
-            0,
-            -12
+            24,
+            -8
           ],
-          "color": "stone"
+          "color": "rockLight",
+          "shape": "Wedge"
         },
         {
-          "name": "Rock",
+          "name": "RockShoulder",
           "size": [
-            0.7,
-            0.65,
-            0.65
+            0.78,
+            0.87,
+            0.86
           ],
           "position": [
-            -0.7,
-            -0.3,
-            0.2
+            0.54,
+            -0.02,
+            0.04
           ],
           "rotation": [
             0,
             0,
-            30
+            -90
           ],
-          "color": "stone"
+          "color": "rockShade",
+          "shape": "Wedge"
+        },
+        {
+          "name": "RockFront",
+          "size": [
+            0.95,
+            0.59,
+            0.43
+          ],
+          "position": [
+            -0.17,
+            -0.13,
+            -0.51
+          ],
+          "rotation": [
+            0,
+            180,
+            14
+          ],
+          "color": "stone",
+          "shape": "Wedge"
+        },
+        {
+          "name": "RockChip",
+          "size": [
+            0.62,
+            0.47,
+            0.62
+          ],
+          "position": [
+            -0.72,
+            -0.37,
+            0.04
+          ],
+          "rotation": [
+            0,
+            -28,
+            18
+          ],
+          "color": "rockShade",
+          "shape": "Wedge"
         }
       ]
     },
@@ -4528,80 +4595,220 @@
       "id": "iron_ore",
       "parts": [
         {
-          "name": "Rock",
+          "name": "RockCore",
           "size": [
-            1.5,
-            1.1,
-            1.05
+            1.12,
+            0.64,
+            0.84
           ],
           "position": [
             0,
-            0,
+            -0.18,
             0
           ],
           "rotation": [
             0,
             0,
+            -8
+          ],
+          "color": "stone"
+        },
+        {
+          "name": "RockCrown",
+          "size": [
+            1.16,
+            0.65,
+            0.88
+          ],
+          "position": [
+            -0.07,
+            0.42,
+            0.03
+          ],
+          "rotation": [
+            0,
+            24,
+            -8
+          ],
+          "color": "rockLight",
+          "shape": "Wedge"
+        },
+        {
+          "name": "RockShoulder",
+          "size": [
+            0.78,
+            0.87,
+            0.86
+          ],
+          "position": [
+            0.54,
+            -0.02,
+            0.04
+          ],
+          "rotation": [
+            0,
+            0,
+            -90
+          ],
+          "color": "rockShade",
+          "shape": "Wedge"
+        },
+        {
+          "name": "RockFront",
+          "size": [
+            0.95,
+            0.59,
+            0.43
+          ],
+          "position": [
+            -0.17,
+            -0.13,
+            -0.51
+          ],
+          "rotation": [
+            0,
+            180,
             14
           ],
-          "color": "dark"
+          "color": "stone",
+          "shape": "Wedge"
         },
         {
-          "name": "OreSeam",
+          "name": "RockChip",
           "size": [
-            0.35,
-            0.58,
-            0.4
+            0.62,
+            0.47,
+            0.62
           ],
           "position": [
-            -0.5,
+            -0.72,
+            -0.37,
+            0.04
+          ],
+          "rotation": [
+            0,
+            -28,
+            18
+          ],
+          "color": "rockShade",
+          "shape": "Wedge"
+        },
+        {
+          "name": "IronVein",
+          "size": [
+            0.08,
+            0.56,
+            0.29
+          ],
+          "position": [
+            -0.39,
             0.2,
-            -0.4
+            -0.64
           ],
           "rotation": [
             0,
-            0,
-            -20.0
-          ],
-          "color": "copper"
-        },
-        {
-          "name": "OreSeam",
-          "size": [
-            0.35,
-            0.58,
-            0.4
-          ],
-          "position": [
-            0,
-            0.48,
-            -0.4
-          ],
-          "rotation": [
-            0,
-            0,
+            90,
             0
           ],
-          "color": "copper"
+          "color": "ironVein",
+          "shape": "Wedge"
         },
         {
-          "name": "OreSeam",
+          "name": "IronGlint",
           "size": [
-            0.35,
-            0.58,
-            0.4
+            0.08,
+            0.36,
+            0.05
           ],
           "position": [
-            0.48,
-            -0.1,
-            -0.4
+            -0.44,
+            0.24000000000000002,
+            -0.79
           ],
           "rotation": [
             0,
             0,
-            19.2
+            -28
           ],
-          "color": "copper"
+          "color": "steel"
+        },
+        {
+          "name": "IronVein",
+          "size": [
+            0.08,
+            0.56,
+            0.29
+          ],
+          "position": [
+            0.1,
+            0.04,
+            -0.64
+          ],
+          "rotation": [
+            0,
+            90,
+            0
+          ],
+          "color": "ironVein",
+          "shape": "Wedge"
+        },
+        {
+          "name": "IronGlint",
+          "size": [
+            0.08,
+            0.36,
+            0.05
+          ],
+          "position": [
+            0.05,
+            0.08,
+            -0.79
+          ],
+          "rotation": [
+            0,
+            0,
+            22
+          ],
+          "color": "steel"
+        },
+        {
+          "name": "IronVein",
+          "size": [
+            0.08,
+            0.56,
+            0.29
+          ],
+          "position": [
+            0.47,
+            -0.23,
+            -0.64
+          ],
+          "rotation": [
+            0,
+            90,
+            0
+          ],
+          "color": "ironVein",
+          "shape": "Wedge"
+        },
+        {
+          "name": "IronGlint",
+          "size": [
+            0.08,
+            0.36,
+            0.05
+          ],
+          "position": [
+            0.42,
+            -0.19,
+            -0.79
+          ],
+          "rotation": [
+            0,
+            0,
+            -15
+          ],
+          "color": "steel"
         }
       ]
     },
@@ -4609,15 +4816,34 @@
       "id": "iron_ingot",
       "parts": [
         {
-          "name": "Ingot",
+          "name": "IngotBase",
           "size": [
-            1.8,
-            0.55,
-            0.8
+            1.85,
+            0.24,
+            0.92
           ],
           "position": [
             0,
+            -0.27,
+            0
+          ],
+          "rotation": [
             0,
+            0,
+            0
+          ],
+          "color": "rockShade"
+        },
+        {
+          "name": "IngotCrown",
+          "size": [
+            1.45,
+            0.42,
+            0.62
+          ],
+          "position": [
+            0,
+            0.06,
             0
           ],
           "rotation": [
@@ -4628,15 +4854,95 @@
           "color": "steel"
         },
         {
-          "name": "TopBevel",
+          "name": "SlopedEnd",
           "size": [
-            1.55,
-            0.15,
-            0.65
+            0.92,
+            0.42,
+            0.2
+          ],
+          "position": [
+            -0.825,
+            0.06,
+            0
+          ],
+          "rotation": [
+            0,
+            90,
+            0
+          ],
+          "color": "ironVein",
+          "shape": "Wedge"
+        },
+        {
+          "name": "SlopedSide",
+          "size": [
+            1.45,
+            0.42,
+            0.15
           ],
           "position": [
             0,
-            0.35,
+            0.06,
+            -0.385
+          ],
+          "rotation": [
+            0,
+            0,
+            0
+          ],
+          "color": "ironVein",
+          "shape": "Wedge"
+        },
+        {
+          "name": "SlopedEnd",
+          "size": [
+            0.92,
+            0.42,
+            0.2
+          ],
+          "position": [
+            0.825,
+            0.06,
+            0
+          ],
+          "rotation": [
+            0,
+            -90,
+            0
+          ],
+          "color": "ironVein",
+          "shape": "Wedge"
+        },
+        {
+          "name": "SlopedSide",
+          "size": [
+            1.45,
+            0.42,
+            0.15
+          ],
+          "position": [
+            0,
+            0.06,
+            0.385
+          ],
+          "rotation": [
+            0,
+            180,
+            0
+          ],
+          "color": "ironVein",
+          "shape": "Wedge"
+        },
+        {
+          "name": "MintMark",
+          "size": [
+            0.28,
+            0.025,
+            0.22
+          ],
+          "position": [
+            0.15,
+            0.283,
             0
           ],
           "rotation": [
@@ -4644,7 +4950,7 @@
             0,
             0
           ],
-          "color": "steel"
+          "color": "rockShade"
         }
       ]
     },
@@ -4652,135 +4958,306 @@
       "id": "timber",
       "parts": [
         {
-          "name": "Log",
+          "name": "Bark",
           "size": [
-            0.63,
-            0.63,
-            1.7
+            0.55,
+            0.55,
+            1.52
           ],
           "position": [
-            -0.35,
-            -0.2,
+            -0.37,
+            -0.27,
             0
           ],
           "rotation": [
             0,
             0,
-            10
+            0
           ],
           "color": "wood"
         },
         {
           "name": "CutEnd",
           "size": [
-            0.48,
-            0.48,
-            0.03
+            0.45,
+            0.45,
+            0.025
           ],
           "position": [
-            -0.35,
-            -0.2,
-            -0.87
+            -0.37,
+            -0.27,
+            -0.775
           ],
           "rotation": [
             0,
             0,
-            10
+            0
           ],
-          "color": "ivory"
+          "color": "cutWood"
         },
         {
-          "name": "Log",
+          "name": "Bark",
           "size": [
-            0.63,
-            0.63,
-            1.7
+            0.55,
+            0.55,
+            1.52
           ],
           "position": [
-            0.35,
-            -0.2,
+            -0.37,
+            -0.27,
             0
           ],
           "rotation": [
             0,
             0,
-            10
+            45
           ],
           "color": "wood"
         },
         {
           "name": "CutEnd",
           "size": [
-            0.48,
-            0.48,
-            0.03
+            0.45,
+            0.45,
+            0.025
           ],
           "position": [
-            0.35,
-            -0.2,
-            -0.87
+            -0.37,
+            -0.27,
+            -0.775
           ],
           "rotation": [
             0,
             0,
-            10
+            45
           ],
-          "color": "ivory"
+          "color": "cutWood"
         },
         {
-          "name": "Log",
+          "name": "Heartwood",
           "size": [
-            0.63,
-            0.63,
-            1.7
+            0.15,
+            0.15,
+            0.03
           ],
           "position": [
+            -0.37,
+            -0.27,
+            -0.795
+          ],
+          "rotation": [
             0,
-            0.4,
+            0,
+            45
+          ],
+          "color": "wood"
+        },
+        {
+          "name": "Bark",
+          "size": [
+            0.55,
+            0.55,
+            1.52
+          ],
+          "position": [
+            0.37,
+            -0.27,
             0
           ],
           "rotation": [
             0,
             0,
-            10
+            0
           ],
           "color": "wood"
         },
         {
           "name": "CutEnd",
           "size": [
-            0.48,
-            0.48,
+            0.45,
+            0.45,
+            0.025
+          ],
+          "position": [
+            0.37,
+            -0.27,
+            -0.775
+          ],
+          "rotation": [
+            0,
+            0,
+            0
+          ],
+          "color": "cutWood"
+        },
+        {
+          "name": "Bark",
+          "size": [
+            0.55,
+            0.55,
+            1.52
+          ],
+          "position": [
+            0.37,
+            -0.27,
+            0
+          ],
+          "rotation": [
+            0,
+            0,
+            45
+          ],
+          "color": "wood"
+        },
+        {
+          "name": "CutEnd",
+          "size": [
+            0.45,
+            0.45,
+            0.025
+          ],
+          "position": [
+            0.37,
+            -0.27,
+            -0.775
+          ],
+          "rotation": [
+            0,
+            0,
+            45
+          ],
+          "color": "cutWood"
+        },
+        {
+          "name": "Heartwood",
+          "size": [
+            0.15,
+            0.15,
+            0.03
+          ],
+          "position": [
+            0.37,
+            -0.27,
+            -0.795
+          ],
+          "rotation": [
+            0,
+            0,
+            45
+          ],
+          "color": "wood"
+        },
+        {
+          "name": "Bark",
+          "size": [
+            0.55,
+            0.55,
+            1.52
+          ],
+          "position": [
+            0,
+            0.39,
+            0
+          ],
+          "rotation": [
+            0,
+            0,
+            0
+          ],
+          "color": "wood"
+        },
+        {
+          "name": "CutEnd",
+          "size": [
+            0.45,
+            0.45,
+            0.025
+          ],
+          "position": [
+            0,
+            0.39,
+            -0.775
+          ],
+          "rotation": [
+            0,
+            0,
+            0
+          ],
+          "color": "cutWood"
+        },
+        {
+          "name": "Bark",
+          "size": [
+            0.55,
+            0.55,
+            1.52
+          ],
+          "position": [
+            0,
+            0.39,
+            0
+          ],
+          "rotation": [
+            0,
+            0,
+            45
+          ],
+          "color": "wood"
+        },
+        {
+          "name": "CutEnd",
+          "size": [
+            0.45,
+            0.45,
+            0.025
+          ],
+          "position": [
+            0,
+            0.39,
+            -0.775
+          ],
+          "rotation": [
+            0,
+            0,
+            45
+          ],
+          "color": "cutWood"
+        },
+        {
+          "name": "Heartwood",
+          "size": [
+            0.15,
+            0.15,
             0.03
           ],
           "position": [
             0,
-            0.4,
-            -0.87
+            0.39,
+            -0.795
           ],
           "rotation": [
             0,
             0,
-            10
+            45
           ],
-          "color": "ivory"
+          "color": "wood"
         },
         {
-          "name": "Binding",
+          "name": "BundleTie",
           "size": [
-            1.35,
-            0.13,
-            1.85
+            1.38,
+            0.12,
+            0.16
           ],
           "position": [
             0,
-            0,
-            0
+            -0.05,
+            -0.22
           ],
           "rotation": [
             0,
             0,
-            0
+            -8
           ],
           "color": "leather"
         }
@@ -4792,133 +5269,278 @@
         {
           "name": "Stem",
           "size": [
-            0.12,
+            0.075,
             1.65,
-            0.12
+            0.075
           ],
           "position": [
             0,
-            0,
+            -0.04,
             0
           ],
           "rotation": [
             0,
             0,
-            -10
+            -7
           ],
           "color": "leaf"
         },
         {
-          "name": "Leaf",
+          "name": "LeafFold",
           "size": [
-            0.65,
-            0.27,
-            0.2
+            0.065,
+            0.36,
+            0.23
           ],
           "position": [
-            -0.28,
-            -0.4,
-            -0.05
+            -0.34500000000000003,
+            -0.53,
+            -0.055
+          ],
+          "rotation": [
+            180,
+            90,
+            0
+          ],
+          "color": "leafLight",
+          "shape": "Wedge"
+        },
+        {
+          "name": "LeafFold",
+          "size": [
+            0.065,
+            0.36,
+            0.23
+          ],
+          "position": [
+            -0.34500000000000003,
+            -0.16999999999999998,
+            -0.055
           ],
           "rotation": [
             0,
-            0,
-            -35
+            90,
+            0
           ],
-          "color": "leaf"
+          "color": "leafLight",
+          "shape": "Wedge"
         },
         {
-          "name": "Leaf",
+          "name": "LeafFold",
           "size": [
-            0.65,
-            0.27,
-            0.2
+            0.065,
+            0.36,
+            0.23
           ],
           "position": [
-            0.28,
-            -0.11000000000000004,
-            -0.05
+            -0.115,
+            -0.53,
+            -0.055
+          ],
+          "rotation": [
+            180,
+            -90,
+            0
+          ],
+          "color": "leaf",
+          "shape": "Wedge"
+        },
+        {
+          "name": "LeafFold",
+          "size": [
+            0.065,
+            0.36,
+            0.23
+          ],
+          "position": [
+            -0.115,
+            -0.16999999999999998,
+            -0.055
           ],
           "rotation": [
             0,
-            0,
-            35
+            -90,
+            0
           ],
-          "color": "leaf"
+          "color": "leaf",
+          "shape": "Wedge"
         },
         {
-          "name": "Leaf",
+          "name": "LeafFold",
           "size": [
-            0.65,
-            0.27,
-            0.2
+            0.065,
+            0.36,
+            0.23
           ],
           "position": [
-            -0.28,
-            0.17999999999999994,
-            -0.05
+            0.14500000000000002,
+            -0.13,
+            -0.055
+          ],
+          "rotation": [
+            180,
+            90,
+            0
+          ],
+          "color": "leafLight",
+          "shape": "Wedge"
+        },
+        {
+          "name": "LeafFold",
+          "size": [
+            0.065,
+            0.36,
+            0.23
+          ],
+          "position": [
+            0.14500000000000002,
+            0.22999999999999998,
+            -0.055
           ],
           "rotation": [
             0,
-            0,
-            -35
+            90,
+            0
           ],
-          "color": "leaf"
+          "color": "leafLight",
+          "shape": "Wedge"
         },
         {
-          "name": "Leaf",
+          "name": "LeafFold",
           "size": [
-            0.65,
-            0.27,
-            0.2
+            0.065,
+            0.36,
+            0.23
           ],
           "position": [
-            0.28,
-            0.46999999999999986,
-            -0.05
+            0.375,
+            -0.13,
+            -0.055
+          ],
+          "rotation": [
+            180,
+            -90,
+            0
+          ],
+          "color": "leaf",
+          "shape": "Wedge"
+        },
+        {
+          "name": "LeafFold",
+          "size": [
+            0.065,
+            0.36,
+            0.23
+          ],
+          "position": [
+            0.375,
+            0.22999999999999998,
+            -0.055
           ],
           "rotation": [
             0,
-            0,
-            35
+            -90,
+            0
           ],
-          "color": "leaf"
+          "color": "leaf",
+          "shape": "Wedge"
         },
         {
-          "name": "Leaf",
+          "name": "LeafFold",
           "size": [
-            0.65,
-            0.27,
-            0.2
+            0.065,
+            0.36,
+            0.23
           ],
           "position": [
-            -0.28,
-            0.7599999999999999,
-            -0.05
+            -0.255,
+            0.3,
+            -0.055
+          ],
+          "rotation": [
+            180,
+            90,
+            0
+          ],
+          "color": "leafLight",
+          "shape": "Wedge"
+        },
+        {
+          "name": "LeafFold",
+          "size": [
+            0.065,
+            0.36,
+            0.23
+          ],
+          "position": [
+            -0.255,
+            0.6599999999999999,
+            -0.055
           ],
           "rotation": [
             0,
-            0,
-            -35
+            90,
+            0
           ],
-          "color": "leaf"
+          "color": "leafLight",
+          "shape": "Wedge"
         },
         {
-          "name": "Flower",
+          "name": "LeafFold",
           "size": [
-            0.35,
-            0.35,
-            0.27
+            0.065,
+            0.36,
+            0.23
           ],
           "position": [
-            0.13,
-            0.88,
+            -0.02500000000000001,
+            0.3,
+            -0.055
+          ],
+          "rotation": [
+            180,
+            -90,
+            0
+          ],
+          "color": "leaf",
+          "shape": "Wedge"
+        },
+        {
+          "name": "LeafFold",
+          "size": [
+            0.065,
+            0.36,
+            0.23
+          ],
+          "position": [
+            -0.02500000000000001,
+            0.6599999999999999,
+            -0.055
+          ],
+          "rotation": [
+            0,
+            -90,
+            0
+          ],
+          "color": "leaf",
+          "shape": "Wedge"
+        },
+        {
+          "name": "Bud",
+          "size": [
+            0.2,
+            0.24,
+            0.18
+          ],
+          "position": [
+            0.12,
+            0.86,
             0
           ],
           "rotation": [
             0,
             0,
-            45
+            25
           ],
           "color": "ivory"
         }

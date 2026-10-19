@@ -1,0 +1,85 @@
+{
+  "status": "PASS",
+  "evidence": "LOCAL APPROXIMATION NOT STUDIO",
+  "baseline": "6c5be3b",
+  "sourceSha256": "300ffffd2e3d2ae2f620112aeb74403013e7ced787d0c91d77cd17614039dae5",
+  "unchangedDefinitionsAndResolvedColors": 25,
+  "constructorUnchanged": true,
+  "frustumCheckedItems": 30,
+  "camera": {
+    "pixels": [
+      80,
+      80
+    ],
+    "verticalFov": 35,
+    "direction": [
+      1,
+      0.4,
+      -3
+    ],
+    "sphereFitMargin": 1.12
+  },
+  "limitations": "CPU rasterized source geometry with approximate lighting; not Roblox rendering, device QA, asset imports or human approval.",
+  "materials": {
+    "stone": {
+      "before": {
+        "parts": 3,
+        "maximumFrustumFraction": 0.7231692551749279,
+        "coveredPixels": 1263
+      },
+      "after": {
+        "parts": 5,
+        "maximumFrustumFraction": 0.6626238390236278,
+        "coveredPixels": 1166
+      }
+    },
+    "iron_ore": {
+      "before": {
+        "parts": 4,
+        "maximumFrustumFraction": 0.6850250085207572,
+        "coveredPixels": 1637
+      },
+      "after": {
+        "parts": 11,
+        "maximumFrustumFraction": 0.656310888278994,
+        "coveredPixels": 1124
+      }
+    },
+    "iron_ingot": {
+      "before": {
+        "parts": 2,
+        "maximumFrustumFraction": 0.8238721153150327,
+        "coveredPixels": 1623
+      },
+      "after": {
+        "parts": 7,
+        "maximumFrustumFraction": 0.8380737769359522,
+        "coveredPixels": 1471
+      }
+    },
+    "timber": {
+      "before": {
+        "parts": 7,
+        "maximumFrustumFraction": 0.6794014745945927,
+        "coveredPixels": 1423
+      },
+      "after": {
+        "parts": 16,
+        "maximumFrustumFraction": 0.6777488583900646,
+        "coveredPixels": 1396
+      }
+    },
+    "herb": {
+      "before": {
+        "parts": 7,
+        "maximumFrustumFraction": 0.7397444167936853,
+        "coveredPixels": 1089
+      },
+      "after": {
+        "parts": 14,
+        "maximumFrustumFraction": 0.7871600570129061,
+        "coveredPixels": 745
+      }
+    }
+  }
+}

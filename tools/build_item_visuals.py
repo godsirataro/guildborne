@@ -55,19 +55,54 @@ for id,color,style in [('bronze_ring','copper','ring'),('vitality_charm','green'
         elif style=='ward':
             for side in (-1,1):box(p,'WardRune',[.11,.6,.08],[side*.15,.15,-.4],'ivory',side*20)
         else:box(p,'Highlight',[.13,.4,.05],[-.12,.25,-.43],'ivory',20)
-p=asset('stone')
-for size,pos,rot in [([1.3,1,.95],[0,0,0],15),([.8,.7,.8],[.65,-.2,.1],-12),([.7,.65,.65],[-.7,-.3,.2],30)]:box(p,'Rock',size,pos,'stone',rot)
-p=asset('iron_ore');box(p,'Rock',[1.5,1.1,1.05],[0,0,0],'dark',14)
-for x,y in [(-.5,.2),(0,.48),(.48,-.1)]:box(p,'OreSeam',[.35,.58,.4],[x,y,-.4],'copper',x*40)
-p=asset('iron_ingot');box(p,'Ingot',[1.8,.55,.8],[0,0,0],'steel');box(p,'TopBevel',[1.55,.15,.65],[0,.35,0],'steel')
+# Native-only material portrait revision. Existing palette entries and all other
+# item definitions remain unchanged; archived Blender exports predate this block.
+palette.update({'rockLight':[149,161,166],'rockShade':[83,99,112],
+                'ironVein':[171,181,186],'cutWood':[180,139,88],
+                'leafLight':[153,185,96]})
+def wedge(p,name,size,pos,color,rotation=(0,0,0)):
+    p.append({'name':name,'size':size,'position':pos,
+              'rotation':list(rotation),'color':color,'shape':'Wedge'})
+def rock(p,scale,offset):
+    # Broad slab with sloping shoulders, not a pile of equal-size cubes.
+    def v(values):return [value*scale for value in values]
+    def at(values):return [value*scale+origin for value,origin in zip(values,offset)]
+    box(p,'RockCore',v([1.12,.64,.84]),at([0,-.18,0]),'stone',-8)
+    wedge(p,'RockCrown',v([1.16,.65,.88]),at([-.07,.42,.03]),'rockLight',(0,24,-8))
+    wedge(p,'RockShoulder',v([.78,.87,.86]),at([.54,-.02,.04]),'rockShade',(0,0,-90))
+    wedge(p,'RockFront',v([.95,.59,.43]),at([-.17,-.13,-.51]),'stone',(0,180,14))
+    wedge(p,'RockChip',v([.62,.47,.62]),at([-.72,-.37,.04]),'rockShade',(0,-28,18))
+p=asset('stone');rock(p,1,[0,0,0])
+p=asset('iron_ore');rock(p,1,[0,0,0])
+for x,y,angle in [(-.39,.2,-28),(.1,.04,22),(.47,-.23,-15)]:
+    wedge(p,'IronVein',[.08,.56,.29],[x,y,-.64],'ironVein',(0,90,0))
+    box(p,'IronGlint',[.08,.36,.05],[x-.05,y+.04,-.79],'steel',angle)
+p=asset('iron_ingot')
+box(p,'IngotBase',[1.85,.24,.92],[0,-.27,0],'rockShade')
+box(p,'IngotCrown',[1.45,.42,.62],[0,.06,0],'steel')
+for side in (-1,1):
+    wedge(p,'SlopedEnd',[.92,.42,.2],[side*.825,.06,0],'ironVein',(0,-side*90,0))
+    wedge(p,'SlopedSide',[1.45,.42,.15],[0,.06,side*.385],'ironVein',(0,180 if side==1 else 0,0))
+box(p,'MintMark',[.28,.025,.22],[.15,.283,0],'rockShade',0)
 p=asset('timber')
-for x,y in [(-.35,-.2),(.35,-.2),(0,.4)]:
-    box(p,'Log',[.63,.63,1.7],[x,y,0],'wood',10);box(p,'CutEnd',[.48,.48,.03],[x,y,-.87],'ivory',10)
-box(p,'Binding',[1.35,.13,1.85],[0,0,0],'leather')
-p=asset('herb');box(p,'Stem',[.12,1.65,.12],[0,0,0],'leaf',-10)
-for i in range(5):
-    side=1 if i%2 else -1;box(p,'Leaf',[.65,.27,.2],[side*.28,-.4+i*.29,-.05],'leaf',side*35)
-box(p,'Flower',[.35,.35,.27],[.13,.88,0],'ivory',45)
+# Two overlapping square prisms form a faceted log/cut silhouette.
+for x,y in [(-.37,-.27),(.37,-.27),(0,.39)]:
+    for angle in (0,45):
+        box(p,'Bark',[.55,.55,1.52],[x,y,0],'wood',angle)
+        box(p,'CutEnd',[.45,.45,.025],[x,y,-.775],'cutWood',angle)
+    box(p,'Heartwood',[.15,.15,.03],[x,y,-.795],'wood',45)
+box(p,'BundleTie',[1.38,.12,.16],[0,-.05,-.22],'leather',-8)
+p=asset('herb')
+box(p,'Stem',[.075,1.65,.075],[0,-.04,0],'leaf',-7)
+# Four triangular quarters make a pointed leaf with a visible central fold.
+for x,y in [(-.23,-.35),(.26,.05),(-.14,.48)]:
+    for side in (-1,1):
+        for half in (-1,1):
+            wedge(p,'LeafFold',[.065,.36,.23],
+                  [x+side*.115,y+half*.18,-.055],
+                  'leafLight' if side==-1 else 'leaf',
+                  (180 if half==-1 else 0,-side*90,0))
+box(p,'Bud',[.2,.24,.18],[.12,.86,0],'ivory',25)
 assert len(assets)==30 and len({a['id'] for a in assets})==30
 assert all(0<len(a['parts'])<=16 for a in assets)
 (OUT/'kit.json').write_text(json.dumps({'schema':1,'units':'stud','palette':palette,'assets':assets},indent=2)+'\n',encoding='utf-8')

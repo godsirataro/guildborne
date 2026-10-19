@@ -1,5 +1,26 @@
 # Original inventory display kit
 
+## Native material portrait revision — 2026-10-20
+
+The generator, `kit.json`, and runtime `ItemVisuals.luau` now contain revised
+stone, iron ore, iron ingot, timber, and herb geometry (276 parts across 30 items).
+Rock facets, silver iron veins, sloped ingot shoulders, faceted timber ends and
+pointed folded leaves target the existing 80×80 Inventory camera. Only native
+Part/WedgePart shapes are used, at most 16 parts per item. The other 25 definitions,
+their resolved colors, the runtime constructor and wearable integration are unchanged.
+
+Local comparison evidence is generated directly from the source geometry by
+`production/ux/gameplay-quality/material_portraits_probe.py`. Its software camera
+approximation is not a Roblox Studio screenshot or acceptance result. Current
+Studio visual testing and physical-device testing remain pending.
+
+**Historical exports:** existing PNG, GLB, FBX, blend files, contact sheet and
+export reports below have NOT been regenerated for these five materials. Do not
+use their previous checks or part totals as validation of this revision. Runtime
+geometry remains available without an upload; no new asset IDs were assigned.
+
+## Historical export and integration evidence (before material revision)
+
 All30 current item IDs have original low-poly display geometry:11weapons,8armor pieces,6accessories and5materials. Total246native parts or2912mesh triangles. No statistics, ownership, price or reward changes are included.
 
 Each item has a512×512transparent RGBA icon, FBX and GLB. `Guildborne_Item_Kit.blend` contains an editable contact-sheet scene. `kit.json` is the shared Y-up/stud geometry source; individual export origins and sizes are preserved. These are display/prop meshes, not skinned wearable clothing or UGC-certified assets.
