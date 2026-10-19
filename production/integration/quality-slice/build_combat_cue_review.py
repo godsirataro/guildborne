@@ -14,11 +14,15 @@ runtime_source = runtime.read_text(encoding='utf-8-sig')
 assert 'StudioPersistence = "Memory"' in runtime_source or 'StudioPersistence="Memory"' in runtime_source
 probe_copy = out / 'CombatCueProbe.client.luau'
 probe_copy.write_bytes(probe.read_bytes())
-client = {
-    '$path': str(ROOT / 'src/client'),
-    'ClientBootstrap': {'$properties': {'Disabled': True}},
-    'Runtime': {'$path': str(runtime)},
-}
+client = {'$className': 'Folder', 'Runtime': {'$path': str(runtime)}}
+for entry in sorted((ROOT / 'src/client').iterdir()):
+    if entry.is_dir():
+        client[entry.name] = {'$path': str(entry)}
+    elif entry.suffix == '.luau':
+        name = entry.stem.removesuffix('.client').removesuffix('.server')
+        client[name] = {'$path': str(entry)}
+        if name == 'ClientBootstrap':
+            client[name]['$properties'] = {'Disabled': True}
 project = {'name': 'Guildborne_CombatCueReview', 'serveAddress': '127.0.0.1', 'tree': {
     '$className': 'DataModel',
     'ReplicatedStorage': {'$className': 'ReplicatedStorage',
