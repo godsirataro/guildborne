@@ -1,0 +1,144 @@
+[
+  {
+    "actor": "rukk",
+    "samples": 100,
+    "span": 50.52850914001465,
+    "activities": [
+      "Work",
+      "Social",
+      "Recover"
+    ],
+    "joints": {
+      "LeftLowerArm": 0,
+      "RightUpperArm": 0.36269129579886794,
+      "Head": 0.17054902901872993,
+      "UpperTorso": 0.014178993180394173,
+      "RightHand": 0.05865456257015467,
+      "RightFoot": 0,
+      "LeftUpperLeg": 0,
+      "LeftUpperArm": 0,
+      "RightLowerArm": 0.2618801351636648,
+      "LeftHand": 0,
+      "LowerTorso": 0,
+      "LeftFoot": 0,
+      "RightLowerLeg": 0,
+      "RightUpperLeg": 0,
+      "LeftLowerLeg": 0
+    },
+    "parts": {
+      "Workspace.GuildborneWorld.City.FriendlyOrcs.rukk.HammerHandle": 0.839599609375,
+      "Workspace.GuildborneWorld.City.FriendlyOrcs.rukk.Skeleton.Root": 0,
+      "Workspace.GuildborneWorld.City.FriendlyOrcs.rukk.HammerHead": 0.6307373046875,
+      "Workspace.GuildborneWorld.City.FriendlyOrcs.rukk.Skeleton.RightFoot": 0,
+      "Workspace.GuildborneWorld.City.FriendlyOrcs.rukk.Skeleton.LeftFoot": 0
+    },
+    "bindings": {}
+  },
+  {
+    "actor": "mogra",
+    "samples": 100,
+    "span": 50.680278062820435,
+    "activities": [
+      "Work",
+      "Social",
+      "Recover"
+    ],
+    "joints": {
+      "LeftLowerArm": 0.17891162645537406,
+      "LeftFoot": 0,
+      "Head": 0.27615647288621403,
+      "RightFoot": 0,
+      "UpperTorso": 0.03995061295790947,
+      "RightHand": 0,
+      "RightUpperArm": 0.17891162645537406,
+      "LeftUpperArm": 0.11963354058389086,
+      "RightLowerArm": 0,
+      "LeftHand": 0,
+      "RightUpperLeg": 0,
+      "LowerTorso": 0,
+      "RightLowerLeg": 0,
+      "LeftUpperLeg": 0,
+      "LeftLowerLeg": 0
+    },
+    "parts": {
+      "Workspace.GuildborneWorld.City.FriendlyOrcs.mogra.Satchel": 0,
+      "Workspace.GuildborneWorld.City.FriendlyOrcs.mogra.Skeleton.LeftFoot": 0,
+      "Workspace.GuildborneWorld.City.FriendlyOrcs.mogra.Skeleton.RightFoot": 0,
+      "Workspace.GuildborneWorld.City.FriendlyOrcs.mogra.Skeleton.Root": 0
+    },
+    "bindings": {}
+  },
+  {
+    "actor": "borga",
+    "samples": 100,
+    "span": 50.64188289642334,
+    "activities": [
+      "Social",
+      "Recover",
+      "Work"
+    ],
+    "joints": {
+      "LeftLowerArm": 0,
+      "LowerTorso": 0,
+      "Head": 0.19260521978139877,
+      "RightUpperArm": 0.3143256902694702,
+      "RightHand": 0.09975451976060867,
+      "RightUpperLeg": 0,
+      "LeftFoot": 0,
+      "LeftUpperArm": 0,
+      "RightLowerArm": 0.4481830894947052,
+      "LeftHand": 0,
+      "LeftUpperLeg": 0,
+      "UpperTorso": 0.039957642555236816,
+      "RightLowerLeg": 0,
+      "RightFoot": 0,
+      "LeftLowerLeg": 0
+    },
+    "parts": {
+      "Workspace.GuildborneWorld.City.FriendlyOrcs.borga.Skeleton.RightFoot": 0,
+      "Workspace.GuildborneWorld.City.FriendlyOrcs.borga.Skeleton.Root": 0,
+      "Workspace.GuildborneWorld.City.FriendlyOrcs.borga.MugRim": 0.75994873046875,
+      "Workspace.GuildborneWorld.City.FriendlyOrcs.borga.Skeleton.LeftFoot": 0,
+      "Workspace.GuildborneWorld.City.FriendlyOrcs.borga.Mug": 0.96185302734375
+    },
+    "bindings": {}
+  },
+  {
+    "actor": "ghar",
+    "samples": 100,
+    "span": 50.657646894454956,
+    "activities": [
+      "Work",
+      "Social",
+      "Recover"
+    ],
+    "joints": {
+      "LeftLowerArm": 0.2271176129579544,
+      "RightUpperArm": 0.07629808038473129,
+      "Head": 0.2832399643957615,
+      "LowerTorso": 0,
+      "RightHand": 0,
+      "LeftFoot": 0,
+      "RightUpperLeg": 0,
+      "LeftUpperArm": 0.30075976252555847,
+      "RightLowerArm": 0,
+      "LeftHand": 0,
+      "LeftUpperLeg": 0,
+      "UpperTorso": 0.038176871836185455,
+      "RightLowerLeg": 0,
+      "RightFoot": 0,
+      "LeftLowerLeg": 0
+    },
+    "parts": {
+      "Workspace.GuildborneWorld.City.FriendlyOrcs.ghar.Shield": 0.67041015625,
+      "Workspace.GuildborneWorld.City.FriendlyOrcs.ghar.Skeleton.RightFoot": 0,
+      "Workspace.GuildborneWorld.City.FriendlyOrcs.ghar.Skeleton.Root": 0,
+      "Workspace.GuildborneWorld.City.FriendlyOrcs.ghar.Skeleton.LeftFoot": 0,
+      "Workspace.GuildborneWorld.City.FriendlyOrcs.ghar.ShieldBand": 0.6868896484375
+    },
+    "bindings": {
+      "Shield": 0.0001220703125,
+      "ShieldBand": 0.000244140625
+    }
+  }
+]

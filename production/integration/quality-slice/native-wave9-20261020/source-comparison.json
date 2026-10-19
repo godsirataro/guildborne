@@ -1,0 +1,8 @@
+{
+  "expected": 435,
+  "actual": 435,
+  "mismatches": [],
+  "attributeMismatches": [],
+  "method": "normalized UTF8 length and Adler32, not cryptographic place identity",
+  "initialComparisonBug": "JSON property order comparison rejected equivalent objects; corrected explicit fields"
+}

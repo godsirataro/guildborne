@@ -1,0 +1,29 @@
+{
+  "schemaVersion": 1,
+  "kind": "LOCAL_COMMAND_RECEIPT",
+  "runId": "ab073f1a71e446a5b03204a9c765f523",
+  "tool": "C:\\Users\\godsi\\AppData\\Local\\Programs\\Python\\Python314\\python.EXE",
+  "argv": [
+    "C:\\Users\\godsi\\AppData\\Local\\Programs\\Python\\Python314\\python.EXE",
+    "-c",
+    "import subprocess,sys; cmds=[['python','tools/agentic/forge.py',x] for x in ['doctor','validate','plan']]+[['python','tools/agentic/studio.py',x] for x in ['validate','verify']]+[['powershell.exe','-NoProfile','-ExecutionPolicy','Bypass','-File','tools/validate.ps1']]; [subprocess.run(c,check=True) for c in cmds]; print('Fresh inventory, baseline, boundaries and generated adapter validation; no Studio/device acceptance')"
+  ],
+  "buildCommit": "e34a2e7b89c767bffccefc16e19a8a650d5187aa",
+  "sourceTree": "1f91c87f7fe58d8db6b7d78ea6a51a872f2db8b8",
+  "exitCode": 0,
+  "sourceUnchanged": true,
+  "seconds": 143.85307060000196,
+  "streams": [
+    {
+      "path": "build/agentic/checks/ab073f1a71e446a5b03204a9c765f523/stdout.txt",
+      "sha256": "569c16fb19c400858add3df07cb06107e25ef063851576d3f04fdc12e08fcf45",
+      "bytes": 76832
+    },
+    {
+      "path": "build/agentic/checks/ab073f1a71e446a5b03204a9c765f523/stderr.txt",
+      "sha256": "34b9c8b58f6623e07530260b3f2b417cb1b65e85e6900ee8aeb9ce33e7c9953a",
+      "bytes": 1895
+    }
+  ],
+  "error": null
+}

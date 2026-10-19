@@ -1,0 +1,2244 @@
+{
+  "entries": [
+    {
+      "path": "StarterPlayer.StarterPlayerScripts.Client.ClientBootstrap",
+      "length": 1217,
+      "adler": 4256286252
+    },
+    {
+      "path": "StarterPlayer.StarterPlayerScripts.Client.Controllers.ActionPose",
+      "length": 2413,
+      "adler": 3260489815
+    },
+    {
+      "path": "StarterPlayer.StarterPlayerScripts.Client.Controllers.AppearancePreviewController",
+      "length": 5161,
+      "adler": 3354837178
+    },
+    {
+      "path": "StarterPlayer.StarterPlayerScripts.Client.Controllers.ArchiveHeartEffects",
+      "length": 4769,
+      "adler": 169302267
+    },
+    {
+      "path": "StarterPlayer.StarterPlayerScripts.Client.Controllers.AudioController",
+      "length": 6628,
+      "adler": 2158953128
+    },
+    {
+      "path": "StarterPlayer.StarterPlayerScripts.Client.Controllers.CampaignDirections",
+      "length": 4087,
+      "adler": 566406930
+    },
+    {
+      "path": "StarterPlayer.StarterPlayerScripts.Client.Controllers.CampaignVisibility",
+      "length": 877,
+      "adler": 3525065259
+    },
+    {
+      "path": "StarterPlayer.StarterPlayerScripts.Client.Controllers.CityNavigation",
+      "length": 32431,
+      "adler": 218552363
+    },
+    {
+      "path": "StarterPlayer.StarterPlayerScripts.Client.Controllers.CombatController",
+      "length": 13544,
+      "adler": 1708200160
+    },
+    {
+      "path": "StarterPlayer.StarterPlayerScripts.Client.Controllers.CompanionOcclusion",
+      "length": 4097,
+      "adler": 1488141969
+    },
+    {
+      "path": "StarterPlayer.StarterPlayerScripts.Client.Controllers.EnemyAnimator",
+      "length": 14801,
+      "adler": 2186741391
+    },
+    {
+      "path": "StarterPlayer.StarterPlayerScripts.Client.Controllers.FootstepAudio",
+      "length": 1409,
+      "adler": 1865081789
+    },
+    {
+      "path": "StarterPlayer.StarterPlayerScripts.Client.Controllers.FriendlyNpcAnimator",
+      "length": 13366,
+      "adler": 1577457568
+    },
+    {
+      "path": "StarterPlayer.StarterPlayerScripts.Client.Controllers.HeroAnimator",
+      "length": 3874,
+      "adler": 306588963
+    },
+    {
+      "path": "StarterPlayer.StarterPlayerScripts.Client.Controllers.IslandVisitNotice",
+      "length": 2719,
+      "adler": 2464790410
+    },
+    {
+      "path": "StarterPlayer.StarterPlayerScripts.Client.Controllers.MineActivityEffects",
+      "length": 5889,
+      "adler": 2642862425
+    },
+    {
+      "path": "StarterPlayer.StarterPlayerScripts.Client.Controllers.MusicController",
+      "length": 2283,
+      "adler": 175911422
+    },
+    {
+      "path": "StarterPlayer.StarterPlayerScripts.Client.Controllers.NoviceTrialController",
+      "length": 10255,
+      "adler": 2187794761
+    },
+    {
+      "path": "StarterPlayer.StarterPlayerScripts.Client.Controllers.PathSkillEffects",
+      "length": 3616,
+      "adler": 1147827097
+    },
+    {
+      "path": "StarterPlayer.StarterPlayerScripts.Client.Controllers.PlayerCombatController",
+      "length": 17133,
+      "adler": 2685416052
+    },
+    {
+      "path": "StarterPlayer.StarterPlayerScripts.Client.Controllers.PortalEffects",
+      "length": 5380,
+      "adler": 2164942386
+    },
+    {
+      "path": "StarterPlayer.StarterPlayerScripts.Client.Controllers.QuestNpcMarkers",
+      "length": 2512,
+      "adler": 821784265
+    },
+    {
+      "path": "StarterPlayer.StarterPlayerScripts.Client.Controllers.RegionalEncounterVisibility",
+      "length": 744,
+      "adler": 2608790244
+    },
+    {
+      "path": "StarterPlayer.StarterPlayerScripts.Client.Controllers.ResourceNodeMarkers",
+      "length": 4660,
+      "adler": 3878521479
+    },
+    {
+      "path": "StarterPlayer.StarterPlayerScripts.Client.Controllers.SkillEffects",
+      "length": 33897,
+      "adler": 1553299743
+    },
+    {
+      "path": "StarterPlayer.StarterPlayerScripts.Client.Controllers.SliceController",
+      "length": 12834,
+      "adler": 3901608277
+    },
+    {
+      "path": "StarterPlayer.StarterPlayerScripts.Client.Controllers.TowerLessonEffects",
+      "length": 5123,
+      "adler": 1593169119
+    },
+    {
+      "path": "StarterPlayer.StarterPlayerScripts.Client.UI.ActorPortrait",
+      "length": 3050,
+      "adler": 3691251793
+    },
+    {
+      "path": "StarterPlayer.StarterPlayerScripts.Client.UI.ArchiveEndingPlayback",
+      "length": 2997,
+      "adler": 2379160727
+    },
+    {
+      "path": "StarterPlayer.StarterPlayerScripts.Client.UI.ArchiveEndingView",
+      "length": 2989,
+      "adler": 2350282153
+    },
+    {
+      "path": "StarterPlayer.StarterPlayerScripts.Client.UI.AssetImage",
+      "length": 1995,
+      "adler": 3281236493
+    },
+    {
+      "path": "StarterPlayer.StarterPlayerScripts.Client.UI.BestiaryView",
+      "length": 3734,
+      "adler": 2732850228
+    },
+    {
+      "path": "StarterPlayer.StarterPlayerScripts.Client.UI.BuildingThemesView",
+      "length": 5093,
+      "adler": 2513333461
+    },
+    {
+      "path": "StarterPlayer.StarterPlayerScripts.Client.UI.BuildView",
+      "length": 8192,
+      "adler": 938547424
+    },
+    {
+      "path": "StarterPlayer.StarterPlayerScripts.Client.UI.CampaignView",
+      "length": 6718,
+      "adler": 151182306
+    },
+    {
+      "path": "StarterPlayer.StarterPlayerScripts.Client.UI.CharacterCustomizationUI",
+      "length": 33882,
+      "adler": 411724168
+    },
+    {
+      "path": "StarterPlayer.StarterPlayerScripts.Client.UI.CivicMapView",
+      "length": 2331,
+      "adler": 704062238
+    },
+    {
+      "path": "StarterPlayer.StarterPlayerScripts.Client.UI.ClassBadge",
+      "length": 1013,
+      "adler": 46619624
+    },
+    {
+      "path": "StarterPlayer.StarterPlayerScripts.Client.UI.CompanyPreview",
+      "length": 3926,
+      "adler": 1711484651
+    },
+    {
+      "path": "StarterPlayer.StarterPlayerScripts.Client.UI.Components.CampaignRouteContext",
+      "length": 4100,
+      "adler": 955888901
+    },
+    {
+      "path": "StarterPlayer.StarterPlayerScripts.Client.UI.Components.CombatChrome",
+      "length": 6710,
+      "adler": 853163909
+    },
+    {
+      "path": "StarterPlayer.StarterPlayerScripts.Client.UI.Components.EquipmentSlot",
+      "length": 3764,
+      "adler": 348114543
+    },
+    {
+      "path": "StarterPlayer.StarterPlayerScripts.Client.UI.Components.GameplayMenuGate",
+      "length": 974,
+      "adler": 3834468358
+    },
+    {
+      "path": "StarterPlayer.StarterPlayerScripts.Client.UI.Components.GuildborneButton",
+      "length": 5755,
+      "adler": 1620417446
+    },
+    {
+      "path": "StarterPlayer.StarterPlayerScripts.Client.UI.Components.GuildbornePanel",
+      "length": 3172,
+      "adler": 1158422914
+    },
+    {
+      "path": "StarterPlayer.StarterPlayerScripts.Client.UI.Components.HeaderBar",
+      "length": 4435,
+      "adler": 2862600565
+    },
+    {
+      "path": "StarterPlayer.StarterPlayerScripts.Client.UI.Components.InventoryActorPreview",
+      "length": 13228,
+      "adler": 550060313
+    },
+    {
+      "path": "StarterPlayer.StarterPlayerScripts.Client.UI.Components.InventoryPane",
+      "length": 22805,
+      "adler": 545846173
+    },
+    {
+      "path": "StarterPlayer.StarterPlayerScripts.Client.UI.Components.JournalPane",
+      "length": 8243,
+      "adler": 1010474164
+    },
+    {
+      "path": "StarterPlayer.StarterPlayerScripts.Client.UI.Components.NoviceChapterCard",
+      "length": 11307,
+      "adler": 3993963973
+    },
+    {
+      "path": "StarterPlayer.StarterPlayerScripts.Client.UI.Components.QualityAsset",
+      "length": 1127,
+      "adler": 127038635
+    },
+    {
+      "path": "StarterPlayer.StarterPlayerScripts.Client.UI.Components.RegalOrnament",
+      "length": 3754,
+      "adler": 3743922087
+    },
+    {
+      "path": "StarterPlayer.StarterPlayerScripts.Client.UI.Components.TabBar",
+      "length": 1796,
+      "adler": 3498992899
+    },
+    {
+      "path": "StarterPlayer.StarterPlayerScripts.Client.UI.Components.TitleKeyboardFocus",
+      "length": 1898,
+      "adler": 547526415
+    },
+    {
+      "path": "StarterPlayer.StarterPlayerScripts.Client.UI.Components.TitleVista",
+      "length": 7373,
+      "adler": 2748407674
+    },
+    {
+      "path": "StarterPlayer.StarterPlayerScripts.Client.UI.Components.WalkingRouteContext",
+      "length": 6038,
+      "adler": 1181958657
+    },
+    {
+      "path": "StarterPlayer.StarterPlayerScripts.Client.UI.Components.WaypointBeacon",
+      "length": 8233,
+      "adler": 1721019048
+    },
+    {
+      "path": "StarterPlayer.StarterPlayerScripts.Client.UI.CosmeticPreview",
+      "length": 3988,
+      "adler": 2435992890
+    },
+    {
+      "path": "StarterPlayer.StarterPlayerScripts.Client.UI.DesignSystem.Theme",
+      "length": 716,
+      "adler": 1879306117
+    },
+    {
+      "path": "StarterPlayer.StarterPlayerScripts.Client.UI.EmptyState",
+      "length": 2784,
+      "adler": 1916980589
+    },
+    {
+      "path": "StarterPlayer.StarterPlayerScripts.Client.UI.ExpansionView",
+      "length": 21943,
+      "adler": 1638942536
+    },
+    {
+      "path": "StarterPlayer.StarterPlayerScripts.Client.UI.FurnitureView",
+      "length": 3350,
+      "adler": 2067355428
+    },
+    {
+      "path": "StarterPlayer.StarterPlayerScripts.Client.UI.GuildLandView",
+      "length": 3663,
+      "adler": 3620322395
+    },
+    {
+      "path": "StarterPlayer.StarterPlayerScripts.Client.UI.HumanPartyView",
+      "length": 6076,
+      "adler": 617902878
+    },
+    {
+      "path": "StarterPlayer.StarterPlayerScripts.Client.UI.InventoryView",
+      "length": 8602,
+      "adler": 1853092794
+    },
+    {
+      "path": "StarterPlayer.StarterPlayerScripts.Client.UI.IslandDirectoryView",
+      "length": 5135,
+      "adler": 3024653849
+    },
+    {
+      "path": "StarterPlayer.StarterPlayerScripts.Client.UI.ItemViewport",
+      "length": 920,
+      "adler": 2452308398
+    },
+    {
+      "path": "StarterPlayer.StarterPlayerScripts.Client.UI.LaunchRewardsView",
+      "length": 3224,
+      "adler": 1772324450
+    },
+    {
+      "path": "StarterPlayer.StarterPlayerScripts.Client.UI.MarketView",
+      "length": 15554,
+      "adler": 2132645215
+    },
+    {
+      "path": "StarterPlayer.StarterPlayerScripts.Client.UI.MenuRouter",
+      "length": 7095,
+      "adler": 3672364003
+    },
+    {
+      "path": "StarterPlayer.StarterPlayerScripts.Client.UI.NoviceJourneyView",
+      "length": 3507,
+      "adler": 682147201
+    },
+    {
+      "path": "StarterPlayer.StarterPlayerScripts.Client.UI.PlayerGuildRosterView",
+      "length": 5810,
+      "adler": 1822462144
+    },
+    {
+      "path": "StarterPlayer.StarterPlayerScripts.Client.UI.QuestTrackerView",
+      "length": 10985,
+      "adler": 3999082394
+    },
+    {
+      "path": "StarterPlayer.StarterPlayerScripts.Client.UI.ScrollRetention",
+      "length": 814,
+      "adler": 1647321041
+    },
+    {
+      "path": "StarterPlayer.StarterPlayerScripts.Client.UI.SettingsControls",
+      "length": 3555,
+      "adler": 3733834297
+    },
+    {
+      "path": "StarterPlayer.StarterPlayerScripts.Client.UI.SettlementView",
+      "length": 9955,
+      "adler": 1747917005
+    },
+    {
+      "path": "StarterPlayer.StarterPlayerScripts.Client.UI.SkillAvailability",
+      "length": 836,
+      "adler": 3262914914
+    },
+    {
+      "path": "StarterPlayer.StarterPlayerScripts.Client.UI.SkillTreeView",
+      "length": 2907,
+      "adler": 2570699265
+    },
+    {
+      "path": "StarterPlayer.StarterPlayerScripts.Client.UI.SliceUI",
+      "length": 45974,
+      "adler": 531556234
+    },
+    {
+      "path": "StarterPlayer.StarterPlayerScripts.Client.UI.StatusPointView",
+      "length": 4222,
+      "adler": 4084959650
+    },
+    {
+      "path": "StarterPlayer.StarterPlayerScripts.Client.UI.SymbolIcon",
+      "length": 1729,
+      "adler": 2501390120
+    },
+    {
+      "path": "StarterPlayer.StarterPlayerScripts.Client.UI.TitleView",
+      "length": 11145,
+      "adler": 3754581546
+    },
+    {
+      "path": "ServerScriptService.Server.Config.AdventureEncounters",
+      "length": 1255,
+      "adler": 2593098706
+    },
+    {
+      "path": "ServerScriptService.Server.Config.AdventureEnemyProfiles",
+      "length": 1176,
+      "adler": 2167703391
+    },
+    {
+      "path": "ServerScriptService.Server.Config.AdventureRewards",
+      "length": 1046,
+      "adler": 842754169
+    },
+    {
+      "path": "ServerScriptService.Server.Config.ArchiveHeartCourtLayout",
+      "length": 350,
+      "adler": 1535142416
+    },
+    {
+      "path": "ServerScriptService.Server.Config.ArchiveHeartEncounters",
+      "length": 844,
+      "adler": 4181794188
+    },
+    {
+      "path": "ServerScriptService.Server.Config.AshenCourtLayout",
+      "length": 430,
+      "adler": 2328069490
+    },
+    {
+      "path": "ServerScriptService.Server.Config.CampaignSequence",
+      "length": 949,
+      "adler": 992498387
+    },
+    {
+      "path": "ServerScriptService.Server.Config.ChapterFive",
+      "length": 11857,
+      "adler": 4250477008
+    },
+    {
+      "path": "ServerScriptService.Server.Config.ChapterFour",
+      "length": 11748,
+      "adler": 352168815
+    },
+    {
+      "path": "ServerScriptService.Server.Config.ChapterOne",
+      "length": 10005,
+      "adler": 1488414144
+    },
+    {
+      "path": "ServerScriptService.Server.Config.ChapterSix",
+      "length": 11736,
+      "adler": 4084586153
+    },
+    {
+      "path": "ServerScriptService.Server.Config.ChapterThree",
+      "length": 9661,
+      "adler": 2969776125
+    },
+    {
+      "path": "ServerScriptService.Server.Config.ChapterTwo",
+      "length": 9470,
+      "adler": 2639684531
+    },
+    {
+      "path": "ServerScriptService.Server.Config.Combat",
+      "length": 1514,
+      "adler": 3697852642
+    },
+    {
+      "path": "ServerScriptService.Server.Config.Content",
+      "length": 25737,
+      "adler": 4223366497
+    },
+    {
+      "path": "ServerScriptService.Server.Config.CrosshavenCourtLayout",
+      "length": 428,
+      "adler": 3668870651
+    },
+    {
+      "path": "ServerScriptService.Server.Config.CrosshavenWards",
+      "length": 754,
+      "adler": 2864017612
+    },
+    {
+      "path": "ServerScriptService.Server.Config.GuildLand",
+      "length": 437,
+      "adler": 3835665480
+    },
+    {
+      "path": "ServerScriptService.Server.Config.IronveilMineLayout",
+      "length": 524,
+      "adler": 3561793408
+    },
+    {
+      "path": "ServerScriptService.Server.Config.IronveilTasks",
+      "length": 1259,
+      "adler": 1617331972
+    },
+    {
+      "path": "ServerScriptService.Server.Config.LaunchRewards",
+      "length": 1006,
+      "adler": 2485540589
+    },
+    {
+      "path": "ServerScriptService.Server.Config.Market",
+      "length": 1096,
+      "adler": 1382240684
+    },
+    {
+      "path": "ServerScriptService.Server.Config.NoviceChapter",
+      "length": 3216,
+      "adler": 861356154
+    },
+    {
+      "path": "ServerScriptService.Server.Config.NoviceLessons",
+      "length": 799,
+      "adler": 1155799284
+    },
+    {
+      "path": "ServerScriptService.Server.Config.NoviceTrials",
+      "length": 796,
+      "adler": 3156893842
+    },
+    {
+      "path": "ServerScriptService.Server.Config.ReleaseContent",
+      "length": 680,
+      "adler": 134086095
+    },
+    {
+      "path": "ServerScriptService.Server.Config.Runtime",
+      "length": 696,
+      "adler": 2800152602
+    },
+    {
+      "path": "ServerScriptService.Server.Config.TowerCourtLayout",
+      "length": 426,
+      "adler": 3871704262
+    },
+    {
+      "path": "ServerScriptService.Server.Config.TowerGuardian",
+      "length": 267,
+      "adler": 1102404899
+    },
+    {
+      "path": "ServerScriptService.Server.Config.TowerLessons",
+      "length": 810,
+      "adler": 4069037205
+    },
+    {
+      "path": "ServerScriptService.Server.Persistence.MarketCloud",
+      "length": 4615,
+      "adler": 1883320399
+    },
+    {
+      "path": "ServerScriptService.Server.Persistence.MemoryStore",
+      "length": 500,
+      "adler": 4147358537
+    },
+    {
+      "path": "ServerScriptService.Server.Persistence.RobloxStore",
+      "length": 1256,
+      "adler": 3194793462
+    },
+    {
+      "path": "ServerScriptService.Server.ServerBootstrap",
+      "length": 37674,
+      "adler": 2283096523
+    },
+    {
+      "path": "ServerScriptService.Server.Services.AdventureCombatBridge",
+      "length": 5901,
+      "adler": 812621615
+    },
+    {
+      "path": "ServerScriptService.Server.Services.AdventureEncounterPreview",
+      "length": 5720,
+      "adler": 1448497793
+    },
+    {
+      "path": "ServerScriptService.Server.Services.AdventureEncounterSession",
+      "length": 3559,
+      "adler": 3967652023
+    },
+    {
+      "path": "ServerScriptService.Server.Services.AdventureEnemyKit",
+      "length": 64294,
+      "adler": 2401531793
+    },
+    {
+      "path": "ServerScriptService.Server.Services.AdventureLocomotion",
+      "length": 2707,
+      "adler": 832927639
+    },
+    {
+      "path": "ServerScriptService.Server.Services.AdventureMapKit",
+      "length": 20241,
+      "adler": 1811390580
+    },
+    {
+      "path": "ServerScriptService.Server.Services.AdventureNavigation",
+      "length": 2263,
+      "adler": 1491068618
+    },
+    {
+      "path": "ServerScriptService.Server.Services.AdventurePropKit",
+      "length": 41453,
+      "adler": 954396490
+    },
+    {
+      "path": "ServerScriptService.Server.Services.AdventureRewardAdapter",
+      "length": 3052,
+      "adler": 1144387784
+    },
+    {
+      "path": "ServerScriptService.Server.Services.AdventurerService",
+      "length": 1257,
+      "adler": 7580996
+    },
+    {
+      "path": "ServerScriptService.Server.Services.AdventureScene",
+      "length": 2024,
+      "adler": 3372658869
+    },
+    {
+      "path": "ServerScriptService.Server.Services.AnalyticsAdapter",
+      "length": 1688,
+      "adler": 1133395955
+    },
+    {
+      "path": "ServerScriptService.Server.Services.ArchiveHeartArena",
+      "length": 13273,
+      "adler": 4075152477
+    },
+    {
+      "path": "ServerScriptService.Server.Services.ArchiveHeartBossKit",
+      "length": 19517,
+      "adler": 4145442997
+    },
+    {
+      "path": "ServerScriptService.Server.Services.ArchiveHeartCourtArt",
+      "length": 2196,
+      "adler": 184611851
+    },
+    {
+      "path": "ServerScriptService.Server.Services.ArchiveHeartStoryKit",
+      "length": 111459,
+      "adler": 2929769232
+    },
+    {
+      "path": "ServerScriptService.Server.Services.ArchiveHeartWorld",
+      "length": 24190,
+      "adler": 2458153549
+    },
+    {
+      "path": "ServerScriptService.Server.Services.ArtKit",
+      "length": 11037,
+      "adler": 3836339821
+    },
+    {
+      "path": "ServerScriptService.Server.Services.AshenCharacterKit",
+      "length": 25441,
+      "adler": 1707045886
+    },
+    {
+      "path": "ServerScriptService.Server.Services.AshenCourtArt",
+      "length": 2350,
+      "adler": 813181431
+    },
+    {
+      "path": "ServerScriptService.Server.Services.AshenStoryKit",
+      "length": 69607,
+      "adler": 4171220702
+    },
+    {
+      "path": "ServerScriptService.Server.Services.AshenWorld",
+      "length": 21742,
+      "adler": 469723851
+    },
+    {
+      "path": "ServerScriptService.Server.Services.BorrowedPathFactory",
+      "length": 1475,
+      "adler": 2054430818
+    },
+    {
+      "path": "ServerScriptService.Server.Services.CampaignService",
+      "length": 7752,
+      "adler": 3240749648
+    },
+    {
+      "path": "ServerScriptService.Server.Services.CampaignWorld",
+      "length": 13101,
+      "adler": 1839485956
+    },
+    {
+      "path": "ServerScriptService.Server.Services.CentralCityWorld",
+      "length": 11311,
+      "adler": 1477911511
+    },
+    {
+      "path": "ServerScriptService.Server.Services.CharacterAppearance.AppearanceAssetRegistry",
+      "length": 1539,
+      "adler": 1433998945
+    },
+    {
+      "path": "ServerScriptService.Server.Services.CharacterAppearance.AppearanceService",
+      "length": 4035,
+      "adler": 2120451713
+    },
+    {
+      "path": "ServerScriptService.Server.Services.CharacterAppearance.PreviewPolicy",
+      "length": 807,
+      "adler": 3454601092
+    },
+    {
+      "path": "ServerScriptService.Server.Services.CharacterAppearance.RigAssemblyService",
+      "length": 287,
+      "adler": 4094847613
+    },
+    {
+      "path": "ServerScriptService.Server.Services.CityCharacterKit",
+      "length": 38775,
+      "adler": 670619807
+    },
+    {
+      "path": "ServerScriptService.Server.Services.CityInteriorKit",
+      "length": 54127,
+      "adler": 1851405323
+    },
+    {
+      "path": "ServerScriptService.Server.Services.CityKit",
+      "length": 2726,
+      "adler": 151268740
+    },
+    {
+      "path": "ServerScriptService.Server.Services.CityLandscape",
+      "length": 1500,
+      "adler": 646902810
+    },
+    {
+      "path": "ServerScriptService.Server.Services.CityLandscapeData",
+      "length": 308183,
+      "adler": 2423742944
+    },
+    {
+      "path": "ServerScriptService.Server.Services.CityNpcAppearance",
+      "length": 2973,
+      "adler": 1245280444
+    },
+    {
+      "path": "ServerScriptService.Server.Services.CityWorld",
+      "length": 5432,
+      "adler": 2459260508
+    },
+    {
+      "path": "ServerScriptService.Server.Services.CivicCityWorld",
+      "length": 6377,
+      "adler": 4030811546
+    },
+    {
+      "path": "ServerScriptService.Server.Services.CivicDistrictKit",
+      "length": 7975,
+      "adler": 595888306
+    },
+    {
+      "path": "ServerScriptService.Server.Services.CivicLandmarkKit",
+      "length": 66304,
+      "adler": 2844725811
+    },
+    {
+      "path": "ServerScriptService.Server.Services.CivicServiceKit",
+      "length": 1930,
+      "adler": 1039645623
+    },
+    {
+      "path": "ServerScriptService.Server.Services.Class3ProofReceiptAdapter",
+      "length": 4470,
+      "adler": 709373672
+    },
+    {
+      "path": "ServerScriptService.Server.Services.CombatLineOfSight",
+      "length": 711,
+      "adler": 3138778687
+    },
+    {
+      "path": "ServerScriptService.Server.Services.CombatService",
+      "length": 32549,
+      "adler": 787659595
+    },
+    {
+      "path": "ServerScriptService.Server.Services.CosmeticVisualKit",
+      "length": 77,
+      "adler": 1296768074
+    },
+    {
+      "path": "ServerScriptService.Server.Services.CrosshavenCourtArt",
+      "length": 2173,
+      "adler": 1538779070
+    },
+    {
+      "path": "ServerScriptService.Server.Services.CrosshavenStoryKit",
+      "length": 94888,
+      "adler": 4100207702
+    },
+    {
+      "path": "ServerScriptService.Server.Services.CrosshavenWorld",
+      "length": 29538,
+      "adler": 1102857702
+    },
+    {
+      "path": "ServerScriptService.Server.Services.CrownfordServiceKit",
+      "length": 1507,
+      "adler": 762388117
+    },
+    {
+      "path": "ServerScriptService.Server.Services.DispatchService",
+      "length": 3627,
+      "adler": 2991056478
+    },
+    {
+      "path": "ServerScriptService.Server.Services.EconomyService",
+      "length": 2246,
+      "adler": 2277241936
+    },
+    {
+      "path": "ServerScriptService.Server.Services.EnemyAppearance",
+      "length": 8746,
+      "adler": 3845565155
+    },
+    {
+      "path": "ServerScriptService.Server.Services.EnemyArticulation",
+      "length": 4995,
+      "adler": 2976339925
+    },
+    {
+      "path": "ServerScriptService.Server.Services.EnemyService",
+      "length": 2775,
+      "adler": 301246787
+    },
+    {
+      "path": "ServerScriptService.Server.Services.EquipmentService",
+      "length": 2670,
+      "adler": 3789401271
+    },
+    {
+      "path": "ServerScriptService.Server.Services.EscortActor",
+      "length": 3665,
+      "adler": 4097581536
+    },
+    {
+      "path": "ServerScriptService.Server.Services.ExpansionService",
+      "length": 13965,
+      "adler": 1687223691
+    },
+    {
+      "path": "ServerScriptService.Server.Services.ExpansionWorld",
+      "length": 9501,
+      "adler": 3520477263
+    },
+    {
+      "path": "ServerScriptService.Server.Services.FriendlyCityNpcs",
+      "length": 3012,
+      "adler": 57403923
+    },
+    {
+      "path": "ServerScriptService.Server.Services.FriendlyNpcKit",
+      "length": 27031,
+      "adler": 1112360179
+    },
+    {
+      "path": "ServerScriptService.Server.Services.FurnitureWorld",
+      "length": 1573,
+      "adler": 3379825240
+    },
+    {
+      "path": "ServerScriptService.Server.Services.GuildHallWorld",
+      "length": 1316,
+      "adler": 1964165612
+    },
+    {
+      "path": "ServerScriptService.Server.Services.GuildIdentityWorld",
+      "length": 3670,
+      "adler": 2314928897
+    },
+    {
+      "path": "ServerScriptService.Server.Services.GuildLandService",
+      "length": 1087,
+      "adler": 1884580969
+    },
+    {
+      "path": "ServerScriptService.Server.Services.GuildLandWorld",
+      "length": 3151,
+      "adler": 486550570
+    },
+    {
+      "path": "ServerScriptService.Server.Services.HeroAppearance",
+      "length": 2256,
+      "adler": 3797147949
+    },
+    {
+      "path": "ServerScriptService.Server.Services.HeroMentorReceiptAdapter",
+      "length": 2264,
+      "adler": 1045702657
+    },
+    {
+      "path": "ServerScriptService.Server.Services.HeroMentorWorld",
+      "length": 12472,
+      "adler": 3329907996
+    },
+    {
+      "path": "ServerScriptService.Server.Services.HeroRig",
+      "length": 7864,
+      "adler": 2764945563
+    },
+    {
+      "path": "ServerScriptService.Server.Services.HeroService",
+      "length": 20319,
+      "adler": 1841475156
+    },
+    {
+      "path": "ServerScriptService.Server.Services.HeroVisualKit",
+      "length": 74717,
+      "adler": 14166300
+    },
+    {
+      "path": "ServerScriptService.Server.Services.HumanPartyRuntime",
+      "length": 3670,
+      "adler": 2113481189
+    },
+    {
+      "path": "ServerScriptService.Server.Services.IronveilCharacterKit",
+      "length": 20998,
+      "adler": 1932740661
+    },
+    {
+      "path": "ServerScriptService.Server.Services.IronveilMineArt",
+      "length": 2352,
+      "adler": 2236230253
+    },
+    {
+      "path": "ServerScriptService.Server.Services.IronveilStoryKit",
+      "length": 79023,
+      "adler": 3306420104
+    },
+    {
+      "path": "ServerScriptService.Server.Services.IronveilWorld",
+      "length": 21371,
+      "adler": 215841761
+    },
+    {
+      "path": "ServerScriptService.Server.Services.IslandScenery",
+      "length": 6302,
+      "adler": 3340121753
+    },
+    {
+      "path": "ServerScriptService.Server.Services.IslandVisits",
+      "length": 9479,
+      "adler": 3288638241
+    },
+    {
+      "path": "ServerScriptService.Server.Services.MarketRuntime",
+      "length": 6891,
+      "adler": 3342565721
+    },
+    {
+      "path": "ServerScriptService.Server.Services.MarketService",
+      "length": 8340,
+      "adler": 412491546
+    },
+    {
+      "path": "ServerScriptService.Server.Services.NetworkService",
+      "length": 7106,
+      "adler": 3430722193
+    },
+    {
+      "path": "ServerScriptService.Server.Services.NoviceCharacterKit",
+      "length": 23827,
+      "adler": 144601214
+    },
+    {
+      "path": "ServerScriptService.Server.Services.NoviceCourseWorld",
+      "length": 15801,
+      "adler": 4020155892
+    },
+    {
+      "path": "ServerScriptService.Server.Services.NoviceLessonFactory",
+      "length": 1209,
+      "adler": 566280406
+    },
+    {
+      "path": "ServerScriptService.Server.Services.NoviceReceiptAdapter",
+      "length": 4015,
+      "adler": 3567098762
+    },
+    {
+      "path": "ServerScriptService.Server.Services.NoviceRoadArt",
+      "length": 29118,
+      "adler": 2816324500
+    },
+    {
+      "path": "ServerScriptService.Server.Services.NoviceStoryService",
+      "length": 7025,
+      "adler": 1513998593
+    },
+    {
+      "path": "ServerScriptService.Server.Services.NoviceTrialArena",
+      "length": 11754,
+      "adler": 163891585
+    },
+    {
+      "path": "ServerScriptService.Server.Services.NoviceTrialArt",
+      "length": 30993,
+      "adler": 2178287210
+    },
+    {
+      "path": "ServerScriptService.Server.Services.NoviceTrialManager",
+      "length": 3576,
+      "adler": 1381174065
+    },
+    {
+      "path": "ServerScriptService.Server.Services.PartyService",
+      "length": 949,
+      "adler": 289425029
+    },
+    {
+      "path": "ServerScriptService.Server.Services.PermanentPassPrompt",
+      "length": 2237,
+      "adler": 83828491
+    },
+    {
+      "path": "ServerScriptService.Server.Services.PermanentPassRestore",
+      "length": 1768,
+      "adler": 3978193308
+    },
+    {
+      "path": "ServerScriptService.Server.Services.PermanentPassRuntime",
+      "length": 2732,
+      "adler": 2989744768
+    },
+    {
+      "path": "ServerScriptService.Server.Services.PersonalGuildService",
+      "length": 1735,
+      "adler": 4163332768
+    },
+    {
+      "path": "ServerScriptService.Server.Services.PlayerDataService",
+      "length": 20159,
+      "adler": 2478387632
+    },
+    {
+      "path": "ServerScriptService.Server.Services.PlayerGuildStoreKey",
+      "length": 788,
+      "adler": 358616773
+    },
+    {
+      "path": "ServerScriptService.Server.Services.PlayerGuildStoreProvider",
+      "length": 804,
+      "adler": 548806398
+    },
+    {
+      "path": "ServerScriptService.Server.Services.PurchaseService",
+      "length": 896,
+      "adler": 2906734781
+    },
+    {
+      "path": "ServerScriptService.Server.Services.QuestService",
+      "length": 2899,
+      "adler": 3402755416
+    },
+    {
+      "path": "ServerScriptService.Server.Services.RegionalCombat",
+      "length": 3831,
+      "adler": 312739225
+    },
+    {
+      "path": "ServerScriptService.Server.Services.RegionalEvasion",
+      "length": 1661,
+      "adler": 1142694100
+    },
+    {
+      "path": "ServerScriptService.Server.Services.RegionalWorld",
+      "length": 5842,
+      "adler": 2346180628
+    },
+    {
+      "path": "ServerScriptService.Server.Services.SettlementService",
+      "length": 6859,
+      "adler": 3182717711
+    },
+    {
+      "path": "ServerScriptService.Server.Services.SharedCombatCoordinator",
+      "length": 11809,
+      "adler": 3400102624
+    },
+    {
+      "path": "ServerScriptService.Server.Services.SharedCombatRewards",
+      "length": 4588,
+      "adler": 2251319131
+    },
+    {
+      "path": "ServerScriptService.Server.Services.SharedEncounterRuntime",
+      "length": 6739,
+      "adler": 1542941152
+    },
+    {
+      "path": "ServerScriptService.Server.Services.SharedPvERewardAdapter",
+      "length": 5803,
+      "adler": 3038643979
+    },
+    {
+      "path": "ServerScriptService.Server.Services.SharedPvESettlementStore",
+      "length": 3871,
+      "adler": 1721917077
+    },
+    {
+      "path": "ServerScriptService.Server.Services.StatusPointService",
+      "length": 1903,
+      "adler": 2254341155
+    },
+    {
+      "path": "ServerScriptService.Server.Services.TowerCharacterKit",
+      "length": 26244,
+      "adler": 795632428
+    },
+    {
+      "path": "ServerScriptService.Server.Services.TowerCourtArt",
+      "length": 2158,
+      "adler": 1236132252
+    },
+    {
+      "path": "ServerScriptService.Server.Services.TowerGuardianFactory",
+      "length": 1026,
+      "adler": 990215073
+    },
+    {
+      "path": "ServerScriptService.Server.Services.TowerLessonArena",
+      "length": 8410,
+      "adler": 1021238627
+    },
+    {
+      "path": "ServerScriptService.Server.Services.TowerStoryKit",
+      "length": 124765,
+      "adler": 3882086016
+    },
+    {
+      "path": "ServerScriptService.Server.Services.TowerWorld",
+      "length": 22357,
+      "adler": 925110685
+    },
+    {
+      "path": "ServerScriptService.Server.Services.TravelService",
+      "length": 24818,
+      "adler": 3251625571
+    },
+    {
+      "path": "ServerScriptService.Server.Services.WardrobeVisuals",
+      "length": 2042,
+      "adler": 250983699
+    },
+    {
+      "path": "ServerScriptService.Server.Services.WeaponVisuals",
+      "length": 8056,
+      "adler": 1697398307
+    },
+    {
+      "path": "ServerScriptService.Server.Services.WorldQualityAssets",
+      "length": 120060,
+      "adler": 2498425751
+    },
+    {
+      "path": "ServerScriptService.Server.Services.WorldQualitySlice",
+      "length": 12395,
+      "adler": 645388345
+    },
+    {
+      "path": "ServerScriptService.Server.Services.WorldService",
+      "length": 18798,
+      "adler": 593676816
+    },
+    {
+      "path": "ServerScriptService.Server.Systems.AdventureEnemyBrain",
+      "length": 4256,
+      "adler": 3064094835
+    },
+    {
+      "path": "ServerScriptService.Server.Systems.AdventureEvasion",
+      "length": 1705,
+      "adler": 2688292242
+    },
+    {
+      "path": "ServerScriptService.Server.Systems.AdventureFieldGuide",
+      "length": 1932,
+      "adler": 2844558898
+    },
+    {
+      "path": "ServerScriptService.Server.Systems.AdventureLifecycle",
+      "length": 3448,
+      "adler": 413763434
+    },
+    {
+      "path": "ServerScriptService.Server.Systems.AdventurePatterns",
+      "length": 3508,
+      "adler": 1948951254
+    },
+    {
+      "path": "ServerScriptService.Server.Systems.AdventureStats",
+      "length": 570,
+      "adler": 2675820385
+    },
+    {
+      "path": "ServerScriptService.Server.Systems.AnalyticsContract",
+      "length": 957,
+      "adler": 1003840641
+    },
+    {
+      "path": "ServerScriptService.Server.Systems.ArchiveHeartCombat",
+      "length": 3765,
+      "adler": 1234253249
+    },
+    {
+      "path": "ServerScriptService.Server.Systems.ArchiveHeartEncounter",
+      "length": 6953,
+      "adler": 778806542
+    },
+    {
+      "path": "ServerScriptService.Server.Systems.BorrowedPathSession",
+      "length": 6986,
+      "adler": 293712869
+    },
+    {
+      "path": "ServerScriptService.Server.Systems.BossPatterns",
+      "length": 1510,
+      "adler": 3949597532
+    },
+    {
+      "path": "ServerScriptService.Server.Systems.Class3Proof",
+      "length": 5237,
+      "adler": 1025722654
+    },
+    {
+      "path": "ServerScriptService.Server.Systems.CombatAbilities",
+      "length": 3086,
+      "adler": 1111175816
+    },
+    {
+      "path": "ServerScriptService.Server.Systems.CombatDamage",
+      "length": 1406,
+      "adler": 4068530533
+    },
+    {
+      "path": "ServerScriptService.Server.Systems.CombatRewards",
+      "length": 1858,
+      "adler": 2315947691
+    },
+    {
+      "path": "ServerScriptService.Server.Systems.CombatSpace",
+      "length": 1203,
+      "adler": 2116917865
+    },
+    {
+      "path": "ServerScriptService.Server.Systems.CombatStats",
+      "length": 1686,
+      "adler": 477055790
+    },
+    {
+      "path": "ServerScriptService.Server.Systems.CombatTargeting",
+      "length": 1887,
+      "adler": 365986889
+    },
+    {
+      "path": "ServerScriptService.Server.Systems.CombatValidator",
+      "length": 1614,
+      "adler": 2380804711
+    },
+    {
+      "path": "ServerScriptService.Server.Systems.Commands",
+      "length": 7904,
+      "adler": 432994306
+    },
+    {
+      "path": "ServerScriptService.Server.Systems.ContentValidator",
+      "length": 6505,
+      "adler": 3285238939
+    },
+    {
+      "path": "ServerScriptService.Server.Systems.EnemyLifecycle",
+      "length": 253,
+      "adler": 1502370312
+    },
+    {
+      "path": "ServerScriptService.Server.Systems.EnemyProfiles",
+      "length": 1530,
+      "adler": 493221168
+    },
+    {
+      "path": "ServerScriptService.Server.Systems.EscortRun",
+      "length": 3796,
+      "adler": 1032338276
+    },
+    {
+      "path": "ServerScriptService.Server.Systems.ExpansionSchema",
+      "length": 6040,
+      "adler": 864286857
+    },
+    {
+      "path": "ServerScriptService.Server.Systems.HeroMentorTrial",
+      "length": 9519,
+      "adler": 387071957
+    },
+    {
+      "path": "ServerScriptService.Server.Systems.HeroPresentation",
+      "length": 2535,
+      "adler": 2112712401
+    },
+    {
+      "path": "ServerScriptService.Server.Systems.HeroTactics",
+      "length": 2271,
+      "adler": 3911463310
+    },
+    {
+      "path": "ServerScriptService.Server.Systems.HeroTemplateChoice",
+      "length": 514,
+      "adler": 4203196404
+    },
+    {
+      "path": "ServerScriptService.Server.Systems.HumanParty",
+      "length": 9996,
+      "adler": 3539602488
+    },
+    {
+      "path": "ServerScriptService.Server.Systems.IronveilProtection",
+      "length": 2336,
+      "adler": 3994043844
+    },
+    {
+      "path": "ServerScriptService.Server.Systems.IronveilPuzzle",
+      "length": 1183,
+      "adler": 1019520491
+    },
+    {
+      "path": "ServerScriptService.Server.Systems.LaunchRewards",
+      "length": 5061,
+      "adler": 3668507112
+    },
+    {
+      "path": "ServerScriptService.Server.Systems.MarketAcceptanceConfig",
+      "length": 600,
+      "adler": 63886944
+    },
+    {
+      "path": "ServerScriptService.Server.Systems.MarketBook",
+      "length": 3760,
+      "adler": 2816014285
+    },
+    {
+      "path": "ServerScriptService.Server.Systems.MarketData",
+      "length": 5450,
+      "adler": 296899438
+    },
+    {
+      "path": "ServerScriptService.Server.Systems.MarketEpochs",
+      "length": 9501,
+      "adler": 558998701
+    },
+    {
+      "path": "ServerScriptService.Server.Systems.MarketEscrow",
+      "length": 4875,
+      "adler": 1898664060
+    },
+    {
+      "path": "ServerScriptService.Server.Systems.MarketHealth",
+      "length": 1046,
+      "adler": 1013473280
+    },
+    {
+      "path": "ServerScriptService.Server.Systems.MarketMatching",
+      "length": 2463,
+      "adler": 265766294
+    },
+    {
+      "path": "ServerScriptService.Server.Systems.MarketNamespace",
+      "length": 472,
+      "adler": 1624615368
+    },
+    {
+      "path": "ServerScriptService.Server.Systems.MarketOrders",
+      "length": 1312,
+      "adler": 882883122
+    },
+    {
+      "path": "ServerScriptService.Server.Systems.MarketProtocol",
+      "length": 1531,
+      "adler": 1515784223
+    },
+    {
+      "path": "ServerScriptService.Server.Systems.MarketReconciliation",
+      "length": 1559,
+      "adler": 2619874399
+    },
+    {
+      "path": "ServerScriptService.Server.Systems.NoviceLessonSession",
+      "length": 1864,
+      "adler": 877633661
+    },
+    {
+      "path": "ServerScriptService.Server.Systems.NoviceTrialCombat",
+      "length": 6040,
+      "adler": 3757397125
+    },
+    {
+      "path": "ServerScriptService.Server.Systems.NoviceTrialInput",
+      "length": 723,
+      "adler": 3380084740
+    },
+    {
+      "path": "ServerScriptService.Server.Systems.NoviceTrialSession",
+      "length": 4233,
+      "adler": 1179313599
+    },
+    {
+      "path": "ServerScriptService.Server.Systems.OnboardingFunnel",
+      "length": 2636,
+      "adler": 2832444917
+    },
+    {
+      "path": "ServerScriptService.Server.Systems.PermanentEntitlements",
+      "length": 1023,
+      "adler": 4257246267
+    },
+    {
+      "path": "ServerScriptService.Server.Systems.PermanentPassCatalog",
+      "length": 883,
+      "adler": 239350494
+    },
+    {
+      "path": "ServerScriptService.Server.Systems.PermanentPassOffers",
+      "length": 872,
+      "adler": 3420206561
+    },
+    {
+      "path": "ServerScriptService.Server.Systems.PlayerCharacter",
+      "length": 521,
+      "adler": 2350035344
+    },
+    {
+      "path": "ServerScriptService.Server.Systems.PlayerCombatInput",
+      "length": 1037,
+      "adler": 2595513705
+    },
+    {
+      "path": "ServerScriptService.Server.Systems.PlayerGuildCancelCoordinator",
+      "length": 5334,
+      "adler": 2514183887
+    },
+    {
+      "path": "ServerScriptService.Server.Systems.PlayerGuildFounderCoordinator",
+      "length": 4530,
+      "adler": 1994018838
+    },
+    {
+      "path": "ServerScriptService.Server.Systems.PlayerGuildJoinCoordinator",
+      "length": 4388,
+      "adler": 3298892242
+    },
+    {
+      "path": "ServerScriptService.Server.Systems.PlayerGuildMembership",
+      "length": 9644,
+      "adler": 3299581780
+    },
+    {
+      "path": "ServerScriptService.Server.Systems.PlayerGuildRecovery",
+      "length": 1615,
+      "adler": 1779313330
+    },
+    {
+      "path": "ServerScriptService.Server.Systems.PlayerGuildRemovalCoordinator",
+      "length": 4651,
+      "adler": 4220481040
+    },
+    {
+      "path": "ServerScriptService.Server.Systems.PlayerGuildRoster",
+      "length": 1866,
+      "adler": 488546023
+    },
+    {
+      "path": "ServerScriptService.Server.Systems.PlayerGuildSchema",
+      "length": 4898,
+      "adler": 417507680
+    },
+    {
+      "path": "ServerScriptService.Server.Systems.PlayerGuildStore",
+      "length": 4408,
+      "adler": 32113799
+    },
+    {
+      "path": "ServerScriptService.Server.Systems.PlayerParticipation",
+      "length": 720,
+      "adler": 3005084236
+    },
+    {
+      "path": "ServerScriptService.Server.Systems.ProfileSchema",
+      "length": 18099,
+      "adler": 4244709940
+    },
+    {
+      "path": "ServerScriptService.Server.Systems.Progression",
+      "length": 1419,
+      "adler": 3250650257
+    },
+    {
+      "path": "ServerScriptService.Server.Systems.ProgressionV2Preview",
+      "length": 5877,
+      "adler": 3039144706
+    },
+    {
+      "path": "ServerScriptService.Server.Systems.RecipeValidator",
+      "length": 902,
+      "adler": 505492863
+    },
+    {
+      "path": "ServerScriptService.Server.Systems.ReleasePolicy",
+      "length": 1953,
+      "adler": 876525337
+    },
+    {
+      "path": "ServerScriptService.Server.Systems.SharedCombatPhases",
+      "length": 9146,
+      "adler": 2796935930
+    },
+    {
+      "path": "ServerScriptService.Server.Systems.SharedEncounterIdentity",
+      "length": 5110,
+      "adler": 888865032
+    },
+    {
+      "path": "ServerScriptService.Server.Systems.SharedEncounterParticipation",
+      "length": 6048,
+      "adler": 2502772166
+    },
+    {
+      "path": "ServerScriptService.Server.Systems.SharedPvEClaims",
+      "length": 5808,
+      "adler": 3061254274
+    },
+    {
+      "path": "ServerScriptService.Server.Systems.SharedPvESettlement",
+      "length": 4259,
+      "adler": 1274929500
+    },
+    {
+      "path": "ServerScriptService.Server.Systems.StudioTrialIdentity",
+      "length": 807,
+      "adler": 491921406
+    },
+    {
+      "path": "ServerScriptService.Server.Systems.TowerGuardianSession",
+      "length": 1865,
+      "adler": 182559943
+    },
+    {
+      "path": "ServerScriptService.Server.Systems.TowerLesson",
+      "length": 4696,
+      "adler": 3409938514
+    },
+    {
+      "path": "ServerScriptService.Server.Systems.TravelRules",
+      "length": 5617,
+      "adler": 1001839419
+    },
+    {
+      "path": "ServerScriptService.Server.Systems.ViewProjection",
+      "length": 9431,
+      "adler": 2794592661
+    },
+    {
+      "path": "ReplicatedStorage.Shared.Config.ArchiveEndings",
+      "length": 1570,
+      "adler": 125669564
+    },
+    {
+      "path": "ReplicatedStorage.Shared.Config.Art",
+      "length": 1081,
+      "adler": 473901186
+    },
+    {
+      "path": "ReplicatedStorage.Shared.Config.AudioConfig",
+      "length": 2418,
+      "adler": 3284681118
+    },
+    {
+      "path": "ReplicatedStorage.Shared.Config.BuildingThemes",
+      "length": 1000,
+      "adler": 1769288724
+    },
+    {
+      "path": "ReplicatedStorage.Shared.Config.City",
+      "length": 4855,
+      "adler": 1401636972
+    },
+    {
+      "path": "ReplicatedStorage.Shared.Config.CivicCities",
+      "length": 1236,
+      "adler": 1149096864
+    },
+    {
+      "path": "ReplicatedStorage.Shared.Config.ClassAdvancementCopy",
+      "length": 713,
+      "adler": 2476364088
+    },
+    {
+      "path": "ReplicatedStorage.Shared.Config.CombatBindings",
+      "length": 1111,
+      "adler": 849244883
+    },
+    {
+      "path": "ReplicatedStorage.Shared.Config.EnemyVisualAssets",
+      "length": 4460,
+      "adler": 779199891
+    },
+    {
+      "path": "ReplicatedStorage.Shared.Config.FriendlyNpcs",
+      "length": 16656,
+      "adler": 1194849112
+    },
+    {
+      "path": "ReplicatedStorage.Shared.Config.GuildIslandLayout",
+      "length": 455,
+      "adler": 1122604689
+    },
+    {
+      "path": "ReplicatedStorage.Shared.Config.Localization",
+      "length": 185748,
+      "adler": 3931466165
+    },
+    {
+      "path": "ReplicatedStorage.Shared.Config.MusicConfig",
+      "length": 607,
+      "adler": 1424875143
+    },
+    {
+      "path": "ReplicatedStorage.Shared.Config.NpcLifeDefinitions",
+      "length": 2119,
+      "adler": 234602498
+    },
+    {
+      "path": "ReplicatedStorage.Shared.Config.PathVFX",
+      "length": 1628,
+      "adler": 2997167484
+    },
+    {
+      "path": "ReplicatedStorage.Shared.Config.VFXConfig",
+      "length": 1217,
+      "adler": 639736659
+    },
+    {
+      "path": "ReplicatedStorage.Shared.Config.VisualAssets",
+      "length": 865,
+      "adler": 1280384780
+    },
+    {
+      "path": "ReplicatedStorage.Shared.Config.WorldQuality",
+      "length": 194366,
+      "adler": 3223738888
+    },
+    {
+      "path": "ReplicatedStorage.Shared.Data.AdventureTelegraph",
+      "length": 2468,
+      "adler": 2685675807
+    },
+    {
+      "path": "ReplicatedStorage.Shared.Data.AppearanceCatalog",
+      "length": 48287,
+      "adler": 4135043010
+    },
+    {
+      "path": "ReplicatedStorage.Shared.Data.AppearanceRules",
+      "length": 5902,
+      "adler": 2005021149
+    },
+    {
+      "path": "ReplicatedStorage.Shared.Data.ArchiveStoryMemory",
+      "length": 4030,
+      "adler": 1457501739
+    },
+    {
+      "path": "ReplicatedStorage.Shared.Data.AudioBudget",
+      "length": 1292,
+      "adler": 1168290519
+    },
+    {
+      "path": "ReplicatedStorage.Shared.Data.AudioFeedback",
+      "length": 1377,
+      "adler": 3094269341
+    },
+    {
+      "path": "ReplicatedStorage.Shared.Data.BuildingThemeRights",
+      "length": 4108,
+      "adler": 2993570796
+    },
+    {
+      "path": "ReplicatedStorage.Shared.Data.CampaignViewState",
+      "length": 2247,
+      "adler": 1637165830
+    },
+    {
+      "path": "ReplicatedStorage.Shared.Data.CityWaypoint",
+      "length": 841,
+      "adler": 4280422244
+    },
+    {
+      "path": "ReplicatedStorage.Shared.Data.CombatHudLayout",
+      "length": 3437,
+      "adler": 2432728183
+    },
+    {
+      "path": "ReplicatedStorage.Shared.Data.CosmeticVisuals",
+      "length": 40561,
+      "adler": 311901758
+    },
+    {
+      "path": "ReplicatedStorage.Shared.Data.CraftingViewState",
+      "length": 2228,
+      "adler": 208148408
+    },
+    {
+      "path": "ReplicatedStorage.Shared.Data.Equipment",
+      "length": 3292,
+      "adler": 386497615
+    },
+    {
+      "path": "ReplicatedStorage.Shared.Data.Expansion",
+      "length": 12683,
+      "adler": 1864112403
+    },
+    {
+      "path": "ReplicatedStorage.Shared.Data.GuildIdentitySummary",
+      "length": 1483,
+      "adler": 152659897
+    },
+    {
+      "path": "ReplicatedStorage.Shared.Data.GuildLand",
+      "length": 6705,
+      "adler": 1962911180
+    },
+    {
+      "path": "ReplicatedStorage.Shared.Data.IslandAccess",
+      "length": 6378,
+      "adler": 4248021611
+    },
+    {
+      "path": "ReplicatedStorage.Shared.Data.IslandDirectoryState",
+      "length": 1022,
+      "adler": 1770481696
+    },
+    {
+      "path": "ReplicatedStorage.Shared.Data.IslandPlacement",
+      "length": 5382,
+      "adler": 3481646474
+    },
+    {
+      "path": "ReplicatedStorage.Shared.Data.ItemVisuals",
+      "length": 37738,
+      "adler": 3671815358
+    },
+    {
+      "path": "ReplicatedStorage.Shared.Data.JournalViewState",
+      "length": 1535,
+      "adler": 3001295827
+    },
+    {
+      "path": "ReplicatedStorage.Shared.Data.LandBuildingPlacement",
+      "length": 3758,
+      "adler": 629009238
+    },
+    {
+      "path": "ReplicatedStorage.Shared.Data.MusicTransition",
+      "length": 1362,
+      "adler": 3112164139
+    },
+    {
+      "path": "ReplicatedStorage.Shared.Data.NoviceJourneyViewState",
+      "length": 1477,
+      "adler": 2403340462
+    },
+    {
+      "path": "ReplicatedStorage.Shared.Data.NpcLifeSchedule",
+      "length": 6173,
+      "adler": 4268951558
+    },
+    {
+      "path": "ReplicatedStorage.Shared.Data.QuestNpcState",
+      "length": 1515,
+      "adler": 2230457883
+    },
+    {
+      "path": "ReplicatedStorage.Shared.Data.QuestRoute",
+      "length": 27739,
+      "adler": 668559814
+    },
+    {
+      "path": "ReplicatedStorage.Shared.Data.QuestTracker",
+      "length": 4468,
+      "adler": 2926350364
+    },
+    {
+      "path": "ReplicatedStorage.Shared.Data.RequestWindow",
+      "length": 916,
+      "adler": 2823964873
+    },
+    {
+      "path": "ReplicatedStorage.Shared.Data.StatusPoints",
+      "length": 1546,
+      "adler": 3964862144
+    },
+    {
+      "path": "ReplicatedStorage.Shared.Data.TavernViewState",
+      "length": 2027,
+      "adler": 3305232697
+    },
+    {
+      "path": "ReplicatedStorage.Shared.Data.UISymbols",
+      "length": 24784,
+      "adler": 4170084182
+    },
+    {
+      "path": "ReplicatedStorage.Shared.Network.Protocol",
+      "length": 7230,
+      "adler": 1805567472
+    },
+    {
+      "path": "ReplicatedStorage.Shared.Presentation.ActionTimeline",
+      "length": 2664,
+      "adler": 1395561757
+    },
+    {
+      "path": "ReplicatedStorage.Shared.Presentation.ArchiveEndingKit",
+      "length": 22383,
+      "adler": 904240126
+    },
+    {
+      "path": "ReplicatedStorage.Shared.Presentation.ArchiveEndingMotion",
+      "length": 790,
+      "adler": 3509980960
+    },
+    {
+      "path": "ReplicatedStorage.Shared.Presentation.BorinPresentation",
+      "length": 5009,
+      "adler": 3571701747
+    },
+    {
+      "path": "ReplicatedStorage.Shared.Presentation.BorinWorkMotion",
+      "length": 3761,
+      "adler": 1974016748
+    },
+    {
+      "path": "ReplicatedStorage.Shared.Presentation.BuildingAppearance",
+      "length": 4449,
+      "adler": 2327722432
+    },
+    {
+      "path": "ReplicatedStorage.Shared.Presentation.CivicInstitutionArchitecture",
+      "length": 507762,
+      "adler": 3036175859
+    },
+    {
+      "path": "ReplicatedStorage.Shared.Presentation.CivicServiceArchitecture",
+      "length": 497777,
+      "adler": 2546652977
+    },
+    {
+      "path": "ReplicatedStorage.Shared.Presentation.CivicWorkMotion",
+      "length": 2313,
+      "adler": 548272353
+    },
+    {
+      "path": "ReplicatedStorage.Shared.Presentation.CombatCueEvents",
+      "length": 2582,
+      "adler": 410487153
+    },
+    {
+      "path": "ReplicatedStorage.Shared.Presentation.CrownfordArchitecture",
+      "length": 94753,
+      "adler": 1681870023
+    },
+    {
+      "path": "ReplicatedStorage.Shared.Presentation.FurnitureAppearance",
+      "length": 1997,
+      "adler": 3718425561
+    },
+    {
+      "path": "ReplicatedStorage.Shared.Presentation.FurnitureKit",
+      "length": 33242,
+      "adler": 3882743281
+    },
+    {
+      "path": "ReplicatedStorage.Shared.Presentation.HallAppearance",
+      "length": 3812,
+      "adler": 1610250810
+    },
+    {
+      "path": "ReplicatedStorage.Shared.Presentation.ModularAppearance.GeneratedGeometry",
+      "length": 422786,
+      "adler": 340025235
+    },
+    {
+      "path": "ReplicatedStorage.Shared.Presentation.ModularAppearance.GeneratedRig",
+      "length": 103926,
+      "adler": 1694225755
+    },
+    {
+      "path": "ReplicatedStorage.Shared.Presentation.ModularAppearance.LocalGeometryPreview",
+      "length": 10157,
+      "adler": 1722542463
+    },
+    {
+      "path": "ReplicatedStorage.Shared.Presentation.ModularAppearance.LocalGeometryRig",
+      "length": 6983,
+      "adler": 1605533585
+    },
+    {
+      "path": "ReplicatedStorage.Shared.Presentation.ModularAppearance.Renderer",
+      "length": 11942,
+      "adler": 1159842496
+    },
+    {
+      "path": "ReplicatedStorage.Shared.Presentation.ModularAppearance.Skeleton",
+      "length": 2514,
+      "adler": 1935544236
+    },
+    {
+      "path": "ReplicatedStorage.Shared.Presentation.NoviceActionPresentation",
+      "length": 579,
+      "adler": 2516107372
+    },
+    {
+      "path": "ReplicatedStorage.Shared.Types.Domain",
+      "length": 1502,
+      "adler": 932846816
+    },
+    {
+      "path": "ReplicatedStorage.Shared.Util.TableUtil",
+      "length": 1063,
+      "adler": 1317102565
+    },
+    {
+      "path": "ReplicatedStorage.QualityPreviewAssets.WorldArtContract",
+      "length": 21996,
+      "adler": 3182569811
+    },
+    {
+      "path": "ReplicatedStorage.QualityPreviewAssets.NativeAssetPreview",
+      "length": 7108,
+      "adler": 1841454159
+    },
+    {
+      "path": "ReplicatedStorage.QualityPreviewAssets.NativeImagePreview",
+      "length": 2389,
+      "adler": 2718571680
+    },
+    {
+      "path": "ReplicatedStorage.QualityPreviewAssets.Dataset1.Data",
+      "length": 150,
+      "adler": 2259301449
+    },
+    {
+      "path": "ReplicatedStorage.QualityPreviewAssets.Dataset1.Chunk1",
+      "length": 120016,
+      "adler": 3832302653
+    },
+    {
+      "path": "ReplicatedStorage.QualityPreviewAssets.Dataset1.Chunk2",
+      "length": 120016,
+      "adler": 963747469
+    },
+    {
+      "path": "ReplicatedStorage.QualityPreviewAssets.Dataset1.Chunk3",
+      "length": 120016,
+      "adler": 1276078353
+    },
+    {
+      "path": "ReplicatedStorage.QualityPreviewAssets.Dataset1.Chunk4",
+      "length": 120016,
+      "adler": 1459062750
+    },
+    {
+      "path": "ReplicatedStorage.QualityPreviewAssets.Dataset1.Chunk5",
+      "length": 120016,
+      "adler": 368909149
+    },
+    {
+      "path": "ReplicatedStorage.QualityPreviewAssets.Dataset1.Chunk6",
+      "length": 120016,
+      "adler": 140542335
+    },
+    {
+      "path": "ReplicatedStorage.QualityPreviewAssets.Dataset1.Chunk7",
+      "length": 120016,
+      "adler": 1902391897
+    },
+    {
+      "path": "ReplicatedStorage.QualityPreviewAssets.Dataset1.Chunk8",
+      "length": 120016,
+      "adler": 59205307
+    },
+    {
+      "path": "ReplicatedStorage.QualityPreviewAssets.Dataset1.Chunk9",
+      "length": 120016,
+      "adler": 1552836954
+    },
+    {
+      "path": "ReplicatedStorage.QualityPreviewAssets.Dataset1.Chunk10",
+      "length": 120016,
+      "adler": 460876098
+    },
+    {
+      "path": "ReplicatedStorage.QualityPreviewAssets.Dataset1.Chunk11",
+      "length": 120016,
+      "adler": 904348127
+    },
+    {
+      "path": "ReplicatedStorage.QualityPreviewAssets.Dataset1.Chunk12",
+      "length": 120016,
+      "adler": 2986965418
+    },
+    {
+      "path": "ReplicatedStorage.QualityPreviewAssets.Dataset1.Chunk13",
+      "length": 120016,
+      "adler": 626064502
+    },
+    {
+      "path": "ReplicatedStorage.QualityPreviewAssets.Dataset1.Chunk14",
+      "length": 84081,
+      "adler": 741589104
+    },
+    {
+      "path": "ReplicatedStorage.QualityPreviewAssets.Dataset2.Data",
+      "length": 150,
+      "adler": 2251109448
+    },
+    {
+      "path": "ReplicatedStorage.QualityPreviewAssets.Dataset2.Chunk1",
+      "length": 120016,
+      "adler": 910841648
+    },
+    {
+      "path": "ReplicatedStorage.QualityPreviewAssets.Dataset2.Chunk2",
+      "length": 120016,
+      "adler": 4157874241
+    },
+    {
+      "path": "ReplicatedStorage.QualityPreviewAssets.Dataset2.Chunk3",
+      "length": 120016,
+      "adler": 2232811535
+    },
+    {
+      "path": "ReplicatedStorage.QualityPreviewAssets.Dataset2.Chunk4",
+      "length": 120016,
+      "adler": 2633865923
+    },
+    {
+      "path": "ReplicatedStorage.QualityPreviewAssets.Dataset2.Chunk5",
+      "length": 120016,
+      "adler": 1489659692
+    },
+    {
+      "path": "ReplicatedStorage.QualityPreviewAssets.Dataset2.Chunk6",
+      "length": 120016,
+      "adler": 382157206
+    },
+    {
+      "path": "ReplicatedStorage.QualityPreviewAssets.Dataset2.Chunk7",
+      "length": 120016,
+      "adler": 432070046
+    },
+    {
+      "path": "ReplicatedStorage.QualityPreviewAssets.Dataset2.Chunk8",
+      "length": 120016,
+      "adler": 109921076
+    },
+    {
+      "path": "ReplicatedStorage.QualityPreviewAssets.Dataset2.Chunk9",
+      "length": 120016,
+      "adler": 1512182447
+    },
+    {
+      "path": "ReplicatedStorage.QualityPreviewAssets.Dataset2.Chunk10",
+      "length": 120016,
+      "adler": 3457794081
+    },
+    {
+      "path": "ReplicatedStorage.QualityPreviewAssets.Dataset2.Chunk11",
+      "length": 120016,
+      "adler": 2816002703
+    },
+    {
+      "path": "ReplicatedStorage.QualityPreviewAssets.Dataset2.Chunk12",
+      "length": 120016,
+      "adler": 2601120785
+    },
+    {
+      "path": "ReplicatedStorage.QualityPreviewAssets.Dataset2.Chunk13",
+      "length": 72106,
+      "adler": 68078354
+    },
+    {
+      "path": "ReplicatedStorage.QualityPreviewAssets.Dataset3.Data",
+      "length": 149,
+      "adler": 1698968598
+    },
+    {
+      "path": "ReplicatedStorage.QualityPreviewAssets.Dataset3.Chunk1",
+      "length": 120016,
+      "adler": 2337963042
+    },
+    {
+      "path": "ReplicatedStorage.QualityPreviewAssets.Dataset3.Chunk2",
+      "length": 90583,
+      "adler": 964331038
+    },
+    {
+      "path": "ReplicatedStorage.QualityPreviewAssets.Dataset4.Data",
+      "length": 149,
+      "adler": 1715352600
+    },
+    {
+      "path": "ReplicatedStorage.QualityPreviewAssets.Dataset4.Chunk1",
+      "length": 120016,
+      "adler": 2174526077
+    },
+    {
+      "path": "ReplicatedStorage.QualityPreviewAssets.Dataset4.Chunk2",
+      "length": 120016,
+      "adler": 3047898789
+    },
+    {
+      "path": "ReplicatedStorage.QualityPreviewAssets.Dataset4.Chunk3",
+      "length": 120016,
+      "adler": 2017651800
+    },
+    {
+      "path": "ReplicatedStorage.QualityPreviewAssets.Dataset4.Chunk4",
+      "length": 49077,
+      "adler": 2634191477
+    },
+    {
+      "path": "ReplicatedStorage.QualityPreviewAssets.Dataset5.Data",
+      "length": 149,
+      "adler": 1690776597
+    },
+    {
+      "path": "ReplicatedStorage.QualityPreviewAssets.Dataset5.Chunk1",
+      "length": 79924,
+      "adler": 4112249434
+    },
+    {
+      "path": "StarterPlayer.StarterPlayerScripts.QualityPreview",
+      "length": 5421,
+      "adler": 768744704
+    },
+    {
+      "path": "ServerScriptService.QualityPreview",
+      "length": 1610,
+      "adler": 306656518
+    }
+  ],
+  "attributes": [
+    {
+      "path": [
+        "ReplicatedStorage",
+        "QualityPreviewAssets"
+      ],
+      "values": {
+        "IsolatedMemory": true,
+        "EnableWorldSlice": true,
+        "BindEnemies": false,
+        "WorldDataset": "Dataset1",
+        "WorldSourceSha256": "9baaf8de0faf3ff7f4a4f2c32ea692e48aa9dbb021f609e3530029ed7844ddc7"
+      }
+    },
+    {
+      "path": [
+        "ReplicatedStorage",
+        "QualityPreviewAssets",
+        "Dataset1"
+      ],
+      "values": {
+        "SourceSha256": "9baaf8de0faf3ff7f4a4f2c32ea692e48aa9dbb021f609e3530029ed7844ddc7"
+      }
+    },
+    {
+      "path": [
+        "ReplicatedStorage",
+        "QualityPreviewAssets",
+        "Dataset2"
+      ],
+      "values": {
+        "SourceSha256": "8743e160609a44e48b80e81b9ff0fe21b043bfb7e69fa216f2d164149c7f6760"
+      }
+    },
+    {
+      "path": [
+        "ReplicatedStorage",
+        "QualityPreviewAssets",
+        "Dataset3"
+      ],
+      "values": {
+        "SourceSha256": "b885085377b3e56faf9f6a0fe072d0db4672f6b87c5241c6d61ff34c70a65539"
+      }
+    },
+    {
+      "path": [
+        "ReplicatedStorage",
+        "QualityPreviewAssets",
+        "Dataset4"
+      ],
+      "values": {
+        "SourceSha256": "4e65f4e254ae58bed6c5825d68948dc8689eb10332fb2763bdae37f86e371d20"
+      }
+    },
+    {
+      "path": [
+        "ReplicatedStorage",
+        "QualityPreviewAssets",
+        "Dataset5"
+      ],
+      "values": {
+        "SourceSha256": "d08edc14a62bd2fc9e1a3fb0e5a6b205df9532358567e19d93a3e22b356bb46f"
+      }
+    }
+  ]
+}

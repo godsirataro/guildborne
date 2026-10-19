@@ -1,0 +1,18 @@
+{
+  "fixtureOnly": true,
+  "before": {
+    "activity": "Work",
+    "weight": 1,
+    "maxC0ComponentDeltaFromServer": 0.34765753149986267
+  },
+  "reduced": {
+    "activity": "Work",
+    "weight": 0,
+    "maxC0ComponentDeltaFromServer": 0
+  },
+  "restored": {
+    "activity": "Work",
+    "weight": 1,
+    "maxC0ComponentDeltaFromServer": 0.009038505144417286
+  }
+}

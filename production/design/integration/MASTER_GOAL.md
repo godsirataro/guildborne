@@ -4,120 +4,134 @@ Updated 2026-10-20. Status: ACTIVE.
 The starter slice and connected regional routes are intermediate gates, not completion of the requested game.
 
 ## Requested outcome
-
 Coordinate S13 Map, S14 GUI, S15 Animation/VFX and S17 NPC/Quest/Character through
 one controller and one shared ownership ledger. Deliver an original, polished
-Roblox fantasy RPG: a connected open world linking all cities, monster and quest
-progression through level 100, tower content, and the player with up to five hero
-companions. Native GUI should follow the user's available references with custom
-art, readable layouts and consistent interaction quality. Combat, animation, VFX
-and SFX must reflect authoritative server outcomes.
+Roblox fantasy RPG: connected open-world cities, monsters and quests through
+level100, tower content, player with up to five hero companions, custom native GUI
+informed by available user references, and server-authorized combat/animation/VFX/SFX.
+Preserve approved class gates10/35/70, Hall rules, earned progression and saves,
+plus the wider guild/federation/territory/Gold-market contracts. Native UI only.
 
-Preserve approved class gates at 10/35/70, Hall rules, earned progression and saves.
-Retain the wider guild, federation/territory and Gold market scope in the canonical
-production contracts; a starter-world test does not certify these systems.
-Use reviewed catalog assets and original authoring with verified Blender, Rojo and
-Studio capabilities. Installed tools, generated files and concepts are not acceptance.
+Use reviewed Catalog-94/local assets, original Blender authoring and verified
+Rojo/Studio capabilities. Generated files, installed tools and concepts are not
+acceptance. Integrate independently reviewed commits and normal-push to
+codex/three-session-integration. No new PR, merge, force-push, Roblox publication,
+paid upload, production DataStore mutation or commerce enablement.
+The user authorized existing ForgeGUI credits, then asked to finish old work
+before trying ForgeGUI. Forge remains deferred; no new provider calls or purchases.
+The original local_tools.py wrapper is not a ForgeGUI clone.
 
-Integrate independently reviewed changes, commit and normal-push to
-codex/three-session-integration. No new PR, merge, force-push, Roblox publication
-or production DataStore writes. User authorized using existing ForgeGUI credits,
-then explicitly asked to finish existing work before trying ForgeGUI. No new
-Forge generation was submitted in this wave. Do not purchase credits or substitute
-an unreviewed service implementation. Recheck actual tool availability when resumed.
+Continue dependency-ready work until complete or measured Codex remaining usage
+reaches approximately5%. Latest account measurement:26%used,74%remaining.
+Check between bounded waves, preserve progress and stop new waves at threshold.
+Do not redeem resets. The historical Oct19 11:00 shutdown was already fulfilled;
+it is not recurring and must not be silently scheduled again.
 
-Continue dependency-ready work until the outcome is complete or measured Codex
-remaining usage reaches approximately 5%. Latest account measurement this wave:
-13% used, 87% remaining. Check between bounded waves; preserve work and stop new
-waves at the threshold. Do not redeem resets.
-
-## Current checkpoint and acceptance
-
+## Canonical coordination
 Integration checkout: C:/Work/MySelf/Guildborne-controller.
-Shared ledger: C:/Work/MySelf/Guildborne/build/agentic/four-session-v8.sqlite3.
-Canonical plan revision 7 has 76 tasks. Claim before writes; serialize Studio and
-Blender mutation. Earlier ledgers and status reports remain historical.
+Shared ledger: C:/Work/MySelf/Guildborne/build/agentic/four-session-v9.sqlite3.
+Plan revision8,76tasks,98generated adapters. Scope migration6c5be3b added only the
+existing item generator/data paths and existing CivicWorkMotion/test paths.
+Old v8 writers stopped/released before migration; no accepted statuses copied.
+Fresh v9 audit bb19332446694c42a5c84658ed08b173 and registry run
+559468c633fc4be39a52bbefd6f2aef9 independently accepted by local-cli-v9-review.
+Registry664rows/402filehashes, no status/ID promotion. Never use old tokens.
+Claim before writes and serialize Studio/Blender. Plan changes require allwriters
+released, exclusive registry ownership and fresh shared-ledger prerequisite proof.
 
-Reviewed runtime commits now integrated:
-- 61ebe27: S13 quarry strata closes the coast underside.
-- 02bb3a0: S14 Inventory portrait, quantities and selection-layer ordering.
-- d47961a: S17 server-clock work/pause routine under fixed environmental lighting.
-- b6a866f: test-only heterogeneous-array typing correction.
+## Reviewed integration and current evidence
+Current committed integration e34a2e7 includes:
+- 390a64b: S13 Borin workshop apron,8meshes/2056triangles.
+- 7ceabcb: S17 stationary occupation gestures for Borga/Mogra/Rukk/Ghar.
+- 5a523a6: S14 five native material portraits.
+- e34a2e7: independently reviewed earned Novice/party-combat evidence.
 
-Full baseline on unchanged b6a866f passed: 968 tests, Rojo build, analysis,
-compilation and repository-boundary checks; 391 strict files and 488 links.
-Recorded run 0d024f2ba231479eb51f49dd3275307e, exit 0. Existing nonfatal diagnostics
-remain. Failed preceding run 9544312f55e2470ba55ea86208067540 is retained, not replaced.
+Full recorded baseline on unchanged e34a2e7 passed970tests,391strict files,
+488links, compile/analyze/Rojo/boundary and Forge/Studio metadata checks.
+Run ab073f1a71e446a5b03204a9c765f523. Existing nonfatal diagnostics retained.
+S17's separate checkout reported a plan-byte hash discrepancy; controller fresh
+studio.py verify passes. Do not silently rewrite other worktrees' metadata.
 
-[Earned native journey](../../integration/quality-slice/native-20261020/README.md):
-actual GUI interactions, assisted ordinary walking, courier help, dodge/training
-objectives and two claimed Novice chapters reached projection revision 10,
-XP 200, level 5, claimed chapters 2, Hall 0 and Gold 0 in a fresh Memory session.
-No XP/item/profile grants. Stopping Play discarded that Memory session; it is
-evidence, not a resumable player save or persistence proof.
+[Earned journey](../../integration/quality-slice/native-earned-journey-20261020/README.md):
+fresh Memory player completed six Novice chapters via real inputs and assisted
+normal navigation; WarriorClass1/level10, Hall1 and one Mage companion Lyra were
+earned. Four camp rewards yielded Gold12, playerXP452, MageXP458; server Fireball
+and successful PowerStrike execution recorded. Failed attempts are retained.
+Player PowerStrike added27damage;69was cumulative. Final PowerStrike VFX was not
+covered by the effect observer. This is not audio/animation/full-party acceptance.
+Stopping Play discarded the Memory player; no persistence proof.
 
-[Post-integration observations](../../integration/quality-slice/native-post-20261020/README.md):
-433 normalized source checks matched; native screenshots show closed quarry
-strata and corrected Inventory layering. A separate synthetic NPC inspection
-recorded 97 samples over 48.92 seconds with work/pause transitions. It does not
-prove earned travel, all-joint animation quality or a populated walking city.
-The first-wave and post-integration packets received independent bounded review.
+[Native wave9](../../integration/quality-slice/native-wave9-20261020/README.md):
+combined435sources/sixattribute sets matched. Five native datasets loaded,
+including new apron8placements; prior26repositorydatasets were not allloaded.
+Actual80x80ItemViewport gallery rendered allfive materials, but native critique
+found weak stone/ore distinction and gear-shaped timber ends. Temporary gallery
+was removed. It was synthetic presentation, not Inventory flow/device testing.
 
-S14 HUD repair 276d732 is integrated as 1f8d0c4. Full baseline again passed968 tests
-on unchanged source (run38ebd847dec247a9b0ea5b566f85808f). Native1210x834 and
-2076x935 rects confirm8px map/quest clearance; recovered wide screenshot and actual
-map/journal clicks are archived in [HUD/NPC closeout](../../integration/quality-slice/native-hud-20261020/README.md).
-Borin now has bounded named-joint work/pause, real dialogue across routine changes
-and assisted cull-return diagnostics. Final art/audio/device/fullNPC acceptance
-remain open. Native900x640 beacon fallback is still pending; its simulated test
-passes. S13/S14/S17 completed bounded leases are released; S15 audit is complete.
+Four resident probes total400samples (~50.5–50.7s each) show upper-joint motion
+with stable root/feet; actual actor-specific dialogue snapshots show Interact/
+weight0. Far Rukk/Mogra/Borga joints match serverbase. Rukk programmatic Reduced
+Motion fixture suppresses/restores motion; settings-UI acceptance remains open.
+Only Ghar had relative shield-binding measurements. Art/clipping/fullgrip quality
+remain unapproved. Initial and final city relocations were explicitly synthetic;
+ordinary intervening navigation does not establish earned travel or five-hero lanes.
+Independent S17 raw-data audit passed; final packet review is in progress.
 
-## Tool and evidence state
+Earlier [HUD/Borin closeout](../../integration/quality-slice/native-hud-20261020/README.md)
+retains map/quest8pxclearance and original named Borin motion/dialogue/cull checks.
+Older two-chapter and coast evidence remain historical, linked in those reports.
 
-Studio was saved and restarted after blank3D/ghosted desktop captures. Current
-visible Studio fe0ad064-622d-4adb-9e68-0b233ad44457 is stopped in Edit; its reopened
-433 sources match the candidate and native3D captures recovered. Desktop capture
-still showed ghosted panels. Rojo server127.0.0.1:34872 is listening, but the new
-Studio plugin is NOT connected; reconnect remains pending. Saved-source equality
-is not live-sync evidence. Blender's last verified read-only bridge remains
-127.0.0.1:19877; interactive unsaved scene was preserved. Recheck before reuse.
+## Active next work
+- S13 owns world-quality-slice (s13-smith-facade): separate Blacksmith-only facade
+  candidate, original stone/timber/louvres/gable details,<=3000triangles; no shared
+  CityKit/collider/anchor edits. Thinwall reserve exception is restricted to above
+  verified actor/workstation height; keep door/road/working area clear.
+- S14 delivered reviewed ore/timber refinement26ff63b66bce8b49d43ecbb41127e57e3a259996,
+  basee34a2e7; lease released. Not integrated/native-retaken yet. Other28definitions
+  and constructor/palette preserved. Next integrate under controller runtime lease.
+- S17 read-only next-life proposal: one existing nonquest R6 Adventurer nearTavern
+  walks to board and back. Need exactscope reconciliation and S13 corridor check.
+  Do not enable all16identityroutes or repurpose player-owned EscortActor.
+  Candidate route(-110,-830)→(-110,-808)→(-180,-808)→(-180,-818)andback
+  is only a proposal; no walking-population implementation accepted.
+- S15 earned-evidence audit complete; no new write assignment.
 
-Rojo source changes synchronized, but regenerated project attributes did not
-refresh automatically. The recorded Dataset2 source hash was explicitly asserted
-and updated in Edit before Play. Source comparisons use normalized UTF8 length
-and Adler32, not cryptographic whole-place identity. Build-file hashes do not
-prove live Studio copy identity.
+Root currently uses controller-registry for checkpoint/evidence only; quality
+integration lease was released after stopping Play. Check fresh ledger/status
+before integration. S13 may still be active; never migrate its ledger underneath it.
 
-The original local tools wrapper is available in
-[local_tools.py](../../integration/quality-slice/local_tools.py); it is not a
-ForgeGUI clone. Forge capability discovery alone proves no generation or import.
+## Tool state
+Studio009b513b-7757-44d1-8c74-76ae16c72ed8 is stopped in Edit on
+build/Guildborne_QualityPreview.rbxlx, buildSHA
+e8dce841fbb50e69346c4da97a1c988a0e45a5f0c02c0203b7f98a3fa8d25937.
+The earlier saved Guildborne_Connected.rbxl instance9407ebd0 remains Edit.
+Both are controller-owned review contexts; re-list before mutations.
+The new hidden preview process was19104; old visible process57024. Never rely on
+stale PIDs for closing. Native captures work; desktop panels previously ghosted.
 
-## Remaining gates
+Rojo7.7.0 metadata at127.0.0.1:34872 responds (session838854dc-c4d3-4cfe-a6f0-e033fab29092);
+this confirms server reachability, NOT Studio plugin live sync. Reconnect remains
+unverified after restart; source checks of newly opened builds are distinct.
+Reviewed read-only Blender bridge127.0.0.1:19877 responds,5.2.1LTS, Cube/Light/Camera
+scene unchanged. S13 background processes are separately owned; do not touch the
+interactive unsaved scene. Runtime asset IDs remain null until real import/upload.
 
-Require a real connected journey from quest selection through navigation, player
-and companion combat, skills, authoritative VFX/SFX and confirmed rewards.
-All-city completion, monster progression through level 100, tower content, full
-party journeys, authored item art, NPC population and final reference-quality GUI
-remain open. Current visuals still contain prototype geometry; the user's art
-quality concern is unresolved.
-
-Separate local checks, Blender validation, Roblox import, Studio playtests,
-physical-device evidence and external human art/UAT/release signoff. Runtime
-asset IDs remain null until real import. No inferred audio, device, cross-server,
-persistent-save, commercial-launch or 100% acceptance.
-
-The Oct19 11:00 stop/shutdown request belongs to the completed historical stop;
-it is not a recurring shutdown instruction. Current work resumed afterward.
-Do not silently schedule another shutdown.
+## Remaining acceptance
+The user's visual-quality concern remains open: blank/repetitive buildings,
+sparse population, prototype geometry, final GUI reference quality and item polish.
+Require full connected quest→navigation→player+heroes→skill→authoritative effects/
+sound→committed rewards; current bounded journey does not certify all cities,
+level100 monsters, tower, five heroes, guild/social/market systems or full game.
+Keep local tests, Blender checks, Studio import/play, physical devices,
+cross-server/persistence and external human art/UAT/release approval separate.
+No100% claim, invented tests or paid-tool capability claim.
 
 ## Session identities
+- S13 Map:01a14151-b69f-7273-9be0-428bc513a42e.
+- S14 GUI:01a1430e-6325-7ad3-b8d5-2c01ebc6b5b7.
+- S15 Animation/VFX:01a1435f-6f30-7c62-a991-15eae2a24a5f.
+- S17 NPC/Quest/Character:01a1482e-53c1-7a10-a97d-ce48148318b9.
 
-- S13 Map: 01a14151-b69f-7273-9be0-428bc513a42e.
-- S14 GUI: 01a1430e-6325-7ad3-b8d5-2c01ebc6b5b7.
-- S15 Animation/VFX: 01a1435f-6f30-7c62-a991-15eae2a24a5f.
-- S17 NPC/Quest/Character: 01a1482e-53c1-7a10-a97d-ce48148318b9.
-
-Read this goal and fresh worker status before dispatching. Do not reduce completion
-to a starter slice or generated assets. The goal tool remains ACTIVE; its API
-cannot edit an active objective. This file preserves the full requested scope
-without falsely completing the existing goal to replace its text.
+Read this goal and fresh worker status before dispatch. Goaltool remains ACTIVE;
+its exposed update API changes status only, not active objective text. This file
+preserves the expanded full-game scope without falsely completing/replacing it.

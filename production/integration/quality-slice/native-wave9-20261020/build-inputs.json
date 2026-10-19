@@ -1,0 +1,13 @@
+{
+  "sources": [
+    "assets/production/world-slice/world-slice.mesh.json",
+    "assets/production/world-slice/coast-prop-composition/scenery.mesh.json",
+    "assets/production/world-slice/greenwood-ironveil/scenery.mesh.json",
+    "assets/production/world-slice/ironveil-ore-yard/scenery.mesh.json",
+    "assets/production/world-slice/city-smith-apron/scenery.mesh.json"
+  ],
+  "launch": true,
+  "world": true,
+  "continuous_world": true,
+  "shared_combat": false
+}

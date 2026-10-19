@@ -1,0 +1,9 @@
+{
+  "content": [
+    {
+      "type": "text",
+      "text": "{\"a\":{\"NpcId\":\"smith_borin\",\"RecruitmentBound\":false,\"NpcLifeActivity\":\"Work\",\"NpcLifeWorkWeight\":1,\"HomeCity\":\"Deepforge\",\"BorinLocalWorkClock\":2.9369537830352785,\"FriendlyNPC\":true,\"BorinLocalPresentationState\":\"Work\",\"BorinLocalWorkWeight\":1,\"NpcLifeTier\":\"Near\",\"NpcLifeScheduledActivity\":\"Work\",\"RaceId\":\"Dwarf\",\"BorinPresentation\":\"NATIVE_CONTACT_SUBSTITUTE_NOT_IMPORTED_ART\",\"DesignId\":\"npc.city.smith_borin\",\"CityAmbience\":true},\"p\":[370.4013366699219,3.298025369644165,-947.3975830078125,-0.7037777304649353,6.077337388887827e-8,0.7104201912879944,-5.054178187080538e-10,1,-8.60463629237529e-8,-0.7104201912879944,-6.0916569566416e-8,-0.7037777304649353]}"
+    }
+  ],
+  "isError": false
+}

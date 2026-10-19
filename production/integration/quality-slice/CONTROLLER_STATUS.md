@@ -1,3 +1,20 @@
+# Current wave9 checkpoint — 2026-10-20
+
+Canonical plan8/shared v9 ledger. Integration e34a2e7 passed970 baseline tests.
+Earned six-chapter journey reached Warrior/Hall1/Mage and verified four Memory
+camp rewards. Native wave9 loaded workshop art, rendered five material portraits
+and measured four resident work/dialogue routines. See [MASTER_GOAL.md](../../design/integration/MASTER_GOAL.md),
+[earned journey](native-earned-journey-20261020/README.md), and [native wave9](native-wave9-20261020/README.md).
+
+Both controller Studios are stopped in Edit. Full art/game/device acceptance is
+open. S13 facade candidate active; S14 ore/timber26ff63b awaits integration/native
+retake; S17 one-resident walking proposal awaits scope/corridor review. ForgeGUI
+remains deferred. Latest Codex quota74% remaining. No new shutdown scheduled.
+
+Older entries below are historical; do not reuse their ledger tokens or Studio IDs.
+
+---
+
 # Latest bounded closeout — 2026-10-20
 
 Runtime checkpoint1f8d0c4 passed full968-test baseline and independent S14 review. [Native HUD/NPC closeout](native-hud-20261020/README.md) records fixed map/quest clearance, actual clicks, named Borin work/pause, dialogue and cull-return evidence. Studio fe0ad064-622d-4adb-9e68-0b233ad44457 is stopped in Edit. Rojo server listens, but plugin reconnect is pending after restart. Full game/art/device gates remain open; ForgeGUI deferred. Measured Codex quota87% remaining.
