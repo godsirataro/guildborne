@@ -1,0 +1,9 @@
+{
+  "content": [
+    {
+      "type": "text",
+      "text": "{\"items\":[{\"id\":\"stone\",\"size\":[80,80],\"parts\":5},{\"id\":\"iron_ore\",\"size\":[80,80],\"parts\":8},{\"id\":\"iron_ingot\",\"size\":[80,80],\"parts\":7},{\"id\":\"timber\",\"size\":[80,80],\"parts\":15},{\"id\":\"herb\",\"size\":[80,80],\"parts\":14}],\"scope\":\"Temporary presentation fixture, no inventory grant or transaction\",\"playerPosition\":[399.31396484375,3.548025369644165,-999.9979858398438,0.0041879527270793919,6.75398315053144e-9,-0.999991238117218,3.678842300236518e-11,1,6.754196313352168e-9,0.999991238117218,-6.507435562630448e-11,0.0041879527270793919]}"
+    }
+  ],
+  "isError": false
+}

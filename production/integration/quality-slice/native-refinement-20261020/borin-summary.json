@@ -1,0 +1,18 @@
+{
+  "samples": 91,
+  "elapsed": 19.34833002090454,
+  "activities": [
+    "Social",
+    "Recover",
+    "Work",
+    "Interact"
+  ],
+  "minRootY": 0.3000015318393707,
+  "maxRootY": 0.3000015318393707,
+  "maxObservedTopY": 4.309201717376709,
+  "minimumSkinY": 9.5,
+  "observedVerticalGap": 5.190798282623291,
+  "observerTargetSamples": 100,
+  "capturedBeforeObserverComplete": true,
+  "limitations": "Fetched at 91 rows before completion; final 100-row buffer was not retrieved. Only these 91 actual samples are evidence."
+}

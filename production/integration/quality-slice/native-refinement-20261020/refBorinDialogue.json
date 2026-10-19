@@ -1,0 +1,9 @@
+{
+  "content": [
+    {
+      "type": "text",
+      "text": "{\"dialogueExists\":true,\"playerPosition\":[367.276611328125,3.298025369644165,-953.7579345703125,0.6063469648361206,4.251799978760573e-8,-0.7952002286911011,2.2940159993822818e-8,1,7.09603611426246e-8,0.7952002286911011,-6.126862217570306e-8,0.6063469648361206],\"actor\":{\"NpcId\":\"smith_borin\",\"NpcLifeScheduledActivity\":\"Work\",\"NpcLifeWorkWeight\":0,\"HomeCity\":\"Deepforge\",\"BorinInteractor\":11732987790,\"BorinLocalWorkWeight\":0,\"NpcLifeTier\":\"Near\",\"NpcInteractor\":11732987790,\"RecruitmentBound\":false,\"NpcLifeActivity\":\"Interact\",\"BorinLocalWorkClock\":7.682098865509033,\"FriendlyNPC\":true,\"BorinInteractUntil\":1792440356.268408,\"GreetingAt\":1792440344.268348,\"BorinLocalPresentationState\":\"Interact\",\"NpcInteractUntil\":1792440356.268395,\"RaceId\":\"Dwarf\",\"BorinPresentation\":\"NATIVE_CONTACT_SUBSTITUTE_NOT_IMPORTED_ART\",\"DesignId\":\"npc.city.smith_borin\",\"CityAmbience\":true},\"dialogueVisible\":true,\"panelVisible\":true}"
+    }
+  ],
+  "isError": false
+}

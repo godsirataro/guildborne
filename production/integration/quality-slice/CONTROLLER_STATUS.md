@@ -1,3 +1,19 @@
+# Current refinement checkpoint — 2026-10-20
+
+Reviewed candidates integrated176a5cb and4374c8f; full970-test baseline passed
+on4374c8f. New Studio04aacb0e-6d2d-4e50-b5f1-0de9e5910e46 loaded allsix datasets
+and437matching source checks. Native facade/material inspection and single-player
+door traversal recorded in [refinement evidence](native-refinement-20261020/README.md).
+Play stopped, temporary fixtures removed. Front facade improved; west/far roof
+opening, plain side wall, full-party navigation and full art acceptance remain open.
+S13/S14/S17 writers released. S17 corrected Adventurer route proposal awaits
+exclusive scope migration; original route intersects tavern furniture. ForgeGUI
+remains deferred. The full goal stays ACTIVE; no new shutdown is scheduled.
+
+The earlier checkpoint below is historical.
+
+---
+
 # Current wave9 checkpoint — 2026-10-20
 
 Canonical plan8/shared v9 ledger. Integration e34a2e7 passed970 baseline tests.

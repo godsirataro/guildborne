@@ -1,0 +1,9 @@
+{
+  "content": [
+    {
+      "type": "text",
+      "text": "{\"datasets\":[{\"name\":\"Dataset1\",\"attributes\":{\"LoadSeconds\":5.296921900000598,\"Triangles\":45267,\"Placements\":116,\"PreviewState\":\"READY_LOCAL_ONLY\",\"SourceSha256\":\"9baaf8de0faf3ff7f4a4f2c32ea692e48aa9dbb021f609e3530029ed7844ddc7\"}},{\"name\":\"Dataset2\",\"attributes\":{\"LoadSeconds\":0.9847195000038482,\"Triangles\":11595,\"Placements\":72,\"PreviewState\":\"READY_LOCAL_ONLY\",\"SourceSha256\":\"8743e160609a44e48b80e81b9ff0fe21b043bfb7e69fa216f2d164149c7f6760\"}},{\"name\":\"Dataset3\",\"attributes\":{\"LoadSeconds\":0.20039230000111275,\"Triangles\":5752,\"Placements\":17,\"PreviewState\":\"READY_LOCAL_ONLY\",\"SourceSha256\":\"b885085377b3e56faf9f6a0fe072d0db4672f6b87c5241c6d61ff34c70a65539\"}},{\"name\":\"Dataset4\",\"attributes\":{\"LoadSeconds\":0.4332847999976366,\"Triangles\":10933,\"Placements\":13,\"PreviewState\":\"READY_LOCAL_ONLY\",\"SourceSha256\":\"4e65f4e254ae58bed6c5825d68948dc8689eb10332fb2763bdae37f86e371d20\"}},{\"name\":\"Dataset5\",\"attributes\":{\"LoadSeconds\":0.13420749999932014,\"Triangles\":2056,\"Placements\":8,\"PreviewState\":\"READY_LOCAL_ONLY\",\"SourceSha256\":\"d08edc14a62bd2fc9e1a3fb0e5a6b205df9532358567e19d93a3e22b356bb46f\"}},{\"name\":\"Dataset6\",\"attributes\":{\"LoadSeconds\":0.16690220000600676,\"Triangles\":1856,\"Placements\":8,\"PreviewState\":\"READY_LOCAL_ONLY\",\"SourceSha256\":\"1e803ebb0bfa131c7c0d2113ce50eb3227fcc82fea1aa9ab56ab94156135cf51\"}}],\"buttons\":[{\"visible\":true,\"path\":\"Players.iswhlaedev.PlayerGui.GuildborneUI.TitleScreen.TitleShell.TitleContent.TitleColumns.EntryRail.EntryControls.Continue\",\"text\":\"Begin adventure\"},{\"visible\":true,\"path\":\"Players.iswhlaedev.PlayerGui.GuildborneMarket.Exchange.Close\",\"text\":\"×\"}]}"
+    }
+  ],
+  "isError": false
+}

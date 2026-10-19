@@ -1,0 +1,135 @@
+{
+  "status": "REVIEW_ONLY_PENDING_INDEPENDENT_REVIEW",
+  "files": [
+    {
+      "path": "baseline/invocation.json",
+      "bytes": 1366,
+      "sha256": "bc042408a3031f8cc860b38b46457ae6b0ae5832b6b7dcecd80da61a9e4891ff"
+    },
+    {
+      "path": "baseline/stderr.txt",
+      "bytes": 1895,
+      "sha256": "34b9c8b58f6623e07530260b3f2b417cb1b65e85e6900ee8aeb9ce33e7c9953a"
+    },
+    {
+      "path": "baseline/stdout.txt",
+      "bytes": 76834,
+      "sha256": "af4ff1817aa71eae090d4a2e96e08d2c8f819bddbc6d4e19fe26b60f10a7cff1"
+    },
+    {
+      "path": "borin-summary.json",
+      "bytes": 520,
+      "sha256": "dab49a4951b809376a3523a4a6400a8d441caf9006efb53a7ce433eb0ec569f6"
+    },
+    {
+      "path": "build-inputs.json",
+      "bytes": 554,
+      "sha256": "34d8dec0851bba57fd5261fbdd92258d700461eca519047993648c5e11b4d31c"
+    },
+    {
+      "path": "build-receipt.json",
+      "bytes": 2315,
+      "sha256": "4329a24f1bc1f94effab80f7e12307f77ce586a09d50413ac709f2f128fe67ef"
+    },
+    {
+      "path": "console.json",
+      "bytes": 8886,
+      "sha256": "dd11346da8f2875e01ec78fa3e7eeb49ed6c8fd272f89e00b0aa8f889499f082"
+    },
+    {
+      "path": ".gitattributes",
+      "bytes": 38,
+      "sha256": "123792010b7ed03310e81dc0ea6b57b3ab19ea6e7acb99bd8f93bc2c0c0157af"
+    },
+    {
+      "path": "README.md",
+      "bytes": 4715,
+      "sha256": "5f8a028e5f44e7d55bd22004c5ead2b10b21a993cadca1b3bed9a186cffacf45"
+    },
+    {
+      "path": "refBorinDialogue.json",
+      "bytes": 1076,
+      "sha256": "53965a9207a7f298bfb200befb790ce5142c1d35c6357753fb60338c9c1389a2"
+    },
+    {
+      "path": "refBorinSamples.json",
+      "bytes": 11288,
+      "sha256": "733a87abc45018ba7e3ac5d47851f238f11ee2472c6d50c845e31fb0d28b6310"
+    },
+    {
+      "path": "refDoorInside.png",
+      "bytes": 238377,
+      "sha256": "9758df362721726d3bef381459fc5295db84b556f9a8ac8ac40c3944595006f8"
+    },
+    {
+      "path": "refDoorNavigation.json",
+      "bytes": 100,
+      "sha256": "e5e9bc90887fccb583c0ed61900f64ae9b3a9307b45e4907cb61be3b35eda8cd"
+    },
+    {
+      "path": "refDoorPosition.json",
+      "bytes": 348,
+      "sha256": "3f88a43d1fc66f7f0d958a52c789a8bf529c856326b0c78e93a2eeb5c685ae43"
+    },
+    {
+      "path": "refFacadeContract.json",
+      "bytes": 4808,
+      "sha256": "b0c21491d269c9693def676d748d82b5f8161997214a15530d9aae20f97f5f18"
+    },
+    {
+      "path": "refFacadeEast.png",
+      "bytes": 348012,
+      "sha256": "c06ef53ec3160c5b40f59821d5e4d5ade36dc95374c7f54c6e310069b4b97eb0"
+    },
+    {
+      "path": "refFacadeFrontClear.png",
+      "bytes": 281687,
+      "sha256": "fa6842e61f8db00367be74063f48e5ee6d3479e773a5db70b0307a50b5a44279"
+    },
+    {
+      "path": "refFacadeFront.png",
+      "bytes": 128073,
+      "sha256": "ca79fb2824ebb0afc249846201b196ee04757d309932c211aada118e000eab07"
+    },
+    {
+      "path": "refFacadeWest.png",
+      "bytes": 315764,
+      "sha256": "5204467d274552724f6cf0773de571893e503ed84d2444660e4d4b6d0990ca82"
+    },
+    {
+      "path": "refImport.json",
+      "bytes": 1843,
+      "sha256": "37ed197f683f75df3847a01e3089786f69c0baea11b270c143594a0ec620d000"
+    },
+    {
+      "path": "refMaterialNative80.png",
+      "bytes": 340494,
+      "sha256": "7888516461eb5ebeac14bb0a509679616b3e2a7bbe22c50f30ccfb5ae9671c06"
+    },
+    {
+      "path": "refMaterialRects.json",
+      "bytes": 679,
+      "sha256": "e8cd08e8d9ed1b31b3fca47fe72be76a8253fcbcf6515e473e73ae730aaa7a62"
+    },
+    {
+      "path": "refSafetyPosition.json",
+      "bytes": 816,
+      "sha256": "4b059b6a409191d82fa8096c3c37f18bf9ee6d612072436eb8ea090d36085621"
+    },
+    {
+      "path": "source-comparison.json",
+      "bytes": 176,
+      "sha256": "b3667e804f826e9e544866ad04da40512a9d5efddebcfb8b52c1f518a067bbcf"
+    },
+    {
+      "path": "source-expected.json",
+      "bytes": 59817,
+      "sha256": "45bd483545ab77e56fc724498625c83a76ada4af4a192f01b12574c9a120e9f0"
+    },
+    {
+      "path": "source-raw.json",
+      "bytes": 47969,
+      "sha256": "c40f372809b8a4332283b9262b696a206bb2e2e57ede2ff3f4691f4feefcd1ab"
+    }
+  ]
+}
