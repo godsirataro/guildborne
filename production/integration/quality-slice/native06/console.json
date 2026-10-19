@@ -1,0 +1,9 @@
+{
+  "content": [
+    {
+      "type": "text",
+      "text": "[TRUNCATED DUE TO LENGTH LIMIT]\nPlayers.iswhlaedev.PlayerScripts.CombatCueProbe:389: INCONCLUSIVE: Manual arm requires preceding 1s Heartbeats with gaps <= .15s\nPlayers.iswhlaedev.PlayerScripts.CombatCueProbe:49\nPlayers.iswhlaedev.PlayerScripts.CombatCueProbe:195\n\nStack Begin\nScript 'Players.iswhlaedev.PlayerScripts.CombatCueProbe', Line 389\nStack End"
+    }
+  ],
+  "isError": false
+}

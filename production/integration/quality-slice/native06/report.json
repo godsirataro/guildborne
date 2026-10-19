@@ -1,0 +1,9 @@
+{
+  "content": [
+    {
+      "type": "text",
+      "text": "{\"coverage\":{\"a\":1792380236.978566,\"lastRecorded\":1792380237.971273,\"b\":1792380237.978566,\"sampleCount\":1267,\"predecessor\":1792380236.970796,\"maxWindowGap\":0.01809406280517578,\"reason\":\"end_sample_pending\"},\"requestCount\":0,\"heartbeatCount\":1267,\"maximumHeartbeatGap\":0.01869487762451172,\"actionTTL\":0.62,\"cases\":[],\"VFXCount\":0,\"stopPlayRequired\":true,\"status\":\"INCONCLUSIVE\",\"waitCount\":350,\"audibleAcceptance\":false,\"disposalCount\":0,\"serverCombatTested\":false,\"error\":\"INCONCLUSIVE: Manual arm requires preceding 1s Heartbeats with gaps <= .15s\\nPlayers.iswhlaedev.PlayerScripts.CombatCueProbe:49\\nPlayers.iswhlaedev.PlayerScripts.CombatCueProbe:195\\n\",\"cleanupErrors\":[]}"
+    }
+  ],
+  "isError": false
+}
