@@ -36,7 +36,25 @@ def prepare(source, start):
     assert tree["ReplicatedStorage"]["QualityPreviewAssets"]["$attributes"]["IsolatedMemory"] is True
     server["ServerBootstrap"].setdefault("$properties", {})["Disabled"] = True
     scripts = tree["StarterPlayer"]["StarterPlayerScripts"]
-    scripts["Client"]["ClientBootstrap"] = {
+    # A directory $path plus an explicit same-name child produces TWO instances
+    # in Rojo, not an override. Expand this one folder before setting Disabled.
+    original_client = scripts["Client"]
+    client_root = Path(original_client["$path"])
+    assert client_root.resolve() == (ROOT / "src/client").resolve()
+    client = {"$className": "Folder"}
+    for path in sorted(client_root.iterdir()):
+        if path.is_dir():
+            client[path.name] = {"$path": str(path)}
+        elif path.suffix == ".luau":
+            name = path.stem.removesuffix(".client").removesuffix(".server")
+            assert name not in client, f"Duplicate client source name: {name}"
+            client[name] = {"$path": str(path)}
+    assert not any(not k.startswith("$") for k in original_client), "Unexpected client overrides require review"
+    for key in ("$attributes", "$properties"):
+        if key in original_client:
+            client[key] = original_client[key]
+    scripts["Client"] = client
+    client["ClientBootstrap"] = {
         "$path": str(ROOT / "src/client/ClientBootstrap.client.luau"),
         "$properties": {"Disabled": True},
     }
@@ -50,7 +68,33 @@ def prepare(source, start):
 
 def snapshot(project, source):
     # Re-enumerate every time, including new/removed children of source directories.
-    return {str(p): sha(p) for p in sorted(source_files(project) | {source, Path(__file__).resolve()})}
+    # Client was expanded into explicit children: still monitor its original root
+    # so a newly added top-level file invalidates the prepared project as well.
+    client_files = {p for p in (ROOT / "src/client").rglob("*") if p.is_file()}
+    return {str(p): sha(p) for p in sorted(source_files(project) | client_files | {source, Path(__file__).resolve()})}
+
+def verify_bootstraps(target):
+    expected = {
+        ("ServerScriptService", "Server", "ServerBootstrap"): "Script",
+        ("StarterPlayer", "StarterPlayerScripts", "Client", "ClientBootstrap"): "LocalScript",
+    }
+    found = []
+    def walk(parent, ancestry):
+        for item in parent.findall("Item"):
+            props = item.find("Properties")
+            values = {} if props is None else {p.attrib.get("name"): p.text for p in props}
+            path = ancestry + (values.get("Name"),)
+            if values.get("Name") in ("ServerBootstrap", "ClientBootstrap"):
+                found.append((path, item.attrib.get("class"), values.get("Disabled")))
+            walk(item, path)
+    walk(ET.parse(target).getroot(), ())
+    assert len(found) == 2, f"Exactly two bootstraps required, found: {found!r}"
+    seen = set()
+    for path, kind, disabled in found:
+        assert path in expected and path not in seen and kind == expected[path] and disabled == "true", f"Unsafe bootstrap: {(path, kind, disabled)!r}"
+        seen.add(path)
+    assert seen == set(expected)
+    return [{"path": list(path), "className": kind, "disabled": True} for path, kind, _ in found]
 
 def bounded_build(command, out, receipt):
     process = None
@@ -88,9 +132,15 @@ def bounded_build(command, out, receipt):
 def main():
     parser = argparse.ArgumentParser()
     parser.add_argument("--start-zone", choices=["Guild", "City"], default="Guild")
+    parser.add_argument("--output-dir", help="New directory beneath repository build/; existing attempts are refused")
     args = parser.parse_args()
     source = ROOT / "build/quality-preview.project.json"
-    out = ROOT / "build/party-presentation-lab"
+    out = Path(args.output_dir) if args.output_dir else ROOT / "build/party-presentation-lab"
+    if not out.is_absolute():
+        out = ROOT / out
+    out = out.resolve()
+    build_root = (ROOT / "build").resolve()
+    assert out != build_root and out.is_relative_to(build_root), "Output must be a new child directory within build/"
     out.mkdir(parents=True, exist_ok=False)  # preserve ALL prior attempt evidence
     target = out / "Guildborne_PartyPresentationLab.rbxlx"
     receipt_path = out / "receipt.json"
@@ -114,17 +164,7 @@ def main():
         receipt["removedInputs"] = sorted(set(before) - set(after))
         receipt["inputsUnchanged"] = before == after and source.read_bytes() == original
         assert receipt["exitCode"] == 0 and receipt["inputsUnchanged"], "Build failed or input set/content changed"
-        doc = ET.parse(target)
-        bootstraps = []
-        for item in doc.iter("Item"):
-            props = item.find("Properties")
-            if props is None:
-                continue
-            name = next((p.text for p in props if p.attrib.get("name") == "Name"), None)
-            if name in ("ServerBootstrap", "ClientBootstrap"):
-                disabled = next((p.text for p in props if p.attrib.get("name") == "Disabled"), None)
-                bootstraps.append((name, disabled))
-        assert sorted(bootstraps) == [("ClientBootstrap", "true"), ("ServerBootstrap", "true")], bootstraps
+        bootstraps = verify_bootstraps(target)
         receipt.update(status="BUILT_NOT_STUDIO_TESTED", candidate=str(target),
                        candidateSha256=sha(target), disabledBootstraps=bootstraps,
                        projectSha256=sha(project_path))
@@ -145,7 +185,7 @@ def main():
                 receipt["inputsUnchanged"] = False
     finally:
         receipt_path.write_text(json.dumps(receipt, indent=2) + "\n", encoding="utf-8")
-    print(json.dumps({k: v for k, v in receipt.items() if k != "inputHashes"}, indent=2))
+    print(json.dumps({k: receipt.get(k) for k in ("status", "exitCode", "inputsUnchanged", "candidate", "candidateSha256", "error", "cleanup")}, indent=2))
     if failure is not None:
         raise failure
 

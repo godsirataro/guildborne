@@ -10,8 +10,10 @@ Build from the current quality preview project:
 `python production/integration/quality-slice/party-presentation-lab/build.py`
 
 Optional `--start-zone City` starts walking inspection in City; default Guild
-allows ordinary walking into the existing island camp. Output is exclusively
-`build/party-presentation-lab/`; previous candidates are refused, not overwritten.
+allows ordinary walking into the existing island camp. Output defaults to
+`build/party-presentation-lab/`; `--output-dir build/party-presentation-lab-r2`
+selects a fresh child directory beneath repository `build/`. Previous attempts
+are refused, not overwritten, including failed builds and their receipts.
 The builder reuses existing art packaging and current source paths, disables both
 normal bootstraps, records all input hashes and verifies the built script flags.
 It does not run ordinary preview builders or overwrite their files.
