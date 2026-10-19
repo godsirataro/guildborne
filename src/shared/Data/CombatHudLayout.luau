@@ -37,6 +37,13 @@ return function(width: number,height: number): any
         end
     end
     layout.rosterRect=roster;layout.padRect=pad;layout.mapRect=map;layout.ordersRect=orders
+    -- Expanded quest card leaves the right-hand map/location column clear.
+    -- Compact quest copy retains its lane between gold and the menu in the top bar.
+    layout.trackerWide=width>=900 and height>=560
+    local trackerLeft=math.max(width*.32,width*.3+15.2)
+    local trackerRight=math.min(width*.72-12,width-116)
+    layout.trackerRect=if layout.trackerWide then {x=map.x-8-300,y=70,w=300,h=96}
+        else {x=trackerLeft,y=7,w=math.max(48,trackerRight-trackerLeft),h=50}
     layout.showHealth=not short or height>=280
     layout.showWorldLabels=not compact
     layout.healthRect={x=width*(1-layout.healthScale)/2,y=height-layout.healthBottom-layout.healthHeight,w=width*layout.healthScale,h=layout.healthHeight}

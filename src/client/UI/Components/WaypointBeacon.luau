@@ -58,11 +58,12 @@ return function(gui: ScreenGui)
 		local w, h = gui.AbsoluteSize.X, gui.AbsoluteSize.Y
 		local bw, bh = if narrow and gui.AbsoluteSize.X < 600 then 130 else 260, if short then 56 else 96
 		local rosterRight = 8 + combat.selectionWidth
-		local blocked = {combat.rosterRect,combat.mapRect,combat.padRect,combat.ordersRect}
+		local blocked = {combat.rosterRect,combat.mapRect,combat.padRect,combat.ordersRect,combat.trackerRect}
 		if combat.showHealth then table.insert(blocked,combat.healthRect) end
 		local candidates = {
 			{x=if narrow then w-8-bw else (w-bw)/2,y=if narrow then cardY else 66},
 			{x=rosterRight+8,y=112},
+			{x=rosterRight+8,y=math.max(112,combat.trackerRect.y+combat.trackerRect.h+8)},
 			{x=8,y=64+combat.selectionHeight+8},
 		}
 		layoutAvailable = false

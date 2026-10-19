@@ -16,6 +16,22 @@ local function target()
  anchor.Position=Vector3.new(10,20,30);anchor.Parent=world
  return {anchor=anchor,x=14,y=25,z=36,name="Guild",destinationName="Guild",stepLabel="Next waypoint"}
 end
+test("waypoint card avoids relocated tracked quest after resizing across wide threshold",function()
+ local f=fixture()
+ for _,size in ipairs({{899,560},{900,560},{900,640},{901,640},{945,640},{1024,768},{1210,834},{1366,768},{796,617},{390,844}})do
+  local w,h=size[1],size[2];f.gui.AbsoluteSize={X=w,Y=h};f.gui:GetPropertyChangedSignal("AbsoluteSize"):Fire()
+  f.api.update(target(),42,false,"en")
+  if h==640 then assert(f.card.Visible,"free lane below tracker must retain waypoint")end
+  if f.card.Visible then
+   local p,s=f.card.Position,f.card.Size
+   local x=p[1]*w+p[2]-f.card.AnchorPoint.X*s[2]
+   local y=p[3]*h+p[4]-f.card.AnchorPoint.Y*s[4]
+   local t=CombatLayout(w,h).trackerRect
+   assert(x+s[2]<=t.x or t.x+t.w<=x or y+s[4]<=t.y or t.y+t.h<=y,"waypoint covers tracked quest")
+  end
+ end
+ f.api.destroy()
+end)
 test("inactive and unavailable routes show no false anchored marker",function()
  local f=fixture();f.api.update(nil,nil,false,"en")
  assert(not f.card.Visible and not f.marker.Enabled and f.marker.Adornee==nil)

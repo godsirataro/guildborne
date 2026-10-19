@@ -160,6 +160,30 @@ test("tracker placement reserves gold and menu regions across compact and wide b
   gui:Destroy()
  end
 end)
+test("quest tracker reserves map and location column through wide and compact resize boundaries",function()
+ local layoutFor=require(game.ReplicatedStorage.Shared.Data.CombatHudLayout)
+ local function separate(a,b)return a.x+a.w<=b.x or b.x+b.w<=a.x or a.y+a.h<=b.y or b.y+b.h<=a.y end
+ local gui=Instance.new("ScreenGui");local tracker=Tracker(gui)
+ for _,w in ipairs({320,390,599,600,796,899,900,901,1024,1210,1366,1920})do
+  for _,h in ipairs({240,449,450,559,560,569,570,639,640,768,834})do
+   gui.AbsoluteSize={X=w,Y=h};gui:GetPropertyChangedSignal("AbsoluteSize"):Fire()
+   local layout=layoutFor(w,h);local r=layout.trackerRect
+   assert(tracker.button.Position[2]==r.x and tracker.button.Position[4]==r.y)
+   assert(tracker.button.Size[2]==r.w and tracker.button.Size[4]==r.h)
+   assert(r.x>=0 and r.y>=0 and r.x+r.w<=w and r.y+r.h<=h)
+   for _,other in ipairs({layout.mapRect,layout.rosterRect,layout.padRect,layout.ordersRect})do
+    assert(separate(r,other),"quest/control overlap at "..w.."x"..h)
+   end
+   if layout.trackerWide then
+    assert(r.w==300 and r.h==96 and r.x+r.w+8<=layout.mapRect.x,"map column clearance")
+    -- Noncompact CityNavigation location card and bearing sit in this same column.
+    assert(separate(r,{x=w-138,y=112,w=130,h=64}))
+    assert(separate(r,{x=w-90,y=180,w=40,h=40}))
+   else assert(r.y==7 and r.h==50,"compact top lane moved")end
+  end
+ end
+ gui:Destroy()
+end)
 test("party identity health and portrait ornament keep separate bounded lanes",function()
  local Chrome=require(UI.Components.CombatChrome)
  for _,size in ipairs({{90,44},{96,44},{138,44},{184,60}}) do

@@ -1,5 +1,6 @@
 --!strict
 local Theme = require(script.Parent.DesignSystem.Theme)
+local CombatLayout = require(game.ReplicatedStorage.Shared.Data.CombatHudLayout)
 local Asset = require(script.Parent.Components.QualityAsset)
 local C = Theme.Colors
 return function(gui: ScreenGui)
@@ -82,18 +83,15 @@ return function(gui: ScreenGui)
 		rule.Visible = compactHeading; openUpper.Visible = compactHeading and enabledState; openLower.Visible = openUpper.Visible
 	end
 	local function resize()
-		wide = gui.AbsoluteSize.X >= 900 and gui.AbsoluteSize.Y >= 560
-		local width = gui.AbsoluteSize.X
-		-- SliceUI HUD: x=8,width=w-16; gold x=12,width=.3*(w-16)-8;
-		-- menu occupies [w-108,w-12]. Reserve eight pixels on both sides.
-		local left = math.max(width * .32, width * .3 + 15.2)
-		local right = math.min(width * .72 - 12, width - 116)
-		local compactWidth = math.max(48, right - left)
+		local layout = CombatLayout(gui.AbsoluteSize.X, gui.AbsoluteSize.Y)
+		wide = layout.trackerWide
+		local rect = layout.trackerRect
+		local compactWidth = rect.w
 		compactHeading = not wide and compactWidth >= 210
 		micro = not wide and compactWidth < 170
-		button.AnchorPoint = if wide then Vector2.new(1, 0) else Vector2.zero
-		button.Position = if wide then UDim2.new(1, -8, 0, 70) else UDim2.fromOffset(left, 7)
-		button.Size = if wide then UDim2.fromOffset(300, 96) else UDim2.fromOffset(compactWidth, 50)
+		button.AnchorPoint = Vector2.zero
+		button.Position = UDim2.fromOffset(rect.x, rect.y)
+		button.Size = UDim2.fromOffset(rect.w, rect.h)
 		heading.Visible = wide or compactHeading
 		heading.Position = if wide then UDim2.fromOffset(42, 10) else UDim2.fromOffset(42, 0)
 		heading.Size = if wide then UDim2.new(1, -54, 0, 20) else UDim2.new(1, -64, 0, 14)
