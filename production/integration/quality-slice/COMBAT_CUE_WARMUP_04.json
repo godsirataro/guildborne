@@ -1,0 +1,9 @@
+{
+  "content": [
+    {
+      "type": "text",
+      "text": "{\"enabledAt\":1792374769.088254,\"elapsed\":2.0319559999988998,\"samples\":122,\"maxGap\":0.018123800000466873,\"events\":{\"1\":{\"health\":100,\"rootY\":3.4980251789093019,\"elapsed\":0.015941199999360835,\"cameraType\":\"Custom\",\"reason\":\"stable\"}},\"status\":\"PROBE_ENABLED_ONCE\",\"cameraType\":\"Custom\",\"stableSeconds\":2.0003894999972546,\"rootPosition\":\"0.7346115708351135, 3.4980251789093018, 1.0079114437103271\"}"
+    }
+  ],
+  "isError": false
+}
