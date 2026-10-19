@@ -1,15 +1,15 @@
 {
-  "origin": "Existing coast composition with one decorative bank clipped against surveyed Ironveil and approach envelopes",
+  "origin": "Existing cleared coast with original quarry rock closure faces on the cut boundary",
   "license": "Retains existing original Guildborne geometry and reviewed Quaternius CC0 vegetation",
-  "sourceProvenance": "assets/production/world-slice/coast-ironveil-clearance/before.provenance.json",
+  "sourceProvenance": "assets/production/world-slice/ironveil-quarry-edge/before.provenance.json",
   "licenseFiles": [
     "assets/production/world-slice/village-LICENSE.txt",
     "assets/production/world-slice/ruins-LICENSE.txt"
   ],
-  "source": "assets/production/world-slice/coast-ironveil-clearance/before.mesh.json",
-  "sourceSha256": "f31077a0847a4a5db7a5918a411ee9b9ba22cdb0ac18ec686bc18859e10fc4e9",
-  "recipe": "production/world/quality-slice/coast-ironveil-clearance/recipe.py",
-  "packetSha256": "0a2dd8468029be8c7e9f829666be1413bd9d450b12a25f45beaec2c230480296",
+  "source": "assets/production/world-slice/ironveil-quarry-edge/before.mesh.json",
+  "sourceSha256": "0a2dd8468029be8c7e9f829666be1413bd9d450b12a25f45beaec2c230480296",
+  "recipe": "production/world/quality-slice/ironveil-quarry-edge/recipe.py",
+  "packetSha256": "8743e160609a44e48b80e81b9ff0fe21b043bfb7e69fa216f2d164149c7f6760",
   "runtimeAssetIds": null,
   "downloads": false,
   "newMeshes": false,

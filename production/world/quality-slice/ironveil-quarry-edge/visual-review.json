@@ -1,0 +1,19 @@
+{
+  "status": "OFFLINE_REVIEW_NATIVE_PENDING",
+  "viewsInspected": [
+    "approach",
+    "player_arrival",
+    "skyline",
+    "reverse"
+  ],
+  "observation": "Skyline gap behind upper gantry and reverse-view opening below bank are filled with continuous gray quarry beds. Building, terraces and bridge view remain readable. Player arrival is nearly unchanged.",
+  "remaining": "Broad flat planes and horizontal bands remain simple; squared quarry corners and native rectangular terraces require further human art review. No entire-region polish claim.",
+  "backgroundBeforeExit": 0,
+  "backgroundAfterExit": 0,
+  "preservedContextDependencies": {
+    "assets/production/world-slice/ironveil-ore-yard/scenery.mesh.json": "4e65f4e254ae58bed6c5825d68948dc8689eb10332fb2763bdae37f86e371d20",
+    "assets/production/world-slice/greenwood-ironveil/scenery.mesh.json": "b885085377b3e56faf9f6a0fe072d0db4672f6b87c5241c6d61ff34c70a65539",
+    "production/world/quality-slice/greenwood-ironveil/ground.json": "85b0866cf5ed468ef323f52c5e33f825fcb89155d1a91c2753d593271ccdeb70",
+    "src/server/Services/AdventureMapKit.luau": "978724afd99c499757601d56634ecf0b00ff21921fbec8b12a617c0fed1fe4c7"
+  }
+}

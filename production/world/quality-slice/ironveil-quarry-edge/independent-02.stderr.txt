@@ -1,0 +1,8 @@
+Traceback (most recent call last):
+  File "C:\Work\MySelf\Guildborne-coast-ironveil-fix\production\world\quality-slice\ironveil-quarry-edge\verify.py", line 89, in <module>
+    if __name__=='__main__':main()
+                            ~~~~^^
+  File "C:\Work\MySelf\Guildborne-coast-ironveil-fix\production\world\quality-slice\ironveil-quarry-edge\verify.py", line 76, in main
+    assert abs(expected_area-covered)<max(1e-4,expected_area*1e-7),('boundary_gap_or_overlap',ca,cb,expected_area,covered)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+AssertionError: ('boundary_gap_or_overlap', [640.0, 47.41555806143004, 1270.0], [640.0, 58.86959475433468, 1320.0], 3357.1288203941176, 0.0)

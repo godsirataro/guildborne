@@ -1,0 +1,1787 @@
+{
+  "status": "PASS_OFFLINE_GEOMETRY_NATIVE_AND_VISUAL_PENDING",
+  "baselineCommit": "432098a5529d8d20f361156c4bf587763bd300d6",
+  "baselineSHA256": "0a2dd8468029be8c7e9f829666be1413bd9d450b12a25f45beaec2c230480296",
+  "packetSHA256": "8743e160609a44e48b80e81b9ff0fe21b043bfb7e69fa216f2d164149c7f6760",
+  "verifierSHA256": "4d4e01718e487a18c377354987619c75490367e3933f5f4b2f76bb26deb2b668",
+  "helperSHA256": "be29e8a4b8ff9082e98d5394991a3a1f0455a035a76cd0740eb340dfb2470742",
+  "unchangedMeshes": 19,
+  "unchangedPlacements": 72,
+  "oldTargetFaces": 182,
+  "addedFaces": 156,
+  "uniqueTriangles": 11595,
+  "instancedTriangles": 40271,
+  "rays": [
+    {
+      "from": [
+        436,
+        100,
+        1468
+      ],
+      "to": [
+        436,
+        0,
+        1468
+      ],
+      "hits": []
+    },
+    {
+      "from": [
+        500,
+        100,
+        1495
+      ],
+      "to": [
+        500,
+        0,
+        1495
+      ],
+      "hits": []
+    },
+    {
+      "from": [
+        500,
+        100,
+        1450
+      ],
+      "to": [
+        500,
+        0,
+        1450
+      ],
+      "hits": []
+    },
+    {
+      "from": [
+        410,
+        28,
+        1450
+      ],
+      "to": [
+        436,
+        8,
+        1468
+      ],
+      "hits": []
+    },
+    {
+      "from": [
+        500,
+        48,
+        1535
+      ],
+      "to": [
+        436,
+        8,
+        1468
+      ],
+      "hits": []
+    }
+  ],
+  "faceNormals": [
+    {
+      "addedFace1": 1,
+      "normal": [
+        0.0,
+        0.0,
+        188.7535990111711
+      ],
+      "nearestBoundaryDistance": 0.0
+    },
+    {
+      "addedFace1": 2,
+      "normal": [
+        -0.0,
+        0.0,
+        188.7535990111711
+      ],
+      "nearestBoundaryDistance": 0.0
+    },
+    {
+      "addedFace1": 3,
+      "normal": [
+        0.0,
+        -0.0,
+        111.03802553215706
+      ],
+      "nearestBoundaryDistance": 0.0
+    },
+    {
+      "addedFace1": 4,
+      "normal": [
+        0.0,
+        0.0,
+        53.92959971747746
+      ],
+      "nearestBoundaryDistance": 0.0
+    },
+    {
+      "addedFace1": 5,
+      "normal": [
+        0.0,
+        0.0,
+        286.42314488677596
+      ],
+      "nearestBoundaryDistance": 0.0
+    },
+    {
+      "addedFace1": 6,
+      "normal": [
+        -0.0,
+        0.0,
+        286.42314488677596
+      ],
+      "nearestBoundaryDistance": 0.0
+    },
+    {
+      "addedFace1": 7,
+      "normal": [
+        0.0,
+        0.0,
+        245.50555276009368
+      ],
+      "nearestBoundaryDistance": 0.0
+    },
+    {
+      "addedFace1": 8,
+      "normal": [
+        -0.0,
+        0.0,
+        245.50555276009368
+      ],
+      "nearestBoundaryDistance": 0.0
+    },
+    {
+      "addedFace1": 9,
+      "normal": [
+        0.0,
+        0.0,
+        286.4231448867758
+      ],
+      "nearestBoundaryDistance": 0.0
+    },
+    {
+      "addedFace1": 10,
+      "normal": [
+        -0.0,
+        0.0,
+        286.42314488677596
+      ],
+      "nearestBoundaryDistance": 0.0
+    },
+    {
+      "addedFace1": 11,
+      "normal": [
+        0.0,
+        0.0,
+        327.34073701345824
+      ],
+      "nearestBoundaryDistance": 0.0
+    },
+    {
+      "addedFace1": 12,
+      "normal": [
+        -0.0,
+        0.0,
+        327.34073701345824
+      ],
+      "nearestBoundaryDistance": 0.0
+    },
+    {
+      "addedFace1": 13,
+      "normal": [
+        0.0,
+        0.0,
+        368.2583291401405
+      ],
+      "nearestBoundaryDistance": 0.0
+    },
+    {
+      "addedFace1": 14,
+      "normal": [
+        -0.0,
+        0.0,
+        368.2583291401405
+      ],
+      "nearestBoundaryDistance": 0.0
+    },
+    {
+      "addedFace1": 15,
+      "normal": [
+        0.0,
+        -0.0,
+        191.060491632304
+      ],
+      "nearestBoundaryDistance": 0.0
+    },
+    {
+      "addedFace1": 16,
+      "normal": [
+        0.0,
+        0.0,
+        16.51443336144952
+      ],
+      "nearestBoundaryDistance": 0.0
+    },
+    {
+      "addedFace1": 17,
+      "normal": [
+        0.0,
+        0.0,
+        51.42857142857136
+      ],
+      "nearestBoundaryDistance": 0.0
+    },
+    {
+      "addedFace1": 18,
+      "normal": [
+        0.0,
+        -0.0,
+        366.66666666666686
+      ],
+      "nearestBoundaryDistance": 0.0
+    },
+    {
+      "addedFace1": 19,
+      "normal": [
+        0.0,
+        0.0,
+        265.6462585034015
+      ],
+      "nearestBoundaryDistance": 0.0
+    },
+    {
+      "addedFace1": 20,
+      "normal": [
+        0.0,
+        -0.0,
+        53.33333333333326
+      ],
+      "nearestBoundaryDistance": 0.0
+    },
+    {
+      "addedFace1": 21,
+      "normal": [
+        0.0,
+        0.0,
+        1168.753599011171
+      ],
+      "nearestBoundaryDistance": 0.0
+    },
+    {
+      "addedFace1": 22,
+      "normal": [
+        0.0,
+        0.0,
+        1168.7535990111712
+      ],
+      "nearestBoundaryDistance": 0.0
+    },
+    {
+      "addedFace1": 23,
+      "normal": [
+        0.0,
+        0.0,
+        276.9229496675795
+      ],
+      "nearestBoundaryDistance": 0.0
+    },
+    {
+      "addedFace1": 24,
+      "normal": [
+        0.0,
+        -0.0,
+        1001.7887991524324
+      ],
+      "nearestBoundaryDistance": 0.0
+    },
+    {
+      "addedFace1": 25,
+      "normal": [
+        -0.0,
+        0.0,
+        704.6725895698847
+      ],
+      "nearestBoundaryDistance": 0.0
+    },
+    {
+      "addedFace1": 26,
+      "normal": [
+        0.0,
+        0.0,
+        776.8564494767381
+      ],
+      "nearestBoundaryDistance": 0.0
+    },
+    {
+      "addedFace1": 27,
+      "normal": [
+        0.0,
+        -0.0,
+        1089.32021759268
+      ],
+      "nearestBoundaryDistance": 0.0
+    },
+    {
+      "addedFace1": 28,
+      "normal": [
+        0.0,
+        0.0,
+        479.72000023014334
+      ],
+      "nearestBoundaryDistance": 0.0
+    },
+    {
+      "addedFace1": 29,
+      "normal": [
+        0.0,
+        -0.0,
+        887.8359422591293
+      ],
+      "nearestBoundaryDistance": 0.0
+    },
+    {
+      "addedFace1": 30,
+      "normal": [
+        0.0,
+        0.0,
+        23.16326112847719
+      ],
+      "nearestBoundaryDistance": 0.0
+    },
+    {
+      "addedFace1": 31,
+      "normal": [
+        0.0,
+        -0.0,
+        539.6850002589113
+      ],
+      "nearestBoundaryDistance": 0.0
+    },
+    {
+      "addedFace1": 32,
+      "normal": [
+        0.0,
+        -0.0,
+        1.0387494377472888
+      ],
+      "nearestBoundaryDistance": 0.0
+    },
+    {
+      "addedFace1": 33,
+      "normal": [
+        0.0,
+        0.0,
+        4.5797343221620395
+      ],
+      "nearestBoundaryDistance": 0.0
+    },
+    {
+      "addedFace1": 34,
+      "normal": [
+        -0.0,
+        0.0,
+        4.5797343221620395
+      ],
+      "nearestBoundaryDistance": 0.0
+    },
+    {
+      "addedFace1": 35,
+      "normal": [
+        0.0,
+        -0.0,
+        2.761243470882488
+      ],
+      "nearestBoundaryDistance": 0.0
+    },
+    {
+      "addedFace1": 36,
+      "normal": [
+        0.0,
+        0.0,
+        2.694118995657551
+      ],
+      "nearestBoundaryDistance": 0.0
+    },
+    {
+      "addedFace1": 37,
+      "normal": [
+        -700.0,
+        0.0,
+        0.0
+      ],
+      "nearestBoundaryDistance": 0.0
+    },
+    {
+      "addedFace1": 38,
+      "normal": [
+        -700.0,
+        0.0,
+        0.0
+      ],
+      "nearestBoundaryDistance": 0.0
+    },
+    {
+      "addedFace1": 39,
+      "normal": [
+        -600.0,
+        0.0,
+        0.0
+      ],
+      "nearestBoundaryDistance": 0.0
+    },
+    {
+      "addedFace1": 40,
+      "normal": [
+        -599.9999999999999,
+        0.0,
+        0.0
+      ],
+      "nearestBoundaryDistance": 0.0
+    },
+    {
+      "addedFace1": 41,
+      "normal": [
+        -700.0,
+        0.0,
+        0.0
+      ],
+      "nearestBoundaryDistance": 0.0
+    },
+    {
+      "addedFace1": 42,
+      "normal": [
+        -700.0,
+        0.0,
+        0.0
+      ],
+      "nearestBoundaryDistance": 0.0
+    },
+    {
+      "addedFace1": 43,
+      "normal": [
+        -800.0,
+        0.0,
+        0.0
+      ],
+      "nearestBoundaryDistance": 0.0
+    },
+    {
+      "addedFace1": 44,
+      "normal": [
+        -800.0,
+        0.0,
+        0.0
+      ],
+      "nearestBoundaryDistance": 0.0
+    },
+    {
+      "addedFace1": 45,
+      "normal": [
+        -843.4797377167339,
+        0.0,
+        0.0
+      ],
+      "nearestBoundaryDistance": 0.0
+    },
+    {
+      "addedFace1": 46,
+      "normal": [
+        -270.777903071502,
+        0.0,
+        0.0
+      ],
+      "nearestBoundaryDistance": 0.0
+    },
+    {
+      "addedFace1": 47,
+      "normal": [
+        0.0,
+        0.0,
+        1764.823256102053
+      ],
+      "nearestBoundaryDistance": 0.0
+    },
+    {
+      "addedFace1": 48,
+      "normal": [
+        -0.0,
+        0.0,
+        1764.8232561020527
+      ],
+      "nearestBoundaryDistance": 0.0
+    },
+    {
+      "addedFace1": 49,
+      "normal": [
+        0.0,
+        0.0,
+        1512.705648087474
+      ],
+      "nearestBoundaryDistance": 0.0
+    },
+    {
+      "addedFace1": 50,
+      "normal": [
+        -0.0,
+        0.0,
+        1512.705648087474
+      ],
+      "nearestBoundaryDistance": 0.0
+    },
+    {
+      "addedFace1": 51,
+      "normal": [
+        0.0,
+        0.0,
+        1764.823256102053
+      ],
+      "nearestBoundaryDistance": 0.0
+    },
+    {
+      "addedFace1": 52,
+      "normal": [
+        -0.0,
+        0.0,
+        1764.823256102053
+      ],
+      "nearestBoundaryDistance": 0.0
+    },
+    {
+      "addedFace1": 53,
+      "normal": [
+        0.0,
+        0.0,
+        2016.940864116632
+      ],
+      "nearestBoundaryDistance": 0.0
+    },
+    {
+      "addedFace1": 54,
+      "normal": [
+        -0.0,
+        0.0,
+        2016.940864116632
+      ],
+      "nearestBoundaryDistance": 0.0
+    },
+    {
+      "addedFace1": 55,
+      "normal": [
+        0.0,
+        -0.0,
+        391.87331698009604
+      ],
+      "nearestBoundaryDistance": 0.0
+    },
+    {
+      "addedFace1": 56,
+      "normal": [
+        0.0,
+        0.0,
+        2269.058472131211
+      ],
+      "nearestBoundaryDistance": 0.0
+    },
+    {
+      "addedFace1": 57,
+      "normal": [
+        -0.0,
+        0.0,
+        966.566720472452
+      ],
+      "nearestBoundaryDistance": 0.0
+    },
+    {
+      "addedFace1": 58,
+      "normal": [
+        0.0,
+        0.0,
+        501.47599713518764
+      ],
+      "nearestBoundaryDistance": 0.0
+    },
+    {
+      "addedFace1": 59,
+      "normal": [
+        940.3515466698609,
+        0.0,
+        0.0
+      ],
+      "nearestBoundaryDistance": 0.0
+    },
+    {
+      "addedFace1": 60,
+      "normal": [
+        1875.9923870799962,
+        0.0,
+        0.0
+      ],
+      "nearestBoundaryDistance": 0.0
+    },
+    {
+      "addedFace1": 61,
+      "normal": [
+        230.37718040773962,
+        0.0,
+        0.0
+      ],
+      "nearestBoundaryDistance": 0.0
+    },
+    {
+      "addedFace1": 62,
+      "normal": [
+        13.822093933736223,
+        -0.0,
+        0.0
+      ],
+      "nearestBoundaryDistance": 0.0
+    },
+    {
+      "addedFace1": 63,
+      "normal": [
+        -1876.0810829618827,
+        0.0,
+        0.0
+      ],
+      "nearestBoundaryDistance": 0.0
+    },
+    {
+      "addedFace1": 64,
+      "normal": [
+        -1876.0810829618827,
+        0.0,
+        0.0
+      ],
+      "nearestBoundaryDistance": 0.0
+    },
+    {
+      "addedFace1": 65,
+      "normal": [
+        -1608.0694996816137,
+        0.0,
+        0.0
+      ],
+      "nearestBoundaryDistance": 0.0
+    },
+    {
+      "addedFace1": 66,
+      "normal": [
+        -1608.0694996816137,
+        0.0,
+        0.0
+      ],
+      "nearestBoundaryDistance": 0.0
+    },
+    {
+      "addedFace1": 67,
+      "normal": [
+        -1876.0810829618827,
+        0.0,
+        0.0
+      ],
+      "nearestBoundaryDistance": 0.0
+    },
+    {
+      "addedFace1": 68,
+      "normal": [
+        -1876.0810829618822,
+        0.0,
+        0.0
+      ],
+      "nearestBoundaryDistance": 0.0
+    },
+    {
+      "addedFace1": 69,
+      "normal": [
+        -203.63320441634983,
+        0.0,
+        0.0
+      ],
+      "nearestBoundaryDistance": 0.0
+    },
+    {
+      "addedFace1": 70,
+      "normal": [
+        -2144.0926662421516,
+        0.0,
+        0.0
+      ],
+      "nearestBoundaryDistance": 0.0
+    },
+    {
+      "addedFace1": 71,
+      "normal": [
+        -1910.2884002832652,
+        0.0,
+        0.0
+      ],
+      "nearestBoundaryDistance": 0.0
+    },
+    {
+      "addedFace1": 72,
+      "normal": [
+        -2014.1119485428096,
+        0.0,
+        0.0
+      ],
+      "nearestBoundaryDistance": 0.0
+    },
+    {
+      "addedFace1": 73,
+      "normal": [
+        0.0,
+        0.0,
+        72.10013433654922
+      ],
+      "nearestBoundaryDistance": 0.0
+    },
+    {
+      "addedFace1": 74,
+      "normal": [
+        0.0,
+        -0.0,
+        622.6315789473682
+      ],
+      "nearestBoundaryDistance": 0.0
+    },
+    {
+      "addedFace1": 75,
+      "normal": [
+        0.0,
+        0.0,
+        88.9473684210526
+      ],
+      "nearestBoundaryDistance": 0.0
+    },
+    {
+      "addedFace1": 76,
+      "normal": [
+        0.0,
+        -0.0,
+        11.262150579933056
+      ],
+      "nearestBoundaryDistance": 0.0
+    },
+    {
+      "addedFace1": 77,
+      "normal": [
+        294.0076129200038,
+        0.0,
+        0.0
+      ],
+      "nearestBoundaryDistance": 0.0
+    },
+    {
+      "addedFace1": 78,
+      "normal": [
+        294.0076129200038,
+        0.0,
+        0.0
+      ],
+      "nearestBoundaryDistance": 0.0
+    },
+    {
+      "addedFace1": 79,
+      "normal": [
+        17.639771594658004,
+        0.0,
+        0.0
+      ],
+      "nearestBoundaryDistance": 0.0
+    },
+    {
+      "addedFace1": 80,
+      "normal": [
+        39.36380232638982,
+        -0.0,
+        0.0
+      ],
+      "nearestBoundaryDistance": 0.0
+    },
+    {
+      "addedFace1": 81,
+      "normal": [
+        -293.91891703811734,
+        0.0,
+        0.0
+      ],
+      "nearestBoundaryDistance": 0.0
+    },
+    {
+      "addedFace1": 82,
+      "normal": [
+        -293.91891703811734,
+        0.0,
+        0.0
+      ],
+      "nearestBoundaryDistance": 0.0
+    },
+    {
+      "addedFace1": 83,
+      "normal": [
+        -251.9305003183863,
+        0.0,
+        0.0
+      ],
+      "nearestBoundaryDistance": 0.0
+    },
+    {
+      "addedFace1": 84,
+      "normal": [
+        -251.93050031838632,
+        0.0,
+        0.0
+      ],
+      "nearestBoundaryDistance": 0.0
+    },
+    {
+      "addedFace1": 85,
+      "normal": [
+        -293.91891703811734,
+        0.0,
+        0.0
+      ],
+      "nearestBoundaryDistance": 0.0
+    },
+    {
+      "addedFace1": 86,
+      "normal": [
+        -293.91891703811734,
+        0.0,
+        0.0
+      ],
+      "nearestBoundaryDistance": 0.0
+    },
+    {
+      "addedFace1": 87,
+      "normal": [
+        -204.28495933845375,
+        0.0,
+        0.0
+      ],
+      "nearestBoundaryDistance": 0.0
+    },
+    {
+      "addedFace1": 88,
+      "normal": [
+        -292.56047352057794,
+        0.0,
+        0.0
+      ],
+      "nearestBoundaryDistance": 0.0
+    },
+    {
+      "addedFace1": 89,
+      "normal": [
+        -490.0,
+        0.0,
+        0.0
+      ],
+      "nearestBoundaryDistance": 0.0
+    },
+    {
+      "addedFace1": 90,
+      "normal": [
+        -490.0,
+        0.0,
+        0.0
+      ],
+      "nearestBoundaryDistance": 0.0
+    },
+    {
+      "addedFace1": 91,
+      "normal": [
+        -420.0,
+        0.0,
+        0.0
+      ],
+      "nearestBoundaryDistance": 0.0
+    },
+    {
+      "addedFace1": 92,
+      "normal": [
+        -420.0,
+        0.0,
+        0.0
+      ],
+      "nearestBoundaryDistance": 0.0
+    },
+    {
+      "addedFace1": 93,
+      "normal": [
+        -490.0,
+        0.0,
+        0.0
+      ],
+      "nearestBoundaryDistance": 0.0
+    },
+    {
+      "addedFace1": 94,
+      "normal": [
+        -490.0,
+        0.0,
+        0.0
+      ],
+      "nearestBoundaryDistance": 0.0
+    },
+    {
+      "addedFace1": 95,
+      "normal": [
+        -95.22378696757318,
+        0.0,
+        0.0
+      ],
+      "nearestBoundaryDistance": 0.0
+    },
+    {
+      "addedFace1": 96,
+      "normal": [
+        -340.5688585293091,
+        0.0,
+        0.0
+      ],
+      "nearestBoundaryDistance": 0.0
+    },
+    {
+      "addedFace1": 97,
+      "normal": [
+        0.0,
+        0.0,
+        -139.12891098050568
+      ],
+      "nearestBoundaryDistance": 0.0
+    },
+    {
+      "addedFace1": 98,
+      "normal": [
+        0.0,
+        0.0,
+        -680.8471137416185
+      ],
+      "nearestBoundaryDistance": 0.0
+    },
+    {
+      "addedFace1": 99,
+      "normal": [
+        -0.0,
+        -0.0,
+        -260.5542396610707
+      ],
+      "nearestBoundaryDistance": 0.0
+    },
+    {
+      "addedFace1": 100,
+      "normal": [
+        0.0,
+        0.0,
+        -108.05674751860745
+      ],
+      "nearestBoundaryDistance": 0.0
+    },
+    {
+      "addedFace1": 101,
+      "normal": [
+        0.0,
+        0.0,
+        -393.00111358796767
+      ],
+      "nearestBoundaryDistance": 0.0
+    },
+    {
+      "addedFace1": 102,
+      "normal": [
+        -0.0,
+        -0.0,
+        -393.00111358796767
+      ],
+      "nearestBoundaryDistance": 0.0
+    },
+    {
+      "addedFace1": 103,
+      "normal": [
+        0.0,
+        0.0,
+        -336.8580973611152
+      ],
+      "nearestBoundaryDistance": 0.0
+    },
+    {
+      "addedFace1": 104,
+      "normal": [
+        -0.0,
+        -0.0,
+        -336.85809736111514
+      ],
+      "nearestBoundaryDistance": 0.0
+    },
+    {
+      "addedFace1": 105,
+      "normal": [
+        0.0,
+        0.0,
+        -38.6730566488376
+      ],
+      "nearestBoundaryDistance": 0.0
+    },
+    {
+      "addedFace1": 106,
+      "normal": [
+        0.0,
+        0.0,
+        -393.00111358796767
+      ],
+      "nearestBoundaryDistance": 0.0
+    },
+    {
+      "addedFace1": 107,
+      "normal": [
+        -0.0,
+        -0.0,
+        -350.09532543581486
+      ],
+      "nearestBoundaryDistance": 0.0
+    },
+    {
+      "addedFace1": 108,
+      "normal": [
+        0.0,
+        0.0,
+        -281.8133589449856
+      ],
+      "nearestBoundaryDistance": 0.0
+    },
+    {
+      "addedFace1": 109,
+      "normal": [
+        0.0,
+        0.0,
+        -438.0853968666298
+      ],
+      "nearestBoundaryDistance": 0.0
+    },
+    {
+      "addedFace1": 110,
+      "normal": [
+        -0.0,
+        -0.0,
+        -438.0853968666298
+      ],
+      "nearestBoundaryDistance": 0.0
+    },
+    {
+      "addedFace1": 111,
+      "normal": [
+        0.0,
+        0.0,
+        -34.60819561869465
+      ],
+      "nearestBoundaryDistance": 0.0
+    },
+    {
+      "addedFace1": 112,
+      "normal": [
+        0.0,
+        0.0,
+        -375.50176874282556
+      ],
+      "nearestBoundaryDistance": 0.0
+    },
+    {
+      "addedFace1": 113,
+      "normal": [
+        -0.0,
+        -0.0,
+        -336.01361359442626
+      ],
+      "nearestBoundaryDistance": 0.0
+    },
+    {
+      "addedFace1": 114,
+      "normal": [
+        0.0,
+        0.0,
+        -353.34282587799305
+      ],
+      "nearestBoundaryDistance": 0.0
+    },
+    {
+      "addedFace1": 115,
+      "normal": [
+        -350.0,
+        0.0,
+        0.0
+      ],
+      "nearestBoundaryDistance": 0.0
+    },
+    {
+      "addedFace1": 116,
+      "normal": [
+        -350.0,
+        0.0,
+        0.0
+      ],
+      "nearestBoundaryDistance": 0.0
+    },
+    {
+      "addedFace1": 117,
+      "normal": [
+        -300.00000000000006,
+        0.0,
+        0.0
+      ],
+      "nearestBoundaryDistance": 0.0
+    },
+    {
+      "addedFace1": 118,
+      "normal": [
+        -300.0,
+        0.0,
+        0.0
+      ],
+      "nearestBoundaryDistance": 0.0
+    },
+    {
+      "addedFace1": 119,
+      "normal": [
+        -81.1608593843093,
+        0.0,
+        0.0
+      ],
+      "nearestBoundaryDistance": 0.0
+    },
+    {
+      "addedFace1": 120,
+      "normal": [
+        -350.00000000000006,
+        0.0,
+        0.0
+      ],
+      "nearestBoundaryDistance": 0.0
+    },
+    {
+      "addedFace1": 121,
+      "normal": [
+        -263.28958484288023,
+        0.0,
+        0.0
+      ],
+      "nearestBoundaryDistance": 0.0
+    },
+    {
+      "addedFace1": 122,
+      "normal": [
+        -51.16618640379431,
+        0.0,
+        0.0
+      ],
+      "nearestBoundaryDistance": 0.0
+    },
+    {
+      "addedFace1": 123,
+      "normal": [
+        -350.0,
+        0.0,
+        0.0
+      ],
+      "nearestBoundaryDistance": 0.0
+    },
+    {
+      "addedFace1": 124,
+      "normal": [
+        -349.99999999999994,
+        0.0,
+        0.0
+      ],
+      "nearestBoundaryDistance": 0.0
+    },
+    {
+      "addedFace1": 125,
+      "normal": [
+        -300.0,
+        0.0,
+        0.0
+      ],
+      "nearestBoundaryDistance": 0.0
+    },
+    {
+      "addedFace1": 126,
+      "normal": [
+        -300.00000000000006,
+        0.0,
+        0.0
+      ],
+      "nearestBoundaryDistance": 0.0
+    },
+    {
+      "addedFace1": 127,
+      "normal": [
+        -237.1822891885971,
+        0.0,
+        0.0
+      ],
+      "nearestBoundaryDistance": 0.0
+    },
+    {
+      "addedFace1": 128,
+      "normal": [
+        -327.5996399398604,
+        0.0,
+        0.0
+      ],
+      "nearestBoundaryDistance": 0.0
+    },
+    {
+      "addedFace1": 129,
+      "normal": [
+        0.0,
+        0.0,
+        -1840.0658591403194
+      ],
+      "nearestBoundaryDistance": 0.0
+    },
+    {
+      "addedFace1": 130,
+      "normal": [
+        -0.0,
+        -0.0,
+        -1840.0658591403194
+      ],
+      "nearestBoundaryDistance": 0.0
+    },
+    {
+      "addedFace1": 131,
+      "normal": [
+        0.0,
+        0.0,
+        -1577.1993078345595
+      ],
+      "nearestBoundaryDistance": 0.0
+    },
+    {
+      "addedFace1": 132,
+      "normal": [
+        -0.0,
+        -0.0,
+        -1577.1993078345595
+      ],
+      "nearestBoundaryDistance": 0.0
+    },
+    {
+      "addedFace1": 133,
+      "normal": [
+        0.0,
+        0.0,
+        -393.57086113942006
+      ],
+      "nearestBoundaryDistance": 0.0
+    },
+    {
+      "addedFace1": 134,
+      "normal": [
+        0.0,
+        0.0,
+        -1840.0658591403194
+      ],
+      "nearestBoundaryDistance": 0.0
+    },
+    {
+      "addedFace1": 135,
+      "normal": [
+        0.0,
+        0.0,
+        -1246.945807796239
+      ],
+      "nearestBoundaryDistance": 0.0
+    },
+    {
+      "addedFace1": 136,
+      "normal": [
+        0.0,
+        0.0,
+        -776.2397962084387
+      ],
+      "nearestBoundaryDistance": 0.0
+    },
+    {
+      "addedFace1": 137,
+      "normal": [
+        350.0,
+        0.0,
+        0.0
+      ],
+      "nearestBoundaryDistance": 0.0
+    },
+    {
+      "addedFace1": 138,
+      "normal": [
+        349.99999999999994,
+        0.0,
+        0.0
+      ],
+      "nearestBoundaryDistance": 0.0
+    },
+    {
+      "addedFace1": 139,
+      "normal": [
+        162.9992868120023,
+        0.0,
+        0.0
+      ],
+      "nearestBoundaryDistance": 0.0
+    },
+    {
+      "addedFace1": 140,
+      "normal": [
+        215.94347629636994,
+        -0.0,
+        0.0
+      ],
+      "nearestBoundaryDistance": 0.0
+    },
+    {
+      "addedFace1": 141,
+      "normal": [
+        0.0,
+        0.0,
+        -46.312961471463154
+      ],
+      "nearestBoundaryDistance": 0.0
+    },
+    {
+      "addedFace1": 142,
+      "normal": [
+        -0.0,
+        -0.0,
+        -46.312961471463154
+      ],
+      "nearestBoundaryDistance": 0.0
+    },
+    {
+      "addedFace1": 143,
+      "normal": [
+        0.0,
+        0.0,
+        -19.20685685664012
+      ],
+      "nearestBoundaryDistance": 0.0
+    },
+    {
+      "addedFace1": 144,
+      "normal": [
+        0.0,
+        0.0,
+        -21.568513400000672
+      ],
+      "nearestBoundaryDistance": 0.0
+    },
+    {
+      "addedFace1": 145,
+      "normal": [
+        0.0,
+        0.0,
+        -121.91460313337018
+      ],
+      "nearestBoundaryDistance": 0.0
+    },
+    {
+      "addedFace1": 146,
+      "normal": [
+        -0.0,
+        -0.0,
+        -121.91460313337018
+      ],
+      "nearestBoundaryDistance": 0.0
+    },
+    {
+      "addedFace1": 147,
+      "normal": [
+        0.0,
+        0.0,
+        -75.21903774832074
+      ],
+      "nearestBoundaryDistance": 0.0
+    },
+    {
+      "addedFace1": 148,
+      "normal": [
+        0.0,
+        0.0,
+        -91.58430459880535
+      ],
+      "nearestBoundaryDistance": 0.0
+    },
+    {
+      "addedFace1": 149,
+      "normal": [
+        0.0,
+        0.0,
+        -986.933027271713
+      ],
+      "nearestBoundaryDistance": 0.0
+    },
+    {
+      "addedFace1": 150,
+      "normal": [
+        -0.0,
+        -0.0,
+        -986.933027271713
+      ],
+      "nearestBoundaryDistance": 0.0
+    },
+    {
+      "addedFace1": 151,
+      "normal": [
+        0.0,
+        0.0,
+        -845.9425948043256
+      ],
+      "nearestBoundaryDistance": 0.0
+    },
+    {
+      "addedFace1": 152,
+      "normal": [
+        -0.0,
+        -0.0,
+        -845.9425948043254
+      ],
+      "nearestBoundaryDistance": 0.0
+    },
+    {
+      "addedFace1": 153,
+      "normal": [
+        0.0,
+        0.0,
+        -986.933027271713
+      ],
+      "nearestBoundaryDistance": 0.0
+    },
+    {
+      "addedFace1": 154,
+      "normal": [
+        -0.0,
+        -0.0,
+        -986.933027271713
+      ],
+      "nearestBoundaryDistance": 0.0
+    },
+    {
+      "addedFace1": 155,
+      "normal": [
+        0.0,
+        0.0,
+        -794.4433737381506
+      ],
+      "nearestBoundaryDistance": 0.0
+    },
+    {
+      "addedFace1": 156,
+      "normal": [
+        0.0,
+        0.0,
+        -627.4366581261552
+      ],
+      "nearestBoundaryDistance": 0.0
+    }
+  ],
+  "limitations": [
+    "No native Studio acceptance.",
+    "Geometry checks alone do not certify visual polish or watertight full island."
+  ],
+  "boundaryCoverage": [
+    {
+      "a": [
+        396.1904761904762,
+        4.0,
+        1270.0
+      ],
+      "b": [
+        409.67287611984557,
+        8.235775983048653,
+        1270.0
+      ],
+      "expectedArea": 271.23741163598834,
+      "coveredArea": 271.2374116359884
+    },
+    {
+      "a": [
+        493.48239992936936,
+        60.80720455447722,
+        1270.0
+      ],
+      "b": [
+        513.9411959927105,
+        69.33879447455139,
+        1270.0
+      ],
+      "expectedArea": 1617.7383711841208,
+      "coveredArea": 1617.7383711841217
+    },
+    {
+      "a": [
+        370.0,
+        -3.857142857142857,
+        1270.0
+      ],
+      "b": [
+        396.1904761904762,
+        4.0,
+        1270.0
+      ],
+      "expectedArea": 368.5374149659866,
+      "coveredArea": 368.5374149659865
+    },
+    {
+      "a": [
+        410.0,
+        8.440971871509158,
+        1270.0
+      ],
+      "b": [
+        493.48239992936936,
+        60.807204554477224,
+        1270.0
+      ],
+      "expectedArea": 4059.2555783980324,
+      "coveredArea": 4059.255578398033
+    },
+    {
+      "a": [
+        409.67287611984557,
+        8.23577598304865,
+        1270.0
+      ],
+      "b": [
+        410.0,
+        8.440971871509158,
+        1270.0
+      ],
+      "expectedArea": 7.307415555432059,
+      "coveredArea": 7.307415555432059
+    },
+    {
+      "a": [
+        640.0,
+        47.41555806143004,
+        1270.0
+      ],
+      "b": [
+        640.0,
+        58.86959475433468,
+        1320.0
+      ],
+      "expectedArea": 3357.1288203941176,
+      "coveredArea": 3357.128820394118
+    },
+    {
+      "a": [
+        513.9411959927105,
+        69.33879447455138,
+        1270.0
+      ],
+      "b": [
+        640.0,
+        47.41555806143004,
+        1270.0
+      ],
+      "expectedArea": 9123.780277767684,
+      "coveredArea": 9123.780277767686
+    },
+    {
+      "a": [
+        370.0,
+        0.8399673731999808,
+        1453.9994562199997
+      ],
+      "b": [
+        370.0,
+        -6.0,
+        1320.0
+      ],
+      "expectedArea": 1530.2716040456667,
+      "coveredArea": 1530.2716040456664
+    },
+    {
+      "a": [
+        640.0,
+        58.86959475433468,
+        1320.0
+      ],
+      "b": [
+        640.0,
+        39.935294368129824,
+        1454.0057916401345
+      ],
+      "expectedArea": 8496.294775347667,
+      "coveredArea": 8496.294775347666
+    },
+    {
+      "a": [
+        325.5263157894737,
+        -12.0,
+        1475.0
+      ],
+      "b": [
+        370.0,
+        1.8744182407256371,
+        1475.0
+      ],
+      "expectedArea": 397.47061614245155,
+      "coveredArea": 397.47061614245155
+    },
+    {
+      "a": [
+        370.0,
+        1.874418240725637,
+        1475.0
+      ],
+      "b": [
+        370.0,
+        0.8399673731999799,
+        1453.9994562199997
+      ],
+      "expectedArea": 322.50939988052767,
+      "coveredArea": 322.5093998805277
+    },
+    {
+      "a": [
+        640.0,
+        39.93529436812982,
+        1454.0057916401345
+      ],
+      "b": [
+        640.0,
+        28.720679627644948,
+        1510.0
+      ],
+      "expectedArea": 2706.087373572578,
+      "coveredArea": 2706.087373572579
+    },
+    {
+      "a": [
+        366.6919313234669,
+        5.806063517632065,
+        1535.0
+      ],
+      "b": [
+        318.059994627637,
+        -9.365601289367117,
+        1535.0
+      ],
+      "expectedArea": 594.2935059509014,
+      "coveredArea": 594.2935059509014
+    },
+    {
+      "a": [
+        438.07150811342626,
+        37.26946502447126,
+        1560.0
+      ],
+      "b": [
+        410.0,
+        24.61887536394225,
+        1560.0
+      ],
+      "expectedArea": 1261.6506382578857,
+      "coveredArea": 1261.6506382578857
+    },
+    {
+      "a": [
+        410.0,
+        24.61887536394225,
+        1560.0
+      ],
+      "b": [
+        378.70818593809787,
+        10.517035953278015,
+        1560.0
+      ],
+      "expectedArea": 987.8185987835996,
+      "coveredArea": 987.8185987835996
+    },
+    {
+      "a": [
+        640.0,
+        28.720679627644948,
+        1510.0
+      ],
+      "b": [
+        640.0,
+        21.487291567543885,
+        1560.0
+      ],
+      "expectedArea": 1955.199279879721,
+      "coveredArea": 1955.1992798797205
+    },
+    {
+      "a": [
+        640.0,
+        21.487291567543885,
+        1560.0
+      ],
+      "b": [
+        508.56672434712004,
+        34.90041468978808,
+        1560.0
+      ],
+      "expectedArea": 5545.676329117086,
+      "coveredArea": 5545.676329117087
+    },
+    {
+      "a": [
+        370.0,
+        8.637739051854796,
+        1560.0
+      ],
+      "b": [
+        370.0,
+        6.519971472480092,
+        1535.0
+      ],
+      "expectedArea": 539.4713815541861,
+      "coveredArea": 539.4713815541862
+    },
+    {
+      "a": [
+        370.0,
+        6.519971472480092,
+        1535.0
+      ],
+      "b": [
+        366.6919313234669,
+        5.806063517632065,
+        1535.0
+      ],
+      "expectedArea": 66.70064659978357,
+      "coveredArea": 66.70064659978354
+    },
+    {
+      "a": [
+        378.70818593809787,
+        10.517035953278016,
+        1560.0
+      ],
+      "b": [
+        370.0,
+        8.637739051854794,
+        1560.0
+      ],
+      "expectedArea": 205.31627430693325,
+      "coveredArea": 205.31627430693325
+    },
+    {
+      "a": [
+        508.56672434712004,
+        34.90041468978808,
+        1560.0
+      ],
+      "b": [
+        438.07150811342626,
+        37.26946502447126,
+        1560.0
+      ],
+      "expectedArea": 3530.7486652799043,
+      "coveredArea": 3530.7486652799043
+    }
+  ]
+}

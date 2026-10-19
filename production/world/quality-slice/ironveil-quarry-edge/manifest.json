@@ -1,0 +1,178 @@
+{
+  "status": "REVIEW_ONLY_NATIVE_PENDING",
+  "base": "7f392a58f8b550383e5e1278c8c0b9627453960c",
+  "files": {
+    "assets/production/world-slice/coast-prop-composition/provenance.json": {
+      "sha256": "2a04d30da7e6aac6bd1a187594267dd37c91ceacf79c53eb936c0af332a5cebe",
+      "bytes": 895
+    },
+    "assets/production/world-slice/coast-prop-composition/scenery.mesh.json": {
+      "sha256": "8743e160609a44e48b80e81b9ff0fe21b043bfb7e69fa216f2d164149c7f6760",
+      "bytes": 1512091
+    },
+    "assets/production/world-slice/ironveil-quarry-edge/.gitattributes": {
+      "sha256": "730a35ae3d558080083c3103d9ac8100c3f6561678092abe341701dfa331eb1d",
+      "bytes": 29
+    },
+    "assets/production/world-slice/ironveil-quarry-edge/after/approach.png": {
+      "sha256": "74946d67e651f9777961c2c7b7ed0fa1ea40707461f2f5a3b6040bb795295ede",
+      "bytes": 1006472
+    },
+    "assets/production/world-slice/ironveil-quarry-edge/after/player_arrival.png": {
+      "sha256": "d116c6733dd7842d26c22976ec888911448e5ed6be0521dd756e0dfe8b1705c5",
+      "bytes": 1075111
+    },
+    "assets/production/world-slice/ironveil-quarry-edge/after/render-evidence.json": {
+      "sha256": "b46ba2f55aa150db51ec1c407becef2edfc83e56371e9c8c2182e48984f33ce7",
+      "bytes": 1042
+    },
+    "assets/production/world-slice/ironveil-quarry-edge/after/reverse.png": {
+      "sha256": "e45e241026f69bd8b8a98ee0f6b3844fb89f98ec50a491ef54c9b5928aea521f",
+      "bytes": 1045023
+    },
+    "assets/production/world-slice/ironveil-quarry-edge/after/skyline.png": {
+      "sha256": "d643b39bd4edb412029c23b03ec3afa8e88295abda1bc412eb7d7399fd5f5ccc",
+      "bytes": 1063000
+    },
+    "assets/production/world-slice/ironveil-quarry-edge/after/source.blend": {
+      "sha256": "a204329bf8958777ba2c8e9bf70973b28c70a439d6ab3d07c2a7ebd76dd5cf62",
+      "bytes": 1081549
+    },
+    "assets/production/world-slice/ironveil-quarry-edge/before/approach.png": {
+      "sha256": "70bd5a716c53263671de2d7a64cada45a9a36507e608f23ef111484702be8d8a",
+      "bytes": 1015391
+    },
+    "assets/production/world-slice/ironveil-quarry-edge/before/player_arrival.png": {
+      "sha256": "4c78f63ba2e3e9878c88d398c7438d694281cf6cb9ac25a158b3ac57f194b269",
+      "bytes": 1073621
+    },
+    "assets/production/world-slice/ironveil-quarry-edge/before/render-evidence.json": {
+      "sha256": "2fc59e0c424dfb570dcd82f5b4310936d9a9a41da88c601856aebfa52b31055e",
+      "bytes": 1043
+    },
+    "assets/production/world-slice/ironveil-quarry-edge/before/reverse.png": {
+      "sha256": "414f57a827feeaa39316fac3f53f69ce48c5983be2a5eee69f09a30d8f0df321",
+      "bytes": 1047172
+    },
+    "assets/production/world-slice/ironveil-quarry-edge/before/skyline.png": {
+      "sha256": "39d734ca1f39471e1603d0fd5c12963e74312c43dd01f383c4e53b28e6eb3a8b",
+      "bytes": 1059312
+    },
+    "assets/production/world-slice/ironveil-quarry-edge/before/source.blend": {
+      "sha256": "7c6b8bb8f5ae5740bdd6a81296a79557aaa6d4a99601c58deeeb74c6271900c5",
+      "bytes": 1074786
+    },
+    "assets/production/world-slice/ironveil-quarry-edge/before.mesh.json": {
+      "sha256": "0a2dd8468029be8c7e9f829666be1413bd9d450b12a25f45beaec2c230480296",
+      "bytes": 1495840
+    },
+    "assets/production/world-slice/ironveil-quarry-edge/before.provenance.json": {
+      "sha256": "3e4da6901bdb8b639efa093fe012764a1e251c357323325ab78bc4c902f7e4f3",
+      "bytes": 933
+    },
+    "production/world/quality-slice/ironveil-quarry-edge/.gitattributes": {
+      "sha256": "730a35ae3d558080083c3103d9ac8100c3f6561678092abe341701dfa331eb1d",
+      "bytes": 29
+    },
+    "production/world/quality-slice/ironveil-quarry-edge/after.exit.txt": {
+      "sha256": "13bf7b3039c63bf5a50491fa3cfd8eb4e699d1ba1436315aef9cbe5711530354",
+      "bytes": 3
+    },
+    "production/world/quality-slice/ironveil-quarry-edge/after.stderr.log": {
+      "sha256": "f492df5e9b6e9eacc657d753a457d8cd3174131770ab4ca77c0f504aca6e659e",
+      "bytes": 831
+    },
+    "production/world/quality-slice/ironveil-quarry-edge/after.stdout.log": {
+      "sha256": "6f4c1b77e2f54ba61b3fbe59659ec7c14139f3784cc299dea2c27b18d80476c4",
+      "bytes": 729
+    },
+    "production/world/quality-slice/ironveil-quarry-edge/before.exit.txt": {
+      "sha256": "13bf7b3039c63bf5a50491fa3cfd8eb4e699d1ba1436315aef9cbe5711530354",
+      "bytes": 3
+    },
+    "production/world/quality-slice/ironveil-quarry-edge/before.stderr.log": {
+      "sha256": "f492df5e9b6e9eacc657d753a457d8cd3174131770ab4ca77c0f504aca6e659e",
+      "bytes": 831
+    },
+    "production/world/quality-slice/ironveil-quarry-edge/before.stdout.log": {
+      "sha256": "96573f67ebcb471606583ada08fcac8cf182c7489c7da3f7d6c91a2342fb8c3c",
+      "bytes": 733
+    },
+    "production/world/quality-slice/ironveil-quarry-edge/cameras.json": {
+      "sha256": "fd51fdac31c1b01246db6ec1b1667701611e600d5b33a269b0d4e4b779ba3aea",
+      "bytes": 817
+    },
+    "production/world/quality-slice/ironveil-quarry-edge/HANDOFF.md": {
+      "sha256": "d49d2fff91e07ef2cb9701a6326b3a248a5ff76d7660c6b492b76563cad32174",
+      "bytes": 3410
+    },
+    "production/world/quality-slice/ironveil-quarry-edge/independent-01.exit.json": {
+      "sha256": "f468f8bf84d59a390a40e5d5ac0291111e0e6eeb79821864810ae628cbd3507e",
+      "bytes": 15
+    },
+    "production/world/quality-slice/ironveil-quarry-edge/independent-01.stderr.txt": {
+      "sha256": "d2f9d56aed27dcdde802bfee2777f4c5b5abb76ac47e3b6403ff47296fb7b94b",
+      "bytes": 726
+    },
+    "production/world/quality-slice/ironveil-quarry-edge/independent-01.stdout.txt": {
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "bytes": 0
+    },
+    "production/world/quality-slice/ironveil-quarry-edge/independent-02.exit.json": {
+      "sha256": "f468f8bf84d59a390a40e5d5ac0291111e0e6eeb79821864810ae628cbd3507e",
+      "bytes": 15
+    },
+    "production/world/quality-slice/ironveil-quarry-edge/independent-02.stderr.txt": {
+      "sha256": "40e82dcafea85d6198b0c05bcb579bdb44ca4553ecacbc67cdebf057bf5248de",
+      "bytes": 716
+    },
+    "production/world/quality-slice/ironveil-quarry-edge/independent-02.stdout.txt": {
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "bytes": 0
+    },
+    "production/world/quality-slice/ironveil-quarry-edge/independent-03.exit.json": {
+      "sha256": "47b8b6b49d4695fe6e036bd916538aff4f46773e212ca0d429db80f3963e2cfe",
+      "bytes": 15
+    },
+    "production/world/quality-slice/ironveil-quarry-edge/independent-03.stderr.txt": {
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "bytes": 0
+    },
+    "production/world/quality-slice/ironveil-quarry-edge/independent-03.stdout.txt": {
+      "sha256": "e9e6031c3da0231d2ccb4133c0f29c4d46c5e8b8cbf72fcf5e5c40fb1145cfc7",
+      "bytes": 4226
+    },
+    "production/world/quality-slice/ironveil-quarry-edge/independent-review.json": {
+      "sha256": "29ec0fbe4cb12a0a982efe85d4ae48941481439fec64bca63f509ee2a7cf25fc",
+      "bytes": 31028
+    },
+    "production/world/quality-slice/ironveil-quarry-edge/independent-visual-review.md": {
+      "sha256": "c02faae7646c08dcd35359e265a188a211f1a346b56e1601f5c4021526bf4587",
+      "bytes": 2001
+    },
+    "production/world/quality-slice/ironveil-quarry-edge/recipe-evidence.json": {
+      "sha256": "c6e1301afbd93dac8978e44e00ab89944c2ded28b1a61a6b559e9b93f17b54c8",
+      "bytes": 4781
+    },
+    "production/world/quality-slice/ironveil-quarry-edge/recipe.py": {
+      "sha256": "0eeb3b9070a3d7cb97998e45f19ffaad2eae17043efa2b514c1d2de3e2881473",
+      "bytes": 5598
+    },
+    "production/world/quality-slice/ironveil-quarry-edge/render.py": {
+      "sha256": "156e20f3de4d11e775757465d1dba916fef6746297fc0d98bc8972b26cf673e2",
+      "bytes": 5463
+    },
+    "production/world/quality-slice/ironveil-quarry-edge/source-survey.json": {
+      "sha256": "3cb55364cbd6e2a40d7b160286ecd851b67de975a5c630590cf398822ab5ac1b",
+      "bytes": 21680
+    },
+    "production/world/quality-slice/ironveil-quarry-edge/verify.py": {
+      "sha256": "4d4e01718e487a18c377354987619c75490367e3933f5f4b2f76bb26deb2b668",
+      "bytes": 6682
+    },
+    "production/world/quality-slice/ironveil-quarry-edge/visual-review.json": {
+      "sha256": "1cd117b3fc91c2cdb94c436aa1c82ee84e066f536de21f886fa4d6614720999a",
+      "bytes": 1188
+    }
+  }
+}

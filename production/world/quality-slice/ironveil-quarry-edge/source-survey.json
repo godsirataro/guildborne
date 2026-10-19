@@ -1,0 +1,1243 @@
+{
+  "scope": "SOURCE_LITERAL_GEOMETRY_NOT_STUDIO_CAPTURE",
+  "baseCommit": "ccd40f063b3111d38fde5a18ac70b732b4d102ce",
+  "sourceHashes": {
+    "src/server/Services/AdventureMapKit.luau": "978724afd99c499757601d56634ecf0b00ff21921fbec8b12a617c0fed1fe4c7",
+    "src/server/Services/RegionalWorld.luau": "13e0ce9ed41893a6a46d46955ec4dafd8159a720df5d1ff89f91cd69ec7b6c09",
+    "src/shared/Data/Expansion.luau": "16062f6b029b14f5c9de5a9090e107a67bed69e1edc3a38fea4c1b984719413c",
+    "src/server/Services/IronveilWorld.luau": "7c87d02fb7723ab19e0632cefbfaa7a1cf1db8f0fc7ad47dac8738ff0430d5e8",
+    "src/server/Config/AdventureEnemyProfiles.luau": "8e48df482e257da83c573379842a9fbc86b57ae8da0f849f3c58d97ae5f7226e",
+    "src/shared/Config/City.luau": "f78e3df184b45f430575425e1e294f00f94031014b2e5e682d0549890f47e985",
+    "production/world/quality-slice/greenwood-ironveil/ground.json": "85b0866cf5ed468ef323f52c5e33f825fcb89155d1a91c2753d593271ccdeb70",
+    "assets/production/world-slice/greenwood-ironveil/scenery.mesh.json": "b885085377b3e56faf9f6a0fe072d0db4672f6b87c5241c6d61ff34c70a65539"
+  },
+  "nativeParts": [
+    {
+      "name": "Island",
+      "index": 0,
+      "position": [
+        500.0,
+        0.0,
+        1400.0
+      ],
+      "size": [
+        240.0,
+        4.0,
+        220.0
+      ],
+      "color": [
+        0.3764705882352941,
+        0.4117647058823529,
+        0.4666666666666667
+      ],
+      "collision": true,
+      "className": "Part",
+      "yaw": 0.0
+    },
+    {
+      "name": "Landing",
+      "index": 1,
+      "position": [
+        500.0,
+        0.0,
+        1522.0
+      ],
+      "size": [
+        28.0,
+        4.0,
+        24.0
+      ],
+      "color": [
+        0.4549019607843137,
+        0.30980392156862746,
+        0.19607843137254902
+      ],
+      "collision": true,
+      "className": "Part",
+      "yaw": 0.0
+    },
+    {
+      "name": "MidTerrace",
+      "index": 2,
+      "position": [
+        500.0,
+        4.0,
+        1370.0
+      ],
+      "size": [
+        220.0,
+        4.0,
+        160.0
+      ],
+      "color": [
+        0.6941176470588235,
+        0.5607843137254902,
+        0.34509803921568627
+      ],
+      "collision": true,
+      "className": "Part",
+      "yaw": 0.0
+    },
+    {
+      "name": "UpperTerrace",
+      "index": 3,
+      "position": [
+        500.0,
+        8.0,
+        1342.5
+      ],
+      "size": [
+        190.0,
+        4.0,
+        105.0
+      ],
+      "color": [
+        0.3764705882352941,
+        0.4117647058823529,
+        0.4666666666666667
+      ],
+      "collision": true,
+      "className": "Part",
+      "yaw": 0.0
+    },
+    {
+      "name": "QuarryAscent",
+      "index": 4,
+      "position": [
+        500.0,
+        4.0,
+        1462.5
+      ],
+      "size": [
+        20.0,
+        4.0,
+        25.0
+      ],
+      "color": [
+        0.7058823529411765,
+        0.6,
+        0.4235294117647059
+      ],
+      "collision": true,
+      "className": "WedgePart",
+      "yaw": 180.0
+    },
+    {
+      "name": "SummitAscent",
+      "index": 5,
+      "position": [
+        500.0,
+        8.0,
+        1407.5
+      ],
+      "size": [
+        20.0,
+        4.0,
+        25.0
+      ],
+      "color": [
+        0.7058823529411765,
+        0.6,
+        0.4235294117647059
+      ],
+      "collision": true,
+      "className": "WedgePart",
+      "yaw": 180.0
+    },
+    {
+      "name": "CrystalBase",
+      "index": 6,
+      "position": [
+        418.0,
+        3.5,
+        1480.0
+      ],
+      "size": [
+        7.0,
+        3.0,
+        7.0
+      ],
+      "color": [
+        0.3764705882352941,
+        0.4117647058823529,
+        0.4666666666666667
+      ],
+      "collision": true,
+      "className": "Part",
+      "yaw": 0.0
+    },
+    {
+      "name": "Crystal",
+      "index": 7,
+      "position": [
+        416.0,
+        7.5,
+        1480.0
+      ],
+      "size": [
+        2.0,
+        5.0,
+        2.0
+      ],
+      "color": [
+        0.8470588235294118,
+        0.6823529411764706,
+        0.2980392156862745
+      ],
+      "collision": false,
+      "className": "Part",
+      "yaw": 45.0
+    },
+    {
+      "name": "Crystal",
+      "index": 8,
+      "position": [
+        418.0,
+        10.0,
+        1480.0
+      ],
+      "size": [
+        2.0,
+        10.0,
+        2.0
+      ],
+      "color": [
+        0.8470588235294118,
+        0.6823529411764706,
+        0.2980392156862745
+      ],
+      "collision": false,
+      "className": "Part",
+      "yaw": 45.0
+    },
+    {
+      "name": "Crystal",
+      "index": 9,
+      "position": [
+        420.0,
+        8.5,
+        1480.0
+      ],
+      "size": [
+        2.0,
+        7.0,
+        2.0
+      ],
+      "color": [
+        0.8470588235294118,
+        0.6823529411764706,
+        0.2980392156862745
+      ],
+      "collision": false,
+      "className": "Part",
+      "yaw": 45.0
+    },
+    {
+      "name": "CrystalBase",
+      "index": 10,
+      "position": [
+        582.0,
+        3.5,
+        1480.0
+      ],
+      "size": [
+        7.0,
+        3.0,
+        7.0
+      ],
+      "color": [
+        0.3764705882352941,
+        0.4117647058823529,
+        0.4666666666666667
+      ],
+      "collision": true,
+      "className": "Part",
+      "yaw": 0.0
+    },
+    {
+      "name": "Crystal",
+      "index": 11,
+      "position": [
+        580.0,
+        7.5,
+        1480.0
+      ],
+      "size": [
+        2.0,
+        5.0,
+        2.0
+      ],
+      "color": [
+        0.8470588235294118,
+        0.6823529411764706,
+        0.2980392156862745
+      ],
+      "collision": false,
+      "className": "Part",
+      "yaw": 45.0
+    },
+    {
+      "name": "Crystal",
+      "index": 12,
+      "position": [
+        582.0,
+        10.0,
+        1480.0
+      ],
+      "size": [
+        2.0,
+        10.0,
+        2.0
+      ],
+      "color": [
+        0.8470588235294118,
+        0.6823529411764706,
+        0.2980392156862745
+      ],
+      "collision": false,
+      "className": "Part",
+      "yaw": 45.0
+    },
+    {
+      "name": "Crystal",
+      "index": 13,
+      "position": [
+        584.0,
+        8.5,
+        1480.0
+      ],
+      "size": [
+        2.0,
+        7.0,
+        2.0
+      ],
+      "color": [
+        0.8470588235294118,
+        0.6823529411764706,
+        0.2980392156862745
+      ],
+      "collision": false,
+      "className": "Part",
+      "yaw": 45.0
+    },
+    {
+      "name": "CrystalBase",
+      "index": 14,
+      "position": [
+        415.0,
+        7.5,
+        1422.0
+      ],
+      "size": [
+        7.0,
+        3.0,
+        7.0
+      ],
+      "color": [
+        0.3764705882352941,
+        0.4117647058823529,
+        0.4666666666666667
+      ],
+      "collision": true,
+      "className": "Part",
+      "yaw": 0.0
+    },
+    {
+      "name": "Crystal",
+      "index": 15,
+      "position": [
+        413.0,
+        11.5,
+        1422.0
+      ],
+      "size": [
+        2.0,
+        5.0,
+        2.0
+      ],
+      "color": [
+        0.8470588235294118,
+        0.6823529411764706,
+        0.2980392156862745
+      ],
+      "collision": false,
+      "className": "Part",
+      "yaw": 45.0
+    },
+    {
+      "name": "Crystal",
+      "index": 16,
+      "position": [
+        415.0,
+        14.0,
+        1422.0
+      ],
+      "size": [
+        2.0,
+        10.0,
+        2.0
+      ],
+      "color": [
+        0.8470588235294118,
+        0.6823529411764706,
+        0.2980392156862745
+      ],
+      "collision": false,
+      "className": "Part",
+      "yaw": 45.0
+    },
+    {
+      "name": "Crystal",
+      "index": 17,
+      "position": [
+        417.0,
+        12.5,
+        1422.0
+      ],
+      "size": [
+        2.0,
+        7.0,
+        2.0
+      ],
+      "color": [
+        0.8470588235294118,
+        0.6823529411764706,
+        0.2980392156862745
+      ],
+      "collision": false,
+      "className": "Part",
+      "yaw": 45.0
+    },
+    {
+      "name": "CrystalBase",
+      "index": 18,
+      "position": [
+        585.0,
+        7.5,
+        1422.0
+      ],
+      "size": [
+        7.0,
+        3.0,
+        7.0
+      ],
+      "color": [
+        0.3764705882352941,
+        0.4117647058823529,
+        0.4666666666666667
+      ],
+      "collision": true,
+      "className": "Part",
+      "yaw": 0.0
+    },
+    {
+      "name": "Crystal",
+      "index": 19,
+      "position": [
+        583.0,
+        11.5,
+        1422.0
+      ],
+      "size": [
+        2.0,
+        5.0,
+        2.0
+      ],
+      "color": [
+        0.8470588235294118,
+        0.6823529411764706,
+        0.2980392156862745
+      ],
+      "collision": false,
+      "className": "Part",
+      "yaw": 45.0
+    },
+    {
+      "name": "Crystal",
+      "index": 20,
+      "position": [
+        585.0,
+        14.0,
+        1422.0
+      ],
+      "size": [
+        2.0,
+        10.0,
+        2.0
+      ],
+      "color": [
+        0.8470588235294118,
+        0.6823529411764706,
+        0.2980392156862745
+      ],
+      "collision": false,
+      "className": "Part",
+      "yaw": 45.0
+    },
+    {
+      "name": "Crystal",
+      "index": 21,
+      "position": [
+        587.0,
+        12.5,
+        1422.0
+      ],
+      "size": [
+        2.0,
+        7.0,
+        2.0
+      ],
+      "color": [
+        0.8470588235294118,
+        0.6823529411764706,
+        0.2980392156862745
+      ],
+      "collision": false,
+      "className": "Part",
+      "yaw": 45.0
+    },
+    {
+      "name": "CrystalBase",
+      "index": 22,
+      "position": [
+        428.0,
+        11.5,
+        1352.0
+      ],
+      "size": [
+        7.0,
+        3.0,
+        7.0
+      ],
+      "color": [
+        0.3764705882352941,
+        0.4117647058823529,
+        0.4666666666666667
+      ],
+      "collision": true,
+      "className": "Part",
+      "yaw": 0.0
+    },
+    {
+      "name": "Crystal",
+      "index": 23,
+      "position": [
+        426.0,
+        15.5,
+        1352.0
+      ],
+      "size": [
+        2.0,
+        5.0,
+        2.0
+      ],
+      "color": [
+        0.8470588235294118,
+        0.6823529411764706,
+        0.2980392156862745
+      ],
+      "collision": false,
+      "className": "Part",
+      "yaw": 45.0
+    },
+    {
+      "name": "Crystal",
+      "index": 24,
+      "position": [
+        428.0,
+        18.0,
+        1352.0
+      ],
+      "size": [
+        2.0,
+        10.0,
+        2.0
+      ],
+      "color": [
+        0.8470588235294118,
+        0.6823529411764706,
+        0.2980392156862745
+      ],
+      "collision": false,
+      "className": "Part",
+      "yaw": 45.0
+    },
+    {
+      "name": "Crystal",
+      "index": 25,
+      "position": [
+        430.0,
+        16.5,
+        1352.0
+      ],
+      "size": [
+        2.0,
+        7.0,
+        2.0
+      ],
+      "color": [
+        0.8470588235294118,
+        0.6823529411764706,
+        0.2980392156862745
+      ],
+      "collision": false,
+      "className": "Part",
+      "yaw": 45.0
+    },
+    {
+      "name": "CrystalBase",
+      "index": 26,
+      "position": [
+        572.0,
+        11.5,
+        1352.0
+      ],
+      "size": [
+        7.0,
+        3.0,
+        7.0
+      ],
+      "color": [
+        0.3764705882352941,
+        0.4117647058823529,
+        0.4666666666666667
+      ],
+      "collision": true,
+      "className": "Part",
+      "yaw": 0.0
+    },
+    {
+      "name": "Crystal",
+      "index": 27,
+      "position": [
+        570.0,
+        15.5,
+        1352.0
+      ],
+      "size": [
+        2.0,
+        5.0,
+        2.0
+      ],
+      "color": [
+        0.8470588235294118,
+        0.6823529411764706,
+        0.2980392156862745
+      ],
+      "collision": false,
+      "className": "Part",
+      "yaw": 45.0
+    },
+    {
+      "name": "Crystal",
+      "index": 28,
+      "position": [
+        572.0,
+        18.0,
+        1352.0
+      ],
+      "size": [
+        2.0,
+        10.0,
+        2.0
+      ],
+      "color": [
+        0.8470588235294118,
+        0.6823529411764706,
+        0.2980392156862745
+      ],
+      "collision": false,
+      "className": "Part",
+      "yaw": 45.0
+    },
+    {
+      "name": "Crystal",
+      "index": 29,
+      "position": [
+        574.0,
+        16.5,
+        1352.0
+      ],
+      "size": [
+        2.0,
+        7.0,
+        2.0
+      ],
+      "color": [
+        0.8470588235294118,
+        0.6823529411764706,
+        0.2980392156862745
+      ],
+      "collision": false,
+      "className": "Part",
+      "yaw": 45.0
+    },
+    {
+      "name": "CrystalBase",
+      "index": 30,
+      "position": [
+        440.0,
+        11.5,
+        1310.0
+      ],
+      "size": [
+        7.0,
+        3.0,
+        7.0
+      ],
+      "color": [
+        0.3764705882352941,
+        0.4117647058823529,
+        0.4666666666666667
+      ],
+      "collision": true,
+      "className": "Part",
+      "yaw": 0.0
+    },
+    {
+      "name": "Crystal",
+      "index": 31,
+      "position": [
+        438.0,
+        15.5,
+        1310.0
+      ],
+      "size": [
+        2.0,
+        5.0,
+        2.0
+      ],
+      "color": [
+        0.8470588235294118,
+        0.6823529411764706,
+        0.2980392156862745
+      ],
+      "collision": false,
+      "className": "Part",
+      "yaw": 45.0
+    },
+    {
+      "name": "Crystal",
+      "index": 32,
+      "position": [
+        440.0,
+        18.0,
+        1310.0
+      ],
+      "size": [
+        2.0,
+        10.0,
+        2.0
+      ],
+      "color": [
+        0.8470588235294118,
+        0.6823529411764706,
+        0.2980392156862745
+      ],
+      "collision": false,
+      "className": "Part",
+      "yaw": 45.0
+    },
+    {
+      "name": "Crystal",
+      "index": 33,
+      "position": [
+        442.0,
+        16.5,
+        1310.0
+      ],
+      "size": [
+        2.0,
+        7.0,
+        2.0
+      ],
+      "color": [
+        0.8470588235294118,
+        0.6823529411764706,
+        0.2980392156862745
+      ],
+      "collision": false,
+      "className": "Part",
+      "yaw": 45.0
+    },
+    {
+      "name": "CrystalBase",
+      "index": 34,
+      "position": [
+        560.0,
+        11.5,
+        1310.0
+      ],
+      "size": [
+        7.0,
+        3.0,
+        7.0
+      ],
+      "color": [
+        0.3764705882352941,
+        0.4117647058823529,
+        0.4666666666666667
+      ],
+      "collision": true,
+      "className": "Part",
+      "yaw": 0.0
+    },
+    {
+      "name": "Crystal",
+      "index": 35,
+      "position": [
+        558.0,
+        15.5,
+        1310.0
+      ],
+      "size": [
+        2.0,
+        5.0,
+        2.0
+      ],
+      "color": [
+        0.8470588235294118,
+        0.6823529411764706,
+        0.2980392156862745
+      ],
+      "collision": false,
+      "className": "Part",
+      "yaw": 45.0
+    },
+    {
+      "name": "Crystal",
+      "index": 36,
+      "position": [
+        560.0,
+        18.0,
+        1310.0
+      ],
+      "size": [
+        2.0,
+        10.0,
+        2.0
+      ],
+      "color": [
+        0.8470588235294118,
+        0.6823529411764706,
+        0.2980392156862745
+      ],
+      "collision": false,
+      "className": "Part",
+      "yaw": 45.0
+    },
+    {
+      "name": "Crystal",
+      "index": 37,
+      "position": [
+        562.0,
+        16.5,
+        1310.0
+      ],
+      "size": [
+        2.0,
+        7.0,
+        2.0
+      ],
+      "color": [
+        0.8470588235294118,
+        0.6823529411764706,
+        0.2980392156862745
+      ],
+      "collision": false,
+      "className": "Part",
+      "yaw": 45.0
+    },
+    {
+      "name": "QuarryWall",
+      "index": 38,
+      "position": [
+        394.0,
+        13.0,
+        1374.0
+      ],
+      "size": [
+        7.0,
+        15.0,
+        145.0
+      ],
+      "color": [
+        0.20392156862745098,
+        0.23921568627450981,
+        0.30980392156862746
+      ],
+      "collision": true,
+      "className": "Part",
+      "yaw": 0.0
+    },
+    {
+      "name": "QuarryWall",
+      "index": 39,
+      "position": [
+        606.0,
+        13.0,
+        1374.0
+      ],
+      "size": [
+        7.0,
+        15.0,
+        145.0
+      ],
+      "color": [
+        0.20392156862745098,
+        0.23921568627450981,
+        0.30980392156862746
+      ],
+      "collision": true,
+      "className": "Part",
+      "yaw": 0.0
+    },
+    {
+      "name": "GantryPost",
+      "index": 40,
+      "position": [
+        456.0,
+        19.0,
+        1320.0
+      ],
+      "size": [
+        4.0,
+        18.0,
+        4.0
+      ],
+      "color": [
+        0.4549019607843137,
+        0.30980392156862746,
+        0.19607843137254902
+      ],
+      "collision": true,
+      "className": "Part",
+      "yaw": 0.0
+    },
+    {
+      "name": "GantryBrace",
+      "index": 41,
+      "position": [
+        456.0,
+        27.0,
+        1327.0
+      ],
+      "size": [
+        4.0,
+        3.0,
+        20.0
+      ],
+      "color": [
+        0.4549019607843137,
+        0.30980392156862746,
+        0.19607843137254902
+      ],
+      "collision": false,
+      "className": "Part",
+      "yaw": 0.0
+    },
+    {
+      "name": "GantryPost",
+      "index": 42,
+      "position": [
+        544.0,
+        19.0,
+        1320.0
+      ],
+      "size": [
+        4.0,
+        18.0,
+        4.0
+      ],
+      "color": [
+        0.4549019607843137,
+        0.30980392156862746,
+        0.19607843137254902
+      ],
+      "collision": true,
+      "className": "Part",
+      "yaw": 0.0
+    },
+    {
+      "name": "GantryBrace",
+      "index": 43,
+      "position": [
+        544.0,
+        27.0,
+        1327.0
+      ],
+      "size": [
+        4.0,
+        3.0,
+        20.0
+      ],
+      "color": [
+        0.4549019607843137,
+        0.30980392156862746,
+        0.19607843137254902
+      ],
+      "collision": false,
+      "className": "Part",
+      "yaw": 0.0
+    },
+    {
+      "name": "GantryCrossbeam",
+      "index": 44,
+      "position": [
+        500.0,
+        29.0,
+        1320.0
+      ],
+      "size": [
+        92.0,
+        4.0,
+        4.0
+      ],
+      "color": [
+        0.4549019607843137,
+        0.30980392156862746,
+        0.19607843137254902
+      ],
+      "collision": false,
+      "className": "Part",
+      "yaw": 0.0
+    }
+  ],
+  "encounterMarkers": [
+    {
+      "name": "Arrival",
+      "position": [
+        500.0,
+        2.0,
+        1515.0
+      ],
+      "role": "Arrival"
+    },
+    {
+      "name": "RaiderCamp",
+      "position": [
+        448.0,
+        6.0,
+        1425.0
+      ],
+      "role": "Melee"
+    },
+    {
+      "name": "StoneGuard",
+      "position": [
+        545.0,
+        10.0,
+        1375.0
+      ],
+      "role": "Guard"
+    },
+    {
+      "name": "ShamanCamp",
+      "position": [
+        455.0,
+        10.0,
+        1350.0
+      ],
+      "role": "Support"
+    },
+    {
+      "name": "QuarryGuardian",
+      "position": [
+        500.0,
+        10.0,
+        1330.0
+      ],
+      "role": "Boss"
+    }
+  ],
+  "nativeRoutes": [
+    {
+      "name": "Main",
+      "points": [
+        [
+          500.0,
+          2.0,
+          1520.0
+        ],
+        [
+          500.0,
+          2.0,
+          1475.0
+        ],
+        [
+          500.0,
+          6.0,
+          1450.0
+        ],
+        [
+          500.0,
+          6.0,
+          1420.0
+        ],
+        [
+          500.0,
+          10.0,
+          1395.0
+        ],
+        [
+          500.0,
+          10.0,
+          1330.0
+        ]
+      ]
+    },
+    {
+      "name": "MidLoop",
+      "points": [
+        [
+          500.0,
+          6.0,
+          1440.0
+        ],
+        [
+          448.0,
+          6.0,
+          1440.0
+        ],
+        [
+          448.0,
+          6.0,
+          1405.0
+        ],
+        [
+          500.0,
+          6.0,
+          1430.0
+        ]
+      ]
+    },
+    {
+      "name": "UpperLoop",
+      "points": [
+        [
+          500.0,
+          10.0,
+          1380.0
+        ],
+        [
+          545.0,
+          10.0,
+          1380.0
+        ],
+        [
+          545.0,
+          10.0,
+          1332.0
+        ],
+        [
+          500.0,
+          10.0,
+          1332.0
+        ]
+      ]
+    }
+  ],
+  "protectedAnchors": [
+    {
+      "id": "stone",
+      "position": [
+        460,
+        2,
+        1470
+      ],
+      "clearRadius": 10
+    },
+    {
+      "id": "ore",
+      "position": [
+        540,
+        6,
+        1430
+      ],
+      "clearRadius": 10
+    },
+    {
+      "id": "spawn",
+      "position": [
+        500,
+        2.5,
+        1515
+      ],
+      "clearRadius": 10
+    },
+    {
+      "id": "returnPortal",
+      "position": [
+        500,
+        7,
+        1527
+      ],
+      "clearRadius": 12
+    },
+    {
+      "id": "mineEntrance",
+      "position": [
+        500,
+        2.15,
+        1498
+      ],
+      "clearRadius": 10
+    }
+  ],
+  "protectedLane": {
+    "width": 24,
+    "points": [
+      [
+        390,
+        2.1,
+        1495
+      ],
+      [
+        500,
+        2.1,
+        1495
+      ],
+      [
+        500,
+        2,
+        1475
+      ],
+      [
+        500,
+        6,
+        1450
+      ],
+      [
+        500,
+        6,
+        1420
+      ],
+      [
+        500,
+        10,
+        1395
+      ],
+      [
+        500,
+        10,
+        1330
+      ]
+    ],
+    "note": "Conservative 24-stud visual clearance; actual existing ascent collider is 20 wide. This art package does not widen it."
+  },
+  "encounterExclusionRadii": {
+    "RaiderCamp": 30,
+    "StoneGuard": 24,
+    "ShamanCamp": 30,
+    "QuarryGuardian": 32
+  },
+  "privatePocket": {
+    "baseY": 100,
+    "slotHeight": 80
+  },
+  "contextLimits": [
+    "Literal public map geometry is complete for Ironveil; dynamic players, heroes, private campaign pockets and activated encounter instances are not captured.",
+    "Resource anchors are source-derived; exact generated rock/tree meshes require conservative interaction clearances.",
+    "No native docking or actual party acceptance is implied."
+  ]
+}
