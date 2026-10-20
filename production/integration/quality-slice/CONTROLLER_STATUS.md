@@ -2,7 +2,9 @@
 
 Goal remains ACTIVE. Latest human threshold is **30% weekly Codex remaining**,
 replacing50% and5%; latest supported read26%used/74%remaining. No shutdown.
-Threshold propagated to existing S13/S14/S15/S17. No new chat/worktree or cleanup.
+Threshold propagated to existing S13/S14/S15/S17 and newly coordinated S18.
+S18 received30% weekly remaining/no shutdown in both Controller handoffs.
+No new chat/worktree or cleanup.
 Canonical adapted proposal:
 [Personality/Bond/Secret Path handoff](PERSONALITY_BOND_SECRET_PATH_HANDOFF.md).
 Source-reconciled proposal only; no Bond/Echo/Rift Weaver runtime completion.
