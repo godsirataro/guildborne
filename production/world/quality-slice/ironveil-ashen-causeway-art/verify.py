@@ -28,6 +28,53 @@ def overlap(a,b):
         x=[dot(v,n) for v in a['vertices']];y=[dot(v,n) for v in b['vertices']]
         if min(max(x),max(y))-max(min(x),min(y))<=1e-6:return False
     return True
+def verify_splices(solids):
+    """Separated chord halves must bury their entire end faces inside post6."""
+    byname={s['name']:s for s in solids};results=[]
+    for side in ['north','south']:
+        post=byname[side+'_post_6']
+        for level in ['lower','upper']:
+            left=byname[side+'_iron_'+level];right=byname[side+'_ashen_'+level]
+            gap=right['min'][0]-left['max'][0]
+            assert gap>1e-5,('exposed_chord_splice_no_positive_gap',side,level,gap)
+            # Disjoint X ranges exclude positive-area coincident faces between halves.
+            assert not overlap(left,right)
+            margins=[]
+            for chord,x in [(left,left['max'][0]),(right,right['min'][0])]:
+                ends=[v for v in chord['vertices'] if abs(v[0]-x)<1e-7]
+                assert len(ends)>=3,('missing_end_face',chord['name'])
+                assert overlap(chord,post),('end_not_in_post',chord['name'])
+                # Convex post support planes, derived from actual faces/vertices.
+                # Strict containment of every end vertex also contains the full face.
+                margin=min(min(dot(v,n)-min(dot(p,n) for p in post['vertices']),max(dot(p,n) for p in post['vertices'])-dot(v,n)) for v in ends for n in post['normals'])
+                assert margin>1e-5,('exposed_chord_end_face',chord['name'],margin)
+                margins.append(margin)
+            results.append(dict(side=side,level=level,xGap=gap,endFaceMinimumMargins=margins))
+    return results
+def old_splice_regression():
+    """Read hash-pinned historical archive without requiring a local Git object."""
+    archive=ASSET/'revision-ac539a3'
+    raw=(archive/'scenery.mesh.json').read_bytes()
+    assert sha(raw)=='99ceb74508c2e693957a5601960f2a2897fc85b55eabf17d1dbf0eb5ca471c1e'
+    meta_raw=(archive/'solids.json').read_bytes()
+    assert sha(meta_raw)=='4a8a1b0d753befc64d6e054b1daa65d78c3f9509a131674e2873f1365d600175'
+    data=json.loads(raw);meta=json.loads(meta_raw)
+    meshes={m['id']:m for m in data['meshes']};solids=[]
+    for p in data['placements']:
+        m=meshes[p['meshId']];cf=p['cframe'];sc=p['scale']
+        world=[[cf[k]+sum(cf[3+3*k+j]*sc[j]*v[j] for j in range(3)) for k in range(3)] for v in m['vertices']]
+        for s in [s for s in meta if s['meshId']==m['id']]:
+            fs=m['triangles'][s['firstTriangle']-1:s['firstTriangle']-1+s['triangleCount']]
+            vs=[world[i-1] for i in sorted({i for f in fs for i in f})];ns=[];es=[]
+            for f in fs:
+                a,b,c=[world[i-1] for i in f];ns.append(cross(sub(b,a),sub(c,a)))
+                es.extend(sub(world[y-1],world[x-1]) for x,y in zip(f,f[1:]+f[:1]))
+            solids.append(record(s['name'],vs,ns,es))
+    try:verify_splices(solids)
+    except AssertionError as error:
+        assert 'exposed_chord_splice_no_positive_gap' in str(error)
+        return dict(status='EXPECTED_REJECTION',commit='ac539a3',packetSHA256=sha(raw),reason=str(error))
+    raise AssertionError('old_splice_packet_was_not_rejected')
 def main():
     packet=load(ASSET/'scenery.mesh.json');meta=load(ASSET/'solids.json');design=load(HERE/'design-bounds.json')
     assert packet['schemaVersion']==1 and packet['coordinateSystem']=='RobloxYUp' and packet['units']=='studs'
@@ -65,6 +112,7 @@ def main():
             assert volume>0 and all(count==1 and edges[b,a]==1 for (a,b),count in edges.items()),('closure',s['name'])
             solids.append(record(s['name'],vs,ns,es))
     assert len({s['name'] for s in solids})==len(solids)
+    splice_checks=verify_splices(solids);old_splice=old_splice_regression()
     # Parse actual unchanged native Island literals and City.RegionWorld pivots.
     source=(ROOT/'src/server/Services/AdventureMapKit.luau').read_text(encoding="utf-8");city=(ROOT/'src/shared/Config/City.luau').read_text(encoding="utf-8")
     region=(ROOT/'src/server/Services/RegionalWorld.luau').read_text(encoding="utf-8");assert 'model:PivotTo(CFrame.new(worldDef.X,0,worldDef.Z))' in region
@@ -104,5 +152,5 @@ def main():
     for p in files:
         if p.startswith(('src/','tests/')) or p.endswith(('.mesh.json','/ground.json')):
             old=subprocess.check_output(['git','show',BASE+':'+p],cwd=ROOT);assert (ROOT/p).read_bytes()==old,('base_mutation',p);preserved.append(p)
-    return dict(status='PASS_OFFLINE_GEOMETRY_NOT_NATIVE',packetSHA256=sha((ASSET/'scenery.mesh.json').read_bytes()),triangles=total,placements=len(packet['placements']),closedConvexSolids=len(solids),nativeIslandBounds={s['name']:{k:s[k] for k in ['min','max']} for s in islands},islandRootedSolids=sorted(roots),solidContacts=contacts,nativeContacts=native_contacts,declaredContactsVerified=len(design['declaredContacts']),headroomPrisms=len(prisms),preservedFiles=preserved,limits=['Contact topology is not structural engineering or native physics.','Decorations are noncolliding: visually framed edges are not gameplay barriers.','Shore occlusion/art acceptance requires actual image review.'])
+    return dict(status='PASS_OFFLINE_GEOMETRY_NOT_NATIVE',packetSHA256=sha((ASSET/'scenery.mesh.json').read_bytes()),spliceChecks=splice_checks,oldSpliceRegression=old_splice,triangles=total,placements=len(packet['placements']),closedConvexSolids=len(solids),nativeIslandBounds={s['name']:{k:s[k] for k in ['min','max']} for s in islands},islandRootedSolids=sorted(roots),solidContacts=contacts,nativeContacts=native_contacts,declaredContactsVerified=len(design['declaredContacts']),headroomPrisms=len(prisms),preservedFiles=preserved,limits=['Contact topology is not structural engineering or native physics.','Decorations are noncolliding: visually framed edges are not gameplay barriers.','Shore occlusion/art acceptance requires actual image review.'])
 if __name__=='__main__':print(json.dumps(main(),indent=2))

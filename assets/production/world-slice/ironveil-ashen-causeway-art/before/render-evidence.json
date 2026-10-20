@@ -25,15 +25,15 @@
   },
   "existingCoast": "coast-prop-ashen-cut",
   "causewayArtIncluded": false,
-  "blendSHA256": "57fc637776103f402a00139656c0dfd4e76fb39c84996e19d52e12c406ea1640",
+  "blendSHA256": "20802ee95d7253847d4b37150c6854d01bd1465587694cff96f180c8b4d1f311",
   "omissions": [
     "Actors, dynamic resource art, GUI, private campaign pockets and distant city omitted",
     "Roblox materials, lighting, physics and gameplay not reproduced"
   ],
   "images": {
-    "01_ironveil_departure.png": "3b3a7edf47201f832749139bd0dae4e36295e96f344b8f253ed6a424799a317a",
-    "02_ashen_arrival.png": "fcf76a878a3df6a92568c783bfa63c0594e0981389fbbc6d98c35e47d6796d59",
-    "03_corridor_overview.png": "38aa4f8ef059c26203c0eaff4c1db9822741022a1c9a8c7829b2a3d37074e123",
-    "04_underside_within_cut.png": "a3566b7d7b70d95050a58ab7a78c119c3286e7957b5470da4d52cffcac0ccaa8"
+    "01_ironveil_departure.png": "9145046401cfa507e3620dc110bca55ffe911e296dd094614e463b34f92d05a6",
+    "02_ashen_arrival.png": "fadc54d884aeaeb3a42765e1680ccaf49acc04c63e037e58c1923e8c369fe49a",
+    "03_corridor_overview.png": "98a9e35823a1f68eeadf6d196e6511bc4bbd80d69486e0ae2585e8a9d877f6b4",
+    "04_underside_within_cut.png": "1d313af524be1e086556aa92c64499860c921ab7303424eb377fbf8f4d062632"
   }
 }

@@ -1,0 +1,63 @@
+{
+  "resolution": [
+    1600,
+    900
+  ],
+  "samples": 24,
+  "lens": 28,
+  "views": [
+    {
+      "name": "01_ironveil_departure",
+      "eye": [
+        600,
+        7.1,
+        1505
+      ],
+      "target": [
+        750,
+        4,
+        1505
+      ]
+    },
+    {
+      "name": "02_ashen_arrival",
+      "eye": [
+        920,
+        7.1,
+        1515
+      ],
+      "target": [
+        780,
+        4,
+        1505
+      ]
+    },
+    {
+      "name": "03_corridor_overview",
+      "eye": [
+        755,
+        210,
+        1740
+      ],
+      "target": [
+        755,
+        0,
+        1470
+      ]
+    },
+    {
+      "name": "04_underside_within_cut",
+      "eye": [
+        930,
+        -12,
+        1516
+      ],
+      "target": [
+        775,
+        -5,
+        1505
+      ]
+    }
+  ],
+  "notes": "Views01/02 near player head height;04 intentional offline engineering inspection below deck, within cleared notch sight corridor, not a playable position. Same cameras and lighting before/after; original obstructed coast never included."
+}

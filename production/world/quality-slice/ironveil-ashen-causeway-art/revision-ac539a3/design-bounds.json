@@ -1,0 +1,846 @@
+{
+  "status": "AUTHOR_DESIGN_REQUIRES_INDEPENDENT_CONTACT_VERIFICATION",
+  "walkExclusionsXZ": [
+    [
+      624,
+      886,
+      1493,
+      1517
+    ],
+    [
+      596,
+      624,
+      1493,
+      1519
+    ],
+    [
+      886,
+      914,
+      1493,
+      1519
+    ]
+  ],
+  "walkFloorY": 2.1,
+  "roadUndersideY": 1.7,
+  "underdeckTopY": 1.73,
+  "sideTrussZ": [
+    1491.5,
+    1520.5
+  ],
+  "bayNodesX": [
+    616,
+    640,
+    664,
+    688,
+    712,
+    736,
+    760,
+    784,
+    808,
+    832,
+    856,
+    880,
+    904
+  ],
+  "upperChordY": 7.3,
+  "nativeAnchors": {
+    "native_ironveil_island": {
+      "min": [
+        380,
+        -2,
+        1290
+      ],
+      "max": [
+        620,
+        2,
+        1510
+      ]
+    },
+    "native_ashen_island": {
+      "min": [
+        890,
+        -2,
+        1290
+      ],
+      "max": [
+        1110,
+        2,
+        1510
+      ]
+    }
+  },
+  "nativeRoad": "production/world/quality-slice/ironveil-ashen/runtime-descriptor.json",
+  "declaredContacts": [
+    {
+      "a": "ironveil_battered_plinth",
+      "b": "native_ironveil_island",
+      "reason": "positive-volume embed in source native Island"
+    },
+    {
+      "a": "ironveil_bearing_cap",
+      "b": "ironveil_battered_plinth",
+      "reason": "bearing overlap .25Y"
+    },
+    {
+      "a": "ironveil_bearing_cap",
+      "b": "native_road",
+      "reason": "cap top1.73 overlaps collider underside1.70 by.03"
+    },
+    {
+      "a": "ashen_battered_plinth",
+      "b": "native_ashen_island",
+      "reason": "positive-volume embed in source native Island"
+    },
+    {
+      "a": "ashen_bearing_cap",
+      "b": "ashen_battered_plinth",
+      "reason": "bearing overlap .25Y"
+    },
+    {
+      "a": "ashen_bearing_cap",
+      "b": "native_road",
+      "reason": "cap top1.73 overlaps collider underside1.70 by.03"
+    },
+    {
+      "a": "north_ashen_lower",
+      "b": "north_iron_lower",
+      "reason": "chord splice overlaps .6X"
+    },
+    {
+      "a": "north_ashen_upper",
+      "b": "north_iron_upper",
+      "reason": "chord splice overlaps .6X"
+    },
+    {
+      "a": "north_post_0",
+      "b": "north_iron_lower",
+      "reason": "vertical bearing in lower chord"
+    },
+    {
+      "a": "north_post_0",
+      "b": "north_iron_upper",
+      "reason": "vertical bearing in upper chord"
+    },
+    {
+      "a": "north_diagonal_0",
+      "b": "north_post_0",
+      "reason": "diagonal endpoint crosses post"
+    },
+    {
+      "a": "north_diagonal_0",
+      "b": "north_post_1",
+      "reason": "diagonal endpoint crosses next post"
+    },
+    {
+      "a": "north_plate_0_lower",
+      "b": "north_iron_lower",
+      "reason": "plate overlaps chord outward face .11Z"
+    },
+    {
+      "a": "north_plate_0_upper",
+      "b": "north_iron_upper",
+      "reason": "plate overlaps chord outward face .11Z"
+    },
+    {
+      "a": "north_post_1",
+      "b": "north_iron_lower",
+      "reason": "vertical bearing in lower chord"
+    },
+    {
+      "a": "north_post_1",
+      "b": "north_iron_upper",
+      "reason": "vertical bearing in upper chord"
+    },
+    {
+      "a": "north_diagonal_1",
+      "b": "north_post_1",
+      "reason": "diagonal endpoint crosses post"
+    },
+    {
+      "a": "north_diagonal_1",
+      "b": "north_post_2",
+      "reason": "diagonal endpoint crosses next post"
+    },
+    {
+      "a": "north_post_2",
+      "b": "north_iron_lower",
+      "reason": "vertical bearing in lower chord"
+    },
+    {
+      "a": "north_post_2",
+      "b": "north_iron_upper",
+      "reason": "vertical bearing in upper chord"
+    },
+    {
+      "a": "north_diagonal_2",
+      "b": "north_post_2",
+      "reason": "diagonal endpoint crosses post"
+    },
+    {
+      "a": "north_diagonal_2",
+      "b": "north_post_3",
+      "reason": "diagonal endpoint crosses next post"
+    },
+    {
+      "a": "north_post_3",
+      "b": "north_iron_lower",
+      "reason": "vertical bearing in lower chord"
+    },
+    {
+      "a": "north_post_3",
+      "b": "north_iron_upper",
+      "reason": "vertical bearing in upper chord"
+    },
+    {
+      "a": "north_diagonal_3",
+      "b": "north_post_3",
+      "reason": "diagonal endpoint crosses post"
+    },
+    {
+      "a": "north_diagonal_3",
+      "b": "north_post_4",
+      "reason": "diagonal endpoint crosses next post"
+    },
+    {
+      "a": "north_plate_3_lower",
+      "b": "north_iron_lower",
+      "reason": "plate overlaps chord outward face .11Z"
+    },
+    {
+      "a": "north_plate_3_upper",
+      "b": "north_iron_upper",
+      "reason": "plate overlaps chord outward face .11Z"
+    },
+    {
+      "a": "north_post_4",
+      "b": "north_iron_lower",
+      "reason": "vertical bearing in lower chord"
+    },
+    {
+      "a": "north_post_4",
+      "b": "north_iron_upper",
+      "reason": "vertical bearing in upper chord"
+    },
+    {
+      "a": "north_diagonal_4",
+      "b": "north_post_4",
+      "reason": "diagonal endpoint crosses post"
+    },
+    {
+      "a": "north_diagonal_4",
+      "b": "north_post_5",
+      "reason": "diagonal endpoint crosses next post"
+    },
+    {
+      "a": "north_post_5",
+      "b": "north_iron_lower",
+      "reason": "vertical bearing in lower chord"
+    },
+    {
+      "a": "north_post_5",
+      "b": "north_iron_upper",
+      "reason": "vertical bearing in upper chord"
+    },
+    {
+      "a": "north_diagonal_5",
+      "b": "north_post_5",
+      "reason": "diagonal endpoint crosses post"
+    },
+    {
+      "a": "north_diagonal_5",
+      "b": "north_post_6",
+      "reason": "diagonal endpoint crosses next post"
+    },
+    {
+      "a": "north_post_6",
+      "b": "north_iron_lower",
+      "reason": "vertical bearing in lower chord"
+    },
+    {
+      "a": "north_post_6",
+      "b": "north_iron_upper",
+      "reason": "vertical bearing in upper chord"
+    },
+    {
+      "a": "north_diagonal_6",
+      "b": "north_post_6",
+      "reason": "diagonal endpoint crosses post"
+    },
+    {
+      "a": "north_diagonal_6",
+      "b": "north_post_7",
+      "reason": "diagonal endpoint crosses next post"
+    },
+    {
+      "a": "north_plate_6_lower",
+      "b": "north_iron_lower",
+      "reason": "plate overlaps chord outward face .11Z"
+    },
+    {
+      "a": "north_plate_6_upper",
+      "b": "north_iron_upper",
+      "reason": "plate overlaps chord outward face .11Z"
+    },
+    {
+      "a": "north_post_7",
+      "b": "north_ashen_lower",
+      "reason": "vertical bearing in lower chord"
+    },
+    {
+      "a": "north_post_7",
+      "b": "north_ashen_upper",
+      "reason": "vertical bearing in upper chord"
+    },
+    {
+      "a": "north_diagonal_7",
+      "b": "north_post_7",
+      "reason": "diagonal endpoint crosses post"
+    },
+    {
+      "a": "north_diagonal_7",
+      "b": "north_post_8",
+      "reason": "diagonal endpoint crosses next post"
+    },
+    {
+      "a": "north_post_8",
+      "b": "north_ashen_lower",
+      "reason": "vertical bearing in lower chord"
+    },
+    {
+      "a": "north_post_8",
+      "b": "north_ashen_upper",
+      "reason": "vertical bearing in upper chord"
+    },
+    {
+      "a": "north_diagonal_8",
+      "b": "north_post_8",
+      "reason": "diagonal endpoint crosses post"
+    },
+    {
+      "a": "north_diagonal_8",
+      "b": "north_post_9",
+      "reason": "diagonal endpoint crosses next post"
+    },
+    {
+      "a": "north_post_9",
+      "b": "north_ashen_lower",
+      "reason": "vertical bearing in lower chord"
+    },
+    {
+      "a": "north_post_9",
+      "b": "north_ashen_upper",
+      "reason": "vertical bearing in upper chord"
+    },
+    {
+      "a": "north_diagonal_9",
+      "b": "north_post_9",
+      "reason": "diagonal endpoint crosses post"
+    },
+    {
+      "a": "north_diagonal_9",
+      "b": "north_post_10",
+      "reason": "diagonal endpoint crosses next post"
+    },
+    {
+      "a": "north_plate_9_lower",
+      "b": "north_ashen_lower",
+      "reason": "plate overlaps chord outward face .11Z"
+    },
+    {
+      "a": "north_plate_9_upper",
+      "b": "north_ashen_upper",
+      "reason": "plate overlaps chord outward face .11Z"
+    },
+    {
+      "a": "north_post_10",
+      "b": "north_ashen_lower",
+      "reason": "vertical bearing in lower chord"
+    },
+    {
+      "a": "north_post_10",
+      "b": "north_ashen_upper",
+      "reason": "vertical bearing in upper chord"
+    },
+    {
+      "a": "north_diagonal_10",
+      "b": "north_post_10",
+      "reason": "diagonal endpoint crosses post"
+    },
+    {
+      "a": "north_diagonal_10",
+      "b": "north_post_11",
+      "reason": "diagonal endpoint crosses next post"
+    },
+    {
+      "a": "north_post_11",
+      "b": "north_ashen_lower",
+      "reason": "vertical bearing in lower chord"
+    },
+    {
+      "a": "north_post_11",
+      "b": "north_ashen_upper",
+      "reason": "vertical bearing in upper chord"
+    },
+    {
+      "a": "north_diagonal_11",
+      "b": "north_post_11",
+      "reason": "diagonal endpoint crosses post"
+    },
+    {
+      "a": "north_diagonal_11",
+      "b": "north_post_12",
+      "reason": "diagonal endpoint crosses next post"
+    },
+    {
+      "a": "north_post_12",
+      "b": "north_ashen_lower",
+      "reason": "vertical bearing in lower chord"
+    },
+    {
+      "a": "north_post_12",
+      "b": "north_ashen_upper",
+      "reason": "vertical bearing in upper chord"
+    },
+    {
+      "a": "north_plate_12_lower",
+      "b": "north_ashen_lower",
+      "reason": "plate overlaps chord outward face .11Z"
+    },
+    {
+      "a": "north_plate_12_upper",
+      "b": "north_ashen_upper",
+      "reason": "plate overlaps chord outward face .11Z"
+    },
+    {
+      "a": "south_ashen_lower",
+      "b": "south_iron_lower",
+      "reason": "chord splice overlaps .6X"
+    },
+    {
+      "a": "south_ashen_upper",
+      "b": "south_iron_upper",
+      "reason": "chord splice overlaps .6X"
+    },
+    {
+      "a": "south_post_0",
+      "b": "south_iron_lower",
+      "reason": "vertical bearing in lower chord"
+    },
+    {
+      "a": "south_post_0",
+      "b": "south_iron_upper",
+      "reason": "vertical bearing in upper chord"
+    },
+    {
+      "a": "south_diagonal_0",
+      "b": "south_post_0",
+      "reason": "diagonal endpoint crosses post"
+    },
+    {
+      "a": "south_diagonal_0",
+      "b": "south_post_1",
+      "reason": "diagonal endpoint crosses next post"
+    },
+    {
+      "a": "south_plate_0_lower",
+      "b": "south_iron_lower",
+      "reason": "plate overlaps chord outward face .11Z"
+    },
+    {
+      "a": "south_plate_0_upper",
+      "b": "south_iron_upper",
+      "reason": "plate overlaps chord outward face .11Z"
+    },
+    {
+      "a": "south_post_1",
+      "b": "south_iron_lower",
+      "reason": "vertical bearing in lower chord"
+    },
+    {
+      "a": "south_post_1",
+      "b": "south_iron_upper",
+      "reason": "vertical bearing in upper chord"
+    },
+    {
+      "a": "south_diagonal_1",
+      "b": "south_post_1",
+      "reason": "diagonal endpoint crosses post"
+    },
+    {
+      "a": "south_diagonal_1",
+      "b": "south_post_2",
+      "reason": "diagonal endpoint crosses next post"
+    },
+    {
+      "a": "south_post_2",
+      "b": "south_iron_lower",
+      "reason": "vertical bearing in lower chord"
+    },
+    {
+      "a": "south_post_2",
+      "b": "south_iron_upper",
+      "reason": "vertical bearing in upper chord"
+    },
+    {
+      "a": "south_diagonal_2",
+      "b": "south_post_2",
+      "reason": "diagonal endpoint crosses post"
+    },
+    {
+      "a": "south_diagonal_2",
+      "b": "south_post_3",
+      "reason": "diagonal endpoint crosses next post"
+    },
+    {
+      "a": "south_post_3",
+      "b": "south_iron_lower",
+      "reason": "vertical bearing in lower chord"
+    },
+    {
+      "a": "south_post_3",
+      "b": "south_iron_upper",
+      "reason": "vertical bearing in upper chord"
+    },
+    {
+      "a": "south_diagonal_3",
+      "b": "south_post_3",
+      "reason": "diagonal endpoint crosses post"
+    },
+    {
+      "a": "south_diagonal_3",
+      "b": "south_post_4",
+      "reason": "diagonal endpoint crosses next post"
+    },
+    {
+      "a": "south_plate_3_lower",
+      "b": "south_iron_lower",
+      "reason": "plate overlaps chord outward face .11Z"
+    },
+    {
+      "a": "south_plate_3_upper",
+      "b": "south_iron_upper",
+      "reason": "plate overlaps chord outward face .11Z"
+    },
+    {
+      "a": "south_post_4",
+      "b": "south_iron_lower",
+      "reason": "vertical bearing in lower chord"
+    },
+    {
+      "a": "south_post_4",
+      "b": "south_iron_upper",
+      "reason": "vertical bearing in upper chord"
+    },
+    {
+      "a": "south_diagonal_4",
+      "b": "south_post_4",
+      "reason": "diagonal endpoint crosses post"
+    },
+    {
+      "a": "south_diagonal_4",
+      "b": "south_post_5",
+      "reason": "diagonal endpoint crosses next post"
+    },
+    {
+      "a": "south_post_5",
+      "b": "south_iron_lower",
+      "reason": "vertical bearing in lower chord"
+    },
+    {
+      "a": "south_post_5",
+      "b": "south_iron_upper",
+      "reason": "vertical bearing in upper chord"
+    },
+    {
+      "a": "south_diagonal_5",
+      "b": "south_post_5",
+      "reason": "diagonal endpoint crosses post"
+    },
+    {
+      "a": "south_diagonal_5",
+      "b": "south_post_6",
+      "reason": "diagonal endpoint crosses next post"
+    },
+    {
+      "a": "south_post_6",
+      "b": "south_iron_lower",
+      "reason": "vertical bearing in lower chord"
+    },
+    {
+      "a": "south_post_6",
+      "b": "south_iron_upper",
+      "reason": "vertical bearing in upper chord"
+    },
+    {
+      "a": "south_diagonal_6",
+      "b": "south_post_6",
+      "reason": "diagonal endpoint crosses post"
+    },
+    {
+      "a": "south_diagonal_6",
+      "b": "south_post_7",
+      "reason": "diagonal endpoint crosses next post"
+    },
+    {
+      "a": "south_plate_6_lower",
+      "b": "south_iron_lower",
+      "reason": "plate overlaps chord outward face .11Z"
+    },
+    {
+      "a": "south_plate_6_upper",
+      "b": "south_iron_upper",
+      "reason": "plate overlaps chord outward face .11Z"
+    },
+    {
+      "a": "south_post_7",
+      "b": "south_ashen_lower",
+      "reason": "vertical bearing in lower chord"
+    },
+    {
+      "a": "south_post_7",
+      "b": "south_ashen_upper",
+      "reason": "vertical bearing in upper chord"
+    },
+    {
+      "a": "south_diagonal_7",
+      "b": "south_post_7",
+      "reason": "diagonal endpoint crosses post"
+    },
+    {
+      "a": "south_diagonal_7",
+      "b": "south_post_8",
+      "reason": "diagonal endpoint crosses next post"
+    },
+    {
+      "a": "south_post_8",
+      "b": "south_ashen_lower",
+      "reason": "vertical bearing in lower chord"
+    },
+    {
+      "a": "south_post_8",
+      "b": "south_ashen_upper",
+      "reason": "vertical bearing in upper chord"
+    },
+    {
+      "a": "south_diagonal_8",
+      "b": "south_post_8",
+      "reason": "diagonal endpoint crosses post"
+    },
+    {
+      "a": "south_diagonal_8",
+      "b": "south_post_9",
+      "reason": "diagonal endpoint crosses next post"
+    },
+    {
+      "a": "south_post_9",
+      "b": "south_ashen_lower",
+      "reason": "vertical bearing in lower chord"
+    },
+    {
+      "a": "south_post_9",
+      "b": "south_ashen_upper",
+      "reason": "vertical bearing in upper chord"
+    },
+    {
+      "a": "south_diagonal_9",
+      "b": "south_post_9",
+      "reason": "diagonal endpoint crosses post"
+    },
+    {
+      "a": "south_diagonal_9",
+      "b": "south_post_10",
+      "reason": "diagonal endpoint crosses next post"
+    },
+    {
+      "a": "south_plate_9_lower",
+      "b": "south_ashen_lower",
+      "reason": "plate overlaps chord outward face .11Z"
+    },
+    {
+      "a": "south_plate_9_upper",
+      "b": "south_ashen_upper",
+      "reason": "plate overlaps chord outward face .11Z"
+    },
+    {
+      "a": "south_post_10",
+      "b": "south_ashen_lower",
+      "reason": "vertical bearing in lower chord"
+    },
+    {
+      "a": "south_post_10",
+      "b": "south_ashen_upper",
+      "reason": "vertical bearing in upper chord"
+    },
+    {
+      "a": "south_diagonal_10",
+      "b": "south_post_10",
+      "reason": "diagonal endpoint crosses post"
+    },
+    {
+      "a": "south_diagonal_10",
+      "b": "south_post_11",
+      "reason": "diagonal endpoint crosses next post"
+    },
+    {
+      "a": "south_post_11",
+      "b": "south_ashen_lower",
+      "reason": "vertical bearing in lower chord"
+    },
+    {
+      "a": "south_post_11",
+      "b": "south_ashen_upper",
+      "reason": "vertical bearing in upper chord"
+    },
+    {
+      "a": "south_diagonal_11",
+      "b": "south_post_11",
+      "reason": "diagonal endpoint crosses post"
+    },
+    {
+      "a": "south_diagonal_11",
+      "b": "south_post_12",
+      "reason": "diagonal endpoint crosses next post"
+    },
+    {
+      "a": "south_post_12",
+      "b": "south_ashen_lower",
+      "reason": "vertical bearing in lower chord"
+    },
+    {
+      "a": "south_post_12",
+      "b": "south_ashen_upper",
+      "reason": "vertical bearing in upper chord"
+    },
+    {
+      "a": "south_plate_12_lower",
+      "b": "south_ashen_lower",
+      "reason": "plate overlaps chord outward face .11Z"
+    },
+    {
+      "a": "south_plate_12_upper",
+      "b": "south_ashen_upper",
+      "reason": "plate overlaps chord outward face .11Z"
+    },
+    {
+      "a": "crossgirder_0",
+      "b": "north_iron_lower",
+      "reason": "crossgirder/chord positive-volume overlap"
+    },
+    {
+      "a": "crossgirder_0",
+      "b": "south_iron_lower",
+      "reason": "crossgirder/chord positive-volume overlap"
+    },
+    {
+      "a": "crossgirder_0",
+      "b": "native_road",
+      "reason": "top1.73 embeds .03 in existing deck underside"
+    },
+    {
+      "a": "crossgirder_0",
+      "b": "ironveil_bearing_cap",
+      "reason": "endpoint bearing cap crossing"
+    },
+    {
+      "a": "crossgirder_2",
+      "b": "north_iron_lower",
+      "reason": "crossgirder/chord positive-volume overlap"
+    },
+    {
+      "a": "crossgirder_2",
+      "b": "south_iron_lower",
+      "reason": "crossgirder/chord positive-volume overlap"
+    },
+    {
+      "a": "crossgirder_2",
+      "b": "native_road",
+      "reason": "top1.73 embeds .03 in existing deck underside"
+    },
+    {
+      "a": "crossgirder_4",
+      "b": "north_iron_lower",
+      "reason": "crossgirder/chord positive-volume overlap"
+    },
+    {
+      "a": "crossgirder_4",
+      "b": "south_iron_lower",
+      "reason": "crossgirder/chord positive-volume overlap"
+    },
+    {
+      "a": "crossgirder_4",
+      "b": "native_road",
+      "reason": "top1.73 embeds .03 in existing deck underside"
+    },
+    {
+      "a": "crossgirder_6",
+      "b": "north_iron_lower",
+      "reason": "crossgirder/chord positive-volume overlap"
+    },
+    {
+      "a": "crossgirder_6",
+      "b": "south_iron_lower",
+      "reason": "crossgirder/chord positive-volume overlap"
+    },
+    {
+      "a": "crossgirder_6",
+      "b": "native_road",
+      "reason": "top1.73 embeds .03 in existing deck underside"
+    },
+    {
+      "a": "crossgirder_8",
+      "b": "north_ashen_lower",
+      "reason": "crossgirder/chord positive-volume overlap"
+    },
+    {
+      "a": "crossgirder_8",
+      "b": "south_ashen_lower",
+      "reason": "crossgirder/chord positive-volume overlap"
+    },
+    {
+      "a": "crossgirder_8",
+      "b": "native_road",
+      "reason": "top1.73 embeds .03 in existing deck underside"
+    },
+    {
+      "a": "crossgirder_10",
+      "b": "north_ashen_lower",
+      "reason": "crossgirder/chord positive-volume overlap"
+    },
+    {
+      "a": "crossgirder_10",
+      "b": "south_ashen_lower",
+      "reason": "crossgirder/chord positive-volume overlap"
+    },
+    {
+      "a": "crossgirder_10",
+      "b": "native_road",
+      "reason": "top1.73 embeds .03 in existing deck underside"
+    },
+    {
+      "a": "crossgirder_12",
+      "b": "north_ashen_lower",
+      "reason": "crossgirder/chord positive-volume overlap"
+    },
+    {
+      "a": "crossgirder_12",
+      "b": "south_ashen_lower",
+      "reason": "crossgirder/chord positive-volume overlap"
+    },
+    {
+      "a": "crossgirder_12",
+      "b": "native_road",
+      "reason": "top1.73 embeds .03 in existing deck underside"
+    },
+    {
+      "a": "crossgirder_12",
+      "b": "ashen_bearing_cap",
+      "reason": "endpoint bearing cap crossing"
+    }
+  ],
+  "notes": [
+    "No middle piers: long side trusses transfer to embedded endpoint abutments.",
+    "Crossgirders and caps intersect actual road underside by .03; no coplanar deck surfaces.",
+    "Plinths deliberately intersect native islands as bearing embed. All other visual shore intersections require independent review.",
+    "No new physics or gameplay railing; actual bridge structural engineering is not simulated."
+  ]
+}

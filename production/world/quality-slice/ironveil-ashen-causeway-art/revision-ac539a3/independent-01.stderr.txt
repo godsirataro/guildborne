@@ -1,0 +1,13 @@
+Traceback (most recent call last):
+  File "C:\Work\MySelf\Guildborne-ashen-causeway-art\production\world\quality-slice\ironveil-ashen-causeway-art\verify.py", line 108, in <module>
+    if __name__=='__main__':print(json.dumps(main(),indent=2))
+                                             ~~~~^^
+  File "C:\Work\MySelf\Guildborne-ashen-causeway-art\production\world\quality-slice\ironveil-ashen-causeway-art\verify.py", line 70, in main
+    region=(ROOT/'src/server/Services/RegionalWorld.luau').read_text();assert 'model:PivotTo(CFrame.new(worldDef.X,0,worldDef.Z))' in region
+  File "C:\Users\godsi\AppData\Local\Programs\Python\Python314\Lib\pathlib\__init__.py", line 793, in read_text
+    return f.read()
+           ~~~~~~^^
+  File "C:\Users\godsi\AppData\Local\Programs\Python\Python314\Lib\encodings\cp1252.py", line 23, in decode
+    return codecs.charmap_decode(input,self.errors,decoding_table)[0]
+           ~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+UnicodeDecodeError: 'charmap' codec can't decode byte 0x81 in position 5354: character maps to <undefined>

@@ -1,0 +1,1159 @@
+[
+  {
+    "name": "ironveil_battered_plinth",
+    "meshId": "causeway_abutments_00",
+    "firstVertex": 1,
+    "vertexCount": 8,
+    "firstTriangle": 1,
+    "triangleCount": 12,
+    "center": [
+      616.0,
+      -1.04,
+      1503.0
+    ]
+  },
+  {
+    "name": "ironveil_bearing_cap",
+    "meshId": "causeway_abutments_00",
+    "firstVertex": 9,
+    "vertexCount": 8,
+    "firstTriangle": 13,
+    "triangleCount": 12,
+    "center": [
+      616.0,
+      1.3,
+      1503.0
+    ]
+  },
+  {
+    "name": "ashen_battered_plinth",
+    "meshId": "causeway_abutments_00",
+    "firstVertex": 17,
+    "vertexCount": 8,
+    "firstTriangle": 25,
+    "triangleCount": 12,
+    "center": [
+      904.0,
+      -1.04,
+      1503.0
+    ]
+  },
+  {
+    "name": "ashen_bearing_cap",
+    "meshId": "causeway_abutments_00",
+    "firstVertex": 25,
+    "vertexCount": 8,
+    "firstTriangle": 37,
+    "triangleCount": 12,
+    "center": [
+      904.0,
+      1.3,
+      1503.0
+    ]
+  },
+  {
+    "name": "north_iron_lower",
+    "meshId": "causeway_chords_00",
+    "firstVertex": 1,
+    "vertexCount": 8,
+    "firstTriangle": 1,
+    "triangleCount": 12,
+    "center": [
+      688.0,
+      0.9,
+      1491.5
+    ]
+  },
+  {
+    "name": "north_iron_upper",
+    "meshId": "causeway_chords_00",
+    "firstVertex": 9,
+    "vertexCount": 8,
+    "firstTriangle": 13,
+    "triangleCount": 12,
+    "center": [
+      688.0,
+      7.3,
+      1491.5
+    ]
+  },
+  {
+    "name": "north_ashen_lower",
+    "meshId": "causeway_chords_00",
+    "firstVertex": 17,
+    "vertexCount": 8,
+    "firstTriangle": 25,
+    "triangleCount": 12,
+    "center": [
+      832.0,
+      0.9,
+      1491.5
+    ]
+  },
+  {
+    "name": "north_ashen_upper",
+    "meshId": "causeway_chords_00",
+    "firstVertex": 25,
+    "vertexCount": 8,
+    "firstTriangle": 37,
+    "triangleCount": 12,
+    "center": [
+      832.0,
+      7.3,
+      1491.5
+    ]
+  },
+  {
+    "name": "north_post_0",
+    "meshId": "causeway_webs_00",
+    "firstVertex": 1,
+    "vertexCount": 8,
+    "firstTriangle": 1,
+    "triangleCount": 12,
+    "center": [
+      616.0,
+      4.1,
+      1491.5
+    ]
+  },
+  {
+    "name": "north_diagonal_0",
+    "meshId": "causeway_webs_00",
+    "firstVertex": 9,
+    "vertexCount": 8,
+    "firstTriangle": 13,
+    "triangleCount": 12,
+    "center": [
+      628.0,
+      4.1,
+      1491.5
+    ]
+  },
+  {
+    "name": "north_plate_0_lower",
+    "meshId": "causeway_plates_00",
+    "firstVertex": 1,
+    "vertexCount": 8,
+    "firstTriangle": 1,
+    "triangleCount": 12,
+    "center": [
+      616.0,
+      0.8999999999999999,
+      1491.08
+    ]
+  },
+  {
+    "name": "north_plate_0_upper",
+    "meshId": "causeway_plates_00",
+    "firstVertex": 9,
+    "vertexCount": 8,
+    "firstTriangle": 13,
+    "triangleCount": 12,
+    "center": [
+      616.0,
+      7.3,
+      1491.08
+    ]
+  },
+  {
+    "name": "north_post_1",
+    "meshId": "causeway_webs_00",
+    "firstVertex": 17,
+    "vertexCount": 8,
+    "firstTriangle": 25,
+    "triangleCount": 12,
+    "center": [
+      640.0,
+      4.1,
+      1491.5
+    ]
+  },
+  {
+    "name": "north_diagonal_1",
+    "meshId": "causeway_webs_00",
+    "firstVertex": 25,
+    "vertexCount": 8,
+    "firstTriangle": 37,
+    "triangleCount": 12,
+    "center": [
+      652.0,
+      4.1,
+      1491.5
+    ]
+  },
+  {
+    "name": "north_post_2",
+    "meshId": "causeway_webs_00",
+    "firstVertex": 33,
+    "vertexCount": 8,
+    "firstTriangle": 49,
+    "triangleCount": 12,
+    "center": [
+      664.0,
+      4.1,
+      1491.5
+    ]
+  },
+  {
+    "name": "north_diagonal_2",
+    "meshId": "causeway_webs_00",
+    "firstVertex": 41,
+    "vertexCount": 8,
+    "firstTriangle": 61,
+    "triangleCount": 12,
+    "center": [
+      676.0,
+      4.1,
+      1491.5
+    ]
+  },
+  {
+    "name": "north_post_3",
+    "meshId": "causeway_webs_00",
+    "firstVertex": 49,
+    "vertexCount": 8,
+    "firstTriangle": 73,
+    "triangleCount": 12,
+    "center": [
+      688.0,
+      4.1,
+      1491.5
+    ]
+  },
+  {
+    "name": "north_diagonal_3",
+    "meshId": "causeway_webs_00",
+    "firstVertex": 57,
+    "vertexCount": 8,
+    "firstTriangle": 85,
+    "triangleCount": 12,
+    "center": [
+      700.0,
+      4.1,
+      1491.5
+    ]
+  },
+  {
+    "name": "north_plate_3_lower",
+    "meshId": "causeway_plates_00",
+    "firstVertex": 17,
+    "vertexCount": 8,
+    "firstTriangle": 25,
+    "triangleCount": 12,
+    "center": [
+      688.0,
+      0.8999999999999999,
+      1491.08
+    ]
+  },
+  {
+    "name": "north_plate_3_upper",
+    "meshId": "causeway_plates_00",
+    "firstVertex": 25,
+    "vertexCount": 8,
+    "firstTriangle": 37,
+    "triangleCount": 12,
+    "center": [
+      688.0,
+      7.3,
+      1491.08
+    ]
+  },
+  {
+    "name": "north_post_4",
+    "meshId": "causeway_webs_00",
+    "firstVertex": 65,
+    "vertexCount": 8,
+    "firstTriangle": 97,
+    "triangleCount": 12,
+    "center": [
+      712.0,
+      4.1,
+      1491.5
+    ]
+  },
+  {
+    "name": "north_diagonal_4",
+    "meshId": "causeway_webs_00",
+    "firstVertex": 73,
+    "vertexCount": 8,
+    "firstTriangle": 109,
+    "triangleCount": 12,
+    "center": [
+      724.0,
+      4.1,
+      1491.5
+    ]
+  },
+  {
+    "name": "north_post_5",
+    "meshId": "causeway_webs_00",
+    "firstVertex": 81,
+    "vertexCount": 8,
+    "firstTriangle": 121,
+    "triangleCount": 12,
+    "center": [
+      736.0,
+      4.1,
+      1491.5
+    ]
+  },
+  {
+    "name": "north_diagonal_5",
+    "meshId": "causeway_webs_00",
+    "firstVertex": 89,
+    "vertexCount": 8,
+    "firstTriangle": 133,
+    "triangleCount": 12,
+    "center": [
+      748.0,
+      4.1,
+      1491.5
+    ]
+  },
+  {
+    "name": "north_post_6",
+    "meshId": "causeway_webs_00",
+    "firstVertex": 97,
+    "vertexCount": 8,
+    "firstTriangle": 145,
+    "triangleCount": 12,
+    "center": [
+      760.0,
+      4.1,
+      1491.5
+    ]
+  },
+  {
+    "name": "north_diagonal_6",
+    "meshId": "causeway_webs_00",
+    "firstVertex": 105,
+    "vertexCount": 8,
+    "firstTriangle": 157,
+    "triangleCount": 12,
+    "center": [
+      772.0,
+      4.1,
+      1491.5
+    ]
+  },
+  {
+    "name": "north_plate_6_lower",
+    "meshId": "causeway_plates_00",
+    "firstVertex": 33,
+    "vertexCount": 8,
+    "firstTriangle": 49,
+    "triangleCount": 12,
+    "center": [
+      760.0,
+      0.8999999999999999,
+      1491.08
+    ]
+  },
+  {
+    "name": "north_plate_6_upper",
+    "meshId": "causeway_plates_00",
+    "firstVertex": 41,
+    "vertexCount": 8,
+    "firstTriangle": 61,
+    "triangleCount": 12,
+    "center": [
+      760.0,
+      7.3,
+      1491.08
+    ]
+  },
+  {
+    "name": "north_post_7",
+    "meshId": "causeway_webs_00",
+    "firstVertex": 113,
+    "vertexCount": 8,
+    "firstTriangle": 169,
+    "triangleCount": 12,
+    "center": [
+      784.0,
+      4.1,
+      1491.5
+    ]
+  },
+  {
+    "name": "north_diagonal_7",
+    "meshId": "causeway_webs_00",
+    "firstVertex": 121,
+    "vertexCount": 8,
+    "firstTriangle": 181,
+    "triangleCount": 12,
+    "center": [
+      796.0,
+      4.1,
+      1491.5
+    ]
+  },
+  {
+    "name": "north_post_8",
+    "meshId": "causeway_webs_00",
+    "firstVertex": 129,
+    "vertexCount": 8,
+    "firstTriangle": 193,
+    "triangleCount": 12,
+    "center": [
+      808.0,
+      4.1,
+      1491.5
+    ]
+  },
+  {
+    "name": "north_diagonal_8",
+    "meshId": "causeway_webs_00",
+    "firstVertex": 137,
+    "vertexCount": 8,
+    "firstTriangle": 205,
+    "triangleCount": 12,
+    "center": [
+      820.0,
+      4.1,
+      1491.5
+    ]
+  },
+  {
+    "name": "north_post_9",
+    "meshId": "causeway_webs_00",
+    "firstVertex": 145,
+    "vertexCount": 8,
+    "firstTriangle": 217,
+    "triangleCount": 12,
+    "center": [
+      832.0,
+      4.1,
+      1491.5
+    ]
+  },
+  {
+    "name": "north_diagonal_9",
+    "meshId": "causeway_webs_00",
+    "firstVertex": 153,
+    "vertexCount": 8,
+    "firstTriangle": 229,
+    "triangleCount": 12,
+    "center": [
+      844.0,
+      4.1,
+      1491.5
+    ]
+  },
+  {
+    "name": "north_plate_9_lower",
+    "meshId": "causeway_plates_00",
+    "firstVertex": 49,
+    "vertexCount": 8,
+    "firstTriangle": 73,
+    "triangleCount": 12,
+    "center": [
+      832.0,
+      0.8999999999999999,
+      1491.08
+    ]
+  },
+  {
+    "name": "north_plate_9_upper",
+    "meshId": "causeway_plates_00",
+    "firstVertex": 57,
+    "vertexCount": 8,
+    "firstTriangle": 85,
+    "triangleCount": 12,
+    "center": [
+      832.0,
+      7.3,
+      1491.08
+    ]
+  },
+  {
+    "name": "north_post_10",
+    "meshId": "causeway_webs_00",
+    "firstVertex": 161,
+    "vertexCount": 8,
+    "firstTriangle": 241,
+    "triangleCount": 12,
+    "center": [
+      856.0,
+      4.1,
+      1491.5
+    ]
+  },
+  {
+    "name": "north_diagonal_10",
+    "meshId": "causeway_webs_00",
+    "firstVertex": 169,
+    "vertexCount": 8,
+    "firstTriangle": 253,
+    "triangleCount": 12,
+    "center": [
+      868.0,
+      4.1,
+      1491.5
+    ]
+  },
+  {
+    "name": "north_post_11",
+    "meshId": "causeway_webs_00",
+    "firstVertex": 177,
+    "vertexCount": 8,
+    "firstTriangle": 265,
+    "triangleCount": 12,
+    "center": [
+      880.0,
+      4.1,
+      1491.5
+    ]
+  },
+  {
+    "name": "north_diagonal_11",
+    "meshId": "causeway_webs_00",
+    "firstVertex": 185,
+    "vertexCount": 8,
+    "firstTriangle": 277,
+    "triangleCount": 12,
+    "center": [
+      892.0,
+      4.1,
+      1491.5
+    ]
+  },
+  {
+    "name": "north_post_12",
+    "meshId": "causeway_webs_00",
+    "firstVertex": 193,
+    "vertexCount": 8,
+    "firstTriangle": 289,
+    "triangleCount": 12,
+    "center": [
+      904.0,
+      4.1,
+      1491.5
+    ]
+  },
+  {
+    "name": "north_plate_12_lower",
+    "meshId": "causeway_plates_00",
+    "firstVertex": 65,
+    "vertexCount": 8,
+    "firstTriangle": 97,
+    "triangleCount": 12,
+    "center": [
+      904.0,
+      0.8999999999999999,
+      1491.08
+    ]
+  },
+  {
+    "name": "north_plate_12_upper",
+    "meshId": "causeway_plates_00",
+    "firstVertex": 73,
+    "vertexCount": 8,
+    "firstTriangle": 109,
+    "triangleCount": 12,
+    "center": [
+      904.0,
+      7.3,
+      1491.08
+    ]
+  },
+  {
+    "name": "south_iron_lower",
+    "meshId": "causeway_chords_00",
+    "firstVertex": 33,
+    "vertexCount": 8,
+    "firstTriangle": 49,
+    "triangleCount": 12,
+    "center": [
+      688.0,
+      0.9,
+      1520.5
+    ]
+  },
+  {
+    "name": "south_iron_upper",
+    "meshId": "causeway_chords_00",
+    "firstVertex": 41,
+    "vertexCount": 8,
+    "firstTriangle": 61,
+    "triangleCount": 12,
+    "center": [
+      688.0,
+      7.3,
+      1520.5
+    ]
+  },
+  {
+    "name": "south_ashen_lower",
+    "meshId": "causeway_chords_00",
+    "firstVertex": 49,
+    "vertexCount": 8,
+    "firstTriangle": 73,
+    "triangleCount": 12,
+    "center": [
+      832.0,
+      0.9,
+      1520.5
+    ]
+  },
+  {
+    "name": "south_ashen_upper",
+    "meshId": "causeway_chords_00",
+    "firstVertex": 57,
+    "vertexCount": 8,
+    "firstTriangle": 85,
+    "triangleCount": 12,
+    "center": [
+      832.0,
+      7.3,
+      1520.5
+    ]
+  },
+  {
+    "name": "south_post_0",
+    "meshId": "causeway_webs_00",
+    "firstVertex": 201,
+    "vertexCount": 8,
+    "firstTriangle": 301,
+    "triangleCount": 12,
+    "center": [
+      616.0,
+      4.1,
+      1520.5
+    ]
+  },
+  {
+    "name": "south_diagonal_0",
+    "meshId": "causeway_webs_00",
+    "firstVertex": 209,
+    "vertexCount": 8,
+    "firstTriangle": 313,
+    "triangleCount": 12,
+    "center": [
+      628.0,
+      4.1,
+      1520.5
+    ]
+  },
+  {
+    "name": "south_plate_0_lower",
+    "meshId": "causeway_plates_00",
+    "firstVertex": 81,
+    "vertexCount": 8,
+    "firstTriangle": 121,
+    "triangleCount": 12,
+    "center": [
+      616.0,
+      0.8999999999999999,
+      1520.92
+    ]
+  },
+  {
+    "name": "south_plate_0_upper",
+    "meshId": "causeway_plates_00",
+    "firstVertex": 89,
+    "vertexCount": 8,
+    "firstTriangle": 133,
+    "triangleCount": 12,
+    "center": [
+      616.0,
+      7.3,
+      1520.92
+    ]
+  },
+  {
+    "name": "south_post_1",
+    "meshId": "causeway_webs_00",
+    "firstVertex": 217,
+    "vertexCount": 8,
+    "firstTriangle": 325,
+    "triangleCount": 12,
+    "center": [
+      640.0,
+      4.1,
+      1520.5
+    ]
+  },
+  {
+    "name": "south_diagonal_1",
+    "meshId": "causeway_webs_00",
+    "firstVertex": 225,
+    "vertexCount": 8,
+    "firstTriangle": 337,
+    "triangleCount": 12,
+    "center": [
+      652.0,
+      4.1,
+      1520.5
+    ]
+  },
+  {
+    "name": "south_post_2",
+    "meshId": "causeway_webs_00",
+    "firstVertex": 233,
+    "vertexCount": 8,
+    "firstTriangle": 349,
+    "triangleCount": 12,
+    "center": [
+      664.0,
+      4.1,
+      1520.5
+    ]
+  },
+  {
+    "name": "south_diagonal_2",
+    "meshId": "causeway_webs_00",
+    "firstVertex": 241,
+    "vertexCount": 8,
+    "firstTriangle": 361,
+    "triangleCount": 12,
+    "center": [
+      676.0,
+      4.1,
+      1520.5
+    ]
+  },
+  {
+    "name": "south_post_3",
+    "meshId": "causeway_webs_00",
+    "firstVertex": 249,
+    "vertexCount": 8,
+    "firstTriangle": 373,
+    "triangleCount": 12,
+    "center": [
+      688.0,
+      4.1,
+      1520.5
+    ]
+  },
+  {
+    "name": "south_diagonal_3",
+    "meshId": "causeway_webs_00",
+    "firstVertex": 257,
+    "vertexCount": 8,
+    "firstTriangle": 385,
+    "triangleCount": 12,
+    "center": [
+      700.0,
+      4.1,
+      1520.5
+    ]
+  },
+  {
+    "name": "south_plate_3_lower",
+    "meshId": "causeway_plates_00",
+    "firstVertex": 97,
+    "vertexCount": 8,
+    "firstTriangle": 145,
+    "triangleCount": 12,
+    "center": [
+      688.0,
+      0.8999999999999999,
+      1520.92
+    ]
+  },
+  {
+    "name": "south_plate_3_upper",
+    "meshId": "causeway_plates_00",
+    "firstVertex": 105,
+    "vertexCount": 8,
+    "firstTriangle": 157,
+    "triangleCount": 12,
+    "center": [
+      688.0,
+      7.3,
+      1520.92
+    ]
+  },
+  {
+    "name": "south_post_4",
+    "meshId": "causeway_webs_00",
+    "firstVertex": 265,
+    "vertexCount": 8,
+    "firstTriangle": 397,
+    "triangleCount": 12,
+    "center": [
+      712.0,
+      4.1,
+      1520.5
+    ]
+  },
+  {
+    "name": "south_diagonal_4",
+    "meshId": "causeway_webs_00",
+    "firstVertex": 273,
+    "vertexCount": 8,
+    "firstTriangle": 409,
+    "triangleCount": 12,
+    "center": [
+      724.0,
+      4.1,
+      1520.5
+    ]
+  },
+  {
+    "name": "south_post_5",
+    "meshId": "causeway_webs_00",
+    "firstVertex": 281,
+    "vertexCount": 8,
+    "firstTriangle": 421,
+    "triangleCount": 12,
+    "center": [
+      736.0,
+      4.1,
+      1520.5
+    ]
+  },
+  {
+    "name": "south_diagonal_5",
+    "meshId": "causeway_webs_00",
+    "firstVertex": 289,
+    "vertexCount": 8,
+    "firstTriangle": 433,
+    "triangleCount": 12,
+    "center": [
+      748.0,
+      4.1,
+      1520.5
+    ]
+  },
+  {
+    "name": "south_post_6",
+    "meshId": "causeway_webs_00",
+    "firstVertex": 297,
+    "vertexCount": 8,
+    "firstTriangle": 445,
+    "triangleCount": 12,
+    "center": [
+      760.0,
+      4.1,
+      1520.5
+    ]
+  },
+  {
+    "name": "south_diagonal_6",
+    "meshId": "causeway_webs_00",
+    "firstVertex": 305,
+    "vertexCount": 8,
+    "firstTriangle": 457,
+    "triangleCount": 12,
+    "center": [
+      772.0,
+      4.1,
+      1520.5
+    ]
+  },
+  {
+    "name": "south_plate_6_lower",
+    "meshId": "causeway_plates_00",
+    "firstVertex": 113,
+    "vertexCount": 8,
+    "firstTriangle": 169,
+    "triangleCount": 12,
+    "center": [
+      760.0,
+      0.8999999999999999,
+      1520.92
+    ]
+  },
+  {
+    "name": "south_plate_6_upper",
+    "meshId": "causeway_plates_00",
+    "firstVertex": 121,
+    "vertexCount": 8,
+    "firstTriangle": 181,
+    "triangleCount": 12,
+    "center": [
+      760.0,
+      7.3,
+      1520.92
+    ]
+  },
+  {
+    "name": "south_post_7",
+    "meshId": "causeway_webs_00",
+    "firstVertex": 313,
+    "vertexCount": 8,
+    "firstTriangle": 469,
+    "triangleCount": 12,
+    "center": [
+      784.0,
+      4.1,
+      1520.5
+    ]
+  },
+  {
+    "name": "south_diagonal_7",
+    "meshId": "causeway_webs_00",
+    "firstVertex": 321,
+    "vertexCount": 8,
+    "firstTriangle": 481,
+    "triangleCount": 12,
+    "center": [
+      796.0,
+      4.1,
+      1520.5
+    ]
+  },
+  {
+    "name": "south_post_8",
+    "meshId": "causeway_webs_00",
+    "firstVertex": 329,
+    "vertexCount": 8,
+    "firstTriangle": 493,
+    "triangleCount": 12,
+    "center": [
+      808.0,
+      4.1,
+      1520.5
+    ]
+  },
+  {
+    "name": "south_diagonal_8",
+    "meshId": "causeway_webs_00",
+    "firstVertex": 337,
+    "vertexCount": 8,
+    "firstTriangle": 505,
+    "triangleCount": 12,
+    "center": [
+      820.0,
+      4.1,
+      1520.5
+    ]
+  },
+  {
+    "name": "south_post_9",
+    "meshId": "causeway_webs_00",
+    "firstVertex": 345,
+    "vertexCount": 8,
+    "firstTriangle": 517,
+    "triangleCount": 12,
+    "center": [
+      832.0,
+      4.1,
+      1520.5
+    ]
+  },
+  {
+    "name": "south_diagonal_9",
+    "meshId": "causeway_webs_00",
+    "firstVertex": 353,
+    "vertexCount": 8,
+    "firstTriangle": 529,
+    "triangleCount": 12,
+    "center": [
+      844.0,
+      4.1,
+      1520.5
+    ]
+  },
+  {
+    "name": "south_plate_9_lower",
+    "meshId": "causeway_plates_00",
+    "firstVertex": 129,
+    "vertexCount": 8,
+    "firstTriangle": 193,
+    "triangleCount": 12,
+    "center": [
+      832.0,
+      0.8999999999999999,
+      1520.92
+    ]
+  },
+  {
+    "name": "south_plate_9_upper",
+    "meshId": "causeway_plates_00",
+    "firstVertex": 137,
+    "vertexCount": 8,
+    "firstTriangle": 205,
+    "triangleCount": 12,
+    "center": [
+      832.0,
+      7.3,
+      1520.92
+    ]
+  },
+  {
+    "name": "south_post_10",
+    "meshId": "causeway_webs_00",
+    "firstVertex": 361,
+    "vertexCount": 8,
+    "firstTriangle": 541,
+    "triangleCount": 12,
+    "center": [
+      856.0,
+      4.1,
+      1520.5
+    ]
+  },
+  {
+    "name": "south_diagonal_10",
+    "meshId": "causeway_webs_00",
+    "firstVertex": 369,
+    "vertexCount": 8,
+    "firstTriangle": 553,
+    "triangleCount": 12,
+    "center": [
+      868.0,
+      4.1,
+      1520.5
+    ]
+  },
+  {
+    "name": "south_post_11",
+    "meshId": "causeway_webs_00",
+    "firstVertex": 377,
+    "vertexCount": 8,
+    "firstTriangle": 565,
+    "triangleCount": 12,
+    "center": [
+      880.0,
+      4.1,
+      1520.5
+    ]
+  },
+  {
+    "name": "south_diagonal_11",
+    "meshId": "causeway_webs_00",
+    "firstVertex": 385,
+    "vertexCount": 8,
+    "firstTriangle": 577,
+    "triangleCount": 12,
+    "center": [
+      892.0,
+      4.1,
+      1520.5
+    ]
+  },
+  {
+    "name": "south_post_12",
+    "meshId": "causeway_webs_00",
+    "firstVertex": 393,
+    "vertexCount": 8,
+    "firstTriangle": 589,
+    "triangleCount": 12,
+    "center": [
+      904.0,
+      4.1,
+      1520.5
+    ]
+  },
+  {
+    "name": "south_plate_12_lower",
+    "meshId": "causeway_plates_00",
+    "firstVertex": 145,
+    "vertexCount": 8,
+    "firstTriangle": 217,
+    "triangleCount": 12,
+    "center": [
+      904.0,
+      0.8999999999999999,
+      1520.92
+    ]
+  },
+  {
+    "name": "south_plate_12_upper",
+    "meshId": "causeway_plates_00",
+    "firstVertex": 153,
+    "vertexCount": 8,
+    "firstTriangle": 229,
+    "triangleCount": 12,
+    "center": [
+      904.0,
+      7.3,
+      1520.92
+    ]
+  },
+  {
+    "name": "crossgirder_0",
+    "meshId": "causeway_bearings_00",
+    "firstVertex": 1,
+    "vertexCount": 8,
+    "firstTriangle": 1,
+    "triangleCount": 12,
+    "center": [
+      616.0,
+      1.23,
+      1506.0
+    ]
+  },
+  {
+    "name": "crossgirder_2",
+    "meshId": "causeway_bearings_00",
+    "firstVertex": 9,
+    "vertexCount": 8,
+    "firstTriangle": 13,
+    "triangleCount": 12,
+    "center": [
+      664.0,
+      1.23,
+      1506.0
+    ]
+  },
+  {
+    "name": "crossgirder_4",
+    "meshId": "causeway_bearings_00",
+    "firstVertex": 17,
+    "vertexCount": 8,
+    "firstTriangle": 25,
+    "triangleCount": 12,
+    "center": [
+      712.0,
+      1.23,
+      1506.0
+    ]
+  },
+  {
+    "name": "crossgirder_6",
+    "meshId": "causeway_bearings_00",
+    "firstVertex": 25,
+    "vertexCount": 8,
+    "firstTriangle": 37,
+    "triangleCount": 12,
+    "center": [
+      760.0,
+      1.23,
+      1506.0
+    ]
+  },
+  {
+    "name": "crossgirder_8",
+    "meshId": "causeway_bearings_00",
+    "firstVertex": 33,
+    "vertexCount": 8,
+    "firstTriangle": 49,
+    "triangleCount": 12,
+    "center": [
+      808.0,
+      1.23,
+      1506.0
+    ]
+  },
+  {
+    "name": "crossgirder_10",
+    "meshId": "causeway_bearings_00",
+    "firstVertex": 41,
+    "vertexCount": 8,
+    "firstTriangle": 61,
+    "triangleCount": 12,
+    "center": [
+      856.0,
+      1.23,
+      1506.0
+    ]
+  },
+  {
+    "name": "crossgirder_12",
+    "meshId": "causeway_bearings_00",
+    "firstVertex": 49,
+    "vertexCount": 8,
+    "firstTriangle": 73,
+    "triangleCount": 12,
+    "center": [
+      904.0,
+      1.23,
+      1506.0
+    ]
+  }
+]

@@ -1,13 +1,14 @@
 {
-  "stage": "OFFLINE_REVIEW_COMPLETE_NATIVE_PENDING",
-  "packetSHA256": "99ceb74508c2e693957a5601960f2a2897fc85b55eabf17d1dbf0eb5ca471c1e",
-  "beforeRender": "Completed exit 0, four images plus blend/evidence retained; no restart needed",
-  "independentGeometry": "run02 exit 0 retained; run01 Windows decoding failure retained",
+  "stage": "SPLICE_FIX_OFFLINE_REVIEW_COMPLETE_NATIVE_PENDING",
+  "packetSHA256": "5e130da1f9a8cad1ff45dc379052ede847e95b8d936b18120a7f8d4ae5ae181a",
+  "beforeRender": "Fresh splice-before exit0, four images",
+  "independentGeometry": "Portable regression run02 exit0; rejects archived original, passes corrected geometry",
   "remaining": [
-    "Controller integration and native review",
+    "Controller integration and native splice camera review",
+    "Actual five-hero traversal",
     "Human art acceptance"
   ],
   "secondLeaseExpiry": "All writers confirmed stopped, no background Blender remained. Failed check stopped verifier writes. Parent explicitly released and reclaimed; no retroactive ownership claim.",
-  "afterRender": "Completed exit 0; four matched images and blend/evidence retained",
-  "independentVisual": "All eight actual PNGs reviewed; bounded improvement, native and human acceptance pending"
+  "afterRender": "Fresh splice-after exit0, four images",
+  "independentVisual": "All eight current images and hashes reviewed; independent-splice-review.md"
 }

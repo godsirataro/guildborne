@@ -2,7 +2,7 @@
   "status": "ORIGINAL_FILE_GENERATED_NOT_NATIVE",
   "origin": "Original Guildborne endpoint-anchored iron causeway with Ashen charcoal finish. No downloaded assets, textures, fonts or providers.",
   "recipe": "production/world/quality-slice/ironveil-ashen-causeway-art/build.py",
-  "recipeSha256": "a2a3c3d6cb10cee094978ad5a439612258aaccacb85461e33078a0d52779e491",
+  "recipeSha256": "a87b58501fa93cd802ada4c664ecd4dd24d94f9f8c4da7d19ca48fc02baa6b71",
   "helper": "production/world/quality-slice/ironveil-ore-yard/build.py",
   "helperSha256": "5ab3711f35c92131017e7be1d35c3e0c0915661c25df677897fba06d98f5bc75",
   "sourceHashes": {
@@ -11,7 +11,7 @@
     "production/world/quality-slice/ironveil-ashen/ground.json": "bd02bb8543cfddea8e33eb543c81c8f135b0549ce8c5a1585151fec88ff74577",
     "assets/production/world-slice/coast-prop-ashen-cut/scenery.mesh.json": "3c84bc3a213b8b6b6253cc95957c7a6af0c27d13f789c81f311c0b062a2aefc9"
   },
-  "packetSha256": "99ceb74508c2e693957a5601960f2a2897fc85b55eabf17d1dbf0eb5ca471c1e",
+  "packetSha256": "5e130da1f9a8cad1ff45dc379052ede847e95b8d936b18120a7f8d4ae5ae181a",
   "runtimeIds": null,
   "downloads": false
 }

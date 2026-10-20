@@ -1,4 +1,10 @@
-# Ironveil–Ashen causeway art candidate
+# Current revision: central chord splice correction
+
+Controller review found the previous warm/cool chord halves shared exposed coplanar faces over X759.7..760.3. Current halves stop at X759.9 and start at X760.1. Each central post now measures 0.85 x 7.4 x 1.0 studs, centered at X760/Y4.1 on the existing side line. Both full end faces are buried with positive margin inside that post. No new triangles, placements or collision behavior were introduced.
+
+Current packet SHA256: `5e130da1f9a8cad1ff45dc379052ede847e95b8d936b18120a7f8d4ae5ae181a`. Current verification and render receipts use the `splice-` / `independent-splice` names. The original reports below describe ac539a3 and are historical. Entire previous files and rendered evidence are preserved under `revision-ac539a3` in both owned folders; original raw streams are unchanged.
+
+# Ironveilâ€“Ashen causeway art candidate
 
 Base `ff81a48`; separate branch `codex/ironveil-ashen-causeway-art`. New additive decorative packet only. Both new directories are named `ironveil-ashen-causeway-art` under assets/production/world-slice and production/world/quality-slice. No source, tests, configuration, corridor ground, descriptor, old mesh packet or shore-cut variant is modified.
 
@@ -16,7 +22,7 @@ Use with the exact six-part ground and existing `coast-prop-ashen-cut` replaceme
 
 Geometry/contact review and Blender render evidence are separate from native testing. Contact with native island boxes is visual anchoring, not a structural engineering simulation. Readiness and traversal still belong to the controller's actual corridor. No physics, five-hero movement, device performance or human art acceptance can be inferred from these offline views.
 
-Matched render inputs include the current cut coast and six-part ground in BOTH variants, existing Greenwood–Ironveil art and ore yard, and 91 source-reconstructed native region/portal pieces. Only after adds this packet. Views include two player-height approaches, overview, and an intentional underdeck inspection from inside the cleared notch. The underside camera is not a playable position. Dynamic actors, resources, private pockets, GUI, Roblox materials/lighting and distant scene content are omitted.
+Matched render inputs include the current cut coast and six-part ground in BOTH variants, existing Greenwoodâ€“Ironveil art and ore yard, and 91 source-reconstructed native region/portal pieces. Only after adds this packet. Views include two player-height approaches, overview, and an intentional underdeck inspection from inside the cleared notch. The underside camera is not a playable position. Dynamic actors, resources, private pockets, GUI, Roblox materials/lighting and distant scene content are omitted.
 
 ## Coordination disclosure
 

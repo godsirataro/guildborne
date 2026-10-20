@@ -1,6 +1,6 @@
 {
-  "base": "ff81a48",
-  "status": "OFFLINE_REVIEW_COMPLETE_NATIVE_PENDING",
+  "base": "ac539a3",
+  "status": "SPLICE_FIX_OFFLINE_REVIEW_COMPLETE_NATIVE_PENDING",
   "files": [
     {
       "path": "assets/production/world-slice/ironveil-ashen-causeway-art/.gitattributes",
@@ -9,61 +9,71 @@
     },
     {
       "path": "assets/production/world-slice/ironveil-ashen-causeway-art/after/01_ironveil_departure.png",
-      "size": 1409770,
-      "sha256": "e387d51910a9448e4506ec82fda2846bc4eb18ac221ce43974081ed5c79028d9"
+      "size": 1410272,
+      "sha256": "900e5b9cb53c589606e75f17b230defa5401ab79b831fd6f5bf848f6740bddbb"
     },
     {
       "path": "assets/production/world-slice/ironveil-ashen-causeway-art/after/02_ashen_arrival.png",
-      "size": 1415909,
-      "sha256": "fd4fb0a9ac1758966c593f4797d04f73b07fa03d3031285364b3813e858a78e2"
+      "size": 1416059,
+      "sha256": "507ff2b82656a434e6303ed1a0f084c3872945687cf026b4dc65f2d4eb97e83d"
     },
     {
       "path": "assets/production/world-slice/ironveil-ashen-causeway-art/after/03_corridor_overview.png",
-      "size": 1547769,
-      "sha256": "7eaff4f61f4eee0f9b44dd22bb3c26c4b6b129f29e153e0a332c646ada0fb969"
+      "size": 1547524,
+      "sha256": "ee906526b51289b2cbc9c0e842e5d46fd6ed967f81fd88409687b9bd8842fb85"
     },
     {
       "path": "assets/production/world-slice/ironveil-ashen-causeway-art/after/04_underside_within_cut.png",
-      "size": 1443267,
-      "sha256": "5343f3eb6b5b0647241dbfa105c472d44f81448d36b8497e3dd4b9b005767151"
+      "size": 1442652,
+      "sha256": "bff92e5a6373623a71d7fa93be433ba524b7d0797f3f210ce1e645acd5e34e14"
     },
     {
       "path": "assets/production/world-slice/ironveil-ashen-causeway-art/after/render-evidence.json",
       "size": 3107,
-      "sha256": "0ad6611f863c31eb1c2b3deffde34239459ca266e68c64b320564413c35dee7b"
+      "sha256": "0830902a6984d1aaff2086f0af77c36043c2f67e9340bab9b4e484760afd33c3"
     },
     {
       "path": "assets/production/world-slice/ironveil-ashen-causeway-art/after/source.blend",
+      "size": 672806,
+      "sha256": "529d34a62ae84cb358b0bc54a4475ac992ce2a27df034d2659b7a3bfea01604e"
+    },
+    {
+      "path": "assets/production/world-slice/ironveil-ashen-causeway-art/after/source.blend1",
       "size": 672771,
       "sha256": "6914746163b58e5f69f11b186f6619e4e549032edee70a9141e48e469039dc2f"
     },
     {
       "path": "assets/production/world-slice/ironveil-ashen-causeway-art/before/01_ironveil_departure.png",
       "size": 1339861,
-      "sha256": "3b3a7edf47201f832749139bd0dae4e36295e96f344b8f253ed6a424799a317a"
+      "sha256": "9145046401cfa507e3620dc110bca55ffe911e296dd094614e463b34f92d05a6"
     },
     {
       "path": "assets/production/world-slice/ironveil-ashen-causeway-art/before/02_ashen_arrival.png",
       "size": 1350383,
-      "sha256": "fcf76a878a3df6a92568c783bfa63c0594e0981389fbbc6d98c35e47d6796d59"
+      "sha256": "fadc54d884aeaeb3a42765e1680ccaf49acc04c63e037e58c1923e8c369fe49a"
     },
     {
       "path": "assets/production/world-slice/ironveil-ashen-causeway-art/before/03_corridor_overview.png",
       "size": 1523966,
-      "sha256": "38aa4f8ef059c26203c0eaff4c1db9822741022a1c9a8c7829b2a3d37074e123"
+      "sha256": "98a9e35823a1f68eeadf6d196e6511bc4bbd80d69486e0ae2585e8a9d877f6b4"
     },
     {
       "path": "assets/production/world-slice/ironveil-ashen-causeway-art/before/04_underside_within_cut.png",
       "size": 1403047,
-      "sha256": "a3566b7d7b70d95050a58ab7a78c119c3286e7957b5470da4d52cffcac0ccaa8"
+      "sha256": "1d313af524be1e086556aa92c64499860c921ab7303424eb377fbf8f4d062632"
     },
     {
       "path": "assets/production/world-slice/ironveil-ashen-causeway-art/before/render-evidence.json",
       "size": 2957,
-      "sha256": "3a54d8cca6828293f4b8df139e0a2a3da534495c6b0890c37b3f726b1ef6ab7b"
+      "sha256": "b78cb52ecbc28f469c83b3a6067fc882b4e824ca7df11f1a3c434c85c38ef29f"
     },
     {
       "path": "assets/production/world-slice/ironveil-ashen-causeway-art/before/source.blend",
+      "size": 660713,
+      "sha256": "20802ee95d7253847d4b37150c6854d01bd1465587694cff96f180c8b4d1f311"
+    },
+    {
+      "path": "assets/production/world-slice/ironveil-ashen-causeway-art/before/source.blend1",
       "size": 660713,
       "sha256": "57fc637776103f402a00139656c0dfd4e76fb39c84996e19d52e12c406ea1640"
     },
@@ -75,22 +85,112 @@
     {
       "path": "assets/production/world-slice/ironveil-ashen-causeway-art/provenance.json",
       "size": 1178,
+      "sha256": "d3c71a5fc42f4311ed065c2f835304c8cd27b5b32faa59b7917b1625c58da406"
+    },
+    {
+      "path": "assets/production/world-slice/ironveil-ashen-causeway-art/revision-ac539a3/.gitattributes",
+      "size": 29,
+      "sha256": "730a35ae3d558080083c3103d9ac8100c3f6561678092abe341701dfa331eb1d"
+    },
+    {
+      "path": "assets/production/world-slice/ironveil-ashen-causeway-art/revision-ac539a3/after/01_ironveil_departure.png",
+      "size": 1409770,
+      "sha256": "e387d51910a9448e4506ec82fda2846bc4eb18ac221ce43974081ed5c79028d9"
+    },
+    {
+      "path": "assets/production/world-slice/ironveil-ashen-causeway-art/revision-ac539a3/after/02_ashen_arrival.png",
+      "size": 1415909,
+      "sha256": "fd4fb0a9ac1758966c593f4797d04f73b07fa03d3031285364b3813e858a78e2"
+    },
+    {
+      "path": "assets/production/world-slice/ironveil-ashen-causeway-art/revision-ac539a3/after/03_corridor_overview.png",
+      "size": 1547769,
+      "sha256": "7eaff4f61f4eee0f9b44dd22bb3c26c4b6b129f29e153e0a332c646ada0fb969"
+    },
+    {
+      "path": "assets/production/world-slice/ironveil-ashen-causeway-art/revision-ac539a3/after/04_underside_within_cut.png",
+      "size": 1443267,
+      "sha256": "5343f3eb6b5b0647241dbfa105c472d44f81448d36b8497e3dd4b9b005767151"
+    },
+    {
+      "path": "assets/production/world-slice/ironveil-ashen-causeway-art/revision-ac539a3/after/render-evidence.json",
+      "size": 3107,
+      "sha256": "0ad6611f863c31eb1c2b3deffde34239459ca266e68c64b320564413c35dee7b"
+    },
+    {
+      "path": "assets/production/world-slice/ironveil-ashen-causeway-art/revision-ac539a3/after/source.blend",
+      "size": 672771,
+      "sha256": "6914746163b58e5f69f11b186f6619e4e549032edee70a9141e48e469039dc2f"
+    },
+    {
+      "path": "assets/production/world-slice/ironveil-ashen-causeway-art/revision-ac539a3/before/01_ironveil_departure.png",
+      "size": 1339861,
+      "sha256": "3b3a7edf47201f832749139bd0dae4e36295e96f344b8f253ed6a424799a317a"
+    },
+    {
+      "path": "assets/production/world-slice/ironveil-ashen-causeway-art/revision-ac539a3/before/02_ashen_arrival.png",
+      "size": 1350383,
+      "sha256": "fcf76a878a3df6a92568c783bfa63c0594e0981389fbbc6d98c35e47d6796d59"
+    },
+    {
+      "path": "assets/production/world-slice/ironveil-ashen-causeway-art/revision-ac539a3/before/03_corridor_overview.png",
+      "size": 1523966,
+      "sha256": "38aa4f8ef059c26203c0eaff4c1db9822741022a1c9a8c7829b2a3d37074e123"
+    },
+    {
+      "path": "assets/production/world-slice/ironveil-ashen-causeway-art/revision-ac539a3/before/04_underside_within_cut.png",
+      "size": 1403047,
+      "sha256": "a3566b7d7b70d95050a58ab7a78c119c3286e7957b5470da4d52cffcac0ccaa8"
+    },
+    {
+      "path": "assets/production/world-slice/ironveil-ashen-causeway-art/revision-ac539a3/before/render-evidence.json",
+      "size": 2957,
+      "sha256": "3a54d8cca6828293f4b8df139e0a2a3da534495c6b0890c37b3f726b1ef6ab7b"
+    },
+    {
+      "path": "assets/production/world-slice/ironveil-ashen-causeway-art/revision-ac539a3/before/source.blend",
+      "size": 660713,
+      "sha256": "57fc637776103f402a00139656c0dfd4e76fb39c84996e19d52e12c406ea1640"
+    },
+    {
+      "path": "assets/production/world-slice/ironveil-ashen-causeway-art/revision-ac539a3/metrics.json",
+      "size": 122,
+      "sha256": "55e074955c8e4f40a2ca06919791d026159e73f0e8d451fee4e96c0e349dd2d8"
+    },
+    {
+      "path": "assets/production/world-slice/ironveil-ashen-causeway-art/revision-ac539a3/provenance.json",
+      "size": 1178,
       "sha256": "a125585e0fe2b2a19d77d7ca6980b927566cb5f7231d310103fe0f753394e603"
     },
     {
-      "path": "assets/production/world-slice/ironveil-ashen-causeway-art/scenery.mesh.json",
+      "path": "assets/production/world-slice/ironveil-ashen-causeway-art/revision-ac539a3/scenery.mesh.json",
       "size": 146629,
       "sha256": "99ceb74508c2e693957a5601960f2a2897fc85b55eabf17d1dbf0eb5ca471c1e"
     },
     {
-      "path": "assets/production/world-slice/ironveil-ashen-causeway-art/solids.json",
+      "path": "assets/production/world-slice/ironveil-ashen-causeway-art/revision-ac539a3/solids.json",
       "size": 20723,
       "sha256": "4a8a1b0d753befc64d6e054b1daa65d78c3f9509a131674e2873f1365d600175"
+    },
+    {
+      "path": "assets/production/world-slice/ironveil-ashen-causeway-art/scenery.mesh.json",
+      "size": 146964,
+      "sha256": "5e130da1f9a8cad1ff45dc379052ede847e95b8d936b18120a7f8d4ae5ae181a"
+    },
+    {
+      "path": "assets/production/world-slice/ironveil-ashen-causeway-art/solids.json",
+      "size": 20723,
+      "sha256": "635a67134c4fc514dd26118318beba407dd962ead717346467c8e32c8d3e2dff"
     },
     {
       "path": "production/world/quality-slice/ironveil-ashen-causeway-art/.gitattributes",
       "size": 29,
       "sha256": "730a35ae3d558080083c3103d9ac8100c3f6561678092abe341701dfa331eb1d"
+    },
+    {
+      "path": "production/world/quality-slice/ironveil-ashen-causeway-art/HANDOFF.md",
+      "size": 5756,
+      "sha256": "74db512ffd7d7b3246308649d8fb257cab930382b8a863ed8683c289134904cc"
     },
     {
       "path": "production/world/quality-slice/ironveil-ashen-causeway-art/after.exit.txt",
@@ -124,8 +224,8 @@
     },
     {
       "path": "production/world/quality-slice/ironveil-ashen-causeway-art/build.py",
-      "size": 7171,
-      "sha256": "a2a3c3d6cb10cee094978ad5a439612258aaccacb85461e33078a0d52779e491"
+      "size": 7286,
+      "sha256": "a87b58501fa93cd802ada4c664ecd4dd24d94f9f8c4da7d19ca48fc02baa6b71"
     },
     {
       "path": "production/world/quality-slice/ironveil-ashen-causeway-art/cameras.json",
@@ -134,8 +234,8 @@
     },
     {
       "path": "production/world/quality-slice/ironveil-ashen-causeway-art/checkpoint.json",
-      "size": 844,
-      "sha256": "302d11c9ee83530a268e04620b78565b931b8f5968ea5eec35e74ec63303e36a"
+      "size": 846,
+      "sha256": "173937f3c801a56cc17c1fd9a1d2c98e9914ae195baea1f0177cfa68117b4f4c"
     },
     {
       "path": "production/world/quality-slice/ironveil-ashen-causeway-art/coordination-exception.json",
@@ -144,13 +244,8 @@
     },
     {
       "path": "production/world/quality-slice/ironveil-ashen-causeway-art/design-bounds.json",
-      "size": 20713,
-      "sha256": "c88d2e244c7154ecd1c769944bd97b9db520e3b10e70d66de8448fe874ae4ec3"
-    },
-    {
-      "path": "production/world/quality-slice/ironveil-ashen-causeway-art/HANDOFF.md",
-      "size": 4864,
-      "sha256": "9ed8dbc5fcf8f2ff24831b55a02c73f485a5f5585bb622b4b0fda40a9b28df7a"
+      "size": 20749,
+      "sha256": "b19a26c13d20a05cd1230d478c4d22aeea3d011a2fb28e2854ba81e6eeadd6d9"
     },
     {
       "path": "production/world/quality-slice/ironveil-ashen-causeway-art/independent-01.exit.json",
@@ -198,6 +293,56 @@
       "sha256": "4287bdbc8070c70a3dc99f415ec8aebc5de2f87683973cdb0da29a81e776cad0"
     },
     {
+      "path": "production/world/quality-slice/ironveil-ashen-causeway-art/independent-splice-01.exit.json",
+      "size": 17,
+      "sha256": "d45db54bba0c56e2691a52869729c0a3eade7f5d50545e7832a20e3262a9d422"
+    },
+    {
+      "path": "production/world/quality-slice/ironveil-ashen-causeway-art/independent-splice-01.stderr.txt",
+      "size": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "path": "production/world/quality-slice/ironveil-ashen-causeway-art/independent-splice-01.stdout.txt",
+      "size": 60761,
+      "sha256": "cd622f0c7a819b25ede22106ad79fe7fa40c2bbc8cf75aec6b849bf8ee2ebcae"
+    },
+    {
+      "path": "production/world/quality-slice/ironveil-ashen-causeway-art/independent-splice-02.exit.json",
+      "size": 17,
+      "sha256": "d45db54bba0c56e2691a52869729c0a3eade7f5d50545e7832a20e3262a9d422"
+    },
+    {
+      "path": "production/world/quality-slice/ironveil-ashen-causeway-art/independent-splice-02.stderr.txt",
+      "size": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "path": "production/world/quality-slice/ironveil-ashen-causeway-art/independent-splice-02.stdout.txt",
+      "size": 60761,
+      "sha256": "cd622f0c7a819b25ede22106ad79fe7fa40c2bbc8cf75aec6b849bf8ee2ebcae"
+    },
+    {
+      "path": "production/world/quality-slice/ironveil-ashen-causeway-art/independent-splice-geometry.json",
+      "size": 60761,
+      "sha256": "cd622f0c7a819b25ede22106ad79fe7fa40c2bbc8cf75aec6b849bf8ee2ebcae"
+    },
+    {
+      "path": "production/world/quality-slice/ironveil-ashen-causeway-art/independent-splice-portable-geometry.json",
+      "size": 60761,
+      "sha256": "cd622f0c7a819b25ede22106ad79fe7fa40c2bbc8cf75aec6b849bf8ee2ebcae"
+    },
+    {
+      "path": "production/world/quality-slice/ironveil-ashen-causeway-art/independent-splice-render-hashes.json",
+      "size": 6351,
+      "sha256": "3550b21bdf06a6558f6cdfcb33ba3c141b4fe62608b7c57ba8acad8a635584e1"
+    },
+    {
+      "path": "production/world/quality-slice/ironveil-ashen-causeway-art/independent-splice-review.md",
+      "size": 2634,
+      "sha256": "e95cafac2d088710864d8179c910bca2b1bdd5d4e38fdfde5bf39b40f6a0dcff"
+    },
+    {
       "path": "production/world/quality-slice/ironveil-ashen-causeway-art/independent-visual-review.md",
       "size": 1987,
       "sha256": "f430def6149b0a3d439c2423287825e691e56a2258c21e1b40cb0fec2b7c023f"
@@ -213,9 +358,174 @@
       "sha256": "3dba822752e0b75459519175930b309fb00402f2d987ad8f8f8160960544f8a8"
     },
     {
-      "path": "production/world/quality-slice/ironveil-ashen-causeway-art/verify.py",
+      "path": "production/world/quality-slice/ironveil-ashen-causeway-art/revision-ac539a3/.gitattributes",
+      "size": 29,
+      "sha256": "730a35ae3d558080083c3103d9ac8100c3f6561678092abe341701dfa331eb1d"
+    },
+    {
+      "path": "production/world/quality-slice/ironveil-ashen-causeway-art/revision-ac539a3/HANDOFF.md",
+      "size": 4864,
+      "sha256": "9ed8dbc5fcf8f2ff24831b55a02c73f485a5f5585bb622b4b0fda40a9b28df7a"
+    },
+    {
+      "path": "production/world/quality-slice/ironveil-ashen-causeway-art/revision-ac539a3/after.exit.txt",
+      "size": 3,
+      "sha256": "13bf7b3039c63bf5a50491fa3cfd8eb4e699d1ba1436315aef9cbe5711530354"
+    },
+    {
+      "path": "production/world/quality-slice/ironveil-ashen-causeway-art/revision-ac539a3/after.stderr.log",
+      "size": 579,
+      "sha256": "d1f147dfb791e5ccbfb18f96086acf96d17819d01cef98c06e3936e5bf9c1db5"
+    },
+    {
+      "path": "production/world/quality-slice/ironveil-ashen-causeway-art/revision-ac539a3/after.stdout.log",
+      "size": 801,
+      "sha256": "f38b4ec28aec9c03c5b5ea5d5cbc59ff65ebcb4afd14b9eaec5ef7225d628c6f"
+    },
+    {
+      "path": "production/world/quality-slice/ironveil-ashen-causeway-art/revision-ac539a3/before.exit.txt",
+      "size": 3,
+      "sha256": "13bf7b3039c63bf5a50491fa3cfd8eb4e699d1ba1436315aef9cbe5711530354"
+    },
+    {
+      "path": "production/world/quality-slice/ironveil-ashen-causeway-art/revision-ac539a3/before.stderr.log",
+      "size": 579,
+      "sha256": "d1f147dfb791e5ccbfb18f96086acf96d17819d01cef98c06e3936e5bf9c1db5"
+    },
+    {
+      "path": "production/world/quality-slice/ironveil-ashen-causeway-art/revision-ac539a3/before.stdout.log",
+      "size": 805,
+      "sha256": "cb235fa069d2b99cc78ff0493bf230122ab43850d5d3bcf62a53efca72439cea"
+    },
+    {
+      "path": "production/world/quality-slice/ironveil-ashen-causeway-art/revision-ac539a3/build.py",
+      "size": 7171,
+      "sha256": "a2a3c3d6cb10cee094978ad5a439612258aaccacb85461e33078a0d52779e491"
+    },
+    {
+      "path": "production/world/quality-slice/ironveil-ashen-causeway-art/revision-ac539a3/cameras.json",
+      "size": 1052,
+      "sha256": "c402ace38bf4ed13badd01ad9538e3ad850400be7664f210dad0498e8df1ca01"
+    },
+    {
+      "path": "production/world/quality-slice/ironveil-ashen-causeway-art/revision-ac539a3/checkpoint.json",
+      "size": 844,
+      "sha256": "302d11c9ee83530a268e04620b78565b931b8f5968ea5eec35e74ec63303e36a"
+    },
+    {
+      "path": "production/world/quality-slice/ironveil-ashen-causeway-art/revision-ac539a3/coordination-exception.json",
+      "size": 885,
+      "sha256": "77d17e1e1d1e67a4475aa9e1f469cffd676d5ba4c5937a19a2f3776431925753"
+    },
+    {
+      "path": "production/world/quality-slice/ironveil-ashen-causeway-art/revision-ac539a3/design-bounds.json",
+      "size": 20713,
+      "sha256": "c88d2e244c7154ecd1c769944bd97b9db520e3b10e70d66de8448fe874ae4ec3"
+    },
+    {
+      "path": "production/world/quality-slice/ironveil-ashen-causeway-art/revision-ac539a3/independent-01.exit.json",
+      "size": 17,
+      "sha256": "bc3b6dbf9284b62654e163d7d8bb21c0e0206d75c8d09936cb049cec67a579b0"
+    },
+    {
+      "path": "production/world/quality-slice/ironveil-ashen-causeway-art/revision-ac539a3/independent-01.stderr.txt",
+      "size": 1095,
+      "sha256": "7a6b1a383efe6ffe1d5a9af1109defb111898f2c573008273cd021674e5fc57c"
+    },
+    {
+      "path": "production/world/quality-slice/ironveil-ashen-causeway-art/revision-ac539a3/independent-01.stdout.txt",
+      "size": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "path": "production/world/quality-slice/ironveil-ashen-causeway-art/revision-ac539a3/independent-02.exit.json",
+      "size": 17,
+      "sha256": "d45db54bba0c56e2691a52869729c0a3eade7f5d50545e7832a20e3262a9d422"
+    },
+    {
+      "path": "production/world/quality-slice/ironveil-ashen-causeway-art/revision-ac539a3/independent-02.stderr.txt",
+      "size": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "path": "production/world/quality-slice/ironveil-ashen-causeway-art/revision-ac539a3/independent-02.stdout.txt",
+      "size": 60191,
+      "sha256": "bef159a610637e91d35afece95e9635bfb2de01307fd26bcc4d7c1144e064f3f"
+    },
+    {
+      "path": "production/world/quality-slice/ironveil-ashen-causeway-art/revision-ac539a3/independent-geometry.json",
+      "size": 60191,
+      "sha256": "bef159a610637e91d35afece95e9635bfb2de01307fd26bcc4d7c1144e064f3f"
+    },
+    {
+      "path": "production/world/quality-slice/ironveil-ashen-causeway-art/revision-ac539a3/independent-render-hashes.json",
+      "size": 6790,
+      "sha256": "7ace792b3ad4f4fa04a1eff04b740149529ad3a258702b761b2520477fd084de"
+    },
+    {
+      "path": "production/world/quality-slice/ironveil-ashen-causeway-art/revision-ac539a3/independent-review.md",
+      "size": 1735,
+      "sha256": "4287bdbc8070c70a3dc99f415ec8aebc5de2f87683973cdb0da29a81e776cad0"
+    },
+    {
+      "path": "production/world/quality-slice/ironveil-ashen-causeway-art/revision-ac539a3/independent-visual-review.md",
+      "size": 1987,
+      "sha256": "f430def6149b0a3d439c2423287825e691e56a2258c21e1b40cb0fec2b7c023f"
+    },
+    {
+      "path": "production/world/quality-slice/ironveil-ashen-causeway-art/revision-ac539a3/manifest.json",
+      "size": 9505,
+      "sha256": "1bcc07cd2820fbead23f6a388310d7a61f23e1615c684058ada07f2815164401"
+    },
+    {
+      "path": "production/world/quality-slice/ironveil-ashen-causeway-art/revision-ac539a3/render-context.json",
+      "size": 35890,
+      "sha256": "abbb53d5459e4712103bfa46b9d99c89c240232f52e871b59b48b24387c40b51"
+    },
+    {
+      "path": "production/world/quality-slice/ironveil-ashen-causeway-art/revision-ac539a3/render_compare.py",
+      "size": 7469,
+      "sha256": "3dba822752e0b75459519175930b309fb00402f2d987ad8f8f8160960544f8a8"
+    },
+    {
+      "path": "production/world/quality-slice/ironveil-ashen-causeway-art/revision-ac539a3/verify.py",
       "size": 8832,
       "sha256": "50177d94f0c531b656354461c2e6ba5683dbbee48f69d2e98db027b2b38a25bc"
+    },
+    {
+      "path": "production/world/quality-slice/ironveil-ashen-causeway-art/splice-after.exit.txt",
+      "size": 3,
+      "sha256": "13bf7b3039c63bf5a50491fa3cfd8eb4e699d1ba1436315aef9cbe5711530354"
+    },
+    {
+      "path": "production/world/quality-slice/ironveil-ashen-causeway-art/splice-after.stderr.log",
+      "size": 579,
+      "sha256": "d1f147dfb791e5ccbfb18f96086acf96d17819d01cef98c06e3936e5bf9c1db5"
+    },
+    {
+      "path": "production/world/quality-slice/ironveil-ashen-causeway-art/splice-after.stdout.log",
+      "size": 801,
+      "sha256": "6f1efb21ae9f45cae5851540b56105e00cd07390f3e2569731918c87d63b08e4"
+    },
+    {
+      "path": "production/world/quality-slice/ironveil-ashen-causeway-art/splice-before.exit.txt",
+      "size": 3,
+      "sha256": "13bf7b3039c63bf5a50491fa3cfd8eb4e699d1ba1436315aef9cbe5711530354"
+    },
+    {
+      "path": "production/world/quality-slice/ironveil-ashen-causeway-art/splice-before.stderr.log",
+      "size": 579,
+      "sha256": "d1f147dfb791e5ccbfb18f96086acf96d17819d01cef98c06e3936e5bf9c1db5"
+    },
+    {
+      "path": "production/world/quality-slice/ironveil-ashen-causeway-art/splice-before.stdout.log",
+      "size": 805,
+      "sha256": "9149c11aa2a76642a7a17e4ae8d75fad898ca9fdb8bd13c71089771e3b7f84b9"
+    },
+    {
+      "path": "production/world/quality-slice/ironveil-ashen-causeway-art/verify.py",
+      "size": 12047,
+      "sha256": "622f8a24a33bf573593eccee1d08bd86a6d706fc09de44a2b2821834937f4186"
     }
   ]
 }

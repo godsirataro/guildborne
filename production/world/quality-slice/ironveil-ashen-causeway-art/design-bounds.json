@@ -103,13 +103,13 @@
     },
     {
       "a": "north_ashen_lower",
-      "b": "north_iron_lower",
-      "reason": "chord splice overlaps .6X"
+      "b": "north_post_6",
+      "reason": "separated end embedded in central post"
     },
     {
       "a": "north_ashen_upper",
-      "b": "north_iron_upper",
-      "reason": "chord splice overlaps .6X"
+      "b": "north_post_6",
+      "reason": "separated end embedded in central post"
     },
     {
       "a": "north_post_0",
@@ -413,13 +413,13 @@
     },
     {
       "a": "south_ashen_lower",
-      "b": "south_iron_lower",
-      "reason": "chord splice overlaps .6X"
+      "b": "south_post_6",
+      "reason": "separated end embedded in central post"
     },
     {
       "a": "south_ashen_upper",
-      "b": "south_iron_upper",
-      "reason": "chord splice overlaps .6X"
+      "b": "south_post_6",
+      "reason": "separated end embedded in central post"
     },
     {
       "a": "south_post_0",

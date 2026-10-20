@@ -7,7 +7,7 @@
     "assets/production/world-slice/ironveil-ore-yard/scenery.mesh.json": "4e65f4e254ae58bed6c5825d68948dc8689eb10332fb2763bdae37f86e371d20",
     "assets/production/world-slice/coast-prop-ashen-cut/scenery.mesh.json": "3c84bc3a213b8b6b6253cc95957c7a6af0c27d13f789c81f311c0b062a2aefc9",
     "production/world/quality-slice/ironveil-ashen/ground.json": "bd02bb8543cfddea8e33eb543c81c8f135b0549ce8c5a1585151fec88ff74577",
-    "assets/production/world-slice/ironveil-ashen-causeway-art/scenery.mesh.json": "99ceb74508c2e693957a5601960f2a2897fc85b55eabf17d1dbf0eb5ca471c1e"
+    "assets/production/world-slice/ironveil-ashen-causeway-art/scenery.mesh.json": "5e130da1f9a8cad1ff45dc379052ede847e95b8d936b18120a7f8d4ae5ae181a"
   },
   "cameraSHA256": "c402ace38bf4ed13badd01ad9538e3ad850400be7664f210dad0498e8df1ca01",
   "contextSHA256": "abbb53d5459e4712103bfa46b9d99c89c240232f52e871b59b48b24387c40b51",
@@ -26,15 +26,15 @@
   },
   "existingCoast": "coast-prop-ashen-cut",
   "causewayArtIncluded": true,
-  "blendSHA256": "6914746163b58e5f69f11b186f6619e4e549032edee70a9141e48e469039dc2f",
+  "blendSHA256": "529d34a62ae84cb358b0bc54a4475ac992ce2a27df034d2659b7a3bfea01604e",
   "omissions": [
     "Actors, dynamic resource art, GUI, private campaign pockets and distant city omitted",
     "Roblox materials, lighting, physics and gameplay not reproduced"
   ],
   "images": {
-    "01_ironveil_departure.png": "e387d51910a9448e4506ec82fda2846bc4eb18ac221ce43974081ed5c79028d9",
-    "02_ashen_arrival.png": "fd4fb0a9ac1758966c593f4797d04f73b07fa03d3031285364b3813e858a78e2",
-    "03_corridor_overview.png": "7eaff4f61f4eee0f9b44dd22bb3c26c4b6b129f29e153e0a332c646ada0fb969",
-    "04_underside_within_cut.png": "5343f3eb6b5b0647241dbfa105c472d44f81448d36b8497e3dd4b9b005767151"
+    "01_ironveil_departure.png": "900e5b9cb53c589606e75f17b230defa5401ab79b831fd6f5bf848f6740bddbb",
+    "02_ashen_arrival.png": "507ff2b82656a434e6303ed1a0f084c3872945687cf026b4dc65f2d4eb97e83d",
+    "03_corridor_overview.png": "ee906526b51289b2cbc9c0e842e5d46fd6ed967f81fd88409687b9bd8842fb85",
+    "04_underside_within_cut.png": "bff92e5a6373623a71d7fa93be433ba524b7d0797f3f210ce1e645acd5e34e14"
   }
 }

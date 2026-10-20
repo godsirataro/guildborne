@@ -28,15 +28,15 @@ def build():
         contact(label+'_bearing_cap','native_road','cap top1.73 overlaps collider underside1.70 by.03')
     nodes=[616+24*j for j in range(13)]
     for side,z in [('north',1491.5),('south',1520.5)]:
-        # Segment chord coloration only at one shared, embedded joint near midspan.
-        for section,a,b,col in [('iron',615.7,760.3,1),('ashen',759.7,904.3,5)]:
+        # Separate colored ends, fully buried inside the wider central post.
+        for section,a,b,col in [('iron',615.7,759.9,1),('ashen',760.1,904.3,5)]:
             for name,y,depth in [('lower',.9,.9),('upper',7.3,.8)]:
                 n=f'{side}_{section}_{name}'
                 g.box('chords',n,[(a+b)/2,y,z],[b-a,depth,.8],col)
-                if section=='ashen':contact(n,f'{side}_iron_{name}','chord splice overlaps .6X')
+                if section=='ashen':contact(n,f'{side}_post_6','separated end embedded in central post')
         for j,x in enumerate(nodes):
             n=f'{side}_post_{j}'
-            g.box('webs',n,[x,4.1,z],[.65,6.9,.65],1 if j<6 else 5)
+            g.box('webs',n,[x,4.1,z],[.85,7.4,1.0] if j==6 else [.65,6.9,.65],1 if j<6 else 5)
             section='iron' if j<=6 else 'ashen'
             contact(n,f'{side}_{section}_lower','vertical bearing in lower chord')
             contact(n,f'{side}_{section}_upper','vertical bearing in upper chord')
