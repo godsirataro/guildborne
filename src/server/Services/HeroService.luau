@@ -156,7 +156,10 @@ return function(templates: Folder, onOpen: (Player,string) -> (), reward: any,to
 		end
 	end
 	local function floor(s: any, position: Vector3): Vector3?
-		local hit=workspace:Raycast(position+V(0,8,0),V(0,-24,0),s.params)
+		-- References are root/history positions, not terrain heights. Probe near
+		-- that walking level so an overhead gateway is not selected as support.
+		-- Preserve the original lower search bound: reference Y minus 16 studs.
+		local hit=workspace:Raycast(position+V(0,1,0),V(0,-17,0),s.params)
 		return if hit then hit.Position+V(0,3,0) else nil
 	end
 	local function recover(h: any, position: Vector3)
