@@ -1,8 +1,8 @@
 --!strict
 -- Fixed local HUMAN_STANDARD Warrior Basic candidate; caller owns all actor gates.
 -- No target tracking, limb scaling, root motion, authoritative writes or timing changes.
--- With reviewed source binds and grip fit Rx(pi+.35), the unchanged blade's y=2
--- point predicts (-13.274,3.127,78.692) inside the fixture Tunic at contact.
+-- With reviewed source binds and grip fit Rx(pi+.45), the unchanged blade's y=2
+-- point predicts (-13.280,3.309,78.775) inside the fixture Tunic at contact.
 -- This is offline FK evidence only; native contact and human art acceptance are pending.
 local Profile={}
 type PoseSpec={translation: {number},angles: {number}}

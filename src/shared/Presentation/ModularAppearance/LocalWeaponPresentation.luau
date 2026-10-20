@@ -10,7 +10,7 @@ local Weapon = {}
 local active: {[Model]: any} = {}
 local names = {"Grip","Guard","Blade","Point","Pommel"}
 local V = Vector3.new
-local gripFitAngle = math.pi + .35
+local gripFitAngle = math.pi + .45
 local gripFit = CFrame.Angles(gripFitAngle,0,0)
 local shapes = {
 	Grip={class="Part",size=V(.3,1,.3)*.65,relative=CFrame.identity},
@@ -168,7 +168,7 @@ function Weapon.New(actor: Model, preview: Model): (any?, string?)
 				local candidate = Instance.new("Model"); model = candidate; candidate.Name = "LocalTrainingSwordInspection"
 				candidate:SetAttribute("LOCAL_TEST_ONLY",true); candidate:SetAttribute("AssetStatus","LOCAL_EXISTING_GEOMETRY_COPY")
 				candidate:SetAttribute("SourceWeaponId","training_sword"); candidate:SetAttribute("GripFitAccepted",false)
-				candidate:SetAttribute("GripOrientation","BLADE_OUT_OF_HAND_RX_PI_PLUS_0_35")
+				candidate:SetAttribute("GripOrientation","BLADE_OUT_OF_HAND_RX_PI_PLUS_0_45")
 				for _, name in ipairs(names) do
 					local copy = Instance.new(shapes[name].class) :: BasePart
 					copy.Name = name; copy.Parent = candidate; copied[name] = copy
