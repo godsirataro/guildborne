@@ -1,0 +1,9 @@
+{
+  "content": [
+    {
+      "type": "text",
+      "text": "{\"claims\":\"LOCAL_SOURCE_RIGID_BOUND_ASSEMBLY_ONLY_NOT_FIT_OR_MOTION_ACCEPTANCE\",\"pairedUniqueBackings\":25,\"garmentSegments\":9,\"garmentTriangles\":556,\"heavyFitRejected\":true,\"pairedLogicalReferences\":50,\"profileWrites\":0,\"explicitAndDirectCleanup\":true,\"independentMeshParts\":true,\"motors\":15,\"coreMeshes\":15}"
+    }
+  ],
+  "isError": false
+}

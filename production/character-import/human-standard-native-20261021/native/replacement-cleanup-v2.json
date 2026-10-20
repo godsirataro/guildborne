@@ -1,0 +1,12 @@
+{
+  "code": "local s=_G.FoundationProbe;local A=require(game.ReplicatedStorage.Shared.Presentation.ModularAppearance.LocalActorPreview);local P=require(game.ReplicatedStorage.Shared.Presentation.ModularAppearance.LocalGeometryPreview)\nlocal hero=s.actors[2];local heroHandle=A.Get(hero);heroHandle.Model.PrimaryPart:Destroy();task.wait(.1)\nassert(heroHandle:GetDiagnostics().destroyed and A.Get(hero)==nil and A.Count()==1 and P.ResourceCount()==25 and P.BackingResourceCount()==25)\nlocal restoredHero=0;for part,b in pairs(s.before[2].parts) do assert(part.LocalTransparencyModifier==b.ltm);restoredHero+=1 end\nlocal player=game.Players.LocalPlayer;local original=player.Character;assert(original==s.actors[1])\nlocal handle=A.Get(original)\nlocal replacement=Instance.new(\"Model\");replacement.Name=\"LocalCharacterReplacementProbe\";local root=Instance.new(\"Part\");root.Name=\"HumanoidRootPart\";root.Anchored=true;root.CanCollide=false;root.Transparency=1;root.CFrame=original.HumanoidRootPart.CFrame;root.Parent=replacement;local humanoid=Instance.new(\"Humanoid\");humanoid.Parent=replacement;replacement.PrimaryPart=root;replacement.Parent=workspace\nlocal ok,problem=pcall(function()\n player.Character=replacement;task.wait(.15)\n assert(original:IsDescendantOf(workspace),\"OLD_ACTOR_DID_NOT_REMAIN\")\n assert(handle:GetDiagnostics().destroyed and A.Get(original)==nil and A.Count()==0)\n assert(P.ResourceCount()==0 and P.BackingResourceCount()==0 and P.PendingBackingCount()==0)\nend)\nplayer.Character=original;replacement:Destroy()\nif not ok then A.Detach(original);A.Detach(hero);error(problem) end\n_G.FoundationProbe=nil\nreturn {damagedHeroRootCleaned=true,heroOriginalLtmRestored=restoredHero,oldPlayerStayedInWorkspace=true,playerReplacementCleaned=true,resources=P.ResourceCount(),backings=P.BackingResourceCount(),pending=P.PendingBackingCount(),handles=A.Count()}",
+  "result": {
+    "content": [
+      {
+        "type": "text",
+        "text": "{\"backings\":0,\"damagedHeroRootCleaned\":true,\"handles\":0,\"heroOriginalLtmRestored\":45,\"playerReplacementCleaned\":true,\"pending\":0,\"resources\":0,\"oldPlayerStayedInWorkspace\":true}"
+      }
+    ],
+    "isError": false
+  }
+}

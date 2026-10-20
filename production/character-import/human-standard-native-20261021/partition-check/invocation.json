@@ -1,0 +1,28 @@
+{
+  "schemaVersion": 1,
+  "kind": "LOCAL_COMMAND_RECEIPT",
+  "runId": "89ef61104c7b4887ad0f2e2390c771fb",
+  "tool": ".tools/luau\\luau.exe",
+  "argv": [
+    ".tools/luau\\luau.exe",
+    "production/character-import/local-garment-partition-check.luau"
+  ],
+  "buildCommit": "71984291b4afb97fbe6ed455776f8b0070d891d2",
+  "sourceTree": "4abf1d6f3f365587596642dbc1e82ba310b4f3af",
+  "exitCode": 0,
+  "sourceUnchanged": true,
+  "seconds": 0.3950087999983225,
+  "streams": [
+    {
+      "path": "build/agentic/checks/89ef61104c7b4887ad0f2e2390c771fb/stdout.txt",
+      "sha256": "df9ff28290097a8125ca7860405b21b6561d2df863382169a0b504818f0ed795",
+      "bytes": 1242
+    },
+    {
+      "path": "build/agentic/checks/89ef61104c7b4887ad0f2e2390c771fb/stderr.txt",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "bytes": 0
+    }
+  ],
+  "error": null
+}

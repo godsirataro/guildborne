@@ -1,0 +1,12 @@
+{
+  "code": "local A=require(game.ReplicatedStorage.Shared.Presentation.ModularAppearance.LocalActorPreview)\nlocal P=require(game.ReplicatedStorage.Shared.Presentation.ModularAppearance.LocalGeometryPreview)\nlocal s=_G.FoundationProbe;assert(s and s.finished)\nlocal actor=s.actors[1];local old=A.Get(actor);assert(old)\nlocal before=s.before[1];local partCount,motorCount=0,0\nassert(actor.HumanoidRootPart==before.root and actor:FindFirstChildOfClass(\"Humanoid\")==before.humanoid)\nfor part,b in pairs(before.parts) do\n assert(part.Anchored==b.anchored and part.Massless==b.massless and part.CanCollide==b.collide and part.CanTouch==b.touch and part.CanQuery==b.query and part.Size==b.size,\"ACTUAL_PHYSICS_CHANGED\")\n partCount+=1\nend\nfor joint,b in pairs(before.motors) do assert(joint.Part0==b[1] and joint.Part1==b[2],\"ORIGINAL_JOINT_CHANGED\");motorCount+=1 end\nlocal replacement,err=A.Attach(actor,s.selection);assert(replacement,err)\nassert(old:GetDiagnostics().destroyed and P.ResourceCount(old.Model)==0 and A.Count()==1)\nlocal motor=replacement.Model:FindFirstChild(\"LeftKnee\",true);assert(motor and motor:IsA(\"Motor6D\"));motor:Destroy()\ntask.wait(.1)\nassert(A.Count()==0 and P.ResourceCount()==s.baselineResources and replacement:GetDiagnostics().destroyed)\nlocal restored=0;for part,b in pairs(before.parts) do assert(part.LocalTransparencyModifier==b.ltm,\"LTM_NOT_RESTORED\");restored+=1 end\n_G.FoundationProbe=nil\nreturn {originalPartsPreserved=partCount,originalMotorsPreserved=motorCount,ltmRestored=restored,duplicateAttachCleaned=true,damagedPreviewCleaned=true,resources=P.ResourceCount(),handles=A.Count(),health=actor:GetAttribute(\"CombatHealth\")}",
+  "result": {
+    "content": [
+      {
+        "type": "text",
+        "text": "{\"duplicateAttachCleaned\":true,\"ltmRestored\":22,\"health\":57,\"originalMotorsPreserved\":0,\"damagedPreviewCleaned\":true,\"resources\":0,\"handles\":0,\"originalPartsPreserved\":22}"
+      }
+    ],
+    "isError": false
+  }
+}

@@ -1,0 +1,26 @@
+PASS CLO_TUNIC_TRAVELER_01 preserves each original vertex, triangle, UV, normal and material exactly once
+PASS CLO_TROUSERS_TRAVELER_01 preserves each original vertex, triangle, UV, normal and material exactly once
+PASS Heavy fit rejects before allocation
+PASS robe unsupported rather than silently omitted
+PASS hash mismatch
+PASS missing hash
+PASS authored fit mismatch
+PASS vertex count mismatch
+PASS mesh identity mismatch
+PASS mixed vertex influences
+PASS unnormalized weight
+PASS NaN weight
+PASS root cannot own a garment segment
+PASS triangle crosses bone groups
+PASS out of range index
+PASS fractional index
+PASS NaN index
+PASS missing UV mapping
+PASS shared backing is retained until last owner, then rebuilt without a permanent cache
+PASS concurrent callers share exactly one in-flight creation
+PASS all owners cancelled during creation dispose the eventual backing
+PASS cancelled creator cannot destroy a surviving waiter's backing
+PASS cancelled waiter exits and leaves the creator's backing intact
+PASS creation failure reaches all waiters and does not poison retries
+PASS different backing keys never share resources
+PASS 25 local garment/backing lifecycle checks; Studio/fit acceptance remains pending

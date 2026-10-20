@@ -1,0 +1,12 @@
+{
+  "code": "local s=_G.FoundationProbe;assert(s and s.finished)\nlocal A=require(game.ReplicatedStorage.Shared.Presentation.ModularAppearance.LocalActorPreview)\nlocal P=require(game.ReplicatedStorage.Shared.Presentation.ModularAppearance.LocalGeometryPreview)\nlocal rows={}\nfor i,actor in ipairs(s.actors) do\n local b=s.before[i];local pc,jc=0,0\n assert(actor.HumanoidRootPart==b.root and actor:FindFirstChildOfClass(\"Humanoid\")==b.humanoid)\n for part,old in pairs(b.parts) do assert(part.Anchored==old.anchored and part.Massless==old.massless and part.CanCollide==old.collide and part.CanTouch==old.touch and part.CanQuery==old.query and part.Size==old.size);pc+=1 end\n for joint,old in pairs(b.motors) do assert(joint.Part0==old[1] and joint.Part1==old[2]);jc+=1 end\n local h=A.Get(actor);local count,err=0,0\n for _,v in ipairs(h.Model:GetDescendants()) do if v:IsA(\"Weld\") and v.Name==\"SourceGarmentWeld\" then count+=1;err=math.max(err,((v.Part0.CFrame*v.C0).Position-(v.Part1.CFrame*v.C1).Position).Magnitude) end end\n assert(count==9 and err<.01)\n table.insert(rows,{actor=i,originalParts=pc,originalMotors=jc,garmentWelds=count,maxGarmentPositionError=err})\nend\nlocal old=A.Get(s.actors[1]);A.Detach(s.actors[1])\nassert(old:GetDiagnostics().destroyed and P.ResourceCount(old.Model)==0 and A.Count()==1 and P.ResourceCount()==25 and P.BackingResourceCount()==25)\nlocal surviving=A.Get(s.actors[2]);local beforeFrames=surviving:GetDiagnostics().frames;task.wait(.2)\nassert(surviving:GetDiagnostics().frames>beforeFrames)\nreturn {actors=rows,playerDetached=true,heroSurvives=true,resources=P.ResourceCount(),backings=P.BackingResourceCount(),handles=A.Count()}",
+  "result": {
+    "content": [
+      {
+        "type": "text",
+        "text": "{\"actors\":{\"1\":{\"actor\":1,\"maxGarmentPositionError\":0,\"originalMotors\":0,\"originalParts\":22,\"garmentWelds\":9},\"2\":{\"actor\":2,\"maxGarmentPositionError\":0,\"originalMotors\":6,\"originalParts\":45,\"garmentWelds\":9}},\"heroSurvives\":true,\"playerDetached\":true,\"resources\":25,\"handles\":1,\"backings\":25}"
+      }
+    ],
+    "isError": false
+  }
+}

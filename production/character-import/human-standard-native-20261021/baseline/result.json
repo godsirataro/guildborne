@@ -1,0 +1,47 @@
+{
+  "schemaVersion": 3,
+  "buildCommit": "71984291b4afb97fbe6ed455776f8b0070d891d2",
+  "sourceTree": "4abf1d6f3f365587596642dbc1e82ba310b4f3af",
+  "status": "COMMAND_PASS_NOT_TASK_ACCEPTANCE",
+  "sourceUnchanged": true,
+  "invocation": {
+    "tool": "C:\\WINDOWS\\System32\\WindowsPowerShell\\v1.0\\powershell.exe",
+    "argv": [
+      "C:\\WINDOWS\\System32\\WindowsPowerShell\\v1.0\\powershell.exe",
+      "-NoProfile",
+      "-ExecutionPolicy",
+      "Bypass",
+      "-File",
+      "tools/validate.ps1"
+    ],
+    "runId": "aa4b60637902452aa92bd6d21e79dcba",
+    "buildCommit": "71984291b4afb97fbe6ed455776f8b0070d891d2",
+    "exitCode": 0,
+    "seconds": 100.01027780000004,
+    "recordPath": "build/agentic/checks/aa4b60637902452aa92bd6d21e79dcba/invocation.json",
+    "recordSha256": "24cb0ca6a774e35ad641c915d18122783275ca33423f5b123df32b8e6b014629",
+    "logs": [
+      "build/agentic/checks/aa4b60637902452aa92bd6d21e79dcba/invocation.json",
+      "build/agentic/checks/aa4b60637902452aa92bd6d21e79dcba/stdout.txt",
+      "build/agentic/checks/aa4b60637902452aa92bd6d21e79dcba/stderr.txt"
+    ]
+  },
+  "artifacts": [
+    {
+      "path": "build/agentic/checks/aa4b60637902452aa92bd6d21e79dcba/invocation.json",
+      "sha256": "24cb0ca6a774e35ad641c915d18122783275ca33423f5b123df32b8e6b014629",
+      "bytes": 997
+    },
+    {
+      "path": "build/agentic/checks/aa4b60637902452aa92bd6d21e79dcba/stdout.txt",
+      "sha256": "d445c26394f560138dee17400e5951fa73da3eea848e118b298849f10d4a2390",
+      "bytes": 76267
+    },
+    {
+      "path": "build/agentic/checks/aa4b60637902452aa92bd6d21e79dcba/stderr.txt",
+      "sha256": "fde9b645d45ef8d3b6ee2dba9153b9d54f014490b6ef4d10981e7ea5bdf3b5fe",
+      "bytes": 2011
+    }
+  ],
+  "humanApproved": false
+}

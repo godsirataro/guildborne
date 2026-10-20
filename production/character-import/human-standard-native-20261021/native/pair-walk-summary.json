@@ -1,0 +1,30 @@
+{
+  "samples": 140,
+  "seconds": 8.398291110992432,
+  "backings": [
+    25
+  ],
+  "references": [
+    50
+  ],
+  "actors": [
+    {
+      "id": "player",
+      "health": [
+        57
+      ],
+      "distance": 23.483204782009125,
+      "kneeXSpan": 0.6182789206504822,
+      "elbowXSpan": 0.16271448135375977
+    },
+    {
+      "id": "a:Warrior",
+      "health": [
+        57
+      ],
+      "distance": 22.233835850842297,
+      "kneeXSpan": 0.6199921369552612,
+      "elbowXSpan": 0.16278231143951416
+    }
+  ]
+}

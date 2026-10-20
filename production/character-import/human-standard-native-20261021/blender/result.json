@@ -1,0 +1,143 @@
+{
+  "schemaVersion": 1,
+  "blenderVersion": "5.2.1 LTS",
+  "source": "C:\\Work\\MySelf\\Guildborne-controller\\assets\\characters\\source\\CHR_BDY_HUMAN_STANDARD_V01.blend",
+  "status": "LOCAL_GEOMETRY_CHECKS_PASS",
+  "parts": [
+    {
+      "name": "Head_Geo",
+      "triangles": 92,
+      "nonManifoldEdges": 0,
+      "unweightedVertices": 0,
+      "maxInfluences": 1,
+      "materials": 1
+    },
+    {
+      "name": "LeftFoot_Geo",
+      "triangles": 44,
+      "nonManifoldEdges": 0,
+      "unweightedVertices": 0,
+      "maxInfluences": 1,
+      "materials": 1
+    },
+    {
+      "name": "LeftHand_Geo",
+      "triangles": 44,
+      "nonManifoldEdges": 0,
+      "unweightedVertices": 0,
+      "maxInfluences": 1,
+      "materials": 1
+    },
+    {
+      "name": "LeftLowerArm_Geo",
+      "triangles": 60,
+      "nonManifoldEdges": 0,
+      "unweightedVertices": 0,
+      "maxInfluences": 1,
+      "materials": 1
+    },
+    {
+      "name": "LeftLowerLeg_Geo",
+      "triangles": 60,
+      "nonManifoldEdges": 0,
+      "unweightedVertices": 0,
+      "maxInfluences": 1,
+      "materials": 1
+    },
+    {
+      "name": "LeftUpperArm_Geo",
+      "triangles": 60,
+      "nonManifoldEdges": 0,
+      "unweightedVertices": 0,
+      "maxInfluences": 1,
+      "materials": 1
+    },
+    {
+      "name": "LeftUpperLeg_Geo",
+      "triangles": 60,
+      "nonManifoldEdges": 0,
+      "unweightedVertices": 0,
+      "maxInfluences": 1,
+      "materials": 1
+    },
+    {
+      "name": "LowerTorso_Geo",
+      "triangles": 60,
+      "nonManifoldEdges": 0,
+      "unweightedVertices": 0,
+      "maxInfluences": 1,
+      "materials": 1
+    },
+    {
+      "name": "RightFoot_Geo",
+      "triangles": 44,
+      "nonManifoldEdges": 0,
+      "unweightedVertices": 0,
+      "maxInfluences": 1,
+      "materials": 1
+    },
+    {
+      "name": "RightHand_Geo",
+      "triangles": 44,
+      "nonManifoldEdges": 0,
+      "unweightedVertices": 0,
+      "maxInfluences": 1,
+      "materials": 1
+    },
+    {
+      "name": "RightLowerArm_Geo",
+      "triangles": 60,
+      "nonManifoldEdges": 0,
+      "unweightedVertices": 0,
+      "maxInfluences": 1,
+      "materials": 1
+    },
+    {
+      "name": "RightLowerLeg_Geo",
+      "triangles": 60,
+      "nonManifoldEdges": 0,
+      "unweightedVertices": 0,
+      "maxInfluences": 1,
+      "materials": 1
+    },
+    {
+      "name": "RightUpperArm_Geo",
+      "triangles": 60,
+      "nonManifoldEdges": 0,
+      "unweightedVertices": 0,
+      "maxInfluences": 1,
+      "materials": 1
+    },
+    {
+      "name": "RightUpperLeg_Geo",
+      "triangles": 60,
+      "nonManifoldEdges": 0,
+      "unweightedVertices": 0,
+      "maxInfluences": 1,
+      "materials": 1
+    },
+    {
+      "name": "UpperTorso_Geo",
+      "triangles": 76,
+      "nonManifoldEdges": 0,
+      "unweightedVertices": 0,
+      "maxInfluences": 1,
+      "materials": 1
+    }
+  ],
+  "errors": [],
+  "pending": [
+    "joint placement",
+    "weight deformation",
+    "cage UV/topology correspondence",
+    "modesty coverage",
+    "Studio import",
+    "clothing fit per preset",
+    "actual animation playback",
+    "mobile device performance"
+  ],
+  "studioTested": false,
+  "sourceSha256": "d2d0c49d61f811715553fb7aa898a001edf03c2aa4ccf45756e017ab90247226",
+  "auditScriptSha256": "5b1827707bf795d92f5a8bb99d24f3c6dea8695fead366b74e91f82af66137a5",
+  "clothingFitAccepted": false
+}

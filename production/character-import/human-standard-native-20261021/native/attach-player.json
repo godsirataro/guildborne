@@ -1,0 +1,12 @@
+{
+  "code": "local A=require(game.ReplicatedStorage.Shared.Presentation.ModularAppearance.LocalActorPreview)\nlocal P=require(game.ReplicatedStorage.Shared.Presentation.ModularAppearance.LocalGeometryPreview)\nlocal player=game.Players.LocalPlayer\nlocal hero=workspace.GuildborneWorld.PersonalGuild.Heroes.Warrior\nassert(hero:GetAttribute(\"OwnerUserId\")==player.UserId and hero:GetAttribute(\"AdventurerId\")==\"a:Warrior\")\nassert(_G.FoundationProbe==nil,\"Existing probe refused\")\nlocal s={raceId=\"HUMAN\",bodyPresetId=\"HUMAN_STANDARD\",skinPaletteId=\"SKIN_HUMAN_03\",hairAssetId=\"ACC_HAIR_HUMAN_01\",hairColorId=\"HAIR_DARK_BROWN\",outfitSlots={INNER_TOP=\"CLO_TUNIC_TRAVELER_01\",INNER_BOTTOM=\"CLO_TROUSERS_TRAVELER_01\"}}\nlocal state={selection=s,baselineResources=P.ResourceCount(),actors={player.Character},before={},samples={},finished=false}\nfor i,actor in ipairs(state.actors) do\n local before={root=actor.HumanoidRootPart,humanoid=actor:FindFirstChildOfClass(\"Humanoid\"),parts={},motors={},attrs=actor:GetAttributes()}\n for _,v in ipairs(actor:GetDescendants()) do\n  if v:IsA(\"BasePart\") then before.parts[v]={anchored=v.Anchored,massless=v.Massless,collide=v.CanCollide,touch=v.CanTouch,query=v.CanQuery,size=v.Size,ltm=v.LocalTransparencyModifier}\n  elseif v:IsA(\"Motor6D\") then before.motors[v]={v.Part0,v.Part1} end\n end\n state.before[i]=before\nend\n_G.FoundationProbe=state\nlocal ok,err=pcall(function()\n for _,actor in ipairs(state.actors) do local h,e=A.Attach(actor,s);assert(h,e) end\nend)\nif not ok then for _,actor in ipairs(state.actors) do A.Detach(actor) end;_G.FoundationProbe=nil;error(err) end\nlocal result={}\nfor i,actor in ipairs(state.actors) do local h=A.Get(actor);table.insert(result,{actor=actor:GetFullName(),kind=h.Model:GetAttribute(\"ActorKind\"),meshes=P.ResourceCount(h.Model),garments=h.Model:GetAttribute(\"GarmentSegmentCount\"),offset=h.Model:GetAttribute(\"GroundOffsetY\"),health=actor:GetAttribute(\"CombatHealth\")}) end\nreturn {actors=result,resources=P.ResourceCount(),count=A.Count(),syntheticEligibility=true}",
+  "result": {
+    "content": [
+      {
+        "type": "text",
+        "text": "{\"actors\":{\"1\":{\"offset\":-0.5380253791809082,\"actor\":\"Workspace.iswhlaedev\",\"health\":57,\"kind\":\"PLAYER\",\"garments\":9,\"meshes\":25}},\"resources\":25,\"count\":1,\"syntheticEligibility\":true}"
+      }
+    ],
+    "isError": false
+  }
+}
