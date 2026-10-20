@@ -15,6 +15,41 @@ local regionalPatterns={ ["Antler Cleave"]=true,["Root Burst"]=true,["Hammer Fal
 local function position(value:any):boolean
     return typeof(value)=="Vector3" and Cue.finite(value.X) and Cue.finite(value.Y) and Cue.finite(value.Z)
 end
+-- BEGIN PARTY_LABEL_POLICY
+-- Read six existing cards each HUD tick; reused slots are never identity caches.
+local function visibleHealthCards(playerGui: Instance,viewport: Vector2): {[string]:boolean}
+    local covered: {[string]:boolean}={}
+    local hud=playerGui:FindFirstChild("GuildbornePlayerCombatUI")
+    if not hud or not hud:IsA("ScreenGui") or not hud.Enabled then return covered end
+    local selection=hud:FindFirstChild("CompanionSelection")
+    if not selection or not selection:IsA("GuiObject") then return covered end
+    local function visible(object: GuiObject): boolean
+        local size=object.AbsoluteSize;local at=object.AbsolutePosition
+        if size.X<=0 or size.Y<=0 or at.X<0 or at.Y<0 or at.X+size.X>viewport.X or at.Y+size.Y>viewport.Y then return false end
+        local node: Instance?=object
+        for _=1,8 do
+            if node==hud then return hud.Parent==playerGui and hud.Enabled end
+            if not node or not node:IsA("GuiObject") or not node.Visible or node.AbsoluteSize.X<=0 or node.AbsoluteSize.Y<=0 then return false end
+            node=node.Parent
+        end
+        return false
+    end
+    for index=1,6 do
+        local card=selection:FindFirstChild("Actor"..index)
+        if card and card:IsA("GuiObject") then
+            local id=card:GetAttribute("ActorId")
+            local track=card:FindFirstChild("HealthTrack")
+            if type(id)=="string" and id~="" and track and track:IsA("GuiObject") and visible(track) then covered[id]=true end
+        end
+    end
+    return covered
+end
+local function overheadMode(own: boolean,valid: boolean,hero: boolean,following: boolean,covered: boolean,active: boolean): string
+    if not own or not valid or (hero and not following) then return "off" end
+    if covered then return if active then "compact" else "off" end
+    return "full"
+end
+-- END PARTY_LABEL_POLICY
 return function()
 	local connections: {RBXScriptConnection}={}
 	local function connect(signal: RBXScriptSignal,callback: any) table.insert(connections,signal:Connect(callback)) end
@@ -97,6 +132,8 @@ return function()
 		elapsed+=dt; if elapsed<.1 then return end; elapsed=0
 		local function T(key: string): string return Localization.translate(language,key) end
 		local party={}
+		local cameraForHUD=workspace.CurrentCamera
+		local covered=if cameraForHUD then visibleHealthCards(player.PlayerGui,cameraForHUD.ViewportSize) else {}
 		if player.Character then add(player.Character) end
 		local rowHeight=if workspace.CurrentCamera and workspace.CurrentCamera.ViewportSize.Y<450 then 18 else 27
 		for i,row in ipairs(rows) do row.Position=UDim2.fromOffset(6,(i-1)*rowHeight); row.Size=UDim2.new(1,-12,0,rowHeight) end
@@ -105,7 +142,9 @@ return function()
 			local own=m:GetAttribute("OwnerUserId")==player.UserId
 			local hero=m:GetAttribute("GuildborneHero")==true
 			local following=m:GetAttribute("HeroState")=="Following"
-			e.bar.Adornee=m.PrimaryPart; e.bar.Enabled=own and Cue.finite(hp) and Cue.finite(max) and max>0 and not m:GetAttribute("GuildbornePlayer") and (not hero or (following and m:GetAttribute("CombatState")~="Follow" and m:GetAttribute("CombatState")~="ReturnToLeader"))
+			e.bar.Adornee=m.PrimaryPart; e.bar.Enabled=false
+            local actorId=if m==player.Character then "player" elseif hero and following then m:GetAttribute("AdventurerId") else nil
+            local hasCard=not m:GetAttribute("GuildborneEnemy") and type(actorId)=="string" and covered[actorId]==true
 			local now=workspace:GetServerTimeNow()
 			if e.warningStamp and not warningCurrent(m,e) then stopWarning(e) end
 			if Cue.finite(hp) and Cue.finite(max) and max>0 then
@@ -166,10 +205,20 @@ return function()
 				e.lastHealth=hp
 				local state=tostring(m:GetAttribute("CombatState") or "Idle")
 				local feedback=if Cue.recent(m:GetAttribute("FeedbackAt"),now,.8) then tostring(m:GetAttribute("Feedback") or "") else ""
+				local recentAction=Cue.recent(m:GetAttribute("ActionAt"),now,.8) and tostring(m:GetAttribute("Action") or "")~=""
 				local action=if Cue.recent(m:GetAttribute("ActionAt"),now,.8) then T(tostring(m:GetAttribute("Action") or "")) else T(if state=="Windup" then tostring(m:GetAttribute("TelegraphName") or state) else state)
 				if state=="Windup" and Cue.finite(regionalUntil) then action..=string.format(" · %.1fs",math.max(0,regionalUntil-workspace:GetServerTimeNow())) end
 				local phase=m:GetAttribute("BossPhase")
 				e.label.Text=T(if hero then m.Name elseif m:GetAttribute("GuildbornePlayer") then "Your character" else tostring(m:GetAttribute("EnemyTitle") or "Goblin Scout")).."  "..hp.."/"..max.."\n"..(if phase then T("Phase").." "..tostring(phase).." · " else "")..action.." "..feedback
+                local mode=overheadMode(own,true,hero,following,hasCard,recentAction or feedback~="")
+                local compact=mode=="compact"
+                e.bar.Enabled=mode~="off"
+                e.bar.Size=if compact then UDim2.fromOffset(132,34) else UDim2.fromOffset(156,50)
+                e.fill.Visible=not compact
+                e.label.TextWrapped=not compact
+                e.label.TextTruncate=if compact then Enum.TextTruncate.AtEnd else Enum.TextTruncate.None
+                e.label.BackgroundTransparency=if compact then .4 else .2
+                if compact then e.label.Text=(if recentAction then T(tostring(m:GetAttribute("Action"))) else "")..(if feedback~="" then "\n"..feedback else "") end
 				e.fill.Size=UDim2.new(math.clamp(hp/math.max(1,max),0,1),0,0,4)
 				if own and hero and following then table.insert(party,m) end
 			end

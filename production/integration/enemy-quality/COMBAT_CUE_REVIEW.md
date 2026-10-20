@@ -97,3 +97,32 @@ The manual-arm call still used synchronous covered despite observe having the pu
 `combat_cue_arm_regression.py` extracts actual helper, observe and manual-arm source and runs four local cases: delayed endpoint publication succeeds on the original interval; a real gap fails immediately; missing predecessor fails immediately; camera interference during publication still fails. All four passed, and the prior 17 local boundary/control tests passed again. These local counts do not establish native case acceptance. Run the new regression with `python production/integration/enemy-quality/combat_cue_arm_regression.py --luau <absolute-luau-executable>`.
 
 Independent agent enemy_export_review reviewed the actual probe change and regression: PASS, no blocker; reviewer did not rerun tests or execute Studio. Reviewed raw probe SHA256 `bb7a7538aca1c5a77f05d14ae438337c11795055cb6a0bd71a5f4d1ce74d12b1`. Extracted arm-source SHA256 `300713a563cc86c8b673a399c0708f9378c48c69d645aa291c0703c9e5e958fb`. This bounded follow-up uses shared v8 task enemy-quality-slice, owner s15-arm-boundary; earlier accepted combat-cue-lifecycle evidence stays intact. Controller owns integration and the next native run; native acceptance remains pending.
+
+
+## V10 party overhead readability candidate — 2026-10-20
+
+Base `f4a3c97`, branch `codex/party-labels-v10`, shared v10 ledger, task `combat-cue-lifecycle`, owner `s15-party-labels`. Authorized scope is CombatController, this review, and focused tests in the existing combat_cue_events test file. No Studio, provider, push, publishing or gameplay changes are part of this worker delivery.
+
+The archived R3 image `production/integration/quality-slice/native-party-r2-r3-20261020/r3/manual-cast.png` shows overlapping companion overhead name/HP/action panels despite the dedicated six-card HUD. This is evidence of the earlier layout, not native acceptance of this candidate. The bright purple object remains unidentified by this worker; neither this change nor the evidence attributes it to Fireball.
+
+CombatController now inspects the existing direct `GuildbornePlayerCombatUI.CompanionSelection.Actor1`–`Actor6` cards once per existing 0.1-second HUD tick. It maps exact ActorId (`player` only for the current Character, otherwise the owned following hero's AdventurerId), never a cached PartySlot. Coverage requires ScreenGui.Enabled, visible positive-size GuiObject ancestors, an attached visible HealthTrack, and the complete track rectangle within the current viewport. A hidden/collapsed/reused/missing/offscreen card does not suppress that actor's overhead. The walk is bounded to six cards and eight ancestors; no workspace scan or new event connection is added. Arbitrary overlapping GUI occlusion is not measurable by this predicate and remains a native visual review limitation.
+
+Covered friendly actors omit redundant name/HP panels. A recent action or feedback retains a 132x34 transient two-line label, with end truncation and no duplicate HP fill. It uses the existing 0.8-second display freshness guards, not the combat admission TTL. Uncovered own player/following companions use the existing 156x50 full label; this also supplies the previously absent own-player fallback. Foreign actors and nonfollowing heroes stay hidden. Enemy/boss labels retain full HP, phase, action, warning countdown and feedback. Cue admission, sound dispatch, damage and SkillEffects are unchanged. No new localization keys are added; existing translated action text and feedback bindings remain.
+
+Focused behavioral tests exercise the actual extracted controller helpers, not a rewritten policy: six added groups cover visible-card suppression and transient feedback; disabled/hidden hierarchy fallback; exact identity, reused slots and collapsed cards; viewport/zero-size rejection; detached/missing HUD and malformed identity; ownership, nonfollowing membership, invalid HP and enemy fallback. The original six cue selector groups run in the same invocation. The standard standalone cue runner continues to run its original groups; the optional presentation cases require the extraction below. This local fixture models UI hierarchy/properties, not Roblox rendering or physical-device acceptance.
+
+Reproduce from the repository root (Python, then existing pinned Luau):
+
+```python
+from pathlib import Path
+out = Path("build/party-label-tests")
+out.mkdir(parents=True, exist_ok=True)
+source = Path("src/client/Controllers/CombatController.luau").read_text()
+policy = source.split("-- BEGIN PARTY_LABEL_POLICY\n", 1)[1].split("-- END PARTY_LABEL_POLICY", 1)[0]
+(out / "policy.luau").write_text(policy + "\nreturn {visibleHealthCards=visibleHealthCards,overheadMode=overheadMode}\n")
+(out / "run.luau").write_text('require("../../tests/combat_cue_events")(require("./policy"))\n')
+```
+
+Run `.tools/luau/luau.exe build/party-label-tests/run.luau`, then `powershell -NoProfile -File tools/validate.ps1`. Local results and independent review are recorded below when complete. Controller native acceptance must inspect desktop and collapsed layouts, HUD enabled/hidden/missing, party reorder/replacement, own-player fallback, enemy windup and long Thai/English feedback; transient text truncation is intentional but still needs visual review. No mobile FPS or all-party layout acceptance is claimed.
+
+Local result: all 12 focused groups PASS (six existing cue groups plus six added presentation groups); compilation PASS; full tools/validate.ps1 exited 0 with 973 tests, build, Roblox-aware analysis, compilation and repository checks PASS. Baseline raw log: `build/party-label-baseline.txt`, SHA256 `6339ddbe72f620b9b1965997ce493f63a60500f300866a04cce5e4aeb8db44ca`. This baseline ran on the final runtime/test source before this documentation/result commit. Independent agent enemy_export_review reviewed runtime, test extraction and the V10 documentation: PASS, no blocker; reran all 12 focused groups. Reviewed raw CombatController SHA256 `ee00b655a1c7c8faefec2c1ddae588bfabe439f6a4b97dbb54db2a60ff83b183`. No Studio execution or visual/device acceptance occurred in this worker.
