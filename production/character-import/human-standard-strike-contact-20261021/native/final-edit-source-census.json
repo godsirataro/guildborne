@@ -1,0 +1,9 @@
+{
+  "content": [
+    {
+      "type": "text",
+      "text": "{\"normalClientDisabled\":true,\"testedClientFixture\":{\"bytes\":2396,\"adler32\":1279938808},\"placeId\":0,\"modules\":{\"FoundationWeaponCheck\":{\"bytes\":9371,\"adler32\":1883729049},\"FoundationStrikeGeometryCheck\":{\"bytes\":7076,\"adler32\":3504284876},\"LocalLegacyCosmetics\":{\"bytes\":11811,\"adler32\":4153972324},\"LocalWeaponPresentation\":{\"bytes\":12012,\"adler32\":1511703611},\"ActionPose\":{\"bytes\":2413,\"adler32\":3260489815},\"ActionTimeline\":{\"bytes\":2664,\"adler32\":1395561757},\"FoundationStrikeContactProbe\":{\"bytes\":4578,\"adler32\":1384201696},\"FoundationWeaponActionProbe\":{\"bytes\":7899,\"adler32\":3322335102},\"GeneratedGeometry\":{\"bytes\":422786,\"adler32\":340025235},\"LocalContactGeometry\":{\"bytes\":8244,\"adler32\":1989850175},\"LocalActorPreview\":{\"bytes\":12643,\"adler32\":279279877},\"LocalGeometryPreview\":{\"bytes\":11861,\"adler32\":2671320232},\"LocalActionRetarget\":{\"bytes\":8563,\"adler32\":2297726653},\"LocalWarriorBasicPose\":{\"bytes\":2169,\"adler32\":1585051078}},\"restoredServerFixture\":{\"bytes\":8883,\"adler32\":2763815928},\"restoredClientFixture\":{\"bytes\":2090,\"adler32\":3959416083},\"gameId\":0,\"normalServerDisabled\":true,\"mode\":\"Edit\",\"testedServerFixture\":{\"bytes\":9617,\"adler32\":2223801799},\"labExists\":false}"
+    }
+  ],
+  "isError": false
+}

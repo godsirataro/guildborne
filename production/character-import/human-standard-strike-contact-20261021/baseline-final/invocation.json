@@ -1,0 +1,32 @@
+{
+  "schemaVersion": 1,
+  "kind": "LOCAL_COMMAND_RECEIPT",
+  "runId": "85234711c76345fca310ace981817038",
+  "tool": "C:\\WINDOWS\\System32\\WindowsPowerShell\\v1.0\\powershell.exe",
+  "argv": [
+    "C:\\WINDOWS\\System32\\WindowsPowerShell\\v1.0\\powershell.exe",
+    "-NoProfile",
+    "-ExecutionPolicy",
+    "Bypass",
+    "-File",
+    "tools/validate.ps1"
+  ],
+  "buildCommit": "c60f44b09493d621f0d71fc2886a8f8833984e76",
+  "sourceTree": "57ba4302fdb779f3282f8bfec44942003ada24bb",
+  "exitCode": 0,
+  "sourceUnchanged": true,
+  "seconds": 88.62635720000253,
+  "streams": [
+    {
+      "path": "build/agentic/checks/85234711c76345fca310ace981817038/stdout.txt",
+      "sha256": "3c05a0457d4182ae50598a48fe99e011c2cc774cba225c2a2422f6c16d1efc7a",
+      "bytes": 76266
+    },
+    {
+      "path": "build/agentic/checks/85234711c76345fca310ace981817038/stderr.txt",
+      "sha256": "fde9b645d45ef8d3b6ee2dba9153b9d54f014490b6ef4d10981e7ea5bdf3b5fe",
+      "bytes": 2011
+    }
+  ],
+  "error": null
+}

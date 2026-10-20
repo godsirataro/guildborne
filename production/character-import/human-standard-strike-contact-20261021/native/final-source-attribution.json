@@ -1,0 +1,162 @@
+[
+  {
+    "name": "LocalActorPreview",
+    "path": "src/shared/Presentation/ModularAppearance/LocalActorPreview.luau",
+    "sha256": "7b88ed5602f8e0786ecb901cde559191730daf78aa059396cb26444ff8fb2d73",
+    "native": {
+      "bytes": 12643,
+      "adler32": 279279877
+    },
+    "matches": true
+  },
+  {
+    "name": "LocalWeaponPresentation",
+    "path": "src/shared/Presentation/ModularAppearance/LocalWeaponPresentation.luau",
+    "sha256": "3aaa88cc9dc9bdec0d9f69fa9f750d15a4fde0fb699b384dbece4cdf98e75b77",
+    "native": {
+      "bytes": 12012,
+      "adler32": 1511703611
+    },
+    "matches": true
+  },
+  {
+    "name": "LocalActionRetarget",
+    "path": "src/shared/Presentation/ModularAppearance/LocalActionRetarget.luau",
+    "sha256": "f3ba0ba3b3812d64087715e45ef2514cc68699fce989f9cd182c5443fe93cdc0",
+    "native": {
+      "bytes": 8563,
+      "adler32": 2297726653
+    },
+    "matches": true
+  },
+  {
+    "name": "LocalWarriorBasicPose",
+    "path": "src/shared/Presentation/ModularAppearance/LocalWarriorBasicPose.luau",
+    "sha256": "155476b2bfbe2abdd6b74dea1ce74050fbf5c858e3431c241bc034b55df29dd0",
+    "native": {
+      "bytes": 2169,
+      "adler32": 1585051078
+    },
+    "matches": true
+  },
+  {
+    "name": "LocalContactGeometry",
+    "path": "src/shared/Presentation/ModularAppearance/LocalContactGeometry.luau",
+    "sha256": "a4426fdb0d183b2c27b84aa9ca74d9ddc78dcf33c31ccd8efaf15fc4a973c9bc",
+    "native": {
+      "bytes": 8244,
+      "adler32": 1989850175
+    },
+    "matches": true
+  },
+  {
+    "name": "LocalGeometryPreview",
+    "path": "src/shared/Presentation/ModularAppearance/LocalGeometryPreview.luau",
+    "sha256": "ef316c18b2a85edc455fe28a8e32dd6d5c0e906847929d5eddf971b1b095b760",
+    "native": {
+      "bytes": 11861,
+      "adler32": 2671320232
+    },
+    "matches": true
+  },
+  {
+    "name": "LocalLegacyCosmetics",
+    "path": "src/shared/Presentation/ModularAppearance/LocalLegacyCosmetics.luau",
+    "sha256": "c39914993f882a6dbc4e350ca882471bb97df57e31c12b09b2bcfd16e8844c7d",
+    "native": {
+      "bytes": 11811,
+      "adler32": 4153972324
+    },
+    "matches": true
+  },
+  {
+    "name": "GeneratedGeometry",
+    "path": "src/shared/Presentation/ModularAppearance/GeneratedGeometry.luau",
+    "sha256": "67885a4b7f7249bb04475a12a83c579a96c6f334631186286e71107d0b94f07f",
+    "native": {
+      "bytes": 422786,
+      "adler32": 340025235
+    },
+    "matches": true
+  },
+  {
+    "name": "FoundationWeaponCheck",
+    "path": "production/character-import/local-weapon-studio-check.luau",
+    "sha256": "42389d10b83641b17a9a53b3ba3cb1be27f326e9bfe346cc0ec80ce643b051e4",
+    "native": {
+      "bytes": 9371,
+      "adler32": 1883729049
+    },
+    "matches": true
+  },
+  {
+    "name": "FoundationWeaponActionProbe",
+    "path": "production/character-import/local-weapon-action-studio-probe.luau",
+    "sha256": "69e3073957888704742df3c08becd5793e0a8cc89e159342f7697412a2bb92d6",
+    "native": {
+      "bytes": 7899,
+      "adler32": 3322335102
+    },
+    "matches": true
+  },
+  {
+    "name": "FoundationStrikeGeometryCheck",
+    "path": "production/character-import/local-contact-geometry-check.luau",
+    "sha256": "7a40f581caf2a477cb408fbaaad16cd85dae2912f40556179593fc35b74616a1",
+    "native": {
+      "bytes": 7076,
+      "adler32": 3504284876
+    },
+    "matches": true
+  },
+  {
+    "name": "FoundationStrikeContactProbe",
+    "path": "production/character-import/local-strike-contact-studio-probe.luau",
+    "sha256": "d062f54a6b55c0137ceb9b600f45c1f296055b754f6915bf632722ecaa1c3c00",
+    "native": {
+      "bytes": 4578,
+      "adler32": 1384201696
+    },
+    "matches": true
+  },
+  {
+    "name": "ActionPose",
+    "path": "src/client/Controllers/ActionPose.luau",
+    "sha256": "65381f67b0d36ae4c91230743526bd299ed820749e81a60449ad4c30148e498a",
+    "native": {
+      "bytes": 2413,
+      "adler32": 3260489815
+    },
+    "matches": true
+  },
+  {
+    "name": "ActionTimeline",
+    "path": "src/shared/Presentation/ActionTimeline.luau",
+    "sha256": "f14291c081c8b1650310f459daa661e36c5d000ee65cb9b423d2894e3f451131",
+    "native": {
+      "bytes": 2664,
+      "adler32": 1395561757
+    },
+    "matches": true
+  },
+  {
+    "name": "testedServerFixture",
+    "path": "production/character-import/isolated-player-weapon-lab.server.luau",
+    "sha256": "dbde73edd4319f6728fb232aa9109bc93a8907c3fab99637dd29c2da1a3f0d64",
+    "native": {
+      "bytes": 9617,
+      "adler32": 2223801799
+    },
+    "matches": true
+  },
+  {
+    "name": "testedClientFixture",
+    "path": "production/character-import/isolated-player-weapon-lab.client.luau",
+    "sha256": "1e45db3b19c39c09998e2539e9e561b5222a9b608737479ad6ed1a134ac10321",
+    "native": {
+      "bytes": 2396,
+      "adler32": 1279938808
+    },
+    "matches": true
+  }
+]

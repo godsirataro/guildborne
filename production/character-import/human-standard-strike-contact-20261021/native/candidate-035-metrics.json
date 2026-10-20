@@ -1,0 +1,131 @@
+{
+  "samples": 270,
+  "active": 35,
+  "minBodyGap": 0,
+  "overlapSamples": [
+    {
+      "age": 0.18809103965759277,
+      "parts": [
+        "Arm"
+      ]
+    },
+    {
+      "age": 0.20599699020385742,
+      "parts": [
+        "Tunic"
+      ]
+    },
+    {
+      "age": 0.22049403190612793,
+      "parts": [
+        "Tunic"
+      ]
+    },
+    {
+      "age": 0.2378380298614502,
+      "parts": [
+        "Tunic"
+      ]
+    },
+    {
+      "age": 0.25562000274658203,
+      "parts": [
+        "Tunic"
+      ]
+    },
+    {
+      "age": 0.270967960357666,
+      "parts": [
+        "Tunic"
+      ]
+    },
+    {
+      "age": 0.28792905807495117,
+      "parts": [
+        "Tunic"
+      ]
+    },
+    {
+      "age": 0.30553197860717773,
+      "parts": [
+        "Tunic"
+      ]
+    },
+    {
+      "age": 0.3215219974517822,
+      "parts": [
+        "Tunic"
+      ]
+    },
+    {
+      "age": 0.337414026260376,
+      "parts": [
+        "Tunic",
+        "Belt"
+      ]
+    },
+    {
+      "age": 0.3557279109954834,
+      "parts": [
+        "Belt"
+      ]
+    }
+  ],
+  "contactRows": [
+    {
+      "age": 0.22049403190612793,
+      "closest": {
+        "index": 11,
+        "name": "Tunic",
+        "gap": 0
+      },
+      "intersections": [
+        11
+      ]
+    },
+    {
+      "age": 0.2378380298614502,
+      "closest": {
+        "index": 11,
+        "name": "Tunic",
+        "gap": 0
+      },
+      "intersections": [
+        11
+      ]
+    },
+    {
+      "age": 0.25562000274658203,
+      "closest": {
+        "index": 11,
+        "name": "Tunic",
+        "gap": 0
+      },
+      "intersections": [
+        11
+      ]
+    },
+    {
+      "age": 0.270967960357666,
+      "closest": {
+        "index": 11,
+        "name": "Tunic",
+        "gap": 0
+      },
+      "intersections": [
+        11
+      ]
+    }
+  ],
+  "finalAction": {
+    "lastStartedAt": 1792529136.351186,
+    "cancellations": 0,
+    "lastObservedAt": 1792529136.351186,
+    "destroyed": false,
+    "age": 0.6206998825073242,
+    "rejections": 0,
+    "starts": 1,
+    "status": "COMPLETED",
+    "active": false
+  }
+}

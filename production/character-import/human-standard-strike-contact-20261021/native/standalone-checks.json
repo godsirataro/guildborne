@@ -1,0 +1,7 @@
+{
+  "chunk_id": "fc75b6",
+  "wall_time_seconds": 0.2142599,
+  "exit_code": 0,
+  "original_token_count": 340,
+  "output": "PASS initial attach never replays existing action\r\nPASS fresh event starts once and follows existing timeline\r\nPASS expiration cannot replay same stamp\r\nPASS reordered event cancels without starting\r\nPASS unsupported newer event advances observed cursor\r\nPASS future rejection permits later legitimate fresh event\r\nPASS nonfinite missing and nonnumeric stamps rejected\r\nPASS stale and preattach stamps cannot start\r\nPASS metadata changes cancel without replay on restoration\r\nPASS death identity and departure problems cancel\r\nPASS invalid or reversed clock cancels\r\nPASS destroy is terminal and idempotent\r\nPASS basis conjugation transforms translation and rotation\r\nPASS injected pose overlay follows caller reset and cancels cleanly\r\nLocal action checks passed: 14\r\nPASS finite bounded poses over the entire existing timeline\r\nPASS exact rest at beginning and existing duration\r\nPASS fixed anticipation matches approved coefficients\r\nPASS contact and recovery onset preserve approved fixed pose\r\nPASS phase boundaries are continuous with smooth endpoint velocity\r\nPASS only intended joints override and fallback identity is preserved\r\nPASS inactive invalid and nonfinite ages preserve fallback\r\nPASS all timing derives from injected existing timeline fields\r\nPASS sampling has no accumulation or mutable shared output\r\nLocal Warrior pose checks passed: 9\r\n"
+}

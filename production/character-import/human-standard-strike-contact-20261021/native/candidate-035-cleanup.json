@@ -1,0 +1,9 @@
+{
+  "content": [
+    {
+      "type": "text",
+      "text": "{\"before\":{\"clothingFitAccepted\":false,\"smoothedSpeed\":8.555990018081316e-308,\"action\":{\"lastStartedAt\":1792529136.351186,\"cancellations\":0,\"lastObservedAt\":1792529136.351186,\"destroyed\":false,\"age\":0.6206998825073242,\"rejections\":0,\"starts\":1,\"status\":\"COMPLETED\",\"active\":false},\"phase\":5.276954190478525,\"destroyed\":false,\"frames\":11198,\"cosmetics\":{\"syncs\":11199,\"connections\":0,\"restores\":0,\"restoreFailures\":0,\"destroyed\":false,\"hidden\":16,\"kinds\":{\"avatarHairOrHat\":1,\"body\":15}},\"observedHorizontalDistance\":32.83385154604912,\"combatRetargetAccepted\":false,\"connections\":12,\"weapon\":{\"connections\":9,\"restores\":0,\"combatRetargetAccepted\":false,\"destroyed\":false,\"hiddenOriginalParts\":5,\"visualParts\":5,\"syncs\":22396,\"lastError\":\"\",\"gripFitAccepted\":false,\"gripFitAngle\":3.491592653589793,\"status\":\"READY\",\"orientation\":\"SOURCE_SOCKET_CENTER_FIXED_HUMAN_SWORD_FIT\",\"restoreFailures\":0,\"builds\":1},\"localTestOnly\":true,\"retainedMeshes\":25},\"report\":\"{\\\"commands\\\":[{\\\"at\\\":1792529136.351209,\\\"action\\\":\\\"Basic\\\",\\\"reason\\\":\\\"OK\\\",\\\"actorId\\\":\\\"player\\\",\\\"accepted\\\":true}],\\\"threeRoadWalk\\\":true,\\\"scope\\\":\\\"SYNTHETIC_PARTY_PRESENTATION_NOT_EARNED\\\",\\\"startZone\\\":\\\"City\\\",\\\"expectedCompanions\\\":0,\\\"rewardCallbacks\\\":0,\\\"playerOnlyCombatProbe\\\":true,\\\"roster\\\":[],\\\"actualCompanions\\\":0,\\\"status\\\":\\\"READY_SYNTHETIC\\\",\\\"walkingRouteCount\\\":3,\\\"notifications\\\":[],\\\"profileWrites\\\":0}\",\"references\":0,\"handles\":0,\"pending\":0,\"backings\":0,\"restored\":{\"restored\":true,\"actor\":\"Workspace.iswhlaedev\",\"weaponParts\":5,\"errors\":[],\"welds\":5,\"parts\":22}}"
+    }
+  ],
+  "isError": false
+}

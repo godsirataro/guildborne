@@ -1,0 +1,9 @@
+{
+  "content": [
+    {
+      "type": "text",
+      "text": "{\"report\":\"{\\\"commands\\\":[],\\\"threeRoadWalk\\\":true,\\\"scope\\\":\\\"SYNTHETIC_PARTY_PRESENTATION_NOT_EARNED\\\",\\\"startZone\\\":\\\"City\\\",\\\"expectedCompanions\\\":0,\\\"rewardCallbacks\\\":0,\\\"playerOnlyCombatProbe\\\":true,\\\"roster\\\":[],\\\"actualCompanions\\\":0,\\\"status\\\":\\\"READY_SYNTHETIC\\\",\\\"walkingRouteCount\\\":3,\\\"notifications\\\":[],\\\"profileWrites\\\":0}\",\"heroes\":0,\"weaponId\":\"training_sword\",\"placeId\":0,\"gameId\":0,\"parts\":5}"
+    }
+  ],
+  "isError": false
+}

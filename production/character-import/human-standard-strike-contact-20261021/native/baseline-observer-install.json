@@ -1,0 +1,38 @@
+[
+  {
+    "path": "src/shared/Presentation/ModularAppearance/LocalContactGeometry.luau",
+    "result": {
+      "content": [
+        {
+          "type": "text",
+          "text": "{\"bytes\":8244,\"path\":\"ReplicatedStorage.Shared.Presentation.ModularAppearance.LocalContactGeometry\",\"adler32\":1989850175}"
+        }
+      ],
+      "isError": false
+    }
+  },
+  {
+    "path": "production/character-import/local-contact-geometry-check.luau",
+    "result": {
+      "content": [
+        {
+          "type": "text",
+          "text": "{\"bytes\":7076,\"path\":\"ReplicatedStorage.Shared.Presentation.ModularAppearance.FoundationStrikeGeometryCheck\",\"adler32\":3504284876}"
+        }
+      ],
+      "isError": false
+    }
+  },
+  {
+    "path": "production/character-import/local-strike-contact-studio-probe.luau",
+    "result": {
+      "content": [
+        {
+          "type": "text",
+          "text": "{\"bytes\":4578,\"path\":\"ReplicatedStorage.Shared.Presentation.ModularAppearance.FoundationStrikeContactProbe\",\"adler32\":1384201696}"
+        }
+      ],
+      "isError": false
+    }
+  }
+]

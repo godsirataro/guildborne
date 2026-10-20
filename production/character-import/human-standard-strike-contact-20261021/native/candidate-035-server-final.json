@@ -1,0 +1,9 @@
+{
+  "content": [
+    {
+      "type": "text",
+      "text": "{\"report\":\"{\\\"commands\\\":[{\\\"at\\\":1792529136.351209,\\\"action\\\":\\\"Basic\\\",\\\"reason\\\":\\\"OK\\\",\\\"actorId\\\":\\\"player\\\",\\\"accepted\\\":true}],\\\"threeRoadWalk\\\":true,\\\"scope\\\":\\\"SYNTHETIC_PARTY_PRESENTATION_NOT_EARNED\\\",\\\"startZone\\\":\\\"City\\\",\\\"expectedCompanions\\\":0,\\\"rewardCallbacks\\\":0,\\\"playerOnlyCombatProbe\\\":true,\\\"roster\\\":[],\\\"actualCompanions\\\":0,\\\"status\\\":\\\"READY_SYNTHETIC\\\",\\\"walkingRouteCount\\\":3,\\\"notifications\\\":[],\\\"profileWrites\\\":0}\",\"heroes\":0,\"errors\":[],\"damage\":14,\"welds\":5,\"attackCount\":1,\"parts\":5}"
+    }
+  ],
+  "isError": false
+}

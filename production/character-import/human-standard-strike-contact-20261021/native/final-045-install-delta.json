@@ -1,0 +1,38 @@
+[
+  {
+    "path": "src/shared/Presentation/ModularAppearance/LocalWeaponPresentation.luau",
+    "result": {
+      "content": [
+        {
+          "type": "text",
+          "text": "{\"bytes\":12012,\"path\":\"ReplicatedStorage.Shared.Presentation.ModularAppearance.LocalWeaponPresentation\",\"adler32\":1511703611}"
+        }
+      ],
+      "isError": false
+    }
+  },
+  {
+    "path": "src/shared/Presentation/ModularAppearance/LocalWarriorBasicPose.luau",
+    "result": {
+      "content": [
+        {
+          "type": "text",
+          "text": "{\"bytes\":2169,\"path\":\"ReplicatedStorage.Shared.Presentation.ModularAppearance.LocalWarriorBasicPose\",\"adler32\":1585051078}"
+        }
+      ],
+      "isError": false
+    }
+  },
+  {
+    "path": "production/character-import/local-weapon-studio-check.luau",
+    "result": {
+      "content": [
+        {
+          "type": "text",
+          "text": "{\"bytes\":9371,\"path\":\"ReplicatedStorage.Shared.Presentation.ModularAppearance.FoundationWeaponCheck\",\"adler32\":1883729049}"
+        }
+      ],
+      "isError": false
+    }
+  }
+]

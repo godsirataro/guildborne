@@ -1,0 +1,86 @@
+[
+  {
+    "path": "src/shared/Presentation/ModularAppearance/LocalWeaponPresentation.luau",
+    "result": {
+      "content": [
+        {
+          "type": "text",
+          "text": "{\"bytes\":12012,\"path\":\"ReplicatedStorage.Shared.Presentation.ModularAppearance.LocalWeaponPresentation\",\"adler32\":582796345}"
+        }
+      ],
+      "isError": false
+    }
+  },
+  {
+    "path": "src/shared/Presentation/ModularAppearance/LocalActionRetarget.luau",
+    "result": {
+      "content": [
+        {
+          "type": "text",
+          "text": "{\"bytes\":8563,\"path\":\"ReplicatedStorage.Shared.Presentation.ModularAppearance.LocalActionRetarget\",\"adler32\":2297726653}"
+        }
+      ],
+      "isError": false
+    }
+  },
+  {
+    "path": "src/shared/Presentation/ModularAppearance/LocalWarriorBasicPose.luau",
+    "result": {
+      "content": [
+        {
+          "type": "text",
+          "text": "{\"bytes\":2169,\"path\":\"ReplicatedStorage.Shared.Presentation.ModularAppearance.LocalWarriorBasicPose\",\"adler32\":1337390532}"
+        }
+      ],
+      "isError": false
+    }
+  },
+  {
+    "path": "src/shared/Presentation/ModularAppearance/LocalContactGeometry.luau",
+    "result": {
+      "content": [
+        {
+          "type": "text",
+          "text": "{\"bytes\":8244,\"path\":\"ReplicatedStorage.Shared.Presentation.ModularAppearance.LocalContactGeometry\",\"adler32\":1989850175}"
+        }
+      ],
+      "isError": false
+    }
+  },
+  {
+    "path": "production/character-import/local-contact-geometry-check.luau",
+    "result": {
+      "content": [
+        {
+          "type": "text",
+          "text": "{\"bytes\":7076,\"path\":\"ReplicatedStorage.Shared.Presentation.ModularAppearance.FoundationStrikeGeometryCheck\",\"adler32\":3504284876}"
+        }
+      ],
+      "isError": false
+    }
+  },
+  {
+    "path": "production/character-import/local-strike-contact-studio-probe.luau",
+    "result": {
+      "content": [
+        {
+          "type": "text",
+          "text": "{\"bytes\":4578,\"path\":\"ReplicatedStorage.Shared.Presentation.ModularAppearance.FoundationStrikeContactProbe\",\"adler32\":1384201696}"
+        }
+      ],
+      "isError": false
+    }
+  },
+  {
+    "path": "production/character-import/local-weapon-studio-check.luau",
+    "result": {
+      "content": [
+        {
+          "type": "text",
+          "text": "{\"bytes\":9371,\"path\":\"ReplicatedStorage.Shared.Presentation.ModularAppearance.FoundationWeaponCheck\",\"adler32\":1310026903}"
+        }
+      ],
+      "isError": false
+    }
+  }
+]
