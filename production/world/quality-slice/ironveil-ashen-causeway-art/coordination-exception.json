@@ -1,0 +1,8 @@
+{
+  "status": "DISCLOSED_RECLAIMED_AND_REGENERATED",
+  "event": "Geometry worker reported that its combined lease-check/write command continued after the old lease expired. Only assigned new geometry files were written.",
+  "response": "All workers stopped; reviewer confirmed no writes or jobs, renderer had finished with no Blender process. Parent explicitly released old lease and claimed a fresh lease before continuing.",
+  "verification": "Parent checked the fresh lease successfully and reran build.py. Regeneration exited zero and reproduced the identical candidate hash. Tracked base files remain unchanged.",
+  "packetSHA256": "99ceb74508c2e693957a5601960f2a2897fc85b55eabf17d1dbf0eb5ca471c1e",
+  "followUp": "Lease checks must terminate the command on nonzero status before any subsequent mutation. This record does not retrospectively authorize the expired-lease write."
+}

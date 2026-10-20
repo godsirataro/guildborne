@@ -1,0 +1,39 @@
+{
+  "status": "BLENDER_RENDERED_NOT_NATIVE",
+  "variant": "before",
+  "inputHashes": {
+    "production/world/quality-slice/greenwood-ironveil/ground.json": "85b0866cf5ed468ef323f52c5e33f825fcb89155d1a91c2753d593271ccdeb70",
+    "assets/production/world-slice/greenwood-ironveil/scenery.mesh.json": "b885085377b3e56faf9f6a0fe072d0db4672f6b87c5241c6d61ff34c70a65539",
+    "assets/production/world-slice/ironveil-ore-yard/scenery.mesh.json": "4e65f4e254ae58bed6c5825d68948dc8689eb10332fb2763bdae37f86e371d20",
+    "assets/production/world-slice/coast-prop-ashen-cut/scenery.mesh.json": "3c84bc3a213b8b6b6253cc95957c7a6af0c27d13f789c81f311c0b062a2aefc9",
+    "production/world/quality-slice/ironveil-ashen/ground.json": "bd02bb8543cfddea8e33eb543c81c8f135b0549ce8c5a1585151fec88ff74577"
+  },
+  "cameraSHA256": "c402ace38bf4ed13badd01ad9538e3ad850400be7664f210dad0498e8df1ca01",
+  "contextSHA256": "abbb53d5459e4712103bfa46b9d99c89c240232f52e871b59b48b24387c40b51",
+  "rendererSHA256": "3dba822752e0b75459519175930b309fb00402f2d987ad8f8f8160960544f8a8",
+  "nativeParts": 91,
+  "existingThirdRoadParts": 6,
+  "sourceHashes": {
+    "src/server/Services/AdventureMapKit.luau": "978724afd99c499757601d56634ecf0b00ff21921fbec8b12a617c0fed1fe4c7",
+    "src/server/Services/RegionalWorld.luau": "13e0ce9ed41893a6a46d46955ec4dafd8159a720df5d1ff89f91cd69ec7b6c09",
+    "src/shared/Config/City.luau": "f78e3df184b45f430575425e1e294f00f94031014b2e5e682d0549890f47e985",
+    "production/world/quality-slice/ironveil-ashen/ground.json": "bd02bb8543cfddea8e33eb543c81c8f135b0549ce8c5a1585151fec88ff74577",
+    "production/world/quality-slice/greenwood-ironveil/ground.json": "85b0866cf5ed468ef323f52c5e33f825fcb89155d1a91c2753d593271ccdeb70",
+    "assets/production/world-slice/coast-prop-ashen-cut/scenery.mesh.json": "3c84bc3a213b8b6b6253cc95957c7a6af0c27d13f789c81f311c0b062a2aefc9",
+    "assets/production/world-slice/greenwood-ironveil/scenery.mesh.json": "b885085377b3e56faf9f6a0fe072d0db4672f6b87c5241c6d61ff34c70a65539",
+    "assets/production/world-slice/ironveil-ore-yard/scenery.mesh.json": "4e65f4e254ae58bed6c5825d68948dc8689eb10332fb2763bdae37f86e371d20"
+  },
+  "existingCoast": "coast-prop-ashen-cut",
+  "causewayArtIncluded": false,
+  "blendSHA256": "57fc637776103f402a00139656c0dfd4e76fb39c84996e19d52e12c406ea1640",
+  "omissions": [
+    "Actors, dynamic resource art, GUI, private campaign pockets and distant city omitted",
+    "Roblox materials, lighting, physics and gameplay not reproduced"
+  ],
+  "images": {
+    "01_ironveil_departure.png": "3b3a7edf47201f832749139bd0dae4e36295e96f344b8f253ed6a424799a317a",
+    "02_ashen_arrival.png": "fcf76a878a3df6a92568c783bfa63c0594e0981389fbbc6d98c35e47d6796d59",
+    "03_corridor_overview.png": "38aa4f8ef059c26203c0eaff4c1db9822741022a1c9a8c7829b2a3d37074e123",
+    "04_underside_within_cut.png": "a3566b7d7b70d95050a58ab7a78c119c3286e7957b5470da4d52cffcac0ccaa8"
+  }
+}

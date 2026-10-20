@@ -1,0 +1,13 @@
+{
+  "stage": "OFFLINE_REVIEW_COMPLETE_NATIVE_PENDING",
+  "packetSHA256": "99ceb74508c2e693957a5601960f2a2897fc85b55eabf17d1dbf0eb5ca471c1e",
+  "beforeRender": "Completed exit 0, four images plus blend/evidence retained; no restart needed",
+  "independentGeometry": "run02 exit 0 retained; run01 Windows decoding failure retained",
+  "remaining": [
+    "Controller integration and native review",
+    "Human art acceptance"
+  ],
+  "secondLeaseExpiry": "All writers confirmed stopped, no background Blender remained. Failed check stopped verifier writes. Parent explicitly released and reclaimed; no retroactive ownership claim.",
+  "afterRender": "Completed exit 0; four matched images and blend/evidence retained",
+  "independentVisual": "All eight actual PNGs reviewed; bounded improvement, native and human acceptance pending"
+}
