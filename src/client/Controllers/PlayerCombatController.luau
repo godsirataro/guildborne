@@ -13,6 +13,8 @@ local MenuGate=require(script.Parent.Parent.UI.Components.GameplayMenuGate)
 local MakePortrait=require(script.Parent.Parent.UI.ActorPortrait)
 local Layout=require(Replicated.Shared.Data.CombatHudLayout)
 local Chrome=require(script.Parent.Parent.UI.Components.CombatChrome)
+local MakeOrders=require(script.Parent.Parent.UI.Components.CompanionOrders)
+local PointerBlocked=require(script.Parent.Parent.UI.Components.CombatPointerGate)
 return function()
 	local connections: {RBXScriptConnection}={}
 	local function connect(signal: RBXScriptSignal,callback: any) table.insert(connections,signal:Connect(callback)) end
@@ -105,22 +107,10 @@ return function()
 	local skills={button("Skill1",60,"Ability1"),button("Skill2",120,"Ability2"),button("Skill3",180,"Ability3")}
 	local basicChrome=Chrome.skill(basic,0)
 	local skillChrome={Chrome.skill(skills[1],1),Chrome.skill(skills[2],2),Chrome.skill(skills[3],3)}
-	local orders=Instance.new("ScrollingFrame");orders.Name="CompanionOrders";orders.AnchorPoint=Vector2.new(.5,1)
-	orders.CanvasSize=UDim2.fromOffset(660,0);orders.ScrollBarThickness=4;orders.ScrollingDirection=Enum.ScrollingDirection.X;orders.BorderSizePixel=0
-	orders.Size=UDim2.new(.9,0,0,44);orders.BackgroundTransparency=1;orders.Parent=gui
-	local limit=Instance.new("UISizeConstraint");limit.MaxSize=Vector2.new(360,44);limit.Parent=orders
-	local orderButtons: {TextButton}={}
-	for index,action in ipairs({"Focus","Regroup","Retreat","Hold","TacticBalanced","TacticDefensive"}) do
-		local b=Instance.new("TextButton");b.Name=action;b.Size=UDim2.new(0,106,1,-4);b.Position=UDim2.fromOffset((index-1)*110,0)
-		b.Font=Enum.Font.GothamMedium;b.TextSize=12;b.TextWrapped=true;b.TextColor3=Art.UI.Text;b.Parent=orders;Instance.new("UICorner",b)
-		local padding=Instance.new("UIPadding");padding.PaddingLeft=UDim.new(0,26);padding.PaddingRight=UDim.new(0,3);padding.Parent=b
-		local icon=if index<=3 then require(script.Parent.Parent.UI.SymbolIcon)(b,"ui.combat."..(if action=="Focus" then "focus_target" else string.lower(action)),18,Art.UI.Accent) else nil
-		if not icon then padding.PaddingLeft=UDim.new(0,3)end
-		if icon then icon.Position=UDim2.new(0,-21,.5,-9) end
-		connect(b.Activated,function() send(action) end);table.insert(orderButtons,b)
-	end
+	local orderDock=MakeOrders(gui,send)
+	local orders=orderDock.frame
 	connect(Input.InputBegan,function(key,processed)
-		if processed then return end
+		if PointerBlocked(playerGui,key,processed) then return end
 		local action=Bindings.action(key.KeyCode.Name,key.UserInputType.Name)
 		if action=="Cycle" then
 			cycle()
@@ -199,15 +189,9 @@ return function()
 		local inputMode=Bindings.mode(Input:GetLastInputType().Name)
 		nextActor.Visible=layout.collapsed and #party>0
 		nextActor.Text=T("Next hero")..Bindings.hint("Cycle",inputMode)
-		orders.AnchorPoint=Vector2.zero
-		orders.Position=UDim2.fromOffset(layout.ordersRect.x,layout.ordersRect.y)
-		orders.Size=UDim2.fromOffset(layout.ordersRect.w,layout.ordersRect.h)
 		orders.Visible=visible and not inCity and selectedId~="player" and c~=nil
-		for _,b in ipairs(orderButtons) do
-			b.Text=T(b.Name)..Bindings.hint(b.Name,inputMode)
-			b.Active=c~=nil and (c:GetAttribute("CombatHealth") or 0)>0;b.Selectable=b.Active
-			b.BackgroundColor3=if c and (c:GetAttribute("CompanionOrder")==b.Name or "Tactic"..tostring(c:GetAttribute("TacticalPreset"))==b.Name) then Art.UI.Button else Art.UI.Card
-		end
+		orderDock.update(layout,T,inputMode,c~=nil and c:GetAttribute("ClassId")~=nil and (c:GetAttribute("CombatHealth") or 0)>0,
+			c and c:GetAttribute("CompanionOrder"),c and c:GetAttribute("TacticalPreset"))
 		for index,card in ipairs(cards) do
 			card.Size=UDim2.fromOffset(layout.cardWidth,layout.cardHeight)
 			card.Position=if layout.collapsed then UDim2.fromOffset(0,0) elseif grid then UDim2.fromOffset(((index-1)%layout.columns)*(layout.cardWidth+6),math.floor((index-1)/layout.columns)*layout.cardStride) else UDim2.fromOffset(0,(index-1)*layout.cardStride)

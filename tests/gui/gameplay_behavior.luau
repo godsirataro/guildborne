@@ -213,10 +213,10 @@ end)
 test("six tall party cards reserve separate name health and control regions",function()
  local layoutFor=require(game.ReplicatedStorage.Shared.Data.CombatHudLayout)
  local Chrome=require(UI.Components.CombatChrome)
- for _,size in ipairs({{390,844},{360,800},{320,760},{900,640},{1366,768}}) do
+ for _,size in ipairs({{390,844},{360,800},{320,784},{900,640},{1366,768}}) do
   local w,h=size[1],size[2];local layout=layoutFor(w,h)
   assert(layout.cardHeight==68 and layout.selectionHeight==5*layout.cardStride+layout.cardHeight)
-  assert(64+layout.selectionHeight<=h-layout.ordersBottom-44)
+  assert(64+layout.selectionHeight<=layout.ordersRect.y)
   if w<500 then assert(8+layout.cardWidth<w-8-layout.padWidth) end
   for i=1,6 do
    local card=Instance.new("TextButton");local chrome=Chrome.actor(card);chrome.layout(layout.cardWidth,layout.cardHeight)
@@ -232,17 +232,17 @@ test("six tall party cards reserve separate name health and control regions",fun
    card:Destroy()
   end
  end
- assert(layoutFor(390,759).cardHeight==44,"Short portraits retain compact roster")
+ assert(layoutFor(390,783).cardHeight==44,"Short portraits retain compact roster")
 end)
 test("portrait combat pad clears map while compact and centered layouts stay unchanged",function()
  local layoutFor=require(game.ReplicatedStorage.Shared.Data.CombatHudLayout)
- for _,size in ipairs({{390,844},{320,760},{360,640},{390,570},{499,760}}) do
+ for _,size in ipairs({{390,844},{320,784},{360,640},{390,622},{499,760}}) do
   local w,h=size[1],size[2];local layout=layoutFor(w,h)
   assert(layout.portrait and not layout.compact and layout.topAligned)
   assert(layout.padTop==116 and layout.padTop>=60+48+8,"Map must clear attack by 8px")
-  assert(layout.padTop+layout.padHeight<=h-layout.ordersBottom-44,"Pad must clear orders")
+  assert(layout.padTop+layout.padHeight<=layout.ordersRect.y,"Pad must clear orders")
  end
- for _,size in ipairs({{796,400},{844,390},{390,449},{390,569},{600,319}}) do
+ for _,size in ipairs({{796,400},{844,390},{390,449},{390,569},{390,621},{600,319}}) do
   local layout=layoutFor(size[1],size[2])
   assert(layout.compact and layout.topAligned and layout.padTop==64)
   assert(layout.padHeight==108,"Compact skill pad geometry changed")
@@ -253,8 +253,8 @@ end)
 test("shared HUD rectangles retain all essential controls without collisions at mode boundaries",function()
  local layoutFor=require(game.ReplicatedStorage.Shared.Data.CombatHudLayout)
  local function separate(a,b) return a.x+a.w<=b.x or b.x+b.w<=a.x or a.y+a.h<=b.y or b.y+b.h<=a.y end
- for _,w in ipairs({320,390,499,500,599,600,687,688,796,900,1366}) do
-  for _,h in ipairs({240,279,280,319,320,359,360,400,449,450,569,570,639,640,759,760,844}) do
+ for _,w in ipairs({320,390,499,500,599,600,687,688,796,844,899,900,945,1210,1366,1920}) do
+  for _,h in ipairs({240,279,280,319,320,359,360,379,380,400,449,450,499,500,569,570,621,622,639,640,759,760,783,784,844}) do
    local layout=layoutFor(w,h)
    local regions={layout.rosterRect,layout.padRect,layout.ordersRect,layout.mapRect}
    if layout.showHealth then table.insert(regions,layout.healthRect) end
@@ -263,14 +263,29 @@ test("shared HUD rectangles retain all essential controls without collisions at 
     for j=i+1,#regions do assert(separate(a,regions[j]),"HUD overlap "..i.."/"..j.." at "..w.."x"..h) end
    end
    assert(layout.mapRect.h>=44 and layout.mapRect.w>=44 and layout.buttonWidth>=44)
-   assert(layout.ordersRect.h==44 and layout.ordersRect.w>=106 and layout.ordersRect.w<=360)
+   local dock=layout.ordersRect
+   local columns=layout.orderColumns;local rows=math.ceil(6/columns)
+   local cellW=(dock.w-4*(columns-1))/columns;local cellH=(dock.h-4*(rows-1))/rows
+   assert(cellW>=44 and cellH>=44,"Every one of six orders must retain a touch target")
+   local cells={}
+   for index=0,5 do
+    local cell={x=dock.x+(index%columns)*(cellW+4),y=dock.y+math.floor(index/columns)*(cellH+4),w=cellW,h=cellH}
+    assert(cell.x>=dock.x and cell.y>=dock.y and cell.x+cell.w<=dock.x+dock.w+.001 and cell.y+cell.h<=dock.y+dock.h+.001,"Order is clipped")
+    for _,prior in ipairs(cells) do assert(separate(cell,prior),"Order targets overlap") end
+    table.insert(cells,cell)
+   end
+   if w<500 and h>=380 then assert(columns==3 and cellH>=48,"Phone dock must retain two readable rows") end
+   if w<500 and h>=500 then
+    assert(layout.healthRect.y+layout.healthRect.h<=h-112,"Phone native touch reserve lost")
+    assert(dock.y+dock.h+8<=layout.healthRect.y,"Orders must clear selected health")
+   end
    if layout.collapsed then assert(layout.selectionHeight==92,"Actor and cycle must both fit") end
    assert(layout.showHealth==(not layout.short or h>=280))
    assert(layout.showWorldLabels==not layout.compact,"Floating labels must not cover compact commands")
   end
  end
  local tiny=layoutFor(320,240)
- assert(tiny.mapRect.x==8 and tiny.mapRect.y==164 and tiny.ordersRect.y==180 and not tiny.showHealth)
+ assert(tiny.mapRect.w>=44 and tiny.mapRect.y==64 and tiny.ordersRect.y==180 and not tiny.showHealth)
  local landscape=layoutFor(796,400)
  assert(landscape.mapRect.x==358 and landscape.mapRect.y==64)
 end)

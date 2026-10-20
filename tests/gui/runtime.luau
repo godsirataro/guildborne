@@ -20,8 +20,17 @@ function Runtime.environment()
   }
  end
  local methods = {}
- function methods:SetAttribute(key, value) self.attributes[key] = value end
+ function methods:SetAttribute(key, value)
+  local changed=self.attributes[key]~=value;self.attributes[key]=value
+  local changedSignal=self.signals["attribute:"..key]
+  if changed and changedSignal then changedSignal:Fire() end
+ end
  function methods:GetAttribute(key) return self.attributes[key] end
+ function methods:GetAttributeChangedSignal(key)
+  local id="attribute:"..key
+  if not self.signals[id] then self.signals[id]=signal() end
+  return self.signals[id]
+ end
  function methods:GetPropertyChangedSignal(key)
   if not self.signals[key] then self.signals[key] = signal() end
   return self.signals[key]
