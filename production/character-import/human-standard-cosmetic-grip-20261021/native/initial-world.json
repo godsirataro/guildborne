@@ -1,0 +1,9 @@
+{
+  "content": [
+    {
+      "type": "text",
+      "text": "{\"report\":\"{\\\"commands\\\":[],\\\"threeRoadWalk\\\":true,\\\"scope\\\":\\\"SYNTHETIC_PARTY_PRESENTATION_NOT_EARNED\\\",\\\"rewardCallbacks\\\":0,\\\"roster\\\":[\\\"Knight\\\",\\\"Warrior\\\",\\\"Archer\\\",\\\"Mage\\\",\\\"Priest\\\"],\\\"startZone\\\":\\\"City\\\",\\\"status\\\":\\\"READY_SYNTHETIC\\\",\\\"walkingRouteCount\\\":3,\\\"notifications\\\":[],\\\"profileWrites\\\":0}\",\"playerPos\":[0,3.697265625,-720],\"enemies\":[{\"attrs\":{\"CombatHealth\":135,\"GuildborneEnemy\":true,\"CombatMaxHealth\":135,\"Taunted\":false,\"EnemyArticulated\":true,\"CombatState\":\"Idle\",\"ArtPhase\":\"1.5\",\"OwnerUserId\":11732987790,\"EnemyAnimationClass\":\"Knight\"},\"path\":\"Workspace.GuildborneWorld.PersonalGuild.Goblin1\",\"d\":799.1060791015625,\"p\":[-13,3,79]},{\"attrs\":{\"CombatHealth\":135,\"GuildborneEnemy\":true,\"CombatMaxHealth\":135,\"Taunted\":false,\"EnemyArticulated\":true,\"CombatState\":\"Idle\",\"ArtPhase\":\"1.5\",\"OwnerUserId\":11732987790,\"EnemyAnimationClass\":\"Knight\"},\"path\":\"Workspace.GuildborneWorld.PersonalGuild.Goblin2\",\"d\":805.1052856445313,\"p\":[13,3,85]},{\"attrs\":{\"CombatHealth\":135,\"GuildborneEnemy\":true,\"CombatMaxHealth\":135,\"Taunted\":false,\"EnemyArticulated\":true,\"CombatState\":\"Idle\",\"ArtPhase\":\"1.5\",\"OwnerUserId\":11732987790,\"EnemyAnimationClass\":\"Knight\"},\"path\":\"Workspace.GuildborneWorld.PersonalGuild.Goblin3\",\"d\":825.0003051757813,\"p\":[0,3,105]}]}"
+    }
+  ],
+  "isError": false
+}

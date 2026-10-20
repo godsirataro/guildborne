@@ -1,0 +1,9 @@
+{
+  "content": [
+    {
+      "type": "text",
+      "text": "{\"modules\":{\"GeneratedRig\":{\"bytes\":103926,\"adler32\":1694225755},\"LocalLegacyCosmetics\":{\"bytes\":11811,\"adler32\":4153972324},\"LocalMeshBackingPool\":{\"bytes\":2001,\"adler32\":2022285231},\"LocalGeometryRig\":{\"bytes\":8248,\"adler32\":1297227408},\"FoundationGripProbe\":{\"bytes\":6233,\"adler32\":44728376},\"LocalGarmentPartition\":{\"bytes\":3560,\"adler32\":3651324414},\"Skeleton\":{\"bytes\":2514,\"adler32\":1935544236},\"LocalActorPreview\":{\"bytes\":10838,\"adler32\":2769752642},\"LocalGeometryPreview\":{\"bytes\":11861,\"adler32\":2671320232},\"FoundationCosmeticProbe\":{\"bytes\":10933,\"adler32\":1929896637},\"GeneratedGeometry\":{\"bytes\":422786,\"adler32\":340025235}},\"mode\":\"Edit\",\"placeId\":0,\"gameId\":0}"
+    }
+  ],
+  "isError": false
+}

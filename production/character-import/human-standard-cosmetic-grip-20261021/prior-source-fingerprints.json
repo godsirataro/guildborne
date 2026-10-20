@@ -1,0 +1,50 @@
+[
+  {
+    "name": "LocalGeometryPreview",
+    "bytes": 11861,
+    "adler32": 2671320232,
+    "sha256": "ef316c18b2a85edc455fe28a8e32dd6d5c0e906847929d5eddf971b1b095b760"
+  },
+  {
+    "name": "LocalGeometryRig",
+    "bytes": 8248,
+    "adler32": 1297227408,
+    "sha256": "1ef746e6b5f31f4961edfcd79044e034d26a3acf69299e82cbeac6ae83ac45d4"
+  },
+  {
+    "name": "LocalGarmentPartition",
+    "bytes": 3560,
+    "adler32": 3651324414,
+    "sha256": "68a89cb2973cc2cf1b378d340000994ff87793dca8f94f465bfed754b1bdd39d"
+  },
+  {
+    "name": "LocalActorPreview",
+    "bytes": 11289,
+    "adler32": 3679037359,
+    "sha256": "71622a43168befbf0046686b3219e1c3a5ffffa75ba43d75297fbb2e6e06507c"
+  },
+  {
+    "name": "LocalMeshBackingPool",
+    "bytes": 2001,
+    "adler32": 2022285231,
+    "sha256": "814a978b8ac75da82b4ea3bd48df91ae23b32b535e597b4cacf88a423b33c53d"
+  },
+  {
+    "name": "GeneratedGeometry",
+    "bytes": 422786,
+    "adler32": 340025235,
+    "sha256": "67885a4b7f7249bb04475a12a83c579a96c6f334631186286e71107d0b94f07f"
+  },
+  {
+    "name": "GeneratedRig",
+    "bytes": 103926,
+    "adler32": 1694225755,
+    "sha256": "53adc61a5ae31c880610e9e8b7d83f928a47081c8b26054b34edc85e235ee342"
+  },
+  {
+    "name": "Skeleton",
+    "bytes": 2514,
+    "adler32": 1935544236,
+    "sha256": "10a0dccdc9f73ffd4565c256822d14961b28b487b7a7f9ef26c5ad4fb7205edd"
+  }
+]

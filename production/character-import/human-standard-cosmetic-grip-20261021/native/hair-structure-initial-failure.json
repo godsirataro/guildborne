@@ -1,0 +1,9 @@
+{
+  "content": [
+    {
+      "type": "text",
+      "text": "{\"all\":[{\"class\":\"MeshPart\",\"name\":\"Handle\",\"path\":\"Workspace.iswhlaedev.Pal Hair.Handle\"},{\"class\":\"Attachment\",\"name\":\"HairAttachment\",\"path\":\"Workspace.iswhlaedev.Pal Hair.Handle.HairAttachment\"},{\"class\":\"Vector3Value\",\"name\":\"OriginalPosition\",\"path\":\"Workspace.iswhlaedev.Pal Hair.Handle.HairAttachment.OriginalPosition\"},{\"class\":\"Vector3Value\",\"name\":\"OriginalSize\",\"path\":\"Workspace.iswhlaedev.Pal Hair.Handle.OriginalSize\"},{\"class\":\"RigidConstraint\",\"name\":\"AccessoryRigidConstraint\",\"path\":\"Workspace.iswhlaedev.Pal Hair.Handle.AccessoryRigidConstraint\"}],\"hair\":\"Workspace.iswhlaedev.Pal Hair\"}"
+    }
+  ],
+  "isError": false
+}

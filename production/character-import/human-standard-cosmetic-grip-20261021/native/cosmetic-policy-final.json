@@ -1,0 +1,9 @@
+{
+  "content": [
+    {
+      "type": "text",
+      "text": "{\"actualGameActorAcceptance\":false,\"diagnostics\":{\"syncs\":32,\"connections\":0,\"restores\":21,\"restoreFailures\":0,\"destroyed\":true,\"hidden\":0,\"kinds\":[]},\"syntheticLocalInstances\":true,\"artAcceptance\":false,\"passed\":48,\"cases\":[\"direct_body_hidden_without_transparency_change\",\"source_welded_details_hidden\",\"source_kit_hair_hidden\",\"typed_avatar_hair_hidden\",\"reversed_avatar_weld_hidden\",\"unbound_avatar_hair_restores\",\"exact_avatar_rigid_constraint_hidden\",\"reversed_avatar_rigid_constraint_hidden\",\"disabled_rigid_constraint_restores\",\"reenabled_rigid_constraint_rehides\",\"wrong_rigid_body_target_restores\",\"wrong_rigid_attachment_name_restores\",\"unknown_rigid_constraint_name_restores\",\"valid_rigid_binding_return_rehides\",\"face_decal_only\",\"unknown_texture_not_hidden\",\"protected_or_unknown_1\",\"protected_or_unknown_2\",\"protected_or_unknown_3\",\"protected_or_unknown_4\",\"protected_or_unknown_5\",\"protected_or_unknown_6\",\"protected_or_unknown_7\",\"protected_or_unknown_8\",\"protected_or_unknown_9\",\"protected_or_unknown_10\",\"accessory_type_change_restores\",\"accessory_type_return_rehides\",\"shield_name_restores\",\"reparent_into_equipment_restores\",\"reparent_back_rehides\",\"decal_reparent_restores\",\"decal_rename_restores\",\"weld_target_change_restores\",\"weld_target_return_rehides\",\"kit_signature_change_restores\",\"kit_signature_return_rehides\",\"source_bone_change_restores\",\"late_descendant_hidden\",\"removed_descendant_restored\",\"destroyed_descendant_released\",\"identified_placeholder_hidden\",\"unknown_placeholder_left_visible\",\"exact_body_and_face_restore\",\"exact_cosmetic_restore\",\"idempotent_cleanup_zero_state\",\"destroyed_state_refuses_sync\",\"actor_removal_restores_and_stops\"]}"
+    }
+  ],
+  "isError": false
+}

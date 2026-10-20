@@ -1,0 +1,9 @@
+{
+  "content": [
+    {
+      "type": "text",
+      "text": "{\"scope\":\"TEST_SETUP_RELOCATION_NOT_TRAVEL_PROOF\",\"report\":\"{\\\"commands\\\":[],\\\"threeRoadWalk\\\":true,\\\"scope\\\":\\\"SYNTHETIC_PARTY_PRESENTATION_NOT_EARNED\\\",\\\"rewardCallbacks\\\":0,\\\"roster\\\":[\\\"Knight\\\",\\\"Warrior\\\",\\\"Archer\\\",\\\"Mage\\\",\\\"Priest\\\"],\\\"startZone\\\":\\\"City\\\",\\\"status\\\":\\\"READY_SYNTHETIC\\\",\\\"walkingRouteCount\\\":3,\\\"notifications\\\":[],\\\"profileWrites\\\":0}\",\"after\":[-13,3.700000047683716,42,-0.9999999403953552,6.25888230132432e-15,-0,-6.25888230132432e-15,1,-1.5471565001368149e-16,0,1.5471565001368149e-16,-0.9999999403953552],\"before\":[11.330078125,3.697265625,-720,0.004601895343512297,-8.722115296677657e-8,-0.99998939037323,2.006892430017615e-10,1,-8.722115296677657e-8,0.99998939037323,2.006892430017615e-10,0.004601895343512297]}"
+    }
+  ],
+  "isError": false
+}

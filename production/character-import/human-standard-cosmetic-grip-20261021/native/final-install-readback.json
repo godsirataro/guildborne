@@ -1,0 +1,38 @@
+[
+  {
+    "content": [
+      {
+        "type": "text",
+        "text": "{\"bytes\":10838,\"name\":\"LocalActorPreview\",\"adler32\":2769752642}"
+      }
+    ],
+    "isError": false
+  },
+  {
+    "content": [
+      {
+        "type": "text",
+        "text": "{\"bytes\":11003,\"name\":\"LocalLegacyCosmetics\",\"adler32\":3989012955}"
+      }
+    ],
+    "isError": false
+  },
+  {
+    "content": [
+      {
+        "type": "text",
+        "text": "{\"bytes\":9160,\"name\":\"FoundationCosmeticProbe\",\"adler32\":1919905339}"
+      }
+    ],
+    "isError": false
+  },
+  {
+    "content": [
+      {
+        "type": "text",
+        "text": "{\"bytes\":6233,\"name\":\"FoundationGripProbe\",\"adler32\":44728376}"
+      }
+    ],
+    "isError": false
+  }
+]

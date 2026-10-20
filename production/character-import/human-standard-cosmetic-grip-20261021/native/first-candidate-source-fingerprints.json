@@ -1,0 +1,34 @@
+[
+  {
+    "name": "LocalActorPreview",
+    "path": "src/shared/Presentation/ModularAppearance/LocalActorPreview.luau",
+    "parent": "appearance",
+    "bytes": 10838,
+    "adler32": 2769752642,
+    "sha256": "d6b3d6c869d3b10e7ca2067f1f6f88439c3f4b59fbca55d66282a7b36f24c0b6"
+  },
+  {
+    "name": "LocalLegacyCosmetics",
+    "path": "src/shared/Presentation/ModularAppearance/LocalLegacyCosmetics.luau",
+    "parent": "appearance",
+    "bytes": 11003,
+    "adler32": 3989012955,
+    "sha256": "47eb32dc81689bb71a860c4b46d97ffa1717b34c07854d5a912d306003c00618"
+  },
+  {
+    "name": "FoundationCosmeticProbe",
+    "path": "production/character-import/local-cosmetic-studio-check.luau",
+    "parent": "root",
+    "bytes": 9160,
+    "adler32": 1919905339,
+    "sha256": "50c49b72a1ef7a7c4ec855550aece0efa92f902e5782a8f4d41ba70e033ef0ea"
+  },
+  {
+    "name": "FoundationGripProbe",
+    "path": "production/character-import/local-grip-studio-probe.luau",
+    "parent": "root",
+    "bytes": 6233,
+    "adler32": 44728376,
+    "sha256": "53b70e87023e382c9bea6cea2044de684472ada2cdeef4c184bc567bc6e7370e"
+  }
+]

@@ -1,0 +1,9 @@
+{
+  "content": [
+    {
+      "type": "text",
+      "text": "[{\"state\":{\"restored\":false,\"actor\":\"Workspace.iswhlaedev\",\"weaponParts\":5,\"errors\":[],\"welds\":5,\"parts\":22},\"diagnostics\":{\"clothingFitAccepted\":false,\"smoothedSpeed\":5.237899748978676e-120,\"phase\":2.2644160661430687,\"destroyed\":false,\"frames\":2282,\"cosmetics\":{\"syncs\":2283,\"connections\":0,\"restores\":0,\"restoreFailures\":0,\"destroyed\":false,\"hidden\":16,\"kinds\":{\"body\":15,\"avatarHairOrHat\":1}},\"observedHorizontalDistance\":11.32988652586937,\"combatRetargetAccepted\":false,\"connections\":11,\"localTestOnly\":true,\"retainedMeshes\":25}},{\"state\":{\"restored\":false,\"actor\":\"Workspace.GuildborneWorld.PersonalGuild.Heroes.Warrior\",\"weaponParts\":0,\"errors\":[],\"welds\":38,\"parts\":45},\"diagnostics\":{\"clothingFitAccepted\":false,\"smoothedSpeed\":5.964779628064047e-115,\"phase\":3.7996570821438775,\"destroyed\":false,\"frames\":2257,\"cosmetics\":{\"syncs\":2258,\"connections\":0,\"restores\":0,\"restoreFailures\":0,\"destroyed\":false,\"hidden\":44,\"kinds\":{\"heroTemplate\":25,\"heroDetail\":13,\"body\":6}},\"observedHorizontalDistance\":7.87260582158342,\"combatRetargetAccepted\":false,\"connections\":9,\"localTestOnly\":true,\"retainedMeshes\":25}}]"
+    }
+  ],
+  "isError": false
+}

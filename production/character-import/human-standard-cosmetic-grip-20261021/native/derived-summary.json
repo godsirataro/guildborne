@@ -1,0 +1,70 @@
+{
+  "candidate": "4e15b6ff6c2e9d65a7a5d07593a1af1043a53326",
+  "walk": {
+    "samples": 99,
+    "seconds": 5.962502956390381,
+    "socketCenterStuds": {
+      "min": 0.4463813900947571,
+      "max": 2.577461004257202
+    },
+    "socketGripBoxGapStuds": {
+      "min": 0.11138053238391876,
+      "max": 2.234283447265625
+    },
+    "hp": {
+      "min": 57,
+      "max": 57
+    },
+    "refs": {
+      "min": 50,
+      "max": 50
+    },
+    "backings": {
+      "min": 25,
+      "max": 25
+    }
+  },
+  "attack": {
+    "samples": 129,
+    "seconds": 3.4924659729003906,
+    "actionWindowSamples": 31,
+    "actionWindowAge": {
+      "min": 0.035675048828125,
+      "max": 0.870415210723877
+    },
+    "socketCenterStuds": {
+      "min": 1.0654860734939575,
+      "max": 2.9588587284088135
+    },
+    "socketGripBoxGapStuds": {
+      "min": 0.7718777656555176,
+      "max": 2.6155967712402344
+    },
+    "bladeBoxToTargetPointStuds": {
+      "min": 2.163457155227661,
+      "max": 4.801864147186279
+    },
+    "pointBoxToTargetPointStuds": {
+      "min": 2.1161415576934814,
+      "max": 4.578305244445801
+    },
+    "newShoulderC0MaxComponentDelta": 0,
+    "newElbowC0MaxComponentDelta": 0,
+    "originalHandWorldRotationMaxAngle": 2.2459777598318533,
+    "attackCounts": [
+      0,
+      1
+    ],
+    "damageDealt": [
+      0,
+      14
+    ]
+  },
+  "limits": [
+    "One explicit player Basic request; the fixture was not isolated from companion AI (Hold is not a combat suppression control).",
+    "One synthetic reward callback recorded; callback increments report only, no economic grant.",
+    "Target-point box distances are not target-surface collision or hit-timing proof.",
+    "No video recorded; screenshots are static; timestamped samples are motion telemetry.",
+    "Attack sampler is client observation, authoritative accepted command is server receipt."
+  ]
+}

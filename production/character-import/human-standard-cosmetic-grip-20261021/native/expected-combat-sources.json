@@ -1,0 +1,32 @@
+[
+  {
+    "path": "src/server/Services/HeroRig.luau",
+    "bytes": 7864,
+    "adler32": 2764945563,
+    "sha256": "6863dfc6279df9e5f05e10c33f03e43c9b12dc48ea462cb6ef6bbc9b16449cc0"
+  },
+  {
+    "path": "src/server/Services/CombatService.luau",
+    "bytes": 32693,
+    "adler32": 1174072588,
+    "sha256": "49fa6855a1bf88dacfef59afe379a592641b29ee4f4f319e0a3d85d66873558a"
+  },
+  {
+    "path": "src/server/Systems/CombatAbilities.luau",
+    "bytes": 3086,
+    "adler32": 1111175816,
+    "sha256": "96ce9005ab0adf38138bda61c26ad2c55db5320029be981753a3af5ae4d92f6c"
+  },
+  {
+    "path": "src/server/Systems/CombatSpace.luau",
+    "bytes": 1203,
+    "adler32": 2116917865,
+    "sha256": "206ded70f88b784cf2f3493c19ff7ef8dfb0990c682781b0b7f02858b0edc90c"
+  },
+  {
+    "path": "src/client/Controllers/PlayerCombatController.luau",
+    "bytes": 15708,
+    "adler32": 1332563894,
+    "sha256": "435911100a029daa475268455862685036a5f746a848a527f13a4630f7dc4260"
+  }
+]

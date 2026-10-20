@@ -1,0 +1,9 @@
+{
+  "content": [
+    {
+      "type": "text",
+      "text": "[{\"bytes\":7864,\"path\":\"ServerScriptService.Server.Services.HeroRig\",\"name\":\"HeroRig\",\"adler32\":2764945563},{\"bytes\":32693,\"path\":\"ServerScriptService.Server.Services.CombatService\",\"name\":\"CombatService\",\"adler32\":1174072588},{\"bytes\":3086,\"path\":\"ServerScriptService.Server.Systems.CombatAbilities\",\"name\":\"CombatAbilities\",\"adler32\":1111175816},{\"bytes\":1203,\"path\":\"ServerScriptService.Server.Systems.CombatSpace\",\"name\":\"CombatSpace\",\"adler32\":2116917865},{\"bytes\":15708,\"path\":\"StarterPlayer.StarterPlayerScripts.Client.Controllers.PlayerCombatController\",\"name\":\"PlayerCombatController\",\"adler32\":1332563894}]"
+    }
+  ],
+  "isError": false
+}
