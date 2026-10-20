@@ -5,9 +5,13 @@ local AssetService=game:GetService("AssetService")
 local RunService=game:GetService("RunService")
 local Catalog=require(script.Parent.Parent.Parent.Data.AppearanceCatalog)
 local Geometry=require(script.Parent.GeneratedGeometry)
+local RigData=require(script.Parent.GeneratedRig)
+local GarmentPartition=require(script.Parent.LocalGarmentPartition)
+local MakeBackingPool=require(script.Parent.LocalMeshBackingPool)
 local LocalRig=require(script.Parent.LocalGeometryRig)
 local Preview={}
-local resources: {[Model]: {EditableMesh}}={}
+local resources: {[Model]: {any}}={}
+local backing=MakeBackingPool(function() task.wait() end,function(mesh: EditableMesh) mesh:Destroy() end)
 local connections: {[Model]: RBXScriptConnection}={}
 local V=Vector3.new
 
@@ -19,13 +23,16 @@ Preview.IsAvailable=available
 local function release(model: Model)
 	local connection=connections[model];if connection then connection:Disconnect();connections[model]=nil end
 	local retained=resources[model];resources[model]=nil
-	if retained then for _,editable in ipairs(retained) do editable:Destroy() end end
+	if retained then for _,entry in ipairs(retained) do backing.Release(entry) end end
 end
 
 function Preview.ResourceCount(model: Model?): number
 	if model then return #(resources[model] or {}) end
 	local count=0;for _,retained in pairs(resources) do count+=#retained end;return count
 end
+-- ResourceCount is per-model references; these expose actual shared allocations separately.
+function Preview.BackingResourceCount(): number return backing.Count() end
+function Preview.PendingBackingCount(): number return backing.PendingCount() end
 function Preview.Destroy(model: Model)
 	release(model);model:Destroy()
 end
@@ -42,47 +49,56 @@ local function blank(name: string): Model
 	return model
 end
 
-local function append(model: Model,parent: Instance,assetId: string,options: any)
+local function append(model: Model,parent: Instance,assetId: string,options: any,partitioned: {any}?)
 	local asset=Geometry.Assets[assetId];assert(asset,"SOURCE_GEOMETRY_UNAVAILABLE:"..assetId)
-	for _,source in ipairs(asset.meshes) do
+	for _,source in ipairs(partitioned or asset.meshes) do
 		local low=V(math.huge,math.huge,math.huge);local high=V(-math.huge,-math.huge,-math.huge)
 		for _,coordinates in ipairs(source.vertices) do
 			local point=V(coordinates[1],coordinates[2],coordinates[3]);low=low:Min(point);high=high:Max(point)
 		end
 		local center=(low+high)/2
-		local editable=AssetService:CreateEditableMesh();assert(editable,"EDITABLE_MESH_MEMORY_UNAVAILABLE")
-		local retained=resources[model];table.insert(retained,editable);local dynamicIndex=#retained
-		local vertexIds: {number}={}
-		for _,coordinates in ipairs(source.vertices) do table.insert(vertexIds,editable:AddVertex(V(coordinates[1],coordinates[2],coordinates[3])-center)) end
-		local materialIds: {number}={}
 		local skin=source.skinTintable and options.skinPaletteId and Catalog.SkinPalettes[options.skinPaletteId]
 		local hair=assetId=="ACC_HAIR_HUMAN_01" and options.hairColorId and Catalog.HairColors[options.hairColorId]
-		for _,material in ipairs(source.materials) do
-			local rgb=material.colorRGB
-			local color=if skin or hair then Color3.new(1,1,1) else Color3.fromRGB(rgb[1],rgb[2],rgb[3])
-			table.insert(materialIds,editable:AddColor(color,material.alpha))
-		end
-		for index,triangle in ipairs(source.triangles) do
-			local faceId=editable:AddTriangle(vertexIds[triangle[1]],vertexIds[triangle[2]],vertexIds[triangle[3]])
-			local uvs=source.faceUVs[index]
-			local uvIds: {number}={}
-			for _,uv in ipairs(uvs) do table.insert(uvIds,editable:AddUV(Vector2.new(uv[1],uv[2]))) end
-			editable:SetFaceUVs(faceId,uvIds)
-			local normal=source.faceNormals[index];local normalId=editable:AddNormal(V(normal[1],normal[2],normal[3]))
-			editable:SetFaceNormals(faceId,{normalId,normalId,normalId})
-			local colorId=materialIds[source.faceMaterials[index]]
-			editable:SetFaceColors(faceId,{colorId,colorId,colorId})
-		end
-		-- A dynamic mesh reserves much more client memory than this small source geometry.
-		-- Keep both resources in cleanup until the compact copy has its linked MeshPart.
-		editable:RemoveUnused()
-		local compact=AssetService:CreateEditableMeshAsync(Content.fromObject(editable),{FixedSize=true})
-		assert(compact,"FIXED_EDITABLE_MESH_MEMORY_UNAVAILABLE");table.insert(retained,compact)
-		assert(compact.FixedSize,"FIXED_EDITABLE_MESH_REQUIRED")
-		assert(#compact:GetVertices()==#source.vertices and #compact:GetFaces()==#source.triangles,"COMPACT_SOURCE_GEOMETRY_COUNT_CHANGED")
+		local key=table.concat({assetId,asset.sourceSha256,source.runtimePart,if source.bindBone then "partition" else "whole",if skin or hair then "tint" else "source"},"|")
+		local compact=backing.Acquire(key,function(entry: any) table.insert(resources[model],entry) end,
+			function() return resources[model]~=nil end,function()
+				local editable: EditableMesh?=nil
+				local fixed: EditableMesh?=nil
+				local ok,problem=pcall(function()
+					editable=AssetService:CreateEditableMesh();assert(editable,"EDITABLE_MESH_MEMORY_UNAVAILABLE")
+					local dynamic=editable :: EditableMesh
+					local vertexIds: {number}={}
+					for _,coordinates in ipairs(source.vertices) do table.insert(vertexIds,dynamic:AddVertex(V(coordinates[1],coordinates[2],coordinates[3])-center)) end
+					local materialIds: {number}={}
+					for _,material in ipairs(source.materials) do
+						local rgb=material.colorRGB
+						local color=if skin or hair then Color3.new(1,1,1) else Color3.fromRGB(rgb[1],rgb[2],rgb[3])
+						table.insert(materialIds,dynamic:AddColor(color,material.alpha))
+					end
+					for index,triangle in ipairs(source.triangles) do
+						local faceId=dynamic:AddTriangle(vertexIds[triangle[1]],vertexIds[triangle[2]],vertexIds[triangle[3]])
+						local uvIds: {number}={}
+						for _,uv in ipairs(source.faceUVs[index]) do table.insert(uvIds,dynamic:AddUV(Vector2.new(uv[1],uv[2]))) end
+						dynamic:SetFaceUVs(faceId,uvIds)
+						local normal=source.faceNormals[index];local normalId=dynamic:AddNormal(V(normal[1],normal[2],normal[3]))
+						dynamic:SetFaceNormals(faceId,{normalId,normalId,normalId})
+						local colorId=materialIds[source.faceMaterials[index]]
+						dynamic:SetFaceColors(faceId,{colorId,colorId,colorId})
+					end
+					dynamic:RemoveUnused()
+					fixed=AssetService:CreateEditableMeshAsync(Content.fromObject(dynamic),{FixedSize=true})
+					assert(fixed,"FIXED_EDITABLE_MESH_MEMORY_UNAVAILABLE")
+					local result=fixed :: EditableMesh
+					assert(result.FixedSize,"FIXED_EDITABLE_MESH_REQUIRED")
+					assert(#result:GetVertices()==#source.vertices and #result:GetFaces()==#source.triangles,"COMPACT_SOURCE_GEOMETRY_COUNT_CHANGED")
+				end)
+				if editable then editable:Destroy() end
+				if not ok then if fixed then fixed:Destroy() end;error(problem) end
+				return fixed
+			end)
 		local meshPart=AssetService:CreateMeshPartAsync(Content.fromObject(compact))
+		if not resources[model] then meshPart:Destroy();error("LOCAL_PREVIEW_CANCELLED") end
 		meshPart.Parent=parent -- Enroll the part in model cleanup before any further property assignment.
-		editable:Destroy();retained[dynamicIndex]=compact;table.remove(retained,#retained)
 		meshPart.Name=source.runtimePart;meshPart.Size=high-low;meshPart.CFrame=CFrame.new(center)
 		meshPart.Color=if skin then Color3.fromHex(skin.colorHex) elseif hair then Color3.fromHex(hair) else Color3.new(1,1,1)
 		meshPart.Material=Enum.Material.SmoothPlastic;meshPart.Transparency=0
@@ -93,6 +109,12 @@ local function append(model: Model,parent: Instance,assetId: string,options: any
 		meshPart:SetAttribute("SourceVertexCount",#source.vertices);meshPart:SetAttribute("SourceTriangleCount",#source.triangles)
 		meshPart:SetAttribute("EditableMeshFixedSize",true)
 		meshPart:SetAttribute("RigStatus","STATIC_UNRIGGED_PREVIEW");meshPart:SetAttribute("CageStatus","UNAVAILABLE")
+		if source.bindBone then
+			meshPart:SetAttribute("SourceBindBone",source.bindBone)
+			meshPart:SetAttribute("SourceMeshName",source.name)
+			meshPart:SetAttribute("GarmentRigStatus","LOCAL_RIGID_BOUND_CANDIDATE")
+			meshPart:SetAttribute("AuthoredPreset",asset.authoredPreset)
+		end
 	end
 end
 
@@ -155,20 +177,31 @@ function Preview.BuildRig(selection: any): (Model?,string?)
 	if selection.outfitSlots~=nil and type(selection.outfitSlots)~="table" then return nil,"INVALID_PREVIEW_OUTFIT" end
 	local articulated={}
 	for key,value in pairs(selection) do articulated[key]=value end
-	articulated.outfitSlots={};local omitted={}
+	articulated.outfitSlots={}
+	local partitions: {[string]: {any}}={}
 	for slot,id in pairs(selection.outfitSlots or {}) do
 		local asset=Catalog.Assets[id]
 		if not asset or asset.slot~=slot or not Geometry.Assets[id] then return nil,"SOURCE_OUTFIT_UNAVAILABLE" end
 		if id=="CLO_HAT_WIZARD_01" then articulated.outfitSlots[slot]=id
-		elseif asset.technology=="LAYERED" then table.insert(omitted,id)
+		elseif asset.technology=="LAYERED" then
+			local ok,result=pcall(GarmentPartition.Build,id,selection.bodyPresetId,Geometry.Assets[id],RigData.Assets[id])
+			if not ok then return nil,"LOCAL_GARMENT_PARTITION_FAILED:"..tostring(result) end
+			partitions[id]=result
 		else return nil,"ARTICULATED_ACCESSORY_UNAVAILABLE" end
 	end
-	table.sort(omitted)
 	local model,err=Preview.Build(articulated);if not model then return nil,err end
 	local body=Catalog.Bodies[selection.bodyPresetId]
-	local ok,rigError=pcall(function() LocalRig.Assemble(model,body.assetId);return true end)
+	local ok,rigError=pcall(function()
+		local garments=model:FindFirstChild("SeparateClothesAndAccessories") :: Model
+		for _,slot in ipairs(Catalog.SlotOrder) do
+			local id=(selection.outfitSlots or {})[slot]
+			if id and partitions[id] then append(model,garments,id,selection,partitions[id]) end
+		end
+		LocalRig.Assemble(model,body.assetId)
+		return true
+	end)
 	if not ok then Preview.Destroy(model);return nil,"LOCAL_RIG_CREATION_FAILED:"..tostring(rigError) end
-	model:SetAttribute("OmittedUnskinnedGarments",table.concat(omitted,","))
+	model:SetAttribute("OmittedUnskinnedGarments","")
 	return model,nil
 end
 

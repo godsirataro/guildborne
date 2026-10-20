@@ -73,11 +73,27 @@ function Rig.Assemble(model: Model,bodyAssetId: string)
 		local target=parts[item.target];assert(target,"SOURCE_ATTACHMENT_TARGET_MISSING")
 		attachment(target,item.name,frame(item.bindFrame),item.target)
 	end
-	-- Only canonical rigid hair/headwear is attached. Flexible garments have no rigid fallback here.
+	-- Exact per-bone source shells remain an explicit local fallback, never layered-ready.
 	local rigidParts={}
+	local garmentCount=0
 	for _,item in ipairs(model:GetDescendants()) do
 		if not item:IsA("MeshPart") or item:GetAttribute("CoreBodyPart")==true then continue end
 		local id=item:GetAttribute("AssetId")
+		if id=="CLO_TUNIC_TRAVELER_01" or id=="CLO_TROUSERS_TRAVELER_01" then
+			assert(bodyAssetId=="CHR_BDY_HUMAN_STANDARD_V01" and item:GetAttribute("AuthoredPreset")=="HUMAN_STANDARD","ARTICULATED_GARMENT_PRESET_UNSUPPORTED")
+			assert(item:GetAttribute("GarmentRigStatus")=="LOCAL_RIGID_BOUND_CANDIDATE","GARMENT_PARTITION_REQUIRED")
+			assert(item:GetAttribute("SourceSha256")==RigData.Assets[id].sourceSha256
+				and item:GetAttribute("SourceSha256")==Geometry.Assets[id].sourceSha256,"GARMENT_SOURCE_HASH_MISMATCH")
+			local bone=item:GetAttribute("SourceBindBone")
+			assert(type(bone)=="string" and parts[bone] and bone~="HumanoidRootPart","GARMENT_BIND_BONE_MISSING")
+			local joint=Instance.new("Weld");joint.Name="SourceGarmentWeld";joint.Part0=parts[bone];joint.Part1=item
+			joint.C0=parts[bone].CFrame:ToObjectSpace(item.CFrame);joint.C1=CFrame.identity;joint.Parent=item
+			item.Anchored=false;item.Massless=true;item.CanCollide=false;item.CanTouch=false;item.CanQuery=false
+			item:SetAttribute("RigStatus","LOCAL_RIGID_BOUND_CANDIDATE")
+			item:SetAttribute("FitStatus","SOURCE_STANDARD_CANDIDATE_UNTESTED")
+			garmentCount+=1
+			continue
+		end
 		assert(id=="ACC_HAIR_HUMAN_01" or id=="CLO_HAT_WIZARD_01","UNSKINNED_FLEXIBLE_GARMENT_IN_ARTICULATED_RIG")
 		table.insert(rigidParts,item)
 	end
@@ -88,7 +104,8 @@ function Rig.Assemble(model: Model,bodyAssetId: string)
 	model:SetAttribute("RigStatus","SOURCE_MOTOR6D_ARTICULATED_PREVIEW_UNTESTED")
 	model:SetAttribute("JointCount",count);model:SetAttribute("SourceBoneCount",#source.bones);model:SetAttribute("SourceAttachmentCount",#source.attachments)
 	model:SetAttribute("RigSourceSha256",source.sourceSha256);model:SetAttribute("AnimationStatus","PLAYBACK_UNTESTED_NO_PUBLISHED_ANIMATION_IDS")
-	model:SetAttribute("GarmentRigStatus","UNAVAILABLE_UNSKINNED_NO_CAGES")
+	model:SetAttribute("GarmentRigStatus",if garmentCount>0 then "LOCAL_RIGID_BOUND_CANDIDATE" else "NO_GARMENTS")
+	model:SetAttribute("GarmentSegmentCount",garmentCount)
 end
 
 return Rig
