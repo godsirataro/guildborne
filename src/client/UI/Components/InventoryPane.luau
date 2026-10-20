@@ -18,12 +18,12 @@ local function label(parent: Instance, name: string, text: string, x: number, y:
 	result.Text = text; result.TextWrapped = true; result.TextXAlignment = Enum.TextXAlignment.Left
 	result.TextYAlignment = Enum.TextYAlignment.Center; result.TextColor3 = if heading then C.GoldLight else C.Text
 	-- The body face supports Thai; retain hierarchy through size and gold, not a Latin-only face.
-	result.Font = Theme.Fonts.Body; result.TextSize = if heading then 21 else 14
+	result.Font = Theme.Fonts.Body; result.TextSize = if heading then 21 else 16
 	result.Parent = parent; return result
 end
 local function action(parent: Instance, name: string, text: string, x: number, y: number, w: number, callback: any, selected: boolean?, disabled: boolean?): TextButton
-	local handle = Button.create(parent, {name = name, text = text, size = UDim2.fromOffset(w, 48), onActivated = callback})
-	handle.button.Position = UDim2.fromOffset(x, y); handle.button.TextSize = 13
+	local handle = Button.create(parent, {name = name, text = text, size = UDim2.fromOffset(w, 48), quiet = true, onActivated = callback})
+	handle.button.Position = UDim2.fromOffset(x, y); handle.button.TextSize = 16
 	handle.setSelected(selected == true); handle.setDisabled(disabled == true)
 	return handle.button
 end
@@ -144,39 +144,56 @@ return function(parent: Instance, model: any): Frame
 				actorX += if phone then 152 else 172
 			end
 			actors.CanvasSize = UDim2.fromOffset(actorX, 48)
-			y = 94
+			y = if phone then 88 else 94
 		end
 		local selected = model.selected or model.details
 		if phone then
 			for i, view in ipairs({"Items", "Loadout", "Details"}) do
 				action(root, "View_" .. view, T(view), (i - 1) * (w / 3), y, w / 3 - 4, function() if model.onView then model.onView(view) end end, (model.view or "Items") == view, view == "Details" and not selected)
 			end
-			y += 56
+			y += 52
 		end
 		local function loadout(x: number, top: number, width: number): number
-			local shell = Panel.create(root, {name = "SelectedActorLoadout", size = UDim2.fromOffset(width, 620)})
+			local shell = Panel.create(root, {name = "SelectedActorLoadout", size = UDim2.fromOffset(width, 620), quiet = true})
 			shell.Position = UDim2.fromOffset(x, top)
 			local body = shell:FindFirstChild("Content") :: Frame
 			local bw = width - 24
-			label(body, "ActorName", model.actorName or "", 0, 0, bw, 44, true)
+			body.Size = UDim2.new(1, -24, 0, 0); body.AutomaticSize = Enum.AutomaticSize.Y
+			local layout = Instance.new("UIListLayout"); layout.Padding = UDim.new(0, 4)
+			layout.SortOrder = Enum.SortOrder.LayoutOrder; layout.Parent = body
+			local order = 0
+			local function add(object: GuiObject)
+				order += 1; object.LayoutOrder = order
+			end
+			local name = label(body, "ActorName", model.actorName or "", 0, 0, bw, 44, true)
+			name.AutomaticSize = Enum.AutomaticSize.Y; add(name)
 			local stageHeight = if desktop then 200 else if phone then 160 else 180
 			local stage = frame(body, "ActorStage", 0, 44, bw, stageHeight)
+			add(stage)
 			previewHandle = Preview(stage, {actorId = model.actorId, data = model.data, T = T})
 			alive()
 			local row = 44 + stageHeight + 4
-			label(body, "ActorStats", model.stats or "", 0, row, bw, 48); row += 52
+			local stats = label(body, "ActorStats", model.stats or "", 0, row, bw, 48)
+			stats.AutomaticSize = Enum.AutomaticSize.Y; add(stats); row += 52
 			for _, slot in ipairs(model.slots or {}) do
 				local tile = Slot(body, slot, T); alive(); tile.Position = UDim2.fromOffset(0, row)
+				add(tile)
 				row += tile.Size.Y.Offset + 8
 			end
 			for _, hint in ipairs({model.weaponHint or "", model.expeditionHint or ""}) do
-				if hint ~= "" then label(body, "LoadoutHint", hint, 0, row, bw, 64); row += 68 end
+				if hint ~= "" then
+					local copy = label(body, "LoadoutHint", hint, 0, row, bw, 64)
+					copy.AutomaticSize = Enum.AutomaticSize.Y; add(copy); row += 68
+				end
 			end
+			table.insert(layoutConnections, layout:GetPropertyChangedSignal("AbsoluteContentSize"):Connect(function()
+				shell.Size = UDim2.fromOffset(width, math.max(80, layout.AbsoluteContentSize.Y) + 24); fitRoot()
+			end))
 			shell.Size = UDim2.fromOffset(width, row + 24)
 			return row + 24
 		end
 		local function details(x: number, top: number, width: number): number
-			local shell = Panel.create(root, {name = "SelectedItemDetails", size = UDim2.fromOffset(width, 100)})
+			local shell = Panel.create(root, {name = "SelectedItemDetails", size = UDim2.fromOffset(width, 100), quiet = true})
 			shell.Position = UDim2.fromOffset(x, top)
 			local body = shell:FindFirstChild("Content") :: Frame
 			local bw, row = width - 24, 0
@@ -295,21 +312,24 @@ return function(parent: Instance, model: any): Frame
 				end
 			end
 			filters.Size = UDim2.fromOffset(width, categoryHeight)
-			local controls = strip(root, "InventoryTools", x, top + categoryHeight + 8, width)
+			local controls = strip(root, "InventoryTools", x, top + categoryHeight + (if phone then 2 else 8), width)
 			local cx = 0
 			for _, tool in ipairs({{name = "Shop", text = model.shopLabel, callback = model.onShop}, {name = "Sort", text = model.sortLabel, callback = model.onSort}, {name = "Compatible", text = model.compatibleLabel, callback = model.onCompatible}}) do
 				if tool.callback then action(controls, tool.name, tool.text or T(tool.name), cx, 0, 140, tool.callback, false, model.busy); cx += 146 end
 			end
 			controls.CanvasSize = UDim2.fromOffset(cx, 48)
-			local gridOffset = categoryHeight + 66
+			-- Recover vertical space between controls rather than shrinking artwork
+			-- or tap targets to make room for readable two-line phone captions.
+			local gridOffset = categoryHeight + (if phone then 56 else 66)
 			local gridTop = top + gridOffset
 			local items = model.items or {}
 			local columns = math.max(2, math.floor(width / 116))
 			local cellWidth = math.floor((width - (columns - 1) * 8) / columns)
+			local gridHeight = if phone then 294 else 304
 			local grid = Instance.new("ScrollingFrame"); grid.Name = "ItemGrid"; grid.BorderSizePixel = 0; grid.BackgroundColor3 = C.Background
-			grid.Position = UDim2.fromOffset(x, gridTop); grid.Size = UDim2.fromOffset(width, 294)
+			grid.Position = UDim2.fromOffset(x, gridTop); grid.Size = UDim2.fromOffset(width, gridHeight)
 			grid.ScrollBarThickness = 4; grid.ScrollBarImageColor3 = C.Gold; grid.ScrollingDirection = Enum.ScrollingDirection.Y; grid.Parent = root
-			local cellHeight = if phone then 116 else 138
+			local cellHeight = if phone then 136 else 144
 			local layout = Instance.new("UIGridLayout"); layout.CellSize = UDim2.fromOffset(cellWidth, cellHeight); layout.CellPadding = UDim2.fromOffset(8, 8); layout.SortOrder = Enum.SortOrder.LayoutOrder; layout.Parent = grid
 			local start = (page - 1) * 24 + 1
 			local count = 0
@@ -319,19 +339,24 @@ return function(parent: Instance, model: any): Frame
 				tile.LayoutOrder = index; tile:SetAttribute("ItemId", tostring(item.id))
 				if item.definitionId then local art = AssetImage.item(tile, item.definitionId); alive(); if art then art.Position = UDim2.fromOffset(math.max(0, (cellWidth - 80) / 2), 4) end end
 				local itemLabel = label(tile, "ItemLabel", item.name or "", 6, 84, cellWidth - 12, cellHeight - 88)
-				itemLabel.TextSize = if phone then 13 else 14; itemLabel.TextTruncate = Enum.TextTruncate.AtEnd
+				itemLabel.TextSize = 16; itemLabel.TextTruncate = Enum.TextTruncate.AtEnd
+				itemLabel.TextYAlignment = Enum.TextYAlignment.Top
 				itemLabel.TextColor3 = if model.busy then C.Muted else C.Text
 				if item.quantity then
-					local quantity = label(tile, "Quantity", tostring(item.quantity), cellWidth - 48, 5, 42, 22)
+					local countText = tostring(item.quantity)
+					-- Keep canonical seven-digit stacks readable without abbreviation.
+					local countWidth = math.min(cellWidth - 12, math.max(42, #countText * 10 + 8))
+					local quantity = label(tile, "Quantity", countText, cellWidth - countWidth - 6, 5, countWidth, 22)
 					quantity.BackgroundColor3 = C.Background; quantity.BackgroundTransparency = .08
-					quantity.TextXAlignment = Enum.TextXAlignment.Center; quantity.TextSize = 13; quantity.ZIndex = 3
+					quantity.TextWrapped = false; quantity.TextXAlignment = Enum.TextXAlignment.Center
+					quantity.TextSize = 16; quantity.ZIndex = 3
 					local edge = Instance.new("UIStroke"); edge.ApplyStrokeMode = Enum.ApplyStrokeMode.Border
 					edge.Color = C.GoldShadow; edge.Transparency = .3; edge.Parent = quantity
 				end
 			end
 			grid.CanvasSize = UDim2.fromOffset(0, math.ceil(count / columns) * (cellHeight + 8))
 			if #items == 0 then label(root, "EmptyInventory", model.emptyText or T("No items match this filter."), x + 12, gridTop + 20, width - 24, 70) end
-			local bottom = gridOffset + 294
+			local bottom = gridOffset + gridHeight
 			if #items > 24 then
 				local pages = math.ceil(#items / 24)
 				action(root, "PreviousItems", "\u{2039}", x, top + bottom + 6, 52, function() page -= 1; draw() end, false, page == 1)

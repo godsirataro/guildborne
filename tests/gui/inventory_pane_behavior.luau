@@ -8,7 +8,7 @@ local function find(root,name)
  if root.Name==name then return root end
  for _,c in ipairs(root:GetChildren())do local hit=find(c,name);if hit then return hit end end
 end
-local function make(width,view,busy,language,actorCount)
+local function make(width,view,busy,language,actorCount,override)
  local parent=Instance.new("Frame")
  local calls={}
  local T=function(key)return Locale.translate(language or "en",key)end
@@ -23,6 +23,7 @@ local function make(width,view,busy,language,actorCount)
  model.filters={}
  for _,kind in ipairs({"All","Weapon","Armor","Accessory","Material"})do table.insert(model.filters,{id=kind,label=T(kind),selected=kind=="All",onSelect=function()calls.filter=kind end})end
  for i=1,30 do table.insert(model.items,{id=tostring(i),name="Sword "..i,definitionId="training_sword",quantity=if i==2 then 123 else nil,selected=i==1,onSelect=function()calls.item=i end})end
+ if override then override(model,calls)end
  local root=Pane(parent,model);root.AbsoluteSize={X=width,Y=700};root:GetPropertyChangedSignal("AbsoluteSize"):Fire()
  return root,calls
 end
@@ -200,4 +201,109 @@ test("busy phone picker and category controls cannot dispatch",function()
  find(medium,"Filter_Material").Activated:Fire();find(medium,"Actor_hero6").Activated:Fire()
  assert(not mediumCalls.filter and not mediumCalls.actor);medium:Destroy()
 end)
+test("panel default remains ornate and quiet opt-in removes nested border decoration",function()
+ local Panel=require(UI.Components.GuildbornePanel)
+ local parent=Instance.new("Frame")
+ local ornate=Panel.create(parent)
+ assert(find(ornate,"BeveledCorner") and find(ornate,"InnerBevel") and find(ornate,"InsetBorder"))
+ assert(ornate:FindFirstChild("GoldBorder").Thickness==4)
+ local quiet=Panel.create(parent,{quiet=true})
+ assert(quiet:FindFirstChild("GoldBorder").Thickness==1)
+ assert(not find(quiet,"BeveledCorner") and not find(quiet,"InnerBevel") and not find(quiet,"InsetBorder"))
+ assert(quiet:FindFirstChild("Content") and quiet:FindFirstChild("Content").Position.X.Offset==12)
+ parent:Destroy()
+end)
+for _,width in ipairs({220,280,320,599,600,744,899,900,968})do
+ for _,language in ipairs({"en","th"})do
+  test("quiet readable inventory boundary "..width.." "..language,function()
+   local root,calls=make(width,"Items",false,language,6)
+   local grid=assert(find(root,"ItemGrid"));local layout=grid:FindFirstChildOfClass("UIGridLayout")
+   local expected=if width<600 then 136 else 144
+   assert(layout.CellSize.Y.Offset==expected)
+   if width>=600 then assert(grid.Size.Y.Offset>=2*expected+layout.CellPadding.Y.Offset,"desktop second row clipped by grid viewport")end
+   if width<600 then assert(grid.Position.Y.Offset+expected<=380,"six-actor first row below first viewport")end
+   local first=assert(find(root,"Item_1"));local other=assert(find(root,"Item_2"))
+   assert(find(first,"SelectedCorners").Visible and not find(other,"SelectedCorners").Visible)
+   local copy=find(first,"ItemLabel");assert(copy.TextSize==16 and copy.TextWrapped)
+   assert(copy.Size.Y.Offset==(if width<600 then 48 else 56))
+   assert(copy.Position.Y.Offset+copy.Size.Y.Offset<=expected)
+   assert(copy.Position.X.Offset>=0 and copy.Position.X.Offset+copy.Size.X.Offset<=layout.CellSize.X.Offset)
+   assert(find(first,"ItemArtwork").Size.X.Offset==80)
+   local shop=assert(find(root,"Shop"));assert(shop.TextSize==16 and not find(shop,"ButtonBevel").Visible)
+   assert(find(root,"Capacity").TextSize==16)
+   find(root,"NextItems").Activated:Fire();assert(find(root,"Item_30") and not find(root,"Item_1"))
+   first.Activated:Fire();assert(not calls.item,"stale page tile dispatched")
+   root:Destroy()
+   root,calls=make(width,"Details",false,language,6)
+   local details=assert(find(root,"SelectedItemDetails"))
+   assert(details:FindFirstChild("GoldBorder").Thickness==1 and not find(details,"InnerBevel"))
+   local actor=find(root,"SelectedActorLoadout")
+   if actor then assert(actor:FindFirstChild("GoldBorder").Thickness==1 and not find(actor,"InnerBevel"))end
+   assert(find(root,"Detail_description").TextSize==16)
+   local action=assert(find(root,"Assign_one"));assert(action.TextSize==16 and not find(action,"ButtonBevel").Visible)
+   action.Activated:Fire();assert(calls.assign);root:Destroy()
+  end)
+ end
+end
+for _,language in ipairs({"en","th"})do
+ test("long loadout copy flows before slots and hints "..language,function()
+  local long=string.rep(if language=="th" then "รายละเอียดตัวละครและอุปกรณ์ " else "Long actor and equipment detail ",12)
+  local root=make(280,"Loadout",false,language,6,function(model)
+   model.actorName=long;model.stats=long;model.weaponHint=long;model.expeditionHint=long
+  end)
+  local shell=assert(find(root,"SelectedActorLoadout"));local body=shell:FindFirstChild("Content")
+  local flow=assert(body:FindFirstChildOfClass("UIListLayout"))
+  assert(flow.SortOrder==Enum.SortOrder.LayoutOrder and flow.Padding.Offset==4)
+  assert(body.AutomaticSize==Enum.AutomaticSize.Y)
+  local name=find(body,"ActorName");local stage=find(body,"ActorStage");local stats=find(body,"ActorStats")
+  local slot=find(body,"EquipmentSlot_weapon")
+  assert(name.Text==long and stats.Text==long and name.AutomaticSize==Enum.AutomaticSize.Y and stats.AutomaticSize==Enum.AutomaticSize.Y)
+  assert(name.LayoutOrder<stage.LayoutOrder and stage.LayoutOrder<stats.LayoutOrder and stats.LayoutOrder<slot.LayoutOrder)
+  local hints=0;local previous=slot.LayoutOrder
+  for _,child in ipairs(body:GetChildren())do
+   if child.Name=="LoadoutHint" then
+    hints+=1;assert(child.Text==long and child.AutomaticSize==Enum.AutomaticSize.Y and child.TextSize==16)
+    assert(child.LayoutOrder>previous);previous=child.LayoutOrder
+   end
+  end
+  assert(hints==2)
+  -- Inject measured height to check the listener contract, not text measurement.
+  flow.AbsoluteContentSize={X=248,Y=900};flow:GetPropertyChangedSignal("AbsoluteContentSize"):Fire()
+  assert(shell.Size.Y.Offset==924)
+  root:Destroy();flow.AbsoluteContentSize={X=248,Y=1200};flow:GetPropertyChangedSignal("AbsoluteContentSize"):Fire()
+  assert(shell.Size.Y.Offset==924,"stale loadout layout listener")
+ end)
+end
+test("quiet empty inventory and disabled detail action preserve semantics",function()
+ local root,calls=make(220,"Items",false,"th",6,function(model)model.items={};model.selected=nil;model.emptyText="EMPTY FIXTURE"end)
+ assert(find(root,"EmptyInventory").Text=="EMPTY FIXTURE" and not find(root,"Item_1"))
+ assert(not find(root,"NextItems"));root:Destroy()
+ root,calls=make(320,"Details",false,"th",6,function(model)model.selected.actions[1].enabled=false end)
+ local action=assert(find(root,"Assign_one"));assert(not action.Active and not action.Selectable)
+ action.Activated:Fire();assert(not calls.assign);root:Destroy();action.Activated:Fire();assert(not calls.assign)
+end)
+-- Content.Limits.Stack inspected at src/server/Config/Content.luau: 1000000.
+-- This fixture exercises that current cap; it never changes runtime limits.
+for _,width in ipairs({220,280,600,900})do
+ for _,language in ipairs({"en","th"})do
+  test("zero and maximum stack badge "..width.." "..language,function()
+   for _,count in ipairs({0,1000000})do
+    local root=make(width,"Items",false,language,6,function(model)model.items[2].quantity=count end)
+    local tile=assert(find(root,"Item_2"));local badge=assert(find(tile,"Quantity"));local art=assert(find(tile,"ItemArtwork"))
+    local text=tostring(count);local tileWidth=tile.Size.X.Offset
+    assert(badge.Text==text and badge.TextSize==16 and not badge.TextWrapped)
+    assert(badge.TextXAlignment==Enum.TextXAlignment.Center)
+    local requested=#text*10+8
+    if tileWidth-12>=requested then assert(badge.Size.X.Offset>=requested,"count width clips full stack")end
+    assert(badge.Position.X.Offset>=6 and badge.Position.X.Offset+badge.Size.X.Offset<=tileWidth-6+.001)
+    assert(badge.Position.Y.Offset>=0 and badge.Position.Y.Offset+badge.Size.Y.Offset<=tile.Size.Y.Offset)
+    local function checkLayer(node)
+     if node:IsA("GuiObject")then assert(badge.ZIndex>node.ZIndex,"quantity behind artwork")end
+     for _,child in ipairs(node:GetChildren())do checkLayer(child)end
+    end
+    checkLayer(art);root:Destroy()
+   end
+  end)
+ end
+end
 print("SUMMARY "..passed.." inventory pane simulations passed")
