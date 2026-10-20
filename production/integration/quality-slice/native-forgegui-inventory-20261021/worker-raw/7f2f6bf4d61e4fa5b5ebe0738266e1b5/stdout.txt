@@ -1,0 +1,6 @@
+PASS en AlreadyEquipped
+PASS th AlreadyEquipped
+PASS unknown AlreadyEquipped
+PASS en Requires Hall Lv{level}
+PASS en UnmappedRegressionKey
+5 localization checks passed

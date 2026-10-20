@@ -1,0 +1,12 @@
+{
+  "stop": {
+    "content": [
+      {
+        "type": "text",
+        "text": "Game Stopped"
+      }
+    ],
+    "isError": false
+  },
+  "freshEditVerification": "2026-10-21: get_studio_state ebbf8965-95d7-4272-bedd-56f94f7a8dee returned Current Studio Mode: Edit; Available DataModels: Edit; Focused DataModel: Edit"
+}

@@ -1,0 +1,28 @@
+PASS medium first viewport exposes actual actor and grid then selected details in place
+PASS desktop has three panes and phone switches real view without squeezing columns
+PASS busy native controls cannot dispatch and destroyed controls remain inert
+PASS paging limits item previews and reaches every item
+PASS Thai headings and new controls retain live localized text
+PASS storage focus hover and press never select before activation; busy and stale tiles cannot dispatch
+PASS paging destroys storage callbacks and decorative corners never become hit targets
+PASS pane painter order keeps nested stage behind avatar and quantity above item artwork
+PASS density matrix en actors=0 width=280
+PASS density matrix en actors=0 width=744
+PASS density matrix en actors=0 width=968
+PASS density matrix en actors=1 width=280
+PASS density matrix en actors=1 width=744
+PASS density matrix en actors=1 width=968
+PASS density matrix en actors=6 width=280
+PASS density matrix en actors=6 width=744
+PASS density matrix en actors=6 width=968
+PASS density matrix th actors=0 width=280
+PASS density matrix th actors=0 width=744
+PASS density matrix th actors=0 width=968
+PASS density matrix th actors=1 width=280
+PASS density matrix th actors=1 width=744
+PASS density matrix th actors=1 width=968
+PASS density matrix th actors=6 width=280
+PASS density matrix th actors=6 width=744
+PASS density matrix th actors=6 width=968
+PASS busy phone picker and category controls cannot dispatch
+SUMMARY 27 inventory pane simulations passed

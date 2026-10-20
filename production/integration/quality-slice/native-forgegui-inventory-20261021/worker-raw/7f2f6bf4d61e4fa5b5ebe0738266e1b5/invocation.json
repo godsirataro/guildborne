@@ -1,0 +1,28 @@
+{
+  "schemaVersion": 1,
+  "kind": "LOCAL_COMMAND_RECEIPT",
+  "runId": "7f2f6bf4d61e4fa5b5ebe0738266e1b5",
+  "tool": ".tools/luau/luau.exe",
+  "argv": [
+    ".tools/luau/luau.exe",
+    "tests/gui/already_equipped_localization.luau"
+  ],
+  "buildCommit": "aafbdad60e1a745a57fed12b8627e26c5c47c81d",
+  "sourceTree": "c11ccb689b5d58940512ce093b0d1bd6f203179f",
+  "exitCode": 0,
+  "sourceUnchanged": true,
+  "seconds": 0.4065394000062952,
+  "streams": [
+    {
+      "path": "build/agentic/checks/7f2f6bf4d61e4fa5b5ebe0738266e1b5/stdout.txt",
+      "sha256": "85c3bc1603edafdb7222e80e3c1f59b4a5e92689db5274cc5dc51d0b7ec3e4af",
+      "bytes": 174
+    },
+    {
+      "path": "build/agentic/checks/7f2f6bf4d61e4fa5b5ebe0738266e1b5/stderr.txt",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "bytes": 0
+    }
+  ],
+  "error": null
+}

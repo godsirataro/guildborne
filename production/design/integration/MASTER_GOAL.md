@@ -1,6 +1,6 @@
 # Guildborne master goal
 
-Updated 2026-10-20. Status: ACTIVE.
+Updated 2026-10-21. Status: ACTIVE.
 The starter slice and connected regional routes are intermediate gates, not completion of the requested game.
 
 ## Requested outcome
@@ -17,15 +17,17 @@ Rojo/Studio capabilities. Generated files, installed tools and concepts are not
 acceptance. Integrate independently reviewed commits and normal-push to
 codex/three-session-integration. No new PR, merge, force-push, Roblox publication,
 paid upload, production DataStore mutation or commerce enablement.
-The user authorized existing ForgeGUI credits, then asked to finish old work
-before trying ForgeGUI. Forge remains deferred; no new provider calls or purchases.
+The user subsequently resumed the ForgeGUI inventory trial. One concept was
+generated and used as design guidance; the integrated result is native UI.
+No further paid calls or purchases are part of this wave.
 The original local_tools.py wrapper is not a ForgeGUI clone.
 
 Continue dependency-ready work until complete or measured Codex remaining usage
-reaches approximately5%. Latest account measurement:30%used,70%remaining.
+reaches30% weekly remaining, per the latest user override (supersedes5%).
+Latest supported account measurement:24%used,76%remaining.
 Check between bounded waves, preserve progress and stop new waves at threshold.
 Do not redeem resets. The historical Oct19 11:00 shutdown was already fulfilled;
-it is not recurring and must not be silently scheduled again.
+it is not recurring and must not be silently scheduled again. No new shutdown.
 
 ## Canonical coordination
 Integration checkout: C:/Work/MySelf/Guildborne-controller.
@@ -41,6 +43,20 @@ Claim before writes and serialize Studio/Blender. Plan changes require allwriter
 released, exclusive registry ownership and fresh shared-ledger prerequisite proof.
 
 ## Reviewed integration and current evidence
+Current source52e7505 includes native inventory inspection395d0a4, Hall label
+repaird5e9379 and AlreadyEquipped localizationc2b385a. Final immutable baseline
+16b55aedb3d74825af21250f23ab33d1 passed973 tests and build/analysis/compile
+checks with source unchanged. Native447-source comparisons and actual EN/TH
+inventory/shop checks are archived in
+[GUI evidence](../../integration/quality-slice/native-forgegui-inventory-20261021/README.md).
+The320px component fixture uses synthetic inventory and does not prove a physical
+phone or server equipment transaction. Full art acceptance remains open.
+Five-hero direct junction/Hold and active resident routines remain pending.
+See [current controller status](../../integration/quality-slice/CONTROLLER_STATUS.md)
+and [reconciled hero proposal](../../integration/quality-slice/PERSONALITY_BOND_SECRET_PATH_HANDOFF.md).
+
+Earlier checkpoints below describe their recorded sources, not current completion.
+
 Latest runtime4374c8f includes S14 ore/timber26ff63b integrated176a5cb and S13
 facade06d289d integrated4374c8f. Native packet8284514 and scope2e3639b are pushed.
 [Refinement evidence](../../integration/quality-slice/native-refinement-20261020/README.md)

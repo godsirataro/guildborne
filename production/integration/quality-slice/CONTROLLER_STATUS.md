@@ -1,22 +1,25 @@
-# Current controller handoff — 2026-10-20
+# Current controller handoff — 2026-10-21
 
 Goal remains ACTIVE. Latest human threshold is **30% weekly Codex remaining**,
-replacing50% and5%; latest supported read22%used/78%remaining. No shutdown.
+replacing50% and5%; latest supported read24%used/76%remaining. No shutdown.
 Threshold propagated to existing S13/S14/S15/S17. No new chat/worktree or cleanup.
 Canonical adapted proposal:
 [Personality/Bond/Secret Path handoff](PERSONALITY_BOND_SECRET_PATH_HANDOFF.md).
 Source-reconciled proposal only; no Bond/Echo/Rift Weaver runtime completion.
 Existing plan9 and shared v10 ledger remain unchanged.
 
-GUI integrations395d0a4,d5e9379 and localizationc2b385a are local; final
-validation and push pending. Native447 source identities match both earlier candidates. Full
+GUI integrations395d0a4,d5e9379 and localizationc2b385a are local; push pending.
+Native447 source identities match all three tested candidates. Full
 Memory inventory shows249px inspector/80px tiles; actual EN/TH Hall1 labels
 fixed and disabled. Native320px component fixture supports scroll-to-action,
 busy disabled state and empty state; not physical-device/server transaction proof.
 AlreadyEquipped raw-code text found in that fixture is repaired in sourcec2b385a;
-its native retest remains pending.
-Combined d5e9379 baseline236b981dc0984f7d94aca9728411858a passes973 tests and
-build/analysis; final post-localization baseline remains pending.
+its native EN/TH fixture retest passed, with disabled actions and zero intents.
+Final baseline16b55aedb3d74825af21250f23ab33d1 on unchanged52e7505 passed973
+tests plus build/sourcemap/analysis/compile/repository checks. This is local
+regression evidence, not full game/device/art acceptance.
+[Native GUI evidence](native-forgegui-inventory-20261021/README.md) preserves
+screenshots, source comparisons and raw check receipts.
 
 Owned Studioebbf8965-95d7-4272-bedd-56f94f7a8dee is Edit after StopPlay.
 Rojo build and StudioMCP exercised; ForgeGUI asset_capabilities-v5 fresh read
