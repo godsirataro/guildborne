@@ -183,3 +183,50 @@ retarget. Preserve original authoritative equipment, collision, actor identity,
 timing and cleanup. Repeat the actual grip/contact gate before wiring production
 renderer/creator. Gender, races, Heavy fit and art completion remain pending.
 Current quota63% weekly remaining; stop new waves at30%; no shutdown.
+
+## Latest bounded result: local weapon and server-event action retarget
+
+Source `c4d34cf5214cd2deb8c0bc7ede8b04b61824c96a` and evidence `ac33040`
+implement S15's reviewed proposal in local inspection modules. The production
+renderer, save schema and source assets are unchanged.
+[New native packet](../../character-import/human-standard-weapon-retarget-20261021/README.md)
+contains30 hashed files/2,100,247 bytes with independent source/evidence review.
+
+LocalWeaponPresentation validates and creates fresh five-part training-sword
+geometry at the source socket; only validated originals receive reversible local
+LTM. Server originals remain visible and preserve equipment, physics and welds.
+LocalActionRetarget consumes fresh server-observed events via injected existing
+ActionPose, with full joint-basis conversion and per-frame bind reset. No server
+timing/damage/cooldowns or authoritative motion are changed by these helpers.
+
+The revised Memory fixture suppresses Available recruitment models as well as
+clearing the party. Server/client/probe verify actual hero count0.34 native weapon
+policy assertions and14 standalone action checks pass. Walking120 samples and
+attack270 samples show zero displayed grip/socket gap;35 active samples show
+shoulder/elbow motion and exactly one start/completion. Existing Basic is accepted
+for14 damage, with rewardCallbacks0/profileWrites0. Original player22parts/five
+welds and server fiveweaponparts/fivewelds preserve compared state. Exact restore
+passes; supplemental native lifecycle explicitly returns pending, backing,
+reference, handle and helper connection counts to0. Studio stopped; original
+fixture source restored and normal bootstraps disabled.
+
+Contact remains OPEN: displayed Blade box is at least2.673 studs from the recorded
+target point near the existing0.24s marker. This is not target-surface collision
+proof. Grip alignment and server damage alone do not accept a visible strike.
+Actual during-Basic screenshot and timestamped samples are archived; no video
+was recorded because native recorder support/ffmpeg were unavailable. No tooling
+installation, publishing, paid ForgeGUI call or access expansion was performed.
+
+Full unchanged-candidate receipt f6cf672caf80467ca48e4f20eb38457b passes973 tests,
+401 strict files and build/repository checks; existing stderr warnings preserved.
+Reviewer approved source attribution, metrics, cleanup and all30 evidence hashes.
+Art, faces/hair, garment fit, gender/other races, creator/renderer rollout and
+physical-device/human acceptance remain open.
+
+Next owner: reclaim character-import and reconcile existing client choreography
+ownership before refining sword orientation/reach. Use the same zero-companion
+lab, measure actual enemy geometry and contact-window frames, and preserve all
+original physics/timing/cleanup invariants. No duplicate writer or worktree.
+Character-import is released; quality-slice-integration is only held for this
+handoff and released after commit. Current quota62% remaining; stop new waves
+at30%; no shutdown.

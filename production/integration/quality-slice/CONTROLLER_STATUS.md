@@ -1,3 +1,45 @@
+# Local weapon/action retarget native checkpoint — 2026-10-21
+
+Latest verified weekly quota:38% used /62% remaining. Stop new waves at30%
+remaining; no shutdown. Full game/character/art acceptance remains incomplete.
+
+Reviewed source `c4d34cf` and evidence `ac33040` complete the bounded native
+weapon/action implementation requested after the previous failed gate.
+[Evidence and independent review](../../character-import/human-standard-weapon-retarget-20261021/README.md)
+preserve30 hashed raw/derived files,2,100,247 bytes and two actual new screenshots.
+
+The player-only synthetic Memory lab actually contains zero companion models;
+empty party alone was insufficient and was corrected before testing. All120
+walking and270 attack samples have zero displayed sword/socket center and box
+gap.35 active action samples show moving shoulder/elbow C0, one fresh action
+start and completed recovery. One existing Basic was accepted for14 damage;
+heroes0, rewardCallbacks0 and profileWrites0. Original server weapon identity,
+five parts/five welds and physics remain unchanged; client22part/fiveweld
+comparisons and exact visual restoration pass. Supplemental same-source cleanup
+explicitly returns pending/backing/reference/handle/connection counts to0.
+
+**Strike contact remains OPEN:** nearest sampled Blade-box-to-recorded-target
+point distance is2.673 studs near the0.24s marker. This is not an enemy-surface
+intersection test or accepted animation/art. The existing ActionPose and server
+damage timing remain unchanged; next work must improve/verify visual reach and
+orientation against actual target geometry, not alter authoritative damage.
+No video recorder was available; real stills and timestamped telemetry are saved.
+
+Full unchanged-source baseline f6cf672caf80467ca48e4f20eb38457b passes973 tests,
+401 strict files and build/repository checks; existing warnings remain. Independent
+source and evidence review approved the bounded result with contact/art open.
+Studio is stopped in Edit, original fixture restored, normal bootstraps disabled.
+
+Character-import lease released after source/evidence commits. This checkpoint
+uses quality-slice-integration only and releases it after commit. Next owner
+must claim character-import and explicitly reconcile any existing client ActionPose
+scope before changing choreography. No duplicate writers/worktrees, paid calls,
+publishing, production renderer/creator/save rollout or gender/race expansion.
+
+Earlier checkpoints below are historical.
+
+---
+
 # Character cosmetic/contact checkpoint — 2026-10-21
 
 Latest verified weekly quota:37% used /63% remaining. Stop new waves at30%
