@@ -1,0 +1,86 @@
+[
+  {
+    "path": "src/shared/Presentation/ModularAppearance/LocalActorPreview.luau",
+    "result": {
+      "content": [
+        {
+          "type": "text",
+          "text": "{\"bytes\":12643,\"path\":\"ReplicatedStorage.Shared.Presentation.ModularAppearance.LocalActorPreview\",\"adler32\":279279877}"
+        }
+      ],
+      "isError": false
+    }
+  },
+  {
+    "path": "src/shared/Presentation/ModularAppearance/LocalWeaponPresentation.luau",
+    "result": {
+      "content": [
+        {
+          "type": "text",
+          "text": "{\"bytes\":11728,\"path\":\"ReplicatedStorage.Shared.Presentation.ModularAppearance.LocalWeaponPresentation\",\"adler32\":838230439}"
+        }
+      ],
+      "isError": false
+    }
+  },
+  {
+    "path": "src/shared/Presentation/ModularAppearance/LocalActionRetarget.luau",
+    "result": {
+      "content": [
+        {
+          "type": "text",
+          "text": "{\"bytes\":8209,\"path\":\"ReplicatedStorage.Shared.Presentation.ModularAppearance.LocalActionRetarget\",\"adler32\":3016887887}"
+        }
+      ],
+      "isError": false
+    }
+  },
+  {
+    "path": "production/character-import/local-weapon-studio-check.luau",
+    "result": {
+      "content": [
+        {
+          "type": "text",
+          "text": "{\"bytes\":9303,\"path\":\"ReplicatedStorage.Shared.Presentation.ModularAppearance.FoundationWeaponCheck\",\"adler32\":2057131917}"
+        }
+      ],
+      "isError": false
+    }
+  },
+  {
+    "path": "production/character-import/local-weapon-action-studio-probe.luau",
+    "result": {
+      "content": [
+        {
+          "type": "text",
+          "text": "{\"bytes\":7899,\"path\":\"ReplicatedStorage.Shared.Presentation.ModularAppearance.FoundationWeaponActionProbe\",\"adler32\":3322335102}"
+        }
+      ],
+      "isError": false
+    }
+  },
+  {
+    "path": "production/character-import/isolated-player-weapon-lab.server.luau",
+    "result": {
+      "content": [
+        {
+          "type": "text",
+          "text": "{\"bytes\":9617,\"path\":\"ServerScriptService.PartyPresentationLab\",\"adler32\":2223801799}"
+        }
+      ],
+      "isError": false
+    }
+  },
+  {
+    "path": "production/character-import/isolated-player-weapon-lab.client.luau",
+    "result": {
+      "content": [
+        {
+          "type": "text",
+          "text": "{\"bytes\":2396,\"path\":\"StarterPlayer.StarterPlayerScripts.PartyPresentationLab\",\"adler32\":1279938808}"
+        }
+      ],
+      "isError": false
+    }
+  }
+]

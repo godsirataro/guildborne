@@ -1,0 +1,65 @@
+[
+  {
+    "path": "src/shared/Presentation/ModularAppearance/LocalActorPreview.luau",
+    "sha256": "7b88ed5602f8e0786ecb901cde559191730daf78aa059396cb26444ff8fb2d73",
+    "normalizedSha256": "7b88ed5602f8e0786ecb901cde559191730daf78aa059396cb26444ff8fb2d73",
+    "nativePath": "ReplicatedStorage.Shared.Presentation.ModularAppearance.LocalActorPreview",
+    "nativeBytes": 12643,
+    "nativeAdler32": 279279877,
+    "matches": true
+  },
+  {
+    "path": "src/shared/Presentation/ModularAppearance/LocalWeaponPresentation.luau",
+    "sha256": "8db4953a07b4378f39ea9b315f0fdca3f01265f3fe77b8bfb5c838e4f30f595f",
+    "normalizedSha256": "8db4953a07b4378f39ea9b315f0fdca3f01265f3fe77b8bfb5c838e4f30f595f",
+    "nativePath": "ReplicatedStorage.Shared.Presentation.ModularAppearance.LocalWeaponPresentation",
+    "nativeBytes": 11728,
+    "nativeAdler32": 838230439,
+    "matches": true
+  },
+  {
+    "path": "src/shared/Presentation/ModularAppearance/LocalActionRetarget.luau",
+    "sha256": "80db534201944b1390a90145eefaf3505bfc98db9d3d409fb6b93af8f8bdee96",
+    "normalizedSha256": "80db534201944b1390a90145eefaf3505bfc98db9d3d409fb6b93af8f8bdee96",
+    "nativePath": "ReplicatedStorage.Shared.Presentation.ModularAppearance.LocalActionRetarget",
+    "nativeBytes": 8209,
+    "nativeAdler32": 3016887887,
+    "matches": true
+  },
+  {
+    "path": "production/character-import/local-weapon-studio-check.luau",
+    "sha256": "cf6b9fd80b3fe28da17290c679589b0fc07dd38a66bc2a99b70266521d2971b2",
+    "normalizedSha256": "cf6b9fd80b3fe28da17290c679589b0fc07dd38a66bc2a99b70266521d2971b2",
+    "nativePath": "ReplicatedStorage.Shared.Presentation.ModularAppearance.FoundationWeaponCheck",
+    "nativeBytes": 9303,
+    "nativeAdler32": 2057131917,
+    "matches": true
+  },
+  {
+    "path": "production/character-import/local-weapon-action-studio-probe.luau",
+    "sha256": "69e3073957888704742df3c08becd5793e0a8cc89e159342f7697412a2bb92d6",
+    "normalizedSha256": "69e3073957888704742df3c08becd5793e0a8cc89e159342f7697412a2bb92d6",
+    "nativePath": "ReplicatedStorage.Shared.Presentation.ModularAppearance.FoundationWeaponActionProbe",
+    "nativeBytes": 7899,
+    "nativeAdler32": 3322335102,
+    "matches": true
+  },
+  {
+    "path": "production/character-import/isolated-player-weapon-lab.server.luau",
+    "sha256": "dbde73edd4319f6728fb232aa9109bc93a8907c3fab99637dd29c2da1a3f0d64",
+    "normalizedSha256": "dbde73edd4319f6728fb232aa9109bc93a8907c3fab99637dd29c2da1a3f0d64",
+    "nativePath": "ServerScriptService.PartyPresentationLab",
+    "nativeBytes": 9617,
+    "nativeAdler32": 2223801799,
+    "matches": true
+  },
+  {
+    "path": "production/character-import/isolated-player-weapon-lab.client.luau",
+    "sha256": "1e45db3b19c39c09998e2539e9e561b5222a9b608737479ad6ed1a134ac10321",
+    "normalizedSha256": "1e45db3b19c39c09998e2539e9e561b5222a9b608737479ad6ed1a134ac10321",
+    "nativePath": "StarterPlayer.StarterPlayerScripts.PartyPresentationLab",
+    "nativeBytes": 2396,
+    "nativeAdler32": 1279938808,
+    "matches": true
+  }
+]

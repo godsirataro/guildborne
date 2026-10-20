@@ -1,0 +1,9 @@
+{
+  "content": [
+    {
+      "type": "text",
+      "text": "{\"normalClientDisabled\":true,\"placeId\":0,\"originalFixtureRestored\":true,\"modules\":{\"FoundationWeaponCheck\":{\"bytes\":9303,\"adler32\":2057131917},\"LocalLegacyCosmetics\":{\"bytes\":11811,\"adler32\":4153972324},\"LocalWeaponPresentation\":{\"bytes\":11728,\"adler32\":838230439},\"ActionTimeline\":{\"bytes\":2664,\"adler32\":1395561757},\"ActionPose\":{\"bytes\":2413,\"adler32\":3260489815},\"FoundationWeaponActionProbe\":{\"bytes\":7899,\"adler32\":3322335102},\"LocalActorPreview\":{\"bytes\":12643,\"adler32\":279279877},\"LocalGeometryPreview\":{\"bytes\":11861,\"adler32\":2671320232},\"LocalActionRetarget\":{\"bytes\":8209,\"adler32\":3016887887},\"GeneratedGeometry\":{\"bytes\":422786,\"adler32\":340025235}},\"labExists\":false,\"gameId\":0,\"normalServerDisabled\":true,\"mode\":\"Edit\",\"client\":{\"bytes\":2090,\"adler32\":3959416083},\"server\":{\"bytes\":8883,\"adler32\":2763815928}}"
+    }
+  ],
+  "isError": false
+}

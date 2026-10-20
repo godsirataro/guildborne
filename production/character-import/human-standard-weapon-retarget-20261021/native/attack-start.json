@@ -1,0 +1,9 @@
+{
+  "content": [
+    {
+      "type": "text",
+      "text": "{\"at\":1792527260.615982,\"samples\":28,\"action\":{\"AbilityCount\":0,\"CombatHealth\":48,\"AbilityName\":\"Power Strike\",\"BasicAttackCount\":1,\"NoParentArt\":false,\"ClassId\":\"Warrior\",\"ActionAt\":1792527260.460056,\"CombatMaxHealth\":57,\"Skill3Cooldown\":0,\"ActionRange\":5,\"ActionTargetPosition\":null,\"GuildbornePlayer\":true,\"CombatState\":\"Attack\",\"Level\":10,\"XP\":450,\"ClassPath\":\"Warrior\",\"Action\":\"Basic Attack\",\"Skill1Cooldown\":0,\"OwnerUserId\":11732987790,\"WeaponId\":\"training_sword\",\"ActionEffect\":\"Basic\",\"DamageDealt\":14,\"FeedbackAt\":1792527260.27576,\"RaceId\":\"Human\",\"Feedback\":\"-9\",\"DamageCueAt\":1792527260.275748,\"DamageCue\":\"melee_hit\",\"Skill2Cooldown\":0,\"TacticalPreset\":\"Balanced\",\"Skill1Name\":\"Power Strike\",\"Cooldown\":0,\"RenderedRace\":\"Human\"},\"label\":\"one-basic-zero-companions\"}"
+    }
+  ],
+  "isError": false
+}

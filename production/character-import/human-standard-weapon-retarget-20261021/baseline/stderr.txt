@@ -1,0 +1,17 @@
+[INFO] Loading definitions file: @roblox - C:\Work\MySelf\Guildborne-controller\.tools\luau-lsp\globalTypes.d.luau
+[WARN] client does not allow didChangeWatchedFiles registration - automatic updating on sourcemap changes disabled
+tests/gui/behavior.luau(81,12): UnknownGlobal: Unknown global 'Services'; consider assigning to it first
+tests/gui/behavior.luau(82,15): UnknownGlobal: Unknown global 'Services'; consider assigning to it first
+tests/gui/behavior.luau(84,9): UnknownGlobal: Unknown global 'Services'; consider assigning to it first
+tests/gui/behavior.luau(93,13): UnknownGlobal: Unknown global 'Services'; consider assigning to it first
+tests/gui/behavior.luau(111,16): UnknownGlobal: Unknown global 'Services'; consider assigning to it first
+tests/gui/behavior.luau(118,2): UnknownGlobal: Unknown global 'Services'; consider assigning to it first
+tests/gui/behavior.luau(120,2): UnknownGlobal: Unknown global 'Services'; consider assigning to it first
+tests/gui/behavior.luau(120,40): UnknownGlobal: Unknown global 'Services'; consider assigning to it first
+tests/gui/behavior.luau(122,2): UnknownGlobal: Unknown global 'Services'; consider assigning to it first
+tests/gui/inventory_pane_behavior.luau(3,20): UnknownGlobal: Unknown global 'UI'; consider assigning to it first
+tests/gui/inventory_pane_behavior.luau(9,2): ImplicitReturn: Function 'find' can implicitly return no values even though there's an explicit return at line 8; add explicit return to silence
+tests/gui/inventory_pane_behavior.luau(205,22): UnknownGlobal: Unknown global 'UI'; consider assigning to it first
+tests/gui/novice_chapter.luau(3,20): UnknownGlobal: Unknown global 'UI'; consider assigning to it first
+tests/gui/novice_chapter.luau(4,22): UnknownGlobal: Unknown global 'NoviceConfig'; consider assigning to it first
+tests/gui/novice_chapter.luau(11,2): ImplicitReturn: Function 'find' can implicitly return no values even though there's an explicit return at line 9; add explicit return to silence

@@ -1,0 +1,9 @@
+{
+  "content": [
+    {
+      "type": "text",
+      "text": "{\"before\":{\"backings\":0,\"pending\":0,\"handles\":0,\"references\":0},\"after\":{\"backings\":0,\"comparison\":{\"restored\":true,\"actor\":\"Workspace.iswhlaedev\",\"weaponParts\":5,\"errors\":[],\"welds\":5,\"parts\":22},\"references\":0,\"pending\":0,\"diagnostics\":{\"clothingFitAccepted\":false,\"smoothedSpeed\":0,\"action\":{\"cancellations\":0,\"lastObservedAt\":1792527540.922855,\"destroyed\":true,\"rejections\":0,\"starts\":0,\"status\":\"DESTROYED\",\"active\":false},\"phase\":0,\"destroyed\":true,\"frames\":8,\"cosmetics\":{\"syncs\":8,\"connections\":0,\"restores\":16,\"restoreFailures\":0,\"destroyed\":true,\"hidden\":0,\"kinds\":[]},\"observedHorizontalDistance\":0,\"combatRetargetAccepted\":false,\"connections\":0,\"weapon\":{\"connections\":0,\"restores\":5,\"destroyed\":true,\"hiddenOriginalParts\":0,\"visualParts\":0,\"syncs\":15,\"lastError\":\"\",\"combatRetargetAccepted\":false,\"gripFitAccepted\":false,\"status\":\"DESTROYED\",\"orientation\":\"GRIP_CENTER_EQUALS_SOURCE_SOCKET_XYZ\",\"restoreFailures\":0,\"builds\":1},\"localTestOnly\":true,\"retainedMeshes\":0},\"handles\":0},\"scope\":\"SUPPLEMENTAL_SAME_SOURCE_ATTACH_DETACH_NO_ATTACK\",\"report\":\"{\\\"commands\\\":[],\\\"threeRoadWalk\\\":true,\\\"scope\\\":\\\"SYNTHETIC_PARTY_PRESENTATION_NOT_EARNED\\\",\\\"startZone\\\":\\\"City\\\",\\\"expectedCompanions\\\":0,\\\"rewardCallbacks\\\":0,\\\"playerOnlyCombatProbe\\\":true,\\\"roster\\\":[],\\\"actualCompanions\\\":0,\\\"status\\\":\\\"READY_SYNTHETIC\\\",\\\"walkingRouteCount\\\":3,\\\"notifications\\\":[],\\\"profileWrites\\\":0}\",\"mounted\":{\"backings\":25,\"comparison\":{\"restored\":false,\"actor\":\"Workspace.iswhlaedev\",\"weaponParts\":5,\"errors\":[],\"welds\":5,\"parts\":22},\"references\":25,\"pending\":0,\"handles\":1}}"
+    }
+  ],
+  "isError": false
+}

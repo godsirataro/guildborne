@@ -1,0 +1,9 @@
+{
+  "content": [
+    {
+      "type": "text",
+      "text": "[{\"path\":\"Workspace.GuildborneWorld.PersonalGuild.Environment.Gameplay.GoblinScout\",\"attributes\":{\"ArtPhase\":\"1.5\"},\"pos\":[-27,1.350000023841858,25]},{\"path\":\"Workspace.GuildborneWorld.PersonalGuild.Goblin1\",\"attributes\":{\"CombatHealth\":135,\"GuildborneEnemy\":true,\"CombatMaxHealth\":135,\"Taunted\":false,\"EnemyArticulated\":true,\"CombatState\":\"Idle\",\"ArtPhase\":\"1.5\",\"OwnerUserId\":11732987790,\"EnemyAnimationClass\":\"Knight\"},\"pos\":[-13,3,79]},{\"path\":\"Workspace.GuildborneWorld.PersonalGuild.Goblin2\",\"attributes\":{\"CombatHealth\":135,\"GuildborneEnemy\":true,\"CombatMaxHealth\":135,\"Taunted\":false,\"EnemyArticulated\":true,\"CombatState\":\"Idle\",\"ArtPhase\":\"1.5\",\"OwnerUserId\":11732987790,\"EnemyAnimationClass\":\"Knight\"},\"pos\":[13,3,85]},{\"path\":\"Workspace.GuildborneWorld.PersonalGuild.Goblin3\",\"attributes\":{\"CombatHealth\":135,\"GuildborneEnemy\":true,\"CombatMaxHealth\":135,\"Taunted\":false,\"EnemyArticulated\":true,\"CombatState\":\"Idle\",\"ArtPhase\":\"1.5\",\"OwnerUserId\":11732987790,\"EnemyAnimationClass\":\"Knight\"},\"pos\":[0,3,105]}]"
+    }
+  ],
+  "isError": false
+}

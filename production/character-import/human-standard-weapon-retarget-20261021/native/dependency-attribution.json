@@ -1,0 +1,52 @@
+[
+  {
+    "name": "LocalGeometryPreview",
+    "path": "src/shared/Presentation/ModularAppearance/LocalGeometryPreview.luau",
+    "sha256": "ef316c18b2a85edc455fe28a8e32dd6d5c0e906847929d5eddf971b1b095b760",
+    "native": {
+      "bytes": 11861,
+      "adler32": 2671320232
+    },
+    "matches": true
+  },
+  {
+    "name": "LocalLegacyCosmetics",
+    "path": "src/shared/Presentation/ModularAppearance/LocalLegacyCosmetics.luau",
+    "sha256": "c39914993f882a6dbc4e350ca882471bb97df57e31c12b09b2bcfd16e8844c7d",
+    "native": {
+      "bytes": 11811,
+      "adler32": 4153972324
+    },
+    "matches": true
+  },
+  {
+    "name": "GeneratedGeometry",
+    "path": "src/shared/Presentation/ModularAppearance/GeneratedGeometry.luau",
+    "sha256": "67885a4b7f7249bb04475a12a83c579a96c6f334631186286e71107d0b94f07f",
+    "native": {
+      "bytes": 422786,
+      "adler32": 340025235
+    },
+    "matches": true
+  },
+  {
+    "name": "ActionPose",
+    "path": "src/client/Controllers/ActionPose.luau",
+    "sha256": "65381f67b0d36ae4c91230743526bd299ed820749e81a60449ad4c30148e498a",
+    "native": {
+      "bytes": 2413,
+      "adler32": 3260489815
+    },
+    "matches": true
+  },
+  {
+    "name": "ActionTimeline",
+    "path": "src/shared/Presentation/ActionTimeline.luau",
+    "sha256": "f14291c081c8b1650310f459daa661e36c5d000ee65cb9b423d2894e3f451131",
+    "native": {
+      "bytes": 2664,
+      "adler32": 1395561757
+    },
+    "matches": true
+  }
+]

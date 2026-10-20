@@ -1,0 +1,158 @@
+{
+  "candidate": "c4d34cf5214cd2deb8c0bc7ede8b04b61824c96a",
+  "status": "REVIEW_ONLY_NATIVE_BOUNDED_RESULT_CONTACT_OPEN",
+  "count": 30,
+  "bytes": 2100247,
+  "files": [
+    {
+      "path": "native/after-walk.png",
+      "bytes": 202142,
+      "sha256": "e11a58026b0488520c74581a72ae66fcd4a08fc066b31cb4a5a699a0c96ce920"
+    },
+    {
+      "path": "native/attach.json",
+      "bytes": 4735,
+      "sha256": "74d75dd114607f45d4be520df3c6fcded774e49b286780001bb8021c63ea086a"
+    },
+    {
+      "path": "native/attack-after.json",
+      "bytes": 902,
+      "sha256": "2e50e74aae6af06f83497797cdbc850ee38684c1c56a37711dfe2cf48c6a108a"
+    },
+    {
+      "path": "native/attack-raw.json",
+      "bytes": 1083719,
+      "sha256": "3591f86e6359c4ffae94b9ba84fbe00750eacdfb78f01f72a36d9c9ca214b85d"
+    },
+    {
+      "path": "native/attack-setup.json",
+      "bytes": 284,
+      "sha256": "50efb542b9804d6fa5ab242265c2f8ac0f6f18b80de3563c43e97d58183df0a1"
+    },
+    {
+      "path": "native/attack-start.json",
+      "bytes": 971,
+      "sha256": "68f26ab4ff7d04acdcd4973846b291bad14ab56ce3cfabc0e358eefa8e5cc700"
+    },
+    {
+      "path": "native/cleanup.json",
+      "bytes": 2369,
+      "sha256": "f57a73f6b2f7982ecdfc91947bf909f375663ef3bf8d286947dba6d7bb84bee8"
+    },
+    {
+      "path": "native/contact-window.json",
+      "bytes": 1167,
+      "sha256": "a14c2fa8f86fe8e19827321f7cb2e69797063de577a97b1f7992af7fc46242f6"
+    },
+    {
+      "path": "native/dependency-attribution.json",
+      "bytes": 1440,
+      "sha256": "9e051a037a1525f0890567bd1a33134c7c501e8e906b076a520faa7d440d565e"
+    },
+    {
+      "path": "native/during-basic.png",
+      "bytes": 230704,
+      "sha256": "70a972ee3d18ac5675b1619c74f354ee193d380947a781214709d54161139011"
+    },
+    {
+      "path": "native/enemy-census.json",
+      "bytes": 1219,
+      "sha256": "65b062deb884d1283410ec70f8d43138a65e5c6bf22d949f6ae6cca1f86f0f4f"
+    },
+    {
+      "path": "native/final-edit-readback.json",
+      "bytes": 1009,
+      "sha256": "10f28e9e2d0b52778a6db41237ecf770c2673ff6263e4c38bca17a5aa8ae3bad"
+    },
+    {
+      "path": "native/fixture-original-source.json",
+      "bytes": 11415,
+      "sha256": "b1fc6df3e83056d24bc83b67640ce5efdb8f6965a744ab2a333ff9ff80f24d5b"
+    },
+    {
+      "path": "native/install.json",
+      "bytes": 2465,
+      "sha256": "f5b480c3826fc0e1d0623a8aecdc96d64f901984f458a63f149dece153b1f936"
+    },
+    {
+      "path": "native/local-action-and-recorder-check.json",
+      "bytes": 986,
+      "sha256": "a08c112df3de0aec6b978b9e3e3517b9be64a2ab881bba822b06aeea508286f3"
+    },
+    {
+      "path": "native/metrics-initial.json",
+      "bytes": 2199,
+      "sha256": "9c38e35d36f7bfde89572c7eacc48793e816d5a68e2aca43878f21781fe7ca1a"
+    },
+    {
+      "path": "native/native-weapon-policy.json",
+      "bytes": 1220,
+      "sha256": "b1464a9833cb9148009d7b4918d8403441c55c29dc642c78930e4181b580852a"
+    },
+    {
+      "path": "native/preflight-original-fixtures.json",
+      "bytes": 12167,
+      "sha256": "e320689c1d695c51e05b3eee82d0424ef4980e6bd3449bb40fada2acda1e0ae0"
+    },
+    {
+      "path": "native/server-originals.json",
+      "bytes": 432,
+      "sha256": "3601f61e33409739d5923aefc381ac2b226c34a95a7ec399320d04f1caa7c1f7"
+    },
+    {
+      "path": "native/server-preflight.json",
+      "bytes": 1156,
+      "sha256": "385e67673617f76282f53986d7df005bf510bb4abbb829c3ad13e8a19aeba014"
+    },
+    {
+      "path": "native/source-attribution.json",
+      "bytes": 3032,
+      "sha256": "7222725dfb1b3df73bc3301058ba293c6ec25cd607f66759fef9b40a69dec2ba"
+    },
+    {
+      "path": "native/supplemental-final-edit.json",
+      "bytes": 294,
+      "sha256": "96538fcbf8744570c841a8bd3f4e97a2f2da2ead5db18c59826a7365023a3c73"
+    },
+    {
+      "path": "native/supplemental-pending-cleanup.json",
+      "bytes": 1888,
+      "sha256": "af2ddfc1ecfb85017e1417fd7c3ab536e50053d0ccaceb90e0ec7b758de8d32b"
+    },
+    {
+      "path": "native/walk-raw.json",
+      "bytes": 451082,
+      "sha256": "2fa4b290df82ffe1f4e99c5216e9f61f56a20156d0d8da46771eaa8e83386435"
+    },
+    {
+      "path": "native/walk-start.json",
+      "bytes": 219,
+      "sha256": "affdee7314a81125c7a79bac493f9ceca092946aa5939bd0abaf7a3e48637513"
+    },
+    {
+      "path": "baseline/invocation.json",
+      "bytes": 996,
+      "sha256": "27a1501cc180cf12b6f73edd6691556afa42e58830c34978f8779d138c624639"
+    },
+    {
+      "path": "baseline/prompt.md",
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "path": "baseline/result.json",
+      "bytes": 1758,
+      "sha256": "8864fdfced958a244f88570ee950fc23c39bb6a90d10c2aaea261515b7175316"
+    },
+    {
+      "path": "baseline/stderr.txt",
+      "bytes": 2011,
+      "sha256": "fde9b645d45ef8d3b6ee2dba9153b9d54f014490b6ef4d10981e7ea5bdf3b5fe"
+    },
+    {
+      "path": "baseline/stdout.txt",
+      "bytes": 76266,
+      "sha256": "15a334d805e03ca72d42ff750515bb4b726e988596abbedfb0d3a564b3a5b8a6"
+    }
+  ]
+}

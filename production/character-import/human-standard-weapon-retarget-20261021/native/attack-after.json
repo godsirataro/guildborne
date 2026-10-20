@@ -1,0 +1,9 @@
+{
+  "content": [
+    {
+      "type": "text",
+      "text": "{\"before\":{\"at\":1792527260.060669,\"health\":135,\"playerHealth\":57},\"after\":{\"actionAt\":1792527260.460056,\"playerHealth\":57,\"targetHealth\":135,\"attackCount\":1,\"damage\":14},\"report\":\"{\\\"commands\\\":[{\\\"at\\\":1792527260.460077,\\\"action\\\":\\\"Basic\\\",\\\"reason\\\":\\\"OK\\\",\\\"actorId\\\":\\\"player\\\",\\\"accepted\\\":true}],\\\"threeRoadWalk\\\":true,\\\"scope\\\":\\\"SYNTHETIC_PARTY_PRESENTATION_NOT_EARNED\\\",\\\"startZone\\\":\\\"City\\\",\\\"expectedCompanions\\\":0,\\\"rewardCallbacks\\\":0,\\\"playerOnlyCombatProbe\\\":true,\\\"roster\\\":[],\\\"actualCompanions\\\":0,\\\"status\\\":\\\"READY_SYNTHETIC\\\",\\\"walkingRouteCount\\\":3,\\\"notifications\\\":[],\\\"profileWrites\\\":0}\",\"heroCount\":0,\"preservation\":{\"errors\":[],\"welds\":5,\"parts\":5}}"
+    }
+  ],
+  "isError": false
+}

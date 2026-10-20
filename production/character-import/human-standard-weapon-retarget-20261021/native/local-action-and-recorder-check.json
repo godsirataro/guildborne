@@ -1,0 +1,7 @@
+{
+  "chunk_id": "08f9a9",
+  "wall_time_seconds": 0.6489925,
+  "exit_code": 0,
+  "original_token_count": 206,
+  "output": "PASS initial attach never replays existing action\r\nPASS fresh event starts once and follows existing timeline\r\nPASS expiration cannot replay same stamp\r\nPASS reordered event cancels without starting\r\nPASS unsupported newer event advances observed cursor\r\nPASS future rejection permits later legitimate fresh event\r\nPASS nonfinite missing and nonnumeric stamps rejected\r\nPASS stale and preattach stamps cannot start\r\nPASS metadata changes cancel without replay on restoration\r\nPASS death identity and departure problems cancel\r\nPASS invalid or reversed clock cancels\r\nPASS destroy is terminal and idempotent\r\nPASS basis conjugation transforms translation and rotation\r\nPASS injected pose overlay follows caller reset and cancels cleanly\r\nLocal action checks passed: 14\r\n{\"imageio_ffmpeg\": false, \"cv2\": false, \"PIL\": true}\r\n"
+}

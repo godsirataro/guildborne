@@ -1,0 +1,9 @@
+{
+  "content": [
+    {
+      "type": "text",
+      "text": "{\"report\":\"{\\\"commands\\\":[],\\\"threeRoadWalk\\\":true,\\\"scope\\\":\\\"SYNTHETIC_PARTY_PRESENTATION_NOT_EARNED\\\",\\\"startZone\\\":\\\"City\\\",\\\"expectedCompanions\\\":0,\\\"rewardCallbacks\\\":0,\\\"playerOnlyCombatProbe\\\":true,\\\"roster\\\":[],\\\"actualCompanions\\\":0,\\\"status\\\":\\\"READY_SYNTHETIC\\\",\\\"walkingRouteCount\\\":3,\\\"notifications\\\":[],\\\"profileWrites\\\":0}\",\"player\":{\"CombatHealth\":57,\"AbilityName\":\"Power Strike\",\"NoParentArt\":false,\"ClassId\":\"Warrior\",\"CombatMaxHealth\":57,\"Skill3Cooldown\":0,\"GuildbornePlayer\":true,\"CombatState\":\"Idle\",\"Level\":10,\"XP\":450,\"ClassPath\":\"Warrior\",\"Skill1Cooldown\":0,\"OwnerUserId\":11732987790,\"WeaponId\":\"training_sword\",\"RaceId\":\"Human\",\"Skill2Cooldown\":0,\"TacticalPreset\":\"Balanced\",\"Skill1Name\":\"Power Strike\",\"Cooldown\":0,\"RenderedRace\":\"Human\"},\"attributes\":{\"PlayerOnlyCombatProbe\":true,\"OwnerUserId\":11732987790,\"ThreeRoadWalk\":true,\"CompanionCount\":0,\"Ready\":true,\"Synthetic\":true},\"heroes\":[]}"
+    }
+  ],
+  "isError": false
+}
