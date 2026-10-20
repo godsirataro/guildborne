@@ -1,0 +1,97 @@
+{
+  "sourceCommit": "6742d85",
+  "placeId": 0,
+  "universeId": 0,
+  "studioId": "e50c5386-8bf0-4f6b-8587-261cabeb0a4f",
+  "kind": "ISOLATED_NATIVE_GUI_FIXTURE_NOT_FULL_GAME",
+  "identity": {
+    "content": [
+      {
+        "type": "text",
+        "text": "{\"universeId\":0,\"name\":\"GuildborneGUIReview.rbxlx\",\"review\":true,\"placeId\":0,\"counts\":{\"LocalScript\":1,\"RemoteEvent\":0,\"Script\":0,\"RemoteFunction\":0},\"title\":true}"
+      }
+    ],
+    "isError": false
+  },
+  "thai": {
+    "content": [
+      {
+        "type": "text",
+        "text": "{\"playText\":\"เริ่มเส้นทางนักผจญภัย\",\"status\":\"พร้อมออกเดินทาง\",\"languageText\":\"ภาษา: ไทย → English\"}"
+      }
+    ],
+    "isError": false
+  },
+  "settings": {
+    "content": [
+      {
+        "type": "text",
+        "text": "{\"settingsVisible\":true,\"canvas\":[740,994],\"selected\":true,\"creditsPosition\":[408.63995361328127,922],\"view\":[740,569]}"
+      }
+    ],
+    "isError": false
+  },
+  "narrow": {
+    "content": [
+      {
+        "type": "text",
+        "text": "{\"controls\":[296,296],\"texts\":[{\"fits\":true,\"bounds\":[152,25],\"name\":\"LiveWordmark\",\"size\":[272,74]},{\"fits\":true,\"bounds\":[121,15],\"name\":\"Subtitle\",\"size\":[272,34]},{\"fits\":true,\"bounds\":[168,22],\"name\":\"CompanyHeading\",\"size\":[296,36]},{\"fits\":true,\"bounds\":[275,34],\"name\":\"CompanyDescription\",\"size\":[296,76]},{\"fits\":true,\"bounds\":[91,16],\"name\":\"ReadinessStatus\",\"size\":[296,44]},{\"fits\":true,\"bounds\":[118,17],\"name\":\"Continue\",\"size\":[296,60]},{\"fits\":true,\"bounds\":[125,17],\"name\":\"Language\",\"size\":[296,48]},{\"fits\":true,\"bounds\":[28,17],\"name\":\"Settings\",\"size\":[296,48]},{\"fits\":true,\"bounds\":[138,16],\"name\":\"VFXQuality\",\"size\":[288,52]},{\"fits\":true,\"bounds\":[124,16],\"name\":\"IdleMotion\",\"size\":[288,52]},{\"fits\":true,\"bounds\":[52,16],\"name\":\"AudioMute\",\"size\":[288,52]},{\"fits\":true,\"bounds\":[106,16],\"name\":\"AudioMaster\",\"size\":[288,52]},{\"fits\":true,\"bounds\":[81,16],\"name\":\"AudioUI\",\"size\":[288,52]},{\"fits\":true,\"bounds\":[84,16],\"name\":\"AudioCombat\",\"size\":[288,52]},{\"fits\":true,\"bounds\":[113,16],\"name\":\"AudioMusic\",\"size\":[288,52]},{\"fits\":true,\"bounds\":[284,13],\"name\":\"TextLabel\",\"size\":[288,44]},{\"fits\":true,\"bounds\":[35,17],\"name\":\"Credits\",\"size\":[296,48]},{\"fits\":true,\"bounds\":[72,14],\"name\":\"AlphaNotice\",\"size\":[304,32]}],\"canvas\":[304,620],\"box\":[360,568]}"
+      }
+    ],
+    "isError": false
+  },
+  "focus": {
+    "content": [
+      {
+        "type": "text",
+        "text": "{\"menuOpen\":true,\"touchControls\":false}"
+      }
+    ],
+    "isError": false
+  },
+  "layouts": {
+    "content": [
+      {
+        "type": "text",
+        "text": "{\"measurements\":[{\"playSize\":[256,60],\"languageTextFits\":true,\"contentWidth\":264,\"compact\":true,\"canvasHeight\":620,\"companyTextFits\":true,\"playTextFits\":true,\"box\":[320,568]},{\"playSize\":[296,60],\"languageTextFits\":true,\"contentWidth\":304,\"compact\":true,\"canvasHeight\":716,\"companyTextFits\":true,\"playTextFits\":true,\"box\":[360,800]},{\"playSize\":[326,60],\"languageTextFits\":true,\"contentWidth\":334,\"compact\":true,\"canvasHeight\":716,\"companyTextFits\":true,\"playTextFits\":true,\"box\":[390,844]},{\"playSize\":[460.79998779296877,60],\"languageTextFits\":true,\"contentWidth\":968,\"compact\":false,\"canvasHeight\":716,\"companyTextFits\":true,\"playTextFits\":true,\"box\":[1024,768]},{\"playSize\":[480,60],\"languageTextFits\":true,\"contentWidth\":1008,\"compact\":false,\"canvasHeight\":672,\"companyTextFits\":true,\"playTextFits\":true,\"box\":[1280,720]},{\"playSize\":[480,60],\"languageTextFits\":true,\"contentWidth\":1008,\"compact\":false,\"canvasHeight\":716,\"companyTextFits\":true,\"playTextFits\":true,\"box\":[1366,768]},{\"playSize\":[480,60],\"languageTextFits\":true,\"contentWidth\":1008,\"compact\":false,\"canvasHeight\":716,\"companyTextFits\":true,\"playTextFits\":true,\"box\":[1920,1080]}],\"kind\":\"NATIVE_LAYOUT_BOX_NOT_DEVICE_EMULATOR\"}"
+      }
+    ],
+    "isError": false
+  },
+  "continue": {
+    "content": [
+      {
+        "type": "text",
+        "text": "{\"previewDestroyed\":true,\"titleVisible\":false,\"touchControls\":true,\"status\":\"Title Continue: entered isolated gallery (no profile or rewards).\",\"menuOpen\":false}"
+      }
+    ],
+    "isError": false
+  },
+  "disabled": {
+    "content": [
+      {
+        "type": "text",
+        "text": "{\"status\":\"Selected tab: thai\",\"selectedThai\":true,\"locked\":false}"
+      }
+    ],
+    "isError": false
+  },
+  "primary": {
+    "content": [
+      {
+        "type": "text",
+        "text": "Local activations: 1"
+      }
+    ],
+    "isError": false
+  },
+  "console": {
+    "content": [
+      {
+        "type": "text",
+        "text": "GUI_REVIEW_READY: isolated native fixture; no gameplay acceptance implied\n[Roblox][CorePackages.Packages._Index.UIBlox.UIBlox.Logger] [UIBlox - Warning] - FoundationProvider not found. Please ensure that the FoundationProvider is present in the component tree.\nCorePackages.Packages._Index.UIBlox.UIBlox.App.Style.AppStyleProvider:178 function AppStyleProvider\nCorePackages.Packages._Index.ReactReconciler.ReactReconciler.ReactFiberHooks.new:3196 function renderWithHooks\nCorePackages.Packages._Index.ReactReconciler.ReactReconciler.ReactFiberBeginWork.new:209 function renderWithHooks\nCorePackages.Packages._Index.ReactReconciler.ReactReconciler.ReactFiberBeginWork.new:1577 function mountIndeterminateComponent\nCorePackages.Packages._Index.ReactReconciler.ReactReconciler.ReactFiberBeginWork.new:3485 function beginWork\nCorePackages.Packages._Index.ReactReconciler.ReactReconciler.ReactFiberWorkLoop.new:255\nCorePackages.Packages._Index.ReactReconciler.ReactReconciler.ReactFiberWorkLoop.new:1977\nCorePackages.Packages._Index.ReactReconciler.ReactReconciler.ReactFiberWorkLoop.new:1953\nCorePackages.Packages._Index.ReactReconciler.ReactReconciler.ReactFiberWorkLoop.new:1896\nCorePackages.Packages._Index.ReactReconciler.ReactReconciler.ReactFiberWorkLoop.new:915\nCorePackages.Packages._Index.ReactReconciler.ReactReconciler.ReactFiberWorkLoop.new:860\nCorePackages.Packages._Index.Scheduler.Scheduler.Scheduler:320\nCorePackages.Packages._Index.Scheduler.Scheduler.Scheduler:268\nCorePackages.Packages._Index.Scheduler.Scheduler.forks.SchedulerHostConfig.default:260 function doWork\nCorePackages.Packages._Index.Scheduler.Scheduler.forks.SchedulerHostConfig.default:296 function performWorkUntilDeadline\n\n[Roblox][CorePackages.Packages._Index.UIBlox.UIBlox.Logger] [UIBlox - Warning] - FoundationProvider not found. Please ensure that the FoundationProvider is present in the component tree.\nCorePackages.Packages._Index.UIBlox.UIBlox.App.Style.AppStyleProvider:178 function AppStyleProvider\nCorePackages.Packages._Index.ReactReconciler.ReactReconciler.ReactFiberHooks.new:3196 function renderWithHooks\nCorePackages.Packages._Index.ReactReconciler.ReactReconciler.ReactFiberBeginWork.new:209 function renderWithHooks\nCorePackages.Packages._Index.ReactReconciler.ReactReconciler.ReactFiberBeginWork.new:1577 function mountIndeterminateComponent\nCorePackages.Packages._Index.ReactReconciler.ReactReconciler.ReactFiberBeginWork.new:3485 function beginWork\nCorePackages.Packages._Index.ReactReconciler.ReactReconciler.ReactFiberWorkLoop.new:255\nCorePackages.Packages._Index.ReactReconciler.ReactReconciler.ReactFiberWorkLoop.new:1977\nCorePackages.Packages._Index.ReactReconciler.ReactReconciler.ReactFiberWorkLoop.new:1953\nCorePackages.Packages._Index.ReactReconciler.ReactReconciler.ReactFiberWorkLoop.new:1896\nCorePackages.Packages._Index.ReactReconciler.ReactReconciler.ReactFiberWorkLoop.new:915\nCorePackages.Packages._Index.ReactReconciler.ReactReconciler.ReactFiberWorkLoop.new:860\nCorePackages.Packages._Index.Scheduler.Scheduler.Scheduler:320\nCorePackages.Packages._Index.Scheduler.Scheduler.Scheduler:268\nCorePackages.Packages._Index.Scheduler.Scheduler.forks.SchedulerHostConfig.default:260 function doWork\nCorePackages.Packages._Index.Scheduler.Scheduler.forks.SchedulerHostConfig.default:296 function performWorkUntilDeadline\n\n[Roblox][CorePackages.Packages._Index.UIBlox.UIBlox.Logger] [UIBlox - Warning] - FoundationProvider not found. Please ensure that the FoundationProvider is present in the component tree.\nCorePackages.Packages._Index.UIBlox.UIBlox.App.Style.AppStyleProvider:178 function AppStyleProvider\nCorePackages.Packages._Index.ReactReconciler.ReactReconciler.ReactFiberHooks.new:3196 function renderWithHooks\nCorePackages.Packages._Index.ReactReconciler.ReactReconciler.ReactFiberBeginWork.new:209 function renderWithHooks\nCorePackages.Packages._Index.ReactReconciler.ReactReconciler.ReactFiberBeginWork.new:1577 function mountIndeterminateComponent\nCorePackages.Packages._Index.ReactReconciler.ReactReconciler.ReactFiberBeginWork.new:3485 function beginWork\nCorePackages.Packages._Index.ReactReconciler.ReactReconciler.ReactFiberWorkLoop.new:255\nCorePackages.Packages._Index.ReactReconciler.ReactReconciler.ReactFiberWorkLoop.new:1977\nCorePackages.Packages._Index.ReactReconciler.ReactReconciler.ReactFiberWorkLoop.new:1953\nCorePackages.Packages._Index.ReactReconciler.ReactReconciler.ReactFiberWorkLoop.new:1896\nCorePackages.Packages._Index.ReactReconciler.ReactReconciler.ReactFiberWorkLoop.new:915\nCorePackages.Packages._Index.ReactReconciler.ReactReconciler.ReactFiberWorkLoop.new:860\nCorePackages.Packages._Index.Scheduler.Scheduler.Scheduler:320\nCorePackages.Packages._Index.Scheduler.Scheduler.Scheduler:268\nCorePackages.Packages._Index.Scheduler.Scheduler.forks.SchedulerHostConfig.default:260 function doWork\nCorePackages.Packages._Index.Scheduler.Scheduler.forks.SchedulerHostConfig.default:296 function performWorkUntilDeadline\n\n[Roblox][CorePackages.Packages._Index.UIBlox.UIBlox.Logger] [UIBlox - Warning] - FoundationProvider not found. Please ensure that the FoundationProvider is present in the component tree.\nCorePackages.Packages._Index.UIBlox.UIBlox.App.Style.AppStyleProvider:178 function AppStyleProvider\nCorePackages.Packages._Index.ReactReconciler.ReactReconciler.ReactFiberHooks.new:3196 function renderWithHooks\nCorePackages.Packages._Index.ReactReconciler.ReactReconciler.ReactFiberBeginWork.new:209 function renderWithHooks\nCorePackages.Packages._Index.ReactReconciler.ReactReconciler.ReactFiberBeginWork.new:1577 function mountIndeterminateComponent\nCorePackages.Packages._Index.ReactReconciler.ReactReconciler.ReactFiberBeginWork.new:3485 function beginWork\nCorePackages.Packages._Index.ReactReconciler.ReactReconciler.ReactFiberWorkLoop.new:255\nCorePackages.Packages._Index.ReactReconciler.ReactReconciler.ReactFiberWorkLoop.new:1977\nCorePackages.Packages._Index.ReactReconciler.ReactReconciler.ReactFiberWorkLoop.new:1953\nCorePackages.Packages._Index.ReactReconciler.ReactReconciler.ReactFiberWorkLoop.new:1896\nCorePackages.Packages._Index.ReactReconciler.ReactReconciler.ReactFiberWorkLoop.new:915\nCorePackages.Packages._Index.ReactReconciler.ReactReconciler.ReactFiberWorkLoop.new:860\nCorePackages.Packages._Index.Scheduler.Scheduler.Scheduler:320\nCorePackages.Packages._Index.Scheduler.Scheduler.Scheduler:268\nCorePackages.Packages._Index.Scheduler.Scheduler.forks.SchedulerHostConfig.default:260 function doWork\nCorePackages.Packages._Index.Scheduler.Scheduler.forks.SchedulerHostConfig.default:296 function performWorkUntilDeadline\n\n[Roblox][CorePackages.Packages._Index.UIBlox.UIBlox.Logger] [UIBlox - Warning] - FoundationProvider not found. Please ensure that the FoundationProvider is present in the component tree.\nCorePackages.Packages._Index.UIBlox.UIBlox.App.Style.AppStyleProvider:178 function AppStyleProvider\nCorePackages.Packages._Index.ReactReconciler.ReactReconciler.ReactFiberHooks.new:3196 function renderWithHooks\nCorePackages.Packages._Index.ReactReconciler.ReactReconciler.ReactFiberBeginWork.new:209 function renderWithHooks\nCorePackages.Packages._Index.ReactReconciler.ReactReconciler.ReactFiberBeginWork.new:1577 function mountIndeterminateComponent\nCorePackages.Packages._Index.ReactReconciler.ReactReconciler.ReactFiberBeginWork.new:3485 function beginWork\nCorePackages.Packages._Index.ReactReconciler.ReactReconciler.ReactFiberWorkLoop.new:255\nCorePackages.Packages._Index.ReactReconciler.ReactReconciler.ReactFiberWorkLoop.new:1977\nCorePackages.Packages._Index.ReactReconciler.ReactReconciler.ReactFiberWorkLoop.new:1953\nCorePackages.Packages._Index.ReactReconciler.ReactReconciler.ReactFiberWorkLoop.new:1896\nCorePackages.Packages._Index.ReactReconciler.ReactReconciler.ReactFiberWorkLoop.new:915\nCorePackages.Packages._Index.ReactReconciler.ReactReconciler.ReactFiberWorkLoop.new:860\nCorePackages.Packages._Index.Scheduler.Scheduler.Scheduler:320\nCorePackages.Packages._Index.Scheduler.Scheduler.Scheduler:268\nCorePackages.Packages._Index.Scheduler.Scheduler.forks.SchedulerHostConfig.default:260 function doWork\nCorePackages.Packages._Index.Scheduler.Scheduler.forks.SchedulerHostConfig.default:296 function performWorkUntilDeadline\n\nContentId: rbxassetid://203785492 failed due to: Asset type does not match requested type\nContentId: rbxassetid://203785492 failed due to: Asset type does not match requested type\nContentId: rbxassetid://203785492 failed due to: Asset type does not match requested type"
+      }
+    ],
+    "isError": false
+  }
+}
