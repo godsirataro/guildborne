@@ -1,0 +1,197 @@
+{
+  "scope": "Supported-interior approach plus Greenwood-Ironveil-Ashen forward and all three roads reverse in same synthetic Play after failed approach",
+  "movementMethod": "Client Humanoid:MoveTo waypoint driver at unmodified WalkSpeed17; not manual keyboard acceptance",
+  "samples": 5726,
+  "strictTimeOrder": true,
+  "startedAt": 1792457952.607473,
+  "lastSampleAt": 1792459152.473317,
+  "status": "DURATION_LIMIT",
+  "transitions": [
+    {
+      "t": 1792457952.607473,
+      "zone": "Greenwood",
+      "walking": "city_greenwood_west|Greenwood|City",
+      "p": [
+        0,
+        5.078125,
+        1505
+      ],
+      "respawn": "Workspace.GuildborneWorld.Greenwood.GreenwoodSpawn"
+    },
+    {
+      "t": 1792457961.204588,
+      "zone": "Greenwood",
+      "p": [
+        17.835506439208984,
+        4.99609375,
+        1496.7122802734375
+      ],
+      "respawn": "Workspace.GuildborneWorld.Greenwood.GreenwoodSpawn"
+    },
+    {
+      "t": 1792457964.388203,
+      "zone": "Greenwood",
+      "walking": "greenwood_ironveil_south|Greenwood|Ironveil",
+      "p": [
+        70.86106872558594,
+        5.06796407699585,
+        1495.4462890625
+      ],
+      "respawn": "Workspace.GuildborneWorld.Greenwood.GreenwoodSpawn"
+    },
+    {
+      "t": 1792457983.120238,
+      "zone": "Ironveil",
+      "p": [
+        380.9434509277344,
+        5.097650051116943,
+        1496.5047607421875
+      ],
+      "respawn": "Workspace.GuildborneWorld.Ironveil.IronveilSpawn"
+    },
+    {
+      "t": 1792457996.304477,
+      "zone": "Ironveil",
+      "walking": "ironveil_ashen_south|Ironveil|Ashen",
+      "p": [
+        603.9983520507812,
+        5.09765625,
+        1505
+      ],
+      "respawn": "Workspace.GuildborneWorld.Ironveil.IronveilSpawn"
+    },
+    {
+      "t": 1792458013.170122,
+      "zone": "Ashen",
+      "p": [
+        890.7156982421875,
+        5.09765625,
+        1505
+      ],
+      "respawn": "Workspace.GuildborneWorld.Ashen.AshenSpawn"
+    },
+    {
+      "t": 1792458206.861493,
+      "zone": "Ashen",
+      "walking": "ironveil_ashen_south|Ashen|Ironveil",
+      "p": [
+        907.4765625,
+        5.09765625,
+        1505
+      ],
+      "respawn": "Workspace.GuildborneWorld.Ashen.AshenSpawn"
+    },
+    {
+      "t": 1792458224.060719,
+      "zone": "Ironveil",
+      "p": [
+        617.7130126953125,
+        5.09765625,
+        1505
+      ],
+      "respawn": "Workspace.GuildborneWorld.Ironveil.IronveilSpawn"
+    },
+    {
+      "t": 1792458237.260058,
+      "zone": "Ironveil",
+      "walking": "greenwood_ironveil_south|Ironveil|Greenwood",
+      "p": [
+        394.1826477050781,
+        4.99609375,
+        1496.7261962890625
+      ],
+      "respawn": "Workspace.GuildborneWorld.Ironveil.IronveilSpawn"
+    },
+    {
+      "t": 1792458255.226881,
+      "zone": "Greenwood",
+      "p": [
+        90.18329620361328,
+        5.09765625,
+        1506.0279541015625
+      ],
+      "respawn": "Workspace.GuildborneWorld.Greenwood.GreenwoodSpawn"
+    },
+    {
+      "t": 1792458260.842668,
+      "zone": "Greenwood",
+      "walking": "city_greenwood_west|Greenwood|City",
+      "p": [
+        4.650262832641602,
+        5.078137397766113,
+        1495.1273193359375
+      ],
+      "respawn": "Workspace.GuildborneWorld.Greenwood.GreenwoodSpawn"
+    },
+    {
+      "t": 1792458412.170099,
+      "zone": "City",
+      "p": [
+        -0.08293048292398453,
+        3.697265625,
+        -638.0631103515625
+      ],
+      "respawn": "Workspace.GuildborneWorld.City.CentralCitySpawn"
+    }
+  ],
+  "actors": [
+    {
+      "id": "a:Priest",
+      "minY": 3.549464464187622,
+      "maxY": 8.990777015686035,
+      "missingGroundRays": 0,
+      "recoveryStart": 2,
+      "recoveryEnd": 2,
+      "healthStart": 51,
+      "healthEnd": 51
+    },
+    {
+      "id": "a:Archer",
+      "minY": 3.5499939918518066,
+      "maxY": 8.9976167678833,
+      "missingGroundRays": 0,
+      "recoveryStart": 3,
+      "recoveryEnd": 3,
+      "healthStart": 49,
+      "healthEnd": 49
+    },
+    {
+      "id": "a:Warrior",
+      "minY": 3.54999041557312,
+      "maxY": 8.997519493103027,
+      "missingGroundRays": 0,
+      "recoveryStart": 2,
+      "recoveryEnd": 2,
+      "healthStart": 57,
+      "healthEnd": 57
+    },
+    {
+      "id": "a:Mage",
+      "minY": 3.547855854034424,
+      "maxY": 15.5,
+      "missingGroundRays": 0,
+      "recoveryStart": 3,
+      "recoveryEnd": 3,
+      "healthStart": 47,
+      "healthEnd": 47
+    },
+    {
+      "id": "player",
+      "minY": 3.5425450801849365,
+      "maxY": 8.993586540222168,
+      "missingGroundRays": 0,
+      "healthStart": 57,
+      "healthEnd": 57
+    },
+    {
+      "id": "a:Knight",
+      "minY": 3.5499892234802246,
+      "maxY": 8.997247695922852,
+      "missingGroundRays": 0,
+      "recoveryStart": 2,
+      "recoveryEnd": 2,
+      "healthStart": 67,
+      "healthEnd": 67
+    }
+  ]
+}

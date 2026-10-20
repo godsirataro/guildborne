@@ -1,0 +1,50 @@
+[
+  {
+    "offset": 0,
+    "count": 200,
+    "file": "samples-0000.json.zst",
+    "bytes": 70844,
+    "decodedBytes": 599412,
+    "sha256": "e1ab85a44364d41d1f01fe6c064351921e047f79a64657df37a52297553e5a84"
+  },
+  {
+    "offset": 200,
+    "count": 200,
+    "file": "samples-0200.json.zst",
+    "bytes": 87732,
+    "decodedBytes": 644162,
+    "sha256": "6ee4955fd3bc655874099bd634f855bbf0856f3aaee2d7d2feb750b29f84c57b"
+  },
+  {
+    "offset": 400,
+    "count": 200,
+    "file": "samples-0400.json.zst",
+    "bytes": 77037,
+    "decodedBytes": 639264,
+    "sha256": "eac565ad82d78d5918e00ad2419c20c95659d870bd27c981a17115725ca98bcb"
+  },
+  {
+    "offset": 600,
+    "count": 200,
+    "file": "samples-0600.json.zst",
+    "bytes": 76098,
+    "decodedBytes": 605222,
+    "sha256": "7a8fba8c25db6135da4732515b500980c707af51950cfc344cedceee66b4f39f"
+  },
+  {
+    "offset": 800,
+    "count": 200,
+    "file": "samples-0800.json.zst",
+    "bytes": 7438,
+    "decodedBytes": 485458,
+    "sha256": "5505c9e2397c4d15ae481a3182736cc486e7b4c4bd1e5b2826b5bfef3518c72e"
+  },
+  {
+    "offset": 1000,
+    "count": 64,
+    "file": "samples-1000.json.zst",
+    "bytes": 1207,
+    "decodedBytes": 150199,
+    "sha256": "527748a814e7e524ec715063ab1ccefef5e6c8b0de82848f07c073d4e6cb6127"
+  }
+]

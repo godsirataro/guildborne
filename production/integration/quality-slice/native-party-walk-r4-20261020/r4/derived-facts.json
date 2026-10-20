@@ -1,0 +1,116 @@
+{
+  "scope": "Actual City-to-Greenwood walk, then failed direct Greenwood approach; synthetic eligibility",
+  "samples": 1064,
+  "strictTimeOrder": true,
+  "firstRoad": {
+    "samples": 778,
+    "firstGreenwoodAt": 1792457783.462509,
+    "actors": [
+      {
+        "id": "a:Priest",
+        "minY": 3.5460164546966553,
+        "missedGroundRays": 0,
+        "recoveryStart": 1,
+        "recoveryEnd": 1
+      },
+      {
+        "id": "a:Archer",
+        "minY": 3.5460164546966553,
+        "missedGroundRays": 0,
+        "recoveryStart": 1,
+        "recoveryEnd": 1
+      },
+      {
+        "id": "a:Warrior",
+        "minY": 3.5186381340026855,
+        "missedGroundRays": 0,
+        "recoveryStart": 1,
+        "recoveryEnd": 1
+      },
+      {
+        "id": "a:Mage",
+        "minY": 3.5414535999298096,
+        "missedGroundRays": 0,
+        "recoveryStart": 1,
+        "recoveryEnd": 1
+      },
+      {
+        "id": "player",
+        "minY": 3.5411252975463867,
+        "missedGroundRays": 0
+      },
+      {
+        "id": "a:Knight",
+        "minY": 3.5496137142181396,
+        "missedGroundRays": 0,
+        "recoveryStart": 1,
+        "recoveryEnd": 1
+      }
+    ],
+    "end": 1792457784.163519
+  },
+  "failedApproach": {
+    "driverStart": 1792457810.581249,
+    "driverEnd": 1792457811.896453,
+    "minPlayerY": -46.72195053100586,
+    "firstMissingGround": 1792457811.744164,
+    "finalRecoveries": [
+      {
+        "id": "a:Priest",
+        "end": 2,
+        "captureStart": 1,
+        "approachStart": 1
+      },
+      {
+        "id": "a:Archer",
+        "end": 3,
+        "captureStart": 1,
+        "approachStart": 2
+      },
+      {
+        "id": "a:Warrior",
+        "end": 2,
+        "captureStart": 1,
+        "approachStart": 1
+      },
+      {
+        "id": "a:Mage",
+        "end": 3,
+        "captureStart": 1,
+        "approachStart": 1
+      },
+      {
+        "id": "a:Knight",
+        "end": 2,
+        "captureStart": 1,
+        "approachStart": 1
+      }
+    ],
+    "minPlayerYWindow": "Entire captured fall/recovery window, including after driver stopped",
+    "minPlayerYAt": 1792457812.36044
+  },
+  "arrivalDwell": {
+    "until": 1792457810.581249,
+    "recoveryChanges": [
+      {
+        "t": 1792457791.894459,
+        "id": "a:Archer",
+        "before": 1,
+        "after": 2,
+        "p": [
+          -0.03434247523546219,
+          15.5,
+          1517.689697265625
+        ],
+        "zone": "Greenwood",
+        "player": [
+          -0.00390625,
+          5.078125,
+          1506.69140625
+        ]
+      }
+    ],
+    "notSettlingPass": true
+  },
+  "movementMethod": "Client Humanoid:MoveTo waypoint driver at unmodified WalkSpeed17; not manual keyboard acceptance"
+}

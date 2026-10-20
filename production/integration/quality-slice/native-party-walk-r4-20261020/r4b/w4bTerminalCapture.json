@@ -1,0 +1,9 @@
+{
+  "content": [
+    {
+      "type": "text",
+      "text": "{\"actors\":{\"a:Priest\":{\"p\":{\"1\":0.00009414616215508431,\"3\":-705.459228515625,\"2\":3.6999995708465578},\"recoveryStart\":2,\"hp\":51,\"recoveryEnd\":2,\"ground\":true},\"a:Archer\":{\"p\":{\"1\":0.00006249862053664401,\"3\":-710.6622924804688,\"2\":3.6999995708465578},\"recoveryStart\":3,\"hp\":49,\"recoveryEnd\":3,\"ground\":true},\"a:Warrior\":{\"p\":{\"1\":-0.000011121082934550941,\"3\":-712.0255737304688,\"2\":3.6999995708465578},\"recoveryStart\":2,\"hp\":57,\"recoveryEnd\":2,\"ground\":true},\"a:Mage\":{\"p\":{\"1\":0.000053652420319849628,\"3\":-707.8799438476563,\"2\":3.6999995708465578},\"recoveryStart\":3,\"hp\":47,\"recoveryEnd\":3,\"ground\":true},\"player\":{\"p\":{\"1\":0,\"3\":-719.5,\"2\":3.697265625},\"hp\":57,\"ground\":true},\"a:Knight\":{\"p\":{\"1\":6.348410153123041e-8,\"3\":-715.3071899414063,\"2\":3.6999995708465578},\"recoveryStart\":2,\"hp\":67,\"recoveryEnd\":2,\"ground\":true}},\"endedAt\":1792459152.623373,\"startedAt\":1792457952.607473,\"zone\":\"City\",\"status\":\"DURATION_LIMIT\",\"samples\":5726,\"events\":{\"1\":{\"t\":1792459152.623373,\"kind\":\"DURATION_LIMIT\"}},\"lab\":\"{\\\"commands\\\":[],\\\"threeRoadWalk\\\":true,\\\"scope\\\":\\\"SYNTHETIC_PARTY_PRESENTATION_NOT_EARNED\\\",\\\"rewardCallbacks\\\":0,\\\"roster\\\":[\\\"Knight\\\",\\\"Warrior\\\",\\\"Archer\\\",\\\"Mage\\\",\\\"Priest\\\"],\\\"startZone\\\":\\\"City\\\",\\\"status\\\":\\\"READY_SYNTHETIC\\\",\\\"walkingRouteCount\\\":3,\\\"notifications\\\":[],\\\"profileWrites\\\":0}\"}"
+    }
+  ],
+  "isError": false
+}
