@@ -1,13 +1,17 @@
 --!strict
 -- Unpublished client inspection of the actual HeroRig.Equip training sword.
 -- ArtKit IronSword fallback, scaled .65; deliberately NOT ItemVisuals inventory art.
--- Grip frame identity: +Y blade, +X guard, +Z thickness. No authored grip-fit claim.
+-- Source sword +Y points along the blade. The local Human Standard fit rotates
+-- it out of the palm, not back along the forearm; socket center/geometry stay fixed.
+-- This procedural inspection fit is not final art or general-race acceptance.
 local RunService = game:GetService("RunService")
 local Players = game:GetService("Players")
 local Weapon = {}
 local active: {[Model]: any} = {}
 local names = {"Grip","Guard","Blade","Point","Pommel"}
 local V = Vector3.new
+local gripFitAngle = math.pi + .35
+local gripFit = CFrame.Angles(gripFitAngle,0,0)
 local shapes = {
 	Grip={class="Part",size=V(.3,1,.3)*.65,relative=CFrame.identity},
 	Guard={class="Part",size=V(1.5,.22,.4)*.65,relative=CFrame.new(0,.6*.65,0)},
@@ -132,7 +136,8 @@ function Weapon.New(actor: Model, preview: Model): (any?, string?)
 		return {status=status,lastError=lastError,destroyed=destroyed,hiddenOriginalParts=count,
 			visualParts=if model then #model:GetChildren() else 0,builds=builds,syncs=syncs,
 			restores=restores,restoreFailures=restoreFailures,connections=#connections,
-			orientation="GRIP_CENTER_EQUALS_SOURCE_SOCKET_XYZ",gripFitAccepted=false,combatRetargetAccepted=false}
+			orientation="SOURCE_SOCKET_CENTER_FIXED_HUMAN_SWORD_FIT",gripFitAngle=gripFitAngle,
+			gripFitAccepted=false,combatRetargetAccepted=false}
 	end
 	function state:Sync(): (boolean,string?)
 		if destroyed then return false,"WEAPON_STATE_DESTROYED" end
@@ -163,7 +168,7 @@ function Weapon.New(actor: Model, preview: Model): (any?, string?)
 				local candidate = Instance.new("Model"); model = candidate; candidate.Name = "LocalTrainingSwordInspection"
 				candidate:SetAttribute("LOCAL_TEST_ONLY",true); candidate:SetAttribute("AssetStatus","LOCAL_EXISTING_GEOMETRY_COPY")
 				candidate:SetAttribute("SourceWeaponId","training_sword"); candidate:SetAttribute("GripFitAccepted",false)
-				candidate:SetAttribute("GripOrientation","IDENTITY_SOCKET_AXES_BLADE_POSITIVE_Y")
+				candidate:SetAttribute("GripOrientation","BLADE_OUT_OF_HAND_RX_PI_PLUS_0_35")
 				for _, name in ipairs(names) do
 					local copy = Instance.new(shapes[name].class) :: BasePart
 					copy.Name = name; copy.Parent = candidate; copied[name] = copy
@@ -179,7 +184,7 @@ function Weapon.New(actor: Model, preview: Model): (any?, string?)
 				copy.LeftSurface = original.LeftSurface; copy.RightSurface = original.RightSurface
 				copy.FrontSurface = original.FrontSurface; copy.BackSurface = original.BackSurface
 				copy.Anchored = true; copy.Massless = true; copy.CanCollide = false; copy.CanTouch = false; copy.CanQuery = false
-				copy.CFrame = socket.WorldCFrame * payload[name].relative
+				copy.CFrame = socket.WorldCFrame * gripFit * payload[name].relative
 			end
 			(model :: Model).Parent = workspace
 			-- All five visual parts exist and are positioned before hiding any original.

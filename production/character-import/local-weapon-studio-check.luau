@@ -62,7 +62,7 @@ return function(Weapon: any): any
 			transparency=p.Transparency,anchored=p.Anchored,massless=p.Massless,collide=p.CanCollide,touch=p.CanTouch,query=p.CanQuery,weld=welds[name]} end
 		assert(state:Sync()); local visual = state:GetModel(); assert(visual)
 		check("five_copies_and_five_hidden",#visual:GetChildren() == 5 and state:GetDiagnostics().hiddenOriginalParts == 5)
-		check("source_socket_grip_alignment",sameFrame(visual.Grip.CFrame,socket.WorldCFrame))
+		check("source_socket_center_and_fixed_fit",sameFrame(visual.Grip.CFrame,socket.WorldCFrame*CFrame.Angles(math.pi+.35,0,0)))
 		for name, p in pairs(parts) do
 			local copy = visual:FindFirstChild(name); assert(copy and copy:IsA("BasePart"))
 			local saved = before[name]
@@ -76,7 +76,7 @@ return function(Weapon: any): any
 				and p.LocalTransparencyModifier == 1)
 		end
 		socket.CFrame = CFrame.new(.2,-.3,.1)*CFrame.Angles(.3,-.4,.2); assert(state:Sync())
-		check("moving_socket_lockstep",sameFrame(visual.Grip.CFrame,socket.WorldCFrame))
+		check("moving_socket_lockstep",sameFrame(visual.Grip.CFrame,socket.WorldCFrame*CFrame.Angles(math.pi+.35,0,0)))
 		parts.Blade.Color = Color3.fromRGB(110,70,40); assert(state:Sync())
 		check("source_color_refresh",visual.Blade.Color == parts.Blade.Color)
 		actor:SetAttribute("WeaponId","iron_sword"); assert(state:Sync())

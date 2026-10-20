@@ -118,7 +118,9 @@ function Retarget.New(actor: Model,joints: any,poseCallback: any): any
 		owned[name]={motor=motor,bind=joint.bind,basis=joint.basis}
 	end
 	assert(preview and next(owned),"SOURCE_JOINTS_REQUIRED")
+	assert(preview:GetAttribute("BodyPresetId")=="HUMAN_STANDARD","LOCAL_HUMAN_STANDARD_ACTION_ONLY")
 	local timeline=require(game.ReplicatedStorage.Shared.Presentation.ActionTimeline)
+	local localPose=require(script.Parent.LocalWarriorBasicPose)
 	local clock=Retarget.NewClock(actor:GetAttribute("ActionAt"),workspace:GetServerTimeNow(),timeline)
 	local state={}
 	local disposed=false
@@ -138,6 +140,9 @@ function Retarget.New(actor: Model,joints: any,poseCallback: any): any
 				assert(motor:IsDescendantOf(preview) and motor.Part0 and motor.Part1
 					and motor.Part0:IsDescendantOf(preview) and motor.Part1:IsDescendantOf(preview),"SOURCE_JOINT_REPLACED")
 				local pose=poseCallback(event.classId,event.effect,event.age,name)
+				-- Only this gated local Human/Warrior/training-sword Basic profile.
+				-- Preserve the injected choreography for every other joint.
+				pose=localPose.Apply(event.age,name,pose,timeline)
 				if pose~=nil then
 					assert(finiteFrame(pose) and finiteFrame(motor.C0),"NONFINITE_ACTION_POSE")
 					local value=Retarget.MapPose(motor.C0,joint.basis,pose)
