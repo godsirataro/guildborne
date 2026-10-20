@@ -1,0 +1,9 @@
+{
+  "content": [
+    {
+      "type": "text",
+      "text": "{\"visible\":false,\"buttons\":{\"1\":{\"visible\":true,\"name\":\"Focus\",\"label\":\"Focus\",\"pos\":{\"1\":248,\"2\":694},\"size\":{\"1\":96,\"2\":44}},\"3\":{\"visible\":true,\"name\":\"Retreat\",\"label\":\"Retreat\",\"pos\":{\"1\":449,\"2\":694},\"size\":{\"1\":96,\"2\":44}},\"2\":{\"visible\":true,\"name\":\"Regroup\",\"label\":\"Regroup\",\"pos\":{\"1\":348,\"2\":694},\"size\":{\"1\":96,\"2\":44}},\"5\":{\"visible\":true,\"name\":\"TacticBalanced\",\"label\":\"Balanced\",\"pos\":{\"1\":650,\"2\":694},\"size\":{\"1\":96,\"2\":44}},\"4\":{\"visible\":true,\"name\":\"Hold\",\"label\":\"Hold\",\"pos\":{\"1\":550,\"2\":694},\"size\":{\"1\":96,\"2\":44}},\"6\":{\"visible\":true,\"name\":\"TacticDefensive\",\"label\":\"Defensive\",\"pos\":{\"1\":751,\"2\":694},\"size\":{\"1\":96,\"2\":44}}}}"
+    }
+  ],
+  "isError": false
+}

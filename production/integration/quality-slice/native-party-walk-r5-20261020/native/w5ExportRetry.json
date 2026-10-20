@@ -1,0 +1,9 @@
+{
+  "content": [
+    {
+      "type": "text",
+      "text": "{\"ok\":true,\"endedAt\":1792461799.290768,\"httpBefore\":false,\"roster\":{\"1\":{\"id\":\"player\",\"class\":\"Warrior\",\"name\":\"iswhlaedev\"},\"3\":{\"id\":\"a:Knight\",\"class\":\"Knight\",\"name\":\"Knight\"},\"2\":{\"id\":\"a:Archer\",\"class\":\"Archer\",\"name\":\"Archer\"},\"5\":{\"id\":\"a:Priest\",\"class\":\"Priest\",\"name\":\"Priest\"},\"4\":{\"id\":\"a:Mage\",\"class\":\"Mage\",\"name\":\"Mage\"},\"6\":{\"id\":\"a:Warrior\",\"class\":\"Warrior\",\"name\":\"Warrior\"}},\"count\":2114,\"pages\":{\"1\":{\"offset\":0,\"count\":200,\"bytes\":589793},\"3\":{\"offset\":400,\"count\":200,\"bytes\":638993},\"2\":{\"offset\":200,\"count\":200,\"bytes\":644540},\"5\":{\"offset\":800,\"count\":200,\"bytes\":497781},\"4\":{\"offset\":600,\"count\":200,\"bytes\":617099},\"7\":{\"offset\":1200,\"count\":200,\"bytes\":497791},\"6\":{\"offset\":1000,\"count\":200,\"bytes\":497778},\"9\":{\"offset\":1600,\"count\":200,\"bytes\":497781},\"8\":{\"offset\":1400,\"count\":200,\"bytes\":497775},\"11\":{\"offset\":2000,\"count\":114,\"bytes\":283729},\"10\":{\"offset\":1800,\"count\":200,\"bytes\":497779}},\"status\":\"MANUAL_STOP\",\"startedAt\":1792461356.125174,\"httpRestored\":true,\"events\":{\"1\":{\"t\":1792461799.290768,\"kind\":\"MANUAL_STOP\"}}}"
+    }
+  ],
+  "isError": false
+}

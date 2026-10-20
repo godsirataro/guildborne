@@ -1,0 +1,16 @@
+[
+  {
+    "offset": 0,
+    "count": 200,
+    "file": "samples-0000.json",
+    "bytes": 497382,
+    "sha256": "c4e34fe6cc4615159b382eb3c16b30f7bafed87a11b62384c0d2fa4bc82e12b0"
+  },
+  {
+    "offset": 200,
+    "count": 173,
+    "file": "samples-0200.json",
+    "bytes": 430230,
+    "sha256": "e7baef33aec4dd8ee33c4e6df4ce4b70bd6d1f7dcd6beb5b4037fa9a6f567d38"
+  }
+]

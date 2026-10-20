@@ -1,0 +1,47 @@
+{
+  "schemaVersion": 3,
+  "buildCommit": "a3d0096410a9ac1a38b16933c7ed0fe1950a7d39",
+  "sourceTree": "2caa269495da32e43d0ba8621816cc6b94ea5d0f",
+  "status": "COMMAND_PASS_NOT_TASK_ACCEPTANCE",
+  "sourceUnchanged": true,
+  "invocation": {
+    "tool": "powershell.exe",
+    "argv": [
+      "powershell.exe",
+      "-NoProfile",
+      "-ExecutionPolicy",
+      "Bypass",
+      "-File",
+      "tools/validate.ps1"
+    ],
+    "runId": "d5542d80fc164b918ce1edfcee525048",
+    "buildCommit": "a3d0096410a9ac1a38b16933c7ed0fe1950a7d39",
+    "exitCode": 0,
+    "seconds": 100.56144280000444,
+    "recordPath": "build/agentic/checks/d5542d80fc164b918ce1edfcee525048/invocation.json",
+    "recordSha256": "da7ad932f365b573d7204311c8ea9548e485fd0f38bb199685c86fb9f14a133c",
+    "logs": [
+      "build/agentic/checks/d5542d80fc164b918ce1edfcee525048/invocation.json",
+      "build/agentic/checks/d5542d80fc164b918ce1edfcee525048/stdout.txt",
+      "build/agentic/checks/d5542d80fc164b918ce1edfcee525048/stderr.txt"
+    ]
+  },
+  "artifacts": [
+    {
+      "path": "build/agentic/checks/d5542d80fc164b918ce1edfcee525048/invocation.json",
+      "sha256": "da7ad932f365b573d7204311c8ea9548e485fd0f38bb199685c86fb9f14a133c",
+      "bytes": 901
+    },
+    {
+      "path": "build/agentic/checks/d5542d80fc164b918ce1edfcee525048/stdout.txt",
+      "sha256": "567a46f33a8bb701b4d203c8b395fadc0b062a796c72c15be3e809ca203a5b67",
+      "bytes": 76266
+    },
+    {
+      "path": "build/agentic/checks/d5542d80fc164b918ce1edfcee525048/stderr.txt",
+      "sha256": "2b278c05bca6d558b55ee9abc48e115dd275824d5dddb93ddbdbcdeea7ac29ae",
+      "bytes": 2003
+    }
+  ],
+  "humanApproved": false
+}

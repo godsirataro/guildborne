@@ -1,0 +1,29 @@
+{
+  "scope": "LOCAL_EXTRACTED_PLAYERACTION_NOT_STUDIO",
+  "runs": [
+    {
+      "name": "current",
+      "exitCode": 0
+    },
+    {
+      "name": "original",
+      "exitCode": 0
+    },
+    {
+      "name": "original-regression",
+      "exitCode": 1
+    }
+  ],
+  "files": {
+    "build\\hold-support-review\\current.luau": "6e4706590e9a3c6dcf470574bffa035e73069d6befab2c67917c74434f06d37c",
+    "build\\hold-support-review\\original-regression.luau": "c3a28a155ad18c2b75fd0264ccff57b7d0bfff0a91d763070fad55b929af33ca",
+    "build\\hold-support-review\\original.luau": "6a29b6a08b8d9e359a9d6bc0b08e0b6e87a0e2fe75c792da840e983385ee0f2a",
+    "build\\hold-support-review\\current.stdout": "11a16849083e079cf4f29b5a019e78fe345e0496a7770db0464f4ad14426ec99",
+    "build\\hold-support-review\\original-regression.stdout": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "build\\hold-support-review\\original.stdout": "f8f5a86dc18d4257d1a88763d433732f7b68ed1a99ab8cf0b5aeb3df26016bb0",
+    "build\\hold-support-review\\current.stderr": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "build\\hold-support-review\\original-regression.stderr": "c5c2632ea97a9bf003dd6bc6a81fe338f430a984d1906e929d4c587a9371df24",
+    "build\\hold-support-review\\original.stderr": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "src\\server\\Services\\CombatService.luau": "49fa6855a1bf88dacfef59afe379a592641b29ee4f4f319e0a3d85d66873558a"
+  }
+}

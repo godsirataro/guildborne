@@ -1,0 +1,79 @@
+[
+  {
+    "offset": 0,
+    "count": 200,
+    "file": "samples-0000.json",
+    "bytes": 589793,
+    "sha256": "005f7503a7496a93e848e4c852b4d92eeaf1c8ed570ca6b0953880eb522f16f0"
+  },
+  {
+    "offset": 200,
+    "count": 200,
+    "file": "samples-0200.json",
+    "bytes": 644540,
+    "sha256": "10fbe578ec8ea878712369ac2bec8a0baac10d72364cb168061f2cfaa145a0de"
+  },
+  {
+    "offset": 400,
+    "count": 200,
+    "file": "samples-0400.json",
+    "bytes": 638993,
+    "sha256": "584a7a257b965b4cd54afd18489d15e6bf018a090a0456023f797c28f08c8d92"
+  },
+  {
+    "offset": 600,
+    "count": 200,
+    "file": "samples-0600.json",
+    "bytes": 617099,
+    "sha256": "daf1f44c238ae7853eb0009ccfac9a5c8b87aa3782ac641964f46db220b5f2b7"
+  },
+  {
+    "offset": 800,
+    "count": 200,
+    "file": "samples-0800.json",
+    "bytes": 497781,
+    "sha256": "ef332c299be0fb263e5e43225812e9c70046cdea7a657006387510179f19459c"
+  },
+  {
+    "offset": 1000,
+    "count": 200,
+    "file": "samples-1000.json",
+    "bytes": 497778,
+    "sha256": "97b0318d87632445f760ee77cc8b609f4135f44d9aa0f0417f485c8a59d61c8f"
+  },
+  {
+    "offset": 1200,
+    "count": 200,
+    "file": "samples-1200.json",
+    "bytes": 497791,
+    "sha256": "2a563af7cdd0d0fb43b31a268c21c81972854a1d28bdb6bac89a4f0db5c491e1"
+  },
+  {
+    "offset": 1400,
+    "count": 200,
+    "file": "samples-1400.json",
+    "bytes": 497775,
+    "sha256": "bebbaca636cc365227d32bf070f90e19596f0168d68eaac1be072820ed8a7d2d"
+  },
+  {
+    "offset": 1600,
+    "count": 200,
+    "file": "samples-1600.json",
+    "bytes": 497781,
+    "sha256": "8cc2f2b28dd95354d0d14b3c2684e07c9999d50c236c848f6aac01c895a735b2"
+  },
+  {
+    "offset": 1800,
+    "count": 200,
+    "file": "samples-1800.json",
+    "bytes": 497779,
+    "sha256": "f01c8a631c571c3e8f6903e713d1194755c82db9a755ce5586ca6d2e1aafaa16"
+  },
+  {
+    "offset": 2000,
+    "count": 114,
+    "file": "samples-2000.json",
+    "bytes": 283729,
+    "sha256": "b1e7694fa0118adbf33698a84a7d2100a1d5cb3bbe5021ce44466c17d6442444"
+  }
+]

@@ -1,0 +1,15 @@
+{
+  "count": 2114,
+  "driverStatus": "WAYPOINT_COMMANDS_COMPLETE",
+  "driverEndedAt": 1792461522.222215,
+  "arrivalDwellSeconds": 276.8834340572357,
+  "recoveryChanges": [],
+  "missedRays": 0,
+  "finalHeroY": {
+    "a:Priest": 4.999999523162842,
+    "a:Archer": 4.999999523162842,
+    "a:Warrior": 4.999999523162842,
+    "a:Mage": 4.999999523162842,
+    "a:Knight": 4.999999523162842
+  }
+}

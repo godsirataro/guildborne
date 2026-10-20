@@ -1,0 +1,9 @@
+{
+  "content": [
+    {
+      "type": "text",
+      "text": "{\"ok\":false,\"endedAt\":1792462243.373392,\"pages\":[],\"httpBefore\":false,\"roster\":{\"1\":{\"id\":\"player\",\"class\":\"Warrior\",\"name\":\"iswhlaedev\"},\"3\":{\"id\":\"a:Knight\",\"class\":\"Knight\",\"name\":\"Knight\"},\"2\":{\"id\":\"a:Archer\",\"class\":\"Archer\",\"name\":\"Archer\"},\"5\":{\"id\":\"a:Priest\",\"class\":\"Priest\",\"name\":\"Priest\"},\"4\":{\"id\":\"a:Mage\",\"class\":\"Mage\",\"name\":\"Mage\"},\"6\":{\"id\":\"a:Warrior\",\"class\":\"Warrior\",\"name\":\"Warrior\"}},\"count\":373,\"httpRestored\":true,\"status\":\"MANUAL_STOP\",\"events\":{\"1\":{\"t\":1792462243.373392,\"kind\":\"MANUAL_STOP\"}},\"error\":\"AssistantCommand:1: Error: offset\",\"startedAt\":1792462165.308711}"
+    }
+  ],
+  "isError": false
+}

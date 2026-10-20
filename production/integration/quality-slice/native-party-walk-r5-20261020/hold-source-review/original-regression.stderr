@@ -1,0 +1,5 @@
+./build/hold-support-review/original-regression.luau:100: Native lintel counterexample
+stacktrace:
+[C] function assert
+./build/hold-support-review/original-regression.luau:100 function suite
+./build/hold-support-review/original-regression.luau:111
