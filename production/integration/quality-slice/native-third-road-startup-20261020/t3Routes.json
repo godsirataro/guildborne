@@ -1,0 +1,9 @@
+{
+  "content": [
+    {
+      "type": "text",
+      "text": "{\"routes\":[{\"attrs\":{\"NavigationBelowFloor\":4,\"FromZone\":\"City\",\"NavigationAboveFloor\":14,\"NavigationPointKind\":\"FloorCenter\",\"LocalPreviewOnly\":true,\"WalkWidth\":24,\"ToZone\":\"Greenwood\",\"RouteId\":\"city_greenwood_west\"},\"path\":\"Workspace.GuildborneWorld.CityGreenwoodCorridor\",\"colliders\":151},{\"attrs\":{\"NavigationBelowFloor\":4,\"FromZone\":\"Greenwood\",\"RouteId\":\"greenwood_ironveil_south\",\"ToZone\":\"Ironveil\",\"LocalPreviewOnly\":true,\"NavigationPointKind\":\"FloorCenter\",\"WalkWidth\":24,\"NavigationAboveFloor\":14},\"path\":\"Workspace.GuildborneWorld.GreenwoodIronveilCorridor\",\"colliders\":36},{\"attrs\":{\"NavigationBelowFloor\":4,\"FromZone\":\"Ironveil\",\"RouteId\":\"ironveil_ashen_south\",\"ToZone\":\"Ashen\",\"LocalPreviewOnly\":true,\"NavigationPointKind\":\"FloorCenter\",\"WalkWidth\":24,\"NavigationAboveFloor\":14},\"path\":\"Workspace.GuildborneWorld.IronveilAshenCorridor\",\"colliders\":6}],\"assets\":{\"IsolatedMemory\":true,\"WorldSourceSha256\":\"9baaf8de0faf3ff7f4a4f2c32ea692e48aa9dbb021f609e3530029ed7844ddc7\",\"WorldCollisionReady\":true,\"BindEnemies\":false,\"WorldCollisionSourceSha256\":\"9baaf8de0faf3ff7f4a4f2c32ea692e48aa9dbb021f609e3530029ed7844ddc7\",\"EnableWorldSlice\":true,\"WorldDataset\":\"Dataset1\"}}"
+    }
+  ],
+  "isError": false
+}

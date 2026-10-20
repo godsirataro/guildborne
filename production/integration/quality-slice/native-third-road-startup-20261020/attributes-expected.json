@@ -1,0 +1,85 @@
+[
+  {
+    "path": [
+      "ReplicatedStorage",
+      "QualityPreviewAssets"
+    ],
+    "values": {
+      "IsolatedMemory": true,
+      "EnableWorldSlice": true,
+      "BindEnemies": false,
+      "WorldDataset": "Dataset1",
+      "WorldSourceSha256": "9baaf8de0faf3ff7f4a4f2c32ea692e48aa9dbb021f609e3530029ed7844ddc7"
+    }
+  },
+  {
+    "path": [
+      "ReplicatedStorage",
+      "QualityPreviewAssets",
+      "Dataset1"
+    ],
+    "values": {
+      "SourceSha256": "9baaf8de0faf3ff7f4a4f2c32ea692e48aa9dbb021f609e3530029ed7844ddc7"
+    }
+  },
+  {
+    "path": [
+      "ReplicatedStorage",
+      "QualityPreviewAssets",
+      "Dataset2"
+    ],
+    "values": {
+      "SourceSha256": "3c84bc3a213b8b6b6253cc95957c7a6af0c27d13f789c81f311c0b062a2aefc9"
+    }
+  },
+  {
+    "path": [
+      "ReplicatedStorage",
+      "QualityPreviewAssets",
+      "Dataset3"
+    ],
+    "values": {
+      "SourceSha256": "b885085377b3e56faf9f6a0fe072d0db4672f6b87c5241c6d61ff34c70a65539"
+    }
+  },
+  {
+    "path": [
+      "ReplicatedStorage",
+      "QualityPreviewAssets",
+      "Dataset4"
+    ],
+    "values": {
+      "SourceSha256": "4e65f4e254ae58bed6c5825d68948dc8689eb10332fb2763bdae37f86e371d20"
+    }
+  },
+  {
+    "path": [
+      "ReplicatedStorage",
+      "QualityPreviewAssets",
+      "Dataset5"
+    ],
+    "values": {
+      "SourceSha256": "d08edc14a62bd2fc9e1a3fb0e5a6b205df9532358567e19d93a3e22b356bb46f"
+    }
+  },
+  {
+    "path": [
+      "ReplicatedStorage",
+      "QualityPreviewAssets",
+      "Dataset6"
+    ],
+    "values": {
+      "SourceSha256": "1e803ebb0bfa131c7c0d2113ce50eb3227fcc82fea1aa9ab56ab94156135cf51"
+    }
+  },
+  {
+    "path": [
+      "ReplicatedStorage",
+      "QualityPreviewAssets",
+      "Dataset7"
+    ],
+    "values": {
+      "SourceSha256": "821b419df0f43fb3d3702be9d11948a703af6c97d2947a315d334a217f2bdae6"
+    }
+  }
+]
