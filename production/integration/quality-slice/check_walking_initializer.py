@@ -26,6 +26,15 @@ local function check(mode,full)
         if mode=="second-error" then error("second construction failed") end
         return descriptor("greenwood_ironveil_south")
     end
+    quality.buildGreenwoodEastJunction=function()
+        assert(full==true,"Junction builder called without exact opt-in")
+        -- A separate owned support handle, never counted as a registered route.
+        local alive=true
+        local geometry={IsDescendantOf=function(_,target)return alive and target==folder and mode~="wrong-parent"end}
+        return {id="greenwood_east_junction",geometry=geometry,ownedModel=geometry,
+            isReady=function()return alive and mode~="not-ready"end,
+            destroy=function()alive=false end}
+    end
     quality.buildIronveilAshenCorridor=function()
         assert(full==true,"Third builder called without exact opt-in")
         if mode=="third-error" then error("third construction failed") end

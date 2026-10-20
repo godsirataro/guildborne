@@ -1,0 +1,11 @@
+{
+  "scope": "LOCAL_ORIGINAL_INITIALIZER_CHECKER_NOT_STUDIO",
+  "exitCode": 0,
+  "files": {
+    "src\\server\\Services\\WorldService.luau": "3761e45c53e0c813b8ae5a19309734e679d08f59900830451cd83e95dce5efc1",
+    "production\\integration\\quality-slice\\check_walking_initializer.py": "50e008a8e69d817afd6398e27ab31b360e8b5968b663d2dcafa60320df5a9663",
+    "production\\integration\\quality-slice\\greenwood-junction-integration-20261020\\prior-checker-run-01\\stdout.txt": "9284b80bbbfb28e46a806fc60e060ca5a9155eb8f2beaa5a2acef579924bbd8b",
+    "production\\integration\\quality-slice\\greenwood-junction-integration-20261020\\prior-checker-run-01\\stderr.txt": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "production\\integration\\quality-slice\\greenwood-junction-integration-20261020\\prior-checker-run-01\\actual-initializer.luau": "b7ff1d684e820c74deabd901d64c47a9d955c687185d40f03e3a9b6409444ecc"
+  }
+}

@@ -1,0 +1,13 @@
+{
+  "scope": "LOCAL_EXTRACTED_INITIALIZER_NOT_STUDIO",
+  "exitCode": 0,
+  "files": {
+    "src\\server\\Services\\WorldService.luau": "3761e45c53e0c813b8ae5a19309734e679d08f59900830451cd83e95dce5efc1",
+    "src\\server\\Services\\TravelService.luau": "53b79d26b5c82b7d279c6d8db577f9441ceeae3f3a103c58575d231c49efa139",
+    "src\\server\\Systems\\TravelRules.luau": "c84038885e42dcc935b6a93a9b0cd135810822daceef278207c3aa51c42c16f5",
+    "production\\integration\\quality-slice\\greenwood-junction-integration-20261020\\check.py": "12832776818f5fd15aa3a22025ffa91426b9e17cd673720da0a2fa8cf310948c",
+    "production\\integration\\quality-slice\\greenwood-junction-integration-20261020\\actual-initializer.luau": "99cf231edfed381febba120f4ae9bb58bea4dab6e19ddd881f209902a3240add",
+    "production\\integration\\quality-slice\\greenwood-junction-integration-20261020\\check.stdout": "59eaa39e3eba2437110cd3b635507844ee8f5208f01d35a482ffecf0accedf78",
+    "production\\integration\\quality-slice\\greenwood-junction-integration-20261020\\check.stderr": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+  }
+}

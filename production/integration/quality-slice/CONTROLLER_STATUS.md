@@ -1,3 +1,52 @@
+# Current walking repair and junction checkpoint — 2026-10-20
+
+Goal ACTIVE; ForgeGUI deferred per user. Account last measured59% used/41% remaining.
+No new shutdown scheduled. Shared plan9/v10 ledger remains canonical.
+Original Studio9407ebd0 untouched. Owned R5 Studioa092b10c, PID38612, is Edit;
+Play stopped, all capture receivers closed, raw evidence preserved.
+
+Last pushed a3d0096 includes S17 two residents55b50ea, original causeway43cf797,
+S14 six-order dock4c52678, follower support5e75e6c, S15 labels1f09b80 and R4 archive.
+Current additional reviewed integrations: Hold7226d1a, causeway splice7e03ccb,
+Greenwood east junction612bf11. Explicit junction activation is being implemented
+under root quality lease; do not claim native acceptance from source integration.
+
+R4 preserves the observed gateway recovery and unsupported direct approach failures.
+R4b supported detour reaches Ashen and returns City without NEW recoveries, but Mage
+starts on the earlier roof; this is not clean-start evidence.
+Fresh R5 a3d0096 matched447 exact source identities.39 City→Greenwood waypoints
+complete, followed by276.883s stationary observation. All five RecoveryCounts stay1,
+all health unchanged, zero missed downward rays/lintel hits; five finish on LandingY2
+with rootY5. Independent reviewer verified2114 samples/11 page hashes and identities.
+This passes only the specific follower arrival-settling regression, not continuous
+foot contact, earned progression or full game acceptance. See native-party-walk-r5-20261020.
+
+Separate old-code Hold key observation accepted Archer's command but did NOT
+reproduce the roof bug: ArcherZ1518.063 was outside lintel edge1517.75.373 samples
+retain that result. New Hold +1/down17 passed18 exact extracted PlayerAction cases,
+original-mutation negative control, six tactics tests and independent review.
+It still requires fresh native under-lintel testing. Civic area hides order dock;
+six visible-button dispatch, no Basic leak and collapsed/Thai layouts remain pending.
+
+Next: finish fail-closed junction activation/readiness, immutable combined baseline,
+fresh R6 with replacement causeway packet and junction stone facing; test direct
+Greenwood east approach both ways with five followers, exact-under-lintel Hold,
+six visible orders and NPC active routines. S13/S14/S15/S17 are holding new writes
+pending explicit handoff. New civilian models were only observed constructed at
+distant pause; active activity/contact/blocking verification remains open.
+
+Root quality lease 5232b64f16df4af6a0e0268435cc08a5, ownercontroller-native-v10;
+query live ledger before any write. Old lease expired; worker disclosed a final
+documentation/receipt batch continuing after its failed check. All writes stopped,
+old ownership explicitly released, new lease claimed; this is a recorded coordination
+gap, not retroactive authorization. Runtime source edits had a valid earlier lease.
+Specialist integration leases released. No PR,
+merge, publish, spending or production persistence. Human art/device/full UAT open.
+
+Earlier checkpoints below are historical.
+
+---
+
 # Current third-road and manual-skill checkpoint — 2026-10-20
 
 Full goal ACTIVE; ForgeGUI deferred. Latest quota46%used/54%remaining.

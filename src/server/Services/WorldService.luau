@@ -41,7 +41,19 @@ function World.new(onOpen: (Player, string) -> (), reward: any, towerResult: any
 		-- BEGIN REVIEWED WALKING INITIALIZER
 		local ready,routes=pcall(function()
 			local descriptors={quality.buildContinuousCorridor(),quality.buildGreenwoodIronveilCorridor()}
-			if walkingPolicy.FullConnectedWorld==true then table.insert(descriptors,quality.buildIronveilAshenCorridor()) end
+			if walkingPolicy.FullConnectedWorld==true then
+				local junction=quality.buildGreenwoodEastJunction()
+				local east=descriptors[2]
+				local corridorReady=east.isReady
+				-- Keep the reviewed route identity/bounds; its direct approach must
+				-- remain ready at registration and every later travel admission.
+				local connected=table.clone(east)
+				connected.isReady=function(): boolean
+					return corridorReady()==true and junction.geometry:IsDescendantOf(folder) and junction.isReady()==true
+				end
+				descriptors[2]=connected
+				table.insert(descriptors,quality.buildIronveilAshenCorridor())
+			end
 			for _,route in ipairs(descriptors) do
 				assert(route.geometry:IsDescendantOf(folder) and route.isReady(),"Walking corridor is not ready: "..route.id)
 			end

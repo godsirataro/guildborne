@@ -1,0 +1,16 @@
+PASS actual WorldService initializer	success	nil
+PASS actual WorldService initializer	success	true
+PASS actual WorldService initializer	first-error	nil
+PASS actual WorldService initializer	first-error	true
+PASS actual WorldService initializer	second-error	nil
+PASS actual WorldService initializer	second-error	true
+PASS actual WorldService initializer	not-ready	nil
+PASS actual WorldService initializer	not-ready	true
+PASS actual WorldService initializer	wrong-parent	nil
+PASS actual WorldService initializer	wrong-parent	true
+PASS actual WorldService initializer	success	false
+PASS actual WorldService initializer	success	true
+PASS actual WorldService initializer	success	1
+PASS actual WorldService initializer	third-error	true
+PASS actual WorldService initializer	third-not-ready	true
+PASS actual WorldService initializer	third-wrong-parent	true
