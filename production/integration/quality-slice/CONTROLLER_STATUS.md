@@ -8,8 +8,10 @@ Play stopped, all capture receivers closed, raw evidence preserved.
 Last pushed a3d0096 includes S17 two residents55b50ea, original causeway43cf797,
 S14 six-order dock4c52678, follower support5e75e6c, S15 labels1f09b80 and R4 archive.
 Current additional reviewed integrations: Hold7226d1a, causeway splice7e03ccb,
-Greenwood east junction612bf11. Explicit junction activation is being implemented
-under root quality lease; do not claim native acceptance from source integration.
+Greenwood east junction612bf11. Explicit junction activation41c3b94 passed independent review,120 assertions/21
+scenarios and16 prior cases. Full immutable baseline ae0b368d14c34bd0b6b7cbf23bfb8924
+passed973 tests and build/analysis checks on unchanged41c3b94. Native acceptance
+still pending. R5 archive committed5874997.
 
 R4 preserves the observed gateway recovery and unsupported direct approach failures.
 R4b supported detour reaches Ashen and returns City without NEW recoveries, but Mage
