@@ -1,0 +1,33 @@
+[
+  {
+    "number": 92,
+    "status": "BLOCKED_HTTP",
+    "error": "HTTP Error 429: Too Many Requests"
+  },
+  {
+    "number": 93,
+    "status": "DOWNLOADED_STANDARD_ONLY",
+    "files": [
+      {
+        "path": "C:\\Users\\godsi\\Downloads\\Guildborne-Catalog-94\\external-agent\\93\\Modular Character Outfits - Fantasy[Standard].zip",
+        "sourceUrl": "https://quaternius.itch.io/modular-character-outfits-fantasy",
+        "bytes": 294347394,
+        "sha256": "c3468b18871cc8c8f05ab14df7712baf22cb9f389cbd870babf130e595187f70",
+        "uploadId": "16289385"
+      }
+    ]
+  },
+  {
+    "number": 94,
+    "status": "DOWNLOADED_STANDARD_ONLY",
+    "files": [
+      {
+        "path": "C:\\Users\\godsi\\Downloads\\Guildborne-Catalog-94\\external-agent\\94\\Universal Animation Library[Standard].zip",
+        "sourceUrl": "https://quaternius.itch.io/universal-animation-library",
+        "bytes": 15904933,
+        "sha256": "cc73fc4e495b82958207316596317a3f40b9fa38065bde1027937452da537724",
+        "uploadId": "17958403"
+      }
+    ]
+  }
+]

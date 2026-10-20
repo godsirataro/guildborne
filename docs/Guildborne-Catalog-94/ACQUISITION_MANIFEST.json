@@ -1,0 +1,1998 @@
+{
+  "date": "2026-10-16",
+  "timezone": "Asia/Bangkok",
+  "scope": "Acquire catalog options only; no software installation, runtime import, publication or paid purchases",
+  "counts": {
+    "IN_ROBLOX_INVENTORY": 53,
+    "DOWNLOADED": 39,
+    "BUILT_IN_NO_ACQUISITION_REQUIRED": 2
+  },
+  "catalog": [
+    {
+      "number": 1,
+      "title": "Synty Nature Pack",
+      "sourceUrls": [
+        "https://create.roblox.com/store/asset/6933438443"
+      ],
+      "runtimeImported": false,
+      "studioTested": false,
+      "status": "IN_ROBLOX_INVENTORY",
+      "storeAssetId": "6933438443",
+      "account": "iswhlaedev",
+      "receiptFile": "receipts.json"
+    },
+    {
+      "number": 2,
+      "title": "Synty Dungeon Pack: Cave & Castle Interiors",
+      "sourceUrls": [
+        "https://create.roblox.com/store/asset/6934021345"
+      ],
+      "runtimeImported": false,
+      "studioTested": false,
+      "status": "IN_ROBLOX_INVENTORY",
+      "storeAssetId": "6934021345",
+      "account": "iswhlaedev",
+      "receiptFile": "receipts.json"
+    },
+    {
+      "number": 3,
+      "title": "Synty Dungeon Pack: Basement & Goblin Camp",
+      "sourceUrls": [
+        "https://create.roblox.com/store/asset/6933905899"
+      ],
+      "runtimeImported": false,
+      "studioTested": false,
+      "status": "IN_ROBLOX_INVENTORY",
+      "storeAssetId": "6933905899",
+      "account": "iswhlaedev",
+      "receiptFile": "receipts.json"
+    },
+    {
+      "number": 4,
+      "title": "Synty Dungeon Pack: Weapons & Props",
+      "sourceUrls": [
+        "https://create.roblox.com/store/asset/6933790012"
+      ],
+      "runtimeImported": false,
+      "studioTested": false,
+      "status": "IN_ROBLOX_INVENTORY",
+      "storeAssetId": "6933790012",
+      "account": "iswhlaedev",
+      "receiptFile": "receipts.json"
+    },
+    {
+      "number": 5,
+      "title": "Synty Dungeon Pack: Skeletons & Bones",
+      "sourceUrls": [
+        "https://create.roblox.com/store/asset/6934081776"
+      ],
+      "runtimeImported": false,
+      "studioTested": false,
+      "status": "IN_ROBLOX_INVENTORY",
+      "storeAssetId": "6934081776",
+      "account": "iswhlaedev",
+      "receiptFile": "receipts.json"
+    },
+    {
+      "number": 6,
+      "title": "Arched Stone Bridge",
+      "sourceUrls": [
+        "https://create.roblox.com/store/asset/466438261"
+      ],
+      "runtimeImported": false,
+      "studioTested": false,
+      "status": "IN_ROBLOX_INVENTORY",
+      "storeAssetId": "466438261",
+      "account": "iswhlaedev",
+      "receiptFile": "receipts.json"
+    },
+    {
+      "number": 7,
+      "title": "Medieval prop pack",
+      "sourceUrls": [
+        "https://create.roblox.com/store/asset/14798688821"
+      ],
+      "runtimeImported": false,
+      "studioTested": false,
+      "status": "IN_ROBLOX_INVENTORY",
+      "storeAssetId": "14798688821",
+      "account": "iswhlaedev",
+      "receiptFile": "receipts.json"
+    },
+    {
+      "number": 8,
+      "title": "Play Smoke Puff",
+      "sourceUrls": [
+        "https://create.roblox.com/store/asset/13595063828"
+      ],
+      "runtimeImported": false,
+      "studioTested": false,
+      "status": "IN_ROBLOX_INVENTORY",
+      "storeAssetId": "13595063828",
+      "account": "iswhlaedev",
+      "receiptFile": "receipts.json"
+    },
+    {
+      "number": 9,
+      "title": "Particle Emitter Pack - fire, smoke, sparkles",
+      "sourceUrls": [
+        "https://create.roblox.com/store/asset/241587286"
+      ],
+      "runtimeImported": false,
+      "studioTested": false,
+      "status": "IN_ROBLOX_INVENTORY",
+      "storeAssetId": "241587286",
+      "account": "iswhlaedev",
+      "receiptFile": "receipts.json"
+    },
+    {
+      "number": 10,
+      "title": "Forest Pack",
+      "sourceUrls": [
+        "https://create.roblox.com/store/asset/6432306802"
+      ],
+      "runtimeImported": false,
+      "studioTested": false,
+      "status": "IN_ROBLOX_INVENTORY",
+      "storeAssetId": "6432306802",
+      "account": "iswhlaedev",
+      "receiptFile": "receipts.json"
+    },
+    {
+      "number": 11,
+      "title": "Medieval Low Poly Kit",
+      "sourceUrls": [
+        "https://create.roblox.com/store/asset/15239103896"
+      ],
+      "runtimeImported": false,
+      "studioTested": false,
+      "status": "IN_ROBLOX_INVENTORY",
+      "storeAssetId": "15239103896",
+      "account": "iswhlaedev",
+      "receiptFile": "receipts.json"
+    },
+    {
+      "number": 12,
+      "title": "House Props Pack - Duvall Drive",
+      "sourceUrls": [
+        "https://create.roblox.com/store/asset/10840642581"
+      ],
+      "runtimeImported": false,
+      "studioTested": false,
+      "status": "IN_ROBLOX_INVENTORY",
+      "storeAssetId": "10840642581",
+      "account": "iswhlaedev",
+      "receiptFile": "receipts.json"
+    },
+    {
+      "number": 13,
+      "title": "Landscaping Pack - Duvall Drive",
+      "sourceUrls": [
+        "https://create.roblox.com/store/asset/10840661513"
+      ],
+      "runtimeImported": false,
+      "studioTested": false,
+      "status": "IN_ROBLOX_INVENTORY",
+      "storeAssetId": "10840661513",
+      "account": "iswhlaedev",
+      "receiptFile": "receipts.json"
+    },
+    {
+      "number": 14,
+      "title": "Potion V10",
+      "sourceUrls": [
+        "https://create.roblox.com/store/asset/13043766945"
+      ],
+      "runtimeImported": false,
+      "studioTested": false,
+      "status": "IN_ROBLOX_INVENTORY",
+      "storeAssetId": "13043766945",
+      "account": "iswhlaedev",
+      "receiptFile": "receipts.json"
+    },
+    {
+      "number": 15,
+      "title": "Low Poly Book",
+      "sourceUrls": [
+        "https://create.roblox.com/store/asset/2702822393"
+      ],
+      "runtimeImported": false,
+      "studioTested": false,
+      "status": "IN_ROBLOX_INVENTORY",
+      "storeAssetId": "2702822393",
+      "account": "iswhlaedev",
+      "receiptFile": "receipts.json"
+    },
+    {
+      "number": 16,
+      "title": "Books",
+      "sourceUrls": [
+        "https://create.roblox.com/store/asset/13555696157"
+      ],
+      "runtimeImported": false,
+      "studioTested": false,
+      "status": "IN_ROBLOX_INVENTORY",
+      "storeAssetId": "13555696157",
+      "account": "iswhlaedev",
+      "receiptFile": "receipts.json"
+    },
+    {
+      "number": 17,
+      "title": "Bread",
+      "sourceUrls": [
+        "https://create.roblox.com/store/asset/4933223142"
+      ],
+      "runtimeImported": false,
+      "studioTested": false,
+      "status": "IN_ROBLOX_INVENTORY",
+      "storeAssetId": "4933223142",
+      "account": "iswhlaedev",
+      "receiptFile": "receipts.json"
+    },
+    {
+      "number": 18,
+      "title": "Meat",
+      "sourceUrls": [
+        "https://create.roblox.com/store/asset/1690639246"
+      ],
+      "runtimeImported": false,
+      "studioTested": false,
+      "status": "IN_ROBLOX_INVENTORY",
+      "storeAssetId": "1690639246",
+      "account": "iswhlaedev",
+      "receiptFile": "receipts.json"
+    },
+    {
+      "number": 19,
+      "title": "Apple",
+      "sourceUrls": [
+        "https://create.roblox.com/store/asset/2759295720"
+      ],
+      "runtimeImported": false,
+      "studioTested": false,
+      "status": "IN_ROBLOX_INVENTORY",
+      "storeAssetId": "2759295720",
+      "account": "iswhlaedev",
+      "receiptFile": "receipts.json"
+    },
+    {
+      "number": 20,
+      "title": "Combat Potion Set",
+      "sourceUrls": [
+        "https://create.roblox.com/store/asset/5056649208"
+      ],
+      "runtimeImported": false,
+      "studioTested": false,
+      "status": "IN_ROBLOX_INVENTORY",
+      "storeAssetId": "5056649208",
+      "account": "iswhlaedev",
+      "receiptFile": "receipts.json"
+    },
+    {
+      "number": 21,
+      "title": "blue mystical wizard's cauldron for halloween",
+      "sourceUrls": [
+        "https://create.roblox.com/store/asset/11289365085"
+      ],
+      "runtimeImported": false,
+      "studioTested": false,
+      "status": "IN_ROBLOX_INVENTORY",
+      "storeAssetId": "11289365085",
+      "account": "iswhlaedev",
+      "receiptFile": "receipts.json"
+    },
+    {
+      "number": 22,
+      "title": "Free-to-use VFX Pack #2 - Lazers and Blasts",
+      "sourceUrls": [
+        "https://create.roblox.com/store/asset/9088469378"
+      ],
+      "runtimeImported": false,
+      "studioTested": false,
+      "status": "IN_ROBLOX_INVENTORY",
+      "storeAssetId": "9088469378",
+      "account": "iswhlaedev",
+      "receiptFile": "receipts.json"
+    },
+    {
+      "number": 23,
+      "title": "saythrt's Mega Pack",
+      "sourceUrls": [
+        "https://create.roblox.com/store/asset/83841806206726"
+      ],
+      "runtimeImported": false,
+      "studioTested": false,
+      "status": "IN_ROBLOX_INVENTORY",
+      "storeAssetId": "83841806206726",
+      "account": "iswhlaedev",
+      "receiptFile": "receipts.json"
+    },
+    {
+      "number": 24,
+      "title": "Parallax Portal",
+      "sourceUrls": [
+        "https://create.roblox.com/store/asset/14375826814"
+      ],
+      "runtimeImported": false,
+      "studioTested": false,
+      "status": "IN_ROBLOX_INVENTORY",
+      "storeAssetId": "14375826814",
+      "account": "iswhlaedev",
+      "receiptFile": "receipts.json"
+    },
+    {
+      "number": 25,
+      "title": "SimpleAnimation [R15]",
+      "sourceUrls": [
+        "https://create.roblox.com/store/asset/11720399759"
+      ],
+      "runtimeImported": false,
+      "studioTested": false,
+      "status": "IN_ROBLOX_INVENTORY",
+      "storeAssetId": "11720399759",
+      "account": "iswhlaedev",
+      "receiptFile": "receipts.json"
+    },
+    {
+      "number": 26,
+      "title": "Custom R15 Animations",
+      "sourceUrls": [
+        "https://create.roblox.com/store/asset/10328759036"
+      ],
+      "runtimeImported": false,
+      "studioTested": false,
+      "status": "IN_ROBLOX_INVENTORY",
+      "storeAssetId": "10328759036",
+      "account": "iswhlaedev",
+      "receiptFile": "receipts.json"
+    },
+    {
+      "number": 27,
+      "title": "Laser Beam Blaster",
+      "sourceUrls": [
+        "https://create.roblox.com/store/asset/16382650186"
+      ],
+      "runtimeImported": false,
+      "studioTested": false,
+      "status": "IN_ROBLOX_INVENTORY",
+      "storeAssetId": "16382650186",
+      "account": "iswhlaedev",
+      "receiptFile": "receipts.json"
+    },
+    {
+      "number": 28,
+      "title": "Tween Group",
+      "sourceUrls": [
+        "https://create.roblox.com/store/asset/13595118497"
+      ],
+      "runtimeImported": false,
+      "studioTested": false,
+      "status": "IN_ROBLOX_INVENTORY",
+      "storeAssetId": "13595118497",
+      "account": "iswhlaedev",
+      "receiptFile": "receipts.json"
+    },
+    {
+      "number": 29,
+      "title": "Open book",
+      "sourceUrls": [
+        "https://create.roblox.com/store/asset/13794493103"
+      ],
+      "runtimeImported": false,
+      "studioTested": false,
+      "status": "IN_ROBLOX_INVENTORY",
+      "storeAssetId": "13794493103",
+      "account": "iswhlaedev",
+      "receiptFile": "receipts.json"
+    },
+    {
+      "number": 30,
+      "title": "R15 Sword System With Animations",
+      "sourceUrls": [
+        "https://create.roblox.com/store/asset/6091930553"
+      ],
+      "runtimeImported": false,
+      "studioTested": false,
+      "status": "IN_ROBLOX_INVENTORY",
+      "storeAssetId": "6091930553",
+      "account": "iswhlaedev",
+      "receiptFile": "receipts.json"
+    },
+    {
+      "number": 31,
+      "title": "Treasure Chest Union",
+      "sourceUrls": [
+        "https://create.roblox.com/store/asset/2496756132"
+      ],
+      "runtimeImported": false,
+      "studioTested": false,
+      "status": "IN_ROBLOX_INVENTORY",
+      "storeAssetId": "2496756132",
+      "account": "iswhlaedev",
+      "receiptFile": "receipts.json"
+    },
+    {
+      "number": 32,
+      "title": "Medieval Building Pack",
+      "sourceUrls": [
+        "https://create.roblox.com/store/asset/313318251"
+      ],
+      "runtimeImported": false,
+      "studioTested": false,
+      "status": "IN_ROBLOX_INVENTORY",
+      "storeAssetId": "313318251",
+      "account": "iswhlaedev",
+      "receiptFile": "receipts.json"
+    },
+    {
+      "number": 33,
+      "title": "horse rigged and animated",
+      "sourceUrls": [
+        "https://create.roblox.com/store/asset/3381058398"
+      ],
+      "runtimeImported": false,
+      "studioTested": false,
+      "status": "IN_ROBLOX_INVENTORY",
+      "storeAssetId": "3381058398",
+      "account": "iswhlaedev",
+      "receiptFile": "receipts.json"
+    },
+    {
+      "number": 34,
+      "title": "## Sword and shield",
+      "sourceUrls": [
+        "https://create.roblox.com/store/asset/5441932362"
+      ],
+      "runtimeImported": false,
+      "studioTested": false,
+      "status": "IN_ROBLOX_INVENTORY",
+      "storeAssetId": "5441932362",
+      "account": "iswhlaedev",
+      "receiptFile": "receipts.json"
+    },
+    {
+      "number": 35,
+      "title": "Medieval Market Stalls",
+      "sourceUrls": [
+        "https://create.roblox.com/store/asset/16263631766"
+      ],
+      "runtimeImported": false,
+      "studioTested": false,
+      "status": "IN_ROBLOX_INVENTORY",
+      "storeAssetId": "16263631766",
+      "account": "iswhlaedev",
+      "receiptFile": "receipts.json"
+    },
+    {
+      "number": 36,
+      "title": "Anvil",
+      "sourceUrls": [
+        "https://create.roblox.com/store/asset/10971861418"
+      ],
+      "runtimeImported": false,
+      "studioTested": false,
+      "status": "IN_ROBLOX_INVENTORY",
+      "storeAssetId": "10971861418",
+      "account": "iswhlaedev",
+      "receiptFile": "receipts.json"
+    },
+    {
+      "number": 37,
+      "title": "Pickaxe",
+      "sourceUrls": [
+        "https://create.roblox.com/store/asset/11861768348"
+      ],
+      "runtimeImported": false,
+      "studioTested": false,
+      "status": "IN_ROBLOX_INVENTORY",
+      "storeAssetId": "11861768348",
+      "account": "iswhlaedev",
+      "receiptFile": "receipts.json"
+    },
+    {
+      "number": 38,
+      "title": "Lever",
+      "sourceUrls": [
+        "https://create.roblox.com/store/asset/13114054675"
+      ],
+      "runtimeImported": false,
+      "studioTested": false,
+      "status": "IN_ROBLOX_INVENTORY",
+      "storeAssetId": "13114054675",
+      "account": "iswhlaedev",
+      "receiptFile": "receipts.json"
+    },
+    {
+      "number": 39,
+      "title": "Minecart",
+      "sourceUrls": [
+        "https://create.roblox.com/store/asset/73613290042723"
+      ],
+      "runtimeImported": false,
+      "studioTested": false,
+      "status": "IN_ROBLOX_INVENTORY",
+      "storeAssetId": "73613290042723",
+      "account": "iswhlaedev",
+      "receiptFile": "receipts.json"
+    },
+    {
+      "number": 40,
+      "title": "Portcullis",
+      "sourceUrls": [
+        "https://create.roblox.com/store/asset/87891139"
+      ],
+      "runtimeImported": false,
+      "studioTested": false,
+      "status": "IN_ROBLOX_INVENTORY",
+      "storeAssetId": "87891139",
+      "account": "iswhlaedev",
+      "receiptFile": "receipts.json"
+    },
+    {
+      "number": 41,
+      "title": "Monster",
+      "sourceUrls": [
+        "https://create.roblox.com/store/asset/454965215"
+      ],
+      "runtimeImported": false,
+      "studioTested": false,
+      "status": "IN_ROBLOX_INVENTORY",
+      "storeAssetId": "454965215",
+      "account": "iswhlaedev",
+      "receiptFile": "receipts.json"
+    },
+    {
+      "number": 42,
+      "title": "Drooling Zombie (Rthro)",
+      "sourceUrls": [
+        "https://create.roblox.com/store/asset/3924238625"
+      ],
+      "runtimeImported": false,
+      "studioTested": false,
+      "status": "IN_ROBLOX_INVENTORY",
+      "storeAssetId": "3924238625",
+      "account": "iswhlaedev",
+      "receiptFile": "receipts.json"
+    },
+    {
+      "number": 43,
+      "title": "Medieval Village Pack",
+      "sourceUrls": [
+        "https://quaternius.com/packs/medievalvillage.html"
+      ],
+      "runtimeImported": false,
+      "studioTested": false,
+      "status": "DOWNLOADED",
+      "files": [
+        {
+          "path": "C:\\Users\\godsi\\Downloads\\Guildborne-Catalog-94\\Medieval Village Pack - Dec 2020-20261015T181905Z-1-001.zip",
+          "bytes": 8782767,
+          "sha256": "ba03a970b2d23cb9d7b85da36e65f1861812b15868e418f8c116c1c199e53221",
+          "archiveEntries": 178,
+          "assetCount": 132
+        }
+      ],
+      "validationFile": "quaternius-archive-validation.json"
+    },
+    {
+      "number": 44,
+      "title": "Ultimate Modular Ruins Pack",
+      "sourceUrls": [
+        "https://quaternius.com/packs/ultimatemodularruins.html"
+      ],
+      "runtimeImported": false,
+      "studioTested": false,
+      "status": "DOWNLOADED",
+      "downloadRoutes": [
+        "https://drive.google.com/drive/folders/1ETp2ldaHaP0BkS4FBmkT-g9Yf88T_cIX?usp=sharing"
+      ],
+      "files": [
+        {
+          "path": "C:\\Users\\godsi\\Downloads\\Guildborne-Catalog-94\\Ultimate Modular Ruins Pack - Aug 2021-20261015T191438Z-1-001.zip",
+          "bytes": 28989667,
+          "sha256": "7e352d461b3730a85fd43076042cb130f0e72b922ae59d7d9feaf95345008347",
+          "archiveEntries": 373,
+          "assetCount": 276
+        }
+      ],
+      "validationFile": "quaternius-archive-validation.json"
+    },
+    {
+      "number": 45,
+      "title": "Modular Weapons Pack",
+      "sourceUrls": [
+        "https://quaternius.com/packs/medievalweapons.html"
+      ],
+      "runtimeImported": false,
+      "studioTested": false,
+      "status": "DOWNLOADED",
+      "downloadRoutes": [
+        "https://drive.google.com/drive/folders/1Z6vYiQxY8W73FXuMWzaTQAg9rzbumnOr?usp=sharing"
+      ],
+      "files": [
+        {
+          "path": "C:\\Users\\godsi\\Downloads\\Guildborne-Catalog-94\\Medieval Weapons Pack by @Quaternius-20261015T191442Z-1-001.zip",
+          "bytes": 11708764,
+          "sha256": "80455f88f0680cebaaade19a45796024796ec75268761efe1719d652ec37b9e2",
+          "archiveEntries": 98,
+          "assetCount": 72
+        }
+      ],
+      "validationFile": "quaternius-archive-validation.json"
+    },
+    {
+      "number": 46,
+      "title": "Ultimate RPG Pack",
+      "sourceUrls": [
+        "https://quaternius.com/packs/ultimaterpg.html"
+      ],
+      "runtimeImported": false,
+      "studioTested": false,
+      "status": "DOWNLOADED",
+      "downloadRoutes": [
+        "https://drive.google.com/drive/folders/1IhdL3W5XdJrjf_axqAnKvEybMaC3FwF-?usp=sharing"
+      ],
+      "files": [
+        {
+          "path": "C:\\Users\\godsi\\Downloads\\Guildborne-Catalog-94\\Ultimate RPG Items Pack - Aug 2019-20261015T191443Z-1-001.zip",
+          "bytes": 46141479,
+          "sha256": "4822811c29ec015c11481d8e0070ae6c048766f29c49d74af4a51902bf26575e",
+          "archiveEntries": 533,
+          "assetCount": 318
+        }
+      ],
+      "validationFile": "quaternius-archive-validation.json"
+    },
+    {
+      "number": 47,
+      "title": "Ultimate Monsters",
+      "sourceUrls": [
+        "https://quaternius.com/packs/ultimatemonsters.html"
+      ],
+      "runtimeImported": false,
+      "studioTested": false,
+      "status": "DOWNLOADED",
+      "downloadRoutes": [
+        "https://drive.google.com/drive/folders/18m4KpzpEzhC9wl7jzr6dUc0N8Jozr79C?usp=sharing"
+      ],
+      "files": [
+        {
+          "path": "C:\\Users\\godsi\\Downloads\\Guildborne-Catalog-94\\Ultimate Monsters-20261015T191447Z-1-001.zip",
+          "bytes": 46576830,
+          "sha256": "61d7144dd8dfa05433e43c48cf3c68edd0a92be218fd29623114056654a79181",
+          "archiveEntries": 260,
+          "assetCount": 200
+        }
+      ],
+      "validationFile": "quaternius-archive-validation.json"
+    },
+    {
+      "number": 48,
+      "title": "Ultimate Animated Animal Pack",
+      "sourceUrls": [
+        "https://quaternius.com/packs/ultimateanimatedanimals.html"
+      ],
+      "runtimeImported": false,
+      "studioTested": false,
+      "status": "DOWNLOADED",
+      "downloadRoutes": [
+        "https://drive.google.com/drive/folders/1uJ3N5HfB7jKTseJUNQr3N4YaN0UuEtHk?usp=sharing"
+      ],
+      "files": [
+        {
+          "path": "C:\\Users\\godsi\\Downloads\\Guildborne-Catalog-94\\Ultimate Animated Animals - July 2021-20261015T191450Z-1-001.zip",
+          "bytes": 40126807,
+          "sha256": "bb26832fcbb24bef1d2bf71fd27633fb362f51e05335ebe985b521caf54e21a0",
+          "archiveEntries": 63,
+          "assetCount": 48
+        }
+      ],
+      "validationFile": "quaternius-archive-validation.json"
+    },
+    {
+      "number": 49,
+      "title": "Ultimate Food Pack",
+      "sourceUrls": [
+        "https://quaternius.com/packs/ultimatefood.html"
+      ],
+      "runtimeImported": false,
+      "studioTested": false,
+      "status": "DOWNLOADED",
+      "downloadRoutes": [
+        "https://drive.google.com/drive/folders/1zMfN7q9VU80M7mLAbBBJyY2OdoXslbl1?usp=sharing"
+      ],
+      "files": [
+        {
+          "path": "C:\\Users\\godsi\\Downloads\\Guildborne-Catalog-94\\Ultimate Food Pack - Oct 2019-20261015T191453Z-1-001.zip",
+          "bytes": 12728511,
+          "sha256": "4243af81d805183b66e5f2a2b72a5b9d7f2cf41e1ee794e68e08d21a2bdacf49",
+          "archiveEntries": 414,
+          "assetCount": 309
+        }
+      ],
+      "validationFile": "quaternius-archive-validation.json"
+    },
+    {
+      "number": 50,
+      "title": "Ultimate Crops Pack",
+      "sourceUrls": [
+        "https://quaternius.com/packs/ultimatecrops.html"
+      ],
+      "runtimeImported": false,
+      "studioTested": false,
+      "status": "DOWNLOADED",
+      "downloadRoutes": [
+        "https://drive.google.com/drive/folders/1uhbi-NWp7pwqOGtraBZurbphyxAvoABZ?usp=sharing"
+      ],
+      "files": [
+        {
+          "path": "C:\\Users\\godsi\\Downloads\\Guildborne-Catalog-94\\Nature Crops Pack - Jan 2020-20261015T191457Z-1-001.zip",
+          "bytes": 13934192,
+          "sha256": "b482a3cf387f1e7ffb08094890bf81f2f85f9d231c7f1d74a22aa2262b1359cb",
+          "archiveEntries": 410,
+          "assetCount": 306
+        }
+      ],
+      "validationFile": "quaternius-archive-validation.json"
+    },
+    {
+      "number": 51,
+      "title": "Fantasy UI Borders",
+      "sourceUrls": [
+        "https://kenney.nl/assets/fantasy-ui-borders"
+      ],
+      "runtimeImported": false,
+      "studioTested": false,
+      "status": "DOWNLOADED",
+      "files": [
+        {
+          "path": "C:\\Users\\godsi\\Downloads\\Guildborne-Catalog-94\\kenney_fantasy-ui-borders.zip",
+          "sha256": "59532da3bd61195a425585455b40baa6cbf1eda8227c42adcef31a535a737769",
+          "bytes": 358780
+        }
+      ],
+      "license": "CC0"
+    },
+    {
+      "number": 52,
+      "title": "Game Icons",
+      "sourceUrls": [
+        "https://kenney.nl/assets/game-icons"
+      ],
+      "runtimeImported": false,
+      "studioTested": false,
+      "status": "DOWNLOADED",
+      "files": [
+        {
+          "path": "C:\\Users\\godsi\\Downloads\\Guildborne-Catalog-94\\kenney_game-icons.zip",
+          "sha256": "7a86d8d58e0b851e22004b3c70bf90b003632bbf9ac633424daa3bb17d9e7e4e",
+          "bytes": 1045980
+        }
+      ],
+      "license": "CC0"
+    },
+    {
+      "number": 53,
+      "title": "RPG Audio",
+      "sourceUrls": [
+        "https://kenney.nl/assets/rpg-audio"
+      ],
+      "runtimeImported": false,
+      "studioTested": false,
+      "status": "DOWNLOADED",
+      "files": [
+        {
+          "path": "C:\\Users\\godsi\\Downloads\\Guildborne-Catalog-94\\kenney_rpg-audio.zip",
+          "sha256": "6dbeaf8544da958d8f2adcb4a4a4b76c1ade34a05f8ab9edccd327da7375f38b",
+          "bytes": 964837
+        }
+      ],
+      "license": "CC0"
+    },
+    {
+      "number": 54,
+      "title": "UI Audio",
+      "sourceUrls": [
+        "https://kenney.nl/assets/ui-audio"
+      ],
+      "runtimeImported": false,
+      "studioTested": false,
+      "status": "DOWNLOADED",
+      "files": [
+        {
+          "path": "C:\\Users\\godsi\\Downloads\\Guildborne-Catalog-94\\kenney_ui-audio.zip",
+          "sha256": "946fc23a63d535d693eb31b2eabb80c8c28d6351e2186b344ceb71b2cb1d5eb6",
+          "bytes": 411949
+        }
+      ],
+      "license": "CC0"
+    },
+    {
+      "number": 55,
+      "title": "UI Pack (RPG Expansion)",
+      "sourceUrls": [
+        "https://kenney.nl/assets/ui-pack-rpg-expansion"
+      ],
+      "runtimeImported": false,
+      "studioTested": false,
+      "status": "DOWNLOADED",
+      "files": [
+        {
+          "path": "C:\\Users\\godsi\\Downloads\\Guildborne-Catalog-94\\kenney_ui-pack-rpg-expansion.zip",
+          "sha256": "c69c30c09d74df542842e4ec811735b6d260cd6c9e2ee261d7b894d259a6adb4",
+          "bytes": 214394
+        }
+      ],
+      "license": "CC0"
+    },
+    {
+      "number": 56,
+      "title": "Fantasy Town Kit",
+      "sourceUrls": [
+        "https://kenney.nl/assets/fantasy-town-kit"
+      ],
+      "runtimeImported": false,
+      "studioTested": false,
+      "status": "DOWNLOADED",
+      "files": [
+        {
+          "path": "C:\\Users\\godsi\\Downloads\\Guildborne-Catalog-94\\kenney_fantasy-town-kit_2.0.zip",
+          "sha256": "1a7530c09f4d2fa2cdee259876f089334f8b1f27fa86a0c4f54ef86cdd8676ef",
+          "bytes": 3854691
+        }
+      ],
+      "license": "CC0"
+    },
+    {
+      "number": 57,
+      "title": "Modular Dungeon Kit",
+      "sourceUrls": [
+        "https://kenney.nl/assets/modular-dungeon-kit"
+      ],
+      "runtimeImported": false,
+      "studioTested": false,
+      "status": "DOWNLOADED",
+      "files": [
+        {
+          "path": "C:\\Users\\godsi\\Downloads\\Guildborne-Catalog-94\\kenney_modular-dungeon-kit_1.0.zip",
+          "sha256": "dd0aa6776db8912283cdca60161dee6a8839bbda3558eba2ea501419eb5b4623",
+          "bytes": 6886434
+        }
+      ],
+      "license": "CC0"
+    },
+    {
+      "number": 58,
+      "title": "Music Jingles",
+      "sourceUrls": [
+        "https://kenney.nl/assets/music-jingles"
+      ],
+      "runtimeImported": false,
+      "studioTested": false,
+      "status": "DOWNLOADED",
+      "files": [
+        {
+          "path": "C:\\Users\\godsi\\Downloads\\Guildborne-Catalog-94\\kenney_music-jingles.zip",
+          "sha256": "b729ba57959bd58793d2c5cafa348aaf2655d354f3da35ec4729e03ec77197b8",
+          "bytes": 1239525
+        }
+      ],
+      "license": "CC0"
+    },
+    {
+      "number": 59,
+      "title": "Input Prompts",
+      "sourceUrls": [
+        "https://kenney.nl/assets/input-prompts"
+      ],
+      "runtimeImported": false,
+      "studioTested": false,
+      "status": "DOWNLOADED",
+      "files": [
+        {
+          "path": "C:\\Users\\godsi\\Downloads\\Guildborne-Catalog-94\\kenney_input-prompts_1.5.zip",
+          "sha256": "ac2fcf599080b0f3ba2d174c9474db6df1a0e96ff0662580e2da79a122ab78a1",
+          "bytes": 5070075
+        }
+      ],
+      "license": "CC0"
+    },
+    {
+      "number": 60,
+      "title": "Voiceover Pack (Fighter)",
+      "sourceUrls": [
+        "https://kenney.nl/assets/voiceover-pack-fighter"
+      ],
+      "runtimeImported": false,
+      "studioTested": false,
+      "status": "DOWNLOADED",
+      "files": [
+        {
+          "path": "C:\\Users\\godsi\\Downloads\\Guildborne-Catalog-94\\kenney_voiceover-pack-fighter.zip",
+          "sha256": "368ac0711e59521aff965a833e22e2b5218c397cf8b059ce3cb72e8d13219ee2",
+          "bytes": 1265449
+        }
+      ],
+      "license": "CC0"
+    },
+    {
+      "number": 61,
+      "title": "R15 Combat Starter Motions",
+      "sourceUrls": [
+        "https://cinderlore.com/products/r15-combat-starter-motions"
+      ],
+      "runtimeImported": false,
+      "studioTested": false,
+      "status": "DOWNLOADED",
+      "files": [
+        {
+          "path": "C:\\Users\\godsi\\Downloads\\Guildborne-Catalog-94\\F1-r15-combat-starter-motions.rbxm",
+          "sha256": "1824d3d6126c5f444c0b4f01f2e7a079864e8b4fd03a5ab8619f32586e0c8209",
+          "bytes": 172155
+        }
+      ],
+      "license": "Forbidden as standalone assets; private project use only; Roblox deployment only"
+    },
+    {
+      "number": 62,
+      "title": "R15 NPC Interaction Sampler",
+      "sourceUrls": [
+        "https://cinderlore.com/products/r15-npc-interaction-sampler"
+      ],
+      "runtimeImported": false,
+      "studioTested": false,
+      "status": "DOWNLOADED",
+      "files": [
+        {
+          "path": "C:\\Users\\godsi\\Downloads\\Guildborne-Catalog-94\\F2-r15-npc-interaction-sampler.rbxm",
+          "sha256": "4a980b3946782062cdbb858e341714324a461417775357a5436b8b42affecb1d",
+          "bytes": 409863
+        }
+      ],
+      "license": "Forbidden as standalone assets; private project use only; Roblox deployment only"
+    },
+    {
+      "number": 63,
+      "title": "R15 Movement & Dash Sampler",
+      "sourceUrls": [
+        "https://cinderlore.com/products/r15-movement-dash-sampler"
+      ],
+      "runtimeImported": false,
+      "studioTested": false,
+      "status": "DOWNLOADED",
+      "files": [
+        {
+          "path": "C:\\Users\\godsi\\Downloads\\Guildborne-Catalog-94\\F3-r15-movement-dash-sampler.rbxm",
+          "sha256": "e4002d30fe1762d83622a26fb038624dcfc8ebc5e51f5accc4e9842b068630f3",
+          "bytes": 115392
+        }
+      ],
+      "license": "Forbidden as standalone assets; private project use only; Roblox deployment only"
+    },
+    {
+      "number": 64,
+      "title": "R15 Fishing & Life-Skill Sampler",
+      "sourceUrls": [
+        "https://cinderlore.com/products/r15-fishing-life-skill-sampler"
+      ],
+      "runtimeImported": false,
+      "studioTested": false,
+      "status": "DOWNLOADED",
+      "files": [
+        {
+          "path": "C:\\Users\\godsi\\Downloads\\Guildborne-Catalog-94\\F4-r15-fishing-life-skill-sampler.rbxm",
+          "sha256": "f49018baaa0e6b36c52222eedddc4686cd324904b8850d9b7a4b368e94b343e5",
+          "bytes": 636188
+        }
+      ],
+      "license": "Forbidden as standalone assets; private project use only; Roblox deployment only"
+    },
+    {
+      "number": 65,
+      "title": "Loading Screen",
+      "sourceUrls": [
+        "https://create.roblox.com/store/asset/13595046452"
+      ],
+      "runtimeImported": false,
+      "studioTested": false,
+      "status": "IN_ROBLOX_INVENTORY",
+      "storeAssetId": "13595046452",
+      "account": "iswhlaedev",
+      "receiptFile": "receipts.json"
+    },
+    {
+      "number": 66,
+      "title": "NotificationKit",
+      "sourceUrls": [
+        "https://create.roblox.com/store/asset/129964615928538"
+      ],
+      "runtimeImported": false,
+      "studioTested": false,
+      "status": "IN_ROBLOX_INVENTORY",
+      "storeAssetId": "129964615928538",
+      "account": "iswhlaedev",
+      "receiptFile": "receipts.json"
+    },
+    {
+      "number": 67,
+      "title": "Easy Dialogue System",
+      "sourceUrls": [
+        "https://create.roblox.com/store/asset/18419395844"
+      ],
+      "runtimeImported": false,
+      "studioTested": false,
+      "status": "IN_ROBLOX_INVENTORY",
+      "storeAssetId": "18419395844",
+      "account": "iswhlaedev",
+      "receiptFile": "receipts.json"
+    },
+    {
+      "number": 68,
+      "title": "Customizable Minimap",
+      "sourceUrls": [
+        "https://create.roblox.com/store/asset/9384556526"
+      ],
+      "runtimeImported": false,
+      "studioTested": false,
+      "status": "IN_ROBLOX_INVENTORY",
+      "storeAssetId": "9384556526",
+      "account": "iswhlaedev",
+      "receiptFile": "receipts.json"
+    },
+    {
+      "number": 69,
+      "title": "Settings GUI ADVANCED V1.6",
+      "sourceUrls": [
+        "https://create.roblox.com/store/asset/94517727460767"
+      ],
+      "runtimeImported": false,
+      "studioTested": false,
+      "status": "IN_ROBLOX_INVENTORY",
+      "storeAssetId": "94517727460767",
+      "account": "iswhlaedev",
+      "receiptFile": "receipts.json"
+    },
+    {
+      "number": 70,
+      "title": "Player Profile Card UI",
+      "sourceUrls": [
+        "https://create.roblox.com/store/asset/124873348702500"
+      ],
+      "runtimeImported": false,
+      "studioTested": false,
+      "status": "IN_ROBLOX_INVENTORY",
+      "storeAssetId": "124873348702500",
+      "account": "iswhlaedev",
+      "receiptFile": "receipts.json"
+    },
+    {
+      "number": 71,
+      "title": "Premium Health Bar",
+      "sourceUrls": [
+        "https://create.roblox.com/store/asset/96150583459141"
+      ],
+      "runtimeImported": false,
+      "studioTested": false,
+      "status": "IN_ROBLOX_INVENTORY",
+      "storeAssetId": "96150583459141",
+      "account": "iswhlaedev",
+      "receiptFile": "receipts.json"
+    },
+    {
+      "number": 72,
+      "title": "Clean Inventory Gui",
+      "sourceUrls": [
+        "https://create.roblox.com/store/asset/17395410352"
+      ],
+      "runtimeImported": false,
+      "studioTested": false,
+      "status": "IN_ROBLOX_INVENTORY",
+      "storeAssetId": "17395410352",
+      "account": "iswhlaedev",
+      "receiptFile": "receipts.json"
+    },
+    {
+      "number": 73,
+      "title": "TopbarPlus",
+      "sourceUrls": [
+        "https://create.roblox.com/store/asset/92368439343389",
+        "https://github.com/1ForeverHD/TopbarPlus"
+      ],
+      "runtimeImported": false,
+      "studioTested": false,
+      "status": "IN_ROBLOX_INVENTORY",
+      "storeAssetId": "92368439343389",
+      "account": "iswhlaedev",
+      "receiptFile": "receipts.json"
+    },
+    {
+      "number": 74,
+      "title": "ReactLua",
+      "sourceUrls": [
+        "https://create.roblox.com/store/asset/15621638430",
+        "https://github.com/Roblox/react-luau"
+      ],
+      "runtimeImported": false,
+      "studioTested": false,
+      "status": "IN_ROBLOX_INVENTORY",
+      "storeAssetId": "15621638430",
+      "account": "iswhlaedev",
+      "receiptFile": "receipts.json"
+    },
+    {
+      "number": 75,
+      "title": "Template Tester",
+      "sourceUrls": [
+        "https://create.roblox.com/store/asset/7635753718"
+      ],
+      "runtimeImported": false,
+      "studioTested": false,
+      "status": "IN_ROBLOX_INVENTORY",
+      "storeAssetId": "7635753718",
+      "account": "iswhlaedev",
+      "receiptFile": "receipts.json"
+    },
+    {
+      "number": 76,
+      "title": "UI Pack",
+      "sourceUrls": [
+        "https://kenney.nl/assets/ui-pack"
+      ],
+      "runtimeImported": false,
+      "studioTested": false,
+      "status": "DOWNLOADED",
+      "files": [
+        {
+          "path": "C:\\Users\\godsi\\Downloads\\Guildborne-Catalog-94\\kenney_ui-pack.zip",
+          "sha256": "a8a14a234911eb648c062622915c93e79e94e97cb7f9f375a70f6617f1174318",
+          "bytes": 1229750
+        }
+      ],
+      "license": "CC0"
+    },
+    {
+      "number": 77,
+      "title": "UI Pack - Adventure",
+      "sourceUrls": [
+        "https://kenney.nl/assets/ui-pack-adventure"
+      ],
+      "runtimeImported": false,
+      "studioTested": false,
+      "status": "DOWNLOADED",
+      "files": [
+        {
+          "path": "C:\\Users\\godsi\\Downloads\\Guildborne-Catalog-94\\kenney_ui-pack-adventure.zip",
+          "sha256": "982e8ab66842509ee9214f9c2038e594cbe029f19d1dc177fecaad3b41a67ed3",
+          "bytes": 577463
+        }
+      ],
+      "license": "CC0"
+    },
+    {
+      "number": 78,
+      "title": "Cursor Pack",
+      "sourceUrls": [
+        "https://kenney.nl/assets/cursor-pack"
+      ],
+      "runtimeImported": false,
+      "studioTested": false,
+      "status": "DOWNLOADED",
+      "files": [
+        {
+          "path": "C:\\Users\\godsi\\Downloads\\Guildborne-Catalog-94\\kenney_cursor-pack.zip",
+          "sha256": "baa87634f3cfd294b0c83e70222053aab2f56d19f78eca4067b9b38a555269cc",
+          "bytes": 746901
+        }
+      ],
+      "license": "CC0"
+    },
+    {
+      "number": 79,
+      "title": "Game Icons (Expansion)",
+      "sourceUrls": [
+        "https://kenney.nl/assets/game-icons-expansion"
+      ],
+      "runtimeImported": false,
+      "studioTested": false,
+      "status": "DOWNLOADED",
+      "files": [
+        {
+          "path": "C:\\Users\\godsi\\Downloads\\Guildborne-Catalog-94\\kenney_game-icons-expansion.zip",
+          "sha256": "477471e820b9d8443878da0193d99506419da76ad897031531cdcca240f5672f",
+          "bytes": 2008440
+        }
+      ],
+      "license": "CC0"
+    },
+    {
+      "number": 80,
+      "title": "Mobile Controls",
+      "sourceUrls": [
+        "https://kenney.nl/assets/mobile-controls"
+      ],
+      "runtimeImported": false,
+      "studioTested": false,
+      "status": "DOWNLOADED",
+      "files": [
+        {
+          "path": "C:\\Users\\godsi\\Downloads\\Guildborne-Catalog-94\\mobile-controls-1.zip",
+          "sha256": "7331c648651858fb3186a8c76e0e360e4d3ea71cfec9b502eb5cbb04a02e192b",
+          "bytes": 3146863
+        }
+      ],
+      "license": "CC0"
+    },
+    {
+      "number": 81,
+      "title": "Emotes Pack",
+      "sourceUrls": [
+        "https://kenney.nl/assets/emotes-pack"
+      ],
+      "runtimeImported": false,
+      "studioTested": false,
+      "status": "DOWNLOADED",
+      "files": [
+        {
+          "path": "C:\\Users\\godsi\\Downloads\\Guildborne-Catalog-94\\kenney_emotes-pack.zip",
+          "sha256": "96ab3f2c92d7acd860942efca1c9f1295184b11d3db5c79c28da82036e496526",
+          "bytes": 380191
+        }
+      ],
+      "license": "CC0"
+    },
+    {
+      "number": 82,
+      "title": "Fusion",
+      "sourceUrls": [
+        "https://github.com/dphfox/Fusion"
+      ],
+      "runtimeImported": false,
+      "studioTested": false,
+      "status": "DOWNLOADED",
+      "files": [
+        {
+          "path": "C:\\Users\\godsi\\Downloads\\Guildborne-Catalog-94\\external-agent\\82\\2790f7b6272bdf7cd0bbfee259a2f9d79ea20810.zip",
+          "url": "https://codeload.github.com/dphfox/Fusion/zip/2790f7b6272bdf7cd0bbfee259a2f9d79ea20810",
+          "bytes": 16341431,
+          "sha256": "10e622e98b2cc519713b01f16884d218db84900244cdbbadfe276908dfd3c3d2",
+          "archiveMemberCount": 415,
+          "licenseMembers": [
+            "Fusion-2790f7b6272bdf7cd0bbfee259a2f9d79ea20810/LICENSE"
+          ],
+          "archiveReadable": true
+        }
+      ],
+      "evidence": {
+        "number": 82,
+        "title": "Fusion",
+        "sourceUrls": [
+          "https://github.com/dphfox/Fusion"
+        ],
+        "licenseEvidence": "MIT",
+        "files": [
+          {
+            "path": "C:\\Users\\godsi\\Downloads\\Guildborne-Catalog-94\\external-agent\\82\\2790f7b6272bdf7cd0bbfee259a2f9d79ea20810.zip",
+            "url": "https://codeload.github.com/dphfox/Fusion/zip/2790f7b6272bdf7cd0bbfee259a2f9d79ea20810",
+            "bytes": 16341431,
+            "sha256": "10e622e98b2cc519713b01f16884d218db84900244cdbbadfe276908dfd3c3d2",
+            "archiveMemberCount": 415,
+            "licenseMembers": [
+              "Fusion-2790f7b6272bdf7cd0bbfee259a2f9d79ea20810/LICENSE"
+            ],
+            "archiveReadable": true
+          }
+        ],
+        "installed": false,
+        "runtimeImported": false,
+        "revision": "2790f7b6272bdf7cd0bbfee259a2f9d79ea20810",
+        "status": "DOWNLOADED_NOT_INSTALLED_OR_IMPORTED"
+      }
+    },
+    {
+      "number": 83,
+      "title": "Vide",
+      "sourceUrls": [
+        "https://github.com/centau/vide"
+      ],
+      "runtimeImported": false,
+      "studioTested": false,
+      "status": "DOWNLOADED",
+      "files": [
+        {
+          "path": "C:\\Users\\godsi\\Downloads\\Guildborne-Catalog-94\\external-agent\\83\\b010497a01611762dbfb2f4c48297f6d65cc8a28.zip",
+          "url": "https://codeload.github.com/centau/vide/zip/b010497a01611762dbfb2f4c48297f6d65cc8a28",
+          "bytes": 85933,
+          "sha256": "e00a505da062bba555e540943532d2cd3884de4f4118637203634f646a91dc2c",
+          "archiveMemberCount": 91,
+          "licenseMembers": [
+            "vide-b010497a01611762dbfb2f4c48297f6d65cc8a28/LICENSE.md"
+          ],
+          "archiveReadable": true
+        }
+      ],
+      "evidence": {
+        "number": 83,
+        "title": "Vide",
+        "sourceUrls": [
+          "https://github.com/centau/vide"
+        ],
+        "licenseEvidence": "MIT",
+        "files": [
+          {
+            "path": "C:\\Users\\godsi\\Downloads\\Guildborne-Catalog-94\\external-agent\\83\\b010497a01611762dbfb2f4c48297f6d65cc8a28.zip",
+            "url": "https://codeload.github.com/centau/vide/zip/b010497a01611762dbfb2f4c48297f6d65cc8a28",
+            "bytes": 85933,
+            "sha256": "e00a505da062bba555e540943532d2cd3884de4f4118637203634f646a91dc2c",
+            "archiveMemberCount": 91,
+            "licenseMembers": [
+              "vide-b010497a01611762dbfb2f4c48297f6d65cc8a28/LICENSE.md"
+            ],
+            "archiveReadable": true
+          }
+        ],
+        "installed": false,
+        "runtimeImported": false,
+        "revision": "b010497a01611762dbfb2f4c48297f6d65cc8a28",
+        "status": "DOWNLOADED_NOT_INSTALLED_OR_IMPORTED"
+      }
+    },
+    {
+      "number": 84,
+      "title": "Roblox R15 rig, body cages and clothing cages",
+      "sourceUrls": [
+        "https://create.roblox.com/docs/avatar/resources"
+      ],
+      "runtimeImported": false,
+      "studioTested": false,
+      "status": "DOWNLOADED",
+      "files": [
+        {
+          "path": "C:\\Users\\godsi\\Downloads\\Guildborne-Catalog-94\\external-agent\\84\\Rig_and_Attachments_Templates.zip",
+          "url": "https://prod.docsiteassets.roblox.com/assets/modeling/meshes/reference-files/Rig_and_Attachments_Templates.zip",
+          "bytes": 5373974,
+          "sha256": "e96e8483143716b49369e8692f2c2c2c7ae0d3a3d936b58cf3b5dae73148ff7b",
+          "archiveMemberCount": 10,
+          "licenseMembers": [],
+          "archiveReadable": true
+        },
+        {
+          "path": "C:\\Users\\godsi\\Downloads\\Guildborne-Catalog-94\\external-agent\\84\\Clothing_Cage_Templates.zip",
+          "url": "https://prod.docsiteassets.roblox.com/assets/modeling/meshes/reference-files/Clothing_Cage_Templates.zip",
+          "bytes": 5770539,
+          "sha256": "7a23dc3dbbfa4a2fe72383a4f59a6abd1f701aabcecad0072e91809ac6742e4b",
+          "archiveMemberCount": 10,
+          "licenseMembers": [],
+          "archiveReadable": true
+        },
+        {
+          "path": "C:\\Users\\godsi\\Downloads\\Guildborne-Catalog-94\\external-agent\\84\\Body_Cage_Templates.zip",
+          "url": "https://prod.docsiteassets.roblox.com/assets/modeling/meshes/reference-files/Body_Cage_Templates.zip",
+          "bytes": 5835588,
+          "sha256": "220e3ef25af770b97f46f4b4efbe11d88607e3a2883fa8e11b3db9f065c2a749",
+          "archiveMemberCount": 10,
+          "licenseMembers": [],
+          "archiveReadable": true
+        },
+        {
+          "path": "C:\\Users\\godsi\\Downloads\\Guildborne-Catalog-94\\external-agent\\84\\Combined_Templates.zip",
+          "url": "https://prod.docsiteassets.roblox.com/assets/modeling/meshes/reference-files/Combined_Templates.zip",
+          "bytes": 6084730,
+          "sha256": "14bb469916d34cb68abc75b4c08eed54f826e4ba8af6e4bc4808fbeb3250d3bc",
+          "archiveMemberCount": 8,
+          "licenseMembers": [],
+          "archiveReadable": true
+        }
+      ],
+      "evidence": {
+        "number": 84,
+        "title": "Roblox R15 rig, body cages and clothing cages",
+        "sourceUrls": [
+          "https://create.roblox.com/docs/avatar/resources"
+        ],
+        "licenseEvidence": "ROBLOX_REFERENCE_USE_NOT_VERIFIED_CC0",
+        "files": [
+          {
+            "path": "C:\\Users\\godsi\\Downloads\\Guildborne-Catalog-94\\external-agent\\84\\Rig_and_Attachments_Templates.zip",
+            "url": "https://prod.docsiteassets.roblox.com/assets/modeling/meshes/reference-files/Rig_and_Attachments_Templates.zip",
+            "bytes": 5373974,
+            "sha256": "e96e8483143716b49369e8692f2c2c2c7ae0d3a3d936b58cf3b5dae73148ff7b",
+            "archiveMemberCount": 10,
+            "licenseMembers": [],
+            "archiveReadable": true
+          },
+          {
+            "path": "C:\\Users\\godsi\\Downloads\\Guildborne-Catalog-94\\external-agent\\84\\Clothing_Cage_Templates.zip",
+            "url": "https://prod.docsiteassets.roblox.com/assets/modeling/meshes/reference-files/Clothing_Cage_Templates.zip",
+            "bytes": 5770539,
+            "sha256": "7a23dc3dbbfa4a2fe72383a4f59a6abd1f701aabcecad0072e91809ac6742e4b",
+            "archiveMemberCount": 10,
+            "licenseMembers": [],
+            "archiveReadable": true
+          },
+          {
+            "path": "C:\\Users\\godsi\\Downloads\\Guildborne-Catalog-94\\external-agent\\84\\Body_Cage_Templates.zip",
+            "url": "https://prod.docsiteassets.roblox.com/assets/modeling/meshes/reference-files/Body_Cage_Templates.zip",
+            "bytes": 5835588,
+            "sha256": "220e3ef25af770b97f46f4b4efbe11d88607e3a2883fa8e11b3db9f065c2a749",
+            "archiveMemberCount": 10,
+            "licenseMembers": [],
+            "archiveReadable": true
+          },
+          {
+            "path": "C:\\Users\\godsi\\Downloads\\Guildborne-Catalog-94\\external-agent\\84\\Combined_Templates.zip",
+            "url": "https://prod.docsiteassets.roblox.com/assets/modeling/meshes/reference-files/Combined_Templates.zip",
+            "bytes": 6084730,
+            "sha256": "14bb469916d34cb68abc75b4c08eed54f826e4ba8af6e4bc4808fbeb3250d3bc",
+            "archiveMemberCount": 8,
+            "licenseMembers": [],
+            "archiveReadable": true
+          }
+        ],
+        "installed": false,
+        "runtimeImported": false,
+        "status": "DOWNLOADED_NOT_INSTALLED_OR_IMPORTED"
+      }
+    },
+    {
+      "number": 85,
+      "title": "Roblox body templates and Goblin reference",
+      "sourceUrls": [
+        "https://create.roblox.com/docs/avatar/character-bodies/project-files"
+      ],
+      "runtimeImported": false,
+      "studioTested": false,
+      "status": "DOWNLOADED",
+      "files": [
+        {
+          "path": "C:\\Users\\godsi\\Downloads\\Guildborne-Catalog-94\\external-agent\\85\\GoblinCharacter.zip",
+          "url": "https://prod.docsiteassets.roblox.com/assets/avatar/dynamic-heads/reference-files/GoblinCharacter.zip",
+          "bytes": 6959426,
+          "sha256": "65642c668b69a15bcab36af96f86f6513fa368bd78c83e7a67899415f5024a49",
+          "archiveMemberCount": 14,
+          "licenseMembers": [],
+          "archiveReadable": true
+        },
+        {
+          "path": "C:\\Users\\godsi\\Downloads\\Guildborne-Catalog-94\\external-agent\\85\\RoundFemale.zip",
+          "url": "https://prod.docsiteassets.roblox.com/assets/art/reference-files/RoundFemale.zip",
+          "bytes": 7002038,
+          "sha256": "2e59ef5b5cdd698f8cece5952bfd353796de2986c5d397b57cfdb3a20d047eb1",
+          "archiveMemberCount": 20,
+          "licenseMembers": [],
+          "archiveReadable": true
+        },
+        {
+          "path": "C:\\Users\\godsi\\Downloads\\Guildborne-Catalog-94\\external-agent\\85\\RoundMale.zip",
+          "url": "https://prod.docsiteassets.roblox.com/assets/art/reference-files/RoundMale.zip",
+          "bytes": 6359982,
+          "sha256": "8777d1b3183452940c9f04d3d7a4e9f75a245dccd65d883a03b38c7c0dd58560",
+          "archiveMemberCount": 20,
+          "licenseMembers": [],
+          "archiveReadable": true
+        },
+        {
+          "path": "C:\\Users\\godsi\\Downloads\\Guildborne-Catalog-94\\external-agent\\85\\SquareFemale.zip",
+          "url": "https://prod.docsiteassets.roblox.com/assets/art/reference-files/SquareFemale.zip",
+          "bytes": 4137004,
+          "sha256": "948e438b136547ef7e753b888222b84c7b523bb2e386a752798e5646e97952ed",
+          "archiveMemberCount": 18,
+          "licenseMembers": [],
+          "archiveReadable": true
+        },
+        {
+          "path": "C:\\Users\\godsi\\Downloads\\Guildborne-Catalog-94\\external-agent\\85\\SquareMale.zip",
+          "url": "https://prod.docsiteassets.roblox.com/assets/art/reference-files/SquareMale.zip",
+          "bytes": 5366921,
+          "sha256": "55e09e3585ad3e0a38ce8eb526183b5c4116cfecaa24e3721d996f952686f51f",
+          "archiveMemberCount": 18,
+          "licenseMembers": [],
+          "archiveReadable": true
+        },
+        {
+          "path": "C:\\Users\\godsi\\Downloads\\Guildborne-Catalog-94\\external-agent\\85\\MuzzleFemale.zip",
+          "url": "https://prod.docsiteassets.roblox.com/assets/art/reference-files/MuzzleFemale.zip",
+          "bytes": 7245881,
+          "sha256": "1190a6637922e9b682a46251b15de0966dfe0898e3eff4d3174c8ac8946149f8",
+          "archiveMemberCount": 20,
+          "licenseMembers": [],
+          "archiveReadable": true
+        },
+        {
+          "path": "C:\\Users\\godsi\\Downloads\\Guildborne-Catalog-94\\external-agent\\85\\MuzzleMale.zip",
+          "url": "https://prod.docsiteassets.roblox.com/assets/art/reference-files/MuzzleMale.zip",
+          "bytes": 6635865,
+          "sha256": "921624c31a65196d826f1b968d47184fd8c7228fed6be390d507b82b84fd4d78",
+          "archiveMemberCount": 20,
+          "licenseMembers": [],
+          "archiveReadable": true
+        }
+      ],
+      "evidence": {
+        "number": 85,
+        "title": "Roblox body templates and Goblin reference",
+        "sourceUrls": [
+          "https://create.roblox.com/docs/avatar/character-bodies/project-files"
+        ],
+        "licenseEvidence": "ROBLOX_REFERENCE_USE_NOT_VERIFIED_CC0",
+        "files": [
+          {
+            "path": "C:\\Users\\godsi\\Downloads\\Guildborne-Catalog-94\\external-agent\\85\\GoblinCharacter.zip",
+            "url": "https://prod.docsiteassets.roblox.com/assets/avatar/dynamic-heads/reference-files/GoblinCharacter.zip",
+            "bytes": 6959426,
+            "sha256": "65642c668b69a15bcab36af96f86f6513fa368bd78c83e7a67899415f5024a49",
+            "archiveMemberCount": 14,
+            "licenseMembers": [],
+            "archiveReadable": true
+          },
+          {
+            "path": "C:\\Users\\godsi\\Downloads\\Guildborne-Catalog-94\\external-agent\\85\\RoundFemale.zip",
+            "url": "https://prod.docsiteassets.roblox.com/assets/art/reference-files/RoundFemale.zip",
+            "bytes": 7002038,
+            "sha256": "2e59ef5b5cdd698f8cece5952bfd353796de2986c5d397b57cfdb3a20d047eb1",
+            "archiveMemberCount": 20,
+            "licenseMembers": [],
+            "archiveReadable": true
+          },
+          {
+            "path": "C:\\Users\\godsi\\Downloads\\Guildborne-Catalog-94\\external-agent\\85\\RoundMale.zip",
+            "url": "https://prod.docsiteassets.roblox.com/assets/art/reference-files/RoundMale.zip",
+            "bytes": 6359982,
+            "sha256": "8777d1b3183452940c9f04d3d7a4e9f75a245dccd65d883a03b38c7c0dd58560",
+            "archiveMemberCount": 20,
+            "licenseMembers": [],
+            "archiveReadable": true
+          },
+          {
+            "path": "C:\\Users\\godsi\\Downloads\\Guildborne-Catalog-94\\external-agent\\85\\SquareFemale.zip",
+            "url": "https://prod.docsiteassets.roblox.com/assets/art/reference-files/SquareFemale.zip",
+            "bytes": 4137004,
+            "sha256": "948e438b136547ef7e753b888222b84c7b523bb2e386a752798e5646e97952ed",
+            "archiveMemberCount": 18,
+            "licenseMembers": [],
+            "archiveReadable": true
+          },
+          {
+            "path": "C:\\Users\\godsi\\Downloads\\Guildborne-Catalog-94\\external-agent\\85\\SquareMale.zip",
+            "url": "https://prod.docsiteassets.roblox.com/assets/art/reference-files/SquareMale.zip",
+            "bytes": 5366921,
+            "sha256": "55e09e3585ad3e0a38ce8eb526183b5c4116cfecaa24e3721d996f952686f51f",
+            "archiveMemberCount": 18,
+            "licenseMembers": [],
+            "archiveReadable": true
+          },
+          {
+            "path": "C:\\Users\\godsi\\Downloads\\Guildborne-Catalog-94\\external-agent\\85\\MuzzleFemale.zip",
+            "url": "https://prod.docsiteassets.roblox.com/assets/art/reference-files/MuzzleFemale.zip",
+            "bytes": 7245881,
+            "sha256": "1190a6637922e9b682a46251b15de0966dfe0898e3eff4d3174c8ac8946149f8",
+            "archiveMemberCount": 20,
+            "licenseMembers": [],
+            "archiveReadable": true
+          },
+          {
+            "path": "C:\\Users\\godsi\\Downloads\\Guildborne-Catalog-94\\external-agent\\85\\MuzzleMale.zip",
+            "url": "https://prod.docsiteassets.roblox.com/assets/art/reference-files/MuzzleMale.zip",
+            "bytes": 6635865,
+            "sha256": "921624c31a65196d826f1b968d47184fd8c7228fed6be390d507b82b84fd4d78",
+            "archiveMemberCount": 20,
+            "licenseMembers": [],
+            "archiveReadable": true
+          }
+        ],
+        "installed": false,
+        "runtimeImported": false,
+        "status": "DOWNLOADED_NOT_INSTALLED_OR_IMPORTED"
+      }
+    },
+    {
+      "number": 86,
+      "title": "Roblox caged clothing examples",
+      "sourceUrls": [
+        "https://create.roblox.com/docs/avatar/layered-accessories/project-files"
+      ],
+      "runtimeImported": false,
+      "studioTested": false,
+      "status": "DOWNLOADED",
+      "files": [
+        {
+          "path": "C:\\Users\\godsi\\Downloads\\Guildborne-Catalog-94\\external-agent\\86\\Tshirt-model.fbx",
+          "url": "https://prod.docsiteassets.roblox.com/assets/accessories/reference-files/Tshirt-model.fbx",
+          "bytes": 337708,
+          "sha256": "79343852f6ead85411a6e6b69212c50dc8d75065cb9365c66101f97970a35748"
+        },
+        {
+          "path": "C:\\Users\\godsi\\Downloads\\Guildborne-Catalog-94\\external-agent\\86\\Additional-FBX-assets.zip",
+          "url": "https://prod.docsiteassets.roblox.com/assets/accessories/reference-files/Additional-FBX-assets.zip",
+          "bytes": 24712270,
+          "sha256": "caa8e1d1f4b0f0acab9f07d2d12413f52f2765f9380b568505c48aac4607fc1e",
+          "archiveMemberCount": 180,
+          "licenseMembers": [],
+          "archiveReadable": true
+        }
+      ],
+      "evidence": {
+        "number": 86,
+        "title": "Roblox caged clothing examples",
+        "sourceUrls": [
+          "https://create.roblox.com/docs/avatar/layered-accessories/project-files"
+        ],
+        "licenseEvidence": "ROBLOX_REFERENCE_USE_NOT_VERIFIED_CC0",
+        "files": [
+          {
+            "path": "C:\\Users\\godsi\\Downloads\\Guildborne-Catalog-94\\external-agent\\86\\Tshirt-model.fbx",
+            "url": "https://prod.docsiteassets.roblox.com/assets/accessories/reference-files/Tshirt-model.fbx",
+            "bytes": 337708,
+            "sha256": "79343852f6ead85411a6e6b69212c50dc8d75065cb9365c66101f97970a35748"
+          },
+          {
+            "path": "C:\\Users\\godsi\\Downloads\\Guildborne-Catalog-94\\external-agent\\86\\Additional-FBX-assets.zip",
+            "url": "https://prod.docsiteassets.roblox.com/assets/accessories/reference-files/Additional-FBX-assets.zip",
+            "bytes": 24712270,
+            "sha256": "caa8e1d1f4b0f0acab9f07d2d12413f52f2765f9380b568505c48aac4607fc1e",
+            "archiveMemberCount": 180,
+            "licenseMembers": [],
+            "archiveReadable": true
+          }
+        ],
+        "installed": false,
+        "runtimeImported": false,
+        "status": "DOWNLOADED_NOT_INSTALLED_OR_IMPORTED"
+      }
+    },
+    {
+      "number": 87,
+      "title": "Avatar Setup — Development Avatar",
+      "sourceUrls": [
+        "https://create.roblox.com/docs/avatar-setup"
+      ],
+      "runtimeImported": false,
+      "studioTested": false,
+      "status": "BUILT_IN_NO_ACQUISITION_REQUIRED",
+      "evidence": {
+        "number": 87,
+        "title": "Avatar Setup — Development Avatar",
+        "sourceUrls": [
+          "https://create.roblox.com/docs/avatar-setup"
+        ],
+        "licenseEvidence": "ROBLOX_TOOL_USE",
+        "files": [],
+        "installed": false,
+        "runtimeImported": false,
+        "status": "BUILT_IN_NO_DOWNLOAD_REQUIRED"
+      }
+    },
+    {
+      "number": 88,
+      "title": "Accessory Fitting Tool",
+      "sourceUrls": [
+        "https://create.roblox.com/docs/avatar/accessory-fitting-tool"
+      ],
+      "runtimeImported": false,
+      "studioTested": false,
+      "status": "BUILT_IN_NO_ACQUISITION_REQUIRED",
+      "evidence": {
+        "number": 88,
+        "title": "Accessory Fitting Tool",
+        "sourceUrls": [
+          "https://create.roblox.com/docs/avatar/accessory-fitting-tool"
+        ],
+        "licenseEvidence": "ROBLOX_TOOL_USE",
+        "files": [],
+        "installed": false,
+        "runtimeImported": false,
+        "status": "BUILT_IN_NO_DOWNLOAD_REQUIRED"
+      }
+    },
+    {
+      "number": 89,
+      "title": "MPFB2",
+      "sourceUrls": [
+        "https://github.com/makehumancommunity/mpfb2"
+      ],
+      "runtimeImported": false,
+      "studioTested": false,
+      "status": "DOWNLOADED",
+      "files": [
+        {
+          "path": "C:\\Users\\godsi\\Downloads\\Guildborne-Catalog-94\\external-agent\\89\\3af0cd5a2ffba072e93a34e5f6f494fdc4813ddf.zip",
+          "url": "https://codeload.github.com/makehumancommunity/mpfb2/zip/3af0cd5a2ffba072e93a34e5f6f494fdc4813ddf",
+          "bytes": 45899109,
+          "sha256": "255edfa59f38fb2274b623e464d324d20cb36e6475b2092487ff706b6300a4d4",
+          "archiveMemberCount": 3116,
+          "licenseMembers": [
+            "mpfb2-3af0cd5a2ffba072e93a34e5f6f494fdc4813ddf/LICENSE.ASSETS.md",
+            "mpfb2-3af0cd5a2ffba072e93a34e5f6f494fdc4813ddf/LICENSE.CODE.md",
+            "mpfb2-3af0cd5a2ffba072e93a34e5f6f494fdc4813ddf/LICENSE.md",
+            "mpfb2-3af0cd5a2ffba072e93a34e5f6f494fdc4813ddf/src/mpfb/ui/create_assets/makeclothes/objectproperties/license.json",
+            "mpfb2-3af0cd5a2ffba072e93a34e5f6f494fdc4813ddf/src/mpfb/ui/create_assets/makeexpression/properties/license.json",
+            "mpfb2-3af0cd5a2ffba072e93a34e5f6f494fdc4813ddf/src/mpfb/ui/create_assets/makeskin/objectproperties/license.json"
+          ],
+          "archiveReadable": true
+        }
+      ],
+      "evidence": {
+        "number": 89,
+        "title": "MPFB2",
+        "sourceUrls": [
+          "https://github.com/makehumancommunity/mpfb2"
+        ],
+        "licenseEvidence": "GPLv3_CODE_CC0_BUNDLED_GRAPHICS_OUTPUT_THIRD_PARTY_LICENSES_SEPARATE",
+        "files": [
+          {
+            "path": "C:\\Users\\godsi\\Downloads\\Guildborne-Catalog-94\\external-agent\\89\\3af0cd5a2ffba072e93a34e5f6f494fdc4813ddf.zip",
+            "url": "https://codeload.github.com/makehumancommunity/mpfb2/zip/3af0cd5a2ffba072e93a34e5f6f494fdc4813ddf",
+            "bytes": 45899109,
+            "sha256": "255edfa59f38fb2274b623e464d324d20cb36e6475b2092487ff706b6300a4d4",
+            "archiveMemberCount": 3116,
+            "licenseMembers": [
+              "mpfb2-3af0cd5a2ffba072e93a34e5f6f494fdc4813ddf/LICENSE.ASSETS.md",
+              "mpfb2-3af0cd5a2ffba072e93a34e5f6f494fdc4813ddf/LICENSE.CODE.md",
+              "mpfb2-3af0cd5a2ffba072e93a34e5f6f494fdc4813ddf/LICENSE.md",
+              "mpfb2-3af0cd5a2ffba072e93a34e5f6f494fdc4813ddf/src/mpfb/ui/create_assets/makeclothes/objectproperties/license.json",
+              "mpfb2-3af0cd5a2ffba072e93a34e5f6f494fdc4813ddf/src/mpfb/ui/create_assets/makeexpression/properties/license.json",
+              "mpfb2-3af0cd5a2ffba072e93a34e5f6f494fdc4813ddf/src/mpfb/ui/create_assets/makeskin/objectproperties/license.json"
+            ],
+            "archiveReadable": true
+          }
+        ],
+        "installed": false,
+        "runtimeImported": false,
+        "revision": "3af0cd5a2ffba072e93a34e5f6f494fdc4813ddf",
+        "status": "DOWNLOADED_NOT_INSTALLED_OR_IMPORTED"
+      }
+    },
+    {
+      "number": 90,
+      "title": "MakeHuman Hair01",
+      "sourceUrls": [
+        "https://static.makehumancommunity.org/assets/assetpacks/hair01.html"
+      ],
+      "runtimeImported": false,
+      "studioTested": false,
+      "status": "DOWNLOADED",
+      "files": [
+        {
+          "path": "C:\\Users\\godsi\\Downloads\\Guildborne-Catalog-94\\external-agent\\90\\hair01_cc0.zip",
+          "url": "https://files2.makehumancommunity.org/asset_packs/hair01/hair01_cc0.zip",
+          "bytes": 227775853,
+          "sha256": "49445d69848a313ec41a9970f6a0fe4bcf925c9f1c6ef40a76f119c2e07940c9",
+          "archiveMemberCount": 172,
+          "licenseMembers": [],
+          "archiveReadable": true
+        }
+      ],
+      "evidence": {
+        "number": 90,
+        "title": "MakeHuman Hair01",
+        "sourceUrls": [
+          "https://static.makehumancommunity.org/assets/assetpacks/hair01.html"
+        ],
+        "licenseEvidence": "CC0_AUTHOR_CATALOG",
+        "files": [
+          {
+            "path": "C:\\Users\\godsi\\Downloads\\Guildborne-Catalog-94\\external-agent\\90\\hair01_cc0.zip",
+            "url": "https://files2.makehumancommunity.org/asset_packs/hair01/hair01_cc0.zip",
+            "bytes": 227775853,
+            "sha256": "49445d69848a313ec41a9970f6a0fe4bcf925c9f1c6ef40a76f119c2e07940c9",
+            "archiveMemberCount": 172,
+            "licenseMembers": [],
+            "archiveReadable": true
+          }
+        ],
+        "installed": false,
+        "runtimeImported": false,
+        "status": "DOWNLOADED_NOT_INSTALLED_OR_IMPORTED"
+      }
+    },
+    {
+      "number": 91,
+      "title": "MakeHuman Bodyparts05",
+      "sourceUrls": [
+        "https://static.makehumancommunity.org/assets/assetpacks/bodyparts05.html"
+      ],
+      "runtimeImported": false,
+      "studioTested": false,
+      "status": "DOWNLOADED",
+      "files": [
+        {
+          "path": "C:\\Users\\godsi\\Downloads\\Guildborne-Catalog-94\\external-agent\\91\\bodyparts05_cc0.zip",
+          "url": "https://files2.makehumancommunity.org/asset_packs/bodyparts05/bodyparts05_cc0.zip",
+          "bytes": 6616507,
+          "sha256": "262bba42246f85b2a91f493dd920296b258a3b4544eb495c91c4d08e57c528fd",
+          "archiveMemberCount": 36,
+          "licenseMembers": [],
+          "archiveReadable": true
+        }
+      ],
+      "evidence": {
+        "number": 91,
+        "title": "MakeHuman Bodyparts05",
+        "sourceUrls": [
+          "https://static.makehumancommunity.org/assets/assetpacks/bodyparts05.html"
+        ],
+        "licenseEvidence": "CC0_AUTHOR_CATALOG",
+        "files": [
+          {
+            "path": "C:\\Users\\godsi\\Downloads\\Guildborne-Catalog-94\\external-agent\\91\\bodyparts05_cc0.zip",
+            "url": "https://files2.makehumancommunity.org/asset_packs/bodyparts05/bodyparts05_cc0.zip",
+            "bytes": 6616507,
+            "sha256": "262bba42246f85b2a91f493dd920296b258a3b4544eb495c91c4d08e57c528fd",
+            "archiveMemberCount": 36,
+            "licenseMembers": [],
+            "archiveReadable": true
+          }
+        ],
+        "installed": false,
+        "runtimeImported": false,
+        "status": "DOWNLOADED_NOT_INSTALLED_OR_IMPORTED"
+      }
+    },
+    {
+      "number": 92,
+      "title": "Universal Base Characters — Standard only",
+      "sourceUrls": [
+        "https://quaternius.com/packs/universalbasecharacters.html"
+      ],
+      "runtimeImported": false,
+      "studioTested": false,
+      "status": "DOWNLOADED",
+      "files": [
+        {
+          "path": "C:\\Users\\godsi\\Downloads\\Guildborne-Catalog-94\\external-agent\\92\\Universal Base Characters[Standard].zip",
+          "sourceUrl": "https://quaternius.itch.io/universal-base-characters",
+          "bytes": 128968391,
+          "sha256": "fdbf1804c90dfc1ea03e992bff7da2dfd1a79318e13270a660180f9308455f40",
+          "uploadId": "15861669",
+          "archiveReadable": true,
+          "archiveMemberCount": 128,
+          "licenseMembers": [
+            "Universal Base Characters[Standard]/License_Standard.txt"
+          ]
+        }
+      ],
+      "evidence": {
+        "number": 92,
+        "title": "Universal Base Characters — Standard only",
+        "sourceUrls": [
+          "https://quaternius.com/packs/universalbasecharacters.html"
+        ],
+        "licenseEvidence": "CC0_AUTHOR_PAGE",
+        "files": [
+          {
+            "path": "C:\\Users\\godsi\\Downloads\\Guildborne-Catalog-94\\external-agent\\92\\Universal Base Characters[Standard].zip",
+            "sourceUrl": "https://quaternius.itch.io/universal-base-characters",
+            "bytes": 128968391,
+            "sha256": "fdbf1804c90dfc1ea03e992bff7da2dfd1a79318e13270a660180f9308455f40",
+            "uploadId": "15861669",
+            "archiveReadable": true,
+            "archiveMemberCount": 128,
+            "licenseMembers": [
+              "Universal Base Characters[Standard]/License_Standard.txt"
+            ]
+          }
+        ],
+        "installed": false,
+        "runtimeImported": false,
+        "downloadRoutes": [
+          "https://quaternius.itch.io/universal-base-characters"
+        ],
+        "status": "DOWNLOADED_STANDARD_ONLY"
+      }
+    },
+    {
+      "number": 93,
+      "title": "Modular Character Outfits — Fantasy Standard only",
+      "sourceUrls": [
+        "https://quaternius.com/packs/modularcharacteroutfitsfantasy.html"
+      ],
+      "runtimeImported": false,
+      "studioTested": false,
+      "status": "DOWNLOADED",
+      "files": [
+        {
+          "path": "C:\\Users\\godsi\\Downloads\\Guildborne-Catalog-94\\external-agent\\93\\Modular Character Outfits - Fantasy[Standard].zip",
+          "sourceUrl": "https://quaternius.itch.io/modular-character-outfits-fantasy",
+          "bytes": 294347394,
+          "sha256": "c3468b18871cc8c8f05ab14df7712baf22cb9f389cbd870babf130e595187f70",
+          "uploadId": "16289385",
+          "archiveMemberCount": 136,
+          "licenseMembers": [
+            "Modular Character Outfits - Fantasy[Standard]/License_Standard.txt"
+          ],
+          "archiveReadable": true
+        }
+      ],
+      "evidence": {
+        "number": 93,
+        "title": "Modular Character Outfits — Fantasy Standard only",
+        "sourceUrls": [
+          "https://quaternius.com/packs/modularcharacteroutfitsfantasy.html"
+        ],
+        "licenseEvidence": "CC0_AUTHOR_PAGE",
+        "files": [
+          {
+            "path": "C:\\Users\\godsi\\Downloads\\Guildborne-Catalog-94\\external-agent\\93\\Modular Character Outfits - Fantasy[Standard].zip",
+            "sourceUrl": "https://quaternius.itch.io/modular-character-outfits-fantasy",
+            "bytes": 294347394,
+            "sha256": "c3468b18871cc8c8f05ab14df7712baf22cb9f389cbd870babf130e595187f70",
+            "uploadId": "16289385",
+            "archiveMemberCount": 136,
+            "licenseMembers": [
+              "Modular Character Outfits - Fantasy[Standard]/License_Standard.txt"
+            ],
+            "archiveReadable": true
+          }
+        ],
+        "installed": false,
+        "runtimeImported": false,
+        "downloadRoutes": [
+          "https://quaternius.itch.io/modular-character-outfits-fantasy"
+        ],
+        "status": "DOWNLOADED_STANDARD_ONLY"
+      }
+    },
+    {
+      "number": 94,
+      "title": "Universal Animation Library — Standard only",
+      "sourceUrls": [
+        "https://quaternius.itch.io/universal-animation-library"
+      ],
+      "runtimeImported": false,
+      "studioTested": false,
+      "status": "DOWNLOADED",
+      "files": [
+        {
+          "path": "C:\\Users\\godsi\\Downloads\\Guildborne-Catalog-94\\external-agent\\94\\Universal Animation Library[Standard].zip",
+          "sourceUrl": "https://quaternius.itch.io/universal-animation-library",
+          "bytes": 15904933,
+          "sha256": "cc73fc4e495b82958207316596317a3f40b9fa38065bde1027937452da537724",
+          "uploadId": "17958403",
+          "archiveMemberCount": 12,
+          "licenseMembers": [
+            "Universal Animation Library[Standard]/License.txt"
+          ],
+          "archiveReadable": true
+        }
+      ],
+      "evidence": {
+        "number": 94,
+        "title": "Universal Animation Library — Standard only",
+        "sourceUrls": [
+          "https://quaternius.itch.io/universal-animation-library"
+        ],
+        "licenseEvidence": "CC0_AUTHOR_PAGE",
+        "files": [
+          {
+            "path": "C:\\Users\\godsi\\Downloads\\Guildborne-Catalog-94\\external-agent\\94\\Universal Animation Library[Standard].zip",
+            "sourceUrl": "https://quaternius.itch.io/universal-animation-library",
+            "bytes": 15904933,
+            "sha256": "cc73fc4e495b82958207316596317a3f40b9fa38065bde1027937452da537724",
+            "uploadId": "17958403",
+            "archiveMemberCount": 12,
+            "licenseMembers": [
+              "Universal Animation Library[Standard]/License.txt"
+            ],
+            "archiveReadable": true
+          }
+        ],
+        "installed": false,
+        "runtimeImported": false,
+        "downloadRoutes": [
+          "https://quaternius.itch.io/universal-animation-library/devlog.rss",
+          "https://quaternius.itch.io/universal-animation-library",
+          "https://quaternius.itch.io/-/follow?source=game",
+          "https://quaternius.itch.io/-/unfollow?source=game",
+          "https://quaternius.itch.io/universal-animation-library/devlog",
+          "https://quaternius.itch.io/universal-animation-library/purchase",
+          "https://quaternius.itch.io/universal-animation-library-2",
+          "https://quaternius.itch.io/universal-animation-library/devlog/1555893/added-root-motion-and-other-fixes",
+          "https://quaternius.itch.io/universal-animation-library/devlog/1326702/updated-files-v20-new-animation-library",
+          "https://quaternius.itch.io/universal-animation-library/devlog/909640/small-update-to-the-unreal-setup",
+          "https://quaternius.itch.io/universal-animation-library/report",
+          "https://quaternius.itch.io/universal-animation-library/embed"
+        ],
+        "status": "DOWNLOADED_STANDARD_ONLY"
+      }
+    }
+  ]
+}
