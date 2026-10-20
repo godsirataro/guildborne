@@ -1,3 +1,40 @@
+# Actual local Blade/body contact checkpoint — 2026-10-21
+
+Reviewed source `0fecd4a` followed by final fit `c60f44b`, and evidence `a3a4ed8`,
+pass the bounded sampled contact gate. Full game, GUI and character art remain
+incomplete. Latest verified weekly quota is 59% remaining; stop new waves at30%,
+no shutdown.
+
+[Actual screenshot, traces and independent review](../../character-import/human-standard-strike-contact-20261021/README.md)
+preserve53 hashed files/9,329,013 bytes, the old miss and first-candidate floor
+clearance failure. Local Human Standard/Warrior/training_sword/Basic presentation
+uses a fixed Rx(pi+.45) grip fit and local pose profile. Global ActionPose,
+server damage/range/timing, source dimensions and production renderer are unchanged.
+
+Final270 samples contain36 active samples and12 actual Blade/Block-body overlaps,
+including Tunic at0.252989s inside the existing Contact phase. Grip gaps stay0.
+All120 recorded walk poses clear the queried collidable floor with conservative
+Point bounds, minimum+0.014695 studs. These sampled results from one3.5-stud
+synthetic encounter do not establish continuous sweeps, arbitrary terrain or
+all server-eligible distances. Wedge Point exact contact is unsupported.
+
+Independent review verified all53 evidence hashes,16 source fingerprints and
+recomputed11,340 SAT body-pair classifications with zero mismatches. Full unchanged
+source baseline passes973 tests/403 strict files; existing warnings are retained.
+Server oneBasic/14damage, heroes/rewards/profile writes0. Original equipment and
+client state restore exactly; resource counters return0. Side inspection camera
+restored; Studio stopped in Edit with original fixture sources restored.
+
+Character-import lease released after source/evidence commits. This handoff uses
+quality-slice-integration only and releases it after commit. Next owner must claim
+before broader distance/orientation/target/terrain/companion-motion review. Faces,
+hair, garment fit, gender/races, GUI quality, production rollout, devices and human
+art/UAT signoff remain open. No paid action, publishing or duplicate writer.
+
+Earlier checkpoints below are historical.
+
+---
+
 # Local weapon/action retarget native checkpoint — 2026-10-21
 
 Latest verified weekly quota:38% used /62% remaining. Stop new waves at30%

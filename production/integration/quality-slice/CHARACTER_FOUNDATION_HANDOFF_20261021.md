@@ -230,3 +230,34 @@ original physics/timing/cleanup invariants. No duplicate writer or worktree.
 Character-import is released; quality-slice-integration is only held for this
 handoff and released after commit. Current quota62% remaining; stop new waves
 at30%; no shutdown.
+
+## Latest bounded result: actual Blade-to-body sampled contact
+
+Source `0fecd4a` and final fit `c60f44b`, with independently reviewed evidence
+`a3a4ed8`, close the local sampled contact gate for the single zero-companion
+Human Standard/Warrior/training_sword/Basic fixture. This supersedes the previous
+OPEN strike-contact result only within that measured scope.
+
+[Evidence, actual side-camera image and independent review](../../character-import/human-standard-strike-contact-20261021/README.md)
+retain53 hashed files/9,329,013 bytes. Old baseline had zero overlaps/minimum
+actual Block gap0.969238 studs; first .35 fit contacted but failed two conservative
+floor bounds. Final Rx(pi+.45) and the local pose profile yield12 overlaps among
+270 samples/36 active, including Tunic at0.252989s in Contact. All grip gaps0;
+120 walk poses have no negative queried collidable-floor bounds, minimum+0.014695.
+Invalid invisible-proxy floor query and both prior results remain unchanged.
+
+No authoritative timing/damage/range/physics, source sizes, global ActionPose,
+production renderer, saves or runtime IDs changed. Independent reviewer checked
+16 source fingerprints and recomputed11,340 SAT comparisons without mismatch.
+Full final baseline passes973tests/403strict files with existing warnings.
+One accepted Basic deals14 damage; heroes/rewards/profile writes0. Original
+equipment/client states restore exactly and resources/handles/pending/models0.
+Camera restored; Studio stopped in Edit and original fixture sources restored.
+
+Next owner must claim character-import before extending visual motion checks
+across distances/orientations, representative targets, terrain and companion
+motion. This does not accept continuous sweeps, exact Wedge contact, arbitrary
+terrain, physical devices or final art. Faces/hair, clothing, gender/races,
+GUI quality and creator/renderer rollout remain open. Character lease released;
+quality-slice-integration held only for this handoff and released after commit.
+Latest quota59% remaining; stop new waves at30%; no shutdown.
