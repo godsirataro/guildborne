@@ -86,7 +86,7 @@ return function(ui:any)
      detail.comparison=T("Change: HP {hp} / Attack {attack} / Defense {defense}",{hp=(def.Health or 0)-(previous.Health or 0),attack=(def.Attack or 0)-(previous.Attack or 0),defense=(def.Defense or 0)-(previous.Defense or 0)})
     end
     if shop then
-     table.insert(detail.actions,{name="Buy_"..id,label=if data.hallLevel<(def.HallLevel or 1)then T("Requires Hall Lv{level}",{level=def.HallLevel})else T("Buy · {amount} Gold",{amount=def.Price}),enabled=not busy and data.hallLevel>=(def.HallLevel or 1)and data.gold>=def.Price and count<catalog.EquipmentLimit,callback=function()action("BuyEquipment",{definitionId=id})end})
+     table.insert(detail.actions,{name="Buy_"..id,label=if data.hallLevel<(def.HallLevel or 1)then T("Requires Hall Lv{level}",{level=def.HallLevel or 1})else T("Buy · {amount} Gold",{amount=def.Price}),enabled=not busy and data.hallLevel>=(def.HallLevel or 1)and data.gold>=def.Price and count<catalog.EquipmentLimit,callback=function()action("BuyEquipment",{definitionId=id})end})
     else
      local owner=gear.owner(data,id)
      detail.assignment=T("Assigned: {actor}",{actor=if owner then actorName(owner)else T("Unassigned")})

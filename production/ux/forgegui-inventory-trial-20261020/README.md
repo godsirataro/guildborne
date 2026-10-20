@@ -85,3 +85,28 @@ prove rendered pixels. Native Studio/device/human approval remains pending.
 Only the three authorized UI modules and this new report/check folder changed.
 No combat/HUD/world/server edits, Studio/Blender ownership, paid calls, push, PR
 or publication occurred.
+
+## Shop Hall-label follow-up
+
+Controller integrated the inspection change as `395d0a4` and reported matching
+447 script identities in the full Memory candidate, a 249px inspector, unchanged
+80px grid art and correct zero quantities. Its EN desktop shop screenshot exposed
+`Requires Hall Lv{level}` for Apprentice Staff at Hall0.
+
+The actual catalog omits HallLevel for that item. The existing UI availability
+gate and server buy rule already default it to 1; InventoryView's translation
+parameter now uses the same `def.HallLevel or 1`. This is a one-line display fix,
+not a catalog or purchase-rule change.
+
+Run `python production/ux/forgegui-inventory-trial-20261020/checks/run_hall_label.py`.
+The regression executes actual InventoryView, Equipment, Content and Localization
+with a captured pane model. Before the fix: 10 passed, 2 failed (missing default,
+EN and TH). After: 12 passed, 0 failed. Explicit Hall2/3, threshold, price,
+capacity, busy state, nonmutating selection and intentional canonical purchase
+dispatch are covered. Disabled model flags are checked; this is not an engine
+click test. Raw logs remain `build/hall-label-before.log` and
+`build/hall-label-after.log`.
+
+Follow-up source scope is InventoryView only plus this report and its two new
+check files. Controller owns the final native reread and immutable full baseline;
+the worker did not rerun the full baseline for this display fix.
