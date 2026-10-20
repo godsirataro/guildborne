@@ -4,6 +4,7 @@
 local RunService = game:GetService("RunService")
 local Players = game:GetService("Players")
 local Preview = require(script.Parent.LocalGeometryPreview)
+local LegacyCosmetics = require(script.Parent.LocalLegacyCosmetics)
 local Adapter = {}
 
 type Joint = { motor: Motor6D, bind: CFrame, basis: CFrame }
@@ -14,13 +15,6 @@ type Handle = {
 }
 local active: {[Model]: Handle} = {}
 local pending: {[Model]: {}} = {}
-local bodyNames: {[string]: boolean} = {
-	Head=true, Torso=true, ["Left Arm"]=true, ["Right Arm"]=true,
-	["Left Leg"]=true, ["Right Leg"]=true, UpperTorso=true, LowerTorso=true,
-	LeftUpperArm=true, LeftLowerArm=true, LeftHand=true, RightUpperArm=true,
-	RightLowerArm=true, RightHand=true, LeftUpperLeg=true, LeftLowerLeg=true,
-	LeftFoot=true, RightUpperLeg=true, RightLowerLeg=true, RightFoot=true,
-}
 
 function Adapter.IsAvailable(): boolean
 	return RunService:IsStudio() and RunService:IsClient()
@@ -91,7 +85,7 @@ function Adapter.Attach(actor: Model, selection: any): (Handle?, string?)
 	local visualRoot = model.PrimaryPart
 	if not visualRoot then Preview.Destroy(model); return nil, "PREVIEW_ROOT_MISSING" end
 	local joints: {[string]: Joint} = {}
-	local hidden: {[BasePart]: number} = {}
+	local cosmetics: any = nil
 	local connections: {RBXScriptConnection} = {}
 	local destroyed = false
 	local lastError: string? = nil
@@ -106,11 +100,7 @@ function Adapter.Attach(actor: Model, selection: any): (Handle?, string?)
 		if active[actor] == self then active[actor] = nil end
 		for _, connection in ipairs(connections) do connection:Disconnect() end
 		table.clear(connections)
-		for part, prior in pairs(hidden) do
-			-- Restoring a surviving but reparented part is intentional.
-			pcall(function() part.LocalTransparencyModifier = prior end)
-		end
-		table.clear(hidden)
+		if cosmetics then cosmetics:Destroy() end
 		Preview.Destroy(model :: Model)
 	end
 	function handle:GetDiagnostics(): any
@@ -119,6 +109,8 @@ function Adapter.Attach(actor: Model, selection: any): (Handle?, string?)
 			observedHorizontalDistance=distance, smoothedSpeed=speed,
 			phase=phase, retainedMeshes=Preview.ResourceCount(model),
 			lastError=lastError,
+			cosmetics=if cosmetics then cosmetics:GetDiagnostics() else nil,
+			connections=#connections,
 			clothingFitAccepted=false, combatRetargetAccepted=false,
 		}
 	end
@@ -133,12 +125,8 @@ function Adapter.Attach(actor: Model, selection: any): (Handle?, string?)
 		end
 	end
 	local function hideBody()
-		for _, child in ipairs(actor:GetChildren()) do
-			if child:IsA("BasePart") and bodyNames[child.Name] then
-				if hidden[child] == nil then hidden[child] = child.LocalTransparencyModifier end
-				child.LocalTransparencyModifier = 1
-			end
-		end
+		local success, err = cosmetics:Sync()
+		assert(success,err)
 	end
 	local function guarded(callback: () -> ())
 		if destroyed then return end
@@ -190,6 +178,9 @@ function Adapter.Attach(actor: Model, selection: any): (Handle?, string?)
 		model:PivotTo(root.CFrame * offset)
 		model.Parent = workspace
 		active[actor] = handle
+		local cosmeticState, cosmeticError = LegacyCosmetics.New(actor)
+		assert(cosmeticState,cosmeticError)
+		cosmetics = cosmeticState
 		hideBody()
 		table.insert(connections, actor.Destroying:Connect(function() handle:Destroy() end))
 		table.insert(connections, actor.AncestryChanged:Connect(function()
@@ -255,7 +246,7 @@ function Adapter.Attach(actor: Model, selection: any): (Handle?, string?)
 			end)
 		end))
 		-- The default camera may rewrite local body transparency each frame.
-		-- Reapply only our allowlisted body parts; equipment remains untouched.
+		-- Reclassify source-backed body cosmetics; equipment remains untouched.
 		table.insert(connections, RunService.RenderStepped:Connect(function()
 			guarded(hideBody)
 		end))
