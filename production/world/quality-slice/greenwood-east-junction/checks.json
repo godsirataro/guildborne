@@ -1,0 +1,60 @@
+{
+  "status": "LOCAL_NOT_NATIVE",
+  "sourceHashes": {
+    "src/server/Services/WorldQualitySlice.luau": "b6ce41a3a9007bc908d2892c0ec23403a1f876721aebc32ece7690990d3ac7cc",
+    "src/shared/Config/WorldQuality.luau": "13bbee830d95fa2cbb3854ed4f7afe39eb4e5a7f087d07606da8dca82efe29c4",
+    "tests/world_quality.luau": "53b9eb6f2fc0dc2c40a8ba6a1b485115c430a690406c0c3f5af47eb631241d5a"
+  },
+  "inputsUnchanged": true,
+  "checks": [
+    {
+      "name": "contract",
+      "command": [
+        "C:\\Work\\MySelf\\Guildborne-greenwood-east-junction\\.tools\\luau\\luau.exe",
+        "tests/world_quality.luau"
+      ],
+      "exitCode": 0,
+      "stdoutSHA256": "7f767dced5d263ca6f4ccc49c269acd6e8267532922cc4014235e34377b29d5e",
+      "stderrSHA256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "name": "lifecycle",
+      "command": [
+        "C:\\Work\\MySelf\\Guildborne-greenwood-east-junction\\.tools\\luau\\luau.exe",
+        "C:\\Work\\MySelf\\Guildborne-greenwood-east-junction\\production\\world\\quality-slice\\greenwood-east-junction\\lifecycle.luau"
+      ],
+      "exitCode": 0,
+      "stdoutSHA256": "69264189d9d2562cac58403c33152ad14ce6ec70d91cf65fe215066b26eb8ba6",
+      "stderrSHA256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "name": "compile",
+      "command": [
+        "C:\\Work\\MySelf\\Guildborne-greenwood-east-junction\\.tools\\luau\\luau-compile.exe",
+        "--null",
+        "src/server/Services/WorldQualitySlice.luau",
+        "src/shared/Config/WorldQuality.luau",
+        "tests/world_quality.luau"
+      ],
+      "exitCode": 0,
+      "stdoutSHA256": "f7d076f4fa942289ba5746615bba19594250662ac62cd26246f5ed5bdba9b085",
+      "stderrSHA256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "name": "types",
+      "command": [
+        "C:\\Work\\MySelf\\Guildborne-greenwood-east-junction\\.tools\\luau-lsp\\luau-lsp.exe",
+        "analyze",
+        "--platform=roblox",
+        "--sourcemap=build/sourcemap.json",
+        "--definitions=C:\\Work\\MySelf\\Guildborne-greenwood-east-junction\\.tools\\luau-lsp\\globalTypes.d.luau",
+        "src/server/Services/WorldQualitySlice.luau",
+        "src/shared/Config/WorldQuality.luau",
+        "tests/world_quality.luau"
+      ],
+      "exitCode": 0,
+      "stdoutSHA256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "stderrSHA256": "e154fd387dcf70b0e27282f94dee19d31078c334c73012d84e72ba8d8870b4eb"
+    }
+  ]
+}

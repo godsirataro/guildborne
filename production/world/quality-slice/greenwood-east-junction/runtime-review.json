@@ -1,0 +1,14 @@
+{
+  "reviewer": "city_source_audit",
+  "scope": "Read-only independent review of runtime worker changes",
+  "descriptorTransformTolerance": 1e-10,
+  "result": "No concrete blocking issue found",
+  "reviewed": [
+    "Embedded descriptor equals generated runtime descriptor",
+    "Explicit opt-in only",
+    "Immutable exact readiness and injection rejection",
+    "Independent cleanup rollback and retry",
+    "Actual-wedge polygon tests"
+  ],
+  "native": "NOT_RUN"
+}

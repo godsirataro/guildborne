@@ -1,0 +1,456 @@
+{
+  "base": "4c52678",
+  "status": "INDEPENDENT_LOCAL_REVIEW_COMPLETE_NATIVE_PENDING",
+  "files": [
+    {
+      "path": "assets/production/world-slice/greenwood-east-junction/.gitattributes",
+      "size": 29,
+      "sha256": "730a35ae3d558080083c3103d9ac8100c3f6561678092abe341701dfa331eb1d"
+    },
+    {
+      "path": "assets/production/world-slice/greenwood-east-junction/after/01_arrival_east.png",
+      "size": 1543585,
+      "sha256": "ceb0d9b158fdc531700e662ae131d85842be28779e46349d25e72beb22e17aeb"
+    },
+    {
+      "path": "assets/production/world-slice/greenwood-east-junction/after/02_road_return.png",
+      "size": 1614743,
+      "sha256": "274e1ff68f8f221cb82ad5a377991ba8467ecd572810cea7dc043425e0fd53ee"
+    },
+    {
+      "path": "assets/production/world-slice/greenwood-east-junction/after/03_junction_overview.png",
+      "size": 1745292,
+      "sha256": "12687c28812687a084b1b198ec9f91f7de6658c952f48d3902262ccbb36707de"
+    },
+    {
+      "path": "assets/production/world-slice/greenwood-east-junction/after/04_landing_seam.png",
+      "size": 1662628,
+      "sha256": "4cfc3fa9faba9fb33a6d0c74cb95e15279abf4a59409eb55e561a15c62b42ee6"
+    },
+    {
+      "path": "assets/production/world-slice/greenwood-east-junction/after/render-evidence.json",
+      "size": 2744,
+      "sha256": "298062c5e62efa3595287d05fc2e1f8cd06a83d6f9ce233662f116a9eac984cd"
+    },
+    {
+      "path": "assets/production/world-slice/greenwood-east-junction/after/source.blend",
+      "size": 1718163,
+      "sha256": "93223dab55bc713e39b89b8a12258256f9fdd1e7994b2b201d1f0be509493c75"
+    },
+    {
+      "path": "assets/production/world-slice/greenwood-east-junction/before/01_arrival_east.png",
+      "size": 1580069,
+      "sha256": "898ab6d6807f2443970531d399dc1ce061faf5db68e060271e7b7745af7e456b"
+    },
+    {
+      "path": "assets/production/world-slice/greenwood-east-junction/before/02_road_return.png",
+      "size": 1641266,
+      "sha256": "7e0920756f578264ba803167599284687947810b36bcde24fd9dd7767a61bbf7"
+    },
+    {
+      "path": "assets/production/world-slice/greenwood-east-junction/before/03_junction_overview.png",
+      "size": 1756389,
+      "sha256": "f722c656e9aed3c531310211e37ebf12d9b1fec36474d0ace9493f160a6a2e01"
+    },
+    {
+      "path": "assets/production/world-slice/greenwood-east-junction/before/04_landing_seam.png",
+      "size": 1678531,
+      "sha256": "0508a0bfe0d6b7e0257699ca3f79c1ec24043e4586669716b62a6ccdb74b0cc3"
+    },
+    {
+      "path": "assets/production/world-slice/greenwood-east-junction/before/render-evidence.json",
+      "size": 2455,
+      "sha256": "041f63bca3e814f4e4a3b6f11581bb453c63f0cbcc906085a8c221cfadf6be0f"
+    },
+    {
+      "path": "assets/production/world-slice/greenwood-east-junction/before/source.blend",
+      "size": 1702371,
+      "sha256": "2ad060afb1df1fbb208fe5f96970b0627e59116f8f5d3103272abe8d9467b29e"
+    },
+    {
+      "path": "assets/production/world-slice/greenwood-east-junction/metrics.json",
+      "size": 176,
+      "sha256": "56596d29f655718dcf23c7d6c03d95fb1cac43aa10e6e36ebde4761f830945f2"
+    },
+    {
+      "path": "assets/production/world-slice/greenwood-east-junction/provenance.json",
+      "size": 1370,
+      "sha256": "17cc6c407f7e0b5f69fce9f1c77f571f1adac4c6d6a60c46d72461a943325911"
+    },
+    {
+      "path": "assets/production/world-slice/greenwood-east-junction/scenery.mesh.json",
+      "size": 8995,
+      "sha256": "eb69d5718298f7c7d15174eac5a60e2579876116201f233c21526b46fd359151"
+    },
+    {
+      "path": "assets/production/world-slice/greenwood-east-junction/solids.json",
+      "size": 1279,
+      "sha256": "dcb3eb1b29012d35276bbfbdfb66e285923a92d5cf738aaad54fb5924a7d4dae"
+    },
+    {
+      "path": "production/world/quality-slice/greenwood-east-junction/.gitattributes",
+      "size": 29,
+      "sha256": "730a35ae3d558080083c3103d9ac8100c3f6561678092abe341701dfa331eb1d"
+    },
+    {
+      "path": "production/world/quality-slice/greenwood-east-junction/after.exit.txt",
+      "size": 3,
+      "sha256": "13bf7b3039c63bf5a50491fa3cfd8eb4e699d1ba1436315aef9cbe5711530354"
+    },
+    {
+      "path": "production/world/quality-slice/greenwood-east-junction/after.stderr.log",
+      "size": 581,
+      "sha256": "0f2ce78f92da925462128ea884bdbb0e7d05baf774d12be9a691bbff9b79f498"
+    },
+    {
+      "path": "production/world/quality-slice/greenwood-east-junction/after.stdout.log",
+      "size": 789,
+      "sha256": "892aba5b5a1e36db0b9d72dcff986115d1c651105955c263e2c715bcdc84392e"
+    },
+    {
+      "path": "production/world/quality-slice/greenwood-east-junction/baseline.exit.txt",
+      "size": 3,
+      "sha256": "13bf7b3039c63bf5a50491fa3cfd8eb4e699d1ba1436315aef9cbe5711530354"
+    },
+    {
+      "path": "production/world/quality-slice/greenwood-east-junction/baseline.stderr.log",
+      "size": 2016,
+      "sha256": "7f9f0004c451589c107aef44eba6b53a7e3b44b422b8dbe513f7e63796e396c7"
+    },
+    {
+      "path": "production/world/quality-slice/greenwood-east-junction/baseline.stdout.log",
+      "size": 76269,
+      "sha256": "8ed04574db055dfb7ee2bc6db7d6533d9dd231330b9300292f03701d16673398"
+    },
+    {
+      "path": "production/world/quality-slice/greenwood-east-junction/before.exit.txt",
+      "size": 3,
+      "sha256": "13bf7b3039c63bf5a50491fa3cfd8eb4e699d1ba1436315aef9cbe5711530354"
+    },
+    {
+      "path": "production/world/quality-slice/greenwood-east-junction/before.stderr.log",
+      "size": 581,
+      "sha256": "0f2ce78f92da925462128ea884bdbb0e7d05baf774d12be9a691bbff9b79f498"
+    },
+    {
+      "path": "production/world/quality-slice/greenwood-east-junction/before.stdout.log",
+      "size": 793,
+      "sha256": "1b05a45bd0f51d879e488cff3607796277639f079579c1c161010189e7b77dd2"
+    },
+    {
+      "path": "production/world/quality-slice/greenwood-east-junction/build.py",
+      "size": 7155,
+      "sha256": "fbb19252dc5e7d63620362fc81b31576500aa009f84f2fd9a7b5c2e0baa64109"
+    },
+    {
+      "path": "production/world/quality-slice/greenwood-east-junction/cameras.json",
+      "size": 839,
+      "sha256": "fbeab00cb2dd31611aaef88306e70b27ad7e646958895dfb76d73d97475fad05"
+    },
+    {
+      "path": "production/world/quality-slice/greenwood-east-junction/character.json",
+      "size": 77,
+      "sha256": "ca17c512dd6e6356f86b526da66ade001d8be68765c44e887dd5921c65917612"
+    },
+    {
+      "path": "production/world/quality-slice/greenwood-east-junction/character.stderr",
+      "size": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "path": "production/world/quality-slice/greenwood-east-junction/character.stdout",
+      "size": 105,
+      "sha256": "9587510d9ded658a7b58bb3947984c73fb69103725f1e9f0d173352ab79cddcf"
+    },
+    {
+      "path": "production/world/quality-slice/greenwood-east-junction/checkpoint.json",
+      "size": 467,
+      "sha256": "949efd5f5c5b5364a8abddeb217eb3c10291a40064400a2a526258fb23d112ac"
+    },
+    {
+      "path": "production/world/quality-slice/greenwood-east-junction/checks.json",
+      "size": 2597,
+      "sha256": "c468a52f233caf6f44ad4bfcd6f2af9ae68ec96476d166b47bed03222e163d13"
+    },
+    {
+      "path": "production/world/quality-slice/greenwood-east-junction/compile.stderr",
+      "size": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "path": "production/world/quality-slice/greenwood-east-junction/compile.stdout",
+      "size": 79,
+      "sha256": "f7d076f4fa942289ba5746615bba19594250662ac62cd26246f5ed5bdba9b085"
+    },
+    {
+      "path": "production/world/quality-slice/greenwood-east-junction/contract.stderr",
+      "size": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "path": "production/world/quality-slice/greenwood-east-junction/contract.stdout",
+      "size": 69,
+      "sha256": "7f767dced5d263ca6f4ccc49c269acd6e8267532922cc4014235e34377b29d5e"
+    },
+    {
+      "path": "production/world/quality-slice/greenwood-east-junction/design-bounds.json",
+      "size": 2371,
+      "sha256": "6ff7884e84e6ea12c95cc410a16c409e4a75405d4b0389bfedad507f0d43be9b"
+    },
+    {
+      "path": "production/world/quality-slice/greenwood-east-junction/ground.json",
+      "size": 7812,
+      "sha256": "368193f4e1d6cc5a9030eb56eabb3db058944f228c0899824ad3f743ef768840"
+    },
+    {
+      "path": "production/world/quality-slice/greenwood-east-junction/HANDOFF.md",
+      "size": 5134,
+      "sha256": "b6633e0d1cb5414d7192dc4d83dec2fb134e0d0754677bb725e177843b756b9f"
+    },
+    {
+      "path": "production/world/quality-slice/greenwood-east-junction/independent-01.exit.json",
+      "size": 17,
+      "sha256": "bc3b6dbf9284b62654e163d7d8bb21c0e0206d75c8d09936cb049cec67a579b0"
+    },
+    {
+      "path": "production/world/quality-slice/greenwood-east-junction/independent-01.stderr.txt",
+      "size": 1503,
+      "sha256": "df50e3cdc0b986608b716331e57502be3bd5c3a08cee12b29b15701ec8c50131"
+    },
+    {
+      "path": "production/world/quality-slice/greenwood-east-junction/independent-01.stdout.txt",
+      "size": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "path": "production/world/quality-slice/greenwood-east-junction/independent-02.exit.json",
+      "size": 17,
+      "sha256": "d45db54bba0c56e2691a52869729c0a3eade7f5d50545e7832a20e3262a9d422"
+    },
+    {
+      "path": "production/world/quality-slice/greenwood-east-junction/independent-02.stderr.txt",
+      "size": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "path": "production/world/quality-slice/greenwood-east-junction/independent-02.stdout.txt",
+      "size": 3625,
+      "sha256": "a4818332b6fc1e7a0b50eba952b21b8f333de8386b581063953e1c65d08a3629"
+    },
+    {
+      "path": "production/world/quality-slice/greenwood-east-junction/independent-03.exit.json",
+      "size": 17,
+      "sha256": "d45db54bba0c56e2691a52869729c0a3eade7f5d50545e7832a20e3262a9d422"
+    },
+    {
+      "path": "production/world/quality-slice/greenwood-east-junction/independent-03.stderr.txt",
+      "size": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "path": "production/world/quality-slice/greenwood-east-junction/independent-03.stdout.txt",
+      "size": 3669,
+      "sha256": "8e2acab7e35991ee50b18ec4a7f96352b5869417eeb0436a2842ee9007986e50"
+    },
+    {
+      "path": "production/world/quality-slice/greenwood-east-junction/independent-final-evidence.json",
+      "size": 8673,
+      "sha256": "ed8553cf8af4a3dc98ab71935af272b3e83f71508231602dcf7ff97159077506"
+    },
+    {
+      "path": "production/world/quality-slice/greenwood-east-junction/independent-final-geometry.json",
+      "size": 3669,
+      "sha256": "8e2acab7e35991ee50b18ec4a7f96352b5869417eeb0436a2842ee9007986e50"
+    },
+    {
+      "path": "production/world/quality-slice/greenwood-east-junction/independent-geometry.json",
+      "size": 3625,
+      "sha256": "a4818332b6fc1e7a0b50eba952b21b8f333de8386b581063953e1c65d08a3629"
+    },
+    {
+      "path": "production/world/quality-slice/greenwood-east-junction/independent-review.md",
+      "size": 3537,
+      "sha256": "7546b4280b816f368e2b37e599cd3ede870370f99490faae8ac8e13ca2fb6cf3"
+    },
+    {
+      "path": "production/world/quality-slice/greenwood-east-junction/independent-visual-review.md",
+      "size": 1717,
+      "sha256": "29a58ed437ce23b7f912b5f659ce9ca0e3a2a92bd55274010395522cee28020a"
+    },
+    {
+      "path": "production/world/quality-slice/greenwood-east-junction/lifecycle.luau",
+      "size": 20646,
+      "sha256": "f5f338db69aa75cca8be8f84a0335ddccdb1137825b963a753360f4c724b08cc"
+    },
+    {
+      "path": "production/world/quality-slice/greenwood-east-junction/lifecycle.stderr",
+      "size": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "path": "production/world/quality-slice/greenwood-east-junction/lifecycle.stdout",
+      "size": 151,
+      "sha256": "69264189d9d2562cac58403c33152ad14ce6ec70d91cf65fe215066b26eb8ba6"
+    },
+    {
+      "path": "production/world/quality-slice/greenwood-east-junction/preflight-0.json",
+      "size": 77,
+      "sha256": "bfb2a9e049f5e5612ec25cd863d1352e8bd342ca3486c09208a11b7caa8fadf2"
+    },
+    {
+      "path": "production/world/quality-slice/greenwood-east-junction/preflight-0.stderr",
+      "size": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "path": "production/world/quality-slice/greenwood-east-junction/preflight-0.stdout",
+      "size": 90,
+      "sha256": "c114f88d1de9271b0ed02127334ac62b7bb81a83c89ddb8a3c941c3e732946f0"
+    },
+    {
+      "path": "production/world/quality-slice/greenwood-east-junction/preflight-1.json",
+      "size": 75,
+      "sha256": "acc69262f2d1bd5298a77796765b19579e49a540bd5cdeb8d30bd732434b5868"
+    },
+    {
+      "path": "production/world/quality-slice/greenwood-east-junction/preflight-1.stderr",
+      "size": 89,
+      "sha256": "29f3fdf9b8d983dc644dd9c3d932374722c4371104d10f0d9bb0643da3bd2c47"
+    },
+    {
+      "path": "production/world/quality-slice/greenwood-east-junction/preflight-1.stdout",
+      "size": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "path": "production/world/quality-slice/greenwood-east-junction/preflight-2.json",
+      "size": 74,
+      "sha256": "d608ae6a7754d7ca89d0923bb6529ea6348c6fa83b1e954b9f09ed887d942f1d"
+    },
+    {
+      "path": "production/world/quality-slice/greenwood-east-junction/preflight-2.stderr",
+      "size": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "path": "production/world/quality-slice/greenwood-east-junction/preflight-2.stdout",
+      "size": 366,
+      "sha256": "6ab702a584ccf22f901655e8561b0bd1a76a397eded7489437b9cc2f13bd657a"
+    },
+    {
+      "path": "production/world/quality-slice/greenwood-east-junction/preflight-3.json",
+      "size": 76,
+      "sha256": "fcc4714f4d67e5c0af17d73ebb18f2f2f8d4e520955a40aa95b8ac79ba95d48a"
+    },
+    {
+      "path": "production/world/quality-slice/greenwood-east-junction/preflight-3.stderr",
+      "size": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "path": "production/world/quality-slice/greenwood-east-junction/preflight-3.stdout",
+      "size": 88,
+      "sha256": "425e920e88765646aada4e6f5561609e562e4d39ae0c56f8c634cc70305a5e87"
+    },
+    {
+      "path": "production/world/quality-slice/greenwood-east-junction/preflight-4.json",
+      "size": 72,
+      "sha256": "e31d4145e48aee90dfc8a6b8e9cfb15f12b60635ebca669898577f5f6a7f6edd"
+    },
+    {
+      "path": "production/world/quality-slice/greenwood-east-junction/preflight-4.stderr",
+      "size": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "path": "production/world/quality-slice/greenwood-east-junction/preflight-4.stdout",
+      "size": 66,
+      "sha256": "884fb7e20b638371cbf37e0e0949cabf2bbd637c45d34d7b744ba4434a41bf61"
+    },
+    {
+      "path": "production/world/quality-slice/greenwood-east-junction/provenance.json",
+      "size": 1370,
+      "sha256": "17cc6c407f7e0b5f69fce9f1c77f571f1adac4c6d6a60c46d72461a943325911"
+    },
+    {
+      "path": "production/world/quality-slice/greenwood-east-junction/reconcile.json",
+      "size": 68,
+      "sha256": "5ac145b48823a25902372e8b61597fefdb8fa5713b9243452d75a659faec5c82"
+    },
+    {
+      "path": "production/world/quality-slice/greenwood-east-junction/reconcile.stderr",
+      "size": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "path": "production/world/quality-slice/greenwood-east-junction/reconcile.stdout",
+      "size": 266,
+      "sha256": "86e64c4d4aef88d4cd57b1cb6d5d109425656ee5526162a2b471921d1035f126"
+    },
+    {
+      "path": "production/world/quality-slice/greenwood-east-junction/render-context.json",
+      "size": 24046,
+      "sha256": "fd5a9c0ce5f3dd970afe71339b5e20e4b1e82b447cc396597de7d9bcdf9ec53d"
+    },
+    {
+      "path": "production/world/quality-slice/greenwood-east-junction/render_compare.py",
+      "size": 7443,
+      "sha256": "da678e8511e6f66096a7158962fd21e601d82ad4e0b11346db41b57436e7c9e3"
+    },
+    {
+      "path": "production/world/quality-slice/greenwood-east-junction/run_checks.py",
+      "size": 1515,
+      "sha256": "b8efb51963064acefd4fc233dec4f13dbde43f5323df756f0c12e752cdcc6a21"
+    },
+    {
+      "path": "production/world/quality-slice/greenwood-east-junction/runtime-descriptor.json",
+      "size": 5463,
+      "sha256": "1b75a4aabc1e224390c5bc212600350445cc0098864063a77e52d6ba24eddc81"
+    },
+    {
+      "path": "production/world/quality-slice/greenwood-east-junction/runtime-review.json",
+      "size": 481,
+      "sha256": "454f1eaef8c99cf1749d1e2cd26718f2df0db5df94acc3e484a52547c007fc7e"
+    },
+    {
+      "path": "production/world/quality-slice/greenwood-east-junction/tool-setup.stderr.log",
+      "size": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "path": "production/world/quality-slice/greenwood-east-junction/tool-setup.stdout.log",
+      "size": 118,
+      "sha256": "8474903551960cfe2090672063611ba939cb9b7b6f3eafac18a7d78b4580e7c3"
+    },
+    {
+      "path": "production/world/quality-slice/greenwood-east-junction/types.stderr",
+      "size": 245,
+      "sha256": "e154fd387dcf70b0e27282f94dee19d31078c334c73012d84e72ba8d8870b4eb"
+    },
+    {
+      "path": "production/world/quality-slice/greenwood-east-junction/types.stdout",
+      "size": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "path": "production/world/quality-slice/greenwood-east-junction/verify.py",
+      "size": 12412,
+      "sha256": "be14b101b65008d89dd756d617a42057ef2111d875cdfda1021e8eeab5c91f65"
+    },
+    {
+      "path": "src/server/Services/WorldQualitySlice.luau",
+      "size": 20227,
+      "sha256": "b6ce41a3a9007bc908d2892c0ec23403a1f876721aebc32ece7690990d3ac7cc"
+    },
+    {
+      "path": "src/shared/Config/WorldQuality.luau",
+      "size": 203581,
+      "sha256": "13bbee830d95fa2cbb3854ed4f7afe39eb4e5a7f087d07606da8dca82efe29c4"
+    },
+    {
+      "path": "tests/world_quality.luau",
+      "size": 29054,
+      "sha256": "53b9eb6f2fc0dc2c40a8ba6a1b485115c430a690406c0c3f5af47eb631241d5a"
+    }
+  ]
+}

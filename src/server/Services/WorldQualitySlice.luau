@@ -32,12 +32,15 @@ return function(parent: Instance): any
 	local ironveilCleanup: (() -> ())? = nil
 	local ashenCorridor: any = nil
 	local ashenCleanup: (() -> ())? = nil
+	local eastJunction: any = nil
+	local eastJunctionCleanup: (() -> ())? = nil
 	function result.destroy()
 		if destroyed then return end
 		destroyed=true
 		if corridorCleanup then corridorCleanup() end
 		if ironveilCleanup then ironveilCleanup() end
 		if ashenCleanup then ashenCleanup() end
+		if eastJunctionCleanup then eastJunctionCleanup() end
 		for _,old in ipairs(changed) do
 			local p=old.part
 			if p.Parent then
@@ -46,6 +49,58 @@ return function(parent: Instance): any
 		end
 		folder:Destroy()
 		active[parent]=nil
+	end
+	-- Local approach support only: no route registration, transit or native edits.
+	-- The controller must gate any approach-dependent activation on this handle.
+	function result.buildGreenwoodEastJunction(): any
+		assert(not destroyed, "Destroyed preview handle")
+		if eastJunction then return eastJunction end
+		Quality.validateGreenwoodEastJunction(Quality.GreenwoodEastJunction)
+		local spec=immutableCopy(Quality.GreenwoodEastJunction)
+		assert(region.Parent==parent and parent:FindFirstChild("Greenwood")==region, "Missing original Greenwood")
+		assert(not parent:FindFirstChild("GreenwoodEastJunction"), "Unowned junction exists")
+		local geometry=Instance.new("Model");geometry.Name="GreenwoodEastJunction"
+		local released=false
+		local function cleanup()
+			if released then return end
+			released=true;geometry:Destroy();eastJunction=nil;eastJunctionCleanup=nil
+		end
+		local success,err=pcall(function()
+			local expected: {any}={}
+			local metadata=immutableCopy({LocalPreviewOnly=true,JunctionId=spec.id,Region=spec.region,
+				MinimumWalkWidth=spec.minimumWidth,FullWalkWidth=spec.fullWidth,FullWidthStartX=14,FloorY=2.1})
+			for key,value in pairs(metadata) do geometry:SetAttribute(key,value) end
+			for _,def in ipairs(spec.parts) do
+				local part=Instance.new("WedgePart");part.Name=def.name;part.Anchored=true
+				part.Size=Vector3.new(table.unpack(def.size));part.CFrame=CFrame.new(table.unpack(def.cframe))
+				part.Color=Color3.new(table.unpack(def.color));part.Material=Enum.Material.Ground
+				part.CanCollide=true;part.CanQuery=true;part.CanTouch=false;part.CastShadow=false
+				part.TopSurface=Enum.SurfaceType.Smooth;part.BottomSurface=Enum.SurfaceType.Smooth;part.Parent=geometry
+				table.insert(expected,{part=part,name=part.Name,size=part.Size,cframe=part.CFrame,collisionGroup=part.CollisionGroup})
+			end
+			local handle: any={id=spec.id,geometry=geometry,ownedModel=geometry,reviewedGeometry=spec}
+			function handle.isReady(): boolean
+				if destroyed or released or geometry.Parent~=parent or geometry.Name~="GreenwoodEastJunction"
+					or region.Parent~=parent or parent:FindFirstChild("Greenwood")~=region then return false end
+				local matching=0
+				for _,child in ipairs(parent:GetChildren()) do if child.Name=="GreenwoodEastJunction" then matching+=1 end end
+				if matching~=1 or parent:FindFirstChild("GreenwoodEastJunction")~=geometry then return false end
+				if #geometry:GetChildren()~=#expected or #geometry:GetDescendants()~=#expected then return false end
+				for key,value in pairs(metadata) do if geometry:GetAttribute(key)~=value then return false end end
+				for _,record in ipairs(expected) do
+					local part=record.part
+					if part.ClassName~="WedgePart" or part.Parent~=geometry or part.Name~=record.name or not part.Anchored
+						or not part.CanCollide or not part.CanQuery or part.CanTouch
+						or part.CollisionGroup~=record.collisionGroup
+						or part.Size~=record.size or part.CFrame~=record.cframe then return false end
+				end
+				return #expected==spec.colliderCount
+			end
+			handle.destroy=cleanup
+			geometry.Parent=parent;eastJunctionCleanup=cleanup;eastJunction=handle
+		end)
+		if not success then cleanup();error(tostring(err)) end
+		return eastJunction
 	end
 	-- Explicit controller opt-in; existing preview initialization never opens the city.
 	function result.buildContinuousCorridor(): any

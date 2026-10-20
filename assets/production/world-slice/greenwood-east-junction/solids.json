@@ -1,0 +1,67 @@
+[
+  {
+    "name": "embedded_course_0",
+    "meshId": "greenwood_junction_quay_00",
+    "firstVertex": 1,
+    "vertexCount": 8,
+    "firstTriangle": 1,
+    "triangleCount": 12,
+    "center": [
+      11.5,
+      0.31499999999999995,
+      1504.325
+    ]
+  },
+  {
+    "name": "embedded_course_1",
+    "meshId": "greenwood_junction_quay_00",
+    "firstVertex": 9,
+    "vertexCount": 8,
+    "firstTriangle": 13,
+    "triangleCount": 12,
+    "center": [
+      21.0,
+      0.31499999999999995,
+      1504.95
+    ]
+  },
+  {
+    "name": "embedded_course_2",
+    "meshId": "greenwood_junction_quay_00",
+    "firstVertex": 17,
+    "vertexCount": 8,
+    "firstTriangle": 25,
+    "triangleCount": 12,
+    "center": [
+      35.0,
+      0.31499999999999995,
+      1505.2
+    ]
+  },
+  {
+    "name": "embedded_course_3",
+    "meshId": "greenwood_junction_quay_00",
+    "firstVertex": 25,
+    "vertexCount": 8,
+    "firstTriangle": 37,
+    "triangleCount": 12,
+    "center": [
+      49.0,
+      0.31499999999999995,
+      1505.45
+    ]
+  },
+  {
+    "name": "embedded_course_4",
+    "meshId": "greenwood_junction_quay_00",
+    "firstVertex": 33,
+    "vertexCount": 8,
+    "firstTriangle": 49,
+    "triangleCount": 12,
+    "center": [
+      63.0,
+      0.31499999999999995,
+      1505.7
+    ]
+  }
+]

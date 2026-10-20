@@ -216,4 +216,43 @@ Quality.GreenwoodIronveilCorridor={["id"]="greenwood_ironveil_south",["fromZone"
 -- BEGIN GENERATED IRONVEIL ASHEN CORRIDOR
 Quality.IronveilAshenCorridor={["id"]="ironveil_ashen_south",["fromZone"]="Ironveil",["toZone"]="Ashen",["centerline"]={{610,2.1,1505},{650,2.1,1505},{750,2.1,1505},{850,2.1,1505},{900,2.1,1505}},["colliderCount"]=6,["parts"]={{["name"]="Landing_Ironveil",["kind"]="Part",["size"]={28,0.4,26},["cframe"]={610,1.9,1506,1,0,0,0,1,0,0,0,1},["color"]={0.48,0.47,0.43},["collision"]=true},{["name"]="Road_0",["kind"]="Part",["size"]={26,0.4,24},["cframe"]={637,1.9,1505,1,0,0,0,1,0,0,0,1},["color"]={0.48,0.47,0.43},["collision"]=true},{["name"]="Road_1",["kind"]="Part",["size"]={100,0.4,24},["cframe"]={700,1.9,1505,1,0,0,0,1,0,0,0,1},["color"]={0.48,0.47,0.43},["collision"]=true},{["name"]="Road_2",["kind"]="Part",["size"]={100,0.4,24},["cframe"]={800,1.9,1505,1,0,0,0,1,0,0,0,1},["color"]={0.48,0.47,0.43},["collision"]=true},{["name"]="Road_3",["kind"]="Part",["size"]={36,0.4,24},["cframe"]={868,1.9,1505,1,0,0,0,1,0,0,0,1},["color"]={0.48,0.47,0.43},["collision"]=true},{["name"]="Landing_Ashen",["kind"]="Part",["size"]={28,0.4,26},["cframe"]={900,1.9,1506,1,0,0,0,1,0,0,0,1},["color"]={0.48,0.47,0.43},["collision"]=true}},["volumes"]={{["cframe"]={630,7.1,1505,1,0,0,0,1,0,0,0,1},["size"]={68,18,24}},{["cframe"]={700,7.1,1505,1,0,0,0,1,0,0,0,1},["size"]={128,18,24}},{["cframe"]={800,7.1,1505,1,0,0,0,1,0,0,0,1},["size"]={128,18,24}},{["cframe"]={875,7.1,1505,1,0,0,0,1,0,0,0,1},["size"]={78,18,24}}},["entries"]={["Ironveil"]={["cframe"]={610,7.5,1506,1,0,0,0,1,0,0,0,1},["size"]={28,15,26}},["Ashen"]={["cframe"]={900,7.5,1506,1,0,0,0,1,0,0,0,1},["size"]={28,15,26}}},["safeRecovery"]={["Ironveil"]={600,7,1500},["Ashen"]={900,7,1500}}}
 -- END GENERATED IRONVEIL ASHEN CORRIDOR
+-- Separate local support, not another travel route. Arrival stays 22 studs wide.
+local function freezeJunction(value: any): any
+ if type(value)~="table" then return value end
+ for _,child in pairs(value) do freezeJunction(child) end
+ return table.freeze(value)
+end
+local junctionGeometry=freezeJunction({["id"]="greenwood_east_junction",["region"]="Greenwood",["centerline"]={{9,2.1,1504.0},{14,2.1,1505.0},{70,2.1,1506.0}},["crosssections"]={{["x"]=9,["minZ"]=1493,["maxZ"]=1515,["width"]=22,["center"]={9,2.1,1504.0},["road"]={{9,2.1,1493},{9,2.1,1515}}},{["x"]=14,["minZ"]=1493,["maxZ"]=1517,["width"]=24,["center"]={14,2.1,1505.0},["road"]={{14,2.1,1493},{14,2.1,1517}}},{["x"]=70,["minZ"]=1494,["maxZ"]=1518,["width"]=24,["center"]={70,2.1,1506.0},["road"]={{70,2.1,1494},{70,2.1,1518}}}},["minimumWidth"]=22,["fullWidth"]=24,["colliderCount"]=8,["parts"]={{["name"]="Junction_000",["kind"]="WedgePart",["size"]={0.4,4.486993590464003,2.9777321100351224},["cframe"]={11.5,1.9000000000000001,1516.0,-0.0,-0.9789804197376094,-0.20395425411200752,-1.0000000000000002,0.0,0.0,0.0,0.20395425411198082,-0.9789804197376036},["color"]={0.58,0.51,0.36},["collision"]=true},{["name"]="Junction_001",["kind"]="WedgePart",["size"]={0.4,4.486993590464003,21.537569234227405},["cframe"]={9.0,1.9000000000000001,1504.0,0.0,-0.9789804197376094,0.20395425411200013,1.0000000000000002,0.0,0.0,-0.0,0.20395425411198082,0.9789804197376052},["color"]={0.58,0.51,0.36},["collision"]=true},{["name"]="Junction_002",["kind"]="WedgePart",["size"]={0.4,4.8949020986880285,1.0197712705600253},["cframe"]={11.5,1.9000000000000001,1493.0,0.0,0.9789804197376042,0.20395425411199772,-1.0000000000000002,0.0,0.0,0.0,-0.20395425411200507,0.9789804197376059},["color"]={0.58,0.51,0.36},["collision"]=true},{["name"]="Junction_003",["kind"]="WedgePart",["size"]={0.4,4.8949020986880285,23.4955300737025},["cframe"]={14.0,1.9000000000000001,1505.0,0.0,0.9789804197376042,-0.2039542541120012,1.0,0.0,0.0,0.0,-0.20395425411200507,-0.978980419737605},["color"]={0.58,0.51,0.36},["collision"]=true},{["name"]="Junction_004",["kind"]="WedgePart",["size"]={0.4,21.91530917850033,51.54337225687454},["cframe"]={42.0,1.9000000000000001,1517.5,-0.0,-0.4076508403738878,-0.9131378824375109,-1.0,0.0,0.0,0.0,0.9131378824375116,-0.40765084037389004},["color"]={0.58,0.51,0.36},["collision"]=true},{["name"]="Junction_005",["kind"]="WedgePart",["size"]={0.4,21.91530917850033,9.783620168973309},["cframe"]={14.0,1.9000000000000001,1505.0,0.0,-0.4076508403738878,0.9131378824375136,0.9999999999999998,0.0,0.0,-0.0,0.9131378824375116,0.40765084037388355},["color"]={0.58,0.51,0.36},["collision"]=true},{["name"]="Junction_006",["kind"]="WedgePart",["size"]={0.4,21.91530917850033,51.54337225687454},["cframe"]={42.0,1.9000000000000001,1493.5,0.0,0.4076508403738878,0.9131378824375109,-1.0,0.0,0.0,0.0,-0.9131378824375116,0.40765084037389004},["color"]={0.58,0.51,0.36},["collision"]=true},{["name"]="Junction_007",["kind"]="WedgePart",["size"]={0.4,21.91530917850033,9.783620168973309},["cframe"]={70.0,1.9000000000000001,1506.0,0.0,0.4076508403738878,-0.9131378824375136,0.9999999999999998,0.0,0.0,0.0,-0.9131378824375116,-0.40765084037388355},["color"]={0.58,0.51,0.36},["collision"]=true}}})
+Quality.GreenwoodEastJunction=junctionGeometry
+function Quality.validateGreenwoodEastJunction(spec: any): boolean
+ local function exact(actual: any, expected: any)
+  if type(expected)=="table" then
+   assert(type(actual)=="table","Junction geometry table")
+   for key,value in pairs(expected) do exact(actual[key],value) end
+   for key in pairs(actual) do assert(expected[key]~=nil,"Unexpected junction field") end
+  elseif type(expected)=="number" then
+   assert(finite(actual) and math.abs(actual-expected)<.000001,"Junction geometry placement")
+  else assert(actual==expected,"Junction geometry identity") end
+ end
+ exact(spec,junctionGeometry)
+ -- Check actual wedge corners against the approved tapered ribbon. These six
+ -- vertices, not an enclosing box, describe the thin triangulated support.
+ local wedge={{-.5,-.5,-.5},{.5,-.5,-.5},{.5,-.5,.5},{-.5,-.5,.5},{-.5,.5,.5},{.5,.5,.5}}
+ for _,part in ipairs(spec.parts) do
+  for _,corner in ipairs(wedge) do
+   local world={}
+   for axis=1,3 do
+    world[axis]=part.cframe[axis]
+    for k=1,3 do world[axis]+=part.cframe[3+(axis-1)*3+k]*part.size[k]*corner[k] end
+   end
+   local x,y,z=world[1],world[2],world[3]
+   assert(x>=9-.00001 and x<=70+.00001 and y>=1.7-.00001 and y<=2.1+.00001,"Junction safe extent")
+   local low=if x<=14 then 1493 else 1493+(x-14)/56
+   local high=if x<=14 then 1515+(x-9)*.4 else 1517+(x-14)/56
+   assert(z>=low-.00001 and z<=high+.00001,"Junction ribbon extent")
+  end
+ end
+ return true
+end
+
 return table.freeze(Quality)

@@ -1,0 +1,35 @@
+{
+  "status": "BLENDER_RENDERED_NOT_NATIVE",
+  "variant": "before",
+  "inputHashes": {
+    "production/world/quality-slice/greenwood-ironveil/ground.json": "85b0866cf5ed468ef323f52c5e33f825fcb89155d1a91c2753d593271ccdeb70",
+    "assets/production/world-slice/world-slice.mesh.json": "9baaf8de0faf3ff7f4a4f2c32ea692e48aa9dbb021f609e3530029ed7844ddc7",
+    "assets/production/world-slice/greenwood-ironveil/scenery.mesh.json": "b885085377b3e56faf9f6a0fe072d0db4672f6b87c5241c6d61ff34c70a65539"
+  },
+  "cameraSHA256": "fbeab00cb2dd31611aaef88306e70b27ad7e646958895dfb76d73d97475fad05",
+  "contextSHA256": "fd5a9c0ce5f3dd970afe71339b5e20e4b1e82b447cc396597de7d9bcdf9ec53d",
+  "rendererSHA256": "da678e8511e6f66096a7158962fd21e601d82ad4e0b11346db41b57436e7c9e3",
+  "nativeParts": 60,
+  "existingEastRoadIncluded": true,
+  "sourceHashes": {
+    "src/server/Services/AdventureMapKit.luau": "978724afd99c499757601d56634ecf0b00ff21921fbec8b12a617c0fed1fe4c7",
+    "src/server/Services/RegionalWorld.luau": "13e0ce9ed41893a6a46d46955ec4dafd8159a720df5d1ff89f91cd69ec7b6c09",
+    "src/shared/Config/City.luau": "f78e3df184b45f430575425e1e294f00f94031014b2e5e682d0549890f47e985",
+    "production/world/quality-slice/greenwood-ironveil/ground.json": "85b0866cf5ed468ef323f52c5e33f825fcb89155d1a91c2753d593271ccdeb70",
+    "assets/production/world-slice/world-slice.mesh.json": "9baaf8de0faf3ff7f4a4f2c32ea692e48aa9dbb021f609e3530029ed7844ddc7",
+    "assets/production/world-slice/greenwood-ironveil/scenery.mesh.json": "b885085377b3e56faf9f6a0fe072d0db4672f6b87c5241c6d61ff34c70a65539",
+    "assets/production/world-slice/ironveil-ore-yard/scenery.mesh.json": "4e65f4e254ae58bed6c5825d68948dc8689eb10332fb2763bdae37f86e371d20"
+  },
+  "junctionIncluded": false,
+  "blendSHA256": "2ad060afb1df1fbb208fe5f96970b0627e59116f8f5d3103272abe8d9467b29e",
+  "omissions": [
+    "Actors, dynamic resource art, GUI, private campaign pockets and distant city omitted",
+    "Roblox materials, lighting, physics and gameplay not reproduced"
+  ],
+  "images": {
+    "01_arrival_east.png": "898ab6d6807f2443970531d399dc1ce061faf5db68e060271e7b7745af7e456b",
+    "02_road_return.png": "7e0920756f578264ba803167599284687947810b36bcde24fd9dd7767a61bbf7",
+    "03_junction_overview.png": "f722c656e9aed3c531310211e37ebf12d9b1fec36474d0ace9493f160a6a2e01",
+    "04_landing_seam.png": "0508a0bfe0d6b7e0257699ca3f79c1ec24043e4586669716b62a6ccdb74b0cc3"
+  }
+}

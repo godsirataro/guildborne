@@ -1,0 +1,62 @@
+{
+  "resolution": [
+    1600,
+    900
+  ],
+  "samples": 24,
+  "lens": 28,
+  "views": [
+    {
+      "name": "01_arrival_east",
+      "eye": [
+        0,
+        7.1,
+        1505
+      ],
+      "target": [
+        70,
+        3.5,
+        1506
+      ]
+    },
+    {
+      "name": "02_road_return",
+      "eye": [
+        82,
+        7.1,
+        1506
+      ],
+      "target": [
+        0,
+        3.5,
+        1505
+      ]
+    },
+    {
+      "name": "03_junction_overview",
+      "eye": [
+        40,
+        90,
+        1600
+      ],
+      "target": [
+        35,
+        0,
+        1505
+      ]
+    },
+    {
+      "name": "04_landing_seam",
+      "eye": [
+        17,
+        6,
+        1536
+      ],
+      "target": [
+        20,
+        1.5,
+        1505
+      ]
+    }
+  ]
+}

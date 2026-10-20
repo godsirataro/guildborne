@@ -1,0 +1,18 @@
+{
+  "status": "ORIGINAL_FILE_GENERATED_NOT_NATIVE",
+  "origin": "Original island-embedded stone quay facing; native wedge floor extends existing junction, no third-party assets/providers.",
+  "recipe": "production/world/quality-slice/greenwood-east-junction/build.py",
+  "recipeSha256": "fbb19252dc5e7d63620362fc81b31576500aa009f84f2fd9a7b5c2e0baa64109",
+  "helperSha256": "5ab3711f35c92131017e7be1d35c3e0c0915661c25df677897fba06d98f5bc75",
+  "sourceHashes": {
+    "src/server/Services/AdventureMapKit.luau": "978724afd99c499757601d56634ecf0b00ff21921fbec8b12a617c0fed1fe4c7",
+    "src/server/Services/WorldQualityAssets.luau": "a0951be5714ee9a5dfef58da35a3e78fac72dfc711adb744cdf95a9893e7398f",
+    "src/server/Services/RegionalWorld.luau": "13e0ce9ed41893a6a46d46955ec4dafd8159a720df5d1ff89f91cd69ec7b6c09",
+    "production/world/quality-slice/greenwood-ironveil/ground.json": "85b0866cf5ed468ef323f52c5e33f825fcb89155d1a91c2753d593271ccdeb70",
+    "assets/production/world-slice/world-slice.mesh.json": "9baaf8de0faf3ff7f4a4f2c32ea692e48aa9dbb021f609e3530029ed7844ddc7"
+  },
+  "packetSha256": "eb69d5718298f7c7d15174eac5a60e2579876116201f233c21526b46fd359151",
+  "groundSha256": "368193f4e1d6cc5a9030eb56eabb3db058944f228c0899824ad3f743ef768840",
+  "runtimeDescriptorSha256": "1b75a4aabc1e224390c5bc212600350445cc0098864063a77e52d6ba24eddc81",
+  "runtimeIds": null
+}

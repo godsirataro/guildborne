@@ -1,0 +1,1275 @@
+{
+  "status": "SOURCE_RECONSTRUCTION_NOT_NATIVE",
+  "sourceHashes": {
+    "src/server/Services/AdventureMapKit.luau": "978724afd99c499757601d56634ecf0b00ff21921fbec8b12a617c0fed1fe4c7",
+    "src/server/Services/RegionalWorld.luau": "13e0ce9ed41893a6a46d46955ec4dafd8159a720df5d1ff89f91cd69ec7b6c09",
+    "src/shared/Config/City.luau": "f78e3df184b45f430575425e1e294f00f94031014b2e5e682d0549890f47e985",
+    "production/world/quality-slice/greenwood-ironveil/ground.json": "85b0866cf5ed468ef323f52c5e33f825fcb89155d1a91c2753d593271ccdeb70",
+    "assets/production/world-slice/world-slice.mesh.json": "9baaf8de0faf3ff7f4a4f2c32ea692e48aa9dbb021f609e3530029ed7844ddc7",
+    "assets/production/world-slice/greenwood-ironveil/scenery.mesh.json": "b885085377b3e56faf9f6a0fe072d0db4672f6b87c5241c6d61ff34c70a65539",
+    "assets/production/world-slice/ironveil-ore-yard/scenery.mesh.json": "4e65f4e254ae58bed6c5825d68948dc8689eb10332fb2763bdae37f86e371d20"
+  },
+  "parts": [
+    {
+      "name": "Greenwood_Island",
+      "position": [
+        0.0,
+        0.0,
+        1400.0
+      ],
+      "size": [
+        220.0,
+        4.0,
+        200.0
+      ],
+      "color": [
+        0.2901960784313726,
+        0.4588235294117647,
+        0.2823529411764706
+      ],
+      "collide": true,
+      "className": "Part",
+      "yaw": 0.0
+    },
+    {
+      "name": "Greenwood_Landing",
+      "position": [
+        0.0,
+        0.0,
+        1513.0
+      ],
+      "size": [
+        28.0,
+        4.0,
+        26.0
+      ],
+      "color": [
+        0.4549019607843137,
+        0.30980392156862746,
+        0.19607843137254902
+      ],
+      "collide": true,
+      "className": "Part",
+      "yaw": 0.0
+    },
+    {
+      "name": "Greenwood_BossRise",
+      "position": [
+        0.0,
+        4.0,
+        1330.0
+      ],
+      "size": [
+        96.0,
+        4.0,
+        50.0
+      ],
+      "color": [
+        0.39215686274509803,
+        0.3058823529411765,
+        0.2196078431372549
+      ],
+      "collide": true,
+      "className": "Part",
+      "yaw": 0.0
+    },
+    {
+      "name": "Greenwood_RootAscent",
+      "position": [
+        0.0,
+        4.0,
+        1367.5
+      ],
+      "size": [
+        20.0,
+        4.0,
+        25.0
+      ],
+      "color": [
+        0.7058823529411765,
+        0.6,
+        0.4235294117647059
+      ],
+      "collide": true,
+      "className": "WedgePart",
+      "yaw": 180.0
+    },
+    {
+      "name": "Greenwood_Trail",
+      "position": [
+        -60.0,
+        0.04999999999999982,
+        1410.0
+      ],
+      "size": [
+        18.0,
+        4.0,
+        90.0
+      ],
+      "color": [
+        0.7058823529411765,
+        0.6,
+        0.4235294117647059
+      ],
+      "collide": true,
+      "className": "Part",
+      "yaw": 0.0
+    },
+    {
+      "name": "Greenwood_Trail",
+      "position": [
+        60.0,
+        0.04999999999999982,
+        1410.0
+      ],
+      "size": [
+        18.0,
+        4.0,
+        90.0
+      ],
+      "color": [
+        0.7058823529411765,
+        0.6,
+        0.4235294117647059
+      ],
+      "collide": true,
+      "className": "Part",
+      "yaw": 0.0
+    },
+    {
+      "name": "Greenwood_CrossTrail",
+      "position": [
+        0.0,
+        0.06000000000000005,
+        1450.0
+      ],
+      "size": [
+        138.0,
+        4.0,
+        18.0
+      ],
+      "color": [
+        0.7058823529411765,
+        0.6,
+        0.4235294117647059
+      ],
+      "collide": true,
+      "className": "Part",
+      "yaw": 0.0
+    },
+    {
+      "name": "Greenwood_CrossTrail",
+      "position": [
+        0.0,
+        0.06000000000000005,
+        1375.0
+      ],
+      "size": [
+        138.0,
+        4.0,
+        18.0
+      ],
+      "color": [
+        0.7058823529411765,
+        0.6,
+        0.4235294117647059
+      ],
+      "collide": true,
+      "className": "Part",
+      "yaw": 0.0
+    },
+    {
+      "name": "Greenwood_ArrivalTrail",
+      "position": [
+        0.0,
+        0.04999999999999982,
+        1478.0
+      ],
+      "size": [
+        18.0,
+        4.0,
+        46.0
+      ],
+      "color": [
+        0.7058823529411765,
+        0.6,
+        0.4235294117647059
+      ],
+      "collide": true,
+      "className": "Part",
+      "yaw": 0.0
+    },
+    {
+      "name": "Greenwood_Trunk",
+      "position": [
+        -90.0,
+        8.0,
+        1475.0
+      ],
+      "size": [
+        3.0,
+        12.0,
+        3.0
+      ],
+      "color": [
+        0.4549019607843137,
+        0.30980392156862746,
+        0.19607843137254902
+      ],
+      "collide": true,
+      "className": "Part",
+      "yaw": 0.0
+    },
+    {
+      "name": "Greenwood_Canopy",
+      "position": [
+        -90.0,
+        13.0,
+        1475.0
+      ],
+      "size": [
+        13.0,
+        6.0,
+        13.0
+      ],
+      "color": [
+        0.21568627450980393,
+        0.3764705882352941,
+        0.24705882352941178
+      ],
+      "collide": false,
+      "className": "Part",
+      "yaw": 0.0
+    },
+    {
+      "name": "Greenwood_Canopy",
+      "position": [
+        -90.0,
+        18.0,
+        1475.0
+      ],
+      "size": [
+        10.0,
+        6.0,
+        10.0
+      ],
+      "color": [
+        0.21568627450980393,
+        0.3764705882352941,
+        0.24705882352941178
+      ],
+      "collide": false,
+      "className": "Part",
+      "yaw": 0.0
+    },
+    {
+      "name": "Greenwood_Canopy",
+      "position": [
+        -90.0,
+        22.0,
+        1475.0
+      ],
+      "size": [
+        6.0,
+        6.0,
+        6.0
+      ],
+      "color": [
+        0.21568627450980393,
+        0.3764705882352941,
+        0.24705882352941178
+      ],
+      "collide": false,
+      "className": "Part",
+      "yaw": 0.0
+    },
+    {
+      "name": "Greenwood_Trunk",
+      "position": [
+        85.0,
+        8.0,
+        1472.0
+      ],
+      "size": [
+        3.0,
+        12.0,
+        3.0
+      ],
+      "color": [
+        0.4549019607843137,
+        0.30980392156862746,
+        0.19607843137254902
+      ],
+      "collide": true,
+      "className": "Part",
+      "yaw": 0.0
+    },
+    {
+      "name": "Greenwood_Canopy",
+      "position": [
+        85.0,
+        13.0,
+        1472.0
+      ],
+      "size": [
+        13.0,
+        6.0,
+        13.0
+      ],
+      "color": [
+        0.21568627450980393,
+        0.3764705882352941,
+        0.24705882352941178
+      ],
+      "collide": false,
+      "className": "Part",
+      "yaw": 0.0
+    },
+    {
+      "name": "Greenwood_Canopy",
+      "position": [
+        85.0,
+        18.0,
+        1472.0
+      ],
+      "size": [
+        10.0,
+        6.0,
+        10.0
+      ],
+      "color": [
+        0.21568627450980393,
+        0.3764705882352941,
+        0.24705882352941178
+      ],
+      "collide": false,
+      "className": "Part",
+      "yaw": 0.0
+    },
+    {
+      "name": "Greenwood_Canopy",
+      "position": [
+        85.0,
+        22.0,
+        1472.0
+      ],
+      "size": [
+        6.0,
+        6.0,
+        6.0
+      ],
+      "color": [
+        0.21568627450980393,
+        0.3764705882352941,
+        0.24705882352941178
+      ],
+      "collide": false,
+      "className": "Part",
+      "yaw": 0.0
+    },
+    {
+      "name": "Greenwood_Trunk",
+      "position": [
+        -89.0,
+        8.0,
+        1418.0
+      ],
+      "size": [
+        3.0,
+        12.0,
+        3.0
+      ],
+      "color": [
+        0.4549019607843137,
+        0.30980392156862746,
+        0.19607843137254902
+      ],
+      "collide": true,
+      "className": "Part",
+      "yaw": 0.0
+    },
+    {
+      "name": "Greenwood_Canopy",
+      "position": [
+        -89.0,
+        13.0,
+        1418.0
+      ],
+      "size": [
+        13.0,
+        6.0,
+        13.0
+      ],
+      "color": [
+        0.21568627450980393,
+        0.3764705882352941,
+        0.24705882352941178
+      ],
+      "collide": false,
+      "className": "Part",
+      "yaw": 0.0
+    },
+    {
+      "name": "Greenwood_Canopy",
+      "position": [
+        -89.0,
+        18.0,
+        1418.0
+      ],
+      "size": [
+        10.0,
+        6.0,
+        10.0
+      ],
+      "color": [
+        0.21568627450980393,
+        0.3764705882352941,
+        0.24705882352941178
+      ],
+      "collide": false,
+      "className": "Part",
+      "yaw": 0.0
+    },
+    {
+      "name": "Greenwood_Canopy",
+      "position": [
+        -89.0,
+        22.0,
+        1418.0
+      ],
+      "size": [
+        6.0,
+        6.0,
+        6.0
+      ],
+      "color": [
+        0.21568627450980393,
+        0.3764705882352941,
+        0.24705882352941178
+      ],
+      "collide": false,
+      "className": "Part",
+      "yaw": 0.0
+    },
+    {
+      "name": "Greenwood_Trunk",
+      "position": [
+        90.0,
+        8.0,
+        1405.0
+      ],
+      "size": [
+        3.0,
+        12.0,
+        3.0
+      ],
+      "color": [
+        0.4549019607843137,
+        0.30980392156862746,
+        0.19607843137254902
+      ],
+      "collide": true,
+      "className": "Part",
+      "yaw": 0.0
+    },
+    {
+      "name": "Greenwood_Canopy",
+      "position": [
+        90.0,
+        13.0,
+        1405.0
+      ],
+      "size": [
+        13.0,
+        6.0,
+        13.0
+      ],
+      "color": [
+        0.21568627450980393,
+        0.3764705882352941,
+        0.24705882352941178
+      ],
+      "collide": false,
+      "className": "Part",
+      "yaw": 0.0
+    },
+    {
+      "name": "Greenwood_Canopy",
+      "position": [
+        90.0,
+        18.0,
+        1405.0
+      ],
+      "size": [
+        10.0,
+        6.0,
+        10.0
+      ],
+      "color": [
+        0.21568627450980393,
+        0.3764705882352941,
+        0.24705882352941178
+      ],
+      "collide": false,
+      "className": "Part",
+      "yaw": 0.0
+    },
+    {
+      "name": "Greenwood_Canopy",
+      "position": [
+        90.0,
+        22.0,
+        1405.0
+      ],
+      "size": [
+        6.0,
+        6.0,
+        6.0
+      ],
+      "color": [
+        0.21568627450980393,
+        0.3764705882352941,
+        0.24705882352941178
+      ],
+      "collide": false,
+      "className": "Part",
+      "yaw": 0.0
+    },
+    {
+      "name": "Greenwood_Trunk",
+      "position": [
+        -85.0,
+        8.0,
+        1350.0
+      ],
+      "size": [
+        3.0,
+        12.0,
+        3.0
+      ],
+      "color": [
+        0.4549019607843137,
+        0.30980392156862746,
+        0.19607843137254902
+      ],
+      "collide": true,
+      "className": "Part",
+      "yaw": 0.0
+    },
+    {
+      "name": "Greenwood_Canopy",
+      "position": [
+        -85.0,
+        13.0,
+        1350.0
+      ],
+      "size": [
+        13.0,
+        6.0,
+        13.0
+      ],
+      "color": [
+        0.21568627450980393,
+        0.3764705882352941,
+        0.24705882352941178
+      ],
+      "collide": false,
+      "className": "Part",
+      "yaw": 0.0
+    },
+    {
+      "name": "Greenwood_Canopy",
+      "position": [
+        -85.0,
+        18.0,
+        1350.0
+      ],
+      "size": [
+        10.0,
+        6.0,
+        10.0
+      ],
+      "color": [
+        0.21568627450980393,
+        0.3764705882352941,
+        0.24705882352941178
+      ],
+      "collide": false,
+      "className": "Part",
+      "yaw": 0.0
+    },
+    {
+      "name": "Greenwood_Canopy",
+      "position": [
+        -85.0,
+        22.0,
+        1350.0
+      ],
+      "size": [
+        6.0,
+        6.0,
+        6.0
+      ],
+      "color": [
+        0.21568627450980393,
+        0.3764705882352941,
+        0.24705882352941178
+      ],
+      "collide": false,
+      "className": "Part",
+      "yaw": 0.0
+    },
+    {
+      "name": "Greenwood_Trunk",
+      "position": [
+        87.0,
+        8.0,
+        1340.0
+      ],
+      "size": [
+        3.0,
+        12.0,
+        3.0
+      ],
+      "color": [
+        0.4549019607843137,
+        0.30980392156862746,
+        0.19607843137254902
+      ],
+      "collide": true,
+      "className": "Part",
+      "yaw": 0.0
+    },
+    {
+      "name": "Greenwood_Canopy",
+      "position": [
+        87.0,
+        13.0,
+        1340.0
+      ],
+      "size": [
+        13.0,
+        6.0,
+        13.0
+      ],
+      "color": [
+        0.21568627450980393,
+        0.3764705882352941,
+        0.24705882352941178
+      ],
+      "collide": false,
+      "className": "Part",
+      "yaw": 0.0
+    },
+    {
+      "name": "Greenwood_Canopy",
+      "position": [
+        87.0,
+        18.0,
+        1340.0
+      ],
+      "size": [
+        10.0,
+        6.0,
+        10.0
+      ],
+      "color": [
+        0.21568627450980393,
+        0.3764705882352941,
+        0.24705882352941178
+      ],
+      "collide": false,
+      "className": "Part",
+      "yaw": 0.0
+    },
+    {
+      "name": "Greenwood_Canopy",
+      "position": [
+        87.0,
+        22.0,
+        1340.0
+      ],
+      "size": [
+        6.0,
+        6.0,
+        6.0
+      ],
+      "color": [
+        0.21568627450980393,
+        0.3764705882352941,
+        0.24705882352941178
+      ],
+      "collide": false,
+      "className": "Part",
+      "yaw": 0.0
+    },
+    {
+      "name": "Greenwood_Trunk",
+      "position": [
+        -45.0,
+        8.0,
+        1408.0
+      ],
+      "size": [
+        3.0,
+        12.0,
+        3.0
+      ],
+      "color": [
+        0.4549019607843137,
+        0.30980392156862746,
+        0.19607843137254902
+      ],
+      "collide": true,
+      "className": "Part",
+      "yaw": 0.0
+    },
+    {
+      "name": "Greenwood_Canopy",
+      "position": [
+        -45.0,
+        13.0,
+        1408.0
+      ],
+      "size": [
+        13.0,
+        6.0,
+        13.0
+      ],
+      "color": [
+        0.21568627450980393,
+        0.3764705882352941,
+        0.24705882352941178
+      ],
+      "collide": false,
+      "className": "Part",
+      "yaw": 0.0
+    },
+    {
+      "name": "Greenwood_Canopy",
+      "position": [
+        -45.0,
+        18.0,
+        1408.0
+      ],
+      "size": [
+        10.0,
+        6.0,
+        10.0
+      ],
+      "color": [
+        0.21568627450980393,
+        0.3764705882352941,
+        0.24705882352941178
+      ],
+      "collide": false,
+      "className": "Part",
+      "yaw": 0.0
+    },
+    {
+      "name": "Greenwood_Canopy",
+      "position": [
+        -45.0,
+        22.0,
+        1408.0
+      ],
+      "size": [
+        6.0,
+        6.0,
+        6.0
+      ],
+      "color": [
+        0.21568627450980393,
+        0.3764705882352941,
+        0.24705882352941178
+      ],
+      "collide": false,
+      "className": "Part",
+      "yaw": 0.0
+    },
+    {
+      "name": "Greenwood_Trunk",
+      "position": [
+        42.0,
+        8.0,
+        1412.0
+      ],
+      "size": [
+        3.0,
+        12.0,
+        3.0
+      ],
+      "color": [
+        0.4549019607843137,
+        0.30980392156862746,
+        0.19607843137254902
+      ],
+      "collide": true,
+      "className": "Part",
+      "yaw": 0.0
+    },
+    {
+      "name": "Greenwood_Canopy",
+      "position": [
+        42.0,
+        13.0,
+        1412.0
+      ],
+      "size": [
+        13.0,
+        6.0,
+        13.0
+      ],
+      "color": [
+        0.21568627450980393,
+        0.3764705882352941,
+        0.24705882352941178
+      ],
+      "collide": false,
+      "className": "Part",
+      "yaw": 0.0
+    },
+    {
+      "name": "Greenwood_Canopy",
+      "position": [
+        42.0,
+        18.0,
+        1412.0
+      ],
+      "size": [
+        10.0,
+        6.0,
+        10.0
+      ],
+      "color": [
+        0.21568627450980393,
+        0.3764705882352941,
+        0.24705882352941178
+      ],
+      "collide": false,
+      "className": "Part",
+      "yaw": 0.0
+    },
+    {
+      "name": "Greenwood_Canopy",
+      "position": [
+        42.0,
+        22.0,
+        1412.0
+      ],
+      "size": [
+        6.0,
+        6.0,
+        6.0
+      ],
+      "color": [
+        0.21568627450980393,
+        0.3764705882352941,
+        0.24705882352941178
+      ],
+      "collide": false,
+      "className": "Part",
+      "yaw": 0.0
+    },
+    {
+      "name": "Greenwood_Trunk",
+      "position": [
+        -95.0,
+        8.0,
+        1317.0
+      ],
+      "size": [
+        3.0,
+        12.0,
+        3.0
+      ],
+      "color": [
+        0.4549019607843137,
+        0.30980392156862746,
+        0.19607843137254902
+      ],
+      "collide": true,
+      "className": "Part",
+      "yaw": 0.0
+    },
+    {
+      "name": "Greenwood_Canopy",
+      "position": [
+        -95.0,
+        13.0,
+        1317.0
+      ],
+      "size": [
+        13.0,
+        6.0,
+        13.0
+      ],
+      "color": [
+        0.21568627450980393,
+        0.3764705882352941,
+        0.24705882352941178
+      ],
+      "collide": false,
+      "className": "Part",
+      "yaw": 0.0
+    },
+    {
+      "name": "Greenwood_Canopy",
+      "position": [
+        -95.0,
+        18.0,
+        1317.0
+      ],
+      "size": [
+        10.0,
+        6.0,
+        10.0
+      ],
+      "color": [
+        0.21568627450980393,
+        0.3764705882352941,
+        0.24705882352941178
+      ],
+      "collide": false,
+      "className": "Part",
+      "yaw": 0.0
+    },
+    {
+      "name": "Greenwood_Canopy",
+      "position": [
+        -95.0,
+        22.0,
+        1317.0
+      ],
+      "size": [
+        6.0,
+        6.0,
+        6.0
+      ],
+      "color": [
+        0.21568627450980393,
+        0.3764705882352941,
+        0.24705882352941178
+      ],
+      "collide": false,
+      "className": "Part",
+      "yaw": 0.0
+    },
+    {
+      "name": "Greenwood_Trunk",
+      "position": [
+        95.0,
+        8.0,
+        1313.0
+      ],
+      "size": [
+        3.0,
+        12.0,
+        3.0
+      ],
+      "color": [
+        0.4549019607843137,
+        0.30980392156862746,
+        0.19607843137254902
+      ],
+      "collide": true,
+      "className": "Part",
+      "yaw": 0.0
+    },
+    {
+      "name": "Greenwood_Canopy",
+      "position": [
+        95.0,
+        13.0,
+        1313.0
+      ],
+      "size": [
+        13.0,
+        6.0,
+        13.0
+      ],
+      "color": [
+        0.21568627450980393,
+        0.3764705882352941,
+        0.24705882352941178
+      ],
+      "collide": false,
+      "className": "Part",
+      "yaw": 0.0
+    },
+    {
+      "name": "Greenwood_Canopy",
+      "position": [
+        95.0,
+        18.0,
+        1313.0
+      ],
+      "size": [
+        10.0,
+        6.0,
+        10.0
+      ],
+      "color": [
+        0.21568627450980393,
+        0.3764705882352941,
+        0.24705882352941178
+      ],
+      "collide": false,
+      "className": "Part",
+      "yaw": 0.0
+    },
+    {
+      "name": "Greenwood_Canopy",
+      "position": [
+        95.0,
+        22.0,
+        1313.0
+      ],
+      "size": [
+        6.0,
+        6.0,
+        6.0
+      ],
+      "color": [
+        0.21568627450980393,
+        0.3764705882352941,
+        0.24705882352941178
+      ],
+      "collide": false,
+      "className": "Part",
+      "yaw": 0.0
+    },
+    {
+      "name": "Greenwood_Trunk",
+      "position": [
+        -37.0,
+        12.0,
+        1323.0
+      ],
+      "size": [
+        3.0,
+        12.0,
+        3.0
+      ],
+      "color": [
+        0.4549019607843137,
+        0.30980392156862746,
+        0.19607843137254902
+      ],
+      "collide": true,
+      "className": "Part",
+      "yaw": 0.0
+    },
+    {
+      "name": "Greenwood_Canopy",
+      "position": [
+        -37.0,
+        17.0,
+        1323.0
+      ],
+      "size": [
+        13.0,
+        6.0,
+        13.0
+      ],
+      "color": [
+        0.21568627450980393,
+        0.3764705882352941,
+        0.24705882352941178
+      ],
+      "collide": false,
+      "className": "Part",
+      "yaw": 0.0
+    },
+    {
+      "name": "Greenwood_Canopy",
+      "position": [
+        -37.0,
+        22.0,
+        1323.0
+      ],
+      "size": [
+        10.0,
+        6.0,
+        10.0
+      ],
+      "color": [
+        0.21568627450980393,
+        0.3764705882352941,
+        0.24705882352941178
+      ],
+      "collide": false,
+      "className": "Part",
+      "yaw": 0.0
+    },
+    {
+      "name": "Greenwood_Canopy",
+      "position": [
+        -37.0,
+        26.0,
+        1323.0
+      ],
+      "size": [
+        6.0,
+        6.0,
+        6.0
+      ],
+      "color": [
+        0.21568627450980393,
+        0.3764705882352941,
+        0.24705882352941178
+      ],
+      "collide": false,
+      "className": "Part",
+      "yaw": 0.0
+    },
+    {
+      "name": "Greenwood_Trunk",
+      "position": [
+        37.0,
+        12.0,
+        1323.0
+      ],
+      "size": [
+        3.0,
+        12.0,
+        3.0
+      ],
+      "color": [
+        0.4549019607843137,
+        0.30980392156862746,
+        0.19607843137254902
+      ],
+      "collide": true,
+      "className": "Part",
+      "yaw": 0.0
+    },
+    {
+      "name": "Greenwood_Canopy",
+      "position": [
+        37.0,
+        17.0,
+        1323.0
+      ],
+      "size": [
+        13.0,
+        6.0,
+        13.0
+      ],
+      "color": [
+        0.21568627450980393,
+        0.3764705882352941,
+        0.24705882352941178
+      ],
+      "collide": false,
+      "className": "Part",
+      "yaw": 0.0
+    },
+    {
+      "name": "Greenwood_Canopy",
+      "position": [
+        37.0,
+        22.0,
+        1323.0
+      ],
+      "size": [
+        10.0,
+        6.0,
+        10.0
+      ],
+      "color": [
+        0.21568627450980393,
+        0.3764705882352941,
+        0.24705882352941178
+      ],
+      "collide": false,
+      "className": "Part",
+      "yaw": 0.0
+    },
+    {
+      "name": "Greenwood_Canopy",
+      "position": [
+        37.0,
+        26.0,
+        1323.0
+      ],
+      "size": [
+        6.0,
+        6.0,
+        6.0
+      ],
+      "color": [
+        0.21568627450980393,
+        0.3764705882352941,
+        0.24705882352941178
+      ],
+      "collide": false,
+      "className": "Part",
+      "yaw": 0.0
+    },
+    {
+      "name": "Greenwood_ReturnPost",
+      "position": [
+        -5,
+        7,
+        1517
+      ],
+      "size": [
+        1,
+        10,
+        1.5
+      ],
+      "color": [
+        0.40784313725490196,
+        0.30980392156862746,
+        0.21176470588235294
+      ],
+      "className": "Part",
+      "yaw": 0
+    },
+    {
+      "name": "Greenwood_ReturnPost",
+      "position": [
+        5,
+        7,
+        1517
+      ],
+      "size": [
+        1,
+        10,
+        1.5
+      ],
+      "color": [
+        0.40784313725490196,
+        0.30980392156862746,
+        0.21176470588235294
+      ],
+      "className": "Part",
+      "yaw": 0
+    },
+    {
+      "name": "Greenwood_ReturnLintel",
+      "position": [
+        0,
+        12,
+        1517
+      ],
+      "size": [
+        11,
+        1,
+        1.5
+      ],
+      "color": [
+        0.6392156862745098,
+        0.5607843137254902,
+        0.34509803921568627
+      ],
+      "className": "Part",
+      "yaw": 0
+    }
+  ],
+  "omissions": [
+    "Actors, dynamic resource art, GUI, private campaign pockets and distant city omitted",
+    "Roblox materials, lighting, physics and gameplay not reproduced"
+  ]
+}

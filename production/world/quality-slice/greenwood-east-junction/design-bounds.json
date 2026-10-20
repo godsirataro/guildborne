@@ -1,0 +1,151 @@
+{
+  "status": "SOURCE_CANDIDATE_REQUIRES_INDEPENDENT_VERIFICATION",
+  "crosssections": [
+    {
+      "x": 9,
+      "minZ": 1493,
+      "maxZ": 1515,
+      "width": 22,
+      "center": [
+        9,
+        2.1,
+        1504.0
+      ],
+      "road": [
+        [
+          9,
+          2.1,
+          1493
+        ],
+        [
+          9,
+          2.1,
+          1515
+        ]
+      ]
+    },
+    {
+      "x": 14,
+      "minZ": 1493,
+      "maxZ": 1517,
+      "width": 24,
+      "center": [
+        14,
+        2.1,
+        1505.0
+      ],
+      "road": [
+        [
+          14,
+          2.1,
+          1493
+        ],
+        [
+          14,
+          2.1,
+          1517
+        ]
+      ]
+    },
+    {
+      "x": 70,
+      "minZ": 1494,
+      "maxZ": 1518,
+      "width": 24,
+      "center": [
+        70,
+        2.1,
+        1506.0
+      ],
+      "road": [
+        [
+          70,
+          2.1,
+          1494
+        ],
+        [
+          70,
+          2.1,
+          1518
+        ]
+      ]
+    }
+  ],
+  "nativeIsland": {
+    "min": [
+      -110,
+      -2,
+      1300
+    ],
+    "max": [
+      110,
+      2,
+      1500
+    ]
+  },
+  "nativeLanding": {
+    "min": [
+      -14,
+      -2,
+      1500
+    ],
+    "max": [
+      14,
+      2,
+      1526
+    ]
+  },
+  "arrivalStreetSouth": {
+    "min": [
+      -9,
+      1.92,
+      1444.5
+    ],
+    "max": [
+      9,
+      2.08,
+      1509
+    ]
+  },
+  "portalPosts": [
+    {
+      "min": [
+        -5.5,
+        2,
+        1516.25
+      ],
+      "max": [
+        -4.5,
+        12,
+        1517.75
+      ]
+    },
+    {
+      "min": [
+        4.5,
+        2,
+        1516.25
+      ],
+      "max": [
+        5.5,
+        12,
+        1517.75
+      ]
+    }
+  ],
+  "artSupport": "Every closed course intersects native Island along its north side and native wedge underside by.03Y. No middle piers or new collider authority in art.",
+  "artTopY": 1.73,
+  "roadBottomY": 1.7,
+  "roadTopY": 2.1,
+  "oldRoadSeam": {
+    "x": 70,
+    "minZ": 1494,
+    "maxZ": 1518,
+    "y": 2.1
+  },
+  "limitations": [
+    "Existing approachX0..9 supports22stud strip only; portal posts prevent honest full24 width there.",
+    "Start seam has.02 step from ArrivalStreetSouth2.08 to2.1; surrounding native landingtop2.0.",
+    "Native tests required for all top/side seams and five heroes; this does not activate or expand a travel route."
+  ]
+}

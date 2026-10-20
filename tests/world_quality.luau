@@ -128,6 +128,75 @@ rejectThird(function(d)d.safeRecovery.Ashen=nil end)
 for _,p in ipairs(Q.IronveilAshenCorridor.parts) do
  assert(p.cframe[3]-p.size[3]/2>=1493 and math.abs(p.cframe[2]+p.size[2]/2-2.1)<1e-6);count+=1
 end
+assert(Q.validateGreenwoodEastJunction(Q.GreenwoodEastJunction));count+=1
+assert(table.isfrozen(Q.GreenwoodEastJunction.parts[1].cframe));count+=1
+local function rejectJunction(change: (any)->())
+ local spec=clone(Q.GreenwoodEastJunction);change(spec)
+ assert(not pcall(Q.validateGreenwoodEastJunction,spec));count+=1
+end
+rejectJunction(function(d)d.id="greenwood_ironveil_south" end)
+rejectJunction(function(d)d.region="Ironveil" end)
+rejectJunction(function(d)d.minimumWidth=24 end)
+rejectJunction(function(d)d.centerline[1][1]=0 end)
+rejectJunction(function(d)d.crosssections[1].width=24 end)
+rejectJunction(function(d)d.parts[1].kind="Part" end)
+rejectJunction(function(d)d.parts[1].collision=false end)
+rejectJunction(function(d)d.parts[1].size[1]=0/0 end)
+rejectJunction(function(d)d.parts[1].size[2]=math.huge end)
+rejectJunction(function(d)d.parts[1].cframe[1]=0 end)
+rejectJunction(function(d)d.parts[1].cframe[2]+=1 end)
+rejectJunction(function(d)d.parts[1].cframe[4]=2 end)
+rejectJunction(function(d)table.remove(d.parts,1);d.colliderCount-=1 end)
+rejectJunction(function(d)d.parts[2]=clone(d.parts[1]) end)
+rejectJunction(function(d)d.entries={Greenwood={}} end)
+-- Reconstruct each native wedge's horizontal upper triangle. Check the union
+-- at every vertex X and interval midpoint: interval endpoints are piecewise
+-- linear, so these cover the full taper and every seam, not just a center ray.
+local junctionTops: {any}={};local junctionXs={9,14,70};local totalArea=0
+local corners={{-.5,-.5,-.5},{.5,-.5,-.5},{.5,-.5,.5},{-.5,-.5,.5},{-.5,.5,.5},{.5,.5,.5}}
+for _,part in ipairs(Q.GreenwoodEastJunction.parts) do
+ local top={}
+ for _,corner in ipairs(corners) do
+  local world={}
+  for a=1,3 do
+   world[a]=part.cframe[a]
+   for k=1,3 do world[a]+=part.cframe[3+(a-1)*3+k]*part.size[k]*corner[k] end
+  end
+  if math.abs(world[2]-2.1)<.00001 then table.insert(top,world);table.insert(junctionXs,world[1]) end
+ end
+ assert(#top==3);count+=1
+ totalArea+=math.abs((top[2][1]-top[1][1])*(top[3][3]-top[1][3])-(top[3][1]-top[1][1])*(top[2][3]-top[1][3]))/2
+ table.insert(junctionTops,top)
+end
+assert(math.abs(totalArea-(5*23+56*24))<.00001);count+=1
+table.sort(junctionXs)
+local probes=table.clone(junctionXs)
+for i=1,#junctionXs-1 do table.insert(probes,(junctionXs[i]+junctionXs[i+1])/2) end
+for _,x in ipairs(probes) do
+ local intervals={}
+ for _,tri in ipairs(junctionTops) do
+  local zs={}
+  for i=1,3 do
+   local a,b=tri[i],tri[i%3+1]
+   if math.abs(a[1]-x)<.000001 then table.insert(zs,a[3]) end
+   if math.abs(b[1]-a[1])>.000001 then
+    local t=(x-a[1])/(b[1]-a[1])
+    if t>=-.000001 and t<=1.000001 then table.insert(zs,a[3]+t*(b[3]-a[3])) end
+   end
+  end
+  if #zs>0 then table.sort(zs);table.insert(intervals,{zs[1],zs[#zs]}) end
+ end
+ table.sort(intervals,function(a,b)return a[1]<b[1] end)
+ local low=if x<=14 then 1493 else 1493+(x-14)/56
+ local high=if x<=14 then 1515+(x-9)*.4 else 1517+(x-14)/56
+ local covered=low
+ for _,interval in ipairs(intervals) do
+  assert(interval[1]<=covered+.00001,"Unsupported full-width junction seam")
+  covered=math.max(covered,interval[2])
+ end
+ assert(covered>=high-.00001,"Narrow junction support");count+=1
+end
+assert(Q.GreenwoodEastJunction.minimumWidth==22 and Q.GreenwoodEastJunction.fullWidth==24);count+=1
 print("world_quality: "..count.." contract checks passed; Studio lifecycle NOT_RUN")
 
 -- Optional CLI source-injection harness: execute the actual service with fake
@@ -298,12 +367,45 @@ return function(source: string)
  thirdHandle.destroy();check(not again.isReady() and not gi.isReady());check(not pcall(thirdHandle.buildIronveilAshenCorridor))
  local missing=fixture();local mh=missing.init(missing.world);missing.world:FindFirstChild("Ashen"):Destroy()
  check(not pcall(mh.buildIronveilAshenCorridor));mh.destroy()
- local occupied=fixture();local oh=occupied.init(occupied.world)
- local external=occupied.node("Model","IronveilAshenCorridor",occupied.world)
+ local junctionOccupied=fixture();local oh=junctionOccupied.init(junctionOccupied.world)
+ local external=junctionOccupied.node("Model","IronveilAshenCorridor",junctionOccupied.world)
  check(not pcall(oh.buildIronveilAshenCorridor) and not external.destroyed);oh.destroy()
  local rollback=fixture();local rh=rollback.init(rollback.world);local retained=rh.buildGreenwoodIronveilCorridor()
  rollback.state.failAt=rollback.state.created+4
  check(not pcall(rh.buildIronveilAshenCorridor) and retained.isReady() and rollback.world:FindFirstChild("IronveilAshenCorridor")==nil)
  rollback.state.failAt=0;check(rh.buildIronveilAshenCorridor().isReady());rh.destroy()
+ local jf=fixture();local jh=jf.init(jf.world)
+ check(jf.world:FindFirstChild("GreenwoodEastJunction")==nil)
+ local j=jh.buildGreenwoodEastJunction();check(j.isReady() and jh.buildGreenwoodEastJunction()==j)
+ check(#j.geometry:GetChildren()==8 and #j.geometry:GetDescendants()==8 and j.entries==nil and j.volumes==nil)
+ check(j.geometry:GetAttribute("MinimumWalkWidth")==22 and j.geometry:GetAttribute("FullWidthStartX")==14)
+ check(jf.wall.Parent==jf.town and table.isfrozen(j.reviewedGeometry.parts[1].cframe))
+ check(not pcall(function()j.reviewedGeometry.parts[1].cframe[1]=0 end))
+ local function mutateJunction(object: any,key: string,bad: any)
+  local old=object[key];object[key]=bad;check(not j.isReady());object[key]=old;check(j.isReady())
+ end
+ local jp=j.geometry:GetChildren()[1]
+ mutateJunction(jp,"Parent",nil);mutateJunction(jp,"Name","Injected");mutateJunction(jp,"ClassName","Part")
+ mutateJunction(jp,"Anchored",false);mutateJunction(jp,"CanCollide",false);mutateJunction(jp,"CanQuery",false)
+ mutateJunction(jp,"CanTouch",true);mutateJunction(jp,"CollisionGroup","NoCollision")
+ mutateJunction(jp,"Size",vec(1,1,1));mutateJunction(jp,"CFrame",frame(0,0,0))
+ mutateJunction(j.geometry,"Name","Other");mutateJunction(j.geometry,"Parent",nil)
+ for key in pairs(j.geometry.attributes) do mutateJunction(j.geometry.attributes,key,"Changed") end
+ mutateJunction(jf.region,"Parent",nil)
+ local intruder=jf.node("Part","Intruder",j.geometry);check(not j.isReady());intruder:Destroy();check(j.isReady())
+ local nestedIntruder=jf.node("Folder","Intruder",jp);check(not j.isReady());nestedIntruder:Destroy();check(j.isReady())
+ local duplicate=jf.node("Model","GreenwoodEastJunction",jf.world);check(not j.isReady());duplicate:Destroy();check(j.isReady())
+ local retainedGI=jh.buildGreenwoodIronveilCorridor();check(retainedGI.isReady() and j.isReady())
+ j.destroy();j.destroy();check(not j.isReady() and retainedGI.isReady())
+ local j2=jh.buildGreenwoodEastJunction();check(j2~=j and j2.isReady())
+ jh.destroy();check(not j2.isReady() and not retainedGI.isReady());check(not pcall(jh.buildGreenwoodEastJunction))
+ local takenJ=fixture();local takenH=takenJ.init(takenJ.world);local unowned=takenJ.node("Model","GreenwoodEastJunction",takenJ.world)
+ check(not pcall(takenH.buildGreenwoodEastJunction) and not unowned.destroyed);takenH.destroy();check(not unowned.destroyed)
+ local lost=fixture();local lostH=lost.init(lost.world);lost.region.Parent=nil
+ check(not pcall(lostH.buildGreenwoodEastJunction));lost.region.Parent=lost.world;lostH.destroy()
+ local failJ=fixture();local failH=failJ.init(failJ.world);local preserve=failH.buildGreenwoodIronveilCorridor()
+ failJ.state.failAt=failJ.state.created+4
+ check(not pcall(failH.buildGreenwoodEastJunction) and preserve.isReady() and failJ.world:FindFirstChild("GreenwoodEastJunction")==nil)
+ failJ.state.failAt=0;check(failH.buildGreenwoodEastJunction().isReady());failH.destroy()
  print("world_quality: "..passed.." mocked server lifecycle checks passed; Studio physics NOT_RUN")
 end

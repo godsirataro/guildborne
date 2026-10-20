@@ -1,0 +1,143 @@
+{
+  "status": "PASS_INDEPENDENT_HASH_AND_RECEIPT_REVIEW_NOT_NATIVE",
+  "before": {
+    "status": "BLENDER_RENDERED_NOT_NATIVE",
+    "variant": "before",
+    "inputHashes": {
+      "production/world/quality-slice/greenwood-ironveil/ground.json": "85b0866cf5ed468ef323f52c5e33f825fcb89155d1a91c2753d593271ccdeb70",
+      "assets/production/world-slice/world-slice.mesh.json": "9baaf8de0faf3ff7f4a4f2c32ea692e48aa9dbb021f609e3530029ed7844ddc7",
+      "assets/production/world-slice/greenwood-ironveil/scenery.mesh.json": "b885085377b3e56faf9f6a0fe072d0db4672f6b87c5241c6d61ff34c70a65539"
+    },
+    "cameraSHA256": "fbeab00cb2dd31611aaef88306e70b27ad7e646958895dfb76d73d97475fad05",
+    "contextSHA256": "fd5a9c0ce5f3dd970afe71339b5e20e4b1e82b447cc396597de7d9bcdf9ec53d",
+    "rendererSHA256": "da678e8511e6f66096a7158962fd21e601d82ad4e0b11346db41b57436e7c9e3",
+    "nativeParts": 60,
+    "existingEastRoadIncluded": true,
+    "sourceHashes": {
+      "src/server/Services/AdventureMapKit.luau": "978724afd99c499757601d56634ecf0b00ff21921fbec8b12a617c0fed1fe4c7",
+      "src/server/Services/RegionalWorld.luau": "13e0ce9ed41893a6a46d46955ec4dafd8159a720df5d1ff89f91cd69ec7b6c09",
+      "src/shared/Config/City.luau": "f78e3df184b45f430575425e1e294f00f94031014b2e5e682d0549890f47e985",
+      "production/world/quality-slice/greenwood-ironveil/ground.json": "85b0866cf5ed468ef323f52c5e33f825fcb89155d1a91c2753d593271ccdeb70",
+      "assets/production/world-slice/world-slice.mesh.json": "9baaf8de0faf3ff7f4a4f2c32ea692e48aa9dbb021f609e3530029ed7844ddc7",
+      "assets/production/world-slice/greenwood-ironveil/scenery.mesh.json": "b885085377b3e56faf9f6a0fe072d0db4672f6b87c5241c6d61ff34c70a65539",
+      "assets/production/world-slice/ironveil-ore-yard/scenery.mesh.json": "4e65f4e254ae58bed6c5825d68948dc8689eb10332fb2763bdae37f86e371d20"
+    },
+    "junctionIncluded": false,
+    "blendSHA256": "2ad060afb1df1fbb208fe5f96970b0627e59116f8f5d3103272abe8d9467b29e",
+    "omissions": [
+      "Actors, dynamic resource art, GUI, private campaign pockets and distant city omitted",
+      "Roblox materials, lighting, physics and gameplay not reproduced"
+    ],
+    "images": {
+      "01_arrival_east.png": "898ab6d6807f2443970531d399dc1ce061faf5db68e060271e7b7745af7e456b",
+      "02_road_return.png": "7e0920756f578264ba803167599284687947810b36bcde24fd9dd7767a61bbf7",
+      "03_junction_overview.png": "f722c656e9aed3c531310211e37ebf12d9b1fec36474d0ace9493f160a6a2e01",
+      "04_landing_seam.png": "0508a0bfe0d6b7e0257699ca3f79c1ec24043e4586669716b62a6ccdb74b0cc3"
+    }
+  },
+  "after": {
+    "status": "BLENDER_RENDERED_NOT_NATIVE",
+    "variant": "after",
+    "inputHashes": {
+      "production/world/quality-slice/greenwood-ironveil/ground.json": "85b0866cf5ed468ef323f52c5e33f825fcb89155d1a91c2753d593271ccdeb70",
+      "assets/production/world-slice/world-slice.mesh.json": "9baaf8de0faf3ff7f4a4f2c32ea692e48aa9dbb021f609e3530029ed7844ddc7",
+      "assets/production/world-slice/greenwood-ironveil/scenery.mesh.json": "b885085377b3e56faf9f6a0fe072d0db4672f6b87c5241c6d61ff34c70a65539",
+      "production/world/quality-slice/greenwood-east-junction/ground.json": "368193f4e1d6cc5a9030eb56eabb3db058944f228c0899824ad3f743ef768840",
+      "assets/production/world-slice/greenwood-east-junction/scenery.mesh.json": "eb69d5718298f7c7d15174eac5a60e2579876116201f233c21526b46fd359151"
+    },
+    "cameraSHA256": "fbeab00cb2dd31611aaef88306e70b27ad7e646958895dfb76d73d97475fad05",
+    "contextSHA256": "fd5a9c0ce5f3dd970afe71339b5e20e4b1e82b447cc396597de7d9bcdf9ec53d",
+    "rendererSHA256": "da678e8511e6f66096a7158962fd21e601d82ad4e0b11346db41b57436e7c9e3",
+    "nativeParts": 60,
+    "existingEastRoadIncluded": true,
+    "sourceHashes": {
+      "src/server/Services/AdventureMapKit.luau": "978724afd99c499757601d56634ecf0b00ff21921fbec8b12a617c0fed1fe4c7",
+      "src/server/Services/RegionalWorld.luau": "13e0ce9ed41893a6a46d46955ec4dafd8159a720df5d1ff89f91cd69ec7b6c09",
+      "src/shared/Config/City.luau": "f78e3df184b45f430575425e1e294f00f94031014b2e5e682d0549890f47e985",
+      "production/world/quality-slice/greenwood-ironveil/ground.json": "85b0866cf5ed468ef323f52c5e33f825fcb89155d1a91c2753d593271ccdeb70",
+      "assets/production/world-slice/world-slice.mesh.json": "9baaf8de0faf3ff7f4a4f2c32ea692e48aa9dbb021f609e3530029ed7844ddc7",
+      "assets/production/world-slice/greenwood-ironveil/scenery.mesh.json": "b885085377b3e56faf9f6a0fe072d0db4672f6b87c5241c6d61ff34c70a65539",
+      "assets/production/world-slice/ironveil-ore-yard/scenery.mesh.json": "4e65f4e254ae58bed6c5825d68948dc8689eb10332fb2763bdae37f86e371d20"
+    },
+    "junctionIncluded": true,
+    "blendSHA256": "93223dab55bc713e39b89b8a12258256f9fdd1e7994b2b201d1f0be509493c75",
+    "omissions": [
+      "Actors, dynamic resource art, GUI, private campaign pockets and distant city omitted",
+      "Roblox materials, lighting, physics and gameplay not reproduced"
+    ],
+    "images": {
+      "01_arrival_east.png": "ceb0d9b158fdc531700e662ae131d85842be28779e46349d25e72beb22e17aeb",
+      "02_road_return.png": "274e1ff68f8f221cb82ad5a377991ba8467ecd572810cea7dc043425e0fd53ee",
+      "03_junction_overview.png": "12687c28812687a084b1b198ec9f91f7de6658c952f48d3902262ccbb36707de",
+      "04_landing_seam.png": "4cfc3fa9faba9fb33a6d0c74cb95e15279abf4a59409eb55e561a15c62b42ee6"
+    }
+  },
+  "finalSourceChecks": {
+    "status": "LOCAL_NOT_NATIVE",
+    "sourceHashes": {
+      "src/server/Services/WorldQualitySlice.luau": "b6ce41a3a9007bc908d2892c0ec23403a1f876721aebc32ece7690990d3ac7cc",
+      "src/shared/Config/WorldQuality.luau": "13bbee830d95fa2cbb3854ed4f7afe39eb4e5a7f087d07606da8dca82efe29c4",
+      "tests/world_quality.luau": "53b9eb6f2fc0dc2c40a8ba6a1b485115c430a690406c0c3f5af47eb631241d5a"
+    },
+    "inputsUnchanged": true,
+    "checks": [
+      {
+        "name": "contract",
+        "command": [
+          "C:\\Work\\MySelf\\Guildborne-greenwood-east-junction\\.tools\\luau\\luau.exe",
+          "tests/world_quality.luau"
+        ],
+        "exitCode": 0,
+        "stdoutSHA256": "7f767dced5d263ca6f4ccc49c269acd6e8267532922cc4014235e34377b29d5e",
+        "stderrSHA256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+      },
+      {
+        "name": "lifecycle",
+        "command": [
+          "C:\\Work\\MySelf\\Guildborne-greenwood-east-junction\\.tools\\luau\\luau.exe",
+          "C:\\Work\\MySelf\\Guildborne-greenwood-east-junction\\production\\world\\quality-slice\\greenwood-east-junction\\lifecycle.luau"
+        ],
+        "exitCode": 0,
+        "stdoutSHA256": "69264189d9d2562cac58403c33152ad14ce6ec70d91cf65fe215066b26eb8ba6",
+        "stderrSHA256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+      },
+      {
+        "name": "compile",
+        "command": [
+          "C:\\Work\\MySelf\\Guildborne-greenwood-east-junction\\.tools\\luau\\luau-compile.exe",
+          "--null",
+          "src/server/Services/WorldQualitySlice.luau",
+          "src/shared/Config/WorldQuality.luau",
+          "tests/world_quality.luau"
+        ],
+        "exitCode": 0,
+        "stdoutSHA256": "f7d076f4fa942289ba5746615bba19594250662ac62cd26246f5ed5bdba9b085",
+        "stderrSHA256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+      },
+      {
+        "name": "types",
+        "command": [
+          "C:\\Work\\MySelf\\Guildborne-greenwood-east-junction\\.tools\\luau-lsp\\luau-lsp.exe",
+          "analyze",
+          "--platform=roblox",
+          "--sourcemap=build/sourcemap.json",
+          "--definitions=C:\\Work\\MySelf\\Guildborne-greenwood-east-junction\\.tools\\luau-lsp\\globalTypes.d.luau",
+          "src/server/Services/WorldQualitySlice.luau",
+          "src/shared/Config/WorldQuality.luau",
+          "tests/world_quality.luau"
+        ],
+        "exitCode": 0,
+        "stdoutSHA256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+        "stderrSHA256": "e154fd387dcf70b0e27282f94dee19d31078c334c73012d84e72ba8d8870b4eb"
+      }
+    ]
+  },
+  "baselineRecordedExit": 0,
+  "baselineStdoutSHA256": "8ed04574db055dfb7ee2bc6db7d6533d9dd231330b9300292f03701d16673398",
+  "baselineStderrSHA256": "7f9f0004c451589c107aef44eba6b53a7e3b44b422b8dbe513f7e63796e396c7",
+  "perpendicularWidthX14to70": 23.996174384290676,
+  "limits": [
+    "Baseline predates only local test variable rename; final scoped checks validate current source hashes.",
+    "Recorded subprocess results verified, not independent reexecution or native evidence."
+  ]
+}

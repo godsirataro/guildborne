@@ -1,0 +1,17 @@
+Traceback (most recent call last):
+  File "C:\Work\MySelf\Guildborne-greenwood-east-junction\production\world\quality-slice\greenwood-east-junction\verify.py", line 124, in <module>
+    if __name__=='__main__':print(json.dumps(main(),indent=2))
+                                             ~~~~^^
+  File "C:\Work\MySelf\Guildborne-greenwood-east-junction\production\world\quality-slice\greenwood-east-junction\verify.py", line 32, in main
+    coverage(road,expected)
+    ~~~~~~~~^^^^^^^^^^^^^^^
+  File "C:\Work\MySelf\Guildborne-greenwood-east-junction\production\world\quality-slice\greenwood-east-junction\verify.py", line 19, in coverage
+    for poly in polys:assert abs(sum(g.polyarea(g.over(poly,q)) for q in expected)-g.polyarea(poly))<1e-5,('outside_expected',poly)
+                                 ~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Work\MySelf\Guildborne-greenwood-east-junction\production\world\quality-slice\greenwood-east-junction\verify.py", line 19, in <genexpr>
+    for poly in polys:assert abs(sum(g.polyarea(g.over(poly,q)) for q in expected)-g.polyarea(poly))<1e-5,('outside_expected',poly)
+                                                ~~~~~~^^^^^^^^
+  File "C:\Work\MySelf\Guildborne-greenwood-east-junction\production\world\quality-slice\greenwood-ironveil\independent_verify.py", line 29, in over
+    if signed(*tri)<0: tri=tri[::-1]
+       ~~~~~~^^^^^^
+TypeError: over.<locals>.<lambda>() takes 3 positional arguments but 4 were given

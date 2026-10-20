@@ -1,0 +1,4 @@
+C:\Work\MySelf\Guildborne-greenwood-east-junction\production\world\quality-slice\greenwood-east-junction\render_compare.py:35: DeprecationWarning: 'Material.use_nodes' is expected to be removed in Blender 6.0
+  m=bpy.data.materials.new('RGB'+str(key));m.diffuse_color=(*color,1);m.use_nodes=True
+C:\Work\MySelf\Guildborne-greenwood-east-junction\production\world\quality-slice\greenwood-east-junction\render_compare.py:71: DeprecationWarning: 'World.use_nodes' is expected to be removed in Blender 6.0
+  scene.view_settings.view_transform='Standard';scene.world.use_nodes=True

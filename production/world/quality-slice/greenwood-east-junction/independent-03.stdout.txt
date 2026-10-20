@@ -1,0 +1,66 @@
+{
+  "status": "PASS_OFFLINE_NOT_NATIVE",
+  "groundSHA256": "368193f4e1d6cc5a9030eb56eabb3db058944f228c0899824ad3f743ef768840",
+  "packetSHA256": "eb69d5718298f7c7d15174eac5a60e2579876116201f233c21526b46fd359151",
+  "embeddedDescriptorMatchesGround": true,
+  "floorWedges": 8,
+  "floorArea": 1458.9999999999945,
+  "artSolids": 5,
+  "headroomCandidateTriangles": 507,
+  "meshIntrusions": [],
+  "widths": {
+    "x9": 22,
+    "x14": 24,
+    "x70": 24
+  },
+  "seamOldRoad": [
+    [
+      1494.0,
+      1518.0
+    ]
+  ],
+  "arrivalStreetStep": 0.020000000000000018,
+  "nativeLandingStep": 0.10000000000000009,
+  "artUndersidePenetration": 0.03,
+  "preservedFiles": [
+    "assets/production/world-slice/bespoke-spire/iteration-05/scenery.mesh.json",
+    "assets/production/world-slice/bespoke-spire/scenery.mesh.json",
+    "assets/production/world-slice/blacksmith-facade/scenery.mesh.json",
+    "assets/production/world-slice/blacksmith-roof-closure/scenery.mesh.json",
+    "assets/production/world-slice/city-smith-apron/scenery.mesh.json",
+    "assets/production/world-slice/coast-composition/iteration-01/scenery.mesh.json",
+    "assets/production/world-slice/coast-composition/iteration-02/scenery.mesh.json",
+    "assets/production/world-slice/coast-composition/iteration-03/scenery.mesh.json",
+    "assets/production/world-slice/coast-composition/scenery.mesh.json",
+    "assets/production/world-slice/coast-ironveil-clearance/before.mesh.json",
+    "assets/production/world-slice/coast-prop-ashen-cut/scenery.mesh.json",
+    "assets/production/world-slice/coast-prop-composition/iteration01/scenery.mesh.json",
+    "assets/production/world-slice/coast-prop-composition/iteration02/scenery.mesh.json",
+    "assets/production/world-slice/coast-prop-composition/scenery.mesh.json",
+    "assets/production/world-slice/continuous-corridor/scenery.mesh.json",
+    "assets/production/world-slice/corridor-landforms-bounded/scenery.mesh.json",
+    "assets/production/world-slice/corridor-landforms/initial-scenery.mesh.json",
+    "assets/production/world-slice/corridor-landforms/scenery.mesh.json",
+    "assets/production/world-slice/corridor-landforms/second-scenery.mesh.json",
+    "assets/production/world-slice/corridor-landforms/third-scenery.mesh.json",
+    "assets/production/world-slice/greenwood-ironveil/iteration-01/scenery.mesh.json",
+    "assets/production/world-slice/greenwood-ironveil/iteration-02/scenery.mesh.json",
+    "assets/production/world-slice/greenwood-ironveil/iteration-03/scenery.mesh.json",
+    "assets/production/world-slice/greenwood-ironveil/scenery.mesh.json",
+    "assets/production/world-slice/ironveil-ashen-causeway-art/scenery.mesh.json",
+    "assets/production/world-slice/ironveil-dock/before/scenery.mesh.json",
+    "assets/production/world-slice/ironveil-ore-yard/iteration-01/scenery.mesh.json",
+    "assets/production/world-slice/ironveil-ore-yard/iteration-02/scenery.mesh.json",
+    "assets/production/world-slice/ironveil-ore-yard/scenery.mesh.json",
+    "assets/production/world-slice/ironveil-quarry-edge/before.mesh.json",
+    "assets/production/world-slice/world-slice.mesh.json",
+    "production/world/quality-slice/continuous-corridor/ground.json",
+    "production/world/quality-slice/greenwood-ironveil/ground.json",
+    "production/world/quality-slice/ironveil-ashen/ground.json",
+    "production/world/quality-slice/ironveil-dock/before/ground.json"
+  ],
+  "limits": [
+    "22/24 widths are Z cross-sections, not perpendicular widths along slanted centerline.",
+    "Contact/top coverage is offline geometry, not physics or five-hero traversal."
+  ]
+}

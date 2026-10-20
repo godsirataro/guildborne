@@ -1,0 +1,37 @@
+{
+  "status": "BLENDER_RENDERED_NOT_NATIVE",
+  "variant": "after",
+  "inputHashes": {
+    "production/world/quality-slice/greenwood-ironveil/ground.json": "85b0866cf5ed468ef323f52c5e33f825fcb89155d1a91c2753d593271ccdeb70",
+    "assets/production/world-slice/world-slice.mesh.json": "9baaf8de0faf3ff7f4a4f2c32ea692e48aa9dbb021f609e3530029ed7844ddc7",
+    "assets/production/world-slice/greenwood-ironveil/scenery.mesh.json": "b885085377b3e56faf9f6a0fe072d0db4672f6b87c5241c6d61ff34c70a65539",
+    "production/world/quality-slice/greenwood-east-junction/ground.json": "368193f4e1d6cc5a9030eb56eabb3db058944f228c0899824ad3f743ef768840",
+    "assets/production/world-slice/greenwood-east-junction/scenery.mesh.json": "eb69d5718298f7c7d15174eac5a60e2579876116201f233c21526b46fd359151"
+  },
+  "cameraSHA256": "fbeab00cb2dd31611aaef88306e70b27ad7e646958895dfb76d73d97475fad05",
+  "contextSHA256": "fd5a9c0ce5f3dd970afe71339b5e20e4b1e82b447cc396597de7d9bcdf9ec53d",
+  "rendererSHA256": "da678e8511e6f66096a7158962fd21e601d82ad4e0b11346db41b57436e7c9e3",
+  "nativeParts": 60,
+  "existingEastRoadIncluded": true,
+  "sourceHashes": {
+    "src/server/Services/AdventureMapKit.luau": "978724afd99c499757601d56634ecf0b00ff21921fbec8b12a617c0fed1fe4c7",
+    "src/server/Services/RegionalWorld.luau": "13e0ce9ed41893a6a46d46955ec4dafd8159a720df5d1ff89f91cd69ec7b6c09",
+    "src/shared/Config/City.luau": "f78e3df184b45f430575425e1e294f00f94031014b2e5e682d0549890f47e985",
+    "production/world/quality-slice/greenwood-ironveil/ground.json": "85b0866cf5ed468ef323f52c5e33f825fcb89155d1a91c2753d593271ccdeb70",
+    "assets/production/world-slice/world-slice.mesh.json": "9baaf8de0faf3ff7f4a4f2c32ea692e48aa9dbb021f609e3530029ed7844ddc7",
+    "assets/production/world-slice/greenwood-ironveil/scenery.mesh.json": "b885085377b3e56faf9f6a0fe072d0db4672f6b87c5241c6d61ff34c70a65539",
+    "assets/production/world-slice/ironveil-ore-yard/scenery.mesh.json": "4e65f4e254ae58bed6c5825d68948dc8689eb10332fb2763bdae37f86e371d20"
+  },
+  "junctionIncluded": true,
+  "blendSHA256": "93223dab55bc713e39b89b8a12258256f9fdd1e7994b2b201d1f0be509493c75",
+  "omissions": [
+    "Actors, dynamic resource art, GUI, private campaign pockets and distant city omitted",
+    "Roblox materials, lighting, physics and gameplay not reproduced"
+  ],
+  "images": {
+    "01_arrival_east.png": "ceb0d9b158fdc531700e662ae131d85842be28779e46349d25e72beb22e17aeb",
+    "02_road_return.png": "274e1ff68f8f221cb82ad5a377991ba8467ecd572810cea7dc043425e0fd53ee",
+    "03_junction_overview.png": "12687c28812687a084b1b198ec9f91f7de6658c952f48d3902262ccbb36707de",
+    "04_landing_seam.png": "4cfc3fa9faba9fb33a6d0c74cb95e15279abf4a59409eb55e561a15c62b42ee6"
+  }
+}

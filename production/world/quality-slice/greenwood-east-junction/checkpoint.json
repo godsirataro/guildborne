@@ -1,0 +1,11 @@
+{
+  "stage": "INDEPENDENT_LOCAL_REVIEW_COMPLETE_NATIVE_PENDING",
+  "base": "4c52678",
+  "artSHA256": "eb69d5718298f7c7d15174eac5a60e2579876116201f233c21526b46fd359151",
+  "groundSHA256": "368193f4e1d6cc5a9030eb56eabb3db058944f228c0899824ad3f743ef768840",
+  "remaining": [
+    "Controller integration/native rays and bidirectional five-hero traversal",
+    "Uniform24width requires separately scoped portal/entry redesign",
+    "Human art acceptance"
+  ]
+}
