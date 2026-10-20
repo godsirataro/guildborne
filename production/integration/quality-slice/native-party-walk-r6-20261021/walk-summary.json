@@ -1,0 +1,94 @@
+{
+  "pages": 22,
+  "samples": 4244,
+  "seconds": 889.5649929046631,
+  "stats": {
+    "a:Priest": {
+      "hp": [
+        51
+      ],
+      "recovery": [
+        1
+      ],
+      "missedRays": 0,
+      "lintelHits": 0,
+      "minY": 3.5496881008148193,
+      "maxY": 8.996495246887207
+    },
+    "a:Archer": {
+      "hp": [
+        49
+      ],
+      "recovery": [
+        1
+      ],
+      "missedRays": 0,
+      "lintelHits": 0,
+      "minY": 3.5365240573883057,
+      "maxY": 8.995208740234375
+    },
+    "a:Warrior": {
+      "hp": [
+        57
+      ],
+      "recovery": [
+        1
+      ],
+      "missedRays": 0,
+      "lintelHits": 0,
+      "minY": 3.5465285778045654,
+      "maxY": 8.994630813598633
+    },
+    "a:Mage": {
+      "hp": [
+        47
+      ],
+      "recovery": [
+        1
+      ],
+      "missedRays": 0,
+      "lintelHits": 0,
+      "minY": 3.5435526371002197,
+      "maxY": 8.99561595916748
+    },
+    "player": {
+      "hp": [
+        57
+      ],
+      "recovery": [
+        null
+      ],
+      "missedRays": 0,
+      "lintelHits": 0,
+      "minY": 3.5421042442321777,
+      "maxY": 8.995760917663574
+    },
+    "a:Knight": {
+      "hp": [
+        67
+      ],
+      "recovery": [
+        1
+      ],
+      "missedRays": 0,
+      "lintelHits": 0,
+      "minY": 3.5460164546966553,
+      "maxY": 8.99479866027832
+    }
+  },
+  "first-result-complete": {
+    "waypoints": 39,
+    "arrivals": 39,
+    "finishedAt": 1792516517.40846
+  },
+  "forward-result": {
+    "waypoints": 19,
+    "arrivals": 19,
+    "finishedAt": 1792516750.745205
+  },
+  "reverse-result": {
+    "waypoints": 60,
+    "arrivals": 60,
+    "finishedAt": 1792517214.908897
+  }
+}

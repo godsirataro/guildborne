@@ -1,0 +1,387 @@
+{
+  "name": "Guildborne_PartyPresentationLab",
+  "serveAddress": "127.0.0.1",
+  "globIgnorePaths": [
+    "**/.gitkeep"
+  ],
+  "tree": {
+    "$className": "DataModel",
+    "ReplicatedStorage": {
+      "$className": "ReplicatedStorage",
+      "Shared": {
+        "$path": "C:\\Work\\MySelf\\Guildborne-controller\\src\\shared"
+      },
+      "QualityPreviewAssets": {
+        "$className": "Folder",
+        "$attributes": {
+          "IsolatedMemory": true,
+          "EnableWorldSlice": true,
+          "BindEnemies": false,
+          "WorldDataset": "Dataset1",
+          "WorldSourceSha256": "9baaf8de0faf3ff7f4a4f2c32ea692e48aa9dbb021f609e3530029ed7844ddc7"
+        },
+        "WorldArtContract": {
+          "$path": "C:\\Work\\MySelf\\Guildborne-controller\\build\\quality-world-contract.luau"
+        },
+        "NativeAssetPreview": {
+          "$path": "C:\\Work\\MySelf\\Guildborne-controller\\production\\integration\\quality-slice\\NativeAssetPreview.luau"
+        },
+        "NativeImagePreview": {
+          "$path": "C:\\Work\\MySelf\\Guildborne-controller\\production\\integration\\quality-slice\\NativeImagePreview.luau"
+        },
+        "Dataset1": {
+          "$className": "Folder",
+          "$attributes": {
+            "SourceSha256": "9baaf8de0faf3ff7f4a4f2c32ea692e48aa9dbb021f609e3530029ed7844ddc7"
+          },
+          "Data": {
+            "$path": "C:\\Work\\MySelf\\Guildborne-controller\\build\\quality-art\\Dataset1\\Data.luau"
+          },
+          "Chunk1": {
+            "$path": "C:\\Work\\MySelf\\Guildborne-controller\\build\\quality-art\\Dataset1\\Chunk1.luau"
+          },
+          "Chunk2": {
+            "$path": "C:\\Work\\MySelf\\Guildborne-controller\\build\\quality-art\\Dataset1\\Chunk2.luau"
+          },
+          "Chunk3": {
+            "$path": "C:\\Work\\MySelf\\Guildborne-controller\\build\\quality-art\\Dataset1\\Chunk3.luau"
+          },
+          "Chunk4": {
+            "$path": "C:\\Work\\MySelf\\Guildborne-controller\\build\\quality-art\\Dataset1\\Chunk4.luau"
+          },
+          "Chunk5": {
+            "$path": "C:\\Work\\MySelf\\Guildborne-controller\\build\\quality-art\\Dataset1\\Chunk5.luau"
+          },
+          "Chunk6": {
+            "$path": "C:\\Work\\MySelf\\Guildborne-controller\\build\\quality-art\\Dataset1\\Chunk6.luau"
+          },
+          "Chunk7": {
+            "$path": "C:\\Work\\MySelf\\Guildborne-controller\\build\\quality-art\\Dataset1\\Chunk7.luau"
+          },
+          "Chunk8": {
+            "$path": "C:\\Work\\MySelf\\Guildborne-controller\\build\\quality-art\\Dataset1\\Chunk8.luau"
+          },
+          "Chunk9": {
+            "$path": "C:\\Work\\MySelf\\Guildborne-controller\\build\\quality-art\\Dataset1\\Chunk9.luau"
+          },
+          "Chunk10": {
+            "$path": "C:\\Work\\MySelf\\Guildborne-controller\\build\\quality-art\\Dataset1\\Chunk10.luau"
+          },
+          "Chunk11": {
+            "$path": "C:\\Work\\MySelf\\Guildborne-controller\\build\\quality-art\\Dataset1\\Chunk11.luau"
+          },
+          "Chunk12": {
+            "$path": "C:\\Work\\MySelf\\Guildborne-controller\\build\\quality-art\\Dataset1\\Chunk12.luau"
+          },
+          "Chunk13": {
+            "$path": "C:\\Work\\MySelf\\Guildborne-controller\\build\\quality-art\\Dataset1\\Chunk13.luau"
+          },
+          "Chunk14": {
+            "$path": "C:\\Work\\MySelf\\Guildborne-controller\\build\\quality-art\\Dataset1\\Chunk14.luau"
+          }
+        },
+        "Dataset2": {
+          "$className": "Folder",
+          "$attributes": {
+            "SourceSha256": "3c84bc3a213b8b6b6253cc95957c7a6af0c27d13f789c81f311c0b062a2aefc9"
+          },
+          "Data": {
+            "$path": "C:\\Work\\MySelf\\Guildborne-controller\\build\\quality-art\\Dataset2\\Data.luau"
+          },
+          "Chunk1": {
+            "$path": "C:\\Work\\MySelf\\Guildborne-controller\\build\\quality-art\\Dataset2\\Chunk1.luau"
+          },
+          "Chunk2": {
+            "$path": "C:\\Work\\MySelf\\Guildborne-controller\\build\\quality-art\\Dataset2\\Chunk2.luau"
+          },
+          "Chunk3": {
+            "$path": "C:\\Work\\MySelf\\Guildborne-controller\\build\\quality-art\\Dataset2\\Chunk3.luau"
+          },
+          "Chunk4": {
+            "$path": "C:\\Work\\MySelf\\Guildborne-controller\\build\\quality-art\\Dataset2\\Chunk4.luau"
+          },
+          "Chunk5": {
+            "$path": "C:\\Work\\MySelf\\Guildborne-controller\\build\\quality-art\\Dataset2\\Chunk5.luau"
+          },
+          "Chunk6": {
+            "$path": "C:\\Work\\MySelf\\Guildborne-controller\\build\\quality-art\\Dataset2\\Chunk6.luau"
+          },
+          "Chunk7": {
+            "$path": "C:\\Work\\MySelf\\Guildborne-controller\\build\\quality-art\\Dataset2\\Chunk7.luau"
+          },
+          "Chunk8": {
+            "$path": "C:\\Work\\MySelf\\Guildborne-controller\\build\\quality-art\\Dataset2\\Chunk8.luau"
+          },
+          "Chunk9": {
+            "$path": "C:\\Work\\MySelf\\Guildborne-controller\\build\\quality-art\\Dataset2\\Chunk9.luau"
+          },
+          "Chunk10": {
+            "$path": "C:\\Work\\MySelf\\Guildborne-controller\\build\\quality-art\\Dataset2\\Chunk10.luau"
+          },
+          "Chunk11": {
+            "$path": "C:\\Work\\MySelf\\Guildborne-controller\\build\\quality-art\\Dataset2\\Chunk11.luau"
+          },
+          "Chunk12": {
+            "$path": "C:\\Work\\MySelf\\Guildborne-controller\\build\\quality-art\\Dataset2\\Chunk12.luau"
+          },
+          "Chunk13": {
+            "$path": "C:\\Work\\MySelf\\Guildborne-controller\\build\\quality-art\\Dataset2\\Chunk13.luau"
+          }
+        },
+        "Dataset3": {
+          "$className": "Folder",
+          "$attributes": {
+            "SourceSha256": "b885085377b3e56faf9f6a0fe072d0db4672f6b87c5241c6d61ff34c70a65539"
+          },
+          "Data": {
+            "$path": "C:\\Work\\MySelf\\Guildborne-controller\\build\\quality-art\\Dataset3\\Data.luau"
+          },
+          "Chunk1": {
+            "$path": "C:\\Work\\MySelf\\Guildborne-controller\\build\\quality-art\\Dataset3\\Chunk1.luau"
+          },
+          "Chunk2": {
+            "$path": "C:\\Work\\MySelf\\Guildborne-controller\\build\\quality-art\\Dataset3\\Chunk2.luau"
+          }
+        },
+        "Dataset4": {
+          "$className": "Folder",
+          "$attributes": {
+            "SourceSha256": "4e65f4e254ae58bed6c5825d68948dc8689eb10332fb2763bdae37f86e371d20"
+          },
+          "Data": {
+            "$path": "C:\\Work\\MySelf\\Guildborne-controller\\build\\quality-art\\Dataset4\\Data.luau"
+          },
+          "Chunk1": {
+            "$path": "C:\\Work\\MySelf\\Guildborne-controller\\build\\quality-art\\Dataset4\\Chunk1.luau"
+          },
+          "Chunk2": {
+            "$path": "C:\\Work\\MySelf\\Guildborne-controller\\build\\quality-art\\Dataset4\\Chunk2.luau"
+          },
+          "Chunk3": {
+            "$path": "C:\\Work\\MySelf\\Guildborne-controller\\build\\quality-art\\Dataset4\\Chunk3.luau"
+          },
+          "Chunk4": {
+            "$path": "C:\\Work\\MySelf\\Guildborne-controller\\build\\quality-art\\Dataset4\\Chunk4.luau"
+          }
+        },
+        "Dataset5": {
+          "$className": "Folder",
+          "$attributes": {
+            "SourceSha256": "d08edc14a62bd2fc9e1a3fb0e5a6b205df9532358567e19d93a3e22b356bb46f"
+          },
+          "Data": {
+            "$path": "C:\\Work\\MySelf\\Guildborne-controller\\build\\quality-art\\Dataset5\\Data.luau"
+          },
+          "Chunk1": {
+            "$path": "C:\\Work\\MySelf\\Guildborne-controller\\build\\quality-art\\Dataset5\\Chunk1.luau"
+          }
+        },
+        "Dataset6": {
+          "$className": "Folder",
+          "$attributes": {
+            "SourceSha256": "1e803ebb0bfa131c7c0d2113ce50eb3227fcc82fea1aa9ab56ab94156135cf51"
+          },
+          "Data": {
+            "$path": "C:\\Work\\MySelf\\Guildborne-controller\\build\\quality-art\\Dataset6\\Data.luau"
+          },
+          "Chunk1": {
+            "$path": "C:\\Work\\MySelf\\Guildborne-controller\\build\\quality-art\\Dataset6\\Chunk1.luau"
+          }
+        },
+        "Dataset7": {
+          "$className": "Folder",
+          "$attributes": {
+            "SourceSha256": "821b419df0f43fb3d3702be9d11948a703af6c97d2947a315d334a217f2bdae6"
+          },
+          "Data": {
+            "$path": "C:\\Work\\MySelf\\Guildborne-controller\\build\\quality-art\\Dataset7\\Data.luau"
+          },
+          "Chunk1": {
+            "$path": "C:\\Work\\MySelf\\Guildborne-controller\\build\\quality-art\\Dataset7\\Chunk1.luau"
+          }
+        },
+        "Dataset8": {
+          "$className": "Folder",
+          "$attributes": {
+            "SourceSha256": "5e130da1f9a8cad1ff45dc379052ede847e95b8d936b18120a7f8d4ae5ae181a"
+          },
+          "Data": {
+            "$path": "C:\\Work\\MySelf\\Guildborne-controller\\build\\quality-art\\Dataset8\\Data.luau"
+          },
+          "Chunk1": {
+            "$path": "C:\\Work\\MySelf\\Guildborne-controller\\build\\quality-art\\Dataset8\\Chunk1.luau"
+          }
+        },
+        "Dataset9": {
+          "$className": "Folder",
+          "$attributes": {
+            "SourceSha256": "eb69d5718298f7c7d15174eac5a60e2579876116201f233c21526b46fd359151"
+          },
+          "Data": {
+            "$path": "C:\\Work\\MySelf\\Guildborne-controller\\build\\quality-art\\Dataset9\\Data.luau"
+          },
+          "Chunk1": {
+            "$path": "C:\\Work\\MySelf\\Guildborne-controller\\build\\quality-art\\Dataset9\\Chunk1.luau"
+          }
+        }
+      }
+    },
+    "ServerScriptService": {
+      "$className": "ServerScriptService",
+      "Server": {
+        "$className": "Folder",
+        "Config": {
+          "$className": "Folder",
+          "AdventureEncounters": {
+            "$path": "C:\\Work\\MySelf\\Guildborne-controller\\src\\server\\Config\\AdventureEncounters.luau"
+          },
+          "AdventureEnemyProfiles": {
+            "$path": "C:\\Work\\MySelf\\Guildborne-controller\\src\\server\\Config\\AdventureEnemyProfiles.luau"
+          },
+          "AdventureRewards": {
+            "$path": "C:\\Work\\MySelf\\Guildborne-controller\\src\\server\\Config\\AdventureRewards.luau"
+          },
+          "ArchiveHeartCourtLayout": {
+            "$path": "C:\\Work\\MySelf\\Guildborne-controller\\src\\server\\Config\\ArchiveHeartCourtLayout.luau"
+          },
+          "ArchiveHeartEncounters": {
+            "$path": "C:\\Work\\MySelf\\Guildborne-controller\\src\\server\\Config\\ArchiveHeartEncounters.luau"
+          },
+          "AshenCourtLayout": {
+            "$path": "C:\\Work\\MySelf\\Guildborne-controller\\src\\server\\Config\\AshenCourtLayout.luau"
+          },
+          "CampaignSequence": {
+            "$path": "C:\\Work\\MySelf\\Guildborne-controller\\src\\server\\Config\\CampaignSequence.luau"
+          },
+          "ChapterFive": {
+            "$path": "C:\\Work\\MySelf\\Guildborne-controller\\src\\server\\Config\\ChapterFive.luau"
+          },
+          "ChapterFour": {
+            "$path": "C:\\Work\\MySelf\\Guildborne-controller\\src\\server\\Config\\ChapterFour.luau"
+          },
+          "ChapterOne": {
+            "$path": "C:\\Work\\MySelf\\Guildborne-controller\\src\\server\\Config\\ChapterOne.luau"
+          },
+          "ChapterSix": {
+            "$path": "C:\\Work\\MySelf\\Guildborne-controller\\src\\server\\Config\\ChapterSix.luau"
+          },
+          "ChapterThree": {
+            "$path": "C:\\Work\\MySelf\\Guildborne-controller\\src\\server\\Config\\ChapterThree.luau"
+          },
+          "ChapterTwo": {
+            "$path": "C:\\Work\\MySelf\\Guildborne-controller\\src\\server\\Config\\ChapterTwo.luau"
+          },
+          "Combat": {
+            "$path": "C:\\Work\\MySelf\\Guildborne-controller\\src\\server\\Config\\Combat.luau"
+          },
+          "Content": {
+            "$path": "C:\\Work\\MySelf\\Guildborne-controller\\src\\server\\Config\\Content.luau"
+          },
+          "CrosshavenCourtLayout": {
+            "$path": "C:\\Work\\MySelf\\Guildborne-controller\\src\\server\\Config\\CrosshavenCourtLayout.luau"
+          },
+          "CrosshavenWards": {
+            "$path": "C:\\Work\\MySelf\\Guildborne-controller\\src\\server\\Config\\CrosshavenWards.luau"
+          },
+          "GuildLand": {
+            "$path": "C:\\Work\\MySelf\\Guildborne-controller\\src\\server\\Config\\GuildLand.luau"
+          },
+          "IronveilMineLayout": {
+            "$path": "C:\\Work\\MySelf\\Guildborne-controller\\src\\server\\Config\\IronveilMineLayout.luau"
+          },
+          "IronveilTasks": {
+            "$path": "C:\\Work\\MySelf\\Guildborne-controller\\src\\server\\Config\\IronveilTasks.luau"
+          },
+          "LaunchRewards": {
+            "$path": "C:\\Work\\MySelf\\Guildborne-controller\\src\\server\\Config\\LaunchRewards.luau"
+          },
+          "Market": {
+            "$path": "C:\\Work\\MySelf\\Guildborne-controller\\src\\server\\Config\\Market.luau"
+          },
+          "NoviceChapter": {
+            "$path": "C:\\Work\\MySelf\\Guildborne-controller\\src\\server\\Config\\NoviceChapter.luau"
+          },
+          "NoviceLessons": {
+            "$path": "C:\\Work\\MySelf\\Guildborne-controller\\src\\server\\Config\\NoviceLessons.luau"
+          },
+          "NoviceTrials": {
+            "$path": "C:\\Work\\MySelf\\Guildborne-controller\\src\\server\\Config\\NoviceTrials.luau"
+          },
+          "ReleaseContent": {
+            "$path": "C:\\Work\\MySelf\\Guildborne-controller\\src\\server\\Config\\ReleaseContent.luau"
+          },
+          "Runtime": {
+            "$path": "C:\\Work\\MySelf\\Guildborne-controller\\build\\FullConnectedRuntime.luau"
+          },
+          "TowerCourtLayout": {
+            "$path": "C:\\Work\\MySelf\\Guildborne-controller\\src\\server\\Config\\TowerCourtLayout.luau"
+          },
+          "TowerGuardian": {
+            "$path": "C:\\Work\\MySelf\\Guildborne-controller\\src\\server\\Config\\TowerGuardian.luau"
+          },
+          "TowerLessons": {
+            "$path": "C:\\Work\\MySelf\\Guildborne-controller\\src\\server\\Config\\TowerLessons.luau"
+          }
+        },
+        "Persistence": {
+          "$path": "C:\\Work\\MySelf\\Guildborne-controller\\src\\server\\Persistence"
+        },
+        "ServerBootstrap": {
+          "$path": "C:\\Work\\MySelf\\Guildborne-controller\\src\\server\\ServerBootstrap.server.luau",
+          "$properties": {
+            "Disabled": true
+          }
+        },
+        "Services": {
+          "$path": "C:\\Work\\MySelf\\Guildborne-controller\\src\\server\\Services"
+        },
+        "Systems": {
+          "$path": "C:\\Work\\MySelf\\Guildborne-controller\\src\\server\\Systems"
+        }
+      },
+      "QualityPreview": {
+        "$path": "C:\\Work\\MySelf\\Guildborne-controller\\production\\integration\\quality-slice\\QualityPreview.server.luau"
+      },
+      "PartyPresentationLab": {
+        "$path": "C:\\Work\\MySelf\\Guildborne-controller\\production\\integration\\quality-slice\\party-presentation-lab\\PartyPresentation.server.luau",
+        "$attributes": {
+          "StartZone": "City",
+          "ThreeRoadWalk": true
+        }
+      }
+    },
+    "StarterGui": {
+      "$className": "StarterGui",
+      "$properties": {
+        "ScreenOrientation": "Sensor"
+      }
+    },
+    "StarterPlayer": {
+      "$className": "StarterPlayer",
+      "StarterPlayerScripts": {
+        "$className": "StarterPlayerScripts",
+        "Client": {
+          "$className": "Folder",
+          "ClientBootstrap": {
+            "$path": "C:\\Work\\MySelf\\Guildborne-controller\\src\\client\\ClientBootstrap.client.luau",
+            "$properties": {
+              "Disabled": true
+            }
+          },
+          "Controllers": {
+            "$path": "C:\\Work\\MySelf\\Guildborne-controller\\src\\client\\Controllers"
+          },
+          "UI": {
+            "$path": "C:\\Work\\MySelf\\Guildborne-controller\\src\\client\\UI"
+          }
+        },
+        "QualityPreview": {
+          "$path": "C:\\Work\\MySelf\\Guildborne-controller\\production\\integration\\quality-slice\\QualityPreview.client.luau"
+        },
+        "PartyPresentationLab": {
+          "$path": "C:\\Work\\MySelf\\Guildborne-controller\\production\\integration\\quality-slice\\party-presentation-lab\\PartyPresentation.client.luau"
+        }
+      }
+    }
+  }
+}

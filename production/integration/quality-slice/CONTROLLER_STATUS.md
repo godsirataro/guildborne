@@ -1,14 +1,15 @@
 # Current controller handoff — 2026-10-21
 
 Goal remains ACTIVE. Latest human threshold is **30% weekly Codex remaining**,
-replacing50% and5%; latest supported read24%used/76%remaining. No shutdown.
+replacing50% and5%; latest supported read26%used/74%remaining. No shutdown.
 Threshold propagated to existing S13/S14/S15/S17. No new chat/worktree or cleanup.
 Canonical adapted proposal:
 [Personality/Bond/Secret Path handoff](PERSONALITY_BOND_SECRET_PATH_HANDOFF.md).
 Source-reconciled proposal only; no Bond/Echo/Rift Weaver runtime completion.
 Existing plan9 and shared v10 ledger remain unchanged.
 
-GUI integrations395d0a4,d5e9379 and localizationc2b385a are local; push pending.
+GUI integrations395d0a4,d5e9379 and localizationc2b385a plus evidence are pushed
+through2548931 on codex/three-session-integration; no PR or merge.
 Native447 source identities match all three tested candidates. Full
 Memory inventory shows249px inspector/80px tiles; actual EN/TH Hall1 labels
 fixed and disabled. Native320px component fixture supports scroll-to-action,
@@ -26,8 +27,38 @@ Rojo build and StudioMCP exercised; ForgeGUI asset_capabilities-v5 fresh read
 succeeded without credits. Blender is not running and has no exposed MCP tool
 in this session; no fresh Blender handshake claimed. No new paid calls.
 S13/S15/S17 have bounded read-only proposal audits; S14's repair is integrated.
-Next native world gate remains fresh R6 direct junction both ways with five
-heroes, Hold under actual lintel, six visible orders and active civilian routines.
+Fresh R6 direct junction traversal completed39+19+60 waypoints with five heroes.
+The449-source synthetic Memory candidate captured4244 samples/22 pages over
+889.565s; HP unchanged, five recovery counts remain1, no missed ground rays.
+[R6 evidence](native-party-walk-r6-20261021/README.md) passed independent source
+and trace review: all six actors hit actual junction wedges in both directions.
+This does not certify uniform clearance, art or unsampled foot contact.
+Studiof291dbaa-f592-422b-adc2-cf15a90e0173 is stopped in Edit.
+Hold beneath the actual lintel, six visible orders and active civilians remain
+pending. S14 is implementing a quieter Inventory frame and larger Thai labels
+under gameplay-ui-quality in its existing worktree. Its turn failed with
+workspace routing discovery timeout; the same session was asked to inspect and
+resume preserved work, not restart it.
+
+User-added S18 is verified as **18-Item Created**,
+thread01a15a59-1223-75b2-b3d3-ea4f7355453c, main checkout.
+Its user scope is item rarity, drops, crafting/build resources, reinforcement
+logic/aura and sockets/elements. Initial Controller assignment is read-only
+source reconciliation and proposal; no runtime/schema/balance write lease.
+It must report existing IDs, actual branch/changes/leases/tools before an
+implementation handoff. Keep separate from S14 UI, S13 resources/locations,
+S15 presentation and S17 actor identity. Server authority, saves and market
+conservation remain mandatory. No additional controller, ledger or worktree.
+S18 subsequently verified main branch codex/gui-regal-foundation, no file
+changes/lease or running Studio/Blender job. Existing upgradeLevel is restricted
+to0; current item slots are weapon/armor/accessory, with10 deterministic recipes.
+Seven proposed rarity tiers and sockets are design, not runtime completion.
+Latest user direction adds monster/region equipment families for every class,
+boss variants and material tiers through orichalcum. S18 drafts one early Goblin
+family and separates rarity/base level/enhancement/element/socket/aura.
+Existing inventory-crafting scopes omit catalog/schema/economy/protocol changes:
+Controller must reconcile that ownership before any implementation, including
+shield-slot or market/save changes.
 
 Earlier checkpoints below are historical.
 
