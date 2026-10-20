@@ -1127,6 +1127,8 @@ thai["Tower District Portal"]="ประตูย่านหอคอย"
 thai["Journey complete"]="จบการเดินทางแล้ว"
 thai["Story progress saved."]="บันทึกความคืบหน้าเนื้อเรื่องแล้ว"
 local englishCodes={EnterCamp="Enter a combat area before attacking.",NotReady="You cannot fight yet. Wait until your character is ready."}
+englishCodes.AlreadyEquipped = "Already equipped"
+thai["AlreadyEquipped"] = "สวมใส่อยู่แล้ว"
 function Localization.translate(language: string, key: string, values: { [string]: any }?): string
 	local value = if language == "th" then thai[key] or englishCodes[key] or key else englishCodes[key] or key
 	return (string.gsub(value, "{([%w_]+)}", function(name)
