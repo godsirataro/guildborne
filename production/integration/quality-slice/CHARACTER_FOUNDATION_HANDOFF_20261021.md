@@ -123,3 +123,22 @@ ForgeGUI's existing generated inventory concept has been used for native UI
 refinement. Free verified operations may support the slice. No new paid call:
 an exact action/cost and spending limit are still needed for a new generation.
 No purchase, publishing or persistent access change.
+
+## Completed bounded continuation
+
+Source7198429 and evidence2e283a6 now implement and verify the local Standard
+garment/actor prototype described in the ownership decision above. See
+[native results and exact remaining gates](../../character-import/human-standard-native-20261021/README.md).
+The initially unsupported simultaneous pair exhausted EditableMesh memory;
+shared immutable backing fixed that case without reducing the geometry.
+Player and synthetic owned Warrior walked with separate elbow/knee motion.
+Cleanup and server isolation passed; this is not production appearance rollout.
+
+S14 recovered its original session and clean checkout; S17 reviewed this
+contract without blocking issues. Cloud structural QA on the exact immutable
+GLB completed and is incorporated as an attributed cloud report; raw cloud logs
+and the inspector ZIP are not falsely represented as locally reviewed.
+Current quota at this checkpoint is67% weekly remaining. Character-import lease
+released after the reviewed source/evidence commits. The next deliverable is
+legacy-cosmetic restoration plus actual grip/contact and attack inspection;
+art, gender variants and the full shared-character foundation remain open.

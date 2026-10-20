@@ -1,3 +1,49 @@
+# Character foundation checkpoint — 2026-10-21
+
+Latest verified weekly quota:33% used /67% remaining. Stop new waves at30%
+remaining; no shutdown. Full character/game/art acceptance remains incomplete.
+One existing integration checkout, plan9 and shared v10 ledger remain in use.
+
+Source7198429 adds a LOCAL unpublished Human Standard inspection adapter,
+actual traveler tunic/trousers articulation, and reference-counted shared mesh
+backing. Actual player and owner-matched HeroService Warrior ran together in the
+synthetic Memory lab. Both had independent elbow/knee motion;50 logical mesh
+references shared25 backing allocations. The original two-actor memory failure
+is retained. Three garment removal/re-equip cycles, surviving actor after detach,
+damaged-preview cleanup and Character replacement cleanup passed; final counts0.
+No production renderer/schema activation, rewards/profile writes or asset upload.
+
+Full unchanged-source baseline passed973 tests/398 strict runtime files;25
+focused geometry/pool checks passed. Independent source/evidence review passed.
+[Native character evidence](../../character-import/human-standard-native-20261021/README.md)
+is committed as2e283a6, including47 unchanged evidence files and failure receipts.
+Both owned Studio sessions are stopped in Edit. Local Blender5.2.1 structural
+audit passed; cloud-reported4.3.2 GLB inspection is incorporated with provenance
+and untested gates. The cloud tool ZIP remains unreviewed locally: no supported
+Library binary ZIP read route was available. Do not repeat unchanged-model QA.
+
+[Frozen foundation handoff](CHARACTER_FOUNDATION_HANDOFF_20261021.md) records
+the shared player/hero v1 contract, gender/versioning limits and exact cloud
+model snapshot. S17 reviewed it without blocking issues. S14 recovered its
+original chat/workspace and confirmed clean9ad74a0; its GUI repair is already
+integrated0dfdad5. Native inventory screenshot remains in
+build/native-inventory-readable-20261021/current-inventory-th.png.
+
+Character-import was exclusively held by Controller for the bounded slice;
+workers had disjoint files under that lease. It is now released. No other
+session received a competing character/runtime writer. Next: reconcile legacy
+cosmetic hiding/restoration without hiding equipment, inspect source-derived
+grip frames during movement/one attack, and then bind the accepted renderer and
+creator flow. Current screenshots still show overlapping old hair/wardrobe and
+unaccepted base art. Gender variants, other races, Heavy fit, attack retarget,
+weapon/foot contact, persistence rollout, devices and human signoff remain open.
+This checkpoint stops the completed local test wave; it does not mark the
+overall foundation or full game complete.
+
+Earlier checkpoint text below is historical.
+
+---
+
 # Current controller handoff — 2026-10-21
 
 Goal remains ACTIVE. Latest human threshold is **30% weekly Codex remaining**,
