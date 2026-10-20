@@ -1,3 +1,14 @@
+# ForgeGUI parallel inventory trial resumed — 2026-10-20
+
+Latest human instruction resumes ForgeGUI for GUI improvement alongside existing work.
+One image generation succeeded and was visually inspected; see forgegui-inventory-trial-20261020.
+S14 dispatched to ux-system for native inventory inspection/hierarchy refinement.
+Generated image is concept only; no Roblox publication/import or invented slot schema.
+Earlier deferred-ForgeGUI status below is superseded only for this authorized trial.
+World/junction/Hold acceptance remains pending and continues.
+
+---
+
 # Current walking repair and junction checkpoint — 2026-10-20
 
 Goal ACTIVE; ForgeGUI deferred per user. Account last measured59% used/41% remaining.

@@ -1,0 +1,45 @@
+{
+  "content": [
+    {
+      "type": "text",
+      "text": "{\"job_id\":\"b3689284-a531-4000-ab08-1da00180e1eb\",\"request_id\":\"guildborne-inventory-art-direction-20261020-01\",\"tool\":\"generation_gui\",\"status\":\"succeeded\",\"attempt_count\":1,\"result\":{\"assets\":[{\"x\":20,\"y\":20,\"id\":\"asset_1792478227365_0_e600w9gq1da\",\"label\":\"Create ONE polished 1\",\"scale\":1,\"image_url\":\"https://azyjlkhpdgafuobyxoax.supabase.co/storage/v1/object/public/asset-images/06c679d6-c61d-4431-9040-738cff12b350/mcp/b3689284-a531-4000-ab08-1da00180e1eb-0.png\",\"artifact_ref\":\"mcp-artifact:b3689284-a531-4000-ab08-1da00180e1eb:0\"}],\"billing\":{\"commitDeferred\":true,\"freeThumbnailUsed\":false},\"artifacts\":[{\"artifact_ref\":\"mcp-artifact:b3689284-a531-4000-ab08-1da00180e1eb:0\",\"kind\":\"image\",\"index\":0,\"url\":\"https://azyjlkhpdgafuobyxoax.supabase.co/storage/v1/object/public/asset-images/06c679d6-c61d-4431-9040-738cff12b350/mcp/b3689284-a531-4000-ab08-1da00180e1eb-0.png\"}]},\"error\":null,\"retryable\":false,\"created_at\":\"2026-10-20T06:36:48.664459+00:00\",\"updated_at\":\"2026-10-20T06:37:09.638+00:00\"}"
+    }
+  ],
+  "structuredContent": {
+    "job_id": "b3689284-a531-4000-ab08-1da00180e1eb",
+    "request_id": "guildborne-inventory-art-direction-20261020-01",
+    "tool": "generation_gui",
+    "status": "succeeded",
+    "attempt_count": 1,
+    "result": {
+      "assets": [
+        {
+          "x": 20,
+          "y": 20,
+          "id": "asset_1792478227365_0_e600w9gq1da",
+          "label": "Create ONE polished 1",
+          "scale": 1,
+          "image_url": "https://azyjlkhpdgafuobyxoax.supabase.co/storage/v1/object/public/asset-images/06c679d6-c61d-4431-9040-738cff12b350/mcp/b3689284-a531-4000-ab08-1da00180e1eb-0.png",
+          "artifact_ref": "mcp-artifact:b3689284-a531-4000-ab08-1da00180e1eb:0"
+        }
+      ],
+      "billing": {
+        "commitDeferred": true,
+        "freeThumbnailUsed": false
+      },
+      "artifacts": [
+        {
+          "artifact_ref": "mcp-artifact:b3689284-a531-4000-ab08-1da00180e1eb:0",
+          "kind": "image",
+          "index": 0,
+          "url": "https://azyjlkhpdgafuobyxoax.supabase.co/storage/v1/object/public/asset-images/06c679d6-c61d-4431-9040-738cff12b350/mcp/b3689284-a531-4000-ab08-1da00180e1eb-0.png"
+        }
+      ]
+    },
+    "error": null,
+    "retryable": false,
+    "created_at": "2026-10-20T06:36:48.664459+00:00",
+    "updated_at": "2026-10-20T06:37:09.638+00:00"
+  },
+  "isError": false
+}
