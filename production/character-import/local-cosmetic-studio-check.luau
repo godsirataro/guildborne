@@ -64,6 +64,24 @@ return function(Cosmetics: any): any
 		check("typed_avatar_hair_hidden",handle.LocalTransparencyModifier == 1)
 		accessoryWeld.Part0 = handle; accessoryWeld.Part1 = head; sync()
 		check("reversed_avatar_weld_hidden",handle.LocalTransparencyModifier == 1)
+		-- Remove the old weld so it cannot mask invalid rigid-constraint coverage.
+		accessoryWeld:Destroy(); sync()
+		check("unbound_avatar_hair_restores",handle.LocalTransparencyModifier == originalLTM)
+		local headAttachment = Instance.new("Attachment"); headAttachment.Name = "HairAttachment"; headAttachment.Parent = head
+		local wrongTarget = Instance.new("Attachment"); wrongTarget.Name = "HairAttachment"; wrongTarget.Parent = torso
+		local rigid = Instance.new("RigidConstraint"); rigid.Name = "AccessoryRigidConstraint"; rigid.Enabled = true
+		rigid.Attachment0 = hairAttachment; rigid.Attachment1 = headAttachment; rigid.Parent = handle; sync()
+		check("exact_avatar_rigid_constraint_hidden",handle.LocalTransparencyModifier == 1)
+		rigid.Attachment0 = headAttachment; rigid.Attachment1 = hairAttachment; sync()
+		check("reversed_avatar_rigid_constraint_hidden",handle.LocalTransparencyModifier == 1)
+		rigid.Enabled = false; sync(); check("disabled_rigid_constraint_restores",handle.LocalTransparencyModifier == originalLTM)
+		rigid.Enabled = true; sync(); check("reenabled_rigid_constraint_rehides",handle.LocalTransparencyModifier == 1)
+		rigid.Attachment0 = wrongTarget; sync(); check("wrong_rigid_body_target_restores",handle.LocalTransparencyModifier == originalLTM)
+		rigid.Attachment0 = headAttachment; headAttachment.Name = "HatAttachment"; sync()
+		check("wrong_rigid_attachment_name_restores",handle.LocalTransparencyModifier == originalLTM)
+		headAttachment.Name = "HairAttachment"; rigid.Name = "UnknownConstraint"; sync()
+		check("unknown_rigid_constraint_name_restores",handle.LocalTransparencyModifier == originalLTM)
+		rigid.Name = "AccessoryRigidConstraint"; sync(); check("valid_rigid_binding_return_rehides",handle.LocalTransparencyModifier == 1)
 		check("face_decal_only",face.Transparency == 1 and unknownDecal.Transparency == unknownOriginal)
 		check("unknown_texture_not_hidden",unknownTexture.Transparency == textureOriginal)
 		for index, p in ipairs(protectedParts) do check("protected_or_unknown_"..index,p.LocalTransparencyModifier == originalLTM and p.Transparency == originalTransparency) end

@@ -145,6 +145,17 @@ local function eligible(actor: Model, item: Instance): string?
 			local target = if weld.Part1 == item then weld.Part0 elseif weld.Part0 == item then weld.Part1 else nil
 			if target and target.Parent == actor and target.Name == "Head" then return "avatarHairOrHat" end
 		end
+		-- Native avatar intake also uses this exact enabled rigid-attachment edge.
+		-- Both endpoint instances must be the matching named direct attachments;
+		-- an unrelated constraint, body target or attachment name is not cosmetic proof.
+		local rigid = item:FindFirstChild("AccessoryRigidConstraint")
+		local head = actor:FindFirstChild("Head")
+		local target = if attachmentName and head and head:IsA("BasePart") then head:FindFirstChild(attachmentName) else nil
+		if attachment and attachment:IsA("Attachment") and target and target:IsA("Attachment")
+			and rigid and rigid:IsA("RigidConstraint") and rigid.Enabled then
+			if (rigid.Attachment0 == attachment and rigid.Attachment1 == target)
+				or (rigid.Attachment1 == attachment and rigid.Attachment0 == target) then return "avatarHairOrHat" end
+		end
 	end
 	-- AncestryVisual and all unrecognized/future structures remain visible.
 	return nil
