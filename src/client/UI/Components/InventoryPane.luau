@@ -51,7 +51,7 @@ local function storageTile(parent: Instance, item: any, width: number, height: n
 		for j, size in ipairs({Vector2.new(10, 2), Vector2.new(2, 10)}) do
 			local bar = frame(corners, "Corner" .. i .. "_" .. j, 0, 0, size.X, size.Y)
 			bar.AnchorPoint = point; bar.Position = UDim2.new(point.X, if point.X == 0 then 2 else -2, point.Y, if point.Y == 0 then 2 else -2)
-			bar.BackgroundColor3 = if busy then C.GoldShadow else C.Gold; bar.BackgroundTransparency = 0
+			bar.BackgroundColor3 = if busy then C.GoldShadow else C.Focus; bar.BackgroundTransparency = 0
 			bar.BorderSizePixel = 0; bar.Active = false; bar.Selectable = false; bar.ZIndex = 3
 		end
 	end
@@ -65,7 +65,7 @@ local function storageTile(parent: Instance, item: any, width: number, height: n
 		if dead then return end
 		local enabled = busy ~= true
 		tile.BackgroundColor3 = if enabled and pressed then C.Background else if enabled and (hovered or focused) then C.Surface else C.Background:Lerp(C.Surface, .35)
-		rim.Color = if enabled and focused then C.Focus else C.GoldShadow
+		rim.Color = if enabled and (focused or item.selected) then C.Focus else C.GoldShadow
 		rim.Thickness = if enabled and focused then 2 else 1
 		rim.Transparency = if busy then .6 else .15
 	end
@@ -193,19 +193,42 @@ return function(parent: Instance, model: any): Frame
 			end
 			local title = label(body, "ItemName", selected.name or "", 0, 0, bw, 60, true)
 			title.AutomaticSize = Enum.AutomaticSize.Y; add(title); row += 64
-			-- Keep available intents near the selected item's name, before long copy.
+			-- A bounded inspection bay gives original model geometry room to read.
+			-- It is passive decoration, never an extra equipment slot or item action.
+			if selected.definitionId then
+				local edge = math.min(256, bw - 16)
+				local bay = frame(body, "ItemInspectionBay", 0, 0, bw, edge + 16)
+				bay.BackgroundTransparency = 0; bay.BackgroundColor3 = C.Background
+				bay.BorderSizePixel = 0; bay.Active = false; bay.Selectable = false
+				local rim = Instance.new("UIStroke"); rim.Name = "InspectionRim"; rim.Color = C.GoldShadow; rim.Thickness = 1; rim.Parent = bay
+				local inset = frame(bay, "InspectionInset", 5, 5, bw - 10, edge + 6)
+				inset.Active = false; inset.Selectable = false
+				local inner = Instance.new("UIStroke"); inner.Color = C.Focus; inner.Transparency = .7; inner.Parent = inset
+				for i, point in ipairs({Vector2.new(0, 0), Vector2.new(1, 0), Vector2.new(0, 1), Vector2.new(1, 1)}) do
+					for j, size in ipairs({Vector2.new(18, 2), Vector2.new(2, 18)}) do
+						local mark = frame(bay, "InspectionCorner" .. i .. "_" .. j, 0, 0, size.X, size.Y)
+						mark.AnchorPoint = point; mark.Position = UDim2.new(point.X, if point.X == 0 then 4 else -4, point.Y, if point.Y == 0 then 4 else -4)
+						mark.BackgroundColor3 = C.Gold; mark.BackgroundTransparency = .15
+						mark.BorderSizePixel = 0; mark.Active = false; mark.Selectable = false
+					end
+				end
+				local art = AssetImage.item(bay, selected.definitionId, {size = edge, modelOnly = true}); alive()
+				if art then
+					art.Position = UDim2.fromOffset((bw - edge) / 2, 8); add(bay); row += edge + 20
+				else bay:Destroy() end
+			end
+			-- Keep all available intents before potentially long metadata.
 			for _, itemAction in ipairs(selected.actions or {}) do
 				add(action(body, itemAction.name, itemAction.label, 0, 0, bw, itemAction.callback, false, model.busy or itemAction.enabled == false)); row += 52
-			end
-			if selected.definitionId then
-				local art = AssetImage.item(body, selected.definitionId); alive()
-				if art then add(art); row += 84 end
 			end
 			for _, key in ipairs({"description", "binding", "stats", "comparison", "assignment"}) do
 				local value = selected[key]
 				if value and value ~= "" then
-					local h = if key == "description" or key == "comparison" then 84 else 64
+					-- Natural text height expands long EN/TH copy without empty 64px rows.
+					local h = if key == "description" or key == "comparison" then 40 else 24
 					local copy = label(body, "Detail_" .. key, tostring(value), 0, 0, bw, h)
+					copy.TextYAlignment = Enum.TextYAlignment.Top
+					copy.TextColor3 = if key == "binding" or key == "assignment" then C.Muted else C.Text
 					copy.AutomaticSize = Enum.AutomaticSize.Y; add(copy); row += h + 4
 				end
 			end

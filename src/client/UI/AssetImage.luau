@@ -10,14 +10,21 @@ function M.create(parent: Instance, id: string, size: UDim2): ImageLabel?
 	image:GetPropertyChangedSignal("IsLoaded"):Connect(loaded); loaded()
 	return image
 end
-function M.item(parent: Instance, definitionId: string): GuiObject?
+export type ItemOptions = {size: number?, modelOnly: boolean?}
+function M.item(parent: Instance, definitionId: string, options: ItemOptions?): GuiObject?
 	local index = table.find(Assets.ItemOrder, definitionId)
 	local atlas, atlasSize = Assets.ItemAtlas, Assets.ItemAtlasSize
 	if not index then index=table.find(Assets.EquipmentOrder,definitionId);atlas=Assets.EquipmentAtlas;atlasSize=Assets.EquipmentAtlasSize end
 	if not index then return nil end
-	local holder=Instance.new("Frame");holder.Name="ItemArtwork";holder.Size=UDim2.fromOffset(80,80);holder.BackgroundTransparency=1;holder.Parent=parent
-	local fallback=require(script.Parent.ItemViewport)(holder,definitionId)
-	local image = M.create(holder, atlas, UDim2.fromOffset(80, 80))
+	-- Existing tile/equipment callers keep their 80px source and .6 equipment scale.
+	local edge=if options and options.size then options.size else 80
+	if edge~=edge or edge==math.huge or edge==-math.huge then edge=80 end
+	edge=math.clamp(edge,16,512)
+	local holder=Instance.new("Frame");holder.Name="ItemArtwork";holder.Size=UDim2.fromOffset(edge,edge);holder.BackgroundTransparency=1;holder.Parent=parent
+	local fallback=require(script.Parent.ItemViewport)(holder,definitionId,edge)
+	-- Inspection must show current original geometry even if an older atlas exists.
+	if options and options.modelOnly then return holder end
+	local image = M.create(holder, atlas, UDim2.fromOffset(edge, edge))
 	if not image then return holder end
 	local column = (index - 1) % Assets.ItemColumns; local row = math.floor((index - 1) / Assets.ItemColumns)
 	local x = math.round(column * atlasSize.X / Assets.ItemColumns)
