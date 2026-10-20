@@ -8,7 +8,15 @@ assert(Run:IsServer() and Run:IsStudio() and game.PlaceId==0 and game.GameId==0,
 local server=game.ServerScriptService:WaitForChild("Server")
 assert(server.ServerBootstrap.Disabled,"Normal bootstrap must be disabled")
 local runtime=require(server.Config.Runtime)
-assert(runtime.StudioPersistence=="Memory" and next(runtime.AllowedDataStoreUniverses)==nil,"Memory only")
+assert(runtime.StudioPersistence=="Memory" and type(runtime.AllowedDataStoreUniverses)=="table" and next(runtime.AllowedDataStoreUniverses)==nil,"Memory only")
+local threeRoadWalk=script:GetAttribute("ThreeRoadWalk")==true
+if threeRoadWalk then
+ assert(runtime.FullConnectedWorldCandidate==true,"Three-road lab requires full-connected runtime")
+ assert(runtime.LaunchCandidate~=true and runtime.SharedCombatCandidate~=true and runtime.ContinuousWorldCandidate~=true,"Mixed launch/shared runtime refused")
+ for _,flag in ipairs({"NoviceJourney","IronveilJourney","AshenJourney","TowerJourney","CrosshavenJourney","ArchiveHeartJourney"}) do
+  assert(runtime[flag]==true,"Missing full campaign journey: "..flag)
+ end
+end
 assert(not workspace:FindFirstChild("GuildborneWorld") and not workspace:FindFirstChild("PartyPresentationLab"),"Existing world refused")
 assert(not Replicated:FindFirstChild("GuildborneRemotes") and not game.ServerStorage:FindFirstChild("GuildborneArtKit"),"Existing runtime refused")
 local owner=Players:GetPlayers()[1] or Players.PlayerAdded:Wait()
@@ -23,13 +31,13 @@ assert(#Players:GetPlayers()==1 and owner.Parent==Players and owner.Character==c
 assert(not workspace:FindFirstChild("GuildborneWorld") and not Replicated:FindFirstChild("GuildborneRemotes"),"Runtime appeared during setup")
 -- Every safety guard above precedes fixture mutations.
 local folder=Instance.new("Folder");folder.Name="PartyPresentationLab";folder.Parent=workspace
-folder:SetAttribute("Synthetic",true);folder:SetAttribute("OwnerUserId",owner.UserId)
+folder:SetAttribute("ThreeRoadWalk",threeRoadWalk);folder:SetAttribute("Synthetic",true);folder:SetAttribute("OwnerUserId",owner.UserId)
 local report=Instance.new("StringValue");report.Name="Report";report.Parent=folder
 local remotes=Instance.new("Folder");remotes.Name="GuildborneRemotes";remotes.Parent=Replicated
 local intent=Instance.new("RemoteEvent");intent.Name="CombatIntent";intent.Parent=remotes
 local state=Instance.new("RemoteEvent");state.Name="State";state.Parent=remotes
 local ready=Instance.new("RemoteEvent");ready.Name="LabReady";ready.Parent=remotes
-local result:any={scope="SYNTHETIC_PARTY_PRESENTATION_NOT_EARNED",status="STARTING",commands={},rewardCallbacks=0,profileWrites=0,notifications={}}
+local result:any={scope="SYNTHETIC_PARTY_PRESENTATION_NOT_EARNED",status="STARTING",threeRoadWalk=threeRoadWalk,walkingRouteCount=if threeRoadWalk then 3 else 2,commands={},rewardCallbacks=0,profileWrites=0,notifications={}}
 local connections:{RBXScriptConnection}={}
 local closed=false;local world:any=nil
 local function save() report.Value=Http:JSONEncode(result) end
@@ -71,10 +79,11 @@ local ok,problem=xpcall(function()
   world.IntentCommitted(p,action,{zone=args.zone})
  end
  world=require(server.Services.WorldService).new(function()end,reward,reward,travel,nil,nil,nil,nil,{
+  FullConnectedWorld=threeRoadWalk,
   Session=function(p:Player)return if living() and p==owner then session else nil end,
   Gate=function(p:Player,s:any,from:string,to:string):string?
    if not living() or p~=owner or s~=session then return "FixtureIdentityChanged" end
-   if not ((from=="City" and to=="Greenwood")or(from=="Greenwood" and to=="City")or(from=="Greenwood" and to=="Ironveil")or(from=="Ironveil" and to=="Greenwood"))then return "InvalidZone"end
+   if not ((from=="City" and to=="Greenwood")or(from=="Greenwood" and to=="City")or(from=="Greenwood" and to=="Ironveil")or(from=="Ironveil" and to=="Greenwood")or(threeRoadWalk and ((from=="Ironveil" and to=="Ashen")or(from=="Ashen" and to=="Ironveil"))))then return "InvalidZone"end
    return nil -- synthetic eligibility, not earned release-gate evidence
   end,
   Notify=function(_p:Player,code:string)if #result.notifications<100 then table.insert(result.notifications,code);save()end end,

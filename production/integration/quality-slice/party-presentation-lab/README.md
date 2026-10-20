@@ -2,7 +2,7 @@
 
 This is a synthetic local-player Warrior level 10 plus five real HeroService
 companions: a:Knight, a:Warrior, a:Archer, a:Mage, a:Priest. It does not load,
-rewrite or save any player profile. Eligibility for the two walking routes is
+rewrite or save any player profile. Eligibility for the walking routes is
 synthetic. It cannot prove earned progression or production release gates.
 
 Build from the current quality preview project:
@@ -60,3 +60,18 @@ source-enumeration and XML validation errors. Source sets are re-enumerated afte
 the build; added, removed or changed inputs prevent acceptance. Existing output
 directories are refused intact. A failed cleanup is reported, never treated as a
 successful build or permission to restart blindly.
+
+Optional `--three-road-walk` includes Ironveil–Ashen in addition to the default
+two roads. It requires the input runtime to explicitly enable
+`FullConnectedWorldCandidate=true`; the server checks the loaded runtime again
+before any fixture mutation, in addition to all existing isolation guards.
+The project attribute, receipt and native report identify this mode. The fixture
+remains synthetic level 10 eligibility, not earned Ashen progression. StartZone
+still defaults to Guild (or explicit City); traversal after setup uses ordinary
+walking inputs, with no forced test teleports.
+
+Three-road mode accepts only the exact runtime emitted by the reviewed full-
+connected preview generator; altered configuration must be regenerated/reviewed.
+The loaded server runtime independently requires all six journey flags and
+rejects launch, shared-combat or continuous-launch flags before mutations.
+These extra exclusions apply only to the three-road opt-in.

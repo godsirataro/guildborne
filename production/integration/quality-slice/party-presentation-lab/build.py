@@ -26,12 +26,17 @@ def source_files(node):
             found.update(source_files(value))
     return found
 
-def prepare(source, start):
+def prepare(source, start, three_road_walk=False):
     project = json.loads(source.read_text(encoding="utf-8-sig"))
     tree = project["tree"]
     server = tree["ServerScriptService"]["Server"]
     runtime = Path(server["Config"]["Runtime"]["$path"])
-    text = runtime.read_text()
+    text = runtime.read_text(encoding="utf-8-sig")
+    if three_road_walk:
+        template = (ROOT / "offline/ArchiveHeartRuntime.luau").read_text(encoding="utf-8-sig")
+        assert template.count("return {") == 1
+        expected = template.replace("return {", "return {\n    FullConnectedWorldCandidate=true,", 1)
+        assert text == expected, "Three-road lab requires the exact reviewed full-connected runtime; regenerate the quality preview"
     assert 'StudioPersistence="Memory"' in text and 'AllowedDataStoreUniverses={}' in text
     assert tree["ReplicatedStorage"]["QualityPreviewAssets"]["$attributes"]["IsolatedMemory"] is True
     server["ServerBootstrap"].setdefault("$properties", {})["Disabled"] = True
@@ -59,7 +64,7 @@ def prepare(source, start):
         "$properties": {"Disabled": True},
     }
     tree["ServerScriptService"]["PartyPresentationLab"] = {
-        "$path": str(HERE / "PartyPresentation.server.luau"), "$attributes": {"StartZone": start}}
+        "$path": str(HERE / "PartyPresentation.server.luau"), "$attributes": {"StartZone": start, "ThreeRoadWalk": three_road_walk}}
     scripts["PartyPresentationLab"] = {"$path": str(HERE / "PartyPresentation.client.luau")}
     project["name"] = "Guildborne_PartyPresentationLab"
     project.pop("servePlaceIds", None)
@@ -71,7 +76,7 @@ def snapshot(project, source):
     # Client was expanded into explicit children: still monitor its original root
     # so a newly added top-level file invalidates the prepared project as well.
     client_files = {p for p in (ROOT / "src/client").rglob("*") if p.is_file()}
-    return {str(p): sha(p) for p in sorted(source_files(project) | client_files | {source, Path(__file__).resolve()})}
+    return {str(p): sha(p) for p in sorted(source_files(project) | client_files | {source, Path(__file__).resolve(), ROOT / "offline/ArchiveHeartRuntime.luau"})}
 
 def verify_bootstraps(target):
     expected = {
@@ -132,6 +137,7 @@ def bounded_build(command, out, receipt):
 def main():
     parser = argparse.ArgumentParser()
     parser.add_argument("--start-zone", choices=["Guild", "City"], default="Guild")
+    parser.add_argument("--three-road-walk", action="store_true", help="Synthetic third route; requires full-connected isolated runtime")
     parser.add_argument("--output-dir", help="New directory beneath repository build/; existing attempts are refused")
     args = parser.parse_args()
     source = ROOT / "build/quality-preview.project.json"
@@ -148,12 +154,12 @@ def main():
     command = [str(ROOT / ".tools/rojo/rojo.exe"), "build", str(project_path), "--output", str(target)]
     receipt = dict(status="FAILED", command=command, exitCode=None, timeoutSeconds=120,
                    inputHashes={}, inputsUnchanged=False, synthetic=True,
-                   startZone=args.start_zone, studioTested=False, profileWrites=0)
+                   startZone=args.start_zone, threeRoadWalk=args.three_road_walk, walkingRouteCount=3 if args.three_road_walk else 2, studioTested=False, profileWrites=0)
     project = None
     failure = None
     try:
         original = source.read_bytes()
-        project = prepare(source, args.start_zone)
+        project = prepare(source, args.start_zone, args.three_road_walk)
         receipt["inputHashes"] = snapshot(project, source)
         project_path.write_text(json.dumps(project, indent=2) + "\n", encoding="utf-8")
         bounded_build(command, out, receipt)
