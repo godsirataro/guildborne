@@ -25,7 +25,7 @@ local function localDialogueOpen(root:BasePart,id:string):boolean
     return true
 end
 type Actor={model:Model,residentDistance:number?,motors:{[Motor6D]:CFrame},feet:{[Motor6D]:{Vector3}}?,added:RBXScriptConnection?,removing:RBXScriptConnection?,destroying:RBXScriptConnection?,borin:BorinMotion.State?,flashUntil:number?,id:string?,nextSample:number,tier:string?,activity:string,interactUntil:number?,localDialogueUntil:number?,weight:number,restored:boolean,lastTime:number?,lookYaw:number,lookRoot:BasePart?,lookUntil:number?,lookUserId:number?}
--- R6-only adapter for the one existing resident. Root motion remains server owned.
+-- R6 resident adapter. Root motion and activity time remain server owned.
 local function residentPose(actor:Actor,dt:number):boolean
     local distance=actor.model:GetAttribute("CityResidentDistance")
     local ground=actor.model:GetAttribute("CityResidentGroundY")
@@ -62,6 +62,15 @@ local function residentPose(actor:Actor,dt:number):boolean
     end
     actor.residentDistance=shown
     local wave=if moving then math.sin(shown*math.pi) else 0
+    local activity=actor.model:GetAttribute("CityResidentActivity")
+    local status=actor.model:GetAttribute("CityResidentStatus")
+    local clock=actor.model:GetAttribute("CityResidentClock")
+    local inspection=0
+    if activity=="ForgeInspection" and status=="Inspect" and type(clock)=="number"
+        and clock==clock and clock>=0 and clock<math.huge then
+        -- Eight seconds measuring, six resting; no work clock advances offscreen.
+        inspection=math.sin(math.pi*math.min(clock%14,8)/8)^2
+    end
     local solved:{[Motor6D]:CFrame}={}
     local feet=actor.feet
     if not feet then return false end
@@ -82,6 +91,13 @@ local function residentPose(actor:Actor,dt:number):boolean
             solved[motor]=CFrame.new(shift)*base*offset
         else
             if motor.Name=="Left Shoulder" or motor.Name=="Right Shoulder" then offset=CFrame.Angles(angle,0,0) end
+            if activity=="MarketStockRun" then
+                if motor.Name=="Left Shoulder" then offset=CFrame.Angles(wave*.035,0,0) end -- support the slate
+                if motor.Name=="Neck" and status=="Waiting" then offset=CFrame.Angles(-.22,.16,0) end
+            elseif activity=="ForgeInspection" then
+                if motor.Name=="Neck" then offset=CFrame.Angles(-.18*inspection,.12*inspection,0) end
+                if motor.Name=="InspectionJaw" then offset=CFrame.new(0,0,.08*inspection) end
+            end
             solved[motor]=base*offset
         end
     end

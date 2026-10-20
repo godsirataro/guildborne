@@ -41,13 +41,14 @@ function M.new(points: any, initialYaw: any, lookAt: any): (any, string?)
 	local homeYaw = angle(initialYaw)
 	local look = {x=lookAt.x, z=lookAt.z}
 	local state: any = {x=route[1].x, z=route[1].z, yaw=homeYaw, phase="Rest", remaining=8,
-		index=1, direction=1, moving=false, status="Rest"}
+		index=1, direction=1, moving=false, status="Rest", clock=0}
 	local dead = false
 	local function snapshot(s: any): any
-		return {x=s.x,z=s.z,yaw=s.yaw,status=s.status,moving=s.moving,reason=s.reason}
+		return {x=s.x,z=s.z,yaw=s.yaw,status=s.status,moving=s.moving,reason=s.reason,clock=s.clock,phase=s.phase}
 	end
 	local function advance(dt: number): any
 		local s: any = table.clone(state)
+		s.clock += dt
 		s.reason = nil
 		s.moving = false
 		if s.phase == "Rest" or s.phase == "Waiting" then
@@ -107,6 +108,49 @@ function M.new(points: any, initialYaw: any, lookAt: any): (any, string?)
 		dead=true;state.status="Destroyed";state.moving=false;state.reason=nil
 	end
 	return api, nil
+end
+
+-- Stationary inspection uses the same accepted simulation clock as walking.
+-- No elapsed wall time is replayed after a relevance/blocker pause.
+function M.station(anchor: any, yaw: any, inspectSeconds: any, restSeconds: any): (any,string?)
+	if not point(anchor) or not finite(yaw) or not finite(inspectSeconds) or not finite(restSeconds)
+		or inspectSeconds<1 or inspectSeconds>60 or restSeconds<1 or restSeconds>60 then
+		return nil,"InvalidStation"
+	end
+	local state: any = {x=anchor.x,z=anchor.z,yaw=angle(yaw),phase="Inspect",status="Inspect",
+		remaining=inspectSeconds,clock=0,moving=false}
+	local dead=false
+	local function snapshot(s:any):any
+		return {x=s.x,z=s.z,yaw=s.yaw,phase=s.phase,status=s.status,clock=s.clock,moving=false,reason=s.reason}
+	end
+	local function advance(dt:number):any
+		local s:any=table.clone(state)
+		s.clock+=dt;s.reason=nil
+		s.remaining-=dt
+		if s.remaining<=1e-9 then
+			s.phase=if s.phase=="Inspect" then "Rest" else "Inspect"
+			-- Preserve only this accepted tick's fractional remainder at the boundary.
+			s.remaining=math.min(0,s.remaining)+(if s.phase=="Inspect" then inspectSeconds else restSeconds)
+		end
+		s.status=s.phase
+		return s
+	end
+	local api={}
+	function api.snapshot():any return snapshot(state) end
+	function api.propose(dt:any):any
+		if dead or not validDt(dt) then return snapshot(state) end
+		return snapshot(advance(math.min(dt,.1)))
+	end
+	function api.step(dt:any,relevant:boolean,clear:boolean):any
+		if dead then return snapshot(state) end
+		if not validDt(dt) or relevant~=true or clear~=true then
+			state.status="Paused"
+			state.reason=if not validDt(dt) then "InvalidDt" elseif relevant~=true then "Irrelevant" else "Blocked"
+		else state=advance(math.min(dt,.1)) end
+		return snapshot(state)
+	end
+	function api.destroy() dead=true;state.status="Destroyed";state.reason=nil end
+	return api,nil
 end
 
 -- Disk swept through XZ; the disk also conservatively encloses in-place turns.

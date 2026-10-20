@@ -6,11 +6,17 @@ local Kit=require(script.Parent.ArtKit)
 local V=Vector3.new
 local C=Art.Palette
 local ResidentRoute=require(script.Parent.Parent.Systems.CityResidentRoute)
--- One nonquest resident, owned by this world builder. No escort/session receipts.
-local function startResident(town:Folder,model:Model)
+-- Bounded nonquest residents owned by this builder. No escort/session receipts.
+local function startResident(town:Folder,model:Model,definition:any?):boolean
 	local root=model.PrimaryPart
-	if not root then return end
-	local groundY=.7
+	if not root then return false end
+	local def=definition or {groundY=.7,points={{x=-110,z=-830},{x=-110,z=-828},{x=-184,z=-828}},yaw=0,lookAt={x=-190,z=-830},activity="BoardVisit"}
+	local groundY=def.groundY
+	local minX,maxX,minZ,maxZ=math.huge,-math.huge,math.huge,-math.huge
+	for _,point in ipairs(def.points) do
+		minX=math.min(minX,point.x-4);maxX=math.max(maxX,point.x+4)
+		minZ=math.min(minZ,point.z-4);maxZ=math.max(maxZ,point.z+4)
+	end
 	local function bounds(part:BasePart):any
 		local cf,size=part.CFrame,part.Size*.5
 		local r,u,l=cf.RightVector,cf.UpVector,cf.LookVector
@@ -22,12 +28,12 @@ local function startResident(town:Folder,model:Model)
 	end
 	local footBottom=math.huge
 	local left,right=model:FindFirstChild("Left Leg"),model:FindFirstChild("Right Leg")
-	if not left or not left:IsA("BasePart") or not right or not right:IsA("BasePart") then return end
+	if not left or not left:IsA("BasePart") or not right or not right:IsA("BasePart") then return false end
 	for _,p in ipairs(model:GetDescendants()) do
 		if p:IsA("BasePart") and (p==left or p==right or p.Name=="Boot") then footBottom=math.min(footBottom,bounds(p).minY) end
 	end
 	local footOffset=root.Position.Y-footBottom
-	if footOffset~=footOffset or footOffset<1 or footOffset>6 then return end
+	if footOffset~=footOffset or footOffset<1 or footOffset>6 then return false end
 	local bodyTop=footBottom
 	for _,p in ipairs(model:GetDescendants()) do
 		if p:IsA("BasePart") then
@@ -36,18 +42,23 @@ local function startResident(town:Folder,model:Model)
 			local x=math.max(math.abs(b.minX-root.Position.X),math.abs(b.maxX-root.Position.X))
 			local z=math.max(math.abs(b.minZ-root.Position.Z),math.abs(b.maxZ-root.Position.Z))
 			-- Reserve .5 studs for the bounded local gait. A changed rig needs review.
-			if x~=x or z~=z or math.sqrt(x*x+z*z)+.5>3 then return end
+			if x~=x or z~=z or math.sqrt(x*x+z*z)+.5>3 then return false end
 		end
 	end
 	local bodyHeight=bodyTop-footBottom+.1
-	if bodyHeight~=bodyHeight or bodyHeight<=0 or bodyHeight>20 then return end
+	if bodyHeight~=bodyHeight or bodyHeight<=0 or bodyHeight>20 then return false end
 	local rootY=groundY+footOffset
-	local route=assert(ResidentRoute.new({{x=-110,z=-830},{x=-110,z=-828},{x=-184,z=-828}},0,{x=-190,z=-830}))
+	local route=if def.station then assert(ResidentRoute.station(def.points[1],def.yaw,8,6))
+		else assert(ResidentRoute.new(def.points,def.yaw,def.lookAt))
 	-- Explicit presentation capability: never impersonate a hero or a quest NPC.
 	model:SetAttribute("CityResidentRoute",true)
 	model:SetAttribute("CityResidentGroundY",groundY)
 	model:SetAttribute("CityResidentDistance",0)
-	model:PivotTo(CFrame.new(-110,rootY,-830))
+	model:SetAttribute("CityResidentActivity",def.activity)
+	model:SetAttribute("CityResidentClock",0)
+	local initial=route.snapshot()
+	model:SetAttribute("CityResidentStatus",initial.status)
+	model:PivotTo(CFrame.new(initial.x,rootY,initial.z)*CFrame.Angles(0,initial.yaw,0))
 	game:GetService("CollectionService"):AddTag(model,"GuildborneFriendlyNPC")
 	local parts:{[BasePart]:boolean}={}
 	local heroes:{[Model]:boolean}={}
@@ -97,7 +108,7 @@ local function startResident(town:Folder,model:Model)
 		local boxes={};local supportedFrom=false;local supportedTo=false;local valid=#players<=100
 		local scanned=0
 		-- Direct bounds include visible CanQuery=false/CanCollide=false furniture.
-		-- Floors are support only when flat and at the reviewed .7 surface.
+		-- Floors are support only when flat and at this resident's reviewed height.
 		for part in pairs(parts) do
 			scanned+=1;if scanned>16384 then valid=false;break end
 			if not part.Parent then parts[part]=nil;continue end
@@ -107,7 +118,7 @@ local function startResident(town:Folder,model:Model)
 				if value~=value or math.abs(value)>1e6 then valid=false;break end
 			end
 			if not valid then break end
-			if b.maxX< -188 or b.minX> -106 or b.maxZ< -834 or b.minZ> -824 then continue end
+			if b.maxX<minX or b.minX>maxX or b.maxZ<minZ or b.minZ>maxZ then continue end
 			if math.abs(part.CFrame.UpVector.Y)> .9999 and math.abs(b.maxY-groundY)<=.025 then
 				local function supports(point:any):boolean
 					local localPoint=part.CFrame:PointToObjectSpace(V(point.x,groundY,point.z))
@@ -153,9 +164,11 @@ local function startResident(town:Folder,model:Model)
 		model:SetAttribute("EscortMoving",distance>0)
 		travelled+=distance
 		model:SetAttribute("CityResidentDistance",travelled)
+		model:SetAttribute("CityResidentClock",state.clock)
 		model:SetAttribute("CityResidentStatus",state.status)
 		model:SetAttribute("CityResidentReason",if not valid then "InvalidGeometry" elseif not supportedFrom or not supportedTo then "UnsupportedGround" elseif blocked then reason else state.reason)
 	end))
+	return true
 end
 return function(town: Folder,templates: Folder,open: any,prompt: any): any
 	local modular=require(script.Parent.CityKit).Build();modular.Parent=game.ServerStorage
@@ -326,5 +339,67 @@ return function(town: Folder,templates: Folder,open: any,prompt: any): any
 	for name,root in pairs(require(script.Parent.FriendlyCityNpcs)(town,open,prompt)) do S.npcs[name]=root end
 	require(script.Parent.CityLandscape)(town)
 	if resident then startResident(town,resident) end
+	-- Original civilian silhouettes built from the existing procedural R6 rig.
+	-- Held items are welded scenery, never Tools, inventory or quest identities.
+	local function ambient(name:string,class:string,activity:string):Model
+		local m=rig.Build(class);m.Name=name
+		m:SetAttribute("CityAmbience",true);m:SetAttribute("CityResidentActivity",activity)
+		m:SetAttribute("AssetProvenance","Guildborne procedural HeroRig and original local primitive props")
+		local remove={Quiver=true,Arrow=true,Breastplate=true,Pauldron=true,HelmetRidge=true}
+		for _,child in ipairs(m:GetChildren()) do if remove[child.Name] then child:Destroy() end end
+		local h=m:FindFirstChildOfClass("Humanoid");if h then h.EvaluateStateMachine=false end
+		for _,part in ipairs(m:GetDescendants()) do
+			if part:IsA("BasePart") then part.CanCollide=false;part.CanTouch=false;part.CanQuery=false end
+		end
+		return m
+	end
+	local function armPose(m:Model,name:string,angle:number)
+		local motor=m:FindFirstChild(name,true) :: Motor6D
+		local arm=motor.Part1 :: BasePart
+		motor.C0*=CFrame.Angles(angle,0,0)
+		local cf=(motor.Part0 :: BasePart).CFrame*motor.C0*motor.C1:Inverse()
+		local delta=cf*arm.CFrame:Inverse()
+		for _,w in ipairs(m:GetDescendants()) do
+			if w:IsA("WeldConstraint") and w.Part0==arm and w.Part1 then w.Part1.CFrame=delta*w.Part1.CFrame end
+		end
+		arm.CFrame=cf
+	end
+	local function held(m:Model,name:string,size:Vector3,limb:BasePart,relative:CFrame,color:Color3):Part
+		local part=Kit.Part(m,name,size,V(0,0,0),color,Enum.Material.SmoothPlastic,false)
+		part.Anchored=false;part.Massless=true;part.CFrame=limb.CFrame*relative
+		local weld=Instance.new("WeldConstraint");weld.Part0=limb;weld.Part1=part;weld.Parent=part
+		return part
+	end
+	local porter=ambient("Tavin Reed","Archer","MarketStockRun")
+	local carryAngle=.9 -- lowered working grip keeps hand corners inside radius 3
+	local porterTorso=porter:FindFirstChild("Torso") :: BasePart
+	porterTorso.Color=Color3.fromRGB(159,110,63)
+	armPose(porter,"Left Shoulder",carryAngle)
+	local porterArm=porter:FindFirstChild("Left Arm") :: BasePart
+	held(porter,"ClothBundle",V(1.6,1.4,.65),porterTorso,CFrame.new(0,.05,.95),Color3.fromRGB(181,141,82))
+	for _,x in ipairs({-.55,.55}) do
+		held(porter,"BundleStrap",V(.14,1.55,.1),porterTorso,CFrame.new(x,.05,1.31),C.Wood)
+	end
+	held(porter,"StockSlate",V(.85,.12,.65),porterArm,CFrame.new(.25,-.95,0),C.Wood)
+	held(porter,"SlateTally",V(.55,.03,.35),porterArm,CFrame.new(.25,-.87,0),C.Parchment)
+	porter.Parent=town
+	if not startResident(town,porter,{groundY=.7,points={{x=340,z=-1080},{x=340,z=-1070},{x=330,z=-1070}},yaw=math.pi,lookAt={x=330,z=-1060},activity="MarketStockRun"}) then porter:Destroy() end
+	local inspector=ambient("Edda Flint","Warrior","ForgeInspection")
+	local torso=inspector:FindFirstChild("Torso") :: BasePart
+	torso.Color=Color3.fromRGB(90,113,121)
+	local cap=inspector:FindFirstChild("Helmet") :: BasePart;cap.Color=C.Wood
+	armPose(inspector,"Left Shoulder",carryAngle);armPose(inspector,"Right Shoulder",carryAngle)
+	local leftArm=inspector:FindFirstChild("Left Arm") :: BasePart
+	local rightArm=inspector:FindFirstChild("Right Arm") :: BasePart
+	held(inspector,"InspectorsApron",V(1.55,1.7,.15),torso,CFrame.new(0,-.3,-.62),C.Wood)
+	held(inspector,"SteelSample",V(1.7,.18,.45),leftArm,CFrame.new(.85,-.95,0)*CFrame.Angles(-carryAngle,0,0),C.Iron)
+	local gauge=held(inspector,"GaugeRail",V(1.3,.12,.14),rightArm,CFrame.new(-.65,-.95+.3*math.cos(carryAngle),-.3*math.sin(carryAngle))*CFrame.Angles(-carryAngle,0,0),C.Gold)
+	held(inspector,"GaugeCrosspiece",V(.12,.12,.9),gauge,CFrame.new(-.55,0,0),C.Gold)
+	held(inspector,"FixedGaugeJaw",V(.12,.4,.14),gauge,CFrame.new(-.55,-.2,.3),C.Gold)
+	local jaw=Kit.Part(inspector,"SlidingGaugeJaw",V(.12,.4,.14),V(0,0,0),C.Gold,Enum.Material.SmoothPlastic,false)
+	jaw.Anchored=false;jaw.Massless=true;jaw.CFrame=gauge.CFrame*CFrame.new(-.55,-.2,-.38)
+	local joint=Instance.new("Motor6D");joint.Name="InspectionJaw";joint.Part0=gauge;joint.Part1=jaw;joint.C0=CFrame.new(-.55,-.2,-.38);joint.Parent=gauge
+	inspector.Parent=town
+	if not startResident(town,inspector,{groundY=.3,points={{x=370,z=-1040}},yaw=0,station=true,activity="ForgeInspection"}) then inspector:Destroy() end
 	return S
 end
