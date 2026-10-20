@@ -5,6 +5,8 @@ local RunService = game:GetService("RunService")
 local Players = game:GetService("Players")
 local Preview = require(script.Parent.LocalGeometryPreview)
 local LegacyCosmetics = require(script.Parent.LocalLegacyCosmetics)
+local WeaponPresentation = require(script.Parent.LocalWeaponPresentation)
+local ActionRetarget = require(script.Parent.LocalActionRetarget)
 local Adapter = {}
 
 type Joint = { motor: Motor6D, bind: CFrame, basis: CFrame }
@@ -12,6 +14,7 @@ type Handle = {
 	Model: Model,
 	Destroy: (self: Handle) -> (),
 	GetDiagnostics: (self: Handle) -> any,
+	GetWeaponModel: (self: Handle) -> Model?,
 }
 local active: {[Model]: Handle} = {}
 local pending: {[Model]: {}} = {}
@@ -57,8 +60,13 @@ local function snapshotSelection(selection: any): any
 	return result
 end
 
-function Adapter.Attach(actor: Model, selection: any): (Handle?, string?)
+function Adapter.Attach(actor: Model, selection: any, options: any?): (Handle?, string?)
 	if not Adapter.IsAvailable() then return nil, "LOCAL_UNPUBLISHED_CLIENT_STUDIO_ONLY" end
+	if options ~= nil and (type(options) ~= "table" or (options.actionPose ~= nil and type(options.actionPose) ~= "function")) then
+		return nil,"LOCAL_ACTION_POSE_CALLBACK_REQUIRED"
+	end
+	-- The caller supplies the existing trusted client ActionPose; no shared-to-client require.
+	local actionPose = if options then options.actionPose else nil
 	if typeof(actor) ~= "Instance" or not actor:IsA("Model") then return nil, "ACTOR_MODEL_REQUIRED" end
 	if type(selection) ~= "table" or selection.raceId ~= "HUMAN"
 		or selection.bodyPresetId ~= "HUMAN_STANDARD" then
@@ -86,6 +94,8 @@ function Adapter.Attach(actor: Model, selection: any): (Handle?, string?)
 	if not visualRoot then Preview.Destroy(model); return nil, "PREVIEW_ROOT_MISSING" end
 	local joints: {[string]: Joint} = {}
 	local cosmetics: any = nil
+	local weapon: any = nil
+	local action: any = nil
 	local connections: {RBXScriptConnection} = {}
 	local destroyed = false
 	local lastError: string? = nil
@@ -100,6 +110,8 @@ function Adapter.Attach(actor: Model, selection: any): (Handle?, string?)
 		if active[actor] == self then active[actor] = nil end
 		for _, connection in ipairs(connections) do connection:Disconnect() end
 		table.clear(connections)
+		if action then action:Destroy() end
+		if weapon then weapon:Destroy() end
 		if cosmetics then cosmetics:Destroy() end
 		Preview.Destroy(model :: Model)
 	end
@@ -110,9 +122,14 @@ function Adapter.Attach(actor: Model, selection: any): (Handle?, string?)
 			phase=phase, retainedMeshes=Preview.ResourceCount(model),
 			lastError=lastError,
 			cosmetics=if cosmetics then cosmetics:GetDiagnostics() else nil,
+			weapon=if weapon then weapon:GetDiagnostics() else nil,
+			action=if action then action:GetDiagnostics() else nil,
 			connections=#connections,
 			clothingFitAccepted=false, combatRetargetAccepted=false,
 		}
+	end
+	function handle:GetWeaponModel(): Model?
+		return if weapon then weapon:GetModel() else nil
 	end
 
 	-- Source bind frames can have different axes for every joint. Conjugation
@@ -181,6 +198,14 @@ function Adapter.Attach(actor: Model, selection: any): (Handle?, string?)
 		local cosmeticState, cosmeticError = LegacyCosmetics.New(actor)
 		assert(cosmeticState,cosmeticError)
 		cosmetics = cosmeticState
+		local weaponState, weaponError = WeaponPresentation.New(actor,model)
+		assert(weaponState,weaponError)
+		weapon = weaponState
+		if actionPose then
+			local actionState = ActionRetarget.New(actor,joints,actionPose)
+			assert(actionState,"LOCAL_ACTION_STATE_REQUIRED")
+			action = actionState
+		end
 		hideBody()
 		table.insert(connections, actor.Destroying:Connect(function() handle:Destroy() end))
 		table.insert(connections, actor.AncestryChanged:Connect(function()
@@ -216,6 +241,8 @@ function Adapter.Attach(actor: Model, selection: any): (Handle?, string?)
 				assert(joint.motor:IsDescendantOf(model) and joint.motor.Part0 and joint.motor.Part1
 					and joint.motor.Part0:IsDescendantOf(model)
 					and joint.motor.Part1:IsDescendantOf(model), "PREVIEW_JOINT_REMOVED")
+				-- Full reset prevents action translation/rotation accumulating across frames.
+				joint.motor.C0 = joint.bind
 			end
 			local delta = root.Position - previousPosition
 			previousPosition = root.Position
@@ -240,15 +267,28 @@ function Adapter.Attach(actor: Model, selection: any): (Handle?, string?)
 			bend("RightElbow", (.12 + math.max(0, -stride) * .16) * weight)
 			bend("LeftAnkle", -math.max(0, -stride) * .15 * weight)
 			bend("RightAnkle", -math.max(0, stride) * .15 * weight)
+			if action then action:Step(workspace:GetServerTimeNow()) end
 			visualRoot.CFrame = root.CFrame * offset
 			frames += 1
 			if measured > 0 then distance += flat.Magnitude end
 			end)
 		end))
+		-- Read the evaluated source assembly after simulation, not the prior frame's joints.
+		table.insert(connections, RunService.PostSimulation:Connect(function()
+			guarded(function()
+				local success, err = weapon:Sync()
+				assert(success,err)
+			end)
+		end))
 		-- The default camera may rewrite local body transparency each frame.
-		-- Reclassify source-backed body cosmetics; equipment remains untouched.
+		-- Follow evaluated source joints, then hide only a successfully copied weapon.
+		-- Authoritative equipment identity/physics remain untouched; LTM is restored on exit.
 		table.insert(connections, RunService.RenderStepped:Connect(function()
-			guarded(hideBody)
+			guarded(function()
+				hideBody()
+				local success, err = weapon:Sync()
+				assert(success,err)
+			end)
 		end))
 	end)
 	if not ok then handle:Destroy(); return nil, "LOCAL_ACTOR_ATTACH_FAILED:" .. tostring(setupError) end
