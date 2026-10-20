@@ -1,9 +1,13 @@
 # Shared character foundation: bounded continuation
 
 2026-10-21. Source intake: `0dfdad55b036a13628dba1dae7f7642d2ffe462e`.
-Latest supported quota: 32% weekly used / 68% remaining. Stop new work at
+Latest supported quota: 37% weekly used / 63% remaining. Stop new work at
 30% remaining; no shutdown. Full game completion and human art acceptance
 remain outstanding.
+
+Latest result: source4e15b6f/evidence9bd2bba completes local cosmetic hiding and
+exact restoration; native grip alignment/attack retargeting failed. See the
+latest section below. Earlier intake/ownership notes are historical.
 
 ## Ownership decision
 
@@ -142,3 +146,40 @@ Current quota at this checkpoint is67% weekly remaining. Character-import lease
 released after the reviewed source/evidence commits. The next deliverable is
 legacy-cosmetic restoration plus actual grip/contact and attack inspection;
 art, gender variants and the full shared-character foundation remain open.
+
+## Latest completed gate: cosmetics repaired, grip/attack inspected
+
+Sourcea0f0636 then4e15b6f and reviewed evidence9bd2bba implement the next bounded
+gate above. [Native packet](../../character-import/human-standard-cosmetic-grip-20261021/README.md)
+preserves63 hashed files, two new screenshots, exact source attribution and the
+initial actual-avatar hair failure. Real Roblox hair used RigidConstraint rather
+than Weld; the final narrow binding classifier fixes that actual case.
+
+Final48 native policy assertions and actual player/owned Warrior hide/restore
+checks pass, with all5 equipped player weapon parts preserved. Original22/45
+part comparisons and5/38 WeldConstraint comparisons pass. Final resources,
+backings, pending builds and handles are0. The Studio fixture is stopped in Edit.
+Full unchanged4e15b6f baseline passed973 tests/399 strict files; warnings retained.
+Independent code/evidence review passed. No saves/production renderer changed.
+
+The player weapon remains welded to the old hand. The authored new grip was
+0.111–2.234 studs outside the Grip box during99 walking samples. During31
+action-window samples of an existing server-approved Basic, gap0.772–2.616
+studs remained and new shoulder/elbow C0 did not change. Server recorded one
+player Basic and14 damage. This is a failed weapon/retarget gate, not animation
+acceptance. Five accepted Hold commands did not isolate companion AI; the lab
+recorded one synthetic counter-only reward callback and profileWrites0. The
+brief missing-Goblin read is retained. No video was recorded; the second static
+image is after the return, not the strike frame.
+
+Character-import was released; quality-slice-integration is held only for this
+checkpoint and released after its commit. S15 received the exact result with a
+read-only request for the smallest source-derived weapon presentation/action
+retarget plan. No new writer, checkout, access, paid ForgeGUI or publishing.
+
+Next owner must reclaim character-import (and explicitly reconcile any additional
+scope) before implementing local weapon presentation plus server-approved action
+retarget. Preserve original authoritative equipment, collision, actor identity,
+timing and cleanup. Repeat the actual grip/contact gate before wiring production
+renderer/creator. Gender, races, Heavy fit and art completion remain pending.
+Current quota63% weekly remaining; stop new waves at30%; no shutdown.

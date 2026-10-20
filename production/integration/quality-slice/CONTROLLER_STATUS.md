@@ -1,3 +1,43 @@
+# Character cosmetic/contact checkpoint — 2026-10-21
+
+Latest verified weekly quota:37% used /63% remaining. Stop new waves at30%
+remaining; no shutdown. Full character/game/art acceptance remains incomplete.
+
+Reviewed sourcea0f0636 +4e15b6f repairs exact local legacy-cosmetic hiding and
+restoration, including actual avatar Hair RigidConstraint bindings. Evidence
+9bd2bba archives63 hashed raw/derived files and two fresh in-engine screenshots.
+The first candidate's actual hair failure is retained. Final48 native policy
+assertions passed; player16 and Warrior44 original cosmetic parts hide, while
+all5 actual player weapon pieces stay visible. Original22/45 part state and
+5/38 WeldConstraint comparisons pass; exact detach restoration passes and all
+handle/resource/backing/pending counts return to0. Studio is stopped in Edit.
+
+Contact/attack retarget is **FAILED**, not accepted:99 walking samples show
+source-grip-to-weapon-box separation0.111–2.234 studs. One existing player Basic
+was server-accepted for14 damage;31 action-window samples within the129-sample
+trace show0.772–2.616 studs separation and no new shoulder/elbow C0 change.
+Original weapon still follows the old hand. The synthetic fixture was not
+isolated from companion AI; one counter-only reward callback occurred, with
+profileWrites0. Static screenshots and telemetry are not art/animation/device
+acceptance. No source assets, production renderer, save schema or runtime IDs changed.
+
+Final unchanged4e15b6f baseline d1e6e0a17cba448aa1a797ea1b6208a4 passed973 tests,
+399 strict files and build/analysis/repository checks. Existing GUI harness
+warnings remain. Independent source and archive review passed.
+[Exact evidence and remaining gate](../../character-import/human-standard-cosmetic-grip-20261021/README.md)
+
+Character-import ownership released after the reviewed source/evidence commits.
+Controller holds quality-slice-integration only to write this checkpoint and
+will release it after commit. S15 received a read-only proposal request for a
+source-derived local weapon binding and authoritative-action presentation;
+no duplicate runtime/Studio writer was assigned. Reclaim ownership before
+implementing that next gate. The shared renderer/creator, gender/other races,
+fit, faces/hair art, persistence rollout, devices and human signoff remain open.
+
+Earlier checkpoints below are historical.
+
+---
+
 # Character foundation checkpoint — 2026-10-21
 
 Latest verified weekly quota:33% used /67% remaining. Stop new waves at30%
