@@ -462,7 +462,9 @@ return function(templates: Folder, reward: any,towerResult: any,regionalRewardFa
 			-- Orders only affect owned AI movement/selection; they never cast, heal or refill cooldowns.
 			local anchor=a.root.Position
 			if action=="Hold" then
-				local hit=workspace:Raycast(anchor+V(0,8,0),V(0,-24,0),s.params)
+				-- Match follower support: avoid overhead surfaces while retaining
+				-- the original lower bound, sixteen studs below the root reference.
+				local hit=workspace:Raycast(anchor+V(0,1,0),V(0,-17,0),s.params)
 				if not hit then return false,"CompanionUnavailable"end
 				anchor=hit.Position+V(0,3,0)
 			end

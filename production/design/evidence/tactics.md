@@ -27,3 +27,12 @@ Each original phase body was copied verbatim (the extraction script asserted eac
 Pre/post extracted body SHA256 values: prepareOwner `c3e40af51ba78a706c1af2e5095d27836612acbe3b3af7e9c90010402c60590d`; stepEnemies `88feddbe5f8e0888058e57c801d55123508f577bf012fdab262e2b20bb40af1d`; stepOwner `1521e3edf89aa2e64ccd174c47d78d40d94c90a1e9dcbbd4e4d21d39e670883a`; finishStep `f05609962fd9e3b2f2576beb775b9eabdd25159a876a5f35a9109e18fdd85e6a`. These establish text preservation of moved blocks, not live behavior acceptance.
 
 Focused tactics runner: **6 checks passed**. CombatService compilation and Roblox-aware static analysis passed. Existing pure tactics tests do not execute Roblox CombatService; full baseline and independent phase/diff review are coordinator-owned follow-up gates. No new mirrored-implementation test was added for a text-preserving extraction.
+
+
+## Hold support probe repair (2026-10-20)
+
+CombatService Hold now probes from root reference +1 down17 instead of +8 down24, matching the reviewed follower repair and preserving the original reference-minus16 lower bound. This prevents selection of the Greenwood overhead lintel as a Hold target. No ownership, readiness, order, health, cooldown, observation or recovery logic changes.
+
+Actual PlayerAction was extracted through its function boundary into ignored `build/hold-support-review/current.luau`, using real HeroTactics and geometric/server mocks. Eighteen cases passed: native floor2/lintel12.5/reference5 resolves root5; Travel/jump references7/9; elevated floor52; void; reference-minus20 rejection; minus16 acceptance; foreign/missing/not-following/dead/removed actors, dead/inactive leader, own-player selection and shared-policy rejection. Rejected commands preserve order/path/generation and emit no accepted-order observation; all cases preserve HP/stats/cooldowns. Original +8/down24 source resolves root15.5; the unchanged regression fails against it.
+
+Run `.tools/luau/luau.exe build/hold-support-review/current.luau`; the original-regression runner intentionally exits nonzero. Raw stdout/stderr and exact source/harness hashes are in `build/hold-support-review/receipt.json`, SHA256 `b2ed0d627c835de19a1f33ed601aa5b6b12b74edfc9c7482efcc58b8712a2e1a`. CombatService compilation passed. Existing pure hero_tactics tests cannot inject actual CombatService, so no mirrored permanent test was added. Native behavior NOT_RUN; existing immutable Studio candidate was not changed.
