@@ -1,0 +1,61 @@
+{
+  "mesh": {
+    "name": "mesh.json",
+    "rawBytes": 670940,
+    "rawSha256": "9c606cc4d964583ab7f61dc2b5b49947c5ffe007fb04bece7085c90a4687fd69",
+    "compressedBytes": 102451,
+    "compressedSha256": "82954d8c8136abf38a0cf737b6f6b36ba2d9a58548df3ab0656c3d18deaa3931",
+    "encodedBytes": 136604,
+    "parts": 1
+  },
+  "images": [
+    {
+      "name": "ColorMap.rgba",
+      "rawBytes": 4194304,
+      "rawSha256": "89e1798d90c46dc9ab2e0ea9cd3fddd15b7376eca0d33f0bec39ba25ef402312",
+      "compressedBytes": 2106205,
+      "compressedSha256": "d9e5c4cd3895c4b56123ea5188d261f8b195391be14ec8b8d66bcaacd30ed980",
+      "encodedBytes": 2808276,
+      "parts": 12,
+      "role": "ColorMap",
+      "width": 1024,
+      "height": 1024
+    },
+    {
+      "name": "NormalMap.rgba",
+      "rawBytes": 4194304,
+      "rawSha256": "a32b0b9bd693491fcdb0fa7fca9ecb06c4fa9cb6b17e6ecc32f41f62048012ef",
+      "compressedBytes": 887115,
+      "compressedSha256": "b8acaf5ecabfc2a309ab90e793e457fff08a2947de5941dbac867bc08d3d32df",
+      "encodedBytes": 1182820,
+      "parts": 5,
+      "role": "NormalMap",
+      "width": 1024,
+      "height": 1024
+    },
+    {
+      "name": "RoughnessMap.rgba",
+      "rawBytes": 4194304,
+      "rawSha256": "d2ebd7954f36eacda282beae2948f2cc3361879b71d582bb72caffce7b516c02",
+      "compressedBytes": 1005414,
+      "compressedSha256": "74f899c8f708e3e0c98027bc8e20421e829fe4f15c9501ab66686aaadcd20a62",
+      "encodedBytes": 1340552,
+      "parts": 6,
+      "role": "RoughnessMap",
+      "width": 1024,
+      "height": 1024
+    },
+    {
+      "name": "MetalnessMap.rgba",
+      "rawBytes": 4194304,
+      "rawSha256": "190cf949bf34598478688f51cd8d5ae99c419a8a5b9110bf3158989c1a276417",
+      "compressedBytes": 844102,
+      "compressedSha256": "d603f94d710d8be5ba9732bc60f8ed7811d65c44b3977cad4285ad6c7cf110b9",
+      "encodedBytes": 1125472,
+      "parts": 5,
+      "role": "MetalnessMap",
+      "width": 1024,
+      "height": 1024
+    }
+  ]
+}

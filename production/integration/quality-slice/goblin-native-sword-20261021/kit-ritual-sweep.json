@@ -1,0 +1,5937 @@
+[
+  {
+    "minY": 0.08500003814697266,
+    "parts": [
+      {
+        "vertices": 448,
+        "faces": 864,
+        "name": "goblin_ritual_r6_Head",
+        "verticesInsideBody": 0
+      },
+      {
+        "vertices": 952,
+        "faces": 1836,
+        "name": "goblin_ritual_r6_Torso",
+        "verticesInsideBody": 0
+      },
+      {
+        "vertices": 392,
+        "faces": 756,
+        "name": "goblin_ritual_r6_Left_Arm",
+        "verticesInsideBody": 0
+      },
+      {
+        "vertices": 392,
+        "faces": 756,
+        "name": "goblin_ritual_r6_Right_Arm",
+        "verticesInsideBody": 0
+      },
+      {
+        "vertices": 504,
+        "faces": 972,
+        "name": "goblin_ritual_r6_Left_Leg",
+        "verticesInsideBody": 0
+      },
+      {
+        "vertices": 504,
+        "faces": 972,
+        "name": "goblin_ritual_r6_Right_Leg",
+        "verticesInsideBody": 0
+      }
+    ],
+    "label": "Idle",
+    "follow": {
+      "maps": 3,
+      "scope": "SYNTHETIC_EDIT_FOLLOW",
+      "bodyLimbsUnmodified": true,
+      "uvConvention": "CORNER_U_1_MINUS_V",
+      "fitStatus": "UNVALIDATED",
+      "hiddenLegacyOverlays": 9,
+      "kit": "ritual",
+      "scale": 1,
+      "geometry": "ORIGINAL_BLOCK_STYLE_ADAPTATION",
+      "parts": 6
+    },
+    "verticesInsideBody": 0
+  },
+  {
+    "minY": 0.08500003814697266,
+    "parts": [
+      {
+        "vertices": 448,
+        "faces": 864,
+        "name": "goblin_ritual_r6_Head",
+        "verticesInsideBody": 0
+      },
+      {
+        "vertices": 952,
+        "faces": 1836,
+        "name": "goblin_ritual_r6_Torso",
+        "verticesInsideBody": 0
+      },
+      {
+        "vertices": 392,
+        "faces": 756,
+        "name": "goblin_ritual_r6_Left_Arm",
+        "verticesInsideBody": 0
+      },
+      {
+        "vertices": 392,
+        "faces": 756,
+        "name": "goblin_ritual_r6_Right_Arm",
+        "verticesInsideBody": 0
+      },
+      {
+        "vertices": 504,
+        "faces": 972,
+        "name": "goblin_ritual_r6_Left_Leg",
+        "verticesInsideBody": 0
+      },
+      {
+        "vertices": 504,
+        "faces": 972,
+        "name": "goblin_ritual_r6_Right_Leg",
+        "verticesInsideBody": 0
+      }
+    ],
+    "label": "SyntheticGait",
+    "phase": 0,
+    "follow": {
+      "maps": 3,
+      "scope": "SYNTHETIC_EDIT_FOLLOW",
+      "bodyLimbsUnmodified": true,
+      "uvConvention": "CORNER_U_1_MINUS_V",
+      "fitStatus": "UNVALIDATED",
+      "hiddenLegacyOverlays": 9,
+      "kit": "ritual",
+      "scale": 1,
+      "geometry": "ORIGINAL_BLOCK_STYLE_ADAPTATION",
+      "parts": 6
+    },
+    "verticesInsideBody": 0
+  },
+  {
+    "minY": 0.05467402935028076,
+    "parts": [
+      {
+        "vertices": 448,
+        "faces": 864,
+        "name": "goblin_ritual_r6_Head",
+        "verticesInsideBody": 0
+      },
+      {
+        "vertices": 952,
+        "faces": 1836,
+        "name": "goblin_ritual_r6_Torso",
+        "verticesInsideBody": 0
+      },
+      {
+        "vertices": 392,
+        "faces": 756,
+        "name": "goblin_ritual_r6_Left_Arm",
+        "verticesInsideBody": 0
+      },
+      {
+        "vertices": 392,
+        "faces": 756,
+        "name": "goblin_ritual_r6_Right_Arm",
+        "verticesInsideBody": 0
+      },
+      {
+        "vertices": 504,
+        "faces": 972,
+        "name": "goblin_ritual_r6_Left_Leg",
+        "verticesInsideBody": 0
+      },
+      {
+        "vertices": 504,
+        "faces": 972,
+        "name": "goblin_ritual_r6_Right_Leg",
+        "verticesInsideBody": 0
+      }
+    ],
+    "label": "SyntheticGait",
+    "phase": 0.10471975511965977,
+    "follow": {
+      "maps": 3,
+      "scope": "SYNTHETIC_EDIT_FOLLOW",
+      "bodyLimbsUnmodified": true,
+      "uvConvention": "CORNER_U_1_MINUS_V",
+      "fitStatus": "UNVALIDATED",
+      "hiddenLegacyOverlays": 9,
+      "kit": "ritual",
+      "scale": 1,
+      "geometry": "ORIGINAL_BLOCK_STYLE_ADAPTATION",
+      "parts": 6
+    },
+    "verticesInsideBody": 0
+  },
+  {
+    "minY": 0.02891296148300171,
+    "parts": [
+      {
+        "vertices": 448,
+        "faces": 864,
+        "name": "goblin_ritual_r6_Head",
+        "verticesInsideBody": 0
+      },
+      {
+        "vertices": 952,
+        "faces": 1836,
+        "name": "goblin_ritual_r6_Torso",
+        "verticesInsideBody": 0
+      },
+      {
+        "vertices": 392,
+        "faces": 756,
+        "name": "goblin_ritual_r6_Left_Arm",
+        "verticesInsideBody": 0
+      },
+      {
+        "vertices": 392,
+        "faces": 756,
+        "name": "goblin_ritual_r6_Right_Arm",
+        "verticesInsideBody": 0
+      },
+      {
+        "vertices": 504,
+        "faces": 972,
+        "name": "goblin_ritual_r6_Left_Leg",
+        "verticesInsideBody": 0
+      },
+      {
+        "vertices": 504,
+        "faces": 972,
+        "name": "goblin_ritual_r6_Right_Leg",
+        "verticesInsideBody": 0
+      }
+    ],
+    "label": "SyntheticGait",
+    "phase": 0.20943951023931953,
+    "follow": {
+      "maps": 3,
+      "scope": "SYNTHETIC_EDIT_FOLLOW",
+      "bodyLimbsUnmodified": true,
+      "uvConvention": "CORNER_U_1_MINUS_V",
+      "fitStatus": "UNVALIDATED",
+      "hiddenLegacyOverlays": 9,
+      "kit": "ritual",
+      "scale": 1,
+      "geometry": "ORIGINAL_BLOCK_STYLE_ADAPTATION",
+      "parts": 6
+    },
+    "verticesInsideBody": 0
+  },
+  {
+    "minY": 0.007844626903533936,
+    "parts": [
+      {
+        "vertices": 448,
+        "faces": 864,
+        "name": "goblin_ritual_r6_Head",
+        "verticesInsideBody": 0
+      },
+      {
+        "vertices": 952,
+        "faces": 1836,
+        "name": "goblin_ritual_r6_Torso",
+        "verticesInsideBody": 0
+      },
+      {
+        "vertices": 392,
+        "faces": 756,
+        "name": "goblin_ritual_r6_Left_Arm",
+        "verticesInsideBody": 0
+      },
+      {
+        "vertices": 392,
+        "faces": 756,
+        "name": "goblin_ritual_r6_Right_Arm",
+        "verticesInsideBody": 0
+      },
+      {
+        "vertices": 504,
+        "faces": 972,
+        "name": "goblin_ritual_r6_Left_Leg",
+        "verticesInsideBody": 0
+      },
+      {
+        "vertices": 504,
+        "faces": 972,
+        "name": "goblin_ritual_r6_Right_Leg",
+        "verticesInsideBody": 0
+      }
+    ],
+    "label": "SyntheticGait",
+    "phase": 0.3141592653589793,
+    "follow": {
+      "maps": 3,
+      "scope": "SYNTHETIC_EDIT_FOLLOW",
+      "bodyLimbsUnmodified": true,
+      "uvConvention": "CORNER_U_1_MINUS_V",
+      "fitStatus": "UNVALIDATED",
+      "hiddenLegacyOverlays": 9,
+      "kit": "ritual",
+      "scale": 1,
+      "geometry": "ORIGINAL_BLOCK_STYLE_ADAPTATION",
+      "parts": 6
+    },
+    "verticesInsideBody": 0
+  },
+  {
+    "minY": -0.008600354194641113,
+    "parts": [
+      {
+        "vertices": 448,
+        "faces": 864,
+        "name": "goblin_ritual_r6_Head",
+        "verticesInsideBody": 0
+      },
+      {
+        "vertices": 952,
+        "faces": 1836,
+        "name": "goblin_ritual_r6_Torso",
+        "verticesInsideBody": 0
+      },
+      {
+        "vertices": 392,
+        "faces": 756,
+        "name": "goblin_ritual_r6_Left_Arm",
+        "verticesInsideBody": 0
+      },
+      {
+        "vertices": 392,
+        "faces": 756,
+        "name": "goblin_ritual_r6_Right_Arm",
+        "verticesInsideBody": 0
+      },
+      {
+        "vertices": 504,
+        "faces": 972,
+        "name": "goblin_ritual_r6_Left_Leg",
+        "verticesInsideBody": 0
+      },
+      {
+        "vertices": 504,
+        "faces": 972,
+        "name": "goblin_ritual_r6_Right_Leg",
+        "verticesInsideBody": 0
+      }
+    ],
+    "label": "SyntheticGait",
+    "phase": 0.41887902047863906,
+    "follow": {
+      "maps": 3,
+      "scope": "SYNTHETIC_EDIT_FOLLOW",
+      "bodyLimbsUnmodified": true,
+      "uvConvention": "CORNER_U_1_MINUS_V",
+      "fitStatus": "UNVALIDATED",
+      "hiddenLegacyOverlays": 9,
+      "kit": "ritual",
+      "scale": 1,
+      "geometry": "ORIGINAL_BLOCK_STYLE_ADAPTATION",
+      "parts": 6
+    },
+    "verticesInsideBody": 0
+  },
+  {
+    "minY": -0.02067410945892334,
+    "parts": [
+      {
+        "vertices": 448,
+        "faces": 864,
+        "name": "goblin_ritual_r6_Head",
+        "verticesInsideBody": 0
+      },
+      {
+        "vertices": 952,
+        "faces": 1836,
+        "name": "goblin_ritual_r6_Torso",
+        "verticesInsideBody": 0
+      },
+      {
+        "vertices": 392,
+        "faces": 756,
+        "name": "goblin_ritual_r6_Left_Arm",
+        "verticesInsideBody": 0
+      },
+      {
+        "vertices": 392,
+        "faces": 756,
+        "name": "goblin_ritual_r6_Right_Arm",
+        "verticesInsideBody": 0
+      },
+      {
+        "vertices": 504,
+        "faces": 972,
+        "name": "goblin_ritual_r6_Left_Leg",
+        "verticesInsideBody": 0
+      },
+      {
+        "vertices": 504,
+        "faces": 972,
+        "name": "goblin_ritual_r6_Right_Leg",
+        "verticesInsideBody": 0
+      }
+    ],
+    "label": "SyntheticGait",
+    "phase": 0.5235987755982988,
+    "follow": {
+      "maps": 3,
+      "scope": "SYNTHETIC_EDIT_FOLLOW",
+      "bodyLimbsUnmodified": true,
+      "uvConvention": "CORNER_U_1_MINUS_V",
+      "fitStatus": "UNVALIDATED",
+      "hiddenLegacyOverlays": 9,
+      "kit": "ritual",
+      "scale": 1,
+      "geometry": "ORIGINAL_BLOCK_STYLE_ADAPTATION",
+      "parts": 6
+    },
+    "verticesInsideBody": 0
+  },
+  {
+    "minY": -0.028787732124328613,
+    "parts": [
+      {
+        "vertices": 448,
+        "faces": 864,
+        "name": "goblin_ritual_r6_Head",
+        "verticesInsideBody": 0
+      },
+      {
+        "vertices": 952,
+        "faces": 1836,
+        "name": "goblin_ritual_r6_Torso",
+        "verticesInsideBody": 0
+      },
+      {
+        "vertices": 392,
+        "faces": 756,
+        "name": "goblin_ritual_r6_Left_Arm",
+        "verticesInsideBody": 0
+      },
+      {
+        "vertices": 392,
+        "faces": 756,
+        "name": "goblin_ritual_r6_Right_Arm",
+        "verticesInsideBody": 0
+      },
+      {
+        "vertices": 504,
+        "faces": 972,
+        "name": "goblin_ritual_r6_Left_Leg",
+        "verticesInsideBody": 0
+      },
+      {
+        "vertices": 504,
+        "faces": 972,
+        "name": "goblin_ritual_r6_Right_Leg",
+        "verticesInsideBody": 0
+      }
+    ],
+    "label": "SyntheticGait",
+    "phase": 0.6283185307179586,
+    "follow": {
+      "maps": 3,
+      "scope": "SYNTHETIC_EDIT_FOLLOW",
+      "bodyLimbsUnmodified": true,
+      "uvConvention": "CORNER_U_1_MINUS_V",
+      "fitStatus": "UNVALIDATED",
+      "hiddenLegacyOverlays": 9,
+      "kit": "ritual",
+      "scale": 1,
+      "geometry": "ORIGINAL_BLOCK_STYLE_ADAPTATION",
+      "parts": 6
+    },
+    "verticesInsideBody": 0
+  },
+  {
+    "minY": -0.03348040580749512,
+    "parts": [
+      {
+        "vertices": 448,
+        "faces": 864,
+        "name": "goblin_ritual_r6_Head",
+        "verticesInsideBody": 0
+      },
+      {
+        "vertices": 952,
+        "faces": 1836,
+        "name": "goblin_ritual_r6_Torso",
+        "verticesInsideBody": 0
+      },
+      {
+        "vertices": 392,
+        "faces": 756,
+        "name": "goblin_ritual_r6_Left_Arm",
+        "verticesInsideBody": 0
+      },
+      {
+        "vertices": 392,
+        "faces": 756,
+        "name": "goblin_ritual_r6_Right_Arm",
+        "verticesInsideBody": 0
+      },
+      {
+        "vertices": 504,
+        "faces": 972,
+        "name": "goblin_ritual_r6_Left_Leg",
+        "verticesInsideBody": 0
+      },
+      {
+        "vertices": 504,
+        "faces": 972,
+        "name": "goblin_ritual_r6_Right_Leg",
+        "verticesInsideBody": 0
+      }
+    ],
+    "label": "SyntheticGait",
+    "phase": 0.7330382858376184,
+    "follow": {
+      "maps": 3,
+      "scope": "SYNTHETIC_EDIT_FOLLOW",
+      "bodyLimbsUnmodified": true,
+      "uvConvention": "CORNER_U_1_MINUS_V",
+      "fitStatus": "UNVALIDATED",
+      "hiddenLegacyOverlays": 9,
+      "kit": "ritual",
+      "scale": 1,
+      "geometry": "ORIGINAL_BLOCK_STYLE_ADAPTATION",
+      "parts": 6
+    },
+    "verticesInsideBody": 0
+  },
+  {
+    "minY": -0.03538322448730469,
+    "parts": [
+      {
+        "vertices": 448,
+        "faces": 864,
+        "name": "goblin_ritual_r6_Head",
+        "verticesInsideBody": 0
+      },
+      {
+        "vertices": 952,
+        "faces": 1836,
+        "name": "goblin_ritual_r6_Torso",
+        "verticesInsideBody": 0
+      },
+      {
+        "vertices": 392,
+        "faces": 756,
+        "name": "goblin_ritual_r6_Left_Arm",
+        "verticesInsideBody": 0
+      },
+      {
+        "vertices": 392,
+        "faces": 756,
+        "name": "goblin_ritual_r6_Right_Arm",
+        "verticesInsideBody": 0
+      },
+      {
+        "vertices": 504,
+        "faces": 972,
+        "name": "goblin_ritual_r6_Left_Leg",
+        "verticesInsideBody": 0
+      },
+      {
+        "vertices": 504,
+        "faces": 972,
+        "name": "goblin_ritual_r6_Right_Leg",
+        "verticesInsideBody": 0
+      }
+    ],
+    "label": "SyntheticGait",
+    "phase": 0.8377580409572781,
+    "follow": {
+      "maps": 3,
+      "scope": "SYNTHETIC_EDIT_FOLLOW",
+      "bodyLimbsUnmodified": true,
+      "uvConvention": "CORNER_U_1_MINUS_V",
+      "fitStatus": "UNVALIDATED",
+      "hiddenLegacyOverlays": 9,
+      "kit": "ritual",
+      "scale": 1,
+      "geometry": "ORIGINAL_BLOCK_STYLE_ADAPTATION",
+      "parts": 6
+    },
+    "verticesInsideBody": 0
+  },
+  {
+    "minY": -0.03517782688140869,
+    "parts": [
+      {
+        "vertices": 448,
+        "faces": 864,
+        "name": "goblin_ritual_r6_Head",
+        "verticesInsideBody": 0
+      },
+      {
+        "vertices": 952,
+        "faces": 1836,
+        "name": "goblin_ritual_r6_Torso",
+        "verticesInsideBody": 0
+      },
+      {
+        "vertices": 392,
+        "faces": 756,
+        "name": "goblin_ritual_r6_Left_Arm",
+        "verticesInsideBody": 0
+      },
+      {
+        "vertices": 392,
+        "faces": 756,
+        "name": "goblin_ritual_r6_Right_Arm",
+        "verticesInsideBody": 0
+      },
+      {
+        "vertices": 504,
+        "faces": 972,
+        "name": "goblin_ritual_r6_Left_Leg",
+        "verticesInsideBody": 0
+      },
+      {
+        "vertices": 504,
+        "faces": 972,
+        "name": "goblin_ritual_r6_Right_Leg",
+        "verticesInsideBody": 0
+      }
+    ],
+    "label": "SyntheticGait",
+    "phase": 0.9424777960769379,
+    "follow": {
+      "maps": 3,
+      "scope": "SYNTHETIC_EDIT_FOLLOW",
+      "bodyLimbsUnmodified": true,
+      "uvConvention": "CORNER_U_1_MINUS_V",
+      "fitStatus": "UNVALIDATED",
+      "hiddenLegacyOverlays": 9,
+      "kit": "ritual",
+      "scale": 1,
+      "geometry": "ORIGINAL_BLOCK_STYLE_ADAPTATION",
+      "parts": 6
+    },
+    "verticesInsideBody": 0
+  },
+  {
+    "minY": -0.03355669975280762,
+    "parts": [
+      {
+        "vertices": 448,
+        "faces": 864,
+        "name": "goblin_ritual_r6_Head",
+        "verticesInsideBody": 0
+      },
+      {
+        "vertices": 952,
+        "faces": 1836,
+        "name": "goblin_ritual_r6_Torso",
+        "verticesInsideBody": 0
+      },
+      {
+        "vertices": 392,
+        "faces": 756,
+        "name": "goblin_ritual_r6_Left_Arm",
+        "verticesInsideBody": 0
+      },
+      {
+        "vertices": 392,
+        "faces": 756,
+        "name": "goblin_ritual_r6_Right_Arm",
+        "verticesInsideBody": 0
+      },
+      {
+        "vertices": 504,
+        "faces": 972,
+        "name": "goblin_ritual_r6_Left_Leg",
+        "verticesInsideBody": 0
+      },
+      {
+        "vertices": 504,
+        "faces": 972,
+        "name": "goblin_ritual_r6_Right_Leg",
+        "verticesInsideBody": 0
+      }
+    ],
+    "label": "SyntheticGait",
+    "phase": 1.0471975511965976,
+    "follow": {
+      "maps": 3,
+      "scope": "SYNTHETIC_EDIT_FOLLOW",
+      "bodyLimbsUnmodified": true,
+      "uvConvention": "CORNER_U_1_MINUS_V",
+      "fitStatus": "UNVALIDATED",
+      "hiddenLegacyOverlays": 9,
+      "kit": "ritual",
+      "scale": 1,
+      "geometry": "ORIGINAL_BLOCK_STYLE_ADAPTATION",
+      "parts": 6
+    },
+    "verticesInsideBody": 0
+  },
+  {
+    "minY": -0.032097816467285156,
+    "parts": [
+      {
+        "vertices": 448,
+        "faces": 864,
+        "name": "goblin_ritual_r6_Head",
+        "verticesInsideBody": 0
+      },
+      {
+        "vertices": 952,
+        "faces": 1836,
+        "name": "goblin_ritual_r6_Torso",
+        "verticesInsideBody": 0
+      },
+      {
+        "vertices": 392,
+        "faces": 756,
+        "name": "goblin_ritual_r6_Left_Arm",
+        "verticesInsideBody": 0
+      },
+      {
+        "vertices": 392,
+        "faces": 756,
+        "name": "goblin_ritual_r6_Right_Arm",
+        "verticesInsideBody": 0
+      },
+      {
+        "vertices": 504,
+        "faces": 972,
+        "name": "goblin_ritual_r6_Left_Leg",
+        "verticesInsideBody": 0
+      },
+      {
+        "vertices": 504,
+        "faces": 972,
+        "name": "goblin_ritual_r6_Right_Leg",
+        "verticesInsideBody": 0
+      }
+    ],
+    "label": "SyntheticGait",
+    "phase": 1.1519173063162573,
+    "follow": {
+      "maps": 3,
+      "scope": "SYNTHETIC_EDIT_FOLLOW",
+      "bodyLimbsUnmodified": true,
+      "uvConvention": "CORNER_U_1_MINUS_V",
+      "fitStatus": "UNVALIDATED",
+      "hiddenLegacyOverlays": 9,
+      "kit": "ritual",
+      "scale": 1,
+      "geometry": "ORIGINAL_BLOCK_STYLE_ADAPTATION",
+      "parts": 6
+    },
+    "verticesInsideBody": 0
+  },
+  {
+    "minY": -0.030407190322875977,
+    "parts": [
+      {
+        "vertices": 448,
+        "faces": 864,
+        "name": "goblin_ritual_r6_Head",
+        "verticesInsideBody": 0
+      },
+      {
+        "vertices": 952,
+        "faces": 1836,
+        "name": "goblin_ritual_r6_Torso",
+        "verticesInsideBody": 0
+      },
+      {
+        "vertices": 392,
+        "faces": 756,
+        "name": "goblin_ritual_r6_Left_Arm",
+        "verticesInsideBody": 0
+      },
+      {
+        "vertices": 392,
+        "faces": 756,
+        "name": "goblin_ritual_r6_Right_Arm",
+        "verticesInsideBody": 0
+      },
+      {
+        "vertices": 504,
+        "faces": 972,
+        "name": "goblin_ritual_r6_Left_Leg",
+        "verticesInsideBody": 0
+      },
+      {
+        "vertices": 504,
+        "faces": 972,
+        "name": "goblin_ritual_r6_Right_Leg",
+        "verticesInsideBody": 0
+      }
+    ],
+    "label": "SyntheticGait",
+    "phase": 1.2566370614359172,
+    "follow": {
+      "maps": 3,
+      "scope": "SYNTHETIC_EDIT_FOLLOW",
+      "bodyLimbsUnmodified": true,
+      "uvConvention": "CORNER_U_1_MINUS_V",
+      "fitStatus": "UNVALIDATED",
+      "hiddenLegacyOverlays": 9,
+      "kit": "ritual",
+      "scale": 1,
+      "geometry": "ORIGINAL_BLOCK_STYLE_ADAPTATION",
+      "parts": 6
+    },
+    "verticesInsideBody": 0
+  },
+  {
+    "minY": -0.028826236724853516,
+    "parts": [
+      {
+        "vertices": 448,
+        "faces": 864,
+        "name": "goblin_ritual_r6_Head",
+        "verticesInsideBody": 0
+      },
+      {
+        "vertices": 952,
+        "faces": 1836,
+        "name": "goblin_ritual_r6_Torso",
+        "verticesInsideBody": 0
+      },
+      {
+        "vertices": 392,
+        "faces": 756,
+        "name": "goblin_ritual_r6_Left_Arm",
+        "verticesInsideBody": 0
+      },
+      {
+        "vertices": 392,
+        "faces": 756,
+        "name": "goblin_ritual_r6_Right_Arm",
+        "verticesInsideBody": 0
+      },
+      {
+        "vertices": 504,
+        "faces": 972,
+        "name": "goblin_ritual_r6_Left_Leg",
+        "verticesInsideBody": 2
+      },
+      {
+        "vertices": 504,
+        "faces": 972,
+        "name": "goblin_ritual_r6_Right_Leg",
+        "verticesInsideBody": 0
+      }
+    ],
+    "label": "SyntheticGait",
+    "phase": 1.3613568165555772,
+    "follow": {
+      "maps": 3,
+      "scope": "SYNTHETIC_EDIT_FOLLOW",
+      "bodyLimbsUnmodified": true,
+      "uvConvention": "CORNER_U_1_MINUS_V",
+      "fitStatus": "UNVALIDATED",
+      "hiddenLegacyOverlays": 9,
+      "kit": "ritual",
+      "scale": 1,
+      "geometry": "ORIGINAL_BLOCK_STYLE_ADAPTATION",
+      "parts": 6
+    },
+    "verticesInsideBody": 2
+  },
+  {
+    "minY": -0.027724623680114746,
+    "parts": [
+      {
+        "vertices": 448,
+        "faces": 864,
+        "name": "goblin_ritual_r6_Head",
+        "verticesInsideBody": 0
+      },
+      {
+        "vertices": 952,
+        "faces": 1836,
+        "name": "goblin_ritual_r6_Torso",
+        "verticesInsideBody": 0
+      },
+      {
+        "vertices": 392,
+        "faces": 756,
+        "name": "goblin_ritual_r6_Left_Arm",
+        "verticesInsideBody": 0
+      },
+      {
+        "vertices": 392,
+        "faces": 756,
+        "name": "goblin_ritual_r6_Right_Arm",
+        "verticesInsideBody": 0
+      },
+      {
+        "vertices": 504,
+        "faces": 972,
+        "name": "goblin_ritual_r6_Left_Leg",
+        "verticesInsideBody": 4
+      },
+      {
+        "vertices": 504,
+        "faces": 972,
+        "name": "goblin_ritual_r6_Right_Leg",
+        "verticesInsideBody": 0
+      }
+    ],
+    "label": "SyntheticGait",
+    "phase": 1.4660765716752369,
+    "follow": {
+      "maps": 3,
+      "scope": "SYNTHETIC_EDIT_FOLLOW",
+      "bodyLimbsUnmodified": true,
+      "uvConvention": "CORNER_U_1_MINUS_V",
+      "fitStatus": "UNVALIDATED",
+      "hiddenLegacyOverlays": 9,
+      "kit": "ritual",
+      "scale": 1,
+      "geometry": "ORIGINAL_BLOCK_STYLE_ADAPTATION",
+      "parts": 6
+    },
+    "verticesInsideBody": 4
+  },
+  {
+    "minY": -0.02733147144317627,
+    "parts": [
+      {
+        "vertices": 448,
+        "faces": 864,
+        "name": "goblin_ritual_r6_Head",
+        "verticesInsideBody": 0
+      },
+      {
+        "vertices": 952,
+        "faces": 1836,
+        "name": "goblin_ritual_r6_Torso",
+        "verticesInsideBody": 0
+      },
+      {
+        "vertices": 392,
+        "faces": 756,
+        "name": "goblin_ritual_r6_Left_Arm",
+        "verticesInsideBody": 0
+      },
+      {
+        "vertices": 392,
+        "faces": 756,
+        "name": "goblin_ritual_r6_Right_Arm",
+        "verticesInsideBody": 0
+      },
+      {
+        "vertices": 504,
+        "faces": 972,
+        "name": "goblin_ritual_r6_Left_Leg",
+        "verticesInsideBody": 4
+      },
+      {
+        "vertices": 504,
+        "faces": 972,
+        "name": "goblin_ritual_r6_Right_Leg",
+        "verticesInsideBody": 0
+      }
+    ],
+    "label": "SyntheticGait",
+    "phase": 1.5707963267948963,
+    "follow": {
+      "maps": 3,
+      "scope": "SYNTHETIC_EDIT_FOLLOW",
+      "bodyLimbsUnmodified": true,
+      "uvConvention": "CORNER_U_1_MINUS_V",
+      "fitStatus": "UNVALIDATED",
+      "hiddenLegacyOverlays": 9,
+      "kit": "ritual",
+      "scale": 1,
+      "geometry": "ORIGINAL_BLOCK_STYLE_ADAPTATION",
+      "parts": 6
+    },
+    "verticesInsideBody": 4
+  },
+  {
+    "minY": -0.027724623680114746,
+    "parts": [
+      {
+        "vertices": 448,
+        "faces": 864,
+        "name": "goblin_ritual_r6_Head",
+        "verticesInsideBody": 0
+      },
+      {
+        "vertices": 952,
+        "faces": 1836,
+        "name": "goblin_ritual_r6_Torso",
+        "verticesInsideBody": 0
+      },
+      {
+        "vertices": 392,
+        "faces": 756,
+        "name": "goblin_ritual_r6_Left_Arm",
+        "verticesInsideBody": 0
+      },
+      {
+        "vertices": 392,
+        "faces": 756,
+        "name": "goblin_ritual_r6_Right_Arm",
+        "verticesInsideBody": 0
+      },
+      {
+        "vertices": 504,
+        "faces": 972,
+        "name": "goblin_ritual_r6_Left_Leg",
+        "verticesInsideBody": 4
+      },
+      {
+        "vertices": 504,
+        "faces": 972,
+        "name": "goblin_ritual_r6_Right_Leg",
+        "verticesInsideBody": 0
+      }
+    ],
+    "label": "SyntheticGait",
+    "phase": 1.6755160819145563,
+    "follow": {
+      "maps": 3,
+      "scope": "SYNTHETIC_EDIT_FOLLOW",
+      "bodyLimbsUnmodified": true,
+      "uvConvention": "CORNER_U_1_MINUS_V",
+      "fitStatus": "UNVALIDATED",
+      "hiddenLegacyOverlays": 9,
+      "kit": "ritual",
+      "scale": 1,
+      "geometry": "ORIGINAL_BLOCK_STYLE_ADAPTATION",
+      "parts": 6
+    },
+    "verticesInsideBody": 4
+  },
+  {
+    "minY": -0.028826236724853516,
+    "parts": [
+      {
+        "vertices": 448,
+        "faces": 864,
+        "name": "goblin_ritual_r6_Head",
+        "verticesInsideBody": 0
+      },
+      {
+        "vertices": 952,
+        "faces": 1836,
+        "name": "goblin_ritual_r6_Torso",
+        "verticesInsideBody": 0
+      },
+      {
+        "vertices": 392,
+        "faces": 756,
+        "name": "goblin_ritual_r6_Left_Arm",
+        "verticesInsideBody": 0
+      },
+      {
+        "vertices": 392,
+        "faces": 756,
+        "name": "goblin_ritual_r6_Right_Arm",
+        "verticesInsideBody": 0
+      },
+      {
+        "vertices": 504,
+        "faces": 972,
+        "name": "goblin_ritual_r6_Left_Leg",
+        "verticesInsideBody": 2
+      },
+      {
+        "vertices": 504,
+        "faces": 972,
+        "name": "goblin_ritual_r6_Right_Leg",
+        "verticesInsideBody": 0
+      }
+    ],
+    "label": "SyntheticGait",
+    "phase": 1.7802358370342162,
+    "follow": {
+      "maps": 3,
+      "scope": "SYNTHETIC_EDIT_FOLLOW",
+      "bodyLimbsUnmodified": true,
+      "uvConvention": "CORNER_U_1_MINUS_V",
+      "fitStatus": "UNVALIDATED",
+      "hiddenLegacyOverlays": 9,
+      "kit": "ritual",
+      "scale": 1,
+      "geometry": "ORIGINAL_BLOCK_STYLE_ADAPTATION",
+      "parts": 6
+    },
+    "verticesInsideBody": 2
+  },
+  {
+    "minY": -0.030407190322875977,
+    "parts": [
+      {
+        "vertices": 448,
+        "faces": 864,
+        "name": "goblin_ritual_r6_Head",
+        "verticesInsideBody": 0
+      },
+      {
+        "vertices": 952,
+        "faces": 1836,
+        "name": "goblin_ritual_r6_Torso",
+        "verticesInsideBody": 0
+      },
+      {
+        "vertices": 392,
+        "faces": 756,
+        "name": "goblin_ritual_r6_Left_Arm",
+        "verticesInsideBody": 0
+      },
+      {
+        "vertices": 392,
+        "faces": 756,
+        "name": "goblin_ritual_r6_Right_Arm",
+        "verticesInsideBody": 0
+      },
+      {
+        "vertices": 504,
+        "faces": 972,
+        "name": "goblin_ritual_r6_Left_Leg",
+        "verticesInsideBody": 0
+      },
+      {
+        "vertices": 504,
+        "faces": 972,
+        "name": "goblin_ritual_r6_Right_Leg",
+        "verticesInsideBody": 0
+      }
+    ],
+    "label": "SyntheticGait",
+    "phase": 1.8849555921538759,
+    "follow": {
+      "maps": 3,
+      "scope": "SYNTHETIC_EDIT_FOLLOW",
+      "bodyLimbsUnmodified": true,
+      "uvConvention": "CORNER_U_1_MINUS_V",
+      "fitStatus": "UNVALIDATED",
+      "hiddenLegacyOverlays": 9,
+      "kit": "ritual",
+      "scale": 1,
+      "geometry": "ORIGINAL_BLOCK_STYLE_ADAPTATION",
+      "parts": 6
+    },
+    "verticesInsideBody": 0
+  },
+  {
+    "minY": -0.032097816467285156,
+    "parts": [
+      {
+        "vertices": 448,
+        "faces": 864,
+        "name": "goblin_ritual_r6_Head",
+        "verticesInsideBody": 0
+      },
+      {
+        "vertices": 952,
+        "faces": 1836,
+        "name": "goblin_ritual_r6_Torso",
+        "verticesInsideBody": 0
+      },
+      {
+        "vertices": 392,
+        "faces": 756,
+        "name": "goblin_ritual_r6_Left_Arm",
+        "verticesInsideBody": 0
+      },
+      {
+        "vertices": 392,
+        "faces": 756,
+        "name": "goblin_ritual_r6_Right_Arm",
+        "verticesInsideBody": 0
+      },
+      {
+        "vertices": 504,
+        "faces": 972,
+        "name": "goblin_ritual_r6_Left_Leg",
+        "verticesInsideBody": 0
+      },
+      {
+        "vertices": 504,
+        "faces": 972,
+        "name": "goblin_ritual_r6_Right_Leg",
+        "verticesInsideBody": 0
+      }
+    ],
+    "label": "SyntheticGait",
+    "phase": 1.9896753472735356,
+    "follow": {
+      "maps": 3,
+      "scope": "SYNTHETIC_EDIT_FOLLOW",
+      "bodyLimbsUnmodified": true,
+      "uvConvention": "CORNER_U_1_MINUS_V",
+      "fitStatus": "UNVALIDATED",
+      "hiddenLegacyOverlays": 9,
+      "kit": "ritual",
+      "scale": 1,
+      "geometry": "ORIGINAL_BLOCK_STYLE_ADAPTATION",
+      "parts": 6
+    },
+    "verticesInsideBody": 0
+  },
+  {
+    "minY": -0.03355669975280762,
+    "parts": [
+      {
+        "vertices": 448,
+        "faces": 864,
+        "name": "goblin_ritual_r6_Head",
+        "verticesInsideBody": 0
+      },
+      {
+        "vertices": 952,
+        "faces": 1836,
+        "name": "goblin_ritual_r6_Torso",
+        "verticesInsideBody": 0
+      },
+      {
+        "vertices": 392,
+        "faces": 756,
+        "name": "goblin_ritual_r6_Left_Arm",
+        "verticesInsideBody": 0
+      },
+      {
+        "vertices": 392,
+        "faces": 756,
+        "name": "goblin_ritual_r6_Right_Arm",
+        "verticesInsideBody": 0
+      },
+      {
+        "vertices": 504,
+        "faces": 972,
+        "name": "goblin_ritual_r6_Left_Leg",
+        "verticesInsideBody": 0
+      },
+      {
+        "vertices": 504,
+        "faces": 972,
+        "name": "goblin_ritual_r6_Right_Leg",
+        "verticesInsideBody": 0
+      }
+    ],
+    "label": "SyntheticGait",
+    "phase": 2.0943951023931953,
+    "follow": {
+      "maps": 3,
+      "scope": "SYNTHETIC_EDIT_FOLLOW",
+      "bodyLimbsUnmodified": true,
+      "uvConvention": "CORNER_U_1_MINUS_V",
+      "fitStatus": "UNVALIDATED",
+      "hiddenLegacyOverlays": 9,
+      "kit": "ritual",
+      "scale": 1,
+      "geometry": "ORIGINAL_BLOCK_STYLE_ADAPTATION",
+      "parts": 6
+    },
+    "verticesInsideBody": 0
+  },
+  {
+    "minY": -0.03517782688140869,
+    "parts": [
+      {
+        "vertices": 448,
+        "faces": 864,
+        "name": "goblin_ritual_r6_Head",
+        "verticesInsideBody": 0
+      },
+      {
+        "vertices": 952,
+        "faces": 1836,
+        "name": "goblin_ritual_r6_Torso",
+        "verticesInsideBody": 0
+      },
+      {
+        "vertices": 392,
+        "faces": 756,
+        "name": "goblin_ritual_r6_Left_Arm",
+        "verticesInsideBody": 0
+      },
+      {
+        "vertices": 392,
+        "faces": 756,
+        "name": "goblin_ritual_r6_Right_Arm",
+        "verticesInsideBody": 0
+      },
+      {
+        "vertices": 504,
+        "faces": 972,
+        "name": "goblin_ritual_r6_Left_Leg",
+        "verticesInsideBody": 0
+      },
+      {
+        "vertices": 504,
+        "faces": 972,
+        "name": "goblin_ritual_r6_Right_Leg",
+        "verticesInsideBody": 0
+      }
+    ],
+    "label": "SyntheticGait",
+    "phase": 2.199114857512855,
+    "follow": {
+      "maps": 3,
+      "scope": "SYNTHETIC_EDIT_FOLLOW",
+      "bodyLimbsUnmodified": true,
+      "uvConvention": "CORNER_U_1_MINUS_V",
+      "fitStatus": "UNVALIDATED",
+      "hiddenLegacyOverlays": 9,
+      "kit": "ritual",
+      "scale": 1,
+      "geometry": "ORIGINAL_BLOCK_STYLE_ADAPTATION",
+      "parts": 6
+    },
+    "verticesInsideBody": 0
+  },
+  {
+    "minY": -0.03538322448730469,
+    "parts": [
+      {
+        "vertices": 448,
+        "faces": 864,
+        "name": "goblin_ritual_r6_Head",
+        "verticesInsideBody": 0
+      },
+      {
+        "vertices": 952,
+        "faces": 1836,
+        "name": "goblin_ritual_r6_Torso",
+        "verticesInsideBody": 0
+      },
+      {
+        "vertices": 392,
+        "faces": 756,
+        "name": "goblin_ritual_r6_Left_Arm",
+        "verticesInsideBody": 0
+      },
+      {
+        "vertices": 392,
+        "faces": 756,
+        "name": "goblin_ritual_r6_Right_Arm",
+        "verticesInsideBody": 0
+      },
+      {
+        "vertices": 504,
+        "faces": 972,
+        "name": "goblin_ritual_r6_Left_Leg",
+        "verticesInsideBody": 0
+      },
+      {
+        "vertices": 504,
+        "faces": 972,
+        "name": "goblin_ritual_r6_Right_Leg",
+        "verticesInsideBody": 0
+      }
+    ],
+    "label": "SyntheticGait",
+    "phase": 2.3038346126325147,
+    "follow": {
+      "maps": 3,
+      "scope": "SYNTHETIC_EDIT_FOLLOW",
+      "bodyLimbsUnmodified": true,
+      "uvConvention": "CORNER_U_1_MINUS_V",
+      "fitStatus": "UNVALIDATED",
+      "hiddenLegacyOverlays": 9,
+      "kit": "ritual",
+      "scale": 1,
+      "geometry": "ORIGINAL_BLOCK_STYLE_ADAPTATION",
+      "parts": 6
+    },
+    "verticesInsideBody": 0
+  },
+  {
+    "minY": -0.03348040580749512,
+    "parts": [
+      {
+        "vertices": 448,
+        "faces": 864,
+        "name": "goblin_ritual_r6_Head",
+        "verticesInsideBody": 0
+      },
+      {
+        "vertices": 952,
+        "faces": 1836,
+        "name": "goblin_ritual_r6_Torso",
+        "verticesInsideBody": 0
+      },
+      {
+        "vertices": 392,
+        "faces": 756,
+        "name": "goblin_ritual_r6_Left_Arm",
+        "verticesInsideBody": 0
+      },
+      {
+        "vertices": 392,
+        "faces": 756,
+        "name": "goblin_ritual_r6_Right_Arm",
+        "verticesInsideBody": 0
+      },
+      {
+        "vertices": 504,
+        "faces": 972,
+        "name": "goblin_ritual_r6_Left_Leg",
+        "verticesInsideBody": 0
+      },
+      {
+        "vertices": 504,
+        "faces": 972,
+        "name": "goblin_ritual_r6_Right_Leg",
+        "verticesInsideBody": 0
+      }
+    ],
+    "label": "SyntheticGait",
+    "phase": 2.4085543677521746,
+    "follow": {
+      "maps": 3,
+      "scope": "SYNTHETIC_EDIT_FOLLOW",
+      "bodyLimbsUnmodified": true,
+      "uvConvention": "CORNER_U_1_MINUS_V",
+      "fitStatus": "UNVALIDATED",
+      "hiddenLegacyOverlays": 9,
+      "kit": "ritual",
+      "scale": 1,
+      "geometry": "ORIGINAL_BLOCK_STYLE_ADAPTATION",
+      "parts": 6
+    },
+    "verticesInsideBody": 0
+  },
+  {
+    "minY": -0.028787732124328613,
+    "parts": [
+      {
+        "vertices": 448,
+        "faces": 864,
+        "name": "goblin_ritual_r6_Head",
+        "verticesInsideBody": 0
+      },
+      {
+        "vertices": 952,
+        "faces": 1836,
+        "name": "goblin_ritual_r6_Torso",
+        "verticesInsideBody": 0
+      },
+      {
+        "vertices": 392,
+        "faces": 756,
+        "name": "goblin_ritual_r6_Left_Arm",
+        "verticesInsideBody": 0
+      },
+      {
+        "vertices": 392,
+        "faces": 756,
+        "name": "goblin_ritual_r6_Right_Arm",
+        "verticesInsideBody": 0
+      },
+      {
+        "vertices": 504,
+        "faces": 972,
+        "name": "goblin_ritual_r6_Left_Leg",
+        "verticesInsideBody": 0
+      },
+      {
+        "vertices": 504,
+        "faces": 972,
+        "name": "goblin_ritual_r6_Right_Leg",
+        "verticesInsideBody": 0
+      }
+    ],
+    "label": "SyntheticGait",
+    "phase": 2.5132741228718345,
+    "follow": {
+      "maps": 3,
+      "scope": "SYNTHETIC_EDIT_FOLLOW",
+      "bodyLimbsUnmodified": true,
+      "uvConvention": "CORNER_U_1_MINUS_V",
+      "fitStatus": "UNVALIDATED",
+      "hiddenLegacyOverlays": 9,
+      "kit": "ritual",
+      "scale": 1,
+      "geometry": "ORIGINAL_BLOCK_STYLE_ADAPTATION",
+      "parts": 6
+    },
+    "verticesInsideBody": 0
+  },
+  {
+    "minY": -0.02067410945892334,
+    "parts": [
+      {
+        "vertices": 448,
+        "faces": 864,
+        "name": "goblin_ritual_r6_Head",
+        "verticesInsideBody": 0
+      },
+      {
+        "vertices": 952,
+        "faces": 1836,
+        "name": "goblin_ritual_r6_Torso",
+        "verticesInsideBody": 0
+      },
+      {
+        "vertices": 392,
+        "faces": 756,
+        "name": "goblin_ritual_r6_Left_Arm",
+        "verticesInsideBody": 0
+      },
+      {
+        "vertices": 392,
+        "faces": 756,
+        "name": "goblin_ritual_r6_Right_Arm",
+        "verticesInsideBody": 0
+      },
+      {
+        "vertices": 504,
+        "faces": 972,
+        "name": "goblin_ritual_r6_Left_Leg",
+        "verticesInsideBody": 0
+      },
+      {
+        "vertices": 504,
+        "faces": 972,
+        "name": "goblin_ritual_r6_Right_Leg",
+        "verticesInsideBody": 0
+      }
+    ],
+    "label": "SyntheticGait",
+    "phase": 2.6179938779914944,
+    "follow": {
+      "maps": 3,
+      "scope": "SYNTHETIC_EDIT_FOLLOW",
+      "bodyLimbsUnmodified": true,
+      "uvConvention": "CORNER_U_1_MINUS_V",
+      "fitStatus": "UNVALIDATED",
+      "hiddenLegacyOverlays": 9,
+      "kit": "ritual",
+      "scale": 1,
+      "geometry": "ORIGINAL_BLOCK_STYLE_ADAPTATION",
+      "parts": 6
+    },
+    "verticesInsideBody": 0
+  },
+  {
+    "minY": -0.008600354194641113,
+    "parts": [
+      {
+        "vertices": 448,
+        "faces": 864,
+        "name": "goblin_ritual_r6_Head",
+        "verticesInsideBody": 0
+      },
+      {
+        "vertices": 952,
+        "faces": 1836,
+        "name": "goblin_ritual_r6_Torso",
+        "verticesInsideBody": 0
+      },
+      {
+        "vertices": 392,
+        "faces": 756,
+        "name": "goblin_ritual_r6_Left_Arm",
+        "verticesInsideBody": 0
+      },
+      {
+        "vertices": 392,
+        "faces": 756,
+        "name": "goblin_ritual_r6_Right_Arm",
+        "verticesInsideBody": 0
+      },
+      {
+        "vertices": 504,
+        "faces": 972,
+        "name": "goblin_ritual_r6_Left_Leg",
+        "verticesInsideBody": 0
+      },
+      {
+        "vertices": 504,
+        "faces": 972,
+        "name": "goblin_ritual_r6_Right_Leg",
+        "verticesInsideBody": 0
+      }
+    ],
+    "label": "SyntheticGait",
+    "phase": 2.7227136331111543,
+    "follow": {
+      "maps": 3,
+      "scope": "SYNTHETIC_EDIT_FOLLOW",
+      "bodyLimbsUnmodified": true,
+      "uvConvention": "CORNER_U_1_MINUS_V",
+      "fitStatus": "UNVALIDATED",
+      "hiddenLegacyOverlays": 9,
+      "kit": "ritual",
+      "scale": 1,
+      "geometry": "ORIGINAL_BLOCK_STYLE_ADAPTATION",
+      "parts": 6
+    },
+    "verticesInsideBody": 0
+  },
+  {
+    "minY": 0.007844626903533936,
+    "parts": [
+      {
+        "vertices": 448,
+        "faces": 864,
+        "name": "goblin_ritual_r6_Head",
+        "verticesInsideBody": 0
+      },
+      {
+        "vertices": 952,
+        "faces": 1836,
+        "name": "goblin_ritual_r6_Torso",
+        "verticesInsideBody": 0
+      },
+      {
+        "vertices": 392,
+        "faces": 756,
+        "name": "goblin_ritual_r6_Left_Arm",
+        "verticesInsideBody": 0
+      },
+      {
+        "vertices": 392,
+        "faces": 756,
+        "name": "goblin_ritual_r6_Right_Arm",
+        "verticesInsideBody": 0
+      },
+      {
+        "vertices": 504,
+        "faces": 972,
+        "name": "goblin_ritual_r6_Left_Leg",
+        "verticesInsideBody": 0
+      },
+      {
+        "vertices": 504,
+        "faces": 972,
+        "name": "goblin_ritual_r6_Right_Leg",
+        "verticesInsideBody": 0
+      }
+    ],
+    "label": "SyntheticGait",
+    "phase": 2.827433388230814,
+    "follow": {
+      "maps": 3,
+      "scope": "SYNTHETIC_EDIT_FOLLOW",
+      "bodyLimbsUnmodified": true,
+      "uvConvention": "CORNER_U_1_MINUS_V",
+      "fitStatus": "UNVALIDATED",
+      "hiddenLegacyOverlays": 9,
+      "kit": "ritual",
+      "scale": 1,
+      "geometry": "ORIGINAL_BLOCK_STYLE_ADAPTATION",
+      "parts": 6
+    },
+    "verticesInsideBody": 0
+  },
+  {
+    "minY": 0.02891296148300171,
+    "parts": [
+      {
+        "vertices": 448,
+        "faces": 864,
+        "name": "goblin_ritual_r6_Head",
+        "verticesInsideBody": 0
+      },
+      {
+        "vertices": 952,
+        "faces": 1836,
+        "name": "goblin_ritual_r6_Torso",
+        "verticesInsideBody": 0
+      },
+      {
+        "vertices": 392,
+        "faces": 756,
+        "name": "goblin_ritual_r6_Left_Arm",
+        "verticesInsideBody": 0
+      },
+      {
+        "vertices": 392,
+        "faces": 756,
+        "name": "goblin_ritual_r6_Right_Arm",
+        "verticesInsideBody": 0
+      },
+      {
+        "vertices": 504,
+        "faces": 972,
+        "name": "goblin_ritual_r6_Left_Leg",
+        "verticesInsideBody": 0
+      },
+      {
+        "vertices": 504,
+        "faces": 972,
+        "name": "goblin_ritual_r6_Right_Leg",
+        "verticesInsideBody": 0
+      }
+    ],
+    "label": "SyntheticGait",
+    "phase": 2.9321531433504737,
+    "follow": {
+      "maps": 3,
+      "scope": "SYNTHETIC_EDIT_FOLLOW",
+      "bodyLimbsUnmodified": true,
+      "uvConvention": "CORNER_U_1_MINUS_V",
+      "fitStatus": "UNVALIDATED",
+      "hiddenLegacyOverlays": 9,
+      "kit": "ritual",
+      "scale": 1,
+      "geometry": "ORIGINAL_BLOCK_STYLE_ADAPTATION",
+      "parts": 6
+    },
+    "verticesInsideBody": 0
+  },
+  {
+    "minY": 0.05467402935028076,
+    "parts": [
+      {
+        "vertices": 448,
+        "faces": 864,
+        "name": "goblin_ritual_r6_Head",
+        "verticesInsideBody": 0
+      },
+      {
+        "vertices": 952,
+        "faces": 1836,
+        "name": "goblin_ritual_r6_Torso",
+        "verticesInsideBody": 0
+      },
+      {
+        "vertices": 392,
+        "faces": 756,
+        "name": "goblin_ritual_r6_Left_Arm",
+        "verticesInsideBody": 0
+      },
+      {
+        "vertices": 392,
+        "faces": 756,
+        "name": "goblin_ritual_r6_Right_Arm",
+        "verticesInsideBody": 0
+      },
+      {
+        "vertices": 504,
+        "faces": 972,
+        "name": "goblin_ritual_r6_Left_Leg",
+        "verticesInsideBody": 0
+      },
+      {
+        "vertices": 504,
+        "faces": 972,
+        "name": "goblin_ritual_r6_Right_Leg",
+        "verticesInsideBody": 0
+      }
+    ],
+    "label": "SyntheticGait",
+    "phase": 3.0368728984701336,
+    "follow": {
+      "maps": 3,
+      "scope": "SYNTHETIC_EDIT_FOLLOW",
+      "bodyLimbsUnmodified": true,
+      "uvConvention": "CORNER_U_1_MINUS_V",
+      "fitStatus": "UNVALIDATED",
+      "hiddenLegacyOverlays": 9,
+      "kit": "ritual",
+      "scale": 1,
+      "geometry": "ORIGINAL_BLOCK_STYLE_ADAPTATION",
+      "parts": 6
+    },
+    "verticesInsideBody": 0
+  },
+  {
+    "minY": 0.08500003814697266,
+    "parts": [
+      {
+        "vertices": 448,
+        "faces": 864,
+        "name": "goblin_ritual_r6_Head",
+        "verticesInsideBody": 0
+      },
+      {
+        "vertices": 952,
+        "faces": 1836,
+        "name": "goblin_ritual_r6_Torso",
+        "verticesInsideBody": 0
+      },
+      {
+        "vertices": 392,
+        "faces": 756,
+        "name": "goblin_ritual_r6_Left_Arm",
+        "verticesInsideBody": 0
+      },
+      {
+        "vertices": 392,
+        "faces": 756,
+        "name": "goblin_ritual_r6_Right_Arm",
+        "verticesInsideBody": 0
+      },
+      {
+        "vertices": 504,
+        "faces": 972,
+        "name": "goblin_ritual_r6_Left_Leg",
+        "verticesInsideBody": 0
+      },
+      {
+        "vertices": 504,
+        "faces": 972,
+        "name": "goblin_ritual_r6_Right_Leg",
+        "verticesInsideBody": 0
+      }
+    ],
+    "label": "SyntheticGait",
+    "phase": 3.1415926535897927,
+    "follow": {
+      "maps": 3,
+      "scope": "SYNTHETIC_EDIT_FOLLOW",
+      "bodyLimbsUnmodified": true,
+      "uvConvention": "CORNER_U_1_MINUS_V",
+      "fitStatus": "UNVALIDATED",
+      "hiddenLegacyOverlays": 9,
+      "kit": "ritual",
+      "scale": 1,
+      "geometry": "ORIGINAL_BLOCK_STYLE_ADAPTATION",
+      "parts": 6
+    },
+    "verticesInsideBody": 0
+  },
+  {
+    "minY": 0.05467402935028076,
+    "parts": [
+      {
+        "vertices": 448,
+        "faces": 864,
+        "name": "goblin_ritual_r6_Head",
+        "verticesInsideBody": 0
+      },
+      {
+        "vertices": 952,
+        "faces": 1836,
+        "name": "goblin_ritual_r6_Torso",
+        "verticesInsideBody": 0
+      },
+      {
+        "vertices": 392,
+        "faces": 756,
+        "name": "goblin_ritual_r6_Left_Arm",
+        "verticesInsideBody": 0
+      },
+      {
+        "vertices": 392,
+        "faces": 756,
+        "name": "goblin_ritual_r6_Right_Arm",
+        "verticesInsideBody": 0
+      },
+      {
+        "vertices": 504,
+        "faces": 972,
+        "name": "goblin_ritual_r6_Left_Leg",
+        "verticesInsideBody": 0
+      },
+      {
+        "vertices": 504,
+        "faces": 972,
+        "name": "goblin_ritual_r6_Right_Leg",
+        "verticesInsideBody": 0
+      }
+    ],
+    "label": "SyntheticGait",
+    "phase": 3.2463124087094526,
+    "follow": {
+      "maps": 3,
+      "scope": "SYNTHETIC_EDIT_FOLLOW",
+      "bodyLimbsUnmodified": true,
+      "uvConvention": "CORNER_U_1_MINUS_V",
+      "fitStatus": "UNVALIDATED",
+      "hiddenLegacyOverlays": 9,
+      "kit": "ritual",
+      "scale": 1,
+      "geometry": "ORIGINAL_BLOCK_STYLE_ADAPTATION",
+      "parts": 6
+    },
+    "verticesInsideBody": 0
+  },
+  {
+    "minY": 0.02891296148300171,
+    "parts": [
+      {
+        "vertices": 448,
+        "faces": 864,
+        "name": "goblin_ritual_r6_Head",
+        "verticesInsideBody": 0
+      },
+      {
+        "vertices": 952,
+        "faces": 1836,
+        "name": "goblin_ritual_r6_Torso",
+        "verticesInsideBody": 0
+      },
+      {
+        "vertices": 392,
+        "faces": 756,
+        "name": "goblin_ritual_r6_Left_Arm",
+        "verticesInsideBody": 0
+      },
+      {
+        "vertices": 392,
+        "faces": 756,
+        "name": "goblin_ritual_r6_Right_Arm",
+        "verticesInsideBody": 0
+      },
+      {
+        "vertices": 504,
+        "faces": 972,
+        "name": "goblin_ritual_r6_Left_Leg",
+        "verticesInsideBody": 0
+      },
+      {
+        "vertices": 504,
+        "faces": 972,
+        "name": "goblin_ritual_r6_Right_Leg",
+        "verticesInsideBody": 0
+      }
+    ],
+    "label": "SyntheticGait",
+    "phase": 3.3510321638291125,
+    "follow": {
+      "maps": 3,
+      "scope": "SYNTHETIC_EDIT_FOLLOW",
+      "bodyLimbsUnmodified": true,
+      "uvConvention": "CORNER_U_1_MINUS_V",
+      "fitStatus": "UNVALIDATED",
+      "hiddenLegacyOverlays": 9,
+      "kit": "ritual",
+      "scale": 1,
+      "geometry": "ORIGINAL_BLOCK_STYLE_ADAPTATION",
+      "parts": 6
+    },
+    "verticesInsideBody": 0
+  },
+  {
+    "minY": 0.007844626903533936,
+    "parts": [
+      {
+        "vertices": 448,
+        "faces": 864,
+        "name": "goblin_ritual_r6_Head",
+        "verticesInsideBody": 0
+      },
+      {
+        "vertices": 952,
+        "faces": 1836,
+        "name": "goblin_ritual_r6_Torso",
+        "verticesInsideBody": 0
+      },
+      {
+        "vertices": 392,
+        "faces": 756,
+        "name": "goblin_ritual_r6_Left_Arm",
+        "verticesInsideBody": 0
+      },
+      {
+        "vertices": 392,
+        "faces": 756,
+        "name": "goblin_ritual_r6_Right_Arm",
+        "verticesInsideBody": 0
+      },
+      {
+        "vertices": 504,
+        "faces": 972,
+        "name": "goblin_ritual_r6_Left_Leg",
+        "verticesInsideBody": 0
+      },
+      {
+        "vertices": 504,
+        "faces": 972,
+        "name": "goblin_ritual_r6_Right_Leg",
+        "verticesInsideBody": 0
+      }
+    ],
+    "label": "SyntheticGait",
+    "phase": 3.4557519189487724,
+    "follow": {
+      "maps": 3,
+      "scope": "SYNTHETIC_EDIT_FOLLOW",
+      "bodyLimbsUnmodified": true,
+      "uvConvention": "CORNER_U_1_MINUS_V",
+      "fitStatus": "UNVALIDATED",
+      "hiddenLegacyOverlays": 9,
+      "kit": "ritual",
+      "scale": 1,
+      "geometry": "ORIGINAL_BLOCK_STYLE_ADAPTATION",
+      "parts": 6
+    },
+    "verticesInsideBody": 0
+  },
+  {
+    "minY": -0.008600354194641113,
+    "parts": [
+      {
+        "vertices": 448,
+        "faces": 864,
+        "name": "goblin_ritual_r6_Head",
+        "verticesInsideBody": 0
+      },
+      {
+        "vertices": 952,
+        "faces": 1836,
+        "name": "goblin_ritual_r6_Torso",
+        "verticesInsideBody": 0
+      },
+      {
+        "vertices": 392,
+        "faces": 756,
+        "name": "goblin_ritual_r6_Left_Arm",
+        "verticesInsideBody": 0
+      },
+      {
+        "vertices": 392,
+        "faces": 756,
+        "name": "goblin_ritual_r6_Right_Arm",
+        "verticesInsideBody": 0
+      },
+      {
+        "vertices": 504,
+        "faces": 972,
+        "name": "goblin_ritual_r6_Left_Leg",
+        "verticesInsideBody": 0
+      },
+      {
+        "vertices": 504,
+        "faces": 972,
+        "name": "goblin_ritual_r6_Right_Leg",
+        "verticesInsideBody": 0
+      }
+    ],
+    "label": "SyntheticGait",
+    "phase": 3.5604716740684323,
+    "follow": {
+      "maps": 3,
+      "scope": "SYNTHETIC_EDIT_FOLLOW",
+      "bodyLimbsUnmodified": true,
+      "uvConvention": "CORNER_U_1_MINUS_V",
+      "fitStatus": "UNVALIDATED",
+      "hiddenLegacyOverlays": 9,
+      "kit": "ritual",
+      "scale": 1,
+      "geometry": "ORIGINAL_BLOCK_STYLE_ADAPTATION",
+      "parts": 6
+    },
+    "verticesInsideBody": 0
+  },
+  {
+    "minY": -0.02067410945892334,
+    "parts": [
+      {
+        "vertices": 448,
+        "faces": 864,
+        "name": "goblin_ritual_r6_Head",
+        "verticesInsideBody": 0
+      },
+      {
+        "vertices": 952,
+        "faces": 1836,
+        "name": "goblin_ritual_r6_Torso",
+        "verticesInsideBody": 0
+      },
+      {
+        "vertices": 392,
+        "faces": 756,
+        "name": "goblin_ritual_r6_Left_Arm",
+        "verticesInsideBody": 0
+      },
+      {
+        "vertices": 392,
+        "faces": 756,
+        "name": "goblin_ritual_r6_Right_Arm",
+        "verticesInsideBody": 0
+      },
+      {
+        "vertices": 504,
+        "faces": 972,
+        "name": "goblin_ritual_r6_Left_Leg",
+        "verticesInsideBody": 0
+      },
+      {
+        "vertices": 504,
+        "faces": 972,
+        "name": "goblin_ritual_r6_Right_Leg",
+        "verticesInsideBody": 0
+      }
+    ],
+    "label": "SyntheticGait",
+    "phase": 3.665191429188092,
+    "follow": {
+      "maps": 3,
+      "scope": "SYNTHETIC_EDIT_FOLLOW",
+      "bodyLimbsUnmodified": true,
+      "uvConvention": "CORNER_U_1_MINUS_V",
+      "fitStatus": "UNVALIDATED",
+      "hiddenLegacyOverlays": 9,
+      "kit": "ritual",
+      "scale": 1,
+      "geometry": "ORIGINAL_BLOCK_STYLE_ADAPTATION",
+      "parts": 6
+    },
+    "verticesInsideBody": 0
+  },
+  {
+    "minY": -0.028787732124328613,
+    "parts": [
+      {
+        "vertices": 448,
+        "faces": 864,
+        "name": "goblin_ritual_r6_Head",
+        "verticesInsideBody": 0
+      },
+      {
+        "vertices": 952,
+        "faces": 1836,
+        "name": "goblin_ritual_r6_Torso",
+        "verticesInsideBody": 0
+      },
+      {
+        "vertices": 392,
+        "faces": 756,
+        "name": "goblin_ritual_r6_Left_Arm",
+        "verticesInsideBody": 0
+      },
+      {
+        "vertices": 392,
+        "faces": 756,
+        "name": "goblin_ritual_r6_Right_Arm",
+        "verticesInsideBody": 0
+      },
+      {
+        "vertices": 504,
+        "faces": 972,
+        "name": "goblin_ritual_r6_Left_Leg",
+        "verticesInsideBody": 0
+      },
+      {
+        "vertices": 504,
+        "faces": 972,
+        "name": "goblin_ritual_r6_Right_Leg",
+        "verticesInsideBody": 0
+      }
+    ],
+    "label": "SyntheticGait",
+    "phase": 3.7699111843077517,
+    "follow": {
+      "maps": 3,
+      "scope": "SYNTHETIC_EDIT_FOLLOW",
+      "bodyLimbsUnmodified": true,
+      "uvConvention": "CORNER_U_1_MINUS_V",
+      "fitStatus": "UNVALIDATED",
+      "hiddenLegacyOverlays": 9,
+      "kit": "ritual",
+      "scale": 1,
+      "geometry": "ORIGINAL_BLOCK_STYLE_ADAPTATION",
+      "parts": 6
+    },
+    "verticesInsideBody": 0
+  },
+  {
+    "minY": -0.03348040580749512,
+    "parts": [
+      {
+        "vertices": 448,
+        "faces": 864,
+        "name": "goblin_ritual_r6_Head",
+        "verticesInsideBody": 0
+      },
+      {
+        "vertices": 952,
+        "faces": 1836,
+        "name": "goblin_ritual_r6_Torso",
+        "verticesInsideBody": 0
+      },
+      {
+        "vertices": 392,
+        "faces": 756,
+        "name": "goblin_ritual_r6_Left_Arm",
+        "verticesInsideBody": 0
+      },
+      {
+        "vertices": 392,
+        "faces": 756,
+        "name": "goblin_ritual_r6_Right_Arm",
+        "verticesInsideBody": 0
+      },
+      {
+        "vertices": 504,
+        "faces": 972,
+        "name": "goblin_ritual_r6_Left_Leg",
+        "verticesInsideBody": 0
+      },
+      {
+        "vertices": 504,
+        "faces": 972,
+        "name": "goblin_ritual_r6_Right_Leg",
+        "verticesInsideBody": 0
+      }
+    ],
+    "label": "SyntheticGait",
+    "phase": 3.8746309394274117,
+    "follow": {
+      "maps": 3,
+      "scope": "SYNTHETIC_EDIT_FOLLOW",
+      "bodyLimbsUnmodified": true,
+      "uvConvention": "CORNER_U_1_MINUS_V",
+      "fitStatus": "UNVALIDATED",
+      "hiddenLegacyOverlays": 9,
+      "kit": "ritual",
+      "scale": 1,
+      "geometry": "ORIGINAL_BLOCK_STYLE_ADAPTATION",
+      "parts": 6
+    },
+    "verticesInsideBody": 0
+  },
+  {
+    "minY": -0.03538322448730469,
+    "parts": [
+      {
+        "vertices": 448,
+        "faces": 864,
+        "name": "goblin_ritual_r6_Head",
+        "verticesInsideBody": 0
+      },
+      {
+        "vertices": 952,
+        "faces": 1836,
+        "name": "goblin_ritual_r6_Torso",
+        "verticesInsideBody": 0
+      },
+      {
+        "vertices": 392,
+        "faces": 756,
+        "name": "goblin_ritual_r6_Left_Arm",
+        "verticesInsideBody": 0
+      },
+      {
+        "vertices": 392,
+        "faces": 756,
+        "name": "goblin_ritual_r6_Right_Arm",
+        "verticesInsideBody": 0
+      },
+      {
+        "vertices": 504,
+        "faces": 972,
+        "name": "goblin_ritual_r6_Left_Leg",
+        "verticesInsideBody": 0
+      },
+      {
+        "vertices": 504,
+        "faces": 972,
+        "name": "goblin_ritual_r6_Right_Leg",
+        "verticesInsideBody": 0
+      }
+    ],
+    "label": "SyntheticGait",
+    "phase": 3.979350694547071,
+    "follow": {
+      "maps": 3,
+      "scope": "SYNTHETIC_EDIT_FOLLOW",
+      "bodyLimbsUnmodified": true,
+      "uvConvention": "CORNER_U_1_MINUS_V",
+      "fitStatus": "UNVALIDATED",
+      "hiddenLegacyOverlays": 9,
+      "kit": "ritual",
+      "scale": 1,
+      "geometry": "ORIGINAL_BLOCK_STYLE_ADAPTATION",
+      "parts": 6
+    },
+    "verticesInsideBody": 0
+  },
+  {
+    "minY": -0.03517782688140869,
+    "parts": [
+      {
+        "vertices": 448,
+        "faces": 864,
+        "name": "goblin_ritual_r6_Head",
+        "verticesInsideBody": 0
+      },
+      {
+        "vertices": 952,
+        "faces": 1836,
+        "name": "goblin_ritual_r6_Torso",
+        "verticesInsideBody": 0
+      },
+      {
+        "vertices": 392,
+        "faces": 756,
+        "name": "goblin_ritual_r6_Left_Arm",
+        "verticesInsideBody": 0
+      },
+      {
+        "vertices": 392,
+        "faces": 756,
+        "name": "goblin_ritual_r6_Right_Arm",
+        "verticesInsideBody": 0
+      },
+      {
+        "vertices": 504,
+        "faces": 972,
+        "name": "goblin_ritual_r6_Left_Leg",
+        "verticesInsideBody": 0
+      },
+      {
+        "vertices": 504,
+        "faces": 972,
+        "name": "goblin_ritual_r6_Right_Leg",
+        "verticesInsideBody": 0
+      }
+    ],
+    "label": "SyntheticGait",
+    "phase": 4.084070449666731,
+    "follow": {
+      "maps": 3,
+      "scope": "SYNTHETIC_EDIT_FOLLOW",
+      "bodyLimbsUnmodified": true,
+      "uvConvention": "CORNER_U_1_MINUS_V",
+      "fitStatus": "UNVALIDATED",
+      "hiddenLegacyOverlays": 9,
+      "kit": "ritual",
+      "scale": 1,
+      "geometry": "ORIGINAL_BLOCK_STYLE_ADAPTATION",
+      "parts": 6
+    },
+    "verticesInsideBody": 0
+  },
+  {
+    "minY": -0.03355669975280762,
+    "parts": [
+      {
+        "vertices": 448,
+        "faces": 864,
+        "name": "goblin_ritual_r6_Head",
+        "verticesInsideBody": 0
+      },
+      {
+        "vertices": 952,
+        "faces": 1836,
+        "name": "goblin_ritual_r6_Torso",
+        "verticesInsideBody": 0
+      },
+      {
+        "vertices": 392,
+        "faces": 756,
+        "name": "goblin_ritual_r6_Left_Arm",
+        "verticesInsideBody": 0
+      },
+      {
+        "vertices": 392,
+        "faces": 756,
+        "name": "goblin_ritual_r6_Right_Arm",
+        "verticesInsideBody": 0
+      },
+      {
+        "vertices": 504,
+        "faces": 972,
+        "name": "goblin_ritual_r6_Left_Leg",
+        "verticesInsideBody": 0
+      },
+      {
+        "vertices": 504,
+        "faces": 972,
+        "name": "goblin_ritual_r6_Right_Leg",
+        "verticesInsideBody": 0
+      }
+    ],
+    "label": "SyntheticGait",
+    "phase": 4.1887902047863905,
+    "follow": {
+      "maps": 3,
+      "scope": "SYNTHETIC_EDIT_FOLLOW",
+      "bodyLimbsUnmodified": true,
+      "uvConvention": "CORNER_U_1_MINUS_V",
+      "fitStatus": "UNVALIDATED",
+      "hiddenLegacyOverlays": 9,
+      "kit": "ritual",
+      "scale": 1,
+      "geometry": "ORIGINAL_BLOCK_STYLE_ADAPTATION",
+      "parts": 6
+    },
+    "verticesInsideBody": 0
+  },
+  {
+    "minY": -0.032097816467285156,
+    "parts": [
+      {
+        "vertices": 448,
+        "faces": 864,
+        "name": "goblin_ritual_r6_Head",
+        "verticesInsideBody": 0
+      },
+      {
+        "vertices": 952,
+        "faces": 1836,
+        "name": "goblin_ritual_r6_Torso",
+        "verticesInsideBody": 0
+      },
+      {
+        "vertices": 392,
+        "faces": 756,
+        "name": "goblin_ritual_r6_Left_Arm",
+        "verticesInsideBody": 0
+      },
+      {
+        "vertices": 392,
+        "faces": 756,
+        "name": "goblin_ritual_r6_Right_Arm",
+        "verticesInsideBody": 0
+      },
+      {
+        "vertices": 504,
+        "faces": 972,
+        "name": "goblin_ritual_r6_Left_Leg",
+        "verticesInsideBody": 0
+      },
+      {
+        "vertices": 504,
+        "faces": 972,
+        "name": "goblin_ritual_r6_Right_Leg",
+        "verticesInsideBody": 0
+      }
+    ],
+    "label": "SyntheticGait",
+    "phase": 4.29350995990605,
+    "follow": {
+      "maps": 3,
+      "scope": "SYNTHETIC_EDIT_FOLLOW",
+      "bodyLimbsUnmodified": true,
+      "uvConvention": "CORNER_U_1_MINUS_V",
+      "fitStatus": "UNVALIDATED",
+      "hiddenLegacyOverlays": 9,
+      "kit": "ritual",
+      "scale": 1,
+      "geometry": "ORIGINAL_BLOCK_STYLE_ADAPTATION",
+      "parts": 6
+    },
+    "verticesInsideBody": 0
+  },
+  {
+    "minY": -0.030407190322875977,
+    "parts": [
+      {
+        "vertices": 448,
+        "faces": 864,
+        "name": "goblin_ritual_r6_Head",
+        "verticesInsideBody": 0
+      },
+      {
+        "vertices": 952,
+        "faces": 1836,
+        "name": "goblin_ritual_r6_Torso",
+        "verticesInsideBody": 0
+      },
+      {
+        "vertices": 392,
+        "faces": 756,
+        "name": "goblin_ritual_r6_Left_Arm",
+        "verticesInsideBody": 0
+      },
+      {
+        "vertices": 392,
+        "faces": 756,
+        "name": "goblin_ritual_r6_Right_Arm",
+        "verticesInsideBody": 0
+      },
+      {
+        "vertices": 504,
+        "faces": 972,
+        "name": "goblin_ritual_r6_Left_Leg",
+        "verticesInsideBody": 0
+      },
+      {
+        "vertices": 504,
+        "faces": 972,
+        "name": "goblin_ritual_r6_Right_Leg",
+        "verticesInsideBody": 0
+      }
+    ],
+    "label": "SyntheticGait",
+    "phase": 4.39822971502571,
+    "follow": {
+      "maps": 3,
+      "scope": "SYNTHETIC_EDIT_FOLLOW",
+      "bodyLimbsUnmodified": true,
+      "uvConvention": "CORNER_U_1_MINUS_V",
+      "fitStatus": "UNVALIDATED",
+      "hiddenLegacyOverlays": 9,
+      "kit": "ritual",
+      "scale": 1,
+      "geometry": "ORIGINAL_BLOCK_STYLE_ADAPTATION",
+      "parts": 6
+    },
+    "verticesInsideBody": 0
+  },
+  {
+    "minY": -0.028826236724853516,
+    "parts": [
+      {
+        "vertices": 448,
+        "faces": 864,
+        "name": "goblin_ritual_r6_Head",
+        "verticesInsideBody": 0
+      },
+      {
+        "vertices": 952,
+        "faces": 1836,
+        "name": "goblin_ritual_r6_Torso",
+        "verticesInsideBody": 0
+      },
+      {
+        "vertices": 392,
+        "faces": 756,
+        "name": "goblin_ritual_r6_Left_Arm",
+        "verticesInsideBody": 0
+      },
+      {
+        "vertices": 392,
+        "faces": 756,
+        "name": "goblin_ritual_r6_Right_Arm",
+        "verticesInsideBody": 0
+      },
+      {
+        "vertices": 504,
+        "faces": 972,
+        "name": "goblin_ritual_r6_Left_Leg",
+        "verticesInsideBody": 0
+      },
+      {
+        "vertices": 504,
+        "faces": 972,
+        "name": "goblin_ritual_r6_Right_Leg",
+        "verticesInsideBody": 2
+      }
+    ],
+    "label": "SyntheticGait",
+    "phase": 4.50294947014537,
+    "follow": {
+      "maps": 3,
+      "scope": "SYNTHETIC_EDIT_FOLLOW",
+      "bodyLimbsUnmodified": true,
+      "uvConvention": "CORNER_U_1_MINUS_V",
+      "fitStatus": "UNVALIDATED",
+      "hiddenLegacyOverlays": 9,
+      "kit": "ritual",
+      "scale": 1,
+      "geometry": "ORIGINAL_BLOCK_STYLE_ADAPTATION",
+      "parts": 6
+    },
+    "verticesInsideBody": 2
+  },
+  {
+    "minY": -0.027724623680114746,
+    "parts": [
+      {
+        "vertices": 448,
+        "faces": 864,
+        "name": "goblin_ritual_r6_Head",
+        "verticesInsideBody": 0
+      },
+      {
+        "vertices": 952,
+        "faces": 1836,
+        "name": "goblin_ritual_r6_Torso",
+        "verticesInsideBody": 0
+      },
+      {
+        "vertices": 392,
+        "faces": 756,
+        "name": "goblin_ritual_r6_Left_Arm",
+        "verticesInsideBody": 0
+      },
+      {
+        "vertices": 392,
+        "faces": 756,
+        "name": "goblin_ritual_r6_Right_Arm",
+        "verticesInsideBody": 0
+      },
+      {
+        "vertices": 504,
+        "faces": 972,
+        "name": "goblin_ritual_r6_Left_Leg",
+        "verticesInsideBody": 0
+      },
+      {
+        "vertices": 504,
+        "faces": 972,
+        "name": "goblin_ritual_r6_Right_Leg",
+        "verticesInsideBody": 4
+      }
+    ],
+    "label": "SyntheticGait",
+    "phase": 4.607669225265029,
+    "follow": {
+      "maps": 3,
+      "scope": "SYNTHETIC_EDIT_FOLLOW",
+      "bodyLimbsUnmodified": true,
+      "uvConvention": "CORNER_U_1_MINUS_V",
+      "fitStatus": "UNVALIDATED",
+      "hiddenLegacyOverlays": 9,
+      "kit": "ritual",
+      "scale": 1,
+      "geometry": "ORIGINAL_BLOCK_STYLE_ADAPTATION",
+      "parts": 6
+    },
+    "verticesInsideBody": 4
+  },
+  {
+    "minY": -0.02733147144317627,
+    "parts": [
+      {
+        "vertices": 448,
+        "faces": 864,
+        "name": "goblin_ritual_r6_Head",
+        "verticesInsideBody": 0
+      },
+      {
+        "vertices": 952,
+        "faces": 1836,
+        "name": "goblin_ritual_r6_Torso",
+        "verticesInsideBody": 0
+      },
+      {
+        "vertices": 392,
+        "faces": 756,
+        "name": "goblin_ritual_r6_Left_Arm",
+        "verticesInsideBody": 0
+      },
+      {
+        "vertices": 392,
+        "faces": 756,
+        "name": "goblin_ritual_r6_Right_Arm",
+        "verticesInsideBody": 0
+      },
+      {
+        "vertices": 504,
+        "faces": 972,
+        "name": "goblin_ritual_r6_Left_Leg",
+        "verticesInsideBody": 0
+      },
+      {
+        "vertices": 504,
+        "faces": 972,
+        "name": "goblin_ritual_r6_Right_Leg",
+        "verticesInsideBody": 4
+      }
+    ],
+    "label": "SyntheticGait",
+    "phase": 4.71238898038469,
+    "follow": {
+      "maps": 3,
+      "scope": "SYNTHETIC_EDIT_FOLLOW",
+      "bodyLimbsUnmodified": true,
+      "uvConvention": "CORNER_U_1_MINUS_V",
+      "fitStatus": "UNVALIDATED",
+      "hiddenLegacyOverlays": 9,
+      "kit": "ritual",
+      "scale": 1,
+      "geometry": "ORIGINAL_BLOCK_STYLE_ADAPTATION",
+      "parts": 6
+    },
+    "verticesInsideBody": 4
+  },
+  {
+    "minY": -0.027724623680114746,
+    "parts": [
+      {
+        "vertices": 448,
+        "faces": 864,
+        "name": "goblin_ritual_r6_Head",
+        "verticesInsideBody": 0
+      },
+      {
+        "vertices": 952,
+        "faces": 1836,
+        "name": "goblin_ritual_r6_Torso",
+        "verticesInsideBody": 0
+      },
+      {
+        "vertices": 392,
+        "faces": 756,
+        "name": "goblin_ritual_r6_Left_Arm",
+        "verticesInsideBody": 0
+      },
+      {
+        "vertices": 392,
+        "faces": 756,
+        "name": "goblin_ritual_r6_Right_Arm",
+        "verticesInsideBody": 0
+      },
+      {
+        "vertices": 504,
+        "faces": 972,
+        "name": "goblin_ritual_r6_Left_Leg",
+        "verticesInsideBody": 0
+      },
+      {
+        "vertices": 504,
+        "faces": 972,
+        "name": "goblin_ritual_r6_Right_Leg",
+        "verticesInsideBody": 4
+      }
+    ],
+    "label": "SyntheticGait",
+    "phase": 4.817108735504349,
+    "follow": {
+      "maps": 3,
+      "scope": "SYNTHETIC_EDIT_FOLLOW",
+      "bodyLimbsUnmodified": true,
+      "uvConvention": "CORNER_U_1_MINUS_V",
+      "fitStatus": "UNVALIDATED",
+      "hiddenLegacyOverlays": 9,
+      "kit": "ritual",
+      "scale": 1,
+      "geometry": "ORIGINAL_BLOCK_STYLE_ADAPTATION",
+      "parts": 6
+    },
+    "verticesInsideBody": 4
+  },
+  {
+    "minY": -0.028826236724853516,
+    "parts": [
+      {
+        "vertices": 448,
+        "faces": 864,
+        "name": "goblin_ritual_r6_Head",
+        "verticesInsideBody": 0
+      },
+      {
+        "vertices": 952,
+        "faces": 1836,
+        "name": "goblin_ritual_r6_Torso",
+        "verticesInsideBody": 0
+      },
+      {
+        "vertices": 392,
+        "faces": 756,
+        "name": "goblin_ritual_r6_Left_Arm",
+        "verticesInsideBody": 0
+      },
+      {
+        "vertices": 392,
+        "faces": 756,
+        "name": "goblin_ritual_r6_Right_Arm",
+        "verticesInsideBody": 0
+      },
+      {
+        "vertices": 504,
+        "faces": 972,
+        "name": "goblin_ritual_r6_Left_Leg",
+        "verticesInsideBody": 0
+      },
+      {
+        "vertices": 504,
+        "faces": 972,
+        "name": "goblin_ritual_r6_Right_Leg",
+        "verticesInsideBody": 2
+      }
+    ],
+    "label": "SyntheticGait",
+    "phase": 4.9218284906240095,
+    "follow": {
+      "maps": 3,
+      "scope": "SYNTHETIC_EDIT_FOLLOW",
+      "bodyLimbsUnmodified": true,
+      "uvConvention": "CORNER_U_1_MINUS_V",
+      "fitStatus": "UNVALIDATED",
+      "hiddenLegacyOverlays": 9,
+      "kit": "ritual",
+      "scale": 1,
+      "geometry": "ORIGINAL_BLOCK_STYLE_ADAPTATION",
+      "parts": 6
+    },
+    "verticesInsideBody": 2
+  },
+  {
+    "minY": -0.030407190322875977,
+    "parts": [
+      {
+        "vertices": 448,
+        "faces": 864,
+        "name": "goblin_ritual_r6_Head",
+        "verticesInsideBody": 0
+      },
+      {
+        "vertices": 952,
+        "faces": 1836,
+        "name": "goblin_ritual_r6_Torso",
+        "verticesInsideBody": 0
+      },
+      {
+        "vertices": 392,
+        "faces": 756,
+        "name": "goblin_ritual_r6_Left_Arm",
+        "verticesInsideBody": 0
+      },
+      {
+        "vertices": 392,
+        "faces": 756,
+        "name": "goblin_ritual_r6_Right_Arm",
+        "verticesInsideBody": 0
+      },
+      {
+        "vertices": 504,
+        "faces": 972,
+        "name": "goblin_ritual_r6_Left_Leg",
+        "verticesInsideBody": 0
+      },
+      {
+        "vertices": 504,
+        "faces": 972,
+        "name": "goblin_ritual_r6_Right_Leg",
+        "verticesInsideBody": 0
+      }
+    ],
+    "label": "SyntheticGait",
+    "phase": 5.026548245743669,
+    "follow": {
+      "maps": 3,
+      "scope": "SYNTHETIC_EDIT_FOLLOW",
+      "bodyLimbsUnmodified": true,
+      "uvConvention": "CORNER_U_1_MINUS_V",
+      "fitStatus": "UNVALIDATED",
+      "hiddenLegacyOverlays": 9,
+      "kit": "ritual",
+      "scale": 1,
+      "geometry": "ORIGINAL_BLOCK_STYLE_ADAPTATION",
+      "parts": 6
+    },
+    "verticesInsideBody": 0
+  },
+  {
+    "minY": -0.032097816467285156,
+    "parts": [
+      {
+        "vertices": 448,
+        "faces": 864,
+        "name": "goblin_ritual_r6_Head",
+        "verticesInsideBody": 0
+      },
+      {
+        "vertices": 952,
+        "faces": 1836,
+        "name": "goblin_ritual_r6_Torso",
+        "verticesInsideBody": 0
+      },
+      {
+        "vertices": 392,
+        "faces": 756,
+        "name": "goblin_ritual_r6_Left_Arm",
+        "verticesInsideBody": 0
+      },
+      {
+        "vertices": 392,
+        "faces": 756,
+        "name": "goblin_ritual_r6_Right_Arm",
+        "verticesInsideBody": 0
+      },
+      {
+        "vertices": 504,
+        "faces": 972,
+        "name": "goblin_ritual_r6_Left_Leg",
+        "verticesInsideBody": 0
+      },
+      {
+        "vertices": 504,
+        "faces": 972,
+        "name": "goblin_ritual_r6_Right_Leg",
+        "verticesInsideBody": 0
+      }
+    ],
+    "label": "SyntheticGait",
+    "phase": 5.1312680008633285,
+    "follow": {
+      "maps": 3,
+      "scope": "SYNTHETIC_EDIT_FOLLOW",
+      "bodyLimbsUnmodified": true,
+      "uvConvention": "CORNER_U_1_MINUS_V",
+      "fitStatus": "UNVALIDATED",
+      "hiddenLegacyOverlays": 9,
+      "kit": "ritual",
+      "scale": 1,
+      "geometry": "ORIGINAL_BLOCK_STYLE_ADAPTATION",
+      "parts": 6
+    },
+    "verticesInsideBody": 0
+  },
+  {
+    "minY": -0.03355669975280762,
+    "parts": [
+      {
+        "vertices": 448,
+        "faces": 864,
+        "name": "goblin_ritual_r6_Head",
+        "verticesInsideBody": 0
+      },
+      {
+        "vertices": 952,
+        "faces": 1836,
+        "name": "goblin_ritual_r6_Torso",
+        "verticesInsideBody": 0
+      },
+      {
+        "vertices": 392,
+        "faces": 756,
+        "name": "goblin_ritual_r6_Left_Arm",
+        "verticesInsideBody": 0
+      },
+      {
+        "vertices": 392,
+        "faces": 756,
+        "name": "goblin_ritual_r6_Right_Arm",
+        "verticesInsideBody": 0
+      },
+      {
+        "vertices": 504,
+        "faces": 972,
+        "name": "goblin_ritual_r6_Left_Leg",
+        "verticesInsideBody": 0
+      },
+      {
+        "vertices": 504,
+        "faces": 972,
+        "name": "goblin_ritual_r6_Right_Leg",
+        "verticesInsideBody": 0
+      }
+    ],
+    "label": "SyntheticGait",
+    "phase": 5.235987755982989,
+    "follow": {
+      "maps": 3,
+      "scope": "SYNTHETIC_EDIT_FOLLOW",
+      "bodyLimbsUnmodified": true,
+      "uvConvention": "CORNER_U_1_MINUS_V",
+      "fitStatus": "UNVALIDATED",
+      "hiddenLegacyOverlays": 9,
+      "kit": "ritual",
+      "scale": 1,
+      "geometry": "ORIGINAL_BLOCK_STYLE_ADAPTATION",
+      "parts": 6
+    },
+    "verticesInsideBody": 0
+  },
+  {
+    "minY": -0.03517782688140869,
+    "parts": [
+      {
+        "vertices": 448,
+        "faces": 864,
+        "name": "goblin_ritual_r6_Head",
+        "verticesInsideBody": 0
+      },
+      {
+        "vertices": 952,
+        "faces": 1836,
+        "name": "goblin_ritual_r6_Torso",
+        "verticesInsideBody": 0
+      },
+      {
+        "vertices": 392,
+        "faces": 756,
+        "name": "goblin_ritual_r6_Left_Arm",
+        "verticesInsideBody": 0
+      },
+      {
+        "vertices": 392,
+        "faces": 756,
+        "name": "goblin_ritual_r6_Right_Arm",
+        "verticesInsideBody": 0
+      },
+      {
+        "vertices": 504,
+        "faces": 972,
+        "name": "goblin_ritual_r6_Left_Leg",
+        "verticesInsideBody": 0
+      },
+      {
+        "vertices": 504,
+        "faces": 972,
+        "name": "goblin_ritual_r6_Right_Leg",
+        "verticesInsideBody": 0
+      }
+    ],
+    "label": "SyntheticGait",
+    "phase": 5.340707511102648,
+    "follow": {
+      "maps": 3,
+      "scope": "SYNTHETIC_EDIT_FOLLOW",
+      "bodyLimbsUnmodified": true,
+      "uvConvention": "CORNER_U_1_MINUS_V",
+      "fitStatus": "UNVALIDATED",
+      "hiddenLegacyOverlays": 9,
+      "kit": "ritual",
+      "scale": 1,
+      "geometry": "ORIGINAL_BLOCK_STYLE_ADAPTATION",
+      "parts": 6
+    },
+    "verticesInsideBody": 0
+  },
+  {
+    "minY": -0.03538322448730469,
+    "parts": [
+      {
+        "vertices": 448,
+        "faces": 864,
+        "name": "goblin_ritual_r6_Head",
+        "verticesInsideBody": 0
+      },
+      {
+        "vertices": 952,
+        "faces": 1836,
+        "name": "goblin_ritual_r6_Torso",
+        "verticesInsideBody": 0
+      },
+      {
+        "vertices": 392,
+        "faces": 756,
+        "name": "goblin_ritual_r6_Left_Arm",
+        "verticesInsideBody": 0
+      },
+      {
+        "vertices": 392,
+        "faces": 756,
+        "name": "goblin_ritual_r6_Right_Arm",
+        "verticesInsideBody": 0
+      },
+      {
+        "vertices": 504,
+        "faces": 972,
+        "name": "goblin_ritual_r6_Left_Leg",
+        "verticesInsideBody": 0
+      },
+      {
+        "vertices": 504,
+        "faces": 972,
+        "name": "goblin_ritual_r6_Right_Leg",
+        "verticesInsideBody": 0
+      }
+    ],
+    "label": "SyntheticGait",
+    "phase": 5.445427266222309,
+    "follow": {
+      "maps": 3,
+      "scope": "SYNTHETIC_EDIT_FOLLOW",
+      "bodyLimbsUnmodified": true,
+      "uvConvention": "CORNER_U_1_MINUS_V",
+      "fitStatus": "UNVALIDATED",
+      "hiddenLegacyOverlays": 9,
+      "kit": "ritual",
+      "scale": 1,
+      "geometry": "ORIGINAL_BLOCK_STYLE_ADAPTATION",
+      "parts": 6
+    },
+    "verticesInsideBody": 0
+  },
+  {
+    "minY": -0.03348040580749512,
+    "parts": [
+      {
+        "vertices": 448,
+        "faces": 864,
+        "name": "goblin_ritual_r6_Head",
+        "verticesInsideBody": 0
+      },
+      {
+        "vertices": 952,
+        "faces": 1836,
+        "name": "goblin_ritual_r6_Torso",
+        "verticesInsideBody": 0
+      },
+      {
+        "vertices": 392,
+        "faces": 756,
+        "name": "goblin_ritual_r6_Left_Arm",
+        "verticesInsideBody": 0
+      },
+      {
+        "vertices": 392,
+        "faces": 756,
+        "name": "goblin_ritual_r6_Right_Arm",
+        "verticesInsideBody": 0
+      },
+      {
+        "vertices": 504,
+        "faces": 972,
+        "name": "goblin_ritual_r6_Left_Leg",
+        "verticesInsideBody": 0
+      },
+      {
+        "vertices": 504,
+        "faces": 972,
+        "name": "goblin_ritual_r6_Right_Leg",
+        "verticesInsideBody": 0
+      }
+    ],
+    "label": "SyntheticGait",
+    "phase": 5.550147021341968,
+    "follow": {
+      "maps": 3,
+      "scope": "SYNTHETIC_EDIT_FOLLOW",
+      "bodyLimbsUnmodified": true,
+      "uvConvention": "CORNER_U_1_MINUS_V",
+      "fitStatus": "UNVALIDATED",
+      "hiddenLegacyOverlays": 9,
+      "kit": "ritual",
+      "scale": 1,
+      "geometry": "ORIGINAL_BLOCK_STYLE_ADAPTATION",
+      "parts": 6
+    },
+    "verticesInsideBody": 0
+  },
+  {
+    "minY": -0.028787732124328613,
+    "parts": [
+      {
+        "vertices": 448,
+        "faces": 864,
+        "name": "goblin_ritual_r6_Head",
+        "verticesInsideBody": 0
+      },
+      {
+        "vertices": 952,
+        "faces": 1836,
+        "name": "goblin_ritual_r6_Torso",
+        "verticesInsideBody": 0
+      },
+      {
+        "vertices": 392,
+        "faces": 756,
+        "name": "goblin_ritual_r6_Left_Arm",
+        "verticesInsideBody": 0
+      },
+      {
+        "vertices": 392,
+        "faces": 756,
+        "name": "goblin_ritual_r6_Right_Arm",
+        "verticesInsideBody": 0
+      },
+      {
+        "vertices": 504,
+        "faces": 972,
+        "name": "goblin_ritual_r6_Left_Leg",
+        "verticesInsideBody": 0
+      },
+      {
+        "vertices": 504,
+        "faces": 972,
+        "name": "goblin_ritual_r6_Right_Leg",
+        "verticesInsideBody": 0
+      }
+    ],
+    "label": "SyntheticGait",
+    "phase": 5.654866776461628,
+    "follow": {
+      "maps": 3,
+      "scope": "SYNTHETIC_EDIT_FOLLOW",
+      "bodyLimbsUnmodified": true,
+      "uvConvention": "CORNER_U_1_MINUS_V",
+      "fitStatus": "UNVALIDATED",
+      "hiddenLegacyOverlays": 9,
+      "kit": "ritual",
+      "scale": 1,
+      "geometry": "ORIGINAL_BLOCK_STYLE_ADAPTATION",
+      "parts": 6
+    },
+    "verticesInsideBody": 0
+  },
+  {
+    "minY": -0.02067410945892334,
+    "parts": [
+      {
+        "vertices": 448,
+        "faces": 864,
+        "name": "goblin_ritual_r6_Head",
+        "verticesInsideBody": 0
+      },
+      {
+        "vertices": 952,
+        "faces": 1836,
+        "name": "goblin_ritual_r6_Torso",
+        "verticesInsideBody": 0
+      },
+      {
+        "vertices": 392,
+        "faces": 756,
+        "name": "goblin_ritual_r6_Left_Arm",
+        "verticesInsideBody": 0
+      },
+      {
+        "vertices": 392,
+        "faces": 756,
+        "name": "goblin_ritual_r6_Right_Arm",
+        "verticesInsideBody": 0
+      },
+      {
+        "vertices": 504,
+        "faces": 972,
+        "name": "goblin_ritual_r6_Left_Leg",
+        "verticesInsideBody": 0
+      },
+      {
+        "vertices": 504,
+        "faces": 972,
+        "name": "goblin_ritual_r6_Right_Leg",
+        "verticesInsideBody": 0
+      }
+    ],
+    "label": "SyntheticGait",
+    "phase": 5.759586531581288,
+    "follow": {
+      "maps": 3,
+      "scope": "SYNTHETIC_EDIT_FOLLOW",
+      "bodyLimbsUnmodified": true,
+      "uvConvention": "CORNER_U_1_MINUS_V",
+      "fitStatus": "UNVALIDATED",
+      "hiddenLegacyOverlays": 9,
+      "kit": "ritual",
+      "scale": 1,
+      "geometry": "ORIGINAL_BLOCK_STYLE_ADAPTATION",
+      "parts": 6
+    },
+    "verticesInsideBody": 0
+  },
+  {
+    "minY": -0.008600354194641113,
+    "parts": [
+      {
+        "vertices": 448,
+        "faces": 864,
+        "name": "goblin_ritual_r6_Head",
+        "verticesInsideBody": 0
+      },
+      {
+        "vertices": 952,
+        "faces": 1836,
+        "name": "goblin_ritual_r6_Torso",
+        "verticesInsideBody": 0
+      },
+      {
+        "vertices": 392,
+        "faces": 756,
+        "name": "goblin_ritual_r6_Left_Arm",
+        "verticesInsideBody": 0
+      },
+      {
+        "vertices": 392,
+        "faces": 756,
+        "name": "goblin_ritual_r6_Right_Arm",
+        "verticesInsideBody": 0
+      },
+      {
+        "vertices": 504,
+        "faces": 972,
+        "name": "goblin_ritual_r6_Left_Leg",
+        "verticesInsideBody": 0
+      },
+      {
+        "vertices": 504,
+        "faces": 972,
+        "name": "goblin_ritual_r6_Right_Leg",
+        "verticesInsideBody": 0
+      }
+    ],
+    "label": "SyntheticGait",
+    "phase": 5.8643062867009474,
+    "follow": {
+      "maps": 3,
+      "scope": "SYNTHETIC_EDIT_FOLLOW",
+      "bodyLimbsUnmodified": true,
+      "uvConvention": "CORNER_U_1_MINUS_V",
+      "fitStatus": "UNVALIDATED",
+      "hiddenLegacyOverlays": 9,
+      "kit": "ritual",
+      "scale": 1,
+      "geometry": "ORIGINAL_BLOCK_STYLE_ADAPTATION",
+      "parts": 6
+    },
+    "verticesInsideBody": 0
+  },
+  {
+    "minY": 0.007844626903533936,
+    "parts": [
+      {
+        "vertices": 448,
+        "faces": 864,
+        "name": "goblin_ritual_r6_Head",
+        "verticesInsideBody": 0
+      },
+      {
+        "vertices": 952,
+        "faces": 1836,
+        "name": "goblin_ritual_r6_Torso",
+        "verticesInsideBody": 0
+      },
+      {
+        "vertices": 392,
+        "faces": 756,
+        "name": "goblin_ritual_r6_Left_Arm",
+        "verticesInsideBody": 0
+      },
+      {
+        "vertices": 392,
+        "faces": 756,
+        "name": "goblin_ritual_r6_Right_Arm",
+        "verticesInsideBody": 0
+      },
+      {
+        "vertices": 504,
+        "faces": 972,
+        "name": "goblin_ritual_r6_Left_Leg",
+        "verticesInsideBody": 0
+      },
+      {
+        "vertices": 504,
+        "faces": 972,
+        "name": "goblin_ritual_r6_Right_Leg",
+        "verticesInsideBody": 0
+      }
+    ],
+    "label": "SyntheticGait",
+    "phase": 5.969026041820607,
+    "follow": {
+      "maps": 3,
+      "scope": "SYNTHETIC_EDIT_FOLLOW",
+      "bodyLimbsUnmodified": true,
+      "uvConvention": "CORNER_U_1_MINUS_V",
+      "fitStatus": "UNVALIDATED",
+      "hiddenLegacyOverlays": 9,
+      "kit": "ritual",
+      "scale": 1,
+      "geometry": "ORIGINAL_BLOCK_STYLE_ADAPTATION",
+      "parts": 6
+    },
+    "verticesInsideBody": 0
+  },
+  {
+    "minY": 0.02891296148300171,
+    "parts": [
+      {
+        "vertices": 448,
+        "faces": 864,
+        "name": "goblin_ritual_r6_Head",
+        "verticesInsideBody": 0
+      },
+      {
+        "vertices": 952,
+        "faces": 1836,
+        "name": "goblin_ritual_r6_Torso",
+        "verticesInsideBody": 0
+      },
+      {
+        "vertices": 392,
+        "faces": 756,
+        "name": "goblin_ritual_r6_Left_Arm",
+        "verticesInsideBody": 0
+      },
+      {
+        "vertices": 392,
+        "faces": 756,
+        "name": "goblin_ritual_r6_Right_Arm",
+        "verticesInsideBody": 0
+      },
+      {
+        "vertices": 504,
+        "faces": 972,
+        "name": "goblin_ritual_r6_Left_Leg",
+        "verticesInsideBody": 0
+      },
+      {
+        "vertices": 504,
+        "faces": 972,
+        "name": "goblin_ritual_r6_Right_Leg",
+        "verticesInsideBody": 0
+      }
+    ],
+    "label": "SyntheticGait",
+    "phase": 6.073745796940267,
+    "follow": {
+      "maps": 3,
+      "scope": "SYNTHETIC_EDIT_FOLLOW",
+      "bodyLimbsUnmodified": true,
+      "uvConvention": "CORNER_U_1_MINUS_V",
+      "fitStatus": "UNVALIDATED",
+      "hiddenLegacyOverlays": 9,
+      "kit": "ritual",
+      "scale": 1,
+      "geometry": "ORIGINAL_BLOCK_STYLE_ADAPTATION",
+      "parts": 6
+    },
+    "verticesInsideBody": 0
+  },
+  {
+    "minY": 0.05467402935028076,
+    "parts": [
+      {
+        "vertices": 448,
+        "faces": 864,
+        "name": "goblin_ritual_r6_Head",
+        "verticesInsideBody": 0
+      },
+      {
+        "vertices": 952,
+        "faces": 1836,
+        "name": "goblin_ritual_r6_Torso",
+        "verticesInsideBody": 0
+      },
+      {
+        "vertices": 392,
+        "faces": 756,
+        "name": "goblin_ritual_r6_Left_Arm",
+        "verticesInsideBody": 0
+      },
+      {
+        "vertices": 392,
+        "faces": 756,
+        "name": "goblin_ritual_r6_Right_Arm",
+        "verticesInsideBody": 0
+      },
+      {
+        "vertices": 504,
+        "faces": 972,
+        "name": "goblin_ritual_r6_Left_Leg",
+        "verticesInsideBody": 0
+      },
+      {
+        "vertices": 504,
+        "faces": 972,
+        "name": "goblin_ritual_r6_Right_Leg",
+        "verticesInsideBody": 0
+      }
+    ],
+    "label": "SyntheticGait",
+    "phase": 6.178465552059927,
+    "follow": {
+      "maps": 3,
+      "scope": "SYNTHETIC_EDIT_FOLLOW",
+      "bodyLimbsUnmodified": true,
+      "uvConvention": "CORNER_U_1_MINUS_V",
+      "fitStatus": "UNVALIDATED",
+      "hiddenLegacyOverlays": 9,
+      "kit": "ritual",
+      "scale": 1,
+      "geometry": "ORIGINAL_BLOCK_STYLE_ADAPTATION",
+      "parts": 6
+    },
+    "verticesInsideBody": 0
+  },
+  {
+    "minY": 0.08500003814697266,
+    "parts": [
+      {
+        "vertices": 448,
+        "faces": 864,
+        "name": "goblin_ritual_r6_Head",
+        "verticesInsideBody": 0
+      },
+      {
+        "vertices": 952,
+        "faces": 1836,
+        "name": "goblin_ritual_r6_Torso",
+        "verticesInsideBody": 0
+      },
+      {
+        "vertices": 392,
+        "faces": 756,
+        "name": "goblin_ritual_r6_Left_Arm",
+        "verticesInsideBody": 0
+      },
+      {
+        "vertices": 392,
+        "faces": 756,
+        "name": "goblin_ritual_r6_Right_Arm",
+        "verticesInsideBody": 0
+      },
+      {
+        "vertices": 504,
+        "faces": 972,
+        "name": "goblin_ritual_r6_Left_Leg",
+        "verticesInsideBody": 0
+      },
+      {
+        "vertices": 504,
+        "faces": 972,
+        "name": "goblin_ritual_r6_Right_Leg",
+        "verticesInsideBody": 0
+      }
+    ],
+    "label": "SyntheticGait",
+    "phase": 6.283185307179585,
+    "follow": {
+      "maps": 3,
+      "scope": "SYNTHETIC_EDIT_FOLLOW",
+      "bodyLimbsUnmodified": true,
+      "uvConvention": "CORNER_U_1_MINUS_V",
+      "fitStatus": "UNVALIDATED",
+      "hiddenLegacyOverlays": 9,
+      "kit": "ritual",
+      "scale": 1,
+      "geometry": "ORIGINAL_BLOCK_STYLE_ADAPTATION",
+      "parts": 6
+    },
+    "verticesInsideBody": 0
+  },
+  {
+    "minY": 0.08500003814697266,
+    "parts": [
+      {
+        "vertices": 448,
+        "faces": 864,
+        "name": "goblin_ritual_r6_Head",
+        "verticesInsideBody": 0
+      },
+      {
+        "vertices": 952,
+        "faces": 1836,
+        "name": "goblin_ritual_r6_Torso",
+        "verticesInsideBody": 0
+      },
+      {
+        "vertices": 392,
+        "faces": 756,
+        "name": "goblin_ritual_r6_Left_Arm",
+        "verticesInsideBody": 0
+      },
+      {
+        "vertices": 392,
+        "faces": 756,
+        "name": "goblin_ritual_r6_Right_Arm",
+        "verticesInsideBody": 0
+      },
+      {
+        "vertices": 504,
+        "faces": 972,
+        "name": "goblin_ritual_r6_Left_Leg",
+        "verticesInsideBody": 0
+      },
+      {
+        "vertices": 504,
+        "faces": 972,
+        "name": "goblin_ritual_r6_Right_Leg",
+        "verticesInsideBody": 0
+      }
+    ],
+    "label": "SyntheticWarriorSlash",
+    "follow": {
+      "maps": 3,
+      "scope": "SYNTHETIC_EDIT_FOLLOW",
+      "bodyLimbsUnmodified": true,
+      "uvConvention": "CORNER_U_1_MINUS_V",
+      "fitStatus": "UNVALIDATED",
+      "hiddenLegacyOverlays": 9,
+      "kit": "ritual",
+      "scale": 1,
+      "geometry": "ORIGINAL_BLOCK_STYLE_ADAPTATION",
+      "parts": 6
+    },
+    "age": 0,
+    "verticesInsideBody": 0
+  },
+  {
+    "minY": 0.06913310289382935,
+    "parts": [
+      {
+        "vertices": 448,
+        "faces": 864,
+        "name": "goblin_ritual_r6_Head",
+        "verticesInsideBody": 0
+      },
+      {
+        "vertices": 952,
+        "faces": 1836,
+        "name": "goblin_ritual_r6_Torso",
+        "verticesInsideBody": 0
+      },
+      {
+        "vertices": 392,
+        "faces": 756,
+        "name": "goblin_ritual_r6_Left_Arm",
+        "verticesInsideBody": 0
+      },
+      {
+        "vertices": 392,
+        "faces": 756,
+        "name": "goblin_ritual_r6_Right_Arm",
+        "verticesInsideBody": 0
+      },
+      {
+        "vertices": 504,
+        "faces": 972,
+        "name": "goblin_ritual_r6_Left_Leg",
+        "verticesInsideBody": 0
+      },
+      {
+        "vertices": 504,
+        "faces": 972,
+        "name": "goblin_ritual_r6_Right_Leg",
+        "verticesInsideBody": 0
+      }
+    ],
+    "label": "SyntheticWarriorSlash",
+    "follow": {
+      "maps": 3,
+      "scope": "SYNTHETIC_EDIT_FOLLOW",
+      "bodyLimbsUnmodified": true,
+      "uvConvention": "CORNER_U_1_MINUS_V",
+      "fitStatus": "UNVALIDATED",
+      "hiddenLegacyOverlays": 9,
+      "kit": "ritual",
+      "scale": 1,
+      "geometry": "ORIGINAL_BLOCK_STYLE_ADAPTATION",
+      "parts": 6
+    },
+    "age": 0.0155,
+    "verticesInsideBody": 0
+  },
+  {
+    "minY": 0.03041398525238037,
+    "parts": [
+      {
+        "vertices": 448,
+        "faces": 864,
+        "name": "goblin_ritual_r6_Head",
+        "verticesInsideBody": 0
+      },
+      {
+        "vertices": 952,
+        "faces": 1836,
+        "name": "goblin_ritual_r6_Torso",
+        "verticesInsideBody": 0
+      },
+      {
+        "vertices": 392,
+        "faces": 756,
+        "name": "goblin_ritual_r6_Left_Arm",
+        "verticesInsideBody": 0
+      },
+      {
+        "vertices": 392,
+        "faces": 756,
+        "name": "goblin_ritual_r6_Right_Arm",
+        "verticesInsideBody": 0
+      },
+      {
+        "vertices": 504,
+        "faces": 972,
+        "name": "goblin_ritual_r6_Left_Leg",
+        "verticesInsideBody": 0
+      },
+      {
+        "vertices": 504,
+        "faces": 972,
+        "name": "goblin_ritual_r6_Right_Leg",
+        "verticesInsideBody": 0
+      }
+    ],
+    "label": "SyntheticWarriorSlash",
+    "follow": {
+      "maps": 3,
+      "scope": "SYNTHETIC_EDIT_FOLLOW",
+      "bodyLimbsUnmodified": true,
+      "uvConvention": "CORNER_U_1_MINUS_V",
+      "fitStatus": "UNVALIDATED",
+      "hiddenLegacyOverlays": 9,
+      "kit": "ritual",
+      "scale": 1,
+      "geometry": "ORIGINAL_BLOCK_STYLE_ADAPTATION",
+      "parts": 6
+    },
+    "age": 0.031,
+    "verticesInsideBody": 0
+  },
+  {
+    "minY": -0.017406105995178223,
+    "parts": [
+      {
+        "vertices": 448,
+        "faces": 864,
+        "name": "goblin_ritual_r6_Head",
+        "verticesInsideBody": 0
+      },
+      {
+        "vertices": 952,
+        "faces": 1836,
+        "name": "goblin_ritual_r6_Torso",
+        "verticesInsideBody": 0
+      },
+      {
+        "vertices": 392,
+        "faces": 756,
+        "name": "goblin_ritual_r6_Left_Arm",
+        "verticesInsideBody": 0
+      },
+      {
+        "vertices": 392,
+        "faces": 756,
+        "name": "goblin_ritual_r6_Right_Arm",
+        "verticesInsideBody": 0
+      },
+      {
+        "vertices": 504,
+        "faces": 972,
+        "name": "goblin_ritual_r6_Left_Leg",
+        "verticesInsideBody": 0
+      },
+      {
+        "vertices": 504,
+        "faces": 972,
+        "name": "goblin_ritual_r6_Right_Leg",
+        "verticesInsideBody": 0
+      }
+    ],
+    "label": "SyntheticWarriorSlash",
+    "follow": {
+      "maps": 3,
+      "scope": "SYNTHETIC_EDIT_FOLLOW",
+      "bodyLimbsUnmodified": true,
+      "uvConvention": "CORNER_U_1_MINUS_V",
+      "fitStatus": "UNVALIDATED",
+      "hiddenLegacyOverlays": 9,
+      "kit": "ritual",
+      "scale": 1,
+      "geometry": "ORIGINAL_BLOCK_STYLE_ADAPTATION",
+      "parts": 6
+    },
+    "age": 0.0465,
+    "verticesInsideBody": 0
+  },
+  {
+    "minY": -0.061845600605010986,
+    "parts": [
+      {
+        "vertices": 448,
+        "faces": 864,
+        "name": "goblin_ritual_r6_Head",
+        "verticesInsideBody": 0
+      },
+      {
+        "vertices": 952,
+        "faces": 1836,
+        "name": "goblin_ritual_r6_Torso",
+        "verticesInsideBody": 0
+      },
+      {
+        "vertices": 392,
+        "faces": 756,
+        "name": "goblin_ritual_r6_Left_Arm",
+        "verticesInsideBody": 0
+      },
+      {
+        "vertices": 392,
+        "faces": 756,
+        "name": "goblin_ritual_r6_Right_Arm",
+        "verticesInsideBody": 8
+      },
+      {
+        "vertices": 504,
+        "faces": 972,
+        "name": "goblin_ritual_r6_Left_Leg",
+        "verticesInsideBody": 0
+      },
+      {
+        "vertices": 504,
+        "faces": 972,
+        "name": "goblin_ritual_r6_Right_Leg",
+        "verticesInsideBody": 0
+      }
+    ],
+    "label": "SyntheticWarriorSlash",
+    "follow": {
+      "maps": 3,
+      "scope": "SYNTHETIC_EDIT_FOLLOW",
+      "bodyLimbsUnmodified": true,
+      "uvConvention": "CORNER_U_1_MINUS_V",
+      "fitStatus": "UNVALIDATED",
+      "hiddenLegacyOverlays": 9,
+      "kit": "ritual",
+      "scale": 1,
+      "geometry": "ORIGINAL_BLOCK_STYLE_ADAPTATION",
+      "parts": 6
+    },
+    "age": 0.062,
+    "verticesInsideBody": 8
+  },
+  {
+    "minY": -0.09401530027389526,
+    "parts": [
+      {
+        "vertices": 448,
+        "faces": 864,
+        "name": "goblin_ritual_r6_Head",
+        "verticesInsideBody": 0
+      },
+      {
+        "vertices": 952,
+        "faces": 1836,
+        "name": "goblin_ritual_r6_Torso",
+        "verticesInsideBody": 0
+      },
+      {
+        "vertices": 392,
+        "faces": 756,
+        "name": "goblin_ritual_r6_Left_Arm",
+        "verticesInsideBody": 0
+      },
+      {
+        "vertices": 392,
+        "faces": 756,
+        "name": "goblin_ritual_r6_Right_Arm",
+        "verticesInsideBody": 14
+      },
+      {
+        "vertices": 504,
+        "faces": 972,
+        "name": "goblin_ritual_r6_Left_Leg",
+        "verticesInsideBody": 0
+      },
+      {
+        "vertices": 504,
+        "faces": 972,
+        "name": "goblin_ritual_r6_Right_Leg",
+        "verticesInsideBody": 0
+      }
+    ],
+    "label": "SyntheticWarriorSlash",
+    "follow": {
+      "maps": 3,
+      "scope": "SYNTHETIC_EDIT_FOLLOW",
+      "bodyLimbsUnmodified": true,
+      "uvConvention": "CORNER_U_1_MINUS_V",
+      "fitStatus": "UNVALIDATED",
+      "hiddenLegacyOverlays": 9,
+      "kit": "ritual",
+      "scale": 1,
+      "geometry": "ORIGINAL_BLOCK_STYLE_ADAPTATION",
+      "parts": 6
+    },
+    "age": 0.0775,
+    "verticesInsideBody": 14
+  },
+  {
+    "minY": -0.11120396852493286,
+    "parts": [
+      {
+        "vertices": 448,
+        "faces": 864,
+        "name": "goblin_ritual_r6_Head",
+        "verticesInsideBody": 0
+      },
+      {
+        "vertices": 952,
+        "faces": 1836,
+        "name": "goblin_ritual_r6_Torso",
+        "verticesInsideBody": 0
+      },
+      {
+        "vertices": 392,
+        "faces": 756,
+        "name": "goblin_ritual_r6_Left_Arm",
+        "verticesInsideBody": 0
+      },
+      {
+        "vertices": 392,
+        "faces": 756,
+        "name": "goblin_ritual_r6_Right_Arm",
+        "verticesInsideBody": 14
+      },
+      {
+        "vertices": 504,
+        "faces": 972,
+        "name": "goblin_ritual_r6_Left_Leg",
+        "verticesInsideBody": 0
+      },
+      {
+        "vertices": 504,
+        "faces": 972,
+        "name": "goblin_ritual_r6_Right_Leg",
+        "verticesInsideBody": 0
+      }
+    ],
+    "label": "SyntheticWarriorSlash",
+    "follow": {
+      "maps": 3,
+      "scope": "SYNTHETIC_EDIT_FOLLOW",
+      "bodyLimbsUnmodified": true,
+      "uvConvention": "CORNER_U_1_MINUS_V",
+      "fitStatus": "UNVALIDATED",
+      "hiddenLegacyOverlays": 9,
+      "kit": "ritual",
+      "scale": 1,
+      "geometry": "ORIGINAL_BLOCK_STYLE_ADAPTATION",
+      "parts": 6
+    },
+    "age": 0.093,
+    "verticesInsideBody": 14
+  },
+  {
+    "minY": -0.1118539571762085,
+    "parts": [
+      {
+        "vertices": 448,
+        "faces": 864,
+        "name": "goblin_ritual_r6_Head",
+        "verticesInsideBody": 0
+      },
+      {
+        "vertices": 952,
+        "faces": 1836,
+        "name": "goblin_ritual_r6_Torso",
+        "verticesInsideBody": 0
+      },
+      {
+        "vertices": 392,
+        "faces": 756,
+        "name": "goblin_ritual_r6_Left_Arm",
+        "verticesInsideBody": 0
+      },
+      {
+        "vertices": 392,
+        "faces": 756,
+        "name": "goblin_ritual_r6_Right_Arm",
+        "verticesInsideBody": 14
+      },
+      {
+        "vertices": 504,
+        "faces": 972,
+        "name": "goblin_ritual_r6_Left_Leg",
+        "verticesInsideBody": 0
+      },
+      {
+        "vertices": 504,
+        "faces": 972,
+        "name": "goblin_ritual_r6_Right_Leg",
+        "verticesInsideBody": 0
+      }
+    ],
+    "label": "SyntheticWarriorSlash",
+    "follow": {
+      "maps": 3,
+      "scope": "SYNTHETIC_EDIT_FOLLOW",
+      "bodyLimbsUnmodified": true,
+      "uvConvention": "CORNER_U_1_MINUS_V",
+      "fitStatus": "UNVALIDATED",
+      "hiddenLegacyOverlays": 9,
+      "kit": "ritual",
+      "scale": 1,
+      "geometry": "ORIGINAL_BLOCK_STYLE_ADAPTATION",
+      "parts": 6
+    },
+    "age": 0.1085,
+    "verticesInsideBody": 14
+  },
+  {
+    "minY": -0.10411518812179565,
+    "parts": [
+      {
+        "vertices": 448,
+        "faces": 864,
+        "name": "goblin_ritual_r6_Head",
+        "verticesInsideBody": 0
+      },
+      {
+        "vertices": 952,
+        "faces": 1836,
+        "name": "goblin_ritual_r6_Torso",
+        "verticesInsideBody": 0
+      },
+      {
+        "vertices": 392,
+        "faces": 756,
+        "name": "goblin_ritual_r6_Left_Arm",
+        "verticesInsideBody": 0
+      },
+      {
+        "vertices": 392,
+        "faces": 756,
+        "name": "goblin_ritual_r6_Right_Arm",
+        "verticesInsideBody": 14
+      },
+      {
+        "vertices": 504,
+        "faces": 972,
+        "name": "goblin_ritual_r6_Left_Leg",
+        "verticesInsideBody": 0
+      },
+      {
+        "vertices": 504,
+        "faces": 972,
+        "name": "goblin_ritual_r6_Right_Leg",
+        "verticesInsideBody": 0
+      }
+    ],
+    "label": "SyntheticWarriorSlash",
+    "follow": {
+      "maps": 3,
+      "scope": "SYNTHETIC_EDIT_FOLLOW",
+      "bodyLimbsUnmodified": true,
+      "uvConvention": "CORNER_U_1_MINUS_V",
+      "fitStatus": "UNVALIDATED",
+      "hiddenLegacyOverlays": 9,
+      "kit": "ritual",
+      "scale": 1,
+      "geometry": "ORIGINAL_BLOCK_STYLE_ADAPTATION",
+      "parts": 6
+    },
+    "age": 0.124,
+    "verticesInsideBody": 14
+  },
+  {
+    "minY": -0.08947426080703735,
+    "parts": [
+      {
+        "vertices": 448,
+        "faces": 864,
+        "name": "goblin_ritual_r6_Head",
+        "verticesInsideBody": 0
+      },
+      {
+        "vertices": 952,
+        "faces": 1836,
+        "name": "goblin_ritual_r6_Torso",
+        "verticesInsideBody": 0
+      },
+      {
+        "vertices": 392,
+        "faces": 756,
+        "name": "goblin_ritual_r6_Left_Arm",
+        "verticesInsideBody": 0
+      },
+      {
+        "vertices": 392,
+        "faces": 756,
+        "name": "goblin_ritual_r6_Right_Arm",
+        "verticesInsideBody": 0
+      },
+      {
+        "vertices": 504,
+        "faces": 972,
+        "name": "goblin_ritual_r6_Left_Leg",
+        "verticesInsideBody": 0
+      },
+      {
+        "vertices": 504,
+        "faces": 972,
+        "name": "goblin_ritual_r6_Right_Leg",
+        "verticesInsideBody": 0
+      }
+    ],
+    "label": "SyntheticWarriorSlash",
+    "follow": {
+      "maps": 3,
+      "scope": "SYNTHETIC_EDIT_FOLLOW",
+      "bodyLimbsUnmodified": true,
+      "uvConvention": "CORNER_U_1_MINUS_V",
+      "fitStatus": "UNVALIDATED",
+      "hiddenLegacyOverlays": 9,
+      "kit": "ritual",
+      "scale": 1,
+      "geometry": "ORIGINAL_BLOCK_STYLE_ADAPTATION",
+      "parts": 6
+    },
+    "age": 0.1395,
+    "verticesInsideBody": 0
+  },
+  {
+    "minY": -0.06499290466308594,
+    "parts": [
+      {
+        "vertices": 448,
+        "faces": 864,
+        "name": "goblin_ritual_r6_Head",
+        "verticesInsideBody": 0
+      },
+      {
+        "vertices": 952,
+        "faces": 1836,
+        "name": "goblin_ritual_r6_Torso",
+        "verticesInsideBody": 0
+      },
+      {
+        "vertices": 392,
+        "faces": 756,
+        "name": "goblin_ritual_r6_Left_Arm",
+        "verticesInsideBody": 2
+      },
+      {
+        "vertices": 392,
+        "faces": 756,
+        "name": "goblin_ritual_r6_Right_Arm",
+        "verticesInsideBody": 0
+      },
+      {
+        "vertices": 504,
+        "faces": 972,
+        "name": "goblin_ritual_r6_Left_Leg",
+        "verticesInsideBody": 0
+      },
+      {
+        "vertices": 504,
+        "faces": 972,
+        "name": "goblin_ritual_r6_Right_Leg",
+        "verticesInsideBody": 0
+      }
+    ],
+    "label": "SyntheticWarriorSlash",
+    "follow": {
+      "maps": 3,
+      "scope": "SYNTHETIC_EDIT_FOLLOW",
+      "bodyLimbsUnmodified": true,
+      "uvConvention": "CORNER_U_1_MINUS_V",
+      "fitStatus": "UNVALIDATED",
+      "hiddenLegacyOverlays": 9,
+      "kit": "ritual",
+      "scale": 1,
+      "geometry": "ORIGINAL_BLOCK_STYLE_ADAPTATION",
+      "parts": 6
+    },
+    "age": 0.155,
+    "verticesInsideBody": 2
+  },
+  {
+    "minY": -0.10278534889221191,
+    "parts": [
+      {
+        "vertices": 448,
+        "faces": 864,
+        "name": "goblin_ritual_r6_Head",
+        "verticesInsideBody": 0
+      },
+      {
+        "vertices": 952,
+        "faces": 1836,
+        "name": "goblin_ritual_r6_Torso",
+        "verticesInsideBody": 0
+      },
+      {
+        "vertices": 392,
+        "faces": 756,
+        "name": "goblin_ritual_r6_Left_Arm",
+        "verticesInsideBody": 5
+      },
+      {
+        "vertices": 392,
+        "faces": 756,
+        "name": "goblin_ritual_r6_Right_Arm",
+        "verticesInsideBody": 78
+      },
+      {
+        "vertices": 504,
+        "faces": 972,
+        "name": "goblin_ritual_r6_Left_Leg",
+        "verticesInsideBody": 0
+      },
+      {
+        "vertices": 504,
+        "faces": 972,
+        "name": "goblin_ritual_r6_Right_Leg",
+        "verticesInsideBody": 0
+      }
+    ],
+    "label": "SyntheticWarriorSlash",
+    "follow": {
+      "maps": 3,
+      "scope": "SYNTHETIC_EDIT_FOLLOW",
+      "bodyLimbsUnmodified": true,
+      "uvConvention": "CORNER_U_1_MINUS_V",
+      "fitStatus": "UNVALIDATED",
+      "hiddenLegacyOverlays": 9,
+      "kit": "ritual",
+      "scale": 1,
+      "geometry": "ORIGINAL_BLOCK_STYLE_ADAPTATION",
+      "parts": 6
+    },
+    "age": 0.1705,
+    "verticesInsideBody": 83
+  },
+  {
+    "minY": -0.12108761072158813,
+    "parts": [
+      {
+        "vertices": 448,
+        "faces": 864,
+        "name": "goblin_ritual_r6_Head",
+        "verticesInsideBody": 0
+      },
+      {
+        "vertices": 952,
+        "faces": 1836,
+        "name": "goblin_ritual_r6_Torso",
+        "verticesInsideBody": 28
+      },
+      {
+        "vertices": 392,
+        "faces": 756,
+        "name": "goblin_ritual_r6_Left_Arm",
+        "verticesInsideBody": 6
+      },
+      {
+        "vertices": 392,
+        "faces": 756,
+        "name": "goblin_ritual_r6_Right_Arm",
+        "verticesInsideBody": 191
+      },
+      {
+        "vertices": 504,
+        "faces": 972,
+        "name": "goblin_ritual_r6_Left_Leg",
+        "verticesInsideBody": 0
+      },
+      {
+        "vertices": 504,
+        "faces": 972,
+        "name": "goblin_ritual_r6_Right_Leg",
+        "verticesInsideBody": 0
+      }
+    ],
+    "label": "SyntheticWarriorSlash",
+    "follow": {
+      "maps": 3,
+      "scope": "SYNTHETIC_EDIT_FOLLOW",
+      "bodyLimbsUnmodified": true,
+      "uvConvention": "CORNER_U_1_MINUS_V",
+      "fitStatus": "UNVALIDATED",
+      "hiddenLegacyOverlays": 9,
+      "kit": "ritual",
+      "scale": 1,
+      "geometry": "ORIGINAL_BLOCK_STYLE_ADAPTATION",
+      "parts": 6
+    },
+    "age": 0.186,
+    "verticesInsideBody": 225
+  },
+  {
+    "minY": -0.14100492000579834,
+    "parts": [
+      {
+        "vertices": 448,
+        "faces": 864,
+        "name": "goblin_ritual_r6_Head",
+        "verticesInsideBody": 0
+      },
+      {
+        "vertices": 952,
+        "faces": 1836,
+        "name": "goblin_ritual_r6_Torso",
+        "verticesInsideBody": 30
+      },
+      {
+        "vertices": 392,
+        "faces": 756,
+        "name": "goblin_ritual_r6_Left_Arm",
+        "verticesInsideBody": 9
+      },
+      {
+        "vertices": 392,
+        "faces": 756,
+        "name": "goblin_ritual_r6_Right_Arm",
+        "verticesInsideBody": 265
+      },
+      {
+        "vertices": 504,
+        "faces": 972,
+        "name": "goblin_ritual_r6_Left_Leg",
+        "verticesInsideBody": 0
+      },
+      {
+        "vertices": 504,
+        "faces": 972,
+        "name": "goblin_ritual_r6_Right_Leg",
+        "verticesInsideBody": 0
+      }
+    ],
+    "label": "SyntheticWarriorSlash",
+    "follow": {
+      "maps": 3,
+      "scope": "SYNTHETIC_EDIT_FOLLOW",
+      "bodyLimbsUnmodified": true,
+      "uvConvention": "CORNER_U_1_MINUS_V",
+      "fitStatus": "UNVALIDATED",
+      "hiddenLegacyOverlays": 9,
+      "kit": "ritual",
+      "scale": 1,
+      "geometry": "ORIGINAL_BLOCK_STYLE_ADAPTATION",
+      "parts": 6
+    },
+    "age": 0.2015,
+    "verticesInsideBody": 304
+  },
+  {
+    "minY": -0.14316892623901367,
+    "parts": [
+      {
+        "vertices": 448,
+        "faces": 864,
+        "name": "goblin_ritual_r6_Head",
+        "verticesInsideBody": 0
+      },
+      {
+        "vertices": 952,
+        "faces": 1836,
+        "name": "goblin_ritual_r6_Torso",
+        "verticesInsideBody": 42
+      },
+      {
+        "vertices": 392,
+        "faces": 756,
+        "name": "goblin_ritual_r6_Left_Arm",
+        "verticesInsideBody": 10
+      },
+      {
+        "vertices": 392,
+        "faces": 756,
+        "name": "goblin_ritual_r6_Right_Arm",
+        "verticesInsideBody": 259
+      },
+      {
+        "vertices": 504,
+        "faces": 972,
+        "name": "goblin_ritual_r6_Left_Leg",
+        "verticesInsideBody": 0
+      },
+      {
+        "vertices": 504,
+        "faces": 972,
+        "name": "goblin_ritual_r6_Right_Leg",
+        "verticesInsideBody": 7
+      }
+    ],
+    "label": "SyntheticWarriorSlash",
+    "follow": {
+      "maps": 3,
+      "scope": "SYNTHETIC_EDIT_FOLLOW",
+      "bodyLimbsUnmodified": true,
+      "uvConvention": "CORNER_U_1_MINUS_V",
+      "fitStatus": "UNVALIDATED",
+      "hiddenLegacyOverlays": 9,
+      "kit": "ritual",
+      "scale": 1,
+      "geometry": "ORIGINAL_BLOCK_STYLE_ADAPTATION",
+      "parts": 6
+    },
+    "age": 0.217,
+    "verticesInsideBody": 318
+  },
+  {
+    "minY": -0.13811379671096802,
+    "parts": [
+      {
+        "vertices": 448,
+        "faces": 864,
+        "name": "goblin_ritual_r6_Head",
+        "verticesInsideBody": 0
+      },
+      {
+        "vertices": 952,
+        "faces": 1836,
+        "name": "goblin_ritual_r6_Torso",
+        "verticesInsideBody": 42
+      },
+      {
+        "vertices": 392,
+        "faces": 756,
+        "name": "goblin_ritual_r6_Left_Arm",
+        "verticesInsideBody": 11
+      },
+      {
+        "vertices": 392,
+        "faces": 756,
+        "name": "goblin_ritual_r6_Right_Arm",
+        "verticesInsideBody": 242
+      },
+      {
+        "vertices": 504,
+        "faces": 972,
+        "name": "goblin_ritual_r6_Left_Leg",
+        "verticesInsideBody": 0
+      },
+      {
+        "vertices": 504,
+        "faces": 972,
+        "name": "goblin_ritual_r6_Right_Leg",
+        "verticesInsideBody": 14
+      }
+    ],
+    "label": "SyntheticWarriorSlash",
+    "follow": {
+      "maps": 3,
+      "scope": "SYNTHETIC_EDIT_FOLLOW",
+      "bodyLimbsUnmodified": true,
+      "uvConvention": "CORNER_U_1_MINUS_V",
+      "fitStatus": "UNVALIDATED",
+      "hiddenLegacyOverlays": 9,
+      "kit": "ritual",
+      "scale": 1,
+      "geometry": "ORIGINAL_BLOCK_STYLE_ADAPTATION",
+      "parts": 6
+    },
+    "age": 0.2325,
+    "verticesInsideBody": 309
+  },
+  {
+    "minY": -0.1277327537536621,
+    "parts": [
+      {
+        "vertices": 448,
+        "faces": 864,
+        "name": "goblin_ritual_r6_Head",
+        "verticesInsideBody": 0
+      },
+      {
+        "vertices": 952,
+        "faces": 1836,
+        "name": "goblin_ritual_r6_Torso",
+        "verticesInsideBody": 42
+      },
+      {
+        "vertices": 392,
+        "faces": 756,
+        "name": "goblin_ritual_r6_Left_Arm",
+        "verticesInsideBody": 11
+      },
+      {
+        "vertices": 392,
+        "faces": 756,
+        "name": "goblin_ritual_r6_Right_Arm",
+        "verticesInsideBody": 240
+      },
+      {
+        "vertices": 504,
+        "faces": 972,
+        "name": "goblin_ritual_r6_Left_Leg",
+        "verticesInsideBody": 0
+      },
+      {
+        "vertices": 504,
+        "faces": 972,
+        "name": "goblin_ritual_r6_Right_Leg",
+        "verticesInsideBody": 14
+      }
+    ],
+    "label": "SyntheticWarriorSlash",
+    "follow": {
+      "maps": 3,
+      "scope": "SYNTHETIC_EDIT_FOLLOW",
+      "bodyLimbsUnmodified": true,
+      "uvConvention": "CORNER_U_1_MINUS_V",
+      "fitStatus": "UNVALIDATED",
+      "hiddenLegacyOverlays": 9,
+      "kit": "ritual",
+      "scale": 1,
+      "geometry": "ORIGINAL_BLOCK_STYLE_ADAPTATION",
+      "parts": 6
+    },
+    "age": 0.248,
+    "verticesInsideBody": 307
+  },
+  {
+    "minY": -0.11039292812347412,
+    "parts": [
+      {
+        "vertices": 448,
+        "faces": 864,
+        "name": "goblin_ritual_r6_Head",
+        "verticesInsideBody": 0
+      },
+      {
+        "vertices": 952,
+        "faces": 1836,
+        "name": "goblin_ritual_r6_Torso",
+        "verticesInsideBody": 42
+      },
+      {
+        "vertices": 392,
+        "faces": 756,
+        "name": "goblin_ritual_r6_Left_Arm",
+        "verticesInsideBody": 11
+      },
+      {
+        "vertices": 392,
+        "faces": 756,
+        "name": "goblin_ritual_r6_Right_Arm",
+        "verticesInsideBody": 240
+      },
+      {
+        "vertices": 504,
+        "faces": 972,
+        "name": "goblin_ritual_r6_Left_Leg",
+        "verticesInsideBody": 0
+      },
+      {
+        "vertices": 504,
+        "faces": 972,
+        "name": "goblin_ritual_r6_Right_Leg",
+        "verticesInsideBody": 14
+      }
+    ],
+    "label": "SyntheticWarriorSlash",
+    "follow": {
+      "maps": 3,
+      "scope": "SYNTHETIC_EDIT_FOLLOW",
+      "bodyLimbsUnmodified": true,
+      "uvConvention": "CORNER_U_1_MINUS_V",
+      "fitStatus": "UNVALIDATED",
+      "hiddenLegacyOverlays": 9,
+      "kit": "ritual",
+      "scale": 1,
+      "geometry": "ORIGINAL_BLOCK_STYLE_ADAPTATION",
+      "parts": 6
+    },
+    "age": 0.26349999999999996,
+    "verticesInsideBody": 307
+  },
+  {
+    "minY": -0.09537410736083984,
+    "parts": [
+      {
+        "vertices": 448,
+        "faces": 864,
+        "name": "goblin_ritual_r6_Head",
+        "verticesInsideBody": 0
+      },
+      {
+        "vertices": 952,
+        "faces": 1836,
+        "name": "goblin_ritual_r6_Torso",
+        "verticesInsideBody": 42
+      },
+      {
+        "vertices": 392,
+        "faces": 756,
+        "name": "goblin_ritual_r6_Left_Arm",
+        "verticesInsideBody": 11
+      },
+      {
+        "vertices": 392,
+        "faces": 756,
+        "name": "goblin_ritual_r6_Right_Arm",
+        "verticesInsideBody": 246
+      },
+      {
+        "vertices": 504,
+        "faces": 972,
+        "name": "goblin_ritual_r6_Left_Leg",
+        "verticesInsideBody": 0
+      },
+      {
+        "vertices": 504,
+        "faces": 972,
+        "name": "goblin_ritual_r6_Right_Leg",
+        "verticesInsideBody": 14
+      }
+    ],
+    "label": "SyntheticWarriorSlash",
+    "follow": {
+      "maps": 3,
+      "scope": "SYNTHETIC_EDIT_FOLLOW",
+      "bodyLimbsUnmodified": true,
+      "uvConvention": "CORNER_U_1_MINUS_V",
+      "fitStatus": "UNVALIDATED",
+      "hiddenLegacyOverlays": 9,
+      "kit": "ritual",
+      "scale": 1,
+      "geometry": "ORIGINAL_BLOCK_STYLE_ADAPTATION",
+      "parts": 6
+    },
+    "age": 0.279,
+    "verticesInsideBody": 313
+  },
+  {
+    "minY": -0.08418679237365723,
+    "parts": [
+      {
+        "vertices": 448,
+        "faces": 864,
+        "name": "goblin_ritual_r6_Head",
+        "verticesInsideBody": 0
+      },
+      {
+        "vertices": 952,
+        "faces": 1836,
+        "name": "goblin_ritual_r6_Torso",
+        "verticesInsideBody": 42
+      },
+      {
+        "vertices": 392,
+        "faces": 756,
+        "name": "goblin_ritual_r6_Left_Arm",
+        "verticesInsideBody": 11
+      },
+      {
+        "vertices": 392,
+        "faces": 756,
+        "name": "goblin_ritual_r6_Right_Arm",
+        "verticesInsideBody": 270
+      },
+      {
+        "vertices": 504,
+        "faces": 972,
+        "name": "goblin_ritual_r6_Left_Leg",
+        "verticesInsideBody": 0
+      },
+      {
+        "vertices": 504,
+        "faces": 972,
+        "name": "goblin_ritual_r6_Right_Leg",
+        "verticesInsideBody": 14
+      }
+    ],
+    "label": "SyntheticWarriorSlash",
+    "follow": {
+      "maps": 3,
+      "scope": "SYNTHETIC_EDIT_FOLLOW",
+      "bodyLimbsUnmodified": true,
+      "uvConvention": "CORNER_U_1_MINUS_V",
+      "fitStatus": "UNVALIDATED",
+      "hiddenLegacyOverlays": 9,
+      "kit": "ritual",
+      "scale": 1,
+      "geometry": "ORIGINAL_BLOCK_STYLE_ADAPTATION",
+      "parts": 6
+    },
+    "age": 0.2945,
+    "verticesInsideBody": 337
+  },
+  {
+    "minY": -0.07775449752807617,
+    "parts": [
+      {
+        "vertices": 448,
+        "faces": 864,
+        "name": "goblin_ritual_r6_Head",
+        "verticesInsideBody": 0
+      },
+      {
+        "vertices": 952,
+        "faces": 1836,
+        "name": "goblin_ritual_r6_Torso",
+        "verticesInsideBody": 42
+      },
+      {
+        "vertices": 392,
+        "faces": 756,
+        "name": "goblin_ritual_r6_Left_Arm",
+        "verticesInsideBody": 10
+      },
+      {
+        "vertices": 392,
+        "faces": 756,
+        "name": "goblin_ritual_r6_Right_Arm",
+        "verticesInsideBody": 280
+      },
+      {
+        "vertices": 504,
+        "faces": 972,
+        "name": "goblin_ritual_r6_Left_Leg",
+        "verticesInsideBody": 0
+      },
+      {
+        "vertices": 504,
+        "faces": 972,
+        "name": "goblin_ritual_r6_Right_Leg",
+        "verticesInsideBody": 14
+      }
+    ],
+    "label": "SyntheticWarriorSlash",
+    "follow": {
+      "maps": 3,
+      "scope": "SYNTHETIC_EDIT_FOLLOW",
+      "bodyLimbsUnmodified": true,
+      "uvConvention": "CORNER_U_1_MINUS_V",
+      "fitStatus": "UNVALIDATED",
+      "hiddenLegacyOverlays": 9,
+      "kit": "ritual",
+      "scale": 1,
+      "geometry": "ORIGINAL_BLOCK_STYLE_ADAPTATION",
+      "parts": 6
+    },
+    "age": 0.31,
+    "verticesInsideBody": 346
+  },
+  {
+    "minY": -0.07615697383880615,
+    "parts": [
+      {
+        "vertices": 448,
+        "faces": 864,
+        "name": "goblin_ritual_r6_Head",
+        "verticesInsideBody": 0
+      },
+      {
+        "vertices": 952,
+        "faces": 1836,
+        "name": "goblin_ritual_r6_Torso",
+        "verticesInsideBody": 42
+      },
+      {
+        "vertices": 392,
+        "faces": 756,
+        "name": "goblin_ritual_r6_Left_Arm",
+        "verticesInsideBody": 10
+      },
+      {
+        "vertices": 392,
+        "faces": 756,
+        "name": "goblin_ritual_r6_Right_Arm",
+        "verticesInsideBody": 276
+      },
+      {
+        "vertices": 504,
+        "faces": 972,
+        "name": "goblin_ritual_r6_Left_Leg",
+        "verticesInsideBody": 0
+      },
+      {
+        "vertices": 504,
+        "faces": 972,
+        "name": "goblin_ritual_r6_Right_Leg",
+        "verticesInsideBody": 14
+      }
+    ],
+    "label": "SyntheticWarriorSlash",
+    "follow": {
+      "maps": 3,
+      "scope": "SYNTHETIC_EDIT_FOLLOW",
+      "bodyLimbsUnmodified": true,
+      "uvConvention": "CORNER_U_1_MINUS_V",
+      "fitStatus": "UNVALIDATED",
+      "hiddenLegacyOverlays": 9,
+      "kit": "ritual",
+      "scale": 1,
+      "geometry": "ORIGINAL_BLOCK_STYLE_ADAPTATION",
+      "parts": 6
+    },
+    "age": 0.3255,
+    "verticesInsideBody": 342
+  },
+  {
+    "minY": -0.07867002487182617,
+    "parts": [
+      {
+        "vertices": 448,
+        "faces": 864,
+        "name": "goblin_ritual_r6_Head",
+        "verticesInsideBody": 0
+      },
+      {
+        "vertices": 952,
+        "faces": 1836,
+        "name": "goblin_ritual_r6_Torso",
+        "verticesInsideBody": 31
+      },
+      {
+        "vertices": 392,
+        "faces": 756,
+        "name": "goblin_ritual_r6_Left_Arm",
+        "verticesInsideBody": 10
+      },
+      {
+        "vertices": 392,
+        "faces": 756,
+        "name": "goblin_ritual_r6_Right_Arm",
+        "verticesInsideBody": 273
+      },
+      {
+        "vertices": 504,
+        "faces": 972,
+        "name": "goblin_ritual_r6_Left_Leg",
+        "verticesInsideBody": 0
+      },
+      {
+        "vertices": 504,
+        "faces": 972,
+        "name": "goblin_ritual_r6_Right_Leg",
+        "verticesInsideBody": 12
+      }
+    ],
+    "label": "SyntheticWarriorSlash",
+    "follow": {
+      "maps": 3,
+      "scope": "SYNTHETIC_EDIT_FOLLOW",
+      "bodyLimbsUnmodified": true,
+      "uvConvention": "CORNER_U_1_MINUS_V",
+      "fitStatus": "UNVALIDATED",
+      "hiddenLegacyOverlays": 9,
+      "kit": "ritual",
+      "scale": 1,
+      "geometry": "ORIGINAL_BLOCK_STYLE_ADAPTATION",
+      "parts": 6
+    },
+    "age": 0.341,
+    "verticesInsideBody": 326
+  },
+  {
+    "minY": -0.08391720056533813,
+    "parts": [
+      {
+        "vertices": 448,
+        "faces": 864,
+        "name": "goblin_ritual_r6_Head",
+        "verticesInsideBody": 0
+      },
+      {
+        "vertices": 952,
+        "faces": 1836,
+        "name": "goblin_ritual_r6_Torso",
+        "verticesInsideBody": 18
+      },
+      {
+        "vertices": 392,
+        "faces": 756,
+        "name": "goblin_ritual_r6_Left_Arm",
+        "verticesInsideBody": 9
+      },
+      {
+        "vertices": 392,
+        "faces": 756,
+        "name": "goblin_ritual_r6_Right_Arm",
+        "verticesInsideBody": 269
+      },
+      {
+        "vertices": 504,
+        "faces": 972,
+        "name": "goblin_ritual_r6_Left_Leg",
+        "verticesInsideBody": 0
+      },
+      {
+        "vertices": 504,
+        "faces": 972,
+        "name": "goblin_ritual_r6_Right_Leg",
+        "verticesInsideBody": 3
+      }
+    ],
+    "label": "SyntheticWarriorSlash",
+    "follow": {
+      "maps": 3,
+      "scope": "SYNTHETIC_EDIT_FOLLOW",
+      "bodyLimbsUnmodified": true,
+      "uvConvention": "CORNER_U_1_MINUS_V",
+      "fitStatus": "UNVALIDATED",
+      "hiddenLegacyOverlays": 9,
+      "kit": "ritual",
+      "scale": 1,
+      "geometry": "ORIGINAL_BLOCK_STYLE_ADAPTATION",
+      "parts": 6
+    },
+    "age": 0.3565,
+    "verticesInsideBody": 299
+  },
+  {
+    "minY": -0.09010517597198486,
+    "parts": [
+      {
+        "vertices": 448,
+        "faces": 864,
+        "name": "goblin_ritual_r6_Head",
+        "verticesInsideBody": 0
+      },
+      {
+        "vertices": 952,
+        "faces": 1836,
+        "name": "goblin_ritual_r6_Torso",
+        "verticesInsideBody": 13
+      },
+      {
+        "vertices": 392,
+        "faces": 756,
+        "name": "goblin_ritual_r6_Left_Arm",
+        "verticesInsideBody": 8
+      },
+      {
+        "vertices": 392,
+        "faces": 756,
+        "name": "goblin_ritual_r6_Right_Arm",
+        "verticesInsideBody": 266
+      },
+      {
+        "vertices": 504,
+        "faces": 972,
+        "name": "goblin_ritual_r6_Left_Leg",
+        "verticesInsideBody": 0
+      },
+      {
+        "vertices": 504,
+        "faces": 972,
+        "name": "goblin_ritual_r6_Right_Leg",
+        "verticesInsideBody": 0
+      }
+    ],
+    "label": "SyntheticWarriorSlash",
+    "follow": {
+      "maps": 3,
+      "scope": "SYNTHETIC_EDIT_FOLLOW",
+      "bodyLimbsUnmodified": true,
+      "uvConvention": "CORNER_U_1_MINUS_V",
+      "fitStatus": "UNVALIDATED",
+      "hiddenLegacyOverlays": 9,
+      "kit": "ritual",
+      "scale": 1,
+      "geometry": "ORIGINAL_BLOCK_STYLE_ADAPTATION",
+      "parts": 6
+    },
+    "age": 0.372,
+    "verticesInsideBody": 287
+  },
+  {
+    "minY": -0.09530818462371826,
+    "parts": [
+      {
+        "vertices": 448,
+        "faces": 864,
+        "name": "goblin_ritual_r6_Head",
+        "verticesInsideBody": 0
+      },
+      {
+        "vertices": 952,
+        "faces": 1836,
+        "name": "goblin_ritual_r6_Torso",
+        "verticesInsideBody": 2
+      },
+      {
+        "vertices": 392,
+        "faces": 756,
+        "name": "goblin_ritual_r6_Left_Arm",
+        "verticesInsideBody": 7
+      },
+      {
+        "vertices": 392,
+        "faces": 756,
+        "name": "goblin_ritual_r6_Right_Arm",
+        "verticesInsideBody": 266
+      },
+      {
+        "vertices": 504,
+        "faces": 972,
+        "name": "goblin_ritual_r6_Left_Leg",
+        "verticesInsideBody": 0
+      },
+      {
+        "vertices": 504,
+        "faces": 972,
+        "name": "goblin_ritual_r6_Right_Leg",
+        "verticesInsideBody": 0
+      }
+    ],
+    "label": "SyntheticWarriorSlash",
+    "follow": {
+      "maps": 3,
+      "scope": "SYNTHETIC_EDIT_FOLLOW",
+      "bodyLimbsUnmodified": true,
+      "uvConvention": "CORNER_U_1_MINUS_V",
+      "fitStatus": "UNVALIDATED",
+      "hiddenLegacyOverlays": 9,
+      "kit": "ritual",
+      "scale": 1,
+      "geometry": "ORIGINAL_BLOCK_STYLE_ADAPTATION",
+      "parts": 6
+    },
+    "age": 0.3875,
+    "verticesInsideBody": 275
+  },
+  {
+    "minY": -0.0954517126083374,
+    "parts": [
+      {
+        "vertices": 448,
+        "faces": 864,
+        "name": "goblin_ritual_r6_Head",
+        "verticesInsideBody": 0
+      },
+      {
+        "vertices": 952,
+        "faces": 1836,
+        "name": "goblin_ritual_r6_Torso",
+        "verticesInsideBody": 0
+      },
+      {
+        "vertices": 392,
+        "faces": 756,
+        "name": "goblin_ritual_r6_Left_Arm",
+        "verticesInsideBody": 6
+      },
+      {
+        "vertices": 392,
+        "faces": 756,
+        "name": "goblin_ritual_r6_Right_Arm",
+        "verticesInsideBody": 242
+      },
+      {
+        "vertices": 504,
+        "faces": 972,
+        "name": "goblin_ritual_r6_Left_Leg",
+        "verticesInsideBody": 0
+      },
+      {
+        "vertices": 504,
+        "faces": 972,
+        "name": "goblin_ritual_r6_Right_Leg",
+        "verticesInsideBody": 0
+      }
+    ],
+    "label": "SyntheticWarriorSlash",
+    "follow": {
+      "maps": 3,
+      "scope": "SYNTHETIC_EDIT_FOLLOW",
+      "bodyLimbsUnmodified": true,
+      "uvConvention": "CORNER_U_1_MINUS_V",
+      "fitStatus": "UNVALIDATED",
+      "hiddenLegacyOverlays": 9,
+      "kit": "ritual",
+      "scale": 1,
+      "geometry": "ORIGINAL_BLOCK_STYLE_ADAPTATION",
+      "parts": 6
+    },
+    "age": 0.403,
+    "verticesInsideBody": 248
+  },
+  {
+    "minY": -0.08351892232894897,
+    "parts": [
+      {
+        "vertices": 448,
+        "faces": 864,
+        "name": "goblin_ritual_r6_Head",
+        "verticesInsideBody": 0
+      },
+      {
+        "vertices": 952,
+        "faces": 1836,
+        "name": "goblin_ritual_r6_Torso",
+        "verticesInsideBody": 0
+      },
+      {
+        "vertices": 392,
+        "faces": 756,
+        "name": "goblin_ritual_r6_Left_Arm",
+        "verticesInsideBody": 6
+      },
+      {
+        "vertices": 392,
+        "faces": 756,
+        "name": "goblin_ritual_r6_Right_Arm",
+        "verticesInsideBody": 201
+      },
+      {
+        "vertices": 504,
+        "faces": 972,
+        "name": "goblin_ritual_r6_Left_Leg",
+        "verticesInsideBody": 0
+      },
+      {
+        "vertices": 504,
+        "faces": 972,
+        "name": "goblin_ritual_r6_Right_Leg",
+        "verticesInsideBody": 0
+      }
+    ],
+    "label": "SyntheticWarriorSlash",
+    "follow": {
+      "maps": 3,
+      "scope": "SYNTHETIC_EDIT_FOLLOW",
+      "bodyLimbsUnmodified": true,
+      "uvConvention": "CORNER_U_1_MINUS_V",
+      "fitStatus": "UNVALIDATED",
+      "hiddenLegacyOverlays": 9,
+      "kit": "ritual",
+      "scale": 1,
+      "geometry": "ORIGINAL_BLOCK_STYLE_ADAPTATION",
+      "parts": 6
+    },
+    "age": 0.4185,
+    "verticesInsideBody": 207
+  },
+  {
+    "minY": -0.06999558210372925,
+    "parts": [
+      {
+        "vertices": 448,
+        "faces": 864,
+        "name": "goblin_ritual_r6_Head",
+        "verticesInsideBody": 0
+      },
+      {
+        "vertices": 952,
+        "faces": 1836,
+        "name": "goblin_ritual_r6_Torso",
+        "verticesInsideBody": 0
+      },
+      {
+        "vertices": 392,
+        "faces": 756,
+        "name": "goblin_ritual_r6_Left_Arm",
+        "verticesInsideBody": 6
+      },
+      {
+        "vertices": 392,
+        "faces": 756,
+        "name": "goblin_ritual_r6_Right_Arm",
+        "verticesInsideBody": 174
+      },
+      {
+        "vertices": 504,
+        "faces": 972,
+        "name": "goblin_ritual_r6_Left_Leg",
+        "verticesInsideBody": 0
+      },
+      {
+        "vertices": 504,
+        "faces": 972,
+        "name": "goblin_ritual_r6_Right_Leg",
+        "verticesInsideBody": 0
+      }
+    ],
+    "label": "SyntheticWarriorSlash",
+    "follow": {
+      "maps": 3,
+      "scope": "SYNTHETIC_EDIT_FOLLOW",
+      "bodyLimbsUnmodified": true,
+      "uvConvention": "CORNER_U_1_MINUS_V",
+      "fitStatus": "UNVALIDATED",
+      "hiddenLegacyOverlays": 9,
+      "kit": "ritual",
+      "scale": 1,
+      "geometry": "ORIGINAL_BLOCK_STYLE_ADAPTATION",
+      "parts": 6
+    },
+    "age": 0.434,
+    "verticesInsideBody": 180
+  },
+  {
+    "minY": -0.055067360401153564,
+    "parts": [
+      {
+        "vertices": 448,
+        "faces": 864,
+        "name": "goblin_ritual_r6_Head",
+        "verticesInsideBody": 0
+      },
+      {
+        "vertices": 952,
+        "faces": 1836,
+        "name": "goblin_ritual_r6_Torso",
+        "verticesInsideBody": 0
+      },
+      {
+        "vertices": 392,
+        "faces": 756,
+        "name": "goblin_ritual_r6_Left_Arm",
+        "verticesInsideBody": 5
+      },
+      {
+        "vertices": 392,
+        "faces": 756,
+        "name": "goblin_ritual_r6_Right_Arm",
+        "verticesInsideBody": 162
+      },
+      {
+        "vertices": 504,
+        "faces": 972,
+        "name": "goblin_ritual_r6_Left_Leg",
+        "verticesInsideBody": 0
+      },
+      {
+        "vertices": 504,
+        "faces": 972,
+        "name": "goblin_ritual_r6_Right_Leg",
+        "verticesInsideBody": 0
+      }
+    ],
+    "label": "SyntheticWarriorSlash",
+    "follow": {
+      "maps": 3,
+      "scope": "SYNTHETIC_EDIT_FOLLOW",
+      "bodyLimbsUnmodified": true,
+      "uvConvention": "CORNER_U_1_MINUS_V",
+      "fitStatus": "UNVALIDATED",
+      "hiddenLegacyOverlays": 9,
+      "kit": "ritual",
+      "scale": 1,
+      "geometry": "ORIGINAL_BLOCK_STYLE_ADAPTATION",
+      "parts": 6
+    },
+    "age": 0.4495,
+    "verticesInsideBody": 167
+  },
+  {
+    "minY": -0.039008378982543945,
+    "parts": [
+      {
+        "vertices": 448,
+        "faces": 864,
+        "name": "goblin_ritual_r6_Head",
+        "verticesInsideBody": 0
+      },
+      {
+        "vertices": 952,
+        "faces": 1836,
+        "name": "goblin_ritual_r6_Torso",
+        "verticesInsideBody": 0
+      },
+      {
+        "vertices": 392,
+        "faces": 756,
+        "name": "goblin_ritual_r6_Left_Arm",
+        "verticesInsideBody": 4
+      },
+      {
+        "vertices": 392,
+        "faces": 756,
+        "name": "goblin_ritual_r6_Right_Arm",
+        "verticesInsideBody": 135
+      },
+      {
+        "vertices": 504,
+        "faces": 972,
+        "name": "goblin_ritual_r6_Left_Leg",
+        "verticesInsideBody": 0
+      },
+      {
+        "vertices": 504,
+        "faces": 972,
+        "name": "goblin_ritual_r6_Right_Leg",
+        "verticesInsideBody": 0
+      }
+    ],
+    "label": "SyntheticWarriorSlash",
+    "follow": {
+      "maps": 3,
+      "scope": "SYNTHETIC_EDIT_FOLLOW",
+      "bodyLimbsUnmodified": true,
+      "uvConvention": "CORNER_U_1_MINUS_V",
+      "fitStatus": "UNVALIDATED",
+      "hiddenLegacyOverlays": 9,
+      "kit": "ritual",
+      "scale": 1,
+      "geometry": "ORIGINAL_BLOCK_STYLE_ADAPTATION",
+      "parts": 6
+    },
+    "age": 0.465,
+    "verticesInsideBody": 139
+  },
+  {
+    "minY": -0.0221707820892334,
+    "parts": [
+      {
+        "vertices": 448,
+        "faces": 864,
+        "name": "goblin_ritual_r6_Head",
+        "verticesInsideBody": 0
+      },
+      {
+        "vertices": 952,
+        "faces": 1836,
+        "name": "goblin_ritual_r6_Torso",
+        "verticesInsideBody": 0
+      },
+      {
+        "vertices": 392,
+        "faces": 756,
+        "name": "goblin_ritual_r6_Left_Arm",
+        "verticesInsideBody": 2
+      },
+      {
+        "vertices": 392,
+        "faces": 756,
+        "name": "goblin_ritual_r6_Right_Arm",
+        "verticesInsideBody": 112
+      },
+      {
+        "vertices": 504,
+        "faces": 972,
+        "name": "goblin_ritual_r6_Left_Leg",
+        "verticesInsideBody": 0
+      },
+      {
+        "vertices": 504,
+        "faces": 972,
+        "name": "goblin_ritual_r6_Right_Leg",
+        "verticesInsideBody": 0
+      }
+    ],
+    "label": "SyntheticWarriorSlash",
+    "follow": {
+      "maps": 3,
+      "scope": "SYNTHETIC_EDIT_FOLLOW",
+      "bodyLimbsUnmodified": true,
+      "uvConvention": "CORNER_U_1_MINUS_V",
+      "fitStatus": "UNVALIDATED",
+      "hiddenLegacyOverlays": 9,
+      "kit": "ritual",
+      "scale": 1,
+      "geometry": "ORIGINAL_BLOCK_STYLE_ADAPTATION",
+      "parts": 6
+    },
+    "age": 0.4805,
+    "verticesInsideBody": 114
+  },
+  {
+    "minY": -0.004977107048034668,
+    "parts": [
+      {
+        "vertices": 448,
+        "faces": 864,
+        "name": "goblin_ritual_r6_Head",
+        "verticesInsideBody": 0
+      },
+      {
+        "vertices": 952,
+        "faces": 1836,
+        "name": "goblin_ritual_r6_Torso",
+        "verticesInsideBody": 0
+      },
+      {
+        "vertices": 392,
+        "faces": 756,
+        "name": "goblin_ritual_r6_Left_Arm",
+        "verticesInsideBody": 2
+      },
+      {
+        "vertices": 392,
+        "faces": 756,
+        "name": "goblin_ritual_r6_Right_Arm",
+        "verticesInsideBody": 109
+      },
+      {
+        "vertices": 504,
+        "faces": 972,
+        "name": "goblin_ritual_r6_Left_Leg",
+        "verticesInsideBody": 0
+      },
+      {
+        "vertices": 504,
+        "faces": 972,
+        "name": "goblin_ritual_r6_Right_Leg",
+        "verticesInsideBody": 0
+      }
+    ],
+    "label": "SyntheticWarriorSlash",
+    "follow": {
+      "maps": 3,
+      "scope": "SYNTHETIC_EDIT_FOLLOW",
+      "bodyLimbsUnmodified": true,
+      "uvConvention": "CORNER_U_1_MINUS_V",
+      "fitStatus": "UNVALIDATED",
+      "hiddenLegacyOverlays": 9,
+      "kit": "ritual",
+      "scale": 1,
+      "geometry": "ORIGINAL_BLOCK_STYLE_ADAPTATION",
+      "parts": 6
+    },
+    "age": 0.496,
+    "verticesInsideBody": 111
+  },
+  {
+    "minY": 0.012099862098693848,
+    "parts": [
+      {
+        "vertices": 448,
+        "faces": 864,
+        "name": "goblin_ritual_r6_Head",
+        "verticesInsideBody": 0
+      },
+      {
+        "vertices": 952,
+        "faces": 1836,
+        "name": "goblin_ritual_r6_Torso",
+        "verticesInsideBody": 0
+      },
+      {
+        "vertices": 392,
+        "faces": 756,
+        "name": "goblin_ritual_r6_Left_Arm",
+        "verticesInsideBody": 1
+      },
+      {
+        "vertices": 392,
+        "faces": 756,
+        "name": "goblin_ritual_r6_Right_Arm",
+        "verticesInsideBody": 86
+      },
+      {
+        "vertices": 504,
+        "faces": 972,
+        "name": "goblin_ritual_r6_Left_Leg",
+        "verticesInsideBody": 0
+      },
+      {
+        "vertices": 504,
+        "faces": 972,
+        "name": "goblin_ritual_r6_Right_Leg",
+        "verticesInsideBody": 0
+      }
+    ],
+    "label": "SyntheticWarriorSlash",
+    "follow": {
+      "maps": 3,
+      "scope": "SYNTHETIC_EDIT_FOLLOW",
+      "bodyLimbsUnmodified": true,
+      "uvConvention": "CORNER_U_1_MINUS_V",
+      "fitStatus": "UNVALIDATED",
+      "hiddenLegacyOverlays": 9,
+      "kit": "ritual",
+      "scale": 1,
+      "geometry": "ORIGINAL_BLOCK_STYLE_ADAPTATION",
+      "parts": 6
+    },
+    "age": 0.5115000000000001,
+    "verticesInsideBody": 87
+  },
+  {
+    "minY": 0.02855020761489868,
+    "parts": [
+      {
+        "vertices": 448,
+        "faces": 864,
+        "name": "goblin_ritual_r6_Head",
+        "verticesInsideBody": 0
+      },
+      {
+        "vertices": 952,
+        "faces": 1836,
+        "name": "goblin_ritual_r6_Torso",
+        "verticesInsideBody": 0
+      },
+      {
+        "vertices": 392,
+        "faces": 756,
+        "name": "goblin_ritual_r6_Left_Arm",
+        "verticesInsideBody": 0
+      },
+      {
+        "vertices": 392,
+        "faces": 756,
+        "name": "goblin_ritual_r6_Right_Arm",
+        "verticesInsideBody": 66
+      },
+      {
+        "vertices": 504,
+        "faces": 972,
+        "name": "goblin_ritual_r6_Left_Leg",
+        "verticesInsideBody": 0
+      },
+      {
+        "vertices": 504,
+        "faces": 972,
+        "name": "goblin_ritual_r6_Right_Leg",
+        "verticesInsideBody": 0
+      }
+    ],
+    "label": "SyntheticWarriorSlash",
+    "follow": {
+      "maps": 3,
+      "scope": "SYNTHETIC_EDIT_FOLLOW",
+      "bodyLimbsUnmodified": true,
+      "uvConvention": "CORNER_U_1_MINUS_V",
+      "fitStatus": "UNVALIDATED",
+      "hiddenLegacyOverlays": 9,
+      "kit": "ritual",
+      "scale": 1,
+      "geometry": "ORIGINAL_BLOCK_STYLE_ADAPTATION",
+      "parts": 6
+    },
+    "age": 0.5269999999999999,
+    "verticesInsideBody": 66
+  },
+  {
+    "minY": 0.04384565353393555,
+    "parts": [
+      {
+        "vertices": 448,
+        "faces": 864,
+        "name": "goblin_ritual_r6_Head",
+        "verticesInsideBody": 0
+      },
+      {
+        "vertices": 952,
+        "faces": 1836,
+        "name": "goblin_ritual_r6_Torso",
+        "verticesInsideBody": 0
+      },
+      {
+        "vertices": 392,
+        "faces": 756,
+        "name": "goblin_ritual_r6_Left_Arm",
+        "verticesInsideBody": 0
+      },
+      {
+        "vertices": 392,
+        "faces": 756,
+        "name": "goblin_ritual_r6_Right_Arm",
+        "verticesInsideBody": 42
+      },
+      {
+        "vertices": 504,
+        "faces": 972,
+        "name": "goblin_ritual_r6_Left_Leg",
+        "verticesInsideBody": 0
+      },
+      {
+        "vertices": 504,
+        "faces": 972,
+        "name": "goblin_ritual_r6_Right_Leg",
+        "verticesInsideBody": 0
+      }
+    ],
+    "label": "SyntheticWarriorSlash",
+    "follow": {
+      "maps": 3,
+      "scope": "SYNTHETIC_EDIT_FOLLOW",
+      "bodyLimbsUnmodified": true,
+      "uvConvention": "CORNER_U_1_MINUS_V",
+      "fitStatus": "UNVALIDATED",
+      "hiddenLegacyOverlays": 9,
+      "kit": "ritual",
+      "scale": 1,
+      "geometry": "ORIGINAL_BLOCK_STYLE_ADAPTATION",
+      "parts": 6
+    },
+    "age": 0.5425,
+    "verticesInsideBody": 42
+  },
+  {
+    "minY": 0.05745375156402588,
+    "parts": [
+      {
+        "vertices": 448,
+        "faces": 864,
+        "name": "goblin_ritual_r6_Head",
+        "verticesInsideBody": 0
+      },
+      {
+        "vertices": 952,
+        "faces": 1836,
+        "name": "goblin_ritual_r6_Torso",
+        "verticesInsideBody": 0
+      },
+      {
+        "vertices": 392,
+        "faces": 756,
+        "name": "goblin_ritual_r6_Left_Arm",
+        "verticesInsideBody": 0
+      },
+      {
+        "vertices": 392,
+        "faces": 756,
+        "name": "goblin_ritual_r6_Right_Arm",
+        "verticesInsideBody": 13
+      },
+      {
+        "vertices": 504,
+        "faces": 972,
+        "name": "goblin_ritual_r6_Left_Leg",
+        "verticesInsideBody": 0
+      },
+      {
+        "vertices": 504,
+        "faces": 972,
+        "name": "goblin_ritual_r6_Right_Leg",
+        "verticesInsideBody": 0
+      }
+    ],
+    "label": "SyntheticWarriorSlash",
+    "follow": {
+      "maps": 3,
+      "scope": "SYNTHETIC_EDIT_FOLLOW",
+      "bodyLimbsUnmodified": true,
+      "uvConvention": "CORNER_U_1_MINUS_V",
+      "fitStatus": "UNVALIDATED",
+      "hiddenLegacyOverlays": 9,
+      "kit": "ritual",
+      "scale": 1,
+      "geometry": "ORIGINAL_BLOCK_STYLE_ADAPTATION",
+      "parts": 6
+    },
+    "age": 0.558,
+    "verticesInsideBody": 13
+  },
+  {
+    "minY": 0.06885451078414917,
+    "parts": [
+      {
+        "vertices": 448,
+        "faces": 864,
+        "name": "goblin_ritual_r6_Head",
+        "verticesInsideBody": 0
+      },
+      {
+        "vertices": 952,
+        "faces": 1836,
+        "name": "goblin_ritual_r6_Torso",
+        "verticesInsideBody": 0
+      },
+      {
+        "vertices": 392,
+        "faces": 756,
+        "name": "goblin_ritual_r6_Left_Arm",
+        "verticesInsideBody": 0
+      },
+      {
+        "vertices": 392,
+        "faces": 756,
+        "name": "goblin_ritual_r6_Right_Arm",
+        "verticesInsideBody": 0
+      },
+      {
+        "vertices": 504,
+        "faces": 972,
+        "name": "goblin_ritual_r6_Left_Leg",
+        "verticesInsideBody": 0
+      },
+      {
+        "vertices": 504,
+        "faces": 972,
+        "name": "goblin_ritual_r6_Right_Leg",
+        "verticesInsideBody": 0
+      }
+    ],
+    "label": "SyntheticWarriorSlash",
+    "follow": {
+      "maps": 3,
+      "scope": "SYNTHETIC_EDIT_FOLLOW",
+      "bodyLimbsUnmodified": true,
+      "uvConvention": "CORNER_U_1_MINUS_V",
+      "fitStatus": "UNVALIDATED",
+      "hiddenLegacyOverlays": 9,
+      "kit": "ritual",
+      "scale": 1,
+      "geometry": "ORIGINAL_BLOCK_STYLE_ADAPTATION",
+      "parts": 6
+    },
+    "age": 0.5735,
+    "verticesInsideBody": 0
+  },
+  {
+    "minY": 0.07754993438720703,
+    "parts": [
+      {
+        "vertices": 448,
+        "faces": 864,
+        "name": "goblin_ritual_r6_Head",
+        "verticesInsideBody": 0
+      },
+      {
+        "vertices": 952,
+        "faces": 1836,
+        "name": "goblin_ritual_r6_Torso",
+        "verticesInsideBody": 0
+      },
+      {
+        "vertices": 392,
+        "faces": 756,
+        "name": "goblin_ritual_r6_Left_Arm",
+        "verticesInsideBody": 0
+      },
+      {
+        "vertices": 392,
+        "faces": 756,
+        "name": "goblin_ritual_r6_Right_Arm",
+        "verticesInsideBody": 0
+      },
+      {
+        "vertices": 504,
+        "faces": 972,
+        "name": "goblin_ritual_r6_Left_Leg",
+        "verticesInsideBody": 0
+      },
+      {
+        "vertices": 504,
+        "faces": 972,
+        "name": "goblin_ritual_r6_Right_Leg",
+        "verticesInsideBody": 0
+      }
+    ],
+    "label": "SyntheticWarriorSlash",
+    "follow": {
+      "maps": 3,
+      "scope": "SYNTHETIC_EDIT_FOLLOW",
+      "bodyLimbsUnmodified": true,
+      "uvConvention": "CORNER_U_1_MINUS_V",
+      "fitStatus": "UNVALIDATED",
+      "hiddenLegacyOverlays": 9,
+      "kit": "ritual",
+      "scale": 1,
+      "geometry": "ORIGINAL_BLOCK_STYLE_ADAPTATION",
+      "parts": 6
+    },
+    "age": 0.589,
+    "verticesInsideBody": 0
+  },
+  {
+    "minY": 0.08307301998138428,
+    "parts": [
+      {
+        "vertices": 448,
+        "faces": 864,
+        "name": "goblin_ritual_r6_Head",
+        "verticesInsideBody": 0
+      },
+      {
+        "vertices": 952,
+        "faces": 1836,
+        "name": "goblin_ritual_r6_Torso",
+        "verticesInsideBody": 0
+      },
+      {
+        "vertices": 392,
+        "faces": 756,
+        "name": "goblin_ritual_r6_Left_Arm",
+        "verticesInsideBody": 0
+      },
+      {
+        "vertices": 392,
+        "faces": 756,
+        "name": "goblin_ritual_r6_Right_Arm",
+        "verticesInsideBody": 0
+      },
+      {
+        "vertices": 504,
+        "faces": 972,
+        "name": "goblin_ritual_r6_Left_Leg",
+        "verticesInsideBody": 0
+      },
+      {
+        "vertices": 504,
+        "faces": 972,
+        "name": "goblin_ritual_r6_Right_Leg",
+        "verticesInsideBody": 0
+      }
+    ],
+    "label": "SyntheticWarriorSlash",
+    "follow": {
+      "maps": 3,
+      "scope": "SYNTHETIC_EDIT_FOLLOW",
+      "bodyLimbsUnmodified": true,
+      "uvConvention": "CORNER_U_1_MINUS_V",
+      "fitStatus": "UNVALIDATED",
+      "hiddenLegacyOverlays": 9,
+      "kit": "ritual",
+      "scale": 1,
+      "geometry": "ORIGINAL_BLOCK_STYLE_ADAPTATION",
+      "parts": 6
+    },
+    "age": 0.6045,
+    "verticesInsideBody": 0
+  },
+  {
+    "minY": 0.08500003814697266,
+    "parts": [
+      {
+        "vertices": 448,
+        "faces": 864,
+        "name": "goblin_ritual_r6_Head",
+        "verticesInsideBody": 0
+      },
+      {
+        "vertices": 952,
+        "faces": 1836,
+        "name": "goblin_ritual_r6_Torso",
+        "verticesInsideBody": 0
+      },
+      {
+        "vertices": 392,
+        "faces": 756,
+        "name": "goblin_ritual_r6_Left_Arm",
+        "verticesInsideBody": 0
+      },
+      {
+        "vertices": 392,
+        "faces": 756,
+        "name": "goblin_ritual_r6_Right_Arm",
+        "verticesInsideBody": 0
+      },
+      {
+        "vertices": 504,
+        "faces": 972,
+        "name": "goblin_ritual_r6_Left_Leg",
+        "verticesInsideBody": 0
+      },
+      {
+        "vertices": 504,
+        "faces": 972,
+        "name": "goblin_ritual_r6_Right_Leg",
+        "verticesInsideBody": 0
+      }
+    ],
+    "label": "SyntheticWarriorSlash",
+    "follow": {
+      "maps": 3,
+      "scope": "SYNTHETIC_EDIT_FOLLOW",
+      "bodyLimbsUnmodified": true,
+      "uvConvention": "CORNER_U_1_MINUS_V",
+      "fitStatus": "UNVALIDATED",
+      "hiddenLegacyOverlays": 9,
+      "kit": "ritual",
+      "scale": 1,
+      "geometry": "ORIGINAL_BLOCK_STYLE_ADAPTATION",
+      "parts": 6
+    },
+    "age": 0.62,
+    "verticesInsideBody": 0
+  },
+  {
+    "minY": -0.13711881637573242,
+    "parts": [
+      {
+        "vertices": 448,
+        "faces": 864,
+        "name": "goblin_ritual_r6_Head",
+        "verticesInsideBody": 0
+      },
+      {
+        "vertices": 952,
+        "faces": 1836,
+        "name": "goblin_ritual_r6_Torso",
+        "verticesInsideBody": 42
+      },
+      {
+        "vertices": 392,
+        "faces": 756,
+        "name": "goblin_ritual_r6_Left_Arm",
+        "verticesInsideBody": 11
+      },
+      {
+        "vertices": 392,
+        "faces": 756,
+        "name": "goblin_ritual_r6_Right_Arm",
+        "verticesInsideBody": 240
+      },
+      {
+        "vertices": 504,
+        "faces": 972,
+        "name": "goblin_ritual_r6_Left_Leg",
+        "verticesInsideBody": 0
+      },
+      {
+        "vertices": 504,
+        "faces": 972,
+        "name": "goblin_ritual_r6_Right_Leg",
+        "verticesInsideBody": 14
+      }
+    ],
+    "label": "ExactWarriorContactTime",
+    "follow": {
+      "maps": 3,
+      "scope": "SYNTHETIC_EDIT_FOLLOW",
+      "bodyLimbsUnmodified": true,
+      "uvConvention": "CORNER_U_1_MINUS_V",
+      "fitStatus": "UNVALIDATED",
+      "hiddenLegacyOverlays": 9,
+      "kit": "ritual",
+      "scale": 1,
+      "geometry": "ORIGINAL_BLOCK_STYLE_ADAPTATION",
+      "parts": 6
+    },
+    "age": 0.24,
+    "verticesInsideBody": 307
+  },
+  {
+    "minY": 0.08500003814697266,
+    "parts": [
+      {
+        "vertices": 448,
+        "faces": 864,
+        "name": "goblin_ritual_r6_Head",
+        "verticesInsideBody": 0
+      },
+      {
+        "vertices": 952,
+        "faces": 1836,
+        "name": "goblin_ritual_r6_Torso",
+        "verticesInsideBody": 0
+      },
+      {
+        "vertices": 392,
+        "faces": 756,
+        "name": "goblin_ritual_r6_Left_Arm",
+        "verticesInsideBody": 0
+      },
+      {
+        "vertices": 392,
+        "faces": 756,
+        "name": "goblin_ritual_r6_Right_Arm",
+        "verticesInsideBody": 0
+      },
+      {
+        "vertices": 504,
+        "faces": 972,
+        "name": "goblin_ritual_r6_Left_Leg",
+        "verticesInsideBody": 0
+      },
+      {
+        "vertices": 504,
+        "faces": 972,
+        "name": "goblin_ritual_r6_Right_Leg",
+        "verticesInsideBody": 0
+      }
+    ],
+    "forwardDegrees": 65,
+    "label": "SyntheticForwardReach65",
+    "follow": {
+      "maps": 3,
+      "scope": "SYNTHETIC_EDIT_FOLLOW",
+      "bodyLimbsUnmodified": true,
+      "uvConvention": "CORNER_U_1_MINUS_V",
+      "fitStatus": "UNVALIDATED",
+      "hiddenLegacyOverlays": 9,
+      "kit": "ritual",
+      "scale": 1,
+      "geometry": "ORIGINAL_BLOCK_STYLE_ADAPTATION",
+      "parts": 6
+    },
+    "verticesInsideBody": 0
+  },
+  {
+    "minY": 0.08500003814697266,
+    "parts": [
+      {
+        "vertices": 448,
+        "faces": 864,
+        "name": "goblin_ritual_r6_Head",
+        "verticesInsideBody": 0
+      },
+      {
+        "vertices": 952,
+        "faces": 1836,
+        "name": "goblin_ritual_r6_Torso",
+        "verticesInsideBody": 0
+      },
+      {
+        "vertices": 392,
+        "faces": 756,
+        "name": "goblin_ritual_r6_Left_Arm",
+        "verticesInsideBody": 0
+      },
+      {
+        "vertices": 392,
+        "faces": 756,
+        "name": "goblin_ritual_r6_Right_Arm",
+        "verticesInsideBody": 0
+      },
+      {
+        "vertices": 504,
+        "faces": 972,
+        "name": "goblin_ritual_r6_Left_Leg",
+        "verticesInsideBody": 0
+      },
+      {
+        "vertices": 504,
+        "faces": 972,
+        "name": "goblin_ritual_r6_Right_Leg",
+        "verticesInsideBody": 0
+      }
+    ],
+    "forwardDegrees": 100,
+    "label": "SyntheticForwardReach100",
+    "follow": {
+      "maps": 3,
+      "scope": "SYNTHETIC_EDIT_FOLLOW",
+      "bodyLimbsUnmodified": true,
+      "uvConvention": "CORNER_U_1_MINUS_V",
+      "fitStatus": "UNVALIDATED",
+      "hiddenLegacyOverlays": 9,
+      "kit": "ritual",
+      "scale": 1,
+      "geometry": "ORIGINAL_BLOCK_STYLE_ADAPTATION",
+      "parts": 6
+    },
+    "verticesInsideBody": 0
+  }
+]

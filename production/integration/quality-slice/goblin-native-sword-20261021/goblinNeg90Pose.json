@@ -1,0 +1,9 @@
+{
+  "content": [
+    {
+      "type": "text",
+      "text": "{\"gripOrigin\":[1.399999976158142,2.049999952316284,0],\"lowestVertexY\":1.9110969305038453,\"gaitSource\":\"HeroAnimator_EQUIPPED_WALK_FORMULA\",\"uvConvention\":\"CORNER_U_1_MINUS_V\",\"triangles\":1666,\"worldVertexBounds\":{\"min\":[0.9975477457046509,1.9110969305038453,-3.345155954360962],\"max\":[1.7769676446914673,2.1869590282440187,0.6548440456390381]},\"sourceScale\":1,\"sourceBounds\":{\"min\":[-0.4024522304534912,-0.6548440456390381,-0.13890311121940614],\"center\":[-0.012742280960083008,1.345155954360962,-0.0009720847010612488],\"max\":[0.3769676685333252,3.345155954360962,0.13695894181728364],\"pivot\":[0,0,0],\"size\":[0.7794198989868164,4,0.27586203813552859]},\"actionSource\":\"ActionPose:Warrior:Slash\",\"scope\":\"SYNTHETIC_EDIT_POSE\",\"gripDistanceMeaning\":\"POINT_TO_SOLID_OBB_NOT_SURFACE_CONTACT\",\"gripToHandCenterGap\":0,\"vertices\":983,\"fit\":\"rx_neg90\",\"gripToHandSolidGap\":0,\"fitStatus\":\"UNVALIDATED\",\"handOrigin\":[1.399999976158142,2.049999952316284,0],\"detailWelds\":13,\"swordCenter\":[1.387257695198059,2.049027919769287,-1.345155954360962],\"motors\":6}"
+    }
+  ],
+  "isError": false
+}

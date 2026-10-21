@@ -1,0 +1,88 @@
+{
+  "mesh": {
+    "sha256": "9c606cc4d964583ab7f61dc2b5b49947c5ffe007fb04bece7085c90a4687fd69",
+    "bytes": 670940
+  },
+  "images": [
+    {
+      "source": "first-batch_material_0.png",
+      "sourceSha256": "c7b35321680b84c23cfa65374db2f6518857a2d0b17fa62fe46ed4f210cd6be1",
+      "sourceSize": [
+        2048,
+        2048
+      ],
+      "derivative": "first-batch_ColorMap.png",
+      "derivativeSha256": "53505b67698c0b7f8d1be5d2b3590816644fec0e7991611140149e49b3f574ae",
+      "rgbaSha256": "89e1798d90c46dc9ab2e0ea9cd3fddd15b7376eca0d33f0bec39ba25ef402312",
+      "role": "ColorMap",
+      "size": [
+        1024,
+        1024
+      ],
+      "channels": "RGBA8",
+      "rowOrder": "top-to-bottom",
+      "filter": "Pillow LANCZOS on stored channel samples; Color is sRGB-encoded samples, not linear-light filtering",
+      "normalPostprocess": null
+    },
+    {
+      "source": "first-batch_material_1.png",
+      "sourceSha256": "bf6cc814fb790c2365878b7b77f9545bd231aaf9c612a3fbdebda82db35fbdc0",
+      "sourceSize": [
+        2048,
+        2048
+      ],
+      "derivative": "first-batch_NormalMap.png",
+      "derivativeSha256": "f52a8dd2bd944301150294a61dfdc01c1bd55ccedbb96b05191ab5220b522878",
+      "rgbaSha256": "a32b0b9bd693491fcdb0fa7fca9ecb06c4fa9cb6b17e6ecc32f41f62048012ef",
+      "role": "NormalMap",
+      "size": [
+        1024,
+        1024
+      ],
+      "channels": "RGBA8",
+      "rowOrder": "top-to-bottom",
+      "filter": "Pillow LANCZOS on stored channel samples; Color is sRGB-encoded samples, not linear-light filtering",
+      "normalPostprocess": "decode [-1,1], normalize per pixel, encode rounded UNORM8"
+    },
+    {
+      "source": "first-batch_roughness.png",
+      "sourceSha256": "96715c2d07172b4558bf1c9d64d3711c8bd2cdb42b65d2ff4eacec0a806fcfea",
+      "sourceSize": [
+        2048,
+        2048
+      ],
+      "derivative": "first-batch_RoughnessMap.png",
+      "derivativeSha256": "5c44852f6602f82a7c9e229d915b526e29cf90b05d57ac17e754dadd31f3beb9",
+      "rgbaSha256": "d2ebd7954f36eacda282beae2948f2cc3361879b71d582bb72caffce7b516c02",
+      "role": "RoughnessMap",
+      "size": [
+        1024,
+        1024
+      ],
+      "channels": "RGBA8",
+      "rowOrder": "top-to-bottom",
+      "filter": "Pillow LANCZOS on stored channel samples; Color is sRGB-encoded samples, not linear-light filtering",
+      "normalPostprocess": null
+    },
+    {
+      "source": "first-batch_metalness.png",
+      "sourceSha256": "2e279b1485dfc7ad8caf6b8ace5710e7c006798b08d24349c7065025f1881a3e",
+      "sourceSize": [
+        2048,
+        2048
+      ],
+      "derivative": "first-batch_MetalnessMap.png",
+      "derivativeSha256": "0bfa35d6a44e52a9bceab726c79663b9b2506a47f4b21e302be430a8a0662764",
+      "rgbaSha256": "190cf949bf34598478688f51cd8d5ae99c419a8a5b9110bf3158989c1a276417",
+      "role": "MetalnessMap",
+      "size": [
+        1024,
+        1024
+      ],
+      "channels": "RGBA8",
+      "rowOrder": "top-to-bottom",
+      "filter": "Pillow LANCZOS on stored channel samples; Color is sRGB-encoded samples, not linear-light filtering",
+      "normalPostprocess": null
+    }
+  ]
+}

@@ -1,0 +1,9 @@
+{
+  "content": [
+    {
+      "type": "text",
+      "text": "{\"sources\":{\"ServerScriptService.Server.Services.HeroRig\":{\"bytes\":7864,\"sha256\":\"6863dfc6279df9e5f05e10c33f03e43c9b12dc48ea462cb6ef6bbc9b16449cc0\"},\"ReplicatedStorage.Shared.Presentation.ActionTimeline\":{\"bytes\":2664,\"sha256\":\"f14291c081c8b1650310f459daa661e36c5d000ee65cb9b423d2894e3f451131\"},\"StarterPlayer.StarterPlayerScripts.Client.Controllers.ActionPose\":{\"bytes\":2413,\"sha256\":\"65381f67b0d36ae4c91230743526bd299ed820749e81a60449ad4c30148e498a\"}},\"gameId\":0,\"workspaceChildren\":2,\"placeId\":0,\"httpEnabled\":false}"
+    }
+  ],
+  "isError": false
+}

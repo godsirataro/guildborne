@@ -1,0 +1,26 @@
+[
+  {
+    "role": "ColorMap",
+    "source": "C:\\Work\\MySelf\\Guildborne\\assets\\production\\enemy-slice\\goblin-equipment\\export\\r6-authored\\color.png",
+    "sourceSha256": "e9b0f368415bc63b9f0373bd656f17e30e181f9735272305bcc7be06a4786976",
+    "rgbaSha256": "f9427d74ace6fa00f9c994cf839dc2dfdb1a3a16784c3734d087a8a4cec1ce3b",
+    "width": 128,
+    "height": 16
+  },
+  {
+    "role": "RoughnessMap",
+    "source": "C:\\Work\\MySelf\\Guildborne\\assets\\production\\enemy-slice\\goblin-equipment\\export\\r6-authored\\roughness.png",
+    "sourceSha256": "73e69a57664f987f379cf7de1b54b4df91c5c1c69b1e5c955fcaab9aa2412564",
+    "rgbaSha256": "9f68a6bd29f8d5678baa236a2b7301382bdba92e5d7425e15c6c5d4afaa40f77",
+    "width": 128,
+    "height": 16
+  },
+  {
+    "role": "MetalnessMap",
+    "source": "C:\\Work\\MySelf\\Guildborne\\assets\\production\\enemy-slice\\goblin-equipment\\export\\r6-authored\\metalness.png",
+    "sourceSha256": "d1b2be4bd362b7a61c666c59be674801cc2e7da534c96ce4235e1ff608696ea5",
+    "rgbaSha256": "0baa5fc22fd4f6cb647d84b3968f7b7fb691bf373abb06cbc2172e12c502314a",
+    "width": 128,
+    "height": 16
+  }
+]

@@ -1,0 +1,149 @@
+{
+  "heavy": {
+    "mesh": {
+      "name": "heavy.json",
+      "rawBytes": 1757374,
+      "rawSha256": "8b8549e3126544c4920a280d0d66892433882e1551068b52003307b836597831",
+      "compressedBytes": 108264,
+      "compressedSha256": "cba1914514c2db046223439ff6f9744e3d5a552ecf8f7a93d35cc786cb2980b9",
+      "encodedBytes": 144352,
+      "parts": 1
+    },
+    "images": [
+      {
+        "name": "ColorMap.rgba",
+        "rawBytes": 8192,
+        "rawSha256": "f9427d74ace6fa00f9c994cf839dc2dfdb1a3a16784c3734d087a8a4cec1ce3b",
+        "compressedBytes": 151,
+        "compressedSha256": "900dbbdf0db84ef45cadf6d8cc0761257903bbed70e9ce12fd33ab7cf4852529",
+        "encodedBytes": 204,
+        "parts": 1,
+        "role": "ColorMap",
+        "width": 128,
+        "height": 16
+      },
+      {
+        "name": "RoughnessMap.rgba",
+        "rawBytes": 8192,
+        "rawSha256": "9f68a6bd29f8d5678baa236a2b7301382bdba92e5d7425e15c6c5d4afaa40f77",
+        "compressedBytes": 151,
+        "compressedSha256": "7a5b94c574bcebdc55312cea42dbcdae2a8cd0199c59290864907a5dcbfe5b01",
+        "encodedBytes": 204,
+        "parts": 1,
+        "role": "RoughnessMap",
+        "width": 128,
+        "height": 16
+      },
+      {
+        "name": "MetalnessMap.rgba",
+        "rawBytes": 8192,
+        "rawSha256": "0baa5fc22fd4f6cb647d84b3968f7b7fb691bf373abb06cbc2172e12c502314a",
+        "compressedBytes": 148,
+        "compressedSha256": "5cd620652a35b13c1cecb7a1752c4ff8846df86db274a7dc974e9e399121f1ea",
+        "encodedBytes": 200,
+        "parts": 1,
+        "role": "MetalnessMap",
+        "width": 128,
+        "height": 16
+      }
+    ]
+  },
+  "scout": {
+    "mesh": {
+      "name": "scout.json",
+      "rawBytes": 1019078,
+      "rawSha256": "67eb6855ba9bd5219a24519f9856761bc3d33f87c5fc6e66ca6c56491f7a135c",
+      "compressedBytes": 58519,
+      "compressedSha256": "b0cf77fdb64ccac1c5f97f9ff0f46893d3c94d1f5758504f98f1a0602b3fb3aa",
+      "encodedBytes": 78028,
+      "parts": 1
+    },
+    "images": [
+      {
+        "name": "ColorMap.rgba",
+        "rawBytes": 8192,
+        "rawSha256": "f9427d74ace6fa00f9c994cf839dc2dfdb1a3a16784c3734d087a8a4cec1ce3b",
+        "compressedBytes": 151,
+        "compressedSha256": "900dbbdf0db84ef45cadf6d8cc0761257903bbed70e9ce12fd33ab7cf4852529",
+        "encodedBytes": 204,
+        "parts": 1,
+        "role": "ColorMap",
+        "width": 128,
+        "height": 16
+      },
+      {
+        "name": "RoughnessMap.rgba",
+        "rawBytes": 8192,
+        "rawSha256": "9f68a6bd29f8d5678baa236a2b7301382bdba92e5d7425e15c6c5d4afaa40f77",
+        "compressedBytes": 151,
+        "compressedSha256": "7a5b94c574bcebdc55312cea42dbcdae2a8cd0199c59290864907a5dcbfe5b01",
+        "encodedBytes": 204,
+        "parts": 1,
+        "role": "RoughnessMap",
+        "width": 128,
+        "height": 16
+      },
+      {
+        "name": "MetalnessMap.rgba",
+        "rawBytes": 8192,
+        "rawSha256": "0baa5fc22fd4f6cb647d84b3968f7b7fb691bf373abb06cbc2172e12c502314a",
+        "compressedBytes": 148,
+        "compressedSha256": "5cd620652a35b13c1cecb7a1752c4ff8846df86db274a7dc974e9e399121f1ea",
+        "encodedBytes": 200,
+        "parts": 1,
+        "role": "MetalnessMap",
+        "width": 128,
+        "height": 16
+      }
+    ]
+  },
+  "ritual": {
+    "mesh": {
+      "name": "ritual.json",
+      "rawBytes": 1759940,
+      "rawSha256": "e2e81e6b48786cfb12f05234ddb97598080f9a0cdb77d5febe80c2c0a1432a45",
+      "compressedBytes": 101174,
+      "compressedSha256": "3c249cfa346eb7c136704799149d17617f7f01a90253a0cf97a75ecd7b69506f",
+      "encodedBytes": 134900,
+      "parts": 1
+    },
+    "images": [
+      {
+        "name": "ColorMap.rgba",
+        "rawBytes": 8192,
+        "rawSha256": "f9427d74ace6fa00f9c994cf839dc2dfdb1a3a16784c3734d087a8a4cec1ce3b",
+        "compressedBytes": 151,
+        "compressedSha256": "900dbbdf0db84ef45cadf6d8cc0761257903bbed70e9ce12fd33ab7cf4852529",
+        "encodedBytes": 204,
+        "parts": 1,
+        "role": "ColorMap",
+        "width": 128,
+        "height": 16
+      },
+      {
+        "name": "RoughnessMap.rgba",
+        "rawBytes": 8192,
+        "rawSha256": "9f68a6bd29f8d5678baa236a2b7301382bdba92e5d7425e15c6c5d4afaa40f77",
+        "compressedBytes": 151,
+        "compressedSha256": "7a5b94c574bcebdc55312cea42dbcdae2a8cd0199c59290864907a5dcbfe5b01",
+        "encodedBytes": 204,
+        "parts": 1,
+        "role": "RoughnessMap",
+        "width": 128,
+        "height": 16
+      },
+      {
+        "name": "MetalnessMap.rgba",
+        "rawBytes": 8192,
+        "rawSha256": "0baa5fc22fd4f6cb647d84b3968f7b7fb691bf373abb06cbc2172e12c502314a",
+        "compressedBytes": 148,
+        "compressedSha256": "5cd620652a35b13c1cecb7a1752c4ff8846df86db274a7dc974e9e399121f1ea",
+        "encodedBytes": 200,
+        "parts": 1,
+        "role": "MetalnessMap",
+        "width": 128,
+        "height": 16
+      }
+    ]
+  }
+}

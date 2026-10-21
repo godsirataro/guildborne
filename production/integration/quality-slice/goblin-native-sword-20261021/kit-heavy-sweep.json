@@ -1,0 +1,5937 @@
+[
+  {
+    "minY": 0.08500003814697266,
+    "parts": [
+      {
+        "vertices": 392,
+        "faces": 760,
+        "name": "goblin_heavy_r6_Head",
+        "verticesInsideBody": 0
+      },
+      {
+        "vertices": 784,
+        "faces": 1516,
+        "name": "goblin_heavy_r6_Torso",
+        "verticesInsideBody": 0
+      },
+      {
+        "vertices": 476,
+        "faces": 920,
+        "name": "goblin_heavy_r6_Left_Arm",
+        "verticesInsideBody": 0
+      },
+      {
+        "vertices": 476,
+        "faces": 920,
+        "name": "goblin_heavy_r6_Right_Arm",
+        "verticesInsideBody": 0
+      },
+      {
+        "vertices": 476,
+        "faces": 924,
+        "name": "goblin_heavy_r6_Left_Leg",
+        "verticesInsideBody": 0
+      },
+      {
+        "vertices": 476,
+        "faces": 924,
+        "name": "goblin_heavy_r6_Right_Leg",
+        "verticesInsideBody": 0
+      }
+    ],
+    "label": "Idle",
+    "follow": {
+      "maps": 3,
+      "scope": "SYNTHETIC_EDIT_FOLLOW",
+      "bodyLimbsUnmodified": true,
+      "uvConvention": "CORNER_U_1_MINUS_V",
+      "fitStatus": "UNVALIDATED",
+      "hiddenLegacyOverlays": 9,
+      "kit": "heavy",
+      "scale": 1,
+      "geometry": "ORIGINAL_BLOCK_STYLE_ADAPTATION",
+      "parts": 6
+    },
+    "verticesInsideBody": 0
+  },
+  {
+    "minY": 0.08500003814697266,
+    "parts": [
+      {
+        "vertices": 392,
+        "faces": 760,
+        "name": "goblin_heavy_r6_Head",
+        "verticesInsideBody": 0
+      },
+      {
+        "vertices": 784,
+        "faces": 1516,
+        "name": "goblin_heavy_r6_Torso",
+        "verticesInsideBody": 0
+      },
+      {
+        "vertices": 476,
+        "faces": 920,
+        "name": "goblin_heavy_r6_Left_Arm",
+        "verticesInsideBody": 0
+      },
+      {
+        "vertices": 476,
+        "faces": 920,
+        "name": "goblin_heavy_r6_Right_Arm",
+        "verticesInsideBody": 0
+      },
+      {
+        "vertices": 476,
+        "faces": 924,
+        "name": "goblin_heavy_r6_Left_Leg",
+        "verticesInsideBody": 0
+      },
+      {
+        "vertices": 476,
+        "faces": 924,
+        "name": "goblin_heavy_r6_Right_Leg",
+        "verticesInsideBody": 0
+      }
+    ],
+    "label": "SyntheticGait",
+    "phase": 0,
+    "follow": {
+      "maps": 3,
+      "scope": "SYNTHETIC_EDIT_FOLLOW",
+      "bodyLimbsUnmodified": true,
+      "uvConvention": "CORNER_U_1_MINUS_V",
+      "fitStatus": "UNVALIDATED",
+      "hiddenLegacyOverlays": 9,
+      "kit": "heavy",
+      "scale": 1,
+      "geometry": "ORIGINAL_BLOCK_STYLE_ADAPTATION",
+      "parts": 6
+    },
+    "verticesInsideBody": 0
+  },
+  {
+    "minY": 0.054673969745635986,
+    "parts": [
+      {
+        "vertices": 392,
+        "faces": 760,
+        "name": "goblin_heavy_r6_Head",
+        "verticesInsideBody": 0
+      },
+      {
+        "vertices": 784,
+        "faces": 1516,
+        "name": "goblin_heavy_r6_Torso",
+        "verticesInsideBody": 0
+      },
+      {
+        "vertices": 476,
+        "faces": 920,
+        "name": "goblin_heavy_r6_Left_Arm",
+        "verticesInsideBody": 2
+      },
+      {
+        "vertices": 476,
+        "faces": 920,
+        "name": "goblin_heavy_r6_Right_Arm",
+        "verticesInsideBody": 1
+      },
+      {
+        "vertices": 476,
+        "faces": 924,
+        "name": "goblin_heavy_r6_Left_Leg",
+        "verticesInsideBody": 0
+      },
+      {
+        "vertices": 476,
+        "faces": 924,
+        "name": "goblin_heavy_r6_Right_Leg",
+        "verticesInsideBody": 0
+      }
+    ],
+    "label": "SyntheticGait",
+    "phase": 0.10471975511965977,
+    "follow": {
+      "maps": 3,
+      "scope": "SYNTHETIC_EDIT_FOLLOW",
+      "bodyLimbsUnmodified": true,
+      "uvConvention": "CORNER_U_1_MINUS_V",
+      "fitStatus": "UNVALIDATED",
+      "hiddenLegacyOverlays": 9,
+      "kit": "heavy",
+      "scale": 1,
+      "geometry": "ORIGINAL_BLOCK_STYLE_ADAPTATION",
+      "parts": 6
+    },
+    "verticesInsideBody": 3
+  },
+  {
+    "minY": 0.028912901878356934,
+    "parts": [
+      {
+        "vertices": 392,
+        "faces": 760,
+        "name": "goblin_heavy_r6_Head",
+        "verticesInsideBody": 0
+      },
+      {
+        "vertices": 784,
+        "faces": 1516,
+        "name": "goblin_heavy_r6_Torso",
+        "verticesInsideBody": 0
+      },
+      {
+        "vertices": 476,
+        "faces": 920,
+        "name": "goblin_heavy_r6_Left_Arm",
+        "verticesInsideBody": 2
+      },
+      {
+        "vertices": 476,
+        "faces": 920,
+        "name": "goblin_heavy_r6_Right_Arm",
+        "verticesInsideBody": 2
+      },
+      {
+        "vertices": 476,
+        "faces": 924,
+        "name": "goblin_heavy_r6_Left_Leg",
+        "verticesInsideBody": 0
+      },
+      {
+        "vertices": 476,
+        "faces": 924,
+        "name": "goblin_heavy_r6_Right_Leg",
+        "verticesInsideBody": 0
+      }
+    ],
+    "label": "SyntheticGait",
+    "phase": 0.20943951023931953,
+    "follow": {
+      "maps": 3,
+      "scope": "SYNTHETIC_EDIT_FOLLOW",
+      "bodyLimbsUnmodified": true,
+      "uvConvention": "CORNER_U_1_MINUS_V",
+      "fitStatus": "UNVALIDATED",
+      "hiddenLegacyOverlays": 9,
+      "kit": "heavy",
+      "scale": 1,
+      "geometry": "ORIGINAL_BLOCK_STYLE_ADAPTATION",
+      "parts": 6
+    },
+    "verticesInsideBody": 4
+  },
+  {
+    "minY": 0.007844626903533936,
+    "parts": [
+      {
+        "vertices": 392,
+        "faces": 760,
+        "name": "goblin_heavy_r6_Head",
+        "verticesInsideBody": 0
+      },
+      {
+        "vertices": 784,
+        "faces": 1516,
+        "name": "goblin_heavy_r6_Torso",
+        "verticesInsideBody": 0
+      },
+      {
+        "vertices": 476,
+        "faces": 920,
+        "name": "goblin_heavy_r6_Left_Arm",
+        "verticesInsideBody": 4
+      },
+      {
+        "vertices": 476,
+        "faces": 920,
+        "name": "goblin_heavy_r6_Right_Arm",
+        "verticesInsideBody": 2
+      },
+      {
+        "vertices": 476,
+        "faces": 924,
+        "name": "goblin_heavy_r6_Left_Leg",
+        "verticesInsideBody": 0
+      },
+      {
+        "vertices": 476,
+        "faces": 924,
+        "name": "goblin_heavy_r6_Right_Leg",
+        "verticesInsideBody": 0
+      }
+    ],
+    "label": "SyntheticGait",
+    "phase": 0.3141592653589793,
+    "follow": {
+      "maps": 3,
+      "scope": "SYNTHETIC_EDIT_FOLLOW",
+      "bodyLimbsUnmodified": true,
+      "uvConvention": "CORNER_U_1_MINUS_V",
+      "fitStatus": "UNVALIDATED",
+      "hiddenLegacyOverlays": 9,
+      "kit": "heavy",
+      "scale": 1,
+      "geometry": "ORIGINAL_BLOCK_STYLE_ADAPTATION",
+      "parts": 6
+    },
+    "verticesInsideBody": 6
+  },
+  {
+    "minY": -0.008600354194641113,
+    "parts": [
+      {
+        "vertices": 392,
+        "faces": 760,
+        "name": "goblin_heavy_r6_Head",
+        "verticesInsideBody": 0
+      },
+      {
+        "vertices": 784,
+        "faces": 1516,
+        "name": "goblin_heavy_r6_Torso",
+        "verticesInsideBody": 0
+      },
+      {
+        "vertices": 476,
+        "faces": 920,
+        "name": "goblin_heavy_r6_Left_Arm",
+        "verticesInsideBody": 4
+      },
+      {
+        "vertices": 476,
+        "faces": 920,
+        "name": "goblin_heavy_r6_Right_Arm",
+        "verticesInsideBody": 2
+      },
+      {
+        "vertices": 476,
+        "faces": 924,
+        "name": "goblin_heavy_r6_Left_Leg",
+        "verticesInsideBody": 0
+      },
+      {
+        "vertices": 476,
+        "faces": 924,
+        "name": "goblin_heavy_r6_Right_Leg",
+        "verticesInsideBody": 0
+      }
+    ],
+    "label": "SyntheticGait",
+    "phase": 0.41887902047863906,
+    "follow": {
+      "maps": 3,
+      "scope": "SYNTHETIC_EDIT_FOLLOW",
+      "bodyLimbsUnmodified": true,
+      "uvConvention": "CORNER_U_1_MINUS_V",
+      "fitStatus": "UNVALIDATED",
+      "hiddenLegacyOverlays": 9,
+      "kit": "heavy",
+      "scale": 1,
+      "geometry": "ORIGINAL_BLOCK_STYLE_ADAPTATION",
+      "parts": 6
+    },
+    "verticesInsideBody": 6
+  },
+  {
+    "minY": -0.02067410945892334,
+    "parts": [
+      {
+        "vertices": 392,
+        "faces": 760,
+        "name": "goblin_heavy_r6_Head",
+        "verticesInsideBody": 0
+      },
+      {
+        "vertices": 784,
+        "faces": 1516,
+        "name": "goblin_heavy_r6_Torso",
+        "verticesInsideBody": 0
+      },
+      {
+        "vertices": 476,
+        "faces": 920,
+        "name": "goblin_heavy_r6_Left_Arm",
+        "verticesInsideBody": 5
+      },
+      {
+        "vertices": 476,
+        "faces": 920,
+        "name": "goblin_heavy_r6_Right_Arm",
+        "verticesInsideBody": 2
+      },
+      {
+        "vertices": 476,
+        "faces": 924,
+        "name": "goblin_heavy_r6_Left_Leg",
+        "verticesInsideBody": 0
+      },
+      {
+        "vertices": 476,
+        "faces": 924,
+        "name": "goblin_heavy_r6_Right_Leg",
+        "verticesInsideBody": 0
+      }
+    ],
+    "label": "SyntheticGait",
+    "phase": 0.5235987755982988,
+    "follow": {
+      "maps": 3,
+      "scope": "SYNTHETIC_EDIT_FOLLOW",
+      "bodyLimbsUnmodified": true,
+      "uvConvention": "CORNER_U_1_MINUS_V",
+      "fitStatus": "UNVALIDATED",
+      "hiddenLegacyOverlays": 9,
+      "kit": "heavy",
+      "scale": 1,
+      "geometry": "ORIGINAL_BLOCK_STYLE_ADAPTATION",
+      "parts": 6
+    },
+    "verticesInsideBody": 7
+  },
+  {
+    "minY": -0.028787672519683838,
+    "parts": [
+      {
+        "vertices": 392,
+        "faces": 760,
+        "name": "goblin_heavy_r6_Head",
+        "verticesInsideBody": 0
+      },
+      {
+        "vertices": 784,
+        "faces": 1516,
+        "name": "goblin_heavy_r6_Torso",
+        "verticesInsideBody": 0
+      },
+      {
+        "vertices": 476,
+        "faces": 920,
+        "name": "goblin_heavy_r6_Left_Arm",
+        "verticesInsideBody": 4
+      },
+      {
+        "vertices": 476,
+        "faces": 920,
+        "name": "goblin_heavy_r6_Right_Arm",
+        "verticesInsideBody": 2
+      },
+      {
+        "vertices": 476,
+        "faces": 924,
+        "name": "goblin_heavy_r6_Left_Leg",
+        "verticesInsideBody": 0
+      },
+      {
+        "vertices": 476,
+        "faces": 924,
+        "name": "goblin_heavy_r6_Right_Leg",
+        "verticesInsideBody": 0
+      }
+    ],
+    "label": "SyntheticGait",
+    "phase": 0.6283185307179586,
+    "follow": {
+      "maps": 3,
+      "scope": "SYNTHETIC_EDIT_FOLLOW",
+      "bodyLimbsUnmodified": true,
+      "uvConvention": "CORNER_U_1_MINUS_V",
+      "fitStatus": "UNVALIDATED",
+      "hiddenLegacyOverlays": 9,
+      "kit": "heavy",
+      "scale": 1,
+      "geometry": "ORIGINAL_BLOCK_STYLE_ADAPTATION",
+      "parts": 6
+    },
+    "verticesInsideBody": 6
+  },
+  {
+    "minY": -0.03348046541213989,
+    "parts": [
+      {
+        "vertices": 392,
+        "faces": 760,
+        "name": "goblin_heavy_r6_Head",
+        "verticesInsideBody": 0
+      },
+      {
+        "vertices": 784,
+        "faces": 1516,
+        "name": "goblin_heavy_r6_Torso",
+        "verticesInsideBody": 0
+      },
+      {
+        "vertices": 476,
+        "faces": 920,
+        "name": "goblin_heavy_r6_Left_Arm",
+        "verticesInsideBody": 4
+      },
+      {
+        "vertices": 476,
+        "faces": 920,
+        "name": "goblin_heavy_r6_Right_Arm",
+        "verticesInsideBody": 2
+      },
+      {
+        "vertices": 476,
+        "faces": 924,
+        "name": "goblin_heavy_r6_Left_Leg",
+        "verticesInsideBody": 0
+      },
+      {
+        "vertices": 476,
+        "faces": 924,
+        "name": "goblin_heavy_r6_Right_Leg",
+        "verticesInsideBody": 0
+      }
+    ],
+    "label": "SyntheticGait",
+    "phase": 0.7330382858376184,
+    "follow": {
+      "maps": 3,
+      "scope": "SYNTHETIC_EDIT_FOLLOW",
+      "bodyLimbsUnmodified": true,
+      "uvConvention": "CORNER_U_1_MINUS_V",
+      "fitStatus": "UNVALIDATED",
+      "hiddenLegacyOverlays": 9,
+      "kit": "heavy",
+      "scale": 1,
+      "geometry": "ORIGINAL_BLOCK_STYLE_ADAPTATION",
+      "parts": 6
+    },
+    "verticesInsideBody": 6
+  },
+  {
+    "minY": -0.03538322448730469,
+    "parts": [
+      {
+        "vertices": 392,
+        "faces": 760,
+        "name": "goblin_heavy_r6_Head",
+        "verticesInsideBody": 0
+      },
+      {
+        "vertices": 784,
+        "faces": 1516,
+        "name": "goblin_heavy_r6_Torso",
+        "verticesInsideBody": 0
+      },
+      {
+        "vertices": 476,
+        "faces": 920,
+        "name": "goblin_heavy_r6_Left_Arm",
+        "verticesInsideBody": 5
+      },
+      {
+        "vertices": 476,
+        "faces": 920,
+        "name": "goblin_heavy_r6_Right_Arm",
+        "verticesInsideBody": 2
+      },
+      {
+        "vertices": 476,
+        "faces": 924,
+        "name": "goblin_heavy_r6_Left_Leg",
+        "verticesInsideBody": 0
+      },
+      {
+        "vertices": 476,
+        "faces": 924,
+        "name": "goblin_heavy_r6_Right_Leg",
+        "verticesInsideBody": 0
+      }
+    ],
+    "label": "SyntheticGait",
+    "phase": 0.8377580409572781,
+    "follow": {
+      "maps": 3,
+      "scope": "SYNTHETIC_EDIT_FOLLOW",
+      "bodyLimbsUnmodified": true,
+      "uvConvention": "CORNER_U_1_MINUS_V",
+      "fitStatus": "UNVALIDATED",
+      "hiddenLegacyOverlays": 9,
+      "kit": "heavy",
+      "scale": 1,
+      "geometry": "ORIGINAL_BLOCK_STYLE_ADAPTATION",
+      "parts": 6
+    },
+    "verticesInsideBody": 7
+  },
+  {
+    "minY": -0.03517782688140869,
+    "parts": [
+      {
+        "vertices": 392,
+        "faces": 760,
+        "name": "goblin_heavy_r6_Head",
+        "verticesInsideBody": 0
+      },
+      {
+        "vertices": 784,
+        "faces": 1516,
+        "name": "goblin_heavy_r6_Torso",
+        "verticesInsideBody": 0
+      },
+      {
+        "vertices": 476,
+        "faces": 920,
+        "name": "goblin_heavy_r6_Left_Arm",
+        "verticesInsideBody": 5
+      },
+      {
+        "vertices": 476,
+        "faces": 920,
+        "name": "goblin_heavy_r6_Right_Arm",
+        "verticesInsideBody": 3
+      },
+      {
+        "vertices": 476,
+        "faces": 924,
+        "name": "goblin_heavy_r6_Left_Leg",
+        "verticesInsideBody": 0
+      },
+      {
+        "vertices": 476,
+        "faces": 924,
+        "name": "goblin_heavy_r6_Right_Leg",
+        "verticesInsideBody": 0
+      }
+    ],
+    "label": "SyntheticGait",
+    "phase": 0.9424777960769379,
+    "follow": {
+      "maps": 3,
+      "scope": "SYNTHETIC_EDIT_FOLLOW",
+      "bodyLimbsUnmodified": true,
+      "uvConvention": "CORNER_U_1_MINUS_V",
+      "fitStatus": "UNVALIDATED",
+      "hiddenLegacyOverlays": 9,
+      "kit": "heavy",
+      "scale": 1,
+      "geometry": "ORIGINAL_BLOCK_STYLE_ADAPTATION",
+      "parts": 6
+    },
+    "verticesInsideBody": 8
+  },
+  {
+    "minY": -0.03355675935745239,
+    "parts": [
+      {
+        "vertices": 392,
+        "faces": 760,
+        "name": "goblin_heavy_r6_Head",
+        "verticesInsideBody": 0
+      },
+      {
+        "vertices": 784,
+        "faces": 1516,
+        "name": "goblin_heavy_r6_Torso",
+        "verticesInsideBody": 0
+      },
+      {
+        "vertices": 476,
+        "faces": 920,
+        "name": "goblin_heavy_r6_Left_Arm",
+        "verticesInsideBody": 4
+      },
+      {
+        "vertices": 476,
+        "faces": 920,
+        "name": "goblin_heavy_r6_Right_Arm",
+        "verticesInsideBody": 3
+      },
+      {
+        "vertices": 476,
+        "faces": 924,
+        "name": "goblin_heavy_r6_Left_Leg",
+        "verticesInsideBody": 0
+      },
+      {
+        "vertices": 476,
+        "faces": 924,
+        "name": "goblin_heavy_r6_Right_Leg",
+        "verticesInsideBody": 0
+      }
+    ],
+    "label": "SyntheticGait",
+    "phase": 1.0471975511965976,
+    "follow": {
+      "maps": 3,
+      "scope": "SYNTHETIC_EDIT_FOLLOW",
+      "bodyLimbsUnmodified": true,
+      "uvConvention": "CORNER_U_1_MINUS_V",
+      "fitStatus": "UNVALIDATED",
+      "hiddenLegacyOverlays": 9,
+      "kit": "heavy",
+      "scale": 1,
+      "geometry": "ORIGINAL_BLOCK_STYLE_ADAPTATION",
+      "parts": 6
+    },
+    "verticesInsideBody": 7
+  },
+  {
+    "minY": -0.03209775686264038,
+    "parts": [
+      {
+        "vertices": 392,
+        "faces": 760,
+        "name": "goblin_heavy_r6_Head",
+        "verticesInsideBody": 0
+      },
+      {
+        "vertices": 784,
+        "faces": 1516,
+        "name": "goblin_heavy_r6_Torso",
+        "verticesInsideBody": 0
+      },
+      {
+        "vertices": 476,
+        "faces": 920,
+        "name": "goblin_heavy_r6_Left_Arm",
+        "verticesInsideBody": 4
+      },
+      {
+        "vertices": 476,
+        "faces": 920,
+        "name": "goblin_heavy_r6_Right_Arm",
+        "verticesInsideBody": 4
+      },
+      {
+        "vertices": 476,
+        "faces": 924,
+        "name": "goblin_heavy_r6_Left_Leg",
+        "verticesInsideBody": 0
+      },
+      {
+        "vertices": 476,
+        "faces": 924,
+        "name": "goblin_heavy_r6_Right_Leg",
+        "verticesInsideBody": 0
+      }
+    ],
+    "label": "SyntheticGait",
+    "phase": 1.1519173063162573,
+    "follow": {
+      "maps": 3,
+      "scope": "SYNTHETIC_EDIT_FOLLOW",
+      "bodyLimbsUnmodified": true,
+      "uvConvention": "CORNER_U_1_MINUS_V",
+      "fitStatus": "UNVALIDATED",
+      "hiddenLegacyOverlays": 9,
+      "kit": "heavy",
+      "scale": 1,
+      "geometry": "ORIGINAL_BLOCK_STYLE_ADAPTATION",
+      "parts": 6
+    },
+    "verticesInsideBody": 8
+  },
+  {
+    "minY": -0.0304071307182312,
+    "parts": [
+      {
+        "vertices": 392,
+        "faces": 760,
+        "name": "goblin_heavy_r6_Head",
+        "verticesInsideBody": 0
+      },
+      {
+        "vertices": 784,
+        "faces": 1516,
+        "name": "goblin_heavy_r6_Torso",
+        "verticesInsideBody": 0
+      },
+      {
+        "vertices": 476,
+        "faces": 920,
+        "name": "goblin_heavy_r6_Left_Arm",
+        "verticesInsideBody": 4
+      },
+      {
+        "vertices": 476,
+        "faces": 920,
+        "name": "goblin_heavy_r6_Right_Arm",
+        "verticesInsideBody": 4
+      },
+      {
+        "vertices": 476,
+        "faces": 924,
+        "name": "goblin_heavy_r6_Left_Leg",
+        "verticesInsideBody": 0
+      },
+      {
+        "vertices": 476,
+        "faces": 924,
+        "name": "goblin_heavy_r6_Right_Leg",
+        "verticesInsideBody": 0
+      }
+    ],
+    "label": "SyntheticGait",
+    "phase": 1.2566370614359172,
+    "follow": {
+      "maps": 3,
+      "scope": "SYNTHETIC_EDIT_FOLLOW",
+      "bodyLimbsUnmodified": true,
+      "uvConvention": "CORNER_U_1_MINUS_V",
+      "fitStatus": "UNVALIDATED",
+      "hiddenLegacyOverlays": 9,
+      "kit": "heavy",
+      "scale": 1,
+      "geometry": "ORIGINAL_BLOCK_STYLE_ADAPTATION",
+      "parts": 6
+    },
+    "verticesInsideBody": 8
+  },
+  {
+    "minY": -0.02882629632949829,
+    "parts": [
+      {
+        "vertices": 392,
+        "faces": 760,
+        "name": "goblin_heavy_r6_Head",
+        "verticesInsideBody": 0
+      },
+      {
+        "vertices": 784,
+        "faces": 1516,
+        "name": "goblin_heavy_r6_Torso",
+        "verticesInsideBody": 0
+      },
+      {
+        "vertices": 476,
+        "faces": 920,
+        "name": "goblin_heavy_r6_Left_Arm",
+        "verticesInsideBody": 4
+      },
+      {
+        "vertices": 476,
+        "faces": 920,
+        "name": "goblin_heavy_r6_Right_Arm",
+        "verticesInsideBody": 4
+      },
+      {
+        "vertices": 476,
+        "faces": 924,
+        "name": "goblin_heavy_r6_Left_Leg",
+        "verticesInsideBody": 0
+      },
+      {
+        "vertices": 476,
+        "faces": 924,
+        "name": "goblin_heavy_r6_Right_Leg",
+        "verticesInsideBody": 0
+      }
+    ],
+    "label": "SyntheticGait",
+    "phase": 1.3613568165555772,
+    "follow": {
+      "maps": 3,
+      "scope": "SYNTHETIC_EDIT_FOLLOW",
+      "bodyLimbsUnmodified": true,
+      "uvConvention": "CORNER_U_1_MINUS_V",
+      "fitStatus": "UNVALIDATED",
+      "hiddenLegacyOverlays": 9,
+      "kit": "heavy",
+      "scale": 1,
+      "geometry": "ORIGINAL_BLOCK_STYLE_ADAPTATION",
+      "parts": 6
+    },
+    "verticesInsideBody": 8
+  },
+  {
+    "minY": -0.02772468328475952,
+    "parts": [
+      {
+        "vertices": 392,
+        "faces": 760,
+        "name": "goblin_heavy_r6_Head",
+        "verticesInsideBody": 0
+      },
+      {
+        "vertices": 784,
+        "faces": 1516,
+        "name": "goblin_heavy_r6_Torso",
+        "verticesInsideBody": 0
+      },
+      {
+        "vertices": 476,
+        "faces": 920,
+        "name": "goblin_heavy_r6_Left_Arm",
+        "verticesInsideBody": 4
+      },
+      {
+        "vertices": 476,
+        "faces": 920,
+        "name": "goblin_heavy_r6_Right_Arm",
+        "verticesInsideBody": 4
+      },
+      {
+        "vertices": 476,
+        "faces": 924,
+        "name": "goblin_heavy_r6_Left_Leg",
+        "verticesInsideBody": 0
+      },
+      {
+        "vertices": 476,
+        "faces": 924,
+        "name": "goblin_heavy_r6_Right_Leg",
+        "verticesInsideBody": 0
+      }
+    ],
+    "label": "SyntheticGait",
+    "phase": 1.4660765716752369,
+    "follow": {
+      "maps": 3,
+      "scope": "SYNTHETIC_EDIT_FOLLOW",
+      "bodyLimbsUnmodified": true,
+      "uvConvention": "CORNER_U_1_MINUS_V",
+      "fitStatus": "UNVALIDATED",
+      "hiddenLegacyOverlays": 9,
+      "kit": "heavy",
+      "scale": 1,
+      "geometry": "ORIGINAL_BLOCK_STYLE_ADAPTATION",
+      "parts": 6
+    },
+    "verticesInsideBody": 8
+  },
+  {
+    "minY": -0.027331531047821045,
+    "parts": [
+      {
+        "vertices": 392,
+        "faces": 760,
+        "name": "goblin_heavy_r6_Head",
+        "verticesInsideBody": 0
+      },
+      {
+        "vertices": 784,
+        "faces": 1516,
+        "name": "goblin_heavy_r6_Torso",
+        "verticesInsideBody": 0
+      },
+      {
+        "vertices": 476,
+        "faces": 920,
+        "name": "goblin_heavy_r6_Left_Arm",
+        "verticesInsideBody": 4
+      },
+      {
+        "vertices": 476,
+        "faces": 920,
+        "name": "goblin_heavy_r6_Right_Arm",
+        "verticesInsideBody": 4
+      },
+      {
+        "vertices": 476,
+        "faces": 924,
+        "name": "goblin_heavy_r6_Left_Leg",
+        "verticesInsideBody": 0
+      },
+      {
+        "vertices": 476,
+        "faces": 924,
+        "name": "goblin_heavy_r6_Right_Leg",
+        "verticesInsideBody": 0
+      }
+    ],
+    "label": "SyntheticGait",
+    "phase": 1.5707963267948963,
+    "follow": {
+      "maps": 3,
+      "scope": "SYNTHETIC_EDIT_FOLLOW",
+      "bodyLimbsUnmodified": true,
+      "uvConvention": "CORNER_U_1_MINUS_V",
+      "fitStatus": "UNVALIDATED",
+      "hiddenLegacyOverlays": 9,
+      "kit": "heavy",
+      "scale": 1,
+      "geometry": "ORIGINAL_BLOCK_STYLE_ADAPTATION",
+      "parts": 6
+    },
+    "verticesInsideBody": 8
+  },
+  {
+    "minY": -0.02772468328475952,
+    "parts": [
+      {
+        "vertices": 392,
+        "faces": 760,
+        "name": "goblin_heavy_r6_Head",
+        "verticesInsideBody": 0
+      },
+      {
+        "vertices": 784,
+        "faces": 1516,
+        "name": "goblin_heavy_r6_Torso",
+        "verticesInsideBody": 0
+      },
+      {
+        "vertices": 476,
+        "faces": 920,
+        "name": "goblin_heavy_r6_Left_Arm",
+        "verticesInsideBody": 4
+      },
+      {
+        "vertices": 476,
+        "faces": 920,
+        "name": "goblin_heavy_r6_Right_Arm",
+        "verticesInsideBody": 4
+      },
+      {
+        "vertices": 476,
+        "faces": 924,
+        "name": "goblin_heavy_r6_Left_Leg",
+        "verticesInsideBody": 0
+      },
+      {
+        "vertices": 476,
+        "faces": 924,
+        "name": "goblin_heavy_r6_Right_Leg",
+        "verticesInsideBody": 0
+      }
+    ],
+    "label": "SyntheticGait",
+    "phase": 1.6755160819145563,
+    "follow": {
+      "maps": 3,
+      "scope": "SYNTHETIC_EDIT_FOLLOW",
+      "bodyLimbsUnmodified": true,
+      "uvConvention": "CORNER_U_1_MINUS_V",
+      "fitStatus": "UNVALIDATED",
+      "hiddenLegacyOverlays": 9,
+      "kit": "heavy",
+      "scale": 1,
+      "geometry": "ORIGINAL_BLOCK_STYLE_ADAPTATION",
+      "parts": 6
+    },
+    "verticesInsideBody": 8
+  },
+  {
+    "minY": -0.02882629632949829,
+    "parts": [
+      {
+        "vertices": 392,
+        "faces": 760,
+        "name": "goblin_heavy_r6_Head",
+        "verticesInsideBody": 0
+      },
+      {
+        "vertices": 784,
+        "faces": 1516,
+        "name": "goblin_heavy_r6_Torso",
+        "verticesInsideBody": 0
+      },
+      {
+        "vertices": 476,
+        "faces": 920,
+        "name": "goblin_heavy_r6_Left_Arm",
+        "verticesInsideBody": 4
+      },
+      {
+        "vertices": 476,
+        "faces": 920,
+        "name": "goblin_heavy_r6_Right_Arm",
+        "verticesInsideBody": 4
+      },
+      {
+        "vertices": 476,
+        "faces": 924,
+        "name": "goblin_heavy_r6_Left_Leg",
+        "verticesInsideBody": 0
+      },
+      {
+        "vertices": 476,
+        "faces": 924,
+        "name": "goblin_heavy_r6_Right_Leg",
+        "verticesInsideBody": 0
+      }
+    ],
+    "label": "SyntheticGait",
+    "phase": 1.7802358370342162,
+    "follow": {
+      "maps": 3,
+      "scope": "SYNTHETIC_EDIT_FOLLOW",
+      "bodyLimbsUnmodified": true,
+      "uvConvention": "CORNER_U_1_MINUS_V",
+      "fitStatus": "UNVALIDATED",
+      "hiddenLegacyOverlays": 9,
+      "kit": "heavy",
+      "scale": 1,
+      "geometry": "ORIGINAL_BLOCK_STYLE_ADAPTATION",
+      "parts": 6
+    },
+    "verticesInsideBody": 8
+  },
+  {
+    "minY": -0.0304071307182312,
+    "parts": [
+      {
+        "vertices": 392,
+        "faces": 760,
+        "name": "goblin_heavy_r6_Head",
+        "verticesInsideBody": 0
+      },
+      {
+        "vertices": 784,
+        "faces": 1516,
+        "name": "goblin_heavy_r6_Torso",
+        "verticesInsideBody": 0
+      },
+      {
+        "vertices": 476,
+        "faces": 920,
+        "name": "goblin_heavy_r6_Left_Arm",
+        "verticesInsideBody": 4
+      },
+      {
+        "vertices": 476,
+        "faces": 920,
+        "name": "goblin_heavy_r6_Right_Arm",
+        "verticesInsideBody": 4
+      },
+      {
+        "vertices": 476,
+        "faces": 924,
+        "name": "goblin_heavy_r6_Left_Leg",
+        "verticesInsideBody": 0
+      },
+      {
+        "vertices": 476,
+        "faces": 924,
+        "name": "goblin_heavy_r6_Right_Leg",
+        "verticesInsideBody": 0
+      }
+    ],
+    "label": "SyntheticGait",
+    "phase": 1.8849555921538759,
+    "follow": {
+      "maps": 3,
+      "scope": "SYNTHETIC_EDIT_FOLLOW",
+      "bodyLimbsUnmodified": true,
+      "uvConvention": "CORNER_U_1_MINUS_V",
+      "fitStatus": "UNVALIDATED",
+      "hiddenLegacyOverlays": 9,
+      "kit": "heavy",
+      "scale": 1,
+      "geometry": "ORIGINAL_BLOCK_STYLE_ADAPTATION",
+      "parts": 6
+    },
+    "verticesInsideBody": 8
+  },
+  {
+    "minY": -0.03209775686264038,
+    "parts": [
+      {
+        "vertices": 392,
+        "faces": 760,
+        "name": "goblin_heavy_r6_Head",
+        "verticesInsideBody": 0
+      },
+      {
+        "vertices": 784,
+        "faces": 1516,
+        "name": "goblin_heavy_r6_Torso",
+        "verticesInsideBody": 0
+      },
+      {
+        "vertices": 476,
+        "faces": 920,
+        "name": "goblin_heavy_r6_Left_Arm",
+        "verticesInsideBody": 4
+      },
+      {
+        "vertices": 476,
+        "faces": 920,
+        "name": "goblin_heavy_r6_Right_Arm",
+        "verticesInsideBody": 4
+      },
+      {
+        "vertices": 476,
+        "faces": 924,
+        "name": "goblin_heavy_r6_Left_Leg",
+        "verticesInsideBody": 0
+      },
+      {
+        "vertices": 476,
+        "faces": 924,
+        "name": "goblin_heavy_r6_Right_Leg",
+        "verticesInsideBody": 0
+      }
+    ],
+    "label": "SyntheticGait",
+    "phase": 1.9896753472735356,
+    "follow": {
+      "maps": 3,
+      "scope": "SYNTHETIC_EDIT_FOLLOW",
+      "bodyLimbsUnmodified": true,
+      "uvConvention": "CORNER_U_1_MINUS_V",
+      "fitStatus": "UNVALIDATED",
+      "hiddenLegacyOverlays": 9,
+      "kit": "heavy",
+      "scale": 1,
+      "geometry": "ORIGINAL_BLOCK_STYLE_ADAPTATION",
+      "parts": 6
+    },
+    "verticesInsideBody": 8
+  },
+  {
+    "minY": -0.03355675935745239,
+    "parts": [
+      {
+        "vertices": 392,
+        "faces": 760,
+        "name": "goblin_heavy_r6_Head",
+        "verticesInsideBody": 0
+      },
+      {
+        "vertices": 784,
+        "faces": 1516,
+        "name": "goblin_heavy_r6_Torso",
+        "verticesInsideBody": 0
+      },
+      {
+        "vertices": 476,
+        "faces": 920,
+        "name": "goblin_heavy_r6_Left_Arm",
+        "verticesInsideBody": 4
+      },
+      {
+        "vertices": 476,
+        "faces": 920,
+        "name": "goblin_heavy_r6_Right_Arm",
+        "verticesInsideBody": 3
+      },
+      {
+        "vertices": 476,
+        "faces": 924,
+        "name": "goblin_heavy_r6_Left_Leg",
+        "verticesInsideBody": 0
+      },
+      {
+        "vertices": 476,
+        "faces": 924,
+        "name": "goblin_heavy_r6_Right_Leg",
+        "verticesInsideBody": 0
+      }
+    ],
+    "label": "SyntheticGait",
+    "phase": 2.0943951023931953,
+    "follow": {
+      "maps": 3,
+      "scope": "SYNTHETIC_EDIT_FOLLOW",
+      "bodyLimbsUnmodified": true,
+      "uvConvention": "CORNER_U_1_MINUS_V",
+      "fitStatus": "UNVALIDATED",
+      "hiddenLegacyOverlays": 9,
+      "kit": "heavy",
+      "scale": 1,
+      "geometry": "ORIGINAL_BLOCK_STYLE_ADAPTATION",
+      "parts": 6
+    },
+    "verticesInsideBody": 7
+  },
+  {
+    "minY": -0.03517782688140869,
+    "parts": [
+      {
+        "vertices": 392,
+        "faces": 760,
+        "name": "goblin_heavy_r6_Head",
+        "verticesInsideBody": 0
+      },
+      {
+        "vertices": 784,
+        "faces": 1516,
+        "name": "goblin_heavy_r6_Torso",
+        "verticesInsideBody": 0
+      },
+      {
+        "vertices": 476,
+        "faces": 920,
+        "name": "goblin_heavy_r6_Left_Arm",
+        "verticesInsideBody": 5
+      },
+      {
+        "vertices": 476,
+        "faces": 920,
+        "name": "goblin_heavy_r6_Right_Arm",
+        "verticesInsideBody": 3
+      },
+      {
+        "vertices": 476,
+        "faces": 924,
+        "name": "goblin_heavy_r6_Left_Leg",
+        "verticesInsideBody": 0
+      },
+      {
+        "vertices": 476,
+        "faces": 924,
+        "name": "goblin_heavy_r6_Right_Leg",
+        "verticesInsideBody": 0
+      }
+    ],
+    "label": "SyntheticGait",
+    "phase": 2.199114857512855,
+    "follow": {
+      "maps": 3,
+      "scope": "SYNTHETIC_EDIT_FOLLOW",
+      "bodyLimbsUnmodified": true,
+      "uvConvention": "CORNER_U_1_MINUS_V",
+      "fitStatus": "UNVALIDATED",
+      "hiddenLegacyOverlays": 9,
+      "kit": "heavy",
+      "scale": 1,
+      "geometry": "ORIGINAL_BLOCK_STYLE_ADAPTATION",
+      "parts": 6
+    },
+    "verticesInsideBody": 8
+  },
+  {
+    "minY": -0.03538322448730469,
+    "parts": [
+      {
+        "vertices": 392,
+        "faces": 760,
+        "name": "goblin_heavy_r6_Head",
+        "verticesInsideBody": 0
+      },
+      {
+        "vertices": 784,
+        "faces": 1516,
+        "name": "goblin_heavy_r6_Torso",
+        "verticesInsideBody": 0
+      },
+      {
+        "vertices": 476,
+        "faces": 920,
+        "name": "goblin_heavy_r6_Left_Arm",
+        "verticesInsideBody": 5
+      },
+      {
+        "vertices": 476,
+        "faces": 920,
+        "name": "goblin_heavy_r6_Right_Arm",
+        "verticesInsideBody": 2
+      },
+      {
+        "vertices": 476,
+        "faces": 924,
+        "name": "goblin_heavy_r6_Left_Leg",
+        "verticesInsideBody": 0
+      },
+      {
+        "vertices": 476,
+        "faces": 924,
+        "name": "goblin_heavy_r6_Right_Leg",
+        "verticesInsideBody": 0
+      }
+    ],
+    "label": "SyntheticGait",
+    "phase": 2.3038346126325147,
+    "follow": {
+      "maps": 3,
+      "scope": "SYNTHETIC_EDIT_FOLLOW",
+      "bodyLimbsUnmodified": true,
+      "uvConvention": "CORNER_U_1_MINUS_V",
+      "fitStatus": "UNVALIDATED",
+      "hiddenLegacyOverlays": 9,
+      "kit": "heavy",
+      "scale": 1,
+      "geometry": "ORIGINAL_BLOCK_STYLE_ADAPTATION",
+      "parts": 6
+    },
+    "verticesInsideBody": 7
+  },
+  {
+    "minY": -0.03348046541213989,
+    "parts": [
+      {
+        "vertices": 392,
+        "faces": 760,
+        "name": "goblin_heavy_r6_Head",
+        "verticesInsideBody": 0
+      },
+      {
+        "vertices": 784,
+        "faces": 1516,
+        "name": "goblin_heavy_r6_Torso",
+        "verticesInsideBody": 0
+      },
+      {
+        "vertices": 476,
+        "faces": 920,
+        "name": "goblin_heavy_r6_Left_Arm",
+        "verticesInsideBody": 4
+      },
+      {
+        "vertices": 476,
+        "faces": 920,
+        "name": "goblin_heavy_r6_Right_Arm",
+        "verticesInsideBody": 2
+      },
+      {
+        "vertices": 476,
+        "faces": 924,
+        "name": "goblin_heavy_r6_Left_Leg",
+        "verticesInsideBody": 0
+      },
+      {
+        "vertices": 476,
+        "faces": 924,
+        "name": "goblin_heavy_r6_Right_Leg",
+        "verticesInsideBody": 0
+      }
+    ],
+    "label": "SyntheticGait",
+    "phase": 2.4085543677521746,
+    "follow": {
+      "maps": 3,
+      "scope": "SYNTHETIC_EDIT_FOLLOW",
+      "bodyLimbsUnmodified": true,
+      "uvConvention": "CORNER_U_1_MINUS_V",
+      "fitStatus": "UNVALIDATED",
+      "hiddenLegacyOverlays": 9,
+      "kit": "heavy",
+      "scale": 1,
+      "geometry": "ORIGINAL_BLOCK_STYLE_ADAPTATION",
+      "parts": 6
+    },
+    "verticesInsideBody": 6
+  },
+  {
+    "minY": -0.028787672519683838,
+    "parts": [
+      {
+        "vertices": 392,
+        "faces": 760,
+        "name": "goblin_heavy_r6_Head",
+        "verticesInsideBody": 0
+      },
+      {
+        "vertices": 784,
+        "faces": 1516,
+        "name": "goblin_heavy_r6_Torso",
+        "verticesInsideBody": 0
+      },
+      {
+        "vertices": 476,
+        "faces": 920,
+        "name": "goblin_heavy_r6_Left_Arm",
+        "verticesInsideBody": 4
+      },
+      {
+        "vertices": 476,
+        "faces": 920,
+        "name": "goblin_heavy_r6_Right_Arm",
+        "verticesInsideBody": 2
+      },
+      {
+        "vertices": 476,
+        "faces": 924,
+        "name": "goblin_heavy_r6_Left_Leg",
+        "verticesInsideBody": 0
+      },
+      {
+        "vertices": 476,
+        "faces": 924,
+        "name": "goblin_heavy_r6_Right_Leg",
+        "verticesInsideBody": 0
+      }
+    ],
+    "label": "SyntheticGait",
+    "phase": 2.5132741228718345,
+    "follow": {
+      "maps": 3,
+      "scope": "SYNTHETIC_EDIT_FOLLOW",
+      "bodyLimbsUnmodified": true,
+      "uvConvention": "CORNER_U_1_MINUS_V",
+      "fitStatus": "UNVALIDATED",
+      "hiddenLegacyOverlays": 9,
+      "kit": "heavy",
+      "scale": 1,
+      "geometry": "ORIGINAL_BLOCK_STYLE_ADAPTATION",
+      "parts": 6
+    },
+    "verticesInsideBody": 6
+  },
+  {
+    "minY": -0.02067410945892334,
+    "parts": [
+      {
+        "vertices": 392,
+        "faces": 760,
+        "name": "goblin_heavy_r6_Head",
+        "verticesInsideBody": 0
+      },
+      {
+        "vertices": 784,
+        "faces": 1516,
+        "name": "goblin_heavy_r6_Torso",
+        "verticesInsideBody": 0
+      },
+      {
+        "vertices": 476,
+        "faces": 920,
+        "name": "goblin_heavy_r6_Left_Arm",
+        "verticesInsideBody": 5
+      },
+      {
+        "vertices": 476,
+        "faces": 920,
+        "name": "goblin_heavy_r6_Right_Arm",
+        "verticesInsideBody": 2
+      },
+      {
+        "vertices": 476,
+        "faces": 924,
+        "name": "goblin_heavy_r6_Left_Leg",
+        "verticesInsideBody": 0
+      },
+      {
+        "vertices": 476,
+        "faces": 924,
+        "name": "goblin_heavy_r6_Right_Leg",
+        "verticesInsideBody": 0
+      }
+    ],
+    "label": "SyntheticGait",
+    "phase": 2.6179938779914944,
+    "follow": {
+      "maps": 3,
+      "scope": "SYNTHETIC_EDIT_FOLLOW",
+      "bodyLimbsUnmodified": true,
+      "uvConvention": "CORNER_U_1_MINUS_V",
+      "fitStatus": "UNVALIDATED",
+      "hiddenLegacyOverlays": 9,
+      "kit": "heavy",
+      "scale": 1,
+      "geometry": "ORIGINAL_BLOCK_STYLE_ADAPTATION",
+      "parts": 6
+    },
+    "verticesInsideBody": 7
+  },
+  {
+    "minY": -0.008600354194641113,
+    "parts": [
+      {
+        "vertices": 392,
+        "faces": 760,
+        "name": "goblin_heavy_r6_Head",
+        "verticesInsideBody": 0
+      },
+      {
+        "vertices": 784,
+        "faces": 1516,
+        "name": "goblin_heavy_r6_Torso",
+        "verticesInsideBody": 0
+      },
+      {
+        "vertices": 476,
+        "faces": 920,
+        "name": "goblin_heavy_r6_Left_Arm",
+        "verticesInsideBody": 4
+      },
+      {
+        "vertices": 476,
+        "faces": 920,
+        "name": "goblin_heavy_r6_Right_Arm",
+        "verticesInsideBody": 2
+      },
+      {
+        "vertices": 476,
+        "faces": 924,
+        "name": "goblin_heavy_r6_Left_Leg",
+        "verticesInsideBody": 0
+      },
+      {
+        "vertices": 476,
+        "faces": 924,
+        "name": "goblin_heavy_r6_Right_Leg",
+        "verticesInsideBody": 0
+      }
+    ],
+    "label": "SyntheticGait",
+    "phase": 2.7227136331111543,
+    "follow": {
+      "maps": 3,
+      "scope": "SYNTHETIC_EDIT_FOLLOW",
+      "bodyLimbsUnmodified": true,
+      "uvConvention": "CORNER_U_1_MINUS_V",
+      "fitStatus": "UNVALIDATED",
+      "hiddenLegacyOverlays": 9,
+      "kit": "heavy",
+      "scale": 1,
+      "geometry": "ORIGINAL_BLOCK_STYLE_ADAPTATION",
+      "parts": 6
+    },
+    "verticesInsideBody": 6
+  },
+  {
+    "minY": 0.007844626903533936,
+    "parts": [
+      {
+        "vertices": 392,
+        "faces": 760,
+        "name": "goblin_heavy_r6_Head",
+        "verticesInsideBody": 0
+      },
+      {
+        "vertices": 784,
+        "faces": 1516,
+        "name": "goblin_heavy_r6_Torso",
+        "verticesInsideBody": 0
+      },
+      {
+        "vertices": 476,
+        "faces": 920,
+        "name": "goblin_heavy_r6_Left_Arm",
+        "verticesInsideBody": 4
+      },
+      {
+        "vertices": 476,
+        "faces": 920,
+        "name": "goblin_heavy_r6_Right_Arm",
+        "verticesInsideBody": 2
+      },
+      {
+        "vertices": 476,
+        "faces": 924,
+        "name": "goblin_heavy_r6_Left_Leg",
+        "verticesInsideBody": 0
+      },
+      {
+        "vertices": 476,
+        "faces": 924,
+        "name": "goblin_heavy_r6_Right_Leg",
+        "verticesInsideBody": 0
+      }
+    ],
+    "label": "SyntheticGait",
+    "phase": 2.827433388230814,
+    "follow": {
+      "maps": 3,
+      "scope": "SYNTHETIC_EDIT_FOLLOW",
+      "bodyLimbsUnmodified": true,
+      "uvConvention": "CORNER_U_1_MINUS_V",
+      "fitStatus": "UNVALIDATED",
+      "hiddenLegacyOverlays": 9,
+      "kit": "heavy",
+      "scale": 1,
+      "geometry": "ORIGINAL_BLOCK_STYLE_ADAPTATION",
+      "parts": 6
+    },
+    "verticesInsideBody": 6
+  },
+  {
+    "minY": 0.028912901878356934,
+    "parts": [
+      {
+        "vertices": 392,
+        "faces": 760,
+        "name": "goblin_heavy_r6_Head",
+        "verticesInsideBody": 0
+      },
+      {
+        "vertices": 784,
+        "faces": 1516,
+        "name": "goblin_heavy_r6_Torso",
+        "verticesInsideBody": 0
+      },
+      {
+        "vertices": 476,
+        "faces": 920,
+        "name": "goblin_heavy_r6_Left_Arm",
+        "verticesInsideBody": 2
+      },
+      {
+        "vertices": 476,
+        "faces": 920,
+        "name": "goblin_heavy_r6_Right_Arm",
+        "verticesInsideBody": 2
+      },
+      {
+        "vertices": 476,
+        "faces": 924,
+        "name": "goblin_heavy_r6_Left_Leg",
+        "verticesInsideBody": 0
+      },
+      {
+        "vertices": 476,
+        "faces": 924,
+        "name": "goblin_heavy_r6_Right_Leg",
+        "verticesInsideBody": 0
+      }
+    ],
+    "label": "SyntheticGait",
+    "phase": 2.9321531433504737,
+    "follow": {
+      "maps": 3,
+      "scope": "SYNTHETIC_EDIT_FOLLOW",
+      "bodyLimbsUnmodified": true,
+      "uvConvention": "CORNER_U_1_MINUS_V",
+      "fitStatus": "UNVALIDATED",
+      "hiddenLegacyOverlays": 9,
+      "kit": "heavy",
+      "scale": 1,
+      "geometry": "ORIGINAL_BLOCK_STYLE_ADAPTATION",
+      "parts": 6
+    },
+    "verticesInsideBody": 4
+  },
+  {
+    "minY": 0.054673969745635986,
+    "parts": [
+      {
+        "vertices": 392,
+        "faces": 760,
+        "name": "goblin_heavy_r6_Head",
+        "verticesInsideBody": 0
+      },
+      {
+        "vertices": 784,
+        "faces": 1516,
+        "name": "goblin_heavy_r6_Torso",
+        "verticesInsideBody": 0
+      },
+      {
+        "vertices": 476,
+        "faces": 920,
+        "name": "goblin_heavy_r6_Left_Arm",
+        "verticesInsideBody": 2
+      },
+      {
+        "vertices": 476,
+        "faces": 920,
+        "name": "goblin_heavy_r6_Right_Arm",
+        "verticesInsideBody": 1
+      },
+      {
+        "vertices": 476,
+        "faces": 924,
+        "name": "goblin_heavy_r6_Left_Leg",
+        "verticesInsideBody": 0
+      },
+      {
+        "vertices": 476,
+        "faces": 924,
+        "name": "goblin_heavy_r6_Right_Leg",
+        "verticesInsideBody": 0
+      }
+    ],
+    "label": "SyntheticGait",
+    "phase": 3.0368728984701336,
+    "follow": {
+      "maps": 3,
+      "scope": "SYNTHETIC_EDIT_FOLLOW",
+      "bodyLimbsUnmodified": true,
+      "uvConvention": "CORNER_U_1_MINUS_V",
+      "fitStatus": "UNVALIDATED",
+      "hiddenLegacyOverlays": 9,
+      "kit": "heavy",
+      "scale": 1,
+      "geometry": "ORIGINAL_BLOCK_STYLE_ADAPTATION",
+      "parts": 6
+    },
+    "verticesInsideBody": 3
+  },
+  {
+    "minY": 0.08500003814697266,
+    "parts": [
+      {
+        "vertices": 392,
+        "faces": 760,
+        "name": "goblin_heavy_r6_Head",
+        "verticesInsideBody": 0
+      },
+      {
+        "vertices": 784,
+        "faces": 1516,
+        "name": "goblin_heavy_r6_Torso",
+        "verticesInsideBody": 0
+      },
+      {
+        "vertices": 476,
+        "faces": 920,
+        "name": "goblin_heavy_r6_Left_Arm",
+        "verticesInsideBody": 0
+      },
+      {
+        "vertices": 476,
+        "faces": 920,
+        "name": "goblin_heavy_r6_Right_Arm",
+        "verticesInsideBody": 0
+      },
+      {
+        "vertices": 476,
+        "faces": 924,
+        "name": "goblin_heavy_r6_Left_Leg",
+        "verticesInsideBody": 0
+      },
+      {
+        "vertices": 476,
+        "faces": 924,
+        "name": "goblin_heavy_r6_Right_Leg",
+        "verticesInsideBody": 0
+      }
+    ],
+    "label": "SyntheticGait",
+    "phase": 3.1415926535897927,
+    "follow": {
+      "maps": 3,
+      "scope": "SYNTHETIC_EDIT_FOLLOW",
+      "bodyLimbsUnmodified": true,
+      "uvConvention": "CORNER_U_1_MINUS_V",
+      "fitStatus": "UNVALIDATED",
+      "hiddenLegacyOverlays": 9,
+      "kit": "heavy",
+      "scale": 1,
+      "geometry": "ORIGINAL_BLOCK_STYLE_ADAPTATION",
+      "parts": 6
+    },
+    "verticesInsideBody": 0
+  },
+  {
+    "minY": 0.054673969745635986,
+    "parts": [
+      {
+        "vertices": 392,
+        "faces": 760,
+        "name": "goblin_heavy_r6_Head",
+        "verticesInsideBody": 0
+      },
+      {
+        "vertices": 784,
+        "faces": 1516,
+        "name": "goblin_heavy_r6_Torso",
+        "verticesInsideBody": 0
+      },
+      {
+        "vertices": 476,
+        "faces": 920,
+        "name": "goblin_heavy_r6_Left_Arm",
+        "verticesInsideBody": 2
+      },
+      {
+        "vertices": 476,
+        "faces": 920,
+        "name": "goblin_heavy_r6_Right_Arm",
+        "verticesInsideBody": 1
+      },
+      {
+        "vertices": 476,
+        "faces": 924,
+        "name": "goblin_heavy_r6_Left_Leg",
+        "verticesInsideBody": 0
+      },
+      {
+        "vertices": 476,
+        "faces": 924,
+        "name": "goblin_heavy_r6_Right_Leg",
+        "verticesInsideBody": 0
+      }
+    ],
+    "label": "SyntheticGait",
+    "phase": 3.2463124087094526,
+    "follow": {
+      "maps": 3,
+      "scope": "SYNTHETIC_EDIT_FOLLOW",
+      "bodyLimbsUnmodified": true,
+      "uvConvention": "CORNER_U_1_MINUS_V",
+      "fitStatus": "UNVALIDATED",
+      "hiddenLegacyOverlays": 9,
+      "kit": "heavy",
+      "scale": 1,
+      "geometry": "ORIGINAL_BLOCK_STYLE_ADAPTATION",
+      "parts": 6
+    },
+    "verticesInsideBody": 3
+  },
+  {
+    "minY": 0.028912901878356934,
+    "parts": [
+      {
+        "vertices": 392,
+        "faces": 760,
+        "name": "goblin_heavy_r6_Head",
+        "verticesInsideBody": 0
+      },
+      {
+        "vertices": 784,
+        "faces": 1516,
+        "name": "goblin_heavy_r6_Torso",
+        "verticesInsideBody": 0
+      },
+      {
+        "vertices": 476,
+        "faces": 920,
+        "name": "goblin_heavy_r6_Left_Arm",
+        "verticesInsideBody": 2
+      },
+      {
+        "vertices": 476,
+        "faces": 920,
+        "name": "goblin_heavy_r6_Right_Arm",
+        "verticesInsideBody": 2
+      },
+      {
+        "vertices": 476,
+        "faces": 924,
+        "name": "goblin_heavy_r6_Left_Leg",
+        "verticesInsideBody": 0
+      },
+      {
+        "vertices": 476,
+        "faces": 924,
+        "name": "goblin_heavy_r6_Right_Leg",
+        "verticesInsideBody": 0
+      }
+    ],
+    "label": "SyntheticGait",
+    "phase": 3.3510321638291125,
+    "follow": {
+      "maps": 3,
+      "scope": "SYNTHETIC_EDIT_FOLLOW",
+      "bodyLimbsUnmodified": true,
+      "uvConvention": "CORNER_U_1_MINUS_V",
+      "fitStatus": "UNVALIDATED",
+      "hiddenLegacyOverlays": 9,
+      "kit": "heavy",
+      "scale": 1,
+      "geometry": "ORIGINAL_BLOCK_STYLE_ADAPTATION",
+      "parts": 6
+    },
+    "verticesInsideBody": 4
+  },
+  {
+    "minY": 0.007844626903533936,
+    "parts": [
+      {
+        "vertices": 392,
+        "faces": 760,
+        "name": "goblin_heavy_r6_Head",
+        "verticesInsideBody": 0
+      },
+      {
+        "vertices": 784,
+        "faces": 1516,
+        "name": "goblin_heavy_r6_Torso",
+        "verticesInsideBody": 0
+      },
+      {
+        "vertices": 476,
+        "faces": 920,
+        "name": "goblin_heavy_r6_Left_Arm",
+        "verticesInsideBody": 4
+      },
+      {
+        "vertices": 476,
+        "faces": 920,
+        "name": "goblin_heavy_r6_Right_Arm",
+        "verticesInsideBody": 2
+      },
+      {
+        "vertices": 476,
+        "faces": 924,
+        "name": "goblin_heavy_r6_Left_Leg",
+        "verticesInsideBody": 0
+      },
+      {
+        "vertices": 476,
+        "faces": 924,
+        "name": "goblin_heavy_r6_Right_Leg",
+        "verticesInsideBody": 0
+      }
+    ],
+    "label": "SyntheticGait",
+    "phase": 3.4557519189487724,
+    "follow": {
+      "maps": 3,
+      "scope": "SYNTHETIC_EDIT_FOLLOW",
+      "bodyLimbsUnmodified": true,
+      "uvConvention": "CORNER_U_1_MINUS_V",
+      "fitStatus": "UNVALIDATED",
+      "hiddenLegacyOverlays": 9,
+      "kit": "heavy",
+      "scale": 1,
+      "geometry": "ORIGINAL_BLOCK_STYLE_ADAPTATION",
+      "parts": 6
+    },
+    "verticesInsideBody": 6
+  },
+  {
+    "minY": -0.008600354194641113,
+    "parts": [
+      {
+        "vertices": 392,
+        "faces": 760,
+        "name": "goblin_heavy_r6_Head",
+        "verticesInsideBody": 0
+      },
+      {
+        "vertices": 784,
+        "faces": 1516,
+        "name": "goblin_heavy_r6_Torso",
+        "verticesInsideBody": 0
+      },
+      {
+        "vertices": 476,
+        "faces": 920,
+        "name": "goblin_heavy_r6_Left_Arm",
+        "verticesInsideBody": 4
+      },
+      {
+        "vertices": 476,
+        "faces": 920,
+        "name": "goblin_heavy_r6_Right_Arm",
+        "verticesInsideBody": 2
+      },
+      {
+        "vertices": 476,
+        "faces": 924,
+        "name": "goblin_heavy_r6_Left_Leg",
+        "verticesInsideBody": 0
+      },
+      {
+        "vertices": 476,
+        "faces": 924,
+        "name": "goblin_heavy_r6_Right_Leg",
+        "verticesInsideBody": 0
+      }
+    ],
+    "label": "SyntheticGait",
+    "phase": 3.5604716740684323,
+    "follow": {
+      "maps": 3,
+      "scope": "SYNTHETIC_EDIT_FOLLOW",
+      "bodyLimbsUnmodified": true,
+      "uvConvention": "CORNER_U_1_MINUS_V",
+      "fitStatus": "UNVALIDATED",
+      "hiddenLegacyOverlays": 9,
+      "kit": "heavy",
+      "scale": 1,
+      "geometry": "ORIGINAL_BLOCK_STYLE_ADAPTATION",
+      "parts": 6
+    },
+    "verticesInsideBody": 6
+  },
+  {
+    "minY": -0.02067410945892334,
+    "parts": [
+      {
+        "vertices": 392,
+        "faces": 760,
+        "name": "goblin_heavy_r6_Head",
+        "verticesInsideBody": 0
+      },
+      {
+        "vertices": 784,
+        "faces": 1516,
+        "name": "goblin_heavy_r6_Torso",
+        "verticesInsideBody": 0
+      },
+      {
+        "vertices": 476,
+        "faces": 920,
+        "name": "goblin_heavy_r6_Left_Arm",
+        "verticesInsideBody": 5
+      },
+      {
+        "vertices": 476,
+        "faces": 920,
+        "name": "goblin_heavy_r6_Right_Arm",
+        "verticesInsideBody": 2
+      },
+      {
+        "vertices": 476,
+        "faces": 924,
+        "name": "goblin_heavy_r6_Left_Leg",
+        "verticesInsideBody": 0
+      },
+      {
+        "vertices": 476,
+        "faces": 924,
+        "name": "goblin_heavy_r6_Right_Leg",
+        "verticesInsideBody": 0
+      }
+    ],
+    "label": "SyntheticGait",
+    "phase": 3.665191429188092,
+    "follow": {
+      "maps": 3,
+      "scope": "SYNTHETIC_EDIT_FOLLOW",
+      "bodyLimbsUnmodified": true,
+      "uvConvention": "CORNER_U_1_MINUS_V",
+      "fitStatus": "UNVALIDATED",
+      "hiddenLegacyOverlays": 9,
+      "kit": "heavy",
+      "scale": 1,
+      "geometry": "ORIGINAL_BLOCK_STYLE_ADAPTATION",
+      "parts": 6
+    },
+    "verticesInsideBody": 7
+  },
+  {
+    "minY": -0.028787672519683838,
+    "parts": [
+      {
+        "vertices": 392,
+        "faces": 760,
+        "name": "goblin_heavy_r6_Head",
+        "verticesInsideBody": 0
+      },
+      {
+        "vertices": 784,
+        "faces": 1516,
+        "name": "goblin_heavy_r6_Torso",
+        "verticesInsideBody": 0
+      },
+      {
+        "vertices": 476,
+        "faces": 920,
+        "name": "goblin_heavy_r6_Left_Arm",
+        "verticesInsideBody": 4
+      },
+      {
+        "vertices": 476,
+        "faces": 920,
+        "name": "goblin_heavy_r6_Right_Arm",
+        "verticesInsideBody": 2
+      },
+      {
+        "vertices": 476,
+        "faces": 924,
+        "name": "goblin_heavy_r6_Left_Leg",
+        "verticesInsideBody": 0
+      },
+      {
+        "vertices": 476,
+        "faces": 924,
+        "name": "goblin_heavy_r6_Right_Leg",
+        "verticesInsideBody": 0
+      }
+    ],
+    "label": "SyntheticGait",
+    "phase": 3.7699111843077517,
+    "follow": {
+      "maps": 3,
+      "scope": "SYNTHETIC_EDIT_FOLLOW",
+      "bodyLimbsUnmodified": true,
+      "uvConvention": "CORNER_U_1_MINUS_V",
+      "fitStatus": "UNVALIDATED",
+      "hiddenLegacyOverlays": 9,
+      "kit": "heavy",
+      "scale": 1,
+      "geometry": "ORIGINAL_BLOCK_STYLE_ADAPTATION",
+      "parts": 6
+    },
+    "verticesInsideBody": 6
+  },
+  {
+    "minY": -0.03348046541213989,
+    "parts": [
+      {
+        "vertices": 392,
+        "faces": 760,
+        "name": "goblin_heavy_r6_Head",
+        "verticesInsideBody": 0
+      },
+      {
+        "vertices": 784,
+        "faces": 1516,
+        "name": "goblin_heavy_r6_Torso",
+        "verticesInsideBody": 0
+      },
+      {
+        "vertices": 476,
+        "faces": 920,
+        "name": "goblin_heavy_r6_Left_Arm",
+        "verticesInsideBody": 4
+      },
+      {
+        "vertices": 476,
+        "faces": 920,
+        "name": "goblin_heavy_r6_Right_Arm",
+        "verticesInsideBody": 2
+      },
+      {
+        "vertices": 476,
+        "faces": 924,
+        "name": "goblin_heavy_r6_Left_Leg",
+        "verticesInsideBody": 0
+      },
+      {
+        "vertices": 476,
+        "faces": 924,
+        "name": "goblin_heavy_r6_Right_Leg",
+        "verticesInsideBody": 0
+      }
+    ],
+    "label": "SyntheticGait",
+    "phase": 3.8746309394274117,
+    "follow": {
+      "maps": 3,
+      "scope": "SYNTHETIC_EDIT_FOLLOW",
+      "bodyLimbsUnmodified": true,
+      "uvConvention": "CORNER_U_1_MINUS_V",
+      "fitStatus": "UNVALIDATED",
+      "hiddenLegacyOverlays": 9,
+      "kit": "heavy",
+      "scale": 1,
+      "geometry": "ORIGINAL_BLOCK_STYLE_ADAPTATION",
+      "parts": 6
+    },
+    "verticesInsideBody": 6
+  },
+  {
+    "minY": -0.03538322448730469,
+    "parts": [
+      {
+        "vertices": 392,
+        "faces": 760,
+        "name": "goblin_heavy_r6_Head",
+        "verticesInsideBody": 0
+      },
+      {
+        "vertices": 784,
+        "faces": 1516,
+        "name": "goblin_heavy_r6_Torso",
+        "verticesInsideBody": 0
+      },
+      {
+        "vertices": 476,
+        "faces": 920,
+        "name": "goblin_heavy_r6_Left_Arm",
+        "verticesInsideBody": 5
+      },
+      {
+        "vertices": 476,
+        "faces": 920,
+        "name": "goblin_heavy_r6_Right_Arm",
+        "verticesInsideBody": 2
+      },
+      {
+        "vertices": 476,
+        "faces": 924,
+        "name": "goblin_heavy_r6_Left_Leg",
+        "verticesInsideBody": 0
+      },
+      {
+        "vertices": 476,
+        "faces": 924,
+        "name": "goblin_heavy_r6_Right_Leg",
+        "verticesInsideBody": 0
+      }
+    ],
+    "label": "SyntheticGait",
+    "phase": 3.979350694547071,
+    "follow": {
+      "maps": 3,
+      "scope": "SYNTHETIC_EDIT_FOLLOW",
+      "bodyLimbsUnmodified": true,
+      "uvConvention": "CORNER_U_1_MINUS_V",
+      "fitStatus": "UNVALIDATED",
+      "hiddenLegacyOverlays": 9,
+      "kit": "heavy",
+      "scale": 1,
+      "geometry": "ORIGINAL_BLOCK_STYLE_ADAPTATION",
+      "parts": 6
+    },
+    "verticesInsideBody": 7
+  },
+  {
+    "minY": -0.03517782688140869,
+    "parts": [
+      {
+        "vertices": 392,
+        "faces": 760,
+        "name": "goblin_heavy_r6_Head",
+        "verticesInsideBody": 0
+      },
+      {
+        "vertices": 784,
+        "faces": 1516,
+        "name": "goblin_heavy_r6_Torso",
+        "verticesInsideBody": 0
+      },
+      {
+        "vertices": 476,
+        "faces": 920,
+        "name": "goblin_heavy_r6_Left_Arm",
+        "verticesInsideBody": 5
+      },
+      {
+        "vertices": 476,
+        "faces": 920,
+        "name": "goblin_heavy_r6_Right_Arm",
+        "verticesInsideBody": 3
+      },
+      {
+        "vertices": 476,
+        "faces": 924,
+        "name": "goblin_heavy_r6_Left_Leg",
+        "verticesInsideBody": 0
+      },
+      {
+        "vertices": 476,
+        "faces": 924,
+        "name": "goblin_heavy_r6_Right_Leg",
+        "verticesInsideBody": 0
+      }
+    ],
+    "label": "SyntheticGait",
+    "phase": 4.084070449666731,
+    "follow": {
+      "maps": 3,
+      "scope": "SYNTHETIC_EDIT_FOLLOW",
+      "bodyLimbsUnmodified": true,
+      "uvConvention": "CORNER_U_1_MINUS_V",
+      "fitStatus": "UNVALIDATED",
+      "hiddenLegacyOverlays": 9,
+      "kit": "heavy",
+      "scale": 1,
+      "geometry": "ORIGINAL_BLOCK_STYLE_ADAPTATION",
+      "parts": 6
+    },
+    "verticesInsideBody": 8
+  },
+  {
+    "minY": -0.03355675935745239,
+    "parts": [
+      {
+        "vertices": 392,
+        "faces": 760,
+        "name": "goblin_heavy_r6_Head",
+        "verticesInsideBody": 0
+      },
+      {
+        "vertices": 784,
+        "faces": 1516,
+        "name": "goblin_heavy_r6_Torso",
+        "verticesInsideBody": 0
+      },
+      {
+        "vertices": 476,
+        "faces": 920,
+        "name": "goblin_heavy_r6_Left_Arm",
+        "verticesInsideBody": 4
+      },
+      {
+        "vertices": 476,
+        "faces": 920,
+        "name": "goblin_heavy_r6_Right_Arm",
+        "verticesInsideBody": 3
+      },
+      {
+        "vertices": 476,
+        "faces": 924,
+        "name": "goblin_heavy_r6_Left_Leg",
+        "verticesInsideBody": 0
+      },
+      {
+        "vertices": 476,
+        "faces": 924,
+        "name": "goblin_heavy_r6_Right_Leg",
+        "verticesInsideBody": 0
+      }
+    ],
+    "label": "SyntheticGait",
+    "phase": 4.1887902047863905,
+    "follow": {
+      "maps": 3,
+      "scope": "SYNTHETIC_EDIT_FOLLOW",
+      "bodyLimbsUnmodified": true,
+      "uvConvention": "CORNER_U_1_MINUS_V",
+      "fitStatus": "UNVALIDATED",
+      "hiddenLegacyOverlays": 9,
+      "kit": "heavy",
+      "scale": 1,
+      "geometry": "ORIGINAL_BLOCK_STYLE_ADAPTATION",
+      "parts": 6
+    },
+    "verticesInsideBody": 7
+  },
+  {
+    "minY": -0.03209775686264038,
+    "parts": [
+      {
+        "vertices": 392,
+        "faces": 760,
+        "name": "goblin_heavy_r6_Head",
+        "verticesInsideBody": 0
+      },
+      {
+        "vertices": 784,
+        "faces": 1516,
+        "name": "goblin_heavy_r6_Torso",
+        "verticesInsideBody": 0
+      },
+      {
+        "vertices": 476,
+        "faces": 920,
+        "name": "goblin_heavy_r6_Left_Arm",
+        "verticesInsideBody": 4
+      },
+      {
+        "vertices": 476,
+        "faces": 920,
+        "name": "goblin_heavy_r6_Right_Arm",
+        "verticesInsideBody": 4
+      },
+      {
+        "vertices": 476,
+        "faces": 924,
+        "name": "goblin_heavy_r6_Left_Leg",
+        "verticesInsideBody": 0
+      },
+      {
+        "vertices": 476,
+        "faces": 924,
+        "name": "goblin_heavy_r6_Right_Leg",
+        "verticesInsideBody": 0
+      }
+    ],
+    "label": "SyntheticGait",
+    "phase": 4.29350995990605,
+    "follow": {
+      "maps": 3,
+      "scope": "SYNTHETIC_EDIT_FOLLOW",
+      "bodyLimbsUnmodified": true,
+      "uvConvention": "CORNER_U_1_MINUS_V",
+      "fitStatus": "UNVALIDATED",
+      "hiddenLegacyOverlays": 9,
+      "kit": "heavy",
+      "scale": 1,
+      "geometry": "ORIGINAL_BLOCK_STYLE_ADAPTATION",
+      "parts": 6
+    },
+    "verticesInsideBody": 8
+  },
+  {
+    "minY": -0.0304071307182312,
+    "parts": [
+      {
+        "vertices": 392,
+        "faces": 760,
+        "name": "goblin_heavy_r6_Head",
+        "verticesInsideBody": 0
+      },
+      {
+        "vertices": 784,
+        "faces": 1516,
+        "name": "goblin_heavy_r6_Torso",
+        "verticesInsideBody": 0
+      },
+      {
+        "vertices": 476,
+        "faces": 920,
+        "name": "goblin_heavy_r6_Left_Arm",
+        "verticesInsideBody": 4
+      },
+      {
+        "vertices": 476,
+        "faces": 920,
+        "name": "goblin_heavy_r6_Right_Arm",
+        "verticesInsideBody": 4
+      },
+      {
+        "vertices": 476,
+        "faces": 924,
+        "name": "goblin_heavy_r6_Left_Leg",
+        "verticesInsideBody": 0
+      },
+      {
+        "vertices": 476,
+        "faces": 924,
+        "name": "goblin_heavy_r6_Right_Leg",
+        "verticesInsideBody": 0
+      }
+    ],
+    "label": "SyntheticGait",
+    "phase": 4.39822971502571,
+    "follow": {
+      "maps": 3,
+      "scope": "SYNTHETIC_EDIT_FOLLOW",
+      "bodyLimbsUnmodified": true,
+      "uvConvention": "CORNER_U_1_MINUS_V",
+      "fitStatus": "UNVALIDATED",
+      "hiddenLegacyOverlays": 9,
+      "kit": "heavy",
+      "scale": 1,
+      "geometry": "ORIGINAL_BLOCK_STYLE_ADAPTATION",
+      "parts": 6
+    },
+    "verticesInsideBody": 8
+  },
+  {
+    "minY": -0.02882629632949829,
+    "parts": [
+      {
+        "vertices": 392,
+        "faces": 760,
+        "name": "goblin_heavy_r6_Head",
+        "verticesInsideBody": 0
+      },
+      {
+        "vertices": 784,
+        "faces": 1516,
+        "name": "goblin_heavy_r6_Torso",
+        "verticesInsideBody": 0
+      },
+      {
+        "vertices": 476,
+        "faces": 920,
+        "name": "goblin_heavy_r6_Left_Arm",
+        "verticesInsideBody": 4
+      },
+      {
+        "vertices": 476,
+        "faces": 920,
+        "name": "goblin_heavy_r6_Right_Arm",
+        "verticesInsideBody": 4
+      },
+      {
+        "vertices": 476,
+        "faces": 924,
+        "name": "goblin_heavy_r6_Left_Leg",
+        "verticesInsideBody": 0
+      },
+      {
+        "vertices": 476,
+        "faces": 924,
+        "name": "goblin_heavy_r6_Right_Leg",
+        "verticesInsideBody": 0
+      }
+    ],
+    "label": "SyntheticGait",
+    "phase": 4.50294947014537,
+    "follow": {
+      "maps": 3,
+      "scope": "SYNTHETIC_EDIT_FOLLOW",
+      "bodyLimbsUnmodified": true,
+      "uvConvention": "CORNER_U_1_MINUS_V",
+      "fitStatus": "UNVALIDATED",
+      "hiddenLegacyOverlays": 9,
+      "kit": "heavy",
+      "scale": 1,
+      "geometry": "ORIGINAL_BLOCK_STYLE_ADAPTATION",
+      "parts": 6
+    },
+    "verticesInsideBody": 8
+  },
+  {
+    "minY": -0.02772468328475952,
+    "parts": [
+      {
+        "vertices": 392,
+        "faces": 760,
+        "name": "goblin_heavy_r6_Head",
+        "verticesInsideBody": 0
+      },
+      {
+        "vertices": 784,
+        "faces": 1516,
+        "name": "goblin_heavy_r6_Torso",
+        "verticesInsideBody": 0
+      },
+      {
+        "vertices": 476,
+        "faces": 920,
+        "name": "goblin_heavy_r6_Left_Arm",
+        "verticesInsideBody": 4
+      },
+      {
+        "vertices": 476,
+        "faces": 920,
+        "name": "goblin_heavy_r6_Right_Arm",
+        "verticesInsideBody": 4
+      },
+      {
+        "vertices": 476,
+        "faces": 924,
+        "name": "goblin_heavy_r6_Left_Leg",
+        "verticesInsideBody": 0
+      },
+      {
+        "vertices": 476,
+        "faces": 924,
+        "name": "goblin_heavy_r6_Right_Leg",
+        "verticesInsideBody": 0
+      }
+    ],
+    "label": "SyntheticGait",
+    "phase": 4.607669225265029,
+    "follow": {
+      "maps": 3,
+      "scope": "SYNTHETIC_EDIT_FOLLOW",
+      "bodyLimbsUnmodified": true,
+      "uvConvention": "CORNER_U_1_MINUS_V",
+      "fitStatus": "UNVALIDATED",
+      "hiddenLegacyOverlays": 9,
+      "kit": "heavy",
+      "scale": 1,
+      "geometry": "ORIGINAL_BLOCK_STYLE_ADAPTATION",
+      "parts": 6
+    },
+    "verticesInsideBody": 8
+  },
+  {
+    "minY": -0.027331531047821045,
+    "parts": [
+      {
+        "vertices": 392,
+        "faces": 760,
+        "name": "goblin_heavy_r6_Head",
+        "verticesInsideBody": 0
+      },
+      {
+        "vertices": 784,
+        "faces": 1516,
+        "name": "goblin_heavy_r6_Torso",
+        "verticesInsideBody": 0
+      },
+      {
+        "vertices": 476,
+        "faces": 920,
+        "name": "goblin_heavy_r6_Left_Arm",
+        "verticesInsideBody": 4
+      },
+      {
+        "vertices": 476,
+        "faces": 920,
+        "name": "goblin_heavy_r6_Right_Arm",
+        "verticesInsideBody": 4
+      },
+      {
+        "vertices": 476,
+        "faces": 924,
+        "name": "goblin_heavy_r6_Left_Leg",
+        "verticesInsideBody": 0
+      },
+      {
+        "vertices": 476,
+        "faces": 924,
+        "name": "goblin_heavy_r6_Right_Leg",
+        "verticesInsideBody": 0
+      }
+    ],
+    "label": "SyntheticGait",
+    "phase": 4.71238898038469,
+    "follow": {
+      "maps": 3,
+      "scope": "SYNTHETIC_EDIT_FOLLOW",
+      "bodyLimbsUnmodified": true,
+      "uvConvention": "CORNER_U_1_MINUS_V",
+      "fitStatus": "UNVALIDATED",
+      "hiddenLegacyOverlays": 9,
+      "kit": "heavy",
+      "scale": 1,
+      "geometry": "ORIGINAL_BLOCK_STYLE_ADAPTATION",
+      "parts": 6
+    },
+    "verticesInsideBody": 8
+  },
+  {
+    "minY": -0.02772468328475952,
+    "parts": [
+      {
+        "vertices": 392,
+        "faces": 760,
+        "name": "goblin_heavy_r6_Head",
+        "verticesInsideBody": 0
+      },
+      {
+        "vertices": 784,
+        "faces": 1516,
+        "name": "goblin_heavy_r6_Torso",
+        "verticesInsideBody": 0
+      },
+      {
+        "vertices": 476,
+        "faces": 920,
+        "name": "goblin_heavy_r6_Left_Arm",
+        "verticesInsideBody": 4
+      },
+      {
+        "vertices": 476,
+        "faces": 920,
+        "name": "goblin_heavy_r6_Right_Arm",
+        "verticesInsideBody": 4
+      },
+      {
+        "vertices": 476,
+        "faces": 924,
+        "name": "goblin_heavy_r6_Left_Leg",
+        "verticesInsideBody": 0
+      },
+      {
+        "vertices": 476,
+        "faces": 924,
+        "name": "goblin_heavy_r6_Right_Leg",
+        "verticesInsideBody": 0
+      }
+    ],
+    "label": "SyntheticGait",
+    "phase": 4.817108735504349,
+    "follow": {
+      "maps": 3,
+      "scope": "SYNTHETIC_EDIT_FOLLOW",
+      "bodyLimbsUnmodified": true,
+      "uvConvention": "CORNER_U_1_MINUS_V",
+      "fitStatus": "UNVALIDATED",
+      "hiddenLegacyOverlays": 9,
+      "kit": "heavy",
+      "scale": 1,
+      "geometry": "ORIGINAL_BLOCK_STYLE_ADAPTATION",
+      "parts": 6
+    },
+    "verticesInsideBody": 8
+  },
+  {
+    "minY": -0.02882629632949829,
+    "parts": [
+      {
+        "vertices": 392,
+        "faces": 760,
+        "name": "goblin_heavy_r6_Head",
+        "verticesInsideBody": 0
+      },
+      {
+        "vertices": 784,
+        "faces": 1516,
+        "name": "goblin_heavy_r6_Torso",
+        "verticesInsideBody": 0
+      },
+      {
+        "vertices": 476,
+        "faces": 920,
+        "name": "goblin_heavy_r6_Left_Arm",
+        "verticesInsideBody": 4
+      },
+      {
+        "vertices": 476,
+        "faces": 920,
+        "name": "goblin_heavy_r6_Right_Arm",
+        "verticesInsideBody": 4
+      },
+      {
+        "vertices": 476,
+        "faces": 924,
+        "name": "goblin_heavy_r6_Left_Leg",
+        "verticesInsideBody": 0
+      },
+      {
+        "vertices": 476,
+        "faces": 924,
+        "name": "goblin_heavy_r6_Right_Leg",
+        "verticesInsideBody": 0
+      }
+    ],
+    "label": "SyntheticGait",
+    "phase": 4.9218284906240095,
+    "follow": {
+      "maps": 3,
+      "scope": "SYNTHETIC_EDIT_FOLLOW",
+      "bodyLimbsUnmodified": true,
+      "uvConvention": "CORNER_U_1_MINUS_V",
+      "fitStatus": "UNVALIDATED",
+      "hiddenLegacyOverlays": 9,
+      "kit": "heavy",
+      "scale": 1,
+      "geometry": "ORIGINAL_BLOCK_STYLE_ADAPTATION",
+      "parts": 6
+    },
+    "verticesInsideBody": 8
+  },
+  {
+    "minY": -0.0304071307182312,
+    "parts": [
+      {
+        "vertices": 392,
+        "faces": 760,
+        "name": "goblin_heavy_r6_Head",
+        "verticesInsideBody": 0
+      },
+      {
+        "vertices": 784,
+        "faces": 1516,
+        "name": "goblin_heavy_r6_Torso",
+        "verticesInsideBody": 0
+      },
+      {
+        "vertices": 476,
+        "faces": 920,
+        "name": "goblin_heavy_r6_Left_Arm",
+        "verticesInsideBody": 4
+      },
+      {
+        "vertices": 476,
+        "faces": 920,
+        "name": "goblin_heavy_r6_Right_Arm",
+        "verticesInsideBody": 4
+      },
+      {
+        "vertices": 476,
+        "faces": 924,
+        "name": "goblin_heavy_r6_Left_Leg",
+        "verticesInsideBody": 0
+      },
+      {
+        "vertices": 476,
+        "faces": 924,
+        "name": "goblin_heavy_r6_Right_Leg",
+        "verticesInsideBody": 0
+      }
+    ],
+    "label": "SyntheticGait",
+    "phase": 5.026548245743669,
+    "follow": {
+      "maps": 3,
+      "scope": "SYNTHETIC_EDIT_FOLLOW",
+      "bodyLimbsUnmodified": true,
+      "uvConvention": "CORNER_U_1_MINUS_V",
+      "fitStatus": "UNVALIDATED",
+      "hiddenLegacyOverlays": 9,
+      "kit": "heavy",
+      "scale": 1,
+      "geometry": "ORIGINAL_BLOCK_STYLE_ADAPTATION",
+      "parts": 6
+    },
+    "verticesInsideBody": 8
+  },
+  {
+    "minY": -0.03209775686264038,
+    "parts": [
+      {
+        "vertices": 392,
+        "faces": 760,
+        "name": "goblin_heavy_r6_Head",
+        "verticesInsideBody": 0
+      },
+      {
+        "vertices": 784,
+        "faces": 1516,
+        "name": "goblin_heavy_r6_Torso",
+        "verticesInsideBody": 0
+      },
+      {
+        "vertices": 476,
+        "faces": 920,
+        "name": "goblin_heavy_r6_Left_Arm",
+        "verticesInsideBody": 4
+      },
+      {
+        "vertices": 476,
+        "faces": 920,
+        "name": "goblin_heavy_r6_Right_Arm",
+        "verticesInsideBody": 4
+      },
+      {
+        "vertices": 476,
+        "faces": 924,
+        "name": "goblin_heavy_r6_Left_Leg",
+        "verticesInsideBody": 0
+      },
+      {
+        "vertices": 476,
+        "faces": 924,
+        "name": "goblin_heavy_r6_Right_Leg",
+        "verticesInsideBody": 0
+      }
+    ],
+    "label": "SyntheticGait",
+    "phase": 5.1312680008633285,
+    "follow": {
+      "maps": 3,
+      "scope": "SYNTHETIC_EDIT_FOLLOW",
+      "bodyLimbsUnmodified": true,
+      "uvConvention": "CORNER_U_1_MINUS_V",
+      "fitStatus": "UNVALIDATED",
+      "hiddenLegacyOverlays": 9,
+      "kit": "heavy",
+      "scale": 1,
+      "geometry": "ORIGINAL_BLOCK_STYLE_ADAPTATION",
+      "parts": 6
+    },
+    "verticesInsideBody": 8
+  },
+  {
+    "minY": -0.03355675935745239,
+    "parts": [
+      {
+        "vertices": 392,
+        "faces": 760,
+        "name": "goblin_heavy_r6_Head",
+        "verticesInsideBody": 0
+      },
+      {
+        "vertices": 784,
+        "faces": 1516,
+        "name": "goblin_heavy_r6_Torso",
+        "verticesInsideBody": 0
+      },
+      {
+        "vertices": 476,
+        "faces": 920,
+        "name": "goblin_heavy_r6_Left_Arm",
+        "verticesInsideBody": 4
+      },
+      {
+        "vertices": 476,
+        "faces": 920,
+        "name": "goblin_heavy_r6_Right_Arm",
+        "verticesInsideBody": 3
+      },
+      {
+        "vertices": 476,
+        "faces": 924,
+        "name": "goblin_heavy_r6_Left_Leg",
+        "verticesInsideBody": 0
+      },
+      {
+        "vertices": 476,
+        "faces": 924,
+        "name": "goblin_heavy_r6_Right_Leg",
+        "verticesInsideBody": 0
+      }
+    ],
+    "label": "SyntheticGait",
+    "phase": 5.235987755982989,
+    "follow": {
+      "maps": 3,
+      "scope": "SYNTHETIC_EDIT_FOLLOW",
+      "bodyLimbsUnmodified": true,
+      "uvConvention": "CORNER_U_1_MINUS_V",
+      "fitStatus": "UNVALIDATED",
+      "hiddenLegacyOverlays": 9,
+      "kit": "heavy",
+      "scale": 1,
+      "geometry": "ORIGINAL_BLOCK_STYLE_ADAPTATION",
+      "parts": 6
+    },
+    "verticesInsideBody": 7
+  },
+  {
+    "minY": -0.03517782688140869,
+    "parts": [
+      {
+        "vertices": 392,
+        "faces": 760,
+        "name": "goblin_heavy_r6_Head",
+        "verticesInsideBody": 0
+      },
+      {
+        "vertices": 784,
+        "faces": 1516,
+        "name": "goblin_heavy_r6_Torso",
+        "verticesInsideBody": 0
+      },
+      {
+        "vertices": 476,
+        "faces": 920,
+        "name": "goblin_heavy_r6_Left_Arm",
+        "verticesInsideBody": 5
+      },
+      {
+        "vertices": 476,
+        "faces": 920,
+        "name": "goblin_heavy_r6_Right_Arm",
+        "verticesInsideBody": 3
+      },
+      {
+        "vertices": 476,
+        "faces": 924,
+        "name": "goblin_heavy_r6_Left_Leg",
+        "verticesInsideBody": 0
+      },
+      {
+        "vertices": 476,
+        "faces": 924,
+        "name": "goblin_heavy_r6_Right_Leg",
+        "verticesInsideBody": 0
+      }
+    ],
+    "label": "SyntheticGait",
+    "phase": 5.340707511102648,
+    "follow": {
+      "maps": 3,
+      "scope": "SYNTHETIC_EDIT_FOLLOW",
+      "bodyLimbsUnmodified": true,
+      "uvConvention": "CORNER_U_1_MINUS_V",
+      "fitStatus": "UNVALIDATED",
+      "hiddenLegacyOverlays": 9,
+      "kit": "heavy",
+      "scale": 1,
+      "geometry": "ORIGINAL_BLOCK_STYLE_ADAPTATION",
+      "parts": 6
+    },
+    "verticesInsideBody": 8
+  },
+  {
+    "minY": -0.03538322448730469,
+    "parts": [
+      {
+        "vertices": 392,
+        "faces": 760,
+        "name": "goblin_heavy_r6_Head",
+        "verticesInsideBody": 0
+      },
+      {
+        "vertices": 784,
+        "faces": 1516,
+        "name": "goblin_heavy_r6_Torso",
+        "verticesInsideBody": 0
+      },
+      {
+        "vertices": 476,
+        "faces": 920,
+        "name": "goblin_heavy_r6_Left_Arm",
+        "verticesInsideBody": 5
+      },
+      {
+        "vertices": 476,
+        "faces": 920,
+        "name": "goblin_heavy_r6_Right_Arm",
+        "verticesInsideBody": 2
+      },
+      {
+        "vertices": 476,
+        "faces": 924,
+        "name": "goblin_heavy_r6_Left_Leg",
+        "verticesInsideBody": 0
+      },
+      {
+        "vertices": 476,
+        "faces": 924,
+        "name": "goblin_heavy_r6_Right_Leg",
+        "verticesInsideBody": 0
+      }
+    ],
+    "label": "SyntheticGait",
+    "phase": 5.445427266222309,
+    "follow": {
+      "maps": 3,
+      "scope": "SYNTHETIC_EDIT_FOLLOW",
+      "bodyLimbsUnmodified": true,
+      "uvConvention": "CORNER_U_1_MINUS_V",
+      "fitStatus": "UNVALIDATED",
+      "hiddenLegacyOverlays": 9,
+      "kit": "heavy",
+      "scale": 1,
+      "geometry": "ORIGINAL_BLOCK_STYLE_ADAPTATION",
+      "parts": 6
+    },
+    "verticesInsideBody": 7
+  },
+  {
+    "minY": -0.03348046541213989,
+    "parts": [
+      {
+        "vertices": 392,
+        "faces": 760,
+        "name": "goblin_heavy_r6_Head",
+        "verticesInsideBody": 0
+      },
+      {
+        "vertices": 784,
+        "faces": 1516,
+        "name": "goblin_heavy_r6_Torso",
+        "verticesInsideBody": 0
+      },
+      {
+        "vertices": 476,
+        "faces": 920,
+        "name": "goblin_heavy_r6_Left_Arm",
+        "verticesInsideBody": 4
+      },
+      {
+        "vertices": 476,
+        "faces": 920,
+        "name": "goblin_heavy_r6_Right_Arm",
+        "verticesInsideBody": 2
+      },
+      {
+        "vertices": 476,
+        "faces": 924,
+        "name": "goblin_heavy_r6_Left_Leg",
+        "verticesInsideBody": 0
+      },
+      {
+        "vertices": 476,
+        "faces": 924,
+        "name": "goblin_heavy_r6_Right_Leg",
+        "verticesInsideBody": 0
+      }
+    ],
+    "label": "SyntheticGait",
+    "phase": 5.550147021341968,
+    "follow": {
+      "maps": 3,
+      "scope": "SYNTHETIC_EDIT_FOLLOW",
+      "bodyLimbsUnmodified": true,
+      "uvConvention": "CORNER_U_1_MINUS_V",
+      "fitStatus": "UNVALIDATED",
+      "hiddenLegacyOverlays": 9,
+      "kit": "heavy",
+      "scale": 1,
+      "geometry": "ORIGINAL_BLOCK_STYLE_ADAPTATION",
+      "parts": 6
+    },
+    "verticesInsideBody": 6
+  },
+  {
+    "minY": -0.028787672519683838,
+    "parts": [
+      {
+        "vertices": 392,
+        "faces": 760,
+        "name": "goblin_heavy_r6_Head",
+        "verticesInsideBody": 0
+      },
+      {
+        "vertices": 784,
+        "faces": 1516,
+        "name": "goblin_heavy_r6_Torso",
+        "verticesInsideBody": 0
+      },
+      {
+        "vertices": 476,
+        "faces": 920,
+        "name": "goblin_heavy_r6_Left_Arm",
+        "verticesInsideBody": 4
+      },
+      {
+        "vertices": 476,
+        "faces": 920,
+        "name": "goblin_heavy_r6_Right_Arm",
+        "verticesInsideBody": 2
+      },
+      {
+        "vertices": 476,
+        "faces": 924,
+        "name": "goblin_heavy_r6_Left_Leg",
+        "verticesInsideBody": 0
+      },
+      {
+        "vertices": 476,
+        "faces": 924,
+        "name": "goblin_heavy_r6_Right_Leg",
+        "verticesInsideBody": 0
+      }
+    ],
+    "label": "SyntheticGait",
+    "phase": 5.654866776461628,
+    "follow": {
+      "maps": 3,
+      "scope": "SYNTHETIC_EDIT_FOLLOW",
+      "bodyLimbsUnmodified": true,
+      "uvConvention": "CORNER_U_1_MINUS_V",
+      "fitStatus": "UNVALIDATED",
+      "hiddenLegacyOverlays": 9,
+      "kit": "heavy",
+      "scale": 1,
+      "geometry": "ORIGINAL_BLOCK_STYLE_ADAPTATION",
+      "parts": 6
+    },
+    "verticesInsideBody": 6
+  },
+  {
+    "minY": -0.02067410945892334,
+    "parts": [
+      {
+        "vertices": 392,
+        "faces": 760,
+        "name": "goblin_heavy_r6_Head",
+        "verticesInsideBody": 0
+      },
+      {
+        "vertices": 784,
+        "faces": 1516,
+        "name": "goblin_heavy_r6_Torso",
+        "verticesInsideBody": 0
+      },
+      {
+        "vertices": 476,
+        "faces": 920,
+        "name": "goblin_heavy_r6_Left_Arm",
+        "verticesInsideBody": 5
+      },
+      {
+        "vertices": 476,
+        "faces": 920,
+        "name": "goblin_heavy_r6_Right_Arm",
+        "verticesInsideBody": 2
+      },
+      {
+        "vertices": 476,
+        "faces": 924,
+        "name": "goblin_heavy_r6_Left_Leg",
+        "verticesInsideBody": 0
+      },
+      {
+        "vertices": 476,
+        "faces": 924,
+        "name": "goblin_heavy_r6_Right_Leg",
+        "verticesInsideBody": 0
+      }
+    ],
+    "label": "SyntheticGait",
+    "phase": 5.759586531581288,
+    "follow": {
+      "maps": 3,
+      "scope": "SYNTHETIC_EDIT_FOLLOW",
+      "bodyLimbsUnmodified": true,
+      "uvConvention": "CORNER_U_1_MINUS_V",
+      "fitStatus": "UNVALIDATED",
+      "hiddenLegacyOverlays": 9,
+      "kit": "heavy",
+      "scale": 1,
+      "geometry": "ORIGINAL_BLOCK_STYLE_ADAPTATION",
+      "parts": 6
+    },
+    "verticesInsideBody": 7
+  },
+  {
+    "minY": -0.008600354194641113,
+    "parts": [
+      {
+        "vertices": 392,
+        "faces": 760,
+        "name": "goblin_heavy_r6_Head",
+        "verticesInsideBody": 0
+      },
+      {
+        "vertices": 784,
+        "faces": 1516,
+        "name": "goblin_heavy_r6_Torso",
+        "verticesInsideBody": 0
+      },
+      {
+        "vertices": 476,
+        "faces": 920,
+        "name": "goblin_heavy_r6_Left_Arm",
+        "verticesInsideBody": 4
+      },
+      {
+        "vertices": 476,
+        "faces": 920,
+        "name": "goblin_heavy_r6_Right_Arm",
+        "verticesInsideBody": 2
+      },
+      {
+        "vertices": 476,
+        "faces": 924,
+        "name": "goblin_heavy_r6_Left_Leg",
+        "verticesInsideBody": 0
+      },
+      {
+        "vertices": 476,
+        "faces": 924,
+        "name": "goblin_heavy_r6_Right_Leg",
+        "verticesInsideBody": 0
+      }
+    ],
+    "label": "SyntheticGait",
+    "phase": 5.8643062867009474,
+    "follow": {
+      "maps": 3,
+      "scope": "SYNTHETIC_EDIT_FOLLOW",
+      "bodyLimbsUnmodified": true,
+      "uvConvention": "CORNER_U_1_MINUS_V",
+      "fitStatus": "UNVALIDATED",
+      "hiddenLegacyOverlays": 9,
+      "kit": "heavy",
+      "scale": 1,
+      "geometry": "ORIGINAL_BLOCK_STYLE_ADAPTATION",
+      "parts": 6
+    },
+    "verticesInsideBody": 6
+  },
+  {
+    "minY": 0.007844626903533936,
+    "parts": [
+      {
+        "vertices": 392,
+        "faces": 760,
+        "name": "goblin_heavy_r6_Head",
+        "verticesInsideBody": 0
+      },
+      {
+        "vertices": 784,
+        "faces": 1516,
+        "name": "goblin_heavy_r6_Torso",
+        "verticesInsideBody": 0
+      },
+      {
+        "vertices": 476,
+        "faces": 920,
+        "name": "goblin_heavy_r6_Left_Arm",
+        "verticesInsideBody": 4
+      },
+      {
+        "vertices": 476,
+        "faces": 920,
+        "name": "goblin_heavy_r6_Right_Arm",
+        "verticesInsideBody": 2
+      },
+      {
+        "vertices": 476,
+        "faces": 924,
+        "name": "goblin_heavy_r6_Left_Leg",
+        "verticesInsideBody": 0
+      },
+      {
+        "vertices": 476,
+        "faces": 924,
+        "name": "goblin_heavy_r6_Right_Leg",
+        "verticesInsideBody": 0
+      }
+    ],
+    "label": "SyntheticGait",
+    "phase": 5.969026041820607,
+    "follow": {
+      "maps": 3,
+      "scope": "SYNTHETIC_EDIT_FOLLOW",
+      "bodyLimbsUnmodified": true,
+      "uvConvention": "CORNER_U_1_MINUS_V",
+      "fitStatus": "UNVALIDATED",
+      "hiddenLegacyOverlays": 9,
+      "kit": "heavy",
+      "scale": 1,
+      "geometry": "ORIGINAL_BLOCK_STYLE_ADAPTATION",
+      "parts": 6
+    },
+    "verticesInsideBody": 6
+  },
+  {
+    "minY": 0.028912901878356934,
+    "parts": [
+      {
+        "vertices": 392,
+        "faces": 760,
+        "name": "goblin_heavy_r6_Head",
+        "verticesInsideBody": 0
+      },
+      {
+        "vertices": 784,
+        "faces": 1516,
+        "name": "goblin_heavy_r6_Torso",
+        "verticesInsideBody": 0
+      },
+      {
+        "vertices": 476,
+        "faces": 920,
+        "name": "goblin_heavy_r6_Left_Arm",
+        "verticesInsideBody": 2
+      },
+      {
+        "vertices": 476,
+        "faces": 920,
+        "name": "goblin_heavy_r6_Right_Arm",
+        "verticesInsideBody": 2
+      },
+      {
+        "vertices": 476,
+        "faces": 924,
+        "name": "goblin_heavy_r6_Left_Leg",
+        "verticesInsideBody": 0
+      },
+      {
+        "vertices": 476,
+        "faces": 924,
+        "name": "goblin_heavy_r6_Right_Leg",
+        "verticesInsideBody": 0
+      }
+    ],
+    "label": "SyntheticGait",
+    "phase": 6.073745796940267,
+    "follow": {
+      "maps": 3,
+      "scope": "SYNTHETIC_EDIT_FOLLOW",
+      "bodyLimbsUnmodified": true,
+      "uvConvention": "CORNER_U_1_MINUS_V",
+      "fitStatus": "UNVALIDATED",
+      "hiddenLegacyOverlays": 9,
+      "kit": "heavy",
+      "scale": 1,
+      "geometry": "ORIGINAL_BLOCK_STYLE_ADAPTATION",
+      "parts": 6
+    },
+    "verticesInsideBody": 4
+  },
+  {
+    "minY": 0.054673969745635986,
+    "parts": [
+      {
+        "vertices": 392,
+        "faces": 760,
+        "name": "goblin_heavy_r6_Head",
+        "verticesInsideBody": 0
+      },
+      {
+        "vertices": 784,
+        "faces": 1516,
+        "name": "goblin_heavy_r6_Torso",
+        "verticesInsideBody": 0
+      },
+      {
+        "vertices": 476,
+        "faces": 920,
+        "name": "goblin_heavy_r6_Left_Arm",
+        "verticesInsideBody": 2
+      },
+      {
+        "vertices": 476,
+        "faces": 920,
+        "name": "goblin_heavy_r6_Right_Arm",
+        "verticesInsideBody": 1
+      },
+      {
+        "vertices": 476,
+        "faces": 924,
+        "name": "goblin_heavy_r6_Left_Leg",
+        "verticesInsideBody": 0
+      },
+      {
+        "vertices": 476,
+        "faces": 924,
+        "name": "goblin_heavy_r6_Right_Leg",
+        "verticesInsideBody": 0
+      }
+    ],
+    "label": "SyntheticGait",
+    "phase": 6.178465552059927,
+    "follow": {
+      "maps": 3,
+      "scope": "SYNTHETIC_EDIT_FOLLOW",
+      "bodyLimbsUnmodified": true,
+      "uvConvention": "CORNER_U_1_MINUS_V",
+      "fitStatus": "UNVALIDATED",
+      "hiddenLegacyOverlays": 9,
+      "kit": "heavy",
+      "scale": 1,
+      "geometry": "ORIGINAL_BLOCK_STYLE_ADAPTATION",
+      "parts": 6
+    },
+    "verticesInsideBody": 3
+  },
+  {
+    "minY": 0.08500003814697266,
+    "parts": [
+      {
+        "vertices": 392,
+        "faces": 760,
+        "name": "goblin_heavy_r6_Head",
+        "verticesInsideBody": 0
+      },
+      {
+        "vertices": 784,
+        "faces": 1516,
+        "name": "goblin_heavy_r6_Torso",
+        "verticesInsideBody": 0
+      },
+      {
+        "vertices": 476,
+        "faces": 920,
+        "name": "goblin_heavy_r6_Left_Arm",
+        "verticesInsideBody": 0
+      },
+      {
+        "vertices": 476,
+        "faces": 920,
+        "name": "goblin_heavy_r6_Right_Arm",
+        "verticesInsideBody": 0
+      },
+      {
+        "vertices": 476,
+        "faces": 924,
+        "name": "goblin_heavy_r6_Left_Leg",
+        "verticesInsideBody": 0
+      },
+      {
+        "vertices": 476,
+        "faces": 924,
+        "name": "goblin_heavy_r6_Right_Leg",
+        "verticesInsideBody": 0
+      }
+    ],
+    "label": "SyntheticGait",
+    "phase": 6.283185307179585,
+    "follow": {
+      "maps": 3,
+      "scope": "SYNTHETIC_EDIT_FOLLOW",
+      "bodyLimbsUnmodified": true,
+      "uvConvention": "CORNER_U_1_MINUS_V",
+      "fitStatus": "UNVALIDATED",
+      "hiddenLegacyOverlays": 9,
+      "kit": "heavy",
+      "scale": 1,
+      "geometry": "ORIGINAL_BLOCK_STYLE_ADAPTATION",
+      "parts": 6
+    },
+    "verticesInsideBody": 0
+  },
+  {
+    "minY": 0.08500003814697266,
+    "parts": [
+      {
+        "vertices": 392,
+        "faces": 760,
+        "name": "goblin_heavy_r6_Head",
+        "verticesInsideBody": 0
+      },
+      {
+        "vertices": 784,
+        "faces": 1516,
+        "name": "goblin_heavy_r6_Torso",
+        "verticesInsideBody": 0
+      },
+      {
+        "vertices": 476,
+        "faces": 920,
+        "name": "goblin_heavy_r6_Left_Arm",
+        "verticesInsideBody": 0
+      },
+      {
+        "vertices": 476,
+        "faces": 920,
+        "name": "goblin_heavy_r6_Right_Arm",
+        "verticesInsideBody": 0
+      },
+      {
+        "vertices": 476,
+        "faces": 924,
+        "name": "goblin_heavy_r6_Left_Leg",
+        "verticesInsideBody": 0
+      },
+      {
+        "vertices": 476,
+        "faces": 924,
+        "name": "goblin_heavy_r6_Right_Leg",
+        "verticesInsideBody": 0
+      }
+    ],
+    "label": "SyntheticWarriorSlash",
+    "follow": {
+      "maps": 3,
+      "scope": "SYNTHETIC_EDIT_FOLLOW",
+      "bodyLimbsUnmodified": true,
+      "uvConvention": "CORNER_U_1_MINUS_V",
+      "fitStatus": "UNVALIDATED",
+      "hiddenLegacyOverlays": 9,
+      "kit": "heavy",
+      "scale": 1,
+      "geometry": "ORIGINAL_BLOCK_STYLE_ADAPTATION",
+      "parts": 6
+    },
+    "age": 0,
+    "verticesInsideBody": 0
+  },
+  {
+    "minY": 0.06913310289382935,
+    "parts": [
+      {
+        "vertices": 392,
+        "faces": 760,
+        "name": "goblin_heavy_r6_Head",
+        "verticesInsideBody": 0
+      },
+      {
+        "vertices": 784,
+        "faces": 1516,
+        "name": "goblin_heavy_r6_Torso",
+        "verticesInsideBody": 0
+      },
+      {
+        "vertices": 476,
+        "faces": 920,
+        "name": "goblin_heavy_r6_Left_Arm",
+        "verticesInsideBody": 2
+      },
+      {
+        "vertices": 476,
+        "faces": 920,
+        "name": "goblin_heavy_r6_Right_Arm",
+        "verticesInsideBody": 1
+      },
+      {
+        "vertices": 476,
+        "faces": 924,
+        "name": "goblin_heavy_r6_Left_Leg",
+        "verticesInsideBody": 0
+      },
+      {
+        "vertices": 476,
+        "faces": 924,
+        "name": "goblin_heavy_r6_Right_Leg",
+        "verticesInsideBody": 0
+      }
+    ],
+    "label": "SyntheticWarriorSlash",
+    "follow": {
+      "maps": 3,
+      "scope": "SYNTHETIC_EDIT_FOLLOW",
+      "bodyLimbsUnmodified": true,
+      "uvConvention": "CORNER_U_1_MINUS_V",
+      "fitStatus": "UNVALIDATED",
+      "hiddenLegacyOverlays": 9,
+      "kit": "heavy",
+      "scale": 1,
+      "geometry": "ORIGINAL_BLOCK_STYLE_ADAPTATION",
+      "parts": 6
+    },
+    "age": 0.0155,
+    "verticesInsideBody": 3
+  },
+  {
+    "minY": 0.030413925647735596,
+    "parts": [
+      {
+        "vertices": 392,
+        "faces": 760,
+        "name": "goblin_heavy_r6_Head",
+        "verticesInsideBody": 0
+      },
+      {
+        "vertices": 784,
+        "faces": 1516,
+        "name": "goblin_heavy_r6_Torso",
+        "verticesInsideBody": 0
+      },
+      {
+        "vertices": 476,
+        "faces": 920,
+        "name": "goblin_heavy_r6_Left_Arm",
+        "verticesInsideBody": 2
+      },
+      {
+        "vertices": 476,
+        "faces": 920,
+        "name": "goblin_heavy_r6_Right_Arm",
+        "verticesInsideBody": 0
+      },
+      {
+        "vertices": 476,
+        "faces": 924,
+        "name": "goblin_heavy_r6_Left_Leg",
+        "verticesInsideBody": 0
+      },
+      {
+        "vertices": 476,
+        "faces": 924,
+        "name": "goblin_heavy_r6_Right_Leg",
+        "verticesInsideBody": 0
+      }
+    ],
+    "label": "SyntheticWarriorSlash",
+    "follow": {
+      "maps": 3,
+      "scope": "SYNTHETIC_EDIT_FOLLOW",
+      "bodyLimbsUnmodified": true,
+      "uvConvention": "CORNER_U_1_MINUS_V",
+      "fitStatus": "UNVALIDATED",
+      "hiddenLegacyOverlays": 9,
+      "kit": "heavy",
+      "scale": 1,
+      "geometry": "ORIGINAL_BLOCK_STYLE_ADAPTATION",
+      "parts": 6
+    },
+    "age": 0.031,
+    "verticesInsideBody": 2
+  },
+  {
+    "minY": -0.017406105995178223,
+    "parts": [
+      {
+        "vertices": 392,
+        "faces": 760,
+        "name": "goblin_heavy_r6_Head",
+        "verticesInsideBody": 0
+      },
+      {
+        "vertices": 784,
+        "faces": 1516,
+        "name": "goblin_heavy_r6_Torso",
+        "verticesInsideBody": 0
+      },
+      {
+        "vertices": 476,
+        "faces": 920,
+        "name": "goblin_heavy_r6_Left_Arm",
+        "verticesInsideBody": 4
+      },
+      {
+        "vertices": 476,
+        "faces": 920,
+        "name": "goblin_heavy_r6_Right_Arm",
+        "verticesInsideBody": 0
+      },
+      {
+        "vertices": 476,
+        "faces": 924,
+        "name": "goblin_heavy_r6_Left_Leg",
+        "verticesInsideBody": 0
+      },
+      {
+        "vertices": 476,
+        "faces": 924,
+        "name": "goblin_heavy_r6_Right_Leg",
+        "verticesInsideBody": 0
+      }
+    ],
+    "label": "SyntheticWarriorSlash",
+    "follow": {
+      "maps": 3,
+      "scope": "SYNTHETIC_EDIT_FOLLOW",
+      "bodyLimbsUnmodified": true,
+      "uvConvention": "CORNER_U_1_MINUS_V",
+      "fitStatus": "UNVALIDATED",
+      "hiddenLegacyOverlays": 9,
+      "kit": "heavy",
+      "scale": 1,
+      "geometry": "ORIGINAL_BLOCK_STYLE_ADAPTATION",
+      "parts": 6
+    },
+    "age": 0.0465,
+    "verticesInsideBody": 4
+  },
+  {
+    "minY": -0.061845600605010986,
+    "parts": [
+      {
+        "vertices": 392,
+        "faces": 760,
+        "name": "goblin_heavy_r6_Head",
+        "verticesInsideBody": 0
+      },
+      {
+        "vertices": 784,
+        "faces": 1516,
+        "name": "goblin_heavy_r6_Torso",
+        "verticesInsideBody": 0
+      },
+      {
+        "vertices": 476,
+        "faces": 920,
+        "name": "goblin_heavy_r6_Left_Arm",
+        "verticesInsideBody": 4
+      },
+      {
+        "vertices": 476,
+        "faces": 920,
+        "name": "goblin_heavy_r6_Right_Arm",
+        "verticesInsideBody": 7
+      },
+      {
+        "vertices": 476,
+        "faces": 924,
+        "name": "goblin_heavy_r6_Left_Leg",
+        "verticesInsideBody": 0
+      },
+      {
+        "vertices": 476,
+        "faces": 924,
+        "name": "goblin_heavy_r6_Right_Leg",
+        "verticesInsideBody": 0
+      }
+    ],
+    "label": "SyntheticWarriorSlash",
+    "follow": {
+      "maps": 3,
+      "scope": "SYNTHETIC_EDIT_FOLLOW",
+      "bodyLimbsUnmodified": true,
+      "uvConvention": "CORNER_U_1_MINUS_V",
+      "fitStatus": "UNVALIDATED",
+      "hiddenLegacyOverlays": 9,
+      "kit": "heavy",
+      "scale": 1,
+      "geometry": "ORIGINAL_BLOCK_STYLE_ADAPTATION",
+      "parts": 6
+    },
+    "age": 0.062,
+    "verticesInsideBody": 11
+  },
+  {
+    "minY": -0.09401530027389526,
+    "parts": [
+      {
+        "vertices": 392,
+        "faces": 760,
+        "name": "goblin_heavy_r6_Head",
+        "verticesInsideBody": 0
+      },
+      {
+        "vertices": 784,
+        "faces": 1516,
+        "name": "goblin_heavy_r6_Torso",
+        "verticesInsideBody": 0
+      },
+      {
+        "vertices": 476,
+        "faces": 920,
+        "name": "goblin_heavy_r6_Left_Arm",
+        "verticesInsideBody": 4
+      },
+      {
+        "vertices": 476,
+        "faces": 920,
+        "name": "goblin_heavy_r6_Right_Arm",
+        "verticesInsideBody": 14
+      },
+      {
+        "vertices": 476,
+        "faces": 924,
+        "name": "goblin_heavy_r6_Left_Leg",
+        "verticesInsideBody": 0
+      },
+      {
+        "vertices": 476,
+        "faces": 924,
+        "name": "goblin_heavy_r6_Right_Leg",
+        "verticesInsideBody": 0
+      }
+    ],
+    "label": "SyntheticWarriorSlash",
+    "follow": {
+      "maps": 3,
+      "scope": "SYNTHETIC_EDIT_FOLLOW",
+      "bodyLimbsUnmodified": true,
+      "uvConvention": "CORNER_U_1_MINUS_V",
+      "fitStatus": "UNVALIDATED",
+      "hiddenLegacyOverlays": 9,
+      "kit": "heavy",
+      "scale": 1,
+      "geometry": "ORIGINAL_BLOCK_STYLE_ADAPTATION",
+      "parts": 6
+    },
+    "age": 0.0775,
+    "verticesInsideBody": 18
+  },
+  {
+    "minY": -0.11120396852493286,
+    "parts": [
+      {
+        "vertices": 392,
+        "faces": 760,
+        "name": "goblin_heavy_r6_Head",
+        "verticesInsideBody": 0
+      },
+      {
+        "vertices": 784,
+        "faces": 1516,
+        "name": "goblin_heavy_r6_Torso",
+        "verticesInsideBody": 0
+      },
+      {
+        "vertices": 476,
+        "faces": 920,
+        "name": "goblin_heavy_r6_Left_Arm",
+        "verticesInsideBody": 4
+      },
+      {
+        "vertices": 476,
+        "faces": 920,
+        "name": "goblin_heavy_r6_Right_Arm",
+        "verticesInsideBody": 14
+      },
+      {
+        "vertices": 476,
+        "faces": 924,
+        "name": "goblin_heavy_r6_Left_Leg",
+        "verticesInsideBody": 0
+      },
+      {
+        "vertices": 476,
+        "faces": 924,
+        "name": "goblin_heavy_r6_Right_Leg",
+        "verticesInsideBody": 0
+      }
+    ],
+    "label": "SyntheticWarriorSlash",
+    "follow": {
+      "maps": 3,
+      "scope": "SYNTHETIC_EDIT_FOLLOW",
+      "bodyLimbsUnmodified": true,
+      "uvConvention": "CORNER_U_1_MINUS_V",
+      "fitStatus": "UNVALIDATED",
+      "hiddenLegacyOverlays": 9,
+      "kit": "heavy",
+      "scale": 1,
+      "geometry": "ORIGINAL_BLOCK_STYLE_ADAPTATION",
+      "parts": 6
+    },
+    "age": 0.093,
+    "verticesInsideBody": 18
+  },
+  {
+    "minY": -0.11185401678085327,
+    "parts": [
+      {
+        "vertices": 392,
+        "faces": 760,
+        "name": "goblin_heavy_r6_Head",
+        "verticesInsideBody": 0
+      },
+      {
+        "vertices": 784,
+        "faces": 1516,
+        "name": "goblin_heavy_r6_Torso",
+        "verticesInsideBody": 0
+      },
+      {
+        "vertices": 476,
+        "faces": 920,
+        "name": "goblin_heavy_r6_Left_Arm",
+        "verticesInsideBody": 4
+      },
+      {
+        "vertices": 476,
+        "faces": 920,
+        "name": "goblin_heavy_r6_Right_Arm",
+        "verticesInsideBody": 14
+      },
+      {
+        "vertices": 476,
+        "faces": 924,
+        "name": "goblin_heavy_r6_Left_Leg",
+        "verticesInsideBody": 0
+      },
+      {
+        "vertices": 476,
+        "faces": 924,
+        "name": "goblin_heavy_r6_Right_Leg",
+        "verticesInsideBody": 0
+      }
+    ],
+    "label": "SyntheticWarriorSlash",
+    "follow": {
+      "maps": 3,
+      "scope": "SYNTHETIC_EDIT_FOLLOW",
+      "bodyLimbsUnmodified": true,
+      "uvConvention": "CORNER_U_1_MINUS_V",
+      "fitStatus": "UNVALIDATED",
+      "hiddenLegacyOverlays": 9,
+      "kit": "heavy",
+      "scale": 1,
+      "geometry": "ORIGINAL_BLOCK_STYLE_ADAPTATION",
+      "parts": 6
+    },
+    "age": 0.1085,
+    "verticesInsideBody": 18
+  },
+  {
+    "minY": -0.10411518812179565,
+    "parts": [
+      {
+        "vertices": 392,
+        "faces": 760,
+        "name": "goblin_heavy_r6_Head",
+        "verticesInsideBody": 0
+      },
+      {
+        "vertices": 784,
+        "faces": 1516,
+        "name": "goblin_heavy_r6_Torso",
+        "verticesInsideBody": 0
+      },
+      {
+        "vertices": 476,
+        "faces": 920,
+        "name": "goblin_heavy_r6_Left_Arm",
+        "verticesInsideBody": 4
+      },
+      {
+        "vertices": 476,
+        "faces": 920,
+        "name": "goblin_heavy_r6_Right_Arm",
+        "verticesInsideBody": 14
+      },
+      {
+        "vertices": 476,
+        "faces": 924,
+        "name": "goblin_heavy_r6_Left_Leg",
+        "verticesInsideBody": 0
+      },
+      {
+        "vertices": 476,
+        "faces": 924,
+        "name": "goblin_heavy_r6_Right_Leg",
+        "verticesInsideBody": 0
+      }
+    ],
+    "label": "SyntheticWarriorSlash",
+    "follow": {
+      "maps": 3,
+      "scope": "SYNTHETIC_EDIT_FOLLOW",
+      "bodyLimbsUnmodified": true,
+      "uvConvention": "CORNER_U_1_MINUS_V",
+      "fitStatus": "UNVALIDATED",
+      "hiddenLegacyOverlays": 9,
+      "kit": "heavy",
+      "scale": 1,
+      "geometry": "ORIGINAL_BLOCK_STYLE_ADAPTATION",
+      "parts": 6
+    },
+    "age": 0.124,
+    "verticesInsideBody": 18
+  },
+  {
+    "minY": -0.08947420120239258,
+    "parts": [
+      {
+        "vertices": 392,
+        "faces": 760,
+        "name": "goblin_heavy_r6_Head",
+        "verticesInsideBody": 0
+      },
+      {
+        "vertices": 784,
+        "faces": 1516,
+        "name": "goblin_heavy_r6_Torso",
+        "verticesInsideBody": 0
+      },
+      {
+        "vertices": 476,
+        "faces": 920,
+        "name": "goblin_heavy_r6_Left_Arm",
+        "verticesInsideBody": 4
+      },
+      {
+        "vertices": 476,
+        "faces": 920,
+        "name": "goblin_heavy_r6_Right_Arm",
+        "verticesInsideBody": 2
+      },
+      {
+        "vertices": 476,
+        "faces": 924,
+        "name": "goblin_heavy_r6_Left_Leg",
+        "verticesInsideBody": 0
+      },
+      {
+        "vertices": 476,
+        "faces": 924,
+        "name": "goblin_heavy_r6_Right_Leg",
+        "verticesInsideBody": 0
+      }
+    ],
+    "label": "SyntheticWarriorSlash",
+    "follow": {
+      "maps": 3,
+      "scope": "SYNTHETIC_EDIT_FOLLOW",
+      "bodyLimbsUnmodified": true,
+      "uvConvention": "CORNER_U_1_MINUS_V",
+      "fitStatus": "UNVALIDATED",
+      "hiddenLegacyOverlays": 9,
+      "kit": "heavy",
+      "scale": 1,
+      "geometry": "ORIGINAL_BLOCK_STYLE_ADAPTATION",
+      "parts": 6
+    },
+    "age": 0.1395,
+    "verticesInsideBody": 6
+  },
+  {
+    "minY": -0.06499290466308594,
+    "parts": [
+      {
+        "vertices": 392,
+        "faces": 760,
+        "name": "goblin_heavy_r6_Head",
+        "verticesInsideBody": 0
+      },
+      {
+        "vertices": 784,
+        "faces": 1516,
+        "name": "goblin_heavy_r6_Torso",
+        "verticesInsideBody": 0
+      },
+      {
+        "vertices": 476,
+        "faces": 920,
+        "name": "goblin_heavy_r6_Left_Arm",
+        "verticesInsideBody": 6
+      },
+      {
+        "vertices": 476,
+        "faces": 920,
+        "name": "goblin_heavy_r6_Right_Arm",
+        "verticesInsideBody": 7
+      },
+      {
+        "vertices": 476,
+        "faces": 924,
+        "name": "goblin_heavy_r6_Left_Leg",
+        "verticesInsideBody": 0
+      },
+      {
+        "vertices": 476,
+        "faces": 924,
+        "name": "goblin_heavy_r6_Right_Leg",
+        "verticesInsideBody": 0
+      }
+    ],
+    "label": "SyntheticWarriorSlash",
+    "follow": {
+      "maps": 3,
+      "scope": "SYNTHETIC_EDIT_FOLLOW",
+      "bodyLimbsUnmodified": true,
+      "uvConvention": "CORNER_U_1_MINUS_V",
+      "fitStatus": "UNVALIDATED",
+      "hiddenLegacyOverlays": 9,
+      "kit": "heavy",
+      "scale": 1,
+      "geometry": "ORIGINAL_BLOCK_STYLE_ADAPTATION",
+      "parts": 6
+    },
+    "age": 0.155,
+    "verticesInsideBody": 13
+  },
+  {
+    "minY": -0.10278540849685669,
+    "parts": [
+      {
+        "vertices": 392,
+        "faces": 760,
+        "name": "goblin_heavy_r6_Head",
+        "verticesInsideBody": 0
+      },
+      {
+        "vertices": 784,
+        "faces": 1516,
+        "name": "goblin_heavy_r6_Torso",
+        "verticesInsideBody": 0
+      },
+      {
+        "vertices": 476,
+        "faces": 920,
+        "name": "goblin_heavy_r6_Left_Arm",
+        "verticesInsideBody": 6
+      },
+      {
+        "vertices": 476,
+        "faces": 920,
+        "name": "goblin_heavy_r6_Right_Arm",
+        "verticesInsideBody": 51
+      },
+      {
+        "vertices": 476,
+        "faces": 924,
+        "name": "goblin_heavy_r6_Left_Leg",
+        "verticesInsideBody": 0
+      },
+      {
+        "vertices": 476,
+        "faces": 924,
+        "name": "goblin_heavy_r6_Right_Leg",
+        "verticesInsideBody": 0
+      }
+    ],
+    "label": "SyntheticWarriorSlash",
+    "follow": {
+      "maps": 3,
+      "scope": "SYNTHETIC_EDIT_FOLLOW",
+      "bodyLimbsUnmodified": true,
+      "uvConvention": "CORNER_U_1_MINUS_V",
+      "fitStatus": "UNVALIDATED",
+      "hiddenLegacyOverlays": 9,
+      "kit": "heavy",
+      "scale": 1,
+      "geometry": "ORIGINAL_BLOCK_STYLE_ADAPTATION",
+      "parts": 6
+    },
+    "age": 0.1705,
+    "verticesInsideBody": 57
+  },
+  {
+    "minY": -0.12108755111694336,
+    "parts": [
+      {
+        "vertices": 392,
+        "faces": 760,
+        "name": "goblin_heavy_r6_Head",
+        "verticesInsideBody": 0
+      },
+      {
+        "vertices": 784,
+        "faces": 1516,
+        "name": "goblin_heavy_r6_Torso",
+        "verticesInsideBody": 28
+      },
+      {
+        "vertices": 476,
+        "faces": 920,
+        "name": "goblin_heavy_r6_Left_Arm",
+        "verticesInsideBody": 9
+      },
+      {
+        "vertices": 476,
+        "faces": 920,
+        "name": "goblin_heavy_r6_Right_Arm",
+        "verticesInsideBody": 160
+      },
+      {
+        "vertices": 476,
+        "faces": 924,
+        "name": "goblin_heavy_r6_Left_Leg",
+        "verticesInsideBody": 0
+      },
+      {
+        "vertices": 476,
+        "faces": 924,
+        "name": "goblin_heavy_r6_Right_Leg",
+        "verticesInsideBody": 0
+      }
+    ],
+    "label": "SyntheticWarriorSlash",
+    "follow": {
+      "maps": 3,
+      "scope": "SYNTHETIC_EDIT_FOLLOW",
+      "bodyLimbsUnmodified": true,
+      "uvConvention": "CORNER_U_1_MINUS_V",
+      "fitStatus": "UNVALIDATED",
+      "hiddenLegacyOverlays": 9,
+      "kit": "heavy",
+      "scale": 1,
+      "geometry": "ORIGINAL_BLOCK_STYLE_ADAPTATION",
+      "parts": 6
+    },
+    "age": 0.186,
+    "verticesInsideBody": 197
+  },
+  {
+    "minY": -0.14100492000579834,
+    "parts": [
+      {
+        "vertices": 392,
+        "faces": 760,
+        "name": "goblin_heavy_r6_Head",
+        "verticesInsideBody": 0
+      },
+      {
+        "vertices": 784,
+        "faces": 1516,
+        "name": "goblin_heavy_r6_Torso",
+        "verticesInsideBody": 30
+      },
+      {
+        "vertices": 476,
+        "faces": 920,
+        "name": "goblin_heavy_r6_Left_Arm",
+        "verticesInsideBody": 10
+      },
+      {
+        "vertices": 476,
+        "faces": 920,
+        "name": "goblin_heavy_r6_Right_Arm",
+        "verticesInsideBody": 223
+      },
+      {
+        "vertices": 476,
+        "faces": 924,
+        "name": "goblin_heavy_r6_Left_Leg",
+        "verticesInsideBody": 0
+      },
+      {
+        "vertices": 476,
+        "faces": 924,
+        "name": "goblin_heavy_r6_Right_Leg",
+        "verticesInsideBody": 0
+      }
+    ],
+    "label": "SyntheticWarriorSlash",
+    "follow": {
+      "maps": 3,
+      "scope": "SYNTHETIC_EDIT_FOLLOW",
+      "bodyLimbsUnmodified": true,
+      "uvConvention": "CORNER_U_1_MINUS_V",
+      "fitStatus": "UNVALIDATED",
+      "hiddenLegacyOverlays": 9,
+      "kit": "heavy",
+      "scale": 1,
+      "geometry": "ORIGINAL_BLOCK_STYLE_ADAPTATION",
+      "parts": 6
+    },
+    "age": 0.2015,
+    "verticesInsideBody": 263
+  },
+  {
+    "minY": -0.14316898584365845,
+    "parts": [
+      {
+        "vertices": 392,
+        "faces": 760,
+        "name": "goblin_heavy_r6_Head",
+        "verticesInsideBody": 0
+      },
+      {
+        "vertices": 784,
+        "faces": 1516,
+        "name": "goblin_heavy_r6_Torso",
+        "verticesInsideBody": 42
+      },
+      {
+        "vertices": 476,
+        "faces": 920,
+        "name": "goblin_heavy_r6_Left_Arm",
+        "verticesInsideBody": 12
+      },
+      {
+        "vertices": 476,
+        "faces": 920,
+        "name": "goblin_heavy_r6_Right_Arm",
+        "verticesInsideBody": 210
+      },
+      {
+        "vertices": 476,
+        "faces": 924,
+        "name": "goblin_heavy_r6_Left_Leg",
+        "verticesInsideBody": 0
+      },
+      {
+        "vertices": 476,
+        "faces": 924,
+        "name": "goblin_heavy_r6_Right_Leg",
+        "verticesInsideBody": 0
+      }
+    ],
+    "label": "SyntheticWarriorSlash",
+    "follow": {
+      "maps": 3,
+      "scope": "SYNTHETIC_EDIT_FOLLOW",
+      "bodyLimbsUnmodified": true,
+      "uvConvention": "CORNER_U_1_MINUS_V",
+      "fitStatus": "UNVALIDATED",
+      "hiddenLegacyOverlays": 9,
+      "kit": "heavy",
+      "scale": 1,
+      "geometry": "ORIGINAL_BLOCK_STYLE_ADAPTATION",
+      "parts": 6
+    },
+    "age": 0.217,
+    "verticesInsideBody": 264
+  },
+  {
+    "minY": -0.13811373710632324,
+    "parts": [
+      {
+        "vertices": 392,
+        "faces": 760,
+        "name": "goblin_heavy_r6_Head",
+        "verticesInsideBody": 0
+      },
+      {
+        "vertices": 784,
+        "faces": 1516,
+        "name": "goblin_heavy_r6_Torso",
+        "verticesInsideBody": 42
+      },
+      {
+        "vertices": 476,
+        "faces": 920,
+        "name": "goblin_heavy_r6_Left_Arm",
+        "verticesInsideBody": 13
+      },
+      {
+        "vertices": 476,
+        "faces": 920,
+        "name": "goblin_heavy_r6_Right_Arm",
+        "verticesInsideBody": 186
+      },
+      {
+        "vertices": 476,
+        "faces": 924,
+        "name": "goblin_heavy_r6_Left_Leg",
+        "verticesInsideBody": 0
+      },
+      {
+        "vertices": 476,
+        "faces": 924,
+        "name": "goblin_heavy_r6_Right_Leg",
+        "verticesInsideBody": 0
+      }
+    ],
+    "label": "SyntheticWarriorSlash",
+    "follow": {
+      "maps": 3,
+      "scope": "SYNTHETIC_EDIT_FOLLOW",
+      "bodyLimbsUnmodified": true,
+      "uvConvention": "CORNER_U_1_MINUS_V",
+      "fitStatus": "UNVALIDATED",
+      "hiddenLegacyOverlays": 9,
+      "kit": "heavy",
+      "scale": 1,
+      "geometry": "ORIGINAL_BLOCK_STYLE_ADAPTATION",
+      "parts": 6
+    },
+    "age": 0.2325,
+    "verticesInsideBody": 241
+  },
+  {
+    "minY": -0.12773281335830688,
+    "parts": [
+      {
+        "vertices": 392,
+        "faces": 760,
+        "name": "goblin_heavy_r6_Head",
+        "verticesInsideBody": 0
+      },
+      {
+        "vertices": 784,
+        "faces": 1516,
+        "name": "goblin_heavy_r6_Torso",
+        "verticesInsideBody": 42
+      },
+      {
+        "vertices": 476,
+        "faces": 920,
+        "name": "goblin_heavy_r6_Left_Arm",
+        "verticesInsideBody": 13
+      },
+      {
+        "vertices": 476,
+        "faces": 920,
+        "name": "goblin_heavy_r6_Right_Arm",
+        "verticesInsideBody": 187
+      },
+      {
+        "vertices": 476,
+        "faces": 924,
+        "name": "goblin_heavy_r6_Left_Leg",
+        "verticesInsideBody": 0
+      },
+      {
+        "vertices": 476,
+        "faces": 924,
+        "name": "goblin_heavy_r6_Right_Leg",
+        "verticesInsideBody": 0
+      }
+    ],
+    "label": "SyntheticWarriorSlash",
+    "follow": {
+      "maps": 3,
+      "scope": "SYNTHETIC_EDIT_FOLLOW",
+      "bodyLimbsUnmodified": true,
+      "uvConvention": "CORNER_U_1_MINUS_V",
+      "fitStatus": "UNVALIDATED",
+      "hiddenLegacyOverlays": 9,
+      "kit": "heavy",
+      "scale": 1,
+      "geometry": "ORIGINAL_BLOCK_STYLE_ADAPTATION",
+      "parts": 6
+    },
+    "age": 0.248,
+    "verticesInsideBody": 242
+  },
+  {
+    "minY": -0.1103929877281189,
+    "parts": [
+      {
+        "vertices": 392,
+        "faces": 760,
+        "name": "goblin_heavy_r6_Head",
+        "verticesInsideBody": 0
+      },
+      {
+        "vertices": 784,
+        "faces": 1516,
+        "name": "goblin_heavy_r6_Torso",
+        "verticesInsideBody": 42
+      },
+      {
+        "vertices": 476,
+        "faces": 920,
+        "name": "goblin_heavy_r6_Left_Arm",
+        "verticesInsideBody": 13
+      },
+      {
+        "vertices": 476,
+        "faces": 920,
+        "name": "goblin_heavy_r6_Right_Arm",
+        "verticesInsideBody": 187
+      },
+      {
+        "vertices": 476,
+        "faces": 924,
+        "name": "goblin_heavy_r6_Left_Leg",
+        "verticesInsideBody": 0
+      },
+      {
+        "vertices": 476,
+        "faces": 924,
+        "name": "goblin_heavy_r6_Right_Leg",
+        "verticesInsideBody": 0
+      }
+    ],
+    "label": "SyntheticWarriorSlash",
+    "follow": {
+      "maps": 3,
+      "scope": "SYNTHETIC_EDIT_FOLLOW",
+      "bodyLimbsUnmodified": true,
+      "uvConvention": "CORNER_U_1_MINUS_V",
+      "fitStatus": "UNVALIDATED",
+      "hiddenLegacyOverlays": 9,
+      "kit": "heavy",
+      "scale": 1,
+      "geometry": "ORIGINAL_BLOCK_STYLE_ADAPTATION",
+      "parts": 6
+    },
+    "age": 0.26349999999999996,
+    "verticesInsideBody": 242
+  },
+  {
+    "minY": -0.09537410736083984,
+    "parts": [
+      {
+        "vertices": 392,
+        "faces": 760,
+        "name": "goblin_heavy_r6_Head",
+        "verticesInsideBody": 0
+      },
+      {
+        "vertices": 784,
+        "faces": 1516,
+        "name": "goblin_heavy_r6_Torso",
+        "verticesInsideBody": 42
+      },
+      {
+        "vertices": 476,
+        "faces": 920,
+        "name": "goblin_heavy_r6_Left_Arm",
+        "verticesInsideBody": 13
+      },
+      {
+        "vertices": 476,
+        "faces": 920,
+        "name": "goblin_heavy_r6_Right_Arm",
+        "verticesInsideBody": 190
+      },
+      {
+        "vertices": 476,
+        "faces": 924,
+        "name": "goblin_heavy_r6_Left_Leg",
+        "verticesInsideBody": 0
+      },
+      {
+        "vertices": 476,
+        "faces": 924,
+        "name": "goblin_heavy_r6_Right_Leg",
+        "verticesInsideBody": 0
+      }
+    ],
+    "label": "SyntheticWarriorSlash",
+    "follow": {
+      "maps": 3,
+      "scope": "SYNTHETIC_EDIT_FOLLOW",
+      "bodyLimbsUnmodified": true,
+      "uvConvention": "CORNER_U_1_MINUS_V",
+      "fitStatus": "UNVALIDATED",
+      "hiddenLegacyOverlays": 9,
+      "kit": "heavy",
+      "scale": 1,
+      "geometry": "ORIGINAL_BLOCK_STYLE_ADAPTATION",
+      "parts": 6
+    },
+    "age": 0.279,
+    "verticesInsideBody": 245
+  },
+  {
+    "minY": -0.08418679237365723,
+    "parts": [
+      {
+        "vertices": 392,
+        "faces": 760,
+        "name": "goblin_heavy_r6_Head",
+        "verticesInsideBody": 0
+      },
+      {
+        "vertices": 784,
+        "faces": 1516,
+        "name": "goblin_heavy_r6_Torso",
+        "verticesInsideBody": 42
+      },
+      {
+        "vertices": 476,
+        "faces": 920,
+        "name": "goblin_heavy_r6_Left_Arm",
+        "verticesInsideBody": 13
+      },
+      {
+        "vertices": 476,
+        "faces": 920,
+        "name": "goblin_heavy_r6_Right_Arm",
+        "verticesInsideBody": 214
+      },
+      {
+        "vertices": 476,
+        "faces": 924,
+        "name": "goblin_heavy_r6_Left_Leg",
+        "verticesInsideBody": 0
+      },
+      {
+        "vertices": 476,
+        "faces": 924,
+        "name": "goblin_heavy_r6_Right_Leg",
+        "verticesInsideBody": 0
+      }
+    ],
+    "label": "SyntheticWarriorSlash",
+    "follow": {
+      "maps": 3,
+      "scope": "SYNTHETIC_EDIT_FOLLOW",
+      "bodyLimbsUnmodified": true,
+      "uvConvention": "CORNER_U_1_MINUS_V",
+      "fitStatus": "UNVALIDATED",
+      "hiddenLegacyOverlays": 9,
+      "kit": "heavy",
+      "scale": 1,
+      "geometry": "ORIGINAL_BLOCK_STYLE_ADAPTATION",
+      "parts": 6
+    },
+    "age": 0.2945,
+    "verticesInsideBody": 269
+  },
+  {
+    "minY": -0.07775455713272095,
+    "parts": [
+      {
+        "vertices": 392,
+        "faces": 760,
+        "name": "goblin_heavy_r6_Head",
+        "verticesInsideBody": 0
+      },
+      {
+        "vertices": 784,
+        "faces": 1516,
+        "name": "goblin_heavy_r6_Torso",
+        "verticesInsideBody": 42
+      },
+      {
+        "vertices": 476,
+        "faces": 920,
+        "name": "goblin_heavy_r6_Left_Arm",
+        "verticesInsideBody": 12
+      },
+      {
+        "vertices": 476,
+        "faces": 920,
+        "name": "goblin_heavy_r6_Right_Arm",
+        "verticesInsideBody": 224
+      },
+      {
+        "vertices": 476,
+        "faces": 924,
+        "name": "goblin_heavy_r6_Left_Leg",
+        "verticesInsideBody": 0
+      },
+      {
+        "vertices": 476,
+        "faces": 924,
+        "name": "goblin_heavy_r6_Right_Leg",
+        "verticesInsideBody": 0
+      }
+    ],
+    "label": "SyntheticWarriorSlash",
+    "follow": {
+      "maps": 3,
+      "scope": "SYNTHETIC_EDIT_FOLLOW",
+      "bodyLimbsUnmodified": true,
+      "uvConvention": "CORNER_U_1_MINUS_V",
+      "fitStatus": "UNVALIDATED",
+      "hiddenLegacyOverlays": 9,
+      "kit": "heavy",
+      "scale": 1,
+      "geometry": "ORIGINAL_BLOCK_STYLE_ADAPTATION",
+      "parts": 6
+    },
+    "age": 0.31,
+    "verticesInsideBody": 278
+  },
+  {
+    "minY": -0.07615691423416138,
+    "parts": [
+      {
+        "vertices": 392,
+        "faces": 760,
+        "name": "goblin_heavy_r6_Head",
+        "verticesInsideBody": 0
+      },
+      {
+        "vertices": 784,
+        "faces": 1516,
+        "name": "goblin_heavy_r6_Torso",
+        "verticesInsideBody": 42
+      },
+      {
+        "vertices": 476,
+        "faces": 920,
+        "name": "goblin_heavy_r6_Left_Arm",
+        "verticesInsideBody": 12
+      },
+      {
+        "vertices": 476,
+        "faces": 920,
+        "name": "goblin_heavy_r6_Right_Arm",
+        "verticesInsideBody": 224
+      },
+      {
+        "vertices": 476,
+        "faces": 924,
+        "name": "goblin_heavy_r6_Left_Leg",
+        "verticesInsideBody": 0
+      },
+      {
+        "vertices": 476,
+        "faces": 924,
+        "name": "goblin_heavy_r6_Right_Leg",
+        "verticesInsideBody": 0
+      }
+    ],
+    "label": "SyntheticWarriorSlash",
+    "follow": {
+      "maps": 3,
+      "scope": "SYNTHETIC_EDIT_FOLLOW",
+      "bodyLimbsUnmodified": true,
+      "uvConvention": "CORNER_U_1_MINUS_V",
+      "fitStatus": "UNVALIDATED",
+      "hiddenLegacyOverlays": 9,
+      "kit": "heavy",
+      "scale": 1,
+      "geometry": "ORIGINAL_BLOCK_STYLE_ADAPTATION",
+      "parts": 6
+    },
+    "age": 0.3255,
+    "verticesInsideBody": 278
+  },
+  {
+    "minY": -0.07867014408111572,
+    "parts": [
+      {
+        "vertices": 392,
+        "faces": 760,
+        "name": "goblin_heavy_r6_Head",
+        "verticesInsideBody": 0
+      },
+      {
+        "vertices": 784,
+        "faces": 1516,
+        "name": "goblin_heavy_r6_Torso",
+        "verticesInsideBody": 31
+      },
+      {
+        "vertices": 476,
+        "faces": 920,
+        "name": "goblin_heavy_r6_Left_Arm",
+        "verticesInsideBody": 10
+      },
+      {
+        "vertices": 476,
+        "faces": 920,
+        "name": "goblin_heavy_r6_Right_Arm",
+        "verticesInsideBody": 224
+      },
+      {
+        "vertices": 476,
+        "faces": 924,
+        "name": "goblin_heavy_r6_Left_Leg",
+        "verticesInsideBody": 0
+      },
+      {
+        "vertices": 476,
+        "faces": 924,
+        "name": "goblin_heavy_r6_Right_Leg",
+        "verticesInsideBody": 0
+      }
+    ],
+    "label": "SyntheticWarriorSlash",
+    "follow": {
+      "maps": 3,
+      "scope": "SYNTHETIC_EDIT_FOLLOW",
+      "bodyLimbsUnmodified": true,
+      "uvConvention": "CORNER_U_1_MINUS_V",
+      "fitStatus": "UNVALIDATED",
+      "hiddenLegacyOverlays": 9,
+      "kit": "heavy",
+      "scale": 1,
+      "geometry": "ORIGINAL_BLOCK_STYLE_ADAPTATION",
+      "parts": 6
+    },
+    "age": 0.341,
+    "verticesInsideBody": 265
+  },
+  {
+    "minY": -0.08391726016998291,
+    "parts": [
+      {
+        "vertices": 392,
+        "faces": 760,
+        "name": "goblin_heavy_r6_Head",
+        "verticesInsideBody": 0
+      },
+      {
+        "vertices": 784,
+        "faces": 1516,
+        "name": "goblin_heavy_r6_Torso",
+        "verticesInsideBody": 18
+      },
+      {
+        "vertices": 476,
+        "faces": 920,
+        "name": "goblin_heavy_r6_Left_Arm",
+        "verticesInsideBody": 10
+      },
+      {
+        "vertices": 476,
+        "faces": 920,
+        "name": "goblin_heavy_r6_Right_Arm",
+        "verticesInsideBody": 224
+      },
+      {
+        "vertices": 476,
+        "faces": 924,
+        "name": "goblin_heavy_r6_Left_Leg",
+        "verticesInsideBody": 0
+      },
+      {
+        "vertices": 476,
+        "faces": 924,
+        "name": "goblin_heavy_r6_Right_Leg",
+        "verticesInsideBody": 0
+      }
+    ],
+    "label": "SyntheticWarriorSlash",
+    "follow": {
+      "maps": 3,
+      "scope": "SYNTHETIC_EDIT_FOLLOW",
+      "bodyLimbsUnmodified": true,
+      "uvConvention": "CORNER_U_1_MINUS_V",
+      "fitStatus": "UNVALIDATED",
+      "hiddenLegacyOverlays": 9,
+      "kit": "heavy",
+      "scale": 1,
+      "geometry": "ORIGINAL_BLOCK_STYLE_ADAPTATION",
+      "parts": 6
+    },
+    "age": 0.3565,
+    "verticesInsideBody": 252
+  },
+  {
+    "minY": -0.09010517597198486,
+    "parts": [
+      {
+        "vertices": 392,
+        "faces": 760,
+        "name": "goblin_heavy_r6_Head",
+        "verticesInsideBody": 0
+      },
+      {
+        "vertices": 784,
+        "faces": 1516,
+        "name": "goblin_heavy_r6_Torso",
+        "verticesInsideBody": 13
+      },
+      {
+        "vertices": 476,
+        "faces": 920,
+        "name": "goblin_heavy_r6_Left_Arm",
+        "verticesInsideBody": 9
+      },
+      {
+        "vertices": 476,
+        "faces": 920,
+        "name": "goblin_heavy_r6_Right_Arm",
+        "verticesInsideBody": 224
+      },
+      {
+        "vertices": 476,
+        "faces": 924,
+        "name": "goblin_heavy_r6_Left_Leg",
+        "verticesInsideBody": 0
+      },
+      {
+        "vertices": 476,
+        "faces": 924,
+        "name": "goblin_heavy_r6_Right_Leg",
+        "verticesInsideBody": 0
+      }
+    ],
+    "label": "SyntheticWarriorSlash",
+    "follow": {
+      "maps": 3,
+      "scope": "SYNTHETIC_EDIT_FOLLOW",
+      "bodyLimbsUnmodified": true,
+      "uvConvention": "CORNER_U_1_MINUS_V",
+      "fitStatus": "UNVALIDATED",
+      "hiddenLegacyOverlays": 9,
+      "kit": "heavy",
+      "scale": 1,
+      "geometry": "ORIGINAL_BLOCK_STYLE_ADAPTATION",
+      "parts": 6
+    },
+    "age": 0.372,
+    "verticesInsideBody": 246
+  },
+  {
+    "minY": -0.09530824422836304,
+    "parts": [
+      {
+        "vertices": 392,
+        "faces": 760,
+        "name": "goblin_heavy_r6_Head",
+        "verticesInsideBody": 0
+      },
+      {
+        "vertices": 784,
+        "faces": 1516,
+        "name": "goblin_heavy_r6_Torso",
+        "verticesInsideBody": 2
+      },
+      {
+        "vertices": 476,
+        "faces": 920,
+        "name": "goblin_heavy_r6_Left_Arm",
+        "verticesInsideBody": 9
+      },
+      {
+        "vertices": 476,
+        "faces": 920,
+        "name": "goblin_heavy_r6_Right_Arm",
+        "verticesInsideBody": 224
+      },
+      {
+        "vertices": 476,
+        "faces": 924,
+        "name": "goblin_heavy_r6_Left_Leg",
+        "verticesInsideBody": 0
+      },
+      {
+        "vertices": 476,
+        "faces": 924,
+        "name": "goblin_heavy_r6_Right_Leg",
+        "verticesInsideBody": 0
+      }
+    ],
+    "label": "SyntheticWarriorSlash",
+    "follow": {
+      "maps": 3,
+      "scope": "SYNTHETIC_EDIT_FOLLOW",
+      "bodyLimbsUnmodified": true,
+      "uvConvention": "CORNER_U_1_MINUS_V",
+      "fitStatus": "UNVALIDATED",
+      "hiddenLegacyOverlays": 9,
+      "kit": "heavy",
+      "scale": 1,
+      "geometry": "ORIGINAL_BLOCK_STYLE_ADAPTATION",
+      "parts": 6
+    },
+    "age": 0.3875,
+    "verticesInsideBody": 235
+  },
+  {
+    "minY": -0.09545165300369263,
+    "parts": [
+      {
+        "vertices": 392,
+        "faces": 760,
+        "name": "goblin_heavy_r6_Head",
+        "verticesInsideBody": 0
+      },
+      {
+        "vertices": 784,
+        "faces": 1516,
+        "name": "goblin_heavy_r6_Torso",
+        "verticesInsideBody": 0
+      },
+      {
+        "vertices": 476,
+        "faces": 920,
+        "name": "goblin_heavy_r6_Left_Arm",
+        "verticesInsideBody": 8
+      },
+      {
+        "vertices": 476,
+        "faces": 920,
+        "name": "goblin_heavy_r6_Right_Arm",
+        "verticesInsideBody": 200
+      },
+      {
+        "vertices": 476,
+        "faces": 924,
+        "name": "goblin_heavy_r6_Left_Leg",
+        "verticesInsideBody": 0
+      },
+      {
+        "vertices": 476,
+        "faces": 924,
+        "name": "goblin_heavy_r6_Right_Leg",
+        "verticesInsideBody": 0
+      }
+    ],
+    "label": "SyntheticWarriorSlash",
+    "follow": {
+      "maps": 3,
+      "scope": "SYNTHETIC_EDIT_FOLLOW",
+      "bodyLimbsUnmodified": true,
+      "uvConvention": "CORNER_U_1_MINUS_V",
+      "fitStatus": "UNVALIDATED",
+      "hiddenLegacyOverlays": 9,
+      "kit": "heavy",
+      "scale": 1,
+      "geometry": "ORIGINAL_BLOCK_STYLE_ADAPTATION",
+      "parts": 6
+    },
+    "age": 0.403,
+    "verticesInsideBody": 208
+  },
+  {
+    "minY": -0.08351898193359375,
+    "parts": [
+      {
+        "vertices": 392,
+        "faces": 760,
+        "name": "goblin_heavy_r6_Head",
+        "verticesInsideBody": 0
+      },
+      {
+        "vertices": 784,
+        "faces": 1516,
+        "name": "goblin_heavy_r6_Torso",
+        "verticesInsideBody": 0
+      },
+      {
+        "vertices": 476,
+        "faces": 920,
+        "name": "goblin_heavy_r6_Left_Arm",
+        "verticesInsideBody": 7
+      },
+      {
+        "vertices": 476,
+        "faces": 920,
+        "name": "goblin_heavy_r6_Right_Arm",
+        "verticesInsideBody": 165
+      },
+      {
+        "vertices": 476,
+        "faces": 924,
+        "name": "goblin_heavy_r6_Left_Leg",
+        "verticesInsideBody": 0
+      },
+      {
+        "vertices": 476,
+        "faces": 924,
+        "name": "goblin_heavy_r6_Right_Leg",
+        "verticesInsideBody": 0
+      }
+    ],
+    "label": "SyntheticWarriorSlash",
+    "follow": {
+      "maps": 3,
+      "scope": "SYNTHETIC_EDIT_FOLLOW",
+      "bodyLimbsUnmodified": true,
+      "uvConvention": "CORNER_U_1_MINUS_V",
+      "fitStatus": "UNVALIDATED",
+      "hiddenLegacyOverlays": 9,
+      "kit": "heavy",
+      "scale": 1,
+      "geometry": "ORIGINAL_BLOCK_STYLE_ADAPTATION",
+      "parts": 6
+    },
+    "age": 0.4185,
+    "verticesInsideBody": 172
+  },
+  {
+    "minY": -0.06999552249908447,
+    "parts": [
+      {
+        "vertices": 392,
+        "faces": 760,
+        "name": "goblin_heavy_r6_Head",
+        "verticesInsideBody": 0
+      },
+      {
+        "vertices": 784,
+        "faces": 1516,
+        "name": "goblin_heavy_r6_Torso",
+        "verticesInsideBody": 0
+      },
+      {
+        "vertices": 476,
+        "faces": 920,
+        "name": "goblin_heavy_r6_Left_Arm",
+        "verticesInsideBody": 7
+      },
+      {
+        "vertices": 476,
+        "faces": 920,
+        "name": "goblin_heavy_r6_Right_Arm",
+        "verticesInsideBody": 146
+      },
+      {
+        "vertices": 476,
+        "faces": 924,
+        "name": "goblin_heavy_r6_Left_Leg",
+        "verticesInsideBody": 0
+      },
+      {
+        "vertices": 476,
+        "faces": 924,
+        "name": "goblin_heavy_r6_Right_Leg",
+        "verticesInsideBody": 0
+      }
+    ],
+    "label": "SyntheticWarriorSlash",
+    "follow": {
+      "maps": 3,
+      "scope": "SYNTHETIC_EDIT_FOLLOW",
+      "bodyLimbsUnmodified": true,
+      "uvConvention": "CORNER_U_1_MINUS_V",
+      "fitStatus": "UNVALIDATED",
+      "hiddenLegacyOverlays": 9,
+      "kit": "heavy",
+      "scale": 1,
+      "geometry": "ORIGINAL_BLOCK_STYLE_ADAPTATION",
+      "parts": 6
+    },
+    "age": 0.434,
+    "verticesInsideBody": 153
+  },
+  {
+    "minY": -0.055067360401153564,
+    "parts": [
+      {
+        "vertices": 392,
+        "faces": 760,
+        "name": "goblin_heavy_r6_Head",
+        "verticesInsideBody": 0
+      },
+      {
+        "vertices": 784,
+        "faces": 1516,
+        "name": "goblin_heavy_r6_Torso",
+        "verticesInsideBody": 0
+      },
+      {
+        "vertices": 476,
+        "faces": 920,
+        "name": "goblin_heavy_r6_Left_Arm",
+        "verticesInsideBody": 7
+      },
+      {
+        "vertices": 476,
+        "faces": 920,
+        "name": "goblin_heavy_r6_Right_Arm",
+        "verticesInsideBody": 134
+      },
+      {
+        "vertices": 476,
+        "faces": 924,
+        "name": "goblin_heavy_r6_Left_Leg",
+        "verticesInsideBody": 0
+      },
+      {
+        "vertices": 476,
+        "faces": 924,
+        "name": "goblin_heavy_r6_Right_Leg",
+        "verticesInsideBody": 0
+      }
+    ],
+    "label": "SyntheticWarriorSlash",
+    "follow": {
+      "maps": 3,
+      "scope": "SYNTHETIC_EDIT_FOLLOW",
+      "bodyLimbsUnmodified": true,
+      "uvConvention": "CORNER_U_1_MINUS_V",
+      "fitStatus": "UNVALIDATED",
+      "hiddenLegacyOverlays": 9,
+      "kit": "heavy",
+      "scale": 1,
+      "geometry": "ORIGINAL_BLOCK_STYLE_ADAPTATION",
+      "parts": 6
+    },
+    "age": 0.4495,
+    "verticesInsideBody": 141
+  },
+  {
+    "minY": -0.03900831937789917,
+    "parts": [
+      {
+        "vertices": 392,
+        "faces": 760,
+        "name": "goblin_heavy_r6_Head",
+        "verticesInsideBody": 0
+      },
+      {
+        "vertices": 784,
+        "faces": 1516,
+        "name": "goblin_heavy_r6_Torso",
+        "verticesInsideBody": 0
+      },
+      {
+        "vertices": 476,
+        "faces": 920,
+        "name": "goblin_heavy_r6_Left_Arm",
+        "verticesInsideBody": 6
+      },
+      {
+        "vertices": 476,
+        "faces": 920,
+        "name": "goblin_heavy_r6_Right_Arm",
+        "verticesInsideBody": 107
+      },
+      {
+        "vertices": 476,
+        "faces": 924,
+        "name": "goblin_heavy_r6_Left_Leg",
+        "verticesInsideBody": 0
+      },
+      {
+        "vertices": 476,
+        "faces": 924,
+        "name": "goblin_heavy_r6_Right_Leg",
+        "verticesInsideBody": 0
+      }
+    ],
+    "label": "SyntheticWarriorSlash",
+    "follow": {
+      "maps": 3,
+      "scope": "SYNTHETIC_EDIT_FOLLOW",
+      "bodyLimbsUnmodified": true,
+      "uvConvention": "CORNER_U_1_MINUS_V",
+      "fitStatus": "UNVALIDATED",
+      "hiddenLegacyOverlays": 9,
+      "kit": "heavy",
+      "scale": 1,
+      "geometry": "ORIGINAL_BLOCK_STYLE_ADAPTATION",
+      "parts": 6
+    },
+    "age": 0.465,
+    "verticesInsideBody": 113
+  },
+  {
+    "minY": -0.0221707820892334,
+    "parts": [
+      {
+        "vertices": 392,
+        "faces": 760,
+        "name": "goblin_heavy_r6_Head",
+        "verticesInsideBody": 0
+      },
+      {
+        "vertices": 784,
+        "faces": 1516,
+        "name": "goblin_heavy_r6_Torso",
+        "verticesInsideBody": 0
+      },
+      {
+        "vertices": 476,
+        "faces": 920,
+        "name": "goblin_heavy_r6_Left_Arm",
+        "verticesInsideBody": 7
+      },
+      {
+        "vertices": 476,
+        "faces": 920,
+        "name": "goblin_heavy_r6_Right_Arm",
+        "verticesInsideBody": 84
+      },
+      {
+        "vertices": 476,
+        "faces": 924,
+        "name": "goblin_heavy_r6_Left_Leg",
+        "verticesInsideBody": 0
+      },
+      {
+        "vertices": 476,
+        "faces": 924,
+        "name": "goblin_heavy_r6_Right_Leg",
+        "verticesInsideBody": 0
+      }
+    ],
+    "label": "SyntheticWarriorSlash",
+    "follow": {
+      "maps": 3,
+      "scope": "SYNTHETIC_EDIT_FOLLOW",
+      "bodyLimbsUnmodified": true,
+      "uvConvention": "CORNER_U_1_MINUS_V",
+      "fitStatus": "UNVALIDATED",
+      "hiddenLegacyOverlays": 9,
+      "kit": "heavy",
+      "scale": 1,
+      "geometry": "ORIGINAL_BLOCK_STYLE_ADAPTATION",
+      "parts": 6
+    },
+    "age": 0.4805,
+    "verticesInsideBody": 91
+  },
+  {
+    "minY": -0.004977107048034668,
+    "parts": [
+      {
+        "vertices": 392,
+        "faces": 760,
+        "name": "goblin_heavy_r6_Head",
+        "verticesInsideBody": 0
+      },
+      {
+        "vertices": 784,
+        "faces": 1516,
+        "name": "goblin_heavy_r6_Torso",
+        "verticesInsideBody": 0
+      },
+      {
+        "vertices": 476,
+        "faces": 920,
+        "name": "goblin_heavy_r6_Left_Arm",
+        "verticesInsideBody": 6
+      },
+      {
+        "vertices": 476,
+        "faces": 920,
+        "name": "goblin_heavy_r6_Right_Arm",
+        "verticesInsideBody": 81
+      },
+      {
+        "vertices": 476,
+        "faces": 924,
+        "name": "goblin_heavy_r6_Left_Leg",
+        "verticesInsideBody": 0
+      },
+      {
+        "vertices": 476,
+        "faces": 924,
+        "name": "goblin_heavy_r6_Right_Leg",
+        "verticesInsideBody": 0
+      }
+    ],
+    "label": "SyntheticWarriorSlash",
+    "follow": {
+      "maps": 3,
+      "scope": "SYNTHETIC_EDIT_FOLLOW",
+      "bodyLimbsUnmodified": true,
+      "uvConvention": "CORNER_U_1_MINUS_V",
+      "fitStatus": "UNVALIDATED",
+      "hiddenLegacyOverlays": 9,
+      "kit": "heavy",
+      "scale": 1,
+      "geometry": "ORIGINAL_BLOCK_STYLE_ADAPTATION",
+      "parts": 6
+    },
+    "age": 0.496,
+    "verticesInsideBody": 87
+  },
+  {
+    "minY": 0.012099921703338623,
+    "parts": [
+      {
+        "vertices": 392,
+        "faces": 760,
+        "name": "goblin_heavy_r6_Head",
+        "verticesInsideBody": 0
+      },
+      {
+        "vertices": 784,
+        "faces": 1516,
+        "name": "goblin_heavy_r6_Torso",
+        "verticesInsideBody": 0
+      },
+      {
+        "vertices": 476,
+        "faces": 920,
+        "name": "goblin_heavy_r6_Left_Arm",
+        "verticesInsideBody": 5
+      },
+      {
+        "vertices": 476,
+        "faces": 920,
+        "name": "goblin_heavy_r6_Right_Arm",
+        "verticesInsideBody": 58
+      },
+      {
+        "vertices": 476,
+        "faces": 924,
+        "name": "goblin_heavy_r6_Left_Leg",
+        "verticesInsideBody": 0
+      },
+      {
+        "vertices": 476,
+        "faces": 924,
+        "name": "goblin_heavy_r6_Right_Leg",
+        "verticesInsideBody": 0
+      }
+    ],
+    "label": "SyntheticWarriorSlash",
+    "follow": {
+      "maps": 3,
+      "scope": "SYNTHETIC_EDIT_FOLLOW",
+      "bodyLimbsUnmodified": true,
+      "uvConvention": "CORNER_U_1_MINUS_V",
+      "fitStatus": "UNVALIDATED",
+      "hiddenLegacyOverlays": 9,
+      "kit": "heavy",
+      "scale": 1,
+      "geometry": "ORIGINAL_BLOCK_STYLE_ADAPTATION",
+      "parts": 6
+    },
+    "age": 0.5115000000000001,
+    "verticesInsideBody": 63
+  },
+  {
+    "minY": 0.02855020761489868,
+    "parts": [
+      {
+        "vertices": 392,
+        "faces": 760,
+        "name": "goblin_heavy_r6_Head",
+        "verticesInsideBody": 0
+      },
+      {
+        "vertices": 784,
+        "faces": 1516,
+        "name": "goblin_heavy_r6_Torso",
+        "verticesInsideBody": 0
+      },
+      {
+        "vertices": 476,
+        "faces": 920,
+        "name": "goblin_heavy_r6_Left_Arm",
+        "verticesInsideBody": 4
+      },
+      {
+        "vertices": 476,
+        "faces": 920,
+        "name": "goblin_heavy_r6_Right_Arm",
+        "verticesInsideBody": 38
+      },
+      {
+        "vertices": 476,
+        "faces": 924,
+        "name": "goblin_heavy_r6_Left_Leg",
+        "verticesInsideBody": 0
+      },
+      {
+        "vertices": 476,
+        "faces": 924,
+        "name": "goblin_heavy_r6_Right_Leg",
+        "verticesInsideBody": 0
+      }
+    ],
+    "label": "SyntheticWarriorSlash",
+    "follow": {
+      "maps": 3,
+      "scope": "SYNTHETIC_EDIT_FOLLOW",
+      "bodyLimbsUnmodified": true,
+      "uvConvention": "CORNER_U_1_MINUS_V",
+      "fitStatus": "UNVALIDATED",
+      "hiddenLegacyOverlays": 9,
+      "kit": "heavy",
+      "scale": 1,
+      "geometry": "ORIGINAL_BLOCK_STYLE_ADAPTATION",
+      "parts": 6
+    },
+    "age": 0.5269999999999999,
+    "verticesInsideBody": 42
+  },
+  {
+    "minY": 0.04384565353393555,
+    "parts": [
+      {
+        "vertices": 392,
+        "faces": 760,
+        "name": "goblin_heavy_r6_Head",
+        "verticesInsideBody": 0
+      },
+      {
+        "vertices": 784,
+        "faces": 1516,
+        "name": "goblin_heavy_r6_Torso",
+        "verticesInsideBody": 0
+      },
+      {
+        "vertices": 476,
+        "faces": 920,
+        "name": "goblin_heavy_r6_Left_Arm",
+        "verticesInsideBody": 3
+      },
+      {
+        "vertices": 476,
+        "faces": 920,
+        "name": "goblin_heavy_r6_Right_Arm",
+        "verticesInsideBody": 25
+      },
+      {
+        "vertices": 476,
+        "faces": 924,
+        "name": "goblin_heavy_r6_Left_Leg",
+        "verticesInsideBody": 0
+      },
+      {
+        "vertices": 476,
+        "faces": 924,
+        "name": "goblin_heavy_r6_Right_Leg",
+        "verticesInsideBody": 0
+      }
+    ],
+    "label": "SyntheticWarriorSlash",
+    "follow": {
+      "maps": 3,
+      "scope": "SYNTHETIC_EDIT_FOLLOW",
+      "bodyLimbsUnmodified": true,
+      "uvConvention": "CORNER_U_1_MINUS_V",
+      "fitStatus": "UNVALIDATED",
+      "hiddenLegacyOverlays": 9,
+      "kit": "heavy",
+      "scale": 1,
+      "geometry": "ORIGINAL_BLOCK_STYLE_ADAPTATION",
+      "parts": 6
+    },
+    "age": 0.5425,
+    "verticesInsideBody": 28
+  },
+  {
+    "minY": 0.057453811168670654,
+    "parts": [
+      {
+        "vertices": 392,
+        "faces": 760,
+        "name": "goblin_heavy_r6_Head",
+        "verticesInsideBody": 0
+      },
+      {
+        "vertices": 784,
+        "faces": 1516,
+        "name": "goblin_heavy_r6_Torso",
+        "verticesInsideBody": 0
+      },
+      {
+        "vertices": 476,
+        "faces": 920,
+        "name": "goblin_heavy_r6_Left_Arm",
+        "verticesInsideBody": 2
+      },
+      {
+        "vertices": 476,
+        "faces": 920,
+        "name": "goblin_heavy_r6_Right_Arm",
+        "verticesInsideBody": 7
+      },
+      {
+        "vertices": 476,
+        "faces": 924,
+        "name": "goblin_heavy_r6_Left_Leg",
+        "verticesInsideBody": 0
+      },
+      {
+        "vertices": 476,
+        "faces": 924,
+        "name": "goblin_heavy_r6_Right_Leg",
+        "verticesInsideBody": 0
+      }
+    ],
+    "label": "SyntheticWarriorSlash",
+    "follow": {
+      "maps": 3,
+      "scope": "SYNTHETIC_EDIT_FOLLOW",
+      "bodyLimbsUnmodified": true,
+      "uvConvention": "CORNER_U_1_MINUS_V",
+      "fitStatus": "UNVALIDATED",
+      "hiddenLegacyOverlays": 9,
+      "kit": "heavy",
+      "scale": 1,
+      "geometry": "ORIGINAL_BLOCK_STYLE_ADAPTATION",
+      "parts": 6
+    },
+    "age": 0.558,
+    "verticesInsideBody": 9
+  },
+  {
+    "minY": 0.06885451078414917,
+    "parts": [
+      {
+        "vertices": 392,
+        "faces": 760,
+        "name": "goblin_heavy_r6_Head",
+        "verticesInsideBody": 0
+      },
+      {
+        "vertices": 784,
+        "faces": 1516,
+        "name": "goblin_heavy_r6_Torso",
+        "verticesInsideBody": 0
+      },
+      {
+        "vertices": 476,
+        "faces": 920,
+        "name": "goblin_heavy_r6_Left_Arm",
+        "verticesInsideBody": 2
+      },
+      {
+        "vertices": 476,
+        "faces": 920,
+        "name": "goblin_heavy_r6_Right_Arm",
+        "verticesInsideBody": 0
+      },
+      {
+        "vertices": 476,
+        "faces": 924,
+        "name": "goblin_heavy_r6_Left_Leg",
+        "verticesInsideBody": 0
+      },
+      {
+        "vertices": 476,
+        "faces": 924,
+        "name": "goblin_heavy_r6_Right_Leg",
+        "verticesInsideBody": 0
+      }
+    ],
+    "label": "SyntheticWarriorSlash",
+    "follow": {
+      "maps": 3,
+      "scope": "SYNTHETIC_EDIT_FOLLOW",
+      "bodyLimbsUnmodified": true,
+      "uvConvention": "CORNER_U_1_MINUS_V",
+      "fitStatus": "UNVALIDATED",
+      "hiddenLegacyOverlays": 9,
+      "kit": "heavy",
+      "scale": 1,
+      "geometry": "ORIGINAL_BLOCK_STYLE_ADAPTATION",
+      "parts": 6
+    },
+    "age": 0.5735,
+    "verticesInsideBody": 2
+  },
+  {
+    "minY": 0.07754987478256226,
+    "parts": [
+      {
+        "vertices": 392,
+        "faces": 760,
+        "name": "goblin_heavy_r6_Head",
+        "verticesInsideBody": 0
+      },
+      {
+        "vertices": 784,
+        "faces": 1516,
+        "name": "goblin_heavy_r6_Torso",
+        "verticesInsideBody": 0
+      },
+      {
+        "vertices": 476,
+        "faces": 920,
+        "name": "goblin_heavy_r6_Left_Arm",
+        "verticesInsideBody": 1
+      },
+      {
+        "vertices": 476,
+        "faces": 920,
+        "name": "goblin_heavy_r6_Right_Arm",
+        "verticesInsideBody": 0
+      },
+      {
+        "vertices": 476,
+        "faces": 924,
+        "name": "goblin_heavy_r6_Left_Leg",
+        "verticesInsideBody": 0
+      },
+      {
+        "vertices": 476,
+        "faces": 924,
+        "name": "goblin_heavy_r6_Right_Leg",
+        "verticesInsideBody": 0
+      }
+    ],
+    "label": "SyntheticWarriorSlash",
+    "follow": {
+      "maps": 3,
+      "scope": "SYNTHETIC_EDIT_FOLLOW",
+      "bodyLimbsUnmodified": true,
+      "uvConvention": "CORNER_U_1_MINUS_V",
+      "fitStatus": "UNVALIDATED",
+      "hiddenLegacyOverlays": 9,
+      "kit": "heavy",
+      "scale": 1,
+      "geometry": "ORIGINAL_BLOCK_STYLE_ADAPTATION",
+      "parts": 6
+    },
+    "age": 0.589,
+    "verticesInsideBody": 1
+  },
+  {
+    "minY": 0.08307301998138428,
+    "parts": [
+      {
+        "vertices": 392,
+        "faces": 760,
+        "name": "goblin_heavy_r6_Head",
+        "verticesInsideBody": 0
+      },
+      {
+        "vertices": 784,
+        "faces": 1516,
+        "name": "goblin_heavy_r6_Torso",
+        "verticesInsideBody": 0
+      },
+      {
+        "vertices": 476,
+        "faces": 920,
+        "name": "goblin_heavy_r6_Left_Arm",
+        "verticesInsideBody": 1
+      },
+      {
+        "vertices": 476,
+        "faces": 920,
+        "name": "goblin_heavy_r6_Right_Arm",
+        "verticesInsideBody": 0
+      },
+      {
+        "vertices": 476,
+        "faces": 924,
+        "name": "goblin_heavy_r6_Left_Leg",
+        "verticesInsideBody": 0
+      },
+      {
+        "vertices": 476,
+        "faces": 924,
+        "name": "goblin_heavy_r6_Right_Leg",
+        "verticesInsideBody": 0
+      }
+    ],
+    "label": "SyntheticWarriorSlash",
+    "follow": {
+      "maps": 3,
+      "scope": "SYNTHETIC_EDIT_FOLLOW",
+      "bodyLimbsUnmodified": true,
+      "uvConvention": "CORNER_U_1_MINUS_V",
+      "fitStatus": "UNVALIDATED",
+      "hiddenLegacyOverlays": 9,
+      "kit": "heavy",
+      "scale": 1,
+      "geometry": "ORIGINAL_BLOCK_STYLE_ADAPTATION",
+      "parts": 6
+    },
+    "age": 0.6045,
+    "verticesInsideBody": 1
+  },
+  {
+    "minY": 0.08500003814697266,
+    "parts": [
+      {
+        "vertices": 392,
+        "faces": 760,
+        "name": "goblin_heavy_r6_Head",
+        "verticesInsideBody": 0
+      },
+      {
+        "vertices": 784,
+        "faces": 1516,
+        "name": "goblin_heavy_r6_Torso",
+        "verticesInsideBody": 0
+      },
+      {
+        "vertices": 476,
+        "faces": 920,
+        "name": "goblin_heavy_r6_Left_Arm",
+        "verticesInsideBody": 0
+      },
+      {
+        "vertices": 476,
+        "faces": 920,
+        "name": "goblin_heavy_r6_Right_Arm",
+        "verticesInsideBody": 0
+      },
+      {
+        "vertices": 476,
+        "faces": 924,
+        "name": "goblin_heavy_r6_Left_Leg",
+        "verticesInsideBody": 0
+      },
+      {
+        "vertices": 476,
+        "faces": 924,
+        "name": "goblin_heavy_r6_Right_Leg",
+        "verticesInsideBody": 0
+      }
+    ],
+    "label": "SyntheticWarriorSlash",
+    "follow": {
+      "maps": 3,
+      "scope": "SYNTHETIC_EDIT_FOLLOW",
+      "bodyLimbsUnmodified": true,
+      "uvConvention": "CORNER_U_1_MINUS_V",
+      "fitStatus": "UNVALIDATED",
+      "hiddenLegacyOverlays": 9,
+      "kit": "heavy",
+      "scale": 1,
+      "geometry": "ORIGINAL_BLOCK_STYLE_ADAPTATION",
+      "parts": 6
+    },
+    "age": 0.62,
+    "verticesInsideBody": 0
+  },
+  {
+    "minY": -0.1371188759803772,
+    "parts": [
+      {
+        "vertices": 392,
+        "faces": 760,
+        "name": "goblin_heavy_r6_Head",
+        "verticesInsideBody": 0
+      },
+      {
+        "vertices": 784,
+        "faces": 1516,
+        "name": "goblin_heavy_r6_Torso",
+        "verticesInsideBody": 42
+      },
+      {
+        "vertices": 476,
+        "faces": 920,
+        "name": "goblin_heavy_r6_Left_Arm",
+        "verticesInsideBody": 13
+      },
+      {
+        "vertices": 476,
+        "faces": 920,
+        "name": "goblin_heavy_r6_Right_Arm",
+        "verticesInsideBody": 187
+      },
+      {
+        "vertices": 476,
+        "faces": 924,
+        "name": "goblin_heavy_r6_Left_Leg",
+        "verticesInsideBody": 0
+      },
+      {
+        "vertices": 476,
+        "faces": 924,
+        "name": "goblin_heavy_r6_Right_Leg",
+        "verticesInsideBody": 0
+      }
+    ],
+    "label": "ExactWarriorContactTime",
+    "follow": {
+      "maps": 3,
+      "scope": "SYNTHETIC_EDIT_FOLLOW",
+      "bodyLimbsUnmodified": true,
+      "uvConvention": "CORNER_U_1_MINUS_V",
+      "fitStatus": "UNVALIDATED",
+      "hiddenLegacyOverlays": 9,
+      "kit": "heavy",
+      "scale": 1,
+      "geometry": "ORIGINAL_BLOCK_STYLE_ADAPTATION",
+      "parts": 6
+    },
+    "age": 0.24,
+    "verticesInsideBody": 242
+  },
+  {
+    "minY": 0.08500003814697266,
+    "parts": [
+      {
+        "vertices": 392,
+        "faces": 760,
+        "name": "goblin_heavy_r6_Head",
+        "verticesInsideBody": 0
+      },
+      {
+        "vertices": 784,
+        "faces": 1516,
+        "name": "goblin_heavy_r6_Torso",
+        "verticesInsideBody": 0
+      },
+      {
+        "vertices": 476,
+        "faces": 920,
+        "name": "goblin_heavy_r6_Left_Arm",
+        "verticesInsideBody": 8
+      },
+      {
+        "vertices": 476,
+        "faces": 920,
+        "name": "goblin_heavy_r6_Right_Arm",
+        "verticesInsideBody": 8
+      },
+      {
+        "vertices": 476,
+        "faces": 924,
+        "name": "goblin_heavy_r6_Left_Leg",
+        "verticesInsideBody": 0
+      },
+      {
+        "vertices": 476,
+        "faces": 924,
+        "name": "goblin_heavy_r6_Right_Leg",
+        "verticesInsideBody": 0
+      }
+    ],
+    "forwardDegrees": 65,
+    "label": "SyntheticForwardReach65",
+    "follow": {
+      "maps": 3,
+      "scope": "SYNTHETIC_EDIT_FOLLOW",
+      "bodyLimbsUnmodified": true,
+      "uvConvention": "CORNER_U_1_MINUS_V",
+      "fitStatus": "UNVALIDATED",
+      "hiddenLegacyOverlays": 9,
+      "kit": "heavy",
+      "scale": 1,
+      "geometry": "ORIGINAL_BLOCK_STYLE_ADAPTATION",
+      "parts": 6
+    },
+    "verticesInsideBody": 16
+  },
+  {
+    "minY": 0.08500003814697266,
+    "parts": [
+      {
+        "vertices": 392,
+        "faces": 760,
+        "name": "goblin_heavy_r6_Head",
+        "verticesInsideBody": 0
+      },
+      {
+        "vertices": 784,
+        "faces": 1516,
+        "name": "goblin_heavy_r6_Torso",
+        "verticesInsideBody": 0
+      },
+      {
+        "vertices": 476,
+        "faces": 920,
+        "name": "goblin_heavy_r6_Left_Arm",
+        "verticesInsideBody": 8
+      },
+      {
+        "vertices": 476,
+        "faces": 920,
+        "name": "goblin_heavy_r6_Right_Arm",
+        "verticesInsideBody": 8
+      },
+      {
+        "vertices": 476,
+        "faces": 924,
+        "name": "goblin_heavy_r6_Left_Leg",
+        "verticesInsideBody": 0
+      },
+      {
+        "vertices": 476,
+        "faces": 924,
+        "name": "goblin_heavy_r6_Right_Leg",
+        "verticesInsideBody": 0
+      }
+    ],
+    "forwardDegrees": 100,
+    "label": "SyntheticForwardReach100",
+    "follow": {
+      "maps": 3,
+      "scope": "SYNTHETIC_EDIT_FOLLOW",
+      "bodyLimbsUnmodified": true,
+      "uvConvention": "CORNER_U_1_MINUS_V",
+      "fitStatus": "UNVALIDATED",
+      "hiddenLegacyOverlays": 9,
+      "kit": "heavy",
+      "scale": 1,
+      "geometry": "ORIGINAL_BLOCK_STYLE_ADAPTATION",
+      "parts": 6
+    },
+    "verticesInsideBody": 16
+  }
+]

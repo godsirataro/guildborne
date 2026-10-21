@@ -1,0 +1,9 @@
+{
+  "content": [
+    {
+      "type": "text",
+      "text": "{\"scripts\":[{\"disabled\":true,\"path\":\"StarterPlayer.StarterPlayerScripts.Client.ClientBootstrap\"},{\"disabled\":false,\"path\":\"StarterPlayer.StarterPlayerScripts.PartyPresentationLab\"},{\"disabled\":false,\"path\":\"StarterPlayer.StarterPlayerScripts.QualityPreview\"},{\"disabled\":false,\"path\":\"ServerScriptService.PartyPresentationLab\"},{\"disabled\":false,\"path\":\"ServerScriptService.QualityPreview\"},{\"disabled\":true,\"path\":\"ServerScriptService.Server.ServerBootstrap\"}],\"group\":[{\"name\":\"Default\",\"mask\":-1},{\"name\":\"GuildborneHeroes\",\"mask\":-1}],\"sourceParts\":40,\"workspaceChildren\":3,\"http\":false}"
+    }
+  ],
+  "isError": false
+}

@@ -1,0 +1,152 @@
+[
+  {
+    "kind": "heavy",
+    "frames": 106,
+    "minY": -0.14316898584365845,
+    "minFrame": {
+      "label": "SyntheticWarriorSlash",
+      "age": 0.217
+    },
+    "maxInside": 278,
+    "maxFrame": {
+      "label": "SyntheticWarriorSlash",
+      "age": 0.31
+    },
+    "totalInside": 5454,
+    "restInside": 0,
+    "forward": [
+      {
+        "degrees": 65,
+        "inside": 16,
+        "minY": 0.08500003814697266
+      },
+      {
+        "degrees": 100,
+        "inside": 16,
+        "minY": 0.08500003814697266
+      }
+    ],
+    "worstParts": [
+      {
+        "vertices": 784,
+        "faces": 1516,
+        "name": "goblin_heavy_r6_Torso",
+        "verticesInsideBody": 42
+      },
+      {
+        "vertices": 476,
+        "faces": 920,
+        "name": "goblin_heavy_r6_Left_Arm",
+        "verticesInsideBody": 12
+      },
+      {
+        "vertices": 476,
+        "faces": 920,
+        "name": "goblin_heavy_r6_Right_Arm",
+        "verticesInsideBody": 224
+      }
+    ]
+  },
+  {
+    "kind": "scout",
+    "frames": 106,
+    "minY": -0.14316898584365845,
+    "minFrame": {
+      "label": "SyntheticWarriorSlash",
+      "age": 0.217
+    },
+    "maxInside": 276,
+    "maxFrame": {
+      "label": "SyntheticWarriorSlash",
+      "age": 0.31
+    },
+    "totalInside": 4925,
+    "restInside": 0,
+    "forward": [
+      {
+        "degrees": 65,
+        "inside": 0,
+        "minY": 0.08500003814697266
+      },
+      {
+        "degrees": 100,
+        "inside": 0,
+        "minY": 0.08500003814697266
+      }
+    ],
+    "worstParts": [
+      {
+        "vertices": 616,
+        "faces": 1188,
+        "name": "goblin_scout_r6_Torso",
+        "verticesInsideBody": 42
+      },
+      {
+        "vertices": 336,
+        "faces": 648,
+        "name": "goblin_scout_r6_Left_Arm",
+        "verticesInsideBody": 10
+      },
+      {
+        "vertices": 336,
+        "faces": 648,
+        "name": "goblin_scout_r6_Right_Arm",
+        "verticesInsideBody": 224
+      }
+    ]
+  },
+  {
+    "kind": "ritual",
+    "frames": 106,
+    "minY": -0.14316892623901367,
+    "minFrame": {
+      "label": "SyntheticWarriorSlash",
+      "age": 0.217
+    },
+    "maxInside": 346,
+    "maxFrame": {
+      "label": "SyntheticWarriorSlash",
+      "age": 0.31
+    },
+    "totalInside": 6157,
+    "restInside": 0,
+    "forward": [
+      {
+        "degrees": 65,
+        "inside": 0,
+        "minY": 0.08500003814697266
+      },
+      {
+        "degrees": 100,
+        "inside": 0,
+        "minY": 0.08500003814697266
+      }
+    ],
+    "worstParts": [
+      {
+        "vertices": 952,
+        "faces": 1836,
+        "name": "goblin_ritual_r6_Torso",
+        "verticesInsideBody": 42
+      },
+      {
+        "vertices": 392,
+        "faces": 756,
+        "name": "goblin_ritual_r6_Left_Arm",
+        "verticesInsideBody": 10
+      },
+      {
+        "vertices": 392,
+        "faces": 756,
+        "name": "goblin_ritual_r6_Right_Arm",
+        "verticesInsideBody": 280
+      },
+      {
+        "vertices": 504,
+        "faces": 972,
+        "name": "goblin_ritual_r6_Right_Leg",
+        "verticesInsideBody": 14
+      }
+    ]
+  }
+]

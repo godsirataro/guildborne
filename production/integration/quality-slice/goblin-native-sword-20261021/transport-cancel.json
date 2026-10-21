@@ -1,0 +1,9 @@
+{
+  "content": [
+    {
+      "type": "text",
+      "text": "{\"workspaceChildren\":2,\"cancel\":{\"pending\":true,\"cancelRequested\":true},\"concurrentError\":\"ReplicatedStorage.GoblinSwordReviewRunner.ReviewTransport:18: ALREADY_LOADED_OR_LOADING\",\"http\":false,\"loading\":false,\"handleAbsent\":true,\"receipt\":{\"httpBefore\":false,\"images\":[],\"scope\":\"LOCAL_1024_DERIVATIVE_PREVIEW\",\"error\":\"ReplicatedStorage.GoblinSwordReviewRunner.ReviewTransport:23: LOAD_CANCELLED\\nReplicatedStorage.GoblinSwordReviewRunner.ReviewTransport:23 function fetch\\nReplicatedStorage.GoblinSwordReviewRunner.ReviewTransport:53\\nReplicatedStorage.GoblinSwordReviewRunner.ReviewTransport:29 function Load\\nAssistantCommand:1\\n\",\"httpAfter\":false,\"loaded\":false},\"concurrentRejected\":true}"
+    }
+  ],
+  "isError": false
+}

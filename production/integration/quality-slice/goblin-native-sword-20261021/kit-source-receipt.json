@@ -1,0 +1,128 @@
+[
+  {
+    "name": "goblin_heavy_r6_Head.mesh.json",
+    "sha256": "5f3072dfd029901fd1f1abb275594496c1a7b79a4b754fb53849dfade7ae6ddd",
+    "bytes": 232696,
+    "vertices": 392,
+    "triangles": 760
+  },
+  {
+    "name": "goblin_heavy_r6_Torso.mesh.json",
+    "sha256": "652ae86a5d52fdc0df3981a401a34c226658bd9eaa08ec851f269fab7b135077",
+    "bytes": 449681,
+    "vertices": 784,
+    "triangles": 1516
+  },
+  {
+    "name": "goblin_heavy_r6_Left_Arm.mesh.json",
+    "sha256": "36a23b7e3a3ab94b048e75bf7970d0789f9788ffb367de588bf8d3aca8ef28b8",
+    "bytes": 274349,
+    "vertices": 476,
+    "triangles": 920
+  },
+  {
+    "name": "goblin_heavy_r6_Right_Arm.mesh.json",
+    "sha256": "b81952c75e3c9bd54e0ce9cc2a88be905c868ac351ff857a0b2d2380db8802e5",
+    "bytes": 274190,
+    "vertices": 476,
+    "triangles": 920
+  },
+  {
+    "name": "goblin_heavy_r6_Left_Leg.mesh.json",
+    "sha256": "eb558c6a1e0eb3f86736f9971a65c8975bc4c5e628a3878bbeaffa126adceb67",
+    "bytes": 276008,
+    "vertices": 476,
+    "triangles": 924
+  },
+  {
+    "name": "goblin_heavy_r6_Right_Leg.mesh.json",
+    "sha256": "6885bd8bca431b4b4311d414c79dcb93cd309d2611a266f8f7d9dd9fd9365693",
+    "bytes": 276009,
+    "vertices": 476,
+    "triangles": 924
+  },
+  {
+    "name": "goblin_scout_r6_Head.mesh.json",
+    "sha256": "78d5172cb3310f3bd2077b035da0509ead3d7aadd5c6dc2e5e67d5d813666ac0",
+    "bytes": 61288,
+    "vertices": 112,
+    "triangles": 216
+  },
+  {
+    "name": "goblin_scout_r6_Torso.mesh.json",
+    "sha256": "b79e44358fd461c2da24b852f7da807f68427ed6ec748b2dbdb0756a0052ed2a",
+    "bytes": 347863,
+    "vertices": 616,
+    "triangles": 1188
+  },
+  {
+    "name": "goblin_scout_r6_Left_Arm.mesh.json",
+    "sha256": "dd1e7477784ac094f0c6181fb6a40dcdf66d2f0b2c49b9b872c04bedd7a1896f",
+    "bytes": 191673,
+    "vertices": 336,
+    "triangles": 648
+  },
+  {
+    "name": "goblin_scout_r6_Right_Arm.mesh.json",
+    "sha256": "190f6053e8aa49f8d2f75502ab8e293c2455dce9101e9f2819be115e4c11849d",
+    "bytes": 191618,
+    "vertices": 336,
+    "triangles": 648
+  },
+  {
+    "name": "goblin_scout_r6_Left_Leg.mesh.json",
+    "sha256": "0bf471e941ecf7cd50d7b4f85963696a822c5a87f0669738dc6e8f0b26c32f4d",
+    "bytes": 122863,
+    "vertices": 224,
+    "triangles": 432
+  },
+  {
+    "name": "goblin_scout_r6_Right_Leg.mesh.json",
+    "sha256": "35efee60173de00dea4a4f767c02c5fd5658fdb7452ed672f5f3a75ef2f0dad2",
+    "bytes": 122864,
+    "vertices": 224,
+    "triangles": 432
+  },
+  {
+    "name": "goblin_ritual_r6_Head.mesh.json",
+    "sha256": "aac1c45e03df7660ad091fe7604dffc871f0a4e2a71a1e317a81a94f9ad5f924",
+    "bytes": 254479,
+    "vertices": 448,
+    "triangles": 864
+  },
+  {
+    "name": "goblin_ritual_r6_Torso.mesh.json",
+    "sha256": "b991840d88243cdd7bbe864c56135d8a3a1c9a158b2264d7a057597fe9112fcb",
+    "bytes": 534016,
+    "vertices": 952,
+    "triangles": 1836
+  },
+  {
+    "name": "goblin_ritual_r6_Left_Arm.mesh.json",
+    "sha256": "14ebc28039f7fa389d28397074fa200cbc61e9fcc001016432993a6e0751d586",
+    "bytes": 223254,
+    "vertices": 392,
+    "triangles": 756
+  },
+  {
+    "name": "goblin_ritual_r6_Right_Arm.mesh.json",
+    "sha256": "1cb6969c11c15487eea2891b4e80286962518ecb7f99e125f432ff6ef2f70838",
+    "bytes": 223199,
+    "vertices": 392,
+    "triangles": 756
+  },
+  {
+    "name": "goblin_ritual_r6_Left_Leg.mesh.json",
+    "sha256": "940ed2d988abcdc2aa77a176ca4fda7ee816f036aeede9d8baa86428e2f5d238",
+    "bytes": 279106,
+    "vertices": 504,
+    "triangles": 972
+  },
+  {
+    "name": "goblin_ritual_r6_Right_Leg.mesh.json",
+    "sha256": "791dde5e62baffc2a539963ae9c14f876c320a43ec3285fc942c248fa89eb8cf",
+    "bytes": 279107,
+    "vertices": 504,
+    "triangles": 972
+  }
+]

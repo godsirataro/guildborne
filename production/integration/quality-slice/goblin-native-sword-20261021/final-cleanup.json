@@ -1,0 +1,9 @@
+{
+  "content": [
+    {
+      "type": "text",
+      "text": "{\"scripts\":[{\"disabled\":true,\"path\":\"StarterPlayer.StarterPlayerScripts.Client.ClientBootstrap\"},{\"disabled\":false,\"path\":\"StarterPlayer.StarterPlayerScripts.PartyPresentationLab\"},{\"disabled\":false,\"path\":\"StarterPlayer.StarterPlayerScripts.QualityPreview\"},{\"disabled\":false,\"path\":\"ServerScriptService.PartyPresentationLab\"},{\"disabled\":false,\"path\":\"ServerScriptService.QualityPreview\"},{\"disabled\":true,\"path\":\"ServerScriptService.Server.ServerBootstrap\"}],\"lighting\":{\"clock\":14,\"brightness\":1,\"ambient\":[0.5,0.5,0.5]},\"sourceHashes\":[{\"path\":\"ServerScriptService.Server.Services.HeroRig\",\"sha256\":\"6863dfc6279df9e5f05e10c33f03e43c9b12dc48ea462cb6ef6bbc9b16449cc0\",\"unchanged\":true},{\"path\":\"StarterPlayer.StarterPlayerScripts.Client.Controllers.ActionPose\",\"sha256\":\"65381f67b0d36ae4c91230743526bd299ed820749e81a60449ad4c30148e498a\",\"unchanged\":true},{\"path\":\"ReplicatedStorage.Shared.Presentation.ActionTimeline\",\"sha256\":\"f14291c081c8b1650310f459daa661e36c5d000ee65cb9b423d2894e3f451131\",\"unchanged\":true}],\"workspaceChildren\":2,\"first\":{\"errors\":[],\"meshes\":2,\"groupRemoved\":true,\"images\":4,\"groupOwned\":true,\"destroyed\":10,\"connections\":1,\"closed\":true},\"camera\":{\"type\":\"Fixed\",\"cframe\":[0,20,20,1,0,0,0,0.7808688282966614,0.6246950626373291,0,-0.6246950626373291,0.7808688282966614],\"fov\":70,\"focus\":[0,0,-5,1,0,0,0,1,0,0,0,1]},\"second\":{\"alreadyClosed\":true},\"gameId\":0,\"runnerPresent\":false,\"groups\":[{\"name\":\"Default\",\"mask\":-1}],\"fixturePresent\":false,\"kit\":{\"alreadyClosed\":true},\"mode\":\"Edit\",\"placeId\":0,\"http\":false}"
+    }
+  ],
+  "isError": false
+}
