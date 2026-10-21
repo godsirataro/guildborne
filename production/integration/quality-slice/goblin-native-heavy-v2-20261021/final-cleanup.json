@@ -1,0 +1,9 @@
+{
+  "content": [
+    {
+      "type": "text",
+      "text": "{\"kitAgain\":{\"alreadyClosed\":true},\"lighting\":{\"clock\":14,\"brightness\":1,\"ambient\":[0.5,0.5,0.5]},\"sword\":{\"errors\":[],\"meshes\":2,\"groupRemoved\":true,\"images\":4,\"groupOwned\":true,\"destroyed\":10,\"connections\":1,\"closed\":true},\"swordAgain\":{\"alreadyClosed\":true},\"runner\":false,\"groups\":[{\"name\":\"Default\",\"mask\":-1}],\"scripts\":{\"StarterPlayer.StarterPlayerScripts.PartyPresentationLab\":false,\"StarterPlayer.StarterPlayerScripts.Client.ClientBootstrap\":true,\"ServerScriptService.PartyPresentationLab\":false,\"ServerScriptService.Server.ServerBootstrap\":true,\"ServerScriptService.QualityPreview\":false,\"StarterPlayer.StarterPlayerScripts.QualityPreview\":false},\"scriptsUnchanged\":true,\"fixture\":false,\"sourceUnchanged\":true,\"placeId\":0,\"camera\":{\"type\":\"Fixed\",\"focus\":[0,0,-5,1,0,0,0,1,0,0,0,1],\"cframe\":[0,20,20,1,0,0,0,0.7808688282966614,0.6246950626373291,0,-0.6246950626373291,0.7808688282966614],\"fov\":70},\"edit\":true,\"gameId\":0,\"kit\":{\"restored\":9,\"meshes\":12,\"images\":3,\"errors\":[],\"destroyed\":29,\"connections\":7,\"closed\":true},\"workspaceChildren\":2,\"sourceHashes\":{\"ActionPose\":\"65381f67b0d36ae4c91230743526bd299ed820749e81a60449ad4c30148e498a\",\"HeroRig\":\"6863dfc6279df9e5f05e10c33f03e43c9b12dc48ea462cb6ef6bbc9b16449cc0\",\"ActionTimeline\":\"f14291c081c8b1650310f459daa661e36c5d000ee65cb9b423d2894e3f451131\"},\"http\":false}"
+    }
+  ],
+  "isError": false
+}

@@ -1,0 +1,171 @@
+{
+  "scope": "BOUNDED_NATIVE_HEAVY_CROWN_CORRECTION",
+  "status": "REVIEW_ONLY",
+  "files": [
+    {
+      "path": ".gitattributes",
+      "bytes": 149,
+      "sha256": "ac17dd7c577e603b99e9c544aed3ffcecbbf92d2a6f8b8d4cae7a7c4c69ec316"
+    },
+    {
+      "path": "FinalCleanup.luau",
+      "bytes": 3263,
+      "sha256": "4323fa23a65d0cb1055cdcd45a34381cd97af6634b289cddcbaa84db84c0c5af"
+    },
+    {
+      "path": "GoblinNativePreview.luau",
+      "bytes": 13530,
+      "sha256": "7bc3a552efd9d051780538e050cbea506ed561806e92b8d9d2076d217e766ac0"
+    },
+    {
+      "path": "HeavyKitPreview.luau",
+      "bytes": 13307,
+      "sha256": "53b2596546a8a9d30af9e4d1d128e51039e9da053f84884f1a6b42ce9190c27b"
+    },
+    {
+      "path": "INDEPENDENT_REVIEW.md",
+      "bytes": 1820,
+      "sha256": "5769f933cba9a3e0890d0718d8d5a8973e871d3a2c1c49a20907d541c6dca629"
+    },
+    {
+      "path": "KitFailureDetail.luau",
+      "bytes": 9702,
+      "sha256": "c542ea111a427304411898318a7fbc79a94c6b4703cccb51cd3f6ed5bf360a6c"
+    },
+    {
+      "path": "KitFitSweep.luau",
+      "bytes": 2757,
+      "sha256": "75401f468b15513975df460b8f903bc447f0aa4841315c041769e37bbcec495b"
+    },
+    {
+      "path": "KitTransport.luau",
+      "bytes": 4893,
+      "sha256": "248f1e721c5c1f59ab7ae19630c52442d993dd20e391e1e6cc5c1863247a10b4"
+    },
+    {
+      "path": "README.md",
+      "bytes": 4602,
+      "sha256": "bf67ef142e8ea7c4c4f96a4261e98956c218f8ae2c1566d5923b2c2e50736c0b"
+    },
+    {
+      "path": "ReviewTransport.luau",
+      "bytes": 4655,
+      "sha256": "bf4868e35da88a25b5bbea37285c6e43ec3fdfc914a07bce1a0d5e5beed68ad9"
+    },
+    {
+      "path": "S18_SOURCE_REVIEW.md",
+      "bytes": 1007,
+      "sha256": "f9ae1f63adb2bf116d2fd2403e91198b654cf4e57ed126954af3e147f676320a"
+    },
+    {
+      "path": "baseline-comparison.json",
+      "bytes": 207,
+      "sha256": "78f771c93b6cb8141ba24ce1920e38f28c64de91feb375ab4f2d927b15bc3774"
+    },
+    {
+      "path": "baseline.json",
+      "bytes": 1289,
+      "sha256": "2de345f2f891b37eb3fbbfd327dc3c7dbca2c120c10dd6e10eb2d985a136fb08"
+    },
+    {
+      "path": "compile-check.json",
+      "bytes": 844,
+      "sha256": "a8ab86db0306777c77b4300379143ffc938bd0be752d7bb254ec6151b9c5fe72"
+    },
+    {
+      "path": "delivery-reference.json",
+      "bytes": 357,
+      "sha256": "5239d503dec38e3abd907fc800e4a58b4478b9683511b3792fdfeb4b9907aca7"
+    },
+    {
+      "path": "final-cleanup.json",
+      "bytes": 1534,
+      "sha256": "b2907ad905f1963d298194d977c6884115ae459071a0616351ff79fcbc860e03"
+    },
+    {
+      "path": "heavy-packet.json.sha256",
+      "bytes": 65,
+      "sha256": "8e034f64684722ac56bfff9c3bb49d5c32e4041f2d1957fbc2762ddc1a3b2f90"
+    },
+    {
+      "path": "heavy-v1-v2-comparison.json",
+      "bytes": 22987,
+      "sha256": "6323fa66b97ea38c727222f793664eaa6d2a7ae22cdcf1202d7ec4747e2f571b"
+    },
+    {
+      "path": "heavy-v2-detail-receipt.json",
+      "bytes": 31814,
+      "sha256": "889a97ebf97f1f60025400b1ddc7d7e92e36effe1ca07805d40005e00b3ad9c6"
+    },
+    {
+      "path": "heavy-v2-detail.json",
+      "bytes": 494433,
+      "sha256": "51ecaa7912df2ccbc1745c320e705a0c1f8e7ef1037950d74b789a3b42eaff56"
+    },
+    {
+      "path": "heavy-v2-sweep-receipt.json",
+      "bytes": 3656,
+      "sha256": "0a462a99f7cdba62def8edbec46ee1f0151d12aef0919a7fc7ca69911b4797cf"
+    },
+    {
+      "path": "heavy-v2-sweep.json",
+      "bytes": 140456,
+      "sha256": "09e248419cf9861c8b78ab2f928970bfb83323412dfc42e60d44c5e7ed468768"
+    },
+    {
+      "path": "native-heavy-v2-forward100.png",
+      "bytes": 118618,
+      "sha256": "6aae94296e7b47116a7dbbcc72904a1f51bb58f8e0084014bf4be2d6e5e75ffa"
+    },
+    {
+      "path": "native-heavy-v2-forward65.png",
+      "bytes": 123059,
+      "sha256": "da06ee2c59ce948d494ef7b05e625d5ab20ba4fba9a5ac01708ac23f992930bf"
+    },
+    {
+      "path": "native-load.json",
+      "bytes": 1504,
+      "sha256": "e578c63b9e2fbb530f8d1640c90ffaabfa5c738191f27e7e057b038dce5ca61b"
+    },
+    {
+      "path": "native-source-install.json",
+      "bytes": 451,
+      "sha256": "41880432ac5e86dc8148faf7246af0d2c0768c8599d79a79e2834bcc81f56156"
+    },
+    {
+      "path": "palette-comparison.json",
+      "bytes": 424,
+      "sha256": "9a3904d15a06d108877ea8820621e42dbbee54fca8632682a673c2033975f9cc"
+    },
+    {
+      "path": "ritual-gait-detail-receipt.json",
+      "bytes": 9441,
+      "sha256": "6493da58e2bd4cc3db28f383296f47b2e0c632ef16b1fabf6140c58e9129ef48"
+    },
+    {
+      "path": "ritual-gait-detail.json",
+      "bytes": 176188,
+      "sha256": "b7b7088d05d378a5d7354fe1a8c3f55407151144d784491ee795897ff5d7b9f5"
+    },
+    {
+      "path": "ritual-gait-load.json",
+      "bytes": 867,
+      "sha256": "5231526531b413a72e267f3f602107240eb3adc6175cfcb9a1bfbf2e7f11f655"
+    },
+    {
+      "path": "server-closure.json",
+      "bytes": 6797,
+      "sha256": "979b1f94554c658bee838542843c60a9dbf0fb9eac2b1ef5c9970ffa959b09a2"
+    },
+    {
+      "path": "source-comparison.json",
+      "bytes": 5380,
+      "sha256": "9a6bd72fdd94451847b7110178f8b5b9a4e3581eee3fbeaa1731fb30bcf485b3"
+    },
+    {
+      "path": "transport-layout.json",
+      "bytes": 4895,
+      "sha256": "e3a07d76a81932fd9e2d925989133562dd5a36a90fd2c1b706e02459a4bae231"
+    }
+  ]
+}

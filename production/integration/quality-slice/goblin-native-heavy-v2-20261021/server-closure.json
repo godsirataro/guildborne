@@ -1,0 +1,325 @@
+{
+  "closed": true,
+  "requests": [
+    {
+      "at": "2026-10-21T02:18:41.973Z",
+      "scope": "sword",
+      "name": "meta",
+      "kind": null,
+      "part": null,
+      "bytes": 1549
+    },
+    {
+      "at": "2026-10-21T02:18:41.987Z",
+      "scope": "sword",
+      "name": "mesh.json",
+      "kind": null,
+      "part": "0",
+      "bytes": 136604
+    },
+    {
+      "at": "2026-10-21T02:18:42.016Z",
+      "scope": "sword",
+      "name": "ColorMap.rgba",
+      "kind": null,
+      "part": "0",
+      "bytes": 240000
+    },
+    {
+      "at": "2026-10-21T02:18:42.022Z",
+      "scope": "sword",
+      "name": "ColorMap.rgba",
+      "kind": null,
+      "part": "1",
+      "bytes": 240000
+    },
+    {
+      "at": "2026-10-21T02:18:42.038Z",
+      "scope": "sword",
+      "name": "ColorMap.rgba",
+      "kind": null,
+      "part": "2",
+      "bytes": 240000
+    },
+    {
+      "at": "2026-10-21T02:18:42.055Z",
+      "scope": "sword",
+      "name": "ColorMap.rgba",
+      "kind": null,
+      "part": "3",
+      "bytes": 240000
+    },
+    {
+      "at": "2026-10-21T02:18:42.072Z",
+      "scope": "sword",
+      "name": "ColorMap.rgba",
+      "kind": null,
+      "part": "4",
+      "bytes": 240000
+    },
+    {
+      "at": "2026-10-21T02:18:42.087Z",
+      "scope": "sword",
+      "name": "ColorMap.rgba",
+      "kind": null,
+      "part": "5",
+      "bytes": 240000
+    },
+    {
+      "at": "2026-10-21T02:18:42.104Z",
+      "scope": "sword",
+      "name": "ColorMap.rgba",
+      "kind": null,
+      "part": "6",
+      "bytes": 240000
+    },
+    {
+      "at": "2026-10-21T02:18:42.120Z",
+      "scope": "sword",
+      "name": "ColorMap.rgba",
+      "kind": null,
+      "part": "7",
+      "bytes": 240000
+    },
+    {
+      "at": "2026-10-21T02:18:42.137Z",
+      "scope": "sword",
+      "name": "ColorMap.rgba",
+      "kind": null,
+      "part": "8",
+      "bytes": 240000
+    },
+    {
+      "at": "2026-10-21T02:18:42.154Z",
+      "scope": "sword",
+      "name": "ColorMap.rgba",
+      "kind": null,
+      "part": "9",
+      "bytes": 240000
+    },
+    {
+      "at": "2026-10-21T02:18:42.170Z",
+      "scope": "sword",
+      "name": "ColorMap.rgba",
+      "kind": null,
+      "part": "10",
+      "bytes": 240000
+    },
+    {
+      "at": "2026-10-21T02:18:42.187Z",
+      "scope": "sword",
+      "name": "ColorMap.rgba",
+      "kind": null,
+      "part": "11",
+      "bytes": 168276
+    },
+    {
+      "at": "2026-10-21T02:18:42.255Z",
+      "scope": "sword",
+      "name": "NormalMap.rgba",
+      "kind": null,
+      "part": "0",
+      "bytes": 240000
+    },
+    {
+      "at": "2026-10-21T02:18:42.270Z",
+      "scope": "sword",
+      "name": "NormalMap.rgba",
+      "kind": null,
+      "part": "1",
+      "bytes": 240000
+    },
+    {
+      "at": "2026-10-21T02:18:42.287Z",
+      "scope": "sword",
+      "name": "NormalMap.rgba",
+      "kind": null,
+      "part": "2",
+      "bytes": 240000
+    },
+    {
+      "at": "2026-10-21T02:18:42.304Z",
+      "scope": "sword",
+      "name": "NormalMap.rgba",
+      "kind": null,
+      "part": "3",
+      "bytes": 240000
+    },
+    {
+      "at": "2026-10-21T02:18:42.320Z",
+      "scope": "sword",
+      "name": "NormalMap.rgba",
+      "kind": null,
+      "part": "4",
+      "bytes": 222820
+    },
+    {
+      "at": "2026-10-21T02:18:42.383Z",
+      "scope": "sword",
+      "name": "RoughnessMap.rgba",
+      "kind": null,
+      "part": "0",
+      "bytes": 240000
+    },
+    {
+      "at": "2026-10-21T02:18:42.387Z",
+      "scope": "sword",
+      "name": "RoughnessMap.rgba",
+      "kind": null,
+      "part": "1",
+      "bytes": 240000
+    },
+    {
+      "at": "2026-10-21T02:18:42.404Z",
+      "scope": "sword",
+      "name": "RoughnessMap.rgba",
+      "kind": null,
+      "part": "2",
+      "bytes": 240000
+    },
+    {
+      "at": "2026-10-21T02:18:42.420Z",
+      "scope": "sword",
+      "name": "RoughnessMap.rgba",
+      "kind": null,
+      "part": "3",
+      "bytes": 240000
+    },
+    {
+      "at": "2026-10-21T02:18:42.437Z",
+      "scope": "sword",
+      "name": "RoughnessMap.rgba",
+      "kind": null,
+      "part": "4",
+      "bytes": 240000
+    },
+    {
+      "at": "2026-10-21T02:18:42.453Z",
+      "scope": "sword",
+      "name": "RoughnessMap.rgba",
+      "kind": null,
+      "part": "5",
+      "bytes": 140552
+    },
+    {
+      "at": "2026-10-21T02:18:42.517Z",
+      "scope": "sword",
+      "name": "MetalnessMap.rgba",
+      "kind": null,
+      "part": "0",
+      "bytes": 240000
+    },
+    {
+      "at": "2026-10-21T02:18:42.520Z",
+      "scope": "sword",
+      "name": "MetalnessMap.rgba",
+      "kind": null,
+      "part": "1",
+      "bytes": 240000
+    },
+    {
+      "at": "2026-10-21T02:18:42.537Z",
+      "scope": "sword",
+      "name": "MetalnessMap.rgba",
+      "kind": null,
+      "part": "2",
+      "bytes": 240000
+    },
+    {
+      "at": "2026-10-21T02:18:42.554Z",
+      "scope": "sword",
+      "name": "MetalnessMap.rgba",
+      "kind": null,
+      "part": "3",
+      "bytes": 240000
+    },
+    {
+      "at": "2026-10-21T02:18:42.570Z",
+      "scope": "sword",
+      "name": "MetalnessMap.rgba",
+      "kind": null,
+      "part": "4",
+      "bytes": 165472
+    },
+    {
+      "at": "2026-10-21T02:18:42.690Z",
+      "scope": "kit",
+      "name": "meta",
+      "kind": "heavy",
+      "part": null,
+      "bytes": 1195
+    },
+    {
+      "at": "2026-10-21T02:18:42.704Z",
+      "scope": "kit",
+      "name": "heavy.json",
+      "kind": null,
+      "part": "0",
+      "bytes": 144600
+    },
+    {
+      "at": "2026-10-21T02:18:42.752Z",
+      "scope": "kit",
+      "name": "ColorMap.rgba",
+      "kind": null,
+      "part": "0",
+      "bytes": 204
+    },
+    {
+      "at": "2026-10-21T02:18:42.772Z",
+      "scope": "kit",
+      "name": "RoughnessMap.rgba",
+      "kind": null,
+      "part": "0",
+      "bytes": 204
+    },
+    {
+      "at": "2026-10-21T02:18:42.788Z",
+      "scope": "kit",
+      "name": "MetalnessMap.rgba",
+      "kind": null,
+      "part": "0",
+      "bytes": 200
+    },
+    {
+      "at": "2026-10-21T02:19:58.289Z",
+      "scope": "kit",
+      "name": "meta",
+      "kind": "ritual",
+      "part": null,
+      "bytes": 1196
+    },
+    {
+      "at": "2026-10-21T02:19:58.301Z",
+      "scope": "kit",
+      "name": "ritual.json",
+      "kind": null,
+      "part": "0",
+      "bytes": 134900
+    },
+    {
+      "at": "2026-10-21T02:19:58.354Z",
+      "scope": "kit",
+      "name": "ColorMap.rgba",
+      "kind": null,
+      "part": "0",
+      "bytes": 204
+    },
+    {
+      "at": "2026-10-21T02:19:58.368Z",
+      "scope": "kit",
+      "name": "RoughnessMap.rgba",
+      "kind": null,
+      "part": "0",
+      "bytes": 204
+    },
+    {
+      "at": "2026-10-21T02:19:58.385Z",
+      "scope": "kit",
+      "name": "MetalnessMap.rgba",
+      "kind": null,
+      "part": "0",
+      "bytes": 200
+    }
+  ]
+}

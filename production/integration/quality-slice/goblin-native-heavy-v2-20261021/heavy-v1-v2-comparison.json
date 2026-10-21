@@ -1,0 +1,1061 @@
+[
+  {
+    "frame": 1,
+    "label": "Idle",
+    "oldInside": 0,
+    "newInside": 0,
+    "delta": 0,
+    "oldMinY": 0.08500003814697266,
+    "newMinY": 0.08500003814697266
+  },
+  {
+    "frame": 2,
+    "label": "SyntheticGait",
+    "phase": 0,
+    "oldInside": 0,
+    "newInside": 0,
+    "delta": 0,
+    "oldMinY": 0.08500003814697266,
+    "newMinY": 0.08500003814697266
+  },
+  {
+    "frame": 3,
+    "label": "SyntheticGait",
+    "phase": 0.10471975511965977,
+    "oldInside": 3,
+    "newInside": 0,
+    "delta": -3,
+    "oldMinY": 0.054673969745635986,
+    "newMinY": 0.054673969745635986
+  },
+  {
+    "frame": 4,
+    "label": "SyntheticGait",
+    "phase": 0.20943951023931953,
+    "oldInside": 4,
+    "newInside": 0,
+    "delta": -4,
+    "oldMinY": 0.028912901878356934,
+    "newMinY": 0.028912901878356934
+  },
+  {
+    "frame": 5,
+    "label": "SyntheticGait",
+    "phase": 0.3141592653589793,
+    "oldInside": 6,
+    "newInside": 0,
+    "delta": -6,
+    "oldMinY": 0.007844626903533936,
+    "newMinY": 0.007844626903533936
+  },
+  {
+    "frame": 6,
+    "label": "SyntheticGait",
+    "phase": 0.41887902047863906,
+    "oldInside": 6,
+    "newInside": 0,
+    "delta": -6,
+    "oldMinY": -0.008600354194641113,
+    "newMinY": -0.008600354194641113
+  },
+  {
+    "frame": 7,
+    "label": "SyntheticGait",
+    "phase": 0.5235987755982988,
+    "oldInside": 7,
+    "newInside": 0,
+    "delta": -7,
+    "oldMinY": -0.02067410945892334,
+    "newMinY": -0.02067410945892334
+  },
+  {
+    "frame": 8,
+    "label": "SyntheticGait",
+    "phase": 0.6283185307179586,
+    "oldInside": 6,
+    "newInside": 0,
+    "delta": -6,
+    "oldMinY": -0.028787672519683838,
+    "newMinY": -0.028787672519683838
+  },
+  {
+    "frame": 9,
+    "label": "SyntheticGait",
+    "phase": 0.7330382858376184,
+    "oldInside": 6,
+    "newInside": 0,
+    "delta": -6,
+    "oldMinY": -0.03348046541213989,
+    "newMinY": -0.03348046541213989
+  },
+  {
+    "frame": 10,
+    "label": "SyntheticGait",
+    "phase": 0.8377580409572781,
+    "oldInside": 7,
+    "newInside": 0,
+    "delta": -7,
+    "oldMinY": -0.03538322448730469,
+    "newMinY": -0.03538322448730469
+  },
+  {
+    "frame": 11,
+    "label": "SyntheticGait",
+    "phase": 0.9424777960769379,
+    "oldInside": 8,
+    "newInside": 0,
+    "delta": -8,
+    "oldMinY": -0.03517782688140869,
+    "newMinY": -0.03517782688140869
+  },
+  {
+    "frame": 12,
+    "label": "SyntheticGait",
+    "phase": 1.0471975511965976,
+    "oldInside": 7,
+    "newInside": 0,
+    "delta": -7,
+    "oldMinY": -0.03355675935745239,
+    "newMinY": -0.03355675935745239
+  },
+  {
+    "frame": 13,
+    "label": "SyntheticGait",
+    "phase": 1.1519173063162573,
+    "oldInside": 8,
+    "newInside": 0,
+    "delta": -8,
+    "oldMinY": -0.03209775686264038,
+    "newMinY": -0.03209775686264038
+  },
+  {
+    "frame": 14,
+    "label": "SyntheticGait",
+    "phase": 1.2566370614359172,
+    "oldInside": 8,
+    "newInside": 0,
+    "delta": -8,
+    "oldMinY": -0.0304071307182312,
+    "newMinY": -0.0304071307182312
+  },
+  {
+    "frame": 15,
+    "label": "SyntheticGait",
+    "phase": 1.3613568165555772,
+    "oldInside": 8,
+    "newInside": 0,
+    "delta": -8,
+    "oldMinY": -0.02882629632949829,
+    "newMinY": -0.02882629632949829
+  },
+  {
+    "frame": 16,
+    "label": "SyntheticGait",
+    "phase": 1.4660765716752369,
+    "oldInside": 8,
+    "newInside": 0,
+    "delta": -8,
+    "oldMinY": -0.02772468328475952,
+    "newMinY": -0.02772468328475952
+  },
+  {
+    "frame": 17,
+    "label": "SyntheticGait",
+    "phase": 1.5707963267948963,
+    "oldInside": 8,
+    "newInside": 0,
+    "delta": -8,
+    "oldMinY": -0.027331531047821045,
+    "newMinY": -0.027331531047821045
+  },
+  {
+    "frame": 18,
+    "label": "SyntheticGait",
+    "phase": 1.6755160819145563,
+    "oldInside": 8,
+    "newInside": 0,
+    "delta": -8,
+    "oldMinY": -0.02772468328475952,
+    "newMinY": -0.02772468328475952
+  },
+  {
+    "frame": 19,
+    "label": "SyntheticGait",
+    "phase": 1.7802358370342162,
+    "oldInside": 8,
+    "newInside": 0,
+    "delta": -8,
+    "oldMinY": -0.02882629632949829,
+    "newMinY": -0.02882629632949829
+  },
+  {
+    "frame": 20,
+    "label": "SyntheticGait",
+    "phase": 1.8849555921538759,
+    "oldInside": 8,
+    "newInside": 0,
+    "delta": -8,
+    "oldMinY": -0.0304071307182312,
+    "newMinY": -0.0304071307182312
+  },
+  {
+    "frame": 21,
+    "label": "SyntheticGait",
+    "phase": 1.9896753472735356,
+    "oldInside": 8,
+    "newInside": 0,
+    "delta": -8,
+    "oldMinY": -0.03209775686264038,
+    "newMinY": -0.03209775686264038
+  },
+  {
+    "frame": 22,
+    "label": "SyntheticGait",
+    "phase": 2.0943951023931953,
+    "oldInside": 7,
+    "newInside": 0,
+    "delta": -7,
+    "oldMinY": -0.03355675935745239,
+    "newMinY": -0.03355675935745239
+  },
+  {
+    "frame": 23,
+    "label": "SyntheticGait",
+    "phase": 2.199114857512855,
+    "oldInside": 8,
+    "newInside": 0,
+    "delta": -8,
+    "oldMinY": -0.03517782688140869,
+    "newMinY": -0.03517782688140869
+  },
+  {
+    "frame": 24,
+    "label": "SyntheticGait",
+    "phase": 2.3038346126325147,
+    "oldInside": 7,
+    "newInside": 0,
+    "delta": -7,
+    "oldMinY": -0.03538322448730469,
+    "newMinY": -0.03538322448730469
+  },
+  {
+    "frame": 25,
+    "label": "SyntheticGait",
+    "phase": 2.4085543677521746,
+    "oldInside": 6,
+    "newInside": 0,
+    "delta": -6,
+    "oldMinY": -0.03348046541213989,
+    "newMinY": -0.03348046541213989
+  },
+  {
+    "frame": 26,
+    "label": "SyntheticGait",
+    "phase": 2.5132741228718345,
+    "oldInside": 6,
+    "newInside": 0,
+    "delta": -6,
+    "oldMinY": -0.028787672519683838,
+    "newMinY": -0.028787672519683838
+  },
+  {
+    "frame": 27,
+    "label": "SyntheticGait",
+    "phase": 2.6179938779914944,
+    "oldInside": 7,
+    "newInside": 0,
+    "delta": -7,
+    "oldMinY": -0.02067410945892334,
+    "newMinY": -0.02067410945892334
+  },
+  {
+    "frame": 28,
+    "label": "SyntheticGait",
+    "phase": 2.7227136331111543,
+    "oldInside": 6,
+    "newInside": 0,
+    "delta": -6,
+    "oldMinY": -0.008600354194641113,
+    "newMinY": -0.008600354194641113
+  },
+  {
+    "frame": 29,
+    "label": "SyntheticGait",
+    "phase": 2.827433388230814,
+    "oldInside": 6,
+    "newInside": 0,
+    "delta": -6,
+    "oldMinY": 0.007844626903533936,
+    "newMinY": 0.007844626903533936
+  },
+  {
+    "frame": 30,
+    "label": "SyntheticGait",
+    "phase": 2.9321531433504737,
+    "oldInside": 4,
+    "newInside": 0,
+    "delta": -4,
+    "oldMinY": 0.028912901878356934,
+    "newMinY": 0.028912901878356934
+  },
+  {
+    "frame": 31,
+    "label": "SyntheticGait",
+    "phase": 3.0368728984701336,
+    "oldInside": 3,
+    "newInside": 0,
+    "delta": -3,
+    "oldMinY": 0.054673969745635986,
+    "newMinY": 0.054673969745635986
+  },
+  {
+    "frame": 32,
+    "label": "SyntheticGait",
+    "phase": 3.1415926535897927,
+    "oldInside": 0,
+    "newInside": 0,
+    "delta": 0,
+    "oldMinY": 0.08500003814697266,
+    "newMinY": 0.08500003814697266
+  },
+  {
+    "frame": 33,
+    "label": "SyntheticGait",
+    "phase": 3.2463124087094526,
+    "oldInside": 3,
+    "newInside": 0,
+    "delta": -3,
+    "oldMinY": 0.054673969745635986,
+    "newMinY": 0.054673969745635986
+  },
+  {
+    "frame": 34,
+    "label": "SyntheticGait",
+    "phase": 3.3510321638291125,
+    "oldInside": 4,
+    "newInside": 0,
+    "delta": -4,
+    "oldMinY": 0.028912901878356934,
+    "newMinY": 0.028912901878356934
+  },
+  {
+    "frame": 35,
+    "label": "SyntheticGait",
+    "phase": 3.4557519189487724,
+    "oldInside": 6,
+    "newInside": 0,
+    "delta": -6,
+    "oldMinY": 0.007844626903533936,
+    "newMinY": 0.007844626903533936
+  },
+  {
+    "frame": 36,
+    "label": "SyntheticGait",
+    "phase": 3.5604716740684323,
+    "oldInside": 6,
+    "newInside": 0,
+    "delta": -6,
+    "oldMinY": -0.008600354194641113,
+    "newMinY": -0.008600354194641113
+  },
+  {
+    "frame": 37,
+    "label": "SyntheticGait",
+    "phase": 3.665191429188092,
+    "oldInside": 7,
+    "newInside": 0,
+    "delta": -7,
+    "oldMinY": -0.02067410945892334,
+    "newMinY": -0.02067410945892334
+  },
+  {
+    "frame": 38,
+    "label": "SyntheticGait",
+    "phase": 3.7699111843077517,
+    "oldInside": 6,
+    "newInside": 0,
+    "delta": -6,
+    "oldMinY": -0.028787672519683838,
+    "newMinY": -0.028787672519683838
+  },
+  {
+    "frame": 39,
+    "label": "SyntheticGait",
+    "phase": 3.8746309394274117,
+    "oldInside": 6,
+    "newInside": 0,
+    "delta": -6,
+    "oldMinY": -0.03348046541213989,
+    "newMinY": -0.03348046541213989
+  },
+  {
+    "frame": 40,
+    "label": "SyntheticGait",
+    "phase": 3.979350694547071,
+    "oldInside": 7,
+    "newInside": 0,
+    "delta": -7,
+    "oldMinY": -0.03538322448730469,
+    "newMinY": -0.03538322448730469
+  },
+  {
+    "frame": 41,
+    "label": "SyntheticGait",
+    "phase": 4.084070449666731,
+    "oldInside": 8,
+    "newInside": 0,
+    "delta": -8,
+    "oldMinY": -0.03517782688140869,
+    "newMinY": -0.03517782688140869
+  },
+  {
+    "frame": 42,
+    "label": "SyntheticGait",
+    "phase": 4.1887902047863905,
+    "oldInside": 7,
+    "newInside": 0,
+    "delta": -7,
+    "oldMinY": -0.03355675935745239,
+    "newMinY": -0.03355675935745239
+  },
+  {
+    "frame": 43,
+    "label": "SyntheticGait",
+    "phase": 4.29350995990605,
+    "oldInside": 8,
+    "newInside": 0,
+    "delta": -8,
+    "oldMinY": -0.03209775686264038,
+    "newMinY": -0.03209775686264038
+  },
+  {
+    "frame": 44,
+    "label": "SyntheticGait",
+    "phase": 4.39822971502571,
+    "oldInside": 8,
+    "newInside": 0,
+    "delta": -8,
+    "oldMinY": -0.0304071307182312,
+    "newMinY": -0.0304071307182312
+  },
+  {
+    "frame": 45,
+    "label": "SyntheticGait",
+    "phase": 4.50294947014537,
+    "oldInside": 8,
+    "newInside": 0,
+    "delta": -8,
+    "oldMinY": -0.02882629632949829,
+    "newMinY": -0.02882629632949829
+  },
+  {
+    "frame": 46,
+    "label": "SyntheticGait",
+    "phase": 4.607669225265029,
+    "oldInside": 8,
+    "newInside": 0,
+    "delta": -8,
+    "oldMinY": -0.02772468328475952,
+    "newMinY": -0.02772468328475952
+  },
+  {
+    "frame": 47,
+    "label": "SyntheticGait",
+    "phase": 4.71238898038469,
+    "oldInside": 8,
+    "newInside": 0,
+    "delta": -8,
+    "oldMinY": -0.027331531047821045,
+    "newMinY": -0.027331531047821045
+  },
+  {
+    "frame": 48,
+    "label": "SyntheticGait",
+    "phase": 4.817108735504349,
+    "oldInside": 8,
+    "newInside": 0,
+    "delta": -8,
+    "oldMinY": -0.02772468328475952,
+    "newMinY": -0.02772468328475952
+  },
+  {
+    "frame": 49,
+    "label": "SyntheticGait",
+    "phase": 4.9218284906240095,
+    "oldInside": 8,
+    "newInside": 0,
+    "delta": -8,
+    "oldMinY": -0.02882629632949829,
+    "newMinY": -0.02882629632949829
+  },
+  {
+    "frame": 50,
+    "label": "SyntheticGait",
+    "phase": 5.026548245743669,
+    "oldInside": 8,
+    "newInside": 0,
+    "delta": -8,
+    "oldMinY": -0.0304071307182312,
+    "newMinY": -0.0304071307182312
+  },
+  {
+    "frame": 51,
+    "label": "SyntheticGait",
+    "phase": 5.1312680008633285,
+    "oldInside": 8,
+    "newInside": 0,
+    "delta": -8,
+    "oldMinY": -0.03209775686264038,
+    "newMinY": -0.03209775686264038
+  },
+  {
+    "frame": 52,
+    "label": "SyntheticGait",
+    "phase": 5.235987755982989,
+    "oldInside": 7,
+    "newInside": 0,
+    "delta": -7,
+    "oldMinY": -0.03355675935745239,
+    "newMinY": -0.03355675935745239
+  },
+  {
+    "frame": 53,
+    "label": "SyntheticGait",
+    "phase": 5.340707511102648,
+    "oldInside": 8,
+    "newInside": 0,
+    "delta": -8,
+    "oldMinY": -0.03517782688140869,
+    "newMinY": -0.03517782688140869
+  },
+  {
+    "frame": 54,
+    "label": "SyntheticGait",
+    "phase": 5.445427266222309,
+    "oldInside": 7,
+    "newInside": 0,
+    "delta": -7,
+    "oldMinY": -0.03538322448730469,
+    "newMinY": -0.03538322448730469
+  },
+  {
+    "frame": 55,
+    "label": "SyntheticGait",
+    "phase": 5.550147021341968,
+    "oldInside": 6,
+    "newInside": 0,
+    "delta": -6,
+    "oldMinY": -0.03348046541213989,
+    "newMinY": -0.03348046541213989
+  },
+  {
+    "frame": 56,
+    "label": "SyntheticGait",
+    "phase": 5.654866776461628,
+    "oldInside": 6,
+    "newInside": 0,
+    "delta": -6,
+    "oldMinY": -0.028787672519683838,
+    "newMinY": -0.028787672519683838
+  },
+  {
+    "frame": 57,
+    "label": "SyntheticGait",
+    "phase": 5.759586531581288,
+    "oldInside": 7,
+    "newInside": 0,
+    "delta": -7,
+    "oldMinY": -0.02067410945892334,
+    "newMinY": -0.02067410945892334
+  },
+  {
+    "frame": 58,
+    "label": "SyntheticGait",
+    "phase": 5.8643062867009474,
+    "oldInside": 6,
+    "newInside": 0,
+    "delta": -6,
+    "oldMinY": -0.008600354194641113,
+    "newMinY": -0.008600354194641113
+  },
+  {
+    "frame": 59,
+    "label": "SyntheticGait",
+    "phase": 5.969026041820607,
+    "oldInside": 6,
+    "newInside": 0,
+    "delta": -6,
+    "oldMinY": 0.007844626903533936,
+    "newMinY": 0.007844626903533936
+  },
+  {
+    "frame": 60,
+    "label": "SyntheticGait",
+    "phase": 6.073745796940267,
+    "oldInside": 4,
+    "newInside": 0,
+    "delta": -4,
+    "oldMinY": 0.028912901878356934,
+    "newMinY": 0.028912901878356934
+  },
+  {
+    "frame": 61,
+    "label": "SyntheticGait",
+    "phase": 6.178465552059927,
+    "oldInside": 3,
+    "newInside": 0,
+    "delta": -3,
+    "oldMinY": 0.054673969745635986,
+    "newMinY": 0.054673969745635986
+  },
+  {
+    "frame": 62,
+    "label": "SyntheticGait",
+    "phase": 6.283185307179585,
+    "oldInside": 0,
+    "newInside": 0,
+    "delta": 0,
+    "oldMinY": 0.08500003814697266,
+    "newMinY": 0.08500003814697266
+  },
+  {
+    "frame": 63,
+    "label": "SyntheticWarriorSlash",
+    "age": 0,
+    "oldInside": 0,
+    "newInside": 0,
+    "delta": 0,
+    "oldMinY": 0.08500003814697266,
+    "newMinY": 0.08500003814697266
+  },
+  {
+    "frame": 64,
+    "label": "SyntheticWarriorSlash",
+    "age": 0.0155,
+    "oldInside": 3,
+    "newInside": 0,
+    "delta": -3,
+    "oldMinY": 0.06913310289382935,
+    "newMinY": 0.06913310289382935
+  },
+  {
+    "frame": 65,
+    "label": "SyntheticWarriorSlash",
+    "age": 0.031,
+    "oldInside": 2,
+    "newInside": 0,
+    "delta": -2,
+    "oldMinY": 0.030413925647735596,
+    "newMinY": 0.030413925647735596
+  },
+  {
+    "frame": 66,
+    "label": "SyntheticWarriorSlash",
+    "age": 0.0465,
+    "oldInside": 4,
+    "newInside": 0,
+    "delta": -4,
+    "oldMinY": -0.017406105995178223,
+    "newMinY": -0.017406105995178223
+  },
+  {
+    "frame": 67,
+    "label": "SyntheticWarriorSlash",
+    "age": 0.062,
+    "oldInside": 11,
+    "newInside": 5,
+    "delta": -6,
+    "oldMinY": -0.061845600605010986,
+    "newMinY": -0.061845600605010986
+  },
+  {
+    "frame": 68,
+    "label": "SyntheticWarriorSlash",
+    "age": 0.0775,
+    "oldInside": 18,
+    "newInside": 14,
+    "delta": -4,
+    "oldMinY": -0.09401530027389526,
+    "newMinY": -0.09401530027389526
+  },
+  {
+    "frame": 69,
+    "label": "SyntheticWarriorSlash",
+    "age": 0.093,
+    "oldInside": 18,
+    "newInside": 14,
+    "delta": -4,
+    "oldMinY": -0.11120396852493286,
+    "newMinY": -0.11120396852493286
+  },
+  {
+    "frame": 70,
+    "label": "SyntheticWarriorSlash",
+    "age": 0.1085,
+    "oldInside": 18,
+    "newInside": 14,
+    "delta": -4,
+    "oldMinY": -0.11185401678085327,
+    "newMinY": -0.11185401678085327
+  },
+  {
+    "frame": 71,
+    "label": "SyntheticWarriorSlash",
+    "age": 0.124,
+    "oldInside": 18,
+    "newInside": 14,
+    "delta": -4,
+    "oldMinY": -0.10411518812179565,
+    "newMinY": -0.10411518812179565
+  },
+  {
+    "frame": 72,
+    "label": "SyntheticWarriorSlash",
+    "age": 0.1395,
+    "oldInside": 6,
+    "newInside": 0,
+    "delta": -6,
+    "oldMinY": -0.08947420120239258,
+    "newMinY": -0.08947420120239258
+  },
+  {
+    "frame": 73,
+    "label": "SyntheticWarriorSlash",
+    "age": 0.155,
+    "oldInside": 13,
+    "newInside": 0,
+    "delta": -13,
+    "oldMinY": -0.06499290466308594,
+    "newMinY": -0.06499290466308594
+  },
+  {
+    "frame": 74,
+    "label": "SyntheticWarriorSlash",
+    "age": 0.1705,
+    "oldInside": 57,
+    "newInside": 47,
+    "delta": -10,
+    "oldMinY": -0.10278540849685669,
+    "newMinY": -0.10278540849685669
+  },
+  {
+    "frame": 75,
+    "label": "SyntheticWarriorSlash",
+    "age": 0.186,
+    "oldInside": 197,
+    "newInside": 192,
+    "delta": -5,
+    "oldMinY": -0.12108755111694336,
+    "newMinY": -0.12108755111694336
+  },
+  {
+    "frame": 76,
+    "label": "SyntheticWarriorSlash",
+    "age": 0.2015,
+    "oldInside": 263,
+    "newInside": 257,
+    "delta": -6,
+    "oldMinY": -0.14100492000579834,
+    "newMinY": -0.14100492000579834
+  },
+  {
+    "frame": 77,
+    "label": "SyntheticWarriorSlash",
+    "age": 0.217,
+    "oldInside": 264,
+    "newInside": 258,
+    "delta": -6,
+    "oldMinY": -0.14316898584365845,
+    "newMinY": -0.14316898584365845
+  },
+  {
+    "frame": 78,
+    "label": "SyntheticWarriorSlash",
+    "age": 0.2325,
+    "oldInside": 241,
+    "newInside": 234,
+    "delta": -7,
+    "oldMinY": -0.13811373710632324,
+    "newMinY": -0.13811373710632324
+  },
+  {
+    "frame": 79,
+    "label": "SyntheticWarriorSlash",
+    "age": 0.248,
+    "oldInside": 242,
+    "newInside": 235,
+    "delta": -7,
+    "oldMinY": -0.12773281335830688,
+    "newMinY": -0.12773281335830688
+  },
+  {
+    "frame": 80,
+    "label": "SyntheticWarriorSlash",
+    "age": 0.26349999999999996,
+    "oldInside": 242,
+    "newInside": 235,
+    "delta": -7,
+    "oldMinY": -0.1103929877281189,
+    "newMinY": -0.1103929877281189
+  },
+  {
+    "frame": 81,
+    "label": "SyntheticWarriorSlash",
+    "age": 0.279,
+    "oldInside": 245,
+    "newInside": 238,
+    "delta": -7,
+    "oldMinY": -0.09537410736083984,
+    "newMinY": -0.09537410736083984
+  },
+  {
+    "frame": 82,
+    "label": "SyntheticWarriorSlash",
+    "age": 0.2945,
+    "oldInside": 269,
+    "newInside": 262,
+    "delta": -7,
+    "oldMinY": -0.08418679237365723,
+    "newMinY": -0.08418679237365723
+  },
+  {
+    "frame": 83,
+    "label": "SyntheticWarriorSlash",
+    "age": 0.31,
+    "oldInside": 278,
+    "newInside": 272,
+    "delta": -6,
+    "oldMinY": -0.07775455713272095,
+    "newMinY": -0.07775455713272095
+  },
+  {
+    "frame": 84,
+    "label": "SyntheticWarriorSlash",
+    "age": 0.3255,
+    "oldInside": 278,
+    "newInside": 272,
+    "delta": -6,
+    "oldMinY": -0.07615691423416138,
+    "newMinY": -0.07615691423416138
+  },
+  {
+    "frame": 85,
+    "label": "SyntheticWarriorSlash",
+    "age": 0.341,
+    "oldInside": 265,
+    "newInside": 261,
+    "delta": -4,
+    "oldMinY": -0.07867014408111572,
+    "newMinY": -0.07867014408111572
+  },
+  {
+    "frame": 86,
+    "label": "SyntheticWarriorSlash",
+    "age": 0.3565,
+    "oldInside": 252,
+    "newInside": 246,
+    "delta": -6,
+    "oldMinY": -0.08391726016998291,
+    "newMinY": -0.08391726016998291
+  },
+  {
+    "frame": 87,
+    "label": "SyntheticWarriorSlash",
+    "age": 0.372,
+    "oldInside": 246,
+    "newInside": 241,
+    "delta": -5,
+    "oldMinY": -0.09010517597198486,
+    "newMinY": -0.09010517597198486
+  },
+  {
+    "frame": 88,
+    "label": "SyntheticWarriorSlash",
+    "age": 0.3875,
+    "oldInside": 235,
+    "newInside": 229,
+    "delta": -6,
+    "oldMinY": -0.09530824422836304,
+    "newMinY": -0.09530824422836304
+  },
+  {
+    "frame": 89,
+    "label": "SyntheticWarriorSlash",
+    "age": 0.403,
+    "oldInside": 208,
+    "newInside": 203,
+    "delta": -5,
+    "oldMinY": -0.09545165300369263,
+    "newMinY": -0.09545165300369263
+  },
+  {
+    "frame": 90,
+    "label": "SyntheticWarriorSlash",
+    "age": 0.4185,
+    "oldInside": 172,
+    "newInside": 168,
+    "delta": -4,
+    "oldMinY": -0.08351898193359375,
+    "newMinY": -0.08351898193359375
+  },
+  {
+    "frame": 91,
+    "label": "SyntheticWarriorSlash",
+    "age": 0.434,
+    "oldInside": 153,
+    "newInside": 148,
+    "delta": -5,
+    "oldMinY": -0.06999552249908447,
+    "newMinY": -0.06999552249908447
+  },
+  {
+    "frame": 92,
+    "label": "SyntheticWarriorSlash",
+    "age": 0.4495,
+    "oldInside": 141,
+    "newInside": 136,
+    "delta": -5,
+    "oldMinY": -0.055067360401153564,
+    "newMinY": -0.055067360401153564
+  },
+  {
+    "frame": 93,
+    "label": "SyntheticWarriorSlash",
+    "age": 0.465,
+    "oldInside": 113,
+    "newInside": 108,
+    "delta": -5,
+    "oldMinY": -0.03900831937789917,
+    "newMinY": -0.03900831937789917
+  },
+  {
+    "frame": 94,
+    "label": "SyntheticWarriorSlash",
+    "age": 0.4805,
+    "oldInside": 91,
+    "newInside": 84,
+    "delta": -7,
+    "oldMinY": -0.0221707820892334,
+    "newMinY": -0.0221707820892334
+  },
+  {
+    "frame": 95,
+    "label": "SyntheticWarriorSlash",
+    "age": 0.496,
+    "oldInside": 87,
+    "newInside": 81,
+    "delta": -6,
+    "oldMinY": -0.004977107048034668,
+    "newMinY": -0.004977107048034668
+  },
+  {
+    "frame": 96,
+    "label": "SyntheticWarriorSlash",
+    "age": 0.5115000000000001,
+    "oldInside": 63,
+    "newInside": 58,
+    "delta": -5,
+    "oldMinY": 0.012099921703338623,
+    "newMinY": 0.012099921703338623
+  },
+  {
+    "frame": 97,
+    "label": "SyntheticWarriorSlash",
+    "age": 0.5269999999999999,
+    "oldInside": 42,
+    "newInside": 38,
+    "delta": -4,
+    "oldMinY": 0.02855020761489868,
+    "newMinY": 0.02855020761489868
+  },
+  {
+    "frame": 98,
+    "label": "SyntheticWarriorSlash",
+    "age": 0.5425,
+    "oldInside": 28,
+    "newInside": 25,
+    "delta": -3,
+    "oldMinY": 0.04384565353393555,
+    "newMinY": 0.04384565353393555
+  },
+  {
+    "frame": 99,
+    "label": "SyntheticWarriorSlash",
+    "age": 0.558,
+    "oldInside": 9,
+    "newInside": 7,
+    "delta": -2,
+    "oldMinY": 0.057453811168670654,
+    "newMinY": 0.057453811168670654
+  },
+  {
+    "frame": 100,
+    "label": "SyntheticWarriorSlash",
+    "age": 0.5735,
+    "oldInside": 2,
+    "newInside": 0,
+    "delta": -2,
+    "oldMinY": 0.06885451078414917,
+    "newMinY": 0.06885451078414917
+  },
+  {
+    "frame": 101,
+    "label": "SyntheticWarriorSlash",
+    "age": 0.589,
+    "oldInside": 1,
+    "newInside": 0,
+    "delta": -1,
+    "oldMinY": 0.07754987478256226,
+    "newMinY": 0.07754987478256226
+  },
+  {
+    "frame": 102,
+    "label": "SyntheticWarriorSlash",
+    "age": 0.6045,
+    "oldInside": 1,
+    "newInside": 0,
+    "delta": -1,
+    "oldMinY": 0.08307301998138428,
+    "newMinY": 0.08307301998138428
+  },
+  {
+    "frame": 103,
+    "label": "SyntheticWarriorSlash",
+    "age": 0.62,
+    "oldInside": 0,
+    "newInside": 0,
+    "delta": 0,
+    "oldMinY": 0.08500003814697266,
+    "newMinY": 0.08500003814697266
+  },
+  {
+    "frame": 104,
+    "label": "ExactWarriorContactTime",
+    "age": 0.24,
+    "oldInside": 242,
+    "newInside": 235,
+    "delta": -7,
+    "oldMinY": -0.1371188759803772,
+    "newMinY": -0.1371188759803772
+  },
+  {
+    "frame": 105,
+    "label": "SyntheticForwardReach65",
+    "forwardDegrees": 65,
+    "oldInside": 16,
+    "newInside": 0,
+    "delta": -16,
+    "oldMinY": 0.08500003814697266,
+    "newMinY": 0.08500003814697266
+  },
+  {
+    "frame": 106,
+    "label": "SyntheticForwardReach100",
+    "forwardDegrees": 100,
+    "oldInside": 16,
+    "newInside": 0,
+    "delta": -16,
+    "oldMinY": 0.08500003814697266,
+    "newMinY": 0.08500003814697266
+  }
+]

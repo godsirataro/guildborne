@@ -1,0 +1,9 @@
+{
+  "content": [
+    {
+      "type": "text",
+      "text": "{\"kit\":{\"httpBefore\":false,\"loaded\":true,\"images\":[{\"height\":16,\"role\":\"ColorMap\",\"rawSha256\":\"f9427d74ace6fa00f9c994cf839dc2dfdb1a3a16784c3734d087a8a4cec1ce3b\",\"width\":128},{\"height\":16,\"role\":\"RoughnessMap\",\"rawSha256\":\"9f68a6bd29f8d5678baa236a2b7301382bdba92e5d7425e15c6c5d4afaa40f77\",\"width\":128},{\"height\":16,\"role\":\"MetalnessMap\",\"rawSha256\":\"0baa5fc22fd4f6cb647d84b3968f7b7fb691bf373abb06cbc2172e12c502314a\",\"width\":128}],\"scope\":\"LOCAL_R6_KIT_PALETTE_PREVIEW\",\"kind\":\"heavy\",\"httpAfter\":false,\"meshSha256\":\"81294760b88294746964a265f001278fd76dc11f058b338791728f3a8428634e\"},\"sword\":{\"httpBefore\":false,\"images\":[{\"height\":1024,\"role\":\"ColorMap\",\"rawSha256\":\"89e1798d90c46dc9ab2e0ea9cd3fddd15b7376eca0d33f0bec39ba25ef402312\",\"width\":1024},{\"height\":1024,\"role\":\"NormalMap\",\"rawSha256\":\"a32b0b9bd693491fcdb0fa7fca9ecb06c4fa9cb6b17e6ecc32f41f62048012ef\",\"width\":1024},{\"height\":1024,\"role\":\"RoughnessMap\",\"rawSha256\":\"d2ebd7954f36eacda282beae2948f2cc3361879b71d582bb72caffce7b516c02\",\"width\":1024},{\"height\":1024,\"role\":\"MetalnessMap\",\"rawSha256\":\"190cf949bf34598478688f51cd8d5ae99c419a8a5b9110bf3158989c1a276417\",\"width\":1024}],\"scope\":\"LOCAL_1024_DERIVATIVE_PREVIEW\",\"loaded\":true,\"httpAfter\":false,\"meshSha256\":\"9c606cc4d964583ab7f61dc2b5b49947c5ffe007fb04bece7085c90a4687fd69\"}}"
+    }
+  ],
+  "isError": false
+}
